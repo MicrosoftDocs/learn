@@ -1,4 +1,4 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated with it, and you want to partition these weights into two sets: $W_A$ and $W_B$.
+Now that you understand the basics of quantum-inspired optimization, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated with it, and you want to partition these weights into two sets: $W_A$ and $W_B$.
 
 The two sets correspond to the mineral chunks to be loaded onto container A or container B, and we define $\Delta$ as the weight difference between the two containers.
 
@@ -9,7 +9,7 @@ This short animation shows one possible way that an optimizer might distribute t
 In the next section, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it's classified as NP-hard, in practice other efficient algorithms exist that can provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight-balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, because it's a familiar and easily understood example. In a later module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum/), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it's classified as NP-hard, in practice other efficient algorithms exist that can provide approximate solutions much faster than quantum-inspired optimization might. Nevertheless, we'll use the freight-balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, because it's a familiar and easily understood example. In a later module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum/), we'll tackle a more challenging problem where quantum-inspired optimization might provide a practical advantage.
 
 ## Express the problem
 
@@ -150,17 +150,18 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit the problem to Azure Quantum
 
-You're now ready to submit your problem to Azure Quantum using the `QuantumMonteCarlo` solver:
+You're now ready to submit your problem to Azure Quantum using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use the parametrized Quantum Monte Carlo solver as an example of a QIO solver. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use the Parallel Tempering solver as an example of a Microsoft QIO solver. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
-from azure.quantum.optimization import QuantumMonteCarlo
+# Submit problem to Azure Quantum using the ParallelTempering solver:
+from azure.quantum.optimization import ParallelTempering
 import time
 
 # Instantiate a solver to solve the problem.
-solver = QuantumMonteCarlo(workspace, sweeps = 2, trotter_number = 10, restarts = 72, seed = 22, beta_start = 0.1, transverse_field_start = 10, transverse_field_stop = 0.1)
+solver = ParallelTempering(workspace, timeout=100)
 
 # Optimize the problem
 print('Submitting problem...')
@@ -304,4 +305,4 @@ Total weights:
     Container B: 53 tons
 ```
 
-As you can see, the quality of the solution is the same for both cost functions. The container loads are within 1&nbsp;ton of each other. This reveals an important fact about using QIO solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions. The container loads are within 1&nbsp;ton of each other. This reveals an important fact about using quantum-inspired optimization solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.

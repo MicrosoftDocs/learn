@@ -24,8 +24,6 @@ for ( int i = 1; i < array\*length; i++ ) array[i] = array[i-1]\*2;
 
 ## Evaluate snippets
 
-- What is your level of self-efficacy in creating and debugging code?
-
+- What's your level of self-efficacy in creating and debugging code?
 - Imagine doing this task on a much larger scale and under a tight deadline. How would you approach such a situation?
-
 - How do you rate your self-confidence? Is it at a similar level as your self-efficacy in programming and debugging?

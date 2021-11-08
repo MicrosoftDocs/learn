@@ -1,0 +1,34 @@
+stages:
+
+- stage: Preview
+  jobs: 
+  - job: Preview
+    steps:
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: 'MyServiceConnection'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          az deployment group what-if \
+            --resource-group $(ResourceGroupName) \
+            --template-file deploy/main.bicep
+
+- stage: Deploy
+  jobs:
+    - deployment: Deploy
+      environment: MyAzureEnvironment
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - checkout: self
+            - task: AzureCLI@2
+              inputs:
+                azureSubscription: 'MyServiceConnection'
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  az deployment group create \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep

@@ -12,7 +12,7 @@ title: 'SC-300 part 2: Implement an Authentication and Access Management solutio
 prerequisites: |
   None
 summary: |
-  Implement and administer your access management using Azure AD.  Use MFA, conditional access, and identity protection to manager your identity solution.  Aligned to SC-300 exam.
+  Implement and administer your access management using Azure AD.  Use MFA, Conditional Access, and identity protection to manager your identity solution.  Aligned to SC-300 exam.
 iconUrl: /learn/achievements/implement-an-authentication-and-access-management-solution.svg
 levels:
 - intermediate

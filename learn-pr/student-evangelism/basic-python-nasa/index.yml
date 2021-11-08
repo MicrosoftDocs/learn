@@ -5,9 +5,10 @@ metadata:
   description: Learn the basics of Python.
   ms.date: 05/05/2021
   author: drguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Write basic Python in Notebooks
 summary: Learn the basics of Python using interactive Notebooks.
 abstract: |

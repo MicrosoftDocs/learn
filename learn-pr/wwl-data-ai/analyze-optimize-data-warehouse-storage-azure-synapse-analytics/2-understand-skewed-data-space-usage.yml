@@ -4,12 +4,13 @@ title: Understand skewed data and space usage
 metadata:
   title: Understand skewed data and space usage
   description: "Understand skewed data and space usage"
-  ms.date: 08/23/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-skewed-data-space-usage.md)]

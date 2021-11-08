@@ -34,8 +34,7 @@ In the terminal, run the following Azure PowerShell command:
 ```azurepowershell
 New-AzOperationalInsightsWorkspace `
   -Name ToyLogs `
-  -Location eastus `
-  -Sku Standard
+  -Location eastus
 ```
 
 ::: zone-end
@@ -51,7 +50,7 @@ Now that you've created your simulated pre-existing Log Analytics workspace, you
 
 To add diagnostics settings, do the following:
 
-1. In Visual Studio Code, open the *main.bicep* file and then, below the existing variable definitions, add the following code:
+1. In Visual Studio Code, open the *main.bicep* file in the editor and then, below the existing variable definitions, add the following code:
 
    :::code language="bicep" source="code/7-complete.bicep" range="9-10" :::
 

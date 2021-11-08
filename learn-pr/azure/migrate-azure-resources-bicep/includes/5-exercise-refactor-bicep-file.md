@@ -1,6 +1,6 @@
-In the previous exercise, you created an initial Bicep file that contains the toy truck virtual machine and the associated resources. However, the Bicep template doesn't follow best practices, and it's a little hard to read. In this unit, you'll refactor the file.
+In the previous exercise, you created an initial Bicep file that contains the toy truck virtual machine and associated resources. However, the Bicep template doesn't follow best practices, and it's a little hard to read. In this unit, you'll refactor the file.
 
-During the process, you'll:
+During the refactoring process, you'll:
 
 > [!div class="checklist"]
 >
@@ -10,18 +10,18 @@ During the process, you'll:
 
 ## Update the resource symbolic names
 
-1. Open the *main.bicep* file in Visual Studio Code.
+1. In Visual Studio Code, open the *main.bicep* file.
 
-1. Select the symbolic name for the network security group resource, which is named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
+1. Select the symbolic name for the network security group resource, which is `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
 
-   Rename the symbolic name. You can choose to select <kbd>F2</kbd>, or select and hold (or right-click) and select **Rename Symbol**.
+   Rename the symbolic name. You can select <kbd>F2</kbd> or select and hold (or right-click), and then select **Rename Symbol**.
 
-   Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all of the references inside the file.
+   Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all references inside the file.
 
-1. Repeat this process for each resource, and rename them as listed below:
+1. Repeat this process for each resource. Rename the resources as shown in the following table:
 
    > [!NOTE]
-   > The names of the resources in your deployment will be a little different to the ones below. Find the resources that have names that are close to the names listed here.
+   > The names of the resources in your deployment will be a little different from the names in the table. Find the resources that have names that are close to these names.
 
    | Resource type | Current symbolic name | New symbolic name |
    |-|-|-|
@@ -33,15 +33,15 @@ During the process, you'll:
 
 ## Remove the redundant subnet resource
 
-The virtual network's subnet is currently defined twice: once in the `virtualNetwork` resource, and again as its own child resource named `defaultSubnet`. It doesn't make sense to define it twice.
+The virtual network's subnet currently is defined twice. It's defined once in the `virtualNetwork` resource, and again as its own child resource named `defaultSubnet`. It doesn't make sense to define the subnet twice.
 
 1. Delete the `defaultSubnet` resource.
 
-   Notice that the `networkInterface` resource now displays an problem, since it refers to the default subnet's resource ID:
+   Notice that the `networkInterface` resource now displays a problem, because it refers to the default subnet's resource ID:
 
-   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code showing the networkInterface resource definition, with the error highlighted." border="true":::
+   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code that shows the networkInterface resource definition, with the error highlighted.":::
 
-1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet, which enables you to refer to the subnet within your Bicep code without defining it again:
+1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet. By adding the `existing` reference, you can refer to the subnet again within your Bicep code without defining it again:
 
    :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-27" :::
 
@@ -55,13 +55,13 @@ The parameters in the current template don't really need to be parameters. Here,
 
 1. Select the symbolic name for the `virtualNetworks_ToyTruck_vnet_name` parameter. Rename it to `virtualNetworkName`.
 
-1. Change the parameter to a variable. Remember to remove the type, since variable definitions don't include types:
+1. Change the parameter to a variable. Remember to remove the type because variable definitions don't include types:
 
    ```bicep
    var virtualNetworkName = 'ToyTruck-vnet'
    ```
 
-1. Repeat the process for each parameter, and rename them as listed below:
+1. Repeat the process for each parameter. Rename the parameters as shown in the following table:
 
    | Current parameter name | New variable name |
    |-|-|
@@ -70,17 +70,17 @@ The parameters in the current template don't really need to be parameters. Here,
    | `publicIPAddresses_ToyTruckServer_ip_name` | `publicIPAddressName` |
    | `networkSecurityGroups_ToyTruckServer_nsg_name` | `networkSecurityGroupName` |
 
-1. Verify that your variable declarations look similar to the following:
+1. Verify that your variable declarations look similar to the following example:
 
    :::code language="bicep" source="code/5-variables.bicep" :::
 
-   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure you copy the variable's value from your reference template.
+   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure that you copy the variable's value from your reference template.
 
 ## Update the resource locations
 
-All of the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
+All the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
 
-1. At the top of the file, add a new parameter and a description decorator to make its purpose clear:
+1. At the top of the file, add a new parameter and a description decorator to make the parameter's purpose clear:
 
    ```bicep
    @description('The location into which the resources should be deployed.')
@@ -91,7 +91,7 @@ All of the resources currently use a hard-coded location. Here, you'll add a par
 
 ## Add parameters and variables
 
-Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments, and variables for values that won't.
+Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments and variables for values that won't.
 
 1. At the top of the *main.bicep* file, below the `location` parameter, add the following parameters:
 
@@ -119,7 +119,7 @@ Your template has some hard-coded values where parameters or variables would be 
    param virtualNetworkDefaultSubnetAddressPrefix string
    ```
 
-   Notice that some of the parameters have default values, and others don't. Later, you'll create a parameter file to set most of these values.
+   Some of the parameters have default values and others don't. Later, you'll create a parameter file to set most of these values.
 
 1. Add the following new variable declarations:
 
@@ -133,16 +133,16 @@ Your template has some hard-coded values where parameters or variables would be 
    }
    ```
 
-1. Add the following variable declaration, replacing the values with the OS disk name from your own reference template:
+1. Add the following variable declaration. Replace the values with the OS disk name from your own reference template:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="35":::
 
-   Notice that the value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure you copy the variable's value from your reference template.
+   The value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure that you copy the variable's value from your reference template.
 
    > [!WARNING]
-   > Ensure you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't understand that you're declaring the same resources that already exist, and it might try to create new resources.
+   > Ensure that you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't detect that you're declaring the same resources that already exist, and it might try to create new resources.
 
-   Your variable declarations should now look like this:
+   Your variable declarations should now look like this example:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="2, 4-9, 10, 11" :::
 
@@ -151,58 +151,58 @@ Your template has some hard-coded values where parameters or variables would be 
 1. Update the `virtualNetwork` resource to refer to the parameters and variables:
 
    - Use the `virtualNetworkAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
-   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure to change both the `subnets` property and the nested `existing` resource.
+   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure you change both the `subnets` property and the nested `existing` resource.
    - Use the `vnetDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
 
-1. Update the `virtualMachine` resource to refer to the parameters and variables: 
+1. Update the `virtualMachine` resource to refer to the parameters and variables:
 
    - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
    - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
    - Use the `virtualMachineOSDiskName` variable for the `storageProfile.osDisk.name` property.
    - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
    - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
-   - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set its value to the `virtualMachineAdminPassword` parameter.
+   - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set the property value to the `virtualMachineAdminPassword` parameter.
 
 ## Remove unnecessary properties
 
 The export process adds redundant properties to many resources. Here, you remove the extraneous properties.
 
-1. In the `networkSecurityGroup` resource, remove the `securityRules` property, since it's empty. Remove the `properties` property since it's empty now, too.
+1. In the `networkSecurityGroup` resource, remove the `securityRules` property because it's empty. Remove the `properties` property because it's empty now, too.
 
 1. In the `publicIPAddress` resource:
 
-   - Remove the `ipAddress` property, since it's automatically set by Azure.
-   - Remove the `ipTags` property, since it's empty.
+   - Remove the `ipAddress` property because it's automatically set by Azure.
+   - Remove the `ipTags` property because it's empty.
 
-1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties, since they're empty.
+1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties because they're empty.
 
 1. In the `virtualMachine` resource:
 
-   - Remove the `storageProfile.osDisk.managedDisk.id` property, since Azure automatically determines this when the virtual machine is deployed.
+   - Remove the `storageProfile.osDisk.managedDisk.id` property because Azure automatically determines this property when the virtual machine is deployed.
      > [!IMPORTANT]
-     > It's important to remove this property, otherwise your template won't deploy correctly.
-   - Remove the `requireGuestProvisionSignal` property, since Azure sets this automatically.
-   - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties, since they're empty.
+     > It's important to remove this property or your template won't deploy correctly.
+   - Remove the `requireGuestProvisionSignal` property because Azure sets this property automatically.
+   - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties because they're empty.
 
 1. In the `networkInterface` resource:
 
-   - Remove the `privateIPAddress` property from `ipConfigurations`, since it's automatically set by Azure because the allocation method is _Dynamic_.
-   - Remove the `dnsServers` property from `dnsSettings`, since it's empty. Remove the `dnsSettings` property since it's empty now, too.
+   - Remove the `privateIPAddress` property from `ipConfigurations` because it's automatically set by Azure and the allocation method is _Dynamic_.
+   - Remove the `dnsServers` property from `dnsSettings` because it's empty. Remove the `dnsSettings` property because it's empty now, too.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
-> 
-> In Visual Studio Code, the Bicep extension helps you to set the minimum properties for a resource. After you select the <kbd>=</kbd> key in the resource definition, Visual Studio Code prompts you to select **required-properties**:
-> 
-> :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code showing the required properties selection when defining a new Bicep resource." border="true":::
 >
-> When you select **required-properties**, Visual Studio Code pre-populates the resource definition with the properties that are mandatory. You can refer to this to determine whether the properties in your converted template all need to be present.
-> 
-> The Azure Quickstart Templates repository is also helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
+> In Visual Studio Code, the Bicep extension helps you set the minimum properties for a resource. After you select the <kbd>=</kbd> key in the resource definition, Visual Studio Code prompts you to select **required-properties**:
+>
+> :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code that shows the required properties selection when defining a new Bicep resource.":::
+>
+> When you select **required-properties**, Visual Studio Code prepopulates the resource definition with the properties that are mandatory. You can refer to **required-properties** to determine whether the properties in your converted template all need to be present.
+>
+> The Azure quickstart templates repository is also helpful for this task. Find a quickstart template that does approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Create a parameter file
 
-Your parameters are currently defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
+Your parameters currently are defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
 
 1. Create a new file named *main.parameters.production.json*.
 
@@ -212,25 +212,25 @@ Your parameters are currently defined as default values in your template. To mak
 
 1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
 
-   For example, here's how they are specified in a reference template. Your IP addresses might be different to those in this example:
+   For example, here's how they are specified in a reference template. Your IP addresses might be different from IP addresses that are used in this example:
 
-   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14" :::
+   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14":::
 
-1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
+1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Leave the default values for the `location` and `publicIPAddressSkuName` parameters because they likely are the same for all your environments.
 
 ## Verify your template
 
-1. At the end of the _refactor_ phase, your *main.bicep* file should look similar to the following:
+1. At the end of the refactor phase, your *main.bicep* file should look similar to the following example:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" :::
 
-   Your *main.parameters.production.json* file should look similar to the following, although you may have different IP address ranges listed:
+   Your *main.parameters.production.json* file should look similar to the following file, although you might have different IP address ranges listed:
 
    :::code language="json" source="code/5-parameters-completed.json" :::
 
-1. Select **View** > **Problems** to show the problems pane.
+1. Select **View** > **Problems** to display the problems pane.
 
    No problems are indicated.
 
 > [!TIP]
-> When you work with your own templates, you might make different choices about the properties to parameterize and other customizations. Throughout this module, we provide general guidance to help you get started, but you'll need to consider your own environment and how you want to reuse your templates when deciding how to refactor your own Bicep files.
+> When you work with your own templates, you might make different choices about the properties to parameterize and other customizations. Throughout this module, we provide general guidance to help you get started, but you'll need to consider your own environment and how you want to reuse your templates when you decide how to refactor your own Bicep files.

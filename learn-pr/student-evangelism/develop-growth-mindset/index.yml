@@ -2,24 +2,24 @@
 uid: learn.student-evangelism.develop-growth-mindset
 metadata:
   title: Develop a growth mindset
-  description: Learn how to develop a growth mindset.
+  description: Learn how to distinguish between a growth mindset and a fixed mindset and how to develop a growth mindset.
   ms.date: 09/03/2021
   author: interurban
-  ms.author: jadenyer
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Develop a growth mindset
-summary: In this module you will learn to distinguish between two different mindsets, a growth mindset and grwooth mindset. By adopting a growth mindset you are setting yourself up for success and is able to take on new challenges.
+summary: "In this module, you'll learn to distinguish between two mindsets: a growth mindset and a fixed mindset. When you adopt a growth mindset, you set yourself up for success and are able to take on new challenges."
 abstract:  | 
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Distinguish between a growth mindset and a fixed mindset.
   - Describe why a growth mindset is necessary for learning and working in technology.
-  - Apply methods for cultivating a growth mindset rather than a fixed mindset.
+  - Apply methods to cultivate a growth mindset rather than a fixed mindset.
   - Describe how to help support a growth mindset in others.
 prerequisites: |
   - To get the best learning experience from this module, you should have an open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
-iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+iconUrl: /learn/achievements/tech-resilience/develop-growth-mindset.svg
 levels:
 - beginner
 roles:

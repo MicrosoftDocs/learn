@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.career-growth.continual-learning
-title: Apply continual learning to grow your career
+title: Keep learning to grow your career
 metadata:
   unitType: learning-content
-  title: Apply continual learning to grow your career
+  title: Keep learning to grow your career
   description: Apply continual learning strategies to growth-hack your career.
   ms.date: 08/23/2021
   author: jlooper
   ms.author: jelooper
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/7-continual-learning.md)]

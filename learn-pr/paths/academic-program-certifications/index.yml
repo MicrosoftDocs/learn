@@ -31,6 +31,8 @@ levels:
 roles:
 - student
 - developer
+- higher-ed-educator
+- school-leader
 products:
 - azure
 modules:

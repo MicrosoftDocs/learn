@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 durationInMinutes: 7
 content: |
   [!include[](includes/2-build-video-analytics-solution-iot-edge.md)]

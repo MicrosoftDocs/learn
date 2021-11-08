@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy child and extension resources by using Bicep
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
-  ms.date: 04/19/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

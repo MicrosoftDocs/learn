@@ -3,12 +3,13 @@ uid: learn.career-interview.7-interview
 title: The behavioral interview
 metadata:
   title: The behavioral interview
-  description: This unit describes how to approach non technical interviews and how to manage difficult questions and things like salary negotiation. Lastly, it also covers good interview etiquette.
+  description: This unit describes how to approach non-technical interviews and how to manage difficult questions and things like salary negotiation. It also covers good interview etiquette.
   author: softchris
   ms.author: chnoring
   ms.date: 08/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/7-interview.md)]

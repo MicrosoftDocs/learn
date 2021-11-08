@@ -3,12 +3,13 @@ uid: learn.student-evangelism.grow-cognitive-flexibility.pivot-persist-challengi
 title: Pivot and persist in challenging situations
 metadata:
   title: Pivot and persist in challenging situations
-  description: This unit explores different strategies in the context of facing difficulties and the need to pivot.
+  description: This unit explores various strategies in the context of facing difficulties and the need to pivot.
   ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 
 durationInMinutes: 4
 content: |

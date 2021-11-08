@@ -14,7 +14,7 @@ During the process, you'll:
 
 1. Add the following content into the *appService.bicep* file:
 
-   :::code language="bicep" source="code/8-app-service.bicep" range="1-30" :::
+   :::code language="bicep" source="code/8-app-service.bicep" range="1-28" :::
 
    Notice that you've copied the parameters and variables from your *main.bicep* template, because the *appService.bicep* template needs to be self-contained.
 
@@ -22,9 +22,9 @@ During the process, you'll:
 
 ### Add a reference to the module from the parent template
 
-Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Because the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
+Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Because the module deploys the App Service resources, you can delete the associated resources and variables from the parent template.
 
-1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName`, `appServicePlanSkuName`, and `appServicePlanTierName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
+1. In the *main.bicep* file, delete the App Service resources and the `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
 
 1. At the bottom of the *main.bicep* file, add the following Bicep code:
 
@@ -38,7 +38,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Add the following Bicep code at the bottom of the *appService.bicep* file:
 
-   :::code language="bicep" source="code/8-app-service.bicep" range="32" :::
+   :::code language="bicep" source="code/8-app-service.bicep" range="30" :::
 
    This code is declaring that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
 
@@ -54,13 +54,17 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-## Verify your Bicep file
+## Verify your Bicep files
 
 After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
 
 :::code language="bicep" source="code/8-template.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+Your *appService.bicep* file should look like this example:
+
+:::code language="bicep" source="code/8-app-service.bicep" highlight="30" :::
+
+If either file doesn't match, copy the example or adjust your template to match the example.
 
 ### Deploy the updated Bicep template
 

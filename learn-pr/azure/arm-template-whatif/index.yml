@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Preview Azure deployment changes by using what-if
 summary: |
   Preview the effects of your deployments. Understand the types of changes detected by the what-if operation. Deploy your templates using incremental and complete mode.

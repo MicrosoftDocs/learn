@@ -5,9 +5,10 @@ metadata:
   description: Learn more advanced topics of Python.
   ms.date: 05/05/2021
   author: drguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Code control statements in Python
 summary: Learn more advanced topics of Python using interactive Notebooks.
 abstract: |

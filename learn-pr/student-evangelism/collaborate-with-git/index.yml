@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+  ms.custom: team=nextgen
 title: Collaborate with Git
 summary: Use Git to track changes to source code and collaborate with other developers
 abstract:  |

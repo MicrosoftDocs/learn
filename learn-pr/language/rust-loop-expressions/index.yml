@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.language.rust-loop-expressions
+metadata:
+  title: Use loops to iterate through data in Rust
+  description: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Use loops to iterate through data in Rust
+summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+abstract:  |
+  In this module, you will:
+  - Discover the hash map data type in Rust, and how to access keys and values
+  - Explore how to use loop expressions to iterate through data in a Rust program
+  - Create, compile, and run a Rust program to iterate on hash map data by using a loop
+prerequisites: | 
+  - Have your Rust development environment already set up.
+  - Know how to create, edit, and run Rust code by using Cargo or by working in the Rust playground.
+iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+- azure
+units:
+- learn.language.rust-loop-expressions.0-introduction
+- learn.language.rust-loop-expressions.1-hash-maps
+- learn.language.rust-loop-expressions.2-exercise-hash-map
+- learn.language.rust-loop-expressions.3-for-while-loop
+- learn.language.rust-loop-expressions.4-exercise-loop
+- learn.language.rust-loop-expressions.5-summary
+badge:
+  uid: learn.language.rust-loop-expressions.badge

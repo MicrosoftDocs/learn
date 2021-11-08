@@ -1,40 +1,49 @@
-The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the VM wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
+The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the virtual machine (VM) wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
-In this exercise, you'll install the Azure Diagnostics extension on your new VM to collect near real-time metrics for the OS level. After you install the extension, you'll change the sample rate to every minute. Then, you'll create a KPI dashboard to view the new metrics being captured.
+In this exercise, you'll install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you'll create a KPI dashboard to view the new metrics being captured.
 
-## Install the Azure Diagnostics extension
+## Install the Azure Monitor agent by using data collection rules
 
-Use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure Diagnostics extension for you.
+1. In the Portal, Search for Azure Monitor. Click on **Data Collection Rules** and click **Create new rule**.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+    :::image type="content" source="../media/6-dcr-empty-landing-page.png" alt-text="Screenshot of the data collection rules landing page" lightbox="../media/6-dcr-empty-landing-page.png":::
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
+1. Next, you specify the basics, the **Rule Name** and select the **Subscription**, **Resource group**, **Region** and **Platform Type**.
 
-1. Select the **monitored-linux-vm** virtual machine that you created.
+    :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
 
-1. In the left menu pane, under **Monitoring**, select **Diagnostic settings**. The **Diagnostics settings** pane appears for your virtual machine.
+1. Next, you add the resource(s) to be monitored. Select **Add resources**.
+1. Select your VM monitored-linux-vm.
 
-    ![Screenshot that shows the monitoring section for a VM.](../media/6-scroll-to-monitoring.png)
+     :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
 
-1. On the **Overview** tab, select **Enable guest-level monitoring**. If the storage account isn't listed, wait several minutes and refresh the page until it appears.
+1.  Select **Add data source** to configure the data to be collected and the destination where it will be sent.
+    You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs.
 
-    ![Screenshot that shows the button for enabling guest-level monitoring.](../media/6-enable-guest-level-monitoring.png)
+    However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-1. Wait until the diagnostic settings are configured. This process might take a minute.
+1. Set the data source type to **Performance Counters**, leave the default for the **Basic** performance counters and Sample rate.
 
-## Configure the extension
 
-1. After the extension is installed, the **Diagnostics settings** pane appears highlighting the **Overview** tab.
+     :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters" lightbox="../media/6-add-data-sources.png":::
 
-1. Select the **Metrics** tab.
+1. Select the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
+1. Select on **Add data source**.
 
-    ![Screenshot that shows the Overview page.](../media/6-diagnostics-enabled.png)
+    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination":::
 
-1. Change all the **Sample rates** to **60** seconds, and then select **Save**.
+    Confirm your settings include a destination type of Azure Monitor metrics for the collect and deliver step of the wizard.
 
-    ![Screenshot that shows changing the sample rate to 60 seconds.](../media/6-change-sample-rate.png)
+1. Select **Review and create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
 
-   It might take a minute to save your update.
+
+## Confirm that the agent is installed on the VM
+
+1. In the Azure portal, search for and select Virtual Machines.
+1. Select the virtual machine you created in the previous exercise.
+1. On the VM overview page, under **Extensions**, you should see **AzureMonitorLinuxAgent**.
+
+     :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed":::
 
 ## Create a custom KPI dashboard
 
@@ -42,11 +51,12 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic) |
-   |Metric    |   Network in guest OS  |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics |
+   |Metric    |   net/bytes_total  |
    |Aggregation    |    Max     |
+
 
 1. Select the **Finish editing metric** check mark.
 
@@ -54,9 +64,9 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. Select the **Create new** tab.
 
-1. Select **Private**. If you're using your own subscription, you can create a shared dashboard.
+1. For **Type**, select **Private**. If you're using your own subscription, you can create a shared dashboard.
 
-1. In the **Dashboard name** field, enter **KPI Dashboard**.
+1. In the **Dashboard name** field, enter *KPI Dashboard*.
 
     ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
 
@@ -64,14 +74,14 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 ### Add a free memory percentage graph
 
-1. In the upper menu bar, select **New chart**.
+1. In the top menu bar, select **New chart**.
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic)      |
-   |Metric     |   Mem. percent available  |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics      |
+   |Metric     |   mem/available_percent  |
    |Aggregation    |    Max     |
 
 1. Select the **Finish editing metric** check mark.
@@ -80,7 +90,7 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
-1. Select **Pin**. The **Metrics** pane for your VM appears.
+1. Select **Pin**. The **Metrics** pane for your VM reappears.
 
 ### Add a CPU usage graph
 
@@ -88,11 +98,12 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. Select the following values:
 
-   |Field     |Value |
+   | Setting     | Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic)   |
-   |Metric     |   CPU percentage guest OS   |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics  |
+   |Metric     |   cpu/usage_active  |
    |Aggregation    |    Max     |
+
 
 1. Select the **Finish editing metric** check mark.
 
@@ -100,14 +111,15 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. In the **Dashboard** dropdown field, select **KPI Dashboard**.
 
-1. Select **Pin**. The The **Metrics** pane for your VM appears.
+1. Select **Pin**. The The **Metrics** pane for your VM reappears.
 
 ### View the new dashboard
 
-1. At the top of the portal, select **Dashboard**, and then select **KPI Dashboard**.
+1. At the top left of the portal, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
 
-    ![Screenshot that shows the dashboard selection drop-down list.](../media/6-view-dashboard.png)
+    ![Screenshot that shows the dashboard selection dropdown list.](../media/6-view-dashboard.png)
 
-1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
+1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**, and select **Apply**.
 
-    ![Screenshot that shows the new KPI dashboard with the three graphs created earlier.](../media/6-explore-kpi-dashboard.png)
+    :::image type="content" source="../media/6-kpi-dashboard.png" alt-text="Screenshot that shows the new KPI dashboard with the three graphs created earlier." lightbox="../media/6-kpi-dashboard.png":::
+

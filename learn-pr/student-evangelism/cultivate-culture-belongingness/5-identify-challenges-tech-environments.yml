@@ -3,12 +3,13 @@ uid: learn.student-evangelism.cultivate-culture-belong-tech.identify-challenges-
 title: Identify challenges in tech environments
 metadata:
   title: Identify challenges in tech environments
-  description: This unit describes the challenges that exist around belongingness for historical reasons and also what preconceptions exist.
+  description: Learn about preconceptions as well as the challenges to belongingness that exist for historical reasons.
   ms.date: 09/03/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/5-identify-challenges-tech-environments.md)]

@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Automate cloud resource management
 summary: Learn about how to automate cloud resource management with scripts and infrastructure-as-code tools like Terraform.
 abstract: |

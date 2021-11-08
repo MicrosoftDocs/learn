@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-sensitive-data-security-policies.introduction  
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Overview of what you will learn in the module 
+  ms.date: 09/13/2021
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

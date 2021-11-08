@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.enhance-self-efficacy.exercise-differentiate
-title: Exercise - evaluate your self-efficacy
+title: Exercise - Evaluate your self-efficacy
 metadata:
-  title: Exercise - evaluate your self-efficacy
+  title: Exercise - Evaluate your self-efficacy
   description: In this exercise, you'll look at different code examples to see how
     you score on self-efficacy and self-confidence.
   author: softchris
@@ -10,6 +10,7 @@ metadata:
   ms.date: 08/27/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-differentiate.md)]

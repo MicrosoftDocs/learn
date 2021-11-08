@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Datacenter trends in cloud computing
 summary: Datacenters power the cloud. Learn what they are, how they work, and challenges in managing them.
 abstract: | 

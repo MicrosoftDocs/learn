@@ -6,7 +6,8 @@ When you create your SAS, a URI is created using parameters and tokens. The URI 
 Below is an example URI.
 
 ```
-https://myaccount.blob.core.windows.net/?restype=service&amp;comp=properties&amp;sv=2015-04-05&amp;ss=bf&amp;srt=s&amp;st=2015-04-29T22%3A18%3A26Z&amp;se=2015-04-30T02%3A23%3A26Z&amp;sr=b&amp;sp=rw&amp;sip=168.1.5.60-168.1.5.70&amp;spr=https &amp;sig=F%6GRVAZ5Cdj2Pw4txxxxx
+https://myaccount.blob.core.windows.net/?restype=service&comp=properties&sv=2015-04-05&ss=bf&srt=s&st=2015-04-29T22%3A18%3A26Z&se=2015-04-30T02%3A23%3A26Z&sr=b&sp=rw&sip=168.1.5.60-168.1.5.70&spr=https &sig=F%6GRVAZ5Cdj2Pw4txxxxx
+
 ```
 
 Each parameter has a specific meaning.

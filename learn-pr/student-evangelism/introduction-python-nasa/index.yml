@@ -5,9 +5,10 @@ metadata:
   description: Get an introduction to the types of space exploration problems that Python and data science can influence.
   ms.date: 03/10/2021
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to Python for space exploration
 summary: Get an introduction to the types of space exploration problems that Python and data science can influence.
 abstract: |
