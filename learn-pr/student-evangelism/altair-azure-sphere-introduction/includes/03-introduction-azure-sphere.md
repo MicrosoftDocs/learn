@@ -6,9 +6,9 @@ This approach includes:
 - Authentication.
 - Certificates.
 - Identity.
--  Encryption libraries.
--  Update processes.
--  Your solution. 
+- Encryption libraries.
+- Update processes.
+- Your solution. 
 
 You're a solution domain expert. But you're now also responsible for tracking new and emerging security threats, mitigating them, and updating the platform to protect IoT devices.
 
@@ -36,7 +36,7 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ## Azure Sphere architecture
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores: a Cortex-A7 that runs a Linux kernel and two Cortex-M4 cores that can run bare-metal code or a real-time operating system like Azure real-time operating system or FreeRTOS.
+The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores: a Cortex-A7 that runs a Linux kernel and two Cortex-M4 cores that can run bare-metal code or an operating system like the Azure real-time operating system or FreeRTOS.
 
 :::image type="content" source="../media/azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
