@@ -35,7 +35,7 @@ quiz:
         - content: Negotiate a contract with the back-end team, and then mock the response.
           isCorrect: true
           explanation: Correct. Mocking the response can help you move faster as a front-end team. Don't forget to switch to the actual back-end API when it is available.
-        - content: Negotiate a contract with the back-end team, and then mock the response.
+        - content: Mock the response, you can sync with the backend team later.
           isCorrect: false
           explanation: Incorrect. If you move ahead with mocking without negotiating, you might end up with mocked responses that don't quite match the reality when the back-end API is built.
     - content: What CORS policy should I have if I want only `http://example.com` to be allowed?
