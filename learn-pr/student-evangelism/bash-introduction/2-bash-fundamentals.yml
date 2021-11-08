@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
+  ms.custom: team=nextgen
 durationInMinutes: 8
 content: |
   [!include[](includes/2-bash-fundamentals.md)]
