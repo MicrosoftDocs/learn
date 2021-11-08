@@ -15,7 +15,7 @@ IP addresses can also be statically assigned or dynamically assigned. Static IP 
 
  -  DNS name resolution, where a change in the IP address would require updating host records.
  -  IP address-based security models that require apps or services to have a static IP address.
- -  TSL/SSL certificates linked to an IP address.
+ -  TLS/SSL certificates linked to an IP address.
  -  Firewall rules that allow or deny traffic using IP address ranges.
  -  Role-based VMs such as Domain Controllers and DNS servers.
 

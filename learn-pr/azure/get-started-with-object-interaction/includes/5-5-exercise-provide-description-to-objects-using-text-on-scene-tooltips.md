@@ -1,16 +1,16 @@
-Adding text to the scene can be very informative and can guide the users. Here you'll add text to the scene using TextMeshPro and include Tooltips to provide short descriptions to the object.
+Adding text to a scene can be very informative and can guide the users. Here you'll add text to the scene using TextMesh Pro and include Tooltips to provide short descriptions for each object.
 
 ## Add text to the scene
 
-1. In the Hierarchy window, right-click on the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, then in the Inspector window, configure the **Rect Transform** component as follows:
+1. In the Hierarchy pane , right-click the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, and then in the Inspector pane, configure the **Rect Transform** component as follows:
     * Change **Pos Y** to 1
     * Change **Width** to 1
     * Change **Height** to 1
     * Change **Rotation X** to 90
 
-    :::image type="content" source="../media/text-mesh-pro-selected.png" alt-text="Screenshot of Unity with newly created TextMeshPro object selected." lightbox="../media/text-mesh-pro-selected.png":::
+    :::image type="content" source="../media/text-mesh-pro-selected.png" alt-text="Screenshot of Unity with newly created TextMesh Pro object selected." lightbox="../media/text-mesh-pro-selected.png":::
 
-2. Then configure the **TextMeshPro - Text** component as follows:
+2. Configure the **TextMeshPro - Text** component as follows:
     * Change **Text** to Rover Explorer
     * Change **Font Style** to Bold
     * Change **Font Size** to 1
@@ -20,11 +20,11 @@ Adding text to the scene can be very informative and can guide the users. Here y
 
 ## Add tooltips
 
-1. In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > ToolTip folder to locate the tooltip prefabs:
+1. In the Project pane, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
     :::image type="content" source="../media/tool-tips-folder.png" alt-text="Screenshot of Unity Project window with ToolTips folder selected." lightbox="../media/tool-tips-folder.png":::
 
-2. In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
+2. In the Hierarchy pane, expand the **RoverExplorer** > **RoverParts** object and select all its child rover part objects, and then in the Inspector pane, select **Add Component** to add the **ToolTipSpawner** component and configure it as follows:
     * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
     * Assign the **Simple Line ToolTip** prefab from the Project window to the **Prefab** field
     * Change the ToolTip Override Settings > **Settings Mode** to **Override**
@@ -32,8 +32,7 @@ Adding text to the scene can be very informative and can guide the users. Here y
 
     :::image type="content" source="../media/rover-part-objects.png" alt-text="Screenshot of Unity with all rover part objects selected and ToolTipSpawner component added and configured." lightbox="../media/rover-part-objects.png":::
 
-3. In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
-
+3. In the Hierarchy pane, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
     * Change **Tool Tip Text** to reflect the name of the part, that is, **Camera**
 
     :::image type="content" source="../media/tool-tip-text.png" alt-text="Screenshot of Unity with Camera ToolTipText configured." lightbox="../media/tool-tip-text.png":::
@@ -44,6 +43,6 @@ Adding text to the scene can be very informative and can guide the users. Here y
     * For the **UHFAntenna_Part**, change the **Tool Tip Text** to **UHF Antenna** field
     * For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**
 
-5. Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:
+5. Press Play to enter Game mode, and then press-and-hold the right mouse button while moving your mouse until the gaze hits one of the parts and the tooltip for that part displays:
 
     :::image type="content" source="../media/tool-tip-triggered.png" alt-text="Screenshot of Unity Play mode split view with tooltip triggered by gaze." lightbox="../media/tool-tip-triggered.png":::
