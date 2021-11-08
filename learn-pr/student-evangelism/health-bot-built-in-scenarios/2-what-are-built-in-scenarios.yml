@@ -9,6 +9,7 @@ metadata:
   ms.date: 07/27/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-are-built-in-scenarios.md)]
