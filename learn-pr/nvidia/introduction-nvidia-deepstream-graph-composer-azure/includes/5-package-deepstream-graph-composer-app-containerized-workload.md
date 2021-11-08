@@ -12,12 +12,11 @@ To achieve these benefits, you'll use the *container-builder* tool to package th
 
     1. Sign in or create a new account by going to the [NVIDIA NGC sign-in page](https://ngc.nvidia.com/signin). After you're signed in to NVIDIA NGC, select your username in the upper-right corner and select **Setup**. You'll see the following options:
 
-        ![Screenshot that shows the NGC setup process.](../media/ngc-setup.png)
-
+        :::image type="content" source="../media/ngc-setup.png" alt-text="Screenshot that shows the NGC setup process." lightbox="../media/ngc-setup.png":::
 
     1. Select **Get API Key**. On the screen that appears, in the upper-right select **Generate API Key**. Then select **Confirm** on the resulting prompt.
 
-        ![Screenshot that shows the NGC Generate API Key screen.](../media/ngc-generate-api-key.png)
+        :::image type="content" source="../media/ngc-generate-api-key.png" alt-text="Screenshot that shows the NGC Generate API Key screen." lightbox="../media/ngc-generate-api-key.png":::
 
     1. Supply the credentials to the Docker runtime by executing the following commands in a terminal on the host machine:
 

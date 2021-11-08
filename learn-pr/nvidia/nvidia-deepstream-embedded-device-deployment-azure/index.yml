@@ -3,7 +3,7 @@ uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure
 metadata:
   title: NVIDIA DeepStream embedded device deployment with Azure
   description: Learn how to publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
-  ms.date: 10/01/2021
+  ms.date: 11/09/2021
   author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial

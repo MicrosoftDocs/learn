@@ -2,41 +2,41 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
 1. In the Azure portal, go to the IoT hub that you created at the beginning of this module. In the left menu, under **Automatic Device Management**, select **IoT Edge**. Look for your registered device.
 
-   :::image type="content" source="../media/iot-hub-iot-edge.png" alt-text="Screenshot that shows the IoT Edge Devices tab in the Azure portal.":::
+   :::image type="content" source="../media/iot-hub-iot-edge.png" alt-text="Screenshot that shows the IoT Edge Devices tab in the Azure portal." lightbox="../media/iot-hub-iot-edge.png":::
 
 1. To see details about the current configuration, select the name of the device:
 
-   :::image type="content" source="../media/iot-hub-device-overview.png" alt-text="Screenshot that shows an overview of the IoT Edge device.":::
+   :::image type="content" source="../media/iot-hub-device-overview.png" alt-text="Screenshot that shows an overview of the IoT Edge device." lightbox="../media/iot-hub-device-overview.png":::
 
 1. Select the **Set modules** tab to open the modules editor:
 
-   :::image type="content" source="../media/iot-hub-module-editor.png" alt-text="Screenshot that shows the Modules pane.":::
+   :::image type="content" source="../media/iot-hub-module-editor.png" alt-text="Screenshot that shows the Modules pane." lightbox="../media/iot-hub-module-editor.png":::
 
     You must supply appropriate Container Registry credentials, so your NVIDIA embedded device can pull container workloads from your container registry.
 
 1. In a separate browser window, go to your container registry in the Azure portal:
 
-   :::image type="content" source="../media/overview.png" alt-text="Screenshot that shows an overview of your Azure Container Registry instance.":::
+   :::image type="content" source="../media/overview.png" alt-text="Screenshot that shows an overview of your Azure Container Registry instance." lightbox="../media/overview.png":::
 
 1. In the left menu, under **Settings**, select **Access keys**. In **Access keys**, note the values for **Login server**, **Username**, and **password**. You'll use these values in the next step.
 
-   :::image type="content" source="../media/access-keys.png" alt-text="Screenshot that shows credentials for the container registry.":::
+   :::image type="content" source="../media/access-keys.png" alt-text="Screenshot that shows credentials for the container registry." lightbox="../media/access-keys.png":::
 
 1. Return to the browser window that's open to **Set modules**. In **Container Registry Credentials**, enter the values from the container registry **Access keys**. Using these credentials, any device that applies this module specification can securely pull container workloads from your container registry in Azure.
 
-   :::image type="content" source="../media/iot-hub-credentials.png" alt-text="Screenshot that shows entering container registry credentials in Azure IoT Hub.":::
+   :::image type="content" source="../media/iot-hub-credentials.png" alt-text="Screenshot that shows entering container registry credentials in Azure IoT Hub." lightbox="../media/iot-hub-credentials.png":::
 
 1. Next, you'll configure a custom IoT Edge module as part of your deployment specification. In the **IoT Edge Modules** section of the **Modules** pane, select **Add** > **IoT Edge Module**:
 
-   :::image type="content" source="../media/iot-hub-add-module.png" alt-text="Screenshot that shows adding an IoT Edge module.":::
+   :::image type="content" source="../media/iot-hub-add-module.png" alt-text="Screenshot that shows adding an IoT Edge module." lightbox="../media/iot-hub-add-module.png":::
 
 1. In **Add IoT Edge Module**, in **IoT Edge Module Name**, enter the module name **deepstream_test4_jetson**. In **Image URI**, enter **\<Login Server\>/deepstream_test4_jetson:v1**. For **\<Login Server\>**, use the URL of your container registry.
 
-   :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the IoT Edge module.":::
+   :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the IoT Edge module." lightbox="../media/iot-hub-add-module-uri.png":::
 
 1. When you're finished, select **Review + create**:
 
-   :::image type="content" source="../media/iot-hub-module-review.png" alt-text="Screenshot that shows the Review plus create button highlighted on the Modules pane.":::
+   :::image type="content" source="../media/iot-hub-module-review.png" alt-text="Screenshot that shows the Review plus create button highlighted on the Modules pane." lightbox="../media/iot-hub-module-review.png":::
 
 1. The **Deployment** text box displays the deployment specification you're about to submit to your device. Verify that the contents look similar to this example:
 
@@ -108,7 +108,7 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
 1. Verify that the deployment configuration is correct, and then select **Create** to start the deployment process:
 
-   :::image type="content" source="../media/iot-hub-deployment-create.png" alt-text="Screenshot that shows the Deployment text box and the Create button.":::
+   :::image type="content" source="../media/iot-hub-deployment-create.png" alt-text="Screenshot that shows the Deployment text box and the Create button." lightbox="../media/iot-hub-deployment-create.png":::
 
 1. To verify that the deployment was successful, run the following commands in a terminal on the NVIDIA embedded device:
 
@@ -120,7 +120,7 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
     If your device is connected to a display, you should be able to see the visualized output of the DeepStream Graph Composer application, like in this example:
 
-    :::image type="content" source="../media/jetson-edge-module-running.png" alt-text="Screenshot that shows the IoT Edge module running on Jetson hardware.":::
+    :::image type="content" source="../media/jetson-edge-module-running.png" alt-text="Screenshot that shows the IoT Edge module running on Jetson hardware." lightbox="../media/jetson-edge-module-running.png":::
 
 1. Monitor the output of the `deepstream_test4_jetson` module by running the following command in a terminal on the NVIDIA Jetson embedded device:
 
@@ -144,11 +144,11 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
 1. You can confirm the status of the running modules in the Azure portal by returning to the device overview for your IoT Edge device. You should see the following modules and associated statuses listed for your device:
 
-   :::image type="content" source="../media/iot-hub-device-overview-status.png" alt-text="Screenshot that shows an overview of the IoT Edge device with runtime status.":::
+   :::image type="content" source="../media/iot-hub-device-overview-status.png" alt-text="Screenshot that shows an overview of the IoT Edge device with runtime status." lightbox="../media/iot-hub-device-overview-status.png":::
   
 1. You also can confirm in your IoT Hub overview pane that messages are arriving in your hub from your device. You should notice an increase in messages:
 
-   :::image type="content" source="../media/iot-hub-messages.png" alt-text="Screenshot that shows charts that depict received messages in the IoT Hub Usage pane.":::
+   :::image type="content" source="../media/iot-hub-messages.png" alt-text="Screenshot that shows charts that depict received messages in the IoT Hub Usage pane." lightbox="../media/iot-hub-messages.png":::
 
 Congratulations!  You have successfully developed a production-grade edge deployment of a DeepStream Graph Composer workload and deployed it to a real device by using Azure IoT Edge!
 
