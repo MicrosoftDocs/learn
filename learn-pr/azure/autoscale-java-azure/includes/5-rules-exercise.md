@@ -9,9 +9,9 @@ After the autoscale is triggered, it will then scale **in** if the request count
 
 ## View Autoscale setup in the Azure portal
 
-1. Sign in to the Azure portal
-2. Go to the Azure Spring Cloud **Overview** page.
-3. Select the resource group that contains your service.
+1. In a new Web Browser tab, open the Azure portal.
+2. From the top search box, search for "**Azure Spring Cloud**".
+3. From the Azure Spring Cloud Overview page, select your Azure Spring Cloud instance from the results.
 4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
 5. Select the customers-service application. You should then see the application's **Overview** page.
 6. Go to the **Scale-out** tab under Settings in the menu on the left side of the page.
@@ -76,6 +76,8 @@ https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/custom
 1. In a few minutes, the instance count should rise from 1, to 2.
 
 1. Under the chart, you should see the activity log entries for each scale action taken by this autoscale setting.
+
+:::image type="content" source="../media/run_history.png" alt-text="autoscale run history" lightbox="../media/run_history.png":::
 
 ## Scale-in action
 

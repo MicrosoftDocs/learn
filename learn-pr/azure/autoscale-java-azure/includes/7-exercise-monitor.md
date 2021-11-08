@@ -9,7 +9,11 @@ You can validate the evaluations and scale actions better using Log Analytics. I
 
 ## Understanding autoscale events
 
-In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
+In the autoscale setting screen, go to the Run history tab to see the most recent scale actions.
+
+:::image type="content" source="../media/activitylog.png" alt-text="autoscale log" lightbox="../media/activitylog.png":::
+
+The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
 Next, we'll use log analytics to dig deeper into the autoscale events.
 
@@ -25,6 +29,8 @@ The left side of the screen includes the Tables tab, where you can inspect the t
 
 Expand the Log Management solution and locate the **AutoscaleEvaluationsLog** table. You can expand the table to view its schema, or hover over its name to show more information about it.
 
+:::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu" lightbox="../media/loganalytics.png":::
+
 ## Write a Kusto query
 
 Let's write a query by using the **AutoscaleEvaluationsLog** table. Double-click its name to add it to the query window. You can also type directly in the window. You can even get IntelliSense that will help complete the names of tables in the current scope and Kusto Query Language (KQL) commands.
@@ -34,7 +40,5 @@ This quert is the simplest query that we can write. It just returns all the reco
 ```Kusto
 AutoscaleEvaluationsLog
 ```
-
-:::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu" lightbox="../media/loganalytics.png":::
 
 The number of records that the query has returned appears in the lower-right corner. For more exercises on KQL autoscale queries, see the Summary unit at the end of this module.
