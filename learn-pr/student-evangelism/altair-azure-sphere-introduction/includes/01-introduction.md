@@ -1,9 +1,8 @@
-Welcome to the Learn computing fundamentals with Altair 8800 and Azure Sphere
- learning path. You’ve come to the right place if you're interested in improved-security IoT devices and cloud computing. While you learn about device and cloud computing, you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
+Welcome to the learning path about the cloud-connected Altair 8800 on Azure Sphere. You've come to the right place if you're interested in improved-security Internet of Things (IoT) devices and cloud computing. While you learn about device and cloud computing, you'll also get a taste of retro computing. You'll gain an understanding of the Altair 8800 personal computer, invented in the 1970s.
 
 ## Scenario: Curiosity
 
-You're reading an article on the internet about the Altair 8800 personal computer, and it's captured your attention. The article says the Altair 8800 was invented nearly 50 years ago. It was the computer that ignited the personal computer revolution. Now you’re curious how the Altair 8800 works, and how it can be programmed. You'd love to buy an Altair 8800, but they're expensive and hard to find.
+You're reading an article on the internet about the Altair 8800 personal computer, and it captures your attention. The article says the Altair 8800 was invented nearly 50 years ago. It was the computer that ignited the personal computer revolution. Now you're curious how the Altair 8800 works, and how it can be programmed. You'd love to buy an Altair 8800, but they're expensive and hard to find.
 
 The Altair 8800 emulator running on Azure Sphere brings together retro computing, the modern world of IoT and cloud computing, and the chance to step back in time and program one of the first personal computers invented.
 
