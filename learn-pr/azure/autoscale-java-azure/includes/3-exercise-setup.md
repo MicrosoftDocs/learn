@@ -27,7 +27,7 @@ Next, in the bash window, run the following commands to clone the sample reposit
    code deployPetClinicApp.sh
    ```
 
-## Set up and run the Setup script
+## Set up and run the setup script
 
 When you run the above command, a window will pop up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
 
