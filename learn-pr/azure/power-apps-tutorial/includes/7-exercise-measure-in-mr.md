@@ -61,6 +61,7 @@ In this module, you'll be using some of the key functional components of **Power
          :::image type="content" source="../media/body-text.png" alt-text="Screenshot of body text" lightbox="../media/body-text.png":::
 
 8. Let's add a **Reload** icon to let the users redo the measurements if they are not happy. On the **Insert** tab, expand the **Icons** dropdown and select **Reload** icon.
+
     :::image type="content" source="../media/add-reload-icon.png" alt-text="Screenshot of adding reload icon" lightbox="../media/add-reload-icon.png":::
 
 9. Position the icon as shown in the figure and configure the **OnSelect** property in the following way:
@@ -74,45 +75,39 @@ In this module, you'll be using some of the key functional components of **Power
     >[!Tip]
     > You may customize the font, font size, and font style to match the design of your application. However, make sure you maintain a harmonious font throughout the application for a better user experience.
 
-10. Once the **Measure in MR** component is fully configured, we move to the **Spatial filtering**. Navigate to the **Sofas** page and configure the **Items** property of the **Gallery_sofas** by adding the following:
+10. Once the **Measure in MR** component is fully configured, we move to the **Spatial filtering**. Here we are spatially filtering the products based on the **Width**, **Depth**, and **Height** values received in the **Measure in MR** session.
+
+    Navigate to the **Products** page and configure the **Items** property of the **Gallery_products** by adding the following:
 
     ```PowerApps
-    If (
-    Measure_gallery.Selected.Height = 0,
-    Filter('Easy Sales - Sofas', Area <= Measure_gallery.Selected.Area),
-    Measure_gallery.Selected.Height > 0,
-    Filter('Easy Sales - Sofas', Area <= Measure_gallery.Selected.Area && Height <= Measure_gallery.Selected.Height), 'Easy Sales - Sofas'
+    If(
+    ID = 1 And Measure_gallery.Selected.Height = 0,
+    (Filter('Easy Sales',(ProductCategory = "Sofa") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth)))),
+    ID = 1 And Measure_gallery.Selected.Height > 0,
+    (Filter('Easy Sales',(ProductCategory = "Sofa") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth And Height <= Measure_gallery.Selected.Height) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth And Height <= Measure_gallery.Selected.Height)))),
+    ID = 1,
+    Filter('Easy Sales',ProductCategory = "Sofa"), 
+    
+    ID = 2,
+    Filter('Easy Sales',ProductCategory = "Chair"), 
+    ID = 2 And Measure_gallery.Selected.Height = 0,
+    (Filter('Easy Sales',(ProductCategory = "Chair") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth)))),
+    ID = 2 And Measure_gallery.Selected.Height > 0,
+    (Filter('Easy Sales',(ProductCategory = "Chair") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth And Height <= Measure_gallery.Selected.Height) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth And Height <= Measure_gallery.Selected.Height)))),
+    
+    ID = 3,
+    Filter('Easy Sales',ProductCategory = "Table"),
+    ID = 3 And Measure_gallery.Selected.Height = 0,
+    (Filter('Easy Sales',(ProductCategory = "Table") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth)))),
+    ID = 3 And Measure_gallery.Selected.Height > 0,
+    (Filter('Easy Sales',(ProductCategory = "Table") And ((Depth < Measure_gallery.Selected.BoundingDepth And Width < Measure_gallery.Selected.BoundingWidth And Height <= Measure_gallery.Selected.Height) Or (Depth < Measure_gallery.Selected.BoundingWidth And Width < Measure_gallery.Selected.BoundingDepth And Height <= Measure_gallery.Selected.Height))))
     )
     ```
 
     :::image type="content" source="../media/configure-item-sofas.png" alt-text="Screenshot of configuring items in Sofas" lightbox="../media/configure-item-sofas.png":::
 
-    >[!Important]
-    > Provide appropriate names for the **SharePoint** list and **Gallery** to avoid having errors in the future. Maintain the names of the components in the formulas to avoid confusion.
-
-11. Follow the same procedure for **Chairs** and **Tables** page. Configure the **Items** property in the following way respectively:
-
-    * **Chairs**:
-
-        ```PowerApps
-        If (
-        Measure_gallery.Selected.Height = 0,
-        Filter('Easy Sales - Chairs', Area <= Measure_gallery.Selected.Area),
-        Measure_gallery.Selected.Height > 0,
-        Filter('Easy Sales - Chairs', Area <= Measure_gallery.Selected.Area && Height <= Measure_gallery.Selected.Height), 'Easy Sales - Chairs'
-        )
-        ```
-
-    * **Tables**:
-
-        ```PowerApps
-        If (
-        Measure_gallery.Selected.Height = 0,
-        Filter('Easy Sales - Tables', Area <= Measure_gallery.Selected.Area),
-        Measure_gallery.Selected.Height > 0,
-        Filter('Easy Sales - Tables', Area <= Measure_gallery.Selected.Area && Height <= Measure_gallery.Selected.Height), 'Easy Sales - Tables'
-        )
-        ```
+>[!Important]
+> Provide appropriate names for the **SharePoint** list and **Gallery** to avoid having errors in the future. Maintain the names of the components in the formulas to avoid confusion.
 
 >[!Note]
 > Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
@@ -144,25 +139,25 @@ In this module, you'll be using some of the key functional components of **Power
 
 ## Create order summary page
 
-1. Add a **Button** to **Details_sofas**, **Details_chairs**, **Details_tables**, and **Details_carpets** screens. Rename the button to **Order_button_(category_name)** and change the display text of the button to **Order**.
+1. Add a **Button** to **Product_details** and **Details_carpets** screens. Rename the button to **Order_product** and **Order_carpet** respectively. Change the display text of the button to **Order**.
 
     :::image type="content" source="../media/add-order-button.png" alt-text="Screenshot of adding order button" lightbox="../media/add-order-button.png":::
 
-2. Create four new **Blank** screens and rename them as **Order_sofas**, **Order_chairs**, **Order_tables**, and **Order_carpets**.
+2. Create two new **Blank** screens and rename them as **Order_products** and **Order_carpets**.
 
     :::image type="content" source="../media/create-order-screens.png" alt-text="Screenshot of adding new screens" lightbox="../media/create-order-screens.png":::
 
-3. Select **Details_sofas** screen configure the **OnSelect** property of the **Order** button as seen below:
+3. Select **Product_details** screen configure the **OnSelect** property of the **Order** button as seen below:
 
     ```PowerApps
-    Navigate('Order_sofas',ScreenTransition.Cover)
+    Navigate('Order_products',ScreenTransition.Cover)
     ```
 
     :::image type="content" source="../media/configure-order-button.png" alt-text="Screenshot of Order OnSelect config" lightbox="../media/configure-order-button.png":::
 
-4. Follow the same procedure for **Details_chairs**, **Details_tables**, and **Details_carpets** screens.
+4. Follow the same procedure for **Details_carpets** screen.
 
-5. In the **Order_sofas** page, insert **Product**, **Price**, **Color**, and **Notes** labels and rename them accordingly.
+5. In the **Order_products** page, insert **Product**, **Price**, **Color**, and **Notes** labels and rename them accordingly.
 
     :::image type="content" source="../media/insert-order-labels.png" alt-text="Screenshot of labels in Order_sofas" lightbox="../media/insert-order-labels.png":::
 
@@ -174,7 +169,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Product**:
 
         ```PowerApps
-        Gallery_sofas.Selected.'Name (Title)'
+        Gallery_products.Selected.'Name (Title)'
         ```
 
         :::image type="content" source="../media/configure-product-label.png" alt-text="Screenshot of configuring Product text" lightbox="../media/configure-product-label.png":::
@@ -182,7 +177,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Price**:
 
         ```PowerApps
-        Gallery_sofas.Selected.Price
+        Gallery_products.Selected.Price
         ```
 
         :::image type="content" source="../media/configure-price-label.png" alt-text="Screenshot of configuring Price text" lightbox="../media/configure-price-label.png":::
@@ -190,7 +185,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Color**:
 
         ```PowerApps
-        Gallery_sofas.Selected.Color
+        Gallery_products.Selected.Color
         ```
 
         :::image type="content" source="../media/configure-color-label.png" alt-text="Screenshot of configuring Color text" lightbox="../media/configure-color-label.png":::
@@ -198,7 +193,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Notes**:
 
         ```PowerApps
-        TextInput_sofas.Text
+        TextInput_products.Text
         ```
 
         :::image type="content" source="../media/configure-notes-label.png" alt-text="Screenshot of configuring Notes text" lightbox="../media/configure-notes-label.png":::
@@ -207,14 +202,14 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/add-page-heading.png" alt-text="Screenshot of adding Order Summary label" lightbox="../media/add-page-heading.png":::
 
-9. Expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**. Rename it as **Order_gallery_sofas**
+9. Expand the **Gallery** dropdown and select **Horizontal**. Retain only the image and delete other components of the **Gallery**. Rename it as **Order_gallery_products**
 
     :::image type="content" source="../media/add-horizontal-gallery-order.png" alt-text="Screenshot of adding gallery" lightbox="../media/add-horizontal-gallery-order.png":::
 
 10. Configure the **Items** property of this gallery by adding the line given below:
 
     ```PowerApps
-    ViewInMR.Photos
+    ViewInMR1.Photos
     ```
 
     :::image type="content" source="../media/configure-items-property-order.png" alt-text="Screenshot of configure items in gallery" lightbox="../media/configure-items-property-order.png":::
@@ -223,7 +218,7 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/add-extra-labels.png" alt-text="Screenshot of 3 labels" lightbox="../media/add-extra-labels.png":::
 
-12. Expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1_sofas** and **Input2_sofas** respectively
+12. Expand the **Input** dropdown and select **Text input**. Add two **Text input** components to the screen and position them as shown in the figure. Rename them as **Input1_products** and **Input2_products** respectively
 
     :::image type="content" source="../media/add-email-input.png" alt-text="Screenshot of 2 text input" lightbox="../media/add-email-input.png":::
 
@@ -243,7 +238,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Back**:
 
         ```PowerApps
-        Navigate(Details_sofas,ScreenTransition.CoverRight)
+        Navigate(Product_details,ScreenTransition.CoverRight)
         ```
 
         :::image type="content" source="../media/configure-back-icon-order.png" alt-text="Screenshot of back OnSelect config" lightbox="../media/configure-back-icon-order.png":::
@@ -256,7 +251,7 @@ In this module, you'll be using some of the key functional components of **Power
 
         :::image type="content" source="../media/configure-home-icon-order.png" alt-text="Screenshot of configuring OnSelect - Order" lightbox="../media/configure-home-icon-order.png":::
 
-17. Follow the same procedure for  **Order_chairs**, **Order_tables**, and **Order_carpets**.
+17. Follow the same procedure for **Order_carpets**.
 
 ## Create end page
 
@@ -293,11 +288,11 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data connectors for mail" lightbox="../media/add-office-365-outlook.png":::
 
-2. Open the **Order_sofas** and configure the **OnSelect** property of the **Confirm** button by adding the following lines:
+2. Open the **Order_products** and configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
     ```PowerApps
-    Office365Outlook.SendEmailV2(Input1_sofas & ";"& Input2_sofas,"Order Summary","<b> Your order is successfully submitted! </b> <br>
-    Order details are as follows: <ul> <li> Product: " & Sofas_product_details & "</li> <li> Price: " & Sofas_price_details & "</li> <li> Color: " & Sofas_color_details & "</li> </ul>Notes: " & TextInput_sofas & "<br><b> Thank you for shopping with us! </b>");
+    Office365Outlook.SendEmailV2(Input1_sofas & ";"& Input2_products,"Order Summary","<b> Your order is successfully submitted! </b> <br>
+    Order details are as follows: <ul> <li> Product: " & name_details & "</li> <li> Price: " & price_details & "</li> <li> Color: " & color_details & "</li> </ul>Notes: " & TextInput_products & "<br><b> Thank you for shopping with us! </b>");
     Navigate('End page',ScreenTransition.Cover) 
     ```
 
