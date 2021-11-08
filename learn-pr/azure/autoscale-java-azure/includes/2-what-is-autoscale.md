@@ -16,9 +16,15 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 :::image type="content" source="../media/computesaving.jpg" alt-text="save on compute" lightbox="../media/computesaving.jpg":::
 
-## "Up" vs "Out"
+## "Out" vs "Up"
 
-Autoscale only scales "out" (horizontally), which is an increase ("out") or decrease ("in") in the number of application instances. In contrast, "up" (vertical) scaling is different. It keeps the same number of application instances, but makes the application instances more ("up") or less ("down") powerful.
+There are two main ways that an application can scale:
+
+- Horizontal scaling, also called scaling **out** and **in**, means adding or removing instances of a resource. The application continues running without interruption as new resources are provisioned. When the provisioning process is complete, the solution is deployed on these additional resources. If demand drops, the additional resources can be shut down cleanly and de-allocated.
+
+- Vertical scaling, also called scaling **up** and **down**, means changing the capacity of a resource. For example, you could move an application to a larger compute size. Vertical scaling often requires making the system temporarily unavailable while it is being redeployed. Therefore, it's less common to automate vertical scaling.
+
+Autoscale only scales "**out**" (horizontally), which is an increase ("**out**") or decrease ("**in**") in the number of application instances.
 
 :::image type="content" source="../media/outvsup.png" alt-text="scaleup vs scale out difference" lightbox="../media/outvsup.png":::
 
@@ -30,10 +36,10 @@ Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring appl
 
 Raley’s grocery stores needed to modernize the code and infrastructure for their Java-powered e-commerce sites hosted on Azure. The company also needed to optimize and automate its network allocation. Everything had to be robust, always-on, and—most importantly—easy to manage.
 
-The answer was Azure Spring Cloud, a fully managed service for Spring Boot, providing the power of Kubernetes coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
+Raley’s chose Azure Spring Cloud. Azure Spring Cloud is a managed service for Spring Boot, which provides the power of Kubernetes, coupled with real-time monitoring and autoscaling. It also enabled Raley’s to adopt a true platform as a service (PaaS) architecture, seizing the benefits of the cloud more fully.
 
 The service manages the infrastructure of Spring Boot microservice applications behind the scenes, so developers can focus on their code. When Java archives or code is deployed, Spring Cloud automatically wires the apps with the Spring service runtime.
 
-After they’re deployed, Spring Cloud apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. When used with Azure Application Gateway, these same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
+After they’re deployed, Spring Cloud apps are fully integrated with Azure Monitor tools, like Application Insights and Log Analytics, allowing easy, fully configurable monitoring of performance and errors. These same monitoring services can also drive autoscaling, helping to ensure that resources are appropriately sized for current loads.
 
 :::image type="content" source="../media/autoscaleconcept.png" alt-text="autoscale up scaling" lightbox="../media/autoscaleconcept.png":::
