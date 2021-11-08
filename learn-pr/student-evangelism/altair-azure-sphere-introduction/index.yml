@@ -14,11 +14,10 @@ summary: Introduction to computing fundamentals with Altair 8800 and Azure Spher
 abstract:  |
   In this module, you will:
   - Learn about the history of the Altair 8800, the computer that kick-started the personal computer revolution.
-  - Learn about the three components of Sphere Sphere and how together they provide a platform for secure IoT.
-  - Apply the Azure IoT Services that are used to cloud-connect the Altair 8800.
-  - Write Basic, C, or Assembler applications and games that run on the Altair 8800 emulator.
+  - Learn about the three components of Azure Sphere and how they provide a platform for improved-security IoT.
+  - Apply the Azure IoT services that are used to connect the Altair 8800 to the cloud.
 prerequisites: |
-  - A computer with an x86-64-based processor running one of the following operating systems:
+  - A computer that has an x86-64-based processor and that runs one of these operating systems:
     - Windows 10 Anniversary Update or later
     - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
   - An Azure Sphere developer board that has one of the following kits:
