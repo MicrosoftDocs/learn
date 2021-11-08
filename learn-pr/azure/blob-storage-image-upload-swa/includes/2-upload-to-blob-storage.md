@@ -4,7 +4,7 @@ Let's see the situation with the following picture. Your frontend cannot access 
 
 :::image type="content" source="../media/architecture-1.png" alt-text="Static Web App and Blob Storage":::
 
-## Describe Shared Access Signature Tokens
+## Describe Shared Access Signature tokens
 
 To solve this problem, you need to generate a Shared Access Signature (SAS) which provides limited access to an authorized user to write to an Azure Blob Storage. The benefit of using a SAS is that you can allow your users to upload pictures or any file directly to Azure Blob Storage without needing to share your storage account key with them. Furthermore, a SAS enables you to limit access to protect your Azure resource. For example, you can limit the duration of access to prevent fraudulent use.
 
