@@ -58,11 +58,11 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="46-68" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="46-67" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="70-83" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="69-82" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 

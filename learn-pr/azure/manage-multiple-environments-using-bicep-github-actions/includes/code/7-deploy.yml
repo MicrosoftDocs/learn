@@ -55,12 +55,11 @@ jobs:
   deploy:
     needs: validate
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     outputs:
       appServiceAppHostName: ${{ steps.deploy.outputs.appServiceAppHostName }}
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:

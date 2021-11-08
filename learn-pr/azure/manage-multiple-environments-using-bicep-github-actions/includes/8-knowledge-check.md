@@ -1,50 +1,66 @@
-Consider the following pipeline definition and pipeline template:
+Consider the following workflow definition:
 
-*azure-pipelines.yml*:
+*.github/workflows/workflow.yml*:
 
 ```yaml
-trigger: none
+name: workflow
 
-pool:
-  vmImage: ubuntu-latest
+on: 
+  push:
+    branches: 
+      - main
+  workflow_dispatch:
 
-stages:
+jobs:
+  deploy-sandbox:
+    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    with:
+      environmentName: Sandbox
+    secrets:
+      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 
-- template: deploy.yml
-  parameters:
-    environmentName: Sandbox
-
-- template: deploy.yml
-  parameters:
-    environmentName: Production
+  deploy-production:
+    uses: mygithubuser/myworkflow/.github/workflows/deploy.yml@main
+    needs: deploy-sandbox
+    with:
+      environmentName: Production
+    secrets:
+      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 ```
 
-*deploy.yml*:
+*.github/workflows/deploy.yml*:
 
 ```yaml
-parameters:
-- name: environmentName
-  type: string
+name: deploy
 
-stages:
-- stage: Deploy
-  jobs:
-  - job: Deploy
+on:
+  workflow_call:
+    inputs:
+      environmentName:
+        required: true
+        type: string
+    secrets:
+      AZURE_CREDENTIALS:
+        required: true
+
+jobs:
+  deploy:
+    environment: ${{ inputs.environmentType }}
+    runs-on: ubuntu-latest
     steps:
-    - checkout: self
-    - task: AzureCLI@2
-      name: DeployBicepFile
-      displayName: Deploy Bicep file
-      inputs:
-        azureSubscription: SharedServiceConnection
-        scriptType: 'bash'
-        scriptLocation: 'inlineScript'
-        inlineScript: |
-            az deployment group create \
-            --name $(Build.BuildNumber) \
-            --resource-group ${{parameters.environmentName}}_rg \
-            --template-file deploy/main.bicep \
-            --parameters deploy/parameters.${{parameters.environmentName}}.json
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      with:
+        failOnStdErr: false
+        deploymentName: ${{ github.run_number }}
+        resourceGroupName: ${{ inputs.environmentName }}_rg
+        template: ./deploy/main.bicep
+        parameters: deploy/parameters.${{ inputs.environmentName }}.json
 ```
+
+<!-- TODO verify the above actually works -->
 
 The Git repository's *deploy* folder also contains the Bicep file and parameter files.
