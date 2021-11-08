@@ -58,5 +58,4 @@ Once you have determined your identity management solution, it’s time to think
 
 A user’s identity goes through several phases. Initially, the user will have no access. Access can then be granted through role-based access control and verified with Azure AD conditional access. Azure AD Identify Protection can be used to monitor the user’s access. And then periodically Azure AD access reviews will confirm the access is still required. 
 
-:::image type="content" source="../media/identities-resources.png" alt-text="Identities are allowed access to resources.":::
 
