@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which of the following is an advantage of running a private MQTT broker?"
     choices:
-    - content: "It's much simpler than using the public test.mosquitto.org public broker."
+    - content: "It's much simpler than using the public test.mosquitto.org broker."
       isCorrect: false
       explanation: "Setting up an MQTT broker is more complex than using the public broker."
     - content: "It has enhanced security, it's private, and performance is predicable. The virtual disk server performs faster when it's running on the same server as the MQTT broker."
       isCorrect: true
-      explanation: "The Altair emulator, including the virtual disk server, will perform better when connected to a private MQTT broker."
+      explanation: "The Altair emulator, including the virtual disk server, will perform better when it's connected to a private MQTT broker."
     - content: "The private MQTT broker is not secure."
       isCorrect: false
       explanation: "You use self-signed certificates to help secure the MQTT broker, and all MQTT messages between the Altair emulator are encrypted and private."

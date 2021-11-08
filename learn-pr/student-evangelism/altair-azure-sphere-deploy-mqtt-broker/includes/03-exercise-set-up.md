@@ -75,7 +75,7 @@ It takes about a minute to deploy the virtual machine.
 
 The following steps set up certificates to help secure the communications between the Altair emulator and the web terminal. The result will be a self-signed certificate that's valid for two years (730 days).
 
-1. Create a bash `CommonName` variable set to the DNS name of your Ubuntu server:
+1. Create a Bash `CommonName` variable set to the DNS name of your Ubuntu server:
 
     ```bash
     CommonName=<Your Ubuntu Server DNS Name>
@@ -89,11 +89,11 @@ The following steps set up certificates to help secure the communications betwee
 
 1. Create the self-signed CA certificate:
 
-    When you're creating a self-signed CA certificate, you can use the default value, but the common name (CN) *must* match the DNS name of your server.
-
     ```bash
     openssl req -new -x509 -days 730 -nodes -extensions v3_ca -keyout ca.key -out ca.crt
     ```
+
+    When you're creating a self-signed CA certificate, you can use the default value, but the common name (CN) *must* match the DNS name of your server.
 
 1. Create the server certificate:
 
@@ -131,7 +131,7 @@ The following steps set up certificates to help secure the communications betwee
 
 [Let's Encrypt](https://letsencrypt.org?azure-portal=true) is a nonprofit certificate authority that provides TLS certificates to 260 million websites. We're going to use a free Let's Encrypt certificate to help secure the MQTT messages between the web terminal and the Mosquitto MQTT broker.
 
-The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt-issued certificates expire after six months. The Certbot client ensures the certificates are updated before they expire.
+The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt-issued certificates expire after six months. The Certbot client ensures that the certificates are updated before they expire.
 
 For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt/ubuntufocal-other?azure-portal=true).
 
@@ -163,7 +163,7 @@ sudo ls -all /etc/letsencrypt/live/$CommonName
 
 The web terminal will use the Let's Encrypt certificate to encrypt MQTT traffic over the internet. The web terminal will also authenticate with the MQTT broker by using the username and password.
 
-The following command will create the MQTT broker password file and will prompt you to enter a password for the *WebTerminal* username:
+The following command will create the MQTT broker's password file and will prompt you to enter a password for the *WebTerminal* username:
 
 ```bash
 sudo mosquitto_passwd -c /etc/mosquitto/passwd WebTerminal
@@ -171,7 +171,7 @@ sudo mosquitto_passwd -c /etc/mosquitto/passwd WebTerminal
 
 Note down the username and password, because you'll need them to configure the static web app for the web terminal.
 
-## Configure Mosquitto MQTT broker
+## Configure the Mosquitto MQTT broker
 
 You need to tell the Mosquitto broker what ports to listen on and where the certificates are.
 
@@ -259,7 +259,7 @@ A useful troubleshooting tip for the Mosquitto broker is to start in interactive
 
 Update the Altair emulator to connect to your new Mosquitto MQTT broker:
 
-1. Copy the new CA and client certificates to the Altair emulator's *certs* folder. The easiest way is from the file explorer. Browse to the *certs* folder and open a new terminal or Powershell window.
+1. Copy the new CA and client certificates to the Altair emulator's *certs* folder. The easiest way is from the file explorer. Browse to the *certs* folder and open a new terminal or PowerShell window.
 1. Run the `scp` command to copy the certificates from your Mosquitto virtual machine to the *certs* folder. The following command assumes that you copied your virtual machine's private key to the *~/.ssh* folder:
 
     ```bash

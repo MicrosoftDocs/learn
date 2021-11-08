@@ -3,7 +3,7 @@ The following list outlines the steps that you'll follow in the next exercise to
 1. Create an Azure virtual machine that's running Linux Ubuntu.
 1. Configure network ports to open.
 1. Install the Mosquitto MQTT broker.
-1. Secure the Mosquitto MQTT broker.
+1. Help secure the Mosquitto MQTT broker.
 1. Install Let's Encrypt support.
 1. Create the username and password for the web terminal.
 1. Configure the Mosquitto MQTT broker.
