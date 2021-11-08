@@ -20,9 +20,9 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 There are two main ways that an application can scale:
 
-- Vertical scaling, also called scaling **up** and **down**, means changing the capacity of a resource. For example, you could move an application to a larger compute size. Vertical scaling often requires making the system temporarily unavailable while it is being redeployed. Therefore, it's less common to automate vertical scaling.
+- Vertical scaling, also called scaling **up** and **down**, means changing the capacity of a resource. For example, you could move an application to a larger compute size. Vertical scaling often requires making the system temporarily unavailable while it's being redeployed. So, it's less common to automate vertical scaling.
 
-- Horizontal scaling, also called scaling **out** and **in**, means adding or removing instances of a resource. The application continues running without interruption as new resources are provisioned. When the provisioning process is complete, the solution is deployed on these additional resources. If demand drops, the additional resources can be shut down cleanly and de-allocated.
+- Horizontal scaling, also called scaling **out** and **in**, means adding or removing instances of a resource. The application continues running without interruption as new resources are provisioned. When the provisioning process is complete, the solution is deployed on these extra resources. If demand drops, the extra resources can be shut down cleanly and de-allocated.
 
 Autoscale only scales "**out**" (horizontally), which is an increase ("**out**") or decrease ("**in**") in the number of application instances.
 
@@ -30,7 +30,7 @@ Autoscale only scales "**out**" (horizontally), which is an increase ("**out**")
 
 ## Autoscale in Azure Spring Cloud
 
-Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where extra resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications perform their best when demand changes.
+Autoscaling in Azure Spring Cloud monitors the resource metrics of a Spring application as it runs. It detects situations where extra resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded. Autoscale is a built-in feature of Azure Spring Cloud that helps microservice applications do their best when demand changes.
 
 ## Real-world example
 

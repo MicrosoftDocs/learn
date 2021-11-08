@@ -18,15 +18,15 @@ Autoscale will post to the Activity Log if any of the following conditions occur
 - Autoscale issues a scale operation.
 - Autoscale service successfully completes a scale action.
 - Autoscale service fails to take a scale action.
-- Autoscale detects flapping and aborts the scale attempt. You will see a log type of `Flapping` in this situation. If you see `Flapping`, consider whether your thresholds are too narrow.
-- Autoscale detects flapping but is still able to successfully scale. You will see a log type of `FlappingOccurred` in this situation. If you see `FlappingOccurred`, the autoscale engine has attempted to scale (for example, from four instances to 2), but has determined that this action would cause flapping. Instead, the autoscale engine has scaled to a different number of instances (for example, using three instances instead of 2), which no longer causes flapping, so it has scaled to this number of instances.
+- Autoscale detects flapping and aborts the scale attempt. You'll see a log type of `Flapping` in this situation. If you see `Flapping`, consider whether your thresholds are too narrow.
+- Autoscale detects flapping but is still able to successfully scale. You'll see a log type of `FlappingOccurred` in this situation. If you see `FlappingOccurred`, the autoscale engine has attempted to scale (for example, from four instances to 2), but has determined that this action would cause flapping. Instead, the autoscale engine has scaled to a different number of instances (for example, using three instances instead of 2), which no longer causes flapping, so it has scaled to this number of instances.
 
 ## Monitor the Application's autoscale with Log Analytics
 
 As with any Azure Monitor supported service, you can use Diagnostic Settings to route these logs:
 
 - To your Azure Log Analytics workspace for detailed analytics
-- To Azure EventHubs and then to non-Azure tools
+- To Azure Event Hubs and then to non-Azure tools
 - To your Azure storage account for archival
 
 You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting.

@@ -31,7 +31,7 @@ Next, in the bash window, run the following commands to clone the sample reposit
 
 When you run the above command, a window will pop up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
 
-1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names use lowercase letters - you may use hyphens and numbers also:
+1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment. For all resource names, use lowercase letters - you may use hyphens and numbers also:
 
    | Variable | Description |
    |-|-|
