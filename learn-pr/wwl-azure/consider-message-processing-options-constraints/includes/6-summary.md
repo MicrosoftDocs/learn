@@ -1,0 +1,1 @@
+Your team will be responsible for implementing device message processing in support of data analytics and other downstream requirements. Understanding the alternatives to message routing and the throttling limits that apply to IoT Hub message throughput will help to ensure team's success.

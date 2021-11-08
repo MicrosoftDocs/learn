@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consider-message-processing-options-constraints.examine-iot-hub-quotas-throttling
+title: Examine IoT Hub quotas and throttling
+metadata:
+  title: Examine IoT Hub quotas and throttling
+  description: "Examine IoT Hub quotas and throttling"
+  ms.date: 11/08/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-iot-hub-quotas-throttling.md)]
