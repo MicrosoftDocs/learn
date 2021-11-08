@@ -9,8 +9,13 @@ on:
       resourceGroupName:
         required: true
         type: string
+      reviewApiUrl:
+        required: true
+        type: string
     secrets:
       AZURE_CREDENTIALS:
+        required: true
+      reviewApiKey:
         required: true
 
 jobs:
@@ -31,6 +36,8 @@ jobs:
          template: ./deploy/main.bicep
          parameters: >
            environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
          deploymentMode: Validate
      - if: inputs.environmentType == 'Production'
        uses: Azure/cli@v1
@@ -41,7 +48,9 @@ jobs:
              az deployment group what-if \
                --resource-group ${{ inputs.resourceGroupName }} \
                --template-file ./deploy/main.bicep \
-               --parameters environmentType=${{ inputs.environmentType }}
+               --parameters environmentType=${{ inputs.environmentType }} \
+                            reviewApiUrl=${{ inputs.reviewApiUrl }} \
+                            reviewApiKey=${{ secrets.reviewApiKey }}
  
   deploy:
     needs: validate
@@ -66,6 +75,8 @@ jobs:
         template: ./deploy/main.bicep
         parameters: >
            environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
 
   smoke-test:
     runs-on: ubuntu-latest

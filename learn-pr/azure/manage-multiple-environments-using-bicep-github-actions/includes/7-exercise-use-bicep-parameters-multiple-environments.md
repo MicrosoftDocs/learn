@@ -1,108 +1,64 @@
-Now that your pipeline deploys to both of your environments, you're ready to integrate with the third-party API for product reviews. 
+Now that your workflow deploys to both of your environments, you're ready to integrate with the third-party API for product reviews. 
 
-Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your pipeline to configure each of your environments with the correct settings for the product review API.
+Your website team has provided you with the API keys and URLs that your website should use to access the service. There are different values for your test and production environments to use. In this unit, you'll update your workflow to configure each of your environments with the correct settings for the product review API.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create variable groups for each of your environments.
-> * Update the pipeline so it picks the correct variable group for each environment instead of using template parameters.
+> * Create secrets for the review API keys for each of your environments.
+> * Update the workflow with the correct input and secret values for each environment.
 > * Update your Bicep file to propagate the settings that you need for the product review API.
-> * Update the variable group and pipeline to set the values for the product review API's settings.
 > * Review the pipeline results and the changes to your Azure environment.
 
-## Add variable groups
+## Add secrets
 
-Because you're adding more parameters that vary between each environment, you decide to move away from adding your pipeline parameters directly into your pipeline YAML files. Instead, you'll use a variable group to keep the values for each environment together.
+TODO
 
-1. In your browser, go to **Pipelines** > **Library**.
+1. In your browser, go to **Settings** > **Secrets**.
 
-   :::image type="content" source="../media/7-library.png" alt-text="Screenshot of Azure DevOps that shows the Library menu item under the Pipelines category.":::
+   :::image type="content" source="../media/7-secrets.png" alt-text="Screenshot of GitHub that shows the Secrets menu item under the Settings category.":::
 
-1. Select the **+ Variable group** button.
+1. Select the **New repository secret** button.
 
-   :::image type="content" source="../media/7-variable-groups-new.png" alt-text="Screenshot of the Azure DevOps library page and the button for adding a variable group.":::
+   :::image type="content" source="../media/7-secrets-new.png" alt-text="Screenshot of GitHub and the button for adding a secret.":::
 
-1. Enter **ToyWebsiteTest** as the variable group name.
+1. Enter *REVIEW_API_KEY_TEST* as the secret name, and *sandboxsecretkey* as the value.
 
-1. Select the **+ Add** button to add variables to the variable group. Create two variables with the following settings:
+   :::image type="content" source="../media/7-secrets-new-test.png" alt-text="Screenshot of GitHub showing a new secret.":::
 
-   | Name | Value |
-   |-|-|
-   | EnvironmentType | Test |
-   | ResourceGroupName | ToyWebsiteTest |
+1. Select **Add secret**.
 
-   Notice that you don't define the service connection name in the variable group. Service connection names have special rules about how they can be specified. In this module, you'll use pipeline template parameters.
+1. Repeat the process to add another secret named *REVIEW_API_KEY_PRODUCTIOn* as the secret name, and *productionsecretkey* as the value. Select **Add secret**.
 
-   :::image type="content" source="../media/7-variable-group-test-v1.png" alt-text="Screenshot of the test variable group and variables.":::
-
-1. Select **Save**.
-
-1. Select the **Back** button in your browser to return to the list of variable groups.
-
-1. Add another variable group named **ToyWebsiteProduction**. Create two variables with the following settings:
-
-   | Name | Value |
-   |-|-|
-   | EnvironmentType | Production |
-   | ResourceGroupName | ToyWebsiteProduction |
-
-   :::image type="content" source="../media/7-variable-group-production-v1.png" alt-text="Screenshot of the production variable group and variables.":::
-
-   Notice that the variable names are the same for both environments, but the values are different.
-
-1. Save the production variable group.
-
-## Update the deployment pipeline template to use the variable group
+## Update the deploy.yml file to use the new settings
 
 1. In Visual Studio Code, open the *deploy.yml* file.
 
-1. At the top of the file, remove the `resourceGroupName` and `serviceConnectionName` parameters. Don't delete the `environmentType` parameter.
+1. Update the workflow trigger to include new values for the `inputs` and `secrets` settings:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="1-3" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="3-19" highlight="10-12, 16-17" :::
 
-1. Update the `ValidateBicepCode` job to import the variable group:
+1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-15" highlight="7-8" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="21-44" highlight="19-20, 31-33" :::
 
-1. Update the `ValidateBicepCode` job to automatically infer the service connection name based on the `environmentType` parameter value:
+   TODO remember \ in whatif
 
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-21" highlight="14" :::
+1. Update the `deploy` job to include the new deployment parameters:
 
-1. Update the `ValidateBicepCode` job to use the imported variable group to set the resource group name and environment type parameters for the Azure CLI task:
-
-   :::code language="yaml" source="code/7-deploy-1.yml" range="7-27" highlight="19, 21" :::
-
-1. Make the changes to the `PreviewAzureChanges` job:
-
-   :::code language="yaml" source="code/7-deploy-1.yml" range="29-49" highlight="7-8, 14, 19, 21" :::
-
-1. Make the same changes to the `Deploy` deployment job:
-
-   :::code language="yaml" source="code/7-deploy-1.yml" range="51-79" highlight="6-7, 18, 25, 27" :::
-
-1. Verify that your *deploy.yml* file now looks like the following code:
-
-   :::code language="yaml" source="code/7-deploy-1.yml" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="55-79" highlight="24-25" :::
 
 1. Save your changes to the file.
 
-## Update the pipeline definition to simplify the parameter list
+## Update the workflow.yml file to provide the new settings
 
-1. Open the *azure-pipelines.yml* file.
+1. In Visual Studio Code, open the *workflow.yml* file.
 
-1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters. Leave only the `environmentType` parameter.
+1. Add the `reviewApiUrl` inputs, and the `reviewApiKey` secrets, for each environment:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="23, 26, 35, 38" :::
 
 1. Save your changes to the file.
-
-1. Commit your changes to your Git repository without pushing them by using the following commands: 
-
-   ```bash
-   git add .
-   git commit -m "Use variable groups"
-   ```
 
 ## Update the Bicep file
 
@@ -118,84 +74,29 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Save your changes to the file.
 
-## Update the variable groups
-
-1. In your browser, go to **Pipelines** > **Library**, and open the **ToyWebsiteTest** variable groups.
-
-1. Add the following variables:
-
-   | Name | Value |
-   |-|-|
-   | ReviewApiKey | sandboxsecretkey |
-   | ReviewApiUrl | `https://sandbox.contoso.com/reviews` |
-
-1. Select the padlock icon next to the **ReviewApiKey** variable. This step tells Azure Pipelines to treat the variable's value securely.
-
-   :::image type="content" source="../media/7-variable-group-test-v2.png" alt-text="Screenshot of the test variable group and the secret variable button.":::
-
-1. Save the variable group.
-
-   :::image type="content" source="../media/7-variable-group-test-v3.png" alt-text="Screenshot of the test variable group with updated variables.":::
-
-1. Update the **ToyWebsiteProduction** variable group to add a similar set of variables:
-
-   | Name | Value |
-   |-|-|
-   | ReviewApiKey | productionsecretkey |
-   | ReviewApiUrl | `https://api.contoso.com/reviews` |
-
-   Remember to select the padlock icon next to the **ReviewApiKey** variable.
-
-   :::image type="content" source="../media/7-variable-group-production-v2.png" alt-text="Screenshot of the production variable group with updated variables.":::
-
-1. Save the variable group.
-
-## Add the review API variables to the variable groups
-
-1. In Visual Studio Code, open the *deploy.yml* file.
-
-1. In the `ValidateBicepCode` job, add the review API parameter values to the Azure CLI task:
-
-   :::code language="yaml" source="code/7-deploy-2.yml" range="7-29" highlight="21-23" :::
-
-   > [!IMPORTANT]
-   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
-
-1. Make the same change to the `PreviewAzureChanges` job:
-
-   :::code language="yaml" source="code/7-deploy-2.yml" range="31-53" highlight="21-23" :::
-
-1. Make the same change to the `Deploy` job:
-
-   :::code language="yaml" source="code/7-deploy-2.yml" range="55-85" highlight="27-29" :::
-
-1. Verify that your *deploy.yml* file now looks like the following code:
-
-   :::code language="yaml" source="code/7-deploy-2.yml" :::
-
 1. Commit and push your changes to your Git repository by using the following commands: 
 
    ```bash
    git add .
-   git commit -m "Add new review API settings to Bicep file and pipeline"
+   git commit -m "Add new review API settings to Bicep file and workflow"
    git push
    ```
 
 ## Review the deployment results
 
-1. In your browser, go to **Pipelines**.
+1. In your browser, go to **Actions**.
 
-1. Select the most recent run of your pipeline.
+1. Select **toy-company-environments**.
 
-   Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
+1. Select the most recent run of your workflow.
 
-1. Approve the deployment to the production environment by selecting **Review** > **Approve**.
+   Wait for the workflow to pause before the **deploy-production / deploy** job. It might take a few minutes for the workflow to reach this point.
+
+1. Approve the deployment to the production environment by selecting **Review deployments**, then selecting **Production** and selecting **Approve amd deploy**.
 
    Wait for the pipeline to finish running.
 
-1. Select **Pipelines** > **Environments**.
-
-1. Select the **Production** environment.
+1. Select **Code** and then select the **Production** environment.
 
    Notice that you now see multiple deployments in the environment's history.
 

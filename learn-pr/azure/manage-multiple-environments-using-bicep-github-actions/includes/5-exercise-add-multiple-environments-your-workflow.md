@@ -73,7 +73,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Remove the contents of the `lint:` job definition and replace it with the following code to use the *lint.yml* file you created earlier:
 
-   :::code language="yaml" source="code/5-workflow.yml" range-"10-14" highlight="5" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="10-14" highlight="5" :::
 
    Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow.
 
@@ -81,13 +81,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. At the bottom of the file, add the following code to deploy to the test environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range-"16-24" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="16-24" :::
 
    Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
 
 1. Below the code you just added, add the following code to deploy to the production environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range-"26-34" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="26-34" :::
 
    Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
 
@@ -119,7 +119,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
-1. Wait for the workflow to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the workflow to reach this point.
+1. Wait for the workflow to pause before the **deploy-production / deploy** stage. It might take a few minutes for the workflow to reach this point.
 
    :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of GitHub that shows the workflow run paused for approval.":::
 
