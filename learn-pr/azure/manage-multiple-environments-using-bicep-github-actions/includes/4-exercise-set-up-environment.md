@@ -284,19 +284,19 @@ You've created two resource group and the service principals that can deploy to 
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CREDENTIALS_Test*.
+1. Name the secret *AZURE_CREDENTIALS_TEST*.
 
 1. In the **Value** field, paste the JSON object for the test environment that you copied in the previous section.
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../media/4-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process for a new secret named *AZURE_CREDENTIALS_Production*, and paste the value for the production environment's service principal from the previous section.
+1. Repeat the process for a new secret named *AZURE_CREDENTIALS_PRODUCTION*, and paste the value for the production environment's service principal from the previous section.
 
 1. Verify that your list of secrets now shows both secrets.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
+   :::image type="content" source="../media/4-github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
 
 ## Create environments in GitHub
 
