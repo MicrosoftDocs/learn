@@ -287,7 +287,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     Notice that we have already defined a trigger and an output binding, as shown in the following image.
 
-    :::image type="content" source="./media/3-function-integration-vertical-small.png" alt-text="Screenshot of the integration screen with flow diagram showing Trigger and Inputs leading to Function and Funtion leading to Output." lightbox-"../media/3-function-integration-vertical.png":::
+    :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of the integration screen with flow diagram showing Trigger and Inputs leading to Function and Funtion leading to Output." lightbox-"../media/3-function-integration-vertical.png":::
 
     You can see that we can't add more than _one_ trigger. To change a trigger for a function, you need to the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value, and return more than one output value.
 
@@ -313,7 +313,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     Notice that we have already defined a trigger and an output binding, as shown in the following image.
 
-    :::image type="content" source="./media/3-function-integration-horizontal-small.png" alt-text="Screenshot of the integration screen with flow diagram showing Trigger and Inputs leading to Function and Funtion leading to Output." lightbox-"../media/3-function-integration-horizontal.png":::
+    :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of the integration screen with flow diagram showing Trigger and Inputs leading to Function and Funtion leading to Output." lightbox-"../media/3-function-integration-horizontal.png":::
     
     You can see that we can't add more than _one_ trigger. To change the trigger for a function, you need to delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections enable you to add multiple bindings, so the function can accept more than one input value, and return more than one output value.
 
