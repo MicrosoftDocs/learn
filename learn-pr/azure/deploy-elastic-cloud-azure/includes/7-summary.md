@@ -11,7 +11,7 @@ For the past 45 years, Esri geographic information system (GIS) technology has h
 ## References
 
 - Get started with the latest version of [Elasticsearch](/azure/partner-solutions/elastic/create)
-- Access Elastic offers through the [Azure Marketplace listing page](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.ec-azure?tab=overview).
+- Access Elastic offers through the [Azure Marketplace listing page](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.ec-azure-pp).
 - Reset your [Elastic user password](https://www.elastic.co/guide/en/cloud/current/ec-password-reset.html).
 - Learn how to [upgrade versions](https://www.elastic.co/guide/en/cloud/current/ec-upgrade-deployment.html) of the Elastic Stack.
 - Test the performance of your initial setup and adjust in a separate environment using [Rally](https://github.com/elastic/rally), Elastic’s macro benchmarking framework.

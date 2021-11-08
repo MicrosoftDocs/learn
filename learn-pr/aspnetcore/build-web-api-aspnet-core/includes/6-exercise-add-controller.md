@@ -14,36 +14,33 @@ A *controller* is a public class with one or more public methods known as *actio
 1. Add the following code to *Controllers/PizzaController.cs*. Save your changes.
 
     ```csharp
-    using System.Collections.Generic;
-    using System.Linq;
-    using Microsoft.AspNetCore.Mvc;
     using ContosoPizza.Models;
     using ContosoPizza.Services;
+    using Microsoft.AspNetCore.Mvc;
 
-    namespace ContosoPizza.Controllers
+    namespace ContosoPizza.Controllers;
+
+    [ApiController]
+    [Route("[controller]")]
+    public class PizzaController : ControllerBase
     {
-        [ApiController]
-        [Route("[controller]")]
-        public class PizzaController : ControllerBase
+        public PizzaController()
         {
-            public PizzaController()
-            {
-            }
-
-            // GET all action
-
-            // GET by Id action
-
-            // POST action
-
-            // PUT action
-
-            // DELETE action
         }
+
+        // GET all action
+
+        // GET by Id action
+
+        // POST action
+
+        // PUT action
+
+        // DELETE action
     }
     ```
 
-    As you learned previously, this class derives from *ControllerBase*, the base class for working with HTTP requests ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Since this controller class is named `PizzaController`, Requests to `http://localhost:5000/pizza` are handled by this controller.
+    As you learned previously, this class derives from *ControllerBase*, the base class for working with HTTP requests ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Since this controller class is named `PizzaController`, Requests to `https://localhost:{PORT}/pizza` are handled by this controller.
 
 ## Get all pizzas
 
@@ -107,14 +104,14 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 1. Connect to our web API by running the following command:
   
   ```dotnetcli
-  httprepl http://localhost:5000
+  httprepl https://localhost:{PORT}
   
   Alternatively, run the following command at any time while the HttpRepl is running:
 
   For example:
 
   ```dotnetcli
-  (Disconnected)> connect http://localhost:5000
+  (Disconnected)> connect https://localhost:{PORT}
   ```
 
 1. To see our newly available pizza endpoint run the following command:
@@ -126,7 +123,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   The preceding command will detect all APIs available on the connected endpoint. It should display the following:
 
    ```dotnetcli
-    http://localhost:5000/> ls
+    https://localhost:{PORT}/> ls
     .                 []
     Pizza             [GET]
     WeatherForecast   [GET]
@@ -141,7 +138,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   The preceding command will output available APIs available for the `Pizza` endpoint:
 
   ```dotnetcli
-  http://localhost:5000/> cd Pizza
+  https://localhost:{PORT}/> cd Pizza
   /Pizza    [GET]
   ```
 

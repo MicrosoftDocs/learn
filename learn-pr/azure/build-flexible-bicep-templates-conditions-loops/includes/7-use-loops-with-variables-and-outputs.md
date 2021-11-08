@@ -22,7 +22,7 @@ You would ordinarily use variable loops to create more complex objects that you 
 
 ::: code language="bicep" source="code/7-loop-variable.bicep" highlight="13-18" :::
 
-This example illustrates an effective use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to what the Azure resource needs to be defined. You use variable loops to enable parameters to specify only the key information that will change for each item in the list. You can then use Bicep expressions or default values to set other properties.
+This example illustrates an effective use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to the required definition of the Azure resource. You use variable loops to enable parameters to specify only the key information that will change for each item in the list. You can then use Bicep expressions or default values to set other required properties for the resource.
 
 ## Output loops
 

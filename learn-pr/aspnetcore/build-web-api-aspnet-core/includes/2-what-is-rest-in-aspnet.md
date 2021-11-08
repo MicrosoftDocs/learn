@@ -18,7 +18,7 @@ Web service APIs that adhere to REST are called RESTful APIs, and are defined us
 - HTTP methods, such as GET, POST, PUT, PATCH, or DELETE.
 - A media type for the data, such as JavaScript Object Notation (JSON) or XML.
 
-An API will often need to provide services for a few different, related things. For example, our pizza API might manage pizzas, customers, and orders. We **routing** to map URIs to logical divisions in our code, so that requests to http://localhost:5000/Pizza are **routed** to a `PizzaController`, while requests to http://localhost:5000/order are routed to an `OrderController`.
+An API will often need to provide services for a few different, related things. For example, our pizza API might manage pizzas, customers, and orders. We **routing** to map URIs to logical divisions in our code, so that requests to https://localhost:5000/pizza are **routed** to a `PizzaController`, while requests to https://localhost:5000/order are routed to an `OrderController`.
 
 ## Benefits of creating APIs in ASP.NET Core
 
