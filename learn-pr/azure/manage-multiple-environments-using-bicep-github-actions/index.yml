@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage multiple environments by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep IaC templates. Deploy to multiple environments by using reusable workflows. Learn how to provide environment-specific parameters from your workflow.
-  ms.date: 10/18/2021
+  ms.date: 11/08/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
