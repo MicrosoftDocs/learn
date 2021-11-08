@@ -4,7 +4,7 @@ You can run a private Mosquitto MQTT broker on an Azure virtual machine. Running
 
 MQTT messages between the web terminal and Altair emulator need to be signed and encrypted with client certificates. The easiest and free way to create TLS certificates is to create a self-signed certificate authority (CA) certificate. You create client keys and certificates by using the self-signed CA certificate.
 
-Installing the Mosquitto MQTT broker on Linux is the easiest option because most package managers have the latest builds included. Use the procedures in this exercise to set up an Azure Virtual Machine running Ubuntu 20.04 LTS.
+Installing the Mosquitto MQTT broker on Linux is the easiest option because most package managers have the latest builds included. Use the procedures in this exercise to set up an Azure virtual machine running Ubuntu 20.04 LTS.
 
 > [!NOTE]
 > To minimize costs, the MQTT broker can be run on a *General purpose B1 SKU* virtual machine that can be stopped when it's not in use.
@@ -16,7 +16,7 @@ The following blog post from K21 Academy is a great guide to installing an Ubunt
 1. Open the Azure portal. From the main menu, select **Create a resource**.
 1. Search for **Virtual machine** and select **Create**.
 1. Create a resource group, name your virtual machine, and select a location. Name the image **Ubuntu Server 20.04 LTS Gen 1**, and set the size to **Standard_B1ls - 1 vcpu, 0.5 GIB memory**. Select **SSH public key**, and then name your key pair the same as your virtual machine name.
-1. Select **Next: Disks >** and select **Standard HDD** or **Standard SSD LRS**.
+1. Select **Next: Disks >**, and then select **Standard HDD** or **Standard SSD LRS**.
 1. Select **Review + create**.
 1. Select **Create**.
 1. Download the SSH private key and store it in your *~/.shh* folder.
@@ -89,7 +89,7 @@ The following steps set up certificates to help secure the communications betwee
 
 1. Create the self-signed CA certificate:
 
-    When you're creating a self-signed CA certificate, you can use the default value, but the CN (Common Name) *must* match the DNS name of your server.
+    When you're creating a self-signed CA certificate, you can use the default value, but the common name (CN) *must* match the DNS name of your server.
 
     ```bash
     openssl req -new -x509 -days 730 -nodes -extensions v3_ca -keyout ca.key -out ca.crt
@@ -129,9 +129,9 @@ The following steps set up certificates to help secure the communications betwee
 
 ## Install Let's Encrypt
 
-[Let's Encrypt](https://letsencrypt.org?azure-portal=true) is a nonprofit certificate authority that provides TLS certificates to 260 million websites. We're going to use a free Let's Encrypt certificate to secure the MQTT messages between the web terminal and the Mosquitto MQTT broker.
+[Let's Encrypt](https://letsencrypt.org?azure-portal=true) is a nonprofit certificate authority that provides TLS certificates to 260 million websites. We're going to use a free Let's Encrypt certificate to help secure the MQTT messages between the web terminal and the Mosquitto MQTT broker.
 
-The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt issued certificates expire after six months. The Certbot client ensures the certificates are updated before they expire.
+The following instructions walk you through installing the Certbot ACME client on the Ubuntu server. Let's Encrypt-issued certificates expire after six months. The Certbot client ensures the certificates are updated before they expire.
 
 For more information, see the [instructions on the Certbot site](https://certbot.eff.org/lets-encrypt/ubuntufocal-other?azure-portal=true).
 
@@ -163,7 +163,7 @@ sudo ls -all /etc/letsencrypt/live/$CommonName
 
 The web terminal will use the Let's Encrypt certificate to encrypt MQTT traffic over the internet. The web terminal will also authenticate with the MQTT broker by using the username and password.
 
-The following command will create the MQTT broker password file and will prompt you to enter a password for the **WebTerminal** username:
+The following command will create the MQTT broker password file and will prompt you to enter a password for the *WebTerminal* username:
 
 ```bash
 sudo mosquitto_passwd -c /etc/mosquitto/passwd WebTerminal
@@ -203,7 +203,7 @@ You need to tell the Mosquitto broker what ports to listen on and where the cert
     EOL
     ```
 
-1. Update the *YOUR_DOMAIN_NAME* placeholder with the domain name of your server by using the Linux `sed` command.
+1. Update the *YOUR_DOMAIN_NAME* placeholder with the domain name of your server by using the Linux `sed` command:
 
     ```bash
     sudo sed -i "s/YOUR_DOMAIN_NAME/$CommonName/g" /etc/mosquitto/conf.d/default.conf
@@ -211,7 +211,7 @@ You need to tell the Mosquitto broker what ports to listen on and where the cert
 
 ## Test the Mosquitto broker
 
-A useful troubleshooting tip for the Mosquitto broker is to start in interactive mode to ensure there are no problems.
+A useful troubleshooting tip for the Mosquitto broker is to start in interactive mode to ensure that there are no problems.
 
 1. You need to stop Mosquitto first, and then start in interactive mode. Select **Ctrl+C** to exit Mosquitto interactive mode, and then enter the following command:
 
@@ -238,12 +238,12 @@ A useful troubleshooting tip for the Mosquitto broker is to start in interactive
     1. Type **static local**, and then select **Azure Static Web Apps: Upload Local Settings**.
     1. Select your subscription.
     1. Select **Static Web App**. For the name, enter **AltairWebTerminal**.
-    1. Select the environment. Enter **Production**.
+    1. Select the environment by entering **Production**.
     1. You're prompted to overwrite existing settings. Select **Yes to all**.
     
 3. Start the web terminal and select **Connect**.
 
-4. Observe the Mosquitto broker's interactive output. It will look similar to the following output:
+4. Observe the Mosquitto broker's interactive output. It should look similar to the following output:
 
     ```text
     1625795690: mosquitto version 1.6.9 starting
@@ -257,7 +257,7 @@ A useful troubleshooting tip for the Mosquitto broker is to start in interactive
 
 ## Update the Altair emulator configuration
 
-Update the Altair emulator to connect to your new and secured Mosquitto MQTT broker:
+Update the Altair emulator to connect to your new Mosquitto MQTT broker:
 
 1. Copy the new CA and client certificates to the Altair emulator's *certs* folder. The easiest way is from the file explorer. Browse to the *certs* folder and open a new terminal or Powershell window.
 1. Run the `scp` command to copy the certificates from your Mosquitto virtual machine to the *certs* folder. The following command assumes that you copied your virtual machine's private key to the *~/.ssh* folder:
@@ -272,7 +272,7 @@ Update the Altair emulator to connect to your new and secured Mosquitto MQTT bro
     add_compile_definitions(ALTAIR_MQTT_HOST="REPLACE_WITH_YOUR_VIRTUAL_MACHINE_DNS_NAME")    
     ```
 
-1. Save the *altair_config.cmake* file. This will autogenerate the CMake cache.
+1. Save the *altair_config.cmake* file. This step will autogenerate the CMake cache.
 
 1. Update the `AllowedConnections` section of *app_manifest.json* to the new domain name of the virtual machine. Remove the entry for `test.mosquitto.org`, because you'll no longer use that endpoint.
 1. Redeploy the Altair emulator to Azure Sphere.
@@ -335,7 +335,7 @@ cd ~/ && git clone --depth 1 https://github.com/AzureSphereCloudEnabledAltair880
     sudo systemctl daemon-reload
     ```
 
-1. Start the Python virtual disk service
+1. Start the Python virtual disk service:
 
     ```bash
     sudo systemctl start pyvdisk.service
@@ -363,7 +363,7 @@ The `mosquitto_pub` and `mosquitto_sub` tools are useful for testing the certifi
     mosquitto_pub -h <REPLACE_WITH_YOUR_DOMAIN_NAME> -t "test" -m "hello world" -p 8884 --capath . --cafile ca.crt  --cert client.crt --key client.key
     ```
 
-    If `mosquitto_pub` fails, an error message will be displayed. The most likely cause is that the CA common name does not match the fully qualified domain name of your virtual machine.
+    If `mosquitto_pub` fails, an error message will appear. The most likely cause is that the CA common name does not match the fully qualified domain name of your virtual machine.
 
 ### Test your certificates on the server
 
