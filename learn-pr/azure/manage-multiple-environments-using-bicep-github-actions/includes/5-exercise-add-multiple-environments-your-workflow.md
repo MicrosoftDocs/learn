@@ -119,7 +119,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
-1. Wait for the workflow to pause before the **deploy-production / deploy** stage. It might take a few minutes for the workflow to reach this point.
+1. Wait for the workflow to pause before the **deploy-production / deploy** job. It might take a few minutes for the workflow to reach this point.
 
    :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of GitHub that shows the workflow run paused for approval.":::
 

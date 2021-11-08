@@ -6,7 +6,7 @@ To meet these objectives, you'll:
 > * Set up a GitHub repository for this module.
 > * Clone the project's repository to your computer.
 > * Create two resource groups in Azure.
-> * Create two secrets and environments in Azure Pipelines.
+> * Create two secrets and environments in GitHub.
 
 ## Get the GitHub repository
 
@@ -168,7 +168,7 @@ New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
 ## Create two service principals and grant them access to the resource group
 
-Next, create two service principals in Azure AD: one for your test environment and another for your production environment. This process also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
+Next, create two service principals in Azure AD: one for your test environment and another for your production environment. This process also grants the service principal the Contributor role on your resource group, which allows your workflow to deploy to the resource group.
 
 ::: zone pivot="cli"
 
@@ -298,7 +298,7 @@ You've created two resource group and the service principals that can deploy to 
 
    :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
 
-## Create environments in Azure Pipelines
+## Create environments in GitHub
 
 1. In your browser, go to **Settings** > **Environments**.
 

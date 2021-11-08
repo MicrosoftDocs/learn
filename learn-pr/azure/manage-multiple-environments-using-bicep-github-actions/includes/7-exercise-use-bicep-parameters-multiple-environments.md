@@ -8,11 +8,11 @@ During the process, you'll:
 > * Create secrets for the review API keys for each of your environments.
 > * Update the workflow with the correct input and secret values for each environment.
 > * Update your Bicep file to propagate the settings that you need for the product review API.
-> * Review the pipeline results and the changes to your Azure environment.
+> * Review the workflow results and the changes to your Azure environment.
 
 ## Add secrets
 
-TODO
+You decide to store the API keys in GitHub secrets, to ensure they're protected appropriately.
 
 1. In your browser, go to **Settings** > **Secrets**.
 
@@ -38,11 +38,14 @@ TODO
 
    :::code language="yaml" source="code/7-deploy.yml" range="3-19" highlight="10-12, 16-17" :::
 
+   Notice that you include the API URLs as inputs. These aren't secret values.
+
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="21-44" highlight="19-20, 31-33" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="21-53" highlight="19-20, 31-33" :::
 
-   TODO remember \ in whatif
+   > [!IMPORTANT]
+   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
 
 1. Update the `deploy` job to include the new deployment parameters:
 
@@ -94,7 +97,7 @@ TODO
 
 1. Approve the deployment to the production environment by selecting **Review deployments**, then selecting **Production** and selecting **Approve amd deploy**.
 
-   Wait for the pipeline to finish running.
+   Wait for the workflow to finish running.
 
 1. Select **Code** and then select the **Production** environment.
 
