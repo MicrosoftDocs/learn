@@ -274,7 +274,7 @@ Next, create two service principals in Azure AD: one for your test environment a
 
 ## Create two GitHub secrets
 
-You've created two resource group and the service principals that can deploy to them. Next, create a secret in GitHub Actions.
+You've created two resource group and the service principals that can deploy to them. Next, create secrets in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
