@@ -8,7 +8,7 @@ In this module, you learned:
 * That the cloud-connected Altair 8800 emulator that runs on Azure Sphere is made up of three tiers: 
    * The Altair emulator, which runs on Azure Sphere.
    * A set of supporting cloud services.
-   * The Web Terminal, which lets you interact with the Altair emulator.
+   * The web terminal, which lets you interact with the Altair emulator.
 
 ## Resources
 
