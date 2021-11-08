@@ -28,6 +28,5 @@ products:
 - azure-cognitive-services
 modules:
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
-- learn.wwl.create-branded-experience-virtual-assistant
 trophy:
   uid: learn.wwl.explore-conversational-ai.trophy
