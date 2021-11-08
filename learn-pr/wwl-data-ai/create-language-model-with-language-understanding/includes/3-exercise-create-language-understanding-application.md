@@ -71,10 +71,6 @@ To use your trained model in a client application, you must publish it as an end
 2. After the model has been published, at the top of the Language Understanding page for your app, click **Manage**. Then on the **Settings** tab, note the **Application ID** for your app. You will need this value later.
 3. On the **Azure Resources** tab, note the **Primary key** and **Endpoint URL** for your prediction resource. You will also need these later.
 
-## Use your Language Understanding app from a client
-
-To consume your language model from a client, we'll use a simple command-line application that runs in the Cloud Shell provided with your Azure subscription.
-
 ## Run Cloud Shell 
 
 To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
@@ -96,7 +92,6 @@ To test the capabilities of the Language Understanding service, we'll use a simp
 5. Wait for Powershell to start. You should see the following screen in the Azure portal:  
 
     ![Wait for Powershell to start.](../media/powershell-prompt.png) 
-
 
 ## Configure and run a client application
 
@@ -123,6 +118,15 @@ Now that you have a custom model, you can run a simple client application that u
     ![The editor containing code to use a Language Understanding app](../media/understand-code.png)
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the application ID, key, and endpoint URL for your published language model. Copy these from the **Manage** page in th Language Understanding portal from the Azure portal and paste them into the code editor, replacing the **YOUR_APP_ID**, **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
+
+    After pasting the app ID, key, and endpoint values, the first lines of code should look similar to this:
+
+    ```PowerShell
+    $appId="abcde"
+    $key = "1a2b3c4d5e6f7g8h9i0j...."
+    $endpointUrl="https..."
+
+    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 6. In the PowerShell pane, enter the following command to run the code:
