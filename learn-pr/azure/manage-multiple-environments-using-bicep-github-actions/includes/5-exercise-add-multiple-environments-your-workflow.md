@@ -1,44 +1,42 @@
-Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
+Now you're ready to update your workflow to deploy to both your test and production environments. In this unit, you'll update your workflow to use called workflows so that you can reuse the jobs across the environments.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Add a pipeline template for the lint stage.
-> * Add a pipeline template that defines the stages required to deploy to any environment.
-> * Update your pipeline to use the templates.
-> * Run your pipeline and view the results.
+> * Add a reusable workflow for the lint job.
+> * Add a reusable workflow that defines the jobs required to deploy to any environment.
+> * Update your workflow to use the called workflows.
+> * Run your workflow and view the results.
 
-## Add a pipeline template for the lint stage
+## Add a reusable workflow for the lint job
 
-The lint stage happens only once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't really need to use templates for the lint stage. But to keep your main pipeline definition file simple and easy to read, you decide to define the lint stage in a template.
+The lint job happens only once during the workflow run, regardless of how many environments the workflow deploys to. So, you don't really need to use a called workflow for the lint job. But to keep your main workflow definition file simple and easy to read, you decide to define the lint job in a separate workflow file.
 
-1. In Visual Studio Code, create a new folder named *pipeline-templates* inside the *deploy* folder.
+1. In Visual Studio Code, create a new file in the *.github/workflows* folder named *lint.yml*.
 
-1. Create a new file in the *pipeline-templates* folder named *lint.yml*.
+   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the lint dot Y M L file.":::
 
-   :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the lint dot Y M L file.":::
-
-1. Paste the following pipeline template definition into the file:
+1. Paste the following workflow definition into the file:
 
    :::code language="yaml" source="code/5-lint.yml" :::
 
-   The lint stage is the same as the lint stage already in the pipeline, but now it's in a separate pipeline template file.
+   The lint job is the same as the lint job already in the workflow, but now it's in a separate workflow file.
 
 1. Close the file and save your changes.
 
-## Add a pipeline template for deployment
+## Add a reusable workflow for deployment
 
-Create a pipeline template that defines all of the stages required to deploy each of your environments. You'll use template parameters to specify the settings that might differ between environments.
+Create a reusable workflow that defines all of the jobs required to deploy each of your environments. You'll use inputs and secrets to specify the settings that might differ between environments.
 
-1. Create a new file in the *pipeline-templates* folder named *deploy.yml*.
+1. Create a new file in the *.github/workflows* folder named *deploy.yml*.
 
-   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the deploy dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the dot github and workflows folders and the deploy dot Y M L file.":::
 
    This file will represent all of the deployment activities that run for each of your environments.
 
-1. Paste the following pipeline template parameters into the file:
+1. Paste the following workflow name, trigger, inputs, and secrets into the file:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="1-7" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="1-14" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -49,29 +47,19 @@ Create a pipeline template that defines all of the stages required to deploy eac
    > # yaml-language-server: $schema=./deploy.yml
    > ```
 
-1. Below the parameters, paste the definition of the validation stage:
+1. Below the parameters, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="9-29" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="16-44" :::
 
-   Notice that a condition is applied to this stage. It runs only for non-production environments.
+   Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment.
 
-   Also notice that the stage identifier includes the value of the `environmentType` parameter. This parameter ensures that every stage in your pipeline has a unique identifier. The stage also has a `displayName` property to create a well-formatted name for you to read.
+1. Below the validation job, paste the definition of the deploy job:
 
-1. Below the validation stage, paste the definition of the preview stage:
+   :::code language="yaml" source="code/5-deploy.yml" range="46-68" :::
 
-   :::code language="yaml" source="code/5-deploy.yml" range="31-49" :::
+1. Below the deploy job, paste the definition of the smoke test job:
 
-   Notice that this stage has a condition applied too, but it's the opposite of the validation stage's condition. The preview stage runs only for the production environment.
-
-1. Below the preview stage, paste the definition of the deploy stage:
-
-   :::code language="yaml" source="code/5-deploy.yml" range="51-77" :::
-
-1. Below the deploy stage, paste the definition of the smoke test stage:
-
-   :::code language="yaml" source="code/5-deploy.yml" range="79-106" :::
-
-   Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This parameter ensures that each smoke test stage runs against the correct environment.
+   :::code language="yaml" source="code/5-deploy.yml" range="70-83" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 
@@ -79,15 +67,35 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Save your changes to the file.
 
-## Update the pipeline definition to use the templates
+## Update the workflow definition to use the templates
 
-1. Open the *azure-pipelines.yml* file.
+1. Open the *workflow.yml* file in the *.github/workflows* folder.
 
-1. Update the file to use the new templates by replacing the contents with the following code:
+1. Remove the contents of the `lint:` job definition and replace it with the following code to use the *lint.yml* file you created earlier:
 
-   :::code language="yaml" source="code/5-pipeline.yml" :::
+   :::code language="yaml" source="code/5-workflow.yml" range-"10-14" highlight="5" :::
 
-   This pipeline runs the lint stage once. Then it uses the *deploy.yml* template file twice: once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help explain what's happening.
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow.
+
+1. Delete everything in the file below the lint job that you just updated.
+
+1. At the bottom of the file, add the following code to deploy to the test environment:
+
+   :::code language="yaml" source="code/5-workflow.yml" range-"16-24" :::
+
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
+
+1. Below the code you just added, add the following code to deploy to the production environment:
+
+   :::code language="yaml" source="code/5-workflow.yml" range-"26-34" :::
+
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
+
+   Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
+
+1. Verify that your file looks like the following:
+
+   :::code language="yaml" source="code/5-workflow.yml" :::
 
 1. Save your changes.
 
@@ -95,51 +103,47 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    ```bash
    git add .
-   git commit -m "Add pipeline templates"
+   git commit -m "Add reusable workflows"
    git push
    ```
 
-## View the pipeline run
+## View the workflow run
 
-1. In your browser, go to **Pipelines**.
+1. In your browser, go to **Actions**.
 
-1. Select the most recent run of your pipeline.
+1. Select the **toy-company-environments** workflow.
 
-   Notice that the pipeline run now shows all the stages that you defined in the YAML file. You might need to scroll horizontally to see them all.
+1. Select the most recent run of your workflow.
 
-   :::image type="content" source="../media/5-stages.png" alt-text="Screenshot of Azure Pipelines that shows the pipeline run stages.":::
+   Notice that the workflow run now shows all the jobs that you defined in the YAML files.
 
-1. Wait for the pipeline to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the pipeline to reach this point.
+   :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
-   :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of Azure Pipelines that shows the pipeline run paused for approval.":::
+1. Wait for the workflow to pause before the **Deploy (Production Environment)** stage. It might take a few minutes for the workflow to reach this point.
 
-1. Approve the deployment to the production environment by selecting the **Review** button.
+   :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of GitHub that shows the workflow run paused for approval.":::
 
-1. Select the **Approve** button.
+1. Approve the deployment to the production environment by selecting the **Review deployments** button.
 
-   :::image type="content" source="../media/5-approve.png" alt-text="Screenshot of the Azure DevOps interface that shows the pipeline approval page and the Approve button.":::
+1. Select the **Production** environment, then select the **Approve and deploy** button.
 
-   Wait for the pipeline to finish running.
+   :::image type="content" source="../media/5-approve.png" alt-text="Screenshot of the GitHub interface that shows the workflow approval page and the Approve and deploy button.":::
 
-1. Select the **Test** tab to show the test results from this pipeline run.
+   Wait for the workflow to finish running.
 
-   Notice that there are now four test results. The smoke test runs on both the test and production environments, so you see the results for both sets of tests.
-
-   :::image type="content" source="../media/5-tests.png" alt-text="Screenshot of Azure Pipelines that shows the page for pipeline run tests, with four test results.":::
-
-1. Select **Pipelines** > **Environments**.
+1. Select **Code**.
 
 1. Select the **Production** environment.
 
-1. Notice that on the environment details screen, you see an overview of the production environment's deployment history.
+1. Notice that on the deployment screen, you see an overview of the production environment's deployment history.
 
-   :::image type="content" source="../media/5-environment-production.png" alt-text="Screenshot of Azure Pipelines that shows the production environment, with the deployment history showing a single deployment.":::
+   :::image type="content" source="../media/5-environment-production.png" alt-text="Screenshot of GitHub that shows the production environment, with the deployment history showing a single deployment.":::
 
-1. Select the deployment, and select the **Changes** tab.
+1. Select the commit identifier.
 
-   Notice that **Changes** tab shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that GitHub shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
 
-   :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
+   :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of GitHub that shows the production environment's deployment details, with a list of commits.":::
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
 
