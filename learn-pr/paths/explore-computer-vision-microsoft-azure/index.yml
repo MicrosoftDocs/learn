@@ -11,6 +11,9 @@ metadata:
 title: 'Microsoft Azure AI Fundamentals: Explore computer vision'
 prerequisites: |
   Ability to navigate the Azure portal
+video:
+  title: "Explore computer vision"
+  url: https://www.microsoft.com/videoplayer/embed/RWxEMc
 summary: |
   Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many cognitive services in Microsoft Azure.
 iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
