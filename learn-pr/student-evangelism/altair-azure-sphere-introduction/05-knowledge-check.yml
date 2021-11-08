@@ -42,10 +42,10 @@ quiz:
     - content: "Two applications that run on the Azure Sphere microcontroller."
       isCorrect: false
       explanation: "This answer is partially true. There are two applications running on Azure Sphere."
-    - content: "Applications that run on Azure Sphere, cloud services, and the Web Terminal."
+    - content: "Applications that run on Azure Sphere, cloud services, and the web terminal."
       isCorrect: true
-      explanation: "The cloud-enabled Altair 8800 project consists of two applications that run on Azure Sphere, cloud services consisting of Azure IoT Central and an Azure virtual machine, and a Web Terminal built with HTML, CSS, and JavaScript."
+      explanation: "The cloud-enabled Altair 8800 project consists of two applications that run on Azure Sphere, cloud services consisting of Azure IoT Central and an Azure virtual machine, and a web terminal built with HTML, CSS, and JavaScript."
     - content: "Azure IoT Central, an Azure static web app, and an Azure virtual machine."
       isCorrect: false
-      explanation: "These cloud services form part of the Altair solution. The Altair solution consists of two applications that run on Azure Sphere, cloud services consisting of Azure IoT Central, a static web app, and an Azure virtual machine, and a Web Terminal built with HTML, CSS, and JavaScript."
+      explanation: "These cloud services form part of the Altair solution."
   
