@@ -14,7 +14,7 @@ You can configure scale settings for an application with either two modes manual
 
 Autoscale allows you to have the right amount of resources running to handle the load on your application. Autoscaling eases management overhead by reducing the need for system operators to constantly make decisions about adding or removing resources or checking the system's performance. Having a minimum makes sure your application is always running even under no load. Having a maximum limits your total possible hourly cost. You automatically scale between these two extremes using rules you create.
 
-:::image type="content" source="../media/computesaving.jpg" alt-text="save on compute" lightbox="../media/computesaving.jpg":::
+:::image type="content" source="../media/computesaving.png" alt-text="save on compute" lightbox="../media/computesaving.png":::
 
 ## "Out" vs "Up"
 
