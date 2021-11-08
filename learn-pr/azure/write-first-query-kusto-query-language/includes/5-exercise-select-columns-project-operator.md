@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that we've looked at random rows of data to get a sense of its structure. In this unit, you want to narrow down the data columns relating to storm events, locations, and their damaging effects.
+Recall that we've looked at random rows of data to get a sense of its structure. In this unit, you will learn how to choose specific data columns relating to storm types, locations, and their damaging effects.
 
 ## Use the `project` operator
 
@@ -21,20 +21,20 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 ## Rename and define new columns with `project`
 
-You can also use project to rename columns and define new ones. We don't really care about the distinction between *InjuriesDirect* and *InjuriesIndirect*. It would be more useful to just know the total number of injuries. Let's make a new column that shows this sum. We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
+You can also use `project` to rename columns and define new ones. We don't really care about the distinction between *InjuriesDirect* and *InjuriesIndirect*. It would be more useful to just know the total number of injuries. Let's make a new column that shows this sum. We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
 
 If you hover on a column name in the query editor, you can see the type of data contained in this column. 
 
-    :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
+   :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
 
-Since these columns are of type int (integer), we can use a numerical operator add the values. We'll also rename the *State* column.
+Since these columns are of type `int` (integer), we can use a numerical operator to add the values. We'll also rename the *State* column.
 
-To rename or perform numerical operations on operators, we'll use the following syntax in our query:
+To rename or perform numerical operations on arguments, we'll use the following syntax in our query:
 
 `project ColumnName=Expression`
 
 > [!NOTE]
-> You can also use the equivalent `extend` operator to create calculated columns.
+> The `extend` operator can also be used to create calculated columns. `extend` creates new calculated columns, appends these calculated columns to the results set, and overrides existing columns with the same names.
 
 1. Run the following query:
     
@@ -52,9 +52,9 @@ To rename or perform numerical operations on operators, we'll use the following 
 
 ## Use the `project-away` operator
 
-What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. You can remove specific columns using the `project-away` operator, which indicates which columns to *remove*, while leaving all remaining columns.
+What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. You can remove specific columns using the `project-away` operator, which indicates which columns to *remove*, while leaving all remaining columns. You can also use a wildcard, such as: `|project-away *ID` to remove all columns ending in `ID`.
 
-1. Run the following query: 
+1. Run the following query:
 
     ```kusto
     StormEvents

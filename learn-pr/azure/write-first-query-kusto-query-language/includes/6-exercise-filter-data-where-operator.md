@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that we've filtered certain columns in or out of the displayed results. In this unit, you want to narrow down the results to answer questions about what kind of meteorological events took place in different regions or timespans, and which types of events caused damage.
+Recall that we've filtered certain columns in or out of the displayed results. In this unit, you will learn how to answer questions about what kind of meteorological events took place in different regions or timespans, and which types of events caused damage.
 
 ## Use the `where` operator
 
@@ -15,6 +15,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
     | project State, EventType, DamageProperty
     | take 10
     ```
+
 1. You should get results that look like the following image: 
     
     :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
@@ -73,11 +74,7 @@ Looking at the results of the last query, we see that one of the Event Types is 
 
 ## Filter on datetime values
 
-Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with KQL have a dropdown time picker, but others require you to incorporate the date into the query itself.
-
-To compare or combine two different data types, you may need to change the data type of one of those input fields.
-
-For example, when we search on a datetime field, we have to input a datetime value for our boundary reference value. To do this, we use the `datetime()` function, which converts the date within the parentheses to a datetime value.
+Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with KQL have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
 
 1. Run the following query:
 

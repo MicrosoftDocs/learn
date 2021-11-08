@@ -11,14 +11,17 @@ It's difficult to make sense of randomly ordered data. Let's make it a bit easie
     StormEvents
     | where DamageProperty > 0
     | project State, EventType, DamageProperty
-    | sort by DamageProperty
+    | sort by DamageProperty desc
     ```
     
 1. You should get results that look like the following image: 
 
     :::image type="content" source="../media/6-sort-1.png" alt-text="Screenshot of sort operator.":::
 
-1. Notice that the results start from the highest property damage value, and decrease. The state and event types aren't ordered in any way. We can actually sort based on more than one expression.
+1. Notice that the results start from the highest property damage value, and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and obtain the same results. The state and event types aren't ordered in any way. We can actually sort based on more than one expression as shown in the next example.
+
+> [!TIP]
+> To take the top number of results for any field, you can use the `top` operator. For example, instead of sorting in descending order and looking at the top ten events, you can use `top 10 by DamageProperty`.
 
 ## Sort on more than one expression
 
