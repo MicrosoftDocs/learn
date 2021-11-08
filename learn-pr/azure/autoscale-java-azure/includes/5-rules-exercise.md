@@ -77,7 +77,7 @@ https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/custom
 
 1. Under the chart, you should see the activity log entries for each scale action taken by this autoscale setting.
 
-:::image type="content" source="../media/run_history.png" alt-text="autoscale run history" lightbox="../media/run_history.png":::
+:::image type="content" source="../media/run_history.png" alt-text="autoscale scale-out history" lightbox="../media/run_history.png":::
 
 ## Scale-in action
 
@@ -87,7 +87,7 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 
 1. In a few minutes, the instance count could fall from 2, to 1 (see below important point).
 
-:::image type="content" source="../media/scaledown.png" alt-text="autoscale run history" lightbox="../media/scaledown.png":::
+:::image type="content" source="../media/scaledown.png" alt-text="autoscale scale-in action" lightbox="../media/scaledown.png":::
 
 > [!IMPORTANT]
 > Your Azure Spring Cloud might not scale as autoscale will trie to estimate what the final state will be after it scaled. This means autoscale would have to immediately scale again, if the average tomcat request count remains the same or even falls only a small amount.
