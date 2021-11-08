@@ -5,8 +5,7 @@ Azure AD allows you to define two different types of groups.
 
 * **Microsoft 365 groups**. These groups provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. This option also lets you give people outside of your organization access to the group. This option is available to users as well as admins.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the all groups page.](../media/az500-groups.png)
+![Screenshot of the all groups page.](../media/az500-groups.png)
 
 There are different ways you can assign group access rights:
 
@@ -16,5 +15,5 @@ There are different ways you can assign group access rights:
 
 * **Dynamic Device (Security groups only)**. Lets you use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system reviews your dynamic group rules for the directory to determine if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
->[!IMPORTANT]
->Have you given any thought to which groups you need to create? Would you directly assign or dynamically assign membership?
+> [!IMPORTANT]
+> Have you given any thought to which groups you need to create? Would you directly assign or dynamically assign membership?

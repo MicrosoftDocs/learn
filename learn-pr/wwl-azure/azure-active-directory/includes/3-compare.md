@@ -27,5 +27,5 @@ The following table summarizes the differences:
 | Includes federation services| Group Policy (GPO's) |
 | Flat Structure |   |
 
->[!IMPORTANT]
->Azure AD is a managed service. You only manage the users, groups, and policies. Deploying AD DS with virtual machines using Azure is a **IaaS deployment**. Meaning that you manage the deployment, configuration, virtual machines, patching, and other backend tasks. 
+> [!IMPORTANT]
+> Azure AD is a managed service. You only manage the users, groups, and policies. Deploying AD DS with virtual machines using Azure is a **IaaS deployment**. Meaning that you manage the deployment, configuration, virtual machines, patching, and other backend tasks. 

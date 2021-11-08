@@ -3,8 +3,7 @@ In Azure AD, every user who needs access to resources needs a user account. A us
 
 To view the Azure AD users, access the **All users** blade. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that depicts the All users blade, with the USER TYPE and SOURCE columns noted.](../media/az500-azure-active-directory-users.png)
+![Screenshot that depicts the All users blade, with the USER TYPE and SOURCE columns noted.](../media/az500-azure-active-directory-users.png)
 
 Typically, Azure AD defines users in three ways:
 
@@ -12,5 +11,5 @@ Typically, Azure AD defines users in three ways:
 * **Directory-synchronized identities** - These users exist in on-premises Active Directory. A synchronization activity that occurs via **Azure AD Connect** brings these users in to Azure.
 * **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts.
 
->[!IMPORTANT]
->What types of users you will need?
+> [!IMPORTANT]
+> What types of users you will need?

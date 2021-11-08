@@ -3,8 +3,7 @@
 
 For application developers, Azure AD lets you focus on building your application by making it fast and simple to integrate with a world class identity management solution used by millions of organizations around the world.
 
-> [!div class="mx-imgBorder"]
-> ![Cloud and on-premise environments are connected to Azure AD.](../media/az500-azure-active-directory.png)
+![Cloud and on-premise environments are connected to Azure AD.](../media/az500-azure-active-directory.png)
 
 
 ## Identity manage capabilities and integration
@@ -43,8 +42,8 @@ Azure Active Directory comes in four editions—**Free**, **Microsoft 365 Apps**
 
 The [Azure Active Directory Pricing](https://azure.microsoft.com/pricing/details/active-directory) page has detailed information on what is included in each of the editions. Based on the feature list which edition does your organization need?
 
->[!NOTE]
->If you are a Microsoft 365, Azure or Dynamics CRM Online customer, you might not realize that you are already using Azure AD. Every Microsoft 365, Azure and Dynamics CRM tenant are already an Azure AD tenant. Whenever you want you can start using that tenant to manage access to thousands of other cloud applications Azure AD integrates with.
+> [!NOTE]
+> If you are a Microsoft 365, Azure or Dynamics CRM Online customer, you might not realize that you are already using Azure AD. Every Microsoft 365, Azure and Dynamics CRM tenant are already an Azure AD tenant. Whenever you want you can start using that tenant to manage access to thousands of other cloud applications Azure AD integrates with.
 
->[!IMPORTANT]
->There is also an [Azure Active Directory Admin Center](https://aad.portal.azure.com) available.
+> [!IMPORTANT]
+> There is also an [Azure Active Directory Admin Center](https://aad.portal.azure.com) available.
