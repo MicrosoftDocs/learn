@@ -1,6 +1,6 @@
 You've decided to use the Azure CLI to manage the Azure Machine Learning workspace. Before you start, you need to make sure the Azure CLI and the Azure Machine Learning extension are installed.
 
-Recall the bike company you work for as a machine learning engineer. The customer churn model created by the data science team is the first model you'll train with Azure Machine Learning. You want to show the team which steps you took to create the workspace and train the model. Sharing the steps will make it easy for them to redo your work for future projects. You'll run commands with the Azure CLI (v2) to create and manage the Azure Machine Learning resources. The commands can later be shared with the team for reproducibility and automation.
+Recall the bike company you work for as a machine learning engineer. The customer churn model created by the data science team is the first model you'll train with Azure Machine Learning. You want to show the team which steps you took to create the workspace and train the model. Sharing the steps will make it easy for them to redo and automate your work for future projects. You'll run commands with the Azure CLI (v2) to create and manage the Azure Machine Learning resources. The commands can later be shared with the team for reproducibility and automation.
 
 You'll install the Azure CLI and the extension for Azure Machine Learning. With this set-up, you can manage your Azure Machine Learning workspace.
 
@@ -9,7 +9,7 @@ You'll install the Azure CLI and the extension for Azure Machine Learning. With 
 You install the Azure CLI on a Linux, Mac, or Windows computer. With the Azure CLI, you run commands or scripts to manage Azure resources. You can also use the Azure CLI from a browser through the Azure Cloud Shell. No matter which platform you choose, you can execute the same tasks. But, the installation of the Azure CLI, the commands, and scripts are different across platforms.
 
 > [!IMPORTANT]
-> To install the Azure CLI on your computer you can use a package manager. Here are the instructions to [install the Azure CLI](/cli/azure/install-azure-cli), based on the platform you choose. You don't need to install the Azure CLI if you use the Azure Cloud Shell.
+> To install the Azure CLI on your computer you can use a package manager. Here are the instructions to [install the Azure CLI](/cli/azure/install-azure-cli), based on the platform you choose. You don't need to install the Azure CLI if you use the Azure Cloud Shell. Learn more about how to use [the Azure Cloud Shell in this overview](/azure/cloud-shell/overview).
 
 During *testing and development*, you're likely to work from your local computer. Launch a shell such as cmd.exe on Windows, or Bash on Linux or macOS to use the Azure CLI. In the shell prompt, you run commands and check the result for each command you submit. Since you're creating the Azure Machine Learning workspace for the first time, you'll work with the Azure CLI *interactively* at first.
 
@@ -17,7 +17,7 @@ After testing and development, you'll know which commands you need to use to cre
 
 ## Install the Azure Machine Learning extension for CLI (v2)
 
-After you installed the Azure CLI, you need to install the Azure Machine Learning extension so that you can manage Azure Machine Learning resources using the Azure CLI.
+After you installed the Azure CLI, or set up the Azure Cloud Shell, you need to install the Azure Machine Learning extension so that you can manage Azure Machine Learning resources using the Azure CLI.
 
 ### Install on Windows
 
@@ -59,4 +59,4 @@ The `login` command will open up a browser where you can sign in to Azure so tha
 az account set -s "<YOUR_SUBSCRIPTION_NAME_OR_ID>"
 ```
 
-You should now have the Azure CLI and Azure Machine Learning extension installed on your computer. Now, you're ready to start experimenting.
+With the Azure Machine Learning extension installed on your computer or in the Azure Cloud Shell, you're ready to start experimenting.

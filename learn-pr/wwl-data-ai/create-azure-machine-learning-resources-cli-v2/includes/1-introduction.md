@@ -9,9 +9,9 @@ The data scientist who created the model, trained the model locally on their own
 
 Ideally however, the model should be trained in the Azure Machine Learning workspace and the complete process should be tracked and reproducible. When the model is trained with Azure Machine Learning, it will also be easier for the data science team to collaborate.
 
-To create an Azure Machine Learning workspace, you can use the Azure portal, Azure CLI, or Azure Resource Manager templates. To make sure all your work is reproducible and generalizable for future projects, you will use the Azure CLI.
+To create an Azure Machine Learning workspace, you can use the Azure portal, Azure CLI, or Azure Resource Manager templates. To make sure all your work is reproducible and ready for automation for future projects, you will use the Azure CLI.
 
-This module shows you how to set up the Azure CLI (v2) for Azure Machine Learning. You can then create and an Azure Machine Learning workspace and any assets within the workspace necessary to train machine learning models.
+This module shows you how to set up the Azure CLI (v2) for Azure Machine Learning. You can then create an Azure Machine Learning workspace and any assets within the workspace necessary to train machine learning models.
 
 ## Learning objectives
 

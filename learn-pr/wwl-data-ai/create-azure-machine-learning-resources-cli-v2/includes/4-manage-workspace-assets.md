@@ -8,12 +8,12 @@ You'll learn how to use the Azure CLI (v2) to create compute resources, an envir
 
 To run a Python notebook or script in the Azure Machine Learning workspace, you need a compute resource. There are two types of compute resources that you most commonly use to train a model:
 
-- **Compute instance**: A compute instance is a cloud-based workspace you can use as a developing environment. You can use tools like Jupyter and VS Code with a compute instance to collaborate on notebooks and scripts. You can choose the VM size of the compute instance and start and stop manually or automatically based on a schedule.
+- **Compute instance**: A compute instance is a cloud-based workspace you can use as a developing environment. You can use tools like Jupyter and VS Code with a compute instance to collaborate on notebooks and scripts. You can choose the VM size of the compute instance and start and stop it manually or automatically based on a schedule.
 - **Compute cluster**: A compute cluster is a managed-compute infrastructure that scales up automatically when a job is submitted. You can create a single or multi-node compute cluster based on the VM size of your choosing. A compute cluster is more commonly used to run scheduled jobs and pipelines.
 
 ### Create a compute instance
 
-The data science team told you they want to use Azure Machine Learning to collaborate on machine learning projects more easily. Most of the data scientists were working with Jupyter on their own computer. The easiest way to migrate the customer churn project to Azure Machine Learning is by taking the data and the notebook, and run the notebook on a compute instance.
+The data science team told you they want to use Azure Machine Learning to collaborate on machine learning projects more effectively. Most of the data scientists were working with Jupyter on their own computer. The easiest way to migrate the customer churn project to Azure Machine Learning is by taking the data and the notebook, and run the notebook on a compute instance.
 
 To create a compute instance with the CLI (v2), you can use the `az ml compute create` command. You'll need to decide on these parameters:
 
@@ -21,9 +21,9 @@ To create a compute instance with the CLI (v2), you can use the `az ml compute c
 - `--workspace-name`: Name of the Azure Machine Learning workspace. If you configured a default workspace with `az configure --defaults workspace=<name>`, you don't need to use this parameter.
 - `--name`: Name of compute target. The name should be fewer than 24 characters and unique within an Azure region.
 - `--size`: VM size to use for the compute instance. Learn more about [supported VM series and sizes](https://docs.microsoft.com/azure/machine-learning/concept-compute-target#supported-vm-series-and-sizes).
-- `--type`: Type of compute target. To create a compute instance use `ComputeInstance`.
+- `--type`: Type of compute target. To create a compute instance, use `ComputeInstance`.
 
-> [!Tip]
+> [!Note]
 > All code examples assume there is a default resource group and Azure Machine Learning workspace configured.
 
 To create a compute instance to train the customer churn model, you use this command:
@@ -38,17 +38,23 @@ For more information to create compute resources with the CLI (v2), see [az ml c
 
 You plan to first train the customer churn model by running the notebook with the compute instance. When you're successful, you want to train the model with a compute cluster. Training the model with a compute cluster means you can schedule a job to retrain the model whenever it's needed.
 
-To create a compute cluster with the CLI (v2), you use the `az ml compute create` command and set the `--type` parameter to `AmlCompute`:
+To create a compute cluster with the CLI (v2), you use the `az ml compute create` command. There are some additional settings you can include when creating a compute cluster:
+
+- `--type`: To create a compute cluster, use `AmlCompute`.
+- `--min-instances`: The minimum number of nodes used on the cluster. The default is 0 nodes.
+- `--max-instances`: The maximum number of nodes. The default is 4.
 
 ```azurecli
-az ml compute create --name "aml-cluster" --size STANDARD_DS11_V2 --type AmlCompute
+az ml compute create --name "aml-cluster2" --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute
 ```
+
+To learn more on how to create and manage a compute cluster, see the [how-to guide on creating an Azure Machine Learning compute cluster](/azure/machine-learning/how-to-create-attach-compute-cluster?tabs=python).
 
 ## Create an environment
 
 You expect to use a compute cluster in the future to retrain the model whenever needed. To train the model on either a compute instance or compute cluster, all necessary packages need to be installed on the compute to run the code. Instead of manually installing these packages every time you use a new compute, you can list them in an **environment**.
 
-Every Azure Machine Learning workspace will by default have a list of curated environments when you create the workspace. Curated environments include the common machine learning packages to train a model.
+Every Azure Machine Learning workspace will by default have a list of curated environments when you create the workspace. Curated environments include common machine learning packages to train a model.
 
 If you need to create your own environment because none of the curated environments meet your needs, you can do so with the `az ml environment create` command:
 
@@ -127,13 +133,13 @@ local_path: customer-churn.csv
 description: Dataset pointing to customer churn CSV on local computer. Data will be uploaded to default datastore.
 ```
 
-From the shell prompt, you navigate to the folder that contains the YAML file and CSV. Then, you run the command to create the dataset in the workspace:
+From the shell prompt, navigate to the folder that contains the YAML file and CSV. Then, you run the command to create the dataset in the workspace:
 
 ```azurecli
 az ml data create --file data-local-path.yml
 ```
 
-As the data is uploaded to the default datastore, the progress of uploading the data is shown in the prompt. Once it's completed, the dataset will show in the Datasets tab of your workspace when opening the [Azure ML Studio](https://ml.azure.com). Or you can list all datasets within the workspace using the list command:
+As the data is uploaded to the default datastore, the progress of uploading the data is shown in the prompt. Once it's completed, the dataset will show up in the Datasets tab of your workspace when opening the [Azure ML Studio](https://ml.azure.com). Or you can list all datasets within the workspace using the list command:
 
 ```azurecli
 az ml data list

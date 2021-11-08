@@ -54,7 +54,7 @@ az configure --defaults group="churn-dev-rg"
 Now that you have set a default resource group, you can create a workspace without adding the resource group name as a parameter:
 
 ```azurecli
-az ml workspace create --workspace-name "aml-churn-dev"
+az ml workspace create --name "aml-churn-dev"
 ```
 
 The `az ml workspace create` command will take a couple of minutes to create all necessary resources. In your shell prompt, you can see what is being created and how long it takes per resource. The output will look something like this:
@@ -82,7 +82,9 @@ You can use the output to find your resources, for example if you want to find t
 - Key vault
 - Storage account
 
-Finally, if you know you'll be working a lot with your workspace from the CLI, you can set the workspace as the default. Setting a workspace as default means you don't have to include it as a parameter each time you want to run a command. Set the default workspace with the following command:
+Finally, if you're going to manage your workspace with the CLI, you can set the workspace as the default. Setting a workspace as default means you don't have to include it as a parameter each time you want to run a command.
+
+Set the default workspace with the following command:
 
 ```azurecli
 az configure --defaults workspace="aml-churn-dev"
