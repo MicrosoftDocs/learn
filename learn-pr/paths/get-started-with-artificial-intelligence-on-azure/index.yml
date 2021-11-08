@@ -11,6 +11,9 @@ metadata:
 title: 'Microsoft Azure AI Fundamentals: Get started with artificial intelligence'
 prerequisites: |
   None
+video:
+  title: "Get started with artificial intelligence"
+  url: https://www.microsoft.com/videoplayer/embed/RWxMm6
 summary: |
   Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
 iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
