@@ -302,8 +302,6 @@ You've created two resource group and the service principals that can deploy to 
 
 1. In your browser, go to **Settings** > **Environments**.
 
-   :::image type="content" source="../media/4-environments.png" alt-text="Screenshot of the GitHub interface that shows the Settings menu and the Environments item.":::
-
 1. Select **New environment**.
 
    :::image type="content" source="../media/4-environments-new.png" alt-text="Screenshot of the GitHub interface that shows the Environments page and the button for creating an environment.":::

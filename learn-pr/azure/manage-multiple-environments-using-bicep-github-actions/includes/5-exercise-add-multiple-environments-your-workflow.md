@@ -53,6 +53,8 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment.
 
+<!-- TODO watch indentation -->
+
 1. Below the validation job, paste the definition of the deploy job:
 
    :::code language="yaml" source="code/5-deploy.yml" range="46-68" :::
@@ -119,6 +121,8 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
+   Some warnings are listed in the **Annotations** panel. All of these warnings are because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
+
 1. Wait for the workflow to pause before the **deploy-production / deploy** job. It might take a few minutes for the workflow to reach this point.
 
    :::image type="content" source="../media/5-waiting-approval.png" alt-text="Screenshot of GitHub that shows the workflow run paused for approval.":::
@@ -134,6 +138,8 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 1. Select **Code**.
 
 1. Select the **Production** environment.
+
+   :::image type="content" source="../media/5-code-environment.png" alt-text="Screenshot of GitHub that shows the Code page environment, with the production environment highlighted.":::
 
 1. Notice that on the deployment screen, you see an overview of the production environment's deployment history.
 
