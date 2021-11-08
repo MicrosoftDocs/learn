@@ -2,7 +2,7 @@ You decided to store your users' images on Azure Blob Storage, allowing them to 
 
 Let's see the situation with the following picture. Your frontend cannot access Blob Storage. Your storage account key resides in Azure, and for security reasons you cannot share that with the world. So what do you do?
 
-:::image type="content" source="../media/architecture_1.png" alt-text="Static Web App and Blob Storage":::
+:::image type="content" source="../media/architecture-1.png" alt-text="Static Web App and Blob Storage":::
 
 ## Describe Shared Access Signature Tokens
 
@@ -10,7 +10,7 @@ To solve this problem, you need to generate a Shared Access Signature (SAS) whic
 
 Next, how do you generate a Shared Access Signature? There are several ways you could accomplish create them, but in this module, we'll use Azure Functions. The benefit of using Azure Functions for this purpose is that your storage account key stays safe on Azure, while your users contact this serverless API that will generate SAS tokens for them on demand. These tokens will be short lived, meaning that after a couple of minutes, they will be invalid to prevent misuse.
 
-:::image type="content" source="../media/architecture_2.png" alt-text="Static Web App and Blob Storage via Azure Functions":::
+:::image type="content" source="../media/architecture-2.png" alt-text="Static Web App and Blob Storage via Azure Functions":::
 
 With SAS tokens, you can specify the kind of access you grant to your users. Can they control your account almost completely or are they just allowed to upload a file to it? Of course in this use case, you just want them to be able to upload images, without having access to anything else. To accomplish that, we need to see how files are organized in blob storage.
 

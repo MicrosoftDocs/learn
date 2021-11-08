@@ -8,7 +8,7 @@ It's time to create your application's backend. For that you are going to create
 
 3. Go to the Azure Portal, navigate to your storage account, and copy the connection string from there.
 
-:::image type="content" source="../media/account_keys.png" alt-text="Azure Portal Copy Account Key":::
+:::image type="content" source="../media/account-keys.png" alt-text="Azure Portal Copy Account Key":::
 
 4. Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
 

@@ -4,13 +4,13 @@ To get started, you'll need to setup your Blob Storage account so that you can c
 
 1. Log in to Azure portal and create an Azure Storage Account called `uploadimagesample` (feel free to use any other name you prefer). You can do that by clicking the big plus button that says "Create a new resource", and then type "Storage Account" in the "Search the Marketplace" bar.
 
-:::image type="content" source="../media/new_storage_account.png" alt-text="Create a new Storage account":::
+:::image type="content" source="../media/new-storage-account.png" alt-text="Create a new Storage account":::
 
 ## Create a new storage container
 
 1. Navigate to your new storage account, select Containers, and create a new container called `images`.
 
-:::image type="content" source="../media/new_container.png" alt-text="Create a new Container":::
+:::image type="content" source="../media/new-container.png" alt-text="Create a new Container":::
 
 ## Setup CORS
 
@@ -23,6 +23,6 @@ Finally you are going to setup CORS for your storage account.
 
 These values should be customized to fit the needs of your application.
 
-:::image type="content" source="../media/cors_setup.png" alt-text="Setup CORS":::
+:::image type="content" source="../media/cors-setup.png" alt-text="Setup CORS":::
 
 You've now successfully setup your storage backend. Next you are going to see how the serverless backend works.
