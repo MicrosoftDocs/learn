@@ -6,7 +6,7 @@ A primary advantage of the cloud is elastic scaling - scale out by adding applic
 
 A classic example of the need for elasticity occurs when an organization's web site experiences unusually high loads. If the site can't scale to meet demand, requests take longer to process because they're queued waiting for processor time. To the customer, the site seems slow and unresponsive. In extreme cases, the site might even appear to be down.
 
-Some loads are unpredictable. For example, the COVID-19 lowdowns triggered a massive surge in many companies e-commerce traffic. IT teams where still managing their infrastructure manually, and the scale-outs were time consuming. Now, with scale automation, teams can achieve that same degree of expansion automatically. Other loads are also as unpredictable. They may occur because a tweet went viral or our favorite team won the World Cup, or because other factors that an organization can't expect.
+Some loads are unpredictable. For example, the Covid-19 lowdowns triggered a massive surge in many companies e-commerce traffic. IT teams where still managing their infrastructure manually, and the scale-outs were time consuming. Now, with scale automation, teams can achieve that same degree of expansion automatically. Other loads are also as unpredictable. They may occur because a tweet went viral or our favorite team won the World Cup, or because other factors that an organization can't expect.
 
 ### Manual vs Automatic scale
 
