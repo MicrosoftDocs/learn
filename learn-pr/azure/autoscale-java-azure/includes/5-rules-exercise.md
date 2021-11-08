@@ -4,8 +4,8 @@ In this exercise, we'll look at exercises for setting up and triggering autoscal
 
 In your sample Azure Spring Cloud application, when your application was created, it already triggered a scale-out action on the customer service microservice.
 
-The customer-service will scale-out when the tomcat request count exceeds 10 sessions, per minute, on average.
-After the autoscale is triggered, it will then scale in if the request count is less than, or equal to 10 sessions, per minute, on average.
+The customer-service will scale **out** when the tomcat request count exceeds 10 sessions, per minute, on average.
+After the autoscale is triggered, it will then scale **in** if the request count is less than, or equal to 10 sessions, per minute, on average.
 
 ## View Autoscale setup in the Azure portal
 
@@ -83,7 +83,9 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 
 1. Ensure no requests are being sent to your customer-service and the browser window to your app/service is closed.
 
-1. In a few minutes, the instance count could fall from 2, to 1 (see below point).
+1. In a few minutes, the instance count could fall from 2, to 1 (see below important point).
+
+:::image type="content" source="../media/scaledown.png" alt-text="autoscale run history" lightbox="../media/scaledown.png":::
 
 > [!IMPORTANT]
-> Your Azure Spring Cloud might not scale in as before scaling in, autoscale tries to estimate what the final state will be if it scaled in. This means autoscale would have to immediately scale out again even after it scaled in, if the average tomcat request count remains the same or even falls only a small amount.
+> Your Azure Spring Cloud might not scale as autoscale will trie to estimate what the final state will be after it scaled. This means autoscale would have to immediately scale again, if the average tomcat request count remains the same or even falls only a small amount.
