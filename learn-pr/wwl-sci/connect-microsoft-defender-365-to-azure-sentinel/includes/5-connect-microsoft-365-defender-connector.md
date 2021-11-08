@@ -22,7 +22,7 @@ To deploy the connector, do the following steps:
 
 1. Select **Apply Changes**
 
-The Microsoft Defenders for Endpoint collection options are as follows:
+The Microsoft Defender for Endpoint collection options are as follows:
 
 | **Events type**| **Table name**|
 | :--- | :--- |
