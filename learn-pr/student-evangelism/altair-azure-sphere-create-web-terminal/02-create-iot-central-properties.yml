@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.create-iot
 title: Customize your IoT Central web application
 metadata:
   title: Customize your Azure IoT Central web application
-  description: In this unit, you'll learn how to customize an Azure IoT Central application.
+  description: In this unit, you'll learn how to customize an Azure IoT Central application for Altair.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring
