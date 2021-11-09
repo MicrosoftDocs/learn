@@ -2,9 +2,9 @@ In this unit, you'll learn about the Altair virtual disk server.
 
 ## Run the Altair virtual disk server
 
-If you don't have the MikroE *microSD click*, you can run the virtual disk server for read/write storage for your Control Program for Microcomputers (CP/M) applications. The virtual disk server can run on your desktop or on a cloud-based Azure virtual machine.
+If you don't have the MikroE microSD Click, you can run the virtual disk server for read/write storage for your Control Program for Microcomputers (CP/M) applications. The virtual disk server can run on your desktop or on a cloud-based Azure virtual machine.
 
-Drive B: disk sector reads and writes are redirected over MQTT to an MQTT-enabled, Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
+Reads and writes for drive B disk sectors are redirected over MQTT to an MQTT-enabled, Python-based virtual disk server. Drive B disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
 ## The Altair virtual disk server
 
@@ -26,8 +26,8 @@ The virtual disk server is not required if you have an Avnet Azure Sphere Starte
 
 ## Starting the virtual disk server
 
-Applications that run on CP/M have read/write access to drive B:. This lets you save files when the virtual disk server is running. The virtual disk server can run on your desktop or on a cloud-based Azure virtual machine.
+Applications that run on CP/M have read/write access to drive B. This lets you save files when the virtual disk server is running. The virtual disk server can run on your desktop or on a cloud-based Azure virtual machine.
 
-Drive B: disk sector reads and writes are sent over MQTT to the Python-based virtual disk server. The disk sector *Cache-aside* cache is used to improve the performance of the virtual drive.
+Reads and writes for drive B disk sectors are sent over MQTT to the Python-based virtual disk server. The disk sector *cache-aside* cache is used to improve the performance of the virtual drive.
 
 In the next unit, you'll install and run the Altair emulator virtual disk server.
