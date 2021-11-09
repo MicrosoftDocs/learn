@@ -117,7 +117,7 @@ In this module, you'll be using some of the key functional components of **Power
 
 ## Calculate price based on area
 
-1. Click on **Details_carpets** page, Add a **Label** and rename it as **Area_carpets**.
+1. Click on **Carpet_details** page, Add a **Label** and rename it as **Area_carpets**.
 
     :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of adding area label" lightbox="../media/add-area-label.png":::
 
