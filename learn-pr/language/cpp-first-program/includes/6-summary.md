@@ -8,5 +8,5 @@ Congratulations on taking your first steps to building more sophisticated applic
 
 ## Learn more about C++ on the Microsoft Docs page
 
-- [Microsoft C++, C, and Assembler documentation](https://docs.microsoft.com/cpp)
+- [Microsoft C++, C, and Assembler documentation](/cpp)
 - [Setting up your C++ environment with Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
