@@ -84,7 +84,8 @@ As backups are geo-redundant by design for SQL Database and SQL Managed Instance
 
 Backup storage is billed apart from regular database files storage. However, when provisioning a SQL Database, the backup storage is created with the maximum size of the data tier selected for your database at no extra cost.
 
-**Note:** Geo-restore is only available if the backup storage redundancy property is set to ***geo-redundant backup storage***
+> [!NOTE] 
+> Geo-restore is available when the backup storage redundancy property is set to ***geo-redundant backup storage***
 
 ### Point-in-time restore (PITR)
 
@@ -96,7 +97,8 @@ You can restore your databases to a specific point in time according to the rete
 
  Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
 
- :::image type="content" source="../media/prepare_to_maintain_sql_databases_azure_03.png" alt-text="Long-term retention properties from Azure portal":::
+> [!div class="mx-imgBorder"]
+> [![Long-term retention properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
  In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side the screen, where you can override the default properties.
 
@@ -125,7 +127,8 @@ Elastic queries support the following partitioning strategies:
 
 * Horizontal Partitioning - Also called sharding. The data is partitioned horizontally to distribute rows across several scaled-out databases. In this topology, the schema remains the same among all sharding databases. It supports either single-tenant model or multiple tenant models.
 
-**Note:** Azure SQL Managed Instance doesn't support elastic jobs.
+> [!NOTE] 
+> Azure SQL Managed Instance doesn't support elastic jobs.
 
 ## Elastic job (preview)
 
@@ -133,7 +136,8 @@ The elastic job feature is the SQL Server Agent replacement for Azure SQL Databa
 
 You can execute T-SQL commands across several target deployments like SQL Databases, SQL Database elastic pools, and SQL Databases in shard maps. Database resources can run on different Azure subscriptions, and/or regions. The execution runs in parallel, and it is especially useful for performing database maintenance tasks.
 
-**Note:** Azure SQL Managed Instance doesn't support elastic jobs.
+> [!NOTE] 
+> Azure SQL Managed Instance doesn't support elastic jobs.
 
 ## SQL Data Sync
 
@@ -147,4 +151,5 @@ When you create a sync group, it will ask you to provide a database responsible 
 
 In the image above, you can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
 
-**Note:** Azure SQL Managed Instance doesn't support Data Sync feature.
+> [!NOTE] 
+> Azure SQL Managed Instance doesn't support Data Sync feature.
