@@ -1,4 +1,4 @@
-In this exercise, you'll deploy an Altair web terminal static web app.
+In this exercise, you'll deploy a static web app for the Altair web terminal.
 
 ## Step 1: Create the AltairWebTerminal repo
 
@@ -76,7 +76,7 @@ The action takes about two minutes to run. When the GitHub action has finished r
 
    The MQTT broker configuration is prepopulated for the *test.mosquitto.org* public MQTT broker.
 
-1. Configure the IoT Central settings by using the IoT Central API token and URL that you saved earlier.
+1. Configure the Azure IoT Central settings by using the Azure IoT Central API token and URL that you saved earlier.
 
 1. Update the following properties values:
 
@@ -91,7 +91,7 @@ When you've finished, the contents of your *local.settings.json* file should loo
 
 1. Still in Visual Studio Code, select the F1 key.
 
-1. Type **static local**, and then select **Azure Static Web Apps: Upload Local Settings...**.
+1. Type **static local**, and then select **Azure Static Web Apps: Upload Local Settings**.
 1. Select your subscription.
 1. For **Static Web App**, enter the name you created, **AltairWebTerminal**.
 1. For environment, enter **Production**.
@@ -100,7 +100,7 @@ The Altair web terminal setting is uploaded.
 
 ## Step 9: Invite users to the Altair web terminal
 
-To keep its security protected, the Altair web terminal requires authenticated users. This means that you'll need to invite users, including yourself, to the Altair web terminal static web app.
+To keep its security protected, the Altair web terminal requires authenticated users. This means that you'll need to invite users, including yourself, to the static web app for the Altair web terminal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. On the left pane, select **All resources**.
@@ -137,14 +137,14 @@ Do either of the following:
 
 ## Step 11: Connect the Altair web terminal to your Azure Sphere device
 
-When you're authenticated, connect to the Altair emulator. You first need to obtain the name of your device in IoT Central. To do so:
+When you're authenticated, connect to the Altair emulator. You first need to obtain the name of your device in Azure IoT Central:
 
 1. In your browser, go to [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 1. Select the **Devices** tab, select the **Altair on Azure Sphere** template, and then select your Azure Sphere device.
 1. Copy the device name.
-1. On the **Web Terminal** tab in the browser. paste the device name, and then select **Connect**.
+1. On the **Web Terminal** tab in the browser, paste the device name, and then select **Connect**.
 1. Add the **Altair Web Terminal** page to your browser favorites.
 
-The MQTT broker status message changes to *Connecting...*. When the web terminal has connected successfully, the status changes to *Connected*.
+The MQTT broker status message changes to **Connecting**. When the web terminal has connected successfully, the status changes to **Connected**.
 
 :::image type="content" source="../media/web-terminal-connect.png" alt-text="Screenshot that shows that the web terminal has connected successfully to the MQTT broker.":::
