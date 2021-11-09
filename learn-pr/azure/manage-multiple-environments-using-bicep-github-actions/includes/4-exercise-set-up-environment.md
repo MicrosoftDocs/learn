@@ -146,27 +146,47 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="cli"
 
-To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
+1. To create the test environment's resource group, run the following Azure CLI commands in the Visual Studio Code terminal:
 
-```azurecli
-az group create --name ToyWebsiteTest --location westus
-az group create --name ToyWebsiteProduction --location westus
-```
+   ```azurecli
+   az group create --name ToyWebsiteTest --location westus
+   ```
+
+1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
+
+1. Repeat the process to create the production environment's resource group:
+
+   ```azurecli
+   az group create --name ToyWebsiteProduction --location westus
+   ```
+
+   Copy the resource group ID for the production resource group, too.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
+1. To create the test environment's resource group, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
-```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
-New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
-```
+   ```azurepowershell
+   New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+   ```
+
+1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
+
+1. Repeat the process to create the production environment's resource group:
+
+   ```azurepowershell
+   New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
+   ```
+
+   Copy the resource group ID for the production resource group, too.
 
 ::: zone-end
-
-<!-- TODO copy the resource IDs -->
 
 ## Create two service principals and grant them access to the resource group
 
