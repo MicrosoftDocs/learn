@@ -4,7 +4,7 @@ title: Explore load balancing
 metadata:
   title: Explore load balancing
   description: "Explore load balancing"
-  ms.date: 11/01/2021
+  ms.date: 11/09/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -30,12 +30,12 @@ quiz:
       explanation: "Incorrect, Secure web applications use HTTPS traffic. Azure Application Gateway does support HTTPS traffic, but it's not the only load balancer that does."
   - content: "Which type of load balancing services distribute traffic within virtual networks across virtual machines?"
     choices:
-    - content: "Regional."
-      isCorrect: true
-      explanation: "Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region."
     - content: "Global."
       isCorrect: false
       explanation: "Incorrect, **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services."
+    - content: "Regional."
+      isCorrect: true
+      explanation: "Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region."
     - content: "Regional and Global."
       isCorrect: false
       explanation: "Incorrect, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services."

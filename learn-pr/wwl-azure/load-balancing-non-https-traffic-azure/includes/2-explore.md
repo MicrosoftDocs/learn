@@ -27,61 +27,12 @@ In contrast, **non-HTTP(S)** load-balancing services can handle non-HTTP(S) traf
 
 The table below summarizes these categorizations for each Azure load balancing service.
 
-:::row:::
-  :::column:::
-    **Service**
-  :::column-end:::
-  :::column:::
-    **Global or Regional**
-  :::column-end:::
-  :::column:::
-    **Recommended Traffic**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Load Balancer
-  :::column-end:::
-  :::column:::
-    Regional
-  :::column-end:::
-  :::column:::
-    Non-HTTP(S)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Application Gateway
-  :::column-end:::
-  :::column:::
-    Regional
-  :::column-end:::
-  :::column:::
-    HTTP(S)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Front Door
-  :::column-end:::
-  :::column:::
-    Global
-  :::column-end:::
-  :::column:::
-    HTTP(S)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Traffic Manager
-  :::column-end:::
-  :::column:::
-    Global
-  :::column-end:::
-  :::column:::
-    Non-HTTP(S)
-  :::column-end:::
-:::row-end:::
+| Service             | Global/regional | Recommended traffic |
+| ------------------- | --------------- | ------------------- |
+| Azure Front Door    | Global          | HTTP(S)             |
+| Traffic Manager     | Global          | non-HTTP(S)         |
+| Application Gateway | Regional        | HTTP(S)             |
+| Azure Load Balancer | Regional        | non-HTTP(S)         |
 
 
 ## Choosing a load balancing option for Azure
