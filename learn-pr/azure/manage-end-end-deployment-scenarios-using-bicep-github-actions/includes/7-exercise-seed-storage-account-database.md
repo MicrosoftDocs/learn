@@ -85,7 +85,7 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Open the *build.yml* file in the *.github/workflows* folder.
 
-1. To build the Visual Studio database project and upload the generated DACPAC file as a workflow artifact, add the following job:
+1. To build the Visual Studio database project and upload the generated DACPAC file as a workflow artifact, add the *build-database* job:
 
    :::code language="yaml" source="code/7-build.yml" highlight="34-51" :::
 
@@ -111,6 +111,7 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Repeat the process to add another secret named *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION* as the secret name, and *SecurePassword!999* as the value. Select **Add secret**.
 
+<!-- TODO up to here -->
 ## Add the secrets and inputs to your workflow
 
 1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
@@ -125,11 +126,11 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. In the *deploy-test* definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="18-29" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="18-29" highlight="8, 12" :::
 
 1. Repeat the process in the *deploy-production* definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="31-42" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="31-42" highlight="8, 12" :::
 
 1. Save your changes to the file.
 
@@ -157,6 +158,8 @@ You also need to add the new parameters to the *deploy* step.
 1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="64-70, 75-94" highlight="26-27" :::
+
+<!-- TODO single step section -->
 
 ## Add database and data seed jobs
 

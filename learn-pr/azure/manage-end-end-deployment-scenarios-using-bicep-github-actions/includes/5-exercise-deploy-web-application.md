@@ -37,7 +37,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    <!-- TODO ensure you replace user and repo name -->
 
-1. Update the *deploy-test* job to depend on the new *build* job:
+1. Update the *deploy-test* job to depend on the new *build* job: <!-- TODO should we make prod depned too, for consistency -->
 
    :::code language="yaml" source="code/5-workflow.yml" range="18-27" highlight="3" :::
 
@@ -84,7 +84,7 @@ TODO explain
    :::code language="yaml" source="code/5-deploy.yml" range="81-95" :::
 
    > [!NOTE]
-   > Be careful with the indentation of the YAML file, ensuring that the new deployment step is indented at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
+   > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
 
    Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensure the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
 
@@ -120,7 +120,7 @@ TODO explain
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
 
-<!-- TODO look at artifacts -->
+   <!-- TODO look at artifacts -->
 
 1. Wait for the *deploy-test / deploy* job to finish successfully.
 
@@ -136,4 +136,4 @@ TODO explain
 
    :::image type="content" source="../media/5-smoke-test-failure-log.png" alt-text="Screenshot of GitHub showing the workflow run log, with the output of the smoke test displayed. The J S O N health test result is highlighted.":::
 
-   Notice that the workflow log includes the health check response. The response indicates that there's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this soon.
+   Notice that the workflow log indicates the website and configuration isn't healthy. There's a problem with the application's communication with Azure SQL Database. You haven't yet deployed or configured a database, which is why the website can't access it. You'll fix this soon.
