@@ -111,7 +111,6 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Repeat the process to add another secret named *SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION* as the secret name, and *SecurePassword!999* as the value. Select **Add secret**.
 
-<!-- TODO up to here -->
 ## Add the secrets and inputs to your workflow
 
 1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
@@ -134,9 +133,9 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Save your changes to the file.
 
-## Add parameter values to the validate and preview steps
+## Add parameter values to the existing steps
 
-The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for both the *validate* and *preview* steps.
+The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the *validate* and *deploy* jobs.
 
 1. In the *deploy.yml* file, update the *validate* job's *Run preflight validation* step to add the new parameters:
 
@@ -149,17 +148,11 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
    > [!IMPORTANT]
    > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
 
-1. Save your changes to the file.
-
-## Add parameter values to the deploy step
-
-You also need to add the new parameters to the *deploy* step.
-
 1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="64-70, 75-94" highlight="26-27" :::
 
-<!-- TODO single step section -->
+<!-- TODO deploy.yml outputs from deploy job -->
 
 ## Add database and data seed jobs
 
@@ -229,20 +222,6 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Wait until the workflow completes successfully, including the production deployment.
 
-   :::image type="content" source="../media/7-workflow-run-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run with all jobs showing success.":::
-
-1. Select the **deploy-test / seed-storage-account** job to open the workflow log.
-
-   <!-- TODO image -->
-
-   Notice that the *Upload sample images* step completed successfully. This indicates that the workflow successfully uploaded the sample blobs for the test environment.
-
-1. Select the **deploy-test / seed-storage-account** job and notice that the *Upload sample images* step was skipped:
-
-   <!-- TODO image -->
-
-   This indicates that the production system wasn't seeded with sample data. This meets your company's requirements.
-
 ## View the website
 
 1. Select the **deploy-test / deploy-website** job to open the workflow log.
@@ -251,7 +230,7 @@ In this section, you define the steps that are required to deploy the database c
 
    Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
 
-   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of GitHub Actions showing the workflow log for the test environment's Deploy job. The URL of the App Service app is highlighted.":::
+   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of GitHub Actions showing the workflow log for the test environment's deploy-website job. The URL of the App Service app is highlighted.":::
 
 1. Select **Toys**.
 
