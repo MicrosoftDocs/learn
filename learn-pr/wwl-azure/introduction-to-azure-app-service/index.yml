@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-azure-app-service
 metadata:
   title: Explore Azure App Service
   description: "Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently."
-  ms.date: 10/25/2021
+  ms.date: 11/09/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
   * To complete the exercise in this module you will need an Azure account with an active subscription. [Create an account for free.](https://azure.microsoft.com/free/dotnet)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-app-introduction.svg
 levels:
 - intermediate
 roles:
