@@ -1,6 +1,6 @@
 In this module, you learned how to:
 
-* Create property and form views for the Altair IoT Central application. From these forms, you can configure the settings for the Altair emulator and chart data from the emulator.
+* Create property and form views for an Azure IoT Central application. From these forms, you can configure the settings for the Altair emulator and chart data from the emulator.
 * Create an Azure static web app for the Altair web terminal.
 * Install and run the Altair virtual disk server.
 
