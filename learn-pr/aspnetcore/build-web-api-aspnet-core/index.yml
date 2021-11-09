@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.build-web-api-net-core
 metadata:
-  title: Create a web API with ASP.NET Core
-  description: Create a RESTful service with ASP.NET Core that supports Create, Read, Update, Delete (CRUD) operations.
+  title: Create a web API with ASP.NET Core Controllers
+  description: Create a RESTful service with ASP.NET Core Controllers that supports Create, Read, Update, Delete (CRUD) operations.
   ms.date: 04/28/2021
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Create a web API with ASP.NET Core
-summary: Create a RESTful service with ASP.NET Core that supports Create, Read, Update, Delete (CRUD) operations.
+title: Create a web API with ASP.NET CoreControllers
+summary: Create a RESTful service with ASP.NET Core Controllers that supports Create, Read, Update, Delete (CRUD) operations.
 abstract: | 
   In this module, you will:
-  - Create a web API project with ASP.NET Core.
+  - Create a web API project with ASP.NET Core Controllers.
   - Create an in-memory database for persisting products.
   - Add support for CRUD operations.
   - Test web API action methods from the command shell.

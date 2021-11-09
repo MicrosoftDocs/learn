@@ -8,32 +8,28 @@ In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory
 
 In the current Program.cs code, you're passing the static location of the *stores* folder. We'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
-1. In the `Main` method, create a variable to store a path to the current directory by using the `Directory.GetCurrentDirectory` method.
+1. At the top of the `Program.cs`, create a variable to store a path to the current directory by using the `Directory.GetCurrentDirectory` method.
 
     ```csharp
-    static void Main(string[] args)
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var salesFiles = FindFiles("stores");
+
+    foreach (var file in salesFiles)
     {
-      var currentDirectory = Directory.GetCurrentDirectory();
-      var files = FindFiles("stores");
-      foreach (var file in files)
-      {
         Console.WriteLine(file);
-      }
-    }
+    }  
     ```
 
-1. Still in the `Main` method, create another variable to store the full path to the *stores* directory by using the `Path.Combine` method. Pass that new variable to the `FindFiles` function.
+1. Still in the `Program.cs` file, create another variable to store the full path to the *stores* directory by using the `Path.Combine` method. Pass that new variable to the `FindFiles` function.
 
     ```csharp
-    static void Main(string[] args)
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+
+    var salesFiles = FindFiles(storesDirectory);
+    foreach (var file in salesFiles)
     {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        var salesFiles = FindFiles(storesDirectory);
-        foreach (var file in salesFiles)
-        {
-            Console.WriteLine(file);
-        }
+        Console.WriteLine(file);
     }
     ```
 
@@ -114,38 +110,31 @@ Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` 
 If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution.
 
 ```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
+var currentDirectory = Directory.GetCurrentDirectory();
+var storesDirectory = Path.Combine(currentDirectory, "stores");
 
-namespace files_module
+var salesFiles = FindFiles(storesDirectory);
+    
+foreach (var file in salesFiles)
 {
-    class Program
+    Console.WriteLine(file);
+}
+
+IEnumerable<string> FindFiles(string folderName)
+{
+    List<string> salesFiles = new List<string>();
+
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+    foreach (var file in foundFiles)
     {
-        static void Main(string[] args)
+        var extension = Path.GetExtension(file);
+        if (extension == ".json")
         {
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var storesDirectory = Path.Combine(currentDirectory, "stores");
-            var salesFiles = FindFiles(storesDirectory);
-            foreach (var file in salesFiles)
-            {
-                Console.WriteLine(file);
-            }
-        }
-
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            List<string> salesFiles = new List<string>();
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-            foreach (var file in foundFiles)
-            {
-                var extension = Path.GetExtension(file);
-                if (extension == ".json")
-                    salesFiles.Add(file);
-            }
-
-            return salesFiles;
+            salesFiles.Add(file);
         }
     }
+
+    return salesFiles;
 }
 ```
