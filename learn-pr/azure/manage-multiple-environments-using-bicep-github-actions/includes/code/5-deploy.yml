@@ -36,7 +36,7 @@ jobs:
        uses: Azure/cli@v1
        name: Run what-if
        with:
-         azcliversion: 2.29.2 # TODO this is required while this is an issue: https://github.com/Azure/cli/issues/56
+         azcliversion: 2.29.2
          inlineScript: |
              az deployment group what-if \
                --resource-group ${{ inputs.resourceGroupName }} \
