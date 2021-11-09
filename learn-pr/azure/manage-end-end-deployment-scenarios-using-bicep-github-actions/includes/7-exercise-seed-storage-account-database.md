@@ -89,6 +89,8 @@ Your website developers have prepared a Visual Studio database project that depl
 
    :::code language="yaml" source="code/7-build.yml" highlight="34-51" :::
 
+   The *build-database* job uses a Windows runner. Currently, Visual Studio database projects must be built on the Windows operating system.
+
 1. Save your changes to the file.
 
 ## Define the secrets
@@ -115,7 +117,7 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. At the top of the file, define a new input named `sqlServerAdministratorLogin`, and a new secret named `sqlServerAdministratorLoginPassword`:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="1-24" highlight="15-17, 23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="1-24" highlight="15-17, 23-24" :::
 
 1. Save your changes to the file.
 
@@ -123,11 +125,11 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. In the *deploy-test* definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="18-29" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="18-29" highlight="8, 12" :::
 
 1. Repeat the process in the *deploy-production* definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="31-42" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="31-42" highlight="8, 12" :::
 
 1. Save your changes to the file.
 

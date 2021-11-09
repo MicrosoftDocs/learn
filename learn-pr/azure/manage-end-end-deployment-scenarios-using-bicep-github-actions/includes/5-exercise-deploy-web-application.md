@@ -31,9 +31,11 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Open the *workflow.yml* file.
 
-1. Below the *jobs:* line, add a new job named *build*:
+1. Below the *jobs:* line, add a new job named *build* that uses the reusable workflow you just defined:
 
    :::code language="yaml" source="code/5-workflow.yml" range="1-16" highlight="12-13" :::
+
+   <!-- TODO ensure you replace user and repo name -->
 
 1. Update the *deploy-test* job to depend on the new *build* job:
 
