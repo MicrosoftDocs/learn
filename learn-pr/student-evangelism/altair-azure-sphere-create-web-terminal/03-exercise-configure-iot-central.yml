@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-configure-iot-central
-title: Exercise - Customize an Altair IoT Central application
+title: Exercise - Customize your Azure IoT Central application
 metadata:
-  title: Exercise - Customize an Altair IoT Central application
-  description: In this exercise, you'll customize an Altair IoT Central application.
+  title: Exercise - Customize your Azure IoT Central application
+  description: In this exercise, you'll customize an Azure IoT Central application for Altair.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring
