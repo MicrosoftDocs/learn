@@ -6,7 +6,9 @@ You can create additional subscriptions for your account in Azure. You might wan
 
 If you want to create Azure subscriptions under your organization's Enterprise Agreement (EA), you need to have the Account Owner role for your organization.
 
-If you need to transfer billing ownership of your Azure subscription if you're leaving your organization, or you want your subscription to be billed to another account. Transferring billing ownership to another account provides the administrators in the new account permission for billing tasks. They can change the payment method, view charges, and cancel the subscription.
+If you need to transfer billing ownership of your Azure subscription because you've changed your organization, or you want your subscription to be billed to another account, be sure to transferr billing ownership to another account that gives the administrators in the account permission for billing tasks. 
+
+Administrators can change the payment method, view charges, and cancel the subscription.
 
 
 ## Manage API access to Azure subscriptions and resources
