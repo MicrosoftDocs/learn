@@ -4,7 +4,8 @@ An administrative unit is an Azure AD resource that can be a container for other
 > [!NOTE]
 > To use administrative units, you need an Azure Active Directory Premium license for each administrative unit admin, and Azure Active Directory Free licenses for administrative unit members.
 
-![Screenshot of the Administratrive Units user interface in Azure AD.  Shows that you can Add Users, Groups, and Set up Roles for your Administrative Unit.](../media/administrative-units-dialog.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Administratrive Units user interface in Azure AD.  Shows that you can Add Users, Groups, and Set up Roles for your Administrative Unit.](../media/administrative-units-dialog.png)
 
 ## Available roles
 

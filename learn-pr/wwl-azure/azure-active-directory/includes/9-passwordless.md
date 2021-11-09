@@ -9,7 +9,8 @@ Sign-in without ever using a password. With passwordless, the password is replac
 - **FIDO2 Smartcards (preview)** - new method to use FIDO2 keys for passwordless login via a smartcard.
 - **Temporary Access Pass (preview)** - time-limited passcode allows you to set up security keys and the Microsoft Authenticator without ever needing to use, much less know, your password!
 
-![Screenshot of Azure AD, Security, Authentication methods panel.  Listed on the screen are the available methods that can be used for authenticating user including FIDO2, the Authenticator App, and the preview of Temporary Access Pass.](../media/azure-active-directory-authentication-methods.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of Azure AD, Security, Authentication methods panel.  Listed on the screen are the available methods that can be used for authenticating user including FIDO2, the Authenticator App, and the preview of Temporary Access Pass.](../media/azure-active-directory-authentication-methods.png)
 
 ## Benefits of passwordless authentication
 

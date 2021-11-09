@@ -6,7 +6,8 @@ Azure AD DS replicates identity information from Azure AD, so it works with Azur
 * If you have an existing on-premises AD DS environment, you can synchronize user account information to provide a consistent identity for users.
 * For cloud-only environments, you don't need a traditional on-premises AD DS environment to use the centralized identity services of Azure AD DS.
 
-![Azure Active Directory uses Azure AD DS to manage workloads and apps in Azure. ](../media/az500-azure-active-directory-domain-services.png)
+> [!div class="mx-imgBorder"]
+> ![Azure Active Directory uses Azure AD DS to manage workloads and apps in Azure. ](../media/az500-azure-active-directory-domain-services.png)
 
 ## Azure AD DS features and benefits
 

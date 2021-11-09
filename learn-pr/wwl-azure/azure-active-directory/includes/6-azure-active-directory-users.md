@@ -3,7 +3,8 @@ In Azure AD, every user who needs access to resources needs a user account. A us
 
 To view the Azure AD users, access the **All users** blade. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
 
-![Screenshot that depicts the All users blade, with the USER TYPE and SOURCE columns noted.](../media/az500-azure-active-directory-users.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot that depicts the All users blade, with the USER TYPE and SOURCE columns noted.](../media/az500-azure-active-directory-users.png)
 
 Typically, Azure AD defines users in three ways:
 

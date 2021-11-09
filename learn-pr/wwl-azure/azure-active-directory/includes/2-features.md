@@ -3,7 +3,8 @@
 
 For application developers, Azure AD lets you focus on building your application by making it fast and simple to integrate with a world class identity management solution used by millions of organizations around the world.
 
-![Cloud and on-premise environments are connected to Azure AD.](../media/az500-azure-active-directory.png)
+> [!div class="mx-imgBorder"]
+> ![Cloud and on-premise environments are connected to Azure AD.](../media/az500-azure-active-directory.png)
 
 
 ## Identity manage capabilities and integration

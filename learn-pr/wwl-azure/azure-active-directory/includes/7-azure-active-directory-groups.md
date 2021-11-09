@@ -5,7 +5,8 @@ Azure AD allows you to define two different types of groups.
 
 * **Microsoft 365 groups**. These groups provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. This option also lets you give people outside of your organization access to the group. This option is available to users as well as admins.
 
-![Screenshot of the all groups page.](../media/az500-groups.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the all groups page.](../media/az500-groups.png)
 
 There are different ways you can assign group access rights:
 
