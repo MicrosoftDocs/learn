@@ -68,16 +68,16 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     ![The editor containing code to analyze an image](../media/analyze-image-code.png)
 
-4. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_ENDPOINT** and **YOUR_KEY** placeholder values respectively.
+4. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
 
     > [!TIP]
     > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
+    After pasting the key and endpoint values, the first two lines of code should look similar to this:
 
     ```PowerShell
-    $endpoint="https://resource.cognitiveservices.azure.com/"
-    $key="1a2b3c4d5e6f7g8h9i0j...."
+    $key="1a2b3c4d5e6f7g8h9i0j...."    
+    $endpoint="https..."
     ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. 
@@ -90,7 +90,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     ```
     cd ai-900
-    ./analyze-image.ps1 store-cam1.jpg
+    ./analyze-image.ps1 store-camera-1.jpg
     ```
 
 7. Review the results of the image analysis, which include:
@@ -100,24 +100,24 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
 8. Now let's try another image:
 
-    ![An image of person with a shopping basket in a supermarket](../media/store-cam2.jpg)
+    ![An image of person with a shopping basket in a supermarket](../media/store-camera-2.jpg)
 
     To analyze the second image, enter the following command:
 
     ```
-    ./analyze-image.ps1 store-cam2.jpg
+    ./analyze-image.ps1 store-camera-2.jpg
     ```
 
 9. Review the results of the image analysis for the second image.
 
 10. Let's try one more:
 
-    ![An image of person with a shopping cart](../media/store-cam3.jpg)
+    ![An image of person with a shopping cart](../media/store-camera-3.jpg)
 
     To analyze the third image, enter the following command:
 
     ```
-    ./analyze-image.ps1 store-cam3.jpg
+    ./analyze-image.ps1 store-camera-3.jpg
     ```
 
 11. Review the results of the image analysis for the third image.
