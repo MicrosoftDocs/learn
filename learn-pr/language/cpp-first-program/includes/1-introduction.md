@@ -1,5 +1,7 @@
 C++ was modeled to be an extension of C Language to support procedural, object-oriented, and generic programming. It's a compiler-based programming language, which is statically typed and case-sensitive.
-The uses of C++ are limitless.  Here's some example of where C++ is used:
+The uses of C++ are limitless.  
+
+Here's some example of where C++ is used:
 
 * **For the Web**. C++ is used in making of **Web Browser** and their plugins and extensions.
 
