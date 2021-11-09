@@ -59,7 +59,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
    :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
 
    > [!NOTE]
-   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary. <!-- TODO check we do -->
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary.
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 
@@ -113,7 +113,11 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
 
-TODO
+1. At the top of the file, define a new input named `sqlServerAdministratorLogin`, and a new secret named `sqlServerAdministratorLoginPassword`:
+
+   :::code language="yaml" source="code/7-workflow.yml" range="1-24" highlight="15-17, 23-24" :::
+
+1. Save your changes to the file.
 
 1. Open the *workflow.yml* file.
 
@@ -125,52 +129,62 @@ TODO
 
    :::code language="yaml" source="code/7-workflow.yml" range="31-42" highlight="8, 12" :::
 
-<!-- TODO define in workflow.yml and deploy.yml -->
+1. Save your changes to the file.
 
 ## Add parameter values to the validate and preview steps
 
 The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for both the *validate* and *preview* steps.
 
-1. In Visual Studio Code, open the *deploy.yml* file in the *.github/workflows* folder.
+1. In the *deploy.yml* file, update the *validate* job's *Run preflight validation* step to add the new parameters:
 
-1. Update the *Validate* stage's *RunPreflightValidation* step to add the new parameters:
+   :::code language="yaml" source="code/7-deploy.yml" range="26-48" highlight="21-22" :::
 
-   :::code language="yaml" source="code/7-deploy.yml" range="23-31" highlight="7-9" :::
+1. Update the *Run what-if* step to add the new parameters:
+
+   :::code language="yaml" source="code/7-deploy.yml" range="49-62" highlight="12-14" :::
 
    > [!IMPORTANT]
    > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
 
-1. Update the *Preview* stage's *RunWhatIf* step to add the new parameters:
+1. Save your changes to the file.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="49-57" highlight="7-9" :::
+## Add parameter values to the deploy step
 
-## Add parameter values to the Deploy stage
+You also need to add the new parameters to the *deploy* step.
 
-1. Update the *Deploy* stage's *DeployBicepFile* step to add the new parameters:
+1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="82-92" highlight="9-11" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="64-70, 75-94" highlight="26-27" :::
 
-1. Create pipeline variables that contain the values of the Bicep outputs you recently added for the storage account and Azure SQL resources:
-
-   :::code language="yaml" source="code/7-deploy.yml" range="93-104" highlight="3-6, 9-12" :::
-
-## Add database deployment steps
+## Add database and data seed jobs
 
 In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
 
-1. Below the *DeployWebsiteApp* step in the *Deploy* stage, add a new step to deploy the DACPAC file:
+1. Below the *deploy-website* job, add a new job to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="117-129" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="112-127" :::
 
-1. Below the step you just added, define a step to seed the database with sample data.
+   Notice that this job uses a Windows runner. Currently, the `azure/sql-action` job requires the Windows operating system to run.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="131-143" :::
+1. Below the job you just added, and above the *smoke-test* job, define a new job to seed the database with sample data.
 
-   Notice that this step has a condition applied to it. That is, it runs only for non-production environments.
+   :::code language="yaml" source="code/7-deploy.yml" range="129-147" :::
 
-1. Below the step you just added, and still within the scope of the condition, add a step to upload some sample toy images to the blob container by using the Azure CLI:
+   Notice that the *Add test data to database* step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="145-156" :::
+1. Below the job you just added, and above the *smoke-test* job, define another job to upload some sample toy images to the blob container by using the Azure CLI:
+
+   :::code language="yaml" source="code/7-deploy.yml" range="149-168" :::
+
+   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. This pipeline is a good example of using a variety of operating systems to achieve your requirements.
+
+## Update the dependencies for the smoke test job
+
+1. Update the *smoke-test* job's dependencies to ensure it runs after all of the deployment steps are completed:
+
+   :::code language="yaml" source="code/7-deploy.yml" range="170-188" highlight="3-8" :::
+
+1. Save your changes to the file.
 
 ## Verify files and commit your changes
 
@@ -182,7 +196,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Verify that your *deploy.yml* file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="29-31, 55-57, 90-93, 95-99, 100-104, 117-156" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 23-24, 46-47, 60-62, 71-74, 93-94, 112-168, 172-177" :::
 
    If it doesn't, update it to match the file contents.
 
@@ -196,41 +210,43 @@ In this section, you define the steps that are required to deploy the database c
     git push
     ```
 
-## Run the pipeline
+## Run the workflow
 
-1. In your browser, go to **Pipelines**.
+1. In your browser, go to **Actions**.
 
-1. Select the most recent run of your pipeline.
+1. Select the **toy-company-end-to-end** workflow. <!-- TODO check name -->
 
-   Wait until all the stages for the test environment finish successfully. Notice that the smoke test now also succeeds.
+1. Select the most recent run of your workflow.
 
-   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run's Smoke Test stage for the test environment. The status shows that the stage has succeeded.":::
+   Wait until all the jobs for the test environment finish successfully. Notice that the smoke test now also succeeds.
 
-1. Wait for the pipeline to pause again before the *Preview (Production Environment)* stage, because it needs permission to a different variable group this time.
+   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run's Smoke Test stage for the test environment. The status shows that the job has succeeded.":::
 
-   :::image type="content" source="../media/7-pipeline-run-deploy-permission.png" alt-text="Screenshot of Azure DevOps showing the pipeline run paused at the Deploy stage. Permission is required to continue. The View button is highlighted.":::
+1. Wait until the workflow completes successfully, including the production deployment.
 
-1. Select **View**, and then select **Permit** > **Permit**.
+   :::image type="content" source="../media/7-pipeline-run-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run with all stages showing success.":::
 
-   The *Preview (Production Environment)* stage finishes successfully.
+1. Select the **deploy-test / seed-storage-account** job to open the workflow log.
 
-   The pipeline then pauses again at the *Deploy (Production Environment)* stage.
+   <!-- TODO image -->
 
-1. Select **View**, and then select **Permit** > **Permit**.
+   Notice that the *Upload sample images* step completed successfully. This indicates that the workflow successfully uploaded the sample blobs for the test environment.
 
-   The *Deploy (Production Environment)* stage finishes successfully, and the *Smoke Test (Production Environment)* stage also finishes successfully.
+1. Select the **deploy-test / seed-storage-account** job and notice that the *Upload sample images* step was skipped:
 
-   :::image type="content" source="../media/7-pipeline-run-success.png" alt-text="Screenshot of Azure DevOps showing the pipeline run with all stages showing success.":::
+   <!-- TODO image -->
+
+   This indicates that the production system wasn't seeded with sample data. This meets your company's requirements.
 
 ## View the website
 
-1. Select the **Deploy (Test Environment)** stage to open the pipeline log.
+1. Select the **deploy-test / deploy-website** job to open the workflow log.
 
 1. Select the **Deploy website** step.
 
    Hold down the <kbd>Ctrl</kbd> key (<kbd>⌘</kbd> on macOS) and select the URL of the App Service app to open it in a new browser tab.
 
-   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of Azure DevOps showing the pipeline run log for the test environment's Deploy stage. The URL of the App Service app is highlighted.":::
+   :::image type="content" source="../media/7-url-test.png" alt-text="Screenshot of GitHub Actions showing the workflow log for the test environment's Deploy job. The URL of the App Service app is highlighted.":::
 
 1. Select **Toys**.
 
@@ -240,7 +256,7 @@ In this section, you define the steps that are required to deploy the database c
 
    :::image type="content" source="../media/7-website-test-toys.png" alt-text="Screenshot of the test website's toy page, with the sample toys displayed.":::
 
-1. Repeat the preceding process for the **Deploy (Production Environment)** stage's app.
+1. Repeat the preceding process for the **deploy-production / deploy-website** job's app.
 
    Notice that no sample data is displayed in the production environment.
 
