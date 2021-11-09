@@ -18,8 +18,8 @@ So the policies are made of conventions that you define. The conventions are eva
 The available effects are:
 
 * **Append**: Adds the defined set of fields to the request.
-* **Audit**: Generates a warning event in activity log but doesn't fail the request.
-* **AuditIfNotExists**: Generates a warning event in activity log if a related resource doesn't exist.
+* **Audit**: Generates a warning event in the activity log but doesn't fail the request.
+* **AuditIfNotExists**: Generates a warning event in the activity log if a related resource doesn't exist.
 * **Deny**: Generates an event in the activity log and fails the request.
 * **DeployIfNotExists**: Deploys a related resource if it doesn't already exist.
 * **Disabled**: Doesn't evaluate resources for compliance with the policy rule.
@@ -44,11 +44,11 @@ The assessment is an overview of the status of your environment. Before you make
 
 ### Test
 
-Before you create policies to make changes in your environment, make sure to test everything. Validate your policy syntax, the actions that will be taken, and the scope in use (management groups, subscriptions, and resource groups). Validate all policy inclusions, exclusions, and exemptions.
+Before you create policies to make changes in your environment, be sure to test everything. Validate your policy syntax, the actions that will be taken, and the scope in use (management groups, subscriptions, and resource groups). Validate all policy inclusions, exclusions, and exemptions.
 
 ### Deploy
 
-For the deployment, initially, make sure you'll run your policy against a controlled environment or a dedicated subscription. Be aware that Azure Policy assignments don't come into effect immediately. There's a policy evaluation delay of around 30 minutes. Also, auditing your resources might take some time because the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
+For the initial deployment, make sure that you'll run your policy against a controlled environment or a dedicated subscription. Be aware that Azure Policy assignments don't come into effect immediately. There's a policy evaluation delay of around 30 minutes. Also, auditing your resources might take some time because the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
 
 ### Check
 
@@ -58,7 +58,12 @@ Finally, select **Compliance** to check the results of your policy assignments.
 
 ## Covered resources
 
-Azure policy covers all Azure resources, including Azure Arc enabled resources. This means that, for example, you can extend the coverage of your controls to Windows and Linux physical servers, and to virtual machines hosted outside Azure on your corporate network or though another cloud provider. For Azure resources, the usage of Azure Policy is free. For an Azure Arc resource, there is a fee.
+Azure Policy covers all Azure resources, including Azure Arc enabled resources. This means that, for example, you can extend the coverage of your controls to:
+
+* Windows and Linux physical servers.
+* Virtual machines hosted outside Azure on your corporate network or though another cloud provider. 
+
+For Azure resources, the usage of Azure Policy is free. For an Azure Arc resource, there is a fee.
 
 ## Related services
 
