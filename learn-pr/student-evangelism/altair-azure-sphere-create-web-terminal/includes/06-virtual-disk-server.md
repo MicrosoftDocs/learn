@@ -12,7 +12,7 @@ Reads and writes for drive B disk sectors are redirected over MQTT to an MQTT-en
 
 The disk *reads* work as follows:
 
-1. The Altair emulator first checks to see whether the disk sector is available from the disk sector cache.
+1. The Altair emulator checks to see whether the disk sector is available from the disk sector cache.
 1. If the disk sector is found in the cache, it's returned to the Altair emulator. Getting sectors from the cache is much faster than requesting the sector from the virtual disk server.
 1. If the disk sector isn't found in the cache, the sector is requested from the virtual disk server.
 1. When the virtual disk server returns the disk sector, it's added to the disk sector cache. The sector is then returned to the Altair emulator for processing.
@@ -22,7 +22,7 @@ The disk *writes* work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-The virtual disk server is not required if you have an Avnet Azure Sphere Starter Kit and the MikroE microSD click. If you have the MikroE microSD click, you can skip to the "Knowledge check" unit for this module.
+The virtual disk server is not required if you have an Avnet Azure Sphere Starter Kit and the MikroE microSD Click. If you have the MikroE microSD Click, you can skip to the "Knowledge check" unit for this module.
 
 ## Starting the virtual disk server
 
