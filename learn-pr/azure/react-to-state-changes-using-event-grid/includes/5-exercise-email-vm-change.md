@@ -44,8 +44,8 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. In the **Logic app designer** command bar, select **Save**.
 
->NOTE!
->In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Code view** again to return to the editor.
+> [!NOTE]
+> In the command bar, select **Code view** to view the JSON text of the operation you are creating. Select **Code view** again to return to the editor.
 
 ## Send an email notification
 
