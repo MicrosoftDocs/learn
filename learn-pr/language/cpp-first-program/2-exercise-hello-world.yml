@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.cpp-write-your-first-program.2-exercise-hello-world
+title: Exercise - Create your first C++ program
+metadata:
+  title: Exercise - Create your first C++ program
+  description: In this exercise, you'll create your first program. The program
+    will output a string literal.
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.date: 10/13/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-exercise-hello-world.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is the primary job of the compiler?
+      choices:
+        - content: The compiler primarily locates spelling mistakes in your code.
+          isCorrect: false
+          explanation: Incorrect. While it's possible you misspelled something in your
+            code and that produces an error, that isn't the primary job of the
+            compiler.
+        - content: The compiler primarily reformats your code.
+          isCorrect: false
+          explanation: Incorrect. The compiler will never reformat your code.
+        - content: The compiler primarily converts your code into an executable format
+            that the computer can understand.
+          isCorrect: true
+          explanation: Correct!
+    - content: Which of the following statements is **true** about C++.
+      choices:
+        - content: C++ is case *insensitive*.
+          isCorrect: false
+          explanation: Incorrect. Actually, C++ is case-sensitive.
+        - content: "`cout` is a function"
+          isCorrect: false
+          explanation: Incorrect. Actually, `cout` is an object.
+        - content: You use double-quotation marks to create a literal string.
+          isCorrect: true
+          explanation: Correct!

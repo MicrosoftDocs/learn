@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.cpp-write-your-first-program.5-exercise-fixing-broken-code
+title: Exercise - Fix broken code
+metadata:
+  title: Exercise - Fix broken code
+  description: In this unit, you'll practice on fixing a broken C++ code and
+    solving the errors step by step
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.date: 10/13/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-fixing-broken-code.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is **wrong** with this line of code?  `cout << "Hello World" <<
+        endl`
+      choices:
+        - content: The `c` in `cout` should be upper-case.
+          isCorrect: false
+          explanation: Incorrect. The `c` should be lower-case.
+        - content: It's missing a semi-colon at the end
+          isCorrect: true
+          explanation: Correct!  The semi-colon must be used at the end of a code statement.
+        - content: The string should use single-quotes.
+          isCorrect: false
+          explanation: Incorrect. A string literal must be surrounded in double-quotes.  A
+            char literal is surrounded in single quotes.

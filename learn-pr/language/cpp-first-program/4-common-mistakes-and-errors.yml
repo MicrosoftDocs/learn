@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cpp-write-your-first-program.4-common-mistakes-and-errors
+title: Common mistakes and errors
+metadata:
+  title: Common mistakes and errors
+  description: In this unit, we'll cover common programming mistakes, the error
+    messages they produce and how to address the errors.
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-common-mistakes-and-errors.md)]
