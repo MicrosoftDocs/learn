@@ -1,4 +1,4 @@
-When you deploy your changes to multiple environments, the steps involved in deploying to each environment are usually very similar or even identical. In this unit, you'll learn how to use called workflows to avoid repetition and to allow for reuse of your workflow code.
+When you deploy your changes to multiple environments, the steps involved in deploying to each environment are usually very similar or even identical. In this unit, you'll learn how to design your workflows to avoid repetition and to allow for reuse of your workflow code.
 
 ## Deployment to multiple environments
 
@@ -36,7 +36,7 @@ When you need to repeat steps in your workflow, you might try to copy and paste 
 
 ## Reusable workflows
 
-GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflow. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being similar to Bicep modules.
+GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflow. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being analogous to Bicep modules.
 
 When you create a reusable workflow, you use the `workflow_call` trigger to tell GitHub Actions that the workflow can be called by other workflows. Here's a basic example of a reusable workflow, saved in a file named *script.yml*:
 
@@ -46,7 +46,7 @@ In the caller workflow, you refer to the called workflow by including the `uses:
 
 :::code language="yaml" source="code/3-caller-workflow.yml" highlight="6" :::
 
-Ensure the path includes your GitHub username, the repository name, and the path to the workflow file you're using.
+Ensure the path includes your GitHub username, the repository name, and the path to the called workflow file you're referencing.
 
 ## Called workflow inputs and secrets
 
@@ -61,12 +61,12 @@ You can define as many inputs and secrets as you need. But just like Bicep param
 Inputs can have several properties, including:
 
 - The *name* of the input, which you use to refer to the input in your workflow definitions.
-- The *type* of the input. Inputs support several different types of data, including *string*, *number*, and *Boolean*. You can also define more complex workflows that accept structured objects.
-- The *default value* of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in caller workflow.
+- The *type* of the input. Inputs support *string*, *number*, and *Boolean* values.
+- The *default value* of the input. This is optional. If you don't specify a default value, then a value must be provided when the workflow is used in a caller workflow.
 
 Secrets have names, but they don't have types or default values.
 
-In your workflow, you use a special syntax to refer to the value of the parameter. Use the `${{ inputs.YOUR_INPUT_NAME }}` macro, like in this example: 
+In your workflow, you use a special syntax to refer to the value of the parameter, like in this example: 
 
 :::code language="yaml" source="code/3-called-workflow-inputs.yml" range="11-16" highlight="6" :::
 
@@ -84,6 +84,6 @@ For example, imagine you define a workflow that runs script steps. You plan to r
 
 The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the step*.
 
-Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you see a lot of conditions in a called workflow, then a called workflow might not be the best solution for the workflow that you plan to run, and you might need to redesign your overall workflow.
+Although conditions are a way to add flexibility to your workflow, try not to use too many of them. They complicate your workflow and make it harder to understand its flow. If you see a lot of conditions in a called workflow, then a called workflow might not be the best solution for the deployment, and you might need to redesign your overall workflow.
 
 Also, consider using YAML comments to explain the conditions that you use and any other aspects of your workflow that might need more explanation. Comments help make your workflow easy to understand and work with in the future. You'll see some example YAML comments in the exercises throughout this module.

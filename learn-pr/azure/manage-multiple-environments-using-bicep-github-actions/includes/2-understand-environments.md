@@ -60,15 +60,19 @@ You'll update your workflow to deploy your Bicep code to your test environment a
 
 ## Workflow environments
 
-GitHub Actions also has the concept of an environment. You create a GitHub Actions environment to represent the environment that you have in Azure. When you define your workflow in a YAML file, you link your deployment jobs to a specific environment. By using environments, you get some additional features in your workflow.
+GitHub Actions also has the concept of an environment. You create a GitHub Actions environment to represent the environment that you have in Azure. When you define your workflow in a YAML file, you can link jobs to a specific environment. By using environments, you get some additional features in your workflow.
 
-### Checks and approvals
+### Protection rules
 
-An environment in GitHub Actions can have checks and approvals configured. Each time the environment is used in a job in your workflow, GitHub Actions will make sure these checks and approvals succeed before the job starts running.
+An environment in GitHub Actions can have protection rules configured. Each time the environment is used in a job in your workflow, GitHub Actions will make sure these rules have been met before the job starts running.
 
-For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver will receive an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
+For example, you can configure manual reviews on your production environment. Before a production deployment starts, the designated reviewer will receive a notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
-Additionally, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
+Additionally, you could run an automated check to confirm the branch that your change is coming from. If the change isn't on your main branch, you can configure GitHub to prevent it from being deployed to your production environment.
+
+### Secrets
+
+GitHub Actions enables you to store secrets that can only be used with a specific environment. You'll learn more about secret management later in this module.
 
 ### Deployment history
 
@@ -78,7 +82,7 @@ GitHub Actions tracks the history of the deployments to an environment. This his
 
 You create an environment by using the GitHub web interface.
 
-When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
+When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security.
 
 ## Environments and connections to Azure
 
@@ -91,7 +95,7 @@ Service principals should be assigned specific permissions to only deploy to the
 :::image type="content" source="../media/2-secrets.png" alt-text="Diagram that shows a secret, service principal, and Azure resource group for non-production and another set for production." border="false":::
 
 > [!IMPORTANT]
-> Use a separate service principal and service connection for each environment that you plan to deploy to. Grant the service principal the minimum permissions that it needs to deploy to its environment, and no others.
+> Use a separate service principal for each environment that you plan to deploy to. Grant the service principal the minimum permissions that it needs to deploy to its environment, and no others.
 
 It's also a good idea to separate your environments in Azure. At minimum, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment. Then you can create multiple resource groups within each environment's subscription.
 

@@ -53,9 +53,12 @@ Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you
 
 When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments. This means that, if you configure a required reviewer rule, a workflow can't access the secrets' values until the specified GitHub user has approved your pipeline to deploy to that environment.
 
-Although environment-scoped secrets can be very helpful, they don't easily work with Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need the environment's Azure credentials to do so. You generally want to provide deployment approval *after* the preflight validation or what-if operations are completed, so that you have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
+Environment-scoped secrets can be very helpful, but they don't easily work with Azure credentials when you use Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need a service principal credentials. You generally want to provide deployment approval *after* the preflight validation or what-if operations are completed, so that you but have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
 
 For this reason, in this module's exercises you don't use environment-scoped secrets. Instead, you create repository-scoped secrets with predictable names that include the environment name. This enables your workflow to identify the correct secret to use for each environment. In your own workflows, you might choose to use repository-scoped secrets, environment-scoped secrets, or even a mixture of both.
+
+> [!NOTE]
+> You can also scope secrets to GitHub organizations. Although this isn't in scope for this module, we link to more information in the summary.
 
 ### Use variables in your workflow
 
@@ -65,7 +68,7 @@ The way that you access a variable's value in your workflow depends on the type 
 |-|-|
 | Variables defined in the same file | `${{ env.VARIABLE_NAME }}` |
 | Inputs to a called workflow | `${{ inputs.INPUT_NAME }}` |
-| Secrets | `${{ inputs.SECRET_NAME }}` |
+| Secrets | `${{ secrets.SECRET_NAME }}` |
 
 For example, when you run a Bicep deployment, you might use a secret to specify the Azure credentials to use, a called workflow input to specify the resource group name, and a variable to specify the value of a parameter:
 
@@ -107,4 +110,7 @@ For secure parameters, remember to explicitly pass each parameter into your depl
 
 It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a secret. The following example illustrates the combination:
 
-:::code language="yaml" source="code/6-multiple.yml" highlight="13-14, 29" :::
+:::code language="yaml" source="code/6-multiple.yml" highlight="13-14, 29-31" :::
+
+> [!TIP]
+> At the end of this example, the `parameters` value is provided as a YAML multiline string by using the `>` character. This makes the YAML file easier to read. It's equivalent to including the entire value on a single line.

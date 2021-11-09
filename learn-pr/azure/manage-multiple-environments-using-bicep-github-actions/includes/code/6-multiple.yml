@@ -26,4 +26,6 @@ jobs:
         failOnStdErr: false
         resourceGroupName: ${{ inputs.resourceGroupName }}
         template: ./deploy/main.bicep
-        parameters: ./deploy/azuredeploy.parameters.${{ inputs.environmentType }} mySecureParameter=${{ secrets.MySecureParameter }}
+        parameters: >
+          ./deploy/azuredeploy.parameters.${{ inputs.environmentType }}
+          mySecureParameter=${{ secrets.MySecureParameter }}
