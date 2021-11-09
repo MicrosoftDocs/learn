@@ -1,4 +1,4 @@
-In this unit, you'll how to configure Azure IoT Central so that you can customize an Azure IoT Central application for the Altair emulator.
+In this unit, you'll learn how to configure Azure IoT Central so that you can customize an Azure IoT Central application for the Altair emulator.
 
 When your Altair emulator connects to Azure IoT Central, you can set several properties, including the startup CPU state and the LED brightness. You can also report memory usage and environment data.
 
