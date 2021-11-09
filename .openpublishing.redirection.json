@@ -9579,6 +9579,31 @@
       "source_path": "learn-pr/wwl-azure/design-governance/10-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/11-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/6-compare-external-identity-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "llearn-pr/wwl-azure/design-authentication-authorization-solutions/8-design-for-conditional-access.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/6-design-for-conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/7-design-for-role-based-access-control.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-for-identity-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/7-design-for-identity-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/10-design-for-access-reviews.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/8-design-for-access-reviews",
+      "redirect_document_id": true
     }
   ]
 }
