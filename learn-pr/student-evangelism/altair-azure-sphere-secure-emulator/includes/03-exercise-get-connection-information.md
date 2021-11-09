@@ -1,8 +1,8 @@
-In this exercise, you'll declare the IoT Central network endpoints. 
+In this exercise, you'll declare the Azure IoT Central network endpoints. 
 
-## List your IoT Central network endpoints
+## List your Azure IoT Central network endpoints
 
-Follow these steps to list the network endpoints of your IoT Central web application.
+Follow these steps to list the network endpoints of your Azure IoT Central web application.
 
 1. Open the Command Prompt window.
 
