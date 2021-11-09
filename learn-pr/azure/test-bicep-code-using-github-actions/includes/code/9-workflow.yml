@@ -1,4 +1,5 @@
 name: deploy-toy-website-test
+concurrency: toy-company
 
 on: 
   push:
@@ -46,6 +47,7 @@ jobs:
     - uses: Azure/cli@v1
       name: Run what-if
       with:
+        azcliversion: 2.29.2
         inlineScript: |
             az deployment group what-if \
               --resource-group ${{ env.AZURE_RESOURCEGROUP_NAME }} \
