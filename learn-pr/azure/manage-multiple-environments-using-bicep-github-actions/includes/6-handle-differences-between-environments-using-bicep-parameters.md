@@ -51,7 +51,11 @@ Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you
 
 [!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
-<!-- TODO need to mention here how you can use environment-scoped secrets but that we don't -->
+When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments. This means that, if you configure a required reviewer rule, a workflow can't access the secrets' values until the specified GitHub user has approved your pipeline to deploy to that environment.
+
+Although environment-scoped secrets can be very helpful, they don't easily work with Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need the environment's Azure credentials to do so. You generally want to provide deployment approval *after* the preflight validation or what-if operations are completed, so that you have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
+
+For this reason, in this module's exercises you don't use environment-scoped secrets. Instead, you create repository-scoped secrets with predictable names that include the environment name. This enables your workflow to identify the correct secret to use for each environment. In your own workflows, you might choose to use repository-scoped secrets, environment-scoped secrets, or even a mixture of both.
 
 ### Use variables in your workflow
 
