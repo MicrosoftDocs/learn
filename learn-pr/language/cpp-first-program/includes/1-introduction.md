@@ -1,14 +1,21 @@
 C++ was modeled to be an extension of C Language to support procedural, object-oriented, and generic programming. It's a compiler-based programming language, which is statically typed and case-sensitive.
 The uses of C++ are limitless.  Here's some example of where C++ is used:
 
-- **For the Web**. C++ is used in making of **Web Browser** and their plugins and extensions.
-- **In operating systems**. It has contribution in **Operating Systems** as many parts of windows versions were written in C++. The Symbian OS is mostly written in C++.
-- **Compilers** for languages like C# and Java are written in C++. In fact, many C++ compilers are written in C++.
-- **Media applications**. Used for making **media applications** and managing audio/video files. Example - Win-amp. Even used in applications where real-time audio is implemented like the audio books or transcribing a real-time video.
-- **Created database engines**. C++ has been used in developing **database applications** like MYSQL.
-- **Game development**. A wide variety of **Animation** and **Games** require C++ for modeling, 3D animation, rendering, and simulations. The **Games Engines** used to make games are frequently developed in C++. 
-- **Medical engineering**. In recent times, we've also seen a huge rise in applications of C++ in Medical Engineering. Widely used in machines that have scanning such as MRI. C++ is used in various embedded systems.
-- **Robotics**. In many cases, C++ is used to program the micro-controller to increase the performance and productivity of the system. The reason behind why C++ is used in robotics is because numerous hardware libraries are written in C++ as they allow  interaction with low-level hardware.
+* **For the Web**. C++ is used in making of **Web Browser** and their plugins and extensions.
+
+* **In operating systems**. It has contribution in **Operating Systems** as many parts of windows versions were written in C++. The Symbian OS is mostly written in C++.
+
+* **Compilers** for languages like C# and Java are written in C++. In fact, many C++ compilers are written in C++.
+
+* **Media applications**. Used for making **media applications** and managing audio/video files. Example - Win-amp. Even used in applications where real-time audio is implemented like the audio books or transcribing a real-time video.
+
+* **Created database engines**. C++ has been used in developing **database applications** like MYSQL.
+
+* **Game development**. A wide variety of **Animation** and **Games** require C++ for modeling, 3D animation, rendering, and simulations. The **Games Engines** used to make games are frequently developed in C++. 
+
+* **Medical engineering**. In recent times, we've also seen a huge rise in applications of C++ in Medical Engineering. Widely used in machines that have scanning such as MRI. C++ is used in various embedded systems.
+
+* **Robotics**. In many cases, C++ is used to program the micro-controller to increase the performance and productivity of the system. The reason behind why C++ is used in robotics is because numerous hardware libraries are written in C++ as they allow  interaction with low-level hardware.
 
 ## Scenario
 
