@@ -4,12 +4,13 @@ title: Describe a modern data warehouse
 metadata:
   title: Describe a modern data warehouse
   description: "Describe a modern data warehouse"
-  ms.date: 04/19/2021
+  ms.date: 11/09/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe.md)]

@@ -4,12 +4,13 @@ title: Prepare and transform data with Azure Synapse Analytics
 metadata:
   title: Prepare and transform data with Azure Synapse Analytics
   description: "Prepare and transform data with Azure Synapse Analytics"
-  ms.date: 04/19/2021
+  ms.date: 11/09/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/7-prepare-transform-data.md)]
