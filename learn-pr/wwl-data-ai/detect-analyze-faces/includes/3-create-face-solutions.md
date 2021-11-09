@@ -66,16 +66,16 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to detect faces in an image](../media/find-faces-code.png)
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_ENDPOINT** and **YOUR_KEY** placeholder values respectively.
+4. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
 
     > [!TIP]
     > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
 
-    After pasting the endpoint and key values, the first two lines of code should look similar to this:
+    After pasting the key and endpoint values, the first two lines of code should look similar to this:
 
     ```PowerShell
-    $endpoint="https://resource.cognitiveservices.azure.com/"
-    $key="1a2b3c4d5e6f7g8h9i0j...."
+    $key="1a2b3c4d5e6f7g8h9i0j...."    
+    $endpoint="https..."
     ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
