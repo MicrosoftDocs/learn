@@ -68,4 +68,4 @@ modules:
 - learn.azure.child-extension-bicep-templates
 - learn.arm-template-whatif
 trophy:
-  uid: learn.bicep-collaborate.trophy
+  uid: learn.bicep-walk.trophy

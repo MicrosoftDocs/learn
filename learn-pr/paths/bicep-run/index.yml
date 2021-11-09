@@ -68,4 +68,4 @@ modules:
 - learn.azure.extend-resource-manager-template-deployment-scripts
 - learn.azure.migrate-azure-resources-bicep
 trophy:
-  uid: learn.bicep-collaborate.trophy
+  uid: learn.bicep-run.trophy
