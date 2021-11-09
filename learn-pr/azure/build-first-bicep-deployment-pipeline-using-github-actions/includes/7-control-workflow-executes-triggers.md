@@ -111,3 +111,15 @@ When you create a branch trigger *and* a scheduled trigger in the same workflow,
 ## Webhook triggers
 
 GitHub also provides webhook events, which run automatically when certain events happen in your repository. These events include someone creating a branch, updates to your GitHub issues, or changes to pull requests. Generally, these events don't require your Bicep deployment workflow to run, but you might run other automation instead.
+
+## Concurrency control
+
+By default, GitHub Actions allows multiple instances of your workflow to run simultaneously. This can happen when you make multiple commits to a branch within a short time, or if a previous run hasn't finished when your schedule next triggers.
+
+In some situations, having multiple concurrent runs of your workflow isn't a problem. But when you work with deployment workflows, it can be challenging to ensure that your workflow runs aren't overwriting your Azure resources or configuration in ways that you don't expect.
+
+To prevent your workflow from running multiple times, you can apply *concurrency control*. Use the `concurrency` keyword, and then specify a string that is consistent across all of the runs for your workflow, which is usually a hard-coded string, like in this example:
+
+```yaml
+concurrency: MyWorkflow
+```
