@@ -51,6 +51,8 @@ Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you
 
 [!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
+<!-- TODO need to mention here how you can use environment-scoped secrets but that we don't -->
+
 ### Use variables in your workflow
 
 The way that you access a variable's value in your workflow depends on the type of variable.

@@ -112,11 +112,21 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    git push
    ```
 
+1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+
+   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+
+   On macOS, select **Authorize**.
+
+1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+
 ## View the workflow run
 
 1. In your browser, go to **Actions**.
 
-1. Select the **toy-company-environments** workflow.
+   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+
+1. Select the **deploy-toy-website-environments** workflow.
 
 1. Select the most recent run of your workflow.
 
@@ -136,7 +146,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::image type="content" source="../media/5-approve.png" alt-text="Screenshot of the GitHub interface that shows the workflow approval page and the Approve and deploy button.":::
 
-   Wait for the workflow to finish running.
+   Wait for the workflow to finish running. The workflow completes successfully.
 
 1. Select **Code**.
 

@@ -85,15 +85,15 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 ## Review the deployment results
 
-1. In your browser, go to **Actions**.
+1. In your browser, go to your workflow runs.
 
-1. Select **toy-company-environments**.
+1. Select the most recent run.
 
 1. Select the most recent run of your workflow.
 
    Wait for the workflow to pause before the **deploy-production / deploy** job. It might take a few minutes for the workflow to reach this point.
 
-1. Approve the deployment to the production environment by selecting **Review deployments**, then selecting **Production** and selecting **Approve amd deploy**.
+1. Approve the deployment to the production environment by selecting **Review deployments**, then selecting **Production** and selecting **Approve and deploy**.
 
    Wait for the workflow to finish running.
 
@@ -115,7 +115,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
    :::image type="content" source="../media/7-app-service-show-values.png" alt-text="Screenshot of the Azure portal that shows the App Service app settings and the button for showing values.":::
 
-1. Notice that the production site's values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values that you configured in the production variable group.
+1. Notice that the values for the **ReviewApiKey** and **ReviewApiUrl** settings are set to the values that you configured for the production environment.
 
    :::image type="content" source="../media/7-app-service-settings.png" alt-text="Screenshot of the Azure portal that shows the App Service app settings and the configuration settings.":::
 
