@@ -86,6 +86,14 @@ When you use custom linter configuration, Bicep writes log data that GitHub Acti
    git push
    ```
 
+1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+
+   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+
+   On macOS, select **Authorize**.
+
+1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+
    Immediately after you push, GitHub Actions starts a new workflow run.
 
 ## View the workflow run

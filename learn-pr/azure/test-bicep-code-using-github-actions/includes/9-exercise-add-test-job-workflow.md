@@ -34,7 +34,7 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **deploy** job, add an `id` to the `Deploy website` step so that you can refer to the step. Also, add a job output that copies the `appServiceAppHostName` output from the deployment step:
 
-   :::code language="yaml" source="code/9-workflow.yml" range="57-77" highlight="5-6, 14" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="56-76" highlight="5-6, 14" :::
 
 1. Save the file.
 
@@ -44,7 +44,7 @@ Now, you can add a smoke test job that runs your tests.
 
 1. At the bottom of the file, add the following definition for the **smoke-test** job:
 
-   :::code language="yaml" source="code/9-workflow.yml" range="79-92" :::
+   :::code language="yaml" source="code/9-workflow.yml" range="78-91" :::
 
    This code defines the job. The job contains a step to check out the code, and a step to run tests by using Pester.
    
@@ -59,7 +59,7 @@ Now, you can add a smoke test job that runs your tests.
 
 1. Verify that your *workflow.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-workflow.yml" highlight="61-62, 70, 79-92" :::
+   :::code language="yaml" source="code/9-workflow.yml" highlight="60-61, 69, 78-91" :::
 
    If it doesn't, update it to match this example, and then save it.
 
