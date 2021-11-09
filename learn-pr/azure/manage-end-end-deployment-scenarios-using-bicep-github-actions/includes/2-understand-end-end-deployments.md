@@ -42,7 +42,7 @@ Resource Manager deployment scripts are defined within your Bicep file. They run
 
 Deployment scripts are good when you need to run a simple script within your deployment process. However, they don't easily provide you with access to other elements from your workflow.
 
-You can also run your own logic from within a deployment workflow. GitHub Actions provides a rich ecosystem of *actions* for common things you need to do. If you can't find an action that meets your needs, you can use a *script* to run your own Bash or PowerShell code. Workflow actions and scripts run from your workflow's runner. You often need to authenticate the task or script to the data plane of the service you're using, and the way that you do this depends on the service.
+You can also run your own logic from within a deployment workflow. GitHub Actions provides a rich ecosystem of *actions* for common things you need to do. If you can't find an action that meets your needs, you can use a *script* to run your own Bash or PowerShell code. Workflow actions and scripts run from your workflow's runner. You often need to authenticate the action or script to the data plane of the service you're using, and the way that you do this depends on the service.
 
 Workflow actions and scripts give you flexibility and control. They also enable you to access *workflow artifacts*, which you'll learn about soon. In this module, we focus on workflow actions. We link to more information about Resource Manager deployment scripts on the Summary page at the end of the module.
 

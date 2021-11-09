@@ -25,7 +25,7 @@ jobs:
         zip -r publish.zip .
       working-directory: ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/publish
 
-    - name: Publish website as workflow artifact
+    - name: Upload website as workflow artifact
       uses: actions/upload-artifact@v2
       with:
         name: website

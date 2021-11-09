@@ -26,9 +26,9 @@ One of the characteristics of deployment workflows and infrastructure as code is
 
 Idempotence is especially important when you interact with data services, because they maintain state. Imagine you're inserting a sample user into a database table from your workflow. If you're not careful, every time you run your workflow a new sample user will be created. This likely isn't what you want.
 
-When you apply schemas to an Azure SQL database, you can use a data package, also called a DACPAC file, to deploy your schema. Your workflow builds a DACPAC file from source code and creates a workflow artifact, just like with an application. Then, the deployment stage in your workflow publishes the DACPAC file to the database:
+When you apply schemas to an Azure SQL database, you can use a data package, also called a DACPAC file, to deploy your schema. Your workflow builds a DACPAC file from source code and creates a workflow artifact, just like with an application. Then, the deployment job in your workflow publishes the DACPAC file to the database:
 
-:::image type="content" source="../media/6-database-workflow-artifact.png" alt-text="Diagram showing a workflow publishing and then referring to an artifact named 'database'." border="false":::
+:::image type="content" source="../media/6-database-workflow-artifact.png" alt-text="Diagram showing a workflow uploading and then referring to an artifact named 'database'." border="false":::
 
 When a DACPAC file is deployed, it behaves in an idempotent way by comparing the target state of your database to the state defined in the package. In many situations, this means you don't need to write scripts that follow the principle of idempotence, because the tooling handles it for you. Some of the tooling for Azure Cosmos DB and Azure Storage also behaves correctly.
 
@@ -51,6 +51,6 @@ Some of the actions that help you to perform data plane operations can work arou
 
 :::image type="content" source="../media/6-firewall.png" alt-text="Diagram illustrating the firewall update process." border="false":::
 
-When you use the `azure/sql-action` action to work with an Azure SQL logical server or database, it uses your service principal:::image type="icon" source="../media/callout-01.png"::: to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the runner to access the server from its IP address:::image type="icon" source="../media/callout-02.png":::. Then, it can successfully submit the DACPAC file or script for execution:::image type="icon" source="../media/callout-03.png":::. The task then automatically removes the firewall rule when it's done.
+When you use the `azure/sql-action` action to work with an Azure SQL logical server or database, it uses your service principal:::image type="icon" source="../media/callout-01.png"::: to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the runner to access the server from its IP address:::image type="icon" source="../media/callout-02.png":::. Then, it can successfully submit the DACPAC file or script for execution:::image type="icon" source="../media/callout-03.png":::. The action then automatically removes the firewall rule when it's done.
 
 In other situations, it's not possible to create exceptions like this. In these circumstances, consider using a *self-hosted runners*, which runs on a virtual machine or other compute resource that you control. You can then configure this runner however you need. It can use a known IP address, or it can be connected to your own virtual network. We don't discuss self-hosted runners in this module, but we provide links to more information on the Summary page at the end of the module.

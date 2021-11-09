@@ -33,7 +33,7 @@ You should be familiar with using:
 To work through the exercises in the module, you'll need:
   
 - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
-- An Azure DevOps organization and account.
+- A GitHub account.
 
 To work through the exercises, you'll also need the following installed locally:
 

@@ -28,32 +28,32 @@ quiz:
       explanation: Incorrect. Deployment scripts can accept arguments as well as environment variables.
 
   - content: |
-      You've created a multistage pipeline that deploys an Azure Cosmos DB account, database, and container.
-      In the build stage of your pipeline, you compile a small application that initializes the database with some reference data.
-      You need to add the database initialization process to your pipeline.
+      You've created a workflow that deploys an Azure Cosmos DB account, database, and container.
+      In your workflow's build job, you compile a small application that initializes the database with some reference data.
+      You need to add the database initialization process to your workflow.
       Which of the following steps should you take?
     choices:
     - content: Use a separate tool like Chef or Puppet.
       isCorrect: false
-      explanation: Incorrect. Tools like Chef and Puppet aren't required, because your pipeline can run the application directly.
-    - content: Create a pipeline artifact for the compiled initialization application.
+      explanation: Incorrect. Tools like Chef and Puppet aren't required, because your workflow can run the application directly.
+    - content: Create a workflow artifact for the compiled initialization application.
       isCorrect: true
-      explanation: Correct. You can publish a pipeline artifact for the application, and then run the application as part of the deployment stage in your pipeline.
-    - content: Ensure that AzCopy is installed on your pipeline agent.
+      explanation: Correct. You can upload a workflow artifact for the application, and then run the application as part of a deployment job in your workflow.
+    - content: Ensure that AzCopy is installed on your runner.
       isCorrect: false
       explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure Cosmos DB data.
 
   - content: |
       Your Bicep file includes a module that deploys an App Service app.
-      You need to access the app's host name from your pipeline but you can't currently do so.
+      You need to access the app's host name from your workflow but you can't currently do so.
       Which of the following reasons is most likely?
     choices:
-    - content: You need to use a self-hosted agent.
+    - content: You need to use a self-hosted runner.
       isCorrect: false
-      explanation: Incorrect. You don't need to use a self-hosted agent to access information from a Bicep file.
+      explanation: Incorrect. You don't need to use a self-hosted runner to access information from a Bicep file.
     - content: You need to use a deployment script.
       isCorrect: false
       explanation: Incorrect. You don't need to use a deployment script to access information from a Bicep file.
     - content: You haven't added an output to your Bicep template for the host name.
       isCorrect: true
-      explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the pipeline.
+      explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the workflow.

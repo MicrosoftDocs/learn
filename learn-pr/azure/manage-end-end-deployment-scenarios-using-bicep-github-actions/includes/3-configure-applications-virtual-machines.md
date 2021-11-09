@@ -18,19 +18,19 @@ The artifacts that are generated in your workflow aren't stored in your Git repo
 *Workflow artifacts* provide a way to store files in GitHub Actions, and they're associated with the particular run of your workflow. You use the `actions/upload-artifact` workflow action to instruct GitHub Actions to upload a file or folder from the runner's file system as a workflow artifact:
 
 ```yaml
-- name: Publish folder as a workflow artifact
+- name: Upload folder as a workflow artifact
   uses: actions/upload-artifact@v2
   with:
     name: my-artifact-name
     path: ./my-folder
 ```
-<!-- TODO verify the above snippet works and publishes a folder -->
+<!-- TODO verify the above snippet works and uploads a folder -->
 
-The `path` property is the location that contains your compiled code or output files on the job runner's file system. The contents at this location will be published to the artifact. You can specify a single file, multiple files, or a folder.
+The `path` property is the location that contains your compiled code or output files on the job runner's file system. The contents at this location will be uploaded to the artifact. You can specify a single file, multiple files, or a folder.
 
 Each artifact has a name, which you specify by using the `name` property. You use the artifact name to refer to it later in the workflow. Subsequent workflow jobs can download the artifact so that they can work with it to, for example, deploy the website to the server that hosts it:
 
-:::image type="content" source="../media/3-website-workflow-artifact.png" alt-text="Diagram showing a workflow publishing and then referring to an artifact named 'Website'." border="false":::
+:::image type="content" source="../media/3-website-workflow-artifact.png" alt-text="Diagram showing a workflow uploading and then referring to an artifact named 'Website'." border="false":::
 
 Use the `actions/download-artifact` action to download a workflow artifact:
 
@@ -43,13 +43,11 @@ Use the `actions/download-artifact` action to download a workflow artifact:
 
 ## Deploy apps
 
-The build process for an app generates and publishes a deployable artifact. Later jobs in the workflow then deploy the artifact. The way that you deploy an app depends on the service you use to host it.
+The build process for an app generates and uploads a deployable artifact. Later jobs in the workflow then deploy the artifact. The way that you deploy an app depends on the service you use to host it.
 
 ### Deploy to Azure App Service
 
 Your toy company uses Azure App Service to host its website. You can create and configure an App Service app by using Bicep, but when it comes time to deploy the app itself, you have several options to get the compiled app onto the hosting infrastructure. These options are managed as part of the App Service data plane.
-
-The most common approach is to use the `AzureRmWebAppDeployment` GitHub Actions action:
 
 The most common approach is to use the `azure/webapps-deploy` action:
 
@@ -59,11 +57,11 @@ The most common approach is to use the `azure/webapps-deploy` action:
     app-name: my-app-service
     package: my-artifact-name/website.zip
 ```
-<!-- TODO verify the above snippet works and publishes the app -->
+<!-- TODO verify the above snippet works and upload the app -->
 
 You need to provide several pieces of information to deploy your app to App Service. This information includes the resource group and resource name of the App Service app, which you specify by using the `ResourceGroupName` and `WebAppName` inputs. As you learned in the preceding unit, you should add an output to your Bicep file and use a workflow variable to propagate the app name through your workflow. You also need to specify a .zip file with the app to deploy by using the `Package` input. This is usually the path to a workflow artifact.
 
-App Service has its own data plane authentication system that it uses for deployments. The `AzureRmWebAppDeployment` task handles the authentication process automatically for you:
+App Service has its own data plane authentication system that it uses for deployments. The `azure/webapps-deploy` action handles the authentication process automatically for you:
 
 :::image type="content" source="../media/3-credential-exchange.png" alt-text="Diagram illustrating the credential exchange process." border="false":::
 

@@ -5,7 +5,7 @@ In the process, you'll:
 > [!div class="checklist"]
 > * Add a blob container to the Azure storage account.
 > * Add an Azure SQL logical server and database.
-> * Update the build stage to build the database project into a DACPAC file.
+> * Update the build job to build the database project into a DACPAC file.
 > * Add new variables and secrets for the Azure SQL logical server and database.
 > * Update your workflow to use the new variables and secrets.
 > * Add new workflow steps to deploy your DACPAC file.
@@ -160,7 +160,7 @@ You also need to add the new parameters to the *deploy* step.
 
 ## Add database and data seed jobs
 
-In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the pipeline previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
+In this section, you define the steps that are required to deploy the database components of your website. First, you add a step to deploy the DACPAC file that the workflow previously built. Then, you add sample data to the database and storage account, but only for non-production environments.
 
 1. Below the *deploy-website* job, add a new job to deploy the DACPAC file:
 
@@ -178,7 +178,7 @@ In this section, you define the steps that are required to deploy the database c
 
    :::code language="yaml" source="code/7-deploy.yml" range="149-168" :::
 
-   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. This pipeline is a good example of using a variety of operating systems to achieve your requirements.
+   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. This workflow is a good example of using a variety of operating systems to achieve your requirements.
 
 ## Update the dependencies for the smoke test job
 
@@ -222,11 +222,11 @@ In this section, you define the steps that are required to deploy the database c
 
    Wait until all the jobs for the test environment finish successfully. Notice that the smoke test now also succeeds.
 
-   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run's Smoke Test stage for the test environment. The status shows that the job has succeeded.":::
+   :::image type="content" source="../media/7-smoke-test-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run's Smoke Test job for the test environment. The status shows that the job has succeeded.":::
 
 1. Wait until the workflow completes successfully, including the production deployment.
 
-   :::image type="content" source="../media/7-pipeline-run-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run with all stages showing success.":::
+   :::image type="content" source="../media/7-workflow-run-success.png" alt-text="Screenshot of GitHub Actions showing the workflow run with all jobs showing success.":::
 
 1. Select the **deploy-test / seed-storage-account** job to open the workflow log.
 
