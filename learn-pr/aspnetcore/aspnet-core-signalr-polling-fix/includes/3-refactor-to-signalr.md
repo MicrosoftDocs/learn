@@ -55,7 +55,7 @@ You'll notice that several directives have been removed:
 - The `@using System.Threading` directive is no longer needed in the markup.
 - The `@inject OrdersClient OrdersClient` directive is now part of the code-behind.
 - The `@implements IDisopsable` has been replaced in the code-behind with an implementation of <xref:System.IAsyncDisposable>.
-- The `@code { ... }` directive have been removed, as all logic is now in the code-behind.
+- The `@code { ... }` directive has been removed, as all logic is now in the code-behind.
 
 Additionally, the Blazor component is now more pure in that it's primarily representing binding and templating. The logic has been moved to a code-behind file instead.
 
