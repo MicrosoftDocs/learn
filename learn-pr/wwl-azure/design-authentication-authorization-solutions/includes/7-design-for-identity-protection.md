@@ -13,14 +13,14 @@ Here’s an example where a user attempts to sign in to Azure Active Directory. 
 :::image type="content" source="../media/user-risk-level-evaluation.png" alt-text="Users are evaluated to determine their user risk level." lightbox="../media/user-risk-level-evaluation.png":::
 
 
-### Risk policies
+## Risk policies
 
 Risk policy detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory. There are two risk policies that are evaluated: user risk and sign in risk.
 
 :::image type="content" source="../media/risk-detections.png" alt-text="Risky users, risky sign-ins, and risk detections.":::
 
 
-### User risk policies
+## User risk policies
 
 A [user risk](/azure/active-directory/identity-protection/concept-identity-protection-risks) represents the probability that a given identity or account is compromised. For example, the user's valid credentials have been leaked. These risks are calculated offline using Microsoft's internal and external threat intelligence sources. Here are some user risks that can be identified.
 

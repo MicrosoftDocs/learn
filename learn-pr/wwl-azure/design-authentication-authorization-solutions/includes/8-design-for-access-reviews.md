@@ -9,7 +9,7 @@ The Tailwind Traders CTA asks,
 
 - As users switch teams or leave the company, how do we make sure that their old access is removed?
 
-### Determine the purpose of the access review
+## Determine the purpose of the access review
 
 You’re considering using [Azure Active Directory access reviews](/azure/active-directory/governance/access-reviews-overview) to address the CTO’s concerns. An access review is a planned review of the access needs, rights, and history of user access. Access reviews mitigate risk by protecting, monitoring, and auditing access to critical assets. 
 
@@ -23,7 +23,7 @@ Access reviews help ensure that the right people have the right access to the ri
 
 - Azure AD roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
 
-### Determine who will conduct the reviews
+## Determine who will conduct the reviews
 
 Access reviews are only as good as the person doing the reviewing. Selecting good reviewers is critical to your success. The creator of the access review decides who will conduct the review. This setting can't be changed once the review is started. Reviewers are represented by three personas:
 
@@ -35,7 +35,7 @@ Access reviews are only as good as the person doing the reviewing. Selecting goo
 
 When creating an Access Review, administrators can choose one or more reviewers. All reviewers can start and carry out a review, choosing to grant users continued access to a resource or removing them.
 
-### Create an access review plan
+## Create an access review plan
 
 Before implementing your access reviews, you should plan the types of reviews relevant to your organization. To do so, you’ll need to make business decisions about what you want to review and the actions to take based on those reviews.
 

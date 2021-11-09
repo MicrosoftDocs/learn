@@ -13,7 +13,7 @@ Here are some example conditional access situations.
 
 - Block access from untrusted sources, such as access from unknown or unexpected locations.
 
-### Things to consider when using conditional access
+## Things to consider when using conditional access
 
 - **Use for enabling multifactor authentication for more granular control**. Conditional Access provides a more granular multifactor authentication experience for users. For example, a user might not be challenged for second authentication factor if they're at a known location. However, they might be challenged for a second authentication factor if they're at an unexpected location.
 
