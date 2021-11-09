@@ -25,7 +25,7 @@ products:
   - vs-code
 modules:
 - learn.aspnetcore.build-web-api-minimal-api
-- learn.aspnetcore.build-web-api-minimal-spa
 - learn.aspnetcore.build-web-api-minimal-database
+- learn.aspnetcore.build-web-api-minimal-spa
 trophy:
   uid: learn.aspnet-core-minimal-api.trophy
