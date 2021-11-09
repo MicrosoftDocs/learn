@@ -340,6 +340,6 @@ You've created two resource group and the service principals that can deploy to 
 
 1. In the **Search for people or teams** text box, type your own GitHub username and select yourself.
 
-   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the GitHub interface that shows the page for adding an required reviewer, with completed details and the Save protection rules button.":::
+   :::image type="content" source="../media/4-add-check-approval-details.png" alt-text="Screenshot of the GitHub interface that shows the page for adding a required reviewer, with completed details and the Save protection rules button.":::
 
 1. Select **Save protection rules**.

@@ -36,7 +36,7 @@ When you need to repeat steps in your workflow, you might try to copy and paste 
 
 ## Reusable workflows
 
-GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflow. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being analogous to Bicep modules.
+GitHub Actions enables you to create reusable sections of workflow definitions by creating a separate workflow YAML file that defines steps or jobs. You can create YAML files to reuse parts of a workflow multiple times within a single workflow, or even in multiple workflows. The workflow that you reuse is a *called workflow*, and the workflow that includes it is a *caller workflow*. Conceptually, you can think of them as being analogous to Bicep modules.
 
 When you create a reusable workflow, you use the `workflow_call` trigger to tell GitHub Actions that the workflow can be called by other workflows. Here's a basic example of a reusable workflow, saved in a file named *script.yml*:
 
