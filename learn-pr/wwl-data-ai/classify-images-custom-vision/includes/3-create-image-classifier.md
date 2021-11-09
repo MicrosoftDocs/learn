@@ -127,6 +127,12 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
+    After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
+
+    ```PowerShell
+    $predictionUrl="https..."
+    $predictionKey ="1a2b3c4d5e6f7g8h9i0j...."
+    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
