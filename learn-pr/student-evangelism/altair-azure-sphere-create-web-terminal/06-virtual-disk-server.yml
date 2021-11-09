@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.virtual-disk-server
-title: Run a Python virtual disk server
+title: Run the Python virtual disk server
 metadata:
-  title: Run a Python virtual disk server
-  description: Learn how to run the Altair emulator Python virtual disk server.
+  title: Run the Python virtual disk server
+  description: In this unit, you learn how to run the Altair emulator Python virtual disk server.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

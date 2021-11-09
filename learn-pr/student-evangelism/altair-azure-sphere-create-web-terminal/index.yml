@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal
 metadata:
   title: Create and customize Altair 8800 cloud services
-  description: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
+  description: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring
@@ -10,16 +10,16 @@ metadata:
   ms.prod: learning-azure-iot-central
   ms.custom: nextgen
 title: Create and customize Altair 8800 cloud services
-summary: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
+summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
 abstract:  |
   In this module, you will:
   - Customize IoT Central.
-  - Create an Altair Web Terminal as an Azure static web app.
+  - Create an Altair web terminal as an Azure static web app.
   - Install and run the Altair Python virtual disk server.
 prerequisites: |
-  - A computer with an x86-64-based processor running one of the following operating systems:
-    - Windows 10 Anniversary Update or later
-    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - A computer with an x86-64-based processor that's running one of the following operating systems:
+    - Windows 10 Anniversary Update or later.
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
   - An Azure Sphere developer board that has one of the following kits:
     - Avnet Azure Sphere Starter Kit Rev 1 or 2
     - Seeed Studio Azure Sphere MT3620 Development Kit

@@ -1,31 +1,28 @@
 In this exercise, you'll install and run the Altair emulator virtual disk server.
 
-## Start the Virtual Disk Server
+Before you begin, ensure that Python version 3 is installed on your computer. You can install Python 3 from [Python.org](https://www.python.org?azure-portal=true).
 
-From a terminal window:
-
-1. Ensure Python version 3 is installed on your computer. You can install Python 3 from [Python.org](https://www.python.org?azure-portal=true)
-1. Install the paho-mqtt Python library.
+1. From a terminal window, install the paho-mqtt Python library by running the following command:
 
     ```bash
     pip3 install paho-mqtt
     ```
 
-1. Navigate to **AltairPY_virtual_disk_server** folder.
+1. Go to the *AltairPY_virtual_disk_server* folder.
 
-1. Start the Python Virtual Disk Server
+1. Start the Python virtual disk server by running either of the following commands:
 
-    On Windows, start as follows:
+    * For Windows, run:
 
-    ```bash
-    python PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>
-    ```
+      ```bash
+      python PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM AZURE IOT CENTRAL>
+      ```
 
-    On Linux, start as follows:
+    * For Linux, run:
 
-    ```bash
-    python3 PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>
-    ```
+      ```bash
+      python3 PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM AZURE IOT CENTRAL>
+      ```
 
 1. Leave the PyDiskSvr Python application running in the background.
 
