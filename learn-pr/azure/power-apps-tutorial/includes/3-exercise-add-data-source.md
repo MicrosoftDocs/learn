@@ -105,7 +105,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
     >If you wish to include images of your own, you can add the image links of public images available on the internet under the **ImageLink** column. You can get the image links by right-clicking and selecting the **Copy image address** option.
 
     >[!Note]
-    > You won't be needing the height, depth, and width values for the *Carpet* category list. This product category will take up the area value measured during the **Measure in MR** session and give out the price of the carpet following the area calculated.
+    > You won't be needing the height, depth, and width values for the *Carpet* category list. This product category will take up the area value measured during the **Measure in MR** session and give out the price of the carpet following the area calculated. However, we have added the **Price/cm2** column to assist the process of calculation.
 
 ## Create a connection
 
