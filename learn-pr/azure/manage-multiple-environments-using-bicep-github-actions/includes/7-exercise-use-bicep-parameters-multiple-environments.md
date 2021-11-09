@@ -40,14 +40,14 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="21-53" highlight="19-20, 31-33" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="21-52" highlight="19-20, 30-32" :::
 
    > [!IMPORTANT]
    > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="55-78" highlight="23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="54-77" highlight="23-24" :::
 
 1. Save your changes to the file.
 

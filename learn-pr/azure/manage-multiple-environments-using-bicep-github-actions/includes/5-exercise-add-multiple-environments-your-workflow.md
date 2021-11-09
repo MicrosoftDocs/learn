@@ -49,20 +49,20 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the parameters, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="16-44" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="16-43" :::
 
-   Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment.
+   Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In previous the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="46-67" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="45-66" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="69-82" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="68-81" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 
@@ -74,11 +74,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Open the *workflow.yml* file in the *.github/workflows* folder.
 
+1. Remove the contents of the `env:` section, including the two environment variables. You'll replace these with environment-specific variables soon.
+
 1. Remove the contents of the `lint:` job definition and replace it with the following code to use the *lint.yml* file you created earlier:
 
    :::code language="yaml" source="code/5-workflow.yml" range="10-14" highlight="5" :::
 
-   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-environments* for your repository, ensure you replace the repository name too.
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct workflow definition file. Also, if you didn't use the name *toy-website-environments* for your repository, ensure you replace the repository name too.
 
 1. Delete everything in the file below the lint job that you just updated.
 
@@ -96,7 +98,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 
-1. Verify that your file looks like the following:
+1. Verify that your *workflow.yml* file looks like the following:
 
    :::code language="yaml" source="code/5-workflow.yml" :::
 
