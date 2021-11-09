@@ -9554,6 +9554,31 @@
       "source_path": "learn-pr/wwl-azure/design-application-architecture/9-design-caching-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/6-design-caching-solution",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/6-design-for-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/7-design-for-azure-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/7-design-for-resource-tags.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/6-design-for-resource-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/8-design-for-azure-blueprints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/9-design-for-azure-blueprints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/11-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
