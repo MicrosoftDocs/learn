@@ -1,5 +1,5 @@
 
-Understand the Azure Database Administrator responsibilities, and how they relate to other Azure data platform roles, in order to be able to perform the tasks and duties expected for this function.
+Understand the Azure Database Administrator responsibilities, and how they relate to other Azure data platform roles is important to perform the tasks and duties expected for this function.
 
 In general, cloud services can be broken down into two sets of services: Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). 
 
