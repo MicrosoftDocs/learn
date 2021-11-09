@@ -1,9 +1,9 @@
 In this module, you learned that:
 
 * Azure Sphere is secure by design and by default.
-* IoT Central network endpoints must be declared in the "AllowedConnections" section of the app_manifest.json file.
+* The Azure IoT Central network endpoints must be declared in the "AllowedConnections" section of the app_manifest.json file.
 * The MQTT broker test.mosquitto.org network endpoint must be declared in the "AllowedConnections" section of the app_manifest.json file.
-* Communications with IoT Central and the MQTT broker are secured with certificates.
+* Communications with Azure IoT Central and the MQTT broker are secured with certificates.
 
 # Resources
 
