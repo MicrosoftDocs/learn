@@ -65,34 +65,36 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Save your changes to the file.
 
-## Update deployment job
+## Update deployment job to propagate the output
+
+TODO explain
 
 1. Open the *deploy.yml* file in the *.github/workflows* folder.
 
-1. In the definition of the *deploy* job (near line 59) configure the job to use the Windows hosted runners:
+1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="55-61" highlight="4" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="55-62" highlight="6" :::
 
-   Some of the workflow steps that you'll add later to work with your database require the Windows operating system to run. You can use different runners for different jobs in your workflow, so the other jobs continue to use the Ubuntu Linux workflow runners.
+## Add a job to deploy the website
 
-1. In the *deploy* job's `steps:` list, below the `actions/checkout` step and before the `azure/login` step, add a new step to download the workflow artifacts:
+1. Below the *deploy* job definition, and above the *smoke-test* job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="55-67" highlight="9" :::
-
-1. At the end of the *deploy* job contents, add a new step to deploy the app to Azure App Service:
-
-   :::code language="yaml" source="code/5-deploy.yml" range="55-84" highlight="26-30" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="81-95" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new deployment step is indented at the same level as the `DeployBicepFile` step. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
 
-   Notice that you didn't need to define the `appServiceAppName` variable in the `outputs` section. The `appServiceAppName` is used in the same job as the `deploy` step, so it can read the outputs from that step without any additional configuration.
+   Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensure the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
+
+   Also, notice that this job includes steps to download the workflow artifacts and to sign in to Azure. The job runs on a separate runner to the *deploy* job, so it needs to be self-contained.
+
+1. Save your changes to the file.
 
 ## Verify the deploy.yml file contents, and commit your changes
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="58, 63, 80-84" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="60, 81-95" :::
 
 1. Save your changes to the file.
 

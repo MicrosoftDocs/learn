@@ -55,12 +55,12 @@ jobs:
   deploy:
     needs: validate
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     outputs:
+      appServiceAppName: ${{ steps.deploy.outputs.appServiceAppName }}
       appServiceAppHostName: ${{ steps.deploy.outputs.appServiceAppHostName }}
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
@@ -77,10 +77,21 @@ jobs:
            environmentType=${{ inputs.environmentType }}
            reviewApiUrl=${{ inputs.reviewApiUrl }}
            reviewApiKey=${{ secrets.reviewApiKey }}
+
+  deploy-website:
+    needs: deploy
+    environment: ${{ inputs.environmentType }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v2
+    - uses: azure/login@v1
+      name: Sign in to Azure
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/webapps-deploy@v2
       name: Deploy website
       with:
-        app-name: ${{ steps.deploy.outputs.appServiceAppName }}
+        app-name: ${{ needs.deploy.outputs.appServiceAppName }}
         package: website/publish.zip
 
   smoke-test:
