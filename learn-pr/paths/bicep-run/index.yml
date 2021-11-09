@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-collaborate
+uid: learn.bicep-run
 metadata:
-  title: Build Azure infrastructure in a team environment by using Bicep
+  title: Bicep - run
   description: Learn how to use Bicep and Azure features to improve your collaboration and quality of your infrastructure deployments.
   brand: azure
   ms.date: 10/26/2021
@@ -9,30 +9,28 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build Azure infrastructure in a team environment by using Bicep
+title: Bicep - run
 summary: |
-  Bicep has some great features to enable you to work collaboratively and improve the quality of your Azure infrastructure deployments.
+  TODO
 
-  Take this learning path to learn how to:
-
-  * Use Bicep's language features like comments, decorators, and modules to make your templates clear, understandable, and maintainable.
-  * Ensure consistency and compliance by creating libraries of templates.
-  * Use the what-if command to check the effects of your Bicep files before you deploy them.
-  * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
-  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
-
-  To learn about Bicep, we recommend you take these two learning paths:
+  To learn about Bicep, we recommend you take these three learning paths:
 
   :::row:::
   :::column:::
     <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
 
-    [Part 1: Deploy and manage resources in Azure by using Bicep](xref:learn.bicep-deploy-manage)
+    [Part 1: Bicep - crawl](xref:learn.bicep-crawl)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
 
-    Part 2: Build Azure infrastructure in a team environment by using Bicep
+    [Part 2: Bicep - walk](xref:learn.bicep-walk)
+  :::column-end:::
+
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+
+    [Part 3: Bicep - run](xref:learn.bicep-run)
   :::column-end:::
   :::row-end:::
 
@@ -63,10 +61,11 @@ products:
 - azure
 - azure-resource-manager
 modules:
+- learn.azure.deploy-resources-different-scopes
 - learn.azure.manage-changes-bicep-code-git
 - learn.azure.structure-bicep-code-collaboration
 - learn.azure.arm-template-specs
-- learn.arm-template-whatif
+- learn.azure.extend-resource-manager-template-deployment-scripts
 - learn.azure.migrate-azure-resources-bicep
 trophy:
   uid: learn.bicep-collaborate.trophy

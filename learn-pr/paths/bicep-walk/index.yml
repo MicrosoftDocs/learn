@@ -1,0 +1,71 @@
+### YamlMime:LearningPath
+uid: learn.bicep-walk
+metadata:
+  title: Bicep - walk
+  description: Learn how to use Bicep and Azure features to improve your collaboration and quality of your infrastructure deployments.
+  brand: azure
+  ms.date: 10/26/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Bicep - walk
+summary: |
+  TODO
+
+  * Deploy advanced Azure resource types, including child and extension resources.
+  * Deploy resources at the subscription, management group, and tenant level.
+  * Build deployment scripts that define custom steps in your Bicep templates.
+
+  To learn about Bicep, we recommend you take these three learning paths:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
+
+    [Part 1: Bicep - crawl](xref:learn.bicep-crawl)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+
+    [Part 2: Bicep - walk](xref:learn.bicep-walk)
+  :::column-end:::
+
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+
+    [Part 3: Bicep - run](xref:learn.bicep-run)
+  :::column-end:::
+  :::row-end:::
+
+  After that, you might be interested in adding your Bicep code to a deployment pipeline. Take one of these two learning paths based on the tool you want to use:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>
+
+    [Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>
+
+    [Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
+  :::column-end:::
+  :::row-end:::
+prerequisites: |
+  This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
+iconUrl: /learn/achievements/bicep/bicep-collaborate.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.child-extension-bicep-templates
+- learn.arm-template-whatif
+trophy:
+  uid: learn.bicep-collaborate.trophy

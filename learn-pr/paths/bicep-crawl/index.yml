@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-deploy-manage
+uid: learn.bicep-crawl
 metadata:
-  title: Deploy and manage resources in Azure by using Bicep
+  title: Bicep - crawl
   description: Learn how Bicep enables you to manage both basic and complex infrastructure deployments on Azure.
   brand: azure
   ms.date: 10/26/2021
@@ -9,7 +9,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy and manage resources in Azure by using Bicep
+title: Bicep - crawl
 summary: |
   Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
 
@@ -22,9 +22,6 @@ summary: |
   * Understand Bicep's declarative syntax and the structure of a Bicep template.
   * Apply Bicep features such as parameters, conditions, and loops to control how your infrastructure is deployed.
   * Define modules that break down complex deployments into smaller and more reusable components.
-  * Deploy advanced Azure resource types, including child and extension resources.
-  * Deploy resources at the subscription, management group, and tenant level.
-  * Build deployment scripts that define custom steps in your Bicep templates.
 
   Each module in this learning path provides options for use with the Azure CLI and with Azure PowerShell. You'll use Visual Studio Code to write and validate your Bicep code.
 
@@ -34,12 +31,18 @@ summary: |
   :::column:::
     <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
 
-    Part 1: Deploy and manage resources in Azure by using Bicep
+    [Part 1: Bicep - crawl](xref:learn.bicep-crawl)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
 
-    [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
+    [Part 2: Bicep - walk](xref:learn.bicep-walk)
+  :::column-end:::
+
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+
+    [Part 3: Bicep - run](xref:learn.bicep-run)
   :::column-end:::
   :::row-end:::
 
@@ -74,8 +77,5 @@ modules:
 - learn.azure.build-reusable-bicep-templates-parameters
 - learn.azure.bicep-conditions-loops
 - learn.azure.create-composable-bicep-files-using-modules
-- learn.azure.child-extension-bicep-templates
-- learn.azure.deploy-resources-different-scopes
-- learn.azure.extend-resource-manager-template-deployment-scripts
 trophy:
   uid: learn.bicep-deploy-manage.trophy
