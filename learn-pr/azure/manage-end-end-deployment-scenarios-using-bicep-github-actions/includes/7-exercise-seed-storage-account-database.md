@@ -125,11 +125,11 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. In the *deploy-test* definition, define a value for the `sqlServerAdministratorLogin` input, and propagate the value for the `sqlServerAdministratorLoginPassword` secret:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="18-29" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="20-32" highlight="9, 13" :::
 
 1. Repeat the process in the *deploy-production* definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="31-42" highlight="8, 12" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="34-49" highlight="12, 16" :::
 
 1. Save your changes to the file.
 
@@ -143,14 +143,14 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 1. Update the *Run what-if* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="49-62" highlight="12-14" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="49-61" highlight="11-13" :::
 
    > [!IMPORTANT]
    > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
 
 1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="64-70, 75-94" highlight="26-27" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="63-69, 74-93" highlight="26-27" :::
 
 <!-- TODO deploy.yml outputs from deploy job -->
 
@@ -160,19 +160,19 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Below the *deploy-website* job, add a new job to deploy the DACPAC file:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="112-127" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="111-126" :::
 
    Notice that this job uses a Windows runner. Currently, the `azure/sql-action` job requires the Windows operating system to run.
 
 1. Below the job you just added, and above the *smoke-test* job, define a new job to seed the database with sample data.
 
-   :::code language="yaml" source="code/7-deploy.yml" range="129-147" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="128-146" :::
 
    Notice that the *Add test data to database* step has a condition applied to it. That is, it runs only for non-production environments. The condition is applied to the step, not to the whole job, so that later jobs can depend on this job regardless of the environment type.
 
 1. Below the job you just added, and above the *smoke-test* job, define another job to upload some sample toy images to the blob container by using the Azure CLI:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="149-168" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="148-166" :::
 
    Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. This workflow is a good example of using a variety of operating systems to achieve your requirements.
 
@@ -180,7 +180,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Update the *smoke-test* job's dependencies to ensure it runs after all of the deployment steps are completed:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="170-188" highlight="3-8" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="168-186" highlight="3-8" :::
 
 1. Save your changes to the file.
 
@@ -194,7 +194,7 @@ In this section, you define the steps that are required to deploy the database c
 
 1. Verify that your *deploy.yml* file looks like this:
 
-   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 23-24, 46-47, 60-62, 71-74, 93-94, 112-168, 172-177" :::
+   :::code language="yaml" source="code/7-deploy.yml" highlight="15-17, 23-24, 46-47, 59-61, 70-73, 92-93, 111-166, 170-175" :::
 
    If it doesn't, update it to match the file contents.
 
@@ -210,11 +210,9 @@ In this section, you define the steps that are required to deploy the database c
 
 ## Run the workflow
 
-1. In your browser, go to **Actions**.
+1. In your browser, go to your workflow runs.
 
-1. Select the **toy-company-end-to-end** workflow. <!-- TODO check name -->
-
-1. Select the most recent run of your workflow.
+1. Select the most recent run.
 
    Wait until all the jobs for the test environment finish successfully. Notice that the smoke test now also succeeds.
 

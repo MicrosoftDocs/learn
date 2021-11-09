@@ -31,15 +31,23 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Open the *workflow.yml* file.
 
-1. Below the *jobs:* line, add a new job named *build* that uses the reusable workflow you just defined:
+1. Below the *jobs:* line, before the *lint* job, add a new job named *build* that uses the reusable workflow you just defined:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="1-16" highlight="12-13" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="13-14" :::
 
    Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-end-to-end* for your repository, ensure you replace the repository name too.
 
 1. Update the *deploy-test* job to depend on the new *build* job: <!-- TODO should we make prod depned too, for consistency -->
 
-   :::code language="yaml" source="code/5-workflow.yml" range="18-27" highlight="3" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
+
+1. Update the *deploy-production* job to also depend on the *built* and *lint* jobs.
+
+   :::code language="yaml" source="code/5-workflow.yml" range="32-45" highlight="4-7" :::
+
+   Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
+
+   Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. Both are valid. <!-- TODO confirm there's no difference -->
 
 1. Save your changes to the file.
 
@@ -75,13 +83,13 @@ TODO explain
 
 1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="55-62" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="51-61" highlight="6" :::
 
 ## Add a job to deploy the website
 
 1. Below the *deploy* job definition, and above the *smoke-test* job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="81-95" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="80-94" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
@@ -96,7 +104,7 @@ TODO explain
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="60, 81-95" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="59, 80-94" :::
 
 1. Save your changes to the file.
 
@@ -108,19 +116,27 @@ TODO explain
    git push
    ```
 
+1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
+
+   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+
+   On macOS, select **Authorize**.
+
+1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+
 ## Run the workflow
 
 1. In your browser, go to **Actions**.
 
-1. Select the **toy-company-end-to-end** workflow. <!-- TODO check name -->
+   The first run of your workflow, labeled *Initial commit*, is shown as a failure. GitHub automatically ran the workflow when you created the repository. It failed because the secrets weren't ready at that time. You can ignore this failure.
+
+1. Select the **deploy-toy-website-end-to-end** workflow.
 
 1. Select the most recent run of your workflow.
 
 1. Wait until the *build* job finishes successfully.
 
    :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
-
-   <!-- TODO look at artifacts -->
 
 1. Wait for the *deploy-test / deploy* job to finish successfully.
 

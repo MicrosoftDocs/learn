@@ -7,14 +7,17 @@ on:
       - main
   workflow_dispatch:
 
-jobs:
+jobs: # TODO resync with 5-workflow.yml
 
+  # Build the application and database.
   build:
     uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/build.yml@main
 
+  # Lint the Bicep file.
   lint:
     uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/lint.yml@main
 
+  # Deploy to the test environment.
   deploy-test:
     uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
     needs: [build, lint]
@@ -28,9 +31,13 @@ jobs:
       reviewApiKey: ${{ secrets.REVIEW_API_KEY_TEST }}
       sqlServerAdministratorLoginPassword: ${{ secrets.SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST }}
 
+  # Deploy to the production environment.
   deploy-production:
     uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
-    needs: deploy-test
+    needs:
+    - lint
+    - build
+    - deploy-test
     with:
       environmentType: Production
       resourceGroupName: ToyWebsiteProduction
