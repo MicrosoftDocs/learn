@@ -26,7 +26,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Select **Add secret**.
 
-1. Repeat the process to add another secret named *REVIEW_API_KEY_PRODUCTIOn* as the secret name, and *productionsecretkey* as the value. Select **Add secret**.
+1. Repeat the process to add another secret named *REVIEW_API_KEY_PRODUCTION* as the secret name, and *productionsecretkey* as the value. Select **Add secret**.
 
 ## Update the deploy.yml file to use the new settings
 
