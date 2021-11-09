@@ -8,7 +8,7 @@ The uses of C++ are limitless.  Here's some example of where C++ is used:
 - **Created database engines**. C++ has been used in developing **database applications** like MYSQL.
 - **Game development**. A wide variety of **Animation** and **Games** require C++ for modeling, 3D animation, rendering, and simulations. The **Games Engines** used to make games are frequently developed in C++. 
 - **Medical engineering**. In recent times, we've also seen a huge rise in applications of C++ in Medical Engineering. Widely used in machines that have scanning such as MRI. C++ is used in various embedded systems.
-- **Robotics**. In many cases, C++ is used to program the micro-controller to increase the performance and productivity of the system. The reason behind why C++ is used in robotics is because a lot of hardware libraries are written in C++ as they allow  interaction with low-level hardware.
+- **Robotics**. In many cases, C++ is used to program the micro-controller to increase the performance and productivity of the system. The reason behind why C++ is used in robotics is because numerous hardware libraries are written in C++ as they allow  interaction with low-level hardware.
 
 ## Scenario
 
