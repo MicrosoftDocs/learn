@@ -14,15 +14,15 @@ Before you begin, ensure that Python version 3 is installed on your computer. Yo
 
     * For Windows, run:
 
-    ```bash
-    python PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>
-    ```
+      ```bash
+      python PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM AZURE IOT CENTRAL>
+      ```
 
     * For Linux, run:
 
-    ```bash
-    python3 PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>
-    ```
+      ```bash
+      python3 PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM AZURE IOT CENTRAL>
+      ```
 
 1. Leave the PyDiskSvr Python application running in the background.
 
