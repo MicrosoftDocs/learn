@@ -98,7 +98,7 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
 1. If you opened a new terminal, connect to our web API by running the following command:
   
     ```dotnetcli
-    httprepl http://localhost:5000
+    httprepl https://localhost:{PORT}
     ```
 
     Alternatively, run the following command at any time while the HttpRepl is running:
@@ -106,7 +106,7 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
     For example:
 
     ```dotnetcli
-    (Disconnected)> connect http://localhost:5000
+    (Disconnected)> connect https://localhost:{PORT}
     ```
 
     Navigate to the Pizza endpoint by running the following command:
@@ -124,7 +124,7 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
     The preceding command will output available APIs available for the `Pizza` endpoint:
 
     ```dotnetcli
-        http://localhost:5000/Pizza> ls
+        https://localhost:{PORT}/Pizza> ls
         .      [GET|POST]
         ..     []
         {id}   [GET|PUT|DELETE]
@@ -142,7 +142,7 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:23:09 GMT
-    Location: http://localhost:5000/Pizza?id=3
+    Location: https://localhost:{PORT}/Pizza?id=3
     Server: Kestrel
     Transfer-Encoding: chunked
     

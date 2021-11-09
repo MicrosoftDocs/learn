@@ -57,7 +57,7 @@ To store the items in the to-do list, install  the `EntityFrameworkCore.InMemory
 1. In your terminal window, type the following to add the EF Core InMemory package:
 
    ```console
-   dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0.0-rc.*
+   dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
    ```
 
 1. Add `using Microsoft.EntityFrameworkCore;` to the top of your `Program.cs` file.
