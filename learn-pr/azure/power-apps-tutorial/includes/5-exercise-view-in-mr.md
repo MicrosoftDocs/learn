@@ -36,7 +36,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list= created concerning the application and click **Connect**.
 
-    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting lists." lightbox="../media/select-lists.png":::
+    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting the list." lightbox="../media/select-lists.png":::
 
 6. All the required data is connected and ready to use in the application. You can now start building the application.
 
@@ -52,7 +52,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Background image** property to add an image to the screen. Now, we will add the logo of our application **Easy Sales** to the splash screen.
+4. Click the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file. Now, we will add the logo of our application **Easy Sales** to the splash screen.
 
     :::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
 
@@ -95,7 +95,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/edit-display-text-1.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-1.png":::
 
-3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to filter out the products from the SharePoint list. So, first, create two new **Blank** screen and rename it as **Products** and **Carpets**.
+3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to filter out the products from the SharePoint list based on **Product Category**. So, first, create two new **Blank** screen and rename it as **Products** and **Carpets**.
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
@@ -108,7 +108,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
     :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
 
     >[!Note]
-    > The **ID** is a context variable with some assigned value. This value is passed on to the destination page mentioned in the **Navigate** function.
+    > The **ID** is a context variable with some assigned value. This value is passed on to the destination page mentioned in the **Navigate** function. The value assigned to the variable filters out the products based on **Product Category**.
 
 5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function respectively:
 
@@ -125,7 +125,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
     ```
 
 >[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option.
+> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 >[!Note]
 > The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
@@ -165,7 +165,7 @@ Now that we have added the product categories, we will display the list of produ
 
 3. Configure the **Gallery** > **Fields** property in the **Properties** pane by clicking on **Edit**:
     * Assign the **Price** to the **Subtitle1** heading.
-    * Assign the **Name(Title)** to the **Title1** heading.
+    * Assign the **Title** to the **Title1** heading.
 
     :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
 
@@ -201,8 +201,10 @@ Now that we have added the product categories, we will display the list of produ
     Filter('Easy Sales',ProductCategory = "Carpet")
     ```
 
+    :::image type="content" source="../media/replicate-procedure.png" alt-text="Screenshot of following the same procedure for carpets page " lightbox="../media/replicate-procedure.png":::
+
 >[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option.
+> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 ## Create details page
 
@@ -300,7 +302,7 @@ The details page includes all the details and information concerning the selecte
     Likewise, follow the same procedure for **Carpet_details**. Customize the **Navigate** function accordingly.
 
 >[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option.
+> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 ## Insert and connect a 3D object to the View in MR component
 
