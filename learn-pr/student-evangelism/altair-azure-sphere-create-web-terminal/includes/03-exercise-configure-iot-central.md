@@ -1,12 +1,12 @@
-In this exercise, you'll customize your Altair IoT Central application.
+In this exercise, you'll follow detailed steps to customize your Azure IoT Central application.
 
-## Open the IoT Central device explorer
+## Open the Azure IoT Central device explorer
 
 1. Go to [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
 1. On the left pane, select **Devices**, select the **Altair on Azure Sphere** template, and then select your device.
 
-    It might take a minute or two for your device to be displayed in the devices section of IoT Central.
+    It might take a minute or two for your device to be displayed in the devices section of Azure IoT Central.
 
     The device name is your Azure Sphere device ID. You can display your device ID by running the following command at the Windows PowerShell command prompt or Linux terminal:
 
@@ -16,7 +16,7 @@ In this exercise, you'll customize your Altair IoT Central application.
 
 ## Rename your device
 
-Rename your device in IoT Central, ensuring that the name is unique. The web terminal uses this name to retrieve the channel ID property from IoT Central. The channel ID is used to create the unique MQTT topic names that are used by the Altair emulator and the web terminal.
+Rename your device in Azure IoT Central, ensuring that the name is unique. The web terminal uses this name to retrieve the channel ID property from Azure IoT Central. The channel ID is used to create the unique MQTT topic names that are used by the Altair emulator and the web terminal.
 
 To rename your device, on the left pane, select **Device**, select **Manage device**, and then select **Rename**.
 
@@ -50,11 +50,11 @@ To rename your device, on the left pane, select **Device**, select **Manage devi
 
 1. On the left pane, select **Views**, and then select the **Editing device and cloud data** tile.
 
-    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that highlights the 'Editing device and cloud data' tile.":::
+    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="Screenshot that shows the tile for editing device and cloud data.":::
 
 1. For **Form name**, enter **Properties**.
 
-1. Expand **Properties**
+1. Expand **Properties**.
 
     :::image type="content" source="../media/iot-central-template-properties-select-properties.png" alt-text="Screenshot that shows the controls for expanding and viewing the Properties list.":::
 
@@ -77,7 +77,7 @@ To rename your device, on the left pane, select **Device**, select **Manage devi
 
 1. On the left pane, select **Views**, and then select the **Visualizing the device** tile.
 
-    :::image type="content" source="../media/iot-central-visualize-create.png" alt-text="Screenshot that highlights the 'Visualizing the device' tile.":::
+    :::image type="content" source="../media/iot-central-visualize-create.png" alt-text="Screenshot that shows the tile for visualizing the device.":::
     
 1. Name the view **Environment**.
 1. In the **Start with a visual** list, select **Line chart**, and then select **Add tile**.
@@ -95,9 +95,9 @@ To rename your device, on the left pane, select **Device**, select **Manage devi
 
 ### Publish the template
 
-1. Finally, to publish the template to the IoT Central application, select the **Publish** button.
+To publish the template to the Azure IoT Central application, select the **Publish** button.
 
-    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot of the 'Customize your interface' pane, with the Publish button highlighted.":::
+:::image type="content" source="../media/iot-central-template-publish.png" alt-text="Screenshot of the pane for customizing an interface, with the Publish button.":::
 
 ## View your Altair on Azure Sphere device
 
@@ -118,22 +118,22 @@ To rename your device, on the left pane, select **Device**, select **Manage devi
     * Desired temperature (Celsius): **30**
     * The channel ID is for information only.
 
-## Create an IoT Central API token
+## Create an Azure IoT Central API token
 
-The web terminal uses the IoT Central device name to connect to the Altair emulator. The web terminal needs an IoT Central API Token to access and set the channel ID property for the device name. The web terminal and the Altair emulator use the channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the web terminal by using these MQTT topics.
+The web terminal uses the Azure IoT Central device name to connect to the Altair emulator. The web terminal needs an Azure IoT Central API token to access and set the channel ID property for the device name. The web terminal and the Altair emulator use the channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the web terminal by using these MQTT topics.
 
-1. On the IoT Central left pane, select **Administration**, and then select **API tokens**.
+1. On the Azure IoT Central left pane, select **Administration**, and then select **API tokens**.
 1. Select **New**.
 1. Name your token **Altair-Web-Terminal**.
 1. Select **Generate**.
 1. Copy the generated token to use in the next unit.
 
-    :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot of the 'API tokens' pane with the 'Generate token' button highlighted.":::
+    :::image type="content" source="../media/iot-central-api-token-generate.png" alt-text="Screenshot of the API tokens pane with the button for generating a token.":::
 
-## Generate the IoT Central URL
+## Generate the Azure IoT Central URL
 
-In the next unit, when you create the Altair web terminal, you'll need to add the IoT Central URL to it.
+In the next unit, when you create the Altair web terminal, you'll need to add the Azure IoT Central URL to it.
 
-In your browser address bar, copy the base address of your IoT Central application to use in the next unit, as shown in the following screenshot. Be sure to remove the trailing slash (/) character from the URL.
+In your browser address bar, copy the base address of your Azure IoT Central application to use in the next unit, as shown in the following screenshot. Be sure to remove the trailing slash (/) character from the URL.
 
-:::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the IoT Central URL.":::
+:::image type="content" source="../media/iot-central-application-url.png" alt-text="Screenshot that shows how to copy the Azure IoT Central URL.":::
