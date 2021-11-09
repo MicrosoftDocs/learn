@@ -3,11 +3,10 @@ An Azure Active Directory (AD) tenant is created for you when you sign up for Az
 
 When you create a new subscription, it's hosted in your account's Azure AD tenant. If you want to give others access to your subscription or its resources, you need to invite them to join your tenant. Doing so helps you control access to your subscriptions and resources.
 You can create additional subscriptions for your account in Azure. You might want a subscription in order to avoid reaching subscription limits, to create separate environments for billing and security, or to isolate data for compliance reasons.
-
+            
 If you want to create an Azure subscription under your organization's Enterprise Agreement (EA), you need the Account Owner role for your organization.
 
-If you need to transfer billing ownership of your Azure subscription because you've changed your organization, or if you want your subscription to be billed to another account, be sure to transfer billing ownership to an account that gives the administrators in the account permission for changing the 
-billing tasks. 
+If you need to transfer billing ownership of your Azure subscription because you've changed your organization, or if you want your subscription to be billed to another account, be sure to transfer billing ownership to an account that gives the administrators in the account permission for changing the billing tasks. 
 
 Administrators can change the payment method, view charges, and cancel the subscription.
 
