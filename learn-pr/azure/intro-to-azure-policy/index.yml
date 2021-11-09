@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-policy
+metadata:
+  moduleType: introduction        # Do not edit: type must be 'introduction'
+  title: Introduction to Azure Policy          # Do not edit: title must be "Introduction to (product)"
+  description: "Introduction to Azure Policy and how to use to apply compliance into your environment."             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 9/21/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: ricmmartins      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: ricmart           # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
+title: Intro to Azure Policy
+summary: "This module introduces you to Azure Policy and describes its characteristics, capabilities, and use cases."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe how features of Azure Policy can help you to apply compliance, control, and add required configuration at scale.
+prerequisites: |
+  - Basic knowledge of navigating the Azure portal
+  - Basic knowledge of Azure resources
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - administrator
+  - solution-architect
+  - technology-manager
+products:
+- azure
+units:
+- learn.intro-to-azure-policy.introduction
+- learn.intro-to-azure-policy.what-is-azure-policy
+- learn.intro-to-azure-policy.how-azure-policy-works
+- learn.intro-to-azure-policy.when-to-use-azure-policy
+- learn.intro-to-azure-policy.knowledge-check
+- learn.intro-to-azure-policy.summary
+badge:
+  uid: learn.intro-to-azure-policy.badge

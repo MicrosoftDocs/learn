@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Create and publish a static web app with Gatsby and Azure Static Web Apps
 summary: Use Gatsby and React to develop a static web app, then deploy it to the web with Azure Static Web Apps.
 abstract: |

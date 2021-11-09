@@ -15,7 +15,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new blazorserver
+    dotnet new blazorserver -f net6.0
     ```
 
     This command creates a basic Blazor server project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
@@ -47,7 +47,6 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     -| appsettings.json
     -| BlazorApp.csproj
     -| Program.cs
-    -| Startup.cs
     ```
 
 1. If Visual Studio Code prompts you to install required assets, select **Yes**.
@@ -59,7 +58,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
  
     ```dotnetcli
-    dotnet watch run
+    dotnet watch
     ```
 
     This will build and start the app, and then rebuild and restart the app whenever you make code changes.  The browser should automatically open at the address https://localhost:5000.
