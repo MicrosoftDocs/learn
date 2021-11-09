@@ -353,24 +353,24 @@ Another unique property provided by the **View in MR** component is **Object sca
     :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to scale object for view in MR" lightbox="../media/object-scaling.png":::
 
 >[!Information]
-> You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measure unit from the dropdown and later enter the values.
+> You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measuring unit from the dropdown and later enter the values.
 
 >[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option.
+> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 ## Create notes page
 
 It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
 
-1. Create two new **Blank** screens and rename them as **Product_notes** and **Notes_carpets**.
+1. Create two new **Blank** screens and rename them as **Product_notes** and **Carpet_notes**.
 
     :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
 
-2. Design the **Product_notes** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_sofas**.
+2. Design the **Product_notes** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_products**.
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
-3. Select **Gallery** > **Horizontal** to include a horizontal type of gallery. You will be storing photos taken during the **View in MR** session in this gallery. Rename it as **View_sofas**
+3. Select **Gallery** > **Horizontal** to include a horizontal type of gallery. You will be storing photos taken during the **View in MR** session in this gallery. Rename it as **View_products**
 
     :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
 
