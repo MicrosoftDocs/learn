@@ -52,8 +52,8 @@ In Visual Studio Code, install the Azure Static Web Apps extension from either o
 1. Select **Create a new resource group**.
 1. Name the resource group **AltairWebTerminal**.
 1. For the name of the static web app, enter **AltairWebTerminal**.
-1. For the sku, select **Free**.
-1. Choose **Custom** build preset.
+1. For the SKU, select **Free**.
+1. Choose the **Custom** build preset.
 1. For the location of your application code, enter a slash character (/).
 1. For the build output location, leave the value blank.
 1. For the location of the new resource, select your preferred location for the static web app.
