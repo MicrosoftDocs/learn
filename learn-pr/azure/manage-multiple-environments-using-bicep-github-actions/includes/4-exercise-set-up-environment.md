@@ -166,6 +166,8 @@ New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
 ::: zone-end
 
+<!-- TODO copy the resource IDs -->
+
 ## Create two service principals and grant them access to the resource group
 
 Next, create two service principals in Azure AD: one for your test environment and another for your production environment. This process also grants the service principal the Contributor role on your resource group, which allows your workflow to deploy to the resource group.
