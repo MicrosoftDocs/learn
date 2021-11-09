@@ -122,7 +122,7 @@ For example, assume your app has been granted the User.ReadWrite.All delegated p
 
 For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.
 
-##Best practices for requesting permissions
+## Best practices for requesting permissions
 When building an app that uses Azure AD to provide sign-in and access tokens for secured endpoints, there are a few good practices you should follow.
 - Only ask for the permissions required for implemented app functionality. Don't request user consent for permissions that you haven't yet implemented for your application.
 - In addition, when requesting permissions for app functionality, you should request the least-privileged access. For example, if an app analyzes a user's email but takes no action on the mailbox, you shouldn't request the more permissive Mail.ReadWrite when Mail.Read will work.
