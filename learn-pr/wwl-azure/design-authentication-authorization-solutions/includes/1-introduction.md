@@ -9,7 +9,7 @@
 
 - What identity protections are available?
 
-### Learning objectives
+## Learning objectives
 
 In this module, you’ll learn how to:
 
@@ -27,12 +27,12 @@ In this module, you’ll learn how to:
 
 - Design for access reviews.
 
-- Design for service principals for applications
+- Design for service principals for applications.
 
-- Design for Azure Key Vault
+- Design for Azure Key Vault.
 
 
-### Skills measured
+## Skills measured
 
 The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
@@ -54,7 +54,7 @@ Design Identities and Access for Applications
 
 - Recommend a user consent solution for applications
 
-### Prerequisites
+## Prerequisites
 
 - Working experience creating, assigning, and securing corporate identities.
 
