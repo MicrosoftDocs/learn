@@ -60,7 +60,5 @@ jobs:
         template: ./deploy/main.bicep
         parameters: deploy/parameters.${{ inputs.environmentName }}.json
 ```
-
-<!-- TODO verify the above actually works -->
-
+\
 The Git repository's *deploy* folder also contains the Bicep file and parameter files.

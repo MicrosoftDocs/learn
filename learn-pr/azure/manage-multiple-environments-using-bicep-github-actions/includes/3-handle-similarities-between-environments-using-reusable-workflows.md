@@ -10,7 +10,7 @@ After talking to your colleagues on the website team, you decide on the followin
 
    Linting happens on the Bicep code without needing to connect to Azure, so it doesn't matter how many environments you're deploying to. It runs only once.
 
-1. The workflow deploys to the test environment. This job requires:
+1. The workflow deploys to the test environment. This requires:
 
    1. Running the Azure Resource Manager preflight validation.
    1. Deploying the Bicep code.
@@ -18,21 +18,19 @@ After talking to your colleagues on the website team, you decide on the followin
 
 1. If any part of the workflow fails, then the whole workflow stops so you can investigate and resolve the issue. But if everything succeeds, your workflow continues to deploy to your production environment:
 
-   1. The workflow includes a preview step, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The preview step also validates your deployment, so you don't need to run a separate validation step for your production environment.
+   1. The workflow includes a preview step, which runs the what-if operation on your production environment to list the changes that will be made to your production Azure resources. The what-if operation also validates your deployment, so you don't need to run a separate validation step for your production environment.
    1. The workflow pauses for manual validation. 
    1. If approval is received, the workflow runs the deployment and smoke tests against your production environment.
 
-Some of these job are repeated between your test and production environments, and some are run only for specific environments:
+Some of these tasks are repeated between your test and production environments, and some are run only for specific environments:
 
-| Job | Environments |
+| Task | Environments |
 |-|-|
 | Lint | Neither - linting doesn't work against an environment |
 | Validate | Test only |
 | Preview | Production only |
 | Deploy | Both environments |
 | Smoke Test | Both environments |
-
-<!-- TODO update the above with the way the workflow is structured with validate/preview condensed -->
 
 When you need to repeat steps in your workflow, you might try to copy and paste your step definitions. However, this isn't a good practice. It's easy to accidentally make subtle mistakes or for things to get out of sync when you duplicate your workflow's code. And in the future, when you need to make a change to the steps, you have to remember to apply the change in multiple places.
 
