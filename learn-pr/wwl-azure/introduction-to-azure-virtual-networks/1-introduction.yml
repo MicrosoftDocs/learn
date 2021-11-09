@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-virtual-networks.introduction
-title: Introduction
+title: Some Introduction
 metadata:
-  title: Introduction
-  description: "Introduction"
-  ms.date: 08/12/2021
+  title: Some Introduction
+  description: "Some Introduction"
+  ms.date: 11/09/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
