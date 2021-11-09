@@ -8,11 +8,11 @@ You're going to learn how to set up a condition that enables the logic app to in
 
 First, let's create a condition that runs the logic app whenever a certain event is published.
 
-1. Select the Logic app you just created. In the top left breadcrumb, select **Home**, and under **Recent resources**, select the Logic app you just created.
+1. In the Azure portal, the Logic app you just created should be active. If not, select **Home**, and under **Recent resources**, select the Logic app you just created.
 
-1. In the left menu pane, under **Development Tools**, select **Logic app designer**. The **Logic app designer** pane appears for your logic app.
+1. In the **Logic app** menu, under **Development Tools**, select **Logic app designer**. The **Logic app designer** pane for your logic app appears.
 
-1. An **Event Grid** trigger (box), **When a resource event occurs** appears. Under the trigger, select **+** (Insert a new step).
+1. In the event grid under **When a resource event occurs**, select **New step**.
 
     :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step.":::
 
