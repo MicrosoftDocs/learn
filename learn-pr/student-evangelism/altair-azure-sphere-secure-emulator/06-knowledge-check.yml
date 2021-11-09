@@ -19,11 +19,11 @@ quiz:
     choices:
     - content: "Azure Sphere will connect by default to any safe network endpoints."
       isCorrect: false
-      explanation: "You must configure the AllowedConnections section in the app_manifest.json file. The application running on Azure Sphere can only connect to network endpoints that are declared in that section. You must declare the test.mosquitto.org endpoint and the IoT central endpoints so the Altair emulator can connect to these network endpoints."
+      explanation: "You must configure the AllowedConnections section in the app_manifest.json file. The application running on Azure Sphere can only connect to network endpoints that are declared in that section. You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so the Altair emulator can connect to these network endpoints."
     - content: "Azure Sphere can connect only to network endpoints that are defined in the AllowedConnections section of the app_manifest.json file."
       isCorrect: true
-      explanation: "You must declare the test.mosquitto.org endpoint and the IoT central endpoints so that the Altair emulator can connect to these network endpoints."
+      explanation: "You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so that the Altair emulator can connect to these network endpoints."
     - content: "By default, Azure Sphere can connect to any Azure cloud-based service including Azure IoT Central."
       isCorrect: false
-      explanation: "The application running on Azure Sphere can connect only to network endpoints that are declared in the AllowedConnections section of the app_manifest.json file. You must declare the test.mosquitto.org endpoint and the IoT central endpoints so that the Altair emulator can connect to these network endpoints."
+      explanation: "The application running on Azure Sphere can connect only to network endpoints that are declared in the AllowedConnections section of the app_manifest.json file. You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so that the Altair emulator can connect to these network endpoints."
       
