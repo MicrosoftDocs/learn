@@ -35,7 +35,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    :::code language="yaml" source="code/5-workflow.yml" range="1-16" highlight="12-13" :::
 
-   <!-- TODO ensure you replace user and repo name -->
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-end-to-end* for your repository, ensure you replace the repository name too.
 
 1. Update the *deploy-test* job to depend on the new *build* job: <!-- TODO should we make prod depned too, for consistency -->
 

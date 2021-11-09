@@ -32,7 +32,14 @@ Each artifact has a name, which you specify by using the `name` property. You us
 
 :::image type="content" source="../media/3-website-workflow-artifact.png" alt-text="Diagram showing a workflow uploading and then referring to an artifact named 'Website'." border="false":::
 
-Use the `actions/download-artifact` action to download a workflow artifact:
+Use the `actions/download-artifact` action to download all of the workflow artifacts:
+
+```yaml
+- uses: actions/download-artifact@v2
+```
+<!-- TODO verify the above snippet works and downloads the artifact -->
+
+Or, specify an artifact name to download just a specific artifact:
 
 ```yaml
 - uses: actions/download-artifact@v2
@@ -57,7 +64,6 @@ The most common approach is to use the `azure/webapps-deploy` action:
     app-name: my-app-service
     package: my-artifact-name/website.zip
 ```
-<!-- TODO verify the above snippet works and upload the app -->
 
 You need to provide several pieces of information to deploy your app to App Service. This information includes the resource group and resource name of the App Service app, which you specify by using the `ResourceGroupName` and `WebAppName` inputs. As you learned in the preceding unit, you should add an output to your Bicep file and use a workflow variable to propagate the app name through your workflow. You also need to specify a .zip file with the app to deploy by using the `Package` input. This is usually the path to a workflow artifact.
 
