@@ -11,8 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/5-exercise-fixing-broken-code.md)]
 quiz:

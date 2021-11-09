@@ -11,8 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
 quiz:
