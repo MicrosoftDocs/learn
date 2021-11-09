@@ -38,13 +38,13 @@ To test the capabilities of the Form Recognizer service, we'll use a simple comm
 
     ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-4. Make sure the the type of shell indicated on the top left of the cloud shell pane is switched to *Powershell*. If it is *Bash*, switch to *Powershell* by using the drop-down menu. 
+4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
-    ![How to find the left hand drop down menu to switch to Powershell](../media/powershell-portal-guide-3.png) 
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
 
-5. Wait for Powershell to start. You should see the following screen in the Azure portal:  
+5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![Wait for Powershell to start.](../media/powershell-prompt.png) 
+    ![Wait for PowerShell to start.](../media/powershell-prompt.png) 
 
 
 ## Configure and run a client application
