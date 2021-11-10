@@ -3,7 +3,7 @@ uid: learn.wwl.explore-migration-options
 metadata:
   title: Explore migration options for SAP on Azure
   description: "This module explores strategies for migration of SAP workloads to Azure, including migration of on-premises SAP workloads to Azure in conjunction to performing an upgrade. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/26/2021
+  ms.date: 11/10/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-migration-options.svg
 levels:
 - advanced
 roles:
