@@ -1,9 +1,10 @@
 Users can measure distance, area, and volume in the real world with Power Apps' Measure in MR component. You build two-dimensional and three-dimensional polygons during measuring, which can be used to confirm how a specific-sized object would fit within a space. 
 
-When you include this feature in the application, it creates a button. When the button is pressed, the device's live camera feed appears. You can then choose a starting point and particular spots to measure. The measured segment distances are displayed in real-time on the live camera stream. After you exit the component, the measurements made are recorded or kept in the **Measurements** and **MeasurementsDetailed** properties. In addition, the Photos property stores screenshots collected throughout the mixed reality experience that can be viewed within the app.
+When you include this feature in the application, it creates a button. On pressing the button, the device's live camera feed appears. You can then choose a starting point and particular spots to measure. The measured segment distances are displayed in real-time on the live camera stream. After you exit the component, the measurements made are recorded or kept in the **Measurements** and **MeasurementsDetailed** properties. In addition, the Photos property stores screenshots collected throughout the mixed reality experience that can be viewed within the app.
 
 >[!Note]
 >The mixed reality parts work best in sufficiently bright conditions with flat surfaces. When setting up the following, point the gadget at the surface you might want to track and slowly pan the gadget from right to left in broad arm movements. In the case, if it fails, exit and enter the mixed reality view to reset the following and attempt once more.
+>
 >LIDAR-empowered gadgets will bring about better tracking.
 
 ## Properties
