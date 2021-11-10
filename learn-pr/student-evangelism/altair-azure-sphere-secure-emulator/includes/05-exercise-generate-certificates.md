@@ -1,6 +1,6 @@
 In this exercise, you'll create the client certificates for the test.mosquitto.org MQTT broker.
 
-## Step 1: Install OpenSSL
+## Install OpenSSL
 
 Follow the instructions that apply to your operating system:
 
@@ -10,7 +10,7 @@ Follow the instructions that apply to your operating system:
    * Download OpenSSL from [openssl.org](https://wiki.openssl.org/index.php/Binaries?azure-portal=true).
    * Use [Windows Subsystem for Linux (WSL)](/windows/wsl/install-win10). Depending on the WSL Linux distribution you install, you might need to install OpenSSL, which you can do by using your Linux distributions package manager. For example, on Ubuntu, run: `sudo apt-get install openssl`.
 
-## Step 2: Delete the existing placeholder certificates
+## Delete the existing placeholder certificates
 
 The *AltairHL_emulator\certs* folder contains three placeholder certificates. The placeholder certificates are required for the *build_all* validation process. Delete the placeholder certificates, because you'll be creating new certificates for the Altair emulator.
 
@@ -22,13 +22,13 @@ The *AltairHL_emulator\certs* folder contains three placeholder certificates. Th
     - client.key
     - client.crt
 
-## Step 3: Download the Mosquitto Certificate Authority certificate
+## Download the Mosquitto Certificate Authority certificate
 
 1. Download the Mosquitto Certificate Authority certificate [mosquitto.org.crt (PEM format)](https://test.mosquitto.org?azure-portal=true).
 1. Rename the *mosquitto.org.crt* file to *ca.crt*.
 1. Copy the *ca.crt* file to the *AltairHL_emulator\certs* folder.
 
-## Step 4: Generate the client certificates by using OpenSSL
+## Generate the client certificates by using OpenSSL
 
 1. Generate a private key:
 
@@ -36,7 +36,7 @@ The *AltairHL_emulator\certs* folder contains three placeholder certificates. Th
     openssl genrsa -out client.key
     ```
 
-1. Generate a Certificate Signing Request (CSR).
+1. Generate a certificate signing request (CSR).
 
     At a minimum, the CSR must contain values in the **Country**, **Organization**, and **Common Name** fields.
 
@@ -48,7 +48,7 @@ The *AltairHL_emulator\certs* folder contains three placeholder certificates. Th
 
 1. Open the *client.csr* file in your text editor, copy the CSR to the text box at [test.mosquitto.org](https://test.mosquitto.org/ssl/?azure-portal=true), and then select **Submit**. 
 
-   The certificate is generated for you to download. It is valid for 90 days only.
+   The certificate is generated for you to download. It's valid for 90 days only.
 
 1. Copy the *client.key* and *client.crt* files to the *AltairHL_emulator\certs* folder.
 
