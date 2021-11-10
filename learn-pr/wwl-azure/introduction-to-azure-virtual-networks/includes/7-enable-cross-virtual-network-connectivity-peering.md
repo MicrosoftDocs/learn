@@ -19,13 +19,17 @@ The benefits of using virtual network peering, whether local or global, include:
 
 The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vnet-peering-ad980907.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate.":::
 
 
-The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png":::
+The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
+
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso":::
 
 
-The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png":::
+The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet. 
+
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Route table known to Fabrikam":::
 
 
 ## Configure VNet Peering

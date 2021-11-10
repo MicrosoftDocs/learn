@@ -220,7 +220,7 @@ In summary, this route applies to any address prefixes in 10.0.1.0/24 (private s
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/associate-route-69efb42a.png" alt-text="Screenshot of a route table being assocated with a virtual network.":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/associate-route-69efb42a.png" alt-text="Screenshot of a route table being associated with a virtual network.":::
 
 
 \[!NOTE\] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
@@ -238,9 +238,9 @@ You can view the effective routes for each network interface by using the Azure 
 1.  Log into the Azure portal with an Azure account that has the [necessary permissions](/azure/virtual-network/virtual-network-network-interface).
 2.  In the search box, enter the name of the VM that you want to investigate.
 3.  Select the VM from the search results.
-4.  Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name. :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Azure Portal - select a specific NIC.":::
+4.  Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name. :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Azure portal - select a specific NIC.":::
     
-5.  Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image: :::image type="content" source="../media/view-effective-routes-69875697.png" alt-text="Azure Portal - effective routes for a specific NIC.":::
+5.  Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image: :::image type="content" source="../media/view-effective-routes-69875697.png" alt-text="Azure portal - effective routes for a specific NIC.":::
     
 
 ### View effective routes by using Azure PowerShell

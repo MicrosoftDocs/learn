@@ -38,4 +38,4 @@ quiz:
       explanation: "That's incorrect, you can't create your own public IP addresses prefix in Azure."
     - content: "IP address is assigned from a pool of available addresses."
       isCorrect: true
-      explanation: "Thats Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource."
+      explanation: "That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource."

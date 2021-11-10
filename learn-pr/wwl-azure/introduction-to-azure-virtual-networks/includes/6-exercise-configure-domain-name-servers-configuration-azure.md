@@ -83,7 +83,7 @@ In this exercise, you will:
 1.  In Contoso.com, under **Settings**, select **Virtual network links**.
 2.  On Contoso.com \| Virtual network links, select **+ Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-network-link-domain-name-system-9a402df1.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-network-link-domain-name-system-9a402df1.png" alt-text="Azure portal screenshot of network links.":::
 
 
 3.  Use the information in the following table to add the virtual network link.
@@ -255,7 +255,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 1.  On the Azure home page, select **Virtual Machines**.
 2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM":::
 
 
 3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
@@ -545,7 +545,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 1.  On the Azure home page, select **Virtual Machines**.
 2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png":::
+\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM from a preset configuration":::
 
 
 3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
