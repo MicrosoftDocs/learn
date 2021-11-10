@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.visual-studio.visual-studio-test
+metadata:
+  title: Use Visual Studio for modern development
+  description: Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here!
+  ms.date: 07/19/2021
+  author: softchris
+  ms.author: kehavens
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+title: Use Visual Studio for modern development
+prerequisites: none
+summary: |
+  Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here! In this learning path you'll:
+  - Explore testing concepts.
+  - Author tests for your product code.
+  - Use the test explorer in Visual Studio to manage many tests.
+  - Explore features of Visual Studio for Git
+iconUrl: /learn/achievements/visual-studio/visual-studio-test.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+- dotnet
+modules:
+- learn.visual-studio-test-concepts
+- learn.visual-studio.visual-studio-test-tools
+- learn.visual-studio-github-push
+trophy:
+  uid: learn.visual-studio.visual-studio-test.trophy

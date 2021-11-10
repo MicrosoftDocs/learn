@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.cultivate-culture-belong-tech.exercise-challenges
-title: Exercise - challenges 
+title: Exercise - Challenges 
 metadata:
-  title: Exercise - challenges   
-  description: In this exercise, your biases and assumptions are challenged. The exercise is designed to make you think how it affects your actions in the workplace.
+  title: Exercise - Challenges   
+  description: Challenge your biases and assumptions, and learn how they affect your actions in the workplace.
   ms.date: 09/03/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/6-exercise-challenges.md)]

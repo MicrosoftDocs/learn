@@ -51,7 +51,7 @@ Bicep modules enable you to organize and reuse your Bicep code by creating small
 
 Imagine you have a Bicep template that deploys application, database, and networking resources for *solution A*. You might split up this template into three modules, each of which is focused on its own set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too. So when you develop a template for *solution B*, which has similar networking requirements to *solution A*, you can reuse the network module.
 
-:::image type="content" source="../media/7-templates-modules.png" alt-text="Diagram that shows a template for solution A referencing three modules - application, database, and networking. The networking module is then reused in another template for solution B." border="false":::
+:::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template for solution A referencing three modules - application, database, and networking. The networking module is then reused in another template for solution B." border="false":::
 
 When you want the template to include a reference to a module file, use the `module` keyword. A module definition looks similar to a resource declaration, but instead of including a resource type and API version, you use the module's file name:
 

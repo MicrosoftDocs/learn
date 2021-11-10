@@ -5,6 +5,7 @@ Now that you have completed this module, you can:
 * Compare transactions and batches.
 * Create and manage transactions.
 * Handle errors in transactions.
+* Describe concurrency.
 
 ## Learn more
 For more information about the topics discussed in this module, see:
@@ -14,3 +15,4 @@ For more information about the topics discussed in this module, see:
 - [COMMIT TRANSACTION (Transact-SQL) - SQL Server](/sql/t-sql/language-elements/commit-transaction-transact-sql?view=sql-server-ver15)
 - [ROLLBACK TRANSACTION (Transact-SQL) - SQL Server](/sql/t-sql/language-elements/rollback-transaction-transact-sql?view=sql-server-ver15) 
 - [XACT_STATE (Transact-SQL) - SQL Server](/sql/t-sql/functions/xact-state-transact-sql?view=sql-server-ver15)
+- [Transaction Isolation Levels](/sql/t-sql/language-elements/transaction-isolation-levels)

@@ -214,6 +214,9 @@ Now that you've configured network access to port 80, let's try to access the we
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     ```
 
+    > [!NOTE]
+    > There may be a slight delay between rules being added and ports being opened.
+
 1. As an optional step, refresh your browser tab that points to your web server.
 
     You see this:

@@ -1,4 +1,4 @@
-Azure App Service is a fully managed platform for building and hosting your web apps and APIs without worrying about having to manage the infrastructure. It provides management, monitoring, and operational insights to meet enterprise-grade performance, security, and compliance requirements. For more information, see [Azure App Service](https://docs.microsoft.com/azure/app-service/overview?azure-portal=true).
+Azure App Service is a fully managed platform for building and hosting your web apps and APIs without worrying about having to manage the infrastructure. It provides management, monitoring, and operational insights to meet enterprise-grade performance, security, and compliance requirements. For more information, see [Azure App Service](/azure/app-service/overview?azure-portal=true).
 
 Azure Defender for App Service uses the scale of the cloud to identify attacks targeting applications running over App Service. Attackers probe web applications to find and exploit weaknesses. Before being routed to specific environments, requests to applications running in Azure go through several gateways, where they're inspected and logged. This data is then used to identify exploits and attackers and learn new patterns that will be used later.
 
@@ -14,7 +14,7 @@ If you're running a Windows-based App Service plan, Security Center also has acc
 
 To protect your Azure App Service plan with Azure Defender for App Service:
 
-- Ensure you have a supported App Service plan that is associated with dedicated machines. Supported plans are listed [here](https://docs.microsoft.com/azure/app-service/overview-hosting-plans?azure-portal=true).
+- Ensure you have a supported App Service plan that is associated with dedicated machines. Supported plans are listed [here](/azure/app-service/overview-hosting-plans?azure-portal=true).
 
 - Enable Azure Defender on your subscription (you can optionally enable only the Azure Defender for App Service plan).
 

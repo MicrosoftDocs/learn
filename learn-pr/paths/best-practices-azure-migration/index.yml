@@ -1,25 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.best-practices-azure-migration
 metadata:
-  title: Best practices for Azure migration
-  description: Cloud migration is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration journey. Dive deeper into steps and best practices for planning and executing migration.
+  title: Best practices for Azure migration and modernization
+  description: Cloud migration and modernization is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration and modernization journey. Dive deeper into steps and best practices for planning and executing migration and modernization.
   brand: azure
   ms.date: 02/22/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-title: Best practices for Azure migration
+title: Best practices for Azure migration and modernization
 summary: |
-  Cloud migration is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration journey. Dive deeper into steps and best practices for planning and executing migration.
+  Cloud migration and modernization is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration and modernization journey. Dive deeper into steps and best practices for planning and executing migration and modernization.
   
   In this learning path, you'll:
   - Understand the benefits of cloud
-  - Explore the cloud migration journey and common migration scenarios
-  - Learn about migration tools and programs
-  - Get best practices and how-to guidance for Azure migration
+  - Explore the cloud migration and modernization journey and common migration and modernization scenarios
+  - Learn about migration and modernization tools and programs
+  - Get best practices and how-to guidance for Azure migration and modernization
 prerequisites: |
-  - Basic understanding of cloud computing, Azure fundamentals and workloads being migrated
+  - Basic understanding of cloud computing, Azure fundamentals and workloads being migrated and modernized
 iconUrl: /learn/achievements/best-practices-azure-migration.svg
 hidden: true
 levels:

@@ -22,7 +22,7 @@ By using stages, you can verify the quality of your code before you deploy it. T
 
 Consider a timeline of the activities that you perform when you write code. The timeline starts from the planning and design phases. It then moves to the building and testing phases. Finally, you deploy and then have to support your solution.
 
-:::image type="content" source="../media/2-shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
+:::image type="content" source="../../includes/media/shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
 
 It's a well-understood rule in software development that the earlier in the process that you find an error - the closer to the left of the timeline - the easier, quicker, and cheaper it is to fix. The later in your process that you catch an error, the harder and more complicated it is to fix. 
 
@@ -74,6 +74,8 @@ You use the `condition` keyword to specify a condition that should be met before
 
 In the preceding example, when everything goes well, Azure Pipelines runs the **Validate** stage first, and then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, Azure Pipelines runs the **Rollback** stage. You'll learn more about rollback later in this module.
 
+Every job executes on a new agent. This also means that every job will start from a clean environment. So, in every job you typically need to check out the source code as your first step.
+
 ## Bicep deployment stages
 
 A typical Bicep deployment pipeline contains several stages. As the pipeline moves through the stages, the goal is to become increasingly confident that the later stages will succeed. Here are the common stages for a Bicep deployment pipeline:
@@ -88,7 +90,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 
 Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. After you understand how the stages work, you can design a pipeline to suit your needs.
 
-Throughout this module, you'll learn more about these stages and progressively build a pipeline that includes each stage. You'll also learn:
+Throughout this module, you'll learn more about the stages listed here, and you'll progressively build a pipeline that includes each stage. You'll also learn:
 
 - How pipelines stop the deployment process if anything unexpected happens in any of the previous stages.
 - How to configure your pipeline to pause until you manually verify what happened in a previous stage.

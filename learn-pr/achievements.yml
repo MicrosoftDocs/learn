@@ -697,3 +697,13 @@ achievements:
   title: Load test Azure web apps by using Azure DevOps
   summary: Create a simple load test via the Azure portal, run it and check the results, and then customize the test in Azure DevOps.
   iconUrl: /learn/achievements/load-test-web-app-azure-devops.svg
+- uid: learn.intro-to-cybersecurity.badge
+  type: badge
+  title: Introduction to cybersecurity
+  summary: Knowing the fundamentals of cybersecurity is a first step toward countering increasing cyberthreats. Examine key terminology and discover common cyberthreats and how to defend against them.
+  iconUrl: /learn/achievements/intro-to-cybersecurity.svg
+- uid: learn.wwl.design-identities-access-for-applications.badge
+  type: badge
+  title: Design identities and access for applications
+  summary: Design identities and access for applications
+  iconUrl: /learn/achievements/generic-badge.svg

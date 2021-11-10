@@ -4,7 +4,7 @@ metadata:
   title: Deploy and manage resources in Azure by using Bicep
   description: Learn how Bicep enables you to manage both basic and complex infrastructure deployments on Azure.
   brand: azure
-  ms.date: 06/01/2021
+  ms.date: 10/26/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -37,9 +37,24 @@ summary: |
     Part 1: Deploy and manage resources in Azure by using Bicep
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
     [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
+  :::column-end:::
+  :::row-end:::
+
+  After that, you might be interested in adding your Bicep code to a deployment pipeline. Take one of these two learning paths based on the tool you want to use:
+
+  :::row:::
+  :::column:::
+    [<img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>](xref:learn.bicep-azure-pipelines)
+
+    [Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
+  :::column-end:::
+  :::column:::
+    [<img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>](xref:learn.bicep-github-actions)
+
+    [Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
   :::column-end:::
   :::row-end:::
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
@@ -58,6 +73,7 @@ modules:
 - learn.azure.deploy-azure-resources-bicep
 - learn.azure.build-reusable-bicep-templates-parameters
 - learn.azure.bicep-conditions-loops
+- learn.azure.create-composable-bicep-files-using-modules
 - learn.azure.child-extension-bicep-templates
 - learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts

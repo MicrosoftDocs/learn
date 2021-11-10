@@ -34,11 +34,11 @@ Your BME280 sensor chip is already installed on a breakout board. All you need t
 > There are many manufacturers of BME280 breakouts. Most designs are similar, and the manufacturer shouldn't make any difference to the functionality. This module was built with the Adafruit example in the prerequisites. Ensure your BME280 breakout includes an Inter-Integrated Circuit (I2C) interface.
 
 > [!TIP]
-> Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There's a plethora of tutorials and videos to get you started. [Here's a good example](https://www.youtube.com/watch?v=ZwU9SqO0udU).
+> Most BME280 breakouts are sold with the pin header unattached. As a consequence, most require soldering to assemble. If you don't know how to solder, don't be discouraged! Soldering isn't as hard as you might think! There's a plethora of [tutorials and videos](https://www.bing.com/search?q=Soldering+Tutorial) to get you started.
 
 ## Control fans
 
-In a real-world scenario, you'd use a relay module like this to control power to the fan.
+The device you're going to build is slightly different than what you'd build for a real-world device. In a real-world scenario, you'd use a relay module like this to control power to the fan.
 
 :::image type="content" source="../media/relay-module.png" alt-text="An example of a generic 5V relay module." lightbox="../media/relay-module.png":::
 

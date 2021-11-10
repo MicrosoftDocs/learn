@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-policy.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for intro to Azure Policy."
+  ms.date: 9/21/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of the following statements accurately describes Azure Policy?"
+    choices:
+    - content: "A service to create Group Policy Objects on Azure."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy can't be used to create Group Policy Objects."
+    - content: "Azure Policy is an Azure service for creating, assigning, and managing policies."
+      isCorrect: true
+      explanation: "Correct: This is the statement which best describes Azure Policy"
+    - content: "Azure Policy is a tool to enforce security controls."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy can help with policies to cover security controls, but isn't limited to it."
+  - content: "When using Azure Policy, you are restricted to Azure resources only."
+    choices:
+    - content: "This affirmation is wrong, you can use Azure Policy outside of Azure."
+      isCorrect: true
+      explanation: "Azure Policy can handle Arc enabled resources meaning you can extend the coverage of your controls over physical servers and virtual machines hosted outside of Azure."
+    - content: "Correct, you are restricted to Azure resources when working with Azure Policy."
+      isCorrect: false
+      explanation: "Incorrect: You can extend the coverage of Azure Policy to Arc enabled resources outside of Azure."
+    - content: "Not, if you install the Azure Policy agent you can work with resources hosted outside of Azure."
+      isCorrect: false
+      explanation: "Incorrect: There isn't an Azure Policy agent."
+  - content: "Azure Policy is capable of:"
+    choices:
+    - content: "Monitor the health of your virtual machine."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy isn't a monitoring tool"
+    - content: "Provide recommendations for your Azure resources."
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy will not provide recommendations for your Azure Resources. You can use Azure Advisor instead to receive recommendations." 
+    - content: "Add required configuration at scale"
+      isCorrect: true
+      explanation: "Correct: As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure Subscription."

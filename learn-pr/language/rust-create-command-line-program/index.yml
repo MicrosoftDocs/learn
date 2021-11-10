@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Build a command-line to-do list program
 summary: Create a command-line program to manage to-do list items.  
 abstract:  |

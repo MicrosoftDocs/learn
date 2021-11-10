@@ -8,6 +8,8 @@ When this is implemented with transactions, either both entries are made or neit
 
 :::image type="content" source="../media/transactions.png" alt-text="Diagram showing the difference between using transactions and not using transactions.":::
 
+It should be noted that this refers to severe errors, such as hardware or network errors. Errors in SQL statements would only cause the transaction to roll back in certain circumstances and it is important to review the subsequent units in this module to fully understand the implications of using transactions.
+
 There are different types of transactions:
 
 ## Explicit transactions

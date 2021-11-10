@@ -10,7 +10,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 ## Create a storage account using Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the resource menu, or from the **Home** page, under **Azure services**, select **Storage accounts**. The **Storage accounts** pane appears.
 
@@ -28,19 +28,19 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Region | Select a location near to you from the dropdown list. |
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
-   
-1. Select **Next : Advanced**. Enter or select the following values for each setting.
+
+1. Select **Next : Advanced**. On the **Advanced** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
     | **Security** | |
     | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
-    | Enable infrastructure encryption | *Uncheck*. We'll allow clients to read data in that container without authorizing the request. |
+    | Enable infrastructure encryption | *Uncheck*. Provides additional layer of security. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
     | Enable storage account key access | *Check*. We'll allow clients to access dat via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
-    | **Data Lake Storage Gen 2** | |
+    | **Data Lake Storage Gen2** | |
     | Enable hierarchical namespace | *Uncheck*. This is for big-data applications that aren't relevant to this module. |
     | **Blob storage** | |
     | Enable network file share | *Uncheck* (default). |
@@ -54,16 +54,16 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     > [!WARNING]
     > If  *Enable large file shares* is selected, it will enforce additional restrictions, and Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn't support SSL for custom domain names, this option cannot be used with a custom domain name.
 
-1. Select **Next : Networking**. Enter the following values for each setting.
+1. Select **Next : Networking**. On the **Networking** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
     | **Network connectivity**| |
-    | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
+    | Connectivity method | *Public endpoint (all networks)*. We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | **Network routing**| |
     | Routing preference | *Microsoft network routing*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
-1. Select **Next : Data protection**. Enter the following value for the setting.
+1. Select **Next : Data protection**. On the **Data protection** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -73,17 +73,15 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Enable soft delete for containers | *Uncheck*. Soft delete lets you recover your containers that are deleted accidentally. |
     | Enable soft delete for file shares | *Uncheck*. File share soft delete lets you recover your blob data more easily at the folder level. |
  | **Tracking**| |
-    | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. | 
+    | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. |
     | Enable blob change feed | *Uncheck*. Not necessary for this implementation. |
 
 1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 
-1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them..
+1. Select **Review + create** to validate your options and to ensure all the required fields are selected. If there are issues, this tab will identify them so you can correct them.
 
-1. After validation passes successfully, select **Create** to deploy the storage account.
+1. When validation passes successfully, select **Create** to deploy the storage account.
 
-   It may take up to two minutes to deploy the account.
-
-1. When deployment is complete, select **Go to resource** to view your newly-created storage account.
+1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about the storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.

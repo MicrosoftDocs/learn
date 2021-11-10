@@ -86,9 +86,9 @@ matrix:
     node-version: [8.x, 10.x]
 ```
 
-Here, we configured a [build matrix](https://help.github.com/articles/configuring-a-workflow#configuring-a-build-matrix?azure-portal=true) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
+Here, we configured a [build matrix](https://docs.github.com/enterprise-server@3.1/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix will produce four builds, one for each operating system paired with each version of Node.
 
-Four builds along with all their tests will produce quite a bit of log information. It might be difficult to sort through it all. In the sample below, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Making the build and test steps separate will make it easier to understand the log.
+Four builds, along with all their tests, will produce quite a bit of log information. It might be difficult to sort through it all. In the sample below, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Making the build and test steps separate will make it easier to understand the log.
 
 ```yml
 test:
@@ -119,7 +119,7 @@ Storing an artifact helps to preserve it between jobs. Each job uses a fresh ins
 
 ## Artifact storage
 
-Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifact for 90 days.
+Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifacts for 90 days.
 
 In the following workflow snippet, notice that in the ```actions/upload-artifact@master``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it was just a file that we wanted to upload, we could use something like *public/mytext.txt*.
 

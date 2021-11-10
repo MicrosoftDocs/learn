@@ -5,9 +5,10 @@ metadata:
   description: "We introduce 5G for Azure in the Enterprise"
   ms.date: 07/20/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
+  ms.custom: team=nextgen
 title: "Introduction to 5G for Azure in the Enterprise"
 summary: "Characterize the types of new services that can be built using 5G technology and Azure private multi-access edge compute (MEC). Describe the components of Azure private MEC, which help to implement 5G technology in the enterprise. Explain the types of problems you can solve in the enterprise by leveraging 5G technologies and using tools familiar to Azure developers. "
 abstract: | 

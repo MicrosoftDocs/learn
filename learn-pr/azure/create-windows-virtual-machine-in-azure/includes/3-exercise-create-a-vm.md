@@ -8,19 +8,9 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In *Search services and marketplace* search box, enter **Windows Server** and press <kbd>Enter</kbd>.
+1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. The **Windows Server** pane appears.
 
-1. To the right of the search box, select the filter *Publisher name:* **All**, enter **Microsoft**, and then press <kbd>Enter</kbd>.
- 
-    :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing virtual machine image options.":::
-
-1. The result shows several *Windows Server*-related images. Select the **Windows Server** Virtual Machine image.
-
-    :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the Windows Server virtual machine image highlighted.":::
-
-    The **Windows Server** pane appears.
-
-1. There are several Windows Server options to choose from to create your VM. In the **Select a plan** dropdown list, scroll to the bottom, and select **[smalldisk] Windows Server 2019 Datacenter**.
+1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter**.
 
 1. Select **Create**. The **Create a virtual machine** pane appears.
 
@@ -38,7 +28,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 > [!NOTE]
 > It's a best practice to use a standard naming convention for resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
-1. On the **Basics** tab, select or enter the following values.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -47,7 +37,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Resource Group | Select ***<rgn>[sandbox resource group name]</rgn>***. |
     | **Instance details** |
     | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2). |
-    | Region | Select a region close to you from the global regions listed below this table. |
+    | Region | Select a region close to you from the global regions listed in the following table. |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
     | Azure Spot instance| Accept default (unchecked). |
@@ -64,25 +54,25 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-    
+
 1. Select **Next : Disks**.
     > [!TIP]
     > You can use the horizonal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane to the right.
 
 ## Configure disks for the VM
 
-1. On the **Disks** tab, select the following values.
+1. On the **Disks** tab, enter or select the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
     | **Disk options** |
     | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
-    | SSE encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
+    | Encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
     | Enable Ultra Disk compatibility | Accept default (unchecked) |
     | **Data disks** |
     | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *Encryption type*; and *Enable shared disk*. This is where you could use a snapshot, or Storage Blob, to create a VHD. |
-    
-1. Select **OK** to save the settings and close the pane.
+
+1. Select **OK** to save the settings, and close the pane.
 
     :::image type="content" source="../media/3-configure-disks.png" alt-text="Screenshot showing the configure disks section for the VM.":::
 
@@ -95,19 +85,20 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
 1. Select **Next : Networking**.
 
    In a production system, where other components are already in use, it would be important to use an _existing_ virtual network so that the VM can communicate with the other cloud services in the production solution. If no virtual network has defined in this location, create it here and configure the:
+
     - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add more subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
 1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
 
-1. On the **Create virtual network** pane, enter the following values.
+1. On the **Create virtual network** pane, enter the following values for each setting.
 
-    | Field | Value |
+    | Setting | Value |
     |---------|---------|
     | **Address space** |
-    | *Address range* | Select the checkbox in the row below the heading and enter `172.16.0.0/16` to give the address space a full range of addresses. If another address range row exists, select it so that it is deleted. |
+    | *Address range* | Select the checkbox in the row below the heading, and enter `172.16.0.0/16` to give the address space a full range of addresses. If another address range row exists, select it to delete it. |
     | **Subnets** |
-    | *Subnet name* | Select the checkbox in the row below the heading and enter *default* in the first input field. If another row exists, select it to delete it.|
+    | *Subnet name* | Select the checkbox in the row below the heading, and enter *default* in the first input field. If another row exists, select it to delete it. |
     | *Address range* | In the empty input field, enter `172.16.1.0/24` to give the subnet 256 IP addresses of space. |
 
 1. Select **OK** to save your settings and return to the **Create a virtual machine** pane.
@@ -123,4 +114,6 @@ On the **Create a virtual machine** pane, the rest of the tabs have reasonable d
 
 1. Select **Create** to deploy the VM. The Azure dashboard will show the name VM that's being deployed and details about your deployment. Deployment may take several minutes.
 
-While your VM is deploying, let's look at what we can do with this VM.
+1. After deployment completes, select **Go to resource**. Your virtual machine pane appears.
+
+Now, let's look at what we can do with this VM.

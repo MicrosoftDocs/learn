@@ -5,9 +5,10 @@ metadata:
   description: "University of Oxford"
   ms.date: 9/29/2019
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Introduction to Azure IoT Hub"
 summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
 abstract: |

@@ -150,7 +150,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. Go to the function app that you created in the preceding unit. In the top left corner of the portal, select **Home**, and in the **Recent resources** section, you should see your app with **Function App** identified in the **Type** column. Select your app, and the **Function App** pane appears.
 
-1. In the left menu pane, under **Functions**, select **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears.
 
 1. To start the function creation process, from the top menu bar, select **Create**. The **Create function** pane appears showing the complete set of supported triggers.
 
@@ -334,9 +334,9 @@ Let's examine what this code is doing.
           "name": "bookmark",
           "direction": "in",
           "type": "cosmosDB",
+          "connectionStringSetting": "your-database_DOCUMENTDB",
           "databaseName": "func-io-learn-db",
           "collectionName": "Bookmarks",
-          "connectionStringSetting": "your-database_DOCUMENTDB",
           "id": "{id}",
           "partitionKey": "{id}"
         }
@@ -352,7 +352,7 @@ Let's examine what this code is doing.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
 
-1. In the top menu bar, select **Get Function URL**. The **Get Function URL** dialog box appears.
+1. In the top menu bar, select **Get function URL**. The **Get function URL** dialog box appears.
 
 1. From the **Key** dropdown list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
 

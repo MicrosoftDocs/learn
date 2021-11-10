@@ -1,4 +1,4 @@
-A tenant-wide setting, are the configuration options that apply to all resources within your tenant as the name implies.  These tenant wide options are set in specific places, to control the look, feel, and configuration of your tenant and its members.
+Tenant-wide settings are the configuration options that apply to all resources within your tenant as the name implies.  These tenant wide options are set in specific places, to control the look, feel, and configuration of your tenant and its members.
 
 Tenant-wide option
 

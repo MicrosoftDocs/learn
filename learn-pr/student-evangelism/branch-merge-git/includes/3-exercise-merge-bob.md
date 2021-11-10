@@ -2,7 +2,7 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
 ## Create a branch for Bob
 
-1. Return to the *Bob* directory and use the following command to create a branch named `add-cat`. Use the popular `checkout -b` option to create the branch and switch to it in a single command.
+1. Return to the *Bob* directory, and run the following command to create a branch named `add-cat`. Use the popular `checkout -b` option to create the branch and switch to it in a single command.
 
     ```bash
     cd ../Bob
@@ -10,10 +10,10 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     ```
 
-1. Download the zip file that contains [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true). Then, unzip the resource files:
+1. Download the zip file that contains [some website resources](https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip). Then, unzip the resource files:
 
     ```bash
-    wget https://topcs.blob.core.windows.net/public/git-resources.zip
+    wget https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip
     unzip git-resources.zip
 
     ```
@@ -33,16 +33,16 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
     <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    Save the file and close the editor.
+1. Save the file, and close the editor.
 
-1. You've made two changes to Bob's `add-cat` branch—you added one file and modified another. Use `git status` to double-check your changes:
+1. You've made two changes to Bob's `add-cat` branch &mdash; you added one file and modified another. Run `git status` to double-check your changes:
 
     ```bash
     git status
 
     ```
 
-1. Then, use the following commands to add the new file in the *Assets* directory to the index and commit all changes:
+1. Then, run the following commands to add the new file in the *Assets* directory to the index and commit all changes:
 
     ```bash
     git add .
@@ -50,7 +50,7 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     ```
 
-1. Bob now does the same action that Alice did earlier. Bob switches back to the `main` branch and executes a pull to see if anything has changed:
+1. Bob now does the same action that Alice did earlier. Bob switches back to the `main` branch, and executes a pull to see if anything has changed:
 
     ```bash
     git checkout main
@@ -87,7 +87,7 @@ Bob didn't use the `--ff-only` flag because they knew that `main` had changed. A
 
 At this point, Bob has an up-to-date repo, but Alice doesn't. Alice needs to do a `git pull` from the shared repo to make sure they have the latest and greatest version of the site.
 
-Use the following commands to sync Alice's repo with the shared repo:
+Run the following commands to sync Alice's repo with the shared repo:
 
 ```bash
 cd ../Alice
@@ -95,10 +95,10 @@ git pull
 
 ```
 
-Take a moment to verify that Alice's repo and Bob's repo are synced. Each of the repos should have a JPG file in the *Assets* directory and an `<img>` element declared in the *index.html* file. The *site.css* file in each repo's *Assets* folder should contain a line that defines a CSS style named *cat*. This style was added by Alice when Alice made their changes.
+Take a moment to verify that Alice's repo and Bob's repo are synced. Each of the repos should have a JPG file in the *Assets* directory, and an `<img>` element declared in the *index.html* file. The *site.css* file in each repo's *Assets* folder should contain a line that defines a CSS style named *cat*. This style was added by Alice when they made their changes.
 
 If you open *index.html* in a browser, you'll see this image:
 
 :::image type="content" source="../media/first-cat.png" alt-text="Screenshot that shows cats on the website.":::
 
-In the next lesson, you learn how to resolve merge conflicts, which occur when changes made by two or more developers overlap.
+In the next lesson, you'll learn how to resolve merge conflicts, which occur when changes made by two or more developers overlap.

@@ -6,3 +6,4 @@ After completing this module, you’ll be able to:
 * Compare transactions and batches.
 * Create and manage transactions.
 * Handle errors in transactions.
+* Describe concurrency.

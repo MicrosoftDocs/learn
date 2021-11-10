@@ -17,8 +17,8 @@ ms.author: jodowns
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
-1. Switch your terminal to the directory where you saved your template. For example, if you saved it to the *scripts* folder, you can use this command:
+1. Switch your terminal to the directory where you saved your template. For example, if you saved it to the *templates* folder, you can use this command:
 
     ```azurecli
-    cd scripts
+    cd templates
     ```

@@ -1,0 +1,5 @@
+Log Analytics provides a scalable, simple solution for storing and retrieving event and metrics data for any downstream alert or reporting functionality. The Azure Monitor Log Analytics agent installed on the VM captures the event and metric information from the Event Log (in Windows) or the Syslog (in Linux). A large amount of SAP telemetry data in JSON format is written to these logs by default, including both SAP system log information, such as short dumps or failed updates and infrastructure data, such as CPU usage, network usage, memory usage.
+
+You can use Azure Monitor (including Log Analytics) to monitor Azure VMs hosting SAP workloads and any components of your SAP environment in Azure. Also, consider applying third-party SAP monitoring solutions available from Azure Marketplace that integrate with Azure Monitor, such as Blue Medora’s SAP Monitoring.
+
+In addition, Azure Security Center protects both Azure and non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, by installing the Log Analytics agent on them.

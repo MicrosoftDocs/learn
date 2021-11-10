@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Secure your cloud resources with access control
 summary: Learn about digital identities and how they can be managed and synchronized within an organization.
 abstract: | 

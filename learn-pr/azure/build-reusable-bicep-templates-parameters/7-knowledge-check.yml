@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/20/2021
+  ms.date: 10/29/2021
   author: wviriya
   ms.author: wviriya
   ms.topic: interactive-tutorial
@@ -46,6 +46,6 @@ quiz:
     - content: You can view the value of the `apiKey` parameter for this deployment by looking at the output of the deployment command.
       isCorrect: false
       explanation: Incorrect. Normally, the deployment command will show you the values of each parameter. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value isn't available to you to view.
-    - content: You can view the value of the `apiKey` parameter for this deployment by using the Azure portal.
+    - content: You can view the value of the `apiKey` parameter by inspecting the resource group deployments in the Azure portal.
       isCorrect: false
       explanation: Incorrect. Normally, the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value isn't available to you to view.

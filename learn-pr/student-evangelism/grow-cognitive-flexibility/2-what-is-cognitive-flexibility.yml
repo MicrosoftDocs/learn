@@ -3,12 +3,13 @@ uid: learn.student-evangelism.grow-cognitive-flexibility.what-is-cognitive-flexi
 title: What is cognitive flexibility?
 metadata:
   title: What is cognitive flexibility?
-  description: This unit is looking to define the concept cognitive flexibility and stress the importance of it.
+  description: This unit defines cognitive flexibility and stresses its importance.
   ms.date: 09/07/2021
   author: interurban
   ms.author: jadenyer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 
 durationInMinutes: 4
 content: |

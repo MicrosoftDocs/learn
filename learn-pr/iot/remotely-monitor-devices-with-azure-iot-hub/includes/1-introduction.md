@@ -2,7 +2,7 @@ Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent
 
 An IoT Hub can scale to handle millions of devices. An IoT device can upload files, as well as send telemetry.
 
-In this module, you'll learn about IoT Hub by implementing a system to monitor and control conditions in a cheese cave. A simple scenario, one IoT Hub, and one remote device.
+In this module, you'll learn about IoT Hub by implementing a system to monitor and control conditions in a cheese cave.
 
 ## Learning objectives
 
@@ -19,8 +19,8 @@ In this module you will:
 
 - An introductory knowledge of Azure IoT
 - Ability to navigate Azure IoT portal
-- Ability to use Node.js, or C#, at the beginner level
-- Experience using Visual Studio, or Visual Studio Code, at the beginner level
+- Ability to use Node.js or C# at the beginner level
+- Experience using Visual Studio or Visual Studio Code at the beginner level
 
 ## Learn the scenario
 

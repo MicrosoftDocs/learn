@@ -5,9 +5,10 @@ metadata:
   description: Learn how to use dynamic rendering with Vue.js and JavaScript.
   ms.date: 03/01/2021
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Dynamic page displays with Vue.js
 summary: One of the goals of any web framework is to update the display based on data values. This module explores how to make your page dynamic based on those values and how to display lists of information.
 abstract: | 
