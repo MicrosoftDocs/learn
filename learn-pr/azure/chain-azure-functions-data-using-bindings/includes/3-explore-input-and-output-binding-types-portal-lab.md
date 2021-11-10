@@ -1,4 +1,4 @@
-In this exercise, we'll create a function that will run when it receives an HTTP request, and will respond to each request by returning a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
+In this exercise, we'll create a function that runs when it receives an HTTP request, and responds to each request by returning a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
 
 See the following high-level illustration of what we're going to build.
 
@@ -32,7 +32,7 @@ Create
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that you want to use for this exercise. |
-    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This is the resource group for the sandbox. |
+    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
@@ -62,7 +62,7 @@ Create
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that you want to use for this exercise. |
-    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This is the resource group for the sandbox. |
+    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for the sandbox. |
     | **Instance Details** |
     | Function App name | Enter a *globally unique name* | This name identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
@@ -101,7 +101,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     - In the **Authorization level** text box, accept default value *Function*.
 
-        The authorization level determines what keys need to be present on the request in order to invoke the function. *Function* requires a function-specific key.
+        Authorization level determines what keys need to be present on the request in order for it to run. *Function* requires a function-specific key.
 
 1. Select **Create**. The **HttpTrigger1** pane for your *Function* appears.
 
@@ -121,7 +121,7 @@ Now that we have a function app, it's time to create a function. A function is a
     Hello, Azure. This HTTP triggered function ran successfully.
     ```
 
-    As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation in JavaScript, shown in the following screenshot, responds with the value of the parameter *name* that was in the query string or body of the request. If no query string was provided, the function responds with a message that asks whomever is calling to supply a name value.
+    As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means our function starts when it receives an HTTP request. The default implementation in JavaScript, shown in the following screenshot, returns the value of the parameter *name* that was in the query string or body of the request. If no query string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
 1. In the Azure portal, in the left menu pane, under **Developer**, select **Code + Test**.
 
@@ -191,7 +191,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     - In the **Authorization level** text box, accept  the default value *Function*.
 
-        The authorization level determines what keys need to be present on the request in order to invoke the function. *Function* requires a function-specific key.
+        Authorization level determines what keys need to be present on the request in order for it to run. *Function* requires a function-specific key.
 
         :::image type="content" source="../media/3-add-function-small.png" alt-text="Screenshot for the Add Function pane." lightbox="../media/3-add-function.png#lightbox":::
 
@@ -199,7 +199,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then selec **OK** to close the dialog box.
+1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog box.
 
 1. In a browser tab, paste the function URL you copied into the address bar.
 
@@ -213,11 +213,9 @@ Now that we have a function app, it's time to create a function. A function is a
     Hello, Azure. This HTTP triggered function ran successfully.
     ```
 
-    As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following image in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that prompts whomever is calling to supply a name value.
+    As you can see from this exercise so far, you must select a trigger type when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following image in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* that was part of the query string or body of the request. If no string was provided, the function responds with a message that prompts whomever is calling to supply a name value.
 
-1. In the left menu pane, under **Developer**, select **Code + Test** to view the code.
-
-    The **Code + Test** pane for your function appears, which should display the contents of your **run.ps1** file.
+1. In the Function menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears, and displays the contents of your **run.ps1** file.
 
     :::image type="content" source="../media/3-default-http-trigger-implementation-powershell-small.png" alt-text="Code and Test pane for HTTP request showing response and respective binding parameters." lightbox="../media/3-default-http-trigger-implementation-powershell.png#lightbox)"::: <!-- no-loc -->
 
@@ -285,7 +283,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-    Notice that we have already defined a trigger and an output binding, as shown in the following image.
+    Notice that we've already defined a trigger and an output binding, as shown in the following image.
 
     :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Output." lightbox="../media/3-function-integration-vertical.png":::
 
