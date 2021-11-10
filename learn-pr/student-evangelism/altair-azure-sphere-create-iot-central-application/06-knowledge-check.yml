@@ -25,5 +25,5 @@ quiz:
       explanation: "The Altair emulator runs on Azure Sphere. Azure IoT Central is a cloud-based solution that's used to configure the Altair emulator."
     - content: "Azure IoT Central is a cloud-based solution that's used to configure the Altair emulator running on Azure Sphere."
       isCorrect: true
-      explanation: "Azure IoT Central is a cloud-based application that in this case will be used to configure the Altair emulator running on Azure Sphere. The Altair emulator will also report diagnostic information and weather telemetry to Azure IoT Central."
+      explanation: "Azure IoT Central is a cloud-based application that in this case will be used to configure the Altair emulator running on Azure Sphere."
   
