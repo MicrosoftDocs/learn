@@ -9,6 +9,7 @@ metadata:
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 3
 azureSandbox: true
 interactive: bash

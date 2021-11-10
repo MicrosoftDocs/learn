@@ -19,14 +19,13 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 1. Add the following code to *:::no-loc text="Models/Pizza.cs":::* to define a pizza. Save your changes.
 
     ```csharp
-    namespace ContosoPizza.Models
+    namespace ContosoPizza.Models;
+
+    public class Pizza
     {
-        public class Pizza
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-            public bool IsGlutenFree { get; set; }
-        }
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public bool IsGlutenFree { get; set; }
     }
     ```
 
@@ -49,51 +48,48 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     ```csharp
     using ContosoPizza.Models;
-    using System.Collections.Generic;
-    using System.Linq;
-
-    namespace ContosoPizza.Services
+    
+    namespace ContosoPizza.Services;
+    
+    public static class PizzaService
     {
-        public static class PizzaService
+        static List<Pizza> Pizzas { get; }
+        static int nextId = 3;
+        static PizzaService()
         {
-            static List<Pizza> Pizzas { get; }
-            static int nextId = 3;
-            static PizzaService()
+            Pizzas = new List<Pizza>
             {
-                Pizzas = new List<Pizza>
-                {
-                    new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false },
-                    new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true }
-                };
-            }
+                new Pizza { Id = 1, Name = "Classic Italian", IsGlutenFree = false },
+                new Pizza { Id = 2, Name = "Veggie", IsGlutenFree = true }
+            };
+        }
 
-            public static List<Pizza> GetAll() => Pizzas;
+        public static List<Pizza> GetAll() => Pizzas;
 
-            public static Pizza Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
+        public static Pizza? Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
 
-            public static void Add(Pizza pizza)
-            {
-                pizza.Id = nextId++;
-                Pizzas.Add(pizza);
-            }
+        public static void Add(Pizza pizza)
+        {
+            pizza.Id = nextId++;
+            Pizzas.Add(pizza);
+        }
 
-            public static void Delete(int id)
-            {
-                var pizza = Get(id);
-                if(pizza is null)
-                    return;
-                
-                Pizzas.Remove(pizza);
-            }
+        public static void Delete(int id)
+        {
+            var pizza = Get(id);
+            if(pizza is null)
+                return;
+            
+            Pizzas.Remove(pizza);
+        }
 
-            public static void Update(Pizza pizza)
-            {
-                var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
-                if(index == -1)
-                    return;
-                
-                Pizzas[index] = pizza;
-            }
+        public static void Update(Pizza pizza)
+        {
+            var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
+            if(index == -1)
+                return;
+            
+            Pizzas[index] = pizza;
         }
     }
     ```
