@@ -63,10 +63,10 @@ Before publishing this iteration of the model for applications to use, you shoul
 
 Now you're ready to publish your trained model and use it from a client application.
 
-9. Click **&#128504; Publish** to publish the trained model with the following settings:
+1. Click **&#128504; Publish** to publish the trained model with the following settings:
     - **Model name**: groceries
     - **Prediction Resource**: *The prediction resource you created previously*.
-10. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task. 
+2. After publishing, click the *Prediction URL* (&#127760;) icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task. 
 
 ## Run Cloud Shell 
 
@@ -80,7 +80,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. 
 
-    ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
+    [![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)](../media/powershell-portal-guide-2.png#lightbox)       
 
 4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
