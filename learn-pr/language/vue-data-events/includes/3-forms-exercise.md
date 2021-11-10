@@ -2,7 +2,7 @@ Here you'll update a fictitious application that allows users to book cruises in
 
 ## Clone the starter repository and explore the code
 
-This module has an associated starter repository. This starter allows you to focus on only the concepts in this module. 
+This module has an associated starter repository. This starter allows you to focus on only the concepts in this module.
 
 You'll need [Git](https://git-scm.com/?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) installed. In Visual Studio Code, you'll need the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension.
 
