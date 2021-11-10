@@ -8,7 +8,7 @@ Follow the instructions that apply to your operating system:
 
 * **For Windows**, do either of the following: 
    * Download OpenSSL from [openssl.org](https://wiki.openssl.org/index.php/Binaries?azure-portal=true).
-   * Use [Windows Subsystem for Linux (WSL)](/windows/wsl/install-win10). Depending on the WSL Linux distribution you install, you might need to install OpenSSL. which you can do by using your Linux distributions package manager. For example, on Ubuntu, run: `sudo apt-get install openssl`.
+   * Use [Windows Subsystem for Linux (WSL)](/windows/wsl/install-win10). Depending on the WSL Linux distribution you install, you might need to install OpenSSL, which you can do by using your Linux distributions package manager. For example, on Ubuntu, run: `sudo apt-get install openssl`.
 
 ## Step 2: Delete the existing placeholder certificates
 
