@@ -1,0 +1,1 @@
+Your team will be managing the device provisioning lifecycle for thousands of devices using the Azure IoT Hub Device Provisioning Service. The experience that you have gained by implementing an individual enrollment process for device provisioning and deprovisioning tasks will help to ensure the team's success during the upcoming device deployment phases.
