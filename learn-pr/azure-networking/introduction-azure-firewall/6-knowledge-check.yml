@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-azure-firewall.5-knowledge-check
+uid: learn.introduction-azure-firewall.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 12/28/2020
+  ms.date: 11/10/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -48,3 +48,14 @@ quiz:
     - content: "Secured virtual hub"
       isCorrect: false
       explanation: "That's incorrect. A secured virtual hub is an Azure Virtual WAN Hub where one or more firewall policies have been applied and is an acceptable network architecture for Azure Firewall Manager."
+  - content: "If you want to filter www.microsoft.com/surface, which product and feature would you use?" 
+    choices:
+    - content: "Azure Firewall FQDN filtering"
+      isCorrect: false
+      explanation: "That's incorrect. You need to inspect the entire URL, not just am FQDN."
+    - content: "Azure Firewall Premium URL filtering"
+      isCorrect: true
+      explanation: "That's correct. You need to inspect the entire URL, and that capability is included in Azure Firewall Premium."
+    - content: "Azure Firewall Premium Link filtering"
+      isCorrect: false
+      explanation: "That's incorrect. You need to inspect the entire URL, and Link filtering is not an actual Azure Firewall Premium feature."
