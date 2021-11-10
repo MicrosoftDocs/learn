@@ -132,8 +132,6 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    Notice that the workflow run now shows all the jobs that you defined in the YAML files.
 
-   :::image type="content" source="../media/5-jobs.png" alt-text="Screenshot of GitHub that shows the workflow run jobs.":::
-
    Some warnings are listed in the **Annotations** panel. All of these warnings are because of the way Bicep writes informational messages to the workflow log. You can ignore these warnings.
 
 1. Wait for the workflow to pause before the **deploy-production / deploy** job. It might take a few minutes for the workflow to reach this point.
