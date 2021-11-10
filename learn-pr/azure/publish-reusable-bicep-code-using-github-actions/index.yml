@@ -5,32 +5,39 @@ metadata:
   title: Publish reusable Bicep code by using GitHub Actions
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 11/11/2021
-  author: johndowns
-  ms.author: jodowns
+  author: pazdedav
+  ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Publish reusable Bicep code by using GitHub Actions
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+summary: |
+  TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 abstract: |
-  By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+  After completing this module, you'll be able to:
+    - Understand the options for publishing reusable Bicep code, including template specs and registries.
+    - Publish Bicep modules to a private registry from a GitHub Actions workflow.
+    - Publish Bicep files to a template spec from a GitHub Actions workflow.
 prerequisites: |
   - "TODO prerequisite 1"
   - "TODO prerequisite 2"
   - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master"
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
-  - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+iconUrl: /learn/achievements/bicep/publish-reusable-bicep-code-using-github-actions.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
-- azure
+  - administrator
+products:
+  - azure-resource-manager
 units:
 - learn.azure.publish-reusable-bicep-code-using-github-actions.introduction
-- learn.azure.publish-reusable-bicep-code-using-github-actions.learning-content
-- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise
+- learn.azure.publish-reusable-bicep-code-using-github-actions.understand-template-specs-bicep-registries
+- learn.azure.publish-reusable-bicep-code-using-github-actions.work-registries-github-actions-workflow
+- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-set-up-environment
+- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-create-workflow-publish-registry
+- learn.azure.publish-reusable-bicep-code-using-github-actions.work-template-specs-github-actions-workflow
+- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-create-workflow-publish-template-spec
 - learn.azure.publish-reusable-bicep-code-using-github-actions.knowledge-check
 - learn.azure.publish-reusable-bicep-code-using-github-actions.summary
 badge:

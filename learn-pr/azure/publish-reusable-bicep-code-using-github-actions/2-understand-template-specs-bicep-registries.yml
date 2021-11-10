@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-reusable-bicep-code-using-github-actions.introduction
-title: Introduction
+uid: learn.azure.publish-reusable-bicep-code-using-github-actions.understand-template-specs-bicep-registries
+title: Understand template specs and Bicep registries
 metadata:
-  unitType: introduction
-  title: Introduction
+  unitType: learning-content
+  title: Understand template specs and Bicep registries
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 11/11/2021
   author: pazdedav
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-understand-template-specs-bicep-registries.md)]

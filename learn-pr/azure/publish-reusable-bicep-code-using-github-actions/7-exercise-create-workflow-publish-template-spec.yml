@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-reusable-bicep-code-using-github-actions.summary
-title: Summary
+uid: learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-create-workflow-publish-template-spec
+title: Exercise - Create a workflow to publish a template spec
 metadata:
-  unitType: summary
-  title: summary
+  unitType: exercise
+  title: Exercise - Create a workflow to publish a template spec
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 11/11/2021
-  author: johndowns
-  ms.author: jodowns
+  author: pazdedav
+  ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/7-exercise-create-workflow-publish-template-spec.md)]
