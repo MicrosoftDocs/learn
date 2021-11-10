@@ -5,7 +5,7 @@ The Azure Storage Blobs client library for .NET is distributed with NuGet. You'l
 
 ## Add the Azure Storage NuGet package
 
-1. Recall in unit 3 that you created a a new .NET Core Console application called *PhotoSharingApp*. In the terminal, `cd` to the **PhotoSharingApp** directory if you aren't already there.
+1. In unit 3 that you created a new .NET Core Console application called *PhotoSharingApp*. In the terminal, `cd` to the **PhotoSharingApp** directory if you aren't already there.
 
 1. Add the **Azure.Storage.Blobs** package to the application.
 
