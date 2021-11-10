@@ -1,4 +1,5 @@
-name: learn-github-actions
+name: deploy-toy-website
+concurrency: toy-company
 
 on: 
   push:
