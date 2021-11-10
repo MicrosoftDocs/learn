@@ -139,7 +139,7 @@ In this module, you'll be using some of the key functional components of **Power
 
 ## Create order summary page
 
-1. Add a **Button** to **Product_details** and **Details_carpets** screens. Rename the button to **Order_product** and **Order_carpet** respectively. Change the display text of the button to **Order**.
+1. Add a **Button** to **Product_details** and **Carpet_details** screens. Rename the button to **Order_product** and **Order_carpet** respectively. Change the display text of the button to **Order**.
 
     :::image type="content" source="../media/add-order-button.png" alt-text="Screenshot of adding order button" lightbox="../media/add-order-button.png":::
 
@@ -155,7 +155,7 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/configure-order-button.png" alt-text="Screenshot of Order OnSelect config" lightbox="../media/configure-order-button.png":::
 
-4. Follow the same procedure for **Details_carpets** screen.
+4. Follow the same procedure for **Carpet_details** screen.
 
 5. In the **Order_products** page, insert **Product**, **Price**, **Color**, and **Notes** labels and rename them accordingly.
 
@@ -169,7 +169,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Product**:
 
         ```PowerApps
-        Gallery_products.Selected.'Name (Title)'
+        Gallery_products.Selected.Name
         ```
 
         :::image type="content" source="../media/configure-product-label.png" alt-text="Screenshot of configuring Product text" lightbox="../media/configure-product-label.png":::
@@ -291,9 +291,8 @@ In this module, you'll be using some of the key functional components of **Power
 2. Open the **Order_products** and configure the **OnSelect** property of the **Confirm** button by adding the following lines:
 
     ```PowerApps
-    Office365Outlook.SendEmailV2(Input1_sofas & ";"& Input2_products,"Order Summary","<b> Your order is successfully submitted! </b> <br>
-    Order details are as follows: <ul> <li> Product: " & name_details & "</li> <li> Price: " & price_details & "</li> <li> Color: " & color_details & "</li> </ul>Notes: " & TextInput_products & "<br><b> Thank you for shopping with us! </b>");
-    Navigate('End page',ScreenTransition.Cover) 
+    Office365Outlook.SendEmailV2(Input1_products & ";"& Input2_products,"Order Summary","<b> Your order is successfully submitted! </b> <br> Order details are as follows: <ul> <li> Product: " & Order_product_name_details & "</li> <li> Price: " & Order_price_details & "</li> <li> Color: " & Order_color_details & "</li> </ul>Notes: " & TextInput_products & "<br><b> Thank you for shopping with us! </b>");
+    Navigate('End page',ScreenTransition.Cover)
     ```
 
     :::image type="content" source="../media/configure-confirm-email-button.png" alt-text="Screenshot of configuring confirm button" lightbox="../media/configure-confirm-email-button.png":::
