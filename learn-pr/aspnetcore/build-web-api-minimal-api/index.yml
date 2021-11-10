@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a web API  with minimal API and .NET 6
-summary: Learn how to
+summary: Learn how to build a web API  with minimal API and .NET 6
 abstract: |
   In this module you will:
   - Distinguish between using a controller-based API and using a minimal API.
