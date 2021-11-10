@@ -34,7 +34,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 1. Save the file using the keyboard shortcut (<kbd>Ctrl+S</kbd>) or select the ellipsis `...` in the top right corner of the editor to use the context menu.
 
-1. Now, we need use an Azure command to obtain the actual storage account connection string to replace the placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
+1. Now, we need use an Azure command to obtain the actual storage account connection string to replace the placeholder `<value>`. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
 
     ```azurecli
     az storage account show-connection-string \
@@ -49,7 +49,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
     ```
 
-1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the <value> placeholder with this connection string.
+1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the `<value>` placeholder with this connection string.
 
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
