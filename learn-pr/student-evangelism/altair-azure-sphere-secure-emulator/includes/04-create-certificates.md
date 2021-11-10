@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create certificates to secure the connection to an MQTT broker.
+In this unit, you'll learn how certificates help secure the connection to an MQTT broker.
 
 ## Understand the Altair emulator communications architecture
 
