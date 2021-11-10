@@ -24,10 +24,8 @@ The image below shows an organization's Secure Score, a breakdown of the score b
 
 :::image type="content" source="../media/3-secure-score-overview-3-inline.png" lightbox="../media/3-secure-score-overview-3-expanded.png" alt-text="Screenshot showing the Microsoft Secure Score page.":::
 
-## Differences between the Azure and Microsoft Secure Score
+### Differences between secure score in Microsoft 365 Defender and Microsoft Defender for Cloud
 
-There's a Secure Score for both Microsoft 365 Defender and Azure Defender, but they're subtly different. Secure Score in the Azure Security Center is a measure of the security posture of your Azure subscriptions. Secure Score in the Microsoft 365 Defender portal is a measure of the security posture of the organization across your apps, devices, and identities.
+There's a secure score for both Microsoft 365 Defender and Microsoft Defender for Cloud, but they're subtly different. Secure score in Microsoft Defender for Cloud is a measure of the security posture of your Azure subscriptions. Secure score in the Microsoft 365 Defender portal is a measure of the security posture of the organization across your apps, devices, and identities.
 
-Both the Azure and Microsoft Secure Score provide a list of steps you can take to improve your score. In Microsoft 365 Secure Score, these steps are called improvement actions. In the Azure Secure Score, scores are assessed for each subscription. The steps you can take to improve your score are called security recommendations and they're grouped into security controls.
-
-Use Microsoft Secure Score to understand and rapidly improve your organization’s security posture.
+In both cases, secure score provides a list of steps you can take to improve your score. In Microsoft 365 Defender, these steps are called improvement actions. In Microsoft Defender for Cloud, scores are assessed for each subscription. The steps you can take to improve your score are called security recommendations and they're grouped into security controls.
