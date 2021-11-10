@@ -14,11 +14,11 @@ summary: Learn how to program the Altair 8800 emulator.
 abstract:  |
   In this module, you will:
   - Understand Altair BASIC and CP/M, and how to use them.
-  - Learn how to program the Altair emulator using Altair BASIC. 
+  - Learn how to program the Altair emulator by using Altair BASIC. 
   - Write an Altair BASIC application.
-  - learn how to boot CP/M and program with Microsoft Basic, C, and Assembler.
+  - Learn how to boot CP/M and program with Microsoft BASIC, C, and Assembler.
 prerequisites: |
-  - A computer with an x86-64-based processor running one of the following operating systems:
+  - A computer with an x86-based or x64-based processor running one of the following operating systems:
     - Windows 10 Anniversary Update or later
     - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
   - An Azure Sphere developer board that has one of the following kits:
