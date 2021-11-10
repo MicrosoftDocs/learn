@@ -8,54 +8,54 @@ If the key that was passed to us is *not* found, we'll add the new bookmark to o
 
 Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand the task off to a function and let complete this task asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the previous one. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this one.
+> This exercise builds on the exercise in a previous unit. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this exercise.
 
 ## Create an HTTP-triggered function
 
 ::: zone pivot="javascript"
 
-1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1.  [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the portal, go to the function app that you created in this module.
+1. In the portal, go to the function app that you created in the previous exercise.
 
-1. In the menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
+1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the portal, go to the function app that you created in this module.
+1. In the portal, go to the function app that you created in the previous exercise.
 
-1. In the menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
+1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
 ## Add an Azure Cosmos DB input binding
 
-Let's repeat what we did in the preceding exercise to add another Azure Cosmos DB input binding.
+As in the preceding exercise, let's add another Azure Cosmos DB input binding.
 
 1. Ensure your new function, **HttpTrigger3**, is selected.
 
-1. In the menu, under **Developer**, select **Integration**. The **Integration** pane for your trigger associated with your function appears.
+1. In the Function menu, under **Developer**, select **Integration**. The **Integration** pane for the trigger associated with your function appears.
 
 1. To display the list of all possible input binding types, in the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
-1. Under **Binding Type**, from the dropdown list, select **Azure Cosmos DB**.
+1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
 1. If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **install**, and wait for it to complete.
 
