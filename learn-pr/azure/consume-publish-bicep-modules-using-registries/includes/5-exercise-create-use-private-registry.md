@@ -81,7 +81,6 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
      --file app.bicep \
      --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/app:v1'
    ```
-   <!-- TODO confirm this is working in Az CLI -->
 
    Notice that you didn't need to sign in. Bicep uses the sign-in information from the Azure CLI to authenticate you to the registry.
 
