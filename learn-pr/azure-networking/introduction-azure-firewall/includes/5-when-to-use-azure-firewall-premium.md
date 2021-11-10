@@ -2,7 +2,7 @@ Organizations can leverage Azure Firewall Premium features like IDPS and TLS ins
 
 To help you decide if Azure Firewall Premium is right for your organization, consider the following scenarios:
 
-## You want inspect outbound TLS encrypted network traffic
+## You want to inspect outbound TLS encrypted network traffic
 
 Azure Firewall Premium TLS Inspection can decrypt outbound traffic, processes the data, then encrypt the data and send it to the destination.
 
