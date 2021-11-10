@@ -7,9 +7,9 @@ When Sentinel ingests data from the Data Connectors, the following table lists t
 | AuditLogs| Audit log for Azure Active Directory. Includes system activity information about user and group management managed applications and directory activities.|
 | CommonSecurityLog| Syslog messages using the Common Event Format (CEF).|
 | McasShadowItReporting| Microsoft Cloud App Security logs|
-| OfficeActivity| Audit logs for Office 365 tenants collected by Azure Sentinel. Including Exchange, SharePoint and Teams logs.|
-| SecurityEvent| Security events collected from windows machines by Azure Security Center or Azure Sentinel|
-| SigninLogs| Azure Activity Directory Sign in logs|
+| OfficeActivity| Audit logs for Office 365 tenants collected by Microsoft Sentinel. Including Exchange, SharePoint and Teams logs.|
+| SecurityEvent| Security events collected from windows machines by Azure Security Center or Microsoft Sentinel|
+| SigninLogs| Azure Activity Directory Sign-in logs|
 | Syslog| Syslog events on Linux computers using the Log Analytics agent.|
 | Event| Sysmon Events collected from a Windows host.|
 | WindowsFirewall| Windows Firewall Events|
