@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-portal.customize-ui
+title: Customize the Azure portal UI
+metadata:
+  title: Customize the Azure portal UI
+  description: "Customize the Azure portal UI"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-explore-the-azure-portal.md)]
