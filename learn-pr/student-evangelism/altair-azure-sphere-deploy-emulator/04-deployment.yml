@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.deployment
-title: Learn the steps to deploy the Altair emulator to Azure Sphere
+title: Prepare to deploy the Altair emulator to Azure Sphere
 metadata:
-  title: Learn the steps to deploy the Altair emulator to Azure Sphere
-  description: Learn the steps to deploy the Altair emulator to Azure Sphere.
+  title: Prepare to deploy the Altair emulator to Azure Sphere
+  description: Learn the high-level steps to deploy the Altair emulator to Azure Sphere.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

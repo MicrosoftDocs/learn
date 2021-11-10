@@ -1,10 +1,8 @@
-In this unit, you'll learn how to deploy the Altair emulator to your Azure Sphere.
+You're almost ready to deploy the Altair emulator to Azure Sphere.
 
-## Steps to follow
+Here's an overview of the steps you'll follow:
 
-The following list is an overview of the steps you'll follow:
-
-1. Configure the Altair emulator to connect to your Altair IoT Central application
-1. Declare the network endpoints the emulator will be connecting to in the **Capabilities** section on the project **app_manifest.json** file.
-1. Using Visual Studio, build and deploy the Altair emulator to your Azure Sphere
+1. Configure the Altair emulator to connect to your Azure IoT Central application.
+1. Declare the network endpoints that the emulator will connect to.
+1. Use Visual Studio to build and deploy the Altair emulator to Azure Sphere.
 
