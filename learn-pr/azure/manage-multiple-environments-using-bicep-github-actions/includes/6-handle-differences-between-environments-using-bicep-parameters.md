@@ -86,7 +86,7 @@ Consider making parameters optional where you can, and use default values that a
 
 Also, keep in mind that parameters are often used in Bicep when resources need to connect to other resources. For example, if you have a website that needs to connect to a storage account, you'll need to provide the storage account name and access key. Keys are secure values. However, consider these other approaches when you're deploying this combination of resources:
 
-- Use the website's managed identity to access the storage account. Azure automatically creates a managed identity, and you don't need to maintain any credentials. This approach simplifies the connection settings. It also means you don't have to handle secrets at all, so it's the most secure option.
+- Use the website's managed identity to access the storage account. When you create a managed identity, Azure automatically generates and manages it credentials. This approach simplifies the connection settings. It also means you don't have to handle secrets at all, so it's the most secure option.
 - Deploy the storage account and website together in the same Bicep template. Use Bicep modules to keep the website and storage resources together. Then, you can automatically look up the values for the storage account name and the key within the Bicep code, instead of passing in parameters.
 - Add the storage account's details to a key vault as a secret. The website code then loads the access key directly from the vault. This approach avoids the need to manage the key in the workflow at all.
 
