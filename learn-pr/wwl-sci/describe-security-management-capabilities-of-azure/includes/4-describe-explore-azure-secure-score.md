@@ -7,7 +7,7 @@ The secure score is shown in the Azure portal pages as a percentage value. The u
 
 To increase your security and raise your score, review the recommendations page for the outstanding actions necessary. Each recommendation includes instructions to help you remediate the specific issue.
 
-### How is the security score calculated?
+### How is secure score calculated?
 
 Every control in the recommendations list shows the potential secure score increase if you address the underlying problem. To get every possible security control point, all your resources must follow each security recommendation within the security control. For example, Microsoft Defender for Cloud has multiple recommendations for how to secure your management ports. You must remediate them all to make a difference to your secure score.
 
@@ -30,7 +30,7 @@ Use secure score to monitor your security posture, and easily implement action
 
 ### Interactive guide
 
-If you’re the Azure administrator for your organization, you’ll need to be aware of the security of your Azure environment and then improve your security posture. The following interactive click-through demonstrates how you use Azure secure score.  Click on the image below to get started.
+If you’re the Azure administrator for your organization, you’ll need to be aware of the security of your Azure environment and then improve your security posture. The following interactive click-through demonstrates how you use secure score in Microsoft Defender for Cloud.  Click on the image below to get started.
 
 > [!NOTE]
 >This interactive guide contains references to Azure security center which has been renamed to Microsoft Defender for Cloud.
