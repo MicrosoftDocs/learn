@@ -1,0 +1,1 @@
+Your team will be responsible for implementing key portions of the company's IoT solution directly on edge devices using Azure IoT Edge technologies. Understanding the IoT Edge device gateway patterns and device-side networking requirements will enable you to support the company's plans for and IoT Edge device architecture.
