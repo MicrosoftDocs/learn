@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-pybryt.4-reference-exercise
-title: Reference Exercise
+title: "Exercise: Build an Assignment"
 metadata:
-  title: Reference Exercise
+  title: "Exercise: Build an Assignment"
   description: An exercise in annotating solutions and creating reference implementations
   author: chrispyles
   ms.author: v-chpyles
