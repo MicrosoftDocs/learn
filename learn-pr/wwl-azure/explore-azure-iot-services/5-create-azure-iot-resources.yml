@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-iot-services.create-resources
+title: Create Azure IoT resources
+metadata:
+  title: Create Azure IoT resources
+  description: "Create Azure IoT resources"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 60
+content: |
+  [!include[](includes/5-create-azure-iot-resources.md)]

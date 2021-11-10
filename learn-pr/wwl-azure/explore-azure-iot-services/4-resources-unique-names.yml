@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-iot-services.examine-azure-resource-naming-requirements
+title: Examine Azure resource naming requirements
+metadata:
+  title: Examine Azure resource naming requirements
+  description: "Examine Azure resource naming requirements"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-resources-unique-names.md)]
