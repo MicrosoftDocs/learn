@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.examine-asa-reference-data-input
+title: Examine ASA reference data input
+metadata:
+  title: Examine ASA reference data input
+  description: "Examine ASA reference data input"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-asa-reference-data-input.md)]
