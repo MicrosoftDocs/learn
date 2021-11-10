@@ -79,8 +79,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
-     --skip-assignment
+     --name ToyWebsitePipeline
    ```
 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
