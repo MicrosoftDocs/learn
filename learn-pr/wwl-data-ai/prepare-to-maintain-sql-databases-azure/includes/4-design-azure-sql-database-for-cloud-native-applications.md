@@ -1,14 +1,14 @@
 Azure SQL Database is a Platform as a Service (PaaS) that provides high scalability capabilities, and it can be a great solution for certain workloads, and minimum maintenance efforts. 
 
-The SQL Database service offering is aimed at new application development as it gives developers a great deal of flexibility in building new application services, and granular deployment options.
+Azure SQL Database is a Platform as a Service (PaaS) is aimed at new application development as it gives developers a great deal of flexibility in building new application services, and granular deployment options at scale. SQL Database offers a low maintenance solution that can be a great option for certain workloads.
 
 ## Purchasing model
 
-SQL Database comes in two main purchasing models: vCore-based model and DTU-based model. These purchasing models provide the following capabilities:
+SQL Database comes in two main purchasing models: vCore-based model and DTU-based model. Each purchasing model offers the following service tiers:
 
 ### vCore-based 
 
-In this purchasing model, compute and storage resources are decoupled. It means you can scale storage and compute resources independently from one another. Each service tier has the following features: 
+In this purchasing model, compute and storage resources are decoupled. It means you can scale storage and compute resources independently from one another. Here are listed the service tiers available: 
 
 | Service tier | Capability |
 |------------|-------------|
@@ -18,27 +18,31 @@ In this purchasing model, compute and storage resources are decoupled. It means 
 
 ### DTU-based
 
-In the DTU model, there are three service tiers available: Basic, Standard, and Premium. Compute and storage resources are dependent on the service tier, and they provide a range of performance capabilities at a fixed storage limit, backup retention, and cost. Also, it provides simplicity due to preconfigured resource options.
+In the DTU model, there are three service tiers available: Basic, Standard, and Premium. Compute and storage resources are dependent on the DTU level, and they provide a range of performance capabilities at a fixed storage limit, backup retention, and cost.
 
-> [!NOTE] 
-> Azure SQL Managed Instance doesn't support DTU-based purchasing model.
+For example, if your database grows to the point it reaches the maximum storage limit, you would need to increase your DTU capacity, even if the compute utilization is low. 
 
-There are two main changes that incur in a brief database disconnection at the end of the scaling operation:
+The scaling operation on SQL Database may incur in a brief connection interruption at the end of the scaling operation. There are two main changes that trigger this behavior:
 
-- Once you initiate a scaling operation that requires a failover.
+- Once you initiate a scaling operation that requires an internal failover.
 - When adding or removing databases to the elastic pool.
 
 You can use a proper [retry logic](/azure/azure-sql/database/troubleshoot-common-connectivity-issues) in your application to handle connection errors. 
+
+> [!NOTE] 
+> Azure SQL Managed Instance doesn't support DTU-based purchasing model.
 
 ## Serverless compute tier
 
 Despite its name, the serverless compute tier does require you to have a server with your database. The serverless option can best be thought of as an autoscaling and auto-pause solution for SQL Database. It is effective for lowering the costs in development and testing environments. For example, you can set up a minimum and a maximum vCores configuration for your database, where it will scale dynamically based on your workload. 
 
-The auto-pause delay feature allows you to define the period of time the database will be inactive before it is automatically paused. The auto-pause delay feature can be set up from 1 hour to seven days. Alternatively, auto-pause delay feature can be disabled. The resume operation is triggered when the next access attempt occurs in the database. Serverless pricing model charges only storage if the database is paused.
+The auto-pause delay feature allows you to define the period of time the database will be inactive before it is automatically paused. The auto-pause delay feature can be set up from 1 hour to seven days. Alternatively, auto-pause delay feature can be disabled. 
 
-:::image type="content" source="../media/prepare_to_maintain_sql_databases_azure_02.png" alt-text="Serverless SQL Database properties from Azure portal":::
+The resume operation is triggered when the next attempt to access the database occurs, and only storage charges are applicable when the database is paused.
 
-The image above illustrates where you can change the autoscaling and auto-pause  properties for serverless compute tier.
+> [![Serverless SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
+
+The image above shows where you can change the autoscaling and auto-pause properties for serverless compute tier.
 
 ## Deployment model
 
@@ -48,21 +52,21 @@ SQL Database, like virtual machines, can be deployed using Azure Resource Manage
 
 ### Single database
 
-Single database is simplest deployment model of Azure SQL Database. Once your logical server is deployed, you add a database to it, and then connect your application to that database. You manage each of your databases individually from scale and data size perspective. Each database deployed in this model has its own dedicated resources, even if deployed to the same logical server.
+Single database is the simplest deployment model of Azure SQL Database. You manage each of your databases individually from scale and data size perspectives. Each database deployed in this model has its own dedicated resources, even if deployed to the same logical server.
 
 You can monitor database resources utilization through Azure portal. This feature allows you to easily identify how the database is performing, as shown in the image below: 
 
-:::image type="content" source="../media/prepare_to_maintain_sql_databases_azure_01.png" alt-text="SQL Database properties from Azure portal":::
+> [![SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_01.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
  
 ### Elastic pool
 
-Elastic pools allow you to allocate storage and compute resources to a group of databases, rather than having to manage resources for each database individually. Additionally, elastic pools are easier to scale than single databases, where scaling individual databases is no longer needed due to changes made at the elastic pool level. 
+Elastic pools allow you to allocate storage and compute resources to a group of databases, rather than having to manage resources for each database individually. Additionally, elastic pools are easier to scale than single databases, where scaling individual databases is no longer needed due to changes made to the elastic pool. 
 
 Elastic pools provide a cost-effective solution for software as a service application model, since resources are shared between all databases. You can configure resources based either on the DTU-based purchasing model or the vCore-based purchasing model.
 
-Due to the nature of this model, it is recommended to monitor your resources continually to identify concurrent performance spikes that could affect other databases part of the same elastic pool. Often, you may need to revisit your allocation strategy to make sure there's enough resource available for all databases sharing the same elastic pool.
+Due to the nature of this feature, it is recommended to monitor your resources continually to identify concurrent performance spikes that could affect other databases part of the same elastic pool. Often, you may need to revisit your allocation strategy to make sure there's enough resource available for all databases sharing the same elastic pool.
 
-Elastic pool is a good fit for multi-tenant databases with low average utilization, where each tenant has its own copy of the database. 
+Elastic pool is a good fit for multi-tenant architecture with low average utilization, where each tenant has its own copy of the database. 
 
 ## Network options
 
@@ -70,71 +74,75 @@ Azure SQL Database by default has a public internet endpoint. Access to this end
 
 ## Backup and restore
 
-Azure provides a seemless backup and restore capabilities for SQL Database and SQL Managed Instance, with the following features:
+Azure provides a seemless backup and restore capabilities for SQL Database and SQL Managed Instance, including the following features:
 
 ### Continuous backup
 
-Increase your administration efficiency knowing that SQL Databases are backed up regularly, and copied to a read-access geo-redundant storage (RA-GRS) continuously. 
+Increase administration efficiency when using SQL Database knowing that databases are backed up regularly, and copied to a read-access geo-redundant storage (RA-GRS) continuously.
 
 Full backups are performed every week, differential backups every 12 to 24 hours, and transaction log backups every 5 to 10 minutes.
 
 ### Geo-restore
 
-As backups are geo-redundant by design for SQL Database and SQL Managed Instance, you can easily restore databases to a different geographical region, which is especially useful for less strict disaster recovery scenarios.
+As backups are geo-redundant by default for SQL Database and SQL Managed Instance, you can easily restore databases to a different geographical region, which is especially useful for less strict disaster recovery scenarios.
 
 Backup storage is billed apart from regular database files storage. However, when provisioning a SQL Database, the backup storage is created with the maximum size of the data tier selected for your database at no extra cost.
 
+The duration of a geo-restore operation can be affected by several underlying components including the size of the database, the number of transaction logs involved in a restore operation, and the amount of simultaneous restore requests being processed in the target region.
+
 > [!NOTE] 
-> Geo-restore is available when the backup storage redundancy property is set to ***geo-redundant backup storage***
+> Geo-restore is available when the backup storage redundancy property is set to ***geo-redundant backup storage***.
 
 ### Point-in-time restore (PITR)
 
-You can configure a specific point in time retention policy for each database running on a SQL Database offering. SQL Database retention period can be set from 1 up to 35 days. In fact, if not specified, Azure will assign it automatically once you create your database, where the default configuration is seven days.
+You can configure a specific point in time retention policy for each database running on a SQL Database offering. SQL Database retention period can be set from 1 up to 35 days. In fact, if not specified, the default configuration is seven days.
 
-You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
+You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if you are restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
 
-- **Long-term retention (LTR)**
+### Long-term retention (LTR)
 
  Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
 
-> [!div class="mx-imgBorder"]
 > [![Long-term retention properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
- In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side the screen, where you can override the default properties.
+ In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
 
  For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
 ## Automatic Tuning
 
-Running in a PaaS service allows for you to take advantage of additional compute resources on Azure to allow value added services to run. One of the best of these features, is automatic database tuning. Automatic tuning currently includes the following features:
+Automatic tuning is a built-in feature that relies on machine learning regression capabilities, and automatically identify tuning opportunities based on your query performance.
 
-- Identify Expensive Queries
-- Forcing Last Good Execution Plan
-- Adding Indexes
-- Removing Indexes
+Automatic tuning currently includes the following features:
 
-The Azure services uses a combination of built-in intelligence and advanced heuristics to determine the best indexes for your query patterns. These indexes are tested on a shadow copy of your database and then ultimately implemented into your database. All the aforementioned tuning features have the ability to be turned off in the event you would like to have more control over your environment.
+- Identify Expensive Queries.
+- Forcing Last Good Execution Plan.
+- Adding Indexes.
+- Removing Indexes.
+
+The Azure services use a combination of built-in advanced features to determine the best indexes for your query pattern. Initially, these indexes are tested on a copy of your database, and finally applied to your database. 
+
+All databases inherit configuration from their parent server, and you can easily disable this feature at any time.
 
 ## Elastic query (preview)
 
-The elastic queries feature provides cross-database queries in SQL Database. Queries can either be initiated by the user or application.
-
-This feature is especially useful for applications that cannot be changed, as it allows portability while still taking advantage of the Azure infrastructure.
+Elastic query allows you to run T-SQL queries that bridge multiple databases in SQL Database. This feature is particularly useful for applications using three- and four-part names that cannot be changed. It also increases portability as it allows for migration.
 
 Elastic queries support the following partitioning strategies:
 
-* Vertical partitioning - Also called cross-database queries. The data is partitioned vertically between many databases. Schemas are different for each database. For example, you may have a database used for customer data, and a different one used for payment information. With the help of vertical partitioning, you can now run a cross-database query between both databases.
-
-* Horizontal Partitioning - Also called sharding. The data is partitioned horizontally to distribute rows across several scaled-out databases. In this topology, the schema remains the same among all sharding databases. It supports either single-tenant model or multiple tenant models.
+| Service tier | Capability |
+|------------|-------------|
+| Vertical partitioning | Also called cross-database queries. The data is partitioned vertically between many databases. Schemas are different for each database. For example, you may have a database used for customer data, and a different one used for payment information. With the help of vertical partitioning, you can now run a cross-database query between both databases.
+|Horizontal Partitioning | Also called sharding. The data is partitioned horizontally to distribute rows across several scaled-out databases. In this topology, the schema remains the same among all sharding databases. It supports either single-tenant model or multiple tenant models. |
 
 > [!NOTE] 
 > Azure SQL Managed Instance doesn't support elastic jobs.
 
 ## Elastic job (preview)
 
-The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, it is equivalent to the Multi Server Administration feature available on an on-premises SQL Server instance.
+The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, elastic job is equivalent to the Multi Server Administration feature available on an on-premises SQL Server instance.
 
-You can execute T-SQL commands across several target deployments like SQL Databases, SQL Database elastic pools, and SQL Databases in shard maps. Database resources can run on different Azure subscriptions, and/or regions. The execution runs in parallel, and it is especially useful for performing database maintenance tasks.
+You can execute T-SQL commands across several target deployments like SQL Databases, SQL Database elastic pools, and SQL Databases in shard maps. Database resources can run on different Azure subscriptions, and/or regions. The execution runs in parallel, which is useful when automating database maintenance tasks.
 
 > [!NOTE] 
 > Azure SQL Managed Instance doesn't support elastic jobs.
