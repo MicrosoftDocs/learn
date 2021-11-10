@@ -10,7 +10,7 @@ Clone the starter repository and open the folder in Visual Studio Code by runnin
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-vue-data-events
-cd mslearn-vue-data-events/start
+cd mslearn-vue-data-events/starter
 code .
 ```
 
