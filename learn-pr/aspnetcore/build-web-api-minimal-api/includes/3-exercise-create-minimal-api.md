@@ -1,8 +1,8 @@
-You are a developer on a company, you and the company have heard all this hype about the new minimal API, is it better than sliced bread? Your manager has asked you to create a project for it so you can discuss whether to use it on your next project.
+You're a developer for a company, and you and your company have heard about the new minimal API. Your manager has asked you to create a project for it so that you can discuss whether to use it on your next project.
 
 ## Scaffold a project
 
-First, you need to scaffold a project. You've installed .NET 6 and you are ready to go. 
+First, you need to scaffold a project. You've installed .NET 6 and you're ready to go.
 
 1. Create a web API by running `dotnet new`:
 
@@ -10,12 +10,12 @@ First, you need to scaffold a project. You've installed .NET 6 and you are ready
    dotnet new web -o PizzaStore -f net6.0
    ```
 
-   You should see a directory _PizzaStore_. Next, run the app. 
+   You should see the _PizzaStore_ directory.
 
-1. Run the app by calling `dotnet run`, it will build the app and host it on a port from 5000-5300, and HTTPS will have a port selected for it in the range 7000-7300.
+1. Run the app by calling `dotnet run`. It builds the app and hosts it on a port from 5000 to 5300. HTTPS has a port selected for it in the range of 7000 to 7300.
 
    > [!NOTE]
-   > if you want to override the random port selection behavior, you can set the ports to use in _launchSettings.json_.
+   > If you want to override the random port selection behavior, you can set the ports to use in _launchSettings.json_.
 
    ```bash
    dotnet run
@@ -37,13 +37,13 @@ First, you need to scaffold a project. You've installed .NET 6 and you are ready
           Content root path: /<path>/PizzaStore
    ```
 
-1. In your browser, go to the indicated port according to the terminal `http://localhost:{PORT}`, you should see the text "Hello World!"
+1. In your browser, go to the indicated port. According to the terminal `http://localhost:{PORT}`, you should see the text "Hello World!"
 
-Congrats, you've managed to create an API using minimal API template.
+Congratulations! You've created an API by using a minimal API template.
 
 ## Add Swagger
 
-Next, use Swagger to ensure that you have a self-documenting API, where the docs change when you change the code:
+Use Swagger to ensure that you have a self-documenting API, where the docs change when you change the code.
 
 1. Install the Swashbuckle package:
 
@@ -51,19 +51,19 @@ Next, use Swagger to ensure that you have a self-documenting API, where the docs
     dotnet add package Swashbuckle.AspNetCore --version 6.2.3
     ```
 
-    Verify the install by opening up _PizzaStore.csproj_, you should have an entry that looks like so:
+1. Verify the install by opening _PizzaStore.csproj_. You should have an entry that looks like this one:
 
     ```xml
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     ```
 
-   Next, configure your project to use Swagger. 
+Next, configure your project to use Swagger.
 
-1. Open _Program.cs_ and add the following code (highlighted):
+1. Open _Program.cs_ and add the highlighted code:
 
    :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 18-22":::
 
-1. Rerun the project and go to the app's address, `http://localhost:5100/swagger`. 
+1. Rerun the project and go to the app's address, `http://localhost:5100/swagger`.
 
    You should see the following output:
 

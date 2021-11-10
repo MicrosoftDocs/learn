@@ -1,10 +1,10 @@
-Your first project with minimal API was well received, now, they want to see an application that does a little more like managing a resource, what resource is up to you. You are feeling hungry, so maybe pizza?
+Your first project with minimal API was well received. Now, your company wants to see an application that does a little more, like managing a resource. What resource to use is up to you. You're feeling hungry, so maybe pizza?
 
 ## Add data
 
-You first need some data. To store and manage data, you will use an in-memory store.
+You first need some data. To store and manage data, you'll use an in-memory store.
 
-1. Create a file _Db.cs_ and give it the following content:
+1. Create the file _Db.cs_ and give it the following content:
 
    ```csharp
     namespace PizzaStore.DB; 
@@ -60,19 +60,19 @@ You first need some data. To store and manage data, you will use an in-memory st
     }
    ```
 
-Great, now you have your data store, let's have the API use it next.
+Now that you have your data store, let's have the API use it next.
 
 ## Connect data to routes
 
-To connect your in-memory store to the API, do the following steps:
+To connect your in-memory store to the API:
 
-1. **Add the namespace**. This addition is as simple as adding the proper `using`.
-1. **Set up the routes**. Here, you need to make sure you add all the needed route mappings for creating, reading, updating, and deleting.
-1. **Invoke it in the routes**. Finally, you need to call the in-memory store per each route and pass in any parameters or body from the request, if applicable.
+1. **Add the namespace.** This addition is as simple as adding the proper `using` statement.
+1. **Set up the routes.** Make sure you add all the route mappings that are needed to create, read, update, and delete.
+1. **Invoke it in the routes.** Finally, you need to call the in-memory store per each route and pass in any parameters or body from the request, if applicable.
 
-Now, connect data in your API:
+Now, connect data in your API.
 
-1. At the top of _Program.cs_ file, add the following line of code:
+1. At the top of the _Program.cs_ file, add the following line of code:
 
    ```csharp
    using PizzaStore.DB;
@@ -88,7 +88,7 @@ Now, connect data in your API:
    app.MapDelete("/pizzas/{id}", (int id) => PizzaDB.RemovePizza(id));
    ```
 
-1. Run the app using `dotnet run`:
+1. Run the app by using `dotnet run`:
 
    ```bash
    dotnet run
