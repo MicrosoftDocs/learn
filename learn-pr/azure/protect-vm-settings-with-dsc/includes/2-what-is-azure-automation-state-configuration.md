@@ -153,6 +153,6 @@ If your nodes are located in a private network, DSC needs the following port and
   - **Port**: Only TCP 443 is required for outbound internet access.
   - **Global URL**:  *.azure-automation.net
   - **Global URL of US Gov Virginia**: *.azure-automation.us
-  - **Agent service**: https://<workspaceId>.agentsvc.azure-automation.net
+  - **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net
 
 
