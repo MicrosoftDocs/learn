@@ -7,8 +7,7 @@ As stated earlier, Azure currently works with two deployment models: The Resourc
 
 The following figure depicts how forced tunneling works.
 
-> [!div class="mx-imgBorder"]
-> ![Network traffic between on-premises and Azure uses forced tunneling.](../media/az500-virtual-private-network-tunnel.png)
+![Network traffic between on-premises and Azure uses forced tunneling.](../media/az500-virtual-private-network-tunnel.png)
 
 In the preceding figure, the front-end subnet doesn’t use forced tunneling. The workloads in the front-end subnet can continue to accept and respond to customer requests that come directly from the internet. The mid-tier and back-end subnets use forced tunneling. Any outbound connections from these two subnets to the internet are forced back to an on-premises site via one of the S2S VPN tunnels.
 

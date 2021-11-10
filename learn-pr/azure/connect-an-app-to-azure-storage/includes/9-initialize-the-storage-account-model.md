@@ -4,7 +4,7 @@ The Azure Storage client library provides an object model that is used to intera
 
 ::: zone pivot="csharp"
 
-A storage account in Azure is organized into one or more _containers_ that store the actual blob objects (files) in your account.  These containers are similar folders in a file system.  We can use the **Azure Storage Blobs client library for .NET** to create a container in our storage account to store our photos in.
+A storage account in Azure is organized into one or more _containers_ that store the actual blob objects (files) in your account.  These containers are similar to folders in a file system.  We can use the **Azure Storage Blobs client library for .NET** to create a container in our storage account to store our photos in.
 
 To use the **Azure Storage Blobs client library for .NET** in your program, you need to add a using statement at the top of your program for the `Azure.Storage.Blobs` namespace.
 
@@ -14,7 +14,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
     using Azure.Storage.Blobs;
     ```
 
-    To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` client object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
+    To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
 
 1. Add the following code to the Main section of your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
 
@@ -26,9 +26,9 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
     ```
 
     > [!NOTE]
-    > At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account, will a network call be made.
+    > At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account will a network call be made.
 
-1. Now we can add code to create the _photos_ container where we will store our images.
+1. Now we can add code to create the _photos_ container, where we'll store our images.
 
     ```csharp
     container.CreateIfNotExists();
