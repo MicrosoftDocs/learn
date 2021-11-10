@@ -1,0 +1,1 @@
+Your team will be working on an IoT solution and needs to ensure that IoT Hub is configured in accordance with business plans. Understanding the IoT Hub properties that affect scaling, downstream communication, and security will help to ensure that IoT Hub is configured correctly.<br>
