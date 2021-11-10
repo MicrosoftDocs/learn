@@ -1,31 +1,32 @@
-In this exercise, you'll declare the IoT Central network endpoints. 
+In this exercise, you'll declare the Azure IoT Central network endpoints. 
 
-## List your IoT Central network endpoints
+## List your Azure IoT Central network endpoints
 
-Follow these steps to list the network endpoints of your IoT Central web application.
+Follow these steps to list the network endpoints of your Azure IoT Central web application.
 
-1. Open the command prompt.
+1. Open the Command Prompt window.
 
-2. Navigate to the **azure-sphere-samples** folder in the Altair8800Emulator folder you cloned to your computer.
+1. Go to the Azure Sphere samples folder in the *Altair8800Emulator* folder that you cloned to your computer.
 
-   - On Windows, navigate to the **Samples\AzureIoT\Tools\win-x64** folder.
-   - On Linux, navigate to the **Samples/AzureIoT/Tools/linux-x64** folder. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
+   - **For Windows**: Go to the *Samples\AzureIoT\Tools\win-x64* folder.
+   - **For Linux**: Go to the *Samples/AzureIoT/Tools/linux-x64* folder. 
+   
+      You might need to explicitly set execution permissions for the ShowIoTCentralConfig tool. To do so, from a terminal, run `chmod +x ShowIoTCentralConfig`.
 
-3. When you run the **ShowIoTCentralConfig** tool, you'll be prompted for the following information:
-
-   | Prompt                                                 | Response                                                         |
-   | ------------------------------------------------------------ | ------------------------------------------------------------ |
-   | **Are you using a legacy (2018) IoT Central application (Y/N)** | Respond **N**.                                                |
-   | **IoT Central App URL**                                      | The IoT Central URL can be found in your browser address bar. For example, https://apps.azureiotcentral.com |
-   | **API token**                                                | The API token can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphere"), select **Administrator** as the role, and select **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
-   | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope**. |
-
-4. Run the **ShowIoTCentralConfig** tool and follow the prompts that the tool provides.
+1. Run the ShowIoTCentralConfig tool, and then follow the prompts, as shown in the following table:
 
    > [!NOTE]
-   > Your organization might require consent for the **ShowIoTCentralConfig** tool to access your Azure IoT Central data in the same way that the Azure API requires such consent.
+   > Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent.
 
-5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
+   | Prompt | Response |
+   | --- | --- |
+   | **Are you using a legacy (2018) IoT Central application? (Y/N)** | Respond **N**. |
+   | **IoT Central App URL** | The URL can be found in your browser address bar (for example, https://apps.azureiotcentral.com). |
+   | **API token** | The token can be generated from your Azure IoT Central app. <ol><li>Select **Administration** > **API Tokens** > **Generate Token**. <li>Provide a name for the token (for example, "AzureSphere"). <li>Select **Administrator** as the role, and then select **Generate**. <li>Copy the token to the clipboard. The token starts with *SharedAccessSignature*. |
+   | **ID Scope** | In the Azure IoT Central application, select **Administration** > **Device Connection**, and then copy the **ID Scope**. |
+   | | |
+
+1. Review the output from the ShowIoTCentralConfig tool. It will look similar to the following JSON text:
 
    ```json
    "CmdArgs": [ "--ScopeID", "0ne0099999D" ],
@@ -35,5 +36,5 @@ Follow these steps to list the network endpoints of your IoT Central web applica
    }
    ```
 
-6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
+1. Copy the output from the ShowIoTCentralConfig tool to Notepad, because you'll use this information in a later unit.
 

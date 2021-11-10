@@ -1,18 +1,17 @@
-Welcome to the cloud-connected Altair 8800 on Azure Sphere learning path. In this module, you'll learn how to secure the Altair emulator running on Azure Sphere.
+Welcome to the learning path about the cloud-connected Altair 8800 on Azure Sphere. In this module, you'll learn how to help secure an Altair emulator that runs on Azure Sphere.
 
-## Scenario: IoT Security
+## Scenario: IoT security
 
-The traditional approach to IoT development is that you're responsible for integrating and maintaining all the parts of a solution. As an IoT developer, you are responsible for security, authentication, certificates, identity, encryption libraries, update processes, your solution, and more. Not only are you a solution expert, but you're responsible for tracking new and emerging security threats, mitigating, and updating to protect IoT devices.
+The traditional approach to Internet of Things (IoT) development is that, as an IoT developer, you're responsible for integrating and maintaining all aspects of a solution. You're responsible for security, authentication, certificates, identity, encryption libraries, update processes, your solution, and more. Not only are you a solutions expert, but you're also charged with tracking new and emerging security threats, mitigating the threats, and updating the solutions to protect IoT devices.
 
-Azure Sphere is a highly secure IoT platform. Azure Sphere manages identity, certificates, reporting, operating system and application updates. Because Azure Sphere manages security on your behalf, you can focus on the IoT solutions you are building.
+Azure Sphere is a highly secure IoT platform. It's designed to help manage identity, certificate, reporting, operating system, and application updates. Because Azure Sphere helps manage security on your behalf, you're freer to focus on the IoT solutions you're building.
+
+Azure Sphere helps ensure greater security by design. As a result, apps that run on Azure Sphere can be considered more secure. As a developer, you grant certain capabilities to these apps. Granting specific capabilities and permissions is key to Azure Sphere security. When you do so, it's important to adhere to the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege?azure-portal=true). That is, you grant only the capabilities that the Azure Sphere app needs to run correctly, and no more.
 
 ## What will you learn?
 
-Azure Sphere is secure by design and applications running on Azure Sphere are secure by default. You grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege?azure-portal=true). You grant only the capabilities that the Azure Sphere application needs to run correctly, and no more.
-
-In this module, you'll learn how to declare the network endpoints capabilities for Azure IoT Central and an MQTT broker. The Altair emulator can only connect to declared network endpoints.
+In this module, you'll learn how to declare the network endpoint capabilities for Azure IoT Central and a Message Queuing Telemetry Transport (MQTT) broker. The Altair emulator can connect only to declared network endpoints.
 
 ## What is the main goal?
 
-The module will focus on understanding how to declare the network endpoints the Altair emulator will be using.
-
+This module focuses on clarifying how you declare the network endpoints that the Altair emulator will be using.
