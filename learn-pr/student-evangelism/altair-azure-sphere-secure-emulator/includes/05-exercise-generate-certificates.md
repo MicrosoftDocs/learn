@@ -18,9 +18,9 @@ The *AltairHL_emulator\certs* folder contains three placeholder certificates. Th
 
 2. Delete the following three placeholder certificates:
 
-    - ca.crt
-    - client.key
-    - client.crt
+    - *ca.crt*
+    - *client.key*
+    - *client.crt*
 
 ## Download the Mosquitto Certificate Authority certificate
 
