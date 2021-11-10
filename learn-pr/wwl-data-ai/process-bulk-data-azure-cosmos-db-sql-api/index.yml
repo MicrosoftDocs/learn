@@ -14,7 +14,7 @@ abstract: |
   - Use C# task asynchronous programming model and &quot;bulk&quot; support in the Azure Cosmos DB SQL API .NET SDK
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
