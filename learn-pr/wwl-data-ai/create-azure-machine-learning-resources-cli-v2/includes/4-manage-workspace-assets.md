@@ -20,7 +20,7 @@ To create a compute instance with the CLI (v2), you can use the `az ml compute c
 - `--resource-group`: Name of resource group. If you configured a default group with `az configure --defaults group=<name>`, you don't need to use this parameter.
 - `--workspace-name`: Name of the Azure Machine Learning workspace. If you configured a default workspace with `az configure --defaults workspace=<name>`, you don't need to use this parameter.
 - `--name`: Name of compute target. The name should be fewer than 24 characters and unique within an Azure region.
-- `--size`: VM size to use for the compute instance. Learn more about [supported VM series and sizes](https://docs.microsoft.com/azure/machine-learning/concept-compute-target#supported-vm-series-and-sizes).
+- `--size`: VM size to use for the compute instance. Learn more about [supported VM series and sizes](/azure/machine-learning/concept-compute-target).
 - `--type`: Type of compute target. To create a compute instance, use `ComputeInstance`.
 
 > [!Note]
@@ -32,7 +32,7 @@ To create a compute instance to train the customer churn model, you use this com
 az ml compute create --name "testdev-vm" --size STANDARD_DS11_V2 --type ComputeInstance
 ```
 
-For more information to create compute resources with the CLI (v2), see [az ml compute create](https://docs.microsoft.com/cli/azure/ml/compute?view=azure-cli-latest#az_ml_compute_create).
+For more information to create compute resources with the CLI (v2), see [az ml compute create](/cli/azure/ml/compute).
 
 ### Create a compute cluster
 
@@ -145,7 +145,7 @@ As the data is uploaded to the default datastore, the progress of uploading the 
 az ml data list
 ```
 
-Learn more about the commands to [manage Azure ML data assets](https://docs.microsoft.com/cli/azure/ml/data?view=azure-cli-latest#commands).
+Learn more about the commands to [manage Azure ML data assets](/cli/azure/ml/data).
 
 The dataset is now available for anyone with access to the workspace. When you train a model by running a job, you can refer to the dataset to use it as input for the job.
 

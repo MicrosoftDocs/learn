@@ -23,15 +23,15 @@ In general, there are three common ways to organize Azure Machine Learning works
 The data science team works on projects for different internal departments that sometimes also need access to the data or model. Together, you decide to create one workspace per project. You already have your first project: the customer churn model for the marketing department. After you create a workspace for this project as an example, the team will do the same for any new projects in the future.
 
 > [!Tip]
-> Learn more about [best practices and common decision points to organize Azure Machine Learning workspaces](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-resource-organization#team-structure-and-workspace-setup).
+> Learn more about [best practices and common decision points to organize Azure Machine Learning workspaces](/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-resource-organization).
 
 ## Create a workspace with the CLI (v2)
 
 The first time you create an Azure Machine Learning workspace, you'll work with the CLI interactively on your computer (cmd.exe on Windows, Bash on Linux or macOS). Before you can use the Azure CLI to create a workspace, make sure you did these steps:
 
-1. The Azure CLI is installed on your computer.
-1. The Azure Machine Learning extension is installed.
-1. You authenticated to your Azure subscription from the CLI. Remember if you have multiple subscriptions linked to your account, you can set the default subscription.
+- The Azure CLI is installed on your computer.
+- The Azure Machine Learning extension is installed.
+- You authenticated to your Azure subscription from the CLI. Remember if you have multiple subscriptions linked to your account, you can set the default subscription.
 
 ### Create a resource group and set as default
 
