@@ -13,3 +13,17 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/6-build-reusable-component-using-layouts.md)]
+quiz:
+title: Check your knowledge
+  questions:
+    - content: "Which is the correct syntax to specify a layout called `MyLayout` on a Blazor page?"
+      choices:
+      - content: "`@page layout='MyLayout'"
+        isCorrect: false
+        explanation: "Layout is not an argument to the `@page` directive"
+      - content: "@layout MyLayout"
+        isCorrect: true
+        explanation: "The layout directive assigns a layout to the current page with this single line at the top of the file"
+      - content: "@page MyLayout"
+        isCorrect: false
+        explanation: "The page directive takes an argument that defines the route of the page listens on, not the name of the layout"
