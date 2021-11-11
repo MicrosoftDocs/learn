@@ -1,9 +1,10 @@
 In this module, you've learned how to:
 
-- Install the Azure CLI and the Azure Machine Learning extension.
-- Use the CLI (v2) to create a workspace.
-- Use the CLI (v2) to create workspace resources necessary to train a model.
+- Train a model with a Python script using the CLI (v2).
+- Perform hyperparameter tuning with the CLI (v2).
 
-## Additional resources
+## Overview of resources
 
-- [Install the Azure CLI](/cli/azure/install-azure-cli)
+- [Train models with the CLI (v2)](/azure/machine-learning/how-to-train-cli)
+- [Official `az ml job` reference documentation](/cli/azure/ml/job?view=azure-cli-latest)
+- [Azure Machine Learning CLI (v2) examples](https://github.com/Azure/azureml-examples/tree/main/cli)

@@ -1,4 +1,8 @@
+Perform hyperparameter tuning with the Azure Machine Learning workspace by submitting a sweep job with the CLI (v2).
 
+The data scientist who created the customer churn model is wondering if the model can be even more accurate. Because the model was trained on a personal computer, the data scientist didn't have the time or compute power to train multiple models with varying model parameter values. Now that you are able to train the customer churn model using a compute cluster, you can parallelize the model training to quickly iterate through hyperparameter values.
+
+You'll tune hyperparameters using a Python script with the Azure Machine Learning CLI (v2).
 
 ## Tune hyperparameters
 
@@ -10,17 +14,19 @@ Similarly to a basic Python training job, the configuration of the sweep job is 
 
 ```yml
 $schema: https://azuremlschemas.azureedge.net/latest/sweepJob.schema.json
-type: sweep_job
-algorithm: grid
+type: sweep
+sampling_algorithm: grid
 trial:
   code: 
     local_path: src
   command: >-
     python main.py
-    --learning-rate {search_space.learning_rate}
+    --learning-rate ${{search_space.learning_rate}}
   environment: azureml:basic-env-scikit:1
-  compute:
-    target: azureml:aml-cluster
+inputs:
+    diabetes:
+      data: azureml:diabetes-data:1
+compute: azureml:aml-cluster
 search_space:
   learning_rate:
     type: choice
@@ -28,8 +34,10 @@ search_space:
 objective:
   primary_metric: training_roc_auc_score
   goal: maximize
-max_total_trials: 3
-max_concurrent_trials: 3
+limits:
+  max_total_trials: 6
+  max_concurrent_trials: 3
+  timeout: 3600
 experiment_name: customer-churn-sweep-example
 description: Run a hyperparameter sweep job for classification on customer churn dataset.
 ```

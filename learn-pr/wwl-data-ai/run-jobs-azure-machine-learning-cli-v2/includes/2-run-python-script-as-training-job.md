@@ -99,9 +99,9 @@ code:
   local_path: src
 command: >-
   python main.py
-  --data-csv {inputs.churn}
+  --data-csv ${{inputs.dataset}}
 inputs:
-  churn: azureml:customer-churn-data:1
+  dataset: azureml:customer-churn-data:1
   mode: download 
 environment: azureml:basic-env-scikit:1
 compute: azureml:testdev-vm
