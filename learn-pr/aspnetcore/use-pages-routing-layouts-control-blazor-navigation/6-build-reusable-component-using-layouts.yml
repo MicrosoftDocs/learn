@@ -14,7 +14,7 @@ durationInMinutes: 7
 content: |
   [!include[](includes/6-build-reusable-component-using-layouts.md)]
 quiz:
-title: Check your knowledge
+  title: Check your knowledge
   questions:
     - content: "Which is the correct syntax to specify a layout called `MyLayout` on a Blazor page?"
       choices:
