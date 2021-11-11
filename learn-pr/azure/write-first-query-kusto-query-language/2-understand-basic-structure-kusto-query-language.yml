@@ -3,7 +3,7 @@ uid: learn.write-first-query-kusto-query-language.understand-basic-structure-kus
 title: Understand the basic structure of a KQL query
 metadata:
   unitType: learning-content
-  title: Understand the basic structure of a KQL query
+  title: Understand the basic structure of a query
   description: Understand the basic structure of a KQL query
   ms.date: 11/03/2021
   author: YaelSchuster

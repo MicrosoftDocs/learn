@@ -8,8 +8,9 @@ This solution provides one possible way to construct a query that answers the ab
 
 1. The first thing we want to do is filter out as much information as possible. 
     * The time window should be between April 1 and April 30, 2007. We'll use `where` operator to create this filter.
-    * We only want to return results from the state of Virginia. We'll use `where` operator to create this filter.
-1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops*. We can use either the `extend` or `project` operators. To figure out which kind of storm caused this damage, we need to make sure to see the *EventType* column. We'll use the `project` operator.
+    * We only want to return results from the state of Virginia. We'll use `where` operator to create this filter as well.
+1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops* by using the `project` operator. 
+1. To figure out which kind of storm caused this damage, we need to return the *EventType* column. We'll use the `project` operator.
 1. Lastly, we want to see the top five most damaging events. We can use the `sort` operator, with the default mode being descending. Alternatively, and more efficiently, we can use the `top` operator.
 
 ## Solution query

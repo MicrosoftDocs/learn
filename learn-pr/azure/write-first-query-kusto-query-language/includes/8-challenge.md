@@ -1,5 +1,4 @@
-Kusto queries can be used to filter data and return specific information.
-Recall that in the storm events example, we've narrowed down events by time range, keywords, and values in a particular column. We've sorted results and projected specific columns.
+Recall that in the storm events example, we've narrowed down events by time range, keywords, and values in a particular column. We've also sorted results and projected specific columns.
 
 Now it's your turn to try writing a query from scratch.
 

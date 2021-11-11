@@ -1,4 +1,3 @@
-Kusto queries can be used to filter data and return specific information.
 Recall that we've filtered certain columns in or out of the displayed results. In this unit, you will learn how to answer questions about what kind of meteorological events took place in different regions or timespans, and which types of events caused damage.
 
 ## Use the `where` operator
@@ -74,7 +73,7 @@ Looking at the results of the last query, we see that one of the Event Types is 
 
 ## Filter on datetime values
 
-Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with KQL have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
+Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
 
 1. Run the following query:
 

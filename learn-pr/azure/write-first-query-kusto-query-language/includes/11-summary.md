@@ -4,4 +4,4 @@ You used the `take`, `where`, `project`, and `sort` operators to answer question
 ## References
 
 * [Query quick reference guide](/azure/data-explorer/kql-quick-reference)
-* [KQL Query operators](/azure/data-explorer/kusto/query/queries)
+* [Kusto Query Language operators](/azure/data-explorer/kusto/query/queries)

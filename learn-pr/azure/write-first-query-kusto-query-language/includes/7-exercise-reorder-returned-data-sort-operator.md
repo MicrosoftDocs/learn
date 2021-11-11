@@ -1,4 +1,3 @@
-Kusto queries can be used to filter data and return specific information.
 Recall that in the storm events example, we've narrowed down events by time range, keywords, and values in a particular column. Now you want to organize these results to see the highest damaging storm events first.
 
 ## Use the `sort` operator
