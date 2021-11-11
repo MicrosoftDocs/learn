@@ -25,7 +25,7 @@ A minimal API handles routes and HTTP verbs by offering convenience methods. You
 app.MapGet("/products", () => data);
 ```
 
-This code should be read as, if the client uses the GET HTTP verb toward the route "/products", then respond with `data`.
+This code should be read in the following way: if the client uses the GET HTTP verb toward the route `"/products"`, then respond with `data`.
 
 ### GET: Fetch a resource
 
@@ -43,7 +43,7 @@ Two major cases are good to know about when it comes to routing with GET request
    app.MapGet("/products/{id}", (int id) => data.SingleOrDefault(product => product.Id == id));
    ```
 
-   In this code, the `id` parameter has captured the route parameter the client sent, which is the "1" in "/products/1" or the 11. In this request, it's "/products/1". Then `id` is used to find a specific record.
+   In this code, the `id` parameter has captured the route parameter the client sent, which is the "1" in "/products/1" or the "11." In this request, it's "/products/1". Then `id` is used to find a specific record.
 
 ### POST: Create a resource
 

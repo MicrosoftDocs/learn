@@ -2,7 +2,7 @@ Your first project with minimal API was well received. Now, your company wants t
 
 ## Add data
 
-You first need some data. To store and manage data, you'll use an in-memory store.
+First you need some data. To store and manage data, you'll use an in-memory store.
 
 1. Create the file _Db.cs_ and give it the following content:
 

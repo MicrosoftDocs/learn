@@ -157,23 +157,23 @@ Documentation is something you want for your API. You want it for yourself, your
 
 Swagger implements the Open API specification. This format describes your routes but also what data they accept and produce. Swagger UI is a collection of tools that render the Open API specification as a website and let you interact with your API via the website.
 
-To use Swagger and Swagger UI in your API, you do two things:
+To use Swagger and the Swagger UI in your API, you do two things:
 
-- **Install a package:** To install Swagger, you specify to install a package called Swashbuckle:
+- **Install a package.** To install Swagger, you specify to install a package called Swashbuckle:
 
    ```bash
    dotnet add package Swashbuckle.AspNetCore --version 6.1.4   
    ```
 
-- **Configure it:** After the package is installed, you configure it via your code. You add a few different entries:
+- **Configure it.** After the package is installed, you configure it via your code. You add a few different entries:
 
-   - Add namespace. You need this namespace when you later call `SwaggerDoc()` and provide the header information for your API.
+   - Add a namespace. You need this namespace when you later call `SwaggerDoc()` and provide the header information for your API.
    
        ```csharp
        using Microsoft.OpenApi.Models;
        ```
 
-   - `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number.
+   - Add `AddSwaggerGen()`. This method sets up header information on your API, like what it's called and the version number.
 
    ```csharp
    builder.Services.AddEndpointsApiExplorer();
@@ -183,7 +183,7 @@ To use Swagger and Swagger UI in your API, you do two things:
     });
    ```
 
-   - `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file _swagger.json_.
+   - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file _swagger.json_.
 
    ```csharp
    app.UseSwagger();
@@ -193,6 +193,6 @@ To use Swagger and Swagger UI in your API, you do two things:
     });
    ```
 
-At this point, you're set up. You can start your project and go to http://localhost:5000/swagger. You should see something like this:
+At this point, you're set up. You can start your project and go to *http://localhost:5000/swagger*. You should see something like this:
 
 :::image type="content" source="../media/swagger-todo-api.png" alt-text="Screenshot of a Swagger example that shows a to-do A P I.":::

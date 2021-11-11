@@ -1,4 +1,4 @@
-Building a web API is a common task. You want to be able to serve some data and how an application, or service, consumes it. How you build the API might differ vastly between tech stacks. As part of building an API, you know there are parts like data storage, security, versioning, and documentation. Getting all these parts to work can be a complex undertaking.
+Building a web API is a common task. You want to be able to serve some data and know how an application, or service, consumes it. How you build the API might differ vastly between tech stacks. As part of building an API, you know there are parts like data storage, security, versioning, and documentation. Getting all these parts to work can be a complex undertaking.
 
 ## Scenario: Build a prototype
 
