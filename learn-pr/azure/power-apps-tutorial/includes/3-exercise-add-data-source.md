@@ -72,6 +72,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
     * **Width** - Number.
     * **Price/cm2** - Number.
     * **ProductCategory** - Single line of text.
+    * **FileType** - Single line of text.
 
     Select the column type from the dropdown, for example, select **Single line of text**.
 
