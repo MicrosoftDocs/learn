@@ -4,13 +4,12 @@ title: Identify domains and custom domains
 metadata:
   title: Identify domains and custom domains
   description: "Identify domains and custom domains"
-  ms.date: 09/27/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
