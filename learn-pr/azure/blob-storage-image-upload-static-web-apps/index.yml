@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.blob-storage-image-upload-swa
+uid: learn.blob-storage-image-upload-static-web-apps
 metadata:
   title: Upload images to Azure Blob Storage from a Static Web App
   description: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on demand Shared Access Signatures.
@@ -31,14 +31,14 @@ prerequisites: |
   - Azure Functions Extension for Visual Studio Code installed
   - Azure Functions Core Tools installed
 units:
-  - learn.blob-storage-image-upload-swa.introduction
-  - learn.blob-storage-image-upload-swa.upload-to-blob-storage
-  - learn.blob-storage-image-upload-swa.exercise-setup-blob-storage-account
-  - learn.blob-storage-image-upload-swa.serverless-backend
-  - learn.blob-storage-image-upload-swa.exercise-serverless
-  - learn.blob-storage-image-upload-swa.frontend
-  - learn.blob-storage-image-upload-swa.exercise-frontend
-  - learn.blob-storage-image-upload-swa.knowledge-check
-  - learn.blob-storage-image-upload-swa.summary
+  - learn.blob-storage-image-upload-static-web-apps.introduction
+  - learn.blob-storage-image-upload-static-web-apps.upload-to-blob-storage
+  - learn.blob-storage-image-upload-static-web-apps.exercise-setup-blob-storage-account
+  - learn.blob-storage-image-upload-static-web-apps.serverless-backend
+  - learn.blob-storage-image-upload-static-web-apps.exercise-serverless
+  - learn.blob-storage-image-upload-static-web-apps.frontend
+  - learn.blob-storage-image-upload-static-web-apps.exercise-frontend
+  - learn.blob-storage-image-upload-static-web-apps.knowledge-check
+  - learn.blob-storage-image-upload-static-web-apps.summary
 badge:
-  uid: learn.blob-storage-image-upload-swa.badge
+  uid: learn.blob-storage-image-upload-static-web-apps.badge
