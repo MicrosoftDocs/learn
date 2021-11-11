@@ -32,6 +32,7 @@ products:
 - azure-dns
 - azure-virtual-network
 units:
+- learn.wwl.introduction-to-azure-virtual-networks.introduction
 - learn.wwl.introduction-to-azure-virtual-networks.understand-azure-virtual-networks
 - learn.wwl.introduction-to-azure-virtual-networks.configure-public-ip-services
 - learn.wwl.introduction-to-azure-virtual-networks.exercise-design-implement-virtual-network-azure
@@ -41,7 +42,6 @@ units:
 - learn.wwl.introduction-to-azure-virtual-networks.exercise-connect-two-using-global-virtual-network-peering
 - learn.wwl.introduction-to-azure-virtual-networks.implement-virtual-network-traffic-routing
 - learn.wwl.introduction-to-azure-virtual-networks.configure-internet-access-nat
-- learn.wwl.introduction-to-azure-virtual-networks.introduction
 - learn.wwl.introduction-to-azure-virtual-networks.summary
 badge:
   uid: learn.wwl.introduction-to-azure-virtual-networks.badge
