@@ -64,7 +64,7 @@ When you include the parameter `--web`, a web page will open after the job is su
 In the Studio, the job is listed as an experiment run and the job's progress and details are shown. The Details tab shows the inputs, where you can find the command, environment, compute target, and performance metrics, like the accuracy of the trained model.
 
 > [!Tip]
-> To learn more about how to manage Azure Machine Learning jobs with the CLI (v2), go to the [`az ml job` reference documentation](/cli/azure/ml/job?view=azure-cli-latest).
+> To learn more about how to manage Azure Machine Learning jobs with the CLI (v2), go to the [`az ml job` reference documentation](/cli/azure/ml/job).
 
 ### Add dataset as input to job
 
@@ -113,4 +113,4 @@ In this example, it will take version 1 of the **customer-churn-data** dataset f
 
 After you submit the job using the `az ml job create --file job.yml` command, you can view the run in the Azure Machine Learning Studio. In the **Details** tab, the input datasets will show which data was used to run the experiment.
 
-When you need to train multiple models with varying inputs, you can easily track your work when using input arguments for data and model parameters. Learn more about [inputs and outputs in the documentation](https://docs.microsoft.com/azure/machine-learning/how-to-train-cli#inputs-and-outputs).
+When you need to train multiple models with varying inputs, you can easily track your work when using input arguments for data and model parameters. Learn more about inputs and outputs in the [documentation on how to train a model with the CLI (v2)](/azure/machine-learning/how-to-train-cli).

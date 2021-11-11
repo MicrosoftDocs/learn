@@ -6,7 +6,9 @@ metadata:
   description: "Exercise: Create a basic training job"
   ms.date: 11/11/2021
   author: wwlpublish
+  ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
