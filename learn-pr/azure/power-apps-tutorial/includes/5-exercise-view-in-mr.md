@@ -249,11 +249,14 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
 
-6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, click **Media** dropdown and select **View in 3D**. Position the component over the image component, as shown in the figure.
+6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, click **Media** dropdown and select **View in 3D**.
 
     :::image type="content" source="../media/add-view-3d.png" alt-text="Screenshot of adding view in 3D" lightbox="../media/add-view-3d.png":::
 
-7. Configure the **Source** property of **View in 3D** component in the following way to connect 3D models from the SharePoint list
+    >[!Note]
+    >A default shape is included in the component. You can change this shape to another by altering the **Source** property.
+
+7. Position the component over the image component, as shown in the figure and configure the **Source** property of **View in 3D** component in the following way to connect 3D models from the SharePoint list
 
     ```PowerApps
     First(Gallery_products.Selected.Attachments).Value
