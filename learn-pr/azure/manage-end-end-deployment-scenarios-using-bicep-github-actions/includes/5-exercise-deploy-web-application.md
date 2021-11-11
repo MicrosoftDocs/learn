@@ -37,7 +37,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-end-to-end* for your repository, ensure you replace the repository name too.
 
-1. Update the *deploy-test* job to depend on the new *build* job: <!-- TODO should we make prod depned too, for consistency -->
+1. Update the *deploy-test* job to depend on the new *build* job:
 
    :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
 
@@ -47,7 +47,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
-   Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. Both are valid. <!-- TODO confirm there's no difference -->
+   Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. The two approaches are equivalent to each other.
 
 1. Save your changes to the file.
 
@@ -75,9 +75,9 @@ You'll soon add a deployment step that publishes your website to Azure App Servi
 
 1. Save your changes to the file.
 
-## Update deployment job to propagate the output
+## Update the deployment job to propagate the output
 
-TODO explain
+Now, you need to update your *deploy* job to take the value of the output from the Bicep deployment and make it available to the rest of the workflow.
 
 1. Open the *deploy.yml* file in the *.github/workflows* folder.
 

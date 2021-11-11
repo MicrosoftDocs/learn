@@ -95,7 +95,7 @@ Your website developers have prepared a Visual Studio database project that depl
 
 ## Define the secrets
 
-<!-- TODO explain -->
+You need to securely store your Azure SQL logical server's administrator password for each environment. You decide to use GitHub secrets to protect the information.
 
 1. In your browser, go to **Settings** > **Secrets**.
 
@@ -133,9 +133,9 @@ Your website developers have prepared a Visual Studio database project that depl
 
 1. Save your changes to the file.
 
-## Add parameter values to the existing steps
+## Add parameter values and outputs
 
-The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the *validate* and *deploy* jobs.
+The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the *validate* and *deploy* jobs. You also propagate the Bicep deployments's outputs to the job's outputs.
 
 1. In the *deploy.yml* file, update the *validate* job's *Run preflight validation* step to add the new parameters:
 
@@ -152,7 +152,9 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
    :::code language="yaml" source="code/7-deploy.yml" range="63-69, 74-93" highlight="26-27" :::
 
-<!-- TODO deploy.yml outputs from deploy job -->
+1. In the *deploy* job's definition, add new outputs for the Bicep file's outputs:
+
+   :::code language="yaml" source="code/5-deploy.yml" range="63-73" highlight="8-11" :::
 
 ## Add database and data seed jobs
 

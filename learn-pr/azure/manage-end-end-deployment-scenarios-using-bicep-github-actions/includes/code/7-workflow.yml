@@ -7,7 +7,7 @@ on:
       - main
   workflow_dispatch:
 
-jobs: # TODO resync with 5-workflow.yml
+jobs:
 
   # Build the application and database.
   build:

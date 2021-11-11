@@ -24,7 +24,6 @@ The artifacts that are generated in your workflow aren't stored in your Git repo
     name: my-artifact-name
     path: ./my-folder
 ```
-<!-- TODO verify the above snippet works and uploads a folder -->
 
 The `path` property is the location that contains your compiled code or output files on the job runner's file system. The contents at this location will be uploaded to the artifact. You can specify a single file, multiple files, or a folder.
 
@@ -37,7 +36,6 @@ Use the `actions/download-artifact` action to download all of the workflow artif
 ```yaml
 - uses: actions/download-artifact@v2
 ```
-<!-- TODO verify the above snippet works and downloads the artifact -->
 
 Or, specify an artifact name to download just a specific artifact:
 
@@ -46,7 +44,6 @@ Or, specify an artifact name to download just a specific artifact:
   with:
     name: my-artifact-name
 ```
-<!-- TODO verify the above snippet works and downloads the artifact -->
 
 ## Deploy apps
 

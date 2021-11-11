@@ -58,10 +58,10 @@ With GitHub Actions, you can propagate the values of outputs by using *workflow 
 
 When you access variables that were created in another job, you need to publish the variable to make it accessible to the job that reads it. For example, suppose you create a job that deploys a Bicep file, and you need to propagate the `appServiceAppName` output to your workflow. You use the `outputs` keyword to specify that the `appServiceAppName` workflow variable should be set to the value of the `appServiceAppName` output variable created by the `deploy` step:
 
-:::code language="yaml" source="code/2-outputs-jobs.yml" range="8-25" highlight="3-4" :::
+:::code language="yaml" source="code/2-outputs-jobs.yml" range="7-24" highlight="3-4" :::
 
 Then, in a later job, you create a dependency on the job that created the variable by including the `needs` keyword, and you refer to the variable by using the name of the published variable:
 
-:::code language="yaml" source="code/2-outputs-jobs.yml" range="27-31" highlight="2, 5" :::
+:::code language="yaml" source="code/2-outputs-jobs.yml" range="26-31" highlight="2, 6" :::
 
 By using Bicep outputs and workflow variables, you can create a workflow that deploys your Bicep code and then performs a variety of actions on the resources as part of your deployment.

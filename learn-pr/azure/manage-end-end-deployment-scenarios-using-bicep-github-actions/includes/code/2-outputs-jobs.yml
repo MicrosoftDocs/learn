@@ -3,10 +3,9 @@ name: variables
 on:
   workflow_dispatch:
 
-runs-on: ubuntu-latest
-
 jobs:
   job1:
+    runs-on: ubuntu-latest
     outputs:
       appServiceAppName: ${{ steps.deploy.outputs.appServiceAppName }}
     steps:
@@ -21,13 +20,12 @@ jobs:
       with:
         failOnStdErr: false
         deploymentName: ${{ github.run_number }}
-        resourceGroupName: ${{ inputs.resourceGroupName }}
+        resourceGroupName: Playground1
         template: ./deploy/main.bicep
 
   job2:
     needs: job1
+    runs-on: ubuntu-latest
     steps: 
     - run: |
         echo "${{needs.job1.outputs.appServiceAppName}}"
-
-# TODO verify the above file is all valid - actually run it in GHA
