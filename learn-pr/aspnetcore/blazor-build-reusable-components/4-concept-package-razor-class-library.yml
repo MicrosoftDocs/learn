@@ -13,3 +13,17 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-concept-package-razor-class-library.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "What project property is the default value for a PackageId?"
+      choices:
+      - content: "Default namespace"
+        isCorrect: false
+        explanation: "The default namespace of the project might match the property used for the default PackageId, but this isn't correct"
+      - content: "Project Name"
+        isCorrect: false
+        explanation: "The Project Name might match the property used for the default PackageId, but this isn't correct"
+      - content: "AssemblyName"
+        isCorrect: false
+        explanation: "The AssemblyName is the default value for the PackageId"
