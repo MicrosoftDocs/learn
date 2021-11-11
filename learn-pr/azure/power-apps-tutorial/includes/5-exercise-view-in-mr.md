@@ -251,11 +251,15 @@ The details page includes all the details and information concerning the selecte
 
 6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, click **Media** dropdown and select **View in 3D**. Position the component over the image component, as shown in the figure.
 
+    :::image type="content" source="../media/add-view-3d.png" alt-text="Screenshot of adding view in 3D" lightbox="../media/add-view-3d.png":::
+
 7. Configure the **Source** property of **View in 3D** component in the following way to connect 3D models from the SharePoint list
 
     ```PowerApps
     First(Gallery_products.Selected.Attachments).Value
     ```
+
+    :::image type="content" source="../media/configure-view-3d.png" alt-text="Screenshot of configuring view in 3D" lightbox="../media/configure-view-3d.png":::
 
 8. We will alter the **Visible** property of both **Image** and **View in 3D** component to easily view the products depending on the **File type** stored in the **Attachments** column. Configure the **Visible** property of **Image** and **View in 3D** component in the respective way:
 
@@ -265,11 +269,15 @@ The details page includes all the details and information concerning the selecte
         If(Gallery_products.Selected.FileType = "Image", true, false)
         ```
 
+        :::image type="content" source="../media/set-image-visible.png" alt-text="Screenshot of altering image visibility" lightbox="../media/set-image-visible.png":::
+
     * **View in 3D** :
 
         ```PowerApps
         If(Gallery_products.Selected.FileType = "Model", true, false)
         ```
+
+        :::image type="content" source="../media/set-view-3d-visible.png" alt-text="Screenshot of altering view in 3D visibility" lightbox="../media/set-view-3d-visible.png":::
 
 9. Add blank labels beside **Price**, **Dimensions**, **Weight**, **Color**, and **Material** labels as shown in the figure to display the product information under those headings. Configure the **Text** property of these labels respectively:
 
@@ -325,6 +333,9 @@ The details page includes all the details and information concerning the selecte
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+
+>[!Note]
+> Avoid including **View in 3D** component to **Carpet_details** page as we do not use 3D models for the **Carpet** category.
 
 ## Insert and connect a 3D object to the View in MR component
 
