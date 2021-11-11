@@ -7,8 +7,7 @@ You need [Docker](https://www.docker.com/) in order to work with Windows Contain
 ### How it works
 A container builds on top of the kernel, but the kernel doesn't provide all of the APIs and services an app needs to run–most of these are provided by system files (libraries) that run above the kernel in user mode. Because a container is isolated from the host's user mode environment, the container needs its own copy of these user mode system files, which are packaged into something known as a base image. The base image serves as the foundational layer upon which your container is built, providing it with operating system services not provided by the kernel.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram of the Docker architecture](../media/az500-docker.png)
+![Diagram of the Docker architecture](../media/az500-docker.png)
 
 Because containers require far fewer resources (for example, they don't need a full OS), they're easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
 
