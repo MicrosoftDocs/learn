@@ -16,7 +16,7 @@ abstract: |
   - Generate SAS tokens on-demand to authenticate image uploads request.
   - Use the SAS token to upload an image to Azure Blob Storage.
   - Implement file uploads in a Static Web App by following Security Best Practices.
-iconUrl: /learn/achievements/blob-storage-image-upload-swa.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
