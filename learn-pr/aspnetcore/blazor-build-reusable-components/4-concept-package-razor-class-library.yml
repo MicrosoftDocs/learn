@@ -25,5 +25,5 @@ quiz:
         isCorrect: false
         explanation: "The Project Name might match the property used for the default PackageId, but this isn't correct"
       - content: "AssemblyName"
-        isCorrect: false
+        isCorrect: true
         explanation: "The AssemblyName is the default value for the PackageId"
