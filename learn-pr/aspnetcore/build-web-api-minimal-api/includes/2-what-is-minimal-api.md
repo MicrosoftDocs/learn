@@ -149,7 +149,7 @@ app.UseCors("some unique string");
 
 Finally, `app.Run()` starts your API and makes it listen for requests from the client.
 
-To run your code, you start your project, like any .NET Core project with `dotnet run`. By default, that means you have a project running on http://localhost:5000 and https://localhost:5001.
+To run your code, you start your project, like any .NET Core project with `dotnet run`. By default, that means you have a project running on *http://localhost:5000* and *https://localhost:5001*.
 
 ## Add documentation with Swagger
 
