@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-machine-learning-resources-cli-v2
 metadata:
   title: Create Azure Machine Learning resources with the CLI (v2)
   description: "Create Azure Machine Learning resources with the CLI (v2)"
-  ms.date: 11/08/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Some experience in training machine learning models using frameworks such as scikit-learn.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - ai-engineer
 - data-scientist

@@ -45,7 +45,7 @@ To create a compute cluster with the CLI (v2), you use the `az ml compute create
 - `--max-instances`: The maximum number of nodes. The default is 4.
 
 ```azurecli
-az ml compute create --name "aml-cluster2" --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute
+az ml compute create --name "aml-cluster" --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute
 ```
 
 To learn more on how to create and manage a compute cluster, see the [how-to guide on creating an Azure Machine Learning compute cluster](/azure/machine-learning/how-to-create-attach-compute-cluster?tabs=python).

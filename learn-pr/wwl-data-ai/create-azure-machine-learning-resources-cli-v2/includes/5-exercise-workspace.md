@@ -6,7 +6,7 @@ Now, it's your chance to experience how you can use the CLI (v2) to manage the A
 In this exercise, you will:
 
 - Create an Azure Machine Learning workspace with the CLI (v2) in the Azure Cloud Shell.
-- Create a compute instance, environment and dataset with the CLI (v2) in the Azure Cloud Shell.
+- Create a compute instance, environment, and dataset with the CLI (v2) in the Azure Cloud Shell.
 
 ## Instructions
 

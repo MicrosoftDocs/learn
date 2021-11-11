@@ -4,11 +4,11 @@ title: Use the Azure CLI (v2) with Azure Machine Learning
 metadata:
   title: Use the Azure CLI (v2) with Azure Machine Learning
   description: "Use the Azure CLI (v2) with Azure Machine Learning"
-  ms.date: 11/08/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/2-use-azure-cli-v2.md)]

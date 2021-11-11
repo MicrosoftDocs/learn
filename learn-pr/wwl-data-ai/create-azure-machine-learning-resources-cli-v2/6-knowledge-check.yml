@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/08/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
 azureSandbox: false
@@ -12,25 +12,25 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "A machine learning engineer wants to set up a new Azure Machine Learning workspace. Which CLI (v2) command should be used?"
+  - content: "A data scientist wants to train a model as a command job. Which three things should be referred to in the YAML file?"
     choices:
-    - content: "`az ml workspace list`"
+    - content: "The training script, the dataset, the compute."
       isCorrect: false
-      explanation: "That is incorrect. The `workspace list` command will list all the workspaces in a subscription."
-    - content: "`az ml workspace show`"
+      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+    - content: "The training script, the dataset, the environment."
       isCorrect: false
-      explanation: "That is incorrect. The `workspace show` command will show the details for a workspace."
-    - content: "`az ml workspace create`"
+      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+    - content: "The training script, the environment, the compute."
       isCorrect: true
-      explanation: "That is correct. The `workspace create` command will create a workspace."
-  - content: "A data scientist wants to create an environment to run a Python script on a compute cluster. Using the `az ml environment create --file basic-env.yml` command, what should the file basic-env.yml contain?"
+      explanation: "That is correct. To submit a job, you need to state what to run (training script), how to run it (environment), and where to run it (compute)."
+  - content: "To tune hyperparameters with a sweep job, which compute can be used to train multiple models in parallel?"
     choices:
-    - content: "The environment name and version."
+    - content: "A compute cluster."
       isCorrect: true
-      explanation: "That is correct. Amongst other things, the specification YAML file should include the environment name and version."
-    - content: "The packages and libraries that need to be installed on the compute cluster to run the script."
+      explanation: "That is correct. If a compute cluster can scale up to more than one node, you can train multiple models in parallel."
+    - content: "A compute instance."
       isCorrect: false
-      explanation: "That is incorrect. The packages and libraries can be listed in the Conda environment file that is referred to in basic-env.yml."
-    - content: "The type and size of the compute cluster that needs to be created."
+      explanation: "That is incorrect. It's not possible to train multiple models in parallel on a compute instance."
+    - content: "An inference cluster."
       isCorrect: false
-      explanation: "That is incorrect. The configuration for the compute cluster can also be specified in a YAML file, but is then created with the `az ml compute create` command."
+      explanation: "That is incorrect. An inference cluster is used for model deployments."

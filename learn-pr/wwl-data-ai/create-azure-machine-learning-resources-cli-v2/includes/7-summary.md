@@ -4,7 +4,7 @@ In this module, you've learned how to:
 - Use the CLI (v2) to create a workspace.
 - Use the CLI (v2) to create workspace resources necessary to train a model.
 
-## Additional resources
+## Overview of resources
 
 - [Install the Azure CLI](/cli/azure/install-azure-cli)
 - [Install and set up the Azure Machine Learning extension CLI (v2)](/azure/machine-learning/how-to-configure-cli)

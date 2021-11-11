@@ -4,11 +4,11 @@ title: 'Exercise: Create an Azure Machine Learning workspace'
 metadata:
   title: 'Exercise: Create an Azure Machine Learning workspace'
   description: "Exercise: Create an Azure Machine Learning workspace"
-  ms.date: 11/08/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-workspace.md)]
