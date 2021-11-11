@@ -29,12 +29,12 @@ quiz:
       explanation: "Parameters pass data directly into a component and CascadingParameter passes data indirectly into a child component"
   - content: "AppState can be registered with the service locator using which of these statements?"
     choices:
-    - content: "builder.Services.AddAppState()"
+    - content: "`builder.Services.AddAppState()`"
       isCorrect: false
       explanation: "AddAppState is not a method available with the Blazor framework"
-    - content: "builder.Services.AddServerSideBlazor()"
+    - content: "`builder.Services.AddServerSideBlazor()`"
       isCorrect: false
       explanation: "This method enables Server Side Blazor in the application, but does not register the AppState"
-    - content: "builder.Services.AddScoped<PizzaSalesState>()"
+    - content: "`builder.Services.AddScoped<PizzaSalesState>()`"
       isCorrect: true
       explanation: "This method registers the PizzaSalesState object as a scoped service that can be used within Blazor pages and components"      
