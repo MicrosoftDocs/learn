@@ -5,7 +5,7 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
  -  **Regional VNet peering** connects Azure virtual networks in the same region.
  -  **Global VNet peering** connects Azure virtual networks in different regions. When creating a global peering, the peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/global-vnet-peering-2368962c.png" alt-text="Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering":::
+:::image type="content" source="../media/global-vnet-peering-2368962c.png" alt-text="Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering":::
 
 
 The benefits of using virtual network peering, whether local or global, include:
@@ -19,17 +19,17 @@ The benefits of using virtual network peering, whether local or global, include:
 
 The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate.":::
+:::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate.":::
 
 
 The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso":::
+:::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso":::
 
 
 The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet. 
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Route table known to Fabrikam":::
+:::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Route table known to Fabrikam":::
 
 
 ## Configure VNet Peering
@@ -41,10 +41,13 @@ Here are the steps to configure VNet peering. Notice you will need two virtual n
 3.  Create virtual machines in each virtual network.
 4.  Test the communication between the virtual machines.
 
-To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/configure-vnet-peering-14dda7cd.png" alt-text="configure virtual network peering":::
+To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider. 
+
+:::image type="content" source="../media/configure-vnet-peering-14dda7cd.png" alt-text="configure virtual network peering":::
 
 
-\[!NOTE\]<br>When you add a peering on one virtual network, the second virtual network configuration is automatically added.
+> [!NOTE]
+> When you add a peering on one virtual network, the second virtual network configuration is automatically added.
 
 ## Gateway Transit and Connectivity
 
@@ -58,9 +61,9 @@ When you Allow Gateway Transit the virtual network can communicate to resources 
 
 In these scenarios, gateway transit allows peered virtual networks to share the gateway and get access to resources. This means you do not need to deploy a VPN gateway in the peer virtual network.
 
-\[!NOTE\]
-
-Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
+> [!NOTE]
+> 
+> Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
 
 ## Use service chaining to direct traffic to a gateway
 

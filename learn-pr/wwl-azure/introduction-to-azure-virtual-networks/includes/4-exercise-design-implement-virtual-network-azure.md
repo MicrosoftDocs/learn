@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 ## Exercise scenario
 
@@ -12,7 +13,7 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe** re
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/design-implement-vnet-peering-0b789104.png" alt-text="Global virtual network architecture":::
+:::image type="content" source="../media/design-implement-vnet-peering-0b789104.png" alt-text="Global virtual network architecture":::
 
 
 You will create the following resources:
@@ -253,7 +254,9 @@ In this exercise, you will:
 ## Task 1: Create the Contoso resource group
 
 1.  Go to [Azure portal](https://portal.azure.com/).
-2.  On the home page, under **Azure services**, select **Resource groups**.<br>\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-portal-home-page-annotated-4c34708f.png" alt-text="Azure portal home page with Resource groups highlighted.":::
+2.  On the home page, under **Azure services**, select **Resource groups**.
+    
+    :::image type="content" source="../media/azure-portal-home-page-annotated-4c34708f.png" alt-text="Azure portal home page with Resource groups highlighted.":::
     
 3.  In Resource groups, select **+ Create**.
 4.  Use the information in the following table to create the resource group.
@@ -319,11 +322,17 @@ In this exercise, you will:
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
 1.  On the Azure portal home page, select **Create a resource**.
-2.  In **Search services and marketplace**, enter virtual network. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-resource-search-virtual-network-annotated-7b909a50.png" alt-text="Azure portal Create a resource page with Search services and marketplace box highlighted.":::
+2.  In **Search services and marketplace**, enter virtual network. 
+
+    :::image type="content" source="../media/create-resource-search-virtual-network-annotated-7b909a50.png" alt-text="Azure portal Create a resource page with Search services and marketplace box highlighted.":::
     
-3.  In Marketplace, in Virtual Network, select **Create > Virtual network**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/virtual-network-service-annotated-438cc2d0.png" alt-text="Virtual Network tile with Create Virtual network highlighted.":::
+3.  In Marketplace, in Virtual Network, select **Create > Virtual network**. 
+
+    :::image type="content" source="../media/virtual-network-service-annotated-438cc2d0.png" alt-text="Virtual Network tile with Create Virtual network highlighted.":::
     
-4.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space \[!div class="mx-imgBorder"\] :::image type="content" source="../media/default-vnet-ip-address-range-annotated-22032ab7.png" alt-text="ip address configuration for azure virtual network deployment":::
+4.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
+
+    :::image type="content" source="../media/default-vnet-ip-address-range-annotated-22032ab7.png" alt-text="ip address configuration for azure virtual network deployment":::
     
     
     :::row:::
@@ -747,12 +756,12 @@ In this exercise, you will:
 
 1.  On the Azure portal home page, select **All resources**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-portal-home-page-all-resources-annotated-cdf9a16f.png" alt-text="Azure portal home page with All resources highlighted.":::
+    :::image type="content" source="../media/azure-portal-home-page-all-resources-annotated-cdf9a16f.png" alt-text="Azure portal home page with All resources highlighted.":::
 
 
 2.  Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/all-resources-list-annotated-94b7c54d.png" alt-text="All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.":::
+    :::image type="content" source="../media/all-resources-list-annotated-94b7c54d.png" alt-text="All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.":::
 
 
 3.  Note that Azure creates NetworkWatchers for each region that you use.
@@ -760,7 +769,7 @@ In this exercise, you will:
 5.  In CoreServicesVnet, under **Settings**, select **Subnets**.
 6.  In CoreServicesVnet \| Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/verify-subnets-annotated-3acfec71.png" alt-text="List of subnets in CoreServicesVnet.":::
+    :::image type="content" source="../media/verify-subnets-annotated-3acfec71.png" alt-text="List of subnets in CoreServicesVnet.":::
 
 
 7.  Repeat steps 4 - 6 for each VNet.

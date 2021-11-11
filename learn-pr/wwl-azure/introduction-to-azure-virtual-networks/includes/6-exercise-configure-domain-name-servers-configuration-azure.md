@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 ## Exercise scenario
 
@@ -14,7 +15,9 @@ In this exercise, you will:
 ## Task 1: Create a private DNS Zone
 
 1.  Go to [Azure portal](https://portal.azure.com/).
-2.  On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-private-dns-zone-48970f32.png" alt-text="Azure portal home page with dns search.":::
+2.  On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.
+
+    :::image type="content" source="../media/create-private-dns-zone-48970f32.png" alt-text="Azure portal home page with dns search.":::
     
 3.  In Private DNS zones, select **+ Create**.
 4.  Use the information in the following table to create the private DNS zone.
@@ -83,7 +86,7 @@ In this exercise, you will:
 1.  In Contoso.com, under **Settings**, select **Virtual network links**.
 2.  On Contoso.com \| Virtual network links, select **+ Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-network-link-domain-name-system-9a402df1.png" alt-text="Azure portal screenshot of network links.":::
+    :::image type="content" source="../media/add-network-link-domain-name-system-9a402df1.png" alt-text="Azure portal screenshot of network links.":::
 
 
 3.  Use the information in the following table to add the virtual network link.
@@ -255,7 +258,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 1.  On the Azure home page, select **Virtual Machines**.
 2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM":::
+    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM":::
 
 
 3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
@@ -545,7 +548,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 1.  On the Azure home page, select **Virtual Machines**.
 2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM from a preset configuration":::
+    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM from a preset configuration":::
 
 
 3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
@@ -837,7 +840,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 2.  In Private DNS zones, select **contoso.com**.
 3.  Verify that host (A) records are listed for both VMs, as shown:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/contoso-com-dns-zone-b5eaf30a.png" alt-text="Contoso.com DNS zone showing auto-registered host A records.":::
+    :::image type="content" source="../media/contoso-com-dns-zone-b5eaf30a.png" alt-text="Contoso.com DNS zone showing auto-registered host A records.":::
 
 
 4.  Make a note of the names and IP addresses of the VMs.
@@ -848,7 +851,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 2.  Select **TestVM1**.
 3.  In TestVM1, select **Connect > RDP**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connect-vm-e07de7ff.png" alt-text="TestVM1 with Connect and RDP highlighted.":::
+    :::image type="content" source="../media/connect-vm-e07de7ff.png" alt-text="TestVM1 with Connect and RDP highlighted.":::
 
 
 4.  In TestVM1 \| Connect, select **Download RDP file**.
