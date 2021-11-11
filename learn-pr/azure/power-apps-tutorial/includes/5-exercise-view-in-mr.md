@@ -208,7 +208,7 @@ Now that we have added the product categories, we will display the list of produ
 
 ## Create details page
 
-The details page includes all the details and information concerning the selected product. It gives you an understanding of certain features of the product. You have to connect the product page designed in the previous section and the details page created in this section.
+The details page includes all the details and information concerning the selected product. It gives you an understanding of certain features of the product. You have to connect the product page designed in the previous section and the details page created in this section. Here, you'll also be using the **View in 3D** component of Power Apps to add 3D content to your canvas app. You'll be able to rotate and zoom in on these 3D contents for a better view.
 
 1. Create two new pages and rename them respectively as **Product_details** and **Carpet_details**.
 
@@ -249,7 +249,29 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
 
-6. Add blank labels beside **Price**, **Dimensions**, **Weight**, **Color**, and **Material** labels as shown in the figure to display the product information under those headings. Configure the **Text** property of these labels respectively:
+6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, click **Media** dropdown and select **View in 3D**. Position the component over the image component, as shown in the figure.
+
+7. Configure the **Source** property of **View in 3D** component in the following way to connect 3D models from the SharePoint list
+
+    ```PowerApps
+    First(Gallery_products.Selected.Attachments).Value
+    ```
+
+8. We will alter the **Visible** property of both **Image** and **View in 3D** component to easily view the products depending on the **File type** stored in the **Attachments** column. Configure the **Visible** property of **Image** and **View in 3D** component in the respective way:
+
+    * **Image** :
+
+        ```PowerApps
+        If(Gallery_products.Selected.FileType = "Image", true, false)
+        ```
+
+    * **View in 3D** :
+
+        ```PowerApps
+        If(Gallery_products.Selected.FileType = "Model", true, false)
+        ```
+
+9. Add blank labels beside **Price**, **Dimensions**, **Weight**, **Color**, and **Material** labels as shown in the figure to display the product information under those headings. Configure the **Text** property of these labels respectively:
 
     * **Price** :
 
@@ -291,7 +313,7 @@ The details page includes all the details and information concerning the selecte
 
         :::image type="content" source="../media/blank-label-material.png" alt-text="Screenshot of blank label for material" lightbox="../media/blank-label-material.png":::
 
-7. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
+10. We will add a **Back** icon to navigate to the previous screen. To add the **Back** icon, expand the **Icons** dropdown and select the **Back icon**. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following:
 
     ```PowerApps
     Navigate('Products',ScreenTransition.Cover)
