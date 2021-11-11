@@ -31,13 +31,13 @@ This code should be read as, if the client uses the GET HTTP verb toward the rou
 
 Two major cases are good to know about when it comes to routing with GET requests:
 
-- **Just the route.** You've seen this route already. For example:
+- **Just the route:** You've seen this route already. For example:
 
    ```csharp
    app.MapGet("/products", () => data);
    ```
 
-- **Use a route parameter.** A route parameter is used to find a specific resource. If "/products" means a list of all products, "/products/1" means a specific record. The unique identifier has the value "1." To handle such a request, you use a wildcard to match it. You use "{ID}" to capture the "1" in the preceding example. You can also map the captured value to a parameter:
+- **Use a route parameter:** A route parameter is used to find a specific resource. If "/products" means a list of all products, "/products/1" means a specific record. The unique identifier has the value "1." To handle such a request, you use a wildcard to match it. You use "{ID}" to capture the "1" in the preceding example. You can also map the captured value to a parameter:
 
    ```csharp
    app.MapGet("/products/{id}", (int id) => data.SingleOrDefault(product => product.Id == id));

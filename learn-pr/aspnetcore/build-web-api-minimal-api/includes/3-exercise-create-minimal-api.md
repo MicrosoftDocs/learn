@@ -37,7 +37,7 @@ First, you need to scaffold a project. You've installed .NET 6 and you're ready 
           Content root path: /<path>/PizzaStore
    ```
 
-1. In your browser, go to the indicated port. According to the terminal `http://localhost:{PORT}`, you should see the text "Hello World!"
+1. In your browser, go to the indicated port. According to the terminal http://localhost:{PORT}, you should see the text "Hello World!"
 
 Congratulations! You've created an API by using a minimal API template.
 
@@ -63,7 +63,7 @@ Next, configure your project to use Swagger.
 
    :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 18-22":::
 
-1. Rerun the project and go to the app's address, `http://localhost:5100/swagger`.
+1. Rerun the project and go to the app's address, http://localhost:5100/swagger.
 
    You should see the following output:
 

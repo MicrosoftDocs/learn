@@ -1,15 +1,15 @@
-Building an API can be complex because it needs to support many features like routing, reading and writing to a data storage, and authentication. To save time, you begin with the .NET frameworks, which deliver many of the features you need. But those frameworks might require considerable setup before you have a basic API up and running. With minimal API for .NET 6, that's not the case. You can get started with just a few lines.
+Building an API can be complex because it needs to support many features like routing, reading and writing to data storage, and authentication. To save time, you begin with the .NET frameworks, which deliver many of the features you need. But those frameworks might require considerable setup before you have a basic API up and running. With minimal API for .NET 6, that's not the case. You can get started with just a few lines.
 
-To get started with a minimal API, the main requirement is to use at least .NET 6. Then, you need a text editor, such as Visual Studio or Visual Studio Code, or any other text editor of your choice. Finally, you can use either a Windows, macOS, or Linux operating system.
+To get started with minimal API, the main requirement is to use at least .NET 6. Then, you need a text editor, such as Visual Studio or Visual Studio Code, or any other text editor of your choice. Finally, you can use either a Windows, macOS, or Linux operating system.
 
-## What is a minimal API?
+## What is minimal API?
 
 If you've developed a .NET Core web API, you've used an approach that uses controllers. The idea is to have a controller class method, which represents various HTTP verbs, perform an operation to complete a specific task. For example, `GetProducts()` would return products by using GET as an HTTP verb.
 
-What's the difference between this controller-based approach and a minimal API?
+What's the difference between this controller-based approach and minimal API?
 
-- **No _Startup.cs_**. When you build a minimal API, you don't need a _Startup.cs_ file. Instead, all the tasks you're used to doing happen in _Program.cs_. Tasks you used to do include setting up routes and configuring dependency injections, security, and CORS.
-- **Top-level statements**. Because minimal API uses .NET 6, you can use top-level statements. Here's what a program looks like that doesn't use it:
+- **No _Startup.cs_:** When you build a minimal API, you don't need a _Startup.cs_ file. Instead, all the tasks you're used to doing happen in _Program.cs_. Tasks you used to do include setting up routes and configuring dependency injections, security, and CORS.
+- **Top-level statements:** Because minimal API uses .NET 6, you can use top-level statements. Here's what a program looks like that doesn't use it:
 
    ```csharp
    using System;
@@ -43,7 +43,7 @@ What's the difference between this controller-based approach and a minimal API?
 
    There's no `using` statement, `Main()` method, or class. There are only four lines of code.
 
-- **Routing looks a little different**. The routing looks slightly different compared to a controller-based web API. In a web API, for routing you write code as shown:
+- **Routing looks a little different:** The routing looks slightly different compared to a controller-based web API. In a web API, for routing you write code as shown:
 
    ```csharp
    app.UseRouting();
@@ -54,7 +54,7 @@ What's the difference between this controller-based approach and a minimal API?
    });
    ```
 
-   In a minimal API, you add the route right away on the `app` instance:
+   With minimal API, you add the route right away on the `app` instance:
 
    ```csharp
    app.MapGet("/todos", await (TodoDb db) => db.Todos.ToListAsync());
@@ -149,7 +149,7 @@ app.UseCors("some unique string");
 
 Finally, `app.Run()` starts your API and makes it listen for requests from the client.
 
-To run your code, you start your project, like any .NET Core project with `dotnet run`. By default, that means you have a project running on `http://localhost:5000` and `https://localhost:5001`.
+To run your code, you start your project, like any .NET Core project with `dotnet run`. By default, that means you have a project running on http://localhost:5000 and https://localhost:5001.
 
 ## Add documentation with Swagger
 
@@ -159,13 +159,13 @@ Swagger implements the Open API specification. This format describes your routes
 
 To use Swagger and Swagger UI in your API, you do two things:
 
-- **Install a package.** To install Swagger, you specify to install a package called Swashbuckle:
+- **Install a package:** To install Swagger, you specify to install a package called Swashbuckle:
 
    ```bash
    dotnet add package Swashbuckle.AspNetCore --version 6.1.4   
    ```
 
-- **Configure it.** After the package is installed, you configure it via your code. You add a few different entries:
+- **Configure it:** After the package is installed, you configure it via your code. You add a few different entries:
 
    - Add namespace. You need this namespace when you later call `SwaggerDoc()` and provide the header information for your API.
    
