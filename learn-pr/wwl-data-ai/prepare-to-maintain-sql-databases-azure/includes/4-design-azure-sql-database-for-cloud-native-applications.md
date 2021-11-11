@@ -103,14 +103,14 @@ You can restore your databases to a specific point in time according to the rete
 
 ### Long-term retention (LTR)
 
- Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
+Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
 
 [!div class="mx-imgBorder"]
 > [![Long-term retention properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
- In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
+In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
 
- For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
+For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
 ## Automatic Tuning
 
@@ -165,3 +165,5 @@ In the image above, you can specify sync group properties like the schedule sync
 
 > [!NOTE] 
 > Azure SQL Managed Instance doesn't support Data Sync feature.
+
+ For more information about how to configure SQL Data Sync, see [Tutorial: Set up SQL Data Sync between databases in Azure SQL Database and SQL Server](/azure/azure-sql/database/sql-data-sync-sql-server-configure).
