@@ -2,7 +2,7 @@
 uid: learn.blob-storage-image-upload-static-web-apps.exercise-serverless
 title: Exercise - Build your serverless backend
 metadata:
-  title: Exercise - Build the Serverless Backend
+  title: Exercise - Build the serverless backend
   description: Builds the Serverless Backend that generates Shared Access Signatures and serves them via a REST API 
   author: videlalvaro
   ms.author: alvidela

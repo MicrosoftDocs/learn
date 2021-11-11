@@ -6,9 +6,9 @@ It's time to create your application's backend. For that you are going to create
 
 2. Create a new Azure Function. Type `ctrl+shift+p` to launch the command prompt. Type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.
 
-3. Go to the Azure Portal, navigate to your storage account, and copy the connection string from there.
+3. Go to the Azure portal, navigate to your storage account, and copy the connection string from there.
 
-:::image type="content" source="../media/account-keys.png" alt-text="Azure Portal Copy Account Key":::
+:::image type="content" source="../media/account-keys.png" alt-text="Azure portal copy account key":::
 
 4. Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
 

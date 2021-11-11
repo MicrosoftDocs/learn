@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 quiz:
-  title: Choose the best response for each question. Then select **Check your answers**.
+  title: Choose the best response for each question. Then select Check your answers.
   questions:
 
   - content: "The `expiresOn` Shared Access Signature (SAS Key) property specifies:"
