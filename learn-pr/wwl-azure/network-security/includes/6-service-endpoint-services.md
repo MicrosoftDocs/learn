@@ -8,6 +8,5 @@ Service endpoints would provide benefits in the following Scenarios.
 - **Securing Azure resources to services deployed directly into virtual networks**: You can directly deploy various Azure services into specific subnets in a virtual network. You can secure Azure service resources to managed service subnets by setting up a service endpoint on the managed service subnet.
 - **Disk traffic from an Azure virtual machine**: Virtual Machine Disk traffic for managed and unmanaged disks isn't affected by service endpoints routing changes for Azure Storage. This traffic includes diskIO as well as mount and unmount. You can limit REST access to page blobs to select networks through service endpoints and Azure Storage network rules.
 
-> [!div class="mx-imgBorder"]
-> ![Add service endpoints form](../media/az500-endpoint-services.png)
+![Add service endpoints form](../media/az500-endpoint-services.png)
 
