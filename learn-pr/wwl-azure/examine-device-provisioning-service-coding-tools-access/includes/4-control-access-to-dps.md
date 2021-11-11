@@ -1,4 +1,4 @@
-The Azure IoT Device Provisioning Service uses permissions to grant access to each endpoint. Permissions limit the access to a service instance based on functionality. For example, a backend app must include a token containing security credentials along with every message it sends to the service.
+The Azure IoT Device Provisioning Service uses permissions to grant access to each endpoint. Permissions limit the access to a service instance based on functionality. For example, a backend app must include a token that contains security credentials along with every message it sends to the service.
 
 ## Access control and permissions
 
@@ -69,7 +69,7 @@ Here are the expected values:
 
 **Note on prefix**: The URI prefix is computed by segment and not by character. For example `/a/b` is a prefix for `/a/b/c` but not for `/a/bc`.
 
-The following Node.js snippet shows a function called **generateSasToken** that computes the token from the inputs `resourceUri, signingKey, policyName, expiresInMins`. The next sections detail how to initialize the different inputs for the different token use cases.
+The following Node.js snippet shows a function (**generateSasToken**) that computes the token from the inputs `resourceUri, signingKey, policyName, expiresInMins`. The next sections detail how to initialize the different inputs for the different token use cases.
 
 ```javascript
 var generateSasToken = function(resourceUri, signingKey, policyName, expiresInMins) {
@@ -123,7 +123,7 @@ def generate_sas_token(uri, key, policy_name, expiry=3600):
 
 Service components can only generate security tokens using shared access policies granting the appropriate permissions as explained previously.
 
-Here are the service functions exposed on the endpoints:
+Here are the functions exposed on the endpoints:
 
 :::row:::
   :::column:::
@@ -159,7 +159,7 @@ Here are the service functions exposed on the endpoints:
 :::row-end:::
 
 
-As an example, a service generated using a pre-created shared access policy called **enrollmentread** would create a token with the following parameters:
+As an example, a service generated using a pre-created shared access policy named **enrollmentread** would create a token with the following parameters:
 
  -  resource URI: `{mydps}.azure-devices-provisioning.net`,
  -  signing key: one of the keys of the `enrollmentread` policy,
