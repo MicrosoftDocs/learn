@@ -4,13 +4,13 @@ title: Design Azure SQL Database for cloud-native applications
 metadata:
   title: Design Azure SQL Database for cloud-native applications
   description: "Design Azure SQL Database for cloud-native applications"
-  ms.date: 11/10/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-design-azure-sql-database-for-cloud-native-applications.md)]
