@@ -49,3 +49,12 @@ The View in MR is one of the chief features included in the application. It allo
 
      For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2 -average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
   * If all three dimensions are set, we match the size of the model to what you specify.
+
+## View in 3D
+
+3D models can be added to your canvas apps. With simple gestures, users can rotate and zoom inside the model with the **View in 3D** component. A default shape is included in the component. You can change this shape to another by altering the **Source** property. By linking to a Gallery control, you can show a single 3D model or let the user choose from a gallery. The file format feasible with the View in 3D control are **.glb**, **.obj**, or **.stl**. Users can convert 3D models of any file format into **.glb** to use in their application.
+
+If you want a gallery of 3D models, place the **View in 3D** component outside of the gallery and set its source to the gallery's specified property. Make sure your 3D models are optimized for use with Power Apps to assist decrease load times. You can use the View in 3D component to add **Pins** (visible as circular marks) to specified points on 3D models.
+
+>[!Note]
+>Multiple instances of the View in 3D component on the same screen can cause performance issues since each version of the component will attempt to load the 3D models simultaneously.
