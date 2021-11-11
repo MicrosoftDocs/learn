@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-improve-app-interactivity-lifecycle-events.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Which of these is NOT an event in the Blazor component lifecycle?"
+      choices:
+      - content: "OnInitializedAsync"
+        isCorrect: false
+        explanation: "OnInitializedAsync is the first event that triggers in the lifecycle"
+      - content: "OnPageLoad"
+        isCorrect: true
+        explanation: "OnPageLoad sounds similar to another event in ASP.NET, but is not present in the Blazor component lifecycle"
+      - content: "OnAfterRenderAsync"
+        isCorrect: false
+        explanation: "OnAfterRender is the last event that triggers in the lifecycle and may be triggered multiple times"
+        

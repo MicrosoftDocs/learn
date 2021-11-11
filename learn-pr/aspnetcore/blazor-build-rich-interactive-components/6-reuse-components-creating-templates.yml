@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-reuse-components-creating-templates.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "What parameter object type should you configure on a Blazor component in order to share a fragment of HTML?"
+      choices:
+      - content: "string"
+        isCorrect: false
+        explanation: "While HTML is a string, there is a better type that should be configured"
+      - content: "StringBuilder"
+        isCorrect: false
+        explanation: "A StringBuilder is not going to receive and render HTML content in the Blazor component"
+      - content: "RenderFragment"
+        isCorrect: true
+        explanation: "RenderFragment is a section of code that can contain Razor markup and HTML to be rendered in a Blazor component"
+        
