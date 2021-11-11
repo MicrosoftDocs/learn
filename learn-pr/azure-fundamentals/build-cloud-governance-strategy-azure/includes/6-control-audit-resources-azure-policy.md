@@ -40,7 +40,7 @@ To implement your policy definitions, you assign definitions to resources. A *po
 
 Policy assignments are inherited by all child resources within that scope. If a policy is applied to a resource group, that policy is applied to all resources within that resource group. You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-### ATask 3. Review the evaluation results
+### Task 3. Review the evaluation results
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or noncompliant. You can review the noncompliant policy results and take any action that's needed.
 

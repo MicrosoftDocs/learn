@@ -5,8 +5,7 @@ A User Defined Routes (UDR) is a custom route in Azure that overrides Azure's de
 
 In this diagram UDRs are used to direct traffic from the Gateway subnet and the Web tier to the Network Virtual Appliance (NVA). 
 
-> [!div class="mx-imgBorder"]
-> ![The web tier is protected by a NVA and user defined routes.](../media/az500-network-virtual-appliance-1.png)
+![The web tier is protected by a NVA and user defined routes.](../media/az500-network-virtual-appliance-1.png)
 
 ## Network Virtual Appliances
 
@@ -16,8 +15,7 @@ To make an NVA highly available, deploy more than one NVA into an availability s
 
 The following figure shows a high-availability architecture that implements an ingress perimeter network behind an internet-facing load balancer. This architecture is designed to provide connectivity to Azure workloads for layer 7 traffic, such as HTTP or HTTPS traffic.
 
-> [!div class="mx-imgBorder"]
-> ![High availability is provided by two NVAs in an availability set.](../media/az500-network-virtual-appliance-2.png)
+![High availability is provided by two NVAs in an availability set.](../media/az500-network-virtual-appliance-2.png)
 
 The benefit of this architecture is that all NVAs are active, and if one fails, the load balancer directs network traffic to the other NVA. Both NVAs route traffic to the internal load balancer, so if one NVA is active, traffic will continue to flow. The NVAs are required to terminate SSL traffic intended for the web tier VMs. These NVAs can’t be extended to handle on-premises traffic, because on-premises traffic requires another dedicated set of NVAs with their own network.
 
