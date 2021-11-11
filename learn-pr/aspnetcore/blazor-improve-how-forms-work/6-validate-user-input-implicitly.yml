@@ -13,3 +13,17 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-validate-user-input-implicitly.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which component is used in an EditForm to display a summary of validation errors?"
+    choices:
+    - content: "ValidationMessage"
+      isCorrect: false
+      explanation: "The ValidationMessage component will display the message for one component, not a summary"
+    - content: "DataAnnotationsValidator"
+      isCorrect: false
+      explanation: "This component activates the validations in the EditForm, but does not display a summary of validation message"
+    - content: "ValidationSummary"
+      isCorrect: true
+      explanation: "This component displays a summary of all the validation messages in a submitted form"
