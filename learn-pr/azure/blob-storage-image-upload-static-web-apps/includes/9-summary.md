@@ -2,14 +2,14 @@ In this module, you learned how to grant secure access to your Blob Storage acco
 
 Achieving that required several steps:
 
-* You needed to grant access to your Blob Storage Account to your users
-* You couldn’t share your Storage Account Keys so you decided to use SAS
-* SAS needed to be generated on-demand and delivered to your Static Web App
-* An Azure Function API was the right way to generate SAS keys on-demand and deliver them to your Static Web App
+* You needed to grant access to your Blob Storage account to your users
+* You couldn’t share your Blob Storage account keys so you decided to use SAS
+* SAS needed to be generated on-demand and delivered to your static web app
+* An Azure Function API was the right way to generate SAS keys on-demand and deliver them to your static web app
 
-Shared Access Signatures are the way to go when you need to provide secure and on-demand access to your cloud resources. An Azure Function was the best way to created SAS keys on-demand while at the same time reducing the maintenance costs of running cloud software, removing middleware, and letting Azure handle the task of running a backend service for you. In this way, you offered a fast storage solution to your users by applying Blob Storage, and allowed your developers to focus on the application development, instead of maintaining legacy image upload middleware.
+Shared access signatures are the way to go when you need to provide secure and on-demand access to your cloud resources. An Azure Function was the best way to created SAS keys on-demand while at the same time reducing the maintenance costs of running cloud software, removing middleware, and letting Azure handle the task of running a backend service for you. In this way, you offered a fast storage solution to your users by applying Blob Storage, and allowed your developers to focus on the application development, instead of maintaining legacy image upload middleware.
 
-## Learn More
+## Learn more
 
 Here you can learn more about some of the concepts presented in this module
 
