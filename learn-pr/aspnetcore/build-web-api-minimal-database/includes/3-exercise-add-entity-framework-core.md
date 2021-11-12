@@ -62,9 +62,9 @@ To store the items in the to-do list, install the `EntityFrameworkCore.InMemory`
 
 1. Add `using Microsoft.EntityFrameworkCore;` to the top of your *Program.cs* file.
 
-Now that you have EntityFramework added to the project, you can now wire up your code to the data you want to save and query it. To do this step, you're going to create a `PizzaDb` class. The `PizzaDb` class is going to do the following tasks:
+Now that you have EF Core added to the project, you can wire up your code to the data you want to save and query it. To do this step, you create a `PizzaDb` class. The `PizzaDb` class will do the following tasks:
 
-- Expose your **Pizzas** property from your list of **Pizza** in the database.
+- Expose your `Pizzas` property from your list of `Pizza` in the database.
 - Use `UseInMemoryDatabase` to wire the in-memory database storage. Your data is stored here as long as the app is running.
 
 1. To set up your in-memory database, add the following code to the bottom of the `Pizza.cs` class:
@@ -82,7 +82,7 @@ Now that you have EntityFramework added to the project, you can now wire up your
    }
    ```
 
-`DbContext` represents a connection or session that's used to query and save instances of entities in a database.
+   `DbContext` represents a connection or session that's used to query and save instances of entities in a database.
 
 1. In *Program.cs*, before the call to `AddSwaggerGen`, add the following code:
 
@@ -102,7 +102,7 @@ Now that you have EntityFramework added to the project, you can now wire up your
 
 ## Create new items
 
-1. Let's POST new tasks to the pizzas list under `app.MapGet` that you created earlier.
+Let's POST new tasks to the pizzas list under `app.MapGet` that you created earlier.
 
    ```csharp
    app.MapPost("/pizza", async (PizzaDb db, pizzaItem pizza) =>
