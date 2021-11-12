@@ -16,7 +16,7 @@ Node.js is a platform for building server apps. It's based on JavaScript. All th
 
 1. In the opened terminal, create an empty folder where you'll develop your code. Name it *RefrigeratedTruck* by entering `mkdir RefrigeratedTruck`. Then go to that folder by entering `cd RefrigeratedTruck`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the _RefrigeratedTruck_ folder. In the folder, name the file _app.js_. 
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the _RefrigeratedTruck_ folder. In the folder, name the file _app.js_.
 
     Visual Studio Code interprets files that have the .js file extension as JavaScript. It evaluates the contents of the file by using the JavaScript language service.
 
