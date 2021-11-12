@@ -135,9 +135,12 @@ These scripts should take three to five minutes to complete. Be sure to note you
      - For **Storage Account**, from the dropdown list, select the account that starts with **sqlva** followed by a random string of letters and numbers. 
  
    The **sqlva** storage account will be used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
+   
+    > [!TIP]
+    > If you do not see any storage accounts, create a new account. You may need to refresh your page after a couple minutes before it shows up.  
 
     If you are going to be auditing your production environment, consider having a separate storage account for audit logs.
-    
+
 1. Select **Advanced properties** to expand the section and set the following configuration items:
     - For **Retention (Days)**, enter **7**
     - For **Storage access key**, select **Primary**.
