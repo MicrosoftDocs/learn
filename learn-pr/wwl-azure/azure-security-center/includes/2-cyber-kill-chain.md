@@ -10,8 +10,7 @@ Security Center's threat protection includes fusion kill-chain analysis, which a
 Security Center's supported kill chain intents are based on the MITRE ATT&CK™ framework.
 As illustrated below, the typical steps that trace the stages of a cyberattack.
 
-> [!div class="mx-imgBorder"]
-> ![Illustration of the Cyber Kill Chain, the 9 steps used to infiltrate and damage an organization.](../media/az500-kill-chain.png)
+![Illustration of the Cyber Kill Chain, the 9 steps used to infiltrate and damage an organization.](../media/az500-kill-chain.png)
 
 * **Reconnaissance**: The observation stage where attackers assess your network and services to identify possible targets and techniques to gain entry.​
 
