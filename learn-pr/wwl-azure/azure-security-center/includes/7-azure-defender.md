@@ -1,8 +1,7 @@
 
 Azure Defender provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Azure Security Center blade with Azure Defender open.](../media/azure-defender.png)
+![Screenshot of Azure Security Center blade with Azure Defender open.](../media/azure-defender.png)
 
 ## Azure Defender benefits
 

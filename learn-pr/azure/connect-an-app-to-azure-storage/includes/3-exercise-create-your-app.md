@@ -1,4 +1,4 @@
-We're working on a photo-sharing application that will use Azure Storage to manage pictures and other bits of data we store on behalf of our users.
+Recall that we're working on a photo-sharing application that will use Azure Storage to manage pictures and other bits of data we store on behalf of our users.
 
 ::: zone pivot="csharp"
 
@@ -71,7 +71,7 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     main();
     ```
 
-1. Save the file. Select the "..." menu on the top-right corner of Cloud Shell editor, and select **Save** or use the accelerator keys <kbd>Ctrl+S</kbd>.
+1. Press <kbd>Ctrl+S</kbd> to save the file. Alternatively, in the Cloud Shell integrated editor title bar, select the ellipsis, and then select **Save** from the context menu.
 
 1. Run the app to make sure it executes correctly.
 
