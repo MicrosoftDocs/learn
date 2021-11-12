@@ -13,8 +13,7 @@ If you are using PowerShell and have the Azure PowerShell module installed you m
 To connect the Linux-based VM, you need a secure shell protocol (SSH) client. The most used free tool is **PuTTY** SHH terminal.
 The following shows the PuTTY configuration dialog.
 
-> [!div class="mx-imgBorder"]
-> ![PuTTY configuration dialog box.](../media/az500-putty.png)
+![PuTTY configuration dialog box.](../media/az500-putty.png)
 
 
 ## Azure Bastion
@@ -29,8 +28,7 @@ Azure Bastion deployment is per virtual network, not per subscription/account or
 
 RDP and SSH are some of the fundamental means through which you can connect to your workloads running in Azure. Exposing RDP/SSH ports over the Internet isn't desired and is seen as a significant threat surface. This is often due to protocol vulnerabilities. To contain this threat surface, you can deploy bastion hosts (also known as jump-servers) at the public side of your perimeter network. Bastion host servers are designed and configured to withstand attacks. Bastion servers also provide RDP and SSH connectivity to the workloads sitting behind the bastion, as well as further inside the network.
 
-> [!div class="mx-imgBorder"]
-> ![Architecture of a bastion host.](../media/az500-bastion.png)
+![Architecture of a bastion host.](../media/az500-bastion.png)
 
 This figure shows the architecture of an Azure Bastion deployment. In this diagram:
 
