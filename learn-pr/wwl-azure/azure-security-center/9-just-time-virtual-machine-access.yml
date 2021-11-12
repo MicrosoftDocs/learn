@@ -4,13 +4,13 @@ title: Implement Just-in-time VM access
 metadata:
   title: Implement Just-in-time VM access
   description: "Implement Just-in-time VM access"
-  ms.date: 10/14/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/9-just-time-virtual-machine-access.md)]

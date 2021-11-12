@@ -4,7 +4,7 @@ Transitioning your company's SAP workloads to Azure may introduce vocabulary tha
 
 ## Learning objectives
 
-You will:  
+You will:
 
  -  Discover common terms and meanings for SAP.
  -  Discover common terms and meanings for SAP deployments on Azure.

@@ -14,9 +14,9 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- [Download & install the Azure Information Protection unified labeling client | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app?azure-portal=true)
+- [Download & install the Azure Information Protection unified labeling client | Microsoft Docs](/azure/information-protection/rms-client/install-unifiedlabelingclient-app?azure-portal=true)
 
-- [Assign sensitivity labels to groups - Azure AD | Microsoft Docs](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-assign-sensitivity-labels?azure-portal=true)
+- [Assign sensitivity labels to groups - Azure AD | Microsoft Docs](/azure/active-directory/enterprise-users/groups-assign-sensitivity-labels?azure-portal=true)
 
-- [Use PowerShell with the Azure Information Protection unified labeling client | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell?azure-portal=true)
+- [Use PowerShell with the Azure Information Protection unified labeling client | Microsoft Docs](/azure/information-protection/rms-client/clientv2-admin-guide-powershell?azure-portal=true)
 

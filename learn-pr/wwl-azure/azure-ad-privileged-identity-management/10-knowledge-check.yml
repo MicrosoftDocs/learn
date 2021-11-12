@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/01/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -49,7 +49,7 @@ quiz:
       explanation: "You want to assign to a specific set of roles, not a resource group."
     - content: "Azure AD roles"
       isCorrect: true
-      explanation: "Azure AD roles.  While not part of this question, you could all manage Azure resource roles."
+      explanation: "Azure AD roles. While not part of this question, you could all manage Azure resource roles."
   - content: "An organization has enabled Azure AD PIM. The senior IT manager wants the role set up so no action is required, what should you do?"
     choices:
     - content: "Give the manager JIT access to the role."

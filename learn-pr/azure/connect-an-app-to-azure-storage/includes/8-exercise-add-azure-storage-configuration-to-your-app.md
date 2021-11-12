@@ -16,7 +16,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Cloud Shell (to the right), we recommend Cloud Shell editor. The following command works to open either one.
+1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Cloud Shell (to the right), we recommend Cloud Shell editor. Use the following command in either one to open the editor.
 
     ```bash
     code .
@@ -32,9 +32,9 @@ Let's add support to our .NET core application to retrieve a connection string f
     }
     ```
 
-1. Save the file using either keyboard shortcut (<kbd>Ctrl+S</kbd>) or context menu of Cloud Shell editor (select the ellipsis `...` in the top right corner).
+1. Save the file using the keyboard shortcut (<kbd>Ctrl+S</kbd>) or select the ellipsis `...` in the top right corner of the editor to use the context menu.
 
-1. Now, we need use an Azure command to get the actual storage account connection string and replace the placeholder <value>. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
+1. Now, we need use an Azure command to obtain the actual storage account connection string to replace the placeholder `<value>`. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
 
     ```azurecli
     az storage account show-connection-string \
@@ -49,7 +49,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
     ```
 
-1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the <value> placeholder with this connection string.
+1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the `<value>` placeholder with this connection string.
 
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
@@ -77,7 +77,7 @@ dotnet add package Microsoft.Extensions.Configuration.Json
 
 ## Add code to read the configuration file
 
-Now that we have added the required libraries to enable reading the configuration, we need to enable that functionality within our console application.
+Now that we've added the required libraries to enable reading the configuration, we need to enable that functionality in our console application.
 
 1. In the editor, select **Program.cs**.
 
@@ -98,29 +98,30 @@ Now that we have added the required libraries to enable reading the configuratio
     var configuration = builder.Build();
     ```
 
-Your **Program.cs** file should now look like this:
+    Your **Program.cs** file should now look like this:
 
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
+    ```csharp
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
 
-namespace PhotoSharingApp
-{
-    class Program
+    namespace PhotoSharingApp
     {
-        static void Main(string[] args)
+        class Program
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
+            static void Main(string[] args)
+            {
+                var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
 
-            var configuration = builder.Build();
+                var configuration = builder.Build();
+            }
         }
     }
-}
-```
-
+    ```
+1. Save the the file.
+    
 ::: zone-end
 
 ::: zone pivot="javascript"
