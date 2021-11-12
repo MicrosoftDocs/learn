@@ -23,6 +23,7 @@ roles:
   - student
 products:
   - vs
+  - dotnet
 prerequisites: |
   - Recommended familiarity with .NET 6.
   - Having a basic understanding what an API is.
