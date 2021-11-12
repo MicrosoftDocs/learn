@@ -3,8 +3,8 @@ The **Defense in depth** approach includes other controls in the design to mitig
 
 During this module, we will explore the defense-in-depth design of Azure services and capabilities to help you securely manage and monitor your cloud data and infrastructure as a managed service. Microsoft designs and operates its cloud services with security at the core and provides you built-in controls and tools to meet your security needs. In addition, with Machine Learning (ML) and Microsoft's significant investments in cyber defense you can benefit from unique intelligence and proactive measures to protect you from threats. Azure offers unified security management and advanced threat protection for your resources whether they're in the cloud, your data center, or both. Each Service in Azure is built with security in mind from the ground up to host your infrastructure apps and data. All services are designed and operated to support multiple layers of defense, spanning your data apps, virtual machines, network perimeter-related policies, and physical security within our data centers. Including how the data sensors and systems that run Azure are architected and operated to the controls you can apply as part of your defense in-depth security management. An example strategy is illustrated in the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Layers from inside to outside Data, Applications, Compute, Networking, Perimeter, Identity and Access, and Physical security.](../media/az500-defense-depth.png)
+
+![Layers from inside to outside Data, Applications, Compute, Networking, Perimeter, Identity and Access, and Physical security.](../media/az500-defense-depth.png)
 
 As more of a company’s digital resources reside outside the corporate network, in the cloud and on personal devices, it becomes obvious that a perimeter only based security, i.e. firewalls, DMZ, VNets, are no longer adequate.
 The adoption of software-defined networking (SDN) and software-defined data center (SDDC) technologies are driving Network Segmentation concepts to be more granular, i.e. Network Micro-Segmentation.

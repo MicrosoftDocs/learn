@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Basic file manipulation with the cat command
 durationInMinutes: 2
 azureSandbox: true
