@@ -4,13 +4,13 @@ title: Enable and secure remote access management
 metadata:
   title: Enable and secure remote access management
   description: "Enable and secure remote access management"
-  ms.date: 11/03/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/6-remote-access-management.md)]
