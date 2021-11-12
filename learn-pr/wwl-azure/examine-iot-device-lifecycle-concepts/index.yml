@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-device-lifecycle-concepts
 metadata:
   title: Examine IoT device lifecycle concepts
   description: "This module introduces you to the IoT device lifecycle, the concept of device twins, and the conditions under which devices may need to be retired."
-  ms.date: 11/11/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
