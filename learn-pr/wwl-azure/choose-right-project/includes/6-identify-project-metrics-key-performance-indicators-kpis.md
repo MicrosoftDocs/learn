@@ -1,15 +1,15 @@
 We spoke earlier about the importance of shared goals. It was also agreed upon by team members that the goals needed to be specific, measurable, and time-bound.
 
-It's essential to establish (and agree upon) appropriate metrics and Key Performance Indicators (KPIs) to ensure these goals are measurable.
+It is essential to establish (and agree upon) appropriate metrics and Key Performance Indicators (KPIs) to ensure these goals are measurable.
 
-While there's no specific list of metrics and KPIs that apply to all DevOps Projects, the following are commonly used:<br>
+While there is no specific list of metrics and KPIs that apply to all DevOps Projects, the following are commonly used:<br>
 
 ## Faster outcomes
 
  -  **Deployment Frequency**. Increasing the frequency of deployments is often a critical driver in DevOps Projects.
- -  **Deployment Speed**. It's necessary to reduce the time that they take.
+ -  **Deployment Speed**. It is necessary to reduce the time that they take.
  -  **Deployment Size**. How many features, stories, and bug fixes are being deployed each time?
- -  **Lead Time**. How long does it take from the creation of a work item until it's completed?
+ -  **Lead Time**. How long does it take from the creation of a work item until it is completed?
 
 ## Efficiency
 
@@ -23,12 +23,12 @@ While there's no specific list of metrics and KPIs that apply to all DevOps Proj
  -  **Deployment failure rates**. How often do deployments (or applications) fail?
  -  **Application failure rates**. How often do application failures occur, such as configuration failures, performance timeouts, and so on?
  -  **Mean time to recover**. How quickly can you recover from a failure?
- -  **Bug report rates**. You don't want customers finding bugs in your code. Is the amount they're seeing increasing or lowering?
+ -  **Bug report rates**. You do not want customers finding bugs in your code. Is the amount they are seeing increasing or lowering?
  -  **Test pass rates**. How well is your automated testing working?
  -  **Defect escape rate**. What percentage of defects are being found in production?
  -  **Availability**. What percentage of time is the application truly available for customers?
  -  **Service level agreement achievement**. Are you meeting your service level agreements (SLAs)?
- -  **Mean time to detection**. If there's a failure, how long does it take for it to be detected?
+ -  **Mean time to detection**. If there is a failure, how long does it take for it to be detected?
 
 ## Culture
 
@@ -36,4 +36,4 @@ While there's no specific list of metrics and KPIs that apply to all DevOps Proj
  -  **Retention rates**. Is the organization losing staff?
 
 > [!NOTE]
-> It's crucial to choose metrics that focus on specific business outcomes and achieve a return on investment and increased business value.
+> It is crucial to choose metrics that focus on specific business outcomes and achieve a return on investment and increased business value.

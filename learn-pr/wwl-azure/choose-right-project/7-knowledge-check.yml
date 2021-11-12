@@ -4,13 +4,40 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/09/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge."
+  questions:
+  - content: "In which of the following choices would you find large amounts of technical debt?"
+    choices:
+    - content: "Greenfield project"
+      isCorrect: false
+      explanation: "That's incorrect. A Brownfield Project comes with the baggage of existing codebases, existing teams, and often a significant technical debt. They can still be ideal projects for DevOps transformations."
+    - content: "Brownfield project"
+      isCorrect: true
+      explanation: "That's correct. A Brownfield Project comes with the baggage of existing codebases, existing teams, and often a significant technical debt. They can still be ideal projects for DevOps transformations."
+  - content: "Which of the following choices would a system that manages inventory in a warehouse be considered?"
+    choices:
+    - content: "System of Record"
+      isCorrect: true
+      explanation: "That's correct. Systems that provide the truth about data elements are often called Systems of Record."
+    - content: "System of Engagement"
+      isCorrect: false
+      explanation: "That's incorrect. Systems that provide the truth about data elements are often called Systems of Record."
+  - content: "Which of the following choices are the categorized user groups most adopted in Continuous Delivery?"
+    choices:
+    - content: "Canaries, Early adopters, and Users"
+      isCorrect: true
+      explanation: "That's correct. In discussions around continuous delivery, users are often categorized into three general buckets: Canaries, Early adopters, and Users."
+    - content: "Alpha and Beta Users"
+      isCorrect: false
+      explanation: "That's incorrect. In discussions around continuous delivery, users are often categorized into three general buckets: Canaries, Early adopters, and Users."

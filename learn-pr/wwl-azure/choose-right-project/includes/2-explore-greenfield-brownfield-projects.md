@@ -15,6 +15,6 @@ On the surface, it can seem that a greenfield DevOps project would be easier to 
 
 A common misconception is that DevOps is only for greenfield projects and suits startups best. However, DevOps can also succeed with brownfield projects.
 
-The beauty of these projects is that there's often a large gap between customer expectations and delivery.
+The beauty of these projects is that there is often a large gap between customer expectations and delivery.
 
-The teams involved may well realize that the status quo needs to change. They've lived the challenges and the limitations associated with what they're currently doing.
+The teams involved may well realize that the status quo needs to change. They have lived the challenges and the limitations associated with what they are currently doing.
