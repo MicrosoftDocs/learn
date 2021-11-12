@@ -10,8 +10,7 @@ Azure Storage doesn't support HTTPS for **custom domain names**, this option is 
 
 ### Require secure transfer for a new storage account
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the create a storage account page with secure transfer selection.](../media/az500-secure-transfer.png)
+![Screenshot of the create a storage account page with secure transfer selection.](../media/az500-secure-transfer.png)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Azure Files connections require encryption (SMB)
