@@ -47,7 +47,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
 1. Open a new File Explorer window.
 
-1. Put the two File Explorer windows side by side, with D:\CADFolder on the left, and the mapped cadfileshare on the right:
+1. Put the two File Explorer windows side by side, with D:\\CADFolder on the left, and the mapped cadfileshare on the right:
 
     ![Screenshot of two File Explorer windows side by side.](../media/10-side-by-side.png)
 
@@ -71,7 +71,7 @@ You can troubleshoot on your on-premises server or in the Azure portal. Syncing 
 
 ### View the file sync issue on Windows Server
 
-1. Right-click **Start**, and select **Windows PowerShell (Admin)**.
+1. Right-click **Start** and select **Windows PowerShell (Admin)**.
 
 1. In the console, move to the File Sync folder:
 

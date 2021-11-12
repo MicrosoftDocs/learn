@@ -14,8 +14,7 @@ A customer has an on-premises client application at their business location. The
 
 A customer has a client application, hosted in Microsoft Azure (for example, in a worker role or a web role), which operates on sensitive data stored in a database hosted in Azure (SQL Database or SQL Server running in a virtual machine on Microsoft Azure). Although Always Encrypted does not provide complete isolation of data from cloud administrators, as both the data and keys are exposed to cloud administrators of the platform hosting the client tier, the customer still benefits from reducing the security attack surface area (the data is always encrypted in the database).
 
-> [!div class="mx-imgBorder"]
-> ![Data flow for Always Encrypted feature](../media/az500-always-encrypted.png)
+![Data flow for Always Encrypted feature](../media/az500-always-encrypted.png)
 
 ### Always Encrypted Features
 The Database Engine never operates on plaintext data stored in encrypted columns, but it still supports some queries on encrypted data, depending on the encryption type for the column. Always Encrypted supports two types of encryption: **randomized encryption and deterministic encryption**.
