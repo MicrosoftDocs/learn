@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/28/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -46,7 +46,7 @@ quiz:
       explanation: "Kerberos. Because Azure AD is HTTP/HTTPS based, it does not use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization)."
     - content: "OAuth"
       isCorrect: true
-      explanation: "OAuth is used for authentication and authorization."
+      explanation: "OAuth is used for authorization."
     - content: "Open Connect ID"
       isCorrect: false
       explanation: "Open Connect ID is not an authentication protocol used for web apps in Azure."
@@ -60,4 +60,4 @@ quiz:
       explanation: "You can use the Authenticator app for passwordless connections to Azure."
     - content: "Azure Active Directory Multi-Factor Authentication"
       isCorrect: true
-      explanation: "Azure Active Directory Multi-Factor Authentication (MFA) is a great way to secure your organization, but users often get frustrated with the extra security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know. The other choices are passwordless authentication options that integrate with Azure AD. Azure AD DS) enables the use of ciphers such as NTLM v1 and TLS v1."
+      explanation: "Azure Active Directory Multi-Factor Authentication (MFA) is a great way to secure your organization, but users often get frustrated with the extra security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know. The other choices are passwordless authentication options that integrate with Azure AD. Azure AD DS) enables the use of ciphers such as NTLM v1 and TLS v1."
