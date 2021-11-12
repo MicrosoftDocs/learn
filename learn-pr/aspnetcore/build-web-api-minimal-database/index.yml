@@ -24,6 +24,8 @@ roles:
 products:
   - vs
   - dotnet
+  - aspnet-core
+  - vs-code
 prerequisites: |
   - Recommended familiarity with .NET 6.
   - Having a basic understanding what an API is.
