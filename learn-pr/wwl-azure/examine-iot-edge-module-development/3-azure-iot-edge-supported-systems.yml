@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-edge-module-development.runtime-supported-systems
+title: Examine IoT Edge runtime supported systems
+metadata:
+  title: Examine IoT Edge runtime supported systems
+  description: "Examine IoT Edge runtime supported systems"
+  ms.date: 11/12/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-azure-iot-edge-supported-systems.md)]
