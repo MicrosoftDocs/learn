@@ -113,7 +113,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
 
-    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'  
+    `https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure`  
 
 1. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request. When the function responds, you should see output similar to the following example displayed in your browser.
 
