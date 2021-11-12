@@ -24,6 +24,8 @@ roles:
 products:
   - vs
   - dotnet
+  - aspnet-core
+  - vs-code
 prerequisites: |
   - Fundamental understanding of JavaScript.
   - Node.js installed.
