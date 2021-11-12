@@ -1,7 +1,9 @@
 ## Learn more with a .NET beginner video series
 
 - [C# Beginner Series](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/)
+- [Blazor for Beginners](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oUJCA3DCzKT79Oe3kdKEceX)
+- [Web API for Beginners](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVjOKgzsWqdFVvzGL2_d72v)
+- [Mobile development with Xamarin for Beginners](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oU10SXt2W58pu2L0v2dOW-1)
 
 ## Looking for more information?
 
