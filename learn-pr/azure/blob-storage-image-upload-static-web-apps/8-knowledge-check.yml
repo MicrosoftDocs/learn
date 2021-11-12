@@ -19,9 +19,9 @@ quiz:
     - content: "When the SAS key becomes invalid."
       isCorrect: true
       explanation: "Use the `expiresOn` to specify when the Shared Access Signature becomes invalid."
-    - content: "When the uploaded will be deleted from the server."
+    - content: "When the uploaded file will be deleted from the server."
       isCorrect: false
-      explanation: ""
+      explanation: "`expiresOn` is a property of shared access signatures. It doesn't affect files uploaded to Blob Storage."
     - content: "When the user's browser authentication cookies will be deleted."
       isCorrect: false
       explanation: "Shared access signatures are unrelated to browser cookies."
