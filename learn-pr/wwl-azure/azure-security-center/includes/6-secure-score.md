@@ -8,8 +8,7 @@ Security Center continually assesses your resources, subscriptions, and organiza
 The secure score page of Security Center includes:
 * **The score** -  The secure score is shown as a percentage value, but the underlying values are also clear:
 
-> [!div class="mx-imgBorder"]
-> ![ASC secure score as shown on the security score page.](../media/az500-secure-score-1.png)
+![ASC secure score as shown on the security score page.](../media/az500-secure-score-1.png)
 
 * **Security controls** - Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. A control is a set of security recommendations, with instructions that help you implement those recommendations. Your score only improves when you remediate all of the recommendations for a single resource within a control.
 The higher the score, the lower the identified risk level​.
@@ -19,8 +18,7 @@ To immediately determine how well your organization is securing each individual 
 ### How the secure score is calculated
 The contribution of each security control towards the overall secure score is shown clearly on the recommendations page.
 
-> [!div class="mx-imgBorder"]
-> ![Security Center - Recommendations page is displayed.](../media/az500-secure-score-2.png)
+![Security Center - Recommendations page is displayed.](../media/az500-secure-score-2.png)
 
 To get all the possible points for a security control, all your resources must comply with all of the security recommendations within the security control. For example, Security Center has multiple recommendations regarding how to secure your management ports. In the past, you could remediate some of those related and interdependent recommendations while leaving others unsolved, and your secure score would improve. When looked at objectively, it's easy to argue that your security hadn't improved until you had resolved them all. Now, you must remediate them all to make a difference to your secure score.
 
