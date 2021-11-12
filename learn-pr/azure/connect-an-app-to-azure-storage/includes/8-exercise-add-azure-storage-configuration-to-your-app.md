@@ -122,7 +122,7 @@ Now that we've added the required libraries to enable reading the configuration,
     }
     ```
 
-1. Save the the file.
+1. Save the file.
     
 ::: zone-end
 

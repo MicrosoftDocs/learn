@@ -36,13 +36,13 @@ Let's integrate the **Azure Storage Blob Client Library for JavaScript** into yo
     npm install @azure/storage-blob --save
     ```
 
-1. TYou will see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command.
+1. You will see some console activity while the client library and all the required dependencies are downloaded. When the download is complete, let's build and run the app again to make sure everything is ready to go. Enter the following command.
 
     ```bash
     node index.js
     ```
 
-1. As before, the retrun output "Hello, World!" appears.
+1. As before, the return output "Hello, World!" appears.
 
 ::: zone-end
 
