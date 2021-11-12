@@ -22,7 +22,7 @@ When a user is a member of the Protected Users group, on their workstation or lo
 
 - NTLM will not cache user credentials.
 
-- Kerberos will not create DES (Data Encryption Standard) or RC4 keys, or cache credentials or longterm keys.
+- Kerberos will not create DES (Data Encryption Standard) or RC4 keys, or cache credentials or long-term keys.
 
 - The user can no longer sign-in offline.
 
@@ -46,7 +46,7 @@ Authentication policies enable you to configure TGT lifetime and access-control 
 
 Authentication policy silos allow administrators to assign authentication policies to user, computer, and service accounts. Authentication policy silos work with the Protected Users group to add configurable restrictions to the group’s existing non-configurable restrictions. In addition, policy silos ensure that the accounts belong to only a single authentication policy silo.
 
-When an account signs in, a user that is part of an Authentication policy silo is granted an Authentication Policy Silo claim. This silo claim controls access to claims-aware resources to verify whether the account is authorized to access that device. For example, you might associate accounts that can access particularly sensitive servers with a specific Authentication policy silo.
+When an account signs in, a user that is part of an Authentication policy silo is granted an Authentication Policy Silo claim. This silo claim controls access to claims-aware resources to verify whether the account is authorized to access that device. For example, you might associate accounts that can access sensitive servers with a specific Authentication policy silo.
 
-Additional reading: For more information about authentication policies and authentication policy silos, refer to [Authentication Policies and Authentication Policy Silos](https://aka.ms/authentication-policies-and-policy-silos).
+Additional reading: For more information about authentication policies and authentication policy silos, see [Authentication Policies and Authentication Policy Silos](https://aka.ms/authentication-policies-and-policy-silos).
 

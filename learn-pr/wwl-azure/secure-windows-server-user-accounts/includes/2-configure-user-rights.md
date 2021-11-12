@@ -1,6 +1,6 @@
 When configuring user rights, it's important to follow the principle of least privilege. This means granting users only the rights and privileges they need to perform their tasks, and no more. As a result, if an unauthorized user compromises an account, they gain access only to the limited set of privileges assigned to that account. IT staff should also have separate accounts for day-to-day activities such as answering email, separate from the privileged accounts used to perform administrative tasks.
 
-Additional reading: For more information about implementing the principle of least privilege, refer to [Implementing Least-Privilege Administrative Models](https://aka.ms/implementing-least-privilege-administrative-models).
+Additional reading: For more information about implementing the principle of least privilege, see [Implementing Least-Privilege Administrative Models](https://aka.ms/implementing-least-privilege-administrative-models).
 
 | User rights assignment policy| Function|
 | :--- | :--- |
@@ -12,22 +12,22 @@ Additional reading: For more information about implementing the principle of lea
 | Allow sign in locally| Determines which users can sign in locally to a computer. Alter this policy on Privileged Access Workstations to remove members of the Users group as a way of limiting which accounts can sign in to a computer. By default, any authenticated user can sign in to any workstation or server except for a Domain Controller, which is limited to members of certain groups.|
 | Allow sign in through Remote Desktop Services| Determines which users and groups can sign in remotely by using a Remote Desktop Service connection.|
 | Back up files and directories| Gives permission to back up files, directories, registry, and other objects to which the user normally would not have permission. Assigning this right gives indirect access to all data on a computer because the person with that right can back that data up and then recover it in an environment over which they have complete control.|
-| Bypass traverse checking| Allows the user with this right to traverse directories on which they don’t have permission. It does not allow the user to list the contents of that directory though.|
+| Bypass traverse checking| Allows the user with this right to traverse directories on which they don’t have permission. It does not allow the user to list the contents of that directory though.|
 | Change the system time| Allows the user with this right to alter the system time, which is separate from the time zone.|
 | Change the time zone| Allows the user with this right to alter the time zone, but not the system time.|
 | Create a page file| Allows the user with this right to create and modify a page file.|
-| Create a token object| Determines which user accounts that processes can use to create tokens that allow access to local resources. You should not assign this right to any user you don’t want to have complete system control, because they can use it to leverage local Administrator privileges.|
-| Create global objects| Determines which user accounts can create global objects that are available to all sessions. You should not assign this right to any user you don’t want to give complete system control, because they can use it to leverage local Administrator privileges.|
+| Create a token object| Determines which user accounts that processes can use to create tokens that allow access to local resources. Don't assign this right to any user you don’t want to have complete system control, because they can use it to leverage local Administrator privileges.|
+| Create global objects| Determines which user accounts can create global objects that are available to all sessions. Don't assign this right to any user you don’t want to give complete system control, because they can use it to leverage local Administrator privileges.|
 | Create permanent shared objects| Determines which user accounts can create directory objects by using the object manager.|
 | Create symbolic links| Determines which user accounts can create symbolic links from the computer they are signed in to. You should assign this right only to trusted users because symbolic links can expose security vulnerabilities in apps that aren’t configured to support them.|
 | Debug programs| Determines which user accounts can attach a debugger to processes within the operating system kernel. Only developers who are writing new system components require this ability. Developers who are writing applications do not.|
 | Deny access to this computer from the network| Blocks specified users and groups from accessing the computer from the network. This setting overrides the policy that allows access from the network.|
-| Deny sign in as a batch job| Blocks specified users and groups from signing in as a batch job. This overrides the sign in as a batch job policy.|
-| Deny sign in as a service| Blocks service accounts from registering a process as a service. This policy overrides the sign in as a service policy. However, it doesn't apply to Local System, Local Service, or Network Service accounts.|
+| Deny sign in as a batch job| Blocks specified users and groups from signing in as a batch job. This overrides the sign-in as a batch job policy.|
+| Deny sign in as a service| Blocks service accounts from registering a process as a service. This policy overrides the sign in as a service policy. However, it doesn't apply to Local System, Local Service, or Network Service accounts.|
 | Deny sign in locally| Blocks accounts from signing on locally. This policy overrides the allow sign in locally policy.|
 | Deny sign in through Remote Desktop Services| Blocks accounts from signing in by using Remote Desktop Services. This policy overrides the Allow sign in through Remote Desktop Services policy.|
 | Enable computer and user accounts to be trusted for delegation| Determines whether you can configure the Trusted for Delegation setting on a user or a computer object.|
-| Force shutdown from a remote system| Users assigned this right can shut down computers from remote network locations.|
+| Force shutdown from a remote system| Users assigned this right can shut down computers from remote network locations.|
 | Generate security audits| Determines which accounts processes can use to add items to the security log. Because this right allows interaction with the security log, it presents a security risk when you assign this to a user account.|
 | Impersonate a client after authentication| Allows apps that are running on behalf of a user to impersonate a client. This right can be a security risk, and you should assign it only to trusted users.|
 | Increase a process working set| Accounts assigned this right can increase or decrease the number of memory pages available for the process to use to the process in random access memory (RAM).|
@@ -44,7 +44,7 @@ Additional reading: For more information about implementing the principle of lea
 | Profile system performance| Determines which user accounts can leverage performance-monitoring tools to monitor system processes.|
 | Remove computer from docking station| When assigned, a user account can remove a portable computer from a docking station without signing in.|
 | Replace a process-level token| When assigned, a user account can call the **CreateProcessAsUser** API so that one service can trigger another.|
-| Restore files and directories| Allows users assigned this right to bypass permissions on files, directories, and the registry and overwrite these objects with restored data. This right is a security risk, as a user account with this right can overwrite registry settings and replace existing permissions.|
+| Restore files and directories| Allows users assigned this right to bypass permissions on files, directories, and the registry and overwrite these objects with restored data. This right is a security risk, as a user account with this right can overwrite registry settings and replace existing permissions.|
 | Shut down the system| Assigns the ability for a locally signed-in user to shut down the operating system.|
 | Synchronize directory service data| Assigns the ability to synchronize AD DS data.|
 | Take ownership of files or other objects| When assigned, this user account can take ownership of any securable object, including AD DS objects, files, folders, registry keys, processes, and threads. This represents a security risk because it allows the user to take control of any securable object.|
@@ -57,11 +57,11 @@ You can also configure additional account security options that limit how and wh
 
 - **Password Never Expires**. You should never configure this option for privileged accounts because it will exempt the account from the domain password policy.
 
-- **Smart card is required for interactive logon**. In high-security environments, you can enable this option to ensure that only an authorized person that has both the smart card and the account credentials can use the privileged account.
+- **Smart card is required for interactive logon**. In high-security environments, you can enable this option to ensure that only an authorized person that has both the smart card and the account credentials can use the privileged account.
 
 - **Account is sensitive and cannot be delegated**. When you enable this option, you ensure that trusted applications cannot forward an account’s credentials to other services or computers on the network. You should enable this setting for highly privileged accounts.
 
-- **Use only Kerberos Data Encryption Standard (DES) encryption types for this account**. This option configures an account to use only DES encryption, which is a weaker form of encryption than Advanced Encryption Standard (AES). You should not configure this option on a secure network.
+- **Use only Kerberos Data Encryption Standard (DES) encryption types for this account**. This option configures an account to use only DES encryption, which is a weaker form of encryption than Advanced Encryption Standard (AES). You should not configure this option on a secure network.
 
 - **This account supports Kerberos AES 128-bit encryption**. When you enable this option, you are allowing Kerberos AES 128-bit encryption to occur.
 
