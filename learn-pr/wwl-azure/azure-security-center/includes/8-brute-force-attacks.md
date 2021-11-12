@@ -11,8 +11,7 @@ Attackers target RDP servers that use weak passwords and are without multifactor
 
 In a brute force attack, adversaries attempt to sign in to an account by effectively using one or more trial-and-error methods. Many failed sign-ins occurring over very short time frequencies, typically minutes or even seconds, are usually associated with these attacks. A brute force attack might also involve adversaries attempting to access one or more accounts using valid usernames that were obtained from credential theft or using common usernames like “administrator”. The same holds for password combinations. 
 
-> [!div class="mx-imgBorder"]
-> ![A hacker uses brute force attack on management ports to gain access.](../media/az500-brute-force.png)
+![A hacker uses brute force attack on management ports to gain access.](../media/az500-brute-force.png)
 
 One way to reduce exposure to a brute force attack is to limit the amount of time that a port is open. Management ports don't need to be open at all times. They only need to be open while you're connected to the VM, for example to perform management or maintenance tasks. When just-in-time is enabled, Security Center uses network security group (NSG) and Azure Firewall rules, which restrict access to management ports so they cannot be targeted by attackers.
 
