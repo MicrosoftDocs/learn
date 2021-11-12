@@ -1,4 +1,4 @@
-It's time to create your application's backend. For that you are going to create an Azure Function that will serve as the REST API generating on demand Shared Access Signatures so your users can upload images to your Blob Storage container. This exercise will guide you on how to create the Azure Function, install the required libraries, and write the code that will generated on demand SAS keys.
+It's time to create your application's backend. For that you are going to create an Azure Function that will serve as the REST API generating on demand shared access signatures so your users can upload images to your Blob Storage container. This exercise will guide you on how to create the Azure Function, install the required libraries, and write the code that will generated on demand SAS keys.
 
 ## Create the Azure Function REST API
 
@@ -8,50 +8,50 @@ It's time to create your application's backend. For that you are going to create
 
 3. Go to the Azure portal, navigate to your storage account, and copy the connection string from there.
 
-:::image type="content" source="../media/account-keys.png" alt-text="Azure portal copy account key":::
+    :::image type="content" source="../media/account-keys.png" alt-text="Azure portal copy account key":::
 
 4. Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
 
-```json
-{
-    "IsEncrypted": false,
-    "Values": {
-      "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=youraccountname;AccountKey=<SecretAccountKey>;EndpointSuffix=core.windows.net",
-      "FUNCTIONS_WORKER_RUNTIME": "node"
-    }
-}    
-```
+    ```json
+    {
+        "IsEncrypted": false,
+        "Values": {
+          "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=youraccountname;AccountKey=<SecretAccountKey>;EndpointSuffix=core.windows.net",
+          "FUNCTIONS_WORKER_RUNTIME": "node"
+        }
+    }    
+    ```
 
 5. Install the Azure SDK dependency used for generating the SAS token.
 
-```bash
-npm install @azure/storage-blob
-```
+    ```bash
+    npm install @azure/storage-blob
+    ```
 
-## Generating Shared Access Signatures
+## Generating shared access signatures
 
 1. Open the `index.js` file from your `credentials` folder and add the following function at the bottom:
 
-```javascript
-function generateSasToken(connectionString, container, permissions) {
-    const { accountKey, accountName, url } = extractConnectionStringParts(connectionString);
-    const sharedKeyCredential = new StorageSharedKeyCredential(accountName, accountKey.toString('base64'));
-
-    var expiryDate = new Date();
-    expiryDate.setHours(expiryDate.getHours() + 2);
-
-    const sasKey = generateBlobSASQueryParameters({
-        containerName: container,
-        permissions: ContainerSASPermissions.parse(permissions),
-        expiresOn: expiryDate,
-    }, sharedKeyCredential);
-
-    return {
-        sasKey: sasKey.toString(),
-        url: url
-    };
-}
-```
+    ```javascript
+    function generateSasToken(connectionString, container, permissions) {
+        const { accountKey, accountName, url } = extractConnectionStringParts(connectionString);
+        const sharedKeyCredential = new StorageSharedKeyCredential(accountName, accountKey.toString('base64'));
+    
+        var expiryDate = new Date();
+        expiryDate.setHours(expiryDate.getHours() + 2);
+    
+        const sasKey = generateBlobSASQueryParameters({
+            containerName: container,
+            permissions: ContainerSASPermissions.parse(permissions),
+            expiresOn: expiryDate,
+        }, sharedKeyCredential);
+    
+        return {
+            sasKey: sasKey.toString(),
+            url: url
+        };
+    }
+    ```
 
 The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions strings, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
 
@@ -61,27 +61,27 @@ The function `generateSasToken` takes your Azure Blob Storage connection string,
 
 Your `require` section should now look like this:
 
-```javascript
-const {
-    StorageSharedKeyCredential,
-    ContainerSASPermissions,
-    generateBlobSASQueryParameters
-} = require("@azure/storage-blob");
-const { extractConnectionStringParts } = require('./utils.js');
-```
+    ```javascript
+    const {
+        StorageSharedKeyCredential,
+        ContainerSASPermissions,
+        generateBlobSASQueryParameters
+    } = require("@azure/storage-blob");
+    const { extractConnectionStringParts } = require('./utils.js');
+    ```
 
 4. Implement the serverless function entry point that will send the results from `generateSasToken` to the client:
 
-```javascript
-module.exports = async function (context, req) {
-    const permissions = 'c';
-    const container = 'images';
-    context.res = {
-        body: generateSasToken(process.env.AzureWebJobsStorage, container, permissions)
+    ```javascript
+    module.exports = async function (context, req) {
+        const permissions = 'c';
+        const container = 'images';
+        context.res = {
+            body: generateSasToken(process.env.AzureWebJobsStorage, container, permissions)
+        };
+        context.done();
     };
-    context.done();
-};
-```
+    ```
 
 Your `index.js` should like like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
 

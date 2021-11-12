@@ -14,7 +14,7 @@ quiz:
   title: Choose the best response for each question. Then select Check your answers.
   questions:
 
-  - content: "The `expiresOn` Shared Access Signature (SAS Key) property specifies:"
+  - content: "The `expiresOn` shared access signature (SAS Key) property specifies:"
     choices:
     - content: "When the SAS key becomes invalid."
       isCorrect: true
@@ -24,7 +24,7 @@ quiz:
       explanation: ""
     - content: "When the user's browser authentication cookies will be deleted."
       isCorrect: false
-      explanation: "Shared Access Signatures are unrelated to browser cookies."
+      explanation: "Shared access signatures are unrelated to browser cookies."
 
   - content: "For a web application living in domain example.org to access resources in domain contoso.com you need to enable:"
     choices:
@@ -34,9 +34,9 @@ quiz:
     - content: "CORS"
       isCorrect: true
       explanation: "CORS or Cross-Origin Resource Sharing is an HTTP feature that enables a web application running under one domain to access resources in another domain."
-    - content: "Shared Access Signatures"
+    - content: "Shared access signatures"
       isCorrect: false
-      explanation: "Shared Access Signatures are used to delegate access to Azure resources like Blob Storage. To access resources across domains use CORS."
+      explanation: "Shared access signatures are used to delegate access to Azure resources like Blob Storage. To access resources across domains use CORS."
 
   - content: "If you want your web app users to upload images to your Azure Blob Storage account you will:"
     choices:
@@ -45,7 +45,7 @@ quiz:
       explanation: "You should never share your Azure Blog Storage account key with third parties."
     - content: "There is no way to grant third parties access to your Azure Blob Storage account"
       isCorrect: false
-      explanation: "You can use Shared Access Signatures to grant restricted access to your Blob Storage Account to third parties."
-    - content: "Create a Shared Access Signature that grants restricted access to your Blob Storage Account"
+      explanation: "You can use shared access signatures to grant restricted access to your Blob Storage account to third parties."
+    - content: "Create a Shared Access Signature that grants restricted access to your Blob Storage account"
       isCorrect: true
-      explanation: "Use Shared Access Signatures to grant restricted access to your Blob Storage Account to third parties."
+      explanation: "Use shared access signatures to grant restricted access to your Blob Storage account to third parties."

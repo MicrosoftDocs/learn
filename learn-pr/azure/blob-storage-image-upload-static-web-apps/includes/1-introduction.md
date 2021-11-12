@@ -6,13 +6,13 @@ The middleware is an old ASP.NET app that while it has done its job well, it sti
 
 A solution would be to use Azure Blog Storage directly by allowing your users to upload images right from their browsers to your storage containers. This solution poses a challenge though, how to grant access to your users to your storage account without compromising the security of your data? You would like to find a way to allow your users to upload images while keeping your storage account secure.
 
-Using Shared Access Signatures, you could grant access to your storage account in a fine grained way. Since every new user session will require a new Shared Access Signature, you need a way to generate signatures on demand.
+Using shared access signatures, you could grant access to your storage account in a fine grained way. Since every new user session will require a new Shared Access Signature, you need a way to generate signatures on demand.
 
-By using an Azure Function, you can generate Shared Access Signatures on demand, and deliver them to your users’ browsers via a REST API. In this way, you modernize your infrastructure, make your developers' life easier, and your users will have an improved experience by getting their images from the optimized Azure Storage servers.
+By using an Azure Function, you can generate shared access signatures on demand, and deliver them to your users’ browsers via a REST API. In this way, you modernize your infrastructure, make your developers' life easier, and your users will have an improved experience by getting their images from the optimized Azure Storage servers.
 
 ## In this module you will
 
-- Evaluate when to use Shared Access Signatures (SAS) to grant access to Azure Blob Storage.
+- Evaluate when to use shared access signatures (SAS) to grant access to Azure Blob Storage.
 - Generate SAS tokens on demand to authenticate image upload requests.
 - Use the SAS token to upload an image to Azure Blob Storage.
 - Implement file uploads in a Static Web App by following security best practices.

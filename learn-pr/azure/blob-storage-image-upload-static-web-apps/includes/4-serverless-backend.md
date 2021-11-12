@@ -2,9 +2,9 @@ For a client to be able to use anonymous authentication when sending data to Azu
 
 You are going to create an Azure Function that will return a JSON object containing two values: a URL where images should be uploaded to, and a SAS token. The browser client will use these values to authenticate its upload requests.
 
-## Generating Shared Access Signatures
+## Generating shared access signatures
 
-Shared Access Signatures need to be configured with several parameters that specify things from what kind of access you are granting to users, to when that access will expire.
+Shared access signatures need to be configured with several parameters that specify things from what kind of access you are granting to users, to when that access will expire.
 
 Also your SAS token needs to carry information that will let Azure authenticate and authorize requests made with the token. This information is extracted from your own storage account credentials. In this case your function will use your storage account `Connection String` and extract the `accountKey`, `accountName`, and storage `URL` from there. The first two values are going to be used to build the shared key credentials. The URL is going to be sent directly to user's browser, so it knows where to upload the image to.
 
@@ -12,7 +12,7 @@ To limit how long the SAS token is going to be valid, you are going to specify a
 
 SAS tokens can be generated for different kind of resources on Azure, and with various permission levels. In this case your SAS token will grant access to your `images` container, and will allow creating blobs in that container.
 
-## The Serverless API
+## The serverless API
 
 Once the SAS token and the URL have been generated, you need to return that information to the user so they can upload images with it. You will create a serverless API that will return a JSON object with the following format:
 

@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.blob-storage-image-upload-static-web-apps
 metadata:
-  title: Upload images to Azure Blob Storage from a Static Web App
-  description: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on demand Shared Access Signatures.
+  title: Upload images to Azure Blob Storage from a static web app
+  description: Learn how to securely upload images to Azure Blob Storage from a static web apps by using an Azure Function to generate on demand shared access signatures.
   ms.date: 06/04/2020
   author: videlalvaro
   ms.author: alvidela
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Upload images to Azure Blob Storage from a Static Web App
-summary: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on-demand Shared Access Signatures.
+title: Upload images to Azure Blob Storage from a static web app
+summary: Learn how to securely upload images to Azure Blob Storage from a static web app by using an Azure Function to generate on-demand shared access signatures.
 abstract: |
   In this module you will:
-  - Evaluate when to use Shared Access Signatures (SAS) to grant access to Azure Blob Storage.
+  - Evaluate when to use shared access signatures (SAS) to grant access to Azure Blob Storage.
   - Generate SAS tokens on-demand to authenticate image uploads request.
   - Use the SAS token to upload an image to Azure Blob Storage.
-  - Implement file uploads in a Static Web App by following Security Best Practices.
+  - Implement file uploads in a static web app by following security best practices.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -26,7 +26,7 @@ products:
 prerequisites: |
   -	Ability to create their own Azure Storage account
   -	Know the basic concepts of Static Web Apps
-  -	Know the basic concepts of  with Azure Functions
+  -	Know the basic concepts of Azure Functions
   -	Node.js LTS and Visual Studio Code
   - Azure Functions Extension for Visual Studio Code installed
   - Azure Functions Core Tools installed
