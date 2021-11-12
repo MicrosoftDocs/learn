@@ -4,7 +4,7 @@ title: Manage access to Azure Kubernetes Service using Azure role-based access c
 metadata:
   title: Manage access to Azure Kubernetes Service using Azure role-based access controls
   description: "Manage access to Azure Kubernetes Service using Azure role-based access controls"
-  ms.date: 09/29/2021
+  ms.date: 11/10/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

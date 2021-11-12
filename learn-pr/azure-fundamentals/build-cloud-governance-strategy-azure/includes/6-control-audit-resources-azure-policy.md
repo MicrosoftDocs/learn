@@ -1,14 +1,12 @@
-Now that you've identified your governance and business requirements, how do you ensure that your resources *stay* compliant? How can you be alerted if a resource's configuration has changed?
+In a previous exercise in this module, you identified your governance and business requirements. How do you ensure that your resources *stay* compliant? Can you be alerted if a resource's configuration has changed?
 
-[Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resource configurations so that those configurations stay compliant with corporate standards.
+[Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across all of your resource configurations so that those configurations stay compliant with corporate standards.
 
 ## How does Azure Policy define policies?
 
-Azure Policy enables you to define both individual policies and groups of related policies, known as *initiatives*. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
+Azure Policy enables you to define both individual policies and *groups* of related policies, known as *initiatives*. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
-Azure Policy comes with a number of built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
-
-For example, say you define a policy that allows only a certain stock-keeping unit (SKU) size of virtual machines (VMs) to be used in your environment. After you enable this policy, that policy is applied when you create new VMs or resize existing VMs. Azure Policy also evaluates any current VMs in your environment.
+Azure Policy comes with a number of built-in policy and initiative definitions that you can use. These built-in definitions can be found under categories such as Storage, Networking, Compute, Security Center, and Monitoring. For example, if you define a policy that allows only a certain SKU (stock-keeping unit) size for virtual machines (VMs) to be used in your environment, that policy is invoked when you create new VMs and whenever you resize existing VMs. Azure Policy also evaluates and and all current VMs in your environment.
 
 In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with the **AppName** tag and a value of "SpecialOrders," Azure Policy can automatically reapply that tag if it has been removed.
 
@@ -16,7 +14,7 @@ Azure Policy also integrates with Azure DevOps by applying any continuous integr
 
 ## Azure Policy in action
 
-Implementing a policy in Azure Policy involves these three steps:
+Implementing a policy in Azure Policy involves these three tasks:
 
 1.  Create a policy definition.
 2.  Assign the definition to resources.
@@ -24,7 +22,7 @@ Implementing a policy in Azure Policy involves these three steps:
 
 Let's examine each step in more detail.
 
-### 1. Create a policy definition
+### Task 1. Create a policy definition
 
 A policy definition expresses what to evaluate and what action to take. For example, you could prevent VMs from being deployed in certain Azure regions. You also could audit your storage accounts to verify that they only accept connections from allowed networks.
 
@@ -36,13 +34,13 @@ Every policy definition has conditions under which it's enforced. A policy defin
  -  **CORS should not allow every resource to access your web applications** Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
  -  **System updates should be installed on your machines** This policy enables Azure Security Center to recommend missing security system updates on your servers.
 
-### 2. Assign the definition to resources
+### Task 2. Assign the definition to resources
 
 To implement your policy definitions, you assign definitions to resources. A *policy assignment* is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
 
 Policy assignments are inherited by all child resources within that scope. If a policy is applied to a resource group, that policy is applied to all resources within that resource group. You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-### 3. Review the evaluation results
+### Task 3. Review the evaluation results
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or noncompliant. You can review the noncompliant policy results and take any action that's needed.
 
@@ -50,7 +48,7 @@ Policy evaluation happens about once per hour. If you make changes to your polic
 
 ## What are Azure Policy initiatives?
 
-An Azure Policy initiative is a way of grouping related policies into one set. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
+An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
 
 For example, Azure Policy includes an initiative named **Enable Monitoring in Azure Security Center**. Its goal is to monitor all of the available security recommendations for all Azure resource types in Azure Security Center.
 
@@ -62,11 +60,11 @@ Under this initiative, the following policy definitions are included:
 
 In fact, the **Enable Monitoring in Azure Security Center** initiative contains over 100 separate policy definitions.
 
-Azure Policy also includes initiatives that support regulatory compliance standards such as HIPAA and ISO 27001.
+Azure Policy also includes initiatives that support regulatory compliance standards, such as HIPAA and ISO 27001.
 
 ### How do I define an initiative?
 
-You define initiatives by using the Azure portal or by using command-line tools. From the Azure portal, you can search the list of built-in initiatives that are already provided by Azure. You also can create your own custom policy definition.
+You define initiatives by using the Azure portal or command-line tools. From the Azure portal, you can search the list of built-in initiatives that are built into Azure. You also can create your own custom policy definition.
 
 The following image shows a few example Azure Policy initiatives in the Azure portal.
 

@@ -3,8 +3,7 @@
 
 You can configure a Site-to-Site VPN as a secure failover path for ExpressRoute, or use Site-to-Site VPNs to connect to sites that are not part of your network, but that are connected through ExpressRoute. Notice that this configuration requires two virtual network gateways for the same virtual network, one using the gateway type 'Vpn', and the other using the gateway type 'ExpressRoute'.
 
-> [!div class="mx-imgBorder"]
-> ![An on-premises network uses ExpressRoute for a private connection to Azure. Another on-premises network uses a VPN gateway and IPSec connection to Azure. ](../media/az500-virtual-private-network-gateways.png)
+![An on-premises network uses ExpressRoute for a private connection to Azure. Another on-premises network uses a VPN gateway and IPSec connection to Azure. ](../media/az500-virtual-private-network-gateways.png)
 
 ## ExpressRoute encryption
 
@@ -13,8 +12,7 @@ You can configure a Site-to-Site VPN as a secure failover path for ExpressRoute,
 Azure Virtual WAN uses an Internet Protocol Security (IPsec) Internet Key Exchange (IKE) VPN connection from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit. This technique can provide an encrypted transit between the on-premises networks and Azure virtual networks over ExpressRoute, without going over the public internet or using public IP addresses.
 The following diagram shows an example of VPN connectivity over ExpressRoute private peering.
 
-> [!div class="mx-imgBorder"]
-> ![A network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering.](../media/az500-virtual-wide-area-network.png)
+![A network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering.](../media/az500-virtual-wide-area-network.png)
 
 The diagram shows a network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering. The connectivity establishment is straightforward:
 1.	Establish ExpressRoute connectivity with an ExpressRoute circuit and private peering.
