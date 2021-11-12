@@ -100,7 +100,7 @@ Now it's time to test your project locally.
 
 You will see the return value of the function displayed in your browser screen, looking like this:
 
-    :::image type="content" source="../media/api-result.png" alt-text="API result in the browser":::
+:::image type="content" source="../media/api-result.png" alt-text="API result in the browser":::
 
 ## Test your project using Live Server
 

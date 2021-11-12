@@ -6,9 +6,9 @@ metadata:
   description: Describes how to fetch the Shared Access Signature from the frontend, and how to use it to upload an image to Blob Storage
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 08/13/2021
+  ms.date: 11/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/6-frontend.md)]

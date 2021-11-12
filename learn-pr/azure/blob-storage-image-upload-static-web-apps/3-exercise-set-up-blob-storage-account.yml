@@ -6,9 +6,9 @@ metadata:
   description: Set up your Blob Storage account and create a new Container that will hold the uploaded images.
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 08/13/2021
+  ms.date: 11/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-set-up-blob-storage-account.md)]

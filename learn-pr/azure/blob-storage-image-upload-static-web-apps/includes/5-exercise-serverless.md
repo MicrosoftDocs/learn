@@ -53,13 +53,13 @@ It's time to create your application's backend. For that you are going to create
     }
     ```
 
-The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions strings, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
+    The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions strings, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
 
 2. Create a file inside the `credentials` folder and call it `utils.js`. Paste the content from this file inside there: [utils.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/utils.js)
 
-3. Require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string. 
+3. Require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string.
 
-Your `require` section should now look like this:
+    Your `require` section should now look like this:
 
     ```javascript
     const {

@@ -10,7 +10,7 @@ Using shared access signatures, you could grant access to your storage account i
 
 By using an Azure Function, you can generate shared access signatures on demand, and deliver them to your users’ browsers via a REST API. In this way, you modernize your infrastructure, make your developers' life easier, and your users will have an improved experience by getting their images from the optimized Azure Storage servers.
 
-## In this module you will
+## In this module, you will discover how to:
 
 - Evaluate when to use shared access signatures (SAS) to grant access to Azure Blob Storage.
 - Generate SAS tokens on demand to authenticate image upload requests.
