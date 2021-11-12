@@ -501,7 +501,7 @@ These are the available checks:
 :::row-end:::
 
 
-To execute the full list of checks, the **iotedge** tool must be run with elevated privileges (for eaxmple using the **sudo** command on Linux).
+To execute the full list of checks, the **iotedge** tool must be run with elevated privileges (for example using the **sudo** command on Linux).
 
 ```bash
 sudo iotedge check
