@@ -1,6 +1,6 @@
 ## Learn more with a .NET beginner video series
 
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/)
+- [C# Beginner Series](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN)
 - [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/)
 
 ## Looking for more information?
