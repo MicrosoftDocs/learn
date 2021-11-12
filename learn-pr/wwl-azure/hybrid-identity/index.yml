@@ -17,7 +17,7 @@ abstract: |
   - Configure password writeback
 prerequisites: |
   - None
-iconUrl: /learn/achievements/identity-hybrid.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
