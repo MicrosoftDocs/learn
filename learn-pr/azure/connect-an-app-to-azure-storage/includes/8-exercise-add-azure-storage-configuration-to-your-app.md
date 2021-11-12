@@ -16,7 +16,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     touch appsettings.json
     ```
 
-1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Cloud Shell (to the right), we recommend Cloud Shell editor. Use the following command in either one to open the editor.
+1. Open the project in an editor. If you are working locally, you can use your editor of choice. We recommend Visual Studio Code, which is an extensible cross-platform IDE. If you are working in Cloud Shell (to the right), we recommend Cloud Shell editor. Use the following command to open the editor.
 
     ```bash
     code .
@@ -32,7 +32,7 @@ Let's add support to our .NET core application to retrieve a connection string f
     }
     ```
 
-1. Save the file using the keyboard shortcut (<kbd>Ctrl+S</kbd>) or select the ellipsis `...` in the top right corner of the editor to use the context menu.
+1. Save the file using the keyboard shortcut (<kbd>Ctrl+S</kbd>) or using the ellipsis `...` in the top right corner of the editor save from the context menu.
 
 1. Now, we need use an Azure command to obtain the actual storage account connection string to replace the placeholder `<value>`. In Cloud Shell, run the following command, replacing `<name>` with the  unique storage account name that you created in the previous exercise.
 
@@ -49,13 +49,13 @@ Let's add support to our .NET core application to retrieve a connection string f
     "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storage1ab;AccountKey=QtSCGB...7AeoW0Hw=="
     ```
 
-1. Copy the connection string, and in the **appsettings.json** file in the editor, replace the `<value>` placeholder with this connection string.
+1. Copy the connection string, and in the **appsettings.json** file, replace the `<value>` placeholder with this connection string.
 
 1. Press <kbd>Ctrl+S</kbd> to save the file.
 
 1. In the editor, open the project file **PhotoSharingApp.csproj**.
 
-1. Add the following configuration block to the file in the project. Add `<ItemGroup>` from the existing code.
+1. Add the following configuration block beneath the existing `<ItemGroup>` block.
 
     ```xml
     <ItemGroup>
@@ -69,7 +69,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
 ## Add support to read a JSON configuration file
 
-In Cloud Shell command prompt section of the window, add a reference to the **Microsoft.Extensions.Configuration.Json** NuGet package.
+In Cloud Shellm at the command prompt, paste the following code to add a reference to the **Microsoft.Extensions.Configuration.Json** NuGet package.
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Configuration.Json
@@ -81,14 +81,14 @@ Now that we've added the required libraries to enable reading the configuration,
 
 1. In the editor, select **Program.cs**.
 
-1. At the top of the file, a **using System;** line is present. Underneath that line, add the following lines of code:
+1. At the top of the file, a **using System;** line is present. Below that line, add the following lines of code:
 
     ```csharp
     using Microsoft.Extensions.Configuration;
     using System.IO;
     ```
 
-1. Replace the contents of the **Main** method (the line that contains "hello world!") with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
+1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
 
     ```csharp
     var builder = new ConfigurationBuilder()
@@ -185,7 +185,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 Node.js apps can include support to read from the **.env** file by adding the **dotenv** package.
 
-1. In the command prompt section of Cloud Shell, add a dependency to the  **dotenv** package using `npm`.
+1. In Cloud Shell session, paste the folowing command to add a dependency to the  **dotenv** package using `npm`.
 
     ```bash
     npm install dotenv --save
@@ -197,7 +197,7 @@ Now that we have added the required libraries to enable reading configuration, w
 
 1. In the editor, open **index.js** file.
 
-1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add  following line of code:
+1. At the top of the file, is a line of code `#!/usr/bin/env node`. Underneath that line, add following line of code:
 
     ```javascript
     require('dotenv').config();
@@ -207,4 +207,4 @@ Now that we have added the required libraries to enable reading configuration, w
 
 ::: zone-end
 
-Now that we have that all wired up, we can start adding code to use our storage account.
+Now that we have the JSON config all wired up, we can start adding code to use our storage account.
