@@ -1,4 +1,4 @@
-## Learn more with a Channel 9 video series
+## Learn more with a .NET beginner video series
 
 - [C# 101](https://channel9.msdn.com/Series/CSharp-101/)
 - [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/)
