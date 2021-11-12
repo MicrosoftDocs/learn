@@ -9,7 +9,7 @@ These input resources can live in the same Azure subscription as your Stream Ana
 
 ## Compression
 
-Stream Analytics supports compression across all data stream input sources. Supported compression types are: None, Gzip, and Deflate compression. Support for compression is not available for reference data. If the input format is Avro data that is compressed, it's handled transparently. You don't need to specify compression type with Avro serialization.
+Stream Analytics supports compression across all data stream input sources. Supported compression types are: None, Gzip, and Deflate compression. Support for compression is not available for reference data. If the input format is Avro data that is compressed, it is handled transparently. You do not need to specify compression type with Avro serialization.
 
 ## Create, edit, or test inputs
 
@@ -17,13 +17,13 @@ You can use the Azure portal, Visual Studio, and Visual Studio Code to add and v
 
 ## Stream data from Event Hubs
 
-Azure Event Hubs provides highly scalable publish-subscribe event ingestors. An event hub can collect millions of events per second so that you can process and analyze the massive amounts of data produced by your connected devices and applications. Together, Event Hubs and Stream Analytics provide an end-to-end solution for real-time analytics. Event Hubs lets you feed events into Azure in real-time, and Stream Analytics jobs can process those events in real-time. For example, you can send web clicks, sensor readings, or online log events to Event Hubs. You can then create Stream Analytics jobs to use Event Hubs as the input data streams for real-time filtering, aggregating, and correlation.
+Azure Event Hubs provides highly scalable publish-subscribe event ingestion. An event hub can collect millions of events per second so that you can process and analyze the massive amounts of data produced by your connected devices and applications. Together, Event Hubs and Stream Analytics provide an end-to-end solution for real-time analytics. Event Hubs lets you feed events into Azure in real-time, and Stream Analytics jobs can process those events in real-time. For example, you can send web clicks, sensor readings, or online log events to Event Hubs. You can then create Stream Analytics jobs to use Event Hubs as the input data streams for real-time filtering, aggregating, and correlation.
 
 `EventEnqueuedUtcTime` is the timestamp of an event's arrival in an event hub and is the default timestamp of events coming from Event Hubs to Stream Analytics. To process the data as a stream using a timestamp in the event payload, you must use the TIMESTAMP BY keyword.
 
 ### Event Hubs consumer groups
 
-You should configure each Stream Analytics event hub input to have its own consumer group. When a job contains a self-join or has multiple inputs, some inputs might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Event Hubs limit of five readers per consumer group per partition, it's a best practice to designate a consumer group for each Stream Analytics job. There is also a limit of 20 consumer groups for a Standard tier event hub.
+You should configure each Stream Analytics event hub input to have its own consumer group. When a job contains a self-join or has multiple inputs, some inputs might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Event Hubs limit of five readers per consumer group per partition, it is a best practice to designate a consumer group for each Stream Analytics job. There is also a limit of 20 consumer groups for a Standard tier event hub.
 
 ### Create an input from Event Hubs
 
@@ -90,7 +90,7 @@ The following table explains each property in the **New input** page in the Azur
     Event serialization format
   :::column-end:::
   :::column:::
-    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and doesn’t include leading 0 for decimal numbers.
+    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and does not include leading 0 for decimal numbers.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -169,7 +169,7 @@ The default timestamp of events coming from an IoT Hub in Stream Analytics is th
 
 ### IoT Hub consumer groups
 
-You should configure each Stream Analytics IoT Hub input to have its own consumer group. When a job contains a self-join or when it has multiple inputs, some input might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Azure IoT Hub limit of five readers per consumer group per partition, it's a best practice to designate a consumer group for each Stream Analytics job.
+You should configure each Stream Analytics IoT Hub input to have its own consumer group. When a job contains a self-join or when it has multiple inputs, some input might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Azure IoT Hub limit of five readers per consumer group per partition, it is a best practice to designate a consumer group for each Stream Analytics job.
 
 ### Configure an IoT Hub as a data stream input
 
@@ -244,7 +244,7 @@ The following table explains each property in the New input page in the Azure po
     Event serialization format
   :::column-end:::
   :::column:::
-    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and doesn’t include leading 0 for decimal numbers.
+    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and does not include leading 0 for decimal numbers.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -304,7 +304,7 @@ When you use stream data from an IoT Hub, you have access to the following metad
     IoTHub.MessageId
   :::column-end:::
   :::column:::
-    An ID that's used to correlate two-way communication in IoT Hub.
+    An ID that is used to correlate two-way communication in IoT Hub.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -312,7 +312,7 @@ When you use stream data from an IoT Hub, you have access to the following metad
     IoTHub.CorrelationId
   :::column-end:::
   :::column:::
-    An ID that's used in message responses and feedback in IoT Hub.
+    An ID that is used in message responses and feedback in IoT Hub.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -425,7 +425,7 @@ Example 1: cluster1/logs/\{date\}/\{time\}/\{partition\}
 
 Example 2: cluster1/logs/\{date\}
 
-The \* character is not an allowed value for the path prefix. Only valid Azure blob characters are allowed. No not include container names or file names.
+The \* character is not an allowed value for the path prefix. Only valid Azure blob characters are allowed. Do not include container names or file names.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -449,7 +449,7 @@ The \* character is not an allowed value for the path prefix. Only valid Azure b
     Event serialization format
   :::column-end:::
   :::column:::
-    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and doesn’t include leading 0 for decimal numbers.
+    The serialization format (JSON, CSV, Avro, or Other (Protobuf, XML, proprietary...)) of the incoming data stream. Ensure the JSON format aligns with the specification and does not include leading 0 for decimal numbers.
   :::column-end:::
 :::row-end:::
 :::row:::

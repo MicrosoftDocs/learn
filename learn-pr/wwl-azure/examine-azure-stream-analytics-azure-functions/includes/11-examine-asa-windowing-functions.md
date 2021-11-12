@@ -45,4 +45,4 @@ When a partition key is provided, the events are grouped together by the key and
 
 Snapshot windows groups events that have the same timestamp. Unlike other windowing types, which require a specific window function (such as SessionWindow(), you can apply a snapshot window by adding System.Timestamp() to the GROUP BY clause.
 
-:::image type="content" source="../media/snapshot-windowing-pattern-f1d8bf64.png":::
+:::image type="content" source="../media/snapshot-windowing-pattern-f1d8bf64.png" alt-text="Azure Stream Analytics - Windowing Concepts":::
