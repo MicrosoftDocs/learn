@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.examine-resource-log-contents-monitoring
+title: Examine resource log contents and monitoring
+metadata:
+  title: Examine resource log contents and monitoring
+  description: "Examine resource log contents and monitoring"
+  ms.date: 11/13/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-set-up-resource-logs.md)]
