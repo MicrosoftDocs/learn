@@ -1,12 +1,12 @@
 Queries in Azure Stream Analytics are expressed in a SQL-like query language.
 
-Queries can be designed for simple pass-through logic that moves event data from one input stream into an output data store, or they can do rich pattern matching and temporal analysis to calculate aggregates over various time windows. Queries can also join data from multiple inputs to combine streaming events, and can do lookups against static reference data to enrich the event values. Queries can also write data to multiple outputs.
+Queries can be designed for simple pass-through logic that moves event data from one input stream into an output data store. A more advanced query could use rich pattern matching and temporal analysis to calculate aggregates over various time windows. Queries can also join data from multiple inputs to combine streaming events, and can do lookups against static reference data to enrich the event values. Queries can also write data to multiple outputs.
 
-Queries are written using a combination of query syntax elements and functions to process input data types in order to produce a desired output.
+Queries are written using a combination of query syntax elements and functions. Queries process data from an input and use the data to produce a desired output.
 
 ## Query language elements
 
-Azure Stream Analytics provides various elements for building queries. They are summarized below.
+Azure Stream Analytics provides various elements for building queries. The elements are summarized in the following table.
 
 :::row:::
   :::column:::
@@ -93,7 +93,7 @@ Reference Data JOIN
   :::column:::
     JOIN is used to combine records from two or more input sources. JOIN is temporal in nature, meaning that each JOIN must define how far the matching rows can be separated in time.
 
-JOIN is also used to correlate persisted historical data or a slow changing dataset (also known as Reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset that maps IP Addresses to locations. This is the only JOIN supported in Stream Analytics where a temporal bound is not necessary.
+JOIN is also used to correlate persisted historical data or a slow changing dataset (also known as Reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset that maps IP Addresses to locations. This type of JOIN is the only one supported in Stream Analytics where a temporal bound is not necessary.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,7 +141,7 @@ JOIN is also used to correlate persisted historical data or a slow changing data
     WITH
   :::column-end:::
   :::column:::
-    WITH specifies a temporary named result set that can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.
+    WITH specifies a temporary named result set that can be referenced by a FROM clause in the query. This parameter is defined within the execution scope of a single SELECT statement.
   :::column-end:::
 :::row-end:::
 
@@ -272,7 +272,7 @@ A scalar function operates on a single value and then returns a single value. Sc
 
 ## Query syntax examples
 
-The query examples listed below are sourced from the longer list of examples in the Stream Analytics query language reference. They were selected because the help to illustrate common query patterns and show basic syntax.
+The following query examples are sourced from the longer list of examples in the Stream Analytics query language reference. They were selected because the help to illustrate common query patterns and show basic syntax.
 
 All query pattern examples included in the reference guide are based on the following toll booth scenario:
 
