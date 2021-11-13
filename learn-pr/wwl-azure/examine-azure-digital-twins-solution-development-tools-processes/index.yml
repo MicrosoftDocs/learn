@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-digital-twins-solution-development-tools-processes
 metadata:
   title: Examine the Azure Digital Twins solution development tools and processes
   description: "This module introduces you to configuring the Azure Digital Twins service and access accounts, and examines the tools and processes used to configure, build, and manage an Azure Digital Twins solution."
-  ms.date: 11/12/2021
+  ms.date: 11/13/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

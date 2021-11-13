@@ -1,6 +1,6 @@
-Different events in Azure Digital Twins produce notifications, which allow the solution backend to be aware when different actions are happening. The event information is then routed to different locations inside and outside of Azure Digital Twins that can use the information to take action.
+Different events in Azure Digital Twins produce notifications. These notifications make the solution backend aware of different actions when they happen. The event information is then routed to different locations inside and outside of Azure Digital Twins. The locations that receive the event information that can use it to take action.
 
-There are several types of notifications that can be generated, and notification messages may look different depending on which type of event generated them. This article gives detail about different types of messages, and what they might look like.
+There are several types of notifications that can be generated. Notification messages may look different depending on which type of event generated them. This following section provides details about different types of messages, and what they might look like.
 
 This chart shows the different notification types:
 
@@ -23,7 +23,7 @@ This chart shows the different notification types:
     Digital Twin Change Notification
   :::column-end:::
   :::column:::
-    Any digital twin property change
+    Any Digital Twin property change.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -34,7 +34,7 @@ This chart shows the different notification types:
     Digital Twin Lifecycle Notification
   :::column-end:::
   :::column:::
-    Any digital twin create or delete operation
+    Any Digital Twin create or delete operation.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -45,7 +45,7 @@ This chart shows the different notification types:
     Digital Twin Relationship Change Notification
   :::column-end:::
   :::column:::
-    Any digital twin relationship change
+    Any Digital Twin relationship change.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -56,7 +56,7 @@ This chart shows the different notification types:
     Telemetry Messages
   :::column-end:::
   :::column:::
-    Any telemetry message
+    Any telemetry message.
   :::column-end:::
 :::row-end:::
 
@@ -65,7 +65,7 @@ In general, notifications are made up of two parts: the header and the body.
 
 ## Event notification headers
 
-Notification message headers are represented with key-value pairs. Depending on the protocol used (MQTT, AMQP, or HTTP), message headers will be serialized differently. The examination below describes general header information for notification messages, regardless of the specific protocol and serialization chosen.
+Notification message headers are represented with key-value pairs. Depending on the protocol used (MQTT, AMQP, or HTTP), message headers will be serialized differently. The following section provides general header information for notification messages, regardless of the specific protocol (and serialization) chosen.
 
 Some notifications conform to the CloudEvents standard. CloudEvents conformance is as follows.
 
@@ -74,7 +74,7 @@ Some notifications conform to the CloudEvents standard. CloudEvents conformance 
  -  Notifications emitted from digital twins with a model conform to CloudEvents.
  -  Notifications processed and emitted by Azure Digital Twins conform to CloudEvents.
 
-Services must add a sequence number to all the notifications to indicate their order, or maintain their own ordering in some other way. Notifications emitted by Azure Digital Twins to Event Grid will be automatically formatted to either the CloudEvents schema or EventGridEvent schema, depending on the schema type defined in the event grid topic.
+Services will maintain the sequential order of notifications. For example, a sequence number could be added to the notifications to maintain the order. Services can use other systems to maintain the order of notifications. Notifications emitted by Azure Digital Twins to Event Grid will be automatically formatted using either the CloudEvents schema or EventGridEvent schema. The schema used will depend on the schema type defined in the Event Grid Topic.
 
 Extension attributes on headers will be added as properties on the Event Grid schema inside of the payload.
 
@@ -127,7 +127,7 @@ The set of fields that the body contains vary with different notification types.
 
 ## Message-format detail for different event types
 
-Before you can successfully monitor and respond to events, you need to understand the details for different types of notifications emitted by IoT Hub and Azure Digital Twins (or other Azure IoT services), such as the things that trigger each notification type and the set of fields included with each type of notification body.
+Before you can successfully monitor and respond to events, you need to know some the details of the events that you are interested in. IoT Hub and Azure Digital Twins emit many different types of notifications. It is important for you to understand event parameters, such as what the triggers are for each notification type and the set of fields included with each type of notification body.
 
 ### Digital twin life-cycle notifications
 
@@ -282,7 +282,7 @@ Here are the fields in the body of an edge change notification.
     source
   :::column-end:::
   :::column:::
-    Name of the IoT hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
+    Name of the IoT Hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -405,7 +405,7 @@ Here are the fields in the body of an edge change notification.
     source
   :::column-end:::
   :::column:::
-    Name of the IoT hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
+    Name of the IoT Hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -461,7 +461,7 @@ The message conforms to this version of the CloudEvents spec.
 
 #### Body details
 
-The body for the Twin.Update notification is a JSON Patch document containing the update to the digital twin.
+The body for the `Twin.Update` notification is a JSON Patch document containing the update to the digital twin.
 
 For example, say that a digital twin was updated using the following patch.
 
