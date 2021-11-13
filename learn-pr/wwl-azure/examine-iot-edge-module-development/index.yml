@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-edge-module-development
 metadata:
   title: Examine IoT Edge module development
   description: "This module introduces you to IoT Edge runtime environment configuration and programming tasks, and the tools and processes that are used to develop custom IoT Edge modules."
-  ms.date: 11/12/2021
+  ms.date: 11/13/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

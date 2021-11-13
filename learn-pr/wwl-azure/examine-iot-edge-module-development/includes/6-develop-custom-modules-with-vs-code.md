@@ -9,7 +9,7 @@ At a high level, the process for developing a custom Edge module in Visual Studi
  -  Use the Visual Studio Code command palette to create a solution template for your module(s).
     
      -  The solution template provides you with a sample module and deployment.template.json file that are set up so that you can build the solution, push it to your container registry, and deploy it to a device to start testing without touching any code.
-     -  The sample module is built to take input from a source (in this case, the SimulatedTemperatureSensor module that simulates data) and pipe it to IoT Hub.
+     -  The sample module is built to take input from a source (in this case, the SimulatedTemperatureSensor module that simulates data) and send it to IoT Hub.
  -  Develop and debug the business logic of your custom module(s). There are several options available for debugging, which include using the IoT Edge Simulator.
 
 Once you are done testing, you can create the JSON deployment manifest and deploy your custom module(s).
@@ -66,6 +66,6 @@ The default module code that comes with the solution is located at the following
  -  Java: modules &gt; &lt;your module name&gt; &gt; src &gt; main &gt; java &gt; com &gt; edgemodulemodules &gt; App.java
  -  C: modules &gt; &lt;your module name&gt; &gt; main.c
 
-The module and the deployment.template.json file are set up so that you can build the solution, push it to your container registry, and deploy it to a device to start testing without touching any code. The module is built to take input from a source (in this case, the SimulatedTemperatureSensor module that simulates data) and pipe it to IoT Hub.
+The module and the deployment.template.json file are set up so that you can build the solution, push it to your container registry, and deploy it to a device to start testing without touching any code. The module is built to take input from a source (in this case, the SimulatedTemperatureSensor module that simulates data) and then send the data to IoT Hub.
 
 When you're ready to customize the template with your own code, use the Azure IoT Hub SDKs to build modules that address the key needs for IoT solutions such as security, device management, and reliability.
