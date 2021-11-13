@@ -1,12 +1,12 @@
 Queries in Azure Stream Analytics are expressed in a SQL-like query language.
 
-Queries can be designed for simple pass-through logic that moves event data from one input stream into an output data store. A more advanced query could use rich pattern matching and temporal analysis to calculate aggregates over various time windows. Queries can also join data from multiple inputs to combine streaming events, and can do lookups against static reference data to enrich the event values. Queries can also write data to multiple outputs.
+Queries can be designed for simple pass-through logic that moves event data from one input stream into an output data store. An advanced query might use rich pattern matching and temporal analysis to calculate aggregates over various time windows. You can also use queries to join data from multiple inputs. For example, you could combine streaming events, or you could implement lookups against static reference data to enrich the event values. Queries are also used to write data to multiple outputs.
 
 Queries are written using a combination of query syntax elements and functions. Queries process data from an input and use the data to produce a desired output.
 
 ## Query language elements
 
-Azure Stream Analytics provides various elements for building queries. The elements are summarized in the following table.
+The Azure Stream Analytics service provides various elements for building queries. The elements are summarized in the following table.
 
 :::row:::
   :::column:::
@@ -21,11 +21,11 @@ Azure Stream Analytics provides various elements for building queries. The eleme
     APPLY
   :::column-end:::
   :::column:::
-    The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. There are two forms of APPLY:
+    The APPLY operator allows you to invoke a table-valued function for each row that is returned by an outer table expression within a query. There are two forms of APPLY:
 
 CROSS APPLY returns only rows from the outer table that produce a result set from the table-valued function.
 
-OUTER APPLY returns both rows that produce a result set, and rows that do not, with NULL values in the columns produced by the table-valued function.
+OUTER APPLY returns both rows that produce a result set in the columns produced by the table-valued function. For rows that do not produce a result, NULL values are returned.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -65,7 +65,7 @@ OUTER APPLY returns both rows that produce a result set, and rows that do not, w
     GROUP BY
   :::column-end:::
   :::column:::
-    GROUP BY groups a selected set of rows into a set of summary rows grouped by the values of one or more columns or expressions.
+    GROUP BY is used to group a selected set of rows into a set of summary rows. The summary rows are grouped by the values of one or more columns or expressions.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -93,7 +93,7 @@ Reference Data JOIN
   :::column:::
     JOIN is used to combine records from two or more input sources. JOIN is temporal in nature, meaning that each JOIN must define how far the matching rows can be separated in time.
 
-JOIN is also used to correlate persisted historical data or a slow changing dataset (also known as Reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset that maps IP Addresses to locations. This type of JOIN is the only one supported in Stream Analytics where a temporal bound is not necessary.
+JOIN is also used to correlate persisted historical data or a slow-changing dataset (also known as Reference data) with the real-time event stream to make smarter decisions about the system. For example, join an event stream to a static dataset that maps IP Addresses to locations. This type of JOIN is the only one supported in Stream Analytics where a temporal bound is not necessary.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,7 +117,7 @@ JOIN is also used to correlate persisted historical data or a slow changing data
     SELECT
   :::column-end:::
   :::column:::
-    SELECT is used to retrieve rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics.
+    SELECT is used to retrieve rows from input streams. SELECT enables the selection of columns from one or more input streams in Azure Stream Analytics.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -125,7 +125,7 @@ JOIN is also used to correlate persisted historical data or a slow changing data
     UNION
   :::column-end:::
   :::column:::
-    UNION combines two or more queries into a single result set that includes all the rows that belong to all queries in the union.
+    UNION combines two or more queries into a single result set. The result set includes all the rows that belong to all queries in the union.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -257,7 +257,7 @@ A scalar function operates on a single value and then returns a single value. Sc
     Mathematical Functions
   :::column-end:::
   :::column:::
-    Represent the scalar functions that perform a calculation, usually based on input values that are provided as arguments, and return a numeric value.
+    These functions represent the scalar functions that perform a calculation. These functions are usually based on input values that are provided as arguments, and return a numeric value.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -272,11 +272,11 @@ A scalar function operates on a single value and then returns a single value. Sc
 
 ## Query syntax examples
 
-The following query examples are sourced from the longer list of examples in the Stream Analytics query language reference. They were selected because the help to illustrate common query patterns and show basic syntax.
+The following queries are examples taken from the Stream Analytics query language reference. They were selected because the help to illustrate common query patterns and show basic syntax.
 
 All query pattern examples included in the reference guide are based on the following toll booth scenario:
 
-A vehicle tolling station is a common phenomenon – we encounter them in many expressways, bridges, and tunnels across the world. Each toll station has multiple toll booth lanes that a car can enter, which may be manual – meaning that you stop to pay the toll to an attendant, or automated – where a sensor placed on top of the booth scans an RFID card affixed to the windshield of your vehicle as you pass the toll booth. It is easy to visualize the passage of vehicles through these toll stations as an event stream over which interesting operations can be performed.
+A vehicle tolling station is a common phenomenon – we encounter them in many expressways, bridges, and tunnels across the world. Each toll station has multiple toll booth lanes that a car can enter, which may be manual – meaning that you stop to pay the toll to an attendant, or automated – where a sensor placed on top of the booth scans an RFID card affixed to the windshield of your vehicle as you pass the toll booth. The passage of vehicles through the toll stations provides us with an event stream that we can visualize. We can use this event stream to perform some interesting operations.
 
 ### Pattern 1 - Convert data types
 
@@ -361,7 +361,7 @@ We use a CAST statement in the Weight field to specify its data type.
 
 #### Description
 
-For this example, the input stream includes the make of a car and the time when that car passes through the booth. We have two goals. The first goal it to archive the input data to cold storage. The second goal is to support a downstream alerting system that sends alerts whenever the traffic rate for a particular make of vehicle exceeds a defined threshold value. To achieve both goals we need to process the data for multiple output targets. The first target output will receive all of the input data. For the second target output will receive a record indicating the make of the vehicle, the time for the event, and the associated number of vehicles passing through the booth.
+In this example, the input stream includes the make of a car and the time when that car passes through the booth. We have two goals. The first goal it to archive the input data to cold storage. The second goal is to support a downstream alerting system that sends alerts whenever the traffic rate for a particular make of vehicle exceeds a defined threshold value. To achieve both goals we need to process the data for multiple output targets. The first target output will receive all of the input data. For the second target output will receive a record indicating the make of the vehicle, the time for the event, and the associated number of vehicles passing through the booth.
 
 #### Input
 
