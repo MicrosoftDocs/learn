@@ -1345,7 +1345,7 @@ The following table explains some of the considerations for output batching:
     Azure Data Lake Store
   :::column-end:::
   :::column:::
-    See Data Lake Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits\#data-lake-store-limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#data-lake-store-limits)
+    See Data Lake Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits](/azure/azure-subscription-service-limits)
   :::column-end:::
   :::column:::
     Use up to 4 MB per write operation.
@@ -1367,7 +1367,7 @@ The following table explains some of the considerations for output batching:
     Azure Blob storage
   :::column-end:::
   :::column:::
-    See Azure Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits\#storage-limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#storage-limits)
+    See Azure Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits](/azure/azure-subscription-service-limits)
   :::column-end:::
   :::column:::
     The maximum blob block size is 4 MB.
@@ -1403,7 +1403,7 @@ When input/output partitioning is aligned, multiple events are packed into a sin
     Azure Table storage
   :::column-end:::
   :::column:::
-    See Azure Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits\#storage-limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#storage-limits)
+    See Azure Storage limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits](/azure/azure-subscription-service-limits)
   :::column-end:::
   :::column:::
     The default is 100 entities per single transaction. You can configure it to a smaller value as needed.
@@ -1436,7 +1436,7 @@ When input/output partitioning is aligned, multiple events are packed into a sin
     Azure Cosmos DB
   :::column-end:::
   :::column:::
-    See Azure Cosmos DB limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits\#azure-cosmos-db-limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-cosmos-db-limits)
+    See Azure Cosmos DB limits: [https://docs.microsoft.com/azure/azure-subscription-service-limits](/azure/azure-subscription-service-limits)
   :::column-end:::
   :::column:::
     Batch size and write frequency are adjusted dynamically based on Azure Cosmos DB responses.
