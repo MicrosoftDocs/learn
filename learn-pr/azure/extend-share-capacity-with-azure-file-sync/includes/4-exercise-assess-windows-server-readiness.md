@@ -1,4 +1,4 @@
-You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server computer that you'd like to use file sync on. The cmdlets check the OS, file system, file name, and folder name compatibility.
+You can run the Azure File Sync evaluation PowerShell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, file system, file name, and folder name compatibility.
 
 Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. You'll run the evaluation cmdlets to produce a report.
 
@@ -70,7 +70,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
 ## Set up Windows Server for assessment
 
-Connect to the new server by using Remote Desktop client. You'll download a sample CAD file, and install the Azure PowerShell module that you'll use later.
+Connect to the new server by using Remote Desktop client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -82,7 +82,7 @@ Connect to the new server by using Remote Desktop client. You'll download a samp
 
 1. Select **Download RDP File**.
 
-1. Open the RDP file from your browser, and select **Connect**.
+1. Open the RDP file from your browser and select **Connect**.
 
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
