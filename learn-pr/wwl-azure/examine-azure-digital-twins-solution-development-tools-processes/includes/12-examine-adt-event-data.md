@@ -127,11 +127,14 @@ The set of fields that the body contains vary with different notification types.
 
 ## Message-format detail for different event types
 
-Before you can successfully monitor and respond to events, you need to know some the details of the events that you are interested in. IoT Hub and Azure Digital Twins emit many different types of notifications. It is important for you to understand event parameters, such as what the triggers are for each notification type and the set of fields included with each type of notification body.
+IoT Hub and Azure Digital Twins emit many different types of notifications. It is important for you to understand event parameters before you implement monitoring. The following items describe event details that you should study:
 
-### Digital twin life-cycle notifications
+ -  The triggers for each notification type.
+ -  The set of fields included with each type of notification body.
 
-All digital twins emit notifications, regardless of whether they represent IoT Hub devices in Azure Digital Twins or not. This is because of life-cycle notifications, which are about the digital twin itself.
+### Life-cycle notifications
+
+All digital twins have life-cycle events and emit the associated notifications.
 
 Life-cycle notifications are triggered when:
 
@@ -220,7 +223,7 @@ Microsoft.DigitalTwins.Twin.Delete
 
 #### Body details
 
-The body is the affected digital twin, represented in JSON format. The schema for this is Digital Twins Resource 7.1.
+The body of the notification provides information about the digital twin. The message body is formatted as JSON.
 
 For creation events, the payload reflects the state of the twin after the resource is created, so it should include all system generated-elements just like a GET call.
 
@@ -253,9 +256,9 @@ Here is an example for a digital twin.
 
 ```
 
-### Digital twin relationship change notifications
+### Relationship change notifications
 
-Relationship change notifications are triggered when any relationship of a digital twin is created, updated, or deleted.
+Digital twins have relationships to other digital twins. Relationship change notifications are triggered when any relationship is created, updated, or deleted.
 
 #### Properties
 
@@ -373,9 +376,9 @@ Here is an example of a create or delete relationship notification:
 
 ```
 
-### Digital twin change notifications
+### Change notifications
 
-Digital twin change notifications are triggered when a digital twin is being updated, like:
+Change notifications are triggered when a digital twin is being updated, like:
 
  -  When property values or metadata changes.
  -  When digital twin or component metadata changes. An example of this scenario is changing the model of a digital twin.
