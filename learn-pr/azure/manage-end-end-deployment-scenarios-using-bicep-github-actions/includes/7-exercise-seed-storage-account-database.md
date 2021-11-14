@@ -59,7 +59,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
    :::code language="bicep" source="code/7-main.bicep" range="38-39" :::
 
    > [!NOTE]
-   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the summary.
+   > For simplicity, the application uses the administrator login and password to access the database. This isn't good practice for a production solution, though. It's better to use an App Service managed identity to access the database, and grant the managed identity the minimum permissions needed by the application. We link to more information in the Summary page at the end of the module.
 
 1. Near the end of the file contents, above the outputs, add the Azure SQL logical server and database resources:
 

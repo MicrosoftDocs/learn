@@ -62,7 +62,7 @@ The most common approach is to use the `azure/webapps-deploy` action:
     package: my-artifact-name/website.zip
 ```
 
-You need to provide several pieces of information to deploy your app to App Service. This information includes the resource group and resource name of the App Service app, which you specify by using the `ResourceGroupName` and `WebAppName` inputs. As you learned in the preceding unit, you should add an output to your Bicep file and use a workflow variable to propagate the app name through your workflow. You also need to specify a .zip file with the app to deploy by using the `Package` input. This is usually the path to a workflow artifact.
+You need to provide several pieces of information to deploy your app to App Service. This information includes the resource name of the App Service app, which you specify by using the `app-name` property. As you learned in the preceding unit, you should add an output to your Bicep file and use a workflow variable to propagate the app name through your workflow. You also need to specify a .zip file with the app to deploy by using the `package` property. This is usually the path to a workflow artifact.
 
 App Service has its own data plane authentication system that it uses for deployments. The `azure/webapps-deploy` action handles the authentication process automatically for you:
 

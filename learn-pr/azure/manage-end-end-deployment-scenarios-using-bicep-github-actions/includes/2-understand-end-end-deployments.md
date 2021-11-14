@@ -1,4 +1,4 @@
-Workflows are flexible tools that you can configure in many different ways to suit your needs. In this unit, you'll learn  how to use workflows to deploy an entire solution, including configuring the Azure infrastructure, and to perform other deployment operations.
+GitHub Actions workflows are flexible tools that you can configure in many different ways to suit your needs. In this unit, you'll learn how to use workflows to deploy an entire solution, including configuring the Azure infrastructure, and to perform other deployment operations.
 
 ## How many workflows?
 
@@ -11,7 +11,7 @@ Instead, it's often better to create a single workflow that deploys everything r
 > [!TIP]
 > When you're building code for your solution, you'll probably need to deploy it frequently so that you can test how it works. You might find that deploying your infrastructure together with your application code makes your workflow run slowly and inhibits your progress.
 >
-> If you're in this position, you might consider disabling the infrastructure deployment for your development environment. You can use workflow templates and conditions to achieve this. However, you should leave the full deployment sequence intact for your other environments.
+> If you're in this position, you might consider disabling the infrastructure deployment for your development environment. You can use reusable workflows and conditions to achieve this. However, you should leave the full deployment sequence intact for your other environments.
 
 ## The control plane and the data plane
 
@@ -60,7 +60,7 @@ When you access variables that were created in another job, you need to publish 
 
 :::code language="yaml" source="code/2-outputs-jobs.yml" range="7-24" highlight="3-4" :::
 
-Then, in a later job, you create a dependency on the job that created the variable by including the `needs` keyword, and you refer to the variable by using the name of the published variable:
+Then, in a later job, you create an explicit dependency on the job that created the variable by including the `needs` keyword, and you refer to the variable by using the name of the published variable:
 
 :::code language="yaml" source="code/2-outputs-jobs.yml" range="26-31" highlight="2, 6" :::
 
