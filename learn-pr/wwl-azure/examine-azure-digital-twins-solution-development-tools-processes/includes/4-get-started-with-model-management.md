@@ -67,7 +67,7 @@ This also means that uploading a new version of a model does not automatically a
 You can update these existing twins to the new model version by patching them.
 
 > [!NOTE]
-> If you are not familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch?view=aspnetcore-5.0\#json-patch](https://docs.microsoft.com/aspnet/core/web-api/jsonpatch?view=aspnetcore-5.0#json-patch)
+> If you are not familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch](/aspnet/core/web-api/jsonpatch)
 
 ## Remove models
 

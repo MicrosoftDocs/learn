@@ -71,7 +71,7 @@ This call returns twin data as a strongly-typed object type such as BasicDigital
 To update properties of a digital twin, you write the information you want to replace in JSON Patch format. In this way, you can replace multiple properties at once. You then pass the JSON Patch document into an `UpdateDigitalTwin()` method:
 
 > [!NOTE]
-> If you are not familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch?view=aspnetcore-5.0\#json-patch](https://docs.microsoft.com/aspnet/core/web-api/jsonpatch?view=aspnetcore-5.0#json-patch)
+> If you are not familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch](/aspnet/core/web-api/jsonpatch)
 
 ```csharp
 await client.UpdateDigitalTwinAsync(twinId, updateTwinData);
