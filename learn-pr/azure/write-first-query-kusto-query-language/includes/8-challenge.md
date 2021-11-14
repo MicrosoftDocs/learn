@@ -6,5 +6,4 @@ Use the table we've been exploring up until now, *StormEvents* to answer the fol
 
 In the month of April 2007, what were the top five damage-causing storms in the state of Virginia? In this case, damage refers to both property and crop damage.
 
->[!TIP]
-> Use the operators `where`, `project`, and `sort`.
+Use the operators `where`, `project`, and `top`.

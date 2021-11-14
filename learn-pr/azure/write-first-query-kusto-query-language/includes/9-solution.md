@@ -25,6 +25,8 @@ StormEvents
 | top 5 by damage
 ```
 
+Your results should look something like the following image:
+
 :::image type="content" source="../media/9-solution.png" alt-text="Screenshot of solution.":::
 
 ## Insights
