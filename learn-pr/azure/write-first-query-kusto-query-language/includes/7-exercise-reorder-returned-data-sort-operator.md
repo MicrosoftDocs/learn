@@ -19,9 +19,6 @@ It's difficult to make sense of randomly ordered data. Let's make it a bit easie
 
 1. Notice that the results start from the highest property damage value, and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and obtain the same results. The state and event types aren't ordered in any way. We can actually sort based on more than one expression as shown in the next example.
 
-> [!TIP]
-> To take the top number of results for any field, you can use the `top` operator. For example, instead of sorting in descending order and looking at the top ten events, you can use `top 10 by DamageProperty`.
-
 ## Sort on more than one expression
 
 Each region has unique weather patterns, so we'd actually like to know which events in each state made the most damage. To answer this question, we'll sort first on the state name, and then the damage within each state. The `sort` operator sorts in descending order by default, so we'll use `asc` to indicate that we want to sort the state names in ascending order.
@@ -40,3 +37,19 @@ Each region has unique weather patterns, so we'd actually like to know which eve
     :::image type="content" source="../media/6-sort-2.png" alt-text="Screenshot of sort operator example 2.":::
 
 1. Notice that now we've gotten a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the damage property values are sorted in descending order.
+
+## Use the `top` operator
+
+Instead of sorting and looking at the top number of results, we can use a different operator to just show us the top number of results. 
+
+1. Run the following query:
+    
+    ```kusto
+    StormEvents
+    | where State == "FLORIDA"
+    | top 10 by DamageProperty
+    | project State, EventType, DamageProperty
+    ```
+1. You should get results that look like the following image:
+
+    :::image type="content" source="../media/6-sort-3.png" alt-text="Screenshot of use of top operator.":::

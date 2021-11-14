@@ -49,7 +49,7 @@ It looks like there are quite a few types of damage-causing storms, occurring al
 
     :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator example 2.":::
 
-1. Notice that there are 200 records returned from this query, all of them from Florida, and having property damage greater than zero.
+1. Notice that all records returned from this query are from Florida, and have crop damage greater than zero.
 
 ### Filter using the `has` operator
 
@@ -73,9 +73,15 @@ Looking at the results of the last query, we see that one of the Event Types is 
 
 ## Filter on datetime values
 
-Maybe we only care about damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
+Let's look closer at the damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
 
-1. Run the following query:
+Since time ranges are bounded by two extremes, it's most efficient to construct a query where we choose a value that is between these two times.
+
+The syntax for constructing this date range is as follows:
+
+> `where` *time* `between` `( datetime(`*value*`)..datetime(`*value*`)`
+
+1. Let's incorporate this datetime range into a kind of query we've already seen. Run the following query:
 
     ```kusto
     StormEvents

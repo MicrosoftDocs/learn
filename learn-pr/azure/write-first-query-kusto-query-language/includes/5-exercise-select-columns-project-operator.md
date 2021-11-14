@@ -5,7 +5,7 @@ Recall that we've looked at random rows of data to get a sense of its structure.
 
 If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for our exploration. We'll choose just a few columns to view. We'll use the `project` operator to define which columns we want to see in the output. Multiple column names are separated by commas.
 
-1. Run the following query:
+1. Run the following query. In this query, we name the columns to return, and their order, within the project operator.
     
     ```kusto
     StormEvents
@@ -21,29 +21,28 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 ## Rename and define new columns with `project`
 
-You can also use `project` to rename columns and define new ones. We don't really care about the distinction between *InjuriesDirect* and *InjuriesIndirect*. It would be more useful to just know the total number of injuries. Let's make a new column that shows this sum. We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
+To understand the impacts of the storms, we want to get the total number of injuries. Let's make a new column that shows the sum of *InjuriesDirect* and *InjuriesIndirect*:
 
-If you hover on a column name in the query editor, you can see the type of data contained in this column. 
+> Injuries=InjuriesDirect+InjuriesIndirect
 
-   :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
+We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
 
-Since these columns are of type `int` (integer), we can use a numerical operator to add the values. We'll also rename the *State* column.
+> Damage=DamageCrops+DamageProperty
 
-To rename or perform numerical operations on arguments, we'll use the following syntax in our query:
+1. We can use a numerical operator to add the values because these columns are of type int (integer). Hover over the column name in the query editor to see the data type contained in the columns. 
 
-`project ColumnName=Expression`
+    :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
 
-> [!NOTE]
-> The `extend` operator can also be used to create calculated columns. `extend` creates new calculated columns, appends these calculated columns to the results set, and overrides existing columns with the same names.
+    Let's also rename the *State* column to *US_State*
 
-1. Run the following query:
+1. Altogether, the full query includes calculations for injuries, calculations for damages, and renaming the *State* column. Run the following query:
     
     ```kusto
     StormEvents
     | project US_State=State, EventType, Injuries=InjuriesDirect+InjuriesIndirect, Damage=DamageCrops+DamageProperty
     | take 10
     ```
-    
+
 1.  You should get results that look like the following image:
 
     :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of project operator used to rename columns.":::

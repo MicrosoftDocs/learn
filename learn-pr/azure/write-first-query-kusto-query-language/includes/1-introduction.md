@@ -6,7 +6,7 @@ Suppose you're a data analyst with a passion for meteorological data. You want t
 
 ## What will we be doing?
 
-You'll write simple queries in Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
+You'll write simple queries in the Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
 
 - Return a specific number or rows by using the `take` operator
 - Select columns to return by using the `project` operator

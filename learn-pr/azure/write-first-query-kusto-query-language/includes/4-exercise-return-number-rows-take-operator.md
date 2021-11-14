@@ -7,7 +7,8 @@ Let's take a look at a sample of the data to get to know the columns and types o
 
 The `take` operator is perfect for this task, as it returns a specific number of arbitrary rows. 
 
-1. Copy this query to your clipboard and paste in the query editor of your sample environment. 
+1. Copy this query to your clipboard.
+1. Paste in the query editor you set up earlier. 
 
     ```kusto
     StormEvents
