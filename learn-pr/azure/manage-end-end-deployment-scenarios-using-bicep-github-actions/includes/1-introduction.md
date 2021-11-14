@@ -8,7 +8,7 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will you be doing?
 
-In this module, you'll learn how to extend a deployment workflow so that it deploys Azure infrastructure, applications, databases, and data together. You'll add a build job to your workflow that compiles an application and database project, and you'll use workflow artifacts to propagate the deployable files through your workflow. You'll use Bicep outputs from your workflow to integrate your workflow's components together, and you'll update your deployment job to publish your application, website, and sample data.
+In this module, you'll learn how to extend a deployment workflow so that it deploys Azure infrastructure, applications, databases, and data together. You'll add build jobs to your workflow that compile an application and database project, and you'll use workflow artifacts to propagate the deployable files through your workflow. You'll use Bicep outputs from your workflow to integrate your workflow's components together, and you'll update your deployment jobs to publish your application, website, and sample data.
 
 ## What is the main goal?
 
