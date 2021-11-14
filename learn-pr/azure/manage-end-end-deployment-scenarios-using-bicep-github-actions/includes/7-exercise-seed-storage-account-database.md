@@ -71,7 +71,7 @@ Your Bicep file doesn't currently deploy an Azure SQL logical server or database
 
 1. Add an additional app setting to your App Service app for the database connection string:
 
-   :::code language="bicep" source="code/7-main.bicep" range="78-120" highlight="37-40" :::
+   :::code language="bicep" source="code/7-main.bicep" range="78-121" highlight="37-40" :::
 
 1. At the bottom of the file, add outputs to expose the host name of the Azure SQL logical server and the name of the database:
 
