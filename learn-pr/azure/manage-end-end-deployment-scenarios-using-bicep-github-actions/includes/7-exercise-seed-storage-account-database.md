@@ -137,7 +137,9 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogin` and `sqlServerAdministratorLoginPassword`. Here, you propagate those parameter values from your workflow inputs and secrets, for the *validate* and *deploy* jobs. You also propagate the Bicep deployments's outputs to the job's outputs.
 
-1. In the *deploy.yml* file, update the *validate* job's *Run preflight validation* step to add the new parameters:
+1. Open the *deploy.yml* file.
+
+1. Update the *validate* job's *Run preflight validation* step to add the new parameters:
 
    :::code language="yaml" source="code/7-deploy.yml" range="26-48" highlight="21-22" :::
 
@@ -146,7 +148,7 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
    :::code language="yaml" source="code/7-deploy.yml" range="49-61" highlight="11-13" :::
 
    > [!IMPORTANT]
-   > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent line. The `\` character indicates that there are further lines that are part of the same command.
+   > Be sure to add the backslash character (`\`) at the end of the line that sets the `reviewApiKey` parameter value, and on the subsequent lines. The `\` character indicates that there are further lines that are part of the same command.
 
 1. Update the *deploy* job's *Deploy Bicep file* step to add the new parameters:
 
@@ -154,7 +156,7 @@ The Bicep file now has two new mandatory parameters: `sqlServerAdministratorLogi
 
 1. In the *deploy* job's definition, add new outputs for the Bicep file's outputs:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="63-73" highlight="8-11" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="63-73" highlight="8-11" :::
 
 ## Add database and data seed jobs
 

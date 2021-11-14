@@ -32,7 +32,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Enter a name for your new project, such as *toy-website-end-to-end*.
 
-1. Select the **Public** checkbox.
+1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
@@ -331,8 +331,6 @@ You've created two resource group and the service principals that can deploy to 
    :::image type="content" source="../media/4-environments-new-configure-test.png" alt-text="Screenshot of the GitHub page for a new environment named Test, with the Environment link.":::
 
 1. Repeat the process to create another environment named **Production**.
-
-   Leave the production environment configuration page open.
 
 > [!NOTE]
 > In previous modules in this learning path, you added a protection rule to your production environment. In this module, for simplicity, you're skipping the protection rule. However, you can add the protection rule yourself if you'd like.

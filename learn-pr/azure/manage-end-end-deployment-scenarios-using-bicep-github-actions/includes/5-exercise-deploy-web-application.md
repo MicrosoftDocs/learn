@@ -33,13 +33,19 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Below the *jobs:* line, before the *lint* job, add a new job named *build* that uses the reusable workflow you just defined:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="13-14" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="1-18" highlight="12-14" :::
 
-   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-end-to-end* for your repository, ensure you replace the repository name too.
+   Ensure you replace *YOUR_GITHUB_USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct called workflow. Also, if you didn't use the name *toy-website-end-to-end* for your repository, ensure you replace the repository name too, and do the same throughout the file.
+
+1. Update the *lint* job to use your own GitHub username instead of *YOUR_GITHUB_USERNAME*:
+
+   :::code language="yaml" source="code/5-workflow.yml" range="16-18" highlight="3" :::
 
 1. Update the *deploy-test* job to depend on the new *build* job:
 
    :::code language="yaml" source="code/5-workflow.yml" range="20-30" highlight="4" :::
+
+   Remember to also eplace *YOUR_GITHUB_USERNAME* with your own GitHub username.
 
 1. Update the *deploy-production* job to also depend on the *built* and *lint* jobs.
 
@@ -47,7 +53,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
-   Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. The two approaches are equivalent to each other.
+   Notice you're specifying the `needs` list in two different ways -  your test environment deployment's dependencies are listed on a single line, and your production environment's by using a multiline list. The two approaches are equivalent.
 
 1. Save your changes to the file.
 
@@ -83,7 +89,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="51-61" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="54-61" highlight="6" :::
 
 ## Add a job to deploy the website
 
