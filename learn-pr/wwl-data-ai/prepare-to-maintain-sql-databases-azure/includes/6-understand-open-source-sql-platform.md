@@ -9,7 +9,6 @@ Like SQL Database, there is a firewall that you can set for a specific IP addres
 
 The query store feature is available on Azure Database for PostgreSQL, MySQL, and MariaDB. The query store keeps track of both query and wait statistics, and implementation is slightly different compared to SQL Database and SQL Managed Instance offerings.
 
-[!div class="mx-imgBorder"]
 > [![Query Performance Insight in Azure Portal for PostgreSQL](../media/prepare_to_maintain_sql_databases_azure_05.png)](../media/../media/prepare_to_maintain_sql_databases_azure_05.png#lightbox)
 
 The image above shows the Query Performance Insight dashboard in the Azure portal for PostgreSQL, and offers a quick way to identify expensive queries for your database.

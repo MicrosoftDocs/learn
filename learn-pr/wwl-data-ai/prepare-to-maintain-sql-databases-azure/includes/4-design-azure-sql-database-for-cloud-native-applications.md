@@ -40,7 +40,6 @@ The auto-pause delay feature allows you to define the period of time the databas
 
 The resume operation is triggered when the next attempt to access the database occurs, and only storage charges are applicable when the database is paused.
 
-[!div class="mx-imgBorder"]
 > [![Serverless SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
 The image above shows where you can change the autoscaling and auto-pause properties for serverless compute tier.
@@ -57,7 +56,6 @@ Single database is the simplest deployment model of Azure SQL Database. You mana
 
 You can monitor database resources utilization through Azure portal. This feature allows you to easily identify how the database is performing, as shown in the image below:
 
-[!div class="mx-imgBorder"]
 > [![SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_01.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
 ### Elastic pool
@@ -105,7 +103,6 @@ You can restore your databases to a specific point in time according to the rete
 
 Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
 
-[!div class="mx-imgBorder"]
 > [![Long-term retention properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
 
 In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
@@ -158,7 +155,6 @@ Data Sync is based on a hub topology, where you define one of the databases in t
 
 When you create a sync group, it will ask you to provide a database responsible to store the sync group metadata. The metadata location can be either a new database or an existing database as long it resides in the same region as your sync group.
 
-[!div class="mx-imgBorder"]
 > [![New sync group page from Azure portal](../media/prepare_to_maintain_sql_databases_azure_04.png)](../media/../media/prepare_to_maintain_sql_databases_azure_04.png#lightbox)
 
 In the image above, you can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
