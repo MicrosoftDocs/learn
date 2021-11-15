@@ -20,18 +20,23 @@ summary: |
   * Create a service principal that can securely connect your workflow to Azure.
   * Ensure your Bicep code quality by validating and testing it within your workflow.
 
-  To learn about Bicep, we recommend you take these two learning paths:
+  To learn about Bicep, we recommend you take these three learning paths:
 
   :::row:::
   :::column:::
-    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-deploy-manage)
+    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-fundamentals)
 
-    [Part 1: Deploy and manage resources in Azure by using Bicep](xref:learn.bicep-deploy-manage)
+    [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
   :::column-end:::
   :::column:::
-    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
+    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-intermediate)
 
-    [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
+    [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
+  :::column-end:::
+  :::column:::
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
+
+    [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
   :::column-end:::
   :::row-end:::
 

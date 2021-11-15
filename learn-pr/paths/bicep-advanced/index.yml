@@ -63,7 +63,7 @@ prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
 iconUrl: /learn/achievements/bicep/bicep-collaborate.svg
 levels:
-- intermediate
+- advanced
 roles:
 - developer
 - administrator
