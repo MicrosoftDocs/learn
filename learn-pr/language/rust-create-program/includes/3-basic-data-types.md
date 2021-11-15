@@ -144,10 +144,10 @@ Notice that the `string_1` variable includes an empty space at the end of the se
 let character_1: char = 'S';
 let character_2: char = 'f';
    
-// Complier interprets a single item in quotations as the "char" data type
+// Compiler interprets a single item in quotations as the "char" data type
 let smiley_face = '😃';
 
-// Complier interprets a series of items in quotations as a "str" data type and creates a "&str" reference
+// Compiler interprets a series of items in quotations as a "str" data type and creates a "&str" reference
 let string_1 = "miley ";
 
 // Specify the data type "str" with the reference syntax "&str"
