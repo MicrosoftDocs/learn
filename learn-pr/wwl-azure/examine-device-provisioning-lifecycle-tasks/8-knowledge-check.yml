@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/13/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -28,14 +28,14 @@ quiz:
     - content: "You will be moving a device between hubs."
       isCorrect: false
       explanation: "Incorrect. Moving a device between hubs does not require rolling the device certificates."
-  - content: "Your company is in the process of deploying 700 devices when their plans change. Device enrollments have already been completed for all 700 devices. There are 500 devices that have been provisioned, but that must be moved to a different IoT Hub. The other 200 devices will not be provisioned. Which of the following statements is correct?"
+  - content: "Your company is in the process of deploying 700 devices when their plans change. Device enrollments have already been completed for all 700 devices. There are 500 devices that have been provisioned, but those devices must be moved to a different IoT Hub. The other 200 devices will not be provisioned due to a change in business requirements. Which of the following answer choices describes the initial actions that must be taken?"
     choices:
-    - content: "You should disenroll the devices that have not been provisioned and leave the other enrollments unchanged."
+    - content: "Disenroll the devices that have not been provisioned. Leave the other enrollments unchanged."
       isCorrect: false
-      explanation: "Incorrect. This solution does not take any steps toward moving the 500 already provisioned devices to another IoT hub and leaves them enrolled to the wrong IoT hub."
-    - content: "You should disenroll and deregister all 700 devices."
+      explanation: "Incorrect. This solution does not take any steps toward moving the 500 already-provisioned devices to another IoT hub. This solution leaves the 500 devices enrolled to the wrong IoT hub."
+    - content: "Disenroll and deregister all 700 devices."
       isCorrect: false
-      explanation: "Incorrect. The 200 devices that have not been provisioned cannot be deregistered because they have not been registered yet."
-    - content: "You should disenroll all 700 devices and deregister the 500 provisioned devices."
+      explanation: "Incorrect. You cannot deregister devices that have not been provisioned. There are 200 devices have not been provisioned. These 200 devices cannot be deregistered."
+    - content: "Disenroll all 700 devices. Deregister the 500 provisioned devices."
       isCorrect: true
       explanation: "Correct. This solution takes the step to correct enrollment and removes the devices that are registered to the wrong IoT hub."

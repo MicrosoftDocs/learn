@@ -52,4 +52,4 @@ If you are rolling certificates to handle certificate expirations, you should us
 
 Later when the secondary certificate also nears expiration, and needs to be rolled, you can rotate to using the primary configuration. Rotating between the primary and secondary certificates in this way ensures no downtime for devices attempting to provision.
 
-For more information about rolling certificates for enrollments groups with expiring certificates, see: [https://docs.microsoft.com/azure/iot-dps/how-to-roll-certificates\#enrollment-groups-and-certificate-expiration](https://docs.microsoft.com/azure/iot-dps/how-to-roll-certificates#enrollment-groups-and-certificate-expiration).
+For more information about rolling certificates for enrollments groups with expiring certificates, see: [https://docs.microsoft.com/azure/iot-dps/how-to-roll-certificates](/azure/iot-dps/how-to-roll-certificates).
