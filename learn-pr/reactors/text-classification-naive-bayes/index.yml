@@ -5,11 +5,12 @@ metadata:
   description: Use conditional probability and Bayes classification to analyze an email dataset for spam and ham.
   ms.date: 06/30/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   show_latex: true
   hidden: true
+  ms.custom: team=nextgen
 title: Text classification for Naive Bayes
 summary: Learn how to use conditional probability and Bayes classification to analyze an actual dataset of email messages. You'll learn how to use and apply these machine learning principles as you analyze an email dataset for spam and ham.
 abstract:  | 

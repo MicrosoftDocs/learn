@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions
+title: Understand GitHub Actions
+metadata:
+  unitType: learning-content
+  title: Understand GitHub Actions
+  description: Learn about workflows, jobs, and actions. Also, learn how workflows run on runners.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-github-actions.md)]

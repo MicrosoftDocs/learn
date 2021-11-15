@@ -10,7 +10,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In the *Search services and marketplace* search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
 1. Select **Create**. The **Create a tenant** pane appears.
 
@@ -35,7 +35,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. Enter the appropriate match to the request, and select **Submit**. Wait for the creation of your tenant to be completed.
 
-1. On the **Help us prove you're not a robot** pane, select the **Click here to navigate to your new tenant: Contoso Marketing Company**.
+1. On the **Help us prove you're not a robot** pane, select the **Click here to navigate to your new tenant: Contoso Marketing Company** link.
 
     :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization.":::
 
@@ -47,7 +47,7 @@ For Azure AD Premium to complete all the exercises in this module, you'll need t
 
 1. In the left menu pane, under **Manage**, select **Licenses**. The **Overview** pane for *Licenses* appears.
 
-1. On the right side of pane, under **Quick tasks**, select **Get a free trial**.
+1. On the right side of the pane, under **Quick tasks**, select **Get a free trial**.
 
     ![Screenshot that shows the link to create free trial.](../media/3-ad-get-started-get-trial.png)
 

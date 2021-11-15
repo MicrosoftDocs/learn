@@ -8,25 +8,22 @@ If an organization uses Azure, they might achieve these goals by implementing th
 
 | Product                        | Description                                                  |
 | ------------------------------ | ------------------------------------------------------------ |
-| Azure Front Door (Classic)     | Enables an entry point to your apps positioned in the Microsoft global edge network. Provides faster, more secure, and scalable access to your web applications. |
+| Azure Front Door               | Enables an entry point to your apps positioned in the Microsoft global edge network. Provides faster, more secure, and scalable access to your web applications. |
 | Azure Content Delivery Network | Delivers high-bandwidth content to your users by caching their content at strategically placed physical nodes around the world. |
 | Azure Web Application Firewall | Helps provide centralized, greater protection for web applications from common exploits and vulnerabilities. |
 
 ## Azure Front Door definition
 
-*Azure Front Door* provides the capabilities of these three products. It offers a fast, reliable, and more secure modern cloud CDN by using the Microsoft global edge network to integrate with intelligent threat protection. Azure Front Door resides in the edge location and manages user requests to your hosted apps. Users connect to apps through the Microsoft global network. Azure Front Door then routes these user requests to the fastest and most available application backend.
+*Azure Front Door Standard/Premium* provides the capabilities of these three products. It offers a fast, reliable, and more secure modern cloud CDN by using the Microsoft global edge network to integrate with intelligent threat protection. Azure Front Door resides in the edge location and manages user requests to your hosted apps. Users connect to apps through the Microsoft global network. Azure Front Door then routes these user requests to the fastest and most available application backend.
 
 > [!NOTE]
 > An *application backend* is any internet-facing service that you host, either inside or outside Azure.
 
 The following Azure Front door SKUs are available:
 
-- Azure Front Door (Classic), which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
+- Azure Front Door, which is the entry level. Existing Azure customers often bolster these features with Azure Content Delivery Network, and Azure Web Application Firewall.
 - Azure Front Door Standard, which is optimized for virtually seamless content delivery.
 - Azure Front Door Premium, which is optimized for improved security.
-
-> [!NOTE]
-> Although Azure Front Door (Classic) is still currently available, it provides a more limited feature set and will be unavailable longer term. Customers should consider only one of the other two SKUs identified here.
 
 Let's examine these last two SKUs in more detail.
 

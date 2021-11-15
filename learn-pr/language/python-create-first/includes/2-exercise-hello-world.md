@@ -26,7 +26,7 @@ Use the technique you're comfortable with to open Visual Studio Code from your o
 
     The name of the folder is listed in the left pane of Explorer view.
 
-### Step 4 - Create and save a new file
+### Step 3 - Create and save a new file
 
 To create and save a file, you will use the UI in Visual Studio Code.
 
@@ -36,7 +36,7 @@ To create and save a file, you will use the UI in Visual Studio Code.
 
 1. Select **File** > **Save As**, and then name the file _hello.py_.
 
-### Step 5 - Add code to the file
+### Step 4 - Add code to the file
 
 The new _hello.py_ file is empty, but you will add code to it next.
 
@@ -49,7 +49,7 @@ print("Hello World!")
 > [!Important]
 > Enter the code exactly as you see it here, typing the parentheses and quotation marks in the correct order and using lowercase letters for the word *print*.  If you type even one character incorrectly, it could cause your program to have an error and not work.
 
-### Step 6 - Save the file and execute your program
+### Step 5 - Save the file and execute your program
 
 1. After typing the code, select **File** > **Save**.
 

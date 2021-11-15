@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.give-receive-effective-feedback.exchange-effective-feedback
+title: Develop strategies for giving and receiving effective feedback
+metadata:
+  title: Develop strategies for giving and receiving effective feedback
+  description: This unit offers mentors and managers various strategies for giving and receiving effective feedback.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-exchange-effective-feedback.md)]
+quiz:
+  questions:
+    - content: "Which one of the following tips should you follow when you provide feedback?"
+      choices:
+        - content: "Be inclusive, positive, and constructive."
+          isCorrect: true
+          explanation: "Correct. Effective feedback should be inclusive, positive, and constructive so that recipients feel encouraged and motivated to try harder and perform better."
+        - content: "Provide your own perspective about the experience."
+          isCorrect: false
+          explanation: "Incorrect. Considering your feedback recipient's perspective rather than your own helps project understanding and empathy."
+        - content: "Offer to fix the incorrect coding yourself."
+          isCorrect: false
+          explanation: "Incorrect. By correcting feedback recipients' errors and finishing the task yourself, you're not giving them an opportunity to learn from their mistakes and improve their skills."

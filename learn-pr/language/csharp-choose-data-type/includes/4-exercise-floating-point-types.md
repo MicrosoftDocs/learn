@@ -16,7 +16,7 @@ When you need more a more precise answer, you should use `decimal`. Each value o
 
 Select the code from the previous exercise, and select the backspace or `del` key. Optionally, comment out the previous code in the .NET Editor.
 
-### Step 2 - Use the MinValue and MaxValue properties for each signed integral type
+### Step 2 - Use the MinValue and MaxValue properties for each signed float type
 
 To see the value ranges for the various data types, enter the following code into the .NET Editor.
 

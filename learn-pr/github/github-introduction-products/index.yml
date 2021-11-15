@@ -3,9 +3,9 @@ uid: learn.github.github-introduction-products
 metadata:
   title: Introduction to GitHub's Products
   description: Overview GitHub's products, associated features, and licensing of per-use and metered features.
-  ms.date: 11/16/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 8/23/2021
+  author: davenowell
+  ms.author: dapolite
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to GitHub's Products

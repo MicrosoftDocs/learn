@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-literals-variables.declaring-variables
-title: Declaring Variables
+title: Declare variables
 metadata:
-  title: Declaring Variables
+  title: Declare variables
   description: Learn how to declare and name a variable.
   ms.date: 09/03/2019
   author: bobtabor-msft

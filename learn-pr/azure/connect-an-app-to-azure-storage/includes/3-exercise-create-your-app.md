@@ -8,7 +8,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
 
 .NET Core is a cross-platform version of .NET that runs on macOS, Windows, and Linux. You can install the tools locally or use Cloud Shell on the right side of the window to execute the following steps.
 
-1. Sign in to Cloud Shell or open a command-line session, and create a new .NET Core Console application with the name "PhotoSharingApp". You can add the `-o` or `--output` flag to create the app in a specific folder.
+1. Sign in to Cloud Shell or open a command-line session, and create a new .NET Core Console application with the name "PhotoSharingApp". Add the `-o` or `--output` flag to create the app in a specific folder.
 
     ```dotnetcli
     dotnet new console --name PhotoSharingApp
@@ -25,6 +25,8 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     ```dotnetcli
     dotnet run
     ```
+
+     The output "Hello World!" should display in the console.
 
 ::: zone-end
 
@@ -55,9 +57,9 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     touch index.js
     ```
 
-1. Open the **index.js** file with an editor. If you are using Cloud Shell, you can enter `code .` to open an editor.
+1. Open the **index.js** file with an editor. If you are using Cloud Shell, enter `code .` to open an editor.
 
-1. Paste the following program into the **index.js** file. You can press <kbd>Ctrl+V</kbd> or right-click to paste.
+1. Paste the following program into the **index.js** file. Press <kbd>Ctrl+V</kbd> or right-click to paste.
 
     ```javascript
     #!/usr/bin/env node
@@ -69,12 +71,14 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     main();
     ```
 
-1. Save the file. Select the "..." menu on the top-right corner of Cloud Shell editor, and select **Save**.
+1. Press <kbd>Ctrl+S</kbd> to save the file. Alternatively, in the Cloud Shell integrated editor title bar, select the ellipsis, and then select **Save** from the context menu.
 
-1. Run the app to make sure it executes correctly. It should display "Hello, World!" in the console.
+1. Run the app to make sure it executes correctly.
 
     ```bash
     node index.js
     ```
+
+     The output "Hello World!" should display in the console.
 
 ::: zone-end

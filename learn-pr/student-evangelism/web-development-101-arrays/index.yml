@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: JavaScript arrays and loops
 summary: Learn how to manipulate and store data within JavaScript.
 abstract: |

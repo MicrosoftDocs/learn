@@ -10,17 +10,17 @@ First, you need to download and install Storage Explorer.
 
 1. Browse to the [Azure Storage Explorer website](https://azure.microsoft.com/features/storage-explorer/?azure-sandbox=true).
 
-1. For **Operating system**, select your preferred operating system. The following steps will go through the Windows version of the application. Your steps will be different if you're using a different OS.
+1. In the **Operating system** field, select your preferred operating system. The following steps will go through the Windows version of the application. Your steps will be different if you're using a different OS.
 
-1. Select the **Download now** button to download the Storage Explorer installer application to your computer.
+1. Select **Download now** to download the Storage Explorer installer application to your computer.
 
 1. Locate the downloaded file and run it. For the Windows version, use the **StorageExplorer.exe** file.
 
 1. Accept the license agreement, and select **Install**.
 
-1. Browse to the location where you want to install Storage Explorer, or accept the default location. Then select **Next**.
+1. Browse to the location where you want to install Storage Explorer, or accept the default location. Then, select **Next**.
 
-1. For Windows installations, select the **Start menu** folder. Accept the default and select **Next**.
+1. For Windows installations, select the **Start menu** folder. Accept the default, and select **Next**.
 
 1. When the installation is complete, select **Finish**.
 

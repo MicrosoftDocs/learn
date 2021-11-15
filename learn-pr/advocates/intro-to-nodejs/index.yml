@@ -5,9 +5,10 @@ metadata:
   description: "Learn about Node.js: what it is, how it works, and when to use it. Create a Node.js application with JavaScript using Visual Studio Code."
   ms.date: 02/25/2020
   author: manekinekko
-  ms.author: wachegha
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to Node.js
 summary: "Learn about Node.js: what it is, how it works, and when to use it."
 abstract: |

@@ -13,7 +13,7 @@ durationInMinutes: 8
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your Knowledge
+  title: Check your knowledge
   questions:
   - content: "In the television advert company, which technology would you use for the advert review process?"
     choices:

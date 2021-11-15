@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.practice-active-listening.ground-rules-effective-communication
+title: Set ground rules for effective communication
+metadata:
+  title: Set ground rules for effective communication
+  description: In this unit, you'll learn to set ground rules for effective communication and to avoid friction and misunderstanding.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-ground-rules-effective-communication.md)]

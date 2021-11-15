@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.career-growth.continual-learning
+title: Keep learning to grow your career
+metadata:
+  unitType: learning-content
+  title: Keep learning to grow your career
+  description: Apply continual learning strategies to growth-hack your career.
+  ms.date: 08/23/2021
+  author: jlooper
+  ms.author: jelooper
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-continual-learning.md)]
+quiz:
+  questions:
+  - content: "Is it necessary to go back to school to continue learning?"
+    choices:
+    - content: "No, but it can be a valuable activity."
+      isCorrect: true
+      explanation: "That's correct, it can be valuable but is often not necessary."
+    - content: "Yes, accumulate as many degrees as possible."
+      isCorrect: false
+      explanation: "False, it's not necessary to accumulate degrees."
+    - content: "Yes, it is impossible to advance in a company without advanced degrees."
+      isCorrect: false
+      explanation: "False, this is rarely the case."

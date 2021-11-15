@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-speech-services-tutorials-mrtk.3-exercise-integrate-speech-recognition-transcription
+title: Exercise - Integrate and use speech recognition and transcription
+metadata:
+  title: Exercise - Integrate and use speech recognition and transcription
+  description: Introduction for Integrate and use speech recognition and transcription
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-integrate-speech-recognition-transcription.md)]

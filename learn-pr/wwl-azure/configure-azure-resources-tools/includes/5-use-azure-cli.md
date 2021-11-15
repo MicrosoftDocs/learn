@@ -2,6 +2,7 @@ Azure CLI is a command-line program to connect to Azure and execute administrati
 
 ```azurecli
 az vm restart -g MyResourceGroup -n MyVm
+
 ```
 
 Azure CLI provides cross-platform command-line tools for managing Azure resources. You can install this locally on computers running the Linux, macOS, or Windows operating systems. You can also use Azure CLI from a browser through Azure Cloud Shell.
@@ -19,13 +20,15 @@ So, how do you find the particular commands you need? One way is to use `az find
 
 ```azurecli
 az find blob
+
 ```
 
 If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command, and for a command group, a list of the available subcommands. For example, here's how you can get a list of the subgroups and commands for managing blob storage:
 
 ```azurecli
 az storage blob --help
+
 ```
 
 > [!NOTE]
-> Bookmark the [Azure CLI Reference](/cli/azure/).
+> Bookmark the [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).

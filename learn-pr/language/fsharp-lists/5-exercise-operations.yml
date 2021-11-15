@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-lists.exercise-operations
-title: Exercise - list operations
+title: Exercise - Perform list operations
 metadata:
-  title: Exercise - list operations
-  description: In this exercise, we will use a list operator function to calculate a card hands value.
+  title: Exercise - Perform list operations
+  description: In this exercise, you use a list operator function to calculate a card hand's value.
   author: softchris
   ms.author: chnoring
   ms.date: 07/28/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/5-exercise-operations.md)]

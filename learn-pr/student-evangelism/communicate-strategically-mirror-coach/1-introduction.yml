@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the mirror and coach roles.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

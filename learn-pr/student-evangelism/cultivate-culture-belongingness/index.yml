@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.student-evangelism.cultivate-culture-belong-tech
+metadata:
+  title: 'Cultivate a culture of belongingness in tech'
+  description: Learn how to cultivate a culture of belongingness in tech.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Cultivate a culture of belongingness in tech'
+summary: Explore what belonging is, why it matters, and how to recognize it. Learn about historical and current challenges to belonging in tech, and understand what contributes to a climate of belonging, including strategies to build inclusive environments.
+abstract:  | 
+  In this module, you will:
+  - Describe the concept of belonging, how to recognize it, and why you need to foster a climate of belonging in tech.
+  - Identify historical challenges in tech that narrow the range of backgrounds and lived experiences.
+  - Learn how climate influences a sense of belonging, and what impacts climate.
+  - Examine microaggressions and micro-affirmations in tech.
+  - Explore methods to build inclusive environments and foster a climate of belongingness.
+  
+prerequisites: |
+  - To get the best learning experience from this module, you should have an open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace.
+  
+iconUrl: /learn/achievements/tech-resilience/culture-belonging.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.student-evangelism.cultivate-culture-belong-tech.introduction
+- learn.student-evangelism.cultivate-culture-belong-tech.examine-recognize-belonging
+- learn.student-evangelism.cultivate-culture-belong-tech.exercise-belongingness
+- learn.student-evangelism.cultivate-culture-belong-tech.why-belonging-matters-tech
+- learn.student-evangelism.cultivate-culture-belong-tech.identify-challenges-tech-environments
+- learn.student-evangelism.cultivate-culture-belong-tech.exercise-challenges
+- learn.student-evangelism.cultivate-culture-belong-tech.microaggressions-microaffirmations
+- learn.student-evangelism.cultivate-culture-belong-tech.exercise-interactions-cultivate-belonging
+- learn.student-evangelism.cultivate-culture-belong-tech.build-inclusive-environments
+- learn.student-evangelism.cultivate-culture-belong-tech.knowledge-check
+- learn.student-evangelism.cultivate-culture-belong-tech.summary
+badge:
+  uid: learn.student-evangelism.cultivate-culture-belong-tech.badge 

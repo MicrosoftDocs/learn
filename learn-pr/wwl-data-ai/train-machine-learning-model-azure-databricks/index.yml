@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.train-machine-learning-model-azure-databricks
+metadata:
+  title: Train a machine learning model with Azure Databricks
+  description: "Train a machine learning model with Azure Databricks"
+  ms.date: 09/18/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train a machine learning model with Azure Databricks
+summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand Spark ML
+  - Train and validate a model
+  - Use other machine learning frameworks
+prerequisites: |
+  Before starting this module, you should have some experience of using Python to train machine learning models using a framework such a Scikit-Learn.
+iconUrl: /learn/achievements/train-a-machine-learning-model-with-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.train-machine-learning-model-azure-databricks.introduction
+- learn.wwl.train-machine-learning-model-azure-databricks.understand-spark-ml
+- learn.wwl.train-machine-learning-model-azure-databricks.train-validate-model
+- learn.wwl.train-machine-learning-model-azure-databricks.use-other-frameworks
+- learn.wwl.train-machine-learning-model-azure-databricks.exercise
+- learn.wwl.train-machine-learning-model-azure-databricks.knowledge-check
+- learn.wwl.train-machine-learning-model-azure-databricks.summary
+badge:
+  uid: learn.wwl.train-machine-learning-model-azure-databricks.badge

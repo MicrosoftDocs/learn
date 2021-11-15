@@ -18,13 +18,11 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure home page, under **Azure services**, select **Create a resource**.
+1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears, displaying popular products for Azure services.
 
     ![Screenshot that shows the Azure Marketplace with create a resource highlighted.](../media/3-create-new-resource.png)
 
-    Popular offers for Azure services appear in the **Create a resource** pane.
-
-1. As you can see, there are many selectable options. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
+1. As you can see, there are many options to choose from. We want to create a VM running an Ubuntu server. VMs are Azure compute resources, so in the left menu pane, select **Compute**, and in the *Search services and marketplace* search box, enter *Ubuntu Server*, and press <kbd>Enter</kbd>. The **Marketplace** pane appears with many Ubuntu Server options.
 
 1. Select **Ubuntu Server 18.04 LTS**. The **Ubuntu Server 18.04 LTS** pane appears.
 
@@ -38,14 +36,15 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
 
     | Setting | Value  |
     | ------ | ------- |
-    | **Project Details**  |
+    | **Project details**  |
     | Subscription | Concierge Subscription |
     | Resource group | "**<rgn>[sandbox resource group name]</rgn>**" |
-    | **Instance Details** |
-    | Virtual machine name  | test-ubuntu-cus-vm |
+    | **Instance details** |
+    | Virtual machine name  | Enter *test-ubuntu-cus-vm* |
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
-    | Image | Ubuntu Server 18.04 LTS |
+    | Image | Ubuntu Server 18.04 LTS - Gen1 |
+    | Azure Spot instance | Unchecked |
     | Size | Standard D2s V3 |
     | **Administrator account** |
     | Authentication type | Password |
@@ -53,7 +52,7 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
     | Password | Enter a password |
     | **Inbound port rules** |
     | Public inbound ports | None |
-    
+
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
 1. Azure validates your configuration settings for a resource before it creates it. You may need to supply some additional information based on the requirements of the image creator built into Azure. This is simple; just open the tab that has an error. Verify all the settings are set the way you want, and then select **Create** to deploy and create the VM.
@@ -62,12 +61,14 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
 
     :::image type="content" source="../media/3-notifications.png" alt-text="Screenshot showing the notifications icon on toolbar and part of the notifications pane.":::
 
-1. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Select **Go to resource** to go to the VM overview page.
+    The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded.
 
-1. Here, you can see all the information and configuration options for your newly created Ubuntu VM. One of the pieces of information is the **Public IP address**.
+1. Select **Go to resource**. The **Overview** page of your VM appears.
+
+    Here, you can see all the information and configuration options for your newly created Ubuntu VM. One of the pieces of information is the **Public IP address**.
 
      :::image type="content" source="../media/3-public-ip-address.png" alt-text="Screenshot showing VM essentials and properties with the public IP address highlighted.":::
 
-1. By default, Ubuntu Server 18.04 LTS image doesn't install any reachable public services on the public IP address. However, recall that when you enabled password authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
+    By default, Ubuntu Server 18.04 LTS image doesn't install any reachable public services on the public IP address. However, recall that when you enabled password authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
 
 Congratulations! With a few steps, you deployed a VM that runs Linux. Let's explore some other ways we could have created a VM.

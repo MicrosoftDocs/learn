@@ -1,0 +1,29 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+# Lint the Bicep file.
+- stage: Lint
+  jobs: 
+  - template: pipeline-templates/lint.yml
+
+# Deploy to the test environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentType: Test
+    resourceGroupName: ToyWebsiteTest
+    serviceConnectionName: ToyWebsiteTest
+
+# Deploy to the production environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentType: Production
+    resourceGroupName: ToyWebsiteProduction
+    serviceConnectionName: ToyWebsiteProduction

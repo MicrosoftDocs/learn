@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.give-receive-effective-feedback.exercise-reflect-effective-feedback
+title: Reflect on giving and receiving effective feedback
+metadata:
+  title: Reflect on giving and receiving effective feedback
+  description: In this unit, you reflect on giving and receiving effective feedback.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-reflect-effective-feedback.md)]
+quiz:
+  questions:
+    - content: "Which one of the following statements accurately describes the purpose of signaling attention while giving feedback?"
+      choices:
+        - content: "As a reviewer, you can reinforce your trust and confidence in a developer's ability to overcome their challenges."
+          isCorrect: true
+          explanation: "Correct. By starting with what the developer got right, you can reinforce your trust in their coding skills. As a result, they're more likely to be receptive to the corrections that follow."
+        - content: "You can help other developers learn by fixing their errors for them."
+          isCorrect: false
+          explanation: "Incorrect. By fixing developers' errors for them, you're not helping them learn how to prevent similar errors in the future."
+        - content: "You can assign an easier task to the developer and indicate that they should leave the more complicated programs to more experienced team members."
+          isCorrect: false
+          explanation: "Incorrect. By reassigning someone's task to another team member, you're indicating that you don't trust them to complete the program. This can undermine the person’s self-confidence and adversely affect their growth mindset."

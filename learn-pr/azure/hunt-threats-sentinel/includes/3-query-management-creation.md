@@ -17,7 +17,7 @@ The **Hunting** page provides a list all hunting queries. You can filter and sor
 
 When you select a query from the list, the query details appear on a new pane. The query details pane contains a description, code, and other information about the query. That information includes related entities and identified tactics. You can run a query interactively by selecting **Run Query** on the details pane.
 
-### Hunt for threats y using the MITRE ATT&CK framework
+### Hunt for threats by using the MITRE ATT&CK framework
 
 Azure Sentinel uses the MITRE ATT&CK framework to categorize and order queries by tactics. ATT&CK is a knowledge base of tactics and techniques that are used and observed in the global threat landscape. You can use MITRE ATT&CK to develop and inform your threat-hunting models and methods in Azure Sentinel. When you're threat hunting in Azure Sentinel, you can use the ATT&CK framework to categorize and run queries by using the MITRE ATT&CK tactics timeline.
 
@@ -66,4 +66,4 @@ The Azure Sentinel repository contains out-of-the-box detections, exploration qu
 
 The repo contains folders with contributed content for several areas of Azure Sentinel functionality, including hunting queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
 
-Choose the best response for the following question. Then select **Check your answers**.
+Choose the best response for the following question. Then, select **Check your answers**.

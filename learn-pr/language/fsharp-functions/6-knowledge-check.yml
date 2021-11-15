@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
@@ -32,9 +33,9 @@ quiz:
           explanation: Incorrect. This function takes two integers and returns an int. You need to specify the parameter types explicitly in this case.
         - content: Write it like `let add (a:string) (b:string):int = (int a) + (int b)`.
           isCorrect: true
-          explanation: Correct. Adding the type to the parameters is needed, and the return type.
-        - content: Write it like `let add (a:string) (b:string) = (int a) + (int b)`.
-          explanation: Incorrect. Although this is a correct way to solve it, good practice is to be explicit about adding even the return type.
+          explanation: Correct. Adding the type to the parameters is needed, and the return type can either be explicitly pointed as :int or inferred by the compiler.
+        - content: Write it like `let add (a:string) (b:string):bool = (int a) + (int b)`.
+          explanation: Incorrect. The return type is bool, it needs to be int, which it can be by either specifying the return as :int or let the compiler infer it.
           isCorrect: false
     - content: The following code `let addAndMultiply = add >> multiply` is doing what?
       choices: 

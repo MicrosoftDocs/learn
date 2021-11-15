@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.5-enum-variants
+metadata:
+  title: Use enum variants for compound data
+  description: Explore how to use enum variants to work with compound data in Rust.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Use enum variants for compound data
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-enum-variants.md)]
+
+quiz:
+  questions:
+
+  - content: "All variants in a Rust enum are grouped together into the same type. Functions that use any variant of an enum must accept all its variants. How can you work around these enum variant requirements?"
+    choices:
+    - content: "Define a separate struct for each variant in the enum to hold the variant data."
+      isCorrect: true
+      explanation: "Correct! By defining a separate struct for each variant in the enum, you can directly access the data for a specific variant."
+    - content: "Define the enum to have only one variant."
+      isCorrect: false
+      explanation: "Incorrect. It's possible to define an enum with a single variant, but it's not the best use of the enum type."
+    - content: "Define the enum to use variants that are all the same type."
+      isCorrect: false
+      explanation: "Incorrect. An advantage of the enum type is supporting data that can have different types depending on the context." 

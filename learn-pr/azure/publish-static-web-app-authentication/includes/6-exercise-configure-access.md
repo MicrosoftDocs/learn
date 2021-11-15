@@ -1,4 +1,4 @@
-Your shopping list web app needs to secure access to some routes and disable specific authentication providers. In this exercise, you'll update the routing configuration of your web app to achieve that.
+Your shopping list web app needs to secure access to some routes and disable specific authentication providers. In this exercise, you'll update the routing configuration of your web app to achieve that result.
 
 In this exercise, you'll complete the following steps:
 
@@ -9,11 +9,11 @@ In this exercise, you'll complete the following steps:
 
 ## Disable authentication providers
 
-We'll update the routing configuration of our app to disable Azure Active Directory (AAD) authentication provider.
+We'll update the routing configuration of our app to disable Azure Active Directory (Aazure AD) authentication provider.
 
 1. Open the project in Visual Studio Code.
 
-1. Open this file:
+1. Open the following file.
 
    ::: zone pivot="angular"
 
@@ -47,24 +47,24 @@ We'll update the routing configuration of our app to disable Azure Active Direct
 
    ::: zone-end
 
-1. At the root of the JSON object, add this routing configuration:
+1. At the root of the JSON object, add the following routing configuration.
 
    ```json
    "routes": [
      {
        "route": "/.auth/login/aad",
-       "statusCode": "404"
+       "statusCode": 404
      }
    ]
    ```
 
-   By adding this routing rule, we prevent our users to access the Azure Active Directory authentication provider.
+   By adding this routing rule, we prevent our users from accessing the Azure AD authentication provider.
 
 ## Secure the product list access
 
-Next we want to secure the product list so that only authenticated are able to access the API. For that we'll add another routing rule in the `staticwebapp.config.json` configuration file.
+Next, we want to secure the product list so that only authenticated are able to access the API. For that, we'll add another routing rule in the `staticwebapp.config.json` configuration file.
 
-1. Add this rule at the top of the `routes` array:
+1. Add the following rule at the top of the `routes` array.
 
    ```json
    {
@@ -73,7 +73,7 @@ Next we want to secure the product list so that only authenticated are able to a
    },
    ```
 
-1. Your completed `staticwebapp.config.json` file should look like this:
+1. Your completed `staticwebapp.config.json` file should look like the following:
 
    ```json
    {
@@ -84,7 +84,7 @@ Next we want to secure the product list so that only authenticated are able to a
        },
        {
          "route": "/.auth/login/aad",
-         "statusCode": "404"
+         "statusCode": 404
        }
      ],
      "navigationFallback": {
@@ -98,13 +98,15 @@ Next we want to secure the product list so that only authenticated are able to a
 
 Before testing the result of this configuration, we'll redeploy our app.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Commit All**
-1. Enter `Secure access` as the commit message.
-1. Press <kbd>Enter</kbd>
-1. Open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Push**
-1. Press <kbd>Enter</kbd>
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Commit All**.
+
+1. Enter `Secure access` as the commit message, and press <kbd>Enter</kbd>.
+
+1. Open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Push**, and press <kbd>Enter</kbd>.
 
 After you pushed your changes, wait for the build and deploy process to run. The changes should be visible on your deployed app after that.
 
@@ -112,18 +114,24 @@ After you pushed your changes, wait for the build and deploy process to run. The
 
 After your app is redeployed, you can test that the new restrictions are effective.
 
-1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-authn** and select **Browse Site** to view app in your browser.
+1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click **my-static-web-app-and-authn**, and then select **Browse Site** to view app in your browser.
+
 1. If you're not logged in, you should see the message **Unauthorized** instead of the products list.
+
 1. Select **AAD** in the authentication provider list to log in.
-1. You should see a 404 error page like this:
+
+   You should see a 404 error page like the following:
 
    :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
 
-1. Use the back button of your browser to go back to your app.
-1. Select **GitHub** in the authentication provider list to log in.
-1. Enter your GitHub credentials if asked, then select **Grant Consent** on the Azure consent page.
-1. You're now logged in and should see the products list.
+4. Press the back button of your browser to go back to your app.
+
+5. Select **GitHub** in the authentication provider list to log in.
+
+6. Enter your GitHub credentials, if prompted, and then select **Grant Consent** on the Azure consent page.
+
+You're now logged in and should see the products list.
 
 ## Next steps
 
-Congratulations, you've implemented a complete authentication workflow in your static web app!
+Congratulations. You've implemented a complete authentication workflow in your Static Web App!

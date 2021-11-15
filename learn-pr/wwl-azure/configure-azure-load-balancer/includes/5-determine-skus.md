@@ -1,4 +1,4 @@
-When you create an Azure Load Balancer, you select the type (Internal or Public) of load balancer. You also select the SKU. The load balancer supports both Basic and Standard SKUs, each differing in scenario scale, features, and pricing. The Standard Load Balancer is the newer Load Balancer product with an expanded and more granular feature set over Basic Load Balancer. It is a superset of Basic Load Balancer.
+When you create an Azure Load Balancer, you select the type (Internal or Public) of load balancer. You also select the SKU. The load balancer supports both Basic and Standard SKUs, each differing in scenario scale, features, and pricing. The Standard Load Balancer is the newer Load Balancer product with an expanded and more granular feature set over Basic Load Balancer. It is a superset of the Basic Load Balancer.
 
 :::image type="content" source="../media/load-balancer-types-a4c0eceb.png" alt-text="Screenshot of the Load Balancer instance page. The type is Internal, the SKU is basic, and VNet is associated.":::
 

@@ -1,0 +1,80 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+- stage: Lint
+  jobs: 
+  - job: LintCode
+    displayName: Lint code
+    steps:
+      - script: |
+          az bicep build --file deploy/main.bicep
+        name: LintBicepCode
+        displayName: Run Bicep linter
+
+- stage: Validate
+  jobs: 
+  - job: ValidateBicepCode
+    displayName: Validate Bicep code
+    steps:
+      - task: AzureCLI@2
+        name: RunPreflightValidation
+        displayName: Run preflight validation
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az deployment group validate \
+              --resource-group $(ResourceGroupName) \
+              --template-file deploy/main.bicep \
+              --parameters environmentType=$(EnvironmentType)
+
+- stage: Preview
+  jobs: 
+  - job: PreviewAzureChanges
+    displayName: Preview Azure changes
+    steps:
+      - task: AzureCLI@2
+        name: RunWhatIf
+        displayName: Run what-if
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az deployment group what-if \
+              --resource-group $(ResourceGroupName) \
+              --template-file deploy/main.bicep \
+              --parameters environmentType=$(EnvironmentType)
+
+- stage: Deploy
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy website
+    environment: Website
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: $(ServiceConnectionName)
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  az deployment group create \
+                    --name $(Build.BuildNumber) \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=$(EnvironmentType)

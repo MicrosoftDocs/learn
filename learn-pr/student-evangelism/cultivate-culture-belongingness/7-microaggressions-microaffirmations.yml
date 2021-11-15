@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.microaggressions-microaffirmations
+title: What are microaggressions and microaffirmations?
+metadata:
+  title: What are microaggressions and microaffirmations?
+  description: What are microaggressions and microaffirmations?
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-microaggressions-microaffirmations.md)]

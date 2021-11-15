@@ -13,16 +13,28 @@ Let's start by creating a project. You create a project from the command line by
 
    This command creates a new F# project in the directory _Variables_.
 
-1. Locate the `main` method in _Program.fs_ and add the following code:
+1. Locate the `main()` method in _Program.fs_ and add the following code:
 
    ```fsharp
-   printfn "Welcome to the calculator progran"
+   printfn "Welcome to the calculator program"
    // read input from the console and assign to `sum`
    let sum = 0
    printfn "The sum is %i" sum
    ```
 
    The first line welcomes the user of the program. On the second line, there's a comment that starts with "//" that shows code that you'll implement in the next exercise unit. Then you have `let sum = 0`. You'll create a `sum` variable that will hold the calculation result.
+
+   Your `main()` function should now look like so:
+
+   ```fsharp
+   [<EntryPoint>]
+   let main argv =
+       printfn "Welcome to the calculator program"
+       // read input from the console and assign to `sum`
+       let sum = 0
+       printfn "The sum is %i" sum
+       0
+   ```
 
 1. Run the program by running `dotnet run`.
 

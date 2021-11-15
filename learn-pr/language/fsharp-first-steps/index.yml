@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Familiarity with command-line based applications
   - Introductory knowledge of programming concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/fsharp-first-steps.svg
 levels: 
   - beginner
 roles: 

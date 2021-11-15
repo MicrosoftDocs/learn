@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "To support real-time inferencing in production applications, which is the best choice as a deployment target for the scoring web service?"
+    choices:
+    - content: "Azure Kubernetes Service (AKS)."
+      isCorrect: true
+      explanation: "That's correct. AKS is recommended for high-scale production deployments. AKS provides fast response time and autoscaling of the deployed service."
+    - content: "Azure Container Instances (ACI)."
+      isCorrect: false
+      explanation: "That's incorrect. AKS is recommended for high-scale production deployments. AKS provides fast response time and autoscaling of the deployed service."
+    - content: "Azure Machine Learning Compute Clusters."
+      isCorrect: false
+      explanation: "That's incorrect. AKS is recommended for high-scale production deployments. AKS provides fast response time and autoscaling of the deployed service."
+  - content: "You want to deploy a model to Azure Container Instances. You have registered the trained model, created an entry script and an environment. You want to combine the entry script and environment. What kind of object should you use?"
+    choices:
+    - content: "InferenceConfig"
+      isCorrect: true
+      explanation: "That's correct. InferenceConfig represents the configuration settings for a custom environment used for deployment and takes an entry script and environment as input parameters."
+    - content: "WebserviceDeploymentConfiguration"
+      isCorrect: false
+      explanation: "That's incorrect. The WebserviceDeploymentConfiguration can be used to create the Azure Container Instances to deploy the model on."
+    - content: "ComputeTarget"
+      isCorrect: false
+      explanation: "That's incorrect. ComputeTarget is used to manage the designated compute resource to host the deployment. It doesn't represent the combined entry script and environment."

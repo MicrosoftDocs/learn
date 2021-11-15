@@ -5,8 +5,7 @@ In this unit, we'll review some of the features and limitations of Rust:
 - The Rust module system: modules, crates, and paths
 - Rust standard libraries and third-party crates
 - The Rust Cargo tool and dependency manager
-- The Rust playground
-- Limitations of Rust
+- When to use Rust
 
 
 ## Manage code with the Rust module system
@@ -33,7 +32,7 @@ There are tens of thousands of libraries and third-party crates available to use
    - std::fs - Functions for working with the file system.
    - std::io - Definitions and functionality for working with input/output.
    - std::path - Definitions and functions that support working with file system path data.
-- [structopt](https://crates.io/crates/structopt) - A third-party crate for easily parsing command line arguments.
+- [structopt](https://crates.io/crates/structopt) - A third-party crate for easily parsing command-line arguments.
 - [chrono](https://crates.io/crates/chrono) - A third-party crate to handle date and time data.
 - [regex](https://crates.io/crates/regex) - A third-party crate to work with regular expressions. 
 - [serde](https://crates.io/crates/serde) - A third-party crate of serialization and deserialization operations for Rust data structures.
@@ -57,42 +56,13 @@ Cargo does lots of things for you, including:
 - Add dependent crates to a project by adding the crate name to the Cargo.toml file.
 
 
-## Develop programs in the Rust playground
+## When to use Rust
 
-Sometimes you just want to try a bit of Rust code or check syntax for a definition in a Rust library. You might also be looking for a way to quickly share some code with others. The Rust language offers support for these tasks in the Rust playground.
+The Rust language has many strengths to consider when choosing the best language for your project:
 
-The playground is an environment for Rust development that's available on the internet at [play.rust-lang.org](https://play.rust-lang.org). Anyone can access the playground. You can write your code, and then compile and run your code in the same environment. The following screenshot shows the playground environment. At the far right on the toolbar, the **Configure** menu has options to set your preferences for the environment.
-
-:::image type="content" source="../media/rust-playground-main.png" alt-text="Screenshot of the Rust playground that shows a basic program.":::
-
-In the playground, you can access methods and functions in the Rust `std` standard library. The top 100 most-downloaded crates in the crates.io library are also available along with their dependencies.
-
-There are some limitations in the playground that protect the site from being used in a malicious manner. The restrictions help to ensure the site remains available for all users.
-
-- **Network**: When you compile or run code in the playground, a network connection isn't available.
-- **Memory**: The playground limits the available memory to compile code and run a built program.
-- **Execution time**: The playground sets a maximum amount of time to compile code and run a built program.
-- **Disk**: The amount of available disk space to compile code and run a built program is limited.
-
-You can read more about the features of the Rust playground on the [help page](https://play.rust-lang.org/help?azure-portal=true).
-
-
-## Understand Rust's limitations
-
-The Rust language has some limitations to consider when choosing the best language for your project:
-
-- Rust can have a somewhat steep learning curve since its features might not be familiar to some developers. Many learners of Rust report struggling at first to be productive until they eventually gain an understanding of the language.
-- Developing code with Rust may not be as fast as using a scripting language like Ruby or Python. Rust's static type checking and safety features, require developers to prove a certain level of correctness of their program before it even compiles.
-- Rust is a systems language meaning it sometimes requires developers to think about certain low-level details (such as when memory is freed) that other languages can simply abstract over (at the cost of some performance overhead). 
-- Rust is a newer language. The libraries and third-party code might not be as mature for some functionality as is available for other programming languages in certain domains.
-
-## Understand Rust's strengths
-
-In contrast to its limitations, The Rust language also has many strengths to consider when choosing the best language for your project:
-
-- Rust allows for control over the performance and resource consumption of programs and libraries written in the language (on par with C and C++) while still being memory safe by default eliminating entire classes of common bugs.
-- Rust has rich abstraction features that allow developers to encode many of the invariants of their program into code which is then checked by the compiler (instead of relying on convention or documentation). This can often lead to the feeling of "if it compiles, it works".
-- Rust has built-in tools for building, testing, documenting, and sharing code as well as a rich ecosystem of third-party tools and libraries. These tools can make some tasks that are difficult in some languages (such as building dependencies) easy and productive in Rust.
+- Rust allows for control over the performance and resource consumption of programs and libraries written in the language on par with C and C++, while still being memory safe by default eliminating entire classes of common bugs.
+- Rust has rich abstraction features that allow developers to encode many of the invariants of their program into code, which is then checked by the compiler instead of relying on convention or documentation. This feature can often lead to the feeling of "if it compiles, it works."
+- Rust has built-in tools for building, testing, documenting, and sharing code as well as a rich ecosystem of third-party tools and libraries. These tools can make some tasks that are difficult in some languages, such as building dependencies, easy and productive in Rust.
 
 
 ### Check your knowledge

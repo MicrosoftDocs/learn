@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.career-growth.asking-questions
+title: Ask the right questions
+metadata:
+  unitType: learning-content 
+  title: Ask the right questions. # user input: module title for browser tab and search results
+  description: Ask the right questions as a new employee. # user input: a description for site search and SEO
+  ms.date: 08/23/2021 
+  author: jlooper 
+  ms.author: jelooper 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/6-asking-questions.md)]
+quiz:
+  questions:
+  - content: "You should limit your questions to your peers as an employee."
+    choices:
+    - content: "True, you should try not to be annoying."
+      isCorrect: false
+      explanation: "While it's important not to annoy your coworkers unduly, a healthy work environment will empower you to ask questions of everyone."
+    - content: "True, you should cultivate your peer circle."
+      isCorrect: false
+      explanation: "While it's true that you should be a good colleague to your peers, you will learn more about the business if you expand your circle of inquiry."
+    - content: "This is false. You should feel empowered to ask questions of everyone."
+      isCorrect: true
+      explanation: "Feel free to ask good questions of everyone in your company. This is a perfect time to do so!"

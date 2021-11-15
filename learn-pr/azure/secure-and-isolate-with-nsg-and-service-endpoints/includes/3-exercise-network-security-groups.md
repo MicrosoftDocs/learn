@@ -48,7 +48,7 @@ First, you'll create the virtual network, and subnets for your server resources.
 
 Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy **AppServer** to the **Applications** subnet, and **DataServer** to the **Databases** subnet. Add the VM network interfaces to the **ERP-SERVERS-NSG** network security group. Then, to test your network security group, use these VMs.
 
-1. To build the **AppServer** VM, in Cloud Shell, run the following command. For the admin account, define a `<password>`.
+1. To build the **AppServer** VM, in Cloud Shell, run the following command. For the admin account, replace `<password>` with a complex password.
 
     ```azurecli
     wget -N https://raw.githubusercontent.com/MicrosoftDocs/mslearn-secure-and-isolate-with-nsg-and-service-endpoints/master/cloud-init.yml && \
@@ -60,13 +60,14 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --nsg ERP-SERVERS-NSG \
         --image UbuntuLTS \
         --size Standard_DS1_v2 \
+         --generate-ssh-keys \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
         --no-wait \
         --admin-password <password>
     ```
 
-1. To build the **DataServer** VM, in Cloud Shell, run the following command. For the admin account, define a `<password>`.
+1. To build the **DataServer** VM, in Cloud Shell, run the following command. For the admin account, replace `<password>` with a complex password.
 
     ```azurecli
     az vm create \
@@ -77,8 +78,10 @@ Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy 
         --nsg ERP-SERVERS-NSG \
         --size Standard_DS1_v2 \
         --image UbuntuLTS \
+        --generate-ssh-keys \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
+         --no-wait \
         --admin-password <password>
     ```
 
@@ -188,7 +191,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
 1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, enter `yes`.
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. To close the **AppServer** session, enter `exit`.
 
@@ -200,7 +203,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
 1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, enter `yes`.
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. To close the **DataServer** session, enter `exit`.
 
@@ -241,7 +244,7 @@ Here, you'll check if your new rule works. **AppServer** should be able to commu
     ssh -t azureuser@$APPSERVERIP 'wget http://10.0.1.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. The response should include a `200 OK` message.
 
@@ -251,7 +254,7 @@ Here, you'll check if your new rule works. **AppServer** should be able to commu
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. This shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press <kbd>Ctrl+C</kbd>.
 
@@ -308,17 +311,17 @@ Next, create an app security group for database servers so that all servers in t
     ssh -t azureuser@$APPSERVERIP 'wget http://10.0.1.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you kdefined when you created the VM.
 
 1. As before, the response should include a `200 OK` message. The app security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
 
-1. To connect to your **DataServer**, in Cloud Shell (at the top-right in Azure; the box with the >_) , run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
+1. To connect to your **DataServer**, in Cloud Shell, run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the VM.
+1. Enter the password you defined when you created the VM.
 
 1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press <kbd>Ctrl+C</kbd>.
 

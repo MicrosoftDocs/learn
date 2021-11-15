@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.examine-recognize-belonging
+title: Examine belonging and how to recognize it  
+metadata:
+  title: Examine belonging and how to recognize it  
+  description: Examine belonging and learn how to recognize it.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-examine-recognize-belonging.md)]

@@ -82,6 +82,8 @@ To enable an operator to view environmental data from your stores, add the follo
 
 1. Change the name of the view to *View IoT Edge device telemetry*.
 
+1. Select **Start with devices**.
+
 1. Add the **ambient / temperature**, **humidity**, **machine/temperature**, and **pressure** telemetry types, and then select **Add tile**.
 
 1. Select **Save**.

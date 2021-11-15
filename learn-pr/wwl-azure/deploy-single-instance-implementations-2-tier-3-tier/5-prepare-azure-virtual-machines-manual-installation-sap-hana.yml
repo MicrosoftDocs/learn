@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-single-instance-implementations-2-tier-3-tier.prepare-azure-virtual-machines-for-manual-installation-of-sap-hana
+title: Prepare Azure virtual machines for a manual installation of SAP HANA
+metadata:
+  title: Prepare Azure virtual machines for a manual installation of SAP HANA
+  description: "Prepare Azure virtual machines for a manual installation of SAP HANA"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-prepare-azure-virtual-machines-manual-installation-sap-hana.md)]

@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.intro-to-powershell.5-exercise-cmdlets
-title: Exercise - locate commands
+title: Exercise - Locate commands
 metadata:
-  title: Exercise - locate commands
+  title: Exercise - Locate commands
   description: Learn how to locate commands by searching for its verb or noun part.
   author: softchris
   ms.author: chnoring
   ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 azureSandbox: true
 interactive: powershell
 durationInMinutes: 2

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.exercise-belongingness
+title: Exercise - Belongingness 
+metadata:
+  title: Exercise - Belongingness   
+  description: Assess belongingness by rating a set of situations.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-belongingness.md)]

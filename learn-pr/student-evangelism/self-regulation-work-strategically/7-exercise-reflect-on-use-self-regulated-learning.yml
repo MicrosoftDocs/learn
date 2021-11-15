@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.self-regulation-work-strategically.exercise-reflect-on-use-self-regulated-learning
+title: Reflect on your use of self-regulated learning
+metadata:
+  title: Reflect on your use of self-regulated learning
+  description: In this exercise, you'll reflect on your approach to learning and tackling challenges.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-exercise-reflect-on-use-self-regulated-learning.md)]

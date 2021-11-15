@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.exercise-your-emotional-intelligence.exercise-reflect-feelings
+title: Exercise - Reflect on your feelings
+metadata:
+  title:  Exercise - Reflect on your feelings
+  description: In this exercise, you examine feelings and EQ and learn how they come into play in various situations.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-reflect-feelings.md)]

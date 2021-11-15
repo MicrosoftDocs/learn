@@ -2,6 +2,8 @@ You can purchase Azure access directly from Microsoft by signing up on the Azure
 
 If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you're ready, you can choose to upgrade and start paying for the Azure services you use above the free amounts.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK1QU]
+
 ## What is the Azure free account?
 
 The Azure free account includes free access to popular Azure products for 12 months, $200 USD credit to spend for the first 30 days, and access to more than 25 products that are always free. This is an excellent way for new users to get started and explore. To sign up, you need a phone number, a credit card, and a Microsoft or GitHub account. Credit card information is used for identity verification only. You won't be charged for any services until you upgrade.

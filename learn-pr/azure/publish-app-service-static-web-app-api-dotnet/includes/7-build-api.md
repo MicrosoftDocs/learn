@@ -32,7 +32,7 @@ Notice that your HTTP GET requests will route to _api/products_. The _api_ prefi
 So far you've been using a front-end framework. Soon you'll add an API and connect it to your front-end app. Your repository has an _Api_ project that contains an incomplete Azure Functions project and HTTP endpoints for PUT, POST, and DELETE of your products.
 The API is missing the HTTP GET function. You'll complete the Azure Functions project's API and add the missing function. Then, you'll connect your API to your front-end web app.
 
-### Previewing changes to your web app
+### Preview changes to your web app
 
 Before making changes to an app, it's good practice to create a new branch for the changes. You'll be making several changes when you complete the API for your app, so you'll create a branch for these changes.
 

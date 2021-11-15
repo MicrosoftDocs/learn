@@ -8,11 +8,11 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. In the **Resource group** pane, the **admsdemorg** resource group that you deployed appears.
 
-1. In the list of resources in the resource group, select the **admsdemovm** virtual machine.
+1. In the list of resources in the resource group, select the **admsdemovm** virtual machine. The **admsdemovm** virtual machine pane appears.
 
-1. In the top menu bar, select **Connect**, and from the dropdown, select **RDP**. The **Connect** pane appears for your VM.
+1. In the top menu bar, select **Connect**, and from the dropdown list, select **RDP**. The **Connect** pane appears for your VM.
 
-1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save it to your computer in a location of your choice.
+1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save the IP address to your computer in a location of your choice.
 
 1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account and the password that you specified earlier. An RDP connection should open in a separate window.
 
@@ -22,26 +22,26 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. By default, Server Manager should be open on your connected RDP session. If you closed it, use the **Start** menu to open it.
 
-1. In the left menu bar, select **Local Server**.
+1. In the left menu pane, select **Local Server**.
 
     :::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration" lightbox="../media/4-rdp-server-manager.png":::
 
-1. Select the **IE Enhanced Security Configuration** setting.
+1. Select the **IE Enhanced Security Configuration** setting. The **Internet Explorer Enhanced Security Configuration** dialog box appears.
 
 1. Change the **Administrators** setting to **Off**, and then select **OK**.
 
 ## Download, install, and run Data Migration Assistant
 
 > [!NOTE]  
->  You may need to install .Net Framework 4.8 before installing Data Migration Assistant. You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48. You will need to relaunch your RDP session prior to installing the Data Migration Assistant.
+> You may need to install .Net Framework 4.8 before installing Data Migration Assistant. You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48. You will need to relaunch your RDP session before installing the Data Migration Assistant.
 
 1. From your RDP session, open Internet Explorer, and go to the [Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
-1. Select **Download**, and install the migration assistant. Accept the defaults through the installation dialog box.
+1. Select **Download**, and install the Data Migration Assistant. Accept the defaults through the installation dialog box.
 
 1. To start the assistant, select **Microsoft Data Migration Assistant** to open the application.
 
-1. To begin a new assessment, in the left menu bar, select **+**.
+1. To begin a new assessment, in the left menu pane, select **+**.
 
 1. For **Project type**, select **Assessment**.
 
@@ -50,10 +50,6 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 1. Accept the default values for the remaining fields, and select **Create**.
 
     :::image type="content" source="../media/4-02-project-type.png" alt-text="Screenshot of project type." loc-scope="azure-database-migration":::
-    
-1. In the **Connect to a server** dialog box, enter the values shown in the screenshot above.  
- 
-1. When you've successfully connected, on the **Add sources** dialog, select *admsdemovm*, and then select **Add**.
 
 ## Configure the project
 
@@ -82,7 +78,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 ## Review the assessment results and address issues
 
-Allow the assessment to run. When it finishes, the results display in two options, *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the default view, **SQL Server feature parity**.
+Allow the assessment to run. When it finishes, the results display in two options in the left pane, *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the default view, **SQL Server feature parity**.
 
 :::image type="content" source="../media/4-07-review-results.png" alt-text="Screenshot of review results." loc-scope="azure-database-migration" lightbox="../media/4-07-review-results.png":::
 
@@ -90,15 +86,15 @@ In the middle of the page, look for the section **Unsupported features**. The se
 
 Look more closely at the first row, though, and you'll see the issue, **Service Broker feature is not supported in Azure SQL Database. Azure SQL Database does not support trace flags.** The information for that issue includes instructions about how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
 
-Select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
+In the left pane, select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
 
 :::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Screenshot showing Compatibility issues." loc-scope="azure-database-migration" lightbox="../media/4-08-compatibility-issues.png":::
 
-1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. To connect to the **Social** database, select **Connect**.
+1. From your RDP session's taskbar, search for and select **SQL Server Management Studio**, and connect to the **admsdemovm** server with Windows authentication. To connect to the **Social** database, select **Connect**.
 
-1. Select **New Query**.
+1. In the top menu bar, select **New Query**.
 
-1. Enter the following query, and to run it, select **Execute**.
+1. Enter the following query, and to run it, on the top menu bar, select **Execute**.
 
     ```sql
     ALTER DATABASE [Social] SET DISABLE_BROKER;
@@ -106,12 +102,12 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
 ## Rerun the assessment
 
-1. Switch back to Data Migration Assistant. To have Data Migration Assistant reassess the fixed database, select **Restart Assessment**.
+1. Switch back to Data Migration Assistant. To have Data Migration Assistant reassess the fixed database, in the upper right taskbar, select **Restart Assessment**.
 
 1. When the assessment finishes, you should still be on the **Compatibility Issues** page, and it should still show that there are no issues.
 
-1. Select **SQL Server feature parity**. It should now show that the issue has been resolved.
+1. In the left pane, select **SQL Server feature parity**. It should now show that the issue has been resolved.
 
     :::image type="content" source="../media/4-09-fixed-issues.png" alt-text="Fixed issues." loc-scope="azure-database-migration" lightbox="../media/4-09-fixed-issues.png":::
 
-At this point, you've completed the assessment. To return to the list of completed assessments, on the upper-left side of the page, next to **Social Database Assessment**, select the arrow.
+At this point, you've completed the assessment. To return to the list of completed assessments, on the upper-left side of the page, to the left of **Social Database Assessment**, select the arrow.

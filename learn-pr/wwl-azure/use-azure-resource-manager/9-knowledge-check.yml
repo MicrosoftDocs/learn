@@ -4,29 +4,30 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which one of these resource types can be moved across resource groups?"
+  - content: "A new project has several resources that need to be administered together. Which of the following would be a good solution?"
     choices:
-    - content: "Azure Backup Vault"
+    - content: "Azure templates"
       isCorrect: false
-      explanation: "That's incorrect. An Azure Backup vault cannot be moved across resource groups."
-    - content: "Azure Application Gateway"
-      isCorrect: false
-      explanation: "That's incorrect. The Azure Application Gateway cannot be moved across resource groups."
-    - content: "Azure Virtual Networks"
+      explanation: "That's incorrect. Azure templates are for deploying resources."
+    - content: "Azure resource groups"
       isCorrect: true
-      explanation: "That's correct. Azure virtual network can be moved across resource groups."
+      explanation: "That's correct. Resource groups make administering resources easy."
+    - content: "Azure subscriptions"
+      isCorrect: false
+      explanation: "That's incorrect. Azure subscriptions may help with billing, but resource groups would be a better choice."
   - content: "Which of the following would be good example of when to use a resource lock?"
     choices:
     - content: "A ExpressRoute circuit with connectivity back to the on-premises network."

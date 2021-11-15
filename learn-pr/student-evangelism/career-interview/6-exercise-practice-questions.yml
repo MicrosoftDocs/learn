@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.career-interview.6-exercise-practice-questions
+title: Exercise - Practice questions
+metadata:
+  title: Exercise - Practice questions
+  description: In this exercise, you'll learn how to answer questions and provide a structure for your answers. 
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-practice-questions.md)]

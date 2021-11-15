@@ -6,34 +6,46 @@ In this unit, you'll compare the methods for configuring and managing storage ti
 
 ## C# (.NET)
 
-In your project, import the **Microsoft.Azure.Storage.Blob** package using NuGet.
+In your project, import the **Azure.Storage.Blobs** package using NuGet.
 
 Add the following **using** directives to your code:
 
 ```csharp
-using Microsoft.WindowsAzure.Storage;
-
-using Microsoft.WindowsAzure.Storage.Blob;
+using Azure;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 ```
 
-The Azure SDK enables you to set the storage tier for a **CloudBlockBlob** object using the **SetStandardBlobTier** method. You can set the tier to **StandardBlobTier.Archive**, **StandardBlobTier.Cool**, or **StandardBlobTier.Hot**.
+The Azure SDK enables you to list all of the blobs in a blob container along with the properties of each blob, including the storage tier.
 
-The following code shows how to retrieve a blob from a blob container and change the storage tier:
+The following code shows how to use the `GetBlobsAsync` method on `BlobClientContianer` to get a collection of `BlobItem` objects.  The `BlobItem` object encapsulates the properties of the blob in Azure storage but does not contain the actual blob data.
 
 ```csharp
-CloudBlockBlob blob1 = cloudBlobContainer.GetBlockBlobReference(blobName);
+AsyncPageable<BlobItem> blobItems = blobContainerClient.GetBlobsAsync();
 
-blob1.SetStandardBlobTier(StandardBlobTier.Cool);
+await foreach (var blobItem in blobItems)
+{
+    Console.WriteLine($"Blob name {blobItem.Name}:   Tier {blobItem.Properties.AccessTier}");
+}
 ```
 
-When switching a blob from the Archive tier, the **SetStandardBlobTier** method runs asynchronously. It can actually take several hours for a blob that was previously in the Archive tier to be rehydrated and moved to the Cool or Hot tiers.
-
-To view the storage tier for a **CloudBlockBlob** object, read the **StandardBlobTier** property in the Properties collection of the object. This property will be one of **Archive**, **Cool**, or **Hot**. The following code shows an example:
+If you are only interested in the storage tier of a single blob and know the name of the blob, you can use the `GetPropertiesAsync` method on a `BlobClient` object will return the properties of the blob, including the storage tier.
 
 ```csharp
-CloudBlockBlob blob1 = cloudBlobContainer.GetBlockBlobReference(blobName);
+BlobClient blobClient = blobContainerClient.GetBlobClient(blobName);
 
-Console.WriteLine(@"Blob name {0}: Tier {1}", blob1.Name, blob1.Properties.StandardBlobTier);
+Response<BlobProperties> response = await blobClient.GetPropertiesAsync();
+BlobProperties blobProperties = response.Value;
+string accessTier = blobProperties.AccessTier?.ToString();
+
+Console.WriteLine($"Blob name: {blobName}  Access tier: {accessTier}");
+```
+
+To change the storage tier of a blob programmatically, use the `SetAccessTier` method on the `BlobClient` class.
+
+```csharp
+BlobClient blobClient = blobContainerClient.GetBlobClient(blobName);
+blobClient.SetAccessTier(AccessTier.Cool);
 ```
 
 ## REST
@@ -49,25 +61,3 @@ To retrieve the storage tier of a block blob, use the **Get Blob Properties** op
 `https://myaccount.blob.core.windows.net/mycontainer/myblob`
 
 The **x-ms-access-tier** response header specifies the storage tier of the blob.
-
-## Java
-
-The Azure SDK for Java provides similar functionality. You need to import the `com.microsoft.azure.storage.blob` package.
-
-You can set the storage tier when you create a new **CloudBlockBlob**:
-
-```java
-CloudBlockBlob blob1 = cloudBlobContainer.getBlockBlobReference(blobName);
-
-blob1.uploadStandardBlobTier(StandardBlobTier.COOL);
-```
-
-You can also read and modify the storage tier using the **getStandardBlobTier** and **setStandardBlobTier** methods of the blob's **BlobProperties** collection:
-
-```java
-CloudBlockBlob blob1 = cloudBlobContainer.getBlockBlobReference(blobName);
-
-blob1.getProperties().getStandardBlobTier(); /* retrieve the current tier */
-
-blob1.getProperties().setStandardBlobTier(StandardBlobTier.COOL); /* modify the tier */
-```

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-tables-views-temporary-objects.create-query-tables
+title: Create and query tables
+metadata:
+  title: Create and query tables
+  description: "Create and query tables"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-create-query-tables.md)]

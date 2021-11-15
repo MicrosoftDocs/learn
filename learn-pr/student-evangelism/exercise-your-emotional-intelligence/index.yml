@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.exercise-your-emotional-intelligence
+metadata:
+  title: 'Exercise your emotional intelligence'
+  description: Learn how to exercise your emotional intelligence.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: 'Exercise your emotional intelligence'
+summary: Learn how to use your emotional intelligence to help your peers.
+abstract:  |
+  By the end of this module, you'll be able to:
+  - Understand emotional intelligence and how it impacts your interactions with others.
+  - Identify how emotional intelligence affects your mindset.
+  - Use your emotional intelligence to support your peers.
+prerequisites:  |
+  - An open mind and a willingness to learn about the expectations and responsibilities of mentorship in a technology workspace
+iconUrl: /learn/achievements/tech-resilience/exercise-emotional-intelligence.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.exercise-your-emotional-intelligence.introduction
+- learn.student-evangelism.exercise-your-emotional-intelligence.concept-emotional-intelligence-technology
+- learn.student-evangelism.exercise-your-emotional-intelligence.exercise-reflect-feelings
+- learn.student-evangelism.exercise-your-emotional-intelligence.identify-emotions
+- learn.student-evangelism.exercise-your-emotional-intelligence.exercise-assess-improve-emotional-intelligence
+- learn.student-evangelism.exercise-your-emotional-intelligence.manage-emotions-technical-environment
+- learn.student-evangelism.exercise-your-emotional-intelligence.knowledge-check
+- learn.student-evangelism.exercise-your-emotional-intelligence.summary
+badge:
+  uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge

@@ -10,11 +10,9 @@ You can turn on Azure Defender for Storage in the Azure portal through the confi
 
 1. Launch the Azure portal.
 
-1. Navigate to your storage account. Under **Settings**, select **Advanced security**.
+1. Navigate to your storage account. Under **Security + Networking**, select **Security**.
 
 1. Select **Enable Azure Defender for Storage**.
-
-    ![Screenshot of Azure Defender for Storage.](../media/azure-defender-for-storage.png)
 
 ## Explore security anomalies
 

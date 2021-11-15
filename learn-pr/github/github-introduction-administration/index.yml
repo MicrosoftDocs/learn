@@ -3,8 +3,8 @@ uid: learn.github.github-introduction-administration
 metadata:
   title: Introduction to GitHub administration
   description: Understand the security and control measures available to GitHub administrators within an organization or enterprise.
-  ms.date: 11/16/2020
-  author: bobtabor-msft
+  ms.date: 8/23/2021
+  author: lucie-docs
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -16,8 +16,6 @@ As a data engineer, you can create data-driven workflows in the cloud to orchest
 
 Data Factory processes and transforms data by using compute services such as Azure HDInsight, Hadoop, Spark, and Azure Machine Learning. Publish output data to data stores such as Azure Synapse Analytics so that business intelligence applications can consume the data. Ultimately, you use Data Factory to organize raw data into meaningful data stores and data lakes so your organization can make better business decisions.
 
-## Data Catalog
+## Azure Purview
 
-Analysts, data scientists, developers, and others use Data Catalog to discover, understand, and consume data sources. Data Catalog features a crowdsourcing model of metadata and annotations. In this central location, an organization's users contribute their knowledge to build a community of data sources that are owned by the organization.
-
-Data Catalog is a fully managed cloud service. Users discover and explore data sources, and they help the organization document information about their data sources.
+Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud and software-as-a-service (SaaS) data. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data.

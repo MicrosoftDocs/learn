@@ -32,7 +32,7 @@ fn main() {
 
 Borrowing allows us to use a value without taking full ownership. However, as we'll see, borrowing a value means we can't do everything we can do with a fully owned value.
 
-## Mutating borrowed values
+## Mutate borrowed values
 
 What happens if we try to mutate a value we borrowed?
 
@@ -72,11 +72,11 @@ fn change(text: &mut String) {
 }
 ```
 
-With `&` borrows known as "immutable borrows", we can read the data but we can't change it. `&mut` borrows known as mutable borrows, we can both read and write the data. 
+With `&` borrows, known as "immutable borrows," we can read the data but we can't change it. With `&mut` borrows, known as "mutable borrows," we can both read and write the data.
 
 ## Borrowing and mutable references
 
-Now we get to the real center of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
+Now we get to the real core of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
 
 Your code must implement *either* of the following definitions, but **not both at the same time**:
 - One or more immutable references (`&T`) 
@@ -134,4 +134,4 @@ fn main() {
       |                        ---- immutable borrow later used here
 ```
 
-This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues including never having a race condition.
+This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues, including never having data races.

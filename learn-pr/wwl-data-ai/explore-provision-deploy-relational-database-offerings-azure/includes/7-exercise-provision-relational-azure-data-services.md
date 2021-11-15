@@ -47,6 +47,8 @@ Over time if you realize you need additional compute power to keep up with deman
     | ------------ | ----- |
     | **Use existing data** | *None* |
     | **Database Collation** | *SQL_Latin1_General_CP1_CI_AS* |
+
+1. Back on the **Create SQL Database** page, select **Security** and set **Enable Azure Defender for SQL** to **Not now**.
     | **Advanced Data Security** | *Not now* |
 
 1. Select **Review + Create**, and then select **Create** to create your Azure SQL database.
@@ -129,6 +131,8 @@ In this exercise you'll set up Azure Database for MySQL
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Azure portal showing the Create a resource blade with the Databases section selected and the Create a resource, Databases, and MySQL Database buttons highlighted.](../media/6-create-database-mysql.png)
    
+
+1. You will be presented with the choice of a Single server or Flexible server. Select **Create** for the Single server option.
 
 1. Use these values to fill out the first section of the form.
 

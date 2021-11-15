@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.play-role-mirror-coach
+title: Recognize when to play the role of a mirror or a coach
+metadata:
+  title: Recognize when to play the role of a mirror or a coach
+  description: Review scenarios and identify when to play the role of a mirror or a coach.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-play-role-mirror-coach.md)]

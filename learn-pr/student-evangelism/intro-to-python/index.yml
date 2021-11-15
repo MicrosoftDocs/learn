@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 title: Introduction to Python
 summary: Learn how to write basic Python code, declare variables, and work with
   console input and output

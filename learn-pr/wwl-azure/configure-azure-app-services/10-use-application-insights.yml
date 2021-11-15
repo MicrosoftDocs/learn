@@ -4,12 +4,13 @@ title: Use Application Insights
 metadata:
   title: Use Application Insights
   description: "Use Application Insights"
-  ms.date: 07/26/2021
+  ms.date: 11/03/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-use-application-insights.md)]

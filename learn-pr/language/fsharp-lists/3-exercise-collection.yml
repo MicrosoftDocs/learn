@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-lists.exercise-collection
-title: Exercise - list properties
+title: Exercise - Apply list properties
 metadata:
-  title: Exercise - list properties
-  description: In this exercise, it covers how to use list properties to build a deck of cards.
+  title: Exercise - Apply list properties
+  description: In this exercise, you use list properties to build a deck of cards.
   author: softchris
   ms.author: chnoring
   ms.date: 07/28/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-collection.md)]

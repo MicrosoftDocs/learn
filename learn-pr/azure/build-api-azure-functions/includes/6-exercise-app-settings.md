@@ -2,13 +2,13 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Get the database connection string
 
-1. Paste the following code into the Sandbox on the right and press enter.
+1. Paste the following code into Azure Cloud Shell on the right, and press <kbd>Enter</kbd>.
 
    ```bash
    cd mslearn-build-api-azure-functions/DB_SETUP && ./GET_CONNECTION_STRING.sh
    ```
 
-1. Copy the database connection string that is returned in the terminal.
+1. Copy the database connection string that is returned in Cloud Shell.
 
 ## Add connection string to local settings
 
@@ -29,9 +29,9 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Examine the productsService for the connection string
 
-1.  Open the "api/services/productsService.ts" file.
+Open the `api/services/productsService.ts` file.
 
-1.  Look at line 3. Notice that the connection string is read from the `process.env` variable.
+Look at line 3. Notice that the connection string is read from the `process.env` variable.
 
     ```typescript
     const CONNECTION_STRING = process.env.CONNECTION_STRING;
@@ -39,14 +39,14 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 ## Test out the GetProducts endpoint from Visual Studio Code
 
-1. To start the project, press F5.
+1. To start the project, press <kbd>F5</kbd>.
 
-1. Navigate to the "/api/GetProducts" URL.
+1. Go to the */api/GetProducts* URL.
 
    ```http
    http://localhost:7071/api/GetProducts
    ```
 
-1. Behold the products.
+Behold the products.
 
    :::image type="content" source="../media/all-products.png" alt-text="Screenshot of a web browser displaying items in the products collection displayed is JSON format." loc-scope="other"::: <!-- no-loc -->

@@ -1,4 +1,4 @@
-In this unit, you use Azure Cloud Shell to format your PowerShell output. Azure Cloud Shell is a shell that you can access through the Azure portal or the [Azure Cloud Shell](https://shell.azure.com) site. You don't have to install anything on your PC or laptop to use it.
+In this unit, you use Azure Cloud Shell to format your PowerShell output. Azure Cloud Shell is a shell that you can access through the Azure portal. You don't have to install anything on your PC or laptop to use it.
 
 ## Compare formatting approaches
 
