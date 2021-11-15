@@ -1,6 +1,6 @@
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/azure-sample-firewall-configuration-2762a7f8.png" alt-text="Diagram of sample firewall configuration":::
+:::image type="content" source="../media/azure-sample-firewall-configuration-2762a7f8.png" alt-text="Diagram of sample firewall configuration":::
 
 
 ## Azure Firewall features

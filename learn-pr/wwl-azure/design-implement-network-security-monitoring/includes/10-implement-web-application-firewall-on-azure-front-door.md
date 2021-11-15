@@ -1,6 +1,6 @@
 Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/waf-overview-3bcd34eb.png" alt-text="WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises":::
+:::image type="content" source="../media/waf-overview-3bcd34eb.png" alt-text="WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises":::
 
 
 Preventing such attacks in application code is challenging. It can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps make security management much simpler. A WAF also gives application administrators better assurance of protection against threats and intrusions.
@@ -11,7 +11,7 @@ A WAF solution can react to a security threat faster by centrally patching a kno
 
 When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode. In Detection mode, WAF does not block any requests; instead, requests matching the WAF rules are logged at WAF logs. To see WAF in action, you can change the mode settings from Detection to Prevention. In Prevention mode, requests that match rules that are defined in Default Rule Set (DRS) are blocked and logged at WAF logs.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/waf-policy-modes-4a04568d.png" alt-text="WAF policy modes":::
+:::image type="content" source="../media/waf-policy-modes-4a04568d.png" alt-text="WAF policy modes":::
 
 
 ## Web Application Firewall Default Rule Set rule groups and rules
@@ -36,7 +36,7 @@ Azure-managed Default Rule Set is enabled by default. The current default versio
 
 To disable an individual rule, select the checkbox in front of the rule number, and select **Disable** at the top of the page. To change action types for individual rules within the rule set, select the checkbox in front of the rule number, and then select **Change action** at the top of the page.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/waf-policy-managed-rules-32844b21.png" alt-text="WAF policy managed rules":::
+:::image type="content" source="../media/waf-policy-managed-rules-32844b21.png" alt-text="WAF policy managed rules":::
 
 
 ### Custom rules
@@ -45,12 +45,12 @@ Azure WAF with Front Door allows you to control access to your web applications 
 
 When creating a WAF policy, you can create a custom rule by selecting **Add custom rule** under the **Custom rules** section. This launches the custom rule configuration page.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/waf-policy-custom-rules-1-b9339192.png" alt-text="WAF policy add custom rule":::
+:::image type="content" source="../media/waf-policy-custom-rules-1-b9339192.png" alt-text="WAF policy add custom rule":::
 
 
 The example screenshot below shows the configuration of a custom rule to block a request if the query string contains **blockme**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/waf-policy-custom-rules-2-2e6e0ef2.png" alt-text="WAF policy custom rule configuration":::
+:::image type="content" source="../media/waf-policy-custom-rules-2-2e6e0ef2.png" alt-text="WAF policy custom rule configuration":::
 
 
 ## Create a Web Application Firewall policy on Azure Front Door

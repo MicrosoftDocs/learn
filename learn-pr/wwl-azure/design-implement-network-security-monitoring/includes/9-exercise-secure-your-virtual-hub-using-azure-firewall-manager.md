@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will create the spoke virtual network and create a secured virtual hub, then you will connect the hub and spoke virtual networks and route traffic to your hub. Next you will deploy the workload servers, then create a firewall policy and secure your hub, and finally you will test the firewall.
 
@@ -60,17 +61,19 @@ In this task you will create your secured virtual hub using Firewall Manager.
 8.  For **Hub address space**, enter **10.2.0.0/16**.
 9.  Choose **New vWAN**.
 10. In **Virtual WAN Name**, enter **Vwan-01**.
-11. Click **Next: Azure Firewall**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-new-secured-virtual-hub-1-9a979035.png" alt-text="Create new secured virtual hub - Basics tab":::
+11. Click **Next: Azure Firewall**. 
+
+    :::image type="content" source="../media/create-new-secured-virtual-hub-1-9a979035.png" alt-text="Create new secured virtual hub - Basics tab":::
     
 12. Click **Next: Security Partner Provider**.
 13. Click **Next: Review + create.**
 14. Click **Create**.
 
-\[!NOTE\]
+    > [!NOTE]
+    > 
+    > This can take up to 30 minutes to deploy.
 
-This can take up to 30 minutes to deploy.
-
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-new-secured-virtual-hub-2-b3f0cf62.png":::
+    :::image type="content" source="../media/create-new-secured-virtual-hub-2-b3f0cf62.png" alt-text="Create new secured virtual hub - Review and Create":::
 
 
 15. When the deployment completes, from the Azure portal home page, click **All services**.
@@ -92,11 +95,13 @@ In this task you will connect the hub and spoke virtual networks. This is common
 6.  For **Hubs**, select **Hub-01**.
 7.  For **Resource group**, select **fw-manager-rg**.
 8.  For **Virtual network**, select **Spoke-01**.
-9.  Click **Create**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/connect-hub-spoke-vnet-1-85529cd6.png" alt-text="Add hub and spoke connection to virtual WAN - Spoke 1":::
+9.  Click **Create**. 
+
+    :::image type="content" source="../media/connect-hub-spoke-vnet-1-85529cd6.png" alt-text="Add hub and spoke connection to virtual WAN - Spoke 1":::
     
 10. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connect-hub-spoke-vnet-2-ad34d7cf.png" alt-text="Add hub and spoke connection to virtual WAN - Spoke 2":::
+    :::image type="content" source="../media/connect-hub-spoke-vnet-2-ad34d7cf.png" alt-text="Add hub and spoke connection to virtual WAN - Spoke 2":::
 
 
 ## Task 4: Deploy the servers
@@ -231,7 +236,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 20. For **Destination**, enter \***.microsoft.com**.
 21. Click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-rule-collection-firewall-policy-1-b111c43e.png" alt-text="Add application rule collection to firewall policy":::
+    :::image type="content" source="../media/add-rule-collection-firewall-policy-1-b111c43e.png" alt-text="Add application rule collection to firewall policy":::
 
 
 22. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, click **Add a rule collection**.
@@ -262,7 +267,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 47. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.1.4**).
 48. Click **Add**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/list-rule-collections-firewall-policy-c926fb02.png" alt-text="List rule collections in the firewall policy":::
+    :::image type="content" source="../media/list-rule-collections-firewall-policy-c926fb02.png" alt-text="List rule collections in the firewall policy":::
 
 
 49. You should now have 3 rule collections listed.
@@ -283,7 +288,7 @@ In this task you will associate the firewall policy with the virtual hub.
 6.  Click **Add**.
 7.  When the policy has been attached, click **Refresh**. The association should be displayed.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/associate-firewall-policy-with-hub-end-1e7d7307.png" alt-text="Show associated firewall policy on hub":::
+:::image type="content" source="../media/associate-firewall-policy-with-hub-end-1e7d7307.png" alt-text="Show associated firewall policy on hub":::
 
 
 ## Task 7: Route traffic to your hub
@@ -340,7 +345,8 @@ In this task you will test the network rule to confirm that it works as expected
 
 ## Task 10: Clean up resources
 
-\[!NOTE\] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE]
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
@@ -350,4 +356,5 @@ In this task you will test the network rule to confirm that it works as expected
     
     ```
 
-\[!NOTE\] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE]
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

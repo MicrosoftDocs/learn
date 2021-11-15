@@ -29,7 +29,7 @@ Azure creates the following default rules in each network security group that yo
 
 The following diagram and bullet points illustrate different scenarios for how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-security-group-interaction-92030446.png" alt-text="Network security group example setup":::
+:::image type="content" source="../media/network-security-group-interaction-92030446.png" alt-text="Network security group example setup":::
 
 
 For **inbound traffic** Azure processes the rules in a network security group associated to a subnet first, if there is one, and then the rules in a network security group associated to the network interface, if there is one.
