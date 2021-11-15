@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-setup.exercise-set-up-azure-sphere
-title: Exercise - Installing the Azure Sphere development software on your computer
+title: Exercise - Install the Azure Sphere development software on your computer
 metadata:
-  title: Exercise - Installing the Azure Sphere development software on your computer
+  title: Exercise - Install the Azure Sphere development software on your computer
   description: In this exercise, you'll install the Azure Sphere development software on your computer.
   ms.date: 10/01/2021
   author: gloveboxes

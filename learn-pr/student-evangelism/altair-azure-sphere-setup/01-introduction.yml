@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-setup.introduction
-title: Introduction to the hardware options and installing Azure Sphere development software
+title: Introduction
 metadata:
-  title: Introduction to the hardware options and installing Azure Sphere development software
-  description: Introduction to the Altair emulator hardware options and setting Azure Sphere development software.
+  title: Introduction
+  description: Introduction to the Altair emulator hardware options and installing Azure Sphere development software.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: dglover
