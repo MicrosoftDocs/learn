@@ -128,7 +128,7 @@ Sometimes you might want to control how resources are created and in what order.
 
 You might want to ensure that a set of resources created by the `copy` construct is all being created before something else. If that's the case, you need to express this situation. Remember that what comes into play here is the deployment mode that Resource Manager uses. There are two modes supported:
 
-- **Serial**. Setting a resource to this deployment mode means it will be created one after another. In this mode, you're also expected to set the `batchSize` property to determine how many resources are deployed by using this mode. A new batch can't be started before a preview one has completed. You might want to limit things in this way in a production environment, for example, where it might be important to limit the number of affected resources at any one point.
+- **Serial**. Setting a resource to this deployment mode means it will be created one after another. In this mode, you're also expected to set the `batchSize` property to determine how many resources are deployed by using this mode. A new batch can't be started before a previous one has completed. You might want to limit things in this way in a production environment, for example, where it might be important to limit the number of affected resources at any one point.
 - **Parallel**. This mode is the default deployment mode. The advantage is high throughput, so the template is processed faster. The drawbacks are that you can't guarantee order, and it might not be what you want for a production environment.
 
 ### Dependencies
