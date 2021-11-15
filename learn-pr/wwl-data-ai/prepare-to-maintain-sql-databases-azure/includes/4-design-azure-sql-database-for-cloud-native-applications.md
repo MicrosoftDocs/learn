@@ -40,7 +40,7 @@ The auto-pause delay feature allows you to define the period of time the databas
 
 The resume operation is triggered when the next attempt to access the database occurs, and only storage charges are applicable when the database is paused.
 
-> [![Serverless SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
+> [![Serverless SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_02.png)](../media/../media/prepare_to_maintain_sql_databases_azure_02.png#lightbox)
 
 The image above shows where you can change the autoscaling and auto-pause properties for serverless compute tier.
 
@@ -56,7 +56,7 @@ Single database is the simplest deployment model of Azure SQL Database. You mana
 
 You can monitor database resources utilization through Azure portal. This feature allows you to easily identify how the database is performing, as shown in the image below:
 
-> [![SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_01.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
+> [![SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_01.png)](../media/../media/prepare_to_maintain_sql_databases_azure_01.png#lightbox)
 
 ### Elastic pool
 
