@@ -102,7 +102,7 @@ Execute the instruction:
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo that shows the Altair front panel." border="false":::
+:::image type="content" source="../media/altair-front-panel.jpg" alt-text="Photo that shows the Altair front panel." border="false":::
 
 ### Loading an Intel 8080 opcode by using the Altair front panel
 
