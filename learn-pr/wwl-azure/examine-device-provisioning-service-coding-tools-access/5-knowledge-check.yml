@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/13/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following Azure CLI commands is used create an instance of the IoT Hub Device Provisioning Service?"
+  - content: "Which of the following Azure CLI commands is used to create an instance of the IoT Hub Device Provisioning Service?"
     choices:
     - content: "az dps create -name MyDps --resource-group MyResourceGroup --location westus2"
       isCorrect: false
@@ -27,15 +27,15 @@ quiz:
       explanation: "Incorrect. The command parameter \"iotdps\" is not valid."
     - content: "az iot dps create -name MyDps --resource-group MyResourceGroup"
       isCorrect: true
-      explanation: "Correct. This command will create a DPS resource named MyDps in the resource group named MyResourceGroup."
+      explanation: "Correct. This command will create a Device Provisioning Service resource named MyDps in the resource group named MyResourceGroup."
   - content: "Which of the following answers is true about the IoT Hub Device Provisioning Service SDKs?"
     choices:
     - content: "The Device Provisioning Service SDKs provide support for the following programming languages: C, Java, Python, Go, Swift"
       isCorrect: false
-      explanation: "Incorrect. The SDKs support development in C and in modern managed languages including in C#, Node.JS, Python, and Java."
+      explanation: "Incorrect. The SDKs support development in C and in managed languages, including in C#, Node.JS, Python, and Java."
     - content: "The Device Provisioning Service SDKs provide support for managing the provisioning service and for managing device provisioning."
       isCorrect: true
       explanation: "Correct. The SDKs help you manage the service and the provisioning process."
-    - content: "The Device Provisioning Service SDKs provide support for enrollments using X.509 certificates but do not support TPM."
+    - content: "The Device Provisioning Service SDKs provide support for enrollments using X.509 certificates but do not support Trusted Platform Module (TPM)."
       isCorrect: false
       explanation: "Incorrect. The SDKs provide support for enrollments using X.509 certificates and they support TPM."
