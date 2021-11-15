@@ -1,21 +1,11 @@
-In Microsoft Power Apps, users can plan and build a business application using components rather than writing code in a traditional programming language like C#. They can design applications by dragging and dropping components into a canvas, just as they would design a slide in PowerPoint. Indicating logic and working with data can be achieved through Excel-like experience. Users can create apps that combine business data from several Microsoft and third-party sources. They are allowed to share the app so that users can run it in a browser or on a mobile device, and embed the app so they can run it in SharePoint, Power BI, or Teams.
+To enable numerous 3D and MR scenarios, you can add several Mixed Reality (MR) components to your canvas app. Components are collections of controls that can be used to address specific requirements. You can, for example, use these MR components to:
 
-## Controls and properties in canvas apps
+* View and manipulate 3D content.
+* Overlay 3D content and 2D images onto the feed from the camera.
+* Measure distance, area, and volume using your device with MR.
+* Identify spaces in the real world through an MR overlay.
 
-* **Buttons** - Associate with the application by clicking or tapping.
-* **Gallery** - Show a list of records that contain different sorts of data.
-* **Drop down** - Shows the first item in a rundown until a chevron is selected.
-* **Image** -  Show a picture from, for instance, a file or a data source.
-* **Camera** -  Take and save photographs in the app or to a data source.
-
-## Gallery control
-
-A **Gallery** control can display multiple records from a data source, and each record can contain multiple types of data. For example, you can use **Gallery** control to show multiple products. Each item shows product details that include a name, an image, price, and, so on for each product.
-
-Each data field is displayed in a separate control within the Gallery control. And you can configure these controls in your template. Any changes you make to the template will be reflected throughout the gallery control. Predefined templates are available for displaying images and text in a gallery and a gallery for items with varying heights.
-
-> [!Important]
-> If a user scrolls the **Flexible height** gallery control before all items are loaded, the item that's currently in view may be pushed down and out of view when the data loading is finished. To avoid this issue, use a standard **Gallery** control instead of the **Flexible height** variant.
+We will incorporate some of the above Mixed Reality features in our **Easy Sales** application.
 
 ## View in MR
 

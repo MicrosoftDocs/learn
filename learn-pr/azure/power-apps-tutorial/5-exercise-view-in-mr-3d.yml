@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.5-exercise-view-in-mr
-title: Exercise - Gallery controls and View in MR 
+uid: learn.azure.power-apps-tutorial.5-exercise-view-in-mr-3d
+title: Exercise - View in MR and View in 3D
 metadata:
-  title:  Exercise - Gallery controls and View in MR 
+  title:  Exercise - View in MR and View in 3D 
   description: You'll be able to design the main pages of the application like splash screen, product page and so on.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-view-in-mr.md)]
+  [!include[](includes/5-exercise-view-in-mr-3d.md)]

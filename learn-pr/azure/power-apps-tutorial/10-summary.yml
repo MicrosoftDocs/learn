@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.9-summary
+uid: learn.azure.power-apps-tutorial.10-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/10-summary.md)]

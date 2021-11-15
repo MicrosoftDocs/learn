@@ -1,212 +1,28 @@
-Let's start building *Easy Sales* application based on the SharePoint data, and then add data from other sources if wanted. By following this procedure, you'll be able to design some of the main pages of the application. For example, you'll learn to design a splash screen, product page, notes page, and product details page. We'll also be accessing various data stored in the SharePoint list through Power Apps gallery control.
+*Easy-Sales* is a sales oriented Mixed Reality application built to improvise the shopping experience. The salespeople using this application can inspect and measure the customer's surrounding to check which products are feasible in the space. They can also help customers visualize the product through Mixed Reality.
 
-## Open a blank app
+Here we'll be implementing **View in 3D** and **View in MR** features of Power Apps to visualize products accurately.
 
-1. Go to the **Power Apps** home page. Then, under **Make your own app**, select **Canvas app from blank** to create a canvas application.
+## Insert 3D objects to the SharePoint list
 
-    :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
+The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the required resources in the **SharePoint** list.
 
-2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then click **Create**.
+1. In the created **SharePoint** list named **Easy Sales**, select the **+ Add column** and select **Show/hide columns**.
 
-    :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
+    :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-    Power Apps Studio creates a blank app for phones.
-    >[!Note]
-    > You can design an app from scratch for phones or other devices (such as tablets). This topic focuses on designing an app for phones.
+2. Make sure **Attachments** be selected and press **Apply** at the top.
 
-3. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip**.
+    :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
-    :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
+3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file) given in the **Power Apps custom folder**. Follow the same procedure for all the items on the list.
 
-## Connect to data
+    :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-To include data to your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in a **SharePoint** list, we will select **SharePoint** as one of the connectors.
+4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
 
-1. To the **Power Apps Studio**'s left, click the **Data** option.
+    :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
 
-2. On opening the **Data** pane, click the **Add data** button to connect to the data.
-
-3. In the **Select a data source** window, expand the **Connectors** section and select the **SharePoint** option.
-
-    :::image type="content" source="../media/share-point-connectors.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/share-point-connectors.png":::
-
-4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application. Select the **SharePoint site**, created under the name *Easy Sales*.
-
-    :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
-
-5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list= created concerning the application and click **Connect**.
-
-    :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting the list." lightbox="../media/select-lists.png":::
-
-6. All the required data is connected and ready to use in the application. You can now start building the application.
-
-## Create the splash screen
-
-1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
-
-    :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
-
-2. Rename the screen to **Splash screen** by clicking on the **Three dots** present beside the screen name and selecting the **Rename** option.
-
-    :::image type="content" source="../media/rename-splash-screen.png" alt-text="Screenshot of renaming the screen." lightbox="../media/rename-splash-screen.png":::
-
-3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
-
-4. Click the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file. Now, we will add the logo of our application **Easy Sales** to the splash screen.
-
-    :::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
-
-5. Set the image position to **Fit** to have the entire image into the specified size. The **Fit** option scales the image proportionally and doesn't crop the image.
-
-    :::image type="content" source="../media/add-easy-sales-logo.png" alt-text="Screenshot of adding Easy Sales logo to the splash screen." lightbox="../media/add-easy-sales-logo.png":::
-
-6. On the **Insert** tab, Expand the **Input** dropdown and select **Timer**. Then, drag the button on the screen and place it where ever required.
-
-    :::image type="content" source="../media/add-timer.png" alt-text="Screenshot of adding the timer." lightbox="../media/add-timer.png":::
-
-7. To edit some of the timer properties, you can either use the **Property** dropdown at the top-left corner or use the **Properties** pane. Set the following properties as given below:
-
-    * **AutoStart** - true
-    * **Duration** - 2000
-    * **Visible** - false
-
-    :::image type="content" source="../media/update-properties-timer.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/update-properties-timer.png":::
-
-    >[!Note]
-    > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
-
-8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
-
-    ```PowerApps
-    Navigate('Home Page',ScreenTransition.Fade)
-    ```
-
-    :::image type="content" source="../media/configure-on-timer-end.png" alt-text="Screenshot of configuring OnTimerEnd property." lightbox="../media/configure-on-timer-end.png":::
-
-9. Save your application by navigating to **File** > **Save**. Next, select the **The cloud** option and click **Save**.
-
-## Create the home page
-
-1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
-
-    :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
-
-2. Change the display text of the buttons to indicate product categories like **Sofas, Chairs, Tables, and Carpets**.
-
-    :::image type="content" source="../media/edit-display-text-1.png" alt-text="Screenshot of editing display text." lightbox="../media/edit-display-text-1.png":::
-
-3. We will use these buttons to navigate to the list of products under various categories. To do so, we need to filter out the products from the SharePoint list based on **Product Category**. So, first, create two new **Blank** screen and rename it as **Products** and **Carpets**.
-
-    :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
-
-4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
-
-    ```PowerApps
-    Navigate(Products,ScreenTransition.Cover, {ID:1});
-    ```
-
-    :::image type="content" source="../media/navigate-sofas-page.png" alt-text="Screenshot of navigation of sofas page" lightbox="../media/navigate-sofas-page.png":::
-
-    >[!Note]
-    > The **ID** is a context variable with some assigned value. This value is passed on to the destination page mentioned in the **Navigate** function. The value assigned to the variable filters out the products based on **Product Category**.
-
-5. Repeat the same procedure for the other three buttons. Again, make sure to provide proper screen names in the **Navigate** function; for example, for configuring the **OnSelect** property of the **Chairs**, **Tables**, and **Carpets** button, use the following navigate function respectively:
-
-    ```PowerApps
-    Navigate(Products,ScreenTransition.Cover, {ID:2});
-    ```
-
-    ```PowerApps
-    Navigate(Products,ScreenTransition.Cover, {ID:3});
-    ```
-
-    ```PowerApps
-    Navigate(Carpets,ScreenTransition.Cover)
-    ```
-
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
-
->[!Note]
-> The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
->
->* **Screen** - Required. The screen to display.
->* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
->* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
-
->[!Tip]
->You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
-
-## Use Gallery control
-
-Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
-
-1. In the **Products** screen; on the Insert tab, select **Gallery** > **Vertical** to add **Gallery control** to your screen.
-
-    :::image type="content" source="../media/select-vertical-gallery.png" alt-text="Screenshot of adding gallery" lightbox="../media/select-vertical-gallery.png":::
-
-2. Rename it to **Gallery_products**. On the **Properties** tab of the left-hand pane, configure the **Items** property as given below:
-
-    ```PowerApps
-    If(
-   ID = 1,
-   Filter('Easy Sales',(ProductCategory = "Sofa")),
-   ID = 2,
-   Filter('Easy Sales',(ProductCategory = "Chair")),
-   ID = 3,
-   Filter('Easy Sales',(ProductCategory = "Table")),
-   ID = 4,
-   Filter('Easy Sales',(ProductCategory = "Carpet")))
-   ```
-
-    :::image type="content" source="../media/configure-data-source.png" alt-text="Screenshot of connecting sharepoint" lightbox="../media/configure-data-source.png":::
-
-    We filter the **Products** stored in the **SharePoint** list based on the **Product Category**. The context variables are used for the filtering process.
-
-3. Configure the **Gallery** > **Fields** property in the **Properties** pane by clicking on **Edit**:
-    * Assign the **Price** to the **Subtitle1** heading.
-    * Assign the **Title** to the **Title1** heading.
-
-    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
-
-    On assigning the above fields, you'll observe data getting reflected in your **Gallery**
-
-4. Adjust the size of the **Gallery_products** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
-
-    ```PowerApps
-    ThisItem.ImageLink
-    ```
-
-    :::image type="content" source="../media/configure-image-property.png" alt-text="Screenshot of configuring image property - Sofas" lightbox="../media/configure-image-property.png":::
-
-5. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display as shown in the figure:
-
-    :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
-
-6. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
-
-    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
-
-7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following
-
-    ```PowerApps
-    Navigate('Home Page',ScreenTransition.Cover)
-    ```
-
-    :::image type="content" source="../media/configure-back-icon.png" alt-text="Screenshot of configuring OnSelect property " lightbox="../media/configure-back-icon.png":::
-
-8. Follow the same procedure for the **Carpets** page. Configure the **Items** property of the gallery added to **Carpets** page in the following way:
-
-    ```PowerApps
-    Filter('Easy Sales',ProductCategory = "Carpet")
-    ```
-
-    :::image type="content" source="../media/replicate-procedure.png" alt-text="Screenshot of following the same procedure for carpets page " lightbox="../media/replicate-procedure.png":::
-
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
-
-## Create details page
+## Create details page and add View in 3D component
 
 The details page includes all the details and information concerning the selected product. It gives you an understanding of certain features of the product. You have to connect the product page designed in the previous section and the details page created in this section. Here, you'll also be using the **View in 3D** component of Power Apps to add 3D content to your canvas app. You'll be able to rotate and zoom in on these 3D contents for a better view.
 
@@ -340,7 +156,7 @@ The details page includes all the details and information concerning the selecte
 >[!Note]
 > Avoid including **View in 3D** component to **Carpet_details** page as we do not use 3D models for the **Carpet** category.
 
-## Insert and connect a 3D object to the View in MR component
+## View in MR component
 
 **View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the required resources in the **SharePoint** list.
 

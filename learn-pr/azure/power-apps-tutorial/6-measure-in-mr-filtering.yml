@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.6-measure-in-mr
-title: Measure in MR and emailing in Power Apps
+uid: learn.azure.power-apps-tutorial.6-measure-in-mr-filtering
+title: Measure in MR and Filtering in Power Apps
 metadata:
-  title:  Measure in MR and emailing in Power Apps
+  title:  Measure in MR and Filtering in Power Apps
   description:  Measure in MR component allows the users to measure distance, area, and volume in the real world
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-measure-in-mr.md)]
+  [!include[](includes/6-measure-in-mr-filtering.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.7-exercise-measure-in-mr
-title: Exercise - Measure in MR and emailing in Power Apps 
+uid: learn.azure.power-apps-tutorial.7-exercise-measure-in-mr-filtering
+title: Exercise - Measure in MR and Filtering in Power Apps
 metadata:
-  title: Exercise - Measure in MR and emailing in Power Apps 
+  title: Exercise - Measure in MR and Filtering in Power Apps
   description: You build two-dimensional and three-dimensional polygons during measuring, which can be used to confirm how a specific-sized object would fit within a space. 
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-measure-in-mr.md)]
+  [!include[](includes/7-exercise-measure-in-mr-filtering.md)]

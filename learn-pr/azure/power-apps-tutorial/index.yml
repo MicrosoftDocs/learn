@@ -35,14 +35,15 @@ prerequisites: |
   
 units: 
 - learn.azure.power-apps-tutorial.1-introduction
-- learn.azure.power-apps-tutorial.2-add-data-source
-- learn.azure.power-apps-tutorial.3-exercise-add-data-source
-- learn.azure.power-apps-tutorial.4-view-in-mr
-- learn.azure.power-apps-tutorial.5-exercise-view-in-mr
-- learn.azure.power-apps-tutorial.6-measure-in-mr
-- learn.azure.power-apps-tutorial.7-exercise-measure-in-mr
-- learn.azure.power-apps-tutorial.8-knowledge-check
-- learn.azure.power-apps-tutorial.9-summary
+- learn.azure.power-apps-tutorial.2-add-data-source-gallery-controls
+- learn.azure.power-apps-tutorial.3-exercise-add-data-source-gallery-controls
+- learn.azure.power-apps-tutorial.4-view-in-mr-3d
+- learn.azure.power-apps-tutorial.5-exercise-view-in-mr-3d
+- learn.azure.power-apps-tutorial.6-measure-in-mr-filtering
+- learn.azure.power-apps-tutorial.7-exercise-measure-in-mr-filtering
+- learn.azure.power-apps-tutorial.8-exercise-design-additional-pages
+- learn.azure.power-apps-tutorial.9-knowledge-check
+- learn.azure.power-apps-tutorial.10-summary
 
 badge:
   uid: learn.azure.power-apps-tutorial.badge
