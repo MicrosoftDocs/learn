@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-device-templates
 metadata:
   title: Create and manage Device Templates
   description: "This module introduces you to the Device Template that is used design, deploy, and manage IoT devices, and examines the contents of the four components that are used create a Device Template."
-  ms.date: 11/12/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
