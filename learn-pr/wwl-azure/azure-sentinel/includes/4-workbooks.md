@@ -1,8 +1,7 @@
 
 After you connected your data sources to Azure Sentinel, you can monitor the data using the Azure Sentinel integration with Azure Monitor Workbooks, which provides versatility in creating custom workbooks. While Workbooks are displayed differently in Azure Sentinel, it may be useful for you to determine how to Create interactive reports with Azure Monitor Workbooks. Azure Sentinel allows you to create custom workbooks across your data, and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure Sentinel Workbooks](../media/az500-sentinel-workbooks.png)
+![Screenshot of the Azure Sentinel Workbooks](../media/az500-sentinel-workbooks.png)
 
 Workbooks combine text, Analytics queries, Azure Metrics, and parameters into rich interactive reports. Workbooks are editable by any other team members who have access to the same Azure resources.
 
