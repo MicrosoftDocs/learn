@@ -13,8 +13,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 * **LoadBalancer** - Creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers' traffic to reach the application, load balancing rules are created on the desired ports.
 * **ExternalName** - Creates a specific DNS entry for easier application access.
 
-> [!div class="mx-imgBorder"]
-> ![Internal traffic uses Cluster IP to access the pod. Incoming direct traffic uses NodePort. Incoming non-direct traffic uses the load balancer.](../media/az500-kubernetes-networking.png)
+![Internal traffic uses Cluster IP to access the pod. Incoming direct traffic uses NodePort. Incoming non-direct traffic uses the load balancer.](../media/az500-kubernetes-networking.png)
 
 
 When you run modern, microservices-based applications in Kubernetes, you often want to control which components can communicate with each other. The **principle of least privilege** should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. Let's say you likely want to block traffic directly to back-end applications. The _Network Policy_ feature in Kubernetes lets you define rules for ingress and egress traffic between pods in a cluster.

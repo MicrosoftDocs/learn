@@ -97,7 +97,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone pivot="vs-node"
 
 1. Copy the app.js code that you downloaded, into the app.js file of the project.
-1. Copy in the connection string, and the Azure Maps Key, into the locations marked in the code.
+1. Replace the strings in the code (`<your scope ID>`, `<your device ID>`, `<your primary key>`, and `<your Azure Maps key>`) with the ID and key strings you stored in your "Truck keys.txt" file.
 1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
