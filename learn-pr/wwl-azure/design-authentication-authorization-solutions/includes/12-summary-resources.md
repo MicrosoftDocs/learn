@@ -1,4 +1,4 @@
-In this module, you’ve learned how to design with governance in mind. You have learned different strategies for implementing an organizational hierarchy and enforcing rules and policies. You should now be able to:
+In this module, you’ve learned how to design with authentication and authorization in mind. You have learned different strategies for implementing identities and access for applications. You should now be able to:
 
 - Design for identity and access management.
 
@@ -14,7 +14,11 @@ In this module, you’ve learned how to design with governance in mind. You have
 
 - Design for access reviews.
 
-### Learn more with Azure documentation
+- Design for service principals for applications.
+
+- Design for Azure Key Vault.
+
+## Learn more with Azure documentation
 
 - [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/)
 
@@ -30,7 +34,7 @@ In this module, you’ve learned how to design with governance in mind. You have
 
 - [What are access reviews? - Azure Active Directory](/azure/active-directory/governance/access-reviews-overview)
 
-### Learn more with self-paced training
+## Learn more with self-paced training
 
 - [Plan, implement, and administer conditional access - Learn | Microsoft Docs](/learn/modules/plan-implement-administer-conditional-access/)
 

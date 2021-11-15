@@ -9,6 +9,8 @@ In this module, you learned how to:
 
 If you used a trial subscription in the IoT Central app, your work is deleted automatically when the trial ends.
 
+If you created a new Azure Maps account for this module, you will need to clean up your account by deleting the resource. If you created a new resource group for your Azure Maps account, then you need to delete the resource group, and this will automatically delete the Azure Maps account.
+
 ## Next steps
 
 To work more with Azure Maps, see [Create your first route-finding app by using Azure Maps](/learn/modules/create-your-first-app-with-azure-maps?azure-portal=true).

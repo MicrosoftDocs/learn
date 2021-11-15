@@ -48,13 +48,13 @@ Next, use Swagger to ensure that you have a self-documenting API, where the docs
 1. Install the Swashbuckle package:
 
     ```bash
-    dotnet add package Swashbuckle.AspNetCore --version 6.1.4
+    dotnet add package Swashbuckle.AspNetCore --version 6.2.3
     ```
 
     Verify the install by opening up _PizzaStore.csproj_, you should have an entry that looks like so:
 
     ```xml
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     ```
 
    Next, configure your project to use Swagger. 
