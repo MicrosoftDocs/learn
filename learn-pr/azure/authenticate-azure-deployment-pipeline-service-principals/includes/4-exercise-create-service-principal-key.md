@@ -27,8 +27,6 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
-
 ### Sign in to Azure by using the Azure CLI
 
 1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
@@ -56,8 +54,6 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
     :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting your preferred terminal shell." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with **pwsh** or **PowerShell** as the shell.
-
-[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
