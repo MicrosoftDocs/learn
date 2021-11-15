@@ -22,7 +22,6 @@ prerequisites: |
   - Working experience with designing highly available architectures.
   - Conceptual knowledge of high availability for applications, databases, and compute resources.
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:
