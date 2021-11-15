@@ -1,17 +1,19 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-crawl
+uid: learn.bicep-fundamentals
 metadata:
-  title: Bicep - crawl
-  description: Learn how Bicep enables you to manage both basic and complex infrastructure deployments on Azure.
+  title: Fundamentals of Bicep
+  description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
   brand: azure
   ms.date: 10/26/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Bicep - crawl
+title: Fundamentals of Bicep
 summary: |
-  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
+  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
 
   If you're familiar with the JSON syntax for writing Azure Resource Manager templates (ARM templates), you'll find that Bicep 
   provides a more concise syntax and improved type safety. In fact, Bicep files compile to standard ARM templates.
@@ -25,24 +27,23 @@ summary: |
 
   Each module in this learning path provides options for use with the Azure CLI and with Azure PowerShell. You'll use Visual Studio Code to write and validate your Bicep code.
 
-  To learn about Bicep, we recommend you take these two learning paths:
+  To learn about Bicep, we recommend you take these three learning paths:
 
   :::row:::
   :::column:::
     <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
 
-    [Part 1: Bicep - crawl](xref:learn.bicep-crawl)
+    [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
   :::column-end:::
   :::column:::
     [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
-    [Part 2: Bicep - walk](xref:learn.bicep-walk)
+    [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
   :::column-end:::
-
   :::column:::
     <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
 
-    [Part 3: Bicep - run](xref:learn.bicep-run)
+    [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
   :::column-end:::
   :::row-end:::
 

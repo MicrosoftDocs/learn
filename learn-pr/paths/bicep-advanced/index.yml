@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-walk
+uid: learn.bicep-advanced
 metadata:
-  title: Bicep - walk
+  title: Advanced Bicep
   description: Learn how to use Bicep and Azure features to improve your collaboration and quality of your infrastructure deployments.
   brand: azure
   ms.date: 10/26/2021
@@ -9,9 +9,13 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Bicep - walk
+title: Advanced Bicep
 summary: |
-  TODO
+  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Take this learning path to deepen your understanding of how to use Bicep to deploy your Azure resources. In it, you'll:
 
   * Deploy advanced Azure resource types, including child and extension resources.
   * Deploy resources at the subscription, management group, and tenant level.
@@ -23,18 +27,17 @@ summary: |
   :::column:::
     <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
 
-    [Part 1: Bicep - crawl](xref:learn.bicep-crawl)
+    [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
+  :::column-end:::
+  :::column:::
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
+
+    [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
 
-    [Part 2: Bicep - walk](xref:learn.bicep-walk)
-  :::column-end:::
-
-  :::column:::
-    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
-
-    [Part 3: Bicep - run](xref:learn.bicep-run)
+    [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
   :::column-end:::
   :::row-end:::
 
