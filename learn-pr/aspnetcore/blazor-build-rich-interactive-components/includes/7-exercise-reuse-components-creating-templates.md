@@ -173,7 +173,7 @@ In this exercise, you'll use Blazor templates to create a tab page and improve t
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or, in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/7-new-order-history-page.png" alt-text="Screenshot of the new order history page":::
+    :::image type="content" source="../media/7-new-order-history-page.png" alt-text="Screenshot of the new order history page.":::
 
     Run your updated app and select **My Orders**. You'll see a list of any past orders you've made. Select the date on the left to load the order details tab component.
 

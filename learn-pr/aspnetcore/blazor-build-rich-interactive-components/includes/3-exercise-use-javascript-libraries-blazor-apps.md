@@ -64,7 +64,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-confirm-remove-dialog.png" alt-text="Screenshow of the default JavaScript confirm dialog.":::
+    :::image type="content" source="../media/3-confirm-remove-dialog.png" alt-text="Screenshot of the default JavaScript confirm dialog.":::
 
     Try configuring some pizzas and adding them to your order. With a few pizzas in your order, select the **X**. A standard JavaScript confirm dialog lets you select **Cancel** or **OK**.
 

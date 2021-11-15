@@ -44,7 +44,7 @@ To use this template, a Razor page creates a \<HeadingComponent\> element and sp
 
 The *testpage* page looks like this when it's rendered:
 
-:::image type="content" source="../media/6-simple-testpage.png" alt-text="The *testpage* page rendered by using the template component":::
+:::image type="content" source="../media/6-simple-testpage.png" alt-text="The *testpage* page rendered by using the template component.":::
 
 The name *ChildContent* is the default name for a *RenderFragment* parameter. You can give the parameter a different name, but you must specify this name when the test page applies the template. As an example, the template below uses the name *BodyContent*:
 
@@ -194,7 +194,7 @@ The Razor page connects to the Weather Service and populates the *forecasts* arr
 
 When the *testpage* page is rendered, it looks like this:
 
-:::image type="content" source="../media/6-list-testpage.png" alt-text="The testpage page, showing the forecast data rendered by using the ObjectDataList template component":::
+:::image type="content" source="../media/6-list-testpage.png" alt-text="The testpage page, showing the forecast data rendered by using the ObjectDataList template component.":::
 
 ## Compose templates
 
@@ -310,7 +310,7 @@ To use these templates on a Razor page, add a \<VerticalTab\> element that conta
         <p>Text</p>
     </TabPage>
     <TabPage Title="Tab 2">
-        <h1>Content for tab 2</h1>:::image type="content" source="../media/6-weather-forecast-tabs.png" alt-text="":::
+        <h1>Content for tab 2</h1>
         <p>Rhubarb</p>
         <p>Custard</p>
     </TabPage>
@@ -324,7 +324,7 @@ To use these templates on a Razor page, add a \<VerticalTab\> element that conta
 
 The image below shows this page running. The user has selected the second tab.
 
-:::image type="content" source="../media/6-vertical-tab.png" alt-text="The test page  showing the vertical tab component with test data":::
+:::image type="content" source="../media/6-vertical-tab.png" alt-text="The test page showing the vertical tab component with test data.":::
 
 You can utilize these templates with the *ObjectDataList* template you saw earlier. This gives you another way to display weather forecast data, with the information for each day shown on a separate tab:
 
@@ -358,4 +358,4 @@ You can utilize these templates with the *ObjectDataList* template you saw earli
 }
 ```
 
-:::image type="content" source="../media/6-weather-forecast-tabs.png" alt-text="Thw weather forecast data displayed using the vertical tab template":::
+:::image type="content" source="../media/6-weather-forecast-tabs.png" alt-text="Thw weather forecast data displayed using the vertical tab template.":::
