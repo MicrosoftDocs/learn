@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-pages-routing-layouts-improve-blazor-navigation.explore-route-parameters-effect-apps-routing
-title: Explore how route parameters effect your Blazor app's routing
+title: Explore how route parameters affect your Blazor app's routing
 metadata:
   unitType: learning-content
-  title: Explore how route parameters effect your Blazor app's routing
+  title: Explore how route parameters affect your Blazor app's routing
   description: "Learn how route requests to the right component in a Blazor app and find information about the current web page."
   ms.date: 8/24/2021
   author: csharpfritz
