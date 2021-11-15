@@ -27,3 +27,14 @@ quiz:
     - content: "ValidationSummary"
       isCorrect: true
       explanation: "This component displays a summary of all the validation messages in a submitted form"
+  - content: "Which of these is NOT a standard input elements that comes with Blazor?"
+    choices:
+    - content: "Guid"
+      isCorrect: true
+      explanation: "Guid is not part of the standard input elements provided by Blazor"
+    - content: "CreditCard"
+      isCorrect: false
+      explanation: "CreditCard is one of the standard input elements provided by Blazor"
+    - content: "EmailAddress"
+      isCorrect: false
+      explanation: "EmailAddress is one of the standard input elements provided by Blazor"

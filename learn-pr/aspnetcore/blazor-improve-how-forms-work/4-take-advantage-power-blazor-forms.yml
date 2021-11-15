@@ -27,3 +27,14 @@ quiz:
     - content: "OnFailedSubmit"
       isCorrect: false
       explanation: "'Failed' is not part of the event name that is raised"
+  - content: "An EditForm has the following features EXCEPT:"
+    choices:
+    - content: "Data Binding"
+      isCorrect: false
+      explanation: "The EditForm can be associated with an object and then acts like a view of the object for data entry purposes"
+    - content: "Data cleansing"
+      isCorrect: true
+      explanation: "While you can edit the content of an EditForm, it does not perform data cleansing operations on its own"
+    - content: "Validation"
+      isCorrect: false
+      explanation: "An EditForm extensive and extensible validation capabilities"

@@ -27,3 +27,14 @@ quiz:
     - content: "Parameter"
       isCorrect: false
       explanation: "Parameters are used to pass data between Blazor components, not methods or events"
+  - content: "What method is used to override the default action in an HTML DOM element?"
+    choices:
+    - content: "preventDefault"
+      isCorrect: true
+      explanation: "preventDefault prevents the default action in the DOM element from executing"
+    - content: "return false"
+      isCorrect: false
+      explanation: "return false was a technique to stop an event in other JavaScript frameworks, but does not prevent the default action"
+    - content: "throw new Exception()"
+      isCorrect: false
+      explanation: "Throwing an exception may stop the default action from executing, but it also raises an error that you might not want your application users to interact with"
