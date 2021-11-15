@@ -28,7 +28,7 @@ For the best experience and most recent security and bug fixes, we recommend kee
 
 ## Beginning using Azure services
 
-As a foundation for managing Azure Arc-enabled servers, we recommend organizing machines with tags, connecting to Log Analytics workspaces, and assigning Azure Policies. With the right observability and governance in place, you'll be able to more easily use other Azure services like Microsoft Defender for Cloud, Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Automanage.   
+As a foundation for managing Azure Arc-enabled servers, we recommend organizing machines with tags, connecting to Log Analytics workspaces, and assigning Azure Policies. With the right observability and governance in place, you'll be able to more easily use other Azure services like Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Automanage.
 
 | Recommendation | Description |
 |---|---|

@@ -1,10 +1,9 @@
 
-
-To address the unique security challenges that a hybrid environment presents, such as rapidly changing services, sophisticated attacks, and increased workload, Contoso IT staff need tools to help assess their security posture and identify risks. Ideally, they want to deploy those tools with minimal effort. Azure's Defender for Cloud can help them meet all these requirements.
+To address the unique security challenges that a hybrid environment presents, such as rapidly changing services, sophisticated attacks, and increased workload, Contoso IT staff need tools to help assess their security posture and identify risks. Ideally, they want to deploy those tools with minimal effort. Microsoft Defender for Cloud can help them meet all these requirements.
 
 ## What is Microsoft Defender for Cloud
 
-*Defender for Cloud* is a cloud-based tool for managing the security of your cloud and on-premises infrastructure. With Defender for Cloud capabilities, you can:
+*Microsoft Defender for Cloud* is a cloud-based tool for managing the security of your cloud and on-premises infrastructure. With Defender for Cloud capabilities, you can:
 
 - Improve your security position. Use Defender for Cloud to implement security best practices across your IaaS, platform as a service (PaaS), data, and on-premises resources. In addition to security best practices, you can also track compliance against regulatory standards.
 - Protect your environment. Monitor for security threats to your cloud and on-premises servers, including identifying misconfigurations and providing server Endpoint Detection and Response (EDR) with Microsoft Defender Advanced Threat Protection (ATP).

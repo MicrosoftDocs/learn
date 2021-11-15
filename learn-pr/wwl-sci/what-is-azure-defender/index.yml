@@ -13,7 +13,7 @@ summary: Learn the purpose of Microsoft Defender for Cloud and how to enable it
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe Microsoft Defender for Cloud features
-  - Explain Microsoft Defender for Cloud features
+  - Explain the enhanced security features of Microsoft Defender for Cloud
   - Enable Microsoft Defender for Cloud
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.

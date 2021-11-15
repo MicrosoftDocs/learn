@@ -4,7 +4,7 @@ Other uses of the term hunting include searching for threats with newly obtained
 
 All of these approaches have one thing in common: using KQL queries to find threats.
 
-Microsoft Defender for Cloud and Microsoft Defender for Cloud Endpoint are more focused on indicator and analysis types of hunting. Microsoft Sentinel provides more features to manage the threat hunting process.
+Microsoft Defender for Cloud and Microsoft Defender for Endpoint are more focused on indicator and analysis types of hunting. Microsoft Sentinel provides more features to manage the threat hunting process.
 
 ## Proactive hunts
 

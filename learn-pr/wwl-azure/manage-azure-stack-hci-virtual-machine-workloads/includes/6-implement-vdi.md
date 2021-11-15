@@ -28,7 +28,7 @@ At a high level, deployment of an RDS-based VDI environment on Azure Stack HCI i
 1. Create desktop collections that will contain the VMs you intend to make available to VDI users. In general, RDS supports four types of collections:
 
     - **Managed pooled**. Consists of VMs created by using a generalized image. Individual VMs are assigned automatically to individual users as they connect to the RDS deployment. After users terminate their desktop sessions, VMs are automatically reset to their original state and returned to the pool.
-    - **Unmanaged pooled**. Consists of existing VMs running on the RDS Virtualization Hosts. Individual VMs are assigned automatically to individual users as they connect to the RDS deployment. After users terminate their desktop sessions, VMs are automatically returned to the pool. 
+    - **Unmanaged pooled**. Consists of existing VMs running on the RDS Virtualization Hosts. Individual VMs are assigned automatically to individual users as they connect to the RDS deployment. After users terminate their desktop sessions, VMs are automatically returned to the pool.
     - **Managed personal**. Consists of VMs created by using a generalized image. You manually assign individual VMs to individual users before they connect to the RDS deployment. VMs retain their changes and the user assignments persist after users terminate their desktop sessions.
     - **Unmanaged personal**. Consists of existing VMs running on the RDS Virtualization Hosts. You manually assign individual VMs to individual users before they connect to the RDS deployment. VMs retain their changes and the user assignments persist after users terminate their desktop sessions.
 
@@ -36,5 +36,5 @@ At a high level, deployment of an RDS-based VDI environment on Azure Stack HCI i
     > Pooled desktop collections might lower the number of desktop VMs necessary to support your users. Managed pooled desktop collections tend to simplify maintenance because they do not require ongoing operating system or application patching, except for periodic updates to the generalized image. Managed personal desktop collections typically involve extra administrative effort, which includes operating system and application patching. With personal desktop collections, each desktop VM is assigned to only one user. Therefore, the number of desktop VMs in personal desktop collections is typically higher than pooled desktop collections.
 
 1. Implement user profile disks and store them on Storage Spaces Direct (S2D) volumes.
-1. Optionally, integrate the VDI deployment with Azure Update Management and Microsoft Azure Security Center by using Windows Admin Center.
+1. Optionally, integrate the VDI deployment with Azure Update Management and Microsoft Defender for Cloud by using Windows Admin Center.
 1. If necessary, deploy the Remote Desktop client to client devices.

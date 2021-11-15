@@ -1,8 +1,8 @@
 Learn how Microsoft Sentinel gives you the ability to identify anomalies in your Azure environment and helps you manage incidents.
 
-You're a security engineer for Contoso, Ltd. It's a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection. 
+You're a security engineer for Contoso, Ltd. It's a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection.
 
-Contoso uses Microsoft Defender for Cloud with Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets. 
+Contoso uses Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
 
 Recently, you've been asked to investigate and identify anomalies in the company's Azure Activity log. You learn that Microsoft Sentinel is a cloud application that can assist you.
 

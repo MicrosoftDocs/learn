@@ -28,7 +28,7 @@ The inventory page provides the following tools:
 
   - Unmonitored resources: Resources with agent monitoring issues - they have the Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
 
-- **Filters** - The multiple filters at the top of the page provide a way to quickly refine the list of resources according to the question you're trying to answer. For example, if you wanted to answer the question: Which of my machines with the tag 'Production' are missing the Log Analytics agent? 
+- **Filters** - The multiple filters at the top of the page provide a way to quickly refine the list of resources according to the question you're trying to answer. For example, if you wanted to answer the question: Which of my machines with the tag 'Production' are missing the Log Analytics agent?
 
 - As soon as you've applied filters, the summary values are updated to relate to the query results.
 
@@ -60,8 +60,8 @@ Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provi
 
 - To use the Microsoft Defender for Cloud filter, select one or more options (Off, On, or Partial):
 
-  - Off - Resources that aren't protected by a Microsoft Defender plans. You can right-click on any of these and upgrade them:
+  - Off - Resources that aren't protected by Microsoft Defender plans. You can right-click on any of these and upgrade them:
 
-  - On - Resources that are protected by a Microsoft Defender plans
+  - On - Resources that are protected by Microsoft Defender plans
 
   - Partial - This applies to subscriptions that have some but not all of the Microsoft Defender plans disabled.

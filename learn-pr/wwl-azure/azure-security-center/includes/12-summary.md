@@ -1,13 +1,13 @@
 
-Maintaining your security with Microsoft Defender for Cloud, Microsoft Defender for Cloud, and Secure Score are the keys to keeping your solutions and data secure.
+Maintaining your security with Microsoft Defender for Cloud and Secure Score are the keys to keeping your solutions and data secure.
 
 You should be able to:
 
 - Define the most common types of cyber-attacks
 - Configure Microsoft Defender for Cloud based on your security posture
 - Review Secure Score and raise it
-- Lock down your solutions using Defender for Cloud and Defender for Cloud
-- Enable Just-in-Time access and other security features 
+- Lock down your solutions using Microsoft Defender for Cloud
+- Enable Just-in-Time access and other security features
 
 ## Learn More
 

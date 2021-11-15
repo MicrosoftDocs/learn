@@ -1,4 +1,4 @@
-Onboarding your AWS account into Defender for Cloud, integrates AWS Security Hub and Microsoft Defender for Cloud. Defender for Cloud thus provides visibility and protection across both of these cloud environments to provide:
+Onboarding your AWS account into Microsoft Defender for Cloud integrates AWS Security Hub and Defender for Cloud. Defender for Cloud thus provides visibility and protection across both of these cloud environments to provide:
 
 - Automatic agent provisioning (Defender for Cloud uses Azure Arc to deploy the Log Analytics agent to your AWS instances)
 
@@ -20,7 +20,6 @@ In the screenshot below, you can see AWS accounts displayed in Defender for Clou
 
 >[!div class="mx-imgBorder"]
 >![aws account overview.](../media/aws-account-overview.png)
-
 
 ## Follow the steps below to create your AWS cloud connector.
 
@@ -132,9 +131,6 @@ Configure the options in the AWS authentication tab:
 1. Review the summary information
 
 1. The Tags sections will list all Azure Tags that will be automatically created for each onboarded EC2 with its own relevant details to easily recognize it in Azure.
-
-
-
 
 ### Confirmation
 

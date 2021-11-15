@@ -12,8 +12,8 @@ title: Protect against security threats on Azure
 summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
 abstract: |
   After completing this module, you'll be able to:
-  * Strengthen your security posture and protect against threats by using Azure Security Center.
-  * Collect and act on security data from many different sources by using Azure Sentinel.
+  * Strengthen your security posture and protect against threats by using Microsoft Defender for Cloud.
+  * Collect and act on security data from many different sources by using Microsoft Sentinel.
   * Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
   * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 prerequisites: |

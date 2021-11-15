@@ -3,7 +3,7 @@ You learned how Microsoft Defender for Cloud provides Azure and hybrid cloud wor
 You should now be able to:
 
 - Describe Microsoft Defender for Cloud features
-- Explain Microsoft Defender for Cloud features
+- Explain the enhanced security features of Microsoft Defender for Cloud
 - Enable Microsoft Defender for Cloud
 
 ## Learn more

@@ -19,7 +19,7 @@ You can use File Integrity Monitoring to validate the integrity of the following
 - Windows registry values
 - Linux files
 
-You access File Integrity Monitoring from Microsoft Defender for Cloud. Defender for Cloud enables you to specify the object types that you want to monitor. Defender for Cloud monitors files with File Integrity Monitoring enabled for activity such as:
+You access File Integrity Monitoring from Microsoft Defender for Cloud, which enables you to specify the object types that you want to monitor. Defender for Cloud monitors files with File Integrity Monitoring enabled for activity such as:
 
 - File and Registry creation and removal.
 - File modifications (changes in file size, access control lists (ACLs), and hash of the content).

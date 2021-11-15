@@ -53,13 +53,13 @@ quiz:
     choices:
     - content: "Azure Information Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Defender for Cloud Apps to discover these applications."
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
     - content: "Azure Identity Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Defender for Cloud Apps to discover these applications."
-    - content: "Defender for Cloud Apps"
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "That's correct. You should use Defender for Cloud Apps to discover these applications."
+      explanation: "That's correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
   - content: "What is the primary purpose of data encryption with customer key?"
     choices:
     - content: "To replace BitLocker encryption"

@@ -36,7 +36,7 @@ To enable auto provisioning of the Log Analytics agent:
 >[!div class="mx-imgBorder"]
 >![log analytics agent deploy options.](../media/log-analytics-agent-deploy-options.png)
 
-Connect Azure VMs to the default workspace(s) created by Defender for Cloud - Defender for Cloud creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Defender for Cloud creates multiple workspaces to ensure compliance with data privacy requirements.
+Connect Azure VMs to the default workspaces created by Defender for Cloud, which creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Defender for Cloud creates multiple workspaces to ensure compliance with data privacy requirements.
 
 The naming convention for the workspace and resource group is:
 
