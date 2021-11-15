@@ -2,7 +2,7 @@
 uid: learn.blazor-build-reusable-components
 metadata:
   moduleType: standard
-  title: Build Reusable Components with Blazor
+  title: Build reusable components with Blazor
   description: "Use Razor Class Libraries to package and deploy components with Blazor"
   ms.date: 10/13/2021
   author: csharpfritz

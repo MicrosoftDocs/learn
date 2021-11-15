@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.blazor-build-reusable-components.nuget-package
-title: Create a NuGet Package
+title: Create a NuGet package
 metadata:
   unitType: exercise
   title: create-a-nuget-package
