@@ -2,4 +2,4 @@ Our goal is to write code that will display simple messages to an output console
 
 Congratulations on taking your first steps to building more sophisticated applications.
 
-[!include[](../../../includes/dotnet6-summary.md)]
+[!include[](../../../includes/dotnet-summary.md)]
