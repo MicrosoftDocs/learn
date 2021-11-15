@@ -7,7 +7,7 @@ let number: u32 = 14;
 println!("The number is {}.", number);
 ```
 
-If we enclose the variable value in double quotation marks, the complier interprets the value as text rather than a number. The inferred data type of the value doesn't match the `u32` data type specified for the variable, so the compiler issues an error:
+If we enclose the variable value in double quotation marks, the compiler interprets the value as text rather than a number. The inferred data type of the value doesn't match the `u32` data type specified for the variable, so the compiler issues an error:
 
 ```rust
 let number: u32 = "14";
