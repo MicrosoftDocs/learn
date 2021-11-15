@@ -8,7 +8,7 @@ In summary, you'll use Azure Policy to:
   * Turn on built-in policies or build custom policies for all resource types.
   * Perform real-time policy evaluation and enforcement.
   * Perform periodic and on-demand compliance evaluation.
-  * Implement virtual machine In-Guest Policy.
+  * Implement virtual machine In-Guest Policy. It provides a native capability to audit or configure operating system settings as code, both for machines running in Azure and for hybrid Azure Arc enabled machines.
 * Apply policies at scale:
   * Apply policies to a management group with control across your entire organization.
   * Apply multiple policies and aggregate policy states with policy initiatives.
