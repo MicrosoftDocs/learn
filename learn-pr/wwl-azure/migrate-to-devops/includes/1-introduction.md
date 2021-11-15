@@ -15,5 +15,5 @@ After completing this module, students and professionals can:
 ## Prerequisites
 
  -  Understanding of what DevOps is and its concepts.
- -  Familiarity with Agile software development and core software development principles is helpful but is not necessary.
+ -  Familiarity with DevOps tools is helpful but is not necessary.
  -  Beneficial to have experience in an organization that delivers software.
