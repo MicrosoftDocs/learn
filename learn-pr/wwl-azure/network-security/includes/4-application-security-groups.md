@@ -9,8 +9,7 @@ ASGs enable you to configure network security as a natural extension of an appli
 
 You also can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform manages the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic. Consider the following illustration.
 
-> [!div class="mx-imgBorder"]
-> ![ASGs and NSGs combine to protect applications.](../media/az500-application-security-group.png)
+![ASGs and NSGs combine to protect applications.](../media/az500-application-security-group.png)
 
 In the illustration, NIC1 and NIC2 are members of the AsgWeb ASG. NIC3 is a member of the AsgLogic ASG. NIC4 is a member of the AsgDb ASG. Though each network interface in this example is a member of only one ASG, a network interface can be a member of multiple ASGs, up to the Azure limits. None of the network interfaces have an associated network security group. NSG1 is associated to both subnets and contains the following rules:
 

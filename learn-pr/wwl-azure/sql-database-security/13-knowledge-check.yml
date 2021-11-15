@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/14/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -58,7 +58,7 @@ quiz:
     - content: "Create an Azure AD Database Administrator"
       isCorrect: false
       explanation: "An Azure AD Database admin could only configure and manage the database."
-    - content: "Create users in the each database."
+    - content: "Create users in the each database"
       isCorrect: true
       explanation: "Do not create users in the Master db. Instead, contained users should be created on each database."
   - content: "What type of firewall rules can be configured for an Azure SQL database?"

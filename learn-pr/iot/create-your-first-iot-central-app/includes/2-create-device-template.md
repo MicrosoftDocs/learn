@@ -24,17 +24,15 @@ In this unit, you'll create a device template for a refrigerated truck.
     [![Screenshot showing the most important controls for creating a device template.](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
     > [!TIP]
-    > In the image, notice that the template is in **Draft** form. Also notice the locations of the controls for **Add interface**, **Views**, and **Publish**.
+    > In the image, notice that the template is in **Draft** form. Also notice the locations of the controls for **Add capability**, **Views**, and **Publish**.
 
-1. You're now ready to add details for the device template. Select **Add an inherited interface**. Then select **Custom** to start building from a blank interface.
-
-Components are interfaces made up of other interfaces. Interfaces define a set of capabilities. You'll need to create several capabilities to define a refrigerated truck.
+You're now ready to add details for the device template.
 
 ### Add sensor telemetry
 
 Telemetry is made up of the data values that sensors transmit. The most important sensor in our refrigerated truck monitors the temperature of the contents.
 
-To get started, select **Add capability**. Then enter the values in the following table.
+To get started, select **Add capability**. Then enter the values in the following table. You will need to select the expand arrow to set the Schema and Unit.
 
 | Entry summary | Value |
 | --- | --- |
@@ -43,14 +41,14 @@ To get started, select **Add capability**. Then enter the values in the followin
 | Capability type | Telemetry |
 | Semantic type | Temperature |
 | Schema | Double |
-| Unit | <sup>o</sup>C |
+| Unit | Degree celsius |
 
 Your window should now look like the following image.
 
 [![Screenshot showing how to create temperature telemetry for the simulated device.](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
 > [!NOTE]
-> The interface names must be entered _exactly_ as shown in this unit. The names and entries must exactly match in the code you'll add later in this module.
+> The capability names must be entered _exactly_ as shown in this unit. The names and entries must exactly match the code you'll add later in this module.
 
 > [!IMPORTANT]
 > In all locales, capability names can currently contain _only_ characters *A* through *Z*, uppercase and lowercase letters, digits 0 through 9, and the underscore character (`_`). No spaces, special characters, or localized characters are allowed.
@@ -77,10 +75,10 @@ States are important. They let the operator know what's happening. A state in Io
 
     [![Screenshot showing how to create content states for the simulated device.](../media/refrigerated-trucks-contents.png)](../media/refrigerated-trucks-contents.png#lightbox)
 
-1. Carefully check each capability before you continue. 
+1. Carefully check each capability before you continue.
 
-1. To add some uncertainty to the simulation, add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably. 
- 
+1. To add some uncertainty to the simulation, add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably.
+
     Add _on_, _off_, and _failed_ entries for the cooling system. Start by selecting **Add capability**. Then add another state.
 
     | Entry summary | Value |
@@ -175,7 +173,7 @@ To add a property:
     | Semantic type | Temperature |
     | Schema | Double |
     | Writable | On |
-    | Unit |  <sup>o</sup>C  |
+    | Unit |  Degree celsius  |
 
 1. Confirm that your properties have the following fields:
 
@@ -185,7 +183,8 @@ To add a property:
 
 The operator of the IoT Central app sends commands to the remote devices. Commands are similar to writable properties. But they can contain any number of input fields. By contrast, a writable property is limited to a single value.
 
-For refrigerated trucks, you should add two commands: 
+For refrigerated trucks, you should add two commands:
+
 * A command to deliver the contents to a customer
 * A command to recall the truck to base
 

@@ -10,8 +10,7 @@ The key differences to consider are:
 * Azure Diagnostics extension sends data to Azure Storage, Azure Monitor Metrics (Windows only) and Event Hubs. The Log Analytics agent collects data to Azure Monitor Logs.
 * The Log Analytics agent is required for solutions, Azure Monitor for VMs, and other services such as Azure Security Center.
 
-> [!div class="mx-imgBorder"]
-> ![Connected sourses illustration moving data to Azure Monitor](../media/az500-connected-sources.png)
+![Connected sourses illustration moving data to Azure Monitor](../media/az500-connected-sources.png)
 
 ### Data destinations
 
