@@ -10,15 +10,15 @@ Another key benefit when migrating to one of the PaaS offerings on Azure is that
 
 Unlike Azure SQL Database, which is designed around single database structures, SQL Managed Instance provides several other features including cross-database queries, common language runtime (CLR), access to the system databases, and use of the SQL Agent features.
 
-For a complete list of the features available on Azure SQL Managed Instance, see [Features of SQL Database and SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/features-comparison#features-of-sql-database-and-sql-managed-instance).
+For a complete list of the features available on Azure SQL Managed Instance, see [Features of SQL Database and SQL Managed Instance](/azure/azure-sql/database/features-comparison).
 
 ## Hybrid licensing options
 
-Microsoft offers several benefits to SQL Server licenses. For both SQL Database and SQL Managed Instance, taking advantage of your existing licenses can reduce the cost of running the PaaS offering. 
+Microsoft offers several benefits to SQL Server licenses. For both SQL Database and SQL Managed Instance, taking advantage of your existing licenses can reduce the cost of running the PaaS offering.
 
-- For each core of Enterprise Edition with Active Software Assurance, you are eligible for one vCore of SQL Database or SQL Managed Instance Business Critical, and eight vCores of General Purpose. 
+- For each core of Enterprise Edition with Active Software Assurance, you are eligible for one vCore of SQL Database or SQL Managed Instance Business Critical, and eight vCores of General Purpose.
 
-- For each core of Standard Edition with Active Software Assurance, you are eligible for one vCore of General Purpose. 
+- For each core of Standard Edition with Active Software Assurance, you are eligible for one vCore of General Purpose.
 
 This model can reduce the total license costs by up to 40%. Effectively, you will only be paying for the compute and storage costs, and not the software licensing costs.
 
@@ -52,7 +52,8 @@ The auto-failover groups feature allows you to fail over a group of replicated d
 
 A failover group can include one or multiple databases, often used by the same application. Additionally, you can use the readable secondary databases to offload read-only query workloads.
 
-The auto-failover groups feature is supported on both SQL Managed Instance and SQL Database.
+> [!NOTE]
+> The auto-failover groups feature is supported on both SQL Managed Instance and SQL Database.
 
 For more information about auto-failover groups, see [Use auto-failover groups to enable transparent and coordinated geo-failover of multiple databases](/azure/azure-sql/database/auto-failover-group-overview).
 
@@ -60,10 +61,10 @@ For more information about auto-failover groups, see [Use auto-failover groups t
 
 In general, migrating to SQL Managed Instance is often simple given the large set of available features. There are a couple of ways to migrate on-premises databases:
 
-- Restoring a backup.
-- Using Database Migration Service (DMS).
+- Restoring a backup
+- Using Database Migration Service (DMS)
 
-Backup and restore will incur more downtime, as it isn't possible to restore with **NORECOVERY** option, and apply log backups. 
+Backup and restore will incur more downtime, as it isn't possible to restore with **NORECOVERY** option, and apply log backups.
 
 The Database Migration Service is a managed service that connects your on-premises (or Azure Virtual Machines) SQL Server to SQL Managed Instance with near zero downtime. As a result, it acts like an automated log shipping process, meaning you can keep your target databases in sync right up to the point of cutover.
 
@@ -71,7 +72,7 @@ The Database Migration Service is a managed service that connects your on-premis
 
 Machine Learning Services provides machine learning operations within your relational database structure. This feature supports Python and R packages, ideal for high-intensive predictive capabilities. This option is available on SQL Managed Instance, SQL Server on Azure virtual machine, and on-premises SQL Server.
 
-Applications can leverage relational database on Azure combined with machine learning high-performance capabilities, where you can: 
+Applications can leverage relational database on Azure combined with machine learning high-performance capabilities, where you can:
 
 - Train machine learning models based on either sampled dataset or population dataset.
 
@@ -79,7 +80,7 @@ Applications can leverage relational database on Azure combined with machine lea
 
 - Deploy machine learning models using T-SQL stored procedures that support Python or R programming language.
 
-- Use of open-source libraries like scikit-learn, PyTorch, and TensorFlow. 
+- Use of open-source libraries like scikit-learn, PyTorch, and TensorFlow.
 
 For busy environments, you can use the [T-SQL PREDICT function](/sql/t-sql/queries/predict-transact-sql), which allows you to accelerate predictions based on your stored model.
 
@@ -92,4 +93,7 @@ RECONFIGURE WITH OVERRIDE;
 
 The command above allows the execution of external scripts in your managed instance, and it should be enabled before you attempt to use **sp_execute_external_script** to execute Python or R scripts in your database.
 
-For more information about Machine Learning Services, see [Machine Learning Services in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/machine-learning-services-overview)
+> [!NOTE]
+> SQL Database doesn't support Machine Learning Services feature.
+
+For more information about Machine Learning Services, see [Machine Learning Services in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/machine-learning-services-overview).
