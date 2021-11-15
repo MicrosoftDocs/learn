@@ -27,7 +27,7 @@ To respond to changing pod demands, Kubernetes has a cluster autoscaler that adj
 
 Cluster autoscaler is typically used alongside the horizontal pod autoscaler. When combined, the horizontal pod autoscaler increases or decreases the number of pods based on application demand, and the cluster autoscaler adjusts the number of nodes as needed to run those additional pods accordingly.
 
-### Scale up events
+### Scale out events
 
 If a node does not have sufficient compute resources to run a requested pod, that pod cannot progress through the scheduling process. The pod cannot start unless other compute resources are available within the node pool.
 
@@ -35,7 +35,7 @@ When the cluster autoscaler notices pods that cannot be scheduled due to node po
 
 If your application needs to scale rapidly, some pods may remain in a state waiting to be scheduled until the new nodes deployed by the cluster autoscaler can accept the scheduled pods. For applications that have high burst demands, you can scale with virtual nodes and Azure Container Instances.
 
-### Scale down events
+### Scale in events
 
 The cluster autoscaler also monitors the pod scheduling status for nodes that have not recently received new scheduling requests. This scenario indicates that the node pool has more compute resources than are required, and that the number of nodes can be decreased.
 
