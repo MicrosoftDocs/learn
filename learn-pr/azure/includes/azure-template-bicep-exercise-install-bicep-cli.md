@@ -5,16 +5,10 @@ ms.topic: include
 ms.date: 11/14/2021
 ms.author: jodowns
 ---
-### Upgrade or install Bicep
+### Install Bicep
 
-Run the following command to install Bicep:
-
-```azurecli
-az bicep install
-```
-
-It's also a good idea to run the following command to ensure you're always using the latest version:
+Run the following command to ensure you have the latest version of Bicep:
 
 ```azurecli
-az bicep upgrade
+az bicep install && az bicep upgrade
 ```
