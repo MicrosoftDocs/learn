@@ -15,11 +15,13 @@ summary: |
   Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
   deployments more consistent and repeatable.
 
-  Take this learning path to deepen your understanding of how to use Bicep to deploy your Azure resources. In it, you'll:
+  Take this learning path to understand how you can use Bicep with complex deployment scenarios. In it, you'll:
 
-  * Deploy advanced Azure resource types, including child and extension resources.
+  * Deploy advanced Azure resource types, and understand the Azure resource model.
   * Deploy resources at the subscription, management group, and tenant level.
   * Build deployment scripts that define custom steps in your Bicep templates.
+  * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
+  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
 
   To learn about Bicep, we recommend you take these three learning paths:
 
@@ -30,7 +32,7 @@ summary: |
     [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
   :::column-end:::
   :::column:::
-    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
+    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
     [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
   :::column-end:::
@@ -68,7 +70,8 @@ products:
 - azure
 - azure-resource-manager
 modules:
-- learn.azure.child-extension-bicep-templates
-- learn.arm-template-whatif
+- learn.azure.deploy-resources-different-scopes
+- learn.azure.extend-resource-manager-template-deployment-scripts
+- learn.azure.migrate-azure-resources-bicep
 trophy:
   uid: learn.bicep-walk.trophy
