@@ -28,8 +28,7 @@ Credential rotation is controlled by the resource provider that hosts the Azure 
 
 The following diagram shows how managed service identities work with Azure virtual machines (VMs):
 
-> [!div class="mx-imgBorder"]
-> ![Data flow described in the following text.](../media/az500-managed-identities.png)
+![Data flow described in the following text.](../media/az500-managed-identities.png)
 
 ### How a system-assigned managed identity works with an Azure VM
 
