@@ -4,13 +4,13 @@ title: Deploy Azure Kubernetes Service storage​
 metadata:
   title: Deploy Azure Kubernetes Service storage​
   description: "Deploy Azure Kubernetes Service storage​"
-  ms.date: 11/10/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/10-deploy-azure-kubernetes-services-storage.md)]

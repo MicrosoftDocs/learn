@@ -17,8 +17,7 @@ Azure Security Center helps you prevent, detect, and respond to threats with inc
 
 You need to enable data collection so that Azure Security Center can gather the information it needs to provide recommendations and alerts based on the security policy you configure. In the following figure, data collection has been turned on.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that depicts data collection from VMs turned on for a security policy.](../media/az500-host-recommendations-1.png)
+![Screenshot that depicts data collection from VMs turned on for a security policy.](../media/az500-host-recommendations-1.png)
 
 A security policy defines the set of controls recommended for resources within the specified subscription or resource group. Before enabling a security policy, you need to enable data collection. Security Center collects data from your VMs to assess their security state, provide security recommendations, and alert you to threats. In Security Center, you define policies for your Azure subscriptions or resource groups according to your company’s security needs and the types of applications or sensitivity of data in each subscription.
 
@@ -30,13 +29,11 @@ After setting a security policy, Security Center analyzes the security state of 
 
 Security Center also monitors and analyzes the enabled security policies to identify potential vulnerabilities. On the **Resource security health** blade, you can check the security state of your resources along with any issues. When you select **Virtual machines** in **Resource security health**, the **Virtual machines** blade opens with recommendations for your VMs, as the following figure depicts.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that depicts the Virtual machines blade with recommendations for your VMs.](../media/az500-host-recommendations-2.png)
+![Screenshot that depicts the Virtual machines blade with recommendations for your VMs.](../media/az500-host-recommendations-2.png)
 
 Security Center threat detection works by automatically collecting security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. Security Center prioritizes alerts along with recommendations on how to remediate the threats.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that depicts Security Center monitoring traffic, collecting logs, and analyzing data for threats and then presenting all the information on a single dashboard.](../media/az500-host-recommendations-3.png)
+![Screenshot that depicts Security Center monitoring traffic, collecting logs, and analyzing data for threats and then presenting all the information on a single dashboard.](../media/az500-host-recommendations-3.png)
 
  
 
@@ -52,7 +49,6 @@ Security Center employs advanced security analytics that go far beyond signature
 
 Using these analytics, Security Center can help disrupt the kill chain by adding detection in different phases of the kill chain, as the following figure depicts.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram that depicts detection added to different phases of the kill chain.](../media/az500-host-recommendations-4.png)
+![Diagram that depicts detection added to different phases of the kill chain.](../media/az500-host-recommendations-4.png)
 
 The preceding figure depicts some common alerts for each phase, and several more [types of alerts](/azure/governance/policy/overview) exist. Security Center also correlates alerts and creates a [security incident](/azure/virtual-network/security-overview). Security incidents give you a better view of which alerts belong to the same attack campaign.
