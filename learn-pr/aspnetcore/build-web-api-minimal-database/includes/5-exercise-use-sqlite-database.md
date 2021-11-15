@@ -39,9 +39,9 @@ To enable database creation, you need to complete two steps:
 
 In *Program.cs*, under your app builder `var builder = WebApplication.CreateBuilder(args);`, add a connection string.
 
-    ```csharp
-    var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
-    ```
+```csharp
+var connectionString = builder.Configuration.GetConnectionString("Pizzas") ?? "Data Source=Pizzas.db";
+```
 
 ## Add your context to your services
 
