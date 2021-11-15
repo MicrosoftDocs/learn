@@ -1,6 +1,6 @@
 ## What are extended events and why do I need to know about them?
 
-Extended events are a lightweight and very extensive diagnostic system that is built into SQL Server and Azure SQL Database and managed instance. Extended events allow you to collect additional information about the internal operations of your databases. Historically, DBAs used a tool call Profiler to trace inbound queries and gather execution plans to identity to problematic queries and their execution plans. Extended events build on the functionality of SQL Server Profiler by allowing you to trace queries and by exposing additional data (events) that you can monitor. Some examples of issues you might troubleshoot with Extended Events include:
+Extended events are a lightweight and very extensive diagnostic system that is built into SQL Server and Azure SQL Database and managed instance. Extended events allow you to collect additional information about the internal operations of your databases. Historically, DBAs used a tool called Profiler to trace inbound queries and gather execution plans to identity to problematic queries and their execution plans. Extended events build on the functionality of SQL Server Profiler by allowing you to trace queries and by exposing additional data (events) that you can monitor. Some examples of issues you might troubleshoot with Extended Events include:
 
 - Troubleshooting blocking and deadlocking performance issues
 - Identifying long-running queries
