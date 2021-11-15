@@ -44,7 +44,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
    :::code language="csharp" source="../code/ef-core-setup.cs" highlight="1, 5-12, 15-19":::
 
-   You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
+   You might receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` in the dialog.
 
 ## Add EF Core to the project
 
@@ -93,7 +93,7 @@ Now that you have EF Core added to the project, you can wire up your code to the
 
 ## Run the application
 
-1. Run the app by calling `dotnet run`. This will build the app and host it on a port from 5000-5300, and HTTPS will have a port selected for it in the range 7000-7300.
+1. Run the app by calling `dotnet run`. This action will build the app and host it on a port from 5000-5300. HTTPS will have a port selected for it in the range 7000-7300.
 
    > [!NOTE]
    > If you want to override the random port selection behavior, you can set the ports to use in _launchSettings.json_.
@@ -137,8 +137,8 @@ Let's POST new tasks to the pizzas list under `app.MapGet` that you created earl
 
 Go back to Swagger and now you should see `POST/pizza`. To add new items to the pizza list:
 
-1. Select `POST /pizza`.
-1. Select `Try it out`.
+1. Select **POST /pizza**.
+1. Select **Try it out**.
 1. Replace the request body with the following:
 
    ```json
@@ -148,15 +148,15 @@ Go back to Swagger and now you should see `POST/pizza`. To add new items to the 
    }
    ```
 
-1. Select `Execute`.
+1. Select **Execute**.
 
 ## Read the items in the list
 
 To read the items in the list:
 
-1. Select `GET /pizzas`.
-1. Select `Try it out`.
-1. Select `Execute`.
+1. Select **GET /pizzas**.
+1. Select **Try it out**.
+1. Select **Execute**.
 
 The `Response body` will include the items just added.
 
@@ -176,7 +176,7 @@ To GET an item by `id`, add the code under the `app.MapPost` route you created e
 app.MapGet("/pizza/{id}", async (PizzaDb db, int id) => await db.Pizzas.FindAsync(id));
 ```
 
-To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or use the Swagger UI. Since you are using an in-memory database, the pizza you previously created will not be listed if you have restarted the application, so you will need to enter it again.
+To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or use the Swagger UI. Since you're using an in-memory database, the pizza you previously created won't be listed if you've restarted the application, so you'll need to enter it again.
 
 ## Update an item
 
@@ -194,9 +194,9 @@ To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or us
    });
    ```
 
-1. Select `PUT /pizza/{id}` in the Swagger UI.
-1. Select `Try it out`.
-1. In the `id` text box, enter **1**.
+1. Select **PUT /pizza/{id}** in the Swagger UI.
+1. Select **Try it out**.
+1. In the **id** text box, enter **1**.
 1. Finally, update `Request body`. Paste the following JSON and change `name` to `Pineapple`.
 
    ``` json
@@ -207,7 +207,7 @@ To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or us
    
    ```
 
-1. Select `Execute`.
+1. Select **Execute**.
 
 To test the code, scroll back to `GET /pizza/{id}`. The pizza now has the name `Pineapple`.
 
