@@ -20,7 +20,7 @@ quiz:
     - content: "It's much simpler than using the public test.mosquitto.org broker."
       isCorrect: false
       explanation: "Setting up an MQTT broker is more complex than using the public broker."
-    - content: "It has enhanced security, it's private, and performance is predicable. The virtual disk server performs faster when it's running on the same server as the MQTT broker."
+    - content: "It has enhanced security, it's private, and performance is predictable. The virtual disk server performs faster when it's running on the same server as the MQTT broker."
       isCorrect: true
       explanation: "The Altair emulator, including the virtual disk server, will perform better when it's connected to a private MQTT broker."
   - content: "The advantage of installing the virtual disk server on the same server as the MQTT broker is?"
