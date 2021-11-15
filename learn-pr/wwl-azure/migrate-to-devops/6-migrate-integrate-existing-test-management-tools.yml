@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-to-devops.migrate-integrate-existing-test-management-tools
+title: Migrate or integrate existing test management tools
+metadata:
+  title: Migrate or integrate existing test management tools
+  description: "Migrate or integrate existing test management tools"
+  ms.date: 11/15/2021
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-migrate-integrate-existing-test-management-tools.md)]
