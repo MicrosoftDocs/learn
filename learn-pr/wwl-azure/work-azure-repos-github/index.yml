@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.work-azure-repos-github
+metadata:
+  title: Work with Azure Repos and GitHub
+  description: "Work with Azure Repos and GitHub"
+  ms.date: 11/15/2021
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with Azure Repos and GitHub
+summary: This module introduces you to Azure Repos and GitHub and explores ways to link Azure Boards and GitHub, migrate from TFVC to Git, and work with GitHub Codespaces for development.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe Azure Repos and GitHub
+  - Link Azure Boards and GitHub
+  - Migrate from TFVC to Git
+  - Work with GitHub Codespaces
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.work-azure-repos-github.introduction
+- learn.wwl.work-azure-repos-github.introduction-to
+- learn.wwl.work-azure-repos-github.introduction-to-github
+- learn.wwl.work-azure-repos-github.link-github-to-azure-boards
+- learn.wwl.work-azure-repos-github.migrate-from-tfvc-to-git
+- learn.wwl.work-azure-repos-github.use-git-tfs
+- learn.wwl.work-azure-repos-github.develop-online-github-codespaces
+- learn.wwl.work-azure-repos-github.knowledge-check
+- learn.wwl.work-azure-repos-github.summary
+badge:
+  uid: learn.wwl.work-azure-repos-github.badge
