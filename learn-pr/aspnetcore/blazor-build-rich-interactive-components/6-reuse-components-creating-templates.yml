@@ -27,4 +27,15 @@ quiz:
       - content: "RenderFragment"
         isCorrect: true
         explanation: "RenderFragment is a section of code that can contain Razor markup and HTML to be rendered in a Blazor component"
+    - content: "What is the name of the parameter that captures all markup inside of a component without requiring an additional tag to be created?"
+      choices:
+      - content: "RenderFragment"
+        isCorrect: false
+        explanation: "RenderFragment is the type of the parameter, but what is the name of that parameter"
+      - content: "ChildContent"
+        isCorrect: true
+        explanation: "ChildContent is the default name of the parameter, with a return type of RenderFragment"
+      - content: "BodyContent"
+        isCorrect: true
+        explanation: "BodyContent was a parameter name used in the sample, but is not the default parameter name"
         

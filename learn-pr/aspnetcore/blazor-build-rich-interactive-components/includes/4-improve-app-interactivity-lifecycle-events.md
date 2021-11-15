@@ -14,7 +14,7 @@ The diagram below illustrates the events that occur during the lifetime of a com
 
 :::image type="content" source="../media/4-component-lifecycle.png" alt-text="The Blazor component lifecycle":::
 
-> [!NOTE]
+
 Although the diagram implies that there's a single threaded flow between lifecycle methods, the asynchronous versions of these methods enable a Blazor app to expedite the rendering process. For example, when the first `await` occurs in *SetParametersAsync*, the Blazor component will run the *OnInitialized* and *OnInitializedAsync* methods. When the awaited statement completes, the thread of execution in *SetParametersAsync* will resume. The same logic applies throughout the series of lifecycle methods. Additionally, each `await` operation that occurs during *OnInitializedAsync* and *OnParametersSetAsync* indicates that the state of the component has changed, and can trigger an immediate rendering of the page. The page might be rendered several times before initialization is fully complete. The logic in your component should take this into account. For example, the sample *FetchData.razor* component in the Blazor Server app template contains the following code that creates and populates the *forecasts* array asynchronously in the *OnInitializedAsync* method:
 >
 > ```razor
@@ -46,7 +46,7 @@ Although the diagram implies that there's a single threaded flow between lifecyc
 
 ## Understand the SetParametersAsync method
 
-When you visit a page that contains a Blazor component, the Blazor runtime creates a new instance of the component and runs the default constructor. Once the component has been constructed, the Blazor runtime calls the *SetParametersAsync* method. If the component defines any parameters, the Blazor runtime will inject the values for these parameters from the calling environment into the component. These parameters are contained in a *ParameterView* object and are made accessible to the *SetParamtersAsync* method. You call the *base.SetParametersAsync* method to populate the *Parameter* properties of your component with these values. Alternatively, if you need to handle the parameters in a different way, this is the place to do it. For example, you might need to validate any parameters passed to the component before using them. The fragment below shows an example. The component expects a parameter that contains a `DateTime` value. If this parameter isn't provided when the component is created, the *SetParametersAsync* sets a message string that's displayed by the component, and defaults the parameter to the current date and time.
+When you visit a page that contains a Blazor component, the Blazor runtime creates a new instance of the component and runs the default constructor. Once the component has been constructed, the Blazor runtime calls the *SetParametersAsync* method. If the component defines any parameters, the Blazor runtime will inject the values for these parameters from the calling environment into the component. These parameters are contained in a *ParameterView* object and are made accessible to the *SetParametersAsync* method. You call the *base.SetParametersAsync* method to populate the *Parameter* properties of your component with these values. Alternatively, if you need to handle the parameters in a different way, this is the place to do it. For example, you might need to validate any parameters passed to the component before using them. The fragment below shows an example. The component expects a parameter that contains a `DateTime` value. If this parameter isn't provided when the component is created, the *SetParametersAsync* sets a message string that's displayed by the component, and defaults the parameter to the current date and time.
 
 > [!NOTE]
 > The *SetParametersAsync* method always runs when a component is being created, even if the component doesn't have any parameters.
@@ -86,13 +86,13 @@ When you visit a page that contains a Blazor component, the Blazor runtime creat
 }
 ```
 
-## Understand the OnIntialized and OnIntializedAsync methods
+## Understand the OnInitialized and OnInitializedAsync methods
 
 These methods are also inherited from the *ComponentBase* class, and you can override them to include your own functionality. They run after the *SetParametersAsync* method has populated the components *Parameter* properties. You can do extra initialization in these methods if necessary.
 
-If the *render-mode* property of the application is set to *Server*, the *OnIntialized* and *OnIntializedAsync* methods only run once for a component instance. If a parent of the component modifies the component parameters, the *SetParametersAsync* method will run again, but these methods will not. If you need to reinitialize a component should the parameters change, use the *SetParametersAsync* method. If you want to do initialization once, use these methods. 
+If the *render-mode* property of the application is set to *Server*, the *OnInitialized* and *OnInitializedAsync* methods only run once for a component instance. If a parent of the component modifies the component parameters, the *SetParametersAsync* method will run again, but these methods will not. If you need to reinitialize a component should the parameters change, use the *SetParametersAsync* method. If you want to do initialization once, use these methods. 
 
-If the *render-mode* property is set to *ServerPrendered*, the *OnIntialized* and *OnIntializedAsync* methods run twice; once during the prerender phase that generates the static output of the page, and again when the server has established a SignalR connection with the browser. If you do expensive initialization tasks such as retrieving data from a web service that you use to set the state of the Blazor component in these methods, cache the state information during the first execution, and reuse this saved state during the second execution. For example, in the code for the *FetchData.razor* page, you could use the null-coalescing assignment operator to call the *GetForecastAsync* web method. The web method is only run if the *forecasts* variable is null:
+If the *render-mode* property is set to *ServerPrendered*, the *OnInitialized* and *OnInitializedAsync* methods run twice; once during the prerender phase that generates the static output of the page, and again when the server has established a SignalR connection with the browser. If you do expensive initialization tasks such as retrieving data from a web service that you use to set the state of the Blazor component in these methods, cache the state information during the first execution, and reuse this saved state during the second execution. For example, in the code for the *FetchData.razor* page, you could use the null-coalescing assignment operator to call the *GetForecastAsync* web method. The web method is only run if the *forecasts* variable is null:
 
 ```razor
 @code {
@@ -116,13 +116,13 @@ Also note that during the prerender phase, code in a Blazor Server component can
 
 ## Understand the OnParametersSet and OnParametersSetAsync methods
 
-These methods run either after the *OnIntialized* or *OnIntializedAsync* methods if this is the first time the component is being rendered, or after the *SetParametersAsync* method if not. Like *SetParametersAsync*, these methods are always called, even if the component has no parameters.
+These methods run either after the *OnInitialized* or *OnInitializedAsync* methods if this is the first time the component is being rendered, or after the *SetParametersAsync* method if not. Like *SetParametersAsync*, these methods are always called, even if the component has no parameters.
 
 Use this method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't perform long-running operations such as these in a constructor; constructors are synchronous, and waiting for long-running operations to complete will affect the responsiveness of the page that contains the component.
 
 ## Understand the OnAfterRender and OnAfterRenderAsync methods
 
-These methods run every time the Blazor runtime needs to update the view represented by the component in the user interface. This occurs automatically when the state of the component changes (for example, when the *OnIntialized* or *OnIntializedAsync* methods, or the *OnParametersSet* and *OnParametersSetAsync* methods run), when a UI event is triggered, or if the application code calls the *StateHasChanged* method of the component. This method is inherited from *ComponentBase*.
+These methods run every time the Blazor runtime needs to update the view represented by the component in the user interface. This occurs automatically when the state of the component changes (for example, when the *OnInitialized* or *OnInitializedAsync* methods, or the *OnParametersSet* and *OnParametersSetAsync* methods run), when a UI event is triggered, or if the application code calls the *StateHasChanged* method of the component. This method is inherited from *ComponentBase*.
 
 The *StateHasChanged* method calls the *ShouldRender* method of the component. The purpose of this method is to determine whether the change in state actually requires the component to rerender the view. By default, all state changes trigger a render operation, but you can override the *ShouldRender* method and define your own decision-making logic. The *ShouldRender* method returns `true` if the view should be rendered again, or `false` otherwise.
 

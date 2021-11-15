@@ -27,4 +27,15 @@ quiz:
       - content: "OnAfterRenderAsync"
         isCorrect: false
         explanation: "OnAfterRender is the last event that triggers in the lifecycle and may be triggered multiple times"
+    - content: "Which of these events does NOT trigger the ParametersSetAsync event?"
+      choices:
+      - content: "Route parameters are set"
+        isCorrect: false
+        explanation: "Assigning route parameters to Parameter properties is one of the core features of the SetParametersAsync method"
+      - content: "Private fields are allocated"
+        isCorrect: true
+        explanation: "Private fields do not interact with values outside of the component and do not trigger the ParametersSetAsync method"
+      - content: "Component Parameters are assigned from another component"
+        isCorrect: false
+        explanation: "Assigning values from another component is a core feature of the SetParametersAsync method"
         
