@@ -3,8 +3,7 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. For example, you can route traffic based on the incoming URL. So if /images is in the incoming URL, you can route traffic to a specific set of servers (known as a pool) configured for images. If /video is in the URL, that traffic is routed to another pool that's optimized for videos.
 
-> [!div class="mx-imgBorder"]
-> ![An application gateway uses rules to access the backend pool.](../media/az500-app-gateway.png)
+![An application gateway uses rules to access the backend pool.](../media/az500-app-gateway.png)
 
 Application Gateway includes the following features:
 * **Secure Sockets Layer (SSL/TLS) termination** - Application gateway supports SSL/TLS termination at the gateway, after which traffic typically flows unencrypted to the backend servers. This feature allows web servers to be unburdened from costly encryption and decryption overhead.

@@ -5,8 +5,7 @@ The following sections define key terminology for Azure networking. Later, this 
 
 Azure Virtual Networks are a key component of Azure security services. The Azure network infrastructure enables you to securely connect Azure resources to each other with virtual networks (VNets). A VNet is a representation of your own network in the cloud. A VNet is a logical isolation of the Azure cloud network dedicated to your subscription. You can connect VNets to your on-premises networks.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram that depicts VNets connections to on premise networks](../media/az500-network-security.png)
+![Diagram that depicts VNets connections to on premise networks](../media/az500-network-security.png)
 
 Azure supports **dedicated WAN link connectivity** to your on-premises network and an Azure Virtual Network with ExpressRoute. The link between Azure and your site uses a dedicated connection that does not go over the public Internet. If your Azure application is running in multiple datacenters, you can use Azure Traffic Manager to route requests from users intelligently across instances of the application. You can also route traffic to services not running in Azure if they are accessible from the Internet.
 

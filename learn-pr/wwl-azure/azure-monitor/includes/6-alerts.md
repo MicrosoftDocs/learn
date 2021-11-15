@@ -18,15 +18,13 @@ The unified alert experience in Azure Monitor includes alerts that were previous
 
 The diagram below represents the flow of alerts.
 
-> [!div class="mx-imgBorder"]
-> ![An alert rule has a target and condition.](../media/az500-alerts.png)
+![An alert rule has a target and condition.](../media/az500-alerts.png)
 
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled.
 
 The following are key attributes of an alert rule as shown:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the portal create a rule page.](../media/az500-create-alert.png)
+![Screenshot of the portal create a rule page.](../media/az500-create-alert.png)
 
 - **Target Resource**: Defines the scope and signals available for alerting. A target can be any Azure resource. Example targets: a virtual machine, a storage account, a virtual machine scale set, a Log Analytics workspace, or an Application Insights resource. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
 - **Signal**: Emitted by the target resource. Signals can be of the following types: metric, activity log, Application Insights, and log.

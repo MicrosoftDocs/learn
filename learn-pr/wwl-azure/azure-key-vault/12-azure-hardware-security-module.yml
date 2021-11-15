@@ -4,13 +4,13 @@ title: Explore the Azure Hardware Security Module
 metadata:
   title: Explore the Azure Hardware Security Module
   description: "Explore the Azure Hardware Security Module"
-  ms.date: 09/29/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/12-azure-hardware-security-module.md)]
