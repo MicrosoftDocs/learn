@@ -63,7 +63,7 @@ Next, configure your project to use Swagger.
 
    :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 18-22":::
 
-1. Rerun the project and go to the app's address, *http://localhost:5100/swagger*.
+1. Rerun the project and go to the app's address, *http://localhost:{PORT}/swagger*.
 
    You should see the following output:
 
