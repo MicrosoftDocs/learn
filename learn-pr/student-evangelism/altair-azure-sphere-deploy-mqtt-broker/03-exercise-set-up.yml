@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.exercise-se
 title: Exercise - Deploy a private MQTT broker
 metadata:
   title: Exercise - Deploy a private MQTT broker
-  description: In this exercise, deploy a private MQTT broker.
+  description: In this exercise, follow detailed steps to deploy a private MQTT broker.
   ms.date: 10/01/2021
   author: gloveboxes
   ms.author: chnoring

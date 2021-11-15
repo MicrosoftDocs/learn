@@ -1,5 +1,3 @@
-This unit summarizes the main steps completed in this module.
-
 In this module, you learned how to:
 
 * Deploy an MQTT broker.
