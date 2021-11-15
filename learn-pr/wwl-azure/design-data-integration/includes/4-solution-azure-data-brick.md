@@ -33,11 +33,7 @@ In the above scenario, you would choose Databricks Data Science and Engineering 
 
  
 
-
-
-
-
-**How Azure Databricks works**
+## How Azure Databricks works
 
 As shown in the following diagram, 
 
@@ -51,7 +47,7 @@ As shown in the following diagram,
 
  
 
-**When to use Azure Databricks**
+## When to use Azure Databricks
 
 Azure Databricks is entirely based on Apache Spark and as such is a great tool for those already familiar with the open-source cluster-computing framework. As a unified analytics engine, it’s designed specifically for big data processing and data scientists can take advantage of built-in core API for core languages like SQL, Java, Python, R, and Scala.
 
