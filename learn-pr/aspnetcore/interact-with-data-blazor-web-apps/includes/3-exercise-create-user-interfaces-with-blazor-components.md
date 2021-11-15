@@ -172,4 +172,4 @@ The team has also created classes to represent the models in the app. Review the
 
     :::image type="content" source="../media/3-blazzing-pizzas.png" alt-text="Screenshot of a list of blazing pizzas.":::
 
-You now have a pizza base component, to allow customers to order a pizza. You'll improve on this component in following exercises.
+You now have a pizza base component to allow customers to order a pizza. You'll improve on this component in following exercises.
