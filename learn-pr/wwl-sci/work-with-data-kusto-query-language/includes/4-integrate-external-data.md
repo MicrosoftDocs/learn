@@ -8,11 +8,11 @@ Syntax
 
 Arguments
 
-- ColumnName, ColumnType: The arguments define the schema of the table. The syntax is the same as the syntax used when defining a table in .create table.
+- ColumnName, ColumnType: The arguments define the schema of the table. The syntax is the same as the syntax used when defining a table in. create table.
 
 - StorageConnectionString: Storage connection strings that describe the storage artifacts holding the data to return.
 
-- PropertyName, PropertyValue, ...: Additional properties that describe how to interpret the data retrieved from storage, as listed under ingestion properties.
+- PropertyName, PropertyValue, ...: More properties that describe how to interpret the data retrieved from storage, as listed under ingestion properties.
 
 Currently, supported properties are:
 

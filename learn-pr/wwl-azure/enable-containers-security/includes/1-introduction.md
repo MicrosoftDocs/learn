@@ -10,12 +10,12 @@ A security engineer uses Azure Container Instances, the Container Registry and a
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 - Configure advanced security for compute
-   - configure authentication for Azure Container Registry
-   - configure security for different types of containers
+   - Configure authentication for Azure Container Registry
+   - Configure security for different types of containers
 
 ## Learning objectives
 

@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content  
   title: Understand parameters
   description: Learn about parameters and types and how to apply decorators to document and restrict the values of your parameters.
-  ms.date: 05/25/2021
+  ms.date: 10/29/2021
   author: wviriya
   ms.author: wviriya
   ms.topic: interactive-tutorial

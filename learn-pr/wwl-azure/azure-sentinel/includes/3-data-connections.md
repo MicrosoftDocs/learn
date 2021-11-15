@@ -2,8 +2,7 @@
 To on-board Azure Sentinel, you first need to connect to your security sources. Azure Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including Microsoft Threat Protection solutions, and Microsoft 365 sources, including Microsoft 365, Azure AD, Azure ATP, and Microsoft Cloud App Security, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, 
 Syslog or REST-API to connect your data sources with Azure Sentinel as well.
 
-> [!div class="mx-imgBorder"]
-> ![Azure sentinel collector blade](../media/az500-sentinel-collector.png)
+![Azure sentinel collector blade](../media/az500-sentinel-collector.png)
 
 ### Data connection methods
 
@@ -37,8 +36,7 @@ The Azure Sentinel agent, which is based on the Log Analytics agent, converts CE
 
 To connect your external appliance to Azure Sentinel, the agent must be deployed on a dedicated machine (VM or on premises) to support the communication between the appliance and Azure Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is a new VM you are creating in Azure.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram of data flow using Azure Sentinel agent](../media/az500-sentinel-syslog.png)
+![Diagram of data flow using Azure Sentinel agent](../media/az500-sentinel-syslog.png)
 
 Alternatively, you can deploy the agent manually on an existing Azure VM, on a VM in another cloud, or on an on-premises machine.
 
