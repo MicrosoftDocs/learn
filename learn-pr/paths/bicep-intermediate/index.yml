@@ -51,12 +51,12 @@ summary: |
   :::column:::
     [<img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>](xref:learn.bicep-azure-pipelines)
 
-    [Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
+    [Option 1: Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
   :::column-end:::
   :::column:::
     [<img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>](xref:learn.bicep-github-actions)
 
-    [Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
+    [Option 2: Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
   :::column-end:::
   :::row-end:::
 prerequisites: |
