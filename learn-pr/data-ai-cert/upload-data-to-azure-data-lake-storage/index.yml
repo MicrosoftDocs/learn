@@ -27,7 +27,7 @@ units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
 - learn.data-ai.upload-data-to-azure-data-lake-storage.upload-data-using-explorer
 #- learn.data-ai.upload-data-to-azure-data-lake-storage.upload-files-with-rest-api
-- learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
+#- learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
 - learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 badge:
   uid: learn.data-ai.upload-data-to-azure-data-lake-storage.badge
