@@ -11,7 +11,7 @@ Azure Synapse Analytics leverages a massively parallel processing (MPP) architec
 
 The Control node is the brain of the architecture. It's the front end that interacts with all applications. The Compute nodes provide the computational power. The data to be processed is distributed evenly across the nodes. You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them. Azure Synapse Analytics uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide) that enables you to retrieve and query data from relational and non-relational sources. You can save the data read in as SQL tables within the Synapse Analytics service.
 
-**Components of Azure Synapse Analytics**
+## Components of Azure Synapse Analytics
 
 :::image type="content" source="../media/azure-synapse-analytics-overview.png" alt-text="Diagram showing an overview of Azure Synapse capabilities.":::
 
@@ -36,7 +36,7 @@ In the image, we can see that Azure Synapse Analytics is composed of the followi
 
 [Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end)
 
-**When to use Azure Synapse Analytics?**
+## When to use Azure Synapse Analytics? 
 
 - When you have a variety of data sources use Azure Synapse Analytics for code-free ETL and data flow activities. 
 
@@ -46,7 +46,7 @@ In the image, we can see that Azure Synapse Analytics is composed of the followi
 
 When management needs real-time analytics, you can use features like Azure Synapse Link to analyze in real-time and offer insights.
 
-**What kind of analytics can you do with Azure Synapse Analytics?**
+## What kind of analytics can you do with Azure Synapse Analytics?
 
 Following table shows the range of analytical types that Azure Synapse Analytics supports:
 
@@ -59,7 +59,7 @@ Following table shows the range of analytical types that Azure Synapse Analytics
 
 
 
-**When would you choose** **Azure Data Factory** **over** **Azure Synapse Analytics?**
+## When to choose Azure Data Factory over Azure Synapse Analytics
 
 Let us look at some criteria that will help you decide when to pick Azure Data Factory solution over Azure Synapse Analytics. In the following table, the two solutions are compared against a set of criteria. 
 
