@@ -23,8 +23,6 @@ products:
 - azure
 modules:
 - learn.wwl.examine-components-of-modern-data-warehouse
-- learn.wwl.explore-data-ingestion-azure
-- learn.wwl.explore-data-storage-processing-azure
 - learn-bizapps.get-started-with-power-bi
 trophy:
   uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics.trophy
