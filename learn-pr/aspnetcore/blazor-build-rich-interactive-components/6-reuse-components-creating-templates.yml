@@ -36,6 +36,6 @@ quiz:
         isCorrect: true
         explanation: "ChildContent is the default name of the parameter, with a return type of RenderFragment"
       - content: "BodyContent"
-        isCorrect: true
+        isCorrect: false
         explanation: "BodyContent was a parameter name used in the sample, but is not the default parameter name"
         
