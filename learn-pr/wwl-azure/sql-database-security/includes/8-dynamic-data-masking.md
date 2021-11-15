@@ -15,8 +15,7 @@ You set up a dynamic data masking policy in the Azure portal by selecting the dy
 * **Masking rules** - A set of rules that define the designated fields to be masked and the masking function that is used. The designated fields can be defined using a database schema name, table name, and column name.
 * **Masking functions** - A set of methods that control the exposure of data for different scenarios.
 
-> [!div class="mx-imgBorder"]
-> ![Dynamic Data Masking using the Azure portal](../media/az500-dynamic-data-masking.png)
+![Dynamic Data Masking using the Azure portal](../media/az500-dynamic-data-masking.png)
 
 ### Recommended fields to mask
 
