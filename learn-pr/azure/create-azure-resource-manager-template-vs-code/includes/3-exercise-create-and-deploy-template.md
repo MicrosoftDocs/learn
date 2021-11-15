@@ -100,7 +100,7 @@ Run the following commands to deploy the ARM template to Azure. The ARM template
 
 ```azurecli
 templateFile="azuredeploy.json"
-today=$(date +"%d-%b-%Y")
+today=$(date "+%d-%b-%Y")
 DeploymentName="blanktemplate-"$today
 
 az deployment group create \
