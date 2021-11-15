@@ -41,3 +41,9 @@ The main steps in the process are:
 1. Validate the presence of a new volume. Use Server Manager to validate the volume mount on the management server.
 
  >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MxmO]
+
+---
+
+
+
+---

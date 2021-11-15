@@ -8,7 +8,7 @@ module storage1 'modules/stor.bicep' = {
 }
 ```
 
-*stor.bicep*:
+*modules/stor.bicep*:
 
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {

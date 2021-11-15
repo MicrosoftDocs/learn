@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/16/2021
+  ms.date: 10/25/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Suppose someone runs this T-SQL batch script to insert three rows. After execution they get an error, how many rows will be created?```SQLINSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Database Administration', 'IT Professional', 5);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('C#.NET', 'Developer', 4);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Project Management', 'Management', 'Two');GO```"
+  - content: "Suppose someone runs this T-SQL batch script to insert three rows. After execution they get an error, how many rows will be created? ```INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Database Administration', 'IT Professional', 5);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('C#.NET', 'Developer', 4);INSERT INTO HumanResources.PossibleSkills (SkillName, Category, Credit) VALUES('Project Management', 'Management', 'Two');GO```"
     choices:
     - content: "0"
       isCorrect: false

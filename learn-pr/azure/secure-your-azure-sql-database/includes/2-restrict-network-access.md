@@ -67,24 +67,24 @@ Let's go through the firewall settings and see how they work. We'll use both the
 
 The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
-1. In Cloud Shell, SSH into your Linux VM if you aren't already connected.
+1. In Cloud Shell, SSH into your Linux VM if you aren't already connected. Replace `nnn.nnn.nnn.nnn` with the value from the `publicIpAddress` in the previous unit.
 
     ```bash
     ssh nnn.nnn.nnn.nnn
     ```
-
-    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` in the previous unit.
-
-1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
+  
+1. Rerun the `sqlcmd` command we retrieved earlier to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
-    You should receive an error when trying to connect. This is expected since we've not allowed any access to the database.
+    You should receive an error similar to the following output when trying to connect. This is expected since we've not allowed any access to the database.
 
     ```output
-    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open server 'securedb' requested by the login. Client with IP address '40.112.128.214' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Login timeout expired.
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : TCP Provider: Error code 0x2AF9.
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible.Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
     ```
 
 Let's grant access so we can connect.
@@ -99,7 +99,7 @@ Because our VM has outbound internet access, we can use the **Allow access to Az
 
 1. In the SQL server pane, in the left menu pane, under **Security**, select **Firewalls and virtual networks**.
 
-1. Set **Allow access to Azure services** to **YES**, and select **Save**.
+1. Set **Allow access to Azure services** to **YES**, and select **Save**. Wait until the system acknowledges this change.
 
 1. Back in your SSH session, let's try to connect to your database again.
 

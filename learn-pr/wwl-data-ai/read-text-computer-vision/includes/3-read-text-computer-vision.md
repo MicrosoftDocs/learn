@@ -2,10 +2,6 @@ A common computer vision challenge is to detect and interpret text in an image. 
 
 To test the capabilities of the OCR service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
-
-2. If you are prompted to review permissions, click **Accept**.
-
 ## Use the Computer Vision Service to Read Text in an Image
 
 The **Computer Vision** cognitive service provides support for OCR tasks, including:
@@ -13,7 +9,9 @@ The **Computer Vision** cognitive service provides support for OCR tasks, includ
 - An **OCR** API that you can use to read text in multiple languages. This API can be used synchronously, and works well when you need to detect and read a small amount of text in an image.
 - A **Read** API that is optimized for larger documents. This API is used asynchronously, and can be used for both printed and handwritten text.
 
-You can use this service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
+## Create a *Cognitive Services* resource 
+
+You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
 
 If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
@@ -29,9 +27,32 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
 4. View the **Keys and Endpoint** page for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
 
+## Run Cloud Shell 
+
+To test the capabilities of the Custom Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
+
+1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
+
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
+
+2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+
+3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. 
+
+    ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
+
+4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+    
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
+
+5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
+
+    ![Wait for PowerShell to start.](../media/powershell-prompt.png) 
+
+
 ## Configure and run a client application
 
-Now that you have a resource, you can run a simple client application that uses the Computer Vision service to analyze an image.
+Now that you have a custom model, you can run a simple client application that uses the OCR service. 
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -45,13 +66,25 @@ Now that you have a resource, you can run a simple client application that uses 
     code .
     ```
 
-    Notice how this opens up an editor. 
+    Notice how this opens up an editor like the one in the image below: 
+ 
+    ![The code editor.](../media/powershell-portal-guide-4.png)
 
 3. In the **Files** pane on the left, expand **ai-900** and select **ocr.ps1**. This file contains some code that uses the Computer Vision service to detect and analyze text in an image, as shown here:
 
     ![The editor containing code to analyze text in images.](../media/ocr-code.png)
     
-4. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource (which should still be in the top area of the browser) and paste them into the code editor, replacing the **YOUR_ENDPOINT** and **YOUR_KEY** placeholder values respectively.
+4. Don't worry too much about the details of the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
+
+    > [!TIP]
+    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+
+    After pasting the key and endpoint values, the first two lines of code should look similar to this:
+
+    ```PowerShell
+    $key="1a2b3c4d5e6f7g8h9i0j...."    
+    $endpoint="https..."
+    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**. Now that you've set up the key and endpoint, you can use your Cognitive Services resource to extract text from an image.
 

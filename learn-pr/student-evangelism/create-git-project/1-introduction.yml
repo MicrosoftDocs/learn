@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: mshumba
+  ms.author: chnoring
+  ms.date: 10/08/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

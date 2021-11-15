@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/29/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -52,10 +52,10 @@ quiz:
       explanation: "Update Management only pertains to cloud deployed virtual machines. Update Management pertains to virtual machines in on-premises environments, and in other cloud environments."
   - content: "Which of the following recommendations from Security Center is a medium-severity recommendation for virtual machines and servers?"
     choices:
-    - content: "Disk encryption should be applied on virtual machines"
+    - content: "Disk encryption should be applied on virtual machines."
       isCorrect: false
       explanation: "Encryption is always valuable and is a high-severity warning."
-    - content: "Install endpoint protection solution on virtual machines"
+    - content: "Install endpoint protection solution on virtual machines."
       isCorrect: true
       explanation: "Install endpoint protection solution on virtual machines is a medium-severity recommendation."
     - content: "System updates should be installed on your machines."

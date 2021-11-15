@@ -1,15 +1,13 @@
 
 Earlier, this course discussed Microsoft Azure Monitor. The following high-level diagram depicts the two fundamental data types that Azure Monitor uses, Metrics and Logs.
 
-> [!div class="mx-imgBorder"]
-> ![Data sources create metrics and logs that are displayed by Azure Monitor.](../media/az500-azure-monitor-1.png)
+![Data sources create metrics and logs that are displayed by Azure Monitor.](../media/az500-azure-monitor-1.png)
 
 On the left side of the figure are the sources of monitoring data that populate these data stores. On the right side are the different functions that Azure Monitor performs with this collected data, such as analysis, alerting, and streaming to external systems.
 
 For many Azure resources, you’ll find the data that Azure Monitor collects right in the resource’s **Overview page** in the Azure portal. Check out any virtual machine (VM). for example, and you'll notice several charts displaying performance metrics. Select any of the graphs to open the data in **Metrics Explorer**, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a Metrics Explorer graph.](../media/az500-azure-monitor-2.png)
+![Screenshot of a Metrics Explorer graph.](../media/az500-azure-monitor-2.png)
 
 You can analyze log data that Azure Monitor collects by using queries to quickly retrieve, consolidate, and analyze the collected data. You can create and test queries by using log analytics in the Azure portal and then either directly analyze the data by using these tools or save queries for use with visualizations or alert rules.
 

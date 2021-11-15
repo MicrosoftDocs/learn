@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-backups-restores.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/15-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As part of the process of implementing application-consistent backup of Azure Linux virtual machines, customers have to configure permissions for a number of files, including VMSnapshotScriptPluginConfig.json. Which user/s should have \"execute\" permissions to this file?"
+    choices:
+    - content: "Root user only"
+      isCorrect: false
+      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+    - content: "All users"
+      isCorrect: false
+      explanation: "Incorrect. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+    - content: "No users"
+      isCorrect: true
+      explanation: "Correct. Only the root user should have \"read\" and \"write\" permissions to VMSnapshotScriptPluginConfig.json, and no users should have \"execute\" permissions."
+  - content: "How does implementing application-consistent backup of Azure virtual machines differ between Windows and Linux?"
+    choices:
+    - content: "There is no difference, the process is handled identically in both cases."
+      isCorrect: false
+      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
+    - content: "Linux requires you to write your own pre-script and post-script framework."
+      isCorrect: true
+      explanation: "Correct. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
+    - content: "Linux does not support application-consistent backup."
+      isCorrect: false
+      explanation: "Incorrect. When taking application-consistent snapshots of Linux VMs, Azure Backup invokes only the pre/post scripts written by you. If the pre-scripts and post-scripts execute successfully, Azure Backup marks the recovery point as application consistent. However, when you're using custom scripts, you're ultimately responsible for application consistency."
+  - content: "The following steps have been suggested for taking a storage snapshot of a production SAP HANA workload, with an XFS file system spanning four Azure virtual disks. 1. Prepare the HANA snapshot. 2. Create all necessary blob snapshots on Azure. 3. Confirm the HANA snapshot. Can the process be relied upon to provide a consistent snapshot?"
+    choices:
+    - content: "Yes, the process should result in a consistent snapshot."
+      isCorrect: false
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
+    - content: "No, you must shut down SAP HANA before taking the snapshot, or the snapshot will not be consistent."
+      isCorrect: false
+      explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
+    - content: "No, you should also freeze the file system before creating the blob snapshots on Azure, and unfreeze it afterwards."
+      isCorrect: true
+      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this is not an option for a production system. Freezing the XFS file system (with xfs_freeze) will ensure consistency of the snapshot."
+  - content: "How often does SAP, as a general rule, recommend making a full backup of an SAP HANA system?"
+    choices:
+    - content: "Daily"
+      isCorrect: false
+      explanation: "Incorrect. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
+    - content: "Weekly"
+      isCorrect: true
+      explanation: "Correct. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
+    - content: "Monthly"
+      isCorrect: false
+      explanation: "Incorrect. General guidance from SAP is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely."
+  - content: "Which of the following statements applies when configuring a SQL Server file-snapshot backup, using the Azure Blob Storage service?"
+    choices:
+    - content: "The backup file cannot be stored using premium storage."
+      isCorrect: true
+      explanation: "Correct. The backup file itself cannot be stored using premium storage. The frequency of backups can be no shorter than 10 minutes, not 30 minutes. The maximum number of snapshots that you can store is 100, not 1000."
+    - content: "The frequency of backups can be no shorter than 30 minutes."
+      isCorrect: false
+      explanation: "Incorrect. The frequency of backups can be no shorter than 10 minutes, not 30 minutes."
+    - content: "The maximum number of snapshots that you can store is 1000."
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of snapshots that you can store is 100, not 1000."

@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.ensure-business-continuity-implement-disaster-recovery
+metadata:
+  title: Ensure business continuity and implement disaster recovery for SAP solutions on Azure​
+  description: Ensure business continuity and implement disaster recovery for SAP solutions on Azure​
+  ms.date: 10/26/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ensure business continuity and implement disaster recovery for SAP solutions on Azure​
+prerequisites: ""
+summary: |
+  SAP professionals need to ensure business continuity and implement disaster recovery for SAP solutions on Azure​. These modules explore high availability, disaster recovery, and backup and restore of SAP workloads on Azure.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.implement-high-availability-for-sap-workloads-azure
+- learn.wwl.implement-disaster-recovery-for-sap-workloads-azure
+- learn.wwl.perform-backups-restores
+trophy:
+  uid: learn.wwl.ensure-business-continuity-implement-disaster-recovery​.trophy

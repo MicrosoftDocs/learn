@@ -2,28 +2,23 @@ Increasingly, we expect computers to be able to use AI in order to understand sp
 
 To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-1. Click the **Activate Sandbox** button at the top of the page. This starts a Cloud Shell instance. 
+## Create a *Cognitive Services* resource
 
-2. If you are prompted to review permissions, click **Accept**.
+You can use the Translation service by creating either a **Translator** resource or a **Cognitive Services** resource.
 
-## Create *Language Understanding* Resources
-
-Microsoft Cognitive Services includes the Language Understanding service, which enables you to define *intents* that are applied to *entities* based on *utterances*. You can use either a **Language Understanding** or  **Cognitive Services** resource to *publish* a Language Understanding app, but you must create a separate **Language Understanding** resource for *authoring* the app.
+If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-2. Click **+ Create a resource**, and search for *Language Understanding*.
-3. In the list of services, click **Language Understanding**.
-4. In the **Language Understanding** blade, click **Create**.
-5. In the **Create** blade, enter the following details and click **Create**
-    - **Create option**: Both
-    - **Subscription**: *Select your Azure subscription*
-    - **Resource Group**: *Select an existing resource group or create a new one*
-    - **Name**: *A unique name for your service*
-    - **Authoring location**: *Select any available location*
-    - **Authoring pricing tier**: Free F0
-    - **Runtime location**: *Same as authoring location*
-    - **Runtime pricing tier**: Free F0
-6. Wait for the resources to be created, and note that two Language Understanding resources are provisioned; one for authoring, and another for prediction. You can view these by navigating to the resource group where you created them.
+2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+    - **Subscription**: *Your Azure subscription*.
+    - **Resource group**: *Select or create a resource group with a unique name*.
+    - **Region**: *Choose any available region*:
+    - **Name**: *Enter a unique name*.
+    - **Pricing tier**: S0
+    - **I confirm I have read and understood the notices**: Selected.
+
+3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
+4. View the **Keys and Endpoint** page for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
 
 ### Create a Language Understanding App
 
@@ -76,13 +71,31 @@ To use your trained model in a client application, you must publish it as an end
 2. After the model has been published, at the top of the Language Understanding page for your app, click **Manage**. Then on the **Settings** tab, note the **Application ID** for your app. You will need this value later.
 3. On the **Azure Resources** tab, note the **Primary key** and **Endpoint URL** for your prediction resource. You will also need these later.
 
-## Use your Language Understanding app from a client
+## Run Cloud Shell 
 
-To consume your language model from a client, we'll use a simple command-line application that runs in the Cloud Shell provided with your Azure subscription.
+To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
+
+1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
+
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
+
+2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+
+3. If you are prompted to create storage for your Cloud Shell, ensure your subscription is specified and select **Create storage**. Then wait a minute or so for the storage to be created. 
+
+    ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
+
+4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+    
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
+
+5. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
+
+    ![Wait for PowerShell to start.](../media/powershell-prompt.png) 
 
 ## Configure and run a client application
 
-Now that you have a language model, you can run a simple client application that uses the Language Understanding service.
+Now that you have a custom model, you can run a simple client application that uses the Language Understanding service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -96,13 +109,24 @@ Now that you have a language model, you can run a simple client application that
     code .
     ```
 
-    Notice how this opens up an editor. 
+    Notice how this opens up an editor like the one in the image below: 
+ 
+    ![The code editor.](../media/powershell-portal-guide-4.png)
 
 3. In the **Files** pane on the left, expand **ai-900** and select **understand.ps1**. This file contains some code that uses your Language Understanding model, as shown here:
 
     ![The editor containing code to use a Language Understanding app](../media/understand-code.png)
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the application ID, key, and endpoint URL for your published language model. Copy these from the **Manage** page in th Language Understanding portal (which should still be open in another browser tab) and paste them into the code editor, replacing the **YOUR_APP_ID**, **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
+4. Don't worry too much about the details of the code, the important thing is that it needs the application ID, key, and endpoint URL for your published language model. Copy these from the **Manage** page in th Language Understanding portal from the Azure portal and paste them into the code editor, replacing the **YOUR_APP_ID**, **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
+
+    After pasting the app ID, key, and endpoint values, the first lines of code should look similar to this:
+
+    ```PowerShell
+    $appId="abcde"
+    $key = "1a2b3c4d5e6f7g8h9i0j...."
+    $endpointUrl="https..."
+
+    ```
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 6. In the PowerShell pane, enter the following command to run the code:

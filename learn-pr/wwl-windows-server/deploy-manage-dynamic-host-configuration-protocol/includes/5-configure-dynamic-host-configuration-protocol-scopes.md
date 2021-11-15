@@ -81,3 +81,9 @@ The following video demonstrates how to create a DHCP scope using the DHCP conso
     - MAC address
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP4]
+
+---
+
+
+
+---

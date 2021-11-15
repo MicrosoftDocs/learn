@@ -9,7 +9,7 @@ Microsoft Azure Storage is a *managed* service that provides *durable*, *secure*
  | **Secure** | All data written to Azure Storage is encrypted by the service. Azure Storage provides you with fine-grained control over who has access to your data. |
  | **Scalable** | Azure Storage is designed to be massively scalable to meet the data storage and performance needs of today's applications. |
 
-A single Azure subscription can host up to 200 storage accounts, each of which can hold 500 TB of data.
+A single Azure subscription can host up to 250 storage accounts per region, each of which has a maximum storage account capacity of 5 PiB.
 
 ## Data types in Azure storage services
 
@@ -56,7 +56,7 @@ You can use queues to loosely connect different parts of your application togeth
 
 ### Table Storage
 
-For more information about Azure Table Storage, see ../../azure/storage/tables/table-storage-overview
+For more information about Azure Table Storage, see [Table Storage Overview](/azure/storage/tables/table-storage-overview)
 
 ## Azure storage accounts
 
