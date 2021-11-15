@@ -1,8 +1,8 @@
-Managing your twin graph may include creating, modifying, and deleting digital twins in an Azure Digital Twins instance. You can also manage the underlying models. To complete these operations, you can use the Digital Twins APIs and SDKs, the Azure Digital Twins CLI command set, or a GUI tool such as the Azure Digitial Twins explorer.
+Managing your twin graph may include creating, modifying, and deleting digital twins in an Azure Digital Twins instance. You can also manage the underlying models. To complete these operations, you can use the Digital Twins APIs and SDKs, the Azure Digital Twins CLI command set, or a GUI tool such as the Azure Digital Twins explorer.
 
 ## Using the .NET (C\#) SDK
 
-The Azure Digital Twins .NET (C\#) SDK is part of the Azure SDK for .NET. It's open source, and is based on the Azure Digital Twins data plane APIs.
+The Azure Digital Twins .NET (C\#) SDK is part of the Azure SDK for .NET. It is open source, and is based on the Azure Digital Twins data plane APIs.
 
 The following sections describe how to perform some common management tasks using the .NET (C\#) SDK.
 
@@ -17,13 +17,13 @@ await client.CreateOrReplaceDigitalTwinAsync<BasicDigitalTwin>(twinId, initData)
 
 To create a digital twin, you need to provide:
 
- -  The desired ID for the digital twin
- -  The model you want to use
+ -  The desired ID for the digital twin.
+ -  The model you want to use.
 
-Optionally, you can provide initial values for all properties of the digital twin. Properties are treated as optional and can be set later, but they won't show up as part of a twin until they've been set.
+Optionally, you can provide initial values for all properties of the digital twin. Properties are treated as optional and can be set later, but they will not show up as part of a twin until they have been set.
 
 > [!NOTE]
-> While twin properties don't have to be initialized, any components on the twin do need to be set when the twin is created. They can be empty objects, but the components themselves must exist.
+> While twin properties do not have to be initialized, any components on the twin do need to be set when the twin is created. They can be empty objects, but the components themselves must exist.
 
 The model and any initial property values are provided through the initData parameter, which is a JSON string containing the relevant data.
 
@@ -52,7 +52,7 @@ await client.CreateOrReplaceDigitalTwinAsync<BasicDigitalTwin>(twinId, initData)
 ```
 
 > [!NOTE]
-> As shown in the code above, BasicDigitalTwin objects come with their own \`Id\` field. You can leave this field empty, but if you do provide an ID value, it needs to match the value of the ID parameter passed to the \`CreateOrReplaceDigitalTwinAsync()\` call, which also includes an ID parameter.
+> As shown in the preceding code, BasicDigitalTwin objects come with their own \`Id\` field. You can leave this field empty, but if you do provide an ID value, it needs to match the value of the ID parameter passed to the \`CreateOrReplaceDigitalTwinAsync()\` call, which also includes an ID parameter.
 
 ### Get data for a digital twin
 
@@ -78,7 +78,7 @@ await client.UpdateDigitalTwinAsync(twinId, updateTwinData);
 
 ```
 
-A patch call can update as many properties on a single twin as you'd like (even all of them). If you need to update properties across multiple twins, you'll need a separate update call for each twin.
+A patch call can update as many properties on a single twin as you would like (even all of them). If you need to update properties across multiple twins, you will need a separate update call for each twin.
 
 > [!TIP]
 > After creating or updating a twin, there may be a latency of up to 10 seconds before the changes will be reflected in queries. The GetDigitalTwin API (described earlier in this article) does not experience this delay, so use the API call instead of querying to see your newly updated twins if you need an instant response.
@@ -223,7 +223,7 @@ private static async Task CustomMethod_FindAndDeleteIncomingRelationshipsAsync(D
 
 ## Using the Azure Digital Twins Explorer
 
-Azure Digital Twins Explorer is a developer tool for visualizing and interacting with the data in your Azure Digital Twins instance, including your models and twin graph.
+The Azure Digital Twins Explorer is a developer tool for visualizing and interacting with the data in your Azure Digital Twins instance, including your models and twin graph.
 
 The main way to access Azure Digital Twins Explorer is through the Azure portal. With your Azure Digital Twins instance open in the portal, you can open a connected Azure Digital Twins Explorer window by selecting the Open Azure Digital Twins Explorer (preview) button.
 
@@ -237,7 +237,7 @@ You can use the Query Explorer panel at the top of the explorer to perform queri
 
 You can create a new digital twin from its model definition in the Models panel on the left side of the explorer window.
 
-To create a twin from a model, find that model in the list and choose the Create a Twin icon next to the model name. You'll be asked to enter a name for the new twin, which must be unique. Then save the twin, which will add it to your graph.
+To create a twin from a model, find that model in the list and choose the Create a Twin icon next to the model name. You will be asked to enter a name for the new twin, which must be unique. Then save the twin, which will add it to your graph.
 
 ### Create relationships
 
@@ -278,11 +278,11 @@ The import file can be in either of these two formats:
 
 #### Import the file to Azure Digital Twins Explorer
 
-Once you have a file on your local machine that's ready to be imported, select the Import Graph icon in the Twin Graph panel.
+Once you have a file on your local machine that is ready to be imported, select the Import Graph icon in the Twin Graph panel.
 
 In the file selector box that appears, navigate to the graph file (.xlsx or .json) that you want to upload and choose Open to upload it.
 
-Azure Digital Twins Explorer will open an Import panel showing a preview of the graph to be imported. To confirm, select the Save icon in the upper-right corner of the panel.
+The Azure Digital Twins Explorer will open an Import panel showing a preview of the graph to be imported. To confirm, select the Save icon in the upper-right corner of the panel.
 
 If the import is successful, a modal window will display the number of models, twins, and relationships that were uploaded.
 
