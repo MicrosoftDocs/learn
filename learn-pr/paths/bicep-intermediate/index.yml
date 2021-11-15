@@ -15,13 +15,15 @@ summary: |
   Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
   deployments more consistent and repeatable.
 
-  Take this learning path to deepen your understanding of how to use Bicep to deploy your Azure resources. In it, you'll:
+  Take this learning path to deepen your understanding of Bicep. In it, you'll:
 
   * Deploy child and extension resources.
   * Add your Bicep code to the Git version control system to track its history and collaborate with team members.
   * Follow proven best practices to create high-quality Bicep code.
-  * Ensure consistency and compliance by creating libraries of templates.
+  * Ensure reusability, consistency, and compliance by creating libraries of modules and templates.
   * Use the what-if command to check the effects of your Bicep files before you deploy them.
+
+  *NOTE TO REVIEWERS: The module 'Consume and publish Bicep modules by using registries' will be added to this path around December.*
 
   To learn about Bicep, we recommend you take these three learning paths:
 

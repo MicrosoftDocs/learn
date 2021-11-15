@@ -23,6 +23,8 @@ summary: |
   * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
   * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
 
+  *NOTE TO REVIEWERS: The untitled module about deployment stacks will be added to this path in early 2022.*
+
   To learn about Bicep, we recommend you take these three learning paths:
 
   :::row:::
