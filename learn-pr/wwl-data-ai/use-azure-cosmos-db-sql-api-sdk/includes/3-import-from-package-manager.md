@@ -14,7 +14,7 @@ Invoke the ``dotnet add package`` command with only the name of the package. For
 
 ### Import a specific version of the package
 
-Invoke the ``dotnet add package`` command with the name of the package and the ``--version`` argument specifying a specific package version. For example, this command will import the **3.21.0** version of the **Microsoft.Azure.Cosmos** library.
+Invoke the ``dotnet add package`` command with the name of the package and the ``--version`` argument specifying a specific package version. For example, this command will import the **3.22.1** version of the **Microsoft.Azure.Cosmos** library.
 
 :::code language="azurecli" source="../media/3-script.sh" range="3-4" highlight="2":::
 
@@ -22,7 +22,7 @@ Invoke the ``dotnet add package`` command with the name of the package and the `
 
 ## .NET project file
 
-Once imported, the package specification will be added to the **csproj** file for the .NET project. The project file uses the XML format and a new element named **PackageReference** is created within the **ItemGroup** element with the name of the package and the version. In this example, the **3.21.0** version of the **Microsoft.Azure.Cosmos** library was imported into the project from NuGet.
+Once imported, the package specification will be added to the **csproj** file for the .NET project. The project file uses the XML format and a new element named **PackageReference** is created within the **ItemGroup** element with the name of the package and the version. In this example, the **3.22.1** version of the **Microsoft.Azure.Cosmos** library was imported into the project from NuGet.
 
 :::code language="xml" source="../media/3-project.xml" highlight="7":::
 
