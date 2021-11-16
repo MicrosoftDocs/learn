@@ -4,7 +4,7 @@ metadata:
   title: Deploy Azure resources by using Bicep and GitHub Actions
   description: Learn how to use GitHub Actions to deploy your Bicep code in an automated way.
   brand: azure
-  ms.date: 11/17/2021
+  ms.date: 11/16/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
