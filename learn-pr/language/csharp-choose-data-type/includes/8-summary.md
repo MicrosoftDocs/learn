@@ -4,7 +4,4 @@ You've started building a mental model of how data is stored as your application
 
 There's even more to learn about data types. In this module, we merely looked at built-in types, but you can also design and implement your own custom data types using structs, enums and classes. You'll learn about these in other modules.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]
