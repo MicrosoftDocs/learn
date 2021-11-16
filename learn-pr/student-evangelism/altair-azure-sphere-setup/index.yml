@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-setup
 metadata:
   title: Set up the Altair emulator and Azure Sphere
   description: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
-  ms.date: 10/01/2021
+  ms.date: 11/17/2021
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
