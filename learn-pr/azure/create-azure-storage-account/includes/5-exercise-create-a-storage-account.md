@@ -6,7 +6,7 @@ Your list of design and feature goals is:
 - The site must handle unexpected spikes in upload volume.
 - Outdated content must be removed as surf conditions change so the site always shows current conditions.
 
-To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing, and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
+You decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
 ## Create a storage account using Azure portal
 
@@ -34,19 +34,19 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Setting | Value |
     |---|---|
     | **Security** | 
-    | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
-    | Enable infrastructure encryption | *Uncheck*. Provides additional layer of security. |
+    | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
+    | Enable infrastructure encryption | *Uncheck*. Not required for this module. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
     | Enable storage account key access | *Check*. We'll allow clients to access dat via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | **Data Lake Storage Gen2** |
-    | Enable hierarchical namespace | *Uncheck*. This is for big-data applications that aren't relevant to this module. |
-    | **Secure File Trasfer Protocol (SFTP)** |
-    | Enable SFTP| *Uncheck*. This is item is disabled by default and isn't relevant to this module. |
+    | Enable hierarchical namespace | *Uncheck*. Data Lake hierarchical namespace is for big-data applications that aren't relevant to this module. |
+    | **Secure File Transfer Protocol (SFTP)** |
+    | Enable SFTP| *Uncheck*. SFTP is disabled by default and isn't relevant to this module. |
     | **Blob storage** |
     | Enable network file share | *Uncheck* (default). |
-    | Allow cross-tenant replication | *Uncheck*. Active Directory is not checking user access. |
+    | Allow cross-tenant replication | *Uncheck*. Active Directory is not being used for this exercise. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
@@ -88,4 +88,4 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about your new storage account.
 
-You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.
+You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. The typical flow for creating a storage account is: first analyze your data and goals, and then configure the storage account options to match.
