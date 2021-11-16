@@ -1,9 +1,9 @@
 ### YamlMime:LearningPath
 uid: learn.aspnet.build-blazor-webapps
-title: Build Web Applications with Blazor
+title: Build web applications with Blazor
 summary: Learn how to build your first web application with the Blazor web user-interface framework.
 metadata:
-  title: Build Web Applications with Blazor learning path
+  title: Build web applications with Blazor learning path
   description: Learn how to build your first web application with the free and open-source Blazor web user-interface framework.
   ms.date: 09/03/2021
   author: csharpfritz
