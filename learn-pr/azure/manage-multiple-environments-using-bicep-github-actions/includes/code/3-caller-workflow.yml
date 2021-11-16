@@ -1,0 +1,6 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  job:
+    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
