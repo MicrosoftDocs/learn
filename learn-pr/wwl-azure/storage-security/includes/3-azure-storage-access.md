@@ -13,5 +13,5 @@ Authenticating and authorizing access to blob and queue data with Azure AD provi
 
 Similarly, you can continue to use shared access signatures (SAS) to grant fine-grained access to resources in your storage account, but Azure AD offers similar capabilities without the need to manage SAS tokens or worry about revoking a compromised SAS.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Where possible use authorizing applications that access Azure Storage using Azure AD. It provides better security and ease of use over other authorization options.
