@@ -4,7 +4,7 @@ metadata:
   title: Deploy Azure resources by using Bicep and GitHub Actions
   description: Learn how to use GitHub Actions to deploy your Bicep code in an automated way.
   brand: azure
-  ms.date: 10/26/2021
+  ms.date: 11/08/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -19,17 +19,18 @@ summary: |
   * Build a workflow that deploys your Bicep files.
   * Create a service principal that can securely connect your workflow to Azure.
   * Ensure your Bicep code quality by validating and testing it within your workflow.
+  * Work with multiple environments, and handle parameters and approvals.
 
   To learn about Bicep, we recommend you take these two learning paths:
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-deploy-manage)
 
     [Part 1: Deploy and manage resources in Azure by using Bicep](xref:learn.bicep-deploy-manage)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
     [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
   :::column-end:::
@@ -39,7 +40,7 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>](xref:learn.bicep-azure-pipelines)
 
     [Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
   :::column-end:::
@@ -66,5 +67,6 @@ modules:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals
 - learn.azure.test-bicep-code-using-github-actions
+- learn.azure.manage-multiple-environments-using-bicep-github-actions
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy

@@ -32,5 +32,5 @@ The following table lists security best practices for using Key Vault.
 The main difference between Standard and Premium is that **Premium supports HSM-protected keys**.
 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >If a user has contributor permissions (RBAC) to a key vault management plane, they can grant themselves access to the data plane by setting a key vault access policy. We recommend that you tightly control who has contributor access to your key vaults, to ensure that only authorized persons can access and manage your key vaults, keys, secrets, and certificates.

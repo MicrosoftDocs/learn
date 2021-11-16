@@ -23,10 +23,12 @@ Some of the features of Azure Cosmos DB are:
 > [!NOTE] 
 > Azure Cosmos DB is flexible and stores data in atom-record-sequence (ARS) format. The data is then abstracted and projected as an API.
 
- [Azure Table storage](/azure/storage/tables/table-storage-overview) is a service that stores non-relational structured data (also known as structured NoSQL data). Table storage provides a key/attribute store with a schemaless design. Your tables will scale as demand increases. 
+ 
+## Differences between Azure Storage tables and Azure Cosmos DB tables
+
+[Azure Table storage](/azure/storage/tables/table-storage-overview) is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve.. 
 
 :::image type="content" source="../media/table-storage.png" alt-text="Storage account, table, and entity.":::
-
 
 Common uses of Table storage include:
 
@@ -37,11 +39,6 @@ Common uses of Table storage include:
 - Quickly querying data using a [clustered index](/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described). Access to Table storage data is fast and cost-effective for many types of applications. Table storage is typically lower in cost than traditional SQL for similar volumes of data.
 
  
-
-## Differences between Azure Storage tables and Azure Cosmos DB tables
-
-Azure Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design. Because Table storage is schemaless, it's easy to adapt your data as the needs of your application evolve.. 
-
 Azure Cosmos DB provides the Table API for applications that are written for Azure Table storage and that need premium capabilities like high availability, scalability, and dedicated throughput.
 
 There are some differences in behavior between Azure Storage tables and Azure Cosmos DB tables to remember if you are considering a migration. For example:

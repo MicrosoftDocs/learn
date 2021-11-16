@@ -4176,6 +4176,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/data-ai-cert/upload-data-to-azure-data-lake-storage/5-copy-data-from-gen1-to-gen2.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/upload-data-to-azure-data-lake-storage/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/explore-monitoring-reporting/5-explore-azure-service-health.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-general-security-network-security-features",
       "redirect_document_id": false
@@ -8999,7 +9004,7 @@
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-razor-pages-aspnet-core/8-summary",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
@@ -9106,119 +9111,119 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/index.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/1-introduction.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/1-introduction",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/1-introduction",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/2-azure-function-development-overview.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/2-azure-function-development-overview",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/2-azure-function-development-overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/2-azure-function-development-overview",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/3-create-triggers-bindings.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/3-create-triggers-bindings",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/3-create-triggers-bindings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/3-create-triggers-bindings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/4-connect-azure-services.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/4-connect-azure-services",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/4-connect-azure-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/4-connect-azure-services",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/5-create-function-visual-studio-code.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/5-create-function-visual-studio-code",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/5-create-function-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/5-create-function-visual-studio-code",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/6-knowledge-check.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/6-knowledge-check",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/6-knowledge-check",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-azure/learn-publish-process/7-summary.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/7-summary",
-    "redirect_document_id": false
+      "source_path": "learn-pr/wwl-azure/learn-publish-process/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/7-summary",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/0-introduction.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/0-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/1-program-structure.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/1-program-structure",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/1-program-structure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/1-program-structure",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/2-variables.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/2-variables",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/2-variables.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/2-variables",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/3a-if-else-expressions.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/4-if-else-expressions",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/3a-if-else-expressions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/4-if-else-expressions",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/3-data-types.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/3-basic-data-types",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/3-data-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/3-basic-data-types",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/4a-functions.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/6-functions",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/4a-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/6-functions",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/4b-exercise-functions.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/7-exercise",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/4b-exercise-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/7-exercise",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/4-structs-enums.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/4-tuples-structs",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/4-structs-enums.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/4-tuples-structs",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/3-for-while-loop",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/7a-loops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/3-for-while-loop",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/7-collection-types.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/1-arrays",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/7-collection-types.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-if-else-expressions/1-arrays",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/8-exercise-indexing.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/4-exercise-loop",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/8-exercise-indexing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/4-exercise-loop",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/9-exercise-hashmaps.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/2-exercise-hash-map",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/9-exercise-hashmaps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-loop-expressions/2-exercise-hash-map",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/11-knowledge-check.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/12-summary.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/language/rust-understand-common-concepts/index.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/language/rust-understand-common-concepts/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-create-program/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/implement-sql-data-warehouse/index.md",
@@ -9453,7 +9458,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/4-solution-azure-blob-storage.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/5-solution-azure-data-brick.md",
@@ -9468,7 +9473,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/7-design-azure-synapse-analytics-solution-for-data-analysis.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-integration",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-data-integration/8-design-strategy-for-hot-warm-cold-data-path.md",
@@ -9504,6 +9509,166 @@
       "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/8-design-for-azure-table-storage.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-data-storage-solution-for-relational-data/6-recommend-database-availability",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/4-design-key-secret-management-azure-key-vault.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/2-design-managed-identities.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/3-design-service-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-identities-access-for-applications/6-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/design-identity-governance-monitor-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/6-design-automated-app-deployment-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/8-design-automated-app-deployment-solution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/8-configuration-management-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/9-configuration-management-solution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-application-architecture/9-design-caching-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-application-architecture/6-design-caching-solution",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/6-design-for-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/7-design-for-azure-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/7-design-for-resource-tags.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/6-design-for-resource-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/8-design-for-azure-blueprints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/9-design-for-azure-blueprints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-governance/10-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/11-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/6-compare-external-identity-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/8-design-for-conditional-access.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/6-design-for-conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/7-design-for-role-based-access-control.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-for-identity-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/7-design-for-identity-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/10-design-for-access-reviews.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/8-design-for-access-reviews",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/2-describe-common-practices-for-data-loading.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/3-load-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/2-describe-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/3-explore-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }

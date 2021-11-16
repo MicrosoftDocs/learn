@@ -1,10 +1,10 @@
 Triaging and investigating security alerts can be time consuming for even the most skilled security analysts. For many, it's hard to know where to begin.
 
-Security Center uses analytics to connect the information between distinct security alerts. Using these connections, Security Center can provide a single view of an attack campaign and its related alerts to help you understand the attacker's actions and the affected resources.
+Defender for Cloud uses analytics to connect the information between distinct security alerts. Using these connections, Defender for Cloud can provide a single view of an attack campaign and its related alerts to help you understand the attacker's actions and the affected resources.
 
 Incidents appear on the Security alerts page. Select an incident to view the related alerts and get more information.
 
-On the Security Center overview page, select the Security alerts tile. The incidents and alerts are listed. Notice that security incidents have a different icon to security alerts.
+On the Defender for Cloud overview page, select the Security alerts tile. The incidents and alerts are listed. Notice that security incidents have a different icon to security alerts.
 
 ![Incidents in the Alerts page](../media/security-center-manage-alerts.png)
 
@@ -30,9 +30,9 @@ To remediate the threats in the incident, follow the remediation steps provided 
 
 ## Generate threat intelligence reports
 
-Security Center threat protection works by monitoring security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats.
+Defender for Cloud threat protection works by monitoring security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats.
 
-When Security Center identifies a threat, it triggers a security alert containing detailed information regarding the event, including suggestions for remediation. Security Center provides threat intelligence reports containing information about detected threats to help incident response teams investigate and remediate threats. The report includes information such as:
+When Defender for Cloud identifies a threat, it triggers a security alert containing detailed information regarding the event, including suggestions for remediation. Defender for Cloud provides threat intelligence reports containing information about detected threats to help incident response teams investigate and remediate threats. The report includes information such as:
 
 - Attacker’s identity or associations (if this information is available)
 
@@ -48,7 +48,7 @@ When Security Center identifies a threat, it triggers a security alert containin
 
 - Mitigation and remediation information
 
-Security Center has three types of threat reports, which can vary according to the attack. The reports available are:
+Defender for Cloud has three types of threat reports, which can vary according to the attack. The reports available are:
 
 - Activity Group Report: provides deep dives into attackers, their objectives, and tactics.
 
@@ -62,7 +62,7 @@ This type of information is useful during the incident response process, where t
 
 To generate the report:
 
-From Security Center's sidebar, open the Security alerts page.
+From Defender for Cloud's sidebar, open the Security alerts page.
 
 Select an alert. The alerts details page opens with more details about the alert. Below is the Ransomware indicators detected alert details page.
 
