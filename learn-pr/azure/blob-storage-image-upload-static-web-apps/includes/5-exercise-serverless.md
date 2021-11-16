@@ -1,8 +1,8 @@
-It's time to create your application's backend. For that you are going to create an Azure Function that will serve as the REST API generating on demand shared access signatures so your users can upload images to your Blob Storage container. This exercise will guide you on how to create the Azure Function, install the required libraries, and write the code that will generated on demand SAS keys.
+It's time to create your application's backend. For that you are going to create an Azure Function that will serve as the REST API generating on-demand shared access signatures so your users can upload images to your Blob Storage container. This exercise will guide you on how to create the Azure Function, install the required libraries, and write the code that will generate on-demand SAS keys.
 
 ## Create the Azure Function REST API
 
-1. Create project folder, call it `uploadimage`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
+1. Create project folder, call it `upload_image`. Then open that folder inside Visual Studio Code. Once in VS Code, be sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
 
 2. Create a new Azure Function. Type `ctrl+shift+p` to launch the command prompt. Type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.
 
@@ -53,7 +53,7 @@ It's time to create your application's backend. For that you are going to create
     }
     ```
 
-    The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions strings, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
+    The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions string, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
 
 2. Create a file inside the `credentials` folder and call it `utils.js`. Paste the content from this file inside there: [utils.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/utils.js)
 
@@ -83,6 +83,6 @@ It's time to create your application's backend. For that you are going to create
     };
     ```
 
-Your `index.js` should like like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
+Your `index.js` should look like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
 
 You have successfully created your serverless backend. The next step is to implement the frontend that will let you upload images to Azure Blob Storage.
