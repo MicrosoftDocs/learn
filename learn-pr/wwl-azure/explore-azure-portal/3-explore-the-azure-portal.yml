@@ -4,13 +4,14 @@ title: Customize the Azure portal UI
 metadata:
   title: Customize the Azure portal UI
   description: "Customize the Azure portal UI"
-  ms.date: 11/10/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+azureSandbox: false
+labId: 110062
+labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/3-explore-the-azure-portal.md)]
