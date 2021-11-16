@@ -36,7 +36,7 @@ Alternatively, you can purge cached content from the edge nodes, which refreshes
 You can purge content in several ways.
 
 * On an endpoint by endpoint basis, or all endpoints simultaneously should you want to update everything on your CDN at once.
-* Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox in the Azure Portal.
+* Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox in the Azure portal.
 * Based on wildcards (*) or using the root (/).
 
 The Azure CLI provides a special purge verb that will unpublish cached assets from an endpoint. This is very useful if you have an application scenario where a large amount of data is invalidated and should be updated in the cache. To unpublish assets, you must specify either a file path, a wildcard directory, or both:
