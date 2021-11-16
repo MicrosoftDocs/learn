@@ -28,12 +28,9 @@ quiz:
     - content: "Source control is the practice of tracking and managing changes to code."
       isCorrect: true
       explanation: "That's correct. Source control is the practice of tracking and managing changes to code."
-  - content: "Which of the following choices is not a benefit of using distributed version control?"
+  - content: "Which of the following choices isn't a benefit of using distributed version control?"
     choices:
     - content: "Complete offline support"
-      isCorrect: false
-      explanation: "That is incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
-    - content: "Cross-platform support"
       isCorrect: false
       explanation: "That is incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
     - content: "Allows exclusive file locking"
@@ -42,7 +39,7 @@ quiz:
     - content: "Portable history"
       isCorrect: false
       explanation: "That is incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
-  - content: "Which of the following choices is not a benefit of using centralized version control?"
+  - content: "Which of the following choices isn't a benefit of using centralized version control?"
     choices:
     - content: "Easily scales for large codebases"
       isCorrect: false
@@ -51,8 +48,5 @@ quiz:
       isCorrect: true
       explanation: "That is correct. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."
     - content: "Allows exclusive file locking"
-      isCorrect: false
-      explanation: "That's incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."
-    - content: "Granular permission control"
       isCorrect: false
       explanation: "That's incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."

@@ -14,7 +14,7 @@ If you are synchronizing to Azure Repos, you can also add a security rule that p
 
 Every source control system works best when developers understand how it works and which conventions work.
 
-While you cannot overwrite history with TFVC, you can still overwrite code and do other painful things.
+While you cannot overwrite history with Team Foundation Version Control (TFVC), you can still overwrite code and do other painful things.
 
 ## Large files
 

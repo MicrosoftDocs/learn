@@ -25,7 +25,7 @@ This recipe will start by:
 
 ## Getting ready
 
-In this tutorial, we will learn how to initialize a Git repository locally.
+In this tutorial, we'll learn how to initialize a Git repository locally.
 
 Then we will use the ASP.NET Core MVC project template to create a new project and version it in the local Git repository.
 
@@ -97,7 +97,7 @@ code .
 
 5.  When the project opens in Visual Studio Code, select **Yes** for the **Required assets to build and debug are missing from 'myWebApp.' Add them?** Warning message. Select **Restore** for the **There are unresolved dependencies** info message. Hit **F5** to debug the application, then myWebApp will load in the browser, as shown in the following screenshot:
 
-:::image type="content" source="../media/image-110bbaac-457e-4ae2-85f2-1e4301620b5b-64d43d48.png" alt-text="Web App from Visual Studio Code.":::
+:::image type="content" source="../media/web-app-from-visual-studio-code-578464bb.png" alt-text="Web App from Visual Studio Code.":::
 
 
 If you prefer to use the command line, you can run the following commands in the context of the git repository to run the web application.
@@ -112,17 +112,17 @@ dotnet run
 
 You will notice the ".vscode" folder is added to your working folder. To avoid committing this folder into your Git repository, you can include it in the .gitignore file. With the ".vscode" folder selected, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected folder in the .gitIgnore file:
 
-:::image type="content" source="../media/image-e3371a59-eae8-440f-87bf-bd8c682d590a-6b729afc.png" alt-text="Add file to .gitignore.":::
+:::image type="content" source="../media/add-file-gitignore-a59fa521.png" alt-text="Add file to .gitignore.":::
 
 
 6.  To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
 
-:::image type="content" source="../media/image-1a95d906-19e3-4365-a57b-d786f8fa53c5-2e0712d1.png" alt-text="Commit using VSCode.":::
+:::image type="content" source="../media/commit-using-vscode-e38129f0.png" alt-text="Commit using VSCode.":::
 
 
 Open Program.cs, you will notice Git lens decorates the classes and functions with the commit history and brings this information inline to every line of code:
 
-:::image type="content" source="../media/image-4118c81f-53cc-4db7-9206-36f14024660f-b5effff6.png" alt-text="Program.cs code showing class decoration.":::
+:::image type="content" source="../media/program-code-showing-class-decoration-318e7a26.png" alt-text="Program.cs code showing class decoration.":::
 
 
 7.  Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `master` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
@@ -153,7 +153,7 @@ With these commands, you have created a new branch, checked it out. The `--list`
 
 9.  Refresh the web app in the browser to see the changes.
 
-:::image type="content" source="../media/image-6465c982-2357-4057-8fa9-a953b6c32451-64b22369.png" alt-text="Localhost welcome page.":::
+:::image type="content" source="../media/localhost-welcome-page-d81bd903.png" alt-text="Localhost welcome page.":::
 
 
 10. In the context of the git repository, execute the following commands. These commands will stage the changes in the branch and then commit them.
@@ -180,7 +180,7 @@ git merge feature-devops-home-page
 
 ```
 
-:::image type="content" source="../media/image-806a38cd-e1d5-4067-9c3e-a689c9a528a7-fa977f87.png" alt-text="Merge feature-devops-home-page output window.":::
+:::image type="content" source="../media/merge-feature-devops-home-page-output-window-4ee10ad1.png" alt-text="Merge feature-devops-home-page output window.":::
 
 
 12. Run the below command to delete the feature branch.
@@ -199,12 +199,12 @@ The easiest way to understand the outcome of the steps done earlier is to check 
 1.  In Git, committing changes to a repository is a two-step process. Running: `add .` The changes are staged but not committed. Finally, running commit promotes the staged changes into the repository.
 2.  To see the history of changes in the master branch, run the command `git log -v`
 
-:::image type="content" source="../media/image-717e79c3-316d-444d-88e7-6a191f8755a1-50a09b3f.png" alt-text="History of changes in the master branch.":::
+:::image type="content" source="../media/history-changes-master-branch-721b0c7f.png" alt-text="History of changes in the master branch.":::
 
 
 3.  To investigate the actual changes in the commit, you can run the command `git log -p`
 
-:::image type="content" source="../media/image-de48ef5b-e7d9-4483-b21d-bc47b7753e7c-8678bdcd.png" alt-text="Command line-showing git log -p output with file the changes.":::
+:::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2.png" alt-text="Command line-showing git log -p output with file the changes.":::
 
 
 ## There is more

@@ -1,4 +1,4 @@
-:::image type="content" source="../media/image-bd1c1f8d-33f0-48f6-8d0c-7104611b9c9a-c6e642b6.png" alt-text="Strengths are cross platform, open source, offline support, and history. Best used for small codebases, evolving open course, distributed teams, and Greenfield projects.":::
+:::image type="content" source="../media/distributed-strengths-best-used-143d1739.png" alt-text="Strengths are cross platform, open source, offline support, and history. Best used for small codebases, evolving open course, distributed teams, and Greenfield projects.":::
 
 
 Over time, so-called "distributed" source control or version control systems (DVCS for short) have become the most important. The three most popular are Git, Mercurial, and Bazaar.

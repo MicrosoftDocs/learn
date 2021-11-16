@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/7-describe-working-git-locally.md)]

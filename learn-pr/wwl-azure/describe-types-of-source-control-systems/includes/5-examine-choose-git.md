@@ -10,7 +10,7 @@ In many circles, Git has come to be the expected version control system for new 
 
 If your team is using Git, odds are you will not have to train new hires on your workflow because they will already be familiar with distributed development.
 
-:::image type="content" source="../media/image-a16e15d5-4c41-4005-ac26-1b9931a83b14-be06fae9.png" alt-text="Git community.":::
+:::image type="content" source="../media/git-community-50834e04.png" alt-text="Git community.":::
 
 
 Also, Git is popular among open-source projects. It is easy to use 3rd-party libraries and encourage others to fork your open-source code.
@@ -19,7 +19,7 @@ Also, Git is popular among open-source projects. It is easy to use 3rd-party lib
 
 In TFVC, each developer gets a working copy that points back to a single central repository. Git, however, is a distributed version control system. Instead of a working copy, each developer gets their local repository, complete with an entire history of commits.
 
-:::image type="content" source="../media/image-103ee1d2-f108-4c7f-8532-54743105800c-6046afec.png" alt-text="Centralized  and Distributed version control systems.":::
+:::image type="content" source="../media/centralized-distributed-version-control-systems-5627b609.png" alt-text="Centralized  and Distributed version control systems.":::
 
 
 Having a complete local history makes Git fast since it means you do not need a network connection to create commits, inspect previous versions of a file, or do diffs between commits.
@@ -32,7 +32,7 @@ And, like feature branches, distributed development creates a more reliable envi
 
 One of the most significant advantages of Git is its branching capabilities. Unlike centralized version control systems, Git branches are cheap and easy to merge.
 
-:::image type="content" source="../media/image-9dde9a79-3c38-4fb6-8049-06ff9cabcc67-e6e3176e.png" alt-text="Trunk-based Development.":::
+:::image type="content" source="../media/trunk-based-development-fcd6834f.png" alt-text="Trunk-based Development.":::
 
 
 Trunk-based development provides an isolated environment for every change to your codebase. When developers want to start working on something—no matter how large or small—they create a new branch. It ensures that the master branch always contains production-quality code.
@@ -51,7 +51,7 @@ A pull request is a way to ask another developer to merge one of your branches i
 
 It makes it easier for project leads to keep track of changes and lets developers start discussions around their work before integrating it with the rest of the codebase.
 
-:::image type="content" source="../media/image-930fc968-b0c4-41da-9c46-8ba0d7d26720-13323664.png" alt-text="Pull Requests.":::
+:::image type="content" source="../media/pull-requests-c8925506.png" alt-text="Pull Requests.":::
 
 
 Since they are essentially a comment thread attached to a feature branch, pull requests are incredibly versatile.
@@ -68,7 +68,7 @@ These capabilities promote an agile workflow where developers are encouraged to 
 
 In turn, changes can get pushed down the deployment pipeline faster than the standard of the monolithic releases with centralized version control systems.
 
-:::image type="content" source="../media/image-9ec38642-89da-4021-8d45-bd0a275e4755-7f502c19.png" alt-text="Product release with feedback.":::
+:::image type="content" source="../media/product-release-feedback-cb9d5673.png" alt-text="Product release with feedback.":::
 
 
 As you might expect, Git works well with continuous integration and continuous delivery environments.
