@@ -4,12 +4,13 @@ title: Secure your virtual networks in the Azure portal
 metadata:
   title: Secure your virtual networks in the Azure portal
   description: "Secure your virtual networks in the Azure portal"
-  ms.date: 07/16/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/2-secure-your-virtual-networks-azure-portal.md)]
