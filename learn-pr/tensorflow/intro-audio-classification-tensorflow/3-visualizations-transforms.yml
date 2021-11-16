@@ -9,6 +9,7 @@ metadata:
   ms.date: 08/03/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   ms.product: learning-tensorflow
 durationInMinutes: 15
 sandbox: true

@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Count the number of Moon rocks by calling a Python function
 durationInMinutes: 4
 sandbox: true

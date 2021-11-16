@@ -12,16 +12,14 @@ For delegated permissions, the effective permissions of your app will be the int
 For example, assume your app has been granted the User.ReadWrite.All delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user is not in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
 For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Microsoft Graph request API permmissions page.](../media/az500-graph-permissions-1.png)
+![Screenshot of the Microsoft Graph request API permmissions page.](../media/az500-graph-permissions-1.png)
 
 ## Microsoft Graph API
 
 You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple Microsoft Graph Security providers (also called security providers or providers).
 The Microsoft Graph Security API federates requests to all providers in the Microsoft Graph Security ecosystem. This is based on the security provider consent provided by the application, as shown in the following diagram. The consent workflow only applies to non-Microsoft providers.
 
-> [!div class="mx-imgBorder"]
-> ![Security Graph API steps described in the following content.](../media/az500-graph-permissions-2.png)
+![Security Graph API steps described in the following content.](../media/az500-graph-permissions-2.png)
 
 The following is a description of the flow:
 

@@ -29,6 +29,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-marketplace
 - dynamics-365
 - m365
 - office-365

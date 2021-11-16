@@ -13,7 +13,7 @@ The numbered steps below show what’s happening to the network traffic that Irw
 
 4. Once authenticated, Irwin’s request proceeds to **Azure Front Door**, which displays some of the SAP Fiori content by using content caching. This improves the response time and user experience.
 
-5. To access content from the SAP Fiori application cluster and SAP HANA database, Irwin's request proceeds through a firewall. The **Azure Firewall** ensures the connection is asking for the right ports and that Irwin's IP address is whitelisted.
+5. To access content from the SAP Fiori application cluster and SAP HANA database, Irwin's request proceeds through a firewall. The **Azure Firewall** ensures the connection is asking for the right ports and that Irwin's IP address is an approved list.
 
 6. Irwin’s request is still in the hub Azure Virtual Network and Azure network security group–just like Amita and Tim's requests. To access the SAP Fiori front-end cluster in the spoke VNet, Irwin's request needs **Azure virtual network peering**.
 

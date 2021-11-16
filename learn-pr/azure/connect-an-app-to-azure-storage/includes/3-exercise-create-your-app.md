@@ -71,7 +71,7 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     main();
     ```
 
-1. Save the file. Select the "..." menu on the top-right corner of Cloud Shell editor, and select **Save**.
+1. Press <kbd>Ctrl+S</kbd> to save the file. Alternatively, in the Cloud Shell integrated editor title bar, select the ellipsis, and then select **Save** from the context menu.
 
 1. Run the app to make sure it executes correctly.
 

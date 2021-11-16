@@ -48,8 +48,8 @@ You can view and manage reservations in the Azure portal at Reservations. Reserv
 
 You can also make reservation purchases programmatically using any of the following methods:
 
-- REST API: https://docs.microsoft.com/rest/api/reserved-vm-instances/reservationorder
-- Azure PowerShell: https://docs.microsoft.com/powershell/module/azurerm.reservations
-- Azure CLI: https://docs.microsoft.com/cli/azure/reservations/reservation-order
+- [REST API](/rest/api/reserved-vm-instances/reservationorder)
+- [Azure PowerShell](/powershell/module/azurerm.reservations)
+- [Azure CLI](/cli/azure/reservations/reservation-order)
 
 After you've made a reservation purchase, you can manage it in several ways outlined in the next unit.

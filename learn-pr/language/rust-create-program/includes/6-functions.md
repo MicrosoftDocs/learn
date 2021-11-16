@@ -50,7 +50,7 @@ Casual: See you later!
 
 ## Return a value
 
-When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value to the caller. The `<type>` portion lets the complier know the data type of the value returned.
+When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value to the caller. The `<type>` portion lets the compiler know the data type of the value returned.
 
 In Rust, the common practice is to return a value at the end of a function by having the last line of code in the function be equal to the value to return. The following example shows this behavior. The `divide_by_5` function returns the result of dividing the input number by 5 to the calling function:
 

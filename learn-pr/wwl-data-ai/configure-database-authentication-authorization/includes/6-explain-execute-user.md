@@ -1,4 +1,4 @@
-The EXECUTE AS [user], or EXECUTE AS [login] (only availably in SQL Server and Azure SQL Managed Instance) commands allow for the user context to be changed. As subsequent commands and statements will be executed using the new context with the permissions granted to that context.
+The EXECUTE AS [user], or EXECUTE AS [login] (only available in SQL Server and Azure SQL Managed Instance) commands allow for the user context to be changed. As subsequent commands and statements will be executed using the new context with the permissions granted to that context.
 
 If a user has a permission and the user no longer needs to have that permission, permissions can be removed (either grants or denies) using the REVOKE command. The revoke command will remove any GRANT or DENY permissions for the right specified to the user specified.
 
