@@ -17,8 +17,7 @@ A Kubernetes cluster is divided into two components:
 * _Control plane_ nodes provide the core Kubernetes services and orchestration of application workloads.
 * _Nodes_ run your application workloads.
 
-> [!div class="mx-imgBorder"]
-> ![Drawing of two main componests of a Cluster- Control plane, Node.](../media/az500-kubernetes-cluster.png)
+![Drawing of two main componests of a Cluster- Control plane, Node.](../media/az500-kubernetes-cluster.png)
 
 ## Features of Azure Kubernetes Service
 

@@ -12,11 +12,11 @@ The Unified Labeling Scanner enables you to label on-premises files. Here are so
 
 - Data privacy requirements from the data protection officer like:
 
-- to label files before uploading them into the Cloud
+- To label files before uploading them into the Cloud
 
-- handling sensitive data in a special way
+- Handling sensitive data in a special way
 
-- storing files from the data privacy team or the working council on-premises only
+- Storing files from the data privacy team or the working council on-premises only
 
 - Requirements of an Information Protection Protect Officer
 
@@ -46,8 +46,6 @@ To classify and protect your files, the scanner uses sensitivity labels configur
 - Microsoft 365 Security Center
 
 - Microsoft 365 Compliance Center
-
-- Microsoft 365 Security and Compliance Center
 
 ### Requirements for the unified labeling scanner
 
@@ -79,4 +77,4 @@ For the installation and to run the scanner the following service accounts are n
 
 ## Learn more
 
-[Understanding the Azure Information Protection unified labeling scanner - AIP | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner?azure-portal=true)
+[Understanding the Azure Information Protection unified labeling scanner - AIP | Microsoft Docs](/azure/information-protection/deploy-aip-scanner?azure-portal=true)
