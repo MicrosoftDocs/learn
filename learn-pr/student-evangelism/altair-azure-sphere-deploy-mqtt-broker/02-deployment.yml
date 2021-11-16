@@ -4,7 +4,7 @@ title: Prepare to deploy a private MQTT broker
 metadata:
   title: Prepare to deploy a private MQTT broker
   description: Get an overview of the steps for running a private MQTT broker.
-  ms.date: 11/17/2021
+  ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
