@@ -8,8 +8,7 @@ You can start Log Analytics from several places in the Azure portal. The scope o
 * Select Analytics from the Overview page of an Application Insights application.
 * Select Logs from the menu of an Azure resource.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal with Log Analytics blade selected](../media/az500-log-analytics.png)
+![Azure portal with Log Analytics blade selected](../media/az500-log-analytics.png)
 
 In addition to interactively working with log queries and their results in Log Analytics, areas in Azure Monitor where you will use queries include the following:
 * **Alert rules**. Alert rules proactively identify issues from data in your workspace. Each alert rule is based on a log search that is automatically run at regular intervals. The results are inspected to determine if an alert should be created.

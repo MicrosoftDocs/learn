@@ -9,8 +9,7 @@ In addition to Shared Key and Shared Access Signatures, Azure Blob and Queue sto
 
 * RBAC role assignments may take up to five minutes to propagate.
 
-> [!div class="mx-imgBorder"]
-> ![A Storage Blob Data Contributor and Reader are accessing storage.](../media/az500-active-directory-blobs.png)
+![A Storage Blob Data Contributor and Reader are accessing storage.](../media/az500-active-directory-blobs.png)
 
 **A few more details**
 

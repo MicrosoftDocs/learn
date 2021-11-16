@@ -35,7 +35,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	Project `DotNetDependencies` has the following updates to its packages
 	   [net5.0]:
 	   Top-level Package      Requested   Resolved   Latest
-	   > Humanizer            2.7.9       2.7.9      2.8.26
+	   > Humanizer            2.7.9       2.7.9      2.11.10
 	```
 
 	By default, this command will check for the latest stable version. To check for pre-release packages, append the following to the command.
@@ -52,14 +52,14 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	Your output should look like this output.
 
 	```output
-	info : PackageReference for package 'Humanizer' version '2.8.26' updated in file 'C:\Users\jamont\Desktop\DotNetDependencies\DotNetDependencies.csproj'.
+	info : PackageReference for package 'Humanizer' version '2.11.10' updated in file 'C:\Users\jamont\Desktop\DotNetDependencies\DotNetDependencies.csproj'.
 	```
 	The output states that your project dependencies have been updated.
 
 	If you want to upgrade to a specific version of the dependency, you can append on the `--version` parameter, and specify the specific version.
 
 	```dotnetcli
-	dotnet add package Humanizer --version 2.8.26
+	dotnet add package Humanizer --version 2.11.10
 	```
 	Lastly, you can also install the latest pre-release package by appending on the `--prerelease` parameter.
 

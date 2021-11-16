@@ -10,7 +10,7 @@ A security engineer uses Azure Security Center to track, maintain and improve an
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
+Managing the secure operation of Azure is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage Security Operations (25-30%)
 - Monitor security by using Azure Security Center

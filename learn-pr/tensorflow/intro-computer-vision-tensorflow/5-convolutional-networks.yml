@@ -9,6 +9,7 @@ metadata:
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/5-convolutional-networks.ipynb

@@ -20,16 +20,16 @@ Azure Firewall is a cloud-based firewall service. In most configurations, Azure 
 
 All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
-:::image type="content" source="../media/2-firewall-description.png" alt-text="Network diagram of a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the internet passing through an Azure Firewall instance in the hub network." border="false":::
+:::image type="content" source="../media/2-firewall-standard.png" alt-text="Network diagram of a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the internet passing through an Azure Firewall instance in the hub network." border="false":::
 
 > [!NOTE]
 > Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCoAv]
 
-### Key features of Azure Firewall
+### Key features of Azure Firewall Standard
 
-The following table lists key features of Azure Firewall.
+The following table lists key features of Azure Firewall Standard.
 
 |Feature  |Description  |
 |---------|---------|
@@ -42,6 +42,23 @@ The following table lists key features of Azure Firewall.
 |Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the internet.         |
 |Tag support     |Azure Firewall supports service tags and FQDN tags for easier rule configuration. A *service tag* is a text entity that represents an Azure service. For example, **AzureCosmosDB** is the service tag for the Azure Cosmos DB service. An *FQDN tag* is a text entity that represents a group of domain names associated with popular Microsoft services. For example, **WindowsVirtualDesktop** is the FQDN tag for Azure Virtual Desktop traffic.   |
 |Monitoring     |Azure Firewall logs all incoming and outgoing network traffic, and you can analyze the resulting logs using Azure Monitor, Power BI, Excel, and other tools.         |
+
+## What is Azure Firewall Premium?
+
+Azure Firewall Premium provides advanced threat protection that meets the needs of highly sensitive and regulated environments, such as the payment and healthcare industries.
+
+:::image type="content" source="../media/2-firewall-premium.png" alt-text="Firewall Premium architecture":::
+
+### Key features of Azure Firewall Premium
+
+The following table lists key features of Azure Firewall Premium.
+
+|Feature  |Description  |
+|---------|---------|
+|TLS Inspection|Decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.|
+|IDPS|A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.|
+|URL filtering|Extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
+|Web categories|Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.|
 
 ## Overview of Azure Firewall Manager
 

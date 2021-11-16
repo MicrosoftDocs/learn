@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
 summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly.
 abstract: |

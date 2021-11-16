@@ -1,4 +1,4 @@
-Suppose you have an application for the sales team in your global company. Each team member has a mobile phone and will install your app to use for sales. A web service hosted in Azure implements the business logic for your application and stores information in an Azure SQL Database. Each  geographical region has its own instance of the web service.
+You have an application for the sales team in your global company. Each team member has your app installed on a mobile device to use for sales. An Azure web service hosts the business logic implemented for your application and stores information in an Azure SQL Database. Each  geographical region has its own instance of the web service.
 
 You've identified the following scenarios for message exchange between the mobile app and the web service:
 
@@ -52,33 +52,41 @@ To create a Service Bus queue:
 1. After deployment completes, select **Go to resource**. The Service Bus Namespace you created appears.
 
 1. In the command bar, select **Queue**. The **Create queue** pane appears.
+    
+    :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with Queue and Create highlighted.":::
 
-1. In the **Name** text box, enter **salesmessages**, and then select **Create**. The Service Bus Namespace pane reappears with **salesmessages** listed under **Queues** at the bottom of the pane.
-
-    :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with the Create button highlighted.":::
+1. In the **Name** text box, enter **salesmessages**, and then select **Create**.  
+    
+    When the message queue has been created, **salesmessages** is listed under the **Queues** tab at the bottom of the Service Bus Namespace pane.
 
 ## Create a Service Bus topic and subscriptions
 
-You also want to create a topic that will be used for messages that relate to sales performance. Multiple instances of the business logic web service will subscribe to this topic, and each sales performance message will be delivered to multiple instances.
+You also want to create a topic that will be used for messages that relate to sales performance. Each instance of the business logic web service will subscribe to this topic, and each sales performance message will be delivered to all web service subscriptions.
 
 To add a Service Bus topic and subscriptions:
 
 1. In the command bar of the **Service Bus Namespace** pane, select **Topic**. The **Create topic** pane appears.
 
-1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**. Azure creates the topic in your namespace.
+    :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with Topic and Create highlighted.":::
 
-    ![Screenshot of the Create topic pane with the Create button highlighted.](../media/3-create-topic.png)
+1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**. 
 
-1. When the topic has been created, at the bottom of the **Service Bus Namespace** pane, select the **Topics** tab.
+1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace pane.
+ 
+1. To add or remove subscriptions to a queue or topic, you can select one from the list on its respective tab, or you can add or remove subscriptions to entities via the menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
+ 
+1. The sales performance messages Service Bus Topic pane appears. 
 
-1. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. The sales performance messages Service Bus Topic pane appears. 
+1. In the **Service Bus Topic** command bar, select **Subscription**. The **Create subscription** pane appears.
 
-1. In the command bar, select **Subscription** to add subscriptions to the topic. The **Create subscription** pane appears.
-
-1. For your first subscription, for **Name**, enter **Americas**, then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic for your app appears with the **Americas** subscription listed at the bottom of the page.
+1. For **Name**, enter **Americas**; for **Max delivery count**, enter **100**; and then select **Create**. 
+ 
+    The `salesperformancemessages` Service Bus Topic appears with the **Americas** subscription listed at the bottom of the pane.
 
 1. Let's add a second subscription. In the command bar, select **Subscription**. The **Create subscription** pane appears.
 
-1. Enter **EuropeAndAsia** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**. The sales performance messages Service Bus Topic of your sales team app now lists two subscriptions.
+1. For **Name**, enter **EuropeAndAsia**; for **Max delivery count**, enter **100**; and then select **Create**.
 
-You have built the infrastructure required to use Service Bus to increase the resilience of your sales force distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. The topic includes multiple subscriptions because messages sent to that topic can be delivered to multiple recipient web services around the world.
+    The Subscriptions section of the `salesperformancemessages` Service Bus Topic for your sales team app now lists two subscriptions.
+  
+You have built the infrastructure to use a Service Bus to increase the resilience of your distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic so topic messages can be delivered to multiple web services around the world.

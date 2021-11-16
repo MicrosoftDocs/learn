@@ -4,12 +4,13 @@ title: Plan on-premises labeling
 metadata:
   title: Plan on-premises labeling
   description: "Plan on-premises labeling"
-  ms.date: 03/30/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-plan-on-premises-labeling.md)]

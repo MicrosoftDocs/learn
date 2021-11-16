@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/22/2021
+  ms.date: 11/10/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Two."
       isCorrect: false
       explanation: "That's incorrect. Asymmetric encryption uses two keys, one private and one public."
-  - content: "When using asymmetric encryption, which key shouldn't not shared?"
+  - content: "When using asymmetric encryption, which key shouldn't be shared?"
     choices:
     - content: "Private key."
       isCorrect: true

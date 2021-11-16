@@ -15,7 +15,7 @@ By default, you can get data like:
 - OS disk usage
 - Boot success
 
-Azure can collect these metrics by default for hosted VMs without requiring you to install more software. To capture the boot diagnostics, you need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
+Azure collects these metrics by default for hosted VMs without requiring you to install additional software. To capture the boot diagnostics, you need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
 
 ## View metrics
 
@@ -23,7 +23,7 @@ You can choose multiple metrics and plot them on a graph to see how much traffic
 
 ![CPU percentage usage and inbound flow chart.](../media/2-vm-metrics-screenshot.png)
 
-After you enable metrics, you can:
+By using Virtual Machine host metrics, you can:
 
 - Know when your VMs are reaching their disk and CPU limits.
 - Detect trends.
@@ -31,15 +31,21 @@ After you enable metrics, you can:
 
 ## Get more metrics
 
-To get a full set of metrics, you need to install two tools directly on the VM: the *Azure Diagnostics extension* and the *Log Analytics agent*. Both tools are available for Windows and Linux. 
+To collect Guest OS metrics, you need to install the Azure Monitor Agent and select the metrics to be collected by using Data Collection Rules. The Azure Monitor Agent  is available for Windows and Linux.
 
-The tools need a storage account to save the data that they collect. After you've installed the tools, you can access near real-time metric alerts. You can also:
+After you've installed the Azure Monitor Agent, you can:
 
-- Investigate boot issues with enhanced boot diagnostics.
-- Archive logs and metrics for future analysis.
-- Autoscale virtual machine scale sets, depending on VM performance.
-- Get app-level metrics by using Application Insights.
-- Automate OS updates.
-- Track VM configuration changes over time.
+- Collect guest OS metrics
+- Create and access near real-time metric alerts
+- Collect and archive logs in Azure Monitor logs for further analysis.
 
-You can install the tools programmatically or by using the Azure portal, the Azure CLI, or PowerShell.
+You can install the Azure Monitor Agent by using the Azure portal, or programmatically with the Azure CLI, or PowerShell.
+
+## Get boot diagnostics
+
+In addition to the metrics discussed above, you can also enable boot diagnostics to troubleshoot VMs in Azure. This helps you identify issues with your VMs during the boot process. The boot diagnostics feature needs a storage account to save the data that it collects.
+
+Once boot diagnostics is enabled, you can:
+
+- View the output of the console Log for Linux Machines.
+- See screenshots of the VM from the hypervisor for both Windows and Linux machines.

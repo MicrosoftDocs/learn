@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.add-sqlite-database-provider
+title: Use the SQLite database provider with EF Core
+metadata:
+  title: Use the SQLite database provider with EF Core
+  description: Learn how to use the SQLite database provider with EF Core to persist your data.
+  author: jongalloway
+  ms.author: jogallow
+  ms.date: 10/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-add-sqlite-database-provider.md)]
+  

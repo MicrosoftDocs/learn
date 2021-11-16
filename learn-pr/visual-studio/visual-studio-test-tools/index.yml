@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to write C# at the beginner level, with C# concepts that include writing methods and creating projects
   - Basic familiarity with debugging an app
   - Installation of Visual Studio
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/visual-studio/visual-studio-test-tools.svg
 levels: 
   - beginner
 roles: 

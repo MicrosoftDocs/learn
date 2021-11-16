@@ -22,7 +22,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 ::: zone pivot="javascript"
 
-1. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+5. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
 1. In the Function menu, select **Code + Test**. The code editor opens, displaying contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
@@ -74,7 +74,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     
 ::: zone pivot="powershell"
 
-1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
 1. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
@@ -161,36 +161,39 @@ HTTP triggers let you use API keys to block unknown callers by requiring a key a
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`, or as an HTTP header (preferred) named `x-functions-key`.
 
-1. To find the function and master keys, in the left menu pane, under **Developer**, select **Function Keys**. By default, they are hidden, and you need to display them.
+1. To find the function and master keys, in the Function App menu, under **Developer**, select **Function Keys**. The Function Keys pane for your function opens.
 
-1. Show the default Function Key by selecting *Hidden value. Click to show value* in the **Value** field, and copy it to the clipboard. Store this key in Notepad or a similar app for later use.
+1. By default the function key value is hidden. Show the default function key value by selecting *Hidden value. Click to show value* in the **Value**. Copy the value to the clipboard, and then store this key in Notepad or a similar app for later use.
 
-    :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
+    :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot showing the Function Keys pane with the revealed function key highlighted." lightbox="../media/5-get-function-key.png" :::
 
 1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
 
-1. Next, scroll to the left, and from the left menu pane, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
+1. Next, scroll to the left, and from the Function App menu, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger1* function.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger1* (or *DriveGearTemperatureService* for PowerShell) function.
 
-1. On the top menu bar, select **Test/Run**. A **Test** pane appears.
+1. On the command bar, select **Test/Run**. A pane showing the input parameters for running a test.
 
-1. Copy the following cURL command to Notepad, and replace `<your-function-key>` with the function key value you saved. Also, replace `<your-https-url>` with the URL of your function.
+1. In the **Body** text box, overwrite the embedded code by replacing line 2 in the **Body** with the cURL command below, replacing `<your-function-key>` with the function key value you saved, and replacing `<your-https-url>` with the URL of your function.
 
     ```bash
     curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" <your-https-url>
     ```
 
-1. Under the **Input** tab, in the **Body** text box, overwrite the embedded code by replacing line 2 in the **Body** with the cURL command you just built. Make note of these aspects of the cURL command:
+1. Review the cURL command and verify that it has the following values:
 
-    - Used a `POST` request.
     - Added a `Content-Type` header value of type `application/json`.
-    - Made sure to replace the URL with your own.
     - Passed the Function Key as the header value `x-functions-key`.
+    - Used a `POST` request.
+    - Passed the Azure Function with the URL for your function.
+    
 
 1. Select **Run**.
 
-    Your function's **Code + Test** log pane should update with the status of your request, which will look something like this:
+    The **Code + Test** pane should open session displaying a log file output. 
+    
+    1. Press r<Kbd>Enter</kbd> to run your function in the session window.  The log file updates with the status of your request, which should look something like this:
 
     ```bash
     2021-07-23T18:07:51.625 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', 
@@ -205,11 +208,11 @@ Because you specified *Function* when you created this function, you need to sup
     > If you are on Windows, run `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
     > [!NOTE]
-    > You can also test from an individual function's section with the **Test** pane appearing on the side of a selected function. You won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
+    > The **Code/Test** function may open an *Input/Output* pane in a different configuration, with the log file appearing on the side of a selected function. If so, you won't be able to verify the function key system is working, as it is not required. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
 
 ## Add business logic to the function
 
-Next, let's add the logic to the function that checks temperature readings that it receives, and sets a status for each.
+Let's add the logic to the function, to check temperature readings that it receives, and set a status for each temperature reading.
 
 Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we'll send to our function. Each `reading` entry has an ID, timestamp, and temperature.
 
@@ -237,9 +240,9 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Let's replace the default code in our function with the following code, to implement our business logic.
 
-    ::: zone pivot="javascript"
+::: zone pivot="javascript"
 
-In the **HttpTrigger1** function pane, open the **index.js** file, and replace it with the following code. On the top menu bar, select **Save** to save the file after updating it.
+In the **HttpTrigger1** function pane, open the **index.js** file, and replace it with the following code. After making this change, on the command bar, select **Save** to save the updates to the file.
 
 ```javascript
 module.exports = function (context, req) {
@@ -274,7 +277,7 @@ module.exports = function (context, req) {
 };
 ```
 
-The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
+The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
 Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements will add messages in the Logs window.
 
@@ -282,7 +285,7 @@ Notice the `Log` statements when you expand **Logs** at the bottom of the pane. 
 
 ::: zone pivot="powershell"
 
-Open the **run.ps1** file, and replace the contents with the following code. Make sure to save the file after updating it.
+Open the **run.ps1** file, and replace the contents with the following code. After making this change, on the command bar, select **Save** to save the updates to the file.
 
 ```powershell
 using namespace System.Net
@@ -321,17 +324,17 @@ Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
 })
 ```
 
-The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
+The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
 Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the Logs window.
 
-    ::: zone-end
+::: zone-end
 
 ## Test our business logic
 
-In this case, we're going to use the **Test** pane in the portal to test our function.
+We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to test our function.
 
-1. In the **Test** pane, under the **Input** tab, paste the sample request into the request **Body** text box.
+1. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
 
     ```json
     {
@@ -355,7 +358,7 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
     }
     ```
 
-1. Select **Run** and view the response under the **Output** tab. To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the response, and the . To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::   
 

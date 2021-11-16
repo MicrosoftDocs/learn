@@ -9,6 +9,7 @@ metadata:
   ms.author: wachegha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 5
 interactive: "bash"
 azureSandbox: true

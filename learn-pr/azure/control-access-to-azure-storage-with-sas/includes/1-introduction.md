@@ -1,4 +1,4 @@
-When you store files and data in Azure, you need to grant access to them securely. Azure Storage accounts provide ways to grant secure access by using a shared access signature (SAS).
+Azure provides cloud-based file storage. When you store files and data in Azure, you need to grant access to them securely. Azure Storage accounts provide ways to grant secure access by using a shared access signature (SAS).
 
 You work for a healthcare organization and are developing an application that stores patient diagnostic images in blob storage. These images are highly sensitive, and you need to ensure that your application accesses them securely. You'll update your application to integrate with other providers and give authorization to the images by using a SAS.
 

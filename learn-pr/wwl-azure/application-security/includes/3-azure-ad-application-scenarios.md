@@ -26,8 +26,7 @@ In Azure AD, an application object describes an application as an abstract entit
 
 The following diagram depicts a simplified Azure AD provisioning flow driven by consent.
 
-> [!div class="mx-imgBorder"]
-> ![Provisioning steps described in the text.](../media/az500-app-scenarios.png)
+![Provisioning steps described in the text.](../media/az500-app-scenarios.png)
 
 In this provisioning flow:
 
