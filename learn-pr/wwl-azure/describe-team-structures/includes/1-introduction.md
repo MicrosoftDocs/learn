@@ -2,7 +2,7 @@ Starting to apply Agile practices in your company is not easy. It demands collab
 
 This module explores agile development practices and helps to define and to configure teams and tools for collaboration.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, students and professionals can:
 
