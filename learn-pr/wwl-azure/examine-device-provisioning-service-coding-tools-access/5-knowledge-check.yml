@@ -17,15 +17,15 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following Azure CLI commands is used to create an instance of the IoT Hub Device Provisioning Service?"
+  - content: "Which of the following Azure CLI instructions should be used to create an instance of the IoT Hub Device Provisioning Service?"
     choices:
-    - content: "az dps create -name MyDps --resource-group MyResourceGroup --location westus2"
+    - content: "Enter: az dps create -name MyDps --resource-group MyResourceGroup --location westus2"
       isCorrect: false
       explanation: "Incorrect. The parameter sequence \"az dps\" that is used in this command is not valid."
-    - content: "az iotdps create -name MyDps --resource-group MyResourceGroup"
+    - content: "Enter: az iotdps create -name MyDps --resource-group MyResourceGroup"
       isCorrect: false
       explanation: "Incorrect. The command parameter \"iotdps\" is not valid."
-    - content: "az iot dps create -name MyDps --resource-group MyResourceGroup"
+    - content: "Enter: az iot dps create -name MyDps --resource-group MyResourceGroup"
       isCorrect: true
       explanation: "Correct. This command will create a Device Provisioning Service resource named MyDps in the resource group named MyResourceGroup."
   - content: "Which of the following answers is true about the IoT Hub Device Provisioning Service SDKs?"
