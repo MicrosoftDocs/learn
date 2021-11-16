@@ -36,12 +36,12 @@ summary: |
     [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
   :::column-end:::
   :::column:::
-    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-intermediate)
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-intermediate)
 
     [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
   :::column-end:::
   :::column:::
-    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
+    [<img src="/learn/achievements/generic-trophy.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
 
     [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
   :::column-end:::
