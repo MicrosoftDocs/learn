@@ -40,4 +40,4 @@ For production SQL Server data and transaction log files, you should only use Pr
 
 The Azure platform is designed to be fault tolerant and provides quickly recovery from service disruptions and transient errors. In fact, many organizations see higher levels of availability in single virtual machines deployments than they previously experienced in their on-premises environments. Microsoft guarantees uptime of at least 99.9% for single instance Azure virtual machine, when using Premium SSD or Ultra Disk for all disks.
 
-Azure offers several features to support high availability including availability sets, availability zones, and load-balancing techniques that provides high availability by distributing incoming traffic among Virtual Machines.
+Azure offers several features to support high availability including availability sets, availability zones, and load-balancing techniques that provide high availability by distributing incoming traffic among Virtual Machines.
