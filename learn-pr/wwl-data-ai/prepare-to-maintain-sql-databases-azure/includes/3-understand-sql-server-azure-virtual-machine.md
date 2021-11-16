@@ -8,7 +8,7 @@ Many applications will require SQL Server running on a virtual machine. The reas
 
 ## Versions of SQL Server available
 
-Microsoft keeps images of all supported versions of SQL Server available in the Azure marketplace. If you have a need for an older version, that is covered by an extended support contract, you must install your own SQL Server binaries.
+Microsoft keeps images of all supported versions of SQL Server available in Azure Marketplace. If you have a need for an older version, that is covered by an extended support contract, you must install your own SQL Server binaries.
 
 ## Backup solutions
 
@@ -19,13 +19,13 @@ In recent releases of SQL Server, Microsoft has introduced several features to s
 
 Back up to URL allows you to use standard backup syntax to back up your databases to Azure Blob Storage service, while Azure Backup for SQL Server Virtual Machines offers a complete enterprise backup solution that automatically handles your backups across your infrastructure.
 
-## Deployment Options
+## Deployment options
 
-All resources in Azure share a common provider known as Azure Resource Manager (ARM) that acts as a management, and deployment service for cloud services. While there are numerous ways to deploy Azure resources, ultimately, they all end up going into JSON documents known as Azure Resource Manager template, which is one of the deployment options for Azure resources.
+All resources in Azure share a common provider known as Azure Resource Manager that acts as a management, and deployment service for cloud services. While there are numerous ways to deploy Azure resources, ultimately, they all end up going into JSON documents known as Azure Resource Manager template, which is one of the deployment options for Azure resources.
 
-The main difference between these processes is that ARM templates are a declarative deployment approach that describes the desired structure and state of the resources to be deployed, whereas the other methods can all be described as imperative, which uses procedural models to explicitly specify a process to be executed. In large-scale deployments, the declarative approach is better and should be followed.
+The main difference between these processes is that Azure Resource Manager templates are a declarative deployment approach that describes the desired structure and state of the resources to be deployed, whereas the other methods can all be described as imperative, which uses procedural models to explicitly specify a process to be executed. In large-scale deployments, the declarative approach is better and should be followed.
 
-## Overview of Azure Storage
+## Overview of Azure storage
 
 Azure offers a fully redundant object-based storage model, and there are a few things to be aware of in designing and deploying Virtual Machines architecture. In terms of virtual machines, there are four types of storage you can use:
 
@@ -36,7 +36,7 @@ Azure offers a fully redundant object-based storage model, and there are a few t
 
 For production SQL Server data and transaction log files, you should only use Premium SSD storage and Ultra Disk. With premium storage, you will see latencies in the range of 5-10 ms on a properly configured system. Alternatively, with Ultra Disk you may have sub millisecond latency but will likely see 1-2 ms workloads in the real world. You can use Standard storage for your database backups, as the performance is adequate for most backup and restore workloads.
 
-## High Availability in Azure
+## High availability in Azure
 
 The Azure platform is designed to be fault tolerant and provides quickly recovery from service disruptions and transient errors. In fact, many organizations see higher levels of availability in single virtual machines deployments than they previously experienced in their on-premises environments. Microsoft guarantees uptime of at least 99.9% for single instance Azure virtual machine, when using Premium SSD or Ultra Disk for all disks.
 

@@ -40,7 +40,7 @@ The auto-pause delay feature allows you to define the period of time the databas
 
 The resume operation is triggered when the next attempt to access the database occurs, and only storage charges are applicable when the database is paused.
 
-> [![Serverless SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_02.png)](../media/../media/prepare_to_maintain_sql_databases_azure_02.png#lightbox)
+> [![Serverless SQL Database properties from Azure portal](../media/prepare-to-maintain-sql-databases-azure-02.png)](../media/../media/prepare-to-maintain-sql-databases-azure-02.png#lightbox)
 
 The image above shows where you can change the autoscaling and auto-pause properties for serverless compute tier.
 
@@ -48,7 +48,7 @@ The image above shows where you can change the autoscaling and auto-pause proper
 
 There are two main deployment models when deploying SQL Database on Azure: **single database** and **elastic pool**. Elastic pools share resources with other databases part of the same pool, while single databases resources are managed independently.
 
-SQL Database, like virtual machines, can be deployed using Azure Resource Manager (ARM) templates, PowerShell, Azure CLI, or the Azure portal.
+SQL Database, like virtual machines, can be deployed using Azure Resource Manager templates, PowerShell, Azure CLI, or the Azure portal.
 
 ### Single database
 
@@ -56,7 +56,7 @@ Single database is the simplest deployment model of Azure SQL Database. You mana
 
 You can monitor database resources utilization through Azure portal. This feature allows you to easily identify how the database is performing, as shown in the image below:
 
-> [![SQL Database properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_01.png)](../media/../media/prepare_to_maintain_sql_databases_azure_01.png#lightbox)
+> [![SQL Database properties from Azure portal](../media/prepare-to-maintain-sql-databases-azure-01.png)](../media/../media/prepare-to-maintain-sql-databases-azure-01.png#lightbox)
 
 ### Elastic pool
 
@@ -103,7 +103,7 @@ You can restore your databases to a specific point in time according to the rete
 
 Long-term retention is useful for scenarios that require you to set the retention policy beyond what is offered by Azure. You can set a retention policy for up to 10 years, and this option is disabled by default.
 
-> [![Long-term retention properties from Azure portal](../media/prepare_to_maintain_sql_databases_azure_03.png)](../media/../media/prepare_to_maintain_sql_databases_azure_03.png#lightbox)
+> [![Long-term retention properties from Azure portal](../media/prepare-to-maintain-sql-databases-azure-03.png)](../media/../media/prepare-to-maintain-sql-databases-azure-03.png#lightbox)
 
 In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
 
@@ -155,7 +155,7 @@ Data Sync is based on a hub topology, where you define one of the databases in t
 
 When you create a sync group, it will ask you to provide a database responsible to store the sync group metadata. The metadata location can be either a new database or an existing database as long it resides in the same region as your sync group.
 
-> [![New sync group page from Azure portal](../media/prepare_to_maintain_sql_databases_azure_04.png)](../media/../media/prepare_to_maintain_sql_databases_azure_04.png#lightbox)
+> [![New sync group page from Azure portal](../media/prepare-to-maintain-sql-databases-azure-04.png)](../media/../media/prepare-to-maintain-sql-databases-azure-04.png#lightbox)
 
 In the image above, you can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
 
