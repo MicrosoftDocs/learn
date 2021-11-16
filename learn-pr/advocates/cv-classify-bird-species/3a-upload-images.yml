@@ -10,6 +10,7 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/3a-upload-images.md)]

@@ -17,8 +17,8 @@ Consider a simple example with one virtual machine as follows:
 * Contoso Subnet is associated with Subnet NSG.
 * The VM network interface is additionally associated with VM NSG.
 
-   > [!div class="mx-imgBorder"]
-   > ![Network traffic flow is controlled by NSGs.](../media/az500-network-security-group-1.png)
+   
+   ![Network traffic flow is controlled by NSGs.](../media/az500-network-security-group-1.png)
 
 In this example, for inbound traffic, the Subnet NSG is evaluated first. Any traffic allowed through Subnet NSG is then evaluated by VM NSG. The reverse is applicable for outbound traffic, with VM NSG being evaluated first. Any traffic allowed through VM NSG is then evaluated by Subnet NSG.
 
@@ -32,8 +32,7 @@ Several resources from Azure services can be deployed into an Azure virtual netw
 
 The following picture illustrates different scenarios for how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80:
 
-> [!div class="mx-imgBorder"]
-> ![NSGs control network traffic to and from the internet .](../media/az500-network-security-group-2.png)
+![NSGs control network traffic to and from the internet .](../media/az500-network-security-group-2.png)
 
 Reference the above diagram, along with the following text, to understand how Azure processes inbound and outbound rules for network security groups:
 

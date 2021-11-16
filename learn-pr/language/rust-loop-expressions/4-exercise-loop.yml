@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: "Exercise: Use a loop to iterate on data"
 durationInMinutes: 5
 content: |

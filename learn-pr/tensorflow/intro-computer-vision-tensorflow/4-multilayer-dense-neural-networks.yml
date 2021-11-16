@@ -9,6 +9,7 @@ metadata:
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/4-multilayer-dense-neural-networks.ipynb

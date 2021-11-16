@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 durationInMinutes: 10
 content: |
   [!include[](includes/4-fix-simple-mistakes.md)]

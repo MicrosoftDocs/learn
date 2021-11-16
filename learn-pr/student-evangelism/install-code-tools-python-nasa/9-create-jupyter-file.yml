@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/08/2021
   author: drguthals
   ms.author: chnoring
-  ms.custom: nextgen
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a Jupyter Notebook file in Visual Studio Code and run a simple program

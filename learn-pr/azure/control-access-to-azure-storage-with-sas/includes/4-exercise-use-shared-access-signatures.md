@@ -47,13 +47,19 @@ In this exercise, you'll create a storage account and upload some example patien
 
 ### Test the patient diagnostic image system
 
-1. First you need to copy the connection string to your storage account.
+1. First you need to open the **appsettings.json** file in code editor. We'll alter it to include the connection credentials for your storage account.
+
+    ```bash
+    code sas/appsettings.json
+    ```
+
+1. Now, in Cloud Shell, enter the following code to obtain the connection string to your storage account.
 
     ```azurecli
     az storage account show-connection-string --name $STORAGENAME
     ```
 
-    You should see results in this format:
+    You should see a response in this format:
 
     ```json
     {
@@ -61,21 +67,17 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Copy the connectionString value in Cloud Shell output from your command. Include the quotation marks.
+    Copy the connectionString value, including the quotation marks.
 
-1. Edit the **appsettings.json** file to add the connection credentials.
+1. In code editor, replace the ConnectionString value `"[connection string]"` with the string you copied.
 
-    ```bash
-    code sas/appsettings.json
-    ```
+1. Copy the value for `AccountName=` in the body of the connection string
 
-1. In the code editor, replace the ConnectionString value `"[connection string]"` with the string you copied.
+1. Replace the value for the AccountName parameter with the randomly generated name you copied.
 
-1. Change AccountName to the randomly generated name.
+1. Copy the value for `AccountKey=` in the body of the connection string (do not include the quotation mark). Make sure to include the `==` at the end of the value.
 
-1. In the editor, copy the string after the `AccountKey=` parameter up to the `"` in the connection string.
-
-1. Replace the `"[account key]"` string with the account key you copied.
+1. Replace the value of the AccountKey parameter with the account key you copied.
 
 1. The **appsettings.json** file should now look similar to this output.
 
@@ -95,9 +97,7 @@ In this exercise, you'll create a storage account and upload some example patien
       }  
     }
     ```
-
-    Make sure you have the `==` at the end of the `AccountKey` line.
-
+ 
 1. Save and close the code editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
 
 1. To access your web app when it's running in Cloud Shell, you need to open a port.
@@ -106,7 +106,7 @@ In this exercise, you'll create a storage account and upload some example patien
     curl -X POST http://localhost:8888/openPort/8000;
     ```
 
-    This command returns a `url1 where your app can be accessed.
+    This command returns a `url` where your app can be accessed.
 
     ```json
     {"message":"Port 8000 is open","url":"https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/"}
@@ -119,27 +119,31 @@ In this exercise, you'll create a storage account and upload some example patien
     dotnet run
     ```
 
-    When the app is ready to be viewed, you'll see the following details in the console.
+    When the app has compiled, the Cloud Shell console will display the following details.
 
     ```bash
     Hosting environment: Development
-    Content root path: /home/yourusername/sas
+    Content root path: /home/<yourusername>/sas
     Now listening on: https://localhost:8001
     Now listening on: http://localhost:8000
     Application started. Press Ctrl+C to shut down.
     ```
 
-1. Go to your personal URL, which should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. Make sure you have a slash (/) at the end of the address.
+1. In a browser, paste your personal URL that was returned by the cURL command. Make sure you include the slash (/) at the end of the address.
 
-1. Select **Get all patients** to view all the images stored in the storage account.
+    The URL should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. 
+    
+    The **Lamna Healthcare** Patient Diagnostic Image System appears.
+
+1. Select **Get all patients** to view a listing of all the images in the storage account.
 
 ### Add code to create a SAS
 
-1. Stop the web app by selecting <kbd>Ctrl+C</kbd>.
+1. In the Cloud Shell, stop the web app by selecting <kbd>Ctrl+C</kbd>.
 
-1. You'll enhance the **PatientRecordController** class to create an on-demand SAS and return it to the front end of the web app.
+1. Let's enhance the **PatientRecordController** class to create an on-demand SAS and return it to the front end of the web app.
 
-1. Edit the **PatientRecordController.cs** file.
+1. Enter the following code to open the **PatientRecordController.cs** file in the code editor.
 
     ```bash
     code Controllers/PatientRecordController.cs
@@ -157,7 +161,7 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-1. This method returns the requested patient image with a SAS that can be used to access it.
+    This method returns the requested patient image with a SAS that can be used to access it.
 
 1. Add a method that creates the SAS for the blob.
 
@@ -186,21 +190,21 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    The method uses the passed `BlobClient` object to create a `BlobSasBuilder`. You'll generate a SAS that is read-only and expires in one minute.
+    This method uses the passed `BlobClient` object to create a `BlobSasBuilder`. You'll generate a SAS that is read-only and expires in one minute.
 
-1. Save and quit the editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
+1. Save the file by selecting <kbd>Ctrl+S</kbd>, and then and quit the editor by selecting <kbd>Ctrl+Q</kbd>.
 
 ### Add code to use the SAS
 
-1. You'll now add code to the webpage to request the SAS for the image.
+Let's add code to the webpage to request the SAS for the image.
 
-1. Edit the **external.cshtml** page.
+1. Enter the following command to edit the **external.cshtml** page.
 
     ```bash
     code Pages/external.cshtml
     ```
 
-1. At the bottom of the file, above the last `</script>` tag, add this code:
+1. At the bottom of the file, above the `</script>` tag, add this code:
 
     ```javascript
     $('#btn-getKey').click(function(){
@@ -212,7 +216,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     This jQuery code adds a click listener on the `btn-getKey` button. The code executes an Ajax call to the new secure URL for the given image file. When it returns, it populates the key input box with the SAS.
 
-1. Save the changes, and quit the editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
+1. Save the changes by selecting <kbd>Ctrl+S</kbd>, and then and quit the editor by selecting <kbd>Ctrl+Q</kbd>.
 
 ### Test your changes
 
@@ -222,40 +226,40 @@ In this exercise, you'll create a storage account and upload some example patien
     dotnet run
     ```
 
-1. Select **Get all patients**, and then copy one of the image filenames.
+1. In the browser, refresh the tab for your web site, and then select **Get all patients**, and then copy one of the image filenames.
 
-1. In the menu at the top of the page, select **External companies**.
+1. In the menu at the top of the web page, select **External companies**.
 
 1. Paste the filename into the **Patient image filename** field.
 
-1. Select **View scan**. The image won't be accessible because you haven't created a SAS.
+1. Select **View scan**. The patient scan image isn't accessible because you haven't created a SAS.
 
     > [!NOTE]
-    > If you view the console in your browser, you'll see the web server returned a 404 error-code message.
+    > If you are viewing the console in your browser, you'll see the web server returned a 404 error-code message.
 
 1. Select **Get Key**, which should populate the **Key** field with a SAS.
 
 1. Select **View scan**. The patient's diagnostic image should appear.
 
-    :::image type="content" source="../media/4-viewing-image.png" alt-text="Screenshot of the patient diagnostic image web app showing a patient's image." loc-scope="other":::
+    :::image type="content" source="../media/4-viewing-image.png" alt-text="Screenshot of API for external companies showing a patient's image." loc-scope="other":::
 
 1. In your browser, right-click the image and copy the image address.
 
-1. Open a new browser window.
+1. Open a new browser tab.
 
-1. Go to the copied image address in the new window. If it's been longer than a minute since you created the SAS, you'll see this message. You might need to refresh the page.
+1. Paste the copied image address in the address bar and press <kbd>Enter</kbd>. If it's been longer than a minute since you created the SAS, you'll see an error message. If it's been less than a minute, you might need to refresh the page.
 
     ```xml
     <Error>
         <Code>AuthenticationFailed</Code>
         <Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
         RequestId:03eda893-f01e-0028-2d73-c5c947000000
-        Time:2020-01-07T16:02:55.3752851Z</Message>
-        <AuthenticationErrorDetail>Signed expiry time [Tue, 07 Jan 2020 16:02:00 GMT] must be after signed start time [Tue, 07 Jan 2020 16:02:55 GMT]</AuthenticationErrorDetail>
+        Time:2021-01-07T16:02:55.3752851Z</Message>
+        <AuthenticationErrorDetail>Signed expiry time [Tue, 07 Jan 2021 16:02:00 GMT] must be after signed start time [Tue, 07 Jan 2021 16:02:55 GMT]</AuthenticationErrorDetail>
     </Error>
     ```
 
     > [!NOTE]
-    > To see this message, you need to use a new browser window that won't have cached the image.
+    > To view this error message from some browsers, you may need to use a new browser window that won't have cached the image.
 
 1. In Cloud Shell, quit the web app by selecting <kbd>Ctrl+C</kbd>.
