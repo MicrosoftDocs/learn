@@ -48,77 +48,12 @@ Key features of route-based VPN gateways in Azure include:
 
 The capabilities of your VPN gateway are determined by the SKU or size that you deploy. This table shows the main capabilities of each available SKU.
 
-:::row:::
-  :::column:::
-    **SKU**
-  :::column-end:::
-  :::column:::
-    **Site-to-site/Network-to-network tunnels**
-  :::column-end:::
-  :::column:::
-    **Aggregate throughput benchmark**
-  :::column-end:::
-  :::column:::
-    **Border Gateway Protocol support**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Basic <sup>\[See Note\]</sup>
-  :::column-end:::
-  :::column:::
-    Maximum: 10
-  :::column-end:::
-  :::column:::
-    100 Mbps
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw1/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    650 Mbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw2/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    1 Gbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw3/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    1.25 Gbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-
+|SKU | Site-to-site/Network-to-network tunnels | Aggregate throughput benchmark | Border Gateway Protocol support |
+|---|---|---|---|
+| Basic [See Note] | Maximum: 10 | 100 Mbps | Not supported|
+|VpnGw1/Az |Maximum: 30 |650 Mbps |Supported|
+|VpnGw2/Az |Maximum: 30 |1 Gbps |Supported|
+|VpnGw3/Az |Maximum: 30 |1.25 Gbps |Supported|
 
 > [!NOTE]
 > A Basic VPN gateway should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to the VpnGW1/2/3/Az SKUs at a later time without having to remove the gateway and redeploy.
