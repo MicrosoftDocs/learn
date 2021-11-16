@@ -58,7 +58,7 @@ foreach(Product product in productsToInsert)
 
 For each product in the products list, add a task to create an item in our Azure Cosmos DB SQL API container. How much simpler can it get? Remember, nothing has happened yet. Even better, we haven’t written any Azure Cosmos DB-specific code yet other than the **container.CreateItemAsync** part. This is all C# code.
 
-When we invoke **Task.WhenAll**, this is when the SDK will kick in to create batches to group our operations by physical partitions distribute our requests to run them concurrently to reduce the number of back-end requests in efficiency beyond that of our client-side applications.
+When we invoke **Task.WhenAll**, the SDK will kick in to create batches to group our operations by physical partition, then distribute the requests to run concurrently. Grouping operations greatly improves efficiency by reducing the number of back-end requests, and allowing batches to be dispatched to different physical partitions in parallel. It also reduces thread count on the client making it easier to consume more throughput that you could if done as individual operations using individual threads.
 
 ```csharp
 Task.WhenAll(concurrentTasks);
