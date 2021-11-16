@@ -1,17 +1,17 @@
-Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
+Imagine that you want to create a simple bookmark lookup service. Initially, your service is read-only. If users want to find an entry, they send a request with the ID of the entry, and our function return the URL. The following flowchart illustrates the logical flow.
 
-:::image type="content" source="../media/5-find-bookmark-flow-small.png" alt-text="Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response." border="false":::
+:::image type="content" source="../media/5-find-bookmark-flow-small.png" alt-text="Flow diagram showing the logical process of finding a bookmark in an Azure Cosmos DB and returning a response." border="false":::
 
-When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
+When a user sends a request with text, the find bookmark function tries to find an entry in your database that contains a bookmark with the text as a key or ID. The system returns a result that indicates whether you found the entry.
 
-When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid; if not, an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database. If it isn't present, an error response is generated. If the bookmark ID is found, a success response is generated.
+When the Azure function receives a request with a bookmark ID, it first checks whether the request is valid. If it isn't, an error response is generated. If the request is valid, the function checks whether the bookmark ID exists in the Azure Cosmos DB database. If it does not exist, an error response is generated. If the bookmark ID is found, a success response is generated.
 
-You need to store the data somewhere. In the previous flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks, like opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
+You need to store the data somewhere. In the previous flowchart, the data store is an Azure Cosmos DB instance. But, how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring an input binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code or open a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
 ## Create an Azure Cosmos DB account
 
 > [!NOTE]
-> This exercise is not intended to be a tutorial on Azure Cosmos DB. After finishing this module, if you're interested in learning more, there is a complete learning path about Azure Cosmos DB.
+> This exercise is not intended to be a tutorial on Azure Cosmos DB. If you're interested in learning more, see the complete learning path about Azure Cosmos DB at the end of this module.
 
 ### Create a database account
 
@@ -19,11 +19,11 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the  **Create a resource** menu, select **Databases**, and then, in the *Search services and marketplace* search box, search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
+1. In the  **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
  
-1. In the **Core (SQL) - Recommended** option, select **Create** so that we can work with Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+1. In the **Core (SQL) - Recommended** option, select **Create** so that we can create a Cosmos DB trigger and input/output bindings. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -31,18 +31,16 @@ A database account is a container for managing one or more databases. Before we 
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | The Azure subscription that works with the resources in the sandbox. |
-    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | This is the resource group from your sandbox. |
+    | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for your sandbox. |
     | **Instance Details** |
-    | Account Name | *globally unique name* | Enter a unique but identifiable name for your Azure Cosmos DB account. Note that `documents.azure.com` is appended to the name that you provide.<br><br>This account name must contain 3 to 50 characters comprising lowercase letters, numbers, or hyphens (-). |
+    | Account Name | *globally unique name* | Enter a unique but identifiable name for your Azure Cosmos DB account; `documents.azure.com` is appended to the name that you provide.<br><br>`3 - 50 lowercase characters, numbers, or hyphens (-)`. |
     | Location | *region* | Select the region nearest to you. |
 
-1. Accept the default values for all of the other settings in this new account pane.
+1. Accept the default values for the remaining settings, and select **Review + create** to validate your input. A *Validation Success* notification appears.
 
-1. Select **Review + create** to review and validate the configuration. A *Validation Success* notification appears.
+1. Select **Create** to provision and deploy a database account.
 
-1. Select **Create** to provision and deploy the database account.
-
-1. Deployment can take some time, so wait for a **Deployment succeeded** message in the Notifications hub before proceeding.
+1. Deployment can take some time. Wait for a **Deployment succeeded** message in the Notifications hub before proceeding.
 
     :::image type="content" source="../media/5-db-deploy-success.PNG" alt-text="Screenshot of a notification that database account deployment has completed.":::
 
