@@ -13,7 +13,7 @@ In the terminology of distributed applications, **messages** have the following 
 
 - A message contains raw data, produced by one component, that will be consumed by another component.
 - A message contains the data itself, not just a reference to that data.
-- The sending component expects the destination component to process the message contentin a certain way. The integrity of the overall system may depend on both sender and receiver doing a specific job.
+- The sending component expects the destination component to process the message content in a certain way. The integrity of the overall system may depend on both sender and receiver doing a specific job.
 
 For example, suppose a user uploads a new song by using the mobile music-sharing app. The mobile app must send that song to the web API that runs in Azure. The song media file itself must be sent, not just an alert that indicates that a new song has been added. The mobile app expects that the web API will store the new song in the database and make it available to other users. This is an example of a message.
 
