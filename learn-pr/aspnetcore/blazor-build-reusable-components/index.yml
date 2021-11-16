@@ -8,7 +8,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.prod: learning-blazor 
 title: Build Reusable Components with Blazor
 summary: "Blazor components allow us to reuse sections of HTML in our applications.  Let's build a component, package it, and share it with a Blazor application"
 abstract: |

@@ -52,7 +52,7 @@ You can also run and debug your project with Visual Studio Code.
 1. The app should build, and open a new browser page.
 1. Visual Studio Code will also switch to the **Run and Debug** window that allows you to restart or stop your app.
 
-    :::image type="content" source="../media/3-vscode-debugging.png" alt-text="Screenshot of the debugging window in Visual Studio Code.":::
+    :::image type="content" source="../media/3-visual-studio-code-debugging.png" alt-text="Screenshot of the debugging window in Visual Studio Code.":::
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
 
 ## Download the Blazing Pizza assets and starter files
@@ -69,7 +69,7 @@ You'll now clone your teams existing Blazor app project files from the GitHub re
 
 1. Run the current version of the app, press <kbd>F5</kbd>.
 
-    :::image type="content" source="../media/3-blazzing-pizza-start.png" alt-text="Screenshot of the stater Blazing Pizza app.":::
+    :::image type="content" source="../media/3-blazing-pizza-start.png" alt-text="Screenshot of the stater Blazing Pizza app.":::
 
 ## Make some pizzas
 
@@ -170,6 +170,6 @@ The team has also created classes to represent the models in the app. Review the
     Inside the loop, each special pizza displays its name, description, price, and image with member directives.
 1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
 
-    :::image type="content" source="../media/3-blazzing-pizzas.png" alt-text="Screenshot of a list of blazing pizzas.":::
+    :::image type="content" source="../media/3-blazing-pizzas.png" alt-text="Screenshot of a list of blazing pizzas.":::
 
 You now have a pizza base component to allow customers to order a pizza. You'll improve on this component in following exercises.

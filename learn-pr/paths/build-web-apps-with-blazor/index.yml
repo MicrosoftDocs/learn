@@ -9,7 +9,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnet
+  ms.prod: learning-blazor
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:

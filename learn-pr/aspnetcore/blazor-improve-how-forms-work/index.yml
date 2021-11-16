@@ -8,7 +8,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-blazor
 title: "Improve how web forms work in Blazor web apps"
 summary: "Learn how to use Blazor forms, add event handlers, and validate the data a user submits. By using Blazor form components you can validate client-side forms without writing client-side JavaScript to handle the validations."
 abstract: |
