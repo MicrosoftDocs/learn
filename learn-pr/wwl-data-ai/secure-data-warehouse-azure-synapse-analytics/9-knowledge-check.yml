@@ -19,9 +19,9 @@ quiz:
     - content: "Azure Synapse Studio does not support the creation of private endpoints."
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Studio does support the creation of private endpoints."
-    - content: "A conditional access policy has to be defined first."
+    - content: "A Conditional Access policy has to be defined first."
       isCorrect: false
-      explanation: "Incorrect. A conditional access policy is not required to create a private endpoint."
+      explanation: "Incorrect. A Conditional Access policy is not required to create a private endpoint."
     - content: "A managed virtual network has not been created."
       isCorrect: true
       explanation: "Correct. In order to create a private endpoint, you first must create a managed virtual network."

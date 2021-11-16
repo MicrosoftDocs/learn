@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.configure-conditional-access
-title: Configure conditional access
+title: Configure Conditional Access
 metadata:
-  title: Configure conditional access
-  description: "Configure conditional access"
+  title: Configure Conditional Access
+  description: "Configure Conditional Access"
   ms.date: 11/16/2021
   author: wwlpublish
   ms.author: chtestao
