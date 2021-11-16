@@ -6,7 +6,7 @@ Building applications for the web is a complex effort. The ever changing collect
 
 You're preparing to launch a new website for your pizza shop and want customers to easily see the collection of fresh pizza specials available to order.  Customers should have a clear path to place their order and track their pizza delivery.
 
-![Pizza Shop Website built with Blazor](../media/pizzashop.png)
+![Pizza Shop Website built with Blazor](../media/pizza-shop.png)
 
 ## What will we be doing?
 

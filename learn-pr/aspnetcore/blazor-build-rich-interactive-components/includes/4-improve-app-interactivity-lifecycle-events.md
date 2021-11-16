@@ -16,33 +16,33 @@ The diagram below illustrates the events that occur during the lifetime of a com
 
 
 Although the diagram implies that there's a single threaded flow between lifecycle methods, the asynchronous versions of these methods enable a Blazor app to expedite the rendering process. For example, when the first `await` occurs in *SetParametersAsync*, the Blazor component will run the *OnInitialized* and *OnInitializedAsync* methods. When the awaited statement completes, the thread of execution in *SetParametersAsync* will resume. The same logic applies throughout the series of lifecycle methods. Additionally, each `await` operation that occurs during *OnInitializedAsync* and *OnParametersSetAsync* indicates that the state of the component has changed, and can trigger an immediate rendering of the page. The page might be rendered several times before initialization is fully complete. The logic in your component should take this into account. For example, the sample *FetchData.razor* component in the Blazor Server app template contains the following code that creates and populates the *forecasts* array asynchronously in the *OnInitializedAsync* method:
->
-> ```razor
-> @code {
->     private WeatherForecast[] forecasts;
->     ...
->     protected override async Task OnInitializedAsync()
->     {
->         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
->     }
->     ...
-> }
-> ```
->
-> It's possible that the page might be rendered before the call to *GetForecastAsync* completes, and the *forecasts* array will still be null. To handle this situation, the markup near the start of the page looks like this:
->
-> ```razor
-> @if (forecasts == null)
-> {
->    <p><em>Loading...</em></p>
-> }
-> else
-> {
->     ... // display a table of weather forecast data
-> }
->```
->
-> If the *GetForecastAsync* operation has not completed, the page displays the *Loading...* message. When the *GetForecastAsync* finishes, the page is rendered again, and this time the *forecasts* array now contains data that's presented as a table.
+
+```razor
+@code {
+    private WeatherForecast[] forecasts;
+    ...
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+    ...
+}
+```
+
+It's possible that the page might be rendered before the call to *GetForecastAsync* completes, and the *forecasts* array will still be null. To handle this situation, the markup near the start of the page looks like this:
+
+```razor
+@if (forecasts == null)
+{
+   <p><em>Loading...</em></p>
+}
+else
+{
+    ... // display a table of weather forecast data
+}
+```
+
+If the *GetForecastAsync* operation has not completed, the page displays the *Loading...* message. When the *GetForecastAsync* finishes, the page is rendered again, and this time the *forecasts* array now contains data that's presented as a table.
 
 ## Understand the SetParametersAsync method
 
