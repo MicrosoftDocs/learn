@@ -4,7 +4,7 @@ title: Exercise - Enable trust between Azure IoT Central and your Azure Sphere t
 metadata:
   title: Exercise - Enable trust between Azure IoT Central and your Azure Sphere tenant
   description: Follow steps to enable trust between Azure IoT Central and your Azure Sphere tenant.
-  ms.date: 10/01/2021
+  ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
