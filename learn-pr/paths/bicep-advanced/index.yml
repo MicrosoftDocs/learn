@@ -20,10 +20,9 @@ summary: |
   * Deploy advanced Azure resource types, and understand the Azure resource model.
   * Deploy resources at the subscription, management group, and tenant level.
   * Build deployment scripts that define custom steps in your Bicep templates.
-  * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
-  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
+  * Ensure reusability, consistency, and compliance by creating libraries of modules and templates.
 
-  *NOTE TO REVIEWERS: The untitled module about deployment stacks will be added to this path in early 2022.*
+  *NOTE TO REVIEWERS: Two new modules will be added to this path: 'Consume and publish Bicep modules by using registries' (around December 2021), and an untitled module about deployment stacks (sometime in 2022).*
 
   To learn about Bicep, we recommend you take these three learning paths:
 
@@ -74,6 +73,6 @@ products:
 modules:
 - learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts
-- learn.azure.migrate-azure-resources-bicep
+- learn.azure.arm-template-specs
 trophy:
   uid: learn.bicep-walk.trophy
