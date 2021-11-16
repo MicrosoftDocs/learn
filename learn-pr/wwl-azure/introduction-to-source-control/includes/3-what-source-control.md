@@ -6,7 +6,7 @@ For most software teams, the source code is a repository of invaluable knowledge
 
 Version control protects source code from both catastrophe and the casual degradation of human error and unintended consequences.
 
-:::image type="content" source="../media/image-82bc6d08-575e-40a9-aa7a-899d17df4e72-6d26d25d.png" alt-text="Source control":::
+:::image type="content" source="../media/source-control-f1d31c38.png" alt-text="Source control":::
 
 
 Without version control, you are tempted to keep multiple copies of code on your computer. It could be dangerous. Easy to change or delete a file in the wrong code copy, potentially-losing work.

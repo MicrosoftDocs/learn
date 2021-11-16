@@ -1,6 +1,6 @@
 "Code does not exist unless it is committed into source control. Source control is the fundamental enabler of continuous delivery."
 
-:::image type="content" source="../media/image-a1234416-0a67-4ca4-a670-de13411a1900-32c53f52.png" alt-text="Pipeline with version control, build, unit test, deploy, auto test, deploy to production, and measure and validate.":::
+:::image type="content" source="../media/pipeline-phases-808e4101.png" alt-text="Pipeline with version control, build, unit test, deploy, auto test, deploy to production, and measure and validate.":::
 
 
 Whether writing code professionally or personally, you should always version your code using a source control management system. Some of the advantages of using source control are,

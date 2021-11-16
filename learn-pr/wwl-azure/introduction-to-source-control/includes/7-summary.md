@@ -8,5 +8,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Understand source control - Azure DevOps](/azure/devops/user-guide/source-control?view=azure-devops).
+ -  [Understand source control - Azure DevOps](/azure/devops/user-guide/source-control).
  -  [Using source control in your codespace - GitHub Docs](https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace).
