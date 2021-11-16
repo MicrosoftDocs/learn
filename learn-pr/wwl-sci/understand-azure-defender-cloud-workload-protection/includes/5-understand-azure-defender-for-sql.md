@@ -1,11 +1,10 @@
-Azure Defender for SQL includes two Azure Defender plans that extend Azure Security Center's data security package to secure your databases and their data wherever they're located.
+Microsoft Defender for SQL includes two plans that extend Defender for Cloud's data security package to secure your databases and their data wherever they're located.
 
+## What does Microsoft Defender for SQL protect?
 
-## What does Azure Defender for SQL protect?
+Defender for SQL comprises two separate Microsoft Defender plans:
 
-Azure Defender for SQL comprises two separate Azure Defender plans:
-
-- **Azure Defender for Azure SQL database servers** protects:
+- **Defender for Azure SQL database servers** protects:
 
   - Azure SQL Database
 
@@ -13,7 +12,7 @@ Azure Defender for SQL comprises two separate Azure Defender plans:
 
   - Dedicated SQL pool in Azure Synapse
 
-- **Azure Defender for SQL servers on machines** extends the protections for your Azure-native SQL Servers to fully support hybrid environments and protect SQL servers (all supported version) hosted in Azure, other cloud environments, and even on-premises machines:
+- **Microsoft Defender for SQL servers on machines** extends the protections for your Azure-native SQL Servers to fully support hybrid environments and protect SQL servers (all supported version) hosted in Azure, other cloud environments, and even on-premises machines:
 
   - SQL Server on Virtual Machines
 
@@ -23,15 +22,15 @@ Azure Defender for SQL comprises two separate Azure Defender plans:
 
     - SQL Server running on Windows machines without Azure Arc
 
-## What are the benefits of Azure Defender for SQL?
+## What are the benefits of Microsoft Defender for SQL?
 
 These two plans include functionality for identifying and mitigating potential database vulnerabilities and detecting anomalous activities that could indicate threats to your databases:
 
 - Vulnerability assessment - The scanning service to discover, track, and help you remediate potential database vulnerabilities. Assessment scans provide an overview of your SQL machines' security state and details of any security findings.
 
-- Advanced threat protection - The detection service that continuously monitors your SQL servers for threats such as SQL injection, brute-force attacks, and privilege abuse. This service provides action-oriented security alerts in Azure Security Center with details of the suspicious activity, guidance on how to mitigate the threats and options for continuing your investigations with Azure Sentinel.
+- Advanced threat protection - The detection service that continuously monitors your SQL servers for threats such as SQL injection, brute-force attacks, and privilege abuse. This service provides action-oriented security alerts in Defender for Cloud with details of the suspicious activity, guidance on how to mitigate the threats and options for continuing your investigations with Microsoft Sentinel.
 
-- What kind of alerts does Azure Defender for SQL provide?
+- What kind of alerts does Defender for SQL provide?
 
 Threat intelligence enriched security alerts are triggered when there's:
 
