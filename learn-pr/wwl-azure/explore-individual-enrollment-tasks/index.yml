@@ -3,7 +3,7 @@ uid: learn.wwl.explore-individual-enrollment-tasks
 metadata:
   title: Explore individual enrollment tasks
   description: "Experience implementing an individual enrollment using symmetric keys, using code that accesses device twin properties to initialize a device, and a deprovisioning process that disenrolls and deregisters a device."
-  ms.date: 11/10/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
