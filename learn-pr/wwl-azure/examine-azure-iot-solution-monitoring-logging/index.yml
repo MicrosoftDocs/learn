@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-iot-solution-monitoring-logging
 metadata:
   title: Examine Azure IoT solution monitoring and logging
   description: "This module introduces you to Azure Monitor and how to configure monitoring and logging of IoT Hub events using IoT Hub metrics, and it examines the relationship between IoT Hub service limits and device lifecycle events."
-  ms.date: 11/13/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
