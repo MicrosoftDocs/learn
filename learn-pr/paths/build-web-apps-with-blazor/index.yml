@@ -28,6 +28,6 @@ modules:
 - learn.use-pages-routing-layouts-improve-blazor-navigation
 - learn.use-forms-in-blazor-web-apps
 - learn.build-interactive-components-blazor-web-apps
-- learn.build-and-publish-blazor-components
+- learn.blazor-build-reusable-components
 trophy:
   uid: learn.aspnet.build-blazor-webapps.trophy
