@@ -6,7 +6,4 @@ Imagine how much effort it would take to develop software if we didn't have a va
 
 In learning how to harness the .NET Class Library, you've taken a large step towards understanding how software developers build real world applications.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner)
+[!include[](../../../includes/dotnet-summary.md)]

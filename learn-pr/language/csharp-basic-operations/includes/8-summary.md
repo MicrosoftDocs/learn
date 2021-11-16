@@ -4,7 +4,4 @@ We used various operators to perform basic string and mathematical operations.  
 
 Congratulations on taking another step towards building more sophisticated applications.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner)
+[!include[](../../../includes/dotnet-summary.md)]

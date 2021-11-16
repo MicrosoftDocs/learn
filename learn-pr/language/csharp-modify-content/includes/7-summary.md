@@ -4,7 +4,4 @@ Utilizing the `IndexOf()` method, we could identify the position of a character 
 
 While it might be possible to perform these kinds of operations using a `char` array, iterating through each `char` to find matches, keeping track of the starting and ending points the wanted to locate, and so on.  It would take many more steps to accomplish what these string helper methods can accomplish in a single call.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]
