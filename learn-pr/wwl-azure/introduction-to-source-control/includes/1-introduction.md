@@ -4,7 +4,7 @@ The source control is a common-sense aspect of programming. It is essential from
 
 This module introduces you to the basics of source control, exploring benefits and best practices.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, students and professionals can:
 
