@@ -2,7 +2,7 @@ It's time to create your application's backend. For that you are going to create
 
 ## Create the Azure Function REST API
 
-1. Create project folder, call it `uploadimage`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
+1. Create project folder, call it `upload_image`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
 
 2. Create a new Azure Function. Type `ctrl+shift+p` to launch the command prompt. Type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.
 
