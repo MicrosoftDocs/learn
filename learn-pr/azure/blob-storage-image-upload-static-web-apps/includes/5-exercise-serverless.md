@@ -59,7 +59,7 @@ It's time to create your application's backend. For that you are going to create
 
 3. Require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string.
 
-    Your `require` section should now look this:
+    Your `require` section should now look like this:
 
     ```javascript
     const {
@@ -83,6 +83,6 @@ It's time to create your application's backend. For that you are going to create
     };
     ```
 
-Your `index.js` should like like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
+Your `index.js` should look like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
 
 You have successfully created your serverless backend. The next step is to implement the frontend that will let you upload images to Azure Blob Storage.
