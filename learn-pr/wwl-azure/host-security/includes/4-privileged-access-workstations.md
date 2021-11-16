@@ -19,8 +19,7 @@ The PAW security controls are focused on mitigating high impact and high probabi
 
 The diagram below depicts a separate "channel" for administration (a highly sensitive task) that is created by maintaining separate dedicated administrative accounts and workstations.
 
-> [!div class="mx-imgBorder"]
-> ![A separate channel for administration created by maintaining separate dedicated administrative accounts and workstations.](../media/az500-privilege-access-workstation.png)
+![A separate channel for administration created by maintaining separate dedicated administrative accounts and workstations.](../media/az500-privilege-access-workstation.png)
 
 This architectural approach builds on the protections found in the Windows 10 Credential Guard and Device Guard features and goes beyond those protections for sensitive accounts and tasks.
 
@@ -39,8 +38,7 @@ Administrative "Jump Box" architectures set up a small number administrative con
 
 This approach is frequently proposed to mitigate risk to administration and does provide some security assurances, but the jump box approach by itself is vulnerable to certain attacks because it violates the **clean source** principle. The clean source principle requires all security dependencies to be as trustworthy as the object being secured.
 
-> [!div class="mx-imgBorder"]
-> ![A simple control relationship between a subject and object.](../media/az500-privilege-access-workstation-2.jpg)
+![A simple control relationship between a subject and object.](../media/az500-privilege-access-workstation-2.jpg)
 
 This figure depicts a simple control relationship. Any subject in control of an object is a security dependency of that object. If an adversary can control a security dependency of a target object (subject), they can control that object.
 
@@ -50,7 +48,6 @@ While some advanced security controls like multifactor authentication can increa
 
 The default configuration in this PAW guidance installs administrative tools on the PAW, but a jump server architecture can also be added if required.
 
-> [!div class="mx-imgBorder"]
-> ![A jump box sits between an attacker and a protected workstation.](../media/az500-privilege-access-workstation-3.png)
+![A jump box sits between an attacker and a protected workstation.](../media/az500-privilege-access-workstation-3.png)
 
 This above figure shows how reversing the control relationship and accessing user apps from an admin workstation gives the attacker no path to the targeted object. The user jump box is still exposed to risk so appropriate protective controls, detective controls, and response processes should still be applied for that internet-facing computer.

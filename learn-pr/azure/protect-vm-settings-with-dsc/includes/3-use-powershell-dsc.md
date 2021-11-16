@@ -8,9 +8,9 @@ By the end of this unit, you'll:
 
 ## DSC resources
 
-You've seen that PowerShell DSC is a declarative task-oriented scripting language. When you need to configure and deploy an Azure resource in a consistent way across a set of VMs, PowerShell DSC can help. You can use PowerShell DSC even when you're not familiar with the technical steps to install and configure the software and services.  
+You've seen that PowerShell DSC is a declarative scripting language. Declarative programming focuses on the outcome, not the journey. When you need to configure and deploy an Azure resource in a consistent way across a set of VMs, PowerShell DSC can help. You can use PowerShell DSC even when you're not familiar with the technical steps to install and configure the software and services.  
 
-Windows Server has a set of built-in PowerShell DSC resources. You can see these resources by running the `Get-DSCResource` PowerShell cmdlet.
+Windows Server has a set of built-in PowerShell DSC resources. You can view these resources by running the `Get-DSCResource` PowerShell cmdlet.
 
 ```powershell
 Get-DscResource | select Name,Module,Properties
@@ -39,18 +39,18 @@ The resource you want to configure must already be part of the VM or part of the
 
 ## Anatomy of a DSC code block
 
-A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers aren't part of the syntax. They refer to sections in the discussion that follows. 
+A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers aren't part of the syntax. They are denoted as comments and they refer to sections in the discussion that follows. 
 
 ```powershell
 Configuration MyDscConfiguration {              ##1
-    Node "localhost" {                           ##2
+    Node "localhost" {                          ##2
         WindowsFeature MyFeatureInstance {      ##3
             Ensure = 'Present'
             Name = 'Web-Server'
         }
     }
 }
-MyDscConfiguration -OutputPath C:\temp\                             ##4
+MyDscConfiguration -OutputPath C:\temp\         ##4
 ```
 
 The configuration syntax includes these sections:
@@ -142,9 +142,9 @@ If you have hundreds of VMs on Azure, pull mode is more appropriate than push mo
 
 You can configure an Azure Automation account to act as a pull service. Just upload the configuration to the Automation account. Then register your VMs with this account. 
 
-Before you compile your configuration, import into your automation account any PowerShell modules the DSC process needs. These modules define how to complete the task to achieve the desired state. 
+Before you compile your configuration, import into your Automation account any PowerShell modules the DSC process needs. These modules define how to complete the task to achieve the desired state. 
 
-For example, a DSC script in the previous unit used the `xSmbShare` PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the automation account to the node.
+For example, a DSC script in the previous unit used the `xSmbShare` PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the Automation account to the node.
 
 The following diagram shows how to set up Azure Automation State Configuration. We'll explore these steps more in the next unit.
 
