@@ -16,7 +16,7 @@ The TTL value for a container is configured using the ``DefaultTimeToLive`` prop
 | ``-1`` | Items will not expire by default |
 | *n* | *n* seconds after last modified time |
 
-The TTL value for an item is configured by setting the ``ttl`` path of the item. The TTL value for an item will only work if the ``DefaultTimeToLive`` property is configured for the parent container. if the ``ttl`` path is configured for the item, it will override the ``DefaultTimeToLive`` property of the parent container.
+The TTL value for an item is configured by setting the ``ttl`` path of the item. The TTL value for an item will only work if the ``DefaultTimeToLive`` property is configured for the parent container. If the ``ttl`` path is configured for the item, it will override the ``DefaultTimeToLive`` property of the parent container.
 
 ## Examples
 

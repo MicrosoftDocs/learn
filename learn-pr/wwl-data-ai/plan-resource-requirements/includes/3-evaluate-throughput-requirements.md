@@ -13,17 +13,17 @@ When you create a database or container in Azure Cosmos DB, you can provision re
 
 ## Estimating ad-hoc RU/s consumption
 
-Some RU/s are normalized across various access methods, making many common operations predictable. Using this knowledge, you can perform some basic estimations for simple workloads. For example, you can estimate the RU/s required for common database operations such as one RU for a read and five RU for a write operation of a 1-KB document in optimal conditions.
+Some RU/s are normalized across various access methods, making many common operations predictable. Using this knowledge, you can perform some basic estimations for simple workloads. For example, you can estimate the RU/s required for common database operations such as one RU for a read and six RU/s for a write operation of a 1-KB document in optimal conditions.
 
 ![Request units diagram with estimates](../media/3-request-units.svg)
-
-> &#128161; This type of ad-hoc RU/s consumption makes the most sense if you plan to use Azure Cosmos DB in serverless mode. This provisioning mode is not covered in this module.
 
 Using this strategy, you should identify your solution's query and access patterns to make an educated guess as to how many request units will be needed in Azure Cosmos DB. To accomplish this, you will want information such as:
 
 - Top five queries
 - Number of read operations per second
 - Number of write operations per second
+
+> &#128161; Measuring RU/s for queries should be done at scale. Measuring queries running on a single physical partition will not yield significant data on the actual throughput used in your real world scenario once it is deployed and scaled out.
 
 You can use a spreadsheet application to build a quick table to figure out a rough estimate of your needed request unit capacity. Here's a quick example:
 
