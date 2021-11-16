@@ -43,11 +43,11 @@ quiz:
   - content: 'True or false: multiple rule conditions are always logically AND-ed together?'
     choices: 
     - content: 'False'
-      isCorrect: false
-      explanation: There's no other option than logical AND.
-    - content: 'True'
       isCorrect: true
-      explanation: There's no other option than logical AND.
+      explanation: Conditions can trigger the rule if either they are all true, or only one is true.
+    - content: 'True'
+      isCorrect: false
+      explanation: Conditions can trigger the rule if either they are all true, or only one is true.
 
   - content: 'True or false: one rule can trigger three actions?'
     choices: 

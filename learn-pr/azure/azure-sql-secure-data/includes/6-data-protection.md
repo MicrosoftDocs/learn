@@ -34,7 +34,7 @@ ALTER TABLE Data.Membership ALTER COLUMN Email
 ADD MASKED WITH (FUNCTION = 'email()')
 
 ALTER TABLE Data.Membership ALTER COLUMN DiscountCode 
-ADD MASKED WITH (FUNCTION = 'random(1, 100)’)
+ADD MASKED WITH (FUNCTION = 'random(1, 100)')
  
 GRANT UNMASK to DataOfficers
 ```

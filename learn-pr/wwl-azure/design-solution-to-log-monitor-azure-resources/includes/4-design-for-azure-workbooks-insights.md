@@ -1,3 +1,31 @@
+## Design for Azure workbooks
+
+Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. They allow you to tap into multiple data sources from across Azure and combine them into unified interactive experiences. Authors of workbooks can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For instance, analyzing performance logs from virtual machines to identify high CPU or low memory instances and displaying the results as a grid in an interactive report.
+
+Workbooks are currently compatible with the following data sources:
+
+- [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Alerts (Preview)](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+- [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
+
+ 
+
+But the real power of workbooks is the ability to combine data from disparate sources within a single report. This allows for the creation of composite resource views or joins across resources enabling richer data and insights that would otherwise be impossible. 
+
+Customers use workbooks in several ways—exploring the usage of an app, going through a root cause analysis, and putting together an operational playbook, for example.
+
+How would you leverage Azure workbooks for Tailwind Traders? What recommendations would you have based on their Azure environment and business needs? 
+
 ## Design for Azure Insights 
 
 The reputation of your organization depends on the performance, reliability, and security of its systems. It's critical to monitor your systems closely to identify any performance problems or attacks before they can affect users. For example, if your payment system is unable to process user transactions during a high-volume holiday sales period, your customers will likely lose confidence in your business. Designing insights as a part of your overall architecture will help identify performance issues. 
@@ -99,30 +127,3 @@ Application Insights is aimed at the development team, to help you understand ho
 
 - Monitor container workloads [deployed to Azure Arc enabled Kubernetes (preview)](/azure/azure-arc/kubernetes/overview).
 
-## Design for Azure workbooks
-
-Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. They allow you to tap into multiple data sources from across Azure and combine them into unified interactive experiences. Authors of workbooks can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For instance, analyzing performance logs from virtual machines to identify high CPU or low memory instances and displaying the results as a grid in an interactive report.
-
-Workbooks are currently compatible with the following data sources:
-
-- [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Alerts (Preview)](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-
-- [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
-
- 
-
-But the real power of workbooks is the ability to combine data from disparate sources within a single report. This allows for the creation of composite resource views or joins across resources enabling richer data and insights that would otherwise be impossible. 
-
-Customers use workbooks in several ways—exploring the usage of an app, going through a root cause analysis, and putting together an operational playbook, for example.
-
-How would you leverage Azure workbooks for Tailwind Traders? What recommendations would you have based on their Azure environment and business needs? 

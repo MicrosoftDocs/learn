@@ -25,27 +25,27 @@ quiz:
           explanation: Incorrect. This request mapping is a difference between the two approaches.
         - content: Model binding uses decorators to get body data.
           isCorrect: false
-          explanation: Incorrect. This model binding detail is a difference between the two approaches. There's no need for decorators to get body data for minimal API.
+          explanation: Incorrect. This model binding detail is a difference between the two approaches. There's no need for decorators to get body data for a minimal API.
     - content: What is the correct way to create a minimal API?
       choices:
-        - content: Type `dotnet new webapi`.
+        - content: Enter `dotnet new webapi`.
           isCorrect: false
-          explanation: Incorrect. That code is to create a controller-based API.
-        - content: Type `dotnet new web`.
+          explanation: Incorrect. That code is used to create a controller-based API.
+        - content: Enter `dotnet new web`.
           isCorrect: true
           explanation: Correct. That's the correct code to use to create a minimal API.
-        - content: Type `dotnet new minimalapi`.
+        - content: Enter `dotnet new minimalapi`.
           explanation: Incorrect. There's no template with that name.
           isCorrect: false
     - content: What's the correct way to set up a route in minimal API?
       choices:
-        - content: Type `ActionResult Get() {}`.
+        - content: Enter `ActionResult Get() {}`.
           isCorrect: false
           explanation: Incorrect. That code is how you can type in a controller-based API if this method is in a controller class.
-        - content: Type `app.Get("/pizza", () => /**/)`.
+        - content: Enter `app.Get("/pizza", () => /**/)`.
           isCorrect: false
-          explanation: Incorrect. You should use a method preceded with `Map` plus the name of the verb, for example, `MapGet()`.
-        - content: Type `app.MapGet("/pizza", () => /**/)`.
+          explanation: Incorrect. Use a method preceded with `Map` plus the name of the verb, for example, `MapGet()`.
+        - content: Enter `app.MapGet("/pizza", () => /**/)`.
           isCorrect: true
           explanation: Correct. Using this code is the correct way to set up a route in minimal API.
           
