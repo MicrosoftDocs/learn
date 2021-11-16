@@ -29,7 +29,7 @@ In this exercise you will learn how to:
         --sku Basic --vm-size c0
     ```
 
-1. In the Azure Portal navigate to the new Redis Cache you created.
+1. In the Azure portal navigate to the new Redis Cache you created.
 
 1. Select **Access keys** in the **Settings** section of the Navigation Pane and leave the portal open. We'll copy the **Primary connection string (StackExchange.Redis)** value to use in the app later.
 
