@@ -4,7 +4,4 @@ We used variable naming conventions to improve the readability of our code.  Cam
 
 We saw how the compiler doesn't care how we write the code.  But since we'll write the code once, but read the code many times, improving readability will help us maintain and support our code long term.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

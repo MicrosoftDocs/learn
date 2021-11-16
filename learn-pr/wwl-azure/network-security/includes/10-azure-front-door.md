@@ -4,8 +4,7 @@ Azure Front Door enables you to define, manage, and monitor the global routing f
 Front Door works at Layer 7 or HTTP/HTTPS layer and uses **split TCP-based anycast protocol**. Front Door ensures that your end users promptly connect to the nearest Front Door POP (Point of Presence).
 So, per your routing method selection in the configuration, you can ensure that Front Door is routing your client requests to the fastest and most available application backend. An application backend is any Internet-facing service hosted inside or outside of Azure. Front Door provides a range of traffic-routing methods and backend health monitoring options to suit different application needs and automatic failover models. Like Traffic Manager, Front Door is resilient to failures, including the failure of an entire Azure region.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram showing tcp traffic being re-routed using Azure Front Door](../media/az500-front-door.png)
+![Diagram showing tcp traffic being re-routed using Azure Front Door](../media/az500-front-door.png)
 
 The following features are included with Front Door:
 * **Accelerate application performance** - Using split TCP-based anycast protocol, Front Door ensures that your end users promptly connect to the nearest Front Door POP (Point of Presence). 

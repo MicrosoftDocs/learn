@@ -4,7 +4,7 @@ title: "Train and evaluate models in Model Builder"
 metadata:
   unitType: learning-content
   title: "Train and evaluate models in Model Builder"
-  description: "Use Model Builder to train a predictive maintenance classification model."
+  description: "Use Model Builder to train a classification model for predictive maintenance."
   ms.date: 10/25/2021
   author: luisquintanilla
   ms.author: chnoring

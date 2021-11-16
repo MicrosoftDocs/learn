@@ -4,7 +4,7 @@ metadata:
   title: Deploy Azure resources by using Bicep and GitHub Actions
   description: Learn how to use GitHub Actions to deploy your Bicep code in an automated way.
   brand: azure
-  ms.date: 10/26/2021
+  ms.date: 11/08/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -19,6 +19,7 @@ summary: |
   * Build a workflow that deploys your Bicep files.
   * Create a service principal that can securely connect your workflow to Azure.
   * Ensure your Bicep code quality by validating and testing it within your workflow.
+  * Work with multiple environments, and handle parameters and approvals.
 
   To learn about Bicep, we recommend you take these three learning paths:
 
@@ -71,5 +72,6 @@ modules:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals
 - learn.azure.test-bicep-code-using-github-actions
+- learn.azure.manage-multiple-environments-using-bicep-github-actions
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy

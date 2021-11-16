@@ -17,8 +17,7 @@ Identity-based authentication for Azure Files offers several benefits over using
 
 ## Identity-based authentication data flow
 
-> [!div class="mx-imgBorder"]
-> ![Diagram of how identity-based authentication works or Azure files.](../media/az500-azure-files-authentication.png)
+![Diagram of how identity-based authentication works or Azure files.](../media/az500-azure-files-authentication.png)
 
 1. Before you can enable authentication on Azure file shares, you must first set up your domain environment. For Azure AD DS authentication, you should enable Azure AD Domain Services and domain join the VMs you plan to access file data from. Your domain-joined VM must reside in the same virtual network (VNET) as your Azure AD DS. Similarly, for on-premises AD DS authentication, you need to set up your domain controller and domain join your machines or VMs.
 
