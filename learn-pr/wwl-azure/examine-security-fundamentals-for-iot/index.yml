@@ -3,7 +3,7 @@ uid: learn.wwl.examine-security-fundamentals-for-iot
 metadata:
   title: Examine security fundamentals for IoT
   description: "This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution."
-  ms.date: 11/13/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
