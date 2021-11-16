@@ -3,7 +3,7 @@ uid: learn.wwl.explore-device-configuration-communication
 metadata:
   title: Explore device configuration and communication
   description: "This module introduces you to device communication options and tools, and provides you with experience implementing device-to-cloud communication using the Azure IoT SDK for devices."
-  ms.date: 11/10/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

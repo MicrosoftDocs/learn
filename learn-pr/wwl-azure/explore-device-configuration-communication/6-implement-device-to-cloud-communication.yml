@@ -4,13 +4,14 @@ title: Implement device-to-cloud communication
 metadata:
   title: Implement device-to-cloud communication
   description: "Implement device-to-cloud communication"
-  ms.date: 11/10/2021
+  ms.date: 11/16/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+azureSandbox: false
+labId: 110065
+labModal: true
 durationInMinutes: 60
 content: |
   [!include[](includes/6-implement-device-to-cloud-communication.md)]
