@@ -36,3 +36,13 @@ TransactionalBatch batch = container.CreateTransactionalBatch(partitionKey)
     .CreateItem<Product>(saddle)
     .CreateItem<Product>(handlebar);
 ```
+
+Transactional batch also supports a wide variety of operations using the fluent syntax including, but not limited to:
+
+| **Method** | **Description** |
+| ---: | :--- |
+| ``CreateItemStream()`` | Create item from existing stream |
+| ``DeleteItem()`` | Delete an item  |
+| ``ReadItem()`` | Read an item  |
+| ``ReplaceItem()`` &amp; ``ReplaceItemStream()`` | Update an existing item or stream |
+| ``UpsertItem()`` &amp; ``UpsertItemStream()`` | Create or update an existing item or stream based on the item's unique identifier |
