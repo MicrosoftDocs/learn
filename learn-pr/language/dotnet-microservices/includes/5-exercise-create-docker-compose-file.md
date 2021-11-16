@@ -4,7 +4,7 @@ In this exercise, you'll create a Docker Compose YAML file. And then use the Doc
 
 ## Create the docker-compose file
 
-1. Use Visual Studio Code to open the **docker-aspnet-pizza** folder you cloned.
+1. Use Visual Studio Code to open the **mslearn-dotnetmicroservices** folder you cloned.
 1. In the topmost folder (the same folder with README.md), open then named **docker-compose.yml**. This file will be empty.
 1. Inside of that file, add the following code:
 

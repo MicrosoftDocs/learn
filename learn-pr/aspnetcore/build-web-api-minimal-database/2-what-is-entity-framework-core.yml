@@ -3,7 +3,7 @@ uid: learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-co
 title: What is Entity Framework Core?
 metadata:
   title: What is Entity Framework Core?
-  description: Learn what the Entity Framework (EF) Core is and how to use it with your API.
+  description: Learn what Entity Framework (EF) Core is and how to use it with your API.
   author: softchris
   ms.author: chnoring
   ms.date: 10/26/2021

@@ -1,13 +1,9 @@
-
 When it comes to identity and access, most organizations that are considering using the public cloud are concerned about two things:
 
-* Ensuring that when people leave the organization, they lose access to resources in the cloud.
+ -  Ensuring that when people leave the organization, they lose access to resources in the cloud.
+ -  Striking the right balance between autonomy and central governance—for example, giving project teams the ability to create and manage virtual machines in the cloud while centrally controlling the networks to which those virtual machines connect.
 
-* Striking the right balance between autonomy and central governance—for example, giving project teams the ability to create and manage virtual machines in the cloud while centrally controlling the networks to which those virtual machines connect.
-
-
-RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management of Azure resources.
-Azure AD and Role Based Access Control (RBAC) make it simple for you to carry out these goals. After you extend your on-premises Active Directory to the cloud by using Azure AD Connect, your employees can use and manage their Azure subscriptions by using their existing work identities. These Azure subscriptions automatically connect to Azure AD for SSO and access management. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
+RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management of Azure resources. Azure AD and Role Based Access Control (RBAC) make it simple for you to carry out these goals. After you extend your on-premises Active Directory to the cloud by using Azure AD Connect, your employees can use and manage their Azure subscriptions by using their existing work identities. These Azure subscriptions automatically connect to Azure AD for SSO and access management. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
 
 Additionally, synchronizing passwords to the cloud to support these checks also add resiliency during some attacks. Customers affected by (Not)Petya attacks were able to continue business operations when password hashes were synced to Azure AD (vs. near zero communications and IT services for customers affected organizations that had not synchronized passwords).
 
@@ -17,12 +13,10 @@ RBAC enables fine-grained access management for Azure. Using RBAC, you can grant
 
 The following diagram depicts how the classic subscription administrator roles, RBAC roles, and Azure AD administrator roles are related at a high level. Roles assigned at a higher scope, like a subscription, are inherited by child scopes, like service instances.
 
-> [!div class="mx-imgBorder"]
-> ![Classic subscription administrator roles, RBAC roles, and Azure AD administrator roles are related at a high level.](../media/az500-role-based-access-control.png)
+:::image type="content" source="../media/az500-role-based-access-control-08483ded.png" alt-text="Classic subscription administrator roles, RBAC roles, and Azure AD administrator roles are related at a high level.":::
 
 
->[!IMPORTANT]
->Note that a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Lastly, a resource can be bound to only one resource group.
-
+> [!IMPORTANT]
+> Note that a subscription is associated with only one Azure AD tenant. Also note that a resource group can have multiple resources but is associated with only one subscription. Lastly, a resource can be bound to only one resource group.
 
 For more information: [Azure Resource Manager](/azure/azure-resource-manager/management/overview)

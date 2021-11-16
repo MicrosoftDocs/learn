@@ -3,8 +3,7 @@ This a relatively new guidance from Microsoft.  To ensure the most secure condit
 
 For this solution, root of trust will be deployed using Windows Autopilot technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and even changes the edition of Windows 10.
 
-> [!div class="mx-imgBorder"]
-> ![Process flow diagram that shows that hardware is most secure, when purchased from a trusted OEM that uses Autopilot to provision the device before delivery; then stong security polices are enforced through-out its usage](../media/secure-workstation-deployment-flow.png)
+![Process flow diagram that shows that hardware is most secure, when purchased from a trusted OEM that uses Autopilot to provision the device before delivery; then stong security polices are enforced through-out its usage](../media/secure-workstation-deployment-flow.png)
 
 ## Hardware root-of-trust
 
@@ -31,8 +30,7 @@ To have a secured workstation you need to make sure the following security techn
 
 This chart shows the level of device security controls based on how the device will be used.
 
-> [!div class="mx-imgBorder"]
-> ![Chart with three levels of device security across the top - Enterprise, Specialized, and Privileged.  Then content of the chart explore what security settings should be used for each.  This data is covered in the table included in the content below.](../media/secure-workstations-levels.png)
+![Chart with three levels of device security across the top - Enterprise, Specialized, and Privileged.  Then content of the chart explore what security settings should be used for each.  This data is covered in the table included in the content below.](../media/secure-workstations-levels.png)
 
 ## Device security controls
 
