@@ -33,7 +33,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Modify the *Lint* stage. Rename it to *Build*, and add a build job that uses the pipeline template that you just created:
 
-   :::code language="yaml" source="code/5-pipeline.yml" highlight="11-17" :::
+   :::code language="yaml" source="code/5-pipeline.yml" highlight="12-18" :::
 
 1. Save your changes to the file.
 

@@ -10,6 +10,6 @@ metadata:
   ms.author: jowaddel
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 5 # user input: the estimate time to complete the unit
+durationInMinutes: 3
 content: |
   [!include[](includes/5-how-bicep-works.md)]
