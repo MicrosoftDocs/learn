@@ -127,9 +127,17 @@ Now that we have a function app, it's time to create a function. A function is a
 
     The **Code + Test** pane for your function appears, and displays the contents of your **index.js** file.
 
-    [![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-implementation-javascript-small.png)](../media/3-default-http-trigger-implementation-javascript.png#lightbox) <!-- no-loc -->
+   
+chain-ja-pwrsh
+\
+HttpTrigger1
+\
 
-    The default JavaScript code for your function should resemble the following example.
+chain-ja-pwrsh
+\
+HttpTrigger1
+\
+ The default JavaScript code for your function should resemble the following example.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -171,13 +179,15 @@ Now that we have a function app, it's time to create a function. A function is a
     }
     ```
 
-    As you can see, this function has a trigger binding named **req** of type `httpTrigger`, and an output binding named **res** of type `http`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us.
-
+  This function has a *trigger binding* named **req** of type `httpTrigger`, and an output binding named *res* of type `http`. 
+  
+  In the preceding code for our function, we saw that we accessed the payload of the incoming HTTP request through the **req** parameter. Similarly, we sent an HTTP response by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us!
+  
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
+Now that we have a function app, let's create a function. A function is activated via a trigger. In this module, we'll use an HTTP trigger.
 
 1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
