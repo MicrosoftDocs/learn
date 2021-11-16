@@ -39,7 +39,7 @@ Now we will add the code to receive and process a message in the application.
     ```csharp
     Console.WriteLine($"Message id    : {message.MessageId}");
     Console.WriteLine($"Inserted on   : {message.InsertedOn}");
-    Console.WriteLine($"Message (raw) : {message.Body}")
+    Console.WriteLine($"Message (raw) : {message.Body}");
     ```
 
 1. Next, we want to deserialize the message content into an object that we can work with in our code.  To do this, we use the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
