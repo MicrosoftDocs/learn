@@ -142,9 +142,9 @@ As an admin, you might want to review and audit who is accessing the databases a
 
     :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Screenshot of how to sign in to Azure.":::  
 
-1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
+1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`. If there is no container with that name, you created a different storage account for auditing, use that instead.
 
-1. Select your Azure SQL Database logical server and your AdventureWorks database. The container should take everything from the current day up until the time you select the database name. Select **OK**.
+1. Select your Azure SQL Database logical server and your AdventureWorks database. Make sure the *From* time is earlier than when you started the exercises. Select **OK**.
 
 1. The confirmation window lets you know how many files are being downloaded and merged. Select **OK**.  
 

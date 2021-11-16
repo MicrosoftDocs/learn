@@ -1,4 +1,4 @@
-In our last exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
+In the previous exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
 
 ![Decision flow diagram illustrating the process of adding a bookmark in our Azure Cosmos DB back-end and returning a response.](../media/7-add-bookmark-flow-small.png)
 
@@ -6,56 +6,56 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can decide to do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of this offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand the task off to a function and let complete this task asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the previous one. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this one.
+> This exercise builds on the exercise in a previous unit. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this exercise.
 
 ## Create an HTTP-triggered function
 
 ::: zone pivot="javascript"
 
-1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
+1.  [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the portal, go to the function app that you created in this module.
+1. In the portal, go to the function app that you created in the previous exercise.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
+1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Make sure you are signed in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as your activated sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the portal, go to the function app that you created in this module.
+1. In the portal, go to the function app that you created in the previous exercise.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
-1. In the top menu bar, select **Create**. The **Create function** pane appears.
+1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
+1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
 ## Add an Azure Cosmos DB input binding
 
-Let's repeat what we did in the preceding exercise to add another Azure Cosmos DB input binding.
+As in the preceding exercise, let's add another Azure Cosmos DB input binding.
 
 1. Ensure your new function, **HttpTrigger3**, is selected.
 
-1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your trigger associated with your function appears.
+1. In the Function menu, under **Developer**, select **Integration**. The **Integration** pane for the trigger associated with your function appears.
 
 1. To display the list of all possible input binding types, in the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
-1. Under **Binding Type**, from the dropdown list, select **Azure Cosmos DB**.
+1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
 1. If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **install**, and wait for it to complete.
 
@@ -115,28 +115,28 @@ Azure Queue storage is a service for storing messages that can be accessed from 
 
 For example, here you can see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** will pop messages from the same queue, and process the request. Because we write, or *push* messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal this time.
 
-1. On the **Integration** pane for your function, in the **Outputs** box, select **Add output**. The **Create Output** pane appears displaying a list of all possible output binding types.
+1. On the **Integration** pane for your function, in the **Outputs** box, select **Add output**. The **Create Output** appears.
 
-1. Under **Binding Type**, in the dropdown list, select **Azure Queue Storage**.
+1. In **Binding Type** dropdown list, select **Azure Queue Storage**.
 
     If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.Storage extension, select **install** and wait for it to finish.
 
-    Next, we'll set up a storage account connection. This is where our queue will be hosted.
+    Next, we'll set up a storage account connection, where our queue will be hosted.
 
-1. Under the **Storage account connection** setting, select the **New** link. The **New Storage Account connection** dialog box appears.
+1. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
 
-1. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane. You must select this storage account from the dropdown list.
+1. At the beginning of this module, when you created your function app, a storage account also created for you. Select it from the dropdown list, and then select **OK**.
 
-1. Select **OK**. The Storage account connection setting is populated with the name of a connection.
+    The Storage account connection setting is populated with the name of a connection.
 
-1. Although we could keep the default values in all the other settings, let's change the following values for each setting to lend more meaning to the properties. In the **Create Output** pane, enter the following new values for each setting. replacing the old values.
+1. Although we could keep the default values, let's change some settings to lend more meaning to the properties. In the **Create Output** pane, replace the old values with the new values, as follows:
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. To save your changes, select **OK**. The **Storage account connection** setting is populated with the name of a connection.
+1. Select **OK** to save your changes. The **Storage account connection** setting is populated with the name of a connection.
 
 ## Update function implementation
 
@@ -146,9 +146,9 @@ We now have all our bindings set up for your function. It's time to use them in 
 
 1. To open the **index.js** file in the code editor, select your function, **HttpTrigger3**.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and in the top menu bar, select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet, and in the command bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -162,7 +162,7 @@ Let's break down what this code does:
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 > 
-> ![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
+> :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
 > 
 
 So, that's it. Let's see our work in action in the next section.
@@ -173,9 +173,9 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your function, **HttpTrigger3**.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears.
 
-1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the top menu bar, select **Save**.
+1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the command bar, select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -223,15 +223,15 @@ So, that's it. Let's see our work in action in the next section.
 
 ## Try it out
 
-Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request and a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
+Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In the **Code + Test** pane of your HTTP-triggered function, in the top menu bar, select **Test/Run**, and verify that the test pane appears on the right. The following image shows what it should look like:
+1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The test pane appears, as shown in this image:
 
     ![Screenshot showing the function Test Panel expanded.](../media/7-test-panel-open-small.png)
 
 1. In the **HTTP method** dropdown list, verify that **POST** is selected.
 
-1. Replace the contents of the request **Body** with the following JSON payload:
+1. Replace the contents of the request **Body** with the following JSON object:
 
     ```json
     {
@@ -242,13 +242,13 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Select **Run**.
 
-1. Verify that the **Output** tab displays the "bookmark added!" message in the **HTTP response content** setting, as shown in the following screenshot.
+1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
 
-    ![Screenshot showing Test Panel and result of a failed test.](../media/7-test-exists-small.png)
+    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of Test pane showing result of a failed test.":::)
 
-1. Let's post a second bookmark to the database. On the test pane, select the **Input** tab.
+1. Let's post a second bookmark to the database. On the Test pane, select the **Input** tab.
 
-1. Replace the contents of the request **Body** with the following JSON payload:
+1. Replace the contents of the request **Body** with the following JSON object:
 
     ```json
     {
@@ -259,32 +259,32 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Select **Run**.
 
-1. Verify that the **Output** tab displays the "bookmark added!" message in the **HTTP response content** setting, as shown in the following screenshot.
+1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
 
-    ![Screenshot showing Test Panel and result of a successful test.](../media/7-test-success-small.png)
+    :::image type="content" source="../media/7-test-success-small.png" alt-text="Screenshot showing Test pane and result of a successful test.":::
 
-Congratulations! Your function works as designed, but what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
+Congratulations! Your function works as designed! But, what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
 
 ### Verify that a message is written to the queue
 
 Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
 
-1. In the top search box in the Azure portal, enter **storage accounts**, and in the results list, under **Services**, select **Storage accounts**. The **Storage accounts** pane appears.
+1. In the Azure portal search box, enter **storage accounts**, and then in the results list, select **Storage accounts**. The **Storage accounts** pane appears.
 
-    [![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-storage-accounts-small.png)](../media/7-search-storage-accounts.png#lightbox)
+    :::image type="content" source="../media/7-search-storage-accounts-small.png" alt-text="Screenshot showing search results for Storage Account search." lightbox="../media/7-search-storage-accounts.png":::
 
-1. In the list of storage accounts that are returned, select the storage account that you used to create the **newmessage** output binding. The storage account settings appear in the main window of the portal.
+1. Select the storage account that you used to create the **newmessage** output binding.
 
-1. In the middle menu pane, under **Data storage**, select **Queues**. A list of queues hosted by this storage account appears. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot.
+1. In the menu, under **Data storage**, select **Queues**. A list of queues hosted by this storage account appears. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot.
 
-    ![Screenshot showing our queue in the list of queues hosted by this storage account.](../media/7-queue-in-list.png)
+    :::image type="content" source="../media/7-queue-in-list.png" alt-text="Screenshot showing queues hosted by this storage account.":::
 
-1. To open the queue, select **bookmarks-post-process**. The messages that are in the queue appear in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following.
+1. Select **bookmarks-post-process** to list the messages that are in the queue. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following.
 
-    ![Screenshot showing our message sitting in the queue.](../media/7-message-in-queue.png)
+    :::image type="content" source="../media/7-message-in-queue.png" alt-text="Screenshot of message queue with our message highlighted.":::
 
-    In this example, you can see that the message was given a unique ID, and the **Message text** column displays your bookmark in JSON string format.
+    In this example, the message was given a unique ID, and the **Message text** column displays your bookmark in JSON format.
 
 1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 
-In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We went further and added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to a variety of destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.

@@ -26,8 +26,7 @@ You can rely on Microsoft-managed keys for the encryption of your storage accoun
 * You can specify a *customer-managed* key to use for encrypting and decrypting all data in the storage account. A customer-managed key is used to encrypt all data in all services in your storage account.
 * You can specify a *customer-provided* key on Blob storage operations. A client making a read or write request against Blob storage can include an encryption key on the request for granular control over how blob data is encrypted and decrypted.
 
-> [!div class="mx-imgBorder"]
-> ![Storage encryption page in Azure portal](../media/az500-storage-encryption.png)
+![Storage encryption page in Azure portal](../media/az500-storage-encryption.png)
 
 The following table compares key management options for Azure Storage encryption.
 
