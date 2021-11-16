@@ -42,7 +42,7 @@ products:
 - github
 units:
 - learn.wwl.work-azure-repos-github.introduction
-- learn.wwl.work-azure-repos-github.introduction-to
+- learn.wwl.work-azure-repos-github.introduction-azure-repos
 - learn.wwl.work-azure-repos-github.introduction-to-github
 - learn.wwl.work-azure-repos-github.link-github-to-azure-boards
 - learn.wwl.work-azure-repos-github.migrate-from-tfvc-to-git

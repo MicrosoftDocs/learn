@@ -10,6 +10,6 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [Integration of Azure Repos and Git Repositories](https://azure.microsoft.com/services/devops/repos/).
- -  [Integration of Azure Boards and GitHub](/azure/devops/boards/github/?view=azure-devops).
- -  [Import repositories from TFVC to Git - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/import-from-tfvc?view=azure-devops).
+ -  [Integration of Azure Boards and GitHub](/azure/devops/boards/github/).
+ -  [Import repositories from TFVC to Git - Azure Repos \| Microsoft Docs](/azure/devops/repos/git/import-from-tfvc).
  -  [GitHub Codespaces](https://github.com/features/codespaces).

@@ -20,6 +20,6 @@ Azure Boards can connect to GitHub. For GitHub in the cloud, when adding a GitHu
  -  Username/Password
  -  Personal Access Token (PAT)
 
-For a walkthrough on making the connection, see: [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github?view=azure-devops).
+For a walkthrough on making the connection, see: [Connect Azure Boards to GitHub](/azure/devops/boards/github/connect-to-github).
 
-See [Link GitHub commits, pull requests, and issues to work items for details on linking to work items](/azure/devops/boards/github/link-to-from-github?view=azure-devops).
+See [Link GitHub commits, pull requests, and issues to work items for details on linking to work items](/azure/devops/boards/github/link-to-from-github).
