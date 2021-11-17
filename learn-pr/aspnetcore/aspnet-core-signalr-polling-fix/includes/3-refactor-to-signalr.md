@@ -6,14 +6,14 @@ The _BlazingPizza.Server.csproj_ added the following NuGet package reference:
 
 - [Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack)
 
-:::code language="xml" source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/BlazingPizza.Server.csproj" highlight="14":::
+:::code language="xml" source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/BlazingPizza.Server.csproj" highlight="15":::
 
 The _BlazingPizza.Client.csproj_ added the following NuGet package references:
 
 - [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client)
 - [Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack)
 
-:::code language="xml" source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Client/BlazingPizza.Client.csproj" highlight="11-12":::
+:::code language="xml" source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Client/BlazingPizza.Client.csproj" highlight="12-13":::
 
 The MessagePack NuGet package was added to make messages sent between the client and server smaller.
 
@@ -37,7 +37,7 @@ The preceding hub implementation exposes two methods that are invokable from cli
 
 The `Startup` class needed to be updated to add ASP.NET Core SignalR, and the MessagePack protocol. Additionally, the `"/orderstatus"` endpoint is mapped to the `OrderStatusHub` implementation. Consider the following _Startup.cs_ file:
 
-:::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Startup.cs" highlight="39-40,72":::
+:::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Startup.cs" highlight="29-30,62":::
 
 The preceding highlighted changes:
 

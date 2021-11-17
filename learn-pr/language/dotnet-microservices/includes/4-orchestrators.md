@@ -12,7 +12,7 @@ The image below illustrates deployment into a cluster of an application composed
 This diagram shows 6 docker images deployed as 2 applications. The applications are then deployed as several clusters. The diagram is meant to show how difficult it would be to perform the deployment without a tool to help.
 :::image-end:::
 
-You use one container for each service instance. Docker containers are "units of deployment" and a container is an instance of a Docker. A host handles many containers. It looks like a logical approach. An orchestrator helps deploy the containers and manage the hosts.
+You use one container for each service instance. Docker containers are "units of deployment" and a container is an instance of a Docker image. A host handles many containers. It looks like a logical approach. An orchestrator helps deploy the containers and manage the hosts.
 
 ## Why would you use an orchestrator?
 

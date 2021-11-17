@@ -16,8 +16,7 @@ The investigation graph provides you with:
 
 Select an incident, then select **Investigate**. This takes you to the investigation graph. The graph provides an illustrative map of the entities directly connected to the alert and each resource connected further.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the incident graph.](../media/az500-sentinel-graph.png)
+![Screenshot of the incident graph.](../media/az500-sentinel-graph.png)
 
 You'll only be able to investigate the incident if you used the entity mapping fields when you set up your analytic rule. The investigation graph requires that your original incident includes entities.
 
@@ -35,8 +34,7 @@ With Azure Sentinel hunting, you can take advantage of the following capabilitie
 * **Query the stored data**: The data is accessible in tables for you to query. For example, you can query process creation, DNS events, and many other event types.
 * **Links to community**: Leverage the power of the greater community to find additional queries and data sources.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Sentinel Hunting blade.](../media/az500-sentinel-hunting.png)
+![Screenshot of the Sentinel Hunting blade.](../media/az500-sentinel-hunting.png)
 
 ### Community
 

@@ -15,8 +15,7 @@ When a Key Vault certificate is created, an addressable key and secret are also 
 
 The identifier and version of certificates is similar to that of keys and secrets. A specific version of an addressable key and secret created with the Key Vault certificate version is available in the Key Vault certificate response.
 
-> [!div class="mx-imgBorder"]
-> ![A diagram starts with an application, which points to the Key Vault REST API, and then to the three resources that make up the certificate. ](../media/az500-key-vault-certificates.png)
+![A diagram starts with an application, which points to the Key Vault REST API, and then to the three resources that make up the certificate. ](../media/az500-key-vault-certificates.png)
 
 When a Key Vault certificate is created, it can be retrieved from the addressable secret with the private key in either PFX or PEM format. However, the policy used to create the certificate must indicate that the key is exportable. If the policy indicates non-exportable, then the private key isn't a part of the value when retrieved as a secret.
 

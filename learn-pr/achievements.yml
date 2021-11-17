@@ -707,3 +707,13 @@ achievements:
   title: Design identities and access for applications
   summary: Design identities and access for applications
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.explore-data-ingestion-azure.badge
+  type: badge
+  title: Explore data ingestion in Azure
+  summary: Explore data ingestion in Azure
+  iconUrl: /learn/achievements/explore-data-ingestion-azure.svg
+- uid: learn.wwl.explore-data-storage-processing-azure.badge
+  type: badge
+  title: Explore data storage and processing in Azure
+  summary: Explore data storage and processing in Azure
+  iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg

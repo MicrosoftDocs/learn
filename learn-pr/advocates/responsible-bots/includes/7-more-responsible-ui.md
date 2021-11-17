@@ -122,7 +122,7 @@ In this unit, we reviewed several ways to improve our bot and provide a robust c
 [LangDetection]: https://docs.microsoft.com/azure/cognitive-services/Face/quickstarts/csharp?azure-portal=true
 [MiddleWare]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0?azure-portal=true
 [QnAPortal]: https://qnamaker.ai?azure-portal=true
-[QnAFollowUp]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation?azure-portal=true
+[QnAFollowUp]: https://docs.microsoft.com/azure/cognitive-services/language-service/question-answering/tutorials/guided-conversations
 [TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/?azure-portal=true
 [Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translator?azure-portal=true
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/?azure-portal=true

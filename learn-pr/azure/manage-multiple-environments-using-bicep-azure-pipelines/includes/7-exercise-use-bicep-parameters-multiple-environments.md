@@ -93,7 +93,7 @@ Because you're adding more parameters that vary between each environment, you de
 
 1. Update the stages that use templates to remove the `resourceGroupName` and `serviceConnectionName` parameters. Leave only the `environmentType` parameter.
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="18-19, 23-24" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="19-20, 24-25" :::
 
 1. Save your changes to the file.
 

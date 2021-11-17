@@ -22,7 +22,6 @@ Advanced Threat Protection for Azure SQL Database detects anomalous activities i
 
 * **Brute force SQL credentials**: This alert is triggered when there is an abnormal high number of failed logins with different credentials. In some cases, the alert detects penetration testing in action. In other cases, the alert detects brute force attack.
 
-> [!div class="mx-imgBorder"]
-> ![Advance Threat Protection threat scan results](../media/az500-sql-threat-protection.png)
+![Advance Threat Protection threat scan results](../media/az500-sql-threat-protection.png)
 
 ATP is integrated with Azure Security Center to detect and respond to potential threats as they occur.

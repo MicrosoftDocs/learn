@@ -9,6 +9,8 @@ In this module, you'll publish and deploy an ARM64-based DeepStream container wo
 - Be familiar with Azure IoT Edge and Azure IoT Hub.
 - Complete the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
 
+:::image type="content" source="../media/jetson-edge-device.jpg" alt-text="Screenshot that shows an NVIDIA Jetson embedded device." lightbox="../media/jetson-edge-device.jpg":::
+
 ## Scenario: Deploy a DeepStream Graph Composer workload to a real device at the edge
 
 Your boss is excited about the progress of your Intelligent Video Application and is interested in putting your work into production. You learn that NVIDIA produces a line of embedded devices that are capable of running NVIDIA DeepStream Graph Composer workloads. You've decided to investigate using the Azure IoT Edge runtime to securely distribute your NVIDIA DeepStream Graph Composer workload to these small form factor graphics processing unit (GPU)-accelerated devices at locations around the world. This strategy will not only solve the issue of deployment, but also allow you to gather metrics from all devices in a single location. Then, you can perform analysis by using services in Azure.
