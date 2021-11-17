@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.autoscale-java-azure.learning-content
-title: Introduction
+title: What is autoscaling
 metadata:
   unitType: learning-content
-  title: Introduction
+  title: What is autoscaling
   description: You'll learn about the basic concepts for autoscale on Azure
   ms.date: 07/07/2021
   author: roryp

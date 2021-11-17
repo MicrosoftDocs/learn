@@ -30,6 +30,7 @@ products:
 - azure-database-mysql
 - azure-spring-cloud
 units:
+- learn.autoscale-java-azure.introduction
 - learn.autoscale-java-azure.exercise-setup
 - learn.autoscale-java-azure.learning-content
 - learn.autoscale-java-azure.rules
