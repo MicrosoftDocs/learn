@@ -59,9 +59,9 @@ This approach is typically useful for external users who need to access the data
 Synapse SQL support connections from SQL Server Management Studio (SSMS) using Active Directory Universal Authentication.
  
 > [!div class="mx-imgBorder"]
-> ![Log in with multi-factor-authentication.](../media/log-multi-factor.png)
+> ![Log in with multifactor-authentication.](../media/log-multi-factor.png)
 
-This enables you to operate in environments that use Conditional Access policies that enforce multi-factor authentication as part of the policy.
+This enables you to operate in environments that use Conditional Access policies that enforce multifactor authentication as part of the policy.
 
 ### Keys
 
