@@ -6,6 +6,7 @@ To meet these objectives, you'll:
 > * Set up a GitHub repository for this module.
 > * Clone the project's repository to your computer.
 > * Create two resource groups in Azure.
+> * Create two service principals in Azure Active Directory.
 > * Create two secrets and environments in GitHub.
 
 ## Get the GitHub repository
@@ -217,7 +218,7 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
 
-1. Repeat the steps above to create another service principal for your production environment:
+1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -264,7 +265,7 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
 
-1. Repeat the steps above to create another service principal for your production environment:
+1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
 
    ```azurepowershell
    $resourceGroupId = 'RESOURCE_GROUP_ID'
