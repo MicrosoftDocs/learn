@@ -10,7 +10,7 @@ There are three patterns for using an IoT Edge device as a gateway: transparent,
  -  Protocol translation – Also known as an opaque gateway pattern, devices that do not support MQTT, AMQP, or HTTP can use a gateway device to send data to IoT Hub on their behalf. The gateway understands the protocol used by the downstream devices and is the only device that has an identity in IoT Hub. All information looks like it is coming from one device, the gateway. Downstream devices must embed extra identifying information in their messages if cloud applications want to analyze the data on a per-device basis. Additionally, IoT Hub primitives like twins and methods are only available for the gateway device, not downstream devices.
  -  Identity translation - Devices that cannot connect to IoT Hub directly can connect to a gateway device instead. The gateway provides IoT Hub identity and protocol translation on behalf of the downstream devices. The gateway is smart enough to understand the protocol used by the downstream devices, provide them identity, and translate IoT Hub primitives. Downstream devices appear in IoT Hub as first-class devices with twins and methods. A user can interact with the devices in IoT Hub and is unaware of the intermediate gateway device.
 
-:::image type="content" source="../media/m06-l03-iot-edge-as-gateway-69dc0153.png" alt-text="Azure IoT Edge Device as a Gateway":::
+:::image type="content" source="../media/m06-l03-iot-edge-gateway-8836b3a3.png" alt-text="Diagram that shows the three patterns for using an IoT Edge device as a gateway.":::
 
 
 ## Use cases

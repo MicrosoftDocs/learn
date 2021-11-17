@@ -31,7 +31,7 @@ When you create the new device identity, provide the following information:
  -  Select **Symmetric key** as the authentication type.
  -  Optionally, choose to **Set a parent device** and select the IoT Edge gateway device that this downstream device will connect through. This step is optional for symmetric key authentication, but it's recommended because setting a parent device enables offline capabilities for your downstream device. You can always update the device details to add or change the parent later.
 
-:::image type="content" source="../media/m06-l03-edge-gateway-symmetric-key-portal-93d92342.png" alt-text="Edge Gateway - Create Device Identity with Symmetric Key Authentication":::
+:::image type="content" source="../media/m06-l03-edge-gateway-symmetric-key-portal-93d92342.png" alt-text="Screen shot that shows how to create a device identity that uses symmetric key authentication.":::
 
 
 You can use the IoT extension for Azure CLI to complete the same operation. The following example creates a new IoT device with symmetric key authentication and assigns a parent device:
@@ -112,7 +112,7 @@ You should have created a root CA certificate and an intermediate certificate.
      -  Paste the hexadecimal strings that you copied from your device's primary and secondary certificates.
      -  Select Set a parent device and choose the IoT Edge gateway device that this downstream device will connect through. A parent device is required for X.509 authentication of a downstream device.
     
-    :::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Edge Gateway - Create Device Identity with X509 Self-Signed Authentication":::
+    :::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Screen shot that shows how to create a device identity that uses X.509 self-signed certificate authentication.":::
     
 5.  Copy the following files to any directory on your downstream device:
     
@@ -138,7 +138,7 @@ az iot hub device-identity create -n {iothub name} -d {device ID} --pd {gateway 
 
 For X.509 certificate authority (CA) signed authentication, you need a root CA certificate registered in IoT Hub that you use to sign certificates for your IoT device. Any device using a certificate that was issues by the root CA certificate or any of its intermediate certificates will be permitted to authenticate.
 
-1.  Follow the instructions in the Register X.509 CA certificates to your IoT hub section of Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started\#register-x509-ca-certificates-to-your-iot-hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started#register-x509-ca-certificates-to-your-iot-hub). In that section, you perform the following steps:
+1.  Follow the instructions in the Register X.509 CA certificates to your IoT hub section of Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). In that section, you perform the following steps:
     
      -  Upload a root CA certificate. If you're using the certificates that you created in the transparent gateway article, upload &lt;WRKDIR&gt;/certs/azure-iot-test-only.root.ca.cert.pem as the root certificate file.
      -  Verify that you own that root CA certificate. You can verify possession with the cert tools in &lt;WRKDIR&gt;.
@@ -199,7 +199,7 @@ Each Azure IoT SDK handles X.509 authentication a little differently. However, t
 
 **Important:** The following code sample demonstrates how the IoT Hub SDKs use certificates to authenticate devices. In a production deployment, you should store all secrets like private or SAS keys in a hardware secure module (HSM).
 
-For an example of a C\# program authenticating to IoT Hub with X.509 certificates, see Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started\#authenticate-your-x509-device-with-the-x509-certificates](https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started#authenticate-your-x509-device-with-the-x509-certificates). Some of the key lines of that sample are included here to demonstrate the authentication process.
+For an example of a C\# program authenticating to IoT Hub with X.509 certificates, see Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). Some of the key lines of that sample are included here to demonstrate the authentication process.
 
 When declaring the hostname for your DeviceClient instance, use the IoT Edge gateway device's hostname. The hostname can be found in the gateway device's config.yaml file.
 

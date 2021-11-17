@@ -34,7 +34,7 @@ When a device connects to an IoT Edge gateway, the downstream device is the clie
 
 When you use a self-signed root CA certificate for an IoT Edge gateway, it needs to be installed on or provided to all the downstream devices attempting to connect to the gateway.
 
-:::image type="content" source="../media/m06-l03-edge-gateway-downstream-device-gateway-setup-6750e62a.png" alt-text="Edge Gateway - Certificate Installation on Downstream Devices":::
+:::image type="content" source="../media/m06-l03-edge-gateway-downstream-device-gateway-setup-6750e62a.png" alt-text="Diagram that shows the certificate chain to leaf devices when using a self-signed root CA certificate for an IoT Edge gateway.":::
 
 
 ## Provide the root CA certificate
