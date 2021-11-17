@@ -100,7 +100,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
    Notice that the job depends on the *deploy* job by using the `needs` keyword. This ensure the website isn't deployed until the infrastructure is ready. It also enables the job to access the `appServiceAppName` output from the *deploy* job.
 
-   Also, notice that this job includes steps to download the workflow artifacts and to sign in to Azure. The job runs on a separate runner to the *deploy* job, so it needs to be self-contained.
+   Also, notice that this job includes steps to download the workflow artifacts and to sign in to Azure. Each job runs on its own runner, so it needs to be self-contained.
 
 1. Save your changes to the file.
 
