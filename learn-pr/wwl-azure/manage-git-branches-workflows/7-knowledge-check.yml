@@ -41,12 +41,12 @@ quiz:
       explanation: "That is incorrect. The Gitflow Workflow defines a strict branching model designed around the project release."
   - content: "Which of the following choices creates a feature branch using the git-flow extension?"
     choices:
-    - content: "git checkout develop, and git checkout -b feature_branch"
+    - content: "git checkout develops, and git checkout -b feature_branch"
       isCorrect: false
-      explanation: "That's incorrect. When using the git-flow extension use: git flow feature start feature_branch."
+      explanation: "That's incorrect. Use git flow feature start feature_branch."
     - content: "git checkout feature_branch"
       isCorrect: false
-      explanation: "That's incorrect. When using the git-flow extension use: git flow feature start feature_branch."
+      explanation: "That's incorrect. Use git flow feature start feature_branch."
     - content: "git flow feature start feature_branch"
       isCorrect: true
-      explanation: "That's correct. When using the git-flow extension use: git flow feature start feature_branch."
+      explanation: "That's correct. Use git flow feature start feature_branch."
