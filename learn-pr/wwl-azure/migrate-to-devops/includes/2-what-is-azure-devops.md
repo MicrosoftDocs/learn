@@ -1,6 +1,6 @@
 Azure DevOps is a Software as a service (SaaS) platform from Microsoft that provides an end-to-end DevOps toolchain for developing and deploying software.
 
-It also integrates with most-leading tools on the market and is an excellent option for orchestrating a DevOps toolchain.
+It also integrates with the most-leading tools on the market and is an excellent option for orchestrating a DevOps toolchain.
 
 ## What does Azure DevOps provide?
 
@@ -9,7 +9,7 @@ Azure DevOps includes a range of services covering the complete development life
  -  Azure Boards: agile planning, work item tracking, visualization, and reporting tool.
  -  Azure Pipelines: a language, platform, and cloud-agnostic CI/CD platform-supporting containers or Kubernetes.
  -  Azure Repos: provides cloud-hosted private git repos.
- -  Azure Artifacts: provides integrated package management with support for Maven, npm, Python, and Nuget package feeds from public or private sources.
+ -  Azure Artifacts: provides integrated package management with support for Maven, npm, Python, and NuGet package feeds from public or private sources.
  -  Azure Test Plans: provides an integrated planned and exploratory testing solution.
 
 Also, you can use Azure DevOps to orchestrate third-party tools.

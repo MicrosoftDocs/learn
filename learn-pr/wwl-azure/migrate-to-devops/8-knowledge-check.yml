@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 11/17/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,45 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge."
   questions:
-  - content: "Which of the following choices is not an Azure DevOps service/feature?"
+  - content: "Which of the following choices isn't an Azure DevOps service/feature?"
     choices:
-    - content: "Azure Test Plans"
+    - content: "Azure Boards"
       isCorrect: false
       explanation: "That's incorrect. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
     - content: "Azure Monitor"
       isCorrect: true
       explanation: "That's correct. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
-    - content: "Azure Pipelines"
-      isCorrect: false
-      explanation: "That's incorrect. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
-    - content: "Azure Artifacts"
-      isCorrect: false
-      explanation: "That's incorrect. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
-    - content: "Azure Boards"
-      isCorrect: false
-      explanation: "That's incorrect. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
     - content: "Azure Repos"
       isCorrect: false
       explanation: "That's incorrect. Azure DevOps includes a range of services covering the complete development life cycle like Azure Boards, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans. Azure Monitor is an Azure feature."
-  - content: "True or false: Azure DevOps only works in on-premises environments. If you want to use a cloud service, you need to choose GitHub."
+  - content: "Which of the following statements is true?"
     choices:
-    - content: "True"
+    - content: "Azure DevOps only works in on-premises environments. If you want to use a cloud service, you need to choose GitHub."
       isCorrect: false
       explanation: "That is incorrect. Azure DevOps provides both on-premises and cloud options, named Azure DevOps Server (on-premises) and Azure DevOps Services (SaaS). Also, the same applies to GitHub with GitHub (SaaS) and GitHub Enterprise (On-premises and Cloud)."
-    - content: "False"
+    - content: "Azure DevOps and GitHub are only available in the cloud."
+      isCorrect: false
+      explanation: "That is incorrect. Azure DevOps provides both on-premises and cloud options, named Azure DevOps Server (on-premises) and Azure DevOps Services (SaaS). Also, the same applies to GitHub with GitHub (SaaS) and GitHub Enterprise (On-premises and Cloud)."
+    - content: "Azure DevOps and GitHub provide options to work on-premises and in the cloud."
       isCorrect: true
       explanation: "That is correct. Azure DevOps provides both on-premises and cloud options, named Azure DevOps Server (on-premises) and Azure DevOps Services (SaaS). Also, the same applies to GitHub with GitHub (SaaS) and GitHub Enterprise (On-premises and Cloud)."
   - content: "Which of the following choices does Azure DevOps Services enterprise-grade authentication supports?"
     choices:
-    - content: "Microsoft Account"
-      isCorrect: false
-      explanation: "That's incorrect- or partially correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
-    - content: "Azure Active Directory(AAD)"
-      isCorrect: false
-      explanation: "That's incorrect- or partially correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
-    - content: "GitHub Account"
-      isCorrect: false
-      explanation: "That's incorrect- or partially correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
-    - content: "All above"
+    - content: "Microsoft Account, Azure Active Directory(AAD), GitHub Account."
       isCorrect: true
       explanation: "That's correct. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
+    - content: "Microsoft Account, Azure Active Directory(AAD)"
+      isCorrect: false
+      explanation: "That's incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
+    - content: "GitHub Account"
+      isCorrect: false
+      explanation: "That's incorrect. To protect and secure your data, Azure DevOps support: Microsoft Account, GitHub Account and Azure Active Directory(AAD)."
