@@ -1,10 +1,10 @@
 The term "threat hunting" is defined differently by different people.  The most commonly used definition is the idea that you are proactively hunting through your environment for a threat or a set of activities that you have not previously detected.  The "not previously detected" part is what differentiates threat hunting from incident response or alert triage.
 
-Other uses of the term hunting include searching for threats with newly obtained indicators.  If a Threat Intelligence Feed provides a new IP Address considered harmful, an analyst can then take the IP Address and search the logs to find if the new indicator was seen in the past.  Technically this is not threat hunting because you are using a known bad such as an IP Address. Azure Sentinel already provides hunting queries to facilitate this process. Next, hunt for more evidence-based threats from a current Incident or Alert as part of an Incident Analysis process.  It is vital to explore data based on evidence found in a current incident.  Both Azure Sentinel and Microsoft 365 Defender provide this type of hunting capability.
+Other uses of the term hunting include searching for threats with newly obtained indicators.  If a Threat Intelligence Feed provides a new IP Address considered harmful, an analyst can then take the IP Address and search the logs to find if the new indicator was seen in the past.  Technically this is not threat hunting because you are using a known bad such as an IP Address. Microsoft Sentinel already provides hunting queries to facilitate this process. Next, hunt for more evidence-based threats from a current Incident or Alert as part of an Incident Analysis process.  It is vital to explore data based on evidence found in a current incident.  Both Microsoft Sentinel and Microsoft 365 Defender provide this type of hunting capability.
 
 All of these approaches have one thing in common: using KQL queries to find threats.
 
-Microsoft Defender and Microsoft Defender Endpoint are more focused on indicator and analysis types of hunting. Azure Sentinel provides more features to manage the threat hunting process.
+Microsoft Defender and Microsoft Defender Endpoint are more focused on indicator and analysis types of hunting. Microsoft Sentinel provides more features to manage the threat hunting process.
 
 ## Proactive hunts
 

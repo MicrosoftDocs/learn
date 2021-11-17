@@ -2,7 +2,7 @@
 uid: learn.iot.set-up-rules-take-actions-telemetry-data-azure-iot-central.create-iot-central-apps-device-template
 metadata:
   title: Prepare the IoT Central app
-  description: Download the source code and capability model. Import the capability model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
+  description: Download the source code and model. Import the model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
   ms.date: 1/20/2020
   author: PeterTurcan
   ms.author: cahowd
@@ -21,7 +21,7 @@ quiz:
     choices: 
     - content: 'IoT device'
       isCorrect: true
-      explanation: IoT device enables a custom capability model to be built from scratch, or imported.
+      explanation: IoT device enables a custom model to be built from scratch, or imported.
     - content: 'Azure IoT Edge'
       isCorrect: false
       explanation: IoT Edge is a technology for improving efficiency, but not a technology we've used in this module.

@@ -72,7 +72,7 @@ Add data to your new database using Data Explorer.
 
 1. Select **Save**.
 
-1. Select **New Document** again, and create and save another document with a unique `id`, and any other properties and values you want. Your documents can have any structure, because Azure Cosmos DB doesn't impose any schema on your data.
+1. Select **New Item**, and create and save another document with a unique `id`, and any other properties and values you want. Your documents can have any structure, because Azure Cosmos DB doesn't impose any schema on your data.
 
 ## Clean up resources
 

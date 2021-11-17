@@ -20,8 +20,7 @@ An auditing policy can be defined for a specific database or as a default server
 
 Shown below is the configuration of auditing using the Azure portal.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of configuring database auditing with retention in days.](../media/az500-database-audit.png)
+![Screenshot of configuring database auditing with retention in days.](../media/az500-database-audit.png)
 
 ## Summary of database auditing 
 

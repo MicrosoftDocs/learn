@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Write a smart contract by using the Blockchain development kit for Ethereum
 durationInMinutes: 10
 content: |

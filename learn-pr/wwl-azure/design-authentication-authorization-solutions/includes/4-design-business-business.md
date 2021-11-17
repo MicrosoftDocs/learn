@@ -20,7 +20,7 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
 4. Your guest user is then forwarded to the access panel page. This page presents all the applications and services you've shared with them. These applications and services can be cloud-based, or on-premises.
 
-### Best practices for Azure AD B2B
+## Best practices for Azure AD B2B
 
 - **Designate an application owner to manage guest users.** It’s a good idea to delegate guest user access to application owners. Application owners are in the best position to decide who should be given access to a particular application.
 

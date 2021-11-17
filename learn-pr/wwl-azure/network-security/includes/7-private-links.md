@@ -1,8 +1,7 @@
 
 Azure Private Link works on an approval call flow model wherein the Private Link service consumer can request a connection to the service provider for consuming the service. The service provider can then decide whether to allow the consumer to connect or not. Azure Private Link enables the service providers to manage the private endpoint connection on their resources
 
-> [!div class="mx-imgBorder"]
-> ![Image of data flow between tenant and provider on a private endpoint.](../media/az500-private-links.png)
+![Image of data flow between tenant and provider on a private endpoint.](../media/az500-private-links.png)
 
 There are two connection approval methods that a Private Link service consumer can choose from:
 * **Automatic**: If the service consumer has RBAC permissions on the service provider resource, the consumer can choose the automatic approval method. In this case, when the request reaches the service provider resource, no action is required from the service provider and the connection is automatically approved.

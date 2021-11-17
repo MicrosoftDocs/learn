@@ -90,17 +90,17 @@ In this step, we'll add the Order function to the API Management resource that w
 
 Now that we've added OrderDetails to our API, let's test it by using the API Management tools in the Azure portal.
 
-1. In the list of operations for OrderFunctionnnnnnnnnnnn-apim APIs, select **GET OrderDetails**, and then select the **Test** tab.
+1.  On the OrderFunctionnnnnnnnnnnn-apim APIs Design tab, under **All operations**, select **GET OrderDetails**, and then select the **Test** tab.
 
 1. In the **Query parameters** section, select **Add parameter**, and enter *name* in the **NAME** field and *Chiba* and in the **VALUE** field. Select **Send**.
 
-1. The **HTTP response** message tab shows the HTTP request succeeded (HTTP/1.1/ 200 OK), and the details of the order appears in JSON format at the end of the message.
+1. The **HTTP response** message tab shows the HTTP request succeeded (HTTP/1.1/ 200 OK), along with a JSON object showing an Order ID, along with the customer name, total price of the order, and shipping status.
  
 1.  Scroll up to the **HTTP request** section; notice that the request was sent to a subdomain and subdirectory within the **azure-api.net** domain. This location differs from the **azurewebsites.net** host domain.
 
 ## Test the combined API
 
-We can use the `curl` command-line tool to submit requests to our API. cURL is ideal because we can include the correct subscription key with a request. A request also needs the location of the API, which is hosted in Azure API Management and, in this case consists of the Products and Orders functions.
+We can use the `curl` command-line tool to submit requests to our API. cURL is ideal because we can include the correct subscription key with a request. A request also needs the location of the API, which is hosted in Azure API Management and, in this case, consists of the Products and Orders functions.
 
 1. In the Azure resource menu or from Home, select **All resources**.
  
@@ -108,7 +108,7 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
 
 1. In the **Essentials** section, hover over the **Gateway URL** and select the **Copy to clipboard** icon.
 
-1. In The Azure Cloud Shell to the right, run the following command, replacing `<paste URL here>` placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>.
+1. In The Azure Cloud Shell to the right, lets define some variables. Run the following command, replacing `<paste URL here>` placeholder with the **URL** value that you copied to your clipboard, and then press <kbd>Enter</kbd>. This defines the gateway variable.
 
     ```bash
     GATEWAY_URL=<paste URL here>
@@ -116,7 +116,7 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
 
 1. In Azure, on the OrderFunction API Management service menu, scroll down to **API**, and select **Subscriptions**. The **Subscriptions** pane appears for your OrderFunction-apim instance.
 
-1. For the **Built-in all-access subscription**, select the ellipsis **...** on the far right, and then select **Show/hide keys** from the context menu. The primary key and secondary key for the API appears.
+1. For the **Built-in all-access subscription**, select the ellipsis **...** on the far right of that row, and then select **Show/hide keys** from the context menu. The primary key and secondary key for the API appears.
 
 1. In the **Primary key** field, select the *Copy to clipboard* icon.
 
@@ -126,13 +126,13 @@ We can use the `curl` command-line tool to submit requests to our API. cURL is i
     SUB_KEY=<paste key here>
     ```
 
-1. To request the details of the order for a customer name Henri, run the following command in Cloud Shell.
+1. Now we can request details of an order for a customer named Henri. Run the following command in Cloud Shell.
 
    ```bash
     curl -X GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key:$SUB_KEY"
     ```
 
-    The return contains a JSON code block with the order details. You can also try the command with the names "Chiba" and "Barriclough" for different results.
+    The return contains a JSON code block with order details showing Order 56224 has shipped to Pascale Henri. You can also try the command with the names "Chiba" and "Barriclough" for different results.
     
 1. To request the details of a product:
     - In Azure, go to the ProductFunction-apim resource, copy the **Gateway URL** and run the **GATEWAY_URL=** command using that value.

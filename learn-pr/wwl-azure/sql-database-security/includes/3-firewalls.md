@@ -14,8 +14,7 @@ To selectively grant access to just one of the databases in your Azure SQL Datab
 > [!NOTE] 
 > Azure Synapse Analytics only supports server-level IP firewall rules, and not database-level IP firewall rules.
 
-> [!div class="mx-imgBorder"]
-> ![A diagram has two clouds that both point to database-level firewall rules. After the database-level rules are evaluated the server-level rules are applied.](../media/az500-database-firewall.png)
+![A diagram has two clouds that both point to database-level firewall rules. After the database-level rules are evaluated the server-level rules are applied.](../media/az500-database-firewall.png)
 
 ### Connecting from the internet
 
@@ -41,5 +40,5 @@ You can configure server-level IP firewall rules using the Azure portal, PowerSh
 
 Database-level IP firewall rules enable clients to access certain secure databases within the same SQL Database server. You can create these rules for each database (including the master database), and they are stored in the individual databases. You can only create and manage database-level IP firewall rules for master databases and user databases by using Transact-SQL statements, and only after you have configured the first server-level firewall. If you specify an IP address range in the database-level IP firewall rule that is outside the range specified in the server-level IP firewall rule, only those clients that have IP addresses in the database-level range can access the database. You can have a maximum of 128 database-level IP firewall rules for a database.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Whenever possible, as a best practice, use database-level IP firewall rules to enhance security and to make your database more portable. Use server-level IP firewall rules for administrators and when you have several databases with the same access requirements, and you don't want to spend time configuring each database individually.

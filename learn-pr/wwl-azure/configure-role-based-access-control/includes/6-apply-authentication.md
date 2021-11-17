@@ -4,6 +4,3 @@ The following diagram illustrates how Azure AD Admin roles are different from Az
 
 :::image type="content" source="../media/role-based-authentication-b3dda7ae.png" alt-text="Azure AD Admin roles and Azure RBAC roles work together to authenticate users.":::
 <br>
-
-> [!NOTE]
-> Do you understand how Azure AD Admin roles and Azure RBAC roles work together to authenticate users?

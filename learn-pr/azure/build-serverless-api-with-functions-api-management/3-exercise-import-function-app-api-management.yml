@@ -14,10 +14,3 @@ interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-import-function-app-api-management.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ApiManagement/service"
-  hint: "Follow the instructions above to expose the function app with API Management."

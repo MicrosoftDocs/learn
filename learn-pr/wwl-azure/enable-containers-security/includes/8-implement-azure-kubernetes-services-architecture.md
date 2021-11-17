@@ -25,8 +25,7 @@ To run your applications and supporting services, you need a Kubernetes node. An
 * Virtual networking is handled by the kube-proxy on each node. The proxy routes network traffic and manages IP addressing for services and pods.
 * The _container runtime_ is the component that allows containerized applications to run and interact with additional resources such as the virtual network and storage. In AKS, Moby is used as the container runtime.
 
-> [!div class="mx-imgBorder"]
-> ![A VM kubelet connects to a container through the container runtime. The container access disks and files. The kube-proxy access virtual networking.](../media/az500-kubernetes-cluster-1.png)
+![A VM kubelet connects to a container through the container runtime. The container access disks and files. The kube-proxy access virtual networking.](../media/az500-kubernetes-cluster-1.png)
 
 The Azure VM size for your nodes defines how many CPUs, how much memory, and the size and type of storage available (such as high-performance SSD or regular HDD). If you anticipate a need for applications that require large amounts of CPU and memory or high-performance storage, plan the node size accordingly. You can also scale out the number of nodes in your AKS cluster to meet demand.
 
@@ -43,8 +42,7 @@ If you need to use a different host OS, container runtime, or include custom pac
 | **Deployment** | One or more identical pods managed by Kubernetes |
 | **Manifest** | YAML file describing a deployment​ |
 
-> [!div class="mx-imgBorder"]
-> ![The AKS cluster has Azure managed and customer managed services.](../media/az500-kubernetes-cluster-2.png)
+![The AKS cluster has Azure managed and customer managed services.](../media/az500-kubernetes-cluster-2.png)
 
 Cluster master nodes provide the core Kubernetes services and orchestration of application workloads​
 Nodes (virtual machines) run your application workloads​

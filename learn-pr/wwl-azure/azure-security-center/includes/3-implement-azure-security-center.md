@@ -24,8 +24,7 @@ When you enable Security Center, the security policy built-in to Security Center
 
 Security Center makes mitigating your security alerts one step easier, by adding a Secure Score. The Secure Scores are now associated with each recommendation you receive to help you understand how important each recommendation is to your overall security posture. This is crucial in enabling you to prioritize your security work.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of ASC showing the secure score value.  Score is a 656 out of 1000 with several recommendations on how to increase it.](../media/az500-azure-security-center.png)
+![Screenshot of ASC showing the secure score value.  Score is a 656 out of 1000 with several recommendations on how to increase it.](../media/az500-azure-security-center.png)
 
 ### Azure Security Center recommendations
 

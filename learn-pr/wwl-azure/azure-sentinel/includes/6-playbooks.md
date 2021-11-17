@@ -3,5 +3,4 @@
 
 For example, if you use the ServiceNow ticketing system, you can use the tools provided to use Azure Logic Apps to automate your workflows and open a ticket in ServiceNow each time a particular event is detected.
 
-> [!div class="mx-imgBorder"]
-> ![Data flow in logic app to ServiceNow ticketing App.](../media/az500-playbooks.png)
+![Data flow in logic app to ServiceNow ticketing App.](../media/az500-playbooks.png)
