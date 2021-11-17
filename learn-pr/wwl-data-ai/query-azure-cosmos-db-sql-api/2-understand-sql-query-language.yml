@@ -4,13 +4,13 @@ title: Understand SQL query language
 metadata:
   title: Understand SQL query language
   description: "Understand SQL query language"
-  ms.date: 11/16/2021
+  ms.date: 11/17/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-sql-query-language.md)]
