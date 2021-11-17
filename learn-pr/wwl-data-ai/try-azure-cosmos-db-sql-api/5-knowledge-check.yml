@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.try-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/17/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Before creating a container, which Azure Cosmos DB SQL API resource should you create first?"
+    choices:
+    - content: "Database"
+      isCorrect: true
+      explanation: "That's correct. Containers are child resources of databases in Azure Cosmos DB."
+    - content: "Stored procedure"
+      isCorrect: false
+      explanation: "That's incorrect. Stored procedures are child resources of containers in Azure Cosmos DB."
+    - content: "User-defined function"
+      isCorrect: false
+      explanation: "That's incorrect. User-defined functions are child resources of containers in Azure Cosmos DB."
+  - content: "Which one of these resources is NOT considered an item in Azure Cosmos DB SQL API?"
+    choices:
+    - content: "Triggers"
+      isCorrect: false
+      explanation: "That's incorrect. Triggers are child resourced for containers, and are therefore items in Azure Cosmos DB SQL API."
+    - content: "Stored procedure"
+      isCorrect: false
+      explanation: "That's incorrect. Stored procedures are child resourced for containers, and are therefore items in Azure Cosmos DB SQL API."
+    - content: "Database"
+      isCorrect: true
+      explanation: "That's correct. Databases are not items in Azure Cosmos DB SQL API, they are the parent resource for containers."

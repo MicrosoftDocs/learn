@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 3648 1390" width="700">
+  <defs>
+    <clipPath id="a">
+      <path d="M467 795h3648v1390H467z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-467 -795)">
+    <path fill="#7F7F7F" d="M709.063 1076.5v283.78h132.609v-6.875H712.5l3.438 3.437V1076.5Zm128.026 294.092 27.5-13.75-27.5-13.75Zm190.974 73.908v283.78h176.769v-6.875H1031.5l3.438 3.437V1444.5Zm172.185 294.092 27.5-13.75-27.5-13.75Z"/>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M546.5 900.5h333v176h-333z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(613.403 1009)">Account</text>
+    <path fill="#7F7F7F" d="M1391.063 1813.5v283.78h176.769v-6.875H1394.5l3.438 3.438V1813.5Zm172.185 294.093 27.5-13.75-27.5-13.75Z"/>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M908.5 1222.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(963.185 1331)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M886.5 1245.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(941.106 1354)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M864.5 1268.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(919.027 1378)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1271.5 1590.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1326.15 1699)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1249.5 1613.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1304.07 1723)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1227.5 1637.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1276.54 1746)">Container</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1634.5 1958.5h334v177h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1689.1 2068)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1612.5 1982.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1667.03 2091)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1590.5 2005.5h334v176h-334z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1703.38 2114)">Item</text>
+    <path fill="none" stroke="#000" stroke-dasharray="27.5 20.625" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6.875" d="M470.5 846.5h485v283h-485z"/>
+    <path fill="#FF0" fill-rule="evenodd" d="M3019.7 901.735h297.92v99.995H3019.7Z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="75" font-weight="300" transform="translate(2784.23 985)">https://<tspan x="235.469" y="0">{account}</tspan><tspan x="533.386" y="0">.documents.azure.com/</tspan><tspan x="1.657" y="288">IGeAvVUp</tspan><tspan x="350.563" y="288">…</tspan></text>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="8" stroke-width="4.583" d="M2542.17 1260.86c-8.4 6.53-19.14 10.26-30.8 10.26-28 0-50.87-22.85-50.87-51.31 0-28.45 22.87-51.31 50.87-51.31 28.46 0 51.33 22.86 51.33 51.31 0 5.6-.93 10.73-2.33 15.39l54.13 53.65v32.65h-30.8v-20.99h-20.07v-20.53h-21.46v-19.12Zm-46.2-49.91c3.73 0 7-3.27 7-7 0-4.2-3.27-7.46-7-7.46-4.2 0-7.47 3.26-7.47 7.46 0 3.73 3.27 7 7.47 7Z"/>
+    <path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4.583" d="M2460.5 958c0-43.907 35.82-79.5 80-79.5s80 35.593 80 79.5c0 43.91-35.82 79.5-80 79.5s-80-35.59-80-79.5Z"/>
+    <path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4.583" d="M2500.5 958c0-43.907 17.91-79.5 40-79.5s40 35.593 40 79.5c0 43.91-17.91 79.5-40 79.5s-40-35.59-40-79.5Zm-40 .5h159.59m-149.59 39h140.59m-140.59-79h140.59m-70.59 119.59V878.504"/>
+    <path fill="none" stroke="#7F7F7F" stroke-miterlimit="8" stroke-width="6.875" d="M955.5 988.5h1398.83m39.17 551c-21.54 0-39-.59-39-1.32V799.82c0-.729 17.46-1.32 39-1.32"/>
+  </g>
+</svg>

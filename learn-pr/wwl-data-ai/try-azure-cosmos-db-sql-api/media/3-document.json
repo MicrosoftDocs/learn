@@ -1,0 +1,23 @@
+{
+  "id": "0012D555-C7DE",
+  "type": "customer",
+  "fullName": "Franklin Ye",
+  "title": null,
+  "emailAddress": "fye@cosmic.works",
+  "creationDate": "2014-02-05",
+  "addresses": [
+    {
+      "addressLine": "1796 Westbury Drive",
+      "cityStateZip": "Melton, VIC 3337 AU"
+    },
+    {
+      "addressLine": "9505 Hargate Court",
+      "cityStateZip": "Bellflower, CA 90706 US"
+    }
+  ],
+  "password": {
+    "hash": "GQF7qjEgMk=",
+    "salt": "12C0F5A5"
+  },
+  "salesOrderCount": 2
+}
