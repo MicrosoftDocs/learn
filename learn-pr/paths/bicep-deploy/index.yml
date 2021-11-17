@@ -37,7 +37,7 @@ summary: |
     Part 1: Deploy and manage resources in Azure by using Bicep
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
     [Part 2: Build Azure infrastructure in a team environment by using Bicep](xref:learn.bicep-collaborate)
   :::column-end:::
@@ -47,12 +47,12 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>](xref:learn.bicep-azure-pipelines)
 
     [Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>
+    [<img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>](xref:learn.bicep-github-actions)
 
     [Deploy Azure resources by using Bicep and GitHub Actions](xref:learn.bicep-github-actions)
   :::column-end:::

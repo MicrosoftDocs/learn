@@ -95,6 +95,6 @@ Here's what the relevant section of *Program.cs* will look like after you initia
 ```C#
 public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
     WebHost.CreateDefaultBuilder(args)
-        .AddApplicationInisghtsTelemetry()
+        .AddApplicationInsightsTelemetry()
         .UseStartup<Startup>();
 ```

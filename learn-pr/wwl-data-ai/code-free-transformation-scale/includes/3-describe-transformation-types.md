@@ -6,7 +6,7 @@ Mapping Data Flows provides a number of different transformations types that ena
 | **Row modifier transformations** | These types of transformations impact how the rows are presented in the destination. An example of this is a Sort transformation that orders the data. |
 | **Multiple inputs/outputs transformations** | These types of transformations will generate new data pipelines or merge pipelines into one. An example of this is the Union transformation that combines multiple data streams. |
 
-Below is a list of transformations that is available in the Mapping Data Flows
+Below is a list of transformations that are available in the Mapping Data Flows
 
 | **Name** | **Category** | **Description** |
 | - | -| - |

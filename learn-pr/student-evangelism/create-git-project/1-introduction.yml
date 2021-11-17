@@ -9,7 +9,7 @@ metadata:
   ms.date: 10/08/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

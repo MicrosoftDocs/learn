@@ -1,8 +1,7 @@
 
 **Azure Firewall** is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It’s a fully stateful firewall-as-a-service with built-in high availability and unrestricted cloud scalability. By default, Azure Firewall blocks traffic.
 
-> [!div class="mx-imgBorder"]
-> ![In this diagram, an azure firewall is in the middle. Bi-directional arrows show communication with two spoke VNets and an on-premises office building. Traffic is flowing between the internet and the firewall, but some traffic is denied.](../media/az500-firewall.png)
+![In this diagram, an azure firewall is in the middle. Bi-directional arrows show communication with two spoke VNets and an on-premises office building. Traffic is flowing between the internet and the firewall, but some traffic is denied.](../media/az500-firewall.png)
 
 ## The Azure firewall features include
 

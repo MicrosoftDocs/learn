@@ -23,7 +23,7 @@ In this module, you'll:
 
 ## Scenario
 
-Suppose you run a company that operates a fleet of refrigerated trucks. You have many customers within a city, and you operate from a base. You command each truck to deliver its contents to a customer. 
+Suppose you run a company that operates a fleet of refrigerated trucks. You have many customers within a city, and you operate from a base. You command each truck to deliver its contents to a customer.
 
 If the cooling system fails on a truck and the contents start to melt, you need to instruct the truck to return to base and unload the contents. Or you can instead deliver the contents to a customer who's nearby when the cooling system fails.
 
@@ -39,7 +39,7 @@ In this module, you'll build the app you see in this image.
 
 1. Right-click [Azure IoT Central](https://apps.azureiotcentral.com?azure-portal=true) and then select **Open in a new window**. It's a good idea to bookmark this URL. It's the home for all your IoT Central apps.
 
-1. In the menu on the left, select **Build** and then select **Custom apps**. The **New application** form appears. Fill in the following information.
+1. In the menu on the left, select **Build** and then select **Create app** from the **Custom app** box. The **New application** form appears. Fill in the following information.
 
     | Setting  | Value  |
     |---------|---------|

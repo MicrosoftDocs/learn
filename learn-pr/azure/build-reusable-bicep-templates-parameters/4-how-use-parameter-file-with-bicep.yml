@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content  
   title: Provide values using parameter files
   description: Learn about parameter files and how parameter values can be provided to Bicep deployments.
-  ms.date: 05/25/2021
+  ms.date: 10/29/2021
   author: wviriya
   ms.author: wviriya
   ms.topic: interactive-tutorial

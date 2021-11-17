@@ -9,6 +9,7 @@ metadata:
   ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

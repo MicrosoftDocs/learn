@@ -32,7 +32,7 @@ To create and provision an ExpressRoute circuit, perform the following high-leve
 1. In Windows PowerShell, import the ExpressRoute module by running the following command:
 
    ```powershell
-   Import-Module 'C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ ServiceManagement\Azure\ExpressRoute\ExpressRoute.psd1'
+   Import-Module 'C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ServiceManagement\Azure\ExpressRoute\ExpressRoute.psd1'
    ```
 
 2. Obtain the supported list of providers, locations, and bandwidths by running the following command:

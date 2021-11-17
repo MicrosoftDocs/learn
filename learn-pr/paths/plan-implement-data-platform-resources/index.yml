@@ -1,11 +1,11 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
-  title: Plan and Implement Data Platform Resources
-  description: Deploy data platform resources in Azure for SQL Server and Open Source databases. Explore options for upgrade and migration.  Calculate resource requirements and create templates.
-  ms.date: 09/25/2020
+  title: Plan and implement data platform resources
+  description: Plan and implement data platform resources
+  ms.date: 11/02/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and implement data platform resources
@@ -31,5 +31,6 @@ modules:
 - learn.wwl.deploy-sql-server-virtual-machine
 - learn.wwl.deploy-azure-sql-database
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure
+- learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure
 trophy:
   uid: learn.wwl.plan-implement-data-platform-resources.trophy

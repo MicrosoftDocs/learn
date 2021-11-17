@@ -132,6 +132,8 @@ In this exercise you'll set up Azure Database for MySQL
     > ![Screenshot of the Azure portal showing the Create a resource blade with the Databases section selected and the Create a resource, Databases, and MySQL Database buttons highlighted.](../media/6-create-database-mysql.png)
    
 
+1. You will be presented with the choice of a Single server or Flexible server. Select **Create** for the Single server option.
+
 1. Use these values to fill out the first section of the form.
 
     | Setting      | Value |

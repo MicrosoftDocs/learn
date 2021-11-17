@@ -20,8 +20,7 @@ Azure Automation uses runbooks to install updates. You can't view these runbooks
 
 The following diagram is a conceptual depiction of the behavior and data flow together with how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace.
 
-> [!div class="mx-imgBorder"]
-> ![Update management steps outlined in the text.](../media/az500-update-steps.png)
+![Update management steps outlined in the text.](../media/az500-update-steps.png)
 
 ## Manage updates for multiple machines
 
@@ -36,8 +35,7 @@ The Log Analytics agent for Windows and Linux needs to be installed on the VMs t
 
 After you enable Update Management for your machines, you can view machine information by selecting **Computers**. You can view information about machine name, compliance status, environment, OS type, critical and security updates installed, other updates installed, and update agent readiness for your computers.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the update management page.](../media/az500-update-management.png)
+![Screenshot of the update management page.](../media/az500-update-management.png)
 
 Computers that have recently been enabled for Update Management might not have been assessed yet. The compliance state status for those computers is **Not assessed**. 
 
