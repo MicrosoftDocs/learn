@@ -1,4 +1,4 @@
-As a developer, consider what it means to build a program that's meant for a web audience. Technically, you can meet this goal simply by building a static web page, with HTML, CSS, and JavaScript.
+As a developer, consider what it means to build a program that's meant for a web audience. Technically, you can meet this goal simply by building a static webpage, with HTML, CSS, and JavaScript.
 
 But more often than not, you're doing something more complicated than that. You're creating something that is multilayered, with one layer in HTML, CSS, and JavaScript, and another layer that's written in some other runtime. 
 

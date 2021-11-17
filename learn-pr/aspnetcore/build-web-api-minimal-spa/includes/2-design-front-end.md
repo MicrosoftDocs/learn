@@ -16,7 +16,7 @@ The first thing you want to know is what capabilities your front-end app should 
 
 ### Select a framework
 
-Users today expect that apps on the web can react fast to interactions. For example, if the user selects a button or moves between pages, the app needs to respond quickly, just like in a client app like Microsoft Excel or Microsoft Word. A whole category of JavaScript frameworks was invented for this very reason, called *SPA* frameworks, or Single Page Application frameworks.
+Users today expect that apps on the web can react fast to interactions. For example, if the user selects a button or moves between pages, the app needs to respond quickly, just like in a client app like Microsoft Excel or Microsoft Word. A whole category of JavaScript frameworks was invented for this very reason, called *SPA* frameworks, or single-page application frameworks.
 
 ### SPA framework
 
@@ -67,7 +67,7 @@ Here, you are passing in a JavaScript object that has the properties `title` and
 At a high level, your user will manage resources. Regardless of whether those resources are nuts and bolts, orders, or pizzas, the user will need to do things like:
 
 - **Create a resource:** Creating a resource means that the user will type in information on a resource, and send that to a server app.
-- **Read resource:** You will need to read the resource information from the server app, and present that to the user.
+- **Read a resource:** You will need to read the resource information from the server app, and present that to the user.
 - **Update a resource:** It's important that the user can update the information on a resource. The user might mistype the information, or the information might change over time.
 - **Delete a resource:** Sometimes, a resource isn't needed anymore, and the user must be able to remove that resource.
 
