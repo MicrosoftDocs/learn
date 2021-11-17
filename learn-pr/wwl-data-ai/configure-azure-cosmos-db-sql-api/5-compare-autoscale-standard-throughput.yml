@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-sql-api.provision-throughput-at-database-level
+title: Comparing autoscale vs. standard (manual) throughput
+metadata:
+  title: Comparing autoscale vs. standard (manual) throughput
+  description: "Comparing autoscale vs. standard (manual) throughput"
+  ms.date: 11/17/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-compare-autoscale-standard-throughput.md)]
