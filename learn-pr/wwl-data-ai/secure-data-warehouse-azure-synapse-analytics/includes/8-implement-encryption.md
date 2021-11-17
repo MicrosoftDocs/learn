@@ -21,7 +21,7 @@ The term server refers both to server and instance.
 
 ## Service-managed transparent data encryption
 
-As stated above, the DEK that is protected by the Transparent Encryption protector can be service-managed certificated which we call service-managed TDE.
+As stated above, the DEK that is protected by the Transparent Encryption protector can be service-managed certificates which we call service-managed TDE.
 When you look in Azure, that default setting means that the DEK is protected by a built-in certificate unique for each server with encryption algorithm AES256. 
 When a database is in a geo-replicated relationship then  primary and the geo-secondary database are protected by the primary database's parent server key. 
 If the databases are connected to the same server, they will also have the same built-in AES 256 certificate. 
