@@ -32,7 +32,7 @@ Recognizing and rewarding collective behavior across cross-functional teams can 
 
 Agile teams commonly use the following collaboration tools:
 
-[Teams (Microsoft)](https://products.office.com/en-us/microsoft-teams/group-chat-software) A group chat application from Microsoft. It provides a combined location with workplace chat, meetings, notes, and storage of file attachments. A user can be a member of many teams.
+[Teams (Microsoft)](https://products.office.com/microsoft-teams/group-chat-software) A group chat application from Microsoft. It provides a combined location with workplace chat, meetings, notes, and storage of file attachments. A user can be a member of many teams.
 
 [Slack](https://slack.com/) is A commonly used tool for collaboration in Agile and DevOps teams. From a single interface, it provides a series of separate communication channels that can be organized by project, team, or topic. Conversations are kept and are searchable. It is straightforward to add both internal and external team members. Slack integrates with many third-party tools like [GitHub](https://github.com/) for source code and [DropBox](https://dropbox.com/) for document and file storage.
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 11/17/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -19,26 +19,29 @@ quiz:
   questions:
   - content: "An Agile tool manages and visualizes work by showing tasks moving from left to right across columns representing stages. What is this tool commonly called?"
     choices:
-    - content: "Backlog"
+    - content: "Backlog."
       isCorrect: false
       explanation: "That's incorrect. A Kanban Board lets you visualize the flow of work and constrain the amount of work in progress. Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work."
-    - content: "Kanban Board"
+    - content: "Kanban Board."
       isCorrect: true
       explanation: "That's correct. A Kanban Board lets you visualize the flow of work and constrain the amount of work in progress. Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work."
-  - content: "True or false: It is required to implement Waterfall to evolve and implement Agile."
-    choices:
-    - content: "False"
-      isCorrect: true
-      explanation: "That's correct. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies."
-    - content: "True"
+    - content: "Delivery Plans."
       isCorrect: false
-      explanation: "That's incorrect. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies."
-  - content: "Which of the following choices is not an Agile/Project management tool?"
+      explanation: "That's correct. A Kanban Board lets you visualize the flow of work and constrain the amount of work in progress. Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work."
+  - content: "Which of the following choices isn't true about processes and methodologies?"
+    choices:
+    - content: "It is required to implement Waterfall to evolve and implement Agile."
+      isCorrect: true
+      explanation: "That's correct. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."
+    - content: "It is possible to start with Waterfall and evolve to Agile."
+      isCorrect: false
+      explanation: "That's incorrect. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."
+    - content: "Agile is the best and most used methodology and the best to start your project."
+      isCorrect: false
+      explanation: "That's incorrect. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."
+  - content: "Which of the following choices isn't an Agile/Project management tool?"
     choices:
     - content: "Azure DevOps"
-      isCorrect: false
-      explanation: "That's incorrect. Camtasia is a screen recorder tool, not an Agile or Project Management tool. All others are Agile-based."
-    - content: "Jira"
       isCorrect: false
       explanation: "That's incorrect. Camtasia is a screen recorder tool, not an Agile or Project Management tool. All others are Agile-based."
     - content: "GitHub"
@@ -47,6 +50,3 @@ quiz:
     - content: "Camtasia"
       isCorrect: true
       explanation: "That's correct. Camtasia is a screen recorder tool, not an Agile or Project Management tool. All others are Agile-based."
-    - content: "Trello"
-      isCorrect: false
-      explanation: "That's incorrect. Camtasia is a screen recorder tool, not an Agile or Project Management tool. All others are Agile-based."

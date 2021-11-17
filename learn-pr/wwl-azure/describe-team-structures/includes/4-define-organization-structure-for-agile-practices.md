@@ -15,7 +15,7 @@ Traditionally, horizontal team structures divide teams according to the software
 :::image type="content" source="../media/devops-ds-image-101-cd10ac81.png" alt-text="Teams has been divided into UI, SOA, and Data. Each team has Email, Voice, and TV.":::
 
 
-By comparison, vertical team structures span the architecture and are aligned with skill sets or disciplines:
+By comparison, vertical team structures span the architecture and are aligned with skillsets or disciplines:
 
 :::image type="content" source="../media/devops-ds-image-103-b26487ac.png" alt-text="Teams has been divided into Email, Voice, and TV. Each team has UI, SOA, and Data.":::
 

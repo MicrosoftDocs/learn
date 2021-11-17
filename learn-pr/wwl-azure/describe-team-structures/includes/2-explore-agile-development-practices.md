@@ -42,14 +42,14 @@ They said that:
 
 Agile software development methods are based on releases and iterations:
 
-1.  One release might consist of several iterations.
-2.  Each iteration is like a small independent project.
-3.  After being estimated and prioritization:
+ -  One release might consist of several iterations.
+ -  Each iteration is like a small independent project.
+ -  After being estimated and prioritization:
     
-    1.  Features, bug fixes, enhancements, and refactoring width are assigned to a release.
-    2.  And then assigned again to a specific iteration within the release, generally on a priority basis.
-4.  At the end of each iteration, they should be tested working code.
-5.  In each iteration, the team must focus on the outcomes of the previous iteration and learn from it.
+     -  Features, bug fixes, enhancements, and refactoring width are assigned to a release.
+     -  And then assigned again to a specific iteration within the release, generally on a priority basis.
+ -  At the end of each iteration, they should be tested working code.
+ -  In each iteration, the team must focus on the outcomes of the previous iteration and learn from it.
 
 An advantage of having teams focused on shorter-term outcomes is that teams are also less likely to waste time over-engineering features. Or allowing unnecessary scope creep to occur.
 
