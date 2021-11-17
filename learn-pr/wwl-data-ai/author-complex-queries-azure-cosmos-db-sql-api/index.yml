@@ -30,5 +30,6 @@ units:
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.create-cross-product-queries
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.exercise-paginate-cross-product-query-results-sdk
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.badge

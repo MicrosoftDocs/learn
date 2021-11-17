@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   questions:
   - content: "You have a container of products with JSON documents that contain a string property named **name**. The JSON documents also all contain a property named **tags** that's an array of string values. You are tasked with authoring a SQL query that will create a cross-product of the document names and tags. Which SQL query should you use?"

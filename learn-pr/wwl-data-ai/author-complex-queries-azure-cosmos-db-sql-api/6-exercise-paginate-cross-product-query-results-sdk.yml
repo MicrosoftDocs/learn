@@ -12,6 +12,6 @@ metadata:
 azureSandbox: false
 labId: 107580
 labModal: true
-durationInMinutes: 3
+durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-paginate-cross-product-query-results-sdk.md)]
