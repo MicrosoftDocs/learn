@@ -161,7 +161,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
 
-5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list= created concerning the application and click **Connect**.
+5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list created concerning the application and click **Connect**.
 
     :::image type="content" source="../media/select-lists.png" alt-text="Screenshot of selecting the list." lightbox="../media/select-lists.png":::
 
@@ -179,7 +179,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file. Now, we will add the logo of our application **Easy Sales** to the splash screen.
+4. Click the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file.
 
     :::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
 
@@ -314,7 +314,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 
-7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following
+7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following:
 
     ```PowerApps
     Navigate('Home Page',ScreenTransition.Cover)

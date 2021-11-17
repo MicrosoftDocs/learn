@@ -37,7 +37,7 @@ The View in MR is one of the chief features included in the application. It allo
   * If one dimension is defined and the rest are default value of 0, we scale the entire object based on the specified dimension.
   * If two dimensions are defined, we adjust the model to match the given dimensions and average the scale for the third dimension.
 
-     For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2 -average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
+     For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2, average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
   * If all three dimensions are set, we match the size of the model to what you specify.
 
 ## View in 3D

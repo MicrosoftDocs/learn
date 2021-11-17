@@ -160,27 +160,11 @@ The details page includes all the details and information concerning the selecte
 
 **View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the required resources in the **SharePoint** list.
 
-1. In the created **SharePoint** list named **Easy Sales**, select the **+ Add column** and select **Show/hide columns**.
-
-    :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
-
-2. Make sure **Attachments** be selected and press **Apply** at the top.
-
-    :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
-
-3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file) given in the **Power Apps custom folder**. Follow the same procedure for all the items on the list.
-
-    :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
-
-4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
-
-    :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
-
-5. Switch to **Power Apps Studio**, add the **View in MR** component to the **Product_details** screen, Open the **Insert** tab, expand the **Mixed Reality**. Then, select the component **View in MR**.
+1. Add the **View in MR** component to the **Product_details** screen, Open the **Insert** tab, expand **Mixed Reality** dropdown. Then, select **View in MR** component.
 
     :::image type="content" source="../media/add-view-in-mr-button.png" alt-text="Screenshot of adding View in MR button" lightbox="../media/add-view-in-mr-button.png":::
 
-6. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
+2. In the **Properties** tab for the **View in MR** component, select the **Source** field and enter to access the 3D models stored in your **SharePoint** list:
 
     ```PowerApps
     First(Gallery_products.Selected.Attachments).Value
@@ -209,69 +193,3 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
-
-## Create notes page
-
-It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
-
-1. Create two new **Blank** screens and rename them as **Product_notes** and **Carpet_notes**.
-
-    :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
-
-2. Design the **Product_notes** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_products**.
-
-    :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
-
-3. Select **Gallery** > **Horizontal** to include a horizontal type of gallery. You will be storing photos taken during the **View in MR** session in this gallery. Rename it as **View_products**
-
-    :::image type="content" source="../media/horizontal-gallery.png" alt-text="Screenshot of adding horizontal gallery" lightbox="../media/horizontal-gallery.png":::
-
-4. Position the gallery at the other part of the screen. Retain only the image by deleting the **Subtitle** and **Title**. Enlarge the image.
-
-    :::image type="content" source="../media/retain-image.png" alt-text="Screenshot of only image in gallery" lightbox="../media/retain-image.png":::
-
-5. Click the gallery added and configure the **Items** property by adding the following line:
-
-    ```PowerApps
-    ViewInMR1.Photos
-    ```
-
-    :::image type="content" source="../media/configure-items-property.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/configure-items-property.png":::
-
-    By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
-
-6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option and **Center align** it. Then, customize the position, color, and text display according to your needs. Rename it to **Notes_label**.
-
-    :::image type="content" source="../media/insert-label-notes.png" alt-text="Screenshot of inserting label" lightbox="../media/insert-label-notes.png":::
-
-7. We will add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, on the **Insert** tab, expand the **Icons** dropdown and select the **Back icon**.
-
-    :::image type="content" source="../media/add-back-icon-notes.png" alt-text="Screenshot of adding back icon - notes" lightbox="../media/add-back-icon-notes.png":::
-
-8. Position the **Back** icon correctly and configure the **OnSelect** property by adding the following
-
-    ```PowerApps
-    Navigate(Product_details,ScreenTransition.Cover)
-    ```
-
-    :::image type="content" source="../media/configure-back-icon-notes.png" alt-text="Screenshot of positioned and OnSelect" lightbox="../media/configure-back-icon-notes.png":::
-
-9. Switch to the **Product_details** screen and add a **Note** icon from the **Icons** dropdown on the **Insert** tab.
-
-    :::image type="content" source="../media/add-note-icon.png" alt-text="Screenshot of adding note icon" lightbox="../media/add-note-icon.png":::
-
-10. Configure the **OnSelect** property of the **Note** icon by adding the following line:
-
-    ```PowerApps
-    Navigate(Product_notes,ScreenTransition.CoverRight)
-    ```
-
-    :::image type="content" source="../media/configure_note_icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure_note_icon.png":::
-
-11. Replicate the same procedure for **Notes_carpets**.
-
->[!Note]
-> For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
-
->[!Tip]
->You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
