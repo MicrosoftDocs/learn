@@ -4,7 +4,7 @@ title: What is Azure Cosmos DB SQL API
 metadata:
   title: What is Azure Cosmos DB SQL API
   description: "What is Azure Cosmos DB SQL API"
-  ms.date: 11/16/2021
+  ms.date: 11/17/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-is.md)]
+  [!include[](includes/2-what-azure-cosmos-db-sql-api.md)]
