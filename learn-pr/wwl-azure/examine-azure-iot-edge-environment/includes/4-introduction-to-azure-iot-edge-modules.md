@@ -11,7 +11,7 @@ IoT Edge module images contain applications that take advantage of the managemen
 
 Each time a module image is deployed to a device and started by the IoT Edge runtime, a new instance of that module is created. Two devices in different parts of the world could use the same module image. However, each device would have its own module instance when the module is started on the device.
 
-:::image type="content" source="../media/m06-l01-iot-edge-module-image_instance-b4c79ce5.png" alt-text="IoT Edge Module - Image Instance":::
+:::image type="content" source="../media/m06-l01-iot-edge-module-image-instances-11491157.png" alt-text="Diagram that shows how each device would have its own module instance when the module is started on the device.":::
 
 
 In implementation, modules images exist as container images in a repository, and module instances are containers on devices.
@@ -24,7 +24,7 @@ The identity associated with a module instance depends on the identity of the de
 
 Clearly, in scenarios when you need to deploy one module image multiple times on the same device, you can deploy the same image multiple times with different names.
 
-:::image type="content" source="../media/m06-l01-iot-edge-module-identity-2ede1e12.png" alt-text="IoT Edge Module - Identity":::
+:::image type="content" source="../media/m06-l01-iot-edge-module-identity-2ede1e12.png" alt-text="Diagram that shows how each module instance is associated with a corresponding module identity.":::
 
 
 ## Module twins
@@ -34,14 +34,14 @@ Each module instance also has a corresponding module twin that you can use to co
 A module twin is a JSON document that stores module information and configuration properties. This concept parallels the device twin concept from IoT Hub. The structure of a module twin is the same as a device twin. The APIs used to interact with both types of twins are also the same. The only difference between the two is the identity used to instantiate the client SDK.
 
 ```
-// Create a ModuleClient object. This ModuleClient will act on behalf of a 
-// module since it is created with a module's connection string instead 
-// of a device connection string. 
-ModuleClient client = new ModuleClient.CreateFromEnvironmentAsync(settings); 
-await client.OpenAsync(); 
- 
-// Get the module twin 
-Twin twin = await client.GetTwinAsync(); 
+// Create a ModuleClient object. This ModuleClient will act on behalf of a
+// module since it is created with a module's connection string instead
+// of a device connection string.
+ModuleClient client = new ModuleClient.CreateFromEnvironmentAsync(settings);
+await client.OpenAsync();
+
+// Get the module twin
+Twin twin = await client.GetTwinAsync();
 
 ```
 

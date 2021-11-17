@@ -1,6 +1,6 @@
 Azure IoT Edge moves cloud analytics and custom business logic to devices so that your organization can focus on business insights instead of data management. Azure IoT Edge enables you to scale out your IoT solution by packaging your business logic into standard containers, then you can deploy those containers to any of your devices and monitor it all from the cloud.
 
-:::image type="content" source="../media/m06-l01-edge-and-cloud-3b37821e.png" alt-text="IoT Edge and the Cloud":::
+:::image type="content" source="../media/m06-l01-edge-cloud-707c34b9.png" alt-text="Diagram that shows IoT Edge devices and the Cloud.":::
 
 
 Analytics drives business value in IoT solutions, but not all analytics needs to be in the cloud. If you want to respond to emergencies as quickly as possible, you can run anomaly detection workloads at the edge. If you want to reduce bandwidth costs and avoid transferring terabytes of raw data, you can clean and aggregate the data locally then only send the insights to the cloud for analysis.
@@ -25,7 +25,7 @@ When you want to deploy your own code to your devices, Azure IoT Edge supports t
 
 The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations.
 
-:::image type="content" source="../media/m06-l01-iot-edge-runtime-introduction-fc026798.png" alt-text="Azure IoT Edge Device Runtime":::
+:::image type="content" source="../media/m06-l01-iot-edge-runtime-introduction-fc026798.png" alt-text="Diagram that shows the Azure IoT Edge Device Runtime connecting manufacturing devices to the cloud.":::
 
 
 How you use an Azure IoT Edge device is up to you. The runtime is often used to deploy AI to gateway devices which aggregate and process data from other on-premises devices, but this deployment model is just one option.

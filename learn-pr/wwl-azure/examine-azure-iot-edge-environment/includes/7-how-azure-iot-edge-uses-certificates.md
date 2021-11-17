@@ -11,7 +11,7 @@ There are two common scenarios for setting up certificates on an IoT Edge device
 
 The following figure illustrates IoT Edge's usage of certificates. There may be zero, one, or many intermediate signing certificates between the root CA certificate and the device CA certificate, depending on the number of entities involved. Here we show one case.
 
-:::image type="content" source="../media/m06-l01-iot-edge-edge-certs-general-b4fbb3b8.png" alt-text="IoT Edge Certification Use":::
+:::image type="content" source="../media/m06-l01-iot-edge-edge-certs-general-b4fbb3b8.png" alt-text="Diagram that illustrates how the IoT Edge uses certificates.":::
 
 
 ### Certificate authority
@@ -63,14 +63,14 @@ These scripts generate certificates that follow the certificate chain structure 
 Bash
 
 ```bash
-./certGen.sh create_root_and_intermediate 
+./certGen.sh create_root_and_intermediate
 
 ```
 
 PowerShell
 
 ```Powershell
-New-CACertsCertChain rsa 
+New-CACertsCertChain rsa
 
 ```
 
@@ -79,14 +79,14 @@ Likewise, these commands generate the "Device CA Certificate".
 Bash
 
 ```bash
-./certGen.sh create_edge_device_ca_certificate "<gateway device name>" 
+./certGen.sh create_edge_device_ca_certificate "<gateway device name>"
 
 ```
 
 PowerShell
 
 ```Powershell
-New-CACertsEdgeDeviceCA "<gateway device name>" 
+New-CACertsEdgeDeviceCA "<gateway device name>"
 
 ```
 
@@ -99,7 +99,7 @@ New-CACertsEdgeDeviceCA "<gateway device name>"
 
 To illustrate an example of this certificate path, the following screenshot is from a working IoT Edge device set up as a transparent gateway. OpenSSL is used to connect to the IoT Edge hub, validate, and dump out the certificates.
 
-:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-cert-chain-ff0c066a.png" alt-text="IoT Edge Certification Hierarchy":::
+:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-cert-chain-ff0c066a.png" alt-text="Screen shot that shows an example of the certificate path for an IoT Edge device.":::
 
 
 You can see the hierarchy of certificate depth represented in the screenshot:

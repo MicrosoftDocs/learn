@@ -2,7 +2,7 @@
 
 The Azure IoT Edge security manager is a well-bounded security core for protecting the IoT Edge device and all its components by abstracting the secure silicon hardware. It is the focal point for security hardening and provides technology integration point to original equipment manufacturers (OEM).
 
-:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-security-manager-45164d81.png" alt-text="IoT Edge Security Manager":::
+:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-security-manager-45164d81.png" alt-text="Diagram that shows how the Azure IoT Edge security manager works to protect devices.":::
 
 
 IoT Edge security manager aims to defend the integrity of the IoT Edge device and all inherent software operations. The security manager transitions trust from underlying hardware root of trust hardware (if available) to bootstrap the IoT Edge runtime and monitor ongoing operations. The IoT Edge security manager is software working along with secure silicon hardware (where available) to help deliver the highest security assurances possible.
@@ -52,7 +52,7 @@ Another core principle for the IoT Edge security daemon is to minimize churn. Fo
 
 ### Architecture of IoT Edge security daemon
 
-:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-security-daemon-37de8171.png" alt-text="IoT Edge Security Daemon":::
+:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-security-daemon-37de8171.png" alt-text="Diagram that shows the architecture of the IoT Edge security daemon.":::
 
 
 The IoT Edge security daemon takes advantage of any available hardware root of trust technology for security hardening. It also allows for split-world operation between a standard/rich execution environment (REE) and a trusted execution environment (TEE) when hardware technologies offer trusted execution environments. Role-specific interfaces enable the major components of IoT Edge to assure the integrity of the IoT Edge device and its operations.
