@@ -1,12 +1,12 @@
-At a high level, you’re  now familiar with the types of barriers that common game elements can introduce. In this unit you’ll learn about individual player experiences and how they can largely differ. These differences exist among players with similar types of visual, hearing, cognitive, and mobility disabilities.
+In the previous unit, you learned about foundational concepts like accessibility barriers and how they are commonly introduced. This unit will build upon those concepts in further detail. Specifically, you'll learn how player experiences can largely differ, even among players with similar types of visual, hearing, cognitive, and mobility disabilities.
 
-For example, let’s say that the development team in the introductory scenario included a text scaling option in their game. This setting is helpful for some players with low vision. However, it does not remove barriers for other players with different types of low vision. The feature doesn’t address the needs of players without vision, or those who are colorblind.
+These differences warrant the need for targeted solutions that eliminate barriers for a wide range of player experiences. For example, a game that provides a text-scaling option can eliminate barriers to access for some players with low vision. However, this feature alone does not mean that the game is fully accessible to players with other types of low vision, players who are colorblind, or players without sight.
 
-The development team didn’t consider the fact that one visual accessibility solution does not address the needs of all players with visual disabilities. In this unit you’ll be introduced to some of the major differences in visual, hearing, cognitive, and mobility barriers that players experience.
+Accessible design is not a one-size-fits-all solution. This unit provides a basic overview of these differences to ultimately broaden your understanding of gaming accessibility as a process that cannot be solved through a one-size-fits-all approach.
 
-NOTE: This unit provides an introductory awareness of the experiences that players with disabilities may have while gaming and how they differ from one player to another. This awareness is intended to broaden your understanding of gaming accessibility as a process that cannot be solved through a “one-size-fits all” approach.
-
-Prior to development, you are encouraged to speak with actual players with disabilities to learn more about the barriers they experience and the solutions they find effective. Training documents like this module are intended to prepare for these conversations, not replace them.
+> [!NOTE] The information in this unit is intended to drive awareness of the need to consider a wide range of player experiences and related solutions. It is not intended to provide a holistic understanding of what actual players with disabilities encounter during their lived experiences.
+>
+> Prior to development, you are encouraged to speak with actual players with disabilities to learn more about the barriers they experience and the solutions they find effective. Training documents like this module are intended to prepare for these conversations, not replace them.
 
 ## Vision and disability
 
@@ -35,7 +35,7 @@ You’re encouraged to think about how all visual information in a game can be r
 
 Low vision is a broad term that can encompass a wide spectrum of visual abilities. Players with low vision may have a cloudier, blurrier, or less complete view of what is on their game screen.
 
-TIP: The extent of cloudiness, blurriness, or completeness of view can widely vary from player to player. This is why providing multiple options for customization is important.
+> [!TIP] The extent of cloudiness, blurriness, or completeness of view can widely vary from player to player. This is why providing multiple options for customization is important.
 
 Players with low vision can experience difficulty reading text or seeing on-screen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, you should consider providing players with customization options for the following:
 
