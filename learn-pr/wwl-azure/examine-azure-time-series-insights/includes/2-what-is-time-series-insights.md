@@ -5,7 +5,7 @@ Azure Time Series Insights is built to store, visualize, and query large amounts
 
 The following image shows a typical IoT data flow.
 
-:::image type="content" source="../media/m05-l01-tsi-overview-one-d3a9e854.png" alt-text="Time Series Insights Data Flow Diagram":::
+:::image type="content" source="../media/m05-l01-tsi-overview-one-d3a9e854.png" alt-text="Diagram that uses generic imagery to illustrate the typical flow of time-series data within an IoT solution.":::
 
 
 Time Series Insights has four key jobs:

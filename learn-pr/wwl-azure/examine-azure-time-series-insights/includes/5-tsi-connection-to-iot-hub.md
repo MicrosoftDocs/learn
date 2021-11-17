@@ -4,7 +4,7 @@ Once you have IoT Hub and TSI instances up and running, you are ready to create 
 
 Applications use consumer groups to pull data from Azure IoT Hub. To reliably read data from your IoT hub, provide a dedicated consumer group that's used only by this Time Series Insights environment.
 
-:::image type="content" source="../media/m05-l01-tsi-connection-to-iot-hub-iot-hub-consumer-group-0d5829a8.png" alt-text="TSI Connection to IoT Hub - IoT Hub Consumer Group":::
+:::image type="content" source="../media/m05-l01-tsi-connection-iot-hub-iot-hub-consumer-group-5a87d9c2.png" alt-text="Screen shot that shows where to configure an IoT Hub consumer group for Time Series Insights.":::
 
 
 Under **Consumer groups**, enter a unique name for the consumer group. You will use this same name in your Time Series Insights environment when you create your event source.
@@ -13,7 +13,7 @@ Under **Consumer groups**, enter a unique name for the consumer group. You will 
 
 Switching over to the TSI side, you need to create the Event Source that you will be using to access IoT Hub data.
 
-:::image type="content" source="../media/m05-l01-tsi-connection-to-iot-hub-tsi-event-source-4c100d0d.png" alt-text="TSI Connection to IoT Hub - TSI Event Source":::
+:::image type="content" source="../media/m05-l01-tsi-connection-iot-hub-tsi-event-source-b02a1461.png" alt-text="Screen shot that shows where to configure a Time Series Insights event source for IoT Hub.":::
 
 
 To begin the process of creating your new event source, you will first provide an Event source name (a name that's unique to this Time Series Insights environment) and specify that your Source will be an IoT Hub. Once you have these properties set, you will have a choice between using an IoT Hub from an available subscription and providing IoT Hub settings manually. The property settings requirements will be different based on your choice.

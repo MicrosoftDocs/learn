@@ -7,7 +7,7 @@ You can create a new Azure Time Series Insights resource in the Azure portal usi
 > [!NOTE]
 > The steps shown here are for a Gen1 environment. Creating a Gen2 environment follows a similar series of configuration steps.
 
-1.  Search the Azure Marketplace for "Time Series Insights". :::image type="content" source="../media/m05-l01-azure-tsi-setup-1-create-b6af0a59.png" alt-text="Time Series Insights Set Up - Create Instance":::
+1.  Search the Azure Marketplace for "Time Series Insights". :::image type="content" source="../media/m05-l01-azure-tsi-setup-1-create-b6af0a59.png" alt-text="Screen shot that shows Time Series Insights in the Azure Marketplace.":::
     
 2.  On the Create Time Series Insights environment blade, fill in the parameters on the Basic tab
     
@@ -93,8 +93,8 @@ You can create a new Azure Time Series Insights resource in the Azure portal usi
     :::row-end:::
     
     
-    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-1-04679ae1.png" alt-text="Time Series Insights Set Up - Set Parameters 1":::
-    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-2-e583be2a.png" alt-text="Time Series Insights Set Up - Set Parameters 2":::
+    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-1-04679ae1.png" alt-text="Screen shot that shows initial configuration details for the Time Series Insights environment.":::
+    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-2-e583be2a.png" alt-text="Screen shot that shows Storage Configuration details for the Time Series Insights environment.":::
      Once you have this information entered, navigate to the Event Source tab.
 3.  Fill in the parameters on the Event Source tab.
     
@@ -180,7 +180,7 @@ You can create a new Azure Time Series Insights resource in the Azure portal usi
     :::row-end:::
     
     
-    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-3-5aae94ce.png" alt-text="Time Series Insights Set Up - Set Parameters 3":::
+    :::image type="content" source="../media/m05-l01-azure-tsi-setup-2-parameters-3-5aae94ce.png" alt-text="Screen shot that shows Event Source configuration details for the Time Series Insights environment.":::
      Once you have this information entered, navigate to the Review + Create tab.
 4.  Use the Review + Create tab to ensure that you entered values correctly, and then click Create to deploy your TSI service. You have access to your Azure Time Series Insights Preview environment by default if you are an owner of the Azure subscription. You can verify that you have access by opening your TSI service and checking to see that your credentials are listed on the Data Access Policies blade.
 
