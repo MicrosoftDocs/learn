@@ -1,3 +1,3 @@
 In this module, you explored how to build a front-end app. You considered that different teams might be involved in creating front-end and back-end parts. For example, if the back-end team takes time implementing its parts, you learned that you might need to rely on mocked data while you wait.
 
-Finally, you examined how to connect the front end and the back end, and how to work with CORS to protect your API from requests from domains that aren't allowed. By configuring CORS properly, you can add the domain of your front-end to the allowlist of your back end, and successfully connect the two pieces of your app.
+Finally, you examined how to connect the front end and the back end, and how to work with CORS to protect your API from requests from domains that aren't allowed. By configuring CORS properly, you can add the domain of your front end to the allowlist of your back end, and successfully connect the two pieces of your app.

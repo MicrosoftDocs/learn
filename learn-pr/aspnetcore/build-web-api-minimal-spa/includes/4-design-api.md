@@ -127,4 +127,4 @@ app.UseCors(MyAllowSpecificOrigins);
 
 The preceding code shows that a policy is added. As part of the policy, you add the domains that are allowed to talk with the API to an allowlist. In this case, you add `http://example.com` and `*` to your allowlist. Essentially, `*` means that all possible domains are allowed. If you only want specific domains to be allowed, specify only the ones you want.
 
-Lastly, the `UseCors()` method is called. You can offer more fine-grained control than the what is shown in the preceding example. You can decide that only certain HTTP verbs, for example, should be allowed for certain routes.
+Lastly, the `UseCors()` method is called. You can offer more fine-grained control than what is shown in the preceding example. You can decide that only certain HTTP verbs, for example, should be allowed for certain routes.
