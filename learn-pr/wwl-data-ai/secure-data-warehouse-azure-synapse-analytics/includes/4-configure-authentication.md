@@ -54,7 +54,7 @@ For user accounts that are not part of an Azure Active directory, then using SQL
 
 This approach is typically useful for external users who need to access the data, or if you are using third party or legacy applications against the Azure Synapse Analytics dedicated SQL pool
 
-### Multi factor authentication
+### Multifactor authentication
 
 Synapse SQL support connections from SQL Server Management Studio (SSMS) using Active Directory Universal Authentication.
  
