@@ -1,6 +1,6 @@
 Microsoft offers Azure Stack HCI through partners as prebuilt and preconfigured integrated systems. This helps define a consistent, structured deployment process that consists of several steps that customers must follow. The following section reviews that process, which is the same as that which you'd follow when implementing Azure Stack HCI in Contoso's proof-of-concept environment.
 
-## Deploy Azure Stack HCI
+## Process to Deploy Azure Stack HCI
 
 To implement Azure Stack HCI, you should:
 

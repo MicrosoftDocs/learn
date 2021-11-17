@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.interact-with-data-blazor-web-apps.summary
+title: Summary
+metadata:
+  unitType: learning-summary
+  title: Summary
+  description: "Review what you have learned about Blazor and data interaction."
+  ms.date: 8/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-summary.md)]

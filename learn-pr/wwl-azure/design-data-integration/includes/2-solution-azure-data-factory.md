@@ -29,7 +29,7 @@ The following graphic shows Azure Data Factory orchestrating the ingestion of da
 
 
 
-**When to use Azure Data Factory**
+## When to use Azure Data Factory
 
 Let us evaluate Azure Data Factory against the following decision criteria:
 
@@ -42,7 +42,7 @@ Let us evaluate Azure Data Factory against the following decision criteria:
 - **Serverless infrastructure –** There are advantages in using a fully managed, serverless solution for data integration - No need to maintain, configure or deploy servers, and the ability to scale with fluctuating workloads.
 
  
-**Components of Azure Data Factory**
+### Components of Azure Data Factory
 
 :::image type="content" source="../media/data-factory-components.png" alt-text="Diagram showing pipeline, activities, data sets and linked services in Azure Data Factory.":::
 
