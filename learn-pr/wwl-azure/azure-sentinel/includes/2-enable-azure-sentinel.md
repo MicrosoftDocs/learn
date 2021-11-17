@@ -16,8 +16,7 @@ Azure Sentinel integrates with Microsoft 365 solution and correlates millions of
 * **Investigate threats with artificial intelligence**, and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft. 
 * **Respond to incidents rapidly** with built-in orchestration and automation of common tasks.
 
-  > [!div class="mx-imgBorder"]
-  > ![Azure Sentinel services in a hub and spoke.](../media/az500-sentinel.png)
+![Azure Sentinel services in a hub and spoke.](../media/az500-sentinel.png)
 
 Building on the full range of existing Azure services, Azure Sentinel natively incorporates proven foundations, like Log Analytics, and Logic Apps. Azure Sentinel enriches your investigation and detection with AI, and provides Microsoft's threat intelligence stream and enables you to bring your own threat intelligence.
 

@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.aspnetcore.build-web-api-minimal-spa
 metadata:
-  title: Create a full stack application by using React and minimal API for .NET Core
+  title: Create a full stack application by using React and minimal API for ASP.NET Core
   description: Learn how to
   ms.date: 11/04/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a full stack application by using React and minimal API for .NET Core
-summary: Learn how to create a full stack application by using React and minimal API for .NET Core.
+title: Create a full stack application by using React and minimal API for ASP.NET Core
+summary: Learn how to create a full stack application by using React and minimal API for ASP.NET Core.
 abstract: |
   In this module you will:
   - Construct a front-end app using a single-page application (SPA) framework.
-  - Connect an API in .NET Core to an SPA application.
+  - Connect an API in ASP.NET Core to an SPA application.
   - Configure the back-end application to use cross-origin resource sharing (CORS).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -24,6 +24,8 @@ roles:
 products:
   - vs
   - dotnet
+  - aspnet-core
+  - vs-code
 prerequisites: |
   - Fundamental understanding of JavaScript.
   - Node.js installed.

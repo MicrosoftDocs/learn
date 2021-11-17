@@ -7,7 +7,7 @@ Let’s begin with [Azure Active Directory (Azure AD)](/azure/active-directory/f
 :::image type="content" source="../media/on-premises-identities.png" alt-text="Azure AD Connect syncs Active Directory Domain Services and Azure Active Directory.":::
 
 
-### Best practices with Azure ID identity management
+## Best practices with Azure ID identity management
 
 - **Centralize identity management**. In a hybrid identity scenario, we recommend that you integrate your on-premises and cloud directories. Integration enables your IT team to manage accounts from one location, whenever an account is created. Integration also helps your users be more productive by providing a common identity for accessing both cloud and on-premises resources.
 

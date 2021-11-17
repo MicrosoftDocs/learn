@@ -3,8 +3,7 @@ A container registry is a service that stores and distributes container images. 
 
 In addition to Docker container images, Azure Container Registry supports related content artifacts including Open Container Initiative (OCI) image formats.
 
-> [!div class="mx-imgBorder"]
-> ![Different registries including ACR are providing images to containers.](../media/az500-azure-container-registry.png)
+![Different registries including ACR are providing images to containers.](../media/az500-azure-container-registry.png)
 
 ### Security and access
 

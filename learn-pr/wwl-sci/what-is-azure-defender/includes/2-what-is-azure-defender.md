@@ -1,40 +1,42 @@
-Azure Defender is the Cloud workload protection feature of Azure Security Center.  Azure Security Center's features cover the two broad pillars of cloud security:
+Microsoft Defender for Cloud's features covers the two broad pillars of cloud security:
 
-**Cloud Security Posture Management (CSPM)** - Security Center is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
+**Cloud Security Posture Management (CSPM)** - Defender for Cloud is available for free to all Azure users. The free experience includes CSPM features such as secure score, detection of security misconfigurations in your Azure machines, asset inventory, and more. Use these CSPM features to strengthen your hybrid cloud posture and track compliance with built-in policies.
 
-**Cloud Workload Protection (CWP)** - Security Center's integrated cloud workload protection platform (CWPP), Azure Defender, brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Azure Defender brings a range of extra security features. In addition to the built-in policies, when you've enabled any Azure Defender plan, you can also add custom policies and initiatives.
+**Cloud Workload Protection (CWP)** - Defender for Cloud's integrated cloud workload protection platform (CWPP), brings advanced, intelligent protection to your Azure and hybrid resources and workloads. Enabling Defender for Cloud to bring a range of extra security features. In addition to the built-in policies, when you've enabled any Defender for Cloud plan, you can also add custom policies and initiatives.
 
-The Azure Defender dashboard in Security Center provides visibility and control of the CWP features for your environment:
+The Defender for Cloud provides visibility and control of the CWP features for your environment:
 
-:::image type="content" source="../media/sample-defender-dashboard.png" alt-text="Azure Defender Dashboard.":::
+:::image type="content" source="../media/workload-protections.png" alt-text="Defender for Cloud workload protections.":::
 
-## What resource types can Azure Defender secure?
+## What resource types can Microsoft Defender for Cloud secure?
 
-Azure Defender provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
+Defender for Cloud provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
 
-When you enable Azure Defender from the Pricing and settings area of Azure Security Center, the following Defender plans are all enabled simultaneously and provide comprehensive defenses for the compute, data, and service layers of your environment:
+When you enable Defender for Cloud from the Pricing and settings area, the following Defender plans are all enabled simultaneously and provide comprehensive defenses for the compute, data, and service layers of your environment:
 
-- Azure Defender for servers
+- Microsoft Defender for servers
 
-- Azure Defender for App Service
+- Microsoft Defender for App Service
 
-- Azure Defender for Storage
+- Microsoft Defender for Storage
 
-- Azure Defender for SQL
+- Microsoft Defender for SQL
 
-- Azure Defender for Kubernetes
+- Microsoft Defender for Kubernetes
 
-- Azure Defender for container registries
+- Microsoft Defender for container registries
 
-- Azure Defender for Key Vault
+- Microsoft Defender for Key Vault
 
-- Azure Defender for Resource Manager
+- Microsoft Defender for Resource Manager
 
-- Azure Defender for DNS
+- Microsoft Defender for DNS
+
+- Microsoft Defender for open-source relational databases
 
 ## Hybrid cloud protection
 
-In addition to defending your Azure environment, you can add Azure Defender capabilities to your hybrid cloud environment:
+In addition to defending your Azure environment, you can add Defender for Cloud capabilities to your hybrid cloud environment:
 
 - Protect your non-Azure servers
 
@@ -42,25 +44,24 @@ In addition to defending your Azure environment, you can add Azure Defender capa
 
 You'll get customized threat intelligence and prioritized alerts according to your specific environment so that you can focus on what matters the most.
 
-To extend protection to virtual machines and SQL databases in other clouds or on-premises, deploy Azure Arc and enable Azure Defender. Azure Arc for servers is a free service, but services used on Arc enabled servers, such as Azure Defender, will be charged as per the pricing for that service. Learn more in Add non-Azure machines with Azure Arc.
+To extend protection to virtual machines and SQL databases in other clouds or on-premises, deploy Azure Arc and enable Defender for Cloud. Azure Arc for servers is a free service, but services used on Arc enabled servers, such as Defender for Cloud, will be charged as per the pricing for that service. Learn more in Add non-Azure machines with Azure Arc.
 
-## Azure Defender security alerts
+## Microsoft Defender for Cloud security alerts
 
-When Azure Defender detects a threat in any area of your environment, it generates a security alert. These alerts describe details of the affected resources, suggested remediation steps, and in some cases, an option to trigger a logic app in response.
+When Defender for Cloud detects a threat in any area of your environment, it generates a security alert. These alerts describe details of the affected resources, suggested remediation steps, and in some cases, an option to trigger a logic app in response.
 
-Whether an alert is generated by Security Center or received by Security Center from an integrated security product, you can export it. To export your alerts to Azure Sentinel, any third-party SIEM, or any other external tool, follow the instructions in Stream alerts to a SIEM, SOAR, or IT Service Management solution.
+Whether an alert is generated by Defender for Cloud or received by Defender for Cloud from an integrated security product, you can export it. To export your alerts to Microsoft Sentinel, any third-party SIEM, or any other external tool, follow the instructions in Stream alerts to a SIEM, SOAR, or IT Service Management solution.
 
-## Azure Defender advanced protection capabilities
+## Microsoft Defender for Cloud advanced protection capabilities
 
-Azure Defender uses advanced analytics for tailored recommendations related to your resources.
+Defender for Cloud uses advanced analytics for tailored recommendations related to your resources.
 
-Protections include securing the management ports of your VMs with just-in-time access and adaptive application controls to create allow lists for what apps should and shouldn't run on your machines.
+Protections include securing the management ports of your VMs with just-in-time access and adaptive application controls to create allowlists for what apps should and shouldn't run on your machines.
 
-Use the advanced protection tiles in the Azure Defender dashboard to monitor and configure each of these protections.
+Use the advanced protection tiles in the Defender for Cloud dashboard to monitor and configure each of these protections.
 
 ## Vulnerability assessment and management
 
-Azure Defender includes vulnerability scanning for your virtual machines and container registries at no extra cost. The scanners are powered by Qualys, but you don't need a Qualys license or even a Qualys account - everything's handled seamlessly inside Security Center.
+Defender for Cloud includes vulnerability scanning for your virtual machines and container registries at no extra cost. The scanners are powered by Qualys, but you don't need a Qualys license or even a Qualys account - everything's handled seamlessly inside Defender for Cloud.
 
-Review the findings from these vulnerability scanners and respond to them all from within Security Center. This brings Security Center closer to being the single pane of glass for all of your cloud security efforts.
-
+Review the findings from these vulnerability scanners and respond to them all from within Defender for Cloud. This brings Defender for Cloud closer to being the single pane of glass for all of your cloud security efforts.

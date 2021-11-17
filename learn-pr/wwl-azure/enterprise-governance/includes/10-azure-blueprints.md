@@ -1,12 +1,11 @@
-
 Just as a blueprint allows an engineer or an architect to sketch a project's design parameters, Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints makes it possible for development teams to rapidly build and stand up new environments with trust they're building within organizational compliance with a set of built-in components -- such as networking -- to speed up development and delivery.
 
 Blueprints are a declarative way to orchestrate the deployment of various resource templates and other artifacts such as:
 
-* Role Assignments
-* Policy Assignments
-* Azure Resource Manager templates
-* Resource Groups
+ -  Role Assignments
+ -  Policy Assignments
+ -  Azure Resource Manager templates
+ -  Resource Groups
 
 The Azure Blueprints service is backed by the globally distributed Azure Cosmos DB. Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Blueprints deploys your resources to.
 
@@ -31,14 +30,12 @@ Including a policy in a blueprint enables the creation of the right pattern or d
 A policy can be included as one of many artifacts in a blueprint definition. Blueprints also support using parameters with policies and initiatives.
 
 ## Example
+
 The following example illustrates the power of Azure Blueprints to deploy a complex solution and secure it.
 
 ## Azure Security and Compliance Blueprint: PaaS Web Application for PCI DSS
 
-* This Azure Security and Compliance Blueprint Automation provides guidance for the deployment of a Payment Card Industry Data Security Standards (PCI DSS 3.2) compliant platform as a service (PaaS) environment suitable for the collection, storage, and retrieval of cardholder data.
-
-* This Azure Security and Compliance Blueprint Automation automatically deploys a PaaS web application reference architecture with pre-configured security controls to help customers achieve compliance with PCI DSS 3.2 requirements. The solution consists of Azure Resource Manager templates and PowerShell scripts that guide resource deployment and configuration.
-
-* This Blueprint uses Azure Resource Manager, Bastion Host, App Service Environment, Azure Web App, Network Security Groups, Subnets, Azure DNS, Azure Load Balancer, Azure encryption, Azure Storage, Azure SQL DB, Identity Management, Azure Key Vault, Azure Security Center, Azure Application Gateway, Azure Monitor logs, Azure Monitor, Azure Automation, and Application Insights. 
-
-* This Azure Security and Compliance Blueprint Automation is comprised of JSON configuration files and PowerShell scripts that are handled by Azure Resource Manager's API service to deploy resources within Azure.
+ -  This Azure Security and Compliance Blueprint Automation provides guidance for the deployment of a Payment Card Industry Data Security Standards (PCI DSS 3.2) compliant platform as a service (PaaS) environment suitable for the collection, storage, and retrieval of cardholder data.
+ -  This Azure Security and Compliance Blueprint Automation automatically deploys a PaaS web application reference architecture with pre-configured security controls to help customers achieve compliance with PCI DSS 3.2 requirements. The solution consists of Azure Resource Manager templates and PowerShell scripts that guide resource deployment and configuration.
+ -  This Blueprint uses Azure Resource Manager, Bastion Host, App Service Environment, Azure Web App, Network Security Groups, Subnets, Azure DNS, Azure Load Balancer, Azure encryption, Azure Storage, Azure SQL DB, Identity Management, Azure Key Vault, Microsoft Defender for Cloud, Azure Application Gateway, Azure Monitor logs, Azure Monitor, Azure Automation, and Application Insights.
+ -  This Azure Security and Compliance Blueprint Automation is comprised of JSON configuration files and PowerShell scripts that are handled by Azure Resource Manager's API service to deploy resources within Azure.

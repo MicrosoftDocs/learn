@@ -1,6 +1,6 @@
 Traditionally data was stored on premises without taking into consideration its usage and lifecycle. In the cloud, data can be stored based on access, lifecycle, and other compliance requirements. Let us learn how the concept of hot, warm, and cold data path determines how we store and compute data.
 
-**Understand Warm Path**
+## Understand Warm Path
 
 Let us look at the common scenario of IoT device data aggregation. The devices could be sending data while not really producing anything. This highlights a very common challenge when trying to extract insight out of IoT data: the data you are looking for is not available in the data you are getting. Therefore, we need to infer utilization by combining the data we are getting with other sources of data, and applying rules to determine of whether or not the machine is producing. In addition, these rules may change from company to company since they may have different interpretations of what “producing” is. 
 
@@ -12,7 +12,7 @@ Stream Analytics can execute complex analysis at scale, for example, tumbling/sl
 
 Warm storage can be implemented with various services on the Azure platform, such as Azure SQL Database and Azure Cosmos DB. 
 
-**Understand Cold Path**
+## Understand Cold Path
 
 The warm path is where the stream processing occurs to discover patterns over time. However, there might be a need to calculate the utilization over a period in the past, with different pivots, and aggregations and to merge those results with the warm path results to present a unified view to the user. 
 
@@ -26,11 +26,11 @@ To store massive amounts of unstructured data, such as JSON, or XML documents co
 
 Azure Data Factory is a great solution for creating the batch views on the serving layer. It is a cloud-based managed data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. It can process and transform the data by using services such as Azure HDInsight Hadoop, Spark, and Azure Databricks. This allows you to build machine learning models and consume them with the analytics clients.
 
-**Understand Hot Path**
+## Understand Hot Path
 
 Hot path is typically used for processing or displaying data in real-time. It is employed for real time alerting and streaming operations are performed using this data. **A hot path** is where latency-sensitive data, results need to be ready in seconds or less and it flows for rapid consumption by analytics clients.
 
-**When to use Hot/Warm/Cold data path**
+### When to use Hot/Warm/Cold data path
 
 Let us analyze the requirements where you will decide upon hot, warm, or cold data path.
 

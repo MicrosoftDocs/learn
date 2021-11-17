@@ -6,20 +6,19 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
     [![Screenshot showing how to create a new view.](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
-    You see a list of all the **Telemetry**, **Property**, and **Commands** elements you created, each with a check box. You also see a list of **Cloud properties** and **Custom tiles**. Ignore these two lists for now.
+    There are 2 ways to add tiles to your view that can show a capability, either starting with a visual (such as a chart type), or starting with a device. Select the **Start with devices** tab.
 
-1. Under **Telemetry**, select  **Location** > **Add tile**. Dashboards are made of tiles. We choose the location tile first because we want to expand it. 
+    You see a drop downs that list all of the **Telemetry**, **Property**, and **Commands** elements you created. You also see a list of **Cloud properties** and **Custom tiles**. Ignore these two lists for now.
+
+1. Under **Telemetry**, select **Location**, then select the **Add tile** button. Dashboards are made of tiles. We choose the location tile first because we want to expand it.
 
     Drag the lower-right corner of the tile until it's at least twice the default size. This tile is the most fun. It shows the location of the truck on a world map.
 
 1. Before you add more tiles, change the **View name** to something more specific, for example, *Truck view*.
 
-1. Select each of the rest of the telemetry and property capabilities in turn, starting at the top. For each capability, select **Add tile**. 
+1. Select each of the rest of the telemetry and property capabilities in turn, starting at the top. For each capability, select **Add tile**. For the Location property, there are multiple telemetry entries that include the altitude, latitude and longitude. You don't need to add any of these, just the location value you added in the last step.
 
     We're going for function over form here. We can make the dashboard pretty later. For now, we just want a dashboard that will confirm all the telemetry that our remote device sends. There's no need to add the commands to the dashboard, though that option exists.
-
-    > [!TIP]
-    > To save dashboard space, select two or more telemetry values, and then select **Add tile**. All the values will appear in _one_ tile.
 
 1. After you add all the tiles, explore your dashboard. Look at the wording on the tiles.
 
@@ -31,7 +30,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 ### Create a dashboard to set writable properties
 
-We need to create a separate view. Its sole purpose will be to set writable properties. 
+We need to create a separate view. Its sole purpose will be to set writable properties.
 
 1. Select **Views**, and then select the **Editing device and cloud data** tile.
 
@@ -69,11 +68,11 @@ By *real* device, we mean IoT Central understands that a remote app is running. 
 
 1. Leave the **Simulate this device?** setting at **No**. We're going to build a real truck here. That is, we're building a _simulated real_ truck! If you set this value to **Yes**, IoT Central will create random values for the telemetry. These random values can be useful in validating a device template.
 
-1. Select **Create**. After a few seconds, your device list should be populated with a single entry. 
+1. Select **Create**. After a few seconds, your device list should be populated with a single entry.
 
     Notice that the **Device status** is **Registered**. Only after the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
 
-1. Select **RefrigeratedTruck - 1**. You see the live dashboard. It includes lots of **Waiting for data** messages.
+1. Select **RefrigeratedTruck - 1**, then select the *Truck View*. You will see the live dashboard. It includes lots of **No data found** messages.
 
 1. On the bar that includes **Truck view**, select **Commands**. Notice that the two commands you entered are ready to run.
 
@@ -83,9 +82,9 @@ The next step is to create the keys that will allow a remote device to communica
 
 1. In the upper-right menu, select **Connect**. Do _not_ select **Attach to gateway**.
 
-1. In the **Device connection** dialog box that opens, carefully copy the **ID scope**, **Device ID**, and **Primary key**. The ID scope identifies the app. The device ID identifies the real device. And the primary key gives you permission for the connection. 
+1. In the **Device connection** dialog box that opens, carefully copy the **ID scope**, **Device ID**, and **Primary key**. The ID scope identifies the app. The device ID identifies the real device. And the primary key gives you permission for the connection.
  
-    Paste this information in a text file. For example, use a tool like Notepad to save the text file with a meaningful name, such as _Truck keys.txt_.   
+    Paste this information in a text file. For example, use a tool like Notepad to save the text file with a meaningful name, such as _Truck keys.txt_.
 
 1. Leave the **Authentication type** setting as **Shared access signature (SAS)**.
 
