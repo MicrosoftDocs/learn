@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-git-branches-workflows.explore-git-branching-model-for-continuous-delivery
+title: Explore Git branching model for continuous delivery
+metadata:
+  title: Explore Git branching model for continuous delivery
+  description: "Explore Git branching model for continuous delivery"
+  ms.date: 11/17/2021
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-explore-git-branching-model-for-continuous-delivery.md)]
