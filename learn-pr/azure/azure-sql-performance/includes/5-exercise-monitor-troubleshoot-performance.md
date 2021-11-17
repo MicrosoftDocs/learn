@@ -2,7 +2,7 @@ In this exercise, you will learn how to monitor and troubleshoot a performance p
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-In the terminal on the right, you'll see Azure Cloud Shell, which provides a way to interact with Azure by using a browser. Before you start the labs, you will run a script there in order to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. In the script, you're prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+The terminal session on the right, Azure Cloud Shell, enables you to interact with Azure by using a browser. For this exercise, you will run a script to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. In the script, you're prompted for a password and your local IP address to enable your device to connect to the database.  
 
 This script takes 3-5 minutes to complete. Make sure to note your password, unique ID, and region. These won't be shown again.
 
@@ -12,24 +12,23 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in Azure Cloud Shell on the right. Fill in a complex password and, when prompted, enter your local public IP address you retrieved.
+1. In Azure Cloud Shell on the right, enter the following code, and when prompted, provide a complex password and your local public IP address you retrieved in the previous step. Press <kbd>Enter</kbd> to run the last line of the script.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
     # Prompt for local ip address
-    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
+    $ipAddress = Read-Host "Please enter the IP address of your local device"
     # Get resource group and location and random string
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
     $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
-    # The logical server name has to be unique in the system
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (for example, in a text file) the information you'll need throughout the module by running the following script in Cloud Shell.  You'll likely need to press `ENTER` after you paste in the code, because the last line won't be run by default.
+1. Run the following script in Azure Cloud Shell. Save the output; you'll need this information throughout the module.  Press <kbd>Enter</kbd> after you paste in the code, so the last line of code prints the output you need.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -43,9 +42,9 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     ```
 
     > [!TIP]
-    > Don't forget to note your password, unique ID, and server. You will need these items throughout the module.
+    > Save the output, and note your password, unique ID, and server. You will need these items throughout the module.
 
-1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script also adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in future units (this is to be consistent with other units).
+1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script also adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in future unitsof this module. The script can take several minutes to complete, and will pause several times. Wait for a blank command prompt. 
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -88,13 +87,20 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
 
 1. On your local device, open SQL Server Management Studio (SSMS) and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was shown from Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
+1. On the Connect to Server login dialog box provide the following information:
 
-    Change the authentication to **SQL Server Authentication**, and input the corresponding sign-in and password you provided for the script.  
+    | Field | Value |
+    |---|---|
+    |Server type | *Database Engine* (default). |
+    |Server name | The $serverName that was returned in the Cloud Shell, plus the rest of the URI. For example: *aw-server`<unique ID>`.database.windows.net*.|
+    |Authentication | *SQL Server Authentication* (default). |
+    | Login | *cloudadmin* The adminSqlLogin assigned in step 1 of this exercise. |
+    | Password | The password you provided in step 1 of this exercise. | 
+    | Remember password | checked |
 
-    Select **Remember password** > **Connect**.  
+1. Select **Connect**.  
 
-    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Screenshot of connecting to Azure SQL Database in SSMS."::: 
+    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Screenshot of connection dialog for SQL Database in SSMS."::: 
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address the Azure portal used during deployment. If it does, you'll get the following message: "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in by using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the wizard in SSMS.  
@@ -123,12 +129,12 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
 1. Edit the script **sqlworkload.cmd** (which will use the ostress.exe program).
 
-    - Substitute your `unique_id` that you saved from the deployment script to put in the correct server name.
-    - Substitute the password for the sign-in for the Azure SQL Database server for the `-P parameter`.
+    - Substitute your `unique_id` that you saved from the deployment script in the server name.
+    - Substitute the password you used for the sign-in for the Azure SQL Database server for the `-P parameter`.
 
 ## Run the workload
 
-Now you will run a workload of a T-SQL query to observe its performance simulating concurrent users.
+In this task, you will run a workload in a T-SQL query to observe its performance simulating concurrent users.
 
 1. Use SSMS to open the script file **topcustomersales.sql** to observe the query. You won't run the query from SSMS. Your query editor window should look like the following text:
 
@@ -153,7 +159,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
     GO
     ```
 
-    This database isn't large. The query to retrieve the customer and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns from the result set, but these are needed for demonstration purposes of this exercise.
+    This database is quite small. The query to retrieve a list of customers and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns in the result set, but these are needed for demonstration purposes of this exercise.
 
 1. From a PowerShell command prompt, change to the directory for this exercise:
 
