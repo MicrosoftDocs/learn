@@ -30,7 +30,7 @@ Many gaming experiences today use visual cues or indicators to guide player succ
 
 - Is important information represented through visual means? For example, text-based menus and instructions, on-screen icons, and more.
 - Is the visual representation of this information accessible to players with visual disabilities?
-- How is gamplay impacted if a player cannot access this visual information due to lack of accessible supports?
+- How is gameplay impacted if a player cannot access this visual information due to lack of accessible supports?
 
 In the following video, you'll learn how to identify common visual elements that should be considered in the context of these questions.
 
@@ -40,7 +40,7 @@ Identifying these elements is an important first step in accessible game develop
 
 Like visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio based information is not represented in an accessible way, players with hearing-related disabilities may be excluded from using this information.
 
-In the following video, you'll learn how to identify common audio-based elements that can pose unintentional barriers for players. 
+In the following video, you'll learn how to identify common audio-based elements that can pose unintentional barriers for players.
 
 It's important to identify areas where audio plays a key role in gameplay. This is an important first step to ensure that the following players can customize their experience to meet their needs and preferences.
 
