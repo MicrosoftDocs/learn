@@ -11,4 +11,4 @@ For more information about the topics discussed in this module, see:
 
 - [Indexing policies in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/index-policy]
 
-[docs.microsoft.com/azure/cosmos-db/index-policy]: /azure/cosmos-db/index-policy
+[docs.microsoft.com/azure/cosmos-db/index-policy]: https://docs.microsoft.com/azure/cosmos-db/index-policy
