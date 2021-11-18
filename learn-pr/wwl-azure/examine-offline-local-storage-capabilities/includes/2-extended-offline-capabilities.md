@@ -31,7 +31,7 @@ The following sections provide examples of how you can declare the parent/child 
 
 You can declare the parent-child relationship when creating a new device. Or for existing devices, you can declare the relationship from the device details page of either the parent IoT Edge device or the child IoT device.
 
-:::image type="content" source="../media/m06-l03-edge-gateway-manage-child-devices-b7de833f.png" alt-text="Configure Child Devices of an Edge Gateway":::
+:::image type="content" source="../media/m06-l03-edge-gateway-manage-child-devices-b7de833f.png" alt-text="Screen shot that shows how to configure the child devices of an Edge gateway from the device details page of the gateway device.":::
 
 
 #### Option 2: Use the az command-line tool
@@ -72,7 +72,7 @@ You can think of a parent/child relationship as a transparent gateway, where the
 
 ## Specify DNS servers
 
-To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [https://docs.microsoft.com/azure/iot-edge/troubleshoot\#edge-agent-module-continually-reports-empty-config-file-and-no-modules-start-on-the-device](https://docs.microsoft.com/azure/iot-edge/troubleshoot#edge-agent-module-continually-reports-empty-config-file-and-no-modules-start-on-the-device).
+To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [https://docs.microsoft.com/azure/iot-edge/troubleshoot](/azure/iot-edge/troubleshoot).
 
 ## Optional offline settings
 

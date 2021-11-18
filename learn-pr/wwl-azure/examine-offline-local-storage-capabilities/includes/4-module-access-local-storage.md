@@ -9,7 +9,7 @@ For example, if you wanted to enable the IoT Edge hub to store messages in your 
 1.  For both IoT Edge hub and IoT Edge agent, add an environment variable called **storageFolder** that points to a directory in the module.
 2.  For both IoT Edge hub and IoT Edge agent, add binds to connect a local directory on the host machine to a directory in the module. For example:
 
-:::image type="content" source="../media/m06-l04-edge-device-cofig-local-offline-storage-5bfc91c9.png" alt-text="IoT Edge Module - Configure Local Offline Storage":::
+:::image type="content" source="../media/m06-l04-edge-device-cofig-local-offline-storage-5bfc91c9.png" alt-text="Diagram that shows how to enable the IoT Edge hub to store messages in your device's local storage.":::
 
 
 Or, you can configure the local storage directly in the deployment manifest. For example:
