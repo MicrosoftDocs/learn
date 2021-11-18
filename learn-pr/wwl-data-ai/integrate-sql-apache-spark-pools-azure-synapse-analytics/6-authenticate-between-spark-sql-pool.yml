@@ -6,7 +6,7 @@ metadata:
   description: "Authenticate between spark and SQL pool in Azure Synapse Analytics"
   ms.date: 11/18/2021
   author: wwlpublish
-  ms.author: kawaaije
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
