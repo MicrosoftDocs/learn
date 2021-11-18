@@ -3,10 +3,11 @@ uid: learn.wwl.design-data-partitioning-strategy
 metadata:
   title: Design a data partitioning strategy
   description: "Design a data partitioning strategy"
-  ms.date: 11/17/2021
+  ms.date: 11/18/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Design a data partitioning strategy
 summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change-feed to maintain your data's referential integrity.
 abstract: |
