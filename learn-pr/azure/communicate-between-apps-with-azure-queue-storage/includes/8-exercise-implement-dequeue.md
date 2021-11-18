@@ -1,12 +1,12 @@
-Now we want to complete the application by writing code to read the next message in the queue, process it, and delete it from the queue. 
+Let's complete the application by writing code to read the next message in the queue, process it, and then delete it from the queue. 
 
-We're going to place this code into the same application and execute it when a user chooses the appropriate menu items.  In a real-world scenario, this code would be placed in a separate application dedicated to receiving and processing messages.
+We're going to place the code into the application and run it when a user selects the appropriate menu items.  In a real-world scenario, this code should be put in its own application dedicated to receiving and processing messages.
 
 ## Peeking at the next message
 
 Let's add a new method that peeks at the next message from the queue.
 
-1. Open the `Program.cs` source file in your editor.
+1. Open `Program.cs` source file in your editor.
 
 1. Find the `PeekMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
@@ -23,7 +23,7 @@ Let's add a new method that peeks at the next message from the queue.
 
 ## Receiving and processing messages
 
-Now we will add the code to receive and process a message in the application.
+Add code to receive and process a message in the application.
 
 1. Find the `ReceiveMessageAsync` method in the application and delete the line throwing a `NotImplementedException`.
 
@@ -42,7 +42,7 @@ Now we will add the code to receive and process a message in the application.
     Console.WriteLine($"Message (raw) : {message.Body}");
     ```
 
-1. Next, we want to deserialize the message content into an object that we can work with in our code.  To do this, we use the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
+1. To deserialize the message content into an object that we can work with in our code, add the `ToObjectFromJson` method on the `Body` property of the `QueueMessage` object.  Add the following lines to the method.
 
     ```csharp
     NewsArticle article = message.Body.ToObjectFromJson<NewsArticle>();
@@ -51,7 +51,7 @@ Now we will add the code to receive and process a message in the application.
     Console.WriteLine($"-  Location : {article.Location}");
     ```
 
-1. Finally, since we have processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
+1. Finally, when we have processed the message, we need to delete the message from the queue so no other consumers process it.  Add the following code to the end of the `ReceiveMessageAsync` method.
 
     ```csharp
     Console.WriteLine("The processing for this message is just printing it out, so now it will be deleted");
@@ -146,3 +146,4 @@ The code is now complete. It can now send and retrieve messages.
       X - Exit program
     X
     ```
+
