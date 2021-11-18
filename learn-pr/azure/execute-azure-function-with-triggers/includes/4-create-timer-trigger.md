@@ -112,7 +112,7 @@ You have created an Azure function app with logic to print a message to the log 
     | **Plan** |
     | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
-1. Select **Review + create** to validate your settings, and then select **Create**. The deployment pane displays the resources that are being created for your funtion app. 
+1. Select **Review + create** to validate your settings, and then select **Create**. The deployment pane displays the resources that are being created for your function app. 
 
 1. When deployment is complete, select **Go to resource**. The *Function App* pane for your funcitonappears.
 
