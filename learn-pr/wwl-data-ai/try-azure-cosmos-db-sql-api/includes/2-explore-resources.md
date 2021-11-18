@@ -5,7 +5,7 @@ An Azure Cosmos DB SQL API account is composed of a basic hierarchy of resources
 - One or more containers
 - Many items
 
-:::image type="content" source="../media/2-hiearchy.svg" alt-text="Hierarchy of Azure Cosmos DB resources including an account, then a child set of databases, child set of containers, and then finally a child set of items.":::
+![Hierarchy of Azure Cosmos DB resources including an account, then a child set of databases, child set of containers, and then finally a child set of items](../media/2-hiearchy.png)
 
 Let's explore each item in this hierarchy.
 
@@ -13,19 +13,19 @@ Let's explore each item in this hierarchy.
 
 Each tenant of the Azure Cosmos DB service is created by provisioning a database account. Accounts are the fundamental units of distribution and high availability. At the account level, you can configure the region\[s\] for your data in Azure Cosmos DB SQL API. Accounts also contain the globally unique DNS name used for API requests
 
-:::image type="content" source="../media/2-account.svg" alt-text="Resource hierarchy with account highlighted and associated with a DNS name and key.":::
+![Resource hierarchy with account highlighted and associated with a DNS name and key](../media/2-account.png)
 
 ## Database
 
 A database is a logical unit of management for containers in Azure Cosmos DB SQL API. An Azure Cosmos DB database manages users, permissions, and containers. Within the database, you can find one or more containers. You can also elect to provision throughput for your data here at the database level.
 
-:::image type="content" source="../media/2-database.svg" alt-text="Resource hierarchy with database highlighted and multiple example child containers.":::
+![Resource hierarchy with database highlighted and multiple example child containers](../media/2-database.png)
 
 ## Container
 
 Containers are the fundamental unit of scalability in Azure Cosmos DB SQL API. Typically, you provision throughput at the container level. Azure Cosmos DB SQL API will automatically and transparently partition the data in a container. You can also optionally configure an indexing policy or a default time-to-live value at the container level.
 
-:::image type="content" source="../media/2-container.svg" alt-text="Resource hierarchy with a set of containers highlighted.":::
+![Resource hierarchy with a set of containers highlighted](../media/2-container.png)
 
 ## Item\[s\]
 
@@ -33,4 +33,4 @@ Am Azure Cosmos DB SQL API resource container is a schema-agnostic container of 
 
 > &#128161; Containers can also store JavaScript based stored procedures, triggers and user-defined-functions (UDFs)
 
-:::image type="content" source="../media/2-item.svg" alt-text="Resource hierarchy with items highlighted and other example children resources of containers.":::
+![Resource hierarchy with items highlighted and other example children resources of containers](../media/2-item.png)

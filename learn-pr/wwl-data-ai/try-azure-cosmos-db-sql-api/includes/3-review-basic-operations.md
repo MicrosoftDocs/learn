@@ -6,7 +6,7 @@ The first step to getting started with Azure Cosmos DB is to create a new accoun
 
 When creating a new account in the portal, you must first select an API for your workload. The API selection cannot be changed after the account is created. For the remainder of this section, we will assume that the SQL API has been selected.
 
-:::image type="content" source="../media/3-select-api.png" alt-text="Select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra.":::
+![Select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra](../media/3-select-api.png)
 
 Next, the Azure portal will use a step-by-step wizard with tabs for various configuration options. Here you can configure options such as:
 
@@ -14,7 +14,7 @@ Next, the Azure portal will use a step-by-step wizard with tabs for various conf
 - The location (Azure region) for the account
 - Capacity mode (provisioned throughput or serverless)
 
-:::image type="content" source="../media/3-account-wizard.png" alt-text="Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account.":::
+![Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account](../media/3-account-wizard.png)
 
 > &#128221; Only the options in the **Basics** tab are required to create an Azure Cosmos DB account.
 
@@ -43,4 +43,28 @@ Once the database and container resources exist, you are ready to create your fi
 
 JSON is a language-independent data format with well-defined data types and near universal support across a diverse range of services and programing languages. Here is an example of a JSON document that could be an item in an Azure Cosmso DB account:
 
-:::code language="json" source="../media/3-document.json" highlight="2":::
+```json
+{
+  "id": "0012D555-C7DE",
+  "type": "customer",
+  "fullName": "Franklin Ye",
+  "title": null,
+  "emailAddress": "fye@cosmic.works",
+  "creationDate": "2014-02-05",
+  "addresses": [
+    {
+      "addressLine": "1796 Westbury Drive",
+      "cityStateZip": "Melton, VIC 3337 AU"
+    },
+    {
+      "addressLine": "9505 Hargate Court",
+      "cityStateZip": "Bellflower, CA 90706 US"
+    }
+  ],
+  "password": {
+    "hash": "GQF7qjEgMk=",
+    "salt": "12C0F5A5"
+  },
+  "salesOrderCount": 2
+}
+```

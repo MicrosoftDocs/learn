@@ -12,4 +12,4 @@ For more information about the topics discussed in this module, see:
 
 - [Quickstart: Create an Azure Cosmos account, database, container, and items from the Azure portal][/azure/cosmos-db/sql/create-cosmosdb-resources-portal]
 
-[/azure/cosmos-db/sql/create-cosmosdb-resources-portal]: /azure/cosmos-db/sql/create-cosmosdb-resources-portal
+[/azure/cosmos-db/sql/create-cosmosdb-resources-portal]: https://docs.microsoft.com/azure/cosmos-db/sql/create-cosmosdb-resources-portal
