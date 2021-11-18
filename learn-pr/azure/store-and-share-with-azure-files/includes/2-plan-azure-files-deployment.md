@@ -6,7 +6,7 @@ In this unit, you'll explore the features offered by Azure Files and understand 
 
 ## What is Azure Files?
 
-:::image type="content" source="../media/2-overview.svg" alt-text="Diagram showing heirarchy of Azure Files, starting with a storage account for file shares, which contains separate directories for tools (app files), logs (txt files), media (image files), and data files.":::
+:::image type="content" source="../media/2-overview.svg" alt-text="Diagram showing hierarchy of Azure Files, starting with a storage account for file shares, which contains separate directories for tools (app files), logs (txt files), media (image files), and data files.":::
 
 Before we explore Azure Files, you need to understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
 
@@ -22,7 +22,7 @@ Azure Files can be used to add to or replace a company's existing on-premises NA
 - All the data is encrypted in transit by using HTTPS and is stored encrypted when at rest.
 - The shares are cross-platform, and you can connect to them from Windows, Linux, or macOS.
 
-Moving a company's existing file shares into Azure Files gives them the flexibility to move their data and processing, or just data, into the cloud. They can then benefit from its scalability, security, and reduced costs compared to running and maintaining the required resources on-premises.
+Migrating a company's existing file shares into Azure Files gives them the flexibility to move their data and processing, or just data, into the cloud. They can then benefit from its scalability, security, and reduced costs compared to running and maintaining the required resources on-premises.
 
 ### Choose your data access method
 
@@ -37,7 +37,7 @@ Because the finance company is moving its main apps to Azure and they want to re
 ### Choose your file redundancy option
 
 Types of Azure Storage Replication
-- Locally-Redundant Storage (LRS)
+- Locally Redundant Storage (LRS)
 - Zone-Redundant Storage (ZRS)
 - Geo-Redundant storage (GRS)
 
@@ -48,9 +48,9 @@ Because Azure Files stores files in a storage account, you can choose between st
 
 Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back premium storage account performance, which comes with higher costs. Currently, premium accounts can use file storage accounts with ZRS in a limited number of regions.
 
-You need to balance the availability and performance requirements to decide on the account and redundancy options. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. As a result, the best choice is a standard GRS account. Currently, Geo-zone Reundant Storage (GZRS) is in preview stage. When GZRS becomes generally available, it will be the best option for them. This table compares the different characteristics of each storage option.
+Your decision for account and reduncancy options is to find a balance between availability and performance requirements. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. As a result, the best choice is a standard GRS account. Currently, Geo-zone Redundant Storage (GZRS) is in preview stage. When GZRS becomes generally available, it will be the best option for them. This table compares the different characteristics of each storage option.
 
-|         |LRS      |ZRS      |GRS/GZRS     |
+| Requirement | LRS  | ZRS | GRS/GZRS |
 |---------|---------|---------|---------|
 |You can easily recreate data, and cost is a priority.    |    ✔     |         |         |
 |Data must be stored in a single known location.     |    ✔    |         |         |
@@ -58,7 +58,7 @@ You need to balance the availability and performance requirements to decide on t
 |Data needs to be highly available, and redundancy is a priority.     |         |    ✔     |    ✔     |
 |99.999999999% (11 nines) durability.     |    ✔     |         |         |
 |99.9999999999% (12 nines) durability.     |         |    ✔     |         |
-|99.99999999999999% (16 nines) durability.     |         |         |    ✔    |
+|99.99999999999999% (16 nines) durability.     |         |         |    ✔    |F
 
  *Premium file storage accounts with ZRS are supported in a small subset of regions.
 
@@ -67,7 +67,7 @@ You need to balance the availability and performance requirements to decide on t
 
 The finance company has existing systems, data, and file shares. You need to migrate this data into Azure Files, so you have another decision to make. Because you can connect over SMB or use the REST APIs, you have many options. For example, you can write a custom utility or use Microsoft solutions for moving data.
 
-:::image type="content" source="./media/2-azure-data-transfer-options.svg" alt-text="Most common utilities.":::
+:::image type="content" source="../media/2-azure-data-transfer-options.svg" alt-text="Most common utilities.":::
 
  The table below compares the most common data migration utilities.
  
@@ -80,6 +80,6 @@ The finance company has existing systems, data, and file shares. You need to mig
 |Azure File Sync | Can be used to do the initial data transfer, and then uninstalled after the data is transferred.  |
 |Azure Data Box | If you have up to 35 TB of data and you need it imported in less than a week.  |
 
-The finance company's files are small, and they have a bandwidth of about 100-Mbps on their network. Their operations team doesn't want to install software on any of the machines and wants the transfers to be as fast as possible.
+The finance company's files are small, and they have a bandwidth of about 100 Mbps on their network. Their operations team doesn't want to install software on any of the machines and wants the transfers to be as fast as possible.
 
 Knowing these requirements and constraints, you propose that AzCopy is the best tool for their needs.
