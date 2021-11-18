@@ -2,7 +2,7 @@ Recall that in the storm events example, we've narrowed down events by time rang
 
 ## Use the `sort` operator
 
-It's difficult to make sense of randomly ordered data. Let's make it a bit easier to understand by sorting the order in which the results are presented. We'd like to know what were the events with the highest damage to property, so we'll order the results by the field `DamageProperty`.
+It's difficult to make sense of unordered data. Let's make it a bit easier to understand by organizing the order in which the results are presented. We'd like to know what were the events with the highest damage to property, so we'll order the results by the field `DamageProperty`.
 
 1. Run the following query:
 

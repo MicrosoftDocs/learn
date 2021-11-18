@@ -21,8 +21,8 @@ The above steps are all included in the following query:
 StormEvents
 | where StartTime between (datetime(4-1-2007)..datetime(4-30-2007))
 | where State == "VIRGINIA"
-| project damage=DamageProperty+DamageCrops, EventType
-| top 5 by damage
+| project Damage=DamageProperty+DamageCrops, EventType
+| top 5 by Damage
 ```
 
 Your results should look something like the following image:

@@ -19,9 +19,9 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
     :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
     
-1. Notice that the all rows returned do, in fact, have *DamageProperty* values greater than zero.
+1. Notice that all rows returned do, in fact, have *DamageProperty* values greater than zero.
     
-1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query:
+1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query where 365d is a shortened version of 365 days:
 
     ```kusto
     StormEvents

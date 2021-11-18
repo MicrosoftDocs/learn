@@ -1,5 +1,5 @@
 Kusto queries can be used to filter data and return specific information.
-Recall that we've looked at random rows of data to get a sense of its structure. In this unit, you will learn how to choose specific data columns relating to storm types, locations, and their damaging effects.
+Recall that we've looked at arbitrary rows of data to get a sense of its structure. In this unit, you will learn how to choose specific data columns relating to storm types, locations, and their damaging effects.
 
 ## Use the `project` operator
 
@@ -51,7 +51,7 @@ We'll do the same for the two types of damage columns by adding together damages
 
 ## Use the `project-away` operator
 
-What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. You can remove specific columns using the `project-away` operator, which indicates which columns to *remove*, while leaving all remaining columns. You can also use a wildcard, such as: `|project-away *ID` to remove all columns ending in `ID`.
+What if you wanted to just remove a few select columns? For our exploration, we don't have any use for the IDs assigned to each episode and event. You can remove specific columns using the `project-away` operator, which indicates which columns to *remove*, while leaving all remaining columns. You can also use a wildcard, such as: `| project-away *ID` to remove all columns ending in `ID`.
 
 1. Run the following query:
 

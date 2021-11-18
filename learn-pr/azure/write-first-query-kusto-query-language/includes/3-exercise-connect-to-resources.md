@@ -9,17 +9,19 @@ In this example, we'll use the Azure Data Explorer web interface. However, the K
 1. Use your Azure account to sign in to the [Azure Data Explorer Web UI](https://dataexplorer.azure.com/).
 1. In the left pane, select **Add Cluster**.
 1. In the dialog box, under **Connection URI**, enter *help*.
-1. Select **Add**. If you get an error, try again.
+1. Select **Add**.
 
 :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
 
-Now you're connected to the help cluster. Queries always run in the context of a database, so you need to connect to a specific database.
+Now you're connected to the help cluster. 
 
 ### Select the database
 
+Queries always run in the context of a database, so you need to connect to a specific database.
+
 1. Expand the help cluster in the left pane.
-1. Expand the **Samples** database, **Tables**, and the **Storm_Events** folder.
-1. Select the **Samples** database to give your queries the correct context. You may notice the list of tables below the database; we'll be using the *StormEvents* table.
+1. Select the **Samples** database to give your queries the correct context.
+1. If you expand the **Samples** database, **Tables**, and the **Storm_Events** folder, you will see a list of tables below the database; we'll be using the *StormEvents* table.
 
     :::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot of help cluster organization.":::
 

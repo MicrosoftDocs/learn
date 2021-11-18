@@ -2,7 +2,7 @@ Recall that in the storm events example, we've narrowed down events by time rang
 
 Now it's your turn to try writing a query from scratch.
 
-Use the table we've been exploring up until now, *StormEvents* to answer the following question:
+Use the table we've been exploring up until now, *StormEvents*, to answer the following question:
 
 In the month of April 2007, what were the top five damage-causing storms in the state of Virginia? In this case, damage refers to both property and crop damage.
 

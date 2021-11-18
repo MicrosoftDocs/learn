@@ -8,13 +8,13 @@ Let's take a look at a sample of the data to get to know the columns and types o
 The `take` operator is perfect for this task, as it returns a specific number of arbitrary rows. 
 
 1. Copy this query to your clipboard.
-1. Paste in the query editor you set up earlier. 
 
     ```kusto
     StormEvents
     | take 5
     ```
     
+1. Paste in the query editor you set up earlier.
 1. Notice that the query begins with a reference to the data table, *StormEvents*. This data is piped into the first and only operator, which then selects five arbitrary rows.
 
 1. Run the query by either selecting the **Run** button above the query window or by pressing **Shift+Enter**.

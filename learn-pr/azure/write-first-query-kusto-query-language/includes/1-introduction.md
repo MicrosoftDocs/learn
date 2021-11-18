@@ -8,12 +8,13 @@ Suppose you're a data analyst with a passion for meteorological data. You want t
 
 You'll write simple queries in the Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
 
+- Count the number of records by using the `count` operator
 - Return a specific number or rows by using the `take` operator
 - Select columns to return by using the `project` operator
 - Filter data by using the `where` operator
 - Reorder returned data by using the `sort` operator
-- Build a query by using these operators
+- Build queries using multiple operators
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to write a query with the most commonly used operators count, take, project, where, and sort.
+By the end of this session, you'll be able to write a query with the most commonly used operators: count, take, project, where, sort, and others.
