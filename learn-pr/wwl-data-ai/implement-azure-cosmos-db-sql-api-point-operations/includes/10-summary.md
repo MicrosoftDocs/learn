@@ -9,6 +9,6 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Azure Cosmos DB libraries for .NET][docs.microsoft.com/dotnet/api/overview/azure/cosmosdb]
+- [Azure Cosmos DB libraries for .NET][/dotnet/api/overview/azure/cosmosdb]
 
-[docs.microsoft.com/dotnet/api/overview/azure/cosmosdb]: /dotnet/api/overview/azure/cosmosdb
+[/dotnet/api/overview/azure/cosmosdb]: https://docs.microsoft.com/dotnet/api/overview/azure/cosmosdb
