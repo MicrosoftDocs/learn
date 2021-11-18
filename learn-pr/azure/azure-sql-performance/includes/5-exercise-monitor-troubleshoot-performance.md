@@ -161,7 +161,7 @@ In this task, you will run a workload in a T-SQL query to observe its performanc
 
     This database is small. The query to retrieve a list of customers and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns in the result set, but these are needed for demonstration purposes of this exercise.
 
-1. From a PowerShell command prompt, enter the following command to move to the correct directory for this exercise. Replace *<base directory>* with your user ID and path for this module :
+1. From a PowerShell command prompt, enter the following command to move to the correct directory for this exercise. Replace `<base directory>` with your user ID and path for this module :
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
