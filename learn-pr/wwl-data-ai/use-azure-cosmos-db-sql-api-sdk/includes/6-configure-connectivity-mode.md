@@ -18,11 +18,19 @@ To configure the client, you will need to create an instance of the **CosmosClie
 
 You can either use the constructor that takes in an endpoint and key:
 
-:::code language="csharp" source="../media/6-script.cs" range="26-28" highlight="3":::
+```csharp
+CosmosClientOptions options = new ();
+
+CosmosClient client = new (endpoint, key, options);
+```
 
 Or, use the constructor that takes in a connection string:
 
-:::code language="csharp" source="../media/6-script.cs" range="26-27,30" highlight="3":::
+```csharp
+CosmosClientOptions options = new ();
+
+CosmosClient client = new (connectionString, options);
+```
 
 ### Changing the connection mode
 
@@ -35,17 +43,32 @@ Within the **CosmosClientOptions** class, you can set the **ConnectionMode** pro
 
 The default setting is to use the **Direct** connection mode. This example configures the client to use the default settings.
 
-:::code language="csharp" source="../media/6-script.cs" range="1-4" highlight="3":::
+```csharp
+CosmosClientOptions options = new ()
+{
+    ConnectionMode = ConnectionMode.Direct
+};
+```
 
 You can optionally configure the client to always use the gateway as a proxy for requests. This example configures the client to use the **Gateway** connection mode.
 
-:::code language="csharp" source="../media/6-script.cs" range="6-9" highlight="3":::
+```csharp
+CosmosClientOptions options = new ()
+{
+    ConnectionMode = ConnectionMode.Gateway
+};
+```
 
 ### Changing the current consistency level
 
 Every Azure Cosmos DB SQL API account has a default consistency level configured. Individual clients can configure a different consistency level for all read requests made with the client. This example illustrates a client configured to use **eventual** consistency.
 
-:::code language="csharp" source="../media/6-script.cs" range="11-14" highlight="3":::
+```csharp
+CosmosClientOptions options = new ()
+{
+    ConsistencyLevel = ConsistencyLevel.Eventual
+};
+```
 
 The **ConsistencyLevel** enumeration has multiple potential values including:
 
@@ -63,10 +86,20 @@ By default, the client will use the first writable region for requests. This is 
 
 The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. It the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
 
-:::code language="csharp" source="../media/6-script.cs" range="16-19" highlight="3":::
+```csharp
+CosmosClientOptions options = new ()
+{
+    ApplicationRegion = "westus"
+};
+```
 
 > &#128161; If your account is not configured for multi-region write, the client will always use the single writable region for write operations and this setting will only impact read operations.
 
 If you would like to create a custom failover/priority list for the client to use for operations, you can use the **ApplicationPreferredRegions** property with a list of regions. This example uses a custom list configured to try **West US** first and then **East US**.
 
-:::code language="csharp" source="../media/6-script.cs" range="21-24" highlight="3":::
+```csharp
+CosmosClientOptions options = new CosmosClientOptions()
+{
+    ApplicationPreferredRegions = new List<string> { "westus", "eastus" }
+};
+```

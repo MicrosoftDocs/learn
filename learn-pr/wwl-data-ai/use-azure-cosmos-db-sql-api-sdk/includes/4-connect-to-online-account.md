@@ -4,7 +4,9 @@ Once the **Microsoft.Azure.Cosmos** library is imported, you can begin using the
 
 Before using the library, you should import the **Microsoft.Azure.Cosmos** namespace using a **using directive**. The using directive allows you to use types within the namespace without being forced to fully qualify each type.
 
-:::code language="csharp" source="../media/4-script.cs" range="1":::
+```csharp
+using Microsoft.Azure.Cosmos;
+```
 
 ## Use the CosmosClient class
 
@@ -21,13 +23,22 @@ The two most common ways to create an instance for the **CosmosClient** class is
 
 The **CosmosClient** class has a constructor that only takes a single string value. Pass in the connection string of the account to use this constructor. This example uses a connection string in the ``AccountEndpoint=<account-endpoint>;AccountKey=<account-key>`` format with the fictional endpoint and key.
 
-:::code language="csharp" source="../media/4-script.cs" range="8-10" highlight="3":::
+```csharp
+string connectionString = "AccountEndpoint=https­://dp420.documents.azure.com:443/;AccountKey=fDR2ci9QgkdkvERTQ==";
+
+CosmosClient client = new (connectionString);
+```
 
 ### Use with an endpoint and key
 
 Alternatively, you can use a constructor of the **CosmosClient** class that takes in two string parameters representing the account's **endpoint** and **key** in that order. This example uses the fictional endpoint and key.
 
-:::code language="csharp" source="../media/4-script.cs" range="3-6" highlight="4":::
+```csharp
+string endpoint = "https­://dp420.documents.azure.com:443/";
+string key = "fDR2ci9QgkdkvERTQ==";
+
+CosmosClient client = new (endpoint, key);
+```
 
 ## Read properties of the account
 
@@ -35,7 +46,9 @@ Alternatively, you can use a constructor of the **CosmosClient** class that take
 
 Once the client instance is instantiated, you can use various methods directly. For example, you can asynchronously invoke the **ReadAccountAsync** method to get an object of type **AccountProperties** with various properties.
 
-:::code language="csharp" source="../media/4-script.cs" range="12":::
+```csharp
+AccountProperties account = await client.ReadAccountAsync();
+```
 
 The **AccountProperties** class includes useful properties such as, but not limited to:
 
@@ -58,15 +71,21 @@ Any of these three methods will return an instance of type **Database** that you
 
 ### Retrieve an existing database
 
-:::code language="csharp" source="../media/4-script.cs" range="14":::
+```csharp
+Database database = client.GetDatabase("cosmicworks");
+```
 
 ### Create a new database
 
-:::code language="csharp" source="../media/4-script.cs" range="16":::
+```csharp
+Database database = await client.CreateDatabaseAsync("cosmicworks");
+```
 
 ### Create database if it doesn't already exist
 
-:::code language="csharp" source="../media/4-script.cs" range="18":::
+```csharp
+Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
+```
 
 ## Interact with a container
 
@@ -80,12 +99,26 @@ Any of these three methods will return an instance of type **Container** that yo
 
 ### Retrieve an existing container
 
-:::code language="csharp" source="../media/4-script.cs" range="20":::
+```csharp
+Container container = database.GetContainer("products");
+```
 
 ### Create a new container
 
-:::code language="csharp" source="../media/4-script.cs" range="22-26":::
+```csharp
+Container container = await database.CreateContainerAsync(
+    "cosmicworks", 
+    "/categoryId", 
+    400
+);
+```
 
 ### Create container if it doesn't already exist
 
-:::code language="csharp" source="../media/4-script.cs" range="28-32":::
+```csharp
+Container container = await database.CreateContainerIfNotExistsAsync(
+    "cosmicworks", 
+    "/categoryId", 
+    400
+);
+```
