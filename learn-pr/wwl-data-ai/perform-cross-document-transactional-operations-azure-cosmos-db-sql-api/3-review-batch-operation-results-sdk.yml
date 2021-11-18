@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.reviewing-batch-operation-results-sdk
-title: Reviewing batch operation results with the SDK
+title: Review batch operation results with the SDK
 metadata:
-  title: Reviewing batch operation results with the SDK
-  description: "Reviewing batch operation results with the SDK"
+  title: Review batch operation results with the SDK
+  description: "Review batch operation results with the SDK"
   ms.date: 11/18/2021
   author: wwlpublish
   ms.author: calopez
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-reviewing-batch-operation-results-sdk.md)]
+  [!include[](includes/3-review-batch-operation-results-sdk.md)]
