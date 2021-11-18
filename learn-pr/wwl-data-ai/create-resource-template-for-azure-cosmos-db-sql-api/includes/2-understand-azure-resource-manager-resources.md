@@ -10,7 +10,7 @@ Each of the resources available for Azure Cosmos DB is all listed under the **Mi
 
 Visually, you can think of these resources as a hierarchy.
 
-:::image type="content" source="../media/2-hierarchy.svg" alt-text="{alt-text}":::
+![Hierarchy of resources in an Azure Cosmos DB SQL API account](../media/2-hierarchy.png)
 
 This list is not exhaustive, other resources can be created in a template such as:
 

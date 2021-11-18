@@ -6,17 +6,84 @@ For the examples in this unit, let's assume that we want to deploy the following
 
 Let's assume that we want to deploy the following indexing policy to our **products** container in our account.
 
-:::code language="json" source="../media/6-indexing-policy-products.json" highlight="6,11":::
+```json
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/price/*"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/*"
+    }
+  ]
+}
+```
 
 The **indexingPolicy** object can be lifted with no changes and set to the **properties.resource.indexingPolicy** property of the **Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers**.
 
-:::code language="json" source="../media/6-template.json" range="34-70" highlight="21-34":::
+```json
+{
+  "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+  "apiVersion": "2021-05-15",
+  "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks/products')]",
+  "dependsOn": [
+    "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]",
+    "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
+  ],
+  "properties": {
+    "options": {
+      "throughput": 400
+    },
+    "resource": {
+      "id": "products",
+      "partitionKey": {
+        "paths": [
+          "/categoryId"
+        ]
+      },
+      "indexingPolicy": {
+        "indexingMode": "consistent",
+        "automatic": true,
+        "includedPaths": [
+          {
+            "path": "/price/*"
+          }
+        ],
+        "excludedPaths": [
+          {
+            "path": "/*"
+          }
+        ]
+      }
+    }
+  }
+}
+```
 
 ## Defining an indexing policy in Bicep templates
 
 Let's assume that we want to deploy the following indexing policy to our **customers** container in our account.
 
-:::code language="json" source="../media/6-indexing-policy-customers.json" highlight="6,11":::
+```json
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/address/*"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/*"
+    }
+  ]
+}
+```
 
 A few small changes are required to use this indexing policy in Bicep. These changes include:
 
@@ -24,7 +91,36 @@ A few small changes are required to use this indexing policy in Bicep. These cha
 - Changing property values from single quotes to double quotes
 - Removing commas typically required in JSON
 
-:::code language="bicep" source="../media/6-template.bicep" range="27-54" highlight="12-25":::
+```bicep
+resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2021-05-15' = {
+  parent: Database
+  name: 'customers'
+  properties: {
+    resource: {
+      id: 'customers'
+      partitionKey: {
+        paths: [
+          '/regionId'
+        ]
+      }
+      indexingPolicy: {
+        indexingMode: 'consistent'
+        automatic: true
+        includedPaths: [
+          {
+            path: '/address/*'
+          }
+        ]
+        excludedPaths: [
+          {
+            path: '/*'
+          }
+        ]
+      }
+    }
+  }
+}
+```
 
 ## Updating an indexing policy on an existing container
 
@@ -32,6 +128,16 @@ If a resource of type **Microsoft.DocumentDB/databaseAccounts/sqlDatabases/conta
 
 The command for deployment is the same as the initial deployment.
 
-:::code language="azurecli" source="../media/6-script.sh" range="1-3" highlight="3":::
+```azurecli
+az deployment group create \
+    --resource-group '<resource-group>' \
+    --template-file '.\template.json' \
+    --name 'jsontemplatedeploy'
+```
 
-:::code language="azurecli" source="../media/6-script.sh" range="5-7" highlight="3":::
+```azurecli
+az deployment group create \
+    --resource-group '<resource-group>' \
+    --template-file '.\template.bicep' \
+    --name 'biceptemplatedeploy'
+```

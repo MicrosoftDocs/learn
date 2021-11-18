@@ -19,9 +19,9 @@ For more information about the topics discussed in this module, see:
 - [Microsoft.DocumentDB &vert; databaseAccounts &vert; sqldatabases][/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases]
 - [Microsoft.DocumentDB &vert; databaseAccounts &vert; sqldatabases &vert; containers][/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases/containers]
 
-[/azure/azure-resource-manager/bicep/]: /azure/azure-resource-manager/bicep/
-[/azure/azure-resource-manager/templates/]: /azure/azure-resource-manager/templates/
-[/azure/cosmos-db/sql/quick-create-template]: /azure/cosmos-db/sql/quick-create-template
-[/azure/templates/microsoft.documentdb/databaseaccounts]: /azure/templates/microsoft.documentdb/databaseaccounts
-[/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases]: /azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases
-[/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases/containers]: /azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases/containers
+[/azure/azure-resource-manager/bicep/]: https://docs.microsoft.com/azure/azure-resource-manager/bicep/
+[/azure/azure-resource-manager/templates/]: https://docs.microsoft.com/azure/azure-resource-manager/templates/
+[/azure/cosmos-db/sql/quick-create-template]: https://docs.microsoft.com/azure/cosmos-db/sql/quick-create-template
+[/azure/templates/microsoft.documentdb/databaseaccounts]: https://docs.microsoft.com/azure/templates/microsoft.documentdb/databaseaccounts
+[/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases]: https://docs.microsoft.com/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases
+[/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases/containers]: https://docs.microsoft.com/azure/templates/microsoft.documentdb/databaseaccounts/sqldatabases/containers

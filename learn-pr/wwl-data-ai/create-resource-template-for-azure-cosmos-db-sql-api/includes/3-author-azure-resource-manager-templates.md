@@ -4,7 +4,14 @@ Authoring a template for an Azure Cosmos DB SQL API account is much like buildin
 
 An Azure Resource Manager template is, at its core, a JSON file with a specific syntax you must follow. The default minimal empty template is a JSON document with a **schema** property set to ``https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#``, a **contentVersion** property set to ``1.0.0.0``, and an empty **resources** array. This example illustrates a minimal empty template.
 
-:::code language="json" source="../media/3-template.json" range="1-4,71-72":::
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+  ]
+}
+```
 
 > &#128221; All resources we place in this template will be JSON objects within the **resources** array.
 
@@ -21,7 +28,22 @@ An object for this resource must contain, at a minimum, the following properties
 
 Here is an example of an account that has a unique name with a prefix of **csmsarm** and is deployed to **West US**.
 
-:::code language="json" source="../media/3-template.json" range="5-18":::
+```json
+{
+  "type": "Microsoft.DocumentDB/databaseAccounts",
+  "apiVersion": "2021-05-15",
+  "name": "[concat('csmsarm', uniqueString(resourceGroup().id))]",
+  "location": "[resourceGroup().location]",
+  "properties": {
+    "databaseAccountOfferType": "Standard",
+    "locations": [
+      {
+        "locationName": "westus"
+      }
+    ]
+  }
+}
+```
 
 > &#128221; You can define more than one location using the locations array.
 
@@ -41,7 +63,21 @@ A database can also optionally contain the following properties:
 
 Here is an example of a database that is named **cosmicworks**.
 
-:::code language="json" source="../media/3-template.json" range="20-32":::
+```json
+{
+  "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+  "apiVersion": "2021-05-15",
+  "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks')]",
+  "dependsOn": [
+    "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]"
+  ],
+  "properties": {
+    "resource": {
+      "id": "cosmicworks"
+    }
+  }
+}
+```
 
 ## Container resource
 
@@ -61,10 +97,89 @@ A database can also optionally contain the following properties:
 
 Here is an example of a container that is named **products**, has **400 RU/s** throughput, and a partition key path of **/categoryId**.
 
-:::code language="json" source="../media/3-template.json" range="34-52,68-70":::
+```json
+{
+  "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+  "apiVersion": "2021-05-15",
+  "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks/products')]",
+  "dependsOn": [
+    "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]",
+    "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
+  ],
+  "properties": {
+    "options": {
+      "throughput": 400
+    },
+    "resource": {
+      "id": "products",
+      "partitionKey": {
+        "paths": [
+          "/categoryId"
+        ]
+      }
+    }
+  }
+}
+```
 
 ## Final template
 
 Now that all resources are in place, the template file should now contain the following code.
 
-:::code language="json" source="../media/3-template.json" range="1-52,68-72":::
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts",
+      "apiVersion": "2021-05-15",
+      "name": "[concat('csmsarm', uniqueString(resourceGroup().id))]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "databaseAccountOfferType": "Standard",
+        "locations": [
+          {
+            "locationName": "westus"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+      "apiVersion": "2021-05-15",
+      "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]"
+      ],
+      "properties": {
+        "resource": {
+          "id": "cosmicworks"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
+      "apiVersion": "2021-05-15",
+      "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks/products')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]",
+        "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
+      ],
+      "properties": {
+        "options": {
+          "throughput": 400
+        },
+        "resource": {
+          "id": "products",
+          "partitionKey": {
+            "paths": [
+              "/categoryId"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
+```
