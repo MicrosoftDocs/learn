@@ -6,7 +6,7 @@ Azure Stream Analytics is key component of the larger IoT solution. Several simp
 
 With Azure Stream Analytics, you can quickly stand up real-time dashboards and alerts. A simple solution ingests events from Event Hubs or IoT Hub, and feeds the Power BI dashboard with a streaming data set. For more information, see the detailed tutorial Analyze phone call data with Stream Analytics and visualize results in Power BI dashboard.
 
-:::image type="content" source="../media/m04-l05-asa-pattern-pbi-dashboard-5efcfd46.png" alt-text="Azure Stream Analytics Pattern - Power BI Dashboard":::
+:::image type="content" source="../media/m04-l05-asa-pattern-pbi-dashboard-5efcfd46.png" alt-text="Diagram that illustrates a Stream Analytics job that could be used to power a real-time dashboarding experience.":::
 
 
 This solution can be built in just a few minutes from Azure portal. There is no extensive coding involved, and SQL language is used to express the business logic.
@@ -17,7 +17,7 @@ This solution pattern offers the lowest latency from the event source to the Pow
 
 The Power BI dashboard offers low latency, but it cannot be used to produce full fledged Power BI reports. A common reporting pattern is to output your data to a SQL database first. Then use Power BI's SQL connector to query SQL for the latest data.
 
-:::image type="content" source="../media/m04-l05-asa-pattern-sql-dashboard-dc50a6a2.png" alt-text="Azure Stream Analytics Pattern - SQL Dashboard":::
+:::image type="content" source="../media/m04-l05-asa-pattern-sql-dashboard-dc50a6a2.png" alt-text="Diagram that illustrates a Stream Analytics job with output to a SQL database that connects to Power BI for data visualization.":::
 
 
 Using SQL database gives you more flexibility but at the expense of a slightly higher latency. This solution is optimal for jobs with latency requirements greater than one second. With this method, you can maximize Power BI capabilities to further slice and dice the data for reports, and much more visualization options. You also gain the flexibility of using other dashboard solutions, such as Tableau.
@@ -30,7 +30,7 @@ The second most popular use of Stream Analytics is to generate real-time alerts.
 
 Downstream event consumer logic must be implemented to generate alerts in your existing business workflow. Because you can implement custom logic in Azure Functions, Azure Functions is the fastest way you can perform this integration. A tutorial for using Azure Function as the output for a Stream Analytics job can be found in Run Azure Functions from Azure Stream Analytics jobs. Azure Functions also supports various types of notifications including text and email. Logic App may also be used for such integration, with Event Hubs between Stream Analytics and Logic App.
 
-:::image type="content" source="../media/m04-l05-asa-pattern-event-messaging-app-93858b75.png" alt-text="Azure Stream Analytics Pattern - Event Messaging":::
+:::image type="content" source="../media/m04-l05-asa-pattern-event-messaging-app-93858b75.png" alt-text="Diagram that illustrates a Stream Analytics job that could be used to generate real-time alerts.":::
 
 
 Event Hubs, on the other hand, offers the most flexible integration point. Many other services, like Azure Data Explorer and Time Series Insights can consume events from Event Hubs. Services can be connected directly to the Event Hubs sink from Azure Stream Analytics to complete the solution. Event Hubs is also the highest throughput messaging broker available on Azure for such integration scenarios.
@@ -39,7 +39,7 @@ Event Hubs, on the other hand, offers the most flexible integration point. Many 
 
 Most web services and web applications today use a request/response pattern to serve the presentation layer. The request/response pattern is simple to build and can be easily scaled with low response time using a stateless frontend and scalable stores, like Cosmos DB. High data volume often creates performance bottlenecks in a CRUD-based system. The event sourcing solution pattern is used to address the performance bottlenecks. Temporal patterns and insights are also difficult and inefficient to extract from a traditional data store. Modern high-volume data driven applications often adopt a dataflow-based architecture. Azure Stream Analytics as the compute engine for data in motion is a linchpin in that architecture.
 
-:::image type="content" source="../media/m04-l05-asa-pattern-event-sourcing-app-2cc1a9a9.png" alt-text="Azure Stream Analytics Pattern - Event Sourcing":::
+:::image type="content" source="../media/m04-l05-asa-pattern-event-sourcing-app-2cc1a9a9.png" alt-text="Diagram that illustrates a Stream Analytics job that could be used to incorporate real-time insights into your application through data stores.":::
 
 
 In this solution pattern, events are processed and aggregated into data stores by Azure Stream Analytics. The application layer interacts with data stores using the traditional request/response pattern. Because of Stream Analytics' ability to process a large number of events in real-time, the application is highly scalable without the need to bulk up the data store layer. The data store layer is essentially a materialized view in the system. Azure Stream Analytics output to Azure Cosmos DB describes how Cosmos DB is used as a Stream Analytics output.
@@ -48,7 +48,7 @@ In this solution pattern, events are processed and aggregated into data stores b
 
 An Azure Stream Analytics job can be run 24/7 to process incoming events continuously in real time. Its uptime guarantee is crucial to the health of the overall application. While Stream Analytics is the only streaming analytics service in the industry that offers a 99.9% availability guarantee, you may still incur some level of down time. Over the years, Stream Analytics has introduced metrics, logs, and job states to reflect the health of the jobs. All of them are surfaced through Azure Monitor service and can be further exported to OMS.
 
-:::image type="content" source="../media/m04-l05-asa-monitoring-diagram-4500b9c2.png" alt-text="Azure Stream Analytics Pattern - Monitoring":::
+:::image type="content" source="../media/m04-l05-asa-monitoring-diagram-4500b9c2.png" alt-text="Diagram that illustrates how to monitor Azure Stream Analytics.":::
 
 
 There are two key things to monitor:

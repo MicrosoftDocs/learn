@@ -14,7 +14,7 @@ Each job has an output for the transformed data, and you can control what happen
 
 The following image shows how data is sent to Stream Analytics, analyzed, and sent for other actions like storage or presentation:
 
-:::image type="content" source="../media/m04-l05-data-flow-through-azure-stream-analytics-21ff8d83.png" alt-text="Data Flow Through Azure Stream Analytics":::
+:::image type="content" source="../media/m04-l05-data-flow-through-azure-stream-analytics-21ff8d83.png" alt-text="Diagram that shows how data is sent to Azure Stream Analytics, analyzed, and sent for other actions like storage or presentation.":::
 
 
 ## Key capabilities and benefits

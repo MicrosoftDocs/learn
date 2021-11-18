@@ -329,7 +329,8 @@ The following table lists property names and their descriptions to configure you
 
 For a walkthrough of configuring a Power BI output and dashboard, see the Azure Stream Analytics and Power BI tutorial.
 
-**Note** Do not explicitly create the dataset and table in the Power BI dashboard. The dataset and table are automatically populated when the job is started and the job starts pumping output into Power BI. If the job query does not generate any results, the dataset and table are not created. If Power BI already had a dataset and table with the same name as the one provided in this Stream Analytics job, the existing data is overwritten.
+> [!NOTE]
+> Do not explicitly create the dataset and table in the Power BI dashboard. The dataset and table are automatically populated when the job is started and the job starts pumping output into Power BI. If the job query does not generate any results, the dataset and table are not created. If Power BI already had a dataset and table with the same name as the one provided in this Stream Analytics job, the existing data is overwritten.
 
 ### Create a schema
 
@@ -783,7 +784,8 @@ Azure Cosmos DB is a globally distributed database service that offers limitless
 
 Azure Cosmos DB output from Stream Analytics is currently not available in the Azure China 21Vianet and Azure Germany (T-Systems International) regions.
 
-**Note** At this time, Azure Stream Analytics only supports connection to Azure Cosmos DB by using the SQL API. Other Azure Cosmos DB APIs are not yet supported. If you point Azure Stream Analytics to the Azure Cosmos DB accounts created with other APIs, the data might not be properly stored.
+> [!NOTE]
+> At this time, Azure Stream Analytics only supports connection to Azure Cosmos DB by using the SQL API. Other Azure Cosmos DB APIs are not yet supported. If you point Azure Stream Analytics to the Azure Cosmos DB accounts created with other APIs, the data might not be properly stored.
 
 Azure Stream Analytics can target Azure Cosmos DB for JSON output, enabling data archiving and low-latency queries on unstructured JSON data.
 
@@ -1124,7 +1126,8 @@ Azure Stream Analytics invokes Azure Functions via HTTP triggers. The Azure Func
 
 When Azure Stream Analytics receives a 413 ("http Request Entity Too Large") exception from an Azure function, it reduces the size of the batches that it sends to Azure Functions. In your Azure function code, use this exception to make sure that Azure Stream Analytics does not send oversized batches. Also, make sure that the maximum batch count and size values used in the function are consistent with the values entered in the Stream Analytics portal.
 
-**Note** During test connection, Stream Analytics sends an empty batch to Azure Functions to test if the connection between the two works. Make sure that your Functions app handles empty batch requests to make sure test connection passes.
+> [!NOTE]
+> During test connection, Stream Analytics sends an empty batch to Azure Functions to test if the connection between the two works. Make sure that your Functions app handles empty batch requests to make sure test connection passes.
 
 Also, in a situation where there is no event landing in a time window, no output is generated. As a result, the computeResult function isn't called. This behavior is consistent with the built-in windowed aggregate functions.
 

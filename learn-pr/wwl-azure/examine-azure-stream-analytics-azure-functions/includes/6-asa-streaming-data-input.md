@@ -17,17 +17,17 @@ You can use the Azure portal, Visual Studio, and Visual Studio Code to add and v
 
 ## Stream data from Event Hubs
 
-Azure Event Hubs provides highly scalable publish-subscribe event ingestion. An event hub can collect millions of events per second so that you can process and analyze the massive amounts of data produced by your connected devices and applications. Together, Event Hubs and Stream Analytics provide an end-to-end solution for real-time analytics. Event Hubs lets you feed events into Azure in real-time, and Stream Analytics jobs can process those events in real-time. For example, you can send web clicks, sensor readings, or online log events to Event Hubs. You can then create Stream Analytics jobs to use Event Hubs as the input data streams for real-time filtering, aggregating, and correlation.
+Azure Event Hubs provides highly scalable publish-subscribe event ingestion. An Event Hub can collect millions of events per second so that you can process and analyze the massive amounts of data produced by your connected devices and applications. Together, Event Hubs and Stream Analytics provide an end-to-end solution for real-time analytics. Event Hubs lets you feed events into Azure in real-time, and Stream Analytics jobs can process those events in real-time. For example, you can send web clicks, sensor readings, or online log events to Event Hubs. You can then create Stream Analytics jobs to use Event Hubs as the input data streams for real-time filtering, aggregating, and correlation.
 
-`EventEnqueuedUtcTime` is the timestamp of an event's arrival in an event hub and is the default timestamp of events coming from Event Hubs to Stream Analytics. To process the data as a stream using a timestamp in the event payload, you must use the TIMESTAMP BY keyword.
+`EventEnqueuedUtcTime` is the timestamp of an event's arrival in an Event Hub and is the default timestamp of events coming from Event Hubs to Stream Analytics. To process the data as a stream using a timestamp in the event payload, you must use the TIMESTAMP BY keyword.
 
 ### Event Hubs consumer groups
 
-You should configure each Stream Analytics event hub input to have its own consumer group. When a job contains a self-join or has multiple inputs, some inputs might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Event Hubs limit of five readers per consumer group per partition, it is a best practice to designate a consumer group for each Stream Analytics job. There is also a limit of 20 consumer groups for a Standard tier event hub.
+You should configure each Stream Analytics Event Hub input to have its own consumer group. When a job contains a self-join or has multiple inputs, some inputs might be read by more than one reader downstream. This situation impacts the number of readers in a single consumer group. To avoid exceeding the Event Hubs limit of five readers per consumer group per partition, it is a best practice to designate a consumer group for each Stream Analytics job. There is also a limit of 20 consumer groups for a Standard tier Event Hub.
 
 ### Create an input from Event Hubs
 
-The following table explains each property in the **New input** page in the Azure portal to stream data input from an event hub:
+The following table explains each property in the **New input** page in the Azure portal to stream data input from an Event Hub:
 
 :::row:::
   :::column:::
@@ -50,7 +50,7 @@ The following table explains each property in the **New input** page in the Azur
     Subscription
   :::column-end:::
   :::column:::
-    Choose the subscription in which the Event hub resource exists.
+    Choose the subscription in which the Event Hub resource exists.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -58,7 +58,7 @@ The following table explains each property in the **New input** page in the Azur
     Event Hub namespace
   :::column-end:::
   :::column:::
-    The Event Hub namespace is a container for a set of messaging entities. When you create a new event hub, you also create the namespace.
+    The Event Hub namespace is a container for a set of messaging entities. When you create a new Event Hub, you also create the namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,7 +66,7 @@ The following table explains each property in the **New input** page in the Azur
     Event Hub name
   :::column-end:::
   :::column:::
-    The name of the event hub to use as input.
+    The name of the Event Hub to use as input.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,7 +82,7 @@ The following table explains each property in the **New input** page in the Azur
     Event Hub consumer group (recommended)
   :::column-end:::
   :::column:::
-    It is highly recommended to use a distinct consumer group for each Stream Analytics job. This string identifies the consumer group to use to ingest data from the event hub. If no consumer group is specified, the Stream Analytics job uses the $Default consumer group.
+    It is highly recommended to use a distinct consumer group for each Stream Analytics job. This string identifies the consumer group to use to ingest data from the Event Hub. If no consumer group is specified, the Stream Analytics job uses the $Default consumer group.
   :::column-end:::
 :::row-end:::
 :::row:::
