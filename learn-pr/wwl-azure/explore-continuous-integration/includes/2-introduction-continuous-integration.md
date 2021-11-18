@@ -7,7 +7,9 @@ Committing code triggers an automated build system to grab the latest code from 
 :::image type="content" source="../media/lifecycle-ci-b2e31afb.png":::
 
 
-The idea is to minimize the cost of integration by making it an early consideration. Developers can discover conflicts at the boundaries between new and existing code early, while conflicts are still relatively easy to reconcile.
+The idea is to minimize the cost of integration by making it an early consideration.
+
+Developers can discover conflicts at the boundaries between new and existing code early, while conflicts are still relatively easy to reconcile.
 
 Once the conflict is resolved, work can continue with confidence that the new code honors the requirements of the existing codebase.
 
@@ -21,7 +23,9 @@ In practice, continuous integration relies on robust test suites and an automate
 
 When a developer merges code into the main repository, automated processes kick off a build of the new code.
 
-Afterward, test suites are run against the new build to check whether any integration problems were introduced. If either the build or the test phase fails, the team is alerted to work to fix the build.
+Afterward, test suites are run against the new build to check whether any integration problems were introduced.
+
+If either the build or the test phase fails, the team is alerted to work to fix the build.
 
 The end goal of continuous integration is to make integration a simple, repeatable process part of the everyday development workflow to reduce integration costs and respond to early defects.
 
