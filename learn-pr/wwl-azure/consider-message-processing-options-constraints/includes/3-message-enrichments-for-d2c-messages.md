@@ -1,6 +1,6 @@
 Message enrichment is the ability of the IoT Hub to stamp messages with additional information before the messages are sent to the designated endpoint. One reason to use message enrichments is to include data that can be used to simplify downstream processing. For example, enriching device telemetry messages with a device twin tag can reduce load on customers to make device twin API calls for this information.
 
-:::image type="content" source="../media/m04-l01-message-enrichments-flow-804be88e.png" alt-text="Message Enrichments Flow":::
+:::image type="content" source="../media/m04-l01-message-enrichments-flow-804be88e.png" alt-text="Diagram that shows an optional message processing path that include a message enrichment being added to a device message.":::
 
 
 A message enrichment has three key elements:
