@@ -15,7 +15,7 @@ When you create a database or container in Azure Cosmos DB, you can provision re
 
 Some RU/s are normalized across various access methods, making many common operations predictable. Using this knowledge, you can perform some basic estimations for simple workloads. For example, you can estimate the RU/s required for common database operations such as one RU for a read and six RU/s for a write operation of a 1-KB document in optimal conditions.
 
-![Request units diagram with estimates](../media/3-request-units.svg)
+![Request units diagram with estimates](../media/3-request-units.png)
 
 Using this strategy, you should identify your solution's query and access patterns to make an educated guess as to how many request units will be needed in Azure Cosmos DB. To accomplish this, you will want information such as:
 
