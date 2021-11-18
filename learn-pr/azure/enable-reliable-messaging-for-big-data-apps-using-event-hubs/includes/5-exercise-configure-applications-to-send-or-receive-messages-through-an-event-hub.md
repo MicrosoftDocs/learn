@@ -87,7 +87,7 @@ In this exercise you will use the built-in Cloud Shell editor to modify the Simp
     
 1. If not already open, open **SimpleSend.java** by selecting it from the file list.
 
-1. In the editor, locate and replace the following strings under ConnectionStringBuilder (do not include the quotes):
+1. In the editor, locate and replace the following strings under ConnectionStringBuilder:
 
     - `"Your Event Hubs namespace name"` with the name of your Event Hubs namespace.
     - `"Your Event Hub"` with the name of your event hub.
