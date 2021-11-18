@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.create-user-defined-functions
+title: Create User-defined functions
+metadata:
+  title: Create User-defined functions
+  description: "Create User-defined functions"
+  ms.date: 11/18/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-user-defined-functions.md)]
