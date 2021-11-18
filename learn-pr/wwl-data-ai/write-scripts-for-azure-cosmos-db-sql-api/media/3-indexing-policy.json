@@ -1,0 +1,17 @@
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/*"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/headquarters/*"
+    },
+    {
+      "path": "/\"_etag\"/?"
+    }
+  ]
+}
