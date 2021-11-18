@@ -67,7 +67,8 @@ Here are the expected values:
 :::row-end:::
 
 
-**Note on prefix**: The URI prefix is computed by segment and not by character. For example `/a/b` is a prefix for `/a/b/c` but not for `/a/bc`.
+> [!NOTE]
+> The URI prefix is computed by segment and not by character. For example `/a/b` is a prefix for `/a/b/c` but not for `/a/bc`.
 
 The following Node.js snippet shows a function (**generateSasToken**) that computes the token from the inputs `resourceUri, signingKey, policyName, expiresInMins`. The next sections detail how to initialize the different inputs for the different token use cases.
 
@@ -168,7 +169,7 @@ As an example, a service generated using a pre-created shared access policy name
 
 ```javascript
 var endpoint ="mydps.azure-devices-provisioning.net";
-var policyName = 'enrollmentread'; 
+var policyName = 'enrollmentread';
 var policyKey = '...';
 
 var token = generateSasToken(endpoint, policyKey, policyName, 60);

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 11/18/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Enter: az iot dps create -name MyDps --resource-group MyResourceGroup"
       isCorrect: true
       explanation: "Correct. This command will create a Device Provisioning Service resource named MyDps in the resource group named MyResourceGroup."
-  - content: "Which of the following answers is true about the IoT Hub Device Provisioning Service SDKs?"
+  - content: "Which of the following answer choices accurately describes the support provided by the IoT Hub Device Provisioning Service SDKs?"
     choices:
     - content: "The Device Provisioning Service SDKs provide support for the following programming languages: C, Java, Python, Go, Swift"
       isCorrect: false

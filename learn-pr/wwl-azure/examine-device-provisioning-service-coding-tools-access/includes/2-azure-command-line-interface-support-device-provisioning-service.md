@@ -343,7 +343,7 @@ This command takes the following arguments:
     \--ids
   :::column-end:::
   :::column:::
-    One or more resource IDs (space-delimited). If provided, no other 'Resource Id' arguments should be specified.
+    One or more resource IDs (space-delimited). If provided, no other 'Resource ID' arguments should be specified.
   :::column-end:::
 :::row-end:::
 :::row:::
