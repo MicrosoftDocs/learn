@@ -88,6 +88,8 @@ From an Event Grid perspective, an event handler is the place where the event is
 
 ### Additional concept considerations
 
+Some additional considerations when planning to implement Event Grid include security, event delivery, and batching.
+
 #### Security
 
 Event Grid provides security for subscribing to topics, and publishing topics. When subscribing, you must have adequate permissions on the resource or event grid topic. When publishing, you must have a SAS token or key authentication for the topic.
