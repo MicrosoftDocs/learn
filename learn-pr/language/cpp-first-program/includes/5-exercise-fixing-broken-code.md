@@ -94,6 +94,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
    ```bash
    g++ hello.cpp
     This is the output you get (you already see less errors in the error output thanks to your fix):
+
     ```output
     PS /home/<user>> g++ hello.cpp
     hello.cpp:1:20: warning: extra tokens at end of #include directive
@@ -112,22 +113,28 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ...
     ```
+
     > [!Note]
     > You might have received a huge plethora of errors. But we will focus only on the one which is at the top and ignore the rest for now. One error at a time.
    Let's focus on the error that comes first in the recent execution.
+
     ```output
     hello.cpp:1:20: warning: extra tokens at end of #include directive
     #include <iostream>;
                        ^
     ```
+
     Here we can see a 'semicolon', ';' is added at the end of the filename/library *iostream*. We don't add semicolons after `#include` directives.  
   
 5. Remove the semicolon from `#include <iostream>;`  and see what happens.
    To edit the code again. Run `code hello.cpp`
+
     ```bash
     code hello.cpp
     ```
+
     Now edit the code and do the correction and save it.
+
     ```cpp
     #include <iostream>              // We have removed the semicolon here
     using namespace std;
@@ -136,6 +143,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
       cout >> 'Hello World'
     }
     ```
+
 6. Run `g++ hello.cpp` command to build your program.
     You should see the following output from the compilation:
     ```output
@@ -154,13 +162,17 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ```
    Let's look at the first error in the above output and rectify it.
+
     ```output
     hello.cpp:5:13: warning: character constant too long for its type
         cout >> 'Hello World'
                 ^~~~~~~~~~~~~
     ```
+
     You can see that we have used single quotation instead of double quotation symbol. We use single quotation only when we have a single character. For a string literal(character array), we use double quotation.
+
 7. Replace the single quotation with double quotation. Ensure your program looks like the below code:
+
     ```cpp
     #include <iostream>
     using namespace std;
@@ -169,8 +181,10 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
       cout >> "Hello World"     //Double quotes instead of single quotes
     }
     ```
+
 8. Run `g++ hello.cpp` command to build your program.
     Here's what the output looks like, see how the error output is less and less. We do have some issues left, so lets work on those next issues.
+
     ```output
     PS /home/<user>> g++ hello.cpp
     hello.cpp: In function ‘int main()’:
@@ -190,7 +204,9 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ...
     ```
+
    In the above output we can see that there's an operator issue, so we have to replace it with the correct operator. Replace `>>` with the `<<` operator.
+
     ```cpp
     #include <iostream>
     using namespace std;
@@ -199,14 +215,19 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
       cout << "Hello World"     //replacing >> operators with the << operator
     }
     ```
+
     > [!NOTE]
     > We use `<<` for `cout` object  
     > We use `>>` for `cin` object, which we will learn later  
+
 9. Run `g++ hello.cpp` command to build your program.
 
    ```bash
    g++ hello.cpp
+   ```
+
     Here's the output, you're almost there, just a few errors left:
+
     ```output
     PS /home/<user>> g++ hello.cpp
     hello.cpp: In function ‘int main()’:
@@ -220,7 +241,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
 
    A semicolon is expected at the end of the statement to complete it.
 
-10. Edit the code to make it look like this:
+1. Edit the code to make it look like this:
 
    ```cpp
     #include <iostream>
@@ -237,9 +258,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     g++ hello.cpp
     ```
 
-Congratulations! You've solved all the errors and you can continue further to execute your file.
-
-You should now see *a.out*, as one of the files if you type `ls` in your terminal. That's the file the g++ compiler created for you.
+    You should now see *a.out*, as one of the files if you type `ls` in your terminal. That's the file the g++ compiler created for you.
 
 12. Run the `a.out` file in the terminal.
 

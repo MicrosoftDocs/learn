@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cpp-write-your-first-program.2-exercise-hello-world
+uid: learn.cpp-write-your-first-program.exercise-hello-world
 title: Exercise - Create your first C++ program
 metadata:
   title: Exercise - Create your first C++ program
@@ -11,6 +11,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
 quiz:

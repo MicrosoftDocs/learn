@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cpp-write-your-first-program.5-exercise-fixing-broken-code
+uid: learn.cpp-write-your-first-program.exercise-fixing-broken-code
 title: Exercise - Fix broken code
 metadata:
   title: Exercise - Fix broken code
@@ -11,6 +11,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/5-exercise-fixing-broken-code.md)]
 quiz:

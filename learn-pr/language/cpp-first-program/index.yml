@@ -32,11 +32,11 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.cpp-write-your-first-program.1-introduction
-  - learn.cpp-write-your-first-program.2-exercise-hello-world
-  - learn.cpp-write-your-first-program.3-how-it-works
-  - learn.cpp-write-your-first-program.4-common-mistakes-and-errors
-  - learn.cpp-write-your-first-program.5-exercise-fixing-broken-code
-  - learn.cpp-write-your-first-program.6-summary
+  - learn.cpp-write-your-first-program.introduction
+  - learn.cpp-write-your-first-program.exercise-hello-world
+  - learn.cpp-write-your-first-program.how-it-works
+  - learn.cpp-write-your-first-program.common-mistakes-and-errors
+  - learn.cpp-write-your-first-program.exercise-fixing-broken-code
+  - learn.cpp-write-your-first-program.summary
 badge:
   uid: learn.cpp-write-your-first-program.badge
