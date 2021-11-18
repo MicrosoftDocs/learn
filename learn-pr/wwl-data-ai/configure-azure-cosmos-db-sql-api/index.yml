@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
   title: Configure Azure Cosmos DB SQL API database and containers
   description: "Select between the various throughput offerings in Azure Cosmos DB SQL API."
-  ms.date: 11/17/2021
+  ms.date: 11/18/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

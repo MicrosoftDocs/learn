@@ -9,14 +9,14 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Create Azure Cosmos containers and databases with autoscale throughput][docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale]
-- [Introduction to provisioned throughput in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/set-throughput]
-- [Azure Cosmos DB serverless][docs.microsoft.com/azure/cosmos-db/serverless]
-- [How to choose between standard (manual) and autoscale provisioned throughput][docs.microsoft.com/azure/cosmos-db/how-to-choose-offer]
-- [How to choose between provisioned throughput and serverless][docs.microsoft.com/azure/cosmos-db/throughput-serverless]
+- [Create Azure Cosmos containers and databases with autoscale throughput][/azure/cosmos-db/provision-throughput-autoscale]
+- [Introduction to provisioned throughput in Azure Cosmos DB][/azure/cosmos-db/set-throughput]
+- [Azure Cosmos DB serverless][/azure/cosmos-db/serverless]
+- [How to choose between standard (manual) and autoscale provisioned throughput][/azure/cosmos-db/how-to-choose-offer]
+- [How to choose between provisioned throughput and serverless][/azure/cosmos-db/throughput-serverless]
 
-[docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale]: /azure/cosmos-db/provision-throughput-autoscale
-[docs.microsoft.com/azure/cosmos-db/set-throughput]: /azure/cosmos-db/set-throughput
-[docs.microsoft.com/azure/cosmos-db/serverless]: /azure/cosmos-db/serverless
-[docs.microsoft.com/azure/cosmos-db/how-to-choose-offer]: /azure/cosmos-db/how-to-choose-offer
-[docs.microsoft.com/azure/cosmos-db/throughput-serverless]: /azure/cosmos-db/throughput-serverless
+[/azure/cosmos-db/provision-throughput-autoscale]: https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale
+[/azure/cosmos-db/set-throughput]: https://docs.microsoft.com/azure/cosmos-db/set-throughput
+[/azure/cosmos-db/serverless]: https://docs.microsoft.com/azure/cosmos-db/serverless
+[/azure/cosmos-db/how-to-choose-offer]: https://docs.microsoft.com/azure/cosmos-db/how-to-choose-offer
+[/azure/cosmos-db/throughput-serverless]: https://docs.microsoft.com/azure/cosmos-db/throughput-serverless 

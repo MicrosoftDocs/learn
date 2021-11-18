@@ -4,7 +4,7 @@ How do you choose between serverless and provisioned throughput?
 
 Provisioned throughput is ideal for workloads with predictable traffic patterns that require sustained and predictable performance with minimal variance.
 
-On the other hand, serverless can handle workloads that have wildly varying traffic and low (\<10%)average-to-peak traffic ratios.
+On the other hand, serverless can handle workloads that have wildly varying traffic and low average-to-peak traffic ratios.
 
 ## Compare request units
 
