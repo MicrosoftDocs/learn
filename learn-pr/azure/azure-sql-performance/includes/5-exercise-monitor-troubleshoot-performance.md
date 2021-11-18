@@ -44,7 +44,7 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     > [!TIP]
     > Save the output, and note your password, unique ID, and server. You will need these items throughout the module.
 
-1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script also adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in future unitsof this module. The script can take several minutes to complete, and will pause several times. Wait for a blank command prompt. 
+1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in the  remaining exercises in this module. The script can take several minutes to complete, and will pause several times. Wait for a command prompt. 
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -85,9 +85,9 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
         -Type "Standard_LRS"
     ```
 
-1. On your local device, open SQL Server Management Studio (SSMS) and create a new connection to your logical server.  
+1. On your local device, open SQL Server Management Studio (SSMS) to create a new connection to your logical server.  
 
-1. On the Connect to Server login dialog box provide the following information:
+1. On the Connect to Server login dialog box, provide the following information:
 
     | Field | Value |
     |---|---|
@@ -159,9 +159,9 @@ In this task, you will run a workload in a T-SQL query to observe its performanc
     GO
     ```
 
-    This database is quite small. The query to retrieve a list of customers and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns in the result set, but these are needed for demonstration purposes of this exercise.
+    This database is small. The query to retrieve a list of customers and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns in the result set, but these are needed for demonstration purposes of this exercise.
 
-1. From a PowerShell command prompt, change to the directory for this exercise:
+1. From a PowerShell command prompt, enter the following command to move to the correct directory for this exercise. Replace *<base directory>* with your user ID and path for this module :
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
@@ -178,7 +178,7 @@ In this task, you will run a workload in a T-SQL query to observe its performanc
     > [!TIP]
     > If you're not seeing CPU usage behavior with this workload for your environment, you can adjust the `-n parameter` for number of users and the `-r parameter` for iterations.
 
-    Your screen at the command prompt should look similar to the following output:
+    The output at the command prompt should look similar to the following output:
 
     ```output
     [datetime] [ostress PID] Max threads setting: 10000
@@ -211,7 +211,7 @@ In this task, you will run a workload in a T-SQL query to observe its performanc
 
 ## Observe performance of the workload
 
-Let's now use the DMV queries you loaded earlier to observe performance.
+Let's use the DMV queries you loaded earlier to observe performance.
 
 1. Run the query in SSMS you previously loaded to monitor `dm_exec_requests` (dmexecrequests.sql) to observe active requests. Run this query five or six times and observe some of the results:
 
