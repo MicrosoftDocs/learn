@@ -8,9 +8,11 @@ While devices help us to get our work done, and go about our day, they also pres
 - **USB drives** – cybercriminals can put malicious software or files on a USB drive. Once inserted into a device such as a laptop, it could, for example, run ransomware, which means the availability of the data has been compromised because it has been locked in return for ransom.
 - **Always-on home assistant devices** - these devices are always listening or watching. A cybercriminal can put malicious software on the app stores for these devices. If a user installs it on the device, the cybercriminal can run could perform attacks such as spyware on the device in order to secretly record information, compromising data confidentiality. Or they could move laterally to other devices at home and also compromise their data as well.
 
+### Video animation
+
 Let’s look at the following video to see how devices around us can become threat vectors:
 
-[Threat vectors animation video placeholder]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPb1R]
 
 ## Device vulnerabilities
 

@@ -13,15 +13,15 @@ From our homes to our offices and everywhere in between, we come into contact wi
 
 Let’s look at Kayla. At home, she is surrounded by devices. She has devices like her phone, always-on home assistant, tablet, her smart watch, wireless router, and more.
 
-:::image type="content" source="media/home.png" border="false" alt-text="A diagram showing someone at home surrounded by devices.":::
+:::image type="content" source="../media/living-room-labelled.png" border="false" alt-text="A diagram showing someone at home surrounded by devices.":::
 
 Kayla uses her car to get to work. Her car has built-in devices that she can use while driving, like the navigation system and the wireless access point that allows her car to serve as a mobile hotspot.
 
-:::image type="content" source="media/car.png" border="false" alt-text="A diagram that shows someone in the car surrounded by devices.":::
+:::image type="content" source="../media/car-zero-threats-labelled.png" border="false" alt-text="A diagram that shows someone in the car surrounded by devices.":::
 
 At work, Kayla's mobile phone and computer connect wirelessly to her organization's network to access corporate resources, including a network printer. She also uses a USB drive to store certain files and presentations.
 
-:::image type="content" source="media/work.png" border="false" alt-text="A diagram showing someone at work, surrounded by devices.":::
+:::image type="content" source="../media/office-labelled.png" border="false" alt-text="A diagram showing someone at work, surrounded by devices.":::
 
 In the context of cybersecurity, anything you can touch and/or interact with and can connect to something else can be considered a device. You might be using a device consciously, like when you use your phone, or when you insert a USB drive into your laptop. Or you might be might not realize you are using a device either because a connection happens automatically, like when your phone connects to a Wi-Fi hotspot or because you set it up once and then pretty much forget about it, like the router in your home network.
 
