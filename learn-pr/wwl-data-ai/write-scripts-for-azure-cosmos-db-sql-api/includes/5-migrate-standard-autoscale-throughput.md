@@ -2,16 +2,45 @@ Containers that manually provisioned throughput can be migrated to autoscale thr
 
 Use the **az cosmosdb sql container throughput migrate** command with the **--throughput-type** argument set to **autoscale** to migrate a container to autoscale throughput.
 
-:::code language="azurecli" source="../media/5-script.sh" range="1-6" highlight="1,6":::
+```azurecli
+az cosmosdb sql container throughput migrate \
+    --account-name '<account-name>' \
+    --resource-group '<resource-group>' \
+    --database-name '<database-name>' \
+    --name '<container-name>' \
+    --throughput-type 'autoscale'
+```
 
 Once migrated, you can manage the maximum allowed throughput by using the **az cosmosdb sql container throughput update** command and the **--max-throughput** argument. In this example, the maximum throughput is changed to **5,000 RU/s**.
 
-:::code language="azurecli" source="../media/5-script.sh" range="8-13" highlight="1,6":::
+```azurecli
+az cosmosdb sql container throughput update \
+    --account-name '<account-name>' \
+    --resource-group '<resource-group>' \
+    --database-name '<database-name>' \
+    --name '<container-name>' \
+    --max-throughput '5000'
+```
 
 You can also invoke the **az cosmosdb sql container throughput show** command to view the minimum throughput of an autoscale container
 
-:::code language="azurecli" source="../media/5-script.sh" range="22-28" highlight="1,6-7":::
+```azurecli
+az cosmosdb sql container throughput show \
+    --account-name '<account-name>' \
+    --resource-group '<resource-group>' \
+    --database-name '<database-name>' \
+    --name '<container-name>' \
+    --query 'resource.minimumThroughput' \
+    --output 'tsv'
+```
 
 At any time, you can migrate the container back to manually provisioned throughput by invoking the **az cosmosdb sql container throughput migrate** command again with the **--throughput-type** argument set to **manual**
 
-:::code language="azurecli" source="../media/5-script.sh" range="15-20" highlight="6":::
+```azurecli
+az cosmosdb sql container throughput migrate \
+    --account-name '<account-name>' \
+    --resource-group '<resource-group>' \
+    --database-name '<database-name>' \
+    --name '<container-name>' \
+    --throughput-type 'manual'
+```

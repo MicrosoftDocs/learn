@@ -11,6 +11,11 @@ Let's assume that we have an Azure Cosmos DB account with the following regions:
 
 To trigger a manual failover, use the **az cosmosdb update** command with the **--failover-policies** argument switching the priorities of the two regions.
 
-:::code language="azurecli" source="../media/8-script.sh" highlight="4":::
+```azurecli
+az cosmosdb failover-priority-change \
+    --name '<account-name>' \
+    --resource-group '<resource-group>' \
+    --failover-policies 'westus2=0' 'eastus=1'
+```
 
 > &#128161; Any priority change to a region that is **!= 0** will not trigger a failover.
