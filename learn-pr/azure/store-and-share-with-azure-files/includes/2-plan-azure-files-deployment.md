@@ -48,7 +48,7 @@ Because Azure Files stores files in a storage account, you can choose between st
 
 Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back premium storage account performance, which comes with higher costs. Currently, premium accounts can use file storage accounts with ZRS in a limited number of regions.
 
-Your decision for account and reduncancy options is to find a balance between availability and performance requirements. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. As a result, the best choice is a standard GRS account. Currently, Geo-zone Redundant Storage (GZRS) is in preview stage. When GZRS becomes generally available, it will be the best option for them. This table compares the different characteristics of each storage option.
+Your decision for account and redundancy options is to find a balance between availability and performance requirements. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. As a result, the best choice is a standard GRS account. Currently, Geo-zone Redundant Storage (GZRS) is in preview stage. When GZRS becomes generally available, it will be the best option for them. This table compares the different characteristics of each storage option.
 
 | Requirement | LRS  | ZRS | GRS/GZRS |
 |---------|---------|---------|---------|
