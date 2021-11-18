@@ -62,6 +62,8 @@ The code you've written has errors in it. You'll see some error messages as you 
 
 You've compiled the code, which resulted in many errors. Don't worry, we'll now address each of the errors and you'll end up with working code.
 
+### The first errors, parenthesis
+
 1. Let's take the first error:
 
     ```output
@@ -89,22 +91,26 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     }
     ```
 
-4. Run `g++ hello.cpp` command to build your program.
+### The second error, an extra semicolon
+
+1. Run `g++ hello.cpp` command to build your program.
 
    ```bash
    g++ hello.cpp
-    This is the output you get (you already see less errors in the error output thanks to your fix):
+   ```
 
-    ```output
-    PS /home/<user>> g++ hello.cpp
-    hello.cpp:1:20: warning: extra tokens at end of #include directive
-    #include <iostream>;
+   This is the output you get (you already see less errors in the error output thanks to your fix):
+
+   ```output
+   PS /home/<user>> g++ hello.cpp
+   hello.cpp:1:20: warning: extra tokens at end of #include directive
+   #include <iostream>;
                         ^
-    hello.cpp:5:13: warning: character constant too long for its type
+   hello.cpp:5:13: warning: character constant too long for its type
         cout >> 'Hello World'
                 ^~~~~~~~~~~~~
-    hello.cpp: In function ‘int main()’:
-    hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘int’)
+   hello.cpp: In function ‘int main()’:
+   hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘int’)
         cout >> 'Hello World'
         ~~~~~^~~~~~~~~~~~~~~~
     ...
@@ -114,8 +120,8 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ```
 
-    > [!Note]
-    > You might have received a huge plethora of errors. But we will focus only on the one which is at the top and ignore the rest for now. One error at a time.
+   > [!Note]
+   > You might have received a huge plethora of errors. But we will focus only on the one which is at the top and ignore the rest for now. One error at a time.
    Let's focus on the error that comes first in the recent execution.
 
     ```output
@@ -144,8 +150,11 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     }
     ```
 
-6. Run `g++ hello.cpp` command to build your program.
+### Third error, wrong character for string literal
+
+1. Run `g++ hello.cpp` command to build your program.
     You should see the following output from the compilation:
+
     ```output
     PS /home/<user>> g++ hello.cpp
     hello.cpp:5:13: warning: character constant too long for its type
@@ -161,6 +170,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ...
     ```
+
    Let's look at the first error in the above output and rectify it.
 
     ```output
@@ -171,7 +181,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
 
     You can see that we have used single quotation instead of double quotation symbol. We use single quotation only when we have a single character. For a string literal(character array), we use double quotation.
 
-7. Replace the single quotation with double quotation. Ensure your program looks like the below code:
+1. Replace the single quotation with double quotation. Ensure your program looks like the below code:
 
     ```cpp
     #include <iostream>
@@ -182,7 +192,9 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     }
     ```
 
-8. Run `g++ hello.cpp` command to build your program.
+### Fourth error, wrong stream operator
+
+1. Run `g++ hello.cpp` command to build your program.
     Here's what the output looks like, see how the error output is less and less. We do have some issues left, so lets work on those next issues.
 
     ```output
@@ -220,7 +232,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     > We use `<<` for `cout` object  
     > We use `>>` for `cin` object, which we will learn later  
 
-9. Run `g++ hello.cpp` command to build your program.
+1. Run `g++ hello.cpp` command to build your program.
 
    ```bash
    g++ hello.cpp
@@ -244,13 +256,15 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
 1. Edit the code to make it look like this:
 
    ```cpp
-    #include <iostream>
+   #include <iostream>
     using namespace std;
     int main()
     {
       cout << "Hello World";     //Added a missing semi-colon
     }
-    ```
+   ```
+
+### Are we done?
 
 1. Run `g++ hello.cpp` command to build your program.
 
@@ -260,7 +274,7 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
 
     You should now see *a.out*, as one of the files if you type `ls` in your terminal. That's the file the g++ compiler created for you.
 
-12. Run the `a.out` file in the terminal.
+1. Run the `a.out` file in the terminal.
 
    ```bash
     ./a.out
