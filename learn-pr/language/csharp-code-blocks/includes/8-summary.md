@@ -4,7 +4,4 @@ In C#, we defined variables inside and outside the boundaries of code blocks.  W
 
 The lessons we learned in this lesson begin our path to understanding higher-level structures and to building real applications.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

@@ -159,12 +159,12 @@ In our `main` function, we'll call the `car_factory` function to fulfill the car
         // Car order #2: Used, Semi-automatic, Convertible
         engine = Transmission::SemiAuto;
         car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, false, 100);
-        println!("Car order 2: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.1, car.roof, car.motor, car.color, car.age.1);
+        println!("Car order 2: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
 
         // Car order #3: Used, Automatic, Hard top
         engine = Transmission::Automatic;
         car = car_factory(String::from(todo!("Index into the `colors()` array")), engine, true, 200);
-        println!("Car order 3: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.1, car.roof, car.motor, car.color, car.age.1);
+        println!("Car order 3: {:?}, Hard top = {}, {:?}, {}, {} miles", car.age.0, car.roof, car.motor, car.color, car.age.1);
     ```
 
 1. Fix the indexing into the `colors` array in the calls to `String::from`. The `colors` array has four elements, so try to use a different color for each order.

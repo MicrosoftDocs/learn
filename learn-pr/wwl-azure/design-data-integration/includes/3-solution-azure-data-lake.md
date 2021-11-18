@@ -1,13 +1,13 @@
 Suppose you are a data engineering consultant doing work for Tailwind Traders. They have multiple sources of data, from websites to Point of Sale (POS) systems, and more recently from social media sites to Internet of Things (IoT) devices. They are interested in using Azure to analyze all their business data. In this role, you will provide guidance on how Azure can enhance their existing BI systems. You will also offer advice about using Azure's storage capabilities to add value to their BI solution. Because of their needs, you plan to recommend Azure Data Lake Storage. Data Lake Storage provides a repository where you can upload and store huge amounts of unstructured data with an eye toward high-performance big data analytics.
 
-**Understand Azure Data Lake Storage**
+## Understand Azure Data Lake Storage
 
 A data lake is a repository of data that is stored in its natural format, usually as blobs or files. [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. Data Lake Storage Gen2 builds on Azure Blob storage capabilities to optimize it specifically for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage.
 
 > [!Note]
 > The current implementation of Azure's data lake storage service is Azure Data Lake Storage Gen2.
 
-**What are the features of Azure Data Lake Storage?**
+### What are the features of Azure Data Lake Storage?
 
 To better understand Azure Data Lake Storage, you can examine its following characteristics:
 
@@ -23,9 +23,8 @@ To better understand Azure Data Lake Storage, you can examine its following char
 | Data analysis| Data analysis frameworks that use HDFS as their data access layer can directly access. |
 
 
- 
 
-**How Azure Data Lake Storage works?**
+## How Azure Data Lake Storage works
 
 There are three important steps to use Azure Data Lake Storage. These are:
 
@@ -57,7 +56,7 @@ To control who can access the data stored in Azure Data Lake Storage, you can im
 
 - ACL
 
-**When to use Azure Data Lake Storage**
+## When to use Azure Data Lake Storage
 
 Now we will consider whether Azure Data Lake Storage is the right choice for your organization's big data requirements.
 
@@ -68,7 +67,7 @@ Now we will consider whether Azure Data Lake Storage is the right choice for you
 | When you need real time data ingestion and storage| Azure Data Lake Storage can ingest real-time data directly from an instance of Apache Storm on Azure HDInsight, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics. It also works with semi-structured data and lets you ingest all your real-time data into your storage account. |
 
 
-**When would you choose Azure Blob Storage over Azure Data Lake?**
+### When to choose Azure Blob Storage over Azure Data Lake
 
 Let us look at some criteria that will help you decide when to pick one storage solution over the other. In the following table, the two storage solutions are compared against a set of criteria.
 

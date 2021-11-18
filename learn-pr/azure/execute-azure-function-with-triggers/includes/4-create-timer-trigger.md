@@ -14,7 +14,7 @@ Let’s start by creating an Azure Function App in the portal.
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, under **Categories**, select **Compute**, and then under *Popular offers*, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
+1. In the left menu pane, under **Categories**, select **Compute**, and then under *Popular products*, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

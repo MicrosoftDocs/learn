@@ -1,0 +1,20 @@
+on:
+  workflow_call:
+    inputs:
+      environmentType:
+        required: true
+        type: string
+    secrets:
+      AZURE_CREDENTIALS:
+        required: true
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo Hello ${{ inputs.environmentType }}!
+
+    - run: |
+        echo This step only runs for production deployments.
+      if: inputs.environmentType == 'Production'
