@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-application-based-threats-security-controls.describe-how-application-hardening-improves-application-security
+title: Describe how application hardening improves application security
+metadata:
+  title: Describe how application hardening improves application security
+  description: "Describe how application hardening improves application security"
+  ms.date: 11/18/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3

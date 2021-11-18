@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-application-based-threats-security-controls.security-controls
+title: Describe application-based security controls
+metadata:
+  title: Describe application-based security controls
+  description: "Describe application-based security controls"
+  ms.date: 11/18/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
