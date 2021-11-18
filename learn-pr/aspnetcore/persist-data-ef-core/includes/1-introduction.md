@@ -1,18 +1,20 @@
-An online dog toy retailer, named Contoso Pets, needs a data access project. You're asked to develop such a project for their web storefront. The project has to support adding, reading, modifying, and removing customer orders in a relational database.
+In this module, you'll gain an understanding of object-relational mappers (ORMs) and Entity Framwork (EF) Core. You'll use EF Core to persist and retrieve relational data from a database.
 
-This module explores creating a data access project using .NET Standard and C#. An Azure SQL database will be used to store the orders. Entity Framework (EF) Core will be used as the **O**bject-**R**elational **M**apper (O/RM)&mdash;a tool enabling .NET developers to work with a database using .NET objects. EF Core will be used for executing **C**reate, **R**ead, **U**pdate, **D**elete (CRUD) operations on the orders.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
-## Learning objectives
+## Example Scenario
 
-In this module, you will:
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a pizza inventory management service as a prerequisite for the company's web storefront and mobile application. The service will support adding, viewing, modifying, and removing types of pizza in you company's database. These four operations are often referred to as **C**reate, **R**ead, **U**pdate, **D**elete (CRUD).
 
-* Configure a connection to a relational database hosted in Azure.
-* Create domain models representing the relational data model.
-* Add tables and data to the relational database.
-* Write and test CRUD queries.
-* Enable logging of the generated SQL.
+## What will we be doing?
 
-## Prerequisites
+You'll explore EF Core's capabilities and how they work to help you decide if and when to use it. You will learn the answers to questions like:
 
-* Experience writing C# at the beginner level
-* Experience using relational databases and SQL as a developer
+- What is an object-relational mapper?
+- How do I get started with EF Core?
+- What's a database provider?
+- How do I keep my code and database in sync?
+
+## What is the main goal?
+
+By the end of this session, you'll be able to use EF Core as a data access API for backend databases.

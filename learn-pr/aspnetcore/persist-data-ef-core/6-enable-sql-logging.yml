@@ -14,4 +14,4 @@ azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-enable-sql-logging.md)]
+  [!include[](includes/6-enable-sql-logging.md)]

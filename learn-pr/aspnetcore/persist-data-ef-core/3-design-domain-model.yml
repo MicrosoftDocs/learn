@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-design-domain-model.md)]
+  [!include[](includes/3-design-domain-model.md)]

@@ -35,14 +35,12 @@ products:
 - azure-sql-database
 units:
 - learn.persist-data-ef-core.1-introduction
-- learn.persist-data-ef-core.2-setup-environment
-- learn.persist-data-ef-core.3-configure-db-connection
+- learn.persist-data-ef-core.understanding-ef-core
 - learn.persist-data-ef-core.4-design-domain-model
 - learn.persist-data-ef-core.5-write-crud-queries
 - learn.persist-data-ef-core.6-call-crud-queries
 - learn.persist-data-ef-core.7-enable-sql-logging
 - learn.persist-data-ef-core.8-knowledge-check
 - learn.persist-data-ef-core.9-summary
-iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
 badge:
   uid: learn.persist-data-ef-core.badge

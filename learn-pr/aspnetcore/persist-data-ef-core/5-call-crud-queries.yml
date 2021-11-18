@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-call-crud-queries.md)]
+  [!include[](includes/5-call-crud-queries.md)]

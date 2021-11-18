@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.persist-data-ef-core.understanding-ef-core
+title: Understanding EF Core
+metadata:
+  unitType: {{patternType}}
+  title: Understanding EF Core
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 11/8/2021
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-understanding-ef-core.md)]
