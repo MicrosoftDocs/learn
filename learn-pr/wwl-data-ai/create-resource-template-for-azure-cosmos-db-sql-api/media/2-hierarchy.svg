@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 3921 1288" width="700">
+  <defs>
+    <clipPath id="a">
+      <path d="M164 897h3921v1288H164z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-164 -897)">
+    <path fill="#7F7F7F" d="M1161.02 1076.5v99.59H729.998l3.438-3.44v184.19l-3.438-3.43h59.585v6.87h-63.022v-191.07h431.019l-3.44 3.44v-96.15ZM785 1343.09l27.5 13.75-27.5 13.75Zm905.24 101.41v99.59H1375l3.44-3.44v184.19l-3.44-3.44h59.58v6.88h-63.02v-191.07h315.24l-3.44 3.44v-96.15ZM1430 1711.09l27.5 13.75-27.5 13.75Z"/>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M167.5 900.5h1980v176h-1980z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(647.126 1009)">Microsoft.DocumentDB/databaseAccounts</text>
+    <path fill="#7F7F7F" d="M2334.24 1813.5v99.59H2019l3.44-3.44v184.19l-3.44-3.43h59.58v6.87h-63.02v-191.07h315.24l-3.44 3.44v-96.15ZM2074 2080.09l27.5 13.75-27.5 13.75Z"/>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1043.5 1222.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1805.43 1331)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M927.5 1245.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1689.65 1354)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M812.5 1268.5h1748v176h-1748z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1008.4 1378)">Microsoft.DocumentDB/databaseAccounts/sqlDatabases</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1688.5 1590.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(2450.35 1699)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1572.5 1613.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(2334.57 1723)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M1457.5 1637.5h1748v176h-1748z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(1518.69 1746)">Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M2333.5 1958.5h1748v177h-1748z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(3095.27 2068)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M2217.5 1982.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(2979.49 2091)">Database</text>
+    <path fill="#F2F2F2" stroke="#000" stroke-miterlimit="8" stroke-width="6.875" d="M2101.5 2005.5h1749v176h-1749z"/>
+    <text fill="#0078D7" font-family="Segoe UI Semilight,Segoe UI Semilight_MSFontService,sans-serif" font-size="56" font-weight="300" transform="translate(2894.07 2114)">Item[s]</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/address/*"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/*"
+    }
+  ]
+}
