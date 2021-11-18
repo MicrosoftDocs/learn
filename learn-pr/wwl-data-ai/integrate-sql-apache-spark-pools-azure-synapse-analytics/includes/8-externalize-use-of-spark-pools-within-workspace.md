@@ -17,3 +17,4 @@ If you want to configure the ACLs from the root "/" folder, there are some extra
 2. Select your Account and give the Azure Data Lake Storage Gen 2 URL, and the default file system for the Azure Synapse workspace. 
 3. If you see the storage account listed, right-click on the listing workspace and make sure you select "Manage Access".
 4. Add the user to the root "/" folder with "Execute" access permission and select "Ok".
+
