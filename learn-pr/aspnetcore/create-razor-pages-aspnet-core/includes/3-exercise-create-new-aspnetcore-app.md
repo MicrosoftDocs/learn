@@ -18,7 +18,7 @@ To set up a .NET project to work with a web app, you'll use Visual Studio Code. 
     dotnet new webapp -f net6.0
     ```
 
-    This command creates the files for a basic web API project, along with a C# project file named **RazorPagesPizza.csproj** that will return a list of weather forecasts.
+    This command creates the files for a basic web app project, along with a C# project file named **RazorPagesPizza.csproj**.
 
     You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 

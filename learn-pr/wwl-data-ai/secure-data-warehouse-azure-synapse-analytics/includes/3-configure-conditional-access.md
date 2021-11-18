@@ -2,7 +2,7 @@ Conditional Access is a feature that enables you to define the conditions under 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Azure/Azure-AD-Conditional-Access/player?format=ny] 
 
-Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action. As an example, if a Data Engineer wishes to access services in Azure Synapse Analytics, they may be requested by the Conditional Access policy to perform an additional step of multi-factor authentication (MFA) to complete the authentication to get onto the service
+Conditional Access policies at their simplest are if-then statements, if a user wants to access a resource, then they must complete an action. As an example, if a Data Engineer wishes to access services in Azure Synapse Analytics, they may be requested by the Conditional Access policy to perform an additional step of multifactor authentication (MFA) to complete the authentication to get onto the service
 
 Conditional Access policies use signals as a basis to determine if Conditional Access should first be applied. Common signals include:
 -	User or group membership names
@@ -13,10 +13,10 @@ Conditional Access policies use signals as a basis to determine if Conditional A
 -	Microsoft Cloud App Security (MCAS)
 
 Based on these signals, you can then choose to block access. The alternative is you can grant access, and at the same time request that the user perform an additional action including:
--	Perform Multi-Factor authentication
+-	Perform multifactor authentication
 -	Use a specific device to connect
 
-Given the amount of data that could potentially be stored, Azure Synapse Analytics dedicated SQL pools supports Conditional Access to provide protection for your data. It does require that Azure Synapse Analytics is configured to support Azure Active Directory, and that if you chose multi-factor authentication, that the tool you are using support it.
+Given the amount of data that could potentially be stored, Azure Synapse Analytics dedicated SQL pools supports Conditional Access to provide protection for your data. It does require that Azure Synapse Analytics is configured to support Azure Active Directory, and that if you chose multifactor authentication, that the tool you are using support it.
 
 To configure Conditional Access, you can perform the following steps:
 
@@ -42,7 +42,7 @@ To configure Conditional Access, you can perform the following steps:
     -	Execute CREATE USER [user@yourtenant.com] FROM EXTERNAL PROVIDER.
     -	Sign into Azure AD and verify that Azure SQL Database, SQL Managed Instance, or Azure Synapse are listed in the applications in your Azure AD instance.
 
-1. Select **Access controls**, select **Grant**, and then check the policy you want to apply. For this example, we select **Require multi-factor authentication**.
+1. Select **Access controls**, select **Grant**, and then check the policy you want to apply. For this example, we select **Require multifactor authentication**.
  
     > [!div class="mx-imgBorder"]
     > ![Select access controls in a Conditional Access policy in the Azure portal.](../media/access-controls-conditional-access-azure-portal.png)
