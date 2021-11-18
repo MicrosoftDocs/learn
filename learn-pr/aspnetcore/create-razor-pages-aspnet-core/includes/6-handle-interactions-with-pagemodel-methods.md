@@ -5,10 +5,6 @@ In this unit, you'll review the structure of a Razor page `PageModel` class and 
 A new `PageModel` class file contains the following C# code:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 

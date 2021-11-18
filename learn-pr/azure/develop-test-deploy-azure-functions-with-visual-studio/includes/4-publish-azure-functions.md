@@ -2,7 +2,7 @@ An Azure function runs in the cloud in the context of an Azure Function App. A F
 
 In the luxury watch online website scenario, you'll deploy the Azure functions you create to the cloud. First create an Azure Function App, and then publish your functions to the function app app. 
 
-There are several of options available for publishing an Azure function, and you want to determine the best method. In the the overview material here, and in the following exercise, you'll learn about some of these options.
+There are several of options available for publishing an Azure function, and you want to determine the best method. In the overview material here, and in the following exercise, you'll learn about some of these options.
 
 ## Deploy from Visual Studio
 

@@ -8,11 +8,6 @@ You should be able to:
 - Secure your virtual machines and access to them
 - Deploy Windows Defender
 - Practice layered security by reviewing and implementing Security Center and Security Benchmarks
-- Configure and deploy Endpoint Protection
-- Deploy a privileged access strategy for devices and privileged workstations
-- Secure your virtual machines and access to them
-- Deploy Windows Defender
-- Practice layered security by reviewing and implementing Security Center and Security Benchmarks
 
 
 ## Learn more
