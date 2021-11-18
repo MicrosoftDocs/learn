@@ -10,7 +10,9 @@ The emulator is available as a download from the **Microsoft Docs** website and 
 
 The Docker container image for the emulator is published to the Microsoft Container Registry and is syndicated across various container registries such as **Docker Hub**. To obtain the Docker container image from Docker Hub, use the Docker CLI to **pull** the image from ``mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator``.
 
-:::code language="azurecli" source="../media/2-script.sh" range="1":::
+```bash
+docker pull mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator
+```
 
 ## Configuring the SDK to connect to the emulator
 
@@ -18,14 +20,20 @@ The Azure Cosmos DB emulator uses the same APIs as the cloud service, so connect
 
 First, the emulator's endpoint is ``https://localhost:<port>/`` using SSL with the default port set to 8081. In C# code, you can configure this endpoint as a string variable using this example line of code.
 
-:::code language="csharp" source="../media/2-script.cs" range="3":::
+```csharp
+string endpoint = "https://localhost:8081/";
+```
 
 The emulator's key is a static well-known authentication key. The default value for this key is ``C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==``. In C# code, you can save this key as a variable using this example line of code.
 
-:::code language="csharp" source="../media/2-script.cs" range="4":::
+```csharp
+string key = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
+```
 
 > &#128161; You can start the emulator using the **/Key** option to generate a new key instead of using the default key.
 
 Once those variables are set, create the **CosmosClient** like you typically would for a cloud-based account.
 
-:::code language="csharp" source="../media/2-script.cs" range="6":::
+```csharp
+CosmosClient client = new (endpoint, key);
+```

@@ -8,23 +8,35 @@ Many times request timeouts occur due to high CPU or port utilization on client 
 
 The C# language in .NET has a series of Task-based features to asynchronously invoke SDK client methods. For example, the **CreateDatabaseIfNotExistsAsync** method is invoked asynchronously using the following syntax.
 
-:::code language="csharp" source="../media/4-script.cs" range="1":::
+```csharp
+Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
+```
 
 This syntax uses the **await** keyword to run the task asynchronously and return the result into the indicated variable. Using the asynchronous keywords allows the SDK to manage requests simultaneously in a efficient manner.
 
 Avoid blocking the asynchronous execution using **Task.Wait** or **Task.Result** such as in the example code below.
 
-:::code language="csharp" source="../media/4-script.cs" range="3":::
+```csharp
+Database database = client.CreateDatabaseIfNotExistsAsync("cosmicworks").Result;
+```
 
 ## Use built-in iterators instead of LINQ methods
 
 LINQ methods such as **ToList** will eagerly and synchronously drain a query while blocking any other calls from executing. For example, this invocation of ToList() will block all other calls and potentially retrieve a large set of data:
 
-:::code language="csharp" source="../media/4-script.cs" range="7-9" highlight="3":::
+```csharp
+container.GetItemLinqQueryable<T>()
+    .Where(i => i.categoryId == 2)
+    .ToList<T>();
+```
 
 The SDK includes methods such as **ToFeedIterator\<T\>** that asynchronously retrieves the results of a query without blocking other calls. This example illustrates the same scenario but using the special iterator instead of **ToList**.
 
-:::code language="csharp" source="../media/4-script.cs" range="11-13" highlight="3":::
+```csharp
+container.GetItemLinqQueryable<T>()
+    .Where(i => i.categoryId == 2)
+    .ToFeedIterator<T>();
+```
 
 ## Configure max concurrency, parallelism, and buffered item count
 
@@ -36,7 +48,12 @@ All query results in Azure Cosmos DB SQL API are returned as "pages" of results.
 
 In this example, the **MaxItemCount** property is set to a value of **500**.
 
-:::code language="csharp" source="../media/4-script.cs" range="15-18" highlight="3":::
+```csharp
+QueryRequestOptions options = new ()
+{
+    MaxItemCount = 500
+};
+```
 
 > &#128161; If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size. For instance, the max response size is 4 MB.
 
@@ -46,7 +63,12 @@ In this example, the **MaxItemCount** property is set to a value of **500**.
 
 In this example, the **MaxConcurrency** property is set to a value of **5**.
 
-:::code language="csharp" source="../media/4-script.cs" range="20-23" highlight="3":::
+```csharp
+QueryRequestOptions options = new ()
+{
+    MaxConcurrency = 5
+};
+```
 
 ### Max buffered item count
 
@@ -54,6 +76,11 @@ The **MaxBufferedItemCount** property sets the maximum number of items that are 
 
 In this example, the **MaxBufferedItemCount** property is set to a value of **5,000**.
 
-:::code language="csharp" source="../media/4-script.cs" range="25-28" highlight="3":::
+```csharp
+QueryRequestOptions options = new ()
+{
+    MaxBufferedItemCount = 5000
+};
+```
 
 > &#128221; These settings are explored much deeper in other Azure Cosmos DB SQL API modules on issuing queries using the SDK.
