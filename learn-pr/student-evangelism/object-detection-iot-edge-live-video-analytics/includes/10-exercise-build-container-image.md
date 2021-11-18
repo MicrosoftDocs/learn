@@ -29,7 +29,7 @@ Before you start, make sure that you have installed rerequisites in your local m
 
 ## Download the inference YOLOv4(tiny) TensorFlow Lite model
 
-1. Go to https://github.com/Azure/live-video-analytics and download zip in your local machine.
+1. Go to `https://github.com/Azure/live-video-analytics` and download zip in your local machine.
 
    [![The illustration shows how to download a project from GitHub.](../media/download-zip-file.png)](../media/download-zip-file.png#lightbox)
 
@@ -154,6 +154,6 @@ After the deployment, you can check the module in your edge device. Connect to y
    docker ps
    ```
 
-Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from [the Tiny YOLOv4 TensorFlow Lite model](https://github.com/Azure/live-video-analytics/tree/master/utilities/video-analysis/yolov4-tflite-tiny).
+Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from the Tiny YOLOv4 TensorFlow Lite model.
 
 Make a note of predict endpoint that is in the form of **http://{module-name}:80/score** and can be accessed only within your edge device.
