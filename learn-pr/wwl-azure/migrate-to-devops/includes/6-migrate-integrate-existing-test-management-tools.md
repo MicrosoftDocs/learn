@@ -1,6 +1,6 @@
 Azure Test Plans are used to track manual testing for sprints and milestones, allowing you to follow when that testing is complete.
 
-Azure DevOps also has a Test &amp; Feedback extension available in the Visual Studio Marketplace. The extension is used to help teams do exploratory testing and provide feedback.
+Azure DevOps also has a Test Feedback extension available in the Visual Studio Marketplace. The extension is used to help teams do exploratory testing and provide feedback.
 
 All team members and other stakeholders can use the extension to submit bugs or provide feedback. For example:
 

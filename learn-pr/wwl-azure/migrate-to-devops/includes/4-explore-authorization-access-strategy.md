@@ -2,13 +2,13 @@ Azure DevOps Services uses enterprise-grade authentication. To protect and secur
 
  -  Microsoft account.
  -  GitHub account.
- -  Azure Active Directory (AAD).
+ -  Azure Active Directory (Azure AD).
 
-Tools like Visual Studio and Azure DevOps natively support the use of Microsoft Accounts and AAD. Eclipse can also support this form of authentication if you install a Team Explorer Everywhere plug-in.
+Tools like Visual Studio and Azure DevOps natively support the use of Microsoft Accounts and Azure AD. Eclipse can also support this form of authentication if you install a Team Explorer Everywhere plug-in.
 
 ## Personal access tokens
 
-Use personal access tokens (PAT) for tools that do not directly support Microsoft accounts or AAD for authentication. Also, if you want them to integrate with Azure DevOps.
+Use personal access tokens (PAT) for tools that do not directly support Microsoft accounts or Azure AD for authentication. Also, if you want them to integrate with Azure DevOps.
 
 For example, tools like:
 
