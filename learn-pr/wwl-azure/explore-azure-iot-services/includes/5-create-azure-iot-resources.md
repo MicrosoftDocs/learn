@@ -11,7 +11,7 @@ The Microsoft Learning team will update this training course as soon as we can w
 
 \[Button in the UI displays: "Sign in to launch the lab"\]
 
-When you finish the lab exercises, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!<br>
+When you finish the lab exercises, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
 
 > [!TIP]
 > After completing the lab, if you've finished exploring Azure IoT Hub and Azure IoT Hub Device Provisioning Service, delete the Azure resources that you may have created during the exercise.
