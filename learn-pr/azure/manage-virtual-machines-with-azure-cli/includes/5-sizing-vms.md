@@ -68,7 +68,7 @@ az vm create \
 
 ## Resize an existing VM
 
-We can also resize an existing VM if the workload changes, or if it was incorrectly sized at creation. Before a resize is requested, we must check to see if the desired size is available in the cluster our VM is part of. We can do this with the `vm list-vm-resize-options` command:
+We can also resize an existing VM if the workload changes, or if it was incorrectly sized at creation. Let's use the first VM we created, SampleVM. Before requesting a resize, we must check to see if the desired size is available in the cluster our VM is part of. We can do this with the `vm list-vm-resize-options` command:
 
 ```azurecli
 az vm list-vm-resize-options \
