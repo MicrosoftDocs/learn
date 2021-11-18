@@ -106,6 +106,8 @@ Use an appropriate process for storing and handling secrets. Use GitHub secrets 
 
 For secure parameters, remember to explicitly pass each parameter into your deployment steps.
 
+GitHub can automatically scan your repository for secrets that have been accidentally committed, so that you can be notified and can remove and rotate the secrets. We link to more information about this feature in the summary.
+
 ### Combine approaches
 
 It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a secret. The following example illustrates the combination:
