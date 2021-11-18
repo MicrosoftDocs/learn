@@ -35,7 +35,7 @@ To continue with this module, you need to have access to an x86/AMD64-based mach
 * [Ampere A100](https://www.nvidia.com/en-us/data-center/a100/)
 
     >[!NOTE]
-    >If you plan to use a virtual machine to satisfy these requirements, you might encounter problems later in this learning path when you try to start NVIDIA Graph Composer if you'e connecting to your VM over a remote session. You'll still be able to continue with the modules, but we want be sure you're aware of this [issue](https://forums.developer.nvidia.com/t/graph-composer-unable-to-start-during-rdp-session-on-azure-vm-with-tesla-t4/186966).
+    >If you plan to use a virtual machine to satisfy these requirements, you might encounter problems later in this learning path when you try to start NVIDIA Graph Composer if you'e connecting to your VM over a remote session. You'll still be able to continue with the modules, but we want be sure you're aware of this issue.
 
 ### Try this
 
