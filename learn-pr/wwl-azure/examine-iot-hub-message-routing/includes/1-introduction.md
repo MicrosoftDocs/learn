@@ -2,7 +2,7 @@ Azure IoT Hub is the primary entry-point for device information that must be eva
 
 Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to implement device message processing in support of data analytics and other downstream requirements. Understanding how IoT Hub processes messages and events will help to ensure that the implementation is successful. You decide to begin by examining IoT Hub message routing.<br>
 
-In this module, you will:
+In this module, you will: 
 
  -  Review message processing concepts.<br>
  -  Examine the Azure IoT common message format and features of IoT Hub message routing.
