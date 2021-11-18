@@ -22,7 +22,7 @@ abstract: >
   - Distinguish terminologies of C++ like datatypes, libraries, Functions, and so on.
 
   - Explain the basic makeup of a program in C++.
-iconUrl: /learn/achievements/cpp-write-your-first-program.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -40,3 +40,4 @@ units:
   - learn.cpp-write-your-first-program.summary
 badge:
   uid: learn.cpp-write-your-first-program.badge
+  
