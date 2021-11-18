@@ -1,6 +1,6 @@
 Azure IoT Hub device streams facilitate the creation of secure bi-directional TCP tunnels for various cloud-to-device communication scenarios. A device stream is mediated by an IoT Hub streaming endpoint that acts as a proxy between your device and service endpoints. This setup, depicted in the diagram below, is especially useful when devices are behind a network firewall or reside inside of a private network. As such, IoT Hub device streams help address customers' need to reach IoT devices in a firewall-friendly manner and without the need to broadly opening up incoming or outgoing network firewall ports.
 
-:::image type="content" source="../media/m02-l03-iot-hub-device-streams-overview-4b2a5e19.png" alt-text="IoT Hub Device Streams":::
+:::image type="content" source="../media/m02-l03-iot-hub-device-streams-overview-4b2a5e19.png" alt-text="Diagram that shows IoT Hub Device Streams connecting to IoT Hub.":::
 
 
 Using IoT Hub device streams, devices remain secure and will only need to open up outbound TCP connections to IoT hub's streaming endpoint over port 443. Once a stream is established, the service-side and device-side applications will each have programmatic access to a WebSocket client object to send and receive raw bytes to one another. The reliability and ordering guarantees provided by this tunnel is on par with TCP.
@@ -22,7 +22,7 @@ A device stream is initiated when the service requests to connect to a device by
 
 The device stream creation process involves a negotiation between the device, service, IoT hub's main and streaming endpoints. While IoT hub's main endpoint orchestrates the creation of a device stream, the streaming endpoint handles the traffic that flows between the service and device.
 
-:::image type="content" source="../media/M02-L03-iot-hub-device-streams-workflow-dbccde40.png" alt-text="IoT Hub Device Stream Workflows":::
+:::image type="content" source="../media/M02-L03-iot-hub-device-streams-workflow-dbccde40.png" alt-text="Diagram that shows Device Stream Workflows connecting to the cloud.":::
 
 
 1.  The device application registers a callback in advance to be notified of when a new device stream is initiated to the device. This step typically takes place when the device boots up and connects to IoT Hub.

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 11/18/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "When you disable a device, the device twin is deleted."
       isCorrect: false
       explanation: "Incorrect. The device twin is maintained when a device is disabled and will be available if the device is re-enabled."
-  - content: "You are investigating how to implement 2-way communication between devices and IoT Hub. Which of the following answers is a common example of sending information from devices to the cloud?"
+  - content: "A company is investigating how to implement 2-way communication between devices and IoT Hub. Which of the following answers is a common example of sending information from devices to the cloud?"
     choices:
     - content: "Device-to-cloud messages for scheduling firmware updates."
       isCorrect: false

@@ -90,7 +90,8 @@ Notice that we are passing the device connection string and that we also designa
 
 You can obtain the device connection string from the Azure portal.
 
-**Important:** You will see examples in this and other labs throughout this course where connection strings, passwords, and other configuration information are hard-coded into the application. This approach is done solely to simplify the labs and **is not** a recommended practice. As much as possible, security issues like this will be addressed as they come up in the labs. Security topics (and other important considerations) will be addressed during the instructor presentation and in your Student Handbook content in a manner that supports the overall flow of the course. The two may not always align perfectly. As a result, you may be exposed to topics in the labs that are not covered in detail until later in the course.
+> [!IMPORTANT]
+> You will see examples in training materials where connection strings, passwords, and other configuration items are hard-coded into the application. This approach is used to simplify the activity and **is not** a recommended practice. As much as possible, security issues like this will be addressed as they come up in the labs. Security topics (and other important considerations) will be addressed during the instructor presentation and in your Student Handbook content in a manner that supports the overall flow of the course. The two may not always align perfectly. As a result, you may be exposed to topics in the labs that are not covered in detail until later in the course.
 
 > [!NOTE]
 > Once you have a valid \*\*DeviceClient\*\* object, you can start calling the APIs to send and receive messages to and from IoT Hub.
