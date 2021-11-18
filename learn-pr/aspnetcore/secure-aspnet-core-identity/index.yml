@@ -12,7 +12,7 @@ title: Secure an ASP.NET Core web app with the Identity framework
 summary: Add authentication and authorization to a .NET web app using the ASP.NET Core Identity framework, ASP.NET Core's built-in authentication system.
 abstract: | 
   In this module, you will:
-  - Configure Identity support in an existing ASP.NET Core web app.
+  - Configure ASP.NET Core Identity support in an existing ASP.NET Core web app.
   - Provide new user registration capabilities.
   - Extend Identity UI components.
   - Customize multi-factor login capabilities.
