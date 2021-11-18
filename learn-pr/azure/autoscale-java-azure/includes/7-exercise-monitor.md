@@ -1,6 +1,6 @@
 In this exercise, you'll use log analytics to query autoscaling events for your sample application.
 
-## Monitor the Application's autoscale with Log Analytics
+## Monitor the application's autoscale with Log Analytics
 
 You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a Log Analytics workspace you created with your sample application setup.
 

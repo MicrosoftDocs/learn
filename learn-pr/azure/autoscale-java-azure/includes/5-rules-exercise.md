@@ -1,6 +1,6 @@
 In this exercise, we'll look at exercises for setting up and triggering autoscaling of your sample application.
 
-# Rule Exercise
+## Rule exercise
 
 In your sample Azure Spring Cloud application, when your application was created, it already triggered a scale-out action on the customer service microservice.
 
@@ -9,7 +9,7 @@ After the autoscale is triggered, it will then scale **in** if the request count
 
 ## View Autoscale setup in the Azure portal
 
-1. In a new Web Browser tab, open the Azure portal.
+1. In a new web browser tab, open the Azure portal.
 2. From the top search box, search for "**Azure Spring Cloud**".
 3. From the Azure Spring Cloud Overview page, select your Azure Spring Cloud instance from the results.
 4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
