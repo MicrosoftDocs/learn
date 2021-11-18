@@ -14,7 +14,7 @@ A device twin is a JSON document that includes:
  -  Reported properties. Used along with desired properties to synchronize device configuration or conditions. The device app can set reported properties, and the solution back end can read and query them.
  -  Device identity properties. The root of the device twin JSON document contains the read-only properties from the corresponding device identity stored in the identity registry.
 
-:::image type="content" source="../media/m02-l01-device-twin-diagram-03c0f21f.png" alt-text="Device Twin Diagram":::
+:::image type="content" source="../media/m02-l01-device-twin-diagram-03c0f21f.png" alt-text="Diagram that shows the primary components of a device twin document.":::
 
 
 ## Example document
@@ -32,7 +32,7 @@ The following example shows a device twin JSON document:
     "lastActivityTime": "2015-02-30T16:24:48.789Z",
     "cloudToDeviceMessageCount": 0,
     "authenticationType": "sas",
-    "x509Thumbprint": {   
+    "x509Thumbprint": { 
         "primaryThumbprint": null,
         "secondaryThumbprint": null
     },

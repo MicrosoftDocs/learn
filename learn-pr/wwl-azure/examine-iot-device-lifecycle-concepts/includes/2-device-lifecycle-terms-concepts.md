@@ -1,6 +1,6 @@
 There is a set of general device management stages that are common to all enterprise IoT projects. For Azure IoT, there are five stages within the device lifecycle:
 
-:::image type="content" source="../media/m02-l01-device-lifecycle-diagram-97febb41.png" alt-text="Device Lifecycle":::
+:::image type="content" source="../media/m02-l01-device-lifecycle-diagram-97febb41.png" alt-text="Diagram that shows the five lifecycle stages for an IoT device.":::
 
 
 Each of the five stages includes goals and activities:
