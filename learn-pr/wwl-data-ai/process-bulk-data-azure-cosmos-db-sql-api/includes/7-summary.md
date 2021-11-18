@@ -8,6 +8,6 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Bulk import data to Azure Cosmos DB SQL API account by using the .NET SDK][docs.microsoft.com/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]
+- [Bulk import data to Azure Cosmos DB SQL API account by using the .NET SDK][/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]
 
-[docs.microsoft.com/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]: /azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import
+[/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]: https://docs.microsoft.com/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import
