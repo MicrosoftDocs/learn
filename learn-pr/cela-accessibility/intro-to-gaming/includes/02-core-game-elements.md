@@ -34,6 +34,8 @@ Many gaming experiences today use visual cues or indicators to guide player succ
 
 In the following video, you'll learn how to identify common visual elements that should be considered in the context of these questions.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPhu1]
+
 Identifying these elements is an important first step in accessible game development. When these elements are identified early in development, initiatives can be taken to ensure that they provide is also represented through non-visual means.
 
 ## Identifying audio elements
