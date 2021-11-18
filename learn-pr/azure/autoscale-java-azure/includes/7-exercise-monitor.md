@@ -11,7 +11,7 @@ You can validate the evaluations and scale actions better using Log Analytics. I
 
 In the autoscale setting screen, go to the Run history tab to see the most recent scale actions.
 
-:::image type="content" source="../media/activitylog.png" alt-text="autoscale log" lightbox="../media/activitylog.png":::
+:::image type="content" source="../media/activity-log.png" alt-text="autoscale log" lightbox="../media/activity-log.png":::
 
 The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
@@ -20,16 +20,14 @@ Next, we'll use log analytics to dig deeper into the autoscale events.
 ## Use Log Analytics to troubleshoot scale events
 
 1. Open the Azure portal
-1. Open the Log Analytics workspace in your resource group.
-    1. This step will set the initial scope to a Log Analytics workspace, so that your query will select from all data in that workspace. If you select Logs from an Azure resource's menu, the scope is set to only records from that resource.
-
-- On the left menu, in the **General** section, select **Logs**
+1. Open the Log Analytics workspace in your resource group. This step will set the initial scope to a Log Analytics workspace, so that your query will select from all data in that workspace. If you select Logs from an Azure resource's menu, the scope is set to only records from that resource.
+1. On the left menu, in the **General** section, select **Logs**
 
 The left side of the screen includes the Tables tab, where you can inspect the tables that are available in the current scope.
 
 Expand the Log Management solution and locate the **AutoscaleEvaluationsLog** table. You can expand the table to view its schema, or hover over its name to show more information about it.
 
-:::image type="content" source="../media/loganalytics.png" alt-text="log analytics menu" lightbox="../media/loganalytics.png":::
+:::image type="content" source="../media/log-analytics.png" alt-text="log analytics menu" lightbox="../media/log-analytics.png":::
 
 ## Write a Kusto query
 

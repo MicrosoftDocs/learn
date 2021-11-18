@@ -3,9 +3,9 @@ uid: learn.autoscale-java-azure.exercise-setup
 title: Exercise - Sample application environment
 metadata:
   unitType: exercise
-  title: Exercise - sample application environment
+  title: Exercise - Sample application environment
   description: In this exercise, we'll set up the sample application environment
-  ms.date: 07/07/2021
+  ms.date: 11/18/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
