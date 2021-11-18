@@ -3,7 +3,7 @@ uid: learn.wwl.azure-sentinel
 metadata:
   title: Configure and monitor Azure Sentinel
   description: "Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment."
-  ms.date: 10/14/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

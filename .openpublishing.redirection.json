@@ -9609,6 +9609,66 @@
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/10-design-for-access-reviews.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/8-design-for-access-reviews",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/2-describe-common-practices-for-data-loading.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-ingestion-azure/3-load-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/2-describe-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/3-explore-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }

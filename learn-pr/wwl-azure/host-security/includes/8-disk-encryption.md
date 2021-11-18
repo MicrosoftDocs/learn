@@ -1,8 +1,7 @@
 
 **Azure Disk Encryption for Windows VMs** helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the BitLocker feature of Windows to provide volume encryption for the OS and data disks of Azure virtual machines (VMs), and is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
 
-> [!div class="mx-imgBorder"]
-> ![A virtual machine uses storage with keys protected in a key vault.](../media/az500-disk-encryption.png)
+![A virtual machine uses storage with keys protected in a key vault.](../media/az500-disk-encryption.png)
 
 If you use Azure Security Center, you're be alerted if you have VMs that aren't encrypted. The alerts show as High Severity and the recommendation is to encrypt these VMs.
 

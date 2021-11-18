@@ -113,7 +113,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
 
-    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure'  
+    `https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure`  
 
 1. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request. When the function responds, you should see output similar to the following example displayed in your browser.
 
@@ -127,9 +127,17 @@ Now that we have a function app, it's time to create a function. A function is a
 
     The **Code + Test** pane for your function appears, and displays the contents of your **index.js** file.
 
-    [![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-implementation-javascript-small.png)](../media/3-default-http-trigger-implementation-javascript.png#lightbox) <!-- no-loc -->
+   
+chain-ja-pwrsh
+\
+HttpTrigger1
+\
 
-    The default JavaScript code for your function should resemble the following example.
+chain-ja-pwrsh
+\
+HttpTrigger1
+\
+ The default JavaScript code for your function should resemble the following example.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -171,13 +179,15 @@ Now that we have a function app, it's time to create a function. A function is a
     }
     ```
 
-    As you can see, this function has a trigger binding named **req** of type `httpTrigger`, and an output binding named **res** of type `http`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us.
-
+  This function has a *trigger binding* named **req** of type `httpTrigger`, and an output binding named *res* of type `http`. 
+  
+  In the preceding code for our function, we saw that we accessed the payload of the incoming HTTP request through the **req** parameter. Similarly, we sent an HTTP response by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us!
+  
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
+Now that we have a function app, let's create a function. A function is activated via a trigger. In this module, we'll use an HTTP trigger.
 
 1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
@@ -287,7 +297,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Output." lightbox="../media/3-function-integration-vertical.png":::
 
-    You can see that we can't add more than _one_ trigger. To change a trigger for a function, you need to the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value, and return more than one output value.
+    You can see that we can't add more than _one_ trigger. To change a trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value and return more than one output value.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
 
@@ -313,7 +323,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
     :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of horizontal flow diagram showing Trigger and Inputs leading to Function and Function leading to Output." lightbox="../media/3-function-integration-horizontal.png":::
     
-    You can see that we can't add more than _one_ trigger. To change the trigger for a function, you need to delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections enable you to add multiple bindings, so the function can accept more than one input value, and return more than one output value.
+    You can see that we can't add more than _one_ trigger. To change the trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add multiple bindings, so the function can accept more than one input value and return more than one output value.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
 

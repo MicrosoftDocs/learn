@@ -2,7 +2,7 @@
 
 Your company has a large repository of documents used across the company. Offices are located in different geographical regions, but need the most current versions of the documents.
 
-You configure Azure File shares to provide a central location for the documents. You configure Azure File Sync to keep the information up to data across multiple offices.
+You configure Azure File shares to provide a central location for the documents. You configure Azure File Sync to keep the information up to date across multiple offices.
 
 ## Skills measured
 

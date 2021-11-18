@@ -3,7 +3,7 @@ uid: learn.wwl.application-security
 metadata:
   title: Configure application security features
   description: "Register your company applications then use Azure security features to configure and monitor secure access to the application."
-  ms.date: 10/14/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

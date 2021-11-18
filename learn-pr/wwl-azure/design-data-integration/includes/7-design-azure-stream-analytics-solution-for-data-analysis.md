@@ -6,7 +6,7 @@ How will you help address this problem? Let us see if Azure Stream Analytics can
 
  
 
-**Describe Azure Stream Analytics**
+## Describe Azure Stream Analytics
 
 The process of consuming data streams, analyzing them, and deriving actionable insights is called stream processing. Azure Stream Analytics is a fully managed (PaaS offering), real-time analytics and complex event-processing engine. It offers the possibility to perform real-time analytics on multiple streams of data from sources such as IoT device data, sensors, clickstreams and social media feeds.
 
@@ -26,7 +26,7 @@ The image shows the Stream Analytics pipeline, and how data is ingested, analyze
 
  
 
-**Key features of Azure Stream Analytics**
+### Key features of Azure Stream Analytics
 
 Stream Analytics ingests data from Azure Event Hubs (including Azure Event Hubs from Apache Kafka), Azure IoT Hub, or Azure Blob Storage. The query, which is based on SQL query language, can be used to easily filter, sort, aggregate, and join streaming data over a period. You can also extend this SQL language with JavaScript and C# user-defined functions (UDFs). You can [understand stream processing](/learn/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing) by reading more about it.
 
@@ -43,7 +43,7 @@ An Azure Stream Analytics job consists of an input, query, and an output. You ca
 > [!Note]
 > You can get some information about [Overview of Azure Stream Analytics Cluster](/azure/stream-analytics/cluster-overview) for single-tenant deployment of Stream Analytics.
 
-**When to consider Azure Stream Analytics?**
+### When to consider Azure Stream Analytics
 
 Following are some common enterprise data use-cases where Azure Stream Analytics can be effectively leveraged.
 
@@ -63,7 +63,7 @@ In the Tailwind Traders scenario discussed above, we can leverage Azure Stream A
 >[!Important]
 > Azure Stream Analytics supports processing events in CSV, JSON and Avro data formats.
 
-**Benefits of Azure Stream Analytics**
+### Benefits of Azure Stream Analytics
 
 - Fully Managed - It is offered as a Platform as a Service offering, so there is no overhead of provisioning any hardware or infrastructure. Azure Stream Analytics fully manages your job, so you can focus on your business logic and not on the infrastructure.
 

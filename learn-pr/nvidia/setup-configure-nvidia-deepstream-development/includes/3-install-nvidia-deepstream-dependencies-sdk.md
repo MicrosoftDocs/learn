@@ -1,23 +1,6 @@
 The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk through the installation of these dependencies and explain their roles.
 
-1. Install the `build-essential` meta-package that will provide tools to compile C and C++ applications from source. We'll also install a few helper programs that are required to compile certain sources that will be referenced after this step. To start, run these commands on the host terminal:
-
-    ```bash
-    sudo apt install \
-    build-essential \
-    pkg-config \
-    libglvnd-dev
-    ```
-
-1. Install the NVIDIA driver version 470.63.01 from the NVIDIA Unix drivers page at: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
-
-    1. The installation package should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
-    ```bash
-    chmod 755 NVIDIA-Linux-x86_64-470.63.01.run
-    sudo ./NVIDIA-Linux-x86_64-470.63.01.run 
-    ```
-
-1. Install the extra packages that might be referenced at runtime when a DeepStream application is run. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
+1. Install the dependency packages that will provide tools to compile C and C++ applications from source. Notice that multiple `gstreamer`-based plug-ins are included. They're needed because NVIDIA DeepStream uses the [GStreamer](https://gstreamer.freedesktop.org/) library for media handling and graph composition in DeepStream applications. Use the following commands to install these requirements on the host terminal:
 
     ```bash
     sudo apt install \
@@ -28,9 +11,20 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
     gstreamer1.0-plugins-bad \
     gstreamer1.0-plugins-ugly \
     gstreamer1.0-libav \
-    libgstreamer1.0-dev \
     libgstrtspserver-1.0-0 \
-    libjansson4 
+    libjansson4 \
+    gcc \
+    make \
+    git \
+    python3
+    ```
+
+1. Install the NVIDIA driver version 470.63.01 from the NVIDIA Unix drivers page at: https://www.nvidia.com/Download/driverResults.aspx/179599/en-us
+
+    1. The installation package should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+    ```bash
+    chmod 755 NVIDIA-Linux-x86_64-470.63.01.run
+    sudo ./NVIDIA-Linux-x86_64-470.63.01.run 
     ```
 
 1. Install CUDA Toolkit 11.4 by adding NVIDIA's Ubuntu-based CUDA repo into your APT sources. The CUDA Toolkit allows your development environment to use GPU acceleration on devices where compatible hardware is present. The toolkit includes special compiler tools and libraries that allow you to build and run GPU-accelerated applications. It also automatically installs the compatible drivers to allow running GPU-accelerated applications on the host system.  
@@ -88,16 +82,28 @@ The NVIDIA DeepStream SDK requires some prerequisite software.  We'll walk throu
        libnvinfer-doc=8.0.1-1+cuda11.3
        ```
 
+1. Install librdkafka to enable the Kafka protocol adaptor used by the [DeepStream message broker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html).  Open a terminal and run the following commands:
+
+    ```bash
+    cd ~
+    git clone https://github.com/edenhill/librdkafka.git
+    cd librdkafka
+    git reset --hard 7101c2310341ab3f4675fc565f64f0967e135a6a
+    ./configure
+    make sudo make install
+    sudo mkdir -p /opt/nvidia/deepstream/deepstream-6.0/lib
+    sudo cp /usr/local/lib/librdkafka* /opt/nvidia/deepstream/deepstream-6.0/lib
+    ```
+
 1. Install the DeepStream SDK. The SDK includes all the libraries, development sources, and samples to get you started with building custom IVA pipelines.
 
-    1. Open a browser on the host machine. Go to the [NVIDIA DeepStream Getting Started - Downloads page](https://developer.nvidia.com/deepstream-getting-started).
+    1. Open a browser on the host machine. Go to the [NVIDIA DeepStream - Version 6.0.0-1 Download](https://developer.nvidia.com/deepstream-6.0_6.0.0-1_amd64deb).
 
-    1. Select the **DeepStream 6.0 for Servers and Workstations** .deb package. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
+    1. It should download to your local user's *Downloads* folder. Go to the download location and install the package by using these commands:
 
     ```bash
     cd ~/Downloads
-    sudo dpkg -i <name of downloaded package>
-    sudo apt --fix-broken install
+    sudo apt-get install ./deepstream-6.0_6.0.0-1_amd64.deb
     ```
 
 You're now ready to start exploring how to build Intelligent Video Analytics applications by using the NVIDIA DeepStream SDK. We'll examine and run a sample application.

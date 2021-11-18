@@ -72,6 +72,6 @@ When prompted, define an export password. You'll use this password when uploadin
 
 ## Enforce HTTPS
 
-By default, anyone can still access your app using HTTP. You can redirect all HTTP requests to the HTTPS port by navigating to your your app page and, in the left navigation, select **TLS/SSL settings**. Then, in **HTTPS Only**, select **On**.
+By default, anyone can still access your app using HTTP. You can redirect all HTTP requests to the HTTPS port by navigating to your app page and, in the left navigation, select **TLS/SSL settings**. Then, in **HTTPS Only**, select **On**.
 
 :::image type="content" source="../media/enforce-https.png" alt-text="Enabling HTTPS Only in your web app.":::

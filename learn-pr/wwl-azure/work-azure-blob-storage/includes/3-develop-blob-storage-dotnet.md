@@ -43,7 +43,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
     * Navigate to the [Azure portal](https://portal.azure.com/).
     * Locate the storage account created.
-    * In the **Settings** section of the storage account overview, select **Access keys**. Here, you can view your account access keys and the complete connection string for each key.
+    * Select **Access keys** in the **Security + networking** section of the navigation pane. Here, you can view your account access keys and the complete connection string for each key.
     * Find the **Connection string** value under **key1**, and select the **Copy** button to copy the connection string. You will add the connection string value to the code in the next section.
     * In the **Blob** section of the storage account overview, select **Containers**.  Leave the windows open so you can view changes made to the storage as you progress through the exercise.
  
