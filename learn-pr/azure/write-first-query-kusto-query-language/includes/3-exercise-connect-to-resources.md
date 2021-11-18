@@ -21,8 +21,9 @@ Queries always run in the context of a database, so you need to connect to a spe
 
 1. Expand the help cluster in the left pane.
 1. Select the **Samples** database to give your queries the correct context.
-1. If you expand the **Samples** database, **Tables**, and the **Storm_Events** folder, you will see a list of tables below the database; we'll be using the *StormEvents* table.
 
     :::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot of help cluster organization.":::
+
+1. If you expand the **Samples** database, **Tables**, and the **Storm_Events** folder, you will see a list of tables below the database; we'll be using the *StormEvents* table.
 
 Now you're ready to run queries on the *StormEvents* table. You'll learn how to do that in the following exercise.

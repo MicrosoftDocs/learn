@@ -17,7 +17,9 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 
     :::image type="content" source="../media/6-sort-1.png" alt-text="Screenshot of sort operator.":::
 
-1. Notice that the results start from the highest property damage value, and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and obtain the same results. The state and event types aren't ordered in any way. We can actually sort based on more than one expression as shown in the next example.
+1. Notice that the results start from the highest property damage value, and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and obtain the same results. The state and event types aren't ordered in any way. 
+
+We can sort based on more than one expression, as shown in the next example.
 
 ## Sort on more than one expression
 
@@ -40,7 +42,7 @@ Each region has unique weather patterns, so we'd actually like to know which eve
 
 ## Use the `top` operator
 
-Instead of sorting and looking at the top number of results, we can use a different operator to just show us the top number of results. 
+Instead of sorting and scanning the top for a certain number of results, we can use the `top` operator to show the a specific number of top results.
 
 1. Run the following query:
     
