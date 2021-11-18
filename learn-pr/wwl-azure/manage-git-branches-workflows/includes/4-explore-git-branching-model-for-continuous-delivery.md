@@ -229,7 +229,7 @@ With the critical bug fix out of the way, let's go back to the review of the fea
 
 The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
 
-:::image type="content" source="../media/branches-page-352f877b.png":::
+:::image type="content" source="../media/branches-page-352f877b.png" alt-text="Branches page":::
 
 
 If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
