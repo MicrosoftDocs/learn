@@ -12,7 +12,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. In the middle menu bar, under **Development Tools**, select **Console**. The **Console** pane appears for your function app.
 
-1. Verify that the console window opens in the _C:\home\site\wwwroot_ folder, and npmthen run the following commands to install the libraries that are required for this sample function app.
+1. Verify that the console window opens in the _C:\home\site\wwwroot_ folder, then run the following commands to install the libraries that are required for this sample function app.
 
     1. Run the following command to install the _typescript_ library, which is a required dependency for static typing.
 
