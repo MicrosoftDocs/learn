@@ -15,7 +15,7 @@ Azure defines a set of pre-defined VM sizes for Linux and Windows to choose from
 | GPU optimized | NV, NC | Specialized VMs targeted for heavy graphic rendering and video editing. |
 | High performance | H, A8-11 | Our most powerful CPU VMs with optional high-throughput network interfaces (RDMA). |
 
-The available sizes change based on the region you're creating the VM in. You can get a list of the available sizes using the `vm list-sizes` command. Try typing this into Azure Cloud Shell:
+The available sizes change based on the region you're creating the VM in. You can get a list of the available sizes using the `vm list-sizes` command. Try typing the following into Azure Cloud Shell:
 
 ```azurecli
 az vm list-sizes --location eastus --output table
