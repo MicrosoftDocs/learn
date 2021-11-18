@@ -4,7 +4,7 @@ These differences warrant the need for targeted solutions that eliminate barrier
 
 Accessible design is not a one-size-fits-all solution. This unit provides a basic overview of these differences to ultimately broaden your understanding of gaming accessibility as a process that cannot be solved through a one-size-fits-all approach.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The information in this unit is intended to drive awareness of the need to consider a wide range of player experiences and related solutions. It is not intended to provide a holistic understanding of what actual players with disabilities encounter during their lived experiences.
 >
 > Prior to development, you are encouraged to speak with actual players with disabilities to learn more about the barriers they experience and the solutions they find effective. Training documents like this module are intended to prepare for these conversations, not replace them.
@@ -36,7 +36,7 @@ You’re encouraged to think about how all visual information in a game can be r
 
 Low vision is a broad term that can encompass a wide spectrum of visual abilities. Players with low vision may have a cloudier, blurrier, or less complete view of what is on their game screen.
 
-> [!TIP]
+> [!NOTE]
 > The extent of cloudiness, blurriness, or completeness of view can widely vary from player to player. This is why providing multiple options for customization is important.
 
 Players with low vision can experience difficulty reading text or seeing on-screen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, you should consider providing players with customization options for the following:
