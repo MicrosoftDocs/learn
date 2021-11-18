@@ -30,13 +30,13 @@ The Azure IoT Edge extension, which is included with Azure IoT Tools, makes it e
 
 1.  Open VS Code.
 2.  Select View &gt; Command Palette.
-3.  In the command palette, enter and run the command Azure IoT Edge: New IoT Edge Solution. :::image type="content" source="../media/m07-l01-edge-modules-and-containers-create-custom-module-new-solution-b84a6aec.png" alt-text="Custom Edge Modules with VS Code - New Solution":::
+3.  In the command palette, enter and run the command Azure IoT Edge: New IoT Edge Solution. :::image type="content" source="../media/m07-l01-edge-modules-containers-create-custom-module-new-solution-3f8a542a.png" alt-text="Screen shot that shows how to use the Visual Studio Code command palette to create a new IoT Edge solution template.":::
     
 4.  Browse to the folder where you want to create the new solution and then select Select folder.
 5.  Enter a name for your solution.
 6.  Select a module template for your preferred development language to be the first module in the solution.
 7.  Enter a name for your module. Choose a name that's unique within your container registry.
-8.  Provide the name of the module's image repository. Visual Studio Code autopopulates the module name with `localhost:5000/<your module name>`. Replace it with your own registry information. If you use a local Docker registry for testing, then `localhost` is fine. If you use Azure Container Registry, then use the login server from your registry's settings. The login server looks like `<registry name>.azurecr.io`. Only replace the `localhost:5000` part of the string so that the final result looks like `<registry name>.azurecr.io/<your module name>`. :::image type="content" source="../media/m07-l01-edge-modules-and-containers-create-custom-module-repository-74aa6cb4.png" alt-text="Custom Edge Modules with VS Code - Specify Image Repository Name":::
+8.  Provide the name of the module's image repository. Visual Studio Code autopopulates the module name with `localhost:5000/<your module name>`. Replace it with your own registry information. If you use a local Docker registry for testing, then `localhost` is fine. If you use Azure Container Registry, then use the login server from your registry's settings. The login server looks like `<registry name>.azurecr.io`. Only replace the `localhost:5000` part of the string so that the final result looks like `<registry name>.azurecr.io/<your module name>`.:::image type="content" source="../media/m07-l01-edge-modules-containers-create-custom-module-repository-f3734869.png" alt-text="Screen shot that shows how to specify the image repository name for an IoT Edge module using Visual Studio Code.":::
     
 
 Visual Studio Code takes the information you provided, creates an IoT Edge solution, and then loads it in a new window.

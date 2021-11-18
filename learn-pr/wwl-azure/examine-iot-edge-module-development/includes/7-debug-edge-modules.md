@@ -17,12 +17,12 @@ On your development machine, you can use Visual Studio Code to start an IoT Edge
 
 To set up and start the simulator, run the command Azure IoT Edge: Start IoT Edge Hub Simulator for Single Module from the Visual Studio Code command palette. When prompted, use the value `input1` from the default module code (or the equivalent value from your code) as the input name for your application. The command triggers the `iotedgehubdev` CLI and then starts the IoT Edge simulator and a testing utility module container. You can see the outputs below in the integrated terminal if the simulator has been started in single module mode successfully. You can also see a curl command to help send message through. You will use it later.
 
-:::image type="content" source="../media/m07-l01-edge-modules-and-containers-start-simulator-for-single-module-2a933860.png" alt-text="IoT Edge Module Debugging - Simulator for Single Module":::
+:::image type="content" source="../media/m07-l01-edge-modules-containers-start-simulator-single-module-4daf82ac.png" alt-text="Screen shot that shows the terminal output for an IoT Edge simulator that has been started in single module mode.":::
 
 
 You can use the Docker Explorer view in Visual Studio Code to see the module's running status.
 
-:::image type="content" source="../media/m07-l01-edge-modules-and-containers-simulator-status-ed9c76a7.png" alt-text="IoT Edge Module Debugging - Check Simulator Status with Docker Explorer":::
+:::image type="content" source="../media/m07-l01-edge-modules-containers-simulator-status-f88b0600.png" alt-text="Screen shot that shows the module's running status in the Docker Explorer view of Visual Studio Code.":::
 
 
 The `edgeHubDev` container is the core of the local IoT Edge simulator. It can run on your development machine without the IoT Edge security daemon and provides environment settings for your native module app or module containers. The input container exposes REST APIs to help bridge messages to the target input channel on your module.
@@ -79,7 +79,7 @@ In your development machine, you can start an IoT Edge simulator instead of inst
 ### Build and run container for debugging and debug in attach mode
 
 1.  Open your module file (Program.cs, app.js, App.java, or &lt;your module name&gt;.cs) and add a breakpoint.
-2.  In the Visual Studio Code Explorer view, right-click the `deployment.debug.template.json` file for your solution and then select **Build and Run IoT Edge solution in Simulator**. You can watch all the module container logs in the same window. You can also navigate to the Docker view to watch container status. :::image type="content" source="../media/m07-l01-edge-modules-and-containers-view-container-status-log-22ffed4d.png" alt-text="IoT Edge Module Debugging - View Container Status Log":::
+2.  In the Visual Studio Code Explorer view, right-click the `deployment.debug.template.json` file for your solution and then select **Build and Run IoT Edge solution in Simulator**. You can watch all the module container logs in the same window. You can also navigate to the Docker view to watch container status. :::image type="content" source="../media/m07-l01-edge-modules-containers-view-container-status-log-3ae95d80.png" alt-text="Screen shot that shows the module container logs for an IoT Edge simulator in the Visual Studio Code terminal.":::
     
 3.  Navigate to the Visual Studio Code Debug view and select the debug configuration file for your module. The debug option name should be similar to ***&lt;your module name&gt;* Remote Debug**.
 4.  Select **Start Debugging** or press **F5**. Select the process to attach to.
