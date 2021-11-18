@@ -14,8 +14,6 @@ As the lead developer, you have been tasked with identifying a database platform
 
 Azure Cosmos DB is a fast NoSQL database service for modern app development at any scale.
 
-:::image type="icon" source="../media/1-icon.svg" border="false":::
-
 Here, you'll see how Azure Cosmos DB and its SQL API can be used for this type of business problem. You'll also learn a bit about how the database works. At the end, this module will help you decide if Azure Cosmos DB's SQL API is a good choice for your solutions.
 
 After completing this module, you’ll be able to:

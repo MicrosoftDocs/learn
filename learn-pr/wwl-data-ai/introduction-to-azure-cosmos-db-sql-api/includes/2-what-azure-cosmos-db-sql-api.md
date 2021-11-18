@@ -19,7 +19,7 @@ NoSQL databases generally do not enforce relational constraints or put locks on 
 
 While there are many NoSQL data models, four broad data model families are commonly used when modeling data in a NoSQL database:
 
-:::image type="content" source="../media/2-nosql-db.svg" alt-text="Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store." border="false":::
+![Diagram showing various NoSQL models including; a key-value, document, graph, and column-family store](../media/2-nosql-db.png)
 
 Moving forward, we will focus on the document data model, the data model supported by Azure Cosmos DB SQL API
 
@@ -27,7 +27,7 @@ Moving forward, we will focus on the document data model, the data model support
 
 The document data model breaks data down into individual **document** entities. A document can be any structured data type, but JSON is commonly used as the data format. The Azure Cosmos DB SQL API supports JSON natively.
 
-:::image type="content" source="../media/2-document-db.svg" alt-text="Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them." border="false":::
+![Illustration of a hierarchical document data model that includes parent entities, child entities, and lines connecting them](../media/2-document-db.png)
 
 A document is an atomic entity and can have its own data form, regardless of what is stored in other documents in the same database. Because of this flexibility, there is no need for a pre-defined schema making it easier to build new applications rapidly. Additionally, this flexibility enables scenarios where different types of data can be stored together and where models can evolve over the lifetime of an application.
 
@@ -37,7 +37,18 @@ JavaScript Object Notation, or [JSON][json.org], is a lightweight data format. J
 
 Here is an example of a JSON document:
 
-:::code language="json" source="../media/3-document.json" range="18-27":::
+```json
+{
+  "device": {
+    "type": "mobile"
+  },
+  "sentTime": "2019-11-12T13:08:42",
+  "spoolRefs": [
+    "6a86682c-be5a-4a4a-bacd-96c4d1c7ece6",
+    "79e78fe2-93aa-4688-89db-a7278b034aa6"
+  ]
+}
+```
 
 As you can see, JSON is a relatively readable data format that clearly exposes its content. JSON is also relatively easy to parse and use in JavaScript applications.
 
@@ -45,7 +56,7 @@ As you can see, JSON is a relatively readable data format that clearly exposes i
 
 Azure Cosmos DB SQL API is a fast NoSQL database service that offers rich querying over diverse data, helps deliver configurable and reliable performance, is globally distributed, and enables rapid development.
 
-:::image type="content" source="../media/2-azure-cosmos-db.svg" alt-text="Illustration of a world map with four globally distributed nodes that are connected via lines." border="false":::
+![Illustration of a world map with four globally distributed nodes that are connected via lines](../media/2-azure-cosmos-db.png)
 
 The SQL API is the core or native API for working with documents. The SQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native SQL API.
 
@@ -65,8 +76,8 @@ These capabilities make Azure Cosmos DB ideally suited for modern application de
 
 The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET][azure/cosmos-db/sql/sql-api-sdk-dotnet-standard], [Python][azure/cosmos-db/sql/sql-api-sdk-python], [Java][azure/cosmos-db/sql/sql-api-sdk-java-v4], and [Node.js][azure/cosmos-db/sql/sql-api-sdk-node].
 
-[azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: /azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[azure/cosmos-db/sql/sql-api-sdk-java-v4]: /cosmos-db/sql/sql-api-sdk-java-v4
-[azure/cosmos-db/sql/sql-api-sdk-node]: /azure/cosmos-db/sql/sql-api-sdk-node
-[azure/cosmos-db/sql/sql-api-sdk-python]: /azure/cosmos-db/sql/sql-api-sdk-python
+[azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
+[azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/cosmos-db/sql/sql-api-sdk-java-v4
+[azure/cosmos-db/sql/sql-api-sdk-node]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-node
+[azure/cosmos-db/sql/sql-api-sdk-python]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-python
 [json.org]: https://www.json.org
