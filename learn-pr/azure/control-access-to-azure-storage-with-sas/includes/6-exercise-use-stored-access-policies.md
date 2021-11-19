@@ -131,7 +131,7 @@ In this exercise, you'll update your web app to create SASs with stored access p
 
 1. In the Azure portal resource menu, select **All resources**.
 
-1. In the list of resources, select the **medicalrecords** storage account.
+1. In the list of resources, select the **medical records** storage account.
 
 1. On the Overview pane, select **Containers**, and then select **patient-images**.
 
