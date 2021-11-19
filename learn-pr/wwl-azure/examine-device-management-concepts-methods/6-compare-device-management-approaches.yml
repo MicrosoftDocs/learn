@@ -4,7 +4,7 @@ title: Choose between device management approaches
 metadata:
   title: Choose between device management approaches
   description: "Choose between device management approaches"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-comparing-device-management-approaches.md)]
+  [!include[](includes/6-compare-device-management-approaches.md)]

@@ -2,7 +2,7 @@ Configuring devices from your back-end service is a core component of most devic
 
 To synchronize state information between a device and an IoT hub, you use device twins. A desired property is set by a back-end application and read by a device. A reported property is set by a device and read by a back-end application. Device Twins also include a **tag** that is set by a back-end application, but is never sent to the device. You use tags to provide descriptive information, such as location, or to help organize/differentiate your devices.
 
-:::image type="content" source="../media/m08-l01-device-management-using-devicetwin-properties-9fd60747.png" alt-text="Diagram that shows the device twin properties used to synchronize state information between a device and an IoT hub.":::
+:::image type="content" source="../media/m08-l01-device-management-using-device-twin-properties-4defa110.png" alt-text="Diagram that shows the device twin properties used to synchronize state information between a device and an IoT hub.":::
 
 
 ## Device twin properties
