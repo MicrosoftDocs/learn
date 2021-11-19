@@ -1,6 +1,6 @@
 Device management includes code development for both server-side and device-side apps.
 
-Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to manage the IoT devices that have been deployed in the field. Understanding the coding tool options that the team will use to implement your device management tasks will help prepare the team to complete their device management responsibilities. You decide to examine the coding tool features that apply to device management tasks.<br>
+Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to manage the IoT devices that have been deployed in the field. Understanding the coding tool options that the team will use to implement your device management tasks will help prepare the team to complete their device management responsibilities. You decide to examine the coding tool features that apply to device management tasks.
 
 In this module, you will:
 

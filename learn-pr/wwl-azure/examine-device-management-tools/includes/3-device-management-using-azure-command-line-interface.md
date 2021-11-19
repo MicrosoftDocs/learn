@@ -50,7 +50,8 @@ The IoT extension for Azure CLI gives IoT developers command-line access to all 
 :::row-end:::
 
 
-**Note** If you don't have the IoT extension installed, the simplest way to install it is to run `az extension add --name azure-iot`
+> [!NOTE]
+> If you don't have the IoT extension installed, the simplest way to install it is to run `az extension add --name azure-iot`
 
 Before you can enter any device management commands, you need to sign in to your Azure account:
 

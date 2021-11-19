@@ -48,20 +48,12 @@ The Azure IoT Tools extension provides other capabilities for working with devic
 
 When using the Azure IoT Tools extension for VS Code, the first step is to access to your IoT Hub through your Azure subscription.
 
- -  In the bottom-left corner of the VS Code window, select **Azure IoT Hub**. When the Azure IoT Tools extension for VS Code is installed, the Azure IoT Hub section is added to the VS Code Explorer pane.
-
-1.  To the right of Azure IoT Hub, select the ellipsis (...).
-
-The ellipsis (...) provides access to the More Options context menu.
-
-1.  On the content menu, select **Select IoT Hub**.
-
-A pop-up will be displayed on screen to let you sign in to Azure.
-
-After you sign in, your Azure Subscription list will be shown.
-
-1.  Select the Azure Subscription that you will be using.
-2.  Select the IoT Hub that you will be using.
+1.  In the bottom-left corner of the VS Code window, select **Azure IoT Hub**. When the Azure IoT Tools extension for VS Code is installed, the Azure IoT Hub section is added to the VS Code Explorer pane.
+2.  To the right of Azure IoT Hub, select the ellipsis (...). The ellipsis (...) provides access to the More Options context menu.
+3.  On the content menu, select **Select IoT Hub**.
+4.  A pop-up will be displayed on screen to let you sign in to Azure. After you sign in, your Azure Subscription list will be shown.
+5.  Select the Azure Subscription that you will be using.
+6.  Select the IoT Hub that you will be using.
 
 After a few seconds, the VS Code Explorer pane will be updated to show a Devices section under Azure IoT Hub. The Devices section will display a list of the devices connected to the IoT Hub that you selected.
 
