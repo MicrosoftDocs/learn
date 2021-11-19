@@ -17,13 +17,13 @@ In a single URI, such as `https://medicalrecords.blob.core.windows.net/patient-i
 The SAS token contains the following components, or query parameters.
 
 
-| Query Parmeter | Field Name | Example | Description |
+| Query Parameter | Field Name | Example | Description |
 |-----|---------|---------|---------|
 | sp | signed permission | sp=r | Indicates one or more operations the client can perform. Values can be compounded: a (add), c (create), d (delete), l (list), r (read), and w (write). sp=r is read only; sp=acdlrw grants all the available rights. |
 | st | start time | st=2020-01-20T11:42:32Z | The date and time when access starts. |
 | se | expiry time | se=2020-01-20T19:42:32Z | The date and time when access ends. Based on the start date, this example grants eight hours of access. |
 | sv | signed version | sv=2019-02-02 | The service version of the storage API to use. |
-| sr | scope of resouce| sr=b | The kind of storage being accessed. Available values include b (blob), c (container), d (directory), f (file) s (share) |
+| sr | scope of resource| sr=b | The kind of storage being accessed. Available values include b (blob), c (container), d (directory), f (file) s (share) |
 | sig | signature | sig=SrW1...wVZs%3D | The cryptographic signature. |
 
 The signature is signed with your storage account key when you create a service or account SAS. If you use an Azure Active Directory (Azure AD) security principal with access to the storage, you create a user delegation SAS. You also grant the **Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey** action to the principal.
