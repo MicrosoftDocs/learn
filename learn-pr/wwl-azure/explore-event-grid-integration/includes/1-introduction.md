@@ -2,7 +2,7 @@ Recognizing events when they occur and delivering timely notifications to busine
 
 Suppose you have joined a team that is implementing an Azure IoT solution for the company. Your team needs to configure the solution to support triggering downstream business processes in response to IoT Hub events. You decide to gain experience implementing IoT Hub event-based notifications in a test environment.
 
-In this module, you will complete a lab that includes the following activities:<br>
+In this module, you will complete a lab that includes the following activities:
 
  -  Create a Logic App that sends an email.
  -  Configure an IoT Hub Event Subscription that triggers the Logic App when a device is created.
