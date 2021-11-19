@@ -4,12 +4,13 @@ title: Implement multi-agent builds
 metadata:
   title: Implement multi-agent builds
   description: "Implement multi-agent builds"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

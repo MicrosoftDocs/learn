@@ -4,12 +4,13 @@ title: Configure agent demands
 metadata:
   title: Configure agent demands
   description: "Configure agent demands"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
