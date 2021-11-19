@@ -18,10 +18,10 @@ Connecting to the local IoT Edge hub from a module involves two steps:
 1.  Create a ModuleClient instance in your application.
 2.  Make sure your application accepts the certificate presented by the IoT Edge hub on that device.
 
-To use IoT Edge routing over AMQP or MQTT, you can use the ModuleClient from the Azure IoT SDK. Create a ModuleClient instance to connect your module to the IoT Edge hub running on the device, similar to how DeviceClient instances connect IoT devices to IoT Hub. For more information about the ModuleClient class and its communication methods, see the API reference for your preferred SDK language: C\#, C, Python, Java, or Node.js.<br>
+To use IoT Edge routing over AMQP or MQTT, you can use the ModuleClient from the Azure IoT SDK. Create a ModuleClient instance to connect your module to the IoT Edge hub running on the device, similar to how DeviceClient instances connect IoT devices to IoT Hub. For more information about the ModuleClient class and its communication methods, see the API reference for your preferred SDK language: C\#, C, Python, Java, or Node.js.
 
 > [!NOTE]
-> To use IoT Edge MQTT broker introduced with IoT Edge 1.2, you need to bring your own MQTT client and initiate the connection yourself with information that you retrieve from the IoT Edge daemon workload API.<br>
+> To use IoT Edge MQTT broker introduced with IoT Edge 1.2, you need to bring your own MQTT client and initiate the connection yourself with information that you retrieve from the IoT Edge daemon workload API.
 
 ### IoT Hub primitives
 
@@ -50,15 +50,15 @@ To process messages using routing, first set up a route to send messages coming 
 
 Twins are one of the primitives provided by IoT Hub. There are JSON documents that store state information including metadata, configurations, and conditions. Each module or device has its own twin.
 
-To get a module twin with the Azure IoT SDK, call the ModuleClient.getTwin method.<br>
+To get a module twin with the Azure IoT SDK, call the ModuleClient.getTwin method.
 
 To get a module twin with any MQTT client, slightly more work is involved since getting a twin is not a typical MQTT pattern. The module must first subscribe to IoT Hub special topic $iothub/twin/res/\#. This topic name is inherited from IoT Hub, and all devices/modules need to subscribe to the same topic. It does not mean that devices receive the twin of each other. IoT Hub and edgeHub know which twin should be delivered where, even if all devices listen to the same topic name. Once the subscription is made, the module needs to ask for the twin by publishing a message to the following IoT Hub special topic with a request ID $iothub/twin/GET/?$rid=1234. This request ID is an arbitrary ID (that is, a GUID), which will be sent back by IoT Hub along with the requested data. This is how a client can pair its requests with the responses. The result code is a HTTP-like status code, where successful is encoded as 200.
 
 To receive a module twin patch with the Azure IoT SDK, implement a callback function and register it with the ModuleClient.moduleTwinCallback method from the Azure IoT SDK so that your callback function is triggered each time that a twin patch comes in.
 
-To receive a module twin patch with any MQTT client, the process is similar to receiving full twins: a client needs to subscribe to special IoT Hub topic $iothub/twin/PATCH/properties/desired/\#. After the subscription is made, when IoT Hub sends a change of the desired section of the twin, the client receives it.<br>
+To receive a module twin patch with any MQTT client, the process is similar to receiving full twins: a client needs to subscribe to special IoT Hub topic $iothub/twin/PATCH/properties/desired/\#. After the subscription is made, when IoT Hub sends a change of the desired section of the twin, the client receives it.
 
-### Receive direct methods<br>
+### Receive direct methods
 
 To receive a direct method with the Azure IoT SDK, implement a callback function and register it with the ModuleClient.methodCallback method from the Azure IoT SDK so that your callback function is triggered each time that a direct method comes in.
 

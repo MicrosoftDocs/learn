@@ -29,7 +29,7 @@ If you prefer to develop with other editors or from the CLI, the Azure IoT Edge 
 
 The Azure IoT Edge extension for Visual Studio Code provides IoT Edge module templates built on programming languages including C, C\#, Java, Node.js, and Python. The extension also includes Azure Functions in C\#.
 
-In addition to the IoT Edge extensions, you may find it helpful to install other extensions that support code development. For example, you can use Docker Support for Visual Studio Code to manage your images, containers, and registries. Additionally, all the major supported languages have extensions for Visual Studio Code that can help when you're developing modules.<br>
+In addition to the IoT Edge extensions, you may find it helpful to install other extensions that support code development. For example, you can use Docker Support for Visual Studio Code to manage your images, containers, and registries. Additionally, all the major supported languages have extensions for Visual Studio Code that can help when you're developing modules.
 
 #### Prerequisites
 
@@ -170,7 +170,7 @@ Only the IoT Edge runtime is supported for production deployments, but the follo
     iotedgec
   :::column-end:::
   :::column:::
-    Windows, Linux, macOS, ARM
+    Windows, Linux, macOS, Arm
   :::column-end:::
   :::column:::
     Testing on a device that may not support the runtime.
@@ -184,7 +184,7 @@ Only the IoT Edge runtime is supported for production deployments, but the follo
     toolboc/azure-iot-edge-device-container
   :::column-end:::
   :::column:::
-    Windows, Linux, macOS, ARM
+    Windows, Linux, macOS, Arm
   :::column-end:::
   :::column:::
     Testing a scenario with many IoT Edge devices at scale.

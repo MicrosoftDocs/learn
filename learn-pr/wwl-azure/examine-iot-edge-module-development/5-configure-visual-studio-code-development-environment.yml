@@ -4,7 +4,7 @@ title: Examine the VS Code development environment
 metadata:
   title: Examine the VS Code development environment
   description: "Examine the VS Code development environment"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-configure-vs-code-dev-environment.md)]
+  [!include[](includes/5-configure-visual-studio-code-development-environment.md)]

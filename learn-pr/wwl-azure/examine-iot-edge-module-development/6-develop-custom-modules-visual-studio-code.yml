@@ -4,7 +4,7 @@ title: Examine the module development process
 metadata:
   title: Examine the module development process
   description: "Examine the module development process"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-develop-custom-modules-with-vs-code.md)]
+  [!include[](includes/6-develop-custom-modules-visual-studio-code.md)]

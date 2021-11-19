@@ -54,7 +54,7 @@ curl --header "Content-Type: application/json" --request POST --data '{"inputNam
 > If you are using Windows, making sure the shell of your Visual Studio Code integrated terminal is \*\*Git Bash\*\* or \*\*WSL Bash\*\*. You cannot run the \`curl\` command from a PowerShell or command prompt.
 
 > [!TIP]
-> You can also use \*\*PostMan\*\* or other API tools to send messages through instead of \`curl\`.
+> You can also use the PostMan tool or other API tools to send messages instead of using curl.
 
 1.  In the Visual Studio Code Debug view, you'll see the variables in the left panel.
 2.  To stop your debugging session, select the **Stop** button or press **Shift** \+ **F5**, and then run **Azure IoT Edge: Stop IoT Edge Simulator** in the command palette to stop the simulator and clean up.

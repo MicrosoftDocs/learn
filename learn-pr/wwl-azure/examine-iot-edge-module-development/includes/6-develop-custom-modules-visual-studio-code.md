@@ -18,7 +18,7 @@ Once you are done testing, you can create the JSON deployment manifest and deplo
 
 The Azure IoT Edge extension, which is included with Azure IoT Tools, makes it easy to code, build, deploy, and debug your IoT Edge solutions in Visual Studio Code, by providing a rich set of functionalities:
 
- -  Create new IoT Edge solution.<br>
+ -  Create new IoT Edge solution.
  -  Add new IoT Edge module to Edge solution.
  -  Build and publish IoT Edge modules.
  -  Debug IoT Edge modules locally and remotely.

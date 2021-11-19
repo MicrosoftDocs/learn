@@ -45,7 +45,8 @@ To build and deploy your module image, you need Docker to build the module image
  -  Docker Community Edition on your development machine.
  -  Azure Container Registry or Docker Hub.
 
-Tip: You can use a local Docker registry for prototype and testing purposes instead of a cloud registry.
+> [!TIP]
+> You can use a local Docker registry for prototype and testing purposes instead of a cloud registry.
 
 ## Debug tools
 
