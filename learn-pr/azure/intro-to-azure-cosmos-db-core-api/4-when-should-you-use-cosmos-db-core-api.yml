@@ -3,8 +3,7 @@ uid: learn.azure.intro-to-azure-cosmos-db-core-api.4-when-should-you-use-cosmos-
 title: When should you use Azure Cosmos DB SQL API? 
 metadata:
   title: When should you use Azure Cosmos DB SQL API?
-  description: >
-    Identify common use cases where Azure Cosmos DB SQL API is a good fit
+  description: Identify common use cases where Azure Cosmos DB SQL API is a good fit.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope
