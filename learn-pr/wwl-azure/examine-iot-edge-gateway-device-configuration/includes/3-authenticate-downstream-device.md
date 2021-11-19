@@ -15,7 +15,7 @@ An IoT Edge device configured to act as a transparent gateway.
 If you're using X.509 authentication for your downstream device, you need to use the same certificate generating script that you used to configure the transparent gateway.
 
 > [!NOTE]
-> In the instructional materials below, we use a gateway hostname to create the certificates, and then refer to the gateway hostname in the connection string of the downstream devices. The gateway hostname is declared in the \*\*hostname\*\* parameter of the config.yaml file on the IoT Edge gateway device. The gateway hostname needs to be resolvable to an IP Address, either using DNS or a host file entry.
+> In the instructional materials that follow, we use a gateway hostname to create the certificates, and then refer to the gateway hostname in the connection string of the downstream devices. The gateway hostname is declared in the "hostname" parameter of the config.yaml file on the IoT Edge gateway device. The gateway hostname needs to be resolvable to an IP Address, either using DNS or a host file entry.
 
 ## Symmetric key authentication
 
@@ -197,7 +197,8 @@ az iot hub device-identity create -n {iothub name} -d {device ID} --pd {gateway 
 
 Each Azure IoT SDK handles X.509 authentication a little differently. However, the same process is used to authenticate regular IoT devices to IoT Hub with X.509 certificates also applies to downstream devices. The only difference is that you need to add a pointer to the gateway device to route the connection or, in offline scenarios, to handle the authentication on behalf of IoT Hub. In general, you can follow the same X.509 authentication steps for all IoT Hub devices, then simply replace the value of Hostname in the connection string to be the hostname of your gateway device.
 
-**Important:** The following code sample demonstrates how the IoT Hub SDKs use certificates to authenticate devices. In a production deployment, you should store all secrets like private or SAS keys in a hardware secure module (HSM).
+> [!IMPORTANT]
+> The following code sample demonstrates how the IoT Hub SDKs use certificates to authenticate devices. In a production deployment, you should store all secrets like private or SAS keys in a hardware secure module (HSM).
 
 For an example of a C\# program authenticating to IoT Hub with X.509 certificates, see Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). Some of the key lines of that sample are included here to demonstrate the authentication process.
 
@@ -231,7 +232,8 @@ catch (Exception ex)
 
 ```
 
-**Information**: You may be curious as to why the **X509Certificate2** type is used rather than an **X509Certificate**. The **X509Certificate** is an earlier implementation and is limited in its functionality. The **X509Certificate2** is a subclass of **X509Certificate** with more functionality that supports both V2 and V3 of the X509 standard.
+> [!NOTE]
+> You may be curious as to why the **X509Certificate2** type is used rather than an **X509Certificate**. The **X509Certificate** is an earlier implementation and is limited in its functionality. The **X509Certificate2** is a subclass of **X509Certificate** with more functionality that supports both V2 and V3 of the X509 standard.
 
 Code samples for other coding languages are available as follows:
 
