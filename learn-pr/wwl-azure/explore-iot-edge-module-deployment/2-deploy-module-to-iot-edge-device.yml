@@ -14,5 +14,5 @@ labId: 110071
 labModal: true
 durationInMinutes: 60
 content: |
-  [!include[](includes/2-deploy-a-module-to-an-iot-edge-device.md)]
+  [!include[](includes/2-deploy-module-to-iot-edge-device.md)]
 interactive: bash-editor
