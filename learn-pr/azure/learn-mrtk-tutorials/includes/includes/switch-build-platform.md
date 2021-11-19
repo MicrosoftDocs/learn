@@ -1,4 +1,4 @@
-# [Unity 2020 + Openxr](#tab/openxr)
+##[Unity 2020 + Openxr](#tab/openxr)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings.
 
@@ -23,7 +23,7 @@
 
     :::image type="content" source="../../media/close-icon.png" alt-text="Screenshot of Unity Build Window with close icon highlighted." lightbox="../../media/close-icon.png":::
 
-# [Unity 2019/2020 + windows xr plugin](#tab/winxr)
+##[Unity 2019/2020 + windows xr plugin](#tab/winxr)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings:
 
@@ -37,7 +37,7 @@
 
     :::image type="content" source="../../media/close-icon.png" alt-text="Screenshot of Unity Build page with close icon highlighted." lightbox="../../media/close-icon.png":::
 
-# [Legacy was](#tab/wsa)
+##[Legacy was](#tab/wsa)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings.
 
