@@ -1,108 +1,57 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Recall that in the storm events example, we've narrowed down events by time range, keywords, and values in a particular column. Now you want to organize these results to see the highest damaging storm events first.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Use the `sort` operator
 
-    Heading: none
+It's difficult to make sense of unordered data. Let's make it a bit easier to understand by organizing the order in which the results are presented. We'd like to know what were the events with the highest damage to property, so we'll order the results by the field `DamageProperty`.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+1. Run the following query:
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+    ```kusto
+    StormEvents
+    | where DamageProperty > 0
+    | project State, EventType, DamageProperty
+    | sort by DamageProperty desc
+    ```
+    
+1. You should get results that look like the following image: 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+    :::image type="content" source="../media/6-sort-1.png" alt-text="Screenshot of sort operator.":::
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. Notice that the results start from the highest property damage value, and decrease. In fact, the query sorts in descending order by default, so you can leave out the `desc` and obtain the same results. The state and event types aren't ordered in any way. 
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+We can sort based on more than one expression, as shown in the next example.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+## Sort on more than one expression
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Each region has unique weather patterns, so we'd actually like to know which events in each state made the most damage. To answer this question, we'll sort first on the state name, and then the damage within each state. The `sort` operator sorts in descending order by default, so we'll use `asc` to indicate that we want to sort the state names in ascending order.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. Run the following query:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    ```kusto
+    StormEvents
+    | where DamageProperty > 0
+    | project State, EventType, DamageProperty
+    | sort by State asc, DamageProperty
+    ```
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. You should get results that look like the following image:
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+    :::image type="content" source="../media/6-sort-2.png" alt-text="Screenshot of sort operator example 2.":::
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+1. Notice that now we've gotten a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the damage property values are sorted in descending order.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+## Use the `top` operator
 
-    Goal: List the steps they'll do to complete the exercise.
+Instead of sorting and scanning the top for a certain number of results, we can use the `top` operator to show the a specific number of top results.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. Run the following query:
+    
+    ```kusto
+    StormEvents
+    | where State == "FLORIDA"
+    | top 10 by DamageProperty
+    | project State, EventType, DamageProperty
+    ```
+1. You should get results that look like the following image:
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+    :::image type="content" source="../media/6-sort-3.png" alt-text="Screenshot of use of top operator.":::

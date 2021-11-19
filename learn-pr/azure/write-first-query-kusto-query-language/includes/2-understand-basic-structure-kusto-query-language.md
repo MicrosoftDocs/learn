@@ -1,78 +1,28 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this unit, you'll learn about the basic structure of the Kusto Query Language (KQL) so that you can use it to analyze and interpret this dataset.
 
-    Goal: briefly summarize the key skill this unit will teach
+## What is a Kusto query?
 
-    Heading: none
+A Kusto query is a read-only request to process data and return results. The request is stated in plain text that is easy to read, author, and automate. A Kusto query has one or more query statements and returns data in a tabular or graph format.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## What is a query statement?
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+The most common kind of query statement is a tabular expression **statement**, which means both its input and output consist of tables or tabular datasets. Tabular statements contain zero or more **operators**, each of which starts with a tabular input and returns a tabular output. Operators are sequenced by a `|` (pipe). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step and then fed into the following step. It's like a funnel, where you start out with an entire data table. Each time the data passes through another operator, it is filtered, rearranged, or summarized. Because the piping of information from one operator to another is sequential, the query operator order is important. At the end of the funnel, you're left with a refined output.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+These operators are KQL-specific, although often have parallels to SQL or other languages.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Let's look at an example query.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```kusto
+StormEvents 
+| where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+| where State == "FLORIDA"  
+| count 
+```
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+This query has a single tabular expression statement. The statement begins with a reference to a table called *StormEvents* and contains several operators, `where` and `count`, each separated by a pipe. The data rows for the source table are filtered by the value of the *StartTime* column and then filtered by the value of the *State* column. In the last line, the query returns a table with a single column and a single row containing the count of the remaining rows.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+The following image shows a schematic representation of the data being piped through this query.
 
-    Goal: State concisely what's covered in this unit
+:::image type="content" source="../media/1-storm-events.png" alt-text="Schematic image showing query as a funnel.":::
 
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+In the next units, we'll connect to a dataset, learn about some of the most commonly used operators, and then use the operators to answer questions about a sample dataset containing US meteorological data.

@@ -69,10 +69,11 @@ Add more units as needed for your content
     - Used together with other operators, for example string operators
     - By itself, is not performing data manipulations, just filtering
     - Filter to return certain kinds of storms (e.g. including the word "wind" or "flood")
-1. **Exercise:** count instances by using the `count` operator
-    - You can count how many instances or distinct instances there are for a certain set of conditions. 
-    - Attach to the `where` operator.
-    - Count how many different kinds of storms include the word "wind". 
+WHEN ACTUALLY WRITING IT, THIS DOESN'T FIT HERE. Will keep dcount() and count() to agg functions, and count on its own is pretty useless
+    1. **Exercise:** count instances by using the `count` operator
+        - You can count how many instances or distinct instances there are for a certain set of conditions. 
+        - Attach to the `where` operator.
+        - Count how many different kinds of storms include the word "wind". 
 1. **Exercise:** reorder returned data by using the `sort` operator
     - Reorders data based on asc/desc for a particular column
 1. **Exercise:** Build queries using multiple operators
