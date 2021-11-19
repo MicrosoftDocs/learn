@@ -34,6 +34,8 @@ Every request to Azure Storage must be authorized. Azure Storage supports the fo
 
 ## More Azure Storage options
 
+There are several additional types of Azure storage available.
+
 ### Azure Files
 
 Azure Files enables you to set up highly available network file shares that can be accessed by using the standard Server Message Block (SMB) protocol. That means that multiple VMs can share the same files with both read and write access. You can also read the files using the REST interface or the storage client libraries.

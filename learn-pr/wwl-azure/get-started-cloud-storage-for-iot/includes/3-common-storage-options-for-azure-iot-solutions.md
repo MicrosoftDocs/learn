@@ -15,7 +15,7 @@ Azure Storage is Microsoft's cloud storage solution for modern data storage scen
  -  Managed. Microsoft Azure handles hardware maintenance, updates, and critical issues for you.
  -  Accessible. Data in Azure Storage is accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides client libraries for Azure Storage in various programming languages, including .NET, Java, Node.js, Python, PHP, Ruby, Go, and others, and a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI. And the Azure portal and Azure Storage Explorer offer easy visual solutions for working with your data.
 
-## Azure Storage as a routing endpoint<br>
+## Azure Storage as a routing endpoint
 
 There are two storage services that IoT Hub can route messages to -- Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2) accounts. Azure Data Lake Storage accounts are hierarchical namespace-enabled storage accounts built on top of blob storage. Both of these use blobs for their storage.
 

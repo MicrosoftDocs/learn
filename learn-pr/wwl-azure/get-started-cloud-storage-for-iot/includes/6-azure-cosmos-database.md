@@ -14,6 +14,8 @@ Today’s applications are required to be highly responsive and always online. T
 
 ## Cosmos DB scenarios for IoT
 
+The following scenarios describe using Cosmos DB in an IoT solution.
+
 ### Scenario 1
 
 IoT use cases commonly share some patterns in how they ingest, process, and store data. First, these systems need to ingest bursts of data from device sensors of various locales. Next, these systems process and analyze streaming data to derive real-time insights. The data is then archived to a cold storage location for batch analytics. Microsoft Azure offers rich services that can be applied for IoT use cases including Azure Cosmos DB, Azure Event Hubs, Azure Stream Analytics, Azure Notification Hub, Azure Machine Learning, Azure HDInsight, and Power BI.
