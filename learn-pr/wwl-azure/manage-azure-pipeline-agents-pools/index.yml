@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-pipeline-agents-pools
 metadata:
   title: Manage Azure Pipeline agents and pools
   description: "Manage Azure Pipeline agents and pools"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ abstract: |
   - Make the agents and pools secure
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
