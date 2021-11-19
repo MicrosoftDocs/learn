@@ -1,6 +1,6 @@
 The Azure Digital Twins APIs are organized in two sections, one for managing the Azure Digital Twins instance (control plane) and the other for managing the elements contained within the instance (data plane).
 
-:::image type="content" source="../media/m11-l03-adt-rest-api-reference-c858f7f2.png" alt-text="ADT - REST API reference documentation":::
+:::image type="content" source="../media/m11-l03-adt-rest-api-reference-c858f7f2.png" alt-text="Screen shot that shows the Azure Digital Twins APIs for the Azure Digital Twins control plan and data plane.":::
 
 
 ## Azure Digital Twins API reference documentation
@@ -52,7 +52,7 @@ The following example uses the Azure CLI to obtain a token.
     
     ```
 
-:::image type="content" source="../media/m11-l03-adt-postman-get-bearer-token-26342a1e.png" alt-text="ADT - Postman bearer token":::
+:::image type="content" source="../media/m11-l03-adt-postman-get-bearer-token-26342a1e.png" alt-text="Screen shot that shows using an Azure CLI command to obtain a bearer token that can be used to assess the Azure Digital Twins APIs.":::
 
 
 **Important:** The bearer token is valid for at least five minutes and a maximum of 60 minutes. If you run out of time allotted for the current token, you can repeat the steps in this section to get a new one. You may need to refresh your token when evaluating the Azure Digital Twins APIs in Postman.

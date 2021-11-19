@@ -17,7 +17,7 @@ Consider a scenario that includes the following items:
 > [!NOTE]
 > This example uses a straightforward ID match between the device ID and a corresponding digital twin's ID, but it is possible to provide more sophisticated mappings from the device to its twin (such as with a mapping table).
 
-:::image type="content" source="../media/m11-l03-adt-telemetry-ingestion-from-iot-hub-6adb0608.png" alt-text="ADT - ADT telemetry ingestion":::
+:::image type="content" source="../media/m11-l03-adt-telemetry-ingestion-iot-hub-64bbcc4b.png" alt-text="Diagram that shows using IoT Hub as a source for data input to an Azure Digital Twins environment.":::
 
 
 In this case, an Azure Function receives the data from IoT hub's built-in Event Grid endpoint and uses the Azure Digital Twins APIs to set properties on a digital twin contained within an Azure Digital Twins instance. The Azure Function could also pass temperature telemetry to a Telemetry field of the digital twin.
@@ -38,7 +38,7 @@ Consider a scenario that includes the following items:
  -  Room digital twins have a Property for currentTemp.
  -  When a Thermostat digital twin Property changes, you need to update the currentTemp Property of the Room digital twin (the Room digital twin that is the parent of that Thermostat digital twin).
 
-:::image type="content" source="../media/m11-l03-adt-in-service-update-process-d8622fa3.png" alt-text="ADT - ADT in-process update":::
+:::image type="content" source="../media/m11-l03-adt-service-update-process-d64af8fb.png" alt-text="Diagram that shows using Event Grid and an Azure Function to update properties of an Azure Digital Twins environment.":::
 
 
 Whenever a Digital Twin Change Notification event occurs for a Thermostat digital twin, the following process is invoked:
@@ -59,7 +59,7 @@ Consider a scenario that includes the following items:
  -  The Thermostat digital twins have Property and Telemetry fields for temperature data coming from IoT hub.
  -  You need to analyze the temperature Telemetry data using Azure Time Series Insights.
 
-:::image type="content" source="../media/m11-l03-adt-downstream-tsi-3f1a5ca4.png" alt-text="ADT - ADT downstream service integration - TSI":::
+:::image type="content" source="../media/m11-l03-adt-downstream-tsi-3f1a5ca4.png" alt-text="Diagram that shows using an Event Hub namespace and an Azure Function to send Azure Digital Twins data to Time Series Insights.":::
 
 
 Whenever a Digital Twin Telemetry Messages event notification occurs for a Thermostat digital twin, the following process is invoked:
