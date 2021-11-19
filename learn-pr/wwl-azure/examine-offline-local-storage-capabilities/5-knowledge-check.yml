@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "The Time-to-Live setting is used to set the time interval that an offline device uses when attempting to reconnect with IoT Hub."
       isCorrect: false
       explanation: "Incorrect. The time to live setting is the amount of time (in seconds) that a message can wait to be delivered before it expires."
-  - content: "You have discovered that you are losing data during periods when the local WiFi signal is lost and devices are offline. You investigate whether IoT Edge provides a solution for this problem. Which of the following choices is true about using Azure Blob Storage for IoT Edge devices?"
+  - content: "A developer for a company has discovered that they are losing data during periods when the local WiFi signal is lost and devices are offline. The developer investigates whether IoT Edge provides a solution for this problem. Which of the following answer choices accurately describes using Azure Blob Storage for IoT Edge devices?"
     choices:
     - content: "It uses a blob storage module to provide a block blob storage solution on your IoT Edge device."
       isCorrect: true
@@ -36,6 +36,6 @@ quiz:
     - content: "It uses the IoT Edge hub module to provide a block blob storage solution on your IoT Edge device."
       isCorrect: false
       explanation: "Incorrect. The IoT Edge hub module does not provide block blob storage resource."
-    - content: "It uses IoT hub as the blob endpoint for any storage requests that are made by the Edge device."
+    - content: "It uses IoT hub as the blob endpoint for any storage requests that are made by the IoT Edge device."
       isCorrect: false
       explanation: "Incorrect. IoT Hub does not provide a built-in blob storage endpoint for IoT Edge devices and is not accessible when the device is offline."

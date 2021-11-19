@@ -79,7 +79,7 @@ Set blob tier.
   :::column-end:::
   :::column:::
     Put block.
-Put and get block list.
+Put and get blocklist.
   :::column-end:::
   :::column:::
     Put block from URL.
@@ -151,9 +151,13 @@ Blob storage modules include **deviceToCloudUpload** and **deviceAutoDelete** fe
  -  Turn ON/OFF the deviceToCloudUpload feature.
  -  Choose the order in which the data is copied to Azure like NewestFirst or OldestFirst.
  -  Specify the Azure Storage account to which you want your data uploaded.
- -  Specify the containers you want to upload to Azure. This module allows you to specify both source and target container names. \[!NOTE\] Remember that in this context, "container" refers to the top-level blob storage organization system, and not compute containers.
+ -  Specify the containers you want to upload to Azure. This module allows you to specify both source and target container names.
+
+    > [!NOTE]
+    > Remember that in this context, "container" refers to the top-level blob storage organization system, and not compute containers.
+
  -  Choose the ability to delete the blobs immediately, after upload to cloud storage is finished.
- -  Do full blob upload (using Put Blob operation) and block level upload (using Put Block and Put Block List operations).
+ -  Do full blob upload (using `Put Blob` operation) and block level upload (using `Put Block` and `Put Block List` operations).
 
 This module uses block level upload, when your blob consists of blocks. Here are some of the common scenarios:
 
@@ -316,7 +320,7 @@ Environment variable: deviceAutoDeleteProperties\_\_ deleteAfterMinutes=&lt;minu
     true, false
   :::column-end:::
   :::column:::
-    By default it is set to true, and it will retain the blob while it is uploading to cloud storage if deleteAfterMinutes expires. You can set it to false and it will delete the data as soon as deleteAfterMinutes expires. Note: For this property to work uploadOn should be set to true.
+    By default it is set to true, and it will retain the blob while it is uploading to cloud storage if deleteAfterMinutes expires. You can set it to false and it will delete the data as soon as deleteAfterMinutes expires. For this property to work uploadOn should be set to true.
 
 Environment variable: deviceAutoDeleteProperties\_\_retainWhileUploading=\{false,true\}
   :::column-end:::

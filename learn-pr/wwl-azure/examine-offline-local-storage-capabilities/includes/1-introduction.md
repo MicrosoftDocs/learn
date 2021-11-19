@@ -1,6 +1,6 @@
 The Azure IoT Edge environment can be configured to support offline and local storage scenarios for situations when networks or device connections are not always available.
 
-Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to develop custom solutions for IoT Edge devices using Azure IoT Edge technologies. Understanding the Azure IoT Edge environment's ability to support offline scenarios will help to prepare the team for their upcoming coding tasks. You decide to examine the offline and local storage capabilities enabled by Azure IoT Edge.<br>
+Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to develop custom solutions for IoT Edge devices using Azure IoT Edge technologies. Understanding the Azure IoT Edge environment's ability to support offline scenarios will help to prepare the team for their upcoming coding tasks. You decide to examine the offline and local storage capabilities enabled by Azure IoT Edge.
 
 In this module, you will:
 
