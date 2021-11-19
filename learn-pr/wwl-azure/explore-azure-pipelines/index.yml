@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-pipelines
 metadata:
   title: Explore Azure Pipelines
   description: "Explore Azure Pipelines"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ abstract: |
   - Understand Azure Pipeline key terms
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:

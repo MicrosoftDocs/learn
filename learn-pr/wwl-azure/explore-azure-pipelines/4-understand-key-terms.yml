@@ -4,13 +4,13 @@ title: Understand Azure Pipelines key terms
 metadata:
   title: Understand Azure Pipelines key terms
   description: "Understand Azure Pipelines key terms"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-key-terms.md)]
