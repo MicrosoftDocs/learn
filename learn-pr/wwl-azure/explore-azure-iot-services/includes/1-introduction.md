@@ -6,6 +6,6 @@ In this module you will:
 
  -  Examine features of the Azure IoT Hub and Device Provisioning Service resources.
  -  Review Azure resource naming requirements.
- -  Create and examine Azure IoT Hub and Device Provisioning Service resources in the Azure portal.<br>
+ -  Create and examine Azure IoT Hub and Device Provisioning Service resources in the Azure portal.
 
 By the end of this module, you will be able to describe the features of the IoT Hub and Device Provisioning Service resources and create instances of the services in the Azure portal.
