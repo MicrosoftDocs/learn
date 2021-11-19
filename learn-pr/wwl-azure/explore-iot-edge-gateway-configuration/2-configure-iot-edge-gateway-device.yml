@@ -14,5 +14,5 @@ labId: 110072
 labModal: true
 durationInMinutes: 60
 content: |
-  [!include[](includes/2-configure-an-iot-edge-gateway-device.md)]
+  [!include[](includes/2-configure-iot-edge-gateway-device.md)]
 interactive: bash-editor
