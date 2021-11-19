@@ -18,6 +18,7 @@ abstract: |
   - Examine output and release management for actions
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
