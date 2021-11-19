@@ -28,7 +28,7 @@ When a device is initially provisioned through autoprovisioning, it boots-up, an
 
 Once a new leaf certificate has been rolled to the device, it can no longer connect to the IoT hub because it’s using a new certificate to connect. The IoT hub only recognizes the device with the old certificate. The result of the device's connection attempt will be an "unauthorized" connection error. To resolve this error, you must update the enrollment entry for the device to account for the device's new leaf certificate. Then the provisioning service can update the IoT Hub device registry information as needed when the device is reprovisioned.
 
-One possible exception to this connection failure would be a scenario where you've created an Enrollment Group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device will be recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least block list the specific device certificates in the group that are considered to be breached.
+One possible exception to this connection failure would be a scenario where you've created an Enrollment Group for your device in the provisioning service. In this case, if you aren't rolling the root or intermediate certificates in the device's certificate chain of trust, then the device will be recognized if the new certificate is part of the chain of trust defined in the enrollment group. If this scenario arises as a reaction to a security breach, you should at least blocklist the specific device certificates in the group that are considered to be breached.
 
 Updating enrollment entries for rolled certificates is accomplished on the Manage enrollments page of the Device Provisioning Service instance that has the enrollment entry for your device. How you handle updating the enrollment entry will depend on whether you're using individual enrollments, or group enrollments.
 
@@ -43,7 +43,7 @@ Later when the secondary certificate also nears expiration, and needs to be roll
 3.  Select Secondary Certificate and then, select the folder icon to choose the new certificate to be uploaded for the enrollment entry.
 4.  Select Save.
 
-:::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Roll Certificates - individual enrollments for certificate expiration":::
+:::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Screen shot that shows where to configure secondary certificates when rolling certificates for a device.":::
 
 
 ### Enrollment groups and certificate expiration

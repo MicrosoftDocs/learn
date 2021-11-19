@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,18 +17,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Your company will be using X.509 certificates during the provisioning process. Under what conditions would you need to roll device certificates?"
+  - content: "A company will be using X.509 certificates during the provisioning process. Under what conditions would they need to roll device certificates?"
     choices:
-    - content: "You need to reprovision a device."
+    - content: "When they need to reprovision a device."
       isCorrect: false
       explanation: "Incorrect. Reprovisioning a device does not require rolling the device certificates."
-    - content: "You know a certificate is about to expire."
+    - content: "When they know a certificate is about to expire."
       isCorrect: true
       explanation: "Correct. It is appropriate to roll device certificates before they expire."
-    - content: "You will be moving a device between hubs."
+    - content: "When they will be moving a device between hubs."
       isCorrect: false
       explanation: "Incorrect. Moving a device between hubs does not require rolling the device certificates."
-  - content: "Your company is in the process of deploying 700 devices when their plans change. Device enrollments have already been completed for all 700 devices. There are 500 devices that have been provisioned, but those devices must be moved to a different IoT Hub. The other 200 devices will not be provisioned due to a change in business requirements. Which of the following answer choices describes the initial actions that must be taken?"
+  - content: "A company is in the process of deploying 700 devices when their plans change. Device enrollments have already been completed for all 700 devices. There are 500 devices that have been provisioned, but those devices must be moved to a different IoT Hub. The other 200 devices will not be provisioned due to a change in business requirements. Which of the following answer choices describes the initial actions that must be taken?"
     choices:
     - content: "Disenroll the devices that have not been provisioned. Leave the other enrollments unchanged."
       isCorrect: false
