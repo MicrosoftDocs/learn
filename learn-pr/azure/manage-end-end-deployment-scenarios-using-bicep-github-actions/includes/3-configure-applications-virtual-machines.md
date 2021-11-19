@@ -89,3 +89,9 @@ In this module, we focus on Azure App Service to illustrate the workflow concept
 In a previous module, you learned about the value and importance of running automated tests from your workflow. When you deploy an app, it's a good practice for the workflow to run some tests that invoke the app's code. Such tests reduce the risk that an app or deployment error might cause downtime. In more advanced scenarios, you might even perform a set of test cases against your app, such as invoking APIs or submitting and monitoring a synthetic transaction.
 
 Many apps implement *health check endpoints*. When a health check endpoint receives a request, it performs a series of checks against the website, such as ensuring that databases and network services are reachable from the app environment. The response that the site returns indicates whether the app is healthy. Developers can write and customize their own health checks to suit the app's requirements. If your app has a health check endpoint, it often makes sense to monitor it from your workflow after the deployment job finishes.
+
+## Your deployment workflow
+
+In the next exercise, you'll update your deployment workflow to add new jobs to build your website's application and deploy it to each environment:
+
+:::image type="content" source="../media/3-workflow-application.png" alt-text="TODO" border="false":::
