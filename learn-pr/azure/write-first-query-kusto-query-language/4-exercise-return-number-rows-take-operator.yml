@@ -9,6 +9,6 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial 
-durationInMinutes: 5 # user input: the estimate time to complete the unit
+durationInMinutes: 5 
 content: |
   [!include[](includes/4-exercise-return-number-rows-take-operator.md)]

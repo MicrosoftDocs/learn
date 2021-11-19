@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-first-query-kusto-query-language.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Check your knowledge
@@ -9,7 +9,6 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: "TODO"
 durationInMinutes: 5 
 content: |
 quiz:
