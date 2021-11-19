@@ -54,14 +54,14 @@ For user accounts that are not part of an Azure Active directory, then using SQL
 
 This approach is typically useful for external users who need to access the data, or if you are using third party or legacy applications against the Azure Synapse Analytics dedicated SQL pool
 
-### Multi factor authentication
+### Multifactor authentication
 
 Synapse SQL support connections from SQL Server Management Studio (SSMS) using Active Directory Universal Authentication.
  
 > [!div class="mx-imgBorder"]
-> ![Log in with multi-factor-authentication.](../media/log-multi-factor.png)
+> ![Log in with multifactor-authentication.](../media/log-multi-factor.png)
 
-This enables you to operate in environments that use Conditional Access policies that enforce multi-factor authentication as part of the policy.
+This enables you to operate in environments that use Conditional Access policies that enforce multifactor authentication as part of the policy.
 
 ### Keys
 

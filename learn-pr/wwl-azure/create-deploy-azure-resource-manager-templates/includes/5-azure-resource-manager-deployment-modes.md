@@ -14,7 +14,7 @@ Be careful using complete mode with `copy loops`. Any resources that aren't spec
 
 In incremental mode, Resource Manager **leaves unchanged** resources that exist in the resource group but aren't specified in the template.
 
-However, when redeploying an existing resource in incremental mode, the outcome is a different. Specify all properties for the resource, not just the ones you're updating. A common misunderstanding is to think properties that aren't specified are left unchanged. If you don't specify certain properties, Resource Manager interprets the update as overwriting those values.
+However, when redeploying an existing resource in incremental mode, the outcome is different. Specify all properties for the resource, not just the ones you're updating. A common misunderstanding is to think properties that aren't specified are left unchanged. If you don't specify certain properties, Resource Manager interprets the update as overwriting those values.
 
 ## Example result
 
