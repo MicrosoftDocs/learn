@@ -4,12 +4,13 @@ title: Explain virtual network service endpoints
 metadata:
   title: Explain virtual network service endpoints
   description: "Explain virtual network service endpoints"
-  ms.date: 08/20/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 22
 content: |
   [!include[](includes/4-explain-virtual-network-service-endpoints.md)]
