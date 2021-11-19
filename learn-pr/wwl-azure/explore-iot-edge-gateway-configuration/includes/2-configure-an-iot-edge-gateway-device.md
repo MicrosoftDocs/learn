@@ -1,17 +1,5 @@
-This unit includes a lab to complete.
-
-Use the free resources provided in the lab to complete the exercises in this unit. You will not be charged.
-
 > [!NOTE]
-> Be prepared for UI changes
-
-Given the dynamic nature of Microsoft cloud tools, you may experience user interface (UI) changes that were made following the development of this training content that do not match up with lab instructions presented in this lab manual.
-
-The Microsoft Learning team will update this training course as soon as we can when any such changes are brought to our attention. However, given the dynamic nature of cloud updates, you may run into UI changes before this training content is updated. If this occurs, you will have to adapt to the changes and work through them in the labs as needed.
-
-\[Button in the UI displays: "Sign in to launch the lab"\]
+> Be prepared for UI changes. You may experience user interface (UI) changes in the Microsoft cloud tools that were introduced following the development of this training content. The UI may not match up with lab instructions in some cases. If you encounter UI changes, you will have to adapt to the changes and work through them in the labs as needed.
 
 > [!TIP]
-> When you finish the lab exercises, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!<br>
-
-After completing the lab, if you've finished working with the Azure IoT services, delete the Azure resources that you may have created during the lab.
+> When you finish the lab exercises, end the lab to close the VM. Don't forget to come back and complete the knowledge check! The knowledge check is required in order to earn points for completing this module. After completing the lab instruction steps, you may want to delete any Azure resources that you created during the lab.
