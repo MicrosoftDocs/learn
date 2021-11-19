@@ -2,7 +2,7 @@ Outputs let you store and save the results of the Stream Analytics job. By using
 
 When you design your Stream Analytics query, refer to the name of the output by using the INTO clause. You can use a single output per job, or multiple outputs per streaming job (if you need them) by providing multiple INTO clauses in the query. To create, edit, and test Stream Analytics job outputs, you can use the Azure portal, Azure PowerShell, .NET API, REST API, and Visual Studio.
 
-Some outputs types support partitioning. Output batch sizes vary to optimize throughput.
+Some output types support partitioning. Output batch sizes vary to optimize throughput.
 
 ## Blob storage and Azure Data Lake Gen2<br>
 
@@ -167,9 +167,9 @@ When you are using Blob storage as output, a new file is created in the blob in 
 
 ## Event Hubs
 
-The Azure Event Hubs service is a highly scalable publish-subscribe event ingestor. It can collect millions of events per second. One use of an event hub as output is when the output of a Stream Analytics job becomes the input of another streaming job. For information about the maximum message size and batch size optimization, see the output batch size section.
+The Azure Event Hubs service is a highly scalable publish-subscribe event ingestor. It can collect millions of events per second. One use of an Event Hub as output is when the output of a Stream Analytics job becomes the input of another streaming job. For information about the maximum message size and batch size optimization, see the output batch size section.
 
-You need a few parameters to configure data streams from event hubs as an output.
+You need a few parameters to configure data streams from Event Hubs as an output.
 
 :::row:::
   :::column:::
@@ -184,39 +184,39 @@ You need a few parameters to configure data streams from event hubs as an output
     Output alias
   :::column-end:::
   :::column:::
-    A friendly name used in queries to direct the query output to this event hub.
+    A friendly name used in queries to direct the query output to this Event Hub.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event hub namespace
+    Event Hub namespace
   :::column-end:::
   :::column:::
-    A container for a set of messaging entities. When you created a new event hub, you also created an event hub namespace.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Event hub name
-  :::column-end:::
-  :::column:::
-    The name of your event hub output.
+    A container for a set of messaging entities. When you created a new Event Hub, you also created an Event Hub namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event hub policy name
+    Event Hub name
   :::column-end:::
   :::column:::
-    The shared access policy, which you can create on the event hub's Configure tab. Each shared access policy has a name, permissions that you set, and access keys.
+    The name of your Event Hub output.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event hub policy key
+    Event Hub policy name
   :::column-end:::
   :::column:::
-    The shared access key that is used to authenticate access to the event hub namespace.
+    The shared access policy, which you can create on the Event Hub's Configure tab. Each shared access policy has a name, permissions that you set, and access keys.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Event Hub policy key
+  :::column-end:::
+  :::column:::
+    The shared access key that is used to authenticate access to the Event Hub namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -224,7 +224,7 @@ You need a few parameters to configure data streams from event hubs as an output
     Partition key column
   :::column-end:::
   :::column:::
-    Optional. A column that contains the partition key for event hub output.
+    Optional. A column that contains the partition key for Event Hub output.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -707,7 +707,7 @@ The following table lists the property names and their descriptions for creating
     Service Bus namespace
   :::column-end:::
   :::column:::
-    A container for a set of messaging entities. When you created a new event hub, you also created a Service Bus namespace.
+    A container for a set of messaging entities. When you created a new Event Hub, you also created a Service Bus namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -715,7 +715,7 @@ The following table lists the property names and their descriptions for creating
     Topic name
   :::column-end:::
   :::column:::
-    Topics are messaging entities, similar to event hubs and queues. They are designed to collect event streams from devices and services. When a topic is created, it is also given a specific name. The messages sent to a topic are not available unless a subscription is created, so ensure there is one or more subscriptions under the topic.
+    Topics are messaging entities, similar to Event Hubs and queues. They are designed to collect event streams from devices and services. When a topic is created, it is also given a specific name. The messages sent to a topic are not available unless a subscription is created, so ensure there is one or more subscriptions under the topic.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -1137,7 +1137,7 @@ You can attach query columns as user properties to your outgoing messages. These
 
  -  Service Bus queue
  -  Service Bus topic
- -  Event hub
+ -  Event Hub
 
 In the following example, we add the two fields DeviceId and DeviceStatus to the metadata.
 
@@ -1231,8 +1231,8 @@ The following table summarizes the partition support and the number of output wr
   :::column-end:::
   :::column:::
     Varies depending on partition alignment.
-When the partition key for event hub output is equally aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in event hub output. Each writer uses the EventHubSender class to send events to the specific partition.
-When the partition key for event hub output is not aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in that prior step. Each writer
+When the partition key for Event Hub output is equally aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in Event Hub output. Each writer uses the EventHubSender class to send events to the specific partition.
+When the partition key for Event Hub output is not aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in that prior step. Each writer
   :::column-end:::
   :::column:::
     Uses the SendBatchAsync class in EventHubClient to send events to all the output partitions.

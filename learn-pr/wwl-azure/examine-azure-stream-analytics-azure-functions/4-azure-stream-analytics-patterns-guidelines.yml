@@ -4,7 +4,7 @@ title: Review ASA patterns and guidelines
 metadata:
   title: Review ASA patterns and guidelines
   description: "Review ASA patterns and guidelines"
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-asa-patterns-and-guidelines.md)]
+  [!include[](includes/4-azure-stream-analytics-patterns-guidelines.md)]

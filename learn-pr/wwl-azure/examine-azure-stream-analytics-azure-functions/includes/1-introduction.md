@@ -4,7 +4,7 @@ Suppose you have joined a team that is implementing an Azure IoT solution for th
 
 In this module, you will:
 
- -  Examine Azure Stream Analytics concepts, use cases, and guidelines.<br>
+ -  Examine Azure Stream Analytics concepts, use cases, and guidelines.
  -  Examine Azure Stream Analytics input types and configuration requirements.
  -  Examine the Azure Stream Analytics query syntax for simple and complex queries.
  -  Examine how Azure Stream Analytics handles time data and the available windowing functions.
