@@ -51,9 +51,9 @@ If all goes well, go straight into the second test.
 
 A console message appears every 5 seconds, providing the temperature of the contents. Watch the telemetry for a while to mentally prepare for the main test of this module!
 
-### 3. Confirm IoT Central correctly picks up the data 
+### 3. Confirm IoT Central correctly picks up the data
 
-To verify the data is being received at the IoT Central app: 
+To verify the data is being received at the IoT Central app:
 
 1. Make sure your IoT Central app is open and the device is selected. If the device isn't selected, in the menu on the left, select **Devices**. In the list of devices, double-click the real device, **RefrigeratedTruck - 1**.
 

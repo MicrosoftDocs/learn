@@ -5,8 +5,7 @@ Azure Monitor diagnostic logs are logs produced by an Azure service that provide
 
 * **Resource logs**. These logs come from Azure services that deploy resources within an Azure subscription, such as Network Security Groups (NSGs) or storage accounts.
 
-> [!div class="mx-imgBorder"]
-> ![Compute resources have application, diagnostic, and activity logs. Non compute resources do not have application logs.](../media/az500-diagnostic-logs-1.png)
+![Compute resources have application, diagnostic, and activity logs. Non compute resources do not have application logs.](../media/az500-diagnostic-logs-1.png)
 
 The content of these logs varies by Azure service and resource type. For example, NSG rule counters and Azure Key Vault audits are two types of diagnostic logs.
 
@@ -17,15 +16,13 @@ These logs also differ from **guest operating system (OS)–level diagnostic log
 ### Create diagnostic settings in Azure portal
 You can configure diagnostic settings in the Azure portal either from the Azure Monitor menu or from the menu for the resource.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the diagnostics logging page.](../media/az500-diagnostic-logs-2.png)
+![Screenshot of the diagnostics logging page.](../media/az500-diagnostic-logs-2.png)
 
 ### Uses for diagnostic logs
 
 Here are some of the things you can do with diagnostic logs:
 
-> [!div class="mx-imgBorder"]
-> ![Diagnostic logs are exported to Event hubs, storage, and Monitor.](../media/az500-diagnostic-logs-3.png)
+![Diagnostic logs are exported to Event hubs, storage, and Monitor.](../media/az500-diagnostic-logs-3.png)
 
 * Save them to a storage account for auditing or manual inspection. You can specify the retention time (in days) by using resource diagnostic settings.
 

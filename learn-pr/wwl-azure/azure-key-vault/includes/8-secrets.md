@@ -7,8 +7,7 @@ For highly sensitive data, clients should consider additional layers of protecti
 
 Key Vault also supports a contentType field for secrets. Clients may specify the content type of a secret to assist in interpreting the secret data when it's retrieved. The maximum length of this field is 255 characters. There are no pre-defined values. The suggested usage is as a hint for interpreting the secret data. For instance, an implementation may store both passwords and certificates as secrets, then use this field to differentiate. There are no predefined values.
 
-> [!div class="mx-imgBorder"]
-> ![Key Vault Secrets Create a secret form](../media/az500-key-vault-secrets.png)
+![Key Vault Secrets Create a secret form](../media/az500-key-vault-secrets.png)
 
 As shown above, the values for Key Vault Secrets are:
 * Name-vaule pair - **Name must be unique in the Vault**

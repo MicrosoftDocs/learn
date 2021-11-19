@@ -6,15 +6,15 @@ In a previous exercise in this module, you identified your governance and busine
 
 Azure Policy enables you to define both individual policies and *groups* of related policies, known as *initiatives*. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
-Azure Policy comes with a number of built-in policy and initiative definitions that you can use. These built-in definitions can be found under categories such as Storage, Networking, Compute, Security Center, and Monitoring. For example, if you define a policy that allows only a certain SKU (stock-keeping unit) size for virtual machines (VMs) to be used in your environment, that policy is invoked when you create new VMs and whenever you resize existing VMs. Azure Policy also evaluates and and all current VMs in your environment.
+Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring. For example, if you define a policy that allows only a certain SKU (stock-keeping unit) size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs in your environment.
 
-In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with the **AppName** tag and a value of "SpecialOrders," Azure Policy can automatically reapply that tag if it has been removed.
+In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with **AppName** tag and a value of "SpecialOrders," Azure Policy will automatically reapply that tag if it was missing.
 
-Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that apply to the pre-deployment and post-deployment phases of your applications.
+Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post-deployment phases of your applications.
 
 ## Azure Policy in action
 
-Implementing a policy in Azure Policy involves these three tasks:
+Implementing a policy in Azure Policy involves three tasks:
 
 1.  Create a policy definition.
 2.  Assign the definition to resources.
@@ -40,7 +40,7 @@ To implement your policy definitions, you assign definitions to resources. A *po
 
 Policy assignments are inherited by all child resources within that scope. If a policy is applied to a resource group, that policy is applied to all resources within that resource group. You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-### ATask 3. Review the evaluation results
+### Task 3. Review the evaluation results
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or noncompliant. You can review the noncompliant policy results and take any action that's needed.
 

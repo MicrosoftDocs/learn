@@ -1,30 +1,41 @@
-There are many scenarios where anomaly detection is helpful. 
+The Anomaly Detector service supports batch processing of time series data and last-point anomaly detection for real-time data.
 
-- monitoring temperatures or pressures in real time
-- evaluating mean time between failures (MTBF) for hardware products
-- comparing month over month expenses for product costs
-- any scenario that can benefit from variation changes in data
+## Batch detection
 
-## Temperature example
+Batch detection involves applying the algorithm to an entire data series at one time. The concept of time series data involves evaluation of a data set as a batch. Use your time series to detect any anomalies that might exist throughout your data. This operation generates a model using your entire time series data, with each point analyzed using the same model.
 
-The introduction of this module discussed evaluation of temperature recordings related to storing medications. Consideration must be given to the storage requirements for the medication such as:
+Batch detection is best used when your data contains:
 
-- maximum allowable temperature
-- minimum allowable temperature
-- duration for temperatures outside the acceptable range
+- Flat trend time series data with occasional spikes or dips
+- Seasonal time series data with occasional anomalies
+    - Seasonality is considered to be a pattern in your data, that occurs at regular intervals. Examples would be hourly, daily, or monthly patterns. Using seasonal data, and specifying a period for that pattern, can help to reduce the latency in detection.
 
-## Real-time temperature monitoring
+When using the batch detection mode, Anomaly Detector creates a single statistical model based on the entire data set that you pass to the service. From this model, each data point in the data set is evaluated and anomalies are identified. 
 
-Your monitoring application can be configured with the above criteria and then perform anomaly detection using both streaming and batch detection techniques. Streaming detection is most useful for monitoring critical storage requirements that must be acted on immediately. Sensors will monitor the temperature inside the compartment and send these readings to your application or an event hub on Azure. Anomaly Detector will evaluate the streaming data points and determine if a point is an anomaly.
+#### Batch detection example 
 
-## Evaluate historical temperature readings
+Consider a pharmaceutical company that stores medications in storage facilities where the temperature in the facilities needs to remain within a specific range. To evaluate whether the medication remained stored in a safe temperature range in the past three months we need to know:
 
-If you are interested in the temperature settings over a period of time, you can record the readings and write them to a file for use in the batch model. When you want to evaluate a period of storage, you can extract the required time series data, package it into a JSON object, and send it to the API for evaluation. You will then have a historical view of the temperature readings over time. Anomalies can be evaluated to determine if the medications have been negatively impacted and help decide a course of action that may result in destroying the medications due to safety issues.
+- the maximum allowable temperature
+- the minimum allowable temperature
+- the acceptable duration of time for temperatures to be outside the safe range
 
-## Manufacturing scenario
+If you are interested in evaluating compliance over historical readings, you can extract the required time series data, package it into a JSON object, and send it to the Anomaly Detector service for evaluation. You will then have a historical view of the temperature readings over time. 
 
-Another scenario where anomaly detection may be useful is in the carbonated beverage industry, to monitor the carbo-cooler temperatures. Soft drinks are an example where carbon dioxide is added to the product during the bottling or canning process. There is a specific temperature range that the product must be kept at for the carbon dioxide to adhere to the product.
+## Real-time detection
 
-Bottling systems use a device known as a carbo-cooler to achieve the refrigeration of the product for this process. If the temperature goes too low, the product will freeze in the carbo-cooler. Too warm, and the carbon dioxide will not adhere properly.  Either situation results in a product batch that cannot be sold to customers.
+Real-time detection uses streaming data by comparing previously seen data points to the last data point to determine if your latest one is an anomaly. This operation generates a model using the data points you send, and determines if the target (current) point is an anomaly. By calling the service with each new data point you generate, you can monitor your data as it's created.
+
+#### Real-time detection example 
+
+Consider a scenario in the carbonated beverage industry where real-time anomaly detection may be useful. The carbon dioxide added to soft drinks during the bottling or canning process needs to stay in a specific temperature range.
+
+Bottling systems use a device known as a carbo-cooler to achieve the refrigeration of the product for this process. If the temperature goes too low, the product will freeze in the carbo-cooler. If the temperature is too warm, the carbon dioxide will not adhere properly. Either situation results in a product batch that cannot be sold to customers.
 
 This carbonated beverage scenario is an example of where you could use streaming detection for real-time decision making. It could be tied into an application that controls the bottling line equipment. You may use it to feed displays that depict the system temperatures for the quality control station. A service technician may also use it to identify equipment failure potential and servicing needs.
+
+You can use the Anomaly Detector service to create a monitoring application configured with the above criteria to perform real-time temperature monitoring. You can perform anomaly detection using both streaming and batch detection techniques. Streaming detection is most useful for monitoring critical storage requirements that must be acted on immediately. Sensors will monitor the temperature inside the compartment and send these readings to your application or an event hub on Azure. Anomaly Detector will evaluate the streaming data points and determine if a point is an anomaly.
+
+
+
+

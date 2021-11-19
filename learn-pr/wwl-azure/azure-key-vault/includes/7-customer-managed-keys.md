@@ -9,8 +9,7 @@ Once you have created your Key Vault and have populated it with keys and secrets
 
 This service uses Azure Key Vault that provides highly available and scalable secure storage for RSA cryptographic keys backed by FIPS 140-2 Level 2 validated HSMs (Hardware Security Modules). Key Vault streamlines the key management process and enables customers to fully maintain control of keys that are used to encrypt data, manage, and audit their key usage, in order to protect sensitive data as part of their regulatory or compliance needs, HIPAA and BAA compliant.
 
-> [!div class="mx-imgBorder"]
-> ![Data flow for Azure manual key rotation in Key Vault](../media/az500-customer-keys.png)
+![Data flow for Azure manual key rotation in Key Vault](../media/az500-customer-keys.png)
 
 Customers can generate/import their RSA key to Azure Key Vault and enable Storage Service Encryption. Azure Storage handles the encryption and decryption in a fully transparent fashion using envelope encryption in which data is encrypted using an AES-based key, which is in turn protected using the Customer-Managed Key stored in Azure Key Vault.
 

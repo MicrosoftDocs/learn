@@ -13,7 +13,7 @@ Now for the best fun of all.
     [![Screenshot showing the console output when a new route has been found.](../media/refrigerated-trucks-route-points.png)](../media/refrigerated-trucks-route-points.png#lightbox)
 
    > [!NOTE]
-   > If you see a message that includes the text **Access denied due to invalid subscription key**, check your subscription key to Azure Maps.
+   > If you see a message that includes the text **The provided key was incorrect or the account resource does not exist**, check your subscription key to Azure Maps.
 
 1. On the dashboard's **Location** tile, check to see whether your truck is on its way. You might have to wait a short time for the apps to sync.
 

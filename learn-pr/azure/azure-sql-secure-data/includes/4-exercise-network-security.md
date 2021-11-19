@@ -8,7 +8,7 @@ In this exercise, you'll see how to view and edit firewall rules. Setting up fir
 
 ### Manage firewall rules in the Azure portal
 
-1. In the Azure portal resource menu, select **SQL databases** and then select your Azure SQL Database logical server (AdventureWorks).
+1. In the Azure portal resource menu, select **SQL databases** and then select your Azure SQL Database  (AdventureWorks).
 
 1. In the command bar of your SQL database, select **Set server firewall**.  
 
@@ -30,7 +30,7 @@ In this exercise, you'll see how to view and edit firewall rules. Setting up fir
     SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
     ```  
 
-    The result should be the *public* IP address of your local machine. You can verify your IP address by running the following command in Azure Cloud Shell:
+    The result should be the *public* IP address of your local machine. You can verify your IP address by running the following command on a local instance of PowerShell (not the Azure Cloud Shell):
     
     ```pws
     (Invoke-WebRequest -UseBasicParsing -Uri "https://ipinfo.io/ip").Content
