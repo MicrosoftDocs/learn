@@ -1,0 +1,1 @@
+Your team will be responsible for implementing custom solutions for the IoT Edge as part of the company's IoT solution. By implementing a gateway device scenario that provides extended offline support and local storage within a test environment, you have gained the experience that you will need to implement the company's production solution.
