@@ -1,6 +1,6 @@
 To get started with Power BI Desktop, the first step is to connect to data. There are many different data sources you can connect to from Power BI Desktop.
 
-## Connect to data
+## Data connection types
 
 Data types are organized in the following categories:
 
