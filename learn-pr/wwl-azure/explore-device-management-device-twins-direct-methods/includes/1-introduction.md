@@ -2,7 +2,7 @@ Device management often includes updating the configuration of a device by imple
 
 Suppose you have joined a team that is implementing an Azure IoT solution for the company. Your team needs to manage the devices that have been deployed as part of the company's IoT solution. You decide to gain experience managing device configurations by implementing device twins and direct methods in a test environment.
 
-In this module, you will complete a lab that includes the following activities:<br>
+In this module, you will complete a lab that includes the following activities:
 
  -  Create a back-end service app that listens for device telemetry.
  -  Implement a direct method that communicates settings to an IoT device.
