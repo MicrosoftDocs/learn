@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.what-is-azure-defender.explain-azure-defender
-title: Explain Azure Defender
+title: Explain Microsoft Defender
 metadata:
-  title: Explain Azure Defender
-  description: "Explain Azure Defender"
-  ms.date: 11/16/2021
+  title: Explain Microsoft Defender
+  description: "Explain Microsoft Defender"
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
