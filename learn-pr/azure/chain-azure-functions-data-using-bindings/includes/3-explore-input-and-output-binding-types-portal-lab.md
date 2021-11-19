@@ -101,7 +101,7 @@ Now that we have a function app, it's time to create a function. Each function i
 
     - In the **Authorization level** text box, accept default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we will find once it is created.
 
-1. Select **Create**. The sysem creates your trigger, and when it has propagated to your function app, the **Function** pane for *HttpTrigger1* appears.
+1. Select **Create**. When the trigger function has propagated to your function app, the **Function** pane for *HttpTrigger1* appears.
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
