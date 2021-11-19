@@ -286,7 +286,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-workload-query-plan-inline.png" alt-text="Screenshot of the workload query plan." lightbox="../media/5-ssms-workload-query-plan-expanded.png":::
 
-    Because of the small number of rows in the tables in this database, this query plan isn't inefficient. There might be some tuning opportunities, but you won't gain much performance by tuning the query itself. You might see a warning in the plan about a lack of statistics for one of the columns in the query for the clustered index seek. This doesn't factor into overall performance.
+    This database table has so few rows that it does not need a plan--it can be inefficient. Tuning the query won't improve performance by a measurable amount. You might see a warning in the plan about a lack of statistics for one of the columns for the clustered index seek. This doesn't factor into overall performance.
 
 1. Below the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query Store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
 
@@ -294,41 +294,44 @@ Query Store comes with a series of system catalog views to view performance data
 
     You can see the top wait category is CPU (this is equivalent to the `wait_type` SOS_SCHEDULER_YIELD, which can be seen in `sys.dm_os_wait_stats`), and the average wait time.
 
-1. Select the CPU bar chart in the report. The top query waiting for CPU is the query from the workload that you're using.
+1. Select the CPU bar chart in the report. The top query, waiting for CPU, is the query from the workload that you're using.
 
     :::image type="content" source="../media/5-ssms-top-wait-stats-query.png" alt-text="Screenshot of the top wait statistics query." lightbox="../media/5-ssms-top-wait-stats-query.png":::
 
-    Notice that the average wait time for CPU for this query is a high percentage of the overall average duration for the query.
+    Notice that the average wait time for CPU in this query is a high percentage of the overall average duration for the query.
 
-    Considering the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our instance of Azure SQL Database.
+    Considering the evidence, without any query tuning, our workload requires more CPU capacity than we have deployed for our instance of Azure SQL Database.
 
-1. You can close both Query Store reports for now. You'll use the same reports in the next exercise.
+1. Close both Query Store reports. You'll use the same reports in the next exercise.
 
 ## Observe performance with Azure Monitor
 
-Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including the Azure portal.
+Let's use another method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including via the Azure portal.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) for your deployment. Find the instance of Azure SQL Database deployed. On the **Overview** for a database, the default view in the **Monitoring** pane is called **Compute Utilization**:
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true), and then find your instance of the AdventureWorks SQL database. The default view on the **Overview** pane for the database, the default view in the **Monitoring** pane is  **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Screenshot of the Azure portal with a slow query.":::
 
-    Notice in this example, the CPU utilization is near 100 percent for a recent time range. This chart shows resource usage (CPU and I/O are the defaults) over the last hour, and it's refreshed continually. If you select the chart, you can customize it and look at other resource usage.
+    In this example, the CPU utilization is near 100 percent for a recent time range. This chart shows resource usage (CPU and I/O are defaults) over the last hour, and it's refreshed continually. Select the chart so you can customize it to look at other resource usage.
 
-1. On the **Resource** menu, select **Metrics**. There's another way to see the same compute utilization metrics and other metrics automatically collected by Azure Monitor for Azure SQL Database. In the Azure portal, from the **Resources** pane, under **Monitoring**, use **Metrics Explorer**. (Note that **Compute Utilization** is just a pre-defined view of the **Metrics Explorer**.) If you select **Metrics**, you'll see the following results:
+1. On the SQL database menu, select **Metrics**. Another way to view the **Compute Utilization** metrics and other metrics that are automatically collected by Azure Monitor for Azure SQL Database  is to use **Metrics Explorer**. 
+ 
+    > [!NOTE]
+    > **Compute Utilization** is a pre-defined view of the **Metrics Explorer**. If you select **Metrics**, you'll see the following results:
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Screenshot of Azure Monitor metrics.":::
 
-    As you can see in the screenshot, there are several metrics you can use to view with Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period, with a 5-minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select **CPU percentage** and change the capture for 1 hour. The granularity will change to 1 minute and should look like the following image:
+    As shown in the screenshot, there are several metrics you can use to view with Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period, with a 5-minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select **CPU percentage** and change the capture for 1 hour. The granularity will change to 1 minute and should look like the following image:
 
-    :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Screenshot of Azure Monitor metrics, including CPU after 1 minute.":::
+    :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Screenshot of Azure Monitor metrics, including CPU after 1 minute." lightbox="../media/5-azure-monitor-metrics-cpu.png" :::
 
-    The default is a line chart, but the Explorer view allows you to change the chart type. There are various options with Metrics Explorer, including the ability to show multiple metrics on the same chart.
+    The default is a line chart, but the Explorer view allows you to change the chart type. Metrics Explorer has many options, including the ability to show multiple metrics on the same chart.
 
 ## Azure Monitor logs
 
 In this exercise, you didn't set up an Azure Monitor log, but it's worth looking at what a log might look like for a CPU resource usage scenario. Azure Monitor logs can provide a much longer historical record than Azure Metrics.
 
-If you had configured Azure Monitor logs with a Log Analytics workspace, you could use the following Kusto query to see the same type of results for CPU utilization for the database:
+If you had configured Azure Monitor logs with a Log Analytics workspace, you could use the following Kusto query to view the same CPU utilization results for the database:
 
 ```kusto
 AzureMetrics
