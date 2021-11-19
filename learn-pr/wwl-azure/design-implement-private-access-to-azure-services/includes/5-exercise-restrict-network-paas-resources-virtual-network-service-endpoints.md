@@ -22,15 +22,15 @@ In this exercise, you will:
 1.  On the Azure portal home page, select **+ Create a resource**.
 2.  Search for virtual network and then select **Virtual network** from the results.
 3.  Select **+** **Create**.
-4.  Enter, or select, the following information \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-f9f04226.png" alt-text="creating a VirtualNetwork in the Azure portal":::
+4.  Enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-f9f04226.png" alt-text="creating a VirtualNetwork in the Azure portal":::
     
     
     |  **Setting**   |                   **Value**                   |
     |:--------------:|:---------------------------------------------:|
     |  Subscription  |           Select your subscription            |
-    | Resource group | Select the provided resource group from Learn |
+    | Resource group |             (New) myResourceGroup             |
     |      Name      |               CoreServicesVNet                |
-    |    Location    |              Select **West US**               |
+    |    Location    |              Select **East US**               |
 5.  Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name): \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-ip-3ebcac42.png" alt-text="IP configuration settings":::
     
     
@@ -82,9 +82,9 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
     |  **Setting**   |                                 **Value**                                 |
     |:--------------:|:-------------------------------------------------------------------------:|
     |  Subscription  |                         Select your subscription                          |
-    | Resource group | Select **Use existing** and select the provided resource group from Learn |
+    | Resource group |                              myResourceGroup                              |
     |      Name      |                             ContosoPrivateNSG                             |
-    |    Location    |                            Select **West US**                             |
+    |    Location    |                            Select **East US**                             |
 4.  select **Review + create**, then click **Create**:
 5.  After the ContosoPrivateNSG network security group is created, select **Go to resource**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/nsg-deployment-complete-0582d7fc.png" alt-text="view network security group in the Azure portal":::
     
@@ -172,10 +172,10 @@ The steps necessary to restrict network access to resources created through Azur
     |  **Setting**   |                              **Value**                               |
     |:--------------:|:--------------------------------------------------------------------:|
     |  Subscription  |                       Select your subscription                       |
-    | Resource group | Select Use existing and select the resource group provided by Learn. |
-    |      Name      |                     Enter a contosostoragewest..                     |
+    | Resource group |                             myResourceGroup                          |
+    |      Name      |                     Enter a contosostoragewestxx (where xx are your initials to make it unique) |
     |  Performance   |               Standard StorageV2 (general purpose v2)                |
-    |    Location    |                            Select West US                            |
+    |    Location    |                            Select East US                            |
     |  Replication   |                   Locally-redundant storage (LRS)                    |
 4.  select **Review + create**, then click **Create**.
 
@@ -219,15 +219,14 @@ To test network access to a storage account, deploy a VM to each subnet.
     |:---------------------:|:-----------------------------------------------------------------------:|
     |    Project Details    |                                                                         |
     |     Subscription      |                        Select your subscription.                        |
-    |    Resource group     | Select **Use existing** and select the resource group provided by Learn |
+    |    Resource group     |                               myResourceGroup                           |
     |   Instance Details    |                                                                         |
     | Virtual machine name  |                            ContosoWestPublic                            |
-    |        Region         |                              (US) West US                               |
+    |        Region         |                              (US) East US                               |
     | Availability Options  |                  No infrastructure redundancy required                  |
     |         Image         |               Select **Windows Server 2019 Datacenter**.                |
     |         Size          |                              Standard\_D2s                              |
     | Administrator Account |                                                                         |
-    |  Authentication type  |                             SSH public key                              |
     |       Username        |                   Enter a user name of your choosing.                   |
     |       Password        |                   Enter a password of your choosing.                    |
     |   Confirm Password    |                         Re-enter the password.                          |
@@ -259,7 +258,7 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 3.  Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4.  Select **OK**.
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
-6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace and with values you supplied and retrieved in the Create a storage account task.
+6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
     
     ```Azure
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
@@ -306,7 +305,7 @@ Access is denied, because your computer is not in the Private subnet of the Core
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'myResourceGroup' -Force -AsJob
     
     ```
 
