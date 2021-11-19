@@ -30,12 +30,12 @@ products:
 - azure-traffic-manager
 - azure-virtual-network
 units:
+- learn.wwl.load-balancing-non-https-traffic-azure.introduction
 - learn.wwl.load-balancing-non-https-traffic-azure.explore
 - learn.wwl.load-balancing-non-https-traffic-azure.design-implement-azure-load-balancer-using-azure-portal
 - learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-configure-azure-load-balancer
 - learn.wwl.load-balancing-non-https-traffic-azure.explore-azure-traffic-manager
 - learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-traffic-manager-profile-using-azure-portal
-- learn.wwl.load-balancing-non-https-traffic-azure.introduction
 - learn.wwl.load-balancing-non-https-traffic-azure.summary
 badge:
   uid: learn.wwl.load-balancing-non-https-traffic-azure.badge
