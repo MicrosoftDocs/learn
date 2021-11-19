@@ -22,7 +22,7 @@ A device stream is initiated when the service requests to connect to a device by
 
 The device stream creation process involves a negotiation between the device, service, IoT hub's main and streaming endpoints. While IoT hub's main endpoint orchestrates the creation of a device stream, the streaming endpoint handles the traffic that flows between the service and device.
 
-:::image type="content" source="../media/M02-L03-iot-hub-device-streams-workflow-dbccde40.png" alt-text="Diagram that shows Device Stream Workflows connecting to the cloud.":::
+:::image type="content" source="../media/m02-l03-iot-hub-device-streams-workflow-d51f35c3.png" alt-text="Diagram that shows Device Stream Workflows connecting to the cloud.":::
 
 
 1.  The device application registers a callback in advance to be notified of when a new device stream is initiated to the device. This step typically takes place when the device boots up and connects to IoT Hub.
