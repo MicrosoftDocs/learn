@@ -9,6 +9,6 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial 
-durationInMinutes: 4 # user input: the estimate time to complete the unit
+durationInMinutes: 4 
 content: |
   [!include[](includes/7-exercise-reorder-returned-data-sort-operator.md)]

@@ -23,6 +23,6 @@ This query has a single tabular expression statement. The statement begins with 
 
 The following image shows a schematic representation of the data being piped through this query.
 
-:::image type="content" source="../media/1-storm-events.png" alt-text="Schematic image showing query as a funnel.":::
+:::image type="content" source="../media/2-storm-events.png" alt-text="Schematic image showing query as a funnel." border="false":::
 
 In the next units, we'll connect to a dataset, learn about some of the most commonly used operators, and then use the operators to answer questions about a sample dataset containing US meteorological data.

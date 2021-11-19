@@ -23,11 +23,11 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 To understand the impacts of the storms, we want to get the total number of injuries. Let's make a new column that shows the sum of *InjuriesDirect* and *InjuriesIndirect*:
 
-> Injuries=InjuriesDirect+InjuriesIndirect
+`Injuries=InjuriesDirect+InjuriesIndirect`
 
 We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
 
-> Damage=DamageCrops+DamageProperty
+`Damage=DamageCrops+DamageProperty`
 
 1. We can use a numerical operator to add the values because these columns are of type int (integer). Hover over the column name in the query editor to see the data type contained in the columns. 
 
