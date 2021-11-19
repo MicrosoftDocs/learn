@@ -1,0 +1,26 @@
+on:
+  workflow_call:
+    inputs:
+      resourceGroupName:
+        required: true
+        type: string
+    secrets:
+      AZURE_CREDENTIALS:
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      MyParameter: value-of-parameter
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/arm-deploy@v1
+      with:
+        failOnStdErr: false
+        resourceGroupName: ${{ inputs.resourceGroupName }}
+        template: ./deploy/main.bicep
+        parameters: myParameter=${{ env.MyParameter }}
