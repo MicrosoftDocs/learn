@@ -1,7 +1,7 @@
 When managing Azure Cosmos DB SQL API accounts using the Azure CLI, most commands will be broken down into two core CLI command groups:
 
-1. **az cosmosdb**: This group contains the commands required to create and manage a new Azure Cosmos DB account.
-1. **az cosmosdb sql**: This subgroup of the **az cosmosdb** group contains the commands to manage SQL API-specific resources such as databases and containers.
+- **az cosmosdb**: This group contains the commands required to create and manage a new Azure Cosmos DB account.
+- **az cosmosdb sql**: This subgroup of the **az cosmosdb** group contains the commands to manage SQL API-specific resources such as databases and containers.
 
 ## Azure Cosmos DB account group commands
 
