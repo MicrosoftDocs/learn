@@ -18,6 +18,7 @@ abstract: |
   - Create and manage secrets
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
