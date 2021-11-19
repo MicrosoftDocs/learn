@@ -3,18 +3,18 @@ IoT Hub metrics provide you with access to data that describes the state of the 
 Metrics are enabled by default.
 
 > [!NOTE]
-> You can use IoT Hub metrics to view information about IoT Plug and Play devices connected to your IoT Hub. IoT Plug and Play devices are part of the IoT Plug and Play public preview (see: https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play).
+> You can use IoT Hub metrics to view information about IoT Plug and Play devices connected to your IoT Hub. IoT Plug and Play devices are part of the IoT Plug and Play public preview.
 
 ## How to view IoT Hub metrics
 
 On the Overview blade of your IoT hub, select **Metrics**.
 
-:::image type="content" source="../media/m09-l01-monitoring-and-logging-enable-metrics-1-0f74e9de.png" alt-text="IoT Hub Metrics - Viewing Metrics in the Portal":::
+:::image type="content" source="../media/m09-l01-monitoring-logging-enable-metrics-1-ad5cfc68.png" alt-text="Screen shot that shows where to find metrics for IoT Hub using the Azure portal.":::
 
 
 On the Metrics blade, you can view the metrics for your IoT hub and create custom views of your metrics.
 
-:::image type="content" source="../media/m09-l01-monitoring-and-logging-enable-metrics-2-8e74abe7.png" alt-text="IoT Hub Metrics - Selecting Metrics to View":::
+:::image type="content" source="../media/m09-l01-monitoring-logging-enable-metrics-2-ce3e10af.png" alt-text="Screen shot that shows how to view the metrics for IoT Hub.":::
 
 
 To send your metrics data to an Event Hubs endpoint or an Azure Storage account, select**Diagnostics settings**, then select **Add diagnostic setting**.
@@ -23,7 +23,7 @@ To send your metrics data to an Event Hubs endpoint or an Azure Storage account,
 
 IoT Hub provides metrics that give you an overview of the health of your hub, the total number of connected devices, and metrics that give you specific details related to key operations. You can combine information from multiple metrics to paint a bigger picture of the state of the IoT hub.
 
-The following tables provide a partial listing of the metrics that each IoT hub tracks, and describe how each of the metric listed relates to the overall status of the IoT hub. You can also find a single table that lists all of the IoT Hub platform metrics by metric name under Microsoft.Devices/IotHubs in the Azure Monitor documentation here: [https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported\#microsoftdevicesiothubs](https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsoftdevicesiothubs).
+The following tables provide a partial listing of the metrics that each IoT hub tracks, and describe how each of the metric listed relates to the overall status of the IoT hub. You can also find a single table that lists all of the IoT Hub platform metrics by metric name under Microsoft.Devices/IotHubs in the Azure Monitor documentation here: [https://docs.microsoft.com/azure/azure-monitor/essentials/metrics-supported](/azure/azure-monitor/essentials/metrics-supported).
 
 ### D2C telemetry ingress and egress
 

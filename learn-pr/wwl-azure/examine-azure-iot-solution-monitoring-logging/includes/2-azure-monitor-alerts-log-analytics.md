@@ -14,7 +14,7 @@ Just a few examples of what you can do with Azure Monitor include:
 
 The following diagram gives a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor. On the left are the sources of monitoring data that populate these data stores. On the right are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
-:::image type="content" source="../media/m09-l01-monitoring-and-logging-azure-monitor-overview-6ba54907.png" alt-text="Azure monitor Overview":::
+:::image type="content" source="../media/m09-l01-monitoring-logging-azure-monitor-overview-7616d1b6.png" alt-text="Diagram that shows the different functions that Azure Monitor performs.":::
 
 
 ## Monitoring data platform
@@ -60,7 +60,7 @@ The unified alert experience in Azure Monitor includes alerts that were previous
 
 The diagram below represents the flow of alerts.
 
-:::image type="content" source="../media/m09-l01-monitoring-and-logging-alerts-flow-04c5aaed.png" alt-text="Alerts Flow":::
+:::image type="content" source="../media/m09-l01-monitoring-logging-alerts-flow-52464b0e.png" alt-text="Diagram that shows the flow of alerts in Azure and Azure Monitor.":::
 
 
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled.
