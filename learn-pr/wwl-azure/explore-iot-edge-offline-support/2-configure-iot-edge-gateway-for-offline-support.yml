@@ -14,5 +14,5 @@ labId: 110074
 labModal: true
 durationInMinutes: 60
 content: |
-  [!include[](includes/2-configure-an-iot-edge-gateway-for-offline-support.md)]
+  [!include[](includes/2-configure-iot-edge-gateway-for-offline-support.md)]
 interactive: bash-editor
