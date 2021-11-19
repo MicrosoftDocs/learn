@@ -7,7 +7,8 @@ metadata:
   description: In this unit, we review the solution for our scenario and what you have learned.
   ms.date: 3/24/2021  
   author: amthomas46
-  ms.author: antho
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 2
