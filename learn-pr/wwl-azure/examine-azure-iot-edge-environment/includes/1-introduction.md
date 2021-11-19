@@ -1,6 +1,6 @@
 Azure IoT Edge technologies provide the ability to bring cloud service capabilities to the local device.
 
-Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to implement key portions of the solution directly on devices using Azure IoT Edge technologies. Understanding how Azure IoT Edge works will help the team to proceed efficiently once the implementation begins. You decide to examine the features, capabilities, and components of the Azure IoT Edge environment.<br>
+Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to implement key portions of the solution directly on devices using Azure IoT Edge technologies. Understanding how Azure IoT Edge works will help the team to proceed efficiently once the implementation begins. You decide to examine the features, capabilities, and components of the Azure IoT Edge environment.
 
 In this module, you will:
 

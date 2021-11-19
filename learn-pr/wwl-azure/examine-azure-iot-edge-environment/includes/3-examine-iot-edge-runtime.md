@@ -95,7 +95,7 @@ The IoT Edge agent sends runtime response to IoT Hub. Here is a list of possible
  -  406 - The IoT Edge device is offline or not sending status reports.
  -  500 - An error occurred in the IoT Edge runtime.
 
-## iotedge command-line tool
+## The iotedge command-line tool
 
 The **iotedge** tool is a command-line tool that is used to manage the IoT Edge runtime. To view the available subcommands, enter the following command:
 
