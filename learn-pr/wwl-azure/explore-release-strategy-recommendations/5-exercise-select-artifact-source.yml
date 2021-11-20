@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.exercise-select-artifact-source
+title: Exercise - select an artifact source
+metadata:
+  title: Exercise - select an artifact source
+  description: "Exercise - select an artifact source"
+  ms.date: 11/20/2021
+  author: wwlpublish
+  ms.author: 'lumac '
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-select-artifact-source.md)]
