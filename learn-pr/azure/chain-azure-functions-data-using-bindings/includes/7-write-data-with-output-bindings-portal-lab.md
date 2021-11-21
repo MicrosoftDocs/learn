@@ -1,6 +1,6 @@
 In the previous exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
 
-![Decision flow diagram illustrating the process of adding a bookmark in our Azure Cosmos DB back-end and returning a response.](../media/7-add-bookmark-flow-small.png)
+:::image type="content" source="../media/7-add-bookmark-flow-small.png" alt-text="Decision flow diagram illustrating the process of adding a bookmark in Azure Cosmos DB back-end and returning a response." border="false":::
 
 In this scenario, we'll receive requests to add bookmarks to our collection. The requests pass in the desired key, or ID, along with the bookmark URL. As you can see in the flowchart, we'll respond with an error if the key already exists in our back end.
 
@@ -13,51 +13,31 @@ What might be a good example of offloading of work in our bookmarks scenario? We
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the exercise in a previous unit. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this exercise.
+> This exercise builds on the sandbox resources and resources that you created in previous units, specifically, the Azure Cosmos DB database, bookmakrks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
 
 ## Create an HTTP-triggered function
-
-::: zone pivot="javascript"
-
-1.  [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
-
-1. In the portal, go to the function app that you created in the previous exercise.
-
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
-
-1. In the command bar, select **Create**. The **Create function** pane appears.
-
-1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
-
-::: zone-end
-
-::: zone pivot="powershell"
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. In the portal, go to the function app that you created in the previous exercise.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears with two HTTP trigger functions that you created in previous exercises.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. The **Create function** pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
-
-::: zone-end
+1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
 
 ## Add an Azure Cosmos DB input binding
 
-As in the preceding exercise, let's add another Azure Cosmos DB input binding.
+Let's add another Azure Cosmos DB input binding.
 
 1. Ensure your new function, **HttpTrigger3**, is selected.
 
-1. In the Function menu, under **Developer**, select **Integration**. The **Integration** pane for the trigger associated with your function appears.
+1. In the Function menu, select **Integration**. The **Integration** pane for the trigger associated with your function appears.
 
-1. To display the list of all possible input binding types, in the **Inputs** box, select **Add input**. The **Create Input** pane appears.
+1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
 1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
-
-1. If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **install**, and wait for it to complete.
 
 1. The **Azure Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
 
@@ -86,9 +66,7 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
 
 ## Add an Azure Cosmos DB output binding
 
-1. Ensure the **Integration** pane appears for your function.
-
-1. To display the list of all possible output binding types, in the **Outputs** box, select **Add output**. The **Create Output** pane appears.
+1. In the **Integration** pane for **HttpTrigger3**, in the **Outputs** box, select **Add output**. The **Create Output** pane appears.
 
 1. Under **Binding Type**, from the dropdown list, select **Azure Cosmos DB**.
 
@@ -111,9 +89,11 @@ Now we have a binding to read from our collection, and one to write to it.
 
 Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario.
 
-![Illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue.](../media/7-q-logical-small.png)
+:::image type="content" source="./media/7-q-logical-small.png" alt-text="Illustration showing a storage queue a function pushing and another function popping messages.":::
 
-For example, here you can see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** will pop messages from the same queue, and process the request. Because we write, or *push* messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal this time.
+In this example, you see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** pops messages from the same queue, and processes the request. Because we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. 
+
+Let's create the binding through the portal this time.
 
 1. On the **Integration** pane for your function, in the **Outputs** box, select **Add output**. The **Create Output** appears.
 
@@ -121,15 +101,17 @@ For example, here you can see that a function named **add-bookmark** adds messag
 
     If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.Storage extension, select **install** and wait for it to finish.
 
-    Next, we'll set up a storage account connection, where our queue will be hosted.
+Next, we'll set up a storage account connection, where our queue will be hosted.
 
-1. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
+3. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
 
-1. At the beginning of this module, when you created your function app, a storage account also created for you. Select it from the dropdown list, and then select **OK**.
+1. At the beginning of this module, when you created your function app, a storage account was also created for you. Select it from the dropdown list, and then select **OK**.
 
     The Storage account connection setting is populated with the name of a connection.
 
-1. Although we could keep the default values, let's change some settings to lend more meaning to the properties. In the **Create Output** pane, replace the old values with the new values, as follows:
+Although we could keep the default values, let's change some settings to lend more meaning to the properties. 
+ 
+5. In the **Create Output** pane, replace the old values with the new values, as follows:
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
@@ -175,7 +157,7 @@ So, that's it. Let's see our work in action in the next section.
 
 1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears.
 
-1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the command bar, select **Save**.
+1. Replace the content in *run.ps1* file with the following code, and then, in the command bar, select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -214,7 +196,7 @@ Let's break down what this code does:
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 > 
-> ![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
+> :::image type="content" source=":::image type="content" source="media/image.png" alt-text=" alt-text="Screenshot showing that the queue will be auto-created." border="false":::
 > 
 
 So, that's it. Let's see our work in action in the next section.
@@ -227,7 +209,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The test pane appears, as shown in this image:
 
-    ![Screenshot showing the function Test Panel expanded.](../media/7-test-panel-open-small.png)
+    :::image type="content" source="../media/7-test-panel-open-small.png" alt-text="Screenshot showing the test/run pane.":::
 
 1. In the **HTTP method** dropdown list, verify that **POST** is selected.
 
@@ -244,7 +226,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
 
-    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of Test pane showing result of a failed test.":::)
+    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of Test pane showing result of a failed test.":::
 
 1. Let's post a second bookmark to the database. On the Test pane, select the **Input** tab.
 
@@ -263,11 +245,11 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
     :::image type="content" source="../media/7-test-success-small.png" alt-text="Screenshot showing Test pane and result of a successful test.":::
 
-Congratulations! Your function works as designed! But, what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
+Congratulations! Your function works as designed! But, what about the queue operation we added to the code? Well, let's go see whether something was written to a queue.
 
 ### Verify that a message is written to the queue
 
-Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
+Azure Queue Storage queues are hosted in a storage account. You identified the storage account when you created the output binding.
 
 1. In the Azure portal search box, enter **storage accounts**, and then in the results list, select **Storage accounts**. The **Storage accounts** pane appears.
 
@@ -287,4 +269,4 @@ Azure Queue Storage queues are hosted in a storage account. You already selected
 
 1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 
-In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings, and writing data to your Azure Cosmos DB. We added an output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
