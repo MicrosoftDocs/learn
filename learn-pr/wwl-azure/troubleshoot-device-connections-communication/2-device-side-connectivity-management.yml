@@ -4,13 +4,13 @@ title: Examine device connection best practices
 metadata:
   title: Examine device connection best practices
   description: "Examine device connection best practices"
-  ms.date: 11/19/2021
+  ms.date: 11/21/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-device-side-connectivity-management.md)]
