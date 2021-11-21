@@ -7,4 +7,3 @@ By completing this module, you'll be able to:
 - Describe what are applications.
 - Describe the threat landscape of applications.
 - Describe common application-based security controls.
-
