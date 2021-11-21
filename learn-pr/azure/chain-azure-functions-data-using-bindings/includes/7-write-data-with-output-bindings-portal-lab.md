@@ -85,7 +85,7 @@ Now we have a binding to read from our collection, and one to write to it.
 
 Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario.
 
-:::image type="content" source="./media/7-q-logical-small.png" alt-text="Illustration showing a storage queue a function pushing and another function popping messages.":::
+:::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue a function pushing and another function popping messages.":::
 
 In this example, you see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** pops messages from the same queue, and processes the request. Because we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. 
 
@@ -192,7 +192,7 @@ Let's break down what this code does:
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 > 
-> :::image type="content" source=":::image type="content" source="media/image.png" alt-text=" alt-text="Screenshot showing that the queue will be auto-created." border="false":::
+> :::image type="content" source="source="../media/7-q-auto-create-small.png" alt-text=" alt-text="Screenshot showing the field text that the queue will be auto-created." border="false":::
 > 
 
 So, that's it. Let's see our work in action in the next section.
