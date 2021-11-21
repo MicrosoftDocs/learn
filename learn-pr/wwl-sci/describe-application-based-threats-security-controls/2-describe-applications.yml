@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-application-based-threats-security-controls.describe-topology-used-applications
-title: Describe the topology used with applications
+title: Describe what are applications
 metadata:
-  title: Describe the topology used with applications
-  description: "Describe the topology used with applications"
+  title: Describe what are applications
+  description: "Describe what are applications"
   ms.date: 11/21/2021
   author: wwlpublish
   ms.author: ceperezb
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-describe-topology-used-applications.md)]
+  [!include[](includes/2-describe-applications.md)]
