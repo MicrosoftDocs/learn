@@ -1,4 +1,4 @@
-Imagine that you want to create a simple bookmark lookup service. Initially, your service is read-only. If users want to find an entry, they send a request with the ID of the entry, and our function return the URL. The following flowchart illustrates the logical flow.
+Imagine that you want to create a bookmark lookup service. Initially, your service is read-only. If users want to find an entry, they send a request with the ID of the entry, and our function return the URL. The following flowchart illustrates the logical flow.
 
 :::image type="content" source="../media/5-find-bookmark-flow-small.png" alt-text="Flow diagram showing the logical process of finding a bookmark in an Azure Cosmos DB and returning a response." lightbox="../media/5-find-bookmark-flow.png" border="false":::
 
@@ -17,7 +17,7 @@ You need to store the data somewhere. In the previous flowchart, the data store 
 
 A database account is a container for managing one or more databases. Before we can create a database, we need to create a database account.
 
-1. In to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
  
@@ -31,8 +31,8 @@ A database account is a container for managing one or more databases. Before we 
     | Subscription | Concierge Subscription | The Azure subscription that works with the resources in the sandbox. |
     | Resource Group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> | The resource group for your sandbox. |
     | **Instance Details** |
-    | Account Name | *globally unique name* | Enter a unique but identifiable name for your Azure Cosmos DB account; `documents.azure.com` is appended to the name that you provide.<br><br>`3 - 50 lowercase characters, numbers, or hyphens (-)`. |
-    | Location | *region* | Select the region nearest to you. |
+    | Account Name | `globally unique name` | Enter a unique but identifiable name for your Azure Cosmos DB account; `documents.azure.com` is appended to the name that you provide.<br><br>`3 - 50 lowercase characters, numbers, or hyphens (-)`. |
+    | Location | `region` | Select the region nearest to you. |
 
 1. Accept the default values for the remaining settings, and select **Review + create** to validate your input. A *Validation Success* notification appears.
 
@@ -61,19 +61,19 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     | Setting | Value | Description |
     |---|---|---|
     | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we are using _func-io-learn-db_ in this module. |
-    | Database Max RU/s | 4000 |Acccept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
+    | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
     | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
     
     Accept the defaults for all the other settings.
 
-1. Scroll to the bottom of the pane and select **OK**. Allow a few minutes for the database and container to be completed. When complete, the Data Explorer displays the **func-io-learn-db** and **Bookmarks**container under **SQL API**. If necessary, select to expand these items. Next, you'll add some data, also known as items.
+1. Scroll to the bottom of the pane and select **OK**. Allow a few minutes for the database and container to be completed. When complete, the Data Explorer displays the **func-io-learn-db** and **Bookmarks** container under **SQL API**. If necessary, select to expand these items. Next, you'll add some data, also known as items.
 
 ### Add test data
 
 You want to add data to your container called **Bookmarks**. You'll add data to the new container using Data Explorer to store a URL and ID for each item, such as list of web page bookmarks.
 
-1. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appearsm but it is empty.
+1. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appears, but it is empty.
 
 1. In the command bar, select **New Item**.
 
@@ -164,7 +164,7 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. In the the Azure portal, in the *HttpTrigger2* function menu, select **Integration**. The **Integration** pane for your *Function* appears.
+1. In the Azure portal, in the *HttpTrigger2* function menu, select **Integration**. The **Integration** pane for your *Function* appears.
 
     You used a template that created an HTTP trigger and an HTTP output binding. Let's add an Azure Cosmos DB input binding.
 
@@ -181,7 +181,7 @@ To read data from the database, you need to define an input binding. As you'll s
     
      :::image type="content" source="../media/extension-not-installed.png" alt-text="Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.":::
     
-1. By default, Azure recognizes the Aure Cosmos DB account you created earlier. To create your connection, select **OK**.
+1. By default, Azure recognizes the Azure Cosmos DB account you created earlier. To create your connection, select **OK**.
 
     A *new* connection to the database account is configured and appears in the **Cosmos DB account connection** dropdown list in the **Create Input** pane.
 
@@ -296,7 +296,7 @@ Let's examine what this code is doing.
 
 ### Modify your function's JSON implementation code
 
-1. Below the commmand bar, select **function.json** from your **`<functionapp> \ HttpTrigger2 \ `** dropdown list.
+1. Below the command bar, select **function.json** from your **`<functionapp> \ HttpTrigger2 \ `** dropdown list.
 
 1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
 
