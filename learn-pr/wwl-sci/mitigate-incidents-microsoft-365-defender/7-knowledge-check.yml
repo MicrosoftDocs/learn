@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/22/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -21,9 +22,9 @@ quiz:
     - content: "Networks"
       isCorrect: false
       explanation: "Incorrect. The incident page doesn't have a tab for networks."
-    - content: "Machines"
+    - content: "Non-Azure Machines"
       isCorrect: false
-      explanation: "Incorrect. The incident page doesn't have a tab for machines."
+      explanation: "Incorrect. The incident page doesn't have a tab for Non-Azure machines."
     - content: "Mailboxes"
       isCorrect: true
       explanation: "Correct. The incident page has a tab for mailboxes."

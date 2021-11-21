@@ -1,4 +1,4 @@
-In our last exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
+In the previous exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
 
 ![Decision flow diagram illustrating the process of adding a bookmark in our Azure Cosmos DB back-end and returning a response.](../media/7-add-bookmark-flow-small.png)
 

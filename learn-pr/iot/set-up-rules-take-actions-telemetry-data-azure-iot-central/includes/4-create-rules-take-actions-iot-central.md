@@ -39,13 +39,13 @@ Yet more complex rules can be built around a truck's location. Location in Azure
 | Location / Latitude | Is less than | -122.1 |
 | Truck state | Equals | enroute |
 
-This rule will fire if the truck is in the specified area, and is in the required _enroute_ state. We can use such a rule to determine when trucks are entering, and leaving, certain geographical areas. It's possible that more than one email action may be triggered by the rule. In other words, an operator may get several messages that a truck is leaving. 
+This rule will fire if the truck is in the specified area, and is in the required _enroute_ state. We can use such a rule to determine when trucks are entering, and leaving, certain geographical areas. It's possible that more than one email action may be triggered by the rule. In other words, an operator may get several messages that a truck is leaving.
 
-Rule conditions are always _AND-ed_ together. There's no current option for logical OR, logical NOT, or other boolean conditions.
+Rules can be fired if either all the conditions are true, or if any of the conditions are true. This can be configured for each rule.
 
 ### The range of actions
 
-One rule can trigger one, or more, actions. You could, for example, email any number of addresses when a rule fires. 
+One rule can trigger one, or more, actions. You could, for example, email any number of addresses when a rule fires.
 
 Currently, there are two available actions: email and webhooks. We use email in this module, though webhooks are potentially the more powerful option. A webhook will send a JSON file to a given URL. Any URL can be entered, but consider the following four options:
 
