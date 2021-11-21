@@ -6,4 +6,3 @@ In this module, you will:
 - Describe how to use Microsoft Secure score. 
 - Explore security reports and dashboards.
 - Describe incidents and incident management capabilities.
-
