@@ -17,23 +17,19 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the function app that you created. You can do this by selecting the name of the function app in the breadcrumb path above the **HttpTrigger2** title
 
-1. In the portal, go to the function app that you created in the previous exercise.
-
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears with two HTTP trigger functions that you created in previous exercises.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears, listing the two HTTP trigger functions that you created.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
+1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Funtion pane for **HttpTrigger3** appears.
 
 ## Add an Azure Cosmos DB input binding
 
 Let's add another Azure Cosmos DB input binding.
 
-1. Ensure your new function, **HttpTrigger3**, is selected.
-
-1. In the Function menu, select **Integration**. The **Integration** pane for the trigger associated with your function appears.
+1. In the **HttpTrigger3** Function menu, select **Integration**. The **Integration** pane appears.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
@@ -45,9 +41,9 @@ Let's add another Azure Cosmos DB input binding.
 
     1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link.
 
-    1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection.
+    1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection. A new Cosmos DB account connectin is created.
 
-1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
+1. Enter the following  values for each remaining setting in this pane. At any time, to learn more about the purpose of a setting, you can select the information icon to its right.
 
     | Setting | Value | Description |
     |---|---|---|
@@ -60,9 +56,9 @@ Let's add another Azure Cosmos DB input binding.
 
     Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that function our function receives in the query string to the binding, which is known as the *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up, and the binding will return either 0 (not found) or 1 (found) documents.
 
-1. To save all changes to this binding configuration, select **OK**.
+1. To save all changes to this input binding configuration, select **OK**.
 
-We now have an Azure Cosmos DB input binding. It's time to add an output binding so we can write new entries to our collection.
+We now have an Azure Cosmos DB input binding. Let's add an output binding so we can write new entries to our collection.
 
 ## Add an Azure Cosmos DB output binding
 
@@ -70,18 +66,18 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
 
 1. Under **Binding Type**, from the dropdown list, select **Azure Cosmos DB**.
 
-1. The **Cosmos DB account connection** setting should be pre-populated with the connection you created when you added the Azure Cosmos DB input binding.
+1. The **Cosmos DB account connection** setting should be pre-populated with the connection you created when you added the Azure Cosmos DB input binding. If not, expand the dropdown list and select the connection you defined for HttpTrigger3 input binding.
 
-1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
+1. Enter the following values for the remaining settings in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
 
     | Setting | Value | Description |
     |---|---|---|
     | **Document parameter name** | `newbookmark` | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined the container earlier in the lesson. |
-    | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `<key>`) must match the one in the container. |
+    | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding configuration `<key>`) must match the one in the container. |
 
-1. To save all changes to this binding configuration, select **OK**.
+1. To save all changes to this output binding configuration, select **OK**.
 
 Now we have a binding to read from our collection, and one to write to it.
 
@@ -118,7 +114,7 @@ Although we could keep the default values, let's change some settings to lend mo
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. Select **OK** to save your changes. The **Storage account connection** setting is populated with the name of a connection.
+1. Select **OK** to save your output configuration for Queue Storage. The **Storage account connection** setting is populated with the name of a connection.
 
 ## Update function implementation
 
@@ -155,9 +151,9 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your function, **HttpTrigger3**.
 
-1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your function appears.
+1. In the Function menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your **HttpTrigger3** function appears, displaying the default content of **run.ps1**.
 
-1. Replace the content in *run.ps1* file with the following code, and then, in the command bar, select **Save**.
+1. Replace the content in the file with the following code, and then, in the command bar, select **Save**.
 
     ```powershell
     using namespace System.Net
@@ -207,7 +203,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The test pane appears, as shown in this image:
+1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. The Input tab of the test pane appears, as shown in this image:
 
     :::image type="content" source="../media/7-test-panel-open-small.png" alt-text="Screenshot showing the test/run pane.":::
 
@@ -226,7 +222,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
 
-    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of Test pane showing result of a failed test.":::
+    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output pane showing result.":::
 
 1. Let's post a second bookmark to the database. On the Test pane, select the **Input** tab.
 
