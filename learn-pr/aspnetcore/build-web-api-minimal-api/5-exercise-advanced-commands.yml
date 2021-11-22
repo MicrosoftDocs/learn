@@ -4,9 +4,10 @@ title: Exercise - Add routes
 metadata:
   title: Exercise - Add routes
   description: Build a minimal API to support different HTTP verbs.
+  ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
-  ms.date: 10/26/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
