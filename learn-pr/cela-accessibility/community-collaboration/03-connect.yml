@@ -9,7 +9,7 @@ metadata:
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 15
+durationInMinutes: 8
 content: |
   [!include[](includes/03-connect.md)]
 quiz:
