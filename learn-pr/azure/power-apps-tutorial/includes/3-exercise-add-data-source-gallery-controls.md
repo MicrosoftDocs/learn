@@ -332,3 +332,7 @@ Now that we have added the product categories, we will display the list of produ
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+
+After implementing the above steps, here is how your application must look.
+
+:::image type="content" source="../media/application-demo-1.gif" alt-text="gif of application demo after connecting to a data source." lightbox="../media/application-demo-1.gif":::
