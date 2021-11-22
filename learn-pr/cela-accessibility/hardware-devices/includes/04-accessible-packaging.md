@@ -1,39 +1,52 @@
-Unboxing a new gaming device is a process that can be invigorating and rewarding to players, bringing waves of joy and excitement as they prepare to play. Packaging is designed  to protect the device and combine multiple components into one container. Packaging is also often designed to market the device by providing a “premium” look and feel to the product prior to purchase or unboxing.  Successful packaging experiences are those that provide easy wayfinding of parts, easy removal of parts, product protection with minimal materials, and providing quick and concise ways to get started with the product.
+Unboxing a new gaming device after purchase is often considered a treasured experience among many. Product packaging is designed to both protect and market the device prior to purchase. These efforts to ensure maximum device protection while maintaining an aesthetically pleasing design can often result in packaging elements that are difficult or impossible to remove for some players.
 
-The protective and premium nature of these packaging components can often pose difficulties for players with disabilities as described in the introductory scenario. In that scenario, the player was able to obtain caregiver assistance, but not all players have available resources who can help. These players may be prevented from play altogether if they are unable to safely open a box and remove their device and its components.
+In this unit, you'll be introduced to best practice principles for packaging design that can produce more accessible customer experiences through:
 
-In this unit, you will learn best practices for accessible product packaging design.
+- Easy wayfinding of packaging components like adhesives and access points
+- Easy removal of device parts from the packaging
+- Product protection with minimal materials
 
 ## Provide accessible cues to inform proper unboxing orientation
 
-Before opening a boxed device, determining the proper orientation of the box is an important first step. If you have just bought a laptop or console, opening the box upside down can result in the device dropping to the floor and becoming damaged. A player may look for visual cues on the packaging to determine proper orientation. Visual cues like text or imagery placed on the box for instructional or aesthetic purposes can typically inform proper orientation.
+Before opening a boxed device, determining the proper orientation of the box is an important first step. If you have just bought a laptop or console, opening the box upside down can result in the device dropping to the floor and becoming damaged.
 
-If a player has low or no vision or cannot understand the meaning of external imagery to inform proper opening orientation, they may attempt to open the package incorrectly. To create a safer, more accessible experience consider the following best practices:
+Players may look for visual cues like text or imagery on the box to inform proper orientation. An example of this can be found in the following image of the Surface Adaptive Kit packaging.
 
-- Design packaging with discernable tactile  cues that inform proper opening orientation. This can be done successfully with graphics, break the seal labels or closure tabs, and/or seam lines
-- Create packaging that allows players to open and remove devices safely, regardless of box orientation
+:::image type="content" source="../media/adaptive-kit-box.png" alt-text="The packaging for the Surface Adaptive Kit. The box contains text and images on the top panel.":::
+
+The top panel of the packaging has text and an image of the Surface Adaptive Kit components. When the box is properly oriented for opening, this text and image appears "right-side-up" to the user. If the user were to orient the box differently, the text and image would appear upside-down or sideways. This would indicate to the user that should adjust the box orientation prior to opening.
+
+Players who can't see or use these visual cues to guide correct orientation may accidentally open packaging incorrectly, resulting in dropped or damaged new devices. To create a safer, more accessible experience, consider the following best practices:
+
+- Design packaging with accessible visual and structural cues that inform proper opening orientation.
+    - Visual: Provide larger text and graphics on packaging to ensure more players with low vision can see and use it to guide orientation.
+    - Structural: Offer discoverable tactile cues that inform proper unboxing orientation through intentional placement such as break the seal labels, closure tabs, or seam lines.
+- Create packaging that allows players to open and remove devices safely, regardless of box orientation.
 
 ## Support accessible removal of adhesives and fasteners
 
-Players with disabilities may struggle to remove adhesives used to keep packaging components together. Players with mobility disabilities can have trouble peeling or removing the tape that seals packaging. Removing tape requires fine motor coordination to lift and grasp the edge of the tape and strength to pull it from the packaging. Players may resort to using a sharp objective to open the package which may damage the device or result in personal injury. The following are adhesive best practices to consider when creating an accessible unboxing experience:
+Strong adhesives that seal packaging can often pose challenges for players as they attempt to peel or remove them. Removing adhesives requires a great deal of hand and finger strength to lift and grasp the end of the adhesive, and pull it away from the packaging.
+
+Players may resort to using a sharp objects to open the package which may damage the device or result in personal injury. The following are adhesive best practices to consider when creating an accessible unboxing experience:
 
 - Ensure adhesives are discoverable through visual and tactile means
 - Provide leverage points for adhesive removal, such as a protruding pull tab
 - Don’t apply adhesives on components that do not need them
 
-The Xbox Adaptive Controller Accessible Packaging Video located later in this unit contains examples of these best practices in action.
+In the following image of the Xbox Adaptive Controller packaging, a large adhesive sticker seals the box. This adhesive features two smaller circular loops to serve as an access point for users as they grasp the adhesive to remove it.
+:::image type="content" source="../media/box-side.png" alt-text="The Xbox Adaptive controller packaging with a large pill shaped adhesive sealing the box.":::
 
 ## Provide multiple access points to inner packaging components
 
-Once the device is revealed, players are tasked with removing the device and its smaller accompanying components like chargers and instructional guides from within the inner packaging containers. These components can be packed tightly into Styrofoams, plastic bags, or other materials to protect them and keep them from moving around in the box.
+Once the device is revealed, players are tasked with removing the device and its smaller accompanying components. Smaller components like chargers and instructional guides are typically packed tightly into Styrofoams, plastic bags, or other materials used to protect and secure them from moving around in the box.
 
-Players with disabilities that cause weakness or reduced dexterity may find it challenging to extract the component from its containing material. With the balance of device security and accessibility in mind, what follows are best practices for component removal to consider when creating accessible packaging experiences for players with disabilities:
+Removing these types of components can also pose accessibility challenges given the strength and dexterity required to grasp these objects. With the balance of device security and accessibility in mind, what follows are best practices for component removal to consider when creating accessible packaging experiences for players with disabilities:
 
-Provide physical access points to assist players in removing devices from inner packaging. For example, the pull tab on the plastic wrap that protrudes outward from the surface tablet package.
+- Provide physical access points to assist players in removing devices from inner packaging. For example, the pull tab on the plastic wrap that protrudes outward from the surface tablet package.
 
 :::image type="content" source="../media/go-1-cropped.png" alt-text="The packaging for a Microsoft Surface Device. A pull tab to remove the device is visible. ":::
 
-Provide physical access points such as pull tabs or loops to assist players in removing smaller boxes or device components from inner packaging structures. The image below reveals the underlying packaging components that are visible once the surface tablet is removed.
+- Provide physical access points such as pull tabs or loops to assist players in removing smaller boxes or device components from inner packaging structures. The image below reveals the underlying packaging components that are visible once the surface tablet is removed.
 
 :::image type="content" source="../media/go-3-1.png" alt-text="The box for a Microsoft Service device. It is empty and the cable box is displayed as well.":::
 
@@ -59,6 +72,8 @@ The images below show the packaging for the Xbox Series X. The surrounding mater
 
 ## Review best practices in action
 
-The video below features many of the best practices outlined in this unit in action. It discusses the accessible packaging components designed and implemented for the Xbox Adaptive Controller. This product and its packaging exemplify a “gold standard”  of accessible design. The intent of this video is to reinforce best practice informed presented in this unit and to provide inspiration for future packaging design efforts.
+The following video features many of the best practices outlined in this unit in action. It discusses the accessible packaging components designed and implemented for the Xbox Adaptive Controller. This product and its packaging exemplify a “gold standard”  of accessible design. The intent of this video is to reinforce best practice informed presented in this unit and to provide inspiration for future packaging design efforts.
 
-Devices differ in terms of size, weight, fragility, and cost. These variables may introduce challenges when designing and creating accessible packaging. Identifying and implementing solutions for these challenges can help improve customer satisfaction, and help to provide customers with disabilities a truly delightful experience from the moment they have their device at home.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOcyB]
+
+Devices differ in terms of size, weight, fragility, and cost. These variables may introduce challenges when designing and creating accessible packaging. Identifying and implementing solutions for these challenges can help improve customer satisfaction, and help to provide more customers a truly delightful experience from the moment they have their device at home.

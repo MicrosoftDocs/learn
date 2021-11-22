@@ -1,25 +1,26 @@
-The player from our introductory scenario was eager to use their new console to play games with friends and family. Despite owning an adaptive controller, interacting with standard hardware devices, in this case the  new console, cannot be avoided.
+There are many adaptive input devices on the market that players can customize to meet their exact needs and preferences. However, it's important to remember that these players must still interact with standard gaming devices like consoles, PCs, and headsets in some capacity prior to using their adaptive input devices for in-game play.
 
-While standard hardware devices may not provide the same accessibility supports as bespoke accessibility products, a multitude of best practices can be implemented when designing all gaming hardware devices to support more players. This unit will outline the importance of accessibility in hardware development.
+This is why it's important to consider including basic accessibility features and supports during hardware development of all gaming products.
 
 ## What is the role of accessibility in standard hardware development?
 
-Access to gaming hardware like consoles, controllers, PCs, mice, keyboards, and headsets is an instrumental preliminary step in enjoying the gameplay. Unlike gaming software, hardware devices are typically not as flexible or customizable to the wide range of player needs. It's important to note the difference between hardware devices purposefully designed and created to provide an accessible experience for players, such as the Xbox Adaptive Controller, and standard devices that all players must use to access game platforms and titles.
+Unlike gaming software, hardware devices are not as flexible or customizable to a wide range of player needs. When designing for the masses, prioritization is generally around form factors that are small, compact, and sleek.
 
-The Xbox Adaptive Controller is a device created with and for players with disabilities. The device features large buttons that are easily activated and multiple standard hardware connections including 3.5 mm jacks and USB-C ports. It provides users with robust customization options from both a hardware and software perspective.
-
-There are many similar hardware products that are intentionally built with accessibility at the forefront of development. These devices, typically referred to as “assistive technologies” may offer:
+In contrast, many assistive technologies, or products intentionally built for players with disabilities offer:
 
 - Larger or “oversized” components
 - Joysticks and buttons that can be activated with low force
-- Options to customize many aspects to distinct user needs
+- Robust options to customize other device aspects to distinct user needs
 
-For “non-adaptive” or standard devices, it can be difficult to offer the same ease of use and customization options. Limitations around device size and ease of use for the general population can contribute to these difficulties. When designing for the masses, prioritization is generally around form factors that are small, compact, and sleek.
-
-For reference, the following image shows the difference in size between the Xbox Adaptive Controller, a standard Xbox controller, and two accessibility switch buttons.
+For example, the following image shows the difference in size and form between the Xbox Adaptive Controller, a standard Xbox controller, and two accessibility switch buttons. The Adaptive Controller features two large face buttons that are exponentially larger than the A B X Y buttons on a standard controller.
 
 :::image type="content" source="../media/xac-and-standard.png" alt-text="A collection of controllers including the Xbox Adaptive Control, a small red switch, a large green switch, and a standard Xbox Controller.":::
 
-However, it's important to remember that standard gaming devices like consoles, PCs, and headsets commonly act as the “gatekeeper” to beginning any form of gameplay. If a player cannot connect their console to their tv and power it on, they are blocked from using their adaptive controller for in-game play.
+> [!NOTE]
+> Note the similar color scheme and overall appearance of the Xbox Adaptive Controller and the standard Xbox controller. Many bespoke assistive technology devices tend to be loud and colorful in appearance, resulting in feelings of stigmatizing among users.
+>
+> One major success of the Xbox Adaptive Controller is it's intentional design that makes it look like a true Xbox product. Creating accessible gaming products that are not only usable, but also desirable is another major opportunity to be tackled in this space.
 
-It might not be possible to meet the needs of all players with a single, standard hardware device. However, there are some general best practices for hardware accessibility that are applicable to all devices. These best practices will be described in detail throughout the remainder of this module. Implementing these practices during hardware development can provide more accessible experiences for players as they perform basic set-up and operation tasks needed to play.
+The contrast between these two design approaches can make the task of creating "accessible standard hardware devices" seem overwhelming. It may not be possible to meet the needs of all players with a single, standard controller, console, or headset. However, the best practices that will be discussed in this module can be generally applied to all hardware devices.
+
+This application can provide more accessible experiences for players with disabilities as they perform basic set-up tasks like powering on their standard devices, connecting their assistive technologies, and other unavoidable interactions needed to begin play.

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.hardware-devices.accessible-packaging
-title: Hardware Packaging Accessibility
+title: Hardware packaging accessibility
 metadata:
-  title: Hardware packaging accessibility
+  title: Provide accessible packaging design elements
   description: This content is part of the accessibility best practices for gaming hardware module.
-  ms.date: 08/10/2021
-  author: erzelman
-  ms.author: erzelman
+  ms.date: 11/10/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-hardware-devices
-durationInMinutes: 18
+durationInMinutes: 15
 content: |
   [!include[](includes/04-accessible-packaging.md)]
 quiz:
@@ -37,4 +37,3 @@ quiz:
     - content: "Eliminate surrounding inner packaging so the device is free within its larger, outer box, eliminating the need to “remove” it from inner packaging."
       isCorrect: false
       explanation: "Incorrect. While this approach would make it easier for users to remove their device from packaging altogether, it would not be the best approach considering the fact that the device could easily become damaged."
- 
