@@ -6,6 +6,12 @@ Imagine a player who is blind. They use screen narration software on their PC th
 
 Although the game itself could be partially accessible for this player because in-game play can be fully navigated via audio cues alone, they are still blocked from this experience because they cannot navigate the main menu to locate the start button without screen narration. If the platform or title had ensured that their products were compatible with third-party screen narration software, or provided game title or platform-level screen narration software, then this player might have been able to navigate to the in-game play.
 
-In this module, you will be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
+In this module, you'll be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
 
-By the end of this module, you will be able to describe common hardware and software assistive technologies that players with disabilities may use while gaming and apply these learnings within the context of game title, platform, and hardware development to best support individual player needs as they relate to assistive technology access while gaming.
+## Learning Objectives
+
+By the end of this module, you will be able to:
+
+1.	Identify the primary hardware-based assistive technologies commonly used among players with disabilities.
+2.	Identify the primary software-based features and tools commonly used among players with disabilities.
+3.	Determine the best approach to support the use of assistive technologies in game, platform and hardware experiences in game design and development.
