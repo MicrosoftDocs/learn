@@ -49,7 +49,7 @@ public class LogHandler : RequestHandler
 }
 ```
 
-The abstract class includes a **SendAsync** method that should be overriden to inject new logic around requests.
+The abstract class includes a **SendAsync** method that should be overridden to inject new logic around requests.
 
 ```csharp
 public override async Task<ResponseMessage> SendAsync(RequestMessage request, CancellationToken cancellationToken)

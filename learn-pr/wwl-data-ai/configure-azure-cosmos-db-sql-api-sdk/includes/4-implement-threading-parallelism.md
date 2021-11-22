@@ -55,7 +55,8 @@ QueryRequestOptions options = new ()
 };
 ```
 
-> &#128161; If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size. For instance, the max response size is 4 MB.
+> [!TIP]
+> If you use a **MaxItemCount** of -1, you should ensure the total response doesn't exceed the service limit for response size. For instance, the max response size is 4 MB.
 
 ### Max concurrency
 
@@ -83,4 +84,5 @@ QueryRequestOptions options = new ()
 };
 ```
 
-> &#128221; These settings are explored much deeper in other Azure Cosmos DB SQL API modules on issuing queries using the SDK.
+> [!NOTE]
+> These settings are explored much deeper in other Azure Cosmos DB SQL API modules on issuing queries using the SDK.

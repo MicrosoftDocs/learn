@@ -30,7 +30,8 @@ The emulator's key is a static well-known authentication key. The default value 
 string key = "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==";
 ```
 
-> &#128161; You can start the emulator using the **/Key** option to generate a new key instead of using the default key.
+> [!TIP]
+> You can start the emulator using the **/Key** option to generate a new key instead of using the default key.
 
 Once those variables are set, create the **CosmosClient** like you typically would for a cloud-based account.
 
