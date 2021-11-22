@@ -1,6 +1,6 @@
 Azure IoT Central uses configurable Device Templates to define and manage IoT devices.
 
-Suppose you work for a company that needs to build an IoT solution, but lacks the technical resources to develop and support a full PaaS solution. The company needs you to evaluate Azure IoT Central's device implementation process and capabilities, and then report back. Understanding how device properties and capabilities are configured within an Azure IoT Central solution will help the company to evaluate whether they are resourced appropriately to build an IoT solution with Azure IoT Central. You decide to examine Azure IoT Central's device template and device model capabilities.<br>
+Suppose you work for a company that needs to build an IoT solution, but lacks the technical resources to develop and support a full PaaS solution. The company needs you to evaluate Azure IoT Central's device implementation process and capabilities, and then report back. Understanding how device properties and capabilities are configured within an Azure IoT Central solution will help the company to evaluate whether they are resourced appropriately to build an IoT solution with Azure IoT Central. You decide to examine Azure IoT Central's device template and device model capabilities.
 
 In this module, you will:
 
