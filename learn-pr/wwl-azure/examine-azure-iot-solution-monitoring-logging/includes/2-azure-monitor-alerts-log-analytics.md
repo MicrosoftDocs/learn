@@ -93,4 +93,4 @@ You can alert on metrics and logs. These include but are not limited to:
  -  Log search queries
  -  Activity log events
  -  Health of the underlying Azure platform
- -  Tests for website availability<br>
+ -  Tests for website availability

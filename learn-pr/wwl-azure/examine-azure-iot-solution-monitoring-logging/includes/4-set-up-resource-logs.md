@@ -5,7 +5,8 @@ Businesses that implement Azure IoT Hub expect reliable performance from their r
 
 Azure Monitor is a single source of monitoring and logging for all your Azure services. You can send the resource logs that Azure Monitor generates to Azure Monitor logs, Event Hubs, or Azure Storage for custom processing. Azure Monitor's metrics and diagnostics settings give you visibility into the performance of your resources. Continue reading this article to learn how to Use Azure Monitor with your IoT hub.
 
-**Important:** The events emitted by the IoT Hub service using Azure Monitor resource logs are not guaranteed to be reliable or ordered. Some events might be lost or delivered out of order. Resource logs also aren't meant to be real-time, and it may take several minutes for events to be logged to your choice of destination.
+> [!IMPORTANT]
+> The events emitted by the IoT Hub service using Azure Monitor resource logs are not guaranteed to be reliable or ordered. Some events might be lost or delivered out of order. Resource logs also aren't meant to be real-time, and it may take several minutes for events to be logged to your choice of destination.
 
 Azure Resource Health helps you diagnose and get support when an Azure issue impacts your resources. A dashboard provides current and past health status for each of your IoT hubs.
 
@@ -18,7 +19,7 @@ To learn more about the specific metrics and events that Azure Monitor watches, 
 Choose where you want to send the logs. You can select any combination of the three options:
 
  -  Archive to a storage account
- -  Stream to an event hub
+ -  Stream to an Event Hub
  -  Send to Log Analytics
 
 See Azure Monitor pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/)
@@ -335,7 +336,7 @@ The direct methods category tracks request-response interactions sent to individ
 
 ### Read logs from Azure Event Hubs
 
-After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an event hub:
+After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an Event Hub:
 
 ```
 class Program
