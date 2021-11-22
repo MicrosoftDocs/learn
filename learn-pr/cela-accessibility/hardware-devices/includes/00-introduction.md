@@ -9,7 +9,7 @@ They also experience barriers while setting up their console. Despite owning an 
 
 In this module, you’ll learn about the role of accessibility in standard hardware development. You'll be introduced to accessibility best practice guidance for creating more accessible standard hardware devices and product packaging.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you’ll be able to:
 
