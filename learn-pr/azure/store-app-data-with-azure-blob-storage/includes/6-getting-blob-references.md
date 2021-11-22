@@ -1,4 +1,4 @@
-To interact with a container in Blob Storage, you use a `BlobContianerClient` object.  In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
+To interact with a container in Blob Storage, you use a `BlobContainerClient` object.  In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
 
 ## Listing blobs in a container
 

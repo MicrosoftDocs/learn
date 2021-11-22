@@ -7,15 +7,8 @@ occurred.
 
 1. Select the Microsoft Edge browser from the toolbar and navigate to [https://portal.azure.com](https://portal.azure.com/). This should be the home page of the browser.
 
-1. The username and password information to sign into the Azure portal are in the  **Resources** tab above these instructions. If you select the **Username** it will be filled in for you.
-
-1. Select **Next**.
-
-1. Select the **Password** text in the **Resources** tab to have that filled in for you, then select **Sign in**.
-
-1. Select **Yes**.
-
-1. On the **Welcome to Azure** popup, select **Maybe later**.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?portal=true).
 
 ## Configure Backup to URL
 

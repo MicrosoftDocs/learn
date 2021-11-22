@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+  ms.custom: team=nextgen
 durationInMinutes: 10
 azureSandbox: true
 interactive: bash

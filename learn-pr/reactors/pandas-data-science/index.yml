@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Introduction to the pandas library for data science
 summary: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
 abstract: |

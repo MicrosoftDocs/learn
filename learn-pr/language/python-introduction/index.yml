@@ -2,14 +2,13 @@
 uid: learn.languages.python-introduction
 metadata:
   title: What is Python?
-  description: A quick introduction to Python, programming languages, compilation,
-    and the process of programming.
+  description: A quick introduction to Python, programming languages, compilation, and the process of programming.
   ms.date: 07/02/2021
   author: bobtabor-msft
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: What is Python?
 summary: A quick introduction to Python, programming languages, compilation, and
   the process of programming.

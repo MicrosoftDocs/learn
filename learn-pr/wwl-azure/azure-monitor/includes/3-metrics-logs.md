@@ -20,8 +20,7 @@ Access metric values from a command line using CLI.
 
 Use Metrics Explorer to interactively analyze the data in your metric database and chart the values of multiple metrics over time. You can pin the charts to a dashboard to view them with other visualizations. You can also retrieve metrics by using the Azure monitoring REST API.
 
-> [!div class="mx-imgBorder"]
-> ![Monitor metrics show in monitor explorer](../media/az500-metrics-explorer.png)
+![Monitor metrics show in monitor explorer](../media/az500-metrics-explorer.png)
 
 Behind the scene, log-based metrics translate into log queries. Their retention matches the retention of events in underlying logs. For Application Insights resources, logs are stored for 90 days.
 
@@ -49,8 +48,7 @@ Access log query results from a custom application using REST API.
 ### Log queries
 Data in Azure Monitor Logs is retrieved using a log query written with the Kusto query language, which allows you to quickly retrieve, consolidate, and analyze collected data. Use Log Analytics to write and test log queries in the Azure portal. It allows you to work with results interactively or pin them to a dashboard to view them with other visualizations.
 
-> [!div class="mx-imgBorder"]
-> ![Azure Logs retrieved using a log query](../media/az500-log-analytics-2.png)
+![Azure Logs retrieved using a log query](../media/az500-log-analytics-2.png)
 
 ### Security tools use of Monitor logs
 * **Azure Security Center** stores data that it collects in a Log Analytics workspace where it can be analyzed with other log data. 

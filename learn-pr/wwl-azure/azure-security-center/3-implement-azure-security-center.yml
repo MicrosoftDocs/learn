@@ -4,13 +4,13 @@ title: Implement Azure Security Center
 metadata:
   title: Implement Azure Security Center
   description: "Implement Azure Security Center"
-  ms.date: 10/14/2021
+  ms.date: 11/12/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/3-implement-azure-security-center.md)]

@@ -2,7 +2,7 @@ Organizations use cloud-based apps to spin up solutions quickly to meet their bu
 
 ## Start through the Azure Marketplace or Azure portal
 
-You can get started with Elastic on Azure through the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.ec-azure?tab=Overview) using your existing Azure account for integrated billing or through the search page in Azure portal by searching for “Elastic Cloud” (Elasticsearch managed service).
+You can get started with Elastic on Azure through the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.ec-azure-pp) using your existing Azure account for integrated billing or through the search page in Azure portal by searching for “Elastic Cloud” (Elasticsearch managed service).
 
 This directs you to an Elastic signup form, where you will create a new account. If you have previously signed up with an Elastic Cloud account, you must create a new account to receive integrated billing. Using your Elastic Cloud account will incur a charge but you can keep costs minimal by selecting the smallest option.
 

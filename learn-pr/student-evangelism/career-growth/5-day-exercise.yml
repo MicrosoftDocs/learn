@@ -10,6 +10,7 @@ metadata:
   ms.author: jelooper 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 2 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/5-day-exercise.md)]

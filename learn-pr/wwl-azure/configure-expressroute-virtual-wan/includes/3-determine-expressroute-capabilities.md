@@ -31,7 +31,7 @@ You enable ExpressRoute Global Reach to exchange data across your on-premises si
 
 ### **Bandwidth options**
 
-You purchase ExpressRoute circuits for a wide range of bandwidths from 50 Mbps to 100 Gbit. Be sure to check with your connectivity provider to determine the bandwidths they support.
+You purchase ExpressRoute circuits for a wide range of bandwidths. Be sure to check with your connectivity provider to determine the bandwidths they support.
 
 ### **Flexible billing models**
 

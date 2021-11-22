@@ -5,8 +5,7 @@ Today, Azure service traffic from a virtual network uses public IP addresses as 
 
 A common usage case for service endpoints is a virtual machine accessing storage. The storage account restricts access to the virtual machines private IP address.
 
-> [!div class="mx-imgBorder"]
-> ![A storage endpoint or storage access.](../media/az500-service-endpoints.png)
+![A storage endpoint or storage access.](../media/az500-service-endpoints.png)
 
 **Why use a service endpoint?**
 
@@ -18,5 +17,5 @@ A common usage case for service endpoints is a virtual machine accessing storage
 
 + **Simple to set up with less management overhead**. You no longer need reserved, public IP addresses in your virtual networks to secure Azure resources through IP firewall. There are no NAT or gateway devices required to set up the service endpoints. Service endpoints are configured through a simple click on a subnet. There is no additional overhead to maintaining the endpoints.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >With service endpoints, the source IP addresses of the virtual machines in the subnet for service traffic switches from using public IPv4 addresses to using private IPv4 addresses. Existing Azure service firewall rules using Azure public IP addresses will stop working with this switch. Please ensure Azure service firewall rules allow for this switch before setting up service endpoints. You may also experience temporary interruption to service traffic from this subnet while configuring service endpoints. 

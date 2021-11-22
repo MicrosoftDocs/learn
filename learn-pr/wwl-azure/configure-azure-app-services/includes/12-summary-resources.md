@@ -2,7 +2,7 @@ Azure App Service is an HTTP-based service for hosting web applications. You can
 
 You should now be able to:
 
- -  Identify features and usage cases for the Azure App Service.
+ -  Identify features and usage cases for the the Azure App Service.
  -  Create an App Service.
  -  Configure deployment settings, specifically deployment slots.
  -  Secure the App Service.

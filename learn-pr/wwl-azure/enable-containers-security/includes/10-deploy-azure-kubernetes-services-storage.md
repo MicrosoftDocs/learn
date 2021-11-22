@@ -1,8 +1,7 @@
 
 Applications that run in Azure Kubernetes Service (AKS) may need to store and retrieve data. For some application workloads, this data storage can use local, fast storage on the node that is no longer needed when the pods are deleted. Other application workloads may require storage that persists on more regular data volumes within the Azure platform. Multiple pods may need to share the same data volumes, or reattach data volumes if the pod is rescheduled on a different node. Finally, you may need to inject sensitive data or application configuration information into pods.
 
-> [!div class="mx-imgBorder"]
-> ![AKS Cluster with a persistent volume. The volume uses Azure managed disks and Azure files.](../media/az500-kubernetes-storage-1.png)
+![AKS Cluster with a persistent volume. The volume uses Azure managed disks and Azure files.](../media/az500-kubernetes-storage-1.png)
 
 ## Volumes
 
@@ -34,7 +33,6 @@ If no StorageClass is specified for a persistent volume, the default StorageClas
 
 A PersistentVolumeClaim requests either Disk or File storage of a particular StorageClass, access mode, and size. The Kubernetes API server can dynamically provision the underlying storage resource in Azure if there is no existing resource to fulfill the claim based on the defined StorageClass. The pod definition includes the volume mount once the volume has been connected to the pod.
 
-> [!div class="mx-imgBorder"]
-> ![AKS Cluster with persistent volume claim accessing the storage class.](../media/az500-kubernetes-storage-2.png)
+![AKS Cluster with persistent volume claim accessing the storage class.](../media/az500-kubernetes-storage-2.png)
 
 A PersistentVolume is bound to a PersistentVolumeClaim once an available storage resource has been assigned to the pod requesting it. There is a 1:1 mapping of persistent volumes to claims.

@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Use loops to iterate through data in Rust
 summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
 abstract:  |

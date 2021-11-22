@@ -59,5 +59,6 @@ modules:
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin
 - learn.monitor-java-azure
+- learn.autoscale-java-azure
 trophy:
   uid: learn.java-on-azure.trophy

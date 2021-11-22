@@ -50,9 +50,11 @@ In this section, we'll look at the time aggregation feature.
 
 1. Select **Contents Temperature** for **Telemetry**.
 
+1. For **Operator**. select **Is greater than or equal to**.
+
 1. In the range **Aggregation** values, select **Maximum**.
 
-1. For **Operator**. select **Is greater than or equal to**. Then enter "0" for the value, and select that as the value.
+1. Enter "0" for the value, and select that as the value.
 
     [![Screenshot showing a rule to trigger when the contents temperature spikes.](../media/rules-actions-spiking-rule.png)](../media/rules-actions-spiking-rule.png#lightbox)
 

@@ -15,8 +15,7 @@ Each recommendation provides you with:
 ### Monitor recommendations
 Security Center analyzes the security state of your resources to identify potential vulnerabilities. The Recommendations tile under Overview shows the total number of recommendations identified by Security Center.
 
-> [!div class="mx-imgBorder"]
-> ![ASC security recommendations blade is displayed.](../media/az500-security-center-recommendations.png)
+![ASC security recommendations blade is displayed.](../media/az500-security-center-recommendations.png)
 
 Recommendations can be filtered. The Filter blade opens and you select the severity and state values you wish to display.
 

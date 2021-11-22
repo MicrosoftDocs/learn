@@ -18,8 +18,7 @@ Update your application at your own pace. Applications built with ADAL libraries
 
 The following diagram depicts the Microsoft identity experience at a high level, including the app registration experience, software development kits (SDKs), endpoints, and supported identities.
 
-> [!div class="mx-imgBorder"]
-> ![App registrations use MSAL and endpoints.](../media/az500-authentication-library.png)
+![App registrations use MSAL and endpoints.](../media/az500-authentication-library.png)
 
 The Microsoft identity platform has two endpoints (v1.0 and v2.0) and two sets of client libraries to handle these endpoints. When developing a new application, consider the advantages and the current state of the endpoints and the authentication libraries. Also consider that:
 

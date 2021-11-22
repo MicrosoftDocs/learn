@@ -3,7 +3,7 @@ uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics
 metadata:
   title: 'Microsoft Azure Data Fundamentals: Explore modern data warehouse analytics in Azure'
   description: 'Microsoft Azure Data Fundamentals: Explore modern data warehouse analytics in Azure'
-  ms.date: 10/12/2021
+  ms.date: 11/15/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -23,8 +23,7 @@ products:
 - azure
 modules:
 - learn.wwl.examine-components-of-modern-data-warehouse
-- learn.wwl.explore-data-ingestion-azure
-- learn.wwl.explore-data-storage-processing-azure
+- learn.wwl.explore-azure-synapse-analytics
 - learn-bizapps.get-started-with-power-bi
 trophy:
   uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics.trophy

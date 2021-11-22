@@ -5,10 +5,6 @@ In this unit, you'll add a HTTP POST page handler for the *Pizza* Razor page for
 Open the *Pages/Pizza.cshtml.cs* `PageModel` class file. You may remember, that when you created a new Razor page called *Pizza*, its `PageModel` class file named *Pizza.cshtml.cs* was generated. Examine the contents. It contains the following C# code:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -41,14 +37,21 @@ public void OnGet()
 Add a `List<Pizza>` variable named `pizzas` to the `PizzaModel` class:
 
 ```csharp
-public List<Pizza> pizzas;
+public List<Pizza> pizzas = new();
 ```
 
 When the `OnGet` method is called, it will assign the results of the `PizzaService.GetAll()` method to the `pizzas` variable. This variable will be accessible to the Razor page template, where it will be written to the table listing the available pizzas.
 
+These statements are referencing the `PizzaService` and `Pizza` classes, so you'll need to add the following using statements to the top of the `PizzaModel` class:
+
+```csharp
+using RazorPagesPizza.Models;
+using RazorPagesPizza.Services;
+```
+
 ### Use a utility method to format the Gluten Free information in the list
 
-Our `IsGlutenFree` property is a boolean value. We can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
+The `IsGlutenFree` property is a boolean value. You can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
 
 ```csharp
 public string GlutenFreeText(Pizza pizza)
@@ -89,12 +92,12 @@ The `PizzaModel` class needs access to the `Pizza` model. It will validate and p
 
 ```csharp
 [BindProperty]
-public Pizza NewPizza { get; set; }
+public Pizza NewPizza { get; set; } = new();
 ```
 
 ## Add an HTTP POST handler for the Delete buttons
 
-A Razor page can include multiple forms. Since the Delete buttons in our list of pizzas modifies data, an HTTP POST rather that an HTTP GET is required.
+A Razor page can include multiple forms. Since the Delete buttons in your list of pizzas modifies data, an HTTP POST rather that an HTTP GET is required.
 
 Add the following `OnPostDelete` method to the `PizzaModel` class:
 
@@ -124,7 +127,7 @@ The result will appear as follows:
 
    [!code-cshtml[](../code/layout.cs?highlight=25)]
 
-2. Save your changes.
+1. Save your changes.
 
 The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
@@ -132,3 +135,19 @@ The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 * Enhances the standard HTML anchor (`<a>`) tag by adding custom HTML attributes, such as `asp-page-handler`.
 
 The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
+
+1. Run the following .NET CLI command in the command shell:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+1. Open the app in your browser by browsing to the HTTPS URL.
+
+1. Navigate to the new *Pizza* page by clicking on the `Pizza List` link in the navigation bar.
+
+1. Fill in the form to create a new pizza and click the `Add` button. You should see your new pizza appear in the list of pizzas.
+
+1. Test the validation by entering an invalid pizza information, such as a blank pizza name or a price of 10000 or greater. You should see the validation error message displayed.
+
+1. Delete a pizza from the list by clicking the `Delete` button. You should see the pizza disappear from the list.

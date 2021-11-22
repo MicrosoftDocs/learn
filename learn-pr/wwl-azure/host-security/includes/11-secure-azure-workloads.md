@@ -14,8 +14,7 @@ The [CIS Microsoft Azure Foundations Security Benchmark](/azure/governance/bluep
 
 A variety of security standards can help cloud service customers to achieve workload security when using cloud services. The following are recommended technology groupings to help create secure cloud-enabled workloads. These recommendations should not be considered an exhaustive list of all possible security configurations and architectures but just as a starting point.
 
-> [!div class="mx-imgBorder"]
-> ![A diagram of the workflow for securing Azure workloads with CIS benchmark.](../media/az500-host-hardened.png)
+![A diagram of the workflow for securing Azure workloads with CIS benchmark.](../media/az500-host-hardened.png)
 
 CIS has two implementation levels, and several categories of recommendations.
 
