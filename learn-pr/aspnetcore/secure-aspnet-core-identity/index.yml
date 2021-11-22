@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.secure-aspnet-core-identity
 metadata:
-  title: Secure an ASP.NET Core web app with the Identity framework
-  description: Add authentication and authorization to an ASP.NET Core web app using the Identity framework.
+  title: Secure a .NET web app with the ASP.NET Core Identity framework
+  description: Add authentication and authorization to a .NET web app using the ASP.NET Core Identity framework.
   ms.date: 08/20/2019
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Secure an ASP.NET Core web app with the Identity framework
-summary: Add authentication and authorization to an ASP.NET Core web app using the Identity framework.
+title: Secure a .NET web app with the ASP.NET Core Identity framework
+summary: Add authentication and authorization to a web app using ASP.NET Core Identity&mdash;ASP.NET Core's native security framework.
 abstract: | 
   In this module, you will:
-  - Configure Identity support in an existing ASP.NET Core web app.
+  - Configure ASP.NET Core Identity support in an existing ASP.NET Core web app.
   - Provide new user registration capabilities.
   - Extend Identity UI components.
   - Customize multi-factor login capabilities.
@@ -34,7 +34,6 @@ products:
 - aspnet-core
 - dotnet-core
 - ef-core
-- azure
 units:
 - learn.secure-aspnet-core-identity.1-introduction
 - learn.secure-aspnet-core-identity.2-setup-environment
