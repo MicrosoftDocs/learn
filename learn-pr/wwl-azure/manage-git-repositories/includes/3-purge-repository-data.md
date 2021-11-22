@@ -12,7 +12,8 @@ If you commit sensitive data (for example, password, key) to Git, it can be remo
 
 The standard built-in Git method for removing files is to use the git filter-branch command. This command rewrites your repository history.
 
-*Note: the SHA hashes for your commits will then also change.*
+> [!NOTE]
+> *The SHA hashes for your commits will then also change.*
 
 ## BFG Repo-Cleaner
 
