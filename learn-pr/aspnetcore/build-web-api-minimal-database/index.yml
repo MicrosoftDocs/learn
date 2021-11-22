@@ -5,7 +5,8 @@ metadata:
   description: Learn how to add a database to a minimal API application.
   ms.date: 10/26/2021
   author: jongalloway
-  ms.author: jogallow
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use a database with minimal API, Entity Framework Core, and ASP.NET Core
