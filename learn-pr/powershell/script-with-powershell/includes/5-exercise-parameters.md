@@ -30,7 +30,7 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    code Backup.ps1
    ```
 
- 1.  Add this content to the file:
+1.  Add this content to the file:
 
      ```powershell
      $date = Get-Date -format "yyyy-MM-dd"
@@ -53,7 +53,7 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    You should see this output:
 
    ```output
-   Created backup at ./backup<current date as YYMMDD>.zip
+   Created backup at ./backup-<current date as YYYY-MM-DD>.zip
    ```
 
 ## Add parameters to your script
@@ -98,7 +98,7 @@ If you add parameters to your script, users can provide values when it runs. You
 1. Remove your backup file:
 
    ```bash
-   rm backup-<current date as YYYYMMDD>.zip
+   rm backup-<current date as YYYY-MM-DD>.zip
    ```
 
    You're removing this file to make sure you get a message stating that your `$Path` value doesn't exist. Otherwise, you'd get a message about the zip file already existing, and the problem we're trying to fix would be hidden.
@@ -112,8 +112,11 @@ If you add parameters to your script, users can provide values when it runs. You
    You'll see an error message similar to this one:
 
    ```output
-      8 |  Compress-Archive -Path $Path -CompressionLevel 'Fastest' -Destination …                                                     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                       | The path './app' either does not exist or is not a valid file system path.
-   Created backup at ./backup-<YYYY-MM-DD>.zip
+   Line |
+      8 |  Compress-Archive -Path $Path -CompressionLevel 'Fastest' -Destination …
+        |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        | The path './app' either does not exist or is not a valid file system path.
+   Created backup at ./backup-<current date as YYYY-MM-DD>.zip
    ```
 
    The script notifies you that it can't find the directory _./app_. Now it's time to provide a value to the `$Path` parameter and see the benefit of adding parameters to your script.
@@ -127,7 +130,7 @@ If you add parameters to your script, users can provide values when it runs. You
    You'll see a message similar to the one you got earlier:
 
    ```output
-   Created backup at ./backup<current date as YYMMDD>.zip
+   Created backup at ./backup-<current date as YYYY-MM-DD>.zip
    ```
 
    You can now use parameters if the directory you want to back up isn't called _./app_ or if you want to put the compressed file somewhere other than the current directory.
