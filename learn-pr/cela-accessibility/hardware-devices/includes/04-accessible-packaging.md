@@ -34,7 +34,7 @@ Players may resort to using a sharp objects to open the package which may damage
 - Don’t apply adhesives on components that do not need them
 
 In the following image of the Xbox Adaptive Controller packaging, a large adhesive sticker seals the box. This adhesive features two smaller circular loops to serve as an access point for users as they grasp the adhesive to remove it.
-:::image type="content" source="../media/box-side.png" alt-text="The box for an Xbox Adaptive Controller Device. There is a large pill shaped adhesive sticker sealing the box. The adhesive has two large finger loops on both sides of it.":::
+:::image type="content" source="../media/box-side.png" alt-text="The Xbox Adaptive controller packaging with a large pill shaped adhesive sealing the box.":::
 
 ## Provide multiple access points to inner packaging components
 
