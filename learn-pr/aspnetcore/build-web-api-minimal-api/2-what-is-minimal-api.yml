@@ -4,9 +4,10 @@ title: What is minimal API?
 metadata:
   title: What is minimal API?
   description: Learn what minimal API is and how to create a project with it.
+  ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
-  ms.date: 10/26/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
