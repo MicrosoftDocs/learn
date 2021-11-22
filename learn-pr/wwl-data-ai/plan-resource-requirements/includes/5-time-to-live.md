@@ -2,7 +2,8 @@ Azure Cosmos DB allows you to set the length of time documents live in the datab
 
 Once set at the container level, Azure Cosmos DB will automatically purge documents at the specified time since they were last modified. The TTL value is defined as an integer in seconds.
 
-> &#128161; The maximum TTL value is 2147483647.
+> [!TIP]
+> The maximum TTL value is 2147483647.
 
 TTL expiration is a background task performed in the background using request units and is scheduled when quiescent.
 

@@ -23,7 +23,8 @@ Using this strategy, you should identify your solution's query and access patter
 - Number of read operations per second
 - Number of write operations per second
 
-> &#128161; Measuring RU/s for queries should be done at scale. Measuring queries running on a single physical partition will not yield significant data on the actual throughput used in your real world scenario once it is deployed and scaled out.
+> [!TIP]
+> Measuring RU/s for queries should be done at scale. Measuring queries running on a single physical partition will not yield significant data on the actual throughput used in your real world scenario once it is deployed and scaled out.
 
 You can use a spreadsheet application to build a quick table to figure out a rough estimate of your needed request unit capacity. Here's a quick example:
 
@@ -35,4 +36,5 @@ You can use a spreadsheet application to build a quick table to figure out a rou
 | **Top Query #3** | 100 | 100 | 10,000 |
 | **Total RU/s** | | | 200,000 RU/s |
 
-> &#128161; You can also run a proof of concept application, and use the **request charge** property of the SDK to measure the real-world RU charge of running the operations that you intend to make against Azure Cosmos DB.
+> [!TIP]
+> You can also run a proof of concept application, and use the **request charge** property of the SDK to measure the real-world RU charge of running the operations that you intend to make against Azure Cosmos DB.

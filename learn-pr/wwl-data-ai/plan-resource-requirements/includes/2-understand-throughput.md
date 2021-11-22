@@ -10,7 +10,8 @@ When configuring Azure Cosmos DB, you can provision throughput at either or both
 
 Any throughput provisioned exclusively at the container level is reserved only for this container. This throughput is available only for this container all the time. This throughput is also financially backed by SLAs.
 
-> &#128221; This is the most commonly used method of manual throughput provisioning.
+> [!NOTE]
+> This is the most commonly used method of manual throughput provisioning.
 
 ## Database-level throughput provisioning
 
