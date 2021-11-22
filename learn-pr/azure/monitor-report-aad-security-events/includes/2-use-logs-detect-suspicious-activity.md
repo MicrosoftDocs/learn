@@ -147,7 +147,7 @@ To access the audit log files, you need:
 
 Much like the sign-in logs, the audit logs can be adapted and changed to meet your specific needs. The default audit log view displays the following columns:
 
-- Data
+- Date
 - Service
 - Category
 - Status
