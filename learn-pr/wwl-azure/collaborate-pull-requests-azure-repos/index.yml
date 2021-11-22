@@ -12,10 +12,10 @@ title: Collaborate with pull requests in Azure Repos
 summary: This module presents pull requests for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals. It helps understanding how pull requests works and how to configure them.
 abstract: |
   By the end of this module, you'll be able to:
-  *   Leverage pull requests for collaboration and code reviews
-  *   Give feedback using pull requests
-  *   Configure branch policies
-  *   Use GitHub mobile for pull requests approvals
+  * Leverage pull requests for collaboration and code reviews
+  * Give feedback using pull requests
+  * Configure branch policies
+  * Use GitHub mobile for pull requests approvals
 prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
