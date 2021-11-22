@@ -11,7 +11,7 @@ Instead, it's often better to create a single pipeline that deploys everything r
 > [!TIP]
 > When you're building code for your solution, you'll probably need to deploy it frequently so that you can test how it works. You might find that deploying your infrastructure together with your application code makes your pipeline run slowly and inhibits your progress.
 >
-> If you're in this position, you might consider disabling the infrastructure deployment for your development environment. You can use pipeline templates and conditions to achieve this. However, you should leave the full deployment sequence intact for your other environments.
+> If you're in this position, you might consider disabling the infrastructure deployment for your development environment. You can use path filters, pipeline templates, and conditions to achieve this. However, you should leave the full deployment sequence intact for your other environments.
 
 ## The control plane and the data plane
 
@@ -36,9 +36,12 @@ When you consider an end-to-end pipeline, you ordinarily need to deploy your Azu
 
 ## How to perform data plane operations
 
-When you create a deployment pipeline that interacts with the data plane of your resources, you can use any of three common approaches: Resource Manager deployment scripts, pipeline scripts, and pipeline tasks.
+When you create a deployment pipeline that interacts with the data plane of your resources, you can use any of three common approaches:
+- Resource Manager deployment scripts
+- Pipeline scripts
+- Pipeline tasks
 
-Resource Manager deployment scripts are defined within your Bicep file. They run Bash or PowerShell scripts, and they can interact with the Azure CLI and Azure PowerShell cmdlets. You create a managed identity for the deployment script to use to authenticate to Azure, and Azure automatically provisions and manages the other resources it needs to run the deployment script.
+*Resource Manager deployment scripts* are defined within your Bicep file. They run Bash or PowerShell scripts, and they can interact with the Azure CLI and Azure PowerShell cmdlets. You create a managed identity for the deployment script to use to authenticate to Azure, and Azure automatically provisions and manages the other resources it needs to run the deployment script.
 
 Deployment scripts are good when you need to run a simple script within your deployment process. However, they don't easily provide you with access to other elements from your pipeline.
 
