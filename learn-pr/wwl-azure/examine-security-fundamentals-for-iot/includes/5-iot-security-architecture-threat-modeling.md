@@ -44,7 +44,7 @@ In order to optimize security best practices, it is recommended that a typical I
 
 Each zone is separated by a Trust Boundary, which is noted as the dotted red line in the following diagram. It represents a transition of data/information from one source to another. During this transition, the data/information could be subject to Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege (STRIDE).
 
-:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-1-e38524cb.png" alt-text="Security - Security Zones":::
+:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-1-e38524cb.png" alt-text="Diagram that shows the zones and threat boundaries for an IoT solution.":::
 
 
 We can use the Azure IoT Reference Architecture to demonstrate how to think about threat modeling for IoT and how to address the threats identified. This approach identifies four main areas of focus:
@@ -54,12 +54,12 @@ We can use the Azure IoT Reference Architecture to demonstrate how to think abou
  -  Device and Event Processing.
  -  Presentation.
 
-:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-2-5eab02b4.png" alt-text="Security - Treat Areas":::
+:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-2-5eab02b4.png" alt-text="Diagram that shows how to use the Azure IoT Reference Architecture to think about threat modeling.":::
 
 
 The following diagram provides a simplified view of Microsoft’s IoT Architecture using a Data Flow Diagram model that is used by the Microsoft Threat Modeling Tool:
 
-:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-3-f16ff45c.png" alt-text="Security - Simplified View":::
+:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-3-f16ff45c.png" alt-text="Diagram that provides a simplified view of the solution architecture for an Azure IoT solution using a Data Flow Diagram model.":::
 
 
 You should notice that this diagram combines the *Devices and Data Sources* and *Data Transport* focus areas, and places a trust boundary on each side of an Azure Services Zone for the solution.
