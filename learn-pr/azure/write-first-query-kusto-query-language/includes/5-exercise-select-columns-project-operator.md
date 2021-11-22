@@ -21,21 +21,33 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 ## Rename and define new columns with `project`
 
-To understand the impacts of the storms, we want to get the total number of injuries. Let's make a new column that shows the sum of *InjuriesDirect* and *InjuriesIndirect*:
+To understand the impacts of storms in different U.S. states, we want to get the total number of injuries and amount of damage. With `project`, we can sum integer values from different columns and return the results in a new column. We can also rename columns to make them more meaningful to our analysis. For example, there are other countries with states. So it might be helpful to rename the state column to so it's clear the results are for U.S. states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for U.S. states.
 
-`Injuries=InjuriesDirect+InjuriesIndirect`
+1. First, let's update your previous query to make a new column that shows the sum of *InjuriesDirect* and *InjuriesIndirect*:
 
-We'll do the same for the two types of damage columns by adding together damages to crops and damages to property.
+   `Injuries=InjuriesDirect+InjuriesIndirect`
 
-`Damage=DamageCrops+DamageProperty`
+1. Let's do the same for the two types of damage columns by adding together damages to crops and damages to property.
 
-1. We can use a numerical operator to add the values because these columns are of type int (integer). Hover over the column name in the query editor to see the data type contained in the columns. 
+   `Damage=DamageCrops+DamageProperty`
+
+1. Hover over the column name in the query editor to see the data type contained in the columns. We can use a numerical operator to add the values because these columns are of type int (integer).
 
     :::image type="content" source="../media/4-data-type.png" alt-text="Screenshot of datatype in query editor.":::
 
-    Let's also rename the *State* column to *US_State*
+1. Let's also rename the *State* column to *US_State*.
 
-1. Altogether, the full query includes calculations for injuries, calculations for damages, and renaming the *State* column. Run the following query:
+   `US_State=State`
+
+1. Review your updated query. Altogether, the full query includes calculations for injuries, calculations for damages, and renaming the *State* column.
+
+    ```kusto
+    StormEvents
+    | project US_State=State, EventType, Injuries=InjuriesDirect+InjuriesIndirect, Damage=DamageCrops+DamageProperty
+    | take 10
+    ```
+
+1. Run the following query:
     
     ```kusto
     StormEvents

@@ -11,7 +11,7 @@ In this example, we'll use the Azure Data Explorer web interface. However, the K
 1. In the dialog box, under **Connection URI**, enter *help*.
 1. Select **Add**.
 
-:::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
+   :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
 
 Now you're connected to the help cluster. 
 
