@@ -29,7 +29,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
     | Subscription | Concierge subscription | The subscription under which this new function app is created. |
     | Resource group | <rgn>[sandbox resource group name]</rgn> | Name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the resource group that was assigned when we activated the sandbox. |
     | **Instance Details** |
-    | Namespace name | [Globally unique name] | Enter a name that is unique within Azure, for example, _salesteamapp_ + _your initials_ + _current date_. |
+    | Namespace name | [Globally unique name] | Enter a name that is unique within Azure. If you were to use this format, _salesteamapp_<_Company_><_year_> your Namespace name would look like this: _salesteamappContoso2021_ |
     | Location | Select from the dropdown list | You must choose from the free *Sandbox regions* listed below. |
     | Pricing tier | Standard | The recommended pricing tier for this exercise. |
 
