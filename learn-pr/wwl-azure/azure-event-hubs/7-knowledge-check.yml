@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Consumer group"
       isCorrect: false
-      explanation: "That's incorrect. Reason."
+      explanation: "That's incorrect. A consumer group is a view of an entire Event hub."
     - content: "Partition"
       isCorrect: true
-      explanation: "That's correct. Reason."
+      explanation: "That's correct. A partition is an ordered sequence of events that is held in an Event Hub."
     - content: "Event Hub producer"
       isCorrect: false
       explanation: "That's incorrect. An Event Hub producer is a type of client."
