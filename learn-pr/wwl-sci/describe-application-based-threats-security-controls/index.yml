@@ -3,18 +3,17 @@ uid: learn.wwl.describe-application-based-threats-security-controls
 metadata:
   title: Describe application-based threats and security controls
   description: "Describe application-based threats and security controls"
-  ms.date: 11/21/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe application-based threats and security controls
-summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals.  Throughout this module, you will learn about the threat landscape of application-based attacks and different security controls.
+summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals.  Throughout this module, you’ll learn about the threat landscape of application-based attacks and how to protect your applications.
 abstract: |
-  - Describe the topology used with applications
-  - Describe the threat landscape of applications
-  - Describe common application-based security controls
-  - Describe how application hardening improves application security
+  -	Describe what are applications
+  -	Describe the threat landscape of applications
+  -	Describe how to protect your applications
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -30,7 +29,6 @@ units:
 - learn.wwl.describe-application-based-threats-security-controls.introduction
 - learn.wwl.describe-application-based-threats-security-controls.describe-topology-used-applications
 - learn.wwl.describe-application-based-threats-security-controls.describe-threat-landscape-of-applications
-- learn.wwl.describe-application-based-threats-security-controls.security-controls
 - learn.wwl.describe-application-based-threats-security-controls.describe-how-application-hardening-improves-application-security
 - learn.wwl.describe-application-based-threats-security-controls.knowledge-check
 - learn.wwl.describe-application-based-threats-security-controls.summary-resources

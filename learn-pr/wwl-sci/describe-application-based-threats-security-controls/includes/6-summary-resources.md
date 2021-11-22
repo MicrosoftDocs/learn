@@ -4,6 +4,6 @@ Applications are around us and shape how we interact with our friends, and how w
 
 By completing this module, you can:
 
-- Describe what are applications.
-- Describe the threat landscape of applications.
-- Describe common application-based security controls.
+- Describe what are applications
+- Describe the threat landscape of applications
+- Describe how to protect your applications

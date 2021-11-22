@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/21/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -25,20 +25,20 @@ quiz:
     - content: "A device driver."
       isCorrect: false
       explanation: "Incorrect. A device driver is an example of system software."
-    - content: "Word processing software."
+    - content: "Word-processing software."
       isCorrect: true
-      explanation: "Correct. Word processing software is an example of applicaion software."
+      explanation: "Correct. Word processing software is an example of application software."
   - content: "Which statement defines a zero-day vulnerability?"
     choices:
     - content: "Any flaw that is known and for which the application owner has already created a patch."
       isCorrect: false
-      explanation: "Incorrect. A zero-day vulnerabilty is any flaw that is previously unknown to the application owner and unpatched."
+      explanation: "Incorrect. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
     - content: "Any flaw that is previously unknown to the application owner and unpatched."
       isCorrect: true
-      explanation: "Correct. A zero-day vulnerabilty is any flaw that is previously unknown to the application owner and unpatched."
-    - content: "Any flaw that is known to the application developer but for which the developer has not yet developed a patch."
+      explanation: "Correct. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
+    - content: "Any flaw that is known to the application developer but for which the developer hasn't yet developed a patch."
       isCorrect: false
-      explanation: "Incorrect. A zero-day vulnerabilty is any flaw that is previously unknown to the application owner and unpatched."
+      explanation: "Incorrect. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
   - content: "What is a simple way that users can mitigate threats to their applications?"
     choices:
     - content: "Disable automatic updates."

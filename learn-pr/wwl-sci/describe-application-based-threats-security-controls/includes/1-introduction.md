@@ -4,6 +4,6 @@ Here, you’ll learn how to describe what applications are, relative to other ty
 
 By completing this module, you'll be able to:
 
-- Describe what are applications.
-- Describe the threat landscape of applications.
-- Describe common application-based security controls.
+- Describe what are applications
+- Describe the threat landscape of applications
+- Describe how to protect your applications

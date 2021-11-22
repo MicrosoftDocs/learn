@@ -4,7 +4,7 @@ title: Describe how to protect your applications
 metadata:
   title: Describe how to protect your applications
   description: "Describe how to protect your applications"
-  ms.date: 11/21/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-describe-how-to-protect-applications.md)]
+  [!include[](includes/4-describe-how-to-protect-applications.md)]
