@@ -19,4 +19,5 @@ Update the item using the **UpsertItemAsync<>** method.
 await container.UpsertItemAsync<Product>(saddle);
 ```
 
-> &#128221; Remember, this will not work if the **DefaultTimeToLive** property is not configured at the container level.
+> [!NOTE]
+> Remember, this will not work if the **DefaultTimeToLive** property is not configured at the container level.

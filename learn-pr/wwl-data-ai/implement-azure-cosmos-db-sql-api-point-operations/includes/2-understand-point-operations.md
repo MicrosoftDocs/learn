@@ -56,4 +56,5 @@ This implementation is an incredibly versatile C# class that any developer can p
 public string InternalId { get; set; }
 ```
 
-> &#128161; If you have an existing application with C# member names that you cannot change, property attributes is a way to reuse types without incurring the risk of changing your existing code in significant ways or incurring technical debt.
+> [!TIP]
+> If you have an existing application with C# member names that you cannot change, property attributes is a way to reuse types without incurring the risk of changing your existing code in significant ways or incurring technical debt.
