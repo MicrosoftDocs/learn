@@ -1,16 +1,16 @@
-Azure Defender detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. The plan makes it simple to address potential threats to databases without the need to be a security expert or manage advanced security monitoring systems.
+Microsoft Defender for Cloud detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. The plan makes it simple to address potential threats to databases without the need to be a security expert or manage advanced security monitoring systems.
 
-This Azure Defender plan brings threat protections for the following open-source relational databases:
+This Defender for Cloud plan brings threat protections for the following open-source relational databases:
 
 - Azure Database for PostgreSQL
 - Azure Database for MySQL
 - Azure Database for MariaDB
 
-When you enable this plan, Azure Defender will provide alerts when it detects anomalous database access and query patterns as well as suspicious database activities.
+When you enable this plan, Microsoft Defender for Cloud will provide alerts when it detects anomalous database access and query patterns as well as suspicious database activities.
 
 ![alert screen with open-source database alerts.](../media/defender-alerts.png)
 
-### Azure Defender alerts for open-source relational databases
+### Microsoft Defender alerts for open-source relational databases
 
 Threat intelligence enriched security alerts are triggered when there are:
 

@@ -56,7 +56,7 @@ The default table columns are:
 - Application making the sign-in request
 - Sign-in status
 - Risk detection status
-- Multi-factor authentication status
+- Multifactor authentication status
 
 As with all reporting in Azure, you can modify the structure by adding and removing columns, as necessary. To change the columns, select **Columns**.
 
@@ -74,7 +74,7 @@ In the **Columns** pane, you can add or remove the columns you need. In addition
 
 ### Filter the log data
 
-Even after you've selected all the sign-in columns you're interested in processing, you still have a lot of data. To manage these volumes and get to the right data, you need to apply filters. For example, you might want to see only sign-in records where users have been flagged as a risk, or where multi-factor authentication has failed.  By using filters, you can view the raw data in a variety of ways, to identify trends or patterns.
+Even after you've selected all the sign-in columns you're interested in processing, you still have a lot of data. To manage these volumes and get to the right data, you need to apply filters. For example, you might want to see only sign-in records where users have been flagged as a risk, or where multifactor authentication has failed.  By using filters, you can view the raw data in various ways, to identify trends or patterns.
 
 To use filters, select **Add filters**, and then select the filters you want to use.
 
@@ -121,7 +121,7 @@ You'll find a complete list of error codes at the URL provided in the summary un
 | 50020 | The user is unauthorized for one of the following reasons: the user is attempting to log in with an MSA account with the v1 endpoint, or the user doesn't exist in the tenant. Contact the application owner. |
 | 50055 | Invalid password entered or expired password.                  |
 | 50057 | User account is disabled. The account has been disabled by an administrator. |
-| 50074 | User didn't pass the multi-factor authentication (MFA) challenge.                         |
+| 50074 | User didn't pass the multifactor authentication (MFA) challenge.                         |
 | 50126 | Invalid username or password, or invalid on-premises username or password. |
 | 50133 | Session is invalid because of expiration or recent password change. |
 | 50173 | Fresh auth token is needed. Have the user sign in again using fresh credentials. |
@@ -147,7 +147,7 @@ To access the audit log files, you need:
 
 Much like the sign-in logs, the audit logs can be adapted and changed to meet your specific needs. The default audit log view displays the following columns:
 
-- Data
+- Date
 - Service
 - Category
 - Status

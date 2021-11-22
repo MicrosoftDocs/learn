@@ -13,7 +13,7 @@ Whatever the series of steps might be, the output of the build process is a depl
 
 ### Pipeline artifacts
 
-The artifacts that are generated in your pipeline aren't stored in your Git repository. They're derived from the source code but aren't code themselves, and so they don't belong in a source control repository. They're created on the pipeline agent's file system, which is maintained only for the duration of the pipeline job.
+The artifacts that are generated in your pipeline aren't stored in your Git repository. They're derived from the source code but aren't code themselves, and so they don't belong in a source control repository. They're created on the pipeline agent's file system. A new agent is created for each pipeline job, so you need a way to share the files between jobs and agents.
 
 *Pipeline artifacts* provide a way to store files in Azure Pipelines, and they're associated with the particular run of your pipeline. You use the `PublishBuildArtifacts` built-in pipeline task to instruct Azure Pipelines to publish a file or folder from the agent's file system as a pipeline artifact:
 
@@ -69,7 +69,7 @@ App Service has its own data plane authentication system that it uses for deploy
 
 The `AzureRmWebAppDeployment` task uses the service principal that's associated with your service connection:::image type="icon" source="../media/callout-01.png"::: to automatically create and download the necessary credentials for deployment:::image type="icon" source="../media/callout-02.png":::. It then uses the deployment credentials when it communicates with the App Service data plane API:::image type="icon" source="../media/callout-03.png":::.
 
-App Service also provides a few other deployment-related features, including *deployment slots*. Slots help you safely deploy new versions of your apps. They also help you prepare the new version to receive production traffic so that you have no downtime. We don't use slots in this module, but we provide a link to more information about them on the Summary page at the end of the module.
+App Service also provides a few other deployment-related features, including *deployment slots*. Slots help you safely deploy new versions of your apps with no downtime. They also help you prepare and warm up the new version of your application before you send production traffic to it. We don't use slots in this module, but we provide a link to more information about them on the Summary page at the end of the module.
 
 ### Deploy apps to other Azure services
 
