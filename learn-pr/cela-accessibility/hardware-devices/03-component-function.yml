@@ -1,31 +1,31 @@
 ### YamlMime:ModuleUnit
 uid: learn.hardware-devices.component-function
-title: Component Discoverability and Status Indicator Accessibility
+title: Identify component function and device status through accessible channels
 metadata:
   title: Component discoverability and status indicator accessibility
   description: This content is part of the accessibility best practices for gaming hardware module.
-  ms.date: 08/10/2021
-  author: erzelman
-  ms.author: erzelman
+  ms.date: 11/02/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-hardware-devices
-durationInMinutes: 18
+durationInMinutes: 12
 content: |
   [!include[](includes/03-component-function.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can hardware component identification, including the functions of ports, be made more accessible for players without vision?"
+  - content: "Which of the following approaches should not be used to improve the accessible experience of players with visual disabilities in identifying the function of components on their devices?"
     choices:
     - content: "Increase the size and contrast of the text labels that identify the connection type and that are placed above each port."
       isCorrect: false
-      explanation: "Incorrect. While this option would be helpful for players with low vision who have difficulty seeing visual elements, this approach would not support players with no vision who would need information portrayed through channels other than vision, such as touch or sound."
+      explanation: "Incorrect. This approach should be used to support a player's ability to determine component function. When text labels are visually accessible, players can more readily use this information."
     - content: "Include distinct tactile indicators for each port type that are easily differentiated by touch."
-      isCorrect: true
-      explanation: "Correct. This approach would provide players without vision a means to identify function through a non-visual channel."
-    - content: "Ship the device with cords pre-connected to the device, eliminating the need for players to identify or insert them at home."
       isCorrect: false
-      explanation: "Incorrect. While this option would eliminate the need to connect cords for initial set-up, this would not help players identify the ports on their devices for future tasks like moving their device to a different room or connecting to a new TV display."
+      explanation: "Incorrect. This approach should be used to provide players without vision a means to identify function through a non-visual channel."
+    - content: "Ship the device with cords pre-connected to the device, eliminating the need for players to identify or insert them at home."
+      isCorrect: true
+      explanation: "Correct. While this option would eliminate the need to connect cords for initial set-up, this would not help players identify the ports on their devices for future tasks like moving their device to a different room or connecting to a new TV display."
   - content: "A device uses color and light as the sole means of communication to notify the player when battery power is low. How can the battery status indicator and its associated notifications be modified to make them accessible to players with visual or cognitive disabilities?"
     choices:
     - content: "Provide an option to turn on audio-based notifications that alert the player that the battery is low and prompt them to plug in their device."
