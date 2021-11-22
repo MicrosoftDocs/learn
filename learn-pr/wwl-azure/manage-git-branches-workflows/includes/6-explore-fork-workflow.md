@@ -31,7 +31,7 @@ But when a new developer wants to start working on the project, they don't direc
 
 Instead, they fork the official repository to create a copy of it on the server.
 
-This new copy serves as their personal public repository—no other developers can push to it, but they can pull changes from it (we'll see why this is important in a moment).
+This new copy serves as their personal public repository—no other developers can push to it, but they can pull changes from it (we'll see why this is necessary in a moment).
 
 After they've created their server-side copy, the developer does a git clone to get a copy of it onto their local machine.
 
@@ -64,13 +64,13 @@ To integrate the feature into the official codebase:
 
 The contribution is now part of the project, and other developers should pull from the official repository to synchronize their local repositories.
 
-It's important to understand that the notion of an "official" repository in the forking workflow is merely a convention.
+It's essential to understand that the notion of an "official" repository in the forking workflow is merely a convention.
 
 The only thing that makes the official repository, so official is that it's the repository of the project maintainer.
 
 ## Forking vs. cloning
 
-It's important to note that "forked" repositories and "forking" aren't special operations.
+It's essential to note that "forked" repositories and "forking" aren't special operations.
 
 Forked repositories are created using the standard git clone command. Forked repositories are generally "server-side clones" managed and hosted by a Git service provider such as Azure Repos.
 

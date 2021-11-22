@@ -3,7 +3,7 @@ uid: learn.wwl.manage-git-branches-workflows
 metadata:
   title: Manage Git branches and workflows
   description: "Manage Git branches and workflows"
-  ms.date: 11/18/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ abstract: |
   - Fork a repo
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
@@ -41,11 +42,11 @@ products:
 - github
 units:
 - learn.wwl.manage-git-branches-workflows.introduction
-- learn.wwl.manage-git-branches-workflows.explore-branching-workflow-types
+- learn.wwl.manage-git-branches-workflows.explore-branch-workflow-types
 - learn.wwl.manage-git-branches-workflows.explore-feature-branch-workflow
-- learn.wwl.manage-git-branches-workflows.explore-git-branching-model-for-continuous-delivery
+- learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
 - learn.wwl.manage-git-branches-workflows.explore-gitflow-branch-workflow
-- learn.wwl.manage-git-branches-workflows.explore-forking-workflow
+- learn.wwl.manage-git-branches-workflows.explore-fork-workflow
 - learn.wwl.manage-git-branches-workflows.knowledge-check
 - learn.wwl.manage-git-branches-workflows.summary
 badge:

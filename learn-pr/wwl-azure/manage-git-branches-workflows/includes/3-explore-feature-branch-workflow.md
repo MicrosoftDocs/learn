@@ -64,7 +64,7 @@ Each commit has an associated commit message, which explains why a particular ch
 
 Furthermore, each commit is considered a separate unit of change. It lets you roll back changes if a bug is found or you decide to head in a different direction.
 
-Commit messages are important, especially since Git tracks your changes and then displays them as commits once they're pushed to the server.
+Commit messages are essential, especially since Git tracks your changes and then displays them as commits once they're pushed to the server.
 
 By writing clear commit messages, you can make it easier for other people to follow along and provide feedback.
 

@@ -101,31 +101,31 @@ Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. 
 
 ```
 
-The remote shows the history of the changes:
+    The remote shows the history of the changes:
 
-:::image type="content" source="../media/remote-history-changes-133245b4.png" alt-text="Screenshot showing the remote history of the changes.":::
+    :::image type="content" source="../media/remote-history-changes-133245b4.png" alt-text="Screenshot showing the remote history of the changes.":::
 
 
 5.  Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
 
 ```Cmd
-  az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `         
+  az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `   
           -d "#Merge feature-1 to main" `
           -s feature/myFeature-1 -t main -r myWebApp -p
   $prj -i $i
 
 ```
 
-Use the --open switch when raising the pull request to open the pull request in a web browser after it has been created. The --deletesource-branch switch can be used to delete the branch after the pull request is complete. Also, consider using --auto-complete to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
+    Use the --open switch when raising the pull request to open the pull request in a web browser after it has been created. The --deletesource-branch switch can be used to delete the branch after the pull request is complete. Also, consider using --auto-complete to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
 
-The team jointly reviews the code changes and approves the pull request:
+    The team jointly reviews the code changes and approves the pull request:
 
-:::image type="content" source="../media/pr-code-changes-approved-completed-90fe3da6.png" alt-text="Screenshot showing the pull request with code changes approved and completed.":::
+    :::image type="content" source="../media/pr-code-changes-approved-completed-90fe3da6.png" alt-text="Screenshot showing the pull request with code changes approved and completed.":::
 
 
-The main is ready to release. Team tags main branch with the release number:
+    The main is ready to release. Team tags main branch with the release number:
 
-:::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Create a tag example.":::
+    :::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Create a tag example.":::
 
 
 6.  Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
@@ -173,7 +173,7 @@ public class Program
 
 ```
 
-With the pull request in flight, a critical bug is reported in production against the feature-1 release. To investigate the issue, you need to debug against the version of code currently deployed in production. To investigate the issue, create a new fof branch using the release\_feature1 tag:
+    With the pull request in flight, a critical bug is reported in production against the feature-1 release. To investigate the issue, you need to debug against the version of code currently deployed in production. To investigate the issue, create a new fof branch using the release\_feature1 tag:
 
 ```Cmd
 myWebApp> git checkout -b fof/bug-1 release_feature1
@@ -223,26 +223,26 @@ To https://dev.azure.com/Geeks/PartsUnlimited/_git/MyWebApp * [new branch] fof/b
 
 ```
 
-As part of the pull request, the branch is deleted. However, you can still reference the entire history to that point using the tag.
+    As part of the pull request, the branch is deleted. However, you can still reference the entire history to that point using the tag.
 
-With the critical bug fix out of the way, let's go back to the review of the feature-2 pull request.
+    With the critical bug fix out of the way, let's go back to the review of the feature-2 pull request.
 
-The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
+    The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
 
-:::image type="content" source="../media/branches-page-352f877b.png" alt-text="Branches page":::
+    :::image type="content" source="../media/branches-page-352f877b.png":::
 
 
-If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
+    If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
 
-:::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot showing merge conflicts from pull request.":::
+    :::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot showing merge conflicts from pull request.":::
 
 
 12. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
 
-:::image type="content" source="../media/git-pr-merge-conflict-resolution-extension-0e6d8b72.png" alt-text="Screenshot from the Git pull request merge conflict resolution extension.":::
+    :::image type="content" source="../media/git-pr-merge-conflict-resolution-extension-0e6d8b72.png" alt-text="Screenshot from the Git pull request merge conflict resolution extension.":::
 
 
-The user interface allows you to take the source, target, or add custom changes and review and submit the merge. With the changes merged, the pull request is completed.
+    The user interface allows you to take the source, target, or add custom changes and review and submit the merge. With the changes merged, the pull request is completed.
 
 ## How it works
 
