@@ -67,11 +67,11 @@ A query that filters on a different property, such as `favoriteColor`, would "fa
 
 ## Choose a partition key for customers
 
-Now that you understand partitioning in Azure Cosmos DB, we can decide on a partition key for our customer data. As we covered earlier, we perform three operations on customers: create a customer, update a customer, and retrieve a customer. In this case, we'll retrieve the customer by their *ID*. Because that operation will be called the most, it makes sense to make the customer's ID the partition key for the container.
+Now that you understand partitioning in Azure Cosmos DB, we can decide on a partition key for our customer data. As we covered earlier, we perform three operations on customers: create a customer, update a customer, and retrieve a customer. In this case, we'll retrieve the customer by their *id*. Because that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
 
-:::image type="content" source="../media/6-customer-partition-key.png" alt-text="Diagram that shows the customer partition key as ID.":::
+:::image type="content" source="../media/6-customer-partition-key.png" alt-text="Diagram that shows the customer partition key as id.":::
 
-You might worry here that making the ID the partition key means that we'll have as many logical partitions as there are customers, with each logical partition containing only a single document. Millions of customers would result in millions of logical partitions.
+You might worry here that making the id the partition key means that we'll have as many logical partitions as there are customers, with each logical partition containing only a single document. Millions of customers would result in millions of logical partitions.
 
 But this is perfectly fine! Logical partitions are a virtual concept, and there's no limit to how many logical partitions you can have. Azure Cosmos DB will collocate multiple logical partitions on the same physical partition. As logical partitions in number or in size, Cosmos DB will move them to new physical partitions when needed.
 

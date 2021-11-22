@@ -12,8 +12,14 @@ We also modeled the product category and product tag entities. And we used a spe
 
 ## Learn more
 
-- [Understanding the differences between NoSQL and relational databases](/azure/cosmos-db/relational-nosql)
-- [Data modeling in Azure Cosmos DB](/azure/cosmos-db/modeling-data)
-- [How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/how-to-model-partition-example)
-- [Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview)
-- [Partitioning strategy and provisioned throughput costs](/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs)
+- [Understanding the differences between NoSQL and relational databases][/azure/cosmos-db/relational-nosql]
+- [Data modeling in Azure Cosmos DB][/azure/cosmos-db/modeling-data]
+- [How to model and partition data on Azure Cosmos DB using a real-world example][/azure/cosmos-db/how-to-model-partition-example]
+- [Partitioning and horizontal scaling in Azure Cosmos DB][/azure/cosmos-db/partitioning-overview]
+- [Partitioning strategy and provisioned throughput costs][/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]
+
+[/azure/cosmos-db/relational-nosql]: https://docs.microsoft.com/azure/cosmos-db/relational-nosql
+[/azure/cosmos-db/modeling-data]: https://docs.microsoft.com/azure/cosmos-db/modeling-data
+[/azure/cosmos-db/how-to-model-partition-example]: https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example
+[/azure/cosmos-db/partitioning-overview]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview
+[/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]: https://docs.microsoft.com/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs

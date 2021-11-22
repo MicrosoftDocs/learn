@@ -6,14 +6,14 @@ In this unit, we'll model the `ProductCategory` and `ProductTag` entities in our
 
 ## Model product categories
 
-Firstly for categories, we'll model the data with its id and name columns as the only properties and put it in a new container called `ProductCategory`.
+Firstly for categories, we'll model the data with its **id** and **name** columns as the only properties and put it in a new container called `ProductCategory`.
 
 Next we need to choose a partition key. Let's explore the operations that we need to perform on this data. 
 
 We'll create a new product category, edit a product category, and then list all product categories. Creating and editing product categories are not frequently run operations. Our e-commerce application will often list all product categories when customers visit the website. So the last operation is the one we'll run the most.
 
 The query for this last operation will look like this: `SELECT * FROM c`.
-With id as the selected partition key this query will now be cross-partition, even though we want to try to optimize these read-heavy operations use only a single partition if possible. We also know that the data for product category will never grow near 20 GB in size, so how would this information help us in modeling the data in a way that will result in a single partition query when we list all product categories. 
+With **id** as the selected partition key this query will now be cross-partition, even though we want to try to optimize these read-heavy operations use only a single partition if possible. We also know that the data for product category will never grow near 20 GB in size, so how would this information help us in modeling the data in a way that will result in a single partition query when we list all product categories. 
 
 :::image type="content" source="../media/7-product-category-model.png" alt-text="Diagram that shows the cross-partition query for listing all product categories.":::
 
