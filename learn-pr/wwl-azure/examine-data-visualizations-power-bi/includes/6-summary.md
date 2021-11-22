@@ -1,0 +1,1 @@
+Your team will be supporting downstream business integrations and efforts to generate insights from IoT data. Understanding the data visualization capabilities of Power BI and how the tool connects to data sources provides you with insights that will help the team to configure the data connection from IoT Hub.

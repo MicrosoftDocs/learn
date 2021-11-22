@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-get-started-devops-transformation-journey
 metadata:
   title: 'AZ-400: Get started on a DevOps transformation journey'
   description: 'AZ-400: Get started on a DevOps transformation journey'
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -14,6 +14,7 @@ prerequisites: |
 summary: |
   This learning path helps you understand what DevOps is and how to plan for a DevOps transformation journey.
 iconUrl: /learn/achievements/generic-trophy.svg
+hidden: true
 levels:
 - advanced
 roles:
