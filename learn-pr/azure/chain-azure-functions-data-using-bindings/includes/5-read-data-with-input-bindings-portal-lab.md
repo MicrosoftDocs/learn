@@ -44,15 +44,15 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
-Next, we'll add a container to the database.
+Next, we'll add a database and then add a container to the database.
 
 ### Add a container
 
-In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Inside a container, we store documents.
+In an Azure Cosmos DB, a *container* is used to store a variety of user-generated entities, also called items.
 
-Let's use the Data Explorer tool in the Azure portal to create a database and container.
+Let's use the Data Explorer tool to create a database and container.
 
-1. In the **Azure Cosmos DB account** menu, select **Data Explorer**. The **Data Explorer** pane for your Cosmos DB appears.
+1. In the **Azure Cosmos DB account** menu, select **Data Explorer**. The **Data Explorer** pane for your Cosmos DB account appears.
 
 1. Select the **New Container** box. The **New Container** pane appears. You may need to scroll to the right to see it.
 
@@ -67,13 +67,21 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     
     Accept the defaults for all the other settings.
 
-1. Scroll to the bottom of the pane and select **OK**. Allow a few minutes for the database and container to be completed. When complete, the Data Explorer displays the **func-io-learn-db** and **Bookmarks** container under **SQL API**. If necessary, select to expand these items. Next, you'll add some data, also known as items.
+1. Scroll to the bottom of the pane and select **OK**. Allow a few minutes for the database and container to be built. 
+    
+    When complete, the Data Explorer displays **func-io-learn-db** in **DATA** under **SQL API**. 
+    
+1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
+ 
+1. Expand the **Bookmarks** container, and you'll see that it is prepopulated with child members. 
+
+In the next task, you'll add some data, also known as items, to your Bookmarks container.
 
 ### Add test data
 
-You want to add data to your container called **Bookmarks**. You'll add data to the new container using Data Explorer to store a URL and ID for each item, such as list of web page bookmarks.
+You want to add data to your **Bookmarks** container. You'll use Data Explorer to store a URL and ID for each item.
 
-1. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appears, but it is empty.
+1. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appears.
 
 1. In the command bar, select **New Item**.
 
@@ -130,9 +138,9 @@ You want to add data to your container called **Bookmarks**. You'll add data to 
 
 1. When you've finished entering the bookmark data, your container should look like the following image.
 
-    :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API UI showing the list of entries in bookmarks container." lightbox="../media/5-db-bookmark-collection.png":::
+    :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
-Your **Bookmarks** container has five items. Your scenario will work as follows. If a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in our Bookmarks container.
+Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in our Bookmarks container.
 
 ## Create your function
 
@@ -146,7 +154,7 @@ Your **Bookmarks** container has five items. Your scenario will work as follows.
 
 1. Accept all default settings, and select **Create** to create your function.
 
-    The **HttpTrigger2** pane for your function appears, displaying a default implementation of your new HTTP-triggered function.
+    The Overview pane for your function appears, displaying a default implementation of your new HttpTrigger function.
 
 ### Verify the function
 
@@ -156,17 +164,17 @@ You can verify what we have done so far by testing our new function.
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon, and select **OK**.
 
-1. Paste the function URL you copied into the address bar of a new browser tab. Append the query string value `&name=<your name>` to the end of the URL, replacing `<your  name>` with your name, and then press <kbd>Enter</kbd>. You should get a personalized response from the Azure Function in the browser.
+1. Paste the function URL you copied into the address bar of a new browser tab. Append the query string value `&name=<your name>` to the end of the URL, replacing `<your  name>` with your name, and then press <kbd>Enter</kbd>. The Azure function should return a personalized response in the browser.
 
-Now that we have our skeletal function working, let's turn our attention to reading data from your Azure Cosmos DB, or in our scenario, your **Bookmarks** container.
+Now that we have our skeletal function working, let's turn our attention to reading data from your Azure Cosmos DB, or in our scenario, from your **Bookmarks** container.
 
 ## Add an Azure Cosmos DB input binding
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. In the Azure portal, in the *HttpTrigger2* function menu, select **Integration**. The **Integration** pane for your *Function* appears.
+1. In the Azure portal, in the *HttpTrigger2* Function menu, select **Integration**. The **Integration** pane for your Function appears.
 
-    You used a template that created an HTTP trigger and an HTTP output binding. Let's add an Azure Cosmos DB input binding.
+    You used a template that created an HTTP trigger request with an HTTP output binding. Let's add an Azure Cosmos DB input binding.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
@@ -174,20 +182,15 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link. The **New Cosmos DB connection** dialog box appears.
 
-    Next, you'll set up a connection to your database.
-
     > [!NOTE]
     > If a message appears in the **Azure Cosmos DB input** configuration, prompting you to install an extension, select **Install**. It can take a while to install an extension, so you will need to wait for the installation to complete before proceeding with this exercise.
-    
-     :::image type="content" source="../media/extension-not-installed.png" alt-text="Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.":::
-    
-1. By default, Azure recognizes the Azure Cosmos DB account you created earlier. To create your connection, select **OK**.
+    > :::image type="content" source="../media/extension-not-installed.png" alt-text="Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.":::
+     
+1. By default, Azure recognizes the Azure Cosmos DB account you created earlier. Select **OK** to set up a connection to your database. A *new* connection to the database account is configured and appears in the **Cosmos DB account connection** field.
 
-    A *new* connection to the database account is configured and appears in the **Cosmos DB account connection** dropdown list in the **Create Input** pane.
+    We want to look up a bookmark with a specific ID, so let's tie the ID that we receive in the query string to the binding.
 
-    We want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
-
-1. In the **Create Input** pane, enter the following values for each setting. To learn more about the purpose of each setting, select the information icon on that field.
+1. Let's complete the **Create Input** pane. Enter the following values for each setting. To learn more about the purpose of each setting, select the information icon on that field.
 
     | Setting | Value | Description |
     |---|---|---|
@@ -198,15 +201,13 @@ To read data from the database, you need to define an input binding. As you'll s
     | **Partition key** | `/id` | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
     | **SQL Query (optional)** | _Leave blank_ | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
-    To clarify why we are using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
+    To clarify why we are using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
 1. To save this input binding configuration, select **OK**.
 
-Now that your binding is defined, we can use it in your function.
-
 ## Update the function implementation
 
-You need to make two changes to implement the binding that you just created:
+Now that your binding is defined, we can use it in your function. You need to make two changes to implement the binding that you just created:
 
 - Your function's language-specific implementation code needs to be modified to determine if a document was found in the database that matches the ID that is passed to the function.
 
@@ -218,7 +219,7 @@ You need to make two changes to implement the binding that you just created:
 
 1. In the **Function** menu for your *HttpTrigger2* function, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
 
-1. Replace all code in the *index.js* file with the following code, and then, in the command bar, select **Save**. The **Logs** pane appears, showing your connection.
+1. Replace all code in the *index.js* file with the following code.
 
     ```javascript
  	module.exports = function (context, req) {
@@ -247,16 +248,17 @@ You need to make two changes to implement the binding that you just created:
     	context.done();
 	};
     ```
-
+1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!` 
+ 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
 ### Modify your function's PowerShell implementation code
 
-1. In the **Function** menu for your *HttpTrigger2* function, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function.
+1. In the **Function** menu for your *HttpTrigger2* function, select **Code + Test**. The **Code + Test** pane appears for your *HttpTrigger2* function, displaying the `run.ps1` file.
 
-1. Replace all code in the `run.ps1` file with following code, and then, in the command bar, select **Save**. 
+1. Replace all code in the `run.ps1` file with following code. 
 
     ```powershell
     using namespace System.Net
@@ -279,8 +281,7 @@ You need to make two changes to implement the binding that you just created:
         Body = $body
     })
     ```
-
-	The **Logs** pane appears, showing you have Connected! 
+1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!` 
 	
 ::: zone-end
 
@@ -296,7 +297,7 @@ Let's examine what this code is doing.
 
 ### Modify your function's JSON implementation code
 
-1. Below the command bar, select **function.json** from your **`<functionapp> \ HttpTrigger2 \ `** dropdown list.
+1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \ `** path.
 
 1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
 
@@ -342,9 +343,7 @@ Let's examine what this code is doing.
 
 1. From the **Key** dropdown list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
 
-1. Paste the function key you copied into the address bar of a new browser tab.
-
-1. Add the query string value `&id=docs` to the end of the URL. The resulting URL should resemble the following example:
+1. Paste the function key you copied into the address bar of a new browser tab, and then add the query string value `&id=docs` to the end of the URL. The resulting URL should resemble the following example:
 
     `https://example.azurewebsites.net/api/HttpTrigger2?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&id=docs`
 
