@@ -28,4 +28,4 @@ These status indicators often use visual cues to communicate this information to
 
 The following video introduces these barriers in further detail. It presents best practice guidance on how this information can be provided to more players through accessible channels:
 
-> [!VIDEO]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPjko]
