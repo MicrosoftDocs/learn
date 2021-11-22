@@ -31,6 +31,7 @@ Containers are the fundamental unit of scalability in Azure Cosmos DB SQL API. T
 
 Am Azure Cosmos DB SQL API resource container is a schema-agnostic container of arbitrary user-generated JSON items. The SQL API for Azure Cosmos DB stores individual documents in JSON format as items within the container. Azure Cosmos DB SQL API natively supports JSON files and can provide fast and predictable performance because write operations on JSON documents are atomic.
 
-> &#128161; Containers can also store JavaScript based stored procedures, triggers and user-defined-functions (UDFs)
+> [!TIP]
+> Containers can also store JavaScript based stored procedures, triggers and user-defined-functions (UDFs)
 
 ![Resource hierarchy with items highlighted and other example children resources of containers](../media/2-item.png)

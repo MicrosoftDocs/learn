@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/18/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "User-defined function"
       isCorrect: false
       explanation: "That's incorrect. User-defined functions are child resources of containers in Azure Cosmos DB."
-  - content: "Which one of these resources is NOT considered an item in Azure Cosmos DB SQL API?"
+  - content: "Which one of these resources is a child resource of an Azure Cosmos DB SQL API account and parent resource for a container?"
     choices:
     - content: "Triggers"
       isCorrect: false
@@ -35,4 +35,4 @@ quiz:
       explanation: "That's incorrect. Stored procedures are child resourced for containers, and are therefore items in Azure Cosmos DB SQL API."
     - content: "Database"
       isCorrect: true
-      explanation: "That's correct. Databases are not items in Azure Cosmos DB SQL API, they are the parent resource for containers."
+      explanation: "That's correct. Databases are not items in Azure Cosmos DB SQL API, they are the parent resource for containers and child resource for accounts."

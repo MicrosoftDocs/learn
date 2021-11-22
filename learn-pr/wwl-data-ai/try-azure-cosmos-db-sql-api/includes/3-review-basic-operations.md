@@ -16,13 +16,15 @@ Next, the Azure portal will use a step-by-step wizard with tabs for various conf
 
 ![Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account](../media/3-account-wizard.png)
 
-> &#128221; Only the options in the **Basics** tab are required to create an Azure Cosmos DB account.
+> [!NOTE]
+> Only the options in the **Basics** tab are required to create an Azure Cosmos DB account.
 
 ## Creating a new database
 
 Databases are logical units of management in Azure Cosmos DB SQL API, and don't require much to create. You only need a unique database name within the account to create a new database.
 
-> &#128221; However, if you choose to provision throughput at the database level, configuring the database may require additional steps. This is explored deeper in other Azure Cosmos DB SQL API topics.
+> [!NOTE]
+> However, if you choose to provision throughput at the database level, configuring the database may require additional steps. This is explored deeper in other Azure Cosmos DB SQL API topics.
 
 ## Creating a new container
 
@@ -39,7 +41,8 @@ The Azure Cosmos DB service will automatically and transparently partition your 
 
 Once the database and container resources exist, you are ready to create your first item. In Azure Cosmos DB SQL API, and item is a JSON document.
 
-> &#128221; JavaScript Object Notation (JSON) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value)
+> [!NOTE]
+> JavaScript Object Notation (JSON) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value)
 
 JSON is a language-independent data format with well-defined data types and near universal support across a diverse range of services and programing languages. Here is an example of a JSON document that could be an item in an Azure Cosmso DB account:
 
