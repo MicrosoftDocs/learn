@@ -29,14 +29,14 @@ quiz:
     - content: "Microsoft Endpoint Manager uses a progressively changing set of technologies."
       isCorrect: false
       explanation: "Microsoft Endpoint Manager uses Security Baselines, BitLocker Management, and Advanced Threat Protection, as well as other technologies and methods."
-    - content: "Microsoft Endpoint Manager uses Security Baselines, BitLocker Management, Advanced Threat Protection, Secure Score, and Windows Hello for Business, as well as a number of other methods and technologies."
+    - content: "Microsoft Endpoint Manager uses Security Baselines, BitLocker Management, Advanced Threat Protection, Secure Score, and Windows Hello for Business, as well as many other methods and technologies."
       isCorrect: true
       explanation: ""      
   - content: "What is one way Microsoft Endpoint Manager maximizes your return on investment?"
     choices:
-    - content: "Microsoft Endpoint Manager can leverage machine learning for recommended security and configuration settings."
+    - content: "Microsoft Endpoint Manager can apply machine learning for recommended security and configuration settings."
       isCorrect: true
       explanation: ""
     - content: "Microsoft Endpoint Manager can increase customer satisfaction by providing unconditional access to all organization data."
       isCorrect: false
-      explanation: "In addition to a unified IT administration experience, continuous security improvements for everyone, and cloud content optimization, Microsoft Endpoint Manager can leverage machine-learning for recommended security and configuration settings."
+      explanation: "In addition to a unified IT administration experience, continuous security improvements for everyone, and cloud content optimization, Microsoft Endpoint Manager can apply machine-learning for recommended security and configuration settings."
