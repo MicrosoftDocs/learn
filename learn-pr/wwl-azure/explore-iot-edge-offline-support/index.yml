@@ -3,7 +3,7 @@ uid: learn.wwl.explore-iot-edge-offline-support
 metadata:
   title: Explore IoT Edge offline support
   description: "This module provides you with experience implementing an extended offline scenario for IoT Edge devices that includes local storage, and using a gateway device to retain child device messages until the devices are back online."
-  ms.date: 11/19/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
