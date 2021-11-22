@@ -20,12 +20,11 @@ abstract: |
 prerequisites: |
  - You should have some basic familiarity with playing video games, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows, etc.), and using standard gaming hardware controllers and inputs.
  - You should also have a basic understanding of foundational disability and accessibility principles terms and concepts.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/gaming-assistive-technologies.svg
 levels:
 - beginner
 roles:
-- administrator
-- student
+- developer
 products:
 - xbox
 units:
