@@ -94,7 +94,7 @@ You can obtain the device connection string from the Azure portal.
 > You will see examples in training materials where connection strings, passwords, and other configuration items are hard-coded into the application. This approach is used to simplify the activity and **is not** a recommended practice. As much as possible, security issues like this will be addressed as they come up in the labs. Security topics (and other important considerations) will be addressed during the instructor presentation and in your Student Handbook content in a manner that supports the overall flow of the course. The two may not always align perfectly. As a result, you may be exposed to topics in the labs that are not covered in detail until later in the course.
 
 > [!NOTE]
-> Once you have a valid \*\*DeviceClient\*\* object, you can start calling the APIs to send and receive messages to and from IoT Hub.
+> Once you have a valid **DeviceClient** object, you can start calling the APIs to send and receive messages to and from IoT Hub.
 
 ### Examine the MessageSample.cs file
 
@@ -194,4 +194,5 @@ In the next three lines the message is created, and a custom property is added t
 
 The last line in the **for** loop sends the message to the **IoT Hub** by calling the `SendEventAsync` method.
 
-**Tip:** One thing that is missing from this sample is any error handling. If communication issues arise, or the connection string is incorrect, this application will not fail gracefully. It is usually a good idea to include some basic error handling, even in prototypes applications.
+> [!TIP]
+> One thing that is missing from this sample is any error handling. If communication issues arise, or the connection string is incorrect, this application will not fail gracefully. It is usually a good idea to include some basic error handling, even in prototypes applications.
