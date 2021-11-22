@@ -1,4 +1,4 @@
-The information below describes the identity attestation process when using a Trusted Platform Module (TPM), which is a type of hardware security module (HSM). It is not for devices using X.509 certificates for authentication.
+The following sections describe the identity attestation process when using a Trusted Platform Module (TPM), which is a type of hardware security module (HSM). It is not for devices using X.509 certificates for authentication.
 
 > [!NOTE]
 > This information is only relevant for devices using TPM 2.0 with HMAC key support and their endorsement keys and assumes you are using a discrete, firmware, or integrated TPM. Software emulated TPMs are well suited for prototyping or testing, but they do not provide the same level of security as discrete, firmware, or integrated TPMs do. We do not recommend using software TPMs in production.
@@ -28,14 +28,14 @@ Let's walk through the attestation process in detail.
 
 First the device connects to the Device Provisioning Service and requests to provision. In doing so, the device provides the service with its registration ID, an ID scope, and the EK\_pub and SRK\_pub from the TPM. The service passes the encrypted nonce back to the device and asks the device to decrypt the nonce and use that to sign a SAS token to connect again and finish provisioning.
 
-:::image type="content" source="../media/m03-l01-device-provisioning-service-trusted-platform-module-attestation-step-one-request-provisioning-7c429419.png" alt-text="Diagram that shows TPM attestation step 1, the device makes a provisioning request.":::
+:::image type="content" source="../media/step-one-request-provisioning-78fb84b8.png" alt-text="Diagram that shows TPM attestation step 1, the device makes a provisioning request.":::
 
 
 ### Nonce challenge
 
 The device takes the nonce and uses the private portions of the EK and SRK to decrypt the nonce into the TPM; the order of nonce encryption delegates trust from the EK, which is immutable, to the SRK, which can change if a new owner takes ownership of the TPM.
 
-:::image type="content" source="../media/m03-l01-device-provisioning-service-trusted-platform-module-attestation-step-two-nonce-challenge-6cb6fdc5.png" alt-text="Diagram that shows TPM attestation step 2, device completes the nonce challenge.":::
+:::image type="content" source="../media/step-two-nonce-challenge-a87bd4ee.png" alt-text="Diagram that shows TPM attestation step 2, device completes the nonce challenge.":::
 
 
 ### Validate the nonce and receive credentials
