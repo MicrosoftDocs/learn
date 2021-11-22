@@ -193,7 +193,7 @@ Let's break down what this code does:
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 > 
-> :::image type="content" source="source="../media/7-q-auto-create-small.png" alt-text=" alt-text="Screenshot showing the field text that the queue will be auto-created." border="false":::
+> :::image type="content" source="../media/7-q-auto-create-small.png" alt-text=" alt-text="Screenshot showing UI tool tip that the queue will be auto-created." border="false":::
 > 
 
 So, that's it. Let's see our work in action in the next section.
