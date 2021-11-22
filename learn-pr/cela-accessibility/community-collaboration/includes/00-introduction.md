@@ -6,7 +6,7 @@ Consider the following scenario. A developer creates a set of color-blind filter
 
 Without the insights of the gaming and disability community, a developer must make assumptions about proper feature implementation. Sometimes, these assumptions are wide of the mark.
 
-In this module, you'll learn about the importance collaborating with gaming and disability community throughout the entire development process to inform accessible design. You'll learn about how these communities can be engaged, and when. You'll also learn about to ensure that these players have a great experience throughout this collaboration.
+In this module, you'll learn about the importance of collaborating with the gaming and disability community throughout the entire development process to inform accessible design. You'll learn about how these communities can be engaged, and when. You'll also learn how to ensure that these players have a great experience throughout this collaboration.
 
 ## Learning Objectives
 
