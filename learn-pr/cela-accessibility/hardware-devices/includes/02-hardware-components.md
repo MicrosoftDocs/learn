@@ -6,17 +6,21 @@ Many players who use assistive technologies (AT) like braille readers or adaptiv
 
 Many AT devices only support standard hardware connection types. Standard hardware connections are non-proprietary forms of connecting one device to another. USB is considered the standard connection for physical connection types. For wireless connections, Bluetooth is considered the standard.
 
-In addition to any other type of connection present on the device you're developing, standard connections like USB ports and Bluetooth pairing compatibility should also be provided as an option. It will ensure that players can connect and use their assistive technologies to engage in gameplay.
+In addition to any other connection types that your device will feature, standard connections like USB ports and Bluetooth pairing compatibility should also be provided. It will ensure that players can connect and use their assistive technologies to engage in gameplay.
+
+## Consider device weight and shape
+
+Think about how a customer may grab or pick up their device. Devices that are heavy or difficult to grasp, such as a console, easily be dropped and damaged. In general, considering ways to make devices lighter and easier to pick up is an accessibility support that benefits all customers.
 
 ## Improve accessible operation of mechanical parts
 
-An important aspect to consider when creating accessible hardware experiences for players is the strength, dexterity, and fine motor skills required to interact with and operate the device. Actions the player may need to perform include pressing buttons and opening battery doors. If a player cannot physically press the power button, make volume adjustments, or pair the device, they may stop using the device altogether.
+An important aspect to consider when creating accessible hardware experiences for players is the strength, dexterity, and fine motor skills required to interact with and operate the device. Consider the actions a player may need to perform such as pressing buttons or opening battery doors. If a player cannot physically press the power button, make volume adjustments, or pair the device, they may stop using the device altogether.
 
-Consider the following information when creating hardware experiences to ensure they are more accessible for players with limited strength, dexterity, coordination, or fine motor skills in their arms, hands, or fingers.
+The following aspects of hardware components can be optimized to create hardware experiences that are accessible for more players with limited strength, dexterity, coordination, or fine motor skills in their arms, hands, or fingers.
 
 ### Button size
 
-The physical surface area of a button can impact whether a user with disabilities can activate it. Buttons on devices have been designed under the assumption that players can isolate and use a single fingertip to press the button. However, users with disabilities may need to use larger body parts, like a knuckle, residual limb, or palm, to activate controls. Intentional design decisions made to maximize button size on devices with limited surface area can create more accessible experiences for players who use body parts other than fingertips to access buttons.
+The physical surface area of a button can impact whether a user with disabilities can activate it. Buttons on devices have been designed under the assumption that players can isolate and use a single fingertip to press the button. However, some players may need to use larger body parts, like a knuckle, residual limb following amputation, or palm, to activate controls. Intentional decisions made to maximize button size on devices can create more accessible experiences for players who must use body parts other than fingertips to access buttons.
 
 The image below shows a person’s hand as they press a button on a USB speaker device. The larger buttons on the device are about the size of a US penny. The increased surface area of the buttons on this device can make it easier for players to control the speaker device.
 
@@ -24,13 +28,13 @@ The image below shows a person’s hand as they press a button on a USB speaker 
 
 Similarly, the size of the A and B buttons on the Xbox Adaptive Controller were, by design, made larger. The larger size helps players use the controller even though they may not be able to isolate a single finger to press the buttons.
 
-:::image type="content" source="../media/xac.jpg" alt-text="A player in a wheelchair using a Xbox Adaptive Controller on a lap board.":::
+:::image type="content" source="../media/xac.jpg" alt-text="A player in a wheelchair using an Xbox Adaptive Controller on a lap board.":::
 
 ### Button height
 
 For this module, the term button height refers to the difference in height between the top of the button and its surrounding material. Ask yourself, is the button raised, or is it completely flush with the rest of the device?
 
-Buttons that are flush  with the surrounding device material can create accessibility barriers. For users without vision, buttons may be located through touch. Buttons that are flush with their surrounding may not be discernable by touch. If the user cannot find the button, they cannot use it to perform the desired action. Buttons that are raised from the surface of the device can help with the discoverability of the button location.
+Buttons that are flush with the surrounding device material can create accessibility barriers. For users without vision, buttons may be located through touch. Buttons that are flush with their surrounding may not be discernable by touch. If the user cannot find the button, they cannot use it to perform the desired action. Buttons that are raised from the surface of the device can help with the discoverability of the button location.
 
 Design for accidental activation should be balanced with removing accessibility barriers when determining button height. Buttons should be discoverable and pressable for players with disabilities.
 
@@ -48,11 +52,11 @@ Button size and activation force are equally important when creating accessible 
 
 ### Methods of activation
 
-The movement a player must perform to use a device should be considered when creating accessible experiences for players. For example, the method of activation for a volume control may require the user to grasp a knob and twist their hand or wrist to either side to raise or lower volume. The method of activation to pair a Bluetooth device often requires pressing a button for a prolonged time.
+The movements a player must perform to use a device also influence device accessibility. For example, the use of a volume "knob" that players must grasp and twist their hand or wrist to either side to raise or lower volume settings can pose difficulty for some players. Another is the physical demands associated with holding down a button for a prolonged period to initiate Bluetooth pairing mode.
 
-When designing and creating new devices, it's recommended to avoid activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this is not possible, consider providing alternative solutions, designed with accessibility in mind, to complete the required action. For example, if your product is already in the market, consider creating an application that can be installed on a phone, gaming console, or PC as an accessible alternative for managing the device.
+When designing and creating new devices, consider avoiding activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this is not possible, consider providing alternative methods to perform these actions that are less physically demanding, such as software-based device management applications that can be run on the player's phone, console, or PC.
 
-The image below shows the ear cup dials on an Xbox gaming headset. Players twist the dials to adjust the volume and chat mixer values. Players unable to perform the necessary twisting motions can instead use the Xbox Accessories app. This app provides a configuration settings menu for players to use to adjust the settings.
+For example, the image below shows the ear cup dials on an Xbox gaming headset. Players must twist the dials to adjust the volume and chat mixer values. However, for players who are unable to perform twisting motions, an opportunity to adjust volume and chat mixer volumes is provided through the Xbox Accessories App. This allows players to use the input device of their choice to raise and lower headset values without hands-on twisting motions.
 
 :::image type="content" source="../media/xbox-wireless-headset.png" alt-text="A pair of Xbox-branded headphones with a boom microphone.":::
 
@@ -60,14 +64,16 @@ The image below shows the ear cup dials on an Xbox gaming headset. Players twist
 
 ### Component location
 
-The location of the controls on a device is also important to consider when designing and developing accessible hardware. Consider a headset with the volume control on one side of the device and the noise cancellation control on the other side of the device. Players who are not able to perform the action required to reach or use the controls while the headset is on their head, such as those with reduced mobility on one side of their body, will not be able to use the device efficiently.
+Another important consideration is the location of the controls on a device. Consider a headset with the volume controls located on the left ear cup, and the noise cancellation controls located on the right ear cup. A player with limited movement in one arm or an amputation may only be able to reach the side with volume controls, and not the noise cancellation controls on the other side of the device.
 
-If ideal component placement cannot be achieved, the following considerations can be used to enhance the accessibility of the experience:
+In this situation, the location of the controls cannot be moved. An alternative approach could include a software option that allows players to swap the controls for volume and noise cancellation between the right and left ear cups. This would support this player in "accessing" both control types despite only being able to physically reach one side of their device while it's on their head.
 
-- Provide players with an alternative, accessible way to control the device such as adding a volume control to the auxiliary cord that connects the headphones to the gaming device
-- Provide controls on a separate device that can be placed in a convenient location, such as a dial that can be placed on a table.
-- Provide accessibility settings that allow players to customize the functions of each physical control through software.
+Other general best practice considerations to account for hardware component location include:
 
-For example, the image below shows the controller remapping screen for the Xbox Elite controller. The player who created this profile has difficulty accessing the “Left stick click” control. Through software they re-assigned this control to an option that they can more easily access, in this case, the right trigger.
+- Providing players with an alternative, accessible way to control the device such as adding a volume control to the auxiliary cord that connects the headphones to the gaming device
+- Providing controls on a separate device that can be placed in a convenient location, such as a dial that can be placed on a table.
+- Providing accessibility settings that allow players to customize the functions of each physical control through software.
+
+For example, the image below shows the controller remapping screen for the Xbox Elite controller. The player who created this profile has difficulty accessing the “Left stick click” control. Through software, they reassigned this control to an option that they can more easily reach and press, in this case, the right trigger.
 
 :::image type="content" source="../media/controller-map-high-contrast.png" alt-text="The Xbox Elite Controller configuration screen. The Map to field is highlighted and Right Trigger is selected.":::
