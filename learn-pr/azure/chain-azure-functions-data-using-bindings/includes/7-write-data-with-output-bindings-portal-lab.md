@@ -41,7 +41,7 @@ Let's add another Azure Cosmos DB input binding.
 
     1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link.
 
-    1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection. A new Cosmos DB account connectin is created.
+    1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection. A new Cosmos DB account connection is created.
 
 1. Enter the following  values for the other settings in this pane. At any time, to learn more about the purpose of a setting, you can select the information icon to its right.
 
