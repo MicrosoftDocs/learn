@@ -6,7 +6,8 @@ metadata:
   description: Start testing your C# apps by using the testing tools in Visual Studio. Learn to write tests, use Test Explorer, create test suites, and apply the red, green, refactor pattern to write code.
   ms.date: 07/20/2021
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 title: C# testing in Visual Studio
