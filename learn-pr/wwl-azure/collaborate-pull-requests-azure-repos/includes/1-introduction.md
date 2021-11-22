@@ -7,7 +7,7 @@ It helps understand how pull requests work and how to configure them.
 After completing this module, students and professionals can:
 
  -  Use pull requests for collaboration and code reviews.
- -  Give feedback using pull requests.
+ -  Give feedback-using pull requests.
  -  Configure branch policies.
  -  Use GitHub mobile for pull requests approvals.
 
