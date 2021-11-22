@@ -7,7 +7,7 @@ The slogan “nothing about us without us” represents the message that technol
 Engaging these communities to develop bespoke accessibility settings or features is crucial.
 
 > [!NOTE]
-> There are approximately 500 million gamers in the world with disabilities, which is about 20% of the total population of gamers worldwide.
+> There are approximately 429 million gamers in the world with disabilities, which is almost 20% of the total population of gamers worldwide.
 > Including the perspectives of individuals with disabilities for all development efforts helps inform results that are accessible for a sizable portion of the gamer market.
 
 ## How can community collaboration inform accessible design?

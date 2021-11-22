@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following options most accurately describes the meaning of the slogan “nothing about us without us” in the context of game accessibility?"
+  - content: "How should the disability community participate in the development of game experiences?"
     choices:
     - content: "Individuals with disabilities should play an active role in the development of bespoke accessibility efforts such as new accessibility features or gaming assistive technologies."
       isCorrect: false
