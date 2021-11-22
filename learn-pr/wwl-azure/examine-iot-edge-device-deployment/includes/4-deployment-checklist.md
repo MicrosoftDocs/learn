@@ -83,7 +83,7 @@ Three guidelines that you can follow are:
 
 For your Container management checklist, the following items fall into the **important** category.
 
-### Use tags to manage versions<br>
+### Use tags to manage versions
 
 A tag is a docker concept that you can use to distinguish between versions of docker containers. Tags are suffixes like 1.0 that go on the end of a container repository. For example, mcr.microsoft.com/azureiotedge-agent:1.0. Tags are mutable and can be changed to point to another container at any time, so your team should agree on a convention to follow as you update your module images moving forward.
 
