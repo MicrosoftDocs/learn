@@ -52,7 +52,7 @@ quiz:
     choices:
     - content: "Azure Firewall FQDN filtering"
       isCorrect: false
-      explanation: "That's incorrect. You need to inspect the entire URL, not just am FQDN."
+      explanation: "That's incorrect. You need to inspect the entire URL, not just an FQDN."
     - content: "Azure Firewall Premium URL filtering"
       isCorrect: true
       explanation: "That's correct. You need to inspect the entire URL, and that capability is included in Azure Firewall Premium."
