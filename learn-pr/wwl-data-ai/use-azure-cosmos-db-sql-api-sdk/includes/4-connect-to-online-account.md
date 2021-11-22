@@ -15,9 +15,11 @@ The two most common ways to create an instance for the **CosmosClient** class is
 1. A constructor that takes a single string value representing the connection string for the account.
 1. A constructor that takes two string values representing the endpoint and a key for the account.
 
-> &#128221; You can always retrieve the connection string, endpoint, or any of the keys from the Azure portal. For the examples in this section, we will use a fictional endpoint of **https­://dp420.documents.azure.com:443/** and a sample key of **fDR2ci9QgkdkvERTQ==**.
+> [!NOTE]
+> You can always retrieve the connection string, endpoint, or any of the keys from the Azure portal. For the examples in this section, we will use a fictional endpoint of **https­://dp420.documents.azure.com:443/** and a sample key of **fDR2ci9QgkdkvERTQ==**.
 
-> &#128161; You can also use the CosmosClient class with the Microsoft Identity Platform directly for Azure AD authentication, but that is beyond the scope of this module.
+> [!TIP]
+> You can also use the CosmosClient class with the Microsoft Identity Platform directly for Azure AD authentication, but that is beyond the scope of this module.
 
 ### Use with a connection string
 
@@ -42,7 +44,8 @@ CosmosClient client = new (endpoint, key);
 
 ## Read properties of the account
 
-> &#128161; At this point, you only have a logical client-side representation of the Azure Cosmos DB SQL API account. The SDK won't initially connect to the account until you perform an operation.
+> [!TIP]
+> At this point, you only have a logical client-side representation of the Azure Cosmos DB SQL API account. The SDK won't initially connect to the account until you perform an operation.
 
 Once the client instance is instantiated, you can use various methods directly. For example, you can asynchronously invoke the **ReadAccountAsync** method to get an object of type **AccountProperties** with various properties.
 

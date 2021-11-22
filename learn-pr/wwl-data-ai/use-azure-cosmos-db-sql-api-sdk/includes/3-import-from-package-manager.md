@@ -12,7 +12,8 @@ Invoke the ``dotnet add package`` command with only the name of the package. For
 dotnet add package Microsoft.Azure.Cosmos
 ```
 
-> &#128161; This command will only import stable versions of the package. If a newer preview of the package is available, it will import the older stable version. If no stable version is available, it will not import the package at all.
+> [!TIP]
+> This command will only import stable versions of the package. If a newer preview of the package is available, it will import the older stable version. If no stable version is available, it will not import the package at all.
 
 ### Import a specific version of the package
 
@@ -23,7 +24,8 @@ dotnet add package Microsoft.Azure.Cosmos \
     --version 3.22.1
 ```
 
-> &#128161; Specifying the package version is the only way to import preview versions of packages that have not been flagged as stable yet.
+> [!TIP]
+> Specifying the package version is the only way to import preview versions of packages that have not been flagged as stable yet.
 
 ## .NET project file
 
@@ -41,4 +43,5 @@ Once imported, the package specification will be added to the **csproj** file fo
 </Project>
 ```
 
-> &#128221; The version of the package will be added whether you specfied it in the import command or not. If you did not specify a package version, the version of the latest stable package that was imported is specified in the project file.
+> [!NOTE]
+> The version of the package will be added whether you specfied it in the import command or not. If you did not specify a package version, the version of the latest stable package that was imported is specified in the project file.

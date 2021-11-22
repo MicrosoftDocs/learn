@@ -12,7 +12,8 @@ When connecting to an Azure Cosmos DB account using the **CosmosClient** class, 
 - That you will use the default consistency level for the account with your read requests
 - That you will connect directly to data nodes for requests
 
-> &#128221; There are other assumptions that are not listed here. These assumptions can also be configured with the **CosmosClient** class.
+> [!NOTE]
+> There are other assumptions that are not listed here. These assumptions can also be configured with the **CosmosClient** class.
 
 To configure the client, you will need to create an instance of the **CosmosClientOptions** class and pass in that instance as the last parameter to the **CosmosClient** constructor. Here are two examples using the constructors discussed earlier in this module.
 
@@ -78,7 +79,8 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 - Session
 - Strong
 
-> &#128161; The **ConsistencyLevel** setting is only used to only *weaken* the consistency level for reads. It cannot be strengthened or applied to writes.
+> [!TIP]
+> The **ConsistencyLevel** setting is only used to only *weaken* the consistency level for reads. It cannot be strengthened or applied to writes.
 
 ### Setting the preferred application region\[s\]
 
@@ -93,7 +95,8 @@ CosmosClientOptions options = new ()
 };
 ```
 
-> &#128161; If your account is not configured for multi-region write, the client will always use the single writable region for write operations and this setting will only impact read operations.
+> [!TIP]
+> If your account is not configured for multi-region write, the client will always use the single writable region for write operations and this setting will only impact read operations.
 
 If you would like to create a custom failover/priority list for the client to use for operations, you can use the **ApplicationPreferredRegions** property with a list of regions. This example uses a custom list configured to try **West US** first and then **East US**.
 
