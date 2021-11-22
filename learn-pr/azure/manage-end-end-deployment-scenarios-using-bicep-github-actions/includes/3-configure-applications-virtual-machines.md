@@ -94,4 +94,4 @@ Many apps implement *health check endpoints*. When a health check endpoint recei
 
 In the next exercise, you'll update your deployment workflow to add new jobs to build your website's application and deploy it to each environment:
 
-:::image type="content" source="../media/3-workflow-application.svg" alt-text="TODO" border="false":::
+:::image type="content" source="../media/3-workflow-application.svg" alt-text="Diagram showing the revised workflow, including a new build job and an application deployment job." border="false":::

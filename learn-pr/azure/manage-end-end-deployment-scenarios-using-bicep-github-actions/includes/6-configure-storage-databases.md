@@ -59,4 +59,4 @@ In other situations, it's not possible to create exceptions like this. In these 
 
 In the next exercise, you'll update your deployment workflow to add new jobs to build your website's database components, deploy the database, and add seed data:
 
-:::image type="content" source="../media/6-workflow-database.svg" alt-text="TODO" border="false":::
+:::image type="content" source="../media/6-workflow-database.svg" alt-text="Diagram showing the revised workflow, including a new database build job, a database deployment job, and data seeding jobs in the test environment." border="false":::
