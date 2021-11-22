@@ -38,7 +38,7 @@ Here are the expected values:
     \{signature\}
   :::column-end:::
   :::column:::
-    An HMAC-SHA256 signature string of the form: \{URL-encoded-resourceURI\} + "\\n" + expiry. *Important:* The key is decoded from base64 and used as key to perform the HMAC-SHA256 computation.
+    An HMAC-SHA256 signature string of the form: \{URL-encoded-resourceURI\} + "\\n" + expiry. The key is decoded from base64 and used as key to perform the HMAC-SHA256 computation.
   :::column-end:::
 :::row-end:::
 :::row:::

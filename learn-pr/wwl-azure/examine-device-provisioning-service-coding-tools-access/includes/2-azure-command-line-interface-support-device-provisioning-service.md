@@ -278,7 +278,7 @@ This command takes the following arguments:
   :::column-end:::
   :::column:::
     IoT Provisioning Service name.
-Note: --name is a required argument.
+\--name is a required argument.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -287,7 +287,7 @@ Note: --name is a required argument.
   :::column-end:::
   :::column:::
     Name of resource group.
-Note: --resource-group is a required argument.
+\--resource-group is a required argument.
   :::column-end:::
 :::row-end:::
 :::row:::
