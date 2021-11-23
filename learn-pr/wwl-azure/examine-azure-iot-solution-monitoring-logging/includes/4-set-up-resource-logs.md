@@ -342,7 +342,7 @@ After you set up event logging through diagnostics settings, you can create appl
 class Program
 {
     static string connectionString = "{your AMS eventhub endpoint connection string}";
-    static string monitoringEndpointName = "{your AMS event hub endpoint name}";
+    static string monitoringEndpointName = "{your AMS Event Hub endpoint name}";
     static EventHubClient eventHubClient;
     //This is the Diagnostic Settings schema
     class AzureMonitorDiagnosticLog
