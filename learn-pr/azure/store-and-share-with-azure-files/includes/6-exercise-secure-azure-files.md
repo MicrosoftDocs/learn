@@ -6,9 +6,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Enable secure file transfer
 
-1. In the Azure portal you should still have open from the previous exercise, select the storage account you created, named **learnazurefileshare** followed by random numbers.
+1. In the Azure portal you should still have open from the previous exercise, select the storage account named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Settings**, select **Configuration**. The **Configuration** pane appears for your storage account.
+1. In the Storage account menu, under **Settings**, select **Configuration**. The **Configuration** pane for your storage account appears.
 
     :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
@@ -16,29 +16,29 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Add a firewall rule to restrict access to an IP address
 
-1. In the middle menu pane, under **Security + networking**, select **Networking**. The **Networking** pane appears for your storage account with the **Firewalls and virtual networks** tab highlighted.
+1. In the Storage account menu, under **Security + networking**, select **Networking**. The **Networking** pane for your storage account appears with the **Firewalls and virtual networks** tab active.
 
    :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
 
 1. Under **Allow access from**, select **Selected networks**.
 
-1. Under **Firewall**, in the address range input, note the public IP address of your VM. You can see this address in the title bar of the remote desktop connection.
+1. Under **Firewall**, in the **Address range** field, enter the public IP address of your VM, which displays in the title bar of the remote desktop connection.
 
-1. On the top menu bar, select **Save**.
+1. In the command bar, select **Save**.
 
 ## Test security of the file share
 
-1. On your host machine, try to mount one of the network shares.
+On your host machine, let's try to mount one of the network shares.
 
-1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
+1. In the Azure portal, select your storage named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Data storage**, select **File shares**. The **File shares** pane appears for your storage account.
+1. In the Storage account menu, under **Data storage**, select **File shares**. The **File shares** pane for your storage account appears.
 
-    ![Screenshot of the Azure portal showing the storage account overview.](../media/4-select-file-shares.png)
+    :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot of the Azure portal showing the storage account.":::
 
-1. You should see **Access Denied**.
+1. You should see **No access**.
 
-    ![Screenshot showing access is denied to the share.](../media/6-access-denied.png)
+    :::image type="content" source="../media/6-access-denied.png" alt-text="Screenshot showing access is denied to the share.":::
 
 1. In the middle menu pane, under **Security + networking**, select **Networking**. The **Firewalls and virtual networks** tab is highlighted.
 
