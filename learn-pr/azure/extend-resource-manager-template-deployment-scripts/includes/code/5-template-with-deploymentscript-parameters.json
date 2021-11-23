@@ -121,7 +121,7 @@
                 "scriptContent": "
                     param([string]$File)
                     $fileList = $File -replace '(\\[|\\])' -split ',' | ForEach-Object { $_.trim() }
-                    $storageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name$env:StorageAccountName -Verbose
+                    $storageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
                     $count = 0
                     $DeploymentScriptOutputs = @{}
                     foreach ($fileName in $fileList) {
