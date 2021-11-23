@@ -1,15 +1,15 @@
-The Text Analytics service is a part of the Azure Cognitive Services offerings that can perform advanced natural language processing over raw text.
+The Language service is a part of the Azure Cognitive Services offerings that can perform advanced natural language processing over raw text.
 
-## Azure resources for the Text Analytics service
+## Azure resources for the Language service
 
-To use the Text Analytics service in an application, you must provision an appropriate resource in your Azure subscription. You can choose to provision either of the following types of resource:
+To use the Language service in an application, you must provision an appropriate resource in your Azure subscription. You can choose to provision either of the following types of resource:
 
-- A **Text Analytics** resource - choose this resource type if you only plan to use the Text Analytics service, or if you want to manage access and billing for the resource separately from other services.
-- A **Cognitive Services** resource - choose this resource type if you plan to use the Text Analytics service in combination with other cognitive services, and you want to manage access and billing for these services together.
+- A **Language** resource - choose this resource type if you only plan to use natural language processing services, or if you want to manage access and billing for the resource separately from other services.
+- A **Cognitive Services** resource - choose this resource type if you plan to use the Language service in combination with other cognitive services, and you want to manage access and billing for these services together.
 
 ## Language detection
 
-Use the language detection capability of the Text Analytics service to identify the language in which text is written. You can submit multiple documents at a time for analysis. For each document submitted to it, the service will detect:
+Use the language detection capability of the Language service to identify the language in which text is written. You can submit multiple documents at a time for analysis. For each document submitted to it, the service will detect:
 
 - The language name (for example "English").
 - The ISO 6391 language code (for example, "en").
@@ -23,7 +23,7 @@ For example, consider a scenario where you own and operate a restaurant where cu
 >
 > **Review 3**: "*The croque monsieur avec frites was terrific. Bon appetit!*"
 
-You can use the Text Analytics service to detect the language for each of these reviews; and it might respond with the following results:
+You can use the text analytics capabilities in the Language service to detect the language for each of these reviews; and it might respond with the following results:
 
 |Document|Language Name| ISO 6391 Code|Score|
 |---|---|---|---|
@@ -39,7 +39,7 @@ There may be text that is ambiguous in nature, or that has mixed language conten
 
 ## Sentiment analysis
 
-The Text Analytics service can evaluate text and return sentiment scores and labels for each sentence. This capability is useful for detecting positive and negative sentiment in social media, customer reviews, discussion forums and more.
+The text analytics capabilities in the Language service can evaluate text and return sentiment scores and labels for each sentence. This capability is useful for detecting positive and negative sentiment in social media, customer reviews, discussion forums and more.
 
 Using the pre-built machine learning classification model, the service evaluates the text and returns a sentiment score in the range of 0 to 1, with values closer to 1 being a positive sentiment. Scores that are close to the middle of the range (0.5) are considered neutral or indeterminate.
 
@@ -59,7 +59,7 @@ A score of 0.5 might indicate that the sentiment of the text is indeterminate, a
 
 ## Key phrase extraction
 
-Key phrase extraction is the concept of evaluating the text of a document, or documents, and then identifying the main talking points of the document(s). Consider the restaurant scenario discussed previously. Depending on the volume of surveys that you have collected, it can take a long time to read through the reviews. Instead, you can use the key phrase extraction capabilities of the Text Analytics service to summarize the main points.
+Key phrase extraction is the concept of evaluating the text of a document, or documents, and then identifying the main talking points of the document(s). Consider the restaurant scenario discussed previously. Depending on the volume of surveys that you have collected, it can take a long time to read through the reviews. Instead, you can use the key phrase extraction capabilities of the Language service to summarize the main points.
 
 You might receive a review such as:
 
@@ -81,7 +81,7 @@ Not only can you use sentiment analysis to determine that this review is positiv
 
 ## Entity recognition
 
-You can provide the Text Analytics service with unstructured text and it will return a list of *entities* in the text that it recognizes.  The service can also provide links to more information about that entity on the web.  An entity is essentially an item of a particular type or a category; and in some cases, subtype, such as those as shown in the following table.
+You can provide the Language service with unstructured text and it will return a list of *entities* in the text that it recognizes.  The service can also provide links to more information about that entity on the web.  An entity is essentially an item of a particular type or a category; and in some cases, subtype, such as those as shown in the following table.
 
 |Type|SubType|Example|
 |---|---|---|
@@ -109,7 +109,7 @@ You can provide the Text Analytics service with unstructured text and it will re
 
 The service also supports *entity linking* to help disambiguate entities by linking to a specific reference. For recognized entities, the service returns a URL for a relevant *Wikipedia* article.
 
-For example, suppose you use the Text Analytics service to detect entities in the following restaurant review extract:
+For example, suppose you use the Language service to detect entities in the following restaurant review extract:
 
 > "*I ate at the restaurant in Seattle last week.*"
 
