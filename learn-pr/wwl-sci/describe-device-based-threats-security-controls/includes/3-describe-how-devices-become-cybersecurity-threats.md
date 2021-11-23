@@ -12,7 +12,7 @@ While devices help us to get our work done, and go about our day, they also pres
 
 Let’s look at the following video to see how devices around us can become threat vectors:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPb1R]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPb1R] 
 
 ## Device vulnerabilities
 
