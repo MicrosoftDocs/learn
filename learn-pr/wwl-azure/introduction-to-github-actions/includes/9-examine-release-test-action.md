@@ -21,19 +21,30 @@ You can request a specific release of action in several ways:
 
 Tags allow you to specify the precise versions that you want to work.
 
-YAML<br>steps:<br><br>\- uses: actions/install-timer@v2.0.1<br>
+```YAML
+
+steps:
+    -uses: actions/install-timer@v2.0.1
+```
 
 ### SHA-based hashes
 
 You can specify a requested SHA-based hash for an action. It ensures that the action hasn't changed. However, the downside to this is that you also won't receive updates to the action automatically either.
 
-YAML<br>steps:<br><br>\- uses: actions/install-timer@327239021f7cc39fe7327647b213799853a9eb98<br>
+```YAML
+steps:
+    -uses: actions/install-timer@327239021f7cc39fe7327647b213799853a9eb98
+
+```
 
 ### Branches
 
 A common way to request actions is to refer to the branch that you want to work with. You'll then get the latest version from that branch. That means you'll benefit from updates, but it also increases the chance of code-breaking.
 
-YAML<br>steps:<br><br>\- uses: actions/install-timer@develop
+```YAML
+steps:
+    -uses: actions/install-timer@develop
+```
 
 ## Test an Action
 

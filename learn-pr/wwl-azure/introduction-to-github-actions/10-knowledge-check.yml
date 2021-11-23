@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "on."
       isCorrect: false
-      explanation: "That is incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
+      explanation: "Incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
     - content: "needs."
       isCorrect: true
-      explanation: "That is correct. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
+      explanation: "Correct. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
     - content: "uses."
       isCorrect: false
-      explanation: "That is incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
+      explanation: "Incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
   - content: "Which of the following choices isn't a level that self-hosted runners can be added within an enterprise?"
     choices:
     - content: "Enterprise-level (multiple organizations across an enterprise)."
       isCorrect: false
-      explanation: "That is incorrect. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
+      explanation: "Incorrect. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
     - content: "Organizational-level (multiple repositories in an organization)."
       isCorrect: false
-      explanation: "That's incorrect. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
+      explanation: "Incorrect. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
     - content: "Project-level."
       isCorrect: true
-      explanation: "That is correct. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
+      explanation: "Correct. Self-hosted runners can be added at different levels within an enterprise: Organizational-level (multiple repositories in an organization), Enterprise-level (multiple organizations across an enterprise), Repository-level (single repository)."
   - content: "Which of the following choices is the location where you can find workflows?"
     choices:
     - content: ".github/workflows"
       isCorrect: true
-      explanation: "That's correct. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
+      explanation: "Correct. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
     - content: ".github/build/workflows"
       isCorrect: false
-      explanation: "That's incorrect. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
+      explanation: "Incorrect. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
     - content: ".github/actions/workflows"
       isCorrect: false
-      explanation: "That's incorrect. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
+      explanation: "Incorrect. Workflows are written in YAML and live within a GitHub repository, at the location .github/workflows."
