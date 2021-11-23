@@ -10,7 +10,8 @@ string sproc = @"function greet() {
 }";
 ```
 
-> &#128161; Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
+> [!TIP]
+> Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
 
 Next, create an object of type **Microsoft.Azure.Cosmos.Scripts.StoredProcedureProperties** with the **Id** and **Body** properties set to the unique identifier and content of the stored procedure, respectively.
 

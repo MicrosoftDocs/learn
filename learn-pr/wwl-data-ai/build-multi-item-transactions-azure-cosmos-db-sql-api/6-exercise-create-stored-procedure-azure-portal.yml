@@ -4,12 +4,13 @@ title: 'Exercise: Create a stored procedure with the Azure Portal'
 metadata:
   title: 'Exercise: Create a stored procedure with the Azure Portal'
   description: "Exercise: Create a stored procedure with the Azure Portal"
-  ms.date: 11/18/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labId: 107599
 labModal: true
 durationInMinutes: 15

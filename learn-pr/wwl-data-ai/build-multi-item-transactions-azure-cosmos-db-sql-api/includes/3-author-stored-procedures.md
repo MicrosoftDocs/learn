@@ -65,4 +65,5 @@ function createProduct(item) {
 }
 ```
 
-> &#128161; Alternatively, you can use the ``__`` (double underline) shortcut as an equivalent to ``getContext().getCollection()``.
+> [!TIP]
+> Alternatively, you can use the ``__`` (double underline) shortcut as an equivalent to ``getContext().getCollection()``.
