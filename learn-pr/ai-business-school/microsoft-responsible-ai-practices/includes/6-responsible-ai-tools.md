@@ -12,15 +12,10 @@ Outlined in this unit are some tools that we have found helpful in implementing 
 
 Security and privacy are key pillars of trust. There are a number of emerging tools to help protect security and privacy in AI systems. Techniques like homomorphic encryption, multi-party computation (MPC), and differential privacy make it possible to train AI models using private data without sharing it.<sup>9</sup> For example, with MPC we can build a system that analyzes data from three different hospitals without any of them gaining access to each other’s health data. Secure execution environments on public cloud platforms protect data inside a Trusted Execution Environment (TEE), also known as an enclave, so that data scientists can’t view or modify it, but they can still train AI models with it. Once the AI system is built, you can also use technologies like Counterfit to conduct AI security risk assessments.
 
-:::row:::
-:::column span="2":::
 Implementing security and privacy in your organization:
-:::column-end:::
-:::column:::
+
 > [!TIP]
 > You can find links to these resources in the summary and resources section of this module.
-:::column-end:::
-:::row-end:::
 
 |Resource type|Details|
 |---|---|
