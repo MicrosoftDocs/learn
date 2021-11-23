@@ -44,7 +44,8 @@ public class ProductAdvertisement
 }
 ```
 
-> &#128221; For the purposes of this exercises, you can ignore casing. The JSON parser will properly handle converting between camel and pascal casing.
+> [!NOTE]
+> For the purposes of this exercises, you can ignore casing. The JSON parser will properly handle converting between camel and pascal casing.
 
 The first change that could be made is to use a SQL alias to change the **categoryName** property to **category**. This change is accomplished by adding an ``AS`` keyword to the existing query:
 

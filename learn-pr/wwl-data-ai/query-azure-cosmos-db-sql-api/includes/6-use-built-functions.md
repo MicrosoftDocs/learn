@@ -29,4 +29,5 @@ WHERE
     p.retirementDate >= GetCurrentDateTime()
 ```
 
-> &#128161; This is not a comprehensive list of built-in functions for the Azure Cosmos DB SQL API query language.
+> [!TIP]
+> This is not a comprehensive list of built-in functions for the Azure Cosmos DB SQL API query language.
