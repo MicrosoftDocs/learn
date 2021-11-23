@@ -136,3 +136,7 @@ In this module, you'll be using some of the key functional components of **Power
     ```
 
     :::image type="content" source="../media/configure-price.png" alt-text="Screenshot of Price calculation" lightbox="../media/configure-price.png":::
+
+After implementing the above steps, here is how your application must look.
+
+:::image type="content" source="../media/application-demo-3.gif" alt-text="application demo after implementing measure in mr and spatial filtering." lightbox="../media/application-demo-3.gif":::

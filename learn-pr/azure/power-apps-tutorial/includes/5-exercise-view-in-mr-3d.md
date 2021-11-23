@@ -193,3 +193,7 @@ Another unique property provided by the **View in MR** component is **Object sca
 
 >[!Tip]
 > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+
+Implementing the above steps must make your application look like this.
+
+:::image type="content" source="../media/application-demo-2.gif" alt-text="application demo after implementing view in 3d and view in mr" lightbox="../media/application-demo-2.gif":::

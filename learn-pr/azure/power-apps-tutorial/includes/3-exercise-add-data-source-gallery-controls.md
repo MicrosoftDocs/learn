@@ -335,4 +335,4 @@ Now that we have added the product categories, we will display the list of produ
 
 After implementing the above steps, here is how your application must look.
 
-:::image type="content" source="../media/application-demo-1.gif" alt-text="gif of application demo after connecting to a data source." lightbox="../media/application-demo-1.gif":::
+:::image type="content" source="../media/application-demo-1.gif" alt-text="application demo after connecting to a data source." lightbox="../media/application-demo-1.gif":::
