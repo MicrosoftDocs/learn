@@ -1,6 +1,6 @@
 There are two constraints that apply to the schema inferencing done by the autosync process as it transparently maintains the schema in the analytical store based on items added or updated in the transactional store:
 - You can have a maximum of 1000 properties at any nesting level within the items stored in a transactional store. Any property above this and its associated values will not be present in the analytical store.
-- Property names must be unique when compared in a case insensitive manner. For example, the properties {"name": "Franklin Ye"} and {"Name": "Franklin Ye"} cannot exit at the same nesting level in the same item or different items within a container given that “name” and “Name” are not unique when compared in a case insensitive manner.
+- Property names must be unique when compared in a case insensitive manner. For example, the properties {"name": "Franklin Ye"} and {"Name": "Franklin Ye"} cannot quit at the same nesting level in the same item or different items within a container given that “name” and “Name” are not unique when compared in a case insensitive manner.
 
 There are two modes of schema representation for data stored in the analytical store. These modes have tradeoffs between the simplicity of a columnar representation, handling the polymorphic schemas, and simplicity of query experience:
 - Well-defined schema representation
