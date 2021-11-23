@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "These players have lived experiences that cannot be replaced through simulation or assumptions." 
       isCorrect: true
-      explanation: "Correct. Though tools like colorblind simulation filters and others exist, these tools cannot accurately simulate the holistic experience of these players to accurately inform accessibility implementation in an effective way."
+      explanation: "Correct. Though tools like color-blind simulation filters and others exist, these tools cannot accurately simulate the holistic experience of these players to accurately inform accessibility implementation in an effective way."
     - content: "Marketing your team's efforts to work with the disability community is the best way to increase positive PR and sales."
       isCorrect: false
       explanation: "Incorrect. This collaboration is important in creating truly accessible experiences, not for marketing purposes."
