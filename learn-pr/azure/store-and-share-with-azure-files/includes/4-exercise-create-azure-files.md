@@ -97,11 +97,11 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
-    :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png:::
+    :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png":::
 
 1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right-click **Windows PowerShell** and select **Run as Administrator**.
 
-    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png:::
+    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png":::
 
 1. In the PowerShell console, right-click the PowerShell icon in the title bar, and select **Properties**. 
  
@@ -109,15 +109,15 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. At the command prompt, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>. 
 
-   The system responds with confirmation the CMDKEY credential addedded successfully,  and drive F is has been set up as a fileshare.
+   The system responds with confirmation the CMDKEY credential added successfully, and drive F is has been set up as a fileshare.
 
 1. In the Azure portal, go back to the **File shares** pane for your storage account, and select **reports**.
 
-    :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png#lightbox":::
+    :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png":::
 
 1. On the command bar, select **Connect**. The **Connect** reports pane appears.
 
-1. In the **Drive letter** dropdown list, select the **G**.
+1. In the **Drive letter** dropdown list, select **G**.
 
 1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
@@ -127,14 +127,14 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. In the RDP connection, open File Explorer, and select **This PC**.
 
-    :::image type="content" source="../media/4-explorer-mapped-drives.png" alt-text="Explorer showing This PC." lightbox="../media/4-explorer-mapped-drives.png#lightbox":::
+    :::image type="content" source="../media/4-explorer-mapped-drives.png" alt-text="Explorer showing This PC." lightbox="../media/4-explorer-mapped-drives.png":::
 
-1. Under Netework locations, select the *data* file share named **F**.
+1. Under Network locations, select the file share named **F**.
 
-1. In File Explorer, right-click the main work area to open the context menu and select **New** > **Text Document**.
+1. Right-click the main work area, and in the context menu, select **New** > **Text Document**.
 
-1. Save the file with the name **test upload**.
+1. Rename the file **test upload**, and save it.
 
-1. In the Azure portal, go back to the **File shares** pane, and select **data**. Verify that you can see the **test upload** file .
+1. In the Azure portal, select the **File shares** pane, and select **data**. Verify that you can see the **test upload** file that you just created in the RDP session.
 
-1. Keep this connection open for the next exercise.
+Keep this connection open for the next exercise.
