@@ -24,7 +24,7 @@ Many quality gates can be considered.
  -  Compliance checks
     
      -  Are there work items linked to the release?
-     -  Is the release started by someone else as the code committer?
+     -  Is the release started by someone else as the one who commits the code?
  -  Is the performance not affected after a new release?
 
 Defining quality gates make the release process better, and you should always consider adding them.
