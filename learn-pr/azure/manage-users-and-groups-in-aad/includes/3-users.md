@@ -72,7 +72,7 @@ ObjectId                             DisplayName UserPrincipalName UserType
 f36634c8-8a93-4909-9248-0845548bc515 Abby Brown  AbbyB@contoso.com Member
 ```
 
-If you prefer a more traditional command-line, you can use the Azure CLI:
+If you prefer a more standard command-line interface, you can use the Azure CLI:
 
 ```azurecli
 az ad user create --display-name "Abby Brown" \
