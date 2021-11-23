@@ -20,7 +20,10 @@ iconUrl: /learn/achievements/intro-to-pybryt.svg
 levels:
   - beginner
 roles:
+  - student
   - developer
+  - higher-ed-educator
+  - school-leader
 products:
   - vs
 prerequisites: None 
