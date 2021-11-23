@@ -6,7 +6,7 @@ In this module, you've learned about the following benefits of Microsoft Endpoin
 - Intelligent and unified endpoint security
 - Flexible and unified endpoint management
 - Data protection without device enrollment
-- Increased end users' productivity
+- Increased end-user productivity
 - Benefits of co-management
 - Beneficial return on investment
  
