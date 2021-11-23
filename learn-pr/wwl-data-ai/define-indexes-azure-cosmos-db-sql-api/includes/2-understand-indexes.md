@@ -23,7 +23,7 @@ Here, we have a JSON object representing a product named **Touring-1000 Blue** w
 
 If we were to represent this JSON object as a tree, this representation would include traversal paths for both the **name** property and its value (**Touring-100**). The tree also contains three traversal paths for the three objects in the **tags** array, each with a leaf node for their **name** properties and respective values.
 
-![Visual tree representation of the Touring-1000 Blue JSON object](../media/2-touring-tree.png)
+![Visual tree representation of the Touring-1000 Blue JSON object](../media/2-tour-tree.png)
 
 As a counterpoint, here is another JSON object representing a product named **Mountain-400-W Silver** that only contains two tags (**bike** and **silver**). This object is also unique in that it includes a **sku** property with a value of **BK-M38S-38**.
 

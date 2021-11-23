@@ -32,7 +32,7 @@ The default indexing policy, in JSON, contains the following content:
 }
 ```
 
-## Configuring indexing mode
+## Configure indexing mode
 
 There are two primary indexing mode options for most Azure Cosmos DB SQL API containers.
 
