@@ -66,7 +66,7 @@ Take these suggestions and create new work items and feature branches separate f
 
 ## Protect branches with policies
 
-There are a few critical branches in your repo that the team relies on always in suitable shapes, such as your master branch.
+There are a few critical branches in your repo that the team relies on always in suitable shapes, such as your main branch.
 
 Require pull requests to make any changes on these branches. Developers pushing changes directly to the protected branches will have their pushes rejected.
 

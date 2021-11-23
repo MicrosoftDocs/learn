@@ -1,6 +1,6 @@
-This module presented pull request for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals.
+This module presented pulls requests for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals.
 
-It assisted to understand how pull requests work and how to configure them.
+It helped understanding how pull requests work and how to configure them.
 
 You learned how to describe the benefits and usage of:
 
