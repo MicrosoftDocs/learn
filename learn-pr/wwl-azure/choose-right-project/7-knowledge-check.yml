@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Brownfield project."
       isCorrect: true
       explanation: "That's correct. A Brownfield Project comes with the baggage of existing codebases, existing teams, and often a significant technical debt. They can still be ideal projects for DevOps transformations."
-    - content: "Not of the above."
+    - content: "Bluefield project."
       isCorrect: false
       explanation: "That's incorrect. A Brownfield Project comes with the baggage of existing codebases, existing teams, and often a significant technical debt. They can still be ideal projects for DevOps transformations."
   - content: "Which of the following choices would a system that manages inventory in a warehouse be considered?"
@@ -36,7 +36,7 @@ quiz:
     - content: "System of Engagement."
       isCorrect: false
       explanation: "That's incorrect. Systems that provide the truth about data elements are often called Systems of Record."
-    - content: "Not of the above."
+    - content: "System of History."
       isCorrect: false
       explanation: "That's incorrect. Systems that provide the truth about data elements are often called Systems of Record."
   - content: "Which of the following choices are the categorized user groups most adopted in Continuous Delivery?"
