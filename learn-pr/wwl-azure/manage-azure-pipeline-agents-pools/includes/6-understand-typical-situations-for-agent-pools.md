@@ -1,6 +1,6 @@
 If you've got many agents intended for different teams or purposes, you might want to create more pools, as explained below.
 
-## Creating agent pools
+## Create agent pools
 
 Here are some typical situations when you might want to create agent pools:
 

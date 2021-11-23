@@ -9,7 +9,7 @@ The following virtual machine images are provided by default:
  -  Windows Server 2016 with Visual Studio 2017.
  -  Ubuntu 20.04.
  -  Ubuntu 18.04.
- -  macOS 11-Big Sur.
+ -  macOS 11.
  -  macOS X Mojave 10.14.
  -  macOS X Catalina 10.15.
 

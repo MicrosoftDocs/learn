@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Client-Hosted and Server-Hosted."
       isCorrect: false
-      explanation: "That is incorrect. Self-hosted and Microsoft-hosted."
+      explanation: "Incorrect. Self-hosted and Microsoft-hosted."
     - content: "Self-Hosted and Microsoft-Hosted."
       isCorrect: true
-      explanation: "That is correct. Self-hosted and Microsoft-hosted."
+      explanation: "Correct. Self-hosted and Microsoft-hosted."
     - content: "Windows-Hosted and Linux-Hosted."
       isCorrect: false
-      explanation: "That is incorrect. Self-hosted and Microsoft-hosted."
+      explanation: "Incorrect. Self-hosted and Microsoft-hosted."
   - content: "Which of the following statements is true?"
     choices:
     - content: "Agent pools are scoped to the entire project and can be shared across pipelines."
       isCorrect: false
-      explanation: "That is incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
+      explanation: "Incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
     - content: "Agent pools are scoped to the entire repository and can be shared across pipelines."
       isCorrect: false
-      explanation: "That's incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
+      explanation: "Incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
     - content: "Agent pools are scoped to the entire organization and can be shared across projects."
       isCorrect: true
-      explanation: "That is correct. Agent pools are scoped to the entire organization and can be shared across projects."
+      explanation: "Correct. Agent pools are scoped to the entire organization and can be shared across projects."
   - content: "Which of the following choices is the role that can manage membership for all roles of the project agent pool?"
     choices:
     - content: "Administrator."
       isCorrect: true
-      explanation: "That's correct. Administrator."
+      explanation: "Correct. Administrator."
     - content: "User."
       isCorrect: false
-      explanation: "That's incorrect. Administrator."
+      explanation: "Incorrect. Administrator."
     - content: "Contributor."
       isCorrect: false
-      explanation: "That's incorrect. Administrator."
+      explanation: "Incorrect. Administrator."
