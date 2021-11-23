@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Repo"
       isCorrect: false
-      explanation: "That is incorrect. Secrets are similar to environment variables but encrypted."
+      explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
     - content: "action.yml"
       isCorrect: false
-      explanation: "That is incorrect. Secrets are similar to environment variables but encrypted."
+      explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
     - content: "Encrypted Secrets"
       isCorrect: true
-      explanation: "That's correct. Secrets are similar to environment variables but encrypted."
+      explanation: "Correct. Secrets are similar to environment variables but encrypted."
   - content: "Which of the following files is the metadata for an action held?"
     choices:
     - content: "workflow.yml"
       isCorrect: false
-      explanation: "That is incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
     - content: "action.yml"
       isCorrect: true
-      explanation: "That is correct. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Correct. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
     - content: "meta.yml"
       isCorrect: false
-      explanation: "That is incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
   - content: "Which of the following choices is how can the status of a workflow be shown in a repository?"
     choices:
     - content: "Using Badges."
       isCorrect: true
-      explanation: "That's correct. Badges can be used to show the status of a workflow within a repository."
+      explanation: "Correct. Badges can be used to show the status of a workflow within a repository."
     - content: "Status Files."
       isCorrect: false
-      explanation: "That's incorrect. Badges can be used to show the status of a workflow within a repository."
+      explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."
     - content: "Conversation Tab."
       isCorrect: false
-      explanation: "That's incorrect. Badges can be used to show the status of a workflow within a repository."
+      explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."
