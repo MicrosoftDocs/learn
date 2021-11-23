@@ -4,7 +4,7 @@ CI encourages developers to share their code and unit tests by merging their cha
 
 Committing code triggers an automated build system to grab the latest code from the shared repository and build, test, and validate the entire main branch (also known as the trunk or main).
 
-:::image type="content" source="../media/lifecycle-ci-b2e31afb.png":::
+:::image type="content" source="../media/lifecycle-ci-b2e31afb.png" alt-text="Lifecycle image. Is there Continuous in your integration?":::
 
 
 The idea is to minimize the cost of integration by making it an early consideration.
@@ -17,7 +17,7 @@ Integrating code frequently doesn't, by itself, offer any guarantees about the q
 
 In many organizations, integration is costly because manual processes ensure that the code meets standards, introduces bugs, and breaks existing functionality.
 
-Frequent integration can create friction when the level of automation doesn't match the amount quality assurance measures in place.
+Frequent integration can create friction when the level of automation doesn't match the amount of quality assurance measures in place.
 
 In practice, continuous integration relies on robust test suites and an automated system to run those tests to address this friction within the integration process.
 
