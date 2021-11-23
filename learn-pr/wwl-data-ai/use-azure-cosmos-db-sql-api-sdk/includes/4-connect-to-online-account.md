@@ -12,8 +12,8 @@ using Microsoft.Azure.Cosmos;
 
 The two most common ways to create an instance for the **CosmosClient** class is to instantiate it with one of the following two constructors:
 
-1. A constructor that takes a single string value representing the connection string for the account.
-1. A constructor that takes two string values representing the endpoint and a key for the account.
+- A constructor that takes a single string value representing the connection string for the account.
+- A constructor that takes two string values representing the endpoint and a key for the account.
 
 > [!NOTE]
 > You can always retrieve the connection string, endpoint, or any of the keys from the Azure portal. For the examples in this section, we will use a fictional endpoint of **https­://dp420.documents.azure.com:443/** and a sample key of **fDR2ci9QgkdkvERTQ==**.
@@ -66,9 +66,9 @@ The **AccountProperties** class includes useful properties such as, but not limi
 
 Once you have a client instance, you can retrieve or create a database using one of three methods:
 
-1. Retrieve an existing database using the name
-1. Create a new database passing in a unique database name
-1. Have the SDK check for the existence of the database and either create or retrieve it automatically
+- Retrieve an existing database using the name
+- Create a new database passing in a unique database name
+- Have the SDK check for the existence of the database and either create or retrieve it automatically
 
 Any of these three methods will return an instance of type **Database** that you can use to interact with the database.
 
@@ -94,9 +94,9 @@ Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
 
 Now that you have a database instance, you can retrieve or create a container using one of three methods:
 
-1. Retrieve an existing container using just the name
-1. Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision
-1. Have the SDK check for the existence of the database and either create or retrieve it automatically
+- Retrieve an existing container using just the name
+- Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision
+- Have the SDK check for the existence of the database and either create or retrieve it automatically
 
 Any of these three methods will return an instance of type **Container** that you can use to interact with the container.
 
