@@ -40,7 +40,8 @@ The **consistent** indexing mode updates the index synchronously as your perform
 
 The **none** indexing mode completely disables indexing on a container. This indexing mode is a scenario-specific mode where the indexing operation is either unnecessary or could impact the solution's overall performance. Two examples include:
 
-> &#128161; There is an additional **lazy** indexing mode that is used for specific scenarios. Use the **Learn more** links at the end of this module to learn more about this specific indexing mode.
+> [!TIP]
+> There is an additional **lazy** indexing mode that is used for specific scenarios. Use the **Learn more** links at the end of this module to learn more about this specific indexing mode.
 
 - A bulk operation to create, update, or delete multiple documents may benefit from disabling indexing during the bulk execution period. Once the bulk operations are complete, the indexing mode can be switched back to **consistent**.
 - Solutions that use containers as a pure key-value store only perform point-read operations. These containers do not benefit from the secondary indexes created by running the indexer.
