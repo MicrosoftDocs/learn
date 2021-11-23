@@ -2,13 +2,17 @@ Organizations in all sectors deal with a constant flow of data and need to turn 
 
 ## What is a Kusto query?
 
-A Kusto query is a read-only request to process data and return results. The request is stated in plain text that is easy to read, author, and automate. A Kusto query has one or more query statements and returns data in a tabular or graph format.
+A Kusto query is a read-only request to process data and return results. The request is stated in plain text that's easy to read, author, and automate. A Kusto query has one or more query statements and returns data in a tabular or graph format.
 
 ## What is a query statement?
 
-The most common kind of query statement is a tabular expression **statement**, which means both its input and output consist of tables or tabular datasets. Tabular statements contain zero or more **operators**, each of which starts with a tabular input and returns a tabular output. Operators are sequenced by a `|` (pipe). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step and then fed into the following step. It's like a funnel, where you start out with an entire data table. Each time the data passes through another operator, it is filtered, rearranged, or summarized. Because the piping of information from one operator to another is sequential, the query operator order is important. At the end of the funnel, you're left with a refined output.
+The most common kind of query statement is a tabular expression statement. Both its input and its output consist of tables or tabular datasets. 
 
-These operators are KQL-specific, although often have parallels to SQL or other languages.
+Tabular statements contain zero or more *operators*. Each operator starts with a tabular input and returns a tabular output. Operators are sequenced by a pipe (`|`). Data flows, or is piped, from one operator to the next. The data is filtered or manipulated at each step and then fed into the following step. 
+
+It's like a funnel, where you start out with an entire data table. Each time the data passes through another operator, it's filtered, rearranged, or summarized. Because the piping of information from one operator to another is sequential, the query operator order is important. At the end of the funnel, you're left with a refined output.
+
+These operators are KQL-specific, although they often have parallels to SQL or other languages.
 
 Let's look at an example query.
 
@@ -19,10 +23,10 @@ StormEvents
 | count 
 ```
 
-This query has a single tabular expression statement. The statement begins with a reference to a table called *StormEvents* and contains several operators, `where` and `count`, each separated by a pipe. The data rows for the source table are filtered by the value of the *StartTime* column and then filtered by the value of the *State* column. In the last line, the query returns a table with a single column and a single row containing the count of the remaining rows.
+This query has a single tabular expression statement. The statement begins with a reference to a table called **StormEvents** and contains the operators `where` and `count`. Each operator is separated by a pipe. The data rows for the source table are filtered by the value of the **StartTime** column and then filtered by the value of the **State** column. In the last line, the query returns a table with a single column and a single row that contains the count of the remaining rows.
 
 The following image shows a schematic representation of the data being piped through this query.
 
-:::image type="content" source="../media/2-storm-events.png" alt-text="Schematic image showing query as a funnel." border="false":::
+:::image type="content" source="../media/2-storm-events.png" alt-text="Schematic diagram that shows a query as a funnel." border="false":::
 
-In the next units, we'll connect to a dataset, learn about some of the most commonly used operators, and then use the operators to answer questions about a sample dataset containing US meteorological data.
+In the next units, you'll connect to a dataset and learn about some of the most commonly used operators. Then you'll use the operators to answer questions about a sample dataset that contains US meteorological data.

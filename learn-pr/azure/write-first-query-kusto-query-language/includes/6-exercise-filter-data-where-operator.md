@@ -1,10 +1,10 @@
-Recall that we've filtered certain columns in or out of the displayed results. In this unit, you will learn how to answer questions about what kind of meteorological events took place in different regions or timespans, and which types of events caused damage.
+Recall that you've filtered certain columns in or out of the displayed results. In this unit, you'll learn how to answer questions about what kinds of meteorological events took place in different regions or timespans, and which types of events caused damage.
 
-## Use the `where` operator
+## Use the where operator
 
-Up to this point, all the operators we've used have returned selected columns. Now, let's take a look at specific rows of the data.
+Up to this point, all the operators you've used have returned selected columns. Now, let's take a look at specific rows of the data.
 
-The `where` operator filters results that satisfy a certain condition. In this first example, we'll compare an integer column to a minimum value using the numerical operator *greater than* (>). Specifically, we only want to see storms that damaged property, so we'll look at rows of data where the damage property is greater than zero.
+The `where` operator filters results that satisfy a certain condition. In this first example, you'll compare an integer column to a minimum value by using the numerical operator *greater than* (`>`). Specifically, you only want to see storms that damaged property. So you'll look at rows of data where the damage property is greater than zero.
 
 1. Run the following query:
 
@@ -19,9 +19,9 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
     :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
     
-1. Notice that all rows returned do, in fact, have *DamageProperty* values greater than zero.
+1. Notice that all rows returned do, in fact, have **DamageProperty** values greater than zero.
     
-1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query/ Note that 365d is a shortened version of 365 days.
+1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago. For example, in the following query, 365d is a shortened version of 365 days:
 
     ```kusto
     StormEvents
@@ -30,11 +30,11 @@ The `where` operator filters results that satisfy a certain condition. In this f
     | project State, EventType, DamageProperty
     ```
 
-1. Notice that this query returns no results. Since the data is from 2007, there are no records from the past year.
+1. Notice that this query returns no results. Because the data is from 2007, there are no records from the past year.
 
-## Filter using string operators
+## Filter by using string operators
 
-It looks like there are quite a few types of damage-causing storms, occurring all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida. 
+It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida. 
 
 1. Run the following query:
 
@@ -47,13 +47,13 @@ It looks like there are quite a few types of damage-causing storms, occurring al
     
 1. You should get results that look like the following image: 
 
-    :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operator example 2.":::
+    :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operators with query results.":::
 
-1. Notice that all records returned from this query are from Florida, and have crop damage greater than zero.
+1. Notice that all records returned from this query are from Florida and have crop damage greater than zero.
 
-### Filter using the `has` operator
+## Filter by using the has operator
 
-Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
+One of the event types in the results of the last query is called **Thunderstorm Wind**. Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of `wind` by using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
 
 1. Run the following query:
 
@@ -67,21 +67,21 @@ Looking at the results of the last query, we see that one of the Event Types is 
     
 1. You should get results that look like the following image: 
 
-    :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of where and has operators.":::
+    :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of where and has operators with query results.":::
 
-1. Notice in the results that we no longer see events such as tornados, but we do see Thunderstorm Wind and Strong Wind event types.
+1. Notice in the results that events such as tornadoes no longer appear, but **Thunderstorm Wind** and **Strong Wind** event types do appear.
 
 ## Filter on datetime values
 
-Let's look closer at the damage done in the first half of the calendar year. In fact, we often want to limit our search to see events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
+Let's look more closely at the damage done in the first half of the calendar year. It can be useful to limit your search to events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
 
-Since time ranges are bounded by two extremes, it's most efficient to construct a query where we choose a value that is between these two times.
+Because time ranges are bounded by two extremes, it's most efficient to construct a query where you choose a value that's between these two times.
 
 The syntax for constructing this date range is as follows:
 
 > `where` *time* `between` `( datetime(`*value*`)..datetime(`*value*`)`
 
-1. Let's incorporate this datetime range into a kind of query we've already seen. Run the following query:
+1. Let's incorporate this `datetime` range into a kind of query you've already seen. Run the following query:
 
     ```kusto
     StormEvents
@@ -94,6 +94,6 @@ The syntax for constructing this date range is as follows:
 
 1. You should get results that look like the following image:
 
-    :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operator example 3.":::
+    :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operators that include a time range, along with results.":::
 
-1. Notice that all the dates are within the first half of the year, months 1-6. You may also see that even though we've selected events from the state of Florida, we don't see the state as an output column, since it wasn't specified in the `project` operator.
+1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also see that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.
