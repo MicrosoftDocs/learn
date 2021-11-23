@@ -28,9 +28,13 @@ Storage Explorer automatically opens after installation.
 
 ## Connect to an Azure account
 
-When you first open Storage Explorer, it displays the **Connect to Azure Storage** wizard.
+When you first open Storage Explorer, it displays the **Select Resource** wizard.
 
-1. First, connect to Azure. There are several **Azure environment** options to select from. Select **Azure**, and then select **Next**.
+1. First, connect to Azure. Choose **Subscription**.
+
+    ![Screenshot that shows the Select resource wizard.](../media/3-connect-resource.png)
+
+1. There are several **Azure environment** options to select from. Select **Azure**, and then select **Next**.
 
     ![Screenshot that shows the Connect to Azure Storage wizard.](../media/3-storage-explorer-connect.png)
 
