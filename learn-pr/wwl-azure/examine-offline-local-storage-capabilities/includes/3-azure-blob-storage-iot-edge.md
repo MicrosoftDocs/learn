@@ -102,8 +102,8 @@ Put and get blocklist.
 
 There are several ways to deploy modules to an IoT Edge device and all of them work for Azure Blob Storage on IoT Edge modules. The two simplest methods are to use the Azure portal or Visual Studio Code templates. In either case, you would follow flow similar to the following:
 
- -  Deploy the Blob storage module like any other module. The image URI is: **mcr.microsoft.com/azure-blob-storage:latest**
- -  Set Create Container Options to be an appropriate JSON document:
+1.  Deploy the Blob storage module like any other module. The image URI is: **mcr.microsoft.com/azure-blob-storage:latest**
+2.  Set Create Container Options to be an appropriate JSON document:
     
     ```json
     "Env":[
@@ -118,7 +118,7 @@ There are several ways to deploy modules to an IoT Edge device and all of them w
     }
     
     ```
- -  Set Module Twin Settings to be an appropriate JSON document:
+3.  Set Module Twin Settings to be an appropriate JSON document:
     
     ```json
     "<your azureblobstorageoniotedge module name>":{
