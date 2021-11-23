@@ -7,7 +7,8 @@ metadata:
   description: What is testing? Here's a brief explanation and example of what a test is in software development.
   ms.date: 6/28/2021
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 3
