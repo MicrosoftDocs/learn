@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-app-performance
 metadata:
   title: Monitor app performance
   description: "Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications."
-  ms.date: 11/18/2021
+  ms.date: 11/19/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ units:
 - learn.wwl.monitor-app-performance.discover-log-based-metrics
 - learn.wwl.monitor-app-performance.instrument-app-for-monitoring
 - learn.wwl.monitor-app-performance.select-availability-test
-- learn.wwl.monitor-app-performance.troubleshoot-by-using-availability-map
+- learn.wwl.monitor-app-performance.troubleshoot-by-using-application-map
 - learn.wwl.monitor-app-performance.knowledge-check
 - learn.wwl.monitor-app-performance.summary
 badge:
