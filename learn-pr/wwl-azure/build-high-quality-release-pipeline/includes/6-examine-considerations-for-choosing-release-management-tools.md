@@ -70,9 +70,6 @@ Finally, the work needs to be done within the pipeline. It isn't only about the 
  -  Can you integrate with multiple environments? (Linux, Windows, Container Clusters, PaaS, Cloud)
  -  Can you control the tasks that are used in the pipeline?
 
-:::image type="content" source="../media/jenkins-marketplace-5ad35acf.png" alt-text="Jenkins marketplace.":::
-
-
 :::image type="content" source="../media/azure-devops-marketplace-adc9761f.png" alt-text="Azure DevOps marketplace.":::
 
 

@@ -14,7 +14,7 @@ Per tool is indicated if it is part of a more extensive suite. Integration with 
 
 Jenkins's leading open-source automation server provides hundreds of plugins to support building, deploying, and automating any project.
 
- -  On-prem system. They're offered as SaaS by third party.
+ -  On-premises system. They're offered as SaaS by third party.
  -  No part of a bigger suite.
  -  Industry-standard, especially in the full-stack space.
  -  Integrates with almost every source control system.
@@ -34,7 +34,7 @@ CircleCI's continuous integration and delivery platform help software teams rapi
 
 CircleCI offers a modern software development platform that lets teams ramp quickly, scale easily, and build confidently every day.
 
- -  CircleCI is a cloud-based system or an on-prem system.
+ -  CircleCI is a cloud-based system or an on-premises system.
  -  Rest API—you have access to projects, builds, and artifacts.
  -  The result of the build is going to be an artifact.
  -  Integration with GitHub and BitBucket.
@@ -44,7 +44,7 @@ CircleCI offers a modern software development platform that lets teams ramp quic
 
 ### Links
 
- -  [CircleC](https://circleci.com/)I.
+ -  [CircleCI](https://circleci.com/).
  -  [How to get started on CircleCI 2.0: CircleCI 2.0 Demo](https://www.youtube.com/watch?v=KhjwnTD4oec)
 
 ## Azure Pipelines
@@ -53,7 +53,7 @@ Azure Pipelines helps you implement a build, test, and deployment pipeline for a
 
 Tutorials, references, and other documentation show you how to configure and manage the continuous integration and Continuous Delivery (CI/CD) for the app and platform of your choice.
 
- -  Hosted on Azure as a SaaS in multiple regions and available as an on-prem product.
+ -  Hosted on Azure as a SaaS in multiple regions and available as an on-premises product.
  -  Complete Rest API for everything around Build and Release Management.
  -  Integration with many build and source control systems (GitHub, Jenkins, Azure Repos, Bitbucket, Team Foundation Version Control, and so on).
  -  Cross-Platform support, all languages, and, platforms.
