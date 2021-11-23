@@ -10,7 +10,7 @@ Some potential uses for computer vision include:
 
 To an AI application, an image is just an array of pixel values. These numeric values can be used as *features* to train machine learning models that make predictions about the image and its contents.
 
-![an example of the pixel values that represent an image](../media/computer_vision_pixels.png)
+![an example of the pixel values that represent an image](../media/computer-vision-pixels.png)
 
 Training machine learning models from scratch can be very time intensive and require a large amount of data. Microsoft's Computer Vision service gives you access to pre-trained computer vision capabilities.  
 
