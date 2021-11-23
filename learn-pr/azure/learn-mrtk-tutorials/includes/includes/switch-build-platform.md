@@ -37,7 +37,7 @@
 
     :::image type="content" source="../../media/close-icon.png" alt-text="Screenshot of Unity Build page with close icon highlighted." lightbox="../../media/close-icon.png":::
 
-## [Legacy was](#tab/wsa)
+## [Legacy wsa](#tab/wsa)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings.
 
