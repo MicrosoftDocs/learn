@@ -14,7 +14,6 @@ A recovery point is considered created only after both steps are completed. As a
  -  Incremental snapshots are stored as page blobs. All the users using unmanaged disks are charged for the snapshots stored in their local storage account. Since the restore point collections used by Managed VM backups use blob snapshots at the underlying storage level, for managed disks you will see costs corresponding to blob snapshot pricing and they are incremental.
  -  For premium storage accounts, the snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
  -  You get an ability to configure the snapshot retention based on the restore needs. Depending on the requirement, you can set the snapshot retention to a minimum of one day in the backup policy blade as explained below. This will help you save cost for snapshot retention if you don’t perform restores frequently.
- -  It is a one directional upgrade, once upgraded to Instant restore, you cannot go back.
 
 > [!NOTE]
 > By default, snapshots are retained for two days. This feature allows restore operation from these snapshots there by cutting down the restore times. It reduces the time that is required to transform and copy data back from the vault.
