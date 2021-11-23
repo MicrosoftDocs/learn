@@ -6,6 +6,7 @@ metadata:
   ms.date: 10/26/2021
   author: softchris
   ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a web API with minimal API, ASP.NET Core, and .NET 6
