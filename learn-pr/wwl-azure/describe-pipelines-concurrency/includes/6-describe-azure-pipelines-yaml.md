@@ -24,10 +24,10 @@ You also specify a release pipeline to consume and deploy those artifacts to dep
 
 You can configure your pipelines in a YAML file that exists alongside your code.
 
- -  Configure Azure Pipelines to use your Git repo.
- -  Edit your azure-pipelines.yml file to define your build.
- -  Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
- -  Your code is now updated, built, tested, and packaged. It can be deployed to any target.
+1.  Configure Azure Pipelines to use your Git repo.
+2.  Edit your azure-pipelines.yml file to define your build.
+3.  Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
+4.  Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
 :::image type="content" source="../media/flowchart-edit-code-yaml-1e1c3048.png" alt-text="Flowchart with edit code, edit YAML file, push to code repo, Azure Pipelines, and deploy to target.":::
 
