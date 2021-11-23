@@ -3,7 +3,7 @@ uid: learn.wwl.explore-time-series-insights-integration
 metadata:
   title: Explore Time Series Insights integration
   description: "This module provides you with experience configuring the IoT Hub built-in endpoint for use with Time Series Insights and using Time Series Insights to view and analyze time series data."
-  ms.date: 11/22/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
