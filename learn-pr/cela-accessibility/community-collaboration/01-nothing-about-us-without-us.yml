@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.community-collaboration.nothing-about-us-without-us
+title: Practice nothing about us without us
+metadata:
+  title: Practice "nothing about us without us"
+  description: This content is part of the Community Collaboration for Accessible Design module.
+  ms.date: 10/27/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 10
+content: |
+  [!include[](includes/01-nothing-about-us-without-us.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How should the disability community participate in the development of game experiences?"
+    choices:
+    - content: "Individuals with disabilities should play an active role in the development of bespoke accessibility efforts such as new accessibility features or gaming assistive technologies."
+      isCorrect: false
+      explanation: "Incorrect. Though this statement is true; individuals with disabilities should play an active role in the development of accessibility-focused products like assistive technologies, this response limits the role of “nothing about is without us” to only include accessibility-focused efforts. The disability community should be included throughout the development process of all gaming products and experiences."
+    - content: "Individuals with disabilities should play an active role in the development of all gaming products and experiences."
+      isCorrect: true
+      explanation: "Correct. This option accurately describes the meaning of “nothing about us without us” in the context of gaming. Games, platforms, and hardware devices are used, and therefore should be accessible to all players, regardless of whether they are considered “assistive technologies."
+    - content: "Individuals with disabilities should develop their own accessibility features and supports for each unique platform, game, and hardware device to ensure each of these experiences is truly accessible for each individual player."
+      isCorrect: false
+      explanation: "Incorrect. While it is true that players are experts on their own experiences and needs, developers should not place the responsibility of creating accessible experiences on each individual customer with disabilities. An accurate description of “nothing about us without us” would instead urge developers to collaborate with members of the disability community to ensure that the resulting accessible solutions are available to any player who would like to use them."
+  - content: "Why is active collaboration with members of the disability community a critical part of creating accessible products and experiences?"
+    choices:
+    - content: "These players have lived experiences that cannot be replaced through simulation or assumptions." 
+      isCorrect: true
+      explanation: "Correct. Though tools like colorblind simulation filters and others exist, these tools cannot accurately simulate the holistic experience of these players to accurately inform accessibility implementation in an effective way."
+    - content: "Marketing your team's efforts to work with the disability community is the best way to increase positive PR and sales."
+      isCorrect: false
+      explanation: "Incorrect. This collaboration is important in creating truly accessible experiences, not for marketing purposes."
+    - content: "Working with these community members is not an important part of creating accessible products and experiences and can be avoided."
+      isCorrect: false 
+      explanation: "Incorrect. This statement is inaccurate in that this collaboration is in fact a necessary part of creating accessible products and experiences."  
