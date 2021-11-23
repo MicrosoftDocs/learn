@@ -260,7 +260,7 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
 6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
     
-    ```Azure
+    ```azurecli
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
     
        $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
