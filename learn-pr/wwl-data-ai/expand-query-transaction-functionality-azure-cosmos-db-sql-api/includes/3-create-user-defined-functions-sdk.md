@@ -1,6 +1,7 @@
 The **Scripts** property in the **Microsoft.Azure.Cosmos.Container** class contains a **CreateUserDefinedFunctionAsync** method that is used to create a new user-defined function from code.
 
-> &#128221; The next set of examples assume that you already have a container variable defined.
+> [!NOTE]
+> The next set of examples assume that you already have a container variable defined.
 
 To start, define the JavaScript function for the UDF in a string variable.
 
@@ -10,7 +11,8 @@ string udf = @"function addTax(preTax) {
 }";
 ```
 
-> &#128161; Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
+> [!TIP]
+> Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
 
 Next, create an object of type **Microsoft.Azure.Cosmos.Scripts.UserDefinedFunctionProperties** with the **Id** and **Body** properties set to the unique identifier and content of the UDF, respectively.
 

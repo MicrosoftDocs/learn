@@ -96,7 +96,8 @@ Let's walk through a slightly different example with the same JSON file. Now, a 
 }
 ```
 
-> &#128221; We are including the **categoryId** property because all items created within a post-trigger must have the same logical partition key as the original item that was the source of the trigger.
+> [!NOTE]
+> We are including the **categoryId** property because all items created within a post-trigger must have the same logical partition key as the original item that was the source of the trigger.
 
 We can start our function by getting both the container and HTTP response using the **getCollection()** and **getResponse()** methods. We will also get the newly created item using the **getBody()** method of the HTTP response object.
 

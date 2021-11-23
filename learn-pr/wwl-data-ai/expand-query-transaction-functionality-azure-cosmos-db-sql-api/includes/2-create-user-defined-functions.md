@@ -1,6 +1,7 @@
 User-defined functions (UDFs) are used to extend the Azure Cosmos DB SQL API’s query language grammar and implement custom business logic. UDFs can only be called from inside queries as they enhance and extend the SQL query language.
 
-> &#128221; UDFs do not have access to the context object and are meant to be used as compute-only code
+> [!NOTE]
+> UDFs do not have access to the context object and are meant to be used as compute-only code
 
 Here is an example JSON document for a product with a **name** and a **price** property.
 
@@ -33,7 +34,7 @@ UDFs extend the SQL query language by giving you small areas where you can injec
 ]
 ```
 
-A user-defined function is defined as a JavaScript function that takes in one or more scalar input\[s\] and then returns a scalar value as the output. 
+A user-defined function is defined as a JavaScript function that takes in one or more scalar input\[s\] and then returns a scalar value as the output.
 
 ```javascript
 function name(input) {

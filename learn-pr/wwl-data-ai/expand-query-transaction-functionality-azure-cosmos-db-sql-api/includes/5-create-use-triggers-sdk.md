@@ -1,6 +1,7 @@
 The **Scripts** property in the **Microsoft.Azure.Cosmos.Container** class contains a **CreateTriggerAsync** method that is used to create a new pre/post trigger from code.
 
-> &#128221; The next set of examples assume that you already have a container variable defined.
+> [!NOTE]
+> The next set of examples assume that you already have a container variable defined.
 
 ### Create a pre-trigger
 
@@ -20,7 +21,8 @@ string preTrigger = @"function addLabel() {
 }";
 ```
 
-> &#128161; Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
+> [!TIP]
+> Alternatively, you can use file APIs such as **System.IO.File** to read a function from a *.js file.
 
 Now, create an object of type **Microsoft.Azure.Cosmos.Scripts.TriggerProperties** with the **Id** and **Body** properties set to the unique identifier and content of the trigger, respectively. Set the **TriggerOperation** property to **TriggerOperation.Create** for this example, and then set the **TriggerType** property to **TriggerType.Pre**.
 
@@ -83,7 +85,8 @@ TriggerProperties properties = new()
 await container.Scripts.CreateTriggerAsync(properties);
 ```
 
-> &#128161; In these examples, we have exclusively created triggers on the **create** operation. You can also create triggers for other operations in your container.
+> [!TIP]
+> In these examples, we have exclusively created triggers on the **create** operation. You can also create triggers for other operations in your container.
 
 ### Use a trigger in an operation
 
@@ -112,7 +115,8 @@ ItemRequestOptions options = new()
 };
 ```
 
-> &#128221; Remember, triggers are not automatically executed; they must be specified for each database operation where you want them to execute.
+> [!NOTE]
+> Remember, triggers are not automatically executed; they must be specified for each database operation where you want them to execute.
 
 Now, invoke the **CreateItemAsync** method of the container object passing in the item to be created and the options object.
 
