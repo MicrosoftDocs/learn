@@ -4,7 +4,7 @@ This unit will provide best practice guidance that should be followed throughout
 
 ## Set clear participant expectations
 
-It's important to provide potential participants with detailed information on what they can expect prior to the research study or collaborative session. Providing this information ahead of time helps ensure that an informed decision can be made regarding a player's ability or willingness to participate.
+It's important to provide potential participants with detailed information on what they can expect prior to the research study or collaborative session. Providing this information ahead of time helps ensure that an informed decision can be made regarding a player's ability or willingness to work with your team.
 
 The following video outlines the key information you should include within invitations. It also provides insights on the importance of providing this information.
 
@@ -24,16 +24,16 @@ For in-person sessions, the physical spaces that participants will use must be a
 - Are the rooms being used for the study accessible and comfortable for participants? For example, small conference rooms with minimal space surrounding the conference table and chairs may be too “tight” for a wheelchair user to navigate.
 
 > [!TIP]
-> Give participants an opportunity to request more accommodations before agreeing to the study needed.
+> Give participants an opportunity to request more accommodations before agreeing to the collaborative session if needed.
 
 ### Online platforms
 
 It's just as important to ensure that any virtual meeting platforms, survey platforms, and forms used are accessible. For example, participants who are d/Deaf or hard of hearing may need live transcription of what is being said in the meeting. If the virtual meeting platform does not provide that capability, that participant will be unable to participate. Additional questions to consider include:
 
 - Do online documents and survey platforms comply with WCAG 2.1 web accessibility standards? Examples include the following:
- - Is all text within a survey accessible for those using a screen reader?
- -	Do the images provide proper alternative text (alt-text) descriptions?
- -	For users who are navigating the survey by using a keyboard alone, can all mechanisms and question types be accessed?
+     - Is all text within a survey accessible for those using a screen reader?
+     -	Do the images provide proper alternative text (alt-text) descriptions?
+     -	For users who are navigating the survey by using a keyboard alone, can all mechanisms and question types be accessed?
 
 > [!NOTE]
 > Common inaccessible survey mechanisms include questions where participants are asked to drag and drop elements to rank a list of items and dropdown lists.

@@ -34,6 +34,6 @@ quiz:
     - content: "These groups may be able to offer contact information or help forwarding survey links or study invitations to larger groups of disability communities."
       isCorrect: true
       explanation: "Correct. These groups may typically consist of large amounts of disability community members. Depending on the size and nature of the group, they may be willing to connect you with members who would be a good fit to participate in feedback sessions."
-    - content: "These groups may post articles or other informational documents about the community members they serve. These articles can be read to provide important data points for research initiatives."
+    - content: "These groups may post articles or other informational documents about the community members they serve. Developers can read these articles instead of engaging the community directly."
       isCorrect: false
-      explanation: "Incorrect. While these groups often have much important information about disability and accessibility on their websites, reading through these resources alone would not be considered true community collaboration in the context of game accessibility."
+      explanation: "Incorrect. While these groups often have important information about the disabilities and experiences of the groups they serve, reading through these resources alone would not be considered true community collaboration."
