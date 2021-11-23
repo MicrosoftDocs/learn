@@ -120,18 +120,18 @@ A job is a set of steps executed by an agent in a queue (or pool). Jobs are atom
 
 A job has the following attributes besides its name:
 
-1.  displayName – a friendly name.
-2.  dependsOn - a way to specify dependencies and ordering of multiple jobs.
-3.  condition – a binary expression: if it evaluates to true, the job runs; if false, the job is skipped.
-4.  strategy - used to control how jobs are parallelized.
-5.  continueOnError - to specify if the rest of the pipeline should continue or not if this job fails.
-6.  pool – the name of the pool (queue) to run this job on.
-7.  workspace - managing the source workspace.
-8.  container - for specifying a container image to execute the job in - more later.
-9.  variables – variables scoped to this job.
-10. steps – the set of steps to execute.
-11. timeoutInMinutes and cancelTimeoutInMinutes for controlling timeouts.
-12. services - sidecar services that you can spin up.
+ -  displayName – a friendly name.
+ -  dependsOn - a way to specify dependencies and ordering of multiple jobs.
+ -  condition – a binary expression: if it evaluates to true, the job runs; if false, the job is skipped.
+ -  strategy - used to control how jobs are parallelized.
+ -  continueOnError - to specify if the rest of the pipeline should continue or not if this job fails.
+ -  pool – the name of the pool (queue) to run this job on.
+ -  workspace - managing the source workspace.
+ -  container - for specifying a container image to execute the job in - more later.
+ -  variables – variables scoped to this job.
+ -  steps – the set of steps to execute.
+ -  timeoutInMinutes and cancelTimeoutInMinutes for controlling timeouts.
+ -  services - sidecar services that you can spin up.
 
 ## Dependencies
 
@@ -243,11 +243,11 @@ Downloading artifacts requires you to use the download keyword. Downloads also w
 
 What if your job requires source code in another repository? You'll need to use resources. Resources let you reference:
 
-1.  other repositories
-2.  pipelines
-3.  builds (classic builds)
-4.  containers (for container jobs)
-5.  packages
+ -  other repositories
+ -  pipelines
+ -  builds (classic builds)
+ -  containers (for container jobs)
+ -  packages
 
 To reference code in another repo, specify that repo in the resources section and then reference it via its alias in the checkout step:
 

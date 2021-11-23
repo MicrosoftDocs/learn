@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 11/23/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
@@ -21,32 +22,32 @@ quiz:
     choices:
     - content: "steps."
       isCorrect: false
-      explanation: "That is incorrect. You can define dependencies between jobs using the dependensOn."
+      explanation: "Incorrect. You can define dependencies between jobs using the dependensOn."
     - content: "dependsOn."
       isCorrect: true
-      explanation: "That is correct. You can define dependencies between jobs using the dependensOn."
+      explanation: "Correct. You can define dependencies between jobs using the dependensOn."
     - content: "condition."
       isCorrect: false
-      explanation: "That is incorrect. You can define dependencies between jobs using the dependensOn."
-  - content: "Which of the following choices is responsible for always initiating the communication between Azure Pipelines and its agent?"
+      explanation: "Incorrect. You can define dependencies between jobs using the dependensOn."
+  - content: "Which of the following choices is responsible for always starting the communication between Azure Pipelines and its agent?"
     choices:
     - content: "Service Hook."
       isCorrect: false
-      explanation: "That is incorrect. The Agent always initiates the communication with Azure Pipelines."
+      explanation: "Incorrect. The Agent always initiates the communication with Azure Pipelines."
     - content: "Azure Pipelines."
       isCorrect: false
-      explanation: "That's incorrect. The Agent always initiates the communication with Azure Pipelines."
+      explanation: "Incorrect. The Agent always initiates the communication with Azure Pipelines."
     - content: "Agent."
       isCorrect: true
-      explanation: "That is correct. The Agent always initiates the communication with Azure Pipelines."
+      explanation: "Correct. The Agent always initiates the communication with Azure Pipelines."
   - content: "Which of the following choices describes a reason for installing an agent using interactive mode?"
     choices:
     - content: "To run UI Tests."
       isCorrect: true
-      explanation: "That's correct. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
+      explanation: "Correct. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
     - content: "To run Java pipelines."
       isCorrect: false
-      explanation: "That's incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
+      explanation: "Incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
     - content: "To communicate with cloud environments from on-premises agents (self-hosted)."
       isCorrect: false
-      explanation: "That's incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
+      explanation: "Incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."

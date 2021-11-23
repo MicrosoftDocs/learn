@@ -14,7 +14,7 @@ There's also a use case for not checking out any repository in the pipeline. It 
 
 ## Specify multiple repositories
 
-Repositories can be specified as a repository resource or inline with the checkout step. Supported repositories are Azure Repos Git (git), GitHub (github), and BitBucket Cloud (bitbucket).
+Repositories can be specified as a repository resource or inline with the checkout step. Supported repositories are Azure Repos Git, GitHub, and BitBucket Cloud.
 
 The following combinations of checkout steps are supported.
 
