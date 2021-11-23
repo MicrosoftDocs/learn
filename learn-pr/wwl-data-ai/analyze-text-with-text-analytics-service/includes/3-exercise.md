@@ -1,14 +1,14 @@
 Natural Language Processing (NLP) is a branch of artificial intelligence (AI) that deals with written and spoken language. You can use NLP to build solutions that extracting semantic meaning from text or speech, or that formulate meaningful responses in natural language.
 
-Microsoft Azure *Cognitive Services* includes the *Text Analytics* service, which provides some out-of-the-box NLP capabilities, including the identification of key phrases in text, and the classification of text based on sentiment.
+Microsoft Azure *Cognitive Services* includes the text analytics capabilities in the *Language* service, which provides some out-of-the-box NLP capabilities, including the identification of key phrases in text, and the classification of text based on sentiment.
 
-For example, suppose the fictional *Margie's Travel* organization encourages customers to submit reviews for hotel stays. You could use the Text Analytics service to summarize the reviews by extracting key phrases, determine which reviews are positive and which are negative, or analyze the review text for mentions of known entities such as locations or people.
+For example, suppose the fictional *Margie's Travel* organization encourages customers to submit reviews for hotel stays. You could use the Language service to summarize the reviews by extracting key phrases, determine which reviews are positive and which are negative, or analyze the review text for mentions of known entities such as locations or people.
 
-To test the capabilities of the Text Analytics service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Language service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 ## Create a *Cognitive Services* resource
 
-You can use the Text Analytics service by creating either a **Text Analytics** resource or a **Cognitive Services** resource.
+You can use the Language service by creating either a **Language** resource or a **Cognitive Services** resource.
 
 If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
@@ -32,7 +32,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 ## Run Cloud Shell 
 
-To test the capabilities of the Text Analytics service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
+To test the text analytics capabilities of the Language service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
 1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
 
@@ -55,7 +55,7 @@ To test the capabilities of the Text Analytics service, we'll use a simple comma
 
 ## Configure and run a client application
 
-Now that you have a custom model, you can run a simple client application that uses the Text Analytics service.
+Now that you have a custom model, you can run a simple client application that uses the Language service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -73,9 +73,9 @@ Now that you have a custom model, you can run a simple client application that u
  
     ![The code editor.](../media/powershell-portal-guide-4.png) 
 
-3. In the **Files** pane on the left, expand **ai-900** and select **analyze-text.ps1**. This file contains some code that uses the Text Analytics service:
+3. In the **Files** pane on the left, expand **ai-900** and select **analyze-text.ps1**. This file contains some code that uses the Language service:
 
-    ![The editor containing code to use the Text Analytics service](../media/analyze-text-code.png)
+    ![The editor containing code to use the Language service](../media/analyze-text-code.png)
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
 
@@ -91,7 +91,7 @@ Now that you have a custom model, you can run a simple client application that u
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
-    The sample client application will use Cognitive Services' Text Analytics service to detect language, extract key phrases, determine sentiment, and extract known entities for reviews. 
+    The sample client application will use Cognitive Services' Language service to detect language, extract key phrases, determine sentiment, and extract known entities for reviews. 
 
 6. In the Cloud Shell, enter the following command to run the code:
 
@@ -154,7 +154,7 @@ Now that you have a custom model, you can run a simple client application that u
 
 ## Learn more
 
-This simple app shows only some of the capabilities of the Text Analytics service. To learn more about what you can do with this service, see the [Text Analytics page](/azure/cognitive-services/text-analytics/).
+This simple app shows only some of the capabilities of the Language service. To learn more about what you can do with this service, see the [Language service page](https://azure.microsoft.com/services/cognitive-services/language-service/).
 
 
 
