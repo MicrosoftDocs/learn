@@ -29,5 +29,5 @@ Before you can get started creating an immersive experience for Windows Mixed Re
 
 ## Switch the build platform
 
-[[!INCLUDE[Procedure to switch the build platform](includes/switch-build-platform.md)]
+[!INCLUDE[Procedure to switch the build platform](includes/switch-build-platform.md)]
 
