@@ -6,7 +6,8 @@ metadata:
   title: View, run, and debug tests
   description: Learn how to view, run, and debug tests in Visual Studio.
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.date: 07/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
