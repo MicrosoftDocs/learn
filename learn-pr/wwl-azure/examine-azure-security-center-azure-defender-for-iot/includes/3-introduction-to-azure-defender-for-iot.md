@@ -2,7 +2,7 @@ Azure Defender for IoT is a component within Security Center's integrated cloud 
 
 ## Azure Defender for IoT options
 
-Azure Defender for IoT offers two sets of capabilities to fit your environment's needs, one for "end-user organizations" and one for "device builders".<br>
+Azure Defender for IoT offers two sets of capabilities to fit your environment's needs, one for "end-user organizations" and one for "device builders".
 
 For end-user organizations with IoT/OT environments, Azure Defender for IoT delivers agentless, network-layer monitoring that:
 
@@ -24,7 +24,7 @@ The agent-based option of Azure Defender for IoT includes the following componen
 
 The Azure Defender for IoT agent-based solution is implemented using the following architecture:
 
-:::image type="content" source="../media/m10-l02-security-center-azure-iot-security-architecture-a62fe9bb.png" alt-text="Security Center - Azure IoT Security Architecture":::
+:::image type="content" source="../media/m10-l02-security-center-azure-iot-security-architecture-a62fe9bb.png" alt-text="Diagram that shows Azure Defender for IoT micro agent within a security architecture.":::
 
 
 > [!NOTE]

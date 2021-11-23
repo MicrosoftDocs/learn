@@ -11,5 +11,3 @@ To help you protect yourself against these challenges, Security Center provides 
  -  Strengthen security posture: Security Center assesses your environment and enables you to understand the status of your resources, and whether they are secure.
  -  Protect against threats: Security Center assesses your workloads and raises threat prevention recommendations and threat detection alerts.
  -  Get secure faster: In Security Center, everything is done in cloud speed. Because it is natively integrated, deployment of Security Center is easy, providing you with autoprovisioning and protection with Azure services.
-
-## 

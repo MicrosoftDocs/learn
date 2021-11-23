@@ -20,7 +20,7 @@ The built-in capabilities of Azure Defender for IoT are enabled by default when 
 
 Installing Azure Defender for IoT micro agents on your devices provides enhanced capabilities. The micro agents collect, aggregate, and analyze raw security events from your devices. Raw security events can include IP connections, process creation, user logins, and other security-relevant information. Azure Defender for IoT micro agents also handle event aggregation to help avoid high network throughput. The agents are highly customizable, allowing you to use them for specific tasks, such as sending only important information at the fastest SLA, or for aggregating extensive security information and context into larger segments, avoiding higher service costs.
 
-:::image type="content" source="../media/m10-l02-security-center-azure-iot-security-architecture-a62fe9bb.png" alt-text="Security Center -":::
+:::image type="content" source="../media/m10-l02-security-center-azure-iot-security-architecture-a62fe9bb.png" alt-text="Diagram that shows Azure Defender for IoT micro agent within a security architecture.":::
 
 
 Micro agents, and other applications use the Azure send security message SDK to send security information into Azure IoT Hub. IoT Hub picks up this information and forwards it to the Azure Defender for IoT service.

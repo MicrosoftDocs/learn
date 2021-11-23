@@ -2,7 +2,7 @@ Azure Defender for IoT continuously analyzes your IoT solution using advanced an
 
 The following list of built-in alerts can be triggered on your IoT Hub.
 
-## Built-in alerts for IoT Hub<br>
+## Built-in alerts for IoT Hub
 
 :::row:::
   :::column:::
