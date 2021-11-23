@@ -31,14 +31,14 @@ The `edgeHubDev` container is the core of the local IoT Edge simulator. It can r
 
 1.  Prepare your environment for debugging according to the requirements of your development language (C\# in this case), set a breakpoint in your module, and select the debug configuration to use:
     
-     -  In the Visual Studio Code integrated terminal, change the directory to the `<your module name>` folder, and then run the following command to build .NET Core application.
+    1.  In the Visual Studio Code integrated terminal, change the directory to the `<your module name>` folder, and then run the following command to build .NET Core application.
         
         ```cmd
         dotnet build
         
         ```
-     -  Open the file `Program.cs` and add a breakpoint.
-     -  Navigate to the Visual Studio Code Debug view by selecting **View** &gt; **Debug**. Select the debug configuration ***&lt;your module name&gt;* Local Debug (.NET Core)** from the dropdown.
+    2.  Open the file `Program.cs` and add a breakpoint.
+    3.  Navigate to the Visual Studio Code Debug view by selecting **View** &gt; **Debug**. Select the debug configuration ***&lt;your module name&gt;* Local Debug (.NET Core)** from the dropdown.
         
         > [!NOTE]
         > If your .NET Core \`TargetFramework\` is not consistent with your program path in \`launch.json\`, you'll need to manually update the program path in \`launch.json\` to match the \`TargetFramework\` in your .csproj file so that Visual Studio Code can successfully launch this program.
@@ -50,16 +50,16 @@ curl --header "Content-Type: application/json" --request POST --data '{"inputNam
 
 ```
 
-> [!NOTE]
-> If you are using Windows, making sure the shell of your Visual Studio Code integrated terminal is \*\*Git Bash\*\* or \*\*WSL Bash\*\*. You cannot run the \`curl\` command from a PowerShell or command prompt.
+    > [!NOTE]
+    > If you are using Windows, making sure the shell of your Visual Studio Code integrated terminal is \*\*Git Bash\*\* or \*\*WSL Bash\*\*. You cannot run the \`curl\` command from a PowerShell or command prompt.
 
-> [!TIP]
-> You can also use the PostMan tool or other API tools to send messages instead of using curl.
+    > [!TIP]
+    > You can also use the PostMan tool or other API tools to send messages instead of using curl.
 
-1.  In the Visual Studio Code Debug view, you'll see the variables in the left panel.
-2.  To stop your debugging session, select the **Stop** button or press **Shift** \+ **F5**, and then run **Azure IoT Edge: Stop IoT Edge Simulator** in the command palette to stop the simulator and clean up.
+4.  In the Visual Studio Code Debug view, you'll see the variables in the left panel.
+5.  To stop your debugging session, select the **Stop** button or press **Shift** \+ **F5**, and then run **Azure IoT Edge: Stop IoT Edge Simulator** in the command palette to stop the simulator and clean up.
 
-## Debug in attach mode with IoT Edge simulator (C\#)
+## Debug in attach mode with IoT Edge simulator (C\#)<br>
 
 Your default solution contains two modules, one is a simulated temperature sensor module and the other is the pipe module. The simulated temperature sensor sends messages to the pipe module and then the messages are piped to the IoT Hub. In the module folder you created, there are several Docker files for different container types. Use any of the files that end with the extension .debug to build your module for testing.
 
@@ -101,15 +101,15 @@ When debugging modules using this method, your modules are running on top of the
 1.  In Visual Studio Code, open the `deployment.debug.template.json` file, which contains the debug version of your module images with the proper `createOptions` values set.
 2.  In the Visual Studio Code command palette:
     
-     -  Run the command **Azure IoT Edge: Build and Push IoT Edge solution**.
-     -  Select the `deployment.debug.template.json` file for your solution.
+    1.  Run the command **Azure IoT Edge: Build and Push IoT Edge solution**.
+    2.  Select the `deployment.debug.template.json` file for your solution.
 3.  In the **Azure IoT Hub Devices** section of the Visual Studio Code Explorer view:
     
-     -  Right-click an IoT Edge device ID and then select **Create Deployment for Single Device**.
+    1.  Right-click an IoT Edge device ID and then select **Create Deployment for Single Device**.
         
         > [!TIP]
         > To confirm that the device you've chosen is an IoT Edge device, select it to expand the list of modules and verify the presence of \`$edgeHub\` and \`$edgeAgent\`. Every IoT Edge device includes these two modules.
-     -  Navigate to your solution's **config** folder, select the `deployment.debug.amd64.json` file, and then select **Select Edge Deployment Manifest**.
+    2.  Navigate to your solution's **config** folder, select the `deployment.debug.amd64.json` file, and then select **Select Edge Deployment Manifest**.
 
 You'll see the deployment successfully created with a deployment ID in the integrated terminal.
 
@@ -122,8 +122,8 @@ You can skip this section if your modules are running on the same machine as Vis
 > [!NOTE]
 > If your modules and Visual Studio Code are running on separate machines, follow the instructions (for C\#, including Azure Functions) below:
 
- -  Complete the steps provided here: Configure the SSH channel on your development machine and IoT Edge device [https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes](https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes).
- -  And then edit the `launch.json` file to attach.
+1.  Complete the steps provided here: Configure the SSH channel on your development machine and IoT Edge device [https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes](https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes).
+2.  And then edit the `launch.json` file to attach.
 
 ### Debug your module
 
