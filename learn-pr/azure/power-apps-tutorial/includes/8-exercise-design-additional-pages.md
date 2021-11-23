@@ -227,6 +227,10 @@ It is allowed to take pictures during the **View in MR** session and display the
     >[!Note]
     >The names used in the above function follow the namings used in this application at the time of development. You may customize the function concerning your application.
 
+Implementing the above steps must make your application work in the following way.
+
+:::image type="content" source="../media/application-demo-4.gif" alt-text="application demo after adding additional pages and email functionality" lightbox="../media/application-demo-4.gif":::
+
 ## Test your application in mobile device
 
 1. Choose the download link for your device:
