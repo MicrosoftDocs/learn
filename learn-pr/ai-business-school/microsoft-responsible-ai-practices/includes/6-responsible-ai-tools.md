@@ -12,21 +12,21 @@ Outlined in this unit are some tools that we have found helpful in implementing 
 
 Security and privacy are key pillars of trust. There are a number of emerging tools to help protect security and privacy in AI systems. Techniques like homomorphic encryption, multi-party computation (MPC), and differential privacy make it possible to train AI models using private data without sharing it.<sup>9</sup> For example, with MPC we can build a system that analyzes data from three different hospitals without any of them gaining access to each other’s health data. Secure execution environments on public cloud platforms protect data inside a Trusted Execution Environment (TEE), also known as an enclave, so that data scientists can’t view or modify it, but they can still train AI models with it. Once the AI system is built, you can also use technologies like Counterfit to conduct AI security risk assessments.
 
-Implementing security and privacy in your organization:
-
 :::row:::
 :::column span="2":::
-|Resource type|Details|
-|---|---|
-|Guidelines|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>10</sup> The AI Security Guidelines will provide you with findings that can protect your AI Services with guidance materials.|
-|Technology tools|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>11</sup> Counterfit—an open-source tool to help organizations assess AI security risks, allowing developers to ensure that their algorithms are robust, reliable, and trustworthy.<sup>12</sup> SmartNoise—a differential privacy tool that adds a carefully tuned amount of statistical noise to sensitive data, helping to protect data used in AI systems by preventing reidentification.<sup>13</sup> Presidio— an open-source library for data protection and anonymization for text and images.<sup>14</sup> Azure confidential computing— provides data security using trusted execution environments or encryption, providing protection of sensitive data across the machine learning life cycle.<sup>15</sup> Look into other technologies like multi-party computation (MPC), homomorphic encryption, differential privacy, and secure execution environments to see if they’re right for your use case.|
-|Third-party tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>16</sup>|
+Implementing security and privacy in your organization:
 :::column-end:::
 :::column:::
 > [!TIP]
 > You can find links to these resources in the summary and resources section of this module.
 :::column-end:::
 :::row-end:::
+
+|Resource type|Details|
+|---|---|
+|Guidelines|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>10</sup> The AI Security Guidelines will provide you with findings that can protect your AI Services with guidance materials.|
+|Technology tools|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>11</sup> Counterfit—an open-source tool to help organizations assess AI security risks, allowing developers to ensure that their algorithms are robust, reliable, and trustworthy.<sup>12</sup> SmartNoise—a differential privacy tool that adds a carefully tuned amount of statistical noise to sensitive data, helping to protect data used in AI systems by preventing reidentification.<sup>13</sup> Presidio— an open-source library for data protection and anonymization for text and images.<sup>14</sup> Azure confidential computing— provides data security using trusted execution environments or encryption, providing protection of sensitive data across the machine learning life cycle.<sup>15</sup> Look into other technologies like multi-party computation (MPC), homomorphic encryption, differential privacy, and secure execution environments to see if they’re right for your use case.|
+|Third-party tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>16</sup>|
 
 ## Fairness
 
