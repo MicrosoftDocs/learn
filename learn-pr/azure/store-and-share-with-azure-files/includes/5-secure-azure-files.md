@@ -17,7 +17,7 @@ When you mount Azure file shares, Windows needs to communicate over port 445. Or
 
 To limit access to your on-premises networks, you'll need to configure IP-based firewall rules. Therefore, you need to know your public-facing IP address. With this information, you can enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either via the Azure portal, by running a PowerShell command, or by running an Azure CLI command.
 
-    PowerShell command to configure firewall access for a storage account.
+PowerShell command to configure firewall access for a storage account.
 
     ```powershell
     Add-AzStorageAccountNetworkRule `
@@ -26,7 +26,7 @@ To limit access to your on-premises networks, you'll need to configure IP-based 
         -IPAddressOrRange "NNN.NNN.NNN.NNN"
     ```
 
-    Azure CLI command to configure firewall access for a storage account.
+Azure CLI command to configure firewall access for a storage account.
 
     ```azurecli
     az storage account network-rule add \
@@ -43,11 +43,11 @@ Running the commands in the previous section creates an Azure storage account wi
 
 If you created file shares without secure transfer enabled, it's easy to enable this feature either in the portal, by running a PowerShell command, or by running an Azure CLI command.
 
-    Azure portal configuration to enable secure transfer for storage accounts. 
+Azure portal configuration to enable secure transfer for storage accounts. 
 
     :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
 
-    PowerShell command to enable secure transfer for a storage account.
+PowerShell command to enable secure transfer for a storage account.
 
     ```powershell
     Set-AzStorageAccount `
@@ -56,7 +56,7 @@ If you created file shares without secure transfer enabled, it's easy to enable 
         -EnableHttpsTrafficOnly $True
     ```
 
-    Azure CLI command to enable secure transfer for a storage account.
+Azure CLI command to enable secure transfer for a storage account.
 
     ```azurecli
     az storage account update \
