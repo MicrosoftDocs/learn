@@ -8,6 +8,7 @@ metadata:
   ms.date: 09/30/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
 title: Manage secrets in Java applications - Zero Trust and Zero Secrets
 summary: Learn best practices to secure your Java applications on Azure, and apply them using Azure Key Vault.
 abstract: | 
