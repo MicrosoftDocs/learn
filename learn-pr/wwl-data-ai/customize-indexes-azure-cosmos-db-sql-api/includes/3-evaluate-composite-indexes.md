@@ -20,7 +20,8 @@ If the query is able to use a composite index, that includes both the **name** a
 
 - ``(name DESC, price ASC)``
 
-> &#128221; In this example, the range filter appeared last. This is a best practice for queries with multiple filters that leverage a composite index.
+> [!NOTE]
+> In this example, the range filter appeared last. This is a best practice for queries with multiple filters that leverage a composite index.
 
 Going even deeper, queries that order the results using multiple properties must include a composite index.
 
@@ -36,7 +37,8 @@ The composite index that will support this query must exactly match the sequence
 
 - ``(price DESC, name ASC)``
 
-> &#128161; You can also use composite indexes with queries that have different permutations of filters and order by clauses.
+> [!TIP]
+> You can also use composite indexes with queries that have different permutations of filters and order by clauses.
 
 To create a raw JSON indexing policy with a composite index, you should include the optional **compositeIndexes** array property. This external array consists of a series of internal arrays for each composite index definition.
 
@@ -74,4 +76,5 @@ For example, to create a composite index of ``(name ASC, price DESC)``, you can 
 }
 ```
 
-> &#128161; Remember, you can define multiple composite indexes within your indexing policy for various important queries that your application\[s\] require.
+> [!TIP]
+> Remember, you can define multiple composite indexes within your indexing policy for various important queries that your application\[s\] require.
