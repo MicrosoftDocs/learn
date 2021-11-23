@@ -41,7 +41,7 @@ Implementing fairness in your organization:
 |Resource type|Details|
 |---|---|
 |Guidelines|There are some great papers that can help you in this journey: Utilize the AI Fairness checklist to provide structure for improving ad-hoc processes and empowering advocates. For more information on how to assess the fairness of AI models, watch the NIPS keynote address from Kate Crawford, Principle Researcher at Microsoft and Co-founder of the AI Now Institute at NYU.<sup>20</sup> To understand the unique challenges regarding fairness in machine learning, watch a free Microsoft webinar on Machine Learning and Fairness.<sup>21</sup> 
-|Technology tools|Plus look for a Python package for the FairLearn approach on GitHub..<sup>22</sup>| Use FairLearn to assess your AI systems and mitigate any negative impacts towards groups of people. Leverage the methodology for reducing bias in word embedding.|
+|Technology tools|Plus look for a Python package for the FairLearn approach on GitHub.<sup>22</sup> Use FairLearn to assess your AI systems and mitigate any negative impacts towards groups of people. Leverage the methodology for reducing bias in word embedding.|
 |Third-party tools|Learn how to avoid five key “traps” of fair-ML work in a paper from the ACM Conference entitled Fairness and Abstraction in Sociotechnical Systems;<sup>23</sup> or read the Counterfactual Fairness paper from Cornell University.<sup>24</sup> Check out the Aequitas open-source toolkit.|
 
 ## Inclusiveness
