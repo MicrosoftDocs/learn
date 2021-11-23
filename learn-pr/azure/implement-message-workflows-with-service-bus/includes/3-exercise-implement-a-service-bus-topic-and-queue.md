@@ -11,7 +11,7 @@ In this exercise, you'll create a Service Bus namespace, which will contain both
 
 ## Create a Service Bus namespace
 
-Start by creating the namespace. In Azure Service Bus, a namespace is a container for queues, topics, and relays. Each namespace has a unique, fully-qualified domain name, with primary and secondary shared access signature (SAS) encryption keys. A sending or receiving component must provide a SAS key to gain access to objects in a namespace.
+Start by creating the namespace. In Azure Service Bus, a namespace is a container for queues, topics, and relays. Each namespace has a unique, fully qualified domain name, with primary and secondary shared access signature (SAS) encryption keys. A sending or receiving component must provide a SAS key to gain access to objects in a namespace.
 
 To create a Service Bus namespace using the Azure portal, follow these steps:
 
@@ -27,10 +27,10 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
     | ------- | --- | ---- |
     | **Project Details** |
     | Subscription | Concierge subscription | The subscription under which this new function app is created. |
-    | Resource group | <rgn>[sandbox resource group name]</rgn> | Name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the resource group that was assigned when we activated the sandbox. |
+    | Resource group | <rgn>[Sandbox resource group name]</rgn> | Name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the resource group that was assigned when we activated the sandbox. |
     | **Instance Details** |
-    | Namespace name | [Globally unique name] | Enter a name that is unique within Azure, for example, _salesteamapp_ + _your initials_ + _current date_. |
-    | Location | Select from the dropdown list | You must choose from the free *Sandbox regions* listed below. |
+    | Namespace name | [Globally unique name] | Enter a name that is unique within Azure.<br>If you want to use this format, _salesteamapp_<_Company_><_year_> your Namespace name would look like this: _salesteamappContoso2021_ |
+    | Location | Select from the dropdown list | Choose from the free *Sandbox regions* listed below. |
     | Pricing tier | Standard | The recommended pricing tier for this exercise. |
 
     [!INCLUDE[Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -55,7 +55,7 @@ To create a Service Bus queue:
     
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with Queue and Create highlighted.":::
 
-1. In the **Name** text box, enter **salesmessages**, and then select **Create**.  
+1. In the **Name** text box, enter _salesmessages_, and then select **Create**.  
     
     When the message queue has been created, **salesmessages** is listed under the **Queues** tab at the bottom of the Service Bus Namespace pane.
 
@@ -89,4 +89,4 @@ To add a Service Bus topic and subscriptions:
 
     The Subscriptions section of the `salesperformancemessages` Service Bus Topic for your sales team app now lists two subscriptions.
   
-You have built the infrastructure to use a Service Bus to increase the resilience of your distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic so topic messages can be delivered to multiple web services around the world.
+You have built the infrastructure to use a Service Bus to increase the resilience of your distributed application. You've created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic so topic messages can be delivered to multiple web services around the world.
