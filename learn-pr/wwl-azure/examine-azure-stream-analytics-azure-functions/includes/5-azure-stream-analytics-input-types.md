@@ -1,6 +1,6 @@
 Azure Stream Analytics jobs connect to one or more data inputs. Each input defines a connection to an existing data source. Stream Analytics accepts data incoming from several kinds of event sources including Event Hubs, IoT Hub, Azure Data Lake Storage Gen2, and Blob storage. The inputs are referenced by name in the streaming SQL query that you write for each job. In the query, you can join multiple inputs to blend data or compare streaming data with a lookup to reference data, and pass the results to outputs.
 
-Input resources can live in the same Azure subscription as your Stream Analytics job, or they can come from a different subscription.<br>
+Input resources can live in the same Azure subscription as your Stream Analytics job, or they can come from a different subscription.
 
 You can use the Azure portal, Azure PowerShell, .NET API, REST API, and Visual Studio to create, edit, and test Stream Analytics job inputs.
 

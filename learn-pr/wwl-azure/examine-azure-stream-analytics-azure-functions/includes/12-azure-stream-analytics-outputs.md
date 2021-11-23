@@ -4,7 +4,7 @@ When you design your Stream Analytics query, refer to the name of the output by 
 
 Some output types support partitioning. Output batch sizes vary to optimize throughput.
 
-## Blob storage and Azure Data Lake Gen2<br>
+## Blob storage and Azure Data Lake Gen2
 
 Data Lake Storage Gen2 makes Azure Storage the foundation for building enterprise data lakes on Azure. Designed from the start to service multiple petabytes of information while sustaining hundreds of gigabits of throughput, Data Lake Storage Gen2 allows you to easily manage massive amounts of data. A fundamental part of Data Lake Storage Gen2 is the addition of a hierarchical namespace to Blob storage.
 

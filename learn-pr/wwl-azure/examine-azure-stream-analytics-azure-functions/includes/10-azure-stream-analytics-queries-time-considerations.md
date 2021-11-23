@@ -292,7 +292,7 @@ In this illustration, the following tolerances are used:
  -  Reorder window is 2 minutes.
 
 1.  Illustration of watermark progressing through these events: :::image type="content" source="../media/m04-l05-asa-queries-time-handling-watermark-graph-1-2624df3e.png" alt-text="Diagram that shows how a Watermark event time marker progresses through events.":::
-     Notable processes illustrated in the preceding graphic:
+    <br>Notable processes illustrated in the preceding graphic:
     
      -  The first event (device1), and second event (device2) have aligned times and are processed without adjustments. The watermark progresses on each event.
      -  When the third event (device1) is processed, the arrival time (12:11) precedes the event time (12:17). The event arrived 6 minutes early, so the event is dropped due to the 5-minute early arrival tolerance.
@@ -303,6 +303,6 @@ In this illustration, the following tolerances are used:
      -  When the sixth event (device3) is processed, the arrival time (12:17) and the event time (12:12) is below the watermark level. The event time is adjusted to the water mark level (12:17).
      -  When the twelfth event (device3) is processed, the arrival time (12:27) is 6 minutes ahead of the event time (12:21). The late arrival policy is applied. The event time is adjusted (12:22), which is above the watermark (12:21) so no further adjustment is applied.
 2.  Second illustration of watermark progressing without an early arrival policy: :::image type="content" source="../media/m04-l05-asa-queries-time-handling-watermark-graph-2-93f8f93a.png" alt-text="Diagram that shows how a Watermark event time marker progresses through events without an early arrival policy.":::
-     In this example, no early arrival policy is applied. Outlier events that arrive early raise the watermark significantly. Notice the third event (deviceId1 at time 12:11) is not dropped in this scenario, and the watermark is raised to 12:15. The fourth event time is adjusted forward 7 minutes (12:08 to 12:15) as a result.
+    <br>In this example, no early arrival policy is applied. Outlier events that arrive early raise the watermark significantly. Notice the third event (deviceId1 at time 12:11) is not dropped in this scenario, and the watermark is raised to 12:15. The fourth event time is adjusted forward 7 minutes (12:08 to 12:15) as a result.
 3.  In the final illustration, substreams are used (OVER the DeviceId). Multiple watermarks are tracked, one per stream. There are fewer events with their times adjusted as a result. :::image type="content" source="../media/m04-l05-asa-queries-time-handling-watermark-graph-3-a5212b12.png" alt-text="Diagram that shows how to use a Watermark event time marker with sub-streams where watermarks are tracked.":::
     
