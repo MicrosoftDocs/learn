@@ -6,71 +6,78 @@ In this unit, you'll investigate ways to secure access to Azure file shares from
 
 ## Secure access from on-premises
 
-Azure file shares only support mounting them from SMB version 3.0. There are known vulnerabilities with SMB 1.0. Microsoft recommends you either uninstall or disable this version from all the machines you're responsible for.
+Azure file shares only support mounting them from Server Message Block (SMB) protocol. Microsoft recommends you use SMB version 3.0. 
 
-If you need to remove SMB 1, use this PowerShell command: `Remove-WindowsFeature -Name FS-SMB1`.
+> [!WARNING]
+> There are known vulnerabilities with SMB 1.0. Microsoft recommends you either uninstall or disable version 1.0 from all the machines you're responsible for. With SMB 1.0 disabled, the risk of an SMB-based attack dramatically reduces. If you need to remove SMB 1.0, use this PowerShell command: `Remove-WindowsFeature -Name FS-SMB1`.
 
-When you mount Azure file shares, Windows needs to communicate over port 445. Organizations can block network access over 445 by default. If your organization has this policy, consider requesting to open the port. There's nothing inherently insecure about this specific port. With SMB 1 disabled, the risk of an SMB-based attack dramatically reduces.
+When you mount Azure file shares, Windows needs to communicate over port 445. Organizations can block network access over 445 by default. If your organization has this policy, consider requesting to open the port. There's nothing inherently insecure about this specific port. 
 
 ### Configure IP-based firewall rules
 
-To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal, or by running a PowerShell command.
+To limit access to your on-premises networks, you'll need to configure IP-based firewall rules. Therefore, you need to know your public-facing IP address. With this information, you can enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either via the Azure portal, by running a PowerShell command, or by running an Azure CLI command.
 
-```powershell
-Add-AzStorageAccountNetworkRule `
-    -ResourceGroupName "myresourcegroup" `
-    -AccountName "mystorageaccount" `
-    -IPAddressOrRange "NNN.NNN.NNN.NNN"
-```
+    PowerShell command to configure firewall access for a storage account.
 
-Or, you could run a CLI command.
+    ```powershell
+    Add-AzStorageAccountNetworkRule `
+        -ResourceGroupName "myresourcegroup" `
+        -AccountName "mystorageaccount" `
+        -IPAddressOrRange "NNN.NNN.NNN.NNN"
+    ```
 
-```azurecli
-az storage account network-rule add \
-    --resource-group "myresourcegroup" \
-    --account-name "mystorageaccount" \
-    --ip-address "NNN.NNN.NNN.NNN"
-```
+    Azure CLI command to configure firewall access for a storage account.
+
+    ```azurecli
+    az storage account network-rule add \
+        --resource-group "myresourcegroup" \
+        --account-name "mystorageaccount" \
+        --ip-address "NNN.NNN.NNN.NNN"
+    ```
 
 where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
 ### Require secure transfer for all connections
 
-Running the commands in the previous exercise creates an Azure storage account with secure transfer enabled by default. If your file shares were created without this feature enabled, it's easy to do that in the portal.
+Running the commands in the previous section creates an Azure storage account with secure transfer enabled by default. 
 
-:::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
+If you created file shares without secure transfer enabled, it's easy to enable this feature either in the portal, by running a PowerShell command, or by running an Azure CLI command.
 
-Or you can automate it by running a PowerShell command.
+    Azure portal configuration to enable secure transfer for storage accounts. 
 
-```powershell
-Set-AzStorageAccount `
-    -Name "StorageAccountName" `
-    -ResourceGroupName "ResourceGroupName" `
-    -EnableHttpsTrafficOnly $True
-```
+    :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
 
-Or you could run an Azure CLI command.
+    PowerShell command to enable secure transfer for a storage account.
 
-```azurecli
-az storage account update \
-    --resource-group ResourceGroupName \
-    --name StorageAccountName \
-    --https-only true
-```
+    ```powershell
+    Set-AzStorageAccount `
+        -Name "StorageAccountName" `
+        -ResourceGroupName "ResourceGroupName" `
+        -EnableHttpsTrafficOnly $True
+    ```
+
+    Azure CLI command to enable secure transfer for a storage account.
+
+    ```azurecli
+    az storage account update \
+        --resource-group ResourceGroupName \
+        --name StorageAccountName \
+        --https-only true
+    ```
 
 The secure transfer option only allows requests to the storage account over a secure HTTPS connection. Any requests that use HTTP will be rejected. When you use Azure Files, connections without encryption will fail, even when you use SMB 2.1, SMB 3.0 without encryption, or some flavors of the Linux SMB client.
 
 ### Enable and use Azure AD DS authentication
 
-The finance company is running their new reporting application on a VM hosted on Azure. That's why they'd like to set up Azure AD DS authentication to access the file shares. It's something they want to do before they move more of their processing into the cloud.
+The finance company is running their new reporting application on a VM hosted on Azure. They'd like to set up Azure Active Directory Domain Services (AD DS) authentication to access the file shares before they move more of their processing into the cloud.
 
-The benefits of Azure AD DS are that you can manage access with role-based access controls. Files inherit their existing NTFS DACLs.
+The benefits of Azure AD DS are that you can manage access with role-based access controls. Files inherit their existing NTFS discretionary access control lists (DACLs).
 
-The first step in setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same virtual network. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
+The first step in setting up Azure AD DS is to enable Azure AD DS for the tenant and have the VM reside in the same virtual network. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
 
-![A diagram showing the steps in order required to set up Azure AD DS.](../media/5-azure-active-directory-over-smb-workflow.svg)
+![Diagram showing the steps required to set up Azure AD DS.](../media/5-azure-active-directory-over-smb-workflow.svg)
 
-Microsoft has created three new roles for permissions levels of access to SMB file shares for users:
+Microsoft has three permissions levels of access to SMB file share, each identified by a role:
 
 - Storage File Data SMB Share Reader
 - Storage File Data SMB Share Contributor
@@ -78,10 +85,8 @@ Microsoft has created three new roles for permissions levels of access to SMB fi
 
 ### Use share snapshots to protect against accidental deletion
 
-Share snapshots give you an extra level of security and help reduce the risk of data corruption or accidental deletion. You can also use them as a general backup for disaster recovery.
+Share snapshots give you an extra level of security and help reduce the risk of data corruption or accidental deletion. You can also use share snapshots as a general backup for disaster recovery. Snapshots are at the root level of a file share and apply to all the folders and files contained in it.
 
-The snapshots are easy to create in the Azure portal or with the REST API, client libraries, the Azure CLI, and PowerShell.
+Snapshots are easy to create in the Azure portal or with the REST API, client libraries, Azure CLI, or PowerShell.
 
-Snapshots are at the root level of a file share and apply to all the folders and files contained in it.
-
-:::image type="content" source="../media/5-create-snapshot.png" alt-text="Screenshot showing the Create Snapshot option.":::
+:::image type="content" source="../media/5-create-snapshot.png" alt-text="Screenshot showing the Snapshot option.":::
