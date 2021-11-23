@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/03/2021
+  ms.date: 11/22/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -19,9 +20,9 @@ quiz:
   questions:
   - content: "Which of the following statements best describes Azure routing?"
     choices:
-    - content: "The administrator can override existing system routes."
+    - content: "The administrator can create system routes."
       isCorrect: false
-      explanation: "That's incorrect. The administrator cannot create system routes, nor override existing system routes."
+      explanation: "That's incorrect. The administrator cannot create system routes, only user routes."
     - content: "Azure gateways are needed to route traffic between subnets."
       isCorrect: false
       explanation: "That's incorrect. Gateways are not needed to route traffic between subnets."
