@@ -10,23 +10,23 @@ To synchronize state information between a device and an IoT hub, you use device
 Consider the following "properties" section of a device twin document:
 
 ```json
-"properties": {
-    "desired": {
-        "telemetryConfig": {
-            "sendFrequency": "5m"
+    "properties": {
+        "desired": {
+            "telemetryConfig": {
+                "sendFrequency": "5m"
+            },
+            "$metadata" : {...},
+            "$version": 1
         },
-        "$metadata" : {...},
-        "$version": 1
-    },
-    "reported": {
-        "telemetryConfig": {
-            "sendFrequency": "5m",
-            "status": "success"
-        },
-        "$metadata" : {...},
-        "$version": 4
+        "reported": {
+            "telemetryConfig": {
+                "sendFrequency": "5m",
+                "status": "success"
+            },
+            "$metadata" : {...},
+            "$version": 4
+        }
     }
-}
 
 ```
 

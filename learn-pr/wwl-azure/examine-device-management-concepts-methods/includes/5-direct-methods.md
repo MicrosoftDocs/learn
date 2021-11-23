@@ -58,18 +58,18 @@ The value provided as responseTimeoutInSeconds in the request is the amount of t
 The following is a barebones example using `curl`.
 
 ```bash
-curl -X POST \
-  https://iothubname.azure-devices.net/twins/myfirstdevice/methods?api-version=2018-06-30 \
-  -H 'Authorization: SharedAccessSignature sr=iothubname.azure-devices.net&sig=x&se=x&skn=iothubowner' \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "methodName": "reboot",
-    "responseTimeoutInSeconds": 200,
-    "payload": {
-        "input1": "someInput",
-        "input2": "anotherInput"
-        }
-    }'
+    curl -X POST \
+    https://iothubname.azure-devices.net/twins/myfirstdevice/methods?api-version=2018-06-30 \
+    -H 'Authorization: SharedAccessSignature sr=iothubname.azure-devices.net&sig=x&se=x&skn=iothubowner' \
+    -H 'Content-Type: application/json' \
+    -d '{
+      "methodName": "reboot",
+      "responseTimeoutInSeconds": 200,
+      "payload": {
+          "input1": "someInput",
+          "input2": "anotherInput"
+          }
+      }'
 
 ```
 
@@ -110,10 +110,10 @@ Devices receive direct method requests on the MQTT topic: `$iothub/methods/POST/
 The body that the device receives is in the following format:
 
 ```json
-{
-    "input1": "someInput",
-    "input2": "anotherInput"
-}
+    {
+        "input1": "someInput",
+        "input2": "anotherInput"
+    }
 
 ```
 
