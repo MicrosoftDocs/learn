@@ -25,7 +25,7 @@ To follow along with this module, you'll need one of the following NVIDIA Jetson
 * [Jetson Xavier NX](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/?azure-portal=true)
 * [Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier?azure-portal=true)
 * [Jetson TX2](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-tx2/?azure-portal=true)
-* [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano//2WFE5zF?azure-portal=true)
+* [Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)
 
 ## Azure IoT Edge
 
