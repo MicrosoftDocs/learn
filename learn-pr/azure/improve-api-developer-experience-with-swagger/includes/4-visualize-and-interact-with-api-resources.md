@@ -35,7 +35,7 @@ public ActionResult<string> GetByName(string firstName, string lastName)
 Here's the XML nodes in use:
 
 - summary: A high-level summary of what the method/class/field is or does.
-- remarks: Additional detail about the method/class/field.
+- remarks: More detail about the method/class/field.
 - param: A parameter to the method, and what it represents.
 - returns: A description of what the method returns.
 
@@ -61,14 +61,14 @@ For example, if you add the following annotation to a controller:
 
 There are several data annotations you should use when describing your API.
 
-- Identify which `content-types` your API handles on requests and responses. The following specifies the only content type your API should use in both directions is `application/json`.
+- Identify which `content-types` your API handles on requests and responses. The following attribute specifies the only content type your API should use in both directions is `application/json`.
 
     ```csharp
     [Produces("application/json")]
     [Consumes("application/json")]
     ```
 
-- Identify the potential HTTP response codes that could be returned to the calling client. The following illustrates an API that could return a 404 Not Found.
+- Identify the potential HTTP response codes that could be returned to the calling client. The following attribute illustrates an API that could return a 404 Not Found.
 
     ```csharp
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -80,7 +80,7 @@ There are several data annotations you should use when describing your API.
     [ApiConventionMethod(typeof(DefaultApiConventions))]
     ```
 
-- Emit an `operationId` to significantly improve the API consumption experience including documentation, code-generation and integration with other services. You can automatically generate the `operationId` by including the `Name` property in the HTTP verb filter. 
+- Emit an `operationId` to significantly improve the API consumption experience including documentation, code generation, and integration with other services. You can automatically generate the `operationId` by including the `Name` property in the HTTP verb filter. 
 
     ```csharp
     [HttpGet("{Height}/{Width}", Name="GetPrice")]
