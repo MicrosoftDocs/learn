@@ -83,5 +83,5 @@ There are several data annotations you should use when describing your API.
 - Emit an `operationId` to significantly improve the API consumption experience including documentation, code-generation and integration with other services. You can automatically generate the `operationId` by including the `Name` property in the HTTP verb filter. 
 
     ```csharp
-    [HttpGet("{Height}/{Width}", Name="GetPrice"]
+    [HttpGet("{Height}/{Width}", Name="GetPrice")]
     ```
