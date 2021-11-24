@@ -6,7 +6,7 @@ In this exercise, you'll create a new storage account and two file shares for re
 
 ## Create a GRS storage account
 
-1. Create a storage account by copying the Azure CLI command and pasting it into Azure Cloud Shell.
+1. Create a storage account by copying the following Azure CLI commands and pasting them into Azure Cloud Shell on the right.
 
     ```azurecli
     export STORAGEACCT=learnazurefileshare$RANDOM
@@ -17,7 +17,7 @@ In this exercise, you'll create a new storage account and two file shares for re
         --sku Standard_GRS
     ```
 
-1. Using Azure CLI commands, save the storage account key in a local variable.
+1. Copy and paste this Azure CLI command to save the storage account key in a local variable.
 
     ```azurecli
     STORAGEKEY=$(az storage account keys list \
@@ -28,7 +28,7 @@ In this exercise, you'll create a new storage account and two file shares for re
 
 ## Create file shares
 
-1. Create a file share to store the finance company's reports.
+1. Copy and paste this command to create a file share to store the finance company's reports. This command returns a `created` status.
 
     ```azurecli
     az storage share create \
@@ -37,7 +37,7 @@ In this exercise, you'll create a new storage account and two file shares for re
         --name "reports"
     ```
 
-1. Create a file share to store the finance company's application data.
+1. Copy and paste this command to create a file share to store the finance company's application data. This command returns a `created` status.
 
     ```azurecli
     az storage share create \
@@ -62,7 +62,7 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. When the virtual machine has been created, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 
-1. On the home page, under **All services**, select **Virtual machines**, and then select the **2019FileServer** VM you created in step 1 of this task. The **2019 FileServer** Virtual machine pane appears.
+1. From the resource menu or on the home page, under **All services**, select **Virtual machines**, and then select the **2019FileServer** VM you created in step 1 of this task. The Overview pane for **2019 FileServer** Virtual machine appears.
 
 1. On the command bar, select **Connect** > **RDP**, and then select **Download RDP File**.
 
@@ -77,19 +77,19 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 ## Map drives to the Azure file shares
 
-1. In the Azure portal, in the top *Search resources, services, and docs* search box, search for and select **Storage accounts**.
+1. In the Azure portal, in the global search bar at the top of the page, search for and select **Storage accounts**.
 
-1. Select the storage account that you created, which should be named **learnazurefileshare** followed by random numbers. That storage account pane appears.
+1. Select the storage account that you created earlier; look for a storage account named **learnazurefileshare** followed by random numbers. The storage account pane appears.
 
-1. In the middle menu pane, under **Data storage**, select **File shares**.
+1. In the Storage account menu, under **Data storage**, select **File shares**.
 
-    :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot storage account menu with file shares highlighted." lightbox="../media/4-select-file-shares.png#lightbox":::
+    :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot of storage account menu with file shares highlighted." lightbox="../media/4-select-file-shares.png":::
 
     The **File shares** pane for your storage account appears with two file shares.
 
 1. In the file shares list, select **data**. The **data** file share pane appears.
 
-    :::image type="content" source="../media/4-select-data.png" alt-text="Screenshot of the file shares in the storage account." lightbox="../media/4-select-data.png#lightbox":::
+    :::image type="content" source="../media/4-select-data.png" alt-text="Screenshot of the file shares in the storage account." lightbox="../media/4-select-data.png":::
 
 1. In the command bar, select **Connect**. The **Connect** pane appears.
 
@@ -97,40 +97,44 @@ Create a Windows Server VM to simulate an on-premises machine running in the fin
 
 1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
-    :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
+    :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png":::
 
 1. On your virtual machine, in the system tray, select **Start**, scroll to **Windows PowerShell (Admin)**, or if you don't see **(Admin)**, then right-click **Windows PowerShell** and select **Run as Administrator**.
 
-    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
+    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing Start menu with Windows PowerShell (Admin) selected." lightbox="../media/4-connect-powershell-admin.png":::
 
-1. In the PowerShell console title bar, right-click the PowerShell icon, and select **Properties**. On the **Options** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use accelerator keys <kbd>Ctrl+Shift+V</kbd> to paste content into your VM PowerShell console.
+1. In the PowerShell console, right-click the PowerShell icon in the title bar, and select **Properties**. 
+ 
+1. On the **Options** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is selected, and then select **OK**. Now you can use accelerator keys <kbd>Ctrl+Shift+V</kbd> to paste copied content into your VM PowerShell console.
 
-1. At the command prompt in the PowerShell console, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>.
+1. At the command prompt, paste the script you copied from the Azure portal, and press <kbd>Enter</kbd>. 
 
-1. In the Azure portal, go back to the **File shares** pane, and select **reports**.
+   The system responds with confirmation the CMDKEY credential added successfully, and drive F is has been set up as a fileshare.
 
-    :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png#lightbox":::
+1. In the Azure portal, go back to the **File shares** pane for your storage account, and select **reports**.
+
+    :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png":::
 
 1. On the command bar, select **Connect**. The **Connect** reports pane appears.
 
-1. In the **Drive letter** dropdown list, select the **G**.
+1. In the **Drive letter** dropdown list, select **G**.
 
 1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
-1. In the RDP PowerShell window, paste <kbd>Ctrl+Shift+V</kbd> the script you copied, and then press <kbd>Enter</kbd>.
+1. In the RDP PowerShell session, paste <kbd>Ctrl+Shift+V</kbd> the script you copied, and then press <kbd>Enter</kbd>.
 
 ## Test the mounted drive
 
 1. In the RDP connection, open File Explorer, and select **This PC**.
 
-    :::image type="content" source="../media/4-explorer-mapped-drives.png" alt-text="Explorer showing This PC." lightbox="../media/4-explorer-mapped-drives.png#lightbox":::
+    :::image type="content" source="../media/4-explorer-mapped-drives.png" alt-text="Explorer showing This PC." lightbox="../media/4-explorer-mapped-drives.png":::
 
-1. Select the *data* drive named **F**.
+1. Under Network locations, select the file share named **F**.
 
-1. Right-click the main window, and select **New** > **Text Document**.
+1. Right-click the main work area, and in the context menu, select **New** > **Text Document**.
 
-1. Save the file, naming  **test upload**.
+1. Rename the file **test upload**, and save it.
 
-1. Return to the Azure portal in your browser, go back to the **File shares** pane, and select **data**. You should see the file in the portal.
+1. In the Azure portal, select the **File shares** pane, and select **data**. Verify that you can see the **test upload** file that you just created in the RDP session.
 
-1. Keep this connection open for the next exercise.
+Keep this connection open for the next exercise.
