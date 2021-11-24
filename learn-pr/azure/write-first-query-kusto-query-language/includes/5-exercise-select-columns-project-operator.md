@@ -5,7 +5,7 @@ Recall that you've looked at arbitrary rows of data to get a sense of its struct
 
 If you remember, the meteorological data example has quite a few columns. Not all of these columns are meaningful for this exploration. You'll choose just a few columns to view. You'll use the `project` operator to define which columns you want to see in the output. Column names are separated by commas.
 
-1. Run the following query. This query names the columns to return, and their order, within the project operator.
+1. Run the following query. This query names the columns to return, and their order, within the `project` operator.
     
     ```kusto
     StormEvents
