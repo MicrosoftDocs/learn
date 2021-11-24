@@ -8,7 +8,7 @@ In this unit, you'll explore the features offered by Azure Files and understand 
 
 ![Diagram of how Azure files are structured. Starting with a storage account, through file storage, shares, directories, and files.](../media/2-overview.svg)
 
-Before we explore Azure Files, you need to understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
+Before we explore Azure Files, you should understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
 
 You can think of Azure Files as a standard file share, hosted on Azure, that you can access with the industry standard SMB protocol. You can mount or connect to an Azure file share at the same time on all the main operating systems.
 
