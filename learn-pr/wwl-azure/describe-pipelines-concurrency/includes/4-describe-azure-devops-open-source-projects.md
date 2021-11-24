@@ -65,14 +65,8 @@ No. You can create hundreds or even thousands of definitions for no charge. You 
 
 Yes. Visual Studio Enterprise subscribers get one self-hosted parallel job in each Azure DevOps Services organization where they're a member.
 
-## What about the option to pay for hosted agents by the minute?
-
-Some of our earlier customers are still on a per-minute plan for the hosted agents.
-
-You pay $0.05/minute for the first 20 hours after the free tier and $0.01/minute after 20 hours in this plan.
-
-Because of the following limitations in this plan, you might want to consider moving to the parallel jobs model:
-
 ## When you're using the per-minute plan, you can run only one job at a time.
 
 If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
+
+See [Azure DevOps Services Pricing \| Microsoft Azure](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for current pricing.
