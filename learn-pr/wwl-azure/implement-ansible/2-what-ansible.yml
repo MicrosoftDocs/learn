@@ -6,11 +6,11 @@ metadata:
   description: "What is Ansible?"
   ms.date: 11/24/2021
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-ansible.md)]
+  [!include[](includes/2-what-ansible.md)]
