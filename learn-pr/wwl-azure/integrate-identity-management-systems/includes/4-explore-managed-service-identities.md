@@ -2,7 +2,7 @@ Another authentication mechanism offered by Azure AD is Managed service identiti
 
 Imagine that you need to connect from an Azure Data Factory (ADF) to an Azure SQL Database. What identity should ADF present to the database?
 
-:::image type="content" source="../media/adf-sql-identity-e581737f.png" alt-text="ADF SQL Identity.":::
+:::image type="content" source="../media/azure-data-factory-sql-identity-43931848.png" alt-text="ADF SQL Identity.":::
 
 
 The traditional answer would have been to use SQL Authentication with a username and password. It leaves yet another credential that needs to be managed on an ongoing basis.
