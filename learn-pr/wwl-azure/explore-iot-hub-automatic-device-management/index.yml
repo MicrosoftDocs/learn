@@ -3,7 +3,7 @@ uid: learn.wwl.explore-iot-hub-automatic-device-management
 metadata:
   title: Explore IoT Hub automatic device management
   description: "This module provides you with experience using Azure IoT Hub automatic device management to target a set of devices based on their properties, define a desired configuration, and then update the devices."
-  ms.date: 11/19/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
