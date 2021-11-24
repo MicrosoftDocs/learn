@@ -214,7 +214,7 @@ Here we combine two Boolean expressions to create one large boolean expression i
 
 The double ampersand characters `&&` are the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if `roll1` is equal to `roll2`, and `roll2` is equal to `roll3`, then by deduction, `roll1` must be equal to `roll3`, and the user rolled triples.
 
-If you run the code, you might see out like this:
+If you run the code, you might see output like this:
 
 ```output
 Dice roll: 3 + 6 + 1 = 10
