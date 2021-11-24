@@ -45,7 +45,7 @@ If you created file shares without secure transfer enabled, it's easy to enable 
 
 Azure portal configuration to enable secure transfer for storage accounts. 
 
-    :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
+ :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
 
 PowerShell command to enable secure transfer for a storage account.
 
