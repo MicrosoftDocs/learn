@@ -3,7 +3,7 @@ uid: learn.wwl.explore-iot-hub-monitoring
 metadata:
   title: Explore IoT Hub monitoring
   description: "This module provides you with experience configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs."
-  ms.date: 11/23/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
