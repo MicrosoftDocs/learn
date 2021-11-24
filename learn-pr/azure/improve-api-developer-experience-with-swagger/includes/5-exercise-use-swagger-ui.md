@@ -1,7 +1,7 @@
 
 In this exercise, you'll enrich the documentation a developer sees about your API by adding comments and annotations to your code. First, let's see what we get from Swagger UI by default.
 
-1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, in your browser, navigate to http://localhost/swagger. You should see output in the browser similar to the following, when  you select the **Get** method.
+1. To examine the OpenAPI definition of the endpoint of our API in Swagger UI, in your browser, navigate to http://localhost:5000/swagger. You should see output in the browser similar to the following, when  you select the **Get** method.
 
     :::image type="content" source="../media/swagger-ui-initial.png" alt-text="Default Swagger UI for our API." loc-scope="third-party":::
 
