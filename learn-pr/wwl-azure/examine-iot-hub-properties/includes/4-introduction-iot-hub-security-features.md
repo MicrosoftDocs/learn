@@ -2,7 +2,7 @@ IoT Hub uses a combination of authentication and access control permissions to h
 
 There are three different ways for controlling access to IoT Hub:
 
- -  Azure Active Directory (Azure AD) integration for service APIs. Azure provides identity-based authentication with AAD and fine-grained authorization with Azure role-based access control (Azure RBAC). Azure AD and RBAC integration is supported for IoT hub service APIs only.
+ -  Azure Active Directory (Azure AD) integration for service APIs. Azure provides identity-based authentication with Azure AD and fine-grained authorization with Azure role-based access control (Azure RBAC). Azure AD and RBAC integration is supported for IoT hub service APIs only.
  -  Shared access signatures let you group permissions and grant them to applications using access keys and signed security tokens.
  -  Per-device security credentials. Each IoT Hub contains an identity registry. For each device in this identity registry, you can configure security credentials that grant DeviceConnect permissions scoped to the device's endpoints.
 
@@ -62,7 +62,7 @@ IoT hub-level shared access policies can grant any combination of permissions. Y
 :::row-end:::
 
 
-For example, in a typical IoT solution:<br>
+For example, in a typical IoT solution:
 
  -  The device management component uses the registryReadWrite policy.
  -  The event processor component uses the service policy.

@@ -5,9 +5,9 @@ Azure IoT Hub is a multi-tenant service that provides access to its functionalit
  -  Service-facing built-in endpoints for reading device-to-cloud messages.
  -  Custom endpoints to receive device-to-cloud messages dispatched by a routing rule.
 
-## Built-in Endpoints
+## Built-in endpoints
 
-:::image type="content" source="../media/m02-l04-iot-hub-endpoints-413257e2.png" alt-text="IoT Hub Endpoints":::
+:::image type="content" source="../media/m02-l04-iot-hub-endpoints-413257e2.png" alt-text="Diagram that shows the built-in endpoints of IoT Hub.":::
 
 
 The following list describes the IoT hub endpoints:
@@ -31,7 +31,7 @@ The following list describes the IoT hub endpoints:
      -  Direct method invocation. This endpoint allows a back-end service to invoke a direct method on a device.
      -  Receive operations monitoring events. This endpoint allows you to receive operations monitoring events if your IoT hub has been configured to emit them. For more information, see IoT Hub operations monitoring.
 
-## Custom Endpoints
+## Custom endpoints
 
 You can link existing Azure services in your subscription to your IoT hub to act as endpoints for message routing. These endpoints act as service endpoints and are used as sinks for message routes. Devices cannot write directly to these custom endpoints.
 
