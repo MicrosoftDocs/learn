@@ -16,24 +16,34 @@ A starter project has already been created and you'll clone it using the integra
 1. Open Visual Studio Code.
 1. Open the Terminal window by selecting the **Terminal** option from the **View** menu.
 1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
-1. Run the following command to clone the example project for this module.
+1. Make sure you use the **bash** shell in the VS Code terminal for this command:
 
-    > [!IMPORTANT]
-    > Make sure you use the **Bash** shell in VS Code for this command.
+   1. In the upper-right corner of the Terminal window, select the Launch Profile drop-down arrow ![Screenshot of the Launch Profile drop-down arrow.](../media/launch-profile-drop-down.png).
+   1. Select **Git Bash**.
+
+1. Run the following command to clone the example project for this module.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
+1. To switch back to the **Command Prompt**, on the right side of the terminal, select **cmd**.
+
+1. Go to the `mslearn-dotnet-files` folder:
+
+   ```cmd
+   cd mslearn-dotnet-files
+   ```
+
 1. Create a new .NET Console project by running the following commands in the terminal window.
 
-    ```bash
+    ```cmd
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
 1. Open the new .NET project in the same instance of Visual Studio Code by typing in the following command in the terminal window.
 
-    ```bash
+    ```cmd
     code -a .
     ```
 
@@ -51,6 +61,9 @@ You need to find all the sales.json files in all folders.
 ### Include the System.IO namespace
 
 1. Select the `Program.cs` file to open it in the editor.
+
+    :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot that shows the project folder structure.":::
+
 1. Import the `System.IO` and `System.Collections.Generic` namespaces at the top of the file.
 
     ```csharp
