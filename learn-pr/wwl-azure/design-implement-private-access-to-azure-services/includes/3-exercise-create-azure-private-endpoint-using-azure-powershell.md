@@ -361,7 +361,9 @@ In this section, you'll use the virtual machine you created in the previous step
 10. In the bastion connection to **myVM**, open Internet Explorer.
 11. Enter the url of your web app, **https://<your-webapp-name>.Azurewebsites.net**.
 
-    -  You'll receive the default web app page if your application hasn't been deployed: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/web-app-default-page-33cb121e.png" alt-text="screen shot of page in Azure indicating an app service is up and running":::
+    -  You'll receive the default web app page if your application hasn't been deployed: 
+    
+    :::image type="content" source="../media/web-app-default-page-33cb121e.png" alt-text="screen shot of page in Azure indicating an app service is up and running":::
     
 
 12. Close the connection to **myVM**.

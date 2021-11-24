@@ -22,7 +22,9 @@ In this exercise, you will:
 1.  On the Azure portal home page, select **+ Create a resource**.
 2.  Search for virtual network and then select **Virtual network** from the results.
 3.  Select **+** **Create**.
-4.  Enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-f9f04226.png" alt-text="creating a VirtualNetwork in the Azure portal":::
+4.  Enter, or select, the following information: 
+
+     :::image type="content" source="../media/create-virtual-network-f9f04226.png" alt-text="creating a VirtualNetwork in the Azure portal":::
     
     
     |  **Setting**   |                   **Value**                   |
@@ -31,7 +33,9 @@ In this exercise, you will:
     | Resource group |             (New) myResourceGroup             |
     |      Name      |               CoreServicesVNet                |
     |    Location    |              Select **East US**               |
-5.  Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name): \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-ip-3ebcac42.png" alt-text="IP configuration settings":::
+5.  Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name): 
+
+     :::image type="content" source="../media/create-virtual-network-ip-3ebcac42.png" alt-text="IP configuration settings":::
     
     
     |     **Setting**      |  **Value**  |
@@ -39,7 +43,9 @@ In this exercise, you will:
     |    Address space     | 10.0.0.0/16 |
     |     Subnet Name      |   Public    |
     | Subnet Address range | 10.0.0.0/24 |
-6.  Select the **Security** tab and enter the following values: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-network-security-c0a086ee.png" alt-text="Network security settings":::
+6.  Select the **Security** tab and enter the following values: 
+    
+     :::image type="content" source="../media/create-virtual-network-security-c0a086ee.png" alt-text="Network security settings":::
     
     
     |   **Setting**   | **Value** |
@@ -54,7 +60,9 @@ In this exercise, you will:
 Service endpoints are enabled per service, per subnet. Create a subnet and enable a service endpoint for the subnet.
 
 1.  In the **Search resources, services, and docs** box at the top of the portal, enter CoreServicesVNet. When CoreServicesVNet appears in the search results, select it.
-2.  Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-subnet-baeb4882.png" alt-text="adding a subnet to a virtual network in the Azure portal":::
+2.  Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture: 
+
+    :::image type="content" source="../media/create-subnet-baeb4882.png" alt-text="adding a subnet to a virtual network in the Azure portal":::
     
 3.  Under **Add subnet**, select or enter the following information:
     
@@ -76,7 +84,9 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 
 1.  In the **Search resources, services, and docs** box at the top of the portal, enter **security group**. When **Network Security groups** appears in the search results, select it.
 2.  In Network security groups, select **+ Create**.
-3.  Enter or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-network-security-group-efec726f.png" alt-text="creat network security group":::
+3.  Enter or select, the following information: 
+
+    :::image type="content" source="../media/create-network-security-group-efec726f.png" alt-text="creat network security group":::
     
     
     |  **Setting**   |                                 **Value**                                 |
@@ -86,11 +96,15 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
     |      Name      |                             ContosoPrivateNSG                             |
     |    Location    |                            Select **East US**                             |
 4.  select **Review + create**, then click **Create**:
-5.  After the ContosoPrivateNSG network security group is created, select **Go to resource**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/nsg-deployment-complete-0582d7fc.png" alt-text="view network security group in the Azure portal":::
+5.  After the ContosoPrivateNSG network security group is created, select **Go to resource**. 
+
+    :::image type="content" source="../media/nsg-deployment-complete-0582d7fc.png" alt-text="view network security group in the Azure portal":::
     
 6.  Under **Settings**, select **Outbound security rules**.
 7.  Select **+ Add**.
-8.  Create a rule that allows outbound communication to the Azure Storage service. Enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-outbound-security-rule-61adbfce.png" alt-text="configure outbound security rule for allow storage":::
+8.  Create a rule that allows outbound communication to the Azure Storage service. Enter, or select, the following information: 
+
+    :::image type="content" source="../media/add-outbound-security-rule-61adbfce.png" alt-text="configure outbound security rule for allow storage":::
     
     
     |       **Setting**       |         **Value**         |
@@ -112,7 +126,9 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 Create another outbound security rule that denies communication to the internet. This rule overrides a default rule in all network security groups that allows outbound internet communication.
 
 1.  Select **+Add** under **Outbound security rules**.
-2.  Enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-outbound-security-rule-deny-8351660b.png" alt-text="configure outbound security rule for deny internet":::
+2.  Enter, or select, the following information: 
+
+    :::image type="content" source="../media/add-outbound-security-rule-deny-8351660b.png" alt-text="configure outbound security rule for deny internet":::
     
     
     |       **Setting**       |         **Value**         |
@@ -135,7 +151,9 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 
 1.  On ContosoPrivateNSG \| Outbound security rules, under **Settings**, select **Inbound security rules**.
 2.  Select **+ Add**.
-3.  In Add inbound security rule, enter the following values:: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-inbound-security-rule-1b2fbd94.png" alt-text="inbound security rule for allow RDP":::
+3.  In Add inbound security rule, enter the following values:: 
+
+    :::image type="content" source="../media/add-inbound-security-rule-1b2fbd94.png" alt-text="inbound security rule for allow RDP":::
     
     
     |       **Setting**       |         **Value**         |
@@ -151,9 +169,9 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
     |          Name           |       Allow-RDP-All       |
 4.  And then select **Add**.
 
-\[!Warning\]
-
-RDP port 3389 is exposed to the Internet. This is only recommended for testing. For production environments, we recommend using a VPN or private connection.
+> [!Warning]
+> 
+> RDP port 3389 is exposed to the Internet. This is only recommended for testing. For production environments, we recommend using a VPN or private connection.
 
 5.  Under **Settings**, select **Subnets**.
 6.  Select **+ Associate.**
@@ -166,7 +184,9 @@ The steps necessary to restrict network access to resources created through Azur
 
 1.  In the Azure portal, select Storage accounts.
 2.  Select +Create.
-3.  Enter, or select, the following information and accept the remaining defaults: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-a-storage-account-basics-2b23cc12.png" alt-text="configure storage account in the Azure portal":::
+3.  Enter, or select, the following information and accept the remaining defaults: 
+
+    :::image type="content" source="../media/create-a-storage-account-basics-2b23cc12.png" alt-text="configure storage account in the Azure portal":::
     
     
     |  **Setting**   |                              **Value**                               |
@@ -182,7 +202,9 @@ The steps necessary to restrict network access to resources created through Azur
 ## Task 7: Create a file share in the storage account
 
 1.  After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
-2.  Select **File shares**, as shown in the following picture: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/new-file-share-8a475c1f.png" alt-text="create new file share in the Azure portal":::
+2.  Select **File shares**, as shown in the following picture: 
+
+    :::image type="content" source="../media/new-file-share-8a475c1f.png" alt-text="create new file share in the Azure portal":::
     
 3.  Select **+ File share**.
 4.  Enter marketing under **Name**, and then select **Create**.
@@ -194,7 +216,9 @@ By default, storage accounts accept network connections from clients in any netw
 1.  Under **Security + networking** for the storage account, select **Networking**.
 2.  Select **Selected networks**.
 3.  Select **+Add existing virtual network**.
-4.  Under **Add networks**, select the following values: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-network-access-b2e485b2.png" alt-text="add network address configuration":::
+4.  Under **Add networks**, select the following values: 
+
+    :::image type="content" source="../media/add-network-access-b2e485b2.png" alt-text="add network address configuration":::
     
     
     |   **Setting**    |            **Value**             |
@@ -212,7 +236,9 @@ By default, storage accounts accept network connections from clients in any netw
 To test network access to a storage account, deploy a VM to each subnet.
 
 1.  In the Azure portal Home screen, select Virtual machinesSelect **+ Create**, then **+Virtual machine**.
-2.  On the Basics tab, enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-machine-basics-55f94219.png" alt-text="create virtual machines in the Azure portal":::
+2.  On the Basics tab, enter, or select, the following information: 
+
+    :::image type="content" source="../media/create-virtual-machine-basics-55f94219.png" alt-text="create virtual machines in the Azure portal":::
     
     
     |      **Setting**      |                                **Value**                                |
@@ -233,7 +259,9 @@ To test network access to a storage account, deploy a VM to each subnet.
     |  Inbound port rules   |                                                                         |
     | Public inbound ports  |                          Allow selected ports                           |
     | Select inbound ports  |                               RDP (3389)                                |
-3.  Then select the **Networking** tab. Enter, or select, the following information: \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-virtual-machine-networking-12f49037.png" alt-text="configure networking for the virtual machine":::
+3.  Then select the **Networking** tab. Enter, or select, the following information: 
+
+    :::image type="content" source="../media/create-virtual-machine-networking-12f49037.png" alt-text="configure networking for the virtual machine":::
     
     
     |        **Setting**         |         **Value**          |
@@ -252,13 +280,15 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
 ## Task 10: Confirm access to storage account
 
-1.  Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/private-virtual-machine-connect-1c139669.png" alt-text="select RDP to connect to virtual machine":::
+1.  Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP. 
+
+    :::image type="content" source="../media/private-virtual-machine-connect-1c139669.png" alt-text="select RDP to connect to virtual machine":::
     
 2.  After selecting the Connect button and RDP, select the Download RDP File button. A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.
 3.  Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4.  Select **OK**.
 5.  You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
-6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
+6.  On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace \<storage-account-key\> , \<storage-account-name\> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
     
     ```azurecli
        $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force

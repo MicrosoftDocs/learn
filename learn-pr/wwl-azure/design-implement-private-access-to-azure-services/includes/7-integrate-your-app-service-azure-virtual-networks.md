@@ -48,12 +48,12 @@ Go to the **Networking** UI in the App Service portal. Under **VNet Integration*
 
 Select **Add VNet**.
 
-:::image type="content" source="../media/vnet-integration-416e7c79.png" alt-text="Select VNet Integration":::
+:::image type="content" source="../media/vnet-integration-416e7c79.png" alt-text="Select VNet Integration" lightbox="../media/vnet-integration-416e7c79.png":::
 
 
 The drop-down list contains all of the Azure Resource Manager virtual networks in your subscription in the same region. Underneath that is a list of the Resource Manager virtual networks in all other regions. Select the VNet you want to integrate with.
 
-:::image type="content" source="../media/vnet-integration-configuration-15c78756.png" alt-text="Select the VNet":::
+:::image type="content" source="../media/vnet-integration-configuration-15c78756.png" alt-text="Select the VNet" lightbox="../media/vnet-integration-configuration-15c78756.png":::
 
 
 If the VNet is in the same region, either create a new subnet or select an empty preexisting subnet.
