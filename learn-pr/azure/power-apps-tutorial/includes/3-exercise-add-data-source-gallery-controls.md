@@ -1,6 +1,6 @@
 In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
 
-We will be using SharePoint as our primary data source for this application. You can connect to a SharePoint site to automatically generate an app from a custom list, create a connection before you add data to an existing app, or build an app from scratch.
+We will be using SharePoint as our primary data source for this application. You can connect to a SharePoint site to automatically generate an app from a custom list, create a connection before adding data to an existing app or build an app from scratch.
 
 ## Create a SharePoint site
 
@@ -10,7 +10,7 @@ We will be using SharePoint as our primary data source for this application. You
 
     :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
 
-3. On the SharePoint start page, you'll be asked for the following information:
+3. On the SharePoint start page, you'll find the following information:
 
     * It'll ask you to choose a site type, either "communication site" or "Team site." Select **Communication site**.
 
@@ -18,9 +18,9 @@ We will be using SharePoint as our primary data source for this application. You
 
     * Add the **Site description** if needed (Optional).
 
-    * Select **Language** of your choice from the dropdown.
+    * Select the **Language** of your choice from the dropdown.
 
-4. Click **Finish** to create a **SharePoint** site in which you can load your data.
+4. Click **Finish** to create a **SharePoint** site for loading your data.
 
     :::image type="content" source="../media/update-site-details.png" alt-text="Screenshot of updating site details." lightbox="../media/update-site-details.png":::
 
@@ -43,7 +43,7 @@ For our **Easy Sales** application, we will create a list containing details of 
 
       :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
 
-3. In the **Create** pane configure as following:
+3. In the **Create** pane, configure it as follows:
 
     * Enter a suitable name for the list, for example, *Easy Sales*
     * Fill in the description, if required. (Optional)
@@ -85,11 +85,11 @@ Once the list is created, it's time to add the data to it. Here data means the d
     >[!Note]
     > On creating a **SharePoint** list, a default **Title** column gets created, which can be renamed as **Name** for your use.
 
-2. Once the columns are added, we have to add the actual data under these columns. Start adding data to the respective column by downloading the custom folder that includes all the product details for all four lists.
+2. Once we add the columns, we have to add the actual data under these columns. Start adding data to the respective column by downloading the custom folder that includes all the product details for all four lists.
 
     [Power Apps custom folder](https://netorg4603737-my.sharepoint.com/:f:/g/personal/developer_onginnovations_com/EtbMYeDiiv1LvCtb3wBKTKUBzKrLW-IazsDrZShq-Js_OA?e=yHPxf3)
 
-3. To add an item to your list, click on **+ New** and fill in the required details as provided in the downloaded **Excel** file. Click **Save** to save the entered details.
+3. Click on **+ New** to add item and fill in the required details as provided in the downloaded **Excel** file. Click **Save** to save the entered details.
 
     :::image type="content" source="../media/edit-grid-view.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/edit-grid-view.png":::
 
@@ -108,7 +108,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
 ## Create a connection
 
-Now that all our data required for the application is stored in the SharePoint list, we will move on to establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through the application.
+Now that all our data required for the application is stored in the SharePoint list, we will establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through the application.
 
 1. To start creating a connection, sign in to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) and select **Dataverse > Connections** in the left navigation bar. Then select **+ New connection** near the upper-left corner.
 
@@ -123,7 +123,7 @@ Now that all our data required for the application is stored in the SharePoint l
 4. The connection is created, and you can build an app from scratch.
 
 >[!Note]
-> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes will be reflected in the application through the connection.
+> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes get reflected in the application through the connection.
 
 Let's start building *Easy Sales* application based on the SharePoint data, and then add data from other sources if wanted. By following this procedure, you'll be able to design some of the main pages of the application. For example, you'll learn to design a splash screen, product page, and product list page. We'll also be accessing various data stored in the SharePoint list through Power Apps gallery control.
 
@@ -147,7 +147,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 ## Connect to data
 
-To include data to your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in a **SharePoint** list, we will select **SharePoint** as one of the connectors.
+To include data in your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in a **SharePoint** list, we will select **SharePoint** as one of the connectors.
 
 1. To the **Power Apps Studio**'s left, click the **Data** option.
 
@@ -169,7 +169,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 ## Create the splash screen
 
-1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** to open a list of screen types, and then select **Blank** to create a blank screen.
+1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** that opens the screen type list. Then select **Blank** to create a blank screen.
 
     :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
 
@@ -202,7 +202,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
     >[!Note]
     > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
 
-8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. To do this, create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
+8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. Create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
 
     ```PowerApps
     Navigate('Home Page',ScreenTransition.Fade)
@@ -214,7 +214,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 ## Create the home page
 
-1. Click the **Home Page** which was created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
+1. Click the **Home Page** created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
 
     :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
 
@@ -226,7 +226,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
-4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* by the below-given code:
+4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* with the below-given code:
 
     ```PowerApps
     Navigate(Products,ScreenTransition.Cover, {ID:1});
@@ -266,7 +266,7 @@ To include data to your **Power Apps**, you must connect to the data via the con
 
 ## Use Gallery control
 
-Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to display a record of data.
+Now that we have added the product categories, we will display the list of products under each category. In Power Apps, we use **Gallery control** to see a record of data.
 
 1. In the **Products** screen; on the Insert tab, select **Gallery** > **Vertical** to add **Gallery control** to your screen.
 
@@ -310,7 +310,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
 
-6. Add a **Back** icon over the previously added **Label** to help the user navigate to the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
+6. Add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
 
     :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
 

@@ -1,4 +1,4 @@
-To enable numerous 3D and MR scenarios, you can add several Mixed Reality (MR) components to your canvas app. Components are collections of controls that can be used to address specific requirements. You can, for example, use these MR components to:
+To enable numerous 3D and MR scenarios, you can add several Mixed Reality (MR) components to your canvas app. Components are collections of controls that you can use to address specific requirements. You can, for example, use these MR components to:
 
 * View and manipulate 3D content.
 * Overlay 3D content and 2D images onto the feed from the camera.
@@ -11,7 +11,7 @@ We will incorporate some of the above Mixed Reality features in our **Easy Sales
 
 The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
 
-3D content must be in the .glb file format and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
+3D content comes in .glb file format, and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
 
 * **Properties**
 
@@ -31,7 +31,7 @@ The View in MR is one of the chief features included in the application. It allo
 
   When a model is placed with the View in MR component, it uses the original dimensions of the model. These dimensions are labeled as Object Width, Object Height, and Object Depth properties.
 
-  To change the size of the model, certain scaling techniques must be applied:
+  Let's use the scaling techniques to change the size of the model -
 
   * If no dimensions are defined, we accept that the model is already at its expected scale and leave it unchanged.
   * If one dimension is defined and the rest are default value of 0, we scale the entire object based on the specified dimension.
