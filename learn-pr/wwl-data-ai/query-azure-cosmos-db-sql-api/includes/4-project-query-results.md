@@ -118,7 +118,7 @@ FROM
 
 This would return a JSON result set
 
-Unfortunately, there would be repeated values within the result set:**
+Unfortunately, there would be repeated values within the result set:
 
 ```json
 [
