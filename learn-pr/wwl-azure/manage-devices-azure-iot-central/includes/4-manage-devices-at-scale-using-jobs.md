@@ -2,21 +2,21 @@ You can use Azure IoT Central to manage your connected devices at scale through 
 
 ## Create and run a job
 
-1.  On the left pane, select **Jobs**.<br>
-2.  Select **+ New** job.<br>
-3.  On the **Configure your job** page, enter a name and description to identify the job you're creating.<br>
+1.  On the left pane, select **Jobs**.
+2.  Select **+ New** job.
+3.  On the **Configure your job** page, enter a name and description to identify the job you're creating.
 4.  If your application uses organizations, select the organization to associate the job to. Only users in the organization can view or modify the job. The user's role determines the permissions the user has.
-5.  Select the target device group that you want your job to apply to. You can see how many devices your job configuration applies to below your **Device group** selection.<br>
+5.  Select the target device group that you want your job to apply to. You can see how many devices your job configuration applies to below your **Device group** selection.
 6.  Select **Cloud property**, **Property**, or **Command** as the **Job type**. To configure a Property job, select a property and set its new value. To configure a Command job, choose the command to run. A property job can set multiple properties. Select **Save** and exit to add the job to the list of saved jobs on the Jobs page. You can later return to a job from the list of saved jobs.
 7.  Select **Next** to move to the **Delivery Options** page. The Delivery Options page lets you set the delivery options for this job: Batches and Cancellation threshold. Batches let you stagger jobs for large numbers of devices. The job is divided into multiple batches and each batch contains a subset of the devices. The batches are queued and run in sequence. The cancellation threshold lets you automatically cancel a job if the number of errors exceeds your set limit. The threshold can apply to all the devices in the job, or to individual batches.
 8.  Select **Next** to move to the **Schedule** page. The Schedule page lets you enable a schedule to run the job in the future. Choose a recurrence option for the schedule. You can set up a job to run: One-time; Daily; Weekly. Set a start date and time for a scheduled job. The date and time is specific to your time zone, and not to the device's local time. To end a recurring schedule, choose: **On this day** to set an end date for the schedule; **After** to set the number of times to run the job. Scheduled jobs always run on the devices in a device group, even if the device group membership changes over time.
-9.  Select **Next** to move to the **Review** page. The Review page shows the job configuration details. Select Schedule to schedule the job.<br>
+9.  Select **Next** to move to the **Review** page. The Review page shows the job configuration details. Select Schedule to schedule the job.
 10. The job details page shows information about scheduled jobs. When the scheduled job runs, you will see a list of the job instances. The scheduled job run will also be shown on the Last 30-day job list. On this page, you can Unschedule the job or Edit the scheduled job. You can return to a scheduled job from the list of scheduled jobs.
 11. In the job wizard, you can choose to not schedule a job, and run it immediately. For a job with no schedule, select Run to run the job.
 12. A job goes through pending, running, and completed phases. The job execution details contain result metrics, duration details, and a device list grid. When the job is complete, you can select Results log to download a CSV file of your job details, including the devices and their status values. This information can be useful for troubleshooting.
 13. The job now appears in Last 30 days list on the Jobs page. This page shows currently running jobs and the history of any previously run or saved jobs.
 
-## Review job information<br>
+## Review job information
 
 To see an overview of your jobs, select a job from the list on your Jobs page. This overview contains the job details, devices, and device status values.
 

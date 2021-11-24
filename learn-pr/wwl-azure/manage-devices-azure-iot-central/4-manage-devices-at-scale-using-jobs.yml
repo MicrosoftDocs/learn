@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-devices-azure-iot-central.at-scale-using-jobs
-title: Manage devices at scale using Jobs
+title: Manage devices at scale using jobs
 metadata:
-  title: Manage devices at scale using Jobs
-  description: "Manage devices at scale using Jobs"
-  ms.date: 11/22/2021
+  title: Manage devices at scale using jobs
+  description: "Manage devices at scale using jobs"
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

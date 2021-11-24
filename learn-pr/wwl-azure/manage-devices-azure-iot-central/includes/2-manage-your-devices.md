@@ -7,14 +7,14 @@ As an Azure IoT Central operator or developer, you can:
 
 In addition to the tools that are built into the IoT Central application, you can also build custom tooling with the IoT Central REST API. The IoT Central REST API lets you develop client applications that integrate with IoT Central applications. You can use the REST API to control devices in your IoT Central application. The REST API lets you:
 
- -  Read the last-known telemetry value from a device.<br>
+ -  Read the last-known telemetry value from a device.
  -  Read property values from a device.
  -  Set writable properties on a device.
  -  Call commands on a device.
 
 For more information on using the IoT Central REST API to manage devices, see: [How to use the IoT Central REST API to control devices](/azure/iot-central/core/howto-control-devices-with-rest-api).
 
-## View your devices<br>
+## View your devices
 
 To view an individual device:
 
