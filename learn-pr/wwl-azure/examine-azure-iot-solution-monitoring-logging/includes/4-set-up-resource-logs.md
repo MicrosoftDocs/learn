@@ -19,7 +19,7 @@ To learn more about the specific metrics and events that Azure Monitor watches, 
 Choose where you want to send the logs. You can select any combination of the three options:
 
  -  Archive to a storage account
- -  Stream to an Event Hub
+ -  Stream to an Event Hubs
  -  Send to Log Analytics
 
 See Azure Monitor pricing: [https://azure.microsoft.com/pricing/details/monitor/](https://azure.microsoft.com/pricing/details/monitor/)
@@ -336,7 +336,7 @@ The direct methods category tracks request-response interactions sent to individ
 
 ### Read logs from Azure Event Hubs
 
-After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an Event Hub:
+After you set up event logging through diagnostics settings, you can create applications that read out the logs so that you can take action based on the information in them. This sample code retrieves logs from an Event Hubs:
 
 ```
 class Program
