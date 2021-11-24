@@ -57,13 +57,6 @@ We can use the Azure IoT Reference Architecture to demonstrate how to think abou
 :::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-2-5eab02b4.png" alt-text="Diagram that shows how to use the Azure IoT Reference Architecture to think about threat modeling.":::
 
 
-The following diagram provides a simplified view of Microsoft’s IoT Architecture using a Data Flow Diagram model that is used by the Microsoft Threat Modeling Tool:
-
-:::image type="content" source="../media/m10-l01-security-iot-security-architecture-fig-3-f16ff45c.png" alt-text="Diagram that provides a simplified view of the solution architecture for an Azure IoT solution using a Data Flow Diagram model.":::
-
-
-You should notice that this diagram combines the *Devices and Data Sources* and *Data Transport* focus areas, and places a trust boundary on each side of an Azure Services Zone for the solution.
-
 ## Common security threats and mitigations
 
 For an Azure IoT solution, threats most commonly target the physical devices or one of the trust boundaries identified in the simplified threat model diagram above.
@@ -331,4 +324,5 @@ Here are some examples of threats to communication:
  -  Spoofing, Information Disclosure: Constrained devices and special-purpose devices often have one-for-all security facilities like password or PIN protection, or they wholly rely on trusting the network, meaning they grant access to information when a device is on the same network, and that network is often only protected by a shared key. That means that when the shared secret to device or network is disclosed, it is possible to control the device or observe data emitted from the device.
  -  Spoofing: an attacker may intercept or partially override the broadcast and spoof the originator.
  -  Tampering: an attacker may intercept or partially override the broadcast and send false information.
- -  Information Disclosure: an attacker may eavesdrop on a broadcast and obtain information without authorization Denial of Service: an attacker may jam the broadcast signal and deny information distribution.
+ -  Information Disclosure: an attacker may eavesdrop on a broadcast and obtain information without authorization.
+ -  Denial of Service: an attacker may jam the broadcast signal and deny information distribution.
