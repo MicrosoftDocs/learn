@@ -10,10 +10,10 @@ Four configuration properties should be set to properly configure connectivity t
 
 | **Property** | **Value** |
 | ---: | :--- |
-| ``connect.cosmos.connection.endpoint`` | Account endpoint URI |
-| ``connect.cosmos.master.key`` | Account key |
-| ``connect.cosmos.databasename`` | Name of the database resource |
-| ``connect.cosmos.containers.topicmap`` | Using CSV format, a mapping of the Kafka topics to containers |
+| **connect.cosmos.connection.endpoint** | Account endpoint URI |
+| **connect.cosmos.master.key** | Account key |
+| **connect.cosmos.databasename** | Name of the database resource |
+| **connect.cosmos.containers.topicmap** | Using CSV format, a mapping of the Kafka topics to containers |
 
 ### Topics to containers map
 
@@ -55,10 +55,10 @@ You can create a source connector in Kafka Connect using a JSON configuration ob
 
 | **Property** | **Description** |
 | ---: | :--- |
-| ``connect.cosmos.connection.endpoint`` | Your actual account endpoint URI |
-| ``connect.cosmos.master.key`` | Your actual account key |
-| ``connect.cosmos.databasename`` | The name of your actual account database resource |
-| ``connect.cosmos.containers.topicmap`` | Using CSV format, a mapping of your actual Kafka topics to containers |
+| **connect.cosmos.connection.endpoint** | Your actual account endpoint URI |
+| **connect.cosmos.master.key** | Your actual account key |
+| **connect.cosmos.databasename** | The name of your actual account database resource |
+| **connect.cosmos.containers.topicmap** | Using CSV format, a mapping of your actual Kafka topics to containers |
 
 ```json
 {
@@ -84,10 +84,10 @@ As an illustrative example, using this example configuration table:
 
 | **Property** | **Description** |
 | ---: | :--- |
-| ``connect.cosmos.connection.endpoint`` | ``https://dp420.documents.azure.com:443/`` |
-| ``connect.cosmos.master.key`` | ``C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==`` |
-| ``connect.cosmos.databasename`` | ``cosmicworks`` |
-| ``connect.cosmos.containers.topicmap`` | ``prodlistener#products`` |
+| **connect.cosmos.connection.endpoint** | ``https://dp420.documents.azure.com:443/`` |
+| **connect.cosmos.master.key** | ``C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==`` |
+| **connect.cosmos.databasename** | ``cosmicworks`` |
+| **connect.cosmos.containers.topicmap** | ``prodlistener#products`` |
 
 Here is an example configuration file:
 

@@ -4,7 +4,7 @@ title: Move data by using the Azure Cosmos DB Spark connector
 metadata:
   title: Move data by using the Azure Cosmos DB Spark connector
   description: "Move data by using the Azure Cosmos DB Spark connector"
-  ms.date: 11/23/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
