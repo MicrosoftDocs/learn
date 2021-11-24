@@ -1,6 +1,6 @@
 ## Create notes page
 
-It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. In the **Notes page** you'll be able to store some textual notes and store the images captured during **View in MR** session.
+It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. On the **Notes page**, you can store some textual notes and store the images captured during **View in MR** session.
 
 1. Create two new **Blank** screens and rename them as **Product_notes** and **Carpet_notes**.
 
@@ -26,7 +26,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/configure-items-property.png" alt-text="Screenshot of adding property to gallery" lightbox="../media/configure-items-property.png":::
 
-    By doing so, all the pictures taken in the **View in MR** session is stored in this gallery for future references.
+    So, all the pictures taken in the **View in MR** session are stored in this gallery for future references.
 
 6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option and **Center align** it. Then, customize the position, color, and text display according to your needs. Rename it to **Notes_label**.
 

@@ -1,6 +1,6 @@
-In this module, you've learned to develop and design an application in a short period with no bit of coding where users with any level of knowledge can use the apps for business purpose.
+In this module, you've learned to develop and design an application in a short period with no bit of coding where users with any level of knowledge can use the apps for business purposes.
 
-As it uses extensive number of clouds and on-premise application including Dynamic 365, you can access the work across the web and the mobile without the time and expense of custom software development.
+As it uses extensive number of clouds and on-premise applications, including Dynamic 365, you can access the work across the web and mobile without the time and expense of custom software development.
 
 ## Next steps
 

@@ -10,7 +10,7 @@ The 3D models and images required for the application are stored in the **ShareP
 
     :::image type="content" source="../media/select-add-column.png" alt-text="Screenshot to add column" lightbox="../media/select-add-column.png":::
 
-2. Make sure **Attachments** be selected and press **Apply** at the top.
+2. Make sure **Attachments** be selected, press **Apply** at the top.
 
     :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
@@ -18,7 +18,7 @@ The 3D models and images required for the application are stored in the **ShareP
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want the attachments to be placed at first for easy access.
+4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want that attachments to be placed at first for easy access.
 
     :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
 
@@ -42,14 +42,14 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
-3. Let's start building the **Product_details** page by adding a few labels, namely: **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label by inserting the desired text beside the **Text** property of the **Label**. Rename the **Labels** accordingly.
+3. Let's start building the **Product_details** page, by adding a few labels such as **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label, inserting the desired text with the **Text** property of that **Label**. Rename the **Labels** accordingly.
 
     :::image type="content" source="../media/add-labels.png" alt-text="Screenshot of adding labels" lightbox="../media/add-labels.png":::
 
     >[!Note]
     > You may customize the theme, font, and color palette of your application as required to improve user experience and appearance.
 
-4. Insert another label named **Product name** to display the name of the product at the top and **Center align** it. Configure the **Text** property of the label by adding the following line:
+4. Insert another label named **Product name** to display the product name at the top and **Center align** it. Configure the **Text** property of the label by adding the following line:
 
     ```PowerApps
     content.'{Name}'
@@ -80,7 +80,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/configure-view-3d.png" alt-text="Screenshot of configuring view in 3D" lightbox="../media/configure-view-3d.png":::
 
-8. We will alter the **Visible** property of both **Image** and **View in 3D** component to easily view the products depending on the **File type** stored in the **Attachments** column. Configure the **Visible** property of **Image** and **View in 3D** component in the respective way:
+8. We will alter the **Visible** property of both **Image** and **View in 3D** component to easily view the products depending on the **File type** stored in the **Attachments** column. Configure the **Visible** property of **Image** and **View in 3D** component in a respective way:
 
     * **Image** :
 
@@ -158,7 +158,7 @@ The details page includes all the details and information concerning the selecte
 
 ## View in MR component
 
-**View in MR** is a mixed reality feature provided by Power Apps which enables users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the required resources in the **SharePoint** list.
+**View in MR** is a mixed reality feature provided by Power Apps, enabling users to place **3D objects** or **Images** in their real world. The 3D models and images required for the application are stored in the **SharePoint** list. So let's start by adding the necessary resources in the **SharePoint** list.
 
 1. Add the **View in MR** component to the **Product_details** screen, Open the **Insert** tab, expand **Mixed Reality** dropdown. Then, select **View in MR** component.
 

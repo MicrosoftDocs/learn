@@ -11,7 +11,7 @@ We will incorporate some of the above Mixed Reality features in our **Easy Sales
 
 The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
 
-3D content comes in .glb file format, and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
+3D content must be in the .glb file format, and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
 
 * **Properties**
 

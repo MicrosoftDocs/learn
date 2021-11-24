@@ -15,7 +15,7 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
 
-3. In the **Home page** add a **Gallery** by selecting the **Gallery** > **Vertical**. Rename the **Gallery** to **Measure_gallery**.
+3. On the **Home page** add a **Gallery** by selecting the **Gallery** > **Vertical**. Rename the **Gallery** to **Measure_gallery**.
 
     :::image type="content" source="../media/add-gallery.png" alt-text="Screenshot to add gallery" lightbox="../media/add-gallery.png":::
 
@@ -117,11 +117,11 @@ In this module, you'll be using some of the key functional components of **Power
 
 ## Calculate price based on area
 
-1. Click on **Carpet_details** page, Add a **Label** and rename it as **Area_carpets**.
+1. Click on the **Carpet_details** page, Add a **Label** and rename it as **Area_carpets**.
 
     :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of adding area label" lightbox="../media/add-area-label.png":::
 
-2. Add another empty **Label** beside the **Area_carpets** label and configure the **Text** property of the empty label following way to display the area calculated:
+2. Add another empty **Label** beside the **Area_carpets** label and configure the **Text** property of the blank label following way to display the area calculated:
 
     ```PowerApps
     Measure_gallery.Selected.Area&"cm²"
