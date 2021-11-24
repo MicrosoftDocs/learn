@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is the *less secure* way to store your application secrets?"
+    - content: "What is the LESS SECURE way to store your application secrets?"
       choices:
         - content: "Expose them as environment variables."
           isCorrect: false
