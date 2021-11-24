@@ -20,7 +20,7 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
 
 4.  Search for and install the extension **Terraform**. Ensure that you select the extension authored by Microsoft, as other authors have similar extensions.
 
-    :::image type="content" source="../media/vscterraform1-28365267.png" alt-text="Screenshot of Visual Studio with the Terraform extension highlighted.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-1-d066de8a.png" alt-text="Screenshot of Visual Studio with the Terraform extension highlighted.":::
 
 
     You can view more details of this extension at the Visual Studio Marketplace on the Azure Terraform page.
@@ -48,24 +48,24 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
 resource "azurerm_resource_group" "myterraformgroup" {
     name    = "terraform-rg2"
     location = "eastus"
- 
+
     tags {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Create virtual network
 resource "azurerm_virtual_network" "myterraformnetwork" {
     name                = "myVnet"
     address_space      = ["10.0.0.0/16"]
     location            = "eastus"
     resource_group_name = "${azurerm_resource_group.myterraformgroup.name}"
- 
+
     tags {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Create subnet
 resource "azurerm_subnet" "myterraformsubnet" {
     name                = "mySubnet"
@@ -73,19 +73,19 @@ resource "azurerm_subnet" "myterraformsubnet" {
     virtual_network_name = "${azurerm_virtual_network.myterraformnetwork.name}"
     address_prefix      = "10.0.1.0/24"
 }
- 
+
 # Create public IPs
 resource "azurerm_public_ip" "myterraformpublicip" {
     name                        = "myPublicIP"
     location                    = "eastus"
     resource_group_name          = "${azurerm_resource_group.myterraformgroup.name}"
     public_ip_address_allocation = "dynamic"
- 
+
     tags {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Create Network Security Group and rule
 resource "azurerm_network_security_group" "myterraformnsg" {
     name                = "myNetworkSecurityGroup"
@@ -108,7 +108,7 @@ resource "azurerm_network_security_group" "myterraformnsg" {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Create network interface
 resource "azurerm_network_interface" "myterraformnic" {
     name                      = "myNIC"
@@ -122,22 +122,22 @@ resource "azurerm_network_interface" "myterraformnic" {
         private_ip_address_allocation = "dynamic"
         public_ip_address_id          = "${azurerm_public_ip.myterraformpublicip.id}"
     }
- 
+
     tags {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Generate random text for a unique storage account name
 resource "random_id" "randomId" {
     keepers = {
         # Generate a new ID only when a new resource group is defined
         resource_group = "${azurerm_resource_group.myterraformgroup.name}"
     }
- 
+
     byte_length = 8
 }
- 
+
 # Create storage account for boot diagnostics
 resource "azurerm_storage_account" "mystorageaccount" {
     name                        = "diag${random_id.randomId.hex}"
@@ -150,7 +150,7 @@ resource "azurerm_storage_account" "mystorageaccount" {
         environment = "Terraform Demo"
     }
 }
- 
+
 # Create virtual machine
 resource "azurerm_virtual_machine" "myterraformvm" {
     name                  = "myVM"
@@ -158,37 +158,37 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     resource_group_name  = "${azurerm_resource_group.myterraformgroup.name}"
     network_interface_ids = ["${azurerm_network_interface.myterraformnic.id}"]
     vm_size              = "Standard_DS1_v2"
- 
+
     storage_os_disk {
         name              = "myOsDisk"
         caching          = "ReadWrite"
         create_option    = "FromImage"
         managed_disk_type = "Premium_LRS"
     }
- 
+
     storage_image_reference {
         publisher = "Canonical"
         offer    = "UbuntuServer"
         sku      = "16.04.0-LTS"
         version  = "latest"
     }
- 
+
     os_profile {
         computer_name  = "myvm"
         admin_username = "azureuser"
         admin_password = "Password0134!"
     }
- 
+
     os_profile_linux_config {
         disable_password_authentication = false
         }
     }
- 
+
     boot_diagnostics {
         enabled = "true"
         storage_uri = "${azurerm_storage_account.mystorageaccount.primary_blob_endpoint}"
     }
- 
+
     tags {
         environment = "Terraform Demo"
     }
@@ -204,23 +204,23 @@ Azure Terraform: apply
 
 ```
 
-    :::image type="content" source="../media/vscterraform2-cde3a9ec.png":::
+    :::image type="content" source="../media/visual-studio-code-terraform-2-ae423034.png":::
 
 
 12. If Azure Cloud Shell isn't open in Visual Studio Code, a message might appear in the bottom-left corner asking you if you want to open Azure Cloud Shell. Choose **Accept** and select **Yes**.
 13. Wait for the Azure Cloud Shell pane to appear at the bottom of the Visual Studio Code window and start running the file `terraform-createvm.tf`. When you're prompted to apply the plan or cancel, type **Yes**, and then press **Enter**.
 
-    :::image type="content" source="../media/vscterraform3-a5cdd79b.png" alt-text="Screenshot of the Visual Studio Code Azure Cloud shell pane running the terraform-createvm.tf config file. At the bottom, a prompt displays asking if you want to continue with the resultant plan, and the value Yes.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-3-bda00c96.png" alt-text="Screenshot of the Visual Studio Code Azure Cloud shell pane running the terraform-createvm.tf config file. At the bottom, a prompt displays asking if you want to continue with the resultant plan, and the value Yes.":::
 
 
 14. After the command completes successfully, review the list of resources created.
 
-    :::image type="content" source="../media/vscterraform4-6b52c317.png" alt-text="Screenshot of the deployed resources in Azure Cloud Shell pane, with the terraform apply command completed.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-4-04463584.png" alt-text="Screenshot of the deployed resources in Azure Cloud Shell pane, with the terraform apply command completed.":::
 
 
 15. Open the Azure Portal and verify the resource group, resources, and the VM has been created. If you have time, sign in with the username and password specified in the .tf config file to verify.
 
-    :::image type="content" source="../media/vscterraform5-a80fa75c.png" alt-text="Screenshot of deployed resources in Microsoft Azure.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-5-55cbb075.png" alt-text="Screenshot of deployed resources in Microsoft Azure.":::
 
 
 > [!NOTE]

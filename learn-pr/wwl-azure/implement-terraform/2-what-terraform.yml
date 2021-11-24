@@ -14,4 +14,4 @@ sandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-what-is-terraform.md)]
+  [!include[](includes/2-what-terraform.md)]
