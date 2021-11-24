@@ -1,6 +1,6 @@
 This module introduces continuous delivery concepts and their implementation in a traditional IT development cycle.
 
-## Learning objectives<br>
+## Learning objectives
 
 After completing this module, students and professionals can:
 
