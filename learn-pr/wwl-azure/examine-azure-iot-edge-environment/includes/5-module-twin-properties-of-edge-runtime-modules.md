@@ -330,9 +330,9 @@ Registry credentials are necessary for any module images that are not public.
 
 The IoT Edge agent reported properties include three main pieces of information:
 
-1.  The status of the application of the last-seen desired properties;
-2.  The status of the modules currently running on the device, as reported by the IoT Edge agent; and
-3.  A copy of the desired properties currently running on the device.
+ -  The status of the application of the last-seen desired properties;
+ -  The status of the modules currently running on the device, as reported by the IoT Edge agent; and
+ -  A copy of the desired properties currently running on the device.
 
 This last piece of information, a copy of the current desired properties, is useful to tell whether the device has applied the latest desired properties or is still running a previous deployment manifest.
 

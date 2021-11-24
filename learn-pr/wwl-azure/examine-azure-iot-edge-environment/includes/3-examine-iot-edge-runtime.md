@@ -26,7 +26,7 @@ The IoT Edge hub is not a full version of IoT Hub running locally. There are som
 
 To reduce the bandwidth your IoT Edge solution uses, the IoT Edge hub optimizes how many actual connections are made to the cloud. IoT Edge hub takes logical connections from clients like modules or downstream devices and combines them for a single physical connection to the cloud. The details of this process are transparent to the rest of the solution. Clients think they have their own connection to the cloud even though they are all being sent over the same connection.
 
-:::image type="content" source="../media/m06-l01-iot-edge-hub-682ff0e6.png" alt-text="Diagram that illustrates the IoT Edge hub acting as a local proxy for IoT Hub.":::
+:::image type="content" source="../media/m06-l01-iot-edge-hub-682ff0e6.png" alt-text="Diagram that illustrates the IoT Edge hub acting as a local proxy for IoT Hub." lightbox="../media/m06-l01-iot-edge-hub-682ff0e6.png":::
 
 
 IoT Edge hub can determine whether it's connected to IoT Hub. If the connection is lost, IoT Edge hub saves messages or twin updates locally. Once a connection is reestablished, it syncs all the data. The location used for this temporary cache is determined by a property of the IoT Edge hub’s module twin. The size of the cache is not capped and will grow as long as the device has storage capacity.
