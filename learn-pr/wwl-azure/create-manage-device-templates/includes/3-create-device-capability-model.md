@@ -1,12 +1,12 @@
-A device model defines how a device interacts with your IoT Central application. The device developer must make sure that the device implements the behaviors defined in the device model so that IoT Central can monitor and manage the device. A device model is made up of one or more interfaces, and each interface can define a collection of telemetry types, device properties, and commands. A solution developer can import a JSON file that defines the device model into a device template, or use the web UI in IoT Central to create or edit a device model.<br>
+A device model defines how a device interacts with your IoT Central application. The device developer must make sure that the device implements the behaviors defined in the device model so that IoT Central can monitor and manage the device. A device model is made up of one or more interfaces, and each interface can define a collection of telemetry types, device properties, and commands. A solution developer can import a JSON file that defines the device model into a device template, or use the web UI in IoT Central to create or edit a device model.
 
-A solution developer can also export a JSON file that contains the device model. A device developer can use this JSON document to understand how the device should communicate with the IoT Central application.<br>
+A solution developer can also export a JSON file that contains the device model. A device developer can use this JSON document to understand how the device should communicate with the IoT Central application.
 
-The JSON file that defines the device model uses the Digital Twin Definition Language (DTDL) V2. IoT Central expects the JSON file to contain the device model with the interfaces defined inline, rather than in separate files.<br>
+The JSON file that defines the device model uses the Digital Twin Definition Language (DTDL) V2. IoT Central expects the JSON file to contain the device model with the interfaces defined inline, rather than in separate files.
 
-A typical IoT device is made up of:<br>
+A typical IoT device is made up of:
 
- -  Custom parts, which are the things that make your device unique.<br>
+ -  Custom parts, which are the things that make your device unique.
  -  Standard parts, which are things that are common to all devices.
 
 These parts are called interfaces in a device model. Interfaces define the details of each part your device implements. Interfaces are reusable across device models. In DTDL, a component refers to another interface, which may defined in a separate DTDL file or in a separate section of the file.

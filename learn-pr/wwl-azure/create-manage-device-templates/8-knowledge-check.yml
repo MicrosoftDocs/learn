@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/22/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You need to create a device template in Azure IoT Central. What are the four components of a device template?"
+  - content: "A developer needs to create a device template in Azure IoT Central. What are the four components of a device template?"
     choices:
     - content: "Device capability model, Cloud properties, Views, and Customizations."
       isCorrect: true

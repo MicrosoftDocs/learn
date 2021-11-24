@@ -1,10 +1,10 @@
 A device template in Azure IoT Central is a blueprint that defines the characteristics and behaviors of a type of device that connects to your application. For example, the device template defines the telemetry that a device sends so that IoT Central can create visualizations that use the correct units and data types.
 
-A solution builder adds device templates to an IoT Central application. A device developer writes the device code that implements the behaviors defined in the device template.<br>
+A solution builder adds device templates to an IoT Central application. A device developer writes the device code that implements the behaviors defined in the device template.
 
-A device template includes the following sections:<br>
+A device template includes the following sections:
 
- -  A device model. This part of the device template defines how the device interacts with your application. A device developer implements the behaviors defined in the model.<br>
+ -  A device model. This part of the device template defines how the device interacts with your application. A device developer implements the behaviors defined in the model.
     
      -  Root component. Every device model has a root component. The root component's interface describes capabilities that are specific to the device model.
      -  Components. A device model may include components in addition to the root component to describe device capabilities. Each component has an interface that describes the component's capabilities. Component interfaces may be reused in other device models. For example, several phone device models could use the same camera interface.
@@ -30,7 +30,7 @@ From this device template, a developer can write the device code, and an operato
 > [!NOTE]
 > Only builders and administrators can create, edit, and delete device templates. Any user can create devices on the Devices page from existing device templates.
 
-## Creating a device template<br>
+## Creating a device template
 
 As a builder, you have several options for creating device templates:
 
@@ -61,8 +61,8 @@ To create a device template in IoT Central:
 
 Before you can connect a device that implements your device model, you must publish your device template.
 
-To publish a device template, go to you your device template, and select Publish.<br>
+To publish a device template, go to you your device template, and select Publish.
 
-After you publish a device template, an operator can go to the Devices page, and add either real or simulated devices that use your device template. You can continue to modify and save your device template as you're making changes. When you want to push these changes out to the operator to view under the Devices page, you must select Publish each time.<br>
+After you publish a device template, an operator can go to the Devices page, and add either real or simulated devices that use your device template. You can continue to modify and save your device template as you're making changes. When you want to push these changes out to the operator to view under the Devices page, you must select Publish each time.
 
-You can rename or delete a template from the template's editor page.<br>
+You can rename or delete a template from the template's editor page.

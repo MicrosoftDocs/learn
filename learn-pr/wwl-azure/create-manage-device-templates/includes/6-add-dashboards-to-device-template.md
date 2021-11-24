@@ -1,6 +1,6 @@
 Views let you define views and forms that let an operator monitor and interact with a device. Views use visualizations such as charts to show telemetry and property values. You can create Default views, Custom views, and Forms.
 
-## Default views<br>
+## Default views
 
 Generating default views is a quick way to visualize your important device information. The three default views are:
 
@@ -10,20 +10,20 @@ Generating default views is a quick way to visualize your important device infor
 
 After you've selected Generate default views, they're automatically added under the Views section of your device template.
 
-## Custom views<br>
+## Custom views
 
 Add custom views to a device template to enable operators to visualize a device by using charts and metrics. You can add your own custom views to a device template.
 
-To add a view to a device template:<br>
+To add a view to a device template:
 
-1.  Go to your device template, and select Views.<br>
+1.  Go to your device template, and select Views.
 2.  Select Visualizing the Device.
 3.  Enter a name for your view in View name.
 4.  Select Start with a visual under add tiles and choose the type of visual for your tile. Then either select Add tile or drag and drop the visual onto the canvas. To configure the tile, select the gear icon.
 
-To test your view, select Configure preview device. This feature lets you see the view as an operator sees it after it's published. Use this feature to validate that your views show the correct data. Choose from the following options:<br>
+To test your view, select Configure preview device. This feature lets you see the view as an operator sees it after it's published. Use this feature to validate that your views show the correct data. Choose from the following options:
 
- -  No preview device.<br>
+ -  No preview device.
  -  The real test device you've configured for your device template.
  -  An existing device in your application, by using the device ID.
 
@@ -31,7 +31,7 @@ To test your view, select Configure preview device. This feature lets you see th
 
 Add forms to a device template to enable operators to manage a device by viewing and setting properties. Operators can only edit cloud properties and writable device properties. You can have multiple forms for a device template.
 
-1.  Select the Views node, and then select the Editing device and cloud data tile to add a new view.<br>
-2.  Change the form name to Manage device.<br>
-3.  Select the Customer Name and Last Service Date cloud properties, and the Target Temperature property. Then select Add section.<br>
-4.  Select Save to save your new form.<br>
+1.  Select the Views node, and then select the Editing device and cloud data tile to add a new view.
+2.  Change the form name to Manage device.
+3.  Select the Customer Name and Last Service Date cloud properties, and the Target Temperature property. Then select Add section.
+4.  Select Save to save your new form.
