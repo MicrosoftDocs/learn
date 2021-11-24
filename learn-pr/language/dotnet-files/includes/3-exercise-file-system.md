@@ -15,7 +15,7 @@ A starter project has already been created and you'll clone it using the integra
 
 1. Open Visual Studio Code.
 
-1. Open the Terminal window by selecting **View** > ***Terminal**.
+1. Open the Terminal window by selecting **View** > **Terminal**.
 
 1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
 
