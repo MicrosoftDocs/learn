@@ -1,3 +1,10 @@
+---
+author: johndowns
+ms.prod: learning-azure
+ms.topic: include
+ms.date: 11/14/2021
+ms.author: jodowns
+---
 ## Sign in to Azure
 
 ::: zone pivot="cli"
@@ -15,8 +22,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
-
-[!INCLUDE [Upgrade Azure CLI](azure-template-bicep-exercise-upgrade-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -45,8 +50,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
-
-[!INCLUDE [Upgrade Azure PowerShell](azure-template-bicep-exercise-upgrade-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 

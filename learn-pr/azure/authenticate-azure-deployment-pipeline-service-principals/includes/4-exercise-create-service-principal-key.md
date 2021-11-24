@@ -27,8 +27,6 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
-
 ### Sign in to Azure by using the Azure CLI
 
 1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
@@ -57,8 +55,6 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with **pwsh** or **PowerShell** as the shell.
 
-[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
-
 ### Sign in to Azure by using Azure PowerShell
 
 1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
@@ -79,8 +75,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
-     --skip-assignment
+     --name ToyWebsitePipeline
    ```
 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
