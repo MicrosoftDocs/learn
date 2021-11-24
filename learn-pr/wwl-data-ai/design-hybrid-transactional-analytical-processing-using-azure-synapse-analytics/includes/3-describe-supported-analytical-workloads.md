@@ -10,7 +10,7 @@ Azure Synapse Link for Cosmos DB allows these organizations to store data from t
 
 ## Retail real-time personalization.
 
-In retail, many web-based retailers will perform real-time basket analysis to make product recommendations to customers who are about to purchase products. This can increase revenues for organizations as the targeted suggestions may stimulate additional purchases of products commonly bought together.
+In retail, many web-based retailers will perform real-time basket analysis to make product recommendations to customers who are about to purchase products. Real-time basket analysis can increase revenues for organizations as the targeted suggestions may stimulate other purchases of products commonly bought together.
 
 ![A retail real-time personalization solution architecture](../media/real-time-personalization.png)
 
@@ -18,6 +18,6 @@ In retail, many web-based retailers will perform real-time basket analysis to ma
 
 Industrial IOT innovations have drastically reduced downtimes of machinery and increased overall efficiency across all fields of industry. One of such innovations is predictive maintenance analytics for machinery at the edge of the cloud.
 
-The following architecture leverages the cloud native HTAP capabilities of Azure Synapse Link for Azure Cosmos DB in IoT predictive maintenance:
+The following architecture applies the cloud native HTAP capabilities of Azure Synapse Link for Azure Cosmos DB in IoT predictive maintenance:
 
 ![An IOT predictive maintenance solution architecture](../media/iot-predictive-maintenance.png)
