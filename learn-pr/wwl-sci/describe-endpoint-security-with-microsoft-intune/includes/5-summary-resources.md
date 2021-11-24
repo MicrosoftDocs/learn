@@ -8,9 +8,9 @@ Now you've completed this module, you should be able to:
 
 ## Learn more
 
-- [Microsoft Intune is an MDM and MAM provider for your devices](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune?)
+- [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune?)
 - [Interactive guide: manage devices with Microsoft Endpoint Manager](https://mslearn.cloudguides.com/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager)
-- [Manage endpoint security in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security)
-- [What is Azure role-based access control?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Common ways to use Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/common-scenarios)
-- [Azure RBAC documentation](https://docs.microsoft.com/azure/role-based-access-control/)
+- [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security)
+- [What is Azure role-based access control?](/azure/role-based-access-control/overview)
+- [Common ways to use Microsoft Intune](/mem/intune/fundamentals/common-scenarios)
+- [Azure RBAC documentation](/azure/role-based-access-control/)
