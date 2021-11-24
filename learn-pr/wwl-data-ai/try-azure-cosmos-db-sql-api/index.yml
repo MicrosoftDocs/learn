@@ -3,7 +3,7 @@ uid: learn.wwl.try-azure-cosmos-db-sql-api
 metadata:
   title: Try Azure Cosmos DB SQL API
   description: "Learn how to use the Azure Cosmos DB SQL to create an account, and then use the account to create Cosmos DB resources."
-  ms.date: 11/23/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

@@ -6,7 +6,7 @@ The first step to getting started with Azure Cosmos DB is to create a new accoun
 
 When creating a new account in the portal, you must first select an API for your workload. The API selection cannot be changed after the account is created. For the remainder of this section, we will assume that the SQL API has been selected.
 
-![Select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra](../media/3-select-api.png)
+[![Select API option in the portal with a list of all current APIs including SQL, MongoDB, Graph, Table, and Cassandra](../media/3-select-api.png)](../media/3-select-api.png#lightbox)
 
 Next, the Azure portal will use a step-by-step wizard with tabs for various configuration options. Here you can configure options such as:
 
@@ -14,7 +14,7 @@ Next, the Azure portal will use a step-by-step wizard with tabs for various conf
 - The location (Azure region) for the account
 - Capacity mode (provisioned throughput or serverless)
 
-![Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account](../media/3-account-wizard.png)
+[![Wizard with various tabs and options for creating a new Azure Cosmos DB SQL API account](../media/3-account-wizard.png)](../media/3-account-wizard.png#lightbox)
 
 > [!NOTE]
 > Only the options in the **Basics** tab are required to create an Azure Cosmos DB account.
