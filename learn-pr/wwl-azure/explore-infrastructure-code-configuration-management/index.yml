@@ -16,8 +16,10 @@ abstract: |
   - Plan your environment configuration
   - Choose between imperative versus declarative configuration
   - Explain idempotent configuration&quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
