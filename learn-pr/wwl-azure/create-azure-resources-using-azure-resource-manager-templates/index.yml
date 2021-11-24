@@ -16,8 +16,10 @@ abstract: |
   - Understand Azure Resource Manager templates and template components
   - Manage dependencies and secrets in templates
   - Organize and modularize templates
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
