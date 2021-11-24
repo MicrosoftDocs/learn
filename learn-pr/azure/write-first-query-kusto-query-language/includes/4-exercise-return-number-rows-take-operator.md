@@ -22,7 +22,7 @@ The `take` operator is perfect for this task, because it returns a specific numb
 
 1. Check that your results are similar to the following example. The actual data in the rows might differ because it's selected arbitrarily.
 
-    :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of query output.":::
+    :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of query output with five arbirtrary rows.":::
 
 ## Explore the results
 

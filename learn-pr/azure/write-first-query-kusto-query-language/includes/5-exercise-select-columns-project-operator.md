@@ -15,7 +15,7 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 1. You should get results that look like the following image: 
 
-    :::image type="content" source="../media/4-project-operator.png" alt-text="Screenshot of project operator results.":::
+    :::image type="content" source="../media/4-project-operator.png" alt-text="Screenshot of project operator results with six columns.":::
 
 1. Notice that only the columns mentioned in the `project` operator appear in the output.
 
@@ -59,7 +59,7 @@ For example, there are other countries with states. So it might be helpful to re
 
 1.  You should get results that look like the following image:
 
-    :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of the project operator used to rename columns.":::
+    :::image type="content" source="../media/4-project-rename.png" alt-text="Screenshot of query results for a project operator that renames columns.":::
 
 1. Notice that the **State** column has been renamed to **US_State**. The **Injuries** column is new, and has been calculated as the sum of **InjuriesDirect** and **InjuriesIndirect**. The **Damage** column is also new, and has been calculated as the sum of **DamageCrops** and **DamageProperty**.
 

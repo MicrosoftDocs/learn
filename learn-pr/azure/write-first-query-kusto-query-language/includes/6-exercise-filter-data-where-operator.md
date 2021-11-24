@@ -4,7 +4,7 @@ Recall that you've filtered certain columns in or out of the displayed results. 
 
 Up to this point, all the operators you've used have returned selected columns. Now, let's take a look at specific rows of the data.
 
-The `where` operator filters results that satisfy a certain condition. In this first example, you'll compare an integer column to a minimum value by using the numerical operator *greater than* (`>`). Specifically, you only want to see storms that damaged property. So you'll look at rows of data where the damage property is greater than zero.
+The `where` operator filters results that satisfy a certain condition. In this first example, you'll compare an integer column to a minimum value by using the numerical operator *greater than* (`>`). Specifically, you only want to see storms that damaged property. So you'll look at rows of data where the damage to property is greater than zero.
 
 1. Run the following query:
 
@@ -17,7 +17,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. You should get results that look like the following image: 
     
-    :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of where operator.":::
+    :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of query results of a where operator with a numerical operator of greater than zero.":::
     
 1. Notice that all rows returned do, in fact, have **DamageProperty** values greater than zero.
     
@@ -47,7 +47,7 @@ It looks like quite a few types of storms have caused damage all over the US. Le
     
 1. You should get results that look like the following image: 
 
-    :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of where operators with query results.":::
+    :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of query results for two where operators.":::
 
 1. Notice that all records returned from this query are from Florida and have crop damage greater than zero.
 
@@ -67,7 +67,7 @@ One of the event types in the results of the last query is called **Thunderstorm
     
 1. You should get results that look like the following image: 
 
-    :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of where and has operators with query results.":::
+    :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of query results for where and has operators.":::
 
 1. Notice in the results that events such as tornadoes no longer appear, but **Thunderstorm Wind** and **Strong Wind** event types do appear.
 
@@ -94,6 +94,6 @@ The syntax for constructing this date range is as follows:
 
 1. You should get results that look like the following image:
 
-    :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of where operators that include a time range, along with results.":::
+    :::image type="content" source="../media/5-where-3.png" alt-text="Screenshot of query results for where operators that include a time range.":::
 
 1. Notice that all the dates are within the first half of the year, months 1 to 6. You might also see that even though you've selected events from the state of Florida, the state doesn't appear as an output column, because it wasn't specified in the `project` operator.
