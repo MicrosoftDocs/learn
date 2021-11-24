@@ -48,7 +48,7 @@ On your host machine, let's try to mount one of the network shares.
  
 1. Under **Data storage**, select **File shares**.
 
-1. Select the **data** file share. The **Data** fileshare pane appears. You can now browse the file share in your local browser.
+1. Select the **data** file share. The **Data** file share pane appears. You can now browse the file share in your local browser.
 
     > [!NOTE]
     > You might need to select the **Reports** file share to browse because an error page could be cached for the **Data** file share.
