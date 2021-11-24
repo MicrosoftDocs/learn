@@ -23,7 +23,7 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 To understand the impacts of storms in different US states, you want to get the total number of injuries and the total amount of damage. With the `project` operator, you can sum integer values from different columns and return the results in a new column. You can also rename columns to make them more meaningful to your analysis. 
 
-For example, there are other countries with states. So it might be helpful to rename the state column to so it's clear that the results are for US states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for US states.
+For example, there are other countries with states. It might be helpful to rename the state column so it's clear that the results are for US states. Let's see how to change your previous query so you get the total number of injuries and amount of damage for US states.
 
 1. Update your previous query to make a new column that shows the sum of **InjuriesDirect** and **InjuriesIndirect**:
 

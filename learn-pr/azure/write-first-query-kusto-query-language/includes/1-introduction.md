@@ -1,4 +1,4 @@
-Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical models. 
+Kusto Query Language (KQL) lets you explore your data to discover patterns, identify anomalies and outliers, and create statistical models. 
 
 ## Example scenario
 
