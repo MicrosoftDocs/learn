@@ -23,7 +23,7 @@ For example, if you want to configure a dashboard that will be used to monitor t
 :::image type="content" source="../media/m12-l05-new-dashboard-d5b012b6.png" alt-text="Screen shot that shows how to add a tile to the dashboard in the IoT Central application.":::
 
 
-Now when an operator views the default application dashboard, they see the new tile with the Temperature for the device. Each tile has a pre-selected graph, chart, etc. that will be displayed when the tile is created. However, users can choose to edit and change this visualization.<br>
+Now when an operator views the default application dashboard, they see the new tile with the Temperature for the device. Each tile has a pre-selected graph, chart, etc. that will be displayed when the tile is created. However, users can choose to edit and change this visualization.
 
 ## Edit tiles
 

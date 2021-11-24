@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-business-integration.introduction-to-rules
-title: Examine the configuration of Rules in Azure IoT Central
+title: Examine the configuration of rules in Azure IoT Central
 metadata:
-  title: Examine the configuration of Rules in Azure IoT Central
-  description: "Examine the configuration of Rules in Azure IoT Central"
-  ms.date: 11/22/2021
+  title: Examine the configuration of rules in Azure IoT Central
+  description: "Examine the configuration of rules in Azure IoT Central"
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

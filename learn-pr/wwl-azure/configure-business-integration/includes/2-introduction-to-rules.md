@@ -7,7 +7,7 @@ Use the target devices section to select on what kind of devices this rule will 
 :::image type="content" source="../media/m12-l04-rule-target-devices-1f9966bd.png" alt-text="Screen shot that shows how to configure the target devices section of an IoT Central rule to target specific devices.":::
 
 
-## Use multiple conditions<br>
+## Use multiple conditions
 
 Conditions are what rules trigger on. You can add multiple conditions to a rule and specify if the rule should trigger when all the conditions are true or any of the conditions are true.
 
@@ -16,7 +16,7 @@ In the following screenshot, the conditions check when the temperature is greate
 :::image type="content" source="../media/m12-l04-rule-conditions-7c82abce.png" alt-text="Screen shot that shows how to add multiple conditions to a rule and specify the conditions that will trigger the rule.":::
 
 
-## Use aggregate windowing<br>
+## Use aggregate windowing
 
 You can specify a time aggregation to trigger your rule based on a time window. Rule conditions evaluate aggregate time windows on telemetry data as tumbling windows. If there are any property filters in the rule, they're applied at the end of the time window. In the screenshot below, the time window is five minutes. Every five minutes, the rule evaluates on the last five minutes of telemetry data. The data is only evaluated once in the window to which it corresponds.
 
