@@ -14,8 +14,6 @@ The following video introduces basic concepts about gaming and disability. It in
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOfIK]
 
-
-
 ## Solve for one, extend to many
 
 The inclusive design principle “solve for one, extend to many” introduces the premise that intentional design efforts geared toward creating accessible experiences for people with disabilities result in universally beneficial features and settings. For example, accessible automatic doors for wheelchair access are also often used by the following individuals:
