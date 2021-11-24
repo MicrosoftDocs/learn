@@ -35,12 +35,7 @@ Some domain policies may prevent you from enabling autologon or disabling the sc
 In such cases, you may need to seek an exemption from the domain policy or run the agent on a workgroup computer where the domain policies don't apply.
 
 > [!NOTE]
-> There are security risks when you enable automatic log in or disable the screen saver. You enable other users to walk up to the computer and use the account that automatically logs on. If you configure the agent to run in this way, you must ensure the computer is physically protected; for example, located in a secure facility. If you use Remote Desktop to access the computer on which an agent is running with autologon, simply closing the Remote Desktop causes the computer to be locked, and any UI tests that run on this agent may fail.To avoid this, use the tscon command to disconnect from Remote Desktop. For example:
-
-```Cmd
-%windir%\System32\tscon.exe 1 /dest:console
-
-```
+> There are security risks when you enable automatic log in or disable the screen saver. You enable other users to walk up to the computer and use the account that automatically logs on. If you configure the agent to run in this way, you must ensure the computer is physically protected; for example, located in a secure facility. If you use Remote Desktop to access the computer on which an agent is running with autologon, simply closing the Remote Desktop causes the computer to be locked, and any UI tests that run on this agent may fail. To avoid this, use the tscon command to disconnect from Remote Desktop.<br><br>For example:<br>%windir%\\System32\\tscon.exe 1 /dest:console
 
 ## Agent version and upgrades
 
