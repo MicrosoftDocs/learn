@@ -31,8 +31,10 @@ products:
 units:
 - learn.intro-to-gaming.introduction
 - learn.intro-to-gaming.approach-gameplay
-- learn.intro-to-gaming.core-game-elements
-- learn.intro-to-gaming.player-experiences
+- learn.intro-to-gaming.visual-accessibility
+- learn.intro-to-gaming.audio-accessibility
+- learn.intro-to-gaming.cognitive-accessibility
+- learn.intro-to-gaming.input-accessibility
 - learn.intro-to-gaming.summary
 badge:
   uid: learn.intro-to-gaming.badge

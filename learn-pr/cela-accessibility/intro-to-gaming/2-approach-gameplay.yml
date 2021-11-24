@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-gaming-accessibility
 durationInMinutes: 8
 content: |
-  [!include[](includes/01-approach-gameplay.md)]
+  [!include[](includes/2-approach-gameplay.md)]
 quiz:
   title: Check your knowledge
   questions:
