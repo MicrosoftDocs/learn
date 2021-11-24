@@ -16,8 +16,10 @@ abstract: |
   - Understand and work with Azure CLI
   - Run templates using Azure CLI
   - Explains Azure CLI commands &quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
