@@ -41,6 +41,7 @@ jobs:
 
 ```
 
-Note: if the startup job in the example above fails, the build job won't execute.
+> [!NOTE]
+> If the startup job in the example above fails, the build job won't execute.
 
 For more information on job dependencies, see the section **Creating Dependent Jobs** at [Managing complex workflows](https://docs.github.com/actions/learn-github-actions/managing-complex-workflows).
