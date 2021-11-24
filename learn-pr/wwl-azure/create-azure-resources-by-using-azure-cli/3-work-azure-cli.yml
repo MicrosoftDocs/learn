@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-work-with-azure-cli.md)]
+  [!include[](includes/3-work-azure-cli.md)]
