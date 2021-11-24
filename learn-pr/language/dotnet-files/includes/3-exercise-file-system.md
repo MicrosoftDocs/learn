@@ -40,11 +40,11 @@ A starter project has already been created and you'll clone it using the integra
    > [!TIP]
    > At this point Visual Studio Code will prompt you that required assets to build and run the project are missing.
    >
-   >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from teh project.":::
+   >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from the project.":::
    >
-   > Select the triangle with the exclamation point and then select **Relaunch temminal**. These files allow Visual Studio Code to run the debug the project.
+   > Select the triangle with the exclamation point and then select **Relaunch terminal**. These files allow Visual Studio Code to run the debug the project.
 
-1. Expand the *stores* folder and each of the numbered folders inside.
+1. Expand the **stores** folder and each of the numbered folders inside.
 
     :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
