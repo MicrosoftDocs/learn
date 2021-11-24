@@ -1,0 +1,1 @@
+You will be briefing your company on Azure IoT Central's support for device management so that they can evaluate whether they have the resources required to support an Azure IoT Central solution. Your understanding of Azure IoT Central's device management features will enable you to provide the input that the company needs for their evaluation.
