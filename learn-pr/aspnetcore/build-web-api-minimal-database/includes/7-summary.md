@@ -6,3 +6,5 @@ Continue to learn about minimal APIs in .NET 6:
 
 - [Get started with minimal APIs](https://minimal-apis.github.io/?azure-portal=true)
 - [Minimal API playground](https://github.com/DamianEdwards/MinimalApiPlayground?azure-portal=true)
+
+[!include[](../../../includes/dotnet-summary.md)]

@@ -1,16 +1,16 @@
-In this exercise, you are looking to build the front-end app. You will do so by taking a series of steps, from scaffolding, to building out the view you need to adding data to the app.
+In this exercise, you build the front-end app. You start with a scaffold, and then you build out the view you need and add data to the app.
 
 ## Scaffold an app
 
-To scaffold an app, you will use the `create-react-app` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
+To scaffold an app, you use the `create-react-app` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
 
-1. Create the app using `npx create-react-app`:
+1. Create the app by using `npx create-react-app`:
 
     ```bash
     npx create-react-app pizza-web
     ```
 
-    What you get is now a directory _pizza-web_ that contains your scaffolded React app. 
+    What you get is a directory, _pizza-web_, that contains your scaffolded React app. 
 
 1. Start the app by calling `yarn start`:
 
@@ -27,9 +27,9 @@ To scaffold an app, you will use the `create-react-app` scaffolder. By using `np
 
 ## Build the master view
 
-Next, you'll build a component that's capable of handling a list of pizzas.
+Next, you build a component that's capable of handling a list of pizzas.
 
-1. Create a file _Main.js_ and give it the following content:
+Create a file, _Main.js_, and give it the following content:
 
    ```javascript
    import React, { useState } from "react";
@@ -81,16 +81,16 @@ Next, you'll build a component that's capable of handling a list of pizzas.
    export default Main;
    ```
 
-   What you have at this point are two components:
+What you have at this point are two components:
 
-   - **Pizza**: This component is capable on rendering on the `Pizza` object. It also listens to changes from input and runs the `update()` function, if either text field changes. 
-   - **Main**: This component renders the initial data, a list of pizzas.
+- **Pizza:** This component is capable of rendering on the `Pizza` object. It also listens to changes from input and runs the `update()` function, if either text field changes. 
+- **Main:** This component renders the initial data, a list of pizzas.
 
-Worth noting is the use of `dirty`, a variable that keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true` and the **Save** button is being rendered. If the **Save** button is invoked, the `onSave()` method will be invoked. Ideally, this place in the code, is the place where we want to make any calls to a back end, to notify the back end that a Pizza item has been changed.
+Take note of the use of the `dirty` variable. This variable keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true`, and the **Save** button is rendered. If the **Save** button is invoked, the `onSave()` method will be invoked. Ideally, this place in the code is where you want to make any calls to a back end, to notify the back end that a pizza item has been changed.
 
 ## Add some CSS
 
-It's always great if we can make the UI better looking. There's more than one way to do so for React. In this case, we will use the `styled-components` library.
+It's always great to improve the appearance of the UI. There's more than one way to do so for React. In this case, you use the `styled-components` library.
 
 1. Run `yarn add` to add the `styled-components` library:
 
@@ -98,7 +98,7 @@ It's always great if we can make the UI better looking. There's more than one wa
    yarn add styled-components
    ```
 
-1. At this point, you also need to configure the _package.json_. Add the following entry:
+1. Configure _package.json_ by adding the following entry:
 
    ```json
    "resolutions": {
@@ -106,15 +106,15 @@ It's always great if we can make the UI better looking. There's more than one wa
    }
    ```
 
-   This entry will remove loads of warnings you would otherwise get.
+   This entry will remove lots of warnings that you would otherwise get.
 
 1. Make the following changes to _Main.js_ (the changes are highlighted):
 
    :::code language="javascript" source="../code/minimal-spa-add-some-css.js" highlight="2, 4-31, 55, 57, 60, 63, 65":::
 
-   Now, you have components that render with a decent appearance. Next, ensure your program is using this component.
+   Now, you have components that render with a decent appearance. Next, ensure that your program is using this component.
 
-1. Open _App.js_ and ensure it has the following content:
+1. Open _App.js_, and ensure that it has the following content:
 
    ```javascript
     import './App.css';
@@ -143,6 +143,6 @@ It's always great if we can make the UI better looking. There's more than one wa
 
    :::image type="content" source="../media/ui.png" alt-text="Screenshot of the rendered Pizza app.":::
 
-1. Type in an input field, it should mark it as *dirty* and the **Save** button for that item should appear.
+1. Type in an input field. It should mark it as *dirty*, and the **Save** button for that item should appear.
 
    :::image type="content" source="../media/ui-changed.png" alt-text="Screenshot that shows editing an item in the Pizza app.":::
