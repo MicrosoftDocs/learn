@@ -7,4 +7,4 @@ In this module, you will:
  -  Examine the device hardware and cloud service components of an IoT solution.
  -  Review some of the device software options and Azure IoT technologies that are available to you.
 
-By the end of this module, you will be able to describe the Azure IoT services and tools that you will use to develop an IoT solution.
+By the end of this module, you will be able to describe the Azure IoT services and tools that you will use to develop an IoT solution. 
