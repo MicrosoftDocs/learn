@@ -62,7 +62,7 @@ You need to find all the sales.json files in all folders.
 
 1. Select the `Program.cs` file to open it in the editor.
 
-    :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot that shows the project folder structure.":::
+    :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot that shows the location o the Program dot c s file.":::
 
 1. Import the `System.IO` and `System.Collections.Generic` namespaces at the top of the file.
 
