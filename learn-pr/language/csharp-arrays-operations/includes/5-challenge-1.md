@@ -16,7 +16,7 @@ Begin with the following line of code.
 string pangram = "The quick brown fox jumps over the lazy dog";
 ```
 
-Write the code necessary to reverse the letters of each word in place and display the result.  In other words, don't just reverse every letter in the variable `pangram`.  Instead, you'll need to reverse just the letters in each word, but print the reversed word in it's original position in the message.
+Write the code necessary to reverse the letters of each word in place and display the result.  In other words, don't just reverse every letter in the variable `pangram`.  Instead, you'll need to reverse just the letters in each word, but print the reversed word in its original position in the message.
 
 If you're successful, you should see the following output.
 
