@@ -41,9 +41,8 @@ az spring-cloud app identity assign \
    --name application
 ```
 
-Once this identity is assigned, you'll need to use the application's Principal ID and Tenant ID
-as environment variables. Those variables will be used by the Azure Key Vault Spring Boot Starter
-to access Azure Key Vault.
+You'll also need to configure your Spring Boot application with two environment variables.
+The first variable is to enable Azure Key Vault. The second variable is to give the URL to your Azure Key Vault instance.
 
 ```bash
 az spring-cloud app update \
@@ -55,7 +54,7 @@ az spring-cloud app update \
    AZURE_KEYVAULT_URI=https://$AZ_KEY_VAULT_NAME.vault.azure.net/
 ```
 
-Then, you'll need to grant your application access to the Azure Key Vault.
+Then, you'll need to grant your application access to the Azure Key Vault instance.
 
 ```bash
 AZ_SPRING_CLOUD_PRINCIPAL_ID=$(az spring-cloud app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.principalId')
