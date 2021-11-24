@@ -10,4 +10,4 @@ For this section, you will explore and get hands-on with the .NET SDK for the Az
 After completing this module, you'll be able to:
 
 - Integrate the Microsoft.Azure.Cosmos SDK library from NuGet
-- Connect to an Azure Cosmos DB SQL API account using the SDK and .NET
+- Connect to an Azure Cosmos DB SQL API account using the SDK and .NET 
