@@ -67,7 +67,7 @@ Azure IoT Central stores application data in the cloud. Application data stored 
 
 Azure IoT Central uses a time series store for the measurement data sent from your devices. IoT Hub enables:
 
- -  Data ingestion at scale in the cloud.<br>
+ -  Data ingestion at scale in the cloud.
  -  Device management.
  -  Secure device connectivity.
 

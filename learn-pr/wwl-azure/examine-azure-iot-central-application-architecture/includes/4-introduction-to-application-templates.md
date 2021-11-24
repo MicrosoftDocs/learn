@@ -10,7 +10,7 @@ Application templates consist of:
 
 You choose the application template when you create your application. You can't change the template after the application is created.
 
-## Custom templates<br>
+## Custom templates
 
 If you want to create your application from scratch, choose the Custom application template. The custom application template ID is iotc-pnp-preview.
 

@@ -44,7 +44,7 @@ This device template includes:
  -  Cloud properties that are not stored on the device.
  -  Customizations, dashboards, and forms that are part of your IoT Central application.
 
-As a solution builder, you have several options for creating device templates:<br>
+As a solution builder, you have several options for creating device templates:
 
  -  Import a device capability model from the Azure Certified for IoT device catalog and then add any cloud properties, customizations, and dashboards your IoT Central application needs.
  -  Design the device template in IoT Central and then implement its device capability model in your device code.
