@@ -4,13 +4,12 @@ title: Explore Git branch model for continuous delivery
 metadata:
   title: Explore Git branch model for continuous delivery
   description: "Explore Git branch model for continuous delivery"
-  ms.date: 11/23/2021
+  ms.date: 11/24/2021
   author: wwlpublish
-  ms.author: lumac
+  ms.author: luiz.macedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 8
 content: |

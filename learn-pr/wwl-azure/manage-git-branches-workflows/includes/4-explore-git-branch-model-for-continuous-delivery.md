@@ -26,7 +26,7 @@ Let's cover the principles of what we suggest:
      -  Changes from feature branches to the main only flow through pull requests.
      -  Name your feature to reflect their purpose.
 
-List of branches
+List of branches:
 
 ```Cmd
 features/feature-area/feature-name
@@ -109,7 +109,7 @@ Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. 
 5.  Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
 
 ```Cmd
-  az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `   
+  az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 ` 
           -d "#Merge feature-1 to main" `
           -s feature/myFeature-1 -t main -r myWebApp -p
   $prj -i $i
