@@ -1,3 +1,5 @@
+Intro to cognitive accessibility
+
 ## Identifying cognitive elements
 
 After players receive information provided by the game, they must then decide how they want to use this information to proceed. These decisions commonly require players to engage in cognitive processes like:
@@ -9,11 +11,6 @@ After players receive information provided by the game, they must then decide ho
 These cognitive processes may be more difficult to execute for players with learning, attention, or memory-related disabilities. When accessibility supports and features that address these cognitive demands are not provided, these players can experience unintentional barriers.
 
 In the following video, you'll learn how to identify common cognitive elements that can pose these barriers.
-
-
-
-
-
 
 ## Cognition and disability
 

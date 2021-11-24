@@ -1,3 +1,5 @@
+Intro to input accessibility
+
 ## Identifying input-based elements
 
 After cognitive decisions are made about next steps in the game, players must act upon those decisions. This typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
@@ -57,6 +59,3 @@ Common game mechanics that tend to introduce fatigue more readily include input 
 - Change input demands from button holds to button presses
 - Allow players to pause a game or initiate game saves at any point in time
 - Provide toggle-based settings like auto-fire, auto-run, and more
-
-
-

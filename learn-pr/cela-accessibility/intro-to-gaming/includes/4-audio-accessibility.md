@@ -1,4 +1,4 @@
-
+This is an introduction to audio accessibility
 
 ## Identifying audio elements
 
@@ -30,6 +30,3 @@ Approaches that should be considered for players with partial hearing would incl
 
 - The ability to adjust the volume levels for individual class of audio (player chat, music, effects, UI, dialogue, and voice chat).  
 - The option to enable mono audio output.
-
-
-
