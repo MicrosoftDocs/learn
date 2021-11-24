@@ -60,7 +60,7 @@ The release gate doesn't just fail or pass a single time. It can keep evaluating
     :::image type="content" source="../media/pending-approval-6be14410.png" alt-text="Pending approval.":::
 
 
-After a short while, you should see the release continuing and then enter the phase where the gates will process.
+    After a short while, you should see the release continuing and then enter the phase where the gates will process.
 
     :::image type="content" source="../media/05-09-processing-gates-b2c24934.png" alt-text="Processing gates.":::
 
@@ -88,7 +88,7 @@ You'll notice that the gate failed the first time it was checked. It will be stu
     :::image type="content" source="../media/critical-bugs-1191cf45.png" alt-text="Critical bugs.":::
 
 
-You'll see that there's one critical bug that needs to be resolved.
+    You'll see that there's one critical bug that needs to be resolved.
 
     :::image type="content" source="../media/05-13-one-critical-bug-92f59f48.png" alt-text="One critical bug.":::
 

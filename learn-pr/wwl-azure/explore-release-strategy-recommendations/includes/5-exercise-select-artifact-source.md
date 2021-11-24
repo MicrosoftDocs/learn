@@ -86,7 +86,7 @@ Let's return to adding our Build output as the artifact source.
     :::image type="content" source="../media/build-artifact-configured-009b13b3.png" alt-text="Build artifact configured.":::
 
 
-We've now added the artifacts that we'll need for later walkthroughs.
+    We've now added the artifacts that we'll need for later walkthroughs.
 
     :::image type="content" source="../media/artifact-added-5388057e.png" alt-text="Artifacts added.":::
 

@@ -4,9 +4,9 @@ title: Examine considerations for deployment to stages
 metadata:
   title: Examine considerations for deployment to stages
   description: "Examine considerations for deployment to stages"
-  ms.date: 11/23/2021
+  ms.date: 11/24/2021
   author: wwlpublish
-  ms.author: lumac
+  ms.author: luiz.macedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

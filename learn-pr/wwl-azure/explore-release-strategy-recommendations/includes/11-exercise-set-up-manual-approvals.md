@@ -96,6 +96,6 @@ You can see that a release has been manually triggered and that the Development 
     :::image type="content" source="../media/development-approval-e17c67bf.png" alt-text="Development approval.":::
 
 
-The deployment stage will then continue. Watch as each stage proceeds and succeeds.
+    The deployment stage will then continue. Watch as each stage proceeds and succeeds.
 
     :::image type="content" source="../media/all-succeeded-150d65cc.png" alt-text="All succeeded stages.":::
