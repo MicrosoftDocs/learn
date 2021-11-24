@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction to managing multiple environments by using Bicep and GitHub Actions.
+  ms.date: 11/08/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

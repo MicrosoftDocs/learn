@@ -15,13 +15,10 @@ An Azure Storage account is the top-level container for all of your Azure Blob s
 
 ## Types of storage accounts
 
-Azure Storage offers several types of storage accounts. Each type supports different features and has its own pricing model. 
+Azure Storage offers two performance levels of storage accounts, standard and premium. Each performance level supports different features and has its own pricing model. 
 
-* **General-purpose v2 accounts**: Basic storage account type for blobs, files, queues, and tables. Recommended for most scenarios using Azure Storage.
-* **General-purpose v1 accounts**: Legacy account type for blobs, files, queues, and tables. Use general-purpose v2 accounts instead when possible.
-* **Block blob storage accounts**: Blob-only storage accounts with premium performance characteristics. Recommended for scenarios with high transactions rates, using smaller objects, or requiring consistently low storage latency.
-* **FileStorage storage accounts**: Files-only storage accounts with premium performance characteristics. Recommended for enterprise or high-performance scale applications.
-* **Blob storage accounts**: Blob-only storage accounts. Use general-purpose v2 accounts instead when possible.
+* **Standard:** This is the standard general-purpose v2 account and is recommended for most scenarios using Azure Storage.
+* **Premium:** Premium accounts offer higher performance by using solid-state drives. If you create a premium account you can choose between three account types, block blobs, page blobs, or file shares.
 
 The following table describes the types of storage accounts recommended by Microsoft for most scenarios using Blob storage.
 
@@ -30,6 +27,8 @@ The following table describes the types of storage accounts recommended by Micro
 | Standard general-purpose v2 | Blob, Queue, and Table storage, Azure Files | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for NFS file shares in Azure Files, use the premium file shares account type. |
 | Premium block blobs | Blob storage | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transactions rates, or scenarios that use smaller objects or require consistently low storage latency. |
 | Premium page blobs | Page blobs only | Premium storage account type for page blobs only. |
+| Premium file shares | Azure Files | Premium storage account type for file shares only. |
+
 
 ## Access tiers for block blob data
 

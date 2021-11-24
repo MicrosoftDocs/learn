@@ -6,8 +6,7 @@ Before your app can get a token from the Microsoft identity platform, it must be
 * **Redirect URI/URL**: One or more endpoints at which your app will receive responses from the Microsoft identity platform. (For native and mobile apps, this is a URI assigned by the Microsoft identity platform.)
 * **Application Secret**: A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the register an application page.](../media/az500-app-registration.png)
+![Screenshot of the register an application page.](../media/az500-app-registration.png)
 
 ### Getting an access token
 
