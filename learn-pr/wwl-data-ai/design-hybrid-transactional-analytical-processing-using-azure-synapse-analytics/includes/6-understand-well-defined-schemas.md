@@ -1,6 +1,6 @@
 There are two constraints that apply to the schema inferencing done by the autosync process as it transparently maintains the schema in the analytical store based on items added or updated in the transactional store:
-- You can have a maximum of unique 1000 properties at any nesting level within the items stored in a transactional store. Any property above this and its associated values will not be present in the analytical store.
-- Property names must be unique when compared in a case insensitive manner. For example, the properties {"name": "Franklin Ye"} and {"Name": "Franklin Ye"} cannot exit at the same nesting level in the same item or different items within a container given that “name” and “Name” are not unique when compared in a case insensitive manner.
+- You can have a maximum of 1000 properties at any nesting level within the items stored in a transactional store. Any property above this and its associated values will not be present in the analytical store.
+- Property names must be unique when compared in a case insensitive manner. For example, the properties {"name": "Franklin Ye"} and {"Name": "Franklin Ye"} cannot quit at the same nesting level in the same item or different items within a container given that “name” and “Name” are not unique when compared in a case insensitive manner.
 
 There are two modes of schema representation for data stored in the analytical store. These modes have tradeoffs between the simplicity of a columnar representation, handling the polymorphic schemas, and simplicity of query experience:
 - Well-defined schema representation
@@ -28,7 +28,7 @@ The following code fragment is an example JSON document representing a customer 
 }
 ```
 
-The well-defined schema representation has the top-level properties of the documents exposed as columns when queried from both Synapse SQL and Synapse Spark, along with column values that representing the property values, except in the case where those values are of object type or array type, in which case a JSON representation of the properties values contained within are assigned to the column values, and have the following additional considerations:
+The well-defined schema representation has the top-level properties of the documents exposed as columns when queried from both Synapse SQL and Synapse Spark, along with column values that represent the property values. Except in the case where those values are of an object type or array type, in which case a JSON representation of the property values are assigned to the column values, and have the following additional considerations:
 
 1.	A property always has the same type across multiple items.
     
@@ -42,7 +42,7 @@ The well-defined schema representation has the top-level properties of the docum
     
     For example, {"postcode": [98065, “CR30AA”]} is not a well-defined schema because the array contains a mix of integer and string types.
 
-Importantly when the Azure Cosmos DB analytical store is using well-defined schema representation mode the data stored in documents added to the container that violates the above rules, these documents will not be included in the analytical store.
+Importantly, when the Azure Cosmos DB analytical store is using a well-defined schema representation mode of the data stored in documents added to the container that violates the above rules, these documents will not be included in the analytical store.
 
 When queried from Azure Synapse Analytics, the analytical store record sample will look similar to the following:
 

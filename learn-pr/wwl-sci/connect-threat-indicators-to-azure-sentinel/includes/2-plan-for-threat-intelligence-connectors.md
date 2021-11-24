@@ -8,7 +8,7 @@ Microsoft Sentinel lets you import the threat indicators your organization uses,
 
 - Notebooks can use threat indicators when you investigate anomalies and hunt for malicious behaviors.
 
-You can stream threat indicators to Microsoft Sentinel by using one of the integrated threat intelligence platform (TIP) products, connecting to TAXII servers, or direct integration with the Microsoft Graph Security Indicators API.
+You can stream threat indicators to Microsoft Sentinel by using one of the integrated Threat Intelligence Platform (TIP) products, connecting to TAXII servers, or direct integration with the Microsoft Graph Security Indicators API.
 
 There are two Threat Intelligence Connectors.  The TAXII Connector and the Threat Intelligence Platforms Connector.  Both connectors write to the ThreatIntelligenceIndicator table.  The two connectors have different configuration procedures.
 
