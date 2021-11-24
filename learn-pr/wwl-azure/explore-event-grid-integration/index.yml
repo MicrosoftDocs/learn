@@ -3,7 +3,7 @@ uid: learn.wwl.explore-event-grid-integration
 metadata:
   title: Explore Event Grid integration
   description: "This module provides you with experience configuring a solution to use IoT Hub events and built-in Event Grid integration to trigger downstream business processes and deliver event-based notifications using Logic Apps."
-  ms.date: 11/22/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
