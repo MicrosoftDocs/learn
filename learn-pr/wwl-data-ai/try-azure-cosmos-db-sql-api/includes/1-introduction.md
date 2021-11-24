@@ -3,4 +3,4 @@ The first step to getting started with Azure Cosmos DB is to create a new accoun
 After completing this module, you'll be able to:
 
 - Create a new Azure Cosmos DB SQL API account
-- Create database, container, and item resources for an Azure Cosmos DB SQL API account
+- Create database, container, and item resources for an Azure Cosmos DB SQL API account 
