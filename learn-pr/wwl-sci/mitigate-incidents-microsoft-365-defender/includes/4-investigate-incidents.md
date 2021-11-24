@@ -28,21 +28,19 @@ The devices tab lists all the devices where alerts related to the incident are s
 
 Clicking the name of the machine where the attack was conducted navigates you to its Device page, where you can see alerts that were triggered on it and related events provided to ease investigation.
 
-**The Device page is the same page from Defender for Endpoint.**
-
 ## Users
 
 See users that have been identified to be part of or related to a given incident.
 
-Clicking the username navigates you to the **user's Cloud App Security page,** where further investigation can be conducted.
+Clicking the username navigates you to the **user's Microsoft Defender for Cloud Apps page,** where further investigation can be conducted.
 
 ## Mailboxes
 
-Investigate mailboxes that have been identified to be part of or related to an incident. To do further investigative work, selecting the mail-related alert will open **Microsoft Defender for Office 365,** where you can take remediation actions.
+Investigate mailboxes that have been identified to be part of or related to an incident.
 
 ## Investigations
 
-Select Investigations to see all the automated investigations triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in **Microsoft Defender for Endpoint and Defender for Office 365.**
+Select Investigations to see all the automated investigations triggered by alerts in this incident. The investigations will perform remediation actions or wait for analyst approval of actions.
 
 Select an investigation to navigate to its Investigation details page to get full information on the investigation and remediation status. If any actions are pending for approval as part of the investigation, they will appear in the Pending actions tab.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-add-multiple-environments-your-workflow
+title: Exercise - Add multiple environments to your workflow
+metadata:
+  unitType: exercise
+  title: Exercise - Add multiple environments to your workflow
+  description: Update a deployment workflow to deploy to two environments, and use a called workflow with parameters.
+  ms.date: 11/08/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-add-multiple-environments-your-workflow.md)]

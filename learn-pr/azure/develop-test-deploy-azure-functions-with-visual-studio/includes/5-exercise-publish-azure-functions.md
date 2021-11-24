@@ -26,9 +26,9 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     > [!NOTE]
     > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
-"
+
     | Setting | Value |
-    | --- | --- |
+    | ------- | ----- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
     | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn>. |
