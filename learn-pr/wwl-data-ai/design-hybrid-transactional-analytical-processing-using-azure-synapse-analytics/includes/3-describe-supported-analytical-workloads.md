@@ -10,7 +10,7 @@ Azure Synapse Link for Cosmos DB allows these organizations to store data from t
 
 ## Retail real-time personalization.
 
-In retail, many web-based retailers will perform real-time basket analysis to make product recommendations to customers who are about to purchase products. This increased revenues for these organizations as the provided targeted suggestions at the point of sales
+In retail, many web-based retailers will perform real-time basket analysis to make product recommendations to customers who are about to purchase products. This can increase revenues for organizations as the targeted suggestions may stimulate additional purchases of products commonly bought together.
 
 ![A retail real-time personalization solution architecture](../media/real-time-personalization.png)
 
