@@ -16,8 +16,10 @@ abstract: |
   - Describe Azure Automation State Configuration
   - Implement DSC and Linux Automation on Azure
   - Plan for hybrid management&quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
