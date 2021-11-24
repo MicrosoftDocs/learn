@@ -4,7 +4,7 @@ To complete the exercises in this module, you need an Azure account.  If you don
 
 ## Connect to the data
 
-In this example, you'll use the Azure Data Explorer web interface. However, Kusto Query Language can also be used in Azure Monitor Logs, Azure Sentinel, and other services. You'll need to connect only once, and you'll continue to use this data connection for all queries in the following units.
+In this example, you'll use the Azure Data Explorer web interface as a query editor. However, Kusto Query Language can also be used in Azure Monitor Logs, Azure Sentinel, and other services. You need to connect only once, and you'll continue to use this data connection for all queries in the following units.
 
 1. Use your Azure account to sign in to the [Azure Data Explorer web UI](https://dataexplorer.azure.com/).
 1. On the left pane, select **Add Cluster**.
@@ -24,6 +24,6 @@ Queries always run in the context of a database, so you need to connect to a spe
 
     :::image type="content" source="../media/3-help-cluster.png" alt-text="Screenshot that shows the organization of the help cluster.":::
 
-1. Expand the **Samples** database, **Tables**, and the **Storm_Events** folder. A list of tables appears below the database. You'll be using the **StormEvents** table.
+1. Expand the **Samples** database, the **Tables** folder, and the **Storm_Events** folder. A list of tables appears. You'll be using the **StormEvents** table.
 
 Now you're ready to run queries on the **StormEvents** table. You'll learn how to do that in the following exercise.

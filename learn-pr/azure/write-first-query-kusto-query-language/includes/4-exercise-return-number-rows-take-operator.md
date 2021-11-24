@@ -15,18 +15,18 @@ The `take` operator is perfect for this task, because it returns a specific numb
     | take 5
     ```
     
-1. Paste in the query editor that you set up earlier.
+1. Paste the query into the query editor that you set up earlier.
 1. Notice that the query begins with a reference to the data table, **StormEvents**. This data is piped into the first and only operator, which then selects five arbitrary rows.
 
 1. Run the query by either selecting the **Run** button above the query window or selecting **Shift**+**Enter** on the keyboard.
 
-1. Check that your results are similar to the following example. The actual data in the rows might differ because it's selected arbitrarily.
+1. Check that your results are similar to the following example. The actual data in the rows might differ because the rows are selected arbitrarily.
 
     :::image type="content" source="../media/3-take-5.png" alt-text="Screenshot of query output with five arbitrary rows.":::
 
 ## Explore the results
 
-What do you notice about the results? Scroll all the way to the right of the dataset. Here are a few takeaways: 
+What do you notice about the results? Scroll to view the whole dataset. Here are a few takeaways: 
 
 * Each event has a start and end time, from the year 2007.
 * The **EventType** column shows different kinds of storms.

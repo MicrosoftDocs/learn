@@ -1,8 +1,8 @@
 Recall that in the storm events example, you've narrowed down events by time range, keywords, and values in a particular column. Now you want to organize these results to see the most damaging storm events first.
 
-## Use the sort operator
+## Use the `sort` operator
 
-It's difficult to make sense of unordered data. Let's make it a bit easier to understand by organizing the order in which the results are presented. You want to know what were the events with the highest damage to property, so you'll order the results by the field `DamageProperty`.
+It's difficult to make sense of unordered data. Let's make it a bit easier to understand by organizing the order in which the results are presented. You want to know which events caused the highest damage to property, so you'll order the results by the field `DamageProperty`.
 
 1. Run the following query:
 
@@ -38,7 +38,7 @@ Each region has unique weather patterns, so now you want to know which events in
 
 1. Notice that now you've gotten a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the property-damage values are sorted in descending order.
 
-## Use the top operator
+## Use the `top` operator
 
 Instead of sorting and scanning the top for a certain number of results, you can use the `top` operator to show a specific number of top results.
 

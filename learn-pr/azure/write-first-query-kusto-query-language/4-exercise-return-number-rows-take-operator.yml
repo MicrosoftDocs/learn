@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.write-first-query-kusto-query-language.exercise-return-number-rows-take-operator
-title: Exercise - Return specific number of rows by using the take operator
+title: Exercise - Return a specific number of rows by using the take operator
 metadata:
   unitType: exercise
   title: Exercise - Return a specific number of rows by using the take operator

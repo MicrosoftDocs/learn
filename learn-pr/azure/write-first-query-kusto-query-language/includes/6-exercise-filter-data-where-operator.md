@@ -1,6 +1,6 @@
 Recall that you've filtered certain columns in or out of the displayed results. In this unit, you'll learn how to answer questions about what kinds of meteorological events took place in different regions or timespans, and which types of events caused damage.
 
-## Use the where operator
+## Use the `where` operator
 
 Up to this point, all the operators you've used have returned selected columns. Now, let's take a look at specific rows of the data.
 
@@ -21,7 +21,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
 1. Notice that all rows returned do, in fact, have **DamageProperty** values greater than zero.
     
-1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago. For example, in the following query, 365d is a shortened version of 365 days:
+1. Similarly, you can filter where the time of an event occurred more than a certain number of days ago. For example, run the following query, where `365d` means 365 days:
 
     ```kusto
     StormEvents
@@ -32,11 +32,11 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. Notice that this query returns no results. Because the data is from 2007, there are no records from the past year.
 
-## Filter by using string operators
+## Filter by using a string operator
 
 It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida. 
 
-1. Run the following query:
+1. Run the following query, which uses `"FLORIDA"` as a string:
 
     ```kusto
     StormEvents
@@ -51,7 +51,7 @@ It looks like quite a few types of storms have caused damage all over the US. Le
 
 1. Notice that all records returned from this query are from Florida and have crop damage greater than zero.
 
-## Filter by using the has operator
+## Filter by using the `has` operator
 
 One of the event types in the results of the last query is called **Thunderstorm Wind**. Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of `wind` by using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
 
@@ -71,7 +71,7 @@ One of the event types in the results of the last query is called **Thunderstorm
 
 1. Notice in the results that events such as tornadoes no longer appear, but **Thunderstorm Wind** and **Strong Wind** event types do appear.
 
-## Filter on datetime values
+## Filter on `datetime` values
 
 Let's look more closely at the damage done in the first half of the calendar year. It can be useful to limit your search to events within a specific time range. Some interfaces with Kusto Query Language have a dropdown time picker, but others require you to incorporate the date filter into the query itself.
 
