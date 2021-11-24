@@ -21,7 +21,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
     
 1. Notice that all rows returned do, in fact, have *DamageProperty* values greater than zero.
     
-1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query/ Note that 365d is a shortened version of 365 days.
+1. Similarly, you could filter where the time of an event occurred more than a certain number of days ago, for example in the following query. Note that 365d is a shortened version of writing 365 days.
 
     ```kusto
     StormEvents
