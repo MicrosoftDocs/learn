@@ -16,16 +16,18 @@ You can use the following procedure to monitor the four core resources on a remo
 
 1. Select the Overview tab, and then in the details pane, scroll down and review the details for:
 
-  - CPU
+    - CPU
 
-  - Memory
+    - Memory
 
-  - Ethernet
+    - Ethernet
 
 1. If you also want to monitor disk performance, you must enable disk metrics.
 
-> [!WARNING]
-> Enabling disk metrics can affect performance.
+    > [!WARNING]
+    > Enabling disk metrics can affect performance.
+
+
 To monitor disk performance:
 
 1. In the details pane, select Enable Disk Metrics on the menu bar.
@@ -39,7 +41,8 @@ The following screenshot displays the Overview tab for a server computer.
 ![This screenshot displays the Overview tab in Windows Admin Center for a server computer. The following information about the server computer is displayed for the following: Restart, Shutdown, Disable Disk Metrics, and Edit Computer ID.](../media/overview-tab.png)
 
 > [!TIP]
-> After you finish, disable disk metrics.
+> After you finish, disable disk metrics.
+
 Remember that you are monitoring real-time statistics. For more meaningful data, collect data by using Performance Monitor.
 
 ## Use Performance Monitor
@@ -63,4 +66,5 @@ Use the following procedure to access Performance Monitor:
 1. Save the workspace for future use.
 
 > [!TIP]
-> You can use Windows Admin Center to add the same objects, counters, and instances that you can add with Performance Monitor, which this module discussed earlier.
+> You can use Windows Admin Center to add the same objects, counters, and instances that you can add with Performance Monitor, which this module discussed earlier.
+

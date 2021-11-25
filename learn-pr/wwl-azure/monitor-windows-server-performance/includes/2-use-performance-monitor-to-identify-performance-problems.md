@@ -37,7 +37,8 @@ These are the three features of Performance Monitor.
   - Use data collector sets and Performance Monitor to organize multiple data collection points into a single component that you can use to review or log performance.
 
 > [!TIP]
-> Performance Monitor also includes default data collector set templates to help system administrators begin the process of collecting performance data.
+> Performance Monitor also includes default data collector set templates to help system administrators begin the process of collecting performance data.
+
   - In Performance Monitor, under the Data Collector Sets node, use the User Defined node to create your own data collector sets. Specify the objects and counters that you want to include in the set for monitoring. To help you select appropriate objects and counters, use the following templates provided for monitoring:
 
     - System Diagnostics. This template selects objects and counters that report the status of hardware resources, system response times, and processes on the local computer, along with system information and configuration data. The report provides guidance on ways to optimize the computer's responsiveness.
@@ -64,10 +65,11 @@ You add objects, counters, and their instances to Performance Monitor. These obj
 
 - Network Interface
 
-Each object provides many distinct counters that record the values for different object performance indicators. For example, the Processor object provides 15 distinct counters. As displayed in the following graphic, some objects also enable you to record the values for different instances of the object. For example, the Processor object provides _Total, <All instances>, and a numbered instance for each processor core. Generally, you should start by gathering the _Total instance for your chosen counters.
+Each object provides many distinct counters that record the values for different object performance indicators. For example, the Processor object provides 15 distinct counters. As displayed in the following graphic, some objects also enable you to record the values for different instances of the object. For example, the Processor object provides _Total, \<All instances\>, and a numbered instance for each processor core. Generally, you should start by gathering the _Total instance for your chosen counters.
 
 > [!TIP]
-> You can always be more specific in subsequent analyses. 
+> You can always be more specific in subsequent analyses. 
+
 ![The screenshot displays the Add Counters page in Performance Monitor. The Processor object provides values for different instances of the object including a total of all instances and a numbered instance for each processor core.](../media/add-counters.png)
 
 The following table describes the most commonly used counters.
@@ -83,4 +85,5 @@ The following table describes the most commonly used counters.
 | Network Interface\Output Queue Length| This counter measures the length of the output packet queue, in packets. Network saturation exists if this value is more than two.|
 
 > [!NOTE]
-> If your server is configured with solid state disks (SSDs), these disk counters are less relevant. It's unlikely that disk bottlenecks will occur in these configurations.
+> If your server is configured with solid state disks (SSDs), these disk counters are less relevant. It's unlikely that disk bottlenecks will occur in these configurations.
+
