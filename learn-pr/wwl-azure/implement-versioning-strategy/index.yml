@@ -16,8 +16,10 @@ abstract: |
   - Promote packages
   - Push packages from pipeline
   - Describe semantic and explore best practices for versioning &quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
