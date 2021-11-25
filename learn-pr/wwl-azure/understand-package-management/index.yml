@@ -11,11 +11,11 @@ metadata:
 title: Understand package management
 summary: This module describes package feeds, common public package sources, and how to create and publish packages.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to:
   - Implement package management
   - Manage package feed
   - Consume and create packages
-  - Publish packages&quot;
+  - Publish packages
 prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
