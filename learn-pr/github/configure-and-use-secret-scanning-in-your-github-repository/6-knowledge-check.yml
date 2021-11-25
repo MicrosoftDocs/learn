@@ -28,14 +28,14 @@ quiz:
   - content: "Where can you configure the recipients of secret scanning alerts?"
     choices:
     - content: "In the Security and analysis settings of a repository"
-     isCorrect: true
-     explanation: "Correct! You can configure the recipients of secret scanning alerts in the "Access to alerts" section of a repository Security and analysis settings."
+      isCorrect: true
+      explanation: "Correct! You can configure the recipients of secret scanning alerts in the "Access to alerts" section of a repository Security and analysis settings."
     - content: "In the Manage access settings of a repository"
-     isCorrect: false
-     explanation: "The Manage access settings of a reposity enable you to manage user permissions over the repository."
+      isCorrect: false
+      explanation: "The Manage access settings of a reposity enable you to manage user permissions over the repository."
     - content: "In the Watch settings of a repository"
-     isCorrect: false
-     explanation: "The Watch settings of a repository enable you to manage the notifications you receive for the repository."
+      isCorrect: false
+      explanation: "The Watch settings of a repository enable you to manage the notifications you receive for the repository."
   - content: "How many custom patterns can you create for an organization?"
     choices:
     - content: "100"
