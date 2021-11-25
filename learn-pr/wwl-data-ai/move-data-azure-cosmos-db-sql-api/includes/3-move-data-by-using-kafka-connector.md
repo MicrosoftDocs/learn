@@ -9,7 +9,7 @@ The Kafka Connect connectors for Azure Cosmos DB is available as an open-source 
 Four configuration properties should be set to properly configure connectivity to an Azure Cosmos DB SQL API account.
 
 | **Property** | **Value** |
-| ---: | :--- |
+| :--- | :--- |
 | **connect.cosmos.connection.endpoint** | Account endpoint URI |
 | **connect.cosmos.master.key** | Account key |
 | **connect.cosmos.databasename** | Name of the database resource |
@@ -54,7 +54,7 @@ And in the console, you can then enter these three records to the topic. Once th
 You can create a source connector in Kafka Connect using a JSON configuration object. In this sample configuration below, most of the properties should be left unchanged, but be sure to change the following values:
 
 | **Property** | **Description** |
-| ---: | :--- |
+| :--- | :--- |
 | **connect.cosmos.connection.endpoint** | Your actual account endpoint URI |
 | **connect.cosmos.master.key** | Your actual account key |
 | **connect.cosmos.databasename** | The name of your actual account database resource |
@@ -83,7 +83,7 @@ You can create a source connector in Kafka Connect using a JSON configuration ob
 As an illustrative example, using this example configuration table:
 
 | **Property** | **Description** |
-| ---: | :--- |
+| :--- | :--- |
 | **connect.cosmos.connection.endpoint** | ``https://dp420.documents.azure.com:443/`` |
 | **connect.cosmos.master.key** | ``C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==`` |
 | **connect.cosmos.databasename** | ``cosmicworks`` |
