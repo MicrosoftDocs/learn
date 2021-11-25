@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-stream-analytics-azure-functions.examine-time-handling-considerations-for-asa-queries
+title: Examine time handling considerations for ASA queries
+metadata:
+  title: Examine time handling considerations for ASA queries
+  description: "Examine time handling considerations for ASA queries"
+  ms.date: 11/23/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-azure-stream-analytics-queries-time-considerations.md)]
