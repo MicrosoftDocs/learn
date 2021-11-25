@@ -48,7 +48,7 @@ az login
 
 Azure CLI will typically launch your default browser to open the Azure sign in page.
 
-If it doesn't work, follow the command-line instructions, and enter an authorization code in the \[Enter Code\] ([https://aka.ms/devicelogin](https://aka.ms/devicelogin)) [Enter Code](https://aka.ms/devicelogin) dialog box.
+If it doesn't work, follow the command-line instructions, and enter an authorization code in the [Enter Code](https://aka.ms/devicelogin) dialog box.
 
 After a successful sign in, you'll be connected to your Azure subscription.
 
@@ -77,7 +77,7 @@ az group create --name <name> --location <location>
 
 ```
 
-### 3. Verify installation.
+### 3. Verify installation
 
 For many Azure resources, Azure CLI provides a **list** subcommand to get resource details.
 
