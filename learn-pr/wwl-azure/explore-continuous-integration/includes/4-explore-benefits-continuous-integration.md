@@ -27,7 +27,7 @@ For more information, you can see: [What is Continuous Integration?](/devops/dev
 
 ## CI implementation challenges
 
-1.  Have you tried to implement continuous integration in your organization?
-2.  Were you successful?
-3.  If you did successfully, what lessons did you learn?
-4.  If you didn't get successful, what were the challenges?
+ -  Have you tried to implement continuous integration in your organization?
+ -  Were you successful?
+ -  If you did successfully, what lessons did you learn?
+ -  If you didn't get successful, what were the challenges?

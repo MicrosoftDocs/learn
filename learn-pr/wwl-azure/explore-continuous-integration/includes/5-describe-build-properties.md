@@ -6,7 +6,7 @@ It is one of the items that can be set in the **Build Options**.
 
 The example shown below is from the build options that were configured by the ASP.NET Web Application build template:
 
-:::image type="content" source="../media/devops-ci-image-020-b48e009d.png" alt-text="Screenshot of Build Options the build number format is shown.":::
+:::image type="content" source="../media/devops-continuous-integration-image-020-cc23bdae.png" alt-text="Screenshot of Build Options the build number format is shown.":::
 
 
 In this case, the date has been retrieved as a system variable, then formatted via yyyyMMdd, and the revision is then appended.
@@ -21,7 +21,7 @@ But there are times that we might not want the build to run, even if it's trigge
 
 It can be controlled with these settings:
 
-:::image type="content" source="../media/devops-ci-image-021-aa4e16b7.png" alt-text="Screenshot of the Build Status selections. Enabled is selected.":::
+:::image type="content" source="../media/devops-continuous-integration-image-021-e73bc37f.png" alt-text="Screenshot of the Build Status selections. Enabled is selected.":::
 
 
 > [!NOTE]
@@ -31,7 +31,7 @@ It can be controlled with these settings:
 
 You can configure properties for the build job as shown here:
 
-:::image type="content" source="../media/devops-ci-image-022-7442a80a.png" alt-text="Screenshot of the Build Job Properties page. The build scope is project collection. The build timeout is 60. The build cancel timeout is 5 minutes.":::
+:::image type="content" source="../media/devops-continuous-integration-image-022-cd0ca433.png" alt-text="Screenshot of the Build Job Properties page. The build scope is project collection. The build timeout is 60. The build cancel timeout is 5 minutes.":::
 
 
 The authorization scope determines whether the build job is limited to accessing resources in the current project. Or accessing resources in other projects in the project collection.
@@ -48,7 +48,7 @@ Some development teams like to show the state of the build on an external monito
 
 These settings provide a link to the image to use for it. Here's an example Azure Pipelines badge that has Succeeded:
 
-:::image type="content" source="../media/devops-ci-image-023-510cd8e6.png" alt-text="Azure Pipelines badge button that has Succeeded.":::
+:::image type="content" source="../media/devops-continuous-integration-image-023-0eca3a2b.png" alt-text="Azure Pipelines badge button that has Succeeded.":::
 
 
 For more information, see [Build Pipeline Options](/azure/devops/pipelines/build/options).

@@ -4,7 +4,7 @@ CI encourages developers to share their code and unit tests by merging their cha
 
 Committing code triggers an automated build system to grab the latest code from the shared repository and build, test, and validate the entire main branch (also known as the trunk or main).
 
-:::image type="content" source="../media/lifecycle-ci-b2e31afb.png" alt-text="Lifecycle image. Is there Continuous in your integration?":::
+:::image type="content" source="../media/lifecycle-continuous-integration-25a3cae0.png" alt-text="Lifecycle image. Is there Continuous in your integration?":::
 
 
 The idea is to minimize the cost of integration by making it an early consideration.
