@@ -38,10 +38,10 @@ To connect a device with device SAS key to your application:
  -  Create an enrollment group that uses the Shared Access Signature (SAS) attestation type.
  -  Copy the group primary or secondary key from the enrollment group.
  -  Generate a device key from the group key. This can be accomplished using the following Azure CLI command:
-
-```azurecli
-az iot central device compute-device-key --primary-key <enrollment group primary key> --device-id <device ID>
-```
+    
+    ```azurecli
+    az iot central device compute-device-key --primary-key <enrollment group primary key> --device-id <device ID>
+    ```
 
  -  Use the generated device key when the device connects to your IoT Central application.
 
