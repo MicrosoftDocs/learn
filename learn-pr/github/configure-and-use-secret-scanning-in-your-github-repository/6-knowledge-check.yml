@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "In the Security and analysis settings of a repository"
       isCorrect: true
-      explanation: "Correct! You can configure the recipients of secret scanning alerts in the "Access to alerts" section of a repository Security and analysis settings."
+      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of a repository Security and analysis settings."
     - content: "In the Manage access settings of a repository"
       isCorrect: false
       explanation: "The Manage access settings of a reposity enable you to manage user permissions over the repository."
