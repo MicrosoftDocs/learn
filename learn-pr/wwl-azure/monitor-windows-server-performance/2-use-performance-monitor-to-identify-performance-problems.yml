@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.use-performance-monitor-to-identify-performance-problems
+title: Use Performance Monitor to identify performance problems
+metadata:
+  title: Use Performance Monitor to identify performance problems
+  description: "Use Performance Monitor to identify performance problems"
+  ms.date: 11/25/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-use-performance-monitor-to-identify-performance-problems.md)]
