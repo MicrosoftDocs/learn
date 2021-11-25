@@ -8,7 +8,7 @@ In this unit, you'll explore the features offered by Azure Files and understand 
 
 :::image type="content" source="../media/2-overview.svg" alt-text="Diagram showing hierarchy of Azure Files, starting with a storage account for file shares, which contains separate directories for tools (app files), logs (txt files), media (image files), and data files.":::
 
-Before we explore Azure Files, you need to understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
+Before we explore Azure Files, you should understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
 
 You can think of Azure Files as a standard file share, hosted on Azure, that you can access with the industry standard SMB protocol. You can mount or connect to an Azure file share at the same time on all the main operating systems.
 
