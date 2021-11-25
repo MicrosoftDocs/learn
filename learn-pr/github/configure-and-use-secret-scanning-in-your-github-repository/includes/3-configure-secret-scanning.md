@@ -13,7 +13,7 @@ Follow the steps below to enable secret scanning on a private repository:
 3. Review the impact of enabling Advanced Security and click **Enable GitHub Advanced Security for this repository**.
 4. Click the **Enable** button next to **Secret scanning**. If you see a **Disable** button, it means that secret scanning was already enabled at organization level.
 
-:::image type="content" source="../media/enable-secret-scanning-repo.png" alt-text="Screenshot of "GitHub Advanced Security" section with "Enable" button for secret scanning highlighted.":::
+:::image type="content" source="./media/enable-secret-scanning-repo.png" alt-text="Screenshot of "GitHub Advanced Security" section with "Enable" button for secret scanning highlighted.":::
 
 ## Enable secret scanning for an organization
 
@@ -27,7 +27,7 @@ Follow the steps below to enable secret scanning for an organization:
 4. Click the **Enable all** button next to **Secret scanning**.
 5. Optionally enable the feature by default for new repositories in your organization, and click **Enable for eligible repositories**.
 
-:::image type="content" source="../media/enable-secret-scanning-org.png" alt-text="Screenshot of confirmation screen for enabling secret scanning with "Enable for eligible repositories" button highlighted.":::
+:::image type="content" source="./media/enable-secret-scanning-org.png" alt-text="Screenshot of confirmation screen for enabling secret scanning with "Enable for eligible repositories" button highlighted.":::
 
 ## Exclude files from being scanned
 
@@ -56,6 +56,6 @@ Provided that they are watching the repository and have enabled notifications fo
 
 Additionally, repository administrators and organization owners can give view access to security alerts to people or teams who have write access to the repository under **Settings > Security & analysis**:
 
-:::image type="content" source="../media/access-to-alerts.png" alt-text="Screenshot of "Access to alerts" section with "Search for people or teams" field highlighted.":::
+:::image type="content" source="./media/access-to-alerts.png" alt-text="Screenshot of "Access to alerts" section with "Search for people or teams" field highlighted.":::
 
 If you want to give view access to security alerts to additional people in your team, type their name in the **Search for people of teams** field, click their name in the list of matches that appear, and click **Save**.
