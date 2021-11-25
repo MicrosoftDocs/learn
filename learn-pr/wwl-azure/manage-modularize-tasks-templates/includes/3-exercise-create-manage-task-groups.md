@@ -91,7 +91,7 @@ CREATE TABLE dbo.TrackingLog
 
     The individual tasks have now disappeared from the list of tasks, and the new task group appears instead.
 
-    :::image type="content" source="../media/07-13-shows-as-a-task-group-a6b8922a.png" alt-text="Shows as a task group.":::
+    :::image type="content" source="../media/07-13-shows-as-task-group-b36ee69f.png" alt-text="Shows as a task group.":::
 
 
 12. From the **Task** drop-down list, select the **Test Team A** stage.
