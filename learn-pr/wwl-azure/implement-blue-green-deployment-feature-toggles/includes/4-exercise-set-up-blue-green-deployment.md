@@ -82,19 +82,19 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
     After a while, the deployment should succeed.
 
-    :::image type="content" source="../media/11-11-deployment-succeeded-0d9526a7.png" alt-text="Deployment succeeded.":::
+    :::image type="content" source="../media/11-11-deployment-succeeded-0d9526a7.png" alt-text="Deployment succeeded for green site and production.":::
 
 
 ## Test the green site and the production site
 
 14. In the **Azure portal**, open the blade for the **ASPDOTNET** resource group created by the project deployment. Notice the names of the web apps that have been deployed. Click to open the *Staging*\* web app's blade. Copy the URL from the top left-hand side.
 
-    :::image type="content" source="../media/11-14-url-location-2bfaccfe.png" alt-text="Deployment succeeded.":::
+    :::image type="content" source="../media/11-14-url-location-2bfaccfe.png" alt-text="Resource group and URL.":::
 
 
 15. Open a new browser tab and navigate to the copied URL. It will take the application a short while to compile, but then the Green website (on the Staging slot) should appear.
 
-    :::image type="content" source="../media/11-15-pu-site-on-staging-2a017688.png" alt-text="Parts Unlimited site on staging.":::
+    :::image type="content" source="../media/11-15-parts-unlimitied-site-on-staging-7dba4d8c.png" alt-text="Parts Unlimited site on staging.":::
 
 
 > [!NOTE]
