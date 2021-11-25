@@ -16,8 +16,10 @@ abstract: |
   - Migrate and integrate artifact repositories
   - Secure package feeds
   - Understand roles, permissions and authentication&quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
