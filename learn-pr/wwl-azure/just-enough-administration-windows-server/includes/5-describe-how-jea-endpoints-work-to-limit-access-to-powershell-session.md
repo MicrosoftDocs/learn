@@ -18,8 +18,6 @@ You must have defined one or more roles, and the role capabilities file (or file
 
 Windows Server ships with some predefined JEA endpoints, which have a name starting with Microsoft. You can find existing JEA endpoints using the following Windows PowerShell command:
 
-Windows Server ships with some predefined JEA endpoints, which have a name starting with Microsoft. You can find existing JEA endpoints using the following Windows PowerShell command:
-
 ```powershell
 Get-PSSessionConfiguration | Select-Object Name
 
@@ -55,3 +53,9 @@ For more information about Registering JEA on multiple machines, refer to the Gi
 ## Check your knowledge
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
+
+---
+
+
+
+---
