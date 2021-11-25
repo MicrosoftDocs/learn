@@ -3,7 +3,7 @@ uid: learn.wwl.manage-application-configuration-data
 metadata:
   title: Manage application configuration data
   description: "Manage application configuration data"
-  ms.date: 11/23/2021
+  ms.date: 11/25/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ abstract: |
   - Manage secrets, tokens and certificates&quot;
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:

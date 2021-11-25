@@ -5,7 +5,7 @@ Azure Key Vault helps solve the following problems:
  -  **Certificate management** \- Azure Key Vault is also a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with Azure. And your internal connected resources.
  -  **Store secrets backed by hardware security modules** \- The secrets and keys can be protected by software or FIPS 140-2 Level 2 validates HSMs.
 
-    :::image type="content" source="../media/using-azure-key-vault-747c9d3f.png" alt-text="Using Azure Key Vault.":::
+    :::image type="content" source="../media/use-azure-key-vault-a9cc1c77.png" alt-text="Using Azure Key Vault.":::
 
 
 ## Why use Azure Key Vault?

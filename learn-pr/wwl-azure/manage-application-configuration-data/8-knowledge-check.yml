@@ -4,19 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2021
+  ms.date: 11/25/2021
   author: wwlpublish
-  ms.author: 'lumac '
+  ms.author: luiz.macedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following roles is responsible for generating and maintaining the life cycle of configuration values?"
     choices:
