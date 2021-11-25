@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-identity-management-systems
 metadata:
   title: Integrate with identity management systems
   description: "Integrate with identity management systems"
-  ms.date: 11/24/2021
+  ms.date: 11/25/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -11,12 +11,13 @@ metadata:
 title: Integrate with identity management systems
 summary: This module describes the integration with GitHub and single sign-on (SSO) for authentication, service principals, and managed service identities.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to:
   - Integrate Azure DevOps with identity management systems
   - Integrate GitHub with single sign-on (SSO)
   - Understand and create a service principal
   - Create managed service identities&quot;
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
 levels:
