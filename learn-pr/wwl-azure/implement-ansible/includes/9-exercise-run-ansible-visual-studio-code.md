@@ -12,7 +12,7 @@ Complete the following steps to create network resources in Azure using Visual S
     <br><br>You can also view details of this extension on the Visual Studio Marketplace Ansible page.<br><br>
 5.  In Visual Studio Code, go to **View** &gt; **Command Palette...** Instead, you can select the **settings** (cog) icon in the bottom-left corner of the **Visual Studio Code** window and then choose **Command Palette**.<br><br>:::image type="content" source="../media/command-palette-814ddc54.png" alt-text="Screenshot of View menu with Command Palette highlighted":::
     <br><br>
-6.  In the Command Palette, Type **Azure:** select **Azure: Sign in**.<br><br>:::image type="content" source="../media/visual-studio-code-command-palette-d816addb.png":::
+6.  In the Command Palette, Type **Azure:** select **Azure: Sign in**.<br><br>:::image type="content" source="../media/visual-studio-code-command-palette-d816addb.png" alt-text="Screenshot of Visual Studio Code command palette with the Azure command entered, and Azure Sign in highlighted":::
     <br><br>
 7.  When a browser launches and prompts you to sign in, select your Azure account. Verify that a message displays stating that you're now signed in and can close the page.<br><br>:::image type="content" source="../media/visual-studio-code-message-4ba32ff9.png" alt-text="Screenshot of the Visual Studio Code window with the message, You're signed in now and can close this page.":::
     <br><br>

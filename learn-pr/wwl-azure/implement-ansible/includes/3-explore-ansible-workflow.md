@@ -1,6 +1,6 @@
 The following workflow and component diagram outlines how playbooks can run in different circumstances, one after another. In the workflow, Ansible playbooks:
 
-:::image type="content" source="../media/ansible-workflow-015a9ae4.png":::
+:::image type="content" source="../media/ansible-workflow-015a9ae4.png" alt-text="The Ansible workflow has three general areas. On the left is a box containing a user and three Ansible playbooks. In order, they provision resources, configure application, and future configuration to scale. Each playbook has an arrow that points to a box in the middle of the graphic containing Ansible Automation components, which are Roles, Modules, APIs, Plugins, and Inventory. These two boxes are within a control machine box. From the components box, three arrows point to Azure resources, an application, and three images representing the scaling of the application.":::
 
 
 1.  Provision resources. Playbooks can provision resources. In the following diagram, playbooks create load-balancer virtual networks, network security groups, and virtual machine scale sets on Azure.
