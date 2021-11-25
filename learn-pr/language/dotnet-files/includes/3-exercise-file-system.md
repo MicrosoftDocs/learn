@@ -14,12 +14,12 @@ In this exercise, you'll write a .NET program that can search for files called *
 A starter project has already been created and you'll clone it using the integrated terminal in Visual Studio Code.
 
 1. Open Visual Studio Code.
-1. Open the Terminal window by selecting the **Terminal** option from the **View** menu.
-1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
-1. Run the following command to clone the example project for this module.
 
-    > [!IMPORTANT]
-    > Make sure you use the **Bash** shell in VS Code for this command.
+1. Open the Terminal window by selecting **View** > **Terminal**.
+
+1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
+
+1. Run the following command to clone the example project for this module and go to the cloned project.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
@@ -27,20 +27,24 @@ A starter project has already been created and you'll clone it using the integra
 
 1. Create a new .NET Console project by running the following commands in the terminal window.
 
-    ```bash
+    ```cmd
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
 1. Open the new .NET project in the same instance of Visual Studio Code by typing in the following command in the terminal window.
 
-    ```bash
+    ```cmd
     code -a .
     ```
 
    > [!TIP]
-   > At this point Visual Studio Code will prompt you to that required assets to build and run the project are missing. And it asks whether you want to install them.    Select **Yes**. These files allow Visual Studio Code to run the debug the project.
+   > At this point Visual Studio Code will prompt you that required assets to build and run the project are missing.
+   >
+   >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from the project.":::
+   >
+   > Select the triangle with the exclamation point and then select **Relaunch terminal**. These files allow Visual Studio Code to run the debug the project.
 
-1. Expand the *stores* folder and each of the numbered folders inside.
+1. Expand the **stores** folder and each of the numbered folders inside.
 
     :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
@@ -51,6 +55,9 @@ You need to find all the sales.json files in all folders.
 ### Include the System.IO namespace
 
 1. Select the `Program.cs` file to open it in the editor.
+
+    :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot that shows the location o the Program dot c s file.":::
+
 1. Import the `System.IO` and `System.Collections.Generic` namespaces at the top of the file.
 
     ```csharp
