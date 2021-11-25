@@ -33,60 +33,60 @@ The following steps outline how to create a resource group in Azure using Terraf
 2.  If prompted, authenticate to Azure by entering your credentials.
 3.  In the taskbar, ensure that **Bash** is selected as the shell type.
 4.  Create a new .tf file and open the file for editing with the following command:
-
-```Yml
-vi terraform-createrg.tf
-
-```
+    
+    ```Yml
+    vi terraform-createrg.tf
+    
+    ```
 
 5.  Enter **insert** mode by selecting the **I** key.
 6.  Copy and paste the following code into the file:
-
-```Yml
-provider "azurerm" {
-}
-resource "azurerm_resource_group" "rg" {
-        name = "testResourceGroup"
-        location = "westus"
-}
-
-```
+    
+    ```Yml
+    provider "azurerm" {
+    }
+    resource "azurerm_resource_group" "rg" {
+            name = "testResourceGroup"
+            location = "westus"
+    }
+    
+    ```
 
 7.  Exit **insert** mode by selecting the **Esc** key.
 8.  Save the file and exit the **vi** editor by entering the following command:
-
-```Yml
-:wq
-
-```
+    
+    ```Yml
+    :wq
+    
+    ```
 
 9.  Use the following command to initialize Terraform:
-
-```Terraform
-terraform init
-
-```
-
-    You should receive a message saying Terraform was successfully started.
-
-    :::image type="content" source="../media/terraform-azure-cloud-shell-b19d8338.png" alt-text="Screenshot of Azure Cloud Shell with the Bash shell, running the command run terraform init, and displaying its output":::
-
+    
+    ```Terraform
+    terraform init
+    
+    ```
+    
+        You should receive a message saying Terraform was successfully started.
+    
+        :::image type="content" source="../media/terraform-azure-cloud-shell-b19d8338.png" alt-text="Screenshot of Azure Cloud Shell with the Bash shell, running the command run terraform init, and displaying its output":::
+    
 
 10. Run the configuration .tf file with the following command:
-
-```Yml
-terraform apply
-
-```
-
-    You should receive a prompt to indicate that a plan has been generated. Details of the changes should be listed, followed by a prompt to apply, or cancel the changes.
-
-    :::image type="content" source="../media/terraform-bash-azure-shell-6c4ba5f6.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply":::
-
+    
+    ```Yml
+    terraform apply
+    
+    ```
+    
+        You should receive a prompt to indicate that a plan has been generated. Details of the changes should be listed, followed by a prompt to apply, or cancel the changes.
+    
+        :::image type="content" source="../media/terraform-bash-azure-shell-6c4ba5f6.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply":::
+    
 
 11. Enter a value of **yes**, and then select Enter. The command should run successfully, with an output similar to the following screenshot.
-
-    :::image type="content" source="../media/terraform-bash-output-command-92102cb0.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply. The option yes to accept changes is highlighted":::
-
+    
+        :::image type="content" source="../media/terraform-bash-output-command-92102cb0.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply. The option yes to accept changes is highlighted":::
+    
 
 12. Open Azure portal and verify the new resource group now displays in the portal.

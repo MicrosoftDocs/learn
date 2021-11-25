@@ -17,26 +17,26 @@ If you download Terraform for the Windows operating system:
 ## Linux
 
 1.  Download Terraform using the following command:
-
-```Bash
-wget https://releases.hashicorp.com/terraform/0.xx.x/terraform_0.xx.x_linux_amd64.zip
-
-```
+    
+    ```Bash
+    wget https://releases.hashicorp.com/terraform/0.xx.x/terraform_0.xx.x_linux_amd64.zip
+    
+    ```
 
 2.  Install Unzip using the command:
-
-```Bash
-sudo apt-get install unzip
-
-```
+    
+    ```Bash
+    sudo apt-get install unzip
+    
+    ```
 
 3.  Unzip and set the path using the command:
-
-```Bash
-unzip terraform_0.11.1_linux_amd64.zip
-sudo mv terraform /usr/local/bin/
-
-```
+    
+    ```Bash
+    unzip terraform_0.11.1_linux_amd64.zip
+    sudo mv terraform /usr/local/bin/
+    
+    ```
 
 4.  Verify the installation by running the command **Terraform**. Verify that the Terraform helps output displays.
 
@@ -73,7 +73,7 @@ export ARM_SUBSCRIPTION_ID=your_subscription_id
 export ARM_CLIENT_ID=your_appId
 export ARM_CLIENT_SECRET=your_password
 export ARM_TENANT_ID=your_tenant_id
- 
+
 # Not needed for public, required for usgovernment, german, china
 export ARM_ENVIRONMENT=public
 
