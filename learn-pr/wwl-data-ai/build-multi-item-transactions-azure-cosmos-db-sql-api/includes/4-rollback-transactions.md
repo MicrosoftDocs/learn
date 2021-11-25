@@ -2,7 +2,7 @@ Transactions are deeply and natively integrated into Azure Cosmos DB SQL API’s
 
 Effectively, the start of the JavaScript function is similar to a **BEGIN TRANSACTION** statement in a database system, with the end of the function scope being the functional equivalent of **COMMIT TRANSACTION**. If any error is thrown, that’s the functional equivalent of **ROLLBACK TRANSACTION**.
 
-![Illustration of the begin and commit of an implicit transaction using a JavaScrip stored procedure](../media/4-rollback.png)
+![Illustration of the begin and commit of an implicit transaction using a JavaScript stored procedure](../media/4-rollback.png)
 
 In code, this is surfaced simply by throwing any error in JavaScript:
 
