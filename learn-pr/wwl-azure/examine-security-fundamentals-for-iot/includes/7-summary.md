@@ -1,0 +1,1 @@
+Your team will be responsible for ensuring that the company's IoT solution meets the company's security requirements. Your understanding of IoT security concerns and threat mitigation techniques will help the team to develop a solution that meets the company's security requirements.
