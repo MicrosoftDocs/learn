@@ -11,11 +11,11 @@ metadata:
 title: Migrate consolidating and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to:
   - Identify artifact repositories
   - Migrate and integrate artifact repositories
   - Secure package feeds
-  - Understand roles, permissions and authentication&quot;
+  - Understand roles, permissions and authentication
 prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
