@@ -24,7 +24,7 @@ Other Functions development tools, such as the Functions-related features in Vis
 
 ### Core Tools versions
 
-You may see references to two different versions of the Core Tools as you peruse learn content: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios, and it can be installed on Windows, macOS, and Linux computers.
+You may see references to two different versions of the Core Tools as you move through learn content: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios, and it can be installed on Windows, macOS, and Linux computers.
 
 We'll be discussing and using version 2.x throughout this tutorial, but you won't need to install anything on your own computer. This tutorial uses the in-browser Cloud Shell environment, and Core Tools are already installed, along with the Azure CLI and a code editor.
 
