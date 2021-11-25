@@ -12,10 +12,10 @@ Installing and configuring a Security Agent onto your IoT devices adds a large n
   :::column:::
     **Data Source**
   :::column-end:::
-  :::column:::
+  :::column span="2":::
     **Description**
   :::column-end:::
-  :::column:::
+  :::column span="3":::
     **Suggested remediation steps**
   :::column-end:::
 :::row-end:::
