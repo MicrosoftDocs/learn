@@ -31,7 +31,7 @@ The following table describes properties in the above JSON:
 | ------------- |-------------| -----|
 | name    | Name of the dataset. |Yes |
 | type     | Type of the dataset. Specify one of the types supported by Data Factory (for example: AzureBlob, AzureSqlTable).   |   Yes |
-| structure | Schema of the dataset.     |    No |
+| Schema | Schema of the dataset.     |    No |
 | typeProperties | The type properties are different for each type (for example: Azure Blob, Azure SQL table).   |    Yes|
 
 ## Example of a dataset
