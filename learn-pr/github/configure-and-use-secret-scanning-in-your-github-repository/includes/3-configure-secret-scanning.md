@@ -56,6 +56,6 @@ Provided that they are watching the repository and have enabled notifications fo
 
 Additionally, repository administrators and organization owners can give view access to security alerts to people or teams who have write access to the repository under **Settings > Security & analysis**:
 
-:::image type="content" source="./media/access-to-alerts.png" alt-text="Screenshot of "Access to alerts" section with "Search for people or teams" field highlighted.":::
+:::image type="content" source="../media/access-to-alerts.png" alt-text="Screenshot of "Access to alerts" section with "Search for people or teams" field highlighted.":::
 
 If you want to give view access to security alerts to additional people in your team, type their name in the **Search for people of teams** field, click their name in the list of matches that appear, and click **Save**.
