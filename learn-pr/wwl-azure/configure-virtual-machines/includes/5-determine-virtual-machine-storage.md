@@ -40,4 +40,4 @@ An Azure-managed disk is a virtual hard disk (VHD). You can think of it like a p
 For the best performance for your application, we recommend that you migrate any VM disk that requires high IOPS to Premium Storage. If your disk does not require high IOPS, you can help limit costs by keeping it in standard Azure Storage. In standard storage, VM disk data is stored on hard disk drives (HDDs) instead of on SSDs.
 
 > [!NOTE]
-> Managed disks are required for the single instance virtual machine SLA (99.95%).
+> Managed disks are required for the single instance virtual machine SLA.
