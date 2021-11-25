@@ -48,7 +48,7 @@ Use the following steps to complete the process.
 
 This section specifies the target content to be set in targeted device twins. There are two inputs for each set of settings. The first is the device twin path, which is the path to the JSON section within the twin desired properties that will be set. The second is the JSON content to be inserted in that section. For example, you could set the twin path to "properties.desired.chiller-water" and then provide the JSON content shown below:
 
-:::image type="content" source="../media/m08-l03-device-management-scale-configurations-specify-settings-2c07c48e.png" alt-text="Screen shot that shows how to use the device twin path to specify the target content to be set when using Tags to target device twins.":::
+:::image type="content" source="../media/m08-l03-device-management-scale-configurations-specify-settings-2c07c48e.png" alt-text="Screenshot that shows how to use the device twin path to specify the target content to be set when using Tags to target device twins.":::
 
 
 You can also set individual settings by specifying the entire path in the Device Twin Path and the value in the Content with no brackets. For example, set the Device Twin Path to `properties.desired.chiller-water.temperature` and set the Content to `66`.
