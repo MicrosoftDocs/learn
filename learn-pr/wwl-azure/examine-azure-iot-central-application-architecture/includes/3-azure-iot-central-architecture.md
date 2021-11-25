@@ -22,7 +22,7 @@ Azure IoT Central is not limited to IoT devices, you can also connect Azure IoT 
  -  Report module health to the cloud for remote monitoring.
  -  Manage communication between downstream leaf devices and an IoT Edge device, between modules on an IoT Edge device, and between an IoT Edge device and the cloud.
 
-:::image type="content" source="../media/m12-l01-iot-central-iotedge-device-connection-5d16b25c.png" alt-text="Diagram that shows an Azure IoT Edge device connecting to IoT Central.":::
+:::image type="content" source="../media/m12-l01-iot-central-iot-edge-device-connection-115ec5e2.png" alt-text="Diagram that shows an Azure IoT Edge device connecting to IoT Central.":::
 
 
 IoT Central enables the following capabilities to for IoT Edge devices:
