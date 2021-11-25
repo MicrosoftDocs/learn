@@ -4,7 +4,7 @@ Azure Automation stores and manages the runbooks and then delivers them to one o
 
 The Hybrid Runbook Worker functionality is presented in the following graphic:
 
-:::image type="content" source="../media/dsc9-4ce36ece.png":::
+:::image type="content" source="../media/dsc9-4ce36ece.png" alt-text="Diagram of an Azure Automation Hybrid Runbook Worker workflow. The diagram is broken into two boxes. On the right, an Azure cloud box contains two separate boxes. The first box is labeled Azure Automation and contains Runbooks and DSC Configurations icons. The second box is labeled Azure Resources. On the left-hand side is a box labeled on-premises, which contains icons representing Local Server and Local Resources. Another box is labeled Hybrid Runbook Work group, which contains icons representing Windows Hybrid Runbook Worker and Linux Hybrid Runbook'":::
 
 
 ## Hybrid Runbook Worker workflow and characteristics

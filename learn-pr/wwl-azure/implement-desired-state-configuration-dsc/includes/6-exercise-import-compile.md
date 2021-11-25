@@ -24,7 +24,7 @@ configuration LabConfig
 
 2.  In Azure Automation, account under **Configuration Management** &gt; **State configuration (DSC)**, select the **Configurations** tab, and select **+Add**.
 
-    :::image type="content" source="../media/dsc3-4b5adb3a.png":::
+    :::image type="content" source="../media/dsc3-4b5adb3a.png" alt-text="Screenshot of Azure Automation pane, highlighting Configuration Management, State Configuration, Configurations tab and the Add button.":::
 
 
 3.  Point to the configuration file you want to import, and then select **OK**.

@@ -18,7 +18,7 @@ The general process for how Azure Automation State configuration works is as fol
 2.  Upload the script to Azure Automation and compile the script into a MOF file. The file is transferred to the DSC pull server, provided as part of the Azure Automation service.
 3.  Define the nodes that will use the configuration, and then apply the configuration.
 
-:::image type="content" source="../media/dsc1-127af77c.png":::
+:::image type="content" source="../media/dsc1-127af77c.png" alt-text="A diagram is made up of three sections Configurations, Node Configurations, and Nodes. On the left,  Configurations has a code window with text beneath that says, 1 or more per automation account. An arrow labeled Compiled, put on pull server via compilation jobs points from section 1 to section 2, Node Configurations MOF configuration documents. This section has three Sharepoint.WebService icons. Text below the icons says, 1 or more per Configuration. An arrow labeled Applied via node pulls points from section 2 to section 3, Nodes, which has six Node icons, with the text 1 or more per Node Configuration beneath it.":::
 
 
 For more information, visit [Managed Object Format (MOF) file](/windows/win32/wmisdk/managed-object-format--mof-).
