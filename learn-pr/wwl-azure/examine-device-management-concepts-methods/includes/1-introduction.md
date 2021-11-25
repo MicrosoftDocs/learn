@@ -8,4 +8,4 @@ In this module, you will:
  -  Examine the device management patterns.
  -  Examine device configuration options using device twins and direct methods.
 
-By the end of this module, you will be able to describe the approaches to device management and when each should be applied. 
+By the end of this module, you will be able to describe the approaches to device management and when each should be applied.
