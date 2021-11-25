@@ -15,7 +15,7 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
 2.  The two Visual Studio Code extensions *Azure Account* and *Azure Terraform,* must be installed. To install the first extension, from inside Visual Studio Code, select **File** &gt; **Preferences** &gt; **Extensions**.
 3.  Search for and install the extension **Azure Account**.
 
-    :::image type="content" source="../media/vsc1-c625c78d.png" alt-text="Screenshot of Visual Studio Code with the extensions pane present and Azure Account extension listed and highlighted.":::
+    :::image type="content" source="../media/visual-studio-code-extension-azure-3ff579dc.png" alt-text="Screenshot of Visual Studio Code with the extensions pane present and Azure Account extension listed and highlighted.":::
 
 
 4.  Search for and install the extension **Terraform**. Ensure that you select the extension authored by Microsoft, as other authors have similar extensions.
@@ -27,17 +27,17 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
 
 5.  In Visual Studio Code, open the command palette by selecting **View** &gt; **Command Palette**. You can also access the command palette by selecting the **settings** (cog) icon on the bottom, left side of the **Visual Studio Code** window, and then choosing **Command Palette**.
 
-    :::image type="content" source="../media/vsc3-7d081996.png" alt-text="Screenshot of Visual Studio Code with view menu and command palette highlighted.":::
+    :::image type="content" source="../media/visual-studio-code-command-palette-signin-672226bd.png" alt-text="Screenshot of Visual Studio Code with view menu and command palette highlighted.":::
 
 
 6.  In the Command Palette search field, type **Azure:** Select Azure: Sign In from the results.
 
-    :::image type="content" source="../media/vsc5-69904370.png":::
+    :::image type="content" source="../media/visual-studio-code-command-palette-d816addb.png" alt-text="Screenshot of Visual Studio Code command palette with the Azure. Command entered and Azure. Sign in command highlighted.":::
 
 
 7.  When a browser launches and prompts you to sign in to Azure, select your Azure account. The message *You're signed in now and can close this page*, should display in the browser.
 
-    :::image type="content" source="../media/vsc4-c4d79c0c.png" alt-text="Screenshot of a browser with the message, You are signed in now and can close this page.":::
+    :::image type="content" source="../media/visual-studio-code-message-4ba32ff9.png" alt-text="Screenshot of a browser with the message, you are signed in now and can close this page.":::
 
 
 8.  Verify that your Azure account now displays at the bottom of the Visual Studio Code window.
@@ -204,7 +204,9 @@ Azure Terraform: apply
 
 ```
 
-    :::image type="content" source="../media/visual-studio-code-terraform-2-ae423034.png":::
+    
+
+    :::image type="content" source="../media/visual-studio-code-terraform-2-ae423034.png" alt-text="Screenshot of Visual Studio Code with the command palette open and the command Azure Terraform apply selected.":::
 
 
 12. If Azure Cloud Shell isn't open in Visual Studio Code, a message might appear in the bottom-left corner asking you if you want to open Azure Cloud Shell. Choose **Accept** and select **Yes**.
