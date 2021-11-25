@@ -59,12 +59,12 @@ Consider a scenario that includes the following items:
  -  The Thermostat digital twins have Property and Telemetry fields for temperature data coming from IoT hub.
  -  You need to analyze the temperature Telemetry data using Azure Time Series Insights.
 
-:::image type="content" source="../media/m11-l03-adt-downstream-tsi-3f1a5ca4.png" alt-text="Diagram that shows using an Event Hub namespace and an Azure Function to send Azure Digital Twins data to Time Series Insights.":::
+:::image type="content" source="../media/m11-l03-adt-downstream-tsi-3f1a5ca4.png" alt-text="Diagram that shows using an Event Hubs namespace and an Azure Function to send Azure Digital Twins data to Time Series Insights.":::
 
 
 Whenever a Digital Twin Telemetry Messages event notification occurs for a Thermostat digital twin, the following process is invoked:
 
- -  Data is routed to an Event Hub endpoint.
- -  The Event Hub processes events and triggers an Azure Function.
- -  The Azure Function creates a new event for TSI, adds a partition key, and then publishes the new event to another Event Hub.
- -  Azure TSI (subscribed to events from the second Event Hub) processes the incoming events to perform the required data analysis.
+ -  Data is routed to an Event Hubs endpoint.
+ -  The Event Hubs processes events and triggers an Azure Function.
+ -  The Azure Function creates a new event for TSI, adds a partition key, and then publishes the new event to another Event Hubs.
+ -  Azure TSI (subscribed to events from the second Event Hubs) processes the incoming events to perform the required data analysis.

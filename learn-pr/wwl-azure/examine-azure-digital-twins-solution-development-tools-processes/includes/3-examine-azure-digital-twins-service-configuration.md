@@ -18,7 +18,11 @@ When creating your Azure Digital Twins instance, you will need to provide the fo
 
  -  Subscription: The Azure subscription that you are using.
  -  Resource group: A resource group in which to deploy the instance.
- -  Location: An Azure Digital Twins-enabled region for the deployment. Note: Azure Digital Twins is not currently available in all regions. For more details on regional support, visit Azure products available by region [Azure Digital Twins](https://azure.microsoft.com/global-infrastructure/services/?products=digital-twins).
+ -  Location: An Azure Digital Twins-enabled region for the deployment.
+
+> [!NOTE]
+> Azure Digital Twins is not currently available in all regions. For more details on regional support, visit Azure products available by region [Azure Digital Twins](https://azure.microsoft.com/global-infrastructure/services/?products=digital-twins).
+
  -  Resource name: A name for your Azure Digital Twins instance.
 
 This following image shows the Basics tab, which contains the fields required to create the Azure Digital Twins instance.
@@ -27,9 +31,9 @@ This following image shows the Basics tab, which contains the fields required to
 
 
 > [!NOTE]
-> You can also assign the Azure Digital Twins Owner Role when creating the Azure Digital Twins instance. We examine the user access requirement in more detail in the *Set up user access permissions* section below.
+> You can also assign the Azure Digital Twins Owner Role when creating the Azure Digital Twins instance. We examine the user access requirement in more detail in the *Set up user access permissions* section.
 
-### Additional resource tabs
+### Other resource tabs
 
 The following resource configuration tabs are also available when creating your Azure Digital Twins instance.
 
@@ -51,10 +55,12 @@ With your Azure Digital Twins instance open in the Azure portal, you can use Acc
 
 The Add role assignment page provides the following fields:
 
-• Role: Select Azure Digital Twins Data Owner from the dropdown menu • Assign access to: Use User, group or service principal • Select: Search for the name or email address of the user to assign. When you select the result, the user will show up in a Selected members section.
+ -  Role: Select Azure Digital Twins Data Owner from the dropdown menu
+ -  Assign access to: Use User, group or service principal
+ -  Select: Search for the name or email address of the user to assign. When you select the result, the user will show up in a Selected members section.
 
 > [!NOTE]
-> As noted above, this page must be completed by a user with sufficient permissions in the Azure subscription.
+> As noted previously, this page must be completed by a user with sufficient permissions in the Azure subscription.
 
 ## Configure endpoints and routes
 
@@ -117,7 +123,10 @@ To create your endpoint in the Azure portal, open your Azure Digital Twins blade
 :::image type="content" source="../media/m11-l03-adt-create-endpoint-330a8fcf.png" alt-text="Screen shot that shows how to create Azure Digital Twins endpoints in the Azure portal.":::
 
 
-In addition to the name and type of your endpoint, you will also need to specify your subscription and select the endpoint resource. Note: For Event Hub and Service Bus endpoints, you must also select an Authentication type. You can use key-based authentication with a pre-created authorization rule, or identity-based authentication if you'll be using the endpoint with a managed identity for your Azure Digital Twins instance.
+In addition to the name and type of your endpoint, you will also need to specify your subscription and select the endpoint resource.
+
+> [!NOTE]
+> For Event Hubs and Service Bus endpoints, you must also select an Authentication type. You can use key-based authentication with a pre-created authorization rule, or identity-based authentication if you'll be using the endpoint with a managed identity for your Azure Digital Twins instance.
 
 Once created, the endpoint is available as an endpoint inside of Azure Digital Twins, under the name you chose for the endpoint. You'll typically use that name as the target of an event route.
 
@@ -162,7 +171,7 @@ You can either select from some basic common filter options, or use the advanced
 
 To use the basic filters, expand the Event types option and select the checkboxes corresponding to the events you'd like to send to your endpoint.
 
-:::image type="content" source="../media/m11-l03-adt-create-event-route-filters-basic-3c22338e.png" alt-text="Screen shot that shows how to configure an Azure Digital Twins Event Route":::
+:::image type="content" source="../media/m11-l03-adt-create-event-route-filters-basic-3c22338e.png" alt-text="Screen shot that shows how to configure an Azure Digital Twins Event Route.":::
 
 
 #### Advanced filters

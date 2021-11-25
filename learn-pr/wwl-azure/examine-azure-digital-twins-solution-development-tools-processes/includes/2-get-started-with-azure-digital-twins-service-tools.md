@@ -1,6 +1,6 @@
 The Azure Digital Twins service comes equipped with both control plane APIs and data plane APIs for managing your instance and its elements.
 
- -  The control plane APIs are Azure Resource Manager (ARM) APIs used to manage your Azure Digital Twins instance as a whole, so they cover operations like creating or deleting your entire instance. You will also use these APIs to create and delete endpoints.
+ -  The control plane APIs are Azure Resource Manager APIs used to manage your Azure Digital Twins instance as a whole, so they cover operations like creating or deleting your entire instance. You will also use these APIs to create and delete endpoints.
  -  The data plane APIs are Azure Digital Twins APIs that are used for data management operations like managing models, twins, graph queries, and event routes.
 
 You can use the APIs by calling the REST APIs directly (using a tool such as Postman), or you can implement the APIs programmatically either by using the SDKs or through the Azure CLI extension for Azure Digital Twins. You can also implement control plane APIs by opening your Azure Digital Twins resource in the Azure portal.

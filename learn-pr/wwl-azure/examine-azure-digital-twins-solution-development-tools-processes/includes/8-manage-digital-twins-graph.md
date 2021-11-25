@@ -263,7 +263,7 @@ You can also choose to delete all of the twins in your instance at the same time
 
 Models can be viewed both in the Models panel on the left side of the Azure Digital Twins Explorer screen, and in the Model Graph panel in the middle of the screen.
 
-### Import graph<br>
+### Import graph
 
 You can use the import feature of the explorer to add twins, relationships, and models to your instance. This approach can be useful for creating larger numbers of twins, relationships, and/or models as a single operation.
 

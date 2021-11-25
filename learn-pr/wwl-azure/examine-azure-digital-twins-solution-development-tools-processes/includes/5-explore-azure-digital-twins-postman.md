@@ -1,6 +1,6 @@
 The Azure Digital Twins APIs are organized in two sections, one for managing the Azure Digital Twins instance (control plane) and the other for managing the elements contained within the instance (data plane).
 
-:::image type="content" source="../media/m11-l03-adt-rest-api-reference-c858f7f2.png" alt-text="Screen shot that shows the Azure Digital Twins APIs for the Azure Digital Twins control plan and data plane.":::
+:::image type="content" source="../media/m11-l03-adt-rest-api-reference-c858f7f2.png" alt-text="Screenshot that shows the Azure Digital Twins APIs for the Azure Digital Twins control plan and data plane.":::
 
 
 ## Azure Digital Twins API reference documentation
@@ -29,10 +29,7 @@ You can find the Azure Digital Twins REST API reference documentation at the fol
 Postman is a REST testing tool that provides key HTTP request functionalities in a desktop and plugin-based GUI. You can use Postman to craft HTTP requests and submit them to the Azure Digital Twins REST APIs.
 
 > [!NOTE]
-> You must configure the Postman REST client to interact with the Azure Digital Twins APIs before you can test the APIs. This configuration involves the following:
-
- -  Use Azure CLI to get a bearer token that you will use to make API requests in Postman.
- -  Set up a Postman collection and configure the Postman REST client to use your bearer token to authenticate.
+> You must configure the Postman REST client to interact with the Azure Digital Twins APIs before you can test the APIs. This configuration involves the following steps: Use Azure CLI to get a bearer token that you will use to make API requests in Postman; Set up a Postman collection and configure the Postman REST client to use your bearer token to authenticate.
 
 > [!NOTE]
 > If you need to download the Postman app, navigate to \[www.getpostman.com/apps\](www.getpostman.com/apps) and follow the prompts to download the app.
@@ -52,10 +49,11 @@ The following example uses the Azure CLI to obtain a token.
     
     ```
 
-:::image type="content" source="../media/m11-l03-adt-postman-get-bearer-token-26342a1e.png" alt-text="Screen shot that shows using an Azure CLI command to obtain a bearer token that can be used to assess the Azure Digital Twins APIs.":::
+    :::image type="content" source="../media/m11-l03-adt-postman-get-bearer-token-26342a1e.png" alt-text="Screenshot that shows using an Azure CLI command to obtain a bearer token that can be used to assess the Azure Digital Twins APIs.":::
 
 
-**Important:** The bearer token is valid for at least five minutes and a maximum of 60 minutes. If you run out of time allotted for the current token, you can repeat the steps in this section to get a new one. You may need to refresh your token when evaluating the Azure Digital Twins APIs in Postman.
+> [!IMPORTANT]
+> The bearer token is valid for at least five minutes and a maximum of 60 minutes. If you run out of time allotted for the current token, you can repeat the steps in this section to get a new one. You may need to refresh your token when evaluating the Azure Digital Twins APIs in Postman.
 
 ### Configure a request collection
 
@@ -77,13 +75,13 @@ There are currently two Azure Digital Twins data plane collections available for
  -  Azure Digital Twins Postman Collection: This collection provides a simple getting started experience for Azure Digital Twins in Postman. The requests include sample data, so you can run them with minimal edits required. Choose this collection if you want a digestible set of key API requests containing sample information.
     
      -  To find the collection, navigate to the repo link [https://github.com/microsoft/azure-digital-twins-postman-samples](https://github.com/microsoft/azure-digital-twins-postman-samples) and open the file named postman\_collection.json.
- -  Azure Digital Twins data plane Swagger: This repo contains the complete Swagger file for the Azure Digital Twins API set, which can be downloaded and imported to Postman as a collection. This will provide a comprehensive set of every API request, but with empty data bodies rather than sample data. Choose this collection if you want to have access to every API call and fill in all the data yourself.
+ -  Azure Digital Twins data plane Swagger: This repo contains the complete Swagger file for the Azure Digital Twins API set, which can be downloaded and imported to Postman as a collection. This file will provide a comprehensive set of every API request, but with empty data bodies rather than sample data. Choose this collection if you want to have access to every API call and fill in all the data yourself.
     
      -  To find the collection, navigate to the repo link [https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins) and choose the folder for the latest spec version. From here, open the file called digitaltwins.json.
 
 Use the following steps to download a collection to your computer, which enables you to import it into Postman.
 
-1.  Use the links above to open the collection file in GitHub in your browser.
+1.  Use the links in the previous paragraph to open the collection file in GitHub in your browser.
 2.  On the GitHub project page, select the Raw button to open the raw text of the file.
 3.  Copy the text from the window, and paste it into a new file on your machine.
 4.  Save the file with a .json extension (the file name can be whatever you want, as long as you can remember it to find the file later).
@@ -111,9 +109,9 @@ When working with a data plane collection, you can help the collection connect e
 
 1.  Still in the edit dialog for your collection, move to the Variables tab.
 2.  Use your instance's host name from the Prerequisites section to set the CURRENT VALUE field of the relevant variable. Select Save.
-3.  If your collection has additional variables, fill and save those values as well.
+3.  If your collection has other variables, fill and save those values as well.
 
-When you're finished with the above steps, you're done configuring the collection. You can close the editing tab for the collection if you want.
+When you're finished with these steps, you're done configuring the collection. You can close the editing tab for the collection if you want.
 
 ### Explore requests in Postman
 

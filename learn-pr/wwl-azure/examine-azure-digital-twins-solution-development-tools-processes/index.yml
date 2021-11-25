@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-digital-twins-solution-development-tools-processes
 metadata:
   title: Examine the Azure Digital Twins solution development tools and processes
   description: "This module introduces you to configuring the Azure Digital Twins service and access accounts, and examines the tools and processes used to configure, build, and manage an Azure Digital Twins solution."
-  ms.date: 11/22/2021
+  ms.date: 11/25/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -40,7 +40,7 @@ products:
 units:
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.introduction
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.review-tools-used-to-develop
-- learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.examine-adt-service-configuration
+- learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.examine-azure-digital-twins-service-configuration
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.get-started-model-management
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.examine-adt-apis-postman
 - learn.wwl.examine-azure-digital-twins-solution-development-tools-processes.get-started-azure-cli-for-adt
