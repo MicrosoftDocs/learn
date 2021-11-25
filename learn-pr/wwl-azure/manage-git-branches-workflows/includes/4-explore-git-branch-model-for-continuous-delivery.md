@@ -218,7 +218,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, table,
     
     The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
     
-    :::image type="content" source="../media/branches-page-352f877b.png":::
+    :::image type="content" source="../media/branches-page-352f877b.png" alt-text="Screenshot showing the branches page. The feature myFeature 2 branch is one change ahead of the main and two changes behind the main.":::
     
     
     If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
