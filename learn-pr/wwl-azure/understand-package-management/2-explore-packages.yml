@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-package-management.explore-packages
+title: Explore packages
+metadata:
+  title: Explore packages
+  description: "Explore packages"
+  ms.date: 11/25/2021
+  author: wwlpublish
+  ms.author: luiz.macedo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-explore-packages.md)]

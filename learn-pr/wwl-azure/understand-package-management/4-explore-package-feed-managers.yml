@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-package-management.explore-package-feed-managers
+title: Explore package feed managers
+metadata:
+  title: Explore package feed managers
+  description: "Explore package feed managers"
+  ms.date: 11/25/2021
+  author: wwlpublish
+  ms.author: luiz.macedo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-package-feed-managers.md)]

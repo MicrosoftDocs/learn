@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-package-management.push-package
+title: Push a package
+metadata:
+  title: Push a package
+  description: "Push a package"
+  ms.date: 11/25/2021
+  author: wwlpublish
+  ms.author: luiz.macedo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-push-package.md)]
