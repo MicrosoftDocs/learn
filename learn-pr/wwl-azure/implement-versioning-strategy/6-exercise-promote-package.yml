@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-versioning-strategy.exercise-promote-package
+title: Exercise - promote a package
+metadata:
+  title: Exercise - promote a package
+  description: "Exercise - promote a package"
+  ms.date: 11/25/2021
+  author: wwlpublish
+  ms.author: luiz.macedo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-promote-package.md)]
