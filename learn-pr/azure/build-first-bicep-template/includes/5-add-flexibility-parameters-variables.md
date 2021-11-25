@@ -61,6 +61,9 @@ After you've declared a parameter, you can refer to it throughout the rest of th
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
+> [!TIP]
+> The Bicep extension for Visual Studio Code shows you visual indicators to let you know if you're not following recommended practices. For example, it warns you if you define a parameter that you don't use, or if you don't use string interpolation correctly. The *Bicep linter* continuously runs these checks while you work.
+
 ## Add a variable
 
 You can define a variable like this:
