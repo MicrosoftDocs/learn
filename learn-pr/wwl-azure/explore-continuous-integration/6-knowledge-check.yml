@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a pillar of Continuous Integration?"
     choices:
