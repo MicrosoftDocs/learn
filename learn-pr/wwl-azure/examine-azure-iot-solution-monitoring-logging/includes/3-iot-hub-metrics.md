@@ -444,7 +444,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     d2c.endpoints.egress.eventHubs
   :::column-end:::
   :::column:::
-    Routing: messages delivered to Event Hub
+    Routing: messages delivered to Event Hubs
   :::column-end:::
   :::column:::
     Count
@@ -453,7 +453,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     Total
   :::column-end:::
   :::column:::
-    The number of times IoT Hub routing successfully delivered messages to Event Hub endpoints.
+    The number of times IoT Hub routing successfully delivered messages to Event Hubs endpoints.
   :::column-end:::
   :::column:::
     No Dimensions
@@ -464,7 +464,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     d2c.endpoints.latency.eventHubs
   :::column-end:::
   :::column:::
-    Routing: message latency for Event Hub
+    Routing: message latency for Event Hubs
   :::column-end:::
   :::column:::
     Milliseconds
@@ -473,7 +473,7 @@ The following tables provide a partial listing of the metrics that each IoT hub 
     Average
   :::column-end:::
   :::column:::
-    The average latency (milliseconds) between message ingress to IoT Hub and message ingress into an Event Hub endpoint.
+    The average latency (milliseconds) between message ingress to IoT Hub and message ingress into an Event Hubs endpoint.
   :::column-end:::
   :::column:::
     No Dimensions
