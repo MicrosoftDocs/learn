@@ -443,7 +443,6 @@ Here are the field and property descriptions for API logs.
 
 Here is an example of a JSON body for these types of logs.
 
-```
 ```json
 {
 "time": "2020-03-14T21:11:14.9918922Z",
@@ -461,7 +460,6 @@ Here is an example of a JSON body for these types of logs.
 "location": "southcentralus",
 "uri": "https://myinstancename.api.scus.digitaltwins.azure.net/digitaltwins/factory-58d81613-2e54-4faa-a930-d980e6e2a884?api-version=2020-10-31"
 }
-```
 
 ```
 
@@ -572,7 +570,6 @@ This is the schema for ADTEventRoutesOperation logs. These contain details perta
 
 Here is an example of a JSON body for these types of logs.
 
-```
 ```json
 {
 "time": "2020-11-05T22:18:38.0708705Z",
@@ -587,6 +584,5 @@ Here is an example of a JSON body for these types of logs.
     "endpointName": "endpointEventGridInvalidKey"
 }
 }
-```
 
 ```

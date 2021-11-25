@@ -201,7 +201,7 @@ Metrics having to do with routing:
     Total
   :::column-end:::
   :::column:::
-    The number of messages routed to an endpoint Azure service such as Event Hub, Service Bus, or Event Grid.
+    The number of messages routed to an endpoint Azure service such as Event Hubs, Service Bus, or Event Grid.
   :::column-end:::
   :::column:::
     Endpoint Type, Result
@@ -221,7 +221,7 @@ Metrics having to do with routing:
     Average
   :::column-end:::
   :::column:::
-    The percentage of events that result in an error as they are routed from Azure Digital Twins to an endpoint Azure service such as Event Hub, Service Bus, or Event Grid.
+    The percentage of events that result in an error as they are routed from Azure Digital Twins to an endpoint Azure service such as Event Hubs, Service Bus, or Event Grid.
   :::column-end:::
   :::column:::
     Endpoint Type, Result
@@ -241,7 +241,7 @@ Metrics having to do with routing:
     Average
   :::column-end:::
   :::column:::
-    Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to the endpoint Azure service such as Event Hub, Service Bus, or Event Grid.
+    Time elapsed between an event getting routed from Azure Digital Twins to when it is posted to the endpoint Azure service such as Event Hubs, Service Bus, or Event Grid.
   :::column-end:::
   :::column:::
     Endpoint Type, Result
@@ -299,7 +299,7 @@ Microsoft.DigitalTwins/query/action
   :::column-end:::
   :::column:::
     Event Grid,
-Event Hub,
+Event Hubs,
 Service Bus
   :::column-end:::
 :::row-end:::

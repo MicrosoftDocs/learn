@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/22/2021
+  ms.date: 11/25/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -19,23 +19,23 @@ quiz:
   questions:
   - content: "Which of the following choices describes the purpose of Azure Digital Twins metrics?"
     choices:
-    - content: "They give you access to properties of the Azure Digital Twins services and the properties of connected upstream and downstream resources."
+    - content: "They provide access to properties of the Azure Digital Twins services and the properties of connected upstream and downstream resources."
       isCorrect: false
       explanation: "Incorrect. The ADT metrics are not used to investigate upstream/downstream services."
-    - content: "They give you access to properties of the Azure Digital Twins services and the properties of the connected digital twins."
+    - content: "They provide access to properties of the Azure Digital Twins services and the properties of the connected digital twins."
       isCorrect: false
       explanation: "Incorrect. The ADT metrics are not used to investigate the properties of connected digital twins."
-    - content: "They give you an overview of the health of your service instance."
+    - content: "They provide an overview of the health of your service instance."
       isCorrect: true
-      explanation: "Correct. The ADT metrics give you an overview of the health of your service instance and associated service resources."
-  - content: "Which of the following choices describes why you would query the Azure Digital Twins diagnostics logs?"
+      explanation: "Correct. The ADT metrics provide an overview of the health of your service instance and associated service resources."
+  - content: "Which of the following choices describes why a developer would query the Azure Digital Twins diagnostics logs?"
     choices:
     - content: "To troubleshoot Azure Digital Twins service issues and generate insights."
       isCorrect: true
-      explanation: "Correct. You will query the Azure Digital Twins diagnostics logs troubleshoot service issues and generate insights."
+      explanation: "Correct. A developer will query the Azure Digital Twins diagnostics logs to troubleshoot service issues and generate insights."
     - content: "To manage the Azure Digital Twins environment, including models and twins."
       isCorrect: false
-      explanation: "Incorrect. If your goal is to manage the models and twins in the ADT environment you will query the graph, not the diagnostics logs."
+      explanation: "Incorrect. If a developer's goal is to manage the models and twins in the ADT environment they will query the graph, not the diagnostics logs."
     - content: "To troubleshoot upstream and downstream service issues."
       isCorrect: false
       explanation: "Incorrect. Upstream and downstream service issues cannot be directly queried using the ADT diagnostics logs."
