@@ -94,13 +94,13 @@ New-CACertsEdgeDeviceCA "<gateway device name>"
 > The "gateway" parameter passed into those scripts should not be the same as the "hostname" parameter in config.yaml. The scripts help you avoid any issues by appending a ".ca" string to the "gateway" to prevent the name collision in case a user sets up IoT Edge using the same name in both places. However, it's good practice to avoid using the same name.
 
 > [!TIP]
-> To connect your IoT "leaf" devices and applications that use our IoT device SDK through IoT Edge, you must add the optional GatewayHostName parameter on to the end of the device's connection string. When the Edge Hub Server Certificate is generated, it is based on a lower-cased version of the hostname from config file, therefore, for the names to match and the TLS certificate verification to succeed, you should enter the GatewayHostName parameter in lower case.
+> To connect your IoT "leaf" devices and applications that use our IoT device SDK through IoT Edge, you must add the optional GatewayHostName parameter on to the end of the device's connection string. When the Edge Hub Server Certificate is generated, it is based on a lowercase version of the hostname from config file, therefore, for the names to match and the TLS certificate verification to succeed, you should enter the GatewayHostName parameter in lower case.
 
 ## Example of IoT Edge certificate hierarchy
 
 To illustrate an example of this certificate path, the following screenshot is from a working IoT Edge device set up as a transparent gateway. OpenSSL is used to connect to the IoT Edge hub, validate, and dump out the certificates.
 
-:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-cert-chain-ff0c066a.png" alt-text="Screen shot that shows an example of the certificate path for an IoT Edge device.":::
+:::image type="content" source="../media/m06-l01-iot-edge-iot-edge-cert-chain-ff0c066a.png" alt-text="Screenshot that shows an example of the certificate path for an IoT Edge device.":::
 
 
 You can see the hierarchy of certificate depth represented in the screenshot:
@@ -118,7 +118,7 @@ You can see the hierarchy of certificate depth represented in the screenshot:
     Intermediate CA Certificate
   :::column-end:::
   :::column:::
-    Azure IoT Hub Intermediate Cert Test Only
+    Azure IoT Hub intermediate certification test only.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -126,7 +126,7 @@ You can see the hierarchy of certificate depth represented in the screenshot:
     Device CA Certificate
   :::column-end:::
   :::column:::
-    iotgateway.ca ("iotgateway" was passed in as the &lt; gateway host name &gt; to the convenience scripts)
+    `iotgateway.ca` ("iotgateway" was passed in as the &lt; gateway host name &gt; to the convenience scripts).
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -134,7 +134,7 @@ You can see the hierarchy of certificate depth represented in the screenshot:
     Workload CA Certificate
   :::column-end:::
   :::column:::
-    iotedge workload ca
+    `iotedge` workload certificate authority.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -142,6 +142,6 @@ You can see the hierarchy of certificate depth represented in the screenshot:
     IoT Edge Hub Server Certificate
   :::column-end:::
   :::column:::
-    iotedgegw.local (matches the 'hostname' from config.yaml)
+    `iotedgegw.local` (matches the 'hostname' from config.yaml).
   :::column-end:::
 :::row-end:::

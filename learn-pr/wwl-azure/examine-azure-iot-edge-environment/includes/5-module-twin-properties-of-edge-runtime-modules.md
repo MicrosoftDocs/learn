@@ -36,7 +36,7 @@ The module twin for the IoT Edge agent is called `$edgeAgent` and coordinates th
     runtime.type
   :::column-end:::
   :::column:::
-    Has to be "docker"
+    Has to be "docker".
   :::column-end:::
   :::column:::
     Yes
@@ -47,7 +47,7 @@ The module twin for the IoT Edge agent is called `$edgeAgent` and coordinates th
     runtime.settings.minDockerVersion
   :::column-end:::
   :::column:::
-    Set to the minimum Docker version required by this deployment manifest
+    Set to the minimum Docker version required by this deployment manifest.
   :::column-end:::
   :::column:::
     Yes
@@ -107,7 +107,7 @@ Registry credentials are necessary for any module images that are not public.
     systemModules.edgeAgent.type
   :::column-end:::
   :::column:::
-    Has to be "docker"
+    Has to be "docker".
   :::column-end:::
   :::column:::
     Yes
@@ -152,7 +152,7 @@ Registry credentials are necessary for any module images that are not public.
     systemModules.edgeHub.type
   :::column-end:::
   :::column:::
-    Has to be "docker"
+    Has to be "docker".
   :::column-end:::
   :::column:::
     Yes
@@ -163,7 +163,7 @@ Registry credentials are necessary for any module images that are not public.
     systemModules.edgeHub.status
   :::column-end:::
   :::column:::
-    Has to be "running"
+    Has to be "running".
   :::column-end:::
   :::column:::
     Yes
@@ -174,7 +174,7 @@ Registry credentials are necessary for any module images that are not public.
     systemModules.edgeHub.restartPolicy
   :::column-end:::
   :::column:::
-    Has to be "always"
+    Has to be "always".
   :::column-end:::
   :::column:::
     Yes
@@ -241,7 +241,7 @@ Registry credentials are necessary for any module images that are not public.
     modules.\{moduleId\}.type
   :::column-end:::
   :::column:::
-    Has to be "docker"
+    Has to be "docker".
   :::column-end:::
   :::column:::
     Yes
@@ -378,7 +378,7 @@ The following table does not include the information that is copied from the des
     configurationHealth.\{deploymentId\}.health
   :::column-end:::
   :::column:::
-    healthy if the runtime status of all modules set by the deployment \{deploymentId\} is either running or stopped, unhealthy otherwise.
+    Healthy if the runtime status of all modules set by the deployment \{deploymentId\} is either running or stopped, unhealthy otherwise.
   :::column-end:::
 :::row-end:::
 :::row:::

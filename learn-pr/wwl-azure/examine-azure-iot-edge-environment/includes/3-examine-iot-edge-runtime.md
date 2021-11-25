@@ -26,7 +26,7 @@ The IoT Edge hub is not a full version of IoT Hub running locally. There are som
 
 To reduce the bandwidth your IoT Edge solution uses, the IoT Edge hub optimizes how many actual connections are made to the cloud. IoT Edge hub takes logical connections from clients like modules or downstream devices and combines them for a single physical connection to the cloud. The details of this process are transparent to the rest of the solution. Clients think they have their own connection to the cloud even though they are all being sent over the same connection.
 
-:::image type="content" source="../media/m06-l01-iot-edge-hub-682ff0e6.png" alt-text="Diagram that illustrates the IoT Edge hub acting as a local proxy for IoT Hub." lightbox="../media/m06-l01-iot-edge-hub-682ff0e6.png":::
+:::image type="content" source="../media/m06-l01-iot-edge-hub-682ff0e6.png" alt-text="Diagram that illustrates the IoT Edge hub acting as a local proxy for IoT Hub.":::
 
 
 IoT Edge hub can determine whether it's connected to IoT Hub. If the connection is lost, IoT Edge hub saves messages or twin updates locally. Once a connection is reestablished, it syncs all the data. The location used for this temporary cache is determined by a property of the IoT Edge hub’s module twin. The size of the cache is not capped and will grow as long as the device has storage capacity.
@@ -170,7 +170,7 @@ iotedge help
 :::row-end:::
 
 
-To view the details of each of the subcommands, you can specify the `-h` option, for example the :
+To view the details of each of the subcommands, you can specify the `-h` option, for example:
 
 ```bash
 iotedge check -h
@@ -254,7 +254,7 @@ These are the available checks:
     container-engine-uri
   :::column-end:::
   :::column:::
-    container engine is installed and functional.
+    Container engine is installed and functional.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -298,7 +298,7 @@ These are the available checks:
     iotedged-version
   :::column-end:::
   :::column:::
-    latest security daemon.
+    Latest security daemon.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -309,7 +309,7 @@ These are the available checks:
     host-local-time
   :::column-end:::
   :::column:::
-    host time is close to real-time.
+    Host time is close to real-time.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -320,7 +320,7 @@ These are the available checks:
     container-local-time
   :::column-end:::
   :::column:::
-    container time is close to host-time.
+    Container time is close to host-time.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -342,7 +342,7 @@ These are the available checks:
     certificates-quickstart
   :::column-end:::
   :::column:::
-    production readiness: certificates.
+    Production readiness: certificates.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -353,7 +353,7 @@ These are the available checks:
     certificates-expiry
   :::column-end:::
   :::column:::
-    production readiness: certificates expiry.
+    Production readiness: certificates expiry.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -364,7 +364,7 @@ These are the available checks:
     container-engine-is-moby
   :::column-end:::
   :::column:::
-    production readiness: container engine.
+    Production readiness: container engine.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -375,7 +375,7 @@ These are the available checks:
     container-engine-logrotate
   :::column-end:::
   :::column:::
-    production readiness: logs policy.
+    Production readiness: logs policy.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -386,7 +386,7 @@ These are the available checks:
     host-connect-dps-endpoint
   :::column-end:::
   :::column:::
-    host can connect to and perform TLS handshake with DPS endpoint.
+    Host can connect to and perform TLS handshake with DPS endpoint.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -397,7 +397,7 @@ These are the available checks:
     host-connect-iothub-amqp
   :::column-end:::
   :::column:::
-    host can connect to and perform TLS handshake with IoT Hub AMQP port.
+    Host can connect to and perform TLS handshake with IoT Hub AMQP port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -408,7 +408,7 @@ These are the available checks:
     host-connect-iothub-https
   :::column-end:::
   :::column:::
-    host can connect to and perform TLS handshake with IoT Hub HTTPS / WebSockets port.
+    Host can connect to and perform TLS handshake with IoT Hub HTTPS / WebSockets port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -419,7 +419,7 @@ These are the available checks:
     host-connect-iothub-mqtt
   :::column-end:::
   :::column:::
-    host can connect to and perform TLS handshake with IoT Hub MQTT port.
+    Host can connect to and perform TLS handshake with IoT Hub MQTT port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -430,7 +430,7 @@ These are the available checks:
     container-default-connect-iothub-amqp
   :::column-end:::
   :::column:::
-    container on the default network can connect to IoT Hub AMQP port.
+    Container on the default network can connect to IoT Hub AMQP port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -441,7 +441,7 @@ These are the available checks:
     container-default-connect-iothub-https
   :::column-end:::
   :::column:::
-    container on the default network can connect to IoT Hub HTTPS / WebSockets port.
+    Container on the default network can connect to IoT Hub HTTPS / WebSockets port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -452,7 +452,7 @@ These are the available checks:
     container-default-connect-iothub-mqtt
   :::column-end:::
   :::column:::
-    container on the default network can connect to IoT Hub MQTT port.
+    Container on the default network can connect to IoT Hub MQTT port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -463,7 +463,7 @@ These are the available checks:
     container-module-connect-iothub-amqp
   :::column-end:::
   :::column:::
-    container on the IoT Edge module network can connect to IoT Hub AMQP port.
+    Container on the IoT Edge module network can connect to IoT Hub AMQP port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -474,7 +474,7 @@ These are the available checks:
     container-module-connect-iothub-https
   :::column-end:::
   :::column:::
-    container on the IoT Edge module network can connect to IoT Hub HTTPS / WebSockets port.
+    Container on the IoT Edge module network can connect to IoT Hub HTTPS / WebSockets port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -485,7 +485,7 @@ These are the available checks:
     container-module-connect-iothub-mqtt
   :::column-end:::
   :::column:::
-    container on the IoT Edge module network can connect to IoT Hub MQTT port.
+    Container on the IoT Edge module network can connect to IoT Hub MQTT port.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -510,4 +510,4 @@ sudo iotedge check
 
 Here is an example of the output for a newly provisioned IoT Edge VM that has yet to be configured:
 
-:::image type="content" source="../media/m06-l02-iot-edge-checklist-output-54fa48cd.png" alt-text="Screen shot that shows the console output for a newly provisioned IoT Edge VM that has yet to be configured.":::
+:::image type="content" source="../media/m06-l02-iot-edge-checklist-output-54fa48cd.png" alt-text="Screenshot that shows the console output for a newly provisioned IoT Edge VM that has yet to be configured.":::

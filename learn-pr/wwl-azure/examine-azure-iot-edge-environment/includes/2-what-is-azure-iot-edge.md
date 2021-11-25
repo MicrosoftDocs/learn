@@ -1,9 +1,6 @@
 Azure IoT Edge moves cloud analytics and custom business logic to devices so that your organization can focus on business insights instead of data management. Azure IoT Edge enables you to scale out your IoT solution by packaging your business logic into standard containers, then you can deploy those containers to any of your devices and monitor it all from the cloud.
 
-:::image type="content" source="../media/m06-l01-edge-cloud-707c34b9.png" alt-text="Diagram that shows IoT Edge devices and the Cloud." lightbox="../media/m06-l01-edge-cloud-707c34b9.png":::
-
-
-Analytics drives business value in IoT solutions, but not all analytics needs to be in the cloud. If you want to respond to emergencies as quickly as possible, you can run anomaly detection workloads at the edge. If you want to reduce bandwidth costs and avoid transferring terabytes of raw data, you can clean and aggregate the data locally then only send the insights to the cloud for analysis.
+Analytics drives business value in IoT solutions, but not all analytics needs to be in the cloud. If you want to respond to emergencies as quickly as possible, you can run anomaly detection workloads at the edge. If you want to reduce bandwidth costs and avoid transferring terabytes of raw data, you can clean and aggregate the data locally then only send the insights to the cloud for analysis.<br>
 
 Azure IoT Edge is made up of three components:
 
@@ -36,7 +33,7 @@ The Azure IoT Edge runtime runs on a large set of IoT devices that enables using
 
 It's difficult to manage the software life cycle for millions of IoT devices that are often different makes and models or geographically scattered. Workloads are created and configured for a particular type of device, deployed to all of your devices, and monitored to catch any misbehaving devices. These activities can't be done on a per device basis and must be done at scale.
 
-:::image type="content" source="../media/m06-l01-cloud-interface-27b30369.png" alt-text="IoT Edge runtime and connection to the cloud" lightbox="../media/m06-l01-cloud-interface-27b30369.png":::
+:::image type="content" source="../media/m06-l01-cloud-interface-27b30369.png" alt-text="Diagram that illustrates how workloads can be used to manage devices.":::
 
 
 Azure IoT Edge integrates seamlessly with Azure IoT solution accelerators to provide one control plane for your solution's needs. Cloud services allow you to:
