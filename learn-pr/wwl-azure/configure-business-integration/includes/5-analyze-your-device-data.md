@@ -23,7 +23,7 @@ You'll need to start by choosing a device group, and the telemetry that you want
 
 Once you've queried your data, you can start visualizing it on the line chart. You can show/hide telemetry, change the time duration, view telemetry in a data grid.
 
- -  Time editor panel: By default we'll retrieve data from the past one day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an Interval size slider that controls the bucket or the interval size used to aggregate the data. :::image type="content" source="../media/m12-l03-iot-central-analyze-timeeditorpanel-101b1525.png" alt-text="Screen shot that shows how to configure the analytics UI in IoT Central.":::
+ -  Time editor panel: By default we'll retrieve data from the past one day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an Interval size slider that controls the bucket or the interval size used to aggregate the data. :::image type="content" source="../media/m12-l03-iot-central-analyze-time-editor-panel-c6cddfee.png" alt-text="Screenshot that shows how to configure the analytics UI in IoT Central.":::
     
     
      -  Inner date range slider tool: Use the two endpoint controls by dragging them over the time span you want. This inner date range is constrained by the outer date range slider control.

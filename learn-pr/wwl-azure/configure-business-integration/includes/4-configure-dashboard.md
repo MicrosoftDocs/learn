@@ -20,7 +20,7 @@ For example, if you want to configure a dashboard that will be used to monitor t
 3.  To create the tile on the dashboard, select the telemetry property and drag it to the dashboard area. For the office environment scenario, you would drag Temperature to the dashboard area. You could also select the checkbox next to Temperature, and then select Combine. The screenshot below helps to illustrate the process un the UI.
 4.  Select **Save** in the top left to save the tile to the dashboard.
 
-:::image type="content" source="../media/m12-l05-new-dashboard-d5b012b6.png" alt-text="Screen shot that shows how to add a tile to the dashboard in the IoT Central application.":::
+:::image type="content" source="../media/m12-l05-new-dashboard-d5b012b6.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
 
 
 Now when an operator views the default application dashboard, they see the new tile with the Temperature for the device. Each tile has a pre-selected graph, chart, etc. that will be displayed when the tile is created. However, users can choose to edit and change this visualization.
@@ -31,12 +31,12 @@ To edit a tile on the dashboard, first select **Edit** at the top left of the pa
 
 Then select the **Gear** icon in the top-right corner of the tile you wish to edit. Here you can edit aspects of the tile including its title, its visualization, aggregation, etc.
 
-:::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-aggregation-settings-85bd435e.png" alt-text="Screen shot that shows how to edit a tile on the IoT Central dashboard.":::
+:::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-aggregation-settings-85bd435e.png" alt-text="Screenshot that shows how to edit a tile on the IoT Central dashboard.":::
 
 
 You can also change the chart visualization by clicking the Ruler icon on the tile.
 
-:::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-visualization-settings-2a1acf3a.png" alt-text="Screen shot that shows how to change the chart visualization for a Tile on the IoT Central dashboard.":::
+:::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-visualization-settings-2a1acf3a.png" alt-text="Screenshot that shows how to change the chart visualization for a Tile on the IoT Central dashboard.":::
 
 
 ## Tile types

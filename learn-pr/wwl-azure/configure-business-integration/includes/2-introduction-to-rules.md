@@ -4,7 +4,7 @@ Rules in IoT Central serve as a customizable response tool that triggers on acti
 
 Use the target devices section to select on what kind of devices this rule will be applied. Filters allow you to further refine what devices should be included. The filters use properties on the device template to filter down the set of devices. Filters themselves don't trigger an action. In the following screenshot, the devices that are being targeted are of device template type Refrigerator. The filter states that the rule should only include Refrigerators where the Manufactured State property equals Washington.
 
-:::image type="content" source="../media/m12-l04-rule-target-devices-1f9966bd.png" alt-text="Screen shot that shows how to configure the target devices section of an IoT Central rule to target specific devices.":::
+:::image type="content" source="../media/m12-l04-rule-target-devices-1f9966bd.png" alt-text="Screenshot that shows how to configure the target devices section of an IoT Central rule to target specific devices.":::
 
 
 ## Use multiple conditions
@@ -13,7 +13,7 @@ Conditions are what rules trigger on. You can add multiple conditions to a rule 
 
 In the following screenshot, the conditions check when the temperature is greater than 70 and the humidity is less than 10. When both of these statements are true, the rule evaluates to true and triggers an action.
 
-:::image type="content" source="../media/m12-l04-rule-conditions-7c82abce.png" alt-text="Screen shot that shows how to add multiple conditions to a rule and specify the conditions that will trigger the rule.":::
+:::image type="content" source="../media/m12-l04-rule-conditions-7c82abce.png" alt-text="Screenshot that shows how to add multiple conditions to a rule and specify the conditions that will trigger the rule.":::
 
 
 ## Use aggregate windowing
