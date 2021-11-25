@@ -5,22 +5,22 @@ After creating your DSC configuration file, you must import it and compile it to
 To import and compile a configuration, complete the following high-level steps:
 
 1.  Create a configuration file by creating a file on your local machine. Then, copy and paste the following PowerShell code into the file, and name it **LabConfig.ps1**. This script configuration will ensure the IIS web-server role is installed on the servers:
-
-```powershell
-configuration LabConfig
-{
-    Node WebServer
+    
+    ```powershell
+    configuration LabConfig
     {
-        WindowsFeature IIS
+        Node WebServer
         {
-            Ensure = 'Present'
-            Name = 'Web-Server'
-            IncludeAllSubFeature = $true
+            WindowsFeature IIS
+            {
+                Ensure = 'Present'
+                Name = 'Web-Server'
+                IncludeAllSubFeature = $true
+            }
         }
     }
-}
-
-```
+    
+    ```
 
 2.  In Azure Automation, account under **Configuration Management** &gt; **State configuration (DSC)**, select the **Configurations** tab, and select **+Add**.
 

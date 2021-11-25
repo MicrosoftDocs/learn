@@ -18,85 +18,85 @@ When onboarding VMs using this method, you'll need to deploy your VMs to Azure b
 
 
 5.  In the resultant Registration pane, configure the following settings, and then select **OK**.
-
-    :::image type="content" source="../media/dsc8-cfa1f9bf.png" alt-text="Screenshot of the registration pane with configuration details described in the following text.":::
-
-
-:::row:::
-  :::column:::
-    **Property**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Registration key.
-  :::column-end:::
-  :::column:::
-    Primary or secondary, for registering the node with a pull service.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Node configuration name.
-  :::column-end:::
-  :::column:::
-    The name of the node configuration that the VM should be configured to pull for Automation DSC.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Refresh Frequency.
-  :::column-end:::
-  :::column:::
-    The time interval, in minutes, at which the LCM checks a pull service to get updated configurations. This value is ignored if the LCM isn't configured in pull mode. The default value is 30.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configuration Mode Frequency.
-  :::column-end:::
-  :::column:::
-    How often, in minutes, the current configuration is checked and applied. This property is ignored if the **ConfigurationMode** property is set to **ApplyOnly**. The default value is 15.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configuration mode.
-  :::column-end:::
-  :::column:::
-    Specifies how the LCM gets configurations. Possible values are **ApplyOnly**, **ApplyAndMonitor**, and **ApplyAndAutoCorrect**.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Allow Module Override.
-  :::column-end:::
-  :::column:::
-    Controls whether new configurations downloaded from the Azure Automation DSC pull server can overwrite the old modules already on the target server.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Reboot Node if Needed.
-  :::column-end:::
-  :::column:::
-    Set this to **$true** to automatically reboot the node after a configuration that requires a reboot is applied. Otherwise, you'll have to reboot the node for any configuration that needs it manually. The default value is **$false**.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Action after Reboot.
-  :::column-end:::
-  :::column:::
-    Specifies what happens after a reboot during the application of a configuration. The possible values are **ContinueConfiguration** and **StopConfiguration**.
-  :::column-end:::
-:::row-end:::
-
-
-    The service will then connect to the Azure VMs and apply the configuration.
+    
+        :::image type="content" source="../media/dsc8-cfa1f9bf.png" alt-text="Screenshot of the registration pane with configuration details described in the following text.":::
+    
+    
+    :::row:::
+      :::column:::
+        **Property**
+      :::column-end:::
+      :::column:::
+        **Description**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Registration key.
+      :::column-end:::
+      :::column:::
+        Primary or secondary, for registering the node with a pull service.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Node configuration name.
+      :::column-end:::
+      :::column:::
+        The name of the node configuration that the VM should be configured to pull for Automation DSC.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Refresh Frequency.
+      :::column-end:::
+      :::column:::
+        The time interval, in minutes, at which the LCM checks a pull service to get updated configurations. This value is ignored if the LCM isn't configured in pull mode. The default value is 30.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Configuration Mode Frequency.
+      :::column-end:::
+      :::column:::
+        How often, in minutes, the current configuration is checked and applied. This property is ignored if the **ConfigurationMode** property is set to **ApplyOnly**. The default value is 15.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Configuration mode.
+      :::column-end:::
+      :::column:::
+        Specifies how the LCM gets configurations. Possible values are **ApplyOnly**, **ApplyAndMonitor**, and **ApplyAndAutoCorrect**.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Allow Module Override.
+      :::column-end:::
+      :::column:::
+        Controls whether new configurations downloaded from the Azure Automation DSC pull server can overwrite the old modules already on the target server.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Reboot Node if Needed.
+      :::column-end:::
+      :::column:::
+        Set this to **$true** to automatically reboot the node after a configuration that requires a reboot is applied. Otherwise, you'll have to reboot the node for any configuration that needs it manually. The default value is **$false**.
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        Action after Reboot.
+      :::column-end:::
+      :::column:::
+        Specifies what happens after a reboot during the application of a configuration. The possible values are **ContinueConfiguration** and **StopConfiguration**.
+      :::column-end:::
+    :::row-end:::
+    
+    
+        The service will then connect to the Azure VMs and apply the configuration.
 
 6.  Return to the State configuration (DSC) pane and verify that the status now displays as Compliant after applying the configuration.
 
