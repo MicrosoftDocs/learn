@@ -11,13 +11,21 @@
     4.  Click **Create.**
     
     *The feed is now created.*
-2.  Go to **Settings** and click **Feed Settings.<br>***You are in the tab Feed Details.*
+2.  Go to **Settings** and click **Feed Settings.**
+    
+    *You are in the tab Feed Details.*
 3.  Set a description: Packages for the PartsUnlimited Web application
     
     1.  Click **Save.**
     2.  Open the Permissions tab.
 4.  Open the Views tab.
-5.  Open the **Upstream sources** tab.<br>*You can manage and add your upstream sources here.*
+5.  Open the **Upstream sources** tab.
+    
+    *You can manage and add your upstream sources here.*
 6.  Go back to the root of the feed by clicking on **PartsUnlimited.**
     
-    1.  Click **Connect to Feed.<br>***This dialog shows info about how packages stored in this feed can be consumed from various tools.<br>You'll learn more about consuming packages in the following demonstration.*
+    1.  Click **Connect to Feed.**
+        
+        *This dialog shows info about how packages stored in this feed can be consumed from various tools.*
+        
+        *You'll learn more about consuming packages in the following demonstration.*
