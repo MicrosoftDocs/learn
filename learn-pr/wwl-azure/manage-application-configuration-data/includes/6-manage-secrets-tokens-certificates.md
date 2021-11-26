@@ -53,7 +53,7 @@ Once you've created a couple of Key Vaults, you'll want to monitor how and when 
 You can do it by enabling logging for Key Vault. You can configure Azure Key Vault to:
 
  -  Archive to a storage account.
- -  Stream to an Event Hub.
+ -  Stream to an Event Hubs.
  -  Send the logs to Log Analytics.
 
 You have control over your logs, and you may secure them by restricting access, and you may also delete logs that you no longer need.
