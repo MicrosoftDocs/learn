@@ -27,11 +27,12 @@ Now when an operator views the default application dashboard, they see the new t
 
 ## Edit tiles
 
-To edit a tile on the dashboard, first select **Edit** at the top left of the page, which will open edit mode for the dashboard and all its tiles.
+To edit a tile on the dashboard:
+1. First select **Edit** at the top left of the page, which will open edit mode for the dashboard and all its tiles.
 
-Then select the **Gear** icon in the top-right corner of the tile you wish to edit. Here you can edit aspects of the tile including its title, its visualization, aggregation, etc.
+1. Then select the **Gear** icon in the top-right corner of the tile you wish to edit. Here you can edit aspects of the tile including its title, its visualization, aggregation, etc.
 
-:::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-aggregation-settings-85bd435e.png" alt-text="Screenshot that shows how to edit a tile on the IoT Central dashboard.":::
+    :::image type="content" source="../media/m12-l03-iot-central-dashboard-tile-aggregation-settings-85bd435e.png" alt-text="Screenshot that shows how to edit a tile on the IoT Central dashboard.":::
 
 
 You can also change the chart visualization by clicking the Ruler icon on the tile.
