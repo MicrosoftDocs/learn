@@ -67,9 +67,9 @@ The following steps outline how to create a resource group in Azure using Terraf
     
     ```
     
-        You should receive a message saying Terraform was successfully started.
+    You should receive a message saying Terraform was successfully started.
     
-        :::image type="content" source="../media/terraform-azure-cloud-shell-b19d8338.png" alt-text="Screenshot of Azure Cloud Shell with the Bash shell, running the command run terraform init, and displaying its output":::
+    :::image type="content" source="../media/terraform-azure-cloud-shell-b19d8338.png" alt-text="Screenshot of Azure Cloud Shell with the Bash shell, running the command run terraform init, and displaying its output":::
     
 
 10. Run the configuration .tf file with the following command:
@@ -79,14 +79,14 @@ The following steps outline how to create a resource group in Azure using Terraf
     
     ```
     
-        You should receive a prompt to indicate that a plan has been generated. Details of the changes should be listed, followed by a prompt to apply, or cancel the changes.
+    You should receive a prompt to indicate that a plan has been generated. Details of the changes should be listed, followed by a prompt to apply, or cancel the changes.
     
-        :::image type="content" source="../media/terraform-bash-azure-shell-6c4ba5f6.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply":::
+    :::image type="content" source="../media/terraform-bash-azure-shell-6c4ba5f6.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply":::
     
 
-11. Enter a value of **yes**, and then select Enter. The command should run successfully, with an output similar to the following screenshot.
+11. .Enter a value of **yes**, and then select Enter. The command should run successfully, with an output similar to the following screenshot.
     
-        :::image type="content" source="../media/terraform-bash-output-command-92102cb0.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply. The option yes to accept changes is highlighted":::
+    :::image type="content" source="../media/terraform-bash-output-command-92102cb0.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply. The option yes to accept changes is highlighted":::
     
 
 12. Open Azure portal and verify the new resource group now displays in the portal.

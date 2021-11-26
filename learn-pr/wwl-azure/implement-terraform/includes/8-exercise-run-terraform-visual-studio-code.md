@@ -204,25 +204,23 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
     
     ```
     
-        
-    
-        :::image type="content" source="../media/visual-studio-code-terraform-2-ae423034.png" alt-text="Screenshot of Visual Studio Code with the command palette open and the command Azure Terraform apply selected.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-2-ae423034.png" alt-text="Screenshot of Visual Studio Code with the command palette open and the command Azure Terraform apply selected.":::
     
 
 12. If Azure Cloud Shell isn't open in Visual Studio Code, a message might appear in the bottom-left corner asking you if you want to open Azure Cloud Shell. Choose **Accept** and select **Yes**.
 13. Wait for the Azure Cloud Shell pane to appear at the bottom of the Visual Studio Code window and start running the file `terraform-createvm.tf`. When you're prompted to apply the plan or cancel, type **Yes**, and then press **Enter**.
     
-        :::image type="content" source="../media/visual-studio-code-terraform-3-bda00c96.png" alt-text="Screenshot of the Visual Studio Code Azure Cloud Shell pane running the terraform-createvm.tf config file. At the bottom, a prompt displays asking if you want to continue with the resultant plan, and the value Yes.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-3-bda00c96.png" alt-text="Screenshot of the Visual Studio Code Azure Cloud Shell pane running the terraform-createvm.tf config file. At the bottom, a prompt displays asking if you want to continue with the resultant plan, and the value Yes.":::
     
 
 14. After the command completes successfully, review the list of resources created.
     
-        :::image type="content" source="../media/visual-studio-code-terraform-4-04463584.png" alt-text="Screenshot of the deployed resources in Azure Cloud Shell pane, with the terraform apply command completed.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-4-04463584.png" alt-text="Screenshot of the deployed resources in Azure Cloud Shell pane, with the terraform apply command completed.":::
     
 
 15. Open the Azure portal and verify the resource group, resources, and the VM has been created. If you have time, sign in with the username and password specified in the .tf config file to verify.
     
-        :::image type="content" source="../media/visual-studio-code-terraform-5-55cbb075.png" alt-text="Screenshot of deployed resources in Microsoft Azure.":::
+    :::image type="content" source="../media/visual-studio-code-terraform-5-55cbb075.png" alt-text="Screenshot of deployed resources in Microsoft Azure.":::
     
 
 > [!NOTE]

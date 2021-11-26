@@ -3,7 +3,7 @@ uid: learn.wwl.implement-terraform
 metadata:
   title: Implement Terraform
   description: "Implement Terraform"
-  ms.date: 11/25/2021
+  ms.date: 11/26/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ metadata:
 title: Implement Terraform
 summary: This module explains Terraform integration with Azure Cloud Shell and Visual Studio Code for environment deployment configuration.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to:
   - Implement and install Terraform
   - Understand Terraform components
   - Use Terraform on Azure
-  - Run Terraform in Azure Cloud Shell and Visual Studio Code&quot;
+  - Run Terraform in Azure Cloud Shell and Visual Studio Code
 prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
