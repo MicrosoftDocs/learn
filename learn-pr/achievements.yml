@@ -717,8 +717,3 @@ achievements:
   title: Explore data storage and processing in Azure
   summary: Explore data storage and processing in Azure
   iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg
-- uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api.trophy
-  type: trophy
-  title: Execute queries in Azure Cosmos DB SQL API
-  summary: Create SQL queries for the Azure Cosmos DB SQL API using the Data Explorer and the .NET SDK
-  iconUrl: /learn/achievements/generic-trophy.svg
