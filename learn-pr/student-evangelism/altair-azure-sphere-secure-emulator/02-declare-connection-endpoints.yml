@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.declare-connection-endpoints
+title: Prepare to declare the Azure IoT Central network endpoints
+metadata:
+  title: Prepare to declare the Azure IoT Central network endpoints
+  description: In this unit, you learn background information about Azure IoT Central network endpoints.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/02-declare-connection-endpoints.md)]
