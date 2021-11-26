@@ -16,7 +16,7 @@ In retail, many web-based retailers will perform real-time basket analysis to ma
 
 ## Predictive maintenance using anomaly detection with IOT
 
-Industrial IOT innovations have drastically reduced downtimes of machinery and increased overall efficiency across all fields of industry. One of such innovations is predictive maintenance analytics for machinery at the edge of the cloud.
+Industrial IOT innovations have drastically reduced downtimes of machinery and increased overall efficiency across all fields of industry. One of such innovation is predictive maintenance analytics for machinery at the edge of the cloud.
 
 The following architecture applies the cloud native HTAP capabilities of Azure Synapse Link for Azure Cosmos DB in IoT predictive maintenance:
 
