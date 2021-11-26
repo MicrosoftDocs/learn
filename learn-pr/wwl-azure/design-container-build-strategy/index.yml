@@ -11,12 +11,13 @@ metadata:
 title: Design a container build strategy
 summary: This module helps you plan a container build strategy, explains containers and their structure, introduces Docker, microservices, Azure Container Registry, and related services.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Design a container strategy
-  - Work with Docker Containers
-  - Create an Azure Container Registry
-  - Explain Docker microservices and containers &quot;
-prerequisites: ""
+  By the end of this module, you'll be able to:
+  *   Design a container strategy
+  *   Work with Docker Containers
+  *   Create an Azure Container Registry
+  *   Explain Docker microservices and containers
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced

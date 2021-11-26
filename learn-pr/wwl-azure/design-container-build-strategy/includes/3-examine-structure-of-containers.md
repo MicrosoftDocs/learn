@@ -38,7 +38,7 @@ A VM is essentially an emulation of a real computer that executes programs like 
 
 As you can see in the diagram, VMs package up the virtual hardware, a kernel (OS), and user-space for each new VM.
 
-:::image type="content" source="../media/vm-hypervisor-architecture-25aa6806.png" alt-text="VM Hypervisor architecture.":::
+:::image type="content" source="../media/virtual-machine-hypervisor-architecture-1a5d17c1.png" alt-text="VM Hypervisor architecture.":::
 
 
 ### Container
