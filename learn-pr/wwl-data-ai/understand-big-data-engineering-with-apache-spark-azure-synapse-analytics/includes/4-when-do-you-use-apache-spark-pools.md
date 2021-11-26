@@ -11,7 +11,7 @@ The different data services on Azure that have implementations of Apache Spark a
 
 ## Apache Spark pools in Azure Synapse Analytics:
 
-Apache Spark pools in Azure Synapse Analytics has Apache Spark capabilities embedded. For organizations that don’t have existing Apache Spark implementations yet, Apache Spark pools in Azure Synapse Analytics provide the functionality to spin up an Apache Spark cluster to meet data engineering needs without the overhead of the other Apache Spark platforms. Data engineers, data scientist, data platform experts, and data analyst can come together within Azure Synapse Analytics where the Apache Spark cluster is running to quickly collaborate on various analytical solutions.
+Apache Spark pools in Azure Synapse Analytics has Apache Spark capabilities embedded. For organizations that don’t have existing Apache Spark implementations yet, Apache Spark pools in Azure Synapse Analytics provide the functionality to spin up an Apache Spark cluster to meet data engineering needs without the overhead of the other Apache Spark platforms. Data engineers, data scientists, data platform experts, and data analysts can come together within Azure Synapse Analytics where the Apache Spark cluster is running to quickly collaborate on various analytical solutions.
 
 ## Apache Spark for Azure Synapse:
 
