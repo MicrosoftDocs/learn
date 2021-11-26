@@ -11,12 +11,13 @@ metadata:
 title: Implement Docker multi-stage builds
 summary: This module helps you implement Docker multi-stage builds, create docker files, and explores builder patterns and multiple projects and solution management.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Implement multi-stage builds with Docker
-  - Understand build patterns
-  - Manage multiple projects and solutions
-  - Add Docker support to an existing application&quot;
-prerequisites: ""
+  By the end of this module, you'll be able to:
+  *   Implement multi-stage builds with Docker
+  *   Understand build patterns
+  *   Manage multiple projects and solutions
+  *   Add Docker support to an existing application
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
