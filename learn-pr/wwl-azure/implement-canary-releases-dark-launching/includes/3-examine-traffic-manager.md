@@ -2,9 +2,9 @@ In the previous module, we saw how Deployment slots in Azure Web Apps enable you
 
 Suppose you want more control over the traffic that flows to your other versions. Deployment slots alone aren't enough.
 
-To control traffic in Azure, you can use a component called Traffic Manager.
+To control traffic in Azure, you can use a component called Azure Traffic Manager.
 
-## Traffic manager
+## Azure Traffic Manager
 
 Azure Traffic Manager is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions while providing high availability and responsiveness.
 
@@ -16,7 +16,7 @@ Traffic Manager provides a range of traffic-routing methods and endpoint monitor
 
 Traffic Manager is resilient to failure, including the breakdown of an entire Azure region.
 
-While the available options can change over time, the Traffic manager currently provides six options to distribute traffic:
+While the available options can change over time, the Traffic Manager currently provides six options to distribute traffic:
 
  -  **Priority**: Select Priority when you want to use a primary service endpoint for all traffic and provide backups if the primary or the backup endpoints are unavailable.
  -  **Weighted**: Select Weighted when you want to distribute traffic across a set of endpoints, either evenly or according to weights, which you define.
@@ -25,7 +25,7 @@ While the available options can change over time, the Traffic manager currently 
  -  **Multivalue**: Select MultiValue for Traffic Manager profiles that can only have IPv4/IPv6 addresses as endpoints. When a query is received for this profile, all healthy endpoints are returned.
  -  **Subnet**: Select the Subnet traffic-routing method to map sets of end-user IP address ranges to a specific endpoint within a Traffic Manager profile. The endpoint returned will be mapped for that request's source IP address when a request is received.
 
-When we look at the options the traffic manager offers, the most used option for Continuous Delivery is routing traffic based on weights.
+When we look at the options the Traffic Manager offers, the most used option for Continuous Delivery is routing traffic based on weights.
 
 > [!NOTE]
 > Traffic is only routed to endpoints that are currently available.
@@ -38,7 +38,7 @@ For more information, see also:
 
 ## Controlling your canary release
 
-Using a combination of feature toggles, deployment slots, and traffic manager, you can achieve complete control over the traffic flow and enable your canary release.
+Using a combination of feature toggles, deployment slots, and Traffic Manager, you can achieve complete control over the traffic flow and enable your canary release.
 
 You deploy the new feature to the new deployment slot or a new instance of an application, and you enable the feature after verifying the deployment was successful.
 

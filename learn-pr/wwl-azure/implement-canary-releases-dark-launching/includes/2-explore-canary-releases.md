@@ -14,7 +14,7 @@ If the canary release shows potential performance or scalability problems, you c
 
 After the canary release has proven to be stable, you can move the canary release to the actual production environment.
 
-:::image type="content" source="../media/canary-release-47d754eb.png" alt-text="Canary Release.":::
+:::image type="content" source="../media/canary-release-47d754eb.png" alt-text="Screenshot of Canary Release.":::
 
 
 Canary releases can be implemented using a combination of feature toggles, traffic routing, and deployment slots.
