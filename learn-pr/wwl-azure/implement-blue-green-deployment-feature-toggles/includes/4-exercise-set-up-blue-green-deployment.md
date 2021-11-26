@@ -26,7 +26,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
     > [!NOTE]
     > *Warnings might appear but can be ignored for this walkthrough.*
     
-    :::image type="content" source="../media/11-02-build-succeeded-58a5cd6c.png" alt-text="Build succeeded.":::
+    :::image type="content" source="../media/11-02-build-succeeded-58a5cd6c.png" alt-text="Build succeeded with warnings.":::
     
 5.  In the main menu, click **Releases**. Because a continuous integration trigger was in place, a release was attempted. However, we haven't yet configured the release, so that it will have failed. Click **Edit** to enter edit mode for the release.
     
