@@ -13,7 +13,7 @@ With a ring-based deployment, you first deploy your changes to risk-tolerant cus
 
 The Microsoft Windows team, for example, uses these rings.
 
-:::image type="content" source="../media/windows-deployment-rings-45ab6434.png" alt-text="Windows deployment rings." lightbox="../media/windows-deployment-rings-45ab6434.png":::
+:::image type="content" source="../media/windows-deployment-rings-45ab6434.png" alt-text="Windows deployment rings.":::
 
 
 When you have identified multiple groups of users and see value in investing in a ring-based deployment, you need to define your setup.
