@@ -11,11 +11,12 @@ metadata:
 title: Explore Kubernetes tooling
 summary: This module describes Kubernetes tools such as Helm, kubectl, and the extension for Visual Studio Code.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Work with kubectl - Work with Helm
-  - Install Kubernetes extension for Visual Studio Code
-  - Explain Kubernetes tooling&quot;
-prerequisites: ""
+  By the end of this module, you'll be able to:
+  *   Work with kubectl - Work with Helm
+  *   Install Kubernetes extension for Visual Studio Code
+  *   Explain Kubernetes tooling
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
