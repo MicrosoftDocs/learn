@@ -39,8 +39,8 @@ units:
 - learn.azure.power-apps-tutorial.3-exercise-add-data-source-gallery-controls
 - learn.azure.power-apps-tutorial.4-view-in-mr-3d
 - learn.azure.power-apps-tutorial.5-exercise-view-in-mr-3d
-- learn.azure.power-apps-tutorial.6-measure-in-mr-filtering
-- learn.azure.power-apps-tutorial.7-exercise-measure-in-mr-filtering
+- learn.azure.power-apps-tutorial.6-measure-in-mr-filter
+- learn.azure.power-apps-tutorial.7-exercise-measure-in-mr-filter
 - learn.azure.power-apps-tutorial.8-exercise-design-additional-pages
 - learn.azure.power-apps-tutorial.9-knowledge-check
 - learn.azure.power-apps-tutorial.10-summary

@@ -188,7 +188,7 @@ Another unique property provided by the **View in MR** component is **Object sca
 
     :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to scale object for view in MR" lightbox="../media/object-scaling.png":::
 
->[!Information]
+>[!Note]
 > You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measuring unit from the dropdown and later enter the values.
 
 >[!Tip]
