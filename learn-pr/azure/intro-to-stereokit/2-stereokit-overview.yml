@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-overview-of-stereokit.md)]
+  [!include[](includes/2-stereokit-overview.md)]
