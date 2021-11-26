@@ -42,9 +42,7 @@ paths-ignore:
 
 You can use special characters, such as `*` to filter paths. A filter pattern cheat sheet is available at the end of the module in the "Summary" unit.
 
-> [!Note]
-- If there are more than 1,000 entries in `paths-ignore`, secret scanning will only exclude the first 1,000 directories from scans.
-- If `secret_scanning.yml` is larger than 1 MB, secret scanning will ignore the entire file.
+> [!Note] - If there are more than 1,000 entries in `paths-ignore`, secret scanning will only exclude the first 1,000 directories from scans. - If `secret_scanning.yml` is larger than 1 MB, secret scanning will ignore the entire file.
 
 ## Configure recipients of secret scanning alerts
 
