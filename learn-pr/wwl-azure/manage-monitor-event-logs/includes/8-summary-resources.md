@@ -1,6 +1,6 @@
-You have learned that Event Viewer provides a convenient and accessible location for you to observe events that occur. You should now know how to access event information quickly and conveniently. You should also now know how to interpret the data in the event log.
+You've learned that Event Viewer provides a convenient and accessible location for you to observe events that occur.
 
-Now that you have reviewed this module, you should be able to:
+Having reviewed this module, you can now:
 
 - Access event information quickly and conveniently.
 
