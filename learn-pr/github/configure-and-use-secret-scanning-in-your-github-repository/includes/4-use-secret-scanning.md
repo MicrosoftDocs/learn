@@ -11,7 +11,7 @@ Once a secret has been committed into a repository, you should consider the secr
 
 Once you have taken the appropriate actions for the secret, you can resolve the alert by clicking it under **Security > Secret scanning alerts**, and choosing a reason for resolving it in the **Mark as** drop-down:
 
-:::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with "Mark as" drop-down displayed.":::
+:::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with Mark as drop-down displayed.":::
 
 ## Create a custom pattern
 
@@ -34,7 +34,7 @@ Follow the steps below to create a custom pattern for a private repository:
     - The pattern of the secret specified as Hyperscan regex
     - A sample test string to make sure your configuration is matching the patterns you expect
 
-:::image type="content" source="../media/create-custom-pattern.png" alt-text="Screenshot of "New custom pattern" screen.":::
+:::image type="content" source="../media/create-custom-pattern.png" alt-text="Screenshot of New custom pattern screen.":::
 
 4. Optionally provide other surrounding content or additional match requirements for the secret format by using the **More options** drop-down, and click **Create pattern**.
 
