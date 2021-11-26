@@ -4,13 +4,12 @@ title: Exercise - push from the pipeline
 metadata:
   title: Exercise - push from the pipeline
   description: "Exercise - push from the pipeline"
-  ms.date: 11/25/2021
+  ms.date: 11/26/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |

@@ -55,7 +55,7 @@
 10. Edit the build pipeline **PartsUnlimited E2E**.
 11. Click **NuGet restore**.
 
-There is a second pipeline that builds the complete web application. It is an ASP.net web application build.
+There is a second pipeline that builds the complete web application. It is an ASP.NET web application build.
 
 The NuGet restore task is also configured to consume packages from the PartsUnlimited feed.
 
