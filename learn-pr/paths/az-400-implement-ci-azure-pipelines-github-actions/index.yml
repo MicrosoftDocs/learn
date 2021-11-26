@@ -12,7 +12,7 @@ title: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
 prerequisites: |
   None
 summary: |
-  This learning path introduces the continuous integration concept using Azure Pipelines and Github Actions and provides instruction on configuring those services and building applications.
+  This learning path introduces the continuous integration concept using Azure Pipelines and GitHub Actions and provides instruction on configuring those services and building applications.
 iconUrl: /learn/achievements/generic-trophy.svg
 hidden: true
 levels:
