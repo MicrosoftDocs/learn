@@ -1,3 +1,5 @@
+Here in this module, you'll be designing some additional pages to support your Mixed Reality features. These pages carry out some specific functions which are required for the application to behave appropriately. You'll also be using the emailing functionality of the Power Apps to send the order details to the customers.
+
 ## Create notes page
 
 It is allowed to take pictures during the **View in MR** session and display them through a gallery. This is an additional feature included in the application to provide a good user experience. On the **Notes page**, you can store some textual notes and store the images captured during **View in MR** session.

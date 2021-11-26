@@ -12,17 +12,17 @@ When you include this feature in the application, it creates a button. On pressi
 You can alter the Measure in MR component with several properties. Some of them are discussed below:
 
 * **Unit of measurement** - This represents the measuring unit used during the session. You can choose from the dropdown having options like centimeters, meters, inches, and feet.
-* **Measurement type** - You have the liberty to choose the measurement type; it can be point-to-point distance, a complete area, or a three-dimensional volume(sector and height together).
+* **Measurement type** - You have the liberty to choose the measurement type; it can be point-to-point distance, a complete area, or a three-dimensional volume (sector and height together).
 * **Measurement** - A complete table describes the measured distances, areas, and volumes. It is composed of various sub-properties like Label, ID, Units, Height, Length, Area, Volume, and so on.
 * **Photos** - You also can capture photos during the Measure in MR session. These photos can be utilized for future references.
 
-## Formulae in power apps
+## Formulas in power apps
 
-Formulas created in your canvas app can respond to user input (as the app requires) and calculate values (as we do in Excel). You can create comparable formulas in Power Apps by configuring controls instead of cells. Users can also create formulae that are particular to apps rather than spreadsheets.
+Formulas created in your canvas app can respond to user input (as the app requires) and calculate values (as we do in Excel). You can create comparable formulas in Power Apps by configuring controls instead of cells. Users can also create formulas that are particular to apps rather than spreadsheets.
 
 To decide how your app responds when users choose a button, alter a slider, or offer other input, you can create a formula. For example, these formulas could display a different screen, update an external data source, or build a table with a subset of the data in an existing table.
 
-Formulas are made up of values, operators, and functions. These functions use parameters, execute an operation, and return a value. You can add formulae to specific properties of your UI components included in the application.
+Formulas are made up of values, operators, and functions. These functions use parameters, execute an operation, and return a value. You can add formulas to specific properties of your UI components included in the application.
 
 ## If functions
 
