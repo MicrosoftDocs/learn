@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of a repository Security and analysis settings."
     - content: "In the Manage access settings of a repository"
       isCorrect: false
-      explanation: "The Manage access settings of a reposity enable you to manage user permissions over the repository."
+      explanation: "The Manage access settings of a repository enable you to manage user permissions over the repository."
     - content: "In the Watch settings of a repository"
       isCorrect: false
       explanation: "The Watch settings of a repository enable you to manage the notifications you receive for the repository."
