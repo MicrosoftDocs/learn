@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- Migrating roles and features in Windows Server. https://docs.microsoft.com/windows-server/get-started/migrate-roles-and-features
+- [Migrating roles and features in Windows Server](/windows-server/get-started/migrate-roles-and-features). 
 
-- Server Migration. https://docs.microsoft.com/powershell/module/servermigration
+- [Server Migration](/powershell/module/servermigration). 
 

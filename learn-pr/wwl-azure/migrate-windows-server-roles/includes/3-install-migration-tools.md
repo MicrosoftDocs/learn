@@ -3,7 +3,8 @@ To perform a migration by using Windows Server Migration Tools, you must install
 For a computer running Windows Server 2019 or Windows Server 2022, you must install the Windows Server Migration Tools feature. You can install this feature by using graphical tools such as Windows Admin Center or Server Manager.
 
 > [!TIP]
-> Alternatively, you can also install Windows Server Migration Tools by using Windows PowerShell: `Install-WindowsFeature Migration`
+> Alternatively, you can also install Windows Server Migration Tools by using Windows PowerShell: `Install-WindowsFeature Migration`
+
 ## Install and prepare the migration tools
 
 Installing and preparing the Windows Server Migration Tools consists of the following high-level steps:
@@ -12,8 +13,9 @@ Installing and preparing the Windows Server Migration Tools consists of the foll
 
 1. Create a deployment folder containing a copy of the tools on the destination server.
 
-> [!TIP]
-> The tools are located in `C:\Windows\System32\ServerMigrationTools`
+    > [!TIP]
+    > The tools are located in `C:\Windows\System32\ServerMigrationTools`
+
 1. Copy the deployment folder from destination server to source server.
 
 1. Register Windows Server Migration Tools on the source server by using the **SmigDeploy.exe** tool included in the deployment folder.
@@ -37,11 +39,13 @@ The following example creates a deployment share for a 64-bit version of Windows
 `SmigDeploy.exe /package /architecture amd64 /os WS08R2 /path C:\Deploy`
 
 > [!TIP]
-> For detailed information about SmigDeploy.exe switches, use the /? option.
+> For detailed information about SmigDeploy.exe switches, use the /? option.
+
 On the source server, you must register the Windows Server Migration Tools by running **SmigDeploy.exe** with no options from the deployment folder. You must copy the deployment folder to a local drive on the source server or use removable storage.
 
 > [!WARNING]
-> The deployment folder can't be run from a network location. 
+> The deployment folder can't be run from a network location. 
+
 ## Perform the migration
 
 After the migration tools are installed, you can run them by using one of the following methods:
