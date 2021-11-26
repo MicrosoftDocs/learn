@@ -28,8 +28,10 @@ Before you begin troubleshooting client name resolution, it's worth checking tha
 
 - If the server is not authoritative, then the problem might be caused by synchronization (zone transfer) problems from the configured master.
 
-> [!TIP]
-> Check whether the primary server DNS zone data is correct. If it is, then resync the secondary server. If not, then correct the record and sync the secondary.
+  > [!TIP]
+  > Check whether the primary server DNS zone data is correct. If it is, then resync the secondary server. If not, then correct the record and sync the secondary.
+
+
 If the DNS server is running, and zone data appears to be correct, then consider investigating name resolution from the client end.
 
 ## Review DNS server logs
@@ -70,7 +72,7 @@ Debug logging can be resource intensive, and can affect overall server performan
 
 1. Select **Log packets for debugging**, and then select the events for which you want the DNS server to record debug logging.
 
-![This screenshot displays the DNS Manager console with the Debug Logging tab of the Properties dialog box open. The Log packets for debugging checkbox is selected.](../media/debug-logging.png)
+  ![This screenshot displays the DNS Manager console with the Debug Logging tab of the Properties dialog box open. The Log packets for debugging checkbox is selected.](../media/debug-logging.png)
 
 ## What are the tools and techniques for troubleshooting name resolution?
 
@@ -102,19 +104,23 @@ In Windows Server, there's a collection of Windows PowerShell cmdlets that you c
 When you troubleshoot name resolution, you must understand the name resolution methods that the computer uses, and the order in which the computer uses them.
 
 > [!IMPORTANT]
-> Be sure to clear the DNS resolver cache between resolution attempts.
+> Be sure to clear the DNS resolver cache between resolution attempts.
+
+
 If you can't connect to a remote host and suspect a name resolution problem, you can troubleshoot the name resolution by performing the following steps:
 
 1. Open an elevated command prompt, and then clear the DNS resolver cache by running `ipconfig /flushdns`.
 
-> [!TIP]
-> You can also use the PowerShell cmdlet: `Clear-DNSClientCache`.
+    > [!TIP]
+    > You can also use the PowerShell cmdlet: `Clear-DNSClientCache`.
+
 1. Attempt to `ping` the remote host by its IP address. This helps identify whether the issue is related to name resolution.
 
 1. Then attempt to `ping` the remote host by using its host name. For example, if you were working at Contoso, Ltd., you would run the following: `Ping LON-DC1.contoso.com`.
 
-> [!TIP]
-> If the ping succeeds using the IP address, but fails by using a host name, then the problem is related to name resolution.
+    > [!TIP]
+    > If the ping succeeds using the IP address, but fails by using a host name, then the problem is related to name resolution.
+
 1. At the command prompt, run `Nslookup.exe  d LON DC1.contoso.com. > filename.txt`.
 
 1. Examine the contents of the filename.txt file to identify the failed stage in name resolution.

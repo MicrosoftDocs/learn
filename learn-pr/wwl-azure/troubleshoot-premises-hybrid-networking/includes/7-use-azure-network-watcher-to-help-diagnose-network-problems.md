@@ -12,8 +12,10 @@ Azure Network Watcher provides tools to monitor, view, diagnose, review metrics,
 
 - Load balancers
 
-> [!IMPORTANT]
-> When you create or update a virtual network in your subscription, Network Watcher is enabled automatically in your virtual network's region.
+  > [!IMPORTANT]
+  > When you create or update a virtual network in your subscription, Network Watcher is enabled automatically in your virtual network's region.
+
+
 Using Azure Network Watcher, you can:
 
 - Monitor resources and communications
@@ -29,7 +31,9 @@ The following sections discuss these capabilities in more detail.
 You can use Azure Network Monitor to monitor communications and resources. For example, you can monitor communications between an Azure VM and an endpoint.
 
 > [!TIP]
-> Endpoints can be another VM, an FQDN, a URI, or an IP address.
+> Endpoints can be another VM, an FQDN, a URI, or an IP address.
+
+
 Network Watcher's connection monitor capability monitors communication at a regular interval. It informs you of the following between the VM and the endpoints:
 
 - Reachability. If an endpoint is unreachable, connection monitor states the reason. This might include:

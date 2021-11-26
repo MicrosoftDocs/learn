@@ -36,7 +36,7 @@ quiz:
     - content: "The administrator must enable debug logging on the DNS server by selecting the Debug Logging tab and enabling and configuring the required options."
       isCorrect: true
       explanation: "Correct. Debug logging is disabled by default, and must be enabled on the DNS server."
-    - content: "The administrator must enable debug logging on the DNS zones that they want to verify. The admnistrator must select the Debug Logging tab for the zone and enabling and configuring the required options."
+    - content: "The administrator must enable debug logging on the DNS zones that they want to verify. The administrator must select the Debug Logging tab for the zone and enabling and configuring the required options."
       isCorrect: false
       explanation: "Incorrect. Debug logging is not configured on DNS zones."
   - content: "A helpdesk consultant has responded a user support call. The user reports that they cannot connect to a web server on the corporate network. The consultant determines that many users are experiencing the problem. They verify that the server hosting the website is online, but when they attempt to connect to the website, they receive an error: \"Hmmm can't reach this page\". What should they try next? Choose the best answer."
