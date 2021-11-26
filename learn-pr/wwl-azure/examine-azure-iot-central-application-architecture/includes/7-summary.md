@@ -1,0 +1,1 @@
+You will be advising your company on whether Azure IoT Central is a good candidate for their low-touch solution requirements. Your understanding of Azure IoT Central will enable you to describe the components and capabilities of this SaaS product.
