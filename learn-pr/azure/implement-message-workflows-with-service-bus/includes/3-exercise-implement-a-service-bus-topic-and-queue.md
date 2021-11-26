@@ -13,13 +13,11 @@ In this exercise, you'll create a Service Bus namespace, which will contain both
 
 Start by creating the namespace. In Azure Service Bus, a namespace is a container for queues, topics, and relays. Each namespace has a unique, fully qualified domain name, with primary and secondary shared access signature (SAS) encryption keys. A sending or receiving component must provide a SAS key to gain access to objects in a namespace.
 
-To create a Service Bus namespace using the Azure portal, follow these steps:
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same login you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Enter **Service Bus** in the search box, on **Service Bus** published by Microsoft for Azure, select **Create**. The **Create namespace** pane appears.
+1. Enter **Service Bus** in global search, and in the results, on **Service Bus** published by Microsoft for Azure, select **Create**. The **Create namespace** pane appears.
 
 1. On the **Basics** tab, enter or select the following values for each setting.
 
@@ -37,51 +35,49 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Select **Review + create**.
 
-    :::image type="content" source="../media/3-create-namespace-2.png" alt-text="Screenshot of the Service bus Create namespace pane with the Review + create button highlighted.":::
+    :::image type="content" source="../media/3-create-namespace-2.png" alt-text="Screenshot of the Create namespace pane showing validation passed and with Review + create button highlighted.":::
 
-1. Review the details, and after validation succeeds, select **Create** to create the Service Bus namespace.
+1. After validation succeeds, select **Create** to create your Service Bus namespace.
 
-    :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Service bus Review namespace pane with the Create button highlighted.":::
+    :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Create namespace pane showing validation succeeded and Create button highlighted.":::
 
 ## Create a Service Bus queue
 
-When your namespace has been created, you can add a queue for messages about individual sales.
+Let's add a queue for messages about individual sales to your namespace.
 
-To create a Service Bus queue:
+1. After deployment completes, select **Go to resource**. The Overview pane for the Service Bus Namespace you created appears.
 
-1. After deployment completes, select **Go to resource**. The Service Bus Namespace you created appears.
-
-1. In the command bar, select **Queue**. The **Create queue** pane appears.
+1. In the command bar, select **Queue**. The  **Create queue** pane appears.
     
-    :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with Queue and Create highlighted.":::
+    :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus Namespace and Create queue panes with Queue and Create highlighted.":::
 
-1. In the **Name** text box, enter _salesmessages_, and then select **Create**.  
+1. In the **Name** text box, enter *salesmessages*, and then select **Create**.  
     
-    When the message queue has been created, **salesmessages** is listed under the **Queues** tab at the bottom of the Service Bus Namespace pane.
+    When the message queue has been created, **salesmessages** is listed under the **Queues** tab at the bottom of the Service Bus Namespace.
 
 ## Create a Service Bus topic and subscriptions
 
 You also want to create a topic that will be used for messages that relate to sales performance. Each instance of the business logic web service will subscribe to this topic, and each sales performance message will be delivered to all web service subscriptions.
 
-To add a Service Bus topic and subscriptions:
+Let's add a Service Bus topic and subscriptions.
 
 1. In the command bar of the **Service Bus Namespace** pane, select **Topic**. The **Create topic** pane appears.
 
-    :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with Topic and Create highlighted.":::
+    :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Service Bus Namespace and Create topic panes with Topic and Create highlighted.":::
 
 1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**. 
 
-1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace pane.
+1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace.
  
-1. To add or remove subscriptions to a queue or topic, you can select one from the list on its respective tab, or you can add or remove subscriptions to entities via the menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
+1. To add or remove subscriptions to a queue or topic, you can select one from the list on its respective tab in the Service Bus Namespace, or you can add or remove subscriptions to entities via the menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
  
 1. The sales performance messages Service Bus Topic pane appears. 
 
-1. In the **Service Bus Topic** command bar, select **Subscription**. The **Create subscription** pane appears.
+1. In the command bar, select **Subscription**. The **Create subscription** pane appears.
 
 1. For **Name**, enter **Americas**; for **Max delivery count**, enter **100**; and then select **Create**. 
  
-    The `salesperformancemessages` Service Bus Topic appears with the **Americas** subscription listed at the bottom of the pane.
+    The `salesperformancemessages` Service Bus Topic appears with the **Americas** subscription listed in the Subscriptions section at the bottom of the pane.
 
 1. Let's add a second subscription. In the command bar, select **Subscription**. The **Create subscription** pane appears.
 
