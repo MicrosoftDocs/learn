@@ -8,7 +8,7 @@ We will be using SharePoint as our primary data source for this application. You
 
 2. Select **+ Create site** on the SharePoint start page to create a **SharePoint** site.
 
-    :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the sharePoint start page." lightbox="../media/create-site.png":::
+    :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the SharePoint start page." lightbox="../media/create-site.png":::
 
 3. On the SharePoint start page, you'll find the following information:
 
@@ -37,11 +37,11 @@ For our **Easy Sales** application, we will create a list containing details of 
 
 1. In the newly created SharePoint site under the name *Easy Sales*, click **+ New** dropdown and select **List** to create a SharePoint list.
 
-    :::image type="content" source="../media/select-list.png" alt-text="Screenshot of select list." lightbox="../media/select-list.png":::
+    :::image type="content" source="../media/select-list.png" alt-text="Screenshot of selecting list." lightbox="../media/select-list.png":::
 
 2. In the **Create a List** window, select **Blank list** to create a **SharePoint** list from scratch.
 
-      :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of select Blank List." lightbox="../media/select-blank-list.png":::
+      :::image type="content" source="../media/select-blank-list.png" alt-text="Screenshot of selecting Blank List." lightbox="../media/select-blank-list.png":::
 
 3. In the **Create** pane, configure it as follows:
 
@@ -74,11 +74,11 @@ Once the list is created, it's time to add the data to it. Here data means the d
 
     Select the column type from the dropdown, for example, select **Single line of text**.
 
-    :::image type="content" source="../media/column-type.png" alt-text="Screenshot of select Single line of text." lightbox="../media/column-type.png":::
+    :::image type="content" source="../media/column-type.png" alt-text="Screenshot of selecting Single line of text." lightbox="../media/column-type.png":::
 
     Enter the details of the column in the **Create the column** tab and click on **Save**.
 
-    :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Create a Column." lightbox="../media/column-details.png":::
+    :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Creating a Column." lightbox="../media/column-details.png":::
 
     Repeat the same procedure for rest of the columns in the above list.
 
@@ -114,11 +114,11 @@ Now that all our data required for the application is stored in the SharePoint l
 
 2. Select **SharePoint**. We are selecting **SharePoint**, as we have stored the required data in **SharePoint** lists.
 
-    :::image type="content" source="../media/share-point.png" alt-text="Screenshot of select Sharepoint." lightbox="../media/share-point.png":::
+    :::image type="content" source="../media/share-point.png" alt-text="Screenshot of selecting Sharepoint." lightbox="../media/share-point.png":::
 
 3. To connect to SharePoint Online, select **Connect directly (cloud services)**, select **Create** and then provide credentials (if prompted).
 
-    :::image type="content" source="../media/cloud-services.png" alt-text="Screenshot of select Create." lightbox="../media/cloud-services.png":::
+    :::image type="content" source="../media/cloud-services.png" alt-text="Screenshot of selecting Create." lightbox="../media/cloud-services.png":::
 
 4. The connection is created, and you can build an app from scratch.
 
@@ -131,7 +131,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 1. Go to the **Power Apps** home page. Then, under **Make your own app**, select **Canvas app from blank** to create a canvas application.
 
-    :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of select canvas app from blank." lightbox="../media/canvas-app.png":::
+    :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of selecting canvas app from blank." lightbox="../media/canvas-app.png":::
 
 2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then click **Create**.
 
@@ -143,7 +143,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 3. If the **Welcome to Power Apps Studio** dialog box opens, select **Skip**.
 
-    :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of select skip option." lightbox="../media/click-skip.png":::
+    :::image type="content" source="../media/click-skip.png" alt-text="Screenshot of selecting skip option." lightbox="../media/click-skip.png":::
 
 ## Connect to data
 
@@ -155,11 +155,11 @@ To include data in your **Power Apps**, you must connect to the data via the con
 
 3. In the **Select a data source** window, expand the **Connectors** section and select the **SharePoint** option.
 
-    :::image type="content" source="../media/share-point-connectors.png" alt-text="Screenshot of select add data and sharepoint option." lightbox="../media/share-point-connectors.png":::
+    :::image type="content" source="../media/share-point-connectors.png" alt-text="Screenshot of selecting add data and sharepoint option." lightbox="../media/share-point-connectors.png":::
 
 4. In the previous exercise, a connection was already created. Select the created connection to add the data to your application. Select the **SharePoint site**, created under the name *Easy Sales*.
 
-    :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of select Easy Sales." lightbox="../media/select-easy-sales.png":::
+    :::image type="content" source="../media/select-easy-sales.png" alt-text="Screenshot of selecting Easy Sales." lightbox="../media/select-easy-sales.png":::
 
 5. On selecting the **Easy Sales** SharePoint site, all the lists created on that site are displayed. Next, select the SharePoint list created concerning the application and click **Connect**.
 
@@ -294,7 +294,7 @@ Now that we have added the product categories, we will display the list of produ
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Title** to the **Title1** heading.
 
-    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields - Sofas" lightbox="../media/configure-gallery-fields.png":::
+    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields in products page" lightbox="../media/configure-gallery-fields.png":::
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
 
@@ -304,15 +304,15 @@ Now that we have added the product categories, we will display the list of produ
     ThisItem.ImageLink
     ```
 
-    :::image type="content" source="../media/configure-image-property.png" alt-text="Screenshot of configuring image property - Sofas" lightbox="../media/configure-image-property.png":::
+    :::image type="content" source="../media/configure-image-property.png" alt-text="Screenshot of configuring image property in product page" lightbox="../media/configure-image-property.png":::
 
 5. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display as shown in the figure:
 
-    :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label - Sofas" lightbox="../media/insert-label.png":::
+    :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label in products page" lightbox="../media/insert-label.png":::
 
 6. Add a **Back** icon over the previously added **Label** to help the user navigate the **Home Page** when required. To add the **Back** icon, expand the **Icons** dropdown and select the **Back** icon.
 
-    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon - home page" lightbox="../media/insert-back-icon.png":::
+    :::image type="content" source="../media/insert-back-icon.png" alt-text="Screenshot of adding back icon in home page" lightbox="../media/insert-back-icon.png":::
 
 7. Position the **Back** icon correctly and change its display color if required. Configure its **OnSelect** property by adding the following:
 
