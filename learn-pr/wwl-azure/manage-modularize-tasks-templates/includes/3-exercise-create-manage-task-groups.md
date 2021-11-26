@@ -49,12 +49,12 @@ It's common to reuse a group of tasks in more than one stage within a pipeline o
 
 
 6.  Set the **Display name** to **Deploy devopslog database**, and from the **Azure Subscriptions** drop-down list, click **ARM Service Connection**.
-
-> [!NOTE]
-> *We can reuse our service connection here.*
-
+    
+    > [!NOTE]
+    > *We can reuse our service connection here.*
+    
     :::image type="content" source="../media/07-08-subscription-setting-7933914a.png" alt-text="Subscription Setting.":::
-
+    
 
 7.  In the **SQL Database** section, set a unique name for the SQL Server, set the **Database** to **devopslog**, set the **Login** to **devopsadmin**, and set any suitable password.
 
@@ -62,18 +62,18 @@ It's common to reuse a group of tasks in more than one stage within a pipeline o
 
 
 8.  In the **Deployment Package** section, set the **Deploy type** to **Inline SQL Script**, set the **Inline SQL Script** to:
-
-```SQL
-CREATE TABLE dbo.TrackingLog
-(
-    TrackingLogID int IDENTITY(1,1) PRIMARY KEY,
-    TrackingDetails nvarchar(max)
-);
-
-```
-
+    
+    ```SQL
+    CREATE TABLE dbo.TrackingLog
+    (
+        TrackingLogID int IDENTITY(1,1) PRIMARY KEY,
+        TrackingDetails nvarchar(max)
+    );
+    
+    ```
+    
     :::image type="content" source="../media/07-10-finalized-settings-bc88b5f0.png" alt-text="Finalized settings.":::
-
+    
 
 9.  Click **Save** then **OK** to save the work.
 
