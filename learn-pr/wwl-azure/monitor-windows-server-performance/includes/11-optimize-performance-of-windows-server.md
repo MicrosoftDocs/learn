@@ -26,8 +26,9 @@ The following list summarizes server hardware performance optimization guidance.
 
   - Choose processors with more processor cores
 
-> [!IMPORTANT]
-> Match and scale the memory and I/O subsystem with the CPU performance, and vice versa
+  > [!IMPORTANT]
+  > Match and scale the memory and I/O subsystem with the CPU performance, and vice versa
+
 - Cache recommendations:
 
   - Choose large L2 or L3 processor caches
@@ -48,8 +49,9 @@ The following list summarizes server hardware performance optimization guidance.
 
   - Use SSDs (or high speed flash disks) for read mostly disks with high I/O rates or latency sensitive I/O
 
-> [!TIP]
-> Consider NVMe SSDs for heavy simultaneous I/O. These provide higher performance with greater command queue depths, more efficient interrupt processing, and greater efficiency for 4KB commands.
+  > [!TIP]
+  > Consider NVMe SSDs for heavy simultaneous I/O. These provide higher performance with greater command queue depths, more efficient interrupt processing, and greater efficiency for 4KB commands.
+
 - Network and storage adapter recommendations:
 
   - Always use adapters that are Windows Hardware Certification approved
