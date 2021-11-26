@@ -38,7 +38,7 @@ Instead, if you want to make changes to a model - such as updating displayName o
 
 To create a new version of an existing model, start with the DTDL of the original model. Update, add, or remove the fields you would like to change.
 
-Next, mark the file as a newer version of the model by updating the ID field of the model. The last section of the model ID, after the ;, represents the model number. To indicate that this is now a more-updated version of this model, increment the number at the end of the id value to any number greater than the current version number.
+Next, mark the file as a newer version of the model by updating the ID field of the model. The last section of the model ID, after the ;, represents the model number. To indicate that this is now a more-updated version of this model, increment the number at the end of the ID value to any number greater than the current version number.
 
 For example, if your previous model ID looked like this:
 

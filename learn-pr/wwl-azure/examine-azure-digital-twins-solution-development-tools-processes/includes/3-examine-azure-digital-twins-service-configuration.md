@@ -27,7 +27,7 @@ When creating your Azure Digital Twins instance, you will need to provide the fo
 
 This following image shows the Basics tab, which contains the fields required to create the Azure Digital Twins instance.
 
-:::image type="content" source="../media/m11-l03-adt-create-azure-digital-twins-instance-c25c2c94.png" alt-text="Screen shot that shows the fields on the Basics tab that are required to create the Azure Digital Twins instance.":::
+:::image type="content" source="../media/m11-l03-adt-create-azure-digital-twins-instance-c25c2c94.png" alt-text="Screenshot that shows the fields on the Basics tab that are required to create the Azure Digital Twins instance.":::
 
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Azure Digital Twins uses Azure Active Directory (Azure AD) for role-based access
 
 With your Azure Digital Twins instance open in the Azure portal, you can use Access control (IAM), to configure role assignments.
 
-:::image type="content" source="../media/m11-l03-adt-create-instance-add-role-assignment-586d27e4.png" alt-text="Screen shot that shows where to configure access control and role assignments for managing the Azure Digital Twins service.":::
+:::image type="content" source="../media/m11-l03-adt-create-instance-add-role-assignment-586d27e4.png" alt-text="Screenshot that shows where to configure access control and role assignments for managing the Azure Digital Twins service.":::
 
 
 The Add role assignment page provides the following fields:
@@ -120,7 +120,7 @@ Once you have created the endpoint resources, you can use them for an Azure Digi
 
 To create your endpoint in the Azure portal, open your Azure Digital Twins blade, and then select Endpoints from the left-side menu.
 
-:::image type="content" source="../media/m11-l03-adt-create-endpoint-330a8fcf.png" alt-text="Screen shot that shows how to create Azure Digital Twins endpoints in the Azure portal.":::
+:::image type="content" source="../media/m11-l03-adt-create-endpoint-330a8fcf.png" alt-text="Screenshot that shows how to create Azure Digital Twins endpoints in the Azure portal.":::
 
 
 In addition to the name and type of your endpoint, you will also need to specify your subscription and select the endpoint resource.
@@ -148,7 +148,7 @@ A single route can allow multiple notifications and event types to be selected.
 
 To create an event route in the Azure portal, on the left-side menu of your Azure Digital Twins blade, select **Event routes**, and then, on the **Event routes** page, select + **Create an event route**.
 
-:::image type="content" source="../media/m11-l03-adt-create-event-route-103cae57.png" alt-text="Screen shot that shows how to create Event Routes for Azure Digital Twins in the Azure portal.":::
+:::image type="content" source="../media/m11-l03-adt-create-event-route-103cae57.png" alt-text="Screenshot that shows how to create Event Routes for Azure Digital Twins in the Azure portal.":::
 
 
 #### Filter events
@@ -171,7 +171,7 @@ You can either select from some basic common filter options, or use the advanced
 
 To use the basic filters, expand the Event types option and select the checkboxes corresponding to the events you'd like to send to your endpoint.
 
-:::image type="content" source="../media/m11-l03-adt-create-event-route-filters-basic-3c22338e.png" alt-text="Screen shot that shows how to configure an Azure Digital Twins Event Route.":::
+:::image type="content" source="../media/m11-l03-adt-create-event-route-filters-basic-3c22338e.png" alt-text="Screenshot that shows how to configure an Azure Digital Twins Event Route.":::
 
 
 #### Advanced filters
@@ -180,7 +180,7 @@ You can use the advanced filter option to write your own custom filters.
 
 To create an event route with advanced filter options, toggle the switch for the **Advanced editor** to enable it. You can then write your own event filters in the **Filter** box:
 
-:::image type="content" source="../media/m11-l03-adt-create-event-route-filter-advanced-db13e6e2.png" alt-text="Screen shot that shows how to configure advanced filter options for an Azure Digital Twins Event Route.":::
+:::image type="content" source="../media/m11-l03-adt-create-event-route-filter-advanced-db13e6e2.png" alt-text="Screenshot that shows how to configure advanced filter options for an Azure Digital Twins Event Route.":::
 
 
 Here are the supported route filters. The detail in the Filter text schema column is the text that can be entered into the filter box.

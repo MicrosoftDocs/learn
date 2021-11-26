@@ -155,15 +155,15 @@ Here are the fields in the body of a life-cycle notification.
 :::row-end:::
 :::row:::
   :::column:::
-    id
+    `id`
   :::column-end:::
   :::column:::
-    Identifier of the notification, such as a UUID or a counter maintained by the service. source + id is unique for each distinct event.
+    Identifier of the notification, such as a UUID or a counter maintained by the service. The `source` \+ `id` is unique for each distinct event.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    source
+    `source`
   :::column-end:::
   :::column:::
     Name of the IoT hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net
@@ -171,7 +171,7 @@ Here are the fields in the body of a life-cycle notification.
 :::row-end:::
 :::row:::
   :::column:::
-    specversion
+    `specversion`
   :::column-end:::
   :::column:::
     1.0
@@ -180,7 +180,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    type
+    `type`
   :::column-end:::
   :::column:::
     Microsoft.DigitalTwins.Twin.Create
@@ -189,7 +189,7 @@ Microsoft.DigitalTwins.Twin.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    datacontenttype
+    `datacontenttype`
   :::column-end:::
   :::column:::
     application/json
@@ -197,7 +197,7 @@ Microsoft.DigitalTwins.Twin.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    subject
+    `subject`
   :::column-end:::
   :::column:::
     ID of the digital twin
@@ -205,7 +205,7 @@ Microsoft.DigitalTwins.Twin.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    time
+    `time`
   :::column-end:::
   :::column:::
     Timestamp for when the operation occurred on the twin.
@@ -213,7 +213,7 @@ Microsoft.DigitalTwins.Twin.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    traceparent
+    `traceparent`
   :::column-end:::
   :::column:::
     A W3C trace context for the event.
@@ -274,15 +274,15 @@ Here are the fields in the body of an edge change notification.
 :::row-end:::
 :::row:::
   :::column:::
-    id
+    `id`
   :::column-end:::
   :::column:::
-    Identifier of the notification, such as a UUID or a counter maintained by the service. source + id is unique for each distinct event.
+    Identifier of the notification, such as a UUID or a counter maintained by the service. The `source` \+ `id` is unique for each distinct event.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    source
+    `source`
   :::column-end:::
   :::column:::
     Name of the IoT Hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
@@ -290,7 +290,7 @@ Here are the fields in the body of an edge change notification.
 :::row-end:::
 :::row:::
   :::column:::
-    specversion
+    `specversion`
   :::column-end:::
   :::column:::
     1.0
@@ -299,7 +299,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    type
+    `type`
   :::column-end:::
   :::column:::
     Microsoft.DigitalTwins.Relationship.Create
@@ -309,7 +309,7 @@ Microsoft.DigitalTwins.Relationship.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    datacontenttype
+    `datacontenttype`
   :::column-end:::
   :::column:::
     application/json
@@ -317,7 +317,7 @@ Microsoft.DigitalTwins.Relationship.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    subject
+    `subject`
   :::column-end:::
   :::column:::
     ID of the relationship, like `<twinID>/relationships/<relationshipID>`
@@ -325,7 +325,7 @@ Microsoft.DigitalTwins.Relationship.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    time
+    `time`
   :::column-end:::
   :::column:::
     Timestamp for when the operation occurred on the relationship.
@@ -333,7 +333,7 @@ Microsoft.DigitalTwins.Relationship.Delete
 :::row-end:::
 :::row:::
   :::column:::
-    traceparent
+    `traceparent`
   :::column-end:::
   :::column:::
     A W3C trace context for the event.
@@ -397,15 +397,15 @@ Here are the fields in the body of an edge change notification.
 :::row-end:::
 :::row:::
   :::column:::
-    id
+    `id`
   :::column-end:::
   :::column:::
-    Identifier of the notification, such as a UUID or a counter maintained by the service. source + id is unique for each distinct event.
+    Identifier of the notification, such as a UUID or a counter maintained by the service. The `source` \+ `id` is unique for each distinct event.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    source
+    `source`
   :::column-end:::
   :::column:::
     Name of the IoT Hub or Azure Digital Twins instance, like myhub.azure-devices.net or mydigitaltwins.westus2.azuredigitaltwins.net.
@@ -413,7 +413,7 @@ Here are the fields in the body of an edge change notification.
 :::row-end:::
 :::row:::
   :::column:::
-    specversion
+    `specversion`
   :::column-end:::
   :::column:::
     1.0
@@ -422,7 +422,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    type
+    `type`
   :::column-end:::
   :::column:::
     Microsoft.DigitalTwins.Twin.Update
@@ -430,7 +430,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    datacontenttype
+    `datacontenttype`
   :::column-end:::
   :::column:::
     application/json
@@ -438,7 +438,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    subject
+    `subject`
   :::column-end:::
   :::column:::
     ID of the digital twin.
@@ -446,7 +446,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    time
+    `time`
   :::column-end:::
   :::column:::
     Timestamp for when the operation occurred on the digital twin.
@@ -454,7 +454,7 @@ The message conforms to this version of the CloudEvents spec.
 :::row-end:::
 :::row:::
   :::column:::
-    traceparent
+    `traceparent`
   :::column-end:::
   :::column:::
     A W3C trace context for the event.
