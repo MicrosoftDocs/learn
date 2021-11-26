@@ -11,12 +11,13 @@ metadata:
 title: Integrate AKS with Pipelines
 summary: This module explains the AKS and pipelines integration, Kubernetes, and Azure Key Vault.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Work with AKS
-  - Integrate AKS with pipelines
-  - Integrate Kubernetes and Azure Key Vault
-  - Explain readiness and liveness probes&quot;
-prerequisites: ""
+  By the end of this module, you'll be able to:
+  *   Work with AKS
+  *   Integrate AKS with pipelines
+  *   Integrate Kubernetes and Azure Key Vault
+  *   Explain readiness and liveness probes
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
