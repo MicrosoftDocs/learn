@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-pybryt.3-reference-implementations
-title: Reference Implementations
+title: Reference implementations
 metadata:
-  title: Reference Implementations
+  title: Reference implementations
   description: How to combine annotations into reference implementations and use references to assess submissions
   author: chrispyles
   ms.author: v-chpyles
