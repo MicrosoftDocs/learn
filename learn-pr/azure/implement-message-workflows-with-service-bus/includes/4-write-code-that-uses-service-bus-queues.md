@@ -47,7 +47,7 @@ ServiceBusSender sender = client.CreateSender(queueName);
 You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`.
 
 ```C#
-string message = "One large pepperoni pizza!";
+string messageContent = "Order new crankshaft for eBike.";
 var message = new ServiceBusMessage(message);
 await sender.SendMessageAsync(message);
 ```
