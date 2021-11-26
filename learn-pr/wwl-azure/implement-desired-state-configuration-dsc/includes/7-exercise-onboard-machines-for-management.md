@@ -19,7 +19,7 @@ When onboarding VMs using this method, you'll need to deploy your VMs to Azure b
 
 5.  In the resultant Registration pane, configure the following settings, and then select **OK**.
     
-        :::image type="content" source="../media/dsc8-cfa1f9bf.png" alt-text="Screenshot of the registration pane with configuration details described in the following text.":::
+    :::image type="content" source="../media/dsc8-cfa1f9bf.png" alt-text="Screenshot of the registration pane with configuration details described in the following text.":::
     
     
     :::row:::
@@ -96,7 +96,7 @@ When onboarding VMs using this method, you'll need to deploy your VMs to Azure b
     :::row-end:::
     
     
-        The service will then connect to the Azure VMs and apply the configuration.
+    The service will then connect to the Azure VMs and apply the configuration.
 
 6.  Return to the State configuration (DSC) pane and verify that the status now displays as Compliant after applying the configuration.
 
