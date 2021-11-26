@@ -13,16 +13,16 @@ In this unit, you'll build two console applications. The first application place
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 
-1. Next, make the start folder your active directory, and then open Cloud Shell editor.
+1. Next, go to the start folder in your cloned project, and then open Cloud Shell editor.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
     code .
     ```
 
-## Configure a connection string to a Service Bus namespace
+## Configure a connection string to a Service Bus Namespace
 
-To access a Service Bus namespace and use a queue within that namespace, you must configure two pieces of information in your console apps:
+To access a Service Bus Namespace and use a queue within that namespace, you must configure two pieces of information in your console apps:
 
 * Endpoint for your namespace
 * Shared access key for authentication
@@ -32,7 +32,7 @@ Both of these values can be obtained from an Azure command that will return the 
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus namespace. Replace `<namespace-name>` with the Service Bus Namespace that you created in Unit 3 of this module.
+1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus Namespace, replacing `<namespace-name>` with the Service Bus Namespace that you created in Unit 3 of this module.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -49,27 +49,27 @@ Both of these values can be obtained from an Azure command that will return the 
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-1. Copy the connection string from Cloud Shell. In the editor, open **peformancemessagesender/Program.cs** and locate the following line of code.
+1. Copy the connection string from Cloud Shell. 
+ 
+1. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code.
 
     ```C#
     const string ServiceBusConnectionString = "";
     ```
 
-1. Paste the connection string between the quotation marks. 
+1. Paste the connection string between the quotation marks, and then press <kbd> Ctrl+S</kbd> (for Windows and Linux) or <kbd>Cmd+S> to save the changes. 
 
-1. Repeat the previous step for **performancemessagereceiver/Program.cs**, pasting in the same connection string value. 
- 
-1. Save the changes to the files using the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Repeat the previous two steps for **privatemessagereceiver/Program.cs**, pasting in the same connection string. 
 
-1. You'll need this connection string several times throughout this module, so you might want to paste it somewhere handy.
+    You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
 
 ## Write code that sends a message to the queue
 
-To complete the component that sends messages about sales:
+To complete the component that sends messages about sales, you'll need to add an await operator to suspend evaluation of the async method until the asynchronous operation completes. When the asynchronous operation completes, the await operator returns the result of the operation.
 
-1. Open **performancemessagesender/Program.cs** in the editor.
+1. Open **privatemessagesender/Program.cs** in the editor.
 
-1. Locate the `SendSalesMessageAsync()` method. (Hint: it should be at or near line 23, `static async Task SendSalesMessageAsync()`.)
+1. Locate the `SendSalesMessageAsync()` method.
 
 1. Within that method, locate the following line of code.
 
@@ -144,7 +144,7 @@ To complete the component that sends messages about sales:
                 Console.WriteLine("Message was sent successfully.");
             }
     
-            static async Task SendSalesMessageAsync()
+            static async Task SendPerformanceMessageAsync()
             {
                 await using var client = new ServiceBusClient(ServiceBusConnectionString);
 
@@ -180,7 +180,7 @@ To complete the component that sends messages about sales:
 
     As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, a new message will be added to the queue.
 
-1. After it's finished, run the following command to see how many messages are in the queue. Replace \<namespace-name\> with the name of your Service Bus Namespace.
+1. After it's finished, run the following command to see how many messages are in the queue, replacing \<namespace-name\> with the name of your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \
@@ -193,7 +193,7 @@ To complete the component that sends messages about sales:
     
 ## Write code that receives a message from the queue
 
-1. In the editor, open **performancereceiver/Program.cs** and locate the following line of code:
+1. In the editor, open **privatemessagereceiver/Program.cs** and locate the following line of code:
 
     ```C#
     const string ServiceBusConnectionString = "";
@@ -301,7 +301,7 @@ To complete the component that sends messages about sales:
     using System.Threading.Tasks;
     using Azure.Messaging.ServiceBus;
     
-    namespace performancereceiver
+    namespace privatemessagereceiver
     {
         class Program
         {
@@ -367,7 +367,7 @@ To complete the component that sends messages about sales:
 1. To run the component that receives a message about a sale, run this command in Cloud Shell.
 
     ```bash
-    dotnet run -p performancereceiver
+    dotnet run -p privatemessagereceiver
     ```
 
 1. Check the notifications in Cloud Shell and in the Azure portal, navigate to your Service Bus Namespace and check your Messages chart. 
