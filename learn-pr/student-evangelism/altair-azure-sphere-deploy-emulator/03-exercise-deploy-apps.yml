@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy-apps
+title: Exercise - Deploy Altair emulator disk services to Azure Sphere
+metadata:
+  title: Exercise - Deploy Altair emulator disk services to Azure Sphere
+  description: In this exercise, you'll deploy the Altair emulator disk services to Azure Sphere.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 8 
+content: |
+  [!include[](includes/03-exercise-deploy-apps.md)]
