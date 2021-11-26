@@ -41,7 +41,7 @@ Start Debugging automatically starts the application on your device with the Vis
 3. Then, click on the **Debug** > **Start Debugging** in the menu bar.
   Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
   
-   :::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows Selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
+   :::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
 
 4. When the debugging is complete, the application will open on your desktop, and you'll be ready to draw.
 

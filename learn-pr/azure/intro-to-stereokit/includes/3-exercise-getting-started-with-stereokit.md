@@ -14,7 +14,7 @@ Here's a quick list of what is required to start developing with StereoKit:
 * **Any OpenXR runtime**
   * A flatscreen fallback is available for development.
 
-* **Enable Developer Mode (for UWP/HoloLens)**
+* **Enable developer mode (for UWP/HoloLens)**
 
 ## Install Visual Studio 2019
 
@@ -26,7 +26,7 @@ Here's a quick list of what is required to start developing with StereoKit:
 
    :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
 
-3. Once your Visual Studio starts to install, you'll see a few seconds of initialization followed by a feature selection option. First, select the **.NET Desktop development** and **Universal Windows Platform development (for HoloLens)** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click the **Modify** button.
+3. Once your Visual Studio starts to install; you'll see a few seconds of initialization followed by a feature selection option. First, select the **.NET Desktop development** and **Universal Windows Platform development (for HoloLens)** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click the **Modify** button.
 
    :::image type="content" source="../media/select-workloads.png" alt-text="Screenshot of how to select .NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
 
@@ -45,9 +45,9 @@ There are two templates provided:
 
    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
-3. **Cross Platform Template (in development)** - This is a pre-production version that is still in project format. It uses a DLL shared across several platform-specific applications to work with .Net Core, UWP, and Xamarin(Android/Quest) all at once.
+3. **Cross-Platform Template (in development)** - This is a pre-production version still in project format. It uses a DLL shared across several platform-specific applications to work with .Net Core, UWP, and Xamarin(Android/Quest) all at once.
 
-4. **Native C++ Template (in development)** - StereoKit does offer a C API, however it should only be used by experienced developers if the benefits exceed the lack of documentation.
+4. **Native C++ Template (in development)** - StereoKit does offer a C API. However it should only be used by experienced developers if the benefits exceed the lack of documentation.
 
 > [!Note]
 >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
@@ -67,7 +67,7 @@ There are two templates provided:
 
    :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
 
-## Enable Developer Mode
+## Enable developer mode
 
 Enabling Developer Mode in **HoloLens 2** & **Windows PC** makes it easier to test the ready applications. In addition to this, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if it is a valid certificate without the sign. That is an essential feature for app developers who want to test their apps on their PCs while still developing.
 
@@ -89,7 +89,7 @@ Enabling Developer Mode in **HoloLens 2** & **Windows PC** makes it easier to te
 
    :::image type="content" source="../media/enable-developer-mode-hololens.png" alt-text="Screenshot shows enabling the developer mode." lightbox="../media/enable-developer-mode-hololens.png":::
 
-### Enable Developer Mode for Windows PC
+### Enable developer mode for Windows PC
 
 If you're using a Windows Mixed Reality headset with your PC then, you have to enable Developer Mode on your computer.
 

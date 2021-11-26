@@ -85,7 +85,7 @@ The application logic, the hand menu, and the application menu are all contained
 
 ## PaletteMenu.cs script
 
-This is a menu that allows you to change the painting options. It's largely made up of pre-built UI pieces, but it also shows how to make your own with StereoKit's layout and interaction capabilities.
+This is a menu that allows you to change the painting options. It's primarily made up of pre-built UI pieces, but it also shows how to make your own with StereoKit's layout and interaction capabilities.
 
 * **Loading models**: Both of these models are used in the user interface! The first is a bottle that will serve as decoration and context while also displaying the active color, and the second is a "splash of ink" that will be turned into a pressable button that will allow users to select colors.
 
@@ -102,7 +102,7 @@ This is a menu that allows you to change the painting options. It's largely made
      float _value = 1;
      ```
 
-* **Standard window**: The standard window is used to store all the ink brush settings. The ink bottle is used to draw attention to the area's function. The size specified here will auto-fill on the x-axis, centering the Model and doubling its height to two lines.
+* **Standard window**: The standard window is used to store all the ink brush settings. The ink bottle is used to draw attention to the area's function. The size specified here will auto-fill on the x-axis, centering the model and doubling its height to two lines.
 
   :::image type="content" source="../media/ink-tools-window.png" alt-text="Screenshot of Ink tools window.” " lightbox="../media/ink-tools-window.png":::
 
@@ -221,7 +221,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
   ```
 
-* **Undo stack**: A stack is a collection of objects that are ordered from last in to first out. When you need last-in, first-out access to items, this is the method to utilize. For the **undo** function, you push the last stroke of the painting onto the stack and remove it from the painting. However, you pop the recent undo off the stack and add it to the painting for the **redo** function.
+* **Undo stack**: A stack is a collection of objects ordered from last in to first out. When you need last-in, first-out access to items, this is the method to utilize. For the **undo** function, you push the last stroke of the painting onto the stack and remove it from the painting. However, you pop the recent undo off the stack and add it to the painting for the **redo** function.
 
     ```c#
     public void Undo()
@@ -239,7 +239,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
    ```
 
-* **Translate the coordinates of the fingertip into Heirarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, and smooth it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
+* **Translate the coordinates of the fingertip into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, and smooth it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
 
   :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
@@ -250,7 +250,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
   ```
 
-* **Pinching motion**: The paint strokes are considered initiated from the user's end when performing the pinch motion and not interacting with the UI elements. Therefore, the paint strokes are continuously updated with the current Step information. When the user ceases the pinch motion, the paint stroke is considered to be completed.
+* **Pinching motion**: The paint strokes are initiated from the user's end when performing the pinch motion and not interacting with the UI elements. Therefore, the paint strokes are continuously updated with the current Step information. When the user ceases the pinch motion, the paint stroke is considered to be completed.
 
     ```c#
     if (hand.IsJustPinched && !UI.IsInteracting(handed))
@@ -271,7 +271,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
 
 * **Popping effect**: Let's start with two points. The first starts at the specified location, while the second is updated to the current fingertip location. When we reach a particular distance from the previous point, we add additional points. Still, a naïve implementation can result in a popping effect if points are merely added at distance intervals. This 'popping' artifact will be effectively prevented by the extra point that directly follows the fingertip.
 
-    We will begin with calculating the distance between the current point and the previous point and the pace at which the hand is moving. Later, make a point at the current location by utilizing speed as the stroke thickness.
+    We will begin with calculating the distance between the current and the previous point and the pace at which the hand moves. Later, make a point at the current location by utilizing speed as the stroke thickness.
 
     We'll add a new point if we're more than a centimeter away from our previous point! This is straightforward, but it works well enough. A higher-quality implementation might include an error/change function that considers angle change. Otherwise, to avoid 'popping' while adding a new point, the last point in the stroke should always be at the current fingertip location.
 
@@ -312,7 +312,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
   ```
 
-* **Converting the painting file**: Converting this painting to a file is easy. We can use LinePointToString for each point, and then we need to join all of the data together. '\n' separates each paint stroke on its line, and a comma separates each point on that stroke.
+* **Converting the painting file**: Converting this painting to a file is easy. We can use LinePointToString for each point, and then we need to join all of the data together. For example, '\n' separates each paint stroke on its line, and a comma separates each point on that stroke.
 
     ```c#
     public string ToFileData()
