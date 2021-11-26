@@ -1,0 +1,5 @@
+There are many aspects of a dependency management strategy.
+
+ -  **Standardization** Managing dependencies benefit from a standardized way of declaring and resolving them in your codebase.<br>Standardization allows a repeatable, predictable process and usage that can be automated as well.<br><br>
+ -  **Package formats and sources** The distribution of dependencies can be performed by a packaging method suited for your solution's dependency type.<br>Each dependency is packaged using its usable format and stored in a centralized source.<br>Your dependency management strategy should include the selection of package formats and corresponding sources where to store and retrieve packages.<br><br>
+ -  **Versioning** Just like your own code and components, the dependencies in your solution usually evolve.<br>While your codebase grows and changes, you need to consider the changes in your dependencies as well.<br>It requires a versioning mechanism for the dependencies to be selective of the version of a dependency you want to use.

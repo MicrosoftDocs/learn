@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "Which of the following is an advantage of running a private MQTT broker?"
+    choices:
+    - content: "It's much simpler than using the public test.mosquitto.org broker."
+      isCorrect: false
+      explanation: "Setting up an MQTT broker is more complex than using the public broker."
+    - content: "It has enhanced security, it's private, and performance is predictable. The virtual disk server performs faster when it's running on the same server as the MQTT broker."
+      isCorrect: true
+      explanation: "The Altair emulator, including the virtual disk server, will perform better when it's connected to a private MQTT broker."
+  - content: "The advantage of installing the virtual disk server on the same server as the MQTT broker is?"
+    choices:
+    - content: "The Altair virtual disk drive B will be faster."
+      isCorrect: true
+      explanation: "The Altair virtual disk drive B will be faster because there's one less network hop for each disk sector to be read or written."
+    - content: "The virtual disk server can't be run on the same server as the MQTT broker."
+      isCorrect: false
+      explanation: "It can be run on the same server, and there's an advantage."
+    - content: "The virtual disk server runs on one of the Azure Sphere real-time cores."
+      isCorrect: false
+      explanation: "The virtual server disk cache runs on one of the Azure Sphere real-time cores. The virtual disk server can be run on the same server as the MQTT broker."
+  - content: "What best describes the virtual disk server?"
+    choices:
+    - content: "The virtual disk server extends the Altair emulator by providing read/write disk support for your applications running on CP/M."
+      isCorrect: true
+      explanation: "When the virtual disk server is running, it provides a virtual disk that's accessible as drive B from CP/M on the Altair emulator. The virtual disk cache running on one of the Azure Sphere real-time cores will significantly improve the performance of the virtual disk server."
+    - content: "The virtual disk server can only be run on your desktop."
+      isCorrect: false
+      explanation: "The virtual disk server can run on your desktop or on a cloud-based virtual machine. Ideally, run the virtual disk server and the MQTT broker on the same machine."
+    - content: "The virtual disk server runs on Azure Sphere to provide read/write storage for your CP/M applications."
+      isCorrect: false
+      explanation: "The virtual disk server runs on your desktop or on a cloud-based virtual machine."
+ 
