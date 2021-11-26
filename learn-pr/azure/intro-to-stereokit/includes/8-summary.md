@@ -4,7 +4,7 @@ This course provides you with an understanding of developing the Mixed Reality a
 
 ## Next steps
 
-The application you created with StereoKit can be improved further by including a few more functions or features provided by Microsoft. Consider the following options:
+The application you created with StereoKit can be improved further by including a few more functions or features. Consider the following options:
 
 * Include features such as pencil, brush, and airbrush tool.
 * Incorporate the ability to add lines and shapes.

@@ -1,6 +1,14 @@
 In the previous chapter, you have learned how the StereoKit Ink application is developed and configured. In this chapter, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
 
-You may encounter errors when opening the Solution Explorer and the C# program file during the build process. To debug the errors, you need to run the initial build solution.
+> [!Important]
+> Make sure you have installed **StereoKit's Visual Studio template**.
+
+First, download the StereoKit Ink sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/). Then click on the **Code** button & select **Download ZIP**. Once the file download is done, click on the folder & select the **StereoKitInk.sln** file. Then **solution file** will open in Visual Studio. On the right corner of the Visual Studio, you can find **Solution Explorer**, which contains the **assets folder** and three other **program files** such as the painting menu, palette menu, and main program, which operates the main logic.
+
+:::image type="content" source="../media/scripts.png" alt-text="Screenshot of solution explorer with script list.” " lightbox="../media/scripts.png":::
+
+> [!Note]
+> The program will contain errors, which will clear at a later time during debugging.
 
 ## Build StereoKit Ink application on HoloLens 2
 
