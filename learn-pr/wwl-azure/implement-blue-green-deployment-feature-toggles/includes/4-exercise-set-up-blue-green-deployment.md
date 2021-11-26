@@ -12,46 +12,41 @@ We'll start by creating a new project with a release pipeline that can deploy th
 ## An initial app deployment
 
 1.  In a browser, navigate to Azure DevOps Demo Generator: https://azuredevopsdemogenerator.azurewebsites.net and click **Sign in**.
-
+    
     You'll be prompted to sign in if necessary.
-
-2.  In the **Create New Project** window, select your existing Organization, set the **Project Name** to **PU Hosted,** and click **Choose template**.
-
+2.  In the **Create New Project** window, select your existing Organization, set the **Project Name** to **PU Hosted,** and click **Choose template** .
+    
     :::image type="content" source="../media/11-01-choose-template-a9d229dd.png" alt-text="Choose template.":::
-
-
+    
 3.  Click on the **PartsUnlimited** project (not the PartsUnlimited-YAML project), click **Select Template**, and click **Create Project**. When the deployment completes, click **Navigate to the project**.
 4.  In the main menu for **PU Hosted**, click **Pipelines**, then click **Builds**, then **Queue,** and finally **Run** to start a build.
-
+    
     The build should succeed.
-
-> [!NOTE]
-> *Warnings might appear but can be ignored for this walkthrough.*
-
+    
+    > [!NOTE]
+    > *Warnings might appear but can be ignored for this walkthrough.*
+    
     :::image type="content" source="../media/11-02-build-succeeded-58a5cd6c.png" alt-text="Build succeeded.":::
-
-
+    
 5.  In the main menu, click **Releases**. Because a continuous integration trigger was in place, a release was attempted. However, we haven't yet configured the release, so that it will have failed. Click **Edit** to enter edit mode for the release.
-
+    
     :::image type="content" source="../media/11-03-release-pipeline-edit-42a741fc.png" alt-text="Release pipeline edit.":::
-
-
+    
 6.  Select the Dev stage from the drop-down list beside **Tasks**, then click to select the **Azure Deployment** task.
 7.  In the **Azure resource group deployment** pane, select your Azure subscription, then click **Authorize** when prompted. When authorization completes, select a **Location** for the web app.
-
-> [!NOTE]
-> *You might be prompted to log in to Azure at this point.*
-
+    
+    > [!NOTE]
+    > *You might be prompted to log in to Azure at this point.*
+    
     :::image type="content" source="../media/11-04-resource-group-deployment-ae04074a.png" alt-text="Resource group deployment.":::
-
-
+    
 8.  In the task list, click **Azure App Service Deploy** to open its settings. Again, select your Azure subscription. Set the **Deployment slot** to **Staging**.
-
+    
     :::image type="content" source="../media/11-05-staging-app-service-deploy-fa348f16.png" alt-text="Staging app service deploy.":::
-
-
-> [!NOTE]
-> *The template creates a production site and two deployment slots: Dev and Staging. We'll use Staging for our Green site.*
+    
+    
+    > [!NOTE]
+    > *The template creates a production site and two deployment slots: Dev and Staging. We'll use Staging for our Green site.*
 
 9.  In the task list, click **Dev,** and in the **Agent job** pane, select **Azure Pipelines** for the **Agent pool** and **vs2017-win2016** for the **Agent Specification**.
 
