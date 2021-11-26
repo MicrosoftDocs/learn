@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-container-build-strategy.explore-docker-containers-development
+title: Explore Docker containers and development
+metadata:
+  title: Explore Docker containers and development
+  description: "Explore Docker containers and development"
+  ms.date: 11/26/2021
+  author: wwlpublish
+  ms.author: luiz.macedo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-docker-containers-development.md)]
