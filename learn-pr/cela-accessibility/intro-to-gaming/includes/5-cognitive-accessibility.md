@@ -33,12 +33,3 @@ The ability to adjust the length and presence of notifications and background an
 Navigating through gaming experiences often requires players to recall past information to inform future decisions. This information can include things like the control scheme for the game, events that happened in the storyline, and important locations in the game and how to get to them. For players who have difficulty remembering information like this, you can take different approaches to provide this information in an accessible way across various aspects of the game.
 
 In general, the ability to reference information like control schemes, objective logs, or area maps at any time can eliminate the need for players to memorize this information.
-
-## Solve for one, extend to many
-
-The inclusive design principle “solve for one, extend to many” introduces the premise that intentional design efforts geared toward creating accessible experiences for people with disabilities result in universally beneficial features and settings. For example, accessible automatic doors for wheelchair access are also often used by the following individuals:
-
-- Those who have their hands full and cannot open the door.
-- Those who wish to avoid touching door handles for hygienic reasons.
-
-When it comes to game accessibility, it is important to note that options or features intended to facilitate access for a specific group of players can often provide better experiences for all players. For example, captions and subtitles are intended to make game experiences accessible to players who are d/Deaf or hard of hearing. They may also assist players who are easily distracted and miss audio cues or players in a very loud environment can also benefit from these features.
