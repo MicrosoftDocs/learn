@@ -39,7 +39,7 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
 
 1. After validation succeeds, select **Create** to create your Service Bus namespace.
 
-    :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Create namespace pane showing validation succeeded and Create button highlighted.":::
+    :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Create namespace pane, showing validation succeeded and Create button highlighted.":::
 
 ## Create a Service Bus queue
 
@@ -51,13 +51,13 @@ Let's add a queue for messages about individual sales to your namespace.
     
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus Namespace and Create queue panes with Queue and Create highlighted.":::
 
-1. In the **Name** text box, enter *salesmessages*, and then select **Create**.  
+1. In the **Name** text box, enter `salesmessages`, and then select **Create**.  
     
-    When the message queue has been created, **salesmessages** is listed under the **Queues** tab at the bottom of the Service Bus Namespace.
+    When the message queue has been created, `salesmessages` is listed under the **Queues** tab at the bottom of the Service Bus Namespace.
 
 ## Create a Service Bus topic and subscriptions
 
-You also want to create a topic that will be used for messages that relate to sales performance. Each instance of the business logic web service will subscribe to this topic, and each sales performance message will be delivered to all web service subscriptions.
+You also want to create a topic that will be used for messages that relate to sales performance. Each instance of the business logic web service subscribes to this topic, and each sales performance message will be delivered to all web service subscriptions.
 
 Let's add a Service Bus topic and subscriptions.
 
@@ -69,7 +69,7 @@ Let's add a Service Bus topic and subscriptions.
 
 1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace.
  
-1. To add or remove subscriptions to a queue or topic, you can select one from the list on its respective tab in the Service Bus Namespace, or you can add or remove subscriptions to entities via the menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
+1. You can add or remove subscriptions to a queue or topic from the respective tab in the Service Bus Namespace, or you can use the Entities menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
  
 1. The sales performance messages Service Bus Topic pane appears. 
 
