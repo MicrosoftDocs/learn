@@ -14,18 +14,19 @@ Screen readers are a form of assistive technology that renders text or image con
 
 Some players may use high contrast modes at the platform-level on their devices. High contrast modes are intended to enhance the visibility of on-screen elements by changing color schemes or simplifying backgrounds. For example, High Contrast Mode is the name of a tool on the Xbox Platform that helps users more clearly distinguish elements on their screen by eliminating background images unnecessary to UI navigation and making the focus indicator stand out more prominently against the UI. It is primarily used by those with low vision, but is also beneficial to neurodiverse users, as the contrast mode simplifies the visual aspects of the user interface that some may find less distracting and therefore easier to navigate. High Contrast Mode is a console setting and is not applied to experiences outside of the Xbox platform navigation.
 
+:::image type="content" source="../media/color-filters-one.png" alt-text="A collection of controllers including the Xbox Adaptive Control, a small red switch, a large green switch, and a standard Xbox Controller.":::
+
 ### Color filters
 
 Color filters are typically settings or features that allow users to improve the visibility of elements on screen by applying. They are most commonly used by players with color blindness, and can help improve a player's ability to distinguish the difference between colors on screen. Color filters are another assistive technology that may be provided at the platform level for players. These filters may or may not work with specific applications or game titles on a platform depending on the technology and compatibility.
+
+:::image type="content" source="../media/color-filters-one.png" alt-text="A collection of controllers including the Xbox Adaptive Control, a small red switch, a large green switch, and a standard Xbox Controller.":::
 
 ### Magnification tools
 
 Magnification typically enlarges a portion of a screen or all of a screen so users can more easily see words and images. In gaming contexts, magnification tools can allow players to zoom in on specific areas of their gameplay environment to get a clearer look at the contents on screen. Magnification tools can help players with low vision enlarge screen elements to the point where they can be read or interpreted. Additionally, magnification tools can help players who are using small screens like mobile devices, or are playing on screens that are further away, making screen elements appear small.
 
-Magnification Video:
-
-- Video of using magnifier while navigating through platform.
-- Video of using magnifier to zoom in on a small/far away in game element to see or read it
+:::image type="content" source="../media/color-filters-one.png" alt-text="A collection of controllers including the Xbox Adaptive Control, a small red switch, a large green switch, and a standard Xbox Controller.":::
 
 ### Accessible Player-to-player communication tools
 
@@ -44,11 +45,6 @@ Captions translate noise and dialogue from the game into text that appears on-sc
 ### Input remapping
 
 Input remapping allows players to reassign the functions on their standard input devices. Remapping capabilities are helpful in allowing players with limited mobility to change the arrangement of their controls through software. For example, if the default assignment for sprinting in a game is right stick-click and a player with a thumb injury finds performing that action difficult, they can remap the sprint function to a different button on their controller that is easier to activate via software.
-
-Input Remapping Video:
-
-- Platform level
-- In game remapping (grounded) – shows pc and console
 
 ## Software considerations for game accessibility
 
