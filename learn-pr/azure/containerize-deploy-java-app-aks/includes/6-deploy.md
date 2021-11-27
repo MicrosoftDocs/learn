@@ -1,6 +1,6 @@
-In this unit, you'll deploy a Docker image to Azure Kubernetes Service.
+In this unit, you'll deploy a container image to Azure Kubernetes Service.
 
-With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` Docker image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to create, update, and delete pods instead of letting the Kubernetes orchestrate this.
+With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster to run in a desired state, via a Deployment, which is the process of providing declarative updates to Pods and ReplicaSets. This declaration of state is administered in the manifest (YAML) file, and the Kubernetes controller will change the current state to the declared state when instructed. You will create this ```deployment.yml``` manifest file below and instruct your Azure Kubernetes Service to run in a desired state with pods configured to pull/run the ```flightbookingsystemsample``` container image that is resident in Azure Container Registry (that was pushed in from the previous unit). Without this deployment.yml you would manually have to create, update, and delete pods instead of letting the Kubernetes orchestrate this.
 
 > [!NOTE]
 > If your session has idled out, your doing this step at another point in time and/or from another CLI you may have to re initialize your environment variables and re authenticate with the following CLI commands.
@@ -19,9 +19,9 @@ With Azure Kubernetes Service, you will be configuring your Kubernetes Cluster t
 >
 >az acr login -n $AZ_CONTAINER_REGISTRY
 
-## Deploy a Docker image
+## Deploy a container image
 
-You'll deploy this the ```flightbookingsystemsample``` Docker image to your Azure Kubernetes Cluster.
+You'll deploy this the ```flightbookingsystemsample``` container image to your Azure Kubernetes Cluster.
 
 Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called deployment.yml. Run the following command in your CLI:
 
@@ -78,7 +78,7 @@ spec:
 > [!NOTE]
 > Optionally, the deployment_solution.yml in the root of your project contains the contents needed, you may find it easier to rename/update the contents of that file.
 
-In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the Docker image locally with the ```-p``` port argument.
+In the deployment.yml above you'll notice this deployment.yml contains a Deployment and a Service. The deployment is used to administer a set of pods while the service is used to allow network access to the pods. You'll notice the pods are configured to pull a single image, the ```<AZ_CONTAINER_REGISTRY>.azurecr.io/flightbookingsystemsample:latest``` from Azure Container Registry. You'll also notice the the service is configured to allow incoming HTTP pod traffic to port 8080, similarly to the way you ran the container image locally with the ```-p``` port argument.
 
 By now your Azure Kubernetes Cluster creation should have successfully completed.
 
@@ -97,7 +97,7 @@ az aks get-credentials --resource-group $AZ_RESOURCE_GROUP --name $AZ_KUBERNETES
 You will see the following:
 
 ```bash
-Merged "javacontainerizationdemoaks" as current context in /home/chtrembl/.kube/config
+Merged AZ_KUBERNETES_CLUSTER as current context in ~/.kube/config
 ```
 
 You'll now instruct Azure Kubernetes Service to apply deployment.yml changes to your cluster. Run the following command in your CLI:
@@ -137,9 +137,9 @@ replicaset.apps/flightbookingsystemsample-75647c4c98   1         1         1    
 replicaset.apps/flightbookingsystemsample-7564c58f55   0         0         0       13d
 ```
 
-If your ```POD``` status is ```Running``` then the application should be accessible.
+If your ```POD``` status is ```Running``` then the app should be accessible.
 
-You can view the application logs within each pod as well. Run the following command in your CLI:
+You can view the app logs within each pod as well. Run the following command in your CLI:
 
 ```bash
  kubectl logs pod/flightbookingsystemsample-<POD_IDENTIFIER_FROM_YOUR_RUNNING_POD>
@@ -183,7 +183,7 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 07-Oct-2021 18:31:15.071 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6497 ms
 07-Oct-2021 18:31:15.771 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 07-Oct-2021 18:31:15.772 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.71]
-07-Oct-2021 18:31:16.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
+07-Oct-2021 18:31:16.261 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
 07-Oct-2021 18:31:30.782 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.sun.xml.ws.policy.privateutil.MethodUtil (file:/usr/local/tomcat/webapps/FlightBookingSystemSample/WEB-INF/lib/webservices-rt-2.3.1.jar) to method sun.reflect.misc.MethodUtil.invoke(java.lang.reflect.Method,java.lang.Object,java.lang.Object[])
@@ -194,20 +194,20 @@ WARNING: All illegal access operations will be denied in a future release
 07-Oct-2021 18:31:54.864 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
 07-Oct-2021 18:32:02.869 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
 07-Oct-2021 18:32:02.870 INFO [localhost-startStop-1] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-07-Oct-2021 18:32:03.069 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [46,808] ms
+07-Oct-2021 18:32:03.069 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [46,808] ms
 07-Oct-2021 18:32:03.165 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 07-Oct-2021 18:32:03.267 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 48195 ms
 ```
 
-You can now use the ```EXTERNAL-IP``` from your ```kubectl get all``` output to access the running application within Azure Kubernetes Service.
+You can now use the ```EXTERNAL-IP``` from your ```kubectl get services turkishairlines``` output to access the running app within Azure Kubernetes Service.
 
 > [!NOTE]
-> You'll want to substitute the ip address of your EXTERNAL-IP for 20.81.13.151
+> You'll want to substitute the ip address below, 20.81.13.151, with that of your EXTERNAL-IP from the command above.
 
 Open up a browser and visit the Flight Booking System Sample landing page at [http://20.81.13.151:8080/FlightBookingSystemSample](http://20.81.13.151:8080/FlightBookingSystemSample)
 
 You should see the following:
 
-![Screenshot showing the running application.](../media/deploy.png)
+![Screenshot showing the running app](../media/deploy.png)
 
-You can optionally log in with any user from tomcat-usrrs.xml for example someuser@azure.com:password
+You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com:password

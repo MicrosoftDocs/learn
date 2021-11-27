@@ -62,7 +62,7 @@ az group create \
 
 ### Create a Azure Container Registry
 
-Azure Container Registry allows you to build, store, and manage container images, which is ultimately where Docker image for the Java application will be stored. Create a Container registry:
+Azure Container Registry allows you to build, store, and manage container images, which is ultimately where the container image for the Java app will be stored. Create a Container registry:
 
 ```bash
 az acr create \
@@ -87,7 +87,7 @@ az acr login -n $AZ_CONTAINER_REGISTRY
 
 ### Create an Azure Kubernetes Cluster
 
-You'll need an Azure Kubernetes Cluster to deploy the Java application (Docker image) to. Create an AKS Cluster:
+You'll need an Azure Kubernetes Cluster to deploy the Java app (container image) to. Create an AKS Cluster:
 
 ```bash
 az aks create \

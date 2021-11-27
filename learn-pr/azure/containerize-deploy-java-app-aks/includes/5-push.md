@@ -1,4 +1,4 @@
-In this unit, you'll push a Docker image to Azure Container Registry.
+In this unit, you'll push a container image to Azure Container Registry.
 
 Azure Container Registry allows you to build, store, and manage container images and artifacts in a private registry for all types of container deployments. Use Azure container registries with your existing container development and deployment pipelines.
 
@@ -19,11 +19,11 @@ Azure Container Registry allows you to build, store, and manage container images
 >
 >az acr login -n $AZ_CONTAINER_REGISTRY
 
-## Push a Docker image
+## Push a container image
 
-You can push your newly built Docker image to the Azure Container Registry. By doing so, your Docker image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the flightbookingsystemsample image from Azure Container Registry.
+You can push your newly built container image to the Azure Container Registry. By doing so, your container image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the flightbookingsystemsample image from Azure Container Registry.
 
-To push the Docker image to Azure Container Registry, run the following three commands in your CLI:
+To push the container image to Azure Container Registry, run the following three commands in your CLI:
 
 Login to Azure Container Registry:
 
@@ -31,13 +31,13 @@ Login to Azure Container Registry:
 az acr login
 ```
 
-First tag the previously built Docker image with your Azure Container Registry:
+First tag the previously built container image with your Azure Container Registry:
 
 ```bash
 docker tag flightbookingsystemsample $AZ_CONTAINER_REGISTRY.azurecr.io/flightbookingsystemsample
 ```
 
-Second, push the Docker image to Azure Container Registry:
+Second, push the container image to Azure Container Registry:
 
 ```bash
 docker push $AZ_CONTAINER_REGISTRY.azurecr.io/flightbookingsystemsample
@@ -67,4 +67,4 @@ You will see the following meta-data as seen below:
 }
 ```
 
-Your Docker image is now resident within Azure Container Registry and ready for deployments by Azure Services such as Azure Kubernetes Service.
+Your container image is now resident within Azure Container Registry and ready for deployments by Azure Services such as Azure Kubernetes Service.

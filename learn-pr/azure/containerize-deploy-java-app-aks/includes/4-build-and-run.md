@@ -1,14 +1,14 @@
-In this unit, you'll build and run the Docker image. As mentioned earlier, a running instance of a Docker image is a container.
+In this unit, you'll build and run the container image. As mentioned earlier, a running instance of an image is a container.
 
-## Build a Docker image
+## Build a container image
 
-Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a Docker image for you.
+Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
 
 > [!NOTE]
 > Ensure your Docker runtime is configured to build Linux containers. This is important as the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
 
 
-```docker build``` is the command used to build Docker images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
+```docker build``` is the command used to build container images. The ```-t``` argument will be used to specify a container label and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
 
 ```bash
 docker build -t flightbookingsystemsample .
@@ -94,7 +94,7 @@ Successfully built a0b73d3f3f91
 Successfully tagged flightbookingsystemsample:latest
 ```
 
-As you can see above, Docker has executed the instructions from the lines that you have previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that have not changed. If your not making application changes (before rerunning the ```docker build``` command), then you will notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your Docker images and the associated compute costs with time spent building them.
+As you can see above, Docker has executed the instructions from the lines that you have previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that have not changed. If your not making app changes (before rerunning the ```docker build``` command), then you will notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
 
 Docker can also display the available images that are resident. This is helpful for viewing what's available to run. Run the following command in your CLI:
 
@@ -110,11 +110,11 @@ REPOSITORY                                        TAG                 IMAGE ID  
 flightbookingsystemsample                                   latest              cda4f5b459f1        About an hour ago   268MB
 ```
 
-## Run a Docker image
+## Run a container image
 
-Now that you have successfully built a Docker image, you can run it.
+Now that you have successfully built a container image, you can run it.
 
-```docker run``` is the command used to run a Docker image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat application server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
+```docker run``` is the command used to run a container image. The ```-p ####:####``` argument will be used to forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat app server is listening for HTTP traffic on port 8080 hence that is the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
 
 ```bash
 docker run -p 8080:8080 flightbookingsystemsample
@@ -158,13 +158,13 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 02-Aug-2021 20:50:23.777 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1697] milliseconds
 02-Aug-2021 20:50:23.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 02-Aug-2021 20:50:23.978 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.50]
-02-Aug-2021 20:50:24.039 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
+02-Aug-2021 20:50:24.039 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
 02-Aug-2021 20:50:27.164 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
 02-Aug-2021 20:50:30.887 INFO [main] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/FlightBookingSystemSample-PriceAndSeats-PriceAndSeatsPort
 02-Aug-2021 20:50:31.151 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
 02-Aug-2021 20:50:32.662 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
 02-Aug-2021 20:50:32.663 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-02-Aug-2021 20:50:32.735 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [8,695] ms
+02-Aug-2021 20:50:32.735 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [8,695] ms
 02-Aug-2021 20:50:32.746 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
 ```
@@ -173,8 +173,8 @@ Open up a browser and visit the Flight Booking System Sample landing page at [ht
 
 You should see the following
 
-![Screenshot showing the running application.](../media/build-and-run.png)
+![Screenshot showing the running app.](../media/build-and-run.png)
 
 You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com:password
 
-To stop the Docker container hold ctrl + c inside the CLI.
+To stop the container hold ctrl + c inside the CLI.
