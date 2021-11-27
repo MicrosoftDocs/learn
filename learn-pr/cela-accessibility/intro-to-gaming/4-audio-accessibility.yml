@@ -9,7 +9,7 @@ metadata:
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 25
+durationInMinutes: 12
 content: |
   [!include[](includes/4-audio-accessibility.md)]
 quiz:
@@ -37,14 +37,3 @@ quiz:
     - content: "Allow players to remap up to 4 controls in a game."
       isCorrect: true
       explanation: "Correct. Developers should enable players to remap all controls in a game to meet the needs of players with specific dexterity and fine motor disabilities."
-  - content: "Which of the following is would not typically be considered a barrier for a player with cognitive disabilities?"
-    choices:
-    - content: "Attention"
-      isCorrect: false
-      explanation: "Incorrect. Attention is one of the primary aspects of cognition that players with cognitive disabilities may experience challenges to."
-    - content: "Memory"
-      isCorrect: false
-      explanation: "Incorrect. Memory is one of the primary aspects of cognition that players with cognitive disabilities may experience challenges to."
-    - content: "Dexterity"
-      isCorrect: true
-      explanation: "Correct. Dexterity in the context of gaming refers to the rapid movement of a player’s fingers to activate controls within a specific time frame, and is most often associated was a barrier for individuals with mobility disabilities."
