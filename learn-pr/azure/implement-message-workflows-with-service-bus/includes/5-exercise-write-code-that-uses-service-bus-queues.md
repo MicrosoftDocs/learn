@@ -6,14 +6,14 @@ You've already implemented the necessary objects in your Azure subscription. Now
 
 In this unit, you'll build two console applications. The first application places messages into a Service Bus queue and the second application retrieves them. The applications are part of a single .NET Core solution.
 
-1. Start by cloning the solution. In Azure Cloud Shell, run the following command.
+1. Run the following command n Azure Cloud Shell to clone the git project solution.  
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 
-1. Next, go to the start folder in your cloned project, and then open Cloud Shell editor.
+1. Enter the following command to go the start folder in your cloned project and open Cloud Shell editor.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -22,17 +22,19 @@ In this unit, you'll build two console applications. The first application place
 
 ## Configure a connection string to a Service Bus Namespace
 
-To access a Service Bus Namespace and use a queue within that namespace, you must configure two pieces of information in your console apps:
+You must configure two pieces of information in your console apps to access a Service Bus Namespace and use a queue within that namespace:
 
 * Endpoint for your namespace
 * Shared access key for authentication
 
-Both of these values can be obtained from an Azure command that will return the complete connection string based on the namespace you created in the previous exercise.
+Both of these values can be obtained from the connection string. 
 
 > [!NOTE]
-> For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
+> For simplicity, the following steps will instruct you to hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you should use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus Namespace, replacing `<namespace-name>` with the Service Bus Namespace that you created in Unit 3 of this module.
+The following Azure command will return the complete connection string based on the Service Bus Namespace you created in the previous exercise.
+
+1. Run the following command in Cloud Shell to obtain the connection string for your Service Bus Namespace, replacing `<namespace-name>` with the Service Bus Namespace that you created in Unit 3.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -43,31 +45,29 @@ Both of these values can be obtained from an Azure command that will return the 
         --namespace-name <namespace-name>
     ```
 
-    The last line in the response is the connection string, which includes the endpoint for your namespace and the shared access key. It should resemble the following example:
+    In the response, the last line contains the connection string, which includes the endpoint for your namespace and the shared access key. It should resemble the following example:
 
-    ```
+    ```C#
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-1. Copy the connection string from Cloud Shell. 
+1. Copy the connection string from Cloud Shell. You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
  
-1. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code.
+1. In the Cloud Shell editor, open **privatemessagesender/Program.cs** and locate the following line of code.
 
     ```C#
     const string ServiceBusConnectionString = "";
     ```
 
-1. Paste the connection string between the quotation marks, and then press <kbd> Ctrl+S</kbd> (for Windows and Linux) or <kbd>Cmd+S> to save the changes. 
+1. Paste the connection string between the empty pair of quotation marks, and then press <kbd> Ctrl+S</kbd> (for Windows and Linux) or <kbd>Cmd+S> to save the file. 
 
-1. Repeat the previous two steps for **privatemessagereceiver/Program.cs**, pasting in the same connection string. 
-
-    You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
+1. In the Cloud Shell editor, open **privatemessagereceiver/Program.cs**, locate the same `const string ServiceBusConnectionString`, paste the same `Endpoint=sb...` connection string between the empty pair of quotation marks, and then save your changes. 
 
 ## Write code that sends a message to the queue
 
-To complete the component that sends messages about sales, you'll need to add an await operator to suspend evaluation of the async method until the asynchronous operation completes. When the asynchronous operation completes, the await operator returns the result of the operation.
+To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes.
 
-1. Open **privatemessagesender/Program.cs** in the editor.
+1. In the Cloud Shell editor, open **privatemessagesender/Program.cs**.
 
 1. Locate the `SendSalesMessageAsync()` method.
 
@@ -91,7 +91,7 @@ To complete the component that sends messages about sales, you'll need to add an
     ```C#
     // Create a sender here
     ```
-1. Replace that line of code with the following code.
+1. Replace that comment with the following code.
 
     ```C#
     await using ServiceBusSender sender = client.CreateSender(QueueName);
@@ -110,7 +110,7 @@ To complete the component that sends messages about sales, you'll need to add an
     var message = new ServiceBusMessage(messageBody);
     ```
 
-1. Insert the following code on a new line directly below what you just added to display the message in the console.
+1. Insert the following code on a new line directly below what you just added. This command prints the message body to the console.
 
     ```C#
     Console.WriteLine($"Sending message: {messageBody}");
