@@ -18,7 +18,7 @@ To begin, open a second browser window or tab.
 
 ## Share it with a peer
 
-1. Now navigate to and select your profile (avatar image).
+1. Now navigate to and select your **Profile** (avatar image).
 1. Select **Collections**.
 1. Select **Share** and choose your method of distributing your collection.
 
