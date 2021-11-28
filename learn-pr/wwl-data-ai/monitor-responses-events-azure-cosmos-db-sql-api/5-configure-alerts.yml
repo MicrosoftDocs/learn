@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.configure-alerts
+title: Configure Alerts
+metadata:
+  title: Configure Alerts
+  description: "Configure Alerts"
+  ms.date: 11/28/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-configure-alerts.md)]
