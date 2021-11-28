@@ -52,13 +52,11 @@ Using the context manager `pybryt.check`, we can run our test cases against this
 
 
 ```python
-with pybryt.check(hailstone_ref):
-    run_hailstone_test_cases(hailstone)
+>>> with pybryt.check(hailstone_ref):
+...     run_hailstone_test_cases(hailstone)
+REFERENCE: hailstone
+SATISFIED: True
 ```
-
-    REFERENCE: hailstone
-    SATISFIED: True
-
 
 ## Using multiple reference implementations
 
@@ -109,13 +107,11 @@ Let's try testing this implementation against our reference. We should see that 
 
 
 ```python
-with pybryt.check(hailstone_ref):
-    run_hailstone_test_cases(iterative_hailstone)
+>>> with pybryt.check(hailstone_ref):
+...     run_hailstone_test_cases(iterative_hailstone)
+REFERENCE: hailstone
+SATISFIED: False
 ```
-
-    REFERENCE: hailstone
-    SATISFIED: False
-
 
 To solve this issue, let's turn `iterative_hailstone` into its own reference:
 
@@ -130,24 +126,21 @@ To run checks against multiple reference implementations, pass in a list of them
 
 
 ```python
-with pybryt.check([hailstone_ref, iterative_hailstone_ref]):
-    run_hailstone_test_cases(hailstone)
+>>> with pybryt.check([hailstone_ref, iterative_hailstone_ref]):
+...     run_hailstone_test_cases(hailstone)
+>>> print()
+>>> with pybryt.check([hailstone_ref, iterative_hailstone_ref]):
+...     run_hailstone_test_cases(iterative_hailstone)
+REFERENCE: hailstone
+SATISFIED: True
 
-print()
+REFERENCE: iterative_hailstone
+SATISFIED: False
 
-with pybryt.check([hailstone_ref, iterative_hailstone_ref]):
-    run_hailstone_test_cases(iterative_hailstone)
+REFERENCE: hailstone
+SATISFIED: False
+
+REFERENCE: iterative_hailstone
+SATISFIED: True
 ```
-
-    REFERENCE: hailstone
-    SATISFIED: True
-    
-    REFERENCE: iterative_hailstone
-    SATISFIED: False
-    
-    REFERENCE: hailstone
-    SATISFIED: False
-    
-    REFERENCE: iterative_hailstone
-    SATISFIED: True
 
