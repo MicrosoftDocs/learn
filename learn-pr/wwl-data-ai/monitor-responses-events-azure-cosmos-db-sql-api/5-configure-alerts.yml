@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/5-configure-alerts.md)]
