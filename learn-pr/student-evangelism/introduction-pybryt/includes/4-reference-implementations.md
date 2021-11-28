@@ -6,15 +6,15 @@ from typing import List
 
 # Reference implementations
 
-A [**reference implementation**](https://microsoft.github.io/pybryt/html/reference_implementations.html) defines a set of conditions for validating a solution to a problem. A set of reference implementations define the different solutions to a problem set for students, and allow instructors to validate unstructured student code for algorithmic correctness. In PyBryt, these take the form of the [`pybryt.ReferenceImplementation`](https://microsoft.github.io/pybryt/html/api_reference.html#pybryt.reference.ReferenceImplementation) object, which houses a series of annotations that assert conditions on the memory footprint of a submission.
+A [**reference implementation**](https://microsoft.github.io/pybryt/html/reference_implementations.html) defines a set of conditions for validating a solution to a problem. A set of reference implementations defines the different solutions to a problem set for students, and allow instructors to validate unstructured student code for algorithmic correctness. In PyBryt, these references take the form of the [`pybryt.ReferenceImplementation`](https://microsoft.github.io/pybryt/html/api_reference.html#pybryt.reference.ReferenceImplementation) object, which houses a series of annotations that assert conditions on the memory footprint of a submission.
 
-Reference implementations can be put to different uses: you may write some based on correct implementations to validate that a submission follows an accepted format, or write some that match incorrect solutions to flag common issues for students. Coupling these with descriptive annotation messages allows for a robust automated feedback system for student work.
+Reference implementations can be put to different uses: you may write some based on correct implementations to validate that a submission follows an accepted format, or write some that match incorrect solutions to flag common issues for students. Coupling these validations with descriptive annotation messages allows for a robust automated feedback system for student work.
 
-## Creating and Checking Reference Implementations
+## Creating and checking reference implementations
 
-Reference implementations can be created in a couple of ways: programmatically, by collecting annotations into a list and instantiating the `pybryt.ReferenceImplementation` object, or via compiling a reference notebook that contains annotations. PyBryt automatically tracks every annotation that gets created, so when compiling a notebook, it is not necessary to collect the annotations into a list or create a reference implementation object; instead, PyBryt assumes all of the annotations are part of a single reference implementation and creates the object for you. You can find more information about compiling references [here](https://microsoft.github.io/pybryt/html/reference_implementations.html#automatic-reference-creation).
+Reference implementations can be created in a couple of ways: programmatically, by collecting annotations into a list and instantiating the `pybryt.ReferenceImplementation` object, or via compiling a reference notebook that contains annotations. PyBryt automatically tracks every annotation that gets created, so when compiling a notebook, it isn't necessary to collect the annotations into a list or create a reference implementation object; instead, PyBryt assumes all of the annotations are part of a single reference implementation and creates the object for you. You can find more information about compiling references [here](https://microsoft.github.io/pybryt/html/reference_implementations.html#automatic-reference-creation).
 
-To create a reference implementation programmatically, as we will in this module, annotations are collected into a list which is then passed to the `pybryt.ReferenceImplementation` constructor along with the name of the reference. Let's construct a simple reference for finding the [hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) of a number. The function `hailstone` below returns the sequence as a list and contains annotations for tracking the progress of the list construction, which are stored in `hailstone_annotations`.
+To create a reference implementation programmatically, as we'll in this module, annotations are collected into a list, which is then passed to the `pybryt.ReferenceImplementation` constructor along with the name of the reference. Let's construct a reference for finding the [hailstone sequence](https://en.wikipedia.org/wiki/Collatz_conjecture) of a number. The function `hailstone` below returns the sequence as a list and contains annotations for tracking the progress of the list construction, which are stored in `hailstone_annotations`.
 
 
 ```python
@@ -32,7 +32,7 @@ def hailstone(n: int) -> List[int]:
     return ret
 ```
 
-Let's test out our `hailstone` implementation. The function `run_hailstone_test_cases` below runs a few test cases on a function `hailstone_fn` which returns a number's hailstone sequence., resetting the `hailstone_annotations` list before each run so that we don't create duplicate annotations. Let's use it to test `hailstone`:
+Let's test out our `hailstone` implementation. The function `run_hailstone_test_cases` below runs a few test cases on a function `hailstone_fn`, which returns a number's hailstone sequence, resetting the `hailstone_annotations` list before each run so that we don't create duplicate annotations. Let's use it to test `hailstone`:
 
 
 ```python
@@ -68,9 +68,9 @@ with pybryt.check(hailstone_ref):
     SATISFIED: True
 
 
-## Using Multiple Reference Implementations
+## Using multiple reference implementations
 
-Now that we understand how to construct single references, let's take a look at combining multiple references. One of PyBryt's core ideas is to be flexible and student-implementation-agnostic, allowing instructors to write multiple reference implementations for the various was that students can solve problems. To demonstrate this, let's create another reference for the hailstone sequence. The implementation above used recursion to construct the list from the bottom-up, giving us a series of annotations that look like this:
+Now that we understand how to construct single references, let's take a look at combining multiple references. One of PyBryt's core ideas is to be flexible and student-implementation-agnostic, allowing instructors to write multiple reference implementations for the various was that students can solve problems. To demonstrate this flexibility, let's create another reference for the hailstone sequence. The implementation above used recursion to construct the list from the bottom-up, giving us a series of annotations that look like this:
 
 
 ```python
@@ -119,7 +119,7 @@ def iterative_hailstone(n: int) -> List[int]:
     return ret
 ```
 
-Let's try testing this implementation against our reference. We should see that it fails, even though `run_hailstone_test_cases` doesn't raise any errors. This is because the `iterative_hailstone` function is a correct implementation, but it doesn't follow the agorithm `hailstone_ref` is expecting.
+Let's try testing this implementation against our reference. We should see that it fails, even though `run_hailstone_test_cases` doesn't raise any errors. This is because the `iterative_hailstone` function is a correct implementation, but it doesn't follow the algorithm `hailstone_ref` is expecting.
 
 
 ```python
@@ -146,7 +146,7 @@ iterative_hailstone_ref
 
 
 
-To run checks against multiple reference implementations, simply pass in a list of them. Let's validate our old and new references using `pybryt.check`; we should see that each implementation satisfied one of the references, allowing us to check for two different kinds of implementations!
+To run checks against multiple reference implementations, pass in a list of them. Let's validate our old and new references using `pybryt.check`; we should see that each implementation satisfied one of the references, allowing us to check for two different kinds of implementations!
 
 
 ```python
