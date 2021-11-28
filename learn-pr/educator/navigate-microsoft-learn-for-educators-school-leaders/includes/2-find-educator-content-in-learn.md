@@ -1,6 +1,6 @@
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
-:::image type="content" source="../media/educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
+:::image type="content" source="../media/educator-center-overview.png" alt-text="Screenshot of the Microsoft Learn Educator Center overview page with Educator Center highlighted in the navigation":::
 
 On Microsoft Learn, you will find:
 
