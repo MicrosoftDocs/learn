@@ -1,10 +1,3 @@
-```python
-!pip install -Uqq pybryt
-import hashlib
-import numpy as np
-import pybryt
-```
-
 # Annotations
 
 To understand how to build a reference implementation, we must first take a look at the building blocks of reference implementations: annotations. **Annotations** are Python objects that an instructor creates to assert conditions on each submission; these conditions can be things like the presence of a value, the temporal relationship between values, or even the time complexity of a block of code. Annotations are created by instantiating classes provided by the `pybryt` package.
