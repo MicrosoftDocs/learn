@@ -23,10 +23,10 @@ Here are some of the main items in your profile:
 
 ## Changing your personal info, username, and URL
 
-You may wish to customize your profile to better fit your personality. You can do this in the Profile settings. 
+You may wish to customize your profile to better fit your personality. You can do this in the **Settings.** 
 
 1. Navigate to your avatar image.
-1. Select **Profile**, then **Settings**.
+1. Select **Settings**.
 1. From here you can change:
     - Profile picture
     - Username/URL
@@ -38,7 +38,7 @@ You may wish to customize your profile to better fit your personality. You can d
 > To enable private mode:
 >
 > 1. Navigate to your avatar image.
-> 1. Select **Profile**, then **Settings**.
+> 1. Select **Settings**.
 > 1. Scroll down to the privacy area and move the slider to the right, then select **Save**.
 > To undo it, move the slider back to the left, then select **Save**.
 
@@ -49,7 +49,7 @@ One important benefit of Learn is that you can have multiple Microsoft accounts 
 No problem, you can do this in the account management area of your settings. To find this setting:
 
 1. Navigate to your avatar image.
-1. Select **Profile**, then **Settings**.
+1. Select **Settings**.
 1. Then choose either **+Add account** or **Remove account**.
 
 
