@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
-sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/03-reference-implementations.ipynb
+content: |
+  [!include[](includes/4-reference-implementations.md)]
 quiz:
   title: Check your knowledge
   questions:
