@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-troubleshoot-application-using-sdk.md)]

@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 9
+durationInMinutes: 8
 content: |
   [!include[](includes/2-review-common-response-codes.md)]
