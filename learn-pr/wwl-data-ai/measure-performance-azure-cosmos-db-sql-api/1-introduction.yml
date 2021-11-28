@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 11/28/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
