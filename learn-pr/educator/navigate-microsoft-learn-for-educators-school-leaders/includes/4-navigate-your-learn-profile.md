@@ -52,7 +52,6 @@ No problem, you can do this in the account management area of your settings. To 
 1. Select **Settings**.
 1. Then choose either **+Add account** or **Remove account**.
 
-
 ## Badges, trophies, and reputation points
 
 :::image type="content" source="../media/achievements-tab.png" alt-text="Screenshot of achievements tab selected in Learn profile.":::
