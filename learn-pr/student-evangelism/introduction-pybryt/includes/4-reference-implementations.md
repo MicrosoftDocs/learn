@@ -1,5 +1,3 @@
-# Reference implementations
-
 A [**reference implementation**](https://microsoft.github.io/pybryt/html/reference_implementations.html) defines a set of conditions for validating a solution to a problem. A set of reference implementations defines the different solutions to a problem set for students, and allow instructors to validate unstructured student code for algorithmic correctness. In PyBryt, these references take the form of the [`pybryt.ReferenceImplementation`](https://microsoft.github.io/pybryt/html/api_reference.html#pybryt.reference.ReferenceImplementation) object, which houses a series of annotations that assert conditions on the memory footprint of a submission.
 
 Reference implementations can be put to different uses: you may write some based on correct implementations to validate that a submission follows an accepted format, or write some that match incorrect solutions to flag common issues for students. Coupling these validations with descriptive annotation messages allows for a robust automated feedback system for student work.
