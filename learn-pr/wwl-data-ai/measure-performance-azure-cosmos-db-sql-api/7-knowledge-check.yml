@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which Insight report will help us *best* identify that you're finding a **request rate to large** condition and that this condition is causing a problem to the database or container?"
+  - content: "Which Insight report will help you identify that you're requests are getting **request rate to large** exceptions and that this condition is causing a problem to the databases or containers?"
     choices:
     - content: "Request->Total Requests by Operation Type"
       isCorrect: false
