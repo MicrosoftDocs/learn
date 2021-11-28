@@ -8,12 +8,12 @@ Here are some of the main items in your profile:
 
 |          |                                                              |
 |----------|--------------------------------------------------------------|
-| Overview | Overview of your recent activity, bookmarks, and achievements |
-|Activity | All your activities - check here for your in-progress and completed modules and learning paths |
-|Challenges | Tracks participation in the Cloud Skills Challenge (CSC), a gamified experience using Microsoft Learn content that encourages rapid learning of Microsoft technologies |
-|Bookmarks | Modules or learning paths you have bookmarked |
-|Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
+| Activity | All your activities - check here for your in-progress and completed modules and learning paths |
+| Training | Your progression on modules and learning paths that you have started |
+| Certifications | Your Microsoft Certifications profile and dashboard |
+| Q&A | Your following activity for the Q&A platform  — the home for technical questions and answers at Microsoft.  |
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
+|Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
 > [!NOTE]
