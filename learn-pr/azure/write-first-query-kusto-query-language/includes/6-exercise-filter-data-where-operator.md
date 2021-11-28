@@ -53,7 +53,7 @@ It looks like there are quite a few types of damage-causing storms, occurring al
 
 ### Filter using the `has` operator
 
-Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full term.
+Looking at the results of the last query, we see that one of the Event Types is called "Thunderstorm Wind". Let's see if there are any other kinds of wind that caused property damage in Florida. We'll search on a string match of "wind" using the `has` operator. The `has` operator is a case-insensitive search that matches on a full [term](/azure/data-explorer/kusto/query/datatypes-string-operators#what-is-a-term).
 
 1. Run the following query:
 
@@ -70,6 +70,14 @@ Looking at the results of the last query, we see that one of the Event Types is 
     :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of where and has operators.":::
 
 1. Notice in the results that we no longer see events such as tornados, but we do see Thunderstorm Wind and Strong Wind event types.
+
+The `contains` operator is similar to `has`, but it matches on any substring. For example, the following query will return results such as *Freezing fog* and *Frost/Freeze*.
+
+```kusto
+StormEvents | where EventType contains "free" 
+```
+
+The `has` operator is more performant than the `contains` operator, so use `has` wherever you have a choice between the two.
 
 ## Filter on datetime values
 
