@@ -10,7 +10,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labModal: false
+sandbox: false
+labId: 107595
+labModal: true
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-recover-database-container-from-recovery-point.md)]
