@@ -1,4 +1,4 @@
-Adventure Works has decided that it would like to make information available to every user across the organization though their existing application. In order to achieve this, we need to write data back to the Azure Cosmos DB transactional stores.
+Adventure Works has decided that it would like to make information available to every user across the organization through their existing application. In order to achieve this, we need to write data back to the Azure Cosmos DB transactional stores.
 As with all applications the process starts by appropriately modeling the data. Some of the things to consider as we write this data back to Azure Cosmos DB: 
 
 -	Does the document have an appropriate partition key, such that it will evenly distribute items and queries across all partitions as the data grows.
