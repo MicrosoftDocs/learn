@@ -4,37 +4,50 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 ## Install the Azure Monitor agent by using data collection rules
 
-1. In the Portal, Search for Azure Monitor. Click on **Data Collection Rules** and click **Create new rule**.
+1. In the Portal, search for Monitor. 
+1. Under **Settings**, select **Data Collection Rules**.
+1. Select **Create**.
 
     :::image type="content" source="../media/6-dcr-empty-landing-page.png" alt-text="Screenshot of the data collection rules landing page" lightbox="../media/6-dcr-empty-landing-page.png":::
 
-1. Next, you specify the basics, the **Rule Name** and select the **Subscription**, **Resource group**, **Region** and **Platform Type**.
+1. Enter the following values.
+
+   | Setting     | Value |
+   |---------|---------|
+   |Rule Name    |   MyPerformanceMetrics |
+   |Subscription  |   Concierge Subscription  |
+   |Resource group   |  <rgn>[sandbox resource group name]</rgn>     |
+   |Region  | Region VM is located     |
+   |Platform Type  | Linux     |
 
     :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
 
-1. Next, you add the resource(s) to be monitored. Select **Add resources**.
-1. Select your VM monitored-linux-vm.
+
+1. On the **Resources** tab, select **Add resources**.
+1. Select the VM you created **monitored-linux-vm** and **Apply**.
+1. Review the result on the Resources tab.
 
      :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
 
-1.  Select **Add data source** to configure the data to be collected and the destination where it will be sent.
+1.  On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination where it will be sent.
     You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs.
 
     However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-1. Set the data source type to **Performance Counters**, leave the default for the **Basic** performance counters and Sample rate.
+1. For **Data source type**, select **Performance Counters**.
+1. Leave the default for the **Basic** performance counters and Sample rate.
 
 
      :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters" lightbox="../media/6-add-data-sources.png":::
 
-1. Select the Destination tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
-1. Select on **Add data source**.
+1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics. 
 
     :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination":::
 
-    Confirm your settings include a destination type of Azure Monitor metrics for the collect and deliver step of the wizard.
-
+    Confirm your settings include a destination type of Azure Monitor metrics.
+1. On the bottom of the pane, select **Add data source**.
 1. Select **Review and create** > **Create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
+
 
 
 ## Confirm that the agent is installed on the VM
