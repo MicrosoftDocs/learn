@@ -1,21 +1,29 @@
 # Title
 
-Add the working title [(Title guidance)](/help/learn/id-guidance-title)
+Gain insights in your data using the Kusto Query Language
 
 ## Role(s)
 
-Add the role(s) [Role guidance](/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+business-analyst
+data-analyst
+data-scientist
+developer
+security operations analyst
 
 ## Level
 
-Add the level  [Level guidance](/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+Beginner
 
 ## Product(s)
 
-Add the product(s)
+Azure Data Explorer
+Kusto Query Language
 
 ## Prerequisites
-List the prerequisites [(Prerequisite guidance)](/help/learn/id-guidance-prerequisites)
+
+An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/).
+Familiarity with database structures like tables, columns, and rows
+Familiarity with Kusto Query Language operators such as count, take, project, where, and sort.
 
 ## Summary
 
@@ -23,8 +31,10 @@ Add the summary [(Summary guidance)](/help/learn/id-guidance-introductory-summar
 
 ## Learning objectives
 
-1. Add numbered Learning Objectives [(Learning objective guidance)](/help/learn/id-guidance-learning-objectives)
-
+1. Use the Kusto Query Language to gain insights from your data using the aggregation operators  `count`, `dcount`, `countif`, `sum`, `min`,`max`, `avg`, `percentiles`, and others.
+1. Communicate query results visually using the `render` operator.
+1. XXX by using a `let` statement.
+ 
 ## Chunk your content into subtasks
 
 Identify the subtasks of module title.
@@ -37,48 +47,15 @@ Identify the subtasks of module title.
 
 ## Outline the units
 
-Add more units as needed for your content
-
 1. Introduction
-
-    Provide a scenario of a real-world job task that shows how the technology is used in practice:
-
-    Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)
-
-1. Learning-content unit title
-
-    List the content that will enable the learner to complete the subtask:
-
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-
-    **Knowledge check**
-
-    What types of questions will test the learning objective? [(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)
-
-    - Question type
-    - Question type
-
-1. Exercise - exercise unit title
-
-    List the steps that apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
-
+1. Exercise: `count` `dcount` `countif`
+1. Exercise: `bin`, `render`, `sum`
+1. Exercise: summarize `min`,`max`, `avg`, `percentiles`
+1. Exercise: `let`
+1. Exercise: Challenge
+1. Exercise: Solution
+1. Knowledge check
 1. Summary
-
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    Add your summary [(Summary guidance)](/help/learn/id-guidance-module-summary-unit)
 
 ## Notes
 
