@@ -2,7 +2,7 @@ We are going to work with two new containers named Customer and SalesOrder. They
 
 Each data set is stored in two different Azure Cosmos DB accounts. The customer profile data resides in a SQL API account. The sales order data resides in an Azure Cosmos DB API for MongoDB account. 
 
-Given that this data comes for separate systems, Adventure Works wants to use their available operational data to get insight into:
+Given that this data comes from separate systems, Adventure Works wants to use their available operational data to get insight into:
 
 - What amount of revenue is coming from customers without completed profile data (no address details provided)
 
