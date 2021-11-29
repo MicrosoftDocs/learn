@@ -22,7 +22,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     [![Viewing linked services in Azure Synapse Studio](../media/view-linked-services.png)](../media/view-linked-services.png#lightbox)
 
-    Here you can see that an additional two containers are now visible in the data explorer view, under the previously created linked service to our Azure Cosmos DB accounts. The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D)**, has been created the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
+    Here you can see that an additional two containers are now visible in the data explorer view, under the previously created linked service to our Azure Cosmos DB accounts. The first, **Customer (C)**, has been created in the AdventureWorks database within the Azure Cosmos DB SQL API account and contains customer profile information. The second, **SalesOrder (D)**, has been created in the AdventureWorks database within the Azure Cosmos DB API for MongoDB account and contains sales order information.
 
     Let’s open a new notebook to explore what is in these containers with Spark.
 
