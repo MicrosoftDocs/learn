@@ -1,10 +1,10 @@
-Assistive technologies are products or tools commonly used by individuals with disabilities to help them complete daily tasks. In the context of gaming, common assistive technologies can include software like screen narration programs, magnification tools, closed captioning, and more. Also, players may use hardware-based assistive technologies like adaptive keyboards, mice, controllers, and other specialized input devices.
+Assistive technologies (AT) are products or tools used by individuals with disabilities to perform daily tasks. Devices like wheelchairs, prosthetics, hearing aids, adaptive eating utensils, and more are considered AT. AT products are also commonly used to access technology. 
 
-While accessibility should ideally be embedded into your work, it is still important to ensure that players can use the assistive technologies they already own while gaming.
+In gaming, players with disabilities may use hardware and software-based technologies to support accessible experiences. Common examples include screen readers, magnification tools, and adaptive input devices.
 
-Imagine a player who is blind. They use screen narration software on their PC that reads text and visual elements aloud, which helps them complete school assignments. They recently heard about a new PC game that can be played through audio cues alone, an incredibly important game feature for players who are blind. They purchase and start up the game, but the screen narration software on their PC is not compatible with it. The player knows they launched the game app but does not know what the contents of the initial game launch screen are because these elements are not being narrated aloud.
+Consider the following scenario: a player with low vision uses a high contrast setting on their PC to enhance the readability of text. When they launch a new game title, however, many of the elements in the game title's UI are missing or obscured. It's apparent that the game is displaying incorrectly due to incompatibility;s with the player's platform-level high contrast settings.
 
-Although the game itself could be partially accessible for this player because in-game play can be fully navigated via audio cues alone, they are still blocked from this experience because they cannot navigate the main menu to locate the start button without screen narration. If the platform or title had ensured that their products were compatible with third-party screen narration software, or provided game title or platform-level screen narration software, then this player might have been able to navigate to the in-game play.
+This player requires a high contrast display for play. They search the game title's menu but cannot find an in-game high contrast setting. Disappointed in their recent purchase going to waste, the player abandon's the game. They know they won't be able to play it without compatible AT to support their visual needs. As a developer, you hear about this experience and are hoping to learn more about the AT that players with disabilities use to ensure that the future products and experiences support accessible AT experiences. 
 
 In this module, you'll be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
 
@@ -12,6 +12,6 @@ In this module, you'll be introduced to common hardware and software assistive t
 
 By the end of this module, you will be able to:
 
-1.	Identify the primary hardware-based assistive technologies commonly used among players with disabilities.
-2.	Identify the primary software-based features and tools commonly used among players with disabilities.
-3.	Determine the best approach to support the use of assistive technologies in game, platform and hardware experiences in game design and development.
+ - Describe common hardware-based gaming assistive technologies and how their use can impact player experiences.  
+ - Describe common gaming software-based features and tools and how their use can impact player experiences. 
+ - Determine appropriate methods to support assistive technology users when developing games and platforms.  
