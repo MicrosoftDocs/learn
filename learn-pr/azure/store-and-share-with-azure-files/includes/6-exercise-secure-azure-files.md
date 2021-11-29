@@ -18,7 +18,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Storage account menu, under **Security + networking**, select **Networking**. The **Networking** pane for your storage account appears with the **Firewalls and virtual networks** tab active.
 
-   :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
+   :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options." lightbox="../media/6-add-firewall-protections.png":::
 
 1. Under **Allow access from**, select **Selected networks**.
 
