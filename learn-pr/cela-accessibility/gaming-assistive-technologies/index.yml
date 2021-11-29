@@ -13,13 +13,15 @@ metadata:
 title: Gaming assistive technologies
 summary: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when creating accessible gaming products and experiences for all audiences.
 abstract: |
-  In this module you will:
-  - Identify 6 common hardware-based assistive technologies used among players with disabilities.
-  - Identify 6 common software-based features and tools used among gamers with disabilities.
-  - Apply insights about common hardware and software assistive technologies to game accessibility goal scoping scenarios.
+ After completing this module, you will be able to:
+
+ - Describe common gaming software-based features and tools and how their use can impact player experiences.
+ - Describe common hardware-based gaming assistive technologies and how their use can impact player experiences.  
+ - Determine appropriate methods to support assistive technology users when developing games and platforms.
 prerequisites: |
- - You should have some basic familiarity with playing video games, navigating game platforms (Xbox, PlayStation, Nintendo Switch, Windows, etc.), and using standard gaming hardware controllers and inputs.
- - You should also have a basic understanding of foundational disability and accessibility principles terms and concepts.
+ - You should have some basic familiarity with playing and creating video games.
+ - You should have some familiarity with navigating game platforms such as Xbox, PlayStation, Nintendo Switch, or Windows.
+ - A basic understanding of foundational disability and accessibility principles terms and concepts is highly encouraged
 iconUrl: /learn/achievements/gaming-assistive-technologies.svg
 levels:
 - beginner
@@ -29,8 +31,8 @@ products:
 - xbox
 units:
 - learn.gaming-assistive-technologies.introduction
-- learn.gaming-assistive-technologies.gaming-hardware
 - learn.gaming-assistive-technologies.gaming-software
+- learn.gaming-assistive-technologies.gaming-hardware
 - learn.gaming-assistive-technologies.summary
 badge:
   uid: learn.gaming-assistive-technologies.badge

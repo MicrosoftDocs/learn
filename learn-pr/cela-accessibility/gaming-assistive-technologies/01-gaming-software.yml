@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.gaming-assistive-technologies.gaming-software
+title: Gaming software assistive technology
+metadata:
+  title: Gaming software assistive technology
+  description: This content is part of the Gaming Assistive Technologies module.
+  ms.date: 11/28/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 15
+content: |
+  [!include[](includes/02-gaming-software.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can developers support assistive technology users when creating experiences that are not compatible with 3rd  party or platform-provided assistive technologies?"
+    choices:
+    - content: "Assume 3rd party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
+      isCorrect: false
+      explanation: "Incorrect. ."
+    - content: "Put an advisory about a lack of AT compatibility in the game’s store description."
+      isCorrect: false
+      explanation: "Incorrect. Game difficulty customization is one of the many areas where customization options should be provided. However, providing customization for game difficulty alone does not represent the best description of customization in the context of game accessibility."
+    - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, color filters and more."
+      isCorrect: true
+      explanation: "Correct. "
+  - content: "Which of the following best describes the most common challenge a player may encounter when using a platform-provided magnification tool while playing a game?"
+    choices:
+    - content: "There should be no challenges presented, as platform-provided tools are seamlessly compatible with all game titles."
+      isCorrect: false
+      explanation: "Incorrect. A platform-provided magnification tool should be compatible and able to accomplish its primary objective of enlarging a specific region of the screen to make it easier to distinguish important information. How a game chooses to visually layout information on the screen and the controls it utilizes, however, may pose unique challenges for those who rely on screen magnification tools."
+    - content: "The magnification tool may co-opt certain game controls and result in aspects of the game screen being temporarily difficult to see."
+      isCorrect: true
+      explanation: "Correct. While screen magnifiers can be very helpful for some individuals, including those with low vision, they often co-opt certain controls so the player can adjust the level of zoom as well as move the focus of the magnification around the screen. This may interfere with game functions that utilize the same controls. In addition, by zooming in on a specific area of the screen, it may not be possible to see all important visual information at once, which can make playing the game much more challenging."
+    - content: "The magnification tool may cause the entire game experience to crash."
+      isCorrect: false
+      explanation: "Incorrect. While, in theory, it is possible that a platform-provided tool such as a magnifier could interfere with a game and cause it to crash, such instances are less common as most platform developers test such tools rigorously to ensure they work with a variety of experiences."
