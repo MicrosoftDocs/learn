@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.hardening-windows-server
+metadata:
+  title: Hardening Windows Server
+  description: "Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic."
+  ms.date: 11/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Hardening Windows Server
+summary: Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic.
+abstract: |
+  After completing this module, you will be able to:
+  *   Manage local administrator passwords using Local Administrator Password Solution
+  *   Limit administrative access to Privileged Access Workstations (PAWs)
+  *   Explain how to secure domain controllers from being compromised
+  *   Describe how to use the Microsoft Security Compliance Toolkit to harden servers
+  *   Secure SMB traffic using SMB encryption
+prerequisites: |
+  - Working knowledge of common Windows Server administration basics
+  - Experience with managing Active Directory Domain Services
+iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.hardening-windows-server.introduction
+- learn.wwl.hardening-windows-server.describe-local-password-administrator-solution
+- learn.wwl.hardening-windows-server.configure-privileged-access-workstations
+- learn.wwl.hardening-windows-server.secure-domain-controllers
+- learn.wwl.hardening-windows-server.analyze-security-configuration-security-compliance-toolkit
+- learn.wwl.hardening-windows-server.secure-smb-traffic
+- learn.wwl.hardening-windows-server.knowledge-check
+- learn.wwl.hardening-windows-server.summary-resources
+badge:
+  uid: learn.wwl.hardening-windows-server.badge
