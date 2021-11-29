@@ -32,7 +32,7 @@ Postman is a REST testing tool that provides key HTTP request functionalities in
 > You must configure the Postman REST client to interact with the Azure Digital Twins APIs before you can test the APIs. This configuration involves the following steps: Use Azure CLI to get a bearer token that you will use to make API requests in Postman; Set up a Postman collection and configure the Postman REST client to use your bearer token to authenticate.
 
 > [!NOTE]
-> If you need to download the Postman app, navigate to \[www.getpostman.com/apps\](www.getpostman.com/apps) and follow the prompts to download the app.
+> If you need to download the Postman app, navigate to [www.getpostman.com/apps](http://www.getpostman.com/apps) and follow the prompts to download the app.
 
 ### Get bearer token
 

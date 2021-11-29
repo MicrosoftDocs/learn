@@ -64,7 +64,7 @@ Consider a scenario that includes the following items:
 
 Whenever a Digital Twin Telemetry Messages event notification occurs for a Thermostat digital twin, the following process is invoked:
 
- -  Data is routed to an Event Hubs endpoint.
- -  The Event Hubs processes events and triggers an Azure Function.
- -  The Azure Function creates a new event for TSI, adds a partition key, and then publishes the new event to another Event Hubs.
- -  Azure TSI (subscribed to events from the second Event Hubs) processes the incoming events to perform the required data analysis.
+1.  Data is routed to an Event Hubs endpoint.
+2.  The Event Hubs processes events and triggers an Azure Function.
+3.  The Azure Function creates a new event for TSI, adds a partition key, and then publishes the new event to another Event Hubs.
+4.  Azure TSI (subscribed to events from the second Event Hubs) processes the incoming events to perform the required data analysis.
