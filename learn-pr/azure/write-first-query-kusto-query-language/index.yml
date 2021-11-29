@@ -10,11 +10,11 @@ metadata:
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 title: Write your first query with Kusto Query Language
-summary: 'Get started by writing simple queries in Kusto Query Language (KQL) to explore and gain insights from your data. Learn how to use the most common operators: take, project, where, count, sort, and others.'
+summary: 'Get started by writing simple queries in Kusto Query Language (KQL) to explore and gain insights from your data. Learn how to use the operators `take`, `project`, `where`, `count`, `sort`, and others.'
 abstract: | 
   By the end of this module, you'll be able to:
-    - Write your first query with Kusto Query Language (KQL)
-    - Use KQL to explore data by using the operators count, take, project, where, sort, and others.
+    - Write your first query with KQL.
+    - Use KQL to explore data by using the most common operators.
 prerequisites: | 
   - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/).
   - Familiarity with database structures like tables, columns, and rows.
