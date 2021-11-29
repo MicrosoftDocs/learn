@@ -73,7 +73,7 @@ This tree diagram illustrates the traversal process down to the **Touring-1000 B
 
 ![Search of inverted tree for an exact match on a field's value](../media/2-search-name-equality.png)
 
-This traversal is an example of the **index seek** lookup method in action. The actual matching of an exact value is a flat charge in RUs since the query engine uses the index instead of searching in each item’s JSON content. Once the matched items are found, the query engine will load the JSON content to return to the client application.
+This traversal is an example of the **index seek** lookup method in action. The actual matching of an exact value is a flat charge in RU/s since the query engine uses the index instead of searching in each item’s JSON content. Once the matched items are found, the query engine will load the JSON content to return to the client application.
 
 If the query filter doesn’t match any known value, no items will be returned in the result set. If multiple items have the same value for the field, the tree will direct the query engine to return multiple items.
 
@@ -97,7 +97,7 @@ The query engine then traverses the tree in the following order:
 
 This tree diagram illustrates the traversal process for the matching child values in the **name** node.
 
-![Search of an inverted tree for multiple matches on a field's value](../media/2-search-name-in.png)
+![Search of an inverted tree for multiple matches on a field's value](../media/2-search-name.png)
 
 Some queries use other operators that necessitate the use of a more complex index lookup method. In this example SQL query, items are filtered based on two range comparisons. In plain language, the query looks for items whose price is between **\$500** and **\$1,000**.
 
