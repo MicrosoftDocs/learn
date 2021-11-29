@@ -1,5 +1,3 @@
-## What is Azure Policy?
-
 Azure Policy is a service that you use to create, assign, and manage policy definitions. Policy definitions impose different rules and actions on your resources, so that those resources remain in compliance with your corporate standards and service level agreements. The policy focuses on the properties of resources during deployment and for existing resources. It performs an assessment of your resources, checking those that do not conform to the policy definitions you have.
 
 In summary, you will be using Azure Policy to:
