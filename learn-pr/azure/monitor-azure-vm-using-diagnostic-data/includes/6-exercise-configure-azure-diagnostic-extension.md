@@ -10,9 +10,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     :::image type="content" source="../media/6-dcr-empty-landing-page.png" alt-text="Screenshot of the data collection rules landing page" lightbox="../media/6-dcr-empty-landing-page.png":::
 
-1. Next, you specify the basics, the **Rule Name** and select the **Subscription**, **Resource group**, **Region** and **Platform Type**.
-
-    :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
+1. Enter the following values.
 
    | Setting     | Value |
    |---------|---------|
@@ -21,6 +19,9 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    |Resource group   |  <rgn>[sandbox resource group name]</rgn>     |
    |Region  | Region VM is located     |
    |Platform Type  | Linux     |
+
+    :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
+
 
 1. On the **Resources** tab, select **Add resources**.
 1. Select the VM you created **monitored-linux-vm** and **Apply**.
