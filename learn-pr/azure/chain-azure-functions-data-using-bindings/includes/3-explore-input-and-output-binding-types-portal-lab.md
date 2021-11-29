@@ -127,13 +127,11 @@ Now that we have a function app, it's time to create a function. Each function i
 
     As you can see from this exercise so far, you must define a trigger when you create a function. Each function has a single trigger. In this example, we're using an HTTP trigger, which means our function starts when it receives an HTTP request. The default implementation from the template, shown in JavaScript in the following screenshot, returns the value of the parameter *name* that was in the query string or body of the request. If no query string was provided, the function responds with a message that asks whomever is calling to supply a name value.
     
-       :::image type="content" source="../media/3-default-http-trigger-implementation-javascript-small.png" alt-text="Illustration of default HTTP trigger, showing HTTP request and response binding parameters." lightbox="../media/3-default-http-trigger-implementation-javascript.png":::
+    :::image type="content" source="../media/3-default-http-trigger-implementation-javascript-small.png" alt-text="Illustration of default HTTP trigger, showing HTTP request and response binding parameters." lightbox="../media/3-default-http-trigger-implementation-javascript.png":::
 
 1. In the Azure portal, in the **Function** menu, select **Code + Test**.
 
-    The **Code + Test** pane for your function appears, and displays the contents of your **index.js** file.
-
- The default JavaScript code for your function should resemble the following example.
+    The **Code + Test** pane for your function appears, and displays the contents of your **index.js** file. The default JavaScript code for your function should resemble the following example.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -150,8 +148,8 @@ Now that we have a function app, it's time to create a function. Each function i
         };
     }
     ```
-
-    Let's look briefly at the function's other file--the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
+    
+1. Let's look briefly at the function's other file--the **function.json** config file. Access this file by selecting **function.json** from the dropdown list in the filepath above the code block. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -175,9 +173,9 @@ Now that we have a function app, it's time to create a function. Each function i
     }
     ```
 
-  This function has a *trigger binding* named **req** of type `httpTrigger`, and an output binding named *res* of type `http`. 
+    This function has a *trigger binding* named **req** of type `httpTrigger`, and an output binding named *res* of type `http`. 
   
-  In the preceding code for our function, we saw that we accessed the payload of the incoming HTTP request through the **req** parameter. Similarly, we sent an HTTP response by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us!
+In the preceding code for our function, we saw that we accessed the payload of the incoming HTTP request through the **req** parameter. Similarly, we sent an HTTP response by setting our **res** parameter. Bindings really do take care of some of the burdensome work for us!
   
 ::: zone-end
 
@@ -259,7 +257,7 @@ Now that we have a function app, let's create a function. Each function is activ
     })
     ```
 
-    Let's look briefly at the function's other file, the **function.json** config file. Open this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
+1. Let's look briefly at the function's other file, the **function.json** config file. Open this file by selecting **function.json** from the filepath's dropdown list. The configuration data is shown in the following JSON listing.
 
     ```json
     {
@@ -283,7 +281,7 @@ Now that we have a function app, let's create a function. Each function is activ
     }
     ```
 
-    As you can see, this function has a trigger binding named **Request** of type `httpTrigger`, and an output binding named **Response**  of type `http`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through the **Request** parameter. Similarly, we sent an HTTP response simply by setting the **Response** parameter. Bindings really do take care of some of the burdensome work for us.
+    As you can see, this function has a trigger binding named **Request** of type `httpTrigger`, and an output binding named **Response** of type `http`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through the **Request** parameter. Similarly, we sent an HTTP response simply by setting the **Response** parameter. Bindings really do take care of some of the burdensome work for us.
 
 ::: zone-end
 
