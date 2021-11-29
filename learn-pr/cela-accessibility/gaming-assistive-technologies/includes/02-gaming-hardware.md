@@ -1,24 +1,34 @@
 You're now familiar with some of the common software-based assistive technologies used by players. AT, however, also includes hardware and physical devices.
 
-In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also discusses important considerations for developers regarding the impact of AT hardware use on player experiences. These insights can help guide the approaches developers can take to support players who use these technologies.
+In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also offers important insights to consider when developing game experiences that support players who use these devices. 
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
-Many hardware AT devices may be referred to as "adaptive" input devices or  "adaptive controllers." In general, these devices provide players who have difficulty using standard input devices like commercial controllers, a mouse and keyboard, etc. with an accessible alternative.
+Many hardware AT devices may be referred to as "adaptive" input devices or  "adaptive controllers." In general, these devices provide players who have difficulty using standard input devices like commercial controllers, a mouse, keyboard, etc. with an accessible alternative.
 
 In the following video, you'll learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, mouth-operated joysticks and more.
 
+> [!VIDEO ]
+
 ## Hardware considerations for accessible game development
 
-When supporting a player’s ability to use the assistive input device of their choice, considerations around compatibility and usability of these devices within the context of a specific game or platform should be assessed.
-You have been introduced to unique challenges that players who use these input devices may experience. Next, you will learn about approaches that can be taken by developers to support these players.
+A primary challenge that AT users encounter is a lack of compatibility between their device and the game platform or game title they'd like to use the device with. Additionally, the methods of activation players use with these devices can largely vary from the traditional input methods that games are typically optimized for. Consider the following information when developing games and platforms that support players who use these devices:
 
-### Consider device compatibility
+### Device compatibility
 
-When creating games or platform experiences, it’s important to assess accessible input devices that players might use and make intentional efforts to support compatibility with these devices. In cases when the developer is not able to support a device, they should provide players with clear documentation that outlines the limitations. The following video describes points that should be considered when evaluating device compatibility at the game, platform, and hardware levels.
+Many of the hardware devices discussed in this unit differ in the type of "output" they use. For example, eye gaze devices, despite looking nothing like a mouse, are generally "seen" via software as a mouse by the game or platform when plugged in to a host or platform device. This means that game titles who do not support mouse input actively exclude players who require eye-gaze devices to play.
 
-### Consider challenging game mechanics
+In general, the scope of other AT devices can include:
+ - Switch interfaces seen as keyboard input
+ - Mouth-based joysticks seen as mouse input
+ - The Xbox Adaptive Controller seen as a gamepad or controller input
 
-Developers  should be familiar with gaming assistive technologies including awareness of how players with disabilities physically interact with these technologies and the unique challenges that game mechanics may pose.
+Regardless of a player's specific AT device of choice, you can support these players by ensuring the games and platforms you create allow a wide array of input types including controller, mouse, and keyboard input.
 
-The following video describes challenges encountered by developers and approaches they can take to help lessen physical input demands for players that use assistive input devices.
+### Challenging game mechanics
+
+In addition to supporting diverse input types, it's also important to consider the activation methods that players use for these devices. Many game mechanics assume that players can utilize rapid finger movements on their keyboard or standard controller. Players using large switch buttons activated by their head or knee, however, may be unable to activate these controls with the same speed or precision as a finger. 
+
+The following video provides an overview of these types of considerations: 
+
+> [!VIDEO ]
