@@ -1,6 +1,6 @@
 This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, students and professionals can:
 
