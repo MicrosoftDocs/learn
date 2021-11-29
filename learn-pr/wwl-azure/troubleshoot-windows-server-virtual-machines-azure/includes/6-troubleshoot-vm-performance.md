@@ -63,7 +63,7 @@ To adjust performance data that's collected, for the appropriate VM, in **Diagno
 
 ![A screenshot depicts the Performance counters tab in Performance diagnostics.](../media/performance-diagnostics.png)
 
-You can finetune adjust the counters you want to collect. As displayed in the preceding screenshot, by default, Basic is selected, which means data relating to the four key resources is gathered.
+You can fine-tune the counters you want to collect. As displayed in the preceding screenshot, by default, Basic is selected, which means data relating to the four key resources is gathered.
 
 ### Enable storage account diagnostics
 
