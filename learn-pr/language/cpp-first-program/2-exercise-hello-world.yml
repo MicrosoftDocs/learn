@@ -22,8 +22,8 @@ quiz:
       choices:
         - content: The compiler primarily locates spelling mistakes in your code.
           isCorrect: false
-          explanation: Incorrect. While it's possible you misspelled something in your
-            code and that produces an error, that isn't the primary job of the
+          explanation: Incorrect. Although it's possible that you misspelled a word in your
+            code, and that misspelling produces an error, that isn't the primary job of the
             compiler.
         - content: The compiler primarily reformats your code.
           isCorrect: false
@@ -31,15 +31,16 @@ quiz:
         - content: The compiler primarily converts your code into an executable format
             that the computer can understand.
           isCorrect: true
-          explanation: Correct!
-    - content: Which of the following statements is **true** about C++.
+          explanation: Correct! The compiler primarily converts your code into an executable format
+            that the computer can understand.
+    - content: Which of the following statements is true about C++?
       choices:
-        - content: C++ is case *insensitive*.
+        - content: C++ is case-*insensitive*.
           isCorrect: false
           explanation: Incorrect. Actually, C++ is case-sensitive.
-        - content: "`cout` is a function"
+        - content: "`cout` is a function."
           isCorrect: false
-          explanation: Incorrect. Actually, `cout` is an object.
-        - content: You use double-quotation marks to create a literal string.
+          explanation: Incorrect. `cout` is an object.
+        - content: You use double quotes to create a literal string.
           isCorrect: true
-          explanation: Correct!
+          explanation: Correct! Use double quotes to create a literal string.

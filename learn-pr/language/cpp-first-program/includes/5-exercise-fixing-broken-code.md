@@ -1,12 +1,12 @@
-In this module, we'll be covering about fixing the code. What happens when you've mis-spelled something or you've typed an incorrect symbol?
+This unit covers identifying errors, and then fixing the code. What happens when you misspell a function name or type an incorrect symbol?
 
 ## Create the code
 
-Before we can identify the errors, let's create a code and have a look at it.
+Before you can identify the errors, create the code and have a look at it:
 
-1. Run `code .` in the terminal, it will bring up an editor.
+1. In the terminal, run `code .` to open an editor.
 
-2. Enter this code into the Editor on the right:
+1. In the editor, enter this code:
 
     ```cpp
     #include (iostream);
@@ -17,22 +17,22 @@ Before we can identify the errors, let's create a code and have a look at it.
     }
     ```
 
-3. Save the code as hello.cpp, enter the file name as hello.cpp, and close the editor.
+1. Save the code file as *hello.cpp*, and then close the editor.
 
-> [!Note]
-> To check if the file was created successfully, put the `ls` command in the terminal and you can see your hello.cpp file there.
+> [!NOTE]
+> To check whether the file was created successfully, in the terminal, enter the `ls` command for a list of files.
 
 ## Identify the errors
 
-The code you've written has errors in it. You'll see some error messages as you compile the code. Each error will be addressed below.
+The code you ran has errors in it. Some error messages appear as you compile the code. Each error is explained and resolved next.
 
-1. Run `g++` command to build your program:
+1. Run `g++` and the file name to build your program:
 
     ```bash
     g++ hello.cpp
     ```
 
-    Let's have a look at the errors below and see how many errors you can identify.
+    Have a look at the errors and see how many errors you can identify.
 
     ```output
     hello.cpp:1:10: error: #include expects "FILENAME" or <FILENAME>
@@ -55,16 +55,15 @@ The code you've written has errors in it. You'll see some error messages as you 
     ```
 
     > [!NOTE]
-    > Your output screen will be loaded with many errors. There will be times when maybe solving a single error might automatically solve other errors, but there might be times when you have to solve all the errors that are mentioned in the output screen.
-    In most scenarios, the errors are explicitly explained and easy to understand.
+    > The output lists many errors. Sometimes, solving a single error might resolve other errors. Other times, you might have to solve all the errors that are listed in the output. In most scenarios, the errors are explicitly explained and easy to understand.
 
-## Solving the errors step by step
+## Solve the errors
 
-You've compiled the code, which resulted in many errors. Don't worry, we'll now address each of the errors and you'll end up with working code.
+You've compiled the code, which resulted in many errors. But don't worry. You can resolve each error and end up with working code.
 
-### The first errors, parenthesis
+### First error: Parenthesis
 
-1. Let's take the first error:
+1. Look at the code to identify the first error:
 
     ```output
     hello.cpp:1:10: error: #include expects "FILENAME" or <FILENAME>
@@ -72,18 +71,18 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
                ^
     ```
 
-    Here `<include>` is expected instead of (include). Let's run the following code and recompile it.
+    Here, `<iostream>` is expected instead of `(iostream)`. Let's run the following code and recompile it.
 
-2. Run `code hello.cpp`, to edit the code again:  
+1. Run `code hello.cpp` to edit the code again:  
 
     ```bash
     code hello.cpp
     ```
 
-3. Edit the first top line to address the first error. Remove the parenthesis () around `iostream`:
+1. Edit the first line to address the first error. Replace the parentheses around `iostream` with angle brackets:
 
     ```cpp
-    #include <iostream>;              //(iostream) is incorrect. <iostream> is correct
+    #include <iostream>;              //(iostream) is incorrect. <iostream> is correct.
     using namespace std;
     int main()
     {
@@ -91,15 +90,15 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     }
     ```
 
-### The second error, an extra semicolon
+### Second error: An extra semicolon
 
-1. Run `g++ hello.cpp` command to build your program.
+1. Run `g++ hello.cpp` to build your program:
 
    ```bash
    g++ hello.cpp
    ```
 
-   This is the output you get (you already see less errors in the error output thanks to your fix):
+   You see this output, already with fewer errors, thanks for your first fix:
 
    ```output
    PS /home/<user>> g++ hello.cpp
@@ -120,29 +119,31 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     ...
     ```
 
-   > [!Note]
-   > You might have received a huge plethora of errors. But we will focus only on the one which is at the top and ignore the rest for now. One error at a time.
+   > [!NOTE]
+   > Despite the number of errors that were returned, resolve one error at a time, beginning at the top.
+
    Let's focus on the error that comes first in the recent execution.
 
-    ```output
-    hello.cpp:1:20: warning: extra tokens at end of #include directive
-    #include <iostream>;
+   ```output
+   hello.cpp:1:20: warning: extra tokens at end of #include directive
+   #include <iostream>;
                        ^
-    ```
+   ```
 
-    Here we can see a 'semicolon', ';' is added at the end of the filename/library *iostream*. We don't add semicolons after `#include` directives.  
+   A semicolon (`;`) is added at the end of the filename/library *iostream*. You can't add a semicolon after an `#include` directive.  
   
-5. Remove the semicolon from `#include <iostream>;`  and see what happens.
-   To edit the code again. Run `code hello.cpp`
+1. Remove the semicolon from the end of `#include <iostream>` and see what happens.
+
+   To edit the code again, run `code hello.cpp`:
 
     ```bash
     code hello.cpp
     ```
 
-    Now edit the code and do the correction and save it.
+    Next, edit the code to make the correction, and then save it.
 
     ```cpp
-    #include <iostream>              // We have removed the semicolon here
+    #include <iostream>              // Removed the semicolon.
     using namespace std;
     int main()
     {
@@ -150,147 +151,150 @@ You've compiled the code, which resulted in many errors. Don't worry, we'll now 
     }
     ```
 
-### Third error, wrong character for string literal
+### Third error: The wrong character for string literal
 
-1. Run `g++ hello.cpp` command to build your program.
-    You should see the following output from the compilation:
+1. Run `g++ hello.cpp` to build your program.
 
-    ```output
-    PS /home/<user>> g++ hello.cpp
-    hello.cpp:5:13: warning: character constant too long for its type
-        cout >> 'Hello World'
-                ^~~~~~~~~~~~~
-    hello.cpp: In function ‘int main()’:
-    hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘int’)
-        cout >> 'Hello World'
-           ~~~~~^~~~~~~~~~~~~~~~
-    ...
-    ...
-    ...
-    ...
-    ...
-    ```
+   You should see the following output from the compilation:
 
-   Let's look at the first error in the above output and rectify it.
+   ```output
+   PS /home/<user>> g++ hello.cpp
+   hello.cpp:5:13: warning: character constant too long for its type
+       cout >> 'Hello World'
+               ^~~~~~~~~~~~~
+   hello.cpp: In function ‘int main()’:
+   hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘int’)
+       cout >> 'Hello World'
+          ~~~~~^~~~~~~~~~~~~~~~
+   ...
+   ...
+   ...
+   ...
+   ...
+   ```
 
-    ```output
-    hello.cpp:5:13: warning: character constant too long for its type
-        cout >> 'Hello World'
-                ^~~~~~~~~~~~~
-    ```
+   Look at the first error in the output:
 
-    You can see that we have used single quotation instead of double quotation symbol. We use single quotation only when we have a single character. For a string literal(character array), we use double quotation.
+   ```output
+   hello.cpp:5:13: warning: character constant too long for its type
+       cout >> 'Hello World'
+               ^~~~~~~~~~~~~
+   ```
 
-1. Replace the single quotation with double quotation. Ensure your program looks like the below code:
+   The code uses single quotes instead of double quotes. Use single quotes only for a single character. For a string literal (character array), use double quotes.
 
-    ```cpp
-    #include <iostream>
-    using namespace std;
-    int main()
-    {
-      cout >> "Hello World"     //Double quotes instead of single quotes
-    }
-    ```
-
-### Fourth error, wrong stream operator
-
-1. Run `g++ hello.cpp` command to build your program.
-    Here's what the output looks like, see how the error output is less and less. We do have some issues left, so lets work on those next issues.
-
-    ```output
-    PS /home/<user>> g++ hello.cpp
-    hello.cpp: In function ‘int main()’:
-    hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const char [12]’)
-        cout >> "Hello World"
-        ~~~~~^~~~~~~~~~~~~~~~
-    In file included from /usr/include/c++/8/string:53,
-                    from /usr/include/c++/8/bits/locale_classes.h:40,
-                    from /usr/include/c++/8/bits/ios_base.h:41,
-                    from /usr/include/c++/8/ios:42,
-                    from /usr/include/c++/8/ostream:38,
-                    from /usr/include/c++/8/iostream:39,
-                    from hello.cpp:1:
-    ...
-    ...
-    ...
-    ...
-    ...
-    ```
-
-   In the above output we can see that there's an operator issue, so we have to replace it with the correct operator. Replace `>>` with the `<<` operator.
+1. Replace the single quotes with double quotes. Ensure that your program looks like this code:
 
     ```cpp
     #include <iostream>
     using namespace std;
     int main()
     {
-      cout << "Hello World"     //replacing >> operators with the << operator
+      cout >> "Hello World"     //Use double quotes instead of single quotes.
     }
     ```
 
-    > [!NOTE]
-    > We use `<<` for `cout` object  
-    > We use `>>` for `cin` object, which we will learn later  
+### Fourth error: Wrong stream operator
 
-1. Run `g++ hello.cpp` command to build your program.
+1. Run `g++ hello.cpp` to build your program.
+
+   Here's what the output looks like. See how the error output is less and less. Next, resolve the remaining issues.
+
+   ```output
+   PS /home/<user>> g++ hello.cpp
+   hello.cpp: In function ‘int main()’:
+   hello.cpp:5:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const char [12]’)
+       cout >> "Hello World"
+       ~~~~~^~~~~~~~~~~~~~~~
+   In file included from /usr/include/c++/8/string:53,
+                   from /usr/include/c++/8/bits/locale_classes.h:40,
+                   from /usr/include/c++/8/bits/ios_base.h:41,
+                   from /usr/include/c++/8/ios:42,
+                   from /usr/include/c++/8/ostream:38,
+                   from /usr/include/c++/8/iostream:39,
+                   from hello.cpp:1:
+   ...
+   ...
+   ...
+   ...
+   ...
+   ```
+
+   In the preceding output, you can see an operator issue. So you need to replace the operator with the correct operator. Replace the `>>` operator with the `<<` operator.
+
+   ```cpp
+   #include <iostream>
+   using namespace std;
+   int main()
+   {
+     cout << "Hello World"     //Replacing the >> operator with the << operator.
+   }
+   ```
+
+   > [!NOTE]
+   > Use `<<` for the `cout` object.
+   >
+   > Use `>>` for the `cin` object. The `cin` object is discussed in more detail later in the module.  
+
+1. Run `g++ hello.cpp` to build your program:
 
    ```bash
    g++ hello.cpp
    ```
 
-    Here's the output, you're almost there, just a few errors left:
+   Here's the output. You're almost there. There are just a few errors left to fix.
 
-    ```output
-    PS /home/<user>> g++ hello.cpp
-    hello.cpp: In function ‘int main()’:
-    hello.cpp:5:34: error: expected ‘;’ before ‘}’ token
-        cout << "Hello World"
-                             ^
-                             ;
-    }
-    ~
-    ```
+   ```output
+   PS /home/<user>> g++ hello.cpp
+   hello.cpp: In function ‘int main()’:
+   hello.cpp:5:34: error: expected ‘;’ before ‘}’ token
+       cout << "Hello World"
+                            ^
+                            ;
+   }
+   ~
+   ```
 
-   A semicolon is expected at the end of the statement to complete it.
+   A semicolon is required at the end of the statement.
 
-1. Edit the code to make it look like this:
+1. Edit your code so that it looks like this code:
 
    ```cpp
    #include <iostream>
     using namespace std;
     int main()
     {
-      cout << "Hello World";     //Added a missing semi-colon
+      cout << "Hello World";     //Added a missing semicolon
     }
    ```
 
 ### Are we done?
 
-1. Run `g++ hello.cpp` command to build your program.
+1. Run `g++ hello.cpp` to build your program:
 
    ```bash
     g++ hello.cpp
     ```
 
-    You should now see *a.out*, as one of the files if you type `ls` in your terminal. That's the file the g++ compiler created for you.
+    If you type `ls` in your terminal, you should now see *a.out* as one of your files. That's the file the g++ compiler created for you.
 
-1. Run the `a.out` file in the terminal.
+1. Run the `a.out` file in the terminal:
 
    ```bash
     ./a.out
    ```
   
-  And finally you have the desired output.
+  And finally, you have the output you want to see:
   
   ```output
     PS /home/<user>> ./a.out
     Hello World
   ```
   
-  As you can see, there are no more errors in the code. We've debugged the code step by step and solved the issues, which eliminated all the errors.
+  As you can see, your code has no more errors. You've debugged the code step by step and solved the issues.
 
 > [!NOTE]
-> Increase in the number of errors doesn't mean that your problems have increased. It might be possible that some other syntax is the cause of those errors and a small correction will eliminate those errors.  
+> An increase in the number of errors doesn't mean that your problems have increased. Often, some other syntax is the cause of those errors, and a small correction eliminates those errors.  
 
 > [!NOTE]
-> You might have observed that we did not type the `return 0` at the end of the code, and still no error was thrown. The reason is that run-time assumes an implicit return type as integer for main. The return type is mainly used as an Exit status. Here returning 0 or returning nothing automatically makes the run-time assume that the code exited successfully.
+> Note that the code doesn't include `return 0` at the end, but no error was thrown. The reason is that the runtime assumes an implicit return type as integer for `main`. The return type primarily is used as an exit status. Here, returning 0 or returning nothing automatically makes the runtime assume that the code exited successfully.

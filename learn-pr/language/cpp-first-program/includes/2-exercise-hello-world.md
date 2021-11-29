@@ -10,7 +10,7 @@ You'll use the sandbox on your right to enter code. The sandbox comes with a run
 
 Later, you'll use either the Visual Studio Code editor or the full Visual Studio IDE to build larger and more interesting code examples, and even entire applications.
 
-1. In the terminal, run `code .` to bring up an editor.
+1. In the terminal, run `code .` to open an editor.
 
 2. In the editor that opens on the right, enter this code:
 
