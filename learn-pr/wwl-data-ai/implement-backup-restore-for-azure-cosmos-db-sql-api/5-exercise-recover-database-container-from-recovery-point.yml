@@ -6,6 +6,7 @@ metadata:
   description: "Exercise: Recover a database or container from a recovery point"
   ms.date: 11/29/2021
   author: wwlpublish
+  ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

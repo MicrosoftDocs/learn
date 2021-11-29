@@ -74,7 +74,7 @@ Settings that are not restored to the new account:
 
 ## Costs of Extra backups
 
-Azure Cosmos DB includes the option for the retention of two backups for free. Extra backups will be charged on a region-based backup-storing pricing. So for example, if you have a backup interval of 3 hours and you chose a retention period of two days (48 hours), and since two backups are free, you'll pay for (48/3-2) * region-based backup-storing price * backup size.
+Azure Cosmos DB includes the option for the retention of two backups for free. Extra backups will be charged on a region-based backup-storing pricing. So for example, if you have a backup interval of 3 hours and you chose a retention period of two days (48 hours), and since two backups are free, you'll pay for (48/3-2) *region-based backup-storing price* backup size.
 
 ## Manage your own backups
 
@@ -94,4 +94,5 @@ You could migrate the data to the original account the following ways:
 - Use the Azure Cosmos DB change feed.
 - Write your own data migration app in your preferred programming language.
 
-[NOTE!] Don't forget to delete the Azure Cosmos DB account your data was restored to, once you migrate the data back to your production account. If you don't delete the account, you'll incur extra costs. 
+> [!NOTE]
+> Don't forget to delete the Azure Cosmos DB account your data was restored to, once you migrate the data back to your production account. If you don't delete the account, you'll incur extra costs. 
