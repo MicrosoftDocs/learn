@@ -1,11 +1,11 @@
 > [!IMPORTANT]
 > In your Azure DevOps PartsUnlimited project, prepare two builds pipelines (used in previous demos)
 
-1.  Build pipeline **PartsUnlimited Security Package**.
+ -  Build pipeline **PartsUnlimited Security Package**.
     
      -  **.NET Core** build task (Restore, build, push)
      -  Enable CI trigger
-2.  Build pipeline **PartsUnlimited E2E**.
+ -  Build pipeline **PartsUnlimited E2E**.
     
      -  **ASP.NET** web application type
      -  NuGet restore task
