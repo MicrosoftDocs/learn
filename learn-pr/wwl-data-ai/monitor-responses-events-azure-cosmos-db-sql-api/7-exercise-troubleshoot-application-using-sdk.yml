@@ -4,8 +4,9 @@ title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API 
 metadata:
   title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API SDK'
   description: "Exercise: Troubleshoot an application using the Azure Cosmos DB SQL API SDK"
-  ms.date: 11/28/2021
+  ms.date: 11/29/2021
   author: wwlpublish
+  ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

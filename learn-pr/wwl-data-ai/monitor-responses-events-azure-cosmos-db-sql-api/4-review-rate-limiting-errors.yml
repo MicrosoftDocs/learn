@@ -4,8 +4,9 @@ title: Review rate limiting errors
 metadata:
   title: Review rate limiting errors
   description: "Review rate limiting errors"
-  ms.date: 11/28/2021
+  ms.date: 11/29/2021
   author: wwlpublish
+  ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
