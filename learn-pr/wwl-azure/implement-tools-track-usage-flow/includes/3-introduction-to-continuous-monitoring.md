@@ -1,4 +1,4 @@
-:::image type="content" source="../media/routing-system-feedback-e9e0c34c.png" alt-text="Routing System Feedback":::
+:::image type="content" source="../media/route-system-feedback-b3040309.png" alt-text="Routing System Feedback":::
 
 
 Continuous monitoring refers to the process and technology required to incorporate monitoring across each phase of your DevOps and IT operations lifecycles.

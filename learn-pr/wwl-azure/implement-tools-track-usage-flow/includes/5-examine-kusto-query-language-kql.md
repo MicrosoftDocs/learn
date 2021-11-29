@@ -56,13 +56,13 @@ Note: This walkthrough continues the previous lesson on Azure Log Analytics, and
     Perf
     | where ObjectName contains "process"
             and InstanceName !in ("_Total", "Idle")
-            and CounterName == "% Processor Time" 
+            and CounterName == "% Processor Time"
     | summarize avg(CounterValue) by InstanceName, CounterName, bin(TimeGenerated, 1m)
     | render piechart
     
     ```
     
-    :::image type="content" source="../media/running-processes-pie-chart-edcb73c9.png" alt-text="Running Processes Pie chart":::
+    :::image type="content" source="../media/run-processes-pie-chart-61e255a6.png" alt-text="Running Processes Pie chart":::
     
 
 ## There's more
