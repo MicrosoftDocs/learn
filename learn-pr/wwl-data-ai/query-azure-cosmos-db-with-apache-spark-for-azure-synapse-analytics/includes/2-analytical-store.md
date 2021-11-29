@@ -120,7 +120,7 @@ To query the Azure Cosmos DB analytical store, perform the following steps:
 
     You will note that all top-level properties of the document are represented as columns with the associated property values as the value of the column. All properties are represented as a structure of the type of values assigned to the properties and the values themselves, (T) and (U). For complex types such as objects and arrays, these remain embedded within the structure but similarly expanded to include type encapsulation of each of their property values. 
 
-    In this example the _id, customerId, orderDate, and shipDate are all stings and have a type of encapsulation of “string” (T). The details property is an embedded array (U), we can expand the structure within the column to reveal the three elements of the array [0],[1],[3] and in turn the embedded properties sku, name, price, and quantity of each array element object. 
+    In this example the _id, customerId, orderDate, and shipDate are all strings and have a type of encapsulation of “string” (T). The details property is an embedded array (U), we can expand the structure within the column to reveal the three elements of the array [0],[1],[3] and in turn the embedded properties sku, name, price, and quantity of each array element object. 
 
     You will also note the presence of several Azure Cosmos DB system document properties (S). Azure Cosmos DB automatically has system properties such as _ts, _self, _attachments, _rid, and _etag associated with every document. These system document properties are seldom useful for analytical store query purposes and are easily removed by running the following PySpark code:
 
