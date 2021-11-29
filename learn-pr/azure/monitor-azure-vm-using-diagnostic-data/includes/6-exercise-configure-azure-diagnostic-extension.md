@@ -34,7 +34,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     Confirm your settings include a destination type of Azure Monitor metrics for the collect and deliver step of the wizard.
 
-1. Select **Review and create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
+1. Select **Review and create** > **Create**. This installs the Azure Monitor Agent on the selected VM, and start data collection with the parameters defined in the rule created above.
 
 
 ## Confirm that the agent is installed on the VM
@@ -57,6 +57,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
    |Metric    |   net/bytes_total  |
    |Aggregation    |    Max     |
 
+   If the metric namespace **azure.vm.linux.guestmetrics** isn't listed, wait a few minutes and try again.
 
 1. Select the **Finish editing metric** check mark.
 
