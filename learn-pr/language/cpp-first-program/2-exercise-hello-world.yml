@@ -3,13 +3,13 @@ uid: learn.cpp-write-your-first-program.exercise-hello-world
 title: Exercise - Create your first C++ program
 metadata:
   title: Exercise - Create your first C++ program
-  description: In this exercise, you'll create your first program. The program
-    will output a string literal.
+  description: Create your first program in C++. The program will output a string literal.
   author: saifeemustafaq
   ms.author: chnoring
   ms.date: 11/18/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 durationInMinutes: 4
 azureSandbox: true
 interactive: bash

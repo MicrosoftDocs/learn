@@ -2,26 +2,20 @@
 uid: learn.cpp-write-your-first-program
 metadata:
   title: Write your first program in C++
-  description: In this module, you are made familiar with the C++ programming
-    language. You will construct a C++ program and be taught the language's
-    basic syntax. You will also learn to identify and correct programming errors
-    that you are likely to encounter.
+  description: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
   ms.date: 11/18/2021
   author: saifeemustafaq
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 title: Write your first program in C++
-summary: Learn how to build programs with C++. Additionally, to recognize
-  programming errors and fixing them.
+summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
 abstract: >
   In this module you will:
-
-  - Write C++ using basic syntax.
-
-  - Distinguish terminologies of C++ like datatypes, libraries, Functions, and so on.
-
-  - Explain the basic makeup of a program in C++.
+  - Write a program in C++ by using basic syntax.
+  - Learn C++ terminology, including data types, libraries, and functions.
+  - Learn how to identify and correct common programming errors.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

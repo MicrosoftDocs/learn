@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.cpp-write-your-first-program.how-it-works
-title: How a program in C++ works
+title: How a program works in C++
 metadata:
-  title: How a program in C++ works
-  description: In this unit, we break down the code and understand the syntax used in it.
+  title: How a program works in C++
+  description: Break down the code and understand the syntax used in it.
   author: saifeemustafaq
   ms.author: chnoring
   ms.date: 11/18/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/3-how-it-works.md)]

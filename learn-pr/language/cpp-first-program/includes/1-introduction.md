@@ -1,36 +1,35 @@
-C++ was modeled to be an extension of C Language to support procedural, object-oriented, and generic programming. It's a compiler-based programming language, which is statically typed and case-sensitive.
-The uses of C++ are limitless.  
+C++ was modeled as an extension of the C language. C++ was designed to support procedural, object-oriented, and generic programming. It's a compiler-based programming language, so it's statically typed and case-sensitive. The uses of C++ are limitless.
 
 Here's some example of where C++ is used:
 
-- **For the Web**. C++ is used in making of Web Browser and their plugins and extensions.
+- **For the web**. C++ is used to create web browsers and their plugins and extensions.
 
-- **In operating systems**. It has contribution in Operating Systems as many parts of windows versions were written in C++. The Symbian OS is mostly written in C++.
+- **In operating systems**. C++ contributes to operating systems. Many versions of Windows were in part written in C++. The Symbian OS is mostly written in C++.
 
-- **Compilers** for languages like C# and Java are written in C++. In fact, many C++ compilers are written in C++.
+- **Compilers**. Compilers for languages like C# and Java are written in C++. In fact, many C++ compilers are written in C++.
 
-- **Media applications**. Used for making media applications and managing audio/video files. Even used in applications where real-time audio is implemented like the audio books or transcribing a real-time video.
+- **Media applications**. C++ is used to create media applications and manage audio and video files. C++ is used in applications that implement real-time audio, like audiobooks and apps that transcribe video in real time.
 
-- **Created database engines**. C++ has been used in developing database applications like MYSQL.
+- **Database engines**. C++ has been used to develop database applications, like MySQL.
 
-- **Game development**. A wide variety of Animation and Games require C++ for modeling, 3D animation, rendering, and simulations. The **Games Engines** used to make games are frequently developed in C++.
+- **Game development**. A wide variety of animation and games require C++ for modeling, 3D animation, rendering, and simulations. Game engines that are used to make games frequently are developed by using C++.
 
-- **Medical engineering**. In recent times, we've also seen a huge rise in applications of C++ in Medical Engineering. Widely used in machines that have scanning such as MRI. C++ is used in various embedded systems.
+- **Medical engineering**. Developers who work in the field of medical engineering recently have created more applications by using C++. C++ is widely used in machines that use scanning technology, like MRI. C++ also is used in various embedded systems.
 
-- **Robotics**. In many cases, C++ is used to program the micro-controller to increase the performance and productivity of the system. The reason behind why C++ is used in robotics is because numerous hardware libraries are written in C++ as they allow  interaction with low-level hardware.
+- **Robotics**. In many cases, developers use C++ to program a microcontroller, to increase the performance and productivity of a robotics system. Numerous hardware libraries are written in C++ because they allow interaction with low-level hardware.
 
 ## Scenario
 
-As a developer on team, you're looking to evaluate C++. And if it can be a good fit for the applications, you and your team builds. What's important for your team and your company is to develop applications that are fast and are memory efficient? Also, the language needs to have many users and a large community to ensure there's support for issues and tutorials.
+As a developer on a team of developers, you're looking to evaluate C++. You want to determine whether C++ might be a good fit for the applications you and your team build. What's important for your team and for your company is to develop applications that are fast and memory-efficient. Also, the language needs to be common and well established, with a large community to ensure support for issues and access to tutorials.
 
 ## What will you learn
 
 In this module you'll learn to:
 
-- Write C++ using basic syntax.
-- Distinguish terminologies of C++ like datatypes, libraries, Functions, and so on.
-- Explain the basic makeup of a program in C++.
+- Write a program in C++ by using basic syntax.
+- Learn C++ terminology, including data types, libraries, and functions.
+- Learn how to identify and correct common programming errors.
 
 ## What is the main goal
 
-The module covers writing your first C++ program and getting you the confidence to develop in C++.
+This module shows you how to write your first C++ program and helps you gain confidence in developing in C++.

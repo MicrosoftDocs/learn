@@ -1,18 +1,18 @@
-Recognizing errors and knowing how to fix them is crucial to make you an efficient developer. In this unit, you'll be made familiar with some common mistakes, and what error codes they produce.
+To be an efficient developer, it's crucial that you recognize programming errors and know how to fix them. In this unit, you become familiar with some common mistakes and the error codes they produce.
 
-Here's some common errors you're likely to make as you're starting out to learn C++.
+Here's a summery of common errors you're likely to encounter as you begin to learn C++:
 
-- **Wrong uppercase**. Casing matters, with the wrong case, the compiler won't recognize what commands you are after.
+- **Wrong uppercase**. C++ is case-sensitive, and casing matters. If you use the wrong case in your code, the compiler won't recognize the command you're trying to use.
 
-- **Wrong operator**. For example when you deal with stream to output or reading information, it's important to use the correct operator.
+- **Wrong stream operator**. It's important to use the correct operator. Examples are when you identify the stream to output or when reading information.
 
-- **Quotes**. String literals need a double quote, and a single character needs a single quote, it's easy to mix them up.
+- **Quotes**. String literals require double quotes. A single character requires a single quote. It's easy to mix them up.
 
-- **Missing semicolon**. All statements need to end with a semicolon, ";"
+- **Missing semicolon**. All statements must end with a semicolon (`;`).
 
-## Wrong uppercase 
+## Wrong uppercase
 
-Entering upper-case letters like capitalizing *c* in *cout*, or the letter *r* in return. It's easy to think that casing doesn't matter, but it does. For example, typing `Cout` instead of `cout`, or `Return` instead of `return`, like the below code, would lead to a compilation error:
+Entering uppercase letters, like capitalizing *c* in *cout*, or the letter *r* in return. It's easy to think that casing doesn't matter, but it does. For example, typing `Cout` instead of `cout` or `Return` instead of `return`, like in the following code, ends in a compilation error:
 
 ```cpp
 Return 0;  // incorrect
