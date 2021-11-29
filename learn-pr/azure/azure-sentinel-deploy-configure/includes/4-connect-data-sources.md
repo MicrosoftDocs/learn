@@ -1,20 +1,20 @@
-After you enable Azure Sentinel, the next step is to connect it to the services that you want to use.
+After you enable Microsoft Sentinel, the next step is to connect it to the services that you want to use.
 
 ## Service-to-service data connectors
 
-At the time of writing, there are 56 out-of-the-box data connectors to support common data source integrations. These connectors are classified as *service-to-service* because a communication service layer is built in to these applications. The communication service layer allows the connector service in Azure Sentinel to communicate with the communication service of the chosen application.
+At the time of writing, there are 56 out-of-the-box data connectors to support common data source integrations. These connectors are classified as *service-to-service* because a communication service layer is built in to these applications. The communication service layer allows the connector service in Microsoft Sentinel to communicate with the communication service of the chosen application.
 
 ### Native service-to-service connectors
 
-Azure Sentinel natively interoperates with these Azure and non-Azure services:
+Microsoft Sentinel natively interoperates with these Azure and non-Azure services:
 
 - Azure Activity log
 - Azure AD (audit logs and sign-in logs)
-- Azure Security Center
+- Microsoft Defender for Cloud
 - Azure AD Identity Protection
 - Azure ATP
 - Amazon Web Services CloudTrail
-- Cloud App Security
+- Defender for Cloud Apps
 - Domain name servers
 - Office 365
 - Microsoft Defender ATP
@@ -22,11 +22,11 @@ Azure Sentinel natively interoperates with these Azure and non-Azure services:
 - Windows Defender Firewall
 - Windows security events
 
-Because these solutions use Azure Foundation for out-of-the-box interoperability, you can connect Azure Sentinel to them with only a few steps.
+Because these solutions use Azure Foundation for out-of-the-box interoperability, you can connect Microsoft Sentinel to them with only a few steps.
 
 ### External solution connections through APIs
 
-Some data sources are connected by using APIs that the connected data source provides. Most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Azure Sentinel, gather specific data types, and store the data in the selected Azure Monitor Log Analytics workspace:
+Some data sources are connected by using APIs that the connected data source provides. Most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Microsoft Sentinel, gather specific data types, and store the data in the selected Azure Monitor Log Analytics workspace:
 
 - Alcide kAudit
 - Barracuda Web Application Firewall
@@ -41,39 +41,39 @@ Some data sources are connected by using APIs that the connected data source pro
 
 ### Connect to Azure AD
 
-The most direct way to collect data is to use the built-in Azure Sentinel connectors. A list of the built-in connectors is accessible through the Azure Sentinel interface.
+The most direct way to collect data is to use the built-in Microsoft Sentinel connectors. A list of the built-in connectors is accessible through the Microsoft Sentinel interface.
 
-Azure Sentinel provides recommendations for which workbooks you should install for each connector to get insights from your data.
+Microsoft Sentinel provides recommendations for which workbooks you should install for each connector to get insights from your data.
 
 You can also select what type of Azure AD logs you want to get:
 
 - **Sign-in logs**: Provide information about the usage of managed applications and user sign-in activities.
 - **Audit logs**: Provide system activity information about users and group management, managed applications, and directory activities.
 
-In this example, we'll connect to Azure AD from Azure Sentinel:
+In this example, we'll connect to Azure AD from Microsoft Sentinel:
 
-1. On the Azure portal, under the **All service** option, select **Azure Sentinel**.
-1. From the **navigation** menu, select **Data Connectors**. This page lists all the connectors that Azure Sentinel provides and their status.
+1. On the Azure portal, under the **All service** option, select **Microsoft Sentinel**.
+1. From the **navigation** menu, select **Data Connectors**. This page lists all the connectors that Microsoft Sentinel provides and their status.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Azure Sentinel connector page with the list of connectors." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Microsoft Sentinel connector page with the list of connectors." border="true":::
 
-1. On the **Data Connectors** page, select the **Azure Active Directory** tile. The Azure Sentinel **Azure Active Directory** connector page opens.
+1. On the **Data Connectors** page, select the **Azure Active Directory** tile. The Microsoft Sentinel **Azure Active Directory** connector page opens.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Azure Sentinel Azure Active Directory connector page." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="Screenshot of the Microsoft Sentinel Azure Active Directory connector page." border="true":::
 
 1. Read the prerequisites and make sure you've fulfilled them. Then follow the instructions to connect the data source.
 
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
-    :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="Screenshot of the Azure Sentinel connector configuration options." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="Screenshot of the Microsoft Sentinel connector configuration options." border="true":::
 
 ### Validate your data source connection
 
-After you connect your data sources to Azure Sentinel, you get data visualizations and analysis so you can know what happens across all your connected data sources.
+After you connect your data sources to Microsoft Sentinel, you get data visualizations and analysis so you can know what happens across all your connected data sources.
 
-To confirm that your connectors work, go to the Azure portal. In the Azure portal, select **Azure Sentinel**, and then select the workspace that you used when you enabled Azure Sentinel.
+To confirm that your connectors work, go to the Azure portal. In the Azure portal, select **Microsoft Sentinel**, and then select the workspace that you used when you enabled Microsoft Sentinel.
 
-:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Azure Sentinel - Analytics overview page." border="false":::
+:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Microsoft Sentinel - Analytics overview page." border="false":::
 
 The main body of the overview page provides insight into the security status of your workspace. The following screenshot shows the events and alerts over time section.
 
@@ -85,15 +85,15 @@ Depending on what service the Contoso administrator initially connected to, ther
 
 ### Threat detection rule templates
 
-After you connect your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To do this, Azure Sentinel provides threat detection rule templates that you can use as-is or customize. These templates are designed by Microsoft security experts and analysts. They're based on known threats, common attack vectors, and suspicious activity escalation chains.
+After you connect your data sources to Microsoft Sentinel, you'll want to be notified when something suspicious occurs. To do this, Microsoft Sentinel provides threat detection rule templates that you can use as-is or customize. These templates are designed by Microsoft security experts and analysts. They're based on known threats, common attack vectors, and suspicious activity escalation chains.
 
 Rules that are created from these templates automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, as needed.
 
-Azure Sentinel uses a fusion technology to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and build queries in Log Analytics to investigate the data.
+Microsoft Sentinel uses a fusion technology to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and build queries in Log Analytics to investigate the data.
 
 ### Built-in workbooks
 
-Azure Sentinel gives you workbooks that provide analytics for your logs and queries. The workbooks are based on Monitor workbooks. They use the tools that are already available in Azure, in addition to built-in tables and charts. You can use built-in workbooks, customize an existing workbook, or create a new workbook from scratch.
+Microsoft Sentinel gives you workbooks that provide analytics for your logs and queries. The workbooks are based on Monitor workbooks. They use the tools that are already available in Azure, in addition to built-in tables and charts. You can use built-in workbooks, customize an existing workbook, or create a new workbook from scratch.
 
 Built-in workbooks provide integrated data from your connected data sources. They let you examine the events that those services generate. The built-in workbooks include Azure AD, Azure activity events, and on-premises events. These on-premises events can include data from Windows events from servers or from Microsoft alerts. 
 

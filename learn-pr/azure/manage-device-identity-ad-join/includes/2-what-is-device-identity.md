@@ -45,7 +45,7 @@ Signals include the following types:
 - **Device** allows you to specify the type of device and its state.
 - **Application** lets you control access to an application for a specific device.
 - **Real-time and calculated risk detection** allows Azure AD to identify behaviors not only during sign-in but also throughout the user's session.
-- **Microsoft Cloud App Security** provides real-time monitoring of the user's session and application access. Cloud App Security also helps you control your cloud environment.
+- **Microsoft Defender for Cloud Apps** provides real-time monitoring of the user's session and application access. Defender for Cloud Apps also helps you control your cloud environment.
 
 ### Common decisions
 

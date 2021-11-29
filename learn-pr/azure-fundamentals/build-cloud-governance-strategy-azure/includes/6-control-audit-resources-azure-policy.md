@@ -6,7 +6,7 @@ In a previous exercise in this module, you identified your governance and busine
 
 Azure Policy enables you to define both individual policies and *groups* of related policies, known as *initiatives*. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
-Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring. For example, if you define a policy that allows only a certain SKU (stock-keeping unit) size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs in your environment.
+Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security, and Monitoring. For example, if you define a policy that allows only a certain SKU (stock-keeping unit) size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs in your environment.
 
 In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with **AppName** tag and a value of "SpecialOrders," Azure Policy will automatically reapply that tag if it was missing.
 
@@ -16,9 +16,9 @@ Azure Policy also integrates with Azure DevOps by applying any continuous integr
 
 Implementing a policy in Azure Policy involves three tasks:
 
-1.  Create a policy definition.
-2.  Assign the definition to resources.
-3.  Review the evaluation results.
+1. Create a policy definition.
+2. Assign the definition to resources.
+3. Review the evaluation results.
 
 Let's examine each step in more detail.
 
@@ -32,7 +32,7 @@ Every policy definition has conditions under which it's enforced. A policy defin
  -  **Allowed locations** This policy enables you to restrict the locations that your organization can specify when it deploys resources. Its effect is used to enforce your geographic compliance requirements.
  -  **MFA should be enabled on accounts with write permissions on your subscription** This policy requires that multifactor authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
  -  **CORS should not allow every resource to access your web applications** Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
- -  **System updates should be installed on your machines** This policy enables Azure Security Center to recommend missing security system updates on your servers.
+ -  **System updates should be installed on your machines** This policy enables Microsoft Defender for Cloud to recommend missing security system updates on your servers.
 
 ### Task 2. Assign the definition to resources
 
@@ -50,15 +50,15 @@ Policy evaluation happens about once per hour. If you make changes to your polic
 
 An Azure Policy initiative is a way of grouping related policies together. The initiative definition contains all of the policy definitions to help track your compliance state for a larger goal.
 
-For example, Azure Policy includes an initiative named **Enable Monitoring in Azure Security Center**. Its goal is to monitor all of the available security recommendations for all Azure resource types in Azure Security Center.
+For example, Azure Policy includes an initiative named **Enable Monitoring in Microsoft Defender for Cloud**. Its goal is to monitor all of the available security recommendations for all Azure resource types in Microsoft Defender for Cloud.
 
 Under this initiative, the following policy definitions are included:
 
- -  **Monitor unencrypted SQL Database in Security Center** This policy monitors for unencrypted SQL databases and servers.
- -  **Monitor OS vulnerabilities in Security Center** This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
- -  **Monitor missing Endpoint Protection in Security Center** This policy monitors for servers that don't have an installed endpoint protection agent.
+ -  **Monitor unencrypted SQL Database in Defender for Cloud** This policy monitors for unencrypted SQL databases and servers.
+ -  **Monitor OS vulnerabilities in Defender for Cloud** This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
+ -  **Monitor missing Endpoint Protection in Defender for Cloud** This policy monitors for servers that don't have an installed endpoint protection agent.
 
-In fact, the **Enable Monitoring in Azure Security Center** initiative contains over 100 separate policy definitions.
+In fact, the **Enable Monitoring in Microsoft Defender for Cloud** initiative contains over 100 separate policy definitions.
 
 Azure Policy also includes initiatives that support regulatory compliance standards, such as HIPAA and ISO 27001.
 

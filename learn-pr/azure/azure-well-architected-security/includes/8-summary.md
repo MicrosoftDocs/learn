@@ -19,6 +19,6 @@ To learn more about the Security pillar of the Azure Well-Architected Framework,
 - [Azure security documentation](/azure/security/?azure-portal=true)
 - [Configure encryption with customer-managed keys stored in Azure Key Vault](/azure/storage/common/storage-service-encryption-customer-managed-keys?azure-portal=true)
 - [Start using Azure Active Directory Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started?azure-portal=true)
-- [What is Azure Security Center?](/azure/security-center/security-center-intro?azure-portal=true)
+- [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-intro?azure-portal=true)
 - [What is Conditional Access?](/azure/active-directory/conditional-access/overview?azure-portal=true)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl?azure-portal=true)

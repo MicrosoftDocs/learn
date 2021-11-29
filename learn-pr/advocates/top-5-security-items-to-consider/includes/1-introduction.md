@@ -6,7 +6,7 @@ Did you know that the most common cause of data breaches is poor security in sof
 
 In this module, you will:
 
-* Use Azure Security Center
+* Use Microsoft Defender for Cloud
 * Verify your application's inputs and outputs
 * Store your secrets into Key Vault
 * Ensure you are using the latest version of your framework, and its security features

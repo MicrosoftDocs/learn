@@ -24,7 +24,7 @@ Azure Government's defense-in-depth approach to physical security provides multi
 
 Azure Government offers a variety of services to help secure data:
 
-**Azure Security Center** and **Microsoft Intelligent Graph** leverage advanced analytics so you can learn from and mitigate evolving attacks.
+**Microsoft Defender for Cloud** and **Microsoft Intelligent Graph** leverage advanced analytics so you can learn from and mitigate evolving attacks.
 
 **Key Vault** encrypts keys and secrets in FIPS 140-2 validated hardware security modules, provisions and centrally manages keys in seconds, and audits for further analysis and threat detection.
 

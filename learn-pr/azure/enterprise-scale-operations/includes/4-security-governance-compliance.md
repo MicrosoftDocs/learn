@@ -34,7 +34,7 @@ For insights and analysis of the changes that occur within an enterprise estate,
 
 Azure AD reports provide another important view into activity within the enterprise estate. Review the reports regularly as part of your security-monitoring processes. The reports include *security reports* and *activity reports*. Security reports provide insight into an organization's identities, and activity reports provide insight into user behaviors.
 
-Make Azure Security Center the starting point for security monitoring of Azure resources. Enable the standard tier for all subscriptions via Azure Policy.
+Make Microsoft Defender for Cloud the starting point for security monitoring of Azure resources. Enable the standard tier for all subscriptions via Azure Policy.
 
 ## Platform security
 
