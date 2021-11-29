@@ -1,8 +1,8 @@
 In a distributed application, some messages need to be sent to a single recipient component. Other messages need to reach more than one destination.
 
-Let's describe what happens when a user cancels a pizza order. This is a little different than placing the initial order, where we wanted to wait until the order cleared payment processing before sending the order on to the next steps (which is having it prepared and cooked at the local storefront). For the cancel operation, we are going to notify both the storefront *and* the payment processor at the same time. This approach minimizes the chances that we waste ingredients or delivery driver time.
+Let's describe what happens when a user cancels a pizza order. This is a little different from placing an initial order, where our workflow wanted to wait until the order cleared payment processing before sending the order on to the next steps (which is having it prepared and cooked at the local storefront). For the cancel operation, we are going to notify both the storefront *and* the payment processor at the same time. This approach minimizes the chances that we waste ingredients or delivery driver time.
 
-To allow multiple components to receive the same message, we'll use an Azure Service Bus topic.
+To allow multiple components to receive the same message, we'll use an Azure Service Bus _topic_.
 
 ## Code with topics versus code with queues
 
@@ -12,7 +12,7 @@ However, you'll use the `TopicClient` class instead of the `QueueClient` class t
 
 ## Set filters on subscriptions
 
-If you want to control specific messages that are sent to the topic are delivered to particular subscriptions, you can place filters on each subscription in the topic. In the pizza application, for instance, our storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the "OrderCancellation" topic and filter for its own StoreId. We save internet bandwidth because we are not sending unnecessary messages to distant store locations. Meanwhile, the payment processing component subscribes to all OrderCancellation messages.
+If you want certain messages sent to the topic are delivered to a particular subscription, you can place one or more filters on the subscription in the topic. In the pizza application, for instance, our storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the "OrderCancellation" topic and filter for its own StoreId. We save internet bandwidth because we are not sending unnecessary messages to multiple store locations. Meanwhile, the payment processing component subscribes to all OrderCancellation messages.
 
 Filters can be one of three types:
 
@@ -46,13 +46,13 @@ var encodedMessage = new Message(Encoding.UTF8.GetBytes(message));
 await topicClient.SendAsync(encodedMessage);
 ```
 
-To receive messages, you must create a `SubscriptionClient` object, not a `TopicClient` object, and pass it the connection string, the name of the topic, **and** the name of the subscription.
+To receive messages, you must create a `subscriptionClient` object, not a `TopicClient` object, and pass it the connection string, the name of the topic, **and** the name of the subscription.
 
 ```C#
 subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, "GroupMessageTopic", "NorthAmerica");
 ```
 
-Then, register a message handler - this is the asynchronous method in your code that processes the retrieved message.
+Then, register a message handler. This is the asynchronous method in your code that processes the retrieved message.
 
 ```C#
 subscriptionClient.RegisterMessageHandler(MessageHandler, messageHandlerOptions);
