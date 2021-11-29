@@ -48,7 +48,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
       --name myVM
     ```
 
-1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurrs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
+1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
 
 ## Create an Azure Automation account
 
