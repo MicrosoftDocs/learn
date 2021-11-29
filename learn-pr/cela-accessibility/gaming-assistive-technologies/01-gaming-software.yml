@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can developers support assistive technology users when creating experiences that are not compatible with 3rd party or platform-provided assistive technologies?"
+  - content: "What is the primary purpose of a text-to-speech tool or setting?"
     choices:
-    - content: "Assume 3rd party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
+    - content: "To narrate menu text aloud via synthesized speech."
+      isCorrect: false
+      explanation: "Incorrect. During this period of waiting, many players can be excluded from a game title. Additionally, providing these tools at the game level can ultimately result in more accessible experiences overall for the player."
+    - content: "To read the text of a player's typed message aloud to other players in the voice channel via synthesized audio."
+      isCorrect: true
+      explanation: "Correct. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. However, this approach does not actively support assistive technology users in playing your game."
+    - content: "To transcribe what other players have said aloud in the voice channel into text that players can read on screen in real time."
+      isCorrect: false
+      explanation: "Incorrect. this option."
+  - content: "What approach can developers take if their game isn't compatible with third party or platform-provided AT?"
+    choices:
+    - content: "Assume third party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
       isCorrect: false
       explanation: "Incorrect. During this period of waiting, many players can be excluded from a game title. Additionally, providing these tools at the game level can ultimately result in more accessible experiences overall for the player."
     - content: "Put an advisory about a lack of AT compatibility in the game’s store description."
       isCorrect: false
-      explanation: "Incorrect. While it is important to provide customers with documentation about your product's accessibility status prior to their purchase, this approach does not work to actively support assistive technology users in playing your game."
+      explanation: "Incorrect. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. However, this approach does not actively support assistive technology users in playing your game."
     - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, color filters and more."
       isCorrect: true
-      explanation: "Correct. This would be the best approach to support players who use AT for scenarios where platform or 3rd party AT is not compatible, and in general."
-  - content: "Which of the following best describes the most common challenge a player may encounter when using a platform-provided magnification tool while playing a game?"
-    choices:
-    - content: "There should be no challenges presented, as platform-provided tools are seamlessly compatible with all game titles."
-      isCorrect: false
-      explanation: "Incorrect. A platform-provided magnification tool should be compatible and able to accomplish its primary objective of enlarging a specific region of the screen to make it easier to distinguish important information. How a game chooses to visually layout information on the screen and the controls it utilizes, however, may pose unique challenges for those who rely on screen magnification tools."
-    - content: "The magnification tool may co-opt certain game controls and result in aspects of the game screen being temporarily difficult to see."
-      isCorrect: true
-      explanation: "Correct. While screen magnifiers can be very helpful for some individuals, including those with low vision, they often co-opt certain controls so the player can adjust the level of zoom as well as move the focus of the magnification around the screen. This may interfere with game functions that utilize the same controls. In addition, by zooming in on a specific area of the screen, it may not be possible to see all important visual information at once, which can make playing the game much more challenging."
-    - content: "The magnification tool may cause the entire game experience to crash."
-      isCorrect: false
-      explanation: "Incorrect. While, in theory, it is possible that a platform-provided tool such as a magnifier could interfere with a game and cause it to crash, such instances are less common as most platform developers test such tools rigorously to ensure they work with a variety of experiences."
+      explanation: "Correct. This would be the best approach to support players who use AT for scenarios where platform or third-party AT is not compatible, and in general."
