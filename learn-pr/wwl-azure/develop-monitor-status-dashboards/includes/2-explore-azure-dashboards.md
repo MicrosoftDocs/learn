@@ -14,7 +14,7 @@ They're handy in providing a single pane of glass over your Azure infrastructure
  -  Deep integration into Azure. Visualizations can be pinned to dashboards from multiple Azure pages, including metrics analytics, log analytics, and Application Insights.
  -  Supports both metrics and logs.
  -  Combine data from multiple sources, including output from [Metrics explorer](/azure/azure-monitor/platform/metrics-charts), [Log Analytics queries](/azure/azure-monitor/log-query/log-query-overview), and [maps](/azure/azure-monitor/app/app-map) and [availability](/azure/azure-monitor/visualizations) in Application Insights.
- -  Option for personal or shared dashboards. It's integrated with Azure [role-based authentication (RBAC)](/azure/role-based-access-control/overview).
+ -  Option for personal or shared dashboards. It's integrated with [Azure role-based authentication (RBAC)](/azure/role-based-access-control/overview).
  -  Automatic refresh. Metrics refresh depends on the time range with a minimum of five minutes. Logs refresh at one minute.
  -  Parametrized metrics dashboards with timestamp and custom parameters.
  -  Flexible layout options.
