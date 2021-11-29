@@ -8,7 +8,7 @@ Many hardware AT devices may be referred to as "adaptive" input devices or  "ada
 
 In the following video, you'll learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, mouth-operated joysticks and more.
 
-> [!VIDEO ]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPOy2]
 
 ## Hardware considerations for accessible game development
 
@@ -27,8 +27,8 @@ Regardless of a player's specific AT device of choice, you can support these pla
 
 ### Challenging game mechanics
 
-In addition to supporting diverse input types, it's also important to consider the activation methods that players use for these devices. Many game mechanics assume that players can utilize rapid finger movements on their keyboard or standard controller. Players using large switch buttons activated by their head or knee, however, may be unable to activate these controls with the same speed or precision as a finger. 
+In addition to supporting diverse input types, it's also important to consider the activation methods that players use for these devices. Many game mechanics assume that players can utilize rapid finger movements on their keyboard or standard controller. Players using large switch buttons activated by their head or knee, however, may be unable to activate these controls with the same speed or precision as a finger.
 
-The following video provides an overview of these types of considerations: 
+The following video provides an overview of these types of considerations:
 
 > [!VIDEO ]
