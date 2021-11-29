@@ -15,8 +15,10 @@ abstract: |
   - Integrate security tools like WhiteSource, Micro Focus, Checkmarts and Veracode with Azure DevOps
   - Implement pipeline security
   - Use Secure DevOps kit for Azure (AzSK)
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
