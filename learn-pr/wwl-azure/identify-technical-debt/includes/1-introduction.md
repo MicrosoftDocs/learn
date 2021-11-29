@@ -1,6 +1,6 @@
 This module examines technical debt, complexity, quality metrics, and plans for effective code reviews and code quality validation.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, students and professionals can:
 
