@@ -16,8 +16,10 @@ abstract: |
   - Integrate code quality tools
   - Plan code reviews
   - Describe complexity and quality metrics
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
