@@ -10,10 +10,22 @@ Specifically, they’re unsure of things like:
 
 In this module, you’ll be introduced to foundational concepts about game accessibility. Specifically, you’ll learn about common game elements and mechanics that can pose unintentional barriers for players with disabilities.
 
+> [!NOTE]
+> While vision, hearing, cognitive, and mobility-based elements are addressed in this introductory module, it’s important to note that there are many other game
+elements that impact accessibility.
+>
+> This includes elements related to:
+>
+> - Speech and communication
+> - Sensory demands
+> - Mental health and more
+>
+> Additional information about these player experiences can be found in the summary and resources unit of this module.
+
 ## Learning Objectives
 
 After completing this module, you'll be able to:
 
-1. Discuss the relationship between gaming and visual, audio, cognitive, and input-based game experiences.
-2. Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
-3. Describe the concept of diverse player experiences and the importance of considering these diverse experiences when learning about gaming accessibility foundations.
+ -  Discuss the relationship between gaming and visual, audio, cognitive, and input-based game experiences.
+ - Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
+ - Describe the concept of diverse player experiences and the importance of considering these diverse experiences when learning about gaming accessibility foundations.

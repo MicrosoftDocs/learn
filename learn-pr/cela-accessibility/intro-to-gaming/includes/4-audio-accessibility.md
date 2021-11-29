@@ -8,6 +8,8 @@ In the following video, you'll learn how to identify common audio-based elements
 
 It's important to identify areas where audio plays a key role in gameplay. This is an important first step to ensure that the following players can customize their experience to meet their needs and preferences.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPH8n]
+
 ## Hearing and disability
 
 When exploring audio accessibility, it’s important to understand that the experiences of players with hearing-related disabilities can also largely differ when playing games. Players may not be able to hear any audio provided by a game, platform, or hardware device. Other players may have varying levels of hearing that can differ in each ear or differ based on the frequency or volume of sounds presented.
