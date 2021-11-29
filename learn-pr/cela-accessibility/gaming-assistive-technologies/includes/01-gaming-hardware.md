@@ -1,6 +1,6 @@
 The introductory scenario in this module describes a player who uses a software-based assistive technology. In gaming, many players commonly use hardware-based AT devices as well. Examples of hardware-based assistive technologies include input devices like large mountable buttons, adaptive joysticks, and mouth operated controls.
 
-This unit introduces common hardware assistive technologies used by players with disabilities. The unit describes how the use of these devices can impact the experiences of the players using them. These insights can help guide the approaches developers can take to support players who use these technologies. 
+This unit introduces common hardware assistive technologies used by players with disabilities. The unit describes how the use of these devices can impact the experiences of the players using them. These insights can help guide the approaches developers can take to support players who use these technologies.
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
