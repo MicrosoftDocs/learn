@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can developers support assistive technology users when creating experiences that are not compatible with 3rd  party or platform-provided assistive technologies?"
+  - content: "How can developers support assistive technology users when creating experiences that are not compatible with 3rd party or platform-provided assistive technologies?"
     choices:
     - content: "Assume 3rd party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
       isCorrect: false
-      explanation: "Incorrect. ."
+      explanation: "Incorrect. During this period of waiting, many players can be excluded from a game title. Additionally, providing these tools at the game level can ultimately result in more accessible experiences overall for the player."
     - content: "Put an advisory about a lack of AT compatibility in the game’s store description."
       isCorrect: false
-      explanation: "Incorrect. Game difficulty customization is one of the many areas where customization options should be provided. However, providing customization for game difficulty alone does not represent the best description of customization in the context of game accessibility."
+      explanation: "Incorrect. While it is important to provide customers with documentation about your product's accessibility status prior to their purchase, this approach does not work to actively support assistive technology users in playing your game."
     - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, color filters and more."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. This would be the best approach to support players who use AT for scenarios where platform or 3rd party AT is not compatible, and in general."
   - content: "Which of the following best describes the most common challenge a player may encounter when using a platform-provided magnification tool while playing a game?"
     choices:
     - content: "There should be no challenges presented, as platform-provided tools are seamlessly compatible with all game titles."
