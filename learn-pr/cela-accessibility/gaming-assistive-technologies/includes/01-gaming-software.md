@@ -4,21 +4,53 @@ In this unit, you'll be introduced to other common software settings and tools. 
 
 ## What are the common types of software assistive technologies used in gaming?
 
-Software-based assistive technologies  The following software-based programs and tools are used by players with disabilities to access technology in gaming contexts:
+Software-based assistive technologies can improve access to gaming experiences through a host of functionalities including:
+
+ - Narrating visual UI elements aloud to players
+ - Customizing the player's display to optimize the visibility of elements
+ - Allowing players to re-assign their input controls through software and more
+
+These technologies and tools are often offered by a variety of sources. This includes third-party software programs that are used in conjunction with games and platforms as well as tools natively provided by the gaming platform or game title.
+
+An awareness of the following assistive tools is important in ensuring that the gaming products and experiences you create effectively support the players who use them for gaming access.
 
 ### Screen readers
 
-Screen readers are a form of assistive technology that renders text or image content on screen aloud as speech or braille output. They are commonly used by individuals who are blind or have visual disabilities in which adjusting text size or color is not enough to render the text readable. Additionally, screen readers can be used by individuals with cognitive or learning disabilities that make reading difficult, or younger players who have no yet learned to read. In gaming, screen readers should essentially convey what is happening within the game UI in a way that is at parity to the experience a sighted user would have.
+Screen readers are a form of assistive technology that renders text or image content on screen aloud as speech or braille output. They are commonly used by individuals who are blind or have visual disabilities in which adjusting text size or color is not enough to render the text readable.
+
+Screen readers may also be used by those with cognitive or learning disabilities that make reading difficult, or younger players who have not yet learned to read.
+
+In gaming, screen readers should essentially convey what is happening within the game UI in a way that is at parity to the experience a sighted user would have.
+
+In the following video, this player adjusts their screen narration settings at the Xbox platform level. Next, they launch Forza Horizon 5 which launches with the game's screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game. 
+
+> [!VIDEO ]
 
 ### Contrast settings
 
-Some players may use high contrast modes at the platform-level on their devices. High contrast modes are intended to enhance the visibility of on-screen elements by changing color schemes or simplifying backgrounds. For example, High Contrast Mode is the name of a tool on the Xbox Platform that helps users more clearly distinguish elements on their screen by eliminating background images unnecessary to UI navigation and making the focus indicator stand out more prominently against the UI. It is primarily used by those with low vision, but is also beneficial to neurodiverse users, as the contrast mode simplifies the visual aspects of the user interface that some may find less distracting and therefore easier to navigate. High Contrast Mode is a console setting and is not applied to experiences outside of the Xbox platform navigation.
+Contrast settings are generally intended to enhance the visibility of on-screen elements by changing color schemes or simplifying backgrounds. These settings are primarily used by players with low vision. However, they can also benefit neurodiverse users, as the high contrast mode simplifies the visual aspects of the user interface that some may find distracting, making the interface easier to navigate.
 
-:::image type="content" source="../media/hc-two.png" alt-text="A screenshot of the Xbox Accessibility High Contrast settings menu. The list box High Contrast: Dark theme is selected. To the right of the list box is an image demonstrating how the Xbox Home screen will look like with a dark theme applied. Text on the screen reads: Turn on high contrast to make on-screen elements easier to see. This will prevent your personal color and background from being shown.":::
+The following screenshots provide an example of the Xbox Platform's high contrast mode settings in action.
 
+**Xbox Home Screen without High Contrast Mode Enabled:**
 :::image type="content" source="../media/hc-three.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. Behind the buttons, a gradient color pattern of purples and pinks is displayed.":::
 
+**The Xbox Platform High Contrast Settings Menu:**
+:::image type="content" source="../media/hc-two.png" alt-text="A screenshot of the Xbox Accessibility High Contrast settings menu. The list box High Contrast: Dark theme is selected. To the right of the list box is an image demonstrating how the Xbox Home screen will look like with a dark theme applied. Text on the screen reads: Turn on high contrast to make on-screen elements easier to see. This will prevent your personal color and background from being shown.":::
+
+**The Xbox Home Screen with High Contrast Dark Theme applied:**
+ 
 :::image type="content" source="../media/hc-four.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. There is no longer a gradient color pattern of purples and pinks displayed behind the buttons; the background is simply black.":::
+
+Note the following changes that work to simplify and enhance the visibility of the UI elements: 
+
+ - The background color is changed from bright pink and purple to solid black 
+ - The focus indicator is slightly wider and brighter. It's bright teal color is very obvious against the new black background of the UI. 
+ - The text within the tile options now have a solid black background behind them to increase readability
+ - Content that typically animates or moves within the UI is now static or replaced by the black background
+
+> [!NOTE]
+> The Xbox Platform's High Contrast Settings are a platform-level feature. These settings do not impact the UI of in-game play.
 
 ### Color filters
 
