@@ -10,7 +10,7 @@ Software-based assistive technologies can improve access to gaming experiences t
  - Customizing the player's display to optimize the visibility of elements
  - Allowing players to reassign their input controls through software and more
 
-These technologies and tools are often offered by various sources. This includes third-party software programs that are used with games and platforms as well as tools natively provided by the gaming platform or game title.
+These technologies and tools are often offered by various sources. This includes third-party software programs that are used with games and platforms, as well as tools natively provided by the gaming platform or game title.
 
 An awareness of the following assistive tools is important in ensuring that the gaming products and experiences you create effectively support the players who use them for gaming access.
 
@@ -20,15 +20,15 @@ Screen readers are a form of assistive technology that renders text or image con
 
 Screen readers may also be used by players with cognitive or learning disabilities that make reading difficult, or younger players who have not yet learned to read.
 
-In gaming, screen readers should essentially convey what is happening within the game UI in a way that is at parity to the experience a sighted user would have.
+In gaming, screen readers should essentially convey what is happening visually within the game's UI aloud via synthesized audio.
 
-In the following video, this player adjusts their screen narration settings at the Xbox platform level. Next, they launch Forza Horizon 5. The game launches title's screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game.
+In the following video, the player adjusts their screen narration settings at the Xbox platform level. Next, they launch the game Forza Horizon 5. The game launches with its title-provided screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game upon launch.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPDLf]
 
 ### Contrast settings
 
-Contrast settings are intended to enhance the visibility of on-screen elements by changing color schemes or simplifying backgrounds. These settings are primarily used by players with low vision. However, they can also benefit neurodiverse users, as the high contrast mode simplifies the visual aspects of the user interface that some may find distracting, making the interface easier to navigate.
+Contrast settings are intended to enhance the visibility of on-screen elements by changing color schemes or simplifying backgrounds. These settings are primarily used by players with low vision. However, they can also benefit neurodiverse users, as some high contrast modes also simplify the visual aspects of the user interface considered distracting by some, making the interface easier to navigate.
 
 The following screenshots provide an example of the Xbox Platform's high contrast mode settings in action.
 
@@ -39,15 +39,15 @@ The following screenshots provide an example of the Xbox Platform's high contras
 :::image type="content" source="../media/hc-two.png" alt-text="A screenshot of the Xbox Accessibility High Contrast settings menu. The list box High Contrast: Dark theme is selected. To the right of the list box is an image demonstrating how the Xbox Home screen will look like with a dark theme applied. Text on the screen reads: Turn on high contrast to make on-screen elements easier to see. This will prevent your personal color and background from being shown.":::
 
 **The Xbox Home Screen with High Contrast Dark Theme applied:**
- 
+
 :::image type="content" source="../media/hc-four.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. There is no longer a gradient color pattern of purples and pinks displayed behind the buttons; the background is simply black.":::
 
 Note the following changes that work to simplify and enhance the visibility of the UI elements:
 
- - The background color is changed from bright pink and purple to solid black 
- - The focus indicator is slightly wider and brighter. It's bright teal color is very obvious against the new black background of the UI. 
- - The text within the tile options now have a solid black background behind them to increase readability
- - Content that typically animates or moves within the UI is now static or replaced by the black background
+ - The background color is changed from bright pink and purple to solid black.
+ - The focus indicator is slightly wider and brighter. The focus indicator's bright turquoise color has a high contrast ratio against the new black background UI elements sit on.
+ - The text within the tile options now have a solid black background behind them to increase readability.
+ - Content that typically animates or moves within the UI is now static or replaced by the black background.
 
 > [!NOTE]
 > The Xbox Platform's High Contrast settings are a platform-level feature. These settings do not alter the UI during in-game play.
@@ -64,9 +64,9 @@ Color filters are another assistive technology that may be provided at the platf
 
 ### Magnification tools
 
-Magnification tools typically enlarge a portion of the screen, or all of the screen so users can more easily see words and images. 
+Magnification tools typically enlarge a portion of the screen, or all of the screen, so users can more easily see words and images.
 
-In gaming contexts, magnification tools can allow players to zoom in on specific areas of their gameplay environment to get a clearer look at the contents on screen. 
+In gaming contexts, magnification tools can allow players to zoom in on specific areas of their gameplay environment to get a clearer look at the contents on screen.
 
 Magnification tools can help players with low vision enlarge screen elements to the point where they can be read or interpreted. Additionally, magnification tools can help players who are using small screens like mobile devices, or are playing on screens that are further away, making screen elements appear small.
 
