@@ -1,18 +1,14 @@
-The introductory scenario in this module describes a player who uses a software-based assistive technology. Assistive technologies can also In gaming, many players commonly use hardware-based AT devices as well. Examples of hardware-based assistive technologies include input devices like large mountable buttons, adaptive joysticks, and mouth operated controls.
+You're now familiar with some of the common software-based assistive technologies used by players. AT, however, also includes hardware and physical devices.
 
-This unit introduces common hardware assistive technologies used by players with disabilities. The unit describes how the use of these devices can impact the experiences of the players using them. These insights can help guide the approaches developers can take to support players who use these technologies.
+In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also discusses important considerations for developers regarding the impact of AT hardware use on player experiences. These insights can help guide the approaches developers can take to support players who use these technologies.
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
-Adaptive or accessible game input devices are intended to match the functionality of traditional input devices, but in a physical form factor that has been adapted to meet the needs of an individual player. Examples of assistive gaming input devices include the following:
+Many hardware AT devices may be referred to as "adaptive" input devices or  "adaptive controllers." In general, these devices provide players who have difficulty using standard input devices like commercial controllers, a mouse and keyboard, etc. with an accessible alternative.
 
- - Switch Buttons: These are buttons of diverse sizes that can be used in place of standard gaming input devices like the buttons on a standard controller or keys on a keyboard. Unlike standard input devices that are typically activated by the press of a player’s finger, switch buttons can be mounted anywhere. Switch buttons help enable players to activate buttons with their palms, elbows, knees, head, and other body parts.
- - Adaptive Joysticks: These are joysticks that vary in size, tension, and access options. These devices may be used by players with disabilities who have difficulty accessing the thumb sticks on a standard controller or difficulty using a mouse.
- - Adaptive and Custom Controllers: The Xbox Adaptive Controller functions as a “hub” for transmitting inputs from hardware, like switches or adaptive joysticks, to gaming platforms. Supported platforms include Xbox One and newer consoles, mobile devices running the latest iOS and Android  operating systems,   and PC platforms running Windows 10 or higher.
+In the following video, you'll learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, mouth-operated joysticks and more.
 
-The following video provides a discussion of these devices in greater detail and shows players using these devices in real gaming environments.
-
-## Hardware considerations for accessible game
+## Hardware considerations for accessible game development
 
 When supporting a player’s ability to use the assistive input device of their choice, considerations around compatibility and usability of these devices within the context of a specific game or platform should be assessed.
 You have been introduced to unique challenges that players who use these input devices may experience. Next, you will learn about approaches that can be taken by developers to support these players.
