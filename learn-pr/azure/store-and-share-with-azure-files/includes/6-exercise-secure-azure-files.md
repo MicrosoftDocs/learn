@@ -36,26 +36,24 @@ On your host machine, let's try to mount one of the network shares.
 
     :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot of the Azure portal showing the storage account.":::
 
-1. You should see **No access**.
+1. Select either **data** or **reports** file share. You should see **No access**.
 
     :::image type="content" source="../media/6-access-denied.png" alt-text="Screenshot showing access is denied to the share.":::
 
 1. In the Storage account menu, under **Security + networking**, select **Networking** to open the **Firewalls and virtual networks** pane.
 
-1. Select the **Add your client IP address** check box, and in the command bar, select **Save**.
+1. Select the **Add your client IP address** check box, and then, in the command bar, select **Save**.
 
-1. In the Storage Account menu, select **Overview**. The **Overview** pane for your storage account appears.
- 
-1. Under **Data storage**, select **File shares**.
+1. In the Storage Account menu, under **Data storage**, select **File shares**. The **File shares** pane appears
 
-1. Select the **data** file share. The **Data** file share pane appears. You can now browse the file share in your local browser.
+1. Select the **data** file share. The **Data** file share pane appears, listing the **test.upload.txt** file you created from your remote destop connection. You can now browse the file share in your local browser.
 
     > [!NOTE]
-    > You might need to select the **Reports** file share to browse because an error page could be cached for the **Data** file share.
+    > If you receive an error, you might need to select the **Reports** file share because your browser cached the error pagefor the **Data** file share.
+
+## ## Install AzCopy and generate files in the file share
 
 1. Download the zip file [AzCopy](https://aka.ms/downloadazcopy-v10-windows).
-
-1. Connect to your VM by using the RDP.
 
 1. Open the file share in the Azure portal.
 
@@ -63,7 +61,7 @@ On your host machine, let's try to mount one of the network shares.
 
 1. On the VM, drag the zip file to the desktop for easy use.
 
-1. On the menu, select **Compressed Folder Tools**, and then select **Extract all**.
+1. On the menu, select **Extract all**.
 
     :::image type="content" source="../media/6-unzip-azcopy.png" alt-text="Screenshot of expanding the AzCopy zip folder.":::
 
