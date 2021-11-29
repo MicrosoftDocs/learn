@@ -4,13 +4,13 @@ title: Use Windows Admin Center to review logs
 metadata:
   title: Use Windows Admin Center to review logs
   description: "Use Windows Admin Center to review logs"
-  ms.date: 11/26/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/3-use-windows-admin-center-to-review-logs.md)]

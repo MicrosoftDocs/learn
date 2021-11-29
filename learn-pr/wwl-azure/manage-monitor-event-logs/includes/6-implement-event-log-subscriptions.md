@@ -17,14 +17,14 @@ To enable subscriptions, perform the following tasks:
 
 1. On each source computer, run the following command at an elevated Command Prompt to enable WinRM:
 
-  - winrm quickconfig
+    - winrm quickconfig
 
-> [!TIP]
-> Windows Server computers are already enabled for Windows Remote Management, so this step might not be necessary.
+    > [!TIP]
+    > Windows Server computers are already enabled for Windows Remote Management, so this step might not be necessary.
 
 1. On the collector computer, enter the following command at an elevated Command Prompt to enable Wecsvc:
 
-  - wecutil qc
+    - wecutil qc
 
 1. Add the computer account of the collector computer to the local Event Log Readers group on each of the source computers.
 
