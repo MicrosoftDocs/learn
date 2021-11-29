@@ -71,7 +71,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     | Name | *\[your-automation-account-name\]* This value must be globally unique in Azure; we suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
     | Region | Accept default location |
 
-1. Select **Create**. Wait until the automation account is deployed.
+1. Select **Review + Create**, then select **Create**. Wait until the automation account is deployed.
 
 1. Select **Go to resource** when deployment completes. The **Automation Account** pane for your resource appears.
 
