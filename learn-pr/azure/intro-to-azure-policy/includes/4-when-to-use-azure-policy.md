@@ -1,5 +1,3 @@
-## When to use Azure Policy
-
 As mentioned, Azure Policy is a service that you use to create, assign, and manage policy definitions. In general, the policies will be to address **compliance**, **control**, or **scale** needs.
 
 Those policy definitions are mainly used to implementing governance for resource consistency, regulatory compliance, security, cost, and management. You can specify configuration requirements for any resources that are created and take one of these actions:
@@ -12,8 +10,8 @@ Example scenarios where you could use Azure Policy:
 
 * **Cost Control**
   * Restrict the SKU's of virtual machines allowed to be created
-  * Avoid use Azure regions where the cost of a resource is higher
-  * Restrict the usage of solutions from Azure Marketplace wich can increase your costs
+  * Avoid using Azure regions where the cost of a resource is higher
+  * Restrict the usage of solutions from Azure Marketplace which can increase your costs
   
 * **Security**
   * Enforce SSL connection to Azure MySQL database
@@ -22,7 +20,7 @@ Example scenarios where you could use Azure Policy:
   
 * **Monitoring**
   * Activity logs should be retained for at least one year
-  * Log Analyics Agent should be enabled for listed virtual machines images
+  * Log Analytics Agent should be enabled for listed virtual machines images
   * An activity log alert should exist for specific Security operations
   
 * **Backup**
@@ -55,7 +53,7 @@ The assessment is where you will have an overview about the status of your envir
 
 Before creating policies, which will make changes in your environment, make sure to test everything.
 
-Validate your policy syntax, the actions that will be taken and the scope in use (Management Groups, Subscriptions, and Resource Groups). Validate all policy inclusions, exclusions and exemptions.
+Validate your policy syntax, the actions that will be taken and the scope in use (Management Groups, Subscriptions, and Resource Groups). Validate all policy inclusions, exclusions, and exemptions.
 
 For the deployment initially, make sure you will be running your policy against a controlled environment or dedicated subscription. Be aware that Azure Policy assignments don’t come into effect immediately. There is a policy evaluation delay, which is around 30 minutes or so. Also, auditing your resources might take some time as the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
 
