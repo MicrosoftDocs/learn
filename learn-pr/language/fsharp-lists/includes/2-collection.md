@@ -52,7 +52,7 @@ In lists, elements must be of the same type, so the following declaration is not
 let cards = [ 1, "Ace", "King" ] // not permitted
 ```
 
-In this code, because the declaration mixes numbers and strings, it isn't permitted. Another way to create a list is to use a range operator (`..`). The idea is to specify the start and end elements, separated by a colon (`:`). Doing so creates all the numbers from start to end, including the in-between elements. For example, you can create the numbers `1 2 3 4 5` by using the following code:
+In this code, because the declaration mixes numbers and strings, it isn't permitted. Another way to create a list is to use a range operator (`..`). The idea is to specify the start and end elements, separated by a range operator (`..`). Doing so creates all the numbers from start to end, including the in-between elements. For example, you can create the numbers `1 2 3 4 5` by using the following code:
 
 ```fsharp
 let numbers = [ 1 .. 5 ]
