@@ -4,7 +4,7 @@ It means creating a new image for every change in your code and ensuring that al
 
 A large part of a container image is the base OS layer, which contains the operating system elements that aren't shared with the container host.
 
-:::image type="content" source="../media/2-6-4-image-layers-149ee7b7.png":::
+:::image type="content" source="../media/2-6-4-image-layers-149ee7b7.png" alt-text="Image layers are stacked atop each other in the following order from bottom to top Base OS layer, IIS Layer, ASP.NET Layer, and Your website layer.":::
 
 
 The base OS layer gets updated frequently. Other layers, such as the IIS layer and ASP.NET layer in the image, are also updated.
