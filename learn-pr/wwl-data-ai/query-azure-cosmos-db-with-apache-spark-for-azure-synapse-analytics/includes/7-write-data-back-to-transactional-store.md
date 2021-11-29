@@ -79,6 +79,6 @@ For our example, where we are wanting to write the limited number of statistic r
 
     [![Writing to the transactional store](../media/perform-query-in-transactional-store.png)](../media/perform-query-in-transactional-store.png#lightbox)
 
-    And should immediacy return a value of 273 as the result. 
+    And should immediately return a value of 273 as the result. 
 
     We have successfully updated the Azure Cosmos DB transactional store from Synapse Analytics with the results of our analytical processing done over data that was sourced from Azure Cosmos DB analytical store.
