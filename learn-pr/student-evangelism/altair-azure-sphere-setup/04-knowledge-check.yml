@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "What hardware is required to run the Altair 8800 emulator on Azure Sphere?"
+    choices:
+    - content: "A standalone Azure Sphere developer board from Avnet or Seeed Studio"
+      isCorrect: true
+      explanation: "This is correct. It's the minimum requirement. The MikroE 8800 Retro Click and the Altair front panel provide a more authentic Altair experience. You can do everything you want with a standalone Azure Sphere instance."
+    - content: "The MikroE 8800 Retro Click"
+      isCorrect: false
+      explanation: "The MikroE 8800 Retro Click is an easy way to mimic the Altair front panel and provide better visual clues about what Altair is doing. However, it's not a requirement. You can run the Altair emulator on a standalone Azure Sphere instance."
+    - content: "The Altair 8800 front panel"
+      isCorrect: false
+      explanation: "The Altair 8800 front panel provides an authentic Altair experience. The hardware design is provided, but you must be willing to build the front panel yourself. You can run the Altair emulator on a standalone Azure Sphere instance."
+  - content: "What software do you need to install on your computer?"
+    choices:
+    - content: "Visual Studio 2019"
+      isCorrect: false
+      explanation: "On Windows and Linux, you can use Visual Studio Code. On Windows, you can also use Visual Studio 2019."
+    - content: "Visual Studio Code, CMake, Ninja, and the Azure Sphere SDK"
+      isCorrect: true
+      explanation: "Correct. Windows users can also install Visual Studio 2019, which includes CMake and Ninja."
+    - content: "Windows 10, Linux, or macOS"
+      isCorrect: false
+      explanation: "Azure Sphere development is supported only on Windows 10 and Linux. "
+  

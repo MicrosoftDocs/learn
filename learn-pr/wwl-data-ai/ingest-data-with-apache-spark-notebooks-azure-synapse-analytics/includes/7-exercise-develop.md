@@ -45,3 +45,4 @@ In the following steps, you will explore these notebook development features:
 4. If you want to see details of the job execution, select the ">" icon.
 
     ![Collapse a cell input and output](../media/collapse-cell-input-and-output.png)
+

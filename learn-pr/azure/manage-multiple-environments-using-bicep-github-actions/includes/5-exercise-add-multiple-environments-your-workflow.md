@@ -51,7 +51,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-deploy.yml" range="16-43" :::
 
-   Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In previous the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
+   Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
@@ -88,13 +88,13 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    :::code language="yaml" source="code/5-workflow.yml" range="16-24" :::
 
-   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
+   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username, and the repository name if you didn't use *toy-website-environments*.
 
 1. Below the code you just added, add the following code to deploy to the production environment:
 
    :::code language="yaml" source="code/5-workflow.yml" range="26-34" :::
 
-   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username.
+   Remember to replace *YOUR_GITHUB_USERNAME* with your own GitHub username, and the repository name if you didn't use *toy-website-environments*.
 
    Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 

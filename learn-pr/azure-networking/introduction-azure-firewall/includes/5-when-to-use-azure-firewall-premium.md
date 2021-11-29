@@ -6,7 +6,7 @@ To help you decide if Azure Firewall Premium is right for your organization, con
 
 Azure Firewall Premium TLS Inspection can decrypt outbound traffic, processes the data, then encrypt the data and send it to the destination.
 
-Azure Firewall Premium terminates outbound and east-west TLS connections. Inbound TLS inspection is supported with [Azure Application Gateway](/azure/web-application-firewall/ag/ag-overview.md) allowing end-to-end encryption. Azure Firewall does the required value-added security functions and re-encrypts the traffic that is sent to the original destination.
+Azure Firewall Premium terminates outbound and east-west TLS connections. Inbound TLS inspection is supported with [Azure Application Gateway](/azure/web-application-firewall/ag/ag-overview) allowing end-to-end encryption. Azure Firewall does the required value-added security functions and re-encrypts the traffic that is sent to the original destination.
 
 ## You want to protect your network using signature-based malicious traffic detection
 
