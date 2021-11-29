@@ -22,7 +22,7 @@ Screen readers may also be used by those with cognitive or learning disabilities
 
 In gaming, screen readers should essentially convey what is happening within the game UI in a way that is at parity to the experience a sighted user would have.
 
-In the following video, this player adjusts their screen narration settings at the Xbox platform level. Next, they launch Forza Horizon 5 which launches with the game's screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game. 
+In the following video, this player adjusts their screen narration settings at the Xbox platform level. Next, they launch Forza Horizon 5 which launches with the game's screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game.
 
 > [!VIDEO ]
 
@@ -42,7 +42,7 @@ The following screenshots provide an example of the Xbox Platform's high contras
  
 :::image type="content" source="../media/hc-four.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. There is no longer a gradient color pattern of purples and pinks displayed behind the buttons; the background is simply black.":::
 
-Note the following changes that work to simplify and enhance the visibility of the UI elements: 
+Note the following changes that work to simplify and enhance the visibility of the UI elements:
 
  - The background color is changed from bright pink and purple to solid black 
  - The focus indicator is slightly wider and brighter. It's bright teal color is very obvious against the new black background of the UI. 
@@ -54,11 +54,13 @@ Note the following changes that work to simplify and enhance the visibility of t
 
 ### Color filters
 
-Color filters are typically settings or features that allow users to improve the visibility of elements on screen by applying. They are most commonly used by players with color blindness, and can help improve a player's ability to distinguish the difference between colors on screen. Color filters are another assistive technology that may be provided at the platform level for players. These filters may or may not work with specific applications or game titles on a platform depending on the technology and compatibility.
+Color filters are another tool that allows players to improve the visibility of elements on screen. Primarily used by players with colorblindness, these filters ultimately work to improve a player's ability to distinguish the difference between colors on screen.
 
-:::image type="content" source="../media/color-filters-one.png" alt-text="The Xbox Accessibility Color Filters settings screen is shown. The list box Correction type: No correction selected is shown and highlighted. To the right are three circles, each divided into three equal segments of different colors. The circles are labels “Deuteranopia, Protanopia, and Tritanopia respectively. Below the circles, a colorful image of an Xbox controller is displayed. Next to it is a grid of colors representing the colors of the rainbow, from red to purple. Text on the screen reads, Before selecting a correction, identify the circle whose three colors look most similar. Then choose the correction named for that circle.":::
+Color filters are another assistive technology that may be provided at the platform level for players. These filters may or may not work with specific applications or game titles on a platform depending on the technology and compatibility.
 
-:::image type="content" source="../media/color-filters-two.png" alt-text="The Xbox Accessibility Color Filters settings screen is shown. The list box Correction type: Red-green (protanopia) is shown. The slider, Intensity is shown and is set to the maximum value. Below it is a slider labeled, “Color boost” which is set roughly between the minimum and maximum values. Below that, is a “Restore defaults” button. To the right are three circles, each divided into three equal segments of different colors. The circles are labels Deuteranopia, Protanopia, and Tritanopia respectively. Below the circles, a colorful image of an Xbox controller is displayed. Next to it is a grid of colors representing the colors of the rainbow, from red to purple. Text on the screen reads, “Before selecting a correction, identify the circle whose three colors look most similar. Then choose the correction named for that circle.":::
+:::image type="content" source="../media/color-filters-one.png" alt-text="The Xbox Accessibility Color Filters settings screen is shown. The list box Correction type: No correction selected is shown and highlighted. To the right are three circles, each divided into three equal segments of different colors. The circles are labels Deuteranopia, Protanopia, and Tritanopia respectively. Below the circles, a colorful image of an Xbox controller is displayed. Next to it is a grid of colors representing the colors of the rainbow, from red to purple. Text on the screen reads, Before selecting a correction, identify the circle whose three colors look most similar. Then choose the correction named for that circle.":::
+
+:::image type="content" source="../media/color-filters-two.png" alt-text="The Xbox Accessibility Color Filters settings screen is shown. The list box Correction type: Red-green (protanopia) is shown. The slider, Intensity is shown and is set to the maximum value. Below it is a slider labeled, Color boost which is set roughly between the minimum and maximum values. Below that, is a Restore defaults button. To the right are three circles, each divided into three equal segments of different colors. The circles are labels Deuteranopia, Protanopia, and Tritanopia respectively. Below the circles, a colorful image of an Xbox controller is displayed. Next to it is a grid of colors representing the colors of the rainbow, from red to purple. Text on the screen reads, “Before selecting a correction, identify the circle whose three colors look most similar. Then choose the correction named for that circle.":::
 
 ### Magnification tools
 
