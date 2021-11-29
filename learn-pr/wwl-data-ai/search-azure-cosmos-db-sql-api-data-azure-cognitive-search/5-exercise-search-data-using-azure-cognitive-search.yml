@@ -4,12 +4,13 @@ title: 'Exercise: Search data using Azure Cognitive Search and Azure Cosmos DB S
 metadata:
   title: 'Exercise: Search data using Azure Cognitive Search and Azure Cosmos DB SQL API'
   description: "Exercise: Search data using Azure Cognitive Search and Azure Cosmos DB SQL API"
-  ms.date: 11/26/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labId: 107585
 labModal: true
 durationInMinutes: 15

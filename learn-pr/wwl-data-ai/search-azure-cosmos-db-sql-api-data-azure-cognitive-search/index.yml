@@ -3,10 +3,11 @@ uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
 metadata:
   title: Search Azure Cosmos DB SQL API data with Azure Cognitive Search
   description: "Index Azure Cosmos DB SQL API data with Azure Cognitive Search."
-  ms.date: 11/26/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Search Azure Cosmos DB SQL API data with Azure Cognitive Search
 summary: Index Azure Cosmos DB SQL API data with Azure Cognitive Search.
 abstract: |
