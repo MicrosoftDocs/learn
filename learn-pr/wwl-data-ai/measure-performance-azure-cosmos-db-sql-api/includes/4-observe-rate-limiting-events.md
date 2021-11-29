@@ -17,13 +17,13 @@ Out of the three reasons for this exception, this reason is the most common one.
 
 The first step to research a **429** exception, is that in the Azure portal under the Azure Cosmos DB account, under  **Insights->Request**, review the **Total Request by Status Code** charts for occurrences of the exception. Further filter the charts by *Time Range* and *Database* to your desired time span and database. For most applications, it's normal to have less than 5% of the request with 429 exceptions.
 
-:::image type="content" source="../media/4-monitoring-429-exception.png" alt-text="Diagram that shows the charts by Status code and Throttled Request (429 exceptions).":::
+:::image type="content" source="../media/4-monitor-429-exception.png" alt-text="Diagram that shows the charts by Status code and Throttled Request (429 exceptions).":::
 
 If the percentage of 429 exceptions is higher than 5%, it's possible that the exceptions are caused by a hot partition. 
 
 To verify if the database access is coming across a hot partition, in the Azure portal under the Azure Cosmos DB account, under  **Insights->Throughput**, review the **Normalized RU Consumption (%) By PartitionKeyRangeID** charts.
 
-:::image type="content" source="../media/4-monitoring-hot-partition.png" alt-text="Diagram that shows the charts by throughput of a hot partition.":::
+:::image type="content" source="../media/4-monitor-hot-partition.png" alt-text="Diagram that shows the charts by throughput of a hot partition.":::
 
 ## Rate limiting on metadata requests
 
@@ -35,7 +35,7 @@ A 429 exception can occur when doing a high volume of the following metadata ope
 
 To investigate if 429 exceptions are caused by Metadata requests,  in the Azure portal under the Azure Cosmos DB account, under **Insights->System**, review the **Metadata Requests That Exceeded Capacity (429s)** charts.
 
-:::image type="content" source="../media/4-monitoring-metadata.png" alt-text="Diagram that shows the charts for metadata access.":::
+:::image type="content" source="../media/4-monitor-metadata.png" alt-text="Diagram that shows the charts for metadata access.":::
 
 ## Rate limiting due to transient service error
 

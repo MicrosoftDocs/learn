@@ -7,7 +7,7 @@ Cosmos DB monitors its server-side counters using:
 - **The Azure Cosmos DB portal:** The throughput, storage availability, latency, consistency, and system level metrics can be found under the **Metrics** tab of the Azure Cosmos DB account.  The default retention period for these metrics is seven days.
 - **The Cosmos DB SQL API SDKs to programmatically monitor the account:** Use the .NET, Java, Python, Node.js SDKs, and the headers in REST API to programmatically monitor a Cosmos DB account.
 
-:::image type="content" source="../media/2-monitoring-cosmos-db.png" alt-text="Diagram that shows the options available to monitor Azure Cosmos DB.":::
+:::image type="content" source="../media/2-monitor-cosmos-db.png" alt-text="Diagram that shows the options available to monitor Azure Cosmos DB.":::
 
 In this module, the lesson will be limited to how Cosmos DB applies its monitoring using the Azure Monitor.  Azure Monitor for Cosmos DB can be used to:
 

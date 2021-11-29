@@ -10,7 +10,7 @@ There are multiple ways to create the diagnostics settings, the Azure portal, vi
 
 To create the diagnostics settings using the Azure portal, navigate to the Azure Cosmos DB account, and under the `Montoring` section, choose **Diagnostic settings**.  Either edit an existing diagnostic setting or choose **+ Add diagnostic setting** and choose the logs you wish to collect and the destinations to forward these logs to.
 
-:::image type="content" source="../media/5-monitoring-diagnostics-settings.png" alt-text="Diagram that shows the diagnostics settings options for Azure Cosmos DB.":::
+:::image type="content" source="../media/5-monitor-diagnostics-settings.png" alt-text="Diagram that shows the diagnostics settings options for Azure Cosmos DB.":::
 
 The SQL API log tables are:
 - `DataPlaneRequests` - This table logs back-end requests for operations that execute create, update, delete, or retrieve data.
