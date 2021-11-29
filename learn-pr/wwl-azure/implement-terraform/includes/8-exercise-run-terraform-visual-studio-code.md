@@ -237,7 +237,7 @@ os_profile_linux_config {
 
 ```
 
-    You'd also need to remove the password value in the **os\_profile module** that present in the example above.
+You'd also need to remove the password value in the **os\_profile module** that present in the example above.
 
 > [!NOTE]
 > You could also embed the Azure authentication within the script. In that case, you would not need to install the Azure account extension, as in the following example:

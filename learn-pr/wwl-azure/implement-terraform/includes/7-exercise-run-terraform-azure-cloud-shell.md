@@ -84,7 +84,7 @@ The following steps outline how to create a resource group in Azure using Terraf
     :::image type="content" source="../media/terraform-bash-azure-shell-6c4ba5f6.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply":::
     
 
-11. .Enter a value of **yes**, and then select Enter. The command should run successfully, with an output similar to the following screenshot.
+11. Enter a value of **yes**, and then select Enter. The command should run successfully, with an output similar to the following screenshot.
     
     :::image type="content" source="../media/terraform-bash-output-command-92102cb0.png" alt-text="Screenshot of a Bash shell in Azure Cloud Shell with output from the command terraform apply. The option yes to accept changes is highlighted":::
     
