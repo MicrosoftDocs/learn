@@ -1,4 +1,4 @@
-You might find yourself in a situation where you have more than one of a certain type of data. You could create a variable for each piece of data, or you could group it all into a collection. Grouping the data gives you certain advantages, such as the ability to carry out methods not only on individual pieces of data but also on the collection as a whole.
+You might find yourself in a situation where you have more than one of a certain type of data. You could create a variable for each piece of data, or you could group it all into a collection. Grouping the data gives you advantages such as the ability to carry out methods not only on individual pieces of data, but on the collection as a whole.
 
 ## Collections
 
@@ -28,7 +28,7 @@ So what can F# offer you? For starters, it gives you three types of collections,
 
 ## Lists
 
-As we've just mentioned, a list is an ordered, immutable set of elements. Here are some ways to create a list:
+As we've mentioned, a list is an ordered, immutable set of elements. Here are some ways to create a list:
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
@@ -92,7 +92,7 @@ let fullList = cards |> List.append otherCardList // "Ace", "King", "Queen", "Ja
 
 ## Properties
 
-Lists in F# are implemented as linked lists. That is, a list is a structure in which each element is connected to another element. Additional terms to learn are *head*, which is the first element in the list, and *tail*, which includes the elements that aren't in the head. For example, in list `1 2 3 4`, the head would be `1` and the tail would be `2 3 4`.
+Lists in F# are implemented as linked lists. That is, a list is a structure in which each element is connected to another element. More terms to learn are *head*, which is the first element in the list, and *tail*, which includes the elements that aren't in the head. For example, in list `1 2 3 4`, the head would be `1` and the tail would be `2 3 4`.
 
 By separating the elements in this way, you can quickly access the first element so that you can read, remove, or perform other actions on it. To access any specific item in the list, you can use an `Item` property, which takes a 0-based index, as shown here:
 
