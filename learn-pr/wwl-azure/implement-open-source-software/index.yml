@@ -16,8 +16,10 @@ abstract: |
   - Explain corporate concerns for open-source components
   - Describe open-source licenses
   - Understand the license implications and ratings
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
 - advanced
 roles:
