@@ -19,7 +19,7 @@ To view the **Total Request Units** metric, under Azure Monitor's Metrics
 1. Under Metrics, select **Total Request Units** and the type of aggregation you need.
 1. If needed, refine the **Time range** and **Time granularity** of the metric.
 
-:::image type="content" source="../media/3-monitor-total-request-units.png" alt-text="Diagram that shows the options to monitor Total Request Units in Azure Cosmos DB.":::
+:::image type="content" source="../media/3-monitor-total-request-units.png" alt-text="Diagram that shows the options to monitor Total Request Units in Azure Cosmos DB." lightbox="../media/3-monitor-total-request-units.png":::
 
 ## Filter the Total Request Units further
 
@@ -27,4 +27,4 @@ By default, Azure Monitor will display the overall throughput of all Azure Cosmo
 
 Azure Monitor allows us to filter further by specific **CollectionName**, **DatabaseName**, **OperationType**, **Region**, **Status**, and **StatusCode**.  For example, we could add a filter by operation type to see the usage of our different Azure Cosmos DB operations.
 
-:::image type="content" source="../media/3-monitor-total-request-units-filter.png" alt-text="Diagram that shows the options to filter the monitoring of Total Request Units in Azure Cosmos DB.":::
+:::image type="content" source="../media/3-monitor-total-request-units-filter.png" alt-text="Diagram that shows the options to filter the monitoring of Total Request Units in Azure Cosmos DB." lightbox="../media/3-monitor-total-request-units-filter.png":::
