@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-premises-hybrid-networking
 metadata:
   title: Troubleshoot on-premises and hybrid networking
   description: "Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment."
-  ms.date: 11/26/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
