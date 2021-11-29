@@ -9684,6 +9684,11 @@
       "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/7-describe-different-pricing-tiers.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/path/sample-module/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/execute-queries-azure-cosmos-db-sql-api/",
+      "redirect_document_id": true
     }
   ]
 }

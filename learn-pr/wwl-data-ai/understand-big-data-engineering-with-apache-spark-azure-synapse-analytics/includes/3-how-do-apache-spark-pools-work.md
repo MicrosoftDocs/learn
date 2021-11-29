@@ -40,3 +40,4 @@ The processes are managed automatically when you create an Apache Spark pool in 
 
 8. Once you've finished setting up the parameters, you can select **Review + create** and the Spark pool will be created. 
 
+
