@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-gaming-accessibility
 durationInMinutes: 11
 content: |
-  [!include[](includes/01-gaming-hardware.md)]
+  [!include[](includes/02-gaming-hardware.md)]
 quiz:
   title: Check your knowledge
   questions:
