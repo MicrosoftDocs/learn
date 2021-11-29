@@ -65,8 +65,6 @@ The planning stage of a data platform modernization project is used to determine
         - DQS
         - MDS
         - Database Mail
-        - Filestream
-        - Filetable
         - Polybase
         - Support for Linked Servers
         - Supports new Azure cloud services such as Threat Detection
