@@ -12,8 +12,8 @@ Private feeds can be accessed only when authenticated.
 
 There are two options for private feeds:
 
-1.  **Self-hosting** Some of the package managers are also able to host a feed. Using on-premises or private cloud resources, one can host the required solution to offer a private feed.
-2.  **SaaS services** A variety of third-party vendors and cloud providers offer software-as-a-service feeds that can be kept private. It typically requires a consumption fee or a cloud subscription.
+ -  **Self-hosting** Some of the package managers are also able to host a feed. Using on-premises or private cloud resources, one can host the required solution to offer a private feed.
+ -  **SaaS services** A variety of third-party vendors and cloud providers offer software-as-a-service feeds that can be kept private. It typically requires a consumption fee or a cloud subscription.
 
 The following table contains a non-exhaustive list of self-hosting options and SaaS offerings to host package privately feeds for each type covered.
 
