@@ -95,4 +95,4 @@ Infrastructure as Code is a fundamental part of Continuous Delivery and gives yo
  -  [Azure Functions](https://azure.microsoft.com/services/functions).
  -  [Chef](https://www.chef.io/chef/).
  -  [Puppet](https://puppet.com/).
- -  [Azure Resource Manager /ARM](/azure/azure-resource-manager/resource-group-overview).
+ -  [Azure Resource Manager ](/azure/azure-resource-manager/resource-group-overview).

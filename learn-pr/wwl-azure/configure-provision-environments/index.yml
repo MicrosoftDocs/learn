@@ -3,7 +3,7 @@ uid: learn.wwl.configure-provision-environments
 metadata:
   title: Configure and provision environments
   description: "Configure and provision environments"
-  ms.date: 11/25/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -11,11 +11,11 @@ metadata:
 title: Configure and provision environments
 summary: This module details target environment provisioning, service connections creation process, and test infrastructure setup. You will learn how to configure functional test automation and run availability tests.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Provision and configure target environment
-  - Deploy to an environment securely using a service connection
-  - Configure functional test automation and run availability tests
-  - Setup test infrastructure&quot;
+  By the end of this module, you'll be able to:
+  *   Provision and configure target environment
+  *   Deploy to an environment securely using a service connection
+  *   Configure functional test automation and run availability tests
+  *   Setup test infrastructure
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true

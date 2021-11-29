@@ -1,7 +1,7 @@
 In this exercise, you'll investigate Service Connections.
 
 > [!NOTE]
-> *Before starting this exercise, ensure you've done the steps in the prerequisites section and the previous exercises.*
+> Before starting this exercise, ensure you've done the steps in the prerequisites section and the previous exercises.
 
 *To follow along with this walkthrough, you'll need to have an existing Azure subscription that contains an existing storage account.*
 
@@ -19,19 +19,19 @@ For example, you might need to get your source code from GitHub. In this case, l
 
 
 2.  In the Project Settings pane, from the **Pipelines** section, click **Service connections**. Click the drop-down beside **+New service connection**.
-
-    :::image type="content" source="../media/06-02-new-service-connection-969bcb85.png" alt-text="New service connection.":::
-
-
-    As you can see, there are many types of service connections. You can create a connection to:
-
- -  Apple App Store.
     
-     -  Docker Registry.
+    :::image type="content" source="../media/06-02-new-service-connection-969bcb85.png" alt-text="New service connection.":::
+    
+    
+    As you can see, there are many types of service connections. You can create a connection to:
+    
+     -  Apple App Store.
         
-         -  Bitbucket.
-         -  Azure Service bus.
-
+         -  Docker Registry
+            
+             -  Bitbucket.
+             -  Azure Service bus.
+    
     In this case, we want to deploy a new Azure resource, so we'll use the Azure Resource Manager option.
 
 3.  Click **Azure Resource Manager** to add a new service connection.
@@ -40,15 +40,15 @@ For example, you might need to get your source code from GitHub. In this case, l
 
 
 4.  Set the **Connection name** to **Azure Resource Manager Service Connection**, click on an Azure **Subscription**, then select an existing **Resource Group**.
-
-> [!NOTE]
-> *You might be prompted to log on to Azure at this point. If so, log on first.*
-
+    
+    > [!NOTE]
+    > You might be prompted to log on to Azure at this point. If so, log on first.
+    
     :::image type="content" source="../media/new-resource-manager-service-connection-1ccdc94a.png" alt-text="New Azure Resource Manager Service Connection.":::
-
-
+    
+    
     Notice that what we are creating is a **Service Principal**. We'll be using the Service Principal for authenticating to Azure. At the top of the window, there's also an option to set up Managed Identity Authentication instead.
-
+    
     The Service Principal is a service account that only has permissions in the specific subscription and resource group. It makes it a safe way to connect from the pipeline.
 
 5.  Click **OK** to create it. It will then be shown in the list.
@@ -106,12 +106,14 @@ For example, you might need to get your source code from GitHub. In this case, l
 
 
 14. To test the task, click **Create release**, and in the **Create a new release** pane, click **Create**.
+
 15. Click the new release to view the details.
 
     :::image type="content" source="../media/06-15-release-3-5b130d9f.png" alt-text="Release to all environments.":::
 
 
 16. On the release page, approve the release so that it can continue.
+
 17. Once the **Development** stage has been completed, you should see the file in the Azure storage account.
 
     :::image type="content" source="../media/06-16-file-in-storage-db606dd6.png" alt-text="File in storage.":::
