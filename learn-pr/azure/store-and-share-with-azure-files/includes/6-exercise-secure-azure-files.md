@@ -6,7 +6,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Enable secure file transfer
 
-1. In the Azure portal that you have open from the previous exercise, select the storage account named **learnazurefileshare** followed by random numbers.
+1. In the Azure portal, select the storage account you previously created, **learnazurefileshare*NNNN*** where *NNNN* represents random numbers.
 
 1. In the Storage account menu, under **Settings**, select **Configuration**. The **Configuration** pane for your storage account appears.
 
@@ -65,7 +65,7 @@ On your host machine, let's try to mount one of the network shares.
 
 1. On the menu, select **Compressed Folder Tools**, and then select **Extract all**.
 
-    ![Screenshot of expanding the AzCopy zip folder.](../media/6-unzip-azcopy.png)
+    :::image type="content" source="../media/6-unzip-azcopy.png" alt-text="Screenshot of expanding the AzCopy zip folder.":::
 
 1. Select **Start**, then select the **Windows PowerShell folder**, and then select **Windows PowerShell**.
 
@@ -89,10 +89,10 @@ On your host machine, let's try to mount one of the network shares.
 1. Create some local example test files using PowerShell.
 
     ```powershell
-    1..100 | % { New-Item -Path F:\ -Name "$_.txt" -Value (Get-Date).toString() -ItemType file}
+    1..100 | % { New-Item -Path D:\ -Name "$_.txt" -Value (Get-Date).toString() -ItemType file}
     ```
 
-1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
+1. In the Azure portal, select your storage account, **learnazurefileshare*NNNN***.
 
 1. In the Storage account menu, under **Security + networking**, select **Shared access signature**.
 
@@ -104,7 +104,7 @@ On your host machine, let's try to mount one of the network shares.
 
 1. Copy the **File service SAS URL**.
 
-1. Paste the connection string into Notepad, and add a path to the data share. Change the string by adding `data/` to the path. For example, update from:
+1. Paste the connection string into Notepad, and add a path to the data share. Do this by appending `data/` to the path. For example, update from:
 
     `https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
 
@@ -112,7 +112,7 @@ On your host machine, let's try to mount one of the network shares.
 
     `https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
 
-1. Replace the connection string with your own updated SAS connection string in the following AzCopy command, and then press <kbd>Enter</kbd>.
+1. Replace the connection string in the following AzCopy command with your own updated SAS connection string, paste this into Cloud Shell, and then press <kbd>Enter</kbd>.
 
     ```powershell
     .\azcopy copy "D:\*.txt" "https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D" --recursive=true
@@ -137,11 +137,11 @@ On your host machine, let's try to mount one of the network shares.
     Number of Transfers Skipped: 0
     TotalBytesTransferred: 21650
     Final Job Status: Completed
-    ``` -->
+    ```
 
 ## Create a share snapshot
 
-1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
+1. In the Azure portal, select your storage account, **learnazurefileshare*NNNN***.
 
 1. In the Storage account menu, under **Data storage**, select **File shares**. The **File shares** pane for your storage account appears.
 
@@ -151,12 +151,12 @@ On your host machine, let's try to mount one of the network shares.
 
 1. Select **Add snapshot**, and then select **OK**.
 
-1. Return to your VM, and open **File Explorer**.
+1. In your VM, open **File Explorer**.
 
 1. Browse to the data share mounted on the **F** drive, right-click any of the text files, and select **Properties**.
 
 1. In the File properties dialog box, select **Previous Versions**, and note the listed snapshots created on the file share.
 
-    ![Screenshot of the file properties dialog box showing previous versions tab.](../media/6-previous-versions.png)
+    :::image type="content" source="../media/6-previous-versions.png" alt-text="Screenshot of the file properties dialog box showing previous versions tab.":::
 
 1. From here, you can select a snapshot and then select **Open** to open the previous version to browse the files at that snapshot. Otherwise, you can select **Restore** to restore files for the selected snapshot.
