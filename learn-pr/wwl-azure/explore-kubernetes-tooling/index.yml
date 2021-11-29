@@ -3,7 +3,7 @@ uid: learn.wwl.explore-kubernetes-tooling
 metadata:
   title: Explore Kubernetes tooling
   description: "Explore Kubernetes tooling"
-  ms.date: 11/26/2021
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -12,9 +12,10 @@ title: Explore Kubernetes tooling
 summary: This module describes Kubernetes tools such as Helm, kubectl, and the extension for Visual Studio Code.
 abstract: |
   By the end of this module, you'll be able to:
-  *   Work with kubectl - Work with Helm
-  *   Install Kubernetes extension for Visual Studio Code
-  *   Explain Kubernetes tooling
+  * Work with kubectl
+  * Work with Helm
+  * Install Kubernetes extension for Visual Studio Code
+  * Explain Kubernetes tooling
 prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
