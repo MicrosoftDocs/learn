@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labModal: false
+labId: 107593
+labModal: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-azure-monitor-to-analyze-account.md)]
