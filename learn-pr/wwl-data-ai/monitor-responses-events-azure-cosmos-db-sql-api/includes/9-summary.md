@@ -19,7 +19,7 @@ For more information about the topics discussed in this module, see:
 - [Get a Document][/rest/api/cosmos-db/get-a-document]
 - [Replace a Document][/rest/api/cosmos-db/replace-a-document]
 - [Patch Document][/rest/api/cosmos-db/patch-a-document]
-- [Patch Document][/rest/api/cosmos-db/delete-a-document]
+- [Delete Document][/rest/api/cosmos-db/delete-a-document]
 - [Query Documents][/rest/api/cosmos-db/query-documents]
 - [HTTP Status Codes for Azure Cosmos DB][/rest/api/cosmos-db/http-status-codes-for-cosmosdb]
 - [Diagnose and troubleshoot Azure Cosmos DB service unavailable exceptions][/azure/cosmos-db/sql/troubleshoot-service-unavailable]
@@ -40,9 +40,9 @@ For more information about the topics discussed in this module, see:
 [/rest/api/cosmos-db/patch-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/patch-a-document
 [/rest/api/cosmos-db/delete-a-document]: https://docs.microsoft.com/rest/api/cosmos-db/delete-a-document
 [/rest/api/cosmos-db/query-documents]: https://docs.microsoft.com/rest/api/cosmos-db/query-documents
-[/rest/api/cosmos-db/http-status-codes-for-cosmosdb]: https://docs.microsoft.com/rest/api/http-status-codes-for-cosmosdb
+[/rest/api/cosmos-db/http-status-codes-for-cosmosdb]: https://docs.microsoft.com/rest/api/cosmos-db/http-status-codes-for-cosmosdb
 [/azure/cosmos-db/sql/troubleshoot-service-unavailable]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-service-unavailable
-[/azure/cosmos-db/sql/sql-sdk-connection-modes]: https://docs.microsoft.com/azure/cosmos-db/sql/azure/cosmos-db/sql/sql-sdk-connection-modes
+[/azure/cosmos-db/sql/sql-sdk-connection-modes]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-sdk-connection-modes
 [/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout
 [/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-request-rate-too-large
 [/azure/cosmos-db/create-alerts]: https://docs.microsoft.com/azure/cosmos-db/create-alerts

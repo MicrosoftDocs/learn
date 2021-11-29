@@ -1,4 +1,4 @@
-Request return status code **429** for the exception **request rate too large** status code. This status code indicates that your requests against Azure Cosmos DB are being rate limited.
+Request return status code **429** for the exception **request rate too large** status code. This status code indicates that your requests against Azure Cosmos DB are being rate-limited.
 
 When provisioned throughput is used, the request units per second (RU/s) is set for the workload.  Operations (read, writes, queries) against the service consume request units(RUs). If, in any given second, the operations consume more RUs than the provisioned RU/s, Azure Cosmos DB will return a 429 exception. Let's review the three different reasons why this exception is encountered.
 
@@ -31,7 +31,7 @@ Some possible solutions to this type of 429 exceptions:
 - If the exceptions aren't caused by a hot partition, increasing the RU/s on the container might be the solution.
 - If the exceptions occur on query document requests, troubleshoot the queries with high RU charge.
 
-## Rate limiting on metadata requests
+## Rate-limiting on metadata requests
 
 A high volume of metadata operations can cause 429 exceptions. Metadata operations are those operations who list, create, modify, or delete database or containers. They could also be operations like querying the current provisioned throughput.
 
@@ -44,7 +44,7 @@ Possible solutions for 429 exceptions caused by metadata request:
 - Use a single DocumentClient instance for the lifetime of your application
 -  Cache the names of the databases and containers.
 
-## Rate limiting due to transient service error
+## Rate-limiting due to transient service error
 
 If this type of request causes 429 exceptions, increasing the provisioned RU/s isn't recommended. Just increasing the provisioned RU/s won't have any impact on the occurrence of the exceptions. Retrying the request is the only recommended solution, if the exception persists, open a support ticket from the Azure portal. Transient service errors might also be reported around the same time you're getting 429 errors.
 
