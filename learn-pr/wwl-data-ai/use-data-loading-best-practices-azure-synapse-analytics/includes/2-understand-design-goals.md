@@ -7,7 +7,7 @@ Loading data is essential because of the need to query or analyze the data to ga
 Some of the questions that need to be asked when considering data loading include:
 
 -	Where is my data coming from?
--	Is the data net new? or do you receive changes from existing datasets?
+-	Is the data set new? or do you receive changes from existing datasets?
 -	How often is the data being refreshed, added to or replaced?
 -	What formats are the data coming in?
 -	Is the data ingestible as-is? or are transformations and cleansing tasks required?
