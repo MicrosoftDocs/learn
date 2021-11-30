@@ -717,3 +717,8 @@ achievements:
   title: Explore data storage and processing in Azure
   summary: Explore data storage and processing in Azure
   iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg
+- uid: learn-wwl.azure-iot-strategy-and-solutions.badge
+  type: badge
+  title: Microsoft Azure IoT strategy and solutions
+  summary: Microsoft Azure IoT strategy and solutions
+  iconUrl: /learn/achievements/azure-iot-strategy-and-solutions.svg
