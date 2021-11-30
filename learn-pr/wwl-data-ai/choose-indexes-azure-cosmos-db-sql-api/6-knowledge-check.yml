@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 11/30/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "Your team has written a SQL query for Azure Cosmos DB SQL API with the following text: ``SELECT * FROM c WHERE c.sku = 'RD3387G'``. Which lookup method will the query engine use for the **sku** filter?"
     choices:
-    - content: "Full scan"
+    - content: "``Full scan``"
       isCorrect: false
       explanation: "That's incorrect. The query uses an equality filter that can be evaluated using the inverted tree."
-    - content: "Index scan"
+    - content: "``Index scan``."
       isCorrect: false
       explanation: "That's incorrect. The query uses an equality filter that can be evaluated directly with a seek instead of a scan within the inverted tree."
-    - content: "Index seek"
+    - content: "``Index seek``."
       isCorrect: true
       explanation: "That's correct. The equality filter allows the query engine to perform a seek of a specific value."
   - content: "Which property of an indexing policy should you set to disable all indexing for a container?"
@@ -35,4 +35,4 @@ quiz:
       explanation: "That's incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
     - content: "``automatic``"
       isCorrect: false
-      explanation: "That's incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` does not disable all indexing for the container."
+      explanation: "That's incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."

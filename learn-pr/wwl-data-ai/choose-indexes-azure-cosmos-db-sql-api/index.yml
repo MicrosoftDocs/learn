@@ -3,7 +3,7 @@ uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api
 metadata:
   title: Customize an indexing policy in Azure Cosmos DB SQL API
   description: "Tune the indexing policy based on your SQL queries in Azure Cosmos DB SQL API."
-  ms.date: 11/29/2021
+  ms.date: 11/30/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
