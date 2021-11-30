@@ -57,9 +57,9 @@ Suppose you have ever worked on a large monolithic codebase. In that case, it's 
 
 There are several things that a team can do to optimize the inner loop for larger codebases:
 
-1.  Only build and test what was changed.
-2.  Cache intermediate build results to speed up to complete builds.
-3.  Break up the codebase into small units and share binaries.
+ -  Only build and test what was changed.
+ -  Cache intermediate build results to speed up to complete builds.
+ -  Break up the codebase into small units and share binaries.
 
 How you tackle each one of those is probably a blog post.
 

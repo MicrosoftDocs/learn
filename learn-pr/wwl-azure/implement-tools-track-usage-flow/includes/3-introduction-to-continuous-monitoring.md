@@ -76,7 +76,7 @@ A critical aspect of monitoring is proactively notifying administrators of any c
  -  Remediate situations identified in alerts with [Azure Automation runbooks](/azure/automation/automation-webhooks) or [Logic Apps](/connectors/custom-connectors/create-webhook-trigger) that can be launched from an alert using webhooks.
  -  Use [autoscaling](/azure/azure-monitor/learn/tutorial-autoscale-performance-schedule) to dynamically increase and decrease your compute resources based on collected metrics.
 
-## Prepare dashboards and workbooks.
+## Prepare dashboards and workbooks
 
 Ensuring that your development and operations have access to the same telemetry and tools allows them to view patterns across your entire environment and minimize your Mean Time To Detect (MTTD) and Mean Time To Restore (MTTR).
 
