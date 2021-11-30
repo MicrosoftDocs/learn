@@ -25,7 +25,7 @@ summary: |
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
-iconUrl: /learn/achievements/bicep/bicep-advanced.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - advanced
 roles:
