@@ -40,7 +40,7 @@ Each region has unique weather patterns, so now you want to know which events in
 
 ## Use the `top` operator
 
-Instead of sorting and scanning the top for a certain number of results, you can use the `top` operator to show a specific number of top results.
+Instead of sorting and scanning the top for a certain number of results, you can use the `top` operator to show the a specific number of top results. In fact, the `top` operator is more performant, so it's the preferred choice when you just want a certain number of top results.
 
 1. Run the following query:
     
