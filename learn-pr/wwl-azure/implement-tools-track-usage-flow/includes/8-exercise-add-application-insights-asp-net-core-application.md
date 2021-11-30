@@ -18,7 +18,7 @@ In this tutorial, we'll learn how to get started with App Insights. We'll cover,
 
 2.  In Visual Studio, create a new dotnet core project. Right-click the project, and from the context menu, select `Add, Application Insights Telemetry.`
     
-    :::image type="content" source="../media/visual-studio-insights-f77cece7.png" alt-text="Visual Studio":::
+    :::image type="content" source="../media/visual-studio-insights-f77cece7.png" alt-text="Visual Studio create a new project.":::
     
 
     (Depending on your Application Insights SDK version, you may be prompted to upgrade to the latest SDK release. If prompted, select Update SDK.)
@@ -42,7 +42,7 @@ The instrumentation key for the app insights instance is injected into the appli
 
 1.  Run your app with F5. Open different pages to generate some telemetry. In Visual Studio, you'll see a count of the events that have been logged.
 
-    :::image type="content" source="../media/visual-studio-run-9b547c67.png" alt-text="Visual Studio":::
+    :::image type="content" source="../media/visual-studio-run-9b547c67.png" alt-text="Visual Studio run your app.":::
 
 
 2.  You can see your telemetry either in Visual Studio or in the Application Insights web portal. Search telemetry in Visual Studio to help you debug your app. Monitor performance and usage in the web portal when your system is live. In Visual Studio, to view Application Insights data. Select Solution Explorer &gt; Connected Services &gt; right-click Application Insights, and then click Search-Live Telemetry.

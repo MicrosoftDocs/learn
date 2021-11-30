@@ -21,7 +21,7 @@ In this tutorial, we'll focus on the Log Analytics part of Azure Monitor. We'll 
 ## Getting started
 
 1.  To follow along, you'll need a resource group with one or more virtual machines that you have RDP access to.
-2.  Log into [Azure Shell](http://shell.azure.com/powershell). Executing the command below will create a new resource group and create a new log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
+2.  Log into [Azure Shell](https://shell.azure.com/powershell). Executing the command below will create a new resource group and create a new log analytics workspace. Take a record of the workspaceid of the log analytics workspace as we'll be using it again.
     
     ```powershell
     $ResourceGroup = "azwe-rg-devtest-logs-001"
