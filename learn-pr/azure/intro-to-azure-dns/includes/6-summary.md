@@ -10,4 +10,4 @@ In this module you learned about Azure DNS, a cloud hosted service that allows y
 
 * [Host your domain on Azure DNS.] (/learn/modules/host-domain-azure-dns/)
 
-* [Configure Azure DNS.](learn/modules/configure-azure-dns/)
+* [Configure Azure DNS.](/learn/modules/configure-azure-dns/)

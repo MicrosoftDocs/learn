@@ -24,6 +24,4 @@ Azure DNS private zones support the following features:
 
 A diagram shows the integration of the Azure DNS public zone tailwindtraders.com with the Azure DNS private zone tailwindtraders.com in split-horizon configuration.
 
-![](../media/image1.png)
-
 :::image type="content" source="../media/dns.png" alt-text="Depiction of on-prem D N S server communicating with DNS resolver V M in Azure D N S Private Zone.":::

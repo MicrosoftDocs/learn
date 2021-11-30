@@ -24,7 +24,6 @@ roles:
 - developer
 products:
 - azure
-- dns
 units:
 - learn.introduction-to-azure-dns.introduction
 - learn.introduction-to-azure-dns.what-is-azure-dns
