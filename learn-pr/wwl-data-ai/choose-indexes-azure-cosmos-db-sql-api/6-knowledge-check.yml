@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
@@ -19,21 +18,21 @@ quiz:
     choices:
     - content: "``Full scan``"
       isCorrect: false
-      explanation: "That's incorrect. The query uses an equality filter that can be evaluated using the inverted tree."
+      explanation: "Incorrect. The query uses an equality filter that can be evaluated using the inverted tree."
     - content: "``Index scan``."
       isCorrect: false
-      explanation: "That's incorrect. The query uses an equality filter that can be evaluated directly with a seek instead of a scan within the inverted tree."
+      explanation: "Incorrect. The query uses an equality filter that can be evaluated directly with a seek instead of a scan within the inverted tree."
     - content: "``Index seek``."
       isCorrect: true
-      explanation: "That's correct. The equality filter allows the query engine to perform a seek of a specific value."
+      explanation: "Correct. The equality filter allows the query engine to perform a seek of a specific value."
   - content: "Which property of an indexing policy should you set to disable all indexing for a container?"
     choices:
     - content: "``indexingMode``"
       isCorrect: true
-      explanation: "That's correct. Setting the ``indexingMode`` property to ``none`` disables all indexing."
+      explanation: "Correct. Setting the ``indexingMode`` property to ``none`` disables all indexing."
     - content: "``excludedPaths``"
       isCorrect: false
-      explanation: "That's incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
+      explanation: "Incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
     - content: "``automatic``"
       isCorrect: false
-      explanation: "That's incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."
+      explanation: "Incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."
