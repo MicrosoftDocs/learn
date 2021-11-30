@@ -13,9 +13,9 @@ title: gain insights with kql
 summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Learn how to use the aggregation operators `count`, `dcount`, `countif`, `sum`, `min`,`max`, `avg`, `percentiles`, and others. Communicate these results visually in charts. r"
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+    - Use the Kusto Query Language to gain insights from your data by using the aggregation operators  `count`, `dcount`, `countif`, `sum`, `min`,`max`, `avg`, `percentiles`, and others.
+    - Communicate query results visually using the `render` operator.
+    - Assign variables by using a `let` statement.
 prerequisites: |
   - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/).
   - Familiarity with database structures like tables, columns, and rows
@@ -28,7 +28,7 @@ roles:
   - data-analyst
   - data-scientist
   - developer
-  - security operations analyst
+  - security-operations-analyst
 products: 
 - azure-data-explorer
 units:
