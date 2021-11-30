@@ -42,7 +42,7 @@ quiz:
 
   - content: "Which Azure service detects anomalies in account activities and notifies you of potential harmful attempts to access your account?"
     choices: 
-    - content: "Microsoft Defender for Storage"
+    - content: "Azure Defender for Storage"
       isCorrect: true
       explanation: "Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Azure Storage Account Security Feature"
