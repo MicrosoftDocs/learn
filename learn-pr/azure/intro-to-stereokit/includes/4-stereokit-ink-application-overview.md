@@ -1,4 +1,4 @@
-So far, you've learned how to install and configure your Visual Studio, enabling the developer mode. In this module, you'll have a basic understanding of the components that make **StereoKit Ink Application**. StereoKit Ink is a demo application perfect for understanding the core components provided by StereoKit.
+So far, you've learned how to install, configure your Visual Studio and enable the developer mode. In this module, you'll have a basic understanding of the components that are included in **StereoKit Ink Application**. StereoKit Ink is a demo application perfect for understanding the core components provided by StereoKit.
 
 This StereoKit demo project aims to introduce people to the fundamentals of how to draw and interact with the **Mixed Reality** content. You'll learn how to make radial hand menus, easy window menus with automatic layout, object-based menus with more explicit layouts, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with the game with only your fingers.
 

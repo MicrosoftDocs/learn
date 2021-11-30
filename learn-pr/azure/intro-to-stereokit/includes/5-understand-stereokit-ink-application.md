@@ -1,4 +1,4 @@
-From the previous chapter, you have a basic understanding of the StereoKit Ink application. In this module, we will understand the three main programs that are used to build this application. The code strives to be very legible, with plenty of comments to clarify anything immediately obvious.
+From the previous chapter, you have a basic understanding of the StereoKit Ink application. In this module, we will understand the three main programs that are used to build this application. The code strives to be very legible and easy to understand.
 
 ## Program.cs script
 
@@ -30,7 +30,7 @@ The application logic, the hand menu, and the application menu are all contained
         new HandMenuItem("Redo", null, ()=>activePainting?.Redo()))));
     ```
 
-* **Step the application each frame**: Once the palette menu is initialized and the app logo is loaded, the application is stepped each frame until it is asked to exit. The input information required to create brush strokes is sent to painting. Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
+* **Step the application each frame**: Once the palette menu is initialized and the app logo is loaded, the application is stepped each frame until it is asked to exit. The input information required to create brush strokes is sent to painting. Later, Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
 
     ```c#
     while (SK.Step(() =>
@@ -112,7 +112,7 @@ This is a menu that allows you to change the painting options. It's primarily ma
     UI.Model(_model, V.XY(0, UI.LineHeight*2));
     ```
 
-* **Color swatches**: Shows a list of color swatches that have been pre-selected. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
+* **Color swatches**: Shows a list of color swatches that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
