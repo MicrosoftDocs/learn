@@ -89,8 +89,6 @@ If you click on the switch, the controls at the bottom of the blade will change 
 
 You can see that you're now given a JSON-based editing box where you can specify all the settings/mappings that you might need to handle modifications to your Azure DevOps project.
 
-Some sample text is filled in for you. Soon, we plan to enhance this control with IntelliSense and publish some essential guides to understand the advanced configuration mode better.
-
 ## Next steps
 
 We think that it's an excellent start to integrating work item functionality with Application Insights.
