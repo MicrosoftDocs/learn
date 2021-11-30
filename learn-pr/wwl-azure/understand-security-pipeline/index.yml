@@ -3,7 +3,7 @@ uid: learn.wwl.understand-security-pipeline
 metadata:
   title: Understand security in the Pipeline
   description: "Understand security in the Pipeline"
-  ms.date: 11/29/2021
+  ms.date: 11/30/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ title: Understand security in the Pipeline
 summary: This module introduces you DevSecOps concepts, integration with security tools, and integration with Azure Pipelines.
 abstract: |
   - Plan to DevSecOps
-  - Integrate security tools like WhiteSource, Micro Focus, Checkmarts and Veracode with Azure DevOps
+  - Integrate security tools like WhiteSource, Micro Focus, Checkmarx and Veracode with Azure DevOps
   - Implement pipeline security
   - Use Secure DevOps kit for Azure (AzSK)
 prerequisites: |

@@ -2,7 +2,7 @@ This module introduced you DevSecOps concepts, integration with security tools, 
 
 You learned how to describe the benefits and usage of:
 
- -  Integrate security tools like WhiteSource, Micro Focus, Checkmarts, and Veracode with Azure DevOps.
+ -  Integrate security tools like WhiteSource, Micro Focus, Checkmarx, and Veracode with Azure DevOps.
  -  Implement pipeline security.
  -  Use Secure DevOps Kit for Azure (AzSK).
 
