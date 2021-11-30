@@ -54,7 +54,7 @@ Consider providing players with multiple ways to complete quick time events. Alt
 
 For example, in the following screen capture from the Assassin's Creed Valhalla game, players can choose between one-time press, hold, or repeated presses for quick time events. Another option has been added to bypass QTEs entirely in some boss encounters.
 
-:::image type="content" source="../media/ac-qte.png" alt-text="A screenshot of the Assassin's creed valhalla quick time events input type settings options. The options provided are labeled repeated, hold, and one-time.":::
+:::image type="content" source="../media/ac-quick-time-events.png" alt-text="A screenshot of the Assassin's creed valhalla quick time events input type settings options. The options provided are labeled repeated, hold, and one-time.":::
 
 ### Input device support
 
