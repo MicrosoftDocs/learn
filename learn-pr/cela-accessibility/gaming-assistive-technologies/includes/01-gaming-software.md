@@ -51,7 +51,7 @@ Note the following changes that work to simplify and enhance the visibility of t
  - Content that typically animates or moves within the UI is now static or replaced by the black background.
 
 > [!NOTE]
-> The Xbox Platform's High Contrast settings are a platform-level feature. These settings do not alter the UI during in-game play.
+> The Xbox High Contrast settings are a platform-level feature. These settings do not alter the UI during in-game play.
 
 ### Color filters and custom color palettes
 
@@ -61,7 +61,7 @@ Color filters are another type of tool that may allow players with certain types
 
 :::image type="content" source="../media/color-filters-two.png" alt-text="The Xbox Accessibility Color Filters settings screen is shown. The list box Correction type: Red-green (protanopia) is shown. The slider, Intensity is shown and is set to the maximum value. Below it is a slider labeled, Color boost which is set roughly between the minimum and maximum values. Below that, is a Restore defaults button. To the right are three circles, each divided into three equal segments of different colors. The circles are labels Deuteranopia, Protanopia, and Tritanopia respectively. Below the circles, a colorful image of an Xbox controller is displayed. Next to it is a grid of colors representing the colors of the rainbow, from red to purple. Text on the screen reads, “Before selecting a correction, identify the circle whose three colors look most similar. Then choose the correction named for that circle.":::
 
-As a general rule, however, color filters at the platform or game level should not be considered a solution for players with color blindness. This is because color filters can impact other visual aspects of a game in unintended ways. This can end up making some visual components more difficult to see for certain players depending on the severity of their colorblindness. Instead, a better options is to offer players color pallettes to choose from that individually change the color of specific elements.
+As a general rule, however, color filters at the platform or game level should not be considered a solution for players with color blindness. This is because color filters can impact other visual aspects of a game in unintended ways. This can end up making some visual components more difficult to see for certain players depending on the severity of their colorblindness. Instead, a better option is to offer players color palettes to choose from that individually change the color of specific elements.
 
 :::image type="content" source="../media/halo-pallette-2.png" alt-text="A screenshot of the Halo 5 accessibility menu. Under the visuals tab, the player can choose from a variety of colors for the enemy UI color, friendly UI color, and fireteam marker color options.":::
 
@@ -85,7 +85,7 @@ Online player communication tools like voice chat may be inaccessible for player
 
 Additionally, players who cannot speak aloud or choose not to, will be unable to respond to other players in the voice channel. Assistive technologies like speech-to-text and text-to-speech are intended to make communication experiences between players accessible.
 
-These tools may be provided by the gaming platform you are shipping on for certain chat functionality. However, for in-game chat, some of these tools require the use of specific APIs for games to be able to make use of them. There are also non-platform services that exist that developers can integrate as part of their games to provide such functionality, such as PlayFab Party chat.
+These tools may be provided by the gaming platform you are shipping on for certain chat functionality. However, for in-game chat, some of these tools require the use of specific APIs for games to make use of them. There are also non-platform services that exist that developers can integrate as part of their games to provide such functionality, such as PlayFab Party chat.
 
 - Speech-to-text: Transcribes incoming speech from other players into text on-screen in real time. Players who cannot hear voice chat can read what other players have said aloud on their screen.
 - Text-to-speech: Converts text typed by the player into synthesized audio that is read aloud to all other players in the voice channel. This essentially allows players who cannot speak verbally to have their thoughts expressed to the rest of the players in their party aloud.
@@ -97,22 +97,23 @@ These tools may be provided by the gaming platform you are shipping on for certa
 Captioning is an important tool useful for players who are d/Deaf or Hard of Hearing to translate noise and dialogue from the game into text that appears on-screen.
 
 > [!NOTE]
-> The terms “captioning,” “closed captions,” and “subtitles” are often used interchangably although there are subtle differences between them. For the purpose of this module, we are using “captioning” to refer to the use of on screen text to represent audio, including both sound effects and character dialogue.
+> The terms “captioning,” “closed captions,” and “subtitles” are often used interchangeably although there are subtle differences between them. For the purpose of this module, we are using “captioning” to refer to the use of on screen text to represent audio, including both sound effects and character dialogue.
 
 Captions can help identify aspects of the game like:
- - The dialogue of other characters
- - The character that is currently speaking
- - The presence and direction of important audio cues
- 
+
+- The dialogue of other characters
+- The character that is currently speaking
+- The presence and direction of important audio cues
+
 Captions are also used by players who don't have hearing-related disabilities but prefer to have the text appear on screen. Perhaps the player is in a loud environment or finds it easier to recall storylines by reading text in addition to listening to it.
 
 Captions can support players at the platform and individual game title levels to ensure audio is accessible.
 
-The following image displays the Xbox Platform's captioning settings. Note the vast array of customization options that work to ensure that caption is text is also accessible to players from a visual perspective. Games and applications can choose to read these settings and use them to adjust how their caption systems present information to their players.
+The following image displays the Xbox Platform's captioning settings. Note the vast array of customization options that work to ensure that captioned text is also accessible to players from a visual perspective. Games and applications can choose to read these settings and use them to adjust how their caption systems present information to their players.
 
 :::image type="content" source="../media/caption.png" alt-text="The Xbox Accessibility Captioning settings are shown. On the left of the screen are three radio buttons, “Captioning off,” “On using default style,” and “On using custom style.” “On using custom style” is set. To the right is a column of settings labelled “Caption Font.” These include list items such as, “Caption color: White,” “Caption transparency: Opaque,” “Caption Size: 200%,” “Caption Style: Default,” and “Caption Effects: Default.” To the right is another column of settings labeled “Background & window.” These include list items such as, “Background color: Black,” “Background transparency: Opaque,” “Window color: Black,” and “Window transparency: Transparent.” Below is a window titled, “Preview” and shows sample captions on top of sample game graphics.":::
 
-Forza Horizon 5 provides users the ability to customize how spoken dialogue appears on screen, giving users the ability to adjust not only the size and background opacity of their subtitles, but also provides the capability to have key words highlighted to more easily draw player attention to important information.
+Forza Horizon 5 provides users the ability to customize how spoken dialogue appears on screen, allowing users to adjust not only the size and background opacity of their subtitles, but also have key words highlighted to more easily draw player attention to important information.
 
 :::image type="content" source="../media/fh-subtitles.png" alt-text="A screenshot of the Forza Horizon 5 accessibility settings menu. The subtitles text size option has focus. A slider to increase and decrease subtitle text size is provided. A preview of the users current subtitle settings is shown on the bottom of the screen.":::
 
@@ -122,7 +123,7 @@ Input remapping allows players to reassign the functions on their standard input
 
 :::image type="content" source="../media/input-remapping.png" alt-text="The Xbox Accessibility Controller Profile 1 settings screen is shown. Text on the screen reads, “Choose a button to map. Or press and hold a button.” Below the “A Button” list item is selected. Below, a “Map to” setting is displayed that is also set to “A Button.” Additional checkboxes are also shown, including “Swap sticks,” “Invert right stick Y axis,” “Invert left stick Y axis,” “Swap triggers,” and “Turn on vibration.” To the right, an Xbox controller is shown with a “Restore to default” button below it.":::
 
-Platform-level remapping tools can provide an effective "safety net" for players. Gaming experiences can be made more accessible when in-game remapping features are also provided. This ensures that any tutorials, prompts, or references to game controls on-screen have properly translated the player's newly remapped controls to avoid confusion.
+Platform-level remapping tools can provide an effective "safety net" for players. However, gaming experiences can be made more accessible when in-game remapping features are also provided. This ensures that any tutorials, prompts, or references to game controls on-screen have properly translated the player's newly remapped controls to avoid confusion.
 
 :::image type="content" source="../media/flight-sim-remap.png" alt-text="A screenshot of the Microsoft Flight Simulator Controls Options menu. The controller option is selected. A long list of game controls that can be reassigned to the player's desired controller input is displayed.":::
 
@@ -134,10 +135,10 @@ When developing game titles, consider the following steps:
 
  - Assess the scope of assistive tools that are provided by the platform(s) your title will ship on.
  - Ensure your product works smoothly with any assistive tools that are present.
- - Regardless of what platform-level accessibility tools exist, aim to include more robust, in-game verisons of these functions and features as platform level assistive technology is often designed to be a “last resort” for gamers who have no other options and may not provide an ideal experience.
+ - Regardless of what platform-level accessibility tools exist, aim to include more robust, in-game verison of these functions and features as platform level assistive technology is often designed to be a “last resort” for gamers who have no other options and may not provide an ideal experience.
 
 When developing new gaming platforms or platform features, consider the following steps:
 
  - Assess the scope of assistive tools provided by the platform.
- - Note any key settings or tools missing. Players must first navigate their platform to start their game. If a game title offers assistive tools but the platform does not, players can still be blocked from play while attempting to navigate the platform without these tools. 
+ - Note any key settings or tools missing. Players must first navigate their platform to start their game. If a game title offers assistive tools but the platform does not, players can still be blocked from play while attempting to navigate the platform without these tools.
  - Additionally, you can identify any sources of incompatibility between platform provided AT and a game title's ability to use them. For example, if a player has screen narration turned on at the platform level, but the platform does not expose this information to the game title, the game cannot leverage the player's platform settings on launch.
