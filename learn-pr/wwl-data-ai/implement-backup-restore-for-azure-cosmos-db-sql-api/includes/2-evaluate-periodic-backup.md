@@ -42,7 +42,8 @@ By default, Azure Cosmos DB backups every 4 hours and keeps the last two backups
     - Backup Retention - This setting defines how long should the backups be kept. Can be changed in hours or days. The retention period will be at least two times the backup interval and 720 hours (or 30 days) at the most. The default is **8 Hours**. 
     - Backup storage redundancy - One of the three redundancy options discussed in the previous section. The default is **Geo-redundant backup storage**.  
 
-        [NOTE!] You must have Azure Cosmos DB owner, contributor, or have the Cosmos DB Operator (`CosmosdbBackupOperator`) role assigned to configure the backup retention period or backup storage redundancy settings.
+        > [!NOTE] 
+        > You must have Azure Cosmos DB owner, contributor, or have the Cosmos DB Operator (`CosmosdbBackupOperator`) role assigned to configure the backup retention period or backup storage redundancy settings.
 
 ## Request to restore a backup
 
