@@ -60,7 +60,7 @@ summary: |
   :::row-end:::
 prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/bicep/bicep-advanced.svg
 levels:
 - advanced
 roles:
