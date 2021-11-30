@@ -51,7 +51,7 @@ On your host machine, let's try to mount one of the network shares.
     > [!NOTE]
     > If you receive an error, you might need to select the **Reports** file share because your browser cached the error pagefor the **Data** file share.
 
-## ## Install AzCopy and generate files in the file share
+## Install AzCopy and generate files in the file share
 
 1. Download the zip file [AzCopy](https://aka.ms/downloadazcopy-v10-windows).
 
