@@ -2,7 +2,7 @@
 uid: learn.bicep-advanced
 metadata:
   title: Advanced Bicep
-  description: Learn how to use Bicep and Azure features to improve your collaboration and quality of your infrastructure deployments.
+  description: Learn how to use Bicep for complex deployments to Azure.
   brand: azure
   ms.date: 10/26/2021
   author: johndowns
