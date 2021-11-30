@@ -4,9 +4,9 @@ For these purposes, you'll need readiness or liveness probes.
 
 Kubernetes offers various readiness probes. In the configuration YAML file, you can configure the type of probe:
 
- -  startupProbe.
- -  livenessProbe.
- -  readinessProbe.
+ -  startupProbe
+ -  livenessProbe
+ -  readinessProbe
 
 You can also configure the initialDelaySeconds (how long after the start before checking) and periodSeconds (how often to check).
 
