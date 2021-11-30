@@ -9,7 +9,7 @@ metadata:
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
   ms.prod: learning-gaming-accessibility
-durationInMinutes: 15
+durationInMinutes: 16
 content: |
   [!include[](includes/01-gaming-software.md)]
 quiz:
@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. This option describes one of the functionalities of a screen reader."
     - content: "To read the text of a player's typed message aloud to other players in the voice channel via synthesized audio."
       isCorrect: true
-      explanation: "Correct. Text-to-speech refers to the text a player enters into a form field, which is then read aloud to other players in the chat voice channel."
+      explanation: "Correct. Text-to-speech chat refers to the text a player enters into a form field, which is then read aloud to other players in the chat voice channel."
     - content: "To transcribe what other players have said aloud in the voice channel into text that players can read on screen in real time."
       isCorrect: false
       explanation: "Incorrect. This option describes the speech-to-text chat tool."
