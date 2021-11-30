@@ -33,34 +33,34 @@ Choose the Chef Development Kit that is appropriate to your operating system and
     
     ```
     
-        This command generates a set of files under the directory **C:\\Chef\\cookbooks\\webserver**.
+    This command generates a set of files under the directory **C:\\Chef\\cookbooks\\webserver**.
     
-        Next, you need to define the set of commands that you want the Chef client to execute on your managed VM.
+    Next, you need to define the set of commands that you want the Chef client to execute on your managed VM.
     
-        The commands are stored in the **default.rb** file.
+    The commands are stored in the **default.rb** file.
 2.  For this example, we'll define a set of commands that installs and starts Microsoft Internet Information Services (IIS) and copies a template file to the **wwwroot** folder. Modify the **C:\\chef\\cookbooks\\webserver\\recipes\\default.rb** file by adding the following lines:
     
     ```Ruby
     powershell_script 'Install IIS' do
     
     action :run
-     
+    
     code 'add-windowsfeature Web-Server'
-     
+    
     end
-     
+    
     service 'w3svc' do
-     
+    
     action [ :enable, :start ]
-     
+    
     end
-     
+    
     template 'c:\inetpub\wwwroot\Default.htm' do
     
     source 'Default.htm.erb'
     
     rights :read, 'Everyone'
-     
+    
     end
     
     ```
@@ -79,7 +79,7 @@ Choose the Chef Development Kit that is appropriate to your operating system and
     
     ```
     
-        We've now created our cookbook, and it's ready to use.
+    We've now created our cookbook, and it's ready to use.
 7.  The following steps (which we won't be covering in detail at this time) would be to:
     
      -  Create a role to define a baseline set of cookbooks and attributes that you can apply to multiple servers.

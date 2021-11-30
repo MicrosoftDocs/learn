@@ -6,10 +6,7 @@ Chef Infra helps you manage your infrastructure in the cloud, on-premises, or a 
 
 A *node* or chef-client is any physical or virtual machine (VM), cloud, or network device under management by Chef Infra.
 
-The following diagram is of the high-level Chef Infra architecture:
-
-:::image type="content" source="../media/chef-architecture-d2d1736a.png" alt-text="Diagram of the high-level Chef Infra architecture. A Chef Server box contains a Chef server, node objects, and cookbooks. An Administrators workstation box containing knife, settings, and cookbooks. It's linked to both a GitHub repository and Microsoft Azure via cloud provisioning requests, where nodes are managed by Chef.":::
-
+See [Chef Infra Overview](https://docs.chef.io/chef_overview/) for a high-level Chef Infra architecture example.
 
 ## Chef Infra components
 

@@ -12,10 +12,9 @@ Chef Automate is available from the Azure Marketplace, and you can try it out wi
 
 ## Chef Automate structure and function
 
-Chef Automate integrates with the open-source products Chef, Chef InSpec, Chef Habitat, and their associated tools, including chef-client and ChefDK. The following image is an overview of the structure of Chef Automate and how it functions.
+Chef Automate integrates with the open-source products Chef, Chef InSpec, Chef Habitat, and their associated tools, including chef-client and ChefDK.
 
-:::image type="content" source="../media/chef-automate-14fe273c.png" alt-text="The high-level Chef Automate architecture contains a box labeled Collaborate, which sits on top of three boxes labeled Build, Deploy and Manage. These three boxes are over a box labeled OSS Automation Engines, which in turn sits over boxes labeled Chef, Habitat and InSpec.":::
-
+See [Chef overview](https://docs.chef.io/chef_overview/) for an overview of the structure of Chef Automate and how it functions.
 
 Let's break down the Chef Automate architecture components:
 

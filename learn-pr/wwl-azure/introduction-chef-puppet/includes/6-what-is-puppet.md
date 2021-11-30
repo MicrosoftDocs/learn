@@ -2,9 +2,6 @@
 
 Puppet provides a series of open-source configuration management tools and projects. It also provides Puppet Enterprise, a configuration management platform that allows you to maintain state in both your infrastructure and application deployments.
 
-:::image type="content" source="../media/puppet-logo-88a6d380.png" alt-text="Puppet icon":::
-
-
 ## Puppet architectural components
 
 Puppet operates using a client-server model and consists of the following core components:
