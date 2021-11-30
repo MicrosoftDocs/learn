@@ -19,9 +19,10 @@ A primary challenge that AT users encounter is a lack of compatibility between t
 Many of the hardware devices discussed in this unit differ in the type of "output" they use. For example, eye gaze devices, despite looking nothing like a mouse, are generally "seen" via software as a mouse by the game or platform when plugged in to a host or platform device. This means that game titles who do not support mouse input actively exclude players who require eye-gaze devices to play.
 
 In general, the scope of other AT devices can include:
- - Switch interfaces seen as keyboard input
- - Mouth-based joysticks seen as mouse input
- - The Xbox Adaptive Controller seen as a gamepad or controller input
+
+- Switch interfaces seen as keyboard input
+- Mouth-based joysticks seen as mouse input
+- The Xbox Adaptive Controller seen as a game pad or controller input
 
 Regardless of a player's specific AT device of choice, you can support these players by ensuring the games and platforms you create allow a wide array of input types including controller, mouse, and keyboard input.
 

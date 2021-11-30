@@ -10,7 +10,7 @@ Software-based assistive technologies can improve access to gaming experiences t
  - Customizing the player's display to optimize the visibility of elements
  - Allowing players to reassign their input controls through software and more
 
-. These technologies and tools are available as third-party programs that can be installed on gaming platforms, built-in features on certain game platforms, as well as functions built directly into some games.
+These technologies and tools are available as third-party programs that can be installed on gaming platforms, built-in features on certain game platforms, as well as functions built directly into some games.
 
 An awareness of the following assistive tools is important in ensuring that the gaming products and experiences you create effectively support the players who use them.
 
@@ -63,9 +63,9 @@ Color filters are another type of tool that may allow players with certain types
 
 As a general rule, however, color filters at the platform or game level should not be considered a solution for players with color blindness. This is because color filters can impact other visual aspects of a game in unintended ways. This can end up making some visual components more difficult to see for certain players depending on the severity of their colorblindness. Instead, a better options is to offer players color pallettes to choose from that individually change the color of specific elements.
 
-:::image type="content" source="../media/halo-palette-1.png" alt-text="T .":::
+:::image type="content" source="../media/halo-pallette-2.png" alt-text="A screenshot of the Halo 5 accessibility menu. Under the visuals tab, the player can choose from a variety of colors for the enemy UI color, friendly UI color, and fireteam marker color options.":::
 
-:::image type="content" source="../media/halo-pallette-2.png" alt-text="T .":::
+:::image type="content" source="../media/halo-palette-1.png" alt-text="A screenshot of the Halo 5 accessibility menu options. The fireteam marker color selection list is expanded. A scrolling list of about 15 color options total is presented. The color jade is selected.":::
 
 ### Magnification tools
 
@@ -100,7 +100,7 @@ Captioning is an important tool useful for players who are d/Deaf or Hard of Hea
 > The terms “captioning,” “closed captions,” and “subtitles” are often used interchangably although there are subtle differences between them. For the purpose of this module, we are using “captioning” to refer to the use of on screen text to represent audio, including both sound effects and character dialogue.
 
 Captions can help identify aspects of the game like:
- - The dialogue of other characters 
+ - The dialogue of other characters
  - The character that is currently speaking
  - The presence and direction of important audio cues
  
@@ -114,7 +114,7 @@ The following image displays the Xbox Platform's captioning settings. Note the v
 
 Forza Horizon 5 provides users the ability to customize how spoken dialogue appears on screen, giving users the ability to adjust not only the size and background opacity of their subtitles, but also provides the capability to have key words highlighted to more easily draw player attention to important information.
 
-:::image type="content" source="../media/fh-subtitles.png" alt-text="T .":::
+:::image type="content" source="../media/fh-subtitles.png" alt-text="A screenshot of the Forza Horizon 5 accessibility settings menu. The subtitles text size option has focus. A slider to increase and decrease subtitle text size is provided. A preview of the users current subtitle settings is shown on the bottom of the screen.":::
 
 ### Input remapping
 
@@ -124,7 +124,7 @@ Input remapping allows players to reassign the functions on their standard input
 
 Platform-level remapping tools can provide an effective "safety net" for players. Gaming experiences can be made more accessible when in-game remapping features are also provided. This ensures that any tutorials, prompts, or references to game controls on-screen have properly translated the player's newly remapped controls to avoid confusion.
 
-:::image type="content" source="../media/flight-sim-remap.png" alt-text="T .":::
+:::image type="content" source="../media/flight-sim-remap.png" alt-text="A screenshot of the Microsoft Flight Simulator Controls Options menu. The controller option is selected. A long list of game controls that can be reassigned to the player's desired controller input is displayed.":::
 
 ## Software considerations for game accessibility
 
