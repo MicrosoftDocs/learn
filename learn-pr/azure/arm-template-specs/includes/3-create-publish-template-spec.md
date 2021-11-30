@@ -22,7 +22,7 @@ It's important that your template is easy for anyone in your organization to und
 
 :::code language="bicep" source="code/3-parameter.bicep" highlight="1-5, 8-9, 12, 15-16" :::
 
-In the example, the template parameters use the `@allowedValues`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
+In the example, the template parameters use the `@allowed`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
 
 ::: zone-end
 
