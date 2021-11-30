@@ -21,41 +21,7 @@ summary: |
   * Ensure your Bicep code quality by validating and testing it within your workflow.
   * Work with multiple environments, and handle parameters and approvals.
 
-  To learn about Bicep, we recommend you take these three learning paths:
-
-  :::row:::
-  :::column:::
-    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Fundamentals of Bicep learning path." role="presentation"></img>](xref:learn.bicep-fundamentals)
-
-    [Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
-  :::column-end:::
-  :::column:::
-    [<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Intermediate Bicep learning path." role="presentation"></img>](xref:learn.bicep-intermediate)
-
-    [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
-  :::column-end:::
-  :::column:::
-    [<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Advanced Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
-
-    [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
-  :::column-end:::
-  :::row-end:::
-
-  After that, you might be interested in adding your Bicep code to a deployment pipeline. Take one of these two learning paths based on the tool you want to use:
-
-  :::row:::
-  :::column:::
-    [<img src="/learn/achievements/bicep/bicep-azure-pipelines.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and Azure Pipelines learning path." role="presentation"></img>](xref:learn.bicep-azure-pipelines)
-
-    [Option 1: Deploy Azure resources by using Bicep and Azure Pipelines](xref:learn.bicep-azure-pipelines)
-  :::column-end:::
-  :::column:::
-    <img src="/learn/achievements/bicep/bicep-github-actions.svg" width="101" height="120" alt="The trophy for the Deploy Azure resources using Bicep and GitHub Actions learning path." role="presentation"></img>
-
-    Option 2: Deploy Azure resources by using Bicep and GitHub Actions
-  :::column-end:::
-  :::row-end:::
-
+  [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying infrastructure using Bicep.
 iconUrl: /learn/achievements/bicep/bicep-github-actions.svg
