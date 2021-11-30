@@ -2,7 +2,7 @@
 uid: learnA.gain-insights-data-kql
 metadata:
   moduleType: standard
-  title: gain insights with kql
+  title: Gain insights in your data using Kusto Query Language
   description: "Gain insights in your data using the Kusto Query Language"
   ms.date: 11/30/2021
   author: YaelSchuster
@@ -33,8 +33,13 @@ products:
 - azure-data-explorer
 units:
 - learnA.gain-insights-data-kql.introduction
-- learnA.gain-insights-data-kql.group-data-using-aggregation-functions
-- learnA.gain-insights-data-kql.exercise
+- learnA.gain-insights-data-kql.group-data-aggregation-functions
+- learnA.gain-insights-data-kql.exercise-count-events-count-operator
+- learnA.gain-insights-data-kql.exercise-visualize-data-render-operator
+- learnA.gain-insights-data-kql.exercise-summarize-data-aggregation-functions
+- learnA.gain-insights-data-kql.exercise-introduce-variables-let-function
+- learnA.gain-insights-data-kql.challenge
+- learnA.gain-insights-data-kql.solution
 - learnA.gain-insights-data-kql.knowledge-check
 - learnA.gain-insights-data-kql.summary
 badge:
