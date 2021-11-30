@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-introduction-to-azure-search.1-introduction
-title: Introduction
+uid: learn.azure-introduction-to-azure-search.exercise
+title: Exercise
 metadata:
-  title: Introduction
-  description: "Introduction."
+  title: Exercise
+  description: "Exercise"
   ms.date: 11/30/2021
   author: wwlpublish
   ms.author: robmcm
@@ -12,6 +12,6 @@ metadata:
 azureSandbox: false
 sandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/6a-exercise.md)]
