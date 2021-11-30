@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-premises-hybrid-networking.use-azure-network-watcher-to-help-diagnose-network-problems
+title: Use Azure Network Watcher to help diagnose network problems
+metadata:
+  title: Use Azure Network Watcher to help diagnose network problems
+  description: "Use Azure Network Watcher to help diagnose network problems"
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-use-azure-network-watcher-to-help-diagnose-network-problems.md)]
