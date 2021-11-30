@@ -27,7 +27,7 @@ Adventure Works wants to be able to understand how the sales order volume and re
 
     This query answers the questions being asked through traditional aggregation, as we are mostly interested in understanding the number (COUNT) or total (SUM) of values a GROUP BY clause that covers both **Country and City (B)** can answer most of the questions with **absolute values for the total number of customers, orders and order lines and the sum of revenue by City (C)**.
 
-    To answer the ranking part of the question, we use window functions. In essence a window function calculate a result for every row of a table based on a group of rows, called the frame. Every row can have a unique frame associated with it for that window function allowing you to concisely express and solve ranking, analytic, and aggregation problems in powerful yet simple a manner no other approach does. 
+    To answer the ranking part of the question, we use window functions. In essence a window function calculates a result for every row of a table based on a group of rows, called the frame. Every row can have a unique frame associated with it for that window function allowing you to concisely express and solve ranking, analytic, and aggregation problems in powerful yet simple a manner no other approach does. 
 
     Here we use the **dense_rank() function to calculate the rank of each city by revenue, number of orders and total order lines (D)**.
 
