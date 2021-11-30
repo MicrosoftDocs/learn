@@ -22,8 +22,6 @@ summary: |
   * Build deployment scripts that define custom steps in your Bicep templates.
   * Ensure reusability, consistency, and compliance by creating libraries of modules and templates.
 
-  *NOTE TO REVIEWERS: Two new modules will be added to this path: 'Consume and publish Bicep modules by using registries' (around December 2021), and an untitled module about deployment stacks (sometime in 2022).*
-
   To learn about Bicep, we recommend you take these three learning paths:
 
   :::row:::
@@ -38,7 +36,7 @@ summary: |
     [Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
   :::column-end:::
   :::column:::
-    [<img src="/learn/achievements/generic-trophy.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
+    [<img src="/learn/achievements/bicep/bicep-advanced.svg" width="101" height="120" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
 
     [Part 3: Advanced Bicep](xref:learn.bicep-advanced)
   :::column-end:::
