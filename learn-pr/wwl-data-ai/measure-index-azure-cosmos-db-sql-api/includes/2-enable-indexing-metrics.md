@@ -25,8 +25,8 @@ This sample code creates a **QueryDefinition** variable with the SQL query and t
 
 To enable index metrics, you must first create an object of type **QueryRequestOptions** and set the **PopulateIndexMetrics** property to true.
 
-> ![NOTE]
-> By default, **PopulateIndexMetrics** is disabled. You should only enable this if you are troubleshooting query performance or are unsure how to modify your indexing policy.
+    > ![NOTE]
+    > By default, **PopulateIndexMetrics** is disabled. You should only enable this if you are troubleshooting query performance or are unsure how to modify your indexing policy.
 
 ```csharp
 QueryRequestOptions options = new()
