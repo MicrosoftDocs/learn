@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-introduction-to-azure-search.1-introduction
-title: Introduction
+uid: learn.azure-introduction-to-azure-search.design-index
+title: Design an index
 metadata:
-  title: Introduction
-  description: "Introduction."
+  title: Design an index
+  description: "Design an index"
   ms.date: 11/30/2021
   author: wwlpublish
   ms.author: robmcm
@@ -12,6 +12,6 @@ metadata:
 azureSandbox: false
 sandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2a-understand-index-schema.md)]

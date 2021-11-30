@@ -3,58 +3,58 @@ uid: learn.azure-introduction-to-azure-search.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Test your knowledge by answering questions about skills you learned in this module.
-  ms.date: 09/16/2019
-  author: rmcmurray
+  description: "Test your knowledge by answering questions about skills you learned in this module."
+  ms.date: 11/30/2021
+  author: wwlpublish
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 3
-content: |
 quiz:
-  title: Check your knowledge
+  title: "Check your knowledge"
   questions:
-  - content: 'Which one of the following statements about query requests is true?'
+  - content: "Which one of the following statements about query requests is true?"
     choices:
-    - content: All query composition is based on the full Lucene syntax 
+    - content: "All query composition is based on the full Lucene syntax."
       isCorrect: false
-      explanation: Azure Cognitive Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions.
-    - content: Query requests include search criteria, but nothing for shaping search results
+      explanation: "Incorrect. Azure Cognitive Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions."
+    - content: "Query requests include search criteria, but nothing for shaping search results."
       isCorrect: false
-      explanation:  A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return.
-    - content: Search explorer returns results in JSON only
+      explanation: "Incorrect. A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return."
+    - content: "Search explorer returns results in JSON only."
       isCorrect: true
-      explanation: Search explorer returns results in JSON only. 
-    - content: searchMode must be set to ON in order for queries to work
+      explanation: "Correct. Search explorer returns results in JSON only."
+    - content: "SearchMode must be set to ON in order for queries to work."
       isCorrect: false
-      explanation: Valid values are "any" or "all". The searchMode specifies whether a positive match can be made using any of the criteria, or whether all of the criteria must be satisfied.
-
-  - content: 'Which of the following data sources can be used as an input data source?'
+      explanation: "Incorrect. Valid values are \"any\" or \"all\". The searchMode specifies whether a positive match can be made using any of the criteria, or whether all of the criteria must be satisfied."
+  - content: "Which of the following data sources can be used as an input data source?"
     choices:
-    - content: Azure Data Lake 
+    - content: "Azure Data Lake."
       isCorrect: false
-      explanation: Azure Data Lake is not a supported external data source. It is, however, entirely possible to write code to use the REST API, and push data from Azure Data Lake to Azure Cognitive Search.
-    - content: Azure Virtual Machines
+      explanation: "Incorrect. Azure Data Lake is not a supported external data source. It is, however, entirely possible to write code to use the REST API, and push data from Azure Data Lake to Azure Cognitive Search."
+    - content: "Azure Virtual Machines."
       isCorrect: false
-      explanation: Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however.
-    - content: Azure SQL Database
+      explanation: "Incorrect. Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however."
+    - content: "Azure SQL Database."
       isCorrect: true
-      explanation: Azure SQL Database is one of the supported external data sources in Azure Cognitive Search. Azure SQL Database has a built-in indexer ready made for Azure Cognitive Search.
-    - content: Azure Queue Storage
+      explanation: "Correct. Azure SQL Database is one of the supported external data sources in Azure Cognitive Search. Azure SQL Database has a built-in indexer ready made for Azure Cognitive Search."
+    - content: "Azure Queue Storage."
       isCorrect: false
-      explanation: Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage.
-
-  - content: 'Which data format is accepted by Azure Cognitive Search when you are pushing data to the service?'
+      explanation: "Incorrect. Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage."
+  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the service?"
     choices:
-    - content: CSV
+    - content: "CSV."
       isCorrect: false
-      explanation: CSV isn't supported.
-    - content: SQL
+      explanation: "Incorrect. CSV isn't supported."
+    - content: "SQL."
       isCorrect: false
-      explanation: SQL isn't supported.
-    - content: XML
+      explanation: "Incorrect. SQL isn't supported."
+    - content: "XML."
       isCorrect: false
-      explanation: XML isn't supported.
-    - content: JSON
+      explanation: "Incorrect. XML isn't supported."
+    - content: "JSON."
       isCorrect: true
-      explanation: Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects.
+      explanation: "Correct. Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
