@@ -196,20 +196,13 @@ These health metrics are available in the Azure portal.
 
 To see current status, uptime, and resource usage for the Azure Vote pods, complete the following steps in the Azure portal:
 
-13. Open a web browser to the Azure portal [https://portal.azure.com](https://portal.azure.com/).
-14. Select your resource group, such as myResourceGroup, then select your AKS cluster, such as myAKSCluster.
-15. Under Monitoring on the left-hand side, choose Insights.
-16. Across the top, choose to + Add Filter.
-17. Select Namespace as the property, then choose &lt; All but kube-system &gt;
-18. Choose to view the Containers. The azure-vote-back and azure-vote-front containers are displayed, as shown in the following example:
-
-:::image type="content" source="../media/walkthrough-deploy-app-6a56094a.png" alt-text="A web browser in the Azure portal displaying the container properties.":::
-
-
-19. To see logs for the azure-vote-front pod, select the View container logs to link on the right-hand side of the containers list. These logs include the stdout and stderr streams from the container.
-
-:::image type="content" source="../media/walkthrough-deploy-7022767a.png" alt-text="A web browser in the Azure portal displaying the container logs.":::
-
+19. Open a web browser to the Azure portal [https://portal.azure.com](https://portal.azure.com/).
+20. Select your resource group, such as myResourceGroup, then select your AKS cluster, such as myAKSCluster.
+21. Under Monitoring on the left-hand side, choose Insights.
+22. Across the top, choose to + Add Filter.
+23. Select Namespace as the property, then choose &lt; All but kube-system &gt;
+24. Choose to view the Containers. The azure-vote-back and azure-vote-front containers are displayed.
+25. To see logs for the azure-vote-front pod, select the View container logs to link on the right-hand side of the containers list. These logs include the stdout and stderr streams from the container.
 
 > [!NOTE]
 > If you continue using the Azure resources, remember to delete them to avoid incurring costs.

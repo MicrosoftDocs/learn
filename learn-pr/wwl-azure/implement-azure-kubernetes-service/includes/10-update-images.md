@@ -19,17 +19,15 @@ Fortunately, the base OS layer consists of two images: a more significant base l
 If you're using a Docker file to create your image, patching layers should be done by explicitly changing the image version number using the following commands:
 
 ```
-```yml
 FROM microsoft/windowsservercore:10.0.14393.321
 RUN cmd /c echo hello world
 ```
-into
 
-```yml
+Into:
+
+```YML
 FROM microsoft/windowsservercore:10.0.14393.693
 RUN cmd /c echo hello world
-```
-
 ```
 
 When you build this Docker file, it now uses version 10.0.14393.693 of the image microsoft/windowsservercore.
