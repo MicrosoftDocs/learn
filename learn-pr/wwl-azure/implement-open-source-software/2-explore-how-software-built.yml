@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-explore-how-software-is-built.md)]
+  [!include[](includes/2-explore-how-software-built.md)]
