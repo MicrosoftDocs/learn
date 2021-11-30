@@ -29,5 +29,4 @@ quiz:
           explanation: Correct! You must use a semicolon at the end of a code statement.
         - content: The string should use single quotes.
           isCorrect: false
-          explanation: Incorrect. A string literal must be surrounded by double quotes. A
-            char literal is surrounded by single quotes.
+          explanation: Incorrect. A string literal must be surrounded by double quotes. A char literal is surrounded by single quotes.

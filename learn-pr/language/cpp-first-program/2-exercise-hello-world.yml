@@ -3,7 +3,7 @@ uid: learn.cpp-write-your-first-program.exercise-hello-world
 title: Exercise - Create your first C++ program
 metadata:
   title: Exercise - Create your first C++ program
-  description: Create your first program in C++. The program will output a string literal.
+  description: Create your first program in C++, with a string literal output.
   author: saifeemustafaq
   ms.author: chnoring
   ms.date: 11/18/2021
@@ -22,17 +22,13 @@ quiz:
       choices:
         - content: The compiler primarily locates spelling mistakes in your code.
           isCorrect: false
-          explanation: Incorrect. Although it's possible that you misspelled a word in your
-            code, and that misspelling produces an error, that isn't the primary job of the
-            compiler.
+          explanation: Incorrect. Although it's possible that you misspelled a word in your code, and that misspelling produces an error, finding that error isn't the primary job of the compiler.
         - content: The compiler primarily reformats your code.
           isCorrect: false
-          explanation: Incorrect. The compiler will never reformat your code.
-        - content: The compiler primarily converts your code into an executable format
-            that the computer can understand.
+          explanation: Incorrect. The compiler never reformats your code.
+        - content: The compiler primarily converts your code into an executable format that the computer can understand.
           isCorrect: true
-          explanation: Correct! The compiler primarily converts your code into an executable format
-            that the computer can understand.
+          explanation: Correct! The compiler converts your code into an executable format that the computer can understand.
     - content: Which of the following statements is true about C++?
       choices:
         - content: C++ is case-*insensitive*.

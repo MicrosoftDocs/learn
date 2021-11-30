@@ -1,4 +1,4 @@
-This unit covers identifying errors, and then fixing the code. What happens when you misspell a function name or type an incorrect symbol?
+It's helpful to practice identifying errors, and then fixing the code. What happens when you misspell a function name or type an incorrect symbol?
 
 ## Create the code
 
@@ -6,7 +6,7 @@ Before you can identify the errors, create the code and have a look at it:
 
 1. In the terminal, run `code .` to open an editor.
 
-1. In the editor, enter this code:
+1. In the editor, enter or paste in this code:
 
     ```cpp
     #include (iostream);
@@ -55,13 +55,13 @@ The code you ran has errors in it. Some error messages appear as you compile the
     ```
 
     > [!NOTE]
-    > The output lists many errors. Sometimes, solving a single error might resolve other errors. Other times, you might have to solve all the errors that are listed in the output. In most scenarios, the errors are explicitly explained and easy to understand.
+    > The output lists many errors. Sometimes, resolving a single error might resolve other errors. Other times, you might have to resolve all the errors that are listed in the output. In most scenarios, the errors are explicitly explained and easy to understand.
 
-## Solve the errors
+## Resolve the errors
 
 You've compiled the code, which resulted in many errors. But don't worry. You can resolve each error and end up with working code.
 
-### First error: Parenthesis
+### First error: Parentheses instead of angle brackets
 
 1. Look at the code to identify the first error:
 
@@ -98,7 +98,7 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
    g++ hello.cpp
    ```
 
-   You see this output, already with fewer errors, thanks for your first fix:
+   You see this output, already with fewer errors, thanks to your first fix:
 
    ```output
    PS /home/<user>> g++ hello.cpp
@@ -130,7 +130,7 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
                        ^
    ```
 
-   A semicolon (`;`) is added at the end of the filename/library *iostream*. You can't add a semicolon after an `#include` directive.  
+   A semicolon (`;`) is added at the end of the filename/library *iostream*. You can't add a semicolon after an `#include` directive. Use a semicolon only at the end of a statement. 
   
 1. Remove the semicolon from the end of `#include <iostream>` and see what happens.
 
@@ -151,7 +151,7 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
     }
     ```
 
-### Third error: The wrong character for string literal
+### Third error: The wrong quote type for a string literal
 
 1. Run `g++ hello.cpp` to build your program.
 
@@ -198,7 +198,7 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
 
 1. Run `g++ hello.cpp` to build your program.
 
-   Here's what the output looks like. See how the error output is less and less. Next, resolve the remaining issues.
+   Here's what the output looks like. The error output is less as you resolve issues. Next, resolve the remaining issues.
 
    ```output
    PS /home/<user>> g++ hello.cpp
@@ -220,7 +220,7 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
    ...
    ```
 
-   In the preceding output, you can see an operator issue. So you need to replace the operator with the correct operator. Replace the `>>` operator with the `<<` operator.
+1. In the preceding output, you can see an operator issue. Replace the `>>` operator with the `<<` operator.
 
    ```cpp
    #include <iostream>
@@ -234,7 +234,9 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
    > [!NOTE]
    > Use `<<` for the `cout` object.
    >
-   > Use `>>` for the `cin` object. The `cin` object is discussed in more detail later in the module.  
+   > Use `>>` for the `cin` object. The `cin` object is discussed in more detail in another module.  
+
+### Fifth error: Missing semicolon
 
 1. Run `g++ hello.cpp` to build your program:
 
@@ -276,25 +278,22 @@ You've compiled the code, which resulted in many errors. But don't worry. You ca
     g++ hello.cpp
     ```
 
-    If you type `ls` in your terminal, you should now see *a.out* as one of your files. That's the file the g++ compiler created for you.
+    If you type `ls` in your terminal, you should now see *a.out* as one of your files. *a.out* is the file the g++ compiler created for you.
 
-1. Run the `a.out` file in the terminal:
+1. In the terminal, run the `a.out` file:
 
    ```bash
     ./a.out
    ```
   
-  And finally, you have the output you want to see:
+   And finally, you have the output you want to see:
   
-  ```output
-    PS /home/<user>> ./a.out
-    Hello World
-  ```
+   ```output
+     PS /home/<user>> ./a.out
+     Hello World
+   ```
   
-  As you can see, your code has no more errors. You've debugged the code step by step and solved the issues.
+   Your code has no more errors. You've debugged the code step by step and resolved all issues.
 
 > [!NOTE]
-> An increase in the number of errors doesn't mean that your problems have increased. Often, some other syntax is the cause of those errors, and a small correction eliminates those errors.  
-
-> [!NOTE]
-> Note that the code doesn't include `return 0` at the end, but no error was thrown. The reason is that the runtime assumes an implicit return type as integer for `main`. The return type primarily is used as an exit status. Here, returning 0 or returning nothing automatically makes the runtime assume that the code exited successfully.
+> The code doesn't include `return 0` at the end, but no error was thrown. The reason is that the runtime assumes an implicit return type as integer for `main`. The return type primarily is used as an exit status. Here, returning 0 or returning nothing automatically makes the runtime assume that the code exited successfully.
