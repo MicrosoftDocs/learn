@@ -1,4 +1,4 @@
-From the previous chapter, you have a basic understanding of the StereoKit Ink application. In this module, we will understand the three main programs that are used to build this application. The code strives to be very legible and easy to understand.
+From the previous chapter, you have a basic understanding of the StereoKit Ink application. In this module, we will understand the three main programs; used to build this application. The code strives to be very legible and easy to understand.
 
 ## Program.cs script
 
@@ -17,9 +17,9 @@ The application logic, the hand menu, and the application menu are all contained
     Environment.Exit(1);
     ```
 
-* **Radial hand menu**: Radial hand menus are an easy way to store actions out of the way. In addition, these menus are easily accessible to the user. Selecting any option from the menu can trigger an action or even open a series of sub-options for the users to choose.
+* **Radial hand menu**: Radial hand menus are an easy way to store actions out of the way. In addition, these menus are easily accessible to the user. Selecting any option from the menu can trigger actions or even open a series of sub-options for the users to choose.
 
-    It's actuated by a grip motion and is ideal for quick, gesture-like menu item activation. It can also be combined with several HandRadialLayers to create sub-menus. These menus are paired up with the **Steppers** classes. Once added to the StereoKit's stepper list, they will have their **Step** method called each frame. This is a great way to add objects that need to update each frame.
+    It's actuated by a grip motion and is ideal for quick, gesture-like menu item activation. It can also be combined with several HandRadialLayers to create sub-menus. These menus are paired up with the **Steppers** classes. Once added to the StereoKit's stepper list, they will have their **Step** method called each frame. It is a great way to add objects that need to update each frame.
 
     :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
@@ -30,7 +30,7 @@ The application logic, the hand menu, and the application menu are all contained
         new HandMenuItem("Redo", null, ()=>activePainting?.Redo()))));
     ```
 
-* **Step the application each frame**: Once the palette menu is initialized and the app logo is loaded, the application is stepped each frame until it is asked to exit. The input information required to create brush strokes is sent to painting. Later, Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
+* **Step the application each frame**: Once the palette menu is initialized, the app logo is loaded, the application is stepped each frame until it is asked to exit. The input information required to create brush strokes is sent to painting. Later, Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
 
     ```c#
     while (SK.Step(() =>
@@ -45,7 +45,7 @@ The application logic, the hand menu, and the application menu are all contained
 
 * **Application's menu window**: The application's menu window is made using a nice application image instead of a head bar (body only). The logo is positioned neatly at the top of the menu window. Although the undo and redo options are present in the radial hand menu designed earlier, it is included here as it'll be easier to discover.
 
-    The save option is also included in the window. The user on clicking the save button, lets show a file dialog. Where the user is prompted to select the file name and the folder. The file is saved in **.skp** extension.
+    The save option is also included in the window. The user on clicking the save button, let's show a file dialog where; the user is prompted to select the file name and the folder. The file is saved in **.skp** extension.
 
     The **Load** option allows users to load the previously created .skp files. The **Clear** option helps user to create a new painting. When the user wants to **Quit** then the Step loop is broken.
 
@@ -85,7 +85,7 @@ The application logic, the hand menu, and the application menu are all contained
 
 ## PaletteMenu.cs script
 
-This is a menu that allows you to change the painting options. It's primarily made up of pre-built UI pieces, but it also shows how to make your own with StereoKit's layout and interaction capabilities.
+It is a menu that allows you to change the painting options. It's primarily made up of pre-built UI pieces, also showing how to make your own with StereoKit's layout and interaction capabilities.
 
 * **Loading models**: Both of these models are used in the user interface! The first is a bottle that will serve as decoration and context while also displaying the active color, and the second is a "splash of ink" that will be turned into a pressable button that will allow users to select colors.
 
@@ -112,7 +112,7 @@ This is a menu that allows you to change the painting options. It's primarily ma
     UI.Model(_model, V.XY(0, UI.LineHeight*2));
     ```
 
-* **Color swatches**: Shows a list of color swatches that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
+* **Color swatches**: It Shows a list of color swatches that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
@@ -132,7 +132,7 @@ This is a menu that allows you to change the painting options. It's primarily ma
   UI.Space(UI.LineHeight*0.5f);
     ```
 
-* **Sliders**: A slider will move in increments between two values. Therefore, the function requires a reference to a float variable where the slider's state is stored. This allows you to handle the state independently, and it's perfectly acceptable to modify the slider state without affecting the UI element.
+* **Sliders**: A slider will move in increments between two values. Therefore, the function requires a reference to a float variable where the slider's state is stored. It allows you to handle the state independently, and it's perfectly acceptable to modify the slider state without affecting the UI element.
 
     By themselves, swatches are never enough. So here are some sliders that let the user manually HSV their color. We'll start with a fixed-size label and then add a fixed-size slider to the same line. Fixing the sizes here makes it easier for them to align in columns.
 
@@ -185,7 +185,7 @@ This is a menu that allows you to change the painting options. It's primarily ma
   Mesh.Cube.Draw(Material.Unlit, Matrix.TS(linePreview.center, linePreview.dimensions), _color);
     ```
 
-* **Colorize**: Change the material of the ink bottle to match the current hue. In addition, you can colorize the user's hand mesh.  Input might also be used to set specific hands to a custom material using Input.HandMaterial.
+* **Colorize**: It Changes the material of the ink bottle to match the current hue. In addition, you can colorize the user's hand mesh.  Input might also be used to set specific hands to a custom material using Input.HandMaterial.
 
     ```c#
     void SetColor(float hue, float saturation, float value)
@@ -239,7 +239,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
    ```
 
-* **Translate the coordinates of the fingertip into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, and smooth it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
+* **Translate the fingertip coordinates into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, and smooth it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
 
   :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
@@ -250,7 +250,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
   ```
 
-* **Pinching motion**: The paint strokes are initiated from the user's end when performing the pinch motion and not interacting with the UI elements. Therefore, the paint strokes are continuously updated with the current Step information. When the user ceases the pinch motion, the paint stroke is considered to be completed.
+* **Pinching motion**: The paint strokes are initiated from the user's end when performing the pinch motion, not interacting with the UI elements. Therefore, the paint strokes are continuously updated with the current Step information. When the user ceases the pinch motion, the paint stroke is considered to be completed.
 
     ```c#
     if (hand.IsJustPinched && !UI.IsInteracting(handed))
@@ -269,7 +269,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   _prevFingertip = fingertip;
   ```
 
-* **Popping effect**: Let's start with two points. The first starts at the specified location, while the second is updated to the current fingertip location. When we reach a particular distance from the previous point, we add additional points. Still, a naïve implementation can result in a popping effect if points are merely added at distance intervals. This 'popping' artifact will be effectively prevented by the extra point that directly follows the fingertip.
+* **Popping effect**: Let's start with two points. The first starts at the specified location, while the second is updated to the current fingertip location. When we reach a particular distance from the previous point, we add additional points. Still, a naive implementation can result in a popping effect if points are merely added at distance intervals. This 'popping' artifact will be effectively prevented by the extra point that directly follows the fingertip.
 
     We will begin with calculating the distance between the current and the previous point and the pace at which the hand moves. Later, make a point at the current location by utilizing speed as the stroke thickness.
 
@@ -293,7 +293,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
 
 * **Language Integrated Query (LINQ)**: The query expression is the most evident "language-integrated" aspect of LINQ for a developer who writes queries. Declarative query syntax is used to write query expressions. You may perform filtering, ordering, and grouping actions on data sources with a minimum of code by using query syntax.
 
-    Linq is being used to parse a file! Linq is a functional programming language that, if learned, can be quite useful. Linq is definitely not a good choice for performance-critical areas, but it's fine for discrete occurrences.
+    Linq is being used to parse a file! Linq is a functional programming language that, if learned, can be considerably useful. Linq is not a good choice for performance-critical areas, but it's fine for discrete occurrences.
 
     Each line in this file represents a paint stroke, with a comma between each point on that stroke. Each item within a point is separated by spaces, which LinePointFromString takes care of.
 
