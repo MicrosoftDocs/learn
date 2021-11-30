@@ -2,9 +2,9 @@ Here, you will learn about the communications platforms available in Azure so th
 
 There are many communications platforms that can help improve the reliability of a distributed application, including several within Azure. Each of these tools serves a different purpose; let's review the messaging in Azure to help choose the right one.
 
-The architecture of Contoso Slices pizza ordering and tracking application requires several components: a website, data storage, back-end service, etc. We can bind the components of our application together in many different ways, and a single application can take advantage of multiple techniques. 
+The architecture of Contoso Bicycles ordering and tracking application requires several components: a website, data storage, back-end service, etc. We can bind the components of our application together in many different ways, and a single application can take advantage of multiple techniques. 
 
-We need to decide which techniques to use in the Contoso Slices application. The first step is to evaluate each place where there is communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
+We need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there is communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
 
 ## Decide between messages and events
 
@@ -16,7 +16,7 @@ In the terminology of distributed applications, the defining characteristic of a
 
 A message generally contains the actual data, not just a reference (like an ID or URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
 
-In Contoso Slices' new architecture, when a pizza order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
+In Contoso Bicycles' new architecture, when an order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
 
 ### Events
 
@@ -28,11 +28,11 @@ Events have the following characteristics:
 * Events are often intended to "fan out," or have a large number of subscribers for each publisher
 * The publisher of the event has no expectation about the action a receiving component takes
 
-Our pizza chain would likely use events for notifications to users about status changes. Status change events could be sent to Azure Event Grid, then on to Azure Functions, and to Azure Notification Hubs for a completely _serverless_ solution.
+Our bicycle parts chain would likely use events for notifications to users about status changes. Status change events could be sent to Azure Event Grid, then on to Azure Functions, and to Azure Notification Hubs for a completely _serverless_ solution.
 
 This difference between events and messages is fundamental because communications platforms are generally designed to handle one or the other. Service Bus is designed to handle messages. If you want to send events, you would likely choose Event Grid.
 
-Azure also has Azure Event Hubs, but it is most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors on our pizza ovens, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in the temperature changes that might indicate an unwanted fire or component wear.
+Azure also has Azure Event Hubs, but it is most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors in our manufacturing warehouses, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
 
 ## Service Bus topics, queues, and relays
 
@@ -54,7 +54,8 @@ A queue responds to high demand without needing to add resources to the system. 
 
 A **topic** is similar to a queue but can have multiple subscriptions. This means that multiple destination components can subscribe to a given topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
-Topics are not supported in the Basic pricing tier.
+> [NOTE!] 
+> Topics are not supported in the Basic pricing tier.
 
 :::image type="content" source="../media/2-service-bus-topic.png" alt-text="An illustration showing one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscription are used by three receivers to retrieve the relevant messages.":::
 
