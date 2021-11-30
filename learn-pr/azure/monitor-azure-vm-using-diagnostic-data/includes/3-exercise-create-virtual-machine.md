@@ -74,7 +74,7 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 ## Task 3: View boot diagnostics
 
-1. In the middle menu pane, under **Help**, select **Boot diagnostics**.
+1. In the middle menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
 
 1. In the upper menu bar, select **Settings**. The **Boot diagnostics** pane appears.
 

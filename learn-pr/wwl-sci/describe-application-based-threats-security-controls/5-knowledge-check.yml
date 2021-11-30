@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2021
+  ms.date: 11/30/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "A device driver."
       isCorrect: false
       explanation: "Incorrect. A device driver is an example of system software."
-    - content: "Word-processing software."
+    - content: "Word processing software."
       isCorrect: true
       explanation: "Correct. Word processing software is an example of application software."
   - content: "Which statement defines a zero-day vulnerability?"
@@ -39,14 +39,14 @@ quiz:
     - content: "Any flaw that is known to the application developer but for which the developer hasn't yet developed a patch."
       isCorrect: false
       explanation: "Incorrect. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
-  - content: "What is a simple way that users can mitigate threats to their applications?"
+  - content: "What is a simple way for users to mitigate threats to their applications?"
     choices:
     - content: "Disable automatic updates."
       isCorrect: false
-      explanation: "Incorrect. As part of a robust security process or policy, you should ensure all applications used on your device are kept up to date with the latest patches or updates"
-    - content: "Avoid applications that employ Open-Source libraries."
+      explanation: "Incorrect. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."
+    - content: "Avoid applications that employ open-source libraries."
       isCorrect: false
-      explanation: "Incorrect. That is not a practical option and in most cases, users may not know if their applications contain Open-Source libraries."
+      explanation: "Incorrect. That is not a practical option and in most cases, users may not know if their applications contain open-source libraries."
     - content: "Enable automatic updates of your applications."
       isCorrect: true
-      explanation: "Correct. As part of a robust security process or policy, you should ensure all applications used on your device are kept up to date with the latest patches or updates"
+      explanation: "Correct. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."

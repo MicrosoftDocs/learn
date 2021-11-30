@@ -9689,6 +9689,56 @@
       "source_path": "learn-pr/path/sample-module/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/execute-queries-azure-cosmos-db-sql-api/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/3-exercise-create-an-azure-search-service-in-the-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/5-exercise-create-an-azure-search-index-in-the-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/7-exercise-query-data-using-search-explorer-in-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/1-Introduction-to-IoT.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/2-Why-Azure-for-IoT.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/3-Innovate-with-Azure-IoT-industry-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/4-Azure-IoT-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/5-Knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/6-Summary-and-reources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
+      "redirect_document_id": false
     }
   ]
 }

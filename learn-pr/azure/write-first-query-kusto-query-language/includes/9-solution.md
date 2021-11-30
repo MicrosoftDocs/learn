@@ -1,21 +1,21 @@
 You've been asked to write a query that answers the following question: 
 
-> In the month of April 2007, what were the top five damage-causing storms in the state of Virginia?
+> In the month of April 2007, what were the top five damage-causing storm types in the state of Virginia?
 
-This solution provides one possible way to construct a query that answers the above question.
+This solution provides one possible way to construct a query that answers the question.
 
 ## Solution process
 
-1. The first thing we want to do is filter out as much information as possible. 
-    * The time window should be between April 1 and April 30, 2007. We'll use `where` operator to create this filter.
-    * We only want to return results from the state of Virginia. We'll use `where` operator to create this filter as well.
-1. Now, we need to create a column that sums damage from *DamageProperty* and *DamageCrops* by using the `project` operator. 
-1. To figure out which kind of storm caused this damage, we need to return the *EventType* column. We'll use the `project` operator.
-1. Lastly, we want to see the top five most damaging events. We can use the `sort` operator, with the default mode being descending. Alternatively, and more efficiently, we can use the `top` operator.
+1. Filter out as much information as possible: 
+    * The time window should be between April 1 and April 30, 2007. Use the `where` operator to create this filter.
+    * You want to return results from only the state of Virginia. Use the `where` operator to create this filter.
+1. Create a column that sums damage from **DamageProperty** and **DamageCrops** by using the `project` operator. 
+1. To figure out which kind of storm caused this damage, you need to return the **EventType** column. Use the `project` operator.
+1. You want to see the top five most damaging events. You can use the `sort` operator, whose default mode is descending. Alternatively, and more efficiently, you can use the `top` operator.
 
 ## Solution query
 
-The above steps are all included in the following query:
+The following query includes all the preceding steps:
 
 ```kusto
 StormEvents
@@ -27,8 +27,8 @@ StormEvents
 
 Your results should look something like the following image:
 
-:::image type="content" source="../media/9-solution.png" alt-text="Screenshot of solution.":::
+:::image type="content" source="../media/9-solution.png" alt-text="Screenshot of a table with five damage-causing storms in Virginia.":::
 
 ## Insights
 
-From the above results, we can see that all top five damage-causing events in the month of April and in the state of Virginia were Frost/Freeze events.
+From the results of this solution, you can see that all the top five damage-causing events in the month of April and in the state of Virginia were frost or freeze events.
