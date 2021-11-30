@@ -12,10 +12,9 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
    | Option                                      | Value       |
    | ------------------------------------------- | ----------- |
    | Select a container configuration definition | Python 3    |
-   | Python version                              | 3 (default) |
+   | Python version                              | 3.8 |
    | Install Node.js                              | none        |
-
-5. Select **OK**.
+   | Add Features                              | Click "OK"       |
 
 A Remote Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
