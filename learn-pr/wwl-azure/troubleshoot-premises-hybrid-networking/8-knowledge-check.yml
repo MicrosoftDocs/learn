@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-premises-hybrid-networking.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator is investigating a problem with IP configurations. On Friday, all was working, and now, Monday morning, all the devices in only one subnet on the fourth floor of the HQ building cannot connect to any corporate or internet resources. The administrator determines that the client computers have an IP address with the prefix 169.254.0.0/16. Which of the following is the likely cause of the problem?"
+    choices:
+    - content: "The router connecting the subnet to the rest of the network has failed."
+      isCorrect: true
+      explanation: "Correct. Given the symptoms, this is the most likely cause."
+    - content: "The administrator has failed to install a DHCP relay agent for this subnet."
+      isCorrect: false
+      explanation: "Incorrect. Although a DHCP relay agent is required, the fact that things were working before suggests that any required components were in-place."
+    - content: "The DHCP server for the building is offline."
+      isCorrect: false
+      explanation: "Incorrect. This is unlikely as other devices in other subnets would also be affected."
+  - content: "An administrator is working through a problem relating to name resolution. They want to use debug logging to try to locate the cause of the problem. Which of the following provides the correct next step?"
+    choices:
+    - content: "The administrator doesn't need to do anything. Debug logging is enabled by default. They merely need to review the logs."
+      isCorrect: false
+      explanation: "Incorrect. Debug logging is not disabled by default."
+    - content: "The administrator must enable debug logging on the DNS server by selecting the Debug Logging tab and enabling and configuring the required options."
+      isCorrect: true
+      explanation: "Correct. Debug logging is disabled by default, and must be enabled on the DNS server."
+    - content: "The administrator must enable debug logging on the DNS zones that they want to verify. The administrator must select the Debug Logging tab for the zone and enabling and configuring the required options."
+      isCorrect: false
+      explanation: "Incorrect. Debug logging is not configured on DNS zones."
+  - content: "A helpdesk consultant has responded a user support call. The user reports that they cannot connect to a web server on the corporate network. The consultant determines that many users are experiencing the problem. They verify that the server hosting the website is online, but when they attempt to connect to the website, they receive an error: \"Hmmm can't reach this page\". What should they try next?"
+    choices:
+    - content: "The helpdesk consultant should use telnet to verify the server is listening on TCP port 443."
+      isCorrect: true
+      explanation: "Correct. This is a logical next step."
+    - content: "The helpdesk consultant should verify the IP configuration of the user's computer."
+      isCorrect: false
+      explanation: "Incorrect. Multiple users, including the helpdesk consultant, are unable to connect. It's therefore unlikely to be an IP configuration issue."
+    - content: "The helpdesk consultant should ping the server by its IP address."
+      isCorrect: false
+      explanation: "Incorrect. The consultant already determined the server is online."
