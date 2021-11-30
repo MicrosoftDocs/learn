@@ -9,7 +9,7 @@ Once a secret has been committed into a repository, you should consider the secr
 - For a compromised GitHub personal access token, delete the compromised token, create a new token, and update any services that use the old token.
 - For all other secrets, first verify that the secret committed to GitHub is valid. If so, create a new secret, update any services that use the old secret, and then delete the old secret.
 
-Once you have taken the appropriate actions for the secret, you can resolve the alert by clicking it under **Security > Secret scanning alerts**, and choosing a reason for resolving it in the **Mark as** drop-down:
+Once you have taken the appropriate actions for the secret, you can resolve the alert by clicking it under **Security > Secret scanning alerts**, and choosing a reason for resolving it in the **Close as** drop-down:
 
 :::image type="content" source="../media/mark-alert-as.png" alt-text="Screenshot of an alert with Mark as drop-down displayed.":::
 
