@@ -4,7 +4,7 @@ The *Veracode Application Security Platform* is a SaaS that automatically enable
 
 Veracode's SAST, dynamic application security testing (DAST), and software composition analysis (SCA) capabilities allow development teams to assess both first-party code and third-party components for security risks.
 
-:::image type="content" source="../media/veracode1-b0765abc.png" alt-text="Screenshot of the Add task pane in Azure DevOps with a Veracode task listed and available to choose":::
+:::image type="content" source="../media/veracode-1-8d62dab2.png" alt-text="Screenshot of the Add task pane in Azure DevOps with a Veracode task listed and available to choose":::
 
 
 ## Veracode functionality

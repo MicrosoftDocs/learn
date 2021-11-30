@@ -6,7 +6,7 @@ Micro Focus Fortify provides a comprehensive set of software security analyzers 
 
 Development groups and security professionals use it to analyze application source code for security issues.
 
-:::image type="content" source="../media/fortify1-9d7de110.png" alt-text="Screenshot of the Add task pane in Azure DevOps. The available Micro Focus Fortify tasks display on the Build tab.":::
+:::image type="content" source="../media/fortify-1-991ae33e.png" alt-text="Screenshot of the Add task pane in Azure DevOps. The available Micro Focus Fortify tasks display on the Build tab.":::
 
 
 ## Fortify Static Code Analyzer

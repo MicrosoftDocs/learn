@@ -6,7 +6,7 @@ Checkmarx is a powerful, unified security solution for Static Application Securi
 
 You can download Checkmarx from the Azure DevOps Marketplace.
 
-:::image type="content" source="../media/checkmarx1-d87657ef.png" alt-text="Screenshot of the Add tasks pane in Azure DevOps with the Checkmarx CxSAST task listed and available to choose.":::
+:::image type="content" source="../media/checkmarx-1-d4b9f37d.png" alt-text="Screenshot of the Add tasks pane in Azure DevOps with the Checkmarx CxSAST task listed and available to choose.":::
 
 
 ## Checkmarx functionality
