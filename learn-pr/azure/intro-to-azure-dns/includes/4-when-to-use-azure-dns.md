@@ -4,7 +4,7 @@ Your options for managing the records in public DNS zones include:
 
 -   Use your DNS registrar's DNS management tools. Most DNS registrars provide basic DNS zone hosting and management functionality. You can use your DNS registrar's tools to manually create and manage records in your organizations publicly registered DNS zones. The drawback of using a DNS registrar's management functionality is that is difficult to automate changes in line with adding and modifying apps and services in Azure. DNS registrar tools are mostly aimed at organizations that need simple DNS services, not those who are adding and modifying new services on a frequent basis.
 
--   Mange your own DNS servers. Many organizations, especially those with on-premises configurations involving Active Directory Domain Services already host their own DNS server infrastructure. Whilst managing your own DNS servers is more administratively intensive, if your organization needs to replicate Active Directory integrated DNS zone data, zone transfer, or needs to support DNSSEC, managing your own DNS server might be a more appropriate solution. In the case of Tailwind Traders, you don't need this extra functionality so the additional administrative effort required to manage your own DNS server isn't justified.
+-   Manage your own DNS servers. Many organizations, especially those with on-premises configurations involving Active Directory Domain Services already host their own DNS server infrastructure. Whilst managing your own DNS servers is more administratively intensive, if your organization needs to replicate Active Directory integrated DNS zone data, zone transfer, or needs to support DNSSEC, managing your own DNS server might be a more appropriate solution. In the case of Tailwind Traders, you don't need this extra functionality so the additional administrative effort required to manage your own DNS server isn't justified.
 
 Azure DNS provides an alternative to these commonly used options. You should use Azure DNS:
 
@@ -28,4 +28,4 @@ When your application developers deploy a multi-tier VM application in a private
 
 -   You want to use DNS in a split horizon configuration where a limited number of DNS records are available to clients on the internet, but a full set of records is available to hosts in Azure virtual networks.
 
--   You want to configure records in your DNS zone to point to Azure private endpoints such as Azure Storage, Azure Cosmos DB, or Azure SQL Database.
+-   You want to configure records in your DNS zone to point to Azure private endpoints such as Azure Storage, Azure Cosmos DB, or Azure SQL Database.
