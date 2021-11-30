@@ -5,7 +5,8 @@ Administrators must necessarily connect to their Azure VMs remotely. When you fi
 - Secure Shell (SSH). Uses TCP port 22 for connectivity.
 
 > [!NOTE]
-> RDP is selected by default.
+> RDP is selected by default.
+
 In addition to these methods, you can also enable and configure Windows Admin Center and Azure Cloud Shell to enable remote management of your Azure VMs.
 
 ## Troubleshoot RDP connections
@@ -26,8 +27,9 @@ If you're experiencing connection issues, test the connection. Open the Azure po
 
 1. Review, and if necessary, update the settings for RDP.
 
-> [!TIP]
-> Make a note of the Public IP address and TCP port being used. These are required for the remote desktop client. 
+   > [!TIP]
+   > Make a note of the Public IP address and TCP port being used. These are required for the remote desktop client. 
+
 1. Select the **Test your connection** link.
 
 1. Select **RDP** in the Service list, and then select **Test connection**.
@@ -47,7 +49,8 @@ If this basic connectivity test is successful, then attempt to reconnect using t
 - If that doesn't resolve the issue, if possible, restart the VM itself.
 
 > [!IMPORTANT]
-> Are you sure you have the right username and password for the target VM? If you're unsure, check the username and reset the password. Then update the details in your remote desktop client connection profile.
+> Are you sure you have the right username and password for the target VM? If you're unsure, check the username and reset the password. Then update the details in your remote desktop client connection profile.
+
 A final thing to consider is that it's possible that Azure Firewall or Windows Defender Firewall might be blocking the required ports.
 
 ## Consider implementing Azure Bastion
@@ -62,13 +65,13 @@ Bastion host servers:
 
 The following diagram displays the architecture of a typical Azure Bastion deployment. In this diagram:
 
-1. The bastion host is deployed in the Azure virtual network.
+- The bastion host is deployed in the Azure virtual network.
 
-1. A user connects to the Azure portal using any HTML5 browser over TLS.
+- A user connects to the Azure portal using any HTML5 browser over TLS.
 
-1. The user selects the VM to connect to.
+- The user selects the VM to connect to.
 
-1. The Bastion host establishes the RDP/SSH connection to the target VM.
+- The Bastion host establishes the RDP/SSH connection to the target VM.
 
 ![A graphic depicting the textual explanation of Azure Bastion for remote administration. ](../media/bastion-remote-admin.png)
 

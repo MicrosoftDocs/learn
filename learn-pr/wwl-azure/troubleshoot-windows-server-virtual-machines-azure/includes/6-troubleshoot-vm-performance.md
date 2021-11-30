@@ -51,13 +51,13 @@ Before you can use guest-level monitoring, you must enable it. You can do that f
 
 1. After monitoring is enabled, you can select specific performance counters. By default, the following objects are analyzed:
 
-  - CPU
+    - CPU
 
-  - Memory
+    - Memory
 
-  - Disk
+    - Disk
 
-  - Network
+    - Network
 
 To adjust performance data that's collected, for the appropriate VM, in **Diagnostics settings**, in the detail pane, select the **Performance counters** tab. The following screenshot displays this tab.
 
@@ -73,11 +73,11 @@ You can also enable and configure storage account diagnostics. To do this, in th
 
 1. Select the appropriate disk, and on the **Overview** page, you can review the following:
 
-  - Disk Bytes/sec (Throughout)
+    - Disk Bytes/sec (Throughout)
 
-  - Disk Operations/sec (IOPS)
+    - Disk Operations/sec (IOPS)
 
-  - Disk QD (Queue Depth)
+    - Disk QD (Queue Depth)
 
 If you want to review additional metrics for the selected disk, in the navigation pane, select **Metrics**. You can then select the metrics that you're interested in.
 

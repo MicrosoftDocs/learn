@@ -40,7 +40,7 @@ It's quite common to be unable to establish a connection to a VM that fails duri
 
 In order to use the Serial Console, your VM must have been configured to use the option **Enable with custom storage account** for the Boot diagnostics setting.
 
-You can use the Serial Console to connect to a VM via the Azure Portal. Use the following procedure:
+You can use the Serial Console to connect to a VM via the Azure portal. Use the following procedure:
 
 1. In the portal, navigate to and select the appropriate VM.
 
@@ -172,14 +172,14 @@ If you suspect that your startup problem relates to a failed update, use the fol
 
 1. Open an elevated command prompt and run the `dism /image:F:\ /get-packages > c:\temp\Patch_level.txt` command to list recent updates.
 
-> [!NOTE]
-> Your `/image:` drive letter might vary.
+    > [!NOTE]
+    > Your `/image:` drive letter might vary.
 
 1. Review the `Patch_level.txt` file from the bottom up. Locate the update that's in either of the following states:
 
-  - Install Pending
+    - Install Pending
 
-  - Uninstall Pending
+    - Uninstall Pending
 
 1. Run the `dism /Image:<Attached OS disk>:\ /Remove-Package /PackageName:<PACKAGE NAME TO DELETE>` command to remove the pending updates.
 
