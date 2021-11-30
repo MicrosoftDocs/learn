@@ -8,11 +8,9 @@ You'll use the sandbox on your right to create a code file that you can build an
 
 Later, you can use either the Visual Studio Code editor or the full Visual Studio IDE to build larger and more interesting code examples, and even entire applications.
 
-To create a code file:
-
 1. In the terminal, run `code .` to open an editor.
 
-2. In the editor that opens on the right, paste in this code:
+2. In the editor that opens on the right, write or paste in this code:
 
     ```cpp
     #include <iostream>
@@ -34,8 +32,6 @@ To build your code, you'll use g++. Building your code produces an executable, w
 
 > [!NOTE]
 > A compiler converts source code that's written in one language into another language. Here, the compiler converts your C++ source code to machine code. The computer understands machine code, and it creates an executable program.
-
-To build your code:
 
 1. Run `g++` to build your program:
 
@@ -60,8 +56,6 @@ To build your code:
 
 Next, you'll run the executable file the compiler created. You'll use a few lines of code to run the code file you created.
 
-To run your code:
-
 1. Run `ls -l` to list the permission levels on your files:
 
    ```bash
@@ -75,7 +69,7 @@ To run your code:
    ```
 
    You have the permission `x`, which means that *a.out* is an executable program you can run.
-   
+
    When you run g++ on a computer running Windows, the compiler produces an .exe file you can run.
 
 2. Run the program:
@@ -94,8 +88,6 @@ Congrats! You've built and run your first C++ program.
 ## Print a message
 
 Part of your code prints a line of output after it runs.
-
-To print an output message:
 
 1. Inside `main` in your code, add `//` at the start of the line of code you wrote. This syntax turns the line into a *code comment*, which the compiler ignores. Then, create these lines of code or paste in the following snippet:
 

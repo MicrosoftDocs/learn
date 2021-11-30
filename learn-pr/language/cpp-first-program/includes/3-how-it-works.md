@@ -1,6 +1,6 @@
 Let's briefly go over the terms and syntax you used in the *Hello World* program. Breaking down the syntax can give you insight into the concepts behind the language and its structure.
 
-## Syntax
+## Syntax breakdown
 
 To better understand what's going on, it's helpful to go through the syntax of the program line by line, starting at the top row:
 
@@ -12,7 +12,7 @@ To better understand what's going on, it's helpful to go through the syntax of t
 
    :::code language="cpp" source="../code/include.cpp" range="1-2" highlight="2":::
 
-- **`int main()`**: `main()` is a global function and the designated start of a program. Every C++ program has a mandatory `main()` function. A *function* is a set of statements that perform a task together. The `int` used before `main()` says that this function expects an integer to be returned.
+- **`int main()`**: A *function* is a set of statements that perform a task together. `main()` is a global function and the designated start of a program. Every C++ program has a mandatory `main()` function. The `int` used before `main()` says that this function expects an integer to be returned.
 
    :::code language="cpp" source="../code/include.cpp" highlight="3-6":::
 
@@ -20,7 +20,7 @@ To better understand what's going on, it's helpful to go through the syntax of t
 
    :::code language="cpp" source="../code/include.cpp" highlight="5":::
 
-- **`"Hello World"`**: The output *Hello World* is written in double quotes (`""`). You can use `std::string` in many ways. The main two ways to use `std::string` are as a *C-string (character array)* or as a *`string` class*. `char` is a primitive data type.
+- **`"Hello World"`**: The output *Hello World* is set in double quotes (`""`). You can use `std::string` in many ways. The main two ways to use `std::string` are as a *C-string (character array)* or as a *`string` class*. `char` is a primitive data type.
 
   We use different data types, like *integer*, *float*, *double*, and *char*, to express and store values. For example, an integer might be `123`, a float might be `9.02`, and a char might be `'a'`.
 

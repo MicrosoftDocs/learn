@@ -37,6 +37,6 @@ quiz:
         - content: "`cout` is a function."
           isCorrect: false
           explanation: Incorrect. `cout` is an object.
-        - content: You use double quotes to create a literal string.
+        - content: You use double quotes to create a string literal.
           isCorrect: true
-          explanation: Correct! Use double quotes to create a literal string.
+          explanation: Correct! Use double quotes to create a string literal.
