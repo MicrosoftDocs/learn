@@ -25,7 +25,7 @@ abstract: |
     - Browse content for K-12 educators, higher-ed educators, parents/guardians and school leaders
     - Provide feedback to improve the experience 
 prerequisites: | 
-  - Familiarity with the Microsoft Educator Center
+  - Familiarity with the Microsoft Educator Center (optional)
 iconUrl: /learn/achievements/educator/microsoft-learn-for-educators-pioneer.svg
 hidden: true
 levels: 
