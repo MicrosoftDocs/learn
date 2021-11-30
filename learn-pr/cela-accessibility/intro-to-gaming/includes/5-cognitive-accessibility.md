@@ -12,6 +12,8 @@ These cognitive processes may be more difficult to execute for players with lear
 
 In the following video, you'll learn how to identify common cognitive elements that can pose these barriers.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGaM]
+
 ## Cognition and disability
 
 Cognition is another area influenced by a multitude of factors. Primary aspects of cognition include learning or processing information, sustaining attention, and memorizing information provided by games to inform future actions. Players with cognitive disabilities may only experience challenges related to one or two of these components or they may have learning, attention, and memory-related disabilities. Being tired, stressed, or sick can also make it difficult for any player to have difficulty sustaining attention or remembering what their character was last up to.

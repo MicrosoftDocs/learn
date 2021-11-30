@@ -26,6 +26,6 @@ elements that impact accessibility.
 
 After completing this module, you'll be able to:
 
- -  Discuss the relationship between gaming and visual, audio, cognitive, and input-based game experiences.
+ - Discuss the relationship between gaming and visual, audio, cognitive, and input-based game experiences.
  - Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
  - Describe the concept of diverse player experiences and the importance of considering these diverse experiences when learning about gaming accessibility foundations.
