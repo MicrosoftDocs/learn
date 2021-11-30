@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
-  title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
-  description: This course provides the user a basic understanding of all the foundational elements of MRTK.
+  title: Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction
+  description: This course provides the user with a basic understanding of all the foundational elements of MRTK.
   ms.date: 09/09/2021
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Introduction to Mixed Reality Toolkit - Create a Mars Curiosity Rover hologram
-summary: Import and learn about foundational elements of MRTK
+title: Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction
+summary: Import and learn about foundational elements of the Mixed Reality Tookit (MRTK)
 abstract: |
-  By the end of this module you will be able to:
-  - Imported the Mixed Reality Toolkit into your Unity Windows Mixed Reality Project.
+  By the end of this module you'll be able to:
+  - Import the MRTK into your Unity Windows Mixed Reality Project.
   - Configure basic object interactions without the need to create your own custom scripts.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -31,8 +31,8 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - [Mixed Reality Feature Tool](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
+  - Basic familiarity with Unity: interface, scene creation, package import, addition of gameObjects to a scene
 units: 
 - learn.azure.learn-introduction-tutorials-mrtk.1-1-introduction
 - learn.azure.learn-introduction-tutorials-mrtk.1-2-configure-unity-for-windows-mixed-reality
