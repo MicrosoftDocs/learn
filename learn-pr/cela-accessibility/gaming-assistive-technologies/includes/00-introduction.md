@@ -6,7 +6,7 @@ Consider the following scenario: a player with low vision uses a high contrast s
 
 Unfortunately, this player requires a high contrast display for play. They search the game title's menu but cannot find an in-game high contrast setting. Disappointed, the player abandons the game. They know they won't be able to play it without compatible AT to support their visual needs. As a developer, you hear about this experience and are hoping to learn more about the AT that players with disabilities use to ensure that the future products and experiences you create support players in using these tools.
 
-In this module, you'll be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
+In this module, you'll be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, and the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
 
 ## Learning Objectives
 
