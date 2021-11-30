@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-advanced
+uid: learn.advanced-bicep
 metadata:
   title: Advanced Bicep
   description: Learn how to use Bicep for complex deployments to Azure.
@@ -40,4 +40,4 @@ modules:
 - learn.azure.extend-resource-manager-template-deployment-scripts
 - learn.azure.arm-template-specs
 trophy:
-  uid: learn.bicep-walk.trophy
+  uid: learn.advanced-bicep.trophy

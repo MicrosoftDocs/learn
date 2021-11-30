@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.bicep-fundamentals
+uid: learn.fundamentals-bicep
 metadata:
   title: Fundamentals of Bicep
   description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
@@ -46,4 +46,4 @@ modules:
 - learn.azure.bicep-conditions-loops
 - learn.azure.create-composable-bicep-files-using-modules
 trophy:
-  uid: learn.bicep-deploy-manage.trophy
+  uid: learn.fundamentals-bicep.trophy

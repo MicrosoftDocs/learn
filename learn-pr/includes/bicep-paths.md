@@ -9,24 +9,24 @@ To learn about Bicep, we recommend you take these three learning paths:
 
 :::row:::
 :::column align="center":::
-[<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Fundamentals of Bicep learning path." role="presentation"></img>](xref:learn.bicep-fundamentals)
+[<img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="120" alt="The trophy for the Fundamentals of Bicep learning path." role="presentation"></img>](xref:learn.fundamentals-bicep)
 :::column-end:::
 :::column align="center":::
-[<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Intermediate Bicep learning path." role="presentation"></img>](xref:learn.bicep-intermediate)
+[<img src="/learn/achievements/bicep/bicep-collaborate.svg" width="101" height="120" alt="The trophy for the Intermediate Bicep learning path." role="presentation"></img>](xref:learn.intermediate-bicep)
 :::column-end:::
 :::column align="center":::
-[<img src="/learn/achievements/generic-trophy.svg" width="101" height="120" alt="The trophy for the Advanced Bicep learning path." role="presentation"></img>](xref:learn.bicep-advanced)
+[<img src="/learn/achievements/generic-trophy.svg" width="101" height="120" alt="The trophy for the Advanced Bicep learning path." role="presentation"></img>](xref:learn.advanced-bicep)
 :::column-end:::
 :::row-end:::
 :::row:::
 :::column:::
-[Part 1: Fundamentals of Bicep](xref:learn.bicep-fundamentals)
+[Part 1: Fundamentals of Bicep](xref:learn.fundamentals-bicep)
 :::column-end:::
 :::column:::
-[Part 2: Intermediate Bicep](xref:learn.bicep-intermediate)
+[Part 2: Intermediate Bicep](xref:learn.intermediate-bicep)
 :::column-end:::
 :::column:::
-[Part 3: Advanced Bicep](xref:learn.bicep-advanced)
+[Part 3: Advanced Bicep](xref:learn.advanced-bicep)
 :::column-end:::
 :::row-end:::
 
