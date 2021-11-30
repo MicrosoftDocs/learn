@@ -2,7 +2,7 @@ Over the course of this module, you have explored the features of Azure Arc enab
 
 Given the complexity, global presence, and hybrid nature of Contoso's computing environment, you concluded that the optimal way to streamline its management and maintenance was to leverage the functionality of Azure Arc enabled servers. With this approach, Contoso will benefit from the centralized, at-scale management provided by Azure Arc while still being able to retain some on-premises workloads. This will also address challenges associated with the multi-cloud strategy that Contoso wants to pursue. 
 
-You also advise the Contoso's CIO that Contoso could further benefit by integrating their servers with such Azure services as Azure Monitor, Azure Security Center, Azure Automation Update Management, and Azure Automation Desired State Configuration (DSC). Cloud-based monitoring might even potentially eliminate the need for an on-premises monitoring system. With existing Azure resources, this will provide a uniform monitoring solution that takes advantage of cloud hyperscale and seamlessly integrates with other Azure services. 
+You also advise the Contoso's CIO that Contoso could further benefit by integrating their servers with such Azure services as Azure Monitor, Microsoft Defender for Cloud, Azure Automation Update Management, and Azure Automation Desired State Configuration (DSC). Cloud-based monitoring might even potentially eliminate the need for an on-premises monitoring system. With existing Azure resources, this will provide a uniform monitoring solution that takes advantage of cloud hyperscale and seamlessly integrates with other Azure services. 
 
 ## Additional reading
 

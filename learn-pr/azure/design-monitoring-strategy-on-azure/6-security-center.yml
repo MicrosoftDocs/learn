@@ -1,32 +1,32 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
-  title: Analyze infrastructure security by using Azure Security Center
-  description: Analyze infrastructure security by using Azure Security Center
+  title: Analyze infrastructure security by using Microsoft Defender for Cloud
+  description: Analyze infrastructure security by using Microsoft Defender for Cloud
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze infrastructure security by using Azure Security Center
+title: Analyze infrastructure security by using Microsoft Defender for Cloud
 durationInMinutes: 10
 content: |
   [!include[](includes/6-security-center.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why would you use Azure Security Center?
+  - content: Why would you use Microsoft Defender for Cloud?
     choices:
     - content: You want to secure an infrastructure that consists of on-premises and cloud resources.
       isCorrect: True
-      explanation: Azure Security Center helps you secure your on-premises and cloud resources.
+      explanation: Microsoft Defender for Cloud helps you secure your on-premises and cloud resources.
     - content: You want to secure an infrastructure that consists of only cloud resources.
       isCorrect: false
-      explanation: Azure Security Center helps you secure both on-premises and cloud resources.
+      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
     - content: You want to secure an infrastructure that consists of only on-premises resources.
       isCorrect: false
-      explanation: Azure Security Center helps you secure both on-premises and cloud resources.
-  - content: How can you prevent persistent access to your virtual machines by using Azure Security Center?
+      explanation: Microsoft Defender for Cloud helps you secure both on-premises and cloud resources.
+  - content: How can you prevent persistent access to your virtual machines by using Microsoft Defender for Cloud?
     choices:
     - content: Use playbooks to block access.
       isCorrect: false
