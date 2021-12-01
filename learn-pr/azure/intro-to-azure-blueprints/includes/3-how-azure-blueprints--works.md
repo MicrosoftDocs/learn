@@ -1,65 +1,41 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## How Azure Blueprints works
 
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
+The Azure Blueprint is backed by the globally distributed Azure Cosmos DB, which means that the blueprint objects are replicated to multiple Azure regions with low latency, high availability and consistent access to your objects.
 
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how (features) of (product) work to (solve problem)."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
+All of this are available to you at no costs, since the only costs with Azure Blueprints will be associated with the resources deployed through a blueprint, like a virtual machine, storage, database, etc.
 
-    Heading: none
+The operation of the Azure Blueprints could be divided:
 
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+* Composition
+* Management
+* Scale
 
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
+### Composition
 
-    Goal:
-        Cover the components of (product) and how they work.
-        Repeat this pattern multiple times as needed.
+During the composition, you will be designing your blueprint. The design involves the specification of artifacts (and their related parameters) to be used:
 
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
+* Role based access controls that will be applied
+* The resource groups that will be created to store the Azure resources
+* The policies you would like to create to enforce business rules
+* The Azure Resource Manager template which you would like to deploy in order to automate resource creation
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+### Management
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Remember that as a package, your blueprint will have a lifecycle. Then the lifecycle of a blueprint consists of:
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+* Creation of a blueprint
+* Publishing of the blueprint
+* Assignment of the blueprint
+* Versioning of the blueprint
+* Deletion of a blueprint or a specific blueprint version
+* Track the blueprint assignments
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+### Scale
 
-<!-- Do not add a unit summary or references/links -->
+The scale is the advantage of use blueprints to multiple subscriptions through the scope of a management group, enforcing the usage of governance as code in your organization among different subscriptions. Besides this, the blueprint package could be used in a repeatable manner to best meet your needs.
+
+## Azure Blueprints workflow
+
+Here is a sample about the Azure Blueprints workflow with the overall process.
+
+:::image type="content" source="../media/3-how-it-works.png" alt-text="Illustration on how Azure Blueprint works.":::
