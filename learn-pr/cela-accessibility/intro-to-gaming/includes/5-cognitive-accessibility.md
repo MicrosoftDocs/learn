@@ -16,24 +16,54 @@ In the following video, you'll learn how to identify common cognitive elements t
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGaM]
 
+> [!IMPORTANT]
+> The concept of cognitive accessibility is very complex. It involves a much broader scope of functional tasks and accessibility considerations than those introduced in this module. The concepts introduced in this module are foundational in nature and only serve as a starting point for building your cognitive accessibility subject matter expertise.
+
 ## Cognition and disability
 
-Cognition is another area influenced by a multitude of factors. Primary aspects of cognition include learning or processing information, sustaining attention, and memorizing information provided by games to inform future actions. Players with cognitive disabilities may only experience challenges related to one or two of these components or they may have learning, attention, and memory-related disabilities. Being tired, stressed, or sick can also make it difficult for any player to have difficulty sustaining attention or remembering what their character was last up to.
+Cognition is another area influenced by a multitude of factors. The primary aspects of cognition discussed in this module include:
+ - Maintaining attention to game information provided despite the presence of distraction 
+ - Memorizing information provided by games to inform future actions
+ - Assessing all information provided to make the correct decision on how to proceed in the game
+
+Cognitive, learning, or other disabilities that contribute to a player's ability to perform the actions previously mentioned can impact player experiences in many different ways.
+
+Situational circumstances like being tired, stressed, or sick while gaming can also contribute to difficulty maintaining attention, memorizing and recalling information, and making appropriate decisions for next steps.
+
+A foundational understanding and awareness of these differences is needed in order to consult with a wide array of players with cognitive disabilities to inform effective solutions that address each of these unique experiences.
 
 ### Attention
 
-Attention can be impacted by a wide range of sensory stimuli. While some individuals can easily ignore an incoming text notification on their phone while playing, for others, sustaining attention amidst environmental and in-game distractions can be difficult . Players with disabilities that impact attention may experience barriers when gaming experiences include lots of visual and audio stimuli. These stimuli can be notifications from the game or platform, animated backgrounds behind the text, and otherwise “loud” or “busy” user interfaces.
+Attention can be impacted by a wide range of sensory stimuli. While some individuals can easily ignore an incoming text notification on their phone while playing, for others, sustaining attention amidst environmental and in-game distractions can be difficult.
 
-The ability to adjust the length and presence of notifications and background animations is one way in which developers who find these attention-getting mechanisms distracting.
+Players with disabilities that impact attention may experience barriers when gaming experiences include lots of visual and audio stimuli. These stimuli can be notifications from the game or platform, animated backgrounds behind the text, and otherwise “loud” or “busy” user interfaces.
+
+In general, the following supports can help players in eliminating distractions that can detract from game experiences:
+
+ - The ability to customize or disable background animations or moving content that appears on screen as players attempt to read static text
+ - The ability to adjust the length and presence of notifications
 
 ### Memory
 
-Navigating through gaming experiences often requires players to recall past information to inform future decisions. This information can include things like the control scheme for the game, events that happened in the storyline, and important locations in the game and how to get to them. For players who have difficulty remembering information like this, you can take different approaches to provide this information in an accessible way across various aspects of the game.
+Navigating through gaming experiences often requires players to recall past information to inform future decisions. This information can include things like the control scheme for the game, events that happened in the storyline, and important locations in the game and how to get to them.
 
-In general, the ability to reference information like control schemes, objective logs, or area maps at any time can eliminate the need for players to memorize this information.
+For players who have difficulty remembering information like this, in general, providing the following supports can help decrease the cognitive demands placed on players to memorize and recall important game information:
+
+ - A list of past and current objective tasks that can be referenced at any time
+ - A way to reference the game's control scheme
+ - A means of freely practicing these controls in an isolated environment
+ - Maps, waypoint markers, and other directional supports that eliminate the need for players to recall important game locations and how to find them
 
 ### Learning and cognitive processing
 
-In gaming, players are often given complex objectives or tasks that they must us their problem-solving skills to navigate. Some of these tasks may be easily understood while other may require additional hints or cues to help the play determine what to do next.
+In gaming, players are often given complex objectives or tasks that gate progress until solved. The way to complete some of these tasks may be easily understood, while other solutions can require players to piece together subtle cues from the game that are not clearly obvious.
 
-Providing options for players to customize the cognitive demands of a game experience by enabling hints, waypoint markers, objective logs, or the ability to bypass these aspects of the game altogether can help ensure that players do not get blocked from progress.
+For example, let's say a player is met by a locked door blocking the entrance to the game's next level. Despite circling around for many hours, the player cannot determine what is needed in order to unlock the door.
+
+The game may have provided subtle cues leading up to this experience, like the presence of a random altar in a previous game area. Ideally, the player was supposed to have placed a gem they received on the altar as they passed it as a prerequisite of this door becoming unlocked when approached.
+
+Unfortunately, this player is unable to deduce this information. Therefore, they become blocked from moving forward. In these types of situations, general approaches that can support players may include: 
+
+- The option to enable hints when the game senses a player is stuck
+- The ability to bypass certain types of challenges if they cannot be unlocked
+- Providing the references outlined in the previous section like objective logs, maps, and a list of collected items so players have additional opportunities to review what's happened thus far to optomize their chances of piecing together a wide array of information

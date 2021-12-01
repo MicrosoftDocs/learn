@@ -1,6 +1,6 @@
 Intro to input accessibility
 
-## Identifying input-based elements
+## Input and Gaming
 
 After cognitive decisions are made about next steps in the game, players must act upon those decisions. This typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
 
@@ -9,6 +9,8 @@ After cognitive decisions are made about next steps in the game, players must ac
 - Players must be able to activate a multitude of different inputs to engage in basic play.
 
 In the following video, you'll learn to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features are not provided.
+
+> [!VIDEO]
 
 ## Mobility and disability
 
