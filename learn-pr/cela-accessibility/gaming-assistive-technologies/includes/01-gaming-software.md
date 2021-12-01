@@ -24,7 +24,7 @@ In gaming, screen readers should essentially convey what is happening visually w
 
 In the following video, the player adjusts their screen narration settings at the Xbox platform level. Next, they launch the game Forza Horizon 5. The game launches with its title-provided screen reader already enabled. This is because the user has screen narration enabled at the platform level, and the game is able to read and apply the user's settings to the game upon launch.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPDLf]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPDLf]
 
 ### Contrast settings
 
@@ -90,7 +90,7 @@ These tools may be provided by the gaming platform you are shipping on for certa
 - Speech-to-text: Transcribes incoming speech from other players into text on-screen in real time. Players who cannot hear voice chat can read what other players have said aloud on their screen.
 - Text-to-speech: Converts text typed by the player into synthesized audio that is read aloud to all other players in the voice channel. This essentially allows players who cannot speak verbally to have their thoughts expressed to the rest of the players in their party aloud.
 
-:::image type="content" source="../media/player-comms.png" alt-text="The Xbox Accessibility Game and Chat Transcription settings are show. Two columns of settings are shown. The first column of settings is labelled Party chat options. Underneath are two checkboxes, Speech-to-text and Text-to-speech. A list box is shown labeled, Text-to-speech voice: Guy. The second column of settings is labelled, Game transcription. Underneath are three check boxes, Speech-to-text, Text-to-speech, and Let game read to me. A list box is shown labelled, In-game chat voice: Microsoft Mark. Text on the screen reads, Turn on speech-to-text to transcribe other players’ voices into text on your device, when you are in a system party chat.":::
+:::image type="content" source="../media/player-comms.png" alt-text="The Xbox Accessibility Game and Chat Transcription settings are show. Two columns of settings are shown. The first column of settings is labeled Party chat options. Underneath are two checkboxes, Speech-to-text and Text-to-speech. A list box is shown labeled, Text-to-speech voice: Guy. The second column of settings is labeled, Game transcription. Underneath are three check boxes, Speech-to-text, Text-to-speech, and Let game read to me. A list box is shown labeled, In-game chat voice: Microsoft Mark. Text on the screen reads, Turn on speech-to-text to transcribe other players’ voices into text on your device, when you are in a system party chat.":::
 
 ### Captioning
 
@@ -111,7 +111,7 @@ Captions can support players at the platform and individual game title levels to
 
 The following image displays the Xbox Platform's captioning settings. Note the vast array of customization options that work to ensure that captioned text is also accessible to players from a visual perspective. Games and applications can choose to read these settings and use them to adjust how their caption systems present information to their players.
 
-:::image type="content" source="../media/caption.png" alt-text="The Xbox Accessibility Captioning settings are shown. On the left of the screen are three radio buttons, “Captioning off,” “On using default style,” and “On using custom style.” “On using custom style” is set. To the right is a column of settings labelled “Caption Font.” These include list items such as, “Caption color: White,” “Caption transparency: Opaque,” “Caption Size: 200%,” “Caption Style: Default,” and “Caption Effects: Default.” To the right is another column of settings labeled “Background & window.” These include list items such as, “Background color: Black,” “Background transparency: Opaque,” “Window color: Black,” and “Window transparency: Transparent.” Below is a window titled, “Preview” and shows sample captions on top of sample game graphics.":::
+:::image type="content" source="../media/caption.png" alt-text="The Xbox Accessibility Captioning settings are shown. On the left of the screen are three radio buttons, “Captioning off,” “On using default style,” and “On using custom style.” “On using custom style” is set. To the right is a column of settings labeled “Caption Font.” These include list items such as, “Caption color: White,” “Caption transparency: Opaque,” “Caption Size: 200%,” “Caption Style: Default,” and “Caption Effects: Default.” To the right is another column of settings labeled “Background & window.” These include list items such as, “Background color: Black,” “Background transparency: Opaque,” “Window color: Black,” and “Window transparency: Transparent.” Below is a window titled, “Preview” and shows sample captions on top of sample game graphics.":::
 
 Forza Horizon 5 provides users the ability to customize how spoken dialogue appears on screen, allowing users to adjust not only the size and background opacity of their subtitles, but also have key words highlighted to more easily draw player attention to important information.
 
@@ -135,7 +135,7 @@ When developing game titles, consider the following steps:
 
  - Assess the scope of assistive tools that are provided by the platform(s) your title will ship on.
  - Ensure your product works smoothly with any assistive tools that are present.
- - Regardless of what platform-level accessibility tools exist, aim to include more robust, in-game verison of these functions and features as platform level assistive technology is often designed to be a “last resort” for gamers who have no other options and may not provide an ideal experience.
+ - Regardless of what platform-level accessibility tools exist, aim to include more robust, in-game version of these functions and features as platform level assistive technology is often designed to be a “last resort” for gamers who have no other options and may not provide an ideal experience.
 
 When developing new gaming platforms or platform features, consider the following steps:
 
