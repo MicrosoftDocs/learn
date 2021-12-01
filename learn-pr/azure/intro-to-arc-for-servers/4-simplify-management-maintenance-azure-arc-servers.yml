@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-arc-for-servers.4-simplify-management-maintenance-azure-arc-servers
+uid: learn.azure.intro-to-arc-for-servers.simplify-management-maintenance-azure-arc-servers
 title: How can you simplify management and maintenance of Azure Arc enabled servers?
 metadata:
   title: How can you simplify management and maintenance of Azure Arc enabled servers?
   description: How can you simplify the management and maintenance of Azure Arc enabled servers?
-  ms.date: 12/14/2020
+  ms.date: 12/01/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
@@ -27,7 +27,6 @@ quiz:
     - content: "Use the Azure Arc enabled servers blade in the Azure portal."
       isCorrect: true
       explanation: "That's correct. The blade allows the administrator to readily identify server name, OS version, OS build, manufacturer, model, serial number, the number of CPU cores, and the amount of memory."
-
   - content: "What is the primary Azure Monitor-related benefit of Azure Arc enabled servers comparing with servers which are not Azure Arc enabled?"
     choices:
     - content: "The ability to capture diagnostic logs."
