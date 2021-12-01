@@ -67,7 +67,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
             {
                 int result = Fibonacci(5);
                 Console.WriteLine(result);
-                Console.ReadKey(true);
+                Console.Read();
             }
             static int Fibonacci(int n)
             {
