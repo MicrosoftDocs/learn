@@ -26,7 +26,7 @@ quiz:
     - content: "Allows for developers to create many customized experiences specifically for players with disabilities."
       isCorrect: false
       explanation: "Incorrect. Players with disabilities should not be redirected to a different gameplay experience in order to enjoy the game."
-  - content: "Which of the following is not approach that can be used to support players with disabilities?"
+  - content: "Which of the following is not an approach that can be used to support players with disabilities?"
     choices:
     - content: "Allow players to pause a game or initiate game saves at any point in time."
       isCorrect: false

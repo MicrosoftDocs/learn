@@ -16,9 +16,13 @@ The following video introduces basic concepts about gaming and disability. It in
 
 ## Solve for one, extend to many
 
+Before exploring more specific game accessibility learning concepts about vision, audio, cognition, input, it's important to first familiarize yourself with the inclusive design principle of "solve for one, extend to many."
+
 The inclusive design principle “solve for one, extend to many” introduces the premise that intentional design efforts geared toward creating accessible experiences for people with disabilities result in universally beneficial features and settings. For example, accessible automatic doors for wheelchair access are also often used by the following individuals:
 
 - Those who have their hands full and cannot open the door.
 - Those who wish to avoid touching door handles for hygienic reasons.
 
 When it comes to game accessibility, it is important to note that options or features intended to facilitate access for a specific group of players can often provide better experiences for all players. For example, captions and subtitles are intended to make game experiences accessible to players who are d/Deaf or hard of hearing. They may also assist players who are easily distracted and miss audio cues or players in a very loud environment can also benefit from these features.
+
+As you dive deeper into 
