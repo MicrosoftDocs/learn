@@ -60,9 +60,9 @@ You can further filter based on a time interval, which allows you to retroactive
 
 **Queries with High Variation** - This report showcases queries that have a high degree of variance between executions and can be sorted by any of the above execution metrics.
 
-**Query Wait Statistics** - This report allows you to see waits statistics aggregated, and drill-through to get further information on queries that spent the most time waiting. Note that this wait information is aggregated and not as detailed as what you might observe in the *sys.dm_os_wait_stats* DMV.
+**Query Wait Statistics** - This report allows you to see waits statistics aggregated, and drill-through to get further information on queries that spent the most time waiting. Note that this wait information is aggregated and not as detailed as what you might observe in the `sys.dm_os_wait_stats` DMV.
 
-**Tracked Queries** - This report is filtered by query_Id and allows you to view the performance of a specific query and its execution plans. You can manually enter a query_id or you can add queries from the regressed or top resource consuming query reports. The query_id can be captured from the catalog *view sys.query_store_query*.
+**Tracked Queries** - This report is filtered by query_Id and allows you to view the performance of a specific query and its execution plans. You can manually enter a query_id or you can add queries from the regressed or top resource consuming query reports. The query_id can be captured from the catalog view `sys.query_store_query`.
 
 ## Performance overhead of the Query Store
 

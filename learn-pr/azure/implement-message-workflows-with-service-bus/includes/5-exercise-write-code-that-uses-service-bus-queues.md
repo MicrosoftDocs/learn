@@ -272,7 +272,7 @@ To complete the component that sends messages about sales, you must add an `awai
 1. To configure the handlers, replace that line with the following code.
 
     ```C#
-    processor.ProcessMessagesAsync += MessageHandler;
+    processor.ProcessMessageAsync += MessageHandler;
     processor.ProcessErrorAsync += ErrorHandler;
     ```
 
@@ -321,28 +321,30 @@ To complete the component that sends messages about sales, you must add an `awai
     using System.Text;
     using System.Threading.Tasks;
     using Azure.Messaging.ServiceBus;
-    
+
     namespace privatemessagereceiver
     {
         class Program
         {
-    
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+
+            const string ServiceBusConnectionString = "Endpoint=sb://<examplenamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             const string QueueName = "salesmessages";
-    
+
             static void Main(string[] args)
             {
-    
+
                 ReceiveSalesMessageAsync().GetAwaiter().GetResult();
-    
+
             }
-    
+
             static async Task ReceiveSalesMessageAsync()
             {
+
                 Console.WriteLine("======================================================");
-                Console.WriteLine("Press ENTER on the keyboard to exit after receiving all the messages.");
+                Console.WriteLine("Press ENTER key to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
-    
+
+
                 var client = new ServiceBusClient(ServiceBusConnectionString);
 
                 var processorOptions = new ServiceBusProcessorOptions
@@ -350,35 +352,40 @@ To complete the component that sends messages about sales, you must add an `awai
                     MaxConcurrentCalls = 1,
                     AutoCompleteMessages = false
                 };
-                
-                ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
+                await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
+                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessErrorAsync += ErrorHandler;
+
 
                 await processor.StartProcessingAsync();
-            
+
                 Console.Read();
-    
-                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
-                await processor.DisposeAsync();
-                await client.DisposeAsync();
+
+                await processor.CloseAsync();
+
             }
 
+            // handle received messages
             static async Task MessageHandler(ProcessMessageEventArgs args)
             {
-                Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
+                string body = args.Message.Body.ToString();
+                Console.WriteLine($"Received: {body}");
+
+                // complete the message. messages is deleted from the queue. 
                 await args.CompleteMessageAsync(args.Message);
             }
-    
+
+            // handle any errors when receiving messages
             static Task ErrorHandler(ProcessErrorEventArgs args)
             {
-                Console.WriteLine($"Message handler encountered an exception {args.Exception}.");
-                Console.WriteLine("Exception context for troubleshooting:");
-                Console.WriteLine($"- Endpoint: {args.FullyQualifiedNamespace}");
-                Console.WriteLine($"- Entity Path: {args.EntityPath}");
-                Console.WriteLine($"- Executing Action: {args.ErrorSource}");
+                Console.WriteLine(args.Exception.ToString());
                 return Task.CompletedTask;
-            }   
+            }
         }
     }
+    
     ```
 1. Save the file either through the **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
