@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2021
+  ms.date: 12/01/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
@@ -19,13 +20,13 @@ quiz:
   questions:
   - content: "Which of the following features of Azure networking enables the redirect of Internet traffic back to the company's on-premises servers for packet inspection?"
     choices:
-    - content: "User Defined Routes"
+    - content: "User Defined Routes"
       isCorrect: true
       explanation: "User-defined routes and forced tunneling. Use forced tunneling to redirect internet bound traffic back to the company's on-premises infrastructure. Forced tunneling is commonly used in scenarios where organizations want to implement packet inspection or corporate audits. Forced tunneling in Azure is configured via virtual network user-defined routes (UDR)."
-    - content: "Cross-premises network connectivity"
+    - content: "Cross-premises network connectivity"
       isCorrect: false
       explanation: "Use cross-premises network feature to connect multiple networks within Azure but no on-premises."
-    - content: "Traffic Manager"
+    - content: "Traffic Manager"
       isCorrect: false
       explanation: "Traffic Manager is a load balancer style tool, to move network traffic to the best network application in the cloud, no on-premises."
   - content: "When configuring Azure Firewall, the organization needs to allow Windows Update network traffic through the firewall. Which of the following rules should be configured?"
