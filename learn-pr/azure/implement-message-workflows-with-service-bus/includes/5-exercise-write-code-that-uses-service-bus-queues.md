@@ -123,10 +123,16 @@ To complete the component that sends messages about sales, you must add an `awai
     // Close the connection to the sender here
     ```
     
-1. Replace that line with the following code to close the connection.
+1. Replace that line with the following code to dispose sender and client objects.
 
     ```C#
-    await queueClient.CloseAsync(); 
+    finally
+    {
+        // Calling DisposeAsync on client types is required to ensure that network
+        // resources and other unmanaged objects are properly cleaned up.
+        await sender.DisposeAsync();
+        await client.DisposeAsync();
+    }
     ```
     
 1. Your final code for **privatemessagesender/Program.cs** should resemble the following example:
@@ -167,7 +173,13 @@ To complete the component that sends messages about sales, you must add an `awai
                 {
                     Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
                 }
-            await queueClient.CloseAsync();    
+                finally
+                {
+                    // Calling DisposeAsync on client types is required to ensure that network
+                    // resources and other unmanaged objects are properly cleaned up.
+                    await sender.DisposeAsync();
+                    await client.DisposeAsync();
+                }
             }
         }
     }
