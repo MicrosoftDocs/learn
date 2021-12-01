@@ -20,7 +20,7 @@ A foundational awareness of these differences warrant the need to consult with a
 
 Players who cannot hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players may miss important game information when it is portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and non-player character dialogue cannot be used to inform the gameplay of these players.
 
-General approaches to support these players that differ from would include:
+General approaches to support these players could include:
 
 - An option to enable subtitles and captions for all important character dialogue
 - Representing audio cues like enemy footsteps through visual cues within the UI or within captions
@@ -30,7 +30,7 @@ General approaches to support these players that differ from would include:
 
 Players with hearing disabilities may have difficulty hearing sounds of certain frequencies, volume levels, or sounds coming from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there may be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This can make it difficult to clearly hear the sound channels that are most important to gameplay.
 
-Approaches that should be considered for players with partial hearing would include supports like:
+Approaches that should be considered for players with partial hearing could include:
 
 - The ability to adjust the volume levels for individual class of audio (player chat, music, effects, UI, dialogue, and voice chat).  
 - The option to enable mono audio output.
