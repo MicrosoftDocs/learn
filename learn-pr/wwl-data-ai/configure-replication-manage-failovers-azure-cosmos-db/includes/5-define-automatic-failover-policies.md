@@ -7,7 +7,7 @@ By default, automatic failover is not enabled for an Azure Cosmos DB account. Au
 As an illustrative example, an Azure Cosmos DB account is configured with a write region, **West US 2**, and two read regions of **East US** and **UK South**. The automatic failover priorities are provided in this table:
 
 | **Region** | **Priority** |
-| ：--- | :--- |
+| :--- | :--- |
 | **West US 2** | (N/A - write region) |
 | **East US** | 1 |
 | **UK South** | 2 |
