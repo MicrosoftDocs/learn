@@ -14,7 +14,7 @@ summary: Get familiar with the C++ programming language! Construct a C++ program
 abstract: |
   In this module you will:
   - Write a program in C++ by using basic syntax.
-  - Understand C++ terminology, including data types, libraries, and functions.
+  - Recognize C++ terminology, including data types, libraries, and functions.
   - Identify and correct common programming errors.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
