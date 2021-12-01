@@ -27,8 +27,8 @@ You work on a team of developers, and you're looking to evaluate C++. You want t
 In this module, you'll learn to:
 
 - Write a program in C++ by using basic syntax.
-- Learn C++ terminology, including data types, libraries, and functions.
-- Learn how to identify and correct common programming errors.
+- Understand C++ terminology, including data types, libraries, and functions.
+- Identify and correct common programming errors.
 
 ## What is the main goal?
 
