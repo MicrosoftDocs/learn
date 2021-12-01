@@ -10,7 +10,6 @@ After cognitive decisions are made about next steps in the game, players must ac
 
 In the following video, you'll learn to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features are not provided.
 
-
 ## Mobility and disability
 
 Players with disabilities that impact arm and hand movement can also experience unique barriers to play. The experiences of these players can differ based on the nature of physical demands a game requires for input. When learning about the broad range of player experiences related to mobility and input, an awareness of the following factors is an important start:

@@ -12,8 +12,6 @@ Additionally, the team can consider the cognitive and physical demands that thei
 
 In this unit, you'll learn about common game elements that can pose unintentional barriers to access for players with disabilities. An awareness of these common elements is an important first step in determining where players can be unintentionally excluded during the preliminary stages of development.
 
-
-
 ## Identifying visual elements
 
 Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, it's important to think about the following questions related to visual information:
