@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Why is an awareness of the wide range of player experiences important when addressing visual, audio, input, and cognitive accessibility?"
+  - content: "Which of the following options is most likely to introduce unintentional audio barriers?"
     choices:
-    - content: "A single approach to assist players with one type of disability will not address the barriers that all players with similar disabilities face."
+    - content: "A game uses audio cues to inform players of a weapon fire."
       isCorrect: true
-      explanation: "Correct. Understanding the needs across a wide range of players is necessary to create a game that can be enjoyable and playable by everyone."
-    - content: "Understanding the different disability personas allows developers to decide which disability persona to focus on."
+      explanation: "Correct. Weapon sounds, if not accompanied by some other visual or haptic feedback, could introduce an audio barrier for those who cannot hear. Weapon sounds can indicate the presence of enemies, knowledge of which may be necessary to complete a game."
+    - content: "A game contains non-player characters whose dialogue is spoken aloud and represented as text."
       isCorrect: false
-      explanation: "Incorrect. Developers should not focus on a single disability, instead on creating a game experience that can be enjoyed by the greatest number of players possible."
-    - content: "Allows for developers to create many customized experiences specifically for players with disabilities."
+      explanation: "Incorrect. By representing character dialogue both audibly and visually, an unintentional audio barrier is more likely to be avoided."
+    - content: "A game identifies chests nearby with an audio “ping” and a haptic rumble."
       isCorrect: false
-      explanation: "Incorrect. Players with disabilities should not be redirected to a different gameplay experience in order to enjoy the game."
-  - content: "Which of the following is not an approach that can be used to support players with disabilities?"
+      explanation: "Incorrect. By representing the chests location with both audio and haptic feedback, an audio barrier is avoided."
+  - content: "Which of the following options would be useful in supporting a player without hearing in accessing the information being provided?"
     choices:
-    - content: "Allow players to pause a game or initiate game saves at any point in time."
+    - content: "An option to enable mono audio."
       isCorrect: false
-      explanation: "Incorrect. Developers should provide the option to pause a game to support players who may experience fatigue from input demands like quick, repetitive motions."
-    - content: "Representing audio cues like enemy footsteps through visual cues within the UI or within captions."
+      explanation: "Incorrect. Mono audio can be helpful for individuals with hearing loss on one side, but still requires the user to be able to perceive some level of sound."
+    - content: "Menu Narration."
       isCorrect: false
-      explanation: "Incorrect. Developers should provide audio based options to visual elements in the game to meet the needs of players with visual disabilities."
-    - content: "Allow players to remap up to 4 controls in a game."
+      explanation: "Incorrect. Menu narration is helpful for players without vision. It is not an effective way of providing information for players without hearing."
+    - content: "Captions."
       isCorrect: true
-      explanation: "Correct. Developers should enable players to remap all controls in a game to meet the needs of players with specific dexterity and fine motor disabilities."
+      explanation: "Correct. Captions provide a visual indication of important dialogue and sound for those who are unable to hear them."

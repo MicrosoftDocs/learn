@@ -15,27 +15,27 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following examples is most likely to introduce unintentional barriers related to visual information?"
+  - content: "Which of the following options is most likely to introduce input barriers?"
     choices:
-    - content: "An on-screen countdown clock graphic that also announces the number of seconds left aloud through audio channels."
+    - content: "A game has a large, distracting animation behind the main menu."
       isCorrect: false
-      explanation: "Incorrect. A timer that announces the time left through audio provides an additional means to consume the information."
-    - content: "The player's current health status is represented by an on-screen meter graphic."
+      explanation: "Incorrect. A distracting animation behind a menu may introduce a cognitive barrier, not an input barrier."
+    - content: "A game has players move their character by holding down a thumb stick in the direction they wish to go."
       isCorrect: true
-      explanation: "Correct. Any information that is shown only through UI, and not accessible by a screen reader makes that information inaccessible to players with visual disabilities."
-    - content: "A game that uses large text sizes by default, therefore other customization options are not provided."
+      explanation: "Correct. By forcing individuals to hold the stick down in the direction they wish to move, they may introduce a barrier for players who do not have the physical strength to keep the stick held down for more than a moment."
+    - content: "A game requires a player to hold down the right stick button to crouch or enable an option to toggle crouching."
       isCorrect: false
-      explanation: "Incorrect. A default size that is large to some players may be unreadable for others. Without customization options, unintentional barriers can occur."
-  - content: "Which of the following examples is most likely to introduce unintentional barriers related to performing cognitive tasks?"
+      explanation: "Incorrect. By providing an option to toggle crouching instead of holding down a button, an input barrier is avoided."
+  - content: "A game requires a player to mash the “A” button to shoot rapidly. What aspect of mobility would NOT impact such a game mechanic?"
     choices:
-    - content: "Providing players with an option to enable reminders of which button to use on a jump sequence."
-      isCorrect: false
-      explanation: "Incorrect. Providing in game reminders of what game mechanics to use for a particular action eliminates the need for a player to remember all combinations."
-    - content: "Providing players with a list of objectives at the beginning of a level that cannot be referenced again until the level is complete."
+    - content: "Endurance."
       isCorrect: true
-      explanation: "Correct. This situation places a demand on players to memorize information critical to gameplay. Players who cannot recall the information can experience unintentional barriers that block progress."
-    - content: "Providing tutorials of new mechanics introduced in gameplay."
+      explanation: "Correct. Endurance refers to how long someone can engage in an activity before becoming tired. The ability to repeatedly press the same button can be impacted by an individual’s level of endurance."
+    - content: "Dexterity."
       isCorrect: false
-      explanation: "Incorrect. Providing an opportunity for players to try out and familiarize themselves with new mechanics in a trial space removes barriers."
+      explanation: "Incorrect. Dexterity refers to the rapid movement of a player’s fingers to activate controls within a specific time frame. The ability to repeatedly press the same button can be impacted by an individual’s dexterity."
+    - content: "Coordination"
+      isCorrect: false
+      explanation: "Incorrect. Coordination refers to the ability to perform smooth, accurate movements. While moving the character might require coordination, the act of mashing a button repeatedly to fire does not require smooth or accurate movements."
  
 

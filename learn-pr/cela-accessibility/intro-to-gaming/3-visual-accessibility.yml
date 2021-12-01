@@ -15,26 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following examples is most likely to introduce unintentional barriers related to visual information?"
+  - content: "Which of the following options is most likely to introduce unintentional visual barriers?"
     choices:
     - content: "An on-screen countdown clock graphic that also announces the number of seconds left aloud through audio channels."
       isCorrect: false
-      explanation: "Incorrect. A timer that announces the time left through audio provides an additional means to consume the information."
-    - content: "The player's current health status is represented by an on-screen meter graphic."
-      isCorrect: true
-      explanation: "Correct. Any information that is shown only through UI, and not accessible by a screen reader makes that information inaccessible to players with visual disabilities."
-    - content: "A game that uses large text sizes by default, therefore other customization options are not provided."
+      explanation: "Incorrect. By representing enemy damage both audibly and visually, a visual barrier is more likely to be avoided."
+    - content: "A game represents incoming enemy damage with a red halo on-screen, and an audio cue of the character grunting."
       isCorrect: false
-      explanation: "Incorrect. A default size that is large to some players may be unreadable for others. Without customization options, unintentional barriers can occur."
-  - content: "Which of the following examples is most likely to introduce unintentional barriers related to performing cognitive tasks?"
+      explanation: "Incorrect. By representing enemy damage both audibly and visually, a visual barrier is more likely to be avoided."
+    - content: "A game identifies enemy characters with a red outline and ally characters with a green outline."
+      isCorrect: true
+      explanation: "Correct. Individuals who are color blind may not be able to distinguish between enemies and allies, thus presenting a visual barrier."
+  - content: "Which of the following options would likely be useful in assisting a player without vision?"
     choices:
-    - content: "Providing players with an option to enable reminders of which button to use on a jump sequence."
+    - content: "A screen magnification tool."
       isCorrect: false
-      explanation: "Incorrect. Providing in game reminders of what game mechanics to use for a particular action eliminates the need for a player to remember all combinations."
-    - content: "Providing players with a list of objectives at the beginning of a level that cannot be referenced again until the level is complete."
+      explanation: "Incorrect. While useful for someone with low vision, a player without vision cannot benefit from screen magnification as it requires that the user can visually perceive the larger on-screen elements."
+    - content: "Menu narration."
       isCorrect: true
-      explanation: "Correct. This situation places a demand on players to memorize information critical to gameplay. Players who cannot recall the information can experience unintentional barriers that block progress."
-    - content: "Providing tutorials of new mechanics introduced in gameplay."
+      explanation: "Correct. Menu narration can allow someone who has no vision to navigate through the game’s user interface."
+    - content: "Resizable text."
       isCorrect: false
-      explanation: "Incorrect. Providing an opportunity for players to try out and familiarize themselves with new mechanics in a trial space removes barriers."
-
+      explanation: "Incorrect. While use for someone with low vision, someone without vision cannot benefit from text resizing as it requires that the user can visually perceive the larger text."
+  - content: "Which of the following options is not a reason that developers should have a foundational awareness of diverse player experiences when learning about game accessibility?"
+    choices:
+    - content: "So developers can use this foundational awareness to immediately drive effect change in the development."
+      isCorrect: true
+      explanation: "Correct. Foundational developer awareness of differing player experiences should not be used to make immediate development decisions. This awareness is intended to drive developer's understanding of accessibility as an effort that cannot be achieved with a one-size-fits-all approach. It is intended to encourage developers to collaborate with players who have lived experiences with accessibility barriers to inform effective accessibility solutions."
+    - content: "To drive awareness of the fact that game accessibility is not a one-size-fits-all approach."
+      isCorrect: false
+      explanation: "Incorrect. This option is a reason that developers should have a foundational awareness of diverse player experiences. Without an awareness of diverse player needs and experiences, gaming experiences and products may ship without addressing the needs of large groups of players."
+    - content: "To drive developer understanding of the importance of including the perspectives and guidance of players with each of these lived experiences to inform any future accessible design efforts."
+      isCorrect: false
+      explanation: "Incorrect. This option is a reason that developers should have a foundational awareness of diverse player experiences. Without an awareness of these diverse experiences, developers may leave out key groups of players that should be involved in the design process of a game or experience."
