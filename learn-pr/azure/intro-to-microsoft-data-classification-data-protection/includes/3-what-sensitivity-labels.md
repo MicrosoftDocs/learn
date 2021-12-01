@@ -30,4 +30,4 @@ For example, with the encryption settings for a sensitivity label, you can help 
 - Users can't forward an email or copy information from it that contains news about an internal reorganization.
 - The current price list that's sent to business partners can't be opened after a specified date.
 
-All Microsoft Information Protection solutions are implemented by using sensitivity labels. To create and publish these labels, refer to your labeling admin center, such as the Microsoft 365 compliance center. You can also use the Microsoft 365 security center, or the Security &amp; Compliance Center.
+All Microsoft Information Protection solutions are implemented by using sensitivity labels. To create and publish these labels, refer to your labeling admin center, such as the Microsoft 365 compliance center. You can also use the Microsoft 365 Defender portal, or the Security &amp; Compliance Center.

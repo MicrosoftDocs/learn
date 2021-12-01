@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "The Log Analytics agent."
       isCorrect: false
-      explanation: "That's incorrect. The Log Analytics agent is not required when using Azure Arc, although it is recommended since it allows you to implement a rang of Azure hybrid services, such as Azure Monitor or Azure Security Center."
+      explanation: "That's incorrect. The Log Analytics agent is not required when using Azure Arc, although it is recommended since it allows you to implement a rang of Azure hybrid services, such as Azure Monitor or Microsoft Defender for Cloud."
     - content: "The Microsoft Dependency agent."
       isCorrect: false
       explanation: "That's incorrect. The Microsoft Dependency agent is not required when using Azure Arc, although it is recommended, since it facilitates identifying internal and external dependencies of server workloads."

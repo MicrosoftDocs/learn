@@ -77,7 +77,7 @@ The estimate cost savings will be displayed for the recommended actions to help 
 
 ### Security Recommendations
 
-Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard.
+Security recommendations are integrated with Microsoft Defender for Cloud. You can get security recommendations from the Security tab on the Advisor dashboard.
 
 :::image type="content" source="../media/3-advisor-security.png" alt-text="A screenshot depicting some security recommendations for a subscription. Displayed information indicates impact (high, medium, or low), a description of the recommendation, the impacted resource, and a date-time stamp for when the recommendation was last updated.":::
 
