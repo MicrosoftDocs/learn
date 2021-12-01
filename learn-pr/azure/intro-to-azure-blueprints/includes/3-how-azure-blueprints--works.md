@@ -17,7 +17,7 @@ During the composition, you will be designing your blueprint. The design involve
 * Role based access controls that will be applied
 * The resource groups that will be created to store the Azure resources
 * The policies you would like to create to enforce business rules
-* The Azure Resource Manager template which you would like to deploy in order to automate resource creation
+* The Azure Resource Manager template, which you would like to deploy in order to automate resource creation
 
 ### Management
 
@@ -32,10 +32,36 @@ Remember that as a package, your blueprint will have a lifecycle. Then the lifec
 
 ### Scale
 
-The scale is the advantage of use blueprints to multiple subscriptions through the scope of a management group, enforcing the usage of governance as code in your organization among different subscriptions. Besides this, the blueprint package could be used in a repeatable manner to best meet your needs.
+The scale is the advantage of use blueprints to multiple subscriptions streamlining environment creation; for example, ensuring matching environments across production, development and QA subscriptions. This is done through the scope of a management group, enforcing the usage of governance as code in your organization among different subscriptions. Besides this, the blueprint package could be used in a repeatable manner to best meet your needs.
 
-## Azure Blueprints workflow
+## Azure Blueprints Lock
 
-Here is a sample about the Azure Blueprints workflow with the overall process.
+In addition to the change controls in place, Azure Blueprints also offers a resource locking functionality. The resource lock allows the protection of new resources from being tampered with, even with accounts that have the Owner role. Resources protected by resource locks have four states:
+
+* Not Locked;
+* Read Only;
+* Cannot Edit/Delete; and
+* Cannot Delete.
+
+These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure that can have locks overridden by users with the appropriate role-based access controls, this isn’t the case in Azure Blueprints. This security measure protects the consistency of the defined blueprint and the environment it was designed to create from accidental or programmatic deletion or alteration.
+
+## Better together: Azure Blueprints and Azure Resource Manager Templates
+
+
+
+There are a number of options available when it comes to making a decision on Infrastructure as Code (IaC) tooling. Additionally, upon first glance, ARM Templates and Azure Blueprints seem to overlap and perform the same tasks, adding yet another layer of confusion when there are two native solutions.
+
+Since both features can be used to package an environment together and deploy Azure artifacts and resources, what’s the difference?
+
+**ARM Templates** are documents that don’t exist natively within Azure – these templates are normally stored locally or in a central code repository. Once these templates are deployed, there is no connection between the template and the resources that have been deployed. This can lead to issues such as templates not being updated in a timely manner for any changes that are required for the resource (and future resources) or templates being updated without proper documentation as to what might have changed.
+
+**Azure Blueprints** attempt to resolve this issue by maintaining the connection between blueprint definition and blueprint assignment. This relationship allows for tracking and auditing of deployments along with allowing blueprints to update multiple subscriptions at the same time. 
 
 :::image type="content" source="../media/3-how-it-works.png" alt-text="Illustration on how Azure Blueprint works.":::
+
+
+ARM Templates and Azure Blueprints can also work hand in hand. There’s no need to abandon your existing templates in exchange for blueprints, as Azure Blueprints also offers the functionality to embed existing templates into your blueprint. This also has the added function of providing a central resource for your templates as well along with the additional assurance that they can be utilized to their fullest extent. 
+
+There are also a number of third-party offerings that have similar features around governance and compliance. These tools offer a lot of the base Infrastructure as Code benefits, namely being able to standardize and automate deployments, but they have a similar problem to ARM Templates: all of your code base is stored outside of your environment. 
+
+This adds another layer of management needed to ensure that your templates are secure and accessible. In addition, it lacks some of the features that Azure Blueprints provides, such as resource protection using Resource Locks and having native built-in controls for maintenance. 
