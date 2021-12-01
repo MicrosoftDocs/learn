@@ -55,7 +55,7 @@ Supports that decrease coordination demands, like assistive target-lock settings
 
 ### Endurance and gaming
 
-Endurance typically refers to how long someone can engage in an activity before becoming tired. For some players, engaging in gameplay tasks like holding a controller or repeatedly using muscles in the hand (or other body parts used to activate game controls), can cause fatigue or pain after short periods.
+Endurance typically refers to how long someone can engage in an activity before becoming tired. For some players, engaging in game play tasks like holding a controller or repeatedly using muscles in the hand (or other body parts used to activate game controls), can cause fatigue or pain after short periods.
 
 Common game mechanics that tend to introduce fatigue more readily include input demands like quick, repetitive button presses and holding buttons for prolonged periods. Approaches to support these players include providing players with the ability to:
 
