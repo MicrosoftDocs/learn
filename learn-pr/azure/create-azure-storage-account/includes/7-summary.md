@@ -4,9 +4,14 @@ If you tried to achieve the same thing without storage accounts, the end product
 
 Instead, you capture the rules in the settings for a storage account, and those rules are automatically applied to every data service in the account.
 
-[!INCLUDE [](../../../includes/azure-sandbox-cleanup.md)]
+##Clean up
 
-When you're working in your own subscription, you can use the following steps in the Azure portal to delete the resource group and all associated resources.
+When you are using resources created for lessonst that use an active sandbox and the Concierge subscription made available for those lessons, resources are cleaned up automatically when the sandbox expires. But when you are using your own subscription, you must always do the clean up. 
+
+> [!IMPORTANT]
+> When you're working in your own subscription, to avoid unwanted usage charges, you must remove any resources that you create.
+
+Use the following steps in the Azure portal to delete the resource group and all associated resources.
 
 1. In the resource menu, select **Resource groups**.
 
@@ -16,4 +21,6 @@ When you're working in your own subscription, you can use the following steps in
 
 1. In the confirmation pane, you will be prompted to type the resource group name; you can right click and drag the title from the Resource group pane. 
 
-1. When the expected name is a match, **Delete** is available. Select it. It may take several minutes to delete your resource group.
+1. When the expected name is a match, **Delete** is available. 
+ 
+1. Select **Delete**. It may take several minutes to delete your resource group. Check **Notifications** in the Global Controls in the upper right corner of the Azure portal to ensure your operation completed. 
