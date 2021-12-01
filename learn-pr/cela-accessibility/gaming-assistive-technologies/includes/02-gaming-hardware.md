@@ -1,6 +1,6 @@
 You're now familiar with some of the common software-based assistive technologies used by players. AT, however, also includes hardware and physical devices.
 
-In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also offers important insights to consider when developing game experiences that support players who use these devices. 
+In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also offers important insights to consider when developing game experiences that support players who use these devices.
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
