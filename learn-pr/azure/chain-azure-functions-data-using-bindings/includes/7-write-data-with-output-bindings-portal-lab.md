@@ -13,7 +13,7 @@ What might be a good example of offloading of work in our bookmarks scenario? We
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the sandbox resources and resources that you created in previous units, specifically, the Azure Cosmos DB database, bookmakrks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
+> This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
 
 ## Create an HTTP-triggered function
 
@@ -54,7 +54,7 @@ Let's add another Azure Cosmos DB input binding.
     | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `<key>`) must match the one in the container. |
     | **SQL Query (optional)** | _Leave blank_ | We are only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
-    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that function our function receives in the query string to the binding, which is known as the *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up, and the binding will return either 0 (not found) or 1 (found) documents.
+    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up, and the binding will return either 0 (not found) or 1 (found) documents.
 
 1. Select **OK** to save the input binding configuration.
 
@@ -126,7 +126,7 @@ We now have all our bindings set up for your function. It's time to use them in 
 
 1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and in the command bar, select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet, and then in the command bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -181,7 +181,7 @@ So, that's it. Let's see our work in action in the next section.
         ContentType = "application/json"
     })
     ```
-1. In the command bar, select **Save**.  A connection is made, and a log file session open.
+1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
 
 Let's break down what this code does:
 
