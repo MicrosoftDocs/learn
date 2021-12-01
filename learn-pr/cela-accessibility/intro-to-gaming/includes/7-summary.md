@@ -1,10 +1,10 @@
 ## Summary
 
-In this module, you’ve learned about a development team new to accessibility eager to learn more about the space. The following foundational concepts introduced in this module help this team in beginning their accessibility journey:
+In this module, you’ve learned about foundational game accessibility concepts related to the visual, audio, cognitive, and input-related aspects of gaming. Let's recap some of they key points discussed in this module:
 
-- Game experiences are played through a series of feedback loops. These loops involve visual and audio information that is provided by the game. The player’s ability to perceive that information, determine next steps through cognitive reasoning, and provide physical input to act can impact their gaming success. When any aspect of this loop is interrupted due to inaccessible experiences, players can be excluded from play.
+- Game experiences are played through a series of feedback loops. These loops involve visual and audio information that is provided by the game. The player’s ability to perceive that information, determine next steps through cognitive processes, and provide physical input to carry out desired actions. When any aspect of this loop is interrupted due to inaccessible experiences, players can be excluded from play.
 - Many game elements commonly introduce visual, hearing, cognitive, and mobility demands that pose unintentional barriers for players with disabilities. An awareness of these common elements is a critical starting place in understanding game accessibility.
-- Game accessibility cannot be approached through a “one size fits all” mentality. Instead, it is important to break down unique barriers that game elements can introduce to different players and considered them individually.
+- Game accessibility cannot be approached through a “one size fits all” mentality. Instead, it is important to consider the unique player experiences and work directly with players with disabilities to inform effective solutions.
 
 ## Learn more
 

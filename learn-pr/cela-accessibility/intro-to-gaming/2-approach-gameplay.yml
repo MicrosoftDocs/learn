@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. The use of a wheelchair is an example of how a person with a disability can address the mismatch between them and the environment, not the definition of disability."
   - content: "Which of the following options best describes how gameplay should be assessed through the lens of accessibility? A game uses color alone to differentiate enemy and ally characters. Enemies are red. Allies are green."
     choices:
-    - content: "Determining the difference between enemy and ally characters through color alone is an intended challenge part of the game’s overall difficulty."
+    - content: "Determining the difference between enemy and ally characters through color alone is an intended challenge that is part of the game’s overall difficulty."
       isCorrect: false
       explanation: "Incorrect. Games should provide multiple difficulty options so that players can enjoy and complete the game, not create barriers to players you are colorblind."
     - content: "Using color alone to provide information to the player, in this case to help them determine enemy from ally, can introduce unintentional barriers to players with visual disabilities and should be avoided."

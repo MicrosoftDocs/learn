@@ -1,8 +1,10 @@
-Intro to input accessibility
+Once players have decided the action they'd like to carry out in the game, physical interaction with an input device is needed to progress. Depending on the nature or complexity of the actions players must perform, they may become blocked from this progress.
+
+In this unit, you'll learn about the relationship between input and gaming. Specifically you'll learn to identify unintentional barriers that may be posed by common game elements or mechanics related to input, and how they can negatively impact player experiences.
 
 ## Input and Gaming
 
-After cognitive decisions are made about next steps in the game, players must act upon those decisions. This typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
+Completing game tasks typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
 
 - Platforms or game titles only support a specific type of input device that some players cannot physically use.
 - Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in gameplay.
@@ -16,7 +18,7 @@ In the following video, you'll learn to identify common input-based elements tha
 
 Players with disabilities that impact arm and hand movement can also experience unique barriers to play. The experiences of these players can differ based on the nature of physical demands a game requires for input. When learning about the broad range of player experiences related to mobility and input, an awareness of the following factors is an important start:
 
-- The strength required to activate inputs
+- The speed in which players must activate inputs in order to be successful
 - The dexterity required to perform complex input patterns
 - The coordination required to accurately control analog inputs
 - The endurance required to engage in gameplay until a pause, save, or stopping point that saves progress can be reached  
@@ -51,7 +53,7 @@ The ability to perform smooth, accurate movements  of our arms, hands, and finge
 
 Supports that decrease coordination demands, like assistive target-lock settings, can help support these players.
 
-### Endurance
+### Endurance and gaming
 
 Endurance typically refers to how long someone can engage in an activity before becoming tired. For some players, engaging in gameplay tasks like holding a controller or repeatedly using muscles in the hand (or other body parts used to activate game controls), can cause fatigue or pain after short periods.
 

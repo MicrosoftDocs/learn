@@ -6,7 +6,7 @@ Specifically, the team is looking for a foundational understanding of the follow
 
 - How to approach game play and development through the lens of accessibility
 - What unintentional barriers to access are, and how common game elements can introduce these barriers to players
-- How gameplay experiences can vastly differ among players with different and similar disabilities
+- How game play experiences can vastly differ among players with different and similar disabilities
 
 As a developer also new to gaming accessibility, if this story resonates with your own personal goals, the following module is a great place to start.
 
@@ -28,6 +28,6 @@ elements that impact accessibility.
 
 After completing this module, you'll be able to:
 
- - Discuss the relationship between gaming and visual, audio, cognitive, and input-based game experiences.
+ - Discuss the relationship between vision, audio, cognition, and input and gaming.
  - Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
  - Describe the concept of diverse player experiences and the importance of considering these diverse experiences when learning about gaming accessibility foundations.
