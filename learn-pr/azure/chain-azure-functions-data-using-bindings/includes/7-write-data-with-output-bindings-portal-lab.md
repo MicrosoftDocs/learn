@@ -126,7 +126,7 @@ We now have all our bindings set up for your function. It's time to use them in 
 
 1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and in the command bar, select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet, and then in the command bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -181,7 +181,7 @@ So, that's it. Let's see our work in action in the next section.
         ContentType = "application/json"
     })
     ```
-1. In the command bar, select **Save**.  A connection is made, and a log file session open.
+1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
 
 Let's break down what this code does:
 
