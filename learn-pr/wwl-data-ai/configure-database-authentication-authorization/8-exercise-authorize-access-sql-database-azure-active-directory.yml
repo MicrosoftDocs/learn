@@ -4,9 +4,9 @@ title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Direc
 metadata:
   title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
   description: "Exercise: Authorize Access to Azure SQL Database with Azure Active Directory"
-  ms.date: 11/10/2021
+  ms.date: 12/01/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
