@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learnA.gain-insights-data-kql.exercise-introduce-variables-let-function
+uid: learn.azure.gain-insights-data-kql.exercise-introduce-variables-let-function
 title: "Exercise: Introduce variables using the let function"
 metadata:
   unitType: exercise

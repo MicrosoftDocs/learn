@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learnA.gain-insights-data-kql.solution
-title: Solution
+uid: learn.azure.gain-insights-data-kql.challenge
+title: Challenge
 metadata:
   unitType: exercise
-  title: solution
-  description: "Solution"
+  title: challenge
+  description: "Challenge"
   ms.date: 11/30/2021
   author: YaelSchuster
   ms.author: yaschust
@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-solution.md)]
+  [!include[](includes/7-challenge.md)]

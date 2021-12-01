@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learnA.gain-insights-data-kql.introduction
+uid: learn.azure.gain-insights-data-kql.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Gain insights in your data using the Kusto Query Language."
   ms.date: 11/30/2021
   author: YaelSchuster

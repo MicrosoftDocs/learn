@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learnA.gain-insights-data-kql.summary
+uid: learn.azure.gain-insights-data-kql.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
+  title: Summary
   description: "Gain insights in your data using the Kusto Query Language"
   ms.date: 11/30/2021
   author: YaelSchuster

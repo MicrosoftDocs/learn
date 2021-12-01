@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learnA.gain-insights-data-kql.exercise-visualize-data-render-operator
+uid: learn.azure.gain-insights-data-kql.exercise-visualize-data-render-operator
 title: "Exercise: Visualize data with the render operator"
 metadata:
   unitType: exercise

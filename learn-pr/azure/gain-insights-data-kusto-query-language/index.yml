@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learnA.gain-insights-data-kql
+uid: learn.azure.gain-insights-data-kql
 metadata:
   moduleType: standard
   title: Gain insights in your data using Kusto Query Language
@@ -32,15 +32,15 @@ roles:
 products: 
 - azure-data-explorer
 units:
-- learnA.gain-insights-data-kql.introduction
-- learnA.gain-insights-data-kql.group-data-aggregation-functions
-- learnA.gain-insights-data-kql.exercise-count-events-count-operator
-- learnA.gain-insights-data-kql.exercise-visualize-data-render-operator
-- learnA.gain-insights-data-kql.exercise-summarize-data-aggregation-functions
-- learnA.gain-insights-data-kql.exercise-introduce-variables-let-function
-- learnA.gain-insights-data-kql.challenge
-- learnA.gain-insights-data-kql.solution
-- learnA.gain-insights-data-kql.knowledge-check
-- learnA.gain-insights-data-kql.summary
+- learn.azure.gain-insights-data-kql.introduction
+- learn.azure.gain-insights-data-kql.group-data-aggregation-functions
+- learn.azure.gain-insights-data-kql.exercise-count-events-count-operator
+- learn.azure.gain-insights-data-kql.exercise-visualize-data-render-operator
+- learn.azure.gain-insights-data-kql.exercise-summarize-data-aggregation-functions
+- learn.azure.gain-insights-data-kql.exercise-introduce-variables-let-function
+- learn.azure.gain-insights-data-kql.challenge
+- learn.azure.gain-insights-data-kql.solution
+- learn.azure.gain-insights-data-kql.knowledge-check
+- learn.azure.gain-insights-data-kql.summary
 badge:
-  uid: learnA.gain-insights-data-kql.badge
+  uid: learn.azure.gain-insights-data-kql.badge
