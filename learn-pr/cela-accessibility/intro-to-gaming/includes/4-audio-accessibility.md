@@ -1,28 +1,30 @@
-This is an introduction to audio accessibility
+You've learned about the portray of important game information through visual means, and how players can become blocked from game progress if this visual information is not accessible. 
 
-## Identifying audio elements
+In this unit, you'll learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with disabilities.
 
-Like visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio based information is not represented in an accessible way, players with hearing-related disabilities may be excluded from using this information.
+## Audio and Gaming
 
-In the following video, you'll learn how to identify common audio-based elements that can pose unintentional barriers for players.
+Similar to visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio-based information is not represented in an accessible way, players with hearing-related disabilities may be excluded from using this information.
 
-It's important to identify areas where audio plays a key role in gameplay. This is an important first step to ensure that the following players can customize their experience to meet their needs and preferences.
+In the following video, you'll learn more about the relationship between audio and game experiences. You'll also learn how to identify common audio-based elements that can pose unintentional barriers for players.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPH8n]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPH8n]
 
 ## Hearing and disability
 
-When exploring audio accessibility, it’s important to understand that the experiences of players with hearing-related disabilities can also largely differ when playing games. Players may not be able to hear any audio provided by a game, platform, or hardware device. Other players may have varying levels of hearing that can differ in each ear or differ based on the frequency or volume of sounds presented.
+When exploring audio accessibility, it’s important to understand that the experiences of players with hearing-related disabilities can also largely differ when playing games. Players who cannot hear any audio provided by a game, platform, or hardware device will encounter very different experiences than players who may have varying levels of hearing that can differ in each ear, or differ based on the frequency or volume of sounds presented.
+
+A foundational awareness of these differences warrant the need to consult with a wide array of players with hearing-disabilities to inform effective solutions that address each of these unique experiences.
 
 ### Gaming without audio
 
-Players who cannot hear any game audio must determine their next steps based on visual and haptic cues alone. These players can miss important game information when it is portrayed through audio alone. For example, live voice among players, in-game sound effects such nearby footsteps or enemy fire, and non-player character dialogue cannot be used to inform the gameplay of these players.
+Players who cannot hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players may miss important game information when it is portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and non-player character dialogue cannot be used to inform the gameplay of these players.
 
-Approaches to support these players would include:
+General approaches to support these players that differ from would include:
 
 - An option to enable subtitles and captions for all important character dialogue
 - Representing audio cues like enemy footsteps through visual cues within the UI or within captions
-- Supporting accessible player communication settings like text-to-speech and speech-to-text.
+- Supporting accessible player-to-player communication tools like text-to-speech chat and speech-to-text chat.
 
 ### Gaming and partial hearing
 

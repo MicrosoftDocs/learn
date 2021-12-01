@@ -1,44 +1,41 @@
-The team in the introductory scenario has already established that their game will include rich visuals and audio, and puzzle-based challenges. The game will ship on PC, console, and mobile devices. This means that players will also be required to use physical input devices to play.
+In the previous unit, you learned about the process of how games are played through the lens of accessibility. This process begins with games providing information to the player through sensory channels like vision, audio, and tactile or haptics.
 
-With this preliminary information, the team can begin to think about how:
+In this unit, you'll learn about about the relationship between the portrayal of visual information and a player's ability to consume and use this information to inform play.
 
-- Their game presents important information to players
-- Players may experience barriers to accessing this information when it's not presented in an accessible way
-
-Additionally, the team can consider the cognitive and physical demands that their game poses as players attempt to:
-
-- Problem-solve through puzzle-based challenges
-- Operate input devices over the course of their play session with the speed and accuracy needed to be successful
-
-In this unit, you'll learn about common game elements that can pose unintentional barriers to access for players with disabilities. An awareness of these common elements is an important first step in determining where players can be unintentionally excluded during the preliminary stages of development.
-
-## Identifying visual elements
+## Vision and gaming
 
 Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, it's important to think about the following questions related to visual information:
 
-- Is important information represented through visual means? For example, text-based menus and instructions, on-screen icons, and more.
+- Is important information represented through visual means alone? For example, text-based menus and instructions, on-screen icons, and more.
 - Is the visual representation of this information accessible to players with visual disabilities?
-- How is gameplay impacted if a player cannot access this visual information due to lack of accessible supports?
+- How is game play impacted if a player cannot access this visual information due to lack of accessible supports?
 
-In the following video, you'll learn how to identify common visual elements that should be considered in the context of these questions.
+Creating truly accessible experiences requires effort beyond the implementation of accessibility features and settings alone. A truly accessible experience is built by design. Therefore, a foundational understanding of what unintentional barriers are, and how they can block player progress is a critical component of gaming accessibility foundational knowledge. This awareness can ideally prevent unintentional barriers from being implemented within the game's design altogether.
+
+In the following video, you'll learn how to identify common visual elements that can present inaccessible experiences to players.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPhu1]
 
-Identifying these elements is an important first step in accessible game development. When these elements are identified early in development, initiatives can be taken to ensure that they provide is also represented through non-visual means.
-
 ## Vision and disability
 
-Visual disabilities can impact player experiences across a wide spectrum. Players may experience any combination of the following:
+When creating accessible visual experiences, a foundational awareness of visual disabilities and their potential impact on player experiences across a vast spectrum of ways is important. This awareness is intended to guide the following:
 
-Player experiences can be impacted by visual disabilities across a wide spectrum. The way players perceive visual information while gaming can include:
+ - An understanding that accessible designs and solutions are not a one-size-fits-all approach. A setting that assists one player with visual disabilities does not necessarily provide an effective solution for all players with visual disabilities.
+ - An understanding that there are many different types of visual disabilities that impact player experiences in different ways.
+ - An understanding that diverse player experiences warrants the need to include diverse player perspectives throughout the entire development process of the gaming experiences you work on to ensure they are truly accessible.
+
+> [!IMPORTANT]
+> The following information is intended to broaden your foundational awareness of vision and disability in the context of gaming. Prior to beginning development work, consulting or collaborating with actual players with visual disabilities is critical. These players are the experts in their own experiences. Therefore, this community's feedback must included to inform effective accessible development solutions within the context of your specific game, platform, product, or experience.
+
+Visual disabilities may generally impact player experiences in any combination of the following ways:
 
 - A complete lack of sight or ability to see game visuals
-- Varying degrees of blurriness
-- An incomplete view, or missing portions of their screen or UI
+- Varying degrees of blurriness when viewing game visuals
+- An incomplete view, or missing portions of the screen or UI
 - Difficulty distinguishing colors within the UI
 - Impacted depth perception and more
 
-A general awareness of these differences is an important first step in providing solutions that support a broad range of players.
+Prior to beginning development or engaging players, consider the following aspects of visual disability and how they pose the need for targeted solutions informed by the lived experiences of many different players.  
 
 ### Gaming without vision
 
