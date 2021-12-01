@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
 metadata:
-  title: Explore the access management capabilities of Azure AD
-  description: "Explore the access management capabilities of Azure AD"
+  title: Describe the access management capabilities of Azure AD
+  description: "Describe the access management capabilities of Azure AD"
   ms.date: 12/01/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: Explore the access management capabilities of Azure AD
+title: Describe the access management capabilities of Azure AD
 summary: A key function of Azure AD is to manage access.  Learn about the access management capabilities, its use cases, and benefits.
 abstract: |
   After completing this module, you will be able to:
