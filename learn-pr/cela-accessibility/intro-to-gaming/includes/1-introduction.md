@@ -1,14 +1,14 @@
-Video games are a staple of modern-day culture. They provide entertainment, connect communities, and foster shared experiences. When accessibility is included throughout the development entire process, gaming experiences can be enjoyed by more players.
+Video games are a staple of modern-day culture. They provide entertainment, connect communities, and foster shared experiences. When accessibility efforts are intentionally included throughout the entire gaming development process, these experiences can be enjoyed by more players.
 
-Consider the following scenario: Your team is developing a new game title. They want to ensure that as many players as possible can enjoy it. The goal is to create a multiplayer combat game with puzzle-based elements, rich visuals, and audio. The team is new to the accessibility space and are not sure where to begin.
+Consider the following scenario: You've recently joined a development team and are looking to create experiences that are as accessible as possible for more players. While accessibility is important to you, you have little experience in the game accessibility space and are unsure whereto start. You're looking for an approachable way to establish your foundational knowledge of accessible game, platform, and hardware development.
 
-Specifically, they’re unsure of things like:
+Specifically, the foundational knowledge needed to do so include an understanding of:
 
-- How to understand gameplay through the lens of accessibility
-- How common design elements can introduce inaccessible experiences
-- How gameplay experiences differ for players with different types of disabilities
+- How to approach gameplay and development through the lens of accessibility
+- How common design elements can introduce inaccessible experiences for players
+- How gameplay experiences differ among players with both different, and similar disabilities
 
-In this module, you’ll be introduced to foundational concepts about game accessibility. Specifically, you’ll learn about common game elements and mechanics that can pose unintentional barriers for players with disabilities.
+In this module, you’ll be introduced to these foundational concepts about game accessibility. Specifically, this module address game accessibility in the context of visual, audio, cognitive, and input-based experiences.
 
 > [!NOTE]
 > While vision, hearing, cognitive, and mobility-based elements are addressed in this introductory module, it’s important to note that there are many other game
