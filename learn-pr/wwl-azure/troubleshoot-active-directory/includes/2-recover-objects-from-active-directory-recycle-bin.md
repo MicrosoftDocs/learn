@@ -1,15 +1,20 @@
 When you delete an object in AD DS, the object moves to the Deleted Objects container and loses many important attributes. Your recovery options depend on whether you have enabled the Active Directory Recycle Bin feature.
 
+
 > [!TIP]
-> You can extend the list of attributes that remain when you delete an object, but you can never retain linked attribute values, such as group membership.
+> You can extend the list of attributes that remain when you delete an object, but you can never retain linked attribute values, such as group membership.
+
+
 If you have not enabled Active Directory Recycle Bin, you can reanimate a deleted object if it meets two conditions:
 
 - It must not have reached the end of its tombstone lifetime (180 days by default).
-
 - It must not have been scavenged by the garbage collection process (scavenging is a database cleanup process that removes stale records).
 
+
 > [!NOTE]
-> The AD DS database is self-maintaining. Every 12 hours, by default, each domain controller runs garbage collection. This accomplishes two tasks. First, it removes deleted objects that have outlived their tombstone lifetime. Second, the garbage collection process performs online defragmentation. 
+> The AD DS database is self-maintaining. Every 12 hours, by default, each domain controller runs garbage collection. This accomplishes two tasks. First, it removes deleted objects that have outlived their tombstone lifetime. Second, the garbage collection process performs online defragmentation. 
+
+
 To reanimate a deleted object, you can use the Ldp tool. Ldp.exe is a command-line tool that you use to perform Lightweight Directory Access Protocol (LDAP) searches against AD DS. You also can use it to perform maintenance on AD DS or Active Directory Lightweight Directory Services (AD LDS).
 
 ## Implement Active Directory Recycle Bin
@@ -51,7 +56,8 @@ Within the deleted object lifetime, you can recover a deleted object with Active
 The value of the msDS-deletedObjectLifetime attribute determines the deleted object lifetime. For an item deleted after you enable Active Directory Recycle Bin, the value of the legacy tombstoneLifetime attribute determines the recycled object lifetime. By default, this value is null, which means that the deleted object lifetime is set to the value of the recycled object lifetime. By default, the recycled object lifetime is also null.
 
 > [!IMPORTANT]
-> This means that the recycled object lifetime defaults to 180 days. 
+> This means that the recycled object lifetime defaults to 180 days. 
+
 You can modify these two values at any time. To modify these values, you can use Windows PowerShell. For example, to set tombstoneLifetime to 365 days, run the following command:
 
 `Set-ADObject -Identity “CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=Contoso,DC=com” –Partition “CN=Configuration,DC=Contoso,DC=com” –Replace:@{“tombstoneLifetime” = 365}`
@@ -69,6 +75,8 @@ To enable Active Directory Recycle Bin, you can perform one of the following:
 - From Active Directory Administrative Center, select the domain, and then select **Enable Active Directory Recycle Bin** in the **Tasks** pane.
 
 > [!NOTE]
-> You can use Active Directory Recycle Bin to restore only items deleted after you turn on Active Directory Recycle Bin.
+> You can use Active Directory Recycle Bin to restore only items deleted after you turn on Active Directory Recycle Bin.
+
 > [!WARNING]
-> After you've enabled Active Directory Recycle Bin, you can't disable it.
+> After you've enabled Active Directory Recycle Bin, you can't disable it.
+
