@@ -192,8 +192,8 @@ To complete the component that sends messages about sales, you must add an `awai
 1. To run the component that sends a message about a sale, run the following command in Cloud Shell. The first line ensures that you are in the correct path. 
 
     ```bash
-cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
-dotnet run -p ./privatemessagesender
+    cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
+    dotnet run -p ./privatemessagesender
     ```
 
     > [!NOTE]
