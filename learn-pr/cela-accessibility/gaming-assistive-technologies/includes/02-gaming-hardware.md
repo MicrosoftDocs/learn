@@ -32,4 +32,4 @@ In addition to supporting diverse input types, it's also important to consider t
 
 The following video provides an overview of these types of considerations:
 
-> [!VIDEO ]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPE1n]
