@@ -8,7 +8,7 @@ Unfortunately, this player requires a high contrast display for play. They searc
 
 In this module, you'll be introduced to common hardware and software assistive technologies that players with disabilities may use to improve access to gaming experiences. You will learn about the impact of assistive technologies on player experiences, and the importance of supporting assistive technology compatibility within your title, platform, or hardware device.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you will be able to:
 
