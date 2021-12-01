@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.gain-insights-data-kql.exercise-introduce-variables-let-function
+title: "Exercise: Introduce variables using the let function"
+metadata:
+  unitType: exercise
+  title: "Exercise: Introduce variables using the let function"
+  description: "Exercise: Introduce variables using the let function"
+  ms.date: 11/30/2021
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure-data-explorer
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-introduce-variables-let-function.md)]
