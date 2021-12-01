@@ -7,7 +7,7 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 After completing this module, you'll be able to:
 
  -  Plan for FSLogix.
- -  Recommend best practices for FSLogix profile containers and Azure files.
+ -  Recommend best practices for FSLogix profile containers and Azure files. 
  -  Install FXLogix.
  -  Recommend storage options for FSLogix profile containers.
  -  Configure Cloud Cache.
