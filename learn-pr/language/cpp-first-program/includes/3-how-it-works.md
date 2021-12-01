@@ -4,7 +4,7 @@ Let's briefly go over the terms and syntax you used in the *Hello World* program
 
 To better understand what's going on, it's helpful to go through the syntax of the program line by line, starting at the top row:
 
-- **`#include <iostream>`**: `iostream` is part of a standard library. Many components in a program are defined either by standard libraries or by libraries that you or a third party write. The code uses `iostream`, which is part of a standard library, to use the object `cout` to print something as output.
+- **`#include <iostream>`**: `iostream` is part of a standard library. Many components in a program are defined either by standard libraries or by libraries that you or a third party writes. The code uses `iostream`, which is part of a standard library, to use the object `cout` to print something as output.
 
    :::code language="cpp" source="../code/include.cpp" range="1" highlight="1":::
 
