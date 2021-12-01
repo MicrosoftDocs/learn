@@ -12,7 +12,7 @@ The GitHub Action is ready to build and publish your web app and API once it det
 
 Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see your changes through preview URLs. You can create a preview URL by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new staging version of your app is created. If you go back and check your pull request on GitHub you'll notice that a link to the staging version posted in the Conversation tab.
 
-The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL.
+The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL. Azure Static Web Apps provides auto-generated URLs for the production app and pull requests. You can optionally assign a custom domain to the production app.
 
 | Source            | Description       | URL                                                    |
 | ----------------- | ----------------- | ------------------------------------------------------ |
