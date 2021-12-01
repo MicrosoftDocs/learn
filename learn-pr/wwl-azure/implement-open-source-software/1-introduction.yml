@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-identity-principles-concepts.introduction
+uid: learn.wwl.implement-open-source-software.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 12/01/2021
+  ms.date: 11/30/2021
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
