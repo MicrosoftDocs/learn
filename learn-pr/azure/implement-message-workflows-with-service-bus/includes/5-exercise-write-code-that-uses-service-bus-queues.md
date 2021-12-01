@@ -123,10 +123,16 @@ To complete the component that sends messages about sales, you must add an `awai
     // Close the connection to the sender here
     ```
     
-1. Replace that line with the following code to close the connection.
+1. Replace that line with the following code to dispose sender and client objects.
 
     ```C#
-    await queueClient.CloseAsync(); 
+    finally
+    {
+        // Calling DisposeAsync on client types is required to ensure that network
+        // resources and other unmanaged objects are properly cleaned up.
+        await sender.DisposeAsync();
+        await client.DisposeAsync();
+    }
     ```
     
 1. Your final code for **privatemessagesender/Program.cs** should resemble the following example:
@@ -167,7 +173,13 @@ To complete the component that sends messages about sales, you must add an `awai
                 {
                     Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
                 }
-            await queueClient.CloseAsync();    
+                finally
+                {
+                    // Calling DisposeAsync on client types is required to ensure that network
+                    // resources and other unmanaged objects are properly cleaned up.
+                    await sender.DisposeAsync();
+                    await client.DisposeAsync();
+                }
             }
         }
     }
@@ -180,8 +192,8 @@ To complete the component that sends messages about sales, you must add an `awai
 1. To run the component that sends a message about a sale, run the following command in Cloud Shell. The first line ensures that you are in the correct path. 
 
     ```bash
-cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
-dotnet run -p ./privatemessagesender
+    cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
+    dotnet run -p ./privatemessagesender
     ```
 
     > [!NOTE]
@@ -260,7 +272,7 @@ dotnet run -p ./privatemessagesender
 1. To configure the handlers, replace that line with the following code.
 
     ```C#
-    processor.ProcessMessagesAsync += MessageHandler;
+    processor.ProcessMessageAsync += MessageHandler;
     processor.ProcessErrorAsync += ErrorHandler;
     ```
 
@@ -309,28 +321,30 @@ dotnet run -p ./privatemessagesender
     using System.Text;
     using System.Threading.Tasks;
     using Azure.Messaging.ServiceBus;
-    
+
     namespace privatemessagereceiver
     {
         class Program
         {
-    
-            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+
+            const string ServiceBusConnectionString = "Endpoint=sb://<examplenamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             const string QueueName = "salesmessages";
-    
+
             static void Main(string[] args)
             {
-    
+
                 ReceiveSalesMessageAsync().GetAwaiter().GetResult();
-    
+
             }
-    
+
             static async Task ReceiveSalesMessageAsync()
             {
+
                 Console.WriteLine("======================================================");
-                Console.WriteLine("Press ENTER on the keyboard to exit after receiving all the messages.");
+                Console.WriteLine("Press ENTER key to exit after receiving all the messages.");
                 Console.WriteLine("======================================================");
-    
+
+
                 var client = new ServiceBusClient(ServiceBusConnectionString);
 
                 var processorOptions = new ServiceBusProcessorOptions
@@ -338,35 +352,40 @@ dotnet run -p ./privatemessagesender
                     MaxConcurrentCalls = 1,
                     AutoCompleteMessages = false
                 };
-                
-                ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
+                await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
+                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessErrorAsync += ErrorHandler;
+
 
                 await processor.StartProcessingAsync();
-            
+
                 Console.Read();
-    
-                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
-                await processor.DisposeAsync();
-                await client.DisposeAsync();
+
+                await processor.CloseAsync();
+
             }
 
+            // handle received messages
             static async Task MessageHandler(ProcessMessageEventArgs args)
             {
-                Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
+                string body = args.Message.Body.ToString();
+                Console.WriteLine($"Received: {body}");
+
+                // complete the message. messages is deleted from the queue. 
                 await args.CompleteMessageAsync(args.Message);
             }
-    
+
+            // handle any errors when receiving messages
             static Task ErrorHandler(ProcessErrorEventArgs args)
             {
-                Console.WriteLine($"Message handler encountered an exception {args.Exception}.");
-                Console.WriteLine("Exception context for troubleshooting:");
-                Console.WriteLine($"- Endpoint: {args.FullyQualifiedNamespace}");
-                Console.WriteLine($"- Entity Path: {args.EntityPath}");
-                Console.WriteLine($"- Executing Action: {args.ErrorSource}");
+                Console.WriteLine(args.Exception.ToString());
                 return Task.CompletedTask;
-            }   
+            }
         }
     }
+    
     ```
 1. Save the file either through the **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 

@@ -48,11 +48,11 @@ Next, we'll add a database and then add a container to the database.
 
 ### Add a container
 
-In an Azure Cosmos DB, a *container* is used to store a variety of user-generated entities, also called items.
+In an Azure Cosmos DB, a *container* is used to store a variety of user-generated entities, also called *items*. We will create a container called Bookmarks.
 
 Let's use the Data Explorer tool to create a database and container.
 
-1. In the **Azure Cosmos DB account** menu, select **Data Explorer**. The **Data Explorer** pane for your Cosmos DB account appears.
+1. In your **Azure Cosmos DB account** menu, select **Data Explorer**. The **Data Explorer** pane for your Cosmos DB account appears.
 
 1. Select the **New Container** box. The **New Container** pane appears. You may need to scroll to the right to see it.
 
@@ -60,7 +60,7 @@ Let's use the Data Explorer tool to create a database and container.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br><br>You're free to enter whatever you want here, but we are using _func-io-learn-db_ in this module. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You' can enter whatever you want, but we are using _func-io-learn-db_ in this module. |
     | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
     | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
@@ -73,7 +73,7 @@ Let's use the Data Explorer tool to create a database and container.
     
 1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
  
-1. Expand the **Bookmarks** container, and you'll see that it is prepopulated with child members. 
+1. Expand the **Bookmarks** container, and you'll see that it is prepopulated with several child members. 
 
 In the next task, you'll add some data, also known as items, to your Bookmarks container.
 
@@ -81,7 +81,7 @@ In the next task, you'll add some data, also known as items, to your Bookmarks c
 
 You want to add data to your **Bookmarks** container. You'll use Data Explorer to store a URL and ID for each item.
 
-1. Expand the **func-io-learn-db** database, then expand the **Bookmarks** container, and select **Items**. The **Items** tab appears.
+1. Expand the **func-io-learn-db** database and the **Bookmarks** container, and then select **Items**. The **Items** tab appears.
 
 1. In the command bar, select **New Item**.
 
@@ -140,11 +140,11 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
 
     :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
-Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in our Bookmarks container.
+Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
 
 ## Create your function
 
-1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your app. The **Function App** pane appears.
+1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app. The **Function App** pane appears.
 
 1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. You should have one function, **HttpTrigger1**.
 
@@ -182,15 +182,13 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link. The **New Cosmos DB connection** dialog box appears.
 
-    > [!NOTE]
-    > If a message appears in the **Azure Cosmos DB input** configuration, prompting you to install an extension, select **Install**. It can take a while to install an extension, so you will need to wait for the installation to complete before proceeding with this exercise.
-    > :::image type="content" source="../media/extension-not-installed.png" alt-text="Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.":::
+    If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **Install** and wait for it to finish.
      
 1. By default, Azure recognizes the Azure Cosmos DB account you created earlier. Select **OK** to set up a connection to your database. A *new* connection to the database account is configured and appears in the **Cosmos DB account connection** field.
 
     We want to look up a bookmark with a specific ID, so let's tie the ID that we receive in the query string to the binding.
 
-1. Let's complete the **Create Input** pane. Enter the following values for each setting. To learn more about the purpose of each setting, select the information icon on that field.
+1. Let's complete the settings in the **Create Input** pane. Enter the following values for each setting. To learn more about the purpose of each setting, select the information icon on that field.
 
     | Setting | Value | Description |
     |---|---|---|
@@ -209,7 +207,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
 Now that your binding is defined, we can use it in your function. You need to make two changes to implement the binding that you just created:
 
-- Your function's language-specific implementation code needs to be modified to determine if a document was found in the database that matches the ID that is passed to the function.
+- Your function's language-specific implementation code needs to be modified to determine whether a document was found in the database that matches the ID that is passed to the function.
 
 - Your function's JSON implementation code needs to be modified to accept a parameter that is passed in the query string.
 
@@ -222,31 +220,31 @@ Now that your binding is defined, we can use it in your function. You need to ma
 1. Replace all code in the *index.js* file with the following code.
 
     ```javascript
- 	module.exports = function (context, req) {
-    
+    module.exports = function (context, req) {
+
         var bookmark = context.bindings.bookmark
-    
+
         if(bookmark){
             context.res = {
             body: { "url": bookmark.url },
             headers: {
-            'Content-Type': 'application/json'
-                }
-                };
-        }
-        else {
-        
-        context.res = {
-            status: 404,
-            body : "No bookmarks found",
-            headers: {
-            'Content-Type': 'application/json'
+                'Content-Type': 'application/json'
             }
-        };
-    	}
+            };
+        }
+	else {
 
-    	context.done();
-	};
+            context.res = {
+                status: 404,
+                body : "No bookmarks found",
+                headers: {
+        		'Content-Type': 'application/json'
+                }
+            };
+        }
+
+        context.done();
+    };
     ```
     
 1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!` 
