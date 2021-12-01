@@ -4,9 +4,7 @@ If you tried to achieve the same thing without storage accounts, the end product
 
 Instead, you capture the rules in the settings for a storage account, and those rules are automatically applied to every data service in the account.
 
-##Clean up
-
-When you are using resources created for lessonst that use an active sandbox and the Concierge subscription made available for those lessons, resources are cleaned up automatically when the sandbox expires. But when you are using your own subscription, you must always do the clean up. 
+[!INCLUDE [](../../../includes/azure-sandbox-cleanup.md)]
 
 > [!IMPORTANT]
 > When you're working in your own subscription, to avoid unwanted usage charges, you must remove any resources that you create.
