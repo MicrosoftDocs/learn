@@ -24,7 +24,7 @@ Additionally, consider incorporating some of the following into your network arc
 - Route control, and forced tunneling, to define custom routes through your infrastructure, and ensure services can't connect to an internet device.
 - Enabling a virtual network security appliance through Azure Marketplace.
 - Using Azure ExpressRoute for a dedicated WAN link, to securely extend your on-premises networks to Azure.
-- Azure Security Center to prevent, detect, and respond to threats against your Azure services.
+- Microsoft Defender for Cloud to prevent, detect, and respond to threats against your Azure services.
 - Azure Firewall as a network security service.
 
 There's a wide variety of security solutions for your organization, many of which complement each other to provide additional layers of security. Microsoft has recommended best practices that you should align with overall. You then implement any features needed to meet your organization's internal security requirements.

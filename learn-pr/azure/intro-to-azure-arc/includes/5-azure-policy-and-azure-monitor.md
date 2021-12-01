@@ -80,4 +80,4 @@ You can store and analyze near real-time and historical data by using Log Analyt
 
 This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. 
 
-You can also use Azure Security Center to identify vulnerabilities and potential threats.
+You can also use Microsoft Defender for Cloud to identify vulnerabilities and potential threats.
