@@ -24,7 +24,7 @@ elements that impact accessibility.
 >
 > Additional information about these player experiences can be found in the summary and resources unit of this module.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 

@@ -2,7 +2,7 @@ The final step in the process of "how games are played" is related to game input
 
 In this unit, you'll learn about common input mechanics in games that may pose barriers for players with mobility-related disabilities.
 
-## Input and Gaming
+## Input and gaming
 
 Completing game tasks typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
 
