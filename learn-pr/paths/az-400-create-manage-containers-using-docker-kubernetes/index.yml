@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-create-manage-containers-using-docker-kubernetes
 metadata:
   title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
   description: 'AZ-400: Create and manage containers using Docker and Kubernetes'
-  ms.date: 12/01/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -14,7 +14,6 @@ prerequisites: |
 summary: |
   This learning path describes the container implementation strategy, Docker and Docker multi-stage builds.
 iconUrl: /learn/achievements/generic-trophy.svg
-hidden: true
 levels:
 - advanced
 roles:
