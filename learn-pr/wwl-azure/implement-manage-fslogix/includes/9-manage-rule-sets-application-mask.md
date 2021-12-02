@@ -36,17 +36,10 @@ FSlogix supports four rule types:
 ## Create a new Rule Set
 
 1.  Open the Apps Rule Editor. The first time you enter the Apps Rules Editor there won't be any rule sets in the left panel. In this example, one rule set has already been created named Contoso\_1 with GitHub Desktop added.
-
-:::image type="content" source="../media/manage-hiding-rules5-b787f659.png" alt-text="An image of the Apps Rule Editor.":::
-
-
 2.  Click **File** then **New** to create a new Rule Set.
 3.  Provide a name for the Rule Set and click **Enter Filename.**
 4.  After a filename is entered, a selection is made for the type and content of the rule.
 5.  After specifying the parameters wanted, click **Scan** to create a rule (In this example, GitHub Desktop is selected)
-
-:::image type="content" source="../media/manage-hiding-rules6-8e214d2d.png" alt-text="An image of Specify parameters.":::
-
 
 ## Create a new rule
 
