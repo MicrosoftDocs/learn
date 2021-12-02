@@ -1,6 +1,6 @@
-Once players have decided the action they'd like to carry out in the game, physical interaction with an input device is needed to progress. Depending on the nature or complexity of the actions players must perform, they may become blocked from this progress.
+The final step in the process of "how games are played" is related to game input. Once players have decided on the action they'd like to take, they generally must act upon these decisions by providing physical input to their gaming device. In many game scenarios, this physical input must be provided with certain degrees of speed and accuracy over a prolonged period of time in order to be successful. If a player cannot accomplish these tasks, they may be blocked from progressing in a game.
 
-In this unit, you'll learn about the relationship between input and gaming. Specifically you'll learn to identify unintentional barriers that may be posed by common game elements or mechanics related to input, and how they can negatively impact player experiences.
+In this unit, you'll learn about common input mechanics in games that may pose barriers for players with mobility-related disabilities.
 
 ## Input and Gaming
 
@@ -10,10 +10,6 @@ Completing game tasks typically requires players to move their fingers with spee
 - Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in gameplay.
 - Players must be able to activate a multitude of different inputs to engage in basic play.
 
-In the following video, you'll learn to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features are not provided.
-
-> [!VIDEO]
-
 ## Mobility and disability
 
 Players with disabilities that impact arm and hand movement can also experience unique barriers to play. The experiences of these players can differ based on the nature of physical demands a game requires for input. When learning about the broad range of player experiences related to mobility and input, an awareness of the following factors is an important start:
@@ -21,7 +17,7 @@ Players with disabilities that impact arm and hand movement can also experience 
 - The speed in which players must activate inputs in order to be successful
 - The dexterity required to perform complex input patterns
 - The coordination required to accurately control analog inputs
-- The endurance required to engage in gameplay until a pause, save, or stopping point that saves progress can be reached  
+- The endurance required to engage in game play until a pause, save, or stopping point that saves progress can be reached  
 
 Mobility-related disabilities can impact any combination of a player’s strength, dexterity, coordination, and endurance. Some players may be able to activate buttons for prolonged periods with ease but lack the coordination needed to accurately aim at moving targets. Others may experience difficulties related to all four of these categories. The following information will discuss the unique barriers and corresponding support approaches to be aware of as you learn more about the gaming accessibility space.
 
@@ -29,7 +25,7 @@ Mobility-related disabilities can impact any combination of a player’s strengt
 
 Players must be able to operate the input devices that are supported by their desired platforms and games. For players with disabilities that impact strength, physical actions like pressing a key on a keyboard, moving a mouse, or holding the weight of a standard controller during play can be difficult.
 
-As a result, these players may often avoid the use of standard devices like mice, keyboards, and controllers altogether. Instead, players may use assistive technology devices. in place of standard input devices. These devices typically include buttons and analog controls that require less force to activate than standard devices. They can also support the use of larger buttons that can be activated by the head, foot, elbow, or other larger body parts
+As a result, these players may often avoid the use of standard devices like mice, keyboards, and controllers altogether. Instead, players may use assistive technology devices in place of standard input devices. These devices typically include buttons and analog controls that require less force to activate than standard devices. They can also support the use of larger buttons that can be activated by the head, foot, elbow, or other larger body parts
 
 When approaching accessible input solutions, the following settings and supports should be considered:
 
