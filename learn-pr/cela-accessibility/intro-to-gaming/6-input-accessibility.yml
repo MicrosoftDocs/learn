@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following options is most likely to introduce input barriers?"
+  - content: "Which of the following options is most likely to introduce barriers related to game input?"
     choices:
     - content: "A game has a large, distracting animation behind the main menu."
       isCorrect: false
@@ -26,16 +26,15 @@ quiz:
     - content: "A game requires a player to hold down the right stick button to crouch or enable an option to toggle crouching."
       isCorrect: false
       explanation: "Incorrect. By providing an option to toggle crouching instead of holding down a button, an input barrier is avoided."
-  - content: "A game requires a player to mash the “A” button to shoot rapidly. What aspect of mobility would NOT impact such a game mechanic?"
+  - content: "Which of the following options is most likely to support a player who has difficulty performing smooth, accurate movements with a thumb stick?"
     choices:
-    - content: "Endurance."
+    - content: "An option to turn on an auto-target-lock feature which only requires the player to move their aiming crosshair relatively close to their target once. After that, their crosshair remains locked to the target until they shoot."
       isCorrect: true
-      explanation: "Correct. Endurance refers to how long someone can engage in an activity before becoming tired. The ability to repeatedly press the same button can be impacted by an individual’s level of endurance."
-    - content: "Dexterity."
+      explanation: "Correct. Aiming at moving targets requires a great deal of precision and accuracy. An option that lessens these demands by locking on to a target after a player is relatively close to it once can support players who have difficulty with these types of tasks."
+    - content: "An option to convert button taps to button holds."
       isCorrect: false
-      explanation: "Incorrect. Dexterity refers to the rapid movement of a player’s fingers to activate controls within a specific time frame. The ability to repeatedly press the same button can be impacted by an individual’s dexterity."
-    - content: "Coordination"
+      explanation: "Incorrect. An option like this may assist a player with limited endurance or speed. However, it would not decrease the precision demands needed to successfully aim at a moving target."
+    - content: "An option to turn on auto-shoot, so the player's weapon is always firing even when they are not pressing their fire button"
       isCorrect: false
-      explanation: "Incorrect. Coordination refers to the ability to perform smooth, accurate movements. While moving the character might require coordination, the act of mashing a button repeatedly to fire does not require smooth or accurate movements."
- 
+      explanation: "Incorrect. An option like this may assist a player with limited endurance who cannot hold the sprint button for prolonged periods. This option, however, would not reduce the coordination demands of aiming at a moving target."
 
