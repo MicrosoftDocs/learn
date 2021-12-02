@@ -1,27 +1,21 @@
 ## How Azure Blueprints works
 
-The Azure Blueprint is backed by the globally distributed Azure Cosmos DB, which means that the blueprint objects are replicated to multiple Azure regions with low latency, high availability and consistent access to your objects.
+The Azure Blueprint is backed by the globally distributed Azure Cosmos DB, which means that the blueprint objects are replicated to multiple Azure regions with low latency, high availability and consistent access to your objects. All of this are available to you at no costs, since the only costs with Azure Blueprints will be associated with the resources deployed through a blueprint, like a virtual machine, storage, database, etc.
 
-All of this are available to you at no costs, since the only costs with Azure Blueprints will be associated with the resources deployed through a blueprint, like a virtual machine, storage, database, etc.
-
-The operation of the Azure Blueprints could be divided:
-
-* Composition
-* Management
-* Scale
+There are three main aspects related with how Azure Blueprints works: Composition, Management, and Scale. Let's the details of each one.
 
 ### Composition
 
-During the composition, you will be designing your blueprint. The design involves the specification of artifacts (and their related parameters) to be used:
+A blueprint is composed by different  artifacts. During the designing of your blueprint, you need to specify those artifacts and their related parameters. Below are the artifacts from a blueprint:
 
-* Role based access controls that will be applied
-* The resource groups that will be created to store the Azure resources
-* The policies you would like to create to enforce business rules
-* The Azure Resource Manager template, which you would like to deploy in order to automate resource creation
+* The **RBAC (Role Based Access Controls)** that will be applied
+* The **Resource Groups** that will be created to store the Azure resources
+* The **Azure Policies** that you would like to create to enforce business rules
+* The **ARM (Azure Resource Manager) Template**, which you would like to deploy in order to automate resource creation
 
 ### Management
 
-Remember that as a package, your blueprint will have a lifecycle. Then the lifecycle of a blueprint consists of:
+Considering a blueprint as a package, keep in mind that a package will have a lifecycle. The lifecycle of a blueprint consists of:
 
 * Creation of a blueprint
 * Publishing of the blueprint
@@ -32,11 +26,11 @@ Remember that as a package, your blueprint will have a lifecycle. Then the lifec
 
 ### Scale
 
-The scale is the advantage of use blueprints to multiple subscriptions streamlining environment creation; for example, ensuring matching environments across production, development and QA subscriptions. This is done through the scope of a management group, enforcing the usage of governance as code in your organization among different subscriptions. Besides this, the blueprint package could be used in a repeatable manner to best meet your needs.
+The scale is the advantage of use blueprints to multiple subscriptions streamlining environment creation; for example, ensuring matching environments across production, development and QA subscriptions. This is done through the scope of a management group, enforcing the usage of governance as code in your organization among different subscriptions. 
 
-## Azure Blueprints Lock
+## Locking a blueprint
 
-In addition to the change controls in place, Azure Blueprints also offers a resource locking functionality. The resource lock allows the protection of new resources from being tampered with, even with accounts that have the Owner role. Resources protected by resource locks have four states:
+In addition to the change controls in place, Azure Blueprints also offers a resource-locking functionality. The resource lock allows the protection of new resources from being tampered with, even with accounts that have the Owner role. Resources protected by resource locks have four states:
 
 * Not Locked;
 * Read Only;
@@ -45,11 +39,9 @@ In addition to the change controls in place, Azure Blueprints also offers a reso
 
 These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure that can have locks overridden by users with the appropriate role-based access controls, this isn’t the case in Azure Blueprints. This security measure protects the consistency of the defined blueprint and the environment it was designed to create from accidental or programmatic deletion or alteration.
 
-## Better together: Azure Blueprints and Azure Resource Manager Templates
+## How Azure Blueprints and Azure Resource Manager Templates works together
 
-
-
-There are a number of options available when it comes to making a decision on Infrastructure as Code (IaC) tooling. Additionally, upon first glance, ARM Templates and Azure Blueprints seem to overlap and perform the same tasks, adding yet another layer of confusion when there are two native solutions.
+There are many options available when it comes to making a decision on Infrastructure as Code (IaC) tooling. Additionally, upon first glance, ARM Templates, and Azure Blueprints seem to overlap and perform the same tasks, adding yet another layer of confusion when there are two native solutions.
 
 Since both features can be used to package an environment together and deploy Azure artifacts and resources, what’s the difference?
 
