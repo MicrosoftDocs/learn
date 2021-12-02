@@ -91,7 +91,7 @@ The AD FS application activity report is available in the Azure portal under Azu
 
 3. Under **Activity**, select **Usage & insights (Preview)**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
 
-![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
+    ![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
 
 4. For each application in the AD FS application activity list, view the **Migration status**:
 
