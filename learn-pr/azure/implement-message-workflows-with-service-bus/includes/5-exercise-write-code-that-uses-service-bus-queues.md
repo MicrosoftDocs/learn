@@ -66,7 +66,7 @@ The following Azure command will return the complete connection string.
 
 1. Paste the connection string between the quotation marks. 
 
-To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes.
+   To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes.
 
 1. Locate the `SendSalesMessageAsync()` method.
 
