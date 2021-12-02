@@ -11,7 +11,7 @@ Use Azure Site Recovery to manage replicating VMs in other Azure locations, as d
 
 Set up Azure Site Recovery by replicating an Azure VM to a different Azure region directly from the Azure portal. Site Recovery is automatically updated with new Azure features as they’re released.
 
-:::image type="content" source="../media/azure-virtual-desktop-site-recovery-abca26c9.png" alt-text="Image showing how to replicate an Azure VM to a different Azure region directly from the Azure portal using Azure Site Recovery.":::
+:::image type="content" source="../media/azure-virtual-desktop-site-recovery-1-71f7b63a.png":::
 
 
 Use Azure Site Recovery for personal host pools, because Azure Site Recovery supports both server-based and client-based SKUs.
