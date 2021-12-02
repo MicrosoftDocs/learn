@@ -2,7 +2,7 @@ Azure Active Directory is the core of any secure solution you will build on Azur
 
 ## Scenario
 
- As a security engineer you use Azure Active Directory to manage identities, you will work on such tasks as:
+A security engineer us Azure Active Directory to manage identities, you will work on such tasks as:
 
  -  Create users, groups, and administrative units to securely access resources and services.
  -  Configure access to systems to be passwordless.
