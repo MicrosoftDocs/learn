@@ -1,6 +1,6 @@
 This unit covers how to prepare and modify basic configuration options for apps and your image's registry.
 
-### Disable Automatic Updates.
+### Disable Automatic Updates
 
 To disable Automatic Updates via local Group Policy:
 
@@ -14,7 +14,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v NoAutoUpd
 
 ```
 
-### Specify Start layout for Windows 10 computers.
+### Specify Start layout for Windows 10 computers
 
 Run this command to specify a Start layout for Windows 10 computers.
 
@@ -42,7 +42,7 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v fEnab
 
 ```
 
-### Disable Storage Sense.
+### Disable Storage Sense
 
 For Azure Virtual Desktop session host that use Windows 10 Enterprise or Windows 10 Enterprise multi-session, we recommend disabling Storage Sense. You can disable Storage Sense in the Settings menu under **Storage** as displayed below.
 

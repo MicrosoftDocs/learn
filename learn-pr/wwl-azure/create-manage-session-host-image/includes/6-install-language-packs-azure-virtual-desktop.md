@@ -23,9 +23,7 @@ To create the content repository for language packages and FODs and a repository
 2.  Open and mount the ISO files on the VM.
 3.  Find the language pack ISO and copy the content from the **LocalExperiencePacks** and **x64\\langpacks** folders, then paste the content into the file share.
 4.  Find the FOD ISO file, copy all the content, then paste it into the file share.
-5.  Go to the **amd64fre** folder on the Inbox Apps ISO and copy the content in the repository for the inbox apps that you've prepared.:::image type="content" source="../media/view-language-packs-34d1cca2.png" alt-text="An example of the Japanese language packs with language tag in their file names.":::
-    
-
+5.  Go to the **amd64fre** folder on the Inbox Apps ISO and copy the content in the repository for the inbox apps that you've prepared.
 6.  Set the permissions on the language content repository share so that you have read access from the VM you'll use to build the custom image.
 
 ## Create a custom Windows 10 Enterprise multi-session image manually

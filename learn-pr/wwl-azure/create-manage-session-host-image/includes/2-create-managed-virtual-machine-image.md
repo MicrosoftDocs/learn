@@ -19,7 +19,7 @@ One managed image supports up to 20 simultaneous deployments. Attempting to crea
 
 ## Use the portal
 
-1.  Go to the [Azure portal](https://portal.azure.com) to find a managed image. Search for and select **Images**.:::image type="content" source="../media/create-images-1-bea4f083.png" alt-text="Image of earch for and selection of images.":::
+1.  Go to the [Azure portal](https://portal.azure.com) to find a managed image. Search for and select **Images**.:::image type="content" source="../media/create-images-1-bea4f083.png" alt-text="Image of searching for and selecting of images.":::
     
 
 2.  Select the image you want to use from the list. The image **Overview** page opens.:::image type="content" source="../media/create-vm-from-image-41027054.png" alt-text="Image of creating virtual machine from image.":::
