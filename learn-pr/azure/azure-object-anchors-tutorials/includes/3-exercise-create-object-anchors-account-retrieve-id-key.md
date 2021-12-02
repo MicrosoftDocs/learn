@@ -41,7 +41,7 @@ Now that you have created the Azure Object Anchors resources you need to retriev
 
     a) Take note of the **Account Domain**.
 
-    :::image type="content" source="../media/account-domaine-name.png" alt-text="Screenshot of Account domain info." lightbox="../media/account-id-name.png":::
+    :::image type="content" source="../media/account-domain-name.png" alt-text="Screenshot of Account domain info." lightbox="../media/account-id-name.png":::
 
     b) Take note of the **Account ID**
 
