@@ -19,13 +19,13 @@ Source components and destination components both need two pieces of information
 - The location of the Service Bus namespace, also known as an **endpoint**. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
 - An access key. Service Bus restricts access to queues or topics by requiring a valid access key.
 
-Both of these pieces of information are provided to the [ServiceBusClient](https://docs.microsoft.com/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
+Both of these pieces of information are provided to the [ServiceBusClient](/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
 
 ## Call methods asynchronously
 
 The queue in Azure may be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention may cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 
-When sending a message to a queue, for example, use the [SendMessageAsync](https://docs.microsoft.com/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
+When sending a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
 
 ## Write code that sends to queues
 
