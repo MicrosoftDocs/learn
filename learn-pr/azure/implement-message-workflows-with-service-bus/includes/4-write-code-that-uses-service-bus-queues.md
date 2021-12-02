@@ -63,7 +63,7 @@ await sender.SendMessageAsync(message);
 To receive messages, you must first register a message handler - this is the method in your code that will be invoked when a message is available on the queue.
 
 ```C#
-// create a ServiceBusProcess for the queue
+// create a ServiceBusProcessor for the queue
 await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
 
 // specify handler methods for messages and errors
