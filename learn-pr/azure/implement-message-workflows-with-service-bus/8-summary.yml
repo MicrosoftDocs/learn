@@ -37,14 +37,14 @@ quiz:
       isCorrect: false
       explanation: "A relay is used for two-way communication and it provides bidirectional connections across network boundaries."
 
-  - content: "True or false: You can add a message to an Azure Service Bus queue that is 2 MB in size."
+  - content: "True or false: You can add a message to an Azure Service Bus queue that is 20 MB in size."
     choices:
     - content: 'True'
-      isCorrect: false
-      explanation: "An Azure Storage queue message must be smaller than 64 KB. An Azure Service Bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
-    - content: 'False'
       isCorrect: true
-      explanation: "An Azure Storage queue message must be smaller than 64 KB. An Azure Service Bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
+      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
+    - content: 'False'
+      isCorrect: false
+      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
 
       
 
