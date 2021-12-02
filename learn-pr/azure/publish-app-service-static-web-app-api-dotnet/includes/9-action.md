@@ -8,9 +8,9 @@ You may remember when you created the Azure Static Web Apps resource that you pr
 
 The GitHub Action is ready to build and publish your web app and API once it detects a change to your **main** branch. You could either commit directly or create a pull request to the **main** branch. Both of these will trigger the GitHub Action. Changes that are detected on the **main** branch will trigger the GitHub Action to publish the app at the same URL for your live web site.
 
-## Preview URLs
+## Pre-production environments with preview URLs
 
-Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see your changes through preview URLs. You can create a preview URL by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new staging version of your app is created. If you go back and check your pull request on GitHub you'll notice that a link to the staging version posted in the Conversation tab.
+Sometimes you want to see your changes in a staging site before publishing to the live web site. Azure Static Web Apps lets you see your changes through pre-production environments that each have its own preview URL. You can create a pre-production environment by creating a pull request against the branch that your GitHub Action is watching. Your live web site won't be affected. Instead, a new version of your app is created in its own pre-production environment. If you go back and check your pull request on GitHub you'll notice that a link to the pre-production version posted in the Conversation tab.
 
 The following table shows how Azure Static Web Apps will publish your app to different URLs. Your app publishes to one URL while a pull request to the same branch publishes to another URL. Azure Static Web Apps provides auto-generated URLs for the production app and pull requests. You can optionally assign a custom domain to the production app.
 
@@ -19,7 +19,7 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 | **main** branch   | Example live web site URL | `https://purple-rain-062d03304.azurestaticapps.net/`   |
 | Pull Request #5   | Example preview URL       | `https://purple-rain-062d03304-5.<location>.azurestaticapps.net/` |
 
-You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **main** branch. When you create the pull request against the **main** branch, the GitHub Action publishes the app to a preview URL.
+You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **main** branch. When you create the pull request against the **main** branch, the GitHub Action publishes the app to a pre-production environment.
 
 Once the workflow has completed building and deploying your app, the GitHub bot adds a comment to your pull request, which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
 

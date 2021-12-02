@@ -11,6 +11,8 @@ This module makes it easy for you to create a new repository by using a GitHub t
 
 1. Name your repository **my-static-blazor-app**.
 
+1. Azure Static Web Apps supports both public and private repositories. For this exercise, you can select **Private** as the visibility.
+
 1. Select **Create repository from template**.
 
 ## Run your app
