@@ -10,6 +10,10 @@ Completing game tasks typically requires players to move their fingers with spee
 - Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in game play.
 - Players must be able to activate a multitude of different inputs to engage in basic play.
 
+In the following video, you'll learn to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features are not provided.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWQhCj]
+
 ## Mobility and disability
 
 Players with disabilities that impact arm and hand movement can also experience unique barriers to play. The experiences of these players can differ based on the nature of physical demands a game requires for input. When learning about the broad range of player experiences related to mobility and input, an awareness of the following factors is an important start:
