@@ -43,11 +43,11 @@ In addition to the change controls in place, Azure Blueprints also offers a reso
 
 These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure, that can have locks overridden by users with the appropriate role-based access controls, it isn’t the case with Azure Blueprints. This security measure protects the consistency of the defined blueprint and the environment it was designed to create, from accidental or programmatic deletion or alteration.
 
-## How Azure Blueprints and Azure resource manager templates work together
+## How Azure Blueprints and Azure Resource Manager templates work together
 
 There are many options available when it comes to making a decision on Infrastructure as Code (IaC) tooling. Additionally, upon first glance, ARM templates, and Azure Blueprints seem to overlap and perform the same tasks, adding yet another layer of confusion when there are two native solutions.
 
-Since both features can be used to package an environment together and deploy Azure artifacts and resources, what’s the difference?
+Since both features can be used to package an environment together and deploy Azure Artifacts and resources, what’s the difference?
 
 **ARM templates** are documents that don’t exist natively within Azure – these templates are normally stored locally or in a central code repository. Once these templates are deployed, there is no connection between the template and the resources that have been deployed. This can lead to issues such as templates not being updated in a timely manner for any changes that are required for the resource (and future resources), or templates being updated without proper documentation as to what might have changed.
 
