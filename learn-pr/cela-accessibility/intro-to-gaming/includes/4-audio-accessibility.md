@@ -32,5 +32,5 @@ Players with hearing disabilities may have difficulty hearing sounds of certain 
 
 Approaches that should be considered for players with partial hearing could include:
 
-- The ability to adjust the volume levels for individual class of audio (player chat, music, effects, UI, dialogue, and voice chat).  
+- The ability to adjust the volume levels for individual classes of audio (player chat, music, effects, UI, dialogue, and voice chat).  
 - The option to enable mono audio output.
