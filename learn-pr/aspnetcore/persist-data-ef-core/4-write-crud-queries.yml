@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.5-write-crud-queries
+uid: learn.persist-data-ef-core.write-crud-queries
 metadata:
   title: Exercise - Write CRUD queries
   description: Learn how to write Create, Read, Update, Delete (CRUD) queries in Entity Framework Core.

@@ -28,8 +28,7 @@ roles:
 products:
 - dotnet
 - aspnet-core
-  - dotnet-core
-  
+- dotnet-core
 - dotnet-standard
 - ef-core
 - azure

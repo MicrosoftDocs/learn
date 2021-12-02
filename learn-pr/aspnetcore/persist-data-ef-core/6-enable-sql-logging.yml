@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.7-enable-sql-logging
+uid: learn.persist-data-ef-core.enable-sql-logging
 metadata:
   title: Exercise - Enable SQL logging
   description: Learn how to enable logging of SQL queries in Entity Framework Core.

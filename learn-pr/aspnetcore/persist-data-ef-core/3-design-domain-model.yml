@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.4-design-domain-model
+uid: learn.persist-data-ef-core.design-domain-model
 metadata:
   title: Exercise - Design the domain model
   description: Learn how to design the classes representing the domain model.
