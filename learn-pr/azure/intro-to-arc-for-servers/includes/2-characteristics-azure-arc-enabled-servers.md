@@ -19,7 +19,7 @@ The Azure Arc-enabled servers Connected Machine agent enables you to manage your
 - The Hybrid Instance Metadata service (HIMDS) manages the connection to Azure and the connected machine's Azure identity.
 - The Guest Configuration agent provides In-Guest Policy and Guest Configuration functionality, such as assessing whether the machine complies with required policies.
 - The Extension agent manages the install, uninstall, and upgrade of VM extensions, which are lightweight software components that automate post-operating system deployment configuration and automation tasks.
-- 
+
 Together, the Hybrid Instance Metadata service, Guest Configuration agent, and Extension agent constitute the Connected Machine Agent.
 
 ![A diagram outlining the core components of the Connected Machine agent.](../media/2-connected-machine-agent.png)
