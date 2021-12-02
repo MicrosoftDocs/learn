@@ -4,9 +4,9 @@ title: Use release gates to protect quality
 metadata:
   title: Use release gates to protect quality
   description: "Use release gates to protect quality"
-  ms.date: 11/23/2021
+  ms.date: 12/02/2021
   author: wwlpublish
-  ms.author: lumac
+  ms.author: luiz.macedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
