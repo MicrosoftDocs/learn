@@ -7,7 +7,7 @@ In this unit, you'll learn about common input mechanics in games that may pose b
 Completing game tasks typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
 
 - Platforms or game titles only support a specific type of input device that some players cannot physically use.
-- Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in gameplay.
+- Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in game play.
 - Players must be able to activate a multitude of different inputs to engage in basic play.
 
 ## Mobility and disability
