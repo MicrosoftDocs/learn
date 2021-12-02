@@ -1,12 +1,12 @@
-Azure Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize incident management in Azure Sentinel.
+Microsoft Sentinel uses various sources of security information to create incidents. As lead system engineer at Contoso, you'll need to understand these sources to best utilize incident management in Microsoft Sentinel.
 
 ## Incident evidence
 
-Incident evidence consists of the security event information and related Azure Sentinel assets that identify threats in the Azure Sentinel environment. Evidence displays how a threat has been identified in Azure Sentinel. It links you back to the specific resources that you can use to increase your awareness of incident details.
+Incident evidence consists of the security event information and related Microsoft Sentinel assets that identify threats in the Microsoft Sentinel environment. Evidence displays how a threat has been identified in Microsoft Sentinel. It links you back to the specific resources that you can use to increase your awareness of incident details.
 
 ### Events
 
-Events link you back to one or more events from the Log Analytics workspaces associated with Azure Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to an Azure Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
+Events link you back to one or more events from the Log Analytics workspaces associated with Microsoft Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Microsoft Sentinel analytics rule returns events, these events are attached to the generated incident for potential further review. You can use events to understand the scope and frequency of the incident before investigating further.
 
 ### Alerts
 
@@ -16,7 +16,7 @@ Most incidents are generated because of an analytics rule alert. Examples of ale
 - Detection of suspicious user activities.
 - Attempted elevation of privilege.
 
-Analytics rules generate alerts, based on either KQL queries or direct connection to Microsoft Security solutions such as Azure Security Center or Microsoft Defender 365. If you enable alert grouping, Azure Sentinel includes any related alert evidence for the incident.
+Analytics rules generate alerts, based on either KQL queries or direct connection to Microsoft Security solutions such as Microsoft Defender for Cloud or Microsoft 365 Defender. If you enable alert grouping, Microsoft Sentinel includes any related alert evidence for the incident.
 
 ### Bookmarks
 

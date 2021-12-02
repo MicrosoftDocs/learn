@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to how to program the Altair 8800 emulator.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  [!include[](includes/01-introduction.md)]

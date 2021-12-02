@@ -6,9 +6,10 @@ metadata:
   description: Summary.
   ms.date: 10/26/2021
   author: jongalloway
-  ms.author: jogallow
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-aspnetcore
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -40,7 +40,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
    > [!IMPORTANT]
    > Don't forget to note your password, unique ID, and region. You'll need this information throughout the module.
 
-1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Azure Defender, and create a storage account for use in upcoming units.
+1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Microsoft Defender for Cloud, and create a storage account for use in upcoming units.
 
     ```powershell
     # The logical server name has to be unique in the system

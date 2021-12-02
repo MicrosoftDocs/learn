@@ -99,15 +99,15 @@ quiz:
       explanation: That's incorrect. The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions.
   - content: 'How would you check the compliance of an onboarded customers resource against Azures default security policy?'
     choices:
-    - content: Using Azure Sentinel and filtering for the desired customer.
+    - content: Using Microsoft Sentinel and filtering for the desired customer.
       isCorrect: false
-      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+      explanation: That's incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
     - content: Using Azure Monitor and filtering for the desired customer.
       isCorrect: false
-      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
-    - content: Using Security Center and filtering for the desired customer.
+      explanation: That's incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Defender for Cloud and filtering for the desired customer.
       isCorrect: true
-      explanation: That's correct. Security Center will let you know if a specific or all subscriptions meet the security policy.
+      explanation: That's correct. Defender for Cloud will let you know if a specific or all subscriptions meet the security policy.
   - content: 'When would you use a private plan type?'
     choices:
     - content: When you want to preview a service offer before publishing it on the Azure Marketplace.

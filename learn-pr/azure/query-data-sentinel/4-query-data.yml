@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the following tools can an administrator use to query data in Azure Sentinel?"
+  - content: "Which one of the following tools can an administrator use to query data in Microsoft Sentinel?"
     choices:
     - content: "Structured Query Language (SQL)"
       isCorrect: false
