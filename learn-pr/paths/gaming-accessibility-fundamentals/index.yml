@@ -2,7 +2,7 @@
 uid: learn.gaming-accessibility-fundamentals
 metadata:
   title: Gaming accessibility fundamentals
-  description: At Microsoft, we understand the power of technology, and that’s why we continue to innovate, create, and design in a way that gives everyone the ability to achieve more. Trainings like this learning path, which covers accessibility fundamentals, are an important and necessary part of Microsoft’s accessibility strategy to support customers of all abilities. Don’t forget to share your awards on social media after completing each module!
+  description: At Team Xbox, we believe that when everyone plays, we all win. That's why we're committed to ensuring that as many developers as possible have the tools needed to create accessible experiences. This learning path introduces foundational concepts about gaming accessibility for game, platform, and hardware developers looking to learn more about this topic for the first time.
   brand: m365
   ms.date: 11/29/2021
   author: kaitlynjones
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-cela-accessibility
 title: Gaming accessibility fundamentals
-summary: Technology can empower people to achieve more, help strengthen education opportunities, and make the workplace more inviting and inclusive for people with disabilities. And with more than 1 billion people with disabilities in the world, Microsoft believes accessibility and inclusion are essential to delivering on our mission to empower every person and every organization on the planet to achieve more. Don’t forget to share your awards on social media after completing each module!
+summary: Gaming is a staple of modern-day culture that has the power to bring people together as part of a community and connect them through shared experiences. With nearly 400 million players with disabilities in the world, it’s important to create gaming experiences that are inclusive and accessible by design for as many players as possible. 
 prerequisites: None
 video:
   title: "Gaming accessibility fundamentals"
