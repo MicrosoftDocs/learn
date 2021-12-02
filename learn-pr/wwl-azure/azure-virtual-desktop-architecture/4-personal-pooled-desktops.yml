@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-virtual-desktop-architecture.personal-pooled-desktops
+title: Personal and pooled desktops
+metadata:
+  title: Personal and pooled desktops
+  description: "Personal and pooled desktops"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-personal-pooled-desktops.md)]
