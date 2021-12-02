@@ -1,6 +1,6 @@
 Configuring device redirections for your Azure Virtual Desktop environment allows you to use printers, USB devices, microphones, and other peripheral devices in a remote session.
 
-Some device redirections require changes to both Remote Desktop Protocol (RDP) properties and Group Policy settings.<br>
+Some device redirections require changes to both Remote Desktop Protocol (RDP) properties and Group Policy settings.
 
 Each client supports different device redirections.
 

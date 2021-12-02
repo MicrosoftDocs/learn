@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Run msrdcw.exe"
       isCorrect: true
-      explanation: "That's correct. You run msrdcw.exe to emove your user data, restore default settings and unsubscribe from all Workspaces."
+      explanation: "That's correct. You run msrdcw.exe to remove your user data, restore default settings and unsubscribe from all Workspaces."
     - content: "Install the FSLogix agent on the session hosts in HostPoolSouth"
       isCorrect: false
       explanation: "That's incorrect. FSLogix enhances and enables user profiles in Windows remote computing environments. FSLogix may also be used to create more portable computing sessions when using physical devices."
