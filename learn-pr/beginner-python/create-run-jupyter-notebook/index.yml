@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.beginner-python.create-run-jupyter-notebook
 metadata:
-  title: Get started using Jupyter notebooks for Python
+  title: Get started with Jupyter notebooks for Python
   description: Get started using Jupyter notebooks for Python programming.
   ms.date: 12/02/2021
   author: jlooper
@@ -9,7 +9,7 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Get started using Jupyter notebooks for Python.
+title: Get started with Jupyter notebooks for Python
 summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive runnable Markdown and code elements.
 abstract: |
   By the end of this module, you'll be able to:
