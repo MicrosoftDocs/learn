@@ -4,91 +4,46 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 11/30/2021
-  author: ricmmart
+  description: "Knowledge check for intro to Azure Blueprints."
+  ms.date: 6/30/2021
+  author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following statements accurately describes Azure Blueprints?"
     choices:
-    - content: ""
+    - content: "A configuration management tool to deploy Azure Resources."
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints isn't a configuration management tool."
+    - content: "Azure Blueprints are a declarative way to orchestrate the deployment of specific artifacts on Azure."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: This is the statement which best describes Azure Blueprints"
+    - content: "Azure Blueprints is a version control tool for your environment."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure Blueprints isn't a version control tool."
+  - content: "What are the four artifacts which can be deployed using Azure Blueprints?"
     choices:
-    - content: ""
+    - content: "Role Assignments, Policy Assignments, ARM Templates, Resource Groups"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: Those are four artifacts which can be deployed using Azure Blueprints?."
+    - content: "Network Security Groups, Virtual Machines, Virtual Networks, SQL Databases"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
+    - content: "Azure Kubernetes Services, Azure App Services, Cosmos DB, Azure Container Instances"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
+  - content: "Azure Blueprints are capable of:"
     choices:
-    - content: ""
+    - content: "Providing recommendations for Azure resources"
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints can't provide any recommendation."
+    - content: "Block malicious traffic against your Azure environment"
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints isn't a networking/firewall tool."
+    - content: "Assign a blueprint to a management group."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct: This is one of the Azure Blueprints capabilities."

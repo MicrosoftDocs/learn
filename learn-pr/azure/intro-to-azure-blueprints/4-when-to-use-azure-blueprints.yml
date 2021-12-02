@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-blueprints.when-to-use-{product}
-title: When to use {product}
+uid: learn.intro-to-azure-blueprints.when-to-use-azure-blueprints
+title: When to use Azure Blueprints
 metadata:
   unitType: learning-content
-  title: when-to-use-{product}
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: When to use Azure Blueprints
+  description: "Learn the scenarios where you should consider use Azure Blueprints."
   ms.date: 11/30/2021
   author: ricmmartins
   ms.author: ricmart
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-when-to-use-{product}.md)]
+  [!include[](includes/4-when-to-use-azure-blueprints.md)]

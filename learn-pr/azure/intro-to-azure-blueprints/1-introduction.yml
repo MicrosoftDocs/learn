@@ -3,13 +3,13 @@ uid: learn.intro-to-azure-blueprints.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Introduction
+  description: "Introduction to Azure Blueprints and how use to implement governance."
   ms.date: 11/30/2021
   author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
