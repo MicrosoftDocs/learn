@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.create-run-jupyter-notebook.exercise-run-notebook
-title: Exercise - Run your notebook
+title: Exercise - Create and run your notebook
 metadata:
-  title: Exercise - Run your notebook
+  title: Exercise - Create and run your notebook
   description: Learn how to manipulate notebooks to run Markdown blocks and code.
   ms.date: 12/02/2021
   author: jlooper

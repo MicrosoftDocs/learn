@@ -1,7 +1,10 @@
 There are many ways to run notebooks. You can run them right within this environment, on Microsoft Learn, and in fact in several of this path's modules you will run notebooks. In this module, however, you will learn how to get setup to run notebooks locally using Visual Studio Code.
 
+In the following video, Cloud Advocate Alfredo Deza explains how to download Python, get setup in Visual Studio Code, and run a notebook locally.
+
+<br />
 > [!VIDEO https://www.youtube.com/watch?v=yyQM70vi7V8]
-> Cloud Advocate Alfredo Deza explains how to download Python, get setup in Visual Studio Code, and run a notebook locally
+<br />
 
 To start building your notebook, you need to have some software available on your computer.
 

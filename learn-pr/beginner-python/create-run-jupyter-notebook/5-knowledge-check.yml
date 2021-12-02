@@ -25,14 +25,14 @@ quiz:
     - content: ".epynb"
       isCorrect: false
       explanation: "Incorrect. .epynb isn't the suffix used for Jupyter notebooks."
-  - content: "Which of the following pairs of elements are types of elements in an interactive notebook?"
+  - content: "Which of the following answers include types of elements in an interactive notebook?"
     choices:
     - content: "Equations and UI elements."
       isCorrect: false
-      explanation: "This is true, but it's not the only correct answer."
+      explanation: "This answer is true, but it's not the only correct answer."
     - content: "Charts and graphs."
       isCorrect: false
-      explanation: "This is true, but it's not the only correct answer."
+      explanation: "This answer is true, but it's not the only correct answer."
     - content: "Both of the above."
       isCorrect: true
       explanation: "Correct. In addition to many others, equations, UI elements, charts, and graphs are types of elements in an interactive notebook."

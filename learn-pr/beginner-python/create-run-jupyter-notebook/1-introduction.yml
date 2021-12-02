@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.create-run-jupyter-notebook.introduction
-title: Introduction to using notebooks with Python
+title: Introduction
 metadata:
-  title: Introduction to using notebooks with Python
+  title: Introduction
   description: Introduction to using notebooks with Python.
   ms.date: 12/02/2021
   author: jlooper
