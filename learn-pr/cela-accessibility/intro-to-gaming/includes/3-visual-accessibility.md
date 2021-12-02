@@ -25,7 +25,7 @@ When creating accessible visual experiences, a foundational awareness of visual 
  - An understanding that diverse player experiences warrants the need to include diverse player perspectives throughout the entire development process of the gaming experiences you work on to ensure they are truly accessible.
 
 > [!IMPORTANT]
-> The following information is intended to broaden your foundational awareness of vision and disability in the context of gaming. Prior to beginning development work, consulting or collaborating with actual players with visual disabilities is critical. These players are the experts in their own experiences. Therefore, this community's feedback must included to inform effective accessible development solutions within the context of your specific game, platform, product, or experience.
+> The following information is intended to broaden your foundational awareness of vision and disability in the context of gaming. Prior to beginning development work, consulting or collaborating with actual players with visual disabilities is critical. These players are the experts in their own experiences. Therefore, this community's feedback must be included to inform effective accessible development solutions within the context of your specific game, platform, product, or experience.
 
 Visual disabilities may generally impact player experiences in any combination of the following ways:
 
