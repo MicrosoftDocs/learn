@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-for-servers.capabilities-azure-arc-enabled-servers
-title: What are the core capabilities of Azure Arc enabled servers?
+title:  What are the core management and governance capabilities of Azure Arc-enabled servers?
 metadata:
-  title: What are the core capabilities of Azure Arc enabled servers?
-  description: What are the core capabilities of Azure Arc enabled servers?
+  title: What are the core management and governance capabilities of Azure Arc-enabled servers?
+  description: What are the core management and governance capabilities of Azure Arc-enabled servers?
   ms.date: 12/01/2021
   author: micrum
   ms.author: micrum
