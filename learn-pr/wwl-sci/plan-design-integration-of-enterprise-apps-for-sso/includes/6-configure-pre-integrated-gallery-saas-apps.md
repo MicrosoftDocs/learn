@@ -240,8 +240,7 @@ To edit the application properties:
 
 1. When you're finished, select **Save**.
 
->[!div class="mx-imgBorder"]
->!["Screenshot of the Properties screen that shows how to change the logo."](../media/change-logo.png)
+!["Screenshot of the Properties screen that shows how to change the logo."](../media/change-logo.png)
 
 > [!NOTE]
 > The thumbnail displayed on this Properties pane doesn't update right away. You can close and reopen the Properties pane to see the updated icon.
@@ -256,6 +255,5 @@ You can use the notes field to add any information that is relevant for the mana
 
 1. Update the Notes field, select **Save**.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the Properties screen that shows how to change the notes](../media/notes-application.png)
+![Screenshot of the Properties screen that shows how to change the notes](../media/notes-application.png)
 

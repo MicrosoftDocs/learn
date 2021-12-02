@@ -18,13 +18,11 @@ Cloud App Security integrates visibility with your cloud by:
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 - Helping you have continuous control by setting and continually fine-tuning policies.
 
->[!div class="mx-imgBorder"]
->![Cloud App Security architecture diagram.](../media/proxy-architecture.png)
+![Cloud App Security architecture diagram.](../media/proxy-architecture.png)
 
 ### Cloud Discovery
 
->[!div class="mx-imgBorder"]
->[![Screenshot of the MCAS Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)](../media/sc300-cloud-discovery-screenshot.png#lightbox)
+[![Screenshot of the MCAS Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)](../media/sc300-cloud-discovery-screenshot.png#lightbox)
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.
 
@@ -93,8 +91,7 @@ The AD FS application activity report is available in the Azure portal under Azu
 
 3. Under **Activity**, select **Usage & insights (Preview)**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
 
-    >[!div class="mx-imgBorder"]
-    >![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
+![AD FS application activity.](../media/active-directory-federation-services-application-activity.png)
 
 4. For each application in the AD FS application activity list, view the **Migration status**:
 
