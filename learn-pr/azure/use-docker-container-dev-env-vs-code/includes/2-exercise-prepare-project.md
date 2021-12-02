@@ -16,7 +16,7 @@ In this exercise, you'll clone one of the agency's projects: a Products Dashboar
 1.  Paste in the URL from your clipboard.
 1.  Select a location on your disk where the project can be cloned to.
 1.  Select **Open** from the notification in Visual Studio Code.
-1.  Select "Yes, I trust the authors". 
+1.  If you see a pop-up that asks if you trust the authors, select "Yes, I trust the authors". 
 
 The project should now be open in Visual Studio Code.
 
@@ -35,8 +35,11 @@ The Remote - Containers extension will be installed, and you'll have access to t
 
 ### Windows Only : Configure Docker
 
-If you are using Windows and are **not** using the Windows Subsystem For Linux (WSL) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
+> [!IMPORTANT]
+> If you are using Windows Subsystem for Linux (WSL) with Docker, you can skip this section. If you aren't sure, follow the steps below.
 
-1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. This option is not available if you have enabled the WSL 2 back-end.
+If you are using Windows you _may_ need to allow Docker to access the sample project through the File Sharing settings.
+
+1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. **If you do not see the File Sharing option, you are using WSL with Docker. You can skip this step.**
 
    :::image type="content" source="../media/docker-file-sharing.png" alt-text="Screenshot of the Docker Desktop client with File Sharing settings open." loc-scope="other"::: <!-- no-loc -->
