@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-deploying-azure-joined-virtual-machines-azure-virtual-desk.md)]
+  [!include[](includes/6-deploy-azure-joined-virtual-machines.md)]

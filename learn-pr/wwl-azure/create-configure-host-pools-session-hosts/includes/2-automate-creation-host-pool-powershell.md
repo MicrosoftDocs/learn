@@ -1,9 +1,9 @@
 This unit shows you how to use your PowerShell client to create a host pool for Azure Virtual Desktop.
 
-Run the following cmdlet to sign in to the Azure Virtual Desktop environment:<br>
+Run the following cmdlet to sign in to the Azure Virtual Desktop environment:
 
-```
-
+```powershell
+PowerShell New-AzWvdHostPool -ResourceGroupName -Name -WorkspaceName -HostPoolType -LoadBalancerType -Location -DesktopAppGroupName
 ```
 
 This cmdlet will create the host pool, workspace, and desktop app group. Additionally, it will register the desktop app group to the workspace. You can either create a workspace with this cmdlet or use an existing workspace.

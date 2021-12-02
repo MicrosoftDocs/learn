@@ -1,4 +1,4 @@
-Azure Virtual Desktop licensing allows you to apply a license to any Windows or Windows Server virtual machine that is registered as a session host in a host pool receiving user connections.<br>
+Azure Virtual Desktop licensing allows you to apply a license to any Windows or Windows Server virtual machine that is registered as a session host in a host pool receiving user connections.
 
 > [!NOTE]
 > The license does not apply to virtual machines are running as file share servers or domain controllers.

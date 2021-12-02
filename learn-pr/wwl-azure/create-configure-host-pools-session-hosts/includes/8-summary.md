@@ -1,4 +1,4 @@
-In this module, you learned how to:<br>
+In this module, you learned how to:
 
  -  Configure host pool assignment type.
  -  Automate creation of an Azure Virtual Desktop host pool using PowerShell.

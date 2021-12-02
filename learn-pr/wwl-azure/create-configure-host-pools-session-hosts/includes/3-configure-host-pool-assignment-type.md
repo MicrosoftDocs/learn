@@ -1,4 +1,4 @@
-You can configure the assignment type of your personal desktop host pool to adjust your Azure Virtual Desktop environment to better suit your needs. In this unit, you'll see how to configure automatic or direct assignment for your users.<br>
+You can configure the assignment type of your personal desktop host pool to adjust your Azure Virtual Desktop environment to better suit your needs. In this unit, you'll see how to configure automatic or direct assignment for your users.
 
 The instructions below apply to personal desktop host pools, not pooled host pools, since users in pooled host pools aren't assigned to specific session hosts. This applies to Azure Virtual Desktop with Azure Resource Manager Azure Virtual Desktop objects.
 
