@@ -9739,6 +9739,31 @@
       "source_path": "learn-pr/wwl-mba/azure-iot-strategy-and-solutions/6-Summary-and-reources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-iot-solution-architecture/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/4-describe-extended-events.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/5-create-extended-events-session.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/6-exercise-create-cpu-status-alert.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/4-exercise-create-cpu-status-alert",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/6-summary",
+      "redirect_document_id": true
     }
   ]
 }
