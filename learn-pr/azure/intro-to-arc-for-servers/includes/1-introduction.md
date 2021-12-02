@@ -8,8 +8,8 @@ Contoso's CIO wants to identify technologies that promise to bridge the gap betw
 
 After completing this module, you'll be able to:
 
-- Describe the characteristics of Azure Arc enabled servers.
-- Describe the capabilities, benefits, and use cases of Azure Arc enabled servers.
+- Describe the characteristics of Azure Arc-enabled servers and the Connected Machine agent.
+- Describe the capabilities, benefits, and use cases of Azure Arc-enabled servers for security, monitoring, and governance.
 
 ## Prerequisites
 
