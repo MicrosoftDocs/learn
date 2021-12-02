@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Determining the difference between enemy and ally characters through color alone is an intended challenge that is part of the game’s overall difficulty."
       isCorrect: false
-      explanation: "Incorrect. Games should provide multiple difficulty options so that players can enjoy and complete the game, not create barriers to players you are colorblind."
+      explanation: "Incorrect. Games should provide multiple difficulty options so that players can enjoy and complete the game, not create barriers to players you are color blind."
     - content: "Using color alone to provide information to the player, in this case to help them determine enemy from ally, can introduce unintentional barriers to players with visual disabilities and should be avoided."
       isCorrect: true
       explanation: "Correct. Having elements in the game that are distinguishable only by color creates barriers to access."
-    - content: "Distinguishing enemy and ally character by color alone is okay because players who are colorblind can seek out other assistive technologies to make it work."
+    - content: "Distinguishing enemy and ally character by color alone is okay because players who are color blind can seek out other assistive technologies to make it work."
       isCorrect: false
       explanation: "Incorrect. Developers should not assume that players have access to other assistive technologies or require them to overcome barriers introduced."
