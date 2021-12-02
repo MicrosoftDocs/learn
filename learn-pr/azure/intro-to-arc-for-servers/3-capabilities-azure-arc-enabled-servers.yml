@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Qualys extension. This VM extension implements integration with Azure Defender for servers vulnerability assessment scanning."
       isCorrect: false
-      explanation: "That's incorrect. This VM extension Azure VMAccess extension allows the administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Arc enabled servers."
+      explanation: "That's incorrect. This VM extension allows the administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Azure Arc-enabled servers."
     - content: "Azure Key Vault extension."
       isCorrect: false
       explanation: "That's incorrect. This VM extension provides integration with Azure Key Vault."
