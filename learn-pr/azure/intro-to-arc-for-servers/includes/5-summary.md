@@ -14,3 +14,4 @@ You can learn more by visiting the following webpages:
 - [Virtual machine extension management with Azure Arc enabled servers](/azure/azure-arc/servers/manage-vm-extensions)
 - [Azure Policy built-in definitions for Azure Arc for servers](/azure/azure-arc/servers/policy-reference)
 - [QuickStart: Create a policy assignment to identify non-compliant resources](/azure/governance/policy/assign-policy-portal)
+- [Azure Arc Jumpstart: Azure Arc-enabled servers](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/)
