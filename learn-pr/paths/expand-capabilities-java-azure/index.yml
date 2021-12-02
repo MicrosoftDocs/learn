@@ -17,7 +17,7 @@ summary: |
     - Messaging and eventing systems - Event Hubs and Service Bus
     - Cache - Azure Redis Cache
     - Storage - Azure Storage
-    - Directory - Azure Active Directory (AAD) and AAD B2C
+    - Directory - Azure Active Directory (Azure AD) and Azure AD B2C
 
   As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
 prerequisites: |
