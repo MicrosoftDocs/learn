@@ -33,14 +33,14 @@ Contrast settings are intended to enhance the visibility of on-screen elements b
 The following screenshots provide an example of the Xbox Platform's high contrast mode settings in action.
 
 **Xbox Home Screen without High Contrast Mode Enabled:**
-:::image type="content" source="../media/hc-three.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. Behind the buttons, a gradient color pattern of purples and pinks is displayed.":::
+:::image type="content" source="../media/hc-home.png" alt-text="The Xbox home screen. The Microsoft rewards tab has focus. Buttons consisting of images with text on top of them are displayed. Behind the buttons, a gradient color pattern of purples and pinks is displayed.":::
 
 **The Xbox Platform High Contrast Settings Menu:**
 :::image type="content" source="../media/hc-two.png" alt-text="A screenshot of the Xbox Accessibility High Contrast settings menu. The list box High Contrast: Dark theme is selected. To the right of the list box is an image demonstrating how the Xbox Home screen will look like with a dark theme applied. Text on the screen reads: Turn on high contrast to make on-screen elements easier to see. This will prevent your personal color and background from being shown.":::
 
 **The Xbox Home Screen with High Contrast Dark Theme applied:**
 
-:::image type="content" source="../media/hc-four.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. There is no longer a gradient color pattern of purples and pinks displayed behind the buttons; the background is simply black.":::
+:::image type="content" source="../media/hc-dark.png" alt-text="The Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. There is no longer a gradient color pattern of purples and pinks displayed behind the buttons; the background is simply black.":::
 
 Note the following changes that work to simplify and enhance the visibility of the UI elements:
 
@@ -75,9 +75,9 @@ In gaming contexts, magnification tools can allow players to zoom in on specific
 
 Magnification tools can help players with low vision enlarge screen elements to the point where they can be read or interpreted. Additionally, magnification tools can help players who are using small screens like mobile devices, or are playing on screens that are further away, making screen elements appear small.
 
-:::image type="content" source="../media/mag-four.png" alt-text="The Forza Horizon 5 menu. The entire screen is displayed, including buttons named World Map, Settings, Horizon Adventure, and more.":::
+:::image type="content" source="../media/mag-horn-one.png" alt-text="The Forza Horizon 5 car horns menu. The entire screen is displayed, including the standard horns, musical horns, and sound effects tabs.":::
 
-:::image type="content" source="../media/mag-five.png" alt-text="The Forza Horizon 5 menu, now zoomed in on a specific section of the screen. Only a portion of the original screen is displayed with text and images larger than they were previously.":::
+:::image type="content" source="../media/mag-horn-two.png" alt-text="The Forza Horizon 5 car horns menu, now zoomed in on a specific section of the screen. Only a portion of the original screen is displayed with text and images larger than they were previously.":::
 
 ### Accessible player-to-player communication tools
 
