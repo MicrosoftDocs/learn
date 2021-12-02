@@ -37,7 +37,7 @@ using System.Threading.Tasks;
 using Azure.Messaging.ServiceBus;
 ```
 
-Next, create a new `QueueClient` object, and pass it the connection string and the name of the queue.
+Next, create a new `ServiceBusClient` object, and pass it the connection string and the name of the queue.
 
 ```C#
 await using var client = new ServiceBusClient(connectionString);

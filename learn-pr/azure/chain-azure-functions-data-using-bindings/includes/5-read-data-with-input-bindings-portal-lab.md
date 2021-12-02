@@ -182,9 +182,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link. The **New Cosmos DB connection** dialog box appears.
 
-    > [!NOTE]
-    > If a message appears in the **Azure Cosmos DB input** configuration, prompting you to install an extension, select **Install**. It can take a while to install an extension, so you will need to wait for the installation to complete before proceeding with this exercise.
-    > :::image type="content" source="../media/extension-not-installed.png" alt-text="Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.":::
+    If a message appears prompting you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **Install** and wait for it to finish.
      
 1. By default, Azure recognizes the Azure Cosmos DB account you created earlier. Select **OK** to set up a connection to your database. A *new* connection to the database account is configured and appears in the **Cosmos DB account connection** field.
 
