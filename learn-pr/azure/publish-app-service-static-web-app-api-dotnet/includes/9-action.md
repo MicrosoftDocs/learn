@@ -2,7 +2,7 @@ You added your API to your web app and they're both running locally. Now it's ti
 
 When you created the Azure Static Web Apps instance and asked it to watch your **main** branch, a GitHub Action was generated for you. The GitHub Action listens for commits and pull requests to your repository's **main** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
 
-You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API project. You provided the default value of _Api_. Azure Static Web Apps built and deployed the Azure Funtions app in that folder. However, since you didn't create the HTTP GET API yet, the app didn't work.
+You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API project. You provided the default value of _Api_. Azure Static Web Apps built and deployed the Azure Functions app in that folder. However, since you didn't create the HTTP GET API yet, the app didn't work.
 
 ## Trigger the GitHub Action
 
