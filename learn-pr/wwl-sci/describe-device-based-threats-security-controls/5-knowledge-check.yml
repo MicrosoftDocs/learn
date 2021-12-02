@@ -4,14 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/22/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -25,9 +26,9 @@ quiz:
     - content: "Anything you can touch, as long as it doesn't connect to something else."
       isCorrect: false
       explanation: "Incorrect. A device can be something that can connect to other things."
-    - content: "Anything you can touch but also can connect to something else."
+    - content: "Anything you can touch but also connect to something else."
       isCorrect: true
-      explanation: "Correct. Remember to think broadly when you think about devices. This helps you to better identify potential threat vectors."
+      explanation: "Correct. Remember to think broadly about devices. This helps you to better identify potential threat vectors."
   - content: "What is device hardening?"
     choices:
     - content: "Connecting multiple devices in a network so they can communicate."
