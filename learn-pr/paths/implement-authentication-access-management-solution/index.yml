@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-authentication-access-management-solution
 metadata:
-  title: 'SC-300 part 2: Implement an Authentication and Access Management solution'
-  description: 'SC-300 part 2: Implement an Authentication and Access Management solution'
-  ms.date: 04/06/2021
+  title: 'SC-300: Implement an Authentication and Access Management solution'
+  description: 'SC-300: Implement an Authentication and Access Management solution'
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-300 part 2: Implement an Authentication and Access Management solution'
+title: 'SC-300: Implement an Authentication and Access Management solution'
 prerequisites: |
   None
 summary: |
