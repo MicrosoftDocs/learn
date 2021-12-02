@@ -56,7 +56,7 @@ In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Insid
 
 Let's use the Data Explorer tool in the Azure portal to create a database and container.
 
-1. In the menu, select **Data Explorer**. The **Data Explorer** pane appears.
+1. In the left menu, select **Data Explorer**. The **Data Explorer** pane appears.
 
 1. Select the **New Container** box. The **New Container** pane appears. To see it, you may need to scroll to the right.
 
@@ -140,7 +140,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your app with **Function App** identified in the **Type** column. Select your app. The **Function App** pane appears.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears.
+1. In the Function App menu on the left, under **Functions**, select **Functions**. The **Functions** pane appears.
 
 1. To start the function creation process, from the command bar, select **Create**. The **Create function** pane appears, showing the complete set of supported triggers.
 
@@ -166,7 +166,7 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. Return to the portal, and in the *HttpTrigger2* function menu, under **Developer**, select **Integration**. The **Integration** pane for your *Function* appears.
+1. Return to the portal, and in the *HttpTrigger2* function menu on the left, under **Developer**, select **Integration**. The **Integration** pane for your *Function* appears.
 
     You used a template that created an HTTP trigger and an HTTP output binding. Let's add an Azure Cosmos DB input binding.
 
