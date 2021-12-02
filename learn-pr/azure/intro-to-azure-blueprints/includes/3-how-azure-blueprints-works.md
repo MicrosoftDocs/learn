@@ -1,5 +1,3 @@
-## How Azure Blueprints works
-
 The Azure Blueprint is backed by the globally distributed Azure Cosmos DB, which means that the blueprint objects are replicated to multiple Azure regions with low latency, high availability and consistent access to your objects. All of this are available to you at no costs, since the only costs with Azure Blueprints will be associated with the resources deployed through a blueprint, like a virtual machine, storage, database, etc.
 
 There are three main aspects related with how Azure Blueprints works: Composition, Management, and Scale. Let's the details of each one.
@@ -39,7 +37,7 @@ In addition to the change controls in place, Azure Blueprints also offers a reso
 
 These assignments can only be removed by updating the blueprint itself and changing it to a different locking mode. Unlike other resources in Azure that can have locks overridden by users with the appropriate role-based access controls, this isn’t the case in Azure Blueprints. This security measure protects the consistency of the defined blueprint and the environment it was designed to create from accidental or programmatic deletion or alteration.
 
-## How Azure Blueprints and Azure Resource Manager Templates works together
+## How Azure Blueprints and Azure Resource Manager Templates work together
 
 There are many options available when it comes to making a decision on Infrastructure as Code (IaC) tooling. Additionally, upon first glance, ARM Templates, and Azure Blueprints seem to overlap and perform the same tasks, adding yet another layer of confusion when there are two native solutions.
 

@@ -1,4 +1,4 @@
-## What is Azure Blueprints?
+
 
 Azure Blueprints is a service that will enable you to define a repeatable set of Azure resources to implement your organization standards, patterns, and requirements. You will use Azure Blueprints in a declarative way to build and deploy new environments with a set of built-in components.
 
