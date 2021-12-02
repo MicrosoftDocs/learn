@@ -30,7 +30,7 @@ cout << "a string"; // correct
 
 ## Wrong quote type
 
-It's important to remember whether to use single quotes or double quotes. Use single quotes (`''`) to represent a single character, for example, `'H'`, in `"Hello World"`. Use double quotes (`""`) to represent more than one character used to form a word or string, for example, `"Hello"` or `"Hello World"`.
+It's important to remember whether to use single quotes or double quotes. Use single quotes (`''`) to represent a single character, for example, `'H'` in `"Hello World"`. Use double quotes (`""`) to represent more than one character used to form a word or string, for example, `"Hello"` or `"Hello World"`.
 
 ```cpp
 cout << 'a string'; // incorrect
