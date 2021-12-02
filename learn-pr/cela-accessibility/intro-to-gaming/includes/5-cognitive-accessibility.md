@@ -66,4 +66,4 @@ Unfortunately, this player is unable to deduce this information. Therefore, they
 
 - The option to enable hints when the game senses a player is stuck
 - The ability to bypass certain types of challenges if they cannot be unlocked
-- Providing the references outlined in the previous section like objective logs, maps, and a list of collected items so players have additional opportunities to review what's happened thus far to optomize their chances of piecing together a wide array of information
+- Providing the references outlined in the previous section like objective logs, maps, and a list of collected items so players have additional opportunities to review what's happened thus far to optimize their chances of piecing together a wide array of information
