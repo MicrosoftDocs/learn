@@ -32,7 +32,7 @@ Situational circumstances like being tired, stressed, or sick while gaming can a
 
 A foundational understanding and awareness of these differences is needed in order to consult with a wide array of players with cognitive disabilities to inform effective solutions that address each of these unique experiences.
 
-### Attention
+### Attention and gaming
 
 Attention can be impacted by a wide range of sensory stimuli. While some individuals can easily ignore an incoming text notification on their phone while playing, for others, sustaining attention amidst environmental and in-game distractions can be difficult.
 
@@ -43,7 +43,7 @@ In general, the following supports can help players in eliminating distractions 
  - The ability to customize or disable background animations or moving content that appears on screen as players attempt to read static text
  - The ability to adjust the length and presence of notifications
 
-### Memory
+### Memory and gaming
 
 Navigating through gaming experiences often requires players to recall past information to inform future decisions. This information can include things like the control scheme for the game, events that happened in the storyline, and important locations in the game and how to get to them.
 
@@ -54,7 +54,7 @@ For players who have difficulty remembering information like this, in general, p
  - A means of freely practicing these controls in an isolated environment
  - Maps, waypoint markers, and other directional supports that eliminate the need for players to recall important game locations and how to find them
 
-### Learning and cognitive processing
+### Learning, cognitive processing, and gaming
 
 In gaming, players are often given complex objectives or tasks that gate progress until solved. The way to complete some of these tasks may be easily understood, while other solutions can require players to piece together subtle cues from the game that are not clearly obvious.
 
@@ -62,7 +62,7 @@ For example, let's say a player is met by a locked door blocking the entrance to
 
 The game may have provided subtle cues leading up to this experience, like the presence of a random altar in a previous game area. Ideally, the player was supposed to have placed a gem they received on the altar as they passed it as a prerequisite of this door becoming unlocked when approached.
 
-Unfortunately, this player is unable to deduce this information. Therefore, they become blocked from moving forward. In these types of situations, general approaches that can support players may include: 
+Unfortunately, this player is unable to deduce this information. Therefore, they become blocked from moving forward. In these types of situations, general approaches that can support players may include:
 
 - The option to enable hints when the game senses a player is stuck
 - The ability to bypass certain types of challenges if they cannot be unlocked

@@ -53,7 +53,7 @@ Low vision is a broad term that can encompass a wide spectrum of visual abilitie
 > [!NOTE]
 > The extent of cloudiness, blurriness, or completeness of view can widely vary from player to player. This is why providing multiple options for customization is important.
 
-Players with low vision can experience difficulty reading text or seeing on-screen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, you should consider providing players with customization options for the following:
+Players with low vision can experience difficulty reading text or seeing on-screen visual elements. To ensure game play experiences are accessible for players with varying degrees of low vision, you should consider providing players with customization options for the following:
 
 - The size of text in menus, within the game environment, and within chat-based player-to-player communications.
 - The size of visual elements like waypoint markers, cross hairs, and other important visual indicators.

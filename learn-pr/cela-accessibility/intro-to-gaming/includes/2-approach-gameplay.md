@@ -4,9 +4,9 @@ The team develops games for a living, so it’s fair to assume they know how gam
 
 - How games provide information to players
 - How players interpret this information
-- How players act upon this information to guide successful gameplay
+- How players act upon this information to guide successful game play
 
-In this unit, you’ll be introduced to basic gaming and disability concepts. You’ll also learn how to assess the gameplay process within the context of accessibility. This will increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
+In this unit, you’ll be introduced to basic gaming and disability concepts. You’ll also learn how to assess the game play process within the context of accessibility. This will increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
 
 ## How are games played?
 

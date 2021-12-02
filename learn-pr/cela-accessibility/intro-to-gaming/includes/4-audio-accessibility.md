@@ -2,7 +2,7 @@ You've learned about the portray of important game information through visual me
 
 In this unit, you'll learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with disabilities.
 
-## Audio and Gaming
+## Audio and gaming
 
 Similar to visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio-based information is not represented in an accessible way, players with hearing-related disabilities may be excluded from using this information.
 
@@ -18,7 +18,7 @@ A foundational awareness of these differences warrant the need to consult with a
 
 ### Gaming without audio
 
-Players who cannot hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players may miss important game information when it is portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and non-player character dialogue cannot be used to inform the gameplay of these players.
+Players who cannot hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players may miss important game information when it is portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and non-player character dialogue cannot be used to inform the game play of these players.
 
 General approaches to support these players could include:
 
@@ -28,7 +28,7 @@ General approaches to support these players could include:
 
 ### Gaming and partial hearing
 
-Players with hearing disabilities may have difficulty hearing sounds of certain frequencies, volume levels, or sounds coming from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there may be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This can make it difficult to clearly hear the sound channels that are most important to gameplay.
+Players with hearing disabilities may have difficulty hearing sounds of certain frequencies, volume levels, or sounds coming from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there may be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This can make it difficult to clearly hear the sound channels that are most important to game play.
 
 Approaches that should be considered for players with partial hearing could include:
 
