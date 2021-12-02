@@ -15,7 +15,7 @@ A blueprint is composed of different artifacts. When you begin designing your bl
 * The **RBAC (Role Based Access Controls)** that will be applied
 * The **Resource groups** that will be created to store the Azure resources
 * The **Azure policies** that you would like to create to enforce business rules
-* The **ARM (Azure Resource Manager) template**, which you would like to deploy in order to automate resource creation
+* The **Azure Resource Manager (ARM) template**, which you would like to deploy in order to automate resource creation
 
 ### Management
 
