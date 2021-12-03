@@ -30,6 +30,7 @@ roles:
   - developer
 products:
   - aspnet-core
+  - blazor
   - dotnet
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction
