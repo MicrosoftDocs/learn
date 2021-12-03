@@ -6,7 +6,7 @@ As it uses extensive number of clouds and on-premise applications, including Dyn
 
 The application you built in this module is an amateur application that can be further added to, including a few more functions or features provided by **Microsoft Power Apps**. Consider trying the following features:
 
-* Try using different **Connectors**
+* Try using different **Connectors**.
 * Consider including the feature of ordering more than one product.
 * Incorporate **View shape in MR** in your present developed application.
 
