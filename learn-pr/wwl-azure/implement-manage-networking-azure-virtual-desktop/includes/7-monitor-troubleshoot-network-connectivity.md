@@ -38,7 +38,7 @@ When you deploy a virtual machine, Azure applies several default security rules 
 :::image type="content" source="../media/network-watcher-ip-flow-d02820e1.png" alt-text="Screenshot of Network Watcher IP Flow.":::
 
 
-### Diagnose network routing problems from a virtual machine.
+### Diagnose network routing problems from a virtual machine
 
 When you create a virtual network, Azure creates several default outbound routes for network traffic. The outbound traffic from all resources, such as virtual machines, deployed in a virtual network, are routed based on Azure's default routes. You might override Azure's default routes, or create other routes. You may find that a virtual machine can no longer communicate with other resources because of a specific route. The *next hop* capability enables you to specify a source and destination IPv4 address. Next hop then tests the communication and informs you what type of next hop is used to route the traffic. You can then remove, change, or add a route, to resolve a routing problem.
 
@@ -49,11 +49,11 @@ When you create a virtual network, Azure creates several default outbound routes
 
 The *connection troubleshoots* capability enables you to test a connection between a virtual machine and another virtual machine, an FQDN, a URI, or an IPv4 address. The test returns similar information returned when using the connection monitor capability, but tests the connection at a point in time, rather than monitoring it over time, as connection monitor does.
 
-### Capture packets to and from a virtual machine.
+### Capture packets to and from a virtual machine
 
 Advanced filtering options and fine-tuned controls, such as the ability to set time and size limitations, provide versatility. The capture can be stored in Azure Storage, on the virtual machine's disk, or both. You can then analyze the capture file using several standard network capture analysis tools.
 
-### Diagnose problems with an Azure Virtual network gateway and connections.
+### Diagnose problems with an Azure Virtual network gateway and connections
 
 Virtual network gateways provide connectivity between on-premises resources and Azure virtual networks. Monitoring gateways and their connections are critical to ensuring communication is not broken. The *VPN diagnostics* capability provides a way to diagnose gateways and connections. VPN diagnostics diagnoses the health of the gateway, or gateway connection, and informs you whether a gateway and gateway connections, are available. If the gateway or connection is not available, VPN diagnostics tells you why, so you can resolve the problem.
 
