@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.fundamentals-bicep
+uid: learn.bicep-deploy-manage
 metadata:
   title: Fundamentals of Bicep
   description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
@@ -29,7 +29,7 @@ summary: |
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
-iconUrl: /learn/achievements/bicep/bicep-deploy-manage.svg
+iconUrl: /learn/achievements/bicep/fundamentals-bicep.svg
 levels:
 - beginner
 roles:
@@ -46,4 +46,4 @@ modules:
 - learn.azure.bicep-conditions-loops
 - learn.azure.create-composable-bicep-files-using-modules
 trophy:
-  uid: learn.fundamentals-bicep.trophy
+  uid: learn.bicep-deploy-manage.trophy

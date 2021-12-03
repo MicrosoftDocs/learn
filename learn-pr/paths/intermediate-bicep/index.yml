@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.intermediate-bicep
+uid: learn.bicep-collaborate
 metadata:
   title: Intermediate Bicep
   description: Learn how to use Bicep and Azure features to improve the quality of your infrastructure deployments.
@@ -27,7 +27,7 @@ summary: |
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
   This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
-iconUrl: /learn/achievements/bicep/bicep-collaborate.svg
+iconUrl: /learn/achievements/bicep/intermediate-bicep.svg
 levels:
 - intermediate
 roles:
@@ -44,4 +44,4 @@ modules:
 - learn.arm-template-whatif
 - learn.azure.migrate-azure-resources-bicep
 trophy:
-  uid: learn.intermediate-bicep.trophy
+  uid: learn.bicep-collaborate.trophy
