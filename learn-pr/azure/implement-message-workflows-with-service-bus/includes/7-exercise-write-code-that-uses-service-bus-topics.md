@@ -226,7 +226,18 @@ To complete the component that retrieves messages about sales performance, follo
     await processor.StartProcessingAsync();
     ```
 
-1. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
+1. Look for the following line of code. 
+
+    ```csharp
+    // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client    
+    ```
+1. Replace the line with the following code. 
+
+    ```csharp
+    await processor.DisposeAsync();
+    await client.DisposeAsync();    
+    ```
+3. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
 
 1. To display incoming messages in the console, replace all the code within that method with the following code.
 
@@ -285,7 +296,6 @@ To complete the component that retrieves messages about sales performance, follo
                 
                 Console.Read();
 
-                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
                 await processor.DisposeAsync();
                 await client.DisposeAsync();
             }
