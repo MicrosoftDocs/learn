@@ -552,7 +552,8 @@
                     "**/notebooks/**"
                 ],
                 "dest": "modules"
-            },            {
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
@@ -1136,24 +1137,24 @@
                     "zh-tw"
                 ],
                 "beginner-python/**/*.yml": [
-                 "de-de",
-                 "es-es",
-                 "fr-fr",
-                 "it-it",
-                 "ru-ru",
-                 "pt-br",
-                 "ja-jp",
-                 "ko-kr",
-                 "zh-cn",
-                 "zh-tw",
-                 "cs-cz",
-                 "hu-hu",
-                 "nl-nl",
-                 "pl-pl",
-                 "pt-pt",
-                 "tr-tr",
-                 "sv-se"
-             ]
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ]
             }
         },
         "template": [],
