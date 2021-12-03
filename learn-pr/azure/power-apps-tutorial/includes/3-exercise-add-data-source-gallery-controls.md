@@ -1,18 +1,18 @@
 In Power Apps, you can connect your data with an already existing application or to an application that you're building from scratch. Your app can connect to SharePoint, Microsoft Dataverse, Salesforce, OneDrive, or any other data source.
 
-We will be using SharePoint as our primary data source for this application. You can connect to a SharePoint site to automatically generate an app from a custom list, create a connection before adding data to an existing app or build an app from scratch.
+We will be using SharePoint as our primary data source for this application. You can connect to the SharePoint site to automatically generate an app from a custom list, create a connection before adding data to an existing app or build an app from scratch.
 
 ## Create a SharePoint site
 
 1. Sign in to the [SharePoint portal](https://netorg4603737.sharepoint.com/_layouts/15/sharepoint.aspx) with your Microsoft organization credentials.
 
-2. Select **+ Create site** on the SharePoint start page to create a **SharePoint** site.
+2. Select **+ Create site** on the SharePoint start page to create the **SharePoint** site.
 
     :::image type="content" source="../media/create-site.png" alt-text="Screenshot showing to create site on the SharePoint start page." lightbox="../media/create-site.png":::
 
 3. On the SharePoint start page, you'll find the following information:
 
-    * It'll ask you to choose a site type, either "communication site" or "Team site." Select **Communication site**.
+    * It'll ask you to choose the site type, either "communication site" or "Team site." Select **Communication site**.
 
     * Enter a suitable name for the site, for example, *Easy Sales*
 
@@ -27,15 +27,15 @@ We will be using SharePoint as our primary data source for this application. You
 A modern SharePoint site is created and ready for use in seconds. You can now create a list, document library, page, and so on in your newly created site.
 
 >[!Note]
-> If you selected a team site, a Microsoft 365 group is also created.
+> If you selected team site, a Microsoft 365 group is also created.
 
-## Create a SharePoint list
+## Create SharePoint list
 
-A SharePoint list is a collection of data with some structure: it is similar to a table, a spreadsheet, or a simple database. It can include many different types of information like numbers, text, attachments, and even images.
+A SharePoint list collects data with some structure: similar to a table, spreadsheet, or simple database. It can include many different types of information like numbers, text, attachments, and even images.
 
 For our **Easy Sales** application, we will create a list containing details of all the product categories: **Sofas**, **Chairs**, **Tables**, and **Carpets**.
 
-1. In the newly created SharePoint site under the name *Easy Sales*, click **+ New** dropdown and select **List** to create a SharePoint list.
+1. In the newly created SharePoint site under the name *Easy Sales*, click **+ New** dropdown and select **List** to create your SharePoint list.
 
     :::image type="content" source="../media/select-list.png" alt-text="Screenshot of selecting list." lightbox="../media/select-list.png":::
 
@@ -50,11 +50,11 @@ For our **Easy Sales** application, we will create a list containing details of 
     * Leave the **Show in site navigation** checkbox selected.
     * Click **Create**.
 
-     :::image type="content" source="../media/enter-details.png" alt-text="Screenshot of Create Pane." lightbox="../media/enter-details.png":::
+        :::image type="content" source="../media/enter-details.png" alt-text="Screenshot of Create Pane." lightbox="../media/enter-details.png":::
 
 ## Add data to your SharePoint list
 
-Once the list is created, it's time to add the data to it. Here data means the details of a particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and a 3D model/image of the product to be viewed in Mixed Reality.
+Once the list is created, it's time to add the data. Here data means the details of any particular product. The product details include the following information: Name, Image, Price, Dimensions, Weight, Color, PrimaryMaterial, Area, Height, and 3D model/image of the product to be viewed in Mixed Reality.
 
 1. In the created *Easy sales* list, select **+ Add column**, to add a column of specific type. The below list shows the columns that need to be created with their name and type in this format *Name of the Column - Column type*.
 
@@ -83,7 +83,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
     Repeat the same procedure for rest of the columns in the above list.
 
     >[!Note]
-    > On creating a **SharePoint** list, a default **Title** column gets created, which can be renamed as **Name** for your use.
+    > On creating a **SharePoint** list, default **Title** column gets created, which can be renamed as **Name** for your use.
 
 2. Once we add the columns, we have to add the actual data under these columns. Start adding data to the respective column by downloading the custom folder that includes all the product details for all four lists.
 
@@ -106,7 +106,7 @@ Once the list is created, it's time to add the data to it. Here data means the d
     >[!Note]
     > You won't be needing the height, depth, and width values for the *Carpet* category list. This product category will take up the area value measured during the **Measure in MR** session and give out the price of the carpet following the area calculated. However, we have added the **Price/cm2** column to assist the process of calculation.
 
-## Create a connection
+## Create connection
 
 Now that all our data required for the application is stored in the SharePoint list, we will establish a connection in Power Apps. Once the connection is established, you can easily access the SharePoint data through the application.
 
@@ -122,8 +122,8 @@ Now that all our data required for the application is stored in the SharePoint l
 
 4. The connection is created, and you can build an app from scratch.
 
->[!Note]
-> Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes get reflected in the application through the connection.
+    >[!Note]
+    > Even if the connection is created, you can still add, edit and delete data stored in your SharePoint list. All the changes get reflected in the application through the connection.
 
 Let's start building *Easy Sales* application based on the SharePoint data, and then add data from other sources if wanted. By following this procedure, you'll be able to design some of the main pages of the application. For example, you'll learn to design a splash screen, product page, and product list page. We'll also be accessing various data stored in the SharePoint list through Power Apps gallery control.
 
@@ -197,10 +197,10 @@ To include data in your **Power Apps**, you must connect to the data via the con
     * **Duration** - 2000
     * **Visible** - false
 
-    :::image type="content" source="../media/update-properties-timer.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/update-properties-timer.png":::
+        :::image type="content" source="../media/update-properties-timer.png" alt-text="Screenshot of updating the properties of timer." lightbox="../media/update-properties-timer.png":::
 
-    >[!Note]
-    > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
+        >[!Note]
+        > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
 
 8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. Create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
 
@@ -251,18 +251,18 @@ To include data in your **Power Apps**, you must connect to the data via the con
     Navigate(Carpets,ScreenTransition.Cover)
     ```
 
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    >[!Tip]
+    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
->[!Note]
-> The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
->
->* **Screen** - Required. The screen to display.
->* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
->* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
+    >[!Note]
+    > The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
+    >
+    >* **Screen** - Required. The screen to display.
+    >* **Transition** - Optional. The visual transition to use between the current screen and the next screen. The default value is None.
+    >* **UpdateContextRecord** - Optional. A record that contains the name of at least one column and a value for each column. This record updates the context variables of the new screen as if passed to the UpdateContext function.
 
->[!Tip]
->You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
+    >[!Tip]
+    >You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
 
 ## Use Gallery control
 
@@ -294,7 +294,7 @@ Now that we have added the product categories, we will display the list of produ
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Title** to the **Title1** heading.
 
-    :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields in products page" lightbox="../media/configure-gallery-fields.png":::
+        :::image type="content" source="../media/configure-gallery-fields.png" alt-text="Screenshot of configuring fields in products page" lightbox="../media/configure-gallery-fields.png":::
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
 
@@ -330,8 +330,8 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/replicate-procedure.png" alt-text="Screenshot of following the same procedure for carpets page " lightbox="../media/replicate-procedure.png":::
 
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    >[!Tip]
+    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 After implementing the above steps, here is how your application must look.
 

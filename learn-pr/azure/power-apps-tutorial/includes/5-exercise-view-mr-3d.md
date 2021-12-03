@@ -42,7 +42,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/navigate-next-details.png" alt-text="Screenshot of navigation to next details" lightbox="../media/navigate-next-details.png":::
 
-3. Let's start building the **Product_details** page, by adding a few labels such as **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label, inserting the desired text with the **Text** property of that **Label**. Rename the **Labels** accordingly.
+3. Let's start building the **Product_details** page, by adding few labels such as **Price**, **Dimensions**, **Weight**, **Color**, and **Material**. You can edit the text inside the label, inserting the desired text with the **Text** property of that **Label**. Rename the **Labels** accordingly.
 
     :::image type="content" source="../media/add-labels.png" alt-text="Screenshot of adding labels" lightbox="../media/add-labels.png":::
 
@@ -150,11 +150,11 @@ The details page includes all the details and information concerning the selecte
 
     Likewise, follow the same procedure for **Carpet_details**. Customize the **Navigate** function accordingly.
 
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    >[!Tip]
+    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
->[!Note]
-> Avoid including **View in 3D** component to **Carpet_details** page as we do not use 3D models for the **Carpet** category.
+    >[!Note]
+    > Avoid including **View in 3D** component to **Carpet_details** page as we do not use 3D models for the **Carpet** category.
 
 ## View in MR component
 
@@ -172,8 +172,8 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-source.png" alt-text="Screenshot to add source for view in MR" lightbox="../media/add-source.png":::
 
->[!Note]
-> We do not include the **View in MR** feature for the **Carpets** category. Instead, we will be estimating the **Price** of the carpet depending upon the area calculated in the **Measure in MR** session.
+    >[!Note]
+    > We do not include the **View in MR** feature for the **Carpets** category. Instead, we will be estimating the **Price** of the carpet depending upon the area calculated in the **Measure in MR** session.
 
 Another unique property provided by the **View in MR** component is **Object scaling**. You can edit the sizes of your 3D models externally by changing the **Object width**, **Object height**, and **Object depth** properties.
 
@@ -188,11 +188,11 @@ Another unique property provided by the **View in MR** component is **Object sca
 
     :::image type="content" source="../media/object-scaling.png" alt-text="Screenshot to scale object for view in MR" lightbox="../media/object-scaling.png":::
 
->[!Note]
-> You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measuring unit from the dropdown and later enter the values.
+    >[!Note]
+    > You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measuring unit from the dropdown and later enter the values.
 
->[!Tip]
-> To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    >[!Tip]
+    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 Implementing the above steps must make your application look like this.
 

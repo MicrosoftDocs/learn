@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.7-exercise-measure-in-mr-filter
+uid: learn.azure.power-apps-tutorial.7-exercise-measure-mr-filter
 title: Exercise - Measure in MR and filter in Power Apps
 metadata:
   title: Exercise - Measure in MR and filter in Power Apps
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-measure-in-mr-filter.md)]
+  [!include[](includes/7-exercise-measure-mr-filter.md)]

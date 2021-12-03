@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.power-apps-tutorial.5-exercise-view-in-mr-3d
+uid: learn.azure.power-apps-tutorial.5-exercise-view-mr-3d
 title: Exercise - View in MR and View in 3D
 metadata:
   title:  Exercise - View in MR and View in 3D 
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-view-in-mr-3d.md)]
+  [!include[](includes/5-exercise-view-mr-3d.md)]

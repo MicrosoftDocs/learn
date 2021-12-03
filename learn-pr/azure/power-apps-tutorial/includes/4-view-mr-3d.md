@@ -9,7 +9,7 @@ We will incorporate some of the above Mixed Reality features in our **Easy Sales
 
 ## View in MR
 
-The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays a selected 3D model or image onto the device's live camera feed.
+The View in MR is one of the chief features included in the application. It allows the user to view images and 3D models in the natural world environment. The user can access it by clicking on the button; it overlays selected 3D models or images onto the device's live camera feed.
 
 3D content must be in the .glb file format, and the image must be in .jpg or .png format. The MR components in Power Apps uses Babylon React Native.
 
@@ -29,16 +29,16 @@ The View in MR is one of the chief features included in the application. It allo
 
 * **How object scaling is handled**
 
-  When a model is placed with the View in MR component, it uses the original dimensions of the model. These dimensions are labeled as Object Width, Object Height, and Object Depth properties.
+  When a model is placed with the View in MR component, it uses the original dimensions of the model. These dimensions are Object Width, Object Height, and Object Depth properties.
 
   Let's use the scaling techniques to change the size of the model -
 
   * If no dimensions are defined, we accept that the model is already at its expected scale and leave it unchanged.
-  * If one dimension is defined and the rest are default value of 0, we scale the entire object based on the specified dimension.
+  * If one dimension is defined and the rest are default values of 0, we scale the entire object based on the specified dimension.
   * If two dimensions are defined, we adjust the model to match the given dimensions and average the scale for the third dimension.
 
-     For example, say you had a model with an Object height of 8, an Object width of 5, and an Object depth of 3. You set Object height to 24, and Object width to 10, leave Object depth unchanged. The height has increased by a factor of 3, the width has increased by a factor of 2, average of these two measurements to come to 2.5 and then scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
-  * If all three dimensions are set, we match the size of the model to what you specify.
+     For example, say you have a model with an Object height of 8, Object width of 5, and Object depth of 3. You set Object height to 24 and Object width to 10, leaving Object depth unchanged. The height is increased by 3, and the width is increased by 2. The average of these two measurements comes to 2.5. Later we scale the depth by that amount. The final scaled model would have an Object height of 24, Object width of 10, and Object depth of 7.25
+  * If all three dimensions are set, we match the model's size to what you specify.
 
 ## View in 3D
 

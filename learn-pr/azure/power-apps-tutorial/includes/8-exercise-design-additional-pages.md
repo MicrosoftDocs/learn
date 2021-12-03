@@ -60,11 +60,11 @@ It is allowed to take pictures during the **View in MR** session and display the
 
 11. Replicate the same procedure for **Notes_carpets**.
 
->[!Note]
-> For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
+    >[!Note]
+    > For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
 
->[!Tip]
->You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
+    >[!Tip]
+    >You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
 
 ## Create order summary page
 
@@ -208,8 +208,8 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of adding logo file to the image component" lightbox="../media/add-logo-order.png":::
 
->[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+    >[!Tip]
+    > Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Send emails via Power Apps
 
@@ -249,5 +249,5 @@ Implementing the above steps must make your application work in the following wa
 
 5. Use your finger to swipe from the left edge of the app to the right to close an app. On Android devices, you can also press the Back button and then confirm that you intended to close the app.
 
->[!Note]
-> If an app requires a connection to a data source or permission to use the device's capabilities (such as the camera or location services), you must give consent before you can use the app. Typically, you're prompted only the first time you run the app.
+    >[!Note]
+    > If an app requires a connection to a data source or permission to use the device's capabilities (such as the camera or location services), you must give consent before you can use the app. Typically, you're prompted only the first time you run the app.

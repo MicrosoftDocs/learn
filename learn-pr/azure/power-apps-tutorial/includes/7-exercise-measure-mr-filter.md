@@ -13,7 +13,7 @@ In this module, you'll be using some of the key functional components of **Power
     * **Unit of measurement**: Centimeters
     * **Measurement type**: Freeform
 
-    :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
+        :::image type="content" source="../media/configure-property-measure.png" alt-text="Screenshot to configure the properties of Measure in MR" lightbox="../media/configure-property-measure.png":::
 
 3. On the **Home page** add a **Gallery** by selecting the **Gallery** > **Vertical**. Rename the **Gallery** to **Measure_gallery**.
 
@@ -106,14 +106,14 @@ In this module, you'll be using some of the key functional components of **Power
 
     :::image type="content" source="../media/configure-item-sofas.png" alt-text="Screenshot of configuring items in Sofas" lightbox="../media/configure-item-sofas.png":::
 
->[!Important]
-> Provide appropriate names for the **SharePoint** list and **Gallery** to avoid having errors in the future. Maintain the names of the components in the formulas to avoid confusion.
+    >[!Important]
+    > Provide appropriate names for the **SharePoint** list and **Gallery** to avoid having errors in the future. Maintain the names of the components in the formulas to avoid confusion.
 
->[!Note]
-> Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
+    >[!Note]
+    > Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
 
->[!Tip]
-> Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+    >[!Tip]
+    > Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
 
 ## Calculate price based on area
 

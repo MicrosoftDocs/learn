@@ -20,7 +20,7 @@ You can alter the Measure in MR component with several properties. Some of them 
 
 Formulas created in your canvas app can respond to user input (as the app requires) and calculate values (as we do in Excel). You can create comparable formulas in Power Apps by configuring controls instead of cells. Users can also create formulas that are particular to apps rather than spreadsheets.
 
-To decide how your app responds when users choose a button, alter a slider, or offer other input, you can create a formula. For example, these formulas could display a different screen, update an external data source, or build a table with a subset of the data in an existing table.
+To decide how your app responds when users clicks button, alter a slider, or offer other input, you can create a formula. For example, these formulas could display different screen, update an external data source, or build a table with a subset of the data in an existing table.
 
 Formulas are made up of values, operators, and functions. These functions use parameters, execute an operation, and return a value. You can add formulas to specific properties of your UI components included in the application.
 
