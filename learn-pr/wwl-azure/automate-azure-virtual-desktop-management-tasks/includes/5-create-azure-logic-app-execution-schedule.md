@@ -80,9 +80,7 @@ $Params = @{
 
 ```
 
-After you run the script, the Azure Logic App should appear in a resource group, as shown in the following image.
-
-!\[An image of the overview page for an example Azure Logic App.\](../../linked\_image\_files/Finally, you'll need to create the Azure Logic App and set up an execution schedule for your new scaling tool.
+After you run the script, the Azure Logic App should appear in a resource group.
 
 1.  Open Windows PowerShell.
 2.  Run the following cmdlet to sign in to your Azure account.
