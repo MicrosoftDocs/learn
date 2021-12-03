@@ -9764,6 +9764,11 @@
       "source_path": "learn-pr/wwl-data-ai/schedule-tasks-using-sql-server-agent/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/schedule-tasks-using-sql-server-agent/6-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/java-on-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/get-started-java-azure",
+      "redirect_document_id": false
     }
   ]
 }
