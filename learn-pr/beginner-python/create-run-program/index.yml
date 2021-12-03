@@ -30,9 +30,9 @@ prerequisites: |
 units:
   - learn.beginner-python.create-run-program.introduction
   - learn.beginner-python.create-run-program.print
-  - learn.beginner-python.create-run-program.exercise-print
+  - learn.beginner-python.create-run-program.3-exercise-print
   - learn.beginner-python.create-run-program.input
-  - learn.beginner-python.create-run-program.exercise-input
+  - learn.beginner-python.create-run-program.5-exercise-input
   - learn.beginner-python.create-run-program.knowledge-check
   - learn.beginner-python.create-run-program.summary
 badge:
