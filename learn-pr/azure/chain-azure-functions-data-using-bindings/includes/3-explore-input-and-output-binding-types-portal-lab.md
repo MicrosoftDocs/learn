@@ -27,7 +27,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
-Create
+
 1. In the **Create a resource** menu, select **Compute**, and in results list select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
@@ -91,7 +91,7 @@ Create
 
 Now that we have a function app, it's time to create a function. Each function is activated by a trigger. In this module, we'll define an HTTP trigger by using a predefined template.
 
-1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears. This page lists all the functions that are defined for the function app. The list is empty; we need to create a function.
+1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
@@ -187,7 +187,7 @@ In the preceding code for our function, we saw that we accessed the payload of t
 
 Now that we have a function app, let's create a function. Each function is activated by a trigger. In this module, we'll create an HTTP trigger by using a template.
 
-1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
 1. From the command bar, select **Create**. The **Create function** pane appears.
 
