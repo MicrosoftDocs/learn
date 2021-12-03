@@ -33,7 +33,6 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
 units:
 - learn.publish-azure-web-app-with-visual-studio.1-introduction
 - learn.publish-azure-web-app-with-visual-studio.2-install-the-necessary-workloads
