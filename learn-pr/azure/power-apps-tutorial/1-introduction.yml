@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.power-apps-tutorial.1-introduction
 title: Introduction
-metadata:
+metadata: 
   title: Introduction
-  description: you'll learn how to build and design custom feature-filled apps with no little coding.
+  description: You'll learn how to build and design custom feature-filled apps with no little coding.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
