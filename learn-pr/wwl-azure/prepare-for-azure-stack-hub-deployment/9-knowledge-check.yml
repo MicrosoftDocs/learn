@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-for-azure-stack-hub-deployment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator is planning an Azure Stack Hub deployment for an large customer. They need to choose an identity model for the customer that uses capacity-based billing. Select the two identity providers to use for the customer?"
+    choices:
+    - content: "Active Directory Federation Services in a trial subscription and Active Directory Federation Services in an Enterprise Agreement."
+      isCorrect: false
+      explanation: "That's incorrect. You can deploy Azure Stack Hub using Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider. Active Directory Federation Services in a trial subscription will not assist identifying an identity model for the customer that uses capacity-based billing."
+    - content: "Active Directory Domain Services in a CSP subscription and Active Directory Federation Services"
+      isCorrect: false
+      explanation: "That's incorrect. You can deploy Azure Stack Hub using Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider."
+    - content: "Azure AD in an Enterprise Agreement and Active Directory Federation Services in an Enterprise Agreement"
+      isCorrect: true
+      explanation: "That's correct. You can deploy Azure Stack Hub using Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider. You must make the choice before you deploy Azure Stack Hub. In a connected scenario, you can choose Azure AD or AD FS. For a disconnected scenario, only AD FS is supported."
+  - content: "An Azure Stack Hub operator needs to access Azure Stack Hub endpoints such as portal, adminportal, management, and adminmanagement from outside Azure Stack Hub. What should they do?"
+    choices:
+    - content: "Deploy the Azure Stack (hyperconverged infrastructure) HCI operating system and create a cluster."
+      isCorrect: false
+      explanation: "That's incorrect. Deploying the Azure Stack (hyperconverged infrastructure) HCI operating system and create a cluster is a pre-requisite for configuring the connection between Azure Stack HCI and Azure."
+    - content: "Deploy Azure Active Directory (AD) Connect"
+      isCorrect: false
+      explanation: "That's incorrect. Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybrid identity goals."
+    - content: "Integrate the Azure Stack Hub DNS services with the DNS servers that host the DNS zones you want to use in Azure Stack Hub."
+      isCorrect: true
+      explanation: "That's correct. To be able to access Azure Stack Hub endpoints such as portal, adminportal, management, and adminmanagement from outside Azure Stack Hub, you need to integrate the Azure Stack Hub DNS services with the DNS servers that host the DNS zones you want to use in Azure Stack Hub."
