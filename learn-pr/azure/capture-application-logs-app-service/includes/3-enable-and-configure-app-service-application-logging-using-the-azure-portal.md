@@ -32,7 +32,7 @@ In this task, you'll use Azure CLI to create an ASP.NET Web app using code from 
     contosofashions13642.azurewebsites.net
     ```
 
-1. Run the collowing command to create a storage account.
+1. Run the following command to create a storage account.
 
    ```azurecli
    az storage account create -n $storageAccount -g $resourceGroup -l $appLocation --sku Standard_LRS 

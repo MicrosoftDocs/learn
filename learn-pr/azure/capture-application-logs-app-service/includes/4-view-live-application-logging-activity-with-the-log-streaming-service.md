@@ -44,7 +44,7 @@ To view and copy these details from the Azure portal, in the **App Service** men
 
 :::image type="content" source="../media/4-deployment-credentials.png" alt-text="Screenshot of the App Service Deployment Center pane showing FTPS credentials tab." border="false":::
 
-##Reset user-level credentials
+## Reset user-level credentials
 
 To create a new set of user-level credentials, run the following command in the Cloud Shell.
 
