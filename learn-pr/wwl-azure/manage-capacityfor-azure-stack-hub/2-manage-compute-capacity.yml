@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-capacityfor-azure-stack-hub.manage-compute-capacity
+title: Manage compute capacity
+metadata:
+  title: Manage compute capacity
+  description: "Manage compute capacity"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-manage-compute-capacity.md)]
