@@ -722,3 +722,9 @@ achievements:
   title: Microsoft Azure IoT strategy and solutions
   summary: Microsoft Azure IoT strategy and solutions
   iconUrl: /learn/achievements/azure-iot-strategy-and-solutions.svg
+- uid: learn.java-on-azure.trophy
+  type: trophy
+  title: Java on Azure
+  summary: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  iconUrl: /learn/achievements/java-on-azure.svg
+  
