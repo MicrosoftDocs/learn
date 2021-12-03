@@ -69,11 +69,11 @@ git config --global user.email "john.doe@contoso.com"
 
 ```
 
-If you are working behind an enterprise proxy, you can make your Git repository proxy-aware by adding the proxy details in the Git global configuration file.
+    If you are working behind an enterprise proxy, you can make your Git repository proxy-aware by adding the proxy details in the Git global configuration file.
 
-Different variations of this command will allow you to set up an HTTP/HTTPS proxy (with username/password) and optionally bypass SSL verification.
+    Different variations of this command will allow you to set up an HTTP/HTTPS proxy (with username/password) and optionally bypass SSL verification.
 
-Run the below command to configure a proxy in your global git config.
+    Run the below command to configure a proxy in your global git config.
 
 ```Cmd
 git config --global http.proxy
@@ -88,7 +88,7 @@ dotnet new mvc
 
 ```
 
-Launch Visual Studio Code in the context of the current-working folder:
+    Launch Visual Studio Code in the context of the current-working folder:
 
 ```Cmd
 code .
@@ -97,10 +97,10 @@ code .
 
 5.  When the project opens in Visual Studio Code, select **Yes** for the **Required assets to build and debug are missing from 'myWebApp.' Add them?** Warning message. Select **Restore** for the **There are unresolved dependencies** info message. Hit **F5** to debug the application, then myWebApp will load in the browser, as shown in the following screenshot:
 
-:::image type="content" source="../media/web-app-from-visual-studio-code-578464bb.png" alt-text="Web App from Visual Studio Code.":::
+    :::image type="content" source="../media/web-app-from-visual-studio-code-578464bb.png" alt-text="Web App from Visual Studio Code.":::
 
 
-If you prefer to use the command line, you can run the following commands in the context of the git repository to run the web application.
+    If you prefer to use the command line, you can run the following commands in the context of the git repository to run the web application.
 
 ```Cmd
 
@@ -110,22 +110,22 @@ dotnet run
 
 ```
 
-You will notice the ".vscode" folder is added to your working folder. To avoid committing this folder into your Git repository, you can include it in the .gitignore file. With the ".vscode" folder selected, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected folder in the .gitIgnore file:
+    You will notice the ".vscode" folder is added to your working folder. To avoid committing this folder into your Git repository, you can include it in the .gitignore file. With the ".vscode" folder selected, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected folder in the .gitIgnore file:
 
-:::image type="content" source="../media/add-file-gitignore-a59fa521.png" alt-text="Add file to .gitignore.":::
+    :::image type="content" source="../media/add-file-gitignore-a59fa521.png" alt-text="Add file to .gitignore.":::
 
 
 6.  To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
 
-:::image type="content" source="../media/commit-using-vscode-e38129f0.png" alt-text="Commit using VSCode.":::
+    :::image type="content" source="../media/commit-using-vscode-e38129f0.png" alt-text="Commit using VSCode.":::
 
 
-Open Program.cs, you will notice Git lens decorates the classes and functions with the commit history and brings this information inline to every line of code:
+    Open Program.cs, you will notice Git lens decorates the classes and functions with the commit history and brings this information inline to every line of code:
 
-:::image type="content" source="../media/program-code-showing-class-decoration-318e7a26.png" alt-text="Program.cs code showing class decoration.":::
+    :::image type="content" source="../media/program-code-showing-class-decoration-318e7a26.png" alt-text="Program.cs code showing class decoration.":::
 
 
-7.  Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `master` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
+7.  Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `main` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
 
 ```Cmd
 git branch feature-devops-home-page
@@ -134,7 +134,7 @@ git branch --list
 
 ```
 
-With these commands, you have created a new branch, checked it out. The `--list` keyword shows you a list of all branches in your repository. The green color represents the branch that is currently checked out.
+    With these commands, you have created a new branch, checked it out. The `--list` keyword shows you a list of all branches in your repository. The green color represents the branch that is currently checked out.
 
 8.  Now navigate to the file `~\Views\Home\Index.cshtml` and replace the contents with the text below.
 
@@ -153,7 +153,7 @@ With these commands, you have created a new branch, checked it out. The `--list`
 
 9.  Refresh the web app in the browser to see the changes.
 
-:::image type="content" source="../media/localhost-welcome-page-d81bd903.png" alt-text="Localhost welcome page.":::
+    :::image type="content" source="../media/localhost-welcome-page-d81bd903.png" alt-text="Localhost welcome page.":::
 
 
 10. In the context of the git repository, execute the following commands. These commands will stage the changes in the branch and then commit them.
@@ -169,18 +169,18 @@ git status
 
 ```
 
-11. To merge the changes from the feature-devops-home-page into master, run the following commands in the context of the git repository.
+11. To merge the changes from the feature-devops-home-page into main, run the following commands in the context of the git repository.
 
 ```Cmd
 
-git checkout master
+git checkout main
 
 git merge feature-devops-home-page
 
 
 ```
 
-:::image type="content" source="../media/merge-feature-devops-home-page-output-window-4ee10ad1.png" alt-text="Merge feature-devops-home-page output window.":::
+    :::image type="content" source="../media/merge-feature-devops-home-page-output-window-4ee10ad1.png" alt-text="Merge feature-devops-home-page output window.":::
 
 
 12. Run the below command to delete the feature branch.
@@ -197,21 +197,21 @@ git branch --delete feature-devops-home-page
 The easiest way to understand the outcome of the steps done earlier is to check the history of the operation. Let us have a look at how to do it.
 
 1.  In Git, committing changes to a repository is a two-step process. Running: `add .` The changes are staged but not committed. Finally, running commit promotes the staged changes into the repository.
-2.  To see the history of changes in the master branch, run the command `git log -v`
+2.  To see the history of changes in the main branch, run the command `git log -v`
 
-:::image type="content" source="../media/history-changes-master-branch-721b0c7f.png" alt-text="History of changes in the master branch.":::
+    :::image type="content" source="../media/history-changes-master-branch-721b0c7f.png" alt-text="History of changes in the main branch.":::
 
 
 3.  To investigate the actual changes in the commit, you can run the command `git log -p`
 
-:::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2.png" alt-text="Command line-showing git log -p output with file the changes.":::
+    :::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2.png" alt-text="Command line-showing git log -p output with file the changes.":::
 
 
 ## There is more
 
 Git makes it easy to back out changes. Following our example, if you want to take out the changes made to the welcome page.
 
-You can do It hard resetting the master branch to a previous version of the commit using the following command.
+You can do It hard resetting the main branch to a previous version of the commit using the following command.
 
 ```Cmd
 git reset --hard 5d2441f0be4f1e4ca1f8f83b56dee31251367adc

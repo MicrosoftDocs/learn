@@ -3,7 +3,7 @@ uid: learn.wwl.plan-foster-inner-source
 metadata:
   title: Plan foster inner source
   description: "Plan foster inner source"
-  ms.date: 11/24/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   - Share code between forks
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:
