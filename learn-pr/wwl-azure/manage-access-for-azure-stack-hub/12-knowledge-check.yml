@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have a multi-tenant Azure Stack Hub system for a CSP that is used by multiple customers. You need to configure access for a support specialist to assist in the management. You need the following: - The support specialist should be prevented from accessing customer resources. - The support specialist can monitor the status of infrastructure backups. - The support specialist can create and manage plans, offers, and quotas. Which built-in role should you assign to the support technician?"
+    choices:
+    - content: "Reader and Data Access"
+      isCorrect: false
+      explanation: "That's incorrect. Reader and Data Access Lets you view everything but will not let you delete or create a storage account or contained resource. It will also allow read/write access to all data contained in a storage account via access to storage account keys."
+    - content: "Contributor"
+      isCorrect: true
+      explanation: "That's correct. The Contributor is user that can manage everything except access to customer resources."
+    - content: "User Access Administrator"
+      isCorrect: false
+      explanation: "That's incorrect. User Access Administrator grants you permission to assign roles in all Azure subscriptions and management groups associated with this Azure AD directory."
+  - content: "Which identity provider do you deploy in a disconnected scenario (without a connection to the internet) when you deploy Azure Stack Hub?"
+    choices:
+    - content: "Azure Active Directory (Azure AD)"
+      isCorrect: false
+      explanation: "That's incorrect. When you deploy Azure Stack Hub in a connected mode (connection to the internet), you can use either Azure Active Directory (AD) or Active Directory Federation Services (AD FS)."
+    - content: "Active Directory Federation Services (AD FS)"
+      isCorrect: true
+      explanation: "That's correct. When you deploy Azure Stack Hub in a disconnected mode, without a connection to the internet, only Active Directory Federation Services (AD FS) is supported."
+    - content: "Active Directory Domain Services (AD DS)"
+      isCorrect: false
+      explanation: "That's incorrect. Active Directory stores information about objects on the network and makes this information easy for administrators and users to find and use."
