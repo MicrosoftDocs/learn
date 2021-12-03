@@ -10,8 +10,7 @@
 
 5. In the Identity protection blade, in the left navigation, select User risk policy.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screen image displaying the User risk policy page and highlighted browsing path](../media/browse-identity-protection.png)
+![Screen image displaying the User risk policy page and highlighted browsing path](../media/browse-identity-protection.png)
 
 6. Under **Assignments**, select **All users** and review the available options.
 
@@ -46,7 +45,7 @@
 
 1. Under **Controls** > **Access**, select **Block access**.
 
-1. Select the **Require password change** check box and then select **Done**.
+1. Select the **Require multi-factor authentication** check box and then select **Done**.
 
 1. Under **Enforce Policy**, select **On** and then select **Save**.
 

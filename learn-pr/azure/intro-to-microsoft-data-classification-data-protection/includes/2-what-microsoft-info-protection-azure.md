@@ -44,7 +44,7 @@ Microsoft Information Protection is the common information protection stack that
 Microsoft Information Protection also includes components, such as:
 - Office 365 Message Encryption
 - Sensitivity labels
-- Cloud App Security
+- Defender for Cloud Apps
 - Rights Management connector
 - Information Rights Management
 

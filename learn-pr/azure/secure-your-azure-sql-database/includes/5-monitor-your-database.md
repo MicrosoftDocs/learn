@@ -82,9 +82,9 @@ Let's enable ADS on our database. ADS is a server-level setting, so we'll start 
 
 1. Back in the portal, go to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, and then select the server.
 
-1. In the left menu pane, under **Security**, select **Security Center**.
+1. In the left menu pane, under **Security**, select **Defender for Cloud**.
 
-1. Select **ON** to enable Azure Defender for SQL.
+1. Select **ON** to enable Microsoft Defender for SQL.
 
 1. In the **Vulnerability Assessment Settings** box, a default storage account appears that will be used to store the results of scans.
 

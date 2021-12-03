@@ -6,6 +6,7 @@ To meet these objectives, you'll:
 > * Set up a GitHub repository for this module.
 > * Clone the project's repository to your computer.
 > * Create two resource groups in Azure.
+> * Create two service principals in Azure Active Directory.
 > * Create two secrets and environments in GitHub.
 
 ## Get the GitHub repository
@@ -90,8 +91,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
 
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
-
 ### Sign in to Azure by using the Azure CLI
 
 1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
@@ -119,8 +118,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown control for selecting your preferred terminal shell.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
-
-[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -217,7 +214,7 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
 
-1. Repeat the steps above to create another service principal for your production environment:
+1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -264,7 +261,7 @@ Next, create two service principals in Azure AD: one for your test environment a
 
    Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
 
-1. Repeat the steps above to create another service principal for your production environment:
+1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
 
    ```azurepowershell
    $resourceGroupId = 'RESOURCE_GROUP_ID'

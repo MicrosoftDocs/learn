@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
-  ms.date: 09/16/2021
+  ms.date: 11/25/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

@@ -4,19 +4,21 @@ title: Use File Integrity Monitoring
 metadata:
   title: Use File Integrity Monitoring
   description: "Use File Integrity Monitoring"
-  ms.date: 08/14/2020
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/07-use-file-integrity-monitoring.md)]
 quiz:
   title: "Quick review"
   questions:
-  - content: "At 1:40 to 2:00 minutes in the demonstration, the instructor changes the configuration of a Log Analytics workspace. What does the instructor do and why?"
+  - content: "At 0:50 to 1:00 minutes in the demonstration, the instructor changes the configuration of a Log Analytics workspace. What does the instructor do and why?"
     choices:
     - content: "The instructor selects **ENABLE** on the workspace to allow its use with File Integrity Monitoring."
       isCorrect: false

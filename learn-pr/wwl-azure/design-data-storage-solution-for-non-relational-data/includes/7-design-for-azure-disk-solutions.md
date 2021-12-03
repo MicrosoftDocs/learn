@@ -36,7 +36,7 @@ Azure virtual machine [disk caching](/azure/virtual-machines/premium-storage-per
 | - | - |
 | None| Use for write-only and write-heavy disks. |
 | Read only| Use for read-only and read-write disks. Provides low read latency and high read IOPS and throughput. |
-| Read write| Use only if your application properly handles writing cached data to persistent disks. |
+| Read & write| Use only if your application properly handles writing cached data to persistent disks. |
 
 
 Warning: Disk Caching isn’t supported for disks 4 TiB and larger. When multiple disks are attached to your VM, each disk that is smaller than 4 TiB will support caching. Changing the cache setting of an Azure disk detaches and reattaches the target disk. When it’s the operating system disk, the VM is restarted. 

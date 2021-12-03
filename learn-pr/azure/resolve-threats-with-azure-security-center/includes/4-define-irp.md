@@ -44,7 +44,7 @@ The following figure shows these four phases defined by the NIST. Note that the 
 
 - **Preparation.** This phase includes defining the incident response team, documenting the response plan, and also scoping out tools and processes to help prevent incidents from occurring.
 
-- **Detection and Analysis.** Security incidents come in many forms, and you can't plan for every possible contingency. However, there are common attack vectors that _are_ well known, such as web-based and email-based attacks. These can easily be planned for, and in many cases, the response plan will incorporate standard communications and analysis. Tools such as Azure Security Center can help immensely in this area by providing a standard dashboard to detect and analyze inbound threats.
+- **Detection and Analysis.** Security incidents come in many forms, and you can't plan for every possible contingency. However, there are common attack vectors that _are_ well known, such as web-based and email-based attacks. These can easily be planned for, and in many cases, the response plan will incorporate standard communications and analysis. Tools such as Microsoft Defender for Cloud can help immensely in this area by providing a standard dashboard to detect and analyze inbound threats.
 
 - **Containment, Eradication & Recovery.** Containment involves keeping the threat from growing or impacting other systems. Once it's contained, the response team can begin the steps to remove the threat altogether and then recover the affected systems. This step often involves a back-and-forth movement to the prior detection phase to ensure that the attack vector is truly mitigated and not simply moved to another system.
 
