@@ -28,7 +28,7 @@ To install FSLogix Applications:
 
 The Application Masking Rule Editor is used to define rules used by [Application Masking](/fslogix/implement-application-masking-tutorial).
 
- -  From the FSLogix Download file, select 32 bit or 64 bit depending on your environment.
- -  Run `FSLogixAppsRuleEditorSetup.exe.`
- -  Use **Options** to specify installation folder (see screenshot for Microsoft FSLogix Apps above)
- -  Accept the license agreement and click **Install.**
+1.  From the FSLogix Download file, select 32 bit or 64 bit depending on your environment.
+2.  Run `FSLogixAppsRuleEditorSetup.exe.`
+3.  Use **Options** to specify installation folder (see screenshot for Microsoft FSLogix Apps above)
+4.  Accept the license agreement and click **Install.**

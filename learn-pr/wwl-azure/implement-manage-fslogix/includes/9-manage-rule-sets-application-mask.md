@@ -43,23 +43,23 @@ FSlogix supports four rule types:
 
 ## Create a new rule
 
- -  Select an existing Rule Set from the left panel.
- -  Select **Edit** then **New Rule.**
- -  Specify the [type of rule.](/fslogix/application-masking-rules-ht)
- -  Enter the required parameters.
- -  Click **OK.**
+1.  Select an existing Rule Set from the left panel.
+2.  Select **Edit** then **New Rule.**
+3.  Specify the [type of rule.](/fslogix/application-masking-rules-ht)
+4.  Enter the required parameters.
+5.  Click **OK.**
 
 ## Delete a rule
 
- -  Select an existing Rule Set from the left panel.
- -  Select one or more Rules from the right panel.
- -  Select **Edit** then Delete Rule.
+1.  Select an existing Rule Set from the left panel.
+2.  Select one or more Rules from the right panel.
+3.  Select **Edit** then Delete Rule.
 
 ## Edit a rule
 
- -  Select an existing Rule Set from the left panel.
- -  Select an existing Rule from the right panel.
- -  Select **Edit** then Edit Rule.
+1.  Select an existing Rule Set from the left panel.
+2.  Select an existing Rule from the right panel.
+3.  Select **Edit** then Edit Rule.
 
 ## Redirecting to a network
 

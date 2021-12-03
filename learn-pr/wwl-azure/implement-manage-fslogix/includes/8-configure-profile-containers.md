@@ -67,7 +67,7 @@ Below are settings **required** to enable Profile Container and to specify the l
 :::row-end:::
 
 
-:::image type="content" source="../media/configure-profile-containters-image1-3262485c.png" alt-text="Profile Containers Registry Configuration.":::
+:::image type="content" source="../media/configure-profile-containters-image-1-ccc04778.png" alt-text="Profile Containers Registry Configuration.":::
 
 
 **VHDLocations may be replaced by CCDLocations when using Cloud Cache.**
@@ -150,19 +150,19 @@ These settings below are helpful when configuring Profile Container but are not 
 
 There are often users, such as local administrators, that have profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
 
-:::image type="content" source="../media/configure-profile-containters-image2-62c7529f.png" alt-text="FSLogix Groups image.":::
+:::image type="content" source="../media/configure-profile-containters-image-2-19dd64bc.png" alt-text="FSLogix Groups image.":::
 
 
 By default Everyone is added to the FSLogix Profile Include List group.
 
-:::image type="content" source="../media/configure-profile-containters-image3-409e0292.png" alt-text="Profile Containers Include Image.":::
+:::image type="content" source="../media/configure-profile-containters-image-3-1732033f.png" alt-text="Profile Containers Include Image.":::
 
 
 Adding a user to the FSLogix Profile Exclude List group means that the FSLogix agent will not attach a FSLogix profile container for the user. In the case where a user is a member of both the exclude and include groups, exclude takes priority.
 
-:::image type="content" source="../media/configure-profile-containters-image4-3ee9b670.png" alt-text="Profile Containers Exclude Image.":::
+:::image type="content" source="../media/configure-profile-containters-image-4-c930a3fe.png" alt-text="Profile Containers Exclude Image.":::
 
 
 Profile Containers is now configured and ready to be used. In order to verify that Profile Container is working, sign in as a user in the Included List group. Using File Manager, navigate to the location specified in VHDLocations. Verify that a folder, with the user name and SID has been created.
 
-:::image type="content" source="../media/configure-profile-containters-image5-e0e5a383.png" alt-text="Profile Containers validation image.":::
+:::image type="content" source="../media/configure-profile-containters-image-5-24dec7de.png" alt-text="Profile Containers validation image.":::

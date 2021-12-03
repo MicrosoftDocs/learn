@@ -4,13 +4,13 @@ Office Container is a subset of Profile Container. Although all of the benefits 
 
 Profile Container and Office Container are configured differently. It's important to completely understand the configuration process, especially when using them together.
 
-## Profile Container
+## Understanding Profile Container
 
 Profile Container is used to redirect the full user profile. Profile Container is used in non-persistent, virtual environments, such as Virtual Desktops. When using Profile Container, the entire user profile is included in the profile container except for data that is excluded using the redirections.xml.
 
 For users familiar with managing profiles in non-persistent environments, the function of Profile Container may be compared to Microsoft User Profile Disk, Microsoft Roaming Profiles, or Citrix UPM.
 
-## Office Container
+## Understanding Office Container
 
 Office Container is implemented with another profile solution, and is designed to improve the performance of Microsoft Office in non-persistent environments. As opposed to Profile Container, Office Container redirects only the local user files for Microsoft Office. When configuring Office Container, each Office component is independently included based on the selected settings to include data for specific office components.
 

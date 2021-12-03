@@ -175,9 +175,4 @@ Add or verify the values below:
  -  `AccountKey=myAccountKey`
  -  `EndpointSuffix=mySuffix`
 
-The following screenshot shows where to find the payload for the connection string in the Azure portal:
-
-:::image type="content" source="../media/azure-virtual-desktop-configure-cloud-cache-f65a9521.png" alt-text="Screenshot of Azure portal Storage Access.":::
-
-
-Azure account keys are sensitive and may be protected using Credential Manager.
+Azure account keys are sensitive and may be protected using Credential Manager.<br>
