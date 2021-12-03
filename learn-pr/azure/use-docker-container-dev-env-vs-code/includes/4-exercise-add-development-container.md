@@ -81,4 +81,4 @@ pip3 install --user -r requirements.txt
 
 Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/en/2.0.x/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-In the next section, you'll learn how Visual Studio Code uses something called "port forwarding" to allow access to the application in your browser even though it's running within a container. 
+In the next section, you'll learn how to use the "devcontainer.json" file to automate the dependency install, as well as customize VS Code for this Python project.

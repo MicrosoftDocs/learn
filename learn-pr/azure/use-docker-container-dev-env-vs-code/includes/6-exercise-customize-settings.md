@@ -10,7 +10,7 @@ Before you change the container configuration, you need to reopen the project lo
 1. Type **locally** and select **Remote-Containers: Reopen Folder Locally**.
 1. Notice that the remote indicator changes back to your local environment.
 
-    :::image type="content" source="../media/remote-indicator-local.jpg" alt-text="Remote indicator showing a local connection":::
+    :::image type="content" source="../media/remote-indicator-local.png" alt-text="Remote indicator showing a local connection":::
 
     > [!Note]
     > If you are using WSL and the Remote WSL extension, your indicator may show a connection to WSL when you re-open locally
@@ -34,16 +34,19 @@ The container comes with the Microsoft Python extension. The Python extension en
         "wholroyd.jinja"
     ],
     ```
+1.  Return to the devcontainer.json file and notice that the Jinja extension has been added to the `extensions` section.
+1.  Save the devcontainer.json file.
 
 ## Automate dependency installation
 
 Right now, a developer who's setting up the project for the first time has to know to run `pip3 install --user -r requirements.txt` to install dependencies. Without these dependencies, the project won't run, and other developers might not know why.
 
-Uncomment the `postCreateCommand` option.
+1. Uncomment the `postCreateCommand` option.
 
-```json
-"postCreateCommand": "pip3 install --user -r requirements.txt"
-```
+    ```json
+    "postCreateCommand": "pip3 install --user -r requirements.txt"
+    ```
+1. Save the devcontainer.json file.
 
 This will cause the container to automatically install depedencies whenever a container is created.
 
