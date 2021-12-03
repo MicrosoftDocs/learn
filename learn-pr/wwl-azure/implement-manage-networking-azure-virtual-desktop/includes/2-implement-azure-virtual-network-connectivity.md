@@ -14,13 +14,13 @@ Key scenarios that you can accomplish using a virtual network include:
  -  Routing network traffic
  -  Integration with Azure services
 
-### Communicate with the internet.
+### Communicate with the internet
 
 Resources in a VNet can communicate outbound to the internet, by default. You can communicate inbound to a resource by assigning a public IP address or a public Load Balancer. You can also use public IP or public Load Balancer to manage outbound connections.
 
 When using only an internal Standard Load Balancer, outbound connectivity is not available until you define how you want outbound connections to work with an instance-level public IP or a public Load Balancer.
 
-### Communicate between Azure resources.
+### Communicate between Azure resources
 
 Azure resources communicate securely with each other in one of the following ways:
 
