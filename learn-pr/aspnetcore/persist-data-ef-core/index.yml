@@ -28,7 +28,6 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
 - ef-core
 - azure
 - azure-monitor
