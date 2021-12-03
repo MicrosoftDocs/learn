@@ -35,7 +35,7 @@ The container will begin building. The initial build might take a few minutes be
 
 When the container is finished building, you can see that you are connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
 
-1. Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
+- Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
 
     :::image type="content" source="../media/remote-indicator.png" alt-text="Remote indicator with text that says dev container python 3":::
 
@@ -59,7 +59,7 @@ When the container is finished building, you can see that you are connected to t
 
 ## Install project dependencies
 
-1. Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
+- Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
 
     ```bash
     pip3 install --user -r requirements.txt

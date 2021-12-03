@@ -33,7 +33,7 @@ Right now, a developer who's setting up the project for the first time has to kn
     ```
 1. Save the devcontainer.json file.
 
-This will cause the container to automatically install depedencies whenever a container is created.
+This will cause the container to automatically install dependencies whenever a container is created.
 
 ## Rebuild the new container
 
