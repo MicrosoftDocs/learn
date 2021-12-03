@@ -17,7 +17,7 @@ In this task, you'll use Azure CLI to create an ASP.NET Web app using code from 
    appLocation=<your-local-Azure-region>
    ```
 
-1. Run the collowing commands to deploy the web app.
+1. Run the following commands to deploy the web app.
 
    ```azurecli
    az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE
