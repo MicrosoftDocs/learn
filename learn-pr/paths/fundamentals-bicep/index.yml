@@ -4,7 +4,7 @@ metadata:
   title: Fundamentals of Bicep
   description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
   brand: azure
-  ms.date: 10/26/2021
+  ms.date: 12/03/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

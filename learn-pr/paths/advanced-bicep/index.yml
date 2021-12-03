@@ -4,7 +4,7 @@ metadata:
   title: Advanced Bicep
   description: Learn how to use Bicep for complex deployments to Azure.
   brand: azure
-  ms.date: 10/26/2021
+  ms.date: 12/03/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

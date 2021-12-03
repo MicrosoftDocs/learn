@@ -2,7 +2,7 @@
 author: johndowns
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 11/30/2021
+ms.date: 12/03/2021
 ms.author: jodowns
 ---
 To learn about Bicep, we recommend you take these three learning paths:
@@ -20,10 +20,10 @@ To learn about Bicep, we recommend you take these three learning paths:
 :::row-end:::
 :::row:::
 :::column:::
-[Part 1: Fundamentals of Bicep](xref:learn.fundamentals-bicep)
+[Part 1: Fundamentals of Bicep](xref:learn.bicep-deploy-manage)
 :::column-end:::
 :::column:::
-[Part 2: Intermediate Bicep](xref:learn.intermediate-bicep)
+[Part 2: Intermediate Bicep](xref:learn.bicep-collaborate)
 :::column-end:::
 :::column:::
 [Part 3: Advanced Bicep](xref:learn.advanced-bicep)
