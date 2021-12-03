@@ -9769,16 +9769,6 @@
       "source_path": "learn-pr/paths/java-on-azure/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/get-started-java-azure",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/paths/bicep-deploy/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/fundamentals-bicep",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/paths/bicep-collaborate/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/intermediate-bicep",
-      "redirect_document_id": true
     }
   ]
 }
