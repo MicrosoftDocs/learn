@@ -9773,12 +9773,12 @@
     {
       "source_path": "learn-pr/paths/bicep-deploy/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/fundamentals-bicep",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/paths/bicep-collaborate/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intermediate-bicep",
-      "redirect_document_id": false
+      "redirect_document_id": true
     }
   ]
 }
