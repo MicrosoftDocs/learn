@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "After you have added a devcontainer configuration to a project, how do you open that project in the container?"
+    - content: "After you have added a dev container configuration to a project, how do you open that project in the container?"
       choices:
         - content: "The project automatically opens in the container."
           isCorrect: false

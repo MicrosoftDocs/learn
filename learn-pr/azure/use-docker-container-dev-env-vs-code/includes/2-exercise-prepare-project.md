@@ -25,21 +25,13 @@ The project should now be open in Visual Studio Code.
 
 ## Install the Remote - Containers extension
 
-1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> to open the **Extensions** viewlet, or click on the "Extensions" icon in the activity bar.
+1. Click on the "Extensions" icon in the Activity Bar to open the **Extensions** viewlet
+
+   :::image type="content" source="../media/extensions-icon.png" alt-text="Screenshot of the Visual Studio Code activity bar with Extension icon highlighted"::: <!-- no-loc -->
+
 1. Type **remote containers**.
 1. Locate the **Remote - Containers** extension and select the **Install** button.
 
    :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Remote Containers extension." loc-scope="other"::: <!-- no-loc -->
 
 The Remote - Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
-
-### Windows Only : Configure Docker
-
-> [!IMPORTANT]
-> If you are using Windows Subsystem for Linux (WSL) with Docker, you can skip this section. If you aren't sure, follow the steps below.
-
-If you are using Windows you _may_ need to allow Docker to access the sample project through the File Sharing settings.
-
-1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. **If you do not see the File Sharing option, you are using WSL with Docker. You can skip this step.**
-
-   :::image type="content" source="../media/docker-file-sharing.png" alt-text="Screenshot of the Docker Desktop client with File Sharing settings open." loc-scope="other"::: <!-- no-loc -->

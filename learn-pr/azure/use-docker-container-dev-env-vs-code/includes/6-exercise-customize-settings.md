@@ -2,21 +2,6 @@ The devcontainer.json file helps you configure a variety of settings in your con
 
 In this exercise, you'll use the devcontainer.json file to smooth these edges and make the project work with no setup steps from the developer.
 
-## Reopen the project locally
-
-Before you change the container configuration, you need to reopen the project locally.
-
-1. Press <kbd>F1</kbd> to open the Command Palette.
-1. Type **locally** and select **Remote-Containers: Reopen Folder Locally**.
-1. Notice that the remote indicator changes back to your local environment.
-
-    :::image type="content" source="../media/remote-indicator-local.png" alt-text="Remote indicator showing a local connection":::
-
-    > [!Note]
-    > If you are using WSL and the Remote WSL extension, your indicator may show a connection to WSL when you re-open locally
-
-1. Open the devcontainer.json file in the .devcontainer folder if it's not open already.
-
 ## Install Visual Studio Code extensions
 
 The container comes with the Microsoft Python extension. The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and a different extension needs to be installed to get syntax highlighting in that file.
@@ -52,18 +37,18 @@ This will cause the container to automatically install depedencies whenever a co
 
 ## Rebuild the new container
 
-1. Open the Command Palette.
-1. Type **rebuild** and select **Remote-Containers: Rebuild and Reopen in Container**.
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type **rebuild** and select **Remote-Containers: Rebuild Container**.
 
 The container will be rebuilt with the changes you've specified in the devcontainer.json file. 
 
 > [!NOTE]
-> Whenever a container is rebuilt, the container is removed and completely recreated. 
+> Whenever a container is rebuilt, the container is removed and completely recreated. Terminal history is not persisted when a container is rebuilt.
 
 ## Examine syntax highlighting provided by the Jinja extension
 
 1. Open the template/index.html file.
-1. Scroll down to line 33 and notice that syntax highlighting is on the `for` loop. This syntax highlighting is enabled by the Jinja extension
+1. Scroll down to line 33 and notice that syntax highlighting is on the `for` loop. This syntax highlighting is enabled by the Jinja extension.
 
    :::image type="content" source="../media/for-loop.jpg" alt-text="Screenshot of a Jinja template, emphasizing a for loop with syntax highlighting.":::
 

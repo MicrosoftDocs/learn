@@ -36,9 +36,6 @@ The last section of the file deals directly with project configuration.
 
 // Use 'postCreateCommand' to run commands after the container is created.
 // "postCreateCommand": "pip3 install --user -r requirements.txt",
-
-// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-"remoteUser": "vscode"
 ```
 
 - You can use the `extensions` array to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions that you already have won't be present when you're using Remote - Containers. Extensions are specified here with their ID. 

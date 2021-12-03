@@ -18,8 +18,6 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 
 A Remote Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
-:::image type="content" source="../media/open-in-container-notification.jpg" alt-text="Screenshot of the Visual Studio Code notification that asks you to reopen the project in a container.":::
-
 ## Inspect configuration files
 
 1. Notice that a new folder called _.devcontainer_ has been added to the project.
@@ -27,7 +25,7 @@ A Remote Container configuration will be added to your project. Visual Studio Co
 
 ## Open the project in a container
 
-1. Open the Command Palette.
+1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **reopen in container**.
 1. Select **Remote Containers: Reopen in Container** from the list of available options.
 
@@ -35,14 +33,14 @@ The container will begin building. The initial build might take a few minutes be
 
 ## View the Remote Indicator
 
-When the container is finished building, you can see that you are connected to the container by examing the Remote Indicator.
+When the container is finished building, you can see that you are connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
 
-1. Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python3".
+1. Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
 
     :::image type="content" source="../media/remote-indicator.png" alt-text="Remote indicator with text that says dev container python 3":::
 
 > [!IMPORTANT]
-> You may see notificaitons about Pylance or improving performance on Windows. You can safely dismiss any notifications that you see in VS Code. You won't need to do those things.
+> You may see notifications about Pylance or improving performance on Windows. You can safely dismiss any notifications that you see in VS Code. You won't need to do those things.
 
 ## Inspect the container
 
@@ -61,11 +59,11 @@ When the container is finished building, you can see that you are connected to t
 
 ## Install project dependencies
 
-Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
+1. Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
 
-```bash
-pip3 install --user -r requirements.txt
-```
+    ```bash
+    pip3 install --user -r requirements.txt
+    ```
 
 ## Run the project
 
