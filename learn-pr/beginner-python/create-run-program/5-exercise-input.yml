@@ -10,6 +10,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
-content: |
-  [!include[](https://github.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/blob/main/exercises/5-exercise-print.ipynb)]
+durationInMinutes: 8
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/main/exercises/5-exercise-input.ipynb
