@@ -15,7 +15,7 @@ The **Basics** section contains the required fields to create a storage account.
 :::image type="content" source="../media/configure-storage-accounts-virtual-desktop-2-15a1b4e6.png" alt-text="Basic section,":::
 
 
-To create a FileStorage storage account, ensure the **Performance** button is set to **Premium** and the **Account kind** is set to **Filestorage**.
+To create a FileStorage storage account, ensure the **Performance** button is set to **Premium** and the **Account kind** is set to **FileStorage**.
 
 :::image type="content" source="../media/configure-storage-accounts-virtual-desktop-3-5c4ffaf9.png" alt-text="Account type":::
 
