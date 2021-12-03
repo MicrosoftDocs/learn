@@ -56,4 +56,4 @@ Notice that the preview URL contains a hyphen followed by a number. The number m
 
 ## Next steps
 
-Congratulations, you've created your first Azure Static Web Apps instance with a web app and API!
+Congratulations, you've created your first Azure Static Web Apps instance with a web app and API! If you merge the pull request you created, Azure Static Web Apps will automatically deploy the changes to your production app.
