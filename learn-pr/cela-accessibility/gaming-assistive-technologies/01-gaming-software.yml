@@ -34,6 +34,6 @@ quiz:
     - content: "Put an advisory about a lack of AT compatibility in the game’s store description."
       isCorrect: false
       explanation: "Incorrect. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. However, this approach does not actively support assistive technology users in playing your game."
-    - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, color filters and more."
+    - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, contrast settings and more."
       isCorrect: true
       explanation: "Correct. This would be the best approach to support players who use AT for scenarios where platform or third-party AT is not compatible, and in general."
