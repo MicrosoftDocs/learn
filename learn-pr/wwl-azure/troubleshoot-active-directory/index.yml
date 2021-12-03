@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-active-directory
 metadata:
   title: Troubleshoot Active Directory
   description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
-  ms.date: 12/02/2021
+  ms.date: 12/03/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
