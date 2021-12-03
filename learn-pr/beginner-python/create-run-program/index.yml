@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.beginner-python.create-run-program
+metadata:
+  title: Write your first Python program
+  description: Learn how to write your first Python programs and to print and gather input toward the console.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write your first Python program
+summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and finally, type conversion.
+abstract: |
+  In this module, you will:
+  - Use functions to manage input and output to the console.
+  - Create variables to store data.
+  - Distinguish between different data types.
+  - Leverage type conversion to convert between data types.
+iconUrl: /learn/achievements/python-first.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - Familiarity with the concept of programming
+units:
+  - learn.beginner-python.create-run-program.introduction
+  - learn.beginner-python.create-run-program.print
+  - learn.beginner-python.create-run-program.exercise-print
+  - learn.beginner-python.create-run-program.input
+  - learn.beginner-python.create-run-program.exercise-input
+  - learn.beginner-python.create-run-program.knowledge-check
+  - learn.beginner-python.create-run-program.summary
+badge:
+  uid: learn.python-first.badge

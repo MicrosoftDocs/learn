@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-program.exercise-print
+title: Exercise - Work with output
+metadata:
+  title: Exercise - Work with output
+  description: In this exercise, you'll learn to output information to the console.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](https://github.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/blob/main/exercises/3-exercise-print.ipynb)]

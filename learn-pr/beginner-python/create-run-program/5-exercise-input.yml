@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-program.exercise-input
+title: Exercise - Collect input
+metadata:
+  title: Exercise - Collect input
+  description: In this exercise, you'll build programs that collects input from both command line argument and user input.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](https://github.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/blob/main/exercises/5-exercise-print.ipynb)]
