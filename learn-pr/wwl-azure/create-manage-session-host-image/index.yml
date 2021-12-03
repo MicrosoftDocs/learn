@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-session-host-image
 metadata:
   title: Create and manage session host image for Azure Virtual Desktop
   description: "Create and manage session host image for Azure Virtual Desktop"
-  ms.date: 12/02/2021
+  ms.date: 12/03/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
