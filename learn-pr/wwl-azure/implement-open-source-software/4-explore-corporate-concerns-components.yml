@@ -4,12 +4,13 @@ title: Explore corporate concerns with open-source software components
 metadata:
   title: Explore corporate concerns with open-source software components
   description: "Explore corporate concerns with open-source software components"
-  ms.date: 11/30/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
