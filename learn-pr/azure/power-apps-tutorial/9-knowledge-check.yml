@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 4
 content: Choose the best response for each question. Then select Check your answers.
 quiz:
-  title: Check your knowledge
+  title: ""
   questions:
     - content: "What can be measured using the measure in MR component?"
       choices:
