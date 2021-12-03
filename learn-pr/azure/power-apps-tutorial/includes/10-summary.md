@@ -12,7 +12,7 @@ The application you built in this module is an amateur application that can be f
 
 ## Further reading
 
-* Learn more about [Measure in MR](/powerapps/maker/canvas-apps/mixed-reality-component-measure-distance) in MR.
-* Learn more about [View in MR](/powerapps/maker/canvas-apps/mixed-reality-component-view-mr) in MR.
+* Learn more about [Measure in MR](/powerapps/maker/canvas-apps/mixed-reality-component-measure-distance).
+* Learn more about [View in MR](/powerapps/maker/canvas-apps/mixed-reality-component-view-mr).
 * Learn more about [Model Driven App](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 * Learn more about the [Connectors](/powerapps/maker/canvas-apps/connections-list) for Canvas apps.
