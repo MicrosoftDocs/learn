@@ -9669,6 +9669,16 @@
       "source_path": "learn-pr/wwl-data-ai/explore-data-storage-processing-azure/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-synapse-analytics/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/bicep-deploy/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/fundamentals-bicep",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/bicep-collaborate/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/intermediate-bicep",
+      "redirect_document_id": false
     }
   ]
 }
