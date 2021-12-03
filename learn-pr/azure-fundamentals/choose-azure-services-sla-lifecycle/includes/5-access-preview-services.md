@@ -69,7 +69,7 @@ The [Azure updates](https://azure.microsoft.com/updates?azure-portal=true) page 
 From the Azure updates page, you can:
 
 * View details about all Azure updates.
-* See which updates are now available,in preview, or in development.
+* See which updates are now available, in preview, or in development.
     :::image type="content" source="../media/5-azure-updates-filter.png" alt-text="Screenshot of the Azure updates page showing how to filter services by now available, in preview, or in development.":::
 * Browse updates by product category or update type.
 * Search for updates by keyword.

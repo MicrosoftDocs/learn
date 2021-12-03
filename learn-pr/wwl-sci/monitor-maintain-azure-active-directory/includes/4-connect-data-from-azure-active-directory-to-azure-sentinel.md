@@ -2,7 +2,7 @@
 ## What is Azure Sentinel
 
 > [!div class="mx-imgBorder"]
-> ![Azure Sentinel screenshot showing the initial configuration screen that allows you to create a new event review, manage views, and open to open KQL queries.](../media/sc300-azure-sentinel.png)
+>![Azure Sentinel screenshot showing the initial configuration screen that allows you to create a new event review, manage views, and open to open KQL queries.](../media/sc300-azure-sentinel.png)
 
 Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Azure Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 - Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds
@@ -55,12 +55,12 @@ You can use Azure Sentinel's built-in connector to collect data from [Azure Acti
 2. In the **Data connectors** list, select **Azure Active Directory** and then select **Open connector page**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted](../media/sentinel-add-azure-active-directory-connector.png)
+    >![Screen image displaying the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted](../media/sentinel-add-azure-active-directory-connector.png)
 
 3. Under **Configuration**, select the **Azure Active Directory Sign-in logs** and **Audit logs** checkboxes and then select **Apply changes**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying the Azure Active Directory logs collected by Azure Sentinel selections highlighted](../media/sentinel-configure-azure-active-directory-connector.png)
+    >![Screen image displaying the Azure Active Directory logs collected by Azure Sentinel selections highlighted](../media/sentinel-configure-azure-active-directory-connector.png)
 
 4. Close the Azure Active Directory connector page.
 

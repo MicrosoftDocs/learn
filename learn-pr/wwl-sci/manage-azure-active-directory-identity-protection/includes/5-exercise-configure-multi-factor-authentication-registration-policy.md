@@ -12,8 +12,7 @@ Azure AD Multi-Factor Authentication provides a means to verify who you are usin
 
 5. In the Identity protection blade, in the left navigation, select **MFA registration policy**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screen image displaying the MFA registration policy page with browsing path highlighted](../media/browse-registration-policy.png)
+![Screen image displaying the MFA registration policy page with browsing path highlighted](../media/browse-registration-policy.png)
 
 6. Under **Assignments**, select **All users** and review the available options.
 

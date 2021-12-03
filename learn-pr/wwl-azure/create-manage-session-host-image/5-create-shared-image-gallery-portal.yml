@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-session-host-image.create-use-shared-image-gallery-sig-using-portal
+title: Create and use a Shared Image Gallery (SIG) using the portal
+metadata:
+  title: Create and use a Shared Image Gallery (SIG) using the portal
+  description: "Create and use a Shared Image Gallery (SIG) using the portal"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-create-shared-image-gallery-portal.md)]
