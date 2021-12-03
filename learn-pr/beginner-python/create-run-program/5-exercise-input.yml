@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.beginner-python.create-run-program.5-exercise-input
+uid: learn.beginner-python.create-run-program.exercise-input
 title: Exercise - Collect input
 metadata:
   title: Exercise - Collect input
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/main/exercises/5-exercise-input.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/main/exercises/exercise-input.ipynb
