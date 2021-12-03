@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is used to estimate the connection round trip time (RTT) from a specific location through the Azure Virtual Desktop service to an Azure region?"
+  - content: "What is used to estimate the connection round-trip time (RTT) from a specific location through the Azure Virtual Desktop service to an Azure region?"
     choices:
     - content: "Azure Pricing Calculator"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
       explanation: "That's incorrect. Azure Synapse brings together SQL technologies used in data warehousing, big data, and pipelines."
     - content: "Azure Virtual Desktop Experience Estimator"
       isCorrect: true
-      explanation: "That's correct. The Azure Virtual Desktop Experience Estimator determines the connection round trip time from a location, using the Azure Virtual Desktop service, to an Azure region."
+      explanation: "That's correct. The Azure Virtual Desktop Experience Estimator determines the connection round-trip time from a location, using the Azure Virtual Desktop service, to an Azure region."
   - content: "What is used to determine the best region for an Azure Virtual Desktop deployment?"
     choices:
     - content: "Remote Desktop Services Diagnostics tool"
