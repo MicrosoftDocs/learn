@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-manage-source-control
+hidden: true
 metadata:
   title: "AZ-400: Manage source control"
   description: "Use GitHub to build a modern source control strategy and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
