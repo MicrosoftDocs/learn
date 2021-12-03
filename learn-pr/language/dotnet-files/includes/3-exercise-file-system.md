@@ -106,7 +106,7 @@ Create a new function called `FindFiles` that takes a `folderName` parameter.
     }
     ```
 
-1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the `Program.cs` file.
+1. Press <kbd>Ctrl+S</kbd> (or <kbd>Cmd+S</kbd> macOS) to save the `Program.cs` file.
 
 ## Run the program
 
