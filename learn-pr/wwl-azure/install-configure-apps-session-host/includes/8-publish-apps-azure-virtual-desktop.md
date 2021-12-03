@@ -6,7 +6,7 @@ To publish a built-in app:
 
 1.  Connect to one of the virtual machines in your host pool.
 2.  Get the **PackageFamilyName** of the app you want to publish.
-3.  Finally, run the following cmdlet with \`&lt;PackageFamilyName&gt; replaced by the **PackageFamilyName** you found in the previous step:
+3.  Run the following cmdlet with the PackageFamilyName replaced by the PackageFamilyName found in the previous step:
 
 ```
 New-AzWvdApplication -Name <applicationname> -ResourceGroupName <resourcegroupname> -ApplicationGroupName <appgroupname> -FilePath "shell:appsFolder\<PackageFamilyName>!App" -CommandLineSetting <Allow|Require|DoNotAllow> -IconIndex 0 -IconPath <iconpath> -ShowInPortal:$true
