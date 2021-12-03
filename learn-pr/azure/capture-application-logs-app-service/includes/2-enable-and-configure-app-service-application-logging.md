@@ -72,7 +72,7 @@ You can also view **Metrics** for your app, which can help you profile how your 
 
 In the portal, app logging is managed from the Diagnostics logs pane of the web app.
 
-:::image type="content" source="media/2-portal-diagnostics-logs-pane.png" alt-text="Screenshot of Diagnostics logs pane in the Azure portal." border="false":::
+:::image type="content" source="../media/2-portal-diagnostics-logs-pane.png" alt-text="Screenshot of Diagnostics logs pane in the Azure portal." border="false":::
 
 To enable app logging to the Web app's file system, set **Application logging (Filesystem)** to **On**, and then set the **Level** to Error, Warning, Information, or Verbose. Logging to the file system will be automatically reset to Off after 12 hours.
 
@@ -83,7 +83,7 @@ To enable app logging to a blob storage container, set **Application logging (Bl
 
 When logging to blob storage, you must also set a **Retention Period**. Unlike the file system logs, blob logs are never deleted by default; the retention period option means that any logs older than the specified number of days will be deleted.
 
-:::image type="content" source="media/2-portal-diagnostics-logs-settings.png" alt-text="Screenshot of configuring application logs in the Azure portal with Save highlighted." border="false":::
+:::image type="content" source="../media/2-portal-diagnostics-logs-settings.png" alt-text="Screenshot of configuring application logs in the Azure portal with Save highlighted." border="false":::
 
 After configuring the logs, select **Save**.
 
