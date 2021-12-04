@@ -1,6 +1,6 @@
 Users can write, debug, and deploy an Azure Function from within the Azure portal. However, writing functions directly in a production, staging, or test environment might not be suitable. For example, writing automated unit tests for Azure Functions, or using on-demand deployment of Azure functions to Function Apps in Azure. Usually, developers prefer to use a code editor and development tools rather than the environment provided by the Azure portal. Visual Studio enables you to develop and manage Azure Functions code using other code and services in a single project.
 
-In the online luxury watch scenario, developers are already familiar with Visual Studio 2019 (hereafter referred to as Visual Studio). So, you decide to use Visual Studio as the primary development environment for creating Azure dunctions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
+In the online luxury watch scenario, developers are already familiar with Visual Studio 2019 (hereafter referred to as Visual Studio). So, you decide to use Visual Studio as the primary development environment for creating Azure functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
 
 In this unit, you'll learn to use tools available in Visual Studio for building and testing an Azure function on your local computer.
 
