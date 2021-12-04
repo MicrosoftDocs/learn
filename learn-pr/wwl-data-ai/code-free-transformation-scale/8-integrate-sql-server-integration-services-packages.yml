@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.integrate-ssis-packages-within
-title: Integrate SQL server integration services packages within Azure Data Factory
+title: Exercise:  Integrate SQL server integration services packages within Azure Data Factory
 metadata:
   title: Exercise:  Integrate SQL server integration services packages within Azure Data Factory
   description: "Exercise:  Integrate SQL server integration services packages within Azure Data Factory"
