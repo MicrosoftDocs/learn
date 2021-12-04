@@ -11,7 +11,7 @@ You need an Azure Cosmos DB to complete this exercise.
 
 1. In the SQL box, select **Create**. If prompted, to login, select the login icon.
 
-1. On the sesulting screen, select **Open in the Azure portal**. The **Quick start** pane for your Azure Cosmos DB account appears.
+1. On the resulting screen, select **Open in the Azure portal**. The **Quick start** pane for your Azure Cosmos DB account appears.
 
 ## Enable Synapse Link for Cosmos DB SQL account
 
@@ -51,8 +51,8 @@ We will now use an alternative and equally effective manner for enabling the Syn
  
     :::image type="content" source="../media/enable-azure-synpase-link-feature-mongodb.png" alt-text="Screenshot highlighting Features and Status for Azure Synapse Link":::
 
-1. In the resource menut, select **Features** and then in the results, select **Azure Synapse Link**. A dialog box opens, prompting you to confirm your selection.
+1. In the resource menu, select **Features** and then in the results, select **Azure Synapse Link**. A dialog box opens, prompting you to confirm your selection.
  
     :::image type="content" source="../media/enable-azure-synpase-link.png" alt-text="Screenshot showing the Enable dialog":::
 
-1.	Select **Enable**. Imay take a few minutes for the feature to be enabled. You can verify that your Azure Cosmos DB API for MongoDB account has been enabled for with the Synapse Link feature in the same manner we did for the Azure Cosmos DB Core (SQL) API account previously. 
+1.	Select **Enable**. It may take a few minutes for the feature to be enabled. You can verify that your Azure Cosmos DB API for MongoDB account has been enabled for with the Synapse Link feature in the same manner we did for the Azure Cosmos DB Core (SQL) API account previously. 
