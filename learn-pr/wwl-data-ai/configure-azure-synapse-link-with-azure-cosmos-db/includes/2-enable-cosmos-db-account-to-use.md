@@ -1,7 +1,7 @@
 In this exercise, we will create a free Azure Cosmos DB, and enable Azure Synapse Link on the Azure Cosmos DB account.
 
 > [!NOTE]
-> Today, once youe enable Synapse Link on an Azure Cosmos DB account, the feature cannot be disabled. Enabling Synapse Link on an account has no billing implications until containers are created with the analytical store enabled.
+> Today, once you enable Synapse Link on an Azure Cosmos DB account, the feature cannot be disabled. Enabling Synapse Link on an account has no billing implications until containers are created with the analytical store enabled.
 
 ## Open an Azure Cosmos DB
 
