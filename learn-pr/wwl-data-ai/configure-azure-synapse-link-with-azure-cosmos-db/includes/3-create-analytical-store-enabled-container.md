@@ -87,7 +87,7 @@ Perform the following steps to load a couple of sample items into the newly crea
 
 ## Create a new Azure Cosmos DB API for MongoDB container
 
-To create a new Azure Cosmos DB API for MongoDB container with analytical store enabled by executing the following steps, in a manner similar to what we recently dID for the SQL API
+To create a new Azure Cosmos DB API for MongoDB container with analytical store enabled by executing the following steps, in a manner similar to what we recently did for the SQL API
 
 1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
 
