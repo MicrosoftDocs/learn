@@ -69,52 +69,70 @@ Connected environments can access the internet and Azure. For these environments
 
 1.  To register the Azure Stack Hub resource provider with Azure, start PowerShell ISE as an administrator and use the following PowerShell cmdlets with the **EnvironmentName** parameter set to the appropriate Azure subscription type (see parameters below).
 2.  Add the Azure account that you used to register Azure Stack Hub. To add the account, run the **Add-AzAccount** cmdlet. You're prompted to enter your Azure account credentials and you may have to use two-factor authentication based on your account's configuration.
-
-```
-Add-AzAccount -EnvironmentName "<environment name>"
-
-```
+    
+    ```
+    Add-AzAccount -EnvironmentName "<environment name>"
+    
+    ```
+    
+    :::row:::
+      :::column:::
+        **Parameter**
+      :::column-end:::
+      :::column:::
+        **Description**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        EnvironmentName
+      :::column-end:::
+      :::column:::
+        The Azure cloud subscription environment name. Supported environment names are AzureCloud, AzureUSGovernment, or if using a China Azure Subscription, AzureChinaCloud.
+      :::column-end:::
+    :::row-end:::
+    
 
 3.  If you have multiple subscriptions, run the following command to select the one you want to use:
-
-```
-Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
-
-```
+    
+    ```
+    Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
+    
+    ```
 
 4.  Run the following command to register the Azure Stack Hub resource provider in your Azure subscription:
-
-```
-Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
-
-```
+    
+    ```
+    Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
+    
+    ```
 
 5.  Start PowerShell ISE as an administrator and navigate to the **Registration** folder in the **AzureStack-Tools-az** directory created when you downloaded the Azure Stack Hub tools. Import the **RegisterWithAzure.psm1** module using PowerShell:
-
-```
-Import-Module .\RegisterWithAzure.psm1
-
-```
+    
+    ```
+    Import-Module .\RegisterWithAzure.psm1
+    
+    ```
 
 6.  Next, in the same PowerShell session, ensure you're signed in to the correct Azure PowerShell context. This context would be the Azure account that was used to register the Azure Stack Hub resource provider previously. PowerShell to run:
-
-```
-Connect-AzAccount -Environment "<environment name>"
-
-```
+    
+    ```
+    Connect-AzAccount -Environment "<environment name>"
+    
+    ```
 
 7.  In the same PowerShell session, run the **Set-AzsRegistration** cmdlet. PowerShell to run:
-
-```
-$CloudAdminCred = Get-Credential -UserName <Privileged endpoint credentials> -Message "Enter the cloud domain credentials to access the privileged endpoint."
-$RegistrationName = "<unique-registration-name>"
-Set-AzsRegistration `
-  -PrivilegedEndpointCredential $CloudAdminCred `
-  -PrivilegedEndpoint <PrivilegedEndPoint computer name> `
-  -BillingModel PayAsYouUse `
-  -RegistrationName $RegistrationName
-
-```
+    
+    ```
+    $CloudAdminCred = Get-Credential -UserName <Privileged endpoint credentials> -Message "Enter the cloud domain credentials to access the privileged endpoint."
+    $RegistrationName = "<unique-registration-name>"
+    Set-AzsRegistration `
+      -PrivilegedEndpointCredential $CloudAdminCred `
+      -PrivilegedEndpoint <PrivilegedEndPoint computer name> `
+      -BillingModel PayAsYouUse `
+      -RegistrationName $RegistrationName
+    
+    ```
 
 The process takes between 10 and 15 minutes. When the command completes, you see the message "Your environment is now registered and activated using the provided parameters."
 
@@ -129,36 +147,54 @@ Connected environments can access the internet and Azure. For these environments
 To register the Azure Stack Hub resource provider with Azure, start PowerShell ISE as an administrator and use the following PowerShell cmdlets with the **EnvironmentName** parameter set to the appropriate Azure subscription type (see parameters below).
 
 1.  Add the Azure account that you used to register Azure Stack Hub. To add the account, run the **Add-AzAccount** cmdlet. You're prompted to enter your Azure account credentials and you may have to use two-factor authentication based on your account's configuration.
+    
+    ```
+    Connect-AzAccount -Environment "<environment name>"
+    
+    ```
+    
+    :::row:::
+      :::column:::
+        **Parameter**
+      :::column-end:::
+      :::column:::
+        **Description**
+      :::column-end:::
+    :::row-end:::
+    :::row:::
+      :::column:::
+        EnvironmentName
+      :::column-end:::
+      :::column:::
+        The Azure cloud subscription environment name. Supported environment names are AzureCloud, AzureUSGovernment, or if using a China Azure Subscription, AzureChinaCloud.
+      :::column-end:::
+    :::row-end:::
+    
 
-```
-Connect-AzAccount -Environment "<environment name>"
+2.  If you have multiple subscriptions, run the following command to select the one you want to use:
+    
+    ```
+    Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
+    
+    ```
 
-```
+3.  Run the following command to register the Azure Stack Hub resource provider in your Azure subscription:
+    
+    ```
+    Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
+    
+    ```
 
-3.  If you have multiple subscriptions, run the following command to select the one you want to use:
-
-```
-Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
-
-```
-
-4.  Run the following command to register the Azure Stack Hub resource provider in your Azure subscription:
-
-```
-Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
-
-```
-
-5.  Start PowerShell ISE as an administrator and navigate to the **Registration** folder in the **AzureStack-Tools-az** directory created when you downloaded the Azure Stack Hub tools. Import the **RegisterWithAzure.psm1** module using PowerShell:
-
-```
-$CloudAdminCred = Get-Credential -UserName <Privileged endpoint credentials> -Message "Enter the cloud domain credentials to access the privileged endpoint."
-$RegistrationName = "<unique-registration-name>"
-Set-AzsRegistration `
-  -PrivilegedEndpointCredential $CloudAdminCred `
-  -PrivilegedEndpoint <PrivilegedEndPoint computer name> `
-  -AgreementNumber <EA agreement number> `
-  -BillingModel Capacity `
-  -RegistrationName $RegistrationName
-
-```
+4.  Start PowerShell ISE as an administrator and navigate to the **Registration** folder in the **AzureStack-Tools-az** directory created when you downloaded the Azure Stack Hub tools. Import the **RegisterWithAzure.psm1** module using PowerShell:
+    
+    ```
+    $CloudAdminCred = Get-Credential -UserName <Privileged endpoint credentials> -Message "Enter the cloud domain credentials to access the privileged endpoint."
+    $RegistrationName = "<unique-registration-name>"
+    Set-AzsRegistration `
+      -PrivilegedEndpointCredential $CloudAdminCred `
+      -PrivilegedEndpoint <PrivilegedEndPoint computer name> `
+      -AgreementNumber <EA agreement number> `
+      -BillingModel Capacity `
+      -RegistrationName $RegistrationName
+    
+    ```

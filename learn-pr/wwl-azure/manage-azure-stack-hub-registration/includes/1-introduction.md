@@ -2,7 +2,7 @@ To download Azure Marketplace items from Azure to Azure Stack Hub, you must regi
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -11,7 +11,7 @@ After completing this module, you'll be able to:
  -  Update registration for Azure Stack Hub.
  -  Registration using PowerShell for Azure Stack Hub.
 
-## **Skills measured**
+## Skills measured
 
 The content in the module will help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
@@ -19,7 +19,7 @@ The content in the module will help you prepare for Exam AZ-600: Configuring and
 
  -  Manage Azure Stack Hub registration.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Working experience creating, assigning, and securing corporate identities.
  -  Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
