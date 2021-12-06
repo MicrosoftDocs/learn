@@ -56,7 +56,7 @@ It is allowed to take pictures during the **View in MR** session and display the
     Navigate(Product_notes,ScreenTransition.CoverRight)
     ```
 
-    :::image type="content" source="../media/configure_note_icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure_note_icon.png":::
+    :::image type="content" source="../media/configure-note-icon.png" alt-text="Screenshot of OnSelect for note" lightbox="../media/configure-note-icon.png":::
 
 11. Replicate the same procedure for **Notes_carpets**.
 
