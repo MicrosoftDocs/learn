@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.use-copy-activity
-title: Exercise - Use the data factory copy activity
+title: Use the data factory copy activity
 metadata:
   title: Exercise - Use the data factory copy activity
   description: "Exercise - Use the data factory copy activity"
