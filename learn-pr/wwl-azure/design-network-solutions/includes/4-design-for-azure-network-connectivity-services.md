@@ -92,7 +92,7 @@ The recommended Azure cloud native segmentation control is Azure Firewall. Azure
 
 ## Virtual network NAT gateway 
 
-Virtual Network NAT (network address translation) simplifies outbound-only Internet connectivity for virtual networks. When configured on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. NAT is fully managed and highly resilient. 
+Virtual Network NAT (network address translation) simplifies outbound-only Internet connectivity for virtual networks. When configured on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. NAT is fully managed and highly resilient. 
 
 :::image type="content" source="../media/flow-map.png" alt-text=" Virtual Network NAT (network address translation) flow diagram.":::
 
