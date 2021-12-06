@@ -25,87 +25,87 @@ Your system should meet the following prerequisites before validating PKI certif
 Use these steps to validate the Azure Stack Hub PKI certificates for deployment and secret rotation:
 
 1.  Install AzsReadinessChecker from a PowerShell prompt (5.1 or above) by running the following cmdlet:
-
-```
-Install-Module Microsoft.AzureStack.ReadinessChecker -Force -AllowPrerelease
-
-```
+    
+    ```
+    Install-Module Microsoft.AzureStack.ReadinessChecker -Force -AllowPrerelease
+    
+    ```
 
 2.  Create the certificate directory structure. In the example below, you can change &lt;C:\\Certificates\\Deployment&gt; to a new directory path of your choice.
-
-```
-New-Item C:\Certificates\Deployment -ItemType Directory
-
-$directories = 'ACSBlob', 'ACSQueue', 'ACSTable', 'Admin Extension Host', 'Admin Portal', 'ARM Admin', 'ARM Public', 'KeyVault', 'KeyVaultInternal', 'Public Extension Host', 'Public Portal'
-
-$destination = 'C:\Certificates\Deployment'
-
-$directories | % { New-Item -Path (Join-Path $destination $PSITEM) -ItemType Directory -Force}
-
-
-```
+    
+    ```
+    New-Item C:\Certificates\Deployment -ItemType Directory
+    
+    $directories = 'ACSBlob', 'ACSQueue', 'ACSTable', 'Admin Extension Host', 'Admin Portal', 'ARM Admin', 'ARM Public', 'KeyVault', 'KeyVaultInternal', 'Public Extension Host', 'Public Portal'
+    
+    $destination = 'C:\Certificates\Deployment'
+    
+    $directories | % { New-Item -Path (Join-Path $destination $PSITEM) -ItemType Directory -Force}
+    
+    
+    ```
 
 3.  In the PowerShell window, change the values of RegionName, FQDN, and IdentitySystem appropriate to the Azure Stack Hub environment and run the following cmdlet:
-
-```
-$pfxPassword = Read-Host -Prompt "Enter PFX Password" -AsSecureString
-Invoke-AzsHubDeploymentCertificateValidation -CertificatePath C:\Certificates\Deployment -pfxPassword $pfxPassword -RegionName east -FQDN azurestack.contoso.com -IdentitySystem AAD
-
-
-```
+    
+    ```
+    $pfxPassword = Read-Host -Prompt "Enter PFX Password" -AsSecureString
+    Invoke-AzsHubDeploymentCertificateValidation -CertificatePath C:\Certificates\Deployment -pfxPassword $pfxPassword -RegionName east -FQDN azurestack.contoso.com -IdentitySystem AAD
+    
+    
+    ```
 
 4.  Check the output and ensure that all certificates pass all tests. For example:
+    
+    ```
+    Testing: KeyVaultInternal\KeyVaultInternal.pfx
+    Thumbprint: E86699****************************4617D6
+        PFX Encryption: OK
+        Expiry Date: OK
+        Signature Algorithm: OK
+        DNS Names: OK
+        Key Usage: OK
+        Key Length: OK
+        Parse PFX: OK
+        Private Key: OK
+        Cert Chain: OK
+        Chain Order: OK
+        Other Certificates: OK
+    Testing: ARM Public\ARMPublic.pfx
+    Thumbprint: 8DC4D9****************************69DBAA
+        PFX Encryption: OK
+        Expiry Date: OK
+        Signature Algorithm: OK
+        DNS Names: OK
+        Key Usage: OK
+        Key Length: OK
+        Parse PFX: OK
+        Private Key: OK
+        Cert Chain: OK
+        Chain Order: OK
+        Other Certificates: OK
+    Testing: Admin Portal\AdminPortal.pfx
+    Thumbprint: 6F9055****************************4AC0EA
+        PFX Encryption: OK
+        Expiry Date: OK
+        Signature Algorithm: OK
+        DNS Names: OK
+        Key Usage: OK
+        Key Length: OK
+        Parse PFX: OK
+        Private Key: OK
+        Cert Chain: OK
+        Chain Order: OK
+        Other Certificates: OK
+    Testing: Public Portal\PublicPortal.pfx
+    
+    Log location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessChecker.log
+    Report location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessCheckerReport.json
+    Invoke-AzsHubDeploymentCertificateValidation Completed
+    
+    
+    ```
 
-```
-Testing: KeyVaultInternal\KeyVaultInternal.pfx
-Thumbprint: E86699****************************4617D6
-    PFX Encryption: OK
-    Expiry Date: OK
-    Signature Algorithm: OK
-    DNS Names: OK
-    Key Usage: OK
-    Key Length: OK
-    Parse PFX: OK
-    Private Key: OK
-    Cert Chain: OK
-    Chain Order: OK
-    Other Certificates: OK
-Testing: ARM Public\ARMPublic.pfx
-Thumbprint: 8DC4D9****************************69DBAA
-    PFX Encryption: OK
-    Expiry Date: OK
-    Signature Algorithm: OK
-    DNS Names: OK
-    Key Usage: OK
-    Key Length: OK
-    Parse PFX: OK
-    Private Key: OK
-    Cert Chain: OK
-    Chain Order: OK
-    Other Certificates: OK
-Testing: Admin Portal\AdminPortal.pfx
-Thumbprint: 6F9055****************************4AC0EA
-    PFX Encryption: OK
-    Expiry Date: OK
-    Signature Algorithm: OK
-    DNS Names: OK
-    Key Usage: OK
-    Key Length: OK
-    Parse PFX: OK
-    Private Key: OK
-    Cert Chain: OK
-    Chain Order: OK
-    Other Certificates: OK
-Testing: Public Portal\PublicPortal.pfx
-
-Log location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessChecker.log
-Report location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessCheckerReport.json
-Invoke-AzsHubDeploymentCertificateValidation Completed
-
-
-```
-
-To validate certificates for other Azure Stack Hub services, change the value for ‘-CertificateType’. For example:
+To validate certificates for other Azure Stack Hub services, change the value for `-CertificateType`. For example:
 
 ```
 # App Services

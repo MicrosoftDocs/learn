@@ -4,7 +4,7 @@ In this module, you'll see how to use the Azure Stack Hub Readiness Checker tool
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -12,13 +12,13 @@ After completing this module, you'll be able to:
  -  Validate certificates for Azure Stack Hub.
  -  Run secret rotation PowerShell cmdlet for external certificates for Azure Stack Hub.
 
-## **Skills measured**
+## Skills measured
 
 **Implement data center integration.**
 
  -  Manage infrastructure certificates for Azure Stack.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Working experience creating, assigning, and securing corporate identities.
  -  Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
