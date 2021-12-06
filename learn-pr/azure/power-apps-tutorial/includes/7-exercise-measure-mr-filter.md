@@ -113,11 +113,11 @@ In this module, you'll be using some of the key functional components of **Power
     > Spatial Filtering is not included for **Carpets** page as another feature specific to the product is added. The area measured in **Measure in MR** session will be used to estimate the price of the selected carpet.
 
     >[!Tip]
-    > Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+    > Save your application now and then by selecting the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and select **Save**.
 
 ## Calculate price based on area
 
-1. Click on the **Carpet_details** page, Add a **Label** and rename it as **Area_carpets**.
+1. Select on the **Carpet_details** page, Add a **Label** and rename it as **Area_carpets**.
 
     :::image type="content" source="../media/add-area-label.png" alt-text="Screenshot of adding area label" lightbox="../media/add-area-label.png":::
 

@@ -8,7 +8,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/add-blank-notes-page.png" alt-text="Screenshot of new screens for notes" lightbox="../media/add-blank-notes-page.png":::
 
-2. Design the **Product_notes** page by, clicking the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_products**.
+2. Design the **Product_notes** page by, selecting the **Input** dropdown and selecting **Text input**. Rename it as **TextInput_products**.
 
     :::image type="content" source="../media/add-text-input.png" alt-text="Screenshot of adding Text input" lightbox="../media/add-text-input.png":::
 
@@ -20,7 +20,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/retain-image.png" alt-text="Screenshot of only image in gallery" lightbox="../media/retain-image.png":::
 
-5. Click the gallery added and configure the **Items** property by adding the following line:
+5. Select the gallery added and configure the **Items** property by adding the following line:
 
     ```PowerApps
     ViewInMR1.Photos
@@ -30,7 +30,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     So, all the pictures taken in the **View in MR** session are stored in this gallery for future references.
 
-6. Let us now insert a label at the top of the screen. To do so, click on the **Label** option and **Center align** it. Then, customize the position, color, and text display according to your needs. Rename it to **Notes_label**.
+6. Let us now insert a label at the top of the screen. To do so, select the **Label** option and **Center align** it. Then, customize the position, color, and text display according to your needs. Rename it to **Notes_label**.
 
     :::image type="content" source="../media/insert-label-notes.png" alt-text="Screenshot of inserting label" lightbox="../media/insert-label-notes.png":::
 
@@ -64,7 +64,7 @@ It is allowed to take pictures during the **View in MR** session and display the
     > For the **Notes_carpets** page, exclude adding the **Gallery control** to store photos taken during the **View in MR** session since we won't be including the **View in MR** feature for the **Carpets** category.
 
     >[!Tip]
-    >You can test your application by pressing the **F5** key on the keyboard or clicking the **Play** button at the top-right corner of Power Apps Studio.
+    >You can test your application by pressing the **F5** key on the keyboard or selecting the **Play** button at the top-right corner of Power Apps Studio.
 
 ## Create order summary page
 
@@ -192,7 +192,7 @@ It is allowed to take pictures during the **View in MR** session and display the
 
     :::image type="content" source="../media/add-message-label.png" alt-text="Screenshot of adding label for Order Successfully Placed!" lightbox="../media/add-message-label.png":::
 
-3. Add a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by clicking the **Shop more** button by adding the following line in the **OnSelect** property.
+3. Add a **Button** at the bottom of the screen. Configure the **Text** property of the button by adding **Shop more**. Let's navigate the user to the home page by selecting the **Shop more** button by adding the following line in the **OnSelect** property.
 
     ```PowerApps
     Navigate('Home Page',ScreenTransition.Cover)
@@ -209,11 +209,11 @@ It is allowed to take pictures during the **View in MR** session and display the
     :::image type="content" source="../media/add-logo-order.png" alt-text="Screenshot of adding logo file to the image component" lightbox="../media/add-logo-order.png":::
 
     >[!Tip]
-    > Save your application now and then by clicking the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and click **Save**.
+    > Save your application now and then by selecting the **File** tab at the top and selecting the **Save** option. Next if prompted, select the **The cloud** option and select **Save**.
 
 ## Send emails via Power Apps
 
-1. Click the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
+1. Select the **Data** tab and select **+ Add data**. Next, expand the **Connectors** to select **Office 365 Outlook** to add it as one of the connectors for this application.
 
     :::image type="content" source="../media/add-office-365-outlook.png" alt-text="Screenshot of add data connectors for mail" lightbox="../media/add-office-365-outlook.png":::
 

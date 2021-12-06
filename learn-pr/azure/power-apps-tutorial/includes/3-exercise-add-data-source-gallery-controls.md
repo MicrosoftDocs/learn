@@ -20,7 +20,7 @@ We will be using SharePoint as our primary data source for this application. You
 
     * Select the **Language** of your choice from the dropdown.
 
-4. Click **Finish** to create a **SharePoint** site for loading your data.
+4. Select **Finish** to create a **SharePoint** site for loading your data.
 
     :::image type="content" source="../media/update-site-details.png" alt-text="Screenshot of updating site details." lightbox="../media/update-site-details.png":::
 
@@ -35,7 +35,7 @@ A SharePoint list collects data with some structure: similar to a table, spreads
 
 For our **Easy Sales** application, we will create a list containing details of all the product categories: **Sofas**, **Chairs**, **Tables**, and **Carpets**.
 
-1. In the newly created SharePoint site under the name *Easy Sales*, click **+ New** dropdown and select **List** to create your SharePoint list.
+1. In the newly created SharePoint site under the name *Easy Sales*, select **+ New** dropdown and select **List** to create your SharePoint list.
 
     :::image type="content" source="../media/select-list.png" alt-text="Screenshot of selecting list." lightbox="../media/select-list.png":::
 
@@ -48,7 +48,7 @@ For our **Easy Sales** application, we will create a list containing details of 
     * Enter a suitable name for the list, for example, *Easy Sales*
     * Fill in the description, if required. (Optional)
     * Leave the **Show in site navigation** checkbox selected.
-    * Click **Create**.
+    * Select **Create**.
 
         :::image type="content" source="../media/enter-details.png" alt-text="Screenshot of Create Pane." lightbox="../media/enter-details.png":::
 
@@ -76,7 +76,7 @@ Once the list is created, it's time to add the data. Here data means the details
 
     :::image type="content" source="../media/column-type.png" alt-text="Screenshot of selecting Single line of text." lightbox="../media/column-type.png":::
 
-    Enter the details of the column in the **Create the column** tab and click on **Save**.
+    Enter the details of the column in the **Create the column** tab and select **Save**.
 
     :::image type="content" source="../media/column-details.png" alt-text="Screenshot of Creating a Column." lightbox="../media/column-details.png":::
 
@@ -89,7 +89,7 @@ Once the list is created, it's time to add the data. Here data means the details
 
     [Power Apps custom folder](https://netorg4603737-my.sharepoint.com/:f:/g/personal/developer_onginnovations_com/EtbMYeDiiv1LvCtb3wBKTKUBzKrLW-IazsDrZShq-Js_OA?e=yHPxf3)
 
-3. Click on **+ New** to add item and fill in the required details as provided in the downloaded **Excel** file. Click **Save** to save the entered details.
+3. Select **+ New** to add item and fill in the required details as provided in the downloaded **Excel** file. Select **Save** to save the entered details.
 
     :::image type="content" source="../media/edit-grid-view.png" alt-text="Screenshot of selecting New or Edit in grid view to add new item." lightbox="../media/edit-grid-view.png":::
 
@@ -133,7 +133,7 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
     :::image type="content" source="../media/canvas-app.png" alt-text="Screenshot of selecting canvas app from blank." lightbox="../media/canvas-app.png":::
 
-2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then click **Create**.
+2. Specify a name for your app, for example *Easy-Sales*. Select **Phone**, and then select **Create**.
 
     :::image type="content" source="../media/select-phone.png" alt-text="Screenshot of specifying app name and selecting create." lightbox="../media/select-phone.png":::
 
@@ -149,9 +149,9 @@ Let's start building *Easy Sales* application based on the SharePoint data, and 
 
 To include data in your **Power Apps**, you must connect to the data via the connectors in your application. Since we have stored all of the data in a **SharePoint** list, we will select **SharePoint** as one of the connectors.
 
-1. To the **Power Apps Studio**'s left, click the **Data** option.
+1. To the **Power Apps Studio**'s left, select the **Data** option.
 
-2. On opening the **Data** pane, click the **Add data** button to connect to the data.
+2. On opening the **Data** pane, select the **Add data** button to connect to the data.
 
 3. In the **Select a data source** window, expand the **Connectors** section and select the **SharePoint** option.
 
@@ -169,7 +169,7 @@ To include data in your **Power Apps**, you must connect to the data via the con
 
 ## Create the splash screen
 
-1. Click the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** that opens the screen type list. Then select **Blank** to create a blank screen.
+1. Select the **Tree view** option at the left of **Power Apps Studio**, you should already have a blank screen in the Power Apps Studio. If not, on the **Home** tab, select the down-arrow next to **New screen** that opens the screen type list. Then select **Blank** to create a blank screen.
 
     :::image type="content" source="../media/new-screen.png" alt-text="Screenshot of creating new screen." lightbox="../media/new-screen.png":::
 
@@ -177,9 +177,9 @@ To include data in your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/rename-splash-screen.png" alt-text="Screenshot of renaming the screen." lightbox="../media/rename-splash-screen.png":::
 
-3. Click the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
+3. Select the newly created screen to change its properties in the **Properties** tab at the right side of the screen.
 
-4. Click the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file.
+4. Select the dropdown present beside the **Background image** property to add an image to the screen. Select **+ Add an image file** to select the downloaded logo file.
 
     :::image type="content" source="../media/add-logo.png" alt-text="Screenshot of adding the easy sales logo." lightbox="../media/add-logo.png":::
 
@@ -202,7 +202,7 @@ To include data in your **Power Apps**, you must connect to the data via the con
         >[!Note]
         > By default, the unit taken to measure duration is in milliseconds. Since 1 second = 1000 milliseconds, we enter 2000 as the value for the duration.
 
-8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. Create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later click on the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
+8. We want the splash screen to be visible for only 2 seconds and later navigate to the Home page. Create a **Blank** screen as we did in the previous step and rename it as **Home Page**. Later select the timer button added to the **Splash** screen and configure the **OnTimerEnd** property. Replace *false* with the following content:
 
     ```PowerApps
     Navigate('Home Page',ScreenTransition.Fade)
@@ -210,11 +210,11 @@ To include data in your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/configure-on-timer-end.png" alt-text="Screenshot of configuring OnTimerEnd property." lightbox="../media/configure-on-timer-end.png":::
 
-9. Save your application by navigating to **File** > **Save**. Next, select the **The cloud** option and click **Save**.
+9. Save your application by navigating to **File** > **Save**. Next, select the **The cloud** option and select **Save**.
 
 ## Create the home page
 
-1. Click the **Home Page** created previously. To insert four buttons, navigate to the **Insert tab** and click the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
+1. Select the **Home Page** created previously. To insert four buttons, navigate to the **Insert tab** and select the **Button** option to add buttons to the screen. Adjust the size and position of these buttons as required. Rename them as **Sofas_button**, **Chairs_button**, **Tables_button**, and **Carpets_button** respectively.
 
     :::image type="content" source="../media/add-buttons.png" alt-text="Screenshot of adding buttons." lightbox="../media/add-buttons.png":::
 
@@ -226,7 +226,7 @@ To include data in your **Power Apps**, you must connect to the data via the con
 
     :::image type="content" source="../media/edit-display-text-2.png" alt-text="Screenshot of adding new screens." lightbox="../media/edit-display-text-2.png":::
 
-4. Click the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* with the below-given code:
+4. Select the newly created **Sofas_button** button and configure the **OnSelect** property. On clicking the button, it must navigate us to the product list page created in the previous step. Replace the *false* with the below-given code:
 
     ```PowerApps
     Navigate(Products,ScreenTransition.Cover, {ID:1});
@@ -252,7 +252,7 @@ To include data in your **Power Apps**, you must connect to the data via the con
     ```
 
     >[!Tip]
-    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
     >[!Note]
     > The default syntax of the **Navigate** function is: **Navigate**(*Screen* [, *Transition* [, *UpdateContextRecord*]])
@@ -290,7 +290,7 @@ Now that we have added the product categories, we will display the list of produ
 
     We filter the **Products** stored in the **SharePoint** list based on the **Product Category**. The context variables are used for the filtering process.
 
-3. Configure the **Gallery** > **Fields** property in the **Properties** pane by clicking on **Edit**:
+3. Configure the **Gallery** > **Fields** property in the **Properties** pane by selecting **Edit**:
     * Assign the **Price** to the **Subtitle1** heading.
     * Assign the **Title** to the **Title1** heading.
 
@@ -298,7 +298,7 @@ Now that we have added the product categories, we will display the list of produ
 
     On assigning the above fields, you'll observe data getting reflected in your **Gallery**
 
-4. Adjust the size of the **Gallery_products** as required. To add the **ImageLink** to the **Image1** heading, click the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
+4. Adjust the size of the **Gallery_products** as required. To add the **ImageLink** to the **Image1** heading, select the **Image** in the gallery and configure the **Image** property on the **Property** tab by adding this line of code:
 
     ```PowerApps
     ThisItem.ImageLink
@@ -306,7 +306,7 @@ Now that we have added the product categories, we will display the list of produ
 
     :::image type="content" source="../media/configure-image-property.png" alt-text="Screenshot of configuring image property in product page" lightbox="../media/configure-image-property.png":::
 
-5. Let us now insert a label at the top of the screen. To do so, click on the **Label** option. Then, customize the position, color, and text display as shown in the figure:
+5. Let us now insert a label at the top of the screen. To do so, select the **Label** option. Then, customize the position, color, and text display as shown in the figure:
 
     :::image type="content" source="../media/insert-label.png" alt-text="Screenshot of adding label in products page" lightbox="../media/insert-label.png":::
 
@@ -331,7 +331,7 @@ Now that we have added the product categories, we will display the list of produ
     :::image type="content" source="../media/replicate-procedure.png" alt-text="Screenshot of following the same procedure for carpets page " lightbox="../media/replicate-procedure.png":::
 
     >[!Tip]
-    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 After implementing the above steps, here is how your application must look.
 

@@ -14,11 +14,11 @@ The 3D models and images required for the application are stored in the **ShareP
 
     :::image type="content" source="../media/apply-attachments.png" alt-text="Screenshot to apply attachments" lightbox="../media/apply-attachments.png":::
 
-3. Select an item in the list and click **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file) given in the **Power Apps custom folder**. Follow the same procedure for all the items on the list.
+3. Select an item in the list and select **Add Attachments**. Select your **3D model** (.glb file) or **Image** (.jpg file) given in the **Power Apps custom folder**. Follow the same procedure for all the items on the list.
 
     :::image type="content" source="../media/add-attachments.png" alt-text="Screenshot to add attachments" lightbox="../media/add-attachments.png":::
 
-4. Click the dropdown present beside the **Attachments** column and select **Show attachments first**. We want that attachments to be placed at first for easy access.
+4. Select the dropdown present beside the **Attachments** column and select **Show attachments first**. We want that attachments to be placed at first for easy access.
 
     :::image type="content" source="../media/select-show-attachments.png" alt-text="Screenshot to select Show attachments first" lightbox="../media/select-show-attachments.png":::
 
@@ -30,7 +30,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/create-detail-page.png" alt-text="Screenshot of creating detailed pages" lightbox="../media/create-detail-page.png":::
 
-2. Click on the **>** icon in the gallery control included in the **Products** page and **Carpets** page. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab respectively.
+2. Select on the **>** icon in the gallery control included in the **Products** page and **Carpets** page. Then, configure the **OnSelect** property by adding the following line in the **Functions** tab respectively.
 
     ```PowerApps
     Navigate(Product_details,ScreenTransition.Cover,{content : ThisItem})
@@ -57,7 +57,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-title-label.png" alt-text="Screenshot of adding title label" lightbox="../media/add-title-label.png":::
 
-5. Click the **Media** dropdown and select **Image** to insert an image in the **Product_details** screen. Configure the **Image** property in the following way:
+5. Select the **Media** dropdown and select **Image** to insert an image in the **Product_details** screen. Configure the **Image** property in the following way:
 
     ```PowerApps
     content.ImageLink
@@ -65,7 +65,7 @@ The details page includes all the details and information concerning the selecte
 
     :::image type="content" source="../media/add-image.png" alt-text="Screenshot of adding image" lightbox="../media/add-image.png":::
 
-6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, click **Media** dropdown and select **View in 3D**.
+6. We will overlap the **View in 3D** component over the **Image** component. The products that do not have 3D models attached to them can be viewed through the **Image** component. To add the **View in 3D** component, select **Media** dropdown and select **View in 3D**.
 
     :::image type="content" source="../media/add-view-3d.png" alt-text="Screenshot of adding view in 3D" lightbox="../media/add-view-3d.png":::
 
@@ -151,7 +151,7 @@ The details page includes all the details and information concerning the selecte
     Likewise, follow the same procedure for **Carpet_details**. Customize the **Navigate** function accordingly.
 
     >[!Tip]
-    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
     >[!Note]
     > Avoid including **View in 3D** component to **Carpet_details** page as we do not use 3D models for the **Carpet** category.
@@ -192,7 +192,7 @@ Another unique property provided by the **View in MR** component is **Object sca
     > You can also customise the values passed to **Object width**, **Object height**, and **Object depth** according to your needs. The values passed are taken in the units specified in **Unit of measurement**. Choose an appropriate measuring unit from the dropdown and later enter the values.
 
     >[!Tip]
-    > To save your progress, click the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
+    > To save your progress, select **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
 Implementing the above steps must make your application look like this.
 
