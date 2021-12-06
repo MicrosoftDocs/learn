@@ -11,8 +11,8 @@ The tasks in this exercise and the exercises in this learning path require you t
 3.  Select **Start free**.
 4.  Use the wizard to sign up for your Azure trial subscription.
 5.  You will need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
-6.  Click on **Licenses** in the menu.
-7.  In the right **Quick tasks** menu of the Licenes - Overview page, select **Get a free trial**.<br>
+6.  Select **Licenses** in the menu.
+7.  In the right **Quick tasks** menu of the Licenses - Overview page, select **Get a free trial**.<br>
 8.  Under Getting started with Azure AD, select **Get a free trial for Azure AD Premium**.
 9.  In the Activate pane, under **AZURE AD PREMIUM P2**, select **Free trial** and then select **Activate**.
 10. In the navigation menu on the left, select **Overview**.
