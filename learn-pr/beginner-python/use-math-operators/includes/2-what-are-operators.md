@@ -15,7 +15,8 @@ print(answer)
 # Output: 42
 ```
 
-> [!NOTE] Operators behave the same when using literal numbers (such as `42`) or variables.
+> [!NOTE]
+> Operators behave the same when using literal numbers (such as `42`) or variables.
 
 ### Subtraction
 
