@@ -11,6 +11,6 @@ You now understand how Azure Virtual Network NAT helps organizations to improve 
 
 For more information, refer to:
 
-- [What is Virtual Network NAT?](azure/virtual-network/nat-gateway/nat-overview)
-- [Tutorial: Create a NAT gateway using the Azure portal](azure/virtual-network/nat-gateway/tutorial-create-nat-gateway-portal)
+- [What is Virtual Network NAT?](/azure/virtual-network/nat-gateway/nat-overview)
+- [Tutorial: Create a NAT gateway using the Azure portal](/azure/virtual-network/nat-gateway/tutorial-create-nat-gateway-portal)
 - [Virtual Network pricing](https://azure.microsoft.com/pricing/details/virtual-network/)
