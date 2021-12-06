@@ -57,8 +57,6 @@ The script below shows the JSON output.
 4.  Edit the JSON file to add the `"Microsoft.Support/*"` operation to the Actions property. Be sure to include a comma after the read operation. This action will allow the user to create support tickets.
 5.  Get the ID of your subscription using the **Get-AzSubscription** command.
 
-Azure PowerShell
-
 ```
 Get-AzSubscription
 
@@ -71,9 +69,7 @@ Add explicit subscription IDs, otherwise you won't be allowed to import the role
 7.  Delete the `Id` property line and change the `IsCustom` property to true.
 8.  Change the `Name and Description` properties to "Customer Support Tickets" and "View everything in the subscription and also open support tickets."
 
-Your JSON file should look like the following:
-
-JSON
+The JSON file should look like the following:
 
 ```
 {
@@ -96,24 +92,22 @@ JSON
 
 9.  To create the new custom role, use the **New-AzRoleDefinition** command and specify the JSON role definition file.
 
-Azure PowerShell
-
 ```
 New-AzRoleDefinition -InputFile "C:\CustomRoles\ReaderSupportRole.json"
 
 
 ```
 
-Output
+The output is as follows:
 
 ```
 Name            : Reader Support Tickets
 Id              : 22222222-2222-2222-2222-222222222222
 IsCustom        : True
-Description      : View everything in the subscription and also open support tickets.
-Actions          : {*/read, Microsoft.Support/*}
+Description     : View everything in the subscription and also open support tickets.
+Actions         : {*/read, Microsoft.Support/*}
 NotActions      : {}
-DataActions      : {}
+DataActions     : {}
 NotDataActions  : {}
 AssignableScopes : {/subscriptions/00000000-0000-0000-0000-000000000000}
 
