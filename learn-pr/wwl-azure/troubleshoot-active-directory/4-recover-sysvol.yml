@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-active-directory.recover-sysvol
+title: Recover SYSVOL
+metadata:
+  title: Recover SYSVOL
+  description: "Recover SYSVOL"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-recover-sysvol.md)]
