@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-boolean-types.exercise-use-and-or-operators
+title: Exercise - Use AND and OR operators
+metadata:
+  title: Exercise - Use AND and OR operators
+  description: Practice using AND and OR operators in Python.
+  ms.date: 12/02/2021
+  author: ornelladotcom
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-boolean-types/exercise-use-and-or-operators.ipynb
