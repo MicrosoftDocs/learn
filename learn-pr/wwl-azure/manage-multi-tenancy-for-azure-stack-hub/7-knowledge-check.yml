@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The directory administrator for an Azure Stack Hub instance wants to name a guest directory fabrikam. Which of the following is used to set the value for the guest tenant directory name to fabrikam.onmicrosoft.com?"
+  - content: "The directory administrator for an Azure Stack Hub is naming a guest directory Fabrikam. Which of the following is used to set the value for the guest tenant directory name to fabrikam.onmicrosoft.com?"
     choices:
     - content: "Register-AzResourceProvider"
       isCorrect: false
@@ -28,11 +28,11 @@ quiz:
     - content: "$guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\""
       isCorrect: true
       explanation: "That’s correct. Running $guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\" will set the value for the guest tenant directory to fabrikam.onmicrosoft.com."
-  - content: "An Azure Stack Hub operator wants to configure multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Azure Active Directory (AD) directory guest tenants. What should you do?"
+  - content: "An Azure Stack Hub operator is configuring multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Azure Active Directory (AD) directory guest tenants. What should they do?"
     choices:
     - content: "Onboard the guest directory tenant to Azure Stack Hub by configuring Azure Resource Manager to accept users and service principals from the guest directory tenant."
       isCorrect: true
-      explanation: "That's correct. Configuring multi-tenancy for Azure Stack Hub begins with allowing sign-in from Azure Active Directory (AD) directory guest tenants. Next, use Azure Resource Manager to accept users and service principals from the guest directory tenant to onboard the guest directory tenant."
+      explanation: "That's correct. Multi-tenancy for Azure Stack Hub allows signing in from Azure Active Directory (AD) directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
     - content: "Run Get-AzProviderOperation \"Microsoft.Support/*\" | FT Operation, Description -AutoSize"
       isCorrect: false
       explanation: "That's incorrect. Get-AzProviderOperation command gets the list of operations for the Microsoft.Support resource provider."
