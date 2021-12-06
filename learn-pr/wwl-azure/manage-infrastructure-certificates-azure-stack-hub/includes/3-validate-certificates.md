@@ -13,7 +13,7 @@ The Readiness Checker tool performs the following certificate validations:
  -  **Chain order** ‎Checks the order of the other certificates validating that the order is correct.
  -  **Other certificate**s ‎Ensure no other certificates have been packaged in PFX other than the relevant leaf certificate and its chain.
 
-Your system should meet the following prerequisites before validating PKI certificates for an Azure Stack Hub deployment:<br>
+Your system should meet the following prerequisites before validating PKI certificates for an Azure Stack Hub deployment:
 
  -  Microsoft Azure Stack Hub Readiness Checker.
  -  SSL Certificate(s) exported following the [preparation instructions](/azure-stack/operator/azure-stack-prepare-pki-certs?view=azs-1910).
