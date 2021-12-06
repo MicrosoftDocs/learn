@@ -6,7 +6,7 @@ In this module, you will learn how Azure Stack Hub updates, when to expect relea
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -18,13 +18,13 @@ After completing this module, you'll be able to:
  -  Use the Azure Stack Hub update activity checklist.
  -  Monitor updates with PowerShell in Azure Stack Hub.
 
-## **Skills measured**
+## Skills measured
 
-**Manage infrastructure.**<br>
+**Manage infrastructure.**
 
  -  Update infrastructure.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Conceptual knowledge of Azure compute solutions.
  -  Working experience with virtual machines, containers, and app service.

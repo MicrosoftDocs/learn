@@ -109,9 +109,9 @@ This section contains OEM contact information and links to OEM Azure Stack Hub r
 Apply the OEM packages with the following steps:
 
 1.  Contact your OEM to:
-
- -  Determine the current version of your OEM package.
- -  Find the best method to download your OEM package.
+    
+     -  Determine the current version of your OEM package.
+     -  Find the best method to download your OEM package.
 
 2.  Before applying an OEM package update, always apply the latest Azure Stack Hub hotfix available on your system's current Azure Stack Hub version.
 3.  Prepare your OEM packages.

@@ -55,24 +55,14 @@ Within the same major version number, Azure Stack Hub may release multiple hotfi
 
 Once you know you have an update, apply it by using the following steps.
 
-:::image type="content" source="../media/Update-process-8db2621b.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/update-process-25642ea9.png" alt-text="Image showing normalized relational tables.":::
 
 
 1.  **Plan for the update**
 
-Prepare your Azure Stack Hub to make the update process go as smoothly as possible so that there's minimal impact on your users. Notify your users of any possible service outage and then follow the steps to prepare your instance for the update. Be sure to follow all steps in the [Azure Stack Hub pre-update checklist](/azure-stack/operator/release-notes-checklist?view=azs-2008) to ensure that you've completed the required prerequisites for applying an update. Also make sure to schedule an appropriate maintenance window for the update type being applied.
-
 2.  **Upload and prepare the update package**
 
-For internet-connected Azure Stack Hub environments, Azure Stack Hub software updates and hotfixes are automatically imported into the system and prepared for update.
-
-For internet-disconnected Azure Stack Hub environments and environments with weak or intermittent internet connectivity, update packages are imported into Azure Stack Hub storage via the Azure Stack Hub administrator portal.
-
-All OEM update packages are manually imported into your environment, regardless of your Azure Stack Hub system's internet connectivity.
-
 3.  **Apply the update**
-
-Apply the update using the **Update** blade in the Azure Stack Hub portal. During the update, monitor and troubleshoot the update progress.
 
 ## The update resource provider
 
