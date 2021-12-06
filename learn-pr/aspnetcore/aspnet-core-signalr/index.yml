@@ -18,7 +18,7 @@ abstract: |
   - Determine when it is an appropriate solution for implementing real-time web functionality.
 prerequisites: |
   - Familiarity with ASP.NET Core web apps
-iconUrl: /learn/achievements/aspentcore/aspnet-core-signalr.svg
+iconUrl: /learn/achievements/aspnetcore/aspnet-core-signalr.svg
 levels:
   - intermediate
 roles:
