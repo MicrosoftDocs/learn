@@ -40,7 +40,7 @@ Through cloud workload protection capabilities, Microsoft Defender for Cloud is 
 
 #### Defender plans
 
-Microsoft Defender for Cloud includes a range of advanced, intelligent, protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. The Defender for Cloud plans you can select from are:
+Microsoft Defender for Cloud includes a range of advanced, intelligent, protections for your workloads. The workload protections are provided through Microsoft Defender plans specific to the types of resources in your subscriptions. The Microsoft Defender for Cloud plans you can select from are:
 
 - **Microsoft Defender for servers** adds threat detection and advanced defenses for your Windows and Linux machines.
 - **Microsoft Defender for App Service** identifies attacks targeting applications running over App Service.
