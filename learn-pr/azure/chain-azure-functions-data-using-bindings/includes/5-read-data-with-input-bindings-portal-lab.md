@@ -52,7 +52,8 @@ In an Azure Cosmos DB, a *container* is used to store a variety of user-generate
 
 Let's use the Data Explorer tool to create a database and container.
 
-1. In your **Azure Cosmos DB account** menu, select **Data Explorer**. The **Data Explorer** pane for your Cosmos DB account appears.
+
+1. In your **Azure Cosmos DB account** menu, select **Data Explorer** on the left. The **Data Explorer** pane for your Cosmos DB account appears.
 
 1. Select the **New Container** box. The **New Container** pane appears. You may need to scroll to the right to see it.
 
@@ -146,7 +147,8 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app. The **Function App** pane appears.
 
-1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. You should have one function, **HttpTrigger1**.
+
+1. In the Function App menu on the left, under **Functions**, select **Functions**. The **Functions** pane appears. You should have one function, **HttpTrigger1**.
 
 1. Let's create another function. From the command bar, select **Create**. The **Create function** pane appears, listing templates for supported triggers.
 
@@ -172,7 +174,7 @@ Now that we have our skeletal function working, let's turn our attention to read
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. In the Azure portal, in the *HttpTrigger2* Function menu, select **Integration**. The **Integration** pane for your Function appears.
+1. In the Azure portal, in the *HttpTrigger2* Function menu on the left, select **Integration**. The **Integration** pane for your Function appears.
 
     You used a template that created an HTTP trigger request with an HTTP output binding. Let's add an Azure Cosmos DB input binding.
 
