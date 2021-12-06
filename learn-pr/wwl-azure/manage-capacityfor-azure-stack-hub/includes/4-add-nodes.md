@@ -4,7 +4,7 @@ To add a scale unit node, sign into in Azure Stack Hub and run tooling from your
 
 The following flow diagram shows the general process to add a scale unit node:
 
-:::image type="content" source="../media/add-a-scale-unit-node-8c6f9166.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/add-a-scale-unit-node-8c6f9166.png" alt-text="Image showing the process to add a scale unit node.":::
 
 
 The operation to add a new node can take several hours or days to complete. There is no impact to any running workloads on the system while an additional scale unit node is added.
@@ -35,12 +35,12 @@ You can use the administrator portal or PowerShell to add new nodes. The add nod
 1.  Sign in to the Azure Stack Hub administrator portal as an Azure Stack Hub operator.
 2.  Navigate to **+ Create a resource &gt; Capacity &gt; Scale Unit Node**.
     
-    :::image type="content" source="../media/add-scale-unit-node-60d5014e.png" alt-text="Image showing normalized relational tables.":::
+    :::image type="content" source="../media/add-scale-unit-node-60d5014e.png" alt-text="Image showing the scale unit node.":::
     
 
 3.  On the **Add node** pane, select the *Region*, and then select the *Scale unit* that you want to add the node to. Also specify the *BMC IP ADDRESS* for the scale unit node you're adding. You can only add one node at a time.
     
-    :::image type="content" source="../media/scale-node-baseboard-management-controller-ip-address-b01d5e5b.png" alt-text="Image showing normalized relational tables.":::
+    :::image type="content" source="../media/scale-node-baseboard-management-controller-ip-address-b01d5e5b.png" alt-text="Image showing adding one node at a time.":::
     
 
 ## Add a node:

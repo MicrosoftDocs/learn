@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 12/06/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
@@ -18,28 +17,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An organizaton has an Azure Stack integrated system that is not yet in production and has no workloads running. They configure the Infrastructure Backup Service, and complete the backup. The Azure Stack Hub operator needs to recommend a method to verify the restore process once the integrated system is in production. What does the operator recommend?"
+  - content: "An organization has an Azure Stack integrated system that is not yet in production and has no workloads running. They configure the Infrastructure Backup Service and complete the backup. The Azure Stack Hub operator needs to recommend a method to verify the process once the integrated system is in production. What does the operator recommend?"
     choices:
     - content: "From the administrator portal, restore the domain controller backup to the default provider subscription and ensure that the domain controller starts successfully."
       isCorrect: false
-      explanation: "That's incorrect. You should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
+      explanation: "That's incorrect. They should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
     - content: "Run Get-FileIntegrity against the infrastructure backup date files stored in the file share."
       isCorrect: false
-      explanation: "That's incorrect. You should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
-    - content: "Instruct the IT team to deploy the integrated system in restore mode and using the backup data."
-      isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "That's incorrect. They should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
     - content: "Install the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
       isCorrect: true
-      explanation: "That's correct. You should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
+      explanation: "That's correct. They should recommend installing the Azure Stack Development Kit (ADSK) and select the infrastructure backup data as the configuration during the installation."
   - content: "An Azure Stack Hub operator wants to increase the overall capacity (CPU, memory, disks) of an existing scale unit. What do they do?"
     choices:
     - content: "Add an additional physical computer."
       isCorrect: true
-      explanation: "That's correct. Add an additional physical computer, also referred to as a scale unit node. Each new scale unit node added must be homogeneous in CPU type, memory, and disk number and size to the nodes that are already present in the scale unit."
+      explanation: "That's correct. Add an additional physical computer (scale unit node). Each new scale unit node added must be homogeneous in CPU type, memory, and disk number."
     - content: "Add storage service partitions"
       isCorrect: false
-      explanation: "That's incorrect. The storage service partitions the available storage into separate, equal volumes that are allocated to hold tenant data. This will not increase overall capacity."
+      explanation: "That's incorrect. The storage service partitions available storage into separate, equal volumes that are allocated to hold tenant data. This will not increase overall capacity."
     - content: "Add a managed disk"
       isCorrect: false
       explanation: "That's incorrect. Managed disks simplify disk management for Azure IaaS VMs by managing the storage accounts associated with the VM disks. This will not increase overall capacity."

@@ -61,25 +61,19 @@ Cloud operators don't directly operate unmanaged disks, which are attached to vi
 
 Use PowerShell or the administrator portal to monitor volumes so you can understand when free space is limited. When you use the portal, you receive alerts about volumes that are low on space.
 
-### Use PowerShell.
-
 As a cloud operator, you can monitor the storage capacity of a volume using the PowerShell `Get-AzsVolume` cmdlet. The cmdlet returns the total and free space in gigabyte (GB) on each of the volumes.
 
-:::image type="content" source="../media/add-additional-scale-unit-nodes-image-1-f50ebede.png":::
+:::image type="content" source="../media/add-additional-scale-unit-nodes-image-1-f50ebede.png" alt-text="Image showing total and free space.":::
 
 
  -  **Total capacity**: The total space in GB that's available on the share. This space is used for data and metadata that's maintained by the storage services.
  -  **Remaining capacity**: The amount of space in GB that's free to store the tenant data and associated metadata.
 
-### Use the administrator portal.
-
-As a cloud operator, you can use the administrator portal to view the storage capacity of all volumes.
+### As a cloud operator, you can use the administrator portal to view the storage capacity of all volumes.<br>
 
 1.  Sign in to the Azure Stack Hub administrator portal (`https://adminportal.local.azurestack.external`).
-2.  Select **All services &gt; Storage &gt; Volumes** to open the volume list where you can view the usage information.
-
-:::image type="content" source="../media/add-additional-scale-unit-nodes-image-2-4687c941.png":::
-
+2.  Select **All services &gt; Storage &gt; Volumes** to open the volume list where you can view the usage information.:::image type="content" source="../media/add-additional-scale-unit-nodes-image-2-4687c941.png" alt-text="Image showing storage volumes from the Stack Hub administrator portal.":::
+    
 
  -  **Total**: The total space available on the volume. This space is used for data and metadata that's maintained by the storage services.
  -  **Used**: The amount of data that's used by the all the extents from the files that store the tenant data and associated metadata.
