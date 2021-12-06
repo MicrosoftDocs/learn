@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-language
 title: Use Boolean types in Python
 summary: Explore how to use the Boolean type in Python to craft complex expressions using conditional logic.
 abstract: | 

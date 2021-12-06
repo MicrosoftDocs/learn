@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-language
 durationInMinutes: 8
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-boolean-types/exercise-write-if-statements.ipynb
