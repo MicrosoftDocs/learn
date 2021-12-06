@@ -4,22 +4,19 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 
 ## Add a dev container
 
-1. Open the Command Palette.
-2. Type **add dev container**.
-3. Select **Remote-Containers: Add Development Container Configuration Files**.
-4. Select the following options:
+1. Return to VS Code and the project you cloned earlier
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type **add dev container** and select **Remote-Containers: Add Development Container Configuration Files**.
+1. Select the following options:
 
    | Option                                      | Value       |
    | ------------------------------------------- | ----------- |
    | Select a container configuration definition | Python 3    |
-   | Python version                              | 3 (default) |
-   | Install Node.js                              | none        |
-
-5. Select **OK**.
+   | Python version                              | 3.8         |
+   | Install Node.js                             | none        |
+   | Add Features                                | Select "OK" |
 
 A Remote Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
-
-:::image type="content" source="../media/open-in-container-notification.jpg" alt-text="Screenshot of the Visual Studio Code notification that asks you to reopen the project in a container.":::
 
 ## Inspect configuration files
 
@@ -28,20 +25,31 @@ A Remote Container configuration will be added to your project. Visual Studio Co
 
 ## Open the project in a container
 
-1. Open the Command Palette.
+1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **reopen in container**.
 1. Select **Remote Containers: Reopen in Container** from the list of available options.
 
 The container will begin building. The initial build might take a few minutes because a new image has to be pulled down and built on your machine. After the container has been built the first time, later builds will be much faster.
 
+## View the Remote Indicator
+
+When the container is finished building, you can see that you are connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
+
+- Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
+
+    :::image type="content" source="../media/remote-indicator.png" alt-text="Remote indicator with text that says dev container python 3":::
+
 > [!IMPORTANT]
-> If you're on Windows, you might see a Windows notification from Docker Desktop warning you that performance might be affected. You can safely ignore this warning for this tutorial.
+> You may see notifications about Pylance or improving performance on Windows. You can safely dismiss any notifications that you see in VS Code. You won't need to do those things.
 
 ## Inspect the container
 
 1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code if it is not already open.
-1.  Notice that the terminal probably looks different from your normal terminal.
-1.  Run the following command to ensure that Python is there:
+1.  Notice that the terminal prompt might look different than your normal terminal prompt
+
+    :::image type="content" source="../media/terminal-prompt.png" alt-text="VS Code integrated terminal prompt":::
+
+1.  Run the following command to ensure that Python is installed:
 
     ```bash
     python --version
@@ -51,11 +59,11 @@ The container will begin building. The initial build might take a few minutes be
 
 ## Install project dependencies
 
-Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
+- Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
 
-```bash
-pip3 install --user -r requirements.txt
-```
+    ```bash
+    pip3 install --user -r requirements.txt
+    ```
 
 ## Run the project
 
@@ -71,4 +79,4 @@ pip3 install --user -r requirements.txt
 
 Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/en/2.0.x/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-In the next section, you'll learn how Visual Studio Code uses something called "port forwarding" to allow access to the application in your browser even though it's running within a container. 
+In the next section, you'll learn how to use the "devcontainer.json" file to automate the dependency install, as well as customize VS Code for this Python project.

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/).
   - Familiarity with database structures like tables, columns, and rows.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/write-first-query-kusto-query-language.svg
 levels:
   - beginner
 roles:
