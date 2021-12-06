@@ -17,7 +17,7 @@ abstract: |
   - Develop and run your code in isolation on a machine.
   - Use libraries written by someone else.
   - Restore a project from a list of dependencies it consists of.
-iconUrl: /learn/achievements/python-project.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
