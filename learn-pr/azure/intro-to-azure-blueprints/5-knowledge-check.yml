@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Role Assignments, Policy Assignments, ARM Templates, Resource Groups"
       isCorrect: true
-      explanation: "Correct: Those are four artifacts which can be deployed using Azure Blueprints?."
+      explanation: "Correct: Those are four artifacts which can be deployed using Azure Blueprints."
     - content: "Network Security Groups, Virtual Machines, Virtual Networks, SQL Databases"
       isCorrect: false
       explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
