@@ -20,7 +20,7 @@ The IP address details section shows attributes of the IP address such as its AS
 
 ### Alerts related to this IP
 
-The Alerts related to this IP section provides a list of alerts that are associated with the IP.
+The Alerts related to this IP section provide a list of alerts that are associated with the IP.
 
 ### IP in organization
 
@@ -32,7 +32,7 @@ The Prevalence section displays how many devices have connected to this IP addre
 
 ### Most recent observed devices with IP
 
-The most recent observed devices with IP section provides a chronological view on the events and associated alerts that were observed on the IP address.
+The most recent observed devices with IP section provide a chronological view on the events and associated alerts that were observed on the IP address.
 
 Investigate an external IP:
 
@@ -43,4 +43,3 @@ Investigate an external IP:
 1. Select the search icon or press Enter.
 
 Details about the IP address are displayed, including registration details (if available), reverse IPs (for example, domains), prevalence of devices in the organization that communicated with this IP Address (during the selected time period), and the devices in the organization that were observed communicating with this IP address.
-
