@@ -14,10 +14,10 @@ For each release of the deployment worksheet, you must do a one-time installatio
 
 1.  Open an elevated PowerShell prompt.
 2.  In the PowerShell window, install the module from the PowerShell gallery:
-
-```powershell
-Install-Module -Name Azs.Deployment.Worksheet -Repository PSGallery
-```
+    
+    ```powershell
+    Install-Module -Name Azs.Deployment.Worksheet -Repository PSGallery
+    ```
 
 If you receive a message about installing from an untrusted repository, press **Y** to continue installation.
 
@@ -27,16 +27,16 @@ To launch and use the deployment worksheet on a computer on which you've install
 
 1.  Start Windows PowerShell (don't use the PowerShell ISE, as unexpected results can occur). It's not necessary to run PowerShell as an administrator.
 2.  Import the AzS.Deployment.Worksheet PowerShell module:
-
-```powershell
-Import-Module AzS.Deployment.Worksheet
-```
+    
+    ```powershell
+    Import-Module AzS.Deployment.Worksheet
+    ```
 
 3.  Once the module is imported, launch the deployment worksheet:
-
-```powershell
-Start-DeploymentWorksheet
-```
+    
+    ```powershell
+    Start-DeploymentWorksheet
+    ```
 
 The deployment worksheet consists of separate tabs for collecting environment settings, like Customer Settings, Network Settings, and Scale Unit \#. Provide all values (except for any marked Optional) on all tabs before any configuration data files can be generated. After all required values have been entered into the tool, you can use the Action menu to Import, Export, and Generate. The JSON files required for deployment are as follows:
 

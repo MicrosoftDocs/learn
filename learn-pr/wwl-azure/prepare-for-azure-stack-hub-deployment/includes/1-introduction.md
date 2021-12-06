@@ -6,7 +6,7 @@ In the context of Azure Stack Hub, a public IP address is an IP address that's a
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -17,13 +17,13 @@ After completing this module, you'll be able to:
  -  Validate identity provider integration for Azure Stack Hub.
  -  Configure the Time Server (NTP) for Azure Stack Hub.
 
-## **Skills measured**
+## Skills measured
 
 **Implement data center integration.**
 
  -  Prepare for Azure Stack Hub deployment.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Working experience with enterprise networking.
  -  Conceptual knowledge of firewall integration and hybrid connectivity.

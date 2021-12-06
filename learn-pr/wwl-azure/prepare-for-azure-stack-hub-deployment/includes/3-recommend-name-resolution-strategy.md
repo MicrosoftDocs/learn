@@ -129,19 +129,19 @@ To add a conditional forwarder, you must use the privileged endpoint.
 For this procedure, use a computer in your datacenter network that can communicate with the privileged endpoint in Azure Stack Hub.
 
 1.  Open an elevated Windows PowerShell session (run as administrator) and connect to the IP address of the privileged endpoint. Use the credentials for CloudAdmin authentication.
-
-```
-$cred=Get-Credential
-Enter-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName PrivilegedEndpoint -Credential $cred
-
-```
+    
+    ```
+    $cred=Get-Credential
+    Enter-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName PrivilegedEndpoint -Credential $cred
+    
+    ```
 
 2.  After you connect to the privileged endpoint, run the following PowerShell command. Substitute the sample values provided with your domain name and IP addresses of the DNS servers you want to use.
-
-```
-Register-CustomDnsServer -CustomDomainName "contoso.com" -CustomDnsIPAddresses "192.168.1.1","192.168.1.2"
-
-```
+    
+    ```
+    Register-CustomDnsServer -CustomDomainName "contoso.com" -CustomDnsIPAddresses "192.168.1.1","192.168.1.2"
+    
+    ```
 
 ## Resolving Azure Stack Hub DNS names from outside Azure Stack Hub
 

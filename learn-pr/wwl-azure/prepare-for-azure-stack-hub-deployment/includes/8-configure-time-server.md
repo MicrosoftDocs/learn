@@ -8,24 +8,24 @@ Providing one time server (NTP) is required for Azure Stack Hub to synchronize t
 
 1.  Connect to the privileged endpoint PEP.
 2.  Run the following command to review the current configured NTP server:
-
-```
-Get-AzsTimeSource
-
-```
+    
+    ```
+    Get-AzsTimeSource
+    
+    ```
 
 3.  Run the following command to update Azure Stack Hub to use the new NTP server and to immediately synchronize the time.
-
-```
-Set-AzsTimeSource -TimeServer NEWTIMESERVERIP -resync
-
-```
+    
+    ```
+    Set-AzsTimeSource -TimeServer NEWTIMESERVERIP -resync
+    
+    ```
 
 4.  For servers other than Windows-based time servers:
-
-```
-Set-AzsTimeSource -TimeServer "NEWTIMESERVERIP,0x8" -resync
-
-```
+    
+    ```
+    Set-AzsTimeSource -TimeServer "NEWTIMESERVERIP,0x8" -resync
+    
+    ```
 
 5.  Review the output of the command for any errors.

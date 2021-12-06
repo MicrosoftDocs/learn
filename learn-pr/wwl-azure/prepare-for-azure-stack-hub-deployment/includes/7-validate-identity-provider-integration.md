@@ -17,43 +17,43 @@ Download the latest version of the Azure Stack Hub Readiness Checker tool (AzsRe
 ## Steps to validate Azure identity
 
 1.  On a computer that meets the prerequisites, open an elevated PowerShell command prompt, and then run the following command to install **AzsReadinessChecker**:
-
-```
-Install-Module -Name Az.BootStrapper -Force -AllowPrerelease
-Install-AzProfile -Profile 2019-03-01-hybrid -Force
-Install-Module -Name Microsoft.AzureStack.ReadinessChecker -AllowPrerelease
-
-```
+    
+    ```
+    Install-Module -Name Az.BootStrapper -Force -AllowPrerelease
+    Install-AzProfile -Profile 2019-03-01-hybrid -Force
+    Install-Module -Name Microsoft.AzureStack.ReadinessChecker -AllowPrerelease
+    
+    ```
 
 2.  From the PowerShell prompt, run the following command. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
-
-```
-Connect-AzAccount -tenant contoso.onmicrosoft.com
-
-```
+    
+    ```
+    Connect-AzAccount -tenant contoso.onmicrosoft.com
+    
+    ```
 
 3.  From the PowerShell prompt, run the following command to start validation of your Azure AD. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
-
-```
-Invoke-AzsAzureIdentityValidation -AADDirectoryTenantName contoso.onmicrosoft.com
-
-```
+    
+    ```
+    Invoke-AzsAzureIdentityValidation -AADDirectoryTenantName contoso.onmicrosoft.com
+    
+    ```
 
 4.  After the tool runs, review the output. Confirm the status is **OK** for installation requirements. A successful validation appears like the following example:
-
-```
-Invoke-AzsAzureIdentityValidation v1.2005.1269 started.
-Starting Azure Identity Validation
-
-Checking Installation Requirements: OK
-
-Finished Azure Identity Validation
-
-Log location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessChecker.log
-Report location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessCheckerReport.json
-Invoke-AzsAzureIdentityValidation Completed
-
-```
+    
+    ```
+    Invoke-AzsAzureIdentityValidation v1.2005.1269 started.
+    Starting Azure Identity Validation
+    
+    Checking Installation Requirements: OK
+    
+    Finished Azure Identity Validation
+    
+    Log location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessChecker.log
+    Report location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessCheckerReport.json
+    Invoke-AzsAzureIdentityValidation Completed
+    
+    ```
 
 ## Report and log file
 
