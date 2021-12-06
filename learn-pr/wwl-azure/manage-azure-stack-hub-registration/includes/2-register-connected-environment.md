@@ -4,7 +4,7 @@ The information in this unit describes registering Azure Stack Hub integrated sy
 
 Registration is required to support full Azure Stack Hub functionality, including offering items in the marketplace. You'll be in violation of Azure Stack Hub licensing terms if you don't register when using the pay-as-you-use billing model.
 
-:::image type="content" source="../media/cloud-solution-provider-enterprise-agreement-register-22a8a4fd.png" alt-text="Image showing registration procedure":::
+:::image type="content" source="../media/cloud-solution-provider-enterprise-agreement-register-22a8a4fd.png" alt-text="Image showing registration procedure.":::
 
 
 Complete the following prerequisites before you register:
@@ -33,8 +33,6 @@ If you have more than one Azure Stack Hub, a best practice is to register each A
 ### Set the PowerShell language mode.
 
 To successfully register Azure Stack Hub, the PowerShell language mode must be set to `FullLanguageMode`. To verify that the current language mode is set to full, open an elevated PowerShell window and run the following PowerShell cmdlets:
-
-PowerShell
 
 ```
 $ExecutionContext.SessionState.LanguageMode
@@ -72,34 +70,12 @@ Connected environments can access the internet and Azure. For these environments
 1.  To register the Azure Stack Hub resource provider with Azure, start PowerShell ISE as an administrator and use the following PowerShell cmdlets with the **EnvironmentName** parameter set to the appropriate Azure subscription type (see parameters below).
 2.  Add the Azure account that you used to register Azure Stack Hub. To add the account, run the **Add-AzAccount** cmdlet. You're prompted to enter your Azure account credentials and you may have to use two-factor authentication based on your account's configuration.
 
-Powershell
-
 ```
 Add-AzAccount -EnvironmentName "<environment name>"
 
 ```
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    EnvironmentName
-  :::column-end:::
-  :::column:::
-    The Azure cloud subscription environment name. Supported environment names are AzureCloud, AzureUSGovernment, or if using a China Azure Subscription, AzureChinaCloud.
-  :::column-end:::
-:::row-end:::
-
-
 3.  If you have multiple subscriptions, run the following command to select the one you want to use:
-
-PowerShell
 
 ```
 Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
@@ -107,8 +83,6 @@ Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzS
 ```
 
 4.  Run the following command to register the Azure Stack Hub resource provider in your Azure subscription:
-
-PowerShell
 
 ```
 Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
@@ -152,38 +126,16 @@ All these steps must be run from a computer that has access to the privileged en
 
 Connected environments can access the internet and Azure. For these environments, you need to register the Azure Stack Hub resource provider with Azure and then configure your billing model.
 
-1.To register the Azure Stack Hub resource provider with Azure, start PowerShell ISE as an administrator and use the following PowerShell cmdlets with the **EnvironmentName** parameter set to the appropriate Azure subscription type (see parameters below).
+To register the Azure Stack Hub resource provider with Azure, start PowerShell ISE as an administrator and use the following PowerShell cmdlets with the **EnvironmentName** parameter set to the appropriate Azure subscription type (see parameters below).
 
-2.  Add the Azure account that you used to register Azure Stack Hub. To add the account, run the **Add-AzAccount** cmdlet. You're prompted to enter your Azure account credentials and you may have to use two-factor authentication based on your account's configuration.
-
-PowerShell
+1.  Add the Azure account that you used to register Azure Stack Hub. To add the account, run the **Add-AzAccount** cmdlet. You're prompted to enter your Azure account credentials and you may have to use two-factor authentication based on your account's configuration.
 
 ```
 Connect-AzAccount -Environment "<environment name>"
 
 ```
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    EnvironmentName
-  :::column-end:::
-  :::column:::
-    The Azure cloud subscription environment name. Supported environment names are AzureCloud, AzureUSGovernment, or if using a China Azure Subscription, AzureChinaCloud.
-  :::column-end:::
-:::row-end:::
-
-
 3.  If you have multiple subscriptions, run the following command to select the one you want to use:
-
-PowerShell
 
 ```
 Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzSubscription
@@ -192,16 +144,12 @@ Get-AzSubscription -SubscriptionID '<Your Azure Subscription GUID>' | Select-AzS
 
 4.  Run the following command to register the Azure Stack Hub resource provider in your Azure subscription:
 
-PowerShell
-
 ```
 Register-AzResourceProvider -ProviderNamespace Microsoft.AzureStack
 
 ```
 
 5.  Start PowerShell ISE as an administrator and navigate to the **Registration** folder in the **AzureStack-Tools-az** directory created when you downloaded the Azure Stack Hub tools. Import the **RegisterWithAzure.psm1** module using PowerShell:
-
-PowerShell
 
 ```
 $CloudAdminCred = Get-Credential -UserName <Privileged endpoint credentials> -Message "Enter the cloud domain credentials to access the privileged endpoint."
