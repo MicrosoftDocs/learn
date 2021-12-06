@@ -17,8 +17,6 @@ Onboard the guest directory tenant (Fabrikam) to Azure Stack Hub by configuring 
 
 The service admin of `contoso.onmicrosoft.com` runs the following commands:
 
-PowerShell
-
 ```
 ## The following Azure Resource Manager endpoint is for the ASDK. If you're in a multinode environment, contact your operator or service provider to get the endpoint.
 $adminARMEndpoint = "https://adminmanagement.local.azurestack.external"
