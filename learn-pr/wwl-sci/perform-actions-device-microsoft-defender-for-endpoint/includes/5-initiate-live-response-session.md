@@ -75,7 +75,7 @@ The following commands are available for user roles that are granted the ability
 | [dir]| Shows a list of files and subdirectories in a directory.|
 | [download] <file_path> &| Downloads a file in the background.|
 | [drivers]| Shows all drivers installed on the device.|
-| [fg] <command ID>| Returns a file download to the foreground.|
+| [fg] \<command ID\>| Returns a file download to the foreground.|
 | [fileinfo]| Get information about a file.|
 | [findfile]| Locates files by a given name on the device.|
 | [help]| Provides help information for live response commands.|
