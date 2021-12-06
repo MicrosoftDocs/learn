@@ -17,19 +17,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An organiziation has an Azure Stack Hub system that is connected to the Internet. They want to update the Event Hubs service. From a privileged endpoint session, the run the Get-AzsUpdate cmdlet. Does this meet the goal?"
+  - content: "Azure Stack Hub Original Equipment Manufacturers (OEMs) release regular updates for Azure Stack Hub hardware, such as driver and firmware updates. Where are the updates uploaded?"
     choices:
-    - content: "Yes"
+    - content: "The updateadminaccount storage account."
+      isCorrect: true
+      explanation: "That’s correct. The OEM package updates are uploaded into the updateadminaccount storage account."
+    - content: "To a OneDrive account for the Azure Stack operator."
       isCorrect: false
-      explanation: "That's incorrect. Running the Get-AzsUpdate cmdlet does not update the Event Hub service."
-    - content: "No"
-      isCorrect: true
-      explanation: "That's correct. Running the Get-AzsUpdate cmdlet does not update the Event Hub service. Instead, running the Get-AzsUpdate cmdlet will provide the list of available updates."
-  - content: "An Azure Stack Hub operator wants to install an update on an Azure Stack Hub system. They want to check to see if the Azure Stack Hub instance can be updated and if not, they want to view warnings and errors that are blockers for the update. From the administrator management endpoint, they run Test-AzureStack -Group UpdateReadiness. Does this meet the goal?"
+      explanation: "That’s incorrect. The OEM package updates are uploaded into the updateadminaccount storage account."
+    - content: "To an Azure Files share."
+      isCorrect: false
+      explanation: "That’s incorrect. The OEM package updates are uploaded into the updateadminaccount storage account."
+  - content: "Where are frequently released tools and PowerShell modules supporting Azure Stack Hub found?"
     choices:
-    - content: "Yes"
-      isCorrect: true
+    - content: "The updateadminaccount storage account."
+      isCorrect: false
       explanation: "That's correct. UpdateReadiness is a check to see if the Azure Stack Hub instance can be updated. When the UpdateReadiness group is run, warnings are displayed as errors in the console output, and they should be considered as blockers for the update."
-    - content: "No"
+    - content: "The Azure Stack tools GitHub repository."
+      isCorrect: true
+      explanation: "That’s correct. Frequently released tools and PowerShell modules supporting Azure Stack Hub found in the Azure Stack tools GitHub repository."
+    - content: "Azure Tools for Visual Studio Code."
       isCorrect: false
-      explanation: "That's incorrect. Running UpdateReadiness will check to see if the Azure Stack Hub instance can be updated."
+      explanation: "That’s incorrect. Azure Tools for Visual Studio Code is a set of tools and extensions for Visual Studio Code."
