@@ -31,8 +31,6 @@ If you're using an integrated system, there are three instances of the PEP, each
 
 If you're using the ASDK, this virtual machine is named AzS-ERCS01. Update the values before running:
 
-PowerShell
-
 ```
 # Create a PEP Session
 winrm s winrm/config/client '@{TrustedHosts= "<IP_address_of_ERCS>"}'
@@ -60,7 +58,7 @@ The script performs the following steps:
      -  *PathAccessCredential*: The PSCredential object for credentials to the share.
      -  *CertificatePassword*: A secure string of the password used for all of the pfx certificate files created.
 
-2.  External secret rotation takes approximately one hour. After successful completion, your console will display a *ActionPlanInstanceID ... CurrentStatus: Completed* message, followed by *DONE*. Remove your certificates from the share created in the Preparation section and store them in their secure backup location.
+External secret rotation takes approximately one hour. After successful completion, your console will display a *ActionPlanInstanceID ... CurrentStatus: Completed* message, followed by *DONE*. Remove your certificates from the share created in the Preparation section and store them in their secure backup location.
 
 ## Preparation
 
@@ -68,27 +66,24 @@ Prior to rotation of external secrets:
 
 1.  Run the [Test-AzureStack](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-diagnostic-test.md) PowerShell cmdlet using the `-group SecretRotationReadiness` parameter, to confirm all test outputs are healthy before rotating secrets.
 2.  Prepare a new set of replacement external certificates:
-
- -  The new set must match the certificate specifications outlined in the [Azure Stack Hub PKI certificate requirements](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-pki-certs.md).
- -  Generate a certificate signing request (CSR) to submit to your Certificate Authority (CA). Use the steps outlined in [Generate certificate signing requests](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-get-pki-certs.md) and prepare them for use in your Azure Stack Hub environment using the steps in [Prepare PKI certificates](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-prepare-pki-certs.md).
- -  Be sure to validate the certificates you prepare with the steps outlined in [Validate PKI Certificates.](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-validate-pki-certs.md)
- -  Make sure there are no special characters in the password, like \* or).
- -  Make sure the PFX encryption is **TripleDES-SHA1**.
+    
+     -  The new set must match the certificate specifications outlined in the [Azure Stack Hub PKI certificate requirements](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-pki-certs.md).
+     -  Generate a certificate signing request (CSR) to submit to your Certificate Authority (CA). Use the steps outlined in [Generate certificate signing requests](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-get-pki-certs.md) and prepare them for use in your Azure Stack Hub environment using the steps in [Prepare PKI certificates](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-prepare-pki-certs.md).
+     -  Be sure to validate the certificates you prepare with the steps outlined in [Validate PKI Certificates.](https://github.com/MicrosoftDocs/azure-stack-docs/blob/master/azure-stack/operator/azure-stack-validate-pki-certs.md)
+     -  Make sure there are no special characters in the password, like \* or).
+     -  Make sure the PFX encryption is **TripleDES-SHA1**.
 
 3.  Store a backup to the certificates used for rotation in a secure backup location. If your rotation runs and then fails, replace the certificates in the file share with the backup copies before you rerun the rotation. Keep backup copies in the secure backup location.
 4.  Create a fileshare you can access from the ERCS virtual machines. The file share must be readable and writable for the **CloudAdmin** identity.
 5.  Open a PowerShell ISE console from a computer where you have access to the fileshare. Navigate to your fileshare, where you create directories to place your external certificates.
 6.  Download [CertDirectoryMaker.ps1](https://www.aka.ms/azssecretrotationhelper) to your network fileshare, and run the script. The script will create a folder structure that adheres to **.\\Certificates\\AAD** or **.\\Certificates\\ADFS**, depending on your identity provider. Your folder structure must begin with a **\\Certificates** folder, followed by ONLY an **\\AAD** or **\\ADFS** folder. All remaining subdirectories are contained within the preceding structure. For example:
-
- -  File share =**\\ &lt;ShareName&gt;** 
- -  Certificate root folder for Azure AD provider = **\\Certificates\\AAD**
- -  Full path = **\\ &lt;ShareName&gt;\\Certificates\\AAD** 
+    
+     -  File share =**\\ &lt;ShareName&gt;** 
+     -  Certificate root folder for Azure AD provider = **\\Certificates\\AAD**
+     -  Full path = **\\ &lt;ShareName&gt;\\Certificates\\AAD** 
 
 7.  Copy the new set of replacement external certificates created in *Step 2*, to the **\\Certificates&lt;IdentityProvider&gt;** directory created in *Step 6*. Be sure to follow the `cert.<regionName>.<externalFQDN>` format for `<CertName>`.
 
-Seen below an example of a folder structure for the Azure AD Identity Provider:
+The image below is an example of a folder structure for the Azure AD Identity Provider:
 
 :::image type="content" source="../media/secrets-rotation-b04b4f04.png" alt-text="Prepare to run secret rotation PowerShell cmdlet for external certificates.":::
-
-
-im

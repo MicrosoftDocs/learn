@@ -1,6 +1,4 @@
-## Summary
-
-In this module, you learned how to:
+In this module, you learned how to:<br>
 
  -  Recommend certificate strategy for Azure Stack Hub.
  -  Validate certificates for Azure Stack Hub.

@@ -14,7 +14,7 @@ After completing this module, you'll be able to:
 
 ## **Skills measured**
 
-**Implement data center integration.**<br>
+**Implement data center integration.**
 
  -  Manage infrastructure certificates for Azure Stack.
 

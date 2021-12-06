@@ -98,7 +98,6 @@ Thumbprint: 6F9055****************************4AC0EA
     Other Certificates: OK
 Testing: Public Portal\PublicPortal.pfx
 
-
 Log location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessChecker.log
 Report location (contains PII): C:\Users\[*redacted*]\AppData\Local\Temp\AzsReadinessChecker\AzsReadinessCheckerReport.json
 Invoke-AzsHubDeploymentCertificateValidation Completed
