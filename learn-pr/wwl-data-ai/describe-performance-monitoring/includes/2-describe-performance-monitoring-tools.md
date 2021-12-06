@@ -18,15 +18,14 @@ You can launch this screen in the Azure portal by going to the **Settings** sect
 
 ![Screenshot of directions to register with SQL IaaS Agent Extension.](../media/install-extension-img.png#lightbox)
 
-Take note that to access future features and product improvements, you will want to additionally [register your SQL Server VM with the SQL IaaS Agent extension](/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm). 
+Take note that to access future features and product improvements, you will want to additionally [register your SQL Server VM with the SQL IaaS Agent extension](/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm?tabs=powershell%2Cazure-cli&WT.mc_id=Portal-Microsoft_Azure_Compute).
 
 This dashboard allows you to see how much space your database files and transaction log file are consuming, and allows you to manage the features provided by the resource provider like automated patching and storage configuration. You can manually install the SQL Resource Provider for other installations of SQL Server on Azure Virtual Machine that were not defined as part of the virtual machine.
 
 ## Performance Monitor with SQL Server on an Azure Virtual Machine
 
-Whether you are using an on-premises server or on an Azure Virtual Machine, the Windows Server platform has a native tool called Performance Monitor (commonly shortened to perfmon after the name of its executable file) that allows you to easily and routinely monitor performance metrics. Perfmon operates with counters for both the operating systems and installed programs. When SQL Server is installed on the operating system, the database engine creates its own group of specific counters.
+Whether you are using an on-premises server or on an Azure Virtual Machine, the Windows Server platform has a native tool called Performance Monitor (commonly shortened to *perfmon* after the name of its executable file) that allows you to easily and routinely monitor performance metrics. *Perfmon* operates with counters for both the operating systems and installed programs. When SQL Server is installed on the operating system, the database engine creates its own group of specific counters.
 
 ![Screenshot of native Performance Monitor displaying the reporting interface, with a single counter being collected.](../media/module-44-optimize-resources-final-03.png#lightbox)
 
-
-The above image shows the reporting interface of Performance Monitor, with a single counter being collected. This screen is reached from launching Performance Monitor in Windows and shows a live tracker of a specific performance counter. In many cases, you will capture multiple counters in the same session. Perfmon data can be stored locally and analyzed, but in larger environments you can forward performance monitor results into Azure Monitor, where you can have a single view across many servers.
+The above image shows the reporting interface of Performance Monitor, with a single counter being collected. This screen is reached from launching Performance Monitor in Windows and shows a live tracker of a specific performance counter. In many cases, you will capture multiple counters in the same session. *Perfmon* data can be stored locally and analyzed, but in larger environments you can forward performance monitor results into Azure Monitor, where you can have a single view across many servers.

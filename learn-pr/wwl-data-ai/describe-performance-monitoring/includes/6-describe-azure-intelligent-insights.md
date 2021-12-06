@@ -8,7 +8,7 @@ In order to enable Intelligent Insights, you need to add diagnostic settings to 
 
 ## Intelligent Insights storage options
 
-You have three options for where to store the Intelligent Insights data, and the data is stored in a different format in each one. If you choose Azure storage, your data is stored in extended events format with an XEL extension. Those files can only be viewed on the Azure SQL server where they were created. If you choose an Event Hub, the data is stored in Avro format, which is a binary JSON format used for event reporting. Finally, if you use Log Analytics as a destination, your data is stored in Log Analytics, and can be queried using the Kusto Query Language.
+You have three options for where to store the Intelligent Insights data, and the data is stored in a different format in each one. If you choose Azure storage, your data is stored in extended events format with an XEL extension. Those files can only be viewed on the Azure SQL server where they were created. If you choose an event hub, the data is stored in Avro format, which is a binary JSON format used for event reporting. Finally, if you use Log Analytics as a destination, your data is stored in Log Analytics, and can be queried using the Kusto Query Language.
 
 ## SQL Insights in Azure Log Analytics
 
