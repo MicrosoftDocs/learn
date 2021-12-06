@@ -2,7 +2,7 @@ To download Azure Marketplace items from Azure to Azure Stack Hub, you must regi
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, you'll be able to:
 
