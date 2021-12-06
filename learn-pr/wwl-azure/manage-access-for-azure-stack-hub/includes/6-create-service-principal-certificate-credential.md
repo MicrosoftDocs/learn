@@ -55,8 +55,6 @@ Once you have a certificate, use the PowerShell script below to register your ap
 
 1.  Open an elevated Windows PowerShell session, and run the following script.
 
-PowerShell
-
 ```
 # Sign in to PowerShell interactively, using credentials that have access to the virtual machine running the Privileged Endpoint (typically <domain>\cloudadmin)
 $Creds = Get-Credential
@@ -65,7 +63,7 @@ $Creds = Get-Credential
 $Session = New-PSSession -ComputerName "<PepVm>" -ConfigurationName PrivilegedEndpoint -Credential $Creds
 
 # Use the Get-Item cmdlet to retrieve your certificate.
-# If you don't want to use a managed certificate, you can produce a self-signed cert for testing purposes: 
+# If you don't want to use a managed certificate, you can produce a self-signed cert for testing purposes:
 # $Cert = New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" -Subject "CN=<YourAppName>" -KeySpec KeyExchange
 $Cert = Get-Item "<YourCertificateLocation>"
 
@@ -75,8 +73,8 @@ $AzureStackInfo = Invoke-Command -Session $Session -ScriptBlock {Get-AzureStackS
 $Session | Remove-PSSession
 
 # Using the stamp info for your Azure Stack Hub instance, populate the following variables:
-# - Az endpoint used for Azure Resource Manager operations 
-# - Audience for acquiring an OAuth token used to access Graph API. 
+# - Az endpoint used for Azure Resource Manager operations
+# - Audience for acquiring an OAuth token used to access Graph API.
 # - GUID of the directory tenant
 $ArmEndpoint = $AzureStackInfo.TenantExternalEndpoints.TenantResourceManager
 $GraphAudience = "https://graph." + $AzureStackInfo.ExternalDomainFQDN + "/"
@@ -99,13 +97,11 @@ $SpObject
 
 2.  After the script finishes, it displays the app registration info, including the service principal's credentials. The `ClientID` and `Thumbprint` are authenticated, and later authorized for access to resources managed by Azure Resource Manager.
 
-shell
-
 ```
 ApplicationIdentifier : S-1-5-21-1512385356-3796245103-1243299919-1356
 ClientId              : 3c87e710-9f91-420b-b009-31fa9e430145
 Thumbprint            : 30202C11BE6864437B64CE36C8D988442082A0F1
-ApplicationName       : Azurestack-MyApp-c30febe7-1311-4fd8-9077-3d869db28342
+ApplicationName      : Azurestack-MyApp-c30febe7-1311-4fd8-9077-3d869db28342
 ClientSecret          :
 PSComputerName        : azs-ercs01
 RunspaceId            : a78c76bb-8cae-4db4-a45a-c1420613e01b

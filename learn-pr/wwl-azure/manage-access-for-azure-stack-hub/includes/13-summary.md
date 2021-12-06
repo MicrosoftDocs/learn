@@ -1,6 +1,4 @@
-# Summary
-
-In this module, you learned how to:
+In this module, you learned how to:<br>
 
  -  Describe Hybrid Identity for Azure Stack Hub.
  -  Identify an appropriate method for access (service principal, users, groups) for Azure Stack Hub.

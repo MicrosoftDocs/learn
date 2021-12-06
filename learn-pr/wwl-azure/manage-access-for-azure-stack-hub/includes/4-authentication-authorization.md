@@ -1,6 +1,6 @@
 For apps and users, the architecture of Azure Stack Hub is described by four layers. Interactions between each of these layers can use different types of authentication.
 
-:::image type="content" source="../media/identity-providers-2-6d9dbbb7.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/identity-providers-2-6d9dbbb7.png" alt-text="Image showing interactions between each of the layers using different types of authentication.":::
 
 
 :::row:::
@@ -48,14 +48,14 @@ For apps and users, the architecture of Azure Stack Hub is described by four lay
 :::image type="content" source="../media/identity-providers-3-86b7aa14.png" alt-text="Image showing normalized relational tables.":::
 
 
-### Authenticate to Azure Resource Manager.
+### Authenticate to Azure Resource Manager
 
 To authenticate with the identity provider and receive a JSON Web Token, you must have the following information:
 
-1.  **URL for the identity system (Authority)**: The URL at which your identity provider can be reached. For example, `https://login.windows.net`.
-2.  **App ID URI for Azure Resource Manager**: The unique identifier for Azure Resource Manager that's registered with your identity provider. It's also unique to each Azure Stack Hub installation.
-3.  **Credentials**: The credential you use to authenticate with the identity provider.
-4.  **URL for Azure Resource Manager**: The URL is the location of the Azure Resource Manager service. For example, `https://management.azure.com` or `https://management.local.azurestack.external`.
+ -  **URL for the identity system (Authority)**: The URL at which your identity provider can be reached. For example, `https://login.windows.net`.
+ -  **App ID URI for Azure Resource Manager**: The unique identifier for Azure Resource Manager that's registered with your identity provider. It's also unique to each Azure Stack Hub installation.
+ -  **Credentials**: The credential you use to authenticate with the identity provider.
+ -  **URL for Azure Resource Manager**: The URL is the location of the Azure Resource Manager service. For example, `https://management.azure.com` or `https://management.local.azurestack.external`.
 
 When a principal (a client, apps, or user) makes an authentication request to access a resource, the request must include:
 
@@ -73,4 +73,4 @@ The token must then pass in the header of a request to Azure Resource Manager. A
 
 When all validations are complete, Azure Resource Manager uses the *object id* (oid) and the *groups* claims to make a list of resources that the principal can access.
 
-:::image type="content" source="../media/identity-providers-4-81bd3d9d.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/identity-providers-4-81bd3d9d.png" alt-text="Image showing list of resources that the principal can access.":::

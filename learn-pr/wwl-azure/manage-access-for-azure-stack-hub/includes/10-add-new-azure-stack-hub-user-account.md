@@ -33,7 +33,7 @@ The user is created and added to your Azure AD tenant.
 
 If you don't have an Azure subscription, you can't use the Azure portal to add a tenant user account. In this case, you can use the Azure AD Module for Windows PowerShell instead.
 
-1.  Install the **64-bit** version of the [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
+1.  Install the **64-bit** version of the Microsoft Online Services Sign-in Assistant for IT Professionals RTW.
 2.  Install the Microsoft Azure AD Module for Windows PowerShell with these steps:
 
  -  Open an elevated Windows PowerShell command prompt (run Windows PowerShell as admin).
@@ -41,9 +41,7 @@ If you don't have an Azure subscription, you can't use the Azure portal to add a
  -  If you're prompted to install the NuGet provider, select **Y** and **Enter**.
  -  If you're prompted to install the module from PSGallery, select **Y** and **Enter**.
 
-3.  Run the following cmdlets:
-
-PowerShell
+3.  Run the following cmdlets
 
 ```
 # Provide the Azure AD credential.

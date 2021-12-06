@@ -1,4 +1,4 @@
-When choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
+Azure Stack Hub uses a single-tenant topologWhen choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
 
 ## Capabilities and limitations
 
@@ -151,7 +151,7 @@ A single-tenant topology is useful when:
  -  All users are part of the same tenant.
  -  A service provider hosts an Azure Stack Hub instance for an organization.
 
-:::image type="content" source="../media/azure-ad-single-tenant-topology-57c870bf.png" alt-text="Image showing normalized relational tables":::
+:::image type="content" source="../media/azure-ad-single-tenant-topology-57c870bf.png" alt-text="Image showing Azure Stack Hub uses a single-tenant topology.":::
 
 
 This topology features the following characteristics:
@@ -169,7 +169,7 @@ A multi-tenant topology is useful when:
 
  -  A service provider wants to allow users from multiple organizations to access Azure Stack Hub.
 
-:::image type="content" source="../media/azure-ad-multi-tenant-topology-a37080d0.png" alt-text="Image showing normalized relational tables":::
+:::image type="content" source="../media/azure-ad-multi-tenant-topology-a37080d0.png" alt-text="Image showing users from multiple organizations to access Azure Stack Hub.":::
 
 
 This topology features the following characteristics:
@@ -185,7 +185,7 @@ The AD FS topology is required when either of the following conditions is true:
  -  Azure Stack Hub doesn't connect to the internet.
  -  Azure Stack Hub can connect to the internet, but you choose to use AD FS for your identity provider.
 
-:::image type="content" source="../media/active-directory-ferderation-services-azure-stack-c6591266.png" alt-text="Image showing normalized relational tables":::
+:::image type="content" source="../media/active-directory-ferderation-services-azure-stack-c6591266.png" alt-text="Image showing choices for using identity providers.":::
 
 
 This topology features the following characteristics:

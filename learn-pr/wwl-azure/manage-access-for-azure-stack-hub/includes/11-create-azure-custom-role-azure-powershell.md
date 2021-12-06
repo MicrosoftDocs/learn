@@ -10,14 +10,9 @@ The easiest way to create a custom role is to start with a built-in role, edit i
 
 1.  In PowerShell, use the **Get-AzProviderOperation** command to get the list of operations for the Microsoft.Support resource provider. It's helpful to know the operations that are available to create your permissions.
 
-Azure PowerShell
-
 ```
 Get-AzProviderOperation "Microsoft.Support/*" | FT Operation, Description -AutoSize
-
 ```
-
-Output
 
 ```
 Operation                              Description
@@ -30,8 +25,6 @@ Microsoft.Support/supportTickets/write Creates or Updates a Support Ticket. You 
 
 2.  Use the **Get-AzRoleDefinition** command to output the **Customer** role in JSON format.
 
-Azure PowerShell
-
 ```
 Get-AzRoleDefinition -Name "Reader" | ConvertTo-Json | Out-File C:\CustomRoles\ReaderSupportRole.json
 
@@ -40,8 +33,6 @@ Get-AzRoleDefinition -Name "Reader" | ConvertTo-Json | Out-File C:\CustomRoles\R
 3.  Open the **CustomerSupportRole.json** file in an editor.
 
 The script below shows the JSON output.
-
-JSON
 
 ```
 {
@@ -116,14 +107,14 @@ New-AzRoleDefinition -InputFile "C:\CustomRoles\ReaderSupportRole.json"
 Output
 
 ```
-Name             : Reader Support Tickets
-Id               : 22222222-2222-2222-2222-222222222222
-IsCustom         : True
+Name            : Reader Support Tickets
+Id              : 22222222-2222-2222-2222-222222222222
+IsCustom        : True
 Description      : View everything in the subscription and also open support tickets.
 Actions          : {*/read, Microsoft.Support/*}
-NotActions       : {}
+NotActions      : {}
 DataActions      : {}
-NotDataActions   : {}
+NotDataActions  : {}
 AssignableScopes : {/subscriptions/00000000-0000-0000-0000-000000000000}
 
 
