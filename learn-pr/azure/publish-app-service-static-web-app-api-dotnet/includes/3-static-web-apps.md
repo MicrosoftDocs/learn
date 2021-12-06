@@ -12,17 +12,17 @@ When you publish your app to the web with Azure Static Web Apps, you're getting 
 
 ### Connect your Static Web Apps instance to GitHub
 
-Azure Static Web Apps is designed to host applications where the source code lives on GitHub. When you create a Static Web Apps instance, you'll sign in to GitHub and specify the repository containing your app's code.
+Azure Static Web Apps is designed to host applications while the source code lives on GitHub. When you create a Static Web Apps instance, you'll sign in to GitHub and specify the repository containing your app's code.
 
 You also need to specify three folder paths within your repository so your app can be automatically built and deployed:
 
 | Location              | Location example | Description                                                               | Required |
 | --------------------- | ---------------- | ------------------------------------------------------------------------- | -------- |
 | App location          | Client          | The location of the source code for your web app                          | Yes      |
-| App artifact location | wwwroot          | The location of your app's build artifacts, relative to your app location | No       |
-| API location          | Api             | The location of the source code for your API                              | No       |
+| Output location       | wwwroot          | The location of your app's build artifacts                    | No       |
+| API location          | Api             | The location of the source code for your API                          | No       |
 
-The **App artifact location** is a relative path to the build output directory of your application. For example, consider we have an app at `Client` that outputs its built assets to a `bin/<build profile>/<framework>/publish/wwwroot` folder. In this case, you only need to specify `wwwroot` for this location, as the publish system will take care of the rest of the prefix.
+The **Output location** is a relative path to the publish directory of your application. For example, consider we have an app at `Client` that outputs its built assets to a `bin/<build profile>/<framework>/publish/wwwroot` folder. In this case, you only need to specify `wwwroot` for this location, as the publish system will take care of the rest of the prefix.
 
 ### From source code to static assets with GitHub Actions
 

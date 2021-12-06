@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.troubleshoot-application-issues-related-to-azure-virtual-desktop-using-user-inpu
+title: Troubleshoot application issues for Azure Virtual Desktop
+metadata:
+  title: Troubleshoot application issues for Azure Virtual Desktop
+  description: "Troubleshoot application issues for Azure Virtual Desktop"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/9-troubleshoot-application-issues-user-input-delay.md)]

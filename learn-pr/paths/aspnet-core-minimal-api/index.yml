@@ -23,6 +23,7 @@ roles:
 products:
   - vs
   - dotnet
+  - aspnet-core
   - vs-code
 modules:
 - learn.aspnetcore.build-web-api-minimal-api

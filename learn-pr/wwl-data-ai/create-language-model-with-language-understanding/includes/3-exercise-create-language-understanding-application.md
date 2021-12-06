@@ -1,79 +1,78 @@
 Increasingly, we expect computers to be able to use AI in order to understand spoken or typed commands in natural language. For example, you might want to implement a home automation system that enables you to control devices in your home by using voice commands such as "switch on the light" or "put the fan on", and have an AI-powered device understand the command and take appropriate action.
 
-To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Conversational Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-## Create a *Cognitive Services* resource
+## Create a *Language* resource
 
-You can use the Translation service by creating either a **Translator** resource or a **Cognitive Services** resource.
+You can use the Conversational Language Understanding service by creating a **Language** resource. 
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
+If you haven't already done so, create a **Language** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+2. Click the **&#65291;Create a resource** button, search for *Language*, and create a **Language** resource with the following settings:
+    - Select additional features: *Keep the default features and click Continue to create your resource*  
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
     - **Name**: *Enter a unique name*.
-    - **Pricing tier**: S0
+    - **Pricing tier**: Standard S
     - **I confirm I have read and understood the notices**: Selected.
 
 3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
-4. View the **Keys and Endpoint** page for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
+4. View the **Keys and Endpoint** page for your Language resource. You will need the endpoint and keys to connect from client applications.
 
-### Create a Language Understanding App
+### Create a Conversational Language Understanding App
 
-To implement natural language understanding with Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app to understand:
+To implement natural language understanding with Conversational Language Understanding, you create an app; and then add entities, intents, and utterances to define the commands you want the app. 
 
-1. In a new browser tab, open the Language Understanding portal at [https://www.luis.ai](https://www.luis.ai?azure-portal=true), and sign in using the Microsoft account associated with your Azure subscription. If this is the first time you have signed into the Language Understanding portal, you may need to grant the app some permissions to access your account details. Then complete the *Welcome* steps by selecting the existing Language Understanding authoring resource you just created in your Azure subscription. 
-2. In the **Conversation apps** page, create a new app with the following settings:
-    - **Name**: Home Automation
-    - **Culture**: English
+1. In a new browser tab, open the Language Studio portal at [https://language.azure.com](https://language.azure.com/?azure-portal=true), and sign in using the Microsoft account associated with your Azure subscription. If this is the first time you have signed into the Language Studio, you may need to grant the app some permissions to access your account details. Then complete the *Welcome* steps by selecting the existing Language resource you just created in your Azure subscription. 
+2. In the **Home** page, create a new **Conversational Language Understanding** app with the following settings:
+    - **Choose project type**: *Conversation project*
+    - **Name**: HomeAutomation 
+        - Please use this exact name
     - **Description**: Simple home automation
-    - **Prediction resource**: *Your Language Understanding prediction resource*
-3. If a panel with tips for creating an effective Language Understanding app is displayed, close it.
+    - **Utterances primary language**: English
+    - **Enable multiple languages in project**: *Do not select*
+
+3. On the *Review and finish* page, click **Create**. 
 
 ### Create intents and entities
 
 An *intent* is an action you want to perform - for example, you might want to switch a light on, or turn a fan off. In this case, you'll define two intents: one to switch a device on, and another to switch a device off. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
-1. In the pane on the left, ensure that **Intents** is selected Then click **Create**, and add an intent with the name **switch_on** (in lower-case) and click **Done**.
-2. Under the **Examples** heading and the **Example user input** subheading, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
-3. In the *turn the light on* utterance, select the word "light". Then in the list that appears, in the *Enter an entity name* box type **device** (in lower-case) and select ***device* Create new entity**, as shown here:
-
-    ![The work "Light" is selected and a menu provides the option to search for or create an entity](../media/create-intent.png)
-
-4. In the **Create an Entity** dialog box that is displayed, create a **machine learned** entity named **device*.
-
-    ![Create an Machine learned entity named device ](../media/create-entity.png)
-
-5. Back in the page for the **switch_on** intent, create a second utterance with the phrase ***switch on the fan***. Then select the word "fan" and assign it to the **device** entity you created previously.
-6. In the pane on the left, click **Intents** and verify that your **switch_on** intent is listed along with the default **None** intent, Then click **Create** and add a new intent with the name **switch_off** (in lower-case).
-7. In the page for the **switch_off** intent, add the utterance ***turn the light off*** and assign the word "light" to the **device** entity.
+1. In the **Build schema** pane on the left, ensure that **Intents** is selected Then click **Add**, and add an intent with the name **switch_on** (in lower-case) and click **Add intent**.
+2. Click the **switch_on** intent. It will take you to the **Tag utterances** page. Next to the **switch_on** intent, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
+3. On the **Tagging** pane on the right hand side of the screen, select **Add entity** and type **device** (in lower-case) and select **Done**. 
+4. In the *turn the light on* utterance, highlight the word "light". Then in the list that appears, in the *Search for an entity* box select **device**. 
+5. Now create a second utterance for the **switch_on** intent. Type the phrase ***switch on the fan*** next to the **switch_on** intent. Then select the word "fan" and assign it to the **device** entity you created previously.
+6. In the pane on the left, click **Build schema** and verify that your **switch_on** intent is listed. Then click **Add** and add a new intent with the name **switch_off** (in lower-case).
+7. Click on the **switch_off** intent. It will take you to the **Tag utterances** page. Next to the **switch_off** intent, add the utterance ***turn the light off*** and assign the word "light" to the **device** entity.
 8. Add a second utterance to the **switch_off** intent, with the utterance ***switch off the fan***. Then connect the word "fan" to the **device** entity.
 
-### Train and Test the Language Model
+### Train and Test the Conversational Language Model
 
-Now you're ready to use the intents and entities you have defined to train the language model for your app.
+Now you're ready to use the intents and entities you have defined to train the conversational language model for your app.
 
-1. At the top of the Language Understanding page for your app, click **Train** to train the language model
-2. When the model is trained, click **Test**, and use the test pane to view the predicted intent for the following phrases, noting the predicted intent and *inspecting* the details to identify predicted ML entities.
-    * *switch the light on*
-    * *turn off the fan*
-    * *put the light on*
-    * *put the fan off*
-3. Close the Test pane.
+1. At the left of the Conversational Language Understanding page for your app, select **Train model**. Use the following settings: 
+    - **Train a new model**: *Selected and choose a model name*
+    - **Run evaluation with training**: *Enabled evaluation*
+    - Click **Train** at the bottom of the page. 
+2. When the model is trained, click **Test model** on the left hand side of the page, and use the test pane to view the predicted intent for the following phrases, noting the predicted intent: 
+- *switch the light on*
+- *turn off the fan*
+- *put the light on*
+- *put the fan off*
 
-### Publish the Model and Configure Endpoints
+### Deploy the Model and Configure Endpoints
 
 To use your trained model in a client application, you must publish it as an endpoint to which the client applications can send new utterances; from which intents and entities will be predicted.
 
-1. At the top of the Language Understanding page for your app, click **Publish**. Then select **Production slot** and click **Done**.
-2. After the model has been published, at the top of the Language Understanding page for your app, click **Manage**. Then on the **Settings** tab, note the **Application ID** for your app. You will need this value later.
-3. On the **Azure Resources** tab, note the **Primary key** and **Endpoint URL** for your prediction resource. You will also need these later.
+1. On the left hand side of the Conversational Language Understanding page for your app, click **Deploy model**.
+2. Select your model name and click **Deploy Model**.
 
 ## Run Cloud Shell 
 
-To test the capabilities of the Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
+Now let's try out your deployed model. To do so, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
 1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
 
@@ -95,7 +94,7 @@ To test the capabilities of the Language Understanding service, we'll use a simp
 
 ## Configure and run a client application
 
-Now that you have a custom model, you can run a simple client application that uses the Language Understanding service.
+Now let's open and edit a pre-written script which will run the client application. 
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -113,16 +112,13 @@ Now that you have a custom model, you can run a simple client application that u
  
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
-3. In the **Files** pane on the left, expand **ai-900** and select **understand.ps1**. This file contains some code that uses your Language Understanding model, as shown here:
+3. In the **Files** pane on the left, expand **ai-900** and select **home-devices.ps1**. This file contains some code that uses your Conversational Language Understanding model. 
 
-    ![The editor containing code to use a Language Understanding app](../media/understand-code.png)
+4. Don't worry too much about the details of the code, the important thing is that it needs the key and endpoint from your Language resource. Copy these from your Language resource's **Keys and Endpoint** page in the Azure portal and paste them into the code editor, replacing the **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the application ID, key, and endpoint URL for your published language model. Copy these from the **Manage** page in th Language Understanding portal from the Azure portal and paste them into the code editor, replacing the **YOUR_APP_ID**, **YOUR_PRIMARY_KEY** and **YOUR_ENDPOINT_URL** placeholder values respectively.
-
-    After pasting the app ID, key, and endpoint values, the first lines of code should look similar to this:
+    After pasting the key and endpoint values, the first lines of code should look similar to this:
 
     ```PowerShell
-    $appId="abcde"
     $key = "1a2b3c4d5e6f7g8h9i0j...."
     $endpointUrl="https..."
 
@@ -133,14 +129,14 @@ Now that you have a custom model, you can run a simple client application that u
 
     ```
     cd ai-900
-    ./understand.ps1 "Turn on the light"
-    ```
+    ./home-devices.ps1 "Turn on the light"
+    ``` 
 
 7. Review the results. The app should have predicted that the intended action is to switch on the light.
 8. Now try another command:
 
     ```
-    ./understand.ps1 "Switch the fan off"
+    ./home-devices.ps1 "Switch the fan off"
     ```
 
 9. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
@@ -149,5 +145,5 @@ Now that you have a custom model, you can run a simple client application that u
 
 ## Learn more
 
-This simple app shows only some of the capabilities of the Language Understanding service. To learn more about what you can do with this service, see the [Language Understanding page](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service//).
+This simple app shows only some of the capabilities of the Conversational Language Understanding service. To learn more about what you can do with this service, see the [Conversational Language Understanding page](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
