@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginner-python-create-run-program/main/exercises/exercise-input.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/create-run-program/exercise-print.ipynb
