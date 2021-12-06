@@ -1,10 +1,10 @@
 In this module, you learned how to:
 
- -  Manage compute capacity for Azure Stack Hub.
- -  Manage partitioned GPUs in Azure Stack Hub.
- -  Add nodes in Azure Stack Hub.
- -  Manage storage capacity for Azure Stack Hub.
- -  Add IP pools in Azure Stack Hub.
+ -  Manage compute capacity for Azure Stack Hub. 
+ -  Manage partitioned GPUs in Azure Stack Hub. 
+ -  Add nodes in Azure Stack Hub. 
+ -  Manage storage capacity for Azure Stack Hub. 
+ -  Add IP pools in Azure Stack Hub. 
 
 ## Learn more
 
