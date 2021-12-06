@@ -30,7 +30,7 @@ roles:
   - student
   - technology-manager
 products:
-  - nat
+  - azure-virtual-network
 units:
 - learn.azure.intro-to-azure-nat-gateway.1-introduction
 - learn.azure.intro-to-azure-nat-gateway.2-what-azure-virtual-network-nat
