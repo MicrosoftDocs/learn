@@ -548,8 +548,7 @@
                 "exclude": [
                     "**/includes/**",
                     "**/design/**",
-                    "**/resources/**",
-                    "**/notebooks/**"
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
