@@ -1,4 +1,4 @@
-To round out your understanding of offerings on the Azure data platform, consider Azure Databricks, Data Factory, and Data Catalog.
+To round out your understanding of offerings on the Azure data platform, consider Azure Databricks, Data Factory, and Azure Purview.
 
 ## Databricks
 
@@ -6,7 +6,7 @@ Databricks is a serverless platform that's optimized for Azure. It provides one-
 
 Databricks adds capabilities to Apache Spark, including fully managed Spark clusters and an interactive workspace. You can use REST APIs to program clusters.
 
-In Databricks notebooks you'll use familiar programming tools such as R, Python, Scala, and SQL. Role-based security in Azure Active Directory and Databricks provides enterprise-grade security.
+In Databricks notebooks, you'll use familiar programming tools such as R, Python, Scala, and SQL. Role-based security in Azure Active Directory and Databricks provides enterprise-grade security.
 
 ## Data Factory
 
