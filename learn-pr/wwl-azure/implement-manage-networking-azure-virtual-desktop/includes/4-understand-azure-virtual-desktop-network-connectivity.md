@@ -4,7 +4,7 @@ The connection data flow for Azure Virtual Desktop starts with a DNS lookup for 
 
 The following image shows the five-step connection process for Azure Virtual Desktop running in Azure.
 
-:::image type="content" source="../media/windows-virtual-desktop-sign-on-flow-f951e564.png"  alt-text="Image shows the five-step connection process for Azure Virtual Desktop running in Azure.":::
+:::image type="content" source="../media/windows-virtual-desktop-sign-on-flow-f951e564.png" alt-text="Image showing the five-step connection process for Azure Virtual Desktop running in Azure.":::
 
 
 1.  **When authenticated in Azure Active Directory, a token is returned to the Remote Desktop Services client.**
