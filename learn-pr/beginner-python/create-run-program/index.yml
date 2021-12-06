@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-language
 title: Write your first Python program
 summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and finally, type conversion.
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
   - Create variables to store data.
   - Distinguish between different data types.
   - Leverage type conversion to convert between data types.
-iconUrl: /learn/achievements/python-first.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
