@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-language
 durationInMinutes: 2
 content: |
   [!include[](includes/5-exercise-manage-project-file.md)]
