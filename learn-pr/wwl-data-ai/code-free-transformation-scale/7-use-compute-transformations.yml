@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-compute-transformations
-title: Exercise:  Use compute transformations within Azure Data Factory
+title: Exercise - Use compute transformations within Azure Data Factory
 metadata:
-  title: Exercise:  Use compute transformations within Azure Data Factory
-  description: "Exercise:  Use compute transformations within Azure Data Factory"
+  title: Exercise - Use compute transformations within Azure Data Factory
+  description: "Exercise - Use compute transformations within Azure Data Factory"
   ms.date: 10/22/2021
   author: wwlpublish
   ms.author: chtestao
