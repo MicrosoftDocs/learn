@@ -1,6 +1,6 @@
 Tailwind Traders has several requirements to meet for their production network environment. It is important you select the right networking solutions to meet all of the requirements. Here are the specific requirements.
 
-- Web application that is not internet facing. They need to load balance incoming traffic to the web application, but it cannot but internet facing. 
+- Web application that isn't internet facing. They need to load balance incoming traffic to the web application, but it can't be internet facing. 
 
 - Network security. Filter HTTP(S) traffic from Azure to on premises. They also need to filter traffic outbound to the internet 
 
