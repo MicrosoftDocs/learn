@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-strings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about Python string methods and formatting.
+  ms.date: 12/02/2021
+  author: alfredodeza
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Are strings immutable?"
+    choices:
+    - content: "No, because they can be modified."
+      isCorrect: false
+      explanation: "Strings are immutable. However, you can create new strings that are modified."
+    - content: "Yes, because one can't modify them."
+      isCorrect: true
+      explanation: "Correct! Strings are immutable."
+    - content: "No, because one can split them."
+      isCorrect: false
+      explanation: "Although you can split strings, it doesn't modify the original (immutable) string."
+  - content: "What types of quotes can be used with strings?"
+    choices:
+    - content: "Single, double, and triple quotes."
+      isCorrect: true
+      explanation: "Correct! All three options can be used with strings."
+    - content: "Single and double quotes."
+      isCorrect: false
+      explanation: "Although single and double quotes can be used, one can also use triple quotes to surround a string."
+    - content: "Only double quotes."
+      isCorrect: false
+      explanation: "Aside from double quotes, one can also use single and triple quotes to surround a string."
+  - content: "What is the right string method call to separate a string on every newline?"
+    choices:
+    - content: "The method `.separate('\n')` will separate a string on every newline."
+      isCorrect: false
+      explanation: "The `.separate()` method does not exist as part of the string object."
+    - content: "The method `.newlines()` will separate a string on every newline."
+      isCorrect: false
+      explanation: "The `.newlines()` method does not exist as part of the string object."
+    - content: "The `.split('\n')` method will separate a string on every newline."
+      isCorrect: true
+      explanation: "Correct! The `.split('\n')` method, with the newline character, will separate a string on every newline."
+  - content: "What are two string methods you can use to check whether a word exists in a string?"
+    choices:
+    - content: "You can use `.find()` and `.count()` to verify whether a word exists in a string."
+      isCorrect: true
+      explanation: "Correct! You can use those two methods to verify existence in a string."
+    - content: "You can use `.search()` and `.count()` to verify whether a word exists in a string."
+      isCorrect: false
+      explanation: "Although `.count()` is a valid method for searching, `.search()` is not part of the string object."
+    - content: "You can use `.check()` and `.search()` to verify whether a word exists in a string."
+      isCorrect: false
+      explanation: "Neither `.check()` nor `.search()` exist as a method of the string object."
+  - content: "What is one of the problems you might find when using `%` for formatting?"
+    choices:
+    - content: "When many replacements are needed, it can make a program slower."
+      isCorrect: false
+      explanation: "Although `%` formatting is not the fastest, it isn't a result of the replacements."
+    - content: "When many replacements are needed, it can make the code harder to read."
+      isCorrect: true
+      explanation: "Correct! Using `%` can become verbose with many replacements."
+    - content: "It isn't possible to replace more than nine variables."
+      isCorrect: false
+      explanation: "It is possible to replace more than nine variables using the `%` formatting method."
+  - content: "How can a number be rounded down when using f-strings?"
+    choices:
+    - content: "Using the `.format()` method to round down."
+      isCorrect: false
+      explanation: "You can't use `.format()` in f-strings because it isn't part of an f-string object."
+    - content: "Using the `round()` function inside the string, within the curly brackets."
+      isCorrect: true
+      explanation: "Correct! Code execution is allowed within an f-string."
+    - content: "It isn't possible to replace more than nine variables."
+      isCorrect: false
+      explanation: "It is possible to replace more than nine variables using the `%` formatting method."
