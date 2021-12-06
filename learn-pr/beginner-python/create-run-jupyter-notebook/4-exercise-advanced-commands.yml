@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-language
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-advanced-commands.md)]
