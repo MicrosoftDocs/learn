@@ -78,7 +78,7 @@ The following information is required as inputs for the automation parameters:
     FQDN of the target Active Directory forest that you want to integrate with.
   :::column-end:::
   :::column:::
-    [Contoso.com](http://contoso.com/)
+    *Contoso.com*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,7 +109,7 @@ Optionally, you can create an account for the Graph service in the existing Acti
 
 1.  In the existing Active Directory, create the following user account (recommendation):
 
- -  **Username**: graphservice
+ -  **Username**: *graphservice*
  -  **Password**: Use a strong password and configure the password to never expire.
 
 ### Trigger automation to configure graph
@@ -118,8 +118,6 @@ For this procedure, use a computer in your datacenter network that can communica
 
 1.  Open an elevated Windows PowerShell session (run as administrator), and connect to the IP address of the privileged endpoint. Use the credentials for **CloudAdmin** to authenticate.
 
-PowerShell
-
 ```
 $creds = Get-Credential
 $pep = New-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName PrivilegedEndpoint -Credential $creds
@@ -127,8 +125,6 @@ $pep = New-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName Privi
 ```
 
 2.  Now that you have a session with the privileged endpoint, run the following command:
-
-PowerShell
 
 ```
 $i = @(
@@ -146,32 +142,6 @@ Invoke-Command -Session $pep -ScriptBlock {Register-DirectoryService -customCata
 When prompted, specify the credential for the user account that you want to use for the Graph service (such as graphservice). The input for the Register-DirectoryService cmdlet must be the forest name / root domain in the forest rather than any other domain in the forest.
 
 3.  The **Register-DirectoryService** cmdlet has optional parameters that you can use in certain scenarios where the existing Active Directory validation fails. When this cmdlet is executed, it validates that the provided domain is the root domain, a global catalog server can be reached, and that the provided account is granted read access.
-
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    `SkipRootDomainValidation`
-  :::column-end:::
-  :::column:::
-    Specifies that a child domain must be used instead of the recommended root domain.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    `ValidateParameters`
-  :::column-end:::
-  :::column:::
-    Bypasses all validation checks.
-  :::column-end:::
-:::row-end:::
-
 
 ### Graph protocols and ports
 

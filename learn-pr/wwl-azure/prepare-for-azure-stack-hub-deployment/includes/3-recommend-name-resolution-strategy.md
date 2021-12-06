@@ -1,4 +1,4 @@
-To be able to access Azure Stack Hub endpoints such as portal, adminportal, management, and adminmanagement from outside Azure Stack Hub, you need to integrate the Azure Stack Hub DNS services with the DNS servers that host the DNS zones you want to use in Azure Stack Hub.
+To be able to access Azure Stack Hub endpoints from outside Azure Stack Hub, you need to integrate the Azure Stack Hub DNS services with the DNS servers that host the DNS zones you want to use in Azure Stack Hub.
 
 ## Azure Stack Hub DNS namespace
 
@@ -84,9 +84,9 @@ As such, examples of some of the endpoints for this deployment would look like t
 
 To use this example DNS namespace for an Azure Stack Hub deployment, the following conditions are required:
 
- -  The zone [fabrikam.com](http://fabrikam.com/) is registered either with a domain registrar, an internal corporate DNS server, or both, depending on your name resolution requirements.
- -  The child domain cloud.fabrikam.com exists under the zone [fabrikam.com](http://fabrikam.com/).
- -  The DNS servers that host the zones [fabrikam.com](http://fabrikam.com/) and cloud.fabrikam.com can be reached from the Azure Stack Hub deployment.
+ -  The zone fabrikam.com is registered either with a domain registrar, an internal corporate DNS server, or both, depending on your name resolution requirements.
+ -  The child domain cloud.fabrikam.com exists under the zone fabrikam.com.
+ -  The DNS servers that host the zones fabrikam.com and cloud.fabrikam.com can be reached from the Azure Stack Hub deployment.
 
 To be able to resolve DNS names for Azure Stack Hub endpoints and instances from outside Azure Stack Hub, you need to integrate the DNS servers that host the external DNS zone for Azure Stack Hub with the DNS servers that host the parent zone you want to use.
 
@@ -130,8 +130,6 @@ For this procedure, use a computer in your datacenter network that can communica
 
 1.  Open an elevated Windows PowerShell session (run as administrator) and connect to the IP address of the privileged endpoint. Use the credentials for CloudAdmin authentication.
 
-PowerShell
-
 ```
 $cred=Get-Credential
 Enter-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName PrivilegedEndpoint -Credential $cred
@@ -139,8 +137,6 @@ Enter-PSSession -ComputerName <IP Address of ERCS> -ConfigurationName Privileged
 ```
 
 2.  After you connect to the privileged endpoint, run the following PowerShell command. Substitute the sample values provided with your domain name and IP addresses of the DNS servers you want to use.
-
-PowerShell
 
 ```
 Register-CustomDnsServer -CustomDomainName "contoso.com" -CustomDnsIPAddresses "192.168.1.1","192.168.1.2"

@@ -18,8 +18,6 @@ Download the latest version of the Azure Stack Hub Readiness Checker tool (AzsRe
 
 1.  On a computer that meets the prerequisites, open an elevated PowerShell command prompt, and then run the following command to install **AzsReadinessChecker**:
 
-PowerShell
-
 ```
 Install-Module -Name Az.BootStrapper -Force -AllowPrerelease
 Install-AzProfile -Profile 2019-03-01-hybrid -Force
@@ -29,8 +27,6 @@ Install-Module -Name Microsoft.AzureStack.ReadinessChecker -AllowPrerelease
 
 2.  From the PowerShell prompt, run the following command. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
 
-PowerShell
-
 ```
 Connect-AzAccount -tenant contoso.onmicrosoft.com
 
@@ -38,16 +34,12 @@ Connect-AzAccount -tenant contoso.onmicrosoft.com
 
 3.  From the PowerShell prompt, run the following command to start validation of your Azure AD. Replace contoso.onmicrosoft.com with your Azure AD tenant name:
 
-PowerShell
-
 ```
 Invoke-AzsAzureIdentityValidation -AADDirectoryTenantName contoso.onmicrosoft.com
 
 ```
 
 4.  After the tool runs, review the output. Confirm the status is **OK** for installation requirements. A successful validation appears like the following example:
-
-PowerShell
 
 ```
 Invoke-AzsAzureIdentityValidation v1.2005.1269 started.

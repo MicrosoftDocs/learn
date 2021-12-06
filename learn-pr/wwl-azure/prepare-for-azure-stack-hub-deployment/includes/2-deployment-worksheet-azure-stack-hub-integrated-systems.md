@@ -5,7 +5,8 @@ The information required by the worksheet covers networking, security, and ident
 > [!NOTE]
 > For more information on how to complete the deployment worksheet tool, see [Datacenter integration planning considerations for Azure Stack Hub integrated systems](/azure-stack/operator/azure-stack-datacenter-integration?view=azs-2102).
 
-## :::image type="content" source="../media/azure-stack-deployment-worksheet-e845d58c.png" alt-text="View of datacenter integration planning."::: 
+:::image type="content" source="../media/azure-stack-deployment-worksheet-e845d58c.png" alt-text="View of datacenter integration planning.":::
+
 
 ## Installing the Windows PowerShell module
 
@@ -24,15 +25,14 @@ If you receive a message about installing from an untrusted repository, press **
 
 To launch and use the deployment worksheet on a computer on which you've installed the deployment worksheet PowerShell module, do the following steps:
 
-1. Start Windows PowerShell (don't use the PowerShell ISE, as unexpected results can occur). It's not necessary to run PowerShell as an administrator.
-
-2. Import the AzS.Deployment.Worksheet PowerShell module:
+1.  Start Windows PowerShell (don't use the PowerShell ISE, as unexpected results can occur). It's not necessary to run PowerShell as an administrator.
+2.  Import the AzS.Deployment.Worksheet PowerShell module:
 
 ```powershell
 Import-Module AzS.Deployment.Worksheet
 ```
 
-3. Once the module is imported, launch the deployment worksheet:
+3.  Once the module is imported, launch the deployment worksheet:
 
 ```powershell
 Start-DeploymentWorksheet
