@@ -4,7 +4,8 @@ One common challenge when writing code is performing a task an unknown number of
 
 A `while` loop performs an operation **while** a condition is true. You could look to see if there's another line in a file, a flag has been set, or something has changed to indicate you can stop performing the operation.
 
-> [!IMPORTANT] The most important thing to remember about `while` loops is to ensure the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
+> [!IMPORTANT]
+> The most important thing to remember about `while` loops is to ensure the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
 
 The syntax of a while loop is similar to that of an `if` statement. You provide the condition, then the code you wish to run while the condition is true. It has 3 important parts:
 
@@ -28,7 +29,8 @@ while user_input.lower() != 'done':
 
 Notice we are using `input` to prompt the user. Each time the user enters a new value they are changing the condition, meaning the `while` loop will exit once the user enters the word **done**.
 
-> [!NOTE] We are using `lower` to convert the input to lower case to allow for a case-insensitive comparison.
+> [!NOTE]
+> We are using `lower` to convert the input to lower case to allow for a case-insensitive comparison.
 
 We can use the newly entered string as we would any other string captured with `input`. If we wanted to add it to a list, we could use code which resembles the following:
 
@@ -50,4 +52,5 @@ while user_input.lower() != 'done':
 
 Notice the `if` statement inside the `while` loop. This is testing for a string value inside `user_input`. If it's the first time the `while` loop is running there will be no value, so we won't store it in `inputs`. After that first time `user_input` will always have the value the user just entered. Because `while` is testing to ensure it doesn't equal to `'done'` (the word the user will use to exit), we know the current value is one we can add to the list.
 
-> [!NOTE] You may be familiar with other programming languages which support a `do` loop which allows you to perform a test at the bottom of the loop. Python does not provide a `do` loop.
+> [!NOTE]
+> You may be familiar with other programming languages which support a `do` loop which allows you to perform a test at the bottom of the loop. Python does not provide a `do` loop.

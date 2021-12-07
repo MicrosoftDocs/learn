@@ -21,8 +21,8 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Experience working with lists in Python
   - Experience modifying and running code in Jupyter notebooks
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - 100
+levels: 
+  - beginner
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
   - student
   - developer

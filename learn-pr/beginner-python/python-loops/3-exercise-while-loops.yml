@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 sandbox: true
-notebook: notebooks/3-exercise-while-loops.md
+notebook: notebooks/3-exercise-while-loops.ipynb

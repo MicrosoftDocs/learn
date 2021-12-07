@@ -16,7 +16,8 @@ print("The third planet is ", planets[2])
 
 You can also determine the number of items in a list by using `len`. So you could use a `while` loop and a counter to loop or iterate over each item in the list. Because this is such a common operation, Python provides `for` loops which can be used to iterate over lists.
 
-> [!NOTE] Python has many types that can be looped over. These types are known as **iterables**.
+> [!NOTE]
+> Python has many types that can be looped over. These types are known as **iterables**.
 
 Python lists are iterable, and can be used with a `for` loop. A `for` loop is used with iterables where you will loop a known number of times - once for each item in the iterable.
 
@@ -52,4 +53,5 @@ for number in countdown:
 print("Blast off!! 🚀")
 ```
 
-> [!NOTE] Most Python code uses 4 spaces as the unit of whitespace. To save pressing space 4 times, most editors have a shortcut for the **Tab** key to insert 4 spaces.
+> [!NOTE]
+> Most Python code uses 4 spaces as the unit of whitespace. To save pressing space 4 times, most editors have a shortcut for the **Tab** key to insert 4 spaces.
