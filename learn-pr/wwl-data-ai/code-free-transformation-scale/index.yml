@@ -14,11 +14,11 @@ abstract: |
   * Introduction
   * Explain Data Factory transformation methods
   * Describe Data Factory transformation types
-  * Use Data Factory mapping data flow
+  * Exercise: Author a Data Factory mapping data flow
   * Debug mapping data flow
-  * Use Data Factory wrangling data
-  * Use compute transformations within Data Factory
-  * Integrate SQL Server Integration Services packages within Data Factory
+  * Exercise: Use Data Factory wrangling data
+  * Exercise: Use compute transformations within Data Factory
+  * Exercise: Integrate SQL Server Integration Services packages within Data Factory
   * Knowledge check
   * Summary
 prerequisites: |

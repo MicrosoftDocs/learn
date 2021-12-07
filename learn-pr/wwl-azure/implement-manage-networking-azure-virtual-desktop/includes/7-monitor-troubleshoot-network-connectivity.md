@@ -10,7 +10,7 @@ Endpoints can be another virtual machine (VM), a fully qualified domain name (FQ
 
 If an endpoint becomes unreachable, Connection Monitor informs you. Potential issues are DNS name resolution problems, CPU, memory, or firewall within the operating system of a virtual machine.
 
-:::image type="content" source="../media/connection-manager-endpoint-83032ed1.png" alt-text="Screenshot of Connection Manager endpoints.":::
+:::image type="content" source="../media/connection-manager-endpoint-83032ed1.png" alt-text="Image of Connection Monitor for endpoint troubleshooting.":::
 
 
 Connection monitor also provides the minimum, average, and maximum latency observed over time. After learning the latency for a connection, you may find that you're able to decrease the latency by moving your Azure resources to a different Azure region.
