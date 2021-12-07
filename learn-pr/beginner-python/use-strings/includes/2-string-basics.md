@@ -85,7 +85,6 @@ Facts about the Moon:
 You can achieve the same result using triple quotes:
 
 ```python
->>>
 >>> multiline = """Facts about the Moon:
 ...  There is no atmosphere.
 ...  There is no sound."""

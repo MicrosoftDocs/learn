@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 5
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-strings/exercise-format-strings.ipynb
+notebook: notebooks/6-exercise-format-strings.ipynb

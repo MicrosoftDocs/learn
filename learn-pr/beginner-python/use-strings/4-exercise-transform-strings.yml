@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 5
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-strings/exercise-transform-strings.ipynb
+notebook: notebooks/4-exercise-transform-strings.ipynb
