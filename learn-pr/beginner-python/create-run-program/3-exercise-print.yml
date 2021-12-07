@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/create-run-program/exercise-print.ipynb
+notebook: notebooks/3-exercise-print.ipynb

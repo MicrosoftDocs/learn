@@ -17,6 +17,8 @@ abstract: |
   - Create variables to store data.
   - Distinguish between different data types.
   - Leverage type conversion to convert between data types.
+prerequisites: |
+  - Familiarity with the concept of programming.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -25,8 +27,6 @@ roles:
   - student
 products:
   - vs
-prerequisites: |
-  - Familiarity with the concept of programming
 units:
   - learn.beginner-python.create-run-program.introduction
   - learn.beginner-python.create-run-program.print
