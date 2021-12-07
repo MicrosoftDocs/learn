@@ -37,9 +37,7 @@ Tailwind Traders has two Azure-based apps (App1 and App2). Each app has a web se
 
 :::image type="content" source="../media/group-type.png" alt-text="Separate resource groups for database and for web apps.":::
 
-![Graphical user interface
 
-Description automatically generated with medium confidence](../media/final-review-design-governance-07.png)
 
 - **Consider group by app**. Group by app is appropriate when all the resources have the same policies and life cycle. This method could also be applied to test or prototype environments. For Tailwind Traders, App1 and App2 would have separate resource groups. Each group would have all the resources for that application. 
 
