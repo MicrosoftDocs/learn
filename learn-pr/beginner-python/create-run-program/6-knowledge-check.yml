@@ -44,7 +44,7 @@ quiz:
         - content: It will give an error.
           isCorrect: true
           explanation: Correct. It will show the error message "cannot concatenate 'str' and 'int' objects".
-        - content: I would become "12".
+        - content: It would become "12".
           isCorrect: false
           explanation: Incorrect. It would crash. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings "1" + "2".
 
