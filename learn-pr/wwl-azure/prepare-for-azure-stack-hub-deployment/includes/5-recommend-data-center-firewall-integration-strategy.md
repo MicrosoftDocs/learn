@@ -39,5 +39,5 @@ In an enterprise intranet or perimeter deployment, Azure Stack Hub is deployed o
  -  **Perimeter zone**. The perimeter network is where external or internet-facing apps like Web servers are typically deployed. It's monitored by a firewall to avoid attacks like DDoS and intrusion (hacking) while still allowing specified inbound traffic from the internet. Only the external network public VIP pool of Azure Stack Hub should reside in the DMZ zone.
  -  **Unsecure zone**. This is the external network, the internet. It **is not** recommended to deploy Azure Stack Hub in the unsecure zone.
     
-    :::image type="content" source="../media/recommend-firewall-2-f62ad6a0.png" alt-text="Image showing normalized relational tables.":::
+    :::image type="content" source="../media/recommend-firewall-2-f62ad6a0.png" alt-text="Image showing datacenter and firewall protection.":::
     
