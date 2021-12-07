@@ -584,6 +584,18 @@
                 "dest": "modules"
             },
             {
+                "src": "beginner-python",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
                 "files": [
                     "**/*.gif",
