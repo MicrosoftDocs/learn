@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labId: 99867
 labModal: true
 durationInMinutes: 30
