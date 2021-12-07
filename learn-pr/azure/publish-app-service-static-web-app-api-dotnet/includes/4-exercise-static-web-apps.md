@@ -22,7 +22,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
    | Subscription  | Concierge Subscription               |
    | Resource Group | <rgn>[Sandbox resource group name]</rgn> |
    | **Static Web App details** |
-   | Name  | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
+   | Name  | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `-`. |
    | **Hosting plan** |
    | Pricing tier for your application | Select **Free** |
    | **Azure Functions and staging details** |
