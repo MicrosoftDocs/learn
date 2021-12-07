@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-blueprints.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for intro to Azure Blueprints."
+  ms.date: 6/30/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of the following statements accurately describes Azure Blueprints?"
+    choices:
+    - content: "A configuration management tool to deploy Azure Resources."
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints isn't a configuration management tool."
+    - content: "Azure Blueprints are a declarative way to orchestrate the deployment of specific artifacts on Azure."
+      isCorrect: true
+      explanation: "Correct: This is the statement which best describes Azure Blueprints"
+    - content: "Azure Blueprints is a version control tool for your environment."
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints isn't a version control tool."
+  - content: "What are the four artifacts which can be deployed using Azure Blueprints?"
+    choices:
+    - content: "Role Assignments, Policy Assignments, ARM Templates, Resource Groups"
+      isCorrect: true
+      explanation: "Correct: Those are four artifacts which can be deployed using Azure Blueprints."
+    - content: "Network Security Groups, Virtual Machines, Virtual Networks, SQL Databases"
+      isCorrect: false
+      explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
+    - content: "Azure Kubernetes Services, Azure App Services, Cosmos DB, Azure Container Instances"
+      isCorrect: false
+      explanation: "Incorrect: Those resources can be deployed only through ARM Templates on Azure Blueprints."
+  - content: "Azure Blueprints are capable of:"
+    choices:
+    - content: "Providing recommendations for Azure resources"
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints can't provide any recommendation."
+    - content: "Block malicious traffic against your Azure environment"
+      isCorrect: false
+      explanation: "Incorrect: Azure Blueprints isn't a networking/firewall tool."
+    - content: "Assign a blueprint to a management group."
+      isCorrect: true
+      explanation: "Correct: This is one of the Azure Blueprints capabilities."
