@@ -3,13 +3,13 @@ uid: learn.azure.plan-deploy-sdn-infrastructure
 metadata:
   moduleType: standard
   title: Plan for and deploy SDN infrastructure on Azure Stack HCI
-  description: This module explores the architecture and core capabilities of SDN on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
+  description: This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
   ms.date: 11/23/2021
   author: LBN-commits
   ms.author: v-lanai
   ms.topic: interactive-tutorial
 title: Plan for and deploy SDN infrastructure on Azure Stack HCI
-summary: "Planning for and deploying SDN infrastructure on Azure Stack HCI"
+summary: "This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe SDN on Azure Stack HCI.
@@ -17,7 +17,7 @@ abstract: |
   - Deploy SDN infrastructure on Azure Stack HCI.
 prerequisites: |
   - Good understanding of networking technologies and their implementation on the Windows operating system platform
-  - General familiarity of software defined networking concepts
+  - General familiarity of SDN concepts
   - Experience in implementing Azure Stack HCI 
 iconUrl: /learn/achievements/plan-deploy-sdn-infrastructure.svg
 levels:
