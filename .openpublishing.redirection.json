@@ -10034,6 +10034,211 @@
       "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-azure-digital-twins/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/2-set-up.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/4-set-up-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/5-set-up-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/7-set-up-logic-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/3-set-up-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/6-use-rest-apis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/3-benefits.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/6-consortium.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/2-definition.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/5-explore.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/4-use-cases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/3-exercise-build-simulate-chocolate-factory-twin.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/5-exercise-create-configure-deploy-azure-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/6-exercise-visualize-data-time-series-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/2-scenario.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
     }
   ]
 }
