@@ -1,3 +1,5 @@
+** OLD MODULE -- WIP **
+
 EF Core integrates automatically with the logging mechanisms of ASP.NET Core. Since ASP.NET Core apps emit logs as console output by default, the text file *:::no-loc text="ContosoPets.Api.log":::* contains the EF Core log output. EF Core masks parameter values in the generated SQL appearing in the logs.
 
 ```console
