@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-language-model-with-luis.get-started
-title: Getting started with Language Understanding
+title: Getting started with Conversational Language Understanding
 metadata:
-  title: Getting started with Language Understanding
-  description: "Getting started with Language Understanding"
-  ms.date: 11/08/2021
+  title: Getting started with Conversational Language Understanding
+  description: "Getting started with Conversational Language Understanding"
+  ms.date: 12/06/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
