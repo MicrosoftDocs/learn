@@ -757,3 +757,28 @@ achievements:
   title: Set up rules and take action on telemetry data in Azure IoT Central
   summary: Set up rules and take action on telemetry data in Azure IoT Central
   iconUrl: /learn/achievements/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central.svg
+- uid: learn.develop-azure-digital-twins.trophy
+  type: trophy
+  title: Develop with Azure Digital Twins
+  summary: Develop with Azure Digital Twins
+  iconUrl: /learn/achievements/develop-azure-digital-twins.svg
+- uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.badge
+  type: badge
+  title: Build an Azure Digital Twins graph for a chocolate factory production line
+  summary: Build an Azure Digital Twins graph for a chocolate factory production line
+  iconUrl: /learn/achievements/iot/build-azure-digital-twins-graph-for-chocolate-factory.svg
+- uid: learn.iot.connect-input-to-azure-digital-twins.badge
+  type: badge
+  title: Ingest Data into Azure Digital Twins
+  summary: Ingest Data into Azure Digital Twins
+  iconUrl: /learn/achievements/iot/connect-input-to-azure-digital-twins.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /learn/achievements/iot/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.output-from-adt-to-downstream-services.badge
+  type: badge
+  title: Output from Azure Digital Twins to downstream services
+  summary: Output from Azure Digital Twins to downstream services
+  iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
