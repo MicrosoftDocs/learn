@@ -41,19 +41,19 @@ $ExecutionContext.SessionState.LanguageMode
 
 Ensure the output returns **FullLanguageMode**. If any other language mode is returned, registration needs to be run on another machine or the language mode needs to be set to FullLanguageMode before continuing.
 
-### Install PowerShell for Azure Stack Hub.
+### Install PowerShell for Azure Stack Hub
 
 Use the latest PowerShell for Azure Stack Hub to register with Azure.
 
-### Download the Azure Stack Hub tools.
+### Download the Azure Stack Hub tools
 
 The Azure Stack Hub tools GitHub repository contains PowerShell modules that support Azure Stack Hub functionality, including registration functionality. During the registration process, you need to import and use the **RegisterWithAzure.psm1** PowerShell module (found in the Azure Stack Hub tools repository) to register your Azure Stack Hub instance with Azure.
 
-### Determine your billing model.
+### Determine your billing model
 
 A connected deployment allows Azure Stack Hub to connect to the internet, and to Azure. You can also use either Azure AD or Active Directory Federation Services (AD FS) as your identity store, and choose from two billing models: pay-as-you-use or capacity-based. You specify the billing model later, while running the registration script.
 
-### Determine your unique registration name.
+### Determine your unique registration name
 
 When you run the registration script, you must provide a unique registration name. An easy way to associate your Azure Stack Hub subscription with an Azure registration is to use your Azure Stack Hub **Cloud ID**.
 

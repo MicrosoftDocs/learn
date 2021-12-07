@@ -52,7 +52,7 @@ You need the following information from the administrator portal to renew or cha
 :::row-end:::
 
 
-### Change the subscription you use.
+### Change the subscription you use
 
 If you want to change the subscription you use, you must first run the **Remove-AzsRegistration** cmdlet, then ensure you're signed in to the correct Azure PowerShell context. Then run **Set-AzsRegistration** with any changed parameters, including &lt; billing model &gt;. While running **Remove-AzsRegistration**, you must be signed in to the subscription used during the registration and use values of the `RegistrationName` and `ResourceGroupName` parameters as shown in the administrator portal:
 
@@ -70,7 +70,7 @@ Set-AzsRegistration -PrivilegedEndpointCredential $YourCloudAdminCredential -Pri
 
 ```
 
-### Change billing model, how features are offered, or re-register your instance.
+### Change billing model, how features are offered, or re-register your instance
 
 This section applies if you want to change the billing model, how features are offered, or you want to re-register your instance. For all of these cases, you call the registration function to set the new values. You don't need to first remove the current registration. Sign in to the subscription ID shown in the administrator portal, and then rerun registration with a new `BillingModel` value while keeping the `RegistrationName` and `ResourceGroupName` parameters values same as shown in the administrator portal:
 
@@ -84,7 +84,7 @@ Set-AzsRegistration -PrivilegedEndpointCredential $YourCloudAdminCredential -Pri
 
 ```
 
-### Disable or enable usage reporting.
+### Disable or enable usage reporting
 
 For Azure Stack Hub environments that use a capacity billing model, turn off usage reporting with the **UsageReportingEnabled** parameter using either the **Set-AzsRegistration** or the **Get-AzsRegistrationToken** cmdlets. Azure Stack Hub reports usage metrics by default. Operators with capacity uses or supporting a disconnected environment need to turn off usage reporting.
 

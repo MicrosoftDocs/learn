@@ -34,7 +34,7 @@ You will need to have the Az PowerShell modules installed.
  -  Identify the username and password for an account that's an owner for the Azure subscription you'll use with Azure Stack Hub.
  -  Identify the subscription ID for the Azure subscription you'll use.
 
-### Steps to validate the Azure registration.
+### Steps to validate the Azure registration
 
 1.  Open an elevated PowerShell prompt, and then run the following command to install **AzsReadinessChecker**:
     

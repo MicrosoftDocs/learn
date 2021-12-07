@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 12/07/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
@@ -18,28 +17,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "In which the following is something should not be done while updating the registration of an Azure Stack Hub system?"
+  - content: "In which the following is not part of updating the registration for an Azure Stack Hub system?"
     choices:
-    - content: "You update the billing model"
+    - content: "Update the billing model."
       isCorrect: false
-      explanation: "That's incorrect. Updating the billing model is necessary when you update the registration of an Azure Stack Hub system."
-    - content: "You add or remove nodes for capacity-based billing"
+      explanation: "Incorrect. Updating the billing model is necessary for updating the registration of an Azure Stack Hub system."
+    - content: "Add or remove nodes for capacity-based billing."
       isCorrect: false
-      explanation: "That's incorrect. You add or remove nodes for capacity-based billing when you update the registration of an Azure Stack Hub system."
-    - content: "You renew an yearly capacity subscription"
-      isCorrect: false
-      explanation: "That's incorrect. That's incorrect. You renew the yearly capacity subscription when you update the registration of an Azure Stack Hub system."
-    - content: "You enable Azure Stack Hub for multi tenancy"
+      explanation: "Incorrect. Adding or removing nodes when updating the registration of an Azure Stack Hub system is necessary"
+    - content: "Enable Azure Stack Hub for multi tenancy."
       isCorrect: true
-      explanation: "That's correct. You do not enable Azure Stack Hub for multi tenancy. You should update the registration of an Azure Stack Hub system when you change the billing model. Or, when you add remove nodes for capacity-based billing. Or, when you renew an annual capacity subscription."
-  - content: "A Cloud Service Provider (CSP) is planning a deployment of a multi-tenant Azure Stack Hub system that will host internal company workloads and customer workloads. They want to register the system. Which type of Azure subscription should they use?"
+      explanation: "Correct. Enabling Stack Hub for multi tenancy is not part of the process for updating the registration for Azure Stack Hub."
+  - content: "A Cloud Service Provider (CSP) is planning a deployment of a multi-tenant system that will host internal company workloads and customer workloads. They want to register the system. Which Azure subscription should they use?"
     choices:
     - content: "Azure Partner Shared Services (APSS)"
       isCorrect: true
-      explanation: "That's correct. The type of Azure subscription you should use for registration is the Azure Partner Shared Services (APSS). Before registering Azure Stack Hub with Azure, you must have the subscription ID for an Azure subscription. Only EA, CSP, or CSP shared services subscriptions are supported for registration. CSPs need to decide whether to use a CSP or APSS subscription."
+      explanation: "Correct. Before registering Azure Stack Hub with Azure, they should have the subscription ID for an Azure subscription."
     - content: "Microsoft Enterprise Agreement"
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft Enterprise Agreement is a manageable volume licensing program that gives them the flexibility to buy cloud services and software licenses under one agreement."
+      explanation: "Incorrect. The Microsoft Enterprise Agreement is a volume licensing program that provides flexibility to buy cloud services and software licenses under one agreement."
     - content: "Pay-As-You-Go"
       isCorrect: false
-      explanation: "That's incorrect. Pay as you go with Azure means you pay only for what you use beyond free services amounts. No up-front commitment."
+      explanation: "Incorrect. Pay-as-you-go means you pay only for what you use beyond free services amounts."
