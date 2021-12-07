@@ -118,7 +118,7 @@ Azure Stack Hub includes both authoritative and recursive DNS servers. The recur
 
 To resolve DNS names for endpoints outside Azure Stack Hub, you need to provide DNS servers that Azure Stack Hub can use to forward DNS requests for which Azure Stack Hub isn't authoritative. For deployment, DNS servers that Azure Stack Hub forwards requests to are required in the Deployment Worksheet (in the DNS Forwarder field). Provide at least two servers in this field for fault tolerance. Without these values, Azure Stack Hub deployment fails.
 
-### Configure conditional DNS forwarding.
+### Configure conditional DNS forwarding
 
 This procedure only applies to an AD FS deployment.
 
