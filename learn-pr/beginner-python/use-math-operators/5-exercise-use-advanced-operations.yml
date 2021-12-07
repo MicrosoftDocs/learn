@@ -3,7 +3,7 @@ uid: learn.beginner-python.use-math-operators.exercise-use-advanced-operations
 title: Exercise - Convert strings to numbers and using absolute values
 metadata:
   title: Exercise - Convert strings to numbers and using absolute values
-  description: In this exercise you will use the different built-in tools in Python to convert strings to numbers and determine absolute values.
+  description: In this exercise, you will use the different built-in tools in Python to convert strings to numbers and determine absolute values.
   ms.date: 12/02/2021
   author: geektrainer
   ms.author: chnoring
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-math-operators/exercise-use-advanced-operations.ipynb
+notebook: notebooks/5-exercise-use-advanced-operations.ipynb

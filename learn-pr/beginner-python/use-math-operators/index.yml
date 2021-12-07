@@ -13,9 +13,9 @@ title: Use mathematical operations in Python
 summary: Almost every application a developer creates involves some level of math. This module will explore the core functionality in Python and arithmetic operators. You will also explore how to perform more manipulations of data and numbers. You will put this knowledge to use to create a project to determine the distance between planets.
 abstract: | 
   By the end of this module, you'll be able to:
-    - Use arithmetic operators in Python.
-    - Determine the order of operations.
-    - Convert strings to numbers.
+  - Use arithmetic operators in Python.
+  - Determine the order of operations.
+  - Convert strings to numbers.
 prerequisites: | 
   - Ability to add and run cells in a Jupyter notebook.
   - Experience with Python, including declaring variables and using `input` to read values from a user.

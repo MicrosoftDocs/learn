@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-language
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-beginning-python-path/main/modules/use-math-operators/exercise-use-operators.ipynb
+notebook: notebooks/3-exercise-use-operators.ipynb
