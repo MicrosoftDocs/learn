@@ -65,7 +65,7 @@ JOIN [Warehouse].[StockItems] sh ON s.StockItemID = sh.StockItemID
 
 ORDER BY CostPerOuterBox 
 
-OPTION(USE HINT ('QUERY_PLAN_PROFILE');
+OPTION(USE HINT ('QUERY_PLAN_PROFILE'));
 ```
 
 ## Last query plans stats
