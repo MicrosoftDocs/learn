@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 12/07/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
@@ -17,28 +18,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An Azure Stack Hub operator wants to deploy an Azure Stack Hub system using an Azure Active Directory identity provider. They acquire the certificates for the deployment, and want to make sure that the certificates meet the prerequisites for Azure Stack Hub. Which PowerShell cmdlet should they run?"
+  - content: "An Azure Stack Hub operator wants to deploy using an Azure Active Directory identity provider. They acquire the certificates and want to determine if the certificates meet the requirements for Azure Stack Hub. Which PowerShell cmdlet should they run?"
     choices:
     - content: "Invoke-AzsHubDeploymentCertificateValidation."
       isCorrect: true
-      explanation: "That's correct. To check the output and ensure that all certificates pass all tests, you run the PowerShell cmdlet Invoke-AzsHubDeploymentCertificateValidation to validate readiness."
-    - content: "Setting up your own datacenter."
+      explanation: "Correct. Run the PowerShell cmdlet Invoke-AzsHubDeploymentCertificateValidation to validate readiness."
+    - content: "Setting up their own datacenter."
       isCorrect: false
-      explanation: "That's incorrect. To validate certificates for other Azure Stack Hub services, change the value for -CertificateType in Invoke-AzsHubDBAdapterCertificateValidation."
-    - content: "Get-PfxCertificate"
+      explanation: "Incorrect. Change the value for -CertificateType in Invoke-AzsHubDBAdapterCertificateValidation to validate certificates for other Azure Stack Hub services."
+    - content: "Run Get-PfxCertificate."
       isCorrect: false
-      explanation: "That's incorrect. The Get-PfxCertificate cmdlet gets an object representing each specified PFX certificate file. A PFX file includes both the certificate and a private key."
-  - content: "While monitoring an Azure Stack Hub system, an Azure Stack Hub operator notices an alert for an external certificate that will expire. They acquire new certificates. They want to validate that the certificates are in a healthy state, and then renew the certificates. Which three actions should they perform?"
+      explanation: "Incorrect. The Get-PfxCertificate cmdlet receives an object for each PFX certificate file."
+  - content: "An Azure Stack Hub operator receives an alert for an external certificate about to expire. They acquire new certificates to validate if the certificates are in a healthy state. Which three actions should they perform?"
     choices:
     - content: "Run New-RegistrationToken cmdlet and specify UsageReportingEnabled."
       isCorrect: false
-      explanation: "That's incorrect. Running New-RegistrationToken creates a new registration token."
+      explanation: "Incorrect. Running New-RegistrationToken creates a new registration token."
     - content: "Run the Register-DirectoryService cmdlet and specify the -CustomADAdminCredential parameter."
       isCorrect: false
-      explanation: "That's incorrect. Running the Register-DirectoryService cmdlet registers customer Active Directory (Azure AD) with Graph Service."
-    - content: "Run the Test-AzureStack cmdlet and specify the -Group UpdateReadiness parameter"
-      isCorrect: false
-      explanation: "That's incorrect. You should copy the certificates to a file share that is accessible from the privileged endpoint (PEP), run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter, and run the Start-SecretRotation and specify the PfxFilePath parameter."
-    - content: "Copy the certificates to a file share that is accessible from the privileged endpoint (PEP), run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter, and run the Start-SecretRotation and specify the PfxFilePath parameter."
+      explanation: "Incorrect. Running the Register-DirectoryService cmdlet registers customer Active Directory (Azure AD) with Graph Service."
+    - content: "Copy the certificates to a file share is accessible from the privileged endpoint (PEP). The, Run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter."
       isCorrect: true
-      explanation: "That's correct. You should copy the certificates to a file share that is accessible from the privileged endpoint (PEP), run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter, and run the Start-SecretRotation and specify the PfxFilePath parameter."
+      explanation: "Correct. They should copy the certificates to a file share is accessible from the privileged endpoint (PEP). The, Run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter"
