@@ -56,9 +56,8 @@ You need the following information from the administrator portal to renew or cha
 
 If you want to change the subscription you use, you must first run the **Remove-AzsRegistration** cmdlet, then ensure you're signed in to the correct Azure PowerShell context. Then run **Set-AzsRegistration** with any changed parameters, including &lt; billing model &gt;. While running **Remove-AzsRegistration**, you must be signed in to the subscription used during the registration and use values of the `RegistrationName` and `ResourceGroupName` parameters as shown in the administrator portal:
 
-PowerShell
+```powershell
 
-```
 # select the subscription used during the registration (shown in portal)
 Select-AzSubscription -Subscription '<Registration subscription ID from portal>'
 # unregister using the parameter values from portal
@@ -74,9 +73,8 @@ Set-AzsRegistration -PrivilegedEndpointCredential $YourCloudAdminCredential -Pri
 
 This section applies if you want to change the billing model, how features are offered, or you want to re-register your instance. For all of these cases, you call the registration function to set the new values. You don't need to first remove the current registration. Sign in to the subscription ID shown in the administrator portal, and then rerun registration with a new `BillingModel` value while keeping the `RegistrationName` and `ResourceGroupName` parameters values same as shown in the administrator portal:
 
-PowerShell
+```powershell
 
-```
 # select the subscription used during the registration
 Select-AzSubscription -Subscription '<Registration subscription ID from portal>'
 # rerun registration with new BillingModel (or same billing model in case of re-registration) but using other parameters values from portal

@@ -30,7 +30,7 @@ The user who registers Azure Stack Hub is the owner of the service principal in 
 
 If you have more than one Azure Stack Hub, a best practice is to register each Azure Stack Hub to its own subscription. This makes it easier for you to track usage.
 
-### Set the PowerShell language mode.
+### Set the PowerShell language mode
 
 To successfully register Azure Stack Hub, the PowerShell language mode must be set to `FullLanguageMode`. To verify that the current language mode is set to full, open an elevated PowerShell window and run the following PowerShell cmdlets:
 

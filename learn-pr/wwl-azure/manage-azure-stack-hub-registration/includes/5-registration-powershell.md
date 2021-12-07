@@ -9,9 +9,8 @@ To run the cmdlet, you need:
  -  A global Azure subscription of any type.
  -  To be signed in to Azure PowerShell with an account that's an owner or contributor to that subscription.
 
-PowerShell
+```powershell
 
-```
 Set-AzsRegistration [-PrivilegedEndpointCredential] <PSCredential> [-PrivilegedEndpoint] <String> [[-AzureContext]
     <PSObject>] [[-ResourceGroupName] <String>] [[-ResourceGroupLocation] <String>] [[-BillingModel] <String>]
     [-MarketplaceSyndicationEnabled] [-UsageReportingEnabled] [[-AgreementNumber] <String>] [[-RegistrationName]
@@ -23,9 +22,8 @@ Set-AzsRegistration [-PrivilegedEndpointCredential] <PSCredential> [-PrivilegedE
 
 **Get-AzsRegistrationToken** generates a registration token from the input parameters.
 
-PowerShell
+```powershell
 
-```
 Get-AzsRegistrationToken [-PrivilegedEndpointCredential] <PSCredential> [-PrivilegedEndpoint] <String>
     [-BillingModel] <String> [[-TokenOutputFilePath] <String>] [-UsageReportingEnabled] [[-AgreementNumber] <String>]
     [<CommonParameters>]
