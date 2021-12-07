@@ -6,13 +6,13 @@ For many of the available cognitive services, you can choose between the followi
 
 ### Multi-service resource
 
-You can provision a **Cognitive Services** resource that supports multiple different cognitive services. For example, you could create a single resource that enables you to use the **Text Analytics**, **Computer Vision**, **Speech**, and other services.
+You can provision a **Cognitive Services** resource that supports multiple different cognitive services. For example, you could create a single resource that enables you to use the **Language**, **Computer Vision**, **Speech**, and other services.
 
 This approach enables you to manage a single set of access credentials to consume multiple services at a single endpoint, and with a single point of billing for usage of all services.
 
 ### Single-service resource
 
-Each cognitive service can be provisioned individually, for example by creating discrete **Text Analytics** and **Computer Vision** resources in your Azure subscription.
+Each cognitive service can be provisioned individually, for example by creating discrete **Language** and **Computer Vision** resources in your Azure subscription.
 
 This approach enables you to use separate endpoints for each service (for example to provision them in different geographical regions) and to manage access credentials for each service independently. It also enables you to manage billing separately for each service.
 
