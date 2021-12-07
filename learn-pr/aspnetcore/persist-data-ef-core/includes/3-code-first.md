@@ -1,38 +1,39 @@
-In this unit, you'll create C# entity classes that will map to tables in the *ContosoPets* Azure SQL database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
+In this unit, you'll create C# entity classes that will map to tables in the a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
 
 As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuration* philosophy. EF Core conventions shorten development time by inferring the developer's intent. For example, a property named `Id` or `<entity name>Id` is inferred to be the generated table's primary key. If you choose not to adopt the naming convention, the property must be annotated with the `[Key]` attribute.
 
-1. Run the following command to create new files to store entity model classes:
+> [!NOTE]
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
+## Get the starter code
+
+1. From a terminal, run the following command to clone the starter code repository:
 
     ```bash
-    pushd $srcWorkingDirectory/ContosoPets.Domain/Models && \
-        touch Product.cs ProductOrder.cs Order.cs Customer.cs && \
-        popd
+    git clone https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core
     ```
 
-    The preceding command:
-
-    * Navigates to the *:::no-loc text="Models":::* directory of the *:::no-loc text="ContosoPets.Domain":::* project.
-    * Creates files named *:::no-loc text="Product.cs":::*, *:::no-loc text="ProductOrder.cs":::*, *:::no-loc text="Order.cs":::*, and *:::no-loc text="Customer.cs":::* in the *:::no-loc text="Models":::* directory.
-    * Navigates back to the root of the *:::no-loc text="ContosoPets.Api":::* project.
+    The preceding command creates a local copy of the starter code repository. The app manages pizzas, their toppings, and their sauces.
 
     The newly created files will ultimately support generation of the following database structure:
 
-    ![database diagram.](../media/4-design-domain-model/database-diagram.png)
+    **TODO** database diagram
 
     The following one-to-many relationships will exist:
 
-    * A customer may have one or more orders.
-    * An order may have one or many products.
-    * A product may belong to one or many orders.
+    * A pizza may have one or more toppings.
+    * A topping may have one or many pizzas.
+    * A pizza may have one sauce, but a sauce can have many pizzas.
 
-    The following table depicts the foreign key relationships that will be created.
+## After this point is WIP
 
-    |Dependent entity|Principal entity|Foreign key property|
-    |----------------|----------------|--------------------|
-    |`Orders`        |`Customers`     |`CustomerId`        |
-    |`ProductOrders` |`Orders`        |`OrderId`           |
-    |`ProductOrders` |`Products`      |`ProductId`         |
+The following table depicts the foreign key relationships that will be created.
+
+|Dependent entity|Principal entity|Foreign key property|
+|----------------|----------------|--------------------|
+|`Orders`        |`Customers`     |`CustomerId`        |
+|`ProductOrders` |`Orders`        |`OrderId`           |
+|`ProductOrders` |`Products`      |`ProductId`         |
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 

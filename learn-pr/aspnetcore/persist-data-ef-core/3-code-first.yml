@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.design-domain-model
+uid: learn.persist-data-ef-core.code-first
 metadata:
-  title: Exercise - Design the domain model
+  title: Exercise - Model as the source of truth (code-first)
   description: Learn how to design the classes representing the domain model.
   ms.date: 04/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Exercise - Design the domain model
+title: Exercise - Model as the source of truth (code-first)
 azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-design-domain-model.md)]
+  [!include[](includes/3-code-first.md)]

@@ -3,13 +3,13 @@ uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data with Entity Framework Core
   description: This module guides you through creating a data access project, connecting to a relational database, and writing CRUD queries.
-  ms.date: 09/24/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 12/12/2021
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Persist and retrieve relational data with Entity Framework Core
-summary: Query and manage relational data in a .NET Core app with an Object-Relational Mapper (O/RM).
+summary: Query and manage relational data in a .NET Core app with an Object-Relational Mapper (ORM).
 abstract: | 
   In this module, you will:
   - Configure a connection to a relational database hosted in Azure.
@@ -18,6 +18,8 @@ abstract: |
   - Write and test CRUD queries.
   - Enable logging of the generated SQL.
 prerequisites: |
+  - Visual Studio Code 
+  - 
   - Experience writing C# at the beginner level
   - Experience using relational databases and SQL as a developer
 iconUrl: /learn/achievements/generic-badge.svg
@@ -31,16 +33,12 @@ products:
 - dotnet-core
 - dotnet-standard
 - ef-core
-- azure
-- azure-monitor
-- azure-sql-database
 units:
 - learn.persist-data-ef-core.introduction
 - learn.persist-data-ef-core.understanding-ef-core
-- learn.persist-data-ef-core.design-domain-model
-- learn.persist-data-ef-core.write-crud-queries
-- learn.persist-data-ef-core.call-crud-queries
-- learn.persist-data-ef-core.enable-sql-logging
+- learn.persist-data-ef-core.code-first
+- learn.persist-data-ef-core.database-first
+- learn.persist-data-ef-core.hybrid
 - learn.persist-data-ef-core.knowledge-check
 - learn.persist-data-ef-core.summary
 badge:
