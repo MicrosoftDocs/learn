@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-sdn-infrastructure.3-describe-network-controller
+title: Describe Network Controller
+metadata:
+  unitType: exercise
+  title: Describe Network Controller
+  description: This unit steps through the process of adding disks to an HPC cluster's scheduler nodes by using an Azure CycleCloud template.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-describe-network-controller.md)]
