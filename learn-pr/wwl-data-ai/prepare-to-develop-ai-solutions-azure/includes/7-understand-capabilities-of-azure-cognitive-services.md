@@ -4,13 +4,12 @@ Cognitive services offer a wide range of prebuilt AI capabilities across multipl
 
 | Language | Speech | Vision | Decision |
 | -------- | ------ | ------ | -------- |
-| Text Analytics | Speech to Text | Computer Vision |  Anomaly Detector |
-| Translator | Text to Speech | Custom Vision | Content Moderator |
-| QnA Maker | Speech Translation | Face API | Personalizer |
-| Language Understanding | Speaker Recognition |  | |
-| | | | |
-
-We will explore many of these cognitive services in the remainder of this course.
+| Text analysis | Speech to Text | Image analysis |  Anomaly detection |
+| Question answering | Text to Speech | Video analysis | Content moderation |
+| Language understanding | Speech Translation | Image classification | Content personalization |
+| Translation | Speaker Recognition | Object detection | |
+| | | Facial analysis | |
+| | | Optical character recognition | |
 
 > [!NOTE]
 > For more information about Azure Cognitive Services, see the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) web page.
