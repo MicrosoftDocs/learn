@@ -49,7 +49,7 @@ type: Microsoft.ContainerInstance/containerGroups
 You would run the following command to deploy the container group with YAML:
 
 ```bash
-az container create --resource-group myResourceGroup \ 
+az container create --resource-group myResourceGroup \
     --file secure-env.yaml
 ```
 
