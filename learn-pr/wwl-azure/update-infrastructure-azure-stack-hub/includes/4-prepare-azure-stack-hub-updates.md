@@ -1,6 +1,6 @@
 Review the checklist below to prepare for an Azure Stack Hub update.
 
-### Prepare for Azure Stack Hub update.
+### Prepare for Azure Stack Hub update
 
 :::row:::
   :::column:::

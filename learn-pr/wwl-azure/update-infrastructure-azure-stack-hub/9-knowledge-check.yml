@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 12/07/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "The updateadminaccount storage account."
       isCorrect: true
-      explanation: "That’s correct. The OEM package updates are uploaded into the updateadminaccount storage account."
+      explanation: "Correct. The OEM package updates are uploaded into the updateadminaccount storage account."
     - content: "To a OneDrive account for the Azure Stack operator."
       isCorrect: false
       explanation: "That’s incorrect. The OEM package updates are uploaded into the updateadminaccount storage account."
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "The updateadminaccount storage account."
       isCorrect: false
-      explanation: "That's correct. UpdateReadiness is a check to see if the Azure Stack Hub instance can be updated. When the UpdateReadiness group is run, warnings are displayed as errors in the console output, and they should be considered as blockers for the update."
+      explanation: "Incorrect. The OEM package updates are located into the updateadminaccount storage account."
     - content: "The Azure Stack tools GitHub repository."
       isCorrect: true
-      explanation: "That’s correct. Frequently released tools and PowerShell modules supporting Azure Stack Hub found in the Azure Stack tools GitHub repository."
+      explanation: "Correct. Frequently released tools and PowerShell modules supporting Azure Stack Hub found in the Azure Stack tools GitHub repository."
     - content: "Azure Tools for Visual Studio Code."
       isCorrect: false
       explanation: "That’s incorrect. Azure Tools for Visual Studio Code is a set of tools and extensions for Visual Studio Code."

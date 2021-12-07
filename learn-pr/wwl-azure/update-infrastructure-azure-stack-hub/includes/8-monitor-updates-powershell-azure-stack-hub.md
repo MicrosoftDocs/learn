@@ -52,7 +52,7 @@ You can use the following PowerShell cmdlets to manage your updates:
 :::row-end:::
 
 
-### Get a list of update runs.<br>
+### Get a list of update runs
 
 To get the list of update runs, run the following command:
 
@@ -61,7 +61,7 @@ Get-AzsUpdateRun -UpdateName Microsoft1.0.180302.1
 
 ```
 
-### Resume a failed update operation.
+### Resume a failed update operation
 
 If the update fails, you can resume the update run where it left off by running the following command:
 
