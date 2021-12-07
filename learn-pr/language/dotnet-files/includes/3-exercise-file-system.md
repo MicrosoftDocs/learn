@@ -1,9 +1,9 @@
 You can use .NET to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Each night, each store creates a file namled *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Each night, each store creates a file named *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
 
 > [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've leared by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've learned by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
 
 [!INCLUDE [](../../../includes/dotnet6-sdk-version.md)]
 
@@ -66,7 +66,7 @@ The following tasks will create a program to find all the sales.json files in al
     ```
 
 > [!NOTE]
-> Starting with .NET 6 the two statements in the above code are automatically included in a new project by way of the `ImplcityUsings` property group. Because we specified the `-f net6.0` flag when we created a new consolde project, they are implicitly added; however, if you are working with an older project, they need to be included in the `Program.cs`file--and it doesn't affect this project if you leave them in the file.
+> Starting with .NET 6 the two statements in the above code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net6.0` flag when we created a new console project, they are implicitly added; however, if you are working with an older project, they need to be included in the `Program.cs` file--and it doesn't affect this project if you leave them in the file.
 
 
 ### Write a function to find the sales.json files
@@ -132,7 +132,7 @@ In this example, the path to the *stores* directory was rather simple and in the
 
 ### Got stuck?
 
-If you had any probems running the program, here's the completed code for the `Program.cs` file. Replace the contents of your `Program.cs` file with this code:
+If you had any problems running the program, here's the completed code for the `Program.cs` file. Replace the contents of your `Program.cs` file with this code:
 
 ```csharp
 var salesFiles = FindFiles("stores");
