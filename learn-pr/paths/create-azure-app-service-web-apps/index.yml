@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-app-service-web-apps
 metadata:
   title: 'AZ-204: Create Azure App Service web apps'
   description: 'AZ-204: Create Azure App Service web apps'
-  ms.date: 09/16/2021
+  ms.date: 12/06/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-app-service-create-web-apps.svg
 levels:
 - intermediate
 roles:
