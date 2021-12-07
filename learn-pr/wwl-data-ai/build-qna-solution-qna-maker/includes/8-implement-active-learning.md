@@ -1,8 +1,8 @@
-After creating and testing a knowledge base, you can improve its performance with *active learning* and by defining *synomyms*.
+After creating and testing a knowledge base, you can improve its performance with *active learning* and by defining *synonyms*.
 
 ## Use active learning
 
-**Active learning** fcan help you make continuous improvements so that it gets better at answering user questions correctly over time.
+**Active learning** can help you make continuous improvements so that it gets better at answering user questions correctly over time.
 
 Active learning helps improve the knowledge base in two ways:
 
@@ -69,7 +69,7 @@ Active learning helps improve the knowledge base in two ways:
 
     The feedback will be presented in the active learning **Suggestions** page for your knowledge base in Language Studio for you to accept or reject.
 
-> ![NOTE]
+> [!NOTE]
 > To learn more about active learning, see the [Enrich your project with active learning](/azure/cognitive-services/language-service/question-answering/tutorials/active-learning).
 
 ## Define synonyms
@@ -91,5 +91,5 @@ To define synonyms, you must use the REST API to submit synonyms in the followin
 }
 ```
 
-> ![NOTE]
+> [!NOTE]
 > To learn more about synonyms, see the [Improve quality of response with synonyms](/azure/cognitive-services/language-service/question-answering/tutorials/adding-synonyms).
