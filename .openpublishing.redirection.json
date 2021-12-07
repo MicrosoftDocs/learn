@@ -9794,6 +9794,451 @@
       "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/9-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/develop-iot-solutions-with-azure-iot-central/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/6-deploy-azure-function-to-iot-edge.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/4-deploy-iot-edge-to-virtual-machine.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/3-exercise-create-iot-central-application.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/5-exercise-deploy-and-manage-an-iot-edge-device.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/7-exercise-deploy-azure-function-to-filter-telemetry.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/2-implement-iot-application-with-edge-pattern.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/1-introduction.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/8-summary.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/3-create-device-app-project.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/2-create-iot-central-apps-device-template.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/6-create-powerbi-app-view-your-data-remotely.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/7-exercise-create-powerbi-app-view-your-data-remotely.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/5-exercise-set-continuous-data-export-motion.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/1-introduction.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/4-set-continuous-data-export-motion.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/continuously-export-data-from-iot-central-power-bi/8-summary.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/7-add-multiple-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/8-create-device-set-dashboard.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/2-create-device-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/5-create-real-device-nodejs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/3-monitor-simulated-device.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/4-set-up-your-development-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-iot-central-app/6-test-your-iot-device.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-central-application-architecture/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/2-authorize-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/6-control-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/3-exercise-authorize-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/7-exercise-control-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/5-exercise-manage-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/9-exercise-use-jobs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/4-manage-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-iot-central-apps-with-rest-api/8-use-jobs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-devices-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/3-create-device-app-project.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/2-create-iot-central-apps-device-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/4-create-rules-take-actions-iot-central.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/5-exercise-create-rules-take-actions-iot-central.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/6-exercise-test-rules-actions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-business-integration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-azure-digital-twins/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/6-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/7-exercise-build-digital-twin-graph.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/4-exercise-create-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/2-exercise-create-digital-twins-instance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/9-exercise-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/5-exercise-validate-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/8-querying-digital-twin-graphs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/build-azure-digital-twins-graph-for-chocolate-factory/3-understand-digital-twin-definition-language-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-digital-twins-solution-development-tools-processes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/2-set-up.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/4-set-up-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/5-set-up-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/7-set-up-logic-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/3-set-up-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/ingest-data-into-azure-digital-twins/6-use-rest-apis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/3-benefits.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/6-consortium.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/2-definition.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/5-explore.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/4-use-cases.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/3-exercise-build-simulate-chocolate-factory-twin.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/5-exercise-create-configure-deploy-azure-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/6-exercise-visualize-data-time-series-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/2-scenario.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
+      "redirect_document_id": false
     }
   ]
 }
