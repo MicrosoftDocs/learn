@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2021
+  ms.date: 12/07/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
@@ -17,25 +18,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The directory administrator for an Azure Stack Hub is naming a guest directory Fabrikam. Which of the following is used to set the value for the guest tenant directory name to fabrikam.onmicrosoft.com?"
+  - content: "An Azure Stack Hub operator wants to name a guest directory Fabrikam. Which of the following is used to set the value for the guest tenant directory name to fabrikam.onmicrosoft.com?"
     choices:
     - content: "Register-AzResourceProvider"
       isCorrect: false
-      explanation: "That’s incorrect. The Register-AzResourceProvider cmdlet registers an Azure resource provider."
+      explanation: "Incorrect. The Register-AzResourceProvider cmdlet registers an Azure resource provider."
     - content: "Remove-AzRoleAssignment"
       isCorrect: false
-      explanation: "That’s incorrect. Remove-AzRoleAssignment removes a role assignment to the specified principal who is assigned to a particular role."
+      explanation: "Incorrect. Remove-AzRoleAssignment removes a role assignment to the specified principal assigned to a particular role."
     - content: "$guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\""
       isCorrect: true
-      explanation: "That’s correct. Running $guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\" will set the value for the guest tenant directory to fabrikam.onmicrosoft.com."
+      explanation: "Correct. Running $guestDirectoryTenantName = \"fabrikam.onmicrosoft.com\" sets the value for the guest tenant directory to fabrikam.onmicrosoft.com."
   - content: "An Azure Stack Hub operator is configuring multi-tenancy for Azure Stack Hub. They begin by configuring Azure Stack Hub to allow signing in from Azure Active Directory (AD) directory guest tenants. What should they do?"
     choices:
     - content: "Onboard the guest directory tenant to Azure Stack Hub by configuring Azure Resource Manager to accept users and service principals from the guest directory tenant."
       isCorrect: true
-      explanation: "That's correct. Multi-tenancy for Azure Stack Hub allows signing in from Azure Active Directory (AD) directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
+      explanation: "Correct. Multi-tenancy for Azure Stack Hub allows signing in from Azure Active Directory (AD) directory guest tenants. Azure Resource Manager accepts users and service principals from the guest directory tenant to allow the guest directory tenant."
     - content: "Run Get-AzProviderOperation \"Microsoft.Support/*\" | FT Operation, Description -AutoSize"
       isCorrect: false
-      explanation: "That's incorrect. Get-AzProviderOperation command gets the list of operations for the Microsoft.Support resource provider."
+      explanation: "Incorrect. Get-AzProviderOperation command gets the list of operations for the Microsoft.Support resource provider."
     - content: "The administrator of the guest directory runs Unregister-AzsWithMyDirectoryTenant."
       isCorrect: false
-      explanation: "That's incorrect. The administrator of the guest directory runs Unregister-AzsWithMyDirectoryTenant to disable multi-tenancy"
+      explanation: "Incorrect. The administrator of the guest directory runs Unregister-AzsWithMyDirectoryTenant to disable multi-tenancy"
