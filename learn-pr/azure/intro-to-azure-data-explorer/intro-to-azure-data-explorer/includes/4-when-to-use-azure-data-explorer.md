@@ -52,7 +52,7 @@ Azure Data Explorer is broadly used for implementing analytics SaaS offerings. I
 
 *How much do I want to customize my data platform?*
 
-Azure Data Explorer is a fully managed platform as a service. However, it does not provide a turnkey solution out of the box. It does require customizing, configuring, connecting, and creating experiences on top of it to deliver a solution (build). There are various solutions, from Microsoft and third parties, that use Azure Data Explorer to deliver such solutions in different domains and verticals, such as Azure Monitor for IT operations, Microsoft Advanced Threat Protection and Azure Sentinel in the security domain, Azure Time Series Insights and Azure IoT Central in the IoT domains, and so forth. 
+Azure Data Explorer is a fully managed platform as a service. However, it does not provide a turnkey solution out of the box. It does require customizing, configuring, connecting, and creating experiences on top of it to deliver a solution (build). There are various solutions, from Microsoft and third parties, that use Azure Data Explorer to deliver such solutions in different domains and verticals, such as Azure Monitor for IT operations, Microsoft Advanced Threat Protection and Microsoft Sentinel in the security domain, Azure Time Series Insights and Azure IoT Central in the IoT domains, and so forth. 
 
 ## Apply the criteria
 

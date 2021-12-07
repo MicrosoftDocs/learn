@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-start-cpm
+title: Exercise - Program the Altair by using CP/M
+metadata:
+  title: Exercise - Program the Altair by using CP/M
+  description: In this exercise, follow the steps to program the Altair by using CP/M.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 10 # dummy number at present
+content: |
+  [!include[](includes/03-exercise-start-cpm.md)]

@@ -17,5 +17,5 @@ In this module, you will:
 ## Prerequisites
 
 - Intermediate knowledge of Azure Log Analytics
-- Intermediate knowledge of Azure Security Center and Azure Sentinel
+- Intermediate knowledge of Microsoft Defender for Cloud and Microsoft Sentinel
 - Advanced knowledge of Azure Policy

@@ -717,3 +717,68 @@ achievements:
   title: Explore data storage and processing in Azure
   summary: Explore data storage and processing in Azure
   iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg
+- uid: learn-wwl.azure-iot-strategy-and-solutions.badge
+  type: badge
+  title: Microsoft Azure IoT strategy and solutions
+  summary: Microsoft Azure IoT strategy and solutions
+  iconUrl: /learn/achievements/azure-iot-strategy-and-solutions.svg
+- uid: learn.java-on-azure.trophy
+  type: trophy
+  title: Java on Azure
+  summary: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  iconUrl: /learn/achievements/java-on-azure.svg
+- uid: learn.develop-solutions-with-azure-iot-central.trophy
+  type: trophy
+  title: Develop IoT solutions with Azure IoT Central
+  summary: Develop IoT solutions with Azure IoT Central
+  iconUrl: /learn/achievements/develop-solutions-with-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an IoT Edge device to your IoT Central application
+  summary: Connect an IoT Edge device to your IoT Central application
+  iconUrl: /learn/achievements/connect-iot-edge-device-to-iot-central.svg
+- uid: learn.iot.continuous-data-export-from-iot-central.badge
+  type: badge
+  title: Set up continuous data export from Azure IoT Central to a Power BI app
+  summary: Set up continuous data export from Azure IoT Central to a Power BI app
+  iconUrl: /learn/achievements/iot/continuous-data-export-from-iot-central.svg
+- uid: learn.iot.iot-central-refrigerated-truck-module.badge
+  type: badge
+  title: Create your first Azure IoT Central app
+  summary: Create your first Azure IoT Central app
+  iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
+- uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
+  type: badge
+  title: Manage IoT Central applications with the REST API
+  summary: Manage IoT Central applications with the REST API
+  iconUrl: /learn/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.iot.set-up-rules-take-actions-telemetry-data-azure-iot-central.badge
+  type: badge
+  title: Set up rules and take action on telemetry data in Azure IoT Central
+  summary: Set up rules and take action on telemetry data in Azure IoT Central
+  iconUrl: /learn/achievements/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central.svg
+- uid: learn.develop-azure-digital-twins.trophy
+  type: trophy
+  title: Develop with Azure Digital Twins
+  summary: Develop with Azure Digital Twins
+  iconUrl: /learn/achievements/develop-azure-digital-twins.svg
+- uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.badge
+  type: badge
+  title: Build an Azure Digital Twins graph for a chocolate factory production line
+  summary: Build an Azure Digital Twins graph for a chocolate factory production line
+  iconUrl: /learn/achievements/iot/build-azure-digital-twins-graph-for-chocolate-factory.svg
+- uid: learn.iot.connect-input-to-azure-digital-twins.badge
+  type: badge
+  title: Ingest Data into Azure Digital Twins
+  summary: Ingest Data into Azure Digital Twins
+  iconUrl: /learn/achievements/iot/connect-input-to-azure-digital-twins.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /learn/achievements/iot/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.output-from-adt-to-downstream-services.badge
+  type: badge
+  title: Output from Azure Digital Twins to downstream services
+  summary: Output from Azure Digital Twins to downstream services
+  iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg

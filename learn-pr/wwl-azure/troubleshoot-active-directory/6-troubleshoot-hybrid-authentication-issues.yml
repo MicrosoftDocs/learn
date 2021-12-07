@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-active-directory.troubleshoot-hybrid-authentication-issues
+title: Troubleshoot hybrid authentication issues
+metadata:
+  title: Troubleshoot hybrid authentication issues
+  description: "Troubleshoot hybrid authentication issues"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-troubleshoot-hybrid-authentication-issues.md)]

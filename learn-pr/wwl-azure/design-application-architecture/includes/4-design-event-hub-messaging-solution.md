@@ -6,7 +6,7 @@ In this situation, you might choose an event hubs-based messaging solution. Even
 
 ## How Azure Event Hub works
 
-[Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a fully managed, real time data ingestion. Event hugs supports real time data ingestion and microservices batching on the same stream. Here are some common scenarios for Event Hubs. 
+[Azure Event Hubs](/azure/event-hubs/event-hubs-about) is a fully managed, real time data ingestion. Event hubs supports real time data ingestion and microservices batching on the same stream. Here are some common scenarios for Event Hubs. 
 
 - Anomaly detection (fraud/outliers) and live dashboarding
 

@@ -46,11 +46,13 @@ Run the following commands in Cloud Shell to publish. Here, we use `cd` first to
 
 ```azurecli
 cd ~/loan-wizard
-func azure functionapp publish "$FUNCTIONAPP"
+func azure functionapp publish "$FUNCTIONAPP" --force
 ```
 
 > [!NOTE]
-> If this command displays an error that it can't find your app, wait two minutes and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created. You can also try appending `--force` to the end of the command to update the function app version mismatch.
+> If this command displays an error that it can't find your app, wait two minutes and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created.
+>
+> Also, you're appending `--force` to the end of the command to update the function app version mismatch.
 
 Unlike the previous exercise, where you temporarily hosted your function locally from the Core Tools, your function is now live on the web and will remain globally available until the sandbox for this tutorial expires.
 

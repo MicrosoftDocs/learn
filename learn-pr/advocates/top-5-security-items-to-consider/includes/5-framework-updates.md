@@ -40,11 +40,11 @@ Each one of these features was written by experts in their field, and then batte
 > Writing your own security controls, instead of using those provided by your framework, is not only wasting time, it's less secure.
 
 
-## Azure Security Center
+## Microsoft Defender for Cloud
 
-When using Azure to host your web applications, Security Center will warn you if your frameworks are out of date as part of the recommendations tab.  Don't forget to look there from time to time to see if there are any warnings related to your apps.
+When using Azure to host your web applications, Defender for Cloud will warn you if your frameworks are out of date as part of the recommendations tab.  Don't forget to look there from time to time to see if there are any warnings related to your apps.
 
-![Azure Security Center recommending a framework upgrade.](../media/5-ASCFramework.png)
+![Microsoft Defender for Cloud recommending a framework upgrade.](../media/5-ASCFramework.png)
 
 
 ## Summary

@@ -49,10 +49,8 @@ products:
 - azure-event-grid
 modules:
 - learn-wwl.enable-digital-transformation
-- learn-wwl.azure-iot-strategy-and-solutions
 - learn.oxford.intro-to-iot-hub
 - learn.manage-iot-devices
-- learn.iot.create-your-first-iot-central-app
 - learn.oxford.intro-to-iot-edge
 - learn.iot.introduction-lambda-architecture-iot-solutions
 - learn.iot.explore-and-analyze-time-series-insights

@@ -16,7 +16,7 @@ After completing this module, you'll know more about:
 - Sensitivity labels.
 - How to use sensitivity labels to help protect data.
 - Unified labeling scanner.
-- Microsoft Cloud App Security.
+- Microsoft Defender for Cloud Apps.
 - Service encryption with Customer Key.
 - Office 365 Message Encryption.
 
