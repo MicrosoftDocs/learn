@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control,  and identity protection methods.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-authentication-authorization.svg
 levels:
 - advanced
 roles:
