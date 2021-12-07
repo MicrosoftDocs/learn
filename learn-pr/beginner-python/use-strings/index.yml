@@ -13,8 +13,8 @@ title: Use strings in Python
 summary: Use one of the most common types in Python to represent text. From simple formatting to representing variables, operating strings is a critical skill for Python.
 abstract: |
   By the end of this module, you'll be able to:
-    - Use the most common string helper functions.
-    - Implement different formatting techniques.
+  - Use the most common string helper functions.
+  - Implement different formatting techniques.
 prerequisites: |
   - Basic programming knowledge, like using and assigning variables.
   - Some experience using Jupyter notebooks, including adding and modifying code.
