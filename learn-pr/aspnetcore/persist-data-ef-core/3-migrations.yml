@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.code-first
+uid: learn.persist-data-ef-core.migrations
 metadata:
   title: Exercise - Model as the source of truth (code-first)
   description: Learn how to design the classes representing the domain model.
@@ -8,9 +8,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Exercise - Model as the source of truth (code-first)
-azureSandbox: true
-interactive: bash-editor
+title: Exercise - Migrations
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-code-first.md)]
+  [!include[](includes/3-migrations.md)]

@@ -36,9 +36,9 @@ products:
 units:
 - learn.persist-data-ef-core.introduction
 - learn.persist-data-ef-core.understanding-ef-core
-- learn.persist-data-ef-core.code-first
-- learn.persist-data-ef-core.database-first
-- learn.persist-data-ef-core.hybrid
+- learn.persist-data-ef-core.migrations
+- learn.persist-data-ef-core.interacting-data
+- learn.persist-data-ef-core.reverse-engineering
 - learn.persist-data-ef-core.knowledge-check
 - learn.persist-data-ef-core.summary
 badge:

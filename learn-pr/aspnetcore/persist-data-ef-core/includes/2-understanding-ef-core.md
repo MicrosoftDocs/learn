@@ -31,22 +31,22 @@ The Database Provider:
 - Accepts SQL from the EF Core Provider and executes it in the database.
 - Extends EF Core to enable functionality that's unique to the database engine.
 
-## The schema "source of truth"
+## Managing database schemas
 
-When using an ORM, which system represents the true data domain? Is When writing apps using EF Core, there are three ways to think of where the data schema's "source of truth" resides.
+EF Core provides two primary ways of keeping your EF Core model and database schema in sync. To choose between the two, decide whether your EF Core model or the database schema is the *source of truth*.
 
-### Model as the source of truth (code-first)
+### Migrations (Model as the source of truth)
 
-When using the model as the source of truth, you write your entity classes and `DbContext` first. EF Core generates the database schema based on your C# entity classes. This is also referred to as **code-first development**.
+In real world projects, data models change as app features get implemented--New entities are added and removed, and database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
 
-### Database as the source of truth (database-first)
+When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration. EF Core compares the current model against a snapshot of the old model to determine the differences. C# code to implement the changes is generated. The C# files can be tracked in your project's source control like any other source file.
 
-In many development scenarios, developers have no control over the database schema. Perhaps the database is part of a legacy application, or the organization has dedicated DBAs to handle all database design. In these cases, you can use EF Core's tools to generate C# entity classes.
+Once a new migration has been generated, it can be applied to a database in various ways. EF Core records all applied migrations in a special history table. The history table keeps a record of which migrations have been applied.
 
-### Hybrid
+### Reverse engineering (Database as the source of truth)
 
-**TODO** Need text here!!! Jeremy or Arthur, please help!!!
+Reverse engineering is the process of scaffolding entity model classes and a DbContext class based on a database schema. This approach is often used with existing or shared databases where the schema can't easily be changed.
 
 ## Getting started
 
-In the next unit, you'll get started by downloading the sample web API app. After that, you'll define entity classes and use EF Core to
+In the next unit, you'll get started with EF Core by using migrations.

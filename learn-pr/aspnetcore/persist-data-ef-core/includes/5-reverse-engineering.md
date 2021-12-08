@@ -1,0 +1,2 @@
+> [!TIP]
+> New scaffolded files can be generated if the database changes. However, be aware that any manual changes you've made to the original scaffolded files will need to be recreated in the replacement files.
