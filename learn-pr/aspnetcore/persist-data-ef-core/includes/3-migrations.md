@@ -167,7 +167,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to return to the **Explorer** tab.
 1. Right-click on the *ContosoPizza.db* file. Select **Open Database**.
 
-    :::image type="content" source="../media/open-database.png" alt-text="The "Open Database" menu option":::
+    :::image type="content" source="../media/open-database.png" alt-text="The Open Database menu option":::
 
     A **SQLITE EXPLORER** pane that opens on the **Explorer** tab.
 
