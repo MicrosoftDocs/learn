@@ -12,13 +12,13 @@ Before we explore Azure Files, you should understand that storage of file shares
 
 You can think of Azure Files as a standard file share, hosted on Azure, that you can access with the industry standard SMB protocol. You can mount or connect to an Azure file share at the same time on all the main operating systems.
 
-Azure Files can be used to add to or replace a company's existing on-premises NAS devices or file servers. Some reasons why your organization will want to use Azure Files are:
+You can use Azure Files to add to or replace a company's existing on-premises NAS devices or file servers. Some reasons why your organization will want to use Azure Files:
 
-- Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the time to get new machines into production.
+- Developers can store apps and configuration files in a file share and connect new VMs to the shared files, reducing the time to get new machines into production.
 - Cloud-based apps can efficiently write log files by using the File REST API to the shared storage. Developers can then map to the shared folder and run their local debugging tools on the shared data.
 - With file shares on Azure, a company doesn't need to buy and deploy expensive redundant hardware and manage software updates.
 - You can automate the creation and editing of file shares by using PowerShell or Azure CLI commands. Automation leads to an increase in the productivity of a company's operations.
-- All of the resilience of the Azure platform is inherited by your file share, which makes files globally redundant. You also gain options to use the integrated snapshots feature and set up automatic backups by using Recovery Services vaults.
+- Your file share inherits all of the resilience of the Azure platform, which makes files globally redundant. You also have options to use the integrated snapshots feature and set up automatic backups by using Recovery Services vaults.
 - All the data is encrypted in transit by using HTTPS and is stored encrypted when at rest.
 - The shares are cross-platform, and you can connect to them from Windows, Linux, or macOS.
 
@@ -28,9 +28,9 @@ Migrating a company's existing file shares into Azure Files gives them the flexi
 
 There are two built-in methods of data access supported by Azure Files. One method is direct access via a mounted drive in your operating system. The other method is to use a Windows server (either on-premises or in Azure) and install Azure File Sync to synchronize the files between local shares and Azure Files.
 
-The most common scenario that might lead you to consider using Azure File Sync is to run your applications or compute resources locally on on-premises Windows machines. If the office also has a slow internet connection, it increases the need to run Azure File Sync for performance reasons.
+The most common scenario for considering Azure File Sync is to run your applications or compute resources locally on on-premises Windows machines. If the office also has a slow internet connection, it increases the need to run Azure File Sync for performance reasons.
 
-The primary use of direct cloud access is where the apps are running on Azure and all locations that need access to the data have a fast internet connection.
+Primarily, you would use direct cloud access when the apps are running on Azure and all locations that need access to the data have a fast internet connection.
 
 Because the finance company is moving its main apps to Azure and they want to reduce the number of changes they have to make in their offices, direct access is the best choice for them.
 
@@ -46,7 +46,7 @@ Because Azure Files stores files in a storage account, you can choose between st
 - **Standard performance**: Double-digit ms latency, 10,000 IOPS, 300-MBps bandwidth
 - **Premium performance**: Single-digit ms latency, 100,000 IOPS, 5-GBps bandwidth
 
-Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back premium storage account performance, which comes with higher costs. Currently, premium accounts can use file storage accounts with ZRS in a limited number of regions.
+Standard performance accounts use HDD to store data. The costs are lower with HDD, but so is the performance. SSD arrays back the premium storage account's performance, which comes with higher costs. Currently, premium accounts can only use file storage accounts with ZRS storage in a limited number of regions.
 
 Your decision for account and redundancy options is to find a balance between availability and performance requirements. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. As a result, the best choice is a standard GRS account. Currently, Geo-zone Redundant Storage (GZRS) is in preview stage. When GZRS becomes generally available, it will be the best option for them. This table compares the different characteristics of each storage option.
 
@@ -75,10 +75,10 @@ The finance company has existing systems, data, and file shares. You need to mig
 |---------|---------|
 |AzCopy     | Command-line tool that offers the best performance, especially for a low volume of small files.  |
 |Robocopy   | Command-line tool shipped with Windows and Windows Server. AzCopy is written to be Azure aware and performs better. |
-|Azure Storage Explorer  Graphical file management utility that runs on Windows, Linux, and macOS.         |
-|Azure portal | Use the portal to import files and folders. |
-|Azure File Sync | Can be used to do the initial data transfer, and then uninstalled after the data is transferred.  |
-|Azure Data Box | If you have up to 35 TB of data and you need it imported in less than a week.  |
+|Azure Storage Explorer     | Graphical file management utility that runs on Windows, Linux, and macOS.         |
+|Azure portal     | Use the portal to import files and folders. |
+|Azure File Sync     | Use to accomplish the initial data transfer, then uninstall after the data is transferred.  |
+|Azure Data Box     | If you have up to 35 TB of data and you need it imported in less than a week.  |
 
 The finance company's files are small, and they have a bandwidth of about 100 Mbps on their network. Their operations team doesn't want to install software on any of the machines and wants the transfers to be as fast as possible.
 
