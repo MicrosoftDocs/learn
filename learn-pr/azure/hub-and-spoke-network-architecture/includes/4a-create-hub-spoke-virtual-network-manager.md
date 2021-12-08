@@ -8,6 +8,6 @@ There are various features in Virtual Network Manager that help you create a hub
 
 Here are some resources to get you started:
 
-- A step-by-step guide to navigate you through the process of create a hub and spoke topology: [Tutorial: Create a secured hub and spoke network](/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke).
+- A step-by-step guide to navigate you through the process of create a hub and spoke topology: [Tutorial: Create a secured hub and spoke network](/azure/virtual-network-manager/tutorial-create-secured-hub-and-spoke?azure-portal=true).
 
-- [Azure Virtual Network Manager documentation](/azure/virtual-network-manager/overview)
+- [Azure Virtual Network Manager documentation](/azure/virtual-network-manager/overview?azure-portal=true)
