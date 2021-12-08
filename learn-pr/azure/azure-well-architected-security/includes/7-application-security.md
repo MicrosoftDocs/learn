@@ -29,7 +29,7 @@ After an application has been deployed, it's essential to continually evaluate i
 
 Software services that scan for security vulnerabilities are available to help automate this process and assess security concerns on a regular cadence. Such services offer these benefits without burdening teams with costly manual processes, such as penetration testing.
 
-Azure Security Center is a free service that's now enabled by default for all Azure subscriptions. It's tightly integrated with other Azure application-level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, Security Center can report on known vulnerabilities in real time and recommend responses to mitigate them. You can even configure Security Center to automatically execute playbooks in response to attacks.
+Microsoft Defender for Cloud is a free service that's now enabled by default for all Azure subscriptions. It's tightly integrated with other Azure application-level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, Defender for Cloud can report on known vulnerabilities in real time and recommend responses to mitigate them. You can even configure Defender for Cloud to automatically execute playbooks in response to attacks.
 
 ## Identity as the perimeter
 

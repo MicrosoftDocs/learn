@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application
+metadata:
+  title: Create an Azure IoT Central application for the Altair emulator and Azure Sphere
+  description: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Create an Azure IoT Central application for the Altair emulator and Azure Sphere
+summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
+abstract:  |
+  In this module, you will:
+  - Create an Azure IoT Central application. 
+  - Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
+  - Create an enrollment group.
+  - Create and validate a tenant CA certificate.
+prerequisites: |
+  - A computer with an x86-based or x64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-create-iot-central-application.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.introduction
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-concept
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.iot-central-exercise
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.enable-trust-concept
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.enable-trust-exercise
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.badge

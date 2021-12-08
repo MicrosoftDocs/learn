@@ -36,7 +36,7 @@ The only required argument to this command is `--name`, but it won't enable you 
 - By using the `--account-name` and either an `--account-key` or a `--sas-token` argument.
 - By using a storage account connection string with `--connection-string`.
 
-There are interesting optional arguments that you might find useful in some situations. The first argument controls the size of the share in gigabytes. If you need this restriction, use the `--quota` argument. The second argument lets you control the timeout for calls to the service in seconds with `--timeout`.
+There are optional arguments that you might find useful in some situations. The first argument controls the size of the share in gigabytes. If you need this restriction, use the `--quota` argument. The second argument lets you control the timeout for calls to the service in seconds with `--timeout`.
 
 The defaults for these arguments are acceptable in our scenario. So, the full command takes the following form:
 
@@ -53,14 +53,14 @@ With the Azure file share created, you connect to it from a Windows, Linux, or m
 
 The Azure portal makes it easy to connect to your new share by providing the PowerShell commands to run.
 
-![Screenshot of the Azure portal showing the file share connection commands.](../media/3-connect-share.png)
+:::image type="content" source="../media/3-connect-share.png" alt-text="Screenshot of the Azure portal showing the file share connection commands." lightbox="../media/3-connect-share.png":::
 
 ### Authenticate with Azure Active Directory
 
 Azure Active Directory (Azure AD) authentication is possible if the machine that needs access to the file share is a domain-joined, Windows-based VM hosted on Azure. This method provides a great solution to secure your file shares and offers advantages over using a shared key:
 
 - You can enforce more granular control over file access based on role-based access.
-- On-premises discretionary access control lists (DACLs) can be copied, along with the files, over SMB to preserve a company's existing permissions.
+- On-premises discretionary access control lists (DACLs) can be copied, along with the files, over SMB protocol to preserve a company's existing permissions.
 
 ### Authenticate with a shared key
 

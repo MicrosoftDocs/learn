@@ -8,7 +8,7 @@ By default, Azure Container Instances are stateless. If the container crashes or
 
 ## Deploy container and mount volume
 
-To mount an Azure file share as a volume in a container by using the Azure CLI, specify the share and volume mount point when you create the container with `az container create`. If you followed the previous steps, you can mount the share you created earlier by using the following command to create a container:
+To mount an Azure file share as a volume in a container by using the Azure CLI, specify the share and volume mount point when you create the container with `az container create`. Below is an example of the command:
 
 ```azurecli
 az container create \

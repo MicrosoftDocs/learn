@@ -1,4 +1,4 @@
-In this exercise, you'll create a simple to do list component inside our Blazor app.
+In this exercise, you'll create a basic to do list component inside our Blazor app.
 
 ## Create the ToDo page
 
@@ -32,21 +32,23 @@ In this exercise, you'll create a simple to do list component inside our Blazor 
 
 The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
 
-In the unordered list (`<ul>...</ul>`) of the NavMenu component, add the following list item (`<li>...</li>`) and `NavLink` component for the `Todo` component.
+In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
 In `Shared/NavMenu.razor`:
 
 ```razor
-<ul class="nav flex-column">
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
 
-    ...
+        ...
 
-    <li class="nav-item px-3">
-        <NavLink class="nav-link" href="todo">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
-        </NavLink>
-    </li>
-</ul>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="todo">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+            </NavLink>
+        </div>
+    </nav>
+</div>
 ```
 
 Save the `Shared/NavMenu.razor` file.  The browser should refresh automatically and now have the Todo entry on the navigation bar:

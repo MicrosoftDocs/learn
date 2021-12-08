@@ -4,7 +4,7 @@ To begin, open a second browser window or tab.
 
 ## Search for a module and add it to your collection
 
-1. In a new browser window or tab, navigate to the [Microsoft Learn browse page](https://docs.microsoft.com/learn/browse).
+1. In a new browser window or tab, navigate to the [Microsoft Learn browse page](/learn/browse).
 1. From the left navigation, choose a filter (checkbox) for the role “K-12 Educator” or "Higher-ed Educator".
 1. Then select other desired filters like product, level, and type.
 1. Scroll to and select a desired module.
@@ -18,7 +18,7 @@ To begin, open a second browser window or tab.
 
 ## Share it with a peer
 
-1. Now navigate to and select your profile (avatar image).
+1. Now navigate to and select your **Profile** (avatar image).
 1. Select **Collections**.
 1. Select **Share** and choose your method of distributing your collection.
 

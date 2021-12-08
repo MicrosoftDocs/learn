@@ -1,0 +1,414 @@
+Azure DevOps has extended support for pipelines as code (also called YAML pipelines) for continuous deployment and started introducing various release management capabilities into pipelines as code.
+
+The existing UI-based release management solution in Azure DevOps is referred to as classic release.
+
+You'll find a list of capabilities and availability in YAML pipelines vs. classic build and release pipelines in the following table.
+
+:::row:::
+  :::column:::
+    **Feature**
+  :::column-end:::
+  :::column:::
+    **YAML**
+  :::column-end:::
+  :::column:::
+    **Classic Build**
+  :::column-end:::
+  :::column:::
+    **Classic Release**
+  :::column-end:::
+  :::column:::
+    **Notes**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Agents
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Specifies a required resource on which the pipeline runs.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Approvals
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Defines a set of validations required before completing a deployment stage.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Artifacts
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Supports publishing or consuming different package types.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Caching
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Reduces build time by allowing outputs or downloaded dependencies from one run to be reused in later runs. In Preview, available with Azure Pipelines only.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Conditions
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Specifies conditions to be met before running a job.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Container jobs
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Specifies jobs to run in a container.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Demands
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Ensures pipeline requirements are met before running a pipeline stage. Requires self-hosted agents.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dependencies
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Specifies a requirement that must be met to run the next job or stage.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Deployment groups
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Defines a logical set of deployment target machines.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Deployment group jobs
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Specifies a job to release to a deployment group.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Deployment jobs
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Defines the deployment steps. Requires Multi-stage pipelines experience.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Environment
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Gates
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Supports automatic collection and evaluation of external health signals before completing a release stage. Available with Azure Pipelines only.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Jobs
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Defines the execution sequence of a set of steps.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Service connections
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Enables a connection to a remote service that is required to execute tasks in a job.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Service containers
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Enables you to manage the lifecycle of a containerized service.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Stages
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Organizes jobs within a pipeline.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Task groups
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Encapsulates a sequence of tasks into a single reusable task. If using YAML, see templates.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Tasks
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Defines the building blocks that make up a pipeline.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Templates
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Defines reusable content, logic, and parameters.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Triggers
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Defines the event that causes a pipeline to run.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Variables
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Represents a value to be replaced by data to pass to the pipeline.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Variable groups
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Use to store values that you want to control and make available across multiple pipelines.
+  :::column-end:::
+:::row-end:::

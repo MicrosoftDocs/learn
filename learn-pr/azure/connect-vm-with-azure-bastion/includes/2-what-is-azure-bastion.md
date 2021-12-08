@@ -41,7 +41,7 @@ The following table highlights some of the user experience features that Azure B
 |Feature  |Supports  |
 |---------|---------|
 |Browsers     | - Windows: Microsoft Edge browser, Microsoft Edge Chromium, or Google Chrome</br>     - Apple Mac: Google Chrome browser or Microsoft Edge Chromium.      |
-|Keyboard layout in the VM    | - En-us-qwerty</br>- Other locales not currently supported        |
+|Keyboard layout in the VM    | - en-us-qwerty</br>- en-gb-qwerty</br>- de-ch-qwertz</br>- de-de-qwertz</br>- fr-be-azerty</br>- fr-fr-azerty</br>- fr-ch-qwertz</br>- hu-hu-qwertz</br>- it-it-qwerty</br>- ja-jp-qwerty</br>- pt-br-qwerty</br>- es-es-qwerty</br>- es-latam-qwerty</br>- sv-se-qwerty</br>- tr-tr-qwerty</br>          |
 |Functions within VM   | - Text copy and paste</br>- Features like file copy not currently supported        |
 
 

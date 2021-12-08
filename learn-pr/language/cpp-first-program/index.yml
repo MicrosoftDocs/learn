@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.cpp-write-your-first-program
+metadata:
+  title: Write your first program in C++
+  description: Get familiar with the C++ programming language. Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+  ms.date: 11/18/2021
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+title: Write your first program in C++
+summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+abstract: |
+  In this module you will:
+  - Write a program in C++ by using basic syntax.
+  - Recognize C++ terminology, including data types, libraries, and functions.
+  - Identify and correct common programming errors.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: None
+units:
+  - learn.cpp-write-your-first-program.introduction
+  - learn.cpp-write-your-first-program.exercise-hello-world
+  - learn.cpp-write-your-first-program.how-it-works
+  - learn.cpp-write-your-first-program.common-mistakes-and-errors
+  - learn.cpp-write-your-first-program.exercise-fixing-broken-code
+  - learn.cpp-write-your-first-program.summary
+badge:
+  uid: learn.cpp-write-your-first-program.badge
+  

@@ -2,7 +2,7 @@
 uid: learn.azure.protect-public-sector-data
 metadata:
   title: Protect public sector data in Azure
-  description: Learn to design conceptual architecture for data classifications using data residency for Microsoft 365 and Dynamics 365 services while utilizing Azure regions and Customer lockbox. Manage breach notifications in Service Trust Portal and Azure Security Center. And encrypt data throughout its lifecycle.
+  description: Learn to design conceptual architecture for data classifications using data residency for Microsoft 365 and Dynamics 365 services while utilizing Azure regions and Customer lockbox. Manage breach notifications in Service Trust Portal and Microsoft Defender for Cloud. And encrypt data throughout its lifecycle.
   brand: azure
   ms.date: 04/23/2021
   author: Adriamen
