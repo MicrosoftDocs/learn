@@ -19,21 +19,21 @@ To limit access to your on-premises networks, you'll need to configure IP-based 
 
 PowerShell command to configure firewall access for a storage account:
 
-    ```powershell
-    Add-AzStorageAccountNetworkRule `
-        -ResourceGroupName "myresourcegroup" `
-        -AccountName "mystorageaccount" `
-        -IPAddressOrRange "NNN.NNN.NNN.NNN"
-    ```
+```powershell
+Add-AzStorageAccountNetworkRule `
+    -ResourceGroupName "myresourcegroup" `
+    -AccountName "mystorageaccount" `
+    -IPAddressOrRange "NNN.NNN.NNN.NNN"
+```
 
 Azure CLI command to configure firewall access for a storage account:
 
-    ```azurecli
-    az storage account network-rule add \
-        --resource-group "myresourcegroup" \
-        --account-name "mystorageaccount" \
-        --ip-address "NNN.NNN.NNN.NNN"
-    ```
+```azurecli
+az storage account network-rule add \
+    --resource-group "myresourcegroup" \
+    --account-name "mystorageaccount" \
+    --ip-address "NNN.NNN.NNN.NNN"
+```
 
 where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
@@ -45,25 +45,25 @@ If you created file shares without secure transfer enabled, it's easy to enable 
 
 Azure portal configuration to enable secure transfer for storage accounts:
 
- :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
+:::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
 
 PowerShell command to enable secure transfer for a storage account:
 
-    ```powershell
-    Set-AzStorageAccount `
-        -Name "StorageAccountName" `
-        -ResourceGroupName "ResourceGroupName" `
-        -EnableHttpsTrafficOnly $True
-    ```
+```powershell
+Set-AzStorageAccount `
+    -Name "StorageAccountName" `
+    -ResourceGroupName "ResourceGroupName" `
+    -EnableHttpsTrafficOnly $True
+```
 
 Azure CLI command to enable secure transfer for a storage account:
 
-    ```azurecli
-    az storage account update \
-        --resource-group ResourceGroupName \
-        --name StorageAccountName \
-        --https-only true
-    ```
+```azurecli
+az storage account update \
+    --resource-group ResourceGroupName \
+    --name StorageAccountName \
+    --https-only true
+```
 
 The secure transfer option only allows requests to the storage account over a secure HTTPS connection. Any requests that use HTTP will be rejected. When you use Azure Files, connections without encryption will fail, even when you use SMB 2.1, SMB 3.0 without encryption, or some flavors of the Linux SMB client.
 
