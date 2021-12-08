@@ -1,7 +1,5 @@
 In this unit, you'll create C# entity classes that will map to tables in the a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
 
-As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuration* philosophy. EF Core conventions shorten development time by inferring the developer's intent. For example, a property named `Id` or `<entity name>Id` is inferred to be the generated table's primary key. If you choose not to adopt the naming convention, the property must be annotated with the `[Key]` attribute.
-
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
@@ -182,6 +180,9 @@ EF Core created a database for your app. Let's take a look inside the database.
     - Properties named `Id` were inferred to be auto-incrementing primary key fields.
     - A `PizzaTopping` junction table was created to represent many-to-many relationship between pizzas and toppings.
     - EF Core's primary key and foreign key constraint naming conventions are `PK_<Primary key property>` and `FK_<Dependent entity>_<Principal entity>_<Foreign key property>`, respectively. The `<Dependent entity>` and `<Principal entity>` placeholders correspond to the entity class names.
+
+    > [!NOTE]
+    > As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuration* philosophy. EF Core conventions shorten development time by inferring the developer's intent. For example, a property named `Id` or `<entity name>Id` is inferred to be the generated table's primary key. If you choose not to adopt the naming convention, the property must be annotated with the `[Key]` attribute.
 
 ## Change the model and update the database schema
 
