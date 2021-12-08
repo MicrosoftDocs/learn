@@ -54,7 +54,7 @@ quiz:
   - content: "What method is used to remove a key from a dictionary?"
     choices:
     - content: "values"
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. values is used to retrieve all the values in a dictionary."
     - content: "[]"
       isCorrect: false

@@ -34,6 +34,7 @@ units:
 - learn.beginner-python.python-dictionaries.dictionary-basics
 - learn.beginner-python.python-dictionaries.exercise-create-modify
 - learn.beginner-python.python-dictionaries.dynamic-programming
+- learn.beginner-python.python-dictionaries.exercise-dynamic-programming
 - learn.beginner-python.python-dictionaries.knowledge-check
 - learn.beginner-python.python-dictionaries.summary
 badge:
