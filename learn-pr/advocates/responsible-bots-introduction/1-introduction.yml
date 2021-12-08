@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.responsible-bots.1-introduction
+uid: learn.advocates.responsible-bots-introduction.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Learn how to use bots for tedious tasks. Understand why it's important for bots to treat people fairly and respectfully."
+  description: At a high level, learn about conversational AI and the importance of making bots responsible. Look at a bot that teaches students geography.
   ms.date: 12/03/2021
   author: JKirsch1
   ms.author: chnoring
