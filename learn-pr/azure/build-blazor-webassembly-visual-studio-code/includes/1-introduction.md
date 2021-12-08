@@ -1,4 +1,4 @@
-Blazor lets C# developers use their skills to build web apps with C# and Microsoft. NET.
+Blazor lets C# developers use their skills to build web apps with C# and Microsoft.NET.
 
 Imagine you're building a client-side web app and already have a team of .NET developers. Also, imagine you want to deploy your app as a progressive web application. Users could then download the app and use it offline.
 
