@@ -51,7 +51,6 @@ modules:
 - learn-wwl.enable-digital-transformation
 - learn.oxford.intro-to-iot-hub
 - learn.manage-iot-devices
-- learn.oxford.intro-to-iot-edge
 - learn.iot.introduction-lambda-architecture-iot-solutions
 - learn.iot.explore-and-analyze-time-series-insights
 trophy:
