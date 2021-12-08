@@ -19,15 +19,15 @@ quiz:
   questions:
   - content: "An Azure Stack Hub operator receives a critical alert for an Azure Event Hubs event that occurred 8 hours prior. A Microsoft support engineer requests the operator send the Event Hubs log. The request was for six hours following the alert. Which command should the operator run?"
     choices:
-    - content: "Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”"
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
       isCorrect: true
-      explanation: "Correct. These are the parameters for collecting logs for EventHubs and Collect logs from virtual machines with the date filtering for the period between 8 hours ago and 2 hours ago."
-    - content: "Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByRole “EventHub”"
+      explanation: "Correct. These are the parameters for collecting logs for Event Hubs and Collect logs from virtual machines with the date filtering for the period between 8 hours ago and 2 hours ago."
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByRole “EventHub”```"
       isCorrect: false
-      explanation: "Incorrect. The correct command is Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”"
-    - content: "Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByNode “EventHub”"
+      explanation: "Incorrect. The correct command is ```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
+    - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByNode “EventHub”```"
       isCorrect: false
-      explanation: "Incorrect. The correct command is Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”"
+      explanation: "Incorrect. The correct command is ```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
   - content: "An Azure Stack Hub operator is working with a Microsoft Support Engineer to troubleshoot a system. The Support Engineer wants to review automatically uploaded logs. What should the operator make available?"
     choices:
     - content: "The Azure Stack Hub Cloud Identification (ID)"
