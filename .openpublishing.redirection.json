@@ -10239,6 +10239,561 @@
       "source_path": "learn-pr/iot/route-output-from-azure-digital-twins-to-downstream-services/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-digital-twins-implementation/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-intelligent-edge-with-azure-iot-edge/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/8-connect-downstream-device-iot-edge-gateway.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/7-create-downstream-device-identity-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/2-create-iot-edge-device-identity-iot-hub-using-azure-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/3-deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/4-generate-configure-iot-edge-device-certificates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/6-open-iot-edge-gateway-device-ports-communication-downstream-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/5-set-up-iot-edge-gateway-hostname.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/set-up-iot-edge-gateway/9-verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-gateway-device-configuration/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/2-what-is-prebuilt-module.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/3-how-setup-communication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/4-exercise-setup-communication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/5-how-deploy-prebuilt-module.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/6-exercise-deploying-prebuilt-module.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/3-how-iot-edge-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/2-what-is-iot-edge.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/4-when-to-use-iot-edge.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/7-automated-firmware-update-scale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/8-exercise-automated-firmware-update-scale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/2-exercise-create-iot-hub-device-id-using-azure-cli.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/4-exercise-write-code-to-simulate-device-implements-firmware-update.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/3-firmware-update-mechanism.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/6-knowledge-check-simple-firmware-update-configuration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/5-test-firmware-update-single-device.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/2-create-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/6-exercise-create-code-sensor-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/4-exercise-create-dps-resource-root-certificate-group-enrollment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/5-exercise-create-multiple-leaf-certificates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/7-exercise-test-multiple-devices-provision-correctly.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/3-overview-dps-x509-certificates-enrollments.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/securely-provision-iot-devices-at-scale-with-device-provisioning-service/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-provisioning-service-terms-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/2-create-iot-hub-device-id.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/5-create-iot-stream-analytics-job.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/6-exercise-create-iot-stream-analytics-job.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/8-exercise-search-anomalies-built-in-model-query.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/4-exercise-write-code-device-telemetry.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/7-search-anomalies-built-in-model-query.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/data-anomaly-detection-using-azure-iot-hub/3-write-code-device-telemetry.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-message-routing/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/2-exercise-create-iot-hub-device-id.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/5-exercise-create-metrics-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/6-exercise-test-metrics-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/3-exercise-write-device-telemetry-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/4-overview-iot-hub-metrics-alerts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-azure-iot-hub-with-metrics-alerts/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-solution-monitoring-logging/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/2-create-iot-hub-device-id.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/4-exercise-write-code-device-telemetry.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/8-exercise-write-code-device-twins.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/6-exercise-write-code-direct-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/3-write-code-device-telemetry.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/7-write-code-device-twins.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/remotely-monitor-devices-with-azure-iot-hub/5-write-code-direct-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-device-management-concepts-methods/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/1-intro-ops-iot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/2-raspberry-pi-emulator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/3-connect-device.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/3b-administer-your-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/manage-iot-devices/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-device-configuration-communication/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/securely-connect-iot-devices/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/1-Introduction.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/2-What-is-digital-transformation.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/6-knowledge-check.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/7-summary-resources.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/4-action.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/3-success-factors.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/5-why-digitally-transform-with-microsoft.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-to-azure-iot/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/4-analyze-data-ad-hoc.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/2-create-iot-hub-simulate-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/3-create-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/3-learn-about-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/4-learn-about-cosmos-db-structure-consistency.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/5-learn-about-data-through-time-series-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/2-learn-about-hot-cold-paths-lambda-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/3-how-iot-hub-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/2-what-is-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/4-when-to-use-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
     }
   ]
 }
