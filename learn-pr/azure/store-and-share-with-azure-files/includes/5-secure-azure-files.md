@@ -17,23 +17,23 @@ When you mount Azure file shares, Windows needs to communicate over port 445. Or
 
 To limit access to your on-premises networks, you'll need to configure IP-based firewall rules. Therefore, you need to know your public-facing IP address. With this information, you can enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either via the Azure portal, by running a PowerShell command, or by running an Azure CLI command.
 
-PowerShell command to configure firewall access for a storage account.
+PowerShell command to configure firewall access for a storage account:
 
-    ```powershell
-    Add-AzStorageAccountNetworkRule `
-        -ResourceGroupName "myresourcegroup" `
-        -AccountName "mystorageaccount" `
-        -IPAddressOrRange "NNN.NNN.NNN.NNN"
-    ```
+```powershell
+Add-AzStorageAccountNetworkRule `
+    -ResourceGroupName "myresourcegroup" `
+    -AccountName "mystorageaccount" `
+    -IPAddressOrRange "NNN.NNN.NNN.NNN"
+```
 
-Azure CLI command to configure firewall access for a storage account.
+Azure CLI command to configure firewall access for a storage account:
 
-    ```azurecli
-    az storage account network-rule add \
-        --resource-group "myresourcegroup" \
-        --account-name "mystorageaccount" \
-        --ip-address "NNN.NNN.NNN.NNN"
-    ```
+```azurecli
+az storage account network-rule add \
+    --resource-group "myresourcegroup" \
+    --account-name "mystorageaccount" \
+    --ip-address "NNN.NNN.NNN.NNN"
+```
 
 where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
@@ -43,27 +43,27 @@ Running the commands in the previous section creates an Azure storage account wi
 
 If you created file shares without secure transfer enabled, it's easy to enable this feature either in the portal, by running a PowerShell command, or by running an Azure CLI command.
 
-Azure portal configuration to enable secure transfer for storage accounts. 
+Azure portal configuration to enable secure transfer for storage accounts:
 
- :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
+:::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page for storage accounts.":::
 
-PowerShell command to enable secure transfer for a storage account.
+PowerShell command to enable secure transfer for a storage account:
 
-    ```powershell
-    Set-AzStorageAccount `
-        -Name "StorageAccountName" `
-        -ResourceGroupName "ResourceGroupName" `
-        -EnableHttpsTrafficOnly $True
-    ```
+```powershell
+Set-AzStorageAccount `
+    -Name "StorageAccountName" `
+    -ResourceGroupName "ResourceGroupName" `
+    -EnableHttpsTrafficOnly $True
+```
 
-Azure CLI command to enable secure transfer for a storage account.
+Azure CLI command to enable secure transfer for a storage account:
 
-    ```azurecli
-    az storage account update \
-        --resource-group ResourceGroupName \
-        --name StorageAccountName \
-        --https-only true
-    ```
+```azurecli
+az storage account update \
+    --resource-group ResourceGroupName \
+    --name StorageAccountName \
+    --https-only true
+```
 
 The secure transfer option only allows requests to the storage account over a secure HTTPS connection. Any requests that use HTTP will be rejected. When you use Azure Files, connections without encryption will fail, even when you use SMB 2.1, SMB 3.0 without encryption, or some flavors of the Linux SMB client.
 
@@ -71,9 +71,9 @@ The secure transfer option only allows requests to the storage account over a se
 
 The finance company is running their new reporting application on a VM hosted on Azure. They'd like to set up Azure Active Directory Domain Services (AD DS) authentication to access the file shares before they move more of their processing into the cloud.
 
-The benefits of Azure AD DS are that you can manage access with role-based access controls. Files inherit their existing NTFS discretionary access control lists (DACLs).
+The benefit of Azure AD DS is that you can manage access with role-based access controls. Files inherit their existing NTFS DACLs.
 
-The first step in setting up Azure AD DS is to enable Azure AD DS for the tenant and have the VM reside in the same virtual network. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
+The first step in setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same virtual network. Once you've done that, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
 
 ![Diagram showing the steps required to set up Azure AD DS.](../media/5-azure-active-directory-over-smb-workflow.svg)
 
