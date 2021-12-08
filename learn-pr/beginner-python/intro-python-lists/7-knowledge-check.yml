@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.intro-python-lists.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check - Python lists # user input: module title for browser tab and search results
+  description: Check your knowledge! Python lists. # user input: a description for site search and SEO
+  ms.date: 12/03/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What symbol is used to start and finish a list?"
+    choices:
+    - content: "Parenthesis `()`"
+      isCorrect: false
+      explanation: "Incorrect. Square Brackets `[]` are used to create a list."
+    - content: "Square Brackets `[]`"
+      isCorrect: true
+      explanation: "Correct! Square Brackets `[]` are used to create a list."
+    - content: "Curly Brackets `{}`"
+      isCorrect: false
+      explanation: "Incorrect. Square Brackets `[]` are used to create a list."
+  - content: "Which statement would return the **first** value in the list, `planets`?"
+    choices:
+    - content: "planets[-1]"
+      isCorrect: false
+      explanation: "Incorrect. 0 is the first item in a list."
+    - content: "planets[1]"
+      isCorrect: false
+      explanation: "Incorrect. 0 is the first item in a list."
+    - content: "planets[0]"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which statement would return the **last** value in the list, `planets`?"
+    choices:
+    - content: "planets[-1]"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "planets[last]"
+      isCorrect: false
+      explanation: "Incorrect. planets[-1] returns the last value in a list.]"
+    - content: "planets[]"
+      isCorrect: false
+      explanation: "Incorrect. planets[-1] returns the last value in a list."
+  - content: "Which statement would sort the list, `planets`?"
+    choices:
+    - content: "planets.sort()"
+      isCorrect: true
+      explanation: "Correct! The sort() method will sort the items in a list."
+    - content: "planets.in_order()"
+      isCorrect: false
+      explanation: "Incorrect. Use the sort() method to sort a list."
+    - content: "planets.sorted()"
+      isCorrect: false
+      explanation: "Incorrect. Use the sort() method to sort a list."
