@@ -782,3 +782,23 @@ achievements:
   title: Output from Azure Digital Twins to downstream services
   summary: Output from Azure Digital Twins to downstream services
   iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
+- uid: learn.build-intelligent-edge-with-azure-iot-edge.trophy
+  type: trophy
+  title: Build the intelligent edge with Azure IoT Edge
+  summary: Build the intelligent edge with Azure IoT Edge
+  iconUrl: /learn/achievements/build-the-intelligent-edge-with-azure-iot-edge.svg
+- uid: learn.iot.set-up-iot-edge-gateway.badge
+  type: badge
+  title: Set up an IoT Edge Gateway
+  summary: Set up an IoT Edge Gateway
+  iconUrl: /learn/achievements/set-up-iot-edge-gateway.svg
+- uid: learn.deploy-built-module-iot-edge.badge
+  type: badge
+  title: Deploy a pre-built module to the Edge device
+  summary: Deploy a pre-built module to the Edge device
+  iconUrl: /learn/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
+- uid: learn.introduction-to-iot-edge.badge
+  type: badge
+  title: Introduction to Azure IoT Edge
+  summary: Introduction to Azure IoT Edge
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-edge.svg
