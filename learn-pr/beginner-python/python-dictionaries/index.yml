@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.beginner-python.python-dictionaries
+metadata:
+  moduleType: standard
+  title: "Manage data with Python dictionaries" # user input: module title for browser tab and search results
+  description: "Most programs need to work with data more complex than strings or numbers. Python dictionaries allow you to create data types to model more complex information and relationships. This module explores how to create and utilize dictionaries in Python." # user input: a description for site search and SEO
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Manage data with Python dictionaries
+summary: "Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  By the end of this module, you'll be able to:
+    - Identify when to use a dictionary
+    - Create and modify data inside a dictionary
+    - Utilize keys and values methods to access dictionary data
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - Basic Python programming knowledge which includes use of variables, strings, integers and math
+  - Experience working with lists in Python
+  - Experience modifying and running code in Jupyter notebooks
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - beginner
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - student
+  - developer
+products:
+  - vs
+units:
+- learn.beginner-python.python-dictionaries.introduction
+- learn.beginner-python.python-dictionaries.dictionary-basics
+- learn.beginner-python.python-dictionaries.exercise-create-modify
+- learn.beginner-python.python-dictionaries.dynamic-programming
+- learn.beginner-python.python-dictionaries.knowledge-check
+- learn.beginner-python.python-dictionaries.summary
+badge:
+  uid: learn.beginner-python.python-dictionaries.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-dictionaries.exercise-dynamic-programming
+title: Enter exercise title
+metadata:
+  unitType: exercise
+  title: "Exercise: Dynamic programming with dictionaries" # user input: module title for browser tab and search results
+  description: "In this exercise you will use keys and values to perform calculations on the data inside a dictionary." # user input: a description for site search and SEO
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+sandbox: true
+notebook: notebooks/5-exercise-dynamic-programming.ipynb
