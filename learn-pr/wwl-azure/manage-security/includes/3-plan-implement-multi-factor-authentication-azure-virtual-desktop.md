@@ -1,11 +1,11 @@
 The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop with your local machine. However, when you configure your Azure Virtual Desktop account into the Windows client, there are certain actions you'll need to take to keep your users safe.
 
-When you first sign in, the client asks for your username, password, and Azure Active Directory Multi-Factor Authentication. The next time you sign in, the client will remember your token from your Azure Active Directory (AD) Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
+When you first sign in, the client asks for your username and password. The next time you sign in, the client will remember your token from your Azure Active Directory (AD) Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
 
 :::image type="content" source="../media/mulit-factor-conditional-access-d59ef41d.png" alt-text="Image of conditional access.":::
 
 
-While remembering credentials is convenient, it can also make deployments on Enterprise scenarios or personal devices less secure. To protect your users, you can make sure the client keeps asking for Azure Active Directory Multi-Factor Authentication credentials more frequently.
+While remembering credentials is convenient, it can also make deployments on Enterprise scenarios or personal devices less secure. To protect your users, you can make sure the client keeps asking for multifactor authentication credentials more frequently.
 
 This unit shows you how to configure the Conditional Access policy for Azure Virtual Desktop to enable this setting.
 
@@ -13,7 +13,7 @@ Here's what you'll need:
 
  -  Assign users a license that includes Azure Active Directory Premium P1 or P2.
  -  An Azure Active Directory group with your users assigned as group members.
- -  Enable Azure Active Directory Multi-Factor Authentication for all your users.
+ -  Enable multifactor authentication for all your users.
 
 ## Create a Conditional Access policy
 
