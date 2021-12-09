@@ -51,9 +51,6 @@ For example, to create a composite index of ``(name ASC, price DESC)``, you can 
   "includedPaths": [
     {
       "path": "/*"
-    },
-    {
-      "path": "/categoryName/?"
     }
   ],
   "excludedPaths": [
