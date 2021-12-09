@@ -16,7 +16,7 @@ The Azure Security Benchmark includes a collection of high-impact security recom
 ### Implement the Azure Security Benchmark
 
  -  Plan your Azure Security Benchmark implementation by reviewing the documentation for the enterprise controls and service-specific baselines to plan your control framework and how it maps to guidance like CIS (Controls v7.1) and NIST (SP 800-53) framework.
- -  Monitor your compliance with Azure Security Benchmark status (and other control sets) using the Azure Security Center regulatory compliance dashboard.
+ -  Monitor your compliance with Azure Security Benchmark status (and other control sets) using the regulatory compliance dashboard.
  -  Establish guardrails to automate secure configurations and enforce compliance with Azure Security Benchmark (and other requirements in your organization) with Azure Blueprints and Azure Policy.
 
 Azure Security Benchmark v2 is aligned with Microsoft Security Best Practices so that Azure Security Benchmark provides a single consolidated view of Microsoft’s Azure security recommendations.
@@ -40,13 +40,13 @@ The terms "control", "benchmark", and "baseline" are used often in the Azure Sec
 | Benchmark |                           A benchmark contains security recommendations for a specific technology, such as Azure. The recommendations are categorized by the control to which they belong.                           |                        The Azure Security Benchmark comprises the security recommendations specific to the Azure platform                        |
 | Baseline  | A baseline is the implementation of the benchmark on the individual Azure service. Each organization decides benchmark recommendation and corresponding configurations are needed in the Azure implementation scope. |   The Contoso company looks to enabling Azure SQL security features by following the configuration recommended in Azure SQL security baseline.   |
 
-## Using Azure Security Center for regulatory compliance
+## Using Microsoft Defender for Cloud for regulatory compliance
 
-Azure Security Center helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard.
+Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard.
 
 The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
-### Security Center regulatory compliance dashboard
+### Regulatory compliance dashboard
 
 :::image type="content" source="../media/compliance-dashboard-799a65d6.png" alt-text="Security Center regulatory compliance dashboard":::
 
@@ -129,13 +129,13 @@ Network Security covers controls to secure and protect Azure networks, including
 
 Segmentation and isolation of virtual networks should be applied based on business risks. Generally, "deny by default, permit by exception" approach should be followed.
 
-Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud as well as on premises. Use Azure Security Center to:
+Microsoft Defender for Cloud is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud as well as on premises. Use Microsoft Defender for Cloud to:
 
  -  **Strengthen security posture:** Security Center assesses your environment and enables you to understand the status of your resources, and whether they are secure.
  -  **Protect against threats:** Security Center assesses your workloads and raises threat prevention recommendations and security alerts.
  -  **Get secure faster:** In Security Center, everything is done in cloud speed. Because it is natively integrated, deployment of Security Center is easy, providing you with auto-provisioning and protection with Azure services.
 
-[Azure Security Center Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Azure Security Center - nothing needs to be installed on your machines to benefit from this network hardening tool. [Azure Security Center Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Azure Security Center](/azure/security-center/security-center-adaptive-network-hardening).
+[Microsoft Defender for Cloud Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) is an agentless feature of Microsoft Defender for Cloud - nothing needs to be installed on your machines to benefit from this network hardening tool. [Microsoft Defender for Cloud Adaptive Network Hardening](/azure/security-center/security-center-adaptive-network-hardening) provides guidance about recommended network security group configurations like limiting ports and source IPs with reference to external network traffic rules. For more information on adaptive network hardening, see [Adaptive network hardening in Microsoft Defender for Cloud](/azure/security-center/security-center-adaptive-network-hardening).
 
 ### NS-2: Connect private networks together
 
