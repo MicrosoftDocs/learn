@@ -97,10 +97,11 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     In the preceding code:
 
-    - The `DbSet<T>` properties correspond to tables to be created in the database. 
-    - The table names will match the `DbSet<T>` property names in the `ContosoPetsContext` class.
+    - The `DbSet<T>` properties correspond to tables to be created in the database.
+    - The table names will match the `DbSet<T>` property names in the `ContosoPetsContext` class. This behavior can be overridden if needed.
+    - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.    
 
-1. In *Program.cs*, replace `// Add the AddDbContextCode` with the following code:
+1. In *Program.cs*, replace `// Add the AddDbContext code` with the following code:
 
     ```csharp
     builder.Services.AddDbContext<PizzaContext>(options =>
@@ -116,7 +117,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     > [!NOTE]
     > For Sqlite, which uses local database files, it's probably okay to hardcode the connection string like this. However, for network databases like PostgreSQL or SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secret). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
-1. Also in *Program.cs*, replace `//Additional using declarations` with the following code.
+1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 
     ```csharp
     using ContosoPizza.Data;
@@ -129,7 +130,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
 ## Create and run a migration
 
-You've done all you need to create a migration.
+You've done all you need to create a migration for creating your initial database.
 
 1. Run the following command to generate a migration for creating the database tables:
 
@@ -150,7 +151,7 @@ You've done all you need to create a migration.
     dotnet ef database update --context PizzaContext
     ```
 
-    Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory. Corresponding `.db-wal` (write-ahead log) and `.db-shm` (shared memory) files are also created.
+    Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory. Sqlite's corresponding `.db-wal` (write-ahead log) and `.db-shm` (shared memory) files are also created.
 
     > [!TIP]
     > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's preferable to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the **Package Manager Console** window.
@@ -167,11 +168,11 @@ EF Core created a database for your app. Let's take a look inside the database.
 
     :::image type="content" source="../media/open-database.png" alt-text="The Open Database menu option":::
 
-    A **SQLITE EXPLORER** pane that opens on the **Explorer** tab.
+    A **SQLITE EXPLORER** pane opens on the **Explorer** tab.
 
 1. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
-    :::image type="content" source="../media/sqlite-explorer.png" alt-text="The Sqlite Explorer pane.":::
+    :::image type="content" source="../media/sqlite-explorer.png" alt-text="The Sqlite Explorer pane":::
 
     Note the following:
 
@@ -244,7 +245,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
         > [!NOTE]
-        > This is to prevent `Topping` from including the `Pizzas` property when serializing to JSON. Without this, serializing a collection of toppings would include a collection of every pizza that uses the topping. Each pizza in that collection would contain a collection of toppings, which each would again contain a collection of pizzas. This infinite loop is called a *circular reference*.
+        > This is to prevent `Topping` entities from including the `Pizzas` property when serializing to JSON. Without this, serializing a collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -288,7 +289,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 1. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
-    > [!TIP]
+    > [!IMPORTANT]
     > The Sqlite extension will re-use open **Sqlite** tabs.
 
     Note the following:
@@ -298,6 +299,9 @@ EF Core created a database for your app. Let's take a look inside the database.
         - Similarly, `IsVegan` is defined as an `INTEGER` column. Sqlite doesn't define a `bool` type.
         - In both cases, EF Core manages the translation.
     - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint. EF Core will enforce the length validation, however.
+
+    > [!TIP]
+    > EF Core database providers handle mapping model schema to a particular database's features. While Sqlite doesn't implement a corresponding constraint for `MaxLength`, other databases, like SQL Server and PostgreSQL do.
 
 1. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
 
