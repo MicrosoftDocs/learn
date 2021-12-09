@@ -10852,6 +10852,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/expand-query-transaction-functionality-azure-cosmos-db-sql-api/6-exercise-create-pre-trigger-azure-portal-then-sdk.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/expand-query-transaction-functionality-azure-cosmos-db-sql-api/6-exercise-implement-use-user-defined-functions-with-the-sdk",
+      "redirect_document_id": true
     }
   ]
 }
