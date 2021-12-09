@@ -2,7 +2,7 @@ Kusto Query Language (KQL) lets you explore your data and discover patterns, ide
 
 ## Example scenario
 
-You're a data analyst with a passion for meteorological data. You want to use KQL to explore and prepare a dataset that will enable you to answer basic questions about the kinds and locations of storms in the US. In particular, you want to compare the impact of different types of storms in different locations.
+You're a data analyst with a passion for meteorological data. You want to use KQL to manipulate and consolidate a dataset that will enable you to answer questions about the kinds and locations of storms in the US. In particular, you want to compare the impacts of different types of storms in various locations.
 
 ## What will we be doing?
 

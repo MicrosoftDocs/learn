@@ -29,7 +29,6 @@ Familiarity with Kusto Query Language operators such as count, take, project, wh
 
 ## Summary
 
-Add the summary [(Summary guidance)](/help/learn/id-guidance-introductory-summaries)
 Write advanced queries in Kusto Query Language to help you gain insights from your data. Learn how to use the aggregation operators `count`, `dcount`, `countif`, `sum`, `min`,`max`, `avg`, `percentiles`, and others. Communicate these results visually in charts. 
 
 ## Learning objectives
