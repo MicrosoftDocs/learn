@@ -6,6 +6,7 @@ metadata:
   description: "Describe the purpose of Azure Update Management"
   ms.date: 12/09/2021
   author: wwlpublish
+  ms.author: tonyj
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
