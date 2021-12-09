@@ -4,7 +4,7 @@ Let's make one more change to our bot's behavior.
 
 With your bot project visible in Visual Studio, open your bot code file, `EchoBot.cs`:
 
-In the previous unit, we modified the `OnMessageActivityAsync` function, which is the primary function in this file. This function is called each time the bot receives a message from the user. We changed the code to make the bot return a capital when a user enters a country.
+In the previous unit, we modified the `OnMessageActivityAsync` function, which is the primary function in this file. This function is called each time the bot receives a message from the user. We changed the code to make the bot return a capital/major city when a user enters a country/region.
 
 Now we'll reprogram a different function in that file, `OnMembersAddedAsync`. This function is called when a new user enters the chat. We use this function to display the initial welcome message to the user.
 
