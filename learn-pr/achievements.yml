@@ -717,3 +717,148 @@ achievements:
   title: Explore data storage and processing in Azure
   summary: Explore data storage and processing in Azure
   iconUrl: /learn/achievements/explore-data-storage-processing-azure.svg
+- uid: learn-wwl.azure-iot-strategy-and-solutions.badge
+  type: badge
+  title: Microsoft Azure IoT strategy and solutions
+  summary: Microsoft Azure IoT strategy and solutions
+  iconUrl: /learn/achievements/azure-iot-strategy-and-solutions.svg
+- uid: learn.java-on-azure.trophy
+  type: trophy
+  title: Java on Azure
+  summary: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  iconUrl: /learn/achievements/java-on-azure.svg
+- uid: learn.develop-solutions-with-azure-iot-central.trophy
+  type: trophy
+  title: Develop IoT solutions with Azure IoT Central
+  summary: Develop IoT solutions with Azure IoT Central
+  iconUrl: /learn/achievements/develop-solutions-with-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an IoT Edge device to your IoT Central application
+  summary: Connect an IoT Edge device to your IoT Central application
+  iconUrl: /learn/achievements/connect-iot-edge-device-to-iot-central.svg
+- uid: learn.iot.continuous-data-export-from-iot-central.badge
+  type: badge
+  title: Set up continuous data export from Azure IoT Central to a Power BI app
+  summary: Set up continuous data export from Azure IoT Central to a Power BI app
+  iconUrl: /learn/achievements/iot/continuous-data-export-from-iot-central.svg
+- uid: learn.iot.iot-central-refrigerated-truck-module.badge
+  type: badge
+  title: Create your first Azure IoT Central app
+  summary: Create your first Azure IoT Central app
+  iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
+- uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
+  type: badge
+  title: Manage IoT Central applications with the REST API
+  summary: Manage IoT Central applications with the REST API
+  iconUrl: /learn/achievements/manage-iot-central-apps-with-rest-api.svg
+- uid: learn.iot.set-up-rules-take-actions-telemetry-data-azure-iot-central.badge
+  type: badge
+  title: Set up rules and take action on telemetry data in Azure IoT Central
+  summary: Set up rules and take action on telemetry data in Azure IoT Central
+  iconUrl: /learn/achievements/iot/set-up-rules-take-actions-telemetry-data-azure-iot-central.svg
+- uid: learn.develop-azure-digital-twins.trophy
+  type: trophy
+  title: Develop with Azure Digital Twins
+  summary: Develop with Azure Digital Twins
+  iconUrl: /learn/achievements/develop-azure-digital-twins.svg
+- uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.badge
+  type: badge
+  title: Build an Azure Digital Twins graph for a chocolate factory production line
+  summary: Build an Azure Digital Twins graph for a chocolate factory production line
+  iconUrl: /learn/achievements/iot/build-azure-digital-twins-graph-for-chocolate-factory.svg
+- uid: learn.iot.connect-input-to-azure-digital-twins.badge
+  type: badge
+  title: Ingest Data into Azure Digital Twins
+  summary: Ingest Data into Azure Digital Twins
+  iconUrl: /learn/achievements/iot/connect-input-to-azure-digital-twins.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /learn/achievements/iot/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.output-from-adt-to-downstream-services.badge
+  type: badge
+  title: Output from Azure Digital Twins to downstream services
+  summary: Output from Azure Digital Twins to downstream services
+  iconUrl: /learn/achievements/iot/output-from-adt-to-downstream-services.svg
+- uid: learn.build-intelligent-edge-with-azure-iot-edge.trophy
+  type: trophy
+  title: Build the intelligent edge with Azure IoT Edge
+  summary: Build the intelligent edge with Azure IoT Edge
+  iconUrl: /learn/achievements/build-the-intelligent-edge-with-azure-iot-edge.svg
+- uid: learn.iot.set-up-iot-edge-gateway.badge
+  type: badge
+  title: Set up an IoT Edge Gateway
+  summary: Set up an IoT Edge Gateway
+  iconUrl: /learn/achievements/set-up-iot-edge-gateway.svg
+- uid: learn.deploy-built-module-iot-edge.badge
+  type: badge
+  title: Deploy a pre-built module to the Edge device
+  summary: Deploy a pre-built module to the Edge device
+  iconUrl: /learn/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
+- uid: learn.introduction-to-iot-edge.badge
+  type: badge
+  title: Introduction to Azure IoT Edge
+  summary: Introduction to Azure IoT Edge
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-edge.svg
+- uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.badge
+  type: badge
+  title: Automate IoT devices management with Azure IoT Hub
+  summary: Automate IoT devices management with Azure IoT Hub
+  iconUrl: /learn/achievements/iot/automate-iot-devices-management-with-azure-iot-hub.svg
+- uid: learn.iot.automatically-provision-iot-devices-securely-at-scale-with-dps.badge
+  type: badge
+  title: Automatically provision IoT devices securely and at scale with the Device Provisioning Service
+  summary: Automatically provision IoT devices securely and at scale with the Device Provisioning Service
+  iconUrl: /learn/achievements/iot/automatically-provision-iot-devices-securely-at-scale-with-dps.svg
+- uid: learn.iot.iot-hub-conveyor-belt-vibration-detection.badge
+  type: badge
+  title: Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics
+  summary: Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics
+  iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+- uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.badge
+  type: badge
+  title: Manage your Azure IoT Hub with alerts and metrics
+  summary: Manage your Azure IoT Hub with alerts and metrics
+  iconUrl: /learn/achievements/iot/manage-your-azure-iot-hub-with-metrics-alerts.svg
+- uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.badge
+  type: badge
+  title: Remotely monitor and control devices with Azure IoT Hub
+  summary: Remotely monitor and control devices with Azure IoT Hub
+  iconUrl: /learn/achievements/iot/remotely-monitor-and-control-devices-with-azure-iot-hub.svg
+- uid: learn.manage-iot-devices.badge
+  type: badge
+  title: Learn how to manage IoT devices as an IT admin
+  summary: Learn how to manage IoT devices as an IT admin
+  iconUrl: /learn/achievements/manage-your-iot-devices.svg
+- uid: learn.securely-connect-iot-devices-to-cloud.trophy
+  type: trophy
+  title: Securely connect IoT devices to the cloud
+  summary: Securely connect IoT devices to the cloud
+  iconUrl: /learn/achievements/securely-connect-iot-devices-to-the-cloud.svg
+- uid: learn-wwl.enable-digital-transformation.badge
+  type: badge
+  title: Enabling digital transformation
+  summary: Enabling digital transformation
+  iconUrl: /learn/achievements/enable-digital-transformation.svg
+- uid: learn.introduction-to-azure-iot.trophy
+  type: trophy
+  title: Introduction to Azure IoT
+  summary: Introduction to Azure IoT
+  iconUrl: /learn/achievements/introduction-to-azure-iot.svg
+- uid: learn.iot.explore-and-analyze-time-series-insights.badge
+  type: badge
+  title: Explore and analyze time-stamped data with Time Series Insights
+  summary: Explore and analyze time-stamped data with Time Series Insights
+  iconUrl: /learn/achievements/iot/explore-analyze-time-stamped-data-time-series-insights.svg
+- uid: learn.iot.introduction-lambda-architecture-iot-solutions.badge
+  type: badge
+  title: Introduction to implementing lambda architecture for IoT solutions
+  summary: Introduction to implementing lambda architecture for IoT solutions
+  iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
+- uid: learn.introduction-to-iot-hub.badge
+  type: badge
+  title: Introduction to Azure IoT Hub
+  summary: Introduction to Azure IoT Hub
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg

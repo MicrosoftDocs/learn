@@ -3,30 +3,30 @@ Tailwind Traders plans to adopt a hybrid cloud posture. This move will make its 
 
 In this unit, you'll learn how Tailwind Traders can monitor the configuration of its on-premises and cloud workloads and be alerted to any suspicious activity. You'll also learn how Tailwind Traders can streamline updates to its on-premises and cloud server operating systems.
 
-## What is Azure Security Center?
+## What is Microsoft Defender for Cloud?
 
-Azure Security Center allows you to assess the security configuration of various workloads. You can use Azure Security Center to:
+Microsoft Defender for Cloud allows you to assess the security configuration of various workloads. You can use Microsoft Defender for Cloud to:
 
 - Implement security best practices across infrastructure as a service (IaaS), platform as a service (PaaS), data, and on-premises resources.
 - Track security configuration compliance against regulatory standards.
 - Protect data by identifying suspicious activity, such as patterns associated with the exfiltration of data.
 - Classify data hosted in SQL databases.
 
-In hybrid environments, Security Center can be integrated with the Log Analytics agent to collect event-log events, event-tracing telemetry, and crash dump files. Security Center can then perform an analysis of that data to make recommendations or generate alerts that can be forwarded to an organization's Security Incident and Event Management (SIEM) system.
+In hybrid environments, Defender for Cloud can be integrated with the Log Analytics agent to collect event-log events, event-tracing telemetry, and crash dump files. Defender for Cloud can then perform an analysis of that data to make recommendations or generate alerts that can be forwarded to an organization's Security Incident and Event Management (SIEM) system.
 
-Tailwind Traders currently uses a variety of tools to assess whether the security configuration of its Windows Server and Linux workloads complies with published third-party standards. By adopting Azure Security Center, Tailwind Traders will be able to monitor and remediate the security configuration of its server operating systems on-premises and its growing deployment of workloads in the cloud as it adopts more hybrid technologies.
+Tailwind Traders currently uses a variety of tools to assess whether the security configuration of its Windows Server and Linux workloads complies with published third-party standards. By adopting Microsoft Defender for Cloud, Tailwind Traders will be able to monitor and remediate the security configuration of its server operating systems on-premises and its growing deployment of workloads in the cloud as it adopts more hybrid technologies.
 
-## What is Azure Sentinel?
+## What is Microsoft Sentinel?
 
-Azure Sentinel allows organizations with hybrid cloud solutions to ingest telemetry from security event logs for both on-premises and the cloud. Azure Sentinel is both a SIEM and a Security Orchestration, Automation, and Response (SOAR) solution. 
+Microsoft Sentinel allows organizations with hybrid cloud solutions to ingest telemetry from security event logs for both on-premises and the cloud. Microsoft Sentinel is both a SIEM and a Security Orchestration, Automation, and Response (SOAR) solution. 
 
-SIEM solutions store and analyze log data and event telemetry that they ingest from external sources. Azure Sentinel supports the ingestion of data from on-premises, Azure, and third-party cloud locations, including from other SIEM systems. SOAR solutions allow you to orchestrate analysis of data. They assist you in creating an automated response to known threats. 
+SIEM solutions store and analyze log data and event telemetry that they ingest from external sources. Microsoft Sentinel supports the ingestion of data from on-premises, Azure, and third-party cloud locations, including from other SIEM systems. SOAR solutions allow you to orchestrate analysis of data. They assist you in creating an automated response to known threats. 
 
 The following image shows a Sentinel hybrid architecture.
 
-:::image type="content" source="../media/image16.png" alt-text=" Log telemetry for on-premises workloads and workloads in third-party clouds is forwarded to Azure Security Center and Azure Sentinel." lightbox="../media/image16.png":::
+:::image type="content" source="../media/image16.png" alt-text=" Log telemetry for on-premises workloads and workloads in third-party clouds is forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." lightbox="../media/image16.png":::
 
-Azure Sentinel can perform the following tasks when it's supporting hybrid environments:
+Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 
 - Collect data across cloud-based and on-premises users, devices, applications, and infrastructure.
 - Use AI and deep learning to identify potentially malicious activity in event data.
@@ -35,7 +35,7 @@ Azure Sentinel can perform the following tasks when it's supporting hybrid envir
 
 Sentinel includes built-in workbooks that assist in the analysis of data and can provide recommendations for you. You can then quickly comprehend suspicious security telemetry instead of sorting through it to try to understand its meaning. You can also import or use custom workbooks based on the experiences of other security researchers who have found effective methods of security telemetry analysis that differ from those included in Sentinel.
 
-Tailwind Traders currently has an on-premises SIEM system that collects and analyzes event-log data from a variety of computers and devices. Although this SIEM system was adequate when Tailwind Traders had only an on-premises deployment, adopting Azure Sentinel will allow Tailwind Traders to extend this capacity into its hybrid cloud. 
+Tailwind Traders currently has an on-premises SIEM system that collects and analyzes event-log data from a variety of computers and devices. Although this SIEM system was adequate when Tailwind Traders had only an on-premises deployment, adopting Microsoft Sentinel will allow Tailwind Traders to extend this capacity into its hybrid cloud. 
 
 It's also likely that Tailwind Traders will connect its existing SIEM solution to Sentinel. This connection will give the company the benefits of Sentinel's AI and deep learning without having to substantially modify the existing on-premises configuration.
 

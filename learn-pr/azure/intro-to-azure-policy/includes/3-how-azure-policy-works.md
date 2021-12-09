@@ -1,72 +1,41 @@
 ## Azure Policy concepts
 
-To work with Azure Policy, you need to understand the following concepts:
+There are some concepts you need to understand in advance to work with Azure Policy and here we'll be covering them.
 
-- **Policy**: The business rule to be applied within your organization.
-- **Initiative**: A set of policies combined to simplify management. Both policies and initiatives are written in JSON format.
-- **Assignments**: The associations of initiatives or policies with scopes. A scope for Azure Policy might be a management group, an Azure subscription, or a resource group. All child resources inherit assignments.
-- **Definitions**: The list of built-in or custom initiatives and policies available to be assigned.
-- **Exemptions**: Rules that remove a resource hierarchically or individually from the evaluation of initiatives or definitions.
-- **Remediation**: A way to handle non-compliant resources. You create remediation tasks to help ensure the desired state for resources.
+**Policy:** A policy is the business rule to be applied within your organization.
 
-## Working with Azure Policy
+**Initiative:** An initiative is a set of policies combined to simplify management. Both policies and initiatives are written in JSON format.
 
-Azure Policy doesn't offer the same approach that you might get from a Group Policy object in Active Directory. You can use the guest configuration feature from Azure Policy to audit or configure settings inside a virtual machine. But generally, the intent of Azure Policy is to enforce business rules that establish conventions for your resources. The conditions take effect when the resources meet those conventions.
+**Definitions:** The definitions are the list of built-in or custom initiatives and policies available to be assigned.
 
-So the policies are made of conventions that you define. The conventions are evaluated in a specific order to take effect on the resources. The effects differ if they're for a new resource, an updated resource, or an existing resource.
+**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. Assignments are inherited by all child resources.
 
-The available effects are:
+**Exemptions:**: The exemptions are used to exempt a resource hierarchically or and individual resource from the evaluation of initiatives or definitions.
 
-* **Append**: Adds the defined set of fields to the request.
-* **Audit**: Generates a warning event in the activity log but doesn't fail the request.
-* **AuditIfNotExists**: Generates a warning event in the activity log if a related resource doesn't exist.
-* **Deny**: Generates an event in the activity log and fails the request.
-* **DeployIfNotExists**: Deploys a related resource if it doesn't already exist.
-* **Disabled**: Doesn't evaluate resources for compliance with the policy rule.
-* **Modify**: Adds, updates, or removes the defined tags from a resource or subscription.
+**Remediation:** A remediation is a way to handle non-compliant resources. It allows you to create remediation tasks and ensure the desired state for resources.
 
-The evaluation order is:
+## Resources covered
 
-1. **Disabled** is checked to determine whether the policy rule should be evaluated.
-1. **Append** and **Modify** are evaluated. Because either might alter the request, a change made might prevent an audit or deny an effect from triggering. These effects are available only with an Azure Resource Manager mode.
-1. **Deny** is evaluated. Evaluating **Deny** before **Audit** prevents double logging of an undesired resource.
-1. **Audit** is evaluated.
-
-After the evaluation, the effects can be applied to a resource.
-
-## Phases of Azure Policy implementation
-
-A successful implementation consists of the following phases.
-
-### Assess
-
-The assessment is an overview of the status of your environment. Before you make changes in your environment through policies to take actions, assign a policy just to audit your environment. To get this functionality, go to the Azure portal and select **Overview** from the menu.
-
-### Test
-
-Before you create policies to make changes in your environment, be sure to test everything. Validate your policy syntax, the actions that will be taken, and the scope in use (management groups, subscriptions, and resource groups). Validate all policy inclusions, exclusions, and exemptions.
-
-### Deploy
-
-For the initial deployment, make sure that you'll run your policy against a controlled environment or a dedicated subscription. Be aware that Azure Policy assignments don't come into effect immediately. There's a policy evaluation delay of around 30 minutes. Also, auditing your resources might take some time because the Azure Policy engine needs to evaluate all resources against policy rules within the assigned scope.
-
-### Check
-
-Finally, select **Compliance** to check the results of your policy assignments.
-
-:::image type="content" source="../media/2-compliance.png" alt-text="Screenshot that shows the Azure Policy compliance." lightbox="../media/2-compliance.png":::
-
-## Covered resources
-
-Azure Policy covers all Azure resources, including Azure Arc enabled resources. This means that, for example, you can extend the coverage of your controls to:
-
-* Windows and Linux physical servers.
-* Virtual machines hosted outside Azure on your corporate network or though another cloud provider. 
-
-For Azure resources, the usage of Azure Policy is free. For an Azure Arc resource, there is a fee.
+Azure policy covers all Azure resources, including Arc enabled resources. This means that you can extend the coverage of your controls over Windows and Linux physical servers,  virtual machines hosted outside of Azure, on your corporate network, or other cloud provider, as examples. For Azure resources the usage of Azure Policy is free, but for an Arc resource there is a fee associated.
 
 ## Related services
 
-* **Azure Blueprints**: A policy assignment is an artifact type from Azure Blueprints, so you can use Azure Blueprints to make policy assignments. You can also assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, Azure Resource Manager template, Bicep, and Terraform.
-* **Azure Resource Graph**: Through Azure Resource Graph, you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state, and more.
-* **Azure Security Center**: The recommendations from Azure Security Center come from  built-in security policy initiatives.
+* Azure Blueprints: A policy assignment is an artifact type from Azure Blueprints, meaning you can use Azure Blueprints to assign policy assignments. Note you can assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, ARM template, Bicep, and Terraform as well.
+* Azure Resource Graph: Through Azure Resource Graph you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state and more.
+* Azure Security Center: The recommendations from Azure Security Center come from  built-in security policies initiatives.
+
+
+## Costs of Azure Policy
+
+If you are using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you will be **charged**. Refer to the [Azure Policy Pricing](/pricing/details/azure-policy/) page for reference.
+
+* Azure Policy guest configuration (includes Azure Automation change tracking, inventory, state configuration): $6/Server/Month
+* Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
+
+> [!NOTE]
+>_Azure Arc is a service wich allows you to manage some resource types hosted outisde of Azure. Today, the following resource types are supported:_
+>* _Physical and Virtual Windows or Linux Servers_
+>* _Kubernetes clusters_
+>* _Azure data services such as Azure SQL Managed Instance and PostgreSQL Hyperscale services_
+>* _SQL Server_
+

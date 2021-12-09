@@ -1,7 +1,7 @@
 Authentication attacks occur when someone tries to steal another person's credentials. They can then pretend to be that person. Common attacks include, but are not limited to:
 
 - Brute force attack
-- Dictionary attack (or password spraying)
+- Dictionary attack
 - Credential stuffing
 - Keylogging
 - Social engineering
@@ -10,7 +10,7 @@ Authentication attacks occur when someone tries to steal another person's creden
 
 In a brute force attack, a criminal will attempt to gain access simply by trying different usernames and password combinations. Typically, attackers have tools that automate this process by using millions of username and password combinations. Simple passwords, with single-factor authentication, are vulnerable to brute force attacks.
 
-### Dictionary attack (or password spraying)
+### Dictionary attack
 
 A dictionary attack is a form of brute force attack, where a dictionary of commonly used words is applied. To prevent dictionary attacks, it’s important to use symbols, numbers, and multiple word combinations in a password.
 

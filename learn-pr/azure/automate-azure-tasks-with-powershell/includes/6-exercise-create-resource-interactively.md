@@ -31,6 +31,8 @@ Let's create a new Azure VM with PowerShell.
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
+1. Create a username and password, then press `Enter`. PowerShell will start creating your VM.
+
 1. This will take a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
 
     ```powershell

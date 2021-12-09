@@ -28,8 +28,8 @@ You can learn more by referencing the following documentation:
 - [Create an Azure file share][storage-how-to-create-file-share]
 - [Deploy Azure File Sync][storage-sync-files-deployment-guide]
 - [Stretch Database][stretch-database]
-- [Azure Security Center documentation][security-center]
-- [Azure Sentinel documentation][azure-sentinel]
+- [Microsoft Defender for Cloud documentation][security-center]
+- [Microsoft Sentinel documentation][azure-sentinel]
 - [Update Management overview][update-mgmt-overview]
 
 You can also learn more by reviewing the following Microsoft Learn modules:

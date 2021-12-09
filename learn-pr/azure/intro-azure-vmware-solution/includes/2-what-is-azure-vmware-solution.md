@@ -49,8 +49,8 @@ Native Azure tools and services like the following ones allow you to monitor and
 |---------|---------|
 |**Azure Active Directory**     |   You can use Azure Active Directory as the VMware vCenter SSO identity source.      |
 |**Log Analytics workspace**     | A Log Analytics workspace in Azure Monitor is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. After the solution is deployed into a subscription, Azure Monitor logs are generated automatically.        |
-|**Azure Security Center**     | Azure Security Center is a unified security management system for infrastructure. It strengthens the security of datacenters, and it provides advanced threat protection across hybrid workloads in the cloud or on-premises.        |
-|**Azure Sentinel**    |  Azure Sentinel is a cloud-native security information and event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
+|**Microsoft Defender for Cloud**     | Microsoft Defender for Cloud is a unified security management system for infrastructure. It strengthens the security of datacenters, and it provides advanced threat protection across hybrid workloads in the cloud or on-premises.        |
+|**Microsoft Sentinel**    |  Microsoft Sentinel is a cloud-native security information and event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
 |**Azure NetApp Files**    | Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on a Windows client.   |
 |**Azure Backup Server**     |   You can use Azure Backup Server to back up VMware VMs running on VMware ESXi hosts or vCenter Server to Azure.      |
 |**Azure Application Gateway**    | You can help protect web apps on Azure VMware Solution by using Azure Application Gateway. It's a layer-7 load balancer that enables the management of traffic to web applications.    |
@@ -69,4 +69,3 @@ Azure VMware Solution can be billed and charged in the following three ways. Cus
 |On demand     | Reserved capacity for one year       |  Reserved capacity for three years       |
 | Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
 |    |         |         |
-

@@ -31,6 +31,3 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 - **Integrate with identity providers**. Azure AD supports external identity providers like Facebook, Microsoft accounts, Google, or enterprise identity providers. You can set up federation with identity providers so your external users can sign in with their existing social or enterprise accounts instead of creating a new account just for your application. 
 
 - **Create a self-service sign-up user flow**. With a self-service sign-up user flow, you can create a sign-up experience for external users who want to access your apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user. You can also Customize the onboarding experience for B2B guest users. 
-
-> [!TIP]
-> Take a few minutes to review the [Azure Active Directory B2B collaboration demonstration](https://azure.microsoft.com/resources/videos/azure-active-directory-b2b-collaboration-demo/). 
