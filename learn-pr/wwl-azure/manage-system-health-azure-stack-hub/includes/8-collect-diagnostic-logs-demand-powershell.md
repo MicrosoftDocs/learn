@@ -23,8 +23,6 @@ If you're using the **Send logs now** method and want to use PowerShell instead 
  -  The **FromDate** and **ToDate** parameters can be used to collect logs for a particular time period. If these parameters aren't specified, logs are collected for the past four hours by default.
  -  Use the **FilterByNode** parameter to filter logs by computer name. For example:
 
-PowerShell
-
 ```
 Send-AzureStackDiagnosticLog -FilterByNode azs-xrp01
 
@@ -32,16 +30,12 @@ Send-AzureStackDiagnosticLog -FilterByNode azs-xrp01
 
  -  Use the FilterByLogType parameter to filter logs by type. You can choose to filter by File, Share, or WindowsEvent. For example:
 
-PowerShell
-
 ```
 Send-AzureStackDiagnosticLog -FilterByLogType File
 
 ```
 
  -  Use the **FilterByResourceProvider** parameter to send diagnostic logs for value-add Resource Providers (RPs). The general syntax is:
-
-PowerShell
 
 ```
 Send-AzureStackDiagnosticLog -FilterByResourceProvider <<value-add RP name>>
