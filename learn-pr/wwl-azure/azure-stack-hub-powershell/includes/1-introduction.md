@@ -16,4 +16,4 @@ After completing this module, you'll be able to:
 ## Prerequisites
 
  -  Conceptual knowledge of Azure compute solutions.
- -  Working experience with Azure PowerShell.
+ -  Working experience with Azure PowerShell. 
