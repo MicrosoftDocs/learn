@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-security.plan-implement-mfa-azure-virtual-desktop
-title: Plan and implement multi-factor authentication (MFA) in Azure Virtual Desktop
+title: Plan and implement multifactor authentication (MFA) in Azure Virtual Desktop
 metadata:
-  title: Plan and implement multi-factor authentication (MFA) in Azure Virtual Desktop
-  description: "Plan and implement multi-factor authentication (MFA) in Azure Virtual Desktop"
+  title: Plan and implement multifactor authentication (MFA) in Azure Virtual Desktop
+  description: "Plan and implement multifactor authentication (MFA) in Azure Virtual Desktop"
   ms.date: 12/09/2021
   author: wwlpublish
   ms.author: bradj
