@@ -145,9 +145,9 @@ To make this change:
 
 1. Save your changes.
 
-In our code for these exercises, we haven't considered performance. Instead we're focusing on simplicity. In a proper implementation, we'd get faster access by using a hash table structure to store the dictionary of countries and capitals.
+In our code for these exercises, we haven't considered performance. Instead we're focusing on simplicity. In a proper implementation, we'd get faster access by using a hash table structure to store the dictionary of countries/regions and capital/major cities.
 
-We've now programmed our bot to inform users about countries' capitals. In the next unit, we'll make one more code change. Then we'll test this functionality.
+We've now programmed our bot to inform users about countries' capital/major cities. In the next unit, we'll make one more code change. Then we'll test this functionality.
 
 <!-- Links -->
 
