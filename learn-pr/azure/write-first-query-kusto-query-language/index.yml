@@ -27,7 +27,7 @@ roles:
   - business-analyst  
   - security-operations-analyst
 products:
-- azure
+- azure-data-explorer
 units:
 - learn.write-first-query-kusto-query-language.introduction
 - learn.write-first-query-kusto-query-language.understand-basic-structure-kusto-query-language
