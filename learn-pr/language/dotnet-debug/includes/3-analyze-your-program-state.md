@@ -63,11 +63,11 @@ Your variables are shown organized by scope:
 - **Global variables** are accessible from everywhere in your program. System objects from the JavaScript runtime are also included, so don't be surprised if you see a lot of stuff in there.
 - **Closure variables** are accessible from the current closure, if any. A closure combines the local scope of a function with the scope from the outer function it belongs to.
 
-You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in this object.
+You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in the object.
 
 It's possible to change the value of a variable on the fly by double-clicking the variable.
 
-By hovering a function parameter or a variable directly in the editor window, you can also peek at its value.
+By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
 :::image source="../media/variable-hover.png" alt-text="Screenshot of variable hover during debugging.":::
 
