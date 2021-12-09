@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.use-strings.string-methods
-title: String methods
+title: String methods in Python
 metadata:
-  title: String methods
+  title: String methods in Python
   description: Use the most common string methods in Python to manipulate strings. From simple transformations to more advanced search and replace operations.
   ms.date: 12/02/2021
   author: alfredodeza
