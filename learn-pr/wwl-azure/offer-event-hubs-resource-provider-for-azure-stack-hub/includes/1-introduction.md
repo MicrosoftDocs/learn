@@ -2,7 +2,7 @@ Event Hubs on Azure Stack Hub allows you to realize hybrid cloud scenarios. Stre
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -11,11 +11,9 @@ After completing this module, you'll be able to:
  -  Update an Event Hubs resource provider for Azure Stack Hub.
  -  Rotate Event Hubs secrets and certificates for Azure Stack Hub.
 
-## **Skills measured**
+## Skills measured
 
 The content in the module will help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-
-**Provide services.**
 
  -  Offer an Event Hubs resource provider.
 

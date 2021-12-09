@@ -13,7 +13,7 @@ For a connected scenario, you download the items from the Azure Marketplace dire
 6.  Select the "Event Hubs" row on the search results.
 7.  On the "Event Hubs" download page, select the Event Hubs version you wish to install, then select **Download** at the bottom of the page.
 
-Notice that additional software packages are downloaded along with Event Hubs, including:<br>
+Notice that additional software packages are downloaded along with Event Hubs, including:
 
  -  Microsoft Azure Stack Hub Add-On RP Windows Server INTERNAL ONLY
  -  PowerShell Desired State Configuration

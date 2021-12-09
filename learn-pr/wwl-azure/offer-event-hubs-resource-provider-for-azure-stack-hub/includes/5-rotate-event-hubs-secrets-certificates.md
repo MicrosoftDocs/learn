@@ -9,7 +9,7 @@ Like the Azure Stack Hub infrastructure, value-add resource providers use both i
 
 In preparation for the rotation process:
 
-1.  Review [Azure Stack Hub public key infrastructure (PKI) certificate requirements](https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-quota-types?&amp;preserve-view=true) for important prerequisite information before acquiring/renewing your X509 certificate, including details on the required PFX format. Also review the requirements specified in the [Optional PaaS certificates section](https://docs.microsoft.com/azure-stack/operator/azure-stack-pki-certs?&amp;preserve-view=true), for your specific value-add resource provider.
+1.  Review [Azure Stack Hub public key infrastructure (PKI) certificate requirements](https://docs.microsoft.com/azure-stack/operator/azure-stack-quota-types?&amp;preserve-view=true) for important prerequisite information before acquiring/renewing your X509 certificate, including details on the required PFX format. Also review the requirements specified in the [Optional PaaS certificates section](https://docs.microsoft.com/azure-stack/operator/azure-stack-pki-certs?&amp;preserve-view=true), for your specific value-add resource provider.
 2.  If you haven't already, [Install PowerShell Az module for Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/powershell-install-az-module?&amp;preserve-view=true) before continuing. Version 2.0.2-preview or later is required for Azure Stack Hub secret rotation. For more information, see [Migrate from AzureRM to Azure PowerShell Az in Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/migrate-azurerm-az?&amp;preserve-view=true).
 
 ### Prepare a new TLS certificate
@@ -33,8 +33,6 @@ Open an elevated PowerShell console and complete the following steps to determin
     
      -  `"name"` \- contains the resource provider product ID in the second segment of the value.
      -  `"properties"."deployment"."version"` \- contains the currently deployed version number.
-
-In the following example, notice the Event Hubs RP deployment in the first element in the collection, which has a product ID of `"microsoft.eventhub"`, and version `"1.2003.0.0"`:
 
 ```PowerShell
 PS C:\WINDOWS\system32> Get-AzsProductDeployment -AsJson
@@ -76,8 +74,6 @@ VERBOSE: Received 2656-char response, StatusCode = OK
 
 3.  Build the resource provider's package ID, by concatenating the resource provider product ID and version. For example, using the values derived in the previous step, the Event Hubs RP package ID is `microsoft.eventhub.1.2003.0.0`.
 4.  Using the package ID derived in the previous step, run `Get-AzsProductSecret -PackageId` to retrieve the list of secret types being used by the resource provider. In the returned `value` collection, find the element containing a value of `"Certificate"` for the `"properties"."secretKind"` property. This element contains properties for the RP's certificate secret. Make note of the name assigned to this certificate secret, which is identified by the last segment of the `"name"` property, just above `"properties"`.
-
-In the following example, the secrets collection returned for the Event Hubs RP contains a `"Certificate"` secret named `aseh-ssl-gateway-pfx`.
 
 ```PowerShell
 PS C:\WINDOWS\system32> Get-AzsProductSecret -PackageId 'microsoft.eventhub.1.2003.0.0' -AsJson
