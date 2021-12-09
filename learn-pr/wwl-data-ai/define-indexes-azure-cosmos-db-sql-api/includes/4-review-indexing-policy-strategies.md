@@ -27,6 +27,9 @@ First, some indexing policies include all possible properties in the root path, 
 }
 ```
 
+> [!TIP]
+> In general, it's better to include all paths by default and only exclude certain paths from the index. With this strategy, you can modify your schema and the index will still work with the new set of properties.
+
 Second, other indexing policies may choose to exclude all possible properties in the root path and then selectively include specific properties of paths. This example indexing policy excludes all properties and selectively indexes only the **name** and **tags[].name** properties:
 
 ```json
