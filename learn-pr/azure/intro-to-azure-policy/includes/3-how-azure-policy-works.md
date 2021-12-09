@@ -21,7 +21,7 @@ Azure policy covers all Azure resources, including Arc enabled resources. This m
 ## Related services
 
 * Azure Blueprints: A policy assignment is an artifact type from Azure Blueprints, meaning you can use Azure Blueprints to assign policy assignments. Note you can assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, ARM template, Bicep, and Terraform as well.
-* Azure Resource Graph: Though Azure Resource Graph you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state and more.
+* Azure Resource Graph: Through Azure Resource Graph you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state and more.
 * Azure Security Center: The recommendations from Azure Security Center come from  built-in security policies initiatives.
 
 
@@ -38,5 +38,4 @@ If you are using Azure Policy on **Azure Resources**, there are **no costs** ass
 >* _Kubernetes clusters_
 >* _Azure data services such as Azure SQL Managed Instance and PostgreSQL Hyperscale services_
 >* _SQL Server_
-
 
