@@ -41,15 +41,15 @@ To deploy App Service resource provider, follow these steps:
 7.  Enter the info for your file share and then select **Next**. The address of the file share must use the Fully Qualified Domain Name (FQDN) or the IP address of your File Server.
 
 8.  On the next App Service Installer page, follow these steps:
-
- -  In the Identity Application ID box, enter the GUID for the Identity application you created.
- -  In the Identity Application certificate file box, enter (or browse to) the location of the certificate file.
- -  In the Identity Application certificate password box, enter the password for the certificate. This password is the one that you made note of when you used the script to create the certificates.
- -  In the Azure Resource Manager root certificate file box, enter (or browse to) the location of the certificate file.
- -  Select **Next**.
     
-    :::image type="content" source="../media/deploy-an-app-service-image-6-9f611b9f.png" alt-text="Screenshot that shows the screen that provides the details of the identity.":::
-    
+     -  In the Identity Application ID box, enter the GUID for the Identity application you created.
+     -  In the Identity Application certificate file box, enter (or browse to) the location of the certificate file.
+     -  In the Identity Application certificate password box, enter the password for the certificate. This password is the one that you made note of when you used the script to create the certificates.
+     -  In the Azure Resource Manager root certificate file box, enter (or browse to) the location of the certificate file.
+     -  Select **Next**.
+        
+        :::image type="content" source="../media/deploy-an-app-service-image-6-9f611b9f.png" alt-text="Screenshot that shows the screen that provides the details of the identity.":::
+        
 
 9.  For each of the three certificate file boxes, select **Browse** and navigate to the appropriate certificate file. Provide the password for each certificate. Select **Next** after entering all the information.
 
@@ -187,30 +187,30 @@ To deploy App Service resource provider, follow these steps:
 
 13. In the **Select Platform Image** box, choose your deployment Windows Server 2016 virtual machine image from the images available in the compute resource provider for the App Service cloud. Select **Next**.
 14. On the next App Service Installer page, follow these steps:
-
- -  Enter the Worker Role virtual machine admin user name and password.
- -  Enter the Other Roles virtual machine admin user name and password.
- -  Select Next.
     
-    :::image type="content" source="../media/deploy-an-app-service-image-10-2fd2e52d.png" alt-text="Screenshot that shows the screen where you select the Windows Platform Image to be used by the App Service Installer.":::
-    
+     -  Enter the Worker Role virtual machine admin user name and password.
+     -  Enter the Other Roles virtual machine admin user name and password.
+     -  Select Next.
+        
+        :::image type="content" source="../media/deploy-an-app-service-image-10-2fd2e52d.png" alt-text="Screenshot that shows the screen where you select the Windows Platform Image to be used by the App Service Installer.":::
+        
 
 15. On the App Service Installer summary page, follow these steps:
-
- -  Verify the selections you made. To make changes, use the Previous buttons to visit previous pages.
- -  If the configurations are correct, select the check box.
- -  To start the deployment, select Next.
     
-    :::image type="content" source="../media/deploy-an-app-service-image-11-a8dfe465.png" alt-text="Screenshot that shows the summary of the options specified for deployment by the App Service Installer.":::
-    
+     -  Verify the selections you made. To make changes, use the Previous buttons to visit previous pages.
+     -  If the configurations are correct, select the check box.
+     -  To start the deployment, select Next.
+        
+        :::image type="content" source="../media/deploy-an-app-service-image-11-a8dfe465.png" alt-text="Screenshot that shows the summary of the options specified for deployment by the App Service Installer.":::
+        
 
 16. On the next App Service Installer page, follow these steps:
-
- -  Track the installation progress. App Service on Azure Stack Hub can take up to 240 minutes to deploy based on the default selections and age of the base Windows 2016 Datacenter image.
- -  After the installer successfully finishes, select Exit.
     
-    :::image type="content" source="../media/deploy-an-app-service-image-12-07f3f365.png" alt-text="Screenshot that shows the deployment progress made by the App Service Installer.":::
-    
+     -  Track the installation progress. App Service on Azure Stack Hub can take up to 240 minutes to deploy based on the default selections and age of the base Windows 2016 Datacenter image.
+     -  After the installer successfully finishes, select Exit.
+        
+        :::image type="content" source="../media/deploy-an-app-service-image-12-07f3f365.png" alt-text="Screenshot that shows the deployment progress made by the App Service Installer.":::
+        
 
 ## Post-deployment Steps
 

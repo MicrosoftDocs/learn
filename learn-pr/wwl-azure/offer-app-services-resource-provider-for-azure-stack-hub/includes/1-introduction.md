@@ -24,5 +24,3 @@ After completing this module, you'll be able to:
 
  -  Working experience with deploying cloud applications.
  -  Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
-
-a

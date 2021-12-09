@@ -146,12 +146,6 @@ When deciding on the number of shared web worker roles to use, review these cons
  -  **Percentage of active web sites**: Typically, about 5 percent of apps in an Azure App Service on Azure Stack Hub deployment are active. However, the percentage of apps that are active at any given moment can be higher or lower. With an active app rate of 5 percent, the maximum number of apps to place in an Azure App Service on Azure Stack Hub deployment should be less than 20 times the number of active web sites (5 x 20 = 100).
  -  **Average memory footprint**: The average memory footprint for apps observed in production environments is about 70 MB. Using this footprint, the memory allocated across all web worker role computers or virtual machines is calculated as follows:
 
-`Number of provisioned applications * 70 MB * 5% - (number of web worker roles * 1044 MB)`
-
-For example, if there are 5,000 apps on an environment running 10 web worker roles, each web worker role virtual machine should have 7060-MB RAM:
-
-`5,000 * 70 * 0.05 - (10 * 1044) = 7060 (= about 7 GB)`
-
 ## File server role
 
 For the file server role, you can use a standalone file server for development and testing. For production purposes, you should use a pre-configured Windows file server, or a pre-configured non-Windows file server.

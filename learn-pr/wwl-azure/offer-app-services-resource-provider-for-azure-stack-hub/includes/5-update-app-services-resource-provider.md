@@ -35,18 +35,18 @@ To upgrade your deployment of Azure App Service on Azure Stack Hub, follow these
     
 
 8.  On the summary page, set the following:
-
- -  Verify the selections you made. To make changes, use the **Previous** buttons to visit previous pages.
- -  If the configurations are correct, select the check box.
- -  To start the upgrade, click **Next**.
     
-    :::image type="content" source="../media/update-app-service-image-4-683fa275.png" alt-text="Screenshot that shows the App Service upgrade summary in the installer.":::
-    
+     -  Verify the selections you made. To make changes, use the **Previous** buttons to visit previous pages.
+     -  If the configurations are correct, select the check box.
+     -  To start the upgrade, click **Next**.
+        
+        :::image type="content" source="../media/update-app-service-image-4-683fa275.png" alt-text="Screenshot that shows the App Service upgrade summary in the installer.":::
+        
 
 9.  Upgrade progress page:
-
- -  Track the upgrade progress. The duration of the upgrade of Azure App Service on Azure Stack Hub varies depending on the number of role instances deployed.
- -  After the upgrade successfully completes, click **Exit**.
     
-    :::image type="content" source="../media/update-app-service-image-5-24c3b7b8.png" alt-text="Screenshot that shows the deployment progress in the App Service installer.":::
-    
+     -  Track the upgrade progress. The duration of the upgrade of Azure App Service on Azure Stack Hub varies depending on the number of role instances deployed.
+     -  After the upgrade successfully completes, click **Exit**.
+        
+        :::image type="content" source="../media/update-app-service-image-5-24c3b7b8.png" alt-text="Screenshot that shows the deployment progress in the App Service installer.":::
+        
