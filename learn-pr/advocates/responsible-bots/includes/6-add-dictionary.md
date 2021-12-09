@@ -12,18 +12,18 @@ If you're familiar with ASP.NET web development, you might recognize what looks 
 
 If that explanation seems too complicated, don't worry. The main thing you need to know is that the `EchoBot.cs` file contains your bot's functionality.
 
-## Add a dictionary of capital cities
+## Add a dictionary of capital/major cities
 
-Let's try to make our bot do something useful. Consider the problem of learning the capital cities of different countries. Our first exercise is to turn our bot into a "capital dictionary" that returns the capital city of any given country.
+Let's try to make our bot do something useful. Consider the problem of learning the capital/major cities of different countries. Our first exercise is to turn our bot into a "capital dictionary" that returns the capital/major city of any given country/region.
 
-The [list of national capitals][List of national capitals] on Wikipedia highlights an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital. Other countries, like Israel, have a capital that's not officially recognized by all other countries.
+The [list of national capital/major cities][List of national capital/major cities] on Wikipedia highlights an important fairness and data complexity problem. Some countries, like Switzerland, might not have a *de jure* capital/major city. Other countries/regions, like Israel, have a capital/major city that's not officially recognized by all other countries/regions.
 
 To make our bot as responsible as possible, we have to keep these tricky situations in mind. Unfortunately, there's no easy way to solve this problem.  For this module, we'll choose the simplest solution, which is to cite our data source. To implement a more complex approach, here are some options to consider:
 
 - Program the bot to return different results based on the user's language.
 - Make use of another technological mechanism to accommodate for the fairness and complexity issues.
 
-There's one more important issue that we have to address: capitals and countries change. We need to update our bot periodically so that users maintain trust in the bot. Maybe we can display a "last updated" date to make it clear how recent our data is.
+There's one more important issue that we have to address: capital/major cities and countries/regions change. We need to update our bot periodically so that users maintain trust in the bot. Maybe we can display a "last updated" date to make it clear how recent our data is.
 
 ### Get the initial data
 
