@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.python-dictionaries.exercise-create-modify
-title: Enter exercise title
+title: Exercise - Create Python dictionaries
 metadata:
   unitType: exercise
-  title: "Exercise: Create Python dictionaries" # user input: module title for browser tab and search results
+  title: Exercise - Create Python dictionaries # user input: module title for browser tab and search results
   description: "In this exercise you will create and modify data in a Python dictionary." # user input: a description for site search and SEO
   ms.date: 12/08/2021
   author: softchris
