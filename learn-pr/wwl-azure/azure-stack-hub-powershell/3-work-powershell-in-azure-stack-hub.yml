@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub-powershell.working-powershell
+title: Working with PowerShell in Azure Stack Hub
+metadata:
+  title: Working with PowerShell in Azure Stack Hub
+  description: "Working with PowerShell in Azure Stack Hub"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-work-powershell-in-azure-stack-hub.md)]
