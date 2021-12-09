@@ -4,7 +4,7 @@ From a technological point of view, you learned how to:
 
 - Use a template to create a local bot in the [C# programming language][CSharp].
 - Develop a chat bot by using Visual Studio.
-- Add a data source with country information to implement a dictionary of capital cities.
+- Add a data source with country/region information to implement a dictionary of capital/major cities.
 - Enhance bot interactions through a meaningful welcome message.
 - Engage in a chat session by using Bot Framework Emulator.
 

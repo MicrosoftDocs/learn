@@ -4,7 +4,7 @@ Let's make one more change to our bot's behavior.
 
 With your bot project visible in Visual Studio, open your bot code file, `EchoBot.cs`:
 
-In the previous unit, we modified the `OnMessageActivityAsync` function, which is the primary function in this file. This function is called each time the bot receives a message from the user. We changed the code to make the bot return a capital when a user enters a country.
+In the previous unit, we modified the `OnMessageActivityAsync` function, which is the primary function in this file. This function is called each time the bot receives a message from the user. We changed the code to make the bot return a capital/major city when a user enters a country/region.
 
 Now we'll reprogram a different function in that file, `OnMembersAddedAsync`. This function is called when a new user enters the chat. We use this function to display the initial welcome message to the user.
 
@@ -60,7 +60,7 @@ To see whether your bot works, rebuild your code and run your bot:
 
    :::image type="content" source="../media/bot-framework-emulator-basic-message-exchange.png" alt-text="Screenshot of the Live Chat tab of Bot Framework Emulator. Messages show that the bot returns a capital when a user enters a country.":::
 
-Your bot now greets you with a helpful message. When you enter the name of a country, your bot responds with the country's capital.
+Your bot now greets you with a helpful message. When you enter the name of a country/region, your bot responds with the country's capital/major city.
 
 ## Conclusion
 
