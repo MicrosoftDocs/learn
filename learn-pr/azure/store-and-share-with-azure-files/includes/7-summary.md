@@ -2,7 +2,7 @@ The financial company you're working with has moved an application to Azure that
 
 You used Azure storage accounts, and the fully managed cloud shares it provides, to re-create the on-premises file shares used by the finance company. You then added extra levels of security to these shares to restrict access and create snapshots.
 
-If you couldn't use Azure file shares, you might have to manually create a virtual machine in the cloud to act as a file server. You would then be responsible for managing the operating system updates and disk space. This solution wouldn't benefit from the global redundancy that a GRS storage account has built in. The server would become a single point of failure. In this scenario, costs would be higher than using the unified Azure file shares.
+If you hadn't used Azure file shares, you might have to manually create a virtual machine in the cloud to act as a file server. You would then be responsible for managing the operating system updates and disk space. This solution wouldn't benefit from the global redundancy that a GRS storage account has built in. The server would become a single point of failure. In this scenario, costs would be higher than using the unified Azure file shares.
 
 Azure file shares are simpler to use because organizations can continue to use their existing tools. The speed of adoption is fast because Azure provides PowerShell commands that can be deployed to add Azure file shares to Windows machines. Azure file shares are a simple, secure, and resilient way to manage shared files in the cloud.
 

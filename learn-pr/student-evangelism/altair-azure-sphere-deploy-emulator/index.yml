@@ -26,7 +26,7 @@ prerequisites: |
     - Seeed Studio Azure Sphere MT3620 Development Kit
   - A GitHub account.
   - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
 levels:
 - beginner
 roles:
