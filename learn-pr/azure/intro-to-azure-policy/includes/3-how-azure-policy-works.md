@@ -27,7 +27,7 @@ Azure policy covers all Azure resources, including Arc enabled resources. This m
 
 ## Costs of Azure Policy
 
-If you are using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you will be **charged**. Refer to the [Azure Policy Pricing](/pricing/details/azure-policy/) page for reference.
+If you are using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you will be **charged**. Refer to the [Azure Policy Pricing](https://azure.microsoft.com/pricing/details/azure-policy/) page for reference.
 
 * Azure Policy guest configuration (includes Azure Automation change tracking, inventory, state configuration): $6/Server/Month
 * Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
