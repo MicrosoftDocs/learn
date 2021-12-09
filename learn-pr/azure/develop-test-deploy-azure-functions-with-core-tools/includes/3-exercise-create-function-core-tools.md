@@ -1,6 +1,9 @@
-Azure Functions Core Tools enable you to develop functions locally on your own computer by creating the files and folders necessary for a functions project and by providing a Functions host that runs locally from the root directory of your project.
+Azure Functions Core Tools let you develop functions locally on your own computer by:
 
-You've decided to start your work locally with Azure Functions by developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using Core Tools to build a function that performs a basic loan calculation is a good start. You also want to try running your function on your own computer before publishing it to Azure. You can do all of this from Azure Cloud Shell using Core Tools.
+- Creating the files and folders necessary for a functions project.
+- Providing a Functions host that runs locally from the root directory of your project.
+
+You've decided to start your work locally with Azure Functions by developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using Core Tools to build a function that carries out a basic loan calculation is a good start. You also want to try running your function on your own computer before publishing it to Azure. You can do it all from Azure Cloud Shell using Core Tools.
 
 The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can use to write code. Make sure to activate the sandbox above before proceeding.
 
@@ -25,7 +28,7 @@ In this exercise, you'll use Cloud Shell to develop your function.
 
 1. When prompted to select a language, enter **1** (for **JavaScript**).
 
-    The output will list the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files:
+    The output will list the files being written to disk. You'll see **host.json** and **local.settings.json**, and a few other files:
     - **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code.
     - **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
 
@@ -39,7 +42,7 @@ Let's create our function!
     func new
     ```
 
-    Remember, you are running `func new` in the `loan-wizard` project folder you just created, which is important.
+    Remember, you're running `func new` in the `loan-wizard` project folder you created, which is important.
 
 1. When prompted to select a template, enter **8** (for **HTTP trigger**).
 
@@ -54,10 +57,10 @@ Let's create our function!
     ![Screenshot showing the simple-interest folder with the function.json file open in Cloud Shell code editor.](../media/3-functions-project-view.png)
 
     The wizard has created a new folder in our functions project called **simple-interest**, and created two files **index.js** and **function.json**, both with default content. Take a moment now to explore the project files using the editor. The screenshot above shows the expanded folder with the **function.json** file open in the editor.
-   
+
 ## Implement the simple-interest function
 
-The default function implementation that Core Tools created for us in **index.js** looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello, [name]`. This is a good illustration of how to use an HTTP trigger, but we want to replace that code with code that calculates simple interest from three input parameters.
+The default function implementation that Core Tools created for us in **index.js** looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello, [name]`. It's a good illustration of how to use an HTTP trigger, but we want to replace that code with code that calculates simple interest from three input parameters.
 
 1. In the editor's **FILES** pane, expand the `simple-interest` folder, and select `index.js` to open the file in the editor.
 
@@ -104,9 +107,9 @@ To run our new function locally and try it out, we'll use `func start` to start 
     > [!NOTE]
     > If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
 
-    This localhost URL is not published to the web, it's only accessible from tools running in your Cloud Shell session. 
+    This localhost URL isn't published to the web, it's only accessible from tools running in your Cloud Shell session. 
     
-    We're going to use a command line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you were using Core Tools from your own computer, you probably wouldn't need to restart the host--you could use `curl` from a second terminal window, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
+    We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you're using Core Tools from your own computer, you probably wouldn't need to restart the host--you could use `curl` from a second terminal window, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the Functions host. The Cloud Shell should respond **Application is shutting down**.
 
@@ -124,9 +127,9 @@ To run our new function locally and try it out, we'll use `func start` to start 
     curl "http://localhost:7071/api/simple-interest" -w "\n"
     ```
 
-    The output, `Please supply principal, rate and term in the query string`, indicates that our function was successfully invoked and is able to return a response to us, but we aren't calling it as intended. We need to provide the parameters as part of the HTTP request.
+    The output, `Please supply principal, rate and term in the query string`, indicates that our function was successfully invoked and can return a response to us, but we aren't calling it as intended. We need to provide the parameters as part of the HTTP request.
 
-1. Invoke the function again, this time providing a value for the each of the query string parameters.
+1. Invoke the function again, this time providing a value for each of the query string parameters.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest?principal=5000&rate=.035&term=36" -w "\n"
@@ -142,13 +145,13 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     Press <kbd>Enter</kbd> a second time to see the confirmation that the host has stopped:  `[1]+  Done func start &> ~/output.txt`.
 
-1. Enter the following command to view the output log in the editor.
+1. Enter the following command to view the output log.
 
     ```bash
     code ~/output.txt
     ```
 
-    The top 9 lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries, each starting with a timestamp for each time you called the function with `curl`, looking like this.
+    The top nine lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries, each starting with a timestamp for each time you called the function with `curl`, looking like this.
 
     ```output
     Executing HTTP request: {
