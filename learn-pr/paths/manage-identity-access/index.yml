@@ -3,7 +3,7 @@ uid: learn.wwl.manage-identity-access
 metadata:
   title: 'AZ-500 part-1: Manage Identity and Access'
   description: 'AZ-500 part-1: Manage Identity and Access'
-  ms.date: 10/06/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Explore how identity is the starting point for all security within your company.  Learn to authenticate and authorize users and apps with Azure Active Directory.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/management-identity-access.svg
 levels:
 - intermediate
 roles:
