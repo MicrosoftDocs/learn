@@ -31,5 +31,5 @@ Migration accounts are user accounts in the source; they target forests with eno
 Translating security in local profiles on client computers allows a migrated user to retain access to the same profile on the local computer as the source user. For users, this means that their profiles stays intact with all their app configurations.
 
 > [!NOTE]
-> ADMT was developed to work with Windows 7 and earlier. It hasn't been updated to work with Window 8 or Windows 10. This means that profile translation might not work properly, depending on the configuration of computers and apps in your organization. For detailed information about using ADMT, obtain [Active Directory Migration Tool (ADMT) Guide: Migrating and Restructuring Active Directory Domains](https://www.microsoft.com/en-us/download/details.aspx?id=19188) from the Microsoft Download Center.
+> ADMT was developed to work with Windows 7 and earlier. It hasn't been updated to work with Window 8 or Windows 10. This means that profile translation might not work properly, depending on the configuration of computers and apps in your organization. For detailed information about using ADMT, obtain [Active Directory Migration Tool (ADMT) Guide: Migrating and Restructuring Active Directory Domains](https://www.microsoft.com/download/details.aspx?id=19188) from the Microsoft Download Center.
 

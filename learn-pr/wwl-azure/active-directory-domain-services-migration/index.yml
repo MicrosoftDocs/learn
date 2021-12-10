@@ -3,7 +3,7 @@ uid: learn.wwl.active-directory-domain-services-migration
 metadata:
   title: Active Directory Domain Services migration
   description: "Determine the best approach to moving domain controllers to Windows Server 2022. Learn how the Active Directory Migration Tool can consolidate domains within a forest or migrate domains to a new AD DS forest."
-  ms.date: 12/09/2021
+  ms.date: 12/10/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
