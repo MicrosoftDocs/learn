@@ -31,7 +31,7 @@ roles:
   - student
   - technology-manager
 products:
-  - azure-route-server
+  - azure
 units:
 - learn.azure.intro-to-azure-route-server.1-introduction
 - learn.azure.intro-to-azure-route-server.2-what-azure-route-server
