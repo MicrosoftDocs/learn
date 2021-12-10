@@ -10,7 +10,7 @@ As a result, when a VM from the App subnet needs to communicate to a resource lo
 
 Let’s review how traffic through SD-WAN NVA is controlled when Azure Route Server is deployed. In the following graphic scenario, Azure Route Server enables path selection, which allows you to configure your SD-WAN NVA to have a routing preference when communicating with your on-premises network. When SD-WAN NVA is used with Azure Route Server to establish a connection to an on-premises network, the path can be established in two ways, like the following diagram depicts:
 
-:::image type="content" source="../media/4-routing preference.png" alt-text="Two paths for connecting Azure resources to a local network. One path is over the Microsoft backbone, while another path uses ISP infrastructure." border="false":::
+:::image type="content" source="../media/4-routing-preference.png" alt-text="Two paths for connecting Azure resources to a local network. One path is over the Microsoft backbone, while another path uses ISP infrastructure." border="false":::
 
 Azure routing preference enables you to choose how your traffic routes between Azure and the internet. You can choose to route traffic either through the Microsoft network backbone or the ISP network (public internet). These options are also referred to as *cold potato routing* and *hot potato routing* respectively.
 
