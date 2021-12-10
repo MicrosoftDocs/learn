@@ -15,8 +15,9 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose either the West US 2 or West Europe region*
     - **Name**: *Enter a unique name*.
-    - **Pricing tier**: Standard S
-    - **I confirm I have read and understood the notices**: Selected.
+    - **Pricing tier**: Free (F0) (*If this tier is not available, select Standard (S)*)
+    - **Legal Terms**: _Agree_ 
+    - **Responsible AI Notice**: _Agree_
 
 3. Review and create the resource, and wait for deployment to complete. Then go to the deployed resource.
 4. View the **Keys and Endpoint** page for your Language service resource. You will need the endpoint and keys to connect from client applications.
@@ -30,7 +31,7 @@ To implement natural language understanding with Conversational Language Underst
     - **Azure Directory**: The Azure directory containing your subscription.
     - **Azure subscription**: Your Azure subscription.
     - **Language resource**: The Language resource you created previously.
-3. If you are <u>not</u> prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+3. If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
     1. On the bar at the top if the page, click the **Settings (&#9881;)** button.
     2. On the **Settings** page, view the **Resources** tab.
     3. Select the language resource you just created, and click **Switch resource**.
@@ -165,13 +166,13 @@ Now let's open and edit a pre-written script which will run the client applicati
 
 3. In the **Files** pane on the left, select the **understand.ps1** file in the **ai-900** folder. This file contains some code that uses your Conversational Language Understanding model. 
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the endpoint abd key for your Language service model. You'll get these from Language Studio.
+    Don't worry too much about the details of the code, the important thing is that it needs the endpoint and key for your Language service model. You'll get these from Language Studio.
 
-5. Switch back to the browser tab containing Language Studio. Then in Language Studio, open the **Deploy model** page and select your model. Then click the **Get prediction URL** button. TThe two pieces of information you need are in this dialog box:
+4. Switch back to the browser tab containing Language Studio. Then in Language Studio, open the **Deploy model** page and select your model. Then click the **Get prediction URL** button. The two pieces of information you need are in this dialog box:
     - The endpoint for your model - you can copy this from the **Prediction URL** box.
     - The key for your model - this is in the **Sample request** as the value for the **Ocp-Apim-Subscription-Key** parameter, and looks similar to ***0ab1c23de4f56gh7i8901234jkl567m8***.
     
-6. Copy the endpoint value, then switch back to the browser tab containing the cloud shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
+5. Copy the endpoint value, then switch back to the browser tab containing the cloud shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
 
     After pasting the key and endpoint values, the first lines of code should look similar to this:
 
@@ -180,23 +181,23 @@ Now let's open and edit a pre-written script which will run the client applicati
     $key = "0ab1c23de4f56gh7i8901234jkl567m8"
     ```
 
-7. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
-8. In the PowerShell pane, enter the following command to run the code:
+6. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
+7. In the PowerShell pane, enter the following command to run the code:
 
     ```
     ./understand.ps1 "Turn on the light"
     ``` 
 
-9. Review the results. The app should have predicted that the intended action is to switch on the light.
-10. Now try another command:
+8. Review the results. The app should have predicted that the intended action is to switch on the light.
+9. Now try another command:
 
     ```
     ./understand.ps1 "Switch the fan off"
     ```
 
-11. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
+10. Review the results from this command. The app should have predicted that the intended action is to switch off the fan.
 
-12. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
+11. Experiment with a few more commands; including commands that the model was not trained to support, such as "Hello" or "switch on the oven". The app should generally understand commands for which its language model is defined, and fail gracefully for other input.
 
 ## Learn more
 
