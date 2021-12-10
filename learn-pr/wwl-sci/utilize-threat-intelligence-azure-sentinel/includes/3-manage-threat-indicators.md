@@ -11,4 +11,3 @@ With the Threat Intelligence area, accessible from the Microsoft Sentinel menu, 
 1. Choose the indicator type, then complete the required fields marked with a red asterisk (*) on the New indicator panel.  Select **Apply**.
 
 Tagging threat indicators is an easy way to group them to make them easier to find. Typically, you might apply a tag to indicators related to a particular incident or indicators representing threats from a known actor or a well-known attack campaign. You can tag threat indicators individually or multi-select indicators and tag them all at once. Since tagging is free-form, a recommended practice is to create standard naming conventions for threat indicator tags. You can apply multiple tags to each indicator.
-
