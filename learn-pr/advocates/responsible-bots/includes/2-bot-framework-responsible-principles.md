@@ -28,15 +28,15 @@ We'll also run the bot locally, meaning we won't call it over the internet. We'l
 
 As part of the broader category of conversational AI, bots should interact in a professional way. To help developers create responsible bots, Microsoft has outlined guidelines for developers of conversational AI. These principles present goals that bots should meet:
 
-- Have a clear purpose.
-- Be transparent about abilities and limitations.
-- Transfer complex tasks to humans.
-- Respect cultural norms.
-- Be reliable.
-- Treat people fairly.
-- Respect privacy.
-- Handle data securely.
-- Be accessible.
+- Have a clear purpose. When your bot is specific about which problems it can solve, users are less likely to engage in conversation about unrelated issues.
+- Be transparent about abilities and limitations. When a bot introduces itself as a bot and displays a bot picture, users know what to expect. Being honest about a bot's limitations helps to reduce user frustration.
+- Transfer complex tasks to humans. By providing access to a human operator when needed, you prevent users from losing trust in your technology and your organization.
+- Respect cultural norms. Some cultures use an informal tone, while others use more formal communication. By programming your bot to adjust the conversational style based on user input, you show appreciation for cultural differences.
+- Be reliable. If your bot interacts with users in an efficient and consistent manner, it communicates a sense of stability. This behavior helps build user trust in your organization.
+- Treat people fairly. When your bot demonstrates support for various nationalities and genders, it comes across as respectful and unbiased.
+- Respect privacy. By collecting only relevant data and by handling that data responsibly, bots uphold privacy standards.
+- Handle data securely. Bots should follow standard security practices. Then users know their personal information is safe.
+- Be accessible. If you add features like speech support to your bot, users perceive it as being accessible. Even if you have visual impairment, you can use the bot.
 
 One further guideline focuses not on bots, but on developers. It states that developers are accountable for their bots. You're responsible for how your bots interact with people and affect people.
 
