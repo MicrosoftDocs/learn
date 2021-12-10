@@ -9,9 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Configure for alerts and detections in Microsoft Defender for Endpoint
-summary: Learn how to configure settings to manage alerts and notifications.  You will also learn to enable indicators as part of the detection process.
+summary: Learn how to configure settings to manage alerts and notifications.  You'll also learn to enable indicators as part of the detection process.
 abstract: |
-  After completion of this module, you will be able to:
+  After completion of this module, you'll be able to:
   - Configure alert settings in Microsoft Defender for Endpoint
   - Manage indicators in Microsoft Defender for Endpoint
 prerequisites: |
