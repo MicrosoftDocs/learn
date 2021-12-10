@@ -26,13 +26,12 @@ levels:
   - beginner
 roles:
   - administrator
-  - network-administrator
   - security-engineer
   - solution-architect
   - student
   - technology-manager
 products:
-  - route-server
+  - azure-route-server
 units:
 - learn.azure.intro-to-azure-route-server.1-introduction
 - learn.azure.intro-to-azure-route-server.2-what-azure-route-server
