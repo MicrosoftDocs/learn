@@ -14,22 +14,22 @@ A connected deployment allows you to use the administrator portal to download ma
 1.  Sign into the Azure Stack Hub administrator portal.
 2.  Review the available storage space before downloading marketplace items. To review available space: in Region management, select the region you want to explore and then go to **Resource Providers &gt; Storage**:
     
-    :::image type="content" source="../media/stack-marketplace-items_image-1-3c62c835.png" alt-text="Review storage space in Azure Stack Hub administrator portal.":::
+    :::image type="content" source="../media/stack-marketplace-items-image-1-bfca7e24.png" alt-text="Review storage space in Azure Stack Hub administrator portal.":::
     
 
 3.  Open Azure Stack Hub Marketplace and connect to Azure. To do so, select the **Marketplace management service**, select **Marketplace items**, and then select **Add** from Azure:
     
-    :::image type="content" source="../media/stack-marketplace-items_image-2-7d2c934f.png" alt-text="Add marketplace items from Azure.":::
+    :::image type="content" source="../media/stack-marketplace-items-image-2-9aae423d.png" alt-text="Add marketplace items from Azure.":::
     
 
 4.  Each line item also shows the currently available version. If more than one version of a Marketplace item is available, the **Version** column shows Multiple.
     
-    :::image type="content" source="../media/stack-marketplace-items_image-3-9a0ad655.png" alt-text="Screenshot that shows the available versions of a Marketplace item.":::
+    :::image type="content" source="../media/stack-marketplace-items-image-3-429a5629.png" alt-text="Screenshot that shows the available versions of a Marketplace item.":::
     
 
 5.  If the version of an item is shown as **Multiple**, you can select that item and then choose a specific version.
     
-    :::image type="content" source="../media/stack-marketplace-items_image-4-96248e0a.png" alt-text="Add item from Azure.":::
+    :::image type="content" source="../media/stack-marketplace-items-image-4-d8da0e31.png" alt-text="Add item from Azure.":::
     
 
 6.  Select the item you want, and then select **Download**. After the download completes, you can deploy the new marketplace item as either an Azure Stack Hub operator or a user.
