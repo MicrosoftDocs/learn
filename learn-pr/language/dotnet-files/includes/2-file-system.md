@@ -1,4 +1,4 @@
-.NET contains built-in value and reference for working with a file system. These built-in types can be found in the `System.IO` namespace.
+.NET contains built-in types for working with the file system that you can find in the `System.IO` namespace.
 
 Here, you'll learn about the types available in `System.IO` by using C# to read a file system to discover files and directories.
 
@@ -6,7 +6,7 @@ Here, you'll learn about the types available in `System.IO` by using C# to read 
 
 Large retailers often write data to files so that it can be processed later in batches.
 
-Tailwind Traders has each of its stores write its sales total to a file, and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
+Tailwind Traders has each of its stores write its sales total to a file and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
 
 ## Include the System.IO namespace
 
@@ -16,7 +16,8 @@ For now, we're going to focus on what you need to know to work with directories 
 
 ## List all directories
 
-One task that you'll often do with the `Directory` class is list, or *enumerate*, directories. For instance, Tailwind Traders has a root folder called *stores*. In that root folder are subfolders organized by store number. Inside store folders are sales-total and inventory files. The structure looks like this:
+
+One task that you'll often do with the `Directory` class is list out or *enumerate* directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total and inventory files. The structure looks like this example:
 
 ```
 📂 stores

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-qna-solution-qna-maker.consume-qna-client-interfaces
-title: Consume QnA client interfaces
+title: Use a knowledge base
 metadata:
-  title: Consume QnA client interfaces
-  description: "Consume QnA client interfaces"
-  ms.date: 09/17/2021
+  title: Use a knowledge base
+  description: "Use a knowledge base"
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

@@ -81,3 +81,6 @@ Alternatively, you can exclude all paths and only selectively include the **name
   ]
 }
 ```
+
+> [!TIP]
+> The drawback to this approach is that you will need to update the index anytime you change your schema.
