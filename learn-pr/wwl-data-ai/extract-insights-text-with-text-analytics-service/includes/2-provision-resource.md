@@ -11,7 +11,7 @@ The **Language** service is designed to help you extract information from text. 
 
 ## Azure resources for text analysis
 
-To use the Language service to analyze text, you must provision a resource for it in your Azure subscription. You can provision a single-service **Language** resource, or you can use the Text Analytics API in a multi-service **Cognitive Services** resource.
+To use the Language service to analyze text, you must provision a resource for it in your Azure subscription. You can provision a single-service **Language** resource, or you can use a multi-service **Cognitive Services** resource.
 
 After you have provisioned a suitable resource in your Azure subscription, you can use its **endpoint** and one of its **subscription keys** to call the Language APIs from your code. You can call the Language APIs by submitting requests in JSON format to the REST interface, or by using any of the available programming language-specific SDKs.
 
