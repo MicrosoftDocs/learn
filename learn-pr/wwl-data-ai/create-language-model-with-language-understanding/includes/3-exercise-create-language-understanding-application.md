@@ -172,7 +172,7 @@ Now let's open and edit a pre-written script which will run the client applicati
     - The endpoint for your model - you can copy this from the **Prediction URL** box.
     - The key for your model - this is in the **Sample request** as the value for the **Ocp-Apim-Subscription-Key** parameter, and looks similar to ***0ab1c23de4f56gh7i8901234jkl567m8***.
     
-5. Copy the endpoint value, then switch back to the browser tab containing the cloud shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
+5. Copy the endpoint value, then switch back to the browser tab containing the Cloud Shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
 
     After pasting the key and endpoint values, the first lines of code should look similar to this:
 
