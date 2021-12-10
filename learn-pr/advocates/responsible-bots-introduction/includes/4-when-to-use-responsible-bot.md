@@ -31,12 +31,12 @@ The availability of resources in each area determines the approach you can take 
 
 ## Geography bot options
 
-With our geography bot, a previous unit discussed the challenge of providing accurate and unbiased information on capital cities.
+With our geography bot, a previous unit discussed the challenge of providing accurate and unbiased information on capital/major cities.
 
 If resources like time, money, and expertise aren't available, a streamlined approach might be appropriate:
 
 - To get around the fairness issue, cite the data source. This approach shifts the responsibility of providing culturally appropriate information to that source.
-- Concerning the accuracy of the data, regularly refresh the capital city data source. But if frequent updates aren't an option, the bot might tell users when it last updated its capital city data.
+- Concerning the accuracy of the data, regularly refresh the capital/major city data source. But if frequent updates aren't an option, the bot might tell users when it last updated its capital/major city data.
 
 It's helpful for users to see how current information is. Knowing where data comes from is also useful. But users can get frustrated when they see data that's out of date or biased. A fully responsible bot might take a different approach:
 

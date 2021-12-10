@@ -90,7 +90,7 @@ Consider our earlier example of building a geography bot. Here are a few ideas f
   Hello! I am a teaching assistant bot that will help you learn Geography. I will not be able to teach you, but I can definitely help! Feel free to ask me about different countries and their capitals. If not sure, start with "What can I say?"
   ```
 
-- Be sensitive to fairness and data complexity issues. For instance, not all countries recognize some capitals. Other capitals change frequently. Here are some options for solving these problems:
+- Be sensitive to fairness and data complexity issues. For instance, not all countries/regions recognize some capital/major cities. Other capital/major cities change frequently. Here are some options for solving these problems:
 
   - Cite your data source.
   - Enable the bot to return different results based on the user's language.
