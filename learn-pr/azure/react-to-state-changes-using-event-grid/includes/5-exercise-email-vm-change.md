@@ -51,7 +51,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com or Gmail. The configuration steps for these email programs may differ, so you may need to adjust accordingly.
 
-1. In your Logic app's **Logic app designer** pane, in the *When a resource event occurs" condition's **True** box, select **Add an action**. The **Choose an operation** pane appears.
+1. In your Logic app's **Logic app designer** pane, in the *When a resource event occurs* condition's **True** box, select **Add an action**. The **Choose an operation** pane appears.
 
     :::image type="content" source="../media/5-condition-true-add-action.png" alt-text="Add an action button.":::
 
@@ -67,7 +67,9 @@ Now we can add an email action based on the logic app being triggered. The follo
 
     :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Screenshot for sending an email when vm updates.":::
 
-1. Select each input box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type, adding text to label the items in the email body. In the *To* box, add your own email address to test the workflow in the next section.
+1. Select each input box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type, adding text to label the items in the email body. In the *To* box, add your own email address to test the workflow in the next section. If you see the following message in the **Dynamic content** tab, click **See more**. 
+
+    **We can't find any outputs to match this input format. Select See more to see all outputs from previous actions.**
 
     :::image type="content" source="../media/5-logic-app-empty-email-action.png" alt-text="Selection for adding a subject as a dynamic email field.":::
 
