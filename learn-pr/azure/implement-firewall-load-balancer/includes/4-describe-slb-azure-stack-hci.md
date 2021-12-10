@@ -1,4 +1,4 @@
-With the evaluation of Datacenter Firewall successfully completed, the remaining challenge concerns the load balancing functionality. In this case, you also have high hopes, because based on your cursory review, Azure Stack HCI supports different types of software-based load balancers. However, you’re curious to find out about their architecture and the benefits they offer as compared to their hardware-based counterparts.
+With the evaluation of Datacenter Firewall successfully completed, the remaining challenge concerns the load-balancing functionality. In this case, you also have high hopes, because based on your cursory review, Azure Stack HCI supports different types of software-based load balancers. However, you’re curious to find out about their architecture and the benefits they offer as compared to their hardware-based counterparts.
 
 ## What is Azure Stack HCI Software Load Balancer?
 
@@ -8,13 +8,13 @@ The Azure Stack HCI Software Load Balancer is a Layer 4 (L4) load balancer that 
 
 Software-based load balancers combine flexibility, resiliency, scalability, and performance advantages. At the same time, they eliminate common challenges associated with traditional hardware-based load balancers, including expensive support contracts and the need for disruptive firmware upgrades. They also significantly reduce the complexity involved in setting up highly available deployments.
 
-With Azure Stack HCI Software Load Balancer, the VMs hosting the load balancing components reside on the same infrastructure as the load-balanced workloads. This means that they benefit from the characteristics of the underlying platform, including rapid provisioning, with high throughput and low latency of intra-cluster network operations.
+With Azure Stack HCI Software Load Balancer, the VMs hosting the load-balancing components reside on the same infrastructure as the load-balanced workloads. This means that they benefit from the characteristics of the underlying platform, including rapid provisioning, with high throughput and low latency of intra-cluster network operations.
 
 ## What functionality does Software Load Balancer provide?
 
-Software Load Balancer offers the following functionality::
+Software Load Balancer offers the following functionality:
 
-- Load balancing of TCP and UDP network traffic targeting Azure Stack HCI resources that originate from internal and external networks (**North-South** and **East-West**). This includes Hyper-V Network Virtualization-based virtual networks as well as VLAN-based logical networks.
+- Load balancing of TCP and UDP network traffic targeting Azure Stack HCI resources that originate from internal and external networks (**North-South** and **East-West**). This includes Hyper-V Network Virtualization-based virtual networks and VLAN-based logical networks.
 - Support for Network Address Translation (NAT) for inbound and outbound traffic.
 - Performance enhancements such as Direct Server Return, host-based health probes, and automatic support for the Active/Active mode.
 - Integration with Switch Embedded Teaming (SET) or Single Root Input/Output Virtualization (SR-IOV).
