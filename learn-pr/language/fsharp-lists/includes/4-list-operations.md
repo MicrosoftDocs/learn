@@ -96,7 +96,7 @@ Another thing you might want to do is to find a specific element. To do so, you 
 
    ```fsharp
    let list = [1;2;3;4]
-   List.find( fun x -> x % 2 = 0) list // 2, 4
+   List.find( fun x -> x % 2 = 0) list // 2 - Only the first element that matches the condition is returned.
    ```
 
 - `tryFind()`. This function takes a function (predicate) that tells how to find the value and list to look into. It returns an option. Here's how you can use it:
