@@ -36,7 +36,7 @@ Selecting the **See all users** link allows you to view the complete list of use
 
 To see all activity related to a specific user, search for the username.
 
-:::image type="content" source="../media/virtual-desktop-defender-endpoint-image-7-4f18c6cf.png" alt-text="Image of Azure Virtual Desktop and Security Center.":::
+:::image type="content" source="../media/virtual-desktop-defender-endpoint-image-17-e490dd66.png" alt-text="Image of Azure Virtual Desktop and Security Center.":::
 
 
 ## Incidents and Alerts
