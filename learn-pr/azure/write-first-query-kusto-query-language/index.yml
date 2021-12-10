@@ -8,7 +8,7 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure, azure-data-explorer
+  ms.prod: learning-azure
 title: Write your first query with Kusto Query Language
 summary: 'Get started by writing simple queries in Kusto Query Language (KQL) to explore and gain insights from your data. Learn how to use the operators `take`, `project`, `where`, `count`, `sort`, and others.'
 abstract: | 
@@ -28,6 +28,7 @@ roles:
   - security-operations-analyst
 products:
 - azure-data-explorer
+- azure
 units:
 - learn.write-first-query-kusto-query-language.introduction
 - learn.write-first-query-kusto-query-language.understand-basic-structure-kusto-query-language
