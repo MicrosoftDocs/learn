@@ -17,6 +17,8 @@ Some key characteristics of microservices are:
 - Microservices communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
 - Supports polyglot programming. For example, microservices don't need to share the same technology stack, libraries, or frameworks.
 
+<iframe src="https://aka.ms/docs/player?id=4c104952-cc11-4995-8de4-5fdc2ccc23bf" width="1920" height="1080" style="border: 0; max-width: 100%; min-width: 100%;"></iframe>
+
 ## Why develop in a microservice architecture?
 
 The benefits of microservices are that each one typically encapsulates simpler customer requirement functionality, which you can scale out or in, test, deploy, and manage independently. One important benefit of a microservices approach is that teams are driven more by customer scenarios than by technology. Smaller teams develop a microservice based on a customer scenario and use any technologies that they want to use.
