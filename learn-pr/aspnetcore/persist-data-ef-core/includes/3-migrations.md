@@ -99,7 +99,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     - The `DbSet<T>` properties correspond to tables to be created in the database.
     - The table names will match the `DbSet<T>` property names in the `ContosoPetsContext` class. This behavior can be overridden if needed.
-    - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.    
+    - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.
 
 1. In *Program.cs*, replace `// Add the AddDbContext code` with the following code:
 
@@ -190,7 +190,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 1. In *Models\Pizza.cs*, make the following changes:
 
     1. Add a `using` declaration for `System.ComponentModel.DataAnnotations`.
-    1. Add a `[Required]` attribute before the `Name` and `Sauce` properties to mark the properties as required.
+    1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
 
     ```csharp
@@ -205,8 +205,6 @@ EF Core created a database for your app. Let's take a look inside the database.
         [Required]
         [MaxLength(100)]
         public string? Name { get; set; }
-    
-        [Required]
         public Sauce? Sauce { get; set; }
 
         public ICollection<Topping>? Toppings { get; set; }
