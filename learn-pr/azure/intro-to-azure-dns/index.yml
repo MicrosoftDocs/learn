@@ -2,8 +2,8 @@
 uid: learn.introduction-to-azure-dns
 metadata:
   title: Introduction to Azure DNS
-  description: TBD
-  ms.date: 11/22/2021
+  description: Azure DNS is a cloud service that allows you to host and manage domain name system (DNS) domains, also known as DNS zones.
+  ms.date: 12/10/2021
   author: ndelgado
   ms.author: nedelgad
   ms.topic: interactive-tutorial
