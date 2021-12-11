@@ -1,8 +1,6 @@
 You can use Core Tools to publish your functions to Azure.
 
-Now that you've built and tested your simple interest function, you'd like to get it published to Azure. It would be great to see it up and running on the web. When it is, send the URL to your colleagues so they can see how they can call it from anywhere.
-
-In this unit, you'll learn how to create a function app and use Core Tools to publish your functions project in Azure.
+Now that you've built and tested your simple interest function, you'd like to get it published to Azure. It would be great to see it up and running on the web. When it is, you can send the URL to your colleagues so they can see how they can call it from anywhere.
 
 ## Create a function app
 
@@ -24,10 +22,19 @@ Once the tools indicate that publishing is complete, your functions are up and r
 
 Here are a few things to keep in mind when you use the Core Tools to publish your functions:
 
-- The Core Tools don't validate or test your functions code during publishing. Make sure to use `func start` to do some testing before you publish!
+- The Core Tools don't validate or test your functions code during publishing.
+  - Make sure to use `func start` to do some testing before you publish!
 
-- When you publish, any functions already present in the target app are stopped and deleted before the contents of your project are deployed. You can't combine functions from multiple projects into one app by publishing them in this sequence: \-\-. All of the functions you want in the app must be in one project.
+- When you publish, any functions already present in the target app are stopped and deleted before the contents of your project are deployed.
+  - You can't combine functions from multiple projects into one app by publishing them in this sequence: \-\-
+  - All of the functions you want in the app must be in one project.
 
-- Publishing to Azure doesn't create any kind of relationship between the local project and the target function app. You can publish a single functions project to multiple function apps. You can also republish a project to the same app repeatedly as you work on your code.
+- Publishing to Azure doesn't create any kind of relationship between the local project and the target function app.
+  - You can publish a single functions project to multiple function apps.
+  - You can also republish a project to the same app repeatedly as you work on your code.
 
-- The invocation URLs displayed after you publish may include a `code` parameter in the query string, as in the previous screenshot. By default, Core Tools configure HTTP functions with an authorization level of *function*, meaning they require callers to provide a secret key in the request headers or query string. Core Tools includes the key in the query string of the displayed URL for your convenience.
+- The invocation URLs displayed after you publish may include a `code` parameter in the query string.
+  - You can see it in the screenshot above: `?code=4FowT1ywMNoxqa...`
+  - By default, Core Tools configure HTTP functions with an authorization level of *function*.
+  - The authorization level requires callers to provide a secret key in the request headers or query string.
+  - Core Tools includes the key in the query string of the displayed URL for your convenience.

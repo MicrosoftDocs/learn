@@ -11,7 +11,7 @@ The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can us
 
 In this exercise, you'll use Cloud Shell to develop your function.
 
-1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and open that directory.
+1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and go to that directory.
 
     ```bash
     mkdir ~/loan-wizard
@@ -154,26 +154,14 @@ To run our new function locally and try it out, we'll use `func start` to start 
     The top nine lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries, each starting with a timestamp for each time you called the function with `curl`, looking like this.
 
     ```output
-    Executing HTTP request: {
-      "requestId": "91a3875c-d0f1-4290-a3a6-f9c3afed4c7a",
-      "method": "GET",
-      "uri": "/api/simple-interest"
-    }
-    Executing 'Functions.simple-interest' (Reason='This function was programmatically called via the host APIs.',Id=556934d5-2643-493f-aa2a-7b5abb3eda8e)
-    Executed 'Functions.simple-interest' (Succeeded, Id=556934d5-2643-493f-aa2a-7b5abb3eda8e)
-    Executed HTTP request: {
-      "requestId": "91a3875c-d0f1-4290-a3a6-f9c3afed4c7a",
-      "method": "GET",
-      "uri": "/api/simple-interest",
-      "identities": [
-        {
-          "type": "WebJobsAuthLevel",
-          "level": "Admin"
-        }
-      ],
-      "status": 200,
-      "duration": 793
-    }
+    For detailed output, run func with --verbose flag.
+    [2021-12-11T17:32:54.334] Worker process started and initialized.
+    [2021-12-11T17:32:59.183] Host lock lease acquired by instance ID '0000000000000000000000003460A792'.
+    [2021-12-11T17:33:19.442] Executing 'Functions.simple-interest' (Reason='This function was programmatically called via the host APIs.', Id=c291fbd0-b0ca-4d9c-a66c-a22f4bb3064a)
+    [2021-12-11T17:33:19.669] Executed 'Functions.simple-interest' (Succeeded, Id=c291fbd0-b0ca-4d9c-a66c-a22f4bb3064a, Duration=301ms)
+    [2021-12-11T17:33:42.255] Executing 'Functions.simple-interest' (Reason='This function was programmatically called via the host APIs.', Id=4c885ed7-7863-46a6-a606-985d37a139e1)
+    [2021-12-11T17:33:42.260] Executed 'Functions.simple-interest' (Succeeded, Id=4c885ed7-7863-46a6-a606-985d37a139e1, Duration=13ms)
+    Application is shutting down...
     ```
 
 1. Close the editor by pressing <kbd>Ctrl+Q</kbd>.

@@ -31,7 +31,11 @@ az functionapp create \
 
 Here's what these commands do:
 
-1. The three lines at the top create shell variables with values that we use repeatedly in the following commands. For resource group, we specify the group created for you by the sandbox. The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random five-character string, to ensure that the names meet the requirement of being globally unique.
+1. The first three lines at the top create shell variables with values that we use repeatedly in the following commands.
+
+   - For resource group, we specify the group created for you by the sandbox.
+
+   - The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random five-character string, to ensure that the names meet the requirement of being globally unique.
 
 1. `az storage account create` creates an Azure storage account that will be used by the function app. A storage account is a separate Azure resource that needs to be created before the function app can be created.
 
@@ -61,4 +65,4 @@ Your function is now published to Azure and can be called from anywhere. As an H
 
 1. Select the invoke URL from the previous command's output to open it in a new browser tab. You'll see the same output we observed when we ran the function locally without providing the right query string parameters.
 
-1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300`, as expected.
+1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300.000000000001`, as expected.
