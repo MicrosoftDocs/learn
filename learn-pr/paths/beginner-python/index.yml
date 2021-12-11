@@ -30,7 +30,7 @@ products:
 - vs
 modules:
 #- learn.beginner-python.create-run-jupyter-notebook
-#- learn.beginner-python.create-run-program
+- learn.beginner-python.create-run-program
 #- learn.beginner-python.create-manage-projects
 #- learn.beginner-python.use-boolean-types
 #- learn.beginner-python.use-strings
