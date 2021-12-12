@@ -6,12 +6,16 @@ A Kusto query is a read-only request to process data and return results.
 
 ## What is an aggregate function?
 
-The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. It's easier to compare these events if you group them by other fields, such as location, time, or event type. An aggregation function groups values of multiple rows to form a single summary value.
+The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. It's easier to compare these events if you group them by certain fields, such as location, time, or event type. 
+
+An aggregation function groups values of multiple rows to form a single summary value.
 
 ADD IMAGE
 
 ## What is a let statement?
 
 how to make this flow......
+
+content content content
 
 In the next units, we'll learn about some of the most common aggregation functions, and then build complex queries using the let statement to gain insights into a sample dataset containing US meteorological data.
