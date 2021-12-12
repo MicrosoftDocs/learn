@@ -32,7 +32,7 @@ We'll discuss and use version 2.x throughout this tutorial, but you won't instal
 
 ### Local development vs. Azure portal development
 
-The Azure portal has a powerful functions editor experience. In most cases, it doesn't support modifying functions that you develop locally. Once you start using a local development workflow based on Core Tools, you can't use the Azure Portal to make changes to your functions.
+The Azure portal has a powerful functions editor experience. In most cases, it doesn't support modifying functions that you develop locally. Once you start using a local development workflow based on Core Tools, you can't use the Azure portal to make changes to your functions.
 
 ## Create functions locally
 
