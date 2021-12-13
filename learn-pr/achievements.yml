@@ -222,6 +222,11 @@ achievements:
   title: Differentiate Azure management tools
   summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
   iconUrl: /learn/achievements/differentiate-azure-management-tools.svg
+- uid: learn.store-and-share-with-azure-files.badge
+  type: badge
+  title: Store and share files in your app with Azure Files
+  summary: Azure Files provides a cloud-based file share for storing and sharing files to apps. Whether it's an app hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
+  iconUrl: /learn/achievements/store-and-share-with-azure-files.svg
 - uid: learn.wwl.secure-network-connectivity.badge
   type: badge
   title: Secure network connectivity

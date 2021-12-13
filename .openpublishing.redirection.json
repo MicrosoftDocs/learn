@@ -1091,6 +1091,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/2-plan-azure-files-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/3-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/4-exercise-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/5-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/6-exercise-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-your-azure-virtual-machine-disks/8-summary",
       "redirect_document_id": false
