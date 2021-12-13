@@ -333,6 +333,6 @@ Now that we have added the product categories, we will display the list of produ
     >[!Tip]
     > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
-After implementing the above steps, here is how your application must look.
+After implementing the above steps, here is how your application must look. The application will include an excellent **Splash screen**, a **Home page**, and a product inventory to browse products.
 
 :::image type="content" source="../media/application-demo-1.gif" alt-text="application demo after connecting to a data source." lightbox="../media/application-demo-1.gif":::
