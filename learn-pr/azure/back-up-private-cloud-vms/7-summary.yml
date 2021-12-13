@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.back-up-private-cloud-vms.7-summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: This is a summary unit.
+  ms.date: 1/1/2022
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

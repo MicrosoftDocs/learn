@@ -1,0 +1,3 @@
+In this unit, you've learned how to access data in Blob Storage using multiple protocols such as REST, HDFS, NFS, and SFTP.
+
+Your company can now use only one storage account to meet different department requirements to store and access data by using different tools. By using multiprotocol support for accessing data that resides in Azure Blob Storage your organization can now eliminate data silos and you no longer need to refactor the data prior moving to the cloud.
