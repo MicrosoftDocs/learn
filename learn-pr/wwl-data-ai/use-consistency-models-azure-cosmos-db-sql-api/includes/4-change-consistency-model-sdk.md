@@ -23,7 +23,7 @@ Product item = await container.ReadItemAsync<Product>(id, partitionKey, requestO
 > [!NOTE]
 > The consistency level can only be relaxed on a per-request basis, not strengthened.
 
-As an alternative, you can relax the consistency for the entier **CosmosClient** instance using the **CosmosClientOptions** class.
+As an alternative, you can relax the consistency for the entire **CosmosClient** instance using the **CosmosClientOptions** class.
 
 ```csharp
 CosmosClientOptions options = new()

@@ -3,7 +3,7 @@ uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api
 metadata:
   title: Use consistency models in Azure Cosmos DB SQL API
   description: "Configure consistency on a sliding scale for Azure Cosmos DB SQL API."
-  ms.date: 12/09/2021
+  ms.date: 12/13/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
