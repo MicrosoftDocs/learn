@@ -20,22 +20,24 @@ Azure Data Lake Storage Gen2 enables you to access a data container by using the
 
 First, establish remote access to services. If you opt to use SSH, you could use the following sample code:
 
-#Connect to the cluster via SSH.
+```#Connect to the cluster via SSH.
 
-`ssh sshuser@clustername-ssh.azurehdinsight.net`
+ssh sshuser@clustername-ssh.azurehdinsight.net
 
-\#Execute basic HDFS commands. Display the hierarchy.
+#Execute basic HDFS commands. Display the hierarchy.
 
-`hdfs dfs -ls /`
+hdfs dfs -ls /
 
-\#Create a sample directory.
+#Create a sample directory.
 
-`hdfs dfs -mkdir /samplefolder`
+hdfs dfs -mkdir /samplefolder
 
-\#Create a container
+#Create a container
 
-``hdfs dfs -D "fs.azure.createRemoteFileSystemDuringInitialization=true" -ls abfs://<container-name>@<storage-account-name>.dfs.core.windows.net/````
+hdfs dfs -D "fs.azure.createRemoteFileSystemDuringInitialization=true" -ls abfs://<container-name>@<storage-account-name>.dfs.core.windows.net/
 
-#Get a list of files or directories`hdfs dfs -ls <path>`
+#Get a list of files or directories
+
+hdfs dfs -ls <path>```
 
 Your company can maintain the same storage solution for both object storage and analytics storage. You can use existing tools, applications, and services to access data in Blob Storage that have a hierarchical namespace, without having to modify your solution depending on the data.
