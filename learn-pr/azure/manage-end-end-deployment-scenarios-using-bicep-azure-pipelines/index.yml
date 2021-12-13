@@ -9,7 +9,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
 summary: |
   Create a unified pipeline to deploy your entire environment. You'll add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
@@ -45,6 +44,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
   - azure-devops

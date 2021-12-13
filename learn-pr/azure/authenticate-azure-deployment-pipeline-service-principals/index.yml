@@ -9,7 +9,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Authenticate your Azure deployment pipeline by using service principals
 summary: |
   Service principals enable your deployment pipelines to authenticate securely with Azure.
@@ -39,6 +38,8 @@ roles:
   - developer
   - administrator
   - solution-architect
+languages:
+  - bicep
 products:
   - azure
   - azure-active-directory

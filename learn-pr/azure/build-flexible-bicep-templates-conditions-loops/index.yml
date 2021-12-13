@@ -9,7 +9,6 @@ metadata:
   ms.author: akasnik
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Build flexible Bicep templates by using conditions and loops
 summary: |
   Deploy resources only when specific constraints are in place. Use loops to deploy multiple resources that have similar properties.
@@ -35,6 +34,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
 units:
