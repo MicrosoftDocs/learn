@@ -28,7 +28,7 @@ roles:
 products:
   - azure
   - azure-resource-manager
-devlang:
+languages:
   - bicep
 prerequisites: |
   You should be familiar with:
