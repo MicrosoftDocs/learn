@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.power-apps-tutorial
 metadata:
-  title: Power Apps in Mixed Reality
+  title: Build a 3D mobile app with Power Apps in Mixed Reality
   description: Learn about all the foundational elements required to build a Mixed Reality application using Power Apps.
   ms.date: 10/19/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Power Apps in Mixed Reality
-summary: Learn about all the foundational elements required to build a Mixed Reality application and build a sales-oriented Mixed Reality application using Power Apps.
+title: Build a 3D mobile app with Power Apps in Mixed Reality
+summary: Learn about the foundational elements required to build a Mixed Reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in Mixed Reality.
 abstract: |
   By the end of this module you will be able to:
-  - Understand about Power Apps and its use cases.
+  - Understand Power Apps in Mixed Reality and its use cases.
   - Learn about some of the Mixed Reality components included in Power Apps such as Measure in MR and View in MR
-  - Configure, set up and build a "Sales" oriented Mixed reality application with Power Apps.
+  - Configure, set up, and build a "Sales" oriented Mixed reality application with Power Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

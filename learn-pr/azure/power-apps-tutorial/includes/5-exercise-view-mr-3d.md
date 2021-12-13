@@ -194,6 +194,6 @@ Another unique property provided by the **View in MR** component is **Object sca
     >[!Tip]
     > To save your progress, select **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
-Implementing the above steps must make your application look like this.
+Implementing the above steps will produce an application with a details page containing detailed product information. The application will also include the **View in 3D** component, allowing you to include 3D content. You can also place 3D models in your real-world via the **View in MR** component. Now that you have learned how to implement these features, you can incorporate them into your future applications.
 
 :::image type="content" source="../media/application-demo-2.gif" alt-text="application demo after implementing view in 3d and view in mr" lightbox="../media/application-demo-2.gif":::
