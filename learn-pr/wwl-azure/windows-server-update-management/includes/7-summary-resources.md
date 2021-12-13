@@ -1,6 +1,6 @@
-This module provided you with the knowledge to understand the role that Windows Server Update Services (WSUS) plays to deploy system updates to computers on your network. You learned about the different WSUS deployment options, the different phases of the WSUS update management process, and about Azure Update Management.
+This module provided you with the necessary knowledge to understand the role that Windows Server Update Services can play in deploying operating system updates to computers on your network. You learned about the different WSUS deployment options, the different phases of the WSUS update management process, and about Azure Update Management.
 
-Now that you've reviewed this module, you can:
+Now that you have reviewed this module, you should be able to:
 
 - Describe the role of WSUS
 

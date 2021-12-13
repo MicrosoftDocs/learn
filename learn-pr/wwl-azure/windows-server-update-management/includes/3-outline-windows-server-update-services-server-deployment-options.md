@@ -46,6 +46,5 @@ You can configure downstream servers in one of two modes:
 
 You can have multiple layers in your WSUS hierarchy. You can configure some of your downstream servers to use autonomous mode, while you can use replica mode to configure other servers. For example, you can have a single upstream server connected to Microsoft Update, downloading updates for your entire organization. You can have two other downstream servers in autonomous mode, one that manages updates for all computers running software in English, and another for all computers running software in Spanish. Finally, you can have another set of downstream servers receiving their updates from the middle-tier WSUS servers configured in replica mode. These are the actual servers that clients receive updates from, but all the management is done at the middle tier.
 
-> [!NOTE] 
-> You can configure downstream servers to download the update information metadata from an upstream server, but to download the actual updates themselves from Microsoft Update. This is a common configuration when the downstream servers have good internet connectivity and you want to reduce WAN traffic.
+Note: You can configure downstream servers to download the update information metadata from an upstream server, but to download the actual updates themselves from Microsoft Update. This is a common configuration when the downstream servers have good internet connectivity and you want to reduce WAN traffic.
 

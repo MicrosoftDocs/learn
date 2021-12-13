@@ -16,7 +16,7 @@ abstract: |
   *   Describe the WSUS update management process
   *   Deploy updates with WSUS
 prerequisites: |
-  - Experience performing basic Windows Server administration tasks
+  *   Experience performing basic Windows Server administration tasks
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -33,7 +33,7 @@ units:
 - learn.wwl.windows-server-update-management.overview-of-windows-update
 - learn.wwl.windows-server-update-management.wsus-server-deployment-options
 - learn.wwl.windows-server-update-management.wsus-process
-- learn.wwl.windows-server-update-management.azure
+- learn.wwl.windows-server-update-management.describe-process-of-update-management
 - learn.wwl.windows-server-update-management.knowledge-check
 - learn.wwl.windows-server-update-management.summary
 badge:
