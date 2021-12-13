@@ -39,7 +39,7 @@ units:
 - learn.azure.back-up-private-cloud-vms.3-access-data-azure-blob-storage-rest-protocol
 - learn.azure.back-up-private-cloud-vms.4-access-data-azure-blob-storage-nfs-protocol
 - learn.azure.back-up-private-cloud-vms.5-access-data-azure-blob-storage-sftp-protocol
-- learn.azure.back-up-private-cloud-vms.6-knowledge check
+- learn.azure.back-up-private-cloud-vms.6-knowledge-check
 - learn.azure.back-up-private-cloud-vms.7-summary
 badge:
   uid: learn.azure.back-up-private-cloud-vms.badge
