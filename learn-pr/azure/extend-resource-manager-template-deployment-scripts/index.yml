@@ -9,6 +9,7 @@ metadata:
   ms.author: stmuraws
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: bicep
 title: Extend ARM templates by using deployment scripts
 summary: |
   Add custom steps to your Bicep or JSON Azure Resource Manager templates (ARM templates).
