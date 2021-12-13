@@ -6,6 +6,8 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 
 1. Run the following query:
 
+    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkirRzUlJLU4GAC8Pmw5vAAAA)
+
     ```kusto
     StormEvents
     | where DamageProperty > 0
