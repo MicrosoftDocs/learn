@@ -8,9 +8,12 @@ With multi-region write enabled, many of the features associated with a single-r
 - Low latency write operations across the globe
 - High availability with financially backed SLA
 
+> [!NOTE]
+> Strong consistency is not supported in a multi-region write scenario.
+
 In the event of a data center outage, accounts with multiple write-regions will continue to be available for read and write operations as the SDK will automatically attempt requests at another region from the preferred regions list.
 
-Multi-region write can be configured using the Azure CLI, PowerShell, code, or the Azure portal.
+Multi-region write can be configured using the Azure CLI, PowerShell, code, Azure Resource Manager templates (JSON/Bicep), or the Azure portal.
 
 [![Global distribution pane in Azure portal with multi-region write options](../media/2-enable-multi-write.png)](../media/2-enable-multi-write-full.png#lightbox)
 

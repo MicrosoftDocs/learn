@@ -47,6 +47,8 @@ roles:
   - administrator
 products:
   - azure-resource-manager
+  - azure-devops
+  - azure-pipelines
 units:
 - learn.azure.test-bicep-code-using-azure-pipelines.introduction
 - learn.azure.test-bicep-code-using-azure-pipelines.understand-pipeline-stages
