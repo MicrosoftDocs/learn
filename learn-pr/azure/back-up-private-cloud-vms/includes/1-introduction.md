@@ -1,3 +1,10 @@
+You can access your da
+
+ta from Azure Blob Storage by using different protocols such as representational state transfer (REST), Hadoop Distributed File System (HDFS), Network File System (NFS), and Secure File Transfer Protocol (SFTP).
+
+
+## Example scenario
+
 Suppose you work for a media company that has several departments, each generating large amounts of data in diverse formats: 
 
 1. Your main business units have an extensive library of video clips, which users access multiple times a day. Your company uses Azure Blob Storage (Blob Storage) to store these videos because it provides a convenient space for storing large quantities of data in a safer and more reliable manner.
