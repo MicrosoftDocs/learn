@@ -10,7 +10,7 @@ As in JavaScript, you can define functions in TypeScript several different ways.
 
 A named function is a function declaration written with the `function` keyword and provided with a distinct name within the current scope. Named function declarations load into the execution context before any code runs. This is known as hoisting, meaning you can use the function before you declare it.
 
-The syntax for declaring a named function in TypeScript is the same as defining one in JavaScript. The only difference with TypeScript that you can now provide a type annotation for the function's parameters and return value.
+The syntax for declaring a named function in TypeScript is the same as defining one in JavaScript. The only difference with TypeScript is that you can provide a type annotation for the function's parameters and return value.
 
 This function accepts two parameters of type `number` and returns a `number`.
 
