@@ -32,7 +32,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Blob Storage supports the NFS protocol for accessing data."
     - content: "SFTP"
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. Blob Storage supports the SFTP protocol for accessing data."
   - content: "An administrator is planning to access data in Blob Storage using an SFTP client. Which authentication model can the administrator use for connecting SFTP clients?"
     choices:
