@@ -28,7 +28,8 @@ roles:
 products:
   - azure
   - azure-resource-manager
-devlang: bicep
+devlang:
+  - bicep
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
