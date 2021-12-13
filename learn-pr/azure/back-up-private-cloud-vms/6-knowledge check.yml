@@ -46,4 +46,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
 content: |
-  [!include[](includes/6-knowledge check.md)]
+  [!include[](includes/6-knowledge-check.md)]
