@@ -9,7 +9,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Create composable Bicep files by using modules
 summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
 abstract: |
@@ -35,6 +34,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
 units:

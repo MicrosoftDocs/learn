@@ -9,7 +9,6 @@ metadata:
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Manage multiple environments by using Bicep and GitHub Actions
 summary: |
   Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use reusable workflows to reduce code duplication, and set parameter values for each environment.
@@ -42,6 +41,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
   - github

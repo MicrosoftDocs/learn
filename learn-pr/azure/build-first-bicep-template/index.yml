@@ -9,7 +9,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Build your first Bicep template
 summary: Define Azure resources within a Bicep template. Improve the consistency and reliability of your deployments, reduce the manual effort required, and scale your deployments across environments. Your template will be flexible and reusable through the use of parameters, variables, expressions, and modules.
 abstract: |
@@ -35,6 +34,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:  
   - azure-resource-manager
 units:  

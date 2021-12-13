@@ -9,7 +9,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: bicep
 title: Deploy child and extension resources by using Bicep
 summary: |
   Deploy a variety of Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside a Bicep template or module.
@@ -36,6 +35,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
 units:
