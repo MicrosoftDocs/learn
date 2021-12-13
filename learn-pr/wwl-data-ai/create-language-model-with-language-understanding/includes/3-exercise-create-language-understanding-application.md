@@ -1,6 +1,6 @@
 Increasingly, we expect computers to be able to use AI in order to understand spoken or typed commands in natural language. For example, you might want to implement a home automation system that enables you to control devices in your home by using voice commands such as "switch on the light" or "put the fan on", and have an AI-powered device understand the command and take appropriate action.
 
-To test the capabilities of the Conversational Language Understanding service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Conversational Language Understanding service, we'll use a command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 ## Create a *Language service* resource
 
@@ -34,14 +34,14 @@ To implement natural language understanding with Conversational Language Underst
 3. If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
     1. On the bar at the top if the page, click the **Settings (&#9881;)** button.
     2. On the **Settings** page, view the **Resources** tab.
-    3. Select the language resource you just created, and click **Switch resource**.
+    3. Select your language resource, and click **Switch resource**.
     4. At the top of the page, click **Language Studio** to return to the Language Studio home page.
 4. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
-5. In the **Create a project** dialog box, in the **Choose project type** page, select **Conversation** and click **Next**.
+5. In the **Create a project** dialog box, in the **Choose project type** page, select **Conversation**, and click **Next**.
 6. On the **Enter basic information** page, enter the following details and click **Next**:
     - **Choose project type**: *Conversation project*
     - **Name**: HomeAutomation 
-        - Please use this exact name
+        - Use this exact name
     - **Description**: Simple home automation
     - **Utterances primary language**: English
     - **Enable multiple languages in project**: *Do not select*
@@ -49,11 +49,11 @@ To implement natural language understanding with Conversational Language Underst
 
 ### Create intents and entities
 
-An *intent* is an action you want to perform - for example, you might want to switch a light on, or turn a fan off. In this case, you'll define two intents: one to switch a device on, and another to switch a device off. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
+An *intent* is an action you want to perform - for example, you might want to switch on a light, or turn off a fan. In this case, you'll define two intents: one to switch on a device, and another to switch off a device. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
 1. In the **Build schema** pane on the left, ensure that **Intents** is selected Then click **Add**, and add an intent with the name **switch_on** (in lower-case) and click **Add intent**.
 2. Click the **switch_on** intent. It will take you to the **Tag utterances** page. Next to the **switch_on** intent, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
-3. On the **Tagging** pane on the right hand side of the screen, select **Add entity** and type **device** (in lower-case) and select **Done**. 
+3. On the **Tagging** pane on the right-hand side of the screen, select **Add entity** and type **device** (in lower-case) and select **Done**. 
 4. In the *turn the light on* utterance, highlight the word "light". Then in the list that appears, in the *Search for an entity* box select **device**. 
 5. Now create a second utterance for the **switch_on** intent. Type the phrase ***switch on the fan*** next to the **switch_on** intent. Then select the word "fan" and assign it to the **device** entity you created previously.
 6. The language service needs at least five different utterance examples for each intent to sufficiently train the language model. Add four more utterance examples to the **switch_on** intent:
@@ -66,12 +66,12 @@ Tag *fan* or *light* with the device entity. When you're finished, verify that y
 
 | **intent** | **utterance** | **entity** |
 | --------------- | ------------------ | ------------------ |
-| switch_on   | put the fan on      | device - *select fan* |
-| switch_on   | put the light on    | device - *select light* |
-| switch_on   | switch on the light | device - *select light* |
-| switch_on   | turn the fan on     | device - *select fan* |
-| switch_on   | switch on the fan   | device - *select fan* |
-| switch_on   | turn the light on   | device - *select light* |
+| switch_on   | Put on the fan      | Device - *select fan* |
+| switch_on   | Put on the light    | Device - *select light* |
+| switch_on   | Switch on the light | Device - *select light* |
+| switch_on   | Turn the fan on     | Device - *select fan* |
+| switch_on   | Switch on the fan   | Device - *select fan* |
+| switch_on   | Turn the light on   | Device - *select light* |
 
 7. In the pane on the left, click **Build schema** and verify that your **switch_on** intent is listed. Then click **Add** and add a new intent with the name **switch_off** (in lower-case).
 8. Click on the **switch_off** intent. It will take you to the **Tag utterances** page. Next to the **switch_off** intent, add the utterance ***turn the light off*** and assign the word "light" to the **device** entity.
@@ -86,12 +86,12 @@ Tag *fan* or *light* with the device entity. When you're finished, verify that y
 
 | **intent** | **utterance** | **entity** | 
 | --------------- | ------------------ | ------------------ |
-| switch_off   | put the fan off    | device - *select fan* | 
-| switch_off   | put the light off  | device - *select light* |
-| switch_off   | turn off the light | device - *select light* |
-| switch_off   | switch the fan off | device - *select fan* |
-| switch_off   | switch off the fan | device - *select fan* |
-| switch_off   | turn the light off | device - *select light* |
+| switch_off   | Put the fan off    | Device - *select fan* | 
+| switch_off   | Put the light off  | Device - *select light* |
+| switch_off   | Turn off the light | Device - *select light* |
+| switch_off   | Switch the fan off | Device - *select fan* |
+| switch_off   | Switch off the fan | Device - *select fan* |
+| switch_off   | Turn the light off | Device - *select light* |
 
 ### Train the model
 
@@ -101,15 +101,15 @@ Now you're ready to use the intents and entities you have defined to train the c
     - **Train a new model**: *Selected and choose a model name*
     - **Run evaluation with training**: *Enabled evaluation*
     - Click **Train** at the bottom of the page.
-2. Wait for training to complete - this may take some time.
+2. Wait for training to complete. 
 
 ### Deploy and test the model
 
 To use your trained model in a client application, you must deploy it as an endpoint to which the client applications can send new utterances; from which intents and entities will be predicted.
 
-1. On the left hand side of Language Studio, click **Deploy model**.
+1. On the left-hand side of Language Studio, click **Deploy model**.
 2. Select your model name and click **Deploy Model**, and wait for it to be deployed.
-3. When the model is deployed, click **Test model** on the left hand side of the page, and then select your model.
+3. When the model is deployed, click **Test model** on the left-hand side of the page, and then select your model.
 4. Enter the following text, and then click **Run the test**:
 
     *switch the light on*
@@ -123,10 +123,10 @@ To use your trained model in a client application, you must deploy it as an endp
 
 ## Run Cloud Shell 
 
-Now let's try out your deployed model. To do so, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
+Now let's try out your deployed model. To do so, we'll use a command-line application that runs in the Cloud Shell on Azure. 
 
 1. Leaving the browser tab with Language Studio open, switch back to browser tab containing the Azure portal.
-2. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
+2. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. Clicking the button opens a Cloud Shell pane at the bottom of the portal. 
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
@@ -145,7 +145,7 @@ Now let's try out your deployed model. To do so, we'll use a simple command-line
 
 ## Configure and run a client application
 
-Now let's open and edit a pre-written script which will run the client application. 
+Now let's open and edit a pre-written script, which will run the client application. 
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -160,21 +160,21 @@ Now let's open and edit a pre-written script which will run the client applicati
     code .
     ```
 
-    Notice how this opens up an editor like the one in the image below: 
+    Notice how the script opens up an editor like the one in the image below: 
  
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
 3. In the **Files** pane on the left, select the **understand.ps1** file in the **ai-900** folder. This file contains some code that uses your Conversational Language Understanding model. 
 
-    Don't worry too much about the details of the code, the important thing is that it needs the endpoint and key for your Language service model. You'll get these from Language Studio.
+    Don't worry too much about the details of the code, the important thing is that it needs the endpoint and key for your Language service model. You'll get the endpoint and key from the Language Studio.
 
 4. Switch back to the browser tab containing Language Studio. Then in Language Studio, open the **Deploy model** page and select your model. Then click the **Get prediction URL** button. The two pieces of information you need are in this dialog box:
-    - The endpoint for your model - you can copy this from the **Prediction URL** box.
-    - The key for your model - this is in the **Sample request** as the value for the **Ocp-Apim-Subscription-Key** parameter, and looks similar to ***0ab1c23de4f56gh7i8901234jkl567m8***.
+    - The endpoint for your model - you can copy the endpoint from the **Prediction URL** box.
+    - The key for your model - the key is in the **Sample request** as the value for the **Ocp-Apim-Subscription-Key** parameter, and looks similar to ***0ab1c23de4f56gh7i8901234jkl567m8***.
     
 5. Copy the endpoint value, then switch back to the browser tab containing the Cloud Shell and paste it into the code editor, replacing **YOUR_ENDPOINT** (within the quotation marks). The repeat that process for the key, replacing **YOUR_KEY**.
 
-    After pasting the key and endpoint values, the first lines of code should look similar to this:
+    After pasting the key and endpoint values, the first lines of code should look similar to what you see below:
 
     ```PowerShell
     $endpointUrl="https://some-name.cognitiveservices.azure.com/language/..."
@@ -201,4 +201,4 @@ Now let's open and edit a pre-written script which will run the client applicati
 
 ## Learn more
 
-This simple app shows only some of the capabilities of the Conversational Language Understanding feature of the Language service. To learn more about what you can do with this service, see the [Conversational Language Understanding page](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
+This app shows only some of the capabilities of the Conversational Language Understanding feature of the Language service. To learn more about what you can do with this service, see the [Conversational Language Understanding page](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
