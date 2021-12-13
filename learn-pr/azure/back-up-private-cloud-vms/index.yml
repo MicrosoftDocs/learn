@@ -27,12 +27,12 @@ levels:
 roles:
   - administrator
   - developer
-  - devOps engineer
-  - data engineer
-  - solution architect
+  - devOps-engineer
+  - data-engineer
+  - solution-architect
 products:
-  - azure blob storage
-  - azure data lake storage
+  - azure-blob-storage
+  - azure-data-lake-storage
 units:
 - learn.azure.back-up-private-cloud-vms.1-introduction
 - learn.azure.back-up-private-cloud-vms.2-understand-object-storage-solutions
