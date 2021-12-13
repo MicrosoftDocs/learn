@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.cultivate-an-innovative-mindset
+metadata:
+  title: Identify governing practices for responsible AI in government
+  description: Learn guiding principles for governments, and how to choose and operationalize a governance system to responsibly and successfully use AI in the public sector.
+  ms.date: 12/13/2021
+  author: amiguelblanco
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Identify governing practices for responsible AI in government
+summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as they embark on their own AI journey.
+abstract: | 
+  In this module, you will:
+  - Determine the elements of an AI governance system.
+  - Choose an AI governance model that fits your government’s needs.
+  - Approach policy discussions to promote broad development and deployment of ethical AI systems.
+prerequisites: None
+iconUrl: /learn/achievements/cultivate-an-innovative-mindset.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics-365
+- m365
+units: 
+- learn-wwl.cultivate-an-innovative-mindset.introduction
+- learn-wwl.cultivate-an-innovative-mindset.power-embracing-innovative-mindset
+- learn-wwl.cultivate-an-innovative-mindset.case-study-introduction
+- learn-wwl.cultivate-an-innovative-mindset.wpp-executive-qa
+- learn-wwl.cultivate-an-innovative-mindset.case-study-resolution
+- learn-wwl.cultivate-an-innovative-mindset.knowledge-check
+- learn-wwl.cultivate-an-innovative-mindset.summary-and-resources
+badge: 
+  uid: learn-wwl.cultivate-an-innovative-mindset.badge #add the uid for your achievement badge.

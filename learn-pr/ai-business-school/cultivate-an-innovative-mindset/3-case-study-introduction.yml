@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cultivate-an-innovative-mindset.case-study-introduction
+title: Case study introduction 
+metadata:
+  title: Case study introduction 
+  description: PENDING
+  ms.date: 12/13/2021
+  author: amiguelblanco
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/3-case-study-introduction.md)] 

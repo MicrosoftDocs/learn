@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cultivate-an-innovative-mindset.wpp-executive-qa
+title: WPP executive Q&A
+metadata:
+  title: WPP executive Q&A 
+  description: PENDING
+  ms.date: 12/13/2021
+  author: amiguelblanco
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/4-wpp-executive-qa.md)] 
