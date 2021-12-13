@@ -7,6 +7,7 @@ You'll have the role of an IT operator, who will manage those secrets and grant 
 In your application, you had two secrets to store:
 
 - `${azureDatabaseName}` is the name of the PostgreSQL database that was configured earlier in the `AZ_DATABASE_NAME` environment variable. Type `echo $AZ_DATABASE_NAME` to see it.
+- `${azureDatabaseUsername}` is the name of the database username that was configured earlier in the `AZ_DATABASE_USERNAME` environment variable. Type `echo $AZ_DATABASE_USERNAME` to see it.
 - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_DATABASE_PASSWORD` environment variable. Type `echo $AZ_DATABASE_PASSWORD` to see it.
 
 Let's create an Azure Key Vault instance and store those secrets in it:
@@ -23,6 +24,11 @@ az keyvault secret set \
     --vault-name $AZ_KEY_VAULT_NAME \
     --name azureDatabaseName \
     --value ${AZ_DATABASE_NAME}
+
+az keyvault secret set \
+    --vault-name $AZ_KEY_VAULT_NAME \
+    --name azureDatabaseName \
+    --value ${AZ_DATABASE_USERNAME}
 
 az keyvault secret set \
     --vault-name $AZ_KEY_VAULT_NAME \

@@ -14,11 +14,12 @@ You'll use Azure CLI to create the following resources:
 You'll need to provide some environment variables at the beginning of the script, that should be unique across Azure.
 We recommend you use your username and some random characters to avoid naming conflicts.
 
-You'll also need to provide your local IP address to access the database from your local computer. If you
-don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
+You'll also need to provide your local IP address to access the database from your local computer. This IP address should
+be an IPv4 Address. If you don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
 
 ```bash
 AZ_RESOURCE_GROUP=<YOUR_UNIQUE_RESOURCE_GROUP_NAME>
+AZ_DATABASE_USERNAME=<YOUR_POSTGRESQL_USERNAME>
 AZ_DATABASE_PASSWORD=<YOUR_POSTGRESQL_PASSWORD>
 AZ_LOCAL_IP_ADDRESS=<YOUR_LOCAL_IP_ADDRESS>
 ```
@@ -30,7 +31,7 @@ Once those environment variables are set, you can run the following command to c
 AZ_LOCATION=eastus
 AZ_SPRING_CLOUD=spring-${AZ_RESOURCE_GROUP}
 AZ_DATABASE_NAME=pgsql-${AZ_RESOURCE_GROUP}
-AZ_DATABASE_USERNAME=java
+AZ_DATABASE_USERNAME=${AZ_DATABASE_USERNAME}
 
 az group create \
     --name $AZ_RESOURCE_GROUP \
@@ -136,15 +137,16 @@ To access the database, you'll need to configure the `src/main/resources/applica
 logging.level.org.springframework.jdbc.core=DEBUG
 
 spring.datasource.url=jdbc:postgresql://${azureDatabaseName}.postgres.database.azure.com:5432/demo
-spring.datasource.username=java@${azureDatabaseName}
+spring.datasource.username=${azureDatabaseUsername}@${azureDatabaseName}
 spring.datasource.password=${azureDatabasePassword}
 
 spring.sql.init.mode=always
 ```
 
-This configuration file has two variables that need to be configured:
+This configuration file has three variables that need to be configured:
 
 - `${azureDatabaseName}` is the name of the PostgreSQL database that was configured earlier in the `AZ_DATABASE_NAME` environment variable. Type `echo $AZ_DATABASE_NAME` to see it.
+- `${azureDatabaseUsername}` is the name of the database username that was configured earlier in the `AZ_DATABASE_USERNAME` environment variable. Type `echo $AZ_DATABASE_USERNAME` to see it.
 - `${azureDatabasePassword}` is the name of the database password that was configured earlier in the `AZ_DATABASE_PASSWORD` environment variable. Type `echo $AZ_DATABASE_PASSWORD` to see it.
 
 As we've seen in the previous unit, it's a bad practice to hard-code those values in the application
