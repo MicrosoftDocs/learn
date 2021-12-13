@@ -5,10 +5,10 @@ Your company can now use only one storage account to meet different department r
 ## References
 
 For more information, refer to the following articles:
-- [Introduction to Azure Blob storage] (https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
-- [Introduction to Azure Data Lake Storage Gen2] (https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
-- [Network File System (NFS) 3.0 protocol support in Azure Blob Storage] (https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support)
-- [SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)] (https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-support)
-- [Connect to Azure Blob Storage by using the SSH File Transfer Protocol (SFTP) (preview)] (https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-support-how-to)
-- [Known issues with SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)] (https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
-- [Using the HDFS CLI with Data Lake Storage Gen2] {https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-hdfs-data-lake-storage}
+- [Introduction to Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
+- [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
+- [Network File System (NFS) 3.0 protocol support in Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/network-file-system-protocol-support)
+- [SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)](https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-support)
+- [Connect to Azure Blob Storage by using the SSH File Transfer Protocol (SFTP) (preview)](https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-support-how-to)
+- [Known issues with SSH File Transfer Protocol (SFTP) support for Azure Blob Storage (preview)](https://docs.microsoft.com/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
+- [Using the HDFS CLI with Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-use-hdfs-data-lake-storage)
