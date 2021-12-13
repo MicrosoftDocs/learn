@@ -37,21 +37,21 @@ Use the following procedure to enable support for SFTP and create local users, a
 9. Use an SFTP client to establish an SSH connection to your Azure storage account.
 
 ```
-# Connect to Blob Storage account with a local user that has a home directory
+#Connect to Blob Storage account with a local user that has a home directory
 
-`sftp <myaccount>.<myusername>@<myaccount>.blob.core.windows.net`
+sftp <myaccount>.<myusername>@<myaccount>.blob.core.windows.net
 
-# Connect to Blob Storage account with a local user that doesn’t have a home directory
+#Connect to Blob Storage account with a local user that doesn’t have a home directory
 
-`sftp <myaccount>.<mycontainer>.<myusername>@<myaccount>.blob.core.windows.net`
+sftp <myaccount>.<mycontainer>.<myusername>@<myaccount>.blob.core.windows.net
 
 #List the content in the azure storage account container
 
-`ls`
+ls
 
-# Download files from the storage account
+#Download files from the storage account
 
-`Get <nameoftheblob>`
+Get <nameoftheblob>
 ```
 
 **Note**: Accounts that have SFTP enabled do not support GRS, GZRS, read-access geo-redundant storage (RA-GRS), and read-access geo-zone-redundant storage (RA-GZRS).
