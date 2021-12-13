@@ -27,7 +27,7 @@ az keyvault secret set \
 
 az keyvault secret set \
     --vault-name $AZ_KEY_VAULT_NAME \
-    --name azureDatabaseName \
+    --name azureDatabaseUsername \
     --value ${AZ_DATABASE_USERNAME}
 
 az keyvault secret set \
