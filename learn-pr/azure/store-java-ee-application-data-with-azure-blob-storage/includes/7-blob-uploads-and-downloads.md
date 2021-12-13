@@ -85,7 +85,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
     > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location. 
 
     ```bash
-    mvn clean package
+    ./mvnw clean package
     ```
 
     ```azurecli

@@ -15,7 +15,11 @@ abstract: |
     - Organize your data with Azure Blob Storage
     - Create storage resources to hold blobs
     - Store and retrieve data from Azure Blob Storage using Azure Storage SDK for Java
-prerequisites: None
+prerequisites: |
+  - Azure subscription
+  - [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
+  - [Java SE 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+  - [Git CLI](https://git-scm.com/downloads)
 iconUrl: /learn/achievements/store-app-data-with-azure-blob-storage.svg
 levels:
 - beginner
