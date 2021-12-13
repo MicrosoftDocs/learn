@@ -46,6 +46,7 @@ roles:
   - administrator
 products:
   - azure-resource-manager
+  - github
 units:
 - learn.azure.test-bicep-code-using-github-actions.introduction
 - learn.azure.test-bicep-code-using-github-actions.understand-workflow-jobs

@@ -44,6 +44,8 @@ roles:
   - administrator
 products:
   - azure-resource-manager
+  - azure-devops
+  - azure-pipelines
 units:
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.introduction
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.understand-environments
