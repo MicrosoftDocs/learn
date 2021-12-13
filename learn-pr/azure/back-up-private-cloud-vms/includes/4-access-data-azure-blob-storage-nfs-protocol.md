@@ -28,9 +28,9 @@ Perform the following tasks to enable NFS support in your Azure Blob Storage:
 
 3. Create a container within the storage accounts, and then mount that container using a client that supports the NFS 3.0 protocol.
 
-4. Use the following code to mount a container using a NFS 3.0 client. Replace the values for *<nameofthestoraggeaccount>* and *<nameofthecontainer>* with names that correspond to your environment.
+4. Use the following code to mount a container using a NFS 3.0 client. Replace the values for _<nameofthestoraggeaccount>_ and _<nameofthecontainer>_ with names that correspond to your environment.
 
-  `Sudo mount -o sec=sys,vers=3,nolock,proto=tcp <*nameofthestorageaccount>*.blob.core.windows.net:/<nameofthestorageaccount>/<nameofthecontainer> /mnt/blob`
+  `Sudo mount -o sec=sys,vers=3,nolock,proto=tcp _<nameofthestorageaccount>_.blob.core.windows.net:/<nameofthestorageaccount>/<nameofthecontainer> /mnt/blob`
 
 **Note:** When you create an NFS 3.0 storage account, the GRS, GZRS, and RA-GRS redundancy options aren’t supported.
 
