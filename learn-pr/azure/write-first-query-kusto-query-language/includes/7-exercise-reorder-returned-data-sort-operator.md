@@ -25,6 +25,8 @@ Each region has unique weather patterns, so now you want to know which events in
 
 1. Run the following query:
 
+    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkiohShUSi5PR1QAA36YINHUAAAA=)
+
     ```kusto
     StormEvents
     | where DamageProperty > 0
@@ -44,12 +46,15 @@ Instead of sorting and scanning the top for a certain number of results, you can
 
 1. Run the following query:
     
+    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkqV5BcoGBooJFUquCTmJqanBhTlF6QWlVQCpQqK8rNSk0sg+nQUwKaFVBYAmahKAYKJ63RsAAAA)
+
     ```kusto
     StormEvents
     | where State == "FLORIDA"
     | top 10 by DamageProperty
     | project State, EventType, DamageProperty
     ```
+
 1. You should get results that look like the following image:
 
     :::image type="content" source="../media/6-sort-3.png" alt-text="Screenshot of query results for the top operator.":::
