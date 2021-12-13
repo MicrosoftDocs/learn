@@ -9,7 +9,7 @@ metadata:
   author: AnuSridhar-25
   ms.author: v-anursr
   ms.topic: interactive-tutorial
-durationInMinutes: 9
+durationInMinutes: 3
 quiz:
   questions:
   - content: "An administrator plans to mount Blob Storage on a Linux machine using the NFS 3.0 protocol. What are the requirements for Blob Storage?"
