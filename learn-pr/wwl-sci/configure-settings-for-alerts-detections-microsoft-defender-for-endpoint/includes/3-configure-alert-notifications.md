@@ -12,9 +12,9 @@ The email notification includes basic information about the alert and a link to 
 
 You can create rules that determine the devices and alert severities to send email notifications to notification recipients.
 
-1. In the navigation pane, select **Settings > Alert notifications**.
+1. In the Microsoft 365 Defender portal, select **Settings** then select **Endpoints** and then select **Email notifications**.
 
-1. Select **Add notification rule**.
+1. Select **+ Add item**.
 
 1. Specify the General information:
 
@@ -37,4 +37,3 @@ You can create rules that determine the devices and alert severities to send ema
 1. Check that email recipients are able to receive the email notifications by selecting Send test email.
 
 1. Select **Save notification rule**.
-
