@@ -12,71 +12,38 @@ metadata:
 durationInMinutes: 9
 quiz:
   questions:
-  - content: "How many different types of parameters does Datacenter Firewall support for defining its rules?"
+  - content: "An administrator plans to mount Blob Storage on a Linux machine using the NFS 3.0 protocol. What are the requirements for Blob Storage?"
     choices:
-    - content: "Five"
+    - content: "Hierarchical namespace"
       isCorrect: true
-      explanation: "Correct. Datacenter Firewall is a network layer, stateful, multitenant firewall. It supports five parameters: source and destination port numbers, source and destination IP addresses, and a protocol."
-    - content: "Four"
+      explanation: "Correct. You can use the NFS 3.0 protocol to access data in Blob Storage if the hierarchical namespace feature is enabled."
+    - content: "Flat namespace provided with blobs"
       isCorrect: false
-      explanation: "Incorrect. Datacenter Firewall doesn’t use four parameters for defining its rules."
-    - content: "Three"
+      explanation: "Incorrect. You need to enable hierarchical namespace on Blob Storage to use the NFS 3.0 protocol for accessing data."
+    - content: "Page blobs "
       isCorrect: false
-      explanation: "Incorrect. Datacenter Firewall doesn’t use three parameters for defining its rules."
-  - content: "To which two types of objects can an administrator assign an ACL of Datacenter Firewall?"
+      explanation: "Incorrect. You can use the NFS 3.0 protocol to access data in Blob Storage using block blobs."
+  - content: "Which of the following protocols does Blob Storage not support for data access?"
     choices:
-    - content: "Logical network"
-      isCorrect: false
-      explanation: "Incorrect. You cannot assign an ACL to a logical network."
-    - content: "VM"
-      isCorrect: false
-      explanation: "Incorrect. You cannot assign an ACL to a VM."
-    - content: "Network subnet"
+    - content: "Server Message Block (SMB) "
       isCorrect: true
-      explanation: "Correct. You can assign an ACL to a VM network interface, logical network subnet, or virtual network subnet."
-  - content: "What’s the most granular level at which an administrator can assign logging of Datacenter Firewall auditing?"
+      explanation: "Correct. You use SMB primarily for accessing data in Azure Files."
+    - content: "NFS 3.0"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage supports the NFS protocol for accessing data."
+    - content: "SFTP"
+      isCorrect: true
+      explanation: "Incorrect. Blob Storage supports the SFTP protocol for accessing data."
+  - content: "An administrator is planning to access data in Blob Storage using an SFTP client. Which authentication model can the administrator use for connecting SFTP clients?"
     choices:
-    - content: "An ACL rule"
+    - content: "SAS"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage doesn’t support SAS authentication."
+    - content: "Azure AD authentication"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage doesn’t support Azure AD authentication."
+    - content: "Local users with either password or SSH key pairs "
       isCorrect: true
-      explanation: "Correct. You can enable logging on individual ACL rules."
-    - content: "An ACL"
-      isCorrect: false
-      explanation: "Incorrect. You can enable logging on individual ACL rules, not an ACL."
-    - content: "A network subnet"
-      isCorrect: false
-      explanation: "Incorrect. You can enable logging on individual ACL rules, not a network subnet."
-  - content: "Which mechanism does Network Controller use to advertise VIPs assigned to SLB multiplexer VMs to datacenter routers?"
-    choices:
-    - content: "Border Gateway Protocol"
-      isCorrect: true
-      explanation: "Correct. Network Controller assigns VIPs to SLB multiplexer VMs, which, in turn, rely on Border Gateway Protocol to advertise VIPs to datacenter routers as individual /32 routes."
-    - content: "Open Shortest Path First"
-      isCorrect: false
-      explanation: "Incorrect. Azure Stack HCI SDN doesn’t rely on Open Shortest Path First."
-    - content: "Routing Information Protocol"
-      isCorrect: false
-      explanation: "Incorrect. Azure Stack HCI SDN doesn’t rely on Routing Information Protocol."
-  - content: "On which layer of the Open Systems Interconnection (OSI) model does SDN SLB operate?"
-    choices:
-    - content: "3"
-      isCorrect: false
-      explanation: "Incorrect. SDN SLB doesn’t provide Layer 3 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "4"
-      isCorrect: true
-      explanation: "Correct. SDN SLB provides Layer 4 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "7"
-      isCorrect: false
-      explanation: "Incorrect. SDN SLB doesn’t provide Layer 7 load balancing for North-South and East-West TCP/UDP traffic."
-  - content: "Which of the following tasks doesn’t require creating a health probe object?"
-    choices:
-    - content: "Implementing inbound NAT"
-      isCorrect: true
-      explanation: "Correct. NAT doesn’t rely on health probes, because it doesn’t distribute traffic based on the operational status of a target VM."
-    - content: "Implementing internal load balancing"
-      isCorrect: false
-      explanation: "Incorrect. Load balancing rules require the use of a health probe."
-    - content: "Implementing external load balancing"
-      isCorrect: false
-      explanation: "Incorrect. Load balancing rules require the use of a health probe."
+      explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
 content: |
   [!include[](includes/6-knowledge check.md)]
