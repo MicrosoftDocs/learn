@@ -1,4 +1,4 @@
-Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between your programming language and the database. With EF Core, the database is abstracted behind .NET POCOs, **P**lain **O**ld **C**LR **O**bjects) As a result, you can focus on your code and EF Core handles direct interaction with the database. 
+Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between your programming language and the database. With EF Core, the database is abstracted behind .NET POCOs, (**P**lain **O**ld **C**LR **O**bjects) As a result, you can focus on your code and EF Core handles direct interaction with the database. 
 
 With EF Core, you can:
 
@@ -37,7 +37,7 @@ EF Core provides two primary ways of keeping your EF Core model and database sch
 
 ### Migrations (Model as the source of truth)
 
-In real world projects, data models change as app features get implemented--New entities are added and removed, and database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
+In real world projects, data models change as app features get implemented. As new entities are added and removed, and database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
 
 When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration. EF Core compares the current model against a snapshot of the old model to determine the differences. C# code to implement the changes is generated. The C# files can be tracked in your project's source control like any other source file.
 
@@ -45,7 +45,7 @@ Once a new migration has been generated, it can be applied to a database in vari
 
 ### Reverse engineering (Database as the source of truth)
 
-Reverse engineering is the process of scaffolding entity model classes and a DbContext class based on a database schema. This approach is often used with existing or shared databases where the schema can't easily be changed.
+Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases where the schema can't easily be changed.
 
 ## Getting started
 

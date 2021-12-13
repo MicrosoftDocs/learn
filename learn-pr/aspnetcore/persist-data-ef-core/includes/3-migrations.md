@@ -23,7 +23,7 @@ In this unit, you'll create C# entity classes that will map to tables in the a l
 1. Review the code. Note the following:
 
     - The project is an ASP.NET Core web API.
-    - *Services/PizzaService.cs* is a service class that defines CRUD (**C**reate, **R**ead, **U**pdate**, **D**elete) methods. All the methods currently throw `System.NotImplementedException`.
+    - *Services/PizzaService.cs* is a service class that defines CRUD (**C**reate, **R**ead, **U**pdate, **D**elete) methods. All the methods currently throw `System.NotImplementedException`.
     - In *Program.cs*, `PizzaService` is registered with ASP.NET Core's dependency injection system.
     - *Controllers/PizzaController.cs* is an `ApiController` that exposes an endpoint for HTTP **POST**, **GET**, **PUT**, and **DELETE** verbs. These verbs call the corresponding CRUD methods on `PizzaService`. `PizzaService` is injected into `PizzaController`'s constructor.
     - The *Models* folder contains the models used by `PizzaService` and `PizzaController`.
@@ -98,7 +98,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     In the preceding code:
 
     - The `DbSet<T>` properties correspond to tables to be created in the database.
-    - The table names will match the `DbSet<T>` property names in the `ContosoPetsContext` class. This behavior can be overridden if needed.
+    - The table names will match the `DbSet<T>` property names in the `PizzaContext` class. This behavior can be overridden if needed.
     - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.
 
 1. In *Program.cs*, replace `// Add the AddDbContext code` with the following code:

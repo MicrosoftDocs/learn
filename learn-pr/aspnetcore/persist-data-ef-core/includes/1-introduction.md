@@ -7,7 +7,7 @@ Suppose you're an employee of a pizza company named Contoso Pizza. Your manager 
 
 In this module, you will:
 
-- Review object-relational mapper (ORM) concepts
+- Review object-relational mapper (ORM) concepts.
 - Understand Entity Framework Core (EF Core) architecture.
 - Write C# code to interact with a database using EF Core.
 - Use EF Core Migrations to keep the code and database in sync.
