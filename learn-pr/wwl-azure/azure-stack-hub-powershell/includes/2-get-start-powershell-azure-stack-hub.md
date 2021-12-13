@@ -18,7 +18,7 @@ This unit helps you orient yourself to the variety of PowerShell modules that ar
     Global Azure Resource Manager
   :::column-end:::
   :::column:::
-    [Azure PowerShell modules](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-7.0.0&amp;preserve-view=true).
+    [Azure PowerShell modules](https://docs.microsoft.com/powershell/azure/new-azureps-module-az?view=azps-7.0.0&amp;preserve-view=true).
   :::column-end:::
   :::column:::
     REST API browser.
