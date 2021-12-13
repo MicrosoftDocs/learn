@@ -1,12 +1,11 @@
 In this exercise, we'll create a function app in Azure and publish our project.
 
 ## Create a function app
+
 > [!IMPORTANT]
 > The procedures on this page depend upon work completed in Unit 3. Additionally, the sandbox for this module must be active. The sandbox gives you free, temporary access to Azure and the Azure CLI. The Azure Cloud Shell to the right should already be signed in to your account and configured. If the sandbox is not active, you've lost the necessary access, resources, and output you need. Please go back and complete Unit 3.
 
 Before you can publish your code to a function app using Core Tools, you need to create the app in Azure. Let's use the Azure CLI in Azure Cloud Shell to do that.
-
-
 
 To create a function app in Azure, run the following commands in Azure Cloud Shell.
 
@@ -32,11 +31,15 @@ az functionapp create \
 
 Here's what these commands do:
 
-1. The three lines at the top create shell variables with values that we use repeatedly in the following commands. For resource group, we specify the group created for you by the sandbox. The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random five-character string, to ensure that the names meet the requirement of being globally unique.
+1. The first three lines at the top create shell variables with values that we use repeatedly in the following commands.
 
-2. `az storage account create` creates an Azure storage account that will be used by the function app. A storage account is a separate Azure resource that needs to be created before the function app can be created.
+   - For resource group, we specify the group created for you by the sandbox.
 
-3. `az functionapp create` creates the function app. Our new app uses the `node` (JavaScript) runtime, and runs on the serverless, pay-as-you-go consumption billing plan.
+   - The storage account and function app names include `$(openssl rand -hex 5)`, which generates a random five-character string, to ensure that the names meet the requirement of being globally unique.
+
+1. `az storage account create` creates an Azure storage account that will be used by the function app. A storage account is a separate Azure resource that needs to be created before the function app can be created.
+
+1. `az functionapp create` creates the function app. Our new app uses the `node` (JavaScript) runtime, and runs on the serverless, pay-as-you-go consumption billing plan.
 
 ## Publish to Azure
 
@@ -54,7 +57,7 @@ func azure functionapp publish "$FUNCTIONAPP" --force
 >
 > Also, you're appending `--force` to the end of the command to update the function app version mismatch.
 
-Unlike the previous exercise, where you temporarily hosted your function locally from the Core Tools, your function is now live on the web and will remain globally available until the sandbox for this tutorial expires.
+Unlike the previous exercise, where you temporarily hosted your function locally from the Core Tools, your function is now live on the web. It will remain globally available until the sandbox for this tutorial expires.
 
 ## Run the function
 
@@ -62,4 +65,4 @@ Your function is now published to Azure and can be called from anywhere. As an H
 
 1. Select the invoke URL from the previous command's output to open it in a new browser tab. You'll see the same output we observed when we ran the function locally without providing the right query string parameters.
 
-1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300`, as expected.
+1. Add `&principal=5000&rate=.035&term=36` to the end of the URL (make sure you preserve the `code` parameter), and press <kbd>Enter</kbd>. The result returned is `6300.000000000001`, as expected.
