@@ -1,4 +1,4 @@
-Azure Active Directory is the core of any secure solution you will build on Azure. You need to know verify who is accessing your systems, what they have access to, and monitor how they are using your solutions.
+Azure Active Directory is the core of any secure solution you will build on Azure. You need to know who is accessing your systems, what they have access to, and monitor how they are using your solutions.
 
 ## Scenario
 
