@@ -11,6 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/6-getting-blob-references.md)]

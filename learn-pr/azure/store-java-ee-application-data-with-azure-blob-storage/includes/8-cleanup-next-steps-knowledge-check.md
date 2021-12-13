@@ -1,3 +1,1 @@
 In this module, you learned how to use Azure Blob Storage to store Jave EE application data. You discovered tips for creating a strategy to use Blob Storage in an enterprise application, and how to use the Azure Storage SDK for Java to write to and read from blobs. The application you created accepts uploaded files from users, stores them in Blob Storage, and makes them available for download.
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]

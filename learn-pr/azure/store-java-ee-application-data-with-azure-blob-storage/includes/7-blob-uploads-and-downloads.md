@@ -54,7 +54,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
     ```azurecli
     az appservice plan create \
     --name blob-exercise-plan \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group <resource group name> \
     --is-linux \
     --sku P1V3 --location westus2
     ```
@@ -63,7 +63,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
     az webapp create \
     --name <your-unique-app-name> \
     --plan blob-exercise-plan \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group <resource group name> \
     --runtime "JBOSSEAP|7.3-java8"
     ```
 
@@ -75,7 +75,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
     ```azurecli
     az webapp config appsettings set \
-    --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name> --resource-group <resource group name> \
     --settings STORAGE_CONNECTION_STRING=$CONNECTIONSTRING STORAGE_CONTAINER_NAME=files
     ```
 
@@ -90,7 +90,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
     ```azurecli
     az webapp deploy \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group <resource group name> \
     --name <your-unique-app-name> \
     --src-path target/ROOT.war
     ```

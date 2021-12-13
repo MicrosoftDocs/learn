@@ -31,7 +31,7 @@ To create the storage account, run this command. Remember to enter your unique s
 ```azurecli
 az storage account create \
   --kind StorageV2 \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group [resource group name] \
   --location centralus \
   --name [your-unique-storage-account-name]
 ```
