@@ -16,4 +16,7 @@ In this module, you will:
 
 ## Prerequisites  
 
-None
+- Azure subscription
+- [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
+- [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+- [Git CLI](https://git-scm.com/downloads)
