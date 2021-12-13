@@ -331,7 +331,6 @@ The columns indicate whether the tag:
 
 By default, service tags reflect the ranges for the entire cloud. Some service tags also allow more granular control by restricting the corresponding IP ranges to a specified region. For example, the service tag Storage represents Azure Storage for the entire cloud, but Storage. WestUS narrows the range to only the storage IP address ranges from the WestUS region. The [following table](https://docs.microsoft.com/azure/virtual-network/service-tags-overview#available-service-tags) indicates whether each service tag supports such regional scope.
 
-In the classic deployment model (before Azure Resource Manager), a subset of the tags listed in the previous table
 
 In the classic deployment model (before Azure Resource Manager), a subset of the tags listed in the previous table are supported. These tags are spelled differently:
 
