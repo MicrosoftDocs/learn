@@ -4,7 +4,7 @@ You can offer Infrastructure as a Service (IaaS) services that enable your users
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -17,13 +17,11 @@ After completing this module, you'll be able to:
  -  Manage subscriptions, plans, and offers using PowerShell for Azure Stack Hub.
  -  Change user subscription owner for Azure Stack Hub.
 
-## **Skills measured**
-
-**Provide services.**
+## Skills measured
 
  -  Offer services.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Working experience with deploying cloud applications.
  -  Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.

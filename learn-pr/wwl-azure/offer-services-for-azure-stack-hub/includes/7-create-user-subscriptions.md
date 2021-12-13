@@ -58,6 +58,4 @@ If the offer you subscribe to has an add-on plan, you can add that plan to your 
 
 1.  In the user portal, select **All services**. Next, under the **GENERAL** category, select **Subscriptions**, and then select the subscription that you want change. If there are add-on plans available, + **Add plan** is active and shows a tile for **Add-on plans**.
 
-If **+ Add plan** isn't active, then there are no add-on plans for the offer associated with that subscription.
-
 2.  Select **+ Add plan** or the **Add-on plans** tile. Under **Add-on plans**, select the plan you want to add.
