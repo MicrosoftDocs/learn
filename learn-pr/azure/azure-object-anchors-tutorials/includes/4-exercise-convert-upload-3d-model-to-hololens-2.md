@@ -18,7 +18,7 @@ cd ./azure-object-anchors
 
     :::image type="content" source="../media/open-solution-file.png" alt-text="Screenshot of sample project solution file." lightbox="../media/open-solution-file.png":::
 
-2) In the **Solution Explorer** expand the **ConversionQuickstart** and double click on **Configuration.cs** to open the file.
+2) In the **Solution Explorer** expand the **ConversionQuickstart** and double-click on **Configuration.cs** to open the file.
 
     :::image type="content" source="../media/open-configuration-file.png" alt-text="Screenshot of configuration file." lightbox="../media/open-configuration-file.png":::
 
@@ -29,7 +29,8 @@ cd ./azure-object-anchors
     * In the **AccountDomain** field, paste the **Account Domain** from your Azure Object Anchors account
 
     You need to define the path to the 3D model, the Supported file formats are **fbx**, **ply**, **obj**, **glb**, and **gltf**.
-at the **InputAssetPath** add the absolute path to a 3D model on your local machine.
+
+    At the **InputAssetPath** add the absolute path to a 3D model on your local machine.
 
     In addition, you must include **Gravity**, which is the direction of the 3D model's gravity vector. The down vector pointing to the earth is the gravity direction. The gravity direction in CAD models is usually the inverse of the up direction. For example, in many cases +Z represents up, in which case -Z or Vector3(0.0, 0.0, -1.0) would represent the gravity direction. When determining gravity, you should also consider the orientation in which the model will be seen during runtime. If you're trying to detect a chair in the real world on a flat surface, gravity might be Vector3(0.0, 0.0, -1.0). However, if the chair is on a 45-degree slope, gravity might be Vector3(0.0, -Sqrt(2)/2, -Sqrt(2)/2).
 
@@ -38,7 +39,7 @@ at the **InputAssetPath** add the absolute path to a 3D model on your local mach
      > [!NOTE]
       > The gravity direction can be determined with a 3D rendering tool, like [MeshLab](http://www.meshlab.net/).
 
-4) Once all the required fields are filled select **Debug** > **StartDebugging** to build and run the project to upload your 3D model. register a new conversion job with the service, and wait for it to be completed. Once the job is completed, the Object Anchors model will be downloaded next to the file specified in the **InputAssetPath** you specified earlier.
+4) Once all the required fields are filled select **Debug** > **StartDebugging** to build and run the project to upload your 3D model. Register a new conversion job with the service, and wait for it to be completed. Once the job is completed, the Object Anchors model will be downloaded next to the file specified in the **InputAssetPath** you specified earlier.
 
     :::image type="content" source="../media/start-debug.png" alt-text="Screenshot of Building a project." lightbox="../media/start-debug.png":::
 
@@ -52,6 +53,6 @@ You must first make your models available to the app before running it. Follow t
 
     :::image type="content" source="../media/hololens-explorer.png" alt-text="Screenshot of explorer window of HoloLens." lightbox="../media/hololens-explorer.png":::
 
-2) Next go to **Internal Storage** > **3D Objects**. copy and paste your converted Objects Anchors 3D model hear.
+2) Next go to **Internal Storage** > **3D Objects**, copy and paste your converted Objects Anchors 3D model hear.
 
     :::image type="content" source="../media/hololens-explorer-3d-objects.png" alt-text="Screenshot of converted 3 D model added to HoloLens folder." lightbox="../media/hololens-explorer-3d-objects.png":::

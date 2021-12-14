@@ -2,7 +2,7 @@ In this tutorial you will create a Unity HoloLens app that uses [Azure Object An
 
 ## Open the sample project
 
-For this tutorial you will use the same sample project you downloaded from this [repository](https://github.com/Azure/azure-object-anchors) to convert your 3D model into a Azure Object Anchors model in [Chapter-4](/learn/modules/azure-object-anchors-tutorials/4-exercise-convert-upload-3d-model-to-hololens-2). in the downloaded sample project open the **quickstarts/apps/unity/basics** with Unity preferably with **Unity 2019.4.28f**.
+For this tutorial you will use the same sample project you downloaded from this [repository](https://github.com/Azure/azure-object-anchors) to convert your 3D model into an Azure Object Anchors model in [Chapter-4](/learn/modules/azure-object-anchors-tutorials/4-exercise-convert-upload-3d-model-to-hololens-2). In the downloaded sample project open the **quickstarts/apps/unity/basics** with Unity preferably with **Unity 2019.4.28f**.
 
  > [!NOTE]
  > Once you open the project in Unity you may see some errors, these errors will be cleared once we added required packages into the project.
