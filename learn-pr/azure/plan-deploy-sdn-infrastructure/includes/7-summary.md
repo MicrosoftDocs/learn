@@ -7,7 +7,7 @@ You explored the architecture and core functionality of SDN on Azure Stack HCI. 
 
 ## References
 
-For more information, see the following links:
+For more information, refer to the following links:
 
 - [Software Defined Networking (SDN) in Azure Stack HCI and Windows Server](/azure-stack/hci/concepts/software-defined-networking)
 - [Plan a Software Defined Network infrastructure](/azure-stack/hci/concepts/plan-software-defined-networking-infrastructure)

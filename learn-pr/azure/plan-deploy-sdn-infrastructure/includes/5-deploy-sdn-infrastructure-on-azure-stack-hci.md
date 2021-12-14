@@ -4,7 +4,7 @@ You’ve addressed all of the Azure Stack HCI SDN prerequisites and are eager to
 
 There are four primary methods of deploying Azure Stack HCI SDN:
 
-- SDN Express PowerShell module (**SDNExpressModule.psm1**)-based script (**SDNExpress.ps1**). This option provides the most flexibility and you can use it to fully automate your deployment. It supports deployment of the entire SDN fabric including Network Controller, SLB/MUX, and Gateway VMs. To automate your deployment, you can use an input configuration file that includes values of such deployment parameters as prefixes of IP logical subnets, VLAN IDs, deployment credentials, target Azure Stack HCI cluster nodes, and BGP peering settings. You can download the module and sample configuration files as per your requirements (**Traditional VLAN networks.psd1**, **Virtualized networks.psd1**, **Software Load Balancer.psd1**, and **SDN Gateways.psd1**) from the SDN Express GitHub repository to a host from which you’ll initiate the deployment. Alternatively, you have the option of running the **SDNExpress.ps1** interactively. This approach offers a graphical interface guiding you through deployment. The script also allows you to save the settings you specified as a configuration file, which you can subsequently use to automate another deployment.
+- SDN Express PowerShell module (**SDNExpressModule.psm1**)-based script (**SDNExpress.ps1**). This option provides the most flexibility and you can use it to fully automate your deployment. It supports deployment of the entire SDN fabric including Network Controller, Software Load Balancer Multiplexer, and Gateway VMs. To automate your deployment, you can use an input configuration file that includes values of such deployment parameters as prefixes of IP logical subnets, VLAN IDs, deployment credentials, target Azure Stack HCI cluster nodes, and BGP peering settings. You can download the module and sample configuration files as per your requirements (**Traditional VLAN networks.psd1**, **Virtualized networks.psd1**, **Software Load Balancer.psd1**, and **SDN Gateways.psd1**) from the SDN Express GitHub repository to a host from which you’ll initiate the deployment. Alternatively, you have the option of running the **SDNExpress.ps1** interactively. This approach offers a graphical interface guiding you through deployment. The script also allows you to save the settings you specified as a configuration file, which you can subsequently use to automate another deployment.
 
 The following screenshot depicts the **Welcome** page of the SDN Express deployment wizard.
 
@@ -26,7 +26,7 @@ The following screenshot depicts the **Review** page of the SDN Express deployme
 - Windows Admin Center. This option uses the Azure Stack HCI cluster deployment wizard Windows Admin Center extension to set up an Azure Stack HCI cluster, including its Storage Spaces Direct (also known as S2D)-based storage and Network Controller VMs. The extension also supports installing SDN into an existing cluster. The wizard guides you through installing required operating system features, configuring networking, creating the cluster, deploying Storage Spaces Direct, and, optionally, implementing SDN.
 
     > [!NOTE]
-    > As of November 2021, the Windows Admin Center extension doesn't support provisioning of SLB/MUX or Gateway VMs.
+    > As of November 2021, the Windows Admin Center extension doesn't support provisioning of Software Load Balancer Multiplexer or Gateway VMs.
 
 The following screenshot depicts the options to choose the cluster type in the Windows Admin Center.
 
@@ -47,4 +47,6 @@ The following screenshot depicts the completion of the deployment process in Win
 ## Phased deployments
 
 Depending on your requirements, you have the option to provision only a subset of the SDN services. For example, if your virtualized workloads don’t require external connectivity, you can simply exclude gateway VMs from the scope of your deployment and add them later if your requirements change at some point.
-For more details on the infrastructure requirements for your scenarios, refer to the documentation links in the Summary unit.
+
+> [!NOTE]
+> For more details on the infrastructure requirements for your scenarios, refer to the documentation links in the Summary unit.

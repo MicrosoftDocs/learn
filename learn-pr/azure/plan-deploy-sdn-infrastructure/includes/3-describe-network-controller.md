@@ -2,7 +2,7 @@ Now that you have a basic understanding of the core SDN concepts, you want to ex
 
 ## What is Network Controller?
 
-Network Controller is the core component of the SDN implementation in Azure Stack HCI. It’s included as an optional part of the Azure Stack HCI cluster creation process, or you can install it later. It serves as the primary interface for communication between management applications, such as Windows Admin Center and VMM, and the managed network devices and services. Network Controller is also responsible for policy-based configuration and monitoring, which help ensure that the SDN environment deploys required resources and adjusts their characteristics to adhere to the rules that you define.
+Network Controller is the core component of the SDN implementation in Azure Stack HCI. It’s included as an optional part of the Azure Stack HCI cluster creation process. You can also install it later. It serves as the primary interface for communication between management applications, such as Windows Admin Center and VMM, and the managed network devices and services. Network Controller is also responsible for policy-based configuration and monitoring, which help ensure that the SDN environment deploys required resources and adjusts their characteristics to adhere to the rules that you define.
 
 ### What is Network Controller architecture?
 
@@ -25,7 +25,7 @@ Network Controller offers the following management features:
 - Firewall management. Configuration and management of access control list (ACL) rules within and across virtual networks as well as within and across traditional VLAN networks.
 - RAS Gateway management. Deployment, configuration, and management of virtual gateway devices that provide the following functionality:
 
-  - Site-to-Site VPN connectivity between remote tenant networks and your datacenter using encrypted IPsec tunnels.
+  - Site-to-Site VPN connectivity between remote tenant networks and your datacenter by using encrypted IPsec tunnels.
   - Site-to-Site VPN connectivity between remote tenant networks and your datacenter by using GRE tunnels.
   - Layer 3 forwarding connectivity to the physical network infrastructure in the local datacenter.
   - Border Gateway Protocol (BGP) route exchange between your tenants' VM networks and their remote sites.

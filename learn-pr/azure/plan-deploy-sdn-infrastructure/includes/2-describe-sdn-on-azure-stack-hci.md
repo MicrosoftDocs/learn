@@ -1,4 +1,4 @@
-Before you begin to evaluate the capabilities Azure Stack HCI SDN, you want to review the core SDN concepts. You realize that these concepts form the foundational knowledge that will help you understand more complex aspects of network virtualization and virtualization-based services such as software load balancers, distributed firewalls, or remote access gateways.
+Before you begin to evaluate the capabilities of Azure Stack HCI SDN, you want to review the core SDN concepts. You realize that these concepts form the foundational knowledge that will help you understand more complex aspects of network virtualization and virtualization-based services such as software load balancers, distributed firewalls, or remote access gateways.
 
 ## What is network virtualization?
 
@@ -9,7 +9,7 @@ Additionally, these benefits play a significant role in datacenter consolidation
 
 SDN provides a method to centrally configure and manage networks and network services such as switching, routing, and load balancing in your datacenter. SDN replaces the functionality that’s traditionally delegated to hardware-based network devices with virtualized software functions implemented by using network function virtualization.
 
-## What is Network Function Virtualization?
+## What is network function virtualization?
 
 In software-defined datacenters, virtual appliances take over the delivery of network functions that are traditionally implemented by hardware devices. These virtualized functions can be grouped into several categories, such as security and edge services. Security appliances include firewalls while edge appliances include gateways, routers, switches, and load balancers.
 
@@ -29,7 +29,7 @@ SDN in Azure Stack HCI helps address challenges associated with traditional netw
 
 - Abstracting network services. You can deploy and manage software-defined network services, abstracted from the underlying physical network.
 - Centralizing network policies. You can use network policies to centrally configure and control rules that govern traffic flow within and between virtual and physical networks. Implementing network policies enhances consistency and scalability as the volume of network services increases.
-- Centralizing network management. You can manage the virtualized network infrastructure by using PowerShell, Windows Admin Center, and System Center Virtual Machine Manager (VMM).
+- Centralizing network management. You can manage the virtualized network infrastructure by using PowerShell, Windows Admin Center, and Microsoft System Center Virtual Machine Manager (VMM).
 
 These capabilities of Azure Stack HCI SDN are implemented by using Network Controller. Network Controller is a server role that provides a management interface that’s accessible via the Representational State Transfer (REST) Application Programming Interface (API) for the deployment, management, configuration, monitoring, and troubleshooting of SDN infrastructure and network function virtualization-based services.
 
@@ -56,4 +56,4 @@ Each network interface of a VM connected to a virtual network subnet is associat
 
 ### Logical networks and subnets
 
-To implement network function virtualization and to allow VLAN-based segmentation, SDN relies on the concept of logical networks. Each logical network represents a logical partition of a physical network. A logical network comprises a collection of logical subnets that map to customer VLANs. These VLANs might host customer workloads, but there are also several logical networks that host critical SDN infrastructure components. For example, an Azure Stack HCI SDN implementation includes the Management and HNV Provider logical networks, with the latter serving as the Provider Address network for all virtual networks. All Hyper-V hosts that are part of that implementation must be connected to the Management logical network and the HNV Provider logical network.
+To implement network function virtualization and to allow VLAN-based segmentation, SDN relies on the concept of logical networks. Each logical network represents a logical partition of a physical network. A logical network comprises of a collection of logical subnets that map to customer VLANs. These VLANs might host customer workloads, but there are also several logical networks that host critical SDN infrastructure components. For example, an Azure Stack HCI SDN implementation includes the Management and HNV Provider logical networks, with the latter serving as the Provider Address network for all virtual networks. All Hyper-V hosts that are part of that implementation must be connected to the Management logical network and the HNV Provider logical network.

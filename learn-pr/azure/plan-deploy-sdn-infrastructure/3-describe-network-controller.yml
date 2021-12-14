@@ -2,9 +2,9 @@
 uid: learn.azure.plan-deploy-sdn-infrastructure.3-describe-network-controller
 title: Describe Network Controller
 metadata:
-  unitType: exercise
+  unitType: learning-content
   title: Describe Network Controller
-  description: This unit steps through the process of adding disks to an HPC cluster's scheduler nodes by using an Azure CycleCloud template.
+  description: This unit provides an overview of Network Controller and its architecture.
   ms.date: 11/23/2021
   author: LBN-commits
   ms.author: v-lanai

@@ -2,9 +2,9 @@
 uid: learn.azure.plan-deploy-sdn-infrastructure.4-plan-sdn-infrastructure-on-azure-stack-hci
 title: Plan for SDN infrastructure on Azure Stack HCI
 metadata:
-  unitType: exercise
+  unitType: learning-content
   title: Plan for SDN infrastructure on Azure Stack HCI
-  description: This unit steps through the process of adding a custom node array to an HPC cluster by using an Azure CycleCloud template.
+  description: This unit describes how to plan for deploying SDN infrastructure on Azure Stack HCI.
   ms.date: 11/23/2021
   author: LBN-commits
   ms.author: v-lanai
