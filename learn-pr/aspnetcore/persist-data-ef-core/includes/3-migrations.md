@@ -46,7 +46,7 @@ Before you start, you need to add the required packages.
 
 1. From the terminal, run the following command:
 
-    ```dotnet-cli
+    ```dotnetcli
     dotnet add package Microsoft.EntityFrameworkCore.Sqlite
     ```
 
@@ -54,7 +54,7 @@ Before you start, you need to add the required packages.
 
 1. From the terminal, run the following command:
 
-    ```dotnet-cli
+    ```dotnetcli
     dotnet add package Microsoft.EntityFrameworkCore.Design
     ```
 
@@ -62,7 +62,7 @@ Before you start, you need to add the required packages.
 
 1. From the terminal, run the following command:
 
-    ```dotnet-cli
+    ```dotnetcli
     dotnet tool install --global dotnet-ef
     ```
 
@@ -188,7 +188,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 1. In *Models\Pizza.cs*, make the following changes:
 
-    1. Add a `using` declaration for `System.ComponentModel.DataAnnotations`.
+    1. Add a `using` directive for `System.ComponentModel.DataAnnotations`.
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
 
@@ -213,7 +213,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 1. In *Models\Sauce.cs*, make the following changes:
 
-    1. Add a `using` declaration for `System.ComponentModel.DataAnnotations`.
+    1. Add a `using` directive for `System.ComponentModel.DataAnnotations`.
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
     1. Add a `bool` property named `IsVegan`.
@@ -237,7 +237,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 1. In *Models\Topping.cs*, make the following changes:
 
-    1. Add `using` declarations for `System.ComponentModel.DataAnnotations` and `System.Text.Json.Serialization`
+    1. Add `using` directives for `System.ComponentModel.DataAnnotations` and `System.Text.Json.Serialization`.
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
     1. Add a `decimal` property named `Calories` immediately after the `Name` property.

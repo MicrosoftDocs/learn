@@ -31,7 +31,7 @@ The Database Provider:
 - Accepts SQL from the EF Core Provider and executes it in the database.
 - Extends EF Core to enable functionality that's unique to the database engine.
 
-## Managing database schemas
+## Manage database schemas
 
 EF Core provides two primary ways of keeping your EF Core model and database schema in sync. To choose between the two, decide whether your EF Core model or the database schema is the *source of truth*.
 
@@ -47,6 +47,6 @@ Once a new migration has been generated, it can be applied to a database in vari
 
 Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases where the schema can't easily be changed.
 
-## Getting started
+## Get started
 
 In the next unit, you'll get started with EF Core by using migrations.

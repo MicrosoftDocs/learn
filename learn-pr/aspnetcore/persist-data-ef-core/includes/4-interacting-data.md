@@ -5,8 +5,8 @@ In this unit, you'll write code to interact with the database.
 Let's complete the `PizzaService` implementation. Complete the following steps in *Services\PizzaService.cs*:
 
 1. Make the following changes as shown in the example below:
-    1. Add a `using ContosoPizza.Data;` declaration.
-    1. Add a `using Microsoft.EntityFrameworkCore;` declaration.
+    1. Add a `using ContosoPizza.Data;` directive.
+    1. Add a `using Microsoft.EntityFrameworkCore;` directive.
     1. Add a class-level field for the `PizzaContext` before the constructor.
     1. Change the constructor method signature to accept a `PizzaContext` parameter.
     1. Change the constructor method code to assign the parameter to the field.
@@ -51,7 +51,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     - The `Pizzas` collection contains all the rows in the pizzas table.
     - The `!` in the above code is a [null-forgiving operator](/dotnet/csharp/language-reference/operators/null-forgiving) and suppresses a compiler warning. It has no effect at runtime.
     - The `AsNoTracking` extension method instructs EF Core to disable change tracking. Since this operation is read-only, `AsNoTracking` can optimize performance.
-    - All of the pizzas are returned with `ToList`;
+    - All of the pizzas are returned with `ToList`.
 
 1. Replace the `GetById` method with the following code:
 
