@@ -1,6 +1,6 @@
 The following diagram shows the relationships between the sets of PowerShell modules. From your machine, you can load the PowerShell modules and manage Azure Stack Hub.
 
-:::image type="content" source="../media/azure-stack-powershell_tool-7ee53a56.png" alt-text="View of relationships between the sets of PowerShell modules.":::
+:::image type="content" source="../media/azure-stack-powershell-tool-2df4ee91.png" alt-text="View of relationships between the sets of PowerShell modules.":::
 
 
 ### Azure Stack Hub Resource Manager
