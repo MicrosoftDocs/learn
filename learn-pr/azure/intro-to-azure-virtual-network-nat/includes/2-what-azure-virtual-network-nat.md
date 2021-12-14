@@ -32,7 +32,7 @@ The following diagram depicts the NAT process.
 When you create a virtual network in Azure, you assign it a private address space, and then create one or more subnets to that network. When you create a VM in Azure and then put it in that virtual network, it will get its local IP address from that network. If you want to accept outbound internet connections on that VM, you can also assign a public IP address object to that VM.
 
 > [!NOTE]
-> Azure VMs that you don’t assign a public IP addresse tocan still access the internet by using Azure network address translation or Port address translation. However, in such cases you can’t control which public IP address will be used for outbound connections. You also can’t enable inbound connections oror use Remote Desktop Protocol (RDP) to connect to these VMs from outside; instead, you’ll need to use an Azure Bastion host.
+> Azure VMs that you don’t assign a public IP addresse to can still access the internet by using Azure network address translation or Port address translation. However, in such cases, you can’t control which public IP address will be used for outbound connections. You also can’t enable inbound connections or use Remote Desktop Protocol (RDP) to connect to these VMs from outside; instead, you’ll need to use an Azure Bastion host.
 
 To help ensure secure, controllable, and scalable outbound connectivity for Azure VMs and other resources, you can create an instance of the Azure Virtual Network NAT service, and then assign it to one or more subnets within the same virtual network in Azure.
 
