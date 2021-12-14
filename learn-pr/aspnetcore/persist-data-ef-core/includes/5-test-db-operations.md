@@ -24,8 +24,8 @@ In this unit, you'll use the HttpRepl tool to test the app.
     - `INSERT` commands are executed when the database is seeded.
     - For security, the parameter values are not echoed to the console.
 
-1. Use Sqlite Explorer to explore the seeded database.
-1. Since the terminal is blocked by the running app, open another terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>).
+1. Use Sqlite Explorer to explore the seeded database. Each table has data.
+1. Since the terminal is blocked by the running app, open another terminal (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>) to test the app.
 1. In the new terminal, run the following command:
 
     ```dotnetcli
@@ -96,13 +96,19 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
 1. Run the following command to add another topping to the new BBQ Beef pizza.
 
     ```dotnetcli
-    put 4/addtopping?toppingId=5
+    put 4/addtopping?toppingId=5 --no-body
     ```
 
-1. Run the following to change the sauce on the BBQ Beef pizza.
+1. Run the following command to change the sauce on the BBQ Beef pizza.
 
     ```dotnetcli
-    put 4/updatesauce?sauceId=2
+    put 4/updatesauce?sauceId=2 --no-body
+    ```
+
+1. Run the following command to view the current BBQ Beef pizza.
+
+    ```dotnetcli
+    get 4
     ```
 
 1. You've realized a smoked brisket pizza with alfredo sauce and pineapple is a terrible idea. Delete it with the following command:

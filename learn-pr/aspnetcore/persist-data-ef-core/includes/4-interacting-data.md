@@ -98,9 +98,10 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
         var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
         var toppingToAdd = _context.Toppings!.Find(ToppingId);
 
-        if (toppingToAdd is null)
+        if (pizzaToUpdate is null ||
+                toppingToAdd is null)
         {
-            throw new NullReferenceException("Topping does not exist");
+            throw new NullReferenceException("Pizza or topping does not exist");
         }
 
         if(pizzaToUpdate!.Toppings is null)
@@ -116,7 +117,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     In the preceding code:
 
-    - References to an existing `Pizza` and `Topping` are created.\
+    - References to an existing `Pizza` and `Topping` are created.
     - The `Topping` is added to the `Pizza.Toppings` collection. A new collection is created if it doesn't exist.
     - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
@@ -129,9 +130,10 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
         var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
         var sauceToUpdate = _context.Sauces!.Find(SauceId);
 
-        if (sauceToUpdate is null)
+        if (pizzaToUpdate is null ||
+                sauceToUpdate is null)
         {
-            throw new NullReferenceException("Sauce does not exist");
+            throw new NullReferenceException("Pizza or sauce does not exist");
         }
 
         pizzaToUpdate!.Sauce = sauceToUpdate;
@@ -146,7 +148,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     - References to an existing `Pizza` and `Sauce` are created.
     - The `Pizza.Sauce` property is set to the `Sauce` object.
     - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
-    - The `SaveChanges` method instructs EF Core to persist the object changes to the database.1. 
+    - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `DeleteById` method with the following code:
 
@@ -165,7 +167,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     In the preceding code:
 
     - The `Find` method retrieves a pizza by the primary key (in this case, `Id`).
-    - The `Update` method removes the `pizzaToDelete` entity in EF Core's object graph.
+    - The `Remove` method removes the `pizzaToDelete` entity in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Save your changes.
@@ -253,7 +255,7 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
     - The `Pizza` objects (and their `Sauce` and `Topping` navigation properties) are added to the object graph with `AddRange`.
     - The object graph changes are committed to the database with `SaveChanges`.
 
-1. In the *Data* project folder, add a new file named *Extensions.cs*.
+1. In the *Data* folder, add a new file named *Extensions.cs*.
 1. Add the following code to *Data\Extensions.cs*:
 
     ```csharp
@@ -291,6 +293,6 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
 
     This code calls the extension method defined in the previous step whenever the app runs.
 
-1. Save your changes.
+1. Save all your changes and build.
 
 You've written all the code you need to do basic CRUD operations and seed the database on startup. In the next unit, you'll test those operations in the app.

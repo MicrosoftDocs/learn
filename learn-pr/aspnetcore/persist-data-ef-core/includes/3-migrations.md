@@ -7,7 +7,7 @@ In this unit, you'll create C# entity classes that will map to tables in a local
 
 1. From a terminal, run the following command to clone the starter code repository:
 
-    ```bash
+    ```cmd
     git clone https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core
     ```
 
@@ -15,8 +15,8 @@ In this unit, you'll create C# entity classes that will map to tables in a local
 
 1. Switch to the directory you cloned and open it in Visual Studio Code.
 
-    ```bash
-    cd mslearn-persist-data-ef-core
+    ```cmd
+    cd mslearn-persist-data-ef-core\ContosoPizza
     code .
     ```
 
@@ -35,7 +35,6 @@ In this unit, you'll create C# entity classes that will map to tables in a local
 1. Open a Visual Studio Code terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>). Switch the *ContosoPizza* folder and build the app with the following commands:
 
     ```dotnetcli
-    cd ContosoPizza
     dotnet build
     ```
 
@@ -73,7 +72,7 @@ Before you start, you need to add the required packages.
 
 Now you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you will interact with the database.
 
-1. In the *ContosoPizza* directory, add a new folder called *Data*.
+1. In the project root directory, add a new folder called *Data*.
 1. In *Data* directory, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
 
     ```csharp
@@ -151,7 +150,7 @@ You've done all you need to create a migration for creating your initial databas
     dotnet ef database update --context PizzaContext
     ```
 
-    Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory. Sqlite's corresponding `.db-wal` (write-ahead log) and `.db-shm` (shared memory) files are also created.
+    Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory.
 
     > [!TIP]
     > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's preferable to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the **Package Manager Console** window.
@@ -170,7 +169,9 @@ EF Core created a database for your app. Let's take a look inside the database.
 
     A **SQLITE EXPLORER** pane opens on the **Explorer** tab.
 
-1. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
+    :::image type="content" source="../media/sqlite-pane.png" alt-text="The Sqlite pane (collapsed)":::
+
+1. Expand the **SQLITE EXPLORER** pane and all its child nodes. Right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
     :::image type="content" source="../media/sqlite-explorer.png" alt-text="The Sqlite Explorer pane":::
 
@@ -203,6 +204,7 @@ EF Core created a database for your app. Let's take a look inside the database.
         [Required]
         [MaxLength(100)]
         public string? Name { get; set; }
+
         public Sauce? Sauce { get; set; }
 
         public ICollection<Topping>? Toppings { get; set; }
@@ -228,6 +230,7 @@ EF Core created a database for your app. Let's take a look inside the database.
         [Required]
         [MaxLength(100)]
         public string? Name { get; set; }
+
         public bool IsVegan { get; set; }
     }
     ```
@@ -289,7 +292,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     > The Sqlite extension will re-use open **Sqlite** tabs.
 
     - New fields have been added to the `Toppings` and `Sauces`.
-        - `Calories` is defined as a `REAL` column because that's Sqlite's closest match to the C# `double` type.
+        - `Calories` is defined as a `TEXT` column because Sqlite doesn't have a matching `decimal` type.
         - Similarly, `IsVegan` is defined as an `INTEGER` column. Sqlite doesn't define a `bool` type.
         - In both cases, EF Core manages the translation.
     - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint. EF Core will enforce the length validation, however.
