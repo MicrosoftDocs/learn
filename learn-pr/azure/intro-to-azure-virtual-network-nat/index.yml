@@ -17,7 +17,7 @@ abstract: |
     - Recognize scenarios where Azure Virtual Network NAT is applicable.
     - Perform basic deployment of the Azure Virtual Network NAT service.
 prerequisites: |
-  - Experience with Azure virtual machines.
+  - Experience with Azure virtual machines (VMs).
   - Experience with Azure virtual networks.
   - Ability to navigate the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
