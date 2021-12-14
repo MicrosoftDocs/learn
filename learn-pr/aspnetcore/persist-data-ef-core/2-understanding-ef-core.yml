@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.persist-data-ef-core.understanding-ef-core
+title: Understanding EF Core
+metadata:
+  title: Understanding EF Core
+  description: "Understand the purpose and architecture of Entity Framework Core."
+  ms.date: 12/13/2021
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understanding-ef-core.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Within the underlying EF Core architecture, the Database Provider component serves what purpose?"
+      choices:
+      - content: "Translates object graph changes to SQL."
+        isCorrect: false
+        explanation: "Incorrect. The EF Core Provider is the component responsible for translating object graph changes to SQL."
+      - content: "Manages the connection to the database engine and executes generated SQL in the database."
+        isCorrect: true
+        explanation: "Correct! A Database Provider is the component responsible for managing the connection to the database engine. It also executes the generated SQL in the database."
+      - content: "Represents an active connection to a database."
+        isCorrect: false
+        explanation: "Incorrect. A class deriving from `DbContext` represents an active connection to a database."
