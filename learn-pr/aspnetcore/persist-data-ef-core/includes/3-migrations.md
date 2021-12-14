@@ -101,7 +101,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     - The table names will match the `DbSet<T>` property names in the `PizzaContext` class. This behavior can be overridden if needed.
     - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.
 
-1. In *Program.cs*, replace `// Add the AddDbContext code` with the following code:
+1. In *Program.cs*, replace `// Add the PizzaContext` with the following code:
 
     ```csharp
     builder.Services.AddDbContext<PizzaContext>(options =>

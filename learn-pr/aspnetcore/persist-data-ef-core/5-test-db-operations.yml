@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.persist-data-ef-core.test-db-operations
+title: Exercise - Test CRUD operations
+metadata:
+  unitType: {{patternType}}
+  title: test-crud-operations
+  description: "Test the EF Core app."
+  ms.date: 12/13/2021
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-test-db-operations.md)]

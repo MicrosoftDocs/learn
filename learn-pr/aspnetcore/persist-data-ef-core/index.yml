@@ -3,7 +3,7 @@ uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data with Entity Framework Core
   description: This module guides you through creating a data access project, connecting to a relational database, and writing CRUD queries.
-  ms.date: 12/12/2021
+  ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
@@ -18,11 +18,12 @@ abstract: |
   - Write and test CRUD queries.
   - Enable logging of the generated SQL.
 prerequisites: |
-  - Visual Studio Code 
-  - 
   - Experience writing C# at the beginner level
   - Experience using relational databases and SQL as a developer
-iconUrl: /learn/achievements/generic-badge.svg
+  - Visual Studio Code
+  - .NET SDK 6.0 or greater
+  - Git command-line client
+iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
 - intermediate
 roles:
@@ -38,6 +39,7 @@ units:
 - learn.persist-data-ef-core.understanding-ef-core
 - learn.persist-data-ef-core.migrations
 - learn.persist-data-ef-core.interacting-data
+- learn.persist-data-ef-core.test-db-operations
 - learn.persist-data-ef-core.reverse-engineering
 - learn.persist-data-ef-core.knowledge-check
 - learn.persist-data-ef-core.summary

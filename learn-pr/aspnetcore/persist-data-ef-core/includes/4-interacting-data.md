@@ -90,21 +90,63 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     - The `Add` method adds the `newPizza` entity to EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
-1. Replace the `Update` method with the following code:
+1. Replace the `AddTopping` method with the following code:
 
     ```csharp
-    public void Update(Pizza updatedPizza)
+    public void AddTopping(int PizzaId, int ToppingId)
     {
-        _context.Pizzas!.Update(updatedPizza);
+        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
+        var toppingToAdd = _context.Toppings!.Find(ToppingId);
+
+        if (toppingToAdd is null)
+        {
+            throw new NullReferenceException("Topping does not exist");
+        }
+
+        if(pizzaToUpdate!.Toppings is null)
+        {
+            pizzaToUpdate!.Toppings = new List<Topping>();
+        }
+        pizzaToUpdate!.Toppings.Add(toppingToAdd!);
+
+        _context.Pizzas!.Update(pizzaToUpdate);
         _context.SaveChanges();
     }
     ```
 
     In the preceding code:
 
-    - The `Update` method replaces the `updatedPizza` entity in EF Core's object graph.
-        - For this to work, `updatedPizza.Id` must be populated.
+    - References to an existing `Pizza` and `Topping` are created.\
+    - The `Topping` is added to the `Pizza.Toppings` collection. A new collection is created if it doesn't exist.
+    - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
+
+1. Replace the `UpdateSauce` method with the following code:
+
+    ```csharp
+    public void UpdateSauce(int PizzaId, int SauceId)
+    {
+        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
+        var sauceToUpdate = _context.Sauces!.Find(SauceId);
+
+        if (sauceToUpdate is null)
+        {
+            throw new NullReferenceException("Sauce does not exist");
+        }
+
+        pizzaToUpdate!.Sauce = sauceToUpdate;
+
+        _context.Pizzas!.Update(pizzaToUpdate);
+        _context.SaveChanges();
+    }
+    ```
+
+    In the preceding code:
+
+    - References to an existing `Pizza` and `Sauce` are created.
+    - The `Pizza.Sauce` property is set to the `Sauce` object.
+    - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
+    - The `SaveChanges` method instructs EF Core to persist the object changes to the database.1. 
 
 1. Replace the `DeleteById` method with the following code:
 
@@ -126,17 +168,129 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     - The `Update` method removes the `pizzaToDelete` entity in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
+1. Save your changes.
+
 ## Database seeding
 
-1. Add the DbInitializer
-1. Add the extension method
-1. Call the extension method from Program.cs
+You've coded the CRUD operations for `PizzaService`, but it'll be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
 
-## Test the API
+1. In the *Data* folder, add a new file named *DbInitializer.cs*.
+1. Add the following code to *Data\DbInitializer.cs*:
 
-1. Install HTTP REPL
-1. Get all
-1. Get by ID
-1. Create new
-1. Update existing
-1. Delete exiting
+    ```csharp
+    using ContosoPizza.Models;
+    
+    namespace ContosoPizza.Data
+    {
+        public static class DbInitializer
+        {
+            public static void Initialize(PizzaContext context)
+            {
+    
+                if (context.Pizzas!.Any()
+                    && context.Toppings!.Any()
+                    && context.Sauces!.Any())
+                {
+                    return;   // DB has been seeded
+                }
+    
+                var pepperoniTopping = new Topping { Name = "Pepperoni", Calories = 130 };
+                var sausageTopping = new Topping { Name = "Sausage", Calories = 100 };
+                var hamTopping = new Topping { Name = "Ham", Calories = 70 };
+                var chickenTopping = new Topping { Name = "Chicken", Calories = 50 };
+                var pineappleTopping = new Topping { Name = "Pineapple", Calories = 75 };
+    
+                var tomatoSauce = new Sauce { Name = "Tomato", IsVegan = true };
+                var alfredoSauce = new Sauce { Name = "Alfredo", IsVegan = false };
+    
+                var pizzas = new Pizza[]
+                {
+                    new Pizza
+                        { 
+                            Name = "Meat Lovers", 
+                            Sauce = tomatoSauce, 
+                            Toppings = new List<Topping>
+                                {
+                                    pepperoniTopping, 
+                                    sausageTopping, 
+                                    hamTopping, 
+                                    chickenTopping
+                                }
+                        },
+                    new Pizza
+                        { 
+                            Name = "Hawaiian", 
+                            Sauce = tomatoSauce, 
+                            Toppings = new List<Topping>
+                                {
+                                    pineappleTopping, 
+                                    hamTopping
+                                }
+                        },
+                    new Pizza
+                        { 
+                            Name="Alfredo Chicken", 
+                            Sauce = alfredoSauce, 
+                            Toppings = new List<Topping>
+                                {
+                                    chickenTopping
+                                }
+                            }
+                };
+    
+                context.Pizzas!.AddRange(pizzas);
+                context.SaveChanges();
+            }
+        }
+    }
+    ```
+
+    In the preceding code:
+
+    - The `DbInitializer` class and `Initialize` method are both defined as `static`.
+    - `Initialize` accepts a `PizzaContext` as a parameter.
+    - If there are no records in any of the three tables, `Pizza`, `Sauce`, and `Topping` objects are created.
+    - The `Pizza` objects (and their `Sauce` and `Topping` navigation properties) are added to the object graph with `AddRange`.
+    - The object graph changes are committed to the database with `SaveChanges`.
+
+1. In the *Data* project folder, add a new file named *Extensions.cs*.
+1. Add the following code to *Data\Extensions.cs*:
+
+    ```csharp
+    namespace ContosoPizza.Data;
+    
+    public static class Extensions
+    {
+        public static void CreateDbIfNotExists(this IHost host)
+        {
+            {
+                using (var scope = host.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    var context = services.GetRequiredService<PizzaContext>();
+                    context.Database.EnsureCreated();
+                    DbInitializer.Initialize(context);
+                }
+            }
+        }
+    }
+    ```
+
+    In the preceding code:
+
+    - The `CreateDbIfNotExists` method is defined as an extension of `IHost`.
+    - A reference to the `PizzaContext` service is created.
+    - The database is created (if needed) with the `EnsureCreated` method.
+    - The `DbIntializer.Initialize` method is called, passing the `PizzaContext` as a parameter.
+
+1. In *Program.cs*, replace `// Add the CreateDbInNotExists method call` comment with the following code:
+
+    ```csharp
+    app.CreateDbIfNotExists();
+    ```
+
+    This code calls the extension method defined in the previous step whenever the app runs.
+
+1. Save your changes.
+
+You've written all the code you need to do basic CRUD operations and seed the database on startup. In the next unit, you'll test those operations in the app.

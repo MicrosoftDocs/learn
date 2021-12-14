@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.persist-data-ef-core.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge Check - Persist Data with EF Core
+  ms.date: 04/20/2019
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Knowledge check
+durationInMinutes: 5
+content: |

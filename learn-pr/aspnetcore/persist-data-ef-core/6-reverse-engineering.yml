@@ -3,12 +3,12 @@ uid: learn.persist-data-ef-core.reverse-engineering
 title: Exercise - Reverse engineering
 metadata:
   title: database-first
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 12/6/2021
+  description: "Scaffold DbContext and model classes from an existing database."
+  ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-reverse-engineering.md)]
+  [!include[](includes/6-reverse-engineering.md)]
