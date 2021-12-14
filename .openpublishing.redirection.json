@@ -10906,11 +10906,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/1-introduction.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/aspnetcore/persist-data-ef-core/2-setup-environment.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
       "redirect_document_id": false
