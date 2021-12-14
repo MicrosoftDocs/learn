@@ -3,7 +3,7 @@ Before you begin to evaluate the capabilities of Azure Stack HCI SDN, you want t
 ## What is network virtualization?
 
 To understand the purpose of network virtualization, it might be helpful to compare it to server virtualization, which makes it possible to concurrently run multiple operating system instances (virtual machines) on a single physical host, with each instance functioning independently from the others. Network virtualization provides a similar capability regarding virtual networks by facilitating their isolation within the same physical network infrastructure, without relying on VLANs or dedicated IP address management solutions. This flexibility makes it easier for customers to transition their workloads to private and public clouds. It also helps hosting providers and datacenter administrators with managing their network infrastructure.
-Additionally, these benefits play a significant role in datacenter consolidation initiatives. With Azure Stack HCI, customers can share physical resources while operating within their own, isolated environments. DevOps teams have the ability to deploy their applications without service interruptions resulting from changing IP address assignments. For infrastructure owners, the additional flexibility simplifies dynamic resource allocation by abstracting the correlation between compute, storage, and network.
+Additionally, these benefits play a significant role in datacenter consolidation initiatives. With Azure Stack HCI, customers can share physical resources while operating within their own, isolated environments. DevOps teams have the ability to deploy their applications without service interruptions resulting from changing IP address assignments. For infrastructure owners, the added flexibility simplifies dynamic resource allocation by abstracting the correlation between compute, storage, and network.
 
 ## What is Software-Defined Networking (SDN)?
 
@@ -13,7 +13,7 @@ SDN provides a method to centrally configure and manage networks and network ser
 
 In software-defined datacenters, virtual appliances take over the delivery of network functions that are traditionally implemented by hardware devices. These virtualized functions can be grouped into several categories, such as security and edge services. Security appliances include firewalls while edge appliances include gateways, routers, switches, and load balancers.
 
-Virtual appliances feature a number of benefits when compared with their physical counterparts, with the most prominent ones being:
+Virtual appliances feature several benefits when compared with their physical counterparts, with the most prominent ones being:
 
 - Seamless capacity expansion and workload mobility.
 - Minimized operational complexity.
@@ -35,7 +35,7 @@ These capabilities of Azure Stack HCI SDN are implemented by using Network Contr
 
 The network function virtualization-based services include:
 
-- Software Load Balancer (SLB), which facilitates the building of highly available and scalable solutions by distributing network traffic across virtual network resources. In addition, through network address translation (NAT), SLB provides inbound and outbound internet access to virtualized workloads. SLB policies can be applied to virtualized overlay networks as well as traditional VLAN networks.
+- Software Load Balancer (SLB), which facilitates the building of highly available and scalable solutions by distributing network traffic across virtual network resources. In addition, through network address translation (NAT), SLB provides inbound and outbound internet access to virtualized workloads. SLB policies can be applied to virtualized overlay networks and traditional VLAN networks.
 - Remote Access Service (RAS) Gateways for SDN, which help extend network connectivity to external networks through Site-to-Site (S2S) IP Security (IPsec) virtual private networks (VPNs), Site-to-Site Generic Routing Encapsulation (GRE) tunnels, and Layer 3 forwarding.
 - Datacenter Firewall, which helps protect virtual networks and their workloads from unauthorized traffic originating from the internet and intranet networks. It provides stateful filtering based on a combination of up to five parameters of network packets, including their protocol, source and destination port numbers, and source and destination IP addresses. These policies can be applied to virtualized overlay networks as well as traditional VLAN networks.
 
