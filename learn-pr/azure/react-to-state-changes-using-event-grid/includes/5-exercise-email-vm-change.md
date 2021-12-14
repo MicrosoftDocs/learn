@@ -67,13 +67,17 @@ Now we can add an email action based on the logic app being triggered. The follo
 
     :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Screenshot for sending an email when vm updates.":::
 
-1. Select each input box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type, adding text to label the items in the email body. In the *To* box, add your own email address to test the workflow in the next section. If you see the following message in the **Dynamic content** tab, click **See more**. 
+1. In the **To** field, add your own email address to test the workflow in the next section. 
+1. In the **Subject** field, type **Resource updated**. You can also drag fields from the **Dynamic content** window to this field. 
+1. Click in the **Body** field, type **Subject:**, and drag **Subject** from the **Dynamic Content** pop-up window. 
+    
+    If you see the following message in the **Dynamic content** window, click **See more** to see all the fields.
 
-    **We can't find any outputs to match this input format. Select See more to see all outputs from previous actions.**
+    `We can't find any outputs to match this input format. Select See more to see all outputs from previous actions.`
 
-    :::image type="content" source="../media/5-logic-app-empty-email-action.png" alt-text="Selection for adding a subject as a dynamic email field.":::
-
-1. Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail), your inputs might differ.
+    Repeat these steps to build the **Body** field as show in the following image. 
+    
+    Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail), your inputs might differ.
 
     :::image type="content" source="../media/5-logic-app-send-email-details.png" alt-text="Email action view.":::
 
@@ -97,4 +101,10 @@ The final step is to test the complete workflow.
 
 1. Wait to be notified that your virtual machine has been resized, allowing time for the email to be generated and processed. After a few minutes, you should receive an email that looks similar to the following:
 
-    :::image type="content" source="../media/5-email.png" alt-text="Email notification example":::
+    ```
+    Subject: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-8b04c19e-f5ab-4567-80cb-a4a1e257d6dd/providers/Microsoft.Compute/virtualMachines/vm1
+    Resource: /subscriptions/0000000000-0000-0000-0000-0000000000000/resourcegroups/learn-8b04c19e-f5ab-4567-80cb-a4a1e257d6dd
+    Event type: Microsoft.Resources.ResourceWriteSuccess
+    Event ID: f917484e-eb07-428c-9a54-5c2e819a9eaf
+    Time: 2021-12-10T03:59:18.7494126Z    
+    ```

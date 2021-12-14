@@ -53,7 +53,7 @@ Resource Manager provides several [ARM template functions](/azure/azure-resource
 You can use several template functions together to create your own expressions. In this scenario, you need to create an expression that creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. This expression results in storage account names like `dev2hu6fktr577wh` and `staging5his8hgr67tt5`. You can use four functions to construct this string value. For example:
 
 ```json
-"[toLower(concat("Storage",uniqueString(resourceGroup().id)))]"
+"[toLower(concat('Storage',uniqueString(resourceGroup().id)))]"
 ```
 
 Let's walk through this expression.
