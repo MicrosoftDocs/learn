@@ -10859,6 +10859,11 @@
       "source_path": "learn-pr/wwl-sci/configure-settings-for-alerts-detections-microsoft-defender-for-endpoint/6-manage-custom-detections.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-settings-for-alerts-detections-microsoft-defender-for-endpoint",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-qna-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-knowledge-base",
+      "redirect_document_id": true
     }
   ]
 }
