@@ -1,12 +1,8 @@
-﻿You've learned how Azure Stack HCI-based SDN can facilitate improvements to the degree of security and resiliency required to accommodate the needs of customers and to satisfy regulatory requirements.
-
-You explored the architecture and core functionality of Datacenter Firewall and Software Load Balancer of SDN on Azure Stack HCI. You also reviewed the process of deploying both of these SDN components on Azure Stack HCI.
-
-You now realize that SDN on Azure Stack HCI can help improve the security and resiliency of your infrastructure.
+You've learned how you can use Azure Stack HCI-based SDN to help improve security and resiliency to better accommodate the needs of customers and satisfy regulatory requirements. You explored the architecture and core functionality of Datacenter Firewall and Software Load Balancer of SDN on Azure Stack HCI. You also reviewed the process of deploying both of these SDN components on Azure Stack HCI. You now realize that SDN on Azure Stack HCI can help improve the security and resiliency of your infrastructure.
 
 ## References
 
-For more information, refer to the following articles:
+For more information, review the following articles:
 
 - [What is Software Load Balancer (SLB) for SDN?](/azure-stack/hci/concepts/software-load-balancer)
 - [What is Datacenter Firewall?](/azure-stack/hci/concepts/datacenter-firewall-overview)
