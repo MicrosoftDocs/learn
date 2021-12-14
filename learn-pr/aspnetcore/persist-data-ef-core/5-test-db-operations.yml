@@ -2,13 +2,13 @@
 uid: learn.persist-data-ef-core.test-db-operations
 title: Exercise - Test CRUD operations
 metadata:
-  title: test-crud-operations
+  title: Exercise - Test CRUD operations
   description: "Test the EF Core app."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-dotnet
 durationInMinutes: 8
 content: |
   [!include[](includes/5-test-db-operations.md)]

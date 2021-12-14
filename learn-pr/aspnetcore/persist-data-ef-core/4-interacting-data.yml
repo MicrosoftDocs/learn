@@ -2,13 +2,13 @@
 uid: learn.persist-data-ef-core.interacting-data
 title: Exercise - Interacting with data
 metadata:
-  title: interacting-data
+  title: Exercise - Interacting with data
   description: "Write code to interact with databases using EF Core."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-dotnet
 durationInMinutes: 10
 content: |
   [!include[](includes/4-interacting-data.md)]
@@ -20,10 +20,10 @@ quiz:
       choices:
       - content: "Set the entity's state to `EntityState.Unchanged`."
         isCorrect: false
-        explanation: "The entity is being tracked automatically by the `DbContext`. Manually setting the `Unchanged` state fools the `DbContext` into thinking there were no object graph changes."
+        explanation: "Incorrect. The entity is being tracked automatically by the `DbContext`. Manually setting the `Unchanged` state fools the `DbContext` into thinking there were no object graph changes."
       - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
         isCorrect: false
-        explanation: "The `ToListAsync` method returns the result set as a `List<T>` collection."
+        explanation: "Incorrect. The `ToListAsync` method returns the result set as a `List<T>` collection."
       - content: "Chain the `AsNoTracking()` method call to the entity object."
         isCorrect: true
-        explanation: "By default, change tracking is enabled for queries that return entity types."
+        explanation: "Correct! By default, change tracking is enabled for queries that return entity types."

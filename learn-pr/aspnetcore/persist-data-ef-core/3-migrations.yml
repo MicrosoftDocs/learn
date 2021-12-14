@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.migrations
 metadata:
-  title: Exercise - Model as the source of truth (code-first)
+  title: Exercise - Migrations
   description: Learn how to design the classes representing the domain model and apply them to a database with migrations.
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: learning-dotnet
 title: Exercise - Migrations
 durationInMinutes: 10
 content: |
@@ -20,10 +20,10 @@ quiz:
       choices:
       - content: "`Key` or `<entity name>Key`"
         isCorrect: false
-        explanation: "`Key` and the `Key` suffix aren't naming conventions recognized by EF Core. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
+        explanation: "Incorrect. `Key` and the `Key` suffix aren't naming conventions recognized by EF Core. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
       - content: "`Id` or `<entity name>Id`"
         isCorrect: true
-        explanation: "`Id` or `<entity name>Id` are inferred by EF Core to be the primary key."
+        explanation: "Correct! `Id` or `<entity name>Id` are inferred by EF Core to be the primary key."
       - content: "`<entity name>`"
         isCorrect: false
-        explanation: "`<entity name>` is more suitable as a navigation property name. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
+        explanation: "Incorrect. `<entity name>` is more suitable as a navigation property name. To make such a property the primary key, it must be annotated with the `[Key]` attribute."

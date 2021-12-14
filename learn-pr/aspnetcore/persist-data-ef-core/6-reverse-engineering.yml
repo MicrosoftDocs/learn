@@ -2,13 +2,13 @@
 uid: learn.persist-data-ef-core.reverse-engineering
 title: Exercise - Reverse engineering
 metadata:
-  title: database-first
+  title: Exercise - Reverse engineering
   description: "Scaffold DbContext and model classes from an existing database."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-dotnet
 durationInMinutes: 8
 content: |
   [!include[](includes/6-reverse-engineering.md)]

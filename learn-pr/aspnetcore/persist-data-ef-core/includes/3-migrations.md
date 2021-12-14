@@ -50,7 +50,7 @@ Before you start, you need to add the required packages.
     dotnet add package Microsoft.EntityFrameworkCore.Sqlite
     ```
 
-    This command adds the Nuget package that contains the EF Core Sqlite database provider and all its dependencies.
+    This command adds the NuGet package that contains the EF Core Sqlite database provider and all its dependencies.
 
 1. From the terminal, run the following command:
 

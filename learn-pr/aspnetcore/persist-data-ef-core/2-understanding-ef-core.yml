@@ -8,7 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understanding-ef-core.md)]
@@ -20,10 +20,10 @@ quiz:
       choices:
       - content: "Translates object graph changes to SQL."
         isCorrect: false
-        explanation: "The EF Core Provider is the component responsible for translating object graph changes to SQL."
+        explanation: "Incorrect. The EF Core Provider is the component responsible for translating object graph changes to SQL."
       - content: "Manages the connection to the database engine and executes generated SQL in the database."
         isCorrect: true
-        explanation: "A Database Provider is the component responsible for managing the connection to the database engine. It also executes the generated SQL in the database."
+        explanation: "Correct! A Database Provider is the component responsible for managing the connection to the database engine. It also executes the generated SQL in the database."
       - content: "Represents an active connection to a database."
         isCorrect: false
-        explanation: "A class deriving from `DbContext` represents an active connection to a database."
+        explanation: "Incorrect. A class deriving from `DbContext` represents an active connection to a database."
