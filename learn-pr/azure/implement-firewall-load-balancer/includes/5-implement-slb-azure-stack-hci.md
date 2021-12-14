@@ -6,8 +6,8 @@ To implement a Software Load Balancer, you must first deploy the Network Control
 
 You can configure Software Load Balancer to provide the following functionality:
 
-- Load balance incoming external traffic to VMs on a virtual network. This is also referred to as the public VIP load balancing.
-- Load balance incoming traffic from VMs in the same virtual network or a peered private network. This is also referred to as the internal or private VIP load balancing.
+- Load-balance incoming external traffic to VMs on a virtual network. This is also referred to as the public VIP load balancing.
+- Load-balance incoming traffic from VMs in the same virtual network or a peered private network. This is also referred to as the internal or private VIP load balancing.
 - Forward outgoing network traffic from VMs on a virtual network to external destinations by using NAT. This is also referred to as the outbound NAT.
 - Forward incoming external traffic to a specific VM. This is also referred to as the inbound NAT.
 
@@ -38,7 +38,7 @@ To implement internal load balancing of network traffic across a pool of VMs on 
 
 To implement inbound NAT from an external network to one or more designated VMs in a virtual network, use the following procedure:
 
-1.	Create a load balancer and assign it a public front-end IP address that will serve as the load balancing VIP. The VIP must be an available IP from a logical network IP pool allocated for public load balancing.
+1.	Create a load balancer and assign it a public front-end IP address that will serve as the load-balancing VIP. The VIP must be an available IP from a logical network IP pool allocated for public load balancing.
 
     :::image type="content" source="../media/5-azure-stack-hci-slb-public-vip-new.png" alt-text="Windows Admin Center New Load Balancer pane with the Public VIP option selected.":::
 
