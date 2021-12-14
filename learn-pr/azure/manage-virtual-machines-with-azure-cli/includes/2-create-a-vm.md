@@ -2,7 +2,7 @@ Let's start with the most obvious task: creating an Azure Virtual Machine.
 
 ## Logins, subscriptions, and resource groups
 
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription; this will be done for you. You would also normally create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you, which will be used to execute all the commands.
+You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription; this will be done for you. You would also normally create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you, which you will use to execute all the commands.
 
 ## Create a Linux VM with the Azure CLI
 
