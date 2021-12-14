@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Virtual Network NAT
-summary: Describe Azure Virtual Network NAT service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
+summary: Describe Microsoft Azure Virtual Network NAT service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the Microsoft Azure Virtual Network Network Address Translation (Azure Virtual Network NAT) service.
