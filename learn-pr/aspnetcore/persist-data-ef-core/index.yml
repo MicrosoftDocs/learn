@@ -41,7 +41,6 @@ units:
 - learn.persist-data-ef-core.interacting-data
 - learn.persist-data-ef-core.test-db-operations
 - learn.persist-data-ef-core.reverse-engineering
-- learn.persist-data-ef-core.knowledge-check
 - learn.persist-data-ef-core.summary
 badge:
   uid: learn.persist-data-ef-core.badge
