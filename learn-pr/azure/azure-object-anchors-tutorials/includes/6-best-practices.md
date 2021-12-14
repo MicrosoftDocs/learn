@@ -3,7 +3,7 @@ When working with Azure Object Anchors, An object may turn out to be more diffic
 ## Best practices for object conversion
 
 * Dimension of your physical objects should be between the recommended range of 1m-10m.
-* Use Software like [MeshLab](https://www.meshlab.net/) to Ensure the following details
+* Use Software like [MeshLab](https://www.meshlab.net/) to ensure the following details.
 
   * Ensure that the 3D model has a triangle mesh and that the triangles on the exterior surface face outward. That is, the vertices should be orientated so that the normals are oriented outwards according to the right-hand rule.
   * Ensure that the scale units for the 3D Model are correct concerning the physical object. Units to be considered should be one of **Centimeters**, **Decimeters**, **Feet**, **Inches**, **Kilometers**, **Meters**, **Millimeters**, **Yards**.

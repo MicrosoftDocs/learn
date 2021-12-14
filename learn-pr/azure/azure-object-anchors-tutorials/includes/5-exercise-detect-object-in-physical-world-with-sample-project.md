@@ -7,7 +7,7 @@ For this tutorial you will use the same sample project you downloaded from this 
  > [!NOTE]
  > Once you open the project in Unity you may see some errors, these errors will be cleared once we added required packages into the project.
 
-## Setup the project
+## Set up the project
 
 ### Download and add the Azure Object Anchors package for Unity
 

@@ -4,7 +4,7 @@ In this tutorial you will learn how to use the sample project to create an Azure
 
 For this tutorial you will use the sample project to convert your 3D model into an Azure Object Anchors model, clone the sample project from this [repository](https://github.com/Azure/azure-object-anchors).
 
-you can also clone the repository by running the following commands:
+You can also clone the repository by running the following commands:
 
 ```console
 git clone https://github.com/Azure/azure-object-anchors.git
