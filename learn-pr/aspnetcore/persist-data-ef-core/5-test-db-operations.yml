@@ -2,7 +2,6 @@
 uid: learn.persist-data-ef-core.test-db-operations
 title: Exercise - Test CRUD operations
 metadata:
-  unitType: {{patternType}}
   title: test-crud-operations
   description: "Test the EF Core app."
   ms.date: 12/13/2021

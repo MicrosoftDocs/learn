@@ -3,8 +3,8 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
 ## Inspect promotions database
 
 1. In the **EXPLORER** pane, right-click on *Promotions/Promotions.db* file and select **Open Database**.
-1. In the **SQLITE EXPLORER** pane, expand the *Promotions.db* node, as well as the *Coupons* table node. Note the data schema.
-1. Right-click the *Coupons* node and select **Show table**. Inspect the the coupon data.
+1. In the **SQLITE EXPLORER** pane, expand the *Promotions.db* and *Coupons* nodes. Note the data schema.
+1. Right-click the *Coupons* node and select **Show table**. Inspect the coupon data.
 
 ## Scaffold the promotions context and coupon model
 

@@ -8,7 +8,7 @@ In this unit, you'll use the HttpRepl tool to test the app.
     dotnet tool install -g Microsoft.dotnet-httprepl
     ```
 
-    This installs the HttpRepl tool.
+    This command installs the HttpRepl tool.
 
 1. Run the app with the following command:
 
@@ -16,12 +16,14 @@ In this unit, you'll use the HttpRepl tool to test the app.
     dotnet run --urls=https://localhost:5101
     ```
 
-    This launches the app and specifies the listening port to `5101`.
-1. Inspect the output from running the app. Note the following:
-    - EF Core echos SQL commands as `info` log events as they execute.
+    This command launches the app and specifies the listening port to `5101`.
+
+1. Inspect the output from running the app.
+    - EF Core echoes SQL commands as `info` log events as they execute.
     - The tables and indexes are defined with `CREATE` SQL commands.
     - `INSERT` commands are executed when the database is seeded.
     - For security, the parameter values are not echoed to the console.
+
 1. Use Sqlite Explorer to explore the seeded database.
 1. Since the terminal is blocked by the running app, open another terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>).
 1. In the new terminal, run the following command:
@@ -91,7 +93,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     }
     ```
 
-1. Run the following command to add an additional topping to the new BBQ Beef pizza.
+1. Run the following command to add another topping to the new BBQ Beef pizza.
 
     ```dotnetcli
     put 4/addtopping?toppingId=5
@@ -103,7 +105,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     put 4/updatesauce?sauceId=2
     ```
 
-1. You've realized that a smoked brisket pizza with alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
+1. You've realized a smoked brisket pizza with alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
 
     ```dotnetcli
     delete 4

@@ -1,4 +1,4 @@
-In this unit, you'll create C# entity classes that will map to tables in the a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
+In this unit, you'll create C# entity classes that will map to tables in a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
 
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
@@ -13,14 +13,14 @@ In this unit, you'll create C# entity classes that will map to tables in the a l
 
     The preceding command creates a local copy of the starter code repository. The app manages pizzas, their toppings, and their sauces.
 
-1. Switch to the directory you just cloned and open it in Visual Studio Code.
+1. Switch to the directory you cloned and open it in Visual Studio Code.
 
     ```bash
     cd mslearn-persist-data-ef-core
     code .
     ```
 
-1. Review the code. Note the following:
+1. Review the code:
 
     - The project is an ASP.NET Core web API.
     - *Services/PizzaService.cs* is a service class that defines CRUD (**C**reate, **R**ead, **U**pdate, **D**elete) methods. All the methods currently throw `System.NotImplementedException`.
@@ -41,7 +41,7 @@ In this unit, you'll create C# entity classes that will map to tables in the a l
 
     The code builds with no warnings or errors.
 
-## Add Nuget packages and EF Core tools
+## Add NuGet packages and EF Core tools
 
 Before you start, you need to add the required packages.
 
@@ -51,7 +51,7 @@ Before you start, you need to add the required packages.
     dotnet add package Microsoft.EntityFrameworkCore.Sqlite
     ```
 
-    This adds the Nuget package that contains the EF Core Sqlite database provider and all its dependencies.
+    This command adds the Nuget package that contains the EF Core Sqlite database provider and all its dependencies.
 
 1. From the terminal, run the following command:
 
@@ -59,7 +59,7 @@ Before you start, you need to add the required packages.
     dotnet add package Microsoft.EntityFrameworkCore.Design
     ```
 
-    This adds packages required for the EF Core tools.
+    This command adds packages required for the EF Core tools.
 
 1. From the terminal, run the following command:
 
@@ -67,7 +67,7 @@ Before you start, you need to add the required packages.
     dotnet tool install --global dotnet-ef
     ```
 
-    This installs `dotnet ef`, the tool you'll use to create migrations and scaffolding.
+    This command installs `dotnet ef`, the tool you'll use to create migrations and scaffolding.
 
 ## Wire up models and DbContext
 
@@ -173,8 +173,6 @@ EF Core created a database for your app. Let's take a look inside the database.
 1. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
     :::image type="content" source="../media/sqlite-explorer.png" alt-text="The Sqlite Explorer pane":::
-
-    Note the following:
 
     - Tables have been created corresponding to each entity.
     - Table names were pluralized based on the class names.
@@ -289,8 +287,6 @@ EF Core created a database for your app. Let's take a look inside the database.
 
     > [!IMPORTANT]
     > The Sqlite extension will re-use open **Sqlite** tabs.
-
-    Note the following:
 
     - New fields have been added to the `Toppings` and `Sauces`.
         - `Calories` is defined as a `REAL` column because that's Sqlite's closest match to the C# `double` type.

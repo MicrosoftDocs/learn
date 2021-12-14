@@ -172,7 +172,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
 ## Database seeding
 
-You've coded the CRUD operations for `PizzaService`, but it'll be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
+You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
 
 1. In the *Data* folder, add a new file named *DbInitializer.cs*.
 1. Add the following code to *Data\DbInitializer.cs*:

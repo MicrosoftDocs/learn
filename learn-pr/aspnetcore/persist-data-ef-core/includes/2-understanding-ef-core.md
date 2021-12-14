@@ -6,8 +6,8 @@ With EF Core, you can:
 - Add, modify, and delete data calling methods on those entities.
 - Map multiple database tables to a single C# entity.
 - Handle concurrency issues that arise when multiple users simultaneously attempt to update the same record.
-- Use strongly-typed Language Integrated Query (<xref:System.Linq?displayProperty=nameWithType>) syntax to query the database.
-- Access [multiple databases](https://docs.microsoft.com/ef/core/providers/) including SQL Server, Sqlite, Azure Cosmos DB, PostgreSQL, MySQL, and more.
+- Use strongly typed Language Integrated Query (<xref:System.Linq?displayProperty=nameWithType>) syntax to query the database.
+- Access [multiple databases](/ef/core/providers/) including SQL Server, Sqlite, Azure Cosmos DB, PostgreSQL, MySQL, and more.
 - Build your domain model from an existing database.
 - Manage your database schema based on your domain model.
 
