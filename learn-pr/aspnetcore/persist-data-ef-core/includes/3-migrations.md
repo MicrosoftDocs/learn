@@ -295,7 +295,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint. EF Core will enforce the length validation, however.
 
     > [!TIP]
-    > EF Core database providers handle mapping model schema to a particular database's features. While Sqlite doesn't implement a corresponding constraint for `MaxLength`, other databases, like SQL Server and PostgreSQL do.
+    > EF Core database providers handle mapping model schema to a particular database's features. While Sqlite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
 
 1. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
 
