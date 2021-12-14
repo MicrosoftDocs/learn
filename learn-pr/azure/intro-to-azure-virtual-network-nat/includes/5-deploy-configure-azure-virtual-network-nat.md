@@ -9,11 +9,11 @@ If you want to add the Azure Virtual Network NAT service to your Azure network e
 1. Navigate to the Azure portal.
 1. Select **Create a resource**, and then in the search box, enter **NAT Gateway**.
 1. Select the NAT gateway item, and then select **Create** to start the creation wizard.
-1. In the first step in the wizard, in the subscription field, select your Azure subscription. This is the subscription that will be charged for this service, so make sure that you select the correct one.
+1. In the first step in the wizard, in the **Subscription** field, select your Azure subscription. This is the subscription that will be charged for this service, so make sure that you select the correct one.
 1. In the **Resource group** field, either select an existing resource group or select **Create new**.
 
     > [!NOTE]
-    > Most likely, you will have a resource group already created for existing Azure resources, but you can also create a new one if you want.
+    > Most likely, you'll have a resource group already created for existing Azure resources, but you can also create a new one if you want.
 
 1. Provide a **NAT gateway name** and **Region** where this service should be located. 
 
@@ -34,6 +34,6 @@ If you don’t want to use the Azure portal to create an instance of the Azure V
 
 ## Deploy the Azure Virtual Network NAT service by using an Azure Resource Manager template
 
-For automation purposes, you can create Azure Virtual Network NAT by using an Azure Resource Manager (ARM) template. With ARM templates, you can automatically deploy a virtual network, a NAT gateway resource, and a VM.
+For automation purposes, you can create Azure Virtual Network NAT by using an Azure Resource Manager template. With Azure Resource Manager templates, you can automatically deploy a virtual network, a NAT gateway resource, and a VM.
 
-An ARM template is a JSON file that defines the infrastructure and configuration for your project. The template uses declarative syntax. In declarative syntax, you describe your intended deployment without writing the sequence of programming commands to create the deployment.
+An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your project. The template uses declarative syntax. In declarative syntax, you describe your intended deployment without writing the sequence of programming commands to create the deployment.
