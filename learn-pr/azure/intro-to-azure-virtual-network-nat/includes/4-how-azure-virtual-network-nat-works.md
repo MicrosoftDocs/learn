@@ -1,8 +1,9 @@
-Before you can us Azure Virtual Network NAT to start resolving the port exhaustion issues at your company, you need to understand how it works. This understanding will give you a better idea about the steps you need to take to properly deploy, configure, and use this service to resolve connectivity problems.
+Before you can use Azure Virtual Network NAT to start resolving the port exhaustion issues at your company, you need to understand how it works. This understanding will give you a better idea about the steps you need to take to properly deploy, configure, and use this service to resolve connectivity problems.
 
 When you create an Azure Virtual Network NAT gateway service, you need to assign it a public IP address or public IP address prefix. The Azure Virtual Network NAT gateway resource can use a maximum of 16 public IP addresses. The Virtual Network NAT can use any combination of public IP addresses and public IP address prefixes, totaling to 16 addresses.
 
-The Virtual Network NAT maximum prefix size is /28 (16 addresses). When you associate a Public IP Prefix to an Azure Virtual Network NAT service, it’ll automatically scale to the number of outbound IP addresses needed. Azure Virtual Network NAT service supports TCP and UDP protocols only, and you can’t associate it with IPv6 public IP address or IPv6 public IP prefix.
+The Virtual Network NAT maximum prefix size is /28 (16 addresses). When you associate a Public IP Prefix to an Azure Virtual Network NAT service, it’ll automatically scale to the number of outbound IP addresses needed. Azure Virtual Network NAT supports TCP and UDP protocols only, and you can’t associate it with an IPv6 public IP address or IPv6 public IP prefix.
+
 When you connect an Azure Virtual Network NAT service to a subnet or subnets in your virtual network, it automatically overrides how your traffic is routed to the internet. Even if you had Azure VMs with public IP addresses in that subnet, these addresses will no longer be used for outbound connectivity.
 
 The following diagram is a scenario of a virtual network with two subnets. Azure VMs and other services in these subnets don’t have public IP addresses assigned. All outgoing and incoming traffic is routed through the Azure Virtual Network NAT service, which uses either a public IP or a public IP prefix for outbound connections.
