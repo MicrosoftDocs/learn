@@ -1,4 +1,4 @@
-Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between your programming language and the database. With EF Core, the database is abstracted behind .NET POCOs, (**P**lain **O**ld **C**LR **O**bjects) As a result, you can focus on your code and EF Core handles direct interaction with the database. 
+Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between your programming language and the database. With EF Core, the database is abstracted behind .NET POCOs (**P**lain **O**ld **C**LR **O**bjects). As a result, you can focus on your code and EF Core handles direct interaction with the database. 
 
 With EF Core, you can:
 
