@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.handle-connection-errors
+title: Handle connection errors
+metadata:
+  title: Handle connection errors
+  description: "Handle connection errors"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-handle-connection-errors.md)]

@@ -19,8 +19,7 @@ An Azure policy consists of the following components:
 
 The following is a generated list of the types of recommendations. The recommendations help provide full visibility into the security health of your environment.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that depicts recommendations turned on.](../media/az500-azure-security-center-policies.png)
+![Screenshot that depicts recommendations turned on.](../media/az500-azure-security-center-policies.png)
 
 - **System updates**. Retrieves a daily list of available security updates and critical updates from Windows Update or Windows Server Update Services (WSUS).
 

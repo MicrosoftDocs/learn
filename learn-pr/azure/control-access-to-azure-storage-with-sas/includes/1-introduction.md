@@ -1,16 +1,16 @@
-When you store files and data in Azure, you need to grant access to them securely. Azure Storage accounts provide ways to grant secure access by using a shared access signature (SAS).
+The Azure Storage platform is Microsoft's cloud storage solution for modern data storage solution. Azure Blob Storage is Microsoft's object storage solution for the cloud, and is optimized for storing massive amounts of unstructured data. Every request to access files stored in Azure requires authorization. A shared access signature (SAS) provides secure, delegated access to resources in your storage account. 
 
-You work for a healthcare organization and are developing an application that stores patient diagnostic images in blob storage. These images are highly sensitive, and you need to ensure that your application accesses them securely. You'll update your application to integrate with other providers and give authorization to the images by using a SAS.
+You work for a healthcare organization that stores patient diagnostic images in blob storage. These images are highly sensitive, and you are developing an application for securely storing and securely accessing content. You're updating your application to integrate with other providers, and you want to authorize access to the images by using a SAS.
 
-In this module, you'll explore the options available to authorize access to your Azure storage. The focus in the module is on a SAS and its different variants. You'll deploy a web app that uses a storage account and enhance it to use a SAS.
+In this module, you'll explore the options available to authorize access to your Azure storage, focusing on SAS and its different variants. You'll deploy a web app that uses a storage account and enhance the web app to use a SAS.
 
-After you finish this module, you'll have a running web app that uses a SAS associated with a stored access policy. You'll see how your patients' images are only accessible by using a SAS. Then you'll revoke access by updating the stored access policy.
+After you finish this module, you'll have a web app that uses multiple SASs that are associated with a stored access policy. You'll see how patient images are only accessible by using a SAS. Then you'll revoke access by updating the stored access policy.
 
 ## Learning objectives
 
-- Identify the features of a shared access signature for Azure Storage.
+- Identify the features of a shared access signature (SAS) for Azure Storage.
 - Identify the features of stored access policies.
-- Programmatically generate and use a shared access signature to access storage.
+- Programmatically generate and use a SAS to access storage.
 
 ## Prerequisites
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-resource-requirements.evaluate
+title: Evaluate throughput requirements
+metadata:
+  title: Evaluate throughput requirements
+  description: "Evaluate throughput requirements"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-evaluate-throughput-requirements.md)]

@@ -6,7 +6,7 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named `DotNetDebugging` in the location of your choice. Then click **Select Folder**.
+1. Create a new folder named `DotNetDebugging` in the location of your choice. Then choose **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -36,7 +36,7 @@ To set up Visual Studio Code for .NET debugging, we'll first need a .NET project
 
     :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of Visual Studio Code prompt to install the C# extension.":::
 
-3. Visual Studio Code will install the **C#** extension and show an additional prompt to add required assets to build and debug your project. Select the **Yes** button.
+3. Visual Studio Code will install the **C#** extension and show another prompt to add required assets to build and debug your project. Select the **Yes** button.
 
     :::image source="../media/install-required-assets.png" alt-text="Screenshot of Visual Studio Code prompt to add required assets to build and debug your .NET project.":::
 
@@ -67,7 +67,6 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
             {
                 int result = Fibonacci(5);
                 Console.WriteLine(result);
-                Console.ReadKey(true);
             }
             static int Fibonacci(int n)
             {
@@ -81,6 +80,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
                     n1 = n2;
                     n2 = sum;
                 }
+
                 return n == 0 ? n1 : n2;
             }
         }
@@ -101,8 +101,6 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
    :::image type="content" source="../media/run-modified-program.png" alt-text="Terminal window with modified program output.":::
 
 1. The result, 3, is shown in the terminal output. When you consult your Fibonacci chart, you'll see that the result should have been 5. It's time to get familiar with the debugger and fix this program.
-
-1. Select any key to exit the program.
 
 ## Analyze the issues
 
@@ -301,7 +299,6 @@ When we're doing this, it's important to be strategic about where we put our bre
             {
                 int result = Fibonacci(5);
                 Console.WriteLine(result);
-                Console.ReadKey(true);
             }
             static int Fibonacci(int n)
             {
@@ -315,6 +312,7 @@ When we're doing this, it's important to be strategic about where we put our bre
                     n1 = n2;
                     n2 = sum;
                 }
+
                 return n == 0 ? n1 : n2;
             }
         }

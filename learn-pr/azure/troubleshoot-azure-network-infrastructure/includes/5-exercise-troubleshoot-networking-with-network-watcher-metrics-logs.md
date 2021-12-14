@@ -6,7 +6,7 @@ In this unit, you'll troubleshoot by using Network Watcher metrics and logs. To 
 
 ## Register the Microsoft.Insights provider
 
-NSG flow logging requires the *Microsoft.Insights* provider. To register for that provider, complete the following steps.
+NSG flow logging requires the *Microsoft.Insights* provider. To register for the Microsoft.Insights provider, complete the following steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
 
@@ -16,7 +16,7 @@ NSG flow logging requires the *Microsoft.Insights* provider. To register for tha
 
 1. In the filter bar, enter **microsoft.insights**.
 
-1. If the status of the **microsoft.insights** provider is **NotRegistered**, in command bar, select **Register**.
+1. If the status of the **microsoft.insights** provider is **NotRegistered**, select **Register** in the command bar.
 
     :::image type="content" source="../media/5-microsoft-insights.png" alt-text="Screenshot showing the registered Microsoft.Insights provider.":::
 
@@ -26,7 +26,7 @@ Now, create a storage account for the NSG flow logs.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. 
 
-1. On the resource menu, select **Storage**, search for and select **Storage account**. The **Storage account** pane appears.
+1. On the resource menu, select **Storage**, then search for and select **Storage account**. The **Storage account** pane appears.
 
 1. Select **Create**. The **Create storage account** pane appears.
 
@@ -43,7 +43,7 @@ Now, create a storage account for the NSG flow logs.
     | Performance | Standard |
     | Redundancy | Geo-redundant storage (GRS) |
 
-1. Go to the **Advanced** tab, and enter the following value for its setting.
+1. Go to the **Advanced** tab, and enter the following value.
 
     | Setting | Value |
     | --- | --- |
@@ -71,7 +71,7 @@ To view the NSG flow logs, you'll use Log Analytics.
     | Name | `testsworkspace` |
     | Region | Select the same region as your resource group |
 
-1. Select **Next : Pricing tier**. On the **Pricing tier** tab, select the following value for **Pricing tier**  Pay-as-you-go (Per GB 2018).
+1. Select **Next : Pricing tier**. On the **Pricing tier** tab, select **Pay-as-you-go (Per GB 2018)** for **Pricing tier**.
 
 1. Select **Review + Create**, and after validation passes, select **Create**.
 
@@ -96,7 +96,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
     | Subscription | Select your subscription from the dropdown list. |
     | Storage Accounts | Select `testworkspace`  |
 
-1. Select **Configuration** tab.
+1. Select the **Configuration** tab.
 
     | Setting | Value |
     | --- | --- |
@@ -116,19 +116,19 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 Now, you're ready to generate some network traffic between VMs to catch in the flow log.
 
-1. On the resource menu, select **All resources**, select **FrontendVM**.
+1. On the resource menu, select **All resources**, then select **FrontendVM**.
 
-1. From the command bar, select **Connect**, **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
+1. From the command bar, select **Connect**, then select **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
-1. Launch the **FrontendVM.rdp** file, and select **Connect**. 
+1. Launch the **FrontendVM.rdp** file and select **Connect**. 
  
-1. When asked for your credentials, select **More choices** and, then sign in with the username **azureuser** and the password you specified when you created the VM.
+1. When asked for your credentials, select **More choices** and sign in with the username **azureuser** and the password you specified when you created the VM.
  
-1. When asked, for security certificate, select **Yes**.
+1. When asked for security a certificate, select **Yes**.
 
 1. In the RDP session, if prompted, allow your device to be discoverable ONLY if on a private network.
  
-1. Open a PowerShell prompt, and run the following command.
+1. Open a PowerShell prompt and run the following command.
 
     ```PowerShell
     Test-NetConnection 10.10.2.4 -port 80

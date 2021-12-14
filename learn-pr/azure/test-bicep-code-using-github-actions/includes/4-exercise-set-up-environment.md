@@ -32,7 +32,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Enter a name for your new project, such as *toy-website-test*.
 
-1. Select the **Public** checkbox.
+1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
@@ -66,14 +66,6 @@ You now have a copy of the template repository in your own account. You will now
    git clone https://github.com/mygithubuser/toy-website-test.git
    ```
 
-1. This is the first time you've used this repository, so you are prompted to sign in.
-
-   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
-
-   On macOS, select **Authorize**.
-
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
-
 1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
@@ -97,8 +89,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
-
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -128,8 +118,6 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
 
-[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
-
 ### Sign in to Azure by using Azure PowerShell
 
 1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
@@ -146,21 +134,29 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="cli"
 
-To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
-```azurecli
-az group create --name ToyWebsiteTest --location westus
-```
+   ```azurecli
+   az group create --name ToyWebsiteTest --location westus
+   ```
+
+1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
-```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
-```
+   ```azurepowershell
+   New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+   ```
+
+1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
 
 ::: zone-end
 

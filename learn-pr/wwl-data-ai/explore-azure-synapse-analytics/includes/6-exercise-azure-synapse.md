@@ -11,7 +11,7 @@ The exercise is designed to familiarize you with some key capabilities of Synaps
 
 To use Synapse Analytics, you must provision a Synapse Analytics Workspace resource in your Azure subscription.
 
-1. Open the Azure portal at [https://portal.azure/com](https://portal.azure/com?portal=true), and sign in using the credentials associated with your Azure subscription.
+1. Open the Azure portal at [https://portal.azure.com](https://portal.azure.com?portal=true), and sign in using the credentials associated with your Azure subscription.
 2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*

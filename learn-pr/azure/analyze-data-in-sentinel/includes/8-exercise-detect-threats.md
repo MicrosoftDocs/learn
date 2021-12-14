@@ -1,21 +1,21 @@
-## Exercise: Threat detection with Azure Sentinel Analytics
+## Exercise: Threat detection with Microsoft Sentinel Analytics
 
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs has been deleted from your Azure subscription. You want to analyze this  occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM.
 
-In this exercise, you'll explore an Azure Sentinel analytics rule and perform the following tasks:
+In this exercise, you'll explore a Microsoft Sentinel analytics rule and perform the following tasks:
 
 - Create an incident rule from an existing template.
 - Invoke an incident and review the associated actions.
-- Create an analytics rule from an rule template.
+- Create an analytics rule from a rule template.
 
 > [!NOTE]
 > In order to complete this exercise, you must have completed **Exercise Setup unit** in Unit 2. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Create an analytics rule from the analytics rule wizard
 
-1. In the Azure portal, search for and select **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
-1. On the **Azure Sentinel** menu, under **Configuration** , select **Analytics**.
-1. On the **Azure Sentinel | Analytics** header bar, select **Create** and then select **Scheduled query rule**.
+1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
+1. On the **Microsoft Sentinel** menu, under **Configuration** , select **Analytics**.
+1. On the **Microsoft Sentinel | Analytics** header bar, select **Create** and then select **Scheduled query rule**.
 1. On the **General** tab, enter the input values in the following table, and then select  **Next: Set rule logic**
 
     | Name | Azure VM Deletion. |
@@ -53,7 +53,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
     :::image type="content" source="../media/07-incident-settings.png" alt-text="Screenshot Analytics Incident Settings." border="true":::
 
-1. In the **Automated response**  pane, select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Azure Sentinel connector are displayed.
+1. In the **Automated response**  pane, select a playbook to run automatically when the alert is generated. Only the playbooks that contain Logic App Microsoft Sentinel connector are displayed.
 1. Select **Next: Review**.
 1. In the **Review and create** page, verify that the validation was successful, and then select **Create**.
 
@@ -68,23 +68,23 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 
 ### Task 3: Create an analytics rule from an existing template
 
-1. In the Azure portal, select **Home**, select Azure Sentinel, and, then select the Azure Sentinel workspace you created in the Unit 2 of this module.
+1. In the Azure portal, select **Home**, select Microsoft Sentinel, and, then select the Microsoft Sentinel workspace you created in the Unit 2 of this module.
 
-1. Open **Azure Sentinel**, in the left menu under **Configuration**, select **Analytics**.
+1. Open **Microsoft Sentinel**, in the left menu under **Configuration**, select **Analytics**.
 
 1. On the **Analytics** pane, select **Rule templates** tab.
 
-1. In the search field, enter **Create incidents based on Azure Defender alerts** and then select that rule template.
+1. In the search field, enter **Create incidents based on security alerts** and then select that rule template.
 
 1. In the details pane, select **Create rule**.
 
 1. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.
 
-1. In the **Analytics rule logic** section, verify that the Microsoft security service shows **Azure Defender** is selected.
+1. In the **Analytics rule logic** section, verify that the Microsoft security service shows **Microsoft Defender for Cloud** is selected.
 
 1. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
 
-1. If you want additional filters for the alerts from Azure Defender, you can add text in **Include specific alerts** and **Exclude specific alerts**.
+1. If you want additional filters for the alerts from Microsoft Defender for Cloud, you can add text in **Include specific alerts** and **Exclude specific alerts**.
 
 1. Select **Next: Automated response** and then select **Next: Review**.
 

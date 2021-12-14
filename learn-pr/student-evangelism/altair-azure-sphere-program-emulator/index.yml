@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator
+metadata:
+  title: Program the Altair 8800 emulator
+  description: Learn how to program the Altair 8800 emulator.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Program the Altair 8800 emulator
+summary: Learn how to program the Altair 8800 emulator.
+abstract:  |
+  In this module, you will:
+  - Understand Altair BASIC and CP/M, and how to use them.
+  - Learn how to program the Altair emulator by using Altair BASIC. 
+  - Write an Altair BASIC application.
+  - Learn how to boot CP/M and program with Microsoft BASIC, C, and Assembler.
+prerequisites: |
+  - A computer with an x86-based or x64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-program-emulator.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-program-emulator.introduction
+- learn.student-evangelism.altair-azure-sphere-program-emulator.programming-options
+- learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-start-cpm
+- learn.student-evangelism.altair-azure-sphere-program-emulator.altair-basic
+- learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-write-altair-basic-application
+- learn.student-evangelism.altair-azure-sphere-program-emulator.configuration-options
+- learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-configure-front-panel
+- learn.student-evangelism.altair-azure-sphere-program-emulator.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-program-emulator.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-program-emulator.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-resource-requirements.plan for data retention with time-to-live (TTL)
+title: Plan for data retention with time-to-live (TTL)
+metadata:
+  title: Plan for data retention with time-to-live (TTL)
+  description: "Plan for data retention with time-to-live (TTL)"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-plan-for-data-retention-with-time-to-live.md)]

@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/01/2021
+  ms.date: 12/10/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -24,7 +24,7 @@ quiz:
       explanation: "Events and alerts are what Azure Monitor is looking for and how you are notified."
     - content: "Logs and Metrics"
       isCorrect: true
-      explanation: "Logs, Metrics. All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a point in time. They are lightweight and capable of supporting near real-time scenarios. Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis."
+      explanation: "Logs, Metrics. All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a point in time. They are lightweight and capable of supporting near real-time scenarios. Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis."
     - content: "Records and Triggers"
       isCorrect: false
       explanation: "Records are items within a log, and triggers are specific events that cause alerts."
@@ -39,7 +39,7 @@ quiz:
     - content: "Kusto Query Language"
       isCorrect: true
       explanation: "Kusto Query Language. All data is retrieved from a Log Analytics workspace using a log query written using Kusto Query Language (KQL). You can write your own queries or use solutions and insights that include log queries for an application or service."
-  - content: "To be notified when any virtual machine in the production resource group is deleted, what should be configured?"
+  - content: "To be notified when any virtual machine in the production resource group is deleted, what should be configured?"
     choices:
     - content: "Activity log alert"
       isCorrect: true

@@ -33,7 +33,7 @@ quiz:
 
   - content: Where can you find a record of all write operations (PUT, POST, DELETE) for subscription resources?
     choices:
-    - content: Azure Security Center
+    - content: Microsoft Defender for Cloud
       isCorrect: false
       explanation: The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.
     - content: Azure Resource Graph

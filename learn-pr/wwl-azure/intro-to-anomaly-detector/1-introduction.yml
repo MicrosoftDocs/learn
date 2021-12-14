@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-anomaly-detector.1-introduction
+title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 01/14/2021
-  author: gerryo
+  description: "Introduction"
+  ms.date: 11/17/2021
+  author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

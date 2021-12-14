@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/26/2021
+  author: jongalloway
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which of the following statements is true about Entity Framework (EF) Core?
+      choices:
+        - content: "It's the only way to access data from minimal API applications."
+          isCorrect: false
+          explanation: "Incorrect. EF Core is a popular and easy-to-use object-relational mapper framework for .NET Core. It's not the only way to access data from minimal API applications."
+        - content: "It's guaranteed to allow switching databases with no code changes."
+          isCorrect: false
+          explanation: Incorrect. Although EF Core will abstract and localize your database-specific code, you should expect some development effort to switch databases.
+        - content: It stores data in-memory, which is appropriate only in development.
+          isCorrect: false
+          explanation: Incorrect. EF Core supports various database providers. In addition to the in-memory database, it supports more than 20 persistent databases.
+        - content: "It's a lightweight, extensible, and cross-platform data access technology for .NET applications."
+          isCorrect: true
+          explanation: Correct. EF Core is an easy way to get started with database access in .NET and is a great fit for many .NET applications.
+    - content: Which of the following statements describes how an entity class is used in EF Core?
+      choices:
+        - content: An entity class creates and manages the database connection.
+          isCorrect: false
+          explanation: Incorrect. This statement describes the EF Core context class, not the entity classes.
+        - content: Each class represents a business object in your application and generally maps to a single database table.
+          isCorrect: true
+          explanation: Correct. Your entity classes serve as a code-first model for your database tables.
+        - content: An entity class is useful only in development, but it will need to be replaced by a context class in production.
+          isCorrect: false
+          explanation: Incorrect. This description was used in the unit to describe the in-memory database, not entity classes.
+        - content: An entity class describes the HTTP endpoints that the application exposes and provides for a convenient data input page.
+          isCorrect: false
+          explanation: "Incorrect. This statement applies to your application's OpenAPI (Swagger) specification, not to entity classes."
+    - content: Which step is used to create the SQLite database?
+      choices:
+        - content: Executing the `dotnet ef database update` command after creating one or more migrations.
+          isCorrect: true
+          explanation: "Correct. The `dotnet ef database update` command creates the SQLite database if it doesn't exist before you apply migrations."
+        - content: Running the `dotnet watch` command from the .NET CLI.
+          isCorrect: false
+          explanation: "Incorrect. This command is used to run your application, but it doesn't create the database."
+        - content: Creating an EF Core context class, which inherits from `DbContext`.
+          isCorrect: false
+          explanation: Incorrect. Creating the context class doesn't cause the database to be created.
+        - content: Executing the `builder.Services.AddSqlite<PizzaDb>(connectionString);` command in your *Program.cs* file.
+          isCorrect: false
+          explanation: "Incorrect. This line of code tells the application to use the SQLite database, but it doesn't create the database."
+              

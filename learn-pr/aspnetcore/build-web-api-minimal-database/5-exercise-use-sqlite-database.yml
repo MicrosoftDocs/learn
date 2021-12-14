@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.exercise-use-sqlite-database
+title: Exercise - Use the SQLite database provider with EF Core
+metadata:
+  title: Exercise - Use the SQLite database provider with EF Core
+  description: Use the SQLite database provider with EF Core to add database persistence to your application.
+  ms.date: 10/26/2021
+  author: jongalloway
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-use-sqlite-database.md)]
+  

@@ -33,7 +33,7 @@ The following video shows you how set up your on-premises server to work with Az
 
 1. Select **StorageSyncAgent_WS2019.msi**, and then select **Next**.
 
-1. Allow the pop-up, and select **Run**.
+1. Allow the pop-up and select **Run**.
 
 1. In **Storage Sync Agent Setup**, accept the defaults to complete the setup.
 
@@ -74,7 +74,7 @@ The following video shows you how set up your on-premises server to work with Az
    | Setting | Value  |
    |---------|---------|
    | Registered Server  | **FileServerLocal** |
-   | Path    | **D:\CADFolder** |
+   | Path    | **D:\\CADFolder** |
 
    ![Screenshot of the Add server endpoint window.](../media/8-add-server-endpoint.png)
 

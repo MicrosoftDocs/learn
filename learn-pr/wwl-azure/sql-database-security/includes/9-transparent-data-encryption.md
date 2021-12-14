@@ -17,8 +17,7 @@ Customer-managed TDE is also referred to as Bring Your Own Key (BYOK) support fo
 
 With TDE with Azure Key Vault integration, users can control key management tasks including key rotations, key vault permissions, key backups, and enable auditing/reporting on all TDE protectors using Azure Key Vault functionality. Key Vault provides central key management, leverages tightly monitored HSMs, and enables separation of duties between management of keys and data to help meet compliance with security policies. 
 
-> [!div class="mx-imgBorder"]
-> ![Transparent Data Encryption configuration form.](../media/az500-transparent-data-encryption.png)
+![Transparent Data Encryption configuration form.](../media/az500-transparent-data-encryption.png)
 
 ### Manage TDE in the Azure portal
 

@@ -1,10 +1,10 @@
-The Microsoft 365 Defender connector lets you stream advanced hunting logs - a type of raw event data - from Microsoft 365 Defender into Azure Sentinel.
+The Microsoft 365 Defender connector lets you stream advanced hunting logs - a type of raw event data - from Microsoft 365 Defender into Microsoft Sentinel.
 
-With the integration of Microsoft Defender for Endpoint into the Microsoft 365 Defender security umbrella, you can collect your Microsoft Defender for Endpoint advanced hunting events using the Microsoft 365 Defender connector and stream them straight into new purpose-built tables in your Azure Sentinel workspace. These tables are built on the same schema that is used in the Microsoft 365 Defender portal, giving you complete access to the full set of advanced hunting logs and allowing you to do the following:
+With the integration of Microsoft Defender for Endpoint into the Microsoft 365 Defender security umbrella, you can collect your Microsoft Defender for Endpoint advanced hunting events using the Microsoft 365 Defender connector and stream them straight into new purpose-built tables in your Microsoft Sentinel workspace. These tables are built on the same schema that is used in the Microsoft 365 Defender portal, giving you complete access to the full set of advanced hunting logs and allowing you to do the following:
 
-- Easily copy your existing Microsoft Defender ATP advanced hunting queries into Azure Sentinel.
+- Easily copy your existing Microsoft Defender advanced hunting queries into Microsoft Sentinel.
 
-- Use the raw event logs to provide more insights for your alerts, hunting, and investigation, and correlate events with data from other data sources in Azure Sentinel.
+- Use the raw event logs to provide more insights for your alerts, hunting, and investigation, and correlate events with data from other data sources in Microsoft Sentinel.
 
 - Store the logs with increased retention, beyond Microsoft Defender for Endpoint or Microsoft 365 Defender’s default retention of 30 days. You can do so by configuring the retention of your workspace or by configuring per-table retention in Log Analytics.
 
@@ -14,7 +14,7 @@ To deploy the connector, do the following steps:
 
 1. Select **Data connectors** page.
 
-1. Select Microsoft Defender for Endpoint (may still be called Microsoft Defender Advanced Threat Protection).
+1. Select **Microsoft 365 Defender**.
 
 1. Then select the Open connector page on the preview pane.
 
@@ -22,7 +22,7 @@ To deploy the connector, do the following steps:
 
 1. Select **Apply Changes**
 
-The Microsoft Defender for Endpoint collection options are as follows:
+The Microsoft Defender collection options are as follows:
 
 | **Events type**| **Table name**|
 | :--- | :--- |

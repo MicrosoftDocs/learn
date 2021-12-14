@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Create and use arrays
 durationInMinutes: 4
 content: |
@@ -33,7 +34,7 @@ quiz:
     - content: "The program panics during runtime."
       isCorrect: false
       explanation: "Incorrect. The compiler returns an error. No executable program is produced."
-    - content: "The complier returns an error."
+    - content: "The compiler returns an error."
       isCorrect: true
       explanation: "Correct. The compiler returns an *index out of bounds* error."
     - content: "A null value is returned."

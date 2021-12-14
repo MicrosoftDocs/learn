@@ -2,8 +2,7 @@
 You can restrict access to your Azure App Service app by enabling different types of authentication for it. One way to do it is to request a client certificate when the client request is over TLS/SSL and validate the certificate. This mechanism is called TLS mutual authentication or client certificate authentication. This article shows how to set up your app to use client certificate authentication
 If you access your site over HTTP and not HTTPS, you will not receive any client certificate. So if your application requires client certificates, you should not allow requests to your application over HTTP.
 
-> [!div class="mx-imgBorder"]
-> ![TLS/SSL setting for web apps form](../media/az500-web-app-certificates.png)
+![TLS/SSL setting for web apps form](../media/az500-web-app-certificates.png)
 
 
 ## Enable client certificates

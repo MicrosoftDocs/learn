@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which of these code samples would create a client that could connect to the Azure Cosmos DB emulator using its default port?"
+    choices:
+    - content: "``new CosmosClient(\"https://documents.azure.com\", \"C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==\");``"
+      isCorrect: false
+      explanation: "That's incorrect. This code would try to connect to a cloud-based service, which is not the emulator."
+    - content: "``new CosmosClient(\"https://localhost:8081\", \"C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==\");``"
+      isCorrect: true
+      explanation: "That's correct. This code would correctly connect to the emulator using the default port of 8081."
+    - content: "``new CosmosClient(\"https://localhost\", \"C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==\");``"
+      isCorrect: false
+      explanation: "That's incorrect. This code would try to connect to the emulator using port 80, which is the incorrect port."
+  - content: "Assuming that you have an Azure Cosmos DB container with 50 partitions, which of the following code will correctly configure the **QueryRequestOptions** instance to optimize parallelism of requests from the SDK and client?"
+    choices:
+    - content: "``new QueryRequestOptions { MaxConcurrency = 50 };``"
+      isCorrect: true
+      explanation: "That's correct. This code will configure the concurrency to match the number of partitions."
+    - content: "``new QueryRequestOptions { MaxItemCount = 50 };``"
+      isCorrect: false
+      explanation: "That's incorrect. This code will configure Azure Cosmos DB to only return 50 results at a time."
+    - content: "``new QueryRequestOptions { MaxBufferedItemCount = 50 };``"
+      isCorrect: false
+      explanation: "That's incorrect. This code will configure the SDK to only buffer 50 items at a time locally."
+  - content: "Which class should you inherit from to create a class that intercepts SDK-side HTTP requests and inject extra logic?"
+    choices:
+    - content: "RequestMessage"
+      isCorrect: false
+      explanation: "That's incorrect. **RequestMessage** is an SDK class used to represent the actual request itself, not handle extra logic."
+    - content: "HttpRequest"
+      isCorrect: false
+      explanation: "That's incorrect. **HttpRequest** is a framework-specific class to represent HTTP requests, and does not provide any extra functionality in the SDK."
+    - content: "RequestHandler"
+      isCorrect: true
+      explanation: "That's correct. The **RequestHandler** abstract class defines an overridable method to inject logic in the HTTP request+response flow."

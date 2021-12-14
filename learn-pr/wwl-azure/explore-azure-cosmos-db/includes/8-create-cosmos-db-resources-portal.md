@@ -11,7 +11,7 @@ In this exercise you'll learn how to perform the following actions in the Azure 
 
 ## Create an Azure Cosmos DB account
 
-1. Login to the [Azure portal](https://portal.azure.com).
+1. Log in to the [Azure portal](https://portal.azure.com).
 
 1. From the Azure portal navigation pane, select **+ Create a resource**.
 

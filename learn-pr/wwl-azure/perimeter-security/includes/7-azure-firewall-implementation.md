@@ -1,14 +1,14 @@
-
 Controlling outbound network access is an important part of an overall network security plan. For example, you may want to limit access to web sites. Or, you may want to limit the outbound IP addresses and ports that can be accessed.
 
 One way you can control outbound network access from an Azure subnet is with Azure Firewall. With Azure Firewall, you can configure:
-* Application rules that define fully qualified domain names (FQDNs) that can be accessed from a subnet.
-* Network rules that define source address, protocol, destination port, and destination address.
+
+ -  Application rules that define fully qualified domain names (FQDNs) that can be accessed from a subnet.
+ -  Network rules that define source address, protocol, destination port, and destination address.
 
 Network traffic is subjected to the configured firewall rules when you route your network traffic to the firewall as the subnet default gateway.
 
-> [!div class="mx-imgBorder"]
-> ![In this diagram, an azure firewall is in the middle. Bi-directional arrows show communication with two spoke VNets and an on-premises office building. Traffic is flowing between the internet and the firewall, but some traffic is denied.](../media/az500-firewall-2.png)
+:::image type="content" source="../media/az500-firewall-2-171c2383.png" alt-text="In this diagram, an azure firewall is in the middle. Bi-directional arrows show communication with two spoke VNets and an on-premises office building. Traffic is flowing between the internet and the firewall, but some traffic is denied.":::
+
 
 ### Fully Qualified Domain Name (FQDN) tag
 
@@ -21,9 +21,10 @@ For example, to manually allow **Windows Update** network traffic through your f
 Azure Firewall includes a built-in rule collection for infrastructure FQDNs that are allowed by default. These FQDNs are specific for the platform and can't be used for other purposes.
 
 The following services are included in the built-in rule collection:
-* Compute access to storage Platform Image Repository (PIR)
-* Managed disks status storage access
-* Azure Diagnostics and Logging (MDS)
+
+ -  Compute access to storage Platform Image Repository (PIR)
+ -  Managed disks status storage access
+ -  Azure Diagnostics and Logging (MDS)
 
 ### Logs and metrics
 
@@ -35,11 +36,9 @@ Metrics are lightweight and can support near real-time scenarios making them use
 
 ### Threat intelligence-based filtering
 
-Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed. Intelligent Security Graph powers Microsoft threat intelligence and is used by multiple services including Azure Security Center.
-If you've enabled threat intelligence-based filtering, the associated rules are processed before any of the NAT rules, network rules, or application rules.
+Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed. Intelligent Security Graph powers Microsoft threat intelligence and is used by multiple services including Microsoft Defender for Cloud. If you've enabled threat intelligence-based filtering, the associated rules are processed before any of the NAT rules, network rules, or application rules.
 
-You can choose to just log an alert when a rule is triggered, or you can choose alert and deny mode.
-By default, threat intelligence-based filtering is enabled in alert mode. 
+You can choose to just log an alert when a rule is triggered, or you can choose alert and deny mode. By default, threat intelligence-based filtering is enabled in alert mode.
 
 ### Rule processing logic
 

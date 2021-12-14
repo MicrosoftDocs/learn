@@ -1,4 +1,4 @@
-In this module, you built several programs. You learned to declare and use variables to store data. Variables can be declared with or without the type. If it's the former, the type is inferred from the value it's assigned initially.
+In this module, you built several programs. You learned to declare and use variables to store data. Variables can be declared with or without the type. If it's the latter, the type is inferred from the value it's assigned initially.
 
 You also learned how to print values to a screen, and you now know the difference between various print functions. As part of printing to a screen, depending on the print function used, you need to use a formatter to indicate the data type you're printing if you combine it with a string.
 

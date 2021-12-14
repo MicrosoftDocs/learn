@@ -8,6 +8,7 @@ metadata:
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   azureSandbox: true
 title: Exercise -  Train your machine learning model and build the web interface to use it
 durationInMinutes: 15

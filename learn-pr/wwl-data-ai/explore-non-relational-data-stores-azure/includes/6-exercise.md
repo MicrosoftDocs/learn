@@ -139,12 +139,12 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
     > [!div class="mx-imgBorder"]
     > ![Image showing the page for the Storage Account in the Azure portal. The user has selected **Shared access signature**](../media/6-storage-account.png)
 
-3. On the storage account page, select **Storage Explorer**.
+3. On the storage account page, select **Storage browser**.
 
     > [!div class="mx-imgBorder"]
     > ![Image showing the **storage account** page. The user has selected **Storage Explorer**](../media/6-storage-account-page.png)
 
-4. In the Storage Explorer pane, expand **BLOB CONTAINERS** and then click **images**. The Images blob contains the image files uploaded by the setup script.
+4. In the Storage browser pane, expand **BLOB CONTAINERS** and then click **images**. The Images blob contains the image files uploaded by the setup script.
 
     > [!div class="mx-imgBorder"]
     > ![The **images** blob in the **BLOB CONTAINERS** folder in **Storage Explorer**](../media/6-images.png)
@@ -173,4 +173,4 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
 
 ## Summary
 
-In this exercise, you investigated using Cosmos DB and Azure Storage to store and retrieve data. You ran a script that created a Cosmos DB database and a storage account, and uploaded sample data. You used Data Explorer in Cosmos DB to run simple queries against the data. You used Storage Explorer for the storage account to browse blob storage and download files.
+In this exercise, you investigated using Cosmos DB and Azure Storage to store and retrieve data. You ran a script that created a Cosmos DB database and a storage account, and uploaded sample data. You used Data Explorer in Cosmos DB to run simple queries against the data. You used Storage browser for the storage account to browse blob storage and download files.

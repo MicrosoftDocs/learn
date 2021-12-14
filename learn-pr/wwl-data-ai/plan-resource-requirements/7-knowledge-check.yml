@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-resource-requirements.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What rate-based currency acronym is used as a simplification of CPU, memory, and IOPS?"
+    choices:
+    - content: "RU/s"
+      isCorrect: true
+      explanation: "That's correct. RU/s is an acronym for request units per second."
+    - content: "TTL"
+      isCorrect: false
+      explanation: "That's incorrect. TTL is an acronym for time-to-live."
+    - content: "vCPUs"
+      isCorrect: false
+      explanation: "That's incorrect. vCPUs is an acronym commonly used with Azure Virtual Machines."
+  - content: "Which property of a container should be specified to automatically purge items after a specified number of seconds?"
+    choices:
+    - content: "``Expiration``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``Expiration`` property will not enable the time-to-live feature for a container."
+    - content: "``DefaultTimeToLive``"
+      isCorrect: true
+      explanation: "That's correct. Specify the ``DefaultTimeToLive`` of a container to enable the time-to-live feature for items in the container."
+    - content: "``_ttl``"
+      isCorrect: false
+      explanation: "That's incorrect. Use the ``_ttl`` property to further configure the time-to-live feature for specific items."

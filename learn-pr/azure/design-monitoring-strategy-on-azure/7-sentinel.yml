@@ -1,40 +1,40 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
-  title: Analyze enterprise security by using Azure Sentinel
-  description: Analyze enterprise security by using Azure Sentinel
+  title: Analyze enterprise security by using Microsoft Sentinel
+  description: Analyze enterprise security by using Microsoft Sentinel
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze enterprise security by using Azure Sentinel
+title: Analyze enterprise security by using Microsoft Sentinel
 durationInMinutes: 10
 content: |
   [!include[](includes/7-sentinel.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Why would you use Azure Sentinel?
+  - content: Why would you use Microsoft Sentinel?
     choices:
     - content: You want to improve the development lifecycle for an application that spans across on-premises and the cloud.
       isCorrect: false
       explanation: You use Application Insights with Azure Pipelines and deployment gates to improve your development lifecycle.
     - content: You want a detailed overview of your enterprise, potentially across multiple clouds, and on-premises locations.
       isCorrect: true
-      explanation: Azure Sentinel will help monitor and respond to security threats across your entire enterprise.
+      explanation: Microsoft Sentinel will help monitor and respond to security threats across your entire enterprise.
     - content: You want to be able to cross-query over data collected from multiple sources that span on-premises and the cloud.
       isCorrect: false
-      explanation: You use Azure Monitor Log Analytics to cross-resource query over data from multiple sources. Use Azure Sentinel to monitor and respond to security threats across your entire enterprise.
-  - content: How do you set up Azure Sentinel on Azure?
+      explanation: You use Azure Monitor Log Analytics to cross-resource query over data from multiple sources. Use Microsoft Sentinel to monitor and respond to security threats across your entire enterprise.
+  - content: How do you set up Microsoft Sentinel on Azure?
     choices: 
-    - content: Create an Azure Sentinel instance, and then add Azure Sentinel to a workspace.
+    - content: Create a Microsoft Sentinel instance, and then add Microsoft Sentinel to a workspace.
       isCorrect: false
-      explanation: You create a workspace, and then add that workspace to Azure Sentinel.
-    - content: Connect your data source, create a workspace, and then add Azure Sentinel to that workspace. 
+      explanation: You create a workspace, and then add that workspace to Microsoft Sentinel.
+    - content: Connect your data source, create a workspace, and then add Microsoft Sentinel to that workspace. 
       isCorrect: false
-      explanation: Create a workspace, and then add that workspace to Azure Sentinel before you can connect a data source.
-    - content: Create a workspace, and then add that workspace to Azure Sentinel.
+      explanation: Create a workspace, and then add that workspace to Microsoft Sentinel before you can connect a data source.
+    - content: Create a workspace, and then add that workspace to Microsoft Sentinel.
       isCorrect: true
       explanation: You'll need to create a Log Analytics workspace.
   - content: Sentinel has raised an incident. How can you investigate which users have been affected?

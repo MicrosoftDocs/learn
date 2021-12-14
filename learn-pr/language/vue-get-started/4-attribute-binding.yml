@@ -8,6 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
+  ms.custom: team=nextgen
 title: Attribute binding
 durationInMinutes: 5
 content: |

@@ -26,14 +26,13 @@ prerequisites: |
   - Git command-line client
 iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
-- intermediate
+- beginner
 roles:
 - developer
 products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
 - ef-core
 units:
 - learn.persist-data-ef-core.introduction

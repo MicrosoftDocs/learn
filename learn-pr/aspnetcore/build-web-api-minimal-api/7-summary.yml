@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-api.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 10/26/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+  

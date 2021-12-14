@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.write-first-query-kusto-query-language.exercise-filter-data-where-operator
+title:  Exercise - Filter data by using the where operator 
+metadata:
+  unitType: exercise
+  title: Exercise - Filter data by using the where operator 
+  description: Exercise - Filter data by using the where operator. 
+  ms.date: 11/22/2021 
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial 
+durationInMinutes: 7 
+content: |
+  [!include[](includes/6-exercise-filter-data-where-operator.md)]

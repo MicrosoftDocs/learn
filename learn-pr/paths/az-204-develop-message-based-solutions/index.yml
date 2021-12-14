@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-204-develop-message-based-solutions
+metadata:
+  title: 'AZ-204: Develop message-based solutions'
+  description: 'AZ-204: Develop message-based solutions'
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Develop message-based solutions'
+prerequisites: |
+  * At least one year of experience developing scalable solutions through all phases of software development.
+  * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.
+iconUrl: /learn/achievements/message-develop-solutions.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-queue-storage
+- azure-service-bus
+modules:
+- learn.wwl.discover-azure-message-queue
+trophy:
+  uid: learn.wwl.az-204-develop-message-based-solutions.trophy

@@ -8,6 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
+  ms.custom: team=nextgen
 title: Work with logic in JSX files
 durationInMinutes: 1
 content: |

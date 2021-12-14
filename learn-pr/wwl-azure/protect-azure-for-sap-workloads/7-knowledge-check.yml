@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-azure-for-sap-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which service enables high-speed connectivity from an on-premises network to SAP S/4 HANA running in Azure?"
+    choices:
+    - content: "Azure ExpressRoute"
+      isCorrect: true
+      explanation: "Correct. Azure ExpressRoute does enable high-speed connectivity from an on-premises network to SAP S/4 HANA running in Azure."
+    - content: "Azure Virtual Network"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network does not enable high-speed connectivity from an on-premises network to SAP S/4 HANA running in Azure."
+    - content: "Azure Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall does not enable high-speed connectivity from an on-premises network to SAP S/4 HANA running in Azure."
+  - content: "What is Azure Sentinel used for?"
+    choices:
+    - content: "To stop denial of service attacks at the edge."
+      isCorrect: false
+      explanation: "Incorrect. Azure Sentinel is not used for stopping denial of service attacks."
+    - content: "To apply analytics to telemetry and log files from various locations in the landscape to find security anomalies."
+      isCorrect: true
+      explanation: "Correct. Azure Sentinel applies analytics to telemetry and log files from various locations in the landscape to find security anomalies."
+    - content: "To connect VNets in the overall solution."
+      isCorrect: false
+      explanation: "Incorrect. Azure Sentinel is not used to connect VNets."
+  - content: "Which service provides connectivity between Virtual Networks in Azure?"
+    choices:
+    - content: "Azure Virtual Network Peering"
+      isCorrect: true
+      explanation: "Correct. Azure Virtual Network Peering provides connectivity between Virtual Networks in Azure."
+    - content: "Azure Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall does not provide connectivity between Virtual Networks in Azure."
+    - content: "Azure VPN Gateway"
+      isCorrect: false
+      explanation: "Incorrect. Azure VPN Gateway does not provide connectivity between Virtual Networks in Azure."
+  - content: "Which product or service monitors network traffic in an SAP S/4 HANA landscape running in Azure?"
+    choices:
+    - content: "Windows Server 2022"
+      isCorrect: false
+      explanation: "Incorrect. Windows Server 2022 does not monitor network traffic in an SAP S/4 HANA landscape running in Azure."
+    - content: "Azure Network Watcher"
+      isCorrect: true
+      explanation: "Correct. Azure Network Watcher monitors network traffic in an SAP S/4 HANA landscape running in Azure."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor does not monitor network traffic in an SAP S/4 HANA landscape running in Azure."
+  - content: "When is Azure ExpressRoute used?"
+    choices:
+    - content: "When connecting from the internet into Azure."
+      isCorrect: false
+      explanation: "Incorrect. Azure ExpressRoute is not used when connecting from the internet into Azure."
+    - content: "When load balancing incoming traffic across redundant servers."
+      isCorrect: false
+      explanation: "Incorrect. Azure ExpressRoute is not used when  load balancing incoming traffic across redundant servers."
+    - content: "When establishing a high-speed dedicated connection into Azure from an on-premises network."
+      isCorrect: true
+      explanation: "Correct. Azure ExpressRoute is used when establishing a high-speed dedicated connection into Azure from an on-premises network."

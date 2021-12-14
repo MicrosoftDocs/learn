@@ -1,4 +1,4 @@
-We've been calling methods since our first lines of code when using the `Console.WriteLine()` method.  Not all classes and methods are implemented the same way.  This unit will cover some of the most popular variants you'll need to understand when using methods from the .NET Class Library.  More importantly, you'll learn how to find and use the documentation to better understand more about each method.
+We've been calling methods since our first lines of code when using the `Console.WriteLine()` method. Not all classes and methods are implemented the same way. This unit will cover some of the most popular variants you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
 ## How to call methods in the .NET Class Library
 
@@ -35,33 +35,34 @@ First, let's walk through what each line of code accomplishes, then we'll ask so
 
 The first line of code creates a new instance of the `System.Random` class in the .NET Class Library and stores the reference to the new object in a variable named `dice`.
 
-The second line of code calls the `dice` object's `Next()` method passing in two parameters: the minimum and maximum value of the random number.  The `Next()` method returns the value, which we save into a variable named `roll`.
+The second line of code calls the `dice` object's `Next()` method passing in two parameters: the minimum and maximum value of the random number. The `Next()` method returns the value, which we save into a variable named `roll`.
 
 The third line of code calls the `WriteLine()` method to print the value of `roll` to the console.
 
-In this code example, we're calling a method of the Random class and the Console class.  However, the *way* we're calling these methods is different.  The reason they're called using a different technique is because some methods are stateful and others are stateless.
+In this code example, we're calling a method of the Random class and the Console class. However, the *way* we're calling these methods is different. The reason they're called using a different technique is because some methods are stateful and others are stateless.
 
 ### Stateful versus stateless methods
 
-In computing, **state** describes the condition of the execution environment at a specific moment in time.  As your code executes line by line, values are stored in variables.  At any moment during execution, the current state of the application is the collection of all values stored in memory.
+In computing, **state** describes the condition of the execution environment at a specific moment in time. As your code executes line by line, values are stored in variables. At any moment during execution, the current state of the application is the collection of all values stored in memory.
 
-Some methods don't rely on the current state of the application to work properly.  In other words, **stateless methods** are implemented so that they can work without referencing or changing any values already stored in memory.  Stateless methods are also known as **static methods**.
+Some methods don't rely on the current state of the application to work properly. In other words, **stateless methods** are implemented so that they can work without referencing or changing any values already stored in memory. Stateless methods are also known as **static methods**.
 
-For example, the `Console.WriteLine()` method doesn't rely on any values stored in memory.  It performs its function and finishes without impacting the state of the application in any way.
+For example, the `Console.WriteLine()` method doesn't rely on any values stored in memory. It performs its function and finishes without impacting the state of the application in any way.
 
-Other methods, however, must have access to the state of the application to work properly.  In other words, **stateful methods** are built in such a way that they rely on values stored in memory by previous lines of code that have already executed.  Or they modify the state of the application by updating values or storing new values in memory.  They're also known as **instance methods**.
+Other methods, however, must have access to the state of the application to work properly. In other words, **stateful methods** are built in such a way that they rely on values stored in memory by previous lines of code that have already executed. Or they modify the state of the application by updating values or storing new values in memory. They're also known as **instance methods**.
 
-Stateful (instance) methods keep track of their state in *fields*, which are variables defined on the class.  Each new instance of the class gets its own copy of those fields in which to store state.
+Stateful (instance) methods keep track of their state in *fields*, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
 
-A single class can support both stateful and stateless methods.  However, when you need to call stateful methods, you must first create an *instance* of the class so that the method can access state.
+A single class can support both stateful and stateless methods. However, when you need to call stateful methods, you must first create an *instance* of the class so that the method can access state.
 
 ### Creating an instance of a class
 
-An instance of a class is called an *object*.  To create a new instance of a class, you use the `new` operator.  Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
+An instance of a class is called an *object*. To create a new instance of a class, you use the `new` operator. Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
 
 ```csharp
 Random dice = new Random();
 ```
+
 The `new` operator does several important things:
 
 - It first requests an address in the computer's memory large enough to store a new object based on the `Random` class.
@@ -74,25 +75,25 @@ From that point on, when the `dice` variable is referenced, the .NET Runtime per
 
 You might be wondering why the `Next()` method was implemented as a stateful method?  Couldn't the .NET Class Library designers figure out a way to generate a random number without requiring state?  And what exactly is being stored or referenced by the `Next()` method?
 
-These are fair questions.  At a high level, computers are good at following specific instructions to create a reliable and repeatable outcome.  To create the illusion of randomness, the developers of the `Next()` method decided to capture the date and time down to the fraction of a millisecond and use that to seed an algorithm that produces a different number each time.  While not entirely random, it suffices for most applications.  The state that is captured and maintained through the life time of the `dice` object is the seed value.  Each subsequent call to the `Next()` method is rerunning the algorithm, but ensures that the seed changes so that the same value isn't (necessarily) returned.
+These are fair questions. At a high level, computers are good at following specific instructions to create a reliable and repeatable outcome. To create the illusion of randomness, the developers of the `Next()` method decided to capture the date and time down to the fraction of a millisecond and use that to seed an algorithm that produces a different number each time. While not entirely random, it suffices for most applications. The state that is captured and maintained through the life time of the `dice` object is the seed value. Each subsequent call to the `Next()` method is rerunning the algorithm, but ensures that the seed changes so that the same value isn't (necessarily) returned.
 
-However, understanding *how* `Random.Next()` works isn't necessary to using it.  The important thing to remember is that some methods require you to create an instance of its class before calling the method, while others do not.
+To use the `Random.Next()` method, however, you don't have to understand *how* it works. The important thing to know is that some methods require you to create an instance of a class before you call them, while others do not.
 
 ### How can you determine whether you need to create an instance of a class before calling its methods?
 
-One way to learn how to call the method is to consult the documentation.  You'll find examples that show whether the method must be called from the object instance or directly from the class.
+One way to learn how to call the method is to consult the documentation. You'll find examples that show whether the method must be called from the object instance or directly from the class.
 
 > [!NOTE]
-> One of the most useful parts of the documentation are the code examples that demonstrate how to use the method you're researching.  Sometimes you'll need to scroll down on the web page to find the code examples.
+> One of the most useful parts of the documentation are the code examples that demonstrate how to use the method you're researching. Sometimes you'll need to scroll down on the web page to find the code examples.
 
-Alternatively, you can attempt to access the method directly from the class itself.  The worst that can happen is that you'll get a compilation error.
+Alternatively, you can attempt to access the method directly from the class itself. The worst that can happen is that you'll get a compilation error.
 
 If you type the following line of code into the .NET Editor:
 
 ```csharp-interactive
 int result = Random.Next();
 ```
-You'll see a red squiggly line appear which indicates you have a compilation error.  Hovering over the red squiggly line with your mouse cursor, you'll see a popup appear with the following message:
+You'll see a red squiggly line appear which indicates you have a compilation error. Hovering over the red squiggly line with your mouse cursor, you'll see a popup appear with the following message:
 
 ```
 (1,14): error CS0120: An object reference is required for the non-static field, method, or property 'Random.Next()'
