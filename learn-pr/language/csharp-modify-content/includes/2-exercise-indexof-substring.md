@@ -10,7 +10,7 @@ Or we can use an overloaded version of the `Substring()` method to set the numbe
 
 ### Step 1 - Write code to find an opening and closing parenthesis embedded in a string
 
-In the .NET Editor, add the code from the following code listing.
+In the .NET Editor, add the following code.
 
 ```csharp-interactive
 string message = "Find what is (inside the parentheses)";
@@ -191,7 +191,9 @@ message = message.Substring(closingPosition + 1);
 
 When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. We use this to our advantage, removing the first set of parentheses from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
 
-What happens during the final iteration when all that's left is the final `?` character?  That's addressed by the following lines of code:
+What happens during the final iteration when all that's left is the final `?` character?
+
+That's addressed by the following lines of code:
 
 ```csharp
 int openingPosition = message.IndexOf('(');
@@ -208,13 +210,13 @@ This time, we'll update the `message` string adding different types of symbols l
 
 Once we find a symbol, we'll need to find its matching closing symbol. Once we do that, the rest should look similar. We'll use a different tactic instead of modifying the original value of `message`. This time, we'll use the closing position of the previous iteration as the opening position of the current iteration.
 
-Update the code from step 5, above
+Update the code from step 5 to match the following code
 
 ```csharp-interactive
 string message = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
 
-// The IndexOfAny() helper method requires a char array of characters 
-// we want to look for:
+// The IndexOfAny() helper method requires a char array of characters. 
+// We want to look for:
 
 char[] openSymbols = { '[', '{', '(' };
 
@@ -250,10 +252,13 @@ while (true)
             break;
     }
 
-    // Finally, use the techniques we've already learned to display the sub-string:
+    // To find the closingPosition, we use an overload of the IndexOf method to specify 
+    // that our search for the matchingSymbol should start at the openingPosition in the string. 
     
     openingPosition += 1;
     closingPosition = message.IndexOf(matchingSymbol, openingPosition);
+
+    // Finally, use the techniques we've already learned to display the sub-string:
 
     int length = closingPosition - openingPosition;
     Console.WriteLine(message.Substring(openingPosition, length));
@@ -269,7 +274,7 @@ open symbol
 matching closing symbol
 ```
 
-In this example, we've added copious comments to explain what's happening. Besides using `IndexOfAny()` to locate one of several possible symbols, the key is the following line of code.
+In this example, we've added some comments to explain what's happening. Besides using `IndexOfAny()` to locate one of several possible symbols, the key is the following line of code.
 
 ```csharp
 closingPosition = message.IndexOf(matchingSymbol, openingPosition);
