@@ -1,9 +1,9 @@
 You’ve learned how Azure Stack HCI-based SDN can help address the following networking challenges of your company:
 
-- A significant administrative overhead associated with maintaining an elaborate network infrastructure comprising a large number of devices from different vendors, with hundreds of VLANs. 
+- A significant administrative overhead that's associated with maintaining an elaborate network infrastructure. This infrastructure comprises of a large number of devices from different vendors, with hundreds of VLANs. 
 - Increasing level of difficulty associated with implementing the network isolation required to accommodate the needs of customers and to satisfy regulatory requirements.
 
-You explored the architecture and core functionality of SDN on Azure Stack HCI. You also reviewed the process of deploying SDN on Azure Stack HCI. You now realize that SDN on Azure Stack HCI can help improve the resiliency, agility, security, and manageability of your network infrastructure.
+You explored the architecture and core functionality of SDN on Azure Stack HCI and reviewed the process of deploying SDN on Azure Stack HCI. You now realize that SDN on Azure Stack HCI can help improve the resiliency, agility, security, and manageability of your network infrastructure.
 
 ## References
 
