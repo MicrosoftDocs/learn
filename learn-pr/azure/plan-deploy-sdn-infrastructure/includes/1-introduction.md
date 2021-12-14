@@ -4,7 +4,8 @@ Azure Stack HCI facilitates the design and deployment of Software Defined Networ
 
 Suppose you work at a large, US-based financial services company. In its own datacenters, the company develops and hosts highly specialized, proprietary commercial applications for its customers.
 
-As part of modernizing its technology, the company started deploying Azure Stack HCI across its on-premises locations. This has significantly accelerated datacenter consolidation, enhanced agility of compute workloads, and helped minimize the dependency on storage area networks (SANs) that are expensive and complex to manage.
+As part of modernizing its technology, the company started deploying Azure Stack HCI across its on-premises locations. This change has accelerated datacenter consolidation, enhanced the agility of compute workloads, and helped minimize the dependency on storage area networks (SANs) that are expensive and complex to manage.
+
 However, your company continues to struggle with maintaining an elaborate network infrastructure comprising a large number of devices from different vendors, with hundreds of virtual local area networks (VLANs). The network team finds it increasingly difficult to implement the degree of isolation and resiliency required to accommodate the needs of customers and to satisfy regulatory requirements.
 
 To address these challenges, you decide to explore the option of using the Software Defined Networking (SDN) capabilities of Azure Stack HCI. Your goal is to determine whether you could supplement the existing physical network infrastructure and its VLANs by using dynamically scalable and modifiable virtualized networking devices. You're also interested in the possibility of integrating the entire networking environment to allow for its centralized management.
@@ -19,4 +20,4 @@ In this module, you'll explore the architecture and core capabilities of SDN on 
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to describe the architecture and core benefits of SDN on Azure Stack HCI. You'll also be able to deploy SDN on Azure Stack HCI. This will prepare you for the tasks of implementing such SDN components as Datacenter Firewall and Software Load Balancer.
+By the end of this module, you'll be able to describe the architecture and core benefits of SDN on Azure Stack HCI. You'll also be able to deploy SDN on Azure Stack HCI. This information will prepare you for the tasks of implementing such SDN components as Datacenter Firewall and Software Load Balancer.
