@@ -10944,6 +10944,21 @@
       "source_path": "learn-pr/aspnetcore/persist-data-ef-core/9-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/5-introduction-to-device-twins.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/5-introduction-device-twins",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/6-introduction-to-device-monitoring.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/6-introduction-device-monitoring",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/7-introduction-to-device-retirement.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/7-introduction-device-retirement",
+      "redirect_document_id": true
     }
   ]
 }

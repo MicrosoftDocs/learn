@@ -3,7 +3,7 @@ uid: learn.wwl.examine-device-provisioning-service-coding-tools-access
 metadata:
   title: Examine Device Provisioning Service coding tools and access
   description: "This module introduces you to the Device Provisioning Service SDKs, Azure CLI support for DPS, and how to control access to the service."
-  ms.date: 11/22/2021
+  ms.date: 12/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the phases of device provisioning, the concept of device enrollment and attestation, and the high-level processes for device provisioning.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/provisioning-device-service.svg
 levels:
 - intermediate
 roles:
