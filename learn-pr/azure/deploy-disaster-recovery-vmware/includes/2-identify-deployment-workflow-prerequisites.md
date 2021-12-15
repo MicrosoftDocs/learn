@@ -66,8 +66,6 @@ Before you can deploy protection for your on-premises VMware vCenter site to the
 
 - The recovery site must have hardware, network, and storage resources that can support the same VMs and workloads as the protected site. Azure VMware Solution offers this functionality with dynamic scaling.
 
-Note: For more information review the article [Configure a DNS forwarder in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-vmware/configure-dns-azure-vmware-solution).
-
 ### Scenario 2: Primary Azure VMware Solution to a secondary Azure VMware Solution
 
 This scenario is similar to the first, except that both the protection and recovery sites run in different Azure regions. You must deploy Azure VMware Solution in a private cloud in both the primary and secondary region. in addition, both regions must be connected with the ExpressRoute Global Reach. Both sites must include VMware SRM and vSphere Replication appliances.
