@@ -1,7 +1,5 @@
 Now that you have your development environment set up, you'll explore the structure of a Blazor project and learn how to add new pages.
 
-
-
 ## What is Razor?
 
 Razor is a markup syntax that uses HTML and C# for writing UI components of Blazor web apps.
@@ -18,7 +16,7 @@ At compile time, each Razor component is built into a .NET class. The class incl
 
 ## Try the Counter
 
-In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed. 
+In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed.
 
 ![Counter Screenshot.](../media/counter.png)
 
@@ -31,7 +29,7 @@ You can find the implementation of the Counter component at `Pages/Counter.razor
 
 <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+<p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
