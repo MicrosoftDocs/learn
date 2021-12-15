@@ -48,7 +48,7 @@ This mechanism is more secure than environment variables, as those files can be 
 also benefit from the rich Kubernetes ecosystem, and they can be managed by various management tools, including the tools provided by
 your cloud provider.
 
-While Kubernetes secrests are a good solution for Kubernetes, they're also limited to Kubernetes, and lack advanced management capabilities, depending
+While Kubernetes secrets are a good solution for Kubernetes, they're also limited to Kubernetes, and lack advanced management capabilities, depending
 on the tools used to manage the Kubernetes infrastructure.
 
 ## Using a secrets engine
