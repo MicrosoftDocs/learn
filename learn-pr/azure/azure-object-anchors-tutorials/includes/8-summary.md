@@ -1,7 +1,7 @@
 In these Azure Object Anchors tutorials, you learned the fundamentals of Azure Object Anchors and explored the high-level overview of the Object Anchors Runtime SDK.
 You also learned how to retrieve required resources from your Azure Object Anchors account.
-Along with the theory you also were able to use the sample project to create Azure Object Anchors model from your 3D model that exists in physical space.
-you also used the created 3D model for object detection.
+Along with the theory, you also were able to use the sample project to create Azure Object Anchors model from your 3D model that exists in physical space.
+You also used the created 3D model for object detection.
 
 ## Next steps
 
