@@ -8,11 +8,11 @@ When you connect an Azure Virtual Network NAT service to a subnet or subnets in 
 
 The following diagram is a scenario of a virtual network with two subnets. Azure VMs and other services in these subnets don’t have public IP addresses assigned. All outgoing and incoming traffic is routed through the Azure Virtual Network NAT service, which uses either a public IP or a public IP prefix for outbound connections.
 
-:::image type="content" source="../media/4-virtual-network-scenario.png" alt-text=" A virtual network with two subnets that has all traffic routed through Azure Virtual Network NAT, which uses either a public IP or public IP prefix for outbound connections." border="false":::
+:::image type="content" source="../media/4-virtual-network-scenario.svg" alt-text=" A virtual network with two subnets that has all traffic routed through Azure Virtual Network NAT, which uses either a public IP or public IP prefix for outbound connections." border="false":::
 
 In the following diagram, an Azure VM in Subnet A has an instance-level public IP assigned, whereas VMs in Subnet B don’t have public IP addresses. When you deploy Azure Virtual Network NAT in this scenario, inbound traffic directed to VMs in Subnet A will still be directed to an instance-level IP, but all outbound traffic from both Subnet A and Subnet B will be routed through Azure Virtual Network NAT.
 
-:::image type="content" source="../media/4-inbound-outbound.png" alt-text="Diagram depicting inbound and outbound traffic flow for two subnets." border="false":::
+:::image type="content" source="../media/4-inbound-outbound.svg" alt-text="Diagram depicting inbound and outbound traffic flow for two subnets." border="false":::
 
 The following screenshot has an Azure VM that uses 20.107.71.22 as its public IP address that it uses to make inbound RDP connection to the VM. However, its IP address for outbound connections has a different address of 40.68.136.21. This is the public IP address used by the Azure Virtual Network NAT service.
 
