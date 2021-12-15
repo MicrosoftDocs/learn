@@ -13,7 +13,6 @@ By the end of this module, you'll be able to:
 - Execute code under specific conditions using `if`, `else`, and `elif` statements.
 - Combine conditional logic and create more complex conditions using `and` and `or` operators.
 
-## What is the main objective?
+## What is the main objective?
 
 Use conditional logic to create decision-driven programs.
-
