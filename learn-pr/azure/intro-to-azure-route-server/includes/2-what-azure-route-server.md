@@ -9,12 +9,12 @@ Routers as network devices don’t just forward the traffic between various netw
 - Routing Information Protocol (RIP)
 - Open shortest path first (OSPF)
 - External Gateway Protocol (EGP)
-- BGP
+- Border Gateway Protocol (BGP)
 
 > [!NOTE]
 > In local networks, you can use RIP or OSPF, but on the internet, most routers use BGP.
 
-BGP is the most common routing protocol on the internet. In routing protocol classification, BGP is classified as a *distance path vector protocol*. BGP was designed primarily to replace EGP, to provide a decentralized approach to routing. The BGP uses the best path selection algorithm to select the best routes for data packet transfers. When a packet comes to the router, it uses BGP to review all the available paths along which the data could travel. It then picks the best route, which usually means that packet will be routed between several autonomous network systems. Azure Route Server uses BGP to exchange routes with other network devices, primarily network appliances.
+BGP is the most common routing protocol on the internet. In routing protocol classification, BGP is classified as a *distance path vector protocol*. BGP was designed primarily to replace EGP, to provide a decentralized approach to routing. BGP uses the best path selection algorithm to select the best routes for data packet transfers. When a packet comes to the router, it uses BGP to review all the available paths along which the data could travel. It then picks the best route, which usually means that packet will be routed between several autonomous network systems. Azure Route Server uses BGP to exchange routes with other network devices, primarily network appliances.
 
 ## Overview of autonomous systems
 
@@ -22,9 +22,9 @@ An *autonomous system* (AS) is a large network or group of networks that uses a 
 
 Each AS on the internet is registered and has its own pool of IP addresses. Some university networks are also registered as autonomous systems, as are some large companies. The Azure network is also registered as an AS.
 
-Each AS is registered under a specific name, called the *autonomous system number* (ASN). Each ASN is a unique 16 bit number between 1 and 65534, or 32 bit number between 131072 and 4294967294. For example, Microsoft manages the following ASNs: AS8075, AS8068, AS8069 and AS12076. The Azure service has the AS number 65515.
+Each AS is registered under a specific name, called the *autonomous system number* (ASN). Each ASN is a unique 16-bit number between 1 and 65534, or 32-bit number between 131072 and 4294967294. For example, Microsoft manages the following ASNs: AS8075, AS8068, AS8069 and AS12076. The Azure service has the AS number 65515.
 
-When autonomous systems communicate with each other, they use AS numbers. As each AS has its own pool of IP addresses, it uses BGP to announce these IP addresses to other autonomous systems that it connects to. This is a crucial role of an AS and BGP. BGP routers collect this information from AS organizations world-wide and put it into routing tables. BGP routers then use these routing tables to determine the fastest paths from one AS to another. When packets arrive to a router, BGP reviews a routing table to determine which AS the packet should go on to next. Azure Route Server uses ASN to identify the peers with which it exchanges routing information.
+When autonomous systems communicate with each other, they use AS numbers. As each AS has its own pool of IP addresses, it uses BGP to announce these IP addresses to other autonomous systems that it connects to. This is a crucial role of an AS and BGP. BGP routers collect this information from AS organizations worldwide and put it into routing tables. BGP routers then use these routing tables to determine the fastest paths from one AS to another. When packets arrive to a router, BGP reviews a routing table to determine which AS the packet should go on to next. Azure Route Server uses ASN to identify the peers with which it exchanges routing information.
 
 > [!NOTE]
 > Azure Route Server service supports only 16-bit ASNs.
