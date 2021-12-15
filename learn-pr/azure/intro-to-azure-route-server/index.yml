@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Route Server
-summary: Describe Azure Route Server, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
+summary: Describe Microsoft Azure Route Server, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
   By the end of this module, you'll be able to:
     - Describe Azure Route Server.
