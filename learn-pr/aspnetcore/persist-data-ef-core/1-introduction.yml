@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.persist-data-ef-core.1-introduction
+uid: learn.persist-data-ef-core.introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 04/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 12/13/2021
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: learning-dotnet
 title: Introduction
 durationInMinutes: 1
 content: |

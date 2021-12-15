@@ -1091,6 +1091,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/2-plan-azure-files-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/3-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/4-exercise-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/5-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/6-exercise-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-your-azure-virtual-machine-disks/8-summary",
       "redirect_document_id": false
@@ -10864,6 +10904,46 @@
       "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-qna-bot.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-knowledge-base",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/2-setup-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/3-configure-db-connection.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/4-design-domain-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/5-write-crud-queries.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/6-call-crud-queries.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/7-enable-sql-logging.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/8-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/9-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
     }
   ]
 }

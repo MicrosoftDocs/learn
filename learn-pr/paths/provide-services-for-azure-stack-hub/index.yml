@@ -10,7 +10,8 @@ metadata:
   ms.prod: learning-azure
 title: Provide services for Azure Stack Hub
 prerequisites: |
-  None
+  *   Working experience with deploying cloud applications.
+  *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
 summary: |
   This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 iconUrl: /learn/achievements/generic-trophy.svg
