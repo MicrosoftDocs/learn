@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.deploy-disaster-recovery-vmware
+metadata:
+  moduleType: standard
+  title: Deploy disaster recovery with VMware Site Recovery Manager
+  description: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware VMs.
+  ms.date: 12/12/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+title: Deploy disaster recovery with VMware Site Recovery Manager
+summary: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
+abstract: |
+  By the end of this module, you'll be able to:
+  -	Describe how to set up a disaster recovery solution for on-premises VMware to back up to Azure a VMware Solution private cloud.
+  - Describe how to set up a primary Azure VMware Solution to back up to a secondary Azure VMware Solution for private cloud disaster recovery.
+  - Install and configure VMware SRM from Azure VMware Solution Portal on Azure.
+
+prerequisites: |
+  - Basic understanding of disaster recovery concepts.
+  -	Understanding of the VMware infrastructure, such as vSphere, vCenter, NSX-T, and VMware HCX.
+  -	(Optional w/lab option. No sandbox.) Access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - data-engineer
+  - solution-architect
+products:
+  - microsoft-azure-vmware-solution
+  -	vmware-site-recovery-manager
+  - vsphere-replication
+
+units:
+- learn.azure.back-up-private-cloud-vms.1-introduction
+- learn.azure.back-up-private-cloud-vms.2-identify-deployment-workflow-prerequisites
+- learn.azure.back-up-private-cloud-vms.3-install-srm-azure-vmware-solution
+- learn.azure.back-up-private-cloud-vms.4-install-vsphere-replication-appliance
+- learn.azure.back-up-private-cloud-vms.5-configure-vcenter-site-pairing
+- learn.azure.back-up-private-cloud-vms.6-knowledge-check
+- learn.azure.back-up-private-cloud-vms.7-summary
+badge:
+  uid: deploy-disaster-recovery-vmware
