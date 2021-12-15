@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-disaster-recovery-vmware.5-configure-vcenter-site-pairing
+title: Configure vCenter site pairing
+metadata:
+  unitType: learning-content
+  title: Configure vCenter site pairing
+  description: This unit details the steps to configure vCenter site pairing.
+  ms.date: 12/12/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-configure-vcenter-site-pairing.md)]
