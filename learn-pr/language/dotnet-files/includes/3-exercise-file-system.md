@@ -19,26 +19,26 @@ A starter project has already been created for you. You'll clone it using the in
 
 1. (Optional) In the TERMINAL window, change to a directory you want to copy the files to, such as `c:\MyProjects`.
 
-1. In the TERMINAL window, run the following command to clone the starter project and go to the cloned project.
+1. In the TERMINAL window, run the following command to clone the starter project and go to the cloned project:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Run the following command to Create a new .NET Console project.
+1. Run the following command to Create a new .NET Console project:
 
     ```cmd
     dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
-1. Run the following command to open the new .NET project in the same instance of Visual Studio Code.
+1. Run the following command to open the new .NET project in the same instance of Visual Studio Code:
 
     ```cmd
     code -a .
     ```
 
    > [!TIP]
-   > At this point Visual Studio Code may prompt you that required assets to build and run the project are missing.
+   > At this point, Visual Studio Code may prompt you that required assets to build and run the project are missing.
    >
    >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from the project.":::
    >
@@ -58,7 +58,7 @@ The following tasks will create a program to find all the sales.json files in al
 
     :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot of the Explorer window highlighting the program.cs file.":::
 
-1. Paste the following code into the first line of the `Program.cs`file to import the `System.IO` and `System.Collections.Generic` namespaces.
+1. Paste the following code into the first line of the `Program.cs`file to import the `System.IO` and `System.Collections.Generic` namespaces:
 
     ```csharp
     using System.IO;
@@ -66,14 +66,14 @@ The following tasks will create a program to find all the sales.json files in al
     ```
 
 > [!NOTE]
-> Starting with .NET 6 the two statements in the above code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net6.0` flag when we created a new console project, they are implicitly added; however, if you are working with an older project, they need to be included in the `Program.cs` file--and it doesn't affect this project if you leave them in the file.
+> Starting with .NET 6, the two statements in the above code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net6.0` flag when we created a new console project, they are implicitly added. However, if you're working with an older project, they need to be included in the `Program.cs` file, and it doesn't affect this project if you leave them in the file.
 
 
 ### Write a function to find the sales.json files
 
 Create a new function called `FindFiles` that takes a `folderName` parameter.
 
-1. Replace the **Console.WriteLine("Hello, World!");** line with the following code. 
+1. Replace the **Console.WriteLine("Hello, World!");** line with the following code: 
 
     ```csharp
     IEnumerable<string> FindFiles(string folderName)
@@ -110,13 +110,13 @@ Create a new function called `FindFiles` that takes a `folderName` parameter.
 
 ## Run the program
 
-1. Enter the following command in the terminal window to run the program.
+1. Enter the following command in the terminal window to run the program:
 
     ```bash
     dotnet run
     ```
 
-1. The program should show the following output.
+1. The program should show the following output:
 
     ```bash
     stores/sales.json
