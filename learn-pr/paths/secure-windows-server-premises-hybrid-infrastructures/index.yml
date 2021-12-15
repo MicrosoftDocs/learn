@@ -29,7 +29,7 @@ products:
 - azure-active-directory
 - windows-server
 modules:
-- learn.wwl.implement-hybrid-file-server-infrastructure
+- learn.wwl.implement-windows-server-iaas-vm-network-security
 - learn.wwl.audit-security-of-windows-server-iaas-vms
 - learn.wwl.manage-azure-updates
 - learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
