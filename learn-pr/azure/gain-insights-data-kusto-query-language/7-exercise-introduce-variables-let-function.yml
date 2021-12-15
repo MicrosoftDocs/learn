@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-exercise-introduce-variables-let-function.md)]
+  [!include[](includes/7-exercise-introduce-variables-let-function.md)]

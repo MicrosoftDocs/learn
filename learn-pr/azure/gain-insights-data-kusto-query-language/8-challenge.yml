@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-challenge.md)]
+  [!include[](includes/8-challenge.md)]
