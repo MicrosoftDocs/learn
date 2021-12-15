@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "Whether or not the transaction is capable of being committed."
       isCorrect: true
-      explanation: "Correct. ACT_STATE shows that there is an active user transaction and whether it is capable of being committed."
+      explanation: "Correct. XACT_STATE shows that there is an active user transaction and whether it is capable of being committed."
     - content: "Whether or not the transaction has been rolled back."
       isCorrect: false
       explanation: "That's incorrect. XACT_STATE will show that an error occurred that will cause an active user transaction to fail, it does not indicate that the transaction has been rolled back."
