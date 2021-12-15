@@ -83,7 +83,7 @@ The following parameters are required to create an Event Hub:
   - Contains only letters, numbers, periods, hyphens, and underscores.
   - Starts and ends with a letter or number.
 - **Partition count** -  The number of partitions required in an event hub (between 2 and 32 for the standard tier). The partition count should be directly related to the expected number of concurrent consumers and can't be changed after the hub has been created. The partition separates the message stream so that consumer or receiver apps only need to read a specific subset of the data stream. If not defined, the value defaults to *4*.
-- **Message retention** - The number of days (1 to 7 for the standar tier) that messages will remain available if the data stream needs to be replayed for any reason. If not defined, this value defaults to *7*.
+- **Message retention** - The number of days (1 to 7 for the standard tier) that messages will remain available if the data stream needs to be replayed for any reason. If not defined, this value defaults to *7*.
 
 You can also optionally configure an event hub to stream data to Azure Blob Storage or an Azure Data Lake Storage.
 
