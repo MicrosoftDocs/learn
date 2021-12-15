@@ -1,10 +1,10 @@
 Now that you understand the use case scenarios for object storage, you can explore how to access data from users or client applications. Blob Storage supports multiple protocols for data access.
 
-### Multiprotocol access for object storage
+## Multiprotocol access for object storage
 
 By enabling multiprotocol support for data that resides in Blob Storage, your company can eliminate data silos, which occur when different data sources are stored in separate locations. Your company will also no longer need to refactor the data prior to moving it to the cloud. This is because Blob Storage provides users the ability to choose different tools to work directly with all the data they need. 
 
-:::image type="content" source="../media/3-azure-blob-storage-architecture.png" alt-text="Illustration depicting Azure Blob Storage and the supported protocols used to access data stored in a hierarchical file system.":::
+:::image type="content" source="../media/3-azure-blob-storage-architecture.svg" alt-text="Illustration depicting Azure Blob Storage and the supported protocols used to access data stored in a hierarchical file system.":::
 
 ### REST protocol support for Azure Blob Storage
 
@@ -20,27 +20,26 @@ Azure Data Lake Storage Gen2 enables you to access a data container by using the
 
 First, establish remote access to services. If you opt to use SSH, you could use the following sample code:
 
-``` 
-#Connect to the cluster via SSH.
+```azurecli 
+# Connect to the cluster via SSH.
 
 ssh sshuser@clustername-ssh.azurehdinsight.net
 
-#Execute basic HDFS commands. Display the hierarchy.
+# Execute basic HDFS commands. Display the hierarchy.
 
 hdfs dfs -ls /
 
-#Create a sample directory.
+# Create a sample directory.
 
 hdfs dfs -mkdir /samplefolder
 
-#Create a container
+# Create a container
 
 hdfs dfs -D "fs.azure.createRemoteFileSystemDuringInitialization=true" -ls abfs://<container-name>@<storage-account-name>.dfs.core.windows.net/
 
-#Get a list of files or directories
+# Get a list of files or directories
 
 hdfs dfs -ls <path>
-
 ```
 
 Your company can maintain the same storage solution for both object storage and analytics storage. You can use existing tools, applications, and services to access data in Blob Storage that have a hierarchical namespace, without having to modify your solution depending on the data.
