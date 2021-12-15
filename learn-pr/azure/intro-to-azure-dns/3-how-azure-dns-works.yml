@@ -5,8 +5,8 @@ metadata:
   title: How Azure DNS works
   description: How Azure DNS works
   ms.date: 12/10/2021
-  author: orthomas
-  ms.author: Orin-Thomas
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
