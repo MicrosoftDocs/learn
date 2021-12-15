@@ -31,9 +31,7 @@ roles:
   - data-engineer
   - solution-architect
 products:
-  - microsoft-azure-vmware-solution
-  -	vmware-site-recovery-manager
-  - vsphere-replication
+  - azure-vmware-solution
 
 units:
 - learn.azure.deploy-disaster-recovery-vmware.1-introduction
