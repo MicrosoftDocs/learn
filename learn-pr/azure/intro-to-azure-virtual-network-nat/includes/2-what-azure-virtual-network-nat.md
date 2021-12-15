@@ -22,7 +22,7 @@ When using NAT, it’s important to understand Transmission Control Protocol (TC
 
 The following diagram depicts the NAT process.
 
-:::image type="content" source="../media/2-network-address-translation.svg" alt-text=" The process of network address translation between a host and server." border="false":::
+:::image type="content" source="../media/2-network-address-translation.svg" alt-text="The process of network address translation between a host and server." border="false":::
 
 > [!NOTE]
 > NAT is mostly used for establishing outbound connections to the internet. However, it cannot directly manage inbound connections from the internet. You need to use different technologies for that purpose.
@@ -38,4 +38,4 @@ To help ensure secure, controllable, and scalable outbound connectivity for Azur
 
 The Azure Virtual Network NAT service then helps securely translate your private IP addresses into a public IP address as the following diagram depicts:
 
-:::image type="content" source="../media/2-network-address-translation-private-public.svg" alt-text=" Azure Virtual Network NAT is assigned to two subnets on a virtual network and translates private IP addresses to public IP. " border="false":::
+:::image type="content" source="../media/2-network-address-translation-private-public.svg" alt-text="Azure Virtual Network NAT is assigned to two subnets on a virtual network and translates private IP addresses to public IP." border="false":::
