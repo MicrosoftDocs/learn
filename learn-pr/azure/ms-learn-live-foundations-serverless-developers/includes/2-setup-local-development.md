@@ -55,7 +55,7 @@ The short version of the instructions is straightforward: run the following comm
 
 If you are planning to dive a bit deeper and explore Angular, debugging support in Visual Studio Code is handy. There are extensions for different browsers.
 
-[Edge debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge)
+[Edge debugger for Angular](https://microsoftedge.microsoft.com/addons/detail/angular-state-inspector/obfnbeenaokodmfahnfejnnalpeonijl)
 
 [Chrome debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
