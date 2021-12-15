@@ -28,33 +28,43 @@ Now you can add some code to the notebook. Let's add a way to display a widget t
 
 First, you need to install a library called [ipywidgets](https://ipywidgets.readthedocs.io/?azure-portal=true). Install the library by adding a new code block under the notebook title block. Use Python's package manager, `pip`, to install the library.
 
-Add this line to the new code block: `pip install ipywidgets`. Run this block using the arrow on the left to install the library.
+1. Add this line to the new code block: `pip install ipywidgets`. 
 
-Then, create a button right in your notebook that, when pressed, will display a message. In a new code block, add the following code:
+   ```bash
+    pip install ipywidgets
+    ``` 
+    
+1. Run this block using the arrow on the left to install the library.
 
-```python
-import ipywidgets as widgets
+   You should see `ipywidgets` being installed. Wait for it to finish before continuing.
 
-ignition = widgets.ToggleButton(
-    value=False,
-    description='Start Engine',
-    button_style='success',
-    tooltip='Engage your Engine',
-    icon='rocket'
-)
+   Then, create a button right in your notebook that, when pressed, will display a message. 
+   
+1. In a new code block, add the following code:
 
-output = widgets.Output()
+   ```python
+   import ipywidgets as widgets
 
-display(ignition, output)
+   ignition = widgets.ToggleButton(
+       value=False,
+       description='Start Engine',
+       button_style='success',
+       tooltip='Engage your Engine',
+       icon='rocket'
+   )
 
-def on_value_change(change):
-    with output:
-        if change['new'] == True:
-            print("engine started!")
-        else:   
-            print("engine stopped")
+   output = widgets.Output()
 
-ignition.observe(on_value_change, names='value')
+   display(ignition, output)
+
+   def on_value_change(change):
+       with output:
+           if change['new'] == True:
+               print("engine started!")
+           else:   
+               print("engine stopped")
+
+   ignition.observe(on_value_change, names='value')
 ```
 
 What's going on here? You use the `ipywidget` library to create a button, and listen for its value to change, printing the observed message. Now your manual is starting to look good, and you can start your ship's engine if it stalls!
