@@ -37,7 +37,7 @@ Then, add `using Newtonsoft.Json` to the top of your class file:
 ```csharp
 using Newtonsoft.Json; 
 ```
-    
+
 And use the `JsonConvert.DeserializeObject` method:
 
 ```csharp
