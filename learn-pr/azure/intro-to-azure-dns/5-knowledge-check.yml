@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: "Knowledge check for intro to Azure DNS."
   ms.date: 12/10/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: orthomas
+  ms.author: Orin-Thomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
