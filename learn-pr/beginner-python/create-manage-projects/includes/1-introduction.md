@@ -6,7 +6,7 @@ As a developer, you are likely to build many programs on one and the same machin
 
 You've written your first programs, they work well, but you are looking to build more advanced programs and to do that you want to make sure you have a good approach moving forward. You want to think of the program you build as more of a project, with the code spread out over many files. If possible, you also want to use libraries written by others to speed up the time of development.
 
-## Learning objectives
+## What will you learn?
 
 By the end of this module, you'll be able to:
 
@@ -15,8 +15,6 @@ By the end of this module, you'll be able to:
 - Use libraries written by someone else.
 - Restore a project from a list of dependencies it consists of.
 
-## Prerequisites
+## What is the main objective?
 
-- Familiar with the terminal.
-- Know how to run commands from the terminal.
-- Recommended to have written a program or two in Python.
+Use libraries and plan your project to create Python programs that are more advanced.

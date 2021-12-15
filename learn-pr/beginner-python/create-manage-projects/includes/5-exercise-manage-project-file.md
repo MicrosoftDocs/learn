@@ -4,7 +4,7 @@ In this exercise, you'll be working on a Python project created by a colleague. 
 
 Before you start, you want to have created a virtual environment and placed yourself in it. By doing so, you've isolated yourself from the rest of your machine. Your environment should be isolated, because you would affect the rest of the machine if you install libraries, which you are about to do.
 
-1. Run `venv env`, to create a virtual environment called "env".
+1. Run `venv env`, to create a virtual environment called "env":
 
    ```bash
    python3 -m venv env
@@ -86,9 +86,9 @@ Congratulations, you've successfully managed to restore a project that had nothi
 
 Imagine the project you created was using an older version of the library `python-dateutil`. Furthermore, you've been asked by your team to only install fixes, meaning to only upgrade its patch version, and not install a major update because that might be risky for your application and potentially could lead to it breaking.
 
-Let's first simulate being on lower version of `python-dateutil`:
+Let's first simulate being on lower version of `python-dateutil`.
 
-1. Run `pip install`
+1. Run `pip install`:
 
    ```bash
    pip install python-dateutil===2.7.4

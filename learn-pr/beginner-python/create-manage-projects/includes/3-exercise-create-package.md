@@ -4,7 +4,7 @@ In this exercise, you are looking to learn how to use virtual environments as a 
 
 Create a virtual environment using `venv`.
 
-1. Run `python3 -m venv env` in your terminal.
+1. Run `python3 -m venv env` in your terminal:
 
    ```bash
    python3 -m venv env
@@ -30,7 +30,7 @@ Create a virtual environment using `venv`.
 
 Now that you are inside of your virtual environment, you can install a library and know that said library will only exist in the virtual environment.
 
-1. Run `pip freeze` to see installed libraries in your environment.
+1. Run `pip freeze` to see installed libraries in your environment:
 
    ```bash
    pip freeze
@@ -67,7 +67,7 @@ Now that you are inside of your virtual environment, you can install a library a
 
 So far, you've created a virtual environment and it's a package on it. However, you might be working on several Python projects and need to change in between them. To do that, you need step out of your virtual environment, which is called to _deactivate_.
 
-1. Run `deactivate`, to leave your virtual environment:
+* Run `deactivate` to leave your virtual environment:
 
    ```bash
    deactivate

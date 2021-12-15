@@ -12,11 +12,15 @@ metadata:
 title: Create and manage projects in Python
 summary: To manage projects, you need a virtual environment, packages that will help you develop faster and a strategy for maintaining packages.
 abstract: |
-  In this module you will:
+  In this module, you will:
   - Create a Python project.
   - Develop and run your code in isolation on a machine.
   - Use libraries written by someone else.
   - Restore a project from a list of dependencies it consists of.
+prerequisites: |
+  - Be familiar with using the terminal.
+  - Know how to run commands from the terminal.
+  - Recommended to have written a program or two in Python.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -25,10 +29,6 @@ roles:
   - student
 products:
   - vs
-prerequisites: |
-  - Familiar with the terminal
-  - Know how to run commands from the terminal
-  - Recommended to have written a program or two in Python
 units:
   - learn.beginner-python.create-manage-projects.introduction
   - learn.beginner-python.create-manage-projects.set-up-project
