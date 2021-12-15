@@ -70,13 +70,13 @@ To create a new Event Hubs namespace, use `az eventhubs namespace` commands. Her
 | Command | Description |
 |---------|-------------|
 | `create` | Creates an Event Hubs namespace. |
-| `authorization-rule` | All event hubs within the same namespace share common connection credentials. You'll need these credentials when you configure apps to send and receive messages using the Event Hub. This command returns the connection string for your Event Hubs namespace. |
+| `authorization-rule` | All event hubs within the same namespace share common connection credentials. You'll need these credentials when you configure apps to send and receive messages using the event hub. This command returns the connection string for your Event Hubs namespace. |
 
 ### Configure a new event hub
 
 After you create an Event Hubs namespace, you can create an event hub. When creating an event Hub, there are several mandatory parameters.
 
-The following parameters are required to create an Event Hub:
+The following parameters are required to create an event hub:
 
 - **Event hub name** - Event hub name that is unique within your subscription and:
   - Is between 1 and 50 characters.
