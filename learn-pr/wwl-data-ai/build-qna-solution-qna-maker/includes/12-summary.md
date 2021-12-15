@@ -11,4 +11,4 @@ Now that you've completed this module, you can:
 - Implement active learning.
 - Create a question answering bot.
 
-To learn more about the QnA Maker service, see the [Question answering documentation](/azure/cognitive-services/language-service/question-answering/overview).
+To learn more about the question answering capability of the Language service, see the [Question answering documentation](/azure/cognitive-services/language-service/question-answering/overview).
