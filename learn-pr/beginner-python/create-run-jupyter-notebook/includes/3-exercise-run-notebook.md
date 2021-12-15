@@ -10,7 +10,7 @@ On your local computer, create a file called `ship-manual.ipynb`. You can create
 
 ## Create a document element in Markdown
 
-At the top of the notebook, you see two options to create two different types of content blocks in the notebook: Markdown and runnable code. Your first task is to create a document title. At the top of the notebook interface in Visual Studio Code, select the plus button next to "Markdown". A box will appear. Add the following Markdown to the box:
+At the top of the notebook, you see two options to create two different types of content blocks in the notebook: Markdown and runnable code. Your first task is to create a document title. At the top of the notebook interface in Visual Studio Code, select the plus button next to **Markdown**. A box will appear. Add the following Markdown to the box:
 
 `# Ship's Instruction Manual`
 
@@ -32,14 +32,14 @@ First, you need to install a library called [ipywidgets](https://ipywidgets.read
 
    ```bash
     pip install ipywidgets
-    ``` 
-    
+    ```
+
 1. Run this block using the arrow on the left to install the library.
 
    You should see `ipywidgets` being installed. Wait for it to finish before continuing.
 
    Then, create a button right in your notebook that, when pressed, will display a message. 
-   
+
 1. In a new code block, add the following code:
 
    ```python
@@ -65,7 +65,6 @@ First, you need to install a library called [ipywidgets](https://ipywidgets.read
                print("engine stopped")
 
    ignition.observe(on_value_change, names='value')
-```
 
 What's going on here? You use the `ipywidget` library to create a button, and listen for its value to change, printing the observed message. Now your manual is starting to look good, and you can start your ship's engine if it stalls!
 

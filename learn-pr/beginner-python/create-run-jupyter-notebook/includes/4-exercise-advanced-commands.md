@@ -10,8 +10,9 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
 
    ```md
    ## Oxygen levels
-
-   Display ten minutes of oxygen levels in your ship
+   
+   Display ten minutes of oxygen levels in your ship.
+   ```
 
 1. Create a new code block and import two libraries `numpy` and `matplotlib`, using them to build a bar chart:
 
@@ -23,11 +24,12 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
 
    plt.bar(range(len(oxy_nums)), oxy_nums)
    plt.show()
+   ```
 
    > [!TIP]
    > If you are a new user of Python, you might need to install **numpy**, matplotlib, and other libraries not yet installed on your system. To do this, use an activated virtual environment, and type `pip install numpy` in a code block and run it. Do this for each library you need to install.
    >
-   > Of course, this data is a mockup of real data using **numpy** to create an array of 100 integers between 1-10.
+   > Of course, this data is a mockup of real data using **numpy** to create an array of 100 integers between 1 and 10.
 
    Your bar chart looks like this:
 
@@ -45,7 +47,8 @@ Next, you want to show the time that your ship needs to take to get up to a good
    ```md
    ## Ship's velocity
 
-   Show the seconds needed needed to get from zero to 60 meters per second, given the ship's acceleration in meters per second.
+   Show the seconds needed needed to get from 0 to 60 meters per second, given the ship's acceleration in meters per second.
+   ```
 
 1. Add a code block for the equation:
 
@@ -56,11 +59,12 @@ Next, you want to show the time that your ship needs to take to get up to a good
  
    time = (endVelocity - startVelocity) / acceleration
    print("Time to reach desired velocity = ", time)
-```
+   ```
 
-1. Run the code block to determine how long it will take to reach your desired velocity. 
+1. Run the code block to determine how long it will take to reach your desired velocity.
 1. Tweak the start and end velocity values or the acceleration to determine how your spaceship will perform.
-   > [!TIP] 
-   > try adding some different values for your variables to see how it affects the outcome of the equation
+
+   > [!TIP]
+   > Try adding some different values for your variables to see how they affect the outcome of the equation.
 
 Congratulations! You have successfully created a ship's manual that shows some useful information about your spaceship. Since everything is contained in a Jupyter notebook, you won't have any difficulty keeping track of it, as it's all well-annotated and nicely displayed. It even includes an ignition switch! Jupyter notebooks are a useful way to display all kinds of data and even small user interfaces.
