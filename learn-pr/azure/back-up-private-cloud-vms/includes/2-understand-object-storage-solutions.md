@@ -12,15 +12,13 @@ Common Blob Storage uses include:
 
 - Streaming video and audio.
 
-- Storing data for backup and restore, disaster recovery, and archiving.3e
+- Storing data for backup and restore, disaster recovery, and archiving.
 
 - Storing data for analysis by an on-premises or Azure-hosted service.
 
-
-
 ### Understand hierarchical namespace support in Azure Blob Storage
 
-You can organize objects from Blob Storage into a hierarchy of directories and nested subdirectories known as a hierarchical namespace. Blob Storage that is enabled for a hierarchical namespace provides file system semantics similar to the computer system, and you can use this storage with analytics engines and frameworks. 
+You can organize objects from Blob Storage into a hierarchy of directories and nested subdirectories known as a hierarchical namespace. Blob Storage that is enabled for a hierarchical namespace provides file system semantics similar to the computer system, and you can use this storage with analytics engines and frameworks.
 
 With a hierarchical namespace enabled on a storage account, you can achieve the following benefits:
 
@@ -31,7 +29,6 @@ With a hierarchical namespace enabled on a storage account, you can achieve the 
 
 
 - Familiar interface style. File systems with a hierarchical namespace is widely accepted by the developer community and is suitable for storage workloads that are designed for file systems that manipulate directories.
-
 
 ## Understand Azure Data Lake Storage Gen2
 
