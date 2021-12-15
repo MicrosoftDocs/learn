@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gain-insights-data-kql.exercise-connect-to-resources
-title: Exercise: Connect to resources
+title: "Exercise: Connect to resources"
 metadata:
-  unitType: {{patternType}}
+  unitType: exercise
   title: exercise connect to resources
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 12/15/2021
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: azure-data-explorer
 durationInMinutes: 1
 content: |
   [!include[](includes/3-exercise-connect-to-resources.md)]

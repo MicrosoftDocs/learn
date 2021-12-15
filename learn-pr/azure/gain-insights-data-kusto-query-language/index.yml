@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Gain insights in your data using Kusto Query Language
   description: "Gain insights in your data using the Kusto Query Language"
-  ms.date: 12/08/2021
+  ms.date: 12/15/2021
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
@@ -31,6 +31,7 @@ roles:
   - security-operations-analyst
 products: 
 - azure-data-explorer
+- azure
 units:
 - learn.azure.gain-insights-data-kql.introduction
 - learn.azure.gain-insights-data-kql.group-data-aggregation-functions
