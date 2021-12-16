@@ -4,10 +4,9 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. That's a lot of individual storms, and it can be difficult to gain meaningful insights by looking at individual events.
 
-To group these events, we'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, if you want to count the events by state, you'll write a query to `summarize` `count` by `state`. In fact, this is pretty much what the query looks like. The aggregation function you'll use is called `count()`, which does exactly what it says and counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*. 
+To group these events, we'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, this is pretty much what the query looks like. The aggregation function you'll use is called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
 
 1. Copy and paste the query into your query editor. 
-
 
     [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVQALOeeX5pXYJoNIDU2FpEqF4JLEklSQuvyiEhAfoQoAiCAatkgAAAA=)
 
@@ -23,33 +22,46 @@ To group these events, we'll use the `summarize` operator. Summarize is used for
     :::image type="content" source="../media/4-count-1.png" alt-text="Screenshot of count operator usage and results.":::
     
 
-[Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==)
+## Use the `dcount` and `countif` operators
 
-```kusto
-StormEvents
-| summarize count(),
-    EventsWithDamageToCrops = countif(DamageCrops > 0),
-    dcount(EventType) by State
-| sort by count_
-```
+The above query returned the number of events per state. There are, however, more sophisticate ways to count events. For example, we could count only certain types of events. The `countif()` operator counts records for which a predicate is true. You can use it to count the number of events that cause damage to crops.
 
-You should get results that look like the following image:
+You may want to count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set. 
 
-:::image type="content" source="../media/4-count.png" alt-text="Screenshot of Kusto query that counts events by state.":::
+The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and must be grouped by the same column, in this case *State*.
 
-Whoa that’s a lot of different kinds of storms. Let’s look at them individually.
+1. Run the following query:
 
+    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==)
+    
+    ```kusto
+    StormEvents
+    | summarize count(),
+        EventsWithDamageToCrops = countif(DamageCrops > 0),
+        dcount(EventType) by State
+    | sort by count_
+    ```
+    
+    You should get results that look like the following image:
+
+    :::image type="content" source="../media/4-count.png" alt-text="Screenshot of Kusto query that counts events by state.":::
+
+1. Notice the column names in the results. Which part of the query corresponds to each column? How many different kinds of storms occurred in Texas?
 
 ## Use the `distinct` operator
 
-[Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSMksLsnMSy5RAIuEVBakAgWL84tKFJIqEWIKicXJAGL0i684AAAA)
+The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms - maybe you'd like to drill down even further to explore these events. Use the `distinct` operator to list the distinct values of a particular column.
 
-```kusto
-StormEvents
-| distinct EventType
-| sort by EventType asc
-```
+1. Run the following query: 
 
-You should get results that look like the following image:
-
-:::image type="content" source="../media/4-distinct.png" alt-text="Screenshot of Kusto query using the distinct operator.":::
+    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSMksLsnMSy5RAIuEVBakAgWL84tKFJIqEWIKicXJAGL0i684AAAA)
+    
+    ```kusto
+    StormEvents
+    | distinct EventType
+    | sort by EventType asc
+    ```
+    
+    You should get results that look like the following image:
+    
+    :::image type="content" source="../media/4-distinct.png" alt-text="Screenshot of Kusto query using the distinct operator.":::
