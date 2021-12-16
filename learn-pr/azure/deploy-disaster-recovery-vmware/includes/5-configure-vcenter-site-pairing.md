@@ -33,19 +33,7 @@ After you configure the VMware SRM, you should connect both instances of VMware 
 
 > [!NOTE]
 > The following ports should be open to provide cloud-to-cloud recovery: 
-- 80
-- 443
-- 902
-- 1433
-- 1521
-- 1526
-- 5480
-- 8123
-- 9086
-- 31031
-- 32032
-- 8043
-- 10000-10010
+> 80, 443, 902, 1433, 1521, 1526, 5480, 8123, 9086, 31031, 32032, 8043, and 10000-10010
 
 ### Configure mappings between sites
 
