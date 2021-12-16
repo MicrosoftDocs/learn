@@ -7,7 +7,7 @@ You’ve explored the various deployment scenarios for Azure Virtual Network NAT
 
 You now understand how Azure Virtual Network NAT helps organizations to improve the security and reliability of their infrastructure for outbound connections from Azure resources.
 
-## Further learning links
+## References
 
 For more information, refer to:
 
