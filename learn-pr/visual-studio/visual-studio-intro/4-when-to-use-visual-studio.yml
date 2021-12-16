@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-intro.4-when-to-use-visual-studio
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  author: kendrahavens
+  ms.author: kehavens
+  ms.date: 12/15/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-when-to-use-visual-studio.md)]

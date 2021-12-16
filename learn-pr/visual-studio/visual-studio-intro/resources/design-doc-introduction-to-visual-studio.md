@@ -51,11 +51,11 @@ Identify the subtasks of *Introduction to Visual Studio*
 | Subtask             | What part of the introduction scenario does this subtask satisfy?              | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 |----------------------|-----------------------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------------|--|
 | Introduction | Teaser for module describing units | None | 1 |Yes|
-| What is Visual Studio| Explain what Visual Studio is and how it differs from Visual Studio Code | Knowledge Check | 1 | Yes |
-| How Visual Studio works | Edit code and Debug, Customization and extensions, Connecting your IDE | Knowledge Check | 2-4 |Yes |
-| When to use Visual Studio | Use Visual Studio if you want a fully integrated development experience on your local machine | Knowledge Check | None  |Yes |
+| What is Visual Studio| Explain what Visual Studio is and how it differs from Visual Studio Code | Knowledge Check (at end) | 1 | Yes |
+| What's in Visual Studio? | Edit code and Debug, Customization and extensions, Connecting your IDE | Knowledge Check (at end) | 2-4 |Yes |
+| When to use Visual Studio | Use Visual Studio if you want a fully integrated development experience on your local machine | Knowledge Check (at end) | None  |Yes |
 | Knowledge check| Small quiz on different aspects of the IDE | Knowledge Check | 1-4  |Yes |
-| Summary| Reviews learnings and links to other modules in learning path | Knowledge Check | 1-4  |Yes |
+| Summary| Reviews learnings and links to other modules in learning path | None | 1-4  |Yes |
 
 ## Outline the units
 
@@ -74,7 +74,7 @@ Identify the subtasks of *Introduction to Visual Studio*
 - Millions of developers all over the world have logged a significant number of hours in Visual Studio. So, over the years, a lot has gone in to making it nice. Imagine working in the same office for years for 40 hours a week! You end up sprucing up the place little by little to make you the most productive. All the features may be a little overwhelming to new users, but hopefully after this learning path you’ll feel a little more at home.
 - So with that, Visual Studio is one of the most popular editing environments and that’s not just me saying it, stackoverflow’s annual developer surveys reported us at #2 on most popular and Visual Studio Code is #1!
 
-1. **How Visual Studio works**
+1. **What's in Visual Studio?**
 
     List the content that will enable the learner to *familiarize themselves with the main features of Visual Studio that millions of developers use everyday in their full-time jobs such as the editor and the debugger.*:
 
@@ -105,6 +105,12 @@ Identify the subtasks of *Introduction to Visual Studio*
         - Publish to Azure so your website is live
         - Connecting Azure account
         - Other Git and pipeline tools
+
+1. **When to use Visual Studio**
+
+    List the content that will enable the learner to *know when to use Visual Studio.*
+
+    - Use Visual Studio if you want a fully integrated development experience on your local machine.
 
 1. **Knowledge check**
 

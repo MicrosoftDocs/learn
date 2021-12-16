@@ -1,0 +1,5 @@
+There are a lot of options for IDEs out there. You should choose what works best for you! Plenty of developers have both Visual Studio and Visual Studio Code installed and use each for different tasks. The important thing is making sure you have the tools that make you the most productive.
+
+I strongly recommend using Visual Studio if you are beginning C# or C++ developer. The tooling for these languages is first-class and lots of hints are built-in just to keep new users on track. Features like helping you find the right templates with good descriptions when you are creating a different app type (like mobile, gaming, IOT, etc.), versioning help, managing your project properties, or creating git repos are all just small helpful things Visual Studio can do for you.
+
+That's all to say, use Visual Studio if you want a fully integrated development experience on your local machine. The Community edition is free for students, open-source contributors, and individuals! There is a Professional license developers working in teams as well as an Enterprise license that gets even more features packed into the IDE.

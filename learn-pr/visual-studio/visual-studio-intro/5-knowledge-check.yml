@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-intro.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 12/15/2021
+  author: kendrahavens
+  ms.author: kehavens
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: First question
+      choices:
+        - content: first choice
+          isCorrect: true
+          explanation: Correct. because reasons
+        - content: second choice
+          isCorrect: false
+        - content: third choice
+          isCorrect: false
+        - content: fourth choice
+          isCorrect: false
+          explanation: Incorrect. because reasons
