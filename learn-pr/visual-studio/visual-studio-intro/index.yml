@@ -24,7 +24,7 @@ levels:
 roles:
   - developer
 products:
-  visual-studio
+  - vs
 units:
   - learn.visual-studio.visual-studio-intro.1-introduction
   - learn.visual-studio.visual-studio-intro.2-what-is-visual-studio
