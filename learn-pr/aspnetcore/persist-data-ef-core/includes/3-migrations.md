@@ -13,7 +13,7 @@ In this unit, you'll create C# entity classes that will map to tables in a local
 
     The preceding command creates a local copy of the starter code repository. The app manages pizzas, their toppings, and their sauces.
 
-1. Switch to the directory you cloned and open it in Visual Studio Code.
+1. Switch to the `ContosoPizza` directory in the repository you cloned and open it in Visual Studio Code.
 
     ```cmd
     cd mslearn-persist-data-ef-core\ContosoPizza
