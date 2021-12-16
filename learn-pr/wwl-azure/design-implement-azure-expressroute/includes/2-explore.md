@@ -102,7 +102,7 @@ In this scenario, BFD can help. BFD provides low-overhead link failure detection
 
 The following diagram shows the benefit of enabling BFD over an ExpressRoute circuit:
 
-:::image type="content" source="../media/bfd-need-6f1a22c9.png" alt-text="Bidirectional flow between partner or customer edge and Microsoft edge.":::
+:::image type="content" source="../media/bfd-need-6f1a22c9.png" alt-text="Bidirectional flow between partner or customer edge and Microsoft Edge.":::
 
 
 **Enabling BFD**
