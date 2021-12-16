@@ -54,9 +54,7 @@ Before you can deploy protection for your on-premises VMware vCenter site to the
 
   - Azure Virtual WAN
 
-  [!NOTE] 
-
-  We recommend at least 2 gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
+  [!NOTE] We recommend at least 2 gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
 
 - Name resolution: You must implement Domain Name System (DNS) resolution between on-premises SRM and virtual cloud appliances. You can use both public DNS and private DNS. With a support request, you can configure private DNS for Azure VMware Solution with appropriate conditional forwarding rules.
 
@@ -71,7 +69,3 @@ Before you can deploy protection for your on-premises VMware vCenter site to the
 This scenario is similar to the first, except that both the protection and recovery sites run in different Azure regions. You must deploy Azure VMware Solution in a private cloud in both the primary and secondary region. in addition, both regions must be connected with the ExpressRoute Global Reach. Both sites must include VMware SRM and vSphere Replication appliances.
 
 The next unit explains how to set up and configure this scenario.
-
-
-
- 
