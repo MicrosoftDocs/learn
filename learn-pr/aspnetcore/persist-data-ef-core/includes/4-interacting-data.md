@@ -288,7 +288,7 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
 
     - The `CreateDbIfNotExists` method is defined as an extension of `IHost`.
     - A reference to the `PizzaContext` service is created.
-    - <xref:DatabaseFacade.EnsureCreated?displayProperty=nameWithType> ensures the database exists.
+    - [EnsureCreated](/ef/core/managing-schemas/ensure-created#ensurecreated) ensures the database exists.
 
         > [!IMPORTANT]
         > `EnsureCreated` creates a new database if one doesn't exist. The new database is not configured for migrations, so use this with caution.
