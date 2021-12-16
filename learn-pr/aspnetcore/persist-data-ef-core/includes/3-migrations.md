@@ -32,7 +32,7 @@ In this unit, you'll create C# entity classes that will map to tables in a local
         - A topping may be used on one or many pizzas.
         - A pizza may have one sauce, but a sauce may be used on many pizzas.
 
-1. Open a Visual Studio Code terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>). Switch the *ContosoPizza* folder and build the app with the following commands:
+1. Open a Visual Studio Code terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>). Build the app with the following command:
 
     ```dotnetcli
     dotnet build
