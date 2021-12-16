@@ -50,7 +50,7 @@ Before you start, you need to add the required packages.
     dotnet add package Microsoft.EntityFrameworkCore.Sqlite
     ```
 
-    This command adds the NuGet package that contains the EF Core Sqlite database provider and all its dependencies.
+    This command adds the NuGet package that contains the EF Core Sqlite database provider and all its dependencies, including the common EF Core services.
 
 1. From the terminal, run the following command:
 
@@ -67,6 +67,9 @@ Before you start, you need to add the required packages.
     ```
 
     This command installs `dotnet ef`, the tool you'll use to create migrations and scaffolding.
+
+    > [!TIP]
+    > If `dotnet ef` is already installed, you can update it with `dotnet tool update --global dotnet-ef`.
 
 ## Wire up models and DbContext
 
@@ -96,6 +99,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     In the preceding code:
 
+    - The constructor accepts a parameter of type `DbContextOptions<PizzaContext>`. This 
     - The `DbSet<T>` properties correspond to tables to be created in the database.
     - The table names will match the `DbSet<T>` property names in the `PizzaContext` class. This behavior can be overridden if needed.
     - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.
@@ -186,6 +190,11 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 ## Change the model and update the database schema
 
+Your manager at Contoso Pizza has given you some new requirements that force you to change your entity models. In the following steps, you're going to modify the models using data annotations.
+
+> [!TIP]
+> Instead of data annotations, you can use [pre-convention model configuration](/ef/core/what-is-new/ef-core-6.0/whatsnew#pre-convention-model-configuration) to define rules that apply to multiple properties.
+
 1. In *Models\Pizza.cs*, make the following changes:
 
     1. Add a `using` directive for `System.ComponentModel.DataAnnotations`.
@@ -244,7 +253,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
         > [!NOTE]
-        > This is to prevent `Topping` entities from including the `Pizzas` property when serializing to JSON. Without this, serializing a collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
+        > This is to prevent `Topping` entities from including the `Pizzas` property when the web API code serializes the response to JSON. Without this, a serialized collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -268,6 +277,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     ```
 
 1. Save all your changes and build.
+
 1. Run the following command to generate a migration for creating the database tables:
 
     ```dotnetcli
@@ -295,7 +305,7 @@ EF Core created a database for your app. Let's take a look inside the database.
         - `Calories` is defined as a `TEXT` column because Sqlite doesn't have a matching `decimal` type.
         - Similarly, `IsVegan` is defined as an `INTEGER` column. Sqlite doesn't define a `bool` type.
         - In both cases, EF Core manages the translation.
-    - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint. EF Core will enforce the length validation, however.
+    - The `Name` column in each table has been marked `NOT NULL`, but Sqlite doesn't have a `MaxLength` constraint.
 
     > [!TIP]
     > EF Core database providers handle mapping model schema to a particular database's features. While Sqlite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
