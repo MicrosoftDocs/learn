@@ -73,10 +73,10 @@ To turn the names returned by this method into URLs, the names this method retur
 
 One of the features in your app requires getting a list of blobs. You'll use the pattern previously shown to list all the blobs in our container and get the name of each blob.
 
-Using the editor, replace `listFiles` in `BlobStorage.java` with the following code, and save your changes.
+Using the editor, replace `listNames` in `BlobStorage.java` with the following code, and save your changes.
 
 ```java
-public List<String> listFiles() {
+public List<String> listNames() {
     return blobContainerClient.listBlobs()
       .stream()
       .map(BlobItem::getName)

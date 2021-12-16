@@ -205,6 +205,7 @@ When it comes to *using* the configuration, the App Service app settings are pas
     ```java
     import java.util.stream.Collectors;
 
+    import com.azure.storage.blob.BlobClient;
     import com.azure.storage.blob.BlobContainerClient;
     import com.azure.storage.blob.BlobServiceClient;
     import com.azure.storage.blob.BlobServiceClientBuilder;

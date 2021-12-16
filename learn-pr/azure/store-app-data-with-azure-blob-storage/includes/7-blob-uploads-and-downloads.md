@@ -80,6 +80,17 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 ::: zone pivot="java"
 
+- To upload a blob, you'll implement the `BlobStorage.save` method.  First, you will get a `BlobClient` object that represents the blob by calling `getBlobClient` on a `BlobContainerClient`. Then, you will use the `upload` method on the `BlobClient` to save the `InputStream` of data passed to this method up to Blob Storage.
+
+    In the editor, in `BlobStorage.java`, replace `save` with the following code.
+
+    ```java
+    public void save(String name, InputStream inputStream, long contentLength) {
+        BlobClient blobClient = blobContainerClient.getBlobClient(name);
+        blobClient.upload(inputStream, contentLength);
+    }
+    ```
+
 ::: zone-end
 
 ### Download
