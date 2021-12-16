@@ -9,6 +9,7 @@ metadata:
   author: LBN-commits
   ms.author: v-lanai
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-implement-datacenter-firewall-azure-stack-hci.md)]
