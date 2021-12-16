@@ -40,7 +40,7 @@ To evaluate Datacenter Firewall functionality, consider creating an ACL containi
 
 The following table illustrates the settings to create the rule that allows all inbound traffic.
 
-   |Source Address Prefix|Destination Address Prefix|Protocol|Source Port|Destination Port|Type|Action|Priority|
+   |Source address prefix|Destination address prefix|Protocol|Source port|Destination port|Type|Action|Priority|
    |--|--|--|--|--|--|--|--|
    |\*|\*|ALL|\*|\*|Inbound|Allow|1000|
 
@@ -48,7 +48,7 @@ The following table illustrates the settings to create the rule that allows all 
 
 With the custom allow rule in place, you can identify the types of traffic you want to block. For example, you might want to restrict connectivity via Windows Remote Management (WinRM) across subnets. This type of restriction limits the potential impact of an exploit that employs a lateral movement technique following a compromise of a single VM. Let's assume that you intend to permit WinRM connectivity within the same subnet. In the following table, the new rule is based on the assumption that the subnet from which the connections would originate has the IP address range of **192.168.0.0/24**.
 
-   |Source Address Prefix|Destination Address Prefix|Protocol|Source Port|Destination Port|Type|Action|Priority|
+   |Source address prefix|Destination address prefix|Protocol|Source port|Destination port|Type|Action|Priority|
    |--|--|--|--|--|--|--|--|
    |192.168.0.0/24|\*|TCP|\*|5985,5986|Inbound|Block|500|
    |\*|\*|ALL|\*|\*|Inbound|Allow|1000|
