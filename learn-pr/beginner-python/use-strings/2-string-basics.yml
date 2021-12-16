@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-strings.string-basics
+title: String basics in Python
+metadata:
+  title: String basics in Python
+  description: This module introduces the basic behavior and characteristics of strings. These core knowledge includes how strings behave and what are some allowed operations.
+  ms.date: 12/02/2021
+  author: alfredodeza
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-string-basics.md)]
