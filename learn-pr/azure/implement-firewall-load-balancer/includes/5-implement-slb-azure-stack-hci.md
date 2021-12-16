@@ -29,7 +29,7 @@ To implement internal load balancing of network traffic across a pool of VMs on 
 1. Configure a health probe that the load balancer will use to determine the health state of the VMs in the backend pool. The health probe employs either TCP or HTTP protocol to validate the operational status of the load-balanced workload. HTTP-based probes offer more flexibility, because they allow you to create custom webpages that implement arbitrary tests that perform the validation. TCP-based probes simply rely on an acknowledgment (ACK) to confirm that each target VM is reachable. If the backend IP isn’t healthy, the load balancer excludes it from distribution of incoming requests.
 1. Create a load-balancing rule that relays traffic arriving at the front-end VIP to one of the backend pool dynamic IPs. For example, the rule might be configured to distribute TCP traffic on port 80 to the same port on the backend pool VMs.
 
-    :::image type="content" source="../media/5-azure-stack-hci-slb-private-vip-rule-create1.png" alt-text="Windows Admin Center New Load Balancing Rule pane.":::
+    :::image type="content" source="../media/5-azure-stack-hci-slb-private-vip-rule-create-1.png" alt-text="Windows Admin Center New Load Balancing Rule pane.":::
 
 > [!NOTE]
 > Ensure that you don’t block traffic to or from the first IP in the subnet for any ACLs that you apply to the backend dynamic IPs, because that’s the origination point for the probes.
