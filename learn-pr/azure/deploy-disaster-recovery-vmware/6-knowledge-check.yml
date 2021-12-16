@@ -9,7 +9,7 @@ metadata:
   author: AnuSridhar-25
   ms.author: v-anursr
   ms.topic: interactive-tutorial
-durationInMinutes: 9
+durationInMinutes: 5
 quiz:
   questions:
   - content: "Your company is considering deploying VMware SRM to provide disaster recovery for their Azure VMware Solution. What is the recommended connection that needs to exist between both the primary and secondary Azure VMware Solution site?"
