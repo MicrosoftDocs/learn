@@ -238,7 +238,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
     To see the running application, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
 
-    :::image type="content" source="../media/7-fileuploader-empty.PNG" alt-text="Screenshot of the FileUploader web application." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web application." loc-scope="other"::: <!-- no-loc -->
 
 1. Try uploading and downloading some files to test the application. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 
