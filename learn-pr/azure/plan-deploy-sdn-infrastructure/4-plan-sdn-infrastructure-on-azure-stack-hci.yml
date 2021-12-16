@@ -9,6 +9,7 @@ metadata:
   author: LBN-commits
   ms.author: v-lanai
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/4-plan-sdn-infrastructure-on-azure-stack-hci.md)]
