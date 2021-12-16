@@ -17,6 +17,10 @@ abstract: |
   - Develop and run your code in isolation on a machine.
   - Use libraries that someone else has written.
   - Restore a project from a list of dependencies.
+prerequisites: |
+  - Familiarity with the terminal.
+  - Knowledge of how to run commands from the terminal.
+  - Experience with writing a program or two in Python (recommended).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -25,10 +29,6 @@ roles:
   - student
 products:
   - vs
-prerequisites: |
-  - Familiarity with the terminal
-  - Knowledge of how to run commands from the terminal
-  - Experience with writing a program or two in Python (recommended)
 units:
   - learn.beginner-python.create-manage-projects.introduction
   - learn.beginner-python.create-manage-projects.set-up-project

@@ -1,17 +1,16 @@
-In this exercise, you are looking to learn how to use virtual environments as a way to not affect globally installed packages or other programs running on your machine.
+In this exercise, you'll learn how to use virtual environments as a way to not affect globally installed packages or other programs running on your machine.
 
 ## Create a virtual environment
 
-Create a virtual environment using `venv`.
+Create a virtual environment by using `venv`.
 
-1. Run `python3 -m venv env` in your terminal.
+1. Run `python3 -m venv env` in your terminal:
 
    ```bash
    python3 -m venv env
    ```
 
-   You now have an env_ directory created in your terminal.
-   Next, you will activate your virtual environment, which is the same thing as using it.
+   You now have an *env* directory created in your terminal.   
 
 1. Run `source env/bin/activate` to activate the virtual environment:
 
@@ -24,19 +23,19 @@ Create a virtual environment using `venv`.
     source env/bin/activate
    ```
 
-   You now see "(env)" in your terminal, that means you have _activated_ your virtual environment and you isolated yourself from the rest of your machine. 
+   You now see `(env)` in your terminal. That means you've activated your virtual environment and isolated yourself from the rest of your machine. 
 
 ## Install a library
 
-Now that you are inside of your virtual environment, you can install a library and know that said library will only exist in the virtual environment.
+Now that you're inside your virtual environment, you can install a library and know that the library will exist only in the virtual environment.
 
-1. Run `pip freeze` to see installed libraries in your environment.
+1. Run `pip freeze` to see installed libraries in your environment:
 
    ```bash
    pip freeze
    ```
 
-   You should get no response back. Next, let's see how the output of `pip freeze` changes when you add a library, a package, using `pip install`.
+   You should get no response. Next, let's see how the output of `pip freeze` changes when you add a library (a package).
 
 1. Run `pip install` to install a library:
 
@@ -50,7 +49,7 @@ Now that you are inside of your virtual environment, you can install a library a
    Successfully installed python-dateutil-2.8.2 six-1.16.0 
    ``` 
 
-1. Rerun `pip freeze` to see how you list of libraries have changed:
+1. Rerun `pip freeze` to see how your list of libraries has changed:
 
    ```bash
    pip freeze
@@ -65,14 +64,14 @@ Now that you are inside of your virtual environment, you can install a library a
 
 ## Deactivate
 
-So far, you've created a virtual environment and it's a package on it. However, you might be working on several Python projects and need to change in between them. To do that, you need step out of your virtual environment, which is called to _deactivate_.
+So far, you've created a virtual environment and added a package to it. However, you might be working on several Python projects and need to change between them. To do that, you need step out of (*deactivate*) your virtual environment.
 
-1. Run `deactivate`, to leave your virtual environment:
+* Run the `deactivate` command:
 
    ```bash
    deactivate
    ```
 
-   Note how your terminal prompt changes from (env) to being back to how it looked before.
+   Note how your terminal prompt changes from `(env)` to how it looked before.
 
 Congratulations! You've managed to successfully create and use a virtual environment.

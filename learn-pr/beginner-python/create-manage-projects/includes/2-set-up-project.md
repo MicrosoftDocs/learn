@@ -8,9 +8,7 @@ You have a development machine. On that machine, you might have one version of P
 
 One thing you don't want to do is to assume that your program will work and that you can just install the latest version of whatever libraries you depend on. If you do that, you might end up destroying the ability of the other programs to function on the target machine. The solution is to find a way for your app to work in isolation. 
 
-Python's solution for these problems is called a virtual environment. 
-
-The idea is that you perform the following actions in sequence:
+Python's solution for these problems is a virtual environment. The idea is that you perform the following actions in sequence:
 
 1. Create a virtual environment that won't affect the rest of the machine.
 1. Step into the virtual environment, where you specify the Python version and libraries that you need.
@@ -20,7 +18,7 @@ The idea is that you perform the following actions in sequence:
 
 You create a virtual environment by calling the `venv` module. The module expects a name as an argument.
 
-To create the virtual environment, take the following steps:
+Take the following steps:
 
 1. Go to the directory where you want to keep your project.
 1. Use the following command to call the `venv` module. The command differs slightly depending on your operating system.
@@ -38,7 +36,7 @@ To create the virtual environment, take the following steps:
      lib
    ```
 
-   Your enviroment needs the `env` directory to keep track of details like which version of Python and which libaries you're using. Don't put your program files in the `env` directory. We suggest that you put your files in the `src` directory or something similar. The project structure might then look like this:
+   Your environment needs the `env` directory to keep track of details like which version of Python and which libraries you're using. Don't put your program files in the `env` directory. We suggest that you put your files in the `src` directory or something similar. The project structure might then look like this:
 
    ```output
    /env
@@ -68,13 +66,13 @@ At this point, you're inside your virtual environment. Anything you do happens i
 
 ## What's a package?
 
-One of the main advantages of using external libraries is to speed up the development time of your program. You can fetch such a library on the internet. But by fetching and installing these libraries through a virtual environment, you ensure that you install theses libraries only for the virtual environment and not globally for the entire machine. A library is also called a package.
+One of the main advantages of using external libraries is to speed up the development time of your program. You can fetch such a library on the internet. But by fetching and installing these libraries through a virtual environment, you ensure that you install theses libraries only for the virtual environment and not globally for the entire machine. 
+
+A library is also called a package.
 
 ## Install a package
 
-You install a package by using `pip`. The `pip` command uses the Python Package Index, or PyPi for short, to know where to get the packages. You can visit the [PyPiu website](https://pypi.org/) to see what packages are available.
-
-### Perform install
+You install a package by using `pip`. The `pip` command uses the Python Package Index, or PyPi for short, to know where to get the packages. You can visit the [PyPi website](https://pypi.org/) to see what packages are available.
 
 To install a package, run `pip install`, like in this example:
 
@@ -82,7 +80,7 @@ To install a package, run `pip install`, like in this example:
 pip install python-dateutil
 ```
 
-If you run the preceding command, you'll download and install `dateutil`, a package for parsing the .yml file format. After you install the package, you can see it listed if you expand the `lib` directory under `env` like this:
+If you run the preceding command, you'll download and install `dateutil`, a package for parsing the .yml file format. After you install the package, you can see it listed if you expand the *lib* directory under *env*, like this:
 
 ```output
 /env
@@ -116,22 +114,22 @@ If you run `pip freeze`, you'll see a much longer list of dependencies. This lis
 
 ### More ways to install a package
 
-There are more ways to install a package:
+You can also use the following commands to install a package:
 
-- **source**, you can have a set of files on your machine. To install from source, you could type like so:
+- Have a set of files on your machine and install from that source:
 
    ```bash
    cd <to where the package is on your machine>
    python3 -m pip install .
    ```
 
-- **version control**, you can install from a version control like so:
+- Install from a GitHub repository that provides version control:
 
    ```bash
    git+https://github.com/your-repo.git
    ```
 
-- **an archive**. It's possible to install from a compressed file, like so:
+- Install from a compressed archive file:
 
    ```bash
    python3 -m pip install package.tar.gz
@@ -139,7 +137,9 @@ There are more ways to install a package:
 
 ## Use an installed package
 
-You now have a dependency installed. How do you use it in code? What you need to do is to ensure you have a directory for your files. The suggestion is to call it `src` and that you add an entry point Python file called `app.py`. Now add some code to call `pipdate`:
+You now have a package installed. How do you use it in code? 
+
+Ensure that you have a directory for your files. We suggest that you call the directory *src* and add an entry-point Python file called *app.py*. Now add some code to call `pipdate`:
 
 ```python
 from datetime import *

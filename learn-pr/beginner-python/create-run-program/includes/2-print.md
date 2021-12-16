@@ -144,7 +144,7 @@ These operators are used to assign values to a variable throughout the lifecycle
 | /=       | x /= 2, x divided by 2, so if it contained 2 before, it now has value 1     |
 | *=       | x *= 2, x multiplied by 2, so if it contained 2 before, it now has value 4  |
 
-## Work with date
+## Work with dates
 
 One thing you are likely to interact with when building programs are dates. When talking about date, you usually mean both the calendar date and the time.
 

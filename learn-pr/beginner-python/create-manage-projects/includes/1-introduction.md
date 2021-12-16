@@ -8,7 +8,7 @@ So what do you do? You need to find a way for your program to work in isolation,
 
 To build more advanced programs, you want to start with a good approach. You want to think of the program that you build as more of a project, with the code spread out over many files. If possible, you also want to use libraries that others have written, to speed up development time.
 
-## Learning objectives
+## What will you learn?
 
 By the end of this module, you'll be able to:
 
@@ -17,8 +17,6 @@ By the end of this module, you'll be able to:
 - Use libraries that someone else has written.
 - Restore a project from a list of dependencies.
 
-## Prerequisites
+## What is the main objective?
 
-- Familiarity with the terminal
-- Knowledge of how to run commands from the terminal
-- Experience with writing a program or two in Python (recommended)
+Use libraries and plan your project to create Python programs that are more advanced.

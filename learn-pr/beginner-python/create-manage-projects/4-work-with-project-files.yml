@@ -3,7 +3,7 @@ uid: learn.beginner-python.create-manage-projects.work-with-project-files
 title: Work with project files
 metadata:
   title: Work with project files
-  description: In this unit, you'll look at how to create a project file. You'll then manage your dependent libraries by upgrading them and removing them when they're no longer needed.
+  description: Look at how to create a project file, and then manage your dependent libraries by upgrading them and removing them when they're no longer needed.
   ms.date: 12/02/2021
   author: softchris
   ms.author: chnoring
