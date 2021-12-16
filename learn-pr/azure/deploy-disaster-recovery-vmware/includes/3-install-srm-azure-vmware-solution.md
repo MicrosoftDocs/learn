@@ -40,7 +40,8 @@ Now that you know how to deploy Azure VMware Solution private cloud, you need to
 
 Use the following steps to connect to Azure Virtual Network with ExpressRoute:
 
-[!NOTE] These steps create a new virtual network, a gateway subnet, and an ExpressRoute virtual network gateway, and then connect the ExpressRoute to the virtual network gateway. You can also use existing virtual network provisioned with an existing ExpressRoute virtual network gateway.
+> [!NOTE]
+> These steps create a new virtual network, a gateway subnet, and an ExpressRoute virtual network gateway, and then connect the ExpressRoute to the virtual network gateway. You can also use existing virtual network provisioned with an existing ExpressRoute virtual network gateway.
 
 1. Log in to the Azure portal.
 2. Navigate to your subscription, and then search for and select **Azure VMware Solution**.
