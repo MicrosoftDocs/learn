@@ -190,7 +190,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
 1. Your app is finished, so let's deploy it and see it work. Create an App Service app and configure it with app settings for your storage account connection string and container name. Get the storage account's connection string with `az storage account show-connection-string`, and set the name of the container to be `files`.
 
-    The application name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+    The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
     ```azurecli
     az appservice plan create \
@@ -220,7 +220,7 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
     --settings STORAGE_CONNECTION_STRING=$CONNECTIONSTRING STORAGE_CONTAINER_NAME=files
     ```
 
-1. Now, you'll deploy your application. The following commands will build the application into `ROOT.war`, and deploy the WAR file to App Service.
+1. Now, you'll deploy your app. The following commands will build the app into `ROOT.war`, and deploy the WAR file to App Service.
 
     > [!NOTE]
     > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location. 
@@ -236,11 +236,11 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
     --src-path target/ROOT.war
     ```
 
-    To see the running application, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
+    To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
 
-    :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web application." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
-1. Try uploading and downloading some files to test the application. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
+1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 
     ```console
     az storage blob list --account-name <your-unique-storage-account-name> --container-name files --query [].{Name:name} --output table

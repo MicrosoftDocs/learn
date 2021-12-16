@@ -69,7 +69,7 @@ To create a container when your app starts or when the app first tries to use a 
 
 ::: zone pivot="java"
 
-To create a container when your application starts or when it first tries to use it, call `exists` on a `BlobContainerClient` to check whether container already exist, if it doesn't then call `create`. Call it once during initialization; not every time you try to use a container.
+To create a container when your app starts or when it first tries to use it, call `exists` on a `BlobContainerClient` to check whether container already exist, if it doesn't then call `create`. Call it once during initialization; not every time you try to use a container.
 
 ::: zone-end
 
@@ -143,7 +143,7 @@ When it comes to *using* the configuration, our starter app already includes the
 
 ### Clone and explore the unfinished app
 
-1. First, let's clone the starter application from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
+1. First, let's clone the starter app from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
 
     ```console
     git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
@@ -151,7 +151,7 @@ When it comes to *using* the configuration, our starter app already includes the
     code .
     ```
 
-1. In the editor, open the file `src/main/java/com/microsoft/azure/samples/jsf/IndexBean.java`. There's no work to do here, but you're going to have a quick look at what the application does.
+1. In the editor, open the file `src/main/java/com/microsoft/azure/samples/jsf/IndexBean.java`. There's no work to do here, but you're going to have a quick look at what the app does.
 
     This request scoped bean implements three actions that are used by `src/main/webapp/index.xhtml` JSF (Java Server Faces) page:
 
@@ -194,9 +194,9 @@ The recommended way of adding Azure client libraries to the project is to utiliz
 
 ### Configure
 
-The configuration values we need are the storage account connection string and the name of the container the application will use to store files. In this module, you're only going to run the application in Azure App Service, so you'll follow App Service best practice and store the values in App Service application settings. You'll do that when we create the App Service instance, so there's nothing you need to do at the moment.
+The configuration values we need are the storage account connection string and the name of the container the app will use to store files. In this module, you're only going to run the app in Azure App Service, so you'll follow App Service best practice and store the values in App Service app settings. You'll do that when we create the App Service instance, so there's nothing you need to do at the moment.
 
-When it comes to *using* the configuration, the App Service application settings are passed as environment variables to the application code. You'll read them in the initialization code.
+When it comes to *using* the configuration, the App Service app settings are passed as environment variables to the app code. You'll read them in the initialization code.
 
 ### Initialize
 
@@ -218,9 +218,9 @@ When it comes to *using* the configuration, the App Service application settings
     ```
 
 > [!TIP]
-> Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the application you're working on uses single container with constant name, therefore it's best to cache it in application lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
+> Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses single container with constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
 
-1. Locate the `init` method with `@PostConstruct` annotation. Your application will call this method after `BlobStorage` instance is created and before it is used for the first time.
+1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after `BlobStorage` instance is created and before it is used for the first time.
 
     `init` is where you want to create your container if it doesn't already exist. Replace the current implementation of `init` with the following code, and save your work.
 
