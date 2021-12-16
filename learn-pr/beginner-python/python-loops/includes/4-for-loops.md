@@ -1,4 +1,3 @@
-# Introducing for loops
 
 Lists store any type of Python values such as strings or numbers:
 

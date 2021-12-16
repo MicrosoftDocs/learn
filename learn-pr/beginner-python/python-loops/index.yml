@@ -13,9 +13,9 @@ title: Loops in Python
 summary: "Python provides two loop types - while and for - for performing tasks multiple times"
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   After completing this module, you will be able to:
-  - identify when to use a for or while
-  - use while to run a task multiple times
-  - use for to loop over list data
+  - Identify when to use a for or while
+  - Run a task multiple times using `while`  
+  -Loop over list data using `for` 
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Basic Python programming knowledge which includes use of variables, strings, integers and math
   - Experience working with lists in Python
@@ -27,7 +27,7 @@ roles: # user input: add roles from role taxonomy (https://review.docs.microsoft
   - student
   - developer
 products:
-  - vs
+  - vs-code
 units:
 - learn.beginner-python.python-loops.introduction
 - learn.beginner-python.python-loops.while-loops
