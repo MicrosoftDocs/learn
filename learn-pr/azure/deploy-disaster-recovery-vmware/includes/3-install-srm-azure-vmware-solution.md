@@ -16,7 +16,7 @@ The solution architecture depicts the following configuration:
 
 - Secondary Azure VMware Solution is deployed in the secondary region.  
 
-  ## Deployment workflow for Azure VMware Solution 
+## Deployment workflow for Azure VMware Solution 
 
 To deploy Azure VMware Solution in your test environment, you must perform the following steps:
 
