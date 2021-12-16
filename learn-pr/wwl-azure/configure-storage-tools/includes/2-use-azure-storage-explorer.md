@@ -21,8 +21,8 @@ In addition, you can work with storage accounts in global and national Azure:
  -  **Connect to an Azure subscription**. Manage storage resources that belong to your Azure subscription.
  -  **Work with local development storage**. Manage local storage by using the Azure Storage Emulator.
  -  **Attach to external storage**. Manage storage resources that belong to another Azure subscription or that are under national Azure clouds by using the storage account's name, key, and endpoints (shown below.)
- -  **Attach a storage account by using an SAS**. Manage storage resources that belong to another Azure subscription by using a shared access signature (SAS).
- -  **Attach a service by using an SAS**. Manage a specific storage service (blob container, queue, or table) that belongs to another Azure subscription by using an SAS.
+ -  **Attach a storage account by using a SAS**. Manage storage resources that belong to another Azure subscription by using a shared access signature (SAS).
+ -  **Attach a service by using a SAS**. Manage a specific storage service (blob container, queue, or table) that belongs to another Azure subscription by using a SAS.
  -  **Connect to an Azure Cosmos DB account by using a connection string**. Manage Cosmos DB account by using a connection string.
 
 ## Accessing external storage accounts

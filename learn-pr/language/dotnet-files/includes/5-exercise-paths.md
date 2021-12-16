@@ -2,31 +2,31 @@ The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define
 
 In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files in it or any subfolders.
 
-In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so that it will find *any* file with a .json or .txt extension.
+In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it will find *any* file with a .json or .txt extension.
 
 ## Use the current directory and combine paths
 
 In the current Program.cs code, you're passing the static location of the *stores* folder. We'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
-1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`.
+1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`:
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
        ```
 
-1. Insert the following code after one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`. 
+1. Insert the following code after one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
 
     ```csharp
     var storesDirectory = Path.Combine(currentDirectory, "stores");
     ```
 
-1. Replace the variable `stores' in the `FindFiles` function with the new variable `storesDirectory`.
+1. Replace the variable `stores` in the `FindFiles` function with the new variable `storesDirectory`:
 
      ```csharp
      var salesFiles = FindFiles(storesDirectory);
      ```
 
-    The top of your file should now look similar to the following snippet.
+    The top of your file should now look similar to the following snippet:
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
@@ -41,13 +41,13 @@ In the current Program.cs code, you're passing the static location of the *store
 
 1. Press <kbd>Ctrl+S</kbd> (or <kbd>Cmd+S</kbd> macOS) to save the file.
 
-1. Run the program from the command line.
+1. Run the program from the command line:
 
     ```bash
     dotnet run
     ```
 
-1. The program should show the following output. 
+1. The program should show the following output: 
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -75,7 +75,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
            if (extension == ".json")
     ```
 
-    The `foreach` loop should look similar to the following
+    The `foreach` loop should look similar to the following:
   
     ```csharp
     foreach (var file in foundFiles)
@@ -90,13 +90,13 @@ Instead of looking for only *sales.json* files, the program needs to search for 
     
 1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
-1. Run the program from the command line.
+1. Run the program from the command line:
 
     ```bash
     dotnet run
     ```
   
-    The output now shows all .json files in each of the store ID directories.
+    The output now shows all .json files in each of the store ID directories:
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -114,7 +114,7 @@ Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` 
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution:
 
 ```csharp
 var currentDirectory = Directory.GetCurrentDirectory();

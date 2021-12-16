@@ -1,12 +1,12 @@
 .NET has a built-in mechanism for working with file system paths.
 
-In the previous exercise, we didn't have many folders to parse. If you have a file system with many files and folders, manually building paths can be tedious. .NET provides some built-in constants and utility functions to make it easier to handle file paths.
+In the previous exercise, we didn't have many folders to parse. If you have a file system with many files and folders, manually building paths can be tedious. Thankfully, .NET provides some built-in constants and utility functions to make it easier to handle file paths.
 
 Here, you'll learn about some of the constants and utility functions in the `System.IO` namespace and the `System.Environment` type so that you can make your program smarter and more resilient.
 
 ## Determine the current directory
 
-Sometimes, you don't know which directory or path where your program should run--let's say you want it use the current directory, but you don't know the path. 
+Sometimes, you don't know which directory or path where your program should run. Let's say you want your program to use the current directory, but you don't know the path. 
 
 .NET exposes the full path to the current directory via the `Directory.GetCurrentDirectory` method.
 
@@ -24,7 +24,7 @@ If you run the above code from the *sales* folder in the following structure, `D
 
 ## Work with special directories
 
-.NET runs everywhere--on Windows, macOS, Linux, and even on mobile operating systems like iOS and Android. Each operating system may or may not have the concept of special system folders like a home directory, which is dedicated for user-specific files, or a desktop directory, or a directory for storing temporary files.
+.NET runs everywhere: on Windows, macOS, Linux, and even on mobile operating systems like iOS and Android. Each operating system may or may not have the concept of special system folders like a home directory, which is dedicated for user-specific files, or a desktop directory, or a directory for storing temporary files.
 
 Those types of special directories differ for each operating system. It would be cumbersome to try to remember each operating system's directory structure and perform switches based on the current OS.
 
@@ -46,7 +46,7 @@ The `Path` class is located in the `System.IO` namespace of .NET, and doesn't ne
 
 Different operating systems use different characters to separate directory levels.
 
-For example, Windows uses the backslash, `stores\201`, and macOS uses the forward slash, `stores/201`.
+For example, Windows uses the backslash (`stores\201`) and macOS uses the forward slash (`stores/201`).
 
 To help you use the correct character, the `Path` class contains the `DirectorySeparatorChar` field.
 
@@ -71,10 +71,10 @@ For instance, if you want to get the path to the *stores/201* folder, you can us
 Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 ```
 
-Remember, you would use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings because your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
+Remember, you would use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings, because your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
 
 > [!TIP]
-> The `Path` class doesn't care whether things actually exist. Paths are conceptual, not physical, and it's building and parsing strings for you.
+> The `Path` class doesn't care whether things actually exist. Paths are conceptual, not physical, and the class is building and parsing strings for you.
 
 ### Determine filename extensions
 
