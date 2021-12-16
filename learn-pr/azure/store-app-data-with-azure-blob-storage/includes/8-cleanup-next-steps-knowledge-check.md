@@ -17,6 +17,8 @@ In this module, you learned how to use Azure Blob Storage to store web app data.
 - [Index data from Azure Blob Storage using Azure Cognitive Search](/azure/search/search-howto-indexing-azure-blob-storage)
 - [Naming and Referencing Containers, Blobs, and Metadata](/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata)
 - [Security recommendations for Blob storage](/azure/storage/blobs/security-recommendations)
+- [Configure an ASP.NET Core app for Azure App Service](/azure/app-service/configure-language-dotnetcore)
+- [Configure a Java app for Azure App Service](/azure/app-service/configure-language-java)
 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

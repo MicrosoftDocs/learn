@@ -251,6 +251,9 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
     :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
+> [!TIP]
+> This module uses Azure Cloud Shell to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.
+
 1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 
     ```console
