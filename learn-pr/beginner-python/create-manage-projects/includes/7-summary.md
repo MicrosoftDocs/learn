@@ -1,4 +1,4 @@
-This module introduced you to the idea of using libraries written by someone else. You learned how to use `pip` to install these libraries and to upgrade or remove them as needed.
+This module introduced you to the idea of using libraries that someone else has written. You learned how to use `pip` to install these libraries and to upgrade or remove them as needed.
 
 Libraries are continuously worked on. To track that improvement work, each version of a library is assigned a version number. Different applications on your computer may rely on different versions of the same library.
 

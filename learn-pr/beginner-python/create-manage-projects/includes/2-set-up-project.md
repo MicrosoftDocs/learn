@@ -1,4 +1,4 @@
-When you start building a program, you think about what the program should do, what libraries you need, and how to architect and maintain the program over time. These are important considerations during development but also as you maintain the program over time.
+When you start building a program, you think about what the program should do, what libraries you need, and how to architect the program. These are important considerations during development but also as you maintain the program over time.
 
 A good start is learning how to manage your program. A way to do that is to think of the program as a project. Python approaches this by using something called virtual environments.
 
@@ -6,7 +6,7 @@ A good start is learning how to manage your program. A way to do that is to thin
 
 You have a development machine. On that machine, you might have one version of Python installed or one version of a library that you meant to use. What happens when you move your program to a machine that has a different version of Python installed or different versions of the libraries that you depend on? 
 
-One thing you don't want to do is to assume that your program will work and that you can just install the latest version of whatever libraries you depend on. If you do that, you might end up destroying the ability of the other programs to function on the target machine. The solution is to find a way for your app to work in isolation. 
+One thing you don't want to do is assume that your program will work and that you can just install the latest version of whatever libraries you depend on. If you do that, you might end up destroying the ability of the other programs to function on the target machine. The solution is to find a way for your app to work in isolation. 
 
 Python's solution for these problems is a virtual environment. The idea is that you perform the following actions in sequence:
 
@@ -56,7 +56,7 @@ env\bin\activate
 source env/bin/activate
 ```
 
-Calling `activate` changes your prompt. It will now be preceded with `(env)` and look something like this example:
+Calling `activate` changes your prompt. It's now preceded with `(env)` and looks something like this example:
 
 ```bash
 (env) -> path/to/project

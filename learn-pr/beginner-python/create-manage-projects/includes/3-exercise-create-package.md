@@ -62,16 +62,16 @@ Now that you're inside your virtual environment, you can install a library and k
    six==1.16.0
    ```
 
-## Deactivate
+## Deactivate a virtual environment
 
 So far, you've created a virtual environment and added a package to it. However, you might be working on several Python projects and need to change between them. To do that, you need step out of (*deactivate*) your virtual environment.
 
-* Run the `deactivate` command:
+Run the `deactivate` command:
 
-   ```bash
-   deactivate
-   ```
+```bash
+deactivate
+```
 
-   Note how your terminal prompt changes from `(env)` to how it looked before.
+Note how your terminal prompt changes from `(env)` to how it looked before.
 
 Congratulations! You've managed to successfully create and use a virtual environment.

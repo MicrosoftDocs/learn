@@ -1,4 +1,4 @@
-In this exercise, you'll work on a Python project created by a colleague. You've fetched it from GitHub, and you need to restore it so you can work with it. You might also need to upgrade dependencies.
+In this exercise, you'll work on a Python project that a colleague has created. You've fetched it from GitHub, and you need to restore it so you can work with it. You might also need to upgrade dependencies.
 
 ## Create a virtual environment
 

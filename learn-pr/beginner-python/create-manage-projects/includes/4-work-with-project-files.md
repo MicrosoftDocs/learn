@@ -13,7 +13,7 @@ Imagine that you want to collaborate on a project with other developers. A good 
 
 To share your project so that others can work on it, take the following steps:
 
-1. Call `pip freeze > requirements.txt`. This command creates a _requirements.txt_ file, with all the packages that the program needs.
+1. Call `pip freeze > requirements.txt`. This command creates a _requirements.txt_ file with all the packages that the program needs.
 1. Create a _.gitignore_ file, and check in your application code and _requirements.txt_.
 1. Check in the code to GitHub.
 
@@ -28,11 +28,11 @@ To consume a project as a contributor (a fellow developer), take the following s
 
 ## Manage dependencies
 
-Packages come in different versions. Every time a package is fixed for bugs or has more features added to it, its version number is usually upgraded. For the sake of your program, you might need a specific version of a package. You want to keep your project updated so it uses the latest version of a package. 
+Packages come in different versions. Every time a package is fixed for bugs or has more features added to it, its version number usually changes. For the sake of your program, you might need a specific version of a package. You want to keep your project updated so it uses the latest version of a package. 
 
 Here are the main reasons why upgrading your packages is a good idea:
 
-- **Bug fixes**. The library that you use might have problems. For example, a feature doesn't work as intended and the author goes into fix it. You most likely want to upgrade the package as soon as such a fix is in place.
+- **Bug fixes**. The library that you use might have problems. For example, a feature doesn't work as intended and the author goes in to fix it. You most likely want to upgrade the package as soon as such a fix is in place.
 - **Security issues**. Your package might have a security vulnerability. After such a fix is released, you want to upgrade the package to protect your company and your customers.
 - **Additional features**. The release of more features is nice, though it isn't a strong reason to upgrade the package. Still, if there's a feature that you've been waiting for, you might want to upgrade for that reason.
 
@@ -60,14 +60,12 @@ There are many ways to find out what versions are available. One way is to speci
 pip install python-dateutil===randomwords
 ```
 
-Here's the resulting output:
+Here's the resulting output, with a list of existing versions:
 
 ```output
 ERROR: Could not find a version that satisfies the requirement python-dateutil===randomwords (from versions: 1.4, 1.4.1, 1.5, 2.1, 2.2, 2.3, 2.4.0, 2.4.1, 2.4.1.post1, 2.4.2, 2.5.0, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.7.0, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8.0, 2.8.1, 2.8.2)
 ERROR: No matching distribution found for python-dateutil===randomwords
 ```
-
-The output tells us what does exist.
 
 Another way is to call `pip freeze`. The output shows what specific versions it already installed for us, when we gave it only the package name as argument:
 
