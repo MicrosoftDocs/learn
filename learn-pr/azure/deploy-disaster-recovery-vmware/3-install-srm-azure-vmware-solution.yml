@@ -9,6 +9,6 @@ metadata:
   author: AnuSridhar-25
   ms.author: v-anursr
   ms.topic: interactive-tutorial
-durationInMinutes: 9
+durationInMinutes: 4
 content: |
   [!include[](includes/3-install-srm-azure-vmware-solution.md)]
