@@ -222,6 +222,11 @@ achievements:
   title: Differentiate Azure management tools
   summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
   iconUrl: /learn/achievements/differentiate-azure-management-tools.svg
+- uid: learn.store-and-share-with-azure-files.badge
+  type: badge
+  title: Store and share files in your app with Azure Files
+  summary: Azure Files provides a cloud-based file share for storing and sharing files to apps. Whether it's an app hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
+  iconUrl: /learn/achievements/store-and-share-with-azure-files.svg
 - uid: learn.wwl.secure-network-connectivity.badge
   type: badge
   title: Secure network connectivity
@@ -837,3 +842,28 @@ achievements:
   title: Securely connect IoT devices to the cloud
   summary: Securely connect IoT devices to the cloud
   iconUrl: /learn/achievements/securely-connect-iot-devices-to-the-cloud.svg
+- uid: learn-wwl.enable-digital-transformation.badge
+  type: badge
+  title: Enabling digital transformation
+  summary: Enabling digital transformation
+  iconUrl: /learn/achievements/enable-digital-transformation.svg
+- uid: learn.introduction-to-azure-iot.trophy
+  type: trophy
+  title: Introduction to Azure IoT
+  summary: Introduction to Azure IoT
+  iconUrl: /learn/achievements/introduction-to-azure-iot.svg
+- uid: learn.iot.explore-and-analyze-time-series-insights.badge
+  type: badge
+  title: Explore and analyze time-stamped data with Time Series Insights
+  summary: Explore and analyze time-stamped data with Time Series Insights
+  iconUrl: /learn/achievements/iot/explore-analyze-time-stamped-data-time-series-insights.svg
+- uid: learn.iot.introduction-lambda-architecture-iot-solutions.badge
+  type: badge
+  title: Introduction to implementing lambda architecture for IoT solutions
+  summary: Introduction to implementing lambda architecture for IoT solutions
+  iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
+- uid: learn.introduction-to-iot-hub.badge
+  type: badge
+  title: Introduction to Azure IoT Hub
+  summary: Introduction to Azure IoT Hub
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg

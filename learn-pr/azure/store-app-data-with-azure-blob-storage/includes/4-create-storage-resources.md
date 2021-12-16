@@ -26,7 +26,7 @@ You're going to complete an unfinished app by adding code to use Azure Blob Stor
 
 ::: zone-end
 
-Your app works like a shared folder that accepts file uploads and makes them available for download. It doesn't use a database for organizing blobs &mdash; instead, it sanitizes the names of uploaded files and uses them as blob names directly. All uploaded files are stored in a single container.
+Your app works like a shared folder that accepts file uploads and makes them available for download. It doesn't use a database for organizing blobs; instead, it sanitizes the names of uploaded files and uses them as blob names directly. All uploaded files are stored in a single container.
 
 The code you'll start with compiles and runs, but the parts responsible for storing and loading data are empty. After you complete the code, you'll deploy the app to Azure App Service and test it.
 
@@ -48,4 +48,4 @@ az storage account create \
 
 ### Container
 
-The app you'll be working within this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in Cloud Shell, run the `az storage container create -h` command.
+The app you'll be working with in this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, you can create containers from the Azure CLI. If you'd like to see the documentation, run the `az storage container create -h` command in Cloud Shell.

@@ -35,7 +35,7 @@ An Azure Function is triggered by an event rather than being called directly fro
 - **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
 - **Event Hub trigger**. An Event Hub trigger runs the function when an Event Hub receives a message.
 - **Azure Cosmos DB trigger**. This trigger runs when a document is added to, or modified in an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
-- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is triggered by a webhook wfrom a GitHub repository when an item in the repository changes.
+- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is triggered by a webhook from a GitHub repository when an item in the repository changes.
 - **Queue trigger**. This trigger starts the function when a new item is added to an Azure Storage Queue.
 - **Service Bus Queue trigger**. This trigger runs the function when a new item is added to an Azure Service Bus Queue.
 - **Service Bus Topic trigger**. This trigger runs the function in response to a new message arriving on a Service Bus Topic.

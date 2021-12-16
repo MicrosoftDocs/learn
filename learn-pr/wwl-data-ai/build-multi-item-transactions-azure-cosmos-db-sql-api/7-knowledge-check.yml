@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/25/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -47,3 +47,14 @@ quiz:
     - content: "``await container.Scripts.CreateStoredProcedureAsync(props);``"
       isCorrect: true
       explanation: "That's correct. The **Scripts** property of the **Container** class includes a method named **CreateStoredProcedureAsync**."
+  - content: "Your stored procedure creates three items with three distinct unique identifiers and logical partition key values. When running your stored procedure, you encounter an error. What is the cause for this error?"
+    choices:
+    - content: "Stored procedures are scoped to only a single item"
+      isCorrect: false
+      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items."
+    - content: "Stored procedures are scoped to only a single logical partition"
+      isCorrect: true
+      explanation: "This's correct. You cannot execute a stored procedure that performs operations across logical partition key values."
+    - content: "Stored procedures are scoped to only a single unique identifier"
+      isCorrect: false
+      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items, each with a distinct unique identifier."

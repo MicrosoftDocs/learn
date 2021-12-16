@@ -40,8 +40,6 @@ Azure Backup organizes your backup data in a storage entity called a vault. A st
 
 - **Use Azure policy**. If you needed consistent policy across vaults, then you can use Azure Policy to propagate backup policy across multiple vaults. A backup policy is scoped to a vault.
 
-- **Implement regional availability**. Azure Backup requires the backup components to be in the same region as the vault. Azure Site Recovery requires the virtual machines to be in different regions.
-
 - **Protect using Azure role-based access control (RBAC).** Protect and manage vault access by using Azure RBAC. 
 
 - **Design for Redundancy.** Specify how data in the vault is replicated for redundancy. Use Locally redundant storage (LRS) to protect against failure in a datacenter. LRS replicates data to a storage scale unit. Use Geo-redundant storage (GRS) to protect against region-wide outages. GRS replicates your data to a secondary region.. 

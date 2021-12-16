@@ -23,7 +23,7 @@ The SQL API log tables are:
 
 When Azure Cosmos DB diagnostics data is sent to Log Analytics, it's sent to either the `AzureDiagnostics` table or to **Resource-specific** tables. The preferred mode is to send the data to Resource-specific tables, as such, each log chosen under the diagnostics settings options will have its own table. Choosing this mode makes it easier to work with the diagnostic data, easier to discover the schemas used, and improve performance in latency and query times. 
 
-### `AzureDiagnostics` queries
+### AzureDiagnostics queries
 
 If the legacy mode is chosen, the diagnostics data will be stored in the `AzureDiagnostics` table, so all `kusto` queries will be executed against that table. Since multiple Azure resources could also be populating this table, include the filter `ResourceProvider=="MICROSOFT.DOCUMENTDB"` in your `where` clause to only return Azure Cosmos DB entries. Additionally, to differentiate between the different logs you picked under *diagnostic settings*, add a filter on the `Category` column.  For example, to return documents for the `QueryRuntimeStatistics` log, include the where clause `| where ResourceProvider=="MICROSOFT.DOCUMENTDB" and Category=="QueryRuntimeStatistics"`. Kusto is case-sensitive so make sure your column names are the right case. Let's review a couple of `Kusto` query examples using the `AzureDiagnostics` table.
 

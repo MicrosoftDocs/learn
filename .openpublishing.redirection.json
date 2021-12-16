@@ -1091,6 +1091,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/2-plan-azure-files-deployment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/3-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/4-exercise-create-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/5-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/6-exercise-secure-azure-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/store-and-share-with-azure-files/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-your-azure-virtual-machine-disks/8-summary",
       "redirect_document_id": false
@@ -10649,6 +10689,276 @@
       "source_path": "learn-pr/paths/securely-connect-iot-devices/index.md",
       "redirect_url": "http://docs.microsoft.com/learn/browse",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/1-Introduction.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/2-What-is-digital-transformation.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/6-knowledge-check.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/7-summary-resources.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/4-action.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/3-success-factors.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/5-why-digitally-transform-with-microsoft.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-to-azure-iot/index.md",
+      "redirect_url": "http://docs.microsoft.com/learn/browse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/4-analyze-data-ad-hoc.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/2-create-iot-hub-simulate-devices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/3-create-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-analyze-time-series-insights/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/3-learn-about-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/4-learn-about-cosmos-db-structure-consistency.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/5-learn-about-data-through-time-series-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/2-learn-about-hot-cold-paths-lambda-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/3-how-iot-hub-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/2-what-is-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/4-when-to-use-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/2-responsible-conversational-ui.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/2-bot-framework-responsible-principles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/3-bot-framework.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/2-bot-framework-responsible-principles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/4a-develop-bot-online-editor.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/4-create-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/4b-develop-bot-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/3-install-visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/5a-luis-integration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/5-run-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/5b-connect-luis-bot-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/5-run-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/6-add-question-answering.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/6-add-dictionary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/7-more-resposible-ui.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/7-edit-welcome-message",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/8-publish.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/5-run-bot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/expand-query-transaction-functionality-azure-cosmos-db-sql-api/6-exercise-create-pre-trigger-azure-portal-then-sdk.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/expand-query-transaction-functionality-azure-cosmos-db-sql-api/6-exercise-implement-use-user-defined-functions-with-the-sdk",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/configure-settings-for-alerts-detections-microsoft-defender-for-endpoint/6-manage-custom-detections.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-settings-for-alerts-detections-microsoft-defender-for-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-qna-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/2-get-started-knowledge-base",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/2-setup-environment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/3-configure-db-connection.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/4-design-domain-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/5-write-crud-queries.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/6-call-crud-queries.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/7-enable-sql-logging.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/8-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/9-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/persist-data-ef-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/5-introduction-to-device-twins.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/5-introduction-device-twins",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/6-introduction-to-device-monitoring.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/6-introduction-device-monitoring",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/7-introduction-to-device-retirement.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/7-introduction-device-retirement",
+      "redirect_document_id": true
     }
   ]
 }
