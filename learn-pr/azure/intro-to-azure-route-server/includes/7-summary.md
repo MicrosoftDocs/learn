@@ -6,7 +6,7 @@ You’ve learned how Azure Route Server can help optimize route information exch
 
 You explored the various deployment scenarios for Azure Route Server and learned how to deploy it by using the Azure portal or Azure PowerShell. You now understand how Azure Route Server can help your organization improve the efficiency and reliability of its infrastructure for traffic routing.
 
-## Further learning links
+## References
 
 For more information, refer to:
 
