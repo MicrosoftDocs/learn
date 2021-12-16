@@ -111,7 +111,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     get 4
     ```
 
-1. You've realized a smoked brisket pizza with alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
+1. You've realized a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
 
     ```dotnetcli
     delete 4
