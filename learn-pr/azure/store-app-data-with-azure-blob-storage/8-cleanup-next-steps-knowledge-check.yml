@@ -42,12 +42,12 @@ quiz:
       isCorrect: false
       explanation: "A storage account connection string contains all the information needed to connect to Blob storage, most importantly the account name and the account key."
   
-  - content: "What happens when you call `GetBlockBlobReference` with the name of a blob?"
+  - content: "What happens when you obtain a `BlobClient` reference from `BlobContainerClient` with the name of a blob?"
     choices:
     - content: "A new block blob is created in storage."
       isCorrect: false
       explanation: "Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob."
-    - content: "A `CloudBlockBlob` object is created locally. No network calls are made."
+    - content: "A `BlobClient` object is created locally. No network calls are made."
       isCorrect: true
       explanation: "Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob."
     - content: "An exception is thrown if the blob does not exist in storage."
