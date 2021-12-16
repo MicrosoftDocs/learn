@@ -98,7 +98,7 @@ six==1.16.0
 > [!NOTE]
 > The reason that the preceding list contains more than just `pipdate` is that `pipdate` itself relies on other libraries that are also fetched.
 
-To ensure the these packages exist only in your virtual environment, try stepping out of that environment by calling `deactivate` for macOS:
+To ensure that these packages exist only in your virtual environment, try stepping out of that environment by calling `deactivate` for macOS:
 
 ```bash
 deactivate
