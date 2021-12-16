@@ -66,7 +66,7 @@
     * Depth Submission Mode: **Depth 16 Bit**
     * Interaction Profiles: **Microsoft Hand Interaction Profile**
 
-    :::image type="content" source="../../media/project-settings-window-4.png" alt-text="Screenshot of Project Settings Window 4." lightbox="../../media/project-settings-window-3.png":::
+    :::image type="content" source="../../media/project-settings-window-4.png" alt-text="Screenshot of Project Settings Window 4." lightbox="../../media/project-settings-window-4.png":::
 
     > [!TIP]
     > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more about this topic, refer to  [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).

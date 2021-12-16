@@ -20,7 +20,6 @@ We call a function by using its name along with its input arguments in parenthes
 
 You might have noticed that we defined the `goodbye` function after the `main` function. We could have defined the `goodbye` function before we defined `main`. Rust doesn't care where in the file you define your functions, as long as they're defined somewhere in the file.
 
-
 ## Pass input arguments
 
 When a function has input arguments, we name each argument and specify the data type at the start of the function declaration. Because arguments are named like variables, we can access the arguments in the function body.
@@ -46,7 +45,6 @@ We'll test our function by calling it from the `main` function with two differen
 Formal: Good bye.
 Casual: See you later!
 ```
-
 
 ## Return a value
 
@@ -77,7 +75,7 @@ Here's an example that explicitly uses the `return` keyword to return early from
 
 ```rust
 fn divide_by_5(num: u32) -> u32 {
-    todo!("Check if num is 0") {
+    if num == 0 {
         // Return early
         return 0;
     }
@@ -87,10 +85,9 @@ fn divide_by_5(num: u32) -> u32 {
 
 When you explicitly use the `return` keyword, you end the statement with a semicolon. If you send back a return value without using the `return` keyword, you don't end the statement with a semicolon. You might have noticed that we didn't use the ending semicolon for the `num / 5` return value statement.
 
-
 ## Review the signature
 
-The first part of the declaration for a function is called the *function signature*. 
+The first part of the declaration for a function is called the *function signature*.
 
 The signature for the `goodbye` function in our example has these characteristics:
 
@@ -102,7 +99,6 @@ The signature for the `goodbye` function in our example has these characteristic
 The `goodbye` function accepts one string pointer as input and outputs a boolean value.
 
 You can interact with the example code in this [Rust Playground][RustPlay-func].
-
 
 <!-- Links -->
 
