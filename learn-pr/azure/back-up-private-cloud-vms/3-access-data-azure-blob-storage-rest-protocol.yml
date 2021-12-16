@@ -9,6 +9,7 @@ metadata:
   author: AnuSridhar-25
   ms.author: v-anursr
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/3-access-data-azure-blob-storage-rest-protocol.md)]
