@@ -3,7 +3,7 @@ uid: learn.beginner-python.use-boolean-types.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge on Python Boolean logic.
+  description: Check your knowledge about using Boolean logic in Python.
   ms.date: 12/02/2021
   author: ornelladotcom
   ms.author: chnoring
@@ -14,36 +14,36 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Under what conditions is a test expression that uses the `and` operator `true`?"
+  - content: "Under what conditions does a test expression that uses the `and` operator evaluate to `true`?"
     choices:
-    - content: "A test expression uses the `and` operator `true` when both subexpressions are true."
+    - content: "A test expression that uses the `and` operator evaluates to `true` when both subexpressions are true."
       isCorrect: true
-      explanation: "Correct! Both conditions in the test expression must be true in order for the entire test expression to be true. "
-    - content: "A test expression uses the `and` operator `true` when  one subexpression is true and the other is false."
+      explanation: "Correct! Both conditions in the test expression must be true for the entire test expression to evaluate to `true`. "
+    - content: "A test expression that uses the `and` operator evaluates to `true` when one subexpression is true and the other is false."
       isCorrect: false
-      explanation: "This answer is true for the `or` operator, but not the `and` operator."
-    - content: "A test expression uses the `and` operator `true` when both subexpressions are false."
+      explanation: "Incorrect. This answer is true for the `or` operator, but not the `and` operator."
+    - content: "A test expression that uses the `and` operator evaluates to `true` when both subexpressions are false."
       isCorrect: false
-      explanation: "A test expression uses the `and` operator `true` when both subexpressions are false, the value of the whole test expression is also false."
-  - content: "What is the key word `elif` short for in Python?"
+      explanation: "Incorrect. If a test expression uses the `and` operator and both subexpressions are false, the value of the whole test expression evaluates to `false`."
+  - content: "What is the keyword `elif` short for in Python?"
     choices:
     - content: "else if"
       isCorrect: true
-      explanation: "Correct! You can use the `elif` key word to add multiple test expressions to your program."
+      explanation: "Correct! You can use the `elif` keyword to add multiple test expressions to your program."
     - content: "only if"
       isCorrect: false
-      explanation: "If you want to execute a code block 'only if' a condition is true, you might use an `if` statement."
+      explanation: "Incorrect. If you want to run a code block only if a certain condition is true, you might use an `if` statement."
     - content: "else"
       isCorrect: false
-      explanation: "`else` is a separate key word in Python."
-  - content: "What values as a test expression are always interpreted as `False`?"
+      explanation: "Incorrect. `else` is a separate keyword in Python."
+  - content: "What values in a test expression are always interpreted as false?"
     choices:
     - content: "Any non-zero values."
       isCorrect: false
-      explanation: "Some non-zero values may be `False`, depending on the test expression."
+      explanation: "Incorrect. Some non-zero values might be false, depending on the test expression."
     - content: "Empty."
       isCorrect: false
-      explanation: "Empty is not a valid Python value."
+      explanation: "Incorrect. Empty is not a valid Python value."
     - content: "None and 0."
       isCorrect: true
-      explanation: "Correct! None and 0 are interpreted as `False` in Python."
+      explanation: "Correct! None and 0 are interpreted as false in Python."

@@ -2,7 +2,7 @@
 uid: learn.beginner-python.use-boolean-types
 metadata:
   title: Use Boolean types in Python
-  description: Explore how to use the Boolean type in Python to craft complex expressions using conditional logic.
+  description: Explore how to use the Boolean type in Python to craft complex expressions that apply conditional logic.
   ms.date: 12/02/2021
   author: ornelladotcom
   ms.author: chnoring
@@ -10,13 +10,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 title: Use Boolean types in Python
-summary: Explore how to use the Boolean type in Python to craft complex expressions using conditional logic.
+summary: Explore how to use the Boolean type in Python to craft complex expressions that apply conditional logic.
 abstract: | 
   By the end of this module, you'll be able to:
   - Use `if`, `else`, and `elif` statements to execute code under specific conditions.
   - Use `and` and `or` types to combine conditional logic and create more complex conditions.
 prerequisites: | 
-  - Basic Python programming knowledge which includes use of variables, strings, integers and math.
+  - Basic Python programming knowledge, which includes the use of variables, strings, integers, and math.
   - Experience modifying and running code in Jupyter notebooks.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

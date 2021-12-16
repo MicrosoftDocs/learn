@@ -2,7 +2,7 @@ Booleans are a common type in Python. Their value can only ever be one of two th
 
 ## Scenario: Print warning messages
 
-Suppose you are creating a program that warns the people of earth if a large, fast asteroid is zooming towards earth. You'd want to print a warning message when the asteroid is large and fast enough, but otherwise, you'd want to let folks go on with their day. To do this, you would have to find a way to reason whether a condition is true or false. 
+Suppose you're creating a program that will alert people worldwide if a large, fast asteroid is zooming toward our planet. If the asteroid is close enough to earth to be of danger, you want to print a warning message on people's devices. If there's no danger, you want to let folks know that, so they can go on with their day. To provide these messages, you would have to find a way to reason whether a condition is true or false. 
 
 In this module, you'll use Boolean types to write several types of conditional expressions.
 
@@ -10,9 +10,9 @@ In this module, you'll use Boolean types to write several types of conditional e
 
 By the end of this module, you'll be able to:
 
-- Execute code under specific conditions using `if`, `else`, and `elif` statements.
-- Combine conditional logic and create more complex conditions using `and` and `or` operators.
+- Execute code under specific conditions by using `if`, `else`, and `elif` statements.
+- Combine conditional logic and create more complex conditions by using `and` and `or` operators.
 
 ## What is the main objective?
 
-Use conditional logic to create decision-driven programs.
+This module teaches you how to use conditional logic to create decision-driven programs.

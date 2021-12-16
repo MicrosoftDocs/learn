@@ -1,10 +1,10 @@
-What if you also want your program to execute a piece of code when your test expression is False? Or if you want to include an another test expression? Python has other keywords you can use to make more complex if statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to execute. 
+What if you also want your program to run a piece of code when your test expression is `false`? Or what if you want to include another test expression? Python has other keywords you can use to make more complex `if` statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to run. 
 
-## Work with else
+## Work with `else`
 
-We know that when we use an `if` statement, the body of the program will only execute if the test expression is `True`. To add more code that will run when your test expression is false, you'll need to add an `else` statement.
+You know that when you use an `if` statement, the body of the program will run only if the test expression is `true`. To add more code that will run when your test expression is `false`, you need to add an `else` statement.
 
-Let's go back to our example from the previous section:
+Let's go back to the example from the previous section:
 
 ```python
 a = 93
@@ -13,7 +13,7 @@ if a >= b:
     print(a)
 ```
 
-In this example, if `a` is not greater than or equal to `b`, nothing happens. Let's say you wanted to instead print `b` if the test expression is false:
+In this example, if `a` is not greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `false`:
 
 ```python
 a = 93
@@ -24,18 +24,18 @@ else:
     print(b)
 ```
 
-If the test expression is `False`, the code in the body of the `if` statement is skipped, and the program continues executing from the else statement. The syntax of an `if/else` statement will always be:
+If the test expression is `false`, the code in the body of the `if` statement is skipped, and the program continues running from the `else` statement. The syntax of an `if/else` statement is always:
 
 ```python
 if test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 else:
-    # statement(s) to be executed
+    # statement(s) to be run
 ```
 
-## Work with elif
+## Work with `elif`
 
-In Python, the key word `elif` is short for else if. Using `elif` statements enables you to add multiple test expressions to your program. These statements execute in the order they are written, so your program will only enter an `elif` statement if the first `if` statement is `False`. For example:
+In Python, the key word `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `false`. For example:
 
 ```python
 a = 93
@@ -46,22 +46,22 @@ elif a == b:
     print("a is equal to b")
 ```
 
-The `elif` statement in this block of code will not execute, since the `if` statement is `True`.
+The `elif` statement in this block of code will not run, because the `if` statement is `true`.
 
 The syntax of an `if/elif` statement is:
 
 ```python
 if test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 elif test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 ```
 
-## Combine if, elif, and else statements
+## Combine `if`, `elif`, and `else` statements
 
-You can combine `if`, `elif`, and `else` statements to create programs with complex conditional logic. Remember that `elif` statements are only executed when the `if` condition is `False`.  Also note that an `if` block can only have one `else` block, but it can have multiple `elif` blocks.
+You can combine `if`, `elif`, and `else` statements to create programs with complex conditional logic. Remember that an `elif` statement is run only when the `if` condition is `false`.  Also note that an `if` block can have only one `else` block, but it can have multiple `elif` blocks.
 
-Let's look at our example again with an added `elif` statement:
+Let's look at the example again with an added `elif` statement:
 
 ```python
 a = 93
@@ -74,22 +74,22 @@ else:
     print ("a is equal to b")    
 ```
 
-The syntax of a code block that uses all three types of statements is:
+A code block that uses all three types of statements has the following syntax:
 
 ```python
 if test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 elif test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 elif test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
 else:
-    # statement(s) to be executed
+    # statement(s) to be run
 ```
 
 ## Work with nested conditional logic
 
-Python also supports nested conditional logic, meaning that you can nest `if`, `elif`, and `else` statements to create even more complex programs. To nest conditions, indent the inner conditions, and everything with the same level of indentation will be executed in the same code block:
+Python also supports nested conditional logic, meaning that you can nest `if`, `elif`, and `else` statements to create even more complex programs. To nest conditions, indent the inner conditions, and everything with the same level of indentation will be run in the same code block:
 
 ```python
 a = 16
@@ -113,17 +113,17 @@ Nested conditional logic follows the same rules as regular conditional logic wit
 
 ```python
 if test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
     if test_expression:
-        # statement(s) to be executed
+        # statement(s) to be run
     else: 
-        # statement(s) to be executed
+        # statement(s) to be run
 elif test_expression:
-    # statement(s) to be executed
+    # statement(s) to be run
     if test_expression:
-        # statement(s) to be executed
+        # statement(s) to be run
     else: 
-        # statement(s) to be executed
+        # statement(s) to be run
 else:
-    # statement(s) to be executed
+    # statement(s) to be run
 ```
