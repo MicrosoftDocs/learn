@@ -1,5 +1,7 @@
 As a developer you will frequently work with sets of data. You might need to manage multiple names, ages, or addresses. Storing each value in an individual variable makes code more difficult to read and write. To store multiple values you can use a Python list.
+
 ## Scenario: working on a planetary app
+
 Imagine your a developer who wants to create an application to work with the list of planets. You would like to ask the user for the name of a planet, and display the planets closer to and further away from the sun.
 
 In this module you will learn how to use lists, and some of the most common operations.
@@ -13,6 +15,7 @@ After completing this module, you will be able to:
 - Access a particular item in a list using indexes
 - Push items to the end of a list
 - Sort and slice a list
+
 ## What is the main objective?
 
 In this module, you'll understand when to use a list structure and how it can help organize your data.

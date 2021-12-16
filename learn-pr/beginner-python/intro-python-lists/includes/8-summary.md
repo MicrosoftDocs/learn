@@ -4,8 +4,8 @@ Python lists are an important tool when working with data. You've seen how to cr
 
 In this module, you learned how to:
 
-- identify when to use a list
-- create a list
-- access a particular item in a list using indexes
-- push items to the end of a list
-- sort and slice a list
+- Identify when to use a list
+- Create a list
+- Access a particular item in a list using indexes
+- Push items to the end of a list
+- Sort and slice a list

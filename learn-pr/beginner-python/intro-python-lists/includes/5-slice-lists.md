@@ -1,4 +1,4 @@
-You will often need to work with different portions of a list. For example, you may have a list with rainfall amounts for different months. To properly analyze this type of data you might need to look for rainfall in fall, or a 3 month period. Or you may look to sort the list in order of most rainfall to least.
+You will often need to work with different portions of a list. For example, you may have a list with rainfall amounts for different months. To properly analyze this type of data you might need to look for rainfall in fall, or a three-month period. Or you may look to sort the list in order of most rainfall to least.
 
 Python provides robust support for working with the data in lists. This includes slicing data, meaning you will examine just a portion, or sorting.
 
@@ -18,7 +18,7 @@ print(planets_before_earth)
 
 Notice how Earth is not included in the list. The reason is the index ends before the ending index, but does not include it.
 
-To get all the planets after Earth, start at the 3rd and go to 8th:
+To get all the planets after Earth, start at the third and go to eighth:
 
 ```python
 planets_after_earth = planets[3:8]
@@ -28,7 +28,7 @@ print(planets_after_earth)
 # ['Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 ```
 
-In this example, Neptune is displayed. The reason is the index for Neptune is `7`, because indexing starts at `0`. Because our ending index was `8` it includes the last value. If you don't put the stop index in the slice, Python assumes you want to go to the end of the list:
+In this example, Neptune is displayed. The reason is the index for Neptune is `7`, because indexing starts at `0`. Because our ending index was `8`, it includes the last value. If you don't put the stop index in the slice, Python assumes you want to go to the end of the list:
 
 ```python
 planets_after_earth = planets[3:]
@@ -43,13 +43,13 @@ print(planets_after_earth)
 
 ## Joining lists
 
-You've seen how you can use slices to split lists up, but what about joining them back together?
+You've seen how you can use slices to split up lists, but what about joining them back together?
 
-To join two lists, you use the additional operator (`+`) with two lists to return a new list.
+To join two lists, you use the other operator (`+`) with two lists to return a new list.
 
-There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede and Callisto. These are known as the Galilean moons as they were discovered by Galileo Galilei using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea Group consisting of the moons, Metis, Adrastea, Amalthea, and Thebe.
+There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede, and Callisto. These are known as the Galilean moons as they were discovered by Galileo Galilei using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea Group consisting of the moons, Metis, Adrastea, Amalthea, and Thebe.
 
-Create two lists, the first with the 4 Amalthea moons and a list of the Galilean moons. Join them together using `+` to make a new list:
+Create two lists, the first with the four Amalthea moons and a list of the Galilean moons. Join them together using `+` to make a new list:
 
 ```python
 amalthea_group = ["Metis", "Adrastea", "Amalthea", "Thebe"]
