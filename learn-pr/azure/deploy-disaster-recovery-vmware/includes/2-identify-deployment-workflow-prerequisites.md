@@ -54,7 +54,8 @@ Before you can deploy protection for your on-premises VMware vCenter site to the
 
   - Azure Virtual WAN
 
-  [!NOTE] We recommend at least 2 gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
+> [!NOTE]
+> We recommend at least 2 gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
 
 - Name resolution: You must implement Domain Name System (DNS) resolution between on-premises SRM and virtual cloud appliances. You can use both public DNS and private DNS. With a support request, you can configure private DNS for Azure VMware Solution with appropriate conditional forwarding rules.
 
