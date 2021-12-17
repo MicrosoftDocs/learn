@@ -16,7 +16,7 @@ abstract: |
   - Use `if`, `else`, and `elif` statements to execute code under various conditions.
   - Use `and` and `or` operators to combine conditional logic and create more complex conditions.
 prerequisites: | 
-  - Basic Python programming knowledge, which includes the use of variables, strings, integers, and math.
+  - Basic Python programming knowledge, including the use of variables, strings, integers, and math.
   - Experience modifying and running code in Jupyter notebooks.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
