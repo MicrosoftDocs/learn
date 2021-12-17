@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.beginner-python.create-manage-projects
+metadata:
+  title: Create and manage projects in Python
+  description: Learn how to create and manage projects in python. Use virtual environments and packages.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Create and manage projects in Python
+summary: To manage projects, you need a virtual environment, packages that will help you develop faster and a strategy for maintaining packages.
+abstract: |
+  In this module, you will:
+  - Create a Python project.
+  - Develop and run your code in isolation on a machine.
+  - Use libraries written by someone else.
+  - Restore a project from a list of dependencies it consists of.
+prerequisites: |
+  - Be familiar with using the terminal.
+  - Know how to run commands from the terminal.
+  - Recommended to have written a program or two in Python.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+units:
+  - learn.beginner-python.create-manage-projects.introduction
+  - learn.beginner-python.create-manage-projects.set-up-project
+  - learn.beginner-python.create-manage-projects.exercise-create-package
+  - learn.beginner-python.create-manage-projects.work-with-project-files
+  - learn.beginner-python.create-manage-projects.exercise-manage-project-file
+  - learn.beginner-python.create-manage-projects.knowledge-check
+  - learn.beginner-python.create-manage-projects.summary
+badge:
+  uid: learn.beginner-python.create-manage-projects.badge
