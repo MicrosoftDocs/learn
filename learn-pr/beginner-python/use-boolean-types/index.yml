@@ -9,12 +9,12 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-title: Use Boolean types in Python
-summary: Explore how to use the Boolean type in Python to craft complex expressions that apply conditional logic.
+title: Use Boolean logic in Python
+summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
 abstract: | 
   By the end of this module, you'll be able to:
-  - Use `if`, `else`, and `elif` statements to execute code under specific conditions.
-  - Use `and` and `or` types to combine conditional logic and create more complex conditions.
+  - Use `if`, `else`, and `elif` statements to execute code under various conditions.
+  - Use `and` and `or` operators to combine conditional logic and create more complex conditions.
 prerequisites: | 
   - Basic Python programming knowledge, which includes the use of variables, strings, integers, and math.
   - Experience modifying and running code in Jupyter notebooks.
