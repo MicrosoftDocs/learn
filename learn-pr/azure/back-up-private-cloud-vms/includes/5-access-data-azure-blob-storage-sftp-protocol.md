@@ -6,11 +6,13 @@ The SFTP protocol transfers data using an SSH connection. For authentication, yo
 
 Blob Storage supports the SFTP protocol on storage accounts enabled with a hierarchical namespace, such as a Data Lake Storage Gen2 account. You can use SFTP clients such as OpenSSH or PuTTY to connect securely from anywhere and to interact with Azure Blob Storage account as a file system.
 
-**Note**: For SFTP-enabled Azure storage accounts, you cannot use GRS or geo-zone-redundant storage (GZRS).
+> [!NOTE]
+> For SFTP-enabled Azure storage accounts, you cannot use GRS or geo-zone-redundant storage (GZRS).
 
 With an SFTP-enabled storage account, you can create local users and grant them access to multiple root containers. You can specify Read, Write, Create, List, and Delete permissions for each container. The SFTP clients use these local users for authentication purposes. You can also configure the home directory of a user so the SFTP client can connect to that directory.
 
-**Note**: SFTP clients cannot use Azure Active Directory (Azure AD) authentication or Shared Access Signature (SAS).
+> [!NOTE]
+> SFTP clients cannot use Azure Active Directory (Azure AD) authentication or Shared Access Signature (SAS).
 
 Use the following procedure to enable support for SFTP and create local users, and then configure their container permissions:
 
@@ -32,7 +34,8 @@ Use the following procedure to enable support for SFTP and create local users, a
 
 8. Select the **Add button** to add the local user.
 
-**Note**: If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
+> [!NOTE]
+> If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
 
 9. Use an SFTP client to establish an SSH connection to your Azure storage account.
 
@@ -54,6 +57,7 @@ ls
 Get <nameoftheblob>
 ```
 
-**Note**: Accounts that have SFTP enabled do not support GRS, GZRS, read-access geo-redundant storage (RA-GRS), and read-access geo-zone-redundant storage (RA-GZRS).
+> [!NOTE]
+> Accounts that have SFTP enabled do not support GRS, GZRS, read-access geo-redundant storage (RA-GRS), and read-access geo-zone-redundant storage (RA-GZRS).
 
 To access Blob Storage using SFTP, your firewall must allow traffic on TCP port 22. You can optimize performance if you are using an SFTP client that supports multiple concurrent connections. Some SFTP clients support a higher buffer size, which improves the upload performance. However, the maximum upload file size is limited by the client message size.
