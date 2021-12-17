@@ -13,7 +13,7 @@ let logEntryWednesday = "third entry"
 In this code, you can continue adding one similar entry after another, but at some point that approach begins to feel impractical. The separate entries are not only related but are, in fact, of the same type. Is it a good idea to create a new variable for each entry? Probably not. Instead, consider using a collection, where you can create a logical, manageable grouping, whether it's adding or removing data or using some other operation:
 
 ```fsharp
-logEntriesWeek = ["first entry", "second entry"; "third entry"]
+logEntriesWeek = ["first entry"; "second entry"; "third entry"]
 ```
 
 This code not only requires a lot less typing, but it also creates a sense of order, where everything that's related is grouped together.
@@ -49,7 +49,7 @@ let cards = [
 In lists, elements must be of the same type, so the following declaration is not permitted:
 
 ```fsharp
-let cards = [ 1, "Ace", "King" ] // not permitted
+let cards = [ 1; "Ace"; "King" ] // not permitted
 ```
 
 In this code, because the declaration mixes numbers and strings, it isn't permitted. Another way to create a list is to use a range operator (`..`). The idea is to specify the start and end elements, separated by a range operator (`..`). Doing so creates all the numbers from start to end, including the in-between elements. For example, you can create the numbers `1 2 3 4 5` by using the following code:
@@ -66,7 +66,7 @@ As we mentioned, lists are immutable, which means that they can't change. By thi
 let cards = ["Ace"; "King"; "Queen"]
 ```
 
-The preceding code is a list consisting of three strings. By using a double colon (`::`) operator, you can prepend an item to the list. The result is a new list, and the old list is unaffected:
+The preceding code is a list consisting of three strings. By using a double colon (`::`) operator, you can append an item to the beginning of a list. The result is a new list, and the old list is unaffected:
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
