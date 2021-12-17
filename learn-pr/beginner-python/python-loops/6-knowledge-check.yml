@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "What statement would loop over the sequence **collection** and assign the variable **item**?"
     choices:
-    - content: "foreach item in collection:"
+    - content: "for each item in collection:"
       isCorrect: false
-      explanation: "Incorrect. Python uses for, not foreach. The correct answer is `for item in collection:`"
+      explanation: "Incorrect. Python uses for, not for each. The correct answer is `for item in collection:`"
     - content: "for item in collection:"
       isCorrect: true
       explanation: "Correct! for variable in sequence is the right syntax."

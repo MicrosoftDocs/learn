@@ -7,11 +7,11 @@ A `while` loop performs an operation **while** a condition is true. You could lo
 > [!IMPORTANT]
 > The most important thing to remember about `while` loops is to ensure the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
 
-The syntax of a while loop is similar to that of an `if` statement. You provide the condition, then the code you wish to run while the condition is true. It has 3 important parts:
+The syntax of a while loop is similar to that of an `if` statement. You provide the condition, then the code you wish to run while the condition is true. It has three important parts:
 
-1. The word `while` followed by a space.
-1. The condition you will test; if the condition is true the code inside the `while` loop will run.
-1. The code you want to run for each item in the iterable, separated by nested whitespace.
+- The word `while` followed by a space.
+- The condition you will test; if the condition is true the code inside the `while` loop will run.
+- The code you want to run for each item in the iterable, separated by nested whitespace.
 
 ```python
 while condition:

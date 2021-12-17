@@ -31,13 +31,13 @@ for number in countdown:
 print("Blast off!! 🚀")
 ```
 
-The for-loop is a statement with 5 important parts:
+The for-loop is a statement with five important parts:
 
-1. The word `for` followed by a space.
-1. The variable name you want to create for each value in the sequence (`number`).
-1. The word `in` surrounded by spaces.
-1. The name of the list (`countdown`), or iterable you want to loop over following by a colon (`:`).
-1. The code you want to run for each item in the iterable, separated by nested whitespace.
+- The word `for` followed by a space.
+- The variable name you want to create for each value in the sequence (`number`).
+- The word `in` surrounded by spaces.
+- The name of the list (`countdown`), or iterable you want to loop over following by a colon (`:`).
+- The code you want to run for each item in the iterable, separated by nested whitespace.
 
 Lets change that code to wait for 1 second between each number by using the `sleep()` function:
 
