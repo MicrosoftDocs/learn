@@ -8,8 +8,8 @@ To configure site pairing, perform the following steps:
 
 2. In the jump box VM, open a browser and connect to the private cloud vCenter and NSX-T Manager using credentials that you can retrieve from the **Identity** pane in your Azure VMware Solution private cloud.
 
-> [!NOTE]
-> The first time you attempt to connect to vCenter, you’ll be prompted to use either a Flash-based vSphere web client or an HTML5-based client. We recommend you use the HTML5-based client.
+    > [!NOTE]
+    > The first time you attempt to connect to vCenter, you’ll be prompted to use either a Flash-based vSphere web client or an HTML5-based client. We recommend you use the HTML5-based client.
 
 3. In the vSphere web client, select **Menu**, and then select **Site Recovery**.
 
@@ -23,7 +23,7 @@ To configure site pairing, perform the following steps:
 
 8. Provide the username and password, and then select **Next**.
 
-:::image type="content"  source="../media/5-site-pair-details.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
+    :::image type="content"  source="../media/5-site-pair-details.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
 
 The address that you provide for the Platform Services Controller must exactly match the address that you provided when you installed Site Recovery Manager Server on the recovery site.                               
 
@@ -64,8 +64,8 @@ Use the following procedure to configure replication for the VM:
 
 2. On the **Site Recovery** home tab, select a site pair, and then select **View Details**.
 
-> [!NOTE]
-> You might be prompted to sign in with **cloudadmin** credentials.
+    > [!NOTE]
+    > You might be prompted to sign in with **cloudadmin** credentials.
 
 3. Select the **Replication** tab, and then select **New**.
 
@@ -81,10 +81,10 @@ Use the following procedure to configure replication for the VM:
 
 9. On the **Ready to complete** page, review your settings, and then select **Finish**.
 
-> [!NOTE]
-> You can configure replications for powered-off VMs, but the data synchronization begins when the VM is powered on. While the source VM is powered off, the replication displays a **Not active** status. 
+    > [!NOTE]
+    > You can configure replications for powered-off VMs, but the data synchronization begins when the VM is powered on. While the source VM is powered off, the replication displays a **Not active** status. 
 
-:::image type="content"  source="../media/5-replication-settings.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings.":::
+    :::image type="content"  source="../media/5-replication-settings.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings.":::
 
 ### Create and manage protection groups
 
@@ -100,8 +100,8 @@ Use the following procedure to create vSphere Replication protection groups:
 
 2. On the **Site Recovery** home tab, select a site pair, and then select **View Details**.
 
-> [!NOTE]
-> You might be prompted to sign in with **cloudadmin** credentials.
+    > [!NOTE]
+    > You might be prompted to sign in with **cloudadmin** credentials.
 
 3. Select the **Protection Groups** tab, and then select **New** to create a protection group.
 
@@ -111,16 +111,16 @@ Use the following procedure to create vSphere Replication protection groups:
 
 6. Select VMs from the list to add to the protection group, and then select **Next**.
 
-> [!NOTE]
-> Only VMs that you configure for vSphere Replication and that aren’t already in a protection group are in the list.
+    > [!NOTE]
+    > Only VMs that you configure for vSphere Replication and that aren’t already in a protection group are in the list.
 
 7. On the **Recovery plan** page, you can optionally add the protection group to a recovery plan by selecting one of the options listed in the following table..
 
-| **Option**                          | **Description**                                              |
-| ----------------------------------- | ------------------------------------------------------------ |
-| **Add to existing recovery plan**   | Adds  the protection group to an existing recovery plan.     |
-| **Add to new recovery plan**        | Adds  the protection group to a new recovery plan. If you select this option, you  must enter a recovery plan name. |
-| **Do not add to recovery plan now** | Select  this option if you don’t want to add the protection group to a recovery plan. |
+    | **Option**                          | **Description**                                              |
+    | ----------------------------------- | ------------------------------------------------------------ |
+    | **Add to existing recovery plan**   | Adds  the protection group to an existing recovery plan.     |
+    | **Add to new recovery plan**        | Adds  the protection group to a new recovery plan. If you select this option, you  must enter a recovery plan name. |
+    | **Do not add to recovery plan now** | Select  this option if you don’t want to add the protection group to a recovery plan. |
 
 8. Review your settings, and then select **Finish**. 
 
@@ -136,8 +136,8 @@ Use the following procedure to create a recovery plan:
 
 2. On the **Site Recovery** home tab, select a site pair, and then select **View Details**.
 
-> [!NOTE]
-> You might be prompted to sign in with **cloudadmin** credentials.
+    > [!NOTE]
+    > You might be prompted to sign in with **cloudadmin** credentials.
 
 3. Select the **Recovery Plans** tab, and then select **New** to create a recovery plan.
 
