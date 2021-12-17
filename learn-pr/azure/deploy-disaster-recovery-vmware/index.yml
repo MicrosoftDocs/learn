@@ -26,11 +26,9 @@ levels:
 roles:
   - administrator
   - developer
-  - data-engineer
   - solution-architect
 products:
   - azure-vmware-solution
-
 units:
 - learn.azure.deploy-disaster-recovery-vmware.1-introduction
 - learn.azure.deploy-disaster-recovery-vmware.2-identify-deployment-workflow-prerequisites
