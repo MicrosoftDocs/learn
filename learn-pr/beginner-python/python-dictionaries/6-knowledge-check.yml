@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.python-dictionaries.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: "Knowledge check: Python dictionaries" # user input: module title for browser tab and search results
-  description: "Check your knowledge! Python dictionaries." # user input: a description for site search and SEO
+  title: Knowledge check - Python dictionaries
+  description: Check your knowledge! Python dictionaries.
   ms.date: 12/08/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 1
 content: |
 quiz:
   questions:

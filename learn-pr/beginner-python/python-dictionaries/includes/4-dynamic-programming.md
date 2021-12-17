@@ -1,4 +1,4 @@
-In our program we want to perform various calculations, like totalling the number of moons. Additionally, as we get into more advanced programming we may find we're loading this type of information from files or a database rather than having it coded directly into a Python file.
+In our program we want to perform various calculations, like totaling the number of moons. Additionally, as we get into more advanced programming we may find we're loading this type of information from files or a database rather than having it coded directly into a Python file.
 
 To help support these scenarios, Python allows you to treat both the keys and values inside of a dictionary as a list. This enables us to dynamically determine keys and values, and perform various calculations.
 

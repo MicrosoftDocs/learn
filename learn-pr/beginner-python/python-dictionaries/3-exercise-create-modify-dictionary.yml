@@ -3,14 +3,14 @@ uid: learn.beginner-python.python-dictionaries.exercise-create-modify
 title: Exercise - Create Python dictionaries
 metadata:
   unitType: exercise
-  title: Exercise - Create Python dictionaries # user input: module title for browser tab and search results
-  description: "In this exercise you will create and modify data in a Python dictionary." # user input: a description for site search and SEO
+  title: Exercise - Create Python dictionaries
+  description: In this exercise, you'll create and modify data in a Python dictionary.
   ms.date: 12/08/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 1
 sandbox: true
 notebook: notebooks/3-exercise-create-modify.ipynb
