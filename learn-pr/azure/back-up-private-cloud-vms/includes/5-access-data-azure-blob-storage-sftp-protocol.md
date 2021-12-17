@@ -19,12 +19,12 @@ Use the following procedure to enable support for SFTP and create local users, a
 1. In the Azure portal, navigate to your storage account (you can also enable SFTP in the account creation process).
 2. Under **Settings**, select **SFTP**, and then select **enable SFTP.**
 
-  :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot displaying the SFTP settings. The Enable SFTP option is selected.":::
+    :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot displaying the SFTP settings. The Enable SFTP option is selected.":::
 
 3. While you are still in the **SFTP settings,** select **Add local user**.
 4. In the **Add local user** configuration pane, add the name of a user, and then select the method (or methods) of authentication that you'd like to associate with this local user. You can associate a password and/or an SSH key.
 
-  :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot of the Add local user dialog, The Secure with a password and Secure with SSH public key options are selected.":::
+    :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot of the Add local user dialog, The Secure with a password and Secure with SSH public key options are selected.":::
 
 5. Select **Next** to open the **Container permissions** tab of the configuration pane.
 
@@ -34,30 +34,30 @@ Use the following procedure to enable support for SFTP and create local users, a
 
 8. Select the **Add button** to add the local user.
 
-  > [!NOTE]
-  > If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
+    > [!NOTE]
+    > If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
 
 9. Use an SFTP client to establish an SSH connection to your Azure storage account.
 
-```azurecli
-# Connect to Blob Storage account with a local user that has a home directory
+    ```azurecli
+    # Connect to Blob Storage account with a local user that has a home directory
+    
+    sftp <myaccount>.<myusername>@<myaccount>.blob.core.windows.net
+    
+    # Connect to Blob Storage account with a local user that doesn’t have a home directory
+    
+    sftp <myaccount>.<mycontainer>.<myusername>@<myaccount>.blob.core.windows.net
+    
+    # List the content in the azure storage account container
 
-sftp <myaccount>.<myusername>@<myaccount>.blob.core.windows.net
+    ls
+    
+    # Download files from the storage account
+    
+    Get <nameoftheblob>
+    ```
 
-# Connect to Blob Storage account with a local user that doesn’t have a home directory
-
-sftp <myaccount>.<mycontainer>.<myusername>@<myaccount>.blob.core.windows.net
-
-# List the content in the azure storage account container
-
-ls
-
-# Download files from the storage account
-
-Get <nameoftheblob>
-```
-
-> [!NOTE]
-> Accounts that have SFTP enabled do not support GRS, GZRS, read-access geo-redundant storage (RA-GRS), and read-access geo-zone-redundant storage (RA-GZRS).
+    > [!NOTE]
+    > Accounts that have SFTP enabled do not support GRS, GZRS, read-access geo-redundant storage (RA-GRS), and read-access geo-zone-redundant storage (RA-GZRS).
 
 To access Blob Storage using SFTP, your firewall must allow traffic on TCP port 22. You can optimize performance if you are using an SFTP client that supports multiple concurrent connections. Some SFTP clients support a higher buffer size, which improves the upload performance. However, the maximum upload file size is limited by the client message size.
