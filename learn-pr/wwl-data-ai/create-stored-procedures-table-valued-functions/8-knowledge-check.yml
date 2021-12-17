@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/16/2021
+  ms.date: 12/17/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. The recordset does not contain the value in the output parameter."
     - content: "Declare a variable and pass it as an output parameter when you execute the stored procedure"
       isCorrect: true
-      explanation: "Correct. You need to create a variable that will be populated with the value in the ouput parameter when the procedure is run."
+      explanation: "Correct. You need to create a variable that will be populated with the value in the output parameter when the procedure is run."
     - content: "Declare a variable inside the stored procedure and then view it after you run the stored procedure"
       isCorrect: false
       explanation: "Incorrect. You cannot view values in variables inside the stored procedure."
