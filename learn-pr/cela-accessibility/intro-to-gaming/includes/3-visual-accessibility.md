@@ -1,4 +1,4 @@
-In the previous unit, you learned about the process of how games are played from the viewpoint of accessibility. This process begins with games providing information to the player through sensory channels like vision, audio, and touch, which is also known as *haptics*.
+In the previous unit, you learned about the process of how games are played through the lens of accessibility. This process begins with games providing information to the player through sensory channels like vision, audio, and touch, which is also known as *haptics*.
 
 In this unit, you'll learn about the relationship between the portrayal of visual information and a player's ability to consume and use this information to inform play.
 
