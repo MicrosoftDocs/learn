@@ -8,7 +8,8 @@ Blob Storage supports the NFS 3.0 protocol, which provides users with the follow
 - You can benefit from media processing, which often requires high throughput and high scale.
 - Linux clients can seamlessly mount a container in Blob Storage.
 
-**Note**: Windows client for NFS is not yet supported.
+> [!NOTE]
+> Windows client for NFS is not yet supported.
 
 Blob Storage support for the NFS 3.0 protocol requires a hierarchical namespace, which Azure Data Lake Storage Gen2 offers. Azure stores all the data in the storage account that’s enabled for NFS 3.0 support as block blobs. 
 
@@ -37,7 +38,7 @@ Perform the following tasks to enable NFS support in your Azure Blob Storage:
 ```
 Sudo mount -o sec=sys,vers=3,nolock,proto=tcp <nameofthestorageaccount>.blob.core.windows.net:/<nameofthestorageaccount>/<nameofthecontainer>  /mnt/blob
 ```
-
-**Note:** When you create an NFS 3.0 storage account, the GRS, GZRS, and RA-GRS redundancy options aren’t supported.
+> [!NOTE]
+> When you create an NFS 3.0 storage account, the GRS, GZRS, and RA-GRS redundancy options aren’t supported.
 
 You can optimize the performance of the storage request used by the NFS client by adding more clients, or by using an Azure premium block blob storage account.
