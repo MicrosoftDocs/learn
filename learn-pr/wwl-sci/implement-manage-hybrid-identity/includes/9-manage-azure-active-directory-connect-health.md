@@ -169,7 +169,7 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 Now the listed users and groups have access, according to their assigned roles.
 
 > [!NOTE]
-> &gt;- Global administrators always have full access to all the operations, but global administrator accounts are not present in the preceding list.
+> Global administrators always have full access to all the operations, but global administrator accounts are not present in the preceding list.
 
  -  The Invite Users feature is not supported within Azure AD Connect Health.
 
@@ -191,32 +191,7 @@ You can remove a user or a group added to Azure AD Connect Health and Azure RBAC
 :::image type="content" source="../media/role-based-access-control-remove-7649ef67.png" alt-text="Screenshot of Azure AD Connect Health and Azure RBAC with Remove highlighted":::
 
 
-## Demo: Azure AD Connect Health monitors on-premises AD Domain Services
-
-:::row:::
-  :::column:::
-     **Video Temporarily Disabled - Channel9 content is moving to Microsoft Learn, so the video link is currently offline.**
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    :::image type="content" source="../media/video-icon-c027595e.png" alt-text="Icon indicating play video":::
-
-  :::column-end:::
-  :::column:::
-    Watch this video to learn more about using Azure AD Connect Health for monitoring.
-  :::column-end:::
-:::row-end:::
-
-
-```
-
-```
-
-## Diagnose and remediate duplicated attribute sync errors
+## Diagnose and remediate duplicated attribute sync errors<br>
 
 ## Overview
 
