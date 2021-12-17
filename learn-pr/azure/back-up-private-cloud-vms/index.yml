@@ -28,8 +28,6 @@ levels:
 roles:
   - administrator
   - developer
-  - devops-engineer
-  - data-engineer
   - solution-architect
 products:
   - azure-blob-storage
