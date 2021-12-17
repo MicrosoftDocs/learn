@@ -11,7 +11,7 @@ In this module, you'll use Boolean keywords and operators to write several types
 By the end of this module, you'll be able to:
 
 - Run code under a variety of conditions by using `if`, `else`, and `elif` statements.
-- Combine conditional logic and create more complex conditions by using `and` and `or` operators.
+- Combine conditional logic statements and create more complex conditions by using `and` and `or` operators.
 
 ## What is the main objective?
 
