@@ -217,6 +217,9 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
         "url": "https://docs.microsoft.com/azure"
     }
     ```
+    
+    > [!NOTE]
+    > Even though you added this same code in the last exercise, it's okay becuase you're working with a new trigger: **HttpTrigger3**. It's not a duplicate bookmark.
 
 1. Select **Run**.
 
