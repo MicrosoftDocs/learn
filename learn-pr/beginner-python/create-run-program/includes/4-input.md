@@ -38,7 +38,7 @@ Jupiter
 
 ## User input
 
-Another way to pass data to the program is having the user type the data. You can code it so the program tells the user to enter information. You save that entered data in the program and then act on it. 
+Another way to pass data to the program is having the user enter the data. You can code it so the program tells the user to enter information. You save that entered data in the program and then act on it. 
 
 To capture information from the user, you use the `input()` function. Here's an example:
 

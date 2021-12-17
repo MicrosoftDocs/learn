@@ -18,13 +18,13 @@ quiz:
       choices:
         - content: The code `print('my message')`
           isCorrect: false
-          explanation: Incorrect. You need to use double quotes to print.
+          explanation: Incorrect. You need to use double quotation marks to print.
         - content: The code `println("my message")`
           isCorrect: false
           explanation: Incorrect. You need to use the `print()` function.
         - content: The code `print("my message")`
           isCorrect: true
-          explanation: Correct. You use the print function with double quotes to show strings.
+          explanation: Correct. You use the print function with double quotation marks to show strings.
     - content: If you invoke a program with `program.py 1 2`, what does the code `sys.argv[0]` contain?
       choices: 
         - content: It contains `program.py`, the name of the program.

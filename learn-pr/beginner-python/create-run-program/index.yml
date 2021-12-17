@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.beginner-python.create-run-program
 metadata:
-  title: Write your first Python program
-  description: Learn how to write your first Python program, and to print and gather input on the console.
+  title: Write your first Python programs
+  description: Learn how to write your first Python programs, and to print and gather input on the console.
   ms.date: 12/02/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-title: Write your first Python program
+title: Write your first Python programs
 summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
 abstract: |
   In this module, you will:

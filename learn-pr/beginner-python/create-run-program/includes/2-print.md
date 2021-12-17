@@ -1,8 +1,8 @@
-When you start learning any programming language, you first try out a few statements of code in a read-evaluate-print loop (REPL). You soon want to move into serious development, though, which means learning more about the language, how to structure a program, and more.
+When you start learning any programming language, you first try out a few statements of code in a read-evaluate-print loop (REPL). You soon want to move into serious development, though. That means learning more about the language, how to structure a program, and more.
 
 ## A Python program
 
-To create a program in Python, you need to store it in a file. The file should have the file extension .py.
+To create a program in Python, you need to store it in a file. The file should have the extension *.py*.
 
 The idea of a program is to do something, carry out a task. To have the program do something, you need to add statements of code that perform instructions. An instruction could print some text or calculate something, for example. An example program can look something like this:
 
@@ -28,9 +28,9 @@ Running such a program would show the following result on the console:
 
 ## The print() function
 
-One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and display information as text on the screen. 
+One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and show information as text on the screen. 
 
-To write information to the console, you can use the function `print()` implemented as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
+To write information to the console, you can use the function `print()` and implement it as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
 
 ```python
 print("show this in the console")
@@ -51,7 +51,7 @@ Traceback (most recent call last):
 TypeError: 'builtin_function_or_method' object is not subscriptable
 ```
 
-Another thing to notice is the use of quotation marks (`""`). That's how you declare a so-called string literal, like the one you're printing: "show this in the console".
+Another thing to notice is the use of double quotation marks (`""`). That's how you declare a so-called string literal, like the one you're printing: "show this in the console".
 
 ## Variables
 
@@ -86,7 +86,7 @@ can_liftoff = True
 shuttle_landed_on_the_moon = "Apollo 11" #string 
 ```
 
-How do you know what type something has? Well, if you see the data being assigned to the variable as shown in the following code, you can spot it:
+How do you know what type something has? If you see the data being assigned to the variable as shown in the following code, you can spot it:
 
 ```python
 distance_to_alpha_centauri = 4.367 # looks like a float
