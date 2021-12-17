@@ -19,4 +19,3 @@ After completing this module, you will be able to:
 ## What is the main objective?
 
 In this module, you'll understand when to use a list structure and how it can help organize your data.
-
