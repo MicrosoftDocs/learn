@@ -172,4 +172,4 @@ Use the following procedure to run a recovery plan:
 3. Choose between the recovery types **Planned migration** or **Disaster Recovery**, and then select **Next**.
 4. On the **Ready to complete** page, review your selected settings, and then select **Finish**. 
 
-:::image type="content"  source="../media/5-recovery-plan-confirmation-options.png" alt-text="Screenshot of the Confirmation options window in Azure VMware Solution with the selected recovery confirmation options.":::
+    :::image type="content"  source="../media/5-recovery-plan-confirmation-options.png" alt-text="Screenshot of the Confirmation options window in Azure VMware Solution with the selected recovery confirmation options.":::
