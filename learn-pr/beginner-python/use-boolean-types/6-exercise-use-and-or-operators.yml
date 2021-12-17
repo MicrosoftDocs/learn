@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.beginner-python.use-boolean-types.exercise-use-and-or-operators
-title: Exercise - Use `and` and `or` operators
+title: Exercise - Use 'and' and 'or' operators
 metadata:
-  title: Exercise - Use `and` and `or` operators
-  description: In this exercise, you practice using `and` and `or` operators in Python.
+  title: Exercise - Use 'and' and 'or' operators
+  description: In this exercise, you practice using 'and' and 'or' operators in Python.
   ms.date: 12/02/2021
   author: ornelladotcom
   ms.author: chnoring
