@@ -1,19 +1,16 @@
+You can restrict access to your Azure App Service app by enabling different types of authentication for it. One way to do it is to request a client certificate when the client request is over TLS/SSL and validate the certificate. This mechanism is called TLS mutual authentication or client certificate authentication. This article shows how to set up your app to use client certificate authentication If you access your site over HTTP and not HTTPS, you will not receive any client certificate. So if your application requires client certificates, you should not allow requests to your application over HTTP.
 
-You can restrict access to your Azure App Service app by enabling different types of authentication for it. One way to do it is to request a client certificate when the client request is over TLS/SSL and validate the certificate. This mechanism is called TLS mutual authentication or client certificate authentication. This article shows how to set up your app to use client certificate authentication
-If you access your site over HTTP and not HTTPS, you will not receive any client certificate. So if your application requires client certificates, you should not allow requests to your application over HTTP.
-
-![TLS/SSL setting for web apps form](../media/az500-web-app-certificates.png)
-
+## :::image type="content" source="../media/az500-web-app-certificates-171b35fc.png" alt-text="az500 web app certificate"::: 
 
 ## Enable client certificates
 
-To set up your app to require client certificates, you can switch On the **Require incoming certificate** by selecting Configuration > General Settings from the Azure portal or you need to set the clientCertEnabled setting for your app to true.
+To set up your app to require client certificates, you can switch On the **Require incoming certificate** by selecting Configuration &gt; General Settings from the Azure portal or you need to set the clientCertEnabled setting for your app to true.
 
 ## Exclude paths from requiring authentication
 
 When you enable mutual auth for your application, all paths under the root of your app will require a client certificate for access. To allow certain paths to remain open for anonymous access, you can define exclusion paths as part of your application configuration.
 
-Exclusion paths can be configured by selecting **Configuration > General Settings** and defining an exclusion path. In this example, anything under /public path for your application would not request a client certificate
+Exclusion paths can be configured by selecting **Configuration &gt; General Settings** and defining an exclusion path. In this example, anything under /public path for your application would not request a client certificate
 
 ## Access client certificate
 
