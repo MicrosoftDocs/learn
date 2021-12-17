@@ -14,18 +14,18 @@ durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
-    - content: To output a string to the console, you would type what code?
+    - content: To display a string on the console, what code would you enter?
       choices:
-        - content: The code `print('my message')`.
+        - content: The code `print('my message')`
           isCorrect: false
           explanation: Incorrect. You need to use double quotes to print.
-        - content: The code `println("my message")`.
+        - content: The code `println("my message")`
           isCorrect: false
           explanation: Incorrect. You need to use the `print()` function.
-        - content: The code `print("my message")`.
+        - content: The code `print("my message")`
           isCorrect: true
-          explanation: Correct. You use the print function with double quotes to output strings.
-    - content: Given that you invoke a program with `program.py 1 2`, what does the following code `sys.argv[0]` contain?
+          explanation: Correct. You use the print function with double quotes to display strings.
+    - content: If you invoke a program with `program.py 1 2`, what does the code `sys.argv[0]` contain?
       choices: 
         - content: It contains `program.py`, the name of the program.
           isCorrect: true
@@ -40,12 +40,12 @@ quiz:
       choices:
         - content: It will evaluate to 3.
           isCorrect: false
-          explanation: Incorrect. It would crash. You need to convert the string to an integer for this statement to work. 
+          explanation: Incorrect. You need to convert the string to an integer for this statement to work. 
         - content: It will give an error.
           isCorrect: true
           explanation: Correct. It will show the error message "cannot concatenate 'str' and 'int' objects".
-        - content: It would become "12".
+        - content: It will become "12".
           isCorrect: false
-          explanation: Incorrect. It would crash. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings "1" + "2".
+          explanation: Incorrect. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings, as in "1" + "2".
 
 

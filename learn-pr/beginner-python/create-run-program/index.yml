@@ -2,7 +2,7 @@
 uid: learn.beginner-python.create-run-program
 metadata:
   title: Write your first Python program
-  description: Learn how to write your first Python programs and to print and gather input toward the console.
+  description: Learn how to write your first Python program, and to print and gather input on the console.
   ms.date: 12/02/2021
   author: softchris
   ms.author: chnoring
@@ -10,13 +10,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 title: Write your first Python program
-summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and finally, type conversion.
+summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
 abstract: |
   In this module, you will:
   - Use functions to manage input and output to the console.
   - Create variables to store data.
-  - Distinguish between different data types.
-  - Leverage type conversion to convert between data types.
+  - Distinguish between data types.
+  - Use type conversion to convert between data types.
 prerequisites: |
   Be familiar with the concept of programming.
 iconUrl: /learn/achievements/generic-badge.svg
