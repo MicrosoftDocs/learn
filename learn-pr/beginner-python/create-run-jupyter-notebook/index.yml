@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 title: Get started with Jupyter notebooks for Python
-summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive runnable Markdown and code elements.
+summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
 abstract: |
   By the end of this module, you'll be able to:
   - Create a Jupyter notebook locally.
@@ -18,7 +18,7 @@ abstract: |
   - Describe some of the ways to build a notebook.
 prerequisites: |
   - Understand basic programming concepts.
-  - Python 3 installed locally.
+  - Have Python 3 installed locally.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
