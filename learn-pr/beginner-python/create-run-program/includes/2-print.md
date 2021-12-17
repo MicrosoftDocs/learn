@@ -1,12 +1,10 @@
-When you start learning any programming language, you first try out a few statements of code in a REPL (a Read Evaluate Print Loop) a console-based program. You soon want to move into serious development though, which means learning more about the language, how to structure a program and more.
+When you start learning any programming language, you first try out a few statements of code in a read-evaluate-print loop (REPL). You soon want to move into serious development, though, which means learning more about the language, how to structure a program, and more.
 
 ## A Python program
 
-To create a program in Python, you need to store it in a file. The file should have the file extension `.py`.
+To create a program in Python, you need to store it in a file. The file should have the file extension .py.
 
-The idea of a program is to do something, carry out a task.
-
-To have the program do something, you need to add statements of code that performs an instruction. An instruction could print some text or calculate something for example. An example program can look something like so:
+The idea of a program is to do something, carry out a task. To have the program do something, you need to add statements of code that perform instructions. An instruction could print some text or calculate something, for example. An example program can look something like this:
 
 ```python
 # program.py
@@ -16,13 +14,13 @@ print(sum)
 
 ### Run a program
 
-Assume you created a program, consisting of statements, you run it by invoking the python executable followed by the program name. Here's an example of such an invocation:
+Assume that you created a program that consists of statements. You run it by invoking the Python executable program, followed by the name of your program. Here's an example of such an invocation:
 
 ```bash
 python3 program.py
 ```
 
-Running such a program would show the following result in the console:
+Running such a program would show the following result on the console:
 
 ```output
 3
@@ -30,13 +28,15 @@ Running such a program would show the following result in the console:
 
 ## The print() function
 
-One of the first things you are likely to do is to print to a console. A console is a command-line application that lets you interact with the operation system. On the console, you can run commands, programs, and you can input information and output information as text on the screen. To write information to the console, you can use the function `print()` that's implemented as a core function, meaning you will have access to it, if Python is installed. To use `print()`, give it an argument like so:
+One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and display information as text on the screen. 
+
+To write information to the console, you can use the function `print()` implemented as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
 
 ```python
 print("show this in the console")
 ```
 
-Note how the invocation of `print()` was done with a left and right parenthesis, that's how you invoke function. Were you to use a square brackets `[]` instead of `()`, it would not work:
+Note how the preceding command invokes `print()` by using parentheses. That's how you invoke a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work:
 
 ```bash
 python3 program.py
@@ -51,11 +51,13 @@ Traceback (most recent call last):
 TypeError: 'builtin_function_or_method' object is not subscriptable
 ```
 
-Another thing to notice is the use of double quotation marks (`""`), that's how you declare a so called string literal, like the one you are printing "show this in the console".
+Another thing to notice is the use of quotation marks (`""`). That's how you declare a so-called string literal, like the one you're printing: "show this in the console".
 
 ## Variables
 
-To get anywhere with coding, you need to understand that you are operating on data. As your program is working on data, throughout the programs execution you might need to remember a certain value, for that we use variables. In the below example, a calculation is made and stored in different variables:
+To get anywhere with coding, you need to understand that you're operating on data. As your program is working on data, you might need to remember a certain value throughout the program's execution. For that, you use variables. 
+
+The following example makes a calculation and stores it in variables:
 
 ```python
 sum = 1 + 2 # 3
@@ -65,17 +67,17 @@ print(product)
 
 ### Data types
 
-One thing we need to know is that variable assumes a data type when you assign a variable to it. In the above program, `sum` gets the type `int`. But there are many more data types. Here are some more that you are likely to encounter:
+A variable assumes a data type. In the preceding program, `sum` gets the type `int`. But there are many more data types. Here are a few that you're likely to encounter:
 
 | Type          | Description                                | Example                     |
 | ------------- | ------------------------------------------ | --------------------------- |
-| Numeric types | stores a number, with our without decimals | int, float, complex, no = 3 |
-| Text types    | string, stores a string of characters      | str = "a literal string"    |
-| Boolean type  | bool                                       | continue = True             |
+| Numeric type | Number, with or without decimals | `int, float, complex, no = 3` |
+| Text type    | String of characters      | `str = "a literal string"`    |
+| Boolean type  | Boolean                                       | `continue = True`             |
 
-There are more complex types, but lets start with these above.
+There are more complex types, but let's start with these.
 
-Here's a piece of code that demonstrates some of the above types:
+Here's a piece of code that demonstrates some of the preceding types:
 
 ```python
 planets_in_solar_system = 8 # int, pluto used to be the 9th planet, but is too small
@@ -84,13 +86,13 @@ can_liftoff = True
 shuttle_landed_on_the_moon = "Apollo 11" #string 
 ```
 
-How do we know what type something has? Well, if we see the data being assigned to the variable like so, we can spot it:
+How do you know what type something has? Well, if you see the data being assigned to the variable as shown in the following code, you can spot it:
 
 ```python
 distance_to_alpha_centauri = 4.367 # looks like a float
 ```
 
-The other way is to use the `type()` function like so:
+The other way is to use the `type()` function:
 
 ```python
 type(distance_to_alpha_centauri) ## <class 'float'>
@@ -98,13 +100,13 @@ type(distance_to_alpha_centauri) ## <class 'float'>
 
 ## Operators
 
-Operators allow us to perform calculations on variables and their values. The general idea is that you have a left side and a right side and an operator in the middle, like so:
+Operators allow you to perform calculations on variables and their values. The general idea is that you have a left side and a right side and an operator in the middle:
 
 ```python
 <left side> <operator> <right side>
 ```
 
-A real example of the above would look like so:
+Here's what a real example of the preceding placeholder code would look like:
 
 ```python
 left_side = 10
@@ -112,61 +114,58 @@ right_side = 5
 left_side / right_side # 2
 ```
 
-Here, division is used, `/` to divide the value of `left_side` with `right_side` value.
+This example uses a slash (`/`) to divide the `left_side` value by the `right_side` value.
 
-There are many more operators, here are some important ones you are likely to encounter.
+There are many more operators. This unit describes some important ones you're likely to encounter.
 
-Python differs between two types of operators:
-
-- **arithmetic operators**, with these operators you perform arithmetic calculations like additions, subtraction, multiplication, and so on.
-- **assignment operators**, these operators are used to assign values to a variable, either the first time or later on in the program.
+Python uses two types of operators: arithmetic and assignment.
 
 ### Arithmetic operators
 
-Here's a subset of all mathematical operators you can use:
+With arithmetic operators, you perform calculations like addition, subtraction, division, and multiplication. Here's a subset of arithmetic operators that you can use:
 
 | Type | Description                                                                        | Example |
 | ---- | ---------------------------------------------------------------------------------- | ------- |
-| +    | Addition operator, adds to values together                                         | 1 + 1   |
-| -    | Subtraction operator, removes the value of the right side from the left side       | 1 - 2   |
-| /    | Division operator, divides the left side as many times as the right side specifies | 10 / 2  |
-| *    | Multiplication operator                                                            | 2 * 2   |
+| +    | Addition operator that adds two values together                                         | `1 + 1`   |
+| -    | Subtraction operator that removes the value of the right side from the left side       | `1 - 2`   |
+| /    | Division operator that divides the left side as many times as the right side specifies | `10 / 2`  |
+| *    | Multiplication operator                                                            | `2 * 2`   |
 
 ### Assignment operators
 
-These operators are used to assign values to a variable throughout the lifecycle of a variable. Here are some of these operators you are likely to encounter learning to build programs:
+Assignment operators are used to assign values to a variable throughout the lifecycle of the variable. Here are some assignment operators that you're likely to encounter as you're learning to build programs:
 
 | Operator | Example                                                                     |
 | -------- | --------------------------------------------------------------------------- |
-| =        | x = 2, x now contains 2                                                     |
-| +=       | x += 2, x incremented by 2, so if it contained 2 before, it now has value 4 |
-| -=       | x -= 2, x decremented by 2, so if it contained 2 before, it now has value 0 |
-| /=       | x /= 2, x divided by 2, so if it contained 2 before, it now has value 1     |
-| *=       | x *= 2, x multiplied by 2, so if it contained 2 before, it now has value 4  |
+| =        | `x = 2` <br>x now contains 2.                                                     |
+| +=       | `x += 2` <br>x incremented by 2. If it contained 2 before, it now has a value of 4. |
+| -=       | `x -= 2` <br>x decremented by 2. If it contained 2 before, it now has a value of 0. |
+| /=       | `x /= 2` <br>x divided by 2. If it contained 2 before, it now has a value of 1.     |
+| *=       | `x *= 2` <br>x multiplied by 2. If it contained 2 before, it now has a value of 4.  |
 
-## Work with dates
+## Dates
 
-One thing you are likely to interact with when building programs are dates. When talking about date, you usually mean both the calendar date and the time.
+When you're building programs, you're likely to interact with dates. A date in a program usually means both the calendar date and the time.
 
-A date can be used in various applications like, for example,  the following areas:
+A date can be used in various applications, like these examples:
 
-- **a backup file**, using a date as part of a backup file name is a good way to indicate when the backup was made and when it needs to be made again.
-- **a condition**, you might want to carry about a specific logic when there's a certain date
-- **metric**, dates are used to check performance on code to, for example,  measure the time it takes to execute a function.
+- **Backup file**. Using a date as part of a backup file's name is a good way to indicate when a backup was made and when it needs to be made again.
+- **Condition**. You might want to carry a specific logic when there's a certain date.
+- **Metric**. Dates are used to check performance on code to, for example, measure the time it takes to execute a function.
 
-To work with a date, you need to import the `date` module like so:
+To work with a date, you need to import the `date` module:
 
 ```python
 from datetime import date
 ```
 
-Once you've done so, you can invoke the functions you want to work with. To get today's date, you can call the `today()` function like so:
+You can then invoke the functions that you want to work with. To get today's date, you can call the `today()` function:
 
 ```python
 date.today()
 ```
 
-To output the date to the console, you can use the `print()` function. The `print()` function takes many different types of data types as input. Here's how you can show today's date:
+To show the date on the console, you can use the `print()` function. The `print()` function takes many types of data as input. Here's how you can show today's date:
 
 ```python
 print(date.today())
@@ -174,13 +173,13 @@ print(date.today())
 
 ### Data type conversion
 
-You want to use a date with something. That something is usually a string, if you, for example,  want to output it to the console, you might run into a problem:
+You want to use a date with something. That something is usually a string. If you, for example, want to show today's date on the console, you might run into a problem:
 
 ```python
 print("Today's date is: " + date.today())
 ```
 
-What you get is an error like so:
+What you get is an error:
 
 ```output
 Traceback (most recent call last):
@@ -189,7 +188,9 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "datetime.date") to str
 ```
 
-The last row of the message tells us what the problem is. We are trying to use the `+` operator and combine two different data types, a string and a date. To make this code work, we need to convert the date into a string. The way to accomplish such a conversion is by using the utility function `str()`. Using `str()` your code now looks like so:
+The last row of the message tells you what the problem is. You're trying to use the `+` operator and combine two different data types, a string and a date. 
+
+To make this code work, you need to convert the date into a string. You accomplish such a conversion by using the utility function `str()`: 
 
 ```python
 print("Today's date is: " + str(date.today()))

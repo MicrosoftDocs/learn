@@ -1,4 +1,4 @@
-A common task is developing programs that can not only display information on a screen or a console, but also take input from users or even other programs. In this module, you'll build your first program in Python to learn how to handle input and output on the console. You'll also learn Python programming concepts like variables and casting between types.
+A common task is developing programs that can not only show information on a screen or a console, but also take input from users or even other programs. In this module, you'll build your first program in Python to learn how to handle input and output on the console. You'll also learn Python programming concepts like variables and casting between types.
 
 ## Scenario: A junior programmer building your first apps
 

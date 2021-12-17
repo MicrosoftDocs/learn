@@ -14,7 +14,7 @@ durationInMinutes: 4
 quiz:
   title: Check your knowledge
   questions:
-    - content: To display a string on the console, what code would you enter?
+    - content: To show a string on the console, what code would you enter?
       choices:
         - content: The code `print('my message')`
           isCorrect: false
@@ -24,7 +24,7 @@ quiz:
           explanation: Incorrect. You need to use the `print()` function.
         - content: The code `print("my message")`
           isCorrect: true
-          explanation: Correct. You use the print function with double quotes to display strings.
+          explanation: Correct. You use the print function with double quotes to show strings.
     - content: If you invoke a program with `program.py 1 2`, what does the code `sys.argv[0]` contain?
       choices: 
         - content: It contains `program.py`, the name of the program.
