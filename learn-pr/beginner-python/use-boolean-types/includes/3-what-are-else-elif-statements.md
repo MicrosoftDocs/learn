@@ -35,7 +35,7 @@ else:
 
 ## Work with `elif`
 
-In Python, the key word `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `false`. For example:
+In Python, the keyword `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `false`. For example:
 
 ```python
 a = 93
@@ -89,7 +89,7 @@ else:
 
 ## Work with nested conditional logic
 
-Python also supports nested conditional logic, meaning that you can nest `if`, `elif`, and `else` statements to create even more complex programs. To nest conditions, indent the inner conditions, and everything with the same level of indentation will be run in the same code block:
+Python also supports nested conditional logic, meaning that you can nest `if`, `elif`, and `else` statements to create even more complex programs. To nest conditions, indent the inner conditions, and everything at the same level of indentation will be run in the same code block:
 
 ```python
 a = 16
@@ -106,8 +106,7 @@ else:
     print ("a is less than b")
 ```
 
-This piece of code will produce the following output:
-`a is less than b`
+This piece of code produces the output `a is less than b`.
 
 Nested conditional logic follows the same rules as regular conditional logic within each code block. Here's one example of the syntax:
 
