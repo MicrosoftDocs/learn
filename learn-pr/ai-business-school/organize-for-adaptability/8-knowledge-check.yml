@@ -15,73 +15,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An expert suggests using a pool of training data that has been gathered from observations of human workers performing tasks and making decisions. What is an unintended consequence that must be anticipated?"
+  - content: "Which of the following statements is the recommended method for sorting and prioritizing your employees’ innovative ideas?"
     choices:
-    - content: "AI will replicate human biases and prejudices that result in the unfair treatment of people of a particular race or gender."
+    - content: "Pursuing only the most cost-efficient ideas."
+      isCorrect: false
+      explanation: "Incorrect. Budgetary factors are important, but choosing ideas based solely on up-front cost overlooks the potential ROI down the line."
+    - content: "Using a horizon-based framework to group ideas into priority categories."
       isCorrect: true
-      explanation: "Correct. This is a definite concern as this problem has already been encountered with AI simply replicating the biases exemplified by the human workers it was modeled to learn from."
-    - content: "AI cannot learn the subtleties of human opinion; therefore, AI will make decisions purely based on data criteria."
+      explanation: "Correct. A horizon-based framework such as McKinsey’s Three Horizon Model allows leadership to prioritize ideas based on predetermined categories, creating an impartial and consistent manner for pursuing ideas."
+    - content: "Only choosing ideas that accelerate time to market for projects already underway."
       isCorrect: false
-      explanation: "Incorrect. While the intended goal of AI is to make data driven decisions, it has been proven that AI can replicate human traits such as favoritism."
-    - content: "The transparent nature of AI will result in decreased intelligibility concerning performance-based decision making."
+      explanation: "Incorrect. Focusing only on timelines increases the risk of moving too quickly, creating more space for error and overlooking potential improvements."
+    - content: "Only choosing ideas that are closely aligned with your current products and services."
       isCorrect: false
-      explanation: "Incorrect. One of the established guiding principles for AI is a commitment to transparency, which increases the intelligibility for stakeholders."
-    - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
-      isCorrect: false
-      explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
-  - content: "Why is explainability such an important aspect of responsible AI in the financial services industry?"
+      explanation: "Incorrect. Innovation is about branching out to include new ideas. Focusing only on current projects overlooks potential for disrupting the market with the next big breakthrough."
+  - content: "Which of the following statements represents an actionable way to encourage widespread innovation?"
     choices:
-    - content: "Many customers are curious about the ways in which AI can enrich their lives."
+    - content: "Offering seed funds for only the highest-ranking employees."
       isCorrect: false
-      explanation: "Incorrect. Explainability refers to customers understanding how AI operates, not necessarily the benefits it can unlock for them."
-    - content: "Many customers are concerned with the risks of AI or feel that it’s advancing too quickly, and they don’t understand the potential risks."
+      explanation: "Incorrect. Without adequate funding for all levels of the organization, employees can't pursue innovative ideas to fruition. Companies should consider additional funding for ideas that hold significant potential, even if they come from junior employees."
+    - content: "Sponsoring lectures, trainings, and workshops on both technical and non-technical topics."
       isCorrect: true
-      explanation: "Correct. Being able to explain how AI systems function can mitigate customer uncertainty and build trust."
-    - content: "Customers will engage with AI-based services more regularly if they understand how those services operate."
+      explanation: "Correct. Providing hands-on learning opportunities is critical for engaging employees to understand all the ways innovation can be applied to their own work, which includes both technical and non-technical positions. Innovation doesn’t just apply to IT or engineering, but to every division of business."
+    - content: "Organizing small-scale events that are only open to select individuals or to a single division of the company."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply increase engagement with AI systems."
-    - content: "Financial service institutions are more likely to identify mistakes made by AI if they can articulate how it is operating."
+      explanation: "Incorrect. Opening up social opportunities to all members of the workforce gives you a better chance of discovering the next big idea. Meaningful innovation happens in every division and among all employees. Hackathons and idea generation contests are just two ideas for encouraging innovation, and these events can include employees from across the entire business. They can also be organized remotely."
+    - content: "Tabling ideas that fail to produce the desired results after the first iteration."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply identify mistakes."
-  - content: "Which two Microsoft guiding principles underpin the other four?"
+      explanation: "Incorrect. It’s important for all employees to understand that taking risk and celebrating failure are both common and expected aspects of innovation. Failures should be celebrated and built upon, not shunned."
+  - content: "HOCHTIEF revolutionized the construction industry with their spin-off companies Nexplore and EDGITAL. What was unique about the spin-offs that helped HOCHTIEF succeed?"
     choices:
-    - content: "Privacy and security."
-      isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Reliability and safety"
-      isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Fairness and inclusivity."
-      isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Transparency and accountability."
+    - content: "They functioned entirely as start-ups."
       isCorrect: true
-      explanation: "Correct. These guiding principles are foundational and are essential for ensuring the effectiveness of the rest."
-  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before launching their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
+      explanation: "Correct. Nexplore and EDGITAL were designed with start-up mentality, giving both spin-offs the freedom to pursue deployment-driven projects to launch in the near term, as well as to explore more curiosity-driven ideas free of timelines and other limitations."
+    - content: "They focused on projects outside of the construction industry."
+      isCorrect: false
+      explanation: "Incorrect. Nexplore and EDGITAL create applications that help HOCHTIEF monitor progress, track of work quality, pinpoint savings, analyze contracts, and more. While they function as different companies, they still help HOCHTIEF explore and strengthen different areas of their construction business."
+    - content: "They put technology before creativity."
+      isCorrect: false
+      explanation: "Incorrect. Nexplore and EDGITAL shared a start-up mentality that allowed them to apply creative ideas to improve technological solutions. It was both technology and an outside-the-box approach that helped reshape the construction industry."
+    - content: "They didn’t engage in partnerships, allowing them to maintain more focus on internal operations."
+      isCorrect: false
+      explanation: "Incorrect. EDGITAL and Nexplore engaged in public and private partnerships to improve infrastructure maintenance and safety, which helped them unlock new revenue streams."
+  - content: "Which of the following ideas describes the basis for a strong innovation architecture?"
     choices:
-    - content: "Fairness and inclusivity."
+    - content: "A centrally located headquarters that passes and maintains building codes."
+      isCorrect: false
+      explanation: "Incorrect. While physical space can be important for developing innovative ideas, innovation architecture is about maintaining programs and other resources that support employees’ efforts to innovate."
+    - content: "A lean organizational budget that focuses only on short-term needs."
+      isCorrect: false
+      explanation: "Incorrect. It’s important to allocate funds specifically for innovation projects, even if they won’t produce tangible outcomes until a future date."
+    - content: "Strategic direction, programs, and common language set by leadership."
       isCorrect: true
-      explanation: "Correct. The guiding principle of fairness dictates that AI systems behave the same way for everyone, and the guiding principle of inclusivity dictates that AI tools do not exclude people."
-    - content: "Reliability and safety."
+      explanation: "Correct. Establishing a strong innovation architecture is all about providing strategic direction and programs, as well as common language, so everyone can innovate under fair guidelines that support both employees and the business."
+    - content: "A workspace designed for engineering and IT staff."
       isCorrect: false
-      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
-    - content: "Transparency."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principle of transparency is essential, but not the most relevant here."
-    - content: "Privacy and security."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."
-  - content: "Which answer best describes why State Farm believes successful AI requires interdisciplinary collaboration?"
-    choices:
-    - content: "State Farm found that AI initiatives are more likely to be successful and achieve organizational objectives when business decision-makers work alongside developers and technical experts."
-      isCorrect: true
-      explanation: "Correct. State Farm encourages partnerships between different groups throughout the organization with diverse skills and perspectives.  IT teams working in isolation might create models that aren’t ideally suited to business goals and processes."
-    - content: "State Farm found that interdisciplinary collaboration reduces costs."
-      isCorrect: false
-      explanation: "Incorrect. While cross-team collaboration on an AI solution may increase ROI in the long-run, saving money is not the primary goal."
-    - content: "State Farm does not believe that successful AI requires interdisciplinary collaboration."
-      isCorrect: false
-      explanation: "Incorrect. State Farm found that AI initiatives are more likely to be successful when business decision-makers work alongside developers and technical experts."
-    - content: "State Farm believes that interdisciplinary collaboration will accelerate the speed at which AI solutions are developed."
-      isCorrect: false
-      explanation: "Incorrect. While cross-team collaboration may accelerate solution development, speed is not the primary goal."
+      explanation: "Incorrect. It’s important to provide dedicated workspace that promotes creativity and collaboration for all employees, from marketing and sales to HR and finance."

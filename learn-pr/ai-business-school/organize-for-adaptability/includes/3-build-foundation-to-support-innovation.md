@@ -2,7 +2,7 @@ We know that some of the most influential innovations come from people of all ba
 
 The answer is to carefully construct an *innovation architecture* that includes strategic direction and programs that allow ideas to build momentum—because it’s often that exact momentum that makes your business resilient during times of change.
 
-## Encourage collaboration and provide safe spaces to experiment and fail 
+## Encourage collaboration and provide safe spaces to experiment and fail
 
 There’s no question that organizations that embrace innovation have an advantage over competitors—but getting there requires buy-in at every level. As we mentioned earlier, the right type of encouragement is paramount to getting people involved. You can encourage people from across the organization by providing the resources, technology, and skill-building needed to innovate effectively. If this is new and unfamiliar territory, there are actions you can take to create the optimal environment for innovation.
 

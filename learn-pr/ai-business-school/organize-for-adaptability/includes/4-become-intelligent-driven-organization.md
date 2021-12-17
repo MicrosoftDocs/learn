@@ -9,8 +9,8 @@ Crucially, all information can be surfaced to the business processes that need i
 The IDO model makes digital feedback loops a reality with four key steps:
 
 * Develop an executive strategy that will see an intelligence-driven culture take root.  
-* Ensure the right technical capabilities are in place. 
-* Ensure your day-to-day execution is enabled by an agile operating model. 
+* Ensure the right technical capabilities are in place.
+* Ensure your day-to-day execution is enabled by an agile operating model.
 * Envision and prioritize a set of future business use cases that represent the desired business outcomes.
 
 Following the four steps helps organizations overcome common obstacles such as shortage of data science skills, difficulty envisioning the right business use cases, and a culture that struggles to understand the need to be data driven.
