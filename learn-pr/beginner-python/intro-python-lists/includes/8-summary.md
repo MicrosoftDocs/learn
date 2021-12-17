@@ -1,0 +1,11 @@
+We wanted to work with a collection of data - planets. Our application needed the ability to determine where items were in relation to others, and display the results. We did this by using a list.
+
+Python lists are an important tool when working with data. You've seen how to create, slice, join and sort lists. You will use these skills in almost every Python application you create.
+
+In this module, you learned how to:
+
+- Identify when to use a list
+- Create a list
+- Access a particular item in a list using indexes
+- Push items to the end of a list
+- Sort and slice a list
