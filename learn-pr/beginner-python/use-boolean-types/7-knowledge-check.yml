@@ -38,12 +38,12 @@ quiz:
       explanation: "Incorrect. `else` is a separate keyword in Python."
   - content: "What values in a test expression are always interpreted as false?"
     choices:
-    - content: "Any non-zero values."
+    - content: "Any non-zero values"
       isCorrect: false
       explanation: "Incorrect. Some non-zero values might be false, depending on the test expression."
-    - content: "Empty."
+    - content: "Empty"
       isCorrect: false
       explanation: "Incorrect. Empty is not a valid Python value."
-    - content: "None and 0."
+    - content: "None and 0"
       isCorrect: true
       explanation: "Correct! None and 0 are interpreted as false in Python."
