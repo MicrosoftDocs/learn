@@ -224,7 +224,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
     :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark already exists response.":::
 
-    You added the bookmark item in [Exercise - Read data with input bindings](5-read-data-with-input-bindings-portal-lab.md). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly.
+    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly.
 
 1. Let's post a second bookmark to the database. Select the **Input** tab.
 
