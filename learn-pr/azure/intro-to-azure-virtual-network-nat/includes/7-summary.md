@@ -3,7 +3,8 @@ You’ve learned how Azure Virtual Network NAT can help you address problems you
 - On-demand port allocation.
 - A scalable solution.
 - More secure connections to internet services.
-You’ve explored the various deployment scenarios for Azure Virtual Network NAT and learned how to deploy it by using the Azure portal or an ARM template.
+You’ve explored the various deployment scenarios for Azure Virtual Network NAT and learned how to deploy it by using the Azure portal or an Azure Resource Manager (ARM) template.
+
 
 You now understand how Azure Virtual Network NAT helps organizations to improve the security and reliability of their infrastructure for outbound connections from Azure resources.
 
