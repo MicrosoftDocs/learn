@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-You will often need to work with different portions of a list. For example, you may have a list with rainfall amounts for different months. To properly analyze this type of data you might need to look for rainfall in fall, or a 3 month period. Or you may look to sort the list in order of most rainfall to least.
-=======
 You will often need to work with different portions of a list. For example, you may have a list with rainfall amounts for different months. To properly analyze this type of data you might need to look for rainfall in fall, or a three-month period. Or you may look to sort the list in order of most rainfall to least.
->>>>>>> 2bb7f5767cfedfe5a83b777a0830887986f39c2b
 
 Python provides robust support for working with the data in lists. This includes slicing data, meaning you will examine just a portion, or sorting.
 
@@ -22,11 +18,7 @@ print(planets_before_earth)
 
 Notice how Earth is not included in the list. The reason is the index ends before the ending index, but does not include it.
 
-<<<<<<< HEAD
-To get all the planets after Earth, start at the 3rd and go to 8th:
-=======
 To get all the planets after Earth, start at the third and go to eighth:
->>>>>>> 2bb7f5767cfedfe5a83b777a0830887986f39c2b
 
 ```python
 planets_after_earth = planets[3:8]
