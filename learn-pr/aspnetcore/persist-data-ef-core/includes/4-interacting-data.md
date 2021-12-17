@@ -50,7 +50,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     - The `Pizzas` collection contains all the rows in the pizzas table.
     - The `!` in the above code is a [null-forgiving operator](/dotnet/csharp/language-reference/operators/null-forgiving) and suppresses a compiler warning. It has no effect at runtime.
-    - The `AsNoTracking` extension method instructs EF Core to disable change tracking. Since this operation is read-only, `AsNoTracking` can optimize performance.
+    - The `AsNoTracking` extension method instructs EF Core to [disable change tracking](/ef/core/querying/tracking). Since this operation is read-only, `AsNoTracking` can optimize performance.
     - All of the pizzas are returned with `ToList`.
 
 1. Replace the `GetById` method with the following code:
@@ -62,15 +62,16 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
             .Include(p => p.Toppings)
             .Include(p => p.Sauce)
             .AsNoTracking()
-            .FirstOrDefault(p => p.Id == id);
+            .SingleOrDefault(p => p.Id == id);
     }
     ```
 
     In the preceding code:
 
-    - The `Include` extension method takes a [lambda expression](/dotnet/csharp/language-reference/operators/lambda-expressions) to specify that the `Toppings` and `Sauce` navigation properties are to be included in the result. Without this, EF Core will return null for those properties.
-    - The `FirstOrDefault` method returns the first pizza that matches the lambda expression.
+    - The `Include` extension method takes a [lambda expression](/dotnet/csharp/language-reference/operators/lambda-expressions) to specify that the `Toppings` and `Sauce` navigation properties are to be included in the result ([eager loading](/ef/core/querying/related-data/eager)). Without this, EF Core will return null for those properties.
+    - The `SingleOrDefault` method returns a pizza that matches the lambda expression.
         - If no records match, `null` is returned.
+        - If multiple records match, an exception is thrown.
         - The lambda expression describes records where the `Id` property is equal to the `id` parameter.
 
 1. Replace the `Create` method with the following code:
@@ -87,7 +88,35 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     In the preceding code:
 
+    - `newPizza` is assumed to be a valid object. EF Core doesn't do data validation, so any validation must be handled by the ASP.NET Core runtime or user code.
     - The `Add` method adds the `newPizza` entity to EF Core's object graph.
+    - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
+
+1. Replace the `UpdateSauce` method with the following code:
+
+    ```csharp
+    public void UpdateSauce(int PizzaId, int SauceId)
+    {
+        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
+        var sauceToUpdate = _context.Sauces!.Find(SauceId);
+
+        if (pizzaToUpdate is null ||
+                sauceToUpdate is null)
+        {
+            throw new NullReferenceException("Pizza or sauce does not exist");
+        }
+
+        pizzaToUpdate!.Sauce = sauceToUpdate;
+
+        _context.SaveChanges();
+    }
+    ```
+
+    In the preceding code:
+
+    - References to an existing `Pizza` and `Sauce` are created using `Find`. `Find` is an optimized method to query records by their primary key. `Find` searches the local entity graph first before querying the database.
+    - The `Pizza.Sauce` property is set to the `Sauce` object.
+    - An `Update` method call is unnecessary because EF Core detect that we set the `Sauce` property on `Pizza`.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `AddTopping` method with the following code:
@@ -117,37 +146,9 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     In the preceding code:
 
-    - References to an existing `Pizza` and `Topping` are created.
+    - References to an existing `Pizza` and `Topping` are created using `Find`.
     - The `Topping` is added to the `Pizza.Toppings` collection. A new collection is created if it doesn't exist.
-    - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
-    - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
-
-1. Replace the `UpdateSauce` method with the following code:
-
-    ```csharp
-    public void UpdateSauce(int PizzaId, int SauceId)
-    {
-        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
-        var sauceToUpdate = _context.Sauces!.Find(SauceId);
-
-        if (pizzaToUpdate is null ||
-                sauceToUpdate is null)
-        {
-            throw new NullReferenceException("Pizza or sauce does not exist");
-        }
-
-        pizzaToUpdate!.Sauce = sauceToUpdate;
-
-        _context.Pizzas!.Update(pizzaToUpdate);
-        _context.SaveChanges();
-    }
-    ```
-
-    In the preceding code:
-
-    - References to an existing `Pizza` and `Sauce` are created.
-    - The `Pizza.Sauce` property is set to the `Sauce` object.
-    - The `Update` method replaces the `pizzaToUpdate` entity in EF Core's object graph.
+    - The `Update` method flags the `pizzaToUpdate` entity as updated in EF Core's object graph. This explicit use of `Update` is required because if a new `Pizza.Toppings` collection isn't created, you're modifying the contents of an `Pizza.Toppings` collection. EF Core can automatically detect setting properties on `Pizza` directly, but it can't detect that you called `Add` on an existing collection.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `DeleteById` method with the following code:
@@ -175,6 +176,9 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 ## Database seeding
 
 You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
+
+> [!NOTE]
+> This database seeding strategy should not be used in distributed environments, as it doesn't account for race conditions.
 
 1. In the *Data* folder, add a new file named *DbInitializer.cs*.
 1. Add the following code to *Data\DbInitializer.cs*:
@@ -270,8 +274,10 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
                 {
                     var services = scope.ServiceProvider;
                     var context = services.GetRequiredService<PizzaContext>();
-                    context.Database.EnsureCreated();
-                    DbInitializer.Initialize(context);
+                    if (context.Database.EnsureCreated())
+                    {
+                        DbInitializer.Initialize(context);
+                    }
                 }
             }
         }
@@ -282,7 +288,11 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
 
     - The `CreateDbIfNotExists` method is defined as an extension of `IHost`.
     - A reference to the `PizzaContext` service is created.
-    - The database is created (if needed) with the `EnsureCreated` method.
+    - [EnsureCreated](/ef/core/managing-schemas/ensure-created#ensurecreated) ensures the database exists.
+
+        > [!IMPORTANT]
+        > `EnsureCreated` creates a new database if one doesn't exist. The new database is not configured for migrations, so use this with caution.
+
     - The `DbIntializer.Initialize` method is called, passing the `PizzaContext` as a parameter.
 
 1. In *Program.cs*, replace `// Add the CreateDbInNotExists method call` comment with the following code:
