@@ -34,4 +34,4 @@ After you do this, routing information will be exchanged between ExpressRoute ga
 
 ## Azure Route Server pricing
 
-Azure Route Server is a typical pay-per-use service. It has no upfront cost of any kind, nor does it have any termination fees. You pay for this service only while it’s active. For the Central US region, at the time of writing this course pricing for the Azure Route Server service is $0.45 per hour, which translates to $10.8 per day.
+Azure Route Server is a typical pay-per-use service. It has no upfront cost of any kind, nor does it have any termination fees. You pay for this service only while it’s active.
