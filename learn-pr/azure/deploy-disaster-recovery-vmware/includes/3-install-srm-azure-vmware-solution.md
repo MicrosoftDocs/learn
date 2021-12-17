@@ -84,6 +84,6 @@ You can use the following steps to deploy VMware SRM:
 6. Provide a license key or select to use an evaluation version.
 7. Accept the terms and conditions, and then select **Install**.
 
-:::image type="content"  source="../media/3-neavs-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. ."::: 
+:::image type="content"  source="../media/3-neavs-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution."::: 
 
 Ensure that both the primary and secondary Azure VMware Solution private clouds have provisioned VMware SRM.
