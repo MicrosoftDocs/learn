@@ -1,37 +1,34 @@
-AI is the defining technology of our time. It is already enabling faster and more profound progress in nearly every field of human endeavor and helping to address some of society’s most daunting challenges—like providing remote students with access to education and helping farmers produce enough food for our growing global population.
+We know that some of the most influential innovations come from people of all backgrounds and at all levels of an organization. To that end, getting everyone involved is one of the most important steps you can take to show that innovation matters—and providing the right level of encouragement will be key. But how does that translate into an actual work environment? And how do you sort and nurture everyone’s ideas from concept to product in a way that is financially profitable and fair? How do you decide which ideas won’t make the cut?  
 
-At Microsoft, we believe that the computational intelligence of AI should be used to amplify the innate creativity and ingenuity of humans. Our vision for AI is to empower every developer to innovate, empower organizations to transform industries, and empower people to transform society.
+The answer is to carefully construct an *innovation architecture* that includes strategic direction and programs that allow ideas to build momentum—because it’s often that exact momentum that makes your business resilient during times of change.
 
-## Societal implications of AI
+## Encourage collaboration and provide safe spaces to experiment and fail 
 
-As with all great technological innovations in the past, the use of AI technology will have broad impacts on society, raising complex and challenging questions about the future we want to see. AI will have implications on decision-making across industries, data security and privacy, and the skills people need to succeed in the workplace. As we look to this future, we must ask ourselves: How do we design, build, and use AI systems that create a positive impact on individuals and society? How can we best prepare workers for the impact of AI? How can we attain the benefits of AI while respecting privacy?
+There’s no question that organizations that embrace innovation have an advantage over competitors—but getting there requires buy-in at every level. As we mentioned earlier, the right type of encouragement is paramount to getting people involved. You can encourage people from across the organization by providing the resources, technology, and skill-building needed to innovate effectively. If this is new and unfamiliar territory, there are actions you can take to create the optimal environment for innovation.
 
-## The importance of a responsible approach to AI
+* Give employees time, space, and incentives for experimentation.
+* Offer seed funds for start-up style pitches, and consider potential additional funding, if needed.
+* Focus on learning through failures and wins—a practice that helps employees understand that innovation is an iterative process.
+* Sponsor lectures, trainings, and workshops on both technical and non-technical topics.
+* Offer sharing sessions in which employees present a lecture series to others on topics of expertise.  
+* Organize a small-scale hackathon or an idea generation contest.
 
-It’s important to recognize that as new intelligent technology emerges and proliferates throughout society, with its benefits will come unintended and unforeseen consequences, some with significant ethical ramifications and the potential to cause serious harm. While organizations can’t predict the future just yet, it’s our responsibility to make a concerted effort to anticipate and mitigate the unintended consequences of the technology we release into the world through deliberate planning and continual oversight.
+The ideas are endless, and most can be tailored to match your organization’s budget. No matter the chosen path, if you provide the space, resources, and time, the potential added business value is significant—perhaps even more so when cross-disciplinary teams collaborate in unexpected ways. When teams come together, people build off of others’ ideas and expertise, setting the stage for the next big success.
 
-### Novel threats
+Notably, providing consistent support and follow-through will be critical for success. When people feel prepared to collaborate and are given the right tools and support, adaptability becomes a natural part of the workflow. Then, disruptions become manageable, and businesses keep moving forward.
 
-We were reminded of this responsibility in 2016 when we released a chatbot on Twitter called Tay. We taught Tay to learn unsupervised from interactions with Twitter users, so she could better replicate human communication and personality traits. However, within 24 hours users realized that she could learn and began to feed her bigoted rhetoric, turning her from a polite bot into a vehicle for hate speech. This experience taught us that while technology may not be unethical on its own, people do not always have good intentions and we must consider the human element when designing AI systems. We learned to prepare for new types of attacks that influence learning datasets, especially for AI systems that have automatic learning capabilities. To help ensure a similar experience does not happen again, we developed technology such as advanced content filters and introduced supervisors for AI systems with automatic learning capabilities.
+## Leverage a horizon-based framework
 
-### Biased outcomes
+Once the ideas begin to flow, expectations and questions naturally arise, so having a plan for addressing everyone’s ideas will be important. One way to evaluate and prioritize ideas is by using a horizon-based framework. A common framework is McKinsey’s Three Horizons Model<sup>2</sup>, which groups projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of maturity, size, business objectives, and more.
 
-Another unintended consequence that organizations should keep in mind is that AI may reinforce societal or other biases without deliberate planning and design. For example, Microsoft partnered with a large financial lending institution to develop a risk scoring system for loan approvals. We trained an existing industry model using the customer’s data. When we conducted an audit of the system, we discovered that while it only approved low-risk loans, all approved loans were for male borrowers. The training data reflected the fact that loan officers historically favor male borrowers—and inspecting the system allowed us to identify and address that bias before the system was deployed. It’s important for developers to understand how bias can be introduced into either training data or machine learning models. At Microsoft, our researchers are exploring tools and techniques for detecting and reducing bias within AI systems. Explore more about this and more in the summary and resources unit of this module.
+* Horizon 1 represents initiatives that optimize existing business models and **core business functions** in the short term.
+* Horizon 2 initiatives take advantage of **emerging opportunities** to expand to new markets and customers.
+* Horizon 3 involves disruptive and innovative **new business models** that focus on future timelines.
 
-### Sensitive use cases
+The Three Horizons Model is an enduring framework that’s useful when establishing an innovation architecture because it’s formulated around people, processes, and outcomes. However, it relies on time as a core guiding value, with the assumption that breakthrough innovations take years of development. As you think through your own innovation architecture, it’s worth considering that technology has changed the dynamic of time.
 
-Another illustration of our responsibility to mitigate unintended consequences is with sensitive technologies like facial recognition. Recently, there has been a growing demand for facial recognition technology, especially from law enforcement organizations that see the potential of the technology for use cases like finding missing children. However, we recognize that these technologies could potentially be used by a government to put fundamental freedoms at risk by, for example, enabling continuous surveillance of specific individuals. We believe society has a responsibility to set appropriate boundaries for the use of these technologies, which includes ensuring governmental use of facial recognition technology remains subject to the rule of law.
+Today, many would-be Horizon 3 disruptions can be rapidly implemented by repurposing existing Horizon 1 technologies into new products and business models. That increased speed of deployment itself is disruptive.
 
-While we believe that new laws and regulations must be written, we also recognize that they are not a substitute for the responsibility that needs to be exercised by businesses, governments, NGOs, and academic researchers engaging with AI. This is why, in July 2018, we announced that we would assess and develop principles to govern our work with facial recognition technologies. We anticipate these principles will evolve over time as we continue to learn and partner with customers, other tech companies, academics, civil society, and others on this issue. Review them in the summary and resources unit of this module.
+Competition moves at a breakneck pace. In this landscape, disruptors that attack the market have gained the advantage. While a horizon-based framework provides an excellent foundation for how to think about innovation prioritization, it’s important to adapt the model’s time frames to fit your organization’s objectives.  
 
-Facial recognition technology highlights the importance of preparing for and remaining vigilant of shortcomings and unintended consequences with all emerging AI. We consider it a shared responsibility across the public and private sector to engage with AI responsibly. It’s essential that we continue to foster open dialogue among businesses, governments, NGOs, academic researchers, and all other interested individuals and organizations.
-
-## Applying these ideas in your organization
-
-The following three questions can help you start to consider the ways your organization can develop and deploy AI in a responsible manner.
-
-1. How can you use a human-led approach to drive value for your business?
-2. How will your organization’s foundational values affect your approach to AI?
-3. How will you monitor AI systems to ensure they are evolving responsibly?
-
-Next, let’s see how Microsoft’s six guiding principles for responsible AI can be applied within other organizations.
+Now let’s examine how your organization’s data can help lay the groundwork for successful innovation.
