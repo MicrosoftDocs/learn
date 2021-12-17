@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "Peering between Azure VMware Solution sites."
       isCorrect: false
-      explanation: "Incorrect.Each Azure VMware Solution environment is its own ExpressRoute region (its own virtual MSEE device), so it requires ExpressRoute Global Reach."
+      explanation: "Incorrect. Each Azure VMware Solution environment is its own ExpressRoute region (its own virtual MSEE device), so it requires ExpressRoute Global Reach."
     - content: "ExpressRoute Global Reach."
       isCorrect: true
       explanation: "Correct. ExpressRoute Global Reach enables connectivity from the primary to secondary Azure VMware Solution, fully routed privately within the Microsoft global network."
