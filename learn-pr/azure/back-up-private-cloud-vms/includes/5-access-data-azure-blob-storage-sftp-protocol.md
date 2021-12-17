@@ -19,12 +19,12 @@ Use the following procedure to enable support for SFTP and create local users, a
 1. In the Azure portal, navigate to your storage account (you can also enable SFTP in the account creation process).
 2. Under **Settings**, select **SFTP**, and then select **enable SFTP.**
 
- :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot displaying the SFTP settings. The Enable SFTP option is selected."  border="false":::
+  :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot displaying the SFTP settings. The Enable SFTP option is selected.":::
 
 3. While you are still in the **SFTP settings,** select **Add local user**.
 4. In the **Add local user** configuration pane, add the name of a user, and then select the method (or methods) of authentication that you'd like to associate with this local user. You can associate a password and/or an SSH key.
 
- :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot of the Add local user dialog, The Secure with a password and Secure with SSH public key options are selected." border="false":::
+  :::image type="content" source="../media/5-azure-blob-storage-sftp-settings.png" alt-text="Screenshot of the Add local user dialog, The Secure with a password and Secure with SSH public key options are selected.":::
 
 5. Select **Next** to open the **Container permissions** tab of the configuration pane.
 
@@ -34,8 +34,8 @@ Use the following procedure to enable support for SFTP and create local users, a
 
 8. Select the **Add button** to add the local user.
 
-> [!NOTE]
-> If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
+  > [!NOTE]
+  > If you enabled password authentication, the Azure-generated password appears in a dialog box after the local user has been added. You cannot retrieve this password later, so make sure to copy the password, and then store it in a place where you can find it.
 
 9. Use an SFTP client to establish an SSH connection to your Azure storage account.
 
