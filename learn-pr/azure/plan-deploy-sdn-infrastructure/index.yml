@@ -27,7 +27,6 @@ roles:
   - administrator
   - security-engineer
   - solution-architect
-  - student
 products:
   - azure
   - azure-stack-hci
