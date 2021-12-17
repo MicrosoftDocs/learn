@@ -2,18 +2,18 @@ Computer programs are great at dealing with repetitive tasks. You'll often find 
 
 ## Scenario: working with flow control on a planetary app
 
-Imagine you're creating an application where a user will enter a list of planets. After they've entered the list you will display the results back to them. This will require prompting the user multiple times for values, followed by printing out all the data in the list. We will explore how `while` and `for` loops can be used to create this application.
+Imagine you're creating an application where a user enters a list of planets. After they enter the list, you'll display the results back to them. This will require prompting the user multiple times for values, followed by printing out all the data in the list. We'll explore how `while` and `for` loops can be used to create this application.
 
-By the end of the module, you will be able to use `for` and `while` loops.
+By the end of the module, you'll be able to use `for` and `while` loops.
 
 ## What will I learn?
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
-- Identify when to use a for or while
+- Identify when to use `for` or `while`
 - Run a task multiple times using `while`
 - Loop over list data using `for`
+
 ## What is the main objective?
 
 Learn to apply flow control to your app to repeat statements and work with list structures.
-
