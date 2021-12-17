@@ -8,6 +8,7 @@ metadata:
   author: AnuSridhar-25
   ms.author: v-anursr
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Deploy disaster recovery with VMware Site Recovery Manager
 summary: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
 abstract: |
