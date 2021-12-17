@@ -42,7 +42,7 @@ To highlight the difference between the two Boolean operators, you can use a *tr
 
 Here's the truth table for `and`:
 
-| `sub-expression1` | Operator | `sub-expression2` | Result |
+| `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
 | `true`            | `and`      | `true`            | `true`   |
 | `true`            | `and`      | `false`           | `false`  |
@@ -51,7 +51,7 @@ Here's the truth table for `and`:
 
 Here's the truth table for `or`:
 
-| `sub-expression1` | Operator | `sub-expression2` | Result |
+| `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
 | `true`            | `or`       | `true`            | `true`   |
 | `true`            | `or`       | `false`           | `true`   |
