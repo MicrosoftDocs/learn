@@ -8,6 +8,7 @@ metadata:
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
 title: Introduction to Azure DNS
 summary: This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
 abstract:  |

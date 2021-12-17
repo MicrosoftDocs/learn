@@ -1,4 +1,4 @@
-In this unit, you'll use the HttpRepl tool to test the app.
+In this unit, you'll use the [HttpRepl](/aspnet/core/web-api/http-repl/) tool to test the API. The API will use your code to interact with the database.
 
 ## Run the app and connect
 
@@ -111,7 +111,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     get 4
     ```
 
-1. You've realized a smoked brisket pizza with alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
+1. You've realized a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea. Delete it with the following command:
 
     ```dotnetcli
     delete 4
