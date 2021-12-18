@@ -50,37 +50,50 @@ The debugger can also break when an exception is thrown in your program. This ca
 
 :::image type="content" source="../media/vs-intro-break-exception.png" alt-text="Screenshot of Visual Studio debugging with the yellow execution cursor paused on a Length call on a null string. An exception window appears over and highlights the line where the exception is occuring and calls out the string that is null.:::
 
-## Customization (Check what top changes are in telemetry)
+## Customization
 
-Visual Studio is highly customizable allowing different themes, fonts, colors, window layouts, and icons to be used! You can set these preferences in **Tools > Options**.
+Visual Studio is highly customizable allowing different themes, fonts, colors, and window layouts to be used! You can set these preferences in **Tools > Options**.
 
-:::image type="content" source="../media/vs-intro-theme.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-theme.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to Environment General section. The theme drop down is expanded with the blue theme selected. The colors of Visual Studio are now blue as opposed to dark gray.:::
 
 There are a ton of different themes created [by the community](https://devblogs.microsoft.com/visualstudio/custom-themes/) as well that might mimic some of your favortie color pallettes.
 
-:::image type="content" source="../media/vs-intro-community-themes.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-community-themes.png" alt-text="Collage of screenshots of different Visual Studio instances with a wide range of themes in different colors ranging from dark blue to vibrant red to light purple themes.:::
 
 Customize the colors of different text display items and fonts in **Tools > Options > Environment > Fonts and Colors**
 
-:::image type="content" source="../media/vs-intro-colors.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-colors.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to the Environment Fonts and Colors section. The font drop down has Comis Sans selected. The plain text color drop down now has magenta selected. The code in the editor window behind the Tools Options pane is now magenta and the font is Comic Sans.:::
 
 All the windows in Visual Studio can be dragged and dropped to different sections around the editor. You can even drag windows outside the editor entirely for use on a different desktop. You can also save and reset your window layout for different tasks.
 
-- Window layouts
-- Toolbar
+:::image type="content" source="../media/vs-intro-layout.png" alt-text="Screenshot of Visual Studio with one cs file being dragged to a different part of the editor. When dragging the file a semi-transparent display appears showing the different places the window can snap to including many different horizontal and vertical docking options above, below, to the left, or to the right of each window.:::
+
+The toolbar at the top of Visual Studio contains lots of helpful buttons for different actions and commands. You can completely customize what buttons appear and even what commands they execute. 
+
+:::image type="content" source="../media/vs-intro-toolbar.png" alt-text="Screenshot of Visual Studio with a menu open for selecting multiple different buttons to be pinned in the toolbar at the top of the Visual Studio app.:::
 
 ## Extensions
 
-- Popular extensions in marketplace (Editor guidelines, boost.test, xunit)
-- Constantly expanding and evolving ecosystem (people have entire businesses of extending Visual Studio!)
+Visual Studio prides itself on being an open ecosystem where the community is empowered to create amazing developer tools. There are thousands of extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) with millions of downloads. Some are paid for and some are free and even open source! Some developers have even found full-time jobs developing extensions for other developers. You can find an extension for tons of functionality from changing the editor background to a picture, adding even more colors to your editor with colorized indent guides, and testing with community-built open source frameworks.
 
-## Live Share
+:::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio .:::
 
-- Benefits of pair programming and simplicity of tool
-- Specifically good for students and teachers, but also used everyday by professional developers
+Of course, in an ecosystem that is constantly evolving there isn't an extension for *everything* so if you are at all interested or missing functionality, keep in mind that you can [build extensions yourself](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)! 
 
-## Publishing to the Cloud
+## Pair programming with Live Share
 
-- Publish to Azure so your website is live
-- Connecting Azure account
-- Other Git and pipeline tools
+Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](http://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
+
+:::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio .:::
+
+Live Share is specifically good for students and teachers, but also used everyday by professional developers to literally get everyone on the same page!
+
+## Publishing to the cloud
+
+You can [publish](/visualstudio/deployment) your app directly to the cloud using Visual Studio's built-in publishing and pipeline management tools. It integrates with Azure so you can select and view cloud resources right from the IDE and select how you'd like to deploy.
+
+:::image type="content" source="../media/vs-intro-publish.png" alt-text="Screenshot of Visual Studio .:::
+
+## More to explore
+
+This is just a taste of the developer experiences in Visual Studio. There are a lot more amazing tools packed into this IDE including Git and GitHub integration, UI designers, database explorers, code analysis, testing tools, and more! You can find more info on these features in the extensive [Visual Studio documentation](/visualstudio/) or stick around and explore the rest of the Visual Studio learning paths.
