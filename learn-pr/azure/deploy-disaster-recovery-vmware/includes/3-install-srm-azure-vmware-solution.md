@@ -68,8 +68,6 @@ You can use the following steps to deploy ExpressRoute Global Reach.
 
 6. Verify that the **State** of the connection displays the status as **Connected**.
 
-
-
 ### Deploy Site Recovery Manager on Azure VMware Solution
 
 After you prepare all requirements for setting up disaster recovery for your Azure VMware Solution private cloud, you should proceed with the installation on VMware SRM in Azure VMware Solution.
