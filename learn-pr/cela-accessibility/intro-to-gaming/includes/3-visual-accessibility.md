@@ -58,4 +58,4 @@ Players with low vision can experience difficulty reading text or seeing onscree
 - The size of text in menus, within the game environment, and within chat-based player-to-player communications
 - The size of visual elements like waypoint markers, crosshairs, and other visual indicators
 - The color and contrast of text and visual elements by enabling solid backgrounds against them and providing choice of color for the element and its background color
-- The location that visual elements like chat boxes, notifications, HUD displays, and more appear on screen
+- The location that visual elements like chat boxes, notifications, HUD displays, and more appear onscreen

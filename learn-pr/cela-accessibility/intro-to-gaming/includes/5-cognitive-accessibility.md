@@ -41,7 +41,7 @@ Players with disabilities that affect attention might experience barriers when g
 
 In general, the following supports can help players eliminate distractions that can detract from game experiences:
 
- - The ability to customize or disable background animations or moving content that appears on screen as players attempt to read static text
+ - The ability to customize or disable background animations or moving content that appears onscreen as players attempt to read static text
  - The ability to adjust the length and presence of notifications
 
 ### Memory and gaming
