@@ -6,9 +6,9 @@ In this unit, you'll learn about the relationship between the portrayal of visua
 
 Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, think about the following questions related to visual information:
 
-- Is important information represented through visual means alone? Some examples include text-based menus and instructions and on-screen icons.
+- Is important information represented through visual means alone? Some examples include text-based menus and instructions and onscreen icons.
 - Is the visual representation of this information accessible to players with visual disabilities?
-- How is game play affected if a player can't access this visual information because of the lack of accessible supports?
+- How is gameplay affected if a player can't access this visual information because of the lack of accessible supports?
 
 Creating truly accessible experiences requires effort beyond the implementation of accessibility features and settings alone. A truly accessible experience is built by design. Understanding what unintentional barriers are, and how they can block player progress, is critical to gaming accessibility knowledge. This awareness can ideally prevent unintentional barriers from being implemented within the game's design altogether.
 
@@ -53,7 +53,7 @@ Low vision is a broad term that includes a spectrum of visual abilities. Players
 > [!NOTE]
 > The extent of cloudiness, blurriness, or completeness of view can vary from player to player, which is why providing multiple options for customization is important.
 
-Players with low vision can experience difficulty reading text or seeing on-screen visual elements. To ensure game play experiences are accessible for players with varying degrees of low vision, consider providing players with customization options for the following:
+Players with low vision can experience difficulty reading text or seeing onscreen visual elements. To ensure gameplay experiences are accessible for players with varying degrees of low vision, consider providing players with customization options for the following:
 
 - The size of text in menus, within the game environment, and within chat-based player-to-player communications
 - The size of visual elements like waypoint markers, crosshairs, and other visual indicators

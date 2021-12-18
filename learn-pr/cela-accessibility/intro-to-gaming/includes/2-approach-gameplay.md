@@ -6,9 +6,9 @@ Start with an assessment of the following:
 
 - How do games provide information to players?
 - How do players interpret this information?
-- How do players act upon this information for successful game play?
+- How do players act upon this information for successful gameplay?
 
-In this unit, you're introduced to basic gaming and disability concepts. You'll also learn how to assess the game play process within the context of accessibility. You'll increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
+In this unit, you're introduced to basic gaming and disability concepts. You'll also learn how to assess the gameplay process within the context of accessibility. You'll increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
 
 ## How are games played?
 
@@ -22,8 +22,8 @@ Before we explore the game accessibility concepts about vision, audio, cognition
 
 "Solve for one, extend to many" means that intentional design efforts to create accessible experiences for people with disabilities often results in universally beneficial features and settings for everyone. For example, accessible automatic doors for wheelchair access are also often used by the following individuals:
 
-- Individuals who have their hands full and can't open the door.
-- Individuals who want to avoid touching door handles for hygienic reasons.
+- Individuals who have their hands full and can't open the door
+- Individuals who want to avoid touching door handles for hygienic reasons
 
 When it comes to game accessibility, options or features intended for a specific group of players often provide better experiences for all players.
 

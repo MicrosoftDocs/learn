@@ -18,7 +18,7 @@ Consult with an array of players with hearing impairment to help you create effe
 
 ### Gaming without audio
 
-Players who can't hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players might miss important game information when it's portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and nonplayer character dialogue can't be used to inform the game play of these players.
+Players who can't hear any game audio must typically determine their next steps based on visual and haptic cues alone. These players might miss important game information when it's portrayed through audio alone. For example, live voice among players, in-game sound effects like nearby footsteps or enemy fire, and nonplayer character dialogue can't be used to inform the gameplay of these players.
 
 General approaches to support these players include:
 
@@ -28,7 +28,7 @@ General approaches to support these players include:
 
 ### Gaming and partial hearing
 
-Players with hearing impairment might have difficulty hearing sounds of certain frequencies, volume levels, or sounds that come from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there might be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This type of scenario can make it difficult to clearly hear the sound channels that are most important to game play.
+Players with hearing impairment might have difficulty hearing sounds of certain frequencies, volume levels, or sounds that come from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there might be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This type of scenario can make it difficult to clearly hear the sound channels that are most important to gameplay.
 
 Approaches to consider for players with partial hearing include:
 
