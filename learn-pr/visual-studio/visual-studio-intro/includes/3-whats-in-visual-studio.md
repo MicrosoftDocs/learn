@@ -76,7 +76,7 @@ The toolbar at the top of Visual Studio contains lots of helpful buttons for dif
 
 Visual Studio prides itself on being an open ecosystem where the community is empowered to create amazing developer tools. There are thousands of extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) with millions of downloads. Some are paid for and some are free and even open source! Some developers have even found full-time jobs developing extensions for other developers. You can find an extension for tons of functionality from changing the editor background to a picture, adding even more colors to your editor with colorized indent guides, and testing with community-built open source frameworks.
 
-:::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio with the Manage Extensions top-level menu item called out and the manage extensions dialog page open. The extension page has installed extensions listed including Markdown Editor, Visual Studio IntelliCode, and Live Share extensions.:::
 
 Of course, in an ecosystem that is constantly evolving there isn't an extension for *everything* so if you are at all interested or missing functionality, keep in mind that you can [build extensions yourself](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)! 
 
@@ -84,7 +84,7 @@ Of course, in an ecosystem that is constantly evolving there isn't an extension 
 
 Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](http://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
 
-:::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio with a code file open. Part of the code is highlighted in a different cursor labled with the user's name Aaron Yim. A Live Share chat window is also open with the host, Kendra Havens, thanking Aaron for joining the live share session.:::
 
 Live Share is specifically good for students and teachers, but also used everyday by professional developers to literally get everyone on the same page!
 
@@ -92,7 +92,7 @@ Live Share is specifically good for students and teachers, but also used everyda
 
 You can [publish](/visualstudio/deployment) your app directly to the cloud using Visual Studio's built-in publishing and pipeline management tools. It integrates with Azure so you can select and view cloud resources right from the IDE and select how you'd like to deploy.
 
-:::image type="content" source="../media/vs-intro-publish.png" alt-text="Screenshot of Visual Studio .:::
+:::image type="content" source="../media/vs-intro-publish.png" alt-text="Screenshot of Visual Studio with a Publish dialog open asking if the user wants to publish to Azure, docker, or a local folder.:::
 
 ## More to explore
 
