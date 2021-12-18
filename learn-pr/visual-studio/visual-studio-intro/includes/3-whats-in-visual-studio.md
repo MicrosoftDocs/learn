@@ -32,7 +32,7 @@ If your app is a website it will start up a browser in your local host.
 
 If it's a console app a console will pop up to run your app.
 
-:::image type="content" source="../media/vs-intro-console-app.ong" alt-text="Screenshot of Visual Studio with a debug console window in front of it showing the text Hello World.":::
+:::image type="content" source="../media/vs-intro-console-app.png" alt-text="Screenshot of Visual Studio with a debug console window in front of it showing the text Hello World.":::
 
 You can click in the margin to set a break point. This pauses the debugger at that line of execution.
 
@@ -82,7 +82,7 @@ Of course, in an ecosystem that is constantly evolving there isn't an extension 
 
 ## Pair programming with Live Share
 
-Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](http://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
+Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](https://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
 
 :::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio with a code file open. Part of the code is highlighted in a different cursor labled with the user's name Aaron Yim. A Live Share chat window is also open with the host, Kendra Havens, thanking Aaron for joining the live share session.":::
 
