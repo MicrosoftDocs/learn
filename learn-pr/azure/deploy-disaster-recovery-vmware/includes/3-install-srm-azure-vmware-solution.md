@@ -23,13 +23,13 @@ To deploy Azure VMware Solution in your test environment, you must perform the f
 Ensure that your subscription is enabled for Azure VMware Solution. Register Microsoft.AVS provider to create a private cloud. You can run that configuration either from the Azure portal or from the command line such as Azure CLI by using the following command:
 
 ``` azure cli
-**az provider register -n Microsoft.AVS --subscription <_your subscription ID_>**
+az provider register -n Microsoft.AVS --subscription <\*your subscription ID\*>
 ```
 
 Use the following procedure to create Azure VMware Solution using Azure CLI:
 
 ``` azure cli
-**az group create --name myResourceGroup --location eastus**
+az group create --name myResourceGroup --location eastus
 
 **az vmware private-cloud create -g myResourceGroup -n myPrivateCloudName --location eastus --cluster-size 3 --network-block xx.xx.xx.xx/22 --sku AV36**
 ```
