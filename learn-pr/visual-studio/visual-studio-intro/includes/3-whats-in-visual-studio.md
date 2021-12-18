@@ -44,39 +44,39 @@ Arrow buttons in the top of Visual Studio toolbar allow you to step into and aro
 
 While debugging you can hover to view variables values at this point in execution. You can also pin these to your editor window so you can keep an eye on the values without needing to hover or you can search the autos, local, and watch windows for variable values as well.
 
-:::image type="content" source="../media/vs-intro-debug-inspect.png" alt-text="Screenshot of Visual Studio debugging an object of type hobby. The cursor is hovering over the name property. The debugger shows the value in a window layered over it. At this point in execution the hobby name is "programming":::
+:::image type="content" source="../media/vs-intro-debug-inspect.png" alt-text="Screenshot of Visual Studio debugging an object of type hobby. The cursor is hovering over the name property. The debugger shows the value in a window layered over it. At this point in execution the hobby name is "programming."":::
 
 The debugger can also break when an exception is thrown in your program. This can be really helpful to determine what is going wrong if you app doesn't seem to be running correctly and you need more information. For example, in this case, we can't call Length on a null string so the debugger is throwing a Null Reference Exception. This shows when and where a null reference is being used which could break the running program.
 
-:::image type="content" source="../media/vs-intro-break-exception.png" alt-text="Screenshot of Visual Studio debugging with the yellow execution cursor paused on a Length call on a null string. An exception window appears over and highlights the line where the exception is occuring and calls out the string that is null.:::
+:::image type="content" source="../media/vs-intro-break-exception.png" alt-text="Screenshot of Visual Studio debugging with the yellow execution cursor paused on a Length call on a null string. An exception window appears over and highlights the line where the exception is occuring and calls out the string that is null.":::
 
 ## Customization
 
 Visual Studio is highly customizable allowing different themes, fonts, colors, and window layouts to be used! You can set these preferences in **Tools > Options**.
 
-:::image type="content" source="../media/vs-intro-theme.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to Environment General section. The theme drop down is expanded with the blue theme selected. The colors of Visual Studio are now blue as opposed to dark gray.:::
+:::image type="content" source="../media/vs-intro-theme.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to Environment General section. The theme drop down is expanded with the blue theme selected. The colors of Visual Studio are now blue as opposed to dark gray.":::
 
 There are a ton of different themes created [by the community](https://devblogs.microsoft.com/visualstudio/custom-themes/) as well that might mimic some of your favortie color pallettes.
 
-:::image type="content" source="../media/vs-intro-community-themes.png" alt-text="Collage of screenshots of different Visual Studio instances with a wide range of themes in different colors ranging from dark blue to vibrant red to light purple themes.:::
+:::image type="content" source="../media/vs-intro-community-themes.png" alt-text="Collage of screenshots of different Visual Studio instances with a wide range of themes in different colors ranging from dark blue to vibrant red to light purple themes.":::
 
 Customize the colors of different text display items and fonts in **Tools > Options > Environment > Fonts and Colors**
 
-:::image type="content" source="../media/vs-intro-colors.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to the Environment Fonts and Colors section. The font drop down has Comis Sans selected. The plain text color drop down now has magenta selected. The code in the editor window behind the Tools Options pane is now magenta and the font is Comic Sans.:::
+:::image type="content" source="../media/vs-intro-colors.png" alt-text="Screenshot of Visual Studio with the Tools Options dialog open and navigated to the Environment Fonts and Colors section. The font drop down has Comis Sans selected. The plain text color drop down now has magenta selected. The code in the editor window behind the Tools Options pane is now magenta and the font is Comic Sans.":::
 
 All the windows in Visual Studio can be dragged and dropped to different sections around the editor. You can even drag windows outside the editor entirely for use on a different desktop. You can also save and reset your window layout for different tasks.
 
-:::image type="content" source="../media/vs-intro-layout.png" alt-text="Screenshot of Visual Studio with one cs file being dragged to a different part of the editor. When dragging the file a semi-transparent display appears showing the different places the window can snap to including many different horizontal and vertical docking options above, below, to the left, or to the right of each window.:::
+:::image type="content" source="../media/vs-intro-layout.png" alt-text="Screenshot of Visual Studio with one cs file being dragged to a different part of the editor. When dragging the file a semi-transparent display appears showing the different places the window can snap to including many different horizontal and vertical docking options above, below, to the left, or to the right of each window.":::
 
 The toolbar at the top of Visual Studio contains lots of helpful buttons for different actions and commands. You can completely customize what buttons appear and even what commands they execute. 
 
-:::image type="content" source="../media/vs-intro-toolbar.png" alt-text="Screenshot of Visual Studio with a menu open for selecting multiple different buttons to be pinned in the toolbar at the top of the Visual Studio app.:::
+:::image type="content" source="../media/vs-intro-toolbar.png" alt-text="Screenshot of Visual Studio with a menu open for selecting multiple different buttons to be pinned in the toolbar at the top of the Visual Studio app.":::
 
 ## Extensions
 
 Visual Studio prides itself on being an open ecosystem where the community is empowered to create amazing developer tools. There are thousands of extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) with millions of downloads. Some are paid for and some are free and even open source! Some developers have even found full-time jobs developing extensions for other developers. You can find an extension for tons of functionality from changing the editor background to a picture, adding even more colors to your editor with colorized indent guides, and testing with community-built open source frameworks.
 
-:::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio with the Manage Extensions top-level menu item called out and the manage extensions dialog page open. The extension page has installed extensions listed including Markdown Editor, Visual Studio IntelliCode, and Live Share extensions.:::
+:::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio with the Manage Extensions top-level menu item called out and the manage extensions dialog page open. The extension page has installed extensions listed including Markdown Editor, Visual Studio IntelliCode, and Live Share extensions.":::
 
 Of course, in an ecosystem that is constantly evolving there isn't an extension for *everything* so if you are at all interested or missing functionality, keep in mind that you can [build extensions yourself](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)! 
 
@@ -84,7 +84,7 @@ Of course, in an ecosystem that is constantly evolving there isn't an extension 
 
 Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](http://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
 
-:::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio with a code file open. Part of the code is highlighted in a different cursor labled with the user's name Aaron Yim. A Live Share chat window is also open with the host, Kendra Havens, thanking Aaron for joining the live share session.:::
+:::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio with a code file open. Part of the code is highlighted in a different cursor labled with the user's name Aaron Yim. A Live Share chat window is also open with the host, Kendra Havens, thanking Aaron for joining the live share session.":::
 
 Live Share is specifically good for students and teachers, but also used everyday by professional developers to literally get everyone on the same page!
 
@@ -92,7 +92,7 @@ Live Share is specifically good for students and teachers, but also used everyda
 
 You can [publish](/visualstudio/deployment) your app directly to the cloud using Visual Studio's built-in publishing and pipeline management tools. It integrates with Azure so you can select and view cloud resources right from the IDE and select how you'd like to deploy.
 
-:::image type="content" source="../media/vs-intro-publish.png" alt-text="Screenshot of Visual Studio with a Publish dialog open asking if the user wants to publish to Azure, docker, or a local folder.:::
+:::image type="content" source="../media/vs-intro-publish.png" alt-text="Screenshot of Visual Studio with a Publish dialog open asking if the user wants to publish to Azure, docker, or a local folder.":::
 
 ## More to explore
 

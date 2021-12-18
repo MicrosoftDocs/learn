@@ -23,5 +23,5 @@ Recall the example at the beginning of this module of learning to program your f
 * [Install Visual Studio](/visualstudio/install/install-visual-studio)
 * [Visual Studio documentation](/visualstudio/ide)
 * [Visual Studio Editor documentation](/visualstudio/ide/index-writing-code)
-* [Visual Studio Debugger documentation](visualstudio/debugger/debugger-feature-tour)
-* [Visual Studio Debugger documentation](visualstudio/debugger/debugger-feature-tour)
+* [Visual Studio Debugger documentation](/visualstudio/debugger/debugger-feature-tour)
+* [Visual Studio Debugger documentation](/visualstudio/debugger/debugger-feature-tour)
