@@ -4,7 +4,7 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. That's a lot of individual storms, and it can be difficult to gain meaningful insights by looking at individual events.
 
-To group these events, we'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, this is pretty much what the query looks like. The aggregation function you'll use is called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
+To group these events, we'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. The aggregation function you'll use is called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
 
 1. Copy and paste the query into your query editor. 
 
@@ -15,7 +15,7 @@ To group these events, we'll use the `summarize` operator. Summarize is used for
     | summarize EventCount=count() by State
     | sort by EventCount
     ```
-1. Run the query by either selecting the **Run** button above the query window or by pressing **Shift+Enter**
+1. Run the query by either selecting the **Run** button above the query window or by pressing **Shift+Enter**.
     
     You should get results that look like the following image:
     
@@ -50,7 +50,7 @@ The following query incorporates both operator types within the `summarize` oper
 
 ## Use the `distinct` operator
 
-The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms - maybe you'd like to drill down even further to explore these events. Use the `distinct` operator to list the distinct values of a particular column.
+The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms. To see a list of each different type of event, use the `distinct` operator to list the distinct values of a particular column.
 
 1. Run the following query: 
 
@@ -65,3 +65,5 @@ The above query returned a distinct count of 27 different types of storms in Tex
     You should get results that look like the following image:
     
     :::image type="content" source="../media/4-distinct.png" alt-text="Screenshot of Kusto query using the distinct operator.":::
+
+1. Take a look at the resulting list. How many types of storms are related to some kind of wind? Can you construct a query that could answer this question?
