@@ -18,7 +18,7 @@ The IoT Hub routes these two messages to different resources. It's common to use
 
 ## Understand lambda architecture
 
-The *Lambda architecture* of Azure IoT enables multiple paths. However, for the sake of explanation, let's work with two paths, hot and cold.
+The *Lambda architecture* for an Azure IoT solution enables multiple data paths. However, for the sake of explanation, let's work with two paths, hot and cold.
 
 :::image type="content" source="../media/m04-l02-lamda-architecture-dataflow-c15dc3c3.png" alt-text="Diagram that shows the lambda architecture for an IoT solution that includes hot and cold storage paths.":::
 

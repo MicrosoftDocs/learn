@@ -10859,6 +10859,11 @@
       "source_path": "learn-pr/wwl-azure/examine-iot-device-lifecycle-concepts/7-introduction-to-device-retirement.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-device-lifecycle-concepts/7-introduction-device-retirement",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/3-common-storage-options-for-azure-iot-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/3-common-storage-options-azure-iot-solutions",
+      "redirect_document_id": true
     }
   ]
 }

@@ -177,8 +177,8 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
 You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
 
-> [!NOTE]
-> This database seeding strategy should not be used in distributed environments, as it doesn't account for race conditions.
+> [!WARNING]
+> Be careful using this database seeding strategy in distributed environments, as it doesn't account for race conditions.
 
 1. In the *Data* folder, add a new file named *DbInitializer.cs*.
 1. Add the following code to *Data\DbInitializer.cs*:
