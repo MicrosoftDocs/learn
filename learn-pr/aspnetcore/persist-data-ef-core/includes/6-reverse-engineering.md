@@ -38,7 +38,7 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
     ```
 
     > [!TIP]
-    > New scaffolded files can be generated if the database changes. However, be aware that any manual changes you've made to the original scaffolded files will need to be recreated in the replacement files.
+    > New scaffolded files can be generated if the database changes. The generated files are overwritten each time, but are created as `partial` classes you can extend them with custom properties and behaviors in your own, separate files.
 
 ## Add coupon endpoint
 
