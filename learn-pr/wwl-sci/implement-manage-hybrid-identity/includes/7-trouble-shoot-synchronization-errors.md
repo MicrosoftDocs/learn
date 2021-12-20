@@ -1,14 +1,12 @@
 Errors could occur when identity data is synchronized from Windows Server Active Directory (AD DS) to Azure Active Directory (Azure AD). This section provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors. This section includes the common error types and may not cover all the possible errors.
 
-With the latest version of Azure AD Connect (August 2016 or higher), a report of Synchronization Errors is available in the [Azure portal](https://aka.ms/aadconnecthealth) as part of Azure AD Connect Health for sync.
+With the latest version of Azure AD Connect, a report of Synchronization Errors is available in the [Azure portal](https://aka.ms/aadconnecthealth) as part of Azure AD Connect Health for sync.
 
-Starting September 1, 2016 [Azure Active Directory Duplicate Attribute Resiliency](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency) feature will be enabled by default for all the *new* Azure Active Directory Tenants. This feature will be automatically enabled for existing tenants in the upcoming months.
-
-Azure AD Connect performs three types of operations from the directories it keeps in sync: Import, Synchronization, and Export. Errors can take place in all the operations. This section mainly focuses on errors during Export to Azure AD.
+Azure AD Connect performs three types of operations from the directories it keeps in sync: Import, Synchronization, and Export. Errors can take place in all the operations. This section mainly focuses on errors during Export to Azure AD.<br>
 
 ## Errors during export to Azure AD
 
-The following section describes different types of synchronization errors that can occur during the export operation to Azure AD using the Azure AD connector. This connector can be identified by the name format being "contoso.*onmicrosoft.com*". Errors during export to Azure AD indicate that the operation (add, update, delete etc.) attempted by Azure AD Connect (Sync Engine) on Azure Active Directory failed.
+The following section describes different types of synchronization errors that can occur during the export operation to Azure AD using the Azure AD connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Azure AD indicate that the operation (add, update, delete etc.) attempted by Azure AD Connect (Sync Engine) on Azure Active Directory failed.
 
 :::image type="content" source="../media/export-errors-overview-01-de4b5c62.png" alt-text="Export Errors Overview.":::
 
