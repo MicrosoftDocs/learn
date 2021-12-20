@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio.visual-studio-intro.3-whats-in-visual-studio
-title: Unit
+title: What's in Visual Studio?
 metadata:
-  title: Unit
-  description: Describe unit
+  title: What's in Visual Studio?
+  description: Visual Studio has a number of features including a world class debugger and editor. It's ability to be customized and extended make developers feel at home. Pair programming with Live Share and the publishing tools help your development experience stay connected to your team and the cloud.
   author: kendrahavens
   ms.author: kehavens
   ms.date: 12/15/2021

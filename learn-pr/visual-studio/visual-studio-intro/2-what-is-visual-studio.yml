@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio.visual-studio-intro.2-what-is-visual-studio
-title: Unit
+title: What is Visual Studio?
 metadata:
-  title: Unit
-  description: Describe unit
+  title: What is Visual Studio?
+  description: Visual Studio is a popular integrated development used by millions across the globe. It's been around for over 20 years and is part of the Visual Studio family along with Visual Studio Code.
   author: kendrahavens
   ms.author: kehavens
   ms.date: 12/15/2021

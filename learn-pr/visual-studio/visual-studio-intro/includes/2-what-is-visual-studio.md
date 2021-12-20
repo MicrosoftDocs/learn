@@ -1,8 +1,8 @@
-Visual Studio is an integrated development environment (IDE) that’s very popular for .NET and C++ workloads as well as many other languages and frameworks. It also has a massive ecosystem of extensions because Visual Studio has been around for over 20 years!
+Visual Studio is an integrated development environment (IDE). It's popular for .NET and C++ workloads and many other languages and frameworks. It also has a massive ecosystem of extensions because Visual Studio has been around for over 20 years!
 
 :::image type="content" source="../media/vs-intro-debug1.png" alt-text="Screenshot of Visual Studio debugging a webapp called my first website":::
 
-To address the most popular question these days: what is the difference between Visual Studio and Visual Studio Code? Visual Studio Code is a wildly popular light-weight source code editor that was first released in 2015. It is a part of our Visual Studio editor family, but Visual Studio is the fully integrated development environment with world class editing and debugging experiences.
+To address the most popular question these days: what is the difference between Visual Studio and Visual Studio Code? Visual Studio Code is a wildly popular light-weight source code editor that was first released in 2015. It's a part of our Visual Studio editor family. Visual Studio is the fully integrated development environment with world class editor and debugger.
 
 :::image type="content" source="../media/vs-intro-vscode.png" alt-text="Screenshot of Visual Studio and Visual Studio Code while both IDEs are debugging the same webapp called my first website.":::
 
