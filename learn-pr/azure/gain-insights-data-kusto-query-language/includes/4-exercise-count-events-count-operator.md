@@ -4,9 +4,9 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. That's a lot of individual storms, and it can be difficult to gain meaningful insights by looking at individual events.
 
-To group these events, we'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. The aggregation function you'll use is called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
+To group these events into chunks of information, you'll use the `summarize` operator. Summarize is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you have to specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. The specific aggregation function you'll use is called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
 
-1. Copy and paste the query into your query editor. 
+1. Copy and paste the query into your query editor.
 
     [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVQALOeeX5pXYJoNIDU2FpEqF4JLEklSQuvyiEhAfoQoAiCAatkgAAAA=)
 
@@ -20,13 +20,13 @@ To group these events, we'll use the `summarize` operator. Summarize is used for
     You should get results that look like the following image:
     
     :::image type="content" source="../media/4-count-1.png" alt-text="Screenshot of count operator usage and results.":::
-    
 
 ## Use the `dcount` and `countif` operators
 
-The above query returned the number of events per state. There are, however, more sophisticate ways to count events. For example, we could count only certain types of events. The `countif()` operator counts records for which a predicate is true. You can use it to count the number of events that cause damage to crops.
+The above query returned the number of events per state. There are, however, more sophisticated ways to count events. For example, you could count only certain types of events. The `countif()` operator counts records for which a predicate is true.
 
-You may want to count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set. 
+* For example, the query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
+* You can also count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set.
 
 The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and must be grouped by the same column, in this case *State*.
 
@@ -50,9 +50,9 @@ The following query incorporates both operator types within the `summarize` oper
 
 ## Use the `distinct` operator
 
-The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms. To see a list of each different type of event, use the `distinct` operator to list the distinct values of a particular column.
+The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms. To see a list of each different type of event, use the `distinct` operator, which lists the distinct values of a particular column.
 
-1. Run the following query: 
+1. Run the following query:
 
     [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSMksLsnMSy5RAIuEVBakAgWL84tKFJIqEWIKicXJAGL0i684AAAA)
     

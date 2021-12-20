@@ -1,3 +1,7 @@
+A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll look at these results as a function of time with the aid of time-binned graphs. 
+
+Recall that you have used the `summarize` operator to group events by a common field such as *State*.
+
 
 
 When during the year were these storms? Group by week from start time represent visually.
