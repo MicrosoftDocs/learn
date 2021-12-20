@@ -6,7 +6,7 @@ Based on the time window set in the Query window:
 
 - Query 2 will return one row and column, which is the count of all rows of SecurityEvent and all rows of SecurityAlert
 
-- Query 3 will return all rows of SecurityEvent and one row for SecurityAlert.  The row for SecurityAlert will have the count of the SecurityAlert rows.
+- Query 3 will return all rows of SecurityEvent and one row for SecurityAlert.  
 
 Run each Query separately to see the results.
 
@@ -26,8 +26,7 @@ SecurityEvent
 // Query 3
 
 SecurityEvent 
-| union (SecurityAlert  | summarize count()) 
-| project count_
+| union (SecurityAlert | summarize count()| project count_)
 
 ```
 
