@@ -10,14 +10,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 title: Introduction to Visual Studio
-summary: Visual Studio brings advanced editing, debugging, and customization to your everyday programming tasks. As you program your apps, Visual Studio can help you diagnose issues quickly to get you unblocked and back to building and publishing your apps.
+summary: Visual Studio brings advanced editing, debugging, and customization to your everyday programming tasks. As you program, Visual Studio can help you diagnose issues quickly to get you unblocked and back to building and publishing your apps.
 abstract: |
   By the end of this module, you'll be able to: 
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
+    - Evaluate whether Visual Studio is appropriate for your development needs.
+    - Describe how the editor, debugger, customization, extensions, pair programming, and publishing tools of Visual Studio make you more productive.
 prerequisites: |
-  - Some experience with beginner computer skills like installing an app from the internet
-  - Beginner familiarity with programming concepts like running code, editors, and debuggers
+  - Some experience with beginner computer skills like installing an app from the internet.
+  - Beginner familiarity with programming concepts like running code, editors, and debuggers.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

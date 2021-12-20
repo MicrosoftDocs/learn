@@ -10,7 +10,7 @@ You've now had a basic introduction to Visual Studio. As mentioned in the beginn
   * Publishing tools that help deploy your app to the cloud.
 * You now know when Visual Studio might help you with your different developer tasks.
 
-Recall the example at the beginning of this module of learning to program your first website. Visual Studio can help you select website templates to help you get started. It offers hints and warnings as you type in the Editor. And you can inspect your webapp as it runs locally with debugger tools. Hopefully this module gave you a good understanding of why so many developers find IDEs make them more productive. Happy coding!
+Recall the example at the beginning of this module of learning to program your first website. Visual Studio can help you select website templates to help you get started. It offers hints and warnings as you type in the Editor. And you can inspect your webapp as it runs locally with debugger tools. Hopefully this module gave you a good understanding of why so many developers find that IDEs make them more productive. Happy coding!
 
 ## Next Steps
 
@@ -20,7 +20,7 @@ Recall the example at the beginning of this module of learning to program your f
 
 * [C# testing in Visual Studio](/learn/modules/visual-studio-test-tools)
 * [Git and GitHub in Visual Studio](/learn/modules/visual-studio-github-push)
-* [Install Visual Studio](/visualstudio/install/install-visual-studio)
+* [Visual Studio installation guide](/visualstudio/install/install-visual-studio)
 * [Visual Studio documentation](/visualstudio/ide)
 * [Visual Studio Editor documentation](/visualstudio/ide/index-writing-code)
 * [Visual Studio Debugger documentation](/visualstudio/debugger/debugger-feature-tour)

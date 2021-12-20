@@ -2,7 +2,7 @@ In this introduction we'll cover the most frequently used tools in the Visual St
 
 ## Example scenario
 
-Suppose you're just starting to learn programming or you're new to Visual Studio developer tools. You know a good way to start is by building your first website. It can be a place you can post blogs or keep your resume. Generally, it can be a space that friends, recruiters, or coworkers can find to get to know you and a good first project. 
+Suppose you're just starting to learn programming or you're new to Visual Studio developer tools. You know a good way to start is by building your first website. It can be a place you can post blogs, keep your resume, or help people get in contact with you. Generally, it can be a space that friends, recruiters, or coworkers can find to get to know you better.
 
 You may have watched some videos online or maybe even coded some of your first Python, JavaScript, or C# code. There's a ton of great learning tools for coding these languages. Some tools like [interactive docs](/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=1) execute entirely in the browser. You want to take the next step and run code on your computer locally. You've learned you'll need a code editor or an integrated development environment (IDE) to code and compile on your own computer and you're ready to dig in! The first step is understanding what tools you'd like to use for programming and how they can help you code a great app.
 

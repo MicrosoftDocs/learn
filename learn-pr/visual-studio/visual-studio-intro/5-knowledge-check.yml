@@ -29,15 +29,15 @@ quiz:
           explanation: Incorrect. The reverse is true. Visual Studio is an IDE and VSCode is the light-weight editor.
     - content: What is one tool that enables me to pair program in Visual Studio?
       choices:
-        - content: Code fixes
-          isCorrect: false
-        - content: Extensions
-          isCorrect: false
         - content: IntelliCode
           isCorrect: false
         - content: Live Share
           isCorrect: true
           explanation: Correct. Live Share allows you to share your coding context with a friend so they can code along with you, navigate your code, and view the same output and debug information that you see locally all over a remote connection.
+        - content: Code fixes
+          isCorrect: false
+        - content: Extensions
+          isCorrect: false
     - content: What ways can Visual Studio help me publish my apps?
       choices:
         - content: You can only publish locally to your machine using the debugger.
@@ -46,7 +46,6 @@ quiz:
           isCorrect: false
         - content: You can only publish to a Docker container.
           isCorrect: false
-          explanation: Incorrect. because reasons
         - content: All of the above.
           isCorrect: true
           explanation: Correct. You can publish locally to your machine, publish to the cloud using Azure, publish to a Docker container, and more!

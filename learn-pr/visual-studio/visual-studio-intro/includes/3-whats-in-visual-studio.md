@@ -6,7 +6,7 @@ The Visual Studio editor has excellent code completion, syntax highlighting, qui
 
 :::image type="content" source="../media/vs-intro-editor.png" alt-text="Screenshot of Visual Studio's code editor. Callouts indicate the different colors in the UI and the lightbulbs that give suggestions in the margin. More callouts point to quick info boxes that appear when the cursor hovers and the IntelliSense completion list.":::
 
-IntelliSense is taken a step further with IntelliCode, the AI tool that is build into the editor. [IntelliCode](https://aka.ms/intellicode) is trained from open source code to bring common patterns and smart completion to your editor. It may appear as you type in the form of gray text suggestions. IntelliCode can make our intellisense completion list smarter by bubbling the most likely completions to the top of the list.
+IntelliSense is taken a step further with IntelliCode, the AI tool that is built into the editor. [IntelliCode](https://aka.ms/intellicode) is trained from open source code to bring common patterns and smart completion to your editor. It may appear as you type in the form of gray text suggestions. IntelliCode can make our intellisense completion list smarter by bubbling the most likely completions to the top of the list.
 
 Built-in code fixes and refactorings appear as lightbulbs or screwdrivers in the margin of the editor. These helpful menus can suggest common actions and code fixes for errors or warnings in your files. They can even make subtle suggestions to improve your code style.
 
@@ -30,7 +30,7 @@ If your app is a website, it will start up a browser in your local host.
 
 :::image type="content" source="../media/vs-intro-web-app.png" alt-text="Screenshot of Visual Studio debugging a website. A browser window is open to localhost showing a website page titled My First Website.":::
 
-If it's a console app a console will pop up to run your app.
+If it's a console app, a console will pop up to run your app.
 
 :::image type="content" source="../media/vs-intro-console-app.png" alt-text="Screenshot of Visual Studio and a debug console window. The console window shows the text Hello World.":::
 
@@ -74,7 +74,7 @@ The toolbar at the top of Visual Studio contains lots of helpful buttons for dif
 
 ## Extensions
 
-Visual Studio prides itself on being an open ecosystem where the community is empowered to create amazing developer tools. There are thousands of extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) with millions of downloads. Some are paid for and some are free and even open source! Some developers have even found full-time jobs developing extensions for other developers. You can find an extension for tons of functionality. From changing the editor background to a picture, adding even more colors to your editor with colorized indent guides, to testing with community-built open source frameworks.
+Visual Studio prides itself on being an open ecosystem where the community is empowered to create amazing developer tools. There are thousands of extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) with millions of downloads. Some are paid for and some are free and even open source! Some developers have even found full-time jobs developing extensions for other developers. You can find extensions for tons of functionality. From changing the editor background to a picture, adding even more colors to your editor with colorized indent guides, to testing with community-built open source frameworks.
 
 :::image type="content" source="../media/vs-intro-extensions.png" alt-text="Screenshot of Visual Studio with the Manage Extensions top-level menu item called out and the manage extensions dialog page open. The extension page has installed extensions listed including Markdown Editor, Visual Studio IntelliCode, and Live Share extensions.":::
 
@@ -82,7 +82,7 @@ Despite how many extensions are out there, in an ecosystem that is constantly ev
 
 ## Pair programming with Live Share
 
-Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](https://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the hosts code, debug values, and build output all from within their own IDE.
+Pair programming is the idea of collaboratively editing and debugging code with others. Coding together with classmates or colleagues is a great way to transfer coding knowledge, do code reviews, troubleshoot, or share code while working remotely. [Live Share](https://aka.ms/liveshare) allows users to share a link and let others join your programming session. Building and debugging still happen on the host machine, but the host can see the cursors of the guests' live edits. The guests can see the host's code, debug values, and build output all from within their own IDE.
 
 :::image type="content" source="../media/vs-intro-liveshare.png" alt-text="Screenshot of Visual Studio with a code file open. Part of the code is highlighted in a different cursor labeled with the user's name Aaron Yim. A Live Share chat window is also open with the host, Kendra Havens, thanking Aaron for joining the live share session.":::
 
@@ -96,4 +96,4 @@ You can [publish](/visualstudio/deployment) your app directly to the cloud using
 
 ## More to explore
 
-These eaxamples are just a taste of the developer experiences in Visual Studio. There are a lot more amazing tools packed into this IDE including Git and GitHub integration, UI designers, database explorers, code analysis, testing tools, and more! You can find more info on these features in the extensive [Visual Studio documentation](/visualstudio/) or stick around and explore the rest of the Visual Studio learning paths.
+These examples are just a taste of the developer experiences in Visual Studio. There are a lot more amazing tools packed into this IDE including Git and GitHub integration, UI designers, database explorers, code analysis, testing tools, and more! You can find more info on these features in the extensive [Visual Studio documentation](/visualstudio/) or stick around and explore the rest of the Visual Studio learning paths after this module.
