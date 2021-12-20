@@ -3,7 +3,7 @@ In the modern IT world, protecting devices from unauthorized access is one of th
 You can require devices to be compliant. Intune features device compliance policies that let you evaluate (and in some cases remediate) devices that aren't compliant with rules that you specify. For example, you can get reports on the following device characteristics before taking action:
 - jailbroken iOS/iPadOS devices
 - encrypted or not encrypted devices
-- the health of Windows 10 devices (as determined by the Health Attestation Service).
+- the health of Windows 10/11 devices (as determined by the Health Attestation Service).
 
 You can protect apps and the data they use. Intune gives you a range of features to help you protect apps and their data. For example, mobile application management (MAM) policies can:
 - prevent data from being backed up from a protected app
