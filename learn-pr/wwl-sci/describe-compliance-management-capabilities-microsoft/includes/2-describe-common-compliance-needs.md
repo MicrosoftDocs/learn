@@ -13,12 +13,12 @@ Some regulations also require that data remains protected even if it’s moved b
 - The destination country where personal data is to be transferred must be considered to have adequate protections for the data.
 - Organizations must create appropriate safeguards, such as specific clauses that must be included in contracts with organizations or bodies that handle any personal data.
 
-## Common compliance regulations
+## Common compliance regulations and standards
 
-Some of the regulations that organizations and institutions commonly work with include:
+Some of the regulations and standards that organizations and institutions commonly work with include:
 
-- **Health Insurance Portability and Accountability Act (HIPAA)** – introduces rules on how health-related information should be protected.
-- **The Family Educational Rights and Privacy Act (FERPA)** – introduces rules to protect student information.
-- **ISO 27701** – specifies rules and guidance to manage personal information, and demonstrate compliance.
+- **Health Insurance Portability and Accountability Act (HIPAA)** – a regulation that introduces rules on how health-related information should be protected.
+- **The Family Educational Rights and Privacy Act (FERPA)** – a regulation that introduces rules to protect student information.
+- **ISO 27701** – a standard that specifies rules and guidance to manage personal information, and demonstrate compliance.
 
 Microsoft supports organizations’ compliance needs with built-in tools and capabilities to help them protect information, manage data governance, and respond to regulatory requests.
