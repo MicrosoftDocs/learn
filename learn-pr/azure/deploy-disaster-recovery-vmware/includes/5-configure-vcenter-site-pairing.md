@@ -23,7 +23,7 @@ To configure site pairing, perform the following steps:
 
 8. Provide the username and password, and then select **Next**.
 
-    :::image type="content"  source="../media/5-site-pair-details.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
+    :::image type="content"  source="../media/5-site-pair-details.PNG" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
 
 The address that you provide for the Platform Services Controller must exactly match the address that you provided when you installed Site Recovery Manager Server on the recovery site.                               
 
@@ -50,7 +50,7 @@ Before you start protecting the VMs, you first need to map the objects on the pr
 > [!NOTE]
 > To enable bidirectional protection and reprotect, you can configure reverse mappings to map the objects on the recovery site back to their corresponding objects on the protected site. 
 
-:::image type="content"  source="../media/5-recovery-networks.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site.":::
+:::image type="content"  source="../media/5-recovery-networks.PNG" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site.":::
 
 By configuring mappings, you can ensure that the VMs will have access to all resources available in the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
 
@@ -84,7 +84,7 @@ Use the following procedure to configure replication for the VM:
     > [!NOTE]
     > You can configure replications for powered-off VMs, but the data synchronization begins when the VM is powered on. While the source VM is powered off, the replication displays a **Not active** status. 
 
-    :::image type="content"  source="../media/5-replication-settings.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings.":::
+    :::image type="content"  source="../media/5-replication-settings.PNG" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings.":::
 
 ### Create and manage protection groups
 
@@ -124,7 +124,7 @@ Use the following procedure to create vSphere Replication protection groups:
 
 8. Review your settings, and then select **Finish**. 
 
-   :::image type="content"  source="../media/5-protection-group-type.png" alt-text="Screenshot of the Type window in Azure VMware Solution with the Individual VMs (vSphere replication) option selected.":::
+   :::image type="content"  source="../media/5-protection-group-type.PNG" alt-text="Screenshot of the Type window in Azure VMware Solution with the Individual VMs (vSphere replication) option selected.":::
 
 ### Create, test, and run recovery plans
 
@@ -172,4 +172,4 @@ Use the following procedure to run a recovery plan:
 3. Choose between the recovery types **Planned migration** or **Disaster Recovery**, and then select **Next**.
 4. On the **Ready to complete** page, review your selected settings, and then select **Finish**. 
 
-    :::image type="content"  source="../media/5-recovery-plan-confirmation-options.png" alt-text="Screenshot of the Confirmation options window in Azure VMware Solution with the selected recovery confirmation options.":::
+    :::image type="content"  source="../media/5-recovery-plan-confirmation-options.PNG" alt-text="Screenshot of the Confirmation options window in Azure VMware Solution with the selected recovery confirmation options.":::
