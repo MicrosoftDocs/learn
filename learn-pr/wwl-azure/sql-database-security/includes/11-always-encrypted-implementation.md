@@ -1,16 +1,83 @@
 A proper always encrypting implementation is important to a secure database.
 
 ### Configuring Always Encrypted
+
 The initial setup of Always Encrypted in a database involves generating Always Encrypted keys, creating key metadata, configuring encryption properties of selected database columns, and/or encrypting data that may already exist in columns that need to be encrypted. Remember that some of these tasks are not supported in Transact-SQL and require the use of client-side tools. As Always Encrypted keys and protected sensitive data are never revealed in plaintext to the server, the Database Engine cannot be involved in key provisioning and perform data encryption or decryption operations. You can use SQL Server Management Studio (SSMS) or PowerShell to accomplish such tasks.
 
-| Task| SSMS| PowerShell| SQL|
-| - | --| ---| ----|
-|Provisioning column master keys, column encryption keys and encrypted column encryption keys with their corresponding column master keys| Yes| Yes | No|
-|Creating key metadata in the database| Yes | Yes| Yes|
-|Creating new tables with encrypted columns| Yes| Yes| Yes|
-|Encrypting existing data in selected database columns| Yes| Yes| No|
+:::row:::
+  :::column:::
+    **Task**
+  :::column-end:::
+  :::column:::
+    **SSMS**
+  :::column-end:::
+  :::column:::
+    **PowerShell**
+  :::column-end:::
+  :::column:::
+    **SQL**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Provisioning column master keys, column encryption keys and encrypted column encryption keys with their corresponding column master keys
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Creating key metadata in the database
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Creating new tables with encrypted columns
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Encrypting existing data in selected database columns
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
 
-![High level data flow for implementation of Always Encrypted](../media/az500-always-encrypted-flow.png)
+
+:::image type="content" source="../media/az500-always-encrypted-flow-7b56931a.png" alt-text="High level data flow for implementation of Always Encrypted":::
+
 
 When setting up encryption for a column, you specify the information about the encryption algorithm and cryptographic keys used to protect the data in the column. Always Encrypted uses two types of keys: column encryption keys and column master keys. A column encryption key is used to encrypt data in an encrypted column. A column master key is a key-protecting key that encrypts one or more column encryption keys.
 
