@@ -4,7 +4,7 @@ Now that you understand the use case scenarios for object storage, you can explo
 
 By enabling multiprotocol support for data that resides in Blob Storage, your company can eliminate data silos, which occur when different data sources are stored in separate locations. Your company will also no longer need to refactor the data prior to moving it to the cloud. This is because Blob Storage provides users the ability to choose different tools to work directly with all the data they need. 
 
-:::image type="content" source="../media/3-azure-blob-storage-architecture.svg" alt-text="Illustration depicting Azure Blob Storage and the supported protocols used to access data stored in a hierarchical file system." lightbox="../media/3-azure-blob-storage-architecture.png":::
+:::image type="content" source="../media/3-azure-blob-storage-architecture.svg" alt-text="Illustration depicting Azure Blob Storage and the supported protocols used to access data stored in a hierarchical file system." lightbox="../media/3-azure-blob-storage-architecture.svg":::
 
 ### REST protocol support for Azure Blob Storage
 
