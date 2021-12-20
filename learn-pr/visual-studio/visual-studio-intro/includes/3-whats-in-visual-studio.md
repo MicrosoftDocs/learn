@@ -14,7 +14,7 @@ Built-in code fixes and refactorings appear as lightbulbs or screwdrivers in the
 
 There are many navigation commands that help you move around your code and files. Go To Definition, Peek Definition, and Go To Base are a few. Icons in the margin can also help you navigate your inheritance chain. You can even navigate backward to a previous location your cursor was at where you made changes with a button or by using a keyboard shortcut (Ctrl+-).
 
-:::image type="content" source="../media/vs-intro-navigation.png" alt-text="Multiple screenshots of Visual Studio. First is the right-click menu showing navigation commands including go to definition and peek definition. The second shows an icon in the margin showing the base type of a class. The last shows the navigation buttons at the top-left corner of Visual Studio. The arrows on these buttons point left and right to help navigate the cursor forwards and beckwards to different edit points.":::
+:::image type="content" source="../media/vs-intro-navigation.png" alt-text="Multiple screenshots of Visual Studio. First is the right-click menu showing navigation commands including go to definition and peek definition. The second shows an icon in the margin showing the base type of a class. The last shows the navigation buttons at the top-left corner of Visual Studio. The arrows on these buttons point left and right to help navigate the cursor forwards and backwards to different edit points.":::
 
 Visual Studio even comes pre-loaded with templates and snippets to help you scaffold the right projects and code. For example, simply typing "prop" in the editor and typing `tab tab` will insert a Property.
 

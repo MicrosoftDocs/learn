@@ -17,7 +17,7 @@ quiz:
   questions:
     - content: Select the differences between Visual Studio and Visual Studio Code.
       choices:
-        - content: Visual Studio Code is not open source.
+        - content: Visual Studio Code isn't open source.
           isCorrect: false
           explanation: Visual Studio Code is open source. Visual Studio is closed source, but free for students, open-source contributors, and individuals.
         - content: Visual Studio Code predates Visual Studio
@@ -33,7 +33,7 @@ quiz:
           isCorrect: false
         - content: Live Share
           isCorrect: true
-          explanation: Correct. Live Share allows you to share your coding context with a friend so they can code along with you, navigate your code, and view the same output and debug information that you see locally all over a remote connection.
+          explanation: Correct. Live Share allows you to share your coding context with a friend so they can code along with you. They can navigate your code and view the same output and debug information that you see locally over a remote connection.
         - content: Code fixes
           isCorrect: false
         - content: Extensions
