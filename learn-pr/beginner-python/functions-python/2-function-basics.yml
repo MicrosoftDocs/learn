@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.functions-python.function-basics
+title: Basics of Python functions
+metadata:
+  unitType: learning-content
+  title: learning-content
+  description: "This module gives an initial overview of what functions are and how they work. The overview includes how to create and use functions as well as using their return values."
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-function-basics.md)]

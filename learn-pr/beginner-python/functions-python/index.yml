@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.beginner-python.functions-python
+metadata:
+  moduleType: standard
+  title: Python functions
+  description: "Functions are a foundational knowledge when writing modular code. Understanding inputs and outputs in functions will allow you to write better software that is reusable and readable."
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Python functions
+summary: "The next step after using procedural code is to write modular software with functions. From simple one to multi-argument ones, functions are useful to make code reusable."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Use functions with different types of return values"
+    - "Implement different formatting techniques"
+prerequisites: |
+  - "Basic programming knowledge, like using and assigning variables."
+  - "Some experience using Jupyter notebooks, including adding and modifying code."
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+  - student
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+  - vs
+units:
+- learn.beginner-python.functions-python.introduction
+- learn.beginner-python.functions-python.function-basics
+- learn.beginner-python.functions-python.function-arguments
+- learn.beginner-python.functions-python.exercise-functions-inputs
+- learn.beginner-python.functions-python.keyword-arguments
+- learn.beginner-python.functions-python.variable-arguments
+- learn.beginner-python.functions-python.exercise-keyword-arguments
+- learn.beginner-python.functions-python.knowledge-check
+- learn.beginner-python.functions-python.summary
+badge:
+  uid: learn.beginner-python.functions-python.badge
