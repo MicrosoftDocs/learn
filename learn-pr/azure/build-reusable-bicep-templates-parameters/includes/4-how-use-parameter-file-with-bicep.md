@@ -52,7 +52,7 @@ Generally, you'll create a parameter file for each environment. It's a good prac
 
 ::: zone pivot="cli"
 
-When you create a new deployment by using the `az group deployment create` command, you can specify the name of the parameter file you want to use with the `--parameters` argument:
+When you create a new deployment by using the `az deployment group create` command, you can specify the name of the parameter file you want to use with the `--parameters` argument:
 
 :::code language="azurecli" source="code/4-deployment.sh" highlight="3":::
 

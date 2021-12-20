@@ -38,7 +38,7 @@ In this unit, you'll create C# entity classes that will map to tables in a local
     dotnet build
     ```
 
-    The code builds with no warnings or errors.
+    The code should build with no warnings or errors.
 
 ## Add NuGet packages and EF Core tools
 
@@ -99,7 +99,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     In the preceding code:
 
-    - The constructor accepts a parameter of type `DbContextOptions<PizzaContext>`. This 
+    - The constructor accepts a parameter of type `DbContextOptions<PizzaContext>`. This allows external code to pass in the configuration, so the same `DbContext` can be shared between test and production code and even used with different providers.
     - The `DbSet<T>` properties correspond to tables to be created in the database.
     - The table names will match the `DbSet<T>` property names in the `PizzaContext` class. This behavior can be overridden if needed.
     - When instantiated, `PizzaContext` will expose `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections exposed by those properties will be propagated to the database.
@@ -157,7 +157,7 @@ You've done all you need to create a migration for creating your initial databas
     Execution of the preceding command applies the migration. Since *ContosoPizza.db* doesn't exist, it's created in the project directory.
 
     > [!TIP]
-    > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's preferable to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the **Package Manager Console** window.
+    > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's also possible to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the integrated **Package Manager Console** window.
 
 ## Inspect the database
 
@@ -182,7 +182,7 @@ EF Core created a database for your app. Let's take a look inside the database.
     - Tables have been created corresponding to each entity.
     - Table names were pluralized based on the class names.
     - Properties named `Id` were inferred to be auto-incrementing primary key fields.
-    - A `PizzaTopping` junction table was created to represent many-to-many relationship between pizzas and toppings.
+    - A `PizzaTopping` join table was created to represent the _many-to-many_ relationship between pizzas and toppings.
     - EF Core's primary key and foreign key constraint naming conventions are `PK_<Primary key property>` and `FK_<Dependent entity>_<Principal entity>_<Foreign key property>`, respectively. The `<Dependent entity>` and `<Principal entity>` placeholders correspond to the entity class names.
 
     > [!NOTE]
