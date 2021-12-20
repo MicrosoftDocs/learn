@@ -34,7 +34,7 @@ region=EastUS2EUAP
 
 az login
 az account set --subscription $subscriptionId
-az group deployment create -g $resourceGroupName \
+az deployment group create -g $resourceGroupName \
 --template-uri "https://raw.githubusercontent.com/Azure/azure-managed-disks-performance-tiers/main/CreateUpdateDataDiskWithTier.json" \
 --parameters "region=$region" "diskName=$diskName" "performanceTier=$performanceTier" "dataDiskSizeInGb=$diskSize"
 ```
