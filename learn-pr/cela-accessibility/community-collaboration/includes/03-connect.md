@@ -1,51 +1,51 @@
-In the previous unit, you were introduced to foundational concepts about working with players with disabilities to inform accessible development. In this unit, you’ll learn of potential ways to connect with members of the disability community so you can begin forming these partnerships.
+The previous unit introduced you to foundational concepts about working with players with disabilities to inform accessible development. In this unit, you'll learn potential ways to connect with members of the disability community so you can begin forming these partnerships.
 
 ## Identify ways to connect with members of the gaming and disability community
 
-Factors like confidentiality and geographic location can play a role in who can review your unreleased products or interact with them in person. Based on these factors, different approaches can be taken to connect with players.
+Factors like confidentiality and geographic location can play a role in who can review your unreleased products or interact with them in person. Based on these factors, you can take different approaches to connect with players.
 
-### Connecting with communities within your company or organization
+### Connect with communities within your company or organization
 
-Given the competitive nature of the gaming market, it is not always possible to share ideas or concepts with individuals outside of your company or organization. Accessibility feedback can still be gathered.
+The competitive nature of the gaming market means that it's not always possible to share ideas or concepts with individuals outside your company or organization. But you can still gather accessibility feedback.
 
 Consider reaching out to fellow employees for feedback. It's possible that these individuals have visible or invisible disabilities and are willing to share their experiences. Every workplace is different in terms of disability disclosure and representation. However, with proper permission, consider these approaches to start the conversation:
 
- - Contact general employee distribution lists or post on internal company forums
- - Contact disability or accessibility focused employee resource groups
+- Contact general employee distribution lists or post on internal company forums.
+- Contact disability-focused or accessibility-focused employee resource groups.
 
-Be sure to include detailed information about the product or experience you are seeking feedback on. Include a description of the types of users and accessibility perspectives you hope to gather. For example, you can include statements like:
+Be sure to include detailed information about the product or experience that you're seeking feedback on. Include a description of the types of users and accessibility perspectives that you hope to gather. For example, you can include statements like:
 
-“Our game studio is looking to gather feedback about a new user interface layout from employees who regularly use screen readers.”
+"Our game studio is looking to gather feedback about a new user interface layout from employees who regularly use screen readers."
 
-These opportunities can foster active collaboration with the disability community throughout development while adhering to confidentiality restraints
+These opportunities can foster active collaboration with the disability community throughout development while adhering to confidentiality restraints.
 
 > [!Important]
-> When collaborating with employee groups, it's important to remember that any time spent providing feedback is likely additional work beyond typical day-to-day job tasks and functions. It's important to be considerate when asking fellow employees to participate.
+> When you're collaborating with employee groups, remember that any time that they spend providing feedback is likely work that's beyond typical day-to-day job tasks and functions. Be considerate when you're asking fellow employees to participate.
 
-### Connecting with local or global communities
+### Connect with local or global communities
 
-When possible, collaborate with members of the disability community outside of your company or organization. This can produce a more comprehensive set of perspectives given the larger number of potential individuals with disabilities willing to provide feedback compared to the number of fellow employees.
+When possible, collaborate with members of the disability community outside your company or organization. This effort can produce a more comprehensive set of perspectives, because the number of potential individuals with disabilities who are willing to provide feedback is larger than the number of fellow employees.
 
-Consider using the following platforms and channels to form connections with gaming and disability community members:
+Consider using the following platforms and channels to form connections with members of the gaming and disability communities:
 
-- **Social Media:** Social Media platforms provide opportunities for disability community members to come together and discuss common interests, including game accessibility. Creating social media posts that contain information or links to upcoming accessibility research studies, surveys, play tests, and more is a great way to reach broader communities.
+- **Social media:** Social media platforms provide opportunities for disability community members to come together and discuss common interests, including game accessibility. Creating social media posts that contain information or links to upcoming accessibility research studies, surveys, play tests, and more is a great way to reach broader communities.
 
     > [!Tip]
-    > Including tags like “#accessibility”, “#gameaccessibility”, or “#A11y” ([a numeronym for the word Accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) within your post increases visibility of the post among the players you are targeting.  
+    > Including tags like **#accessibility**, **#gameaccessibility**, or **#A11y** ([a numeronym for the word Accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) in your post increases the visibility of the post among the players that you're targeting.  
 
-- **Disability Non-profit Organizations and Advocacy Groups:** If your team is looking for feedback from players with a specific type of disability or experience, non-profit organizations and advocacy groups can be a great resource.
+- **Disability nonprofit organizations and advocacy groups:** If your team is looking for feedback from players who have a specific type of disability or experience, nonprofit organizations and advocacy groups can be a great resource.
 
-    For example, let's say your team is looking for feedback from players with low vision on a new high contrast feature in development. Organizations that support individuals with visual disabilities like the [American Federation for the Blind](https://www.afb.org/) may be able to share survey links or study information with the members they serve to increase visibility.
+    For example, let's say your team is looking for feedback from players with low vision on a new high-contrast feature in development. Organizations that support individuals with visual disabilities, like the [American Federation for the Blind](https://www.afb.org/), might be able to share survey links or study information with the members that they serve to increase visibility.
 
-    If you don't have a specific player-base in mind, this approach can still be taken. There are many game accessibility advocacy groups and general disability-focused organizations that may be able to connect you with members of the gaming and disability community.
+    If you don't have a specific player base in mind, you can still take this approach. There are many game accessibility advocacy groups and general disability-focused organizations that might be able to connect you with members of the gaming and disability community.
 
-- **Testing Services:** Consider leveraging companies or organizations that provide accessibility testing services. One option is the [Microsoft Game Accessibility Testing Service](/gaming/accessibility/mgats) for games shipping on Xbox console and PC platforms.
+- **Testing services:** Consider using companies or organizations that provide accessibility testing services. One option is the [Microsoft Game Accessibility Testing Service](/gaming/accessibility/mgats) for games that ship on Xbox consoles and PC platforms.
 
-    Developers can submit working game builds or released titles to the program. A test team consisting of multiple players with disabilities will play through and assess their accessibility experience. The development team will be provided a report that details this accessibility feedback and suggestions for improvement.
+    Developers can submit working game builds or released titles to the program. A test team that consists of multiple players with disabilities will play through and assess their accessibility experience. The development team will produce a report that details this accessibility feedback and suggestions for improvement.
 
     > [!Note]
-    > It is important to ensure that testing services used include players with disabilities as part of the test team! Testing services that offer automated accessibility checks or services performed by individuals outside of the disability community would not be considered true “community collaboration for accessible design.”
+    > It's important to use testing services that include players with disabilities as part of the test team. Testing services that offer automated accessibility checks or services performed by individuals outside the disability community would not be considered true "community collaboration for accessible design."
 
-- **Preview Ring Opportunities:** [Preview rings](https://news.xbox.com/2021/05/06/all-about-xbox-update-preview-rings/) are another way to gather accessibility feedback. The Xbox Accessibility Insiders League (XAIL) is one example of a preview ring for content on the Xbox platform. The XAIL preview ring members consist of players who have self-identified as having a disability.
+- **Preview ring opportunities:** [Preview rings](https://news.xbox.com/2021/05/06/all-about-xbox-update-preview-rings/) are another way to gather accessibility feedback. The Xbox Accessibility Insiders League (XAIL) is one example of a preview ring for content on the Xbox platform. Members of the XAIL preview ring consist of players who have self-identified as having a disability.
 
-    Submitting your new feature, experience, or game to a preview ring like XAIL provides players with disabilities an opportunity to assess new gaming experiences and easily submit accessibility feedback from the comfort of their own home.
+    Submitting your new feature, experience, or game to a preview ring like XAIL gives players with disabilities an opportunity to assess new gaming experiences and easily submit accessibility feedback from their own homes.

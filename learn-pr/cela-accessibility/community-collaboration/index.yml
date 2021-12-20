@@ -3,7 +3,7 @@
 uid: learn.community-collaboration
 metadata:
   title: Community collaboration for accessible design
-  description: Learn about the importance of collaboration with the gaming and disability community when creating accessible gaming experiences. Identify methods to build connections with these communities. Implement best practice etiquette during these collaboration sessions.
+  description: Learn about the importance of collaboration with the gaming and disability community in creating accessible gaming experiences. Identify methods to build connections with these communities. Implement best practice etiquette during these collaboration sessions.
   ms.date: 10/27/2021
   author: kaitlynjones
   ms.author: kaitlynjones
@@ -11,16 +11,16 @@ metadata:
   ms.prod: learning-gaming-accessibility
   showCreativeCommonsFooter: true
 title: Community collaboration for accessible design
-summary: Learn how to collaborate with the gaming and disability community when creating accessible gaming experiences. Identify methods to build connections with these communities. Implement best practice etiquette during these collaboration sessions.
+summary: Learn how to collaborate with the gaming and disability community in creating accessible gaming experiences. Identify methods to build connections with these communities. Implement best practice etiquette during these collaboration sessions.
 abstract: |
-  In this module you will:
-  - Identify the meaning and importance of “Nothing About Us Without Us.”  
-  - Identify three potential approaches to connect with players with disabilities to gather accessibility feedback throughout product development.
-  - Demonstrate an understanding of best practice etiquette while collaborating with individuals with disabilities.
+  In this module, you will:
+  - Identify the meaning and importance of "nothing about us without us."  
+  - Identify three potential approaches to connect with players who have disabilities to gather accessibility feedback throughout product development.
+  - Demonstrate an understanding of best practice etiquette while collaborating with individuals who have disabilities.
 prerequisites: |
  - You should have some basic familiarity with playing and creating video games. 
- - You should have some familiarity with navigating game platforms such as Xbox, PlayStation, Nintendo Switch, or Windows.
- - A basic understanding of foundational disability and accessibility principles terms and concepts is highly encouraged
+ - You should have some familiarity with using game platforms such as Xbox, PlayStation, Nintendo Switch, or Windows.
+ - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
  
 iconUrl: /learn/achievements/community-collaboration.svg
 levels:
