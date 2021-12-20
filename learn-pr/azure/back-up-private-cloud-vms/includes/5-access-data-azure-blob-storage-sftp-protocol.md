@@ -24,7 +24,7 @@ Use the following procedure to enable support for SFTP and create local users, a
 3. While you are still in the **SFTP settings,** select **Add local user**.
 4. In the **Add local user** configuration pane, add the name of a user, and then select the method (or methods) of authentication that you'd like to associate with this local user. You can associate a password and/or an SSH key.
 
-    :::image type="content" source="../media/5-azure-blob-storage-add-local-user.PNG" alt-text="Screenshot of the Add local user dialog, The Secure with a password and Secure with SSH public key options are selected.":::
+    :::image type="content" source="../media/5-azure-blob-storage-add-local-user.PNG" alt-text="Screenshot of the Add local user dialog. The Secure with a password and Secure with SSH public key options are selected.":::
 
 5. Select **Next** to open the **Container permissions** tab of the configuration pane.
 
