@@ -48,7 +48,7 @@ Use the following steps to connect to Azure Virtual Network with ExpressRoute:
 3. In the **Manage** section, select **Connectivity**.
 4. On the **AzurevNet connect** tab, select the **Create new** link to create a new virtual network, gateway subnet, and ExpressRoute virtual network gateway.       
 
-:::image type="content"  source="../media/3-create-virtual-network.PNG" alt-text="Screenshot of the Create virtual network tab in Azure VMware Solution.":::            
+:::image type="content"  source="../media/3-create-virtual-network.png" alt-text="Screenshot of the Create virtual network tab in Azure VMware Solution.":::
 
 ### Set up ExpressRoute Global Reach
 
@@ -59,14 +59,14 @@ With ExpressRoute Global Reach, you can link both the Azure VMware Solution site
 You can use the following steps to deploy ExpressRoute Global Reach.
 
 1. Log in to the Azure portal.
-2. Navigate to your subscription and then search for and select **Azure VMware Solution**.
-3. In the **Manage** section, select **Connectivity**.
-4. On the **ExpressRoute Global Reach** tab, in the **On-prem cloud connections** section, select **+Add**.
-5. In the **On-prem cloud connections** window, provide information for circuit ID and Authorization key, and then select **Create**.
+1. Navigate to your subscription and then search for and select **Azure VMware Solution**.
+1. In the **Manage** section, select **Connectivity**.
+1. On the **ExpressRoute Global Reach** tab, in the **On-prem cloud connections** section, select **+Add**.
+1. In the **On-prem cloud connections** window, provide information for circuit ID and Authorization key, and then select **Create**.
 
-    :::image type="content"  source="../media/3-on-prem-cloud-connections.PNG" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution.":::      
+    :::image type="content"  source="../media/3-on-prem-cloud-connections.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution.":::
 
-6. Verify that the **State** of the connection displays the status as **Connected**.
+1. Verify that the **State** of the connection displays the status as **Connected**.
 
 ### Deploy Site Recovery Manager on Azure VMware Solution
 
@@ -75,13 +75,13 @@ After you prepare all requirements for setting up disaster recovery for your Azu
 You can use the following steps to deploy VMware SRM:
 
 1. Log in to the Azure portal.
-2. Navigate to your subscription and search for **Azure VMware Solution**.
-3. In the **Manage** section, select **Add-ons**.
-4. On the navigation pane, under **Disaster Recovery**, select **Get** **Started**.
-5. On the drop-down menu, select **VMware Site Recovery Manager (SRM) - vSphere replication** as a disaster recovery solution.
-6. Provide a license key or select to use an evaluation version.
-7. Accept the terms and conditions, and then select **Install**.
+1. Navigate to your subscription and search for **Azure VMware Solution**.
+1. In the **Manage** section, select **Add-ons**.
+1. On the navigation pane, under **Disaster Recovery**, select **Get** **Started**.
+1. On the drop-down menu, select **VMware Site Recovery Manager (SRM) - vSphere replication** as a disaster recovery solution.
+1. Provide a license key or select to use an evaluation version.
+1. Accept the terms and conditions, and then select **Install**.
 
-:::image type="content"  source="../media/3-neavs-add-ons.PNG" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution."::: 
+    :::image type="content"  source="../media/3-neavs-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution.":::
 
 Ensure that both the primary and secondary Azure VMware Solution private clouds have provisioned VMware SRM.
