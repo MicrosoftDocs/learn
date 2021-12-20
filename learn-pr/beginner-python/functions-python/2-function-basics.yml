@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.functions-python.function-basics
+title: Basics of Python functions
+metadata:
+  unitType: learning-content
+  title: Basics of Python functions
+  description: Learn the basics of functions in Python.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-function-basics.md)]

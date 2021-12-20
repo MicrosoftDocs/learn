@@ -56,7 +56,7 @@ Enter your name Picard
 Greetings: Picard
 ```
 
-### Deal with numbers
+### Work with numbers
 
 One important thing to know about is that the `input()` function stores the result as a string. So this code might not do what you want it to do:
 

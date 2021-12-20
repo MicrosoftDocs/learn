@@ -4,7 +4,7 @@ A common task is developing programs that's able to output information to a scre
 
 In this scenario, you are a young space cadet on a spaceship, with the mission to find and explore new solar systems. You train to be an engineer, and as such, you're looking to develop a series of utility programs for more senior staff onboard. The year is sometime in the future.
 
-## Learning objectives
+## What will you learn?
 
 In this module, you will learn how to:
 
@@ -13,6 +13,6 @@ In this module, you will learn how to:
 - Distinguish between different data types.
 - Use type conversion to convert between data types.
 
-## Prerequisites
+## What is the main objective?
 
-Familiarity with basic programming concepts.
+Use basic programming elements to create your first Python program.
