@@ -11,7 +11,7 @@ By maintaining their on-premises infrastructures, Contoso could benefit from thi
 
 :::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
-## How can you leverage Azure Policy?
+## How can you use Azure Policy?
 
 *Azure Policy* is a service that can help organizations manage and evaluate compliance for their Azure environments' organizational standards. Azure Policy uses declarative rules based on properties of target Azure resource types. These rules form policy definitions, which administrators can apply through policy assignment to a resource group or subscription.
 
@@ -45,7 +45,7 @@ After assigning policies, you can review the policy settings on the selected ser
 
 :::image type="content" source="../media/5-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
 
-## How can you leverage Azure Monitor?
+## How can you use Azure Monitor?
 
 You can use Monitor to optimize the administration of your existing deployments and to forecast capacity requirements for future deployments. Monitor provides three main capabilities, which the following table describes.
 
@@ -72,7 +72,7 @@ Additionally, Monitor enables you to archive collected data in Azure Storage for
 
 - Trigger notifications via text message or email
 - Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service management platform
+- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service-management platform
 
 You can store and analyze near real-time and historical data by using Log Analytics.
 > [!NOTE]
