@@ -33,11 +33,11 @@ Specifically, Contoso IT staff could use Azure Policy to assign tags to resource
 
 To manage and assign Azure Arc policies for a computer, browse to Azure Arc in the Azure portal. In the returned list of managed servers, select the appropriate server, and then assign a policy to it. You'll need to configure the following: 
 
-- Scope and any exclusions from the scope of the policy.
-- Policy definition.
-- Assignment name.
-- Description.
-- Policy enforcement (Enabled or Disabled).
+- Policy scope, as well as any exclusions from the policy's scope
+- Policy definition
+- Assignment name
+- Description
+- Policy enforcement (Enabled or Disabled)
 
 :::image type="content" source="../media/5-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
@@ -62,17 +62,17 @@ Monitor delivers focused, in-depth monitoring capabilities through:
 
 Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
 
-- Common action groups that designate alert-triggered actions and recipients of the alerts.
-- Designing custom dashboards.
-- Analyzing metrics by using tools such as Metrics Explorer or Power BI.
+- Common action groups that designate alert-triggered actions and recipients of the alerts
+- Designing custom dashboards
+- Analyzing metrics by using tools such as Metrics Explorer or Power BI
 
 Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights. You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
 
 Additionally, Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics or to services from Microsoft and others by using Azure Event Hubs. You set up and use alerts to:
 
-- Trigger notifications via text message or email.
-- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service management platform.
+- Trigger notifications via text message or email
+- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation
+- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service management platform
 
 You can store and analyze near real-time and historical data by using Log Analytics.
 > [!NOTE]
