@@ -10,4 +10,4 @@ Tailwind Traders is assessing their backup continuity and disaster recovery plan
 
 - **Database backup option for Azure SQL database.** The company has numerous Azure SQL databases in an elastic pool. The IT department needs a solution for when the primary database fails or needs to be taken offline. 
 
-- **Accidental deletion of video files.** Each product in the catalog has an associated video. This video is critical to the marketing of the product on the website. The IT department wants to ensure these files are protected from accidental deletion.
+- **Accidental deletion and recovery of video files.** Each product in the catalog has an associated video. This video is critical to the marketing of the product on the website. The IT department wants to ensure they can recover snapshots of these files, if they are accidently deleted.
