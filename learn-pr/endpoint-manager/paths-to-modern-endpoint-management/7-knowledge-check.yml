@@ -45,4 +45,4 @@ quiz:
       explanation: ""
     - content: "Consider moving directly to co-management using with Microsoft Intune."
       isCorrect: false
-      explanation: "If don't need to manage on-premises devices, Microsoft Intune will provide cloud-based mobile device management (MDM) and mobile application management (MAM) for your apps and devices. Co-management is concurrently managing on-premises Windows 10 devices with both Configuration Manager and Microsoft Intune."
+      explanation: "If don't need to manage on-premises devices, Microsoft Intune will provide cloud-based mobile device management (MDM) and mobile application management (MAM) for your apps and devices. Co-management is concurrently managing on-premises Windows 10/11 devices with both Configuration Manager and Microsoft Intune."
