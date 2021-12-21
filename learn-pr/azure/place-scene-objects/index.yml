@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.place-scene-objects-tutorials-mrtk
 metadata:
-  title: Place a Mars Rover object and work with grids and intelligent object tracking
+  title: Place a Mars Rover object in the scene and work with grids and intelligent object tracking
   description: This course provides you with an understanding of placing objects and tracking objects using solvers.
-  ms.date: 09/09/2021
-  author: Sean-Kerawalafor 
+  ms.date: 12/21/2021
+  author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
-title: Place a Mars Rover object and work with grids and intelligent object tracking
+title: Place a Mars Rover object in the scene and work with grids and intelligent object tracking
 summary: This course provides you with an understanding of placing objects and tracking objects using solvers.
 abstract: |
   By the end of this module you'll be able to:
