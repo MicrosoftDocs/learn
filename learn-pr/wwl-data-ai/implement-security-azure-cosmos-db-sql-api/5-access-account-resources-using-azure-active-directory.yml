@@ -4,13 +4,12 @@ title: Access account resources using Azure Active Directory
 metadata:
   title: Access account resources using Azure Active Directory
   description: "Access account resources using Azure Active Directory"
-  ms.date: 12/08/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
