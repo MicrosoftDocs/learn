@@ -30,17 +30,17 @@ In the following video, the player adjusts their screen narration settings at th
 
 Contrast settings are intended to enhance the visibility of onscreen elements by changing color schemes or simplifying backgrounds. These settings are primarily used by players with low vision. They can also benefit neurodiverse users. Some high-contrast modes also simplify the visual aspects of the user interface considered distracting by some players, which makes the interface easier to navigate.
 
-The following screenshots provide an example of the Xbox platform's high-contrast mode settings in action.
+The following screenshots provide an example of the Xbox platform's high-contrast mode settings in action:
 
-#### Xbox home screen without high-contrast mode enabled
+**Xbox home screen without high-contrast mode enabled:**
 
 :::image type="content" source="../media/hc-home.png" alt-text="A screenshot that shows the Xbox home screen. The Microsoft Rewards tab has focus. Buttons consisting of images with text on top of them are displayed. Behind the buttons, a gradient color pattern of purples and pinks is displayed.":::
 
-#### The Xbox platform high-contrast settings menu
+**The Xbox platform high-contrast settings menu:**
 
 :::image type="content" source="../media/hc-two.png" alt-text="A screenshot that shows the Xbox Accessibility High-contrast settings menu with High contrast: Dark theme selected. An image to the right demonstrates what the Xbox home screen will look like with a dark theme applied. Text on the screen reads: Turn on high contrast to make on-screen elements easier to see. This will prevent your personal color and background from being shown.":::
 
-#### The Xbox home screen with the high-contrast dark theme applied
+**The Xbox home screen with the high-contrast dark theme applied:**
 
 :::image type="content" source="../media/hc-dark.png" alt-text="A screenshot that shows the Xbox home screen. Buttons consisting of images with text on top of them are displayed. The white text of each button now sits on an opaque bar. A gradient color pattern of purples and pinks is no longer displayed behind the buttons. The background is black.":::
 
