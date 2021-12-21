@@ -1,12 +1,15 @@
-Azure Active Directory is the core of any secure solution you will build on Azure. You need to know who is accessing your systems, what they have access to, and monitor how they are using your solutions.
+Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employees sign in and access resources in:
+
+ -  External resources, such as Microsoft 365, the Azure portal, and thousands of other SaaS applications.
+ -  Internal resources, such as apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
 ## Scenario
 
-A security engineer uses Azure Active Directory to manage identities, you will work on such tasks as:
+A security engineer us Azure Active Directory to manage identities, you will work on such tasks as:
 
  -  Create users, groups, and administrative units to securely access resources and services.
  -  Configure access to systems to be passwordless.
- -  Define a strategy for using Azure AD and Azure AD Domain Services to lock down access to your solutions.
+ -  Define a strategy for your for using Azure AD and Azure AD Domain Services to lock down access to your solutions.
 
 ## Skills measured
 

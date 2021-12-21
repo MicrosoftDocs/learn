@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/13/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -61,7 +61,7 @@ quiz:
     - content: "Security administrator"
       isCorrect: false
       explanation: "Good try, but the security administrator role is about configuring security settings."
-  - content: "Which of the following methods could be used to create an Azure AD security group?"
+  - content: "Which of the following methods enable you not automatically add or remove users to security groups or Microsoft 365 groups, so you don't always have to do it manually?"
     choices:
     - content: "Automatic add"
       isCorrect: false

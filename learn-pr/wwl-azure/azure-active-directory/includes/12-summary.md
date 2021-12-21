@@ -13,5 +13,5 @@ You can learn more by reviewing the following:
  -  [Secure your identities by using Azure Active Directory](/learn/modules/intro-to-azure-ad/)
  -  [Manage users and groups in Azure Active Directory](/learn/modules/manage-users-and-groups-in-aad/)
  -  [Create Azure users and groups in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)
- -  [Secure Azure Active Directory users with multifactor authentication in Azure](/learn/modules/secure-aad-users-with-mfa/)
+ -  [Secure Azure Active Directory users with multi-factor authentication in Azure](/learn/modules/secure-aad-users-with-mfa/)
  -  [Secure your cloud resources with access control](/learn/modules/cmu-secure-cloud-resources/)
