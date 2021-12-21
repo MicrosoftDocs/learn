@@ -8,7 +8,7 @@ To group these events into chunks of information, you'll use the `summarize` ope
 
 1. Copy and paste the query into your query editor.
 
-    [Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVQALOeeX5pXYJoNIDU2FpEqF4JLEklSQuvyiEhAfoQoAiCAatkgAAAA=)
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVQALOeeX5pXYJoNIDU2FpEqF4JLEklSQuvyiEhAfoQoAiCAatkgAAAA=" target="_blank"> Click to run query</a>
 
     ```kusto
     StormEvents
@@ -32,7 +32,7 @@ The following query incorporates both operator types within the `summarize` oper
 
 1. Run the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==" target="_blank"> Click to run query</a>
     
     ```kusto
     StormEvents
