@@ -1,6 +1,6 @@
-Strings are one of the most common method types in Python, you'll often need to manipulate them to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
+Strings are one of the most common method types in Python. You'll often need to manipulate them to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
-String methods are part of the `str` type. This means that the methods exist as on a string variable, or part of the string directly. For example, the method `.title()` can be used with a string directly: 
+String methods are part of the `str` type. This means that the methods exist as string variables, or part of the string directly. For example, the method `.title()` can be used with a string directly: 
 
 ```python
 >>> "temperatures and facts about the moon".title()
@@ -17,7 +17,7 @@ And the same behavior and usage happens on a variable:
 
 ## Split a string
 
-A common string method is `.split()`. With no arguments, it will split a string on every space, which creates a list of every item separated by a space:
+A common string method is `.split()`. Without arguments, the method will separate the string at every space. This would create a list of every word or number that's separated by a space:
 
 ```python
 >>> temperatures = """Daylight: 260 F
@@ -26,7 +26,7 @@ A common string method is `.split()`. With no arguments, it will split a string 
 ['Daylight:', '260', 'F', 'Nighttime:', '-280', 'F']
 ```
 
-In this example, you're dealing with multiple lines, so the (implicit) newline character can be used to split at the end of each line, creating single lines:
+In this example, you're dealing with multiple lines, so the (implicit) newline character can be used to split the string at the end of each line, creating single lines:
 
 ```python
 >>> temperatures .split('\n')
@@ -37,9 +37,9 @@ This type of splitting becomes handy when you need a loop to process or extract 
 
 ## Search for a string
 
-Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume we have two sentences that talk about temperatures on planets and moons, but we're interested only in temperatures related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
+Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume that you have two sentences that discuss temperatures on various planets and moons, but we're interested only in temperatures that are related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
 
-The simplest way to find whether a given word, character, or group of characters exists in a string is _without_ using a method:
+The simplest way to discover whether a given word, character, or group of characters exists in a string is _without_ using a method:
 
 ```python
 >>> "Moon" in "This text will describe facts and challenges with space travel"
@@ -48,7 +48,7 @@ False
 True
 ```
 
-An approach to finding and getting the position of a given word in a string is to use the `.find()` method:
+An approach to finding the position of a specific word in a string is to use the `.find()` method:
 
 ```python
 >>> temperatures = """Saturn has a daytime temperature of -170 degrees Celsius,
@@ -75,7 +75,7 @@ Another way to search for content is to use the `.count()` method, which returns
 0
 ```
 
-Strings in Python are case-sensitive, which means that *Moon* and *moon* are considered different words. To do a case-insensitive comparison, you can convert a string to all lowercase by using the `.lower()` method:
+Strings in Python are case-sensitive, which means that *Moon* and *moon* are considered different words. To do a case-insensitive comparison, you can convert a string to all lowercase letters by using the `.lower()` method:
 
 ```python 
 >>> "The Moon And The Earth".lower()
@@ -110,7 +110,7 @@ To extract the average temperature on Mars, you can do well with the following m
 ' -60 C'
 ```
 
-The preceding methods blindly trust that everything after the colon (`:`) character is a temperature. The string is split at `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, which is the temperature in this example.
+The preceding methods blindly trust that everything after the colon (`:`) is a temperature. The string is split at `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, which is the temperature in this example.
 
 If the text is irregular, you can't use the same splitting methods to get the value. You must loop over the items and check to see whether the values are of a certain type. Python has methods that help check the type of string:
 
@@ -123,7 +123,7 @@ If the text is irregular, you can't use the same splitting methods to get the va
 30
 ```
 
-Similar to `.isnumeric()`, the `.isdecimal()` method can check for strings that look like decimals.
+Like the `.isnumeric()` method, `.isdecimal()` can check for strings that look like decimals.
 
 > [!IMPORTANT]
 > It might be surprising to learn that `"-70".isnumeric()` would return `False`. This is because all characters in the string would need to be numeric, and the dash (`-`) isn't numeric. If you need to check negative numbers in a string, the `.isnumeric()` method wouldn't work.
@@ -135,7 +135,7 @@ There are extra validations that you can apply on strings to check for values. F
 True
 ```
 
-In a similar way, the `.endswith()` method helps with verifying the last character of a string:
+Similarly, the `.endswith()` method helps with verifying the last character of a string:
 
 ```python
 >>> if "30 C".endswith("C"):
@@ -152,7 +152,7 @@ There are other methods that help in situations where text needs to be transform
 'Saturn has a daytime temperature of -170 degrees C, while Mars has -28 C.'
 ```
 
-As already mentioned, `.lower()` is a good way to normalize text to do case-insensitive search. Let's quickly check to see whether some text is talking about the temperatures:
+As mentioned earlier, `.lower()` is a good way to normalize text to do a case-insensitive search. Let's quickly check to see whether some text discusses temperatures:
 
 ```python
 >>> text = "Temperatures on the Moon can vary wildly."
@@ -162,9 +162,9 @@ False
 True
 ```
 
-You might not need to do case-insensitive verification all the time, but lowercasing every character is a good approach when text is using mixed casing. 
+You might not need to do case-insensitive verification all the time, but lowercasing every letter is a good approach when the text uses mixed casing. 
 
-After you've split text and performed transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together. 
+After you've split the text and performed the transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together. 
 
 The `.join()` method requires an iterable (such as a Python list) as an argument, so its usage looks different from other string methods:
 
