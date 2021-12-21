@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. This approach does not align with the etiquette guidance in this module. It might result in an unsafe situation for the player."
     - content: "The employee should have first told the player that they planned to reattach the item that fell off the wheelchair before doing so."
       isCorrect: false
-      explanation: "Incorrect. Even though the employee told the player that they intended to fix the wheelchair before physically doing so, this communication is opposition to the “ask before doing” best practice etiquette."
+      explanation: "Incorrect. Even though the employee told the player that they intended to fix the wheelchair before physically doing so, this communication is in opposition to the “ask before doing” best practice etiquette."
     - content: "The employee should have first asked if the individual wanted help before reattaching the part to the wheelchair."
       isCorrect: true
       explanation: "Correct. According to the best practices outlined in this module, the “ask before doing” policy should always guide these interactions. Assistive technologies and wheelchair attachments can be expensive and at risk of being broken if handled incorrectly. Assistive technologies are often considered the personal property, or within the personal space, of the owner and should be treated accordingly."

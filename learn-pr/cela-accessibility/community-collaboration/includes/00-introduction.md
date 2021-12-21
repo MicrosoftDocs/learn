@@ -4,14 +4,14 @@ As a developer, you might have concerns about involving the user community durin
 
 Consider the following scenario: A developer creates a set of color-blind filters for an upcoming game. The feature is released without any input from players who are color-blind. Post-release, the team receives negative feedback. The filters intended to support these players instead made the game's UI even harder to see. The developer wasn't aware that implementation of color-blind filters is not a one-size-fits-all approach. Had the developer worked with the community during feature development, they would have known to provide customizable options within the filter settings to meet the needs of individual players.
 
-Without the insights of the gaming and disability community, a developer must make assumptions about proper feature implementation. Sometimes, these assumptions miss the mark.
+Without the insights of the disability community, a developer must make assumptions about proper feature implementation. Sometimes, these assumptions miss the mark.
 
-In this module, you'll learn about the importance of collaborating with the gaming and disability community throughout the development process to inform accessible design. You'll learn about how these communities can be engaged, and when. You'll also learn how to ensure that these players have a great experience throughout this collaboration.
+In this module, you'll learn about the importance of collaborating with the disability community throughout the development process to inform accessible design. You'll learn about how these communities can be engaged, and when. You'll also learn how to ensure that these players have a great experience throughout this collaboration.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
 - Describe the meaning of the concept of "nothing about us without us." This concept promotes the inclusion of disability perspectives in accessible design.
-- Identify ways to connect with the gaming and disability community to gather feedback.
+- Identify ways to connect with the disability community to gather feedback.
 - Implement best practice etiquette during collaborative sessions.

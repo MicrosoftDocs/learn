@@ -1,4 +1,4 @@
-After you've established a way to engage with members of the gaming and disability community, start inviting these community members to provide accessibility feedback. Shortly after, you can start hosting these collaborative sessions online or at your studio.
+After you've established a way to engage with members of the disability community, start inviting these community members to provide accessibility feedback. Shortly after, you can start hosting these collaborative sessions online or at your studio.
 
 This unit provides best practices that you can follow throughout the processes of invitation and active collaboration. These best practices can help ensure that the players you work with have an accessible and enjoyable experience.
 
@@ -12,7 +12,7 @@ The following video outlines the key information that you should include in invi
 
 ## Provide accessible accommodations
 
-Ensuring that participants can access the physical space, hardware, virtual meeting platforms, and surveys in feedback sessions is another critical part of partnering with the gaming and disability community.
+Ensuring that participants can access the physical space, hardware, virtual meeting platforms, and surveys in feedback sessions is another critical part of partnering with the disability community.
 
 ### Physical spaces
 
@@ -34,7 +34,7 @@ Make sure that online documents and survey platforms comply with WCAG 2.1 web ac
 
 - Is all text in a survey accessible for those who use a screen reader?
 - Do the images provide proper alternative text (alt text) descriptions?
-- Can users who are navigating the survey by using a keyboard alone access all mechanisms and question types?
+- Can users who are using only a keyboard for the survey access all mechanisms and question types?
 
 > [!NOTE]
 > Common inaccessible survey mechanisms include questions where participants are asked to drag and drop elements to rank a list of items, along with dropdown lists.

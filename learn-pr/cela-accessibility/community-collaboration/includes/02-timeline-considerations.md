@@ -40,7 +40,7 @@ The following information outlines potential ways to gather feedback at various 
 
 - **Prototype testing:** After working prototypes or game builds are available, consider providing hands-on opportunities for players to provide feedback through play tests or user research studies. These hands-on interactions are crucial to informing suggestions for improvement within the context of your specific game.
 
-    As the experience or device goes through re-iteration, continue to involve players with disabilities in testing. This involvement can ensure that future design iterations continue to provide effective and usable solutions for these players.
+    As the experience or device goes through reiteration, continue to involve players with disabilities in testing. This involvement can ensure that future design iterations continue to provide effective and usable solutions for these players.
 
     > [!IMPORTANT]
     > It can be tempting to wait until playable prototypes are available to begin engaging the community. However, it's important to think about all of the potential barriers that these players identified in earlier development stages. Without this feedback, your team might include inaccessible experiences in the prototype that they were unaware of.

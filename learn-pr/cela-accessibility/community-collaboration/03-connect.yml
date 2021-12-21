@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.community-collaboration.connect
-title: Connect with members of the gaming and disability community
+title: Connect with members of the disability community
 metadata:
-  title: Connect with members of the gaming and disability community
+  title: Connect with members of the disability community
   description: This content is part of the "Community collaboration for accessible design" module.
   ms.date: 10/27/2021
   author: kaitlynjones
@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. You might work alongside teammates, fellow employees, or other members of your greater company or organization who have disabilities and can provide useful feedback."
     - content: "Use disability simulators such as color-blind glasses or blurred glasses to generate feedback if users with disabilities can't be included."
       isCorrect: false
-      explanation: "Incorrect. Even if your team or organization does not have internal employees with disabilities to provide feedback, validating the accessibility of new products and experiences shouldn't be conducted through simulators."
+      explanation: "Incorrect. Even if your team or organization does not have internal employees with disabilities to provide feedback, validating the accessibility of new products and experiences shouldn't happen through simulators."
     - content: "Avoid collecting feedback until the product or experience can be shown to broader audiences outside your company or organization."
       isCorrect: false
       explanation: "Incorrect. The number of individuals with disabilities within your company or organization might be small compared to the broader disability community. However, feedback from a few individuals is better than no feedback at all."

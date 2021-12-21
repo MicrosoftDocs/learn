@@ -31,9 +31,9 @@ quiz:
     - content: "Teams can identify players with disabilities at this preliminary stage to ensure that these players are available after the team has a testable prototype."
       isCorrect: false
       explanation: "Incorrect. Although this option engages the disability community, it doesn't give players an active role in development until the prototype phase. This phase is too late in the development process to begin discussing accessibility."
-    - content: "Teams can delay collaboration initiatives with the disability community for the time being, because they don't have any meaningful information to share with the community about the desired outcome of their new game."
+    - content: "Teams can delay collaboration initiatives with the disability community for now, because they don't have any meaningful information to share with the community about the desired outcome of their new game."
       isCorrect: false
-      explanation: "Incorrect. It's never too early to begin consulting with the disability community on a new gaming product or experience. Although you might not be able to ask questions or source guidance on areas specific to your game yet, these players can still provide important foundational insights informed by their previous gaming experiences that guide early planning and accessibility goal scoping."
+      explanation: "Incorrect. It's never too early to begin consulting with the disability community on a new gaming product or experience. Although you might not be able to ask questions or source guidance on areas specific to your game yet, these players can still provide important foundational insights informed by their previous gaming experiences that guide early planning and scoping of accessibility goals."
     - content: "Teams can gather foundational insights on the players' experiences by asking about existing products or experiences that contain similar game elements and mechanics."
       isCorrect: true
       explanation: "Correct. Engaging these players early on can provide important foundational insights about common platform elements and mechanics that can help scope development planning and goal setting."

@@ -1,4 +1,4 @@
-In this module, you learned about the importance of collaborating with the gaming and disability community to inform inclusive design and accessibility efforts.
+In this module, you learned about the importance of collaborating with the disability community to inform inclusive design and accessibility efforts.
 
 Let's recap by considering these questions: 
 
