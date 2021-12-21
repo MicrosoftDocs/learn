@@ -1,55 +1,55 @@
-Although strings in Python appear to be simple and straightforward, it's useful to grasp some of the rules that control what you can and can't do when working with them. Knowing these rules avoids getting surprised by string behavior when modifying values or formatting text.
+Although strings in Python appear to be simple and straightforward, there's some complexity in string rules that's important to grasp. Knowing the rules helps you avoid being surprised by string behavior when you're modifying values or formatting text.
 
 ## Immutability
 
-Strings are immutable, that is, they can't change. This property of the string type can be surprising because Python won't give you errors when altering strings.
+In Python, strings are immutable. That is, they can't change. This property of the string type can be surprising, because Python doesn't give you errors when you alter strings.
 
-In this situation, you have one fact about the moon assigned to a variable. And you need to add another fact (sentence) to it. Using the Python interpreter it _seems_ like adding both would alter them:
+In our example for this module, you have a single fact about the Moon assigned to a variable, and you need to add another fact (sentence) to it. Using the Python interpreter, it _seems_ as though adding the second fact would alter the variable:
 
 ```python
->>> fact = "The moon has no atmosphere."
->>> fact + "No sound can be heard on the moon."
-'The moon has no atmosphere.No sound can be heard on the moon.'
+>>> fact = "The Moon has no atmosphere."
+>>> fact + "No sound can be heard on the Moon."
+'The Moon has no atmosphere.No sound can be heard on the Moon.'
 ```
 
-Although it might look like we have modified the variable `fact`, checking the value reveals it maintains the original value:
+Although it might look as though we've modified the variable `fact`, a quick check of the value reveals that it keeps its original value:
 
 ```python
 >>> fact
-'The moon has no atmosphere.'
+'The Moon has no atmosphere.'
 ```
 
-The trick here's that you must use the return value. When adding strings, Python doesn't modify any string, but returns a _new_ string as the result. To keep this new result, assign it to a new variable:
+The trick here is that you must use a return value. When you add strings, Python doesn't modify any string, but it returns a _new_ string as the result. To keep this new result, assign it to a new variable:
 
 ```python
->>> two_facts = fact + "No sound can be heard on the moon."
+>>> two_facts = fact + "No sound can be heard on the Moon."
 >>> two_facts
-'The moon has no atmosphere.No sound can be heard on the moon.'
+'The Moon has no atmosphere.No sound can be heard on the Moon.'
 ```
 
 Operations on strings always produce new strings as a result.
 
-## Quotes
+## About using quotation marks
 
-Python strings can use single, double, and triple quotes. Although you can use them interchangeably, it's best to keep consistency in a project. For example, using double quotes:
+You can enclose Python strings in single, double, or triple quotation marks. Although you can use them interchangeably, it's best to use one type consistently within a project. For example, the following string uses double quotation marks:
 
 ```python
 moon_radius = "The Moon has a radius of 1,080 miles"
 ``` 
 
-However, when a string has quotes within, you can alternate the quotes. For example, in a substring that uses double quotes, use single quotes to surround the string:
+However, when a string has words (a *substring*) within it that also require quotation marks, you can use a different style. For example, if you have a substring that uses double quotation marks, use single quotation marks to surround the string:
 
 ```python
 'The "near side" is the part of the Moon that faces the Earth'
 ```
 
-Similarly, if a string is using single quotes, use double quotes to surround the string:
+Similarly, if there are single quotation marks (or an apostrophe, as in *Moon's* in the following example) anywhere within the string, use double quotation marks to surround the string. 
 
 ```python
 "We only see about 60% of the Moon's surface"
 ```
 
-Without alternating the quotes in this way, the Python interpreter raises a syntax error:
+Failure to alternate single and double quotation marks can cause the Python interpreter to raise a syntax error, as shown here:
 
 ```python
 >>> 'We only see about 60% of the Moon's surface'
@@ -59,7 +59,7 @@ Without alternating the quotes in this way, the Python interpreter raises a synt
 SyntaxError: invalid syntax
 ```
 
-When the text has a combination of single and double quotes, you can use triple quotes to prevent problems with the interpreter:
+When the text has a combination of single and double quotation marks, you can use triple quotation marks to prevent problems with the interpreter:
 
 ```python
 """We only see about 60% of the Moon's surface, this is known as the "near side". """
@@ -67,12 +67,12 @@ When the text has a combination of single and double quotes, you can use triple 
 
 ## Multiline text
 
-There are a few different ways to define multiple lines of text as a single variable, but the most common ones are:
+There are a few different ways to define multiple lines of text as a single variable. The most common ways are:
 
-* Using a newline character
-* With triple quotes
+* Use a newline character (`\n`)
+* Use triple quotation marks (""")
 
-Using a newline character is achieved by introducing `\n`. Every time that character is used, a newline will show when printing the output:
+Newline characters separate the text into multiples lines when you print the output:
 
 ```python
 >>> multiline = "Facts about the Moon:\n There is no atmosphere.\n There is no sound."
@@ -82,7 +82,7 @@ Facts about the Moon:
  There is no sound.
 ```
 
-You can achieve the same result using triple quotes:
+You can achieve the same result by using triple quotation marks:
 
 ```python
 >>> multiline = """Facts about the Moon:

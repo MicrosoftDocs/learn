@@ -18,65 +18,65 @@ quiz:
     choices:
     - content: "No, because they can be modified."
       isCorrect: false
-      explanation: "Strings are immutable. However, you can create new strings that are modified."
-    - content: "Yes, because one can't modify them."
+      explanation: "Incorrect. Strings are immutable. However, you can create new strings that are modified."
+    - content: "Yes, because you can't modify them."
       isCorrect: true
-      explanation: "Correct! Strings are immutable."
-    - content: "No, because one can split them."
+      explanation: "Correct! Strings are immutable, because you can't modify them."
+    - content: "No, because you can split them."
       isCorrect: false
-      explanation: "Although you can split strings, it doesn't modify the original (immutable) string."
-  - content: "What types of quotes can be used with strings?"
+      explanation: "Incorrect. Although you can split a string, you're not modifying the original (immutable) string."
+  - content: "What types of quotation marks can be used with strings?"
     choices:
-    - content: "Single, double, and triple quotes."
+    - content: "Single, double, and triple quotation marks."
       isCorrect: true
       explanation: "Correct! All three options can be used with strings."
-    - content: "Single and double quotes."
+    - content: "Single and double quotation marks."
       isCorrect: false
-      explanation: "Although single and double quotes can be used, one can also use triple quotes to surround a string."
-    - content: "Only double quotes."
+      explanation: "Incorrect. Although you can use single and double quotes, you can also use triple quotation marks to surround a string."
+    - content: "Only double quotation marks."
       isCorrect: false
-      explanation: "Aside from double quotes, one can also use single and triple quotes to surround a string."
-  - content: "What is the right string method call to separate a string on every newline?"
+      explanation: "Incorrect. Besides double quotes, you can also use single and triple quotes with strings."
+  - content: "What is the string method call to use to break strings into separate lines?"
     choices:
-    - content: "The method `.separate('\n')` will separate a string on every newline."
+    - content: "The `.separate('\n')` method."
       isCorrect: false
-      explanation: "The `.separate()` method does not exist as part of the string object."
-    - content: "The method `.newlines()` will separate a string on every newline."
+      explanation: "Incorrect. The `.separate()` method doesn't exist as part of the string object."
+    - content: "The `.newlines()` method."
       isCorrect: false
-      explanation: "The `.newlines()` method does not exist as part of the string object."
-    - content: "The `.split('\n')` method will separate a string on every newline."
+      explanation: "Incorrect. The `.newlines()` method doesn't exist as part of the string object."
+    - content: "The `.split('\n')` method."
       isCorrect: true
-      explanation: "Correct! The `.split('\n')` method, with the newline character, will separate a string on every newline."
-  - content: "What are two string methods you can use to check whether a word exists in a string?"
+      explanation: "Correct! The `.split('\n')` method, which includes the newline character, breaks strings into separate lines."
+  - content: "What two string methods can you use to check to see whether a word exists in a string?"
     choices:
-    - content: "You can use `.find()` and `.count()` to verify whether a word exists in a string."
+    - content: "The `.find()` and `.count()` methods."
       isCorrect: true
-      explanation: "Correct! You can use those two methods to verify existence in a string."
-    - content: "You can use `.search()` and `.count()` to verify whether a word exists in a string."
+      explanation: "Correct! You can use those two methods to verify the existence of a word in a string."
+    - content: "The `.search()` and `.count()`methods."
       isCorrect: false
-      explanation: "Although `.count()` is a valid method for searching, `.search()` is not part of the string object."
-    - content: "You can use `.check()` and `.search()` to verify whether a word exists in a string."
+      explanation: "Incorrect. Although `.count()` is a valid method for searching, `.search()` is not part of the string object."
+    - content: "The `.check()` and `.search()` methods."
       isCorrect: false
-      explanation: "Neither `.check()` nor `.search()` exist as a method of the string object."
-  - content: "What is one of the problems you might find when using `%` for formatting?"
+      explanation: "Incorrect. Neither `.check()` nor `.search()` exists as a method of the string object."
+  - content: "What is a problem you might run into when you use `%` for formatting?"
     choices:
     - content: "When many replacements are needed, it can make a program slower."
       isCorrect: false
-      explanation: "Although `%` formatting is not the fastest, it isn't a result of the replacements."
+      explanation: "Incorrect. Although `%` formatting is not the fastest, slowness isn't a result of the replacements."
     - content: "When many replacements are needed, it can make the code harder to read."
       isCorrect: true
       explanation: "Correct! Using `%` can become verbose with many replacements."
     - content: "It isn't possible to replace more than nine variables."
       isCorrect: false
-      explanation: "It is possible to replace more than nine variables using the `%` formatting method."
-  - content: "How can a number be rounded down when using f-strings?"
+      explanation: "Incorrect. It's possible to replace more than nine variables by using the `%` formatting method."
+  - content: "How can you round down a number when you use f-strings?"
     choices:
-    - content: "Using the `.format()` method to round down."
+    - content: "Use the `.format()` method to round down."
       isCorrect: false
-      explanation: "You can't use `.format()` in f-strings because it isn't part of an f-string object."
-    - content: "Using the `round()` function inside the string, within the curly brackets."
+      explanation: "Incorrect. You can't use `.format()` in f-strings because it isn't part of an f-string object."
+    - content: "Use the `round()` function inside the string, enclosed in braces (`{}`)."
       isCorrect: true
       explanation: "Correct! Code execution is allowed within an f-string."
     - content: "It isn't possible to replace more than nine variables."
       isCorrect: false
-      explanation: "It is possible to replace more than nine variables using the `%` formatting method."
+      explanation: "Incorrect. It is possible to replace more than nine variables using the `%` formatting method."

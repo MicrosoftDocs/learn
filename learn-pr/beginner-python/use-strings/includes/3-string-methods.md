@@ -1,4 +1,4 @@
-As one of the most common types in Python, you'll often need to manipulate strings for extracting information or fit a certain format. Python makes this straightforward by including several methods designed to do the most common and useful transformations.
+Strings are one of the most common method types in Python, you'll often need to manipulate them to extract information or fit a certain format. Python includes several string methods that are designed to do the most common and useful transformations.
 
 String methods are part of the `str` type. This means that the methods exist as on a string variable, or part of the string directly. For example, the method `.title()` can be used with a string directly: 
 
@@ -17,29 +17,29 @@ And the same behavior and usage happens on a variable:
 
 ## Split a string
 
-A common string method is `.split()`. With no arguments it will split a string on every space, which creates a list of every item separated by a space:
+A common string method is `.split()`. With no arguments, it will split a string on every space, which creates a list of every item separated by a space:
 
 ```python
 >>> temperatures = """Daylight: 260 F
-... Nightime: -280 F"""
+... Nighttime: -280 F"""
 >>> temperatures .split()
-['Daylight:', '260', 'F', 'Nightime:', '-280', 'F']
+['Daylight:', '260', 'F', 'Nighttime:', '-280', 'F']
 ```
 
-In this case, we are dealing with multiple lines so the (implicit) newline character can be used to split at the end of each line, creating single lines:
+In this example, you're dealing with multiple lines, so the (implicit) newline character can be used to split at the end of each line, creating single lines:
 
 ```python
 >>> temperatures .split('\n')
-['Daylight: 260 F', 'Nightime: -280 F']
+['Daylight: 260 F', 'Nighttime: -280 F']
 ```
 
-This type of splitting becomes handy when a loop is necessary to process or extract information, or when loading data from a text file or another resource.
+This type of splitting becomes handy when you need a loop to process or extract information, or when you're loading data from a text file or another resource.
 
 ## Search for a string
 
-Aside from using a loop, some string methods can look for content before processing and without the need for a loop. Let's assume we have two sentences that talk about temperatures in planets and moons, but we're only interested in temperatures related to the Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
+Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume we have two sentences that talk about temperatures on planets and moons, but we're interested only in temperatures related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
 
-The simplest way to find if a given word, character, or group of characters exist in a string is _without_ a method:
+The simplest way to find whether a given word, character, or group of characters exists in a string is _without_ using a method:
 
 ```python
 >>> "Moon" in "This text will describe facts and challenges with space travel"
@@ -48,7 +48,7 @@ False
 True
 ```
 
-An approach to find and get the position of a given word in a string is with the `.find()` method:
+An approach to finding and getting the position of a given word in a string is to use the `.find()` method:
 
 ```python
 >>> temperatures = """Saturn has a daytime temperature of -170 degrees Celsius,
@@ -57,16 +57,16 @@ An approach to find and get the position of a given word in a string is with the
 -1
 ```
 
-The `.find()` method returns a `-1` when the word isn't found, or the index (the number representing the place in the string). This is how it would behave if searching for _Mars_:
+The `.find()` method returns a `-1` when the word isn't found, or it returns the index (the number representing the place in the string). This is how it would behave if you're searching for the word _Mars_:
 
 ```python
 >>> temperatures.find("Mars")
 65
 ```
 
-`65` is the position where `"Mars"` starts in the string.
+`65` is the position where `"Mars"` appears in the string.
 
-Another way to search for content is to use the `.count()` method, which returns the total number of occurrences in a string:
+Another way to search for content is to use the `.count()` method, which returns the total number of occurrences of a certain word in a string:
 
 ```python
 >>> temperatures.count("Mars")
@@ -75,14 +75,14 @@ Another way to search for content is to use the `.count()` method, which returns
 0
 ```
 
-Strings in Python are case-sensitive, this means that the words **Moon** and **moon** are considered different. To do a case-insensitive comparison, you can convert a string to all lower case with the `.lower()` method:
+Strings in Python are case-sensitive, which means that *Moon* and *moon* are considered different words. To do a case-insensitive comparison, you can convert a string to all lowercase by using the `.lower()` method:
 
 ```python 
 >>> "The Moon And The Earth".lower()
 'the moon and the earth'
 ```
 
-Just like the `.lower()` method, strings have an `.upper()` method that does the opposite, converting every character to upper case:
+Similar to the `.lower()` method, strings have an `.upper()` method that does the opposite, converting every character to uppercase:
 
 ```python
 >>> "The Moon And The Earth".upper()
@@ -90,17 +90,17 @@ Just like the `.lower()` method, strings have an `.upper()` method that does the
 ```
 
 > [!TIP]
-> It is more robust to lowercase a string when searching and checking content so that casing doesn't prevent a match. For example, if counting the number of times the word `the` appears, it wouldn't count the times where `The` appears, even both are the same word. The `.lower()` method can be used to change all characters to lowercase.
+> When you're searching for and checking content, a more robust approach is to lowercase a string so that casing doesn't prevent a match. For example, if you're counting the number of times the word *the* appears, the method wouldn't count the times where *The* appears, even though they're both the same word. You can use the `.lower()` method to change all characters to lowercase.
 
 ## Check content
 
-There are times when processing text to extract information that is irregular in its presentation. For example, the string below is simpler to process than an unstructured paragraph: 
+There are times when you'll process text to extract information that's irregular in its presentation. For example, the following string is simpler to process than an unstructured paragraph: 
 
 ```python
 >>> temperatures = "Mars Average Temperature: -60 C"
 ```
 
-To extract the average temperature on Mars, a few methods can do the job well:
+To extract the average temperature on Mars, you can do well with the following methods:
 
 ```python
 >>> parts = temperatures.split(':')
@@ -110,12 +110,12 @@ To extract the average temperature on Mars, a few methods can do the job well:
 ' -60 C'
 ```
 
-The methods are blindly trusting that everything after the `:` character is a temperature. It splits the string on `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, that in this case is the temperature.
+The preceding methods blindly trust that everything after the colon (`:`) character is a temperature. The string is split at `:`, which produces a list of two items. Using `[-1]` on the list returns the last item, which is the temperature in this example.
 
-If the text is irregular, then we can't use the same splitting methods to get the value. We must loop over the items and check if the values are of a certain type. Python has methods that help check the type of a string that help with this sort of operation:
+If the text is irregular, you can't use the same splitting methods to get the value. You must loop over the items and check to see whether the values are of a certain type. Python has methods that help check the type of string:
 
 ```python
->>> mars_temperature = "The highest temperature in Mars is about 30 C"
+>>> mars_temperature = "The highest temperature on Mars is about 30 C"
 >>> for item in mars_temperature.split():
 ...     if item.isnumeric():
 ...         print(item)
@@ -123,12 +123,12 @@ If the text is irregular, then we can't use the same splitting methods to get th
 30
 ```
 
-Similar to `.isnumeric()` the `.isdecimal()` method can check for strings that look like decimals.
+Similar to `.isnumeric()`, the `.isdecimal()` method can check for strings that look like decimals.
 
 > [!IMPORTANT]
-> It might be surprising to learn that `"-70".isnumeric()` would return `False`. This is because all characters in the string would need to be numeric and `-` isn't. If you need to check negative numbers in a string, the `.isnumeric()` method would not work.
+> It might be surprising to learn that `"-70".isnumeric()` would return `False`. This is because all characters in the string would need to be numeric, and the dash (`-`) isn't numeric. If you need to check negative numbers in a string, the `.isnumeric()` method wouldn't work.
 
-There are extra validations that can be applied on strings to check for values. For negative numbers, the dash is prefixed to the number, and that can be detected with the `.startswith()` method:
+There are extra validations that you can apply on strings to check for values. For negative numbers, the dash is prefixed to the number, and that can be detected with the `.startswith()` method:
 
 ```python
 >>> "-60".startswith('-')
@@ -145,14 +145,14 @@ In a similar way, the `.endswith()` method helps with verifying the last charact
 
 ## Transform text
 
-There are other methods that help in situations where text needs transform into something else. So far, we've seen strings that can use _C_ for _Celsius_ and _F_ for _Fahrenheit_. The `.replace()` method can be used to find and replace occurrences of a character or group of characters:
+There are other methods that help in situations where text needs to be transformed into something else. So far, you've seen strings that can use _C_ for _Celsius_ and _F_ for _Fahrenheit_. You can use the `.replace()` method to find and replace occurrences of a character or group of characters:
 
 ```python
 >>> "Saturn has a daytime temperature of -170 degrees Celsius, while Mars has -28 Celsius.".replace("Celsius", "C")
 'Saturn has a daytime temperature of -170 degrees C, while Mars has -28 C.'
 ```
 
-As already mentioned, `.lower()` is a good way to normalize text to do case-insensitive search. Let's quickly check if a text is talking about the temperatures:
+As already mentioned, `.lower()` is a good way to normalize text to do case-insensitive search. Let's quickly check to see whether some text is talking about the temperatures:
 
 ```python
 >>> text = "Temperatures on the Moon can vary wildly."
@@ -162,16 +162,16 @@ False
 True
 ```
 
-You might not need to do case-insensitive verification all the time, but lower casing every character is a good approach when text is using mixed casing. 
+You might not need to do case-insensitive verification all the time, but lowercasing every character is a good approach when text is using mixed casing. 
 
-After splitting text and performing transformations, you might require need to put all the parts back together again. Just like the `.split()` method can separate characters, the `.join()` method can put them back together. 
+After you've split text and performed transformations, you might need to put all the parts back together again. Just as the `.split()` method can separate characters, the `.join()` method can put them back together. 
 
-The `.join()` method requires an iterable (such as a Python list) as an argument, so its usage looks different than other string methods:
+The `.join()` method requires an iterable (such as a Python list) as an argument, so its usage looks different from other string methods:
 
 ```python
->>> moon_facts = ["The Moon is drifting away from the Earth.", "On average, the Moon is moving about about 4cm every year"]
+>>> moon_facts = ["The Moon is drifting away from the Earth.", "On average, the Moon is moving about 4cm every year"]
 >>> '\n'.join(moon_facts)
-'The Moon is drifting away from the Earth.\nOn average, the Moon is moving about about 4cm every year'
+'The Moon is drifting away from the Earth.\nOn average, the Moon is moving about 4cm every year'
 ```
 
-In this case, the newline character `'\n'` is used to join every item in the list.
+In this example, the newline character `'\n'` is used to join every item in the list.
