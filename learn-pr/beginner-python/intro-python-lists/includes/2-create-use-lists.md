@@ -103,7 +103,7 @@ If you wanted to return the third to last, you'd use an index of `-3` (and so on
 
 To determine where in a list a value is stored, you use the list's `index` method. This method searches for the value and returns the index of that item in the list. If it doesn't find a match, it returns `-1`.
 
-The following example shows the use of `Jupiter` as the index value:
+The following example shows the use of `"Jupiter"` as the index value:
 
 ```python
 jupiter_index = planets.index("Jupiter")

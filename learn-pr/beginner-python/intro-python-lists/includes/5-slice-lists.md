@@ -18,7 +18,7 @@ print(planets_before_earth)
 
 Notice how Earth is not included in the list. The reason is that the index ends before the ending index.
 
-To get all the planets after Earth, start at the third and go to eighth:
+To get all the planets after Earth, start at the third and go to the eighth:
 
 ```python
 planets_after_earth = planets[3:8]
