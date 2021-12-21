@@ -1,9 +1,9 @@
-You should have learned how to implement and manage retention in the individual Microsoft 365 services including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive for Business.
+You should have learned how to implement and manage retention in the individual Microsoft 365 services including Microsoft Teams, Exchange Online, SharePoint Online, and OneDrive.
 
 You should now be able to:
 
-- Describe the retention features in Microsoft 365 workloads.
-- Configure retention settings in Microsoft Teams and SharePoint Online.
+- Describe the retention features for Microsoft 365 workloads.
+- Configure retention settings for Microsoft Teams and SharePoint Online.
 - Recover content protected by retention settings.
 - Implement retention for Exchange Mailbox items.
 - Apply mailbox holds on Exchange Mailboxes.
@@ -13,7 +13,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
-- [Retention tags and retention policies | Microsoft Docs](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+- [Retention tags and retention policies | Microsoft Docs](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies?azure-portal=true)
 
-- [Enable archive mailboxes in the Security & Compliance Center - Microsoft 365 Compliance | Microsoft Docs](/microsoft-365/compliance/enable-archive-mailboxes)
+- [Enable archive mailboxes in the compliance center](/microsoft-365/compliance/enable-archive-mailboxes?view=o365-worldwide?azure-portal=true)
 
