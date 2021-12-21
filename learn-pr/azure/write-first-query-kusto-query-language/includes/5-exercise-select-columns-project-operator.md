@@ -45,7 +45,7 @@ For example, there are other countries with states. It might be helpful to renam
 
 1. Review your updated query and run it. The full query includes calculations for injuries, calculations for damages, and renaming the **State** column.
 
-    <a href="Click to run query](https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEIDY4PLkksSbUFkzoKYAUhlQVApmdeVmlRZmqxLYzhklkE1KIN43rmpYAFdBRcEnMT01NtIZRzUX5BsTaEHQBkpxaVVAItLEnMTlUwNAAA4HKT7IYAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEIDY4PLkksSbUFkzoKYAUhlQVApmdeVmlRZmqxLYzhklkE1KIN43rmpYAFdBRcEnMT01NtIZRzUX5BsTaEHQBkpxaVVAItLEnMTlUwNAAA4HKT7IYAAAA=" target="_blank"> Click to run query</a>
 
     ```kusto
     StormEvents
