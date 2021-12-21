@@ -47,9 +47,13 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. On the command bar, select **Test/Run**.  The Input/Output pane appears for testing your HTTP request.
 
-1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**, and then under **Query**, in the **Name** field, enter *id*, and in the **Value** field, enter *3*, and then select **Run**. If there are no input fields under query, select **Add parameter** and then complete this step.
+1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**.
 
-    :::image type="content" source="../media/3-test-input.png" alt-text="Screenshot of the input pane for Test + Run, with the input parameter for the HTTP GET method highlighted.":::
+1. Under **Query**, Select **Add parameter**
+
+1. In the **Name** field, enter *id*, and in the **Value** field, enter *3*, and then select **Run**.
+
+   :::image type="content" source="../media/3-test-input.png" alt-text="Screenshot of the input pane for Test + Run, with the input parameter for the HTTP GET method highlighted.":::
 
 1. A log pane appears to connect the request. The **Output** tab displays the HTTP response code (200 OK) and content for item 3 in the database.
 
@@ -77,26 +81,26 @@ After the function app has been deployed and tested, let's export it as an API u
 1. In the Function App menu, scroll to **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
 
     :::image type="content" source="../media/3-create-api.png" alt-text="Screenshot showing menu selection to open the API Management app service.":::
- 
-1. Under the **API Management** field, select **Create new**. The **API Management service** pane appears.
+
+1. Under the **API Management** field, select **Create new**. The **Install API Management gateway** pane appears.
 
     :::image type="content" source="../media/3-api-details.png" alt-text="Screenshot showing settings for an API Management service.":::
-    
+
 1. Enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | Name | The default value ProductFunctionnnnnnnnnnn-apim should be OK. The name must be unique within the **azure-api.net** domain |
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
+    | Region | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
+    | Resource name | The default value ProductFunctionNNNNNNNNNN-apim should be OK. The name must be unique within the **azure-api.net** domain. |
     | Organization name | OnlineStore |
-    | Administrator email | Accept the default value |
-    | Pricing tier | Consumption 
+    | Administrator email | Enter your email address. |
+    | Pricing tier | Consumption (99.95% SLA) |
 
-1. Select **Export** to provision a linked API Management instance. Allow several minutes for the export to complete.
+1. Select **Review + Create**. When the validation completes, select **Create** to provision a linked API Management instance. Allow several minutes for the export to complete.
 
-1. When the API Management instance has been completed, select **Link API**.
+1. When the API Management instance is deployed, select **Link API**.
 
     :::image type="content" source="../media/3-link-api.png" alt-text="Screenshot of API Management highlighting the Link API button.":::
 
@@ -108,7 +112,7 @@ After the function app has been deployed and tested, let's export it as an API u
 
     :::image type="content" source="../media/3-create-from-function-app.png" alt-text="Screenshot showing the Create from Function app dialog box.":::
 
-1. Change the **API URL suffix** value to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The Design tab for **API Management** pane for your function app appears.
+1. Change the **API URL suffix** value to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The **Design** tab for **API Management** pane for your function app appears.
 
 This exercise shows that you were able to define your API, all from within the Azure Function App service.
 
@@ -118,7 +122,7 @@ You now have a `ProductDetails` API in the API Management instance that you crea
 
 1. In the **API Management** pane of your function app, select the **Test** tab. The available operations for your API appear in the left column.
 
-1.Select **GET ProductDetails**. The ProductDetails Console pane appears.
+1. Select **GET ProductDetails**. The ProductDetails Console pane appears.
 
 1. Under **Query parameters**, select **Add parameter**.
 
