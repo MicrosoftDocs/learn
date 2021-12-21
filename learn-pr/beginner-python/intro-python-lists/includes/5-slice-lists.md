@@ -1,12 +1,12 @@
-You will often need to work with different portions of a list. For example, you may have a list with rainfall amounts for different months. To properly analyze this type of data you might need to look for rainfall in fall, or a three-month period. Or you may look to sort the list in order of most rainfall to least.
+You might need to work with different portions of a list. For example, assume that you have a list with rainfall amounts for various months. To properly analyze this type of data, you might need to look for rainfall in autumn or in a three-month period. Or you might want to sort the list in order of most rainfall to least.
 
-Python provides robust support for working with the data in lists. This includes slicing data, meaning you will examine just a portion, or sorting.
+Python provides robust support for working with the data in lists. This support includes slicing data (examining just a portion) and sorting.
 
-## Slicing lists
+## Slice lists
 
-You can retrieve a portion of a list using a **slice**. A slice uses square brackets, but instead of a single item it has the start and end indexes. A new list will be created starting at the start index, and ending at the end index but **not** including it.
+You can retrieve a portion of a list by using a *slice*. A slice uses brackets, but instead of a single item, it has the starting and ending indexes. When you use a slice, you create a new list that starts at the starting index and that ends before (and does *not* include) the ending index.
 
-Planets is a list of 8. Earth is the third in the list. To get the planets before Earth, use a slice to get items starting at 0 and ending at 2:
+The list of planets has eight items. Earth is the third in the list. To get the planets before Earth, use a slice to get items starting at 0 and ending at 2:
 
 ```python
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
@@ -16,7 +16,7 @@ print(planets_before_earth)
 # Output: ['Mercury', 'Venus']
 ```
 
-Notice how Earth is not included in the list. The reason is the index ends before the ending index, but does not include it.
+Notice how Earth is not included in the list. The reason is that the index ends before the ending index.
 
 To get all the planets after Earth, start at the third and go to eighth:
 
@@ -28,7 +28,7 @@ print(planets_after_earth)
 # ['Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 ```
 
-In this example, Neptune is displayed. The reason is the index for Neptune is `7`, because indexing starts at `0`. Because our ending index was `8`, it includes the last value. If you don't put the stop index in the slice, Python assumes you want to go to the end of the list:
+In this example, Neptune is displayed. The reason is that the index for Neptune is `7`, because indexing starts at `0`. Because the ending index was `8`, it includes the last value. If you don't put the stopping index in the slice, Python assumes that you want to go to the end of the list:
 
 ```python
 planets_after_earth = planets[3:]
@@ -39,17 +39,17 @@ print(planets_after_earth)
 ```
 
 > [!IMPORTANT]
-> A slice creates a **new** list, and does not modify the current list.
+> A slice creates a *new* list. It doesn't modify the current list.
 
-## Joining lists
+## Join lists
 
 You've seen how you can use slices to split up lists, but what about joining them back together?
 
 To join two lists, you use the other operator (`+`) with two lists to return a new list.
 
-There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede, and Callisto. These are known as the Galilean moons as they were discovered by Galileo Galilei using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea Group consisting of the moons, Metis, Adrastea, Amalthea, and Thebe.
+There are 79 known moons of Jupiter. The four largest are Io, Europa, Ganymede, and Callisto. These are called the Galilean moons, because Galileo Galilei discovered them by using his telescope in 1610. Closer to Jupiter than the Galilean group is the Amalthea group. It consists of the moons Metis, Adrastea, Amalthea, and Thebe.
 
-Create two lists, the first with the four Amalthea moons and a list of the Galilean moons. Join them together using `+` to make a new list:
+Create two lists. Populate the first list with the four Amalthea moons and the second list with the four Galilean moons. Join them together by using `+` to make a new list:
 
 ```python
 amalthea_group = ["Metis", "Adrastea", "Amalthea", "Thebe"]
@@ -63,9 +63,9 @@ print("The regular satellite moons of Jupiter are", regular_satellite_moons)
 ```
 
 > [!IMPORTANT]
-> Joining lists creates a **new** list, and does not modify the current list.
+> Joining lists creates a *new* list. It doesn't modify the current list.
 
-## Sorting lists
+## Sort lists
 
 To sort a list, use the `.sort()` method on the list. Python will sort a list of strings in alphabetical order and a list of numbers in numeric order:
 
