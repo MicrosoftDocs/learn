@@ -787,16 +787,6 @@ achievements:
   title: Set up an IoT Edge Gateway
   summary: Set up an IoT Edge Gateway
   iconUrl: /learn/achievements/set-up-iot-edge-gateway.svg
-- uid: learn.deploy-built-module-iot-edge.badge
-  type: badge
-  title: Deploy a pre-built module to the Edge device
-  summary: Deploy a pre-built module to the Edge device
-  iconUrl: /learn/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
-- uid: learn.introduction-to-iot-edge.badge
-  type: badge
-  title: Introduction to Azure IoT Edge
-  summary: Introduction to Azure IoT Edge
-  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-edge.svg
 - uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.badge
   type: badge
   title: Automate IoT devices management with Azure IoT Hub
@@ -852,8 +842,3 @@ achievements:
   title: Introduction to implementing lambda architecture for IoT solutions
   summary: Introduction to implementing lambda architecture for IoT solutions
   iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
-- uid: learn.introduction-to-iot-hub.badge
-  type: badge
-  title: Introduction to Azure IoT Hub
-  summary: Introduction to Azure IoT Hub
-  iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg
