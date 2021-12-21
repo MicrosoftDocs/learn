@@ -1,8 +1,4 @@
-Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about the how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset.
-
-## What is a Kusto query?
-
-A Kusto query is a read-only request to process data and return results. KQL offers a wide variety of functions that analyze your data in different ways. Module 1 (can we link to it?) shows you how to use the most common tabular operators to begin exploring and filtering your data. To dig a bit deeper, you can use different kinds of operators. For example, aggregate functions let you gain further insights in your data by comparing different groups of information. To organize complex queries, you can also take advantage of let statements.
+Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about the how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset. For example, you'll use aggregate functions to gain insights in your data by comparing different groups of information. You'll explore ways to visualize this data in graphical format. To organize complex queries, you'll take advantage of let statements.
 
 ## What is an aggregate function?
 
@@ -11,6 +7,10 @@ The data in the storm events scenario is presented on an event level, meaning th
 An aggregation function groups values of multiple rows to form a single summary value.
 
 ADD IMAGE
+
+## Data visualization
+
+
 
 ## What is a let statement?
 
