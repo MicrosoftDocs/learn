@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.community-collaboration.nothing-about-us-without-us
-title: Practice nothing about us without us
+title: Practice "nothing about us without us"
 metadata:
   title: Practice "nothing about us without us"
   description: This content is part of the "Community collaboration for accessible design" module.
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Individuals with disabilities should play an active role in the development of bespoke accessibility efforts, such as new accessibility features or gaming assistive technologies."
       isCorrect: false
-      explanation: "Incorrect. This statement is true, in that individuals with disabilities should play an active role in the development of accessibility-focused products like assistive technologies. But this response limits the role of “nothing about is without us” to only accessibility-focused efforts. The disability community should be included throughout the development process of all gaming products and experiences."
+      explanation: "Incorrect. This statement is true in the sense that individuals with disabilities should play an active role in the development of accessibility-focused products like assistive technologies. But this response limits the role of “nothing about is without us” to only accessibility-focused efforts. The disability community should be included throughout the development process of all gaming products and experiences."
     - content: "Individuals with disabilities should play an active role in the development of all gaming products and experiences."
       isCorrect: true
       explanation: "Correct. This option accurately describes the meaning of “nothing about us without us” in the context of gaming. Games, platforms, and hardware devices should be accessible to all players, regardless of whether they're considered assistive technologies."

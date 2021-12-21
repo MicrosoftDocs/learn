@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Use email distribution lists and resources within your company or organization."
       isCorrect: true
-      explanation: "Correct. You might work alongside teammates, fellow employees, or other members of your greater company or organization who have disabilities and can provide useful feedback."
+      explanation: "Correct. You might work alongside teammates, fellow employees, or other members of your company or organization who have disabilities and can provide useful feedback."
     - content: "Use disability simulators such as color-blind glasses or blurred glasses to generate feedback if users with disabilities can't be included."
       isCorrect: false
       explanation: "Incorrect. Even if your team or organization does not have internal employees with disabilities to provide feedback, validating the accessibility of new products and experiences shouldn't happen through simulators."
@@ -36,4 +36,4 @@ quiz:
       explanation: "Correct. These groups might typically consist of large numbers of disability community members. Depending on the size and nature of the group, they might be willing to connect you with members who would be a good fit to participate in feedback sessions."
     - content: "These groups might post articles or other informational documents about the community members they serve. Developers can read these articles instead of engaging the community directly."
       isCorrect: false
-      explanation: "Incorrect. Although these groups often have important information about the disabilities and experiences of the groups they serve, reading through these resources alone would not be considered true community collaboration."
+      explanation: "Incorrect. Although these groups often have important information about the disabilities and experiences of the people they serve, reading through these resources alone would not be considered true community collaboration."

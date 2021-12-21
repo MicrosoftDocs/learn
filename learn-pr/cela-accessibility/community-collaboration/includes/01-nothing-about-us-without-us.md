@@ -24,8 +24,8 @@ Players who have lived experience gaming with a disability can help identify bar
 
 The following video contains examples of how game developers from [The Coalition](https://www.thecoalitionstudio.com/) have actively collaborated with members of the gaming and disability community during development.
 
-**Making gaming for everyone real - audio-described version:**
+**Making gaming for everyone real (audio-described version):**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWO6HD]
 
-**Making gaming for everyone real - non-audio-described version:**
+**Making gaming for everyone real (non-audio-described version):**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNZN7]

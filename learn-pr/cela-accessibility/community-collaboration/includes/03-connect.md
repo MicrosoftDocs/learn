@@ -20,7 +20,7 @@ Be sure to include detailed information about the product or experience that you
 These opportunities can foster active collaboration with the disability community throughout development while adhering to confidentiality restraints.
 
 > [!Important]
-> When you're collaborating with employee groups, remember that any time that they spend providing feedback is likely work that's beyond typical day-to-day job tasks and functions. Be considerate when you're asking fellow employees to participate.
+> When you're collaborating with employee groups, remember that any time they spend providing feedback is likely work that's beyond typical day-to-day job tasks and functions. Be considerate when you're asking fellow employees to participate.
 
 ### Connect with local or global communities
 
@@ -31,7 +31,7 @@ Consider using the following platforms and channels to form connections with mem
 - **Social media:** Social media platforms provide opportunities for disability community members to come together and discuss common interests, including game accessibility. Creating social media posts that contain information or links to upcoming accessibility research studies, surveys, play tests, and more is a great way to reach broader communities.
 
     > [!Tip]
-    > Including tags like **#accessibility**, **#gameaccessibility**, or **#A11y** ([a numeronym for the word Accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) in your post increases the visibility of the post among the players that you're targeting.  
+    > Including tags like **#accessibility**, **#gameaccessibility**, or **#A11y** ([a numeronym for the word accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/)) in your post increases the visibility of the post among the players that you're targeting.  
 
 - **Disability nonprofit organizations and advocacy groups:** If your team is looking for feedback from players who have a specific type of disability or experience, nonprofit organizations and advocacy groups can be a great resource.
 
