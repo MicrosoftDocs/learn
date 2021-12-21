@@ -85,7 +85,7 @@ func main() {
 
 Run the preceding code to confirm that this way of declaring and initializing variables works.
 
-Notice that here you need to include a colon equal sign (`:=`) and its corresponding value right after you define the variable name. When you use the colon equal sign, *the variable you're declaring has to be a new one*. If you use a colon equal sign and the variable has been declared already, the program won't compile. Go ahead and give it a try.
+Notice that here you need to include a colon equal sign (`:=`) and its corresponding value right after you define the variable name. When you use the colon equal sign, *the variable you're declaring has to be a new one*. If you use a colon equal sign and the variable has been declared already, the program won't compile. Add the age as a constant (see next section) in the line before `age := 32` in the preceding code and give it a try.
 
 Finally, *you can use the colon equal sign only inside a function*. When you declare variables outside of a function, you must do it by using the `var` keyword. Don't worry if you're not familiar with functions. We'll introduce functions in a later unit.
 
