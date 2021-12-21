@@ -1,8 +1,8 @@
 Python strings are one of the main and most common types in the language. Interacting with strings, including formatting and replacing text, is an essential skill to develop for working with Python code.
 
-## Scenario: Create a program to describe the Moon's measurements
+## Scenario: Create a program to describe facts about the Moon
 
-Imagine that you're creating a program to describe some of the measurements of the Moon. You'll need to use various string operations to create the output.
+Imagine that you're creating a program to describe some measurements and other information about the Moon. You'll need to use various string operations to create the output.
 
 ## What will you learn?
 
