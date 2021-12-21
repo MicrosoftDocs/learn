@@ -122,7 +122,7 @@ You now have a `ProductDetails` API in the API Management instance that you crea
 
 1. In the **API Management** pane of your function app, select the **Test** tab. The available operations for your API appear in the left column.
 
-1.Select **GET ProductDetails**. The ProductDetails Console pane appears.
+1. Select **GET ProductDetails**. The ProductDetails Console pane appears.
 
 1. Under **Query parameters**, select **Add parameter**.
 
