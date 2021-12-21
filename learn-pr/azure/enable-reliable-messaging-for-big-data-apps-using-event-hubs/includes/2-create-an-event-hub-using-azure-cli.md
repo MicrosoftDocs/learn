@@ -20,7 +20,7 @@ Event publishers are any app or device that can send out events using either HTT
 
 - For publishers that send data frequently, **AMQP** has better performance. However, it has a higher initial session overhead, because a persistent bidirectional socket and transport-level security (TLS), or SSL/TLS, has to be set up first.
 - For more intermittent publishing, **HTTPS** is the better option. Though HTTPS requires additional overhead for each request, there is no session initialization overhead.
-- Event Hubs provides an endpoint compatible with the **Apache Kafka** producer and consumer APIs that can be used by most existing Apache Kafka client applications as an alternative to running your own Apache Kafka cluster. Event Hubs supports Apache Kafka's producer and consumer APIs clients at version 1.0 and above. For more information, see [Event Hubs for Apache Kafka](/event-hubs/event-hubs-for-kafka-ecosystem-overview).
+- Event Hubs provides an endpoint compatible with the **Apache Kafka** producer and consumer APIs that can be used by most existing Apache Kafka client applications as an alternative to running your own Apache Kafka cluster. Event Hubs supports Apache Kafka's producer and consumer APIs clients at version 1.0 and above. For more information, see [Event Hubs for Apache Kafka](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview).
 
 Event subscribers are apps that use one of two supported programmatic methods to receive and process events from an event hub.
 
