@@ -10241,86 +10241,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/2-what-is-prebuilt-module.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/3-how-setup-communication.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/4-exercise-setup-communication.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/5-how-deploy-prebuilt-module.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/6-exercise-deploying-prebuilt-module.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/7-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/deploy-prebuilt-module-edge-device/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-edge-device-deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/3-how-iot-edge-works.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/5-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/2-what-is-iot-edge.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-iot-edge/4-when-to-use-iot-edge.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-iot-edge-environment/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/iot/automate-iot-devices-management-with-azure-iot-hub/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/device-management-scale/",
       "redirect_document_id": false
@@ -10698,41 +10618,6 @@
     {
       "source_path": "learn-pr/iot/introduction-lambda-architecture-iot-solutions/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/3-how-iot-hub-works.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/5-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/2-what-is-iot-hub.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/student-evangelism/introduction-to-iot-hub/4-when-to-use-iot-hub.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-iot-hub-properties/",
       "redirect_document_id": false
     },
     {
