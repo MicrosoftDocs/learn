@@ -14,6 +14,7 @@ summary: Visual Studio brings advanced editing, debugging, and customization to 
 abstract: |
   By the end of this module, you'll be able to: 
     - Evaluate whether Visual Studio is appropriate for your development needs.
+    - Understand the differences between Visual Studio and Visual Studio Code
     - Describe how the editor, debugger, customization, extensions, pair programming, and publishing tools of Visual Studio make you more productive.
 prerequisites: |
   - Some experience with beginner computer skills like installing an app from the internet.
