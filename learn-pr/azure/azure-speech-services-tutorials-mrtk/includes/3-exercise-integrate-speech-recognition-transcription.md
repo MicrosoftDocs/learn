@@ -1,10 +1,10 @@
-In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and you will be able to leverage the Intent recognition feature to understand voice commands using artificial intelligence.
+In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and use the Intent recognition feature to understand voice commands using artificial intelligence.
 
 ## Create and prepare the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the Initializing your project and first application, excluding the Build your application to your device instructions, which includes the following steps:
+As a prerequisite, make sure you've completed the steps below to initialize your project and application:
 
 1. Creating the Unity project and give it a suitable name, for example, *MRTK Tutorials*
 2. Switching the build platform
@@ -13,11 +13,14 @@ For this, first follow the Initializing your project and first application, excl
 5. Configuring the Unity project
 6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureSpeechServices*
 
-Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**  and change the display options for the spatial awareness mesh to **Occlusion**.
+Then, follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+
+> [!NOTE]
+> You can learn how to set up your mixed-reality project in the [Introduction to Mixed Reality Toolkit](learn/modules/learn-mrtk-tutorials/) module.
 
 ## Configure the speech commands start behavior
 
-Because you will use the Speech SDK for speech recognition and transcription, you need to configure the MRTK Speech Commands, so they do not interfere with the Speech SDK functionality. To achieve this, you can change the speech commands start behavior from Auto Start to Manual Start.
+Because you will use the Speech SDK for speech recognition and transcription, you need to configure the MRTK Speech Commands so they do not interfere with the Speech SDK functionality. To achieve this, you can change the speech commands start behavior from Auto Start to Manual Start.
 
 1. With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
 
@@ -29,7 +32,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
     :::image type="content" source="../media/configure-capabilities.png" alt-text="Screenshot of Configuring capabilities." lightbox="../media/configure-capabilities.png":::
 
-2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
+2. In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities (which you enabled when you created the project at the beginning of the tutorial) are still enabled. Then enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
 
     :::image type="content" source="../media/enable-capabilities.png" alt-text="Screenshot of Enable the capabilities." lightbox="../media/enable-capabilities.png":::
 
@@ -41,7 +44,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
 
-2. After you have imported the tutorial assets your Project window should look similar to this:
+2. Once you import the tutorial assets your Project window should look like this:
 
     :::image type="content" source="../media/project-window.png" alt-text="Screenshot of Project window must look similar to this." lightbox="../media/project-window.png":::
 
@@ -49,7 +52,7 @@ Because you will use the Speech SDK for speech recognition and transcription, yo
 
 In this section, you will prepare the scene by adding the tutorial prefab and configure the Lunarcom Controller (Script) component to control your scene.
 
-1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
+1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
     :::image type="content" source="../media/prepare-scene.png" alt-text="Screenshot of Preparing the scene." lightbox="../media/prepare-scene.png":::
 

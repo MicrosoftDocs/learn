@@ -2,7 +2,7 @@ In this module, you will add speech translation to your project, which will allo
 
 1. In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Translation Recognizer (Script)** component to the Lunarcom object and configure it as follows:
 
-    * Change the **Target Language** to a language of your choosing, for example, _German_
+    * Change the **Target Language** to a language of your choosing, for example: _German_
 
     :::image type="content" source="../media/translation-recognizer.png" alt-text="Screenshot of Add the Lunarcom Translation Recognizer (Script)." lightbox="../media/translation-recognizer.png":::
 
