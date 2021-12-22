@@ -12,7 +12,7 @@ metadata:
 title: Introduction to Azure VPN Gateway
 summary: This module describes what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
 abstract: |
-  In this module you will:
+  In this module, you will:
   - Learn what Azure VPN Gateway is and the functionality it provides.
   - Determine whether Azure VPN Gateway meets the needs of your organization.
 iconUrl: /learn/achievements/generic-badge.svg

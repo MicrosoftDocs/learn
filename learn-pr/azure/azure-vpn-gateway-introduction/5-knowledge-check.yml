@@ -16,38 +16,38 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: You are planning an Azure VPN gateway for an Azure virtual network. The Azure virtual network already has an Azure ExpressRoute gateway present. Which of the following Azure VPN gateway types can you deploy on this Azure virtual network?
+    - content: You are planning an Azure VPN gateway for an Azure virtual network. The Azure virtual network already includes an Azure ExpressRoute gateway. Which of the following Azure VPN gateway types can you deploy on this Azure virtual network?
       choices:
-        - content: Policy-based VPN gateway.
+        - content: A policy-based VPN gateway.
           isCorrect: false
-          explanation: Incorrect. Policy-based VPN gateways can only be deployed on virtual networks that do not have Azure ExpressRoute gateways.
-        - content: Route-based VPN gateway.
+          explanation: Incorrect. A policy-based VPN gateway can be deployed only on a virtual network that doesn't have an Azure ExpressRoute gateway.
+        - content: A route-based VPN gateway.
           isCorrect: true
-          explanation: Correct. If an Azure ExpressRoute gateway is present on an Azure Virtual Network, you can only deploy a route-based VPN gateway.
-        - content: You cannot deploy a VPN gateway.
+          explanation: Correct. If an Azure ExpressRoute gateway is present on an Azure virtual network, you can deploy only a route-based VPN gateway.
+        - content: You can't deploy a VPN gateway in this virtual network.
           explanation: Incorrect. You can deploy a route-based VPN gateway if an Azure ExpressRoute gateway is already present.
           isCorrect: false
     - content: Which of the following subnet names must be present on an Azure virtual network to support an Azure VPN gateway?
       choices: 
         - content: EncryptedSubnet
-          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. There is no need for a subnet named EncryptedSubnet to be present.
+          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. A subnet named EncryptedSubnet doesn't need to be present.
           isCorrect: false
         - content: BorderSubnet
-          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. There is no need for a subnet named BorderSubnet to be present.
+          explanation: Incorrect. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway. A subnet named BorderSubnet doesn't need to be present.
           isCorrect: false
         - content: GatewaySubnet
           explanation: Correct. A subnet named GatewaySubnet must be present on an Azure virtual network to support an Azure VPN gateway.
           isCorrect: true
-    - content: Adatum has determined that it wishes to have its Azure VPN connections support aggregate throughput of 1.25 Gbps. Which of the following Azure VPN gateway SKUs should Adatum deploy?
+    - content: Adatum has determined that it wants to have its Azure VPN connections support an aggregate throughput of 1.25 Gbps. Which of the following Azure VPN gateway SKUs should Adatum deploy?
       choices:
         - content: VpnGw1
-          explanation: Incorrect. VpnGw1 supports aggregate throughput of 650 Mbps.
+          explanation: Incorrect. VpnGw1 supports an aggregate throughput of 650 Mbps.
           isCorrect: false
         - content: VpnGw2
-          explanation: Incorrect. VpnGw2 supports aggregate throughput of 1 Gbps.
+          explanation: Incorrect. VpnGw2 supports an aggregate throughput of 1 Gbps.
           isCorrect: false
         - content: VpnGw3
-          explanation: Correct. VpnGw3 supports aggregate throughput of 1.25 Gbps.
+          explanation: Correct. VpnGw3 supports an aggregate throughput of 1.25 Gbps.
           isCorrect: true
 
 
