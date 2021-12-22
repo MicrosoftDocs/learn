@@ -68,7 +68,7 @@ Another important consideration is the location of the controls on a device. Con
 
 In this situation, the location of the controls can't be moved. An alternative approach could include a software option that allows players to swap the controls for volume and noise cancellation between the right and left ear cups. This option would support this player in "accessing" both control types despite only being able to physically reach one side of their device while it's on their head.
 
-Other general best-practice considerations to account for hardware component location include:
+Other general best practices considerations to account for hardware component location include:
 
 - Provide players with an alternative, accessible way to control the device, such as adding a volume control to the auxiliary cord that connects the headphones to the gaming device.
 - Provide controls on a separate device that can be placed in a convenient location, such as a dial that can be placed on a table.
