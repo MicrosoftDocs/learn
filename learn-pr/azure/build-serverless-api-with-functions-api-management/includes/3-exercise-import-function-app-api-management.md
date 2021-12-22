@@ -63,7 +63,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. Select **Close** to close the Input Output tabs for Code + Test.
 
-1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain. Copy and save the URL for later in this exercise.
+1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain.
 
 > [!NOTE]
 > You can use this URL to test the function in your browser. The URL requires an input; append the query string `&id=1` to request details about the first item in your product collection.
@@ -95,7 +95,7 @@ After the function app has been deployed and tested, let's export it as an API u
     | Region | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
     | Resource name | The default value ProductFunctionNNNNNNNNNN-apim should be OK. The name must be unique within the **azure-api.net** domain. |
     | Organization name | OnlineStore |
-    | Administrator email | Enter your email address. |
+    | Administrator email | Enter an email address. |
     | Pricing tier | Consumption (99.95% SLA) |
 
 1. Select **Review + Create**. When the validation completes, select **Create** to provision a linked API Management instance. Allow several minutes for the export to complete.
