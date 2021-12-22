@@ -23,9 +23,8 @@ To group these events into chunks of information, you'll use the `summarize` ope
 
 ## Use the `dcount` and `countif` operators
 
-The above query returned the number of events per state. There are, however, more sophisticated ways to count events. For example, you could count only certain types of events. The `countif()` operator counts records for which a predicate is true.
-
-* For example, the query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
+The above query returned the number of events per state. There are, however, more sophisticated ways to count events. 
+* For example, you could count only certain types of events. The `countif()` operator counts records for which a predicate is true. The query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
 * You can also count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set.
 
 The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and must be grouped by the same column, in this case *State*.
@@ -50,7 +49,7 @@ The following query incorporates both operator types within the `summarize` oper
 
 ## Use the `distinct` operator
 
-The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. That's quite a few different kinds of storms. To see a list of each different type of event, use the `distinct` operator, which lists the distinct values of a particular column.
+The above query returned a distinct count of 27 different types of storms in Texas during the time period covered by this data. It would be interesting to see the names of all those types of storms. To see a list of each different type of event, use the `distinct` operator, which lists the distinct values of a particular column.
 
 1. Run the following query:
 
