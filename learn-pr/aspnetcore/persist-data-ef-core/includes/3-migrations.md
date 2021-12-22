@@ -118,7 +118,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     - Defines a Sqlite connection string that points to a local file, *ContosoPizza.db*.
 
     > [!NOTE]
-    > For Sqlite, which uses local database files, it's probably okay to hardcode the connection string like this. However, for network databases like PostgreSQL or SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secret). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
+    > For Sqlite, which uses local database files, it's probably okay to hardcode the connection string like this. However, for network databases like PostgreSQL or SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 

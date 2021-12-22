@@ -49,5 +49,5 @@ Because floating-point types can hold large numbers with a lot of precision, the
 
 - A floating-point type is a simple value data type that can hold fractional numbers.
 - Choosing the right floating-point type for your application requires you to consider more than just the maximum and minimum values that it can hold. You must also consider how many values can be preserved after the decimal, how the numbers are stored, and how their internal storage affects the outcome of math operations.
-- Floating-point values can sometimes be represented using "E notation" when the numbers or exponents grow especially large.
+- Floating-point values can sometimes be represented using "E notation" when the numbers grow especially large.
 - There's a fundamental difference in how the compiler and runtime handle `decimal` as opposed to `float` or `double`, especially when determining how much accuracy is necessary from math operations.
