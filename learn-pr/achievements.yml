@@ -822,11 +822,6 @@ achievements:
   title: Securely connect IoT devices to the cloud
   summary: Securely connect IoT devices to the cloud
   iconUrl: /learn/achievements/securely-connect-iot-devices-to-the-cloud.svg
-- uid: learn-wwl.enable-digital-transformation.badge
-  type: badge
-  title: Enabling digital transformation
-  summary: Enabling digital transformation
-  iconUrl: /learn/achievements/enable-digital-transformation.svg
 - uid: learn.introduction-to-azure-iot.trophy
   type: trophy
   title: Introduction to Azure IoT

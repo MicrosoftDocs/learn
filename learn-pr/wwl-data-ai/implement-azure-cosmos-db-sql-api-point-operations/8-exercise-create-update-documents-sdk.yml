@@ -4,13 +4,12 @@ title: 'Exercise: Create and update documents with the Azure Cosmos DB SQL API S
 metadata:
   title: 'Exercise: Create and update documents with the Azure Cosmos DB SQL API SDK'
   description: "Exercise: Create and update documents with the Azure Cosmos DB SQL API SDK"
-  ms.date: 12/09/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107576
 labModal: true
 durationInMinutes: 15
