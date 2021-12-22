@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction
-summary: Import and learn about foundational elements of the Mixed Reality Tookit (MRTK)
+summary: Import and learn about foundational elements of the Mixed Reality Toolkit (MRTK)
 abstract: |
   By the end of this module you'll be able to:
   - Import the MRTK into your Unity Windows Mixed Reality Project.
