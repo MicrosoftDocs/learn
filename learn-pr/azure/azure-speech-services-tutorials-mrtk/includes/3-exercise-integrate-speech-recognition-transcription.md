@@ -16,7 +16,7 @@ As a prerequisite, make sure you've completed the steps below to initialize your
 Then, follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 > [!NOTE]
-> You can learn how to set up your mixed-reality project in the [Introduction to Mixed Reality Toolkit](learn/modules/learn-mrtk-tutorials/) module.
+> You can learn how to set up your mixed-reality project in the [Introduction to Mixed Reality Toolkit](/learn/modules/learn-mrtk-tutorials/) module.
 
 ## Configure the speech commands start behavior
 
