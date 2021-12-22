@@ -72,4 +72,4 @@ However, a useful pattern is to pass functions to other functions instead of ass
 ```
 
 > [!TIP]
-> Although passing functions directly into other functions as input is useful, there's potential for reduced readability. This pattern is especially problematic when the functions require many arguments. 
+> Although passing functions directly into other functions as input is useful, there is potential for reduced readability. This pattern is especially problematic when the functions require many arguments. 

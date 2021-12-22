@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Python functions
-summary: The next step after using procedural code is to write modular software with functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
+summary: The next step after using procedural code is to write modular software by using functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
 abstract: |
   By the end of this module, you'll be able to:
     - Use functions with various types of return values.

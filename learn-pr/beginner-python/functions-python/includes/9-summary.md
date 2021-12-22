@@ -6,4 +6,4 @@ You now know essentials like these about functions:
 - You can extract reusable code and reuse it in a function.
 - Variable arguments and variable keyword arguments are useful when you don't know the exact inputs.
 
-With these techniques and the knowledge of functions, you should feel more comfortable tackling bigger problems when writing Python code.
+With these techniques and the knowledge of functions, you should feel more comfortable tackling bigger problems when you're writing Python code.

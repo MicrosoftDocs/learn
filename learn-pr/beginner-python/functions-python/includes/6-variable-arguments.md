@@ -27,7 +27,7 @@ In this case, `*args` is instructing the function to accept any number of argume
 
 As you can see, there's no restriction on the number or type of arguments passed in.
 
-A rocket ship goes through several steps before a launch. Depending on tasks or delays, these steps might take longer than planned. Let's create a variable length function that can calculate how many minutes until launch, given how much time each step is going to take:
+A rocket ship goes through several steps before a launch. Depending on tasks or delays, these steps might take longer than planned. Let's create a variable-length function that can calculate how many minutes until launch, given how much time each step is going to take:
 
 ```python
 def sequence_time(*args):

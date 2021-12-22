@@ -27,7 +27,7 @@ Even though the function defines a keyword argument, it allows not passing one w
 
 ## Mixing arguments and keyword arguments
 
-Sometimes, a function needs a combination of arguments and keyword arguments. In Python, this combination is required to follow an order. Arguments are always declared first, followed by keyword arguments. 
+Sometimes, a function needs a combination of arguments and keyword arguments. In Python, this combination follows a specific order. Arguments are always declared first, followed by keyword arguments. 
 
 Update the `arrival_time()` function to take a required argument, which is the name of the destination:
 
