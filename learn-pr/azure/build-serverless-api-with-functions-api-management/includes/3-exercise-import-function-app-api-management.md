@@ -93,7 +93,7 @@ After the function app has been deployed and tested, let's export it as an API u
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
     | Region | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
-    | Resource name | The default value ProductFunctionNNNNNNNNNN-apim should be OK. The name must be unique within the **azure-api.net** domain. |
+    | Resource name | OnlineStore |
     | Organization name | OnlineStore |
     | Administrator email | Enter an email address. |
     | Pricing tier | Consumption (99.95% SLA) |
