@@ -1,4 +1,6 @@
-In this module, you learned about Azure VPN Gateway a service that allows you to connect on-premises networks and individual client computers to Azure virtual networks using an encrypted network tunnel that runs across an existing network. You also learned that Azure VPN gateways can be used to connect Azure virtual networks together. You learned about the different options available when deploying Azure VPN Gateway and you learned about the type of scenarios where Azure VPN Gateway is an appropriate solution to meet Adatum’s needs. You also learned about the differences between Azure ExpressRoute and Azure VPN and the situations in which each option is appropriate. 
+In this module, you learned about Azure VPN Gateway, a service that allows you to connect on-premises networks and individual client computers to Azure virtual networks using an encrypted network tunnel that runs across an existing network. You also learned that you can use Azure VPN gateways to connect Azure virtual networks together. 
+
+You learned about the different options that are available to you when you deploy Azure VPN Gateway, and you learned about the scenarios in which Azure VPN Gateway is an appropriate solution to meet Adatum’s needs. You also learned about the differences between Azure ExpressRoute and Azure VPN Gateway, and the situations in which each option is appropriate.
 
 ## Learn more
 
