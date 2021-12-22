@@ -10511,46 +10511,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/index.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/1-Introduction.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/2-What-is-digital-transformation.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/6-knowledge-check.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/7-summary-resources.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/4-action.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/3-success-factors.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-mba/enable-digital-transformation/5-why-digitally-transform-with-microsoft.md",
-      "redirect_url": "http://docs.microsoft.com/learn/browse",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/paths/introduction-to-azure-iot/index.md",
       "redirect_url": "http://docs.microsoft.com/learn/browse",
       "redirect_document_id": false
