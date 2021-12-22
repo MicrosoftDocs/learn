@@ -9,4 +9,3 @@ In this module, you will complete a lab that includes the following activities:
  -  Configure an Azure Stream Analytics job that analyzes message data and routes the selected information to Azure Blob storage.
 
 By the end of this module, you will be able to implement IoT Hub message routing and Azure Stream Analytics in an IoT solution.
- 
