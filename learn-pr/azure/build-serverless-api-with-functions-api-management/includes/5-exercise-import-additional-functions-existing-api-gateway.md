@@ -1,4 +1,4 @@
-Recall that you want to integrate all of the separate microservices, which are Azure Functions, into a single API. You have already added the Products function app to a new instance of API Management. Now you want to add another function app to that API.
+Recall that you want to integrate all of the separate microservices, which are Azure Functions, into a single API. You've already added the Products function app to a new instance of API Management. Now you want to add another function app to that API.
 
 In this exercise, you'll add the Orders function app to the API and use the `curl` tool to test the integrated system.
 
@@ -26,8 +26,8 @@ Before we add the Orders function app to the API, let's test the function it hos
 
     :::image type="content" source="../media/5-order-test-results.png" alt-text="Add a new function option page appears.":::
 
-    Optionally, you can run additional requests using name values "Henri" and "Barriclough" to obtain different customer orders.
-    
+    Optionally, you can run more requests using name values **Henri** and **Barriclough** to obtain different customer orders.
+
 1. Select **Close** to close the Input Output tabs for Test/Run.
 
 1. On the command bar of the OrderDetails pane, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain.
@@ -35,28 +35,6 @@ Before we add the Orders function app to the API, let's test the function it hos
 ## Add a function to an existing API
 
 In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app interface. Here, we'll navigate to our API Management instance through the Azure portal resource menu, just to demonstrate that both approaches are available.
-
-<!-- 1. From the Azure resource menu or **Home** page, select **All resources**. The **All resources** pane appears.
-
-1. Sort the resources by type, and then select the Function App whose name begins with **OrderFunction**. The **OrderFunction** Function App Overview pane appears.
-
-1. In the Function App menu, scroll down to **API**, and then select **API Management**. The **OrderFunction API Management** pane appears.
-
-1. Under the **API Management** field, select **Create new**. The **API Management service** pane appears.
-
-1. Enter the following API Management values for each setting.
-
-    | Setting | Value |
-    | --- | --- |
-    | Name | The default value OrderFunctionnnnnnnnnnn-apim should be OK. Use a name that is unique within the **azure-api.net** domain |
-    | Subscription | Concierge Subscription |
-    | Resource group | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose one of the following locations that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  |
-    | Organization name | OnlineStore |
-    | Administrator email | Accept the default value |
-    | Pricing tier | Consumption |
-
-1. Select **Export** to provision a linked API Management instance. This operation may take several minutes. -->
 
 1. On Azure resource menu, or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
@@ -92,21 +70,21 @@ In this step, we'll add the Order function to the API Management resource that w
 
 Now that we've added OrderDetails to our API, let's test it by using the API Management tools in the Azure portal.
 
-1.  On the OrderFunctionNNNNNN-apim APIs Design tab, under **All operations**, select **GET OrderDetails**, and then select the **Test** tab.
+1. On the OrderFunctionNNNNNN APIs Design tab, under **All operations**, select **GET OrderDetails**, and then select the **Test** tab.
 
 1. In the **Query parameters** section, select **Add parameter**, and enter *name* in the **NAME** field and *Chiba* and in the **VALUE** field. Select **Send**.
 
 1. The **HTTP response** message tab shows the HTTP request succeeded (HTTP/1.1/ 200 OK), along with a JSON object showing an Order ID, along with the customer name, total price of the order, and shipping status.
- 
-1.  Scroll up to the **HTTP request** section; notice that the request was sent to a subdomain and subdirectory within the **azure-api.net** domain. This location differs from the **azurewebsites.net** host domain.
+
+1. Scroll up to the **HTTP request** section; notice that the request was sent to a subdomain and subdirectory within the **azure-api.net** domain. This location differs from the **azurewebsites.net** host domain.
 
 ## Test the combined API
 
 We can use the `curl` command-line tool to submit requests to our API. cURL is ideal because we can include the correct subscription key with a request. A request also needs the location of the API, which is hosted in Azure API Management and, in this case, consists of the Products and Orders functions.
 
 1. In the Azure resource menu or from Home, select **All resources**.
- 
-1. Sort resources by Type, and then select the the **OnlineStore** API Management service. The **API Management service** for **OnlineStore** appears.
+
+1. Sort resources by Type, and then select the **OnlineStore** API Management service. The **API Management service** for **OnlineStore** appears.
 
 1. In the **Essentials** section, hover over the **Gateway URL** and select the **Copy to clipboard** icon.
 
