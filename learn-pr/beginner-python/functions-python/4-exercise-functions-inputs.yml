@@ -3,8 +3,8 @@ uid: learn.beginner-python.functions-python.exercise-functions-inputs
 title: Exercise - Use functions in Python
 metadata:
   unitType: Exercise
-  title: "Exercise: use functions with required arguments to calculate new values"
-  description: "Use functions with required arguments to calculate and produce new results. Identify code that can get extracted into separate functions for improved readability."
+  title: Exercise - Use functions with required arguments to calculate new values
+  description: Use functions with required arguments to calculate and produce new results. Identify code that can be extracted into separate functions for improved readability.
   ms.date: 12/07/2021
   author: softchris
   ms.author: chnoring

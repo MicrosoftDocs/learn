@@ -4,7 +4,7 @@ title: Use variable arguments in Python
 metadata:
   unitType: learning-content
   title: Use variable arguments in Python
-  description: "Use a variable number of inputs in a function. Avoid strict requirements by using variable arguments that allow any number of inputs."
+  description: Use a variable number of inputs in a function. Avoid strict requirements by using variable arguments that allow any number of inputs.
   ms.date: 12/07/2021
   author: softchris
   ms.author: chnoring
