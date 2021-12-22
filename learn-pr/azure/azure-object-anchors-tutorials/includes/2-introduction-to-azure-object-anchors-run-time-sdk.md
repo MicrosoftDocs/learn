@@ -1,13 +1,14 @@
-In this tutorial series, you will be using the sample application to get started on Azure Object Anchors. Before you get started with the sample application that can detect objects in the real world, this chapter will provide you with a high-level overview of Object Anchors Runtime SDK, which is used to detect objects using Object Anchors model.
+In this tutorial series, you will be using a sample application that uses Azure Object Anchors to detect objects in the physical world. Before you get started with the sample application, this chapter will provide you with a high-level overview of **Object Anchors Runtime SDK**, which is used to detect objects using Object Anchors model.
 
 How convenient would it be to have a resource to help detect objects using visual and geometrics information only? Object Anchors Runtime SDK does just that; it uses parameters to determine how an object can be detected by the object observer and detects the required objects.
+
 The main components are:
 
 * **ObjectObserver** that detects and tracks multiple object instances simultaneously based on a list of user-provided object models.
 * **ObjectQuery** that stores the parameters associated with the Object Model.
 * **Diagnostic Session** for offline debugging.
 
-Brief walk-through of the Object Anchors Runtime SDK will help you understand how an object is represented and the various components used.
+Brief walk-through of the Azure Object Anchors Runtime SDK will help you understand how an object is represented and the various components used.
 
 ## ObjectModel
 
