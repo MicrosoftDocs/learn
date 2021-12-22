@@ -34,20 +34,20 @@ If you're using message routing and the fallback route is enabled, all messages 
 
 You can modify the retention time, either programmatically using the IoT Hub resource provider REST APIs, or with the Azure portal.
 
-IoT Hub exposes the messages/events built-in endpoint for your back-end services to read the device-to-cloud messages received by your hub. This endpoint is Event Hub-compatible, which enables you to use any of the mechanisms the Event Hubs service supports for reading messages.
+IoT Hub exposes the messages/events built-in endpoint for your back-end services to read the device-to-cloud messages received by your hub. This endpoint is Event Hubs-compatible, which enables you to use any of the mechanisms the Event Hubs service supports for reading messages.
 
 ## Accessing the Built-in endpoint
 
 Some product integrations and Event Hubs SDKs are aware of IoT Hub and let you use your IoT hub service connection string to connect to the built-in endpoint.
 
-When you use Event Hubs SDKs or product integrations that are unaware of IoT Hub, you need an Event Hub-compatible endpoint and Event Hub-compatible name. You can retrieve these values from IoT hub service in the Azure portal by opening the **Built-in endpoints** blade.
+When you use Event Hubs SDKs or product integrations that are unaware of IoT Hub, you need an Event Hubs-compatible endpoint and Event Hubs-compatible name. You can retrieve these values from IoT hub service in the Azure portal by opening the **Built-in endpoints** blade.
 
-The Events section contains the following values: Partitions, Event Hub-compatible name, Event Hub-compatible endpoint, Retention time, and Consumer groups.
+The Events section contains the following values: Partitions, Event Hubs-compatible name, Event Hubs-compatible endpoint, Retention time, and Consumer groups.
 
-:::image type="content" source="../media/m04-l02-built-in-endpoints-event-hub-compatible-5d025c6e.png" alt-text="Screen shot that shows the Events section for the Built-in endpoint properties for IoT hub.":::
+:::image type="content" source="../media/m04-l02-built-in-endpoints-event-hub-compatible-5d025c6e.png" alt-text="Screenshot that shows the Events section for the Built-in endpoint properties for IoT hub.":::
 
 
-In the portal, the Event Hub-compatible endpoint field contains a complete Event Hubs connection string that looks like: `Endpoint=sb://abcd1234namespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=keykeykeykeykeykey=;EntityPath=iothub-ehub-abcd-1234-123456`. If the SDK you're using requires other values, then they would be:
+In the portal, the Event Hubs-compatible endpoint field contains a complete Event Hubs connection string that looks like: `Endpoint=sb://abcd1234namespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=keykeykeykeykeykey=;EntityPath=iothub-ehub-abcd-1234-123456`. If the SDK you're using requires other values, then they would be:
 
 :::row:::
   :::column:::
@@ -83,9 +83,9 @@ In the portal, the Event Hub-compatible endpoint field contains a complete Event
 :::row-end:::
 
 
-You can then use any shared access policy that has the ServiceConnect permissions to connect to the specified Event Hub.
+You can then use any shared access policy that has the ServiceConnect permissions to connect to the specified Event Hubs.
 
-The SDKs you can use to connect to the built-in Event Hub-compatible endpoint that IoT Hub exposes include:
+The SDKs you can use to connect to the built-in Event Hubs-compatible endpoint that IoT Hub exposes include:
 
 :::row:::
   :::column:::
@@ -107,7 +107,6 @@ The SDKs you can use to connect to the built-in Event Hub-compatible endpoint th
   :::column-end:::
   :::column:::
     [.NET SDK link](https://github.com/Azure/azure-event-hubs-dotnet)
-
   :::column-end:::
   :::column:::
     [Quickstart](/azure/iot-develop/quickstart-send-telemetry-iot-hub?pivots=programming-language-csharp)
@@ -160,7 +159,7 @@ The SDKs you can use to connect to the built-in Event Hub-compatible endpoint th
 :::row-end:::
 
 
-The product integrations you can use with the built-in Event Hub-compatible endpoint that IoT Hub exposes include:
+The product integrations you can use with the built-in Event Hubs-compatible endpoint that IoT Hub exposes include:
 
  -  Azure Functions.
  -  Azure Stream Analytics.
