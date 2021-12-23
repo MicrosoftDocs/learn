@@ -5,7 +5,7 @@ metadata:
   description: In this module, you'll learn about managing secrets in your Java applications on Azure. You'll explore best practices like Zero Trust and Zero Secrets, and see how to apply them to a hands-on Java project using Azure Key Vault.
   author: judubois
   ms.author: judubois
-  ms.date: 09/30/2021
+  ms.date: 12/23/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=cloud_advocates

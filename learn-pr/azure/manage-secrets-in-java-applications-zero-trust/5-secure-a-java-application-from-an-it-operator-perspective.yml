@@ -6,7 +6,7 @@ metadata:
   description: In this unit, you will create an Azure Key Vault instance and use it to manage secrets.
   author: judubois
   ms.author: judubois
-  ms.date: 09/30/2021
+  ms.date: 12/23/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
