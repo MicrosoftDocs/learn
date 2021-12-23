@@ -37,7 +37,7 @@ You'll use the `bin` operator, which groups values into certain bin sizes. The s
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The *value* will be the *StartTime* of the event, with the *roundTo* bin size of *7d*, which will give you aggregate counts of events per week. Finally, you'll *render* the data as a *columnchart* to create a histogram.
+The *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. You'll aggregate the count using the above bin to give you a counts of events per week. Finally, you'll *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
