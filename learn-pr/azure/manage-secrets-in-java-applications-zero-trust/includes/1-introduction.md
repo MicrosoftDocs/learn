@@ -19,4 +19,4 @@ By the end of this module, you'll:
 
 - Familiarity with developing and running Java applications.
 - Beginner-level experience with cloud infrastructure.
-- Intermediate-level familiarity with command-line tools, specifically the Azure CLI and Azure-specific terminology.
+- Intermediate-level familiarity with command-line tools, specifically the Azure CLI, and Azure-specific terminology.
