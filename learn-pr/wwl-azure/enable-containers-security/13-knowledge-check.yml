@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2021
+  ms.date: 12/23/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "Create a AKS network policy"
       isCorrect: true
-      explanation: "Create a AKS network policy. The principle of least privilege should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. The Network Policy feature in Kubernetes defines rules for ingress and egress traffic between pods in a cluster."
+      explanation: "Create a AKS network policy. The principle of least privilege should be applied to how traffic can flow between pods in an Azure Kubernetes Service (AKS) cluster. The Network Policy feature in Kubernetes defines rules for ingress and egress traffic between pods in a cluster."
     - content: "Create an application gateway"
       isCorrect: false
-      explanation: "{Use a network policy to block traffic between pods.}"
+      explanation: "Use a network policy to block traffic between pods."
     - content: "Create a Azure firewall"
       isCorrect: false
       explanation: "The Azure Firewall does not block access between pods."
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "ClusterRoles and RoleBindings"
       isCorrect: false
-      explanation: "Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
+      explanation: "Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
     - content: "ClusterRoles and ClusterRoleBindings"
       isCorrect: true
-      explanation: "ClusterRole, ClusterRoleBinding. Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
+      explanation: "ClusterRole, ClusterRoleBinding. Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
     - content: "Roles and RoleBindings"
       isCorrect: false
-      explanation: "Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
+      explanation: "Roles are used to grant permissions within a namespace. To grant permissions across the entire cluster, or to cluster resources outside a given namespace, instead use a ClusterRole. Once roles are defined to grant permissions to resources, assign those Kubernetes RBAC permissions with a RoleBinding. Role bindings are used to assign roles for a given namespace. To bind roles across the entire cluster, or to cluster resources outside a given namespace, instead use ClusterRoleBindings."
