@@ -33,10 +33,10 @@ products:
 units:
 - learn.manage-secrets-in-java-applications-zero-trust.1-introduction
 - learn.manage-secrets-in-java-applications-zero-trust.2-what-are-secrets-and-how-to-handle-them-in-java
-- learn.manage-secrets-in-java-applications-zero-trust.3-coding-a-java-application-that-uses-secrets
+- learn.manage-secrets-in-java-applications-zero-trust.3-code-a-java-application-that-uses-secrets
 - learn.manage-secrets-in-java-applications-zero-trust.4-introduction-to-azure-key-vault
-- learn.manage-secrets-in-java-applications-zero-trust.5-securing-a-java-application-from-an-it-operator-perspective
-- learn.manage-secrets-in-java-applications-zero-trust.6-securing-a-java-application-from-a-java-developer-perspective
+- learn.manage-secrets-in-java-applications-zero-trust.5-secure-a-java-application-from-an-it-operator-perspective
+- learn.manage-secrets-in-java-applications-zero-trust.6-secure-a-java-application-from-a-java-developer-perspective
 - learn.manage-secrets-in-java-applications-zero-trust.7-knowledge-check
 - learn.manage-secrets-in-java-applications-zero-trust.8-summary
 badge:
