@@ -18,7 +18,7 @@ You can also determine the number of items in a list by using `len`. So you coul
 > [!NOTE]
 > Python has many types that can be looped over. These types are known as *iterables*.
 
-Python lists are iterable, and they can be used with a `for` loop. You use a `for` loop with iterables where you will loop a known number of times, once for each item in the iterable.
+Python lists are iterable, and they can be used with a `for` loop. You use a `for` loop with iterables where you'll loop a known number of times, once for each item in the iterable.
 
 ## About `for` loops
 
@@ -53,4 +53,4 @@ print("Blast off!! 🚀")
 ```
 
 > [!NOTE]
-> Most Python code uses four spaces as the unit of whitespace. To save pressing the space bar four times, most editors have a Tab key shortcut that inserts four spaces.
+> Most Python code uses four spaces as the unit of whitespace. To save having to press the space bar four times, most editors have a Tab key shortcut that inserts four spaces.
