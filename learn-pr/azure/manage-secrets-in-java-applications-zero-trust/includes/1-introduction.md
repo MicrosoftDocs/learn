@@ -20,5 +20,6 @@ By the end of this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with developing and running Java applications
-- Beginner-level experience with cloud infrastructure
+- Familiarity with developing and running Java applications.
+- Beginner-level experience with cloud infrastructure.
+- Intermediate-level familiarity with command-line tools, specifically the Azure CLI and Azure-specific terminology.
