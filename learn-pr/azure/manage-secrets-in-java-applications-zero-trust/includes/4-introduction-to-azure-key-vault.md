@@ -1,4 +1,4 @@
-[Azure Key Vault](https://azure.microsoft.com/services/key-vault/) is a Secrets engine provided by
+Azure Key Vault is a secrets engine provided by
 Azure. It's integrated with all major Azure services, making it easy to manage secrets with Azure
 App Services, Azure Kubernetes Services, or Azure Spring Cloud.
 
