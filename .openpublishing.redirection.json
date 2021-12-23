@@ -10709,6 +10709,11 @@
       "source_path": "learn-pr/wwl-azure/get-started-cloud-storage-for-iot/3-common-storage-options-for-azure-iot-solutions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-cloud-storage-for-iot/3-common-storage-options-azure-iot-solutions",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/consider-message-processing-options-constraints/4-iot-hub-quotas-throttling.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/consider-message-processing-options-constraints/4-iot-hub-quotas-throttle",
+      "redirect_document_id": true
     }
   ]
 }
