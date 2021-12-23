@@ -10714,6 +10714,16 @@
       "source_path": "learn-pr/wwl-azure/consider-message-processing-options-constraints/4-iot-hub-quotas-throttling.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/consider-message-processing-options-constraints/4-iot-hub-quotas-throttle",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-time-series-insights/4-configure-tsi-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/4-configure-time-series-insights-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/examine-azure-time-series-insights/5-tsi-connection-to-iot-hub.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/5-time-series-insights-connection-to-iot-hub",
+      "redirect_document_id": true
     }
   ]
 }
