@@ -2,11 +2,11 @@ To present Azure Functions to users as parts of a single API, you can add them t
 
 In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into single API.
 
-In this exercise, you will create a new API Management instance and then add a Product Details function to it.
+In this exercise, you'll create a new API Management instance and then add a Product Details function to it.
 
 ## Create functions
 
-In the following steps, you will add an Azure Function app to Azure API Management. Later, you will add a second function app to the same API Management instance to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
+In the following steps, you'll add an Azure Function app to Azure API Management. Later, you'll add a second function app to the same API Management instance to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
 
 1. To clone the functions project, run the following command in Azure Cloud Shell on the right.
 
@@ -63,7 +63,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. Select **Close** to close the Input Output tabs for Code + Test.
 
-1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain. Copy and save the URL for later in this exercise.
+1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain.
 
 > [!NOTE]
 > You can use this URL to test the function in your browser. The URL requires an input; append the query string `&id=1` to request details about the first item in your product collection.
@@ -93,12 +93,14 @@ After the function app has been deployed and tested, let's export it as an API u
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
     | Region | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
-    | Resource name | The default value ProductFunctionNNNNNNNNNN-apim should be OK. The name must be unique within the **azure-api.net** domain. |
+    | Resource name | OnlineStore |
     | Organization name | OnlineStore |
-    | Administrator email | Enter your email address. |
+    | Administrator email | Enter an email address. |
     | Pricing tier | Consumption (99.95% SLA) |
 
-1. Select **Review + Create**. When the validation completes, select **Create** to provision a linked API Management instance. Allow several minutes for the export to complete.
+1. Select **Next: Monitoring** and clear the **Application Insights** option.
+
+1. Select **Review + Create**. When the validation completes, select **Create** to create a linked API Management instance. Allow several minutes for the export to complete.
 
 1. When the API Management instance is deployed, select **Link API**.
 
@@ -114,7 +116,7 @@ After the function app has been deployed and tested, let's export it as an API u
 
 1. Change the **API URL suffix** value to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The **Design** tab for **API Management** pane for your function app appears.
 
-This exercise shows that you were able to define your API, all from within the Azure Function App service.
+This exercise shows that you can define your API, all from within the Azure Function App service.
 
 ## Test the OnlineStore products endpoint
 
