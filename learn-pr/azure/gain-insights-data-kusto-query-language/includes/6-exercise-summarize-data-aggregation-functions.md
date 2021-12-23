@@ -1,6 +1,6 @@
 A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007, and visualized the results with different kinds of graphs. Here, you'll explore additional aggregate functions to describe the data.  
 
-## 
+## Characterize storm types using the `avg()` operator
 
 In the last unit, you looked at the number of storms as a function of time and the damage caused by these storms. This doesn't tell us anything about the individual storms. Let's look at other statistics that can help characterize the storms.
 
@@ -23,20 +23,24 @@ The following query creates a calculated column using the `extend` operator to a
     You should get results that look like the following image:
 
     :::image type="content" source="../media/6-avg.png" alt-text="Screenshot of avg aggregate function results.":::
-    
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUhdzECg2ILk2FpEoFsIEhlQWpIEX5RSUgMaCSeIgSANaUj+R0AAAA" target="_blank"> Click to run query</a>
+## Find extremes using `min()` and `max()`
+
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqQm5ihQZESlNHITczD8FJLEuHcRSSKhXAtodUFqSCtOcXlYDEgJrjIUoAF4POAqEAAAA=" target="_blank"> Click to run query</a>
 
 ```kusto
 StormEvents
 | extend damage = DamageProperty + DamageCrops
-| summarize max(damage) by EventType
+| where damage > 0
+| summarize max(damage), min(damage), avg(damage) by EventType
 | sort by max_damage
 ```
 
 :::image type="content" source="../media/6-max.png" alt-text="Screenshot of max aggregate function results.":::
 
 <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank"> Click to run query</a>
+
+## Use the `percentiles()` operator
 
 ```kusto
 StormEvents
