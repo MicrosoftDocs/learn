@@ -1,15 +1,12 @@
-All applications need to store secrets: they could be a database password,
-an access token to a protected resource, or a private key used to access
-encrypted data. Those keys are one the most critical assets of your company,
-and hackers will try to access them: what are the best practices to manage
-them, and how can you apply those practices to a real-life Java application?
+Managing secrets is a critical step in securing your Java applications.
 
-This module will introduce the concepts of Zero Trust and Zero Secrets,
-where your Java application won't manage those secrets at all. It will make
-the task of attackers much more difficult.
+Suppose that you are building a new e-commerce website for your company. This 
+website will access a database, connect to third-party APIs, and will even
+encrypt some personal end-user data. For all of those activities, your application
+will need to store some sensitive keys, called secrets. Those secrets are some the most critical assets of your company, and hackers will try to access them.
 
-Using Azure Key Vault, you'll learn how to apply those principles to a
-Java application that we'll correctly secure throughout this module.
+In this module, you'll create an application that manages such secrets. We'll introduce the concepts of Zero Trust and Zero Secrets, where your Java application won't manage those secrets at all. It will make the task of attackers much more difficult. We'll see those
+concepts in action, both from an IT operator perspective, and from a developer perspective.
 
 ## Goals
 
