@@ -1,11 +1,13 @@
-In our scenario we wanted to create an application to prompt a user for a list of planets, store those planets, and display them.
+In this module, you created an application that prompts users to enter a list of planet names, stores those planet names, and then displays them.
 
-As we didn't know how many planets the user would enter, we used a `while` loop. The `while` loop is used to run a block of code while a condition remains true. We stored each planet in a list.
+Because you didn't know how many planets users would enter, you used a `while` loop. You use `while` loops to run a block of code while a condition remains true. 
 
-Once the data was in a list, we used a `for` loop to iterate over it. `for` loops are used with lists and other iterables, where we will run code a known number of times - once for each item in the collection.
+You stored each planet name in a list.
+
+After the planet list was created, you used a `for` loop to iterate over it. You use `for` loops with lists and other iterables, to run code a known number of times, once for each item in the list of planet names.
 
 In this module, you learned to:
 
-- identify when to use a for or while
-- use `while` to run a task multiple times
-- use `for` to loop over list data
+- Identify when to use either a `for` loop or `while` loop.
+- Use a `while` loop to run a task multiple times, as long as a certain condition remains true.
+- Use a `for` loop to loop over list data.

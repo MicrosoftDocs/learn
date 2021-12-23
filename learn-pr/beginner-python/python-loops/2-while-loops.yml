@@ -2,14 +2,14 @@
 uid: learn.beginner-python.python-loops.while-loops
 title: Introducing while loops
 metadata:
-  title: While loops in Python # user input: module title for browser tab and search results
-  description: While loops are designed for running code an unknown number of times. They start with a condition, and run while that condition is true. # user input: a description for site search and SEO
+  title: Use 'while' loops in Python
+  description: In this unit, you learn how 'while' loops run code an unspecified number of times. They start with a condition and run while that condition is true.
   ms.date: 12/07/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 1 
 content: |
   [!include[](includes/2-while-loops.md)]

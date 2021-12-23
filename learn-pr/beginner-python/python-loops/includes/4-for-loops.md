@@ -1,11 +1,11 @@
 
-Lists store any type of Python values such as strings or numbers:
+In Python, lists can store any type of value, such as strings or numbers:
 
 ```python
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 ```
 
-You can access any item in a list by putting the _index_ in square brackets after the variable name. Indexes start from 0:
+You can access any item in a list by enclosing the _index_ in brackets (`[]`) after the variable name. Indexes start from 0:
 
 ```python
 print("The first planet is ", planets[0])
@@ -13,16 +13,16 @@ print("The second planet is ", planets[1])
 print("The third planet is ", planets[2])
 ```
 
-You can also determine the number of items in a list by using `len`. So you could use a `while` loop and a counter to loop or iterate over each item in the list. Because this is such a common operation, Python provides `for` loops which can be used to iterate over lists.
+You can also determine the number of items in a list by using `len`. So you could use a `while` loop and a counter to loop or iterate over each item in the list. Because this is such a common operation, Python provides `for` loops, which you can use to iterate over lists.
 
 > [!NOTE]
-> Python has many types that can be looped over. These types are known as **iterables**.
+> Python has many types that can be looped over. These types are known as *iterables*.
 
-Python lists are iterable, and can be used with a `for` loop. A `for` loop is used with iterables where you will loop a known number of times - once for each item in the iterable.
+Python lists are iterable, and they can be used with a `for` loop. You use a `for` loop with iterables where you will loop a known number of times, once for each item in the iterable.
 
-## For loops
+## About `for` loops
 
-Here is an example for-loop counting down from 4 to 0:
+Here is an example `for` loop that counts down from 4 to 0:
 
 ```python
 countdown = [4, 3, 2, 1, 0]
@@ -31,15 +31,15 @@ for number in countdown:
 print("Blast off!! 🚀")
 ```
 
-The for-loop is a statement with five important parts:
+The `for` loop is a statement with five important parts:
 
-- The word `for` followed by a space.
+- The word `for`, followed by a space.
 - The variable name you want to create for each value in the sequence (`number`).
-- The word `in` surrounded by spaces.
-- The name of the list (`countdown`), or iterable you want to loop over following by a colon (`:`).
+- The word `in`, surrounded by spaces.
+- The name of the list (`countdown`, in the preceding example), or iterable that you want to loop over, followed by a colon (`:`).
 - The code you want to run for each item in the iterable, separated by nested whitespace.
 
-Lets change that code to wait for 1 second between each number by using the `sleep()` function:
+Let's change that code to wait for one second between each number by using the `sleep()` function:
 
 ```python
 from time import sleep
@@ -53,4 +53,4 @@ print("Blast off!! 🚀")
 ```
 
 > [!NOTE]
-> Most Python code uses 4 spaces as the unit of whitespace. To save pressing space 4 times, most editors have a shortcut for the **Tab** key to insert 4 spaces.
+> Most Python code uses four spaces as the unit of whitespace. To save pressing the space bar four times, most editors have a Tab key shortcut that inserts four spaces.

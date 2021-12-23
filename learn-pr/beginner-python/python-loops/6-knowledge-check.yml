@@ -3,8 +3,8 @@ uid: learn.beginner-python.python-loops.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: Knowledge check - For-loops
-  description: Check your knowledge! Python for-loops.
+  title: Knowledge check
+  description: Check your knowledge about Python 'for' loops.
   ms.date: 12/07/2021
   author: softchris
   ms.author: chnoring
@@ -15,25 +15,25 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "What statement would loop over the sequence **collection** and assign the variable **item**?"
+  - content: "What statement would loop over the sequence `collection` and assign the variable `item`?"
     choices:
     - content: "for each item in collection:"
       isCorrect: false
-      explanation: "Incorrect. Python uses for, not for each. The correct answer is `for item in collection:`"
+      explanation: "Incorrect. Python uses the word 'for', not 'for each'. The correct answer is `for item in collection:`."
     - content: "for item in collection:"
       isCorrect: true
-      explanation: "Correct! for variable in sequence is the right syntax."
+      explanation: "Correct! Using the 'for' variable in the sequence is the right syntax."
     - content: "for collection in item:"
       isCorrect: false
-      explanation: "Incorrect. The variable to assign comes first and the collection comes after the in keyword. The correct answer is `for item in collection:`"
-  - content: "What is the correct statement to unpack variables named **left** and **right** from the list **turns**"
+      explanation: "Incorrect. The variable to assign comes first, and 'collection' comes after the 'in' keyword. The correct answer is `for item in collection:`."
+  - content: "What is the correct statement to use to unpack variables named `left` and `right` from the list `turns`?"
     choices:
-    - content: "for left, right in turns:"
+    - content: "`for left, right in turns:`"
       isCorrect: true
       explanation: "Correct! Variables are separated by commas."
-    - content: "for left and right in turns:"
+    - content: "`for left and right in turns:`"
       isCorrect: false
-      explanation: "Incorrect. Variables are separated by commas in an unpacking sequence, not the and keyword."
-    - content: "for [left, right] in turns:"
+      explanation: "Incorrect. Variables are separated by commas in an unpacking sequence, not the `and` keyword."
+    - content: "`for [left, right] in turns:`"
       isCorrect: false
       explanation: "Incorrect. The variables to unpack don't need to be surrounded by brackets."
