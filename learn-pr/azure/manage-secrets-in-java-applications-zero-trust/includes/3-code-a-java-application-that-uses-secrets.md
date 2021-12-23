@@ -5,17 +5,19 @@ application infrastructure, and then configure the Java application to use.
 
 ## Create the application infrastructure
 
-You'll use Azure CLI to create the following resources:
+In this exercise, you'll use Azure CLI to create the following resources:
 
 - An Azure resource group, that will contain all the resources for your application.
 - A PostgreSQL database server.
 - An Azure Spring Cloud cluster, and a Spring Cloud application running inside this cluster.
 
-You'll need to provide some environment variables at the beginning of the script, that should be unique across Azure.
+You need to provide some environment variables at the beginning of the script, that should be unique across Azure.
 We recommend you use your username and some random characters to avoid naming conflicts.
 
-You'll also need to provide your local IP address to access the database from your local computer. This IP address should
+You also need to provide your local IP address to access the database from your local computer. This IP address should
 be an IPv4 Address. If you don't know your local IP address, you can go to the following website: https://www.whatismyip.com/
+
+Set the following environment variables:
 
 ```bash
 AZ_RESOURCE_GROUP=<YOUR_UNIQUE_RESOURCE_GROUP_NAME>
