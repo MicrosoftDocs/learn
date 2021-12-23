@@ -21,9 +21,9 @@ quiz:
         - content: "Store them in the application source code."
           isCorrect: true
           explanation: "You're correct. Storing secrets in the source code means that anybody with access to your code will know your secrets."
-        - content: "Use a Secrets engine."
+        - content: "Use a Secrets store."
           isCorrect: false
-          explanation: "Incorrect. A Secrets engine, like Azure Key Vault, is the best solution for storing your secrets."
+          explanation: "Incorrect. A Secrets store, like Azure Key Vault, is the best solution for storing your secrets."
         - content: "Store them using Kubernetes secrets."
           isCorrect: false
           explanation: "Incorrect. Kubernetes secrets are commonly used with Kubernetes, and aren't the less secure solution."

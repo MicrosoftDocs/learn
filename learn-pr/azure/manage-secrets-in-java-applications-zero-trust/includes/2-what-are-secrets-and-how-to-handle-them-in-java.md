@@ -51,12 +51,12 @@ your cloud provider.
 While Kubernetes secrets are a good solution for Kubernetes, they're also limited to Kubernetes, and lack advanced management capabilities, depending
 on the tools used to manage the Kubernetes infrastructure.
 
-## Using a secrets engine
+## Using a Secrets store
 
-A secrets engine, like Hashicorp Vault or Azure Key Vault, is a specialized software for managing secrets. It offers a rich management
+A Secrets store, like Hashicorp Vault or Azure Key Vault, is a specialized software for managing secrets. It offers a rich management
 system to authorize users, rotate security keys, and validates which application can access which secret.
 
 They also provide an external API, so they can be used on any system. For example, you can use Azure Key Vault on all Azure services,
 including Virtual Machines, Azure App Services, Azure Kubernetes Services, or Azure Spring Cloud.
 
-A Secrets engine is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.
+A Secrets store is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.
