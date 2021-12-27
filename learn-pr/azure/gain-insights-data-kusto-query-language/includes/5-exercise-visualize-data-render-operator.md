@@ -25,7 +25,7 @@ In this example, you'll visualize the previous query using a column chart.
  
     :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with column chart results. There is a red box around the legend." lightbox="../media/5-column-chart.png":::
 
-1. Notice the legend to the right of the column chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this column in the visualization. You should get a graph that looks like the following image:
+1. Notice the legend to the right of the column chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this column in the column chart. You should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
 
@@ -37,7 +37,7 @@ You'll use the `bin` operator, which groups values into certain bin sizes. The s
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. You'll aggregate the count using the above bin to give you a counts of events per week. Finally, you'll *render* the data as a *columnchart* to create a histogram.
+The *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a counts of events per week. Finally, *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
@@ -74,4 +74,15 @@ In the previous query, you looked at the number of storm events over time. Now l
     
     :::image type="content" source="../media/5-bin-2.png" alt-text="Screenshot of damage column chart binned by week.":::
 
-1. Take a look at the results. These damage values represent storms in all states. How could you write a query that would represent only select states?  
+The above query shows you how damage as a function of time. Another way to compare the damage is by event type.
+
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
+
+```kusto
+StormEvents
+| extend damage = DamageProperty + DamageCrops
+| summarize sum(damage) by EventType
+| render piechart
+```
+
+:::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
