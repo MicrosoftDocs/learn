@@ -1,6 +1,10 @@
-Now that you have a good understanding of tracebacks and handling exceptions, let's go through raising exceptions. When writing code, you may know already of a situation that could cause an error condition. In these situations, it's useful to raise exceptions that let other code realize what the problem is. Raising exceptions may also help in decision making for other code. As we've seen before, depending on the error, code can make smart decisions to solve, workaround, or completely ignore a problem.
+Now that you have a good understanding of tracebacks and handling exceptions, let's go through raising exceptions. 
 
-Astronauts limit their water usage to about 11 liters per day. Let's create a function that depending on the number of astronauts, can calculate how much water will be left after a day or more:
+You might already know of a situation that could cause an error condition when you're writing code. In these situations, it's useful to raise exceptions that let other code realize what the problem is. 
+
+Raising exceptions can also help in decision making for other code. As we've seen before, depending on the error, code can make smart decisions to solve, work around, or ignore a problem.
+
+Astronauts limit their water usage to about 11 liters per day. Let's create a function that, depending on the number of astronauts, can calculate how much water will be left after a day or more:
 
 ```python
 def water_left(astronauts, water_left, days_left):
@@ -10,14 +14,14 @@ def water_left(astronauts, water_left, days_left):
     return f"Total water left after {days_left} days is: {total_water_left} liters"
 ```
 
-Try it out with 5 astronauts, 100 liters of water left, and 2 more days to go:
+Try it out with five astronauts, 100 liters of water left, and two more days to go:
 
 ```python
 >>> water_left(5, 100, 2)
 'Total water left after 2 days is: -10 liters'
 ```
 
-That's not very useful, because a deficit in liters should be an error. Then, the navigation system could use to alert the astronauts that there isn't going to be enough water left for everyone in two days. If you are an engineer programming the navigation system, you could raise an exception in the `water_left()` function to alert of the error condition:
+That's not very useful, because a deficit in liters should be an error. Then, the navigation system could alert the astronauts that there isn't going to be enough water left for everyone in two days. If you're an engineer who's programming the navigation system, you could raise an exception in the `water_left()` function to alert for the error condition:
 
 ```python
 def water_left(astronauts, water_left, days_left):
@@ -39,7 +43,7 @@ Traceback (most recent call last):
 RuntimeError: There is not enough water for 5 astronauts after 2 days!
 ```
 
-In the navigation system, the code used to signal the alert can now use the `RuntimeError` to alert:
+In the navigation system, the code for signaling the alert can now use `RuntimeError` to alert:
 
 ```python
 try:
@@ -64,11 +68,11 @@ The error from `TypeError` is not very friendly in the context of what the funct
 def water_left(astronauts, water_left, days_left):
     for argument in [astronauts, water_left, days_left]:
         try:
-            # if argument is an int, the following operation will work
+            # If argument is an int, the following operation will work
             argument / 10
         except TypeError:
-            # a TypError will only be raised if it isn't the right type. Re-raise
-            # the same exception but with a better error message:
+            # TypError will be raised only if it isn't the right type 
+            # Raise the same exception but with a better error message
             raise TypeError(f"All arguments must be of type int, but received: '{argument}'")
     daily_usage = astronauts * 11
     total_usage = daily_usage * days_left
@@ -86,7 +90,7 @@ Traceback (most recent call last):
   File "<stdin>", line 5, in water_left
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
 
-During handling of the above exception, another exception occurred:
+During handling of the preceding exception, another exception occurred:
 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>

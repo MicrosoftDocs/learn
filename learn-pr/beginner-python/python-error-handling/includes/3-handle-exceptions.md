@@ -1,13 +1,12 @@
-As we've mentioned before, when you first find exceptions that end up showing large tracebacks as output, you might be tempted to catch every error to prevent that from happening. 
+When you first find exceptions that show large tracebacks as output, you might be tempted to catch every error to prevent that from happening. 
 
-If you are in a mission to Mars, what could you do if a text on the navigation system reads _"an error occurred"_? With no other information or context, just a blinking red light with that text. As a developer, it's useful to put yourself on the other side of the program: what can a user do when there's an error? 
+If you're in a mission to Mars, what could you do if a text on the navigation system reads _"an error occurred"_? Imagine that there's no other information or context, just a blinking red light with the error text. As a developer, it's useful to put yourself on the other side of the program: what can a user do when there's an error? 
 
-> [!NOTE]
-> Although we cover how to handle exceptions by catching them, you should be aware that it is not necessary to catch exceptions all of the time. Sometimes it is useful to let exceptions be raised so other callers can deal with the errors. 
+Although this module covers how to handle exceptions by catching them, it's not necessary to catch exceptions all the time. Sometimes it's useful to let exceptions be raised so other callers can deal with the errors. 
 
-## Try and Except blocks
+## Try and except blocks
 
-Let's use the navigator example to create code that opens configuration files for the Mars mission. Configuration files can have all kinds of problems with them so it's critical to report accurate problems when they come up. We know that if a file or directory doesn't exist, a `FileNotFoundError` gets raised. If we want to handle that exception, we can do that with a _try and except_ block:
+Let's use the navigator example to create code that opens configuration files for the Mars mission. Configuration files can have all kinds of problems, so it's critical to report problems accurately when they come up. We know that if a file or directory doesn't exist, `FileNotFoundError` is raised. If we want to handle that exception, we can do that with a _try and except_ block:
 
 ```python
 >>> try:
@@ -18,9 +17,9 @@ Let's use the navigator example to create code that opens configuration files fo
 Couldn't find the config.txt file!
 ```
 
-After the `try` keyword, you add the code that has the potential to cause an exception. Next, you add the `except` keyword along the possible exception followed by any code that needs to run when that condition happens. Since _config.txt_ doesn't exist in my system, Python prints that the config file is not there. The try/except block along with a helpful message prevents a traceback and still informs the user about the problem.
+After the `try` keyword, you add code that has the potential to cause an exception. Next, you add the `except` keyword along with the possible exception, followed by any code that needs to run when that condition happens. Because _config.txt_ doesn't exist in the system, Python prints that the configuration file is not there. The try/except block, along with a helpful message, prevents a traceback and still informs the user about the problem.
 
-Although a file that doesn't exist is common, it isn't the only error you may find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_ that will have code that finds and reads the navigation system configuration file:
+Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_. The file has code that finds and reads the navigation system's configuration file:
 
 ```python
 def main():
@@ -34,7 +33,7 @@ if __name__ == '__main__':
     main()
 ```
 
-Next, remove the _config.txt_ file and create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this: 
+Next, remove the _config.txt_ file and create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this one: 
 
 ```
 $ python config.py
@@ -46,7 +45,7 @@ Traceback (most recent call last):
 IsADirectoryError: [Errno 21] Is a directory: 'config.txt'
 ```
 
-An un-useful way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand _why_ catching all exceptions is problematic, update the `main()` function to catch all exceptions possible:
+An unuseful way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand _why_ catching all exceptions is problematic, try it by updating the `main()` function:
 
 ```python
 def main():
@@ -63,13 +62,13 @@ $ python config.py
 Couldn't find the config.txt file!
 ```
 
-The problem now is that the error message is incorrect: the file does exist, it just has different permissions and can't be read by Python. When dealing with software errors, it can be very frustrating to have errors that:
+The problem now is that the error message is incorrect. The file does exist, but it has different permissions and can't be read by Python. When you're dealing with software errors, it can be very frustrating to have errors that:
 
-- Don't indicate what the real problem is
-- Give output that doesn't match the actual problem
-- Does not hint what can be done to fix it
+- Don't indicate what the real problem is.
+- Give output that doesn't match the actual problem.
+- Don't hint at what can be done to fix the problem.
 
-Let's fix this piece of code to accomplish all the frustrating problems listed. First, revert back to catching `FileNotFoundError`, and then add another `except` block to catch `PermissionError`:
+Let's fix this piece of code to address all these problems. Revert to catching `FileNotFoundError`, and then add another `except` block to catch `PermissionError`:
 
 ```python
 def main():
@@ -88,7 +87,7 @@ $ python config.py
 Found config.txt but couldn't read it
 ```
 
-Now delete the _config.txt_ file to ensure that the first except block will be reached instead:
+Now delete the _config.txt_ file to ensure that the first `except` block will be reached instead:
 
 ```
 $ rm -f config.txt
@@ -96,7 +95,7 @@ $ python config.py
 Couldn't find the config.txt file!
 ```
 
-When errors are of a similar nature and there is no need to handle them individually, you can group the exception together as one by using parentheses in the `except` line. For example, if the navigation system is under heavy loads and the filesystem becomes too busy, then it makes sense to catch `BlockingIOError` and `TimeOutError` together:
+When errors are of a similar nature and there's no need to handle them individually, you can group the exceptions together as one by using parentheses in the `except` line. For example, if the navigation system is under heavy loads and the file system becomes too busy, it makes sense to catch `BlockingIOError` and `TimeOutError` together:
 
 ```python
 def main():
@@ -111,9 +110,9 @@ def main():
 ```
 
 > [!TIP]
-> Even though you can group exceptions together, make sure you are always doing so when there is no need to handle them individually. Avoid grouping many exceptions together to provide a generalized error message.
+> Even though you can group exceptions together, do so only when there's no need to handle them individually. Avoid grouping many exceptions together to provide a generalized error message.
 
-If you need to access the error associated with the exception, you must update the `except` line to include the `as` keyword. This technique is useful if an exception is too generic and the error message can be useful:
+If you need to access the error that's associated with the exception, you must update the `except` line to include the `as` keyword. This technique is handy if an exception is too generic and the error message can be useful:
 
 ```python
 >>> try:
@@ -124,7 +123,7 @@ If you need to access the error associated with the exception, you must update t
 got a problem trying to read the file: [Errno 2] No such file or directory: 'mars.jpg'
 ```
 
-In this case, `as err` means that `err` becomes a variable with the exception object as a value. It then uses this value to print the error message associated with the exception. Another reason to use this technique is to access attributes of the error directly. For example, if catching a more generic `OSError`, which is the _parent exception_ of both `FilenotFoundError` and `PermissionError`, you could tell them apart by the `.errno` attribute:
+In this case, `as err` means that `err` becomes a variable with the exception object as a value. It then uses this value to print the error message that's associated with the exception. Another reason to use this technique is to access attributes of the error directly. For example, if you're catching a more generic `OSError` exception, which is the _parent exception_ of both `FilenotFoundError` and `PermissionError`, you can tell them apart by the `.errno` attribute:
 
 ```python
 >>> try:

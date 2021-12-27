@@ -3,7 +3,7 @@ uid: learn.beginner-python.python-error-handling.tracebacks
 title: Use tracebacks to find errors
 metadata:
   title: Use tracebacks to find errors
-  description: "Learn how to use traceback output to understand key information. Error output in tracebacks can help with debugging and fixing issues"
+  description: "Learn how to use traceback output to understand key information. Error output in tracebacks can help with debugging and fixing issues."
   ms.date: 12/10/2021
   author: softchris
   ms.author: chnoring

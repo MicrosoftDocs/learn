@@ -4,7 +4,7 @@ title: Exercise - Work with exceptions
 metadata:
   unitType: exercise
   title: Exercise - Work with exceptions
-  description: "In this exercise you will use exceptions for error reporting and making logical decisions when building code."
+  description: "In this exercise, you'll use exceptions for error reporting and for making logical decisions when building code."
   ms.date: 12/10/2021
   author: softchris
   ms.author: chnoring
