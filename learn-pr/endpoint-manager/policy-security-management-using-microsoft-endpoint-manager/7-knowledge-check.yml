@@ -40,7 +40,7 @@ quiz:
     - content: "Assign a policy to a device group when you want to have different policy settings for each user."
       isCorrect: false
       explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
-    - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a devices group."
+    - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a device group."
       isCorrect: true
       explanation: ""
     - content: "If you don't want to have any policy settings for the device, use a device group."
