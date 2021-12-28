@@ -32,7 +32,7 @@ A profile is a script that runs when you start a new session. Having a customize
    New-Item `
      -ItemType "file" `
      -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' `
-     -Path $Profile.CurrentUserCurrentHost -Force `
+     -Path $Profile.CurrentUserCurrentHost -Force
    ```
 
    The `-Force` switch will overwrite existing content, so be careful if you run this locally and have an existing profile.
