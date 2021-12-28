@@ -37,7 +37,7 @@ You can potentially save money by putting multiple apps into one App Service pla
 Isolate your app into a new App Service plan when:
 
 * The app is resource-intensive.
-* You want to scale the app independently from the other apps the existing plan.
+* You want to scale the app independently from the other apps in the existing plan.
 * The app needs resource in a different geographical region.
 
 This way you can allocate a new set of resources for your app and gain greater control of your apps.
