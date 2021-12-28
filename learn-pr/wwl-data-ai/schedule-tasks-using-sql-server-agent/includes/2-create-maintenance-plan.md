@@ -46,7 +46,7 @@ The image above shows the maintenance tasks addition screen. This is where you c
 
 **Update Statistics** - This task updates the column and index statistics that are used by SQL Server to build query execution plans. It is important that the statistics accurately reflect the data stored in tables so that the query optimizer can make the best decisions in building execution plans. This task allows you to choose which tables and indexes are scanned, and the percentage or number of rows scanned. The default sampling rate is acceptable for most objects, though you may wish to capture more detailed statistics for specific tables.
 
-**Cleanup History** - This task deletes history of backup and restore operations from the `msdb` database as well the history of SQL Server agent jobs. This task is used to manage the size of the `msdb` database.
+**Cleanup History** - This task deletes history of backup and restore operations from the `msdb` database, as well as the history of SQL Server agent jobs. This task is used to manage the size of the `msdb` database.
 
 **Execute SQL Server Agent Job** - This task is used to execute a user-defined SQL Server Agent job.
 

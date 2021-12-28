@@ -9,10 +9,23 @@ The concepts you learned about in this module include:
 
 Applying these concepts, techniques, and technologies help ensure that your final database design is efficient in terms of compute. This means that it can scale out as either the size of the database grows or the amount of throughput is increased to handle a higher volume of operations.
 
+Now that you have completed this module, you can:
+
+- Manage relationships between data entities by using advanced modeling and partitioning strategies.
+- Maintain the referential integrity of your data by using change feed.
+- Implement pre-aggregating and denormalizing data strategies to improve data-model performance and scaling.
+- Optimizing storage and compute by mixing entity types in a single container
+
 ## Learn more
 
-* [Understand the differences between NoSQL and relational databases](/azure/cosmos-db/relational-nosql)
-* [Data modeling in Azure Cosmos DB](/azure/cosmos-db/modeling-data)
-* [Model and partition data on Azure Cosmos DB by using a real-world example](/azure/cosmos-db/how-to-model-partition-example)
-* [Change feed in Azure Cosmos DB](/azure/cosmos-db/change-feed)
-* [Transactional batch operations in Azure Cosmos DB that use the .NET SDK](/azure/cosmos-db/transactional-batch)
+* [Understand the differences between NoSQL and relational databases][/azure/cosmos-db/relational-nosql]
+* [Data modeling in Azure Cosmos DB][/azure/cosmos-db/modeling-data]
+* [Model and partition data on Azure Cosmos DB by using a real-world example][/azure/cosmos-db/how-to-model-partition-example]
+* [Change feed in Azure Cosmos DB][/azure/cosmos-db/change-feed]
+* [Transactional batch operations in Azure Cosmos DB that use the .NET SDK][/azure/cosmos-db/transactional-batch]
+
+[/azure/cosmos-db/relational-nosql]: https://docs.microsoft.com/azure/cosmos-db/relational-nosql
+[/azure/cosmos-db/modeling-data]: https://docs.microsoft.com/azure/cosmos-db/modeling-data
+[/azure/cosmos-db/how-to-model-partition-example]: https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example
+[/azure/cosmos-db/change-feed]: https://docs.microsoft.com/azure/cosmos-db/change-feed
+[/azure/cosmos-db/transactional-batch]: https://docs.microsoft.com/azure/cosmos-db/transactional-batch

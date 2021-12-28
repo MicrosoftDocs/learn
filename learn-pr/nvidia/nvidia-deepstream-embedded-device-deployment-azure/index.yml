@@ -5,7 +5,8 @@ metadata:
   description: Learn how to publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware using Azure IoT Edge.
   ms.date: 11/09/2021
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: NVIDIA DeepStream embedded device deployment with Azure

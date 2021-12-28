@@ -10,9 +10,9 @@ In this unit, you'll:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
 
-1. Select **Add**.
+1. Select **Create**.
 
-1. Enter the following values to build the Log Analytics workspace. The Log Analytics workspace name must be globally unique. We suggest that you use your initials and numbers. For this module, *xxxx-log-analytics* will represent the unique name.
+1. Enter the following values to build the Log Analytics workspace. For the Log Analytics workspace name, we suggest that you use your initials and numbers. For this module, we will use the name *xxxx-log-analytics*.
 
     :::image type="content" source="../media/3-create-log-analytics-workspace.png" alt-text="Screenshot of declaring the Log Analytics resource name, placing everything in the Concierge Subscription for Learn, and selecting Review + Create.":::
 
@@ -27,7 +27,7 @@ In this unit, you'll:
 
 1. After the resource deploys, select **Go to resource**.
 
-1. Under **General**, select **Properties**.
+1. In the left menu under **General**, select **Properties**.
 
 1. Look for the access control mode, and select **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
 
@@ -67,7 +67,7 @@ In this unit, you'll:
 
 1. Select **SampleVM1**.
 
-1. Under **Monitoring**, select **Insights** > **Enable**.
+1. In the left menu under **Monitoring**, select **Insights** > **Enable**.
 
 1. For **Choose a Log Analytics Workspace**, select the Log Analytics workspace you created.
 
@@ -78,7 +78,7 @@ In this unit, you'll:
 1. Repeat the same steps for SampleVM2.
 
 1. Wait 5 to 10 minutes.
-1. Under **Monitoring** > **Insights**, select **Refresh** until you get results.
+1. In the left menu under **Monitoring** > **Insights**, select **Refresh** until you get results.
 
 1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
 

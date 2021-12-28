@@ -1,4 +1,4 @@
-As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires developers to install and manage specific or complicated sets of dependencies and technology stacks. 
+Now that you've installed the Remote-Containers extension, let's take a look at how it is going to help developers at your agency. As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires developers to install and manage specific or complicated sets of dependencies and technology stacks. 
 
 Ideally, each project is contained in its own preconfigured, containerized environment. Docker and Visual Studio Code make containerized development possible through the Remote - Containers extension.
 
@@ -8,7 +8,7 @@ The [Remote - Containers extension](https://marketplace.visualstudio.com/items?i
 
 ## How the extension works
 
-The Remote - Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works without downloading anything on your local machine. Remote - Containers works by connecting Visual Studio Code to a running container. Workspace files are [mounted from the local file system](https://docs.docker.com/storage/bind-mounts/), or they're copied or cloned into the container.
+The Remote - Containers extension lets you grab a dev container with the specific technology stack or dependencies already set up for you, open a project, and find that your code just works without downloading anything on your local machine. Remote - Containers works by connecting Visual Studio Code to a running container. Workspace files are mounted from the local file system, or they're copied or cloned into the container.
 
 Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you, the developer, the experience is the same as if you had opened the project normally in Visual Studio Code.
 

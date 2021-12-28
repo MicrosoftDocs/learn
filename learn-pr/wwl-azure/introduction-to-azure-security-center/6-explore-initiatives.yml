@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-security-center.explore-initiatives
+title: Explore initiatives
+metadata:
+  title: Explore initiatives
+  description: "Explore initiatives"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-explore-initiatives.md)]

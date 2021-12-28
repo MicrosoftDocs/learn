@@ -1,6 +1,6 @@
 ## Manage automation uploads
 
-Enable the **File Content Analysis** capability so that certain files and email attachments can automatically be uploaded to the cloud for additional inspection in Automated investigation.  Identify the files and email attachments by specifying the file extension names and email attachment extension names.  For example, if you add exe and bat as file or attachment extension names, then all files or attachments with those extensions will automatically be sent to the cloud for additional inspection during Automated investigation.
+Enable the **File Content Analysis** capability so that certain files and email attachments can automatically be uploaded to the cloud for more inspection in Automated investigation.  Identify the files and email attachments by specifying the file extension names and email attachment extension names.  For example, if you add exe and bat as file or attachment extension names, then all files or attachments with those extensions will automatically be sent to the cloud for more inspection during Automated investigation.
 
 Enable the Memory Content Analysis capability if you would like Microsoft Defender for Endpoint to automatically investigate memory content of processes. When enabled, memory content might be uploaded to Microsoft Defender for Endpoint during an Automated investigation.
 
@@ -10,13 +10,13 @@ Enable the Memory Content Analysis capability if you would like Microsoft Defend
 
 To configure file settings:
 
-- In the navigation pane, select **Settings > Automation file uploads**.
+- In the navigation pane for Microsoft 365 Defender, select **Settings > Endpoints**.  Under the Rules section, select **Automation uploads**.
 
 - Toggle the content analysis setting between On and Off.
 
 - Configure the following extension names and separate extension names with a comma:
 
-  - File extension names - Suspicious files except email attachments will be submitted for additional inspection
+  - File extension names - Suspicious files except email attachments will be submitted for more inspection
 
 ## Manage automation folder exclusions
 
@@ -44,7 +44,7 @@ You can specify the file names that you want to be excluded in a specific direct
 
 To manage folder exclusions:
 
-- In the navigation pane, select **Settings > Automation folder exclusions**.
+- In the navigation pane for Microsoft 365 Defender, select **Settings > Endpoints**.  Under the Rules section, select **Automation folder exclusions**.
 
 - Select New folder exclusion.
 

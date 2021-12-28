@@ -1,12 +1,12 @@
-To interact with individual blobs in Blob Storage, you use a `BlobClient` object.  You get an `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` the blob is located in.  `BlobClient` has methods to upload, download and manage individual blobs in Blob Storage.
+To interact with individual blobs in Blob Storage, use a `BlobClient` object.  You will get a `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` in which the blob is located. `BlobClient` has methods to upload, download, and manage individual blobs in Blob Storage.
 
 ## Getting a BlobClient object
 
-To get an `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob &dash;that is upload, download or manage the blob in Blob Storage.
+To get a `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob; that is upload, download, or manage the blob in Blob Storage.
 
-Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  It is recommended to use these async implementations whenever possible in your application.
+Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  We recommend using these async implementations whenever possible in your application.
 
-A further recommendation when working with large data objects is to use streams instead of in-memory structures like byte arrays or strings. This avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
+We also recommend using streams instead of in-memory structures like bite arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
 
 ## Create new blobs
 
@@ -26,7 +26,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 - To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you will get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
 
-    In the editor, in `BlobStorage.cs`, replace `Save` with the following code.
+    In the editor, in `BlobStorage.cs`, replace `Save` with the following code. Use CTRL + S to save your work.
 
     ```csharp
     public Task Save(Stream fileStream, string name)
@@ -51,7 +51,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream which can be used by ASP.NET Core to stream the file to the browser.
 
-- Replace `Load` with this code and save your work.
+- Replace `Load` with this code and save your work using CTRL + S.
 
     ```csharp
     public Task<Stream> Load(string name)
@@ -70,9 +70,9 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
 ### Deploy and run in Azure
 
-1. Your app is finished &mdash; let's deploy it and see it work. Create an App Service app and configure it with app settings for your storage account connection string and container name. Get the storage account's connection string with `az storage account show-connection-string`, and set the name of the container to be `files`.
+1. Your app is finished, so let's deploy it and see it work. Create an App Service app and configure it with app settings for your storage account connection string and container name. Get the storage account's connection string with `az storage account show-connection-string`, and set the name of the container to be `files`.
 
-    The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+    The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`. You'll also use the storage account name you created previously to replace `<your-unique-storage-account-name>`. Run each of the following commands in the below order in Azure CLI:
 
     ```azurecli
     az appservice plan create \
@@ -122,7 +122,7 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
     :::image type="content" source="../media/7-fileuploader-empty.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
-1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
+1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell, replacing `<your-unique-storage-account-name>` with the storage account name you created earlier in the module:
 
     ```console
     az storage blob list --account-name <your-unique-storage-account-name> --container-name files --query [].{Name:name} --output table

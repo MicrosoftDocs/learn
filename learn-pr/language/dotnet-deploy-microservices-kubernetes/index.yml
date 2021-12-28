@@ -23,7 +23,7 @@ prerequisites: |
   - Docker Desktop installed.
   - Visual Studio Code installed.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/dotnet-deploy-microservices-kubernetes.svg
 levels:
 - beginner
 roles:
