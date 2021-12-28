@@ -74,15 +74,19 @@ In the previous query, you looked at the number of storm events over time. Now l
     
     :::image type="content" source="../media/5-bin-2.png" alt-text="Screenshot of damage column chart binned by week.":::
 
-The above query shows you how damage as a function of time. Another way to compare the damage is by event type.
+1. The above query shows you how damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
+    
+    ```kusto
+    StormEvents
+    | extend damage = DamageProperty + DamageCrops
+    | summarize sum(damage) by EventType
+    | render piechart
+    ```
 
-```kusto
-StormEvents
-| extend damage = DamageProperty + DamageCrops
-| summarize sum(damage) by EventType
-| render piechart
-```
+    You should get results that look like the following image:
+    
+    :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
 
-:::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
+1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) as well as the percentage of the overall damage.
