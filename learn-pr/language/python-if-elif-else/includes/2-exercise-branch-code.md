@@ -248,10 +248,10 @@ if second_value == '6': # Intentionally not enough indentation
 ...it's likely you would see the following error message.
 
 ```output
-  File "c:/python/numeric-operations-decisions/exercise2.py", line 65
+  File "c:/python/numeric-operations-decisions/exercise1.py", line 5
     if second_value == '6': # Intentionally not enough indentation
     ^
-IndentationError: expected an indented block
+IndentationError: expected an indented block after 'if' statement on line 4
 ```
 
 ## Recap
