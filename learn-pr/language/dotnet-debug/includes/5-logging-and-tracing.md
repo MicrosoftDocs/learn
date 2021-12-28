@@ -104,7 +104,7 @@ Use the System.Diagnostics.Debug.Assert method freely to test conditions that sh
 ```csharp
 int IntegerDivide(int dividend, int divisor)
 {
-    Debug.Assert(divisor != 0, $"nameof(divisor) is 0 and will cause an exception.");
+    Debug.Assert(divisor != 0, $"{nameof(divisor)} is 0 and will cause an exception.");
 
     return dividend / divisor;
 }

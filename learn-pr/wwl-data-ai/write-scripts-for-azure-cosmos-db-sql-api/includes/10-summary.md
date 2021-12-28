@@ -1,6 +1,7 @@
 In this module, you learned how to use the **az cosmosdb** command group and many of the SQL API relevant subgroups to create and manage resources within an Azure Cosmos DB account.
 
-> &#128161; The Azure CLI also includes command subgroups for managing Azure Cosmos DB accounts created using other APIs.
+> [!TIP]
+> The Azure CLI also includes command subgroups for managing Azure Cosmos DB accounts created using other APIs.
 
 Now that you have completed this module, you can:
 

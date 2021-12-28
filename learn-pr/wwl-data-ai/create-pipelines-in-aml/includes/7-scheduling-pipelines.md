@@ -28,7 +28,7 @@ from azureml.pipeline.core import Schedule
 training_datastore = Datastore(workspace=ws, name='blob_data')
 pipeline_schedule = Schedule.create(ws, name='Reactive Training',
                                     description='trains model on data change',
-                                    pipeline_id=published_pipeline_id,
+                                    pipeline_id=published_pipeline.id,
                                     experiment_name='Training_Pipeline',
                                     datastore=training_datastore,
                                     path_on_datastore='data/training')

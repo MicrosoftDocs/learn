@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -18,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are setting up your first Azure Stream Analytics job. What are the components of an Azure Stream Analytics job?"
+  - content: "A developer is setting up their first Azure Stream Analytics job. What are the components of an Azure Stream Analytics job?"
     choices:
     - content: "FROM, WITH, and INTO"
       isCorrect: false
@@ -29,7 +28,7 @@ quiz:
     - content: "Input, Action, and Output"
       isCorrect: false
       explanation: "Incorrect. Although Input and Output are two of the components, Action is not the name of the third component in an ASA job."
-  - content: "You need to set up an Azure Stream Analytics Windowing function that will output results every 10 seconds. The results should be based on data from previous 30 seconds. Which one of the Windowing function types should you use to achieve the desired results?"
+  - content: "A developer needs to set up an Azure Stream Analytics Windowing function that will output results every 10 seconds. The results should be based on data from previous 30 seconds. Which one of the Windowing function types should the developer use to achieve the desired results?"
     choices:
     - content: "Tumbling window."
       isCorrect: false

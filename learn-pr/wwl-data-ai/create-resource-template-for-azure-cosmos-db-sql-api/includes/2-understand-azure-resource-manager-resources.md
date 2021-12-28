@@ -19,4 +19,5 @@ This list is not exhaustive, other resources can be created in a template such a
 - Pre-triggers
 - Post-triggers
 
-> &#128161; These example container-level resources can be created with their code automatically deployed using a template.
+> [!TIP]
+> These example container-level resources can be created with their code automatically deployed using a template.

@@ -67,7 +67,7 @@ Identify the subtasks of *Automate the installation and configuration of softwar
         - Show the different Windows distros that can be used
         - Discuss the Azure Hybrid Benefit license
 
-    - Explain that all the above steps created the whole machine and components with Azure templates and redeployed using a single command `az group deployment create`
+    - Explain that all the above steps created the whole machine and components with Azure templates and redeployed using a single command `az deployment group create`
 
 1. **Exercise - Automate the installation of a virtual machine**
 

@@ -3,7 +3,7 @@ uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api
 metadata:
   title: Move data into and out of Azure Cosmos DB SQL API
   description: "Migrate data into and out of Azure Cosmos DB SQL API using Azure services and open-source solutions."
-  ms.date: 11/25/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Migrate data using Spark or Kafka
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-cosmos-db-moving-data.svg
 levels:
 - intermediate
 roles:

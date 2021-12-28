@@ -7,6 +7,8 @@ If you remember, the meteorological data example has quite a few columns. Not al
 
 1. Run the following query. This query names the columns to return, and their order, within the `project` operator.
     
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEAC4RUFqTqKASXJJYAKZfE3MT01ICi/ILUopJKGN8ZyC/WUfDMyyotykwtdsksAupG8D3zUsAiQJNLErNTFQwNAObMrGFvAAAA" target="_blank"> Click to run query</a>
+
     ```kusto
     StormEvents
     | project EventType, State, DamageProperty, DamageCrops, InjuriesDirect, InjuriesIndirect
@@ -43,6 +45,8 @@ For example, there are other countries with states. It might be helpful to renam
 
 1. Review your updated query and run it. The full query includes calculations for injuries, calculations for damages, and renaming the **State** column.
 
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLlEIDY4PLkksSbUFkzoKYAUhlQVApmdeVmlRZmqxLYzhklkE1KIN43rmpYAFdBRcEnMT01NtIZRzUX5BsTaEHQBkpxaVVAItLEnMTlUwNAAA4HKT7IYAAAA=" target="_blank"> Click to run query</a>
+
     ```kusto
     StormEvents
     | project US_State=State, EventType, Injuries=InjuriesDirect+InjuriesIndirect, Damage=DamageCrops+DamageProperty
@@ -60,6 +64,8 @@ For example, there are other countries with states. It might be helpful to renam
 What if you want to remove a few select columns? For this exploration, you don't have any use for the IDs assigned to each episode and event. You can remove specific columns by using the `project-away` operator, which indicates which columns to remove, while leaving all remaining columns. You can also use a wildcard, such as `| project-away *ID`, to remove all columns that end in **ID**.
 
 1. Run the following query:
+
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKCjKz0pNLtFNLE+sVHAtyCzOT0n1TNFRACvwTAGqKEnMTlUwNAAA891eCDcAAAA=" target="_blank"> Click to run query</a>
 
     ```kusto
     StormEvents

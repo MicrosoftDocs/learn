@@ -1,6 +1,6 @@
 Suppose your company makes use of container images to manage compute workloads. You use the local Docker tooling to build your container images.
 
-You can now use Azure Container Registry Tasks to build these containers. Container Registry Tasks also allows for DevOps process integration with automated build on source code commit.
+You can now use Azure Container Registry Tasks to build these container images. Container Registry Tasks also allows for DevOps process integration with automated build on source code commit.
 
 Let's automate the creation of a container image using Azure Container Registry Tasks.
 
