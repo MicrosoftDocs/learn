@@ -17,34 +17,34 @@ quiz:
   questions:
   - content: "What method allows access all key names in a Python dictionary?"
     choices:
-    - content: "keys"
+    - content: "`keys`"
       isCorrect: true
-      explanation: "Correct! keys provides a list of all keys in a dictionary"
-    - content: "values"
+      explanation: "Correct! `keys` provides a list of all keys in a dictionary."
+    - content: "`values`"
       isCorrect: false
-      explanation: "Incorrect. values provides a list of all values in a dictionary."
-    - content: "update"
+      explanation: "Incorrect. `values` provides a list of all values in a dictionary."
+    - content: "`update`"
       isCorrect: false
-      explanation: "Incorrect. update is used to modify values in a dictionary."
-  - content: "What method can be used to retrieve a value from a dictionary by using the key?"
+      explanation: "Incorrect. `update` is used to modify values in a dictionary."
+  - content: "What method can you use to retrieve a value from a dictionary by using the key?"
     choices:
-    - content: "update"
+    - content: "`update`"
       isCorrect: false
-      explanation: "Incorrect. update is used to modify values in a dictionary."
-    - content: "get"
+      explanation: "Incorrect. `update` is used to modify values in a dictionary."
+    - content: "`get`"
       isCorrect: true
-      explanation: "Correct! get is used to retrieve a value with the key name."
-    - content: "values"
+      explanation: "Correct! `get` is used to retrieve a value with the key name."
+    - content: "`values`"
       isCorrect: false
-      explanation: "Incorrect. values provides a list of all values in a dictionary."
-  - content: "What method is used to remove a key from a dictionary?"
+      explanation: "Incorrect. `values` provides a list of all values in a dictionary."
+  - content: "What method can you use to remove a key from a dictionary?"
     choices:
-    - content: "values"
+    - content: "`values`"
       isCorrect: false
-      explanation: "Incorrect. values is used to retrieve all the values in a dictionary."
-    - content: "[]"
+      explanation: "Incorrect. `values` is used to retrieve all the values in a dictionary."
+    - content: "`[]`"
       isCorrect: false
-      explanation: "Incorrect. [] are used to access a value by the key in a dictionary."
-    - content: "pop"
+      explanation: "Incorrect. `[]` are used to access a value by the key in a dictionary."
+    - content: "`pop`"
       isCorrect: true
-      explanation: "Correct! pop is used to remove a key from a dictionary"
+      explanation: "Correct! `pop` is used to remove a key from a dictionary."
