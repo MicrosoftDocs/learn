@@ -25,7 +25,7 @@ quiz:
       isCorrect: false
       explanation: "Even though a queue is a first-in-first-out data structure, Azure Storage queues do not guarantee it."
     
-  - content: "Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus exchange feature should you use?"
+  - content: "Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus feature should you use?"
     choices:
     - content: 'Queue'
       isCorrect: false
@@ -33,18 +33,15 @@ quiz:
     - content: 'Topic'
       isCorrect: true
       explanation: "A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
-    - content: 'Relay'
-      isCorrect: false
-      explanation: "A relay is used for two-way communication and it provides bidirectional connections across network boundaries."
 
-  - content: "True or false: You can add a message to an Azure Service Bus queue that is 2 MB in size."
+  - content: "True or false: You can add a message to an Azure Service Bus queue that is 20 MB in size."
     choices:
     - content: 'True'
-      isCorrect: false
-      explanation: "An Azure Storage queue message must be smaller than 64 KB. An Azure Service Bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
-    - content: 'False'
       isCorrect: true
-      explanation: "An Azure Storage queue message must be smaller than 64 KB. An Azure Service Bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier."
+      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
+    - content: 'False'
+      isCorrect: false
+      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
 
       
 

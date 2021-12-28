@@ -49,7 +49,7 @@ The final item’s tree is similar with the values **Road-200 Red** and **405.85
 
 An inverted tree that includes all three items would have a root node that matches all three items. You can think of traversing the root node as similar, in concept, to a query with no filter. The tree contains a price node with three child nodes for each distinctive value. The price node matches all three items because every item includes a price field. However, each individual price node only matches a single item since the price for each item is distinct. The tree also contains a name node that matches all three items with individual child nodes for each distinct value.
 
-![Inverted tree for all three JSON items](../media/2-inverted-tree.png)
+![Inverted tree for all three JSON items](../media/2-inverted-tree-alt.png)
 
 To traverse the tree, a simple SQL query is written with a filter to only match items where the **name** is equivalent to the value of **Touring-1000 Blue**.
 

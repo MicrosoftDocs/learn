@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "The AKS cluster will need to retrieve the image from the container registry. You'll need to create a user and password to grant the AKS permission to access the new container registry."
       isCorrect: false
-      explanation: "Incorrect. There are two philosophies on how to organize your repos: Monorepo or Multiple repos."
+      explanation: "Incorrect. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
     - content: "The AKS cluster will need to retrieve the image from the Azure Artifacts. The permission to grant the AKS service principal access to the new container registry will be applied automatically."
       isCorrect: false
-      explanation: "Incorrect. There are two philosophies on how to organize your repos: Monorepo or Multiple repos."
+      explanation: "Incorrect. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
     - content: "The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
       isCorrect: true
       explanation: "Correct. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."

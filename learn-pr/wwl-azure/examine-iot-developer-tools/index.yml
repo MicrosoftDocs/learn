@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-developer-tools
 metadata:
   title: Examine the IoT developer tools
   description: "This module introduces you to some of the coding tools that are used by developers to create apps and automate configuration tasks."
-  ms.date: 11/18/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Ability to:
   - Demonstrate basic developer skills.
   - Describe the features of IoT Hub and its role within an IoT solution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot-developer-tools.svg
 levels:
 - intermediate
 roles:

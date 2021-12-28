@@ -28,17 +28,17 @@ The following XAML shows a simple example of a `TwoPaneView` layout, with a `Lab
 
 By default the TwoPaneView will attempt to always render both panes, which means that when the app is running on a single-screen, the screen will be split between two views.
 
-On the Surface Duo, applications can be spanned across two screens. The TwoPaneView control has additional properties that determine where the two panes are rendered in relation to each other (in both single- or dual-screen):
-
-- **TallModeConfiguration** – when in tall mode, the panes can be Left/Right, Right/Left, or a single pane only can be shown.
-- **WideModeConfiguration** – when in wide mode, the panes can be Top/Bottom, Bottom/Top, or a single pane only.
-- **PanePriority** – whether to show `Pane1` or `Pane2` if `SinglePane` mode is set.
-
-There are three display modes:
+On the Surface Duo, applications can be spanned across two screens. The possible pane layouts are described by three display modes:
 
 - **SinglePane** – only one pane is currently visible.
 - **Wide** – the two panes are laid out horizontally. One pane is on the left and the other is on the right. On the Surface Duo, the two screens are in portrait mode.
 - **Tall** – the two panes are laid out vertically. One pane is on top and the other is on bottom. On the Surface Duo, the two screens are in landscape mode.
+
+The TwoPaneView control has additional properties that determine where the two panes are rendered in relation to each other (in both single- or dual-screen):
+
+- **PanePriority** – whether to show `Pane1` or `Pane2` if `SinglePane` mode is set.
+- **WideModeConfiguration** – when in `Wide` mode, the panes can be Left/Right, Right/Left, or a single pane only can be shown.
+- **TallModeConfiguration** – when in `Tall` mode, the panes can be Top/Bottom, Bottom/Top, or a single pane only.
 
 ## Use DualScreenInfo
 

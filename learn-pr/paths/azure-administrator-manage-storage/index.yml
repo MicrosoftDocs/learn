@@ -79,7 +79,6 @@ modules:
 - learn.choose-the-right-disk-storage-for-vm-workload
 - learn.azure.provide-disaster-recovery-replicate-storage-data
 - learn.azure.secure-azure-storage-account
-- learn.store-and-share-with-azure-files
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.azure.export-data-with-azure-import-export
 - learn.azure.move-data-with-azure-data-box
