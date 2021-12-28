@@ -29,9 +29,9 @@ A profile is a script that runs when you start a new session. Having a customize
 1. Create a profile for the current user and the current host by running the command `New-Item`:
 
    ```powershell
-   New-Item 
-     -ItemType "file"
-     -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' 
+   New-Item `
+     -ItemType "file" `
+     -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' `
      -Path $Profile.CurrentUserCurrentHost -Force
    ```
 
