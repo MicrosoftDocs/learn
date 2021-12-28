@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.power-apps-tutorial.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 10/19/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 4
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: ""
+  questions:
+    - content: "What can be measured using the measure in MR component?"
+      choices:
+        - content: "Distance"
+          isCorrect: false
+          explanation: Incorrect. The amount of space between to two points.
+        - content: "Volume"
+          isCorrect: false
+          explanation: Incorrect. The amount of space enclosed in a three-dimensional space.
+        - content: "Area"
+          isCorrect: false
+          explanation: Incorrect. The amount of space enclosed in a two-dimensional space.
+        - content: "All of the above"
+          isCorrect: true
+          explanation: Correct. Measure in MR measures distance, volume, and area.
+    - content: "In the following options, which one best defines Object Scaling?"
+      choices:
+        - content: "Object scaling allows users to change the size of the models according to their needs using parameters like Object width, Object height, and Object depth."
+          isCorrect: true
+          explanation: Correct. Alternatively, you can specify some or all of the dimensions - these dimensions are labeled as the Object width, Object height, and Object depth properties.
+        - content: "Object scaling allows users to visualize 3D objects in their real world."
+          isCorrect: false
+          explanation: Incorrect. View in MR allows users to visualize the 3D object in their real world.
+        - content: "Object scaling helps in adjusting the screen resolution to the required standards."
+          isCorrect: false
+          explanation: Incorrect. Power Apps can automatically adjust the screen ratio.
+    - content: "Which measurement type allows users to measure distance, area, and volume at once?"
+      choices:
+        - content: "Distance"
+          isCorrect: false
+          explanation: Incorrect. Measures space between two points.
+        - content: "Freeform"
+          isCorrect: true
+          explanation: Correct. Allows users to measure distance, area, and volume at once.
+        - content: "Volume"
+          isCorrect: false
+          explanation: Incorrect. The amount of space enclosed in a three-dimensional space.
+    - content: "Which is the best suited 3D content format to be included in Power Apps?"
+      choices:
+        - content: ".obj"
+          isCorrect: false
+          explanation: Incorrect. The OBJ file format is a simple data-format that represents 3D geometry alone
+        - content: ".stl"
+          isCorrect: false
+          explanation: Incorrect. STL is a file format native to the stereolithography CAD software created by 3D Systems.
+        - content: ".glb"
+          isCorrect: true
+          explanation: Correct. GLB is a 3D file format that's used in virtual reality (VR), augmented reality (AR), games, and web applications because it supports motion.
+    - content: "View in 3D allows users to ____________"
+      choices:
+        - content: "Visualize 3D objects in the real-world environment"
+          isCorrect: false
+          explanation: Incorrect. View in MR allows users to visualize 3D objects in the real-world environment.
+        - content: "Measure objects in real-world"
+          isCorrect: false
+          explanation: Incorrect. Measure in MR allows users to measure objects in real-world.
+        - content: "Rotate and zoom into the model with simple gestures."
+          isCorrect: true
+          explanation: Correct. View in MR allows users to rotate and zoom into the model with simple gestures.

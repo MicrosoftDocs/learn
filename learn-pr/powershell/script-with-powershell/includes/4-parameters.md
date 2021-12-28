@@ -103,7 +103,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Supply values for the following parameters:
    (Type !? for Help.)
    Path: !?  # You type !?
-   Please supply a valid path  # Your Help message.
+   Please provide a valid path  # Your Help message.
    ```
 
 - **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets:

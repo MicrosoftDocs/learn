@@ -11,7 +11,7 @@ Pre-deployment checks should include:
 - Identifying proxy servers used for Microsoft Exchange or Skype for Business, if you deploy Azure AD Connect as a part of a Microsoft 365 deployment.
 - Identifying Microsoft SharePoint domains, if you deploy Azure AD Connect as part of a Microsoft 365 deployment.
 - Evaluating client for SSO readiness.
-- Recording network port use, and DNS records related to Microsoft 365 (if you deploy Azure AD Connect as part of a Microsoft 365 deployment).
+- Recording network port use, and DNS records related to Office 365 (if you deploy Azure AD Connect as part of a Office 365 deployment).
 
 After you complete these checks, key remediation tasks include:
 - Removing duplicate `proxyAddress` and `userPrincipalName` attributes.

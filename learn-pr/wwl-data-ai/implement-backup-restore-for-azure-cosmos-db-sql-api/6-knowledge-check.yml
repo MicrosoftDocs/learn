@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
     - content: "Open a ticket with the Azure support team to restore the backup for you"
       isCorrect: true
       explanation: "That's correct. You can't restore an Azure Cosmos DB account or any of its data, only the Azure support team can do that, so a support ticket must be opened to restore the data."
-    - content: "Under Azure Cosmos DB account Data Explorer, run the SQL Query ***restore from \"AZUREBLOBSTORAGEPATH\"***, replace AZUREBLOBSTORAGEPATH for the URL of your backup file."
+    - content: "Under Azure Cosmos DB account Data Explorer, run the SQL Query **restore from \"AZUREBLOBSTORAGEPATH\"**, replace AZUREBLOBSTORAGEPATH for the URL of your backup file."
       isCorrect: false
       explanation: "That's incorrect. Data Explorer is used to query the Azure Cosmos DB account data, the restore command does not exist."
   - content: "Which of the following options must you configure for continuous backup mode to work properly?"

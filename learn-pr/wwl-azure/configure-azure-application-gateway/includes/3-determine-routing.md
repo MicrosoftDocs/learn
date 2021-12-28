@@ -4,7 +4,7 @@ There are two primary methods of routing traffic, path-based routing and multipl
 
 ## Path-based routing
 
-Path-based routing sends requests with different URL paths different pools of back-end servers. For example, you could direct requests with the path /video/\* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/\* requests to a pool of servers that handle image retrieval.
+Path-based routing sends requests with different URL paths to different pools of back-end servers. For example, you could direct requests with the path /video/\* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/\* requests to a pool of servers that handle image retrieval.
 
 :::image type="content" source="../media/path-based-routing-15bcef5f.png" alt-text="Path-based routing.":::
 

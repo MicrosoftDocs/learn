@@ -3,7 +3,7 @@ uid: learn.wwl.examine-business-integration-for-iot-solutions
 metadata:
   title: Examine business integration for IoT solutions
   description: "This module introduces you to business integration goals for IoT solutions, the Azure services that are used to enable downstream message processing, and the configuration options for Azure Event Grid and Azure Logic Apps."
-  ms.date: 11/18/2021
+  ms.date: 12/23/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the features and capabilities of IoT Hub
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
   - Describe the hot and cold storage path options for an Azure IoT solution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot-business-integration.svg
 levels:
 - intermediate
 roles:

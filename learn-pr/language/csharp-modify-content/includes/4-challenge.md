@@ -2,7 +2,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## Challenge
 
-In this challenge, you'll work with a string that contains a fragment of HTML.  You'll extract data from the HTML fragment, replace some of its content, and remove other parts of its content to achieve the desired output.
+In this challenge, you'll work with a string that contains a fragment of HTML. You'll extract data from the HTML fragment, replace some of its content, and remove other parts of its content to achieve the desired output.
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
@@ -31,11 +31,9 @@ Quantity: 5000
 Output: <h2>Widgets &reg;</h2><span>5000</span>
 ```
 
-You may only add code to the starting point code listing.  You must not change the variable declarations.  All of your work should go under the comment `// Your work here`.
+You may only add code to the starting point code listing. You must not change the variable declarations. All of your work should go under the comment `// Your work here`.
 
 You'll perform three operations on the input using the tools and techniques you learned in this module.
-
-**Operations**
 
 1. Set the `quantity` variable to the value you extract from between the `<span>` and `</span>` tags.
 2. Set the `output` variable to the value of input, then remove the `<div>` and `</div>` tags.
@@ -45,16 +43,16 @@ Whether you get stuck and need to peek at the solution or you finish successfull
 
 ### Quick HTML primer
 
-In case you're not familiar with HTML, it's the markup language that is used to create all web pages.  This section can be skipped if you're already well versed in HTML.  It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
+In case you're not familiar with HTML, it's the markup language that is used to create all web pages. This section can be skipped if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
 
-In HTML, you define the structure of a document using tags.  A tag is comprised of:
+In HTML, you define the structure of a document using tags. A tag is comprised of:
 
 - an opening angle bracket `<`
 - a closing angle bracket `>`
 - a word describing the type of tag, so for example: `<div>`, `<span>`, `<h2>` etc.
 
-Each tag has a corresponding closing tag that is indicated by a forward slash character `/`.  So, if you see `<div>` there should be a corresponding `</div>` tag.
+Each tag has a corresponding closing tag that is indicated by a forward slash character `/`. So, if you see `<div>` there should be a corresponding `</div>` tag.
 
-The content between the opening and closing tag is the content of that tag.  The content can include text and other tags.
+The content between the opening and closing tag is the content of that tag. The content can include text and other tags.
 
-A set of tags can be embedded inside another set of tags.  In fact, that is what gives an HTML document its hierarchical structure.
+A set of tags can be embedded inside another set of tags. In fact, that is what gives an HTML document its hierarchical structure.

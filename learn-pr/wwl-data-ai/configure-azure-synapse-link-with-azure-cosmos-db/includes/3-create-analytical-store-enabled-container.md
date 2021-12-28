@@ -1,23 +1,21 @@
-Before we can query our data using Azure Synapse Analytics using Azure Synapse Link, we must first create the container that is going to hold our data at the same time enabling it to have an analytical store.
+Before we can query our data using Azure Synapse Analytics using Azure Synapse Link, we must first create the container to hold our data and enable the container to have an analytical store.
 
 > [!Note]
-> Today enabling analytical store is only available at the time of creating a container and cannot be completely disabled without deleting the container. Setting the default analytical store TTL value to 0 or null effectively disables the analytical store by no longer synchronize new items to it from the transactional store and deleting items already synchronized from the analytical store.
+> Enabling analytical store is only available when you create a container. Once enabled, an analystical store cannot be completely disabled without deleting the container. Setting the default analytical store TTL value to 0 or null effectively disables the analytical store in that new items are no longer synchronized from the transactional store. This also disables deleting items that have already been synchronized.
 
 ## Create a new Azure Cosmos DB Core (SQL) API container
 
-To create a new Azure Cosmos DB Core (SQL) API container with analytical store enabled, follow the following steps:
+To create a new Azure Cosmos DB Core (SQL) API container with analytical store enabled:
 
-1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
+1.	In the Azure portal (https://portal.azure.com), select an existing Azure Cosmos DB Core (SQL) API account.
 
-2.	Navigate to your previously created Azure Cosmos DB Core (SQL) API account
+1.	In the resource menu, select **Data Explorer**.
 
-3.	Select **Data Explorer** on the left-hand menu **(3)**.
-
-4.	Click the **New Container** button at the top of screen. 
+1.	In the command bar, select **New Container**. The Add Container pane appears.
  
     [![Selecting a new container in Data Explorer](../media/select-new-container.png)](../media/select-new-container.png#lightbox)
 
-    An Add Container dialog will appear.
+    
  
     [![The add container dialog box in Data Explorer](../media/add-new-container.png)](../media/add-new-container.png#lightbox)
 
@@ -35,7 +33,7 @@ To create a new Azure Cosmos DB Core (SQL) API container with analytical store e
 
 8.	Click **OK** to create the container.
 
-    Whilst this module assumes you understand how to appropriately configure an Azure Cosmos DB container to maximize performance and minimize cost lets briefly go over some of the thinking used to choose the values we dID:
+    Whilst this module assumes you understand how to appropriately configure an Azure Cosmos DB container to maximize performance and minimize cost lets briefly go over some of the thinking used to choose the values we did:
     
     - We choose a partition key property of customerID as this attribute is used in many of the queries used to retrieve customer and sales order information in our application, it has relatively high cardinality (number of unique values) and thus will allow our container to scale as the number of customers and sales orders grows.
 
@@ -89,7 +87,7 @@ Perform the following steps to load a couple of sample items into the newly crea
 
 ## Create a new Azure Cosmos DB API for MongoDB container
 
-To create a new Azure Cosmos DB API for MongoDB container with analytical store enabled by executing the following steps, in a manner similar to what we recently dID for the SQL API
+To create a new Azure Cosmos DB API for MongoDB container with analytical store enabled by executing the following steps, in a manner similar to what we recently did for the SQL API
 
 1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
 
@@ -97,11 +95,9 @@ To create a new Azure Cosmos DB API for MongoDB container with analytical store 
 
     [![Add a collection and database.](../media/add-collection.png)](../media/add-collection.png#lightbox)
 
-3.	Select **Data Explorer** on the left-hand menu (1).
+3.	In the resource menu, select **Data Explorer** .
 
-4.	Click the **New Container** button at the top of screen (2). 
-
-    An Add Container dialog will appear.
+4.	In the command bar, select **New Container**. An Add Container dialog appears.
 
 5.	Enter the new databases and container information:
     a.	For the **Database ID**, type in the name AdventureWorks **(3)**
@@ -120,7 +116,7 @@ To create a new Azure Cosmos DB API for MongoDB container with analytical store 
 
 ## Load sample data into the Azure Cosmos DB API for MongoDB container
 
-Perform the following steps to load a couple of sample items into the newly created MonoDB API container:
+Let's load a couple of sample items into the newly created MonoDB API container:
 
 1.	Navigate to the Azure portal (https://portal.azure.com) and select the Azure Cosmos DB account.
 
@@ -128,43 +124,43 @@ Perform the following steps to load a couple of sample items into the newly crea
  
     [![creating a customer profile in MongoDB.](../media/create-customer-profile-mongodb.png)](../media/create-customer-profile-mongodb.png#lightbox)
 
-3.	Select **Data Explorer** in the left-hand menu **(1)**
+3.	In the resource menu, select **Data Explorer**.
 
-4.	Navigate to the items folder with the Sale container we just created by:
-    a.	Expanding AventureWorks database **(2)**
-    b.	Expanding the Sale Collection **(3)** 
-    c.	Clicking on the Documents folder **(4)**
+4.	Navigate to the **Items** for the Sale container we just created.
+    a.	Expand AventureWorks database.
+    b.	Expand the Sales Collection. 
+    c.	Select **Documents**.
 
-    You will see no Document _IDs listed in the documents list **(5)**; the collection is empty.
+    There are no Document *IDs* in the documents list; the collection is empty.
 
-5.	Now create a new customer profile item by:
-    a.	Clicking the New Document button on the top ribbon **(6)**
-    b.	Enter code into the edit pane **(7)**
-    c.	Click the **Save** button on the ribbon **(8)** to save the item.
+5.	Create a new customer profile item:
+    a.	In the command bar, select **New Document**.
+    b.	Enter code into the edit pane.
+    c.	In the command bar, select **Save** to save the item.
 
-    You will now see a new row in the documents list. 
+    A new row appears in the documents list. 
 
-6.	Now create a new sales order document for our previously added customer by:
-    a.	Click the **New Document** button on the top ribbon **(6)**
+6.	Create a new sales order document for our previously added customer.
+    a.	In the command bar, select **New Document**.
     b.	Enter code into the edit pane. 
-    c.	Click the **Save** button on the ribbon (8) to save the item.
+    c.	In the command bar, select **Save** to save the item.
 
-    And you will now see a second document in the document list.
+    A second document appears in the document list.
 
 7.	Let’s run a quick query against this data to retrieve customer profile and sales order information for a specific customer, this is typical of the queries our application runs:
  
     [![run a query to retrieve data.](../media/query-to-retrieve-data.png)](../media/query-to-retrieve-data.png#lightbox)
 
-    a.	Click the New Shell **(A)**
+    a.	Select the New Shell **(A)**
  
     [![Opening a mongo client shell within the portal..](../media/open-mongo-client-shell.png)](../media/open-mongo-client-shell.png#lightbox)
 
     This will open a mongo client shell within the portal.
 
-    b.	Type “show collections” and press enter **(B)**
+    b.	Type `show collections` and press <kbd>Enter</kbd>.
     
     This will return the Sales collection as the only collection in our database.
     
-    c.	Type ```cmd db.Sales.find({“customerID” : “54AB87A7-BDB9-4FAE-A668-AA9F43E26628”``` and press enter **(C)**
+    c.	Type `cmd db.Sales.find({“customerID” : “54AB87A7-BDB9-4FAE-A668-AA9F43E26628”` and press <kbd>Enter</kbd>.
 
-    This will return our results immediately including the content of both documents we just created **(D)**
+    This will return our results immediately, including the content of both documents we just created **(D)**

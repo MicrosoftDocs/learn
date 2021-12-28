@@ -3,7 +3,5 @@ Maintaining indexes and statistics can help provide consistent performance for y
 Now that you've reviewed this module, you should be able to:
 
 - Understand maintenance tasks related to indexing and statistics
-
 - Describe plan forcing
-
 - Understand the auto-tuning feature in Azure

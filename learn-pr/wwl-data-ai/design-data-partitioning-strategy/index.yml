@@ -3,7 +3,7 @@ uid: learn.wwl.design-data-partitioning-strategy
 metadata:
   title: Design a data partitioning strategy
   description: "Design a data partitioning strategy"
-  ms.date: 11/18/2021
+  ms.date: 12/20/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Familiarity with basic modeling and partitioning strategies, such as embedding or referencing data in entities.
   - Familiarity with Azure Cosmos DB .NET SDK v3.
   - Familiarity with Azure Cosmos DB change feed.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-partitioning-strategy.svg
 levels:
 - intermediate
 roles:

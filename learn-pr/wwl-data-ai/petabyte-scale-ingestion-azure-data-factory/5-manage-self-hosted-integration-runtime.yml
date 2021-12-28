@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.manage-self-hosted-integration-runtime
-title: Manage the self-hosted integration runtime
+title: "Exercise: Manage the self-hosted integration runtime"
 metadata:
-  title: Manage the self-hosted integration runtime
-  description: "Manage the self-hosted integration runtime"
+  title: "Exercise: Manage the self-hosted integration runtime"
+  description: "Exercise: Manage the self-hosted integration runtime"
   ms.date: 08/03/2021
   author: wwlpublish
   ms.author: chtestao
