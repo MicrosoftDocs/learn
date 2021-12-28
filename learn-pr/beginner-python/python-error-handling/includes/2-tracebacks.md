@@ -21,7 +21,7 @@ That output has several key parts. First, the traceback mentions the order of th
 
 That's a lot of information. It can be hard  to understand why line 1 is meaningful or what `Errno 2` means. 
 
-Create a new Python file and name it `open.py`, with the following contents:
+Create a Python file and name it *open.py*, with the following contents:
 
 ```python
 def main():

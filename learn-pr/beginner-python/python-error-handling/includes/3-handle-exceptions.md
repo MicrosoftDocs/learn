@@ -6,7 +6,7 @@ Although this module covers how to handle exceptions by catching them, it's not 
 
 ## Try and except blocks
 
-Let's use the navigator example to create code that opens configuration files for the Mars mission. Configuration files can have all kinds of problems, so it's critical to report problems accurately when they come up. We know that if a file or directory doesn't exist, `FileNotFoundError` is raised. If we want to handle that exception, we can do that with a _try and except_ block:
+Let's use the navigator example to create code that opens configuration files for the Mars mission. Configuration files can have all kinds of problems, so it's critical to report problems accurately when they come up. We know that if a file or directory doesn't exist, `FileNotFoundError` is raised. If we want to handle that exception, we can do that with a `try` and `except` block:
 
 ```python
 >>> try:
@@ -17,7 +17,7 @@ Let's use the navigator example to create code that opens configuration files fo
 Couldn't find the config.txt file!
 ```
 
-After the `try` keyword, you add code that has the potential to cause an exception. Next, you add the `except` keyword along with the possible exception, followed by any code that needs to run when that condition happens. Because _config.txt_ doesn't exist in the system, Python prints that the configuration file is not there. The try/except block, along with a helpful message, prevents a traceback and still informs the user about the problem.
+After the `try` keyword, you add code that has the potential to cause an exception. Next, you add the `except` keyword along with the possible exception, followed by any code that needs to run when that condition happens. Because _config.txt_ doesn't exist in the system, Python prints that the configuration file is not there. The `try` and `except` block, along with a helpful message, prevents a traceback and still informs the user about the problem.
 
 Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_. The file has code that finds and reads the navigation system's configuration file:
 
@@ -45,7 +45,7 @@ Traceback (most recent call last):
 IsADirectoryError: [Errno 21] Is a directory: 'config.txt'
 ```
 
-An unuseful way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand _why_ catching all exceptions is problematic, try it by updating the `main()` function:
+An unuseful way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand why catching all exceptions is problematic, try it by updating the `main()` function:
 
 ```python
 def main():
@@ -62,13 +62,13 @@ $ python config.py
 Couldn't find the config.txt file!
 ```
 
-The problem now is that the error message is incorrect. The file does exist, but it has different permissions and can't be read by Python. When you're dealing with software errors, it can be very frustrating to have errors that:
+The problem now is that the error message is incorrect. The file does exist, but it has different permissions and Python can't read it. When you're dealing with software errors, it can be frustrating to have errors that:
 
 - Don't indicate what the real problem is.
 - Give output that doesn't match the actual problem.
 - Don't hint at what can be done to fix the problem.
 
-Let's fix this piece of code to address all these problems. Revert to catching `FileNotFoundError`, and then add another `except` block to catch `PermissionError`:
+Let's fix this piece of code to address all these frustrations. Revert to catching `FileNotFoundError`, and then add another `except` block to catch `PermissionError`:
 
 ```python
 def main():

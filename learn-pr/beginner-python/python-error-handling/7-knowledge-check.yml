@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "Because it can show a traceback with limited information"
       isCorrect: false
-      explanation: "Using `except Exception` doesn't limit information in a traceback"
+      explanation: "Using `except Exception` doesn't limit information in a traceback."
     - content: "Because it can hide what the real problem is"
       isCorrect: true
       explanation: "Correct! This technique usually hides what the underlying problem that caused the error is."

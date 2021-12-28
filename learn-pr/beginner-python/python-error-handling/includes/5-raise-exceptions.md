@@ -14,7 +14,7 @@ def water_left(astronauts, water_left, days_left):
     return f"Total water left after {days_left} days is: {total_water_left} liters"
 ```
 
-Try it out with five astronauts, 100 liters of water left, and two more days to go:
+Try it out with five astronauts, 100 liters of water left, and two days to go:
 
 ```python
 >>> water_left(5, 100, 2)
