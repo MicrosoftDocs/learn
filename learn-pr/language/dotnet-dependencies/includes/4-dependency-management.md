@@ -59,7 +59,7 @@ Let's first talk about version ranges. This is special notation that's used for 
 NuGet also supports using a floating version notation for major, minor, patch, and pre-release suffix parts of the number. This notation is an asterisk (\*). For example, the version specification 6.0.\* says "use the latest 6.0.x version." In another example, 4.\* means "use the latest 4.x version." Using a floating version reduces changes to the project file, while keeping up to date with the latest version of a dependency.
 
 > [!NOTE]
-> We recommend installing a specific version instead of using any of the floating notations. Installing a specific version ensures that your builds are repeatedable unless you explicitly request an update to a dependency.
+> We recommend installing a specific version instead of using any of the floating notations. Installing a specific version ensures that your builds are repeatable unless you explicitly request an update to a dependency.
 
 When you're using a floating version, NuGet resolves the latest version of a package that matches the version pattern. In the following example, 6.0.\* gets the latest version of a package that starts with 6.0. That version is 6.0.1.
 

@@ -26,8 +26,9 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
-  - blazor-server
-  - blazor-webassembly
+  - blazor
+  - dotnet
+  - aspnet-core
 units:
 - learn.blazor-build-reusable-components.introduction
 - learn.blazor-build-reusable-components.concepts-razor-class-library

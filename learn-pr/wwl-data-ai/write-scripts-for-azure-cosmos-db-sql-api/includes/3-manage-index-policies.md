@@ -1,6 +1,7 @@
 When you create a new container, you can specify the indexing policy at the point of creation using the CLI.
 
-> &#128221; Remember, if you do not specify the indexing policy, the default policy will be used.
+> [!NOTE]
+> Remember, if you do not specify the indexing policy, the default policy will be used.
 
 To create a new container with a custom index policy, you must use the **--idx** argument in one of two ways.
 
@@ -56,4 +57,5 @@ az cosmosdb sql container create \
     --throughput '400'
 ```
 
-> &#128161; If you are planning to use a raw JSON string with the **--idx** argument, you should read up on your shell's specific behavior around escaping and processing strings. Common shells like Bash and PowerShell can have wildly different behaviors when processing JSON string literals.
+> [!TIP]
+> If you are planning to use a raw JSON string with the **--idx** argument, you should read up on your shell's specific behavior around escaping and processing strings. Common shells like Bash and PowerShell can have wildly different behaviors when processing JSON string literals.

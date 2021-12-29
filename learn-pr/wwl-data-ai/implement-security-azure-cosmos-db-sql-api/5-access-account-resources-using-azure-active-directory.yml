@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.access-account-resources-using-aad
+title: Access account resources using Azure Active Directory
+metadata:
+  title: Access account resources using Azure Active Directory
+  description: "Access account resources using Azure Active Directory"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-access-account-resources-using-azure-active-directory.md)]

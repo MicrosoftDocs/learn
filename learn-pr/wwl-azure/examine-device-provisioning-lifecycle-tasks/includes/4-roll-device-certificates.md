@@ -43,7 +43,7 @@ Later when the secondary certificate also nears expiration, and needs to be roll
 3.  Select Secondary Certificate and then, select the folder icon to choose the new certificate to be uploaded for the enrollment entry.
 4.  Select Save.
 
-:::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Screen shot that shows where to configure secondary certificates when rolling certificates for a device.":::
+:::image type="content" source="../media/m03-l03-manage-individual-enrollments-secondary-portal-b23afe8f.png" alt-text="Screenshot that shows where to configure secondary certificates when rolling certificates for a device.":::
 
 
 ### Enrollment groups and certificate expiration

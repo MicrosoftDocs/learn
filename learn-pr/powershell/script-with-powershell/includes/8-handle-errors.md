@@ -95,7 +95,7 @@ In some situations, you might want to cause an error:
    Try {
      Get-Content './file.txt' -ErrorAction Stop
    } Catch {
-     Write-Host "File can't be found"
+     Write-Error "File can't be found"
    }
    ```
 

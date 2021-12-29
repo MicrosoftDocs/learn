@@ -1,8 +1,8 @@
 _Feature Scaling_ is a technique that changes the range of values that a feature has. Doing so helps models learn faster and more robustly.
 
-## Standardization versus normalization
+## Normalization versus standardization
 
-_Normalization_ means to scale values so that they all fit within a certain range – typically 0 – 1. For example, if you had a list of people’s ages that were 0, 50, and 100 years, you could standardize by dividing the ages by 100, so that your values were 0, 0.5, and 1.
+_Normalization_ means to scale values so that they all fit within a certain range – typically 0 – 1. For example, if you had a list of people’s ages that were 0, 50, and 100 years, you could normalize by dividing the ages by 100, so that your values were 0, 0.5, and 1.
 
 _Standardization_ is similar but instead, we subtract the mean, also known as the average, of the values, and then divide by the standard deviation. If you’re not familiar with standard deviation, not to worry, this means that after standardization, our mean value is zero, and about 95% of values fall between -2 and 2.
 
@@ -10,7 +10,7 @@ There are other ways to scale data, but the nuances of these are beyond what we 
 
 ## Why do we need to scale?
 
-There are many reasons we normalize or standardize data before training. These can be understood more easily with an example. Let’s say we want to train a model to predict whether a dog will be a successful at working in the snow. Our data are shown below as dots, and the trendline we're trying to find is shown as a solid line:
+There are many reasons we normalize or standardize data before training. These can be understood more easily with an example. Let’s say we want to train a model to predict whether a dog will be a successful at working in the snow. Our data are shown below as dots, and the trend line we're trying to find is shown as a solid line:
 
 ![Diagram showing scaling in a graph of dog height and rescues starting at 50.](../media/2-normalization-graph.png)
 

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-pipeline-strategy
 metadata:
   title: Implement a pipeline strategy
   description: "Implement a pipeline strategy"
-  ms.date: 11/23/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   - Use different source control types available in Azure Pipelines
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:

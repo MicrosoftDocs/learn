@@ -5,7 +5,8 @@ metadata:
   description: Learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an x86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
   ms.date: 11/09/2021
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
@@ -22,7 +23,7 @@ prerequisites: |
   - Familiarity with container workloads and Docker
   - Familiarity with Azure IoT Edge and Azure IoT Hub 
   - Completion of the prerequisite module: [Set up and configure an NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
 levels:
 - intermediate
 roles:
