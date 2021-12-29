@@ -10,7 +10,7 @@ Complex menu trees can commonly introduce inaccessible experiences for players. 
 
 One way to provide an alternate means of navigating through menu trees is by using onscreen shortcuts or accelerator prompts. For example, the following image from the Forza Horizon 4 start screen provides players with a prompt to select the **X** button to open the settings menu. This option allows players to immediately open the accessibility settings menu.
 
-:::image type="content" source="../media/forza-accelerator.png" alt-text="Screenshot that shows the start screen from Forza Horizon 4. There's an option to select the "A" button to start the game and the "X" button to open the accessibility menu.":::
+:::image type="content" source="../media/forza-accelerator.png" alt-text="Screenshot that shows the start screen from Forza Horizon 4 with the option to select A to start the game and X to open the accessibility menu.":::
 
 ### Quick settings
 
