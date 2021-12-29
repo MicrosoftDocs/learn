@@ -1,4 +1,4 @@
-You will frequently need to work with more complex data than strings and Boolean values.
+You will frequently need to work with more complex data than strings and Boolean values. This module provides you with tools for doing so. Let's frame the subject by considering a scenario.
 
 ## Scenario: analyzing a solar system
 
