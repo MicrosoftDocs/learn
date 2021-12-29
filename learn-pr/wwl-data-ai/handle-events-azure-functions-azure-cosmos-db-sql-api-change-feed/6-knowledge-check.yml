@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You are creating an Azure Function to monitor a container for new items and changes to existing items. Which type of binding should you use to start executing the function where there are changes to items?"
+  - content: "You're creating an Azure Function to monitor a container for new items and changes to existing items. Which type of binding should you use to start executing the function where there are changes to items?"
     choices:
     - content: "Input binding"
       isCorrect: false
@@ -36,3 +36,14 @@ quiz:
     - content: "``out IEnumerable<Product> items``"
       isCorrect: false
       explanation: "Incorrect. The **IEnumerable** class does not contain the necessary methods to add items to a container."
+  - content: "When configuring an Azure Cosmos DB SQL API trigger, which of the following settings would be valid?"
+    choices:
+    - content: "Assign the **type** to `AzureCosmosDBTrigger`"
+      isCorrect: false
+      explanation: "Incorrect. The **type** will always be set to *`cosmosDBTrigger`."
+    - content: "Set the **direction** to **in**."
+      isCorrect: true
+      explanation: "Correct. For a trigger, this will be set to in."
+    - content: "Set the `leaseCollectionName` to the name of the container that will contain all the new leased documents"
+      isCorrect: false
+      explanation: "Incorrect. The name of the container used to manage change feed leases."

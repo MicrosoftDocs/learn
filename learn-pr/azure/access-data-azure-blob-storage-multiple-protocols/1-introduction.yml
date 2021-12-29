@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.1-introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: This is an introduction to the module.
+  ms.date: 12/27/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

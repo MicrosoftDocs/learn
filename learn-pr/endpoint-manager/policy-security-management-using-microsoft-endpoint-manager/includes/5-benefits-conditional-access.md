@@ -1,4 +1,5 @@
 Every IT team is obsessed with network security. It's mandatory to make sure that every device meets your security and business requirements before accessing your network. With Conditional Access, you can determine the following factors:
+
 - If every device is encrypted
 - If malware is installed  
 - If its settings are updated

@@ -3,7 +3,7 @@ Over the time a user is employed by a company they may have several positions.
 :::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Employee hired with no access, first job, second job, employee leaves the company.":::
 
 
-The Tailwind Traders CTA asks,
+The Tailwind Traders CTO asks,
 
 - As new employees join, how do we ensure they have the access they need to be productive?
 

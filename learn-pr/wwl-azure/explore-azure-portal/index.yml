@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-portal
 metadata:
   title: Explore the Azure portal
   description: "This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI."
-  ms.date: 11/18/2021
+  ms.date: 12/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-portal-explore.svg
 levels:
 - intermediate
 roles:

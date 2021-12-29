@@ -38,11 +38,14 @@ roles:
   - developer
   - administrator
   - solution-architect
+languages:
+  - bicep
 products:
   - azure
   - azure-active-directory
   - azure-devops
   - azure-resource-manager
+  - github
 units:
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.introduction
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.understand-service-principals
