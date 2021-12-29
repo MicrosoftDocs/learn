@@ -4,13 +4,13 @@ A Kusto query can be used to explore datasets and gain insights. We have used a 
 
 Recall that you have used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states. 
 
-To visualize results, you'll use the `render` operator. This operator comes at the end of a query. Within the `render` operator, you'll specify which type of visualization to use, such as `columnchart`, `piechart`, `scatterchart`, `pivotchart`, and others. You can also optionally define different properties of the visualization, such as the x-axis or y-axis.
+To visualize results, you'll use the `render` operator. This operator comes at the end of a query. Within the `render` operator, you'll specify which type of visualization to use, such as `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. You can also optionally define different properties of the visualization, such as the x-axis or y-axis.
 
-In this example, you'll visualize the previous query using a column chart. 
+In this example, you'll visualize the previous query using a bar chart.
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dDU4VIAAoh8eGZJhktibmJ6aki+c1F+QbGCLURZZpoGRBwiaqdgANWXAjEFrD2ksiBVUyGpUiG4JLEkFWRXflEJiA9WEw8UKErNS0ktAvJzSnPzkjMSi0oAuLzqp50AAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NOQ6DQAxFe07hEqQUuQA0JCcAKWVkwAlTzBh5PEggDs9i3P33FzfK4t8zBY3ZBjF5j+JWgp5T0Lx4ZHCc+R+n4ws9/qnlWniKUFrM/XLjRit43r3BVq56u0xUQLdAo6h0/mLRU1+Z7wGEwkACHUo/ougOiZ2Ja5oAAAA=" target="_blank"> Click to run query</a>
     
     ```kusto
     StormEvents
@@ -18,7 +18,7 @@ In this example, you'll visualize the previous query using a column chart.
         EventsWithDamageToCrops = countif(DamageCrops > 0),
         dcount(EventType) by State
     | sort by count_
-    | render columnchart 
+    | render barchart
     ```
 
     You should get results that look like the following image:

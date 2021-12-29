@@ -1,8 +1,8 @@
-Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about the how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset. For example, you'll use aggregate functions to gain insights in your data by comparing different groups of information. You'll explore ways to visualize this data in graphical format. To organize complex queries, you'll take advantage of let statements.
+Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about the how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset. For example, you'll use aggregate functions to compare different groups of information. You'll explore ways to visualize this data in graphical format. To organize complex queries, you'll learn how to use let statements.
 
 ## What is an aggregate function?
 
-The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. It's easier to compare these events if you group them by certain fields, such as location, time, or event type.
+The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. If you group these individual events by common fields, such as location, time, or event type, you can then make meaningful comparisons across groups.
 
 An aggregation function groups values of multiple rows to form a single summary value.
 
@@ -10,7 +10,11 @@ ADD IMAGE
 
 ## Data visualization
 
+An essential part of data analysis is communicating the results. While sometimes the most fitting way to present results is tabular, often graphical representations can be even more powerful. We'll explore some of the ways to convert Kusto query results to graphical visualizations using the `render` operator.
 
+For example, the following query returns the total damage caused by each type of storm. It's represented as a pie chart, which allows you to quickly compare and find the most and least damaging types of storms.
+
+:::image type="content" source="../media/5-pie-chart.png" alt-text="Screenshot of sample query with pie chart result." lightbox="../media/5-pie-chart.png":::
 
 ## What is a let statement?
 
