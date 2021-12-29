@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-secrets-in-java-applications-zero-trust.5-secure-a-java-application-from-an-it-operator-perspective
+uid: learn.manage-secrets-in-java-applications-zero-trust.5-exercise-secure-java-application-operator
 title: Exercise - Secure a Java application from an IT operator perspective
 metadata:
   title: Exercise - Secure a Java application from an IT operator perspective
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-secure-a-java-application-from-an-it-operator-perspective.md)]
+  [!include[](includes/5-exercise-secure-java-application-operator.md)]
