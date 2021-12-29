@@ -1,10 +1,10 @@
 Understanding the long and growing list of industrywide best practices for game accessibility can seem overwhelming. A single game can have hundreds of different visual, audio, input, and cognitive aspects that are likely applicable.
 
-Imagine your team is developing a new game. You've identified a host of features that the game will include. The goal is to adhere to accessibility best practices guidance while creating as many of these features as possible. Inundated with information, your team is unsure where to start. They first need a foundational understanding of the accessibility concepts that individual best practices guidelines established today are modeled from.
+Imagine your team is developing a new game. You've identified a host of features that the game will include. The goal is to adhere to accessibility best practices while creating as many of these features as possible. Inundated with information, your team is unsure where to start. They first need a foundational understanding of the accessibility concepts that individual best practices established today are modeled from.
 
-After a better understanding of general accessibility best practices is established, your team seeks more targeted guidance. Specifically, they need a comprehensive list of game accessibility best practices guidelines specific to individual game mechanics and elements.
+After a better understanding of general accessibility best practices is established, your team seeks more targeted guidance. Specifically, they need a comprehensive list of game accessibility best practices specific to individual game mechanics and elements.
 
-In this module, you'll learn about foundational accessibility concepts like the importance of customization, using multiple channels to portray information, and flexibility regarding task completion in games. You'll also learn about the Xbox Accessibility Guidelines resource and how to use it as a guardrail for developing accessible experiences.
+In this module, you'll learn about foundational accessibility concepts like the importance of customization, using multiple channels to portray information, and flexibility regarding task completion in games. You'll also learn about the Xbox Accessibility Guidelines and how to use this resource as a guardrail when you develop accessible experiences.
 
 ## Learning objectives
 

@@ -1,4 +1,4 @@
-Determining a starting point when it comes to best practices implementation can prove difficult. An understanding of the foundational accessibility concepts that many specific best practices guidelines are based on can help make this process more approachable.
+Determining a starting point when it comes to best practices implementation can prove difficult. An understanding of the foundational accessibility concepts that many specific best practices are based on can help make this process more approachable.
 
 One of those foundational concepts is customizable experiences. When customization options are provided across all aspects of a game experience, more players can enjoy the same game in a way that's optimized for their specific needs and preferences. Regardless of the general game mechanic, element, or component, the concept of customization applies throughout.
 
@@ -45,19 +45,19 @@ Allow players to customize any relevant visual elements that inform gameplay. Ex
 
    :::image type="content" source="../media/enemy-outline-color.png" alt-text="Screenshot that shows the Accessibility menu in Minecraft Dungeons. Enemy Outline Color is selected and the color is set to pink.":::
 
-- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in The Outer Worlds. Players can turn on outlines that appear around objects that can be interacted with.
+- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in The Outer Worlds game. Players can turn on outlines that appear around objects that can be interacted with.
 
    :::image type="content" source="../media/interaction-outlines.png" alt-text="Screenshot that shows the UI settings in The Outer Worlds. The Interaction Outlines checkbox is selected.":::
 
 ## Customize audio settings
 
-Audio output is another area where customization options are important in adhering to best practices guidelines. Some examples of audio customization options are discussed here.
+Audio output is another area where customization options are important in adhering to best practices. Some examples of audio customization options are discussed here.
 
 ### Volume customization
 
-Allow players to customize the volume of each audio channel separately from one another. The following image shows the Grounded audio settings menu. Players can adjust **Master Volume**, **Effects Volume**, **Music Volume**, **UI Volume**, **Dialogue Volume**, and **Voice Chat Volume** individually.
+Allow players to customize the volume of each audio channel separately from one another. The following image shows the grounded audio settings menu. Players can adjust **Master Volume**, **Effects Volume**, **Music Volume**, **UI Volume**, **Dialogue Volume**, and **Voice Chat Volume** individually.
 
-:::image type="content" source="../media/audio.png" alt-text="Screenshot that shows the audio options menu in Grounded. Players use sliders to control the master, effects, music, UI, dialogue, and voice chat volume.":::
+:::image type="content" source="../media/audio.png" alt-text="Screenshot that shows the Audio options menu in Grounded. Players use sliders to control the master, effects, music, UI, dialogue, and voice chat volume.":::
 
 ### Audio channel customization
 
@@ -71,7 +71,7 @@ Allow players to customize the difficulty of the game. Providing customization o
 
 ### Overall game difficulty
 
-By providing players the ability to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. In the following image of the Outer Worlds **Select Difficulty** menu, players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a detailed description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
+By providing players the ability to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. In the following image of The Outer Worlds **Select Difficulty** menu, players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a detailed description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
 
 :::image type="content" source="../media/difficulty.png" alt-text="Screenshot that shows the difficulty settings screen in The Outer Worlds. Story is selected with a description of how it affects gameplay. It reads, Use this mode if you enjoy story more than combat. In Story Mode, enemies have less health and do less damage.":::
 
