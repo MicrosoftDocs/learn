@@ -43,4 +43,3 @@ Investigate an external IP:
 1. Select the search icon or press Enter.
 
 Details about the IP address are displayed, including registration details (if available), reverse IPs (for example, domains), prevalence of devices in the organization that communicated with this IP Address (during the selected time period), and the devices in the organization that were observed communicating with this IP address.
-

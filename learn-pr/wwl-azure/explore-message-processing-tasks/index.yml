@@ -3,7 +3,7 @@ uid: learn.wwl.explore-message-processing-tasks
 metadata:
   title: Explore message processing tasks
   description: "This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob storage for your device data."
-  ms.date: 11/24/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
   - Describe the hot and cold storage path options for an Azure IoT solution.
   - Describe how Azure Stream Analytics is used in an IoT solution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/message-process-explore-tasks.svg
 levels:
 - intermediate
 roles:

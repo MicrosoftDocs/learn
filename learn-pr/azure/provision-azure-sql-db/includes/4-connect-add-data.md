@@ -34,7 +34,7 @@ Here, you use the `az` utility to list your databases and show some information 
 
 1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
 
-    Replace `[server-name]` with the name of your Azure SQL logical server.
+    Replace `[server-name]` with the name of the Azure SQL logical server you created.
 
     ```azurecli
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=[server-name]
@@ -108,7 +108,7 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     az sql db show-connection-string --client sqlcmd --name Logistics
     ```
 
-    Your output resembles this.
+    Your output resembles this. Copy this output for use in the next step.
 
     ```output
     "sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"

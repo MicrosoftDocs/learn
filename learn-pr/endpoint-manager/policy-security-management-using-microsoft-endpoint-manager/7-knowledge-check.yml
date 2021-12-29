@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "What is Conditional Access?"
     choices:
-    - content: "Conditional Access allows anonymous users to access organizational resources on trusted devices. "
+    - content: "Conditional Access allows anonymous users to access organizational resources on trusted devices."
       isCorrect: false
       explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
     - content: "Conditional Access prevents trusted users from accessing trusted devices and trusted apps."
@@ -24,7 +24,7 @@ quiz:
     - content: "Conditional Access ensures that only trusted users can access organizational resources on trusted devices using trusted apps."
       isCorrect: true
       explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
-  - content: "When assign a policy, what is the difference between using an assigned group and using a dynamic group?"
+  - content: "When you assign a policy, what is the difference between using an assigned group and using a dynamic group?"
     choices:
     - content: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
       isCorrect: true
@@ -40,7 +40,7 @@ quiz:
     - content: "Assign a policy to a device group when you want to have different policy settings for each user."
       isCorrect: false
       explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
-    - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a devices group."
+    - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a device group."
       isCorrect: true
       explanation: ""
     - content: "If you don't want to have any policy settings for the device, use a device group."

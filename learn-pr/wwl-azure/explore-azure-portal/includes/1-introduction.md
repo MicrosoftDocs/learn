@@ -4,7 +4,7 @@ Suppose you have joined a team that will be implementing an Azure IoT solution f
 
 In this module, you will:
 
- -  Review features of the Azure portal.<br>
+ -  Review features of the Azure portal.
  -  Explore the Azure portal toolbar, navigation menu, and dashboard.
 
 By the end of this module, you will be able to customize the Azure portal for your projects.

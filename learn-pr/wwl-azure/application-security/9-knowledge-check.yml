@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2021
+  ms.date: 12/17/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -19,15 +19,15 @@ quiz:
   questions:
   - content: "What method does Microsoft Azure App Service use to obtain credentials for users attempting to access an app?"
     choices:
-    - content: "Credentials that are stored in the browser"
+    - content: "Credentials that are stored in the browser"
       isCorrect: false
       explanation: "Never want to use browser stored credentials for secure access to an application."
-    - content: "Pass-through authentication"
+    - content: "Pass-through authentication"
       isCorrect: false
       explanation: "Pass-through authentication is for Azure AD Connect."
-    - content: "Redirection to a provider endpoint"
+    - content: "Redirection to a provider endpoint"
       isCorrect: true
-      explanation: "Redirection to a provider endpoint. Microsoft Azure App Service apps redirect requests to an endpoint that signs in users for that provider. The App Service can automatically direct all unauthenticated users to the endpoint that signs in users."
+      explanation: "Redirection to a provider endpoint. Microsoft Azure App Service apps redirect requests to an endpoint that signs in users for that provider. The App Service can automatically direct all unauthenticated users to the endpoint that signs in users."
   - content: "What type of Managed Service Identities can be created?"
     choices:
     - content: "Application-assigned and VM-assigned"

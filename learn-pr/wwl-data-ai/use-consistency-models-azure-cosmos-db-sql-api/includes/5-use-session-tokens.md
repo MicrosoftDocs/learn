@@ -1,4 +1,4 @@
-When session consistency is selected, each session is controlled using a session token. This token is then passed back-and-forth between Azure Cosmos DB and the client to ensure that all operations stay within the same session and are guaranteed strong consistency.
+When session consistency is selected, consistency is managed using a session token. This token is then passed back-and-forth between Azure Cosmos DB and the client to ensure that clients get read your own write guarantees.
 
 Using the .NET SDK classes, the session token can be manually extracted and passed back to the Azure Cosmos DB resource.
 

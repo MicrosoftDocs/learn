@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.windows-server-update-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following can you use to host a WSUS database?"
+    choices:
+    - content: "SQL Server"
+      isCorrect: true
+      explanation: "Correct. You can use a supported version of SQL Server to host the WSUS database."
+    - content: "Microsoft Access"
+      isCorrect: false
+      explanation: "Incorrect. You cannot use Microsoft Access to host the WSUS database."
+    - content: "MySQL"
+      isCorrect: false
+      explanation: "Incorrect. You cannot use MySQL to host the WSUS database."
+  - content: "Azure Update Management is associated with which Azure service?"
+    choices:
+    - content: "Azure Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Azure Update Management is not associated with Azure Sentinel."
+    - content: "Azure Automation"
+      isCorrect: true
+      explanation: "Correct. Azure Update Management is associated with Azure Automation."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect. Azure Update Management is not associated with Azure Functions."
+  - content: "You want a downstream WSUS server to receive updates, computer group membership information, and approvals from an upstream server. In which mode should you configure this downstream WSUS server?"
+    choices:
+    - content: "Synchronous mode"
+      isCorrect: false
+      explanation: "Incorrect. You cannot configure WSUS server in synchronous mode as a method of receiving group membership, updates and approvals from an upstream server."
+    - content: "Autonomous mode"
+      isCorrect: false
+      explanation: "Incorrect. You cannot configure WSUS server in autonomous mode as a method of receiving group membership, updates and approvals from an upstream server."
+    - content: "Replica mode"
+      isCorrect: true
+      explanation: "Correct. Replica mode configures a downstream WSUS server to receive group membership, updates and approvals from an upstream server."

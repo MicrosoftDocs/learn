@@ -4,10 +4,7 @@ The best way to determine the appropriate VM size is to consider the type of wor
 
 :::row:::
   :::column:::
-    **Series**
-  :::column-end:::
-  :::column:::
-    **Purpose**
+    **Type**
   :::column-end:::
   :::column:::
     **Example Usage**
@@ -15,123 +12,50 @@ The best way to determine the appropriate VM size is to consider the type of wor
 :::row-end:::
 :::row:::
   :::column:::
-    A
+    General purpose
   :::column-end:::
   :::column:::
-    Entry-level economical VMs for dev or test
-  :::column-end:::
-  :::column:::
-    Development and test servers, low traffic web servers, small to medium databases, servers for proof-of-concepts, and code repositories.
+    Balanced CPU-to-memory ratio. Ideal for testing and development, small to medium databases, and low to medium traffic web servers.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    B
+    Compute optimized
   :::column-end:::
   :::column:::
-    Economical burstable VMs
-  :::column-end:::
-  :::column:::
-    Development and test servers, low-traffic web servers, small databases, micro services, servers for proof-of-concepts, build servers.
+    High CPU-to-memory ratio. Good for medium traffic web servers, network appliances, batch processes, and application servers.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    D
+    Memory optimized
   :::column-end:::
   :::column:::
-    General purpose compute
-  :::column-end:::
-  :::column:::
-    Enterprise-grade applications, relational databases, in-memory caching, and analytics. The latest generations are ideal for applications that demand faster CPUs, better local disk performance, or higher memories.
+   High memory-to-CPU ratio. Great for relational database servers, medium to large caches, and in-memory analytics.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Dc
+    Storage optimized
   :::column-end:::
   :::column:::
-    Protect data in use
-  :::column-end:::
-  :::column:::
-    Confidential querying in databases, creation of scalable confidential consortium networks, and secure multiparty machine learning algorithms. The DC-series VMs are ideal to build secure enclave-based applications to protect customers code and data while it's in use.
+    High disk throughput and IO ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    E
+    GPU
   :::column-end:::
   :::column:::
-    Optimized for in-memory hyper-threaded applications
-  :::column-end:::
-  :::column:::
-    SAP HANA (E64s\_v3 only), SAP S/4 HANA application layer, SAP NetWeaver application layer, SQL Hekaton, and other large in-memory business critical workloads.
+    Specialized virtual machines targeted for heavy graphic rendering and video editing, as well as model training and inferencing (ND) with deep learning. Available with single or multiple GPUs.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    F
+    High performance compute
   :::column-end:::
   :::column:::
-    Compute optimized virtual machines
-  :::column-end:::
-  :::column:::
-    Batch processing, web servers, analytics, and gaming.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    G
-  :::column-end:::
-  :::column:::
-    Memory and storage optimized virtual machines
-  :::column-end:::
-  :::column:::
-    Large SQL and NoSQL databases, ERP, SAP, and data warehousing solutions.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    H
-  :::column-end:::
-  :::column:::
-    High-Performance Computing virtual machines
-  :::column-end:::
-  :::column:::
-    Fluid dynamics, finite element analysis, seismic processing, reservoir simulation, risk analysis, electronic design automation, rendering, Spark, weather modeling, quantum simulation, computational chemistry, heat transfer simulation.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    L
-  :::column-end:::
-  :::column:::
-    Storage optimized virtual machines
-  :::column-end:::
-  :::column:::
-    NoSQL databases such as Cassandra, MongoDB, Cloudera, and Redis. Data warehousing applications and large transactional databases are great use cases as well.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    M and Mv2
-  :::column-end:::
-  :::column:::
-    Memory optimized virtual machines
-  :::column-end:::
-  :::column:::
-    SAP HANA, SAP S/4 HANA, SQL Hekaton and other large in-memory business critical workloads requiring massive parallel compute power.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    N
-  :::column-end:::
-  :::column:::
-    GPU enabled virtual machines
-  :::column-end:::
-  :::column:::
-    Simulation, deep learning, graphics rendering, video editing, gaming, and remote visualization.
+    Our fastest and most powerful CPU virtual machines with optional high-throughput network interfaces (RDMA).
   :::column-end:::
 :::row-end:::
 

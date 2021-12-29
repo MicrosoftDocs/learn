@@ -26,8 +26,9 @@ levels:
 roles:
   - developer
 products:
-  - blazor-server
-  - blazor-webassembly
+  - blazor
+  - dotnet
+  - aspnet-core
 units:
 - learn.intro-to-blazor.introduction
 - learn.intro-to-blazor.what-is-blazor

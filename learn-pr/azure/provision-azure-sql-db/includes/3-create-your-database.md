@@ -93,11 +93,10 @@ Over time, if you realize you need more compute power to keep up with demand, yo
       | Setting | Value |
       | --- | --- |
       | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
-      | Location | Accept default. |
+      | Location | Select one of the regions from the list below. |
       | Authentication Method | Use SQL Authentication. (default) |
       | Server admin login | Choose a unique admin login serves as your primary administrator login ID. |
       | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric. |
-      | Location | Select one of the regions from the list below. |
 
      [!INCLUDE [regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
