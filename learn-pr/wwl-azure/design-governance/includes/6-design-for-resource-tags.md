@@ -36,7 +36,7 @@ Resource tags generally fall into five categories functional, classification, ac
 | - | - | - |
 | Functional| app = catalogsearch1  <br>tier = web  <br>webserver = apache  <br>‎env = prod, dev, staging| Categorize resources by their purpose within a workload, what environment they've been deployed to, or other functionality and operational details. |
 | Classification| confidentiality = private  <br>SLA = 24hours| Classifies a resource by how it's used and what policies apply to it. |
-| Accounting| department = finance  <br>rogram = business-initiative  <br>region = northamerica| Allows a resource to be associated with specific groups within an organization for billing purposes. |
+| Accounting| department = finance  <br>program = business-initiative  <br>region = northamerica| Allows a resource to be associated with specific groups within an organization for billing purposes. |
 | Partnership| owner = jsmith  <br>contactalias = catsearchowners  <br>‎stakeholders = user1;user2;user3| Provides information about what people (outside of IT) are related or otherwise affected by the resource. |
 | Purpose| businessprocess = support  <br>businessimpact = moderate  <br>‎revenueimpact = high| Aligns resources to business functions to better support investment decisions. |
 

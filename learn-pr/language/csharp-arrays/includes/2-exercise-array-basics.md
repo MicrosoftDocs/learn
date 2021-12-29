@@ -98,6 +98,7 @@ Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
 Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
 Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
 ```
+
 Run the code.  You should see the following output.
 
 ```output
@@ -152,7 +153,7 @@ Just like you can initialize a variable at the time you declare it, you can init
 
 ### Step 6 - Initialize an array
 
-Use a multi-line comment to comment out the lines where you declare the `fraudulentOrderIDs` variable and assign each of its elements a value. Then, add the following line that declares and initializes the array with the same values all in a single line of code.
+Use a multi-line comment (`/* ... */`) to comment out the lines where you declare the `fraudulentOrderIDs` variable and assign each of its elements a value. Then, add the following line that declares and initializes the array with the same values all in a single line of code.
 
 ```csharp
 string[] fraudulentOrderIDs = { "A123", "B456", "C789" };

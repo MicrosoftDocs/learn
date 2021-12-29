@@ -214,7 +214,7 @@ Arguments
     --location -l                                      : Location of your IoT Hub. Default is the
                                                         location of target resource group.
     --partition-count                                  : The number of partitions of the backing
-                                                        Event Hub for device-to-cloud messages.
+                                                        Event Hubs for device-to-cloud messages.
                                                         Default: 2.
     --rd --retention-day                              : Specifies how long this IoT hub will
                                                         maintain device-to-cloud events, between 1
@@ -290,7 +290,7 @@ The following IoT Hub subgroups can be used to complete tasks that are associate
     consumer-group
   :::column-end:::
   :::column:::
-    Manage the Event Hub consumer groups of an IoT hub.
+    Manage the Event Hubs consumer groups of an IoT hub.
   :::column-end:::
 :::row-end:::
 :::row:::

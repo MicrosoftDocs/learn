@@ -82,19 +82,7 @@ The following table summarizes and compares the access modes:
 | Who is each model intended for?| Central administration. Administrators who need to configure data collection and users who need access to a wide variety of resources. Also currently required for users who need to access logs for resources outside of Azure.| Application teams. Administrators of Azure resources being monitored. |
 | What does a user require to view logs?| Permissions to the workspace. See **Workspace permissions** in [Manage access using workspace permissions](/azure/azure-monitor/logs/manage-access).| Read access to the resource. See **Resource permissions** in [Manage access using Azure permissions](/azure/azure-monitor/logs/manage-access). Permissions can be inherited (such as from the containing resource group) or directly assigned to the resource. Permission to the logs for the resource will be automatically assigned. |
 | What is the scope of permissions?| Workspace. Users with access to the workspace can query all logs in the workspace from tables that they have permissions to. See [Table access control](/azure/azure-monitor/logs/manage-access)| Azure resource. User can query logs for specific resources, resource groups, or subscription they have access to from any workspace but can't query logs for other resources. |
-| How can user access logs?| - Start **Logs** from **Azure Monitor** menu.
-
-- Start **Logs** from **Log Analytics workspaces**.
-
-- From Azure Monitor [Workbooks](/azure/azure-monitor/visualizations).
-
-- Start **Logs** from the menu for the Azure resource
-
-- Start **Logs** from **Azure Monitor** menu.
-
-- Start **Logs** from **Log Analytics workspaces**.
-
-- From Azure Monitor [Workbooks](/azure/azure-monitor/visualizations). 
+| How can user access logs?| Start logs from Azure Monitor and Log Analytics workspaces. View the logs from Azure Monitor [Workbooks](/azure/azure-monitor/visualizations). | Same as workspace-context, and you start logs from the Azure resource. |
 
 
 ## Scale and ingestion volume rate limit

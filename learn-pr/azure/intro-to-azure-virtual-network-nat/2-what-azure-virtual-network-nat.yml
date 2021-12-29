@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-nat-gateway.2-what-azure-virtual-network-nat
+title: What is Azure Virtual Network NAT?
+metadata:
+  unitType: learning-content
+  title: What is Azure Virtual Network NAT?
+  description: This unit describes the Azure Virtual Network NAT service.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-azure-virtual-network-nat.md)]

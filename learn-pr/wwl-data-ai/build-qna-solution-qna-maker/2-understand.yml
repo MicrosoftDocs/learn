@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-qna-solution-qna-maker.understand
-title: Understand QnA Maker
+title: Understand question answering
 metadata:
-  title: Understand QnA Maker
-  description: "Understand QnA Maker"
-  ms.date: 09/17/2021
+  title: Understand question answering
+  description: "Understand question answering"
+  ms.date: 12/14/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

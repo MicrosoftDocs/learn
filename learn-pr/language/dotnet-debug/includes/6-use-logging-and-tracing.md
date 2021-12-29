@@ -35,7 +35,7 @@ Debug the application, and you should see the following output:
 ```output
 Entering Fibonacci method
 We are looking for the 5th number
-1 is 1, n1 is 1, n2 is 1
+sum is 1, n1 is 1, n2 is 1
 ```
 
 ## Check for conditions with Assert

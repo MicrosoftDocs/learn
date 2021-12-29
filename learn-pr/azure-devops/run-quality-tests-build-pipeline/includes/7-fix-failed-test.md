@@ -210,17 +210,16 @@ Mara and Andy look at the source code for the method that's being tested, `Local
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
-    Expression<Func<T, bool>> queryPredicate,
-    Expression<Func<T, int>> orderDescendingPredicate,
+    Func<T, bool> queryPredicate,
+    Func<T, int> orderDescendingPredicate,
     int page = 1, int pageSize = 10
 )
 {
-    var result = _items.AsQueryable()
+    var result = _items
         .Where(queryPredicate) // filter
         .OrderByDescending(orderDescendingPredicate) // sort
         .Skip(page * pageSize) // find page
-        .Take(pageSize - 1) // take items
-        .AsEnumerable(); // make enumeratable
+        .Take(pageSize - 1); // take items
 
     return Task<IEnumerable<T>>.FromResult(result);
 }
@@ -250,17 +249,16 @@ In this section, you fix the error by changing the code back to its original sta
 
     ```csharp
     public Task<IEnumerable<T>> GetItemsAsync(
-        Expression<Func<T, bool>> queryPredicate,
-        Expression<Func<T, int>> orderDescendingPredicate,
+        Func<T, bool> queryPredicate,
+        Func<T, int> orderDescendingPredicate,
         int page = 1, int pageSize = 10
     )
     {
-        var result = _items.AsQueryable()
+        var result = _items
             .Where(queryPredicate) // filter
             .OrderByDescending(orderDescendingPredicate) // sort
             .Skip(page * pageSize) // find page
-            .Take(pageSize) // take items
-            .AsEnumerable(); // make enumeratable
+            .Take(pageSize); // take items
 
         return Task<IEnumerable<T>>.FromResult(result);
     }

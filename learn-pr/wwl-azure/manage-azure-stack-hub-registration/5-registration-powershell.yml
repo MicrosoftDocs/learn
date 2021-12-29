@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-registration.registration-using-powershell
+title: Registration using PowerShell
+metadata:
+  title: Registration using PowerShell
+  description: "Registration using PowerShell"
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-registration-powershell.md)]
