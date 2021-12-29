@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-secrets-in-java-applications-zero-trust.4-introduction-to-azure-key-vault
+uid: learn.manage-secrets-in-java-applications-zero-trust.4-introduction-azure-key-vault
 title: Introduction to Azure Key Vault
 metadata:
   title: Introduction to Azure Key Vault
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-introduction-to-azure-key-vault.md)]
+  [!include[](includes/4-introduction-azure-key-vault.md)]

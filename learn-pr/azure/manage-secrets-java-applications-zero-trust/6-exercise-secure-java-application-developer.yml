@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-secrets-in-java-applications-zero-trust.6-secure-a-java-application-from-a-java-developer-perspective
+uid: learn.manage-secrets-in-java-applications-zero-trust.6-exercise-secure-java-application-developer
 title: Exercise - Secure a Java application from a Java developer perspective
 metadata:
   title: Exercise - Secure a Java application from a Java developer perspective
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-secure-a-java-application-from-a-java-developer-perspective.md)]
+  [!include[](includes/6-exercise-secure-java-application-developer.md)]
