@@ -1,6 +1,6 @@
-You can use the Language Understanding to build a model that predicts intents and entities from natural language utterances. A client application can then use this trained model to respond to natural language user input.
+You can use Conversational Language Understanding to build a model that predicts intents and entities from natural language utterances. A client application can then use this trained model to respond to natural language user input.
 
-You can find out more about Language Understanding in the [service documentation](/azure/cognitive-services/luis/).
+You can find out more about Conversational Language Understanding in the [service documentation](/azure/cognitive-services/language-service/conversational-language-understanding/overview).
 
 ## Clean-up
 

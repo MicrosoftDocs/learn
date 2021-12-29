@@ -127,7 +127,7 @@ Go differs from other programming languages in how it organizes project files. F
 
 To set your workspace to a different location, you can use the **$GOPATH** environment variable. This environment variable helps to avoid future problems when working with more complex projects.
 
-::: zone pivot="linux,macos"
+::: zone pivot="linux"
 Configure your workspace by adding the following command to your ~/.profile:
 
 ```console
@@ -142,6 +142,20 @@ source ~/.profile
 
 ::: zone-end
 
+::: zone pivot="macos"
+Configure your workspace by adding the following command to your ~/.zshenv:
+
+```console
+export GOPATH=$HOME/go
+```
+
+Then run the following command to update your environment variables:
+
+```console
+source ~/.zshenv
+```
+
+::: zone-end
 
 ::: zone pivot="windows"
 To configure your workspace, specify the location of your Go project folder in a local Go environment variable.

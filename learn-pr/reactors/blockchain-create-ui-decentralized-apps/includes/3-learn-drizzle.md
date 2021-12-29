@@ -32,7 +32,7 @@ The three core packages are:
 
 ## Install and use Drizzle
 
-Drizzle can be installed with the help of the node package manager (npm). To install Drizzle, you need to go to your terminal and type: `npm install drizzle --save`.
+Drizzle can be installed with the help of the node package manager (npm). To install Drizzle, you need to go to your terminal and type: `npm install @drizzle/store`.
 
 Then when you're ready to use Drizzle, you can import the packages that you want to use in your project like the following example:
 

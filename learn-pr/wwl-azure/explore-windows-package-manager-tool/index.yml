@@ -3,7 +3,7 @@ uid: learn.wwl.explore-windows-package-manager-tool
 metadata:
   title: Explore the Windows Package Manager tool
   description: "Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository."
-  ms.date: 09/29/2021
+  ms.date: 12/08/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with basic computing concepts and terminology such as operating systems, networking, and data processing
   - Ability to install and uninstall software on a Windows computer
   - Ability to execute commands from a command line prompt
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/windows-package-manager-tools.svg
 levels:
 - beginner
 roles:

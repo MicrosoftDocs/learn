@@ -167,7 +167,7 @@ When you are using Blob storage as output, a new file is created in the blob in 
 
 ## Event Hubs
 
-The Azure Event Hubs service is a highly scalable publish-subscribe event ingestor. It can collect millions of events per second. One use of an Event Hub as output is when the output of a Stream Analytics job becomes the input of another streaming job. For information about the maximum message size and batch size optimization, see the output batch size section.
+The Azure Event Hubs service is a highly scalable publish-subscribe event ingestor. It can collect millions of events per second. One use of an Event Hubs as output is when the output of a Stream Analytics job becomes the input of another streaming job. For information about the maximum message size and batch size optimization, see the output batch size section.
 
 You need a few parameters to configure data streams from Event Hubs as an output.
 
@@ -184,39 +184,39 @@ You need a few parameters to configure data streams from Event Hubs as an output
     Output alias
   :::column-end:::
   :::column:::
-    A friendly name used in queries to direct the query output to this Event Hub.
+    A friendly name used in queries to direct the query output to this Event Hubs.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event Hub namespace
+    Event Hubs namespace
   :::column-end:::
   :::column:::
-    A container for a set of messaging entities. When you created a new Event Hub, you also created an Event Hub namespace.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Event Hub name
-  :::column-end:::
-  :::column:::
-    The name of your Event Hub output.
+    A container for a set of messaging entities. When you created a new Event Hubs, you also created an Event Hubs namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event Hub policy name
+    Event Hubs name
   :::column-end:::
   :::column:::
-    The shared access policy, which you can create on the Event Hub's Configure tab. Each shared access policy has a name, permissions that you set, and access keys.
+    The name of your Event Hubs output.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Event Hub policy key
+    Event Hubs policy name
   :::column-end:::
   :::column:::
-    The shared access key that is used to authenticate access to the Event Hub namespace.
+    The shared access policy, which you can create on the Event Hubs' Configure tab. Each shared access policy has a name, permissions that you set, and access keys.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Event Hubs policy key
+  :::column-end:::
+  :::column:::
+    The shared access key that is used to authenticate access to the Event Hubs namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -224,7 +224,7 @@ You need a few parameters to configure data streams from Event Hubs as an output
     Partition key column
   :::column-end:::
   :::column:::
-    Optional. A column that contains the partition key for Event Hub output.
+    Optional. A column that contains the partition key for Event Hubs output.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -707,7 +707,7 @@ The following table lists the property names and their descriptions for creating
     Service Bus namespace
   :::column-end:::
   :::column:::
-    A container for a set of messaging entities. When you created a new Event Hub, you also created a Service Bus namespace.
+    A container for a set of messaging entities. When you created a new Event Hubs, you also created a Service Bus namespace.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -1137,7 +1137,7 @@ You can attach query columns as user properties to your outgoing messages. These
 
  -  Service Bus queue
  -  Service Bus topic
- -  Event Hub
+ -  Event Hubs
 
 In the following example, we add the two fields DeviceId and DeviceStatus to the metadata.
 
@@ -1231,8 +1231,8 @@ The following table summarizes the partition support and the number of output wr
   :::column-end:::
   :::column:::
     Varies depending on partition alignment.
-When the partition key for Event Hub output is equally aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in Event Hub output. Each writer uses the EventHubSender class to send events to the specific partition.
-When the partition key for Event Hub output is not aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in that prior step. Each writer
+When the partition key for Event Hubs output is equally aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in Event Hubs output. Each writer uses the EventHubSender class to send events to the specific partition.
+When the partition key for Event Hubs output is not aligned with the upstream (previous) query step, the number of writers is the same as the number of partitions in that prior step. Each writer
   :::column-end:::
   :::column:::
     Uses the SendBatchAsync class in EventHubClient to send events to all the output partitions.

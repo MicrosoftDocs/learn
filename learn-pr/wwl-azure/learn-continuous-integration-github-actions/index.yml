@@ -3,7 +3,7 @@ uid: learn.wwl.learn-continuous-integration-github-actions
 metadata:
   title: Learn continuous integration with GitHub Actions
   description: "Learn continuous integration with GitHub Actions"
-  ms.date: 11/23/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   - Create and manage secrets
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:

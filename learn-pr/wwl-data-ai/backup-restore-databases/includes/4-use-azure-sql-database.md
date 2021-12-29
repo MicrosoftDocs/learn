@@ -1,33 +1,53 @@
-Backing up and restoring Azure SQL Database is different than IaaS. 
 
-Backups are generated automatically for Azure SQL Database. A full backup is created once a week, a differential every 12 hours, and transaction log backups every 5 – 10 minutes. All backups are located in read-access, geo-redundant (RA-GRS) blobs replicated to a datacenter that is paired based on Azure rules. That means backups are safe from an outage in a single data center.
+Back up and restore on SQL Server PaaS offering work differently than on IaaS. Backups are generated automatically for Azure SQL Database, and Azure SQL Managed Instance. A full backup is created once a week, a differential every 12 hours, and transaction log backups every 5 – 10 minutes. All backups are located in read-access, geo-redundant (RA-GRS) blobs replicated to a datacenter that is paired based on Azure rules. That means backups are safe from an outage in a single data center.
 
-Backup policies can be configured per database as shown in the image below. Azure SQL Database can assist you to be compliant with mandatory backups for regulatory purposes with retention policies.
+## Database backup and restore for SQL Database
+
+SQL Database can assist you to be compliant with mandatory backups for regulatory purposes with retention policies. Backup policies can be configured per database as shown in the image below:
 
 :::image type="content" source="../media/module-77-high-availability-final-16.png" alt-text="Configuring automated backups for Azure SQL Database":::
 
+If the server containing the database is deleted, all backups will be deleted at the same time, and there is no way to recover them. If the server is not deleted but the database is, you can restore the database normally.
+
+Both SQL Database, and SQL Database Managed Instance have a feature called Accelerated Database Recovery (ADR). This feature is enabled by default, and its purpose is to decrease the time it takes to deal with long running transactions so they do not impact the recovery time. Although Accelerated Database Recovery was developed for Azure and was originally an Azure-based feature, ADR was implemented in SQL Server 2019 as well.
+
 > [!NOTE]
-> If the server containing the database is deleted, all backups will be deleted at the same time and there is no way to recover them. If the server is not deleted but the database is, the database can be restored normally.
+> You can't restore SQL Database Managed Instance backups on SQL Database.
 
-Both Azure SQL Database and Azure SQL Database Managed Instance have a feature called Accelerated Database Recovery (ADR). Its purpose is to decrease the time it takes to deal with long running transactions so they do not impact the recovery time. Although ADR was developed for Azure and was originally an Azure-based feature, ADR was implemented in SQL Server 2019 as well.
+### Point in time restore
 
-Backups generated for Azure SQL Database cannot be used with Azure SQL Database Managed Instance or any version of SQL Server.
+To restore a database to a specific point in time on SQL Database, you can use either Azure portal, Azure PowerShell, Azure CLI, or REST API.
 
-## Database backup and restore for Azure SQL Database Managed Instance
+> [![Restoring a database on SQL Database through Azure portal](../media/restore-sql-database.png)](../media/restore-sql-database.png#lightbox)
 
-By default, Azure creates backups for databases in Azure SQL Database Managed Instance and functions like Azure SQL Database.
+The image above shows the SQL Database restore page on Azure portal, where you can restore a database to a specific point in time.
 
-You can also manually back up and restore databases with Azure SQL Database Managed Instance using the same backup to URL/restore from URL functionality found in SQL Server covered earlier. That requires the use of credentials to access Azure Blob Storage.
+Restore in place is not supported on SQL Database, and SQL Managed Instance. You need to make sure the database does not exist before attempting the restore operation. By default, point in time retention policy is set to seven days, and you can change it to up to 35-days.
 
-There is one major difference: for full backups, you can only generate a COPY_ONLY backup since Azure SQL Database Managed Instance is maintaining the log chain. A sample backup statement would look like:
+### Restore a deleted database
 
-```tsql
+Both SQL Database, and SQL Managed Instance have a feature to restore a deleted database to the last point in time available before the `DROP DATABASE` took place.
+
+> [![Restoring a deleted database on SQL Database through Azure portal](../media/restore-sql-database-deleted.png)](../media/restore-sql-database-deleted.png#lightbox)
+
+The image above shows how to restore a deleted database on SQL Database. The *deleted databases* page shows a list of deleted databases available to restore, the database deletion time in UTC, and the database creation time in UTC. Once you select the database, the *Create SQL Database - Restore database* page will open. On that page you will find the earliest restore point in time available for the selected database.
+
+## Database backup and restore for SQL Database Managed Instance
+
+Azure manages backups for databases in SQL Database Managed Instance automatically, and they operate similar to SQL Database.
+
+You can also manually back up, and restore databases with SQL Database Managed Instance using the same backup to URL/restore from URL functionality found in SQL Server covered earlier. That requires the use of credentials to access the Azure Blob Storage container. SQL Database does not support this feature.
+
+You can only generate a `COPY_ONLY` backup since SQL Database Managed Instance is maintaining the log chain. A sample backup statement would look like:
+
+```sql
 BACKUP DATABASE contoso
-TO URL = 'https://myacc.blob.core.windows.net/testcontainer/contoso.bak' 
+TO URL = 'https://myacc.blob.core.windows.net/mycontainer/contoso.bak' 
 WITH COPY_ONLY
 ```
 
-Backups generated by Azure SQL Database Managed Instance cannot be used to restore a database on SQL Server or Azure SQL Database.
+> [!NOTE]
+> You can't restore SQL Database Managed Instance backups on SQL Database.
 
 ## Database backup and restore for Azure Database for MySQL
 

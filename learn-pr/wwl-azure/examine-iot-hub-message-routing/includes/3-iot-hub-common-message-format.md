@@ -1,4 +1,4 @@
-To support seamless interoperability across protocols, IoT Hub defines a common message format for all device-facing protocols. This message format is used for both device-to-cloud routing and cloud-to-device messages.
+To support seamless interoperability across protocols, IoT Hub defines a common message format for all device-facing protocols. This message format is used for both device-to-cloud and cloud-to-device messages.
 
 IoT Hub implements device-to-cloud messaging using a streaming messaging pattern. IoT Hub's device-to-cloud messages are more like Event Hubs events than Service Bus messages in that there is a high volume of events passing through the service that can be read by multiple readers.
 

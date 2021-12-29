@@ -1,4 +1,4 @@
-Microsoft 365 Defender provides a cross domain threat correlation and purpose-driven portal to investigate threats.  Incidents are based on related alerts created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
+Microsoft 365 Defender provides a cross-domain threat correlation and purpose-driven portal to investigate threats.  Incidents are based on related alerts created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
 
 This short video gives an overview of incidents in Microsoft 365 Defender.
 
