@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.enable-digital-transformation.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/14/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "To realize the benefits of digital transformation, business leaders need to look beyond technology to reimagine existing business models. What do business leaders also need to do to realize the benefits of digital transformation?"
+    choices:
+    - content: "Accelerate innovation by developing quality metrics for current processes."
+      isCorrect: false
+      explanation: "Incorrect. Quality metrics for current processes might be a good idea, but it is not part of digital transformation."
+    - content: "Embrace a different way of bringing together people, data, and processes to create value for customers."
+      isCorrect: true
+      explanation: "Correct. To realize the benefits of digital transformation, business leaders need to look beyond technology and reimagine existing business models. They also need to embrace a different way of bringing together people, data, and processes to create value for customers."
+    - content: "Study their competition and look for industry trends so their businesses won’t become victims of disruption."
+      isCorrect: false
+      explanation: "Incorrect. While it is always a good idea to keep up with industry trends, these trends are not limited to digital transformation."
+  - content: "To fuel digital transformation and business innovation, Microsoft enables customers to improve how they operate and compete in a rapidly changing world by building individualized solutions.  What do these solutions utilize?"
+    choices:
+    - content: "The intelligent cloud and the intelligent edge."
+      isCorrect: true
+      explanation: "Correct. Microsoft enables its customers to build cutting-edge, individualized solutions utilizing the power of the intelligent cloud and the intelligent edge to improve how they operate and compete in a rapidly changing world."
+    - content: "The modern workplace."
+      isCorrect: false
+      explanation: "Incorrect. While the modern workplace is important, it is only one component of digital transformation."
+    - content: "Hybrid cloud."
+      isCorrect: false
+      explanation: "Incorrect. While hybrid cloud is a Microsoft differentiator, it is not essential to digital transformation."
+  - content: "In order to deliver Microsoft experiences across platforms and different devices, and to drive our applications and infrastructure business in a way that brings together a common data estate for our customers, what has Microsoft embraced?"
+    choices:
+    - content: "General Data Protection Regulation (GDPR)."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft complies with the requirements of GDPR, but this compliance is not part of the drive to deliver Microsoft experiences across platforms."
+    - content: "Artificial intelligence."
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft has certainly embraced artificial intelligence, AI is not part of the drive to deliver Microsoft experiences across platforms."
+    - content: "Open standards."
+      isCorrect: true
+      explanation: "Correct. We want to deliver Microsoft experiences across platforms, different devices and bring together a common data estate by embracing open standards."
+  - content: "A digital transformation involves four pillars. Three of them are empower employees, engage customers, and optimize operations. What is the fourth pillar?"
+    choices:
+    - content: "Transform products."
+      isCorrect: true
+      explanation: "Correct. Differentiate and capture emerging opportunities by using data as a strategic asset and shifting from hindsight to foresight."
+    - content: "Encourage innovation."
+      isCorrect: false
+      explanation: "Incorrect. Encouraging innovation may be an outcome of digital transformation, but it is not one of the pillars."
+    - content: "Compete effectively."
+      isCorrect: false
+      explanation: "Incorrect. The ability to compete effectively may be an outcome of digital transformation, but it is not one of the pillars."

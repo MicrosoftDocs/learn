@@ -2,9 +2,9 @@ You should have learned how Microsoft 365 Defender provides a purpose-driven use
 
 You should now be able to:
 
-- Manage incidents in Microsoft 365 Defender
-- Investigate incidents in Microsoft 365 Defender
-- Conduct advanced hunting in Microsoft 365 Defender
+- Manage incidents for Microsoft 365 Defender
+- Investigate incidents for Microsoft 365 Defender
+- Conduct advanced hunting for Microsoft 365 Defender
 
 ## Learn more
 

@@ -4,12 +4,13 @@ title: Enable indexing metrics
 metadata:
   title: Enable indexing metrics
   description: "Enable indexing metrics"
-  ms.date: 11/30/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |

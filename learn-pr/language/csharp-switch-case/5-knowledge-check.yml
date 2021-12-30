@@ -21,9 +21,9 @@ quiz:
     - content: "A switch construct must include a default switch section."
       isCorrect: false
       explanation: "The default switch section is optional."
-    - content: "Two case labels can have the same matching expression."
+    - content: "Two case labels can have the same matching pattern."
       isCorrect: false
-      explanation: "Two case labels can't have the same matching expression."
+      explanation: "Two case labels can't have the same matching pattern."
     - content: "The colon at the end of the case label is optional."
       isCorrect: false
       explanation: "The colon isn't optional."

@@ -103,9 +103,9 @@ In this case, we're adding `6` to the `openingPosition` as the offset to calcula
 
 ### Avoid magic values
 
-As an aside, hardcoded strings like `"<span>"` in the previous code listing are known as "magic strings" and hardcoded numeric values like `6` are known as "magic numbers". "Magic" values are undesirable for a number of reasons and you should try to avoid them if possible.
+Hardcoded strings like `"<span>"` in the previous code listing are known as "magic strings" and hardcoded numeric values like `6` are known as "magic numbers". These "Magic" values are undesirable for a number of reasons and you should try to avoid them if possible.
 
-In this specific case, consider how your code might break if you needed to reference the string `"<span>"` multiple times in your code. What if you misspell it once as `"<sapn>"`. The compiler won't catch this at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
+In this specific case, consider how your code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`. The compiler won't catch this at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
 
 Instead, you should use a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable will be caught by the compiler.
 

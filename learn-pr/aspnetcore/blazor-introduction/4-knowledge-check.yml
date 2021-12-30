@@ -39,7 +39,7 @@ quiz:
         - content: ".cshtml"
           isCorrect: false
           explanation: "CSHTML files are Razor templates, but Blazor uses an advanced version of these templates that is rendered by the Blazor runtime"
-    - content: "You're building an application for field technicians in a plumbing company.  They will use these applications using the browser on their mobile phone.  For which of these reasons should you choose to build with Blazor Web Assembly?"
+    - content: "You're building an application for field technicians in a plumbing company.  They will use these applications using the browser on their mobile phone.  For which of these reasons should you choose to build with Blazor WebAssembly?"
       choices:
         - content: ".NET Familiarity"
           isCorrect: false

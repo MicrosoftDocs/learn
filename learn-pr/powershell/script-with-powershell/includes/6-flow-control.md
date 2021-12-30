@@ -32,7 +32,7 @@ If (<expression that evaluates to True or False>)
 
 You use operators to determine if an expression is `True` or `False`. There are a few operators. The basic idea is usually to determine if something on the left side of the operator matches something on the right side, given the operator's condition. An operator can express conditions like whether something is equal to something else, larger than something else, or matches a regular expression.
 
-Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is smaller than or equal to the value on the right side:
+Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is less than or equal to the value on the right side:
 
 ```powershell
 $Value = 3
@@ -58,14 +58,14 @@ If ($Value -le 0)
 }
 ```
 
-Because we put the `Else` next to the ending brace for the `If`, we created a joined construct that's works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
+Because we put the `Else` next to the ending brace for the `If`, we created a joined construct that works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
 
 > [!NOTE]
 > You can use `Else` only if there's an `If` construct defined immediately above it.
 
 ### `ElseIf`
 
-`If` and `Else` work great to cover all the paths code can take. `ElseIf` is another construct that can be helpful. `ElseIf` is meant to be used with `If`. It says "the expression in this construct will be evaluated if the preceding `If` statement evaluates to `False`." Like `If`, `ElseIf` can take an expression, so it helps to think of `ElseIf` as a _secondary if_.
+`If` and `Else` work great to cover all the paths code can take. `ElseIf` is another construct that can be helpful. `ElseIf` is meant to be used with `If`. It says "the expression in this construct will be evaluated if the preceding `If` statement evaluates to `False`." Like `If`, `ElseIf` can take an expression, so it helps to think of `ElseIf` as a _secondary If_.
 
 Here's an example that uses `ElseIf`:
 

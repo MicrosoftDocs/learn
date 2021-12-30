@@ -2,13 +2,13 @@ Most collections are *iterable*. They have an internal implementation that allow
 
 ## Step 1 - Add a file for this exercise
 
-Use the techniques that you learned in previous modules to add a new code file in this module's folder.  For example, you might create a file named *exercise2.py*.
+Use the techniques that you learned in previous modules to add a new code file in this module's folder. For example, you might create a file named *exercise2.py*.
 
 ## Step 2 - Test a value for inclusion in a list
 
 The `in` keyword allows us to iterate through each item in a list. But we can also use it as a standalone operator to test whether an item belongs to a list.  
 
-What if we want to know if a certain number is part of a list of numbers?  We can iterate through each number and then use an `if` statement to see if we find the value. But a better approach uses the `in` or `not in` operators to test the item for inclusion.
+What if we want to know if a certain number is part of a list of numbers? We can iterate through each number and then use an `if` statement to see if we find the value. But a better approach uses the `in` or `not in` operators to test the item for inclusion.
 
 Add the following code to your new code file.
 
@@ -33,14 +33,15 @@ True
 
 ## Step 3 - Loop through a list
 
-The `for` statement allows us to iterate through each item in a list.  The `for` statement includes:
+The `for` statement allows us to iterate through each item in a list. The `for` statement includes:
+
 - The `for` keyword.
-- The variable name that will hold the next item in the list.  This variable is available in the code block that follows.
+- The variable name that will hold the next item in the list. This variable is available in the code block that follows.
 - The `in` keyword.
 - The variable name of the list.
 - The colon symbol (`:`), which ends the statement.
 
-The part after the `for` statement is just as important. There, you define a code block that will be executed for each item in the list.  The current item's value is set to a variable in the `for` statement. It's available in the body of the code block.
+The part after the `for` statement is just as important. There, you define a code block that will be executed for each item in the list. The current item's value is set to a variable in the `for` statement. It's available in the body of the code block.
 
 Comment out the code from the previous section. Then add the following code listing.
 
@@ -65,7 +66,7 @@ Tokyo
 
 The `for` statement has features similar to the `while` statement, which we explored in another module.
 
-The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out of the loop, we can filter the original list.
+The `break` statement allows you to break out of the `for` iteration. In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out of the loop, we can filter the original list.
 
 Comment out the code from the previous section. Then add the following code listing.
 
@@ -92,7 +93,7 @@ When you execute the code, you should see the following output.
 
 ## Step 5 - Use an `else` statement
 
-If you didn't break out of the loop and you want to execute code only after each item in the list has been processed, then you can use the `else` statement.  In the following example, we'll print the phrase `No numbers greater than 90` only if each number in our random list of five numbers is below the value `90`.
+If you didn't break out of the loop and you want to execute code only after each item in the list has been processed, then you can use the `else` statement. In the following example, we'll print the phrase `No numbers greater than 90` only if each number in our random list of five numbers is below the value `90`.
 
 Comment out the code from the previous section. Then add the following code listing.
 
@@ -142,7 +143,7 @@ Complete
 
 Use the `continue` statement in a code block to skip the remaining logic and move to the next item in a list in a `for` statement.
 
-In this section, we build a short program that filters out a list.  The list contains both `int` and `string`. We want to create a new list that contains only the `str` values.  We use the `continue` statement to move to the next item in the list instead of adding the current item to the filtered list.
+In this section, we build a short program that filters out a list. The list contains both `int` and `string`. We want to create a new list that contains only the `str` values. We use the `continue` statement to move to the next item in the list instead of adding the current item to the filtered list.
 
 Comment out the code from the previous section. Then add the following code listing.
 
@@ -165,13 +166,13 @@ When you execute the code, you should see the following output.
 ```
 
 > [!NOTE]
-> In the output for this step, we're printing the entire array of values that were filtered. Python displays these values as an array of strings using square brackets, commas, and single quotes.  If you want each individual item to print on a new line without all the extra characters, you must use the `print()` **inside** of the for loop.  See the other code listings on this page for examples of how to do this.
+> In the output for this step, we're printing the entire array of values that were filtered. Python displays these values as an array of strings using square brackets, commas, and single quotes. If you want each individual item to print on a new line without all the extra characters, you must use the `print()` **inside** of the for loop. See the other code listings on this page for examples of how to do this.
 
 ## Step 7 - Create nested `for` loops
 
 Nesting one `for` loop inside of another `for` loop is a common way to generate a combination of values.
 
-Suppose we're building a program for card playing. We want to create one card for each combination of a suit and a rank.  We could hard-code all 52 values in a deck of cards. Or we could generate a deck of cards by first creating a list of suits and a list of ranks and then using a nested `for` loop.
+Suppose we're building a program for card playing. We want to create one card for each combination of a suit and a rank. We could hard-code all 52 values in a deck of cards. Or we could generate a deck of cards by first creating a list of suits and a list of ranks and then using a nested `for` loop.
 
 Comment out the code from the previous section. Then add the following code listing.
 
@@ -179,7 +180,7 @@ Comment out the code from the previous section. Then add the following code list
 suits = ["Hearts", "Spades", "Clubs", "Diamonds"]
 ranks = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
 
-for  suit in suits:
+for suit in suits:
   for rank in ranks:
     print(f'{rank} of {suit}') 
 ```

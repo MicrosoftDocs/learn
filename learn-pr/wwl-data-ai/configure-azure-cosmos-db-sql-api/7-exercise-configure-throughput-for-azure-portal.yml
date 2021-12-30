@@ -4,13 +4,12 @@ title: 'Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azur
 metadata:
   title: 'Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azure portal'
   description: "Exercise: Configure throughput for Azure Cosmos DB SQL API with the Azure portal"
-  ms.date: 12/09/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107571
 labModal: true
 durationInMinutes: 15
