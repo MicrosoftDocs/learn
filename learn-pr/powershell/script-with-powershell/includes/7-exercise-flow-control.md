@@ -4,12 +4,14 @@ When you write scripts, they might work as intended as long as you type in reaso
 
 > [!NOTE]
 > Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
+
 - If you haven't completed the previous exercises in this module, run the following commands:
 
    ```bash
    mkdir webapp
    cd webapp
-   touch index.html app.js
+   New-Item index.html
+   New-Item app.js
    cd ..
    ```
 
@@ -19,10 +21,10 @@ When you write scripts, they might work as intended as long as you type in reaso
 
 You've been working with a backup script so far. You've been adding parameters to it. You can make it even safer to use by adding checks that ensure the script only continues if it's provided reasonable parameter input.
 
-Let's look at the current script. If you completed the previous exercise, you should have a file called _Backup.ps1_. If not, create the file:  
+Let's look at the current script. If you completed the previous exercise, you should have a file called _Backup.ps1_. If not, create the file and open it in your code editor:  
 
 ```bash
-touch Backup.ps1
+New-Item Backup.ps1
 code Backup.ps1
 ```
 
@@ -35,7 +37,7 @@ Param(
 )
 $date = Get-Date -format "yyyy-MM-dd"
 Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
 ```
 
 As you know, the script will stop responding if `$Path` points to a directory that doesn't exist.
@@ -98,11 +100,11 @@ As you know, the script will stop responding if `$Path` points to a directory th
      Throw "The source directory $Path does not exist, please specify an existing directory"
    }
    $date = Get-Date -format "yyyy-MM-dd"
-   $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
+   $DestinationFile = "$($DestinationPath + 'backup-' + $date + '.zip')"
    If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-     Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+     Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    } Else {
      Write-Error "Today's backup already exists"
    }
@@ -114,7 +116,7 @@ As you know, the script will stop responding if `$Path` points to a directory th
    If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-     Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+     Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    } Else {
      Write-Error "Today's backup already exists"
    }

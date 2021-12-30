@@ -53,10 +53,10 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    $PI = 3.14
    ```
 
-1. Create a file named *PI.ps1*:
+1. Create a file named *PI.ps1* and open it in your code editor:
 
    ```powershell
-   touch PI.ps1
+   New-Item PI.ps1
    code PI.ps1
    ```
 
@@ -76,7 +76,7 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    Your script displays the following text:
 
    ```output
-   The value of $PI is now 3
+   The value of $PI is now 3, inside the script
    ```
 
    Your script does two things. First, it creates a script-local variable `$PI` that shadows the `$PI` variable defined in the local scope. Next, the second row in the script interpolates the `$PI` variable because you used double quotation marks. It escapes interpolation the first time because you used a back tick.

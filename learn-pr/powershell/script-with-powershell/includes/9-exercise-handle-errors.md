@@ -12,7 +12,8 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
     ```bash
     mkdir webapp
     cd webapp
-    touch index.html app.js
+    New-Item index.html
+    New-Item app.js
     cd ..
     ```
 
@@ -21,7 +22,7 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
 1. You also need a file named _Backup.ps1_. Run these commands:
 
     ```bash
-    touch Backup.ps1
+    New-Item Backup.ps1
     code Backup.ps1
     ```
 
@@ -40,13 +41,13 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
     
     $date = Get-Date -format "yyyy-MM-dd"
     
-    $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
+    $DestinationFile = "$($DestinationPath + 'backup-' + $date + '.zip')"
     If (-Not (Test-Path $DestinationFile)) 
     {
-       Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-       Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
+      Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
     } Else {
-       Write-Error "Today's backup already exists"
+      Write-Error "Today's backup already exists"
     }
     ```
 
@@ -87,7 +88,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
      }
    ```
 
-   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code again on the _webapp_ directory, the following code will print a list if items:
+   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code on the _webapp_ directory, the following code will print a list of items:
 
    ```powershell
    (Get-ChildItem $Path).Extension | Sort-Object -Unique
@@ -96,8 +97,8 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    Here's the output:
 
    ```output
-   .js
    .html
+   .js
    ```
 
    In the full statement, we're using the `-match` operator. The `-match` operator expects a regular expression pattern. In this case, the expression states "do any of the file extensions match `.html`, `.js`, or `.css`?" The result of the statement is saved to the variable `$ContainsApplicationFiles`.
@@ -111,6 +112,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    > [!NOTE]
    > Before you run the script, make sure there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
+
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './webapp'
    ```
@@ -127,7 +129,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    ```bash
    mkdir python-app
    cd python-app
-   touch script.py
+   New-Item script.py
    cd ..
    ```
 
