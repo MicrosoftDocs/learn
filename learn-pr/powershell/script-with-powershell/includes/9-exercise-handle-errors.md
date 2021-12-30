@@ -7,13 +7,13 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
 > [!NOTE]
 > Run the following commands *only* if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
 
-1. If you haven't completed the previous exercises in this module, run the following commands:
+1. If you haven't completed the previous exercises in this module, run the following commands in a terminal:
 
     ```bash
     mkdir webapp
     cd webapp
-    New-Item index.html
-    New-Item app.js
+    touch index.html
+    touch app.js
     cd ..
     ```
 
@@ -22,7 +22,7 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
 1. You also need a file named _Backup.ps1_. Run these commands:
 
     ```bash
-    New-Item Backup.ps1
+    touch Backup.ps1
     code Backup.ps1
     ```
 
@@ -72,7 +72,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 1. Under the `Param` section, add this code:
 
    ```powershell
-    If ($PathIsWebApp -eq $True) {
+   If ($PathIsWebApp -eq $True) {
       Try 
       {
         $ContainsApplicationFiles = "$((Get-ChildItem $Path).Extension | Sort-Object -Unique)" -match  '\.js|\.html|\.css'
@@ -85,7 +85,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
       } Catch {
        Throw "No backup created due to: $($_.Exception.Message)"
       }
-     }
+   }
    ```
 
    The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code on the _webapp_ directory, the following code will print a list of items:
@@ -121,15 +121,15 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    ```output
    Source files looks good, continuing
-   Created backup at ./backup-2021-01-21.zip
+   Created backup at ./backup-2021-12-30.zip
    ```
 
-1. Create a directory named _python-app_. In the new directory, create a file called _script.py_:
+1. Using your terminal, create a directory named _python-app_. In the new directory, create a file called _script.py_:
 
    ```bash
    mkdir python-app
    cd python-app
-   New-Item script.py
+   touch script.py
    cd ..
    ```
 
@@ -144,7 +144,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    -| Backup.ps1
    ```
 
-1. Run the script again, but this time change the `-Path` value to point to `./python-app`:
+1. In the PowerShell shell, run the script again, but this time change the `-Path` value to point to `./python-app`:
 
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './python-app'

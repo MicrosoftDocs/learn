@@ -53,10 +53,10 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    $PI = 3.14
    ```
 
-1. Create a file named *PI.ps1* and open it in your code editor:
+1. Create a file named *PI.ps1* in the current directory and open it in your code editor:
 
    ```powershell
-   New-Item PI.ps1
+   New-Item -Path . -Name "PI.ps1" -ItemType "file"
    code PI.ps1
    ```
 

@@ -11,8 +11,8 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    ```bash
    mkdir app
    cd app
-   New-Item index.html
-   New-Item app.js
+   touch index.html
+   touch app.js
    cd ..
    ```
 
@@ -24,10 +24,10 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    pwsh
    ```
 
-1. Create a script file named _Backup.ps1_ and open it in your code editor:
+1. Create a script file named _Backup.ps1_ in the current directory and open it in your code editor:
 
    ```bash
-   New-Item Backup.ps1
+   touch Backup.ps1
    code Backup.ps1
    ```
 

@@ -5,13 +5,13 @@ When you write scripts, they might work as intended as long as you type in reaso
 > [!NOTE]
 > Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
 
-- If you haven't completed the previous exercises in this module, run the following commands:
+- If you haven't completed the previous exercises in this module, run the following commands in a terminal:
 
    ```bash
    mkdir webapp
    cd webapp
-   New-Item index.html
-   New-Item app.js
+   touch index.html
+   touch app.js
    cd ..
    ```
 
@@ -24,7 +24,7 @@ You've been working with a backup script so far. You've been adding parameters t
 Let's look at the current script. If you completed the previous exercise, you should have a file called _Backup.ps1_. If not, create the file and open it in your code editor:  
 
 ```bash
-New-Item Backup.ps1
+touch Backup.ps1
 code Backup.ps1
 ```
 
