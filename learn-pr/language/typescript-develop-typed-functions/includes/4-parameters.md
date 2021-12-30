@@ -27,11 +27,15 @@ addNumbers(1);    // Returns an error
 
 You can also define optional parameters by appending a question mark (?) to the end of the parameter name.
 
-In this example, `x` is required and `y` is optional.
+In this example, `x` is required and `y` is optional. The optional parameter must come after any required parameters in the parameter list. Also, for this function to return the correct value, you must address the possibility that `y` may be passed in as undefined.
 
 ```typescript
 function addNumbers (x: number, y?: number): number {
-   return x + y;
+    if (y === undefined) {
+        return x;
+    } else {
+        return x + y;
+    }
 }
 
 addNumbers(1, 2); // Returns 3
@@ -86,7 +90,7 @@ Function parameters are positional and must be passed in the order in which they
 
 To enable named parameters you can use a technique called deconstructed object parameters. This enables you to use an interface to defined named, rather than positional, parameters in your functions.
 
-The following example defines an interface called `Message` that defines two properties. In the `displayMessage` function, the `Message` object is passed as parameter, providing access to the properties as if they are normal parameters.
+The following example defines an interface called `Message` that defines two properties. In the `displayMessage` function, the `Message` object is passed as a parameter, providing access to the properties as if they are normal parameters.
 
 ```typescript
 interface Message {

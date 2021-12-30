@@ -35,6 +35,9 @@ In raw JSON, this indexing policy would start by excluding all possible paths, a
 }
 ```
 
+> [!NOTE]
+> We are excluding all paths here for demonstration purposes. In general, it's much better to include all paths by default and only exclude specific paths.
+
 The .NET SDK ships with a **Microsoft.Azure.Cosmos.IndexingPolicy** class that is a representation of the typical JSON policy object. When creating a new instance of the class, you can immediately set the **IndexingMode** and **Automatic** properties much like their JSON counterparts. In this example, the indexing mode is set to consistent and automatic indexing is enabled.
 
 ```csharp

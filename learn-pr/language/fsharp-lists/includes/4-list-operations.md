@@ -61,8 +61,8 @@ Sorting lists is something you're likely to do often. Here are three functions t
 - `sortBy()`: With this function, the idea is to point out a key to sort by. Let's say you have a list of people, and each record has the fields `name` and `age`. You can then point out to sort by `age`, for example. This function takes a function where you point out the key. Another key could be the length of a string, as in this example:
 
    ```fsharp
-   let fruits = ["Banana", "Apple", "Pineapple"]
-   let sortedFruits = List.sortBy(fun fruit -> fruit.Length) fruits // Apple, Banana, Pineapple
+   let fruits = ["Banana"; "Apple"; "Pineapple"]
+   let sortedFruits = List.sortBy (fun (fruit : string) -> fruit.Length) fruits // Apple, Banana, Pineapple
    ```
 
 - `sortWith()`: With this function, you can provide a comparator function, because it might not be apparent at first which of several items should be sorted before any other item. Here's some example code:
@@ -75,8 +75,9 @@ Sorting lists is something you're likely to do often. Here are three functions t
      { Name="Orc"; Level=1; Attack=5 }
      { Name="Demon"; Level=2; Attack=10 } 
    ]
+
    // comparison function, -1 = less than, 1 = larger than, 0 = equal
-   let compareCreatures = c1 c2
+   let compareCreatures c1 c2 =
        if c1.Level < c2.Level then -1
        else if c1.Level > c2.Level then 1
        else if c1.Attack < c2.Attack then -1
@@ -95,19 +96,19 @@ Another thing you might want to do is to find a specific element. To do so, you 
 - `find()`: This function finds the first element that matches a certain condition. To use `find()`, you need to provide a function (predicate) that expresses how to find the item. Here's an example:
 
    ```fsharp
-   let list = [1;2;3;4]
-   List.find( fun x -> x % 2 = 0) list // 2, 4
+   let list = [1; 2; 3; 4]
+   let found = List.find( fun x -> x % 2 = 0) list // 2 - Only the first element that matches the condition is returned.
    ```
 
-- `tryFind()`. This function takes a function (predicate) that tells how to find the value and list to look into. It returns an option. Here's how you can use it:
+- `tryFind()`. This function takes a function (predicate) that tells how to find the value and a list to look into. It returns an option. Here's how you can use it:
 
    ```fsharp
    let findValue aValue aList =
-       let found= aList |> List.tryFind(fun item -> item = aValue)
+       let found = aList |> List.tryFind(fun item -> item = aValue)
            
        match found with
        | Some value -> printfn "%i" value
-       |  None -> printfn "Not found"
+       | None -> printfn "Not found"
 
    findValue 1 list // 1
    findValue 5 list // Not found
@@ -152,8 +153,8 @@ Carrying out mathematical operations on a list can be valuable. Among many funct
    In the preceding code, the `Cost` field is pointed out, and each item in that field adds to the total.
 
 - `average()`: This function is similar to `sum()` in that it operates on a list of numbers, but with two differences:  
-   - It expects the data to be floating point numbers, not integers.
-   - It calculates an average rather than a sum. 
+  - It expects the data to be floating point numbers, not integers.
+  - It calculates an average rather than a sum.
 
    Here's an example:
 
@@ -174,5 +175,5 @@ Carrying out mathematical operations on a list can be valuable. Among many funct
    ]
     
    let avgBy = List.averageBy(fun m -> m.Temperature) measurements
-   printfn "%f" avgBy
+   printfn "%f" avgBy // 21.733333
    ```

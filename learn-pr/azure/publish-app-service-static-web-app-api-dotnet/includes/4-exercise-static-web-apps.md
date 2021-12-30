@@ -12,7 +12,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 1. In the *marketplace* search box, search for and select **Static Web App**. The **Static Web App** pane appears.
 
-1. Select **Create**. The **Create Static Web App** appears. Configure your new app and link it to your GitHub repository.
+1. Select **Create**. The **Create Static Web App** pane appears. Configure your new app and link it to your GitHub repository.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -20,12 +20,15 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
    | ---------------- | ---------------------------------------- |
    | **Project Details** |
    | Subscription  | Concierge Subscription               |
-   | Resource Group_| <rgn>[Sandbox resource group name]</rgn> |
+   | Resource Group | <rgn>[Sandbox resource group name]</rgn> |
    | **Static Web App details** |
-   | Name_  | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
+   | Name  | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `-`. |
+   | **Hosting plan** |
+   | Pricing tier for your application | Select **Free** |
    | **Azure Functions and staging details** |
    | Region for Azure Functions API and staging environments | Select the region closest to you |
    | **Deployment details** |
+   | Source | Select **GitHub** |
    | GitHub account | Select **Sign in with GitHub**. The **Authorize Azure Static Web Apps** pane appears. Select **Authorize Azure-App-Service-Static-Web-Apps**. Enter your password. |
    | Organization | Select the Organization where you created the repository |
    | Repository   | my-static-blazor-app                                |
@@ -52,7 +55,7 @@ After you're there:
 
 1. Select **Azure Static Web Apps CI/CD**.
 
-1. Select the commit titled, **Azure Static Web Apps added workflow for file for CI/CD**.
+1. Select the commit titled, **ci: add Azure Static Web Apps workflow file**.
 
 1. Select the **Build and Deploy Job** link
 

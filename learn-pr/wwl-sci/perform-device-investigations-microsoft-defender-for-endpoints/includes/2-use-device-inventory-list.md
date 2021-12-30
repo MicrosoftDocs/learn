@@ -20,7 +20,7 @@ If the exposure level says, "No data available," there are a few reasons why thi
 
 - The device OS is not supported - see minimum requirements for Microsoft Defender for Endpoint
 
-- The device has a stale agent (very unlikely)
+- The device has a stale agent (unlikely)
 
 ## Health state
 

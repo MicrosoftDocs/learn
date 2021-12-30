@@ -44,9 +44,13 @@ Built-in triggers include the following:
     Recurrence
   :::column-end:::
   :::column:::
-    \- Run your logic app on a specified schedule, ranging from basic to complex recurrences, with the Recurrence trigger.
-\- Pause your logic app for a specified duration with the Delay action.
-\- Pause your logic app until the specified date and time with the Delay until action.
+    The following apply:
+
+ -  Run your logic app on a specified schedule, ranging from basic to complex recurrences, with the Recurrence trigger.
+ -  Pause your logic app for a specified duration with the Delay action.
+ -  Pause your logic app until the specified date and time with the Delay until action.
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,8 +66,12 @@ Built-in triggers include the following:
     Request
   :::column-end:::
   :::column:::
-    \- Make your logic app callable from other apps or services, trigger on Event Grid resource events, or trigger on responses to Azure Security Center alerts with the Request trigger.
-\- Send responses to an app or service with the Response action.
+    The following apply:
+
+ -  Make your logic app callable from other apps or services, trigger on Event Grid resource events, or trigger on responses to Azure Security Center alerts with the Request trigger.
+ -  Send responses to an app or service with the Response action.
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -71,8 +79,12 @@ Built-in triggers include the following:
     Batch messages
   :::column-end:::
   :::column:::
-    \- Process messages in batches with the Batch messages trigger.
-\- Call logic apps that have existing batch triggers with the Send messages to batch action.
+    The following apply:
+
+ -  Process messages in batches with the Batch messages trigger.
+ -  Call logic apps that have existing batch triggers with the Send messages to batch action.
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,13 +201,16 @@ Logic Apps provides built-in actions for working with data outputs and their for
   :::column-end:::
   :::column:::
     Perform operations with data:
-\- Compose: Create a single output from multiple inputs with various types.
-\- Create CSV table: Create a comma-separated-value (CSV) table from an array with JSON objects.
-\- Create HTML table: Create an HTML table from an array with JSON objects.
-\- Filter array: Create an array from items in another array that meet your criteria.
-\- Join: Create a string from all items in an array and separate those items with the specified delimiter.
-\- Parse JSON: Create user-friendly tokens from properties and their values in JSON content so you can use those properties in your workflow.
-\- Select: Create an array with JSON objects by transforming items or values in another array and mapping those items to specified properties.
+
+ -  Compose: Create a single output from multiple inputs with various types.
+ -  Create CSV table: Create a comma-separated-value (CSV) table from an array with JSON objects.
+ -  Create HTML table: Create an HTML table from an array with JSON objects.
+ -  Filter array: Create an array from items in another array that meet your criteria.
+ -  Join: Create a string from all items in an array and separate those items with the specified delimiter.
+ -  Parse JSON: Create user-friendly tokens from properties and their values in JSON content so you can use those properties in your workflow.
+ -  Select: Create an array with JSON objects by transforming items or values in another array and mapping those items to specified properties.
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -204,12 +219,15 @@ Logic Apps provides built-in actions for working with data outputs and their for
   :::column-end:::
   :::column:::
     Perform operations with timestamps:
-\- Add to time: Add the specified number of units to a timestamp.
-\- Convert time zone: Convert a timestamp from the source time zone to the target time zone.
-\- Current time: Return the current timestamp as a string.
-\- Get future time: Return the current timestamp plus the specified time units.
-\- Get past time: Return the current timestamp minus the specified time units.
-\- Subtract from time: Subtract a specified amount of time units from a timestamp.
+
+ -  Add to time: Add the specified number of units to a timestamp.
+ -  Convert time zone: Convert a timestamp from the source time zone to the target time zone.
+ -  Current time: Return the current timestamp as a string.
+ -  Get future time: Return the current timestamp plus the specified time units.
+ -  Get past time: Return the current timestamp minus the specified time units.
+ -  Subtract from time: Subtract a specified amount of time units from a timestamp.
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -218,12 +236,15 @@ Logic Apps provides built-in actions for working with data outputs and their for
   :::column-end:::
   :::column:::
     Perform operations with variables:
-\- Append to array variable: Insert a value as the last item in an array stored by a variable.
-\- Append to string variable: Insert a value as the last character in a string stored by a variable.
-\- Decrement variable: Decrease a variable by a constant value.
-\- Increment variable: Increase a variable by a constant value.
-\- Initialize variable: Create a variable and declare its data type and initial value.
-\- Set variable: Assign a different value to an existing variable.
+
+ -  Append to array variable: Insert a value as the last item in an array stored by a variable.
+ -  Append to string variable: Insert a value as the last character in a string stored by a variable.
+ -  Decrement variable: Decrease a variable by a constant value.
+ -  Increment variable: Increase a variable by a constant value.
+ -  Initialize variable: Create a variable and declare its data type and initial value.
+ -  Set variable: Assign a different value to an existing variable.
+
+
   :::column-end:::
 :::row-end:::
 
@@ -329,7 +350,7 @@ CRM Online
     Azure Event Hubs
   :::column-end:::
   :::column:::
-    Consume and publish events through an Event Hub. For example, get output from your logic app with Event Hubs, and then send that output to a real-time analytics provider.
+    Consume and publish events through an Event Hubs. For example, get output from your logic app with Event Hubs, and then send that output to a real-time analytics provider.
   :::column-end:::
 :::row-end:::
 :::row:::

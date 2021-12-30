@@ -12,7 +12,7 @@ While changelogs can be created and manually maintained, you might want to consi
 
 ## Using native GitHub commands
 
-The git log command can be useful for automatically creating content. Example: create a new section perversion:
+The git log command can be useful for automatically creating content. Example: create a new section per version:
 
 ```Bash
 git log [options] vX.X.X..vX.X.Y | helper-script > projectchangelogs/X.X.Y

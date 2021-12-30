@@ -6,7 +6,7 @@ You first review each Attack Surface Reduction component to understand the attac
 
 After completing this module, you will be able to:
 
-- Explain Attack Surface Reduction in Windows 10
+- Explain Attack Surface Reduction in Windows
 - Enable Attack Surface Reduction rules on Windows 10 devices
 - Configure Attack Surface Reduction rules on Windows 10 devices
 

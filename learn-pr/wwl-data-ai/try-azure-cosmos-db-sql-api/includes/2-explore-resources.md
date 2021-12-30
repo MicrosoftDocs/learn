@@ -19,13 +19,13 @@ Each tenant of the Azure Cosmos DB service is created by provisioning a database
 
 A database is a logical unit of management for containers in Azure Cosmos DB SQL API. An Azure Cosmos DB database manages users, permissions, and containers. Within the database, you can find one or more containers. You can also elect to provision throughput for your data here at the database level.
 
-![Resource hierarchy with database highlighted and multiple example child containers](../media/2-database.png)
+![Resource hierarchy with database highlighted and multiple example child containers](../media/2-database-diag.png)
 
 ## Container
 
 Containers are the fundamental unit of scalability in Azure Cosmos DB SQL API. Typically, you provision throughput at the container level. Azure Cosmos DB SQL API will automatically and transparently partition the data in a container. You can also optionally configure an indexing policy or a default time-to-live value at the container level.
 
-![Resource hierarchy with a set of containers highlighted](../media/2-container.png)
+![Resource hierarchy with a set of containers highlighted](../media/2-container-diag.png)
 
 ## Item\[s\]
 

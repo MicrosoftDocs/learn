@@ -1,5 +1,13 @@
-The **QnA Maker** service enables you to define a *knowledge base* of question and answer pairs that can be queried using natural language input. The knowledge base can be published to a REST endpoint and consumed by client applications, commonly *bots*.
+The **Language** service includes a *question answering* capability, which enables you to define a *knowledge base* of question and answer pairs that can be queried using natural language input. The knowledge base can be published to a REST endpoint and consumed by client applications, commonly *bots*.
 
-![A conversational app uses a QnA Maker knowledge base of questions and answers](../media/qna-maker.png)
+![A conversational app uses a knowledge base of questions and answers](../media/qna-maker.png)
 
-There are two versions of the QnA Maker service. To use the _managed QnA Maker_ service, create a **Text Analytics** resource with the *custom question answering* feature enabled in your Azure subscription. To use the _non-managed QnA Maker_ service, create a **QnA Maker** resource. You can use either resource in the QnA Maker Portal to edit and publish a knowledge base.
+The knowledge base can be created from existing sources, including:
+
+- Web sites containing frequently asked question (FAQ) documentation.
+- Files containing structured text, such as brochures or user guides.
+- Built-in *chit chat* question and answer pairs that encapsulate common conversational exchanges.
+
+
+> [!NOTE]
+> The question answering capability of the **Language** service is a newer version of the **QnA Service**, which still exists as a standalone service. To learn how to migrate a QnA Maker knowledge base to the Language service, see the [migration guide](/azure/cognitive-services/language-service/question-answering/how-to/migrate-qnamaker).

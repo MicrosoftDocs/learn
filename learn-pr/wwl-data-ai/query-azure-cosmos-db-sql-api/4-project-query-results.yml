@@ -4,12 +4,13 @@ title: Project query results
 metadata:
   title: Project query results
   description: "Project query results"
-  ms.date: 11/24/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
 labModal: false
 durationInMinutes: 10
 content: |

@@ -13,7 +13,7 @@ What might be a good example of offloading of work in our bookmarks scenario? We
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the sandbox resources and resources that you created in previous units, specifically, the Azure Cosmos DB database, bookmakrks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
+> This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
 
 ## Create an HTTP-triggered function
 
@@ -50,11 +50,11 @@ Let's add another Azure Cosmos DB input binding.
     | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
     | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined this setting was earlier in the lesson. |
-    | **Document ID** | `id` | Add the Document ID that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. |
-    | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `<key>`) must match the one in the container. |
+    | **Document ID** | `{id}` | Add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
+    | **Partition key** | `{id}` | Again, add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **SQL Query (optional)** | _Leave blank_ | We are only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
-    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that function our function receives in the query string to the binding, which is known as the *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up, and the binding will return either 0 (not found) or 1 (found) documents.
+    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up, and the binding will return either 0 (not found) or 1 (found) documents.
 
 1. Select **OK** to save the input binding configuration.
 
@@ -126,7 +126,7 @@ We now have all our bindings set up for your function. It's time to use them in 
 
 1. In the menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and in the command bar, select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet, and then in the command bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -181,7 +181,7 @@ So, that's it. Let's see our work in action in the next section.
         ContentType = "application/json"
     })
     ```
-1. In the command bar, select **Save**.  A connection is made, and a log file session open.
+1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
 
 Let's break down what this code does:
 
@@ -220,9 +220,11 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Select **Run**.
 
-1. The programmatic progress shows in the **Logs** pane. When completed, verify that the **Output** tab displays "bookmark added!" in the **HTTP response content** setting, as shown in the following screenshot.
+1. The programmatic progress shows in the **Logs** pane. When completed, verify that the **Output** tab displays "Bookmark already exists." in the **HTTP response content** setting.
 
-    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark addedresponse.":::
+    :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark already exists response.":::
+
+    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly.
 
 1. Let's post a second bookmark to the database. Select the **Input** tab.
 
@@ -261,7 +263,7 @@ Azure Queue Storage queues are hosted in a storage account. You configured the s
 
     :::image type="content" source="../media/7-message-in-queue.png" alt-text="Screenshot of message queue with two messages.":::
 
-    In this example, each message was given a unique ID, and the **Message text** column displays your bookmark in JSON format.
+    In this example, the message was given a unique ID, and the **Message text** column displays your bookmark in JSON format. There's no message for the Azure `docs` bookmark that you tried to add because it already existed in the database.
 
 1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 

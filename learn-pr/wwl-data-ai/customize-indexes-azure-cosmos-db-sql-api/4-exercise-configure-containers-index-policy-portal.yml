@@ -4,13 +4,12 @@ title: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy 
 metadata:
   title: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy with the portal"
   description: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy with the portal"
-  ms.date: 11/25/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107581
 labModal: true
 durationInMinutes: 15
