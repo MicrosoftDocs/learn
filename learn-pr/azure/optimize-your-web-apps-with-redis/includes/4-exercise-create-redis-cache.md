@@ -26,7 +26,7 @@ Apply the following settings on the cache.
 
 1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast. For this exercise, you can select any available location.
 
-1. **Pricing tier:** Select **Basic C0**. This is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering which would require a higher tier selection.
+1. **Pricing tier:** Select **Basic C0**, which is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering, which would require a higher tier selection.
 
 1. Click **Review + Create**, then click **Create**. Azure will create and deploy the Redis Cache instance for you.
 
@@ -43,7 +43,7 @@ You can use the **Console** feature in the Azure portal to issue commands to you
 
 1. Check the value of the "Status" field. The cache is not ready until the status is "Running". You might have to wait for a few minutes before proceeding.
 
-1. Once the cache is running, Click the `>_ Console` button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following:
+1. Once the cache is running, Click the `>_ Console` button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
 
     ```console
     ping
