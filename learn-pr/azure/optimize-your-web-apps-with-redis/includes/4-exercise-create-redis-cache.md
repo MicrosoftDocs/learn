@@ -26,16 +26,16 @@ Apply the following settings on the cache.
 
 1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast. For this exercise, you can select any available location.
 
-1. **Pricing tier:** Select **Basic C0**. This is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering which would require a higher tier selection.
+1. **Pricing tier:** Select **Basic C0**, which is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering, which would require a higher tier selection.
 
-1. Click **Create**. Azure will create and deploy the Redis Cache instance for you.
+1. Click **Review + Create**, then click **Create**. Azure will create and deploy the Redis Cache instance for you.
 
     > [!IMPORTANT]
-    > Usually, the Redis cache resource will be created and viewable in the Azure portal very quickly, but the cache itself will not be available for a few minutes. The next steps show how to check the status of your cache.
+    > Usually, the Redis cache resource will be created and viewable in the Azure portal very quickly, but the cache itself will not be available for a few minutes. The next steps show how to check the status of your cache once deployment is finished.
 
 ## Use your cache
 
-You can use the **Console** feature in the Azure portal to issue commands to your Redis cache instance after it has been created.
+You can use the **Console** feature in the Azure portal to issue commands to your Redis cache instance after it has been deployed.
 
 1. Locate your Redis cache through the **Notification** popup when it finishes deployment, or by selecting **All Resources** in the left-hand sidebar and using the filter box on the left to select Redis Cache instances. Alternatively, you can use the search box at the top and type the name of the cache.
 
@@ -43,7 +43,7 @@ You can use the **Console** feature in the Azure portal to issue commands to you
 
 1. Check the value of the "Status" field. The cache is not ready until the status is "Running". You might have to wait for a few minutes before proceeding.
 
-1. Once the cache is running, Click the `>_ Console` button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following:
+1. Once the cache is running, Click the `>_ Console` button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
 
     ```console
     ping
