@@ -6,6 +6,8 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 
 1. Run the following query:
 
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkirRzUlJLU4GAC8Pmw5vAAAA" target="_blank"> Click to run query</a>
+
     ```kusto
     StormEvents
     | where DamageProperty > 0
@@ -24,6 +26,8 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 Each region has unique weather patterns, so now you want to know which events in each state made the most damage. To answer this question, you'll sort first on the state name and then on the damage within each state. The `sort` operator sorts in descending order by default, so you'll use `asc` to indicate that you want to sort the state names in ascending order.
 
 1. Run the following query:
+
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkiohShUSi5PR1QAA36YINHUAAAA=" target="_blank"> Click to run query</a>
 
     ```kusto
     StormEvents
@@ -44,12 +48,15 @@ Instead of sorting and scanning the top for a certain number of results, you can
 
 1. Run the following query:
     
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkqV5BcoGBooJFUquCTmJqanBhTlF6QWlVQCpQqK8rNSk0sg+nQUwKaFVBYAmahKAYKJ63RsAAAA" target="_blank"> Click to run query</a>
+
     ```kusto
     StormEvents
     | where State == "FLORIDA"
     | top 10 by DamageProperty
     | project State, EventType, DamageProperty
     ```
+
 1. You should get results that look like the following image:
 
     :::image type="content" source="../media/6-sort-3.png" alt-text="Screenshot of query results for the top operator.":::

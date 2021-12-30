@@ -4,13 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/24/2020
+  ms.date: 12/13/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -33,6 +36,6 @@ quiz:
     - content: "Maria must install the Dependency agent."
       isCorrect: true
       explanation: "That's correct. Without this agent, you cannot enable monitoring."
-    - content: "Maria must start the VM first."
+    - content: "Maria must shutdown the VM first."
       isCorrect: false
-      explanation: "That's incorrect. Although the VM must be running, it's not the most likely cause of the failure."
+      explanation: "That's incorrect. The VM must be running."

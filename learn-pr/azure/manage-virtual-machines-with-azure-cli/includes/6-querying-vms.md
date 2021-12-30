@@ -6,11 +6,11 @@ Let's start by running `vm list`.
 az vm list
 ```
 
-This command will return _all_ virtual machines defined in this subscription. The output can be filtered to a specific resource group through the `--resource-group` parameter.
+This command will return _all_ virtual machines defined in this subscription. You can filter the output to a specific resource group through the `--resource-group` parameter.
 
 ## Output types
 
-Notice that the default response type for all the commands we've done so far is JSON. This is great for scripting - but most people find it harder to read. You can change the output style for any response through the `--output` flag. For example, run the following command in Azure Cloud Shell to see the different output style.
+Notice that the default response type for all the commands we've done so far is JSON. This is great for scripting, but most people find it harder to read. You can change the output style for any response through the `--output` flag. For example, run the following command in Azure Cloud Shell to see the different output style.
 
 ```azurecli
 az vm list --output table
@@ -26,7 +26,7 @@ Another useful command is `vm list-ip-addresses`, which will list the public and
 az vm list-ip-addresses -n SampleVM -o table
 ```
 
-This returns:
+This returns output like:
 
 ```
 VirtualMachine    PublicIPAddresses    PrivateIPAddresses
@@ -35,7 +35,7 @@ SampleVM          168.61.54.62         10.0.0.4
 ```
 
 > [!TIP]
-> Notice that we are using a shorthand syntax for the `--output` flag as `-o`. Most parameters to Azure CLI commands can be shortened to a single dash and letter. For example, `--name` can be shortened to `-n` and `--resource-group` to `-g`. This is handy for entering keyboard characters, but we recommend using the full option name in scripts for clarity. Check the documentation for details about each command.
+> Notice that we are using a shorthand syntax for the `--output` flag as `-o`. You can shorten most parameters to Azure CLI commands to a single dash and letter. For example, you can shorten `--name` to `-n` and `--resource-group` to `-g`. This is handy for entering keyboard characters, but we recommend using the full option name in scripts for clarity. Check the documentation for details about each command.
 
 ## Get VM details
 
@@ -111,7 +111,7 @@ Finally, we can constrain the results by adding a select: `people[?age > '25'].[
 
 JMESQuery has several other interesting query features. When you have time, check out the [online tutorial](http://jmespath.org/tutorial.html) available on the [JMESPath.org](http://jmespath.org/) site.
 
-## Filter our Azure CLI queries
+## Filter your Azure CLI queries
 
 With a basic understanding of JMES queries, we can add filters to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin username:
 
@@ -140,9 +140,9 @@ az vm show \
     --query "networkProfile.networkInterfaces[].id"
 ```
 
-This query technique will work with any Azure CLI command and can be used to pull specific bits of data out on the command line. It is useful for scripting as well - for example, you can pull a value out of your Azure account and store it in an environment or script variable. If you decide to use it this way, a useful flag to add is the `--output tsv` parameter (which can be shortened to `-o tsv`). This will return the results in tab-separated values that only include the actual data values with tab separators.
+This query technique will work with any Azure CLI command, you can use it to pull specific bits of data out on the command line. It is useful for scripting as well; for example, you can pull a value out of your Azure account and store it in an environment or script variable. If you decide to use it this way, it's useful to add the `--output tsv` parameter (which you can shorten to `-o tsv`). This will return results that only include the actual data values with tab separators.
 
-As an example,
+For example:
 
 ```azurecli
 az vm show \

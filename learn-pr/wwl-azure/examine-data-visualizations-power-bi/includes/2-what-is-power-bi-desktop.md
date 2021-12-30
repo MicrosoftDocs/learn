@@ -24,7 +24,7 @@ The most common uses for Power BI Desktop are the following:
  -  Create reports that are collections of visuals, on one or more report pages.
  -  Share reports with others using the Power BI service.
 
-:::image type="content" source="../media/m05-l03-power-bi-what-is-desktop-6cf5ef52.png" alt-text="Screen shot that shows the Power BI Desktop user interface.":::
+:::image type="content" source="../media/m05-l03-power-bi-what-is-desktop-6cf5ef52.png" alt-text="Screenshot that shows the Power BI Desktop user interface.":::
 
 
 ## Views in Power BI Desktop

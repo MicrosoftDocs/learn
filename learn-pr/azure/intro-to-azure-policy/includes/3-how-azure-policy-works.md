@@ -21,13 +21,13 @@ Azure policy covers all Azure resources, including Arc enabled resources. This m
 ## Related services
 
 * Azure Blueprints: A policy assignment is an artifact type from Azure Blueprints, meaning you can use Azure Blueprints to assign policy assignments. Note you can assign a policy through .NET, JavaScript, Python, REST API, PowerShell, Azure CLI, ARM template, Bicep, and Terraform as well.
-* Azure Resource Graph: Though Azure Resource Graph you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state and more.
+* Azure Resource Graph: Through Azure Resource Graph you can run queries to get information about compliance details by assignments and resource types, list all non-compliant resources, summarize resource compliance by state and more.
 * Azure Security Center: The recommendations from Azure Security Center come from  built-in security policies initiatives.
 
 
 ## Costs of Azure Policy
 
-If you are using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you will be **charged**. Refer to the [Azure Policy Pricing](/pricing/details/azure-policy/) page for reference.
+If you are using Azure Policy on **Azure Resources**, there are **no costs** associated. However, if you plan use the capabilities of Azure Policy to cover an **Azure Arc Resource**, there are **specific scenarios** where you will be **charged**. Refer to the [Azure Policy Pricing](https://azure.microsoft.com/pricing/details/azure-policy/) page for reference.
 
 * Azure Policy guest configuration (includes Azure Automation change tracking, inventory, state configuration): $6/Server/Month
 * Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
@@ -38,5 +38,4 @@ If you are using Azure Policy on **Azure Resources**, there are **no costs** ass
 >* _Kubernetes clusters_
 >* _Azure data services such as Azure SQL Managed Instance and PostgreSQL Hyperscale services_
 >* _SQL Server_
-
 

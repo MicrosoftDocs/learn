@@ -1,6 +1,6 @@
 <!-- NOTE - All code for this module can be found at https://github.com/MicrosoftDocs/mslearn-improve-api-developer-experience-with-swagger -->
 
-Your company has an API called **PrintFramerAPI** that calculates the cost of a picture frame based on the size of the frame dimensions. Internally, the small team knows how to use the API. However, to have the API adopted by third parties and therefore drive business, the API needs to be documented. This is an ASP.NET Core API, so you decide to expose the API documentation through OpenAPI.
+Your company has an API called **PrintFramerAPI** that calculates the cost of a picture frame based on the size of the frame dimensions. Internally, your small team knows how to use the API. However, to have the API adopted by third parties and therefore drive business, you need to document the API. This is an ASP.NET Core API, so you decide to expose the API documentation through OpenAPI.
 
 In this exercise, you'll document an ASP.NET Core Web API with OpenAPI and try out Swagger UI and Swashbuckle in a real-world example. First, let's create an ASP.NET Core Web API project.
 
@@ -10,9 +10,9 @@ In this exercise, you'll document an ASP.NET Core Web API with OpenAPI and try o
 ## Download the sample web API project to Visual Studio Code
 
 1. Open a new instance of Visual Studio Code.
-1. Open the terminal window by selecting the **Terminal** option from the **View** menu.
+1. Select **View**, then select **Terminal** to open the terminal window.
 1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
-1. To clone the sample Web API Project from GitHub, in the terminal window, run the following `git clone` command.
+1. To clone the sample Web API Project from GitHub, run the following `git clone` command in the terminal window.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-improve-api-developer-experience-with-swagger  && cd mslearn-improve-api-developer-experience-with-swagger/PrintFramerAPI
@@ -26,7 +26,7 @@ In this exercise, you'll document an ASP.NET Core Web API with OpenAPI and try o
 
 ## Run the web API for the first time
 
-1. In the terminal window of Visual Studio Code type the following command:
+1. Type the following command in the Visual Studio Code terminal window:
 
     ```bash
     dotnet run
@@ -36,11 +36,11 @@ In this exercise, you'll document an ASP.NET Core Web API with OpenAPI and try o
 
     When you navigate to the address in the browser, it should respond with the message `The cost of a 6x17 frame is $20.00`.
 
-Because you created the API, you knew its shape, but an external developer who wants to consume this API would not be so fortunate. You can help those developers by exposing some documentation about our API with the help of OpenAPI using Swashbuckle an open source version of the Swagger tooling.
+Because you created the API, you knew its shape, but an external developer who wants to consume this API would not be so fortunate. You can help those developers by exposing some documentation about our API with the help of OpenAPI using Swashbuckle, an open-source version of the Swagger tooling.
 
 ## Add the Swagger library to the solution
 
-1. Add Swashbuckle to our project by running the `dotnet add package` command.
+1. Add Swashbuckle to your project by running the `dotnet add package` command.
 
     ```bash
     dotnet add package Swashbuckle.AspNetCore
@@ -53,7 +53,7 @@ Because you created the API, you knew its shape, but an external developer who w
     using Microsoft.OpenApi.Models;
     ```
 
-1. To add the Swagger generator to the services collection. replace the method `ConfigureServices(IServiceCollection services)` with the following implementation.
+1. To add the Swagger generator to the services collection, replace the method `ConfigureServices(IServiceCollection services)` with the following implementation.
 
     ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -96,8 +96,8 @@ Because you created the API, you knew its shape, but an external developer who w
     }
     ```
 
-1. Save these changes in the editor.
-1. To see these changes run the ASP.NET application locally. Type the following in the terminal window in Visual Studio Code:
+1. Save your changes in the editor.
+1. To see your changes, run the ASP.NET application locally. Type the following in the terminal window in Visual Studio Code:
 
     ```bash
     dotnet run
@@ -106,6 +106,6 @@ Because you created the API, you knew its shape, but an external developer who w
 1. In a browser, navigate to http://localhost:5000/swagger/v1/swagger.json.
 
 
-   The response we get in the browser this time is a document describing the endpoints of the API, similar to the following response.
+   The response in the browser this time is a document describing the endpoints of the API, similar to the following response.
 
     ![Swagger.json response in the browser showing the definition of our API.](../media/swagger-json-response.png)

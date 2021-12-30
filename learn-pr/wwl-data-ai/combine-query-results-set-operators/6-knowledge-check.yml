@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/30/2021
+  ms.date: 12/15/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -50,11 +50,11 @@ quiz:
   - content: "What does XACT_STATE test for?"
     choices:
     - content: "Whether or not the transaction is capable of being committed."
-      isCorrect: false
-      explanation: "That's incorrect. XACT_STATE does not test whether a transaction has been committed."
-    - content: "An error in the transaction."
       isCorrect: true
-      explanation: "That's correct. If an error occurs that causes the transaction to be classified an uncommittable, it will return -1."
+      explanation: "Correct. XACT_STATE shows that there is an active user transaction and whether it is capable of being committed."
+    - content: "Whether or not the transaction has been rolled back."
+      isCorrect: false
+      explanation: "That's incorrect. XACT_STATE will show that an error occurred that will cause an active user transaction to fail, it does not indicate that the transaction has been rolled back."
     - content: "Whether or not the current transaction has finished."
       isCorrect: false
       explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."

@@ -30,7 +30,7 @@ The table below shows the types of logging, the platforms supported, and where t
 
 ## Enable application logging (Linux/Container)
 
-1. In **Application logging**, select **File System**.
+1. In **App Service logs** set the **Application logging** option to **File System**.
 
 1. In **Quota (MB)**, specify the disk quota for the application logs. In **Retention Period (Days)**, set the number of days the logs should be retained.
 

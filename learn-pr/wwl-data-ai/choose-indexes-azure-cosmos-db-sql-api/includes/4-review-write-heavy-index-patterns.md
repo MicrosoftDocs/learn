@@ -95,6 +95,9 @@ An indexing policy that excludes all paths, except for the **price** property pa
 }
 ```
 
+> [!TIP]
+> Again, the drawback to this approach is that you will need to update the index anytime you change your schema.
+
 Here is a diagram of the inverted index showing that it only has a single property to traverse and then multiple potential values.
 
 ![Inverted tree with a single property node of price and multiple child nodes](../media/4-inverted-tree.png)

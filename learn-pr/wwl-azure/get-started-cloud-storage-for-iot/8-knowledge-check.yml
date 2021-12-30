@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 12/20/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,14 +17,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You need to store time series data on a hot storage path. High availability and performance are critical, but you need the solution to be cost effective as well. You must be able to use ASA to query the stored data as unstructured JSON. Which storage option should you select?"
+  - content: "A developer needs to store time series data on a hot storage path. High availability and performance are critical, but they need the solution to be cost effective as well. The company must be able to use ASA to query the stored data as unstructured JSON. Which storage option should the developer select?"
     choices:
     - content: "Azure Blob Storage"
       isCorrect: false
       explanation: "Incorrect. Azure Blob storage is cost effective, but is not the best option when performance is critical."
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "Correct. Azure Cosmos DB is more expensive than Azure Blob storage or Azure Data Lake Gen 2, but it is the only choice listed that supports all of your requirements."
+      explanation: "Correct. Azure Cosmos DB is more expensive than Azure Blob storage or Azure Data Lake Gen 2, but it is the only choice listed that supports all of the requirements."
     - content: "Azure Data Lake Gen 2"
       isCorrect: false
       explanation: "Incorrect. Azure Data Lake Gen 2 supports the high availability requirement, but is better suited to cold storage when a very large amount of storage space is required. Although it has been performance optimized on top of Azure Blob storage, it is not critically fast, and it is more expensive than Azure Blob storage."

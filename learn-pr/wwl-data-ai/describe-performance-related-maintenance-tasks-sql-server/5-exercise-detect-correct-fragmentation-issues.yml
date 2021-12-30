@@ -4,13 +4,14 @@ title: 'Exercise: Detect and correct fragmentation issues'
 metadata:
   title: 'Exercise: Detect and correct fragmentation issues'
   description: "Exercise: Detect and correct fragmentation issues"
-  ms.date: 04/26/2021
+  ms.date: 12/01/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labId: 85894
+labModal: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-detect-correct-fragmentation-issues.md)]

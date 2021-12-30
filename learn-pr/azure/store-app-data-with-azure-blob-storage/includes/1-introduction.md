@@ -10,9 +10,9 @@ Here, you will see how Azure Blob Storage could be appropriate for this app.
 
 In this module, you will:
 
-- Organize your data with Azure Blob Storage.
-- Create storage resources to hold blobs.
-- Store and retrieve data from Azure Blob Storage.
+- Organize your data with Azure Blob Storage
+- Create storage resources to hold blobs
+- Store and retrieve data from Azure Blob Storage
 
 ## Prerequisites  
 
