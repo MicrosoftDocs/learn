@@ -4,11 +4,11 @@ The let statement can be used to set a variable name equal to an expression or a
 
 Let statements can be used in a variety of situations. On the simplest level, you can define scalar values at the beginning of a query to later be referenced in a query. For more complicated uses, you can convert a tabular result to a scalar value to be used as input, or create a tabular output to be used as the tabular input for the query.
 
-## Construct a scalar `let` statement
+## Define a scalar with a `let` statement
 
-Recall that previous queries filtered on locations or minimum damage. If you want to change these values frequently, it can be useful to define them using a `let` statement at the beginning of the query.
+Recall that previous queries filtered on locations or minimum damage. If you want to change these values, it can be useful to define them using a `let` statement at the beginning of the query.
 
-The following query uses two `let` statements to define scalar values. They are separated by semicolons, and later used in the query.
+The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first value is a number, and the second is a string. The two `let` statements and the following tabular query statement are each separated by a semicolon.
 
 Notice the commented-out portions of the query that begin with double forward slashes (`//`). Add double forward slashes to each commented-out line.
 
@@ -31,11 +31,13 @@ Notice the commented-out portions of the query that begin with double forward sl
     
 1. Try changing the state name or the minimum damage numbers and rerunning the query. How do the results change?
 
-## Convert a tabular answer to scalar
+## Convert a tabular answer to scalar input using a `let` statement
 
-and then input
+What if you want to define an input for a value you don't yet know? For example, you want to look at a count of the most frequent event time as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA22OsQ6DMAxEd77CYyJ1Ya4Y260T7FUIrqAiCXUcKio+voZWLQMeLNn37nQ9MlxC5DPhI6Hn0yirmgaEAjhEa3pDKgOZkgO5VY7rPcfknKHuhWBD8qw01BP8/B9GMgbIF2Flrt/vQOGOlv+0Pmbb/BmeLRLCpk2xX1PQ3R5151VkQxxuLnhuVbkcVedQHyBvtPgIfYMkpj45b1uR38P9xEwNAQAA" target="_blank"> Click to run query</a>
+To do this, you'll use a `let` statement. First, define the variable name we want to introduce as *MostFrequentEventType*. We'll use the *StormEvents* table to find the top 1 *EventType* by count. Use the `project`operator to return only the *EventType* column. Finally, you want to convert this tabular result with one column and one row to a scalar value that can be used later for input into the query. Do this by putting the whole query inside the `toscalar()` operator.
+
+These steps are summarized in the following let statement:
 
 ```kusto
 let MostFrequentEventType = toscalar(
@@ -43,30 +45,60 @@ let MostFrequentEventType = toscalar(
     |summarize count() by EventType
     | top 1 by count_
     | project EventType);
-StormEvents
-| where EventType == MostFrequentEventType
-| summarize count() by bin(startofmonth(StartTime), 1d)
-| render columnchart 
 ```
 
-You should get results that look like the following image:
+Notice that this statement by itself does not print an answer. Let's now use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on the *MostFrequentEventType* defined above, and then summarize the count by a certain time bin.
 
-:::image type="content" source="../media/7-let-2.png" alt-text="Screenshot of let query using complicated scalar and results." lightbox="../media/7-let-2.png":::
+In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. In this case, you'll use the *StartTime* to determine the start of month.
+
+Finally, render the results as a column chart to get a histogram of the count of the most frequent events binned by month.  
+
+1. Run the following query:
+
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA22OsQ6DMAxEd77CYyJ1Ya4Y260T7FUIrqAiCXUcKio+voZWLQMeLNn37nQ9MlxC5DPhI6Hn0yirmgaEAjhEa3pDKgOZkgO5VY7rPcfknKHuhWBD8qw01BP8/B9GMgbIF2Flrt/vQOGOlv+0Pmbb/BmeLRLCpk2xX1PQ3R5151VkQxxuLnhuVbkcVedQHyBvtPgIfYMkpj45b1uR38P9xEwNAQAA" target="_blank"> Click to run query</a>
+    
+    ```kusto
+    let MostFrequentEventType = toscalar(
+        StormEvents
+        |summarize count() by EventType
+        | top 1 by count_
+        | project EventType);
+    StormEvents
+    | where EventType == MostFrequentEventType
+    | summarize count() by bin(startofmonth(StartTime), 1d)
+    | render columnchart 
+    ```
+    
+    You should get results that look like the following image:
+    
+    :::image type="content" source="../media/7-let-2.png" alt-text="Screenshot of let query using complicated scalar and results." lightbox="../media/7-let-2.png":::
 
 ## Construct a `let` statement with tabular output
 
-– filter already for a certain subset What is the advantage?
+The above examples created a stored scalar value to be used as an input parameter in a query. However, it's also possible to use a `let` statement to create a tabular output that's then used as the input to a query. 
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA8tJLVHwzszJSS0KLskvyi22BVOuZal5JcVcCkBQo1CekVqUquCSmliSUeySWZSaXKIN4XjmpYC5CnYKBlC1BUX5WSCR4JLEklQdBbA5IZUFQCZEiy0eY6y5kB3CVaNQXJqbm1iUWZWqkJKcX5pXogE3TlMhqRJmB8QQACPjzrjIAAAA" target="_blank"> Click to run query</a>
+1. Let's filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This gives a tabular output called *KillerStorms*. Use this as the beginning input for your query.
 
-```kusto
-let KillerStorms=StormEvents
-    | where DeathsDirect+DeathsIndirect > 0
-    | project State, EventType, Deaths=DeathsDirect+DeathsIndirect;
-KillerStorms
-| summarize dcount(EventType) by State, Deaths
-```
+    ```kusto
+        let KillerStorms=StormEvents
+        | where DeathsDirect+DeathsIndirect > 0
+        | project State, EventType, Deaths=DeathsDirect+DeathsIndirect;
+    ```
 
-You should get results that look like the following image:
+1. Then, you can use some of the aggregate functions you've learned in previous units. Run the following query:
 
-:::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA8tJLVHwzszJSS0KLskvyi22BVOuZal5JcVcCkBQo1CekVqUquCSmliSUeySWZSaXKIN4XjmpYC5CnYKBlC1BUX5WSCR4JLEklQdBbA5IZUFQCZEiy0eY6y5kB3CVaNQXJqbm1iUWZWqkJKcX5pXogE3TlMhqRJmB8QQACPjzrjIAAAA" target="_blank"> Click to run query</a>
+    
+    ```kusto
+    let KillerStorms=StormEvents
+        | where DeathsDirect+DeathsIndirect > 0
+        | project State, EventType, Deaths=DeathsDirect+DeathsIndirect;
+    KillerStorms
+    | summarize dcount(EventType) by State, Deaths
+    ```
+    
+    You should get results that look like the following image:
+    
+    :::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
+
+## Use `let` to create a function
