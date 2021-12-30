@@ -6,7 +6,7 @@ One way to make the scripts flexible is use parameters so that users can provide
 
 A common task is to create a _backup_. A backup is usually a compressed file that stores all the files belonging to, for example, an app. When you installed PowerShell, you got the cmdlet `Compress-Archive`, which can help you complete this task.
 
-1. In a terminal, run these commands:
+1. In a terminal, run these bash commands:
 
    ```bash
    mkdir app
@@ -23,19 +23,19 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    pwsh
    ```
 
-1. Create a script file named _Backup.ps1_:
+1. Create a script file named _Backup.ps1_ in the current directory and open it in your code editor:
 
    ```bash
    touch Backup.ps1
    code Backup.ps1
    ```
 
-1.  Add this content to the file:
+1. Add this content to the file:
 
      ```powershell
      $date = Get-Date -format "yyyy-MM-dd"
      Compress-Archive -Path './app' -CompressionLevel 'Fastest' -DestinationPath "./backup-$date"
-     Write-Host "Created backup at $('./backup' + $date).zip"
+     Write-Host "Created backup at $('./backup-' + $date + '.zip')"
      ```
 
      The script invokes `Compress-Archive` and uses three parameters:
@@ -64,6 +64,7 @@ If you add parameters to your script, users can provide values when it runs. You
 
    > [!NOTE]
    >  Use the `code Backup.ps1` command to open the file if the editor isn't open.
+
    ```powershell
    Param(
      [string]$Path = './app',
@@ -82,7 +83,7 @@ If you add parameters to your script, users can provide values when it runs. You
    )
    $date = Get-Date -format "yyyy-MM-dd"
    Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-   Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+   Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    ```
 
 1. Rename your _app_ directory to *webapp* by running this command:
