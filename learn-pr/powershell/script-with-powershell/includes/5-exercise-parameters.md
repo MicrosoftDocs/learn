@@ -6,13 +6,12 @@ One way to make the scripts flexible is use parameters so that users can provide
 
 A common task is to create a _backup_. A backup is usually a compressed file that stores all the files belonging to, for example, an app. When you installed PowerShell, you got the cmdlet `Compress-Archive`, which can help you complete this task.
 
-1. In a terminal, run these commands:
+1. In a terminal, run these bash commands:
 
    ```bash
    mkdir app
    cd app
-   touch index.html
-   touch app.js
+   touch index.html app.js
    cd ..
    ```
 

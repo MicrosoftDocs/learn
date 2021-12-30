@@ -5,13 +5,12 @@ When you write scripts, they might work as intended as long as you type in reaso
 > [!NOTE]
 > Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
 
-- If you haven't completed the previous exercises in this module, run the following commands in a terminal:
+- If you haven't completed the previous exercises in this module, run the following bash commands in a terminal:
 
    ```bash
    mkdir webapp
    cd webapp
-   touch index.html
-   touch app.js
+   touch index.html app.js
    cd ..
    ```
 
