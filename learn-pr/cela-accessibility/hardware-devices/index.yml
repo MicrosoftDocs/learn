@@ -15,8 +15,8 @@ summary: This module introduces accessibility best practices considerations for 
 abstract: |
   In this module, you'll learn about:
   - The role of accessible design in standard gaming hardware development.
-  - Accessibility best practices guidelines to consider for hardware component operation and discoverability.
-  - Accessibility best practices guidelines to consider when you develop hardware packaging components.
+  - Accessibility best practices to consider for hardware component operation and discoverability.
+  - Accessibility best practices to consider when you develop hardware packaging components.
 prerequisites: |
  - Familiarity with playing and creating video games.
  - Familiarity with navigating game platforms, such as Xbox, PlayStation, Nintendo Switch, or Windows.

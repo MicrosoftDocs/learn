@@ -26,6 +26,6 @@ The current status of a device is another important piece of information that gu
 
 These status indicators often use visual cues to communicate this information to players. Visual cues can exclude some players from using this information to guide successful device use.
 
-The following video introduces these barriers in more detail. It presents best practices guidance on how this information can be provided to more players through accessible channels.
+The following video introduces these barriers in more detail. It presents best practices on how this information can be provided to more players through accessible channels.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPjko]
