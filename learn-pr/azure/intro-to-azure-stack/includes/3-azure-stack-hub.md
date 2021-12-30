@@ -1,8 +1,8 @@
-Customers might already have a significant presence in Azure or might be planning on modernizing their Azure-based workloads by leveraging capabilities of both infrastructure-as-a-service (IaaS) and platform-as-a-service (PaaS) services. For example, Contoso will likely benefit from converting its two-tier Online Transaction Processing (OLTP) application used by the Contoso’s loan-origination department to a PaaS-based implementation. Both PHP-based front-end tier and MySQL databases are viable candidates for such conversion. In these types of scenarios, Azure Stack Hub can help with implementing a consistent management and programming model for on-premises workloads, resulting in reduced operational complexity and cost savings. In this unit you'll learn what is Azure Stack Hub and when to use it.
+Customers might already have a significant presence in Azure, or might be planning on modernizing their Azure-based workloads by using capabilities of both infrastructure-as-a-service (IaaS) and platform-as-a-service (PaaS) services. For example, Contoso will likely benefit from converting its two-tier Online Transaction Processing (OLTP) application used by the Contoso’s loan-origination department to a PaaS-based implementation. Both PHP-based front-end tier and MySQL databases are viable candidates for such conversion. In these types of scenarios, Azure Stack Hub can help with implementing a consistent management and programming model for on-premises workloads, resulting in reduced operational complexity and cost savings. In this unit, you'll learn what Azure Stack Hub is, what it isn't, and when to use it.
 
 ## What is Azure Stack Hub?
 
-Azure Stack Hub allows you to deploy a subset of IaaS and PaaS services available in the Azure public cloud into your own datacenter or in a datacenter managed by a service provider. These services include virtual machines, App Service web apps, API apps, and functions, SQL and MySQL databases, containers, Event Hubs, IoT Hubs, Service Fabric clusters and Kubernetes clusters.
+Azure Stack Hub allows you to deploy a subset of IaaS and PaaS services available in the Azure public cloud into your own datacenter or in a datacenter managed by a service provider. These services include virtual machines, App Service web apps, API apps, and functions, SQL and MySQL databases, containers, Event Hubs, Key Vault, IoT Hubs, Service Fabric clusters, and Kubernetes clusters.
 
 > [!NOTE]
 > In the simplest terms, you can think of Azure Stack Hub as Azure for on-premises environments.
@@ -23,7 +23,7 @@ Azure Stack Hub allows you to benefit from the latest advancements in cloud-base
 
 Azure Stack Hub services support *multitenancy*. This means that as the host (or provider) of Azure Stack Hub, you can simultaneously offer the same types of resources to multiple groups of users, while providing each group with exclusive access to their respective resources with full logical isolation between them. Service providers can leverage this capability to deliver Azure Stack Hub services to multiple customers. Large organizations can use Azure Stack Hub to host workloads for multiple departments, while maintaining separation between them.
 
-## What Azure Stack Hub is not?
+## What Azure Stack Hub is not
 
 While it's important to understand what Azure Stack Hub is, it's also helpful to realize what Azure Stack Hub is not, which is:
 
