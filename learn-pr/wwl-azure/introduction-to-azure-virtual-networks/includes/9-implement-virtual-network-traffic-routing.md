@@ -2,7 +2,7 @@ Azure automatically creates a route table for each subnet within an Azure virtua
 
 ## System routes
 
-Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes, but you can override some system routes with custom routes. Azure creates default system routes for each subnet, and adds additional optional default routes to specific subnets, or every subnet, when you use specific Azure capabilities.
+Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create or remove system routes, but you can override some system routes with custom routes. Azure creates default system routes for each subnet, and adds additional optional default routes to specific subnets, or every subnet, when you use specific Azure capabilities.
 
 ### Default routes
 
