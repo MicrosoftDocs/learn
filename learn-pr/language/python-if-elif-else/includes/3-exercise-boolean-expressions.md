@@ -93,7 +93,7 @@ The `bool()` function converts any non-zero value to `True`, but it converts the
 
 ## What is a Boolean expression?
 
-As you add logic to our applications, you'll evaluate Boolean expressions. A simple example illustrates the basic idea.
+As you add logic to your applications, you'll evaluate Boolean expressions. A simple example illustrates the basic idea.
 
 `1 + 1 = 3`
 
@@ -146,7 +146,7 @@ An operator is like a mini function. Operators perform an operation on operands,
 - Membership operators
 
 
-In this unit, you'll look at comparison and logic operators. You'll likely cover most operators as you continue through this learning path.
+In this unit, you'll look at comparison and logical operators. You'll likely cover most operators as you continue through this learning path.
 
 Some operators consist of a single symbol, like many of the operators we'll use in this unit. They operate on the values to their left and right. Other operators consist of a pair of symbols. They operate on the values in between their opening symbol and their closing symbol.
 

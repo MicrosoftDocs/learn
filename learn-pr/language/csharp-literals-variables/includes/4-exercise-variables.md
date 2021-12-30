@@ -121,7 +121,7 @@ Console.WriteLine(firstName);
 
 Now, run the code. You'll see the following result in the output console:
 
-```
+```output
 (2,19): error CS0165: Use of unassigned local variable 'firstName'
 ```
 
@@ -132,8 +132,8 @@ In fact, you can perform both the declaration and setting the value of the varia
 Modify the code you wrote earlier in this step to match the following code:
 
 ```csharp-interactive
-string value = "Bob";
-Console.WriteLine(value);
+string firstName = "Bob";
+Console.WriteLine(firstName);
 ```
 
 Now, run the code. You should see the following output:

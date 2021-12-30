@@ -166,43 +166,40 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 1. Enter this code for the class.
 
     ```csharp
-    using System.Collections.Generic;
-    
-    namespace BlazingPizza
+    namespace BlazingPizza;
+
+    public class OrderState
     {
-        public class OrderState
+        public bool ShowingConfigureDialog { get; private set; }
+        public Pizza ConfiguringPizza { get; private set; }
+        public Order Order { get; private set; } = new Order();
+
+        public void ShowConfigurePizzaDialog(PizzaSpecial special)
         {
-            public bool ShowingConfigureDialog { get; private set; }
-            public Pizza ConfiguringPizza { get; private set; }
-            public Order Order { get; private set; } = new Order();
-    
-            public void ShowConfigurePizzaDialog(PizzaSpecial special)
+            ConfiguringPizza = new Pizza()
             {
-                ConfiguringPizza = new Pizza()
-                {
-                    Special = special,
-                    SpecialId = special.Id,
-                    Size = Pizza.DefaultSize,
-                    Toppings = new List<PizzaTopping>(),
-                };
-    
-                ShowingConfigureDialog = true;
-            }
-    
-            public void CancelConfigurePizzaDialog()
-            {
-                ConfiguringPizza = null;
-    
-                ShowingConfigureDialog = false;
-            }
-    
-            public void ConfirmConfigurePizzaDialog()
-            {
-                Order.Pizzas.Add(ConfiguringPizza);
-                ConfiguringPizza = null;
-    
-                ShowingConfigureDialog = false;
-            }
+                Special = special,
+                SpecialId = special.Id,
+                Size = Pizza.DefaultSize,
+                Toppings = new List<PizzaTopping>(),
+            };
+
+            ShowingConfigureDialog = true;
+        }
+
+        public void CancelConfigurePizzaDialog()
+        {
+            ConfiguringPizza = null;
+
+            ShowingConfigureDialog = false;
+        }
+
+        public void ConfirmConfigurePizzaDialog()
+        {
+            Order.Pizzas.Add(ConfiguringPizza);
+            ConfiguringPizza = null;
+
+            ShowingConfigureDialog = false;
         }
     }
     ```
@@ -214,7 +211,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 1. In the `Add services to the container` segment, add this line at the bottom.
 
     ```csharp
-    builder.services.AddScoped<OrderState>();
+    builder.Services.AddScoped<OrderState>();
     ```
 
     From the previous exercise, we added our database context here. This code adds the new `OrderState` service. With this in place, we can now use it in the `index.razor` component.
@@ -230,12 +227,12 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
     ```razor
     @code {
-      List<PizzaSpecial> specials = new List<PizzaSpecial>();
+        List<PizzaSpecial> specials = new List<PizzaSpecial>();
     
-      protected override async Task OnInitializedAsync()
-      {
-          specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
-      }
+        protected override async Task OnInitializedAsync()
+        {
+            specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
+        }
     }
     ```
 

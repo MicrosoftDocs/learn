@@ -18,11 +18,11 @@ Start by defining the component parameter in the child component. You define it 
 <p>@PizzaDescription</p>
 
 @code {
-	[Parameter]
-	public string PizzaName { get; set; }
-	
-	[Parameter]
-	public string PizzaDescription { get; set; } = "The best pizza you've ever tasted."
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    [Parameter]
+    public string PizzaDescription { get; set; } = "The best pizza you've ever tasted."
 }
 ```
 
@@ -33,8 +33,8 @@ You can also use custom classes in your project as component parameters. Conside
 ```csharp
 public class PizzaTopping
 {
-	public string Name { get; set; }
-	public string Ingredients { get; set; }
+    public string Name { get; set; }
+    public string Ingredients { get; set; }
 }
 ```
 
@@ -46,8 +46,8 @@ You can use that as a component parameter in the same way as a parameter value, 
 <p>Ingredients: @Topping.Ingredients</p>
 
 @code {
-	[Parameter]
-	public PizzaTopping Topping { get; set; }
+    [Parameter]
+    public PizzaTopping Topping { get; set; }
 }
 ```
 
@@ -76,7 +76,7 @@ In the parent component, use the `<CascadingValue>` tag to specify the informati
 <h1>Special Offers</h1>
 
 <CascadingValue Name="DealName" Value="Throwback Thursday">
-	<!-- Any descendant component rendered here will be able to access the cascading value. -->
+    <!-- Any descendant component rendered here will be able to access the cascading value. -->
 </CascadingValue>
 ```
 
@@ -86,8 +86,8 @@ In the descendant components, you can access the cascading value by using compon
 <h2>Deal: @DealName</h2>
 
 @code {
-	[CascadingParameter(Name="DealName")]
-	private string DealName { get; set; }
+    [CascadingParameter(Name="DealName")]
+    private string DealName { get; set; }
 }
 ```
 
@@ -107,7 +107,7 @@ As an example, let's create a class that stores a value about sales:
 ```csharp
 public class PizzaSalesState
 {
-	public int PizzasSoldToday { get; set; }
+    public int PizzasSoldToday { get; set; }
 }
 ```
 
@@ -116,11 +116,11 @@ Now, add the class as a scoped service, in the Program.cs file:
 ```csharp
 ...
 // Add services to the container
-builder.services.AddRazorPages();
-builder.services.AddServerSideBlazor();
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
 
 // Add the AppState class
-builder.services.AddScoped<PizzaSalesState>();
+builder.Services.AddScoped<PizzaSalesState>();
 ...
 ```
 
@@ -137,10 +137,10 @@ Now, in any component where you want to set or retrieve AppState values, inject 
 <button @onclick="IncrementSales">Buy a Pizza</button>
 
 @code {
-	private void IncrementSales()
-	{
-		SalesState.PizzasSoldToday++;
-	}
+    private void IncrementSales()
+    {
+        SalesState.PizzasSoldToday++;
+    }
 }
 ```
 
