@@ -3,20 +3,20 @@ As a security engineer working for Contoso, you recently noticed that a signific
 In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule.
 
 > [!NOTE]
-> To complete this exercise, you need to have completed the setup exercise earlier in the module. If you haven't done that, please do it now.
+> To complete this exercise, you need to complete the setup exercise earlier in the module. If you haven't, please do it now.
 
 ## Task 1: Create an analytics rule from the wizard
 
 In this task, you'll create an analytics rule that will create an incident when a VM is deleted in the Contoso Azure subscription.
 
-1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Sentinel workspace.
+1. In the Azure portal, search for and select **Microsoft Sentinel**, then select the previously created Sentinel workspace.
 2. In the **Configuration** section, select **Analytics**.
-3. Select **Microsoft Sentinel | Analytics**, select **Create**, and then select **Scheduled query rule**.
-4. On the **General** page of the Analytics Rule wizard, provide the following inputs, and then select **Next: Set rule logic**.
+3. Select **Microsoft Sentinel | Analytics**, select **Create**, then select **Scheduled query rule**.
+4. On the **General** page of the Analytics Rule wizard, provide the following inputs, then select **Next: Set rule logic**.
 
    - **Name**: **Deleted VMs**
    - **Description**: Enter a detailed description that will help other security analysts understand what the rule does.
-   - **Tactics**: Select **Impact**.
+   - **Tactics**: Select **Initial Access**.
    - **Severity**: Select **Medium**.
    - **Status**: Select **Enable**.
 
@@ -27,7 +27,7 @@ In this task, you'll create an analytics rule that will create an incident when 
     ```kusto
    AzureActivity
    | where OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
-   | where ActivityStatus == 'Succeeded'
+   | where ActivityStatusValye == 'Success'
    | extend AccountCustomEntity = Caller
    | extend IPCustomEntity = CallerIpAddress
     ```
@@ -35,7 +35,7 @@ In this task, you'll create an analytics rule that will create an incident when 
 6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
 7. Still on the **Set rule logic** page, scroll down to view the following configuration options:
 
-   - In the  **Map entities** section, you can define the entities that are returned as part of the query rule and that you can use to perform in-depth analysis. Use the default values.
+   - In the  **Entity mapping** section, you can define the entities that are returned as part of the query rule that you can use to perform in-depth analysis. Use the default values.
    - In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
    - In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert is generated. Use the default values.
    - In the **Event grouping** section, accept the default selection **Group all events into a single alert**.
@@ -57,7 +57,7 @@ In this task, you'll delete a VM to test rule detection and incident creation.
 3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
 
   > [!NOTE]
-  > Be sure to give the operation several minutes to complete before proceeding to the next step!
+  > Be sure to give the operation several minutes to complete before proceeding to the next step.
 
 ## Task 3: Investigate an incident
 

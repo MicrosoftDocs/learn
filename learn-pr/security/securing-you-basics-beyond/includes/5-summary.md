@@ -28,6 +28,6 @@ To learn more about keeping yourself secure, visit the following resources:
   - [LastPass](https://www.lastpass.com/?azure-portal=true)
 
 - Learn more about multifactor authentication, Microsoft Authenticator, and devices that support multifactor authentication:
-  - [NIST - Back to basics: Multi-factor authentication (MFA)](https://www.nist.gov/itl/applied-cybersecurity/tig/back-basics-multi-factor-authentication/?azure-portal=true)
+  - [NIST - Back to basics: Multi-factor authentication (MFA)](https://www.nist.gov/blogs/cybersecurity-insights/back-basics-whats-multi-factor-authentication-and-why-should-i-care/?azure-portal=true)
   - [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator)
   - [Yubico YubiKey](https://www.yubico.com/?azure-portal=true)

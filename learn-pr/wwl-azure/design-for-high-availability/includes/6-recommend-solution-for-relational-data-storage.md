@@ -94,10 +94,10 @@ Active geo-replication is available for:
 
 >[!TIP]
 >You can have up to four readable secondary replicas. Cosmos DB. Cosmos DB supports geo-replication across regions. However, you also can:
-
-	- Designate one region as the writable region and all others as read-only replicas.
-
-	- Fail over by selecting another region to be the write region during an outage.
+>
+>	- Designate one region as the writable region and all others as read-only replicas.
+>
+>	- Fail over by selecting another region to be the write region during an outage.
 
 >[!NOTE]
 >Support for Azure SQL Hyperscale is in preview.

@@ -7,13 +7,13 @@ Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
 
-The **CoreServicesVnet** virtual network is deployed in the **US West** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
+The **CoreServicesVnet** virtual network is deployed in the **East US** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
-The **ManufacturingVnet** virtual network is deployed in the **North Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
+The **ManufacturingVnet** virtual network is deployed in the **West Europe** region, near the location of your organization's manufacturing facilities. This virtual network will contain systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from, such as temperature, and will need an IP address space that it can expand into.
 
-The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
+The **ResearchVnet** virtual network is deployed in the **Southeast Asia** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-:::image type="content" source="../media/design-implement-vnet-peering-0b789104.png" alt-text="Global virtual network architecture":::
+:::image type="content" source="../media/design-implement-vnet-peering.png" alt-text="Global virtual network architecture":::
 
 
 You will create the following resources:
@@ -40,7 +40,7 @@ You will create the following resources:
     CoreServicesVnet
   :::column-end:::
   :::column:::
-    West US
+    East US
   :::column-end:::
   :::column:::
     10.20.0.0/16
@@ -125,7 +125,7 @@ You will create the following resources:
     ManufacturingVnet
   :::column-end:::
   :::column:::
-    North Europe
+    West Europe
   :::column-end:::
   :::column:::
     10.30.0.0/16
@@ -210,7 +210,7 @@ You will create the following resources:
     ResearchVnet
   :::column-end:::
   :::column:::
-    West India
+    Southeast Asia
   :::column-end:::
   :::column:::
     10.40.0.0/16
@@ -254,10 +254,7 @@ In this exercise, you will:
 ## Task 1: Create the Contoso resource group
 
 1.  Go to [Azure portal](https://portal.azure.com/).
-2.  On the home page, under **Azure services**, select **Resource groups**.
-    
-    :::image type="content" source="../media/azure-portal-home-page-annotated-4c34708f.png" alt-text="Azure portal home page with Resource groups highlighted.":::
-    
+2.  On the home page, under **Azure services**, select **Resource groups**.    
 3.  In Resource groups, select **+ Create**.
 4.  Use the information in the following table to create the resource group.
     
@@ -291,7 +288,7 @@ In this exercise, you will:
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        (US) East US
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -321,16 +318,14 @@ In this exercise, you will:
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
-1.  On the Azure portal home page, select **Create a resource**.
-2.  In **Search services and marketplace**, enter virtual network. 
+1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services. 
+ :::image type="content" source="../media/global-search-bar.png" alt-text="Azure portal home page Global Search bar results for virtual network.":::
 
-    :::image type="content" source="../media/create-resource-search-virtual-network-annotated-7b909a50.png" alt-text="Azure portal Create a resource page with Search services and marketplace box highlighted.":::
-    
-3.  In Marketplace, in Virtual Network, select **Create > Virtual network**. 
+2.   Select **Create** on the Virtual networks page.
 
-    :::image type="content" source="../media/virtual-network-service-annotated-438cc2d0.png" alt-text="Virtual Network tile with Create Virtual network highlighted.":::
-    
-4.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
+    :::image type="content" source="../media/create-virtual-network.png.png" alt-text="Create a virtual network wizard.":::
+      
+3.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
 
     :::image type="content" source="../media/default-vnet-ip-address-range-annotated-22032ab7.png" alt-text="ip address configuration for azure virtual network deployment":::
     
@@ -376,7 +371,7 @@ In this exercise, you will:
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        (US) East US
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -391,8 +386,8 @@ In this exercise, you will:
       :::column-end:::
     :::row-end:::
     
-5.  Use the information in the following table to create the CoreServicesVnet subnets.
-6.  To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+4.  Use the information in the following table to create the CoreServicesVnet subnets.
+5.  To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
     
     :::row:::
       :::column:::
@@ -494,9 +489,9 @@ In this exercise, you will:
       :::column-end:::
     :::row-end:::
     
-7.  To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
-8.  Verify your configuration passed validation, and then select **Create**.
-9.  Repeat steps 1 -8 for each VNet based on the tables below
+6.  To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+7.  Verify your configuration passed validation, and then select **Create**.
+8.  Repeat steps 1 -8 for each VNet based on the tables below
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
 
@@ -541,7 +536,7 @@ In this exercise, you will:
     Region
   :::column-end:::
   :::column:::
-    (Europe) North Europe
+    (Europe) West Europe
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -701,7 +696,7 @@ In this exercise, you will:
     Region
   :::column-end:::
   :::column:::
-    West India
+    Southeast Asia
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -756,13 +751,7 @@ In this exercise, you will:
 
 1.  On the Azure portal home page, select **All resources**.
 
-    :::image type="content" source="../media/azure-portal-home-page-all-resources-annotated-cdf9a16f.png" alt-text="Azure portal home page with All resources highlighted.":::
-
-
-2.  Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
-
-    :::image type="content" source="../media/all-resources-list-annotated-94b7c54d.png" alt-text="All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.":::
-
+2.  Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. 
 
 3.  Note that Azure creates NetworkWatchers for each region that you use.
 4.  Select **CoreServicesVnet**.

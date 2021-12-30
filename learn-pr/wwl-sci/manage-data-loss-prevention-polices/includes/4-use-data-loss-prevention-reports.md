@@ -37,11 +37,11 @@ The DLP alert management dashboard in the Microsoft 365 Compliance center can be
 
 - Devices
 
-The remediation of MCAS DLP alerts is done through the MCAS dashboard.
+The remediation of Microsoft Defender for Cloud Apps DLP alerts is done through the Defender for Cloud Apps dashboard.
 
-## Data loss prevention alerts in the Microsoft Cloud App Security dashboard
+## Data loss prevention alerts in the Microsoft Defender for Cloud Apps dashboard
 
-You can also view a report for DLP alerts in the MCAS Dashboard. This report shows the alerts and matches of all your MCAS policies that are part of the DLP category. You can select each alert or match to gain information about:
+You can also view a report for DLP alerts in the Defender for Cloud Apps Dashboard. This report shows the alerts and matches of all your Defender for Cloud Apps policies that are part of the DLP category. You can select each alert or match to gain information about:
 
 - The type of sensitive information
 
@@ -55,5 +55,5 @@ You can also view a report for DLP alerts in the MCAS Dashboard. This report sho
 
 [ ![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png) ](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
-Use the MCAS DLP alerts report to view an overview of MCAS policy alerts. Since policies created on the MCAS side have different options and scopes compared to MCAS policies created in the Compliance center, it's prudent to be aware of alerts in both dashboards.
+Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Compliance center, it's prudent to be aware of alerts in both dashboards.
 

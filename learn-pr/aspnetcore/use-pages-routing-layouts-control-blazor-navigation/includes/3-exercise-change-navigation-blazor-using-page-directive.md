@@ -19,7 +19,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Clone the app from GitHub.
 
     ```powershell
-    git clone https://github.com/PhilStollery/blazing-pizza-for-learn-part-2.git BlazingPizza
+    git clone https://github.com/MicrosoftDocs/mslearn-blazor-navigation.git BlazingPizza
     ```
 	
 1. Select **File**, then select **Open folder...**.

@@ -1,6 +1,4 @@
-If you want to position your game objects in an appropriate place or order, Unity helps you in moving, rotating, and scaling the game object. You can also use the RectTransform and Transform options. *RectTransform* is used for changing the position of 2D objects, such as sprites. *Transform* combines the move, rotate, and scale tools.
-
-Positioning the game objects on the scene is a crucial step, because it helps you decide where your holograms must be placed in the surroundings. Experienced Unity developers tend to use positioning often, to place objects on the scene systematically. It's frequently used to adjust the placements of objects and place them in their rightful position. This is one practice that all developers must use during the development phase.
+ Unity lets you place an object in the scene and then scale or rotate it. You can use the *RectTransform* feature to change the position of 2D objects, such as sprites. The *Transform* feature combines the move, rotate, and scale tools.
 
 ## Parent object
 
