@@ -16,24 +16,21 @@ In a Blazor Server app, you can create a registered service to represent a data 
 Start creating your registered service, by writing a class that defines its properties. Here's an example that you might write to represent a pizza:
 
 ```csharp
-using System;
+namespace BlazingPizza.Data;
 
-namespace BlazingPizza.Data
+public class Pizza
 {
- public class Pizza
- {
-  public int PizzaId { get; set; }
- 
-  public string Name { get; set; }
-  
-  public string Description { get; set; }
-  
-  public decimal Price { get; set; }
-  
-  public bool Vegetarian { get; set; }
-  
-  public bool Vegan { get; set; }
- }
+    public int PizzaId { get; set; }
+    
+    public string Name { get; set; }
+    
+    public string Description { get; set; }
+    
+    public decimal Price { get; set; }
+    
+    public bool Vegetarian { get; set; }
+    
+    public bool Vegan { get; set; }
 }
 ```
 
@@ -42,18 +39,14 @@ The class defines the pizza's properties and datatypes. You must make sure these
 Next, define the service:
 
 ```csharp
-using System;
-using System.Threading.Tasks;
+namespace BlazingPizza.Data;
 
-namespace BlazingPizza.Data
+public class PizzaService
 {
- public class PizzaService
- {
-  public Task<Pizza[]> GetPizzasAsync()
-  {
-   // Call your data access technology here
-  }
- }
+    public Task<Pizza[]> GetPizzasAsync()
+    {
+    // Call your data access technology here
+    }
 }
 ```
 
@@ -67,7 +60,7 @@ You must also register the service by adding a line to the `Add Services to the 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 // Register the pizzas service
-builder.services.AddSingleton<PizzaService>();
+builder.Services.AddSingleton<PizzaService>();
 ...
 ```
 
@@ -101,7 +94,7 @@ A good place to call the service and obtain data is in the `OnInitializedAsync` 
 ```csharp
 protected override async Task OnInitializedAsync()
 {
- \\ Call the service here
+    \\ Call the service here
 }
 ```
 
@@ -114,7 +107,7 @@ private Pizza[] todaysPizzas;
 
 protected override async Task OnInitializedAsync()
 {
- todaysPizzas = await PizzaSvc.GetPizzasAsync();
+    todaysPizzas = await PizzaSvc.GetPizzasAsync();
 }
 ```
 
@@ -129,11 +122,11 @@ First, let's determine what the page displays before the pizzas are loaded. We c
 ```razor
 @if (todaysPizzas == null)
 {
- <p>We're finding out what pizzas are available today...</p>
+    <p>We're finding out what pizzas are available today...</p>
 }
 else
 {
- <!-- This markup will be rendered once the pizzas are loaded -->
+    <!-- This markup will be rendered once the pizzas are loaded -->
 }
 ```
 

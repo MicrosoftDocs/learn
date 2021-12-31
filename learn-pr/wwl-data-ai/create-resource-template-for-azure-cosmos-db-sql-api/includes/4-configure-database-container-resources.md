@@ -1,6 +1,7 @@
 Each template resource uses the same resource type and version between both Azure Resource Manager and Bicep templates. If you learn how to build it in one language, you can easily learn it in the other.
 
-> &#128221; A Bicep template does not require any "empty" template syntax. You can begin writing your definitions in a blank file.
+> [!NOTE]
+> A Bicep template does not require any "empty" template syntax. You can begin writing your definitions in a blank file.
 
 ## Account resource
 
@@ -23,7 +24,8 @@ resource Account 'Microsoft.DocumentDB/databaseAccounts@2021-05-15' = {
 }
 ```
 
-> &#128161; If this resource already exists from a previous deployment, the Azure Resource Manager will just skip the resource and move on to the next. This is very handy when building a template incrementally.
+> [!TIP]
+> If this resource already exists from a previous deployment, the Azure Resource Manager will just skip the resource and move on to the next. This is very handy when building a template incrementally.
 
 ## Database resource
 

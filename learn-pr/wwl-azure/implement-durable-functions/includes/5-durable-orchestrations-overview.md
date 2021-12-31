@@ -26,13 +26,13 @@ When an orchestration function is given more work to do, the orchestrator wakes 
 
 The table below describes the features and patterns of orchestrator functions.
 
-Pattern/Feature | Description
-- | -
-Sub-orchestrations | Orchestrator functions can call activity functions, but also other orchestrator functions. For example, you can build a larger orchestration out of a library of orchestrator functions. Or, you can run multiple instances of an orchestrator function in parallel.
-Durable timers | Orchestrations can schedule durable timers to implement delays or to set up timeout handling on async actions. Use durable timers in orchestrator functions instead of `Thread.Sleep` and `Task.Delay` (C#) or `setTimeout()` and `setInterval()` (JavaScript).
-External events | Orchestrator functions can wait for external events to update an orchestration instance. This Durable Functions feature often is useful for handling a human interaction or other external callbacks.
-Error handling | Orchestrator functions can use the error-handling features of the programming language. Existing patterns like `try/catch` are supported in orchestration code.
-Critical sections | Orchestration instances are single-threaded so it isn't necessary to worry about race conditions _within_ an orchestration. However, race conditions are possible when orchestrations interact with external systems. To mitigate race conditions when interacting with external systems, orchestrator functions can define _critical sections_ using a `LockAsync` method in .NET.
-Calling HTTP endpoints | Orchestrator functions aren't permitted to do I/O. The typical workaround for this limitation is to wrap any code that needs to do I/O in an activity function. Orchestrations that interact with external systems frequently use activity functions to make HTTP calls and return the result to the orchestration.
-Passing multiple parameters | It isn't possible to pass multiple parameters to an activity function directly. The recommendation is to pass in an array of objects or to use ValueTuples objects in .NET.
+| Pattern/Feature | Description |
+|--|--|
+| Sub-orchestrations | Orchestrator functions can call activity functions, but also other orchestrator functions. For example, you can build a larger orchestration out of a library of orchestrator functions. Or, you can run multiple instances of an orchestrator function in parallel. |
+| Durable timers | Orchestrations can schedule durable timers to implement delays or to set up timeout handling on async actions. Use durable timers in orchestrator functions instead of `Thread.Sleep` and `Task.Delay` (C#) or `setTimeout()` and `setInterval()` (JavaScript). |
+| External events | Orchestrator functions can wait for external events to update an orchestration instance. This Durable Functions feature often is useful for handling a human interaction or other external callbacks. |
+| Error handling | Orchestrator functions can use the error-handling features of the programming language. Existing patterns like `try/catch` are supported in orchestration code. |
+| Critical sections | Orchestration instances are single-threaded so it isn't necessary to worry about race conditions _within_ an orchestration. However, race conditions are possible when orchestrations interact with external systems. To mitigate race conditions when interacting with external systems, orchestrator functions can define _critical sections_ using a `LockAsync` method in .NET. |
+| Calling HTTP endpoints | Orchestrator functions aren't permitted to do I/O. The typical workaround for this limitation is to wrap any code that needs to do I/O in an activity function. Orchestrations that interact with external systems frequently use activity functions to make HTTP calls and return the result to the orchestration. |
+| Passing multiple parameters | It isn't possible to pass multiple parameters to an activity function directly. The recommendation is to pass in an array of objects or to use ValueTuples objects in .NET. |.
 

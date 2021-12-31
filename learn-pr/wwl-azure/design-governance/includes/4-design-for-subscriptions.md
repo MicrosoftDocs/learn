@@ -1,4 +1,4 @@
-note**Azure Subscriptions** are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
+**Azure Subscriptions** are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
 
 ### Things to know about subscriptions
 

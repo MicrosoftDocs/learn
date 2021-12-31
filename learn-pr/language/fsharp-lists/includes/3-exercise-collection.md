@@ -36,7 +36,7 @@ Now that you've created your deck, you can construct a method for drawing cards 
 1. To try out your implementation, add the following code to the `main()` method:
 
    ```fsharp
-   cards |> drawCard |> drawCard // 0 1
+   let result = cards |> drawCard |> drawCard // 0 1
    ```
 
 1. Run the project by calling `dotnet run`:
@@ -78,7 +78,7 @@ The ability to draw cards from the deck is a great start, but card games ordinar
    ```fsharp
    let d, h = (cards, hand) |> drawCard |> drawCard
 
-   printfn "Deck: %A Hand: %A" d h // Deck: [2; 3; 4; 5] Hand: [0; 1]
+   printfn "Deck: %A Hand: %A" d h // Deck: [2; 3; 4; 5] Hand: [1; 0]
    ```
 
 1. Run the project by calling `dotnet run`:
@@ -90,7 +90,7 @@ The ability to draw cards from the deck is a great start, but card games ordinar
    You should see the following output printed in the console:
 
    ```output
-   Deck: [2; 3; 4; 5] Hand: [0; 1]
+   Deck: [2; 3; 4; 5] Hand: [1; 0]
    ```
 
 Congratulations! You've managed to simulate having a player, `hand`, for each time you draw a card.

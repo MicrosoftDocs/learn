@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.build-qna-solution-qna-maker
 metadata:
-  title: Build a QnA solution with QnA Maker
-  description: "Build a QnA solution with QnA Maker"
-  ms.date: 09/17/2021
+  title: Build a question answering solution
+  description: "Build a question answering solution"
+  ms.date: 12/14/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a QnA solution with QnA Maker
-summary: The QnA Maker service makes it easy to build applications in which users ask questions using natural language, and receive appropriate answers.
+title: Build a question answering solution
+summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.
 abstract: |
   After completing this module, you will be able to:
-  - Understand QnA Maker
-  - Compare QnA Maker to Language Understanding
+  - Understand question answering
+  - Compare question answering to language understanding
   - Create a knowledge base
   - Implement multi-turn conversation
   - Test and publish a knowledge base
-  - Consume QnA client interfaces
+  - Consume a knowledge base
   - Implement active learning
-  - Create a QnA bot
+  - Create a question answering bot
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
@@ -33,7 +33,6 @@ roles:
 - developer
 products:
 - azure-cognitive-services
-- azure-qna-maker
 units:
 - learn.wwl.build-qna-solution-qna-maker.introduction
 - learn.wwl.build-qna-solution-qna-maker.understand

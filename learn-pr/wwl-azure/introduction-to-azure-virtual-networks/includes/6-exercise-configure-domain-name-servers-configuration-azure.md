@@ -255,15 +255,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Create TestVM1
 
-1.  On the Azure home page, select **Virtual Machines**.
-2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM":::
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-
-3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-4.  Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-5.  Use the information in the following table to create your first VM.
+3. Use the information in the following table to create your first VM.
     
     :::row:::
       :::column:::
@@ -306,7 +302,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        East US
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -328,7 +324,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Image
       :::column-end:::
       :::column:::
-        Windows 10 Pro, Version 20H2 - Gen 1
+        Windows Server 2022 Datacenter- Gen1
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -350,7 +346,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Size
       :::column-end:::
       :::column:::
-        Standard\_D2\_v3 - 2vcpus, 8GiB memory
+        Standard\_D2s\_v3 - 2vcpus, 8GiB memory
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -395,17 +391,6 @@ In this section, you will create two test VMs to test the Private DNS zone confi
       :::column-end:::
       :::column:::
         RDP (3389)
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        
-      :::column-end:::
-      :::column:::
-        I confirm I have an eligible Windows 10 license with multi-tenant hosting rights.
-      :::column-end:::
-      :::column:::
-        Selected
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -541,19 +526,15 @@ In this section, you will create two test VMs to test the Private DNS zone confi
       :::column-end:::
     :::row-end:::
     
-6.  While the deployment is in progress, you can proceed with creating TestVM2.
+4.  While the deployment is in progress, you can proceed with creating TestVM2.
 
 ### Create TestVM2
 
-1.  On the Azure home page, select **Virtual Machines**.
-2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Azure portal screenshot creating a VM from a preset configuration":::
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-
-3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-4.  Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-5.  Use the information in the following table to create your second VM.
+3. Use the information in the following table to create your second VM.
     
     :::row:::
       :::column:::
@@ -596,7 +577,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Region
       :::column-end:::
       :::column:::
-        (US) West US
+        East US
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -618,7 +599,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Image
       :::column-end:::
       :::column:::
-        Windows 10 Pro, Version 20H2 - Gen 1
+        Windows Server 2022 Datacenter- Gen1
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -640,7 +621,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
         Size
       :::column-end:::
       :::column:::
-        Standard\_D2\_v3 - 2vcpus, 8GiB memory
+        Standard\_D2s\_v3 - 2vcpus, 8GiB memory
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -685,17 +666,6 @@ In this section, you will create two test VMs to test the Private DNS zone confi
       :::column-end:::
       :::column:::
         RDP (3389)
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        
-      :::column-end:::
-      :::column:::
-        I confirm I have an eligible Windows 10 license with multi-tenant hosting rights.
-      :::column-end:::
-      :::column:::
-        Selected
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -831,8 +801,8 @@ In this section, you will create two test VMs to test the Private DNS zone confi
       :::column-end:::
     :::row-end:::
     
-6.  When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
-7.  Verify that both virtual machines have been created.
+4.  When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+5.  Verify that both virtual machines have been created.
 
 ## Task 4: Verify records are present in the DNS zone
 

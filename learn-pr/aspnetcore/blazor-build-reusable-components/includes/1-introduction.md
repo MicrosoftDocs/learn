@@ -1,6 +1,6 @@
 Razor Class Libraries let you share and reuse user-interface components between Blazor applications.  In this module, we're going to focus on building and sharing components for Blazor applications
 
-![Diagram that a Razor class library used in Blazor Server and Blazor Web Assembly](../media/blazor-class-library-usage.png)
+![Diagram that a Razor class library used in Blazor Server and Blazor WebAssembly](../media/blazor-class-library-usage.png)
 
 ## Example scenario
 

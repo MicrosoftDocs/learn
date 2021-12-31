@@ -4,13 +4,13 @@ title: Examine device identity and registration
 metadata:
   title: Examine device identity and registration
   description: "Examine device identity and registration"
-  ms.date: 11/18/2021
+  ms.date: 12/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-device-identity-registration.md)]
