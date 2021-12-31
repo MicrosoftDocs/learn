@@ -8,7 +8,7 @@ Here, you'll learn how to use route parameters to specify parts of the URL to pr
 
 Earlier in this module, you learned how parts of the URI that the user requests can be used to route the request to the right component. You often want to use other parts of the URI as a value in your rendered page. For example, suppose the user requests:
 
-**http://www.contoso.com/favoritepizza/hawaiian**
+`http://www.contoso.com/favoritepizza/hawaiian`
 
 By using the `@page` directive, you've learned how to route this request to, for example, the **FavoritePizza.razor** component. You want to make use of the value **hawaiian** in your component. To obtain this value, you can declare it as a **route parameter**. 
 
@@ -57,11 +57,11 @@ In the above example, the `{favorite}` parameter is required. To make the route 
 It's a good idea to set a default value for the optional parameter. In the above example, the default value for the `Favorite` parameter is set in the `OnInitialized` method.
 
 > [!NOTE]
-> The `OnInitialized` method runs when users request the page for the first time but doesn't run if they request the same page with a different routing parameter. If you expect users, for example, to navigate from  **http://www.contoso.com/favoritepizza/hawaiian** to **http://www.contoso.com/favoritepizza**, set the default value in the `OnParametersSet()` method instead.
+> The `OnInitialized` method runs when users request the page for the first time but doesn't run if they request the same page with a different routing parameter. If you expect users, for example, to navigate from  `http://www.contoso.com/favoritepizza/hawaiian` to `http://www.contoso.com/favoritepizza`, set the default value in the `OnParametersSet()` method instead.
 
 ## Route constraints
 
-In the previous examples, the consequences of requesting the URI **http://www.contoso.com/favoritepizza/2** would be a nonsensical message: "Your favorite pizza is: 2". In other cases, type mismatches like that one may cause an exception and display an error to the user. Consider specifying a type for the route parameter:
+In the previous examples, the consequences of requesting the URI `http://www.contoso.com/favoritepizza/2` would be a nonsensical message: "Your favorite pizza is: 2". In other cases, type mismatches like that one may cause an exception and display an error to the user. Consider specifying a type for the route parameter:
 
 ```razor
 @page "/FavoritePizza/{preferredsize:int}"
@@ -76,17 +76,17 @@ In the previous examples, the consequences of requesting the URI **http://www.co
 }
 ```
 
-In this example, if the user requested **http://www.contoso.com/favoritepizza/margherita** there would be no match with the above component, and the request would be routed elsewhere. If the user requested **http://www.contoso.com/favoritepizza/12**, there's a route match and the component displays the message "Your favorite pizza size is: 12 inches." A specific type for the route parameter like this one is called a **route constraint**. You can use these other types in a constraint:
+In this example, if the user requested `http://www.contoso.com/favoritepizza/margherita` there would be no match with the above component, and the request would be routed elsewhere. If the user requested `http://www.contoso.com/favoritepizza/12`, there's a route match and the component displays the message "Your favorite pizza size is: 12 inches." A specific type for the route parameter like this one is called a **route constraint**. You can use these other types in a constraint:
 
 | Constraint | Example | Example Matches |
 | --- | --- | --- |
-| bool | {vegan:bool} | http://www.contoso.com/pizzas/true |
-| datetime | {birthdate:datetime} | http://www.contoso.com/customers/1995-12-12 |
-| decimal | {maxprice:decimal} | http://www.contoso.com/pizzas/15.00 |
-| double | {weight:double} | http://www.contoso.com/pizzas/1.234 |
-| float | {weight:float} | http://www.contoso.com/pizzas/1.564 |
-| guid | {pizzaid:guid} | http://www.contoso.com/pizzas/CD2C1638-1638-72D5-1638-DEADBEEF1638 |
-| long | {totalsales:long} | http://www.contoso.com/pizzas/568192454 |
+| bool | {vegan:bool} | `http://www.contoso.com/pizzas/true` |
+| datetime | {birthdate:datetime} | `http://www.contoso.com/customers/1995-12-12` |
+| decimal | {maxprice:decimal} | `http://www.contoso.com/pizzas/15.00` |
+| double | {weight:double} | `http://www.contoso.com/pizzas/1.234` |
+| float | {weight:float} | `http://www.contoso.com/pizzas/1.564` |
+| guid | {pizzaid:guid} | `http://www.contoso.com/pizzas/CD2C1638-1638-72D5-1638-DEADBEEF1638` |
+| long | {totalsales:long} | `http://www.contoso.com/pizzas/568192454` |
 
 ## Set a catch-all route parameter
 
@@ -105,7 +105,7 @@ Consider the following component from earlier in this unit:
 }
 ```
 
-Now suppose the user tried to specify two favorites by requesting this URI: **http://www.contoso.com/favoritepizza/margherita/hawaiian**. The page would display the message "Your favorite pizza is: margherita" and ignore the subfolder **hawaiian**. You can change this behavior by using a **catch-all route parameter**, which captures paths across multiple URI folder boundaries (forward slashes). Prefix a `*` to the route parameter name to make the route parameter catch-all:
+Now suppose the user tried to specify two favorites by requesting this URI: `http://www.contoso.com/favoritepizza/margherita/hawaiian`. The page would display the message "Your favorite pizza is: margherita" and ignore the subfolder **hawaiian**. You can change this behavior by using a **catch-all route parameter**, which captures paths across multiple URI folder boundaries (forward slashes). Prefix a `*` to the route parameter name to make the route parameter catch-all:
 
 ```razor
 @page "/FavoritePizza/{*favorites}"
