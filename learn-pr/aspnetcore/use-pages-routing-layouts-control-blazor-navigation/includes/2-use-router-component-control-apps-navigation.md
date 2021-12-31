@@ -49,7 +49,7 @@ If you want to specify more than one route to the component, use two or more `@p
 
 ## Obtain location information and navigate with NavigationManager 
 
-Suppose you're writing a component to handle URIs that the user requests, such as: **http://www.contoso.com/pizzas/margherita/?extratopping=pineapple**
+Suppose you're writing a component to handle URIs that the user requests, such as: `http://www.contoso.com/pizzas/margherita/?extratopping=pineapple`
 
 When you're writing a component, you might need access to navigation information such as:
 
@@ -174,4 +174,4 @@ In one of the examples above, code was used to obtain the `NavigationManager.Bas
 The `Match` attribute in the **NavLink** component is used to manage when the link is highlighted. There are two options:
 
 - **NavLinkMatch.All**. When you use this value, the link is only highlighted as the active link when its `href` matches the entire current URL.
-- **NavLinkMatch.Prefix**. When you use this value, the link is highlighted as active when its `href` matches the first part of the current URL. Suppose, for example, that you had this link: `<NavLink href="pizzas" Match="NavLinkMatch.Prefix">`. This link would be highlighted as active when the current URL was **http://www.contoso.com/pizzas** and for any location within that URL, such as `http://www.contoso.com/pizzas/formaggio`. This behavior can help the user to understand which section of the website they are currently viewing.
+- **NavLinkMatch.Prefix**. When you use this value, the link is highlighted as active when its `href` matches the first part of the current URL. Suppose, for example, that you had this link: `<NavLink href="pizzas" Match="NavLinkMatch.Prefix">`. This link would be highlighted as active when the current URL was `http://www.contoso.com/pizzas` and for any location within that URL, such as `http://www.contoso.com/pizzas/formaggio`. This behavior can help the user to understand which section of the website they are currently viewing.
