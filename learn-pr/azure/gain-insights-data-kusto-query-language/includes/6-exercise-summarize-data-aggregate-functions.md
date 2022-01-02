@@ -2,7 +2,7 @@ A Kusto query can be used to explore datasets and gain insights. We have used a 
 
 ## Characterize storm types using the `avg()` operator
 
-In the last unit, you looked at the number of storms as a function of time and the damage caused by these storms. This doesn't tell us anything about the individual storms. Let's look at other statistics that can help characterize the storms.
+In the last unit, you looked at the number of storms as a function of time and the damage caused by these storms. Let's look at other statistics that can help characterize the storms themselves.
 
 First, you'll use the `avg()` operator to calculate the average damage caused by storms.
 
@@ -28,9 +28,9 @@ The following query creates a calculated column using the `extend` operator to a
 
 ## Find extremes using `min()` and `max()`
 
-Instead of looking at the average damage done by each type of storm, let's look at the damage extremes. 
+Let's now look at the damage extremes.
 
-For absolute maximum or minimum values, use the `max()` and `min()` aggregate operators. Define the column on which to calculate the max or min value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column. 
+For absolute maximum or minimum values, use the `max()` and `min()` aggregate operators. Define the column on which to calculate the max or min value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column.
 
 1. Run the following query:
 
@@ -49,17 +49,17 @@ For absolute maximum or minimum values, use the `max()` and `min()` aggregate op
     :::image type="content" source="../media/6-max.png" alt-text="Screenshot of max aggregate function results.":::
 
 1. Take a look at the results. Notice that the output of the `max(damage)` operator has been named *max_damage*.
-    
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank"> Click to run query</a>
 
 ## Use the `percentiles()` operator
 
-So far, you've calculated the min, max, and average values of damage caused by each event. To complete the picture of the distribution of these values, it can be useful to calculate the percentiles. Using the `percentiles()` operator, you can define the input data and the percentile to calculate. In the following example, you'll calculate the 5th, 20th, 50th, 80th, and 95th percentile values of damage for each event type.
+So far, you've calculated the min, max, and average values of damage caused by each event. To complete the picture of the distribution of these values, it can be useful to calculate the percentiles. Using the `percentiles()` operator, you can define the input data and the percentiles to calculate. In the following example, you'll calculate the 5th, 20th, 50th, 80th, and 95th percentile values of damage for each event type.
 
 > [!NOTE]
 > *Percentiles*, which represent a frequency distribution, should not be confused with *percentages*, which are a proportion of a whole.
 
 1. Run the following query:
+
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank"> Click to run query</a>
 
     ```kusto
     StormEvents

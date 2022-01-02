@@ -8,7 +8,7 @@ You're a data analyst with a passion for meteorological data. You want to use KQ
 
 You'll write queries in the Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
 
-* Group data using aggregation functions
+* Group data using aggregate functions
 * Count events using the `count` operator
 * Visualize data using the `render` operator
 * Summarize data using `avg`, `min`, and `max` operators

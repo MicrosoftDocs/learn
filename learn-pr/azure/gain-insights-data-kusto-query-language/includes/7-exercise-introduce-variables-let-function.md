@@ -1,12 +1,12 @@
 A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to aggregate and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
 
-The let statement can be used to set a variable name equal to an expression or a function, or to create views. You can use multiple let statments; each statement must be followed by a semicolon (`;`). 
+`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. `let` statements can be used to create well-organized complex queries. You can use multiple let statements; each statement must be followed by a semicolon (`;`).
 
-Let statements can be used in a variety of situations. On the simplest level, you can define scalar values at the beginning of a query to later be referenced in a query. For more complicated uses, you can convert a tabular result to a scalar value to be used as input, or create a tabular output to be used as the tabular input for the query.
+`let` statements can be used in a variety of situations. On the simplest level, you can define scalar values that will later be referenced in a query. You can create a tabular filtered view of a table that will used as the tabular input for the query. You can also create a function using a `let` statement.
 
 ## Define a scalar with a `let` statement
 
-Recall that previous queries filtered on locations or minimum damage. If you want to change these values, it can be useful to define them using a `let` statement at the beginning of the query.
+Recall that previous queries filtered on locations or minimum damage. Let's define these boundary values using a `let` statement at the beginning of the query.
 
 The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first value is a number, and the second is a string. The two `let` statements and the following tabular query statement are each separated by a semicolon.
 
@@ -33,7 +33,7 @@ Notice the commented-out portions of the query that begin with double forward sl
 
 ## Convert a tabular answer to scalar input using a `let` statement
 
-What if you want to define an input for a value you don't yet know? For example, you want to look at a count of the most frequent event time as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
+Next, let's look at a count of the most frequent event time as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
 
 To do this, you'll use a `let` statement. First, define the variable name we want to introduce as *MostFrequentEventType*. We'll use the *StormEvents* table to find the top 1 *EventType* by count. Use the `project`operator to return only the *EventType* column. Finally, you want to convert this tabular result with one column and one row to a scalar value that can be used later for input into the query. Do this by putting the whole query inside the `toscalar()` operator.
 
@@ -47,9 +47,9 @@ let MostFrequentEventType = toscalar(
     | project EventType);
 ```
 
-Notice that this statement by itself does not print an answer. Let's now use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on the *MostFrequentEventType* defined above, and then summarize the count by a certain time bin.
+Notice that this statement by itself does not print an answer. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on the *MostFrequentEventType* defined above, and then summarize the count by a certain time bin.
 
-In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. In this case, you'll use the *StartTime* to determine the start of month.
+In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. Use the *StartTime* to determine the start of month.
 
 Finally, render the results as a column chart to get a histogram of the count of the most frequent events binned by month.  
 
@@ -75,9 +75,9 @@ Finally, render the results as a column chart to get a histogram of the count of
 
 ## Construct a `let` statement with tabular output
 
-The above examples created a stored scalar value to be used as an input parameter in a query. However, it's also possible to use a `let` statement to create a tabular output that's then used as the input to a query. 
+The above examples created a stored scalar value to be used as an input parameter in a query. However, it's also possible to use a `let` statement to create a tabular output that's then used as the input to a query.
 
-1. Let's filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This gives a tabular output called *KillerStorms*. Use this as the beginning input for your query.
+1. Filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This gives a tabular output called *KillerStorms*. Use this as the beginning input for your query.
 
     ```kusto
         let KillerStorms=StormEvents
@@ -102,3 +102,4 @@ The above examples created a stored scalar value to be used as an input paramete
     :::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
 
 ## Use `let` to create a function
+

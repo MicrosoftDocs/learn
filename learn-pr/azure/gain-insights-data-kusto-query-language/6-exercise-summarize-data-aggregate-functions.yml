@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gain-insights-data-kql.exercise-summarize-data-aggregate-functions
-title: Summarize data using aggregate functions
+title: "Exercise: Summarize data using aggregate functions"
 metadata:
   unitType: exercise
   title: "Exercise: Summarize data using aggregate functions"
