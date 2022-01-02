@@ -1,108 +1,37 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You've been asked to write a query that answers the following question: 
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+> What was the total week-by-week damage caused by all wind events? Show damage in the unit of Euros. In this case, damage refers to both property and crop damage. At present, the Euro is worth 1.14 USD.
 
-    Heading: none
+This solution provides one possible way to construct a query that answers the above question.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Solution process
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. Set the conversion rate using the `let` operator.
+1. Filter out as much information as possible.
+    1. The *EventType* should have the term "wind"
+1. Create a column that sums damage from *DamageProperty* and *DamageCrops* to give a value of damage in USD. Multiply this value column by the conversion rate set in Step 1 to obtain damage in Euros.
+1. Summarize the sum of the new damage column by a 7 day bin.
+1. Render the results as a column chart.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Solution query
 
-    Goal: Describe the part of the scenario covered in this exercise
+The above steps are all included in the following query:
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NwQ6CMBBE73zFhBOokZCYeDCclLsJ/ECBjTShLdkuIMaPt4qnnZeZ2RlIUE6MAvkxP12QZa2zM7HXzoKVUFSJY1POZMVHbyw9MeGH9ToSeuURL9p2cTDpKWQ73JRRDyqS7d7ZjcSy7je8BvTpLmyGgp+MUaxf9FX/fIpmRaMtkkoUS60NHXDu0hDn8J0YrRsmY9s+uB/5LLK4vwAAAA==" target="_blank"> Click to run query</a>
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+```Kusto
+let Eur = 1.14; //conversion rate
+StormEvents
+| where EventType has "wind"
+| extend Damage=(DamageProperty+DamageCrops)*Eur
+| summarize sum(Damage) by bin (StartTime, 7d)
+| render columnchart 
+```
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Your results should look something like the following image:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+:::image type="content" source="../media/9-solution.png" alt-text="Screenshot of solution query and results.":::
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Insights
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+From the above results, we can see that winds caused financial damage all throughout the year. There were several spikes of damage, reaching over 200 million Euro damage.

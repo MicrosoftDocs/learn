@@ -24,11 +24,11 @@ Notice the commented-out portions of the query that begin with double forward sl
     | where DamageCrops+DamageProperty > MinDamage
     | summarize Damage=avg(DamageProperty+DamageCrops) by EventType
     ```
-    
+
     You should get results that look like the following image:
-    
+
     :::image type="content" source="../media/7-let-1.png" alt-text="Screenshot of query using the let operator and its results.":::
-    
+
 1. Try changing the state name or the minimum damage numbers and rerunning the query. How do the results change?
 
 ## Convert a tabular answer to scalar input using a `let` statement
@@ -56,7 +56,7 @@ Finally, render the results as a column chart to get a histogram of the count of
 1. Run the following query:
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA22OsQ6DMAxEd77CYyJ1Ya4Y260T7FUIrqAiCXUcKio+voZWLQMeLNn37nQ9MlxC5DPhI6Hn0yirmgaEAjhEa3pDKgOZkgO5VY7rPcfknKHuhWBD8qw01BP8/B9GMgbIF2Flrt/vQOGOlv+0Pmbb/BmeLRLCpk2xX1PQ3R5151VkQxxuLnhuVbkcVedQHyBvtPgIfYMkpj45b1uR38P9xEwNAQAA" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     let MostFrequentEventType = toscalar(
         StormEvents
@@ -68,9 +68,9 @@ Finally, render the results as a column chart to get a histogram of the count of
     | summarize count() by bin(startofmonth(StartTime), 1d)
     | render columnchart 
     ```
-    
+
     You should get results that look like the following image:
-    
+
     :::image type="content" source="../media/7-let-2.png" alt-text="Screenshot of let query using complicated scalar and results." lightbox="../media/7-let-2.png":::
 
 ## Construct a `let` statement with tabular output
@@ -101,5 +101,5 @@ The above examples created a stored scalar value to be used as an input paramete
     
     :::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
 
-## Use `let` to create a function
+## Create a user-defined function with the `let` statement
 
