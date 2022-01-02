@@ -87,14 +87,15 @@ The above examples created a stored scalar value to be used as an input paramete
 
 1. Then, you can use some of the aggregate functions you've learned in previous units. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA8tJLVHwzszJSS0KLskvyi22BVOuZal5JcVcCkBQo1CekVqUquCSmliSUeySWZSaXKIN4XjmpYC5CnYKBlC1BUX5WSCR4JLEklQdBbA5IZUFQCZEiy0eY6y5kB3CVaNQXJqbm1iUWZWqkJKcX5pXogE3TlMhqRJmB8QQACPjzrjIAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA31OOw6DMAzdcwqPoDJ0r9KJDlVHuEAKlkiVD3IMFRWHb0hQxVQv9rPezyDDQxuD1LAnG2RatxkdBwFxVngPSAg1Kh5CrQk7PmVwd32CcIXzzh3Jv7ZPw4qxguTTLmM8s0T+sbmIYxGxQpisVaQ/MVwH1q7jTMjtZN/5yXHxyygraD0rsydFdZHPEp5LbrSZeuINH6hfkphbegQBAAA=" target="_blank"> Click to run query</a>
     
     ```kusto
     let KillerStorms=StormEvents
         | where DeathsDirect+DeathsIndirect > 0
         | project State, EventType, Deaths=DeathsDirect+DeathsIndirect;
     KillerStorms
-    | summarize dcount(EventType) by State, Deaths
+    | summarize DistinctKillerEvents=dcount(EventType), TotalDeaths=sum(Deaths) by State
+    | sort by TotalDeaths
     ```
     
     You should get results that look like the following image:
@@ -103,3 +104,33 @@ The above examples created a stored scalar value to be used as an input paramete
 
 ## Create a user-defined function with the `let` statement
 
+You can also use `let` statements to define user-defined functions, which are reusable subqueries. Suppose you want to figure out what percent of each event type caused damage. You'll create a user-defined function that will calculate percentages, and later call this function and specify which columns to be used to calculate percentage.
+
+Within a `let` statement, you'll declare function name, schema, and body using the following general syntax:
+
+```Kusto
+let function=(variable1:datatype, variable2:datatype) {functionbody};
+```
+
+You'll use the following user-defined function to calculate percentages:
+
+```kusto
+let pcent=(val:decimal, val2:decimal){round(100 * val / val2, 2)};
+```
+
+You use two input values that are decimals. The first
+
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA4WQyw6CMBBF93zFLFttIrLU4Ebdk8gP1DIaDG1JGYj4+HcLjRETE1fzuDPnTqZCglqhoZR1sloVqEotKwG+SN4VvzvbmoIt4xhmgwKLUReQ8Oc6OpB1et95RhM9AK+EpoCd1PKMaQhbZ+tmHvLM5+io96NNq7V05Q0htySrgEiV9yLGRWiOS6U5T8XyxAJrE3M49jBqeV+jZ9bOXlDRp/eTI6aOAjJ0wwuGg8dfsH8rfLjeOvpyB9moF+R08iBPAQAA" target="_blank"> Click to run query</a>
+
+```kusto
+let pcent=(val:decimal, val2:decimal){round(100 * val / val2, 2)};
+StormEvents
+| extend Damage=DamageCrops+DamageProperty
+| summarize TotalEvents=count(), TotalDamagingEvents=countif(Damage>0) by EventType
+| project EventType, TotalDamagingEvents, TotalEvents, Percentage=pcent(TotalDamagingEvents, TotalEvents)
+| sort by EventType asc
+```
+
+You should get results that look like the following image:
+
+:::image type="content" source="../media/7-let-percentage.png" alt-text="Screenshot of let statement with results.":::
