@@ -23,21 +23,21 @@ In this example, you'll visualize the previous query using a bar chart.
 
     You should get results that look like the following image:
  
-    :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with column chart results. There is a red box around the legend." lightbox="../media/5-column-chart.png":::
+    :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with bar chart results." lightbox="../media/5-column-chart.png":::
 
-1. Notice the legend to the right of the column chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this column in the column chart. You should get a graph that looks like the following image:
+1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
 
 ## Group values using the `bin` operator
 
-Recall that you've used aggregate functions to group events by *State*. Now you'll look at the distribution of storms throughout the year, by grouping data by time. However, it wouldn't be very meaningful to plot the number of storms against a scattered start time value. Instead, let's group the events by week, so we can see how many storms happened each week during the year 2007.
+Until now, you've used aggregate functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have are start time and end time values. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
 
 You'll use the `bin` operator, which groups values into certain bin sizes. The syntax of this operator is:
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a counts of events per week. Finally, *render* the data as a *columnchart* to create a histogram.
+The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a counts of events per week.  he *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
@@ -57,7 +57,9 @@ The *value* you want to group is be the *StartTime* of the event, with the *roun
 
 ## Use the `sum` operator
 
-In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregate, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*. In the following query, you'll first create a calculated column that adds these two damage sources together. Then you'll create an aggregate of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
+In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregate function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
+
+In the following query, you'll first create a calculated column that adds these two damage sources together. Then you'll create an aggregate of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
 
 1. Run the following query:
 
@@ -74,7 +76,7 @@ In the previous query, you looked at the number of storm events over time. Now l
     
     :::image type="content" source="../media/5-bin-2.png" alt-text="Screenshot of damage column chart binned by week.":::
 
-1. The above query shows you how damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
+1. The above query shows you damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
     
@@ -89,4 +91,4 @@ In the previous query, you looked at the number of storm events over time. Now l
     
     :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
 
-1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) as well as the percentage of the overall damage.
+1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) as well as the corresponding percentage of the overall damage.

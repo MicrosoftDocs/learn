@@ -4,13 +4,13 @@ Organizations in all sectors deal with a constant flow of data and need to turn 
 
 The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. If you group these individual events by common fields, such as location, time, or event type, you can then make meaningful comparisons across groups.
 
-An aggregation function groups values of multiple rows to form a single summary value.
+An aggregation function allows you to make these comparisons by grouping values of multiple rows to form a single summary value.
 
 ADD IMAGE
 
 ## Data visualization
 
-An essential part of data analysis is communicating the results. While sometimes the most fitting way to present results is tabular, often graphical representations can be even more powerful. We'll explore some of the ways to convert Kusto query results to graphical visualizations using the `render` operator.
+An essential part of data analysis is communicating the results. Graphical representations can often be a powerful way to communicate and understand data analsyis. We'll explore some of the ways to convert Kusto query results to graphical visualizations using the `render` operator.
 
 For example, the following query returns the total damage caused by each type of storm. It's represented as a pie chart, which allows you to quickly compare and find the most and least damaging types of storms.
 
@@ -20,11 +20,6 @@ For example, the following query returns the total damage caused by each type of
 
 The `let` statement sets a variable name equal to an expression or a function, or to create views.
 
-Let statements are useful for:
+`let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. We'll use `let` statements to practice creating well-organized complex queries.
 
-Breaking up a complex expression into multiple parts, each represented by a variable.
-Defining constants outside of the query body for readability.
-Defining a variable once and using it multiple times within a query.
-
-
-In the next units, we'll learn about some of the most common aggregation functions, and then build complex queries using the let statement to gain insights into a sample dataset containing US meteorological data.
+In the next units, we'll learn about some of the most common aggregation functions, and then build complex queries using the `let` statement to gain insights into a sample dataset containing US meteorological data.

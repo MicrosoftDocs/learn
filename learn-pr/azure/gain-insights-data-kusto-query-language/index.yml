@@ -38,7 +38,7 @@ units:
 - learn.azure.gain-insights-data-kql.exercise-connect-to-resources
 - learn.azure.gain-insights-data-kql.exercise-count-events-count-operator
 - learn.azure.gain-insights-data-kql.exercise-visualize-data-render-operator
-- learn.azure.gain-insights-data-kql.exercise-summarize-data-aggregation-functions
+- learn.azure.gain-insights-data-kql.exercise-summarize-data-aggregate-functions
 - learn.azure.gain-insights-data-kql.exercise-introduce-variables-let-function
 - learn.azure.gain-insights-data-kql.challenge
 - learn.azure.gain-insights-data-kql.solution
