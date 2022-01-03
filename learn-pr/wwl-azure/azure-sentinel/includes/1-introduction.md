@@ -4,7 +4,7 @@ In the world we live in today, there is always the chance that your system may b
 
 A security engineer uses Microsoft Sentinel to discover and track a breach, you will work on such tasks as:
 
- -  Configure Micorsoft Sentinel.
+ -  Configure Microsoft Sentinel.
  -  Build queries to find breaches.
  -  Track incidents with investigation and hunting.
 
