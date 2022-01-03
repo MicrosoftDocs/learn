@@ -34,7 +34,7 @@ Create an isolated virtual network so that your production infrastructure isn't 
 
     :::image type="content" source="../media/5-vm-disaster.png" alt-text="Screenshot that shows the Operations' disaster recovery option for a selected VM." lightbox="../media/5-vm-disaster.png":::
 
-1. A new **Replicated items** pane appears. From the top menu bar, select **Test Failover**.
+1. A new **Replicated items** pane appears. Select **Refresh** until you see *Protected* in the status field. Then, from the top menu bar, select **Test Failover**.
 
     :::image type="content" source="../media/5-vm-running-test-failover.png" alt-text="Screenshot that shows the test failover button for a selected VM." lightbox="../media/5-vm-running-test-failover.png":::
 
