@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-sentinel
 metadata:
-  title: Configure and monitor Azure Sentinel
+  title: Configure and monitor Microsoft Sentinel
   description: "Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment."
-  ms.date: 11/12/2021
+  ms.date: 01/03/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure and monitor Azure Sentinel
+title: Configure and monitor Microsoft Sentinel
 summary: Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment.
 abstract: |
   By the end of this module, you will be able to:
