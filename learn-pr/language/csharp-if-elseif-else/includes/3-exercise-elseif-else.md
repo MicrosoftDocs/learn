@@ -175,7 +175,7 @@ The `if`, `else if`, and `else` statements allow you to create multiple exclusiv
 
 ## Recap
 
-- The combination of `if` and `else` statements allow you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
-- You can nest 'if' statements to narrow down a possible condition. However, you should consider using the `if`, `else if`, and `else` statements instead.
+- The combination of `if` and `else` statements allows you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
+- You can nest `if` statements to narrow down a possible condition. However, you should consider using the `if`, `else if`, and `else` statements instead.
 - Use `else if` to create multiple exclusive conditions.
 - An `else` is optional, but it must always come last.
