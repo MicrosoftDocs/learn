@@ -114,7 +114,7 @@ You rolled triples!  +6 bonus to total!
 You win!
 ```
 
-### Step 3 - Use the if-elseif-else statement to give a prize instead of a win-lose message.
+### Step 3 - Use the if, else if, and else statements to give a prize instead of a win-lose message.
 
 To make the game more fun, let's change the game from win-or-lose to award fictitious prizes for each score. We'll offer four prizes. The player should only win one prize.
 
@@ -171,7 +171,7 @@ else
 > [!Note]
 > Use the technique of temporarily hard coding the roll variables to test each message.
 
-The `if-else if-else` statement allows you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, then the final `else` code block will be executed. The `else` is optional, but must come last.
+The `if`, `else if`, and `else` statements allow you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, then the final `else` code block will be executed. The `else` is optional, but must come last.
 
 ## Recap
 
