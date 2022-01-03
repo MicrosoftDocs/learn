@@ -8,7 +8,7 @@ Here, you'll learn how to configure routes in Blazor by using the `@page` direct
 
 When the user makes a request for a page from your web app, they can specify what they want to see with information in the URI. For example:
 
-**https://www.contoso.com/pizzas/margherita?extratopping=pineapple**
+`http://www.contoso.com/pizzas/margherita?extratopping=pineapple`
 
 After the protocol and website address, this URI indicates that the user wants to know about margherita pizzas. Also, in the query string after the question mark, they've indicated that they're interested in an extra topping of pineapple. In Blazor, you use routing to ensure that each request is sent to the best component and that the component has all the information it needs to display what the user wants. In this case, you might want the request to be sent to the **Pizzas** component and for that component to display a Margherita pizza with extra information about adding pineapple to it. 
 
@@ -49,14 +49,14 @@ If you want to specify more than one route to the component, use two or more `@p
 
 ## Obtain location information and navigate with NavigationManager 
 
-Suppose you're writing a component to handle URIs that the user requests, such as: **http://www.contoso.com/pizzas/margherita/?extratopping=pineapple**
+Suppose you're writing a component to handle URIs that the user requests, such as: `http://www.contoso.com/pizzas/margherita/?extratopping=pineapple`
 
 When you're writing a component, you might need access to navigation information such as:
 
-- The current full URI, such as **http://www.contoso.com/pizzas/margherita?extratopping=pineapple**
-- The base URI, such as **http://www.contoso.com/**
-- The base relative path, such as **pizzas/margherita**
-- The query string, such as **?extratopping=pineapple**
+- The current full URI, such as `http://www.contoso.com/pizzas/margherita?extratopping=pineapple`
+- The base URI, such as `http://www.contoso.com/`
+- The base relative path, such as `pizzas/margherita`
+- The query string, such as `?extratopping=pineapple`
 
 You can use a `NavigationManager` object to obtain all of these values. You must inject the object into the component and then you can access its properties. This code uses the `NavigationManager` to obtain the website's base URI and then uses it to set a link to the homepage:
 
@@ -114,7 +114,7 @@ To access the query string, you must parse the full URI. Use the `QueryHelpers` 
 }
 ```
 
-With the above component deployed, if a user requested the URI **http://www.contoso.com/pizzas?extratopping=Pineapple** they would see the message "I want to add this topping: Pineapple" in the rendered page.
+With the above component deployed, if a user requested the URI `http://www.contoso.com/pizzas?extratopping=Pineapple` they would see the message "I want to add this topping: Pineapple" in the rendered page.
 
 You can also use the `NavigationManager` object to send your users to another component in code by calling the `NavigationManager.NavigateTo()` method:
 
@@ -174,4 +174,4 @@ In one of the examples above, code was used to obtain the `NavigationManager.Bas
 The `Match` attribute in the **NavLink** component is used to manage when the link is highlighted. There are two options:
 
 - **NavLinkMatch.All**. When you use this value, the link is only highlighted as the active link when its `href` matches the entire current URL.
-- **NavLinkMatch.Prefix**. When you use this value, the link is highlighted as active when its `href` matches the first part of the current URL. Suppose, for example, that you had this link: `<NavLink href="pizzas" Match="NavLinkMatch.Prefix">`. This link would be highlighted as active when the current URL was **http://www.contoso.com/pizzas** and for any location within that URL, such as **http://www.contoso.com/pizzas/formaggio**. This behavior can help the user to understand which section of the website they are currently viewing.
+- **NavLinkMatch.Prefix**. When you use this value, the link is highlighted as active when its `href` matches the first part of the current URL. Suppose, for example, that you had this link: `<NavLink href="pizzas" Match="NavLinkMatch.Prefix">`. This link would be highlighted as active when the current URL was `http://www.contoso.com/pizzas` and for any location within that URL, such as `http://www.contoso.com/pizzas/formaggio`. This behavior can help the user to understand which section of the website they are currently viewing.
