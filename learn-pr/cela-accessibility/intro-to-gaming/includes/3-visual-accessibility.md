@@ -1,4 +1,4 @@
-In the previous unit, you learned about the process of how games are played through the lens of accessibility. This process begins with games providing information to the player through sensory channels like vision, audio, and touch, which is also known as *haptics*.
+In the previous unit, you learned about the process of how games are played through the lens of accessibility. This process begins with games providing information to the player through sensory channels like vision, audio, touch, or haptics.
 
 In this unit, you'll learn about the relationship between the portrayal of visual information and a player's ability to consume and use this information to inform play.
 
@@ -6,7 +6,7 @@ In this unit, you'll learn about the relationship between the portrayal of visua
 
 Many gaming experiences today use visual cues or indicators to guide player success. In game accessibility, think about the following questions related to visual information:
 
-- Is important information represented through visual means alone? Some examples include text-based menus and instructions and onscreen icons.
+- Is important information represented through visual means alone, like text-based menus and instructions and onscreen icons?
 - Is the visual representation of this information accessible to players with visual disabilities?
 - How is gameplay affected if a player can't access this visual information because of the lack of accessible supports?
 

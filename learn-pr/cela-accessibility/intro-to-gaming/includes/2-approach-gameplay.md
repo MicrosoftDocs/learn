@@ -27,6 +27,6 @@ Before we explore the game accessibility concepts about vision, audio, cognition
 
 When it comes to game accessibility, options or features intended for a specific group of players often provide better experiences for all players.
 
-For example, captions and subtitles are intended to make game experiences accessible to players with hearing loss. They might also assist players who are easily distracted and miss audio cues. Players in a loud environment can also benefit from these features.
+For example, captions and subtitles are intended to make game experiences accessible to players with hearing loss or players who are d/Deaf. They might also assist players who are easily distracted and miss audio cues. Players in a loud environment can also benefit from these features.
 
 As you learn about visual, audio, cognitive, and input accessibility concepts throughout this module, keep the broader impact of your future efforts in mind.

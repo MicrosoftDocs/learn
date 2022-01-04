@@ -1,20 +1,20 @@
 You've learned about the portrayal of important game information through visual means and how players can become blocked from game progress if this visual information isn't accessible.
 
-In this unit, you'll learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with hearing impairment.
+In this unit, you'll learn about the relationship between audio and gaming, and the unintentional barriers inaccessible audio elements can introduce to players with disabilities.
 
 ## Audio and gaming
 
-Similar to visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio-based information isn't represented in an accessible way, players with hearing impairment might be excluded from using this information.
+Similar to visual elements, gaming experiences also use audio-based elements to portray information needed to navigate the experience. When this audio-based information isn't represented in an accessible way, players with hearing-related disabilities might be excluded from using this information.
 
 In the following video, you'll learn more about the relationship between audio and game experiences. You'll also learn how to identify common audio-based elements that can pose unintentional barriers for players.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPH8n]
 
-## Hearing impairment
+## Hearing and disability
 
-When you explore audio accessibility, it's important to understand that the experiences of players with hearing impairment can also largely differ when playing games. Players who can't hear any audio provided by a game, platform, or hardware device will have different experiences than players who might have varying levels of hearing that can differ in each ear, or differ based on the frequency or volume of sounds presented.
+When you explore audio accessibility, it's important to understand that the experiences of players with hearing-related disabilities can also largely differ when playing games. Players who can't hear any audio provided by a game, platform, or hardware device will have different experiences than players who might have varying levels of hearing that can differ in each ear, or differ based on the frequency or volume of sounds presented.
 
-Consult with an array of players with hearing impairment to help you create effective solutions that address each of these unique experiences.
+Consult with an array of players with hearing-related disabilities to help you create effective solutions that address each of these unique experiences.
 
 ### Gaming without audio
 
@@ -28,7 +28,7 @@ General approaches to support these players include:
 
 ### Gaming and partial hearing
 
-Players with hearing impairment might have difficulty hearing sounds of certain frequencies, volume levels, or sounds that come from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there might be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This type of scenario can make it difficult to clearly hear the sound channels that are most important to gameplay.
+Players with hearing-related disabilities might have difficulty hearing sounds of certain frequencies, volume levels, or sounds that come from certain locations. Many game experiences provide multiple sounds simultaneously. For example, there might be areas of a game where background music, character dialogue, effects noises, and live player chat are all actively producing sound. This type of scenario can make it difficult to clearly hear the sound channels that are most important to gameplay.
 
 Approaches to consider for players with partial hearing include:
 

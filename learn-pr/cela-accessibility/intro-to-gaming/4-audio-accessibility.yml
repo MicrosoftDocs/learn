@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "An option to enable mono audio."
       isCorrect: false
-      explanation: "Incorrect. Mono audio can be helpful for individuals with hearing impairment on one side, but still requires the user to be able to perceive some level of sound."
+      explanation: "Incorrect. Mono audio can be helpful for individuals with hearing loss on one side, but still requires the user to be able to perceive some level of sound."
     - content: "Menu narration."
       isCorrect: false
       explanation: "Incorrect. Menu narration is helpful for players without vision. It isn't an effective way of providing information for players without hearing."
