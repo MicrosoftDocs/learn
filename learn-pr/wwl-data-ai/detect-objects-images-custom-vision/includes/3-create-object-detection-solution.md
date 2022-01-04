@@ -134,9 +134,12 @@ Now that you have a custom model, you can run a simple client application that u
 
 4. Don't worry too much about the details of the code, the important thing is that it needs the prediction URL and key for your Custom Vision model when using an image URL. 
 
-   Get the *prediction URL* from the dialog box in your Custom Vision project (you reviewed it after you published the image classification model). 
-
-    Paste it into the code editor, replacing the **YOUR_PREDICTION_URL**.
+    Get the *prediction URL* from the dialog box in your Custom Vision project. 
+    
+    >[!NOTE]
+    >Remember, you reviewed the *prediction URL* after you published the image classification model. To find the *prediction URL*, navigate to the **Performance** tab in your project, then click on **Prediction URL** (if the screen is compressed, you may just see a globe icon). A dialogue box will appear. Copy the url for **If you have an image URL**. Paste it into the code editor, replacing **YOUR_PREDICTION_URL**. 
+    
+    ![Screenshot of the prediction URL.](../media/find-prediction-url.png)
 
     Get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
 
