@@ -1,8 +1,8 @@
-Microsoft Defender for Cloudfor SQL (formerly known as Advanced Threat Protection (ATP)) for single and pooled databases detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Advanced Threat Protection can identify **Potential SQL injection**, **Access from unusual location or data center, Access from unfamiliar principal or potentially harmful application**, and **Brute force SQL credentials**.
+Microsoft Defender for Cloud for SQL (formerly known as Advanced Threat Protection (ATP)) for single and pooled databases detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Advanced Threat Protection can identify **Potential SQL injection**, **Access from unusual location or data center, Access from unfamiliar principal or potentially harmful application**, and **Brute force SQL credentials**.
 
-Microsoft Defender for Cloudfor SQL is part of the advanced data security (ADS) offering, which is a unified package for advanced SQL security capabilities. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal. ATP provides a new layer of security, which enables customers to detect and respond to potential threats as they occur by providing security alerts on anomalous activities.
+Microsoft Defender for Cloud for SQL is part of the advanced data security (ADS) offering, which is a unified package for advanced SQL security capabilities. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal. ATP provides a new layer of security, which enables customers to detect and respond to potential threats as they occur by providing security alerts on anomalous activities.
 
-### Microsoft Defender for Cloudfor SQL alerts
+### Microsoft Defender for Cloud for SQL alerts
 
 Advanced Threat Protection for Azure SQL Database detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases and it can trigger the following alerts:
 
