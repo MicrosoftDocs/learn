@@ -13,10 +13,11 @@ title: Use Visual Studio for modern development
 prerequisites: none
 summary: |
   Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here! In this learning path you'll:
+  - Learn about the main features in the Visual Studio IDE that help you debug, edit, collaborate, and publish your apps.
+  - Explore features of Visual Studio for Git
   - Explore testing concepts.
   - Author tests for your product code.
   - Use the test explorer in Visual Studio to manage many tests.
-  - Explore features of Visual Studio for Git
 iconUrl: /learn/achievements/visual-studio/visual-studio-test.svg
 levels:
 - beginner
@@ -27,8 +28,8 @@ products:
 - dotnet
 modules:
 - learn.visual-studio.visual-studio-intro
+- learn.visual-studio-github-push
 - learn.visual-studio-test-concepts
 - learn.visual-studio.visual-studio-test-tools
-- learn.visual-studio-github-push
 trophy:
   uid: learn.visual-studio.visual-studio-test.trophy
