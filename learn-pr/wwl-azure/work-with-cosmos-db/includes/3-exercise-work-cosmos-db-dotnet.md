@@ -33,7 +33,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
     az group create --location <myLocation> --name az204-cosmos-rg
     ```
 
-1. Create the Azure Comsos DB account. Replace `<myCosmosDBacct>` with a *unique* name to identify your Azure Cosmos account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length. *This command will take a few minutes to complete.*
+1. Create the Azure Cosmos DB account. Replace `<myCosmosDBacct>` with a *unique* name to identify your Azure Cosmos account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length. *This command will take a few minutes to complete.*
 
     ```bash
     az cosmosdb create --name <myCosmosDBacct> --resource-group az204-cosmos-rg
