@@ -4,13 +4,13 @@ title: Explore multifactor authentication settings
 metadata:
   title: Explore multifactor authentication settings
   description: "Explore multifactor authentication settings"
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/7-multi-factor-authentication-settings.md)]
