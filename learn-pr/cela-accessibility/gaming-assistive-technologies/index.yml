@@ -19,7 +19,7 @@ abstract: |
  - Describe common hardware-based gaming assistive technologies and how their use can affect player experiences.
  - Determine appropriate methods to support assistive technology users when you develop games and platforms.
 prerequisites: |
- - Familiarity with playing and creating video games.
+ - Basic familiarity with playing and creating video games.
  - Familiarity with navigating game platforms, such as Xbox, PlayStation, Nintendo Switch, or Windows.
  - Basic understanding of foundational disability and accessibility principles terms and concepts is highly encouraged.
 iconUrl: /learn/achievements/gaming-assistive-technologies.svg
