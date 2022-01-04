@@ -3,8 +3,8 @@ uid: learn.azure.gain-insights-data-kql.exercise-connect-to-resources
 title: "Exercise: Connect to resources"
 metadata:
   unitType: exercise
-  title: exercise connect to resources
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: "Exercise: Connect to resources"
+  description: "Exercise: Connect to resources"
   ms.date: 12/15/2021
   author: YaelSchuster
   ms.author: yaschust

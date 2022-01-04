@@ -8,7 +8,7 @@ A Kusto query can be used to explore datasets and gain insights. We have used a 
 
 Recall that previous queries filtered on locations or minimum damage. Let's define these boundary values using a `let` statement at the beginning of the query.
 
-The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first value is a number, and the second is a string. The two `let` statements and the following tabular query statement are each separated by a semicolon.
+The following query uses two `let` statements to define scalar values that will later be used as input parameters in the query. The first defined value is a number, and the second is a string. The two `let` statements and the following tabular query statement are each separated by a semicolon.
 
 Notice the commented-out portions of the query that begin with double forward slashes (`//`). Add double forward slashes to each commented-out line.
 
@@ -33,11 +33,11 @@ Notice the commented-out portions of the query that begin with double forward sl
 
 ## Convert a tabular answer to scalar input using a `let` statement
 
-Next, let's look at a count of the most frequent event time as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
+Next, let's look at a count of the most frequent event type as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
 
-To do this, you'll use a `let` statement. First, define the variable name we want to introduce as *MostFrequentEventType*. We'll use the *StormEvents* table to find the top 1 *EventType* by count. Use the `project`operator to return only the *EventType* column. Finally, you want to convert this tabular result with one column and one row to a scalar value that can be used later for input into the query. Do this by putting the whole query inside the `toscalar()` operator.
+To construct this query, you'll use a `let` statement. First, define the variable name we want to introduce as *MostFrequentEventType*. We'll use the *StormEvents* table to find the top 1 *EventType* by counting the number of events within each type. Use the `project`operator to return only the *EventType* column. Finally, you want to convert this tabular result with one column and one row to a scalar value to be used as input into the query. Change the datatype by putting the whole query inside the `toscalar()` operator.
 
-These steps are summarized in the following let statement:
+The above steps are summarized in the following let statement:
 
 ```kusto
 let MostFrequentEventType = toscalar(
@@ -49,7 +49,7 @@ let MostFrequentEventType = toscalar(
 
 Notice that this statement by itself does not print an answer. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on the *MostFrequentEventType* defined above, and then summarize the count by a certain time bin.
 
-In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. Use the *StartTime* to determine the start of month.
+In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. When you define the *StartTime* as a parameter in the `startofmonth()` operator, you will return a date for the start of that month. Since each month will only have one day value, you'll use a bin size of one day.
 
 Finally, render the results as a column chart to get a histogram of the count of the most frequent events binned by month.  
 
@@ -102,6 +102,8 @@ The above examples created a stored scalar value to be used as an input paramete
     
     :::image type="content" source="../media/7-let-3.png" alt-text="Screenshot of tabular let statement and results.":::
 
+1. Look at the results. Are all events summarized in the *dcount_EventType* column so-called "killer storms"?
+
 ## Create a user-defined function with the `let` statement
 
 You can also use `let` statements to define user-defined functions, which are reusable subqueries. Suppose you want to figure out what percent of each event type caused damage. You'll create a user-defined function that will calculate percentages, and later call this function and specify which columns to be used to calculate percentage.
@@ -112,25 +114,29 @@ Within a `let` statement, you'll declare function name, schema, and body using t
 let function=(variable1:datatype, variable2:datatype) {functionbody};
 ```
 
-You'll use the following user-defined function to calculate percentages:
+Specifically, you'll use a user-defined function to calculate percentages. First, define the data type and input variables- we'll use data type decimal. Let's use *val* as the count of some portion of events, and *val2* is the total count of all events. We'll round the answer to give two digits after the decimal point using the `round()` operator.
+
+Taken altogether, the user-defined function described by the let statement is:
 
 ```kusto
 let pcent=(val:decimal, val2:decimal){round(100 * val / val2, 2)};
 ```
 
-You use two input values that are decimals. The first
+1. Use this `let` statement in the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA4WQyw6CMBBF93zFLFttIrLU4Ebdk8gP1DIaDG1JGYj4+HcLjRETE1fzuDPnTqZCglqhoZR1sloVqEotKwG+SN4VvzvbmoIt4xhmgwKLUReQ8Oc6OpB1et95RhM9AK+EpoCd1PKMaQhbZ+tmHvLM5+io96NNq7V05Q0htySrgEiV9yLGRWiOS6U5T8XyxAJrE3M49jBqeV+jZ9bOXlDRp/eTI6aOAjJ0wwuGg8dfsH8rfLjeOvpyB9moF+R08iBPAQAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA4WQyw6CMBBF93zFLFttIrLU4Ebdk8gP1DIaDG1JGYj4+HcLjRETE1fzuDPnTqZCglqhoZR1sloVqEotKwG+SN4VvzvbmoIt4xhmgwKLUReQ8Oc6OpB1et95RhM9AK+EpoCd1PKMaQhbZ+tmHvLM5+io96NNq7V05Q0htySrgEiV9yLGRWiOS6U5T8XyxAJrE3M49jBqeV+jZ9bOXlDRp/eTI6aOAjJ0wwuGg8dfsH8rfLjeOvpyB9moF+R08iBPAQAA" target="_blank"> Click to run query</a>
+    
+    ```kusto
+    let pcent=(val:decimal, val2:decimal){round(100 * val / val2, 2)};
+    StormEvents
+    | extend Damage=DamageCrops+DamageProperty
+    | summarize TotalEvents=count(), TotalDamagingEvents=countif(Damage>0) by EventType
+    | project EventType, TotalDamagingEvents, TotalEvents, Percentage=pcent(TotalDamagingEvents, TotalEvents)
+    | sort by EventType asc
+    ```
+    
+    You should get results that look like the following image:
+    
+    :::image type="content" source="../media/7-let-percentage.png" alt-text="Screenshot of let statement with results.":::
 
-```kusto
-let pcent=(val:decimal, val2:decimal){round(100 * val / val2, 2)};
-StormEvents
-| extend Damage=DamageCrops+DamageProperty
-| summarize TotalEvents=count(), TotalDamagingEvents=countif(Damage>0) by EventType
-| project EventType, TotalDamagingEvents, TotalEvents, Percentage=pcent(TotalDamagingEvents, TotalEvents)
-| sort by EventType asc
-```
-
-You should get results that look like the following image:
-
-:::image type="content" source="../media/7-let-percentage.png" alt-text="Screenshot of let statement with results.":::
+Take a look at the results. What does the percentage mean? Notice that the query calls the *pcent* function, which we defined in the `let` statement. The inputs used in this function are *TotalDamagingEvents* and *TotalEvents*, meaning you're looking for the percent of events that caused damage. This shouldn't be confused with a sum of the actual damage done by any particular event or type. 
