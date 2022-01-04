@@ -100,7 +100,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
             </div>
         </div>
     
-        <button class="checkout-button btn btn-warning" @onclick="PlaceOrder">
+        <button class="checkout-button btn btn-warning">
             Place order
         </button>
     </div>
@@ -158,7 +158,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 The checkout page at the moment doesn't allow customers to place their orders. The logic of the app needs to store the order to send to the kitchen. After the order is sent, let's redirect the customers back to the home page. 
 
-1. In the explorer, expand **Pages**, select **checkout.razor**.
+1. In the explorer, expand **Pages**, select **Checkout.razor**.
 1. Replace the button element with code to call a `PlaceOrder` method.
 
     ```razor
@@ -228,57 +228,52 @@ The checkout page at the moment doesn't allow customers to place their orders. T
 1. Select the C# language and enter this code.
 
     ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     
-    namespace BlazingPizza
+    namespace BlazingPizza;
+    
+    [Route("orders")]
+    [ApiController]
+    public class OrdersController : Controller
     {
-        [Route("orders")]
-        [ApiController]
-        public class OrdersController : Controller
+        private readonly PizzaStoreContext _db;
+
+        public OrdersController(PizzaStoreContext db)
         {
-            private readonly PizzaStoreContext _db;
-    
-            public OrdersController(PizzaStoreContext db)
+            _db = db;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<OrderWithStatus>>> GetOrders()
+        {
+            var orders = await _db.Orders
+		    .Include(o => o.Pizzas).ThenInclude(p => p.Special)
+		    .Include(o => o.Pizzas).ThenInclude(p => p.Toppings).ThenInclude(t => t.Topping)
+		    .OrderByDescending(o => o.CreatedTime)
+		    .ToListAsync();
+
+            return orders.Select(o => OrderWithStatus.FromOrder(o)).ToList();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<int>> PlaceOrder(Order order)
+        {
+            order.CreatedTime = DateTime.Now;
+
+            // Enforce existence of Pizza.SpecialId and Topping.ToppingId
+            // in the database - prevent the submitter from making up
+            // new specials and toppings
+            foreach (var pizza in order.Pizzas)
             {
-                _db = db;
+                pizza.SpecialId = pizza.Special.Id;
+                pizza.Special = null;
             }
-    
-            [HttpGet]
-            public async Task<ActionResult<List<OrderWithStatus>>> GetOrders()
-            {
-                var orders = await _db.Orders
-                    .Include(o => o.Pizzas).ThenInclude(p => p.Special)
-                    .Include(o => o.Pizzas).ThenInclude(p => p.Toppings).ThenInclude(t => t.Topping)
-                    .OrderByDescending(o => o.CreatedTime)
-                    .ToListAsync();
-    
-                return orders.Select(o => OrderWithStatus.FromOrder(o)).ToList();
-            }
-    
-            [HttpPost]
-            public async Task<ActionResult<int>> PlaceOrder(Order order)
-            {
-                order.CreatedTime = DateTime.Now;
-    
-                // Enforce existence of Pizza.SpecialId and Topping.ToppingId
-                // in the database - prevent the submitter from making up
-                // new specials and toppings
-                foreach (var pizza in order.Pizzas)
-                {
-                    pizza.SpecialId = pizza.Special.Id;
-                    pizza.Special = null;
-                }
-    
-                _db.Orders.Attach(order);
-                await _db.SaveChangesAsync();
-    
-                return order.OrderId;
-            }
+
+            _db.Orders.Attach(order);
+            await _db.SaveChangesAsync();
+
+            return order.OrderId;
         }
     }
     ```

@@ -4,9 +4,9 @@ title: Manage Azure AD storage authentication
 metadata:
   title: Manage Azure AD storage authentication
   description: "Manage Azure AD storage authentication"
-  ms.date: 12/03/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -3,15 +3,12 @@
 1.  Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  In the **Users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
-    
+
     > [!TIP]
-    > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s blade, you will only be managing that individual user.
+    > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s blade, you will only be managing that individual user.:::image type="content" source="../media/remove-user-c643fb50.png" alt-text="Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.":::
 
-:::image type="content" source="../media/remove-user-c643fb50.png" alt-text="Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.":::
-
-
-1.  With the user account selected, on the menu, select **Delete user**.
-2.  Review the dialog box and then select **OK**.
+4.  With the user account selected, on the menu, select **Delete user**.
+5.  Review the dialog box and then select **OK**.
 
 ## Restore a deleted user
 

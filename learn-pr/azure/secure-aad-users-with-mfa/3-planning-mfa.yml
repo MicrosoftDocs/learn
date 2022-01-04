@@ -3,7 +3,7 @@ uid: learn.azure-security.secure-aad-users-with-mfa.planning-mfa
 metadata:
   title: Plan your multi-factor authentication deployment
   description: Learn the things to consider as you plan to turn on Azure AD MFA.
-  ms.date: 10/02/2019
+  ms.date: 01/03/2021
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial

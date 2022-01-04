@@ -15,7 +15,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
     The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-    * Installs the required version of the .NET Core SDK.
+    * Installs the required version of the .NET SDK.
     * Clones the *:::no-loc text="eShopOnContainers":::* app from your fork of the GitHub repository.
     * Provisions AKS and Azure Container Registry (ACR) resources.
     * Launches the Cloud Shell editor to view the code.

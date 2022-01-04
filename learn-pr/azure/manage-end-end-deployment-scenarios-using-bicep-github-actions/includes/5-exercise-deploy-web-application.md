@@ -23,7 +23,7 @@ Here, you add a new job definition that contains the steps required to build the
 
    :::code language="yaml" source="code/5-build.yml" :::
 
-   The job installs the .NET Core SDK to build the solution. Then, it runs a build step to turn the website application's source code into a compiled file that's ready to run in Azure. The job then compresses the compiled artifact and uploads it as a workflow artifact.
+   The job installs the .NET SDK to build the solution. Then, it runs a build step to turn the website application's source code into a compiled file that's ready to run in Azure. The job then compresses the compiled artifact and uploads it as a workflow artifact.
 
 1. Save your changes to the file.
 

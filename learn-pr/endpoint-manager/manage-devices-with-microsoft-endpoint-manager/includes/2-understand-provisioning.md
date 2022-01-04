@@ -18,8 +18,8 @@ To provision Windows devices, you can use Windows Autopilot. Windows Autopilot s
 
 There are four types of Windows Autopilot deployment:
 - **Self-Deploying Mode** for kiosks, digital signage, or a shared device. Self-deploying mode joins the device into Azure Active Directory, enrolls the device in Intune (or another MDM service) leveraging Azure AD for automatic MDM enrollment, and ensures that all policies, applications, certificates, and networking profiles are provisioned on the device, leveraging the enrollment status page to prevent access to the desktop until the device is fully provisioned.
-- **White Glove** enables partners or IT staff to pre-provision a Windows 10 PC so that it's fully configured and business-ready. 
-- **Autopilot for existing devices** enables you to easily deploy the latest version of Windows 10 to your existing devices.
+- **White Glove** enables partners or IT staff to pre-provision a Windows 10/11 PC so that it's fully configured and business-ready. 
+- **Autopilot for existing devices** enables you to easily deploy the latest version of Windows 10/11 to your existing devices.
 - **User Driven Mode** for traditional users. This process is designed to be simple so that anyone can complete it, enabling devices to be shipped or distributed to the end user directly with simple instructions.
 
 There are a number of alternative ways to provision devices as well. Configuration Manager offers several methods to deploy Windows OS to windows devices, such as using Software Center, standalone media, a preboot execution environment (PXE), multicast, and more. Intune also offers provisioning using bulk enrollment for your Azure AD tenant. 

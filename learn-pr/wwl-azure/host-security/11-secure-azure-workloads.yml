@@ -4,9 +4,9 @@ title: Secure Azure workloads with Azure Security Benchmarks
 metadata:
   title: Secure Azure workloads with Azure Security Benchmarks
   description: "Secure Azure workloads with Azure Security Benchmarks"
-  ms.date: 12/13/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

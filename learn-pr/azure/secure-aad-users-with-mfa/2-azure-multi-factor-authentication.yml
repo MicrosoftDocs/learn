@@ -3,7 +3,7 @@ uid: learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentic
 metadata:
   title: What is Azure AD Multi-Factor Authentication?
   description: Learn about Azure AD MFA and how it helps protect user accounts.
-  ms.date: 10/02/2019
+  ms.date: 01/03/2021
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial
