@@ -1,4 +1,4 @@
-Microsoft Defender for Cloudprovides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
+Microsoft Defender for Cloud provides security alerts and advanced threat protection for virtual machines, SQL databases, containers, web applications, your network, and more.
 
 :::image type="content" source="../media/azure-defender-e7404c86.png" alt-text="Screenshot of Azure Security Center blade with Azure Defender open.":::
 

@@ -2,7 +2,7 @@ The brute force attack is the most common attack, and the easiest to be used aga
 
 ## Attack scenario
 
-Brute force is targeted. The hacker goes after specific users and cycles through as many passwords as possible using either a full dictionary or one that’s edited to common passwords. An even more targeted password guessing attack is when the hacker selects a person and conducts research to determine if they can guess the user’s password—discovering family names through social media posts, for example. And then trying those variants against an account to gain access.
+Brute force is targeted. The hacker goes after specific users and cycles through as many passwords as possible using either a full dictionary or one that’s edited to common passwords. An even more targeted password-guessing attack is when the hacker selects a person and conducts research to determine if they can guess the user’s password—discovering family names through social media posts, for example. And then trying those variants against an account to gain access.
 
 Brute force attacks commonly target management ports as a means to gain access to a VM. If successful, an attacker can take control over the VM and establish a foothold into your environment. Computers with Windows Remote Desktop Protocol (RDP) exposed to the internet are an attractive target for adversaries because they present a simple and effective way to gain access to a network. Brute forcing RDP, a secure network communications protocol that provides remote access over port 3389, does not require a high level of expertise or the use of exploits; attackers can utilize many off-the-shelf tools to scan the internet for potential victims and leverage similar such tools for conducting the brute force attack.
 
