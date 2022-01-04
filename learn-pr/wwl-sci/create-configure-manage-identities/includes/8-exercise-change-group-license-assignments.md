@@ -64,11 +64,10 @@ To see which users and groups are consuming licenses, select a product. Under **
 
 **Problem**: One of the products that's specified in the group contains a service plan that conflicts with another service plan that's already assigned to the user via a different product. Some service plans are configured in a way that they can't be assigned to the same user as another, related service plan.
 
-Consider the following example. A user has a license for Office 365 Enterprise *E1* assigned directly, with all the plans enabled. The user has been added to a group that has the Office 365 Enterprise *E3* product assigned to it. The E3 product contains service plans that can't overlap with the plans that are included in E1, so the group license assignment fails with the “Conflicting service plans” error. In this example, the conflicting service plans are:
+Consider the following example. A user has a license for Office 365 Enterprise *E1* assigned directly, with all the plans enabled. The user has been added to a group that has the Office 365 Enterprise *E3* product assigned to it. The E3 product contains service plans that can't overlap with the plans that are included in E1, so the group license assignment fails with the **Conflicting service plans** error. In this example, the conflicting service plans are:
 
-SharePoint Online (Plan 2) conflicts with SharePoint Online (Plan 1).
-
-Exchange Online (Plan 2) conflicts with Exchange Online (Plan 1).
+ -  SharePoint Online (Plan 2) conflicts with SharePoint Online (Plan 1).
+ -  Exchange Online (Plan 2) conflicts with Exchange Online (Plan 1).
 
 To solve this conflict, you need to disable two of the plans. You can disable the E1 license that's directly assigned to the user. Or, you need to modify the entire group license assignment and disable the plans in the E3 license. Alternatively, you might decide to remove the E1 license from the user if it's redundant in the context of the E3 license.
 
@@ -202,13 +201,8 @@ Here is what the migration process could look like:
 :::image type="content" source="../media/expected-user-state-20eb1a83.png" alt-text="The expected user state during migration.":::
 
 
-```
-This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.
-
-
-- Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.
-
-```
+> [!NOTE]
+> This confirms that the user has both direct and inherited licenses. We see that Office 365 E3 is assigned.<br>\- Select each license to see which services are enabled. To verify that the direct and group licenses enable exactly the same services for the user, select Assignments.<br>
 
 4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
 

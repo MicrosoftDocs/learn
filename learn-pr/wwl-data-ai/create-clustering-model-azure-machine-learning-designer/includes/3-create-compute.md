@@ -23,7 +23,7 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view
 
 2. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
     - **Location**: *Select the same as your workspace. If that location is not listed, choose the one closest to you* 
-    - **Virtual Machine priority**: Dedicated
+    - **Virtual Machine tier**: Dedicated
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: 
         - Choose **Select from all options** 

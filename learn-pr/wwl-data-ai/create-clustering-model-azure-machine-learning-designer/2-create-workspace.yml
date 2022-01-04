@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-automated-machine-learning.create-azure-machine-learning-workspace
+uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.create-azure-machine-learning-workspace
 title: Create an Azure Machine Learning workspace
 metadata:
   title: Create an Azure Machine Learning workspace
   description: "Create an Azure Machine Learning workspace"
-  ms.date: 12/10/2021
+  ms.date: 01/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-create-workspace.md)]
+  [!include[](includes/2-create-workspace.md)]

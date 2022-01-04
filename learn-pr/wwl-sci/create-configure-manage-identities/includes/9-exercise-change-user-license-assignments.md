@@ -73,9 +73,6 @@
 2.  In the left navigation, under **Manage**, select **Users**.
 3.  In the Users blade, select **Dominique Koch**.
 4.  In the left navigation, select **Licenses**.
-5.  On the Update license assignments blade, select the check box for a single or multiple licenses.
-
-:::image type="content" source="../media/assign-user-license-options-fa26ddd9.png" alt-text="Screen image displaying the Update license assignments page and license options highlighted.":::
-
-
-1.  When complete, select **Save**.
+5.  On the Update license assignments blade, select the check box for a single or multiple licenses.:::image type="content" source="../media/assign-user-license-options-fa26ddd9.png" alt-text="Screen image displaying the Update license assignments page and license options highlighted.":::
+    
+6.  When complete, select **Save**.
