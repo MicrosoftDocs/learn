@@ -16,11 +16,11 @@ Manage Security Operations (25-30%)
 
  -  Monitor security by using Microsoft Defender for Cloud
     
-     -  evaluate vulnerability scans from Microsoft Defender for Cloud
-     -  configure Just in Time VM access by using Microsoft Defender for Cloud
-     -  configure centralized policy management by using Microsoft Defender for Cloud
-     -  configure compliance policies and evaluate for compliance by using Microsoft Defender for Cloud
-     -  configure workflow automation by using Microsoft Defender for Cloud
+     -  Evaluate vulnerability scans from Microsoft Defender for Cloud
+     -  Configure Just in Time VM access by using Microsoft Defender for Cloud
+     -  Configure centralized policy management by using Microsoft Defender for Cloud
+     -  Configure compliance policies and evaluate for compliance by using Microsoft Defender for Cloud
+     -  Configure workflow automation by using Microsoft Defender for Cloud
 
 ## Learning objectives
 
