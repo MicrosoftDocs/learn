@@ -54,8 +54,7 @@
       :::column-end:::
     :::row-end:::
     
-
-:::image type="content" source="../media/create-office-365-group-bdc1112a.png" alt-text="Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.":::
-
-
-1.  When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
+    
+    :::image type="content" source="../media/create-office-365-group-bdc1112a.png" alt-text="Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.":::
+    
+5.  When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
