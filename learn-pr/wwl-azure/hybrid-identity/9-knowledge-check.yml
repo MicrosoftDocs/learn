@@ -28,7 +28,7 @@ quiz:
     - content: "Password hash synchronization"
       isCorrect: false
       explanation: "This option just shares the password hash between two federated systems."
-  - content: "Which tool can you use to synchronize Active AD passwords with on-premises Active Directory?"
+  - content: "Which tool can you use to synchronize Azure AD passwords with on-premises Active Directory?"
     choices:
     - content: "Azure AD Connect"
       isCorrect: true
