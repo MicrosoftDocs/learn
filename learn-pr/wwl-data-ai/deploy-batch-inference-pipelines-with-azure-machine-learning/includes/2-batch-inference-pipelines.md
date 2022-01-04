@@ -74,7 +74,6 @@ from azureml.pipeline.core import Pipeline
 batch_data_set = ws.datasets['batch-data']
 
 # Set the output location
-default_ds = ws.get_default_datastore()
 output_dir = OutputFileDatasetConfig(name='inferences')
 
 # Define the parallel run step step configuration
