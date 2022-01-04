@@ -8,10 +8,14 @@ In this module, you've learned how Microsoft Endpoint Manager uses Conditional A
 
 ## Next steps
 
-To determine your mobile device management and mobile application management next steps, see the following resources:
+To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
+- [Analyze and resolve compliance issues using Microsoft Endpoint Manager](/learn/modules/compliance-endpoint-manager/)
 
-- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true)
-- [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
+To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](/microsoft-365/enterprise-mobility-security/)
+
+To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Endpoint Manager, continue by learning more about FastTrack: 
+- [Explore endpoint management support from FastTrack](/fasttrack/microsoft-365/endpoint-management/)
 
 ## Learn more
 
