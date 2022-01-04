@@ -20,9 +20,9 @@ quiz:
         - content: Visual Studio Code isn't open source.
           isCorrect: false
           explanation: Visual Studio Code is open source. Visual Studio is closed source, but free for students, open-source contributors, and individuals.
-        - content: Visual Studio Code predates Visual Studio
+        - content: Visual Studio Code predates Visual Studio.
           isCorrect: false
-        - content: Visual Studio is over 20 years old while Visual Studio Code was first released in 2015
+        - content: Visual Studio is over 20 years old while Visual Studio Code was first released in 2015.
           isCorrect: true
         - content: Visual Studio Code is an integrated development environment while Visual Studio is a light-weight source code editor. 
           isCorrect: false
@@ -40,11 +40,11 @@ quiz:
           isCorrect: false
     - content: What ways can Visual Studio help me publish my apps?
       choices:
-        - content: You can only publish locally to your machine using the debugger.
+        - content: You can publish locally to your machine using the debugger.
           isCorrect: false 
-        - content: You can only publish to Azure.
+        - content: You can publish to Azure.
           isCorrect: false
-        - content: You can only publish to a Docker container.
+        - content: You can publish to a Docker container.
           isCorrect: false
         - content: All of the above.
           isCorrect: true

@@ -1,4 +1,4 @@
-Visual Studio is best known for the rich experiences it provides developers in the editor and debugger and many other programming tools!
+Visual Studio is best known for the rich experiences it provides developers in the editor, debugger, and many other programming features!
 
 ## Editor
 
@@ -6,7 +6,7 @@ The Visual Studio editor has excellent code completion, syntax highlighting, qui
 
 :::image type="content" source="../media/vs-intro-editor.png" alt-text="Screenshot of Visual Studio's code editor. Callouts indicate the different colors in the UI and the lightbulbs that give suggestions in the margin. More callouts point to quick info boxes that appear when the cursor hovers and the IntelliSense completion list.":::
 
-IntelliSense is taken a step further with IntelliCode, the AI tool that is built into the editor. [IntelliCode](https://aka.ms/intellicode) is trained from open source code to bring common patterns and smart completion to your editor. It may appear as you type in the form of gray text suggestions. IntelliCode can make our intellisense completion list smarter by bubbling the most likely completions to the top of the list.
+IntelliSense is taken a step further with IntelliCode, the AI tool that is built into the editor. [IntelliCode](https://aka.ms/intellicode) is trained from open source code to bring common patterns and smart completion to your editor. It may appear as you type in the form of gray text suggestions. IntelliCode can make our IntelliSense completion list smarter by bubbling the most likely completions to the top of the list.
 
 Built-in code fixes and refactorings appear as lightbulbs or screwdrivers in the margin of the editor. These helpful menus can suggest common actions and code fixes for errors or warnings in your files. They can even make subtle suggestions to improve your code style.
 
@@ -16,7 +16,7 @@ There are many navigation commands that help you move around your code and files
 
 :::image type="content" source="../media/vs-intro-navigation.png" alt-text="Multiple screenshots of Visual Studio. First is the right-click menu showing navigation commands including go to definition and peek definition. The second shows an icon in the margin showing the base type of a class. The last shows the navigation buttons at the top-left corner of Visual Studio. The arrows on these buttons point left and right to help navigate the cursor forwards and backwards to different edit points.":::
 
-Visual Studio even comes pre-loaded with templates and snippets to help you scaffold the right projects and code. For example, simply typing "prop" in the editor and typing `tab tab` will insert a Property.
+Visual Studio even comes pre-loaded with templates and snippets to help you scaffold the projects and code correctly. For example, simply typing "prop" in the editor and typing `tab tab` will insert a Property.
 
 :::image type="content" source="../media/vs-intro-snippet.png" alt-text="Two screenshots of Visual Studio. The first picture shows how snippet completion is triggered. The user types prop in the editor and a prompt appears to type tab tab to accept the Property snippet. The second screenshot shows the full property declaration inserted in the editor now saying public int MyProperty { get; set; }":::
 
