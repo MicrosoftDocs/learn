@@ -4,13 +4,13 @@ title: Implement Azure AD conditional access
 metadata:
   title: Implement Azure AD conditional access
   description: "Implement Azure AD conditional access"
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/9-conditional-access.md)]
