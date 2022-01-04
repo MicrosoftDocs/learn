@@ -26,6 +26,5 @@ modules:
 - learn.wwl.azure-ad-identity-protection
 - learn.wwl.azure-ad-privileged-identity-management
 - learn.wwl.enterprise-governance
-- learn.wwl.hands-labs-6
 trophy:
   uid: learn.wwl.manage-identity-access.trophy
