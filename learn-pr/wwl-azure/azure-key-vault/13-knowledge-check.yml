@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -24,18 +24,18 @@ quiz:
       explanation: "Secrets can be stored in your key vault."
     - content: "Links to external certificate"
       isCorrect: false
-      explanation: "It is always a great idea to store your certificates in the key vault.  But links to certificates are not a valid item to store."
+      explanation: "It is always a great idea to store your certificates in the key vault. But links to certificates are not a valid item to store."
     - content: "Identity management"
       isCorrect: false
-      explanation: "Identity management. Azure Key Vault can be used for keys, secrets, and certificates. Keys are cryptographic objects. The key vault supports multiple key types and algorithms and enables the use of Hardware Security Modules (HSM) for high value keys. Secrets provide secure storage of passwords and database connection strings. Certificates are built on top of keys and secrets and add an automated renewal feature."
-  - content: "A select group of users must be able to create and delete keys in the key vault.  When authenticating to the data plane using Azure AD, what security tool should be used the authorize access at a role level to these users?"
+      explanation: "Identity management. Azure Key Vault can be used for keys, secrets, and certificates. Keys are cryptographic objects. The key vault supports multiple key types and algorithms and enables the use of Hardware Security Modules (HSM) for high value keys. Secrets provide secure storage of passwords and database connection strings. Certificates are built on top of keys and secrets and add an automated renewal feature."
+  - content: "A select group of users must be able to create and delete keys in the key vault. When authenticating to the data plane using Azure AD, what security tool should be used the authorize access at a role level to these users?"
     choices:
     - content: "Key vault access policies"
       isCorrect: false
       explanation: "Using Access Policies would not give you role level control, and does not follow least privilege rules."
     - content: "Role-based Access Control"
       isCorrect: true
-      explanation: "Role-based Access Control. To create and delete key vaults the data plane you should grant access with RBAC. For example, Key Vault Contributor.  Using Access Policies would not give you role level control, and does not follow least privilege rules."
+      explanation: "Role-based Access Control. To create and delete key vaults the data plane you should grant access with RBAC. For example, Key Vault Contributor. Using Access Policies would not give you role level control, and does not follow least privilege rules."
     - content: "Azure AD authentication"
       isCorrect: false
       explanation: "AD authentication is not the right way to grant your access."
