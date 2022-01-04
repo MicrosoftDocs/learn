@@ -57,33 +57,23 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 1. Replace the contents of **Program.cs** with the following code:
 
     ```csharp
-    using System;
+    int result = Fibonacci(5);
+    Console.WriteLine(result);
     
-    namespace DotNetDebugging
+    int Fibonacci(int n)
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                int result = Fibonacci(5);
-                Console.WriteLine(result);
-            }
-            static int Fibonacci(int n)
-            {
-                int n1 = 0;
-                int n2 = 1;
-                int sum = 0;
+        int n1 = 0;
+        int n2 = 1;
+        int sum = 0;
     
-                for (int i = 2; i < n; i++)
-                {
-                    sum = n1 + n2;
-                    n1 = n2;
-                    n2 = sum;
-                }
-
-                return n == 0 ? n1 : n2;
-            }
+        for (int i = 2; i < n; i++)
+        {
+            sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
         }
+    
+        return n == 0 ? n1 : n2;
     }
     ```
 
@@ -289,33 +279,23 @@ When we're doing this, it's important to be strategic about where we put our bre
     So with that change, your updated program should look like this example:
 
     ```csharp
-    using System;
+    int result = Fibonacci(5);
+    Console.WriteLine(result);
 
-    namespace DotNetDebugging
+    int Fibonacci(int n)
     {
-        class Program
+        int n1 = 0;
+        int n2 = 1;
+        int sum = 0;
+
+        for (int i = 2; i <= n; i++)
         {
-            static void Main(string[] args)
-            {
-                int result = Fibonacci(5);
-                Console.WriteLine(result);
-            }
-            static int Fibonacci(int n)
-            {
-                int n1 = 0;
-                int n2 = 1;
-                int sum = 0;
-
-                for (int i = 2; i <= n; i++)
-                {
-                    sum = n1 + n2;
-                    n1 = n2;
-                    n2 = sum;
-                }
-
-                return n == 0 ? n1 : n2;
-            }
+            sum = n1 + n2;
+            n1 = n2;
+            n2 = sum;
         }
+
+        return n == 0 ? n1 : n2;
     }
     ```
 
