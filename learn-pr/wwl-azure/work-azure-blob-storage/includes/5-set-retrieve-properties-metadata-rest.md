@@ -43,7 +43,7 @@ The PUT operation sets metadata headers on the specified container or blob, over
 The URI syntax for setting metadata headers on a container is as follows: 
     
 ```
-PUT https://myaccount.blob.core.windows.net/mycontainer?comp=metadata?restype=container
+PUT https://myaccount.blob.core.windows.net/mycontainer?comp=metadata&restype=container
 ```
 
 The URI syntax for setting metadata headers on a blob is as follows: 

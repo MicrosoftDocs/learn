@@ -91,7 +91,7 @@ You can skip creating this user if you have already created the same user in the
     :::row-end:::
     :::row:::
       :::column:::
-        \`Membership type
+        Membership type
       :::column-end:::
       :::column:::
         Assigned
@@ -114,11 +114,10 @@ You can skip creating this user if you have already created the same user in the
       :::column-end:::
     :::row-end:::
     
-
-:::image type="content" source="../media/create-group-4f2ec329.png" alt-text="Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.":::
-
-
-1.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
+    
+    :::image type="content" source="../media/create-group-4f2ec329.png" alt-text="Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted.":::
+    
+5.  When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
 ## Assign a license to a group
 
@@ -127,14 +126,11 @@ You can skip creating this user if you have already created the same user in the
 3.  On the menu, select **Assignments**.
 4.  In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for one of the licenses.
 5.  Under **Review license** options, review the available options for the license you have selected.
-    
+
     > [!TIP]
-    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+    > When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.:::image type="content" source="../media/assign-license-group-8e7c8e37.png" alt-text="Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.":::
 
-:::image type="content" source="../media/assign-license-group-8e7c8e37.png" alt-text="Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.":::
-
-
-1.  Select **Save**.
+6.  Select **Save**.
 
 ## Restore or remove a recently deleted user with Azure Active Directory
 

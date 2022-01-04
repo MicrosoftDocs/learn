@@ -3,9 +3,9 @@ uid: learn.wwl.enable-containers-security
 metadata:
   title: Enable Containers security
   description: "Explore how to secure your applications running within containers and how to securely connect to them."
-  ms.date: 12/23/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable Containers security

@@ -6,7 +6,7 @@ In this module, you:
 
 [!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
-[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
+[!INCLUDE[revert the .NET SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
 [!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 

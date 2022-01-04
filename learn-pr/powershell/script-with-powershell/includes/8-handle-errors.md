@@ -14,7 +14,7 @@ There are two types of errors you can get when you run PowerShell:
 
 - **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error by using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at that point and no statements will run.
 
-   > [!NOTE] 
+   > [!NOTE]
    > The `Trap` construct is outside the scope of this module. If you're interested, see [About Trap](/powershell/module/microsoft.powershell.core/about/about_trap?preserve-view=true&view=powershell-7.1).
 
 - **Non-terminating error**. This type of error will notify the user that something is wrong, but the script will continue. You can upgrade this type of error to a terminating error.
@@ -67,11 +67,11 @@ There are three related constructs that can help you manage this type of error:
 
 We've talked about exception objects in the context of catching errors. You use these objects to inspect what went wrong and take appropriate measures. An exception object contains:
 
-  - **A message**. The message tells you in a few words what went wrong.
+- **A message**. The message tells you in a few words what went wrong.
 
-  - **The stacktrace**. The stacktrace tells you which statements ran before the error. Imagine you have a call to function A, followed by B, followed by C. The script stops responding at C. The stacktrace will show that chain of calls.
+- **The stacktrace**. The stacktrace tells you which statements ran before the error. Imagine you have a call to function A, followed by B, followed by C. The script stops responding at C. The stacktrace will show that chain of calls.
 
-  - **The offending row**. The exception object also tells you which row the script was running when the error occurred. This information can help you debug your code.
+- **The offending row**. The exception object also tells you which row the script was running when the error occurred. This information can help you debug your code.
 
 So how do you inspect an exception object? There's a built-in variable, `$_`, that has an `exception` property. To get the error message, for example, you would use `$_.exception.message`. In code, it might look like this:
 
@@ -79,9 +79,9 @@ So how do you inspect an exception object? There's a built-in variable, `$_`, th
 Try {
      # Do something with a file.
    } Catch [System.IO.IOException] {
-     Write-Host "Something IO went wrong: $($_.error.message)"
+     Write-Host "Something IO went wrong: $($_.exception.message)"
    }  Catch {
-     Write-Host "Something else went wrong: $($_.error.message)"
+     Write-Host "Something else went wrong: $($_.exception.message)"
    }
 ```
 

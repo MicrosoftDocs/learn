@@ -13,7 +13,7 @@ You can learn more by reviewing the following.
 
  -  [Azure portal documentation](/azure/azure-portal/)
  -  [Azure Cloud Shell overview](/azure/cloud-shell/overview)
- -  [Azure PowerShell Reference](/powershell/module/az.compute/get-azvm?view=azps-3.3.0)
+ -  [Azure PowerShell documentation](/powershell/azure)
  -  [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).
  -  [Learn - Manage services with the Azure portal](/learn/modules/tour-azure-portal/)
  -  [Learn - Introduction to PowerShell](/learn/modules/introduction-to-powershell/)
