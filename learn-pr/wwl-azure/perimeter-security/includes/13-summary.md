@@ -1,4 +1,4 @@
-Stopping an attack at the perimeter is the most secure and cost effective way to keep your Azure solutions secure. Azure provides several perimeter level security tools to support your business.
+Stopping at attack at the perimeter is the most secure and cost effective way to keep your Azure solutions secure. Azure provides several perimeter level security tools to support your business.
 
 You should be able to:
 
