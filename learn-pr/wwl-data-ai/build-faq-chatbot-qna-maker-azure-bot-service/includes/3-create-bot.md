@@ -67,7 +67,7 @@ Now that you have a knowledge base, you can test it.
 3. In the test pane, at the bottom enter the message *I want to book a flight*. An appropriate response from the FAQ should be returned.
 
     > [!NOTE]
-    > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer from the response by using the **Display short answer** checkbox at the top of the test pane.
+    > The response includes a *short answer* as well as a more verbose *answer passage* - the answer passage shows the full text in the FAQ document for the closest matched question, while the short answer is intelligently extracted from the passage. You can control whether the short answer is from the response by using the **Display short answer** checkbox at the top of the test pane.
 
 5. Try another question, such as *How can I cancel a reservation?*
 6. When you're done testing the knowledge base, click **Test** to close the test pane.

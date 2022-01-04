@@ -24,7 +24,7 @@ roles:
 products:
 - dotnet
 prerequisites: |
-  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
   - Experience with using the command line
 units:
