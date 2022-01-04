@@ -3,7 +3,7 @@ uid: learn.wwl.design-bot-conversation-flow
 metadata:
   title: Create a bot with the Bot Framework SDK
   description: "Learn how to build a bot by using the Microsoft Bot Framework SDK."
-  ms.date: 06/10/2021
+  ms.date: 01/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

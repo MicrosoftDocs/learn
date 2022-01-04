@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -35,7 +35,7 @@ quiz:
       explanation: "A management group is not a good choice for this requirement."
     - content: "Implement Security Center policies"
       isCorrect: true
-      explanation: "Implement Security Center policies. Security Center can monitor policy compliance across all your subscriptions using a default set of security policies. A security policy defines the set of controls that are recommended for resources within the specified subscription or resource group."
+      explanation: "Implement Security Center policies. Security Center can monitor policy compliance across all your subscriptions using a default set of security policies. A security policy defines the set of controls that are recommended for resources within the specified subscription or resource group."
     - content: "Create Desired Configuration State scripts"
       isCorrect: false
       explanation: "Desired state scripts are not the easiest way to accomplish this task."
@@ -43,7 +43,7 @@ quiz:
     choices:
     - content: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources."
       isCorrect: true
-      explanation: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources. Security Center reviews your security recommendations across all workloads, uses algorithms to determine how critical each recommendation is, and calculates a Secure Score which is displayed on the Overview page."
+      explanation: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources. Security Center reviews your security recommendations across all workloads, uses algorithms to determine how critical each recommendation is, and calculates a Secure Score which is displayed on the Overview page."
     - content: "The Secure Score is a count of recommendations made against your monitored resources."
       isCorrect: false
       explanation: "There is way more to secure score than just a count of recommendations."
@@ -60,12 +60,12 @@ quiz:
       explanation: "Bastion is not the right choice for blocking brute force attacks on a VM."
     - content: "Just-in-Time virtual machine access"
       isCorrect: true
-      explanation: "Just-in-Time VM access. Azure Security Center supports Just-in-time (JIT) virtual machine (VM) access. When just-in-time access is enabled, Security Center uses network security group (NSG) rules to restrict access to management ports when they are not in use so they cannot be targeted by attackers. Protected ports are the SSH and RDP ports."
-  - content: "When using Azure Security Center (ASC) to provide visibility into virtual machine security settings, the monitoring system can be set up to notify administrators when issues are discovered.  Which issue below would need a different monitoring tool to discover it?"
+      explanation: "Just-in-Time VM access. Azure Security Center supports Just-in-time (JIT) virtual machine (VM) access. When just-in-time access is enabled, Security Center uses network security group (NSG) rules to restrict access to management ports when they are not in use so they cannot be targeted by attackers. Protected ports are the SSH and RDP ports."
+  - content: "When using Azure Security Center (ASC) to provide visibility into virtual machine security settings, the monitoring system can be set up to notify administrators when issues are discovered. Which issue below would need a different monitoring tool to discover it?"
     choices:
     - content: "A newer operating system version is available."
       isCorrect: true
-      explanation: "A newer operating system version is available. Azure Security Center does not look to see when a new OS is released.  ASC examines OS-level settings using a monitor service that it installs into each Windows and Linux VM. In addition to the choices above, ASC can provide a vulnerability assessment with remediation recommendations."
+      explanation: "A newer operating system version is available. Azure Security Center does not look to see when a new OS is released. ASC examines OS-level settings using a monitor service that it installs into each Windows and Linux VM. In addition to the choices above, ASC can provide a vulnerability assessment with remediation recommendations."
     - content: "System security updates and critical updates that are missing."
       isCorrect: false
       explanation: "Tracking critical updates is an available notification."
