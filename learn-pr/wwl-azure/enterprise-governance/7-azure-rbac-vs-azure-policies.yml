@@ -4,9 +4,9 @@ title: Compare and contrast Azure RBAC vs Azure policies
 metadata:
   title: Compare and contrast Azure RBAC vs Azure policies
   description: "Compare and contrast Azure RBAC vs Azure policies"
-  ms.date: 11/12/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
