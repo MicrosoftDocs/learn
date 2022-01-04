@@ -218,8 +218,8 @@ When it comes to *using* the configuration, the App Service app settings are pas
     private BlobContainerClient blobContainerClient;
     ```
 
-> [!TIP]
-> Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses single container with constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
+    > [!TIP]
+    > Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses single container with constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
 
 1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after `BlobStorage` instance is created and before it is used for the first time.
 

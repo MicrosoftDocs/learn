@@ -80,16 +80,16 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 ::: zone pivot="java"
 
-- To upload a blob, you'll implement the `BlobStorage.save` method.  First, you will get a `BlobClient` object that represents the blob by calling `getBlobClient` on a `BlobContainerClient`. Then, you will use the `upload` method on the `BlobClient` to save the `InputStream` of data passed to this method up to Blob Storage.
+To upload a blob, you'll implement the `BlobStorage.save` method.  First, you will get a `BlobClient` object that represents the blob by calling `getBlobClient` on a `BlobContainerClient`. Then, you will use the `upload` method on the `BlobClient` to save the `InputStream` of data passed to this method up to Blob Storage.
 
-    In the editor, in `BlobStorage.java`, replace `save` with the following code.
+In the editor, in `BlobStorage.java`, replace `save` with the following code.
 
-    ```java
-    public void save(String name, InputStream inputStream, long contentLength) {
-        BlobClient blobClient = blobContainerClient.getBlobClient(name);
-        blobClient.upload(inputStream, contentLength);
-    }
-    ```
+```java
+public void save(String name, InputStream inputStream, long contentLength) {
+    BlobClient blobClient = blobContainerClient.getBlobClient(name);
+    blobClient.upload(inputStream, contentLength);
+}
+```
 
 ::: zone-end
 
@@ -122,14 +122,14 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
 To download a file use the `openInputStream` method on the `BlobClient`. This method returns an `InputStream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream which can be used by `IndexBean` to stream the content to the browser.
 
-- Replace `read` with this code and save your work.
+Replace `read` with this code and save your work.
 
-    ```java
-    public InputStream read(String name) {
-        BlobClient blobClient = blobContainerClient.getBlobClient(name);
-        return blobClient.openInputStream();
-    }
-    ```
+```java
+public InputStream read(String name) {
+    BlobClient blobClient = blobContainerClient.getBlobClient(name);
+    return blobClient.openInputStream();
+}
+```
 
 ::: zone-end
 
@@ -251,8 +251,8 @@ To download a file use the `openInputStream` method on the `BlobClient`. This me
 
     :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
-> [!TIP]
-> This module uses Azure Cloud Shell to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.
+    > [!TIP]
+    > This module uses Azure Cloud Shell to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.
 
 1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 
