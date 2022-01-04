@@ -60,11 +60,11 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     int result = Fibonacci(5);
     Console.WriteLine(result);
     
-    int Fibonacci(int n)
+    static int Fibonacci(int n)
     {
         int n1 = 0;
         int n2 = 1;
-        int sum = 0;
+        int sum;
     
         for (int i = 2; i < n; i++)
         {
@@ -104,10 +104,10 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 
     ```text
     ...
-    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\5.0.0\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.0\System.Threading.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+    Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.0\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
     3
-    The program '[36536] DotNetDebugging.dll' has exited with code 0 (0x0).
+    The program '[88820] DotNetDebugging.dll' has exited with code 0 (0x0).
     ```
 
 The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
@@ -122,7 +122,7 @@ The fifth value in this list is 5, but our program returned 3. Let's use the deb
 
 ### Use breakpoints and step-by-step execution
 
-1. Add a breakpoint by clicking in the left margin at line **9** on `int result = Fibonacci(5);`.
+1. Add a breakpoint by clicking in the left margin at line **1** on `int result = Fibonacci(5);`.
 
    :::image source="../media/breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
@@ -183,7 +183,7 @@ Stepping through your code can be helpful but tedious. Especially when you're wo
 
 When we're doing this, it's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
 
-1. Add a second breakpoint on line 21.
+1. Add a second breakpoint on line 13.
 
    :::image source="../media/breakpoint-in-loop.png" alt-text="Screenshot showing a second breakpoint being set.":::
 
@@ -237,15 +237,15 @@ When we're doing this, it's important to be strategic about where we put our bre
 
     Okay, not to worry. We haven't failed, we've learned. We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. I'm starting to get some ideas about where the bug is ... are you?
 
-1. Let's set one more breakpoint on line 25, which reads:
+1. Let's set one more breakpoint on line 17, which reads:
 
     ```csharp
     return n == 0 ? n1 : n2;
     ```
 
-    This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 9 and 21, so we can clear them.
+    This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
 
-1. Remove our previous breakpoints on lines 9 and 21. You can do that by clicking on them in the margin next to the line numbers, or by clearing the breakpoint check boxes for lines 9 and 21 in the breakpoints pane in the lower left.
+1. Remove our previous breakpoints on lines 1 and 13. You can do that by clicking on them in the margin next to the line numbers, or by clearing the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
 
     :::image source="../media/clearing-breakpoints.png" alt-text="Screenshot showing the breakpoints listed in the breakpoints pane.":::
 
@@ -282,11 +282,11 @@ When we're doing this, it's important to be strategic about where we put our bre
     int result = Fibonacci(5);
     Console.WriteLine(result);
 
-    int Fibonacci(int n)
+    static int Fibonacci(int n)
     {
         int n1 = 0;
         int n2 = 1;
-        int sum = 0;
+        int sum;
 
         for (int i = 2; i <= n; i++)
         {
