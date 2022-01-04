@@ -3,9 +3,9 @@ uid: learn.wwl.azure-ad-identity-protection
 metadata:
   title: Deploy Azure AD identity protection
   description: "Protect your identities in Azure AD once they are set up using Conditional Access, MFA, access reviews, and other capabilities."
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure AD identity protection
@@ -18,7 +18,7 @@ abstract: |
   - Create and follow an access review process
 prerequisites: |
   - None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-ad-identity-protection.svg
 levels:
 - intermediate
 roles:
