@@ -47,9 +47,9 @@ Data from any tier can be sent into an event hub, where it can be pulled into a 
 
 ### Connecting to Azure Sentinel
 
-Microsoft Sentinelis now generally available. With Azure Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Microsoft Sentinelbrings together the power of Azure and AI to enable Security Operations Centers to achieve more.
+Microsoft Sentinel is now generally available. With Azure Sentinel, enterprises worldwide can now keep pace with the exponential growth in security data, improve security outcomes without adding analyst resources, and reduce hardware and operational costs. Microsoft Sentinel brings together the power of Azure and AI to enable Security Operations Centers to achieve more.
 
-Some of the features of Microsoft Sentinelare:
+Some of the features of Microsoft Sentinel are:
 
  -  **More than 100 built-in alert rules**
     
@@ -58,8 +58,8 @@ Some of the features of Microsoft Sentinelare:
  -  **Jupyter Notebooks** that use a growing collection of hunting queries, exploratory queries, and python libraries.
  -  **Investigation graph** for visualizing and traversing the connections between entities like users, assets, applications, or URLs and related activities like logins, data transfers, or application usage to rapidly understand the scope and impact of an incident.
 
-The Microsoft SentinelGitHub repository has grown to over 400 detection, exploratory, and hunting queries, plus Azure Notebooks samples and related Python libraries, playbooks samples, and parsers. The bulk of these were developed by Microsoft's security researchers based on their vast global security experience and threat intelligence.
+The Microsoft Sentinel GitHub repository has grown to over 400 detection, exploratory, and hunting queries, plus Azure Notebooks samples and related Python libraries, playbooks samples, and parsers. The bulk of these were developed by Microsoft's security researchers based on their vast global security experience and threat intelligence.
 
-To on-board Azure Sentinel, you first need to enable Azure Sentinel, and then connect your data sources. Microsoft Sentinelcomes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Cloud App Security**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Azure Sentinel.
+To on-board Azure Sentinel, you first need to enable Azure Sentinel, and then connect your data sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including **Microsoft Threat Protection solutions**, **Microsoft 365 sources**, including **Microsoft 365, Azure AD, Azure ATP**, and **Microsoft Cloud App Security**, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Azure Sentinel.
 
 After you connect your data sources, choose from a gallery of expertly created dashboards that surface insights based on your data. These dashboards can be easily customized to your needs.
