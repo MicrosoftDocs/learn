@@ -21,4 +21,4 @@ The pattern for implementing speech synthesis is similar to that of speech recog
     - Reason
     - ResultId
 
-When speech has been successfully synthesized, the **Reason** property is set to the **SynthesizingAudioComplete** enumeration and the **AudioData** property contains the audio stream (which, depending on the **AudioConfig** may have been automatically sent to a speaker or file).
+When speech has been successfully synthesized, the **Reason** property is set to the **SynthesizingAudioCompleted** enumeration and the **AudioData** property contains the audio stream (which, depending on the **AudioConfig** may have been automatically sent to a speaker or file).
