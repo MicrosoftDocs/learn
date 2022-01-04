@@ -212,7 +212,7 @@ In the Create virtual network tab, you can enable security features like Bastion
 
 **Distributed Denial of Service (DDoS) protection**
 
-You can select to enable Standard DDoS protection. Standard DDoS Protection is a plan is a paid service that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
+You can select to enable Standard DDoS protection. Standard DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
 
 **Firewall**
 

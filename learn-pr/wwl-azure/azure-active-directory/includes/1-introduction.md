@@ -9,7 +9,7 @@ A security engineer uses Azure Active Directory to manage identities, you will w
 
  -  Create users, groups, and administrative units to securely access resources and services.
  -  Configure access to systems to be passwordless.
- -  Define a strategy  for using Azure AD and Azure AD Domain Services to lock down access to your solutions.
+ -  Define a strategy for using Azure AD and Azure AD Domain Services to lock down access to your solutions.
 
 ## Skills measured
 

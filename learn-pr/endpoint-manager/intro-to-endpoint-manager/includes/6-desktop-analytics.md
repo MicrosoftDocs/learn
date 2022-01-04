@@ -3,10 +3,10 @@ Desktop Analytics is a cloud-based service that integrates with Configuration Ma
 Use Desktop Analytics with Configuration Manager to:  
 
 - Create an inventory of apps running in your organization.
-- Assess app compatibility with the latest Windows 10 feature updates.  
+- Assess app compatibility with the latest Windows 10/11 feature updates.  
 - Identify compatibility issues, and receive mitigation suggestions based on cloud-enabled data insights.
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
-- Deploy Windows 10 to pilot and production-managed devices.
+- Deploy Windows 10/11 to pilot and production-managed devices.
 
 The following screenshot displays the Desktop Analytics pane:
 
