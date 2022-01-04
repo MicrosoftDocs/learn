@@ -66,7 +66,7 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
         [HttpGet]
         public IEnumerable<Coupon> Get()
         {
-            return _context.Coupons!
+            return _context.Coupons
                 .AsNoTracking()
                 .ToList();
         }
@@ -81,8 +81,7 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
 1. In *Program.cs*, replace the `// Add the PromotionsContext` comment with the following code:
 
     ```csharp
-    builder.Services.AddDbContext<PromotionsContext>(options =>
-        options.UseSqlite("Data Source=./Promotions/Promotions.db"));
+    builder.Services.AddSqlite<PromotionsContext>("Data Source=./Promotions/Promotions.db"));
     ```
 
     The preceding registers `PromotionsContext` with the dependency injection system.

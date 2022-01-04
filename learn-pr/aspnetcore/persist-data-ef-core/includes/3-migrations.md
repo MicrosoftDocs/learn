@@ -3,6 +3,8 @@ In this unit, you'll create C# entity classes that will map to tables in a local
 > [!NOTE]
 > This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 ## Get the starter code
 
 1. From a terminal, run the following command to clone the starter code repository:
@@ -91,9 +93,9 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
         {
         }
     
-        public DbSet<Pizza>? Pizzas { get; set; }
-        public DbSet<Topping>? Toppings { get; set; }
-        public DbSet<Sauce>? Sauces { get; set; }
+        public DbSet<Pizza> Pizzas => Set<Pizza>();
+        public DbSet<Topping> Toppings => Set<Topping>();
+        public DbSet<Sauce> Sauces => Set<Sauce>();
     }
     ```
 
@@ -107,8 +109,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 1. In *Program.cs*, replace `// Add the PizzaContext` with the following code:
 
     ```csharp
-    builder.Services.AddDbContext<PizzaContext>(options =>
-        options.UseSqlite("Data Source=ContosoPizza.db"));
+    builder.Services.AddSqlite<PizzaContext>("Data Source=ContosoPizza.db");
     ```
 
     The preceding code:
@@ -124,7 +125,6 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     ```csharp
     using ContosoPizza.Data;
-    using Microsoft.EntityFrameworkCore;
     ```
 
     The preceding code resolves dependencies in the previous step.

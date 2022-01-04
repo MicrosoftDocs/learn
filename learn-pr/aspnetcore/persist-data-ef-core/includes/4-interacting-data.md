@@ -40,7 +40,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public IEnumerable<Pizza> GetAll()
     {
-        return _context.Pizzas!
+        return _context.Pizzas
             .AsNoTracking()
             .ToList();
     }
@@ -49,7 +49,6 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     In the preceding code:
 
     - The `Pizzas` collection contains all the rows in the pizzas table.
-    - The `!` in the above code is a [null-forgiving operator](/dotnet/csharp/language-reference/operators/null-forgiving) and suppresses a compiler warning. It has no effect at runtime.
     - The `AsNoTracking` extension method instructs EF Core to [disable change tracking](/ef/core/querying/tracking). Since this operation is read-only, `AsNoTracking` can optimize performance.
     - All of the pizzas are returned with `ToList`.
 
@@ -58,7 +57,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public Pizza? GetById(int id)
     {
-        return _context.Pizzas!
+        return _context.Pizzas
             .Include(p => p.Toppings)
             .Include(p => p.Sauce)
             .AsNoTracking()
@@ -79,7 +78,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public Pizza Create(Pizza newPizza)
     {
-        _context.Pizzas!.Add(newPizza);
+        _context.Pizzas.Add(newPizza);
         _context.SaveChanges();
 
         return newPizza;
@@ -97,16 +96,15 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public void UpdateSauce(int PizzaId, int SauceId)
     {
-        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
-        var sauceToUpdate = _context.Sauces!.Find(SauceId);
+        var pizzaToUpdate = _context.Pizzas.Find(PizzaId);
+        var sauceToUpdate = _context.Sauces.Find(SauceId);
 
-        if (pizzaToUpdate is null ||
-                sauceToUpdate is null)
+        if (pizzaToUpdate is null || sauceToUpdate is null)
         {
             throw new NullReferenceException("Pizza or sauce does not exist");
         }
 
-        pizzaToUpdate!.Sauce = sauceToUpdate;
+        pizzaToUpdate.Sauce = sauceToUpdate;
 
         _context.SaveChanges();
     }
@@ -124,22 +122,22 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public void AddTopping(int PizzaId, int ToppingId)
     {
-        var pizzaToUpdate = _context.Pizzas!.Find(PizzaId);
-        var toppingToAdd = _context.Toppings!.Find(ToppingId);
+        var pizzaToUpdate = _context.Pizzas.Find(PizzaId);
+        var toppingToAdd = _context.Toppings.Find(ToppingId);
 
-        if (pizzaToUpdate is null ||
-                toppingToAdd is null)
+        if (pizzaToUpdate is null || toppingToAdd is null)
         {
             throw new NullReferenceException("Pizza or topping does not exist");
         }
 
-        if(pizzaToUpdate!.Toppings is null)
+        if(pizzaToUpdate.Toppings is null)
         {
-            pizzaToUpdate!.Toppings = new List<Topping>();
+            pizzaToUpdate.Toppings = new List<Topping>();
         }
-        pizzaToUpdate!.Toppings.Add(toppingToAdd!);
 
-        _context.Pizzas!.Update(pizzaToUpdate);
+        pizzaToUpdate.Toppings.Add(toppingToAdd);
+
+        _context.Pizzas.Update(pizzaToUpdate);
         _context.SaveChanges();
     }
     ```
@@ -156,10 +154,10 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
     ```csharp
     public void DeleteById(int id)
     {
-        var pizzaToDelete = _context.Pizzas!.Find(id);
+        var pizzaToDelete = _context.Pizzas.Find(id);
         if (pizzaToDelete is not null)
         {
-            _context.Pizzas!.Remove(pizzaToDelete);
+            _context.Pizzas.Remove(pizzaToDelete);
             _context.SaveChanges();
         }        
     }
@@ -193,9 +191,9 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
             public static void Initialize(PizzaContext context)
             {
     
-                if (context.Pizzas!.Any()
-                    && context.Toppings!.Any()
-                    && context.Sauces!.Any())
+                if (context.Pizzas.Any()
+                    && context.Toppings.Any()
+                    && context.Sauces.Any())
                 {
                     return;   // DB has been seeded
                 }
@@ -244,7 +242,7 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
                             }
                 };
     
-                context.Pizzas!.AddRange(pizzas);
+                context.Pizzas.AddRange(pizzas);
                 context.SaveChanges();
             }
         }
