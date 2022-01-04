@@ -52,7 +52,7 @@ You can send a message to the queue by calling the `ServiceBusSender.SendMessage
 ```C#
 // create a new message to send to the queue
 string messageContent = "Order new crankshaft for eBike.";
-var message = new ServiceBusMessage(message);
+var message = new ServiceBusMessage(messageContent);
 
 // send the message to the queue
 await sender.SendMessageAsync(message);
