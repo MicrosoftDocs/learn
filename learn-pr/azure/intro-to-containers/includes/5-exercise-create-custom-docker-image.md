@@ -85,7 +85,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker image list
     ```
 
-    The image will have the name `reservationsystem`. You'll also see an image named *microsoft/dotnet*. This image contains the .NET Core SDK and was downloaded when the `reservationsystem` image was built using the Dockerfile.
+    The image will have the name `reservationsystem`. You'll also see an image named *microsoft/dotnet*. This image contains the .NET SDK and was downloaded when the `reservationsystem` image was built using the Dockerfile.
 
     ```console
     REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
