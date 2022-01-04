@@ -1,7 +1,7 @@
 The following code is one possible solution for the challenge from the previous unit.
 
 ```csharp-interactive
-const string input = "<div class='product'><h2>Widgets &trade;</h2><span>5000</span></div>";
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
 string quantity = "";
 string output = "";
