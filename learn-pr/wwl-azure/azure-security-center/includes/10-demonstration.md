@@ -8,7 +8,7 @@ In this task, you will review Microsoft Defender for Cloud.
 2.  Under **General**, select **Overview**.
 3.  Discuss the Overview page.
 4.  Under **Management**, select **Pricing and Settings**.
-5.  Select your subscription, and then review the **Microsoft Defender for Cloudfeatures**.
+5.  Select your subscription, and then review the **Microsoft Defender for Cloud features**.
 6.  Return to the main **Security Center** blade.
 7.  Under, **General**, select **Recommendations**.
 8.  Review **Secure Score**, **Recommendations status**, and **Resource Health**.
