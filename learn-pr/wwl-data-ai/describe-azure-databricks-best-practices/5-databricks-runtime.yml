@@ -4,12 +4,13 @@ title: Explain Databricks runtime best practices
 metadata:
   title: Explain Databricks runtime best practices
   description: "Explain Databricks runtime best practices"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-databricks-runtime.md)]
