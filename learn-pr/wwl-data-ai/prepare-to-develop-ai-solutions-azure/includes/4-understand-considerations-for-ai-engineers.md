@@ -2,7 +2,7 @@
 
 Increasingly, software solutions include AI features; so software engineers need to know how to integrate AI capabilities into their applications and services.
 
-The advances made in machine learning, together with the increased availability of large volumes of data and powerful compute on which to process it and train predictive models, has led to the availability of prepackaged software services that encapsulate AI capabilities. Software engineers can take advantage of these services to create applications and agents that use the underlying AI functionality, using them as building blocks to create intelligent solutions.
+The advances made in machine learning, together with the increased availability of large volumes of data and powerful computers on which to process it and train predictive models, has led to the availability of prepackaged software services that encapsulate AI capabilities. Software engineers can take advantage of these services to create applications and agents that use the underlying AI functionality, using them as building blocks to create intelligent solutions.
 
 This means that software engineers can apply their existing skills in programming, testing, working with source control systems, and packaging applications for deployment, without having to become data scientists or machine learning experts.
 

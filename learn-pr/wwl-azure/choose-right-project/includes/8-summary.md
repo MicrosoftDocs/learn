@@ -13,5 +13,5 @@ You learned how to describe the benefits and usage of:
 
  -  [Greenfield project - Wikipedia](https://en.wikipedia.org/wiki/Greenfield_project)
  -  [Brownfield (software development) - Wikipedia](https://en.wikipedia.org/wiki/Brownfield_%28software_development%29)
- -  [About teams &amp; Agile tools \| Microsoft Docs](/azure/devops/organizations/settings/about-teams-and-settings?view=azure-devops)
- -  [Best practices for Agile project management \| Microsoft Docs](https://docs.microsoft.com/azure/devops/boards/best-practices-agile-project-management?view=azure-devops&amp;tabs=agile-process)
+ -  [About teams &amp; Agile tools \| Microsoft Docs](/azure/devops/organizations/settings/about-teams-and-settings)
+ -  [Best practices for Agile project management \| Microsoft Docs](/azure/devops/boards/best-practices-agile-project-management)

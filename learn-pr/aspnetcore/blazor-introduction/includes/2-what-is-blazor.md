@@ -20,17 +20,17 @@ Blazor Server is an implementation of the Blazor user-interface framework as par
 
 Users that click buttons, navigate, and other interactions with a Blazor Server application have their actions transmitted on this SignalR connection and the server responds with user-interface updates using the same connection.  The Blazor Server framework automatically updates the browser with the content generated on the web server.
 
-## What is Blazor Web Assembly?
+## What is Blazor WebAssembly?
 
-Blazor Web Assembly, sometimes shortened to Blazor WASM, is an implementation of the Blazor user-interface framework that runs on the HTML 5 standard Web Assembly runtime that is present in all modern browsers.  The binary output of your application, the DLL files are transmitted to the browser and run with a version of .NET that has been optimized to work with the Web Assembly runtime regardless of the underlying operating system of the device browsing to the website.
+Blazor WebAssembly, sometimes shortened to Blazor WASM, is an implementation of the Blazor user-interface framework that runs on the HTML 5 standard WebAssembly runtime that is present in all modern browsers.  The binary output of your application, the DLL files are transmitted to the browser and run with a version of .NET that has been optimized to work with the WebAssembly runtime regardless of the underlying operating system of the device browsing to the website.
 
-Since Web Assembly is a technology that runs entirely in the browser, it is possible to deploy this model of Blazor application using files that a web server does not parse or interact with.  This type of "static" approach reduces the requirements for a web server and shifts all processing for the application to the user's machine.
+Since WebAssembly is a technology that runs entirely in the browser, it is possible to deploy this model of Blazor application using files that a web server does not parse or interact with.  This type of "static" approach reduces the requirements for a web server and shifts all processing for the application to the user's machine.
 
 Advanced processing and logic can take place in the browser.  When the application needs data or to interact with other services they can use standard web technologies to communicate with HTTP services.
 
 ## How to build an application with Blazor
 
-Blazor applications are written with a text editor and built with the .NET tools.  You will choose where you would like your Blazor application to run.  The application can run on the server or in the browser with Web Assembly.  Start with a template for the project type that matches where you want your application to run.  You will then write pages using Razor that can be interacted with and navigated between.  Blazor provides a bridge to allow users to build user-interface elements that interoperate with JavaScript.   Other services like a database or web services can be integrated with to provide extra business value.  You can also reference libraries or bundles of features using NuGet packages, the .NET packaging format.
+Blazor applications are written with a text editor and built with the .NET tools.  You will choose where you would like your Blazor application to run.  The application can run on the server or in the browser with WebAssembly.  Start with a template for the project type that matches where you want your application to run.  You will then write pages using Razor that can be interacted with and navigated between.  Blazor provides a bridge to allow users to build user-interface elements that interoperate with JavaScript.   Other services like a database or web services can be integrated with to provide extra business value.  You can also reference libraries or bundles of features using NuGet packages, the .NET packaging format.
 
 Once you have completed writing the code for your application, you can build it with the .NET compiler tools and publish the resulting application to a web server for your users to access.
 

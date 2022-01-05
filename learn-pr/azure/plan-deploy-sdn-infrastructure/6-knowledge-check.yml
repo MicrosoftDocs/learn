@@ -1,0 +1,60 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-sdn-infrastructure.6-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: This is a knowledge check unit.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which component of Azure Stack HCI SDN provides a REST API accessible from Windows Admin Center?"
+    choices:
+    - content: "Network Controller"
+      isCorrect: true
+      explanation: "Correct. Network Controller provides a management interface that’s accessible from PowerShell, VMM, and Windows Admin Center through REST API for the deployment, management, configuration, monitoring, and troubleshooting of SDN infrastructure and network function virtualization-based services."
+    - content: "Software Load Balancer"
+      isCorrect: false
+      explanation: "Incorrect. Azure Stack HCI SDN SLB isn’t directly accessible from Windows Admin Center."
+    - content: "RAS Gateway"
+      isCorrect: false
+      explanation: "Incorrect. RAS Gateway isn’t directly accessible from Windows Admin Center."
+  - content: "Which configuration is required when deploying Network Controller on Azure Stack HCI?"
+    choices:
+    - content: "A VM running the Azure Stack HCI operating system"
+      isCorrect: true
+      explanation: "Correct. All SDN infrastructure services, such as Network Controller, RAS Gateways, and Software Load Balancing must be deployed as VMs running the Azure Stack HCI operating system."
+    - content: "A physical server running the Azure Stack HCI operating system"
+      isCorrect: false
+      explanation: "Incorrect. The SDN infrastructure services must be deployed as VMs."
+    - content: "A VM running the Windows Server 2022 operating system"
+      isCorrect: false
+      explanation: "Incorrect. The SDN infrastructure services must be running the Azure Stack HCI operating system."
+  - content: "Which Network Controller API is intended for interaction with and monitoring of managed SDN infrastructure components?"
+    choices:
+    - content: "Southbound"
+      isCorrect: true
+      explanation: "Correct. The Network Controller's Southbound API is intended for interaction with and monitoring of managed SDN infrastructure components, including network function virtualization-based services."
+    - content: "Northbound"
+      isCorrect: false
+      explanation: "Incorrect. The Network Controller's Northbound API is intended for REST-based communication with management applications to provide centralized administration of the SDN infrastructure and virtualized workloads."
+    - content: "Eastbound"
+      isCorrect: false
+      explanation: "Incorrect. Network Controller doesn’t provide Eastbound API."
+  - content: "When using SDN Express to deploy Azure Stack HCI SDN, which file type should an administrator use to store customized configuration settings?"
+    choices:
+    - content: ".psd1"
+      isCorrect: true
+      explanation: "Correct. To automate your deployment, you can use an input configuration file that includes the values of deployment parameters. You can download a sample configuration file named MultiNodeSampleConfig.psd1 from the SDN Express GitHub repository."
+    - content: ".psm1"
+      isCorrect: false
+      explanation: "Incorrect. This is the extension of the SDN Express PowerShell module."
+    - content: ".ps1"
+      isCorrect: false
+      explanation: "Incorrect. This is the extension of the SDN Express PowerShell script."

@@ -25,7 +25,7 @@ The following table provides the categories and number of recommendations made f
 | Technology group | Description | # of recommendations |
 |------------------|-------------|----------------------|
 | **Identity & Access Management (IAM)** | Recommendations related to IAM policies | 23 |
-| **Azure Security Center** | Recommendations related to the configuration and use of Azure Security Center | 19 |
+| **Microsoft Defender for Cloud** | Recommendations related to the configuration and use of Microsoft Defender for Cloud | 19 |
 | **Storage accounts** | Recommendations for setting storage account policies | 7 |
 | **Azure SQL Database** | Recommendations for helping secure Azure SQL databases | 8 |
 | **Logging and monitoring** | Recommendations for setting logging and monitoring policies for your Azure subscriptions | 13 |

@@ -74,7 +74,7 @@ The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it al
 
 Azure Arc enabled data services allow organizations to manage supported databases running in Azure and on-premises by using one set of tools. Organizations can use Azure Arc enabled data services to run Azure Database for PostgreSQL servers and SQL managed instances on-premises while managing those instances through Azure Data Studio, the Azure portal, or the Azure CLI.
 
-When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Azure Security Center for Azure SQL databases to database server instances running on-premises.
+When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Microsoft Defender for Cloud for Azure SQL databases to database server instances running on-premises.
 
 Azure Arc enabled data services use container and Kubernetes infrastructure for the on-premises services. Azure Arc enabled data services also allow integration between these on-premises data services and Azure services such as Azure Backup.
 

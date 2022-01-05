@@ -1,4 +1,3 @@
-
 As application development moves towards a container-based approach, the need to orchestrate and manage resources is important. Kubernetes is the leading platform that provides the ability to provide reliable scheduling of fault-tolerant application workloads. Azure Kubernetes Service (AKS) is a managed Kubernetes offering that further simplifies container-based application deployment and management.
 
 ## Kubernetes is ...
@@ -14,18 +13,19 @@ Azure Kubernetes Service (AKS) provides a managed Kubernetes service that reduce
 ## Kubernetes cluster architecture
 
 A Kubernetes cluster is divided into two components:
-* _Control plane_ nodes provide the core Kubernetes services and orchestration of application workloads.
-* _Nodes_ run your application workloads.
 
-![Drawing of two main componests of a Cluster- Control plane, Node.](../media/az500-kubernetes-cluster.png)
+ -  *Control plane* nodes provide the core Kubernetes services and orchestration of application workloads.
+ -  *Nodes* run your application workloads.
+
+:::image type="content" source="../media/az500-kubernetes-cluster-fdfdc04d.png" alt-text="kubernetes cluster architecture":::
+
 
 ## Features of Azure Kubernetes Service
 
-* Fully managed​
-* Public IP and FQDN (Private IP option)​
-* Accessed with RBAC or Azure AD​
-* Deployment of containers ​
-* Dynamic scale containers ​
-* Automation of rolling updates and rollbacks of containers​
-* Management of storage, network traffic, and sensitive information
-
+ -  Fully managed
+ -  Public IP and FQDN (Private IP option)
+ -  Accessed with RBAC or Azure AD
+ -  Deployment of containers
+ -  Dynamic scale containers
+ -  Automation of rolling updates and rollbacks of containers
+ -  Management of storage, network traffic, and sensitive information

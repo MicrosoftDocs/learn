@@ -64,5 +64,5 @@ With your permission structure defined, you need to assign users to these groups
 
 Security is a constant consideration for any Azure Active Directory environment. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers. Considerations should include:
 
-- Implementing Azure AD Multi-Factor Authentication for all users in your Conotoso tenant, including any users with responsibility for managing customer with Azure Lighthouse. This authentication method reduces the likelihood of attackers gaining access to your customer's resources via your Contoso Azure AD tenant.
+- Implementing Azure AD Multi-Factor Authentication for all users in your Contoso tenant, including any users with responsibility for managing customer with Azure Lighthouse. This authentication method reduces the likelihood of attackers gaining access to your customer's resources via your Contoso Azure AD tenant.
 - Apply the **principle of least privilege** when giving permissions to your users - Contoso users should have enough permissions to do their job and no more.

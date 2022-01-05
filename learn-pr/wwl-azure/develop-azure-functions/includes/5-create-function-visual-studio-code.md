@@ -10,6 +10,8 @@ Before you begin make sure you have the following requirements in place:
 
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 
+* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1) is the target framework for the steps below.
+
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
 * The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
@@ -62,7 +64,7 @@ After you've verified that the function runs correctly on your local computer, i
 
 Before you can publish your app, you must sign in to Azure. If you're already signed in, go to the next section.
 
-1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose **Sign in to Azure...**. I
+1. If you aren't already signed in, choose the Azure icon in the Activity bar, then in the **Azure: Functions** area, choose **Sign in to Azure...**.
 
     :::image type="content" source="../media/functions-sign-into-azure.png" alt-text="Sign in to Azure within VS Code":::    
 

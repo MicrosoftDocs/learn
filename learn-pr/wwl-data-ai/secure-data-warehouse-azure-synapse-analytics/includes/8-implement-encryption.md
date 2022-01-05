@@ -113,7 +113,7 @@ connection_string = token_library.getConnectionString("<LINKED SERVICE NAME>")
 print(connection_string)
 ```
 
-If you want to Get the connection string as map and parse specific values from a key pain in the connection string, you can find an example below:
+If you want to Get the connection string as map and parse specific values from a key in the connection string, you can find an example below:
 
 To parse specific values from a _key=value_ pair in the connection string such as 
 

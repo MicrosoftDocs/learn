@@ -11,15 +11,24 @@ The exercise is designed to familiarize you with some key capabilities of Synaps
 
 To use Synapse Analytics, you must provision a Synapse Analytics Workspace resource in your Azure subscription.
 
-1. Open the Azure portal at [https://portal.azure/com](https://portal.azure/com?portal=true), and sign in using the credentials associated with your Azure subscription.
+1. Open the Azure portal at [https://portal.azure.com](https://portal.azure.com?portal=true), and sign in using the credentials associated with your Azure subscription.
 2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
         - **Resource group**: *Create a new resource group with a suitable name, like "synapse-rg"*
         - **Managed resource group**: *Enter an appropriate name, for example "synapse-managed-rg"*.
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<your_name>*.
-    - **Use Spark on Cosmos**: *Leave unselected.*
-    - **Region**: *Select any available region*.
+    - **Region**: *Select any of the following regions*:
+        - Australia East
+        - Central US
+        - East US 2
+        - North Europe
+        - South Central US
+        - Southeast Asia
+        - UK South
+        - West Europe
+        - West US
+        - WestUS 2
     - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<your_name>"*.

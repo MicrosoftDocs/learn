@@ -27,4 +27,4 @@ Azure Advisor provides recommendations for the following resources:
 * Traffic Manager profiles
 * Virtual Machines
 
-Azure Advisor also includes recommendations from Azure Security Center, which may include recommendations for other resource types.
+Azure Advisor also includes recommendations from Microsoft Defender for Cloud, which may include recommendations for other resource types.

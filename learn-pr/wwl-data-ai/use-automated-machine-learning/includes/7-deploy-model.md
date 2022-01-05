@@ -6,10 +6,11 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Automated ML** page, select the run for your automated machine learning experiment.
 
 2. On the **Details** tab, select the algorithm name for the best model. 
-> [!div class="centered"]
-> ![Select run.](../media/deploy-detail-tab.png)
+   
+    > [!div class="centered"]
+    > ![Select run.](../media/deploy-detail-tab.png)
 
-3. on the **Model** tab, use the **Deploy** button to deploy the model with the following settings:
+3. on the **Model** tab, select the **Deploy** button and use the **Deploy to web service** option to deploy the model with the following settings:
     - **Name**: predict-rentals
     - **Description**: Predict cycle rentals
     - **Compute type**: Azure Container Instance
@@ -17,11 +18,12 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 4. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**. You may need to select **&#8635; Refresh** periodically.
 5. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint. Then select the **Consume** tab and note the following information there. You need this information to connect to your deployed service from a client application.
+  
     - The REST endpoint for your service
     - the Primary Key for your service
 
-> [!div class="centered"]
-> ![Review the REST endpoint and Primary Key.](../media/endpoints-2.png)
+    > [!div class="centered"]
+    > ![Review the REST endpoint and Primary Key.](../media/endpoints-2.png)
 
 6. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
 
@@ -79,8 +81,9 @@ Now that you've deployed a service, you can test it using some simple code.
 6. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
 7. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
 8. Save the notebook, Then use the **&#9655;** button next to the cell to run the code. You will get predictions for the number of bicycle rentals expected per day. 
-> [!div class="centered"]
-> ![Run the code to get predictions for number of bicycle rentals.](../media/example-output.png)
+    
+    > [!div class="centered"]
+    > ![Run the code to get predictions for number of bicycle rentals.](../media/example-output.png)
 
 9. Verify that predicted number of rentals for each day in the five day period are returned. 
 

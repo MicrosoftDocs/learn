@@ -140,7 +140,7 @@ You added a `for` statement to iterate through the collection. If you're familia
 for key, value in kwargs.items():
 ```
 
-In this case, you're working with not a **list** object but rather a **dict** object or dictionary. A dictionary is like a list, except each item has two parts: a name (or key) and a value. You'll learn more about dictionaries in another module. In your code example, `key` is set to an argument's keyword, and `value` is set to that argument's value.
+In this case, you're not working with a **list** object but with a **dict** object or dictionary. A dictionary is like a list, except each item has two parts: a name (or key) and a value. You'll learn more about dictionaries in another module. In your code example, `key` is set to an argument's keyword, and `value` is set to that argument's value.
 
 When you run the code, you should see the following output:
 

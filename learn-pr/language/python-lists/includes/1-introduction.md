@@ -1,8 +1,8 @@
-Often when you build programs in Python, you need to work with a whole set of data, not just one element. In Python, you can work with a collection of data in several ways.  One of the most simple and versatile ways is the list.  When your data collection is in a list, you can access an individual item or a subset of items, sort and reverse the list order, iterate through the items, and more.
+Often when you build programs in Python, you need to work with a whole set of data, not just one element. In Python, you can work with a collection of data in several ways. One of the simplest and most versatile ways is the list. When your data collection is in a list, you can access an individual item or a subset of items, sort and reverse the list order, iterate through the items, and more.
 
-Suppose you need to keep track of the messages and numeric output that another software system generates.  You want to look through each value, filtering out some values, saving other values, and so on.  In this case, you can manage all of that data in a structure like a list.
+Suppose you need to keep track of the messages and numeric output that another software system generates. You want to look through each value, filtering out some values, saving other values, and so on. In this case, you can manage all of that data in a structure like a list.
 
-In this module, you'll create and initialize values in a list.  You'll access individual elements and entire subsets of values in the list.  You'll call helper functions to perform operations like adding, removing, or sorting items. And you'll use the `for` statement to iterate through your list and operate on each element in the list.
+In this module, you'll create and initialize values in a list. You'll access individual elements and entire subsets of values in the list. You'll call helper functions to perform operations like adding, removing, or sorting items. And you'll use the `for` statement to iterate through your list and operate on each element in the list.
 
 By the end of this module, you'll be able to control the data that you store in a list.
 

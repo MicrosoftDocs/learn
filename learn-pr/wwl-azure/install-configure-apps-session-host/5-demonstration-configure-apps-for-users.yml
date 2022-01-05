@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.demonstration-for-users
+title: How to configure apps for users
+metadata:
+  title: How to configure apps for users
+  description: "How to configure apps for users"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-demonstration-configure-apps-for-users.md)]

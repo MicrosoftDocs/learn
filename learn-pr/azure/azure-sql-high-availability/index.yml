@@ -5,7 +5,7 @@ metadata:
   description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
   ms.date: 08/05/2020
   author: amthomas46
-  ms.author: antho
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy highly available solutions by using Azure SQL

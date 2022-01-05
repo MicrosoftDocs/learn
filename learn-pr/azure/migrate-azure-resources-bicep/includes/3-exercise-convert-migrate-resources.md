@@ -89,8 +89,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 [!INCLUDE [Open VS Code terminal (CLI)](../../includes/azure-template-exercise-terminal-cli.md)]
 
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
-
 [!INCLUDE [Install Bicep (CLI)](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
 
 ::: zone-end
@@ -98,8 +96,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 ::: zone pivot="powershell"
 
 [!INCLUDE [Open VS Code terminal (PowerShell)](../../includes/azure-template-exercise-terminal-powershell.md)]
-
-[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
 [!INCLUDE [Install Bicep (PowerShell)](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
 

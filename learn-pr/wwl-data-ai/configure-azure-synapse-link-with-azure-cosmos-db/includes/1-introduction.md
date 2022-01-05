@@ -1,21 +1,24 @@
-Learn how to leverage Azure Synapse Analytics Link for Cosmos DB to make operational data stored in Azure Cosmos DB available for analytical query from within Azure Synapse using both SQL and Spark.
+Business analysts, data engineers and data scientists can now use Synapse Spark or Synapse SQL interchangeably to run near real-time business intelligence, analytics, and machine learning pipelines. You can achieve this without impacting the performance of your transactional workloads on Azure Cosmos DB.
+
+Azure Synapse Link creates a tight, seamless integration between Azure Cosmos DB and Azure Synapse Analytics. Azure Synapse Link for Azure Cosmos DB is supported for SQL API and Azure Cosmos DB API for MongoDB. This module uses Azure Cosmos DB account configurations for both, highlighting the similarities and differences in their default schema representations.
+  
+## Learning objectives
+
+In this module, you will:
+- Learn how to leverage Azure Synapse Analytics Link for Cosmos DB
+- Make operational data stored in Azure Cosmos DB available for analytical queries from within Azure Synapse using both SQL and Spark
 
 In this module, you will:
 
 - Enable Cosmos DB Account to use Azure Synapse Link
-- Create an analytical store enabled container
+- Create an analytical store-enabled container
 - Implement Synapse Link for Cosmos DB
 - Validate connectivity from Spark
 - Validate connectivity from SQL Serverless 
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
-
-- Have a good understanding of Azure Cosmos DB capabilities
-- Have a working knowledge of SQL or Spark
-- Know how to deploy an Azure Synapse Analytics Workspace
-- Know how to deploy an Azure Cosmos DB Account
-
-> [!Note]
-> Throughout this module and those that follow we are going to be using two Azure Cosmos DB accounts, one configured for Azure Cosmos DB SQL (Core) API and a second account configured for the Azure Cosmos DB API for MongoDB in order to highlight the differences and similarities of the experience, specifically using their different default schema representation modes.
+- Basic knowledge of Azure Cosmos DB capabilities
+- Working knowledge of SQL or Spark
+- Basic knowledge of deploying an Azure Synapse Analytics Workspace
+- Basic knowledge of deploying an Azure Cosmos DB Account

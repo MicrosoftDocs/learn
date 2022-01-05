@@ -4,7 +4,7 @@ In this task, we will review Azure Active Directory licensing and tenants.
 
 1.  In the **Portal**, search for and select **Azure Active Directory**.
 2.  On the **Overview** page, locate the license information.
-3.  Got to the [Azure AD pricing page](https://azure.microsoft.com/pricing/details/active-directory/) and review the features and pricing for each edition.
+3.  Go to the [Azure AD pricing page](https://azure.microsoft.com/pricing/details/active-directory/) and review the features and pricing for each edition.
 4.  On the **Overview** page, discuss creating directories and how to switch between directories.
 5.  Review the **Licenses** blade information.
 

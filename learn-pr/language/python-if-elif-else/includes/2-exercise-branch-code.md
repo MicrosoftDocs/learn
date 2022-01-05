@@ -37,7 +37,7 @@ There are three parts to the `if` statement:
 - The Boolean expression `value == '7'`
 - The required colon `:` character
 
-What comes next is just as important. The next line must contain a code block that runs if the Boolean expression evaluates to `True`. In Python, a code block is defined by using indentation. In this case, we used the <kdb>Tab</kbd> key to insert four individual spaces. This indentation tells the Python interpreter that this code *belongs to* the `if` statement and should run when the Boolean expression evaluates to `True`.
+What comes next is just as important. The next line must contain a code block that runs if the Boolean expression evaluates to `True`. In Python, a code block is defined by using indentation. In this case, we used the Tab key to insert four individual spaces. This indentation tells the Python interpreter that this code *belongs to* the `if` statement and should run when the Boolean expression evaluates to `True`.
 
 If the Boolean expression evaluates to `False`, all of the indented code should be ignored by the Python interpreter.
 
@@ -248,10 +248,10 @@ if second_value == '6': # Intentionally not enough indentation
 ...it's likely you would see the following error message.
 
 ```output
-  File "c:/python/numeric-operations-decisions/exercise2.py", line 65
+  File "c:/python/numeric-operations-decisions/exercise1.py", line 5
     if second_value == '6': # Intentionally not enough indentation
     ^
-IndentationError: expected an indented block
+IndentationError: expected an indented block after 'if' statement on line 4
 ```
 
 ## Recap

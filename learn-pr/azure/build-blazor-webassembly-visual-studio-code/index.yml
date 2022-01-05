@@ -31,7 +31,7 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
+- blazor
 units:
 - learn.build-web-app-blazor-webassembly-vscode.1-introduction
 - learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassembly

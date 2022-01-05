@@ -2,7 +2,7 @@
 
 MJ DePalma, Head of Multicultural and Inclusive Marketing for Microsoft Advertising, defines “Inclusive Marketing as marketing that may highlight or solve for an aspect of diversity where exclusion exists." This description is something that resonates with all of us—by amplifying a common human value like love, family, safety, opportunity, or enduring stories like the struggle of coming of age or the underdog overcoming all obstacles. Inclusive Marketing considers its products, services, or experiences in ways that deeply resonate with people and make them feel seen and accurately understood. Designing campaigns that embody diversity by including people from different backgrounds or relatable stories for unique audiences. While some inclusive campaigns make an effort to break stereotypes, others simply aim to reflect or embrace people in the real world.
 
-Chris Caposella, Chief Marketing Officer of Microsoft, is pioneering Inclusive Marketing, and says, “All of our marketing should be Inclusive Marketing and all of our touchpoints should be inclusive since inclusion fuels growth.”
+Chris Capossela, Chief Marketing Officer of Microsoft, is pioneering Inclusive Marketing, and says, “All of our marketing should be Inclusive Marketing and all of our touchpoints should be inclusive since inclusion fuels growth.”
 
 ## Diversity is integral
 

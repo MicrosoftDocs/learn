@@ -7,7 +7,6 @@ Before we debug the application, let's add more debug diagnostics. Additional di
 At the top of the `Program.cs` file, we'll add a new `using` statement to bring in `System.Diagnostics` so we can use the `Debug` methods.
 
 ```csharp
-using System;
 using System.Diagnostics;
 ```
 
@@ -35,7 +34,7 @@ Debug the application, and you should see the following output:
 ```output
 Entering Fibonacci method
 We are looking for the 5th number
-1 is 1, n1 is 1, n2 is 1
+sum is 1, n1 is 1, n2 is 1
 ```
 
 ## Check for conditions with Assert
@@ -58,8 +57,8 @@ Debug the application. When `Debug.Assert` is run in the code, the debugger stop
 The return value is not 5 and it should be.
 ---- Assert Long Message ----
 
-   at DotNetDebugging.Program.Fibonacci(Int32 n) in C:\Users\jamont\Downloads\DotNetDebugging\Program.cs:line 29
-   at DotNetDebugging.Program.Main(String[] args) in C:\Users\jamont\Downloads\DotNetDebugging\Program.cs:line 10
+   at Program.<<Main>$>g__Fibonacci|0_0(Int32 n) in C:\Users\Jon\Desktop\DotNetDebugging\Program.cs:line 23
+   at Program.<Main>$(String[] args) in C:\Users\Jon\Desktop\DotNetDebugging\Program.cs:line 3
 ```
 
 Stop debugging, and then run the application without debug by entering the following command in the terminal.
@@ -73,8 +72,8 @@ The application is terminated after the assertion has failed and information has
 ```output
 Process terminated. Assertion failed.
 The return value is not 5 and it should be.
-   at DotNetDebugging.Program.Fibonacci(Int32 n) in C:\Users\jamont\Downloads\DotNetDebugging\Program.cs:line 29
-   at DotNetDebugging.Program.Main(String[] args) in C:\Users\jamont\Downloads\DotNetDebugging\Program.cs:line 10
+   at Program.<<Main>$>g__Fibonacci|0_0(Int32 n) in C:\Users\Jon\Desktop\DotNetDebugging\Program.cs:line 23
+   at Program.<Main>$(String[] args) in C:\Users\Jon\Desktop\DotNetDebugging\Program.cs:line 3
 ```
 
 Now, let's run the application in `Release` configuration with the following command in the terminal.

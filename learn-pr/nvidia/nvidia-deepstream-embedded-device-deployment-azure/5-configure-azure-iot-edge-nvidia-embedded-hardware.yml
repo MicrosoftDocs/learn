@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Configure Azure IoT Edge on NVIDIA embedded hardware
   description: Exercise - Configure Azure IoT Edge on NVIDIA embedded hardware.
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
   ms.date: 11/09/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

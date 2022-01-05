@@ -174,8 +174,8 @@ Deploy the template to Azure by running the following commands. The ARM template
 $templateFile = "azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="blanktemplate-"+"$today"
-New-AzResourceGroupDeployment `
-  -Name $deploymentName `
+New-AzResourceGroupDeployment
+  -Name $deploymentName
   -TemplateFile $templateFile
 ```
 

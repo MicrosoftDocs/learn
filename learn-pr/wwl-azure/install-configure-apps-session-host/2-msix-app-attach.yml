@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.install-configure-apps-session-host.msix-app-attach
+title: MSIX app attach
+metadata:
+  title: MSIX app attach
+  description: "MSIX app attach"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-msix-app-attach.md)]

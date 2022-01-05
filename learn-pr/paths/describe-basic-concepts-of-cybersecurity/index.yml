@@ -3,7 +3,7 @@ uid: learn.wwl.describe-basic-concepts-of-cybersecurity
 metadata:
   title: Describe the basic concepts of cybersecurity
   description: Describe the basic concepts of cybersecurity
-  ms.date: 10/22/2021
+  ms.date: 11/24/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -27,5 +27,8 @@ modules:
 - learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 - learn.wwl.describe-concepts-of-cryptography
 - learn.wwl.describe-authentication-authorization-cybersecurity
+- learn.wwl.describe-network-based-threats-mitigations
+- learn.wwl.describe-device-based-threats-security-controls
+- learn.wwl.describe-application-based-threats-security-controls
 trophy:
   uid: learn.wwl.describe-basic-concepts-of-cybersecurity.trophy

@@ -68,8 +68,7 @@ Follow these steps to implement the principle of least privilege for your Azure 
 
 2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
 
-    > [!div class="mx-imgBorder"]
-    > [![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)](../media/new-preview-page.png#lightbox)
+[![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)](../media/new-preview-page.png#lightbox)
 
 3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
 
@@ -77,8 +76,7 @@ Follow these steps to implement the principle of least privilege for your Azure 
 
 To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Azure AD roles in Privileged Identity Management," you can set up an access review for every Azure AD role that has one or more members.
 
-> [!div class="mx-imgBorder"]
-> [![Create an access review pane for Azure AD roles](../media/create-access-review.jpg)](../media/create-access-review.jpg#lightbox)
+[![Create an access review pane for Azure AD roles](../media/create-access-review.jpg)](../media/create-access-review.jpg#lightbox)
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
 
@@ -88,7 +86,7 @@ Access reviews rely on emails to notify people to review their access to the rol
 
 For Azure subscriptions and resources, you can set up a similar Access review process to review the roles in each subscription or resource. The goal of this process is to minimize Owner and User Access Administrator assignments attached to each subscription or resource and to remove unnecessary assignments. However, organizations often delegate such tasks to the owner of each subscription or resource because they have a better understanding of the specific roles (especially custom roles).
 
-If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can [elevate access to manage all Azure subscriptions](/azure/role-based-access-control/elevate-access-global-admin) to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
+If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can [elevate access to manage all Azure subscriptions](/azure/role-based-access-control/elevate-access-global-admin?toc=/azure/active-directory/privileged-identity-management/toc.json) to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
 
 Users with the Owner role for an Azure subscription can also use [access reviews for Azure resources](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) to audit and remove unnecessary role assignments similar to the process described earlier for Azure AD roles.
 

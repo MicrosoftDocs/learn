@@ -38,13 +38,11 @@ The user sign-ins report provides answers to the following questions:
 
 On the Azure portal menu, select **Azure Active Directory**, or search for and select **Azure Active Directory** from any page.
 
-> [!div class="mx-imgBorder"]
-> ![Select Azure Active Directory](../media/select-azure-active-directory.png)
+![Select Azure Active Directory](../media/select-azure-active-directory.png)
 
 Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows Sign-ins selected from the Monitoring menu.](../media/sign-ins-azure-active-directory.png)
+![Screenshot shows Sign-ins selected from the Monitoring menu.](../media/sign-ins-azure-active-directory.png)
 
 It may take up to two hours for some sign-in records to show up in the portal.
 
@@ -65,23 +63,19 @@ A sign-ins log has a default list view that shows the:
 
 - Status of the multifactor authentication (MFA) requirement
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the Office 365 SharePoint Online Sign-ins.](../media/sign-activity.png)
+![Screenshot shows the Office 365 SharePoint Online Sign-ins.](../media/sign-activity.png)
 
 You can customize the list view by clicking Columns in the toolbar.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the Columns option in the Sign-ins page.](../media/columns-option.png)
+![Screenshot shows the Columns option in the Sign-ins page.](../media/columns-option.png)
 
 The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, this is true for authentication details, Conditional Access data, and network location.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the Columns dialog box where you can select attributes.](../media/columns-2.png)
+![Screenshot shows the Columns dialog box where you can select attributes.](../media/columns-2.png)
 
 Select an item in the list view to get more detailed information.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows a detailed information view.](../media/basic-sign.png)
+![Screenshot shows a detailed information view.](../media/basic-sign.png)
 
 Customers can now troubleshoot Conditional Access policies through all sign-in reports. By clicking on the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](/azure/active-directory/reports-monitoring/reports-faq).
 
@@ -89,8 +83,7 @@ Customers can now troubleshoot Conditional Access policies through all sign-in r
 
 First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Azure AD provides you with a broad range of additional filters you can set:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the Add filters option.](../media/add-filters-option.png)
+![Screenshot shows the Add filters option.](../media/add-filters-option.png)
 
 **Request ID** - The ID of the request you care about.
 
@@ -122,8 +115,7 @@ First, narrow down the reported data to a level that works for you. Second, filt
 
 **Client app** - The type of the client app used to connect to your tenant:
 
-> [!div class="mx-imgBorder"]
-> ![Client app filter](../media/client-app-filter.png)
+![Client app filter](../media/client-app-filter.png)
 
 | Name                             | Modern authentication | Description                                                                                                                                                                                    |
 | -------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -162,8 +154,7 @@ First, narrow down the reported data to a level that works for you. Second, filt
 
 Click the **Download** option to create a CSV or JSON file of the most recent 250,000 records. Start with **Download Sign-ins** if you want to work with the data outside the Azure portal.
 
-> [!div class="mx-imgBorder"]
-> ![Download](../media/download-2.png)
+![Download](../media/download-2.png)
 
 > [!IMPORTANT]
 > The number of records you can download is constrained by the [Azure AD report retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
@@ -184,8 +175,7 @@ Azure AD and the Azure portal both provide you with additional entry points to s
 
 The user sign-in graph in the **Identity security protection** overview page shows weekly aggregations of sign-ins. The default for the period is 30 days.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows a graph of Sign-ins over a month.](../media/sign-ins-over-month.png)
+![Screenshot shows a graph of Sign-ins over a month.](../media/sign-ins-over-month.png)
 
 Click on a day in the sign-in graph, you get an overview of the sign-in activities for this day.
 
@@ -228,8 +218,7 @@ By clicking an item, you get more details about the sign-in operation:
 
 On the **Users** page, you get a complete overview of all user sign-ins by clicking **Sign-ins** in the **Activity** section.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the Activity section where you can select Sign-ins.](../media/activity-section.png)
+![Screenshot shows the Activity section where you can select Sign-ins.](../media/activity-section.png)
 
 ## Usage of managed applications
 
@@ -243,18 +232,15 @@ With an application-centric view of your sign-in data, you can answer questions 
 
 The entry point to this data is the top three applications in your organization. The data is contained within the last 30 days report in the **Overview** section under **Enterprise applications**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows where you can select Overview.](../media/select-overview.png)
+![Screenshot shows where you can select Overview.](../media/select-overview.png)
 
 The app-usage graphs weekly aggregations of sign-ins for your top three applications in a given time period. The default time period is 30 days.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot shows the App usage for a one month period.](../media/graph-chart.png)
+![Screenshot shows the App usage for a one month period.](../media/graph-chart.png)
 
 If you want to, you can set the focus on a specific application.
 
-> [!div class="mx-imgBorder"]
-> ![Reporting](../media/single-app-usage-graph.png)
+![Reporting](../media/single-app-usage-graph.png)
 
 When you click on a day in the app usage graph, you get a detailed list of the sign-in activities.
 

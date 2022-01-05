@@ -36,4 +36,4 @@ Bicep provides a simpler syntax to use when you're writing templates. Look at th
 You'll notice that in the Bicep template, the code is smaller in size. The syntax is easier to read and comprehend, and there are no complex expressions like in the JSON template on the right.
 
 > [!NOTE]
-> To view equivalent JSON and Bicep files side by side, see [Bicep Playground](https://bicepdemo.z22.web.core.windows.net).
+> To view equivalent JSON and Bicep files side by side, see [Bicep Playground](https://aka.ms/bicepdemo/).

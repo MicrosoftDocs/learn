@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-partitioning-strategy.combine-multiple-entities-same-container
+title: Combine multiple entities in the same container
+metadata:
+  title: Combine multiple entities in the same container
+  description: "Combine multiple entities in the same container"
+  ms.date: 12/20/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-combine-multiple-entities-same-container.md)]

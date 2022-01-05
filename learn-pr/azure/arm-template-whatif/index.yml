@@ -23,6 +23,8 @@ roles:
   - developer
   - administrator
   - solution-architect
+languages:
+  - bicep
 products:
   - azure
   - azure-clis

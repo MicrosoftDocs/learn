@@ -7,7 +7,8 @@ metadata:
   description: What is testing and why do we test? The purpose of testing can be varied, including catching bugs earlier to shift your development cycle. Basic testing tutorials can get you started, but understanding the concepts behind testing will help build your confidence in your developer tool set.
   ms.date: 6/28/2021
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 3

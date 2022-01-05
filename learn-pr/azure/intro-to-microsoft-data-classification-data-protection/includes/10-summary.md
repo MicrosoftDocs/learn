@@ -10,5 +10,5 @@ You can learn more by reviewing the following articles:
 - [Overview of Customer Key for Microsoft 365 at the tenant level (public preview)](/microsoft-365/compliance/customer-key-tenant-level/?azure-portal=true)
 - [Service encryption with Customer Key](/microsoft-365/compliance/customer-key-overview/?azure-portal=true)
 - [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner/?azure-portal=true)
-- [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security/?azure-portal=true)
+- [Microsoft Defender for Cloud Apps overview](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels/?azure-portal=true)

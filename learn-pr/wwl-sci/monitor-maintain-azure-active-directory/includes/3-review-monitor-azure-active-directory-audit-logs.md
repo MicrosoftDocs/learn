@@ -17,23 +17,19 @@ An audit log has a default list view that shows the:
 
 - Initiator/actor (who) of an activity
 
-> [!div class="mx-imgBorder"]
-> ![Audit logs](../media/list-view.png)
+![Audit logs](../media/list-view.png)
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
-> [!div class="mx-imgBorder"]
-> ![Audit columns](../media/columns.png)
+![Audit columns](../media/columns.png)
 
 This enables you to display additional fields or remove fields that are already displayed.
 
-> [!div class="mx-imgBorder"]
-> ![Remove fields](../media/column-select.png)
+![Remove fields](../media/column-select.png)
 
 Select an item in the list view to get more detailed information.
 
-> [!div class="mx-imgBorder"]
-> ![select item](../media/details.png)
+![select item](../media/details.png)
 
 ## Filtering audit logs
 
@@ -53,8 +49,7 @@ You can filter the audit data on the following fields:
 
 - Date range
 
-> [!div class="mx-imgBorder"]
-> ![Filter object](../media/filter.png)
+![Filter object](../media/filter.png)
 
 The **Service** filter allows you to select from a drop-down list of the following services:
 
@@ -166,8 +161,7 @@ When you select a custom timeframe, you can configure a start time and an end ti
 
 You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Azure AD report retention policies.
 
-> [!div class="mx-imgBorder"]
-> ![Download data](../media/download.png)
+![Download data](../media/download.png)
 
 ## Audit logs shortcuts
 
@@ -199,13 +193,11 @@ With user and group-based audit reports, you can get answers to questions such a
 
 If you want to review only auditing data that is related to users, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
 
-> [!div class="mx-imgBorder"]
-> ![User](../media/users.png)
+![User](../media/users.png)
 
 If you want to review only auditing data that is related to groups, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Groups** tab. This entry point has **GroupManagement** as preselected category.
 
-> [!div class="mx-imgBorder"]
-> ![Filter groups](../media/groups.png)
+![Filter groups](../media/groups.png)
 
 ### Enterprise applications audit logs
 
@@ -223,8 +215,7 @@ With application-based audit reports, you can get answers to questions such as:
 
 If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** blade. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-> [!div class="mx-imgBorder"]
-> ![Enterprise applications](../media/enterprise-applications.png)
+![Enterprise applications](../media/enterprise-applications.png)
 
 ## Microsoft 365 activity logs
 

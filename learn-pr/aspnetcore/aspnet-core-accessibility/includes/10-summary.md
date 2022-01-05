@@ -9,3 +9,5 @@ In this module, you used HTML standards for web accessibility along with Accessi
 - [Introduction to Accessibility Insights for Web video](https://www.youtube.com/watch?v=U6NY8Cxym5g) - Overview of how to use the Accessibility Insights application to solve accessibility issues.
 
 :::image type="content" source="../../../cela-accessibility/digital-accessibility/media/youtube-accinsights-for-web.png" alt-text="Screen shot of title screen for Introduction to Accessibility Insights for Web video.":::
+
+[!include[](../../../includes/dotnet-summary.md)]

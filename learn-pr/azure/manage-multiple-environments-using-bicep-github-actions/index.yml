@@ -41,8 +41,11 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
+  - github
 units:
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.introduction
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments

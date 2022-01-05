@@ -10,4 +10,4 @@ Now you have completed this module, you'll be able to:
 - Write data back to the Azure Cosmos DB transactional store
 - Read data from the transactional store
 
-The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store)
+The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json&tabs=openrowset-key)

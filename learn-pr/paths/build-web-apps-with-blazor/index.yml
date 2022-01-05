@@ -16,11 +16,11 @@ levels:
 - beginner
 - intermediate
 roles:
-- solution-architect
+- developer
 products: 
-- dotnet
+- blazor
 - aspnet-core
-- dotnet-core
+- dotnet
 modules:
 - learn.intro-to-blazor
 - learn.build-web-app-blazor-webassembly-vscode

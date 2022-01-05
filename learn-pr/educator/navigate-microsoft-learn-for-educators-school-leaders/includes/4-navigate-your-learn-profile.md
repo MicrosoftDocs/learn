@@ -8,12 +8,12 @@ Here are some of the main items in your profile:
 
 |          |                                                              |
 |----------|--------------------------------------------------------------|
-| Overview | Overview of your recent activity, bookmarks, and achievements |
-|Activity | All your activities - check here for your in-progress and completed modules and learning paths |
-|Challenges | Tracks participation in the Cloud Skills Challenge (CSC), a gamified experience using Microsoft Learn content that encourages rapid learning of Microsoft technologies |
-|Bookmarks | Modules or learning paths you have bookmarked |
-|Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
+| Activity | All your activities - check here for your in-progress and completed modules and learning paths |
+| Training | Your progression on modules and learning paths that you have started |
+| Certifications | Your Microsoft Certifications profile and dashboard |
+| Q&A | Your following activity for the Q&A platform  — the home for technical questions and answers at Microsoft.  |
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
+|Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
 > [!NOTE]
@@ -23,10 +23,10 @@ Here are some of the main items in your profile:
 
 ## Changing your personal info, username, and URL
 
-You may wish to customize your profile to better fit your personality. You can do this in the Profile settings. 
+You may wish to customize your profile to better fit your personality. You can do this in the **Settings.** 
 
 1. Navigate to your avatar image.
-1. Select **Profile**, then **Settings**.
+1. Select **Settings**.
 1. From here you can change:
     - Profile picture
     - Username/URL
@@ -38,7 +38,7 @@ You may wish to customize your profile to better fit your personality. You can d
 > To enable private mode:
 >
 > 1. Navigate to your avatar image.
-> 1. Select **Profile**, then **Settings**.
+> 1. Select **Settings**.
 > 1. Scroll down to the privacy area and move the slider to the right, then select **Save**.
 > To undo it, move the slider back to the left, then select **Save**.
 
@@ -49,9 +49,8 @@ One important benefit of Learn is that you can have multiple Microsoft accounts 
 No problem, you can do this in the account management area of your settings. To find this setting:
 
 1. Navigate to your avatar image.
-1. Select **Profile**, then **Settings**.
+1. Select **Settings**.
 1. Then choose either **+Add account** or **Remove account**.
-
 
 ## Badges, trophies, and reputation points
 

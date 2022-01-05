@@ -59,7 +59,7 @@ You can also run and debug your project with Visual Studio Code.
 
 You'll now clone your teams existing Blazor app project files from the GitHub repository [https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
 
-1. Delete your BlazingPizza folder, with file explorer or in Visual Studio Code. 
+1. Delete your BlazingPizza folder, with file explorer or in Visual Studio Code.
 
 1. In the terminal, clone the current working files into a new **BlazingPizza** folder.
 
@@ -80,26 +80,25 @@ The team has also created classes to represent the models in the app. Review the
 1. In **Visual Studio Code**, in the explorer expand the **Model** folder, then select **PizzaSpecial**.
 
     ```csharp
-    namespace BlazingPizza
+    namespace BlazingPizza;
+    
+    /// <summary>
+    /// Represents a pre-configured template for a pizza a user can order
+    /// </summary>
+    public class PizzaSpecial
     {
-        /// <summary>
-        /// Represents a pre-configured template for a pizza a user can order
-        /// </summary>
-        public class PizzaSpecial
-        {
-            public int Id { get; set; }
-    
-            public string Name { get; set; }
-    
-            public decimal BasePrice { get; set; }
-    
-            public string Description { get; set; }
-    
-            public string ImageUrl { get; set; }
-    
-            public string GetFormattedBasePrice() => BasePrice.ToString("0.00");
-        }
-    }
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public decimal BasePrice { get; set; }
+
+        public string Description { get; set; }
+
+        public string ImageUrl { get; set; }
+
+        public string GetFormattedBasePrice() => BasePrice.ToString("0.00");
+    }    
     ```
 
 1. Note that a pizza order has a `Name`, `BasePrice`, `Description`, and `ImageUrl`.
@@ -118,20 +117,20 @@ The team has also created classes to represent the models in the app. Review the
 
     ```razor
     @code {
-    List<PizzaSpecial> specials = new();
+        List<PizzaSpecial> specials = new();
 
-    protected override void OnInitialized()
-    {
-      specials.AddRange(new List<PizzaSpecial>
-      {
-        new PizzaSpecial { Name = "The Baconatorizor", BasePrice =  11.99M, Description = "It has EVERY kind of bacon", ImageUrl="img/pizzas/bacon.jpg"},
-        new PizzaSpecial { Name = "Buffalo chicken", BasePrice =  12.75M, Description = "Spicy chicken, hot sauce and bleu cheese, guaranteed to warm you up", ImageUrl="img/pizzas/meaty.jpg"},
-        new PizzaSpecial { Name = "Veggie Delight", BasePrice =  11.5M, Description = "It's like salad, but on a pizza", ImageUrl="img/pizzas/salad.jpg"},
-        new PizzaSpecial { Name = "Margherita", BasePrice =  9.99M, Description = "Traditional Italian pizza with tomatoes and basil", ImageUrl="img/pizzas/margherita.jpg"},
-        new PizzaSpecial { Name = "Basic Cheese Pizza", BasePrice =  11.99M, Description = "It's cheesy and delicious. Why wouldn't you want one?", ImageUrl="img/pizzas/cheese.jpg"},
-        new PizzaSpecial { Name = "Classic pepperoni", BasePrice =  10.5M, Description = "It's the pizza you grew up with, but Blazing hot!", ImageUrl="img/pizzas/pepperoni.jpg" }               
-        });
-      }
+        protected override void OnInitialized()
+        {
+            specials.AddRange(new List<PizzaSpecial>
+            {
+                new PizzaSpecial { Name = "The Baconatorizor", BasePrice =  11.99M, Description = "It has EVERY kind of bacon", ImageUrl="img/pizzas/bacon.jpg"},
+                new PizzaSpecial { Name = "Buffalo chicken", BasePrice =  12.75M, Description = "Spicy chicken, hot sauce, and blue cheese, guaranteed to warm you up", ImageUrl="img/pizzas/meaty.jpg"},
+                new PizzaSpecial { Name = "Veggie Delight", BasePrice =  11.5M, Description = "It's like salad, but on a pizza", ImageUrl="img/pizzas/salad.jpg"},
+                new PizzaSpecial { Name = "Margherita", BasePrice =  9.99M, Description = "Traditional Italian pizza with tomatoes and basil", ImageUrl="img/pizzas/margherita.jpg"},
+                new PizzaSpecial { Name = "Basic Cheese Pizza", BasePrice =  11.99M, Description = "It's cheesy and delicious. Why wouldn't you want one?", ImageUrl="img/pizzas/cheese.jpg"},
+                new PizzaSpecial { Name = "Classic pepperoni", BasePrice =  10.5M, Description = "It's the pizza you grew up with, but Blazing hot!", ImageUrl="img/pizzas/pepperoni.jpg" }               
+            });
+        }
     }
     ```
 
@@ -154,9 +153,9 @@ The team has also created classes to represent the models in the app. Review the
           {
             <li style="background-image: url('@special.ImageUrl')">
               <div class="pizza-info">
-              <span class="title">@special.Name</span>
-              @special.Description
-              <span class="price">@special.GetFormattedBasePrice()</span>
+                  <span class="title">@special.Name</span>
+                      @special.Description
+                    <span class="price">@special.GetFormattedBasePrice()</span>
               </div>
             </li>
           }

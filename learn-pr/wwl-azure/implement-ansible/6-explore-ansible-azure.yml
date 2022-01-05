@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.explore-ansible-azure
+title: Explore Ansible on Azure
+metadata:
+  title: Explore Ansible on Azure
+  description: "Explore Ansible on Azure"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-explore-ansible-azure.md)]

@@ -40,6 +40,12 @@ Notice under task type there are settings _View additional configuration setting
 - **Featurization settings:**
     - **Enable featurization**: Selected - *this causes Azure Machine Learning to automatically preprocess the features before training.*
 
+Click **Next** to go to the next selection pane. 
+
+- **[Optional] Select the validation and test type**
+    - **Validation type**: Auto 
+    - **Test dataset (preview)**: No test dataset required 
+
 3. When you finish submitting the automated ML run details, it will start automatically. Wait for the run status to change from *Preparing* to *Running*.
 4. When the run status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page will automatically refresh periodically, but you can also select **&#8635; Refresh**. It may take ten minutes or so before models start to appear, as the cluster nodes need to be initialized before training can begin.
 5. Wait for the experiment to finish. It may take a while - now might be a good time for a coffee break!

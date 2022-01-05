@@ -1,18 +1,18 @@
 In a distributed application, some messages need to be sent to a single recipient component. Other messages need to reach more than one destination.
 
-Let's describe what happens when a user cancels a pizza order. This is a little different than placing the initial order, where we wanted to wait until the order cleared payment processing before sending the order on to the next steps (which is having it prepared and cooked at the local storefront). For the cancel operation, we are going to notify both the storefront *and* the payment processor at the same time. This approach minimizes the chances that we waste ingredients or delivery driver time.
+Let's describe what happens when a user cancels a bicycle order. This is a little different from placing an initial order, where our workflow wanted to wait until the order cleared payment processing before sending the order to the local storefront. For the cancel operation, we are going to notify both the storefront *and* the payment processor at the same time. This approach minimizes the chances that we waste delivery driver time.
 
-To allow multiple components to receive the same message, we'll use an Azure Service Bus topic.
+To allow multiple components to receive the same message, we'll use an Azure Service Bus _topic_.
 
 ## Code with topics versus code with queues
 
-If you want every message sent to be delivered to all subscribing components, you'll use topics. Writing code that uses topics is a way to replace queues. You will use the same **Microsoft.Azure.ServiceBus** NuGet package, configure connection strings, and use asynchronous programming patterns.
+If you want every message sent to be delivered to all subscribing components, you'll use topics. Writing code that uses topics is a way to replace queues. You will use the same **Azure.Messaging.ServiceBus** NuGet package, configure connection strings, and use asynchronous programming patterns.
 
-However, you'll use the `TopicClient` class instead of the `QueueClient` class to send messages and the `SubscriptionClient` class to receive messages.
+You'll also use the same `ServiceBusClient` class `ServiceBusSender` classes to send messages and the `ServiceBusProcessor` class to receive messages.
 
 ## Set filters on subscriptions
 
-If you want to control specific messages that are sent to the topic are delivered to particular subscriptions, you can place filters on each subscription in the topic. In the pizza application, for instance, our storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the "OrderCancellation" topic and filter for its own StoreId. We save internet bandwidth because we are not sending unnecessary messages to distant store locations. Meanwhile, the payment processing component subscribes to all OrderCancellation messages.
+If you want certain messages sent to the topic are delivered to a particular subscription, you can place one or more filters on the subscription in the topic. In the bicycle application, for instance, our storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the "OrderCancellation" topic and filter for its own StoreId. We save internet bandwidth because we are not sending unnecessary messages to multiple store locations. Meanwhile, the payment processing component subscribes to all OrderCancellation messages.
 
 Filters can be one of three types:
 
@@ -22,44 +22,59 @@ Filters can be one of three types:
 
 For our StoreId filter, we *could* use a SQL filter. SQL filters are the most flexible, but they're also the most computationally expensive and could slow down our Service Bus throughput. In this case, we choose a correlation filter.
 
-## TopicClient example
+## Write code that sends messages to a topic
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus topic.
 
 ```C#
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
+using Azure.Messaging.ServiceBus;
 ```
 
-To send a message, start by creating a new `TopicClient` object, and passing it the connection string and the name of the topic.
+To send a message, start by creating a new `ServiceBusClient` object, and passing it the connection string and the name of the topic.
 
 ```C#
-topicClient = new TopicClient(TextAppConnectionString, "GroupMessageTopic");
+await using var client = new ServiceBusClient(connectionString);
 ```
 
-You can send a message to the topic by calling the `TopicClient.SendAsync()` method and passing the message. As with queues, the message must be in the form of a UTF-8 encoded string.
+Then, create a `ServiceBusSender` object by invoking the CreateSender method on the ServiceBusClient object, and specifying the topic name. 
 
-```C#
-string message = "Cancel! I can't believe you use canned mushrooms!";
-var encodedMessage = new Message(Encoding.UTF8.GetBytes(message));
-await topicClient.SendAsync(encodedMessage);
+```csharp
+ServiceBusSender sender = client.CreateSender(topicName);
 ```
 
-To receive messages, you must create a `SubscriptionClient` object, not a `TopicClient` object, and pass it the connection string, the name of the topic, **and** the name of the subscription.
+You can send a message to the topic by calling the ServiceBusSender.SendMessageAsync() method, and passing a ServiceBusMessage. As with queues, the message must be in the form of a UTF-8 encoded string.
 
 ```C#
-subscriptionClient = new SubscriptionClient(ServiceBusConnectionString, "GroupMessageTopic", "NorthAmerica");
+string message = "Cancel! I have changed my mind!";
+var message = new ServiceBusMessage(message);
+
+// send the message to the topic
+await sender.SendMessageAsync(message);
 ```
 
-Then, register a message handler - this is the asynchronous method in your code that processes the retrieved message.
+## Write code that receives messages from a subscription of the topic
+
+To receive messages, you must create a `ServiceBusProcessor` object, and pass it the topic name and the subscription name.
 
 ```C#
-subscriptionClient.RegisterMessageHandler(MessageHandler, messageHandlerOptions);
+processor = client.CreateProcessor(topicName, subscriptionName, options);
 ```
 
-Within the message handler, call the `SubscriptionClient.CompleteAsync()` method to remove the message from the queue.
+Then, register a message handler and an error handler. 
+
+```csharp
+// specify handler method for messages
+processor.ProcessMessageAsync += MessageHandler;
+
+// specify handler method for errors
+processor.ProcessErrorAsync += ErrorHandler;
+```
+
+Within the message handler, do your processing work. Then, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the subscription.
 
 ```C#
-await subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+// complete the message. messages is deleted from the subscription. 
+await args.CompleteMessageAsync(args.Message);
 ```

@@ -49,7 +49,7 @@ Now, you'll get the source code from GitHub and set up Visual Studio Code so tha
 
 ### Create a fork
 
-The first step to using a project in Git is to create a forso you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and enables you to make any changes you want without affecting the original project.
+The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and enables you to make any changes you want without affecting the original project.
 
 Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it were the original project owned by Mara and her team.
 

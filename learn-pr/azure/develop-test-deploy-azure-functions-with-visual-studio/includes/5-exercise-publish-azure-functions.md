@@ -1,6 +1,6 @@
 The **Publish** wizard in the Azure Functions template provides the most straightforward way to deploy Azure Functions, especially for testing purposes.
 
-In the luxury watch online website scenario, you've decided to use Visual Studio to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
+In the luxury watch online website scenario, you've decided to use Visual Studio 2019 to deploy functions to an Azure Function App in the cloud. First, you'll create an Azure Function App, and then use the Visual Studio **Publish** wizard to deploy the functions you create.
 
 In this exercise, you'll use the Azure portal to create an Azure Function App. Then, you'll deploy the **WatchInfo** function using the Visual Studio project that you created in a previous exercise. Lastly, you'll test the function to verify that it has been deployed correctly.
 
@@ -26,9 +26,9 @@ In this exercise, you'll use the Azure portal to create an Azure Function App. T
 
     > [!NOTE]
     > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
-"
+
     | Setting | Value |
-    | --- | --- |
+    | ------- | ----- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
     | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn>. |

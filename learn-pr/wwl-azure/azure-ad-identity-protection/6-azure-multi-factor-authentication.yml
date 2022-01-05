@@ -4,13 +4,13 @@ title: Deploy multifactor authentication in Azure
 metadata:
   title: Deploy multifactor authentication in Azure
   description: "Deploy multifactor authentication in Azure"
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/6-azure-multi-factor-authentication.md)]

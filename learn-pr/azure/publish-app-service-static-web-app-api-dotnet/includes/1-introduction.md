@@ -24,7 +24,7 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 - **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users
 - **Integrated API** support provided by Azure Functions
-- **First-class GitHub and Azure DevOps integration** where repository changes trigger builds and deployments.
+- **First-class GitHub and Azure DevOps integration** where repository changes trigger builds and deployments
 - **Free SSL certificates**, which are automatically renewed
 - **Unique preview URLs** for previewing pull requests
 

@@ -1,16 +1,16 @@
-Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. From there, you'll extend the API with a new function using the Azure Functions extension for Visual Studio Code.
+Your shopping list web app needs an API. In this exercise, you'll build and run your API using an Azure Functions project. From there, you'll extend the API with a new function using the Azure Functions extension for Visual Studio.
 
 In this exercise, you'll complete the following steps:
 
 1. Create a branch as you prepare to make changes to your web app.
-1. Explore the Azure Function project.
+1. Explore the Azure Functions project.
 1. Create the HTTP GET function.
 1. Replace the function starter code with logic to get products.
 1. Configure the web app to proxy HTTP requests to the API.
 1. Run the API and the web app.
 
 > [!NOTE]
-> Ensure you have set up [Azure Functions for Visual Studio](/azure/azure-functions/functions-develop-vs).
+> Ensure you've configured Visual Studio for [Azure development with .NET](/dotnet/azure/configure-visual-studio).
 
 ## Get the function app
 
@@ -36,7 +36,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 1. In Visual Studio, right-click the **Api** project, and then select **Add** > **New Azure Function**.
 
-1. Enter *ProductsGet* as the name of the function.
+1. Enter *ProductsGet.cs* as the name of the function file.
 
 1. Select **Http trigger** as the function type.
 
@@ -46,7 +46,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 :::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function.":::
 
-You just extended your Azure Function app with a function to get your products!
+You just extended your Azure Functions app with a function to get your products!
 
 ### Configure the HTTP Method and route endpoint
 
@@ -59,7 +59,7 @@ Now, your function is triggered on an HTTP `GET` request to **products**. Your `
 ```csharp
 [FunctionName("ProductsGet")]
 public static async Task<IActionResult> Run(
-    [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
+    [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
     ILogger log)
 ```
 
@@ -76,30 +76,29 @@ Now, change the function endpoint to return the products:
 1. Replace its contents with the following code:
 
     ```csharp
-    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.WebJobs;
     using Microsoft.Azure.WebJobs.Extensions.Http;
-    using Microsoft.AspNetCore.Http;
+    using System.Threading.Tasks;
 
-    namespace Api
+    namespace Api;
+
+    public class ProductsGet
     {
-        public class ProductsGet
+        private readonly IProductData productData;
+
+        public ProductsGet(IProductData productData)
         {
-            private readonly IProductData productData;
+            this.productData = productData;
+        }
 
-            public ProductsGet(IProductData productData)
-            {
-                this.productData = productData;
-            }
-
-            [FunctionName("ProductsGet")]
-            public async Task<IActionResult> Run(
-                [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
-            {
-                var products = await productData.GetProducts();
-                return new OkObjectResult(products);
-            }
+        [FunctionName("ProductsGet")]
+        public async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
+        {
+            var products = await productData.GetProducts();
+            return new OkObjectResult(products);
         }
     }
     ```
@@ -112,11 +111,12 @@ You won't have to worry about Cross-Origin Resource Sharing (CORS) when you publ
 
 Now, prompt Azure Functions to allow your web app to make HTTP requests to the API on your computer.
 
-1. Create a file named *launchSettings.json* in the **Properties** folder of the **Api** project.
+1. Open the file named *launchSettings.json* in the **Properties** folder of the **Api** project.
+    - If the file doesn't exist, create it.
 
-1. Add the following contents to the file:
+1. Update the contents of the file to the following:
 
-   ```json
+    ```json
     {
         "profiles": {
             "Api": {
@@ -125,14 +125,14 @@ Now, prompt Azure Functions to allow your web app to make HTTP requests to the A
             }
         }
     }
-   ```
+    ```
 
 > [!NOTE]
 > This file is used to control how Visual Studio will launch the Azure Functions tooling. If you're wanting to use the Azure Functions command line tool, you need a *local.settings.json* file described in the [Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. Also, this is why you had to create the file when you created your repo from the template.
 
 ### Run the API and web app
 
-Now, it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally:
+Now, it's time to watch your web app and Azure Functions project work together.
 
 1. In Visual Studio, right-click the **ShoppingList** solution.
 

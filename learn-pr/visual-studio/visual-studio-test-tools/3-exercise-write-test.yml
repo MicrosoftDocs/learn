@@ -6,7 +6,8 @@ metadata:
   title: Exercise - Write a test
   description: Build out a sample app by adding a test project, adding references, and writing asserts in your first test.
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.date: 07/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio

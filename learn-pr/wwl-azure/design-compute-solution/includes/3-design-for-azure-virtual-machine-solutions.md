@@ -71,7 +71,7 @@ There are two separate costs the subscription will be charged for every VM: comp
 
 - **Compute costs** - Compute expenses are priced on a per-hour basis but billed on a per-minute basis. For example, you’re only charged for 55 minutes of usage if the VM is deployed for 55 minutes. You’re not charged for compute capacity if you stop and deallocate the VM. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the VM size and OS you select.
 
-- **Storage costs** - You’re charged separately for the storage the VM uses. The status of the VM has no relation to the storage charges that will be incurred. You are always charged for storage used by the disks. There are two pricing models for VM storage are pay-as-you-go and [Azure reserved instances](https://azure.microsoft.com/pricing/reserved-vm-instances/). 
+- **Storage costs** - You’re charged separately for the storage the VM uses. The status of the VM has no relation to the storage charges that will be incurred. You are always charged for storage used by the disks. 
 
 ### Review the storage options
 

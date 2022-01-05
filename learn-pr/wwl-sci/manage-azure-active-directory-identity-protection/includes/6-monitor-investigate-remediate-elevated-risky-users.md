@@ -16,8 +16,7 @@ Selecting individual entries may enable additional entries at the top of the rep
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
-> [!div class="mx-imgBorder"]
-> ![Example Identity Protection report showing risky sign-ins and details](../media/identity-protection-risky-sign-ins-report.png)
+![Example Identity Protection report showing risky sign-ins and details](../media/identity-protection-risky-sign-ins-report.png)
 
 ### Risky users
 
@@ -278,7 +277,7 @@ If successful, this request returns an authentication token.To call the API, cr
 
 When authenticating, you can find the token type and access token in the returned token.
 
-Send this header as a request to the following API URL: `https://graph.microsoft.com/v1.0/identityProtection/riskDetections`
+Send this header as a request to the following API URL: https://graph.microsoft.com/v1.0/identityProtection/riskDetections
 
 The response, if successful, is a collection of identity risk detections and associated data in the OData JSON format, which can be parsed and handled as you see fit.
 
@@ -346,3 +345,4 @@ To understand the impact Identity Protection risk-based policies have on your or
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
 
 ```
+

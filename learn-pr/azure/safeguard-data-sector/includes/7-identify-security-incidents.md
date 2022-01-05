@@ -14,7 +14,7 @@ In line with the EU GDPR requirements, Microsoft will notify customers, Data Pro
 
 Most Azure security and privacy investigations don't result in declared security incidents. The overwhelming majority of external threats don't lead to breaches of customer or personal data because of extensive platform security measures that Microsoft has in place. Microsoft has deployed extensive monitoring and diagnostics infrastructure throughout Azure that relies on big-data analytics and machine learning to get insight into the platform health, including real-time threat intelligence. While Microsoft takes all platform attacks seriously, it would be impractical to notify customers of potential attacks at the platform level.
 
-Microsoft will notify customers of any breach of customer or personal data within 72 hours of incident declaration. Customers can monitor potential threats and respond to incidents on their own using Azure Security Center.
+Microsoft will notify customers of any breach of customer or personal data within 72 hours of incident declaration. Customers can monitor potential threats and respond to incidents on their own using Microsoft Defender for Cloud.
 
 ## Shared responsibility
 

@@ -91,13 +91,13 @@ In Azure SQL Database, you can't set the server collation. It's set at the defau
 
 Other options are available. Examples are character widths and UTF-8 encoding. You can find more details about what you can and can't do with Azure SQL in the documentation. (Search for "collation and unicode support.")
 
-### Opt-in for Azure Defender
+### Opt-in for Microsoft Defender for Cloud
 
-When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Azure Defender in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. 
+When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Microsoft Defender for Cloud in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Microsoft Defender for Cloud Standard Tier pricing. 
 
 After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
 
-In Azure SQL Managed Instance, you can enable Azure Defender on the instance after deployment.  
+In Azure SQL Managed Instance, you can enable Microsoft Defender for Cloud on the instance after deployment.  
 
 ### Review of selections
 

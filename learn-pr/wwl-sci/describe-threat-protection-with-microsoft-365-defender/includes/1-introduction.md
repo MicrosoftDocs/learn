@@ -6,4 +6,5 @@ At the end of this module, you’ll be able to:
 
 - Describe the Microsoft 365 Defender service.
 - Describe how Microsoft 365 Defender provides integrated protection against sophisticated attacks.
-- Describe how Microsoft Cloud App Security can help defend your data and assets. 
+- Describe how Microsoft Defender for Cloud Apps can help defend your data and assets.
+

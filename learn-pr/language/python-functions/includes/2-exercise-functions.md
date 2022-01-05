@@ -93,7 +93,7 @@ When called, the function receives the string `'Bob'` that was passed as an argu
 
 When you run the code, you should see the following output:
 
-```
+```output
 Hello Bob!
 ```
 
@@ -171,6 +171,7 @@ Run this line of code:
 ```python
 print(type(None))
 ```
+
 You should see the following output:
 
 ```output
@@ -231,7 +232,7 @@ def create_deck():
   ranks = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
   deck = []
 
-  for  suit in suits:
+  for suit in suits:
     for rank in ranks:
       deck.append(f'{rank} of {suit}')
 

@@ -17,8 +17,8 @@ In this exercise, you'll add packages to support our database functionality, con
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.1" />
         <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
       </ItemGroup>
     ```
@@ -32,18 +32,16 @@ In this exercise, you'll add packages to support our database functionality, con
     ```csharp
     using Microsoft.EntityFrameworkCore;
     
-    namespace BlazingPizza
+    namespace BlazingPizza;
+    
+    public class PizzaStoreContext : DbContext
     {
-      public class PizzaStoreContext : DbContext
-      {
-        public PizzaStoreContext(
-            DbContextOptions options) : base(options)
+        public PizzaStoreContext(DbContextOptions options) : base(options)
         {
         }
 
         public DbSet<PizzaSpecial> Specials { get; set; }
-      }
-    }
+    }    
     ```
 
     This class creates a database context we can use to register a database service. The context will also allow us to have a controller that will access the database.
@@ -54,30 +52,26 @@ In this exercise, you'll add packages to support our database functionality, con
 1. Enter this code for the class.
 
     ```csharp
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
     
-    namespace BlazingPizza
+    namespace BlazingPizza;
+
+    [Route("specials")]
+    [ApiController]
+    public class SpecialsController : Controller
     {
-        [Route("specials")]
-        [ApiController]
-        public class SpecialsController : Controller
+        private readonly PizzaStoreContext _db;
+
+        public SpecialsController(PizzaStoreContext db)
         {
-            private readonly PizzaStoreContext _db;
-    
-            public SpecialsController(PizzaStoreContext db)
-            {
-                _db = db;
-            }
-    
-            [HttpGet]
-            public async Task<ActionResult<List<PizzaSpecial>>> GetSpecials()
-            {
-                return (await _db.Specials.ToListAsync()).OrderByDescending(s => s.BasePrice).ToList();
-            }
+            _db = db;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<PizzaSpecial>>> GetSpecials()
+        {
+            return (await _db.Specials.ToListAsync()).OrderByDescending(s => s.BasePrice).ToList();
         }
     }
     ```
@@ -95,73 +89,72 @@ The app will check to see if there's an existing SQLite database, and create one
 1. Enter this code for the class.
 
     ```csharp
-    namespace BlazingPizza
+    namespace BlazingPizza;
+
+    public static class SeedData
     {
-        public static class SeedData
+        public static void Initialize(PizzaStoreContext db)
         {
-            public static void Initialize(PizzaStoreContext db)
+            var specials = new PizzaSpecial[]
             {
-                var specials = new PizzaSpecial[]
+                new PizzaSpecial()
                 {
-                    new PizzaSpecial()
-                    {
-                        Name = "Basic Cheese Pizza",
-                        Description = "It's cheesy and delicious. Why wouldn't you want one?",
-                        BasePrice = 9.99m,
-                        ImageUrl = "img/pizzas/cheese.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 2,
-                        Name = "The Baconatorizor",
-                        Description = "It has EVERY kind of bacon",
-                        BasePrice = 11.99m,
-                        ImageUrl = "img/pizzas/bacon.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 3,
-                        Name = "Classic pepperoni",
-                        Description = "It's the pizza you grew up with, but Blazing hot!",
-                        BasePrice = 10.50m,
-                        ImageUrl = "img/pizzas/pepperoni.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 4,
-                        Name = "Buffalo chicken",
-                        Description = "Spicy chicken, hot sauce and bleu cheese, guaranteed to warm you up",
-                        BasePrice = 12.75m,
-                        ImageUrl = "img/pizzas/meaty.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 5,
-                        Name = "Mushroom Lovers",
-                        Description = "It has mushrooms. Isn't that obvious?",
-                        BasePrice = 11.00m,
-                        ImageUrl = "img/pizzas/mushroom.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 7,
-                        Name = "Veggie Delight",
-                        Description = "It's like salad, but on a pizza",
-                        BasePrice = 11.50m,
-                        ImageUrl = "img/pizzas/salad.jpg",
-                    },
-                    new PizzaSpecial()
-                    {
-                        Id = 8,
-                        Name = "Margherita",
-                        Description = "Traditional Italian pizza with tomatoes and basil",
-                        BasePrice = 9.99m,
-                        ImageUrl = "img/pizzas/margherita.jpg",
-                    },
-                };
-                db.Specials.AddRange(specials);
-                db.SaveChanges();
-            }
+                    Name = "Basic Cheese Pizza",
+                    Description = "It's cheesy and delicious. Why wouldn't you want one?",
+                    BasePrice = 9.99m,
+                    ImageUrl = "img/pizzas/cheese.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 2,
+                    Name = "The Baconatorizor",
+                    Description = "It has EVERY kind of bacon",
+                    BasePrice = 11.99m,
+                    ImageUrl = "img/pizzas/bacon.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 3,
+                    Name = "Classic pepperoni",
+                    Description = "It's the pizza you grew up with, but Blazing hot!",
+                    BasePrice = 10.50m,
+                    ImageUrl = "img/pizzas/pepperoni.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 4,
+                    Name = "Buffalo chicken",
+                    Description = "Spicy chicken, hot sauce and bleu cheese, guaranteed to warm you up",
+                    BasePrice = 12.75m,
+                    ImageUrl = "img/pizzas/meaty.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 5,
+                    Name = "Mushroom Lovers",
+                    Description = "It has mushrooms. Isn't that obvious?",
+                    BasePrice = 11.00m,
+                    ImageUrl = "img/pizzas/mushroom.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 7,
+                    Name = "Veggie Delight",
+                    Description = "It's like salad, but on a pizza",
+                    BasePrice = 11.50m,
+                    ImageUrl = "img/pizzas/salad.jpg",
+                },
+                new PizzaSpecial()
+                {
+                    Id = 8,
+                    Name = "Margherita",
+                    Description = "Traditional Italian pizza with tomatoes and basil",
+                    BasePrice = 9.99m,
+                    ImageUrl = "img/pizzas/margherita.jpg",
+                },
+            };
+            db.Specials.AddRange(specials);
+            db.SaveChanges();
         }
     }
     ```
@@ -170,13 +163,13 @@ The app will check to see if there's an existing SQLite database, and create one
 
 1. Press <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **SeedData.cs**, then select **Save**.
 1. In the explorer, select **Program.cs**.
-1. At the top, add a reference to a new package.
+1. At the top, add a reference to a new `PizzaStoreContext`.
 
     ```csharp
-    using Microsoft.Extensions.DependencyInjection;
+    using BlazingPizza;
     ```
 
-    This statement allows the app to use dependency injection to register new services.
+    This statement allows the app to use our new service.
 
 1. Insert this segment just above the `app.Run();` method:
 
@@ -203,9 +196,9 @@ The app will check to see if there's an existing SQLite database, and create one
 1. In the `Add Services to the container` section higher in the `Program.cs` file, add this code under the current services:
 
     ```csharp
-      builder.services.AddHttpClient();
-      builder.services.AddDbContext<PizzaStoreContext>(options => 
-          options.UseSqlite("Data Source=pizza.db"));
+      builder.Services.AddHttpClient();
+      builder.Services.AddSqlite<PizzaStoreContext>("Data Source=pizza.db");
+
     ```
 
     This code registers two services. The first `AddHttpClient` statement will allow the app to access HTTP commands, the app will use an HttpClient to get the JSON for pizza specials. The second registers the new `PizzaStoreContext` and provides the filename for the SQLite database.

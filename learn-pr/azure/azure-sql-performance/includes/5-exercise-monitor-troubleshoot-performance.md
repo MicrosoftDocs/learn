@@ -2,7 +2,7 @@ In this exercise, you will learn how to monitor and troubleshoot a performance p
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-In the terminal on the right, you'll see Azure Cloud Shell, which provides a way to interact with Azure by using a browser. Before you start the labs, you will run a script there in order to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. In the script, you're prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+The terminal session on the right, Azure Cloud Shell, enables you to interact with Azure by using a browser. For this exercise, you will run a script to create your environment, an instance of Azure SQL Database with the `AdventureWorks` database. In the script, you're prompted for a password and your local IP address to enable your device to connect to the database.  
 
 This script takes 3-5 minutes to complete. Make sure to note your password, unique ID, and region. These won't be shown again.
 
@@ -12,24 +12,23 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in Azure Cloud Shell on the right. Fill in a complex password and, when prompted, enter your local public IP address you retrieved.
+1. In Azure Cloud Shell on the right, enter the following code, and when prompted, provide a complex password and your local public IP address you retrieved in the previous step. Press <kbd>Enter</kbd> to run the last line of the script.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
     # Prompt for local ip address
-    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
+    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address':"
     # Get resource group and location and random string
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
     $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
-    # The logical server name has to be unique in the system
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (for example, in a text file) the information you'll need throughout the module by running the following script in Cloud Shell.  You'll likely need to press `ENTER` after you paste in the code, because the last line won't be run by default.
+1. Run the following script in Azure Cloud Shell. Save the output; you'll need this information throughout the module.  Press <kbd>Enter</kbd> after you paste in the code, so the last line of code prints the output you need.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -43,9 +42,9 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     ```
 
     > [!TIP]
-    > Don't forget to note your password, unique ID, and server. You will need these items throughout the module.
+    > Save the output, and note your password, unique ID, and server. You will need these items throughout the module.
 
-1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script also adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in future units (this is to be consistent with other units).
+1. Run the following script to deploy an instance of Azure SQL Database and a logical server with the `AdventureWorks` sample. This script adds your IP address as a firewall rule, enables Advanced Data Security, and creates a storage account for use in the  remaining exercises in this module. The script can take several minutes to complete, and will pause several times. Wait for a command prompt. 
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -86,15 +85,22 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
         -Type "Standard_LRS"
     ```
 
-1. On your local device, open SQL Server Management Studio (SSMS) and create a new connection to your logical server.  
+1. On your local device, open SQL Server Management Studio (SSMS) to create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was shown from Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
+1. On the Connect to Server login dialog box, provide the following information:
 
-    Change the authentication to **SQL Server Authentication**, and input the corresponding sign-in and password you provided for the script.  
+    | Field | Value |
+    |---|---|
+    |Server type | *Database Engine* (default). |
+    |Server name | The $serverName that was returned in the Cloud Shell, plus the rest of the URI. For example: *aw-server`<unique ID>`.database.windows.net*.|
+    |Authentication | *SQL Server Authentication* (default). |
+    | Login | *cloudadmin* The adminSqlLogin assigned in step 1 of this exercise. |
+    | Password | The password you provided in step 1 of this exercise. | 
+    | Remember password | checked |
 
-    Select **Remember password** > **Connect**.  
+1. Select **Connect**.  
 
-    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Screenshot of connecting to Azure SQL Database in SSMS."::: 
+    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Screenshot of connection dialog for SQL Database in SSMS."::: 
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address the Azure portal used during deployment. If it does, you'll get the following message: "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in by using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the wizard in SSMS.  
@@ -123,12 +129,12 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
 1. Edit the script **sqlworkload.cmd** (which will use the ostress.exe program).
 
-    - Substitute your `unique_id` that you saved from the deployment script to put in the correct server name.
-    - Substitute the password for the sign-in for the Azure SQL Database server for the `-P parameter`.
+    - Substitute your `unique_id` that you saved from the deployment script in the server name.
+    - Substitute the password you used for the sign-in for the Azure SQL Database server for the `-P parameter`.
 
 ## Run the workload
 
-Now you will run a workload of a T-SQL query to observe its performance simulating concurrent users.
+In this task, you will run a workload in a T-SQL query to observe its performance simulating concurrent users.
 
 1. Use SSMS to open the script file **topcustomersales.sql** to observe the query. You won't run the query from SSMS. Your query editor window should look like the following text:
 
@@ -153,9 +159,9 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
     GO
     ```
 
-    This database isn't large. The query to retrieve the customer and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns from the result set, but these are needed for demonstration purposes of this exercise.
+    This database is small. The query to retrieve a list of customers and their associated sales information, ordered by customers with the most sales, shouldn't generate a large result set. It's possible to tune this query by reducing the number of columns in the result set, but these are needed for demonstration purposes of this exercise.
 
-1. From a PowerShell command prompt, change to the directory for this exercise:
+1. From a PowerShell command prompt, enter the following command to move to the correct directory for this exercise. Replace `<base directory>` with your user ID and path for this module :
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
@@ -172,7 +178,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
     > [!TIP]
     > If you're not seeing CPU usage behavior with this workload for your environment, you can adjust the `-n parameter` for number of users and the `-r parameter` for iterations.
 
-    Your screen at the command prompt should look similar to the following output:
+    The output at the command prompt should look similar to the following output:
 
     ```output
     [datetime] [ostress PID] Max threads setting: 10000
@@ -205,7 +211,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
 
 ## Observe performance of the workload
 
-Let's now use the DMV queries you loaded earlier to observe performance.
+Let's use the DMV queries you loaded earlier to observe performance.
 
 1. Run the query in SSMS you previously loaded to monitor `dm_exec_requests` (dmexecrequests.sql) to observe active requests. Run this query five or six times and observe some of the results:
 
@@ -280,7 +286,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-workload-query-plan-inline.png" alt-text="Screenshot of the workload query plan." lightbox="../media/5-ssms-workload-query-plan-expanded.png":::
 
-    Because of the small number of rows in the tables in this database, this query plan isn't inefficient. There might be some tuning opportunities, but you won't gain much performance by tuning the query itself. You might see a warning in the plan about a lack of statistics for one of the columns in the query for the clustered index seek. This doesn't factor into overall performance.
+    This database table has so few rows that it does not need a plan--it can be inefficient. Tuning the query won't improve performance by a measurable amount. You might see a warning in the plan about a lack of statistics for one of the columns for the clustered index seek. This doesn't factor into overall performance.
 
 1. Below the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query Store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
 
@@ -288,41 +294,44 @@ Query Store comes with a series of system catalog views to view performance data
 
     You can see the top wait category is CPU (this is equivalent to the `wait_type` SOS_SCHEDULER_YIELD, which can be seen in `sys.dm_os_wait_stats`), and the average wait time.
 
-1. Select the CPU bar chart in the report. The top query waiting for CPU is the query from the workload that you're using.
+1. Select the CPU bar chart in the report. The top query, waiting for CPU, is the query from the workload that you're using.
 
     :::image type="content" source="../media/5-ssms-top-wait-stats-query.png" alt-text="Screenshot of the top wait statistics query." lightbox="../media/5-ssms-top-wait-stats-query.png":::
 
-    Notice that the average wait time for CPU for this query is a high percentage of the overall average duration for the query.
+    Notice that the average wait time for CPU in this query is a high percentage of the overall average duration for the query.
 
-    Considering the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our instance of Azure SQL Database.
+    Considering the evidence, without any query tuning, our workload requires more CPU capacity than we have deployed for our instance of Azure SQL Database.
 
-1. You can close both Query Store reports for now. You'll use the same reports in the next exercise.
+1. Close both Query Store reports. You'll use the same reports in the next exercise.
 
 ## Observe performance with Azure Monitor
 
-Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including the Azure portal.
+Let's use another method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including via the Azure portal.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) for your deployment. Find the instance of Azure SQL Database deployed. On the **Overview** for a database, the default view in the **Monitoring** pane is called **Compute Utilization**:
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true), and then find your instance of the AdventureWorks SQL database. The default view on the **Overview** pane for the database, the default view in the **Monitoring** pane is  **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Screenshot of the Azure portal with a slow query.":::
 
-    Notice in this example, the CPU utilization is near 100 percent for a recent time range. This chart shows resource usage (CPU and I/O are the defaults) over the last hour, and it's refreshed continually. If you select the chart, you can customize it and look at other resource usage.
+    In this example, the CPU utilization is near 100 percent for a recent time range. This chart shows resource usage (CPU and I/O are defaults) over the last hour, and it's refreshed continually. Select the chart so you can customize it to look at other resource usage.
 
-1. On the **Resource** menu, select **Metrics**. There's another way to see the same compute utilization metrics and other metrics automatically collected by Azure Monitor for Azure SQL Database. In the Azure portal, from the **Resources** pane, under **Monitoring**, use **Metrics Explorer**. (Note that **Compute Utilization** is just a pre-defined view of the **Metrics Explorer**.) If you select **Metrics**, you'll see the following results:
+1. On the SQL database menu, select **Metrics**. Another way to view the **Compute Utilization** metrics and other metrics that are automatically collected by Azure Monitor for Azure SQL Database  is to use **Metrics Explorer**. 
+ 
+    > [!NOTE]
+    > **Compute Utilization** is a pre-defined view of the **Metrics Explorer**. If you select **Metrics**, you'll see the following results:
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Screenshot of Azure Monitor metrics.":::
 
-    As you can see in the screenshot, there are several metrics you can use to view with Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period, with a 5-minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select **CPU percentage** and change the capture for 1 hour. The granularity will change to 1 minute and should look like the following image:
+    As shown in the screenshot, there are several metrics you can use to view with Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period, with a 5-minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select **CPU percentage** and change the capture for 1 hour. The granularity will change to 1 minute and should look like the following image:
 
-    :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Screenshot of Azure Monitor metrics, including CPU after 1 minute.":::
+    :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Screenshot of Azure Monitor metrics, including CPU after 1 minute." lightbox="../media/5-azure-monitor-metrics-cpu.png" :::
 
-    The default is a line chart, but the Explorer view allows you to change the chart type. There are various options with Metrics Explorer, including the ability to show multiple metrics on the same chart.
+    The default is a line chart, but the Explorer view allows you to change the chart type. Metrics Explorer has many options, including the ability to show multiple metrics on the same chart.
 
 ## Azure Monitor logs
 
 In this exercise, you didn't set up an Azure Monitor log, but it's worth looking at what a log might look like for a CPU resource usage scenario. Azure Monitor logs can provide a much longer historical record than Azure Metrics.
 
-If you had configured Azure Monitor logs with a Log Analytics workspace, you could use the following Kusto query to see the same type of results for CPU utilization for the database:
+If you had configured Azure Monitor logs with a Log Analytics workspace, you could use the following Kusto query to view the same CPU utilization results for the database:
 
 ```kusto
 AzureMetrics

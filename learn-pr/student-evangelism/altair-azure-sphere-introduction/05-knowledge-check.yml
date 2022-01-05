@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "Which option best describes Azure Sphere?"
+    choices:
+    - content: "It consists of a developer board and microcontroller that are used for the Altair project."
+      isCorrect: false
+      explanation: "It's made up of a secure chip, a secure operating system, and a security service that together implement the seven properties of secure devices."
+    - content: "It combines of a certified microcontroller, secure operating system, and security service."
+      isCorrect: true
+      explanation: "It's made up of these three components that together implement the seven properties of secure devices."
+    - content: "It's a platform on which you're responsible for maintaining and tracking security issues."
+      isCorrect: false
+      explanation: "Azure Sphere implements improved security by design and by default, allowing you to focus on your IoT solution."
+  - content: "Which statement best describes the Altair 8800 computer?"
+    choices:
+    - content: "It was built on the Intel 8086 x86-architecture microprocessor."
+      isCorrect: false
+      explanation: "The Altair was built on the Intel 8080 microprocessor, which predates x86."
+    - content: "It was built on the Intel 8080 16-bit microprocessor."
+      isCorrect: false
+      explanation: "The Altair 8800 was an early 8-bit microprocessor."
+    - content: "It was built on the Intel 8080 microprocessor introduced in 1974."
+      isCorrect: true
+      explanation: "The Altair was built on the Intel 8080, the second 8-bit microprocessor manufactured by Intel in 1974."
+  - content: "The Altair 8800 emulator solution is made up of which of the following components?"
+    choices:
+    - content: "Two applications that run on the Azure Sphere microcontroller."
+      isCorrect: false
+      explanation: "This answer is partially true. There are two applications running on Azure Sphere."
+    - content: "Applications that run on Azure Sphere, cloud services, and the web terminal."
+      isCorrect: true
+      explanation: "The cloud-enabled Altair 8800 project consists of two applications that run on Azure Sphere, cloud services consisting of Azure IoT Central and an Azure virtual machine, and a web terminal built with HTML, CSS, and JavaScript."
+    - content: "Azure IoT Central, an Azure static web app, and an Azure virtual machine."
+      isCorrect: false
+      explanation: "These cloud services form part of the Altair solution."
+  
