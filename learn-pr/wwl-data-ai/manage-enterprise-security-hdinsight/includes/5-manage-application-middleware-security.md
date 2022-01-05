@@ -14,7 +14,7 @@ Below is a representation of the components and parties involved in the HDInsigh
 The below components in the Enterprise Identity domain participate in the set-up and authentication process for an ESP cluster.
 - Windows Server Active directory: Domain controller on premises and stores the User Principal Name (a.k.a UPN) ( for example: John.Doe@Contoso.com) and their respective domain passwords. 
 - [Active directory Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)(AD Connect): Microsoft tool designed to accomplish hybrid identity setup. Functionalities like password hash synch are critical in setting up ESP on HDInsight. 
-- [Azure Activity directory](/azure/active-directory/fundamentals/active-directory-whatis) (AAD): Microsoft Azure based identity and access management service.
+- [Azure Activity directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD): Microsoft Azure based identity and access management service.
 - [Azure Active Directory Domain Services](/azure/active-directory-domain-services/overview) (Azure AD DS): Provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication that is fully compatible with Windows Server Active Directory. You use these domain services without the need to deploy, manage, and patch domain controllers in the cloud. Azure AD DS integrates with your existing Azure AD tenant, which makes it possible for users to sign in using their existing credentials. You can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure.
 
 HDInsight supports two kinds of authentication scenarios 
@@ -24,30 +24,30 @@ Note that the user can choose to create the HDInsight cluster with Windows Azure
 While all the steps in the authentication process accomplished automatically and are abstracted away from the user, it helps to understand, at a high level the sequence of events that go into authenticating a user. 
 
 
-## Authentication: when password hashes are synchronized to AAD
+## Authentication: when password hashes are synchronized to Azure AD
 
-![Authentication: When password hashes are synchronized to AAD](../media/11-password-hash-to-aad.png)
+![Authentication: When password hashes are synchronized to Azure AD](../media/11-password-hash-to-aad.png)
 
 1. User John Doe authenticates onto an HDInsight service (for example Ambari, ssh, Zeppelin, etc.) with his domain credentials John.Doe@contoso.onmicrosoft.com (known as a user principal name or UPN) and password. The gateway holds the username and password. 
-1. The HDInsight Gateway sends the UPN and password provided by user to the AAD using resource owner password credentials (ROPC) flow and requests an OAuth access request.  AAD confirms the identity of the user and issues a refresh token that is saved to the credential service, which runs on the head node. In clusters with ADLS Gen 2 storage accounts, the storage drivers communicate with the credential service to retrieve the OAuth token for the purpose of passthrough authentication to ADLS. 
-1. The gateway then authenticates the user with AAD-DS and gets a Kerberos Ticket. The gateway then passes the Kerberos ticket to the head nodes and authenticates the user into the cluster.
+1. The HDInsight Gateway sends the UPN and password provided by user to the Azure AD using resource owner password credentials (ROPC) flow and requests an OAuth access request.  Azure AD confirms the identity of the user and issues a refresh token that is saved to the credential service, which runs on the head node. In clusters with ADLS Gen 2 storage accounts, the storage drivers communicate with the credential service to retrieve the OAuth token for the purpose of passthrough authentication to ADLS. 
+1. The gateway then authenticates the user with Azure AD-DS and gets a Kerberos Ticket. The gateway then passes the Kerberos ticket to the head nodes and authenticates the user into the cluster.
 
-## MFA Authentication: when password hashes are not synchronized to AAD
+## MFA Authentication: when password hashes are not synchronized to Azure AD
 
 > [!NOTE]
-> This setup is also called HDInsight Identity Broker (HIB) and supports multi factor authentication (MFA). In this set up, if password hashes are not synched to AAD, the user can still authenticate to the gateway.  
+> This setup is also called HDInsight Identity Broker (HIB) and supports multi factor authentication (MFA). In this set up, if password hashes are not synched to Azure AD, the user can still authenticate to the gateway.  
 
-![When password hashes are not synchronized to AAD](../media/12-password-nothashed-to-aad.png)
+![When password hashes are not synchronized to Azure AD](../media/12-password-nothashed-to-aad.png)
 
 1. User John Doe launches a web-based HDInsight service such as Ambari, or Zeppelin. The page redirects the user to an interactive login screen. 
-	The client is redirected to the AAD for the user to authenticate using their UPN John.Doe@contoso.onmicrosoft.com.
+	The client is redirected to the Azure AD for the user to authenticate using their UPN John.Doe@contoso.onmicrosoft.com.
 3.	On entering the UPN, the client is redirected to the on-premise ADFS server where the user enters his password. MFA authentication, if enabled, is now executed. After successful authentication, an OAuth token is issued to the client.
 4.	The client presents the OAuth token to the HDInsight gateway.
 5.	The HDInsight gateway uses the OAuth token to acquire a Kerberos ticket from the HIB node.
 6.	Gateway uses the Kerberos ticket and registers the OAuth token on the head nodes credential service and authenticates into the cluster. 
 
 > [!NOTE]
-> If the password hashes are not synced to the AAD then the domain users cannot ssh to the head nodes. Only the local ssh user will be able to do ssh activities.
+> If the password hashes are not synced to the Azure AD then the domain users cannot ssh to the head nodes. Only the local ssh user will be able to do ssh activities.
 Guidance on setting up authentication mechanisms for both scenarios is explained in [Use ID Broker for credential management](/azure/hdinsight/domain-joined/identity-broker). 
 
 ## Authorization 
