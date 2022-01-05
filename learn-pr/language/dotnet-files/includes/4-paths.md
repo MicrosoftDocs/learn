@@ -96,4 +96,4 @@ FileInfo info = new FileInfo(fileName);
 Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}"); // And many more
 ```
 
-There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes. These are the core concepts that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.
+There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes, but these are the core concepts that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.

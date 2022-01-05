@@ -47,7 +47,7 @@ In the current Program.cs code, you're passing the static location of the *store
     dotnet run
     ```
 
-1. The program should show the following output: 
+1. The program should show the following output:
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -58,7 +58,7 @@ In the current Program.cs code, you're passing the static location of the *store
     ```
 
     Notice that the file names returned include the full system path. This path is included because `Directory.GetCurrentDirectory` method returns the full path to the current location.
-    
+
 ## Find all .json files
 
 Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, use the `Path.GetExtension` method to check the extension for each file.
