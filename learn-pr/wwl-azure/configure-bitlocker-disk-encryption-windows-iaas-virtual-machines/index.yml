@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
 metadata:
   title: Configure BitLocker disk encryption for Windows IaaS Virtual Machines
-  description: "You'll be able to configure Azure Disk Encryption for Windows IaaS VMs and back up and recover encrypted data."
-  ms.date: 10/15/2020
+  description: "Configure BitLocker disk encryption for Windows IaaS Virtual Machines"
+  ms.date: 01/05/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
