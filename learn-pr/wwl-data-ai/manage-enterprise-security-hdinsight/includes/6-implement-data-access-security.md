@@ -3,7 +3,7 @@ Below is the list of recommendations on how Data Access security might be achiev
 
 ## Allow requests to storage from secure connections only 
 
-Secure transfer allows requests originating from secure connections(https) and rejects any connections originating from http. Before creating the cluster, you should enable a secure transfer. Click the “Select Secure Transfer required” slider button to “Enabled”. Learn best practice security recommendations for ADLSG2 including [secure transfer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices). 
+Secure transfer allows requests originating from secure connections(https) and rejects any connections originating from http. Before creating the cluster, you should enable a secure transfer. Click the “Select Secure Transfer required” slider button to “Enabled”. Learn best practice security recommendations for ADLSG2 including [secure transfer](/azure/storage/blobs/data-lake-storage-best-practices). 
 
 ![Data access security](../media/19-Data-access-security.png)
 
@@ -17,7 +17,7 @@ ADLS Gen2 access control model supports both Azure Role Based Access Control (RB
 - Named service principals
 - Named managed identities
 - All other users
-POSIX level Access control for ADLS Gen2 file and folders can hence granted to HDInsight domain users and groups and these authorizations will be respected by all HDInsight services during access. Learn more about [Access Control on Azure Data lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control).
+POSIX level Access control for ADLS Gen2 file and folders can hence granted to HDInsight domain users and groups and these authorizations will be respected by all HDInsight services during access. Learn more about [Access Control on Azure Data lake Storage Gen2](/azure/storage/blobs/data-lake-storage-access-control).
 
 ## Azure storage firewalls
 
@@ -27,7 +27,7 @@ Azure storage firewall uses the networking policy of “deny-all, permit-by-exce
 
 ## Transport Layer Security (TLS) for a storage client outside of HDInsight cluster
 
-Enabling TLS on the storage account ensures that the data in transit to and from the storage account is encrypted. Azure storage uses TLS 1.2 on public HTTPs endpoints, but TLS 1.0 and TLS 1.1 are still supported for backward compatibility. To ensure secure and compliant connection to Azure Storage, you need to enable TLS 1.2 or newer version in client side before sending requests to operate Azure Storage service. In this case, TLS 1.2 is already enabled by default when a storage account exchanges data with HDInsight, and you do not have to do anything specific to enable it. Learn more about [secure TLS for Azure storage clients](https://docs.microsoft.com/azure/storage/common/storage-security-tls).
+Enabling TLS on the storage account ensures that the data in transit to and from the storage account is encrypted. Azure storage uses TLS 1.2 on public HTTPs endpoints, but TLS 1.0 and TLS 1.1 are still supported for backward compatibility. To ensure secure and compliant connection to Azure Storage, you need to enable TLS 1.2 or newer version in client side before sending requests to operate Azure Storage service. In this case, TLS 1.2 is already enabled by default when a storage account exchanges data with HDInsight, and you do not have to do anything specific to enable it. Learn more about [secure TLS for Azure storage clients](/azure/storage/common/storage-security-tls).
 
 ## Virtual network service endpoints
 
@@ -43,12 +43,12 @@ For SQL Databases, VNet service endpoints can be set up from the Firewalls and v
 
 ![SQL Database Virtual networks configurations](../media/23-SQLDB-vnet-config.png)
  
-Learn more about [VNet Service Endpoints in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview).
+Learn more about [VNet Service Endpoints in Azure](/azure/virtual-network/virtual-network-service-endpoints-overview).
 
 ## Customer-managed keys
 
 Encryption of data at rest in a key requirement for security in big data landscapes. Azure storage encrypts all data in a storage account using Microsoft-managed keys by default. Customers can however choose to bring their own keys for leveraging additional control over their data. 
-From the portal, the Encryption blade on the storage account is used to determine key settings on the storage account. Choose Use your own key and then select a Key URI or Select a Key from the Azure Key Vault. Learn more about [Customer Managed Keys for Azure storage](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal). 
+From the portal, the Encryption blade on the storage account is used to determine key settings on the storage account. Choose Use your own key and then select a Key URI or Select a Key from the Azure Key Vault. Learn more about [Customer Managed Keys for Azure storage](/azure/storage/common/storage-encryption-keys-portal). 
 
 ![Customer-managed encryption keys](../media/24-customer-encryption-keys.png)
 

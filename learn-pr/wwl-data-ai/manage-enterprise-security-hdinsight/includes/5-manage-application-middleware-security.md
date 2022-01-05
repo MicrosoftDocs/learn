@@ -13,9 +13,9 @@ Below is a representation of the components and parties involved in the HDInsigh
 
 The below components in the Enterprise Identity domain participate in the set-up and authentication process for an ESP cluster.
 - Windows Server Active directory: Domain controller on premises and stores the User Principal Name (a.k.a UPN) ( for example: John.Doe@Contoso.com) and their respective domain passwords. 
-- [Active directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)(AD Connect): Microsoft tool designed to accomplish hybrid identity setup. Functionalities like password hash synch are critical in setting up ESP on HDInsight. 
-- [Azure Activity directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) (AAD): Microsoft Azure based identity and access management service.
-- [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) (Azure AD DS): Provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication that is fully compatible with Windows Server Active Directory. You use these domain services without the need to deploy, manage, and patch domain controllers in the cloud. Azure AD DS integrates with your existing Azure AD tenant, which makes it possible for users to sign in using their existing credentials. You can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure.
+- [Active directory Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)(AD Connect): Microsoft tool designed to accomplish hybrid identity setup. Functionalities like password hash synch are critical in setting up ESP on HDInsight. 
+- [Azure Activity directory](/azure/active-directory/fundamentals/active-directory-whatis) (AAD): Microsoft Azure based identity and access management service.
+- [Azure Active Directory Domain Services](/azure/active-directory-domain-services/overview) (Azure AD DS): Provides managed domain services such as domain join, group policy, lightweight directory access protocol (LDAP), and Kerberos/NTLM authentication that is fully compatible with Windows Server Active Directory. You use these domain services without the need to deploy, manage, and patch domain controllers in the cloud. Azure AD DS integrates with your existing Azure AD tenant, which makes it possible for users to sign in using their existing credentials. You can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure.
 
 HDInsight supports two kinds of authentication scenarios 
 - When password hashes are synchronized onto Azure Active directory.
@@ -48,7 +48,7 @@ While all the steps in the authentication process accomplished automatically and
 
 > [!NOTE]
 > If the password hashes are not synced to the AAD then the domain users cannot ssh to the head nodes. Only the local ssh user will be able to do ssh activities.
-Guidance on setting up authentication mechanisms for both scenarios is explained in [Use ID Broker for credential management](https://docs.microsoft.com/azure/hdinsight/domain-joined/identity-broker). 
+Guidance on setting up authentication mechanisms for both scenarios is explained in [Use ID Broker for credential management](/azure/hdinsight/domain-joined/identity-broker). 
 
 ## Authorization 
 
@@ -80,7 +80,7 @@ In the below example we show ways in which you can create a ranger policy to set
 
 1. Post setting up this up, this rule will be enforced for all users who were included in the policy. 
 
-Settings up ranger policies for [HBase](https://docs.microsoft.com/azure/hdinsight/domain-joined/apache-domain-joined-run-hbase) and [Kafka](https://docs.microsoft.com/azure/hdinsight/domain-joined/apache-domain-joined-run-kafka) are described in the respective hyperlinks in the section.
+Settings up ranger policies for [HBase](/azure/hdinsight/domain-joined/apache-domain-joined-run-hbase) and [Kafka](/azure/hdinsight/domain-joined/apache-domain-joined-run-kafka) are described in the respective hyperlinks in the section.
 
 ## Auditing
 
