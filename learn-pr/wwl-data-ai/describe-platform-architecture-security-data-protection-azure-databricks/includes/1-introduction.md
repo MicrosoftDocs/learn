@@ -42,7 +42,7 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
    - _Replication_: Select **Locally-redundant storage (LRS)**.
    - _Access tier (default)_: Select **Hot**.
 
-    ![The Basic tab form is shown.](../media/create-storage-basic.png)
+    ![Create storage account basic form in portal.](../media/create-storage-basic.png)
 
 1. Select **Review + create**, then select **Create**.
 
@@ -60,7 +60,7 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
    - _Region_: Select the same location as the other resources in this module.
    - _Pricing tier_: Select **Standard**.
 
-   ![The Basic tab form is shown.](../media/create-key-vault-basic.png)
+   ![The key vault basic form is shown.](../media/create-key-vault-basic.png)
 
 1. Select **Review + create**, then select **Create**.
 
@@ -91,7 +91,7 @@ To complete this module, you will need to deploy an Azure Storage account, Azure
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
