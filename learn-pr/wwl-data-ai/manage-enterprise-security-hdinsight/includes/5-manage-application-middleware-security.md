@@ -9,7 +9,7 @@ The purpose of application security in HDInsight is to provide ways to securely 
 Authentication is the process establishing one’s identity leading to validating that users are who they claim to be. HDInsight clusters in production scenarios typically need to enable a wide range of users from different business groups to authenticate into the cluster to run activities like configure, submit, run, and monitor workloads. Enabling the “Enterprise Security Package” (ESP) feature during HDInsight cluster creation enables clusters to be domain joined and for domain users to use their domain credentials to authenticate into the cluster. Active Directory groups can be used to create groups of individual users representing a function or department within an organization and multiple of these groups can be synchronized to the cluster at creation time. Clusters must have a domain cluster administrator and single or multiple of groups of users with restricted access. 
 Below is a representation of the components and parties involved in the HDInsight authentication process. 
 
-![HDInsight Authentication Process](../media/10-HDInsight-Authentication-process.png)
+![HDInsight Authentication Process](../media/10-hdinsight-authentication-process.png)
 
 The below components in the Enterprise Identity domain participate in the set-up and authentication process for an ESP cluster.
 - Windows Server Active directory: Domain controller on premises and stores the User Principal Name (a.k.a UPN) ( for example: John.Doe@Contoso.com) and their respective domain passwords. 
@@ -26,7 +26,7 @@ While all the steps in the authentication process accomplished automatically and
 
 ## Authentication: when password hashes are synchronized to AAD
 
-![Authentication: When password hashes are synchronized to AAD](../media/11-Password-Hash-to-AAD.png)
+![Authentication: When password hashes are synchronized to AAD](../media/11-password-hash-to-aad.png)
 
 1. User John Doe authenticates onto an HDInsight service (for example Ambari, ssh, Zeppelin, etc.) with his domain credentials John.Doe@contoso.onmicrosoft.com (known as a user principal name or UPN) and password. The gateway holds the username and password. 
 1. The HDInsight Gateway sends the UPN and password provided by user to the AAD using resource owner password credentials (ROPC) flow and requests an OAuth access request.  AAD confirms the identity of the user and issues a refresh token that is saved to the credential service, which runs on the head node. In clusters with ADLS Gen 2 storage accounts, the storage drivers communicate with the credential service to retrieve the OAuth token for the purpose of passthrough authentication to ADLS. 
@@ -37,7 +37,7 @@ While all the steps in the authentication process accomplished automatically and
 > [!NOTE]
 > This setup is also called HDInsight Identity Broker (HIB) and supports multi factor authentication (MFA). In this set up, if password hashes are not synched to AAD, the user can still authenticate to the gateway.  
 
-![When password hashes are not synchronized to AAD](../media/12-Password-NotHashed-to-AAD.png)
+![When password hashes are not synchronized to AAD](../media/12-password-nothashed-to-aad.png)
 
 1. User John Doe launches a web-based HDInsight service such as Ambari, or Zeppelin. The page redirects the user to an interactive login screen. 
 	The client is redirected to the AAD for the user to authenticate using their UPN John.Doe@contoso.onmicrosoft.com.
@@ -57,11 +57,11 @@ You typically authenticate into Apache Ranger with the cluster administrator’s
 In the below example we show ways in which you can create a ranger policy to set permissions on a sample Hive Table in Ranger.  
 1. Launch Apache Ranger using the URL: `https://CLUSTERNAME.azurehdinsight.net/Ranger/`. Replace "CLUSTERNAME" with the name of your cluster. Use the cluster domain administrator and corresponding password to login. 
 
-	![Setting permissions with Apache Ranger](../media/13-Adding-permission-with-apache-ranger.png)
+	![Setting permissions with Apache Ranger](../media/13-adding-permission-with-apache-ranger.png)
 
 1. Click Add new policy to add a new ranger policy.
 
-	[![Adding a new Ranger policy](../media/14-Adding-a-new-Ranger-policy.png)](../media/14-Adding-a-new-Ranger-policy.png#lightbox)
+	[![Adding a new Ranger policy](../media/14-adding-a-new-ranger-policy.png)](../media/14-adding-a-new-ranger-policy.png#lightbox)
 
 1. Populate the details of the policy with the following information:
 	1. Policy Name: Name of the policy. 

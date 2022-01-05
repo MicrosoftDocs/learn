@@ -25,6 +25,6 @@ Virtualized infrastructure security consists of availability SLAs, network archi
 
 In subsequent sections, we will discuss design methodologies and recommend practices around security areas for which the customer is responsible. 
 
-![HDInsight security layers](../media/01-HDInsight-Security.png)
+![HDInsight security layers](../media/01-hdinsight-security.png)
 
 

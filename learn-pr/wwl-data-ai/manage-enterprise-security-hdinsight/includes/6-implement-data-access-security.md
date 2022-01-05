@@ -5,7 +5,7 @@ Below is the list of recommendations on how Data Access security might be achiev
 
 Secure transfer allows requests originating from secure connections(https) and rejects any connections originating from http. Before creating the cluster, you should enable a secure transfer. Click the “Select Secure Transfer required” slider button to “Enabled”. Learn best practice security recommendations for ADLSG2 including [secure transfer](/azure/storage/blobs/data-lake-storage-best-practices). 
 
-![Data access security](../media/19-Data-access-security.png)
+![Data access security](../media/19-data-access-security.png)
 
 ## Implement Access Control Lists (ACLs) for ADLS Gen2 
 
@@ -23,7 +23,7 @@ POSIX level Access control for ADLS Gen2 file and folders can hence granted to H
 
 Azure storage firewall uses the networking policy of “deny-all, permit-by-exception” to ensure only the whitelisted entities can gain access to the storage account. Storage firewalls can be configured to enable account access from a fixed trusted IP address or a predetermined trusted IP range. Ensure that the storage account can be accessed by trusted Microsoft services to enable capabilities like logging. You can enable Azure Firewall on your storage account from the Firewalls and virtual networks blade as depicted below. 
 
-![Azure Storage Firewalls](../media/20-Azure-storage-firewalls.png)
+![Azure Storage Firewalls](../media/20-azure-storage-firewalls.png)
 
 ## Transport Layer Security (TLS) for a storage client outside of HDInsight cluster
 
@@ -35,13 +35,13 @@ HDInsight supports VNet Service endpoints for Azure Blob Storage, Azure Data Lak
 In the storage account, VNet Service endpoints can be enabled from the Firewalls and Virtual Networks Blade by clicking on the Add existing/new virtual network, choosing the radio button of Allow access from to Selected Network and then providing VNet information from which access is to be allowed. In this case, you would put your HDInsight VNet and Subnet/s from which you wish to access this storage account. 
 In the example below, the storage account will be able to access traffic from only the three HDInsight subnets that have been explicitly specified. 
 
-![Azure Firewalls and Virtual networks](../media/21-Azure-firewalls-and-vnets.png)
+![Azure Firewalls and Virtual networks](../media/21-azure-firewalls-and-vnets.png)
 
-![Azure Virtual networks configurations](../media/22-Azure-vnets.png)
+![Azure Virtual networks configurations](../media/22-azure-vnets.png)
 
 For SQL Databases, VNet service endpoints can be set up from the Firewalls and virtual networks blade.
 
-![SQL Database Virtual networks configurations](../media/23-SQLDB-vnet-config.png)
+![SQL Database Virtual networks configurations](../media/23-sqldb-vnet-config.png)
  
 Learn more about [VNet Service Endpoints in Azure](/azure/virtual-network/virtual-network-service-endpoints-overview).
 
