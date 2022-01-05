@@ -15,10 +15,10 @@ To learn more about Microsoft Endpoint Manager, continue to the next learning mo
 - [Understand Conditional Access policies using Microsoft Endpoint Manager](/learn/modules/policy-security-management-using-microsoft-endpoint-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
-- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](/microsoft-365/enterprise-mobility-security/)
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)
 
 To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Endpoint Manager, continue by learning more about FastTrack: 
-- [Explore endpoint management support from FastTrack](/fasttrack/microsoft-365/endpoint-management/)
+- [Explore endpoint management support from FastTrack](https://go.microsoft.com/fwlink/?linkid=2143850)
 
 ## Learn more
 
