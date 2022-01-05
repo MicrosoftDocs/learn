@@ -1,4 +1,4 @@
-Determining a starting point when it comes to best practices implementation can prove difficult. An understanding of the foundational accessibility concepts that many specific best practices are based on can help make this process more approachable.
+Determining a starting point in the implementation of best practices can prove difficult. An understanding of the foundational accessibility concepts that many specific best practices are based on can help make this process more approachable.
 
 One of those foundational concepts is customizable experiences. When customization options are provided across all aspects of a game experience, more players can enjoy the same game in a way that's optimized for their specific needs and preferences. Regardless of the general game mechanic, element, or component, the concept of customization applies throughout.
 
