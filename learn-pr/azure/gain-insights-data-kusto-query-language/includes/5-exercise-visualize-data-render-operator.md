@@ -1,8 +1,8 @@
-A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs. 
+A Kusto query can be used to explore datasets and gain insights. We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs. 
 
 ## Use the `render` operator
 
-Recall that you have used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states. 
+Recall that you've used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states. 
 
 To visualize results, you'll use the `render` operator. This operator comes at the end of a query. Within the `render` operator, you'll specify which type of visualization to use, such as `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. You can also optionally define different properties of the visualization, such as the x-axis or y-axis.
 
@@ -37,7 +37,7 @@ You'll use the `bin` operator, which groups values into certain bin sizes. The s
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a counts of events per week.  he *value* you want to group is be the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
+The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a count of events per week.  The *value* you want to group is the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
@@ -91,4 +91,4 @@ In the following query, you'll first create a calculated column that adds these 
     
     :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
 
-1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) as well as the corresponding percentage of the overall damage.
+1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) and the corresponding percentage of the overall damage.

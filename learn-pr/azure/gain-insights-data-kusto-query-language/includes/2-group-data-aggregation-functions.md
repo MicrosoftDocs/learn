@@ -1,6 +1,6 @@
-Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about the how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset. 
+Organizations in all sectors deal with a constant flow of data and need to turn this data into meaningful, actionable insights. In the meteorological scenario, you've obtained a dataset with storm data from the US. In this module, you'll learn about how to aggregate data using the Kusto Query Language (KQL) so that you can gain meaningful insights from this dataset. 
 
-You'll use aggregate functions to compare different groups of information. You'll explore ways to visualize this data in graphical format. To further organize complex queries, you'll learn how to use let statements.
+You'll use aggregate functions to compare different groups of information. You'll explore ways to visualize this data in graphical format. To further organize complex queries, you'll learn how to use `let` statements.
 
 ## What is an aggregate function?
 

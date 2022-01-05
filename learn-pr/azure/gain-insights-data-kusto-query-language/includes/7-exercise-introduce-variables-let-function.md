@@ -1,8 +1,8 @@
-A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to aggregate and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
+A Kusto query can be used to explore datasets and gain insights. We've used a meteorological dataset to aggregate and visualize data. Here, you'll learn how to use `let` statements to introduce variables and organize complex queries.
 
 `let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. `let` statements can be used to create well-organized complex queries. You can use multiple let statements; each statement must be followed by a semicolon (`;`).
 
-`let` statements can be used in a variety of situations. On the simplest level, you can define scalar values that will later be referenced in a query. You can create a tabular filtered view of a table that will used as the tabular input for the query. You can also create a function using a `let` statement.
+`let` statements can be used in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
 
 ## Define a scalar with a `let` statement
 
@@ -49,7 +49,7 @@ let MostFrequentEventType = toscalar(
 
 Notice that this statement by itself does not print an answer. You can, however, use this stored scalar value in a query. Recall that you want to look at a count of the most frequent event time as a function of time. You'll filter on the *MostFrequentEventType* defined above, and then summarize the count by a certain time bin.
 
-In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. When you define the *StartTime* as a parameter in the `startofmonth()` operator, you will return a date for the start of that month. Since each month will only have one day value, you'll use a bin size of one day.
+In this case, let's look at the results per month. You'll use the `startofmonth()` operator, which returns a datetime representing the start of the month for the given date value. When you define the *StartTime* as a parameter in the `startofmonth()` operator, you'll return a date for the start of that month. Since each month will only have one day value, you'll use a bin size of one day.
 
 Finally, render the results as a column chart to get a histogram of the count of the most frequent events binned by month.  
 
@@ -77,7 +77,7 @@ Finally, render the results as a column chart to get a histogram of the count of
 
 The above examples created a stored scalar value to be used as an input parameter in a query. However, it's also possible to use a `let` statement to create a tabular output that's then used as the input to a query.
 
-1. Filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This gives a tabular output called *KillerStorms*. Use this as the beginning input for your query.
+1. Filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This statement gives a tabular output called *KillerStorms*. Use this `let` statement as the beginning input for your query.
 
     ```kusto
         let KillerStorms=StormEvents

@@ -10,7 +10,7 @@ This solution provides one possible way to construct a query that answers the ab
 1. Filter out as much information as possible.
     1. The *EventType* should have the term "wind"
 1. Create a column that sums damage from *DamageProperty* and *DamageCrops* to give a value of damage in USD. Multiply this value column by the conversion rate set in Step 1 to obtain damage in Euros.
-1. Summarize the sum of the new damage column by a 7 day bin.
+1. Summarize the sum of the new damage column by a seven day bin.
 1. Render the results as a column chart.
 
 ## Solution query

@@ -1,4 +1,4 @@
-A Kusto query can be used to explore datasets and gain insights. We have used a meteorological dataset to compare the number of certain kinds of storm events in different US states for the year 2007, and visualized the results. Here, you'll explore additional aggregate functions to describe the data.
+A Kusto query can be used to explore datasets and gain insights. We've used a meteorological dataset to compare the number of certain kinds of storm events in different US states for the year 2007, and visualized the results. Here, you'll explore other aggregate functions to describe the data.
 
 ## Characterize storm types using the `avg()` operator
 
@@ -6,7 +6,7 @@ In the last unit, you looked at the number of storms as a function of time and t
 
 First, you'll use the `avg()` operator to calculate the average damage caused by storms.
 
-The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops*. The query then filters for events which caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
+The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops*. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
 
 1. Run the following query: 
 
