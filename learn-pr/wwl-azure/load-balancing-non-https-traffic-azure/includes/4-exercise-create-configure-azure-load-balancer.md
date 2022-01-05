@@ -23,10 +23,10 @@ In this exercise, you will:
 In this section, you will create a virtual network and a subnet.
 
 1.  Log in to the Azure portal.
-2.  On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
-3.  Click **Create**.
+2.  On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.
+3.  Select **Create** on the Virtual networks page
 
-    :::image type="content" source="../media/create-virtual-network-1-e9ef917a.png" alt-text="create a virtual network from the Azure portal":::
+    :::image type="content" source="../media/create-virtual-network.png" alt-text="create a virtual network from the Azure portal":::
 
 
 4.  On the **Basics** tab, use the information in the table below to create the virtual network.
@@ -68,15 +68,15 @@ In this section, you will create a virtual network and a subnet.
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     
 5.  Click **Next : IP Addresses**.
 6.  On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
-7.  Under **Subnet name**, select the word **default**.
-8.  In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
-9.  Click **Save**.
+7.  On the **IP Address** tab, select **+ Add subnet**.
+8.  In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+9.  Click **Add**.
 10. Click **Add subnet,** provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24.** Click **Add**
 11. Click **Next : Security**.
 12. Under **BastionHost** select **Enable**, then enter the information from the table below.
@@ -145,7 +145,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 > [!NOTE]
 > do not select one from the list
 
-1.  Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
+1.  On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 2.  Click **Create**. 
 
     :::image type="content" source="../media/create-load-balancer-4-4a82194d.png" alt-text="create a load balancer":::
@@ -189,7 +189,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -293,14 +293,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
         **IntLB-VNet**
       :::column-end:::
     :::row-end:::
-    :::row:::
-      :::column:::
-        Associated to
-      :::column-end:::
-      :::column:::
-        **Virtual machines**
-      :::column-end:::
-    :::row-end:::
+
     
 4.  Under **Virtual machines**, click **Add.**
 5.  Select the checkboxes for all 3 VMs (**myVM1, myVM2,** and **myVM3**), then click **Add**<br>
@@ -533,7 +526,7 @@ In this section, you will create a test VM, and then test the load balancer.
         Region
       :::column-end:::
       :::column:::
-        **(US) West US**
+        **(US) East US**
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -680,7 +673,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
     
     ```
 
