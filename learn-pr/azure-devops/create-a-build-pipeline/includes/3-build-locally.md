@@ -49,9 +49,9 @@ Now, you'll get the source code from GitHub and set up Visual Studio Code so tha
 
 ### Create a fork
 
-The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and enables you to make any changes you want without affecting the original project.
+The first step to using a project in Git is to create a fork so you can work with and modify the source files. A *fork* is a copy of a GitHub repository. The copy exists in your account and lets you make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it were the original project owned by Mara and her team.
+Although you can propose changes to the original project, in this lesson, you'll work with the *Space Game* web project as though it was the original project owned by Mara and her team.
 
 Let's fork the *Space Game* web project into your GitHub account:
 
@@ -75,11 +75,11 @@ To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project on GitHub.
 
-1. In the command bar, select **Code**. A pan displays showing the Clone option with tabs for types of cloning. From the **HTTPS** tab, select the copy icon next to the URL to copy the URL to your clipboard.
+1. In the command bar, select **Code**. A pane displays showing the Clone option with tabs for types of cloning. From the **HTTPS** tab, select the copy icon next to the URL to copy the URL to your clipboard.
 
     :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
 
-1. In Visual Studio Code, go to the terminal window, and enter `git clone`, and then paste the URL from your clipboard. It should look similar to:
+1. In Visual Studio Code, go to the terminal window and enter `git clone`, then paste the URL from your clipboard. It should look similar to:
 
     ```bash
     git clone https://github.com/username/mslearn-tailspin-spacegame-web.git
@@ -93,7 +93,7 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
+A *remote* is a Git repository where team members collaborate (similar to a repository on GitHub). Let's list your remotes and add a remote that points to Microsoft's copy of the repository so you can get the latest sample code.
 
 1. To list your remotes, run the `git remote` command.
 
