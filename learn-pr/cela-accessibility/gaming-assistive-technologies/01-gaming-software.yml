@@ -23,17 +23,17 @@ quiz:
     - content: "To read the text of a player's typed message aloud to other players in the voice channel via synthesized audio."
       isCorrect: true
       explanation: "Correct. Text-to-speech chat refers to the text a player enters into a form field, which is then read aloud to other players in the chat voice channel."
-    - content: "To transcribe what other players have said aloud in the voice channel into text that players can read on screen in real time."
+    - content: "To transcribe what other players have said aloud in the voice channel into text that players can read onscreen in real time."
       isCorrect: false
       explanation: "Incorrect. This option describes the speech-to-text chat tool."
-  - content: "What approach can developers take if their game isn't compatible with third party or platform-provided AT?"
+  - content: "What approach can developers take if their game isn't compatible with third-party or platform-provided assistive technologies?"
     choices:
-    - content: "Assume third party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
+    - content: "Assume third-party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."
       isCorrect: false
-      explanation: "Incorrect. During this period of waiting, many players can be excluded from a game title. Additionally, providing these tools at the game level can ultimately result in more accessible experiences overall for the player."
-    - content: "Put an advisory about a lack of AT compatibility in the game’s store description."
+      explanation: "Incorrect. During this period of waiting, many players can be excluded from a game title. Providing these tools at the game level can ultimately result in more accessible experiences overall for the player."
+    - content: "Put an advisory about a lack of assistive technology compatibility in the game's store description."
       isCorrect: false
-      explanation: "Incorrect. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. However, this approach does not actively support assistive technology users in playing your game."
-    - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, contrast settings and more."
+      explanation: "Incorrect. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. This approach doesn't actively support assistive technology users in playing your game."
+    - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, and contrast settings."
       isCorrect: true
-      explanation: "Correct. This would be the best approach to support players who use AT for scenarios where platform or third-party AT is not compatible, and in general."
+      explanation: "Correct. This would be the best approach to support players who use assistive technology for scenarios where platform or third-party assistive technology isn't compatible, and in general."
