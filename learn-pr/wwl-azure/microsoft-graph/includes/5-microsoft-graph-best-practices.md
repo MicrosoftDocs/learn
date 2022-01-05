@@ -24,7 +24,7 @@ Apply the following best practices for consent and authorization in your app:
 
     * Consider who will be consenting to your application, either end users or administrators, and configure your application to [request permissions appropriately](/azure/active-directory/develop/v2-permissions-and-consent).
 
-    * Ensure that you understand the difference between [static, dynamic and incremental consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
+    * Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent).
 
 * **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
