@@ -1,8 +1,8 @@
-In this unit, you will learn how to manage your Dependabot notifications. Properly managing these notifications will help you better secure your repository and make sure that important issues are promptly noticed by the right people. 
+In this unit, you'll learn how to manage your Dependabot notifications. Properly managing these notifications will help you better secure your repository and make sure that important issues are promptly noticed by the right people. 
 
 You can always view information about vulnerable dependencies in your repository's **Security** tab. GitHub also notifies repository owners and users with admin permissions by default anytime a new alert is detected. To receive a Dependabot alert, admins must be watching the repository, have enabled notifications for security alerts or all activity on the repository, and must not be ignoring the repository. The Dependabot alerts unit explained how admins can also grant other users access to view Dependabot alerts. 
 
-GitHub never publicly disclose vulnerability information for any repository. This information is only available to repository owners, people with admin permissions, and users who have been granted the appropriate access as explained in the Dependabot alerts unit.
+GitHub never publicly shares vulnerability information for any repository. This information is only available to repository owners, people with admin permissions, and users who have been granted the appropriate access as explained in the Dependabot alerts unit.
 
 By default, users receive notifications in the following manner:
 
@@ -17,11 +17,11 @@ By default, users receive notifications in the following manner:
 
 ## Configure notifications for Dependabot alerts
 
-You can also further customize these notifications by selecting your profile picture and then clicking **Settings > Notifications**. From the 'Dependabot alerts' section, you can choose how you would like to be notified whenever a new vulnerability is found for a repository that you are watching. You can also choose to subscribe to the weekly or daily security email digest which provides a summary of alerts for up to 10 of your repositories.
+You can also further customize these notifications by selecting your profile picture and then clicking **Settings > Notifications**. From the 'Dependabot alerts' section, you can choose how you would like to be notified whenever a new vulnerability is found for a repository that you're watching. You can also choose to subscribe to the weekly or daily security email , which provides a summary of alerts for up to 10 of your repositories.
 
 :::image type="content" source="../media/configure_dependabot_alerts.png" alt-text="screenshot of Dependabot alerts section of the notifications menu.":::
 
-The security email digest is also a good way to reduce noise from notifications about vulnerable dependencies. If you are concerned about receiving too many notifications then you can turn off notifications from the 'Dependabot alerts' section and instead choose to receive the weekly security digest. You will still be able to view your Dependabot alerts in your repository's **Security** tab. Be sure to include a valid email in the 'Email notification preferences' section.
+The security email digest is also a good way to reduce noise from notifications about vulnerable dependencies. If you are concerned about receiving too many notifications, then you can turn off notifications from the 'Dependabot alerts' section and instead choose to receive the weekly security digest. You can still view your Dependabot alerts in your repository's **Security** tab. Be sure to include a valid email in the 'Email notification preferences' section.
 
 
 ## Triage notifications
@@ -55,7 +55,7 @@ You'll need to create an OAuth token with the following scopes to communicate wi
 - `read:public_key`
 - `read:gpg_key`
 
-The GraphQL API has a single endpoint that does not change: 
+The GraphQL API has a single endpoint that doesn't change: 
 
 `https://api.github.com/graphql`
 
@@ -89,7 +89,7 @@ query {
 
 ### Example API query
 
-The following is an example of a complex API query that fetches the vulnerable dependency for a repository.
+The following code block is an example of a complex API query that fetches the vulnerable dependency for a repository.
 
 ```graphql
 query {
@@ -123,7 +123,7 @@ The parts of this query are explained below:
 
 `query`
 
-Your goal is to read data from the server, not modify it, query is the root operation. (If you don't specify an operation, query is also the default).
+Your goal is to read data from the server, not to modify it, query is the root operation. (If you don't specify an operation, query is also the default).
  
  `repository (name: "${repo}", owner: "${org}") {`
  
@@ -166,6 +166,6 @@ For the nodes, specify the objects to return, in this case `createdAt`, `dismiss
 
 Specify the `ghsaId`, `publishedAt`, and `identifiers` fields of the `advisory` object. The `identifiers` field has the type `type` and `value`. 
 
-Information about resolved alerts is not stored in the API and cannot be retrieved.
+Information about resolved alerts isn't stored in the API and can't be retrieved.
 
 You can also create GitHub Actions that automate the process of retrieving dependency information based on some event or at some interval. 
