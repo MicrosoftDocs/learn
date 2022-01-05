@@ -16,13 +16,13 @@ Azure Databricks comes with its own user management interface. You can create us
 
 The first user to login and initialize the workspace is the workspace ***owner***, and they are automatically assigned to the Databricks admin group. This person can invite other users to the workspace, add them as admins, create groups, etc. The ADB logged in user's identity is provided by AAD, and shows up under the user menu in Workspace:
 
-  ![Figure 1: Databricks user menu is displayed](../media/user-menu.png)
+  ![Figure 1: Databricks user menu is displayed.](../media/user-menu.png)
 
 Figure 1: Databricks user menu
 
 Multiple clusters can exist within a workspace, and there's a one-to-many mapping between a Subscription to Workspaces, and further, from one Workspace to multiple Clusters.
 
-  ![Figure 2: Azure Databricks Isolation Domains Workspace](../media/databricks-isolation.png)
+  ![Figure 2: Azure Databricks Isolation Domains Workspace.](../media/databricks-isolation.png)
 
 Figure 2: Relationship Between AAD, Workspace, Resource Groups, and Clusters
 
