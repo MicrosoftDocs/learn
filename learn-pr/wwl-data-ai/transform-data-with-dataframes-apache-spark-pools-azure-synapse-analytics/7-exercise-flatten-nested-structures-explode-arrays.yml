@@ -4,9 +4,9 @@ title: 'Exercise: Flatten nested structures and explode arrays with Apache Spark
 metadata:
   title: 'Exercise: Flatten nested structures and explode arrays with Apache Spark in synapse'
   description: "Exercise: Flatten nested structures and explode arrays with Apache Spark in synapse"
-  ms.date: 11/24/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
