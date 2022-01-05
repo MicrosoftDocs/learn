@@ -2,7 +2,7 @@ The goal of this module was to explain how you can use GitHub Dependabot to help
 
 Github Dependabot is enabled by default for all public repositories. You can also use the Dependabot features in private repositories by enabling the dependency graph and Dependabot. When enabled, Dependabot alerts notify you of vulnerabilities in your dependencies and security updates will automatically generate pull requests that try to fix them. Version updates will also automatically generate pull requests to update your dependencies to the latest non-breaking version.
 
-Finally, you learned how to configure your notifications based on the way that you want to receive alerts about vulnerabilities in your repository. You also learned how to use the security digest email as a concise way to receive a daily or weekly list of vulnerabilities in your repository.
+Finally, you learned how to configure your notifications based on how you want to receive alerts about vulnerabilities in your repository. You also learned how to use the security digest email as a concise way to receive a daily or weekly list of vulnerabilities in your repository.
 
 ### Learn more
 
