@@ -63,7 +63,7 @@ WHERE   [label] = 'My Query';
 
 ## Step 2
 
-Use the Request ID to retrieve the querys distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
+Use the Request ID to retrieve the queries distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
 
 ```sql
 -- Find the distributed query plan steps for a specific query.
