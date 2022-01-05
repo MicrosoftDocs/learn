@@ -3,9 +3,9 @@ uid: learn.wwl.work-dataframes-columns-azure-databricks
 metadata:
   title: Work with DataFrames columns in Azure Databricks
   description: "Work with DataFrames columns in Azure Databricks"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with DataFrames columns in Azure Databricks
