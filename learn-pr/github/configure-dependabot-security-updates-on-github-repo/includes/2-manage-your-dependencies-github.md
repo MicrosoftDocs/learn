@@ -30,7 +30,7 @@ As a repository administrator, you can also choose to enable the dependency grap
 3. Click **Security & Analysis**.
 4. Click **Enable** in the dependency graph section.
 
->[Note]
+>[!NOTE]
 > Dependent information is not included for private repositories.
 
 ### View the dependency graph

@@ -11,7 +11,7 @@ GitHub also reviews pull request attempts to merge changes into the main branch 
 
 :::image type="content" source="../media/dependabot-alert.png" alt-text="screenshot of dependency alerts in the GitHub Security tab.":::
 
->[!Note]
+>[!NOTE]
 > GitHub's security features do not claim to catch all vulnerabilities. Though we are always trying to update our vulnerability database and generate alerts with our most up-to-date information, we will not be able to catch everything or tell you about known vulnerabilities within a guaranteed time frame. These features are not substitutes for human review of each dependency for potential vulnerabilities or any other issues, and we recommend consulting with a security service or conducting a thorough vulnerability review when necessary.
 
 ## Set up Dependabot alerts

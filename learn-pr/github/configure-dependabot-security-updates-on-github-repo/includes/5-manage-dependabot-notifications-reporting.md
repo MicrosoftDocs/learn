@@ -12,7 +12,7 @@ By default, users receive notifications in the following manner:
 - in your inbox, as web notifications. A web notification is sent when Dependabot is enabled for a repository, when a new manifest file is committed to the repository, and when a new vulnerability with a critical or high severity is found.
 - on GitHub for mobile, as web notifications.
 
->[!Note]
+>[!NOTE]
 > You can sync your web and mobile notifications so that taking action on a notification in one inbox will automatically change its status in the other. For example reading a notification on mobile would change its status to 'read' for the web inbox as well. To sync your web and mobile inboxes, make sure that your email client can view images from `notifications@github.com`.
 
 ## Configure notifications for Dependabot alerts
