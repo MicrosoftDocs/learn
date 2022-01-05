@@ -1,8 +1,8 @@
 GitHub dependency management tools help you handle the security risks and maintenance requirements of incorporating third-party software into your project. 
 
-Imagine that you are responsible for a GitHub project. This project is built on several other pieces of software, also known as dependencies. These dependencies provide necessary functionality but they also require proper management. You need to keep your dependencies up-to-date and put processes in place to address any security risks or vulnerabilities introduced as a result of relying on software that is maintained outside of your project. You also want to automate this process and avoid delays in responding to important issues.
+Imagine you're responsible for a GitHub project. This project is built on several other pieces of software, also known as dependencies. These dependencies provide necessary functionality but they also require proper management. You must keep your dependencies up-to-date and put processes in place to address any security risks or vulnerabilities introduced because you rely on software that is maintained outside of your project. You also want to automate this process and avoid delays in responding to important issues.
 
-Luckily GitHub provides you with dependency management tools that help to manage your dependencies and any vulnerabilities they may introduce. In this module, you will learn about these tools.
+Luckily GitHub provides you with dependency management tools that help to manage your dependencies and any vulnerabilities they may introduce. In this module, you'll learn about these tools.
 
 ## Learning objectives
 

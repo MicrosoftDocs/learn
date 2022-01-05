@@ -1,6 +1,6 @@
-In the previous unit, you learned about the different GitHub tools that work together to enable dependency management and how Dependabot helps to automate some of these processes. Now, you will learn about Dependabot alerts. 
+In the previous unit, you learned about the different GitHub tools that work together to enable dependency management and how Dependabot helps to automate some of these processes. Now, you'll learn about Dependabot alerts. 
 
-If your project relies on external dependencies, then you can use valuable resources trying to monitor them. This monitoring process is important because you have to be aware of any changes or vulnerabilities in the code, but it is also challenging because this code is not a part of your project. GitHub helps to automate this process by monitoring your dependencies and then sending Dependabot alerts when vulnerabilities are detected in your repository.
+If your project relies on external dependencies, then you can use valuable resources trying to monitor them. This monitoring process is important because you have to be aware of any changes or vulnerabilities in the code. It can also challenging because this code isn't a part of your project. GitHub helps to automate this process by monitoring your dependencies and then sending Dependabot alerts when vulnerabilities are detected in your repository.
 
 Dependabot alerts are generated under two conditions:
 
@@ -16,7 +16,7 @@ GitHub also reviews pull request attempts to merge changes into the main branch 
 
 ## Set up Dependabot alerts
 
-Dependabot alerts are enabled for public repositories by default. Repository administrators and owners can however, set up Dependabot alerts for private repositories as well as for some GitHub Enterprise Server repositories. Enabling these features grants GitHub permission to perform read-only analysis of those specific repositories.
+Dependabot alerts are enabled for public repositories by default. Repository administrators and owners can however, set up Dependabot alerts for private repositories and for some GitHub Enterprise Server repositories. Enabling these features grants GitHub permission to perform read-only analysis of those specific repositories.
 
 ### Set up Dependabot alerts for private repositories
 
@@ -42,7 +42,7 @@ If you are an organization owner, then you can enable the dependency graph and D
 
 ### Set up Dependabot alerts for GitHub Enterprise Server with GitHub Connect 
 
-GitHub Enterprise customers can also enable Dependabot alerts. If you are a GitHub Enterprise owner who is also an owner of the connected GitHub Cloud organization or enterprise account then you can enable the dependency graph and Dependabot alerts for your GitHub Server instance by using GitHub Connect. GitHub Connect enables you to share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
+GitHub Enterprise customers can also enable Dependabot alerts. If you are a GitHub Enterprise owner who is also an owner of the connected GitHub Cloud organization or enterprise account, then you can use GitHub Connect to enable the dependency graph and Dependabot alerts for your GitHub Server instance. GitHub Connect enables you to share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
 
 Review the docs on "Connecting your enterprise account to GitHub Enterprise Cloud" for more information.
 
@@ -57,7 +57,7 @@ Dependabot alerts are displayed in the **Security** tab for the repository and i
 By default, only repository owners and administrators are able to receive and dismiss Dependabot alerts for their repositories. Administrators and owners can also choose to grant other teams and users with access to the repository, permissions to view and dismiss Dependabot alerts by following these steps:
 
 1. Navigate to the main page of the repository.
-2. In the left hand side, click **Security and analysis**.
+2. In the left-hand side, click **Security and analysis**.
 3. In the `Access to alerts` section, type the name of the person or team that you would like to be able to manage Dependabot alerts in the search bar. Make your selection.
 4. Click **Save changes**.
 
