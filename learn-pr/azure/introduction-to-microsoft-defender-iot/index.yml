@@ -37,7 +37,7 @@ title: Introduction to Microsoft Defender for IoT
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "Describe the key features of Microsoft Defender for IoT that provide security monitoring of operational technology and IoT devices. Determine the types of business scenarios that Microsoft Defender for Iot can support."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -64,8 +64,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Microsoft Defender for IoT is appropriate to (general product use case).
-    - Describe how (features) of Microsoft Defender for IoT work to (solve problem).
+    - Evaluate whether Microsoft Defender for IoT can provide unified asset discovery and security monitoring across your business-critical network environments
+    - Describe how the components of Microsoft Defender for IoT monitor IoT and operational technology devices
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,9 +88,10 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Familiarity with IoT device concepts like ...
-  - # prerequisite 2
-  - # prerequisite 3
+  - Knowledge of how operational technology security is used business-critical infrastructures
+  - Familiarity of operational technology security concepts like operational and network security goals
+  - Familiarity with the differences between operational technology and IT networks
+  - Familiarity with the challenges in managing environments with operational technology and IoT
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
@@ -109,6 +110,8 @@ levels:
 ###
 roles:
   - developer
+  - security-engineer
+  - technology-manager
 ###########################################################################
 ###
 ### Specify the covered product.
@@ -116,6 +119,7 @@ roles:
 ###
 products:
 - azure
+- azure-defender-iot
 ###########################################################################
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
