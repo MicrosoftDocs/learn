@@ -14,16 +14,16 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Preparation for sales data
 
+1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
+
+    ```csharp
+    using Newtonsoft.Json;
+    ```
+
 1. In `Program.cs` directly under the `FindFiles` method, add a new `record` that will model the *sales.json* data.
 
     ```csharp
     record SalesData (double Total);
-    ```
-
-1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
-
-    ```csharp
-    using Newtonsoft.Json; 
     ```
 
 ## Create a method to calculate sales totals
@@ -31,7 +31,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 1. In `Program.cs`, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
     ```csharp
-    static double CalculateSalesTotal(IEnumerable<string> salesFiles)
+    double CalculateSalesTotal(IEnumerable<string> salesFiles)
     {
         double salesTotal = 0;
         
@@ -136,7 +136,7 @@ var currentDirectory = Directory.GetCurrentDirectory();
 var storesDirectory = Path.Combine(currentDirectory, "stores");
 
 var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-Directory.CreateDirectory(salesTotalDir);    
+Directory.CreateDirectory(salesTotalDir);   
 
 var salesFiles = FindFiles(storesDirectory);
 
@@ -162,7 +162,7 @@ IEnumerable<string> FindFiles(string folderName)
     return salesFiles;
 }
 
- double CalculateSalesTotal(IEnumerable<string> salesFiles)
+double CalculateSalesTotal(IEnumerable<string> salesFiles)
 {
     double salesTotal = 0;
     

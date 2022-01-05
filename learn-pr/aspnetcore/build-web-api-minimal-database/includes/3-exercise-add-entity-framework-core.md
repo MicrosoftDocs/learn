@@ -1,5 +1,10 @@
 You're a developer for a company, and you and your company have heard about the new minimal API. Your manager has asked you to create a project for it so that you can discuss whether to use it on your next project.
 
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 ## Set up the project
 
 First, you need to create a project. You've installed .NET 6 and you're ready to go. In this unit, you'll add data persistence to a pizza management API.
