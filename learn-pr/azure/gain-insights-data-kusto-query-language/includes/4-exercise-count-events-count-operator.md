@@ -29,7 +29,7 @@ The above query returned the number of events per state. There are, however, mor
 * For example, you could count only certain types of events. The `countif()` operator counts records for which a predicate is true. The query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
 * You can also count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set.
 
-The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and must be grouped by the same column, in this case *State*.
+The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and are grouped by the same column, in this case *State*. The columns that have been aggregated are renamed, and all other columns are dropped. If you want to include other columns, name them after the column on which data is summarized. 
 
 1. Run the following query:
 
