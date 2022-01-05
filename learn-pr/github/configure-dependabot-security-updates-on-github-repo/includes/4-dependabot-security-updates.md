@@ -11,9 +11,9 @@ Once you have set up Dependabot alerts to notify you of vulnerabilities in your 
 
 GitHub automatically enables Dependabot security updates for  every repository that meets the following prerequisites:
 
-- The repository is not a fork.
-- The repository is not archived.
-- The repository is public or it is private and you have enabled the read-only analysis by the dependency graph, and vulnerability alerts in the repository's settings.
+- The repository isn't a fork.
+- The repository isn't archived.
+- The repository is public or it's private and you've enabled the read-only analysis by the dependency graph, and vulnerability alerts in the repository's settings.
 - Dependabot security updates aren't disabled for the repository.
 
 ## Manually enable security updates
@@ -28,7 +28,7 @@ You can enable security updates manually on private repositories that don't meet
 
 View Dependabot pull requests the same way that you would view other pull requests on GitHub, within the **Pull requests** tab of the related repository. Dependabot pull requests will have dependabot as the author, this is the bot account used by Dependabot. They'll also use the `dependencies` label.
 
-Dependabot pull requests include all the information that you need to review and merge a proposed fix into your project including release notes, changelog entries, and commit details. Details of which vulnerability a pull request resolves are hidden from anyone who doesn't have access to Dependabot alerts for the repository. Merging a security update pull request automatically closes the related Dependabot alert. 
+Dependabot pull requests include all the information that you need to review and merge a proposed fix into your project like release notes, changelog entries, and commit details. Details of which vulnerability a pull request resolves are hidden from anyone who doesn't have access to Dependabot alerts for the repository. Merging a security update pull request automatically closes the related Dependabot alert. 
 
 Despite all this information, it's still best practice to have automated processes in place so that checks are carried out before the pull request is merged. This is especially important if the update includes other functionality or potentially breaking changes. 
 
@@ -106,7 +106,7 @@ To enable version updates on the fork of a repository:
 
 ## Allow Dependabot to access private repositories
 
-In order to check for outdated dependencies and generate a security update, Dependabot must have access to the repository that contains the dependencies. Dependabot generally can't update dependencies that are located in private repositories or private package registries. However, if the dependency is in a private repository located in the same organization as the package that uses it, then you can grant Dependabot access.
+To check for outdated dependencies and generate a security update, Dependabot must have access to the repository that contains the dependencies. Dependabot generally can't update dependencies that are located in private repositories or private package registries. However, if the dependency is in a private repository located in the same organization as the package that uses it, then you can grant Dependabot access.
 
 To allow Dependabot to access a private GitHub repository:
 
