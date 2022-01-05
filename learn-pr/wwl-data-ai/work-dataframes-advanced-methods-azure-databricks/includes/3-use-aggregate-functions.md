@@ -5,3 +5,4 @@ Open the **2.Use-Aggregate-Functions** notebook. Make sure you attach your clust
 Within the notebook, you will learn various aggregate functions.
 
 After you've completed the notebook, return to this screen, and continue to the next step.
+
