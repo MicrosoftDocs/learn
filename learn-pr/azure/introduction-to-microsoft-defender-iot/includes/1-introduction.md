@@ -13,6 +13,8 @@
 TODO: add your topic sentences(s)
 TODO: add your visual element
 
+Briefly explain what Microsoft Defender for IoT is. You could also briefly explain what operational technology is (in one or two sentences.)
+
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
     Goal: Describe the real-world scenario you'll use to illustrate the product. Include 2-3 customer tasks that represent the most-common use cases for the product.
@@ -28,6 +30,8 @@ TODO: add your visual element
 ## Example scenario
 TODO: add your scenario
 TODO: add your image
+
+What you have on pages 5 & 6 go here.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -60,6 +64,6 @@ You'll analyze the capabilities of Microsoft Defender for IoT to help you decide
  -->
 ## What is the main goal?
 
-By the end of this session, you'll be able to decide whether Microsoft Defender for IoT is a good choice to do xyz...
+By the end of this session, you'll be able to decide whether Microsoft Defender for IoT is a good choice to provide security monitoring for your operational technology and IoT devices.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
