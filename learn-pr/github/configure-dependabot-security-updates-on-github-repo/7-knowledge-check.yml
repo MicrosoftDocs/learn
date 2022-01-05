@@ -4,7 +4,7 @@ title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also
 metadata:
   unitType: knowledge_check
   title: Knowledge check # user input: module title for browser tab and search results
-  description: Knowledge check questions for configure dependabot security updates on github # user input: a description for site search and SEO
+  description: Knowledge check questions for configure Dependabot security updates on GitHub # user input: a description for site search and SEO
   ms.date: 1/5/2022
   author: sterling463
   ms.author: csterling

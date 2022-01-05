@@ -9,9 +9,9 @@ Dependabot alerts are generated under two conditions:
 
 GitHub also reviews pull request attempts to merge changes into the main branch that contain dependency changes. A Dependabot alert is generated if this change would introduce a vulnerability.
 
-:::image type="content" source="../media/dependabot_alert.png" alt-text="screenshot of dependency alerts in the GitHub Security tab.":::
+:::image type="content" source="../media/dependabot-alert.png" alt-text="screenshot of dependency alerts in the GitHub Security tab.":::
 
->[Note]
+>[!Note]
 > GitHub's security features do not claim to catch all vulnerabilities. Though we are always trying to update our vulnerability database and generate alerts with our most up-to-date information, we will not be able to catch everything or tell you about known vulnerabilities within a guaranteed time frame. These features are not substitutes for human review of each dependency for potential vulnerabilities or any other issues, and we recommend consulting with a security service or conducting a thorough vulnerability review when necessary.
 
 ## Set up Dependabot alerts
@@ -50,7 +50,7 @@ Review the docs on "Connecting your enterprise account to GitHub Enterprise Clou
 
 Dependabot alerts are displayed in the **Security** tab for the repository and in the repository's dependency graph. The alert includes a link to the affected file in the project, and information about a fixed version, if available. 
 
-:::image type="content" source="../media/dependabot_alert_detail.png" alt-text="screenshot of portion of dependabot alert.":::
+:::image type="content" source="../media/dependabot-alert-detail.png" alt-text="screenshot of portion of dependabot alert.":::
 
 ## Grant access to Dependabot alerts
 

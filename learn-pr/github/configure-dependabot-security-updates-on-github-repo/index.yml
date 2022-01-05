@@ -8,6 +8,7 @@ metadata:
   author: sterling463
   ms.author: csterling
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
 title: Configure Dependabot security updates on your GitHub repo
 summary: Manage your dependencies with GitHub Dependabot # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)

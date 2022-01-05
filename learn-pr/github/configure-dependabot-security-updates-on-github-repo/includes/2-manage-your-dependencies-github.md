@@ -8,7 +8,7 @@ In this unit, you will learn about the GitHub tools for managing your dependenci
 
 ## The dependency graph
 
-:::image type="content" source="../media/dependency_graph.png" alt-text="screenshot of Dependencies of the dependency graph.":::
+:::image type="content" source="../media/dependency-graph.png" alt-text="screenshot of Dependencies of the dependency graph.":::
 
 The dependency graph is a summary of a repository's manifest and lock files. These files contain metadata about your project. The dependency graph is automatically generated for public repositories and includes the following information:
 
@@ -78,7 +78,7 @@ For GitHub Enterprise Security versions above 3.3
 
 ## The GitHub Advisory Database
 
-:::image type="content" source="../media/advisory_database.png" alt-text="screenshot of the GitHub Advisory Database.":::
+:::image type="content" source="../media/advisory-database.png" alt-text="screenshot of the GitHub Advisory Database.":::
 
 GitHub collects information on vulnerabilities and includes it in the GitHub Advisory Database. The GitHub Advisory Database is a curated list of security vulnerabilities related to packages tracked by the GitHub dependency graph. It contains detailed information about each dependency including description, severity, and affected package. This database uses the Common Vulnerability Scoring System (CVSS), Section 5, to assign a severity level to each vulnerability: low, medium/moderate, high, and critical. The database is populated from the following 4 sources:
 

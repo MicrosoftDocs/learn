@@ -5,7 +5,7 @@ Once you have set up Dependabot alerts to notify you of vulnerabilities in your 
 - **Dependabot security updates** are automated pull requests that help you update dependencies with known vulnerabilities.
 - **Dependabot version updates** are automated pull requests that keep your dependencies updated, even when they don’t have any vulnerabilities.
 
-:::image type="content" source="../media/dependabot_pull_requests.png" alt-text="screenshot of pull requests opened by dependabot.":::
+:::image type="content" source="../media/dependabot-pull-requests.png" alt-text="screenshot of pull requests opened by dependabot.":::
 
 ## Supported repositories
 
@@ -42,7 +42,7 @@ After creating and checking your `dependabot.yml` file into your repository, you
 4.	Click **Dependabot**. 
 5.	Click the three dots next to a package manager to view the files being monitored.
 
-:::image type="content" source="../media/view_dependencies.png" alt-text="screenshot showing dependencies view from dependency graph.":::
+:::image type="content" source="../media/view-dependencies.png" alt-text="screenshot showing dependencies view from dependency graph.":::
 
 The **Last checked TIME ago** link in the **Dependabot** tab also enables you to see the log files that Dependabot generated during the last check for version updates. You can rerun the version check by clicking the **Check for updates** button.
 
