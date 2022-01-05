@@ -3,9 +3,9 @@ uid: learn.wwl.describe-azure-databricks-delta-lake-architecture
 metadata:
   title: Describe Azure Databricks Delta Lake architecture
   description: "Describe Azure Databricks Delta Lake architecture"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe Azure Databricks Delta Lake architecture
