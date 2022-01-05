@@ -16,7 +16,7 @@ Think about how a customer might grab or pick up their device. Devices that are 
 
 When you create accessible hardware experiences for players, consider the strength, dexterity, and fine motor skills required to interact with and operate the device. Consider the actions a player might need to perform. For example, they typically need to press buttons or open battery doors. If a player can't physically press the power button, make volume adjustments, or pair the device, they might stop using the device altogether.
 
-The following aspects of hardware components can be optimized to create hardware experiences that are accessible for more players These players might have limited strength, dexterity, coordination, or fine motor skills in their arms, hands, or fingers.
+The following aspects of hardware components can be optimized to create hardware experiences that are accessible for more players. These players might have limited strength, dexterity, coordination, or fine motor skills in their arms, hands, or fingers.
 
 ### Button size
 
