@@ -4,9 +4,9 @@ title: Create a Kafka and Spark architecture
 metadata:
   title: Create a Kafka and Spark architecture
   description: "Create a Kafka and Spark architecture"
-  ms.date: 12/14/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
