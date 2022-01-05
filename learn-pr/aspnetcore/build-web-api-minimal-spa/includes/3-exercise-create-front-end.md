@@ -1,5 +1,10 @@
 In this exercise, you build the front-end app. You start with a scaffold, and then you build out the view you need and add data to the app.
 
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 ## Scaffold an app
 
 To scaffold an app, you use the `create-react-app` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
