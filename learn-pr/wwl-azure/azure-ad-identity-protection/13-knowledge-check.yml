@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -28,7 +28,7 @@ quiz:
     - content: "JIT virtual machine access"
       isCorrect: false
       explanation: "JIT VM access would just restrict when a user could access a VM, not validate if they should still be allowed access"
-  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Azure AD role can reset the password?"
+  - content: "Identity Protection has reported that a user’s credentials have been leaked. According to policy, the user’s password must be reset. Which Azure AD role can reset the password?"
     choices:
     - content: "Global Administrator"
       isCorrect: true

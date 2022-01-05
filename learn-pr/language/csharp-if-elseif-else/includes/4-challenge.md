@@ -43,7 +43,7 @@ Your subscription expires within a day!
 Renew now and save 20%!
 ```
 
-**Rule 4**.  If the user's subscription has expired, display the message:
+**Rule 4**. If the user's subscription has expired, display the message:
 
 ```output
 Your subscription has expired.

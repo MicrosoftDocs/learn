@@ -4,13 +4,13 @@ title: Implement access reviews
 metadata:
   title: Implement access reviews
   description: "Implement access reviews"
-  ms.date: 10/09/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/11-access-reviews.md)]

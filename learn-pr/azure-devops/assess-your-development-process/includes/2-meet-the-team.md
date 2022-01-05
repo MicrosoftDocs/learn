@@ -20,7 +20,7 @@ You can filter the leaderboard by mode or by game map. You can also select a pla
 :::image type="content" source="../media/2-player-profile.png" alt-text="The Space Game website showing the top player's profile information.":::
 
 > [!NOTE]
-> Although the game and the website aren't finished yet, you can [check out the website now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
+> Although the game and the website aren't finished yet, you can [check out the website now](https://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
 
 Here are your team members:
 

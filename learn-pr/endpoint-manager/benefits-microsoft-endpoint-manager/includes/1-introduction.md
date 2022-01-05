@@ -2,14 +2,14 @@ Effectively managing endpoints presents a number of challenges. For instance, ho
 
 Microsoft Endpoint Manager provides the services and tools you need in one location to manage your organization's endpoints by providing:
 - **Cloud security across endpoints** - You can help protect user devices against threats using [Microsoft Zero Trust](/security/zero-trust/) technology.
-- **Comprehensive Windows 10 management** - You can simplify automated provisioning, configuration management, and software updates for all your endpoints.
+- **Comprehensive Windows 10/11 management** - You can simplify automated provisioning, configuration management, and software updates for all your endpoints.
 - **Maximum return on investment** - You can leverage your existing investments to modernize the user experience with Microsoft 365 cloud telemetry.
 
 ## Endpoint architecture
 
 The Microsoft Endpoint Manager architecture provides three stages of the cloud management journey using Configuration Manager and Intune in a single, unified endpoint-management solution.
 The first stage uses tenant-attach capabilities, which provide the most flexible path for Configuration Manager customers to start gaining cloud benefits without necessarily enrolling their Windows clients with Intune. When you connect the Configuration Manager site to the cloud, you immediately gain access to a host of remote actions and analytics.
-Organizations ready for the next step can use co-management to manage Windows using both Configuration Manager and Intune. The Windows 10 device is managed by both Configuration Manager and mobile device management (MDM) systems in the second stage. We recommend new customers or new endpoints go directly to the cloud with Intune. Existing customers can gradually move more workloads to the cloud in the third stage.
+Organizations ready for the next step can use co-management to manage Windows using both Configuration Manager and Intune. The Windows 10/11 device is managed by both Configuration Manager and mobile device management (MDM) systems in the second stage. We recommend new customers or new endpoints go directly to the cloud with Intune. Existing customers can gradually move more workloads to the cloud in the third stage.
 
 [ ![Endpoint security management.](../media/intro-to-endpoint-manager-08.png) ](../media/intro-to-endpoint-manager-08.png#lightbox)
 
