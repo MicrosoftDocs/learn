@@ -2,14 +2,15 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.7-common-provisioning-issues
 title: Common provisioning Issues
 metadata:
-  title: Common Provisioning Issues
-  description: Common Provisioning Issues
-  ms.date: 10/25/2019
+  title: Common provisioning Issues
+  description: "Common provisioning Issues"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-common-provisioning-issues.md)]
