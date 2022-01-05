@@ -63,7 +63,7 @@ its **Transform** component as follows
 
     :::image type="content" source="../media/build-process.png" alt-text="Screenshot of Wait for the build process to finish." lightbox="../media/build-process.png":::
 
-## 2. Build and deploy the application
+## 2. (Optional) Build and deploy the application
 
 1. When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 
