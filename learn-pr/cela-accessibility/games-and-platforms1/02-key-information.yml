@@ -33,7 +33,7 @@ quiz:
       explanation: "Correct. This option uses multiple sensory channels like audio and visuals to represent the same information to players (the presence of a collectible object)."
     - content: "The game can provide players with an option to customize the size and color of collectible items to make them more visible to players."
       isCorrect: false
-      explanation: "Incorrect. While visual customization options should be generally be provided, this option only addresses visual channels and doesn't include another way of representing this information such as audio or haptics."
+      explanation: "Incorrect. While visual customization options should generally be provided, this option only addresses visual channels and doesn't include another way of representing this information, such as audio or haptics."
     - content: "The game can introduce a flashing exclamation mark onscreen when players walk past collectible items and don't pick them up."
       isCorrect: false
       explanation: "Incorrect. This option presents a new cue altogether. This approach also uses visual channels alone to represent information."
