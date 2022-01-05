@@ -26,11 +26,11 @@ You can enable security updates manually on private repositories that don't meet
 
 ## View and resolve security updates 
 
-View Dependabot pull requests the same way that you would view other pull requests on GitHub, within the **Pull requests** tab of the related repository. Dependabot pull requests will have dependabot as the author, this is the bot account used by Dependabot. They'll also use the `dependencies` label.
+View Dependabot pull requests the same way that you would view other pull requests on GitHub, within the **Pull requests** tab of the related repository. Dependabot pull requests will have dependabot as the author, this account is the bot account used by Dependabot. They'll also use the `dependencies` label.
 
 Dependabot pull requests include all the information that you need to review and merge a proposed fix into your project like release notes, changelog entries, and commit details. Details of which vulnerability a pull request resolves are hidden from anyone who doesn't have access to Dependabot alerts for the repository. Merging a security update pull request automatically closes the related Dependabot alert. 
 
-Despite all this information, it's still best practice to have automated processes in place so that checks are carried out before the pull request is merged. This is especially important if the update includes other functionality or potentially breaking changes. 
+Despite all this information, it's still best practice to have automated processes in place so that checks are carried out before the pull request is merged. This approach is especially important if the update includes other functionality or potentially breaking changes. 
 
 ### View dependencies being monitored by Dependabot
 
@@ -95,7 +95,7 @@ updates:
 
 ### Version updates on forks 
 
-Dependabot version updates aren't automatically enabled on forks. This prevents fork owners from unintentionally enabling version updates when they pull changes including a `dependabot.yml` file from the original repository.
+Dependabot version updates aren't automatically enabled on forks. This safeguard prevents fork owners from unintentionally enabling version updates when they pull changes including a `dependabot.yml` file from the original repository.
 
 To enable version updates on the fork of a repository:
 1.	Navigate to the main page of the repository where you want to enable version updates. 
