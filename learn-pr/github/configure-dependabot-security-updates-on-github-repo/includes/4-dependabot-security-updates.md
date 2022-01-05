@@ -1,6 +1,6 @@
 Now that you understand how Dependabot alerts can help you identify vulnerable dependencies in your repository, you are ready to learn about security updates and version updates. Dependabot security updates help you to fix the vulnerabilities identified by Dependabot alerts while version updates help manage different versions of dependent packages.
 
-Once you have set up Dependabot alerts to notify you of vulnerabilities in your repository, you can enable two related features so that Dependabot automatically raises pull requests to try and help with your dependency management:
+Once you have set up Dependabot alerts to notify you of vulnerabilities in your repository, you can enable two related features so that Dependabot automatically raises pull requests to try to help with your dependency management:
 
 - **Dependabot security updates** are automated pull requests that help you update dependencies with known vulnerabilities.
 - **Dependabot version updates** are automated pull requests that keep your dependencies updated, even when they don’t have any vulnerabilities.
@@ -30,7 +30,7 @@ View Dependabot pull requests the same way that you would view other pull reques
 
 Dependabot pull requests include all the information that you need to review and merge a proposed fix into your project including release notes, changelog entries, and commit details. Details of which vulnerability a pull request resolves are hidden from anyone who does not have access to Dependabot alerts for the repository. Merging a security update pull request automatically closes the related Dependabot alert. 
 
-Despite all this information, it is still best practice to have automated processes in place so that checks are carried out before the pull request is merged. This is especially important if the update includes additional functionality or other potentially breaking changes. 
+Despite all this information, it is still best practice to have automated processes in place so that checks are carried out before the pull request is merged. This is especially important if the update includes other functionality or potentially breaking changes. 
 
 ### View dependencies being monitored by Dependabot
 
@@ -68,7 +68,7 @@ For each package manager, include:
 - `directory`: Specifies the location of the manifest or other definition files.
 - `schedule.interval`: Specifies how often to check for new versions.
 
-This is an example of a `dependabot.yml` file: 
+Below is an example of a `dependabot.yml` file: 
 
 ```
 # Basic dependabot.yml file with

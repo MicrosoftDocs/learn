@@ -67,9 +67,9 @@ quiz:
     - content: "`is:done`"
       isCorrect: true
       explanation: "To view all of your notifications marked as 'Done', use the  `is:done` query."
-    - content: "`is:saved`"
+    - content: "`is: saved`"
       isCorrect: false
       explanation: "To view all of your saved notifications, use the `is:saved` query."
-    - content: "`is:complete`"
+    - content: "`is: complete`"
       isCorrect: false
       explanation: "The `is:complete` query doesn't exist on GitHub."
