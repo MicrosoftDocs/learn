@@ -4,9 +4,9 @@ title: Join and transform shared and owned data with Mapping Flow in Azure Data 
 metadata:
   title: Join and transform shared and owned data with Mapping Flow in Azure Data Factory
   description: "Join and transform shared and owned data with Mapping Flow in Azure Data Factory"
-  ms.date: 11/22/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
