@@ -2,9 +2,9 @@ Hybrid Identity is the process of connecting your on-premises Active Directory w
 
 ## Scenario
 
-A security engineer use Hybrid Identity to share identity, authentication, and access across on-premises and cloud resources; you will work on such tasks as:
+A security engineer uses Hybrid Identity to share identity, authentication, and access across on-premises and cloud resources; you will work on such tasks as:
 
- -  Connect you on-premises AD with your Azure AD.
+ -  Connect your on-premises AD with your Azure AD.
  -  Select the best authentication option based on your users needs and your security goals.
  -  Configure authentication options to create your most secure environment.
 

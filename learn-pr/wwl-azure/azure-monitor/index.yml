@@ -3,9 +3,9 @@ uid: learn.wwl.azure-monitor
 metadata:
   title: Configure and manage Azure Monitor
   description: "Use Azure Monitor, Log Analytics, and other Azure tools to monitor the secure operation of your Azure solutions."
-  ms.date: 12/10/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure and manage Azure Monitor

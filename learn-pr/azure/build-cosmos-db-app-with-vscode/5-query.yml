@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-app-with-vscode.5-query
 metadata:
-  title: Exercise - Query using the Azure Cosmos DB .NET Core SDK
-  description: Exercise - Query using the Azure Cosmos DB .NET Core SDK
+  title: Exercise - Query using the Azure Cosmos DB .NET SDK
+  description: Exercise - Query using the Azure Cosmos DB .NET SDK
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Query using the Azure Cosmos DB .NET Core SDK
+title: Exercise - Query using the Azure Cosmos DB .NET SDK
 durationInMinutes: 5
 content: |
   [!include[](includes/5-query.md)]

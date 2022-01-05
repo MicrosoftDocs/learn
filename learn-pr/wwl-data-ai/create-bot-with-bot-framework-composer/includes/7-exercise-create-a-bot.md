@@ -1,10 +1,11 @@
-In this excerise, you'll try out some of the techniques you've learned about in this module to build a bot.
-
 > [!NOTE]
-> A virtual machine containing the client tools you need is provided. Note that a limited number of concurrent sessions is supported - if the virtual machine is not available, try again later.
+>To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
 >
-> If you prefer to build your own development environment, you can do so - these [setup notes](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/00-setup.html) describe the software installed in the hosted virtual machine.
+> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
 >
-> You will also need an [Azure subscription](https://azure.microsoft.com/free) to complete the exercise.
+> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/00-setup.html?azure-portal=true) and follow these [exercise instructions](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/14-bot-composer.html?azure-portal=true). Note that the setup guide is designed for multiple AI development exercises, and may include software that is not required for this specific exercise. Additionally, due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
 
 When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+
+> [!TIP]
+> After completing the exercise, if you've finished exploring Azure cognitive services, delete the Azure resources that you created during the exercise.

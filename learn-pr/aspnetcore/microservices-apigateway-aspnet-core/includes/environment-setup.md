@@ -14,7 +14,7 @@ Run the following command in the command shell. Be patient, because setup can ta
 
 The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-1. Installs the required version of the .NET Core SDK.
+1. Installs the required version of the .NET SDK.
 1. Clones the *:::no-loc text="eShopOnContainers":::* app from a GitHub repository.
 1. Provisions AKS and Azure Container Registry resources.
 1. Opens the Cloud Shell editor to view the code.
