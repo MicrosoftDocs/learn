@@ -18,9 +18,9 @@ abstract: |
   - Accessibility best practices to consider for hardware component operation and discoverability.
   - Accessibility best practices to consider when you develop hardware packaging components.
 prerequisites: |
- - Basic familiarity with playing and creating video games.
- - Familiarity with navigating game platforms, such as Xbox, PlayStation, Nintendo Switch, or Windows.
- - Basic understanding of foundational disability and accessibility principle terms and concepts is highly encouraged.
+ - You should have some basic familiarity with playing and creating video games.
+ - You should have some familiarity with using game platforms like Xbox, PlayStation, Nintendo Switch, or Windows.
+ - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
 iconUrl: /learn/achievements/hardware-devices.svg
 levels:
 - beginner
