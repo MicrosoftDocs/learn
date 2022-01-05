@@ -48,8 +48,8 @@ This table lists the recommended and supported formats for files containing your
 
 Lock files are generally recommended in your repository because they define the exact versions of the direct and indirect dependencies that you are currently using. If you are using lock files, make sure the contributors to your repository are also using the same versions. If you use a manifest file (or equivalent) then indirect dependencies are not included in checks for vulnerable dependencies.
 
-| Package manager | Languages | Recommended formats | All supported formats |
-| --- | --- | --- | ---|
+|Package manager |Languages |Recommended formats |All supported formats |
+|-----|-----|-----|----|
 | Composer             | PHP           | `composer.lock` | `composer.json`, `composer.lock` |
 | `dotnet` CLI | .NET languages (C#, C++, F#, VB)  |   `.csproj`, `.vbproj`, `.nuspec`, `.vcxproj`, `.fsproj` |  `.csproj`, `.vbproj`, `.nuspec`, `.vcxproj`, `.fsproj`, `packages.config` |
 | Maven | Java, Scala |  `pom.xml`  | `pom.xml`  |
@@ -60,18 +60,20 @@ Lock files are generally recommended in your repository because they define the 
 
 For GitHub Enterprise Security versions 3.2 
 
-| Package manager | Languages | Recommended formats | All supported formats |
+|Package manager |Languages |Recommended formats |All supported formats |
+|-----|-----|-----|----|
 | Go modules | Go | `go.mod` | `go.mod` |
 
 For GitHub Enterprise Security versions above 3.2 and GitHub AE 
 
-| Package manager | Languages | Recommended formats | All supported formats |
-| --- | --- | --- | ---|
+|Package manager |Languages |Recommended formats |All supported formats |
+|-----|-----|-----|----|
 | Go modules | Go | `go.sum` | `go.mod`, `go.sum` |
 
 For GitHub Enterprise Security versions above 3.3
 
-| Package manager | Languages | Recommended formats | All supported formats |
+|Package manager |Languages |Recommended formats |All supported formats |
+|-----|-----|-----|----|
 | Python Poetry | Python  | `poetry.lock` | `poetry.lock`, `pyproject.toml` |
 
 ## The GitHub Advisory Database
