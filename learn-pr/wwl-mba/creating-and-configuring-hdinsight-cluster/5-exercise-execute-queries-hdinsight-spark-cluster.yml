@@ -2,14 +2,15 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.5-exercise-execute-queries-hdinsight-spark-cluster
 title: Exercise - Execute queries on HDInsight Spark cluster
 metadata:
-  title: Exercise - Execute Queries on HDInsight Spark Cluster
-  description: Exercise - Execute Queries on HDInsight Spark Cluster
-  ms.date: 10/25/2019
+  title: Exercise - Execute queries on HDInsight Spark cluster
+  description: "Exercise - Execute queries on HDInsight Spark cluster"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-execute-queries-hdinsight-spark-cluster.md)]
