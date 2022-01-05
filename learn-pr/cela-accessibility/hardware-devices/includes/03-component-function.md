@@ -18,7 +18,7 @@ The following video discusses these considerations and how to address them throu
 
 ## Indicate device status through multiple sensory channels
 
-The current status of a device is another important piece of information that guides successful interactions. Device status informs a player of critical information including the device's:
+The current status of a device is another important piece of information that guides successful interactions. Device status informs a player of critical information, including the device's:
 
  - Current power state (on or off).
  - Current battery level.
