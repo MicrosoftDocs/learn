@@ -34,7 +34,7 @@ units:
 - learn.configure-dependabot-security-updates-on-github-repo.manage-your-dependencies-github
 - learn.configure-dependabot-security-updates-on-github-repo.dependabot-alerts
 - learn.configure-dependabot-security-updates-on-github-repo.dependabot-security-updates
-- learn.configure-dependabot-security-updates-on-github-repo.manage-dependabot-notifications-reports
+- learn.configure-dependabot-security-updates-on-github-repo.manage-dependabot-notifications-reporting
 - learn.configure-dependabot-security-updates-on-github-repo.exercise
 - learn.configure-dependabot-security-updates-on-github-repo.knowledge-check
 - learn.configure-dependabot-security-updates-on-github-repo.summary
