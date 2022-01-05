@@ -4,7 +4,7 @@ title: Exercise - Create a question answering solution
 metadata:
   title: Exercise - Create a question answering solution
   description: "Exercise - Create a question answering solution"
-  ms.date: 12/14/2021
+  ms.date: 01/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,6 +12,6 @@ metadata:
 azureSandbox: false
 labId: 100989
 labModal: true
-durationInMinutes: 3
+durationInMinutes: 20
 content: |
   [!include[](includes/10-exercise-create.md)]

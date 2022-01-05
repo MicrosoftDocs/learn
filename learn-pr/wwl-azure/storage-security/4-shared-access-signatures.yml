@@ -4,9 +4,9 @@ title: Deploy shared access signatures
 metadata:
   title: Deploy shared access signatures
   description: "Deploy shared access signatures"
-  ms.date: 12/03/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

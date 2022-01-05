@@ -66,9 +66,6 @@ quiz:
       explanation: "That's incorrect. Automatic Plan Correction removes the need for manual processing of queries, instructs SQL Server to use the last good plan if regression is found, and uses the version of the Cardinality Estimator mapped to the current compatibility level."
   - content: "When might you use Query Store to carry out A/B testing?"
     choices:
-    - content: "When updating an application"
-      isCorrect: false 
-      explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
     - content: "When you need to compare the before and after effects of applying a single change"
       isCorrect: true
       explanation: "That's correct. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
@@ -77,9 +74,6 @@ quiz:
       explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
     - content: "When changing compatibility levels"
       isCorrect: false
-      explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
-    - content: "When adding new hardware"
-      isCorrect: false 
       explanation: "That's incorrect. You might use Query Store to carry out A/B testing when updating an application, when you need to compare the before and after effects of applying a single change, and when adding new hardware."
   - content: "How long would you typically let Query Store run to gather workload information on a database? "
     choices:

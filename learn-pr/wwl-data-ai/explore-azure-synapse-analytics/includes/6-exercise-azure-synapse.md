@@ -18,8 +18,17 @@ To use Synapse Analytics, you must provision a Synapse Analytics Workspace resou
         - **Resource group**: *Create a new resource group with a suitable name, like "synapse-rg"*
         - **Managed resource group**: *Enter an appropriate name, for example "synapse-managed-rg"*.
     - **Workspace name**: *Enter a unique workspace name, for example "synapse-ws-<your_name>*.
-    - **Use Spark on Cosmos**: *Leave unselected.*
-    - **Region**: *Select any available region*.
+    - **Region**: *Select any of the following regions*:
+        - Australia East
+        - Central US
+        - East US 2
+        - North Europe
+        - South Central US
+        - Southeast Asia
+        - UK South
+        - West Europe
+        - West US
+        - WestUS 2
     - **Select Data Lake Storage Gen 2**: From subscription
         - **Account name**: *Create a new account with a unique name, for example "datalake<your_name>"*.
         - **File system name**: *Create a new file system with a unique name, for example "fs<your_name>"*.

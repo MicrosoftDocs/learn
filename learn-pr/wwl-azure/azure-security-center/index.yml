@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-security-center
 metadata:
-  title: Enable and manage Azure Security Center
+  title: Enable and manage Microsoft Defender for Cloud
   description: "Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure."
-  ms.date: 11/12/2021
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable and manage Azure Security Center
+title: Enable and manage Microsoft Defender for Cloud
 summary: Use Azure Security Center, Azure Defender, and Secure Score to track and improve your security posture in Azure.
 abstract: |
   By the end of this module, you will be able to:
