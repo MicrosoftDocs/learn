@@ -11,7 +11,7 @@ from openrowset(
     format = 'parquet') as rows
 ```
 
-Make sure that you can access this file. If your file is protected with a SAS key or custom Azure identity, you would need to [setup server level credential for SQL login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control#server-scoped-credential)
+Make sure that you can access this file. If your file is protected with a SAS key or custom Azure identity, you would need to [setup server level credential for SQL login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature)
 
 ## Define a data source
 
@@ -28,7 +28,7 @@ from openrowset(
 ) as rows
 ```
 
-If a data source is protected with a SAS key or custom identity, you can configure [data source with database scoped credential]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#database-scoped-credential).
+If a data source is protected with a SAS key or custom identity, you can configure [data source with database scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature).
 
 ## Explicitly specify a schema
 
