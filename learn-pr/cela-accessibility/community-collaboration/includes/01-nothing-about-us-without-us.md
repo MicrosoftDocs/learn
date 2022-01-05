@@ -17,7 +17,7 @@ Players with disabilities are the experts in their own experiences. As you build
 Only people who actively experience these barriers and try to use the accessible features or solutions can accurately weigh in on factors like:
 
 - What makes the element or mechanic inaccessible to someone with their specific experiences?
-- What can be done to support these players as they find these barriers?
+- What can be done to support these players as they encounter these barriers?
 - How can these barriers be eliminated altogether?
 
 Players who have lived experience gaming with a disability can help identify barriers that were not apparent to the development team.
