@@ -17,23 +17,17 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. Select the following link to open the Azure Resource Manager template in the Azure portal:
    [Deploy Databricks from the Azure Resource Manager Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-databricks-workspace%2Fazuredeploy.json)
 
-1. Provide the required values to create your Azure Databricks workspace. On the **Basics** tab, enter the following value for the setting.
+1. Provide the required values to create your Azure Databricks workspace:
 
-    | Setting | Value |
-    |---|---|
-    | **Project details** |
-    | Subscription | Choose the Azure Subscription in which to deploy the workspace. |
-    | Resource Group | Select **Create new** link and provide a name for the new resource group. |
-    | **Instance details** |
-    | Location | Select a location near you for deployment. For the list of regions supported by Azure Databricks, see [Azure services available by region](https://azure.microsoft.com/regions/services/). |
-    | Workspace Name |  Provide a name for your workspace. |
-    | Pricing Tier | Ensure `premium` is selected. |
+   - **Subscription**: Choose the Azure Subscription in which to deploy the workspace.
+   - **Resource Group**: Leave at Create new and provide a name for the new resource group.
+   - **Location**: Select a location near you for deployment. For the list of regions supported by Azure Databricks, see [Azure services available by region](https://azure.microsoft.com/regions/services/).
+   - **Workspace Name**: Provide a name for your workspace.
+   - **Pricing Tier**: Ensure `premium` is selected.
 
 1. Accept the terms and conditions.
-
-1. Select **Purchase**.
-
-    The workspace creation takes a few minutes. During workspace creation, the portal displays the Submitting deployment for Azure Databricks tile on the right side. You may need to scroll right on your dashboard to see the tile. There is also a progress bar displayed near the top of the pane. You can watch either area for progress.
+1. Select Purchase.
+1. The workspace creation takes a few minutes. During workspace creation, the portal displays the Submitting deployment for Azure Databricks tile on the right side. You may need to scroll right on your dashboard to see the tile. There is also a progress bar displayed near the top of the screen. You can watch either area for progress.
 
 ### Create a cluster
 
@@ -55,16 +49,14 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. Under **Autopilot Options**, leave the box **checked**, and in the text box, enter `45`.
 
-1. Select **Node Type**: **Standard_DS3_v2**.
+1. Select the **Node Type**: **Standard_DS3_v2**.
 
 1. Select **Create Cluster**.
 
 ## Clone the Databricks archive
 
-1. If you do not currently have your Azure Databricks workspace open, in the Azure portal, go to your deployed Azure Databricks workspace, and select **Launch Workspace**.
-
+1. If you do not currently have your Azure Databricks workspace open: in the Azure portal, navigate to your deployed Azure Databricks workspace and select **Launch Workspace**.
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
-
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
     ![The menu option to import the archive.](../media/import-archive.png)
@@ -75,17 +67,16 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
     https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/07-Dataframe-Advanced-Methods.dbc?raw=true
     ```
 
-1. Select **Import**.
+5. Select **Import**.
+6. Select the **07-Dataframe-Advanced-Methods** folder that appears.
 
-1. Select the **07-Dataframe-Advanced-Methods** folder that appears.
+## Complete the following notebook
 
-## Complete the notebook
+Open the **1.DateTime-Manipulation** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 
-1. Open the **1.DateTime-Manipulation** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
+Within the notebook, you will:
 
-    Within the notebook, you will:
+- Explore more of the `...sql.functions` operations
+  - Date & time functions
 
-    - Explore more of the `...sql.functions` operations
-      - Date & time functions
-
-1. After you've completed the notebook, return to this pane, and continue to the next step.
+After you've completed the notebook, return to this screen, and continue to the next step.
