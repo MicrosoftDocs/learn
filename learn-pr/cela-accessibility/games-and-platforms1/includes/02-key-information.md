@@ -1,4 +1,4 @@
-Another foundational accessibility concept is related to the portrayal of important information from the game. Essential information from a game or platform should be presented to the player through multiple sensory channels including vision, audio, and haptic or touch.
+Another foundational accessibility concept is related to the portrayal of important information from the game. Essential information from a game or platform should be presented to the player through multiple sensory channels, including vision, audio, and haptic or touch.
 
 In this unit, you'll be introduced to the principle of multiple sensory channels as it applies to:
 
