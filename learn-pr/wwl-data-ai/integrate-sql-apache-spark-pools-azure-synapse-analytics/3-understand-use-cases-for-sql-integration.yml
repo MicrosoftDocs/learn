@@ -4,9 +4,9 @@ title: Understand the use-cases for SQL and spark pools integration
 metadata:
   title: Understand the use-cases for SQL and spark pools integration
   description: "Understand the use-cases for SQL and spark pools integration"
-  ms.date: 11/18/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

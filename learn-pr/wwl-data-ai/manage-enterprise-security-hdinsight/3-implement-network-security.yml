@@ -4,12 +4,13 @@ title: Implement Network security
 metadata:
   title: Implement Network security
   description: "Implement Network security"
-  ms.date: 02/28/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-implement-network-security.md)]

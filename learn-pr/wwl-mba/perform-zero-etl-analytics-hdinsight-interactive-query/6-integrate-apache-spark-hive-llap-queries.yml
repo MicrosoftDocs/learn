@@ -3,13 +3,14 @@ uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.6-integrat
 title: Integrate Apache Spark and Hive LLAP queries
 metadata:
   title: Integrate Apache Spark and Hive LLAP queries
-  description: Integrate Apache Spark and Hive LLAP queries
-  ms.date: 10/25/2019
+  description: "Integrate Apache Spark and Hive LLAP queries"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-integrate-apache-spark-hive-llap-queries.md)]
