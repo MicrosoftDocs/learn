@@ -1,4 +1,4 @@
-In the previous unit, you learned about multifactor authentication, and why it improves security. In this unit, we consider the different authentication methods that can be used with Azure AD multi-factor authentication.
+In the previous unit, you learned about multifactor authentication, and why it improves security. In this unit, we consider the different authentication methods that can be used with Azure AD Multi-Factor authentication.
 
 :::image type="content" source="../media/3-passwords-supplemented-replaced.png" alt-text="Passwords should be supplemented or replaced":::
 
