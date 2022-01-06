@@ -51,7 +51,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 1. Select **Select Performance level** to open the Configure performance pane and select **Gen2 DW100c**.
 
-    ![Select database performance level](../media/select-data-warehouse-server-size.png)
+    ![Select database performance level.](../media/select-data-warehouse-server-size.png)
 
 1. In the **Additional settings** tab, select **Sample** under data source.
 
