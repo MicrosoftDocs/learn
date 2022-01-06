@@ -1,4 +1,4 @@
-In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/databricks/work-dataframes-azure-databricks/includes/2-describe-dataframe.md#clone-the-databricks-archive).
+In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](#clone-the-databricks-archive).
 
 ## Unit Pre-requisites
 
