@@ -86,7 +86,7 @@ The cloud controller manager integrates with the underlying cloud technologies i
 
 ## Services that run on a node
 
-The are several services that run on a Kubernetes node to control how workloads run.
+There are several services that run on a Kubernetes node to control how workloads run.
 
 :::image type="content" source="../media/3-cluster-architecture-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
 

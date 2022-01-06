@@ -14,7 +14,7 @@ File.ReadAllText($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparato
 
 The return object from `ReadAllText` is a string.
 
-```
+```json
 {
   "total": 22385.32
 }

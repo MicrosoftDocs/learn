@@ -1,8 +1,8 @@
 At this point, Mara has defined a build configuration for the *Space Game* website. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
 
-As you saw, Mara uses a YAML file to define the build. When you create a pipeline, the process prompts you for your YAML file. The project doesn't have this file yet.
+As you saw, Mara used a YAML file to define the build. When you create a pipeline, the process prompts you for your YAML file. The project doesn't have this file yet.
 
-When you don't provide an initial YAML file for your project, Azure Pipelines can create one for you based on your app type. Here, you build an ASP.NET Core app, but Azure Pipelines provides starter build configurations for other project types as well, including Java, Go, and more.
+When you don't provide an initial YAML file for your project, Azure Pipelines can create one for you based on your app type. Here, you'll build an ASP.NET Core app, but Azure Pipelines provides starter build configurations for other project types as well, including Java, Go, and more.
 
 ## Create the pipeline
 
@@ -37,7 +37,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 ## Watch the pipeline run
 
-Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. Optionally, when the build completes, to see the job output as a text file, select **View raw log**.
+Under **Jobs**, select **Job**. Next, trace the build process through each of the steps. To see the job output as a text file when the build completes, you can also select **View raw log**.
 
 Here, you see the steps that the build definition created. It prepares the VM, fetches the latest source code from GitHub, and then builds the app.
 
