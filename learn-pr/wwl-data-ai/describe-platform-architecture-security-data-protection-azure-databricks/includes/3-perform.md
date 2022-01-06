@@ -11,7 +11,7 @@ In this unit, we focus on Data Protection, which is comprised of the following:
 
 - Encryption at-rest – Service Managed Keys, User Managed Keys
 - Encryption in-transit (Transport Layer Security - TLS)
-- File/Folder Level access control lists (ACLs) for Azure Active Directory (AAD) Users, Groups, Service Principals
+- File/Folder Level access control lists (ACLs) for Azure Active Directory (Azure AD) Users, Groups, Service Principals
 - ACLs for Clusters, Folders, Notebooks, Tables, Jobs
 - Secrets with Azure Key Vault
 
@@ -45,7 +45,7 @@ When enabled, authentication automatically takes place in Azure Data Lake Storag
 
 ADLS Passthrough is configured when you create a cluster in the Azure Databricks workspace. ADLS Gen1 requires Databricks Runtime 5.1+. ADLS Gen2 requires 5.3+.
 
-On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (AAD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](/azure/databricks/data/data-sources/azure/adls-passthrough) on this cluster when Credential Passthrough is enabled.
+On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (Azure AD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](https://docs.microsoft.com/azure/databricks/data/data-sources/azure/adls-passthrough#single-user) on this cluster when Credential Passthrough is enabled.
 
 ![ADLS Passthrough setting.](../media/adls-passthrough.png)
 
