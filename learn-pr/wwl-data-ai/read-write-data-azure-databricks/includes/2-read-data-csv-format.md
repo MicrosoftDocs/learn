@@ -1,4 +1,4 @@
-In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/databricks/read-write-data-azure-databricks/includes/2-read-data-csv-format.md#clone-the-databricks-archive).
+In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](#clone-the-databricks-archive).
 
 ## Unit Pre-requisites
 
@@ -60,12 +60,12 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 4. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-```
- https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/03-Reading-and-writing-data-in-Azure-Databricks.dbc?raw=true
-```
+   ```
+   https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/03-Reading-and-writing-data-in-Azure-Databricks.dbc?raw=true
+   ```
 
-1. Select **Import**.
-2. Select the **03-Reading-and-writing-data-in-Azure-Databricks** folder that appears.
+5. Select **Import**.
+6. Select the **03-Reading-and-writing-data-in-Azure-Databricks** folder that appears.
 
 ## Complete the following notebook
 
