@@ -4,6 +4,9 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 
 At this point, the developers want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
 
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
 [!include[](../../../includes/dotnet6-sdk-version.md)]
 
 ## Create a sample .NET project

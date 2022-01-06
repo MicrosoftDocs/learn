@@ -3,9 +3,9 @@ uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 metadata:
   title: Query data in the lake using Azure Synapse serverless SQL pools
   description: "Query data in the lake using Azure Synapse serverless SQL pools"
-  ms.date: 06/18/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query data in the lake using Azure Synapse serverless SQL pools

@@ -4,9 +4,9 @@ title: 'Exercise: Load data in spark notebooks'
 metadata:
   title: 'Exercise: Load data in spark notebooks'
   description: "Exercise: Load data in spark notebooks"
-  ms.date: 11/22/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

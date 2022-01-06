@@ -3,13 +3,14 @@ uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.1-introduc
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 10/25/2019
+  description: "Introduction"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
