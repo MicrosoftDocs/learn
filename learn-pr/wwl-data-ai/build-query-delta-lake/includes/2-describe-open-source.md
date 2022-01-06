@@ -137,7 +137,7 @@ Upserting, or merging, in Delta Lake provides fine-grained updates of your data.
 ```sql
 MERGE INTO customers -- Delta table
 USING updates
-ON customers.customerId = updates.customerId
+ON customers.customerId = source.customerId
 WHEN MATCHED THEN
     UPDATE SET address = updates.address
 WHEN NOT MATCHED

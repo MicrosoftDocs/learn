@@ -4,9 +4,9 @@ title: Authenticate between spark and SQL pool in Azure Synapse Analytics
 metadata:
   title: Authenticate between spark and SQL pool in Azure Synapse Analytics
   description: "Authenticate between spark and SQL pool in Azure Synapse Analytics"
-  ms.date: 11/18/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
