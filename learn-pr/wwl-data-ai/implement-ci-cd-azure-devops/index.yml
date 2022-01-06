@@ -3,9 +3,9 @@ uid: learn.wwl.implement-ci-cd-azure-devops
 metadata:
   title: Implement CI/CD with Azure DevOps
   description: "Implement CI/CD with Azure DevOps"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement CI/CD with Azure DevOps
