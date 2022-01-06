@@ -2,7 +2,7 @@ Password Protection is a feature of Azure AD that reduces the risk of users sett
 
 With Azure AD Password Protection, default global banned password lists are automatically applied to all users in an Azure AD tenant. To support your own business and security needs, you can define entries in a custom banned password list. When users change or reset their passwords, these lists are checked to enforce the use of strong passwords.
 
-You should use extra features like Azure Active Directory multifactor authentication, not just rely on strong passwords enforced by Azure AD Password Protection.
+You should use extra features like Azure Active Directory multi-factor authentication, not just rely on strong passwords enforced by Azure AD Password Protection.
 
 ## Global banned password list
 
@@ -36,4 +36,4 @@ Azure AD Password Protection efficiently blocks all known weak passwords likely 
 
 For hybrid security, admins can integrate Azure AD Password Protection within an on-premises Active Directory environment. A component installed in the on-premises environment receives the global banned password list and custom password protection policies from Azure AD. Domain controllers then use them to process password change events. This hybrid approach makes sure that, wherever a user changes their password, Azure AD Password Protection is applied.
 
-Although password protection improves the strength of passwords, you should still use best practice features like Azure Active Directory multifactor authentication. Passwords alone, even strong ones, are not as secure as multiple layers of security.
+Although password protection improves the strength of passwords, you should still use best practice features like Azure Active Directory multi-factor authentication. Passwords alone, even strong ones, are not as secure as multiple layers of security.
