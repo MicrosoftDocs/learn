@@ -20,7 +20,7 @@ Here is a quick list of what is required to start developing with StereoKit:
 
 1. **Download** the free edition of **[Visual Studio Community](https://developer.microsoft.com/windows/downloads)**.
 
-   :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the "Free download" button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
+   :::image type="content" source="../media/visual-studio-community.png" alt-text="The screenshot shows how to begin your download, by clicking the Free download button from Visual Studio Community." lightbox="../media/visual-studio-community.png":::
 
 2. Save the **Visual Studio installer** to your device path. Once the download is complete, you can start the installation process by running the Visual Studio installer.
 
@@ -57,15 +57,15 @@ There are two templates provided:
 
 1. Download the StereoKit templates from [StereoKit Templates - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=NickKlingensmith.StereoKitTemplates).
 
-   :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace." " lightbox="../media/download-stereokit-templates.png":::
+   :::image type="content" source="../media/download-stereokit-templates.png" alt-text="Screenshot of StereoKit Templates - Visual Studio Marketplace." lightbox="../media/download-stereokit-templates.png":::
 
 2. Open the downloaded file & click the **Install** button.
 
-   :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box." " lightbox="../media/install-stereokit-templates.png":::
+   :::image type="content" source="../media/install-stereokit-templates.png" alt-text="Screenshot of VSIX installer dialogue box." lightbox="../media/install-stereokit-templates.png":::
 
 3. Click **close** in the pop-up once the installation is complete.
 
-   :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button.” " lightbox="../media/close-stereokit-templates-installation.png":::
+   :::image type="content" source="../media/close-stereokit-templates-installation.png" alt-text="Screenshot of VSIX installer close button." lightbox="../media/close-stereokit-templates-installation.png":::
 
 ## Enable developer mode
 
@@ -97,14 +97,14 @@ If you're using a Windows Mixed Reality headset with your PC then, enable Develo
 
 2. Select **Update and Security**.
 
-   :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select "Update and Security" menu item." lightbox="../media/update-security.png":::
+   :::image type="content" source="../media/update-security.png" alt-text="Screenshot of Select Update and Security menu item." lightbox="../media/update-security.png":::
 
 3. Next, select **For developers**.
 
-   :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select "For developers" option." lightbox="../media/for-developers-option.png":::
+   :::image type="content" source="../media/for-developers-option.png" alt-text="Screenshot of Select For developers option." lightbox="../media/for-developers-option.png":::
 
 4. Enable **Developer Mode**, read the disclaimer for the selected setting, and then accept the change by selecting **Yes**.
 
-   :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable "Developer Mode." " lightbox="../media/enable-developer-mode.png":::
+   :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable Developer Mode."  lightbox="../media/enable-developer-mode.png":::
 
 By following this chapter, you have understood the prerequisites required for developing a Mixed Reality application using StereoKit. Next, you'll understand the StereoKit Ink application to experience better what can be done using StereoKit.
