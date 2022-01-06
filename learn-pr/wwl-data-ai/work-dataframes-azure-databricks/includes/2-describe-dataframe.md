@@ -4,7 +4,7 @@ In this unit, you need to complete the exercises within a Databricks Notebook. T
 
 **Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/)
 
-- If you are a Visual Studio Active Subscriber, you are entitled to azure credits per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+- If you are a Visual Studio Active Subscriber, you are entitled to Azure credits per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
 - If you are not a Visual Studio Subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account.
 
 ## Create the required resources
@@ -60,12 +60,12 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 4. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-```
- https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/04-Working-With-Dataframes.dbc?raw=true
-```
+   ```
+   https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/04-Working-With-Dataframes.dbc?raw=true
+   ```
 
-1. Select **Import**.
-2. Select the **04-Working-With-Dataframes** folder that appears.
+5. Select **Import**.
+6. Select the **04-Working-With-Dataframes** folder that appears.
 
 ## Complete the following notebook
 
@@ -76,7 +76,7 @@ Within the notebook, you will:
 - Develop familiarity with the `DataFrame` APIs
 - Learn the classes...
   - `SparkSession`
-  - `DataFrame` (aka `Dataset[Row]`)
+  - `DataFrame` (also called `Dataset[Row]`)
 - Learn the action...
   - `count()`
 
