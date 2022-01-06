@@ -1,4 +1,4 @@
-In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](https://docs.microsoft.com/en-us/learn/modules/integrate-azure-databricks-other-azure-services/2-integrate-azure-synapse-analytics?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.wwl.data-engineer-azure-databricks#clone-the-databricks-archive).
+In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](https://docs.microsoft.com/learn/modules/integrate-azure-databricks-other-azure-services/2-integrate-azure-synapse-analytics?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.wwl.data-engineer-azure-databricks#clone-the-databricks-archive).
 
 ## Prerequisites
 
