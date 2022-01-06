@@ -3,7 +3,7 @@ uid: learn.data-ai.implement-data-streaming-with-asa
 metadata:
   title: Implement a Data Streaming Solution with Azure Streaming Analytics
   description: Implement a Data Streaming Solution with Azure Streaming Analytics
-  ms.date: 01/05/2022
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -25,6 +25,7 @@ products:
 - azure-stream-analytics
 modules:
 - learn.data-ai.introduction-to-data-streaming
+- learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics
 trophy:
   uid: learn.data-ai.implement-data-streaming-with-asa.trophy
