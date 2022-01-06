@@ -42,7 +42,6 @@ Your first task is to fix syntax issues in the enum definition, so the code comp
 
     You can ignore *warning* messages from the compiler. The warnings are because you declared enum and struct definitions, but haven't used them yet.
 
-
 ## Instantiate a struct
 
 Next, add code for the `car_factory` function to create an instance of a `Car` struct. We'll use the values of the input arguments to assign the car characteristics.
@@ -84,7 +83,7 @@ Now, update the `car_factory` function to return the created `Car` struct. To re
     > [!Tip]
     > Watch for case sensitivity. Don't try to compile your code yet!
 
-1. To return the newly created car, adjust the statement where you instantiated the `Car` struct. 
+1. To return the newly created car, adjust the statement where you instantiated the `Car` struct.
 
     ```rust
         let car: Car = todo!("An instance of a `Car` struct", "Set the function return value");

@@ -124,7 +124,7 @@ Try to interact with this example code in the [Rust Playground][RustPlay-enums].
 
 ### Debug statements
 
-In the Rust Playground, look for the following code statement. This statement is used in several places in the code.
+In the previous example, look for the following code statement. This statement is used in several places in the code.
 
 ```rust
 // Set the Debug flag so we can check the data in the output
