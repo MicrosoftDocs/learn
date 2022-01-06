@@ -12,7 +12,7 @@ In the current Program.cs code, you're passing the static location of the *store
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
-       ```
+    ```
 
 1. Insert the following code after one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
 
@@ -47,7 +47,7 @@ In the current Program.cs code, you're passing the static location of the *store
     dotnet run
     ```
 
-1. The program should show the following output: 
+1. The program should show the following output:
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -58,14 +58,14 @@ In the current Program.cs code, you're passing the static location of the *store
     ```
 
     Notice that the file names returned include the full system path. This path is included because `Directory.GetCurrentDirectory` method returns the full path to the current location.
-    
+
 ## Find all .json files
 
-Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, use the `Path.GetExtension` method to check extension for each file.
+Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, use the `Path.GetExtension` method to check the extension for each file.
 
 1. In the `foreach` loop in `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
 
-    ```csharp    
+    ```csharp
         var extension = Path.GetExtension(file);
     ```
 
@@ -87,7 +87,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
         }
     }
     ```
-    
+
 1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
 1. Run the program from the command line:

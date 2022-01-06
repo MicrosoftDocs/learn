@@ -4,9 +4,9 @@ title: Transfer data outside the synapse workspace using the PySpark connector
 metadata:
   title: Transfer data outside the synapse workspace using the PySpark connector
   description: "Transfer data outside the synapse workspace using the PySpark connector"
-  ms.date: 11/18/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
