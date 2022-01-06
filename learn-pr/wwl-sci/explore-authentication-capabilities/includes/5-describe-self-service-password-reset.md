@@ -14,7 +14,7 @@ Self-service password reset works in the following scenarios:
 
 To use self-service password reset, users must be:
 
-- Assigned an Azure AD license. See **Licensing requirements for Azure Active Directory self-service password reset** in the Learn More section below.
+- Assigned an Azure AD license. Refer to the Learn More section of the summary and resources unit for a link to the Licensing requirements for Azure Active Directory self-service password reset.
 - Enabled for SSPR by an administrator.
 - Registered, with the authentication methods they want to use. Two or more authentication methods are recommended in case one is unavailable.
 
