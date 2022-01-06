@@ -9,11 +9,11 @@ This section describes the workflow of application development in .NET. It inclu
 The first decision developers make is selecting the tools they'll use to create their applications. In other words, they select their *development environment*.  The decision is usually based on whether they prefer a more visual workflow that features a graphical user interface, or a command-line interface where they'll rely almost exclusively on the keyboard to navigate the development environment and make commands.
 
 > [!NOTE]
-> At the end of this module, you'll find links to help you get started with setting up your development environment. You can choose either Visual Studio 2019 or Visual Studio Code and the .NET Software Development Kit (SDK).
+> At the end of this module, you'll find links to help you get started with setting up your development environment. You can choose either Visual Studio 2022 or Visual Studio Code and the .NET Software Development Kit (SDK).
 
-For developers who prefer a visual environment, Visual Studio 2019 is the best choice. As you might guess, because of the comprehensive and visual nature of Visual Studio 2019, you'll need time, bandwidth, and disk space to download and install the program. However, some beginners find it to be the easiest way to get started. Depending on the speed of your internet connection, the installation takes 15 minutes or more.
+For developers who prefer a visual environment, Visual Studio 2022 is the best choice. As you might guess, because of the comprehensive and visual nature of Visual Studio 2022, you'll need time, bandwidth, and disk space to download and install the program. However, some beginners find it to be the easiest way to get started. Depending on the speed of your internet connection, the installation takes 15 minutes or more.
 
-The Visual Studio Installer in Visual Studio 2019 gives you options in the form of workloads. A *workload* is a collection of frameworks, libraries, and other tools that work together to build a specific app model. Based on what you learned in the previous unit, you'll want to make sure that you install the **.NET Core for cross-platform development** workload to build new applications.
+The Visual Studio Installer in Visual Studio 2022 gives you options in the form of workloads. A *workload* is a collection of frameworks, libraries, and other tools that work together to build a specific app model. Based on what you learned in the previous unit, you'll want to make sure that you install the **.NET Core for cross-platform development** workload to build new applications.
 
 The **.NET Core for cross-platform development** workload installs the .NET SDK. The .NET SDK contains all of the libraries, tools, and templates that you need to get started writing code.
 
@@ -23,14 +23,14 @@ If you prefer a command-line environment, then separately download and install V
 
 Typically, software development projects begin with a set of requirements. These requirements affect choices for the app model. The app model you choose could be a web, desktop, or mobile application or a background process, for example.
 
-By using either Visual Studio 2019 or the .NET CLI, you typically begin by creating a new project based on a project template. You can choose from many project templates. Project templates:
+By using either Visual Studio 2022 or the .NET CLI, you typically begin by creating a new project based on a project template. You can choose from many project templates. Project templates:
 
 - Generate folders and files based on templates and the name of the project you define.
 - Add references to commonly used libraries and libraries that your app model framework requires.
 - Provide required code that allows you to run the application and see a tiny sample so that you can confirm the code compiles.
 - Sometimes include instructions in the code. These instructions guide you to modify the sample application and make it your own.
 
-In Visual Studio 2019, the **New Project** dialog box helps you visually choose an application model from a set of installed templates. Or you can choose from many community contributions.  In the .NET CLI, you choose a new project template by using a combination of a command and flags.
+In Visual Studio 2022, the **New Project** dialog box helps you visually choose an application model from a set of installed templates. Or you can choose from many community contributions.  In the .NET CLI, you choose a new project template by using a combination of a command and flags.
 
 ### Build functionality
 

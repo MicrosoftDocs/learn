@@ -5,12 +5,11 @@ Now, it's your chance to experience how you can use the CLI (v2) to manage the A
 
 In this exercise, you will:
 
-- Create an Azure Machine Learning workspace with the CLI (v2).
-- Create a compute instance, environment, and dataset with the CLI (v2).
+- Run a sweep job to tune hyperparameters.
 
 ## Instructions
 
 Follow these instructions to complete the exercise:
 
 1. View the exercise repo at [https://aka.ms/aml-cli2](https://microsoftlearning.github.io/mslearn-aml-cli/?azure-portal=true).
-1. Complete the **Perform hyperparameter tuning with a sweep job** exercise.
+1. Complete the **Perform hyperparameter tuning with the CLI (v2)** exercise.
