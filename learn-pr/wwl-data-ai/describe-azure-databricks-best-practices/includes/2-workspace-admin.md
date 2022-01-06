@@ -2,7 +2,7 @@ Azure Databricks (ADB) is a Big Data analytics service. Being a Cloud Optimized 
 
 Recall, in this scenario, you are a data engineer who has been tasked with re-evaluating your organization's Azure Databricks environment due to a high volume of growth, which highlighted some weaknesses in your current configuration. A part of this strategy is evaluating the need for separating development, staging, and production Azure Databricks environments to contend with capacity limits. Automation is key when you need to deploy multiple instances of an environment.
 
-You can deploy Azure Databricks using Azure portal or using [Azure Resource Manager templates](/azure/azure-resource-manager/resource-group-overview). One successful ADB deployment produces exactly one Workspace, a space where users can log in and author analytics apps. It comprises the file browser, notebooks, tables, clusters, [DBFS](https://docs.azuredatabricks.net/user-guide/dbfs-databricks-file-system.html#dbfs) storage, etc. More importantly, Workspace is a fundamental isolation unit in Databricks. All workspaces are isolated from each other.
+You can deploy Azure Databricks using Azure portal or using [Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment). One successful ADB deployment produces exactly one Workspace, a space where users can log in and author analytics apps. It comprises the file browser, notebooks, tables, clusters, [DBFS](https://docs.azuredatabricks.net/user-guide/dbfs-databricks-file-system.html#dbfs) storage, etc. More importantly, Workspace is a fundamental isolation unit in Databricks. All workspaces are isolated from each other.
 
 Each workspace is identified by a globally unique 53-bit number, called ***Workspace ID or Organization ID***. The URL that a customer sees after logging in always uniquely identifies the workspace they are using:
 
@@ -10,11 +10,11 @@ Each workspace is identified by a globally unique 53-bit number, called ***Works
 
 Example: `https://eastus2.azuredatabricks.net/?o=12345`
 
-Azure Databricks uses [Azure Active Directory (AAD)](/azure/active-directory/fundamentals/active-directory-whatis) as the exclusive Identity Provider and there's a seamless out of the box integration between them. This makes ADB tightly integrated with Azure just like its other core services. Any AAD member assigned to the Owner or Contributor role can deploy Databricks and is automatically added to the ADB members list upon first login. If a user is not a member of the Active Directory tenant, they can't log in to the workspace.
+Azure Databricks uses [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) as the exclusive Identity Provider and there's a seamless out of the box integration between them. This makes ADB tightly integrated with Azure just like its other core services. Any Azure AD member assigned to the Owner or Contributor role can deploy Databricks and is automatically added to the ADB members list upon first login. If a user is not a member of the Active Directory tenant, they can't log in to the workspace.
 
-Azure Databricks comes with its own user management interface. You can create users and groups in a workspace, assign them certain privileges, etc. While users in AAD are equivalent to Databricks users, by default AAD roles have no relationship with groups created inside ADB, unless you use [SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/aad.html) for provisioning users and groups. With SCIM, you can import both groups and users from AAD into Azure Databricks, and the synchronization is automatic after the initial import. ADB also has a special group called ***Admins***, not to be confused with AAD's role Admin.
+Azure Databricks comes with its own user management interface. You can create users and groups in a workspace, assign them certain privileges, etc. While users in Azure AD are equivalent to Databricks users, by default Azure AD roles have no relationship with groups created inside ADB, unless you use [SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/aad.html) for provisioning users and groups. With SCIM, you can import both groups and users from Azure AD into Azure Databricks, and the synchronization is automatic after the initial import. ADB also has a special group called ***Admins***, not to be confused with Azure AD's role Admin.
 
-The first user to login and initialize the workspace is the workspace ***owner***, and they are automatically assigned to the Databricks admin group. This person can invite other users to the workspace, add them as admins, create groups, etc. The ADB logged in user's identity is provided by AAD, and shows up under the user menu in Workspace:
+The first user to login and initialize the workspace is the workspace ***owner***, and they are automatically assigned to the Databricks admin group. This person can invite other users to the workspace, add them as admins, create groups, etc. The ADB logged in user's identity is provided by Azure AD, and shows up under the user menu in Workspace:
 
   ![Figure 1: Databricks user menu is displayed.](../media/user-menu.png)
 
@@ -24,7 +24,7 @@ Multiple clusters can exist within a workspace, and there's a one-to-many mappin
 
   ![Figure 2: Azure Databricks Isolation Domains Workspace.](../media/databricks-isolation.png)
 
-Figure 2: Relationship Between AAD, Workspace, Resource Groups, and Clusters
+Figure 2: Relationship Between Azure AD, Workspace, Resource Groups, and Clusters
 
 With this basic understanding, let's discuss how to plan a typical ADB deployment. We first grapple with the issue of how to divide workspaces and assign them to users and teams.
 

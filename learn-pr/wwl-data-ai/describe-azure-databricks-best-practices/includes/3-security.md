@@ -8,7 +8,7 @@ While you can deploy more than one Workspace in a VNet by keeping the associated
 1. Put all the common networking resources in a central hub VNet, such as your custom DNS server.  
 1. Join the Workspace spokes with the central networking hub using [VNet Peering](https://docs.azuredatabricks.net/administration-guide/cloud-configurations/azure/vnet-peering.html)
 
-More information: [Azure Virtual Datacenter: a network perspective](/azure/architecture/vdc/networking-virtual-datacenter)
+More information: [Azure Virtual Datacenter: a network perspective](https://docs.microsoft.com/azure/architecture/vdc/networking-virtual-datacenter#topology)
 
 ![Hub and Spoke Model.](../media/hub-spoke-model.png)
 
@@ -24,7 +24,7 @@ This recommendation is driven by security and data availability concerns. Every 
 > [!IMPORTANT]
 > This recommendation doesn't apply to Blob or ADLS folders explicitly mounted as DBFS by the end user.
 
-More Information can be found in the [Databricks File System documentaion](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html) 
+More Information can be found in the [Databricks File System documentation](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html) 
 
 ## Always hide secrets in a key vault
 
@@ -47,7 +47,7 @@ When enabled, authentication automatically takes place in Azure Data Lake Storag
 
 ADLS Passthrough is configured when you create a cluster in the Azure Databricks workspace. ADLS Gen1 requires Databricks Runtime 5.1+. ADLS Gen2 requires 5.3+.
 
-On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (AAD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](/azure/databricks/data/data-sources/azure/adls-passthrough) on this cluster when Credential Passthrough is enabled.
+On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (Azure AD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](https://docs.microsoft.com/azure/databricks/data/data-sources/azure/adls-passthrough#single-user) on this cluster when Credential Passthrough is enabled.
 
 ![ADLS Passthrough setting.](../media/adls-passthrough.png)
 
