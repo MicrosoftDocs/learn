@@ -2,7 +2,7 @@ Developers write computer programs to work with data. Data is gathered, analyzed
 
 ## Variables
 
-In Rust, a variable is declared with the keyword `let`. Each variable has a unique name. When a variable is declared, it can be bound to a value, or the value can be bound later in the program. The following code declares a variable named `a_number`. 
+In Rust, a variable is declared with the keyword `let`. Each variable has a unique name. When a variable is declared, it can be bound to a value, or the value can be bound later in the program. The following code declares a variable named `a_number`.
 
 ```rust
 let a_number;
@@ -17,7 +17,6 @@ let a_number = 10;
 > [!Note]
 > **Keywords**
 > As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables.
-
 
 Let's look at another example. The following code declares two variables. The first variable is declared but not bound to a value. The second variable is declared and bound to a value. Later in the program, the value for the first variable is bound to a word. The code calls the `println!` macro to display the variable values.
 
@@ -43,8 +42,8 @@ The word is Ten.
 ```
 
 If we call the `println!` macro and try to show the value of the `a_number` variable before it's bound, the compiler returns an error.
-You can see this error message for yourself in the [Rust Playground][RustPlay-variables]. Select the **Run** button to run the code.
 
+You can see this error message for yourself in the [Rust Playground][RustPlay-variables]. Select the **Run** button to run the code.
 
 ## Immutable versus mutable
 
@@ -80,12 +79,11 @@ Now the number is 15.
 
 This code compiles without errors because the variable `a_number` can now be mutated.
 
-
 ## Variable shadowing
 
-You can declare a new variable that uses the same name of an existing variable. The new declaration creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
+You can declare a new variable that uses the name of an existing variable. The new declaration creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
 
-The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `number` while shadowing the previous variable binding.
+The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `shadow_num` while shadowing the previous variable binding.
 
 ```rust
 // Declare first variable binding with name "shadow_num"
