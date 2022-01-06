@@ -1,5 +1,7 @@
 When you create a virtual network gateway, you need to specify the gateway SKU that you want to use. Select the SKU that satisfies your requirements based on the types of workloads, throughputs, features, and SLAs.
 
+Here are some samples of the available Gateway SKUs. Be sure to always [consult the documentation](/azure/vpn-gateway/vpn-gateway-about-vpngateways) for the latest information. 
+
 :::row:::
   :::column:::
     **Gen**
@@ -110,13 +112,30 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
     VPNGw4/Az
   :::column-end:::
   :::column:::
-    Max. 30
+    Max. 100
   :::column-end:::
   :::column:::
     Max. 5000
   :::column-end:::
   :::column:::
     5.0 Gbps
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    2
+  :::column-end:::
+  :::column:::
+    VPNGw5/Az
+  :::column-end:::
+  :::column:::
+    Max. 100
+  :::column-end:::
+  :::column:::
+    Max. 10000
+  :::column-end:::
+  :::column:::
+    10.0 Gbps
   :::column-end:::
 :::row-end:::
 

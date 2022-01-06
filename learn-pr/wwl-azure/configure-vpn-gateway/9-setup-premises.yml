@@ -4,13 +4,12 @@ title: Setup the on-premises VPN gateway
 metadata:
   title: Setup the on-premises VPN gateway
   description: "Setup the on-premises VPN gateway"
-  ms.date: 12/01/2021
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

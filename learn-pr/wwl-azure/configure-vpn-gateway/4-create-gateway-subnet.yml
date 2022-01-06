@@ -4,13 +4,12 @@ title: Create the gateway subnet
 metadata:
   title: Create the gateway subnet
   description: "Create the gateway subnet"
-  ms.date: 12/01/2021
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
