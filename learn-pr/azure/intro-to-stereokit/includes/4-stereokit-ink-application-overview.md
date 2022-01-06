@@ -35,7 +35,7 @@ There are two window menus used in the **StereoKit Ink** application: the **Ink 
 
 * **Ink Functional Window** - The **Ink Functional Window** has some options functional like *Undo*, *Redo*, *Save*, *Load*, *Clear*, and *Quit*. UI buttons allow you to take **action** and make **choices**. If you want to perform specific actions after any interaction with the objects on the scene, you can use UI buttons.
 
-Making windows using StereoKit is straightforward. You have the liberty to convert any object into an interface by adding required UI elements. In addition, instead of using the old "window" pattern, users can customize the look and feel of their window through StereoKit.
+Creating windows using StereoKit is straightforward. You have the liberty to convert any object into an interface by adding required UI elements. In addition, instead of using the old "window" pattern, users can customize the look and feel of their window through StereoKit.
 
 Since StereoKit doesn't store state, you can add, remove, and change your UI components with minor and standard code structures. The main reason behind it is to accelerate working with UI and avoid compromising the design outcome. All the visual elements added to the window are relative to it.
 
