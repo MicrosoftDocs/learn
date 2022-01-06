@@ -21,7 +21,7 @@ from openrowset(
     firstrow = 2 ) as rows
 ```
 
-The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to [setup server level credential for sql login]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#server-scoped-credential).
+The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to [setup server level credential for sql login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature).
 
 ## Data source usage
 
@@ -45,7 +45,7 @@ from openrowset(
     ) as rows
 ```
 
-If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#database-scoped-credential).
+If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature).
 
 ## Explicitly specify a schema
 
@@ -146,7 +146,7 @@ FROM OPENROWSET(
     ) AS [r]
 ```
 
-`HEADER_ROW = TRUE` will result in reading column names from the header row in file. It is great for exploration purposes when you are not familiar with file content. For best performance see [Use appropriate data types section in Best practices](/azure/synapse-analytics/sql/best-practices-serverless-sql-pool#use-appropriate-data-types). Also, you can read more about [OPENROWSET syntax here](/azure/synapse-analytics/sql/develop-openrowset#syntax).
+`HEADER_ROW = TRUE` will result in reading column names from the header row in file. It is great for exploration purposes when you are not familiar with file content. For best performance see [Use appropriate data types section in Best practices](/azure/synapse-analytics/sql/best-practices-serverless-sql-pool). Also, you can read more about [OPENROWSET syntax here](/azure/synapse-analytics/sql/develop-openrowset).
 
 ## Work with custom quote character
 
