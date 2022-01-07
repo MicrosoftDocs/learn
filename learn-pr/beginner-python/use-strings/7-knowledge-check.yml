@@ -77,6 +77,9 @@ quiz:
     - content: "Use the `round()` function inside the string, enclosed in braces (`{}`)."
       isCorrect: true
       explanation: "Correct! Code execution is allowed within an f-string."
-    - content: "It isn't possible to replace more than nine variables."
+    - content: "You can't round a number when you use f-strings. You must round it before you use it in a string."
       isCorrect: false
-      explanation: "Incorrect. It is possible to replace more than nine variables using the `%` formatting method."
+      explanation: "Incorrect. Although you can round a number before you use it in a string, there is a way to do so within the f-string."
+      
+      
+      
