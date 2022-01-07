@@ -2,20 +2,22 @@
 uid: learn.languages.csharp-null-safety
 metadata:
   moduleType: standard
-  title: csharp-null-safety
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  title: Defensive coding practices within a nullable aware context in C#
+  description: Learn coding practices to help prevent the occurrence of NullReferenceException.
   ms.date: 1/7/2022
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Defensive coding practices with nullable reference types in C#
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+title: Defensive coding practices within a nullable aware context in C#
+summary: Learn coding practices to help prevent the occurrence of NullReferenceException.
 abstract: |
-  By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+  In this module, you will:
+    - Use a nullable enabled context to perform automatic static flow analysis.
+    - Use the null-forgiving (`!`) operator to tell the C# compiler you know what you're doing.
+    - Understand the different ways in which you can declare nullable types.
+    - Learn about the null-coalescing (`??`) and null-conditional (`?.`) operators.
+    - Learn how to configure the nullable context of your C# project or code.
 prerequisites: |
   - "TODO prerequisite 1"
   - "TODO prerequisite 2"
@@ -40,7 +42,7 @@ badge:
   uid: learn.languages.csharp-null-safety.badge
 
 # NOTES
-# Null Safety in .NET & C#  
+# Null Safety in C#
 
 # Since we turned on nullable in all project templates in .NET 6 we need
 # to create educational content on what null safety is, why use it,
