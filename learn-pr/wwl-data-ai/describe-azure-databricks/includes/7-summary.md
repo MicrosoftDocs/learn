@@ -3,11 +3,11 @@ In this module, you learned the basics about using Databricks workspace and Apac
 Now that you have concluded this module, you should know:
 
 1. How to Create a Cluster
-1. How to Attach a Notebook to a Cluster
-1. How to Execute Python, Scala, SQL or R code in a Notebook Cell
-1. How to Detach a Notebook from a Cluster
-1. How Azure Databricks fits into the Azure Ecosystem
-1. How DBFS works to present Blob Storage as a Filesystem
+2. How to Attach a Notebook to a Cluster
+3. How to Execute Python, Scala, SQL or R code in a Notebook Cell
+4. How to Detach a Notebook from a Cluster
+5. How Azure Databricks fits into the Azure Ecosystem
+6. How DBFS works to present Blob Storage as a Filesystem
 
 ## Clean up
 
@@ -16,7 +16,7 @@ If you plan on completing other Azure Databricks modules, don't delete your Azur
 ### Delete the Azure Databricks instance
 
 1. Navigate to the Azure portal.
-1. Navigate to the resource group that contains your Azure Databricks instance.
-1. Select **Delete resource group**.
-1. Type the name of the resource group in the confirmation text box.
-1. Select **Delete**.
+2. Navigate to the resource group that contains your Azure Databricks instance.
+3. Select **Delete resource group**.
+4. Type the name of the resource group in the confirmation text box.
+5. Select **Delete**.

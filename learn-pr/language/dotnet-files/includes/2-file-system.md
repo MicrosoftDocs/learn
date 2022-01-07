@@ -16,8 +16,7 @@ For now, we're going to focus on what you need to know to work with directories 
 
 ## List all directories
 
-
-One task that you'll often do with the `Directory` class is list out &mdash; or *enumerate* &mdash; directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total and inventory files. The structure looks like this example:
+One task that you'll often do with the `Directory` class is list out &mdash; or *enumerate* &mdash; directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number and inside those folders are the sales-total and inventory files. The structure looks like this example:
 
 ```
 📂 stores
@@ -30,7 +29,7 @@ One task that you'll often do with the `Directory` class is list out &mdash; or 
     📂 202
 ```
 
-To read through and list the names of the top-level directories, you can use the `Directory.EnumerateDirectories` function.
+To read through and list the names of the top-level directories, use the `Directory.EnumerateDirectories` function.
 
 ```csharp
 IEnumerable<string> listOfDirectories = Directory.EnumerateDirectories("stores");

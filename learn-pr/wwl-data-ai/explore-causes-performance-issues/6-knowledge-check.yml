@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2021
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -30,7 +30,7 @@ quiz:
       explanation: "That's incorrect. This level also blocks writes from occurring while data is being read."
   - content: "Which DMV shows sessions holding locks?"
     choices:
-    - content: "sys.query_store_queries"
+    - content: "sys.query_store_query"
       isCorrect: false
       explanation: "That's incorrect. This DMV shows the queries that have been run against the database."
     - content: "sys.dm_tran_locks"
@@ -47,6 +47,6 @@ quiz:
     - content: "sys.query_store_runtime_statistics"
       isCorrect: false
       explanation: "That's incorrect. This view stores the performance history for each query."
-    - content: "sys.query_store_queries"
+    - content: "sys.query_store_query"
       isCorrect: true
       explanation: "That's correct. This view contains the queryID and can be joined to other views for other information."

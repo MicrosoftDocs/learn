@@ -8,4 +8,4 @@ When you create a scale set you can enable Autoscale. You should also define a m
  -  **Scale out CPU threshold.** The CPU usage percentage threshold for triggering the scale-out autoscale rule.
  -  **Number of VMs to increase by.** The number of virtual machines to add to the scale set when the scale-out autoscale rule is triggered.
  -  **Scale in CPU threshold.** The CPU usage percentage threshold for triggering the scale in autoscale rule.
- -  **Number of VMs to decrease by.** The number of virtual machines to remove to the scale set when the scale in autoscale rule is triggered.
+ -  **Number of VMs to decrease by.** The number of virtual machines to remove from the scale set when the scale in autoscale rule is triggered.
