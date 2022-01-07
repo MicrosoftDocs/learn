@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-different-authentication-methods
-title: Describe Multi-factor authentication (MFA) in Azure AD
+title: Describe Multi-Factor Authentication (MFA) in Azure AD
 metadata:
-  title: Describe Multi-factor authentication (MFA) in Azure AD
-  description: "Describe Multi-factor authentication (MFA) in Azure AD"
+  title: Describe Multi-Factor Authentication (MFA) in Azure AD
+  description: "Describe Multi-Factor Authentication (MFA) in Azure AD"
   ms.date: 01/07/2022
   author: wwlpublish
   ms.author: ceperezb
