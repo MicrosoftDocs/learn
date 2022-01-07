@@ -10724,6 +10724,16 @@
       "source_path": "learn-pr/wwl-azure/examine-azure-time-series-insights/5-tsi-connection-to-iot-hub.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/examine-azure-time-series-insights/5-time-series-insights-connection-to-iot-hub",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-authentication-capabilities/2-describe-different-authentication-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-authentication-capabilities/3-describe-different-authentication-methods",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-authentication-capabilities/3-describe-multi-factor-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-authentication-capabilities/2-describe-multi-factor-authentication",
+      "redirect_document_id": true
     }
   ]
 }
