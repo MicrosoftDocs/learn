@@ -2,7 +2,7 @@ You can use Azure Functions and Azure API Management to build complete APIs with
 
 Suppose you work for an online store with a successful and busy web site. Your developers have written the business logic for the site as microservices in the form of Azure Functions. Now, you want to enable partners to interact with your online store from their own code by creating a web API that they can call over HTTP. You want to find an easy way to assemble your functions into a single API. 
 
-In this module, you will learn how to use API Management to assemble multiple microservices, implemented as Azure Functions, into an integrated web API.
+In this module, you'll learn how to use API Management to assemble multiple microservices, implemented as Azure Functions, into an integrated web API.
 
 ## Learning objectives
 

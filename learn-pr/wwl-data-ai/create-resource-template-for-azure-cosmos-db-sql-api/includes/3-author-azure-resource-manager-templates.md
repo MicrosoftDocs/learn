@@ -13,7 +13,8 @@ An Azure Resource Manager template is, at its core, a JSON file with a specific 
 }
 ```
 
-> &#128221; All resources we place in this template will be JSON objects within the **resources** array.
+> [!NOTE]
+> All resources we place in this template will be JSON objects within the **resources** array.
 
 ## Account resource
 
@@ -45,7 +46,8 @@ Here is an example of an account that has a unique name with a prefix of **csmsa
 }
 ```
 
-> &#128221; You can define more than one location using the locations array.
+> [!NOTE]
+> You can define more than one location using the locations array.
 
 ## Database resource
 

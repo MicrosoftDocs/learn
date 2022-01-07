@@ -1,8 +1,8 @@
 ### Microsoft 365 Defender
 
-The Microsoft 365 Defender and related data connectors provide alerts and data that has already been normalized and used in the Microsoft 365 Defender portal.
+The Microsoft 365 Defender and related data connectors provide alerts and data that have already been normalized and used in the Microsoft 365 Defender portal.
 
-The Microsoft 365 Defender products include:
+The Microsoft 365 Defender products include (but are not limited to):
 
 - Microsoft Defender for Endpoint
 
@@ -14,8 +14,7 @@ The Microsoft 365 Defender products include:
 
 - Microsoft 365 Defender
 
-- Microsoft 365 Insider Risk Management (IRM) (Preview)
-
+- Microsoft 365 Insider Risk Management (IRM) 
 
 ### Microsoft/Azure Services
 
@@ -38,8 +37,6 @@ The connectors for Microsoft and Azure-related services include (but are not lim
 - Microsoft Defender for Cloud
 
 - Azure Web Application Firewall (WAF) (formerly Microsoft WAF)
-
-- Microsoft Defender for Cloud
 
 - Domain name server
 
@@ -64,7 +61,7 @@ You can use the Log Analytics Data Collector API to send log data to the Microso
 
 Using Microsoft Sentinel's output plugin for the Logstash data collection engine, you can send any log you want through Logstash directly to your Log Analytics workspace in Microsoft Sentinel. The logs are written to a custom table that you define using the output plugin.
 
-## CEF and Syslog connector
+## Common Event Format and Syslog connector
 
 If there is no vendor-provided connector, you can use the generic Common Event Format(CEF) or Syslog Connector.
 
@@ -74,7 +71,7 @@ Common Event Format (CEF) is an industry-standard format on top of Syslog messag
 
 ### Syslog vs. Common Event Format
 
-CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you will need to write a parser to extract the specific fields.   The process to create a Parser for a Syslog message will be demonstrated in a later module.
+CEF is always a superior choice because the log data is parsed into predefined fields in the CommonSecurityLog table.  Syslog provides header fields, but the raw log message is stored in a field named SyslogMessage in the Syslog table.  For the Syslog data to be queried, you will need to write a parser to extract the specific fields.  The process to create a Parser for a Syslog message will be demonstrated in a later module.
 
 ### Connector architecture options
 

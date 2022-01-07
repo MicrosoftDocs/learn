@@ -39,8 +39,11 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
+  - github
 units:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions.introduction
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions

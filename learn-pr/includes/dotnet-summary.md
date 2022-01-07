@@ -8,6 +8,7 @@
 ## Looking for more information?
 
 - [Check Out the C# Documentation](https://aka.ms/CsharpDocs)
+- [Check Out the .NET Documentation](https://aka.ms/NetDocs)
 
 ## Ready to build something?
 

@@ -2,13 +2,13 @@ Retaining documents and files enables users to find and recover them within a ce
 
 ## Recovery options for users
 
-Users can recover their own deleted files using the SharePoint Online recycle bin, OneDrive for Business recycle bin or the restore previous versions from a document stored in libraries with versioning enabled.
+Users can recover their own deleted files using the SharePoint Online recycle bin, OneDrive recycle bin or the restore previous versions from a document stored in libraries with versioning enabled.
 
-### OneDrive for Business portal
+### OneDrive portal
 
-To recover a file in OneDrive for Business as a regular user, perform the following steps in the Office 365 portal:
+To recover a file in OneDrive as a regular user, perform the following steps in the Office 365 portal:
 
-1. Navigate to your OneDrive for Business.
+1. Navigate to your OneDrive.
 
 1. Select **Recycle bin** from the left-side pane.
 
@@ -32,7 +32,7 @@ To recover a file in OneDrive for Business as a regular user, perform the follow
 
 ### Versions from the portal
 
-When a previous version of a document or spreadsheet needs to be restored, it can be done in the SharePoint Online and OneDrive for Business portal directly or via the Office Online apps. The following example shows how to restore a previous version of a Word document using the SharePoint Online portal and Office Online:
+When a previous version of a document or spreadsheet needs to be restored, it can be done in the SharePoint Online and OneDrive portal directly or via the Office Online apps. The following example shows how to restore a previous version of a Word document using the SharePoint Online portal and Office Online:
 
 1. Navigate to SharePoint Online in your tenant.
 
@@ -76,21 +76,21 @@ When different document versions exist and a comparison is required before resto
 
 You could also use the Compare and Restore buttons from the top pane in the older version of a document or spreadsheet to compare the versions side by side or restore it directly to the original location by overwriting the newer version.
 
-### Restore the entire OneDrive for Business
+### Restore the entire OneDrive
 
-Users can also restore their entire OneDrive for Business to an earlier date and revert all changes made.
+Users can also restore their entire OneDrive to an earlier date and revert all changes made.
 
-To revert the entire OneDrive for Business to an earlier state, perform the following steps in the Office 365 portal:
+To revert the entire OneDrive to an earlier state, perform the following steps in the Office 365 portal:
 
-1. Navigate to your OneDrive for Business.
+1. Navigate to your OneDrive.
 
 1. Select the cogwheel from the upper right-side and select **Restore your OneDrive**.
 
-1. Select the date from which the OneDrive for Business content shell be restored to.
+1. Select the date from which the OneDrive content shell be restored to.
 
 1. Select **Restore** to revert all changes done from the selected time.
 
-Restoring the entire OneDrive for Business content can be useful if mass changes of files in a user's account occurred, such as the deletion of a large number of files or if malware has modified a large number of files, like ransomware does when a client is infected.
+Restoring the entire OneDrive content can be useful if mass changes of files in a user's account occurred, such as the deletion of a large number of files or if malware has modified a large number of files, like ransomware does when a client is infected.
 
 ## Recovery options for administrators
 

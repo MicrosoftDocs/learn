@@ -24,7 +24,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 5. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-1. In the Function menu, select **Code + Test**. The code editor opens, displaying contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -364,7 +364,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
     The **Output** tab shows that a status field has been correctly added to each of the readings.
 
-1. To see that the request has been logged to Application Insights, in the left menu pane, under **Developer**, select **Monitor**. The **Monitor** pane appears for your function.
+1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
 
 1. Select **Configure**. The **Application Insights** pane appears for your trigger function.
 

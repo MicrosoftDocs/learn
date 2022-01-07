@@ -1,13 +1,13 @@
-You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. After you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
+You need to be in the _Standard pricing tier_ of Microsoft Defender for Cloud to use this feature. After you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the following instructions to see the required steps.
 
 ## Create a new VM
 
 Let's start by creating a virtual machine using Azure Cloud Shell.
 
 > [!NOTE]
-> This exercise can't be performed in the Azure Sandbox, so make sure to select a subscription that's enrolled in the standard tier of Security Center, or has an active 30-day trial for Security Center.
+> This exercise can't be performed in the Azure Sandbox, so make sure to select a subscription that's enrolled in the standard tier of Defender for Cloud, or has an active 30-day trial for Defender for Cloud.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is set up for the standard tier.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Microsoft Defender for Cloud is set up for the standard tier.
 
 1. Select the Cloud Shell icon from the top right of the Azure portal toolbar. Cloud Shell appears at the bottom of the portal.
 
@@ -65,11 +65,11 @@ Let's start by creating a virtual machine using Azure Cloud Shell.
 
 You should be able to connect and administer the VM. Let's fix that!
 
-## Enable JIT VM access in Security Center
+## Enable JIT VM access in Defender for Cloud
 
-1. On the home page of the [Azure portal](https://portal.azure.com?azure-portal=true) in the top search bar, search for and select  **Security Center**. The **Overview** pane for the *Security Center* appears.
+1. On the home page of the [Azure portal](https://portal.azure.com?azure-portal=true) in the top search bar, search for and select  **Defender for Cloud**. The **Overview** pane for the *Defender for Cloud* appears.
 
-1. In the left menu pane, under **Cloud Security**, select **Azure Defender**. The **Azure Defender** pane appears for the Security Center.
+1. In the left menu pane, under **Cloud Security**, select **Microsoft Defender for Cloud**. The **Microsoft Defender for Cloud** pane appears for the Defender for Cloud.
 
 1. In the main window, under **Advanced protection**, select **Just-in-time VM access**. The **Just-in-time VM access** pane appears.
 
@@ -91,7 +91,7 @@ You should be able to connect and administer the VM. Let's fix that!
 
 ## Request Remote Desktop Access
 
-If you try to RDP into the Windows VM at this point, you will find that access is blocked. When your admin needs access, they can come into Security Center to request access.
+If you try to RDP into the Windows VM at this point, you will find that access is blocked. When your admin needs access, they can come into Defender for Cloud to request access.
 
 1. Under **Virtual machines**, select the **Configured** tab.
 
@@ -107,4 +107,4 @@ If you try to RDP into the Windows VM at this point, you will find that access i
 
 1. Select **Open ports** to finalize the request. You can set the number of hours to keep the port open from this pane as well. After the time has expired, the port(s) will be closed, and access will be denied.
 
-Now, your Remote Desktop client should be able to connect successfully - at least for the time period you've allotted through Security Center.
+Now, your Remote Desktop client should be able to connect successfully - at least for the time period you've allotted through Defender for Cloud.

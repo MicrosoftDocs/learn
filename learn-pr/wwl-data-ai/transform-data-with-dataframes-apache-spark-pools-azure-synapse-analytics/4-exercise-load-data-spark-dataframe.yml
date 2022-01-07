@@ -4,12 +4,13 @@ title: 'Exercise: Load data into a spark dataframe'
 metadata:
   title: 'Exercise: Load data into a spark dataframe'
   description: "Exercise: Load data into a spark dataframe"
-  ms.date: 06/17/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: kawaaije
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-load-data-spark-dataframe.md)]

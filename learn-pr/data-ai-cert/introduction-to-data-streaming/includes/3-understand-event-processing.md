@@ -4,7 +4,7 @@ Event processing refers to the consumption and analysis of a continuous data str
 - An **event processor** responsible for the ingestion and transformation of streaming event data
 - An **event consumer** that displays or consumes event data and takes action on it
 
-![Event processing engine insights.](../media/3-event-processing-engine.png)
+![Event processing engine insights](../media/3-event-processing-engine.png)
 
 ## Event producer 
 

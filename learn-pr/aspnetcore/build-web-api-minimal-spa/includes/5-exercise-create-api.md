@@ -15,7 +15,6 @@ At this point, you have a front-end app with static data inside of the app. You 
     }];
    ```
 
-   
 1. Create a file, _db.json_, and give it the following content:
 
    ```json
@@ -35,10 +34,11 @@ At this point, you have a front-end app with static data inside of the app. You 
 
    What you're looking at is a JSON representation of your JavaScript array.
 
-1. Locate the definition of your `Main` component in _Main.js_, and change it to the following code:
+1. Locate the definition of your `Main` component in _Main.js_, and change the definition of `Main` to the following content (don't change anything else):
 
    ```javascript
    const Main = () => {
+      const [pizzas, setPizzas] = useState([]);
       useEffect(() => {
         fetchData();
       }, [])
@@ -57,10 +57,10 @@ At this point, you have a front-end app with static data inside of the app. You 
          <div>{data}</div>
         }
       </React.Fragment>)
-        
-      </React.Fragment>)
     }
    ```
+
+   The above call to `useState()` creates a state with a list `pizzas` and a method to change the content in `pizzas` called `setPizzas()`. You also added `useEffect()` which is used to call side effects. At closer inspection, you are calling `fetchData()` inside of `useEffect()` which triggers a call to your API, which in turn fetches your data from the backend, and ends up calling `setPizzas()` to update your React app.
 
    Also change the `import` at the top from:
 
@@ -146,3 +146,62 @@ Suppose the back-end team has now finished building the server. To use the serve
    Your front end should show one item with the title, *Pepperoni*.
 
 Congratulations, you've managed to create a full stack application, with both front and back ends.
+
+## Solution for frontend app
+
+If you get lost by any of the above instructions, here's the code for _Main.js_ file for the frontend project:
+
+```javascript
+import React, { useState, useEffect } from "react";
+
+const Pizza = ({ pizza }) => {
+   const [data, setData] = useState(pizza);
+   const [dirty, setDirty] = useState(false);
+   
+   function update(value, fieldName, obj) {
+      setData({ ...obj, [fieldName] : value });
+      setDirty(true);
+   }
+   
+   function onSave() {
+      setDirty(false);
+      // make rest call
+   }
+   
+   return (<React.Fragment>
+      <div>
+      <h3>
+         <input onChange={(evt) => update(evt.target.value, 'name', data)} value={data.name} /> 
+      </h3>
+      <div>
+         <input onChange={(evt) => update(evt.target.value, 'description', data)} value={data.description} />
+      </div>
+      {dirty ? 
+      <div><button onClick={onSave}>Save</button></div> : null
+      }
+      </div>
+   </React.Fragment>);
+}
+
+const Main = () => {
+  const [pizzas, setPizzas] = useState([]);
+  
+  useEffect(() => {
+    fetchData();
+  }, [])
+
+  function fetchData() {
+    fetch("/api/pizza")
+      .then(response => response.json())
+      .then(data => setPizzas(data)) 
+  }
+
+  const data = pizzas.map(pizza => <Pizza pizza={pizza} />)
+
+  return (<React.Fragment>
+   {data}
+  </React.Fragment>)
+}
+
+export default Main;
+```

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-hub-properties.tiers
+title: Examine IoT Hub tiers
+metadata:
+  title: Examine IoT Hub tiers
+  description: "Examine IoT Hub tiers"
+  ms.date: 12/16/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-iot-hub-tiers.md)]

@@ -1,8 +1,8 @@
-You can use the Kusto Query Language (KQL) in Azure Sentinel to search and filter collected data.
+You can use the Kusto Query Language (KQL) in Microsoft Sentinel to search and filter collected data.
 
 ## Kusto Query Language
 
-KQL provides you the ability to create, store, and run interactive analytics on collected data. Azure Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
+KQL provides you the ability to create, store, and run interactive analytics on collected data. Microsoft Sentinel uses KQL to visualize and analyze the important data. You can use KQL to create complex analytical queries that include some of the following operators:
 
 - Calculated columns
 - Join functions
@@ -67,12 +67,12 @@ For more information, see the Microsoft [Log analytics tutorial](/azure/azure-mo
 You can also use [Azure Data explorer tutorial](/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
 
 > [!NOTE]
-> Azure Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.
+> Microsoft Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.
 
-## Azure Sentinel repository on GitHub
+## Microsoft Sentinel repository on GitHub
 
-You can also use the [Azure Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specialized queries and workbooks to help secure your environment and hunt for threats.
-For example, the following query from Azure Sentinel GitHub repository displays suspicious delegation of permissions to user accounts. The query analyzes the IP address from where the administrator grants access to other users to Azure resources. If an operation is not from a valid IP address, the query signals suspicious activity, which you can further investigate.
+You can also use the [Microsoft Sentinel repository](https://github.com/Azure/Azure-Sentinel) on GitHub to search for specialized queries and workbooks to help secure your environment and hunt for threats.
+For example, the following query from Microsoft Sentinel GitHub repository displays suspicious delegation of permissions to user accounts. The query analyzes the IP address from where the administrator grants access to other users to Azure resources. If an operation is not from a valid IP address, the query signals suspicious activity, which you can further investigate.
 
 ```kusto
   let timeframe = 7d;

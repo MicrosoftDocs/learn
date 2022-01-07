@@ -7,7 +7,8 @@ When managing Azure Cosmos DB SQL API accounts using the Azure CLI, most command
 
 To create a new account, you will need to use the **az cosmosdb create** command. This command only requires, at a minimum, the name of the new account to create and the target resource group for the account resource. When creating the new account, you must ensure that the name you use is globally unique to avoid the command failing due to a name conflict with another service instance.
 
-> &#128161; By default, this command will create a new account using the SQL API.
+> [!TIP]
+> By default, this command will create a new account using the SQL API.
 
 ```azurecli
 az cosmosdb create \
@@ -36,7 +37,8 @@ az cosmosdb create \
 
 Later, you will learn how to specify multiple target locations while setting the appropriate failover priorities for each location.
 
-> &#128221; When in doubt, you can always look up the help documentation for commands by using the **--help** argument in these examples: ``az cosmosdb --help`` &amp; ``az cosmosdb create --help``.
+> [!NOTE]
+> When in doubt, you can always look up the help documentation for commands by using the **--help** argument in these examples: ``az cosmosdb --help`` &amp; ``az cosmosdb create --help``.
 
 ## Azure Cosmos DB SQL API subgroup commands
 
@@ -63,4 +65,5 @@ az cosmosdb sql container create \
     --partition-key-path '<partition-key-path-string>'
 ```
 
-> &#128221; When in doubt, you can always look up the help documentation for commands by using the **--help** argument in these examples: ``az cosmosdb sql --help``, ``az cosmosdb sql database --help``, &amp; ``az cosmosdb sql container --help``.
+> [!NOTE]
+> When in doubt, you can always look up the help documentation for commands by using the **--help** argument in these examples: ``az cosmosdb sql --help``, ``az cosmosdb sql database --help``, &amp; ``az cosmosdb sql container --help``.

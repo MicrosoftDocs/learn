@@ -1,4 +1,4 @@
-## [Unity 2020 + openxr](#tab/openxr)
+## [Unity 2020 + Openxr](#tab/openxr)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings.
 

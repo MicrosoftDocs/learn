@@ -2,8 +2,8 @@ You should have learned how Microsoft Sentinel provides a table to store list da
 
 You should now be able to:
 
-- Create a watchlist in Microsoft Sentinel
-- Use KQL to access the watchlist in Microsoft Sentinel
+- Create a watchlist with Microsoft Sentinel
+- Use KQL to access the watchlist with Microsoft Sentinel
 
 ## Learn more
 

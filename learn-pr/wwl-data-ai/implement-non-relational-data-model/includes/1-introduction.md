@@ -25,3 +25,8 @@ In this module, we'll take our existing relational data model and redesign it as
 ## What is the main goal?
 
 When you finish this module and the companion module, "Optimize your database by using advanced modeling patterns for Azure Cosmos DB," you'll have the knowledge and skills to properly model and partition data for a NoSQL database deployed on Azure Cosmos DB.
+
+After completing this module, you’ll be able to:
+
+- Determine access patterns for data.
+- Apply data model and partitioning strategies to support an efficient and scalable NoSQL database.

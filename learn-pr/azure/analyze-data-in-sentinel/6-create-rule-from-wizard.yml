@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Set rule logic"
       isCorrect: true
-      explanation: "In the Set rule logic section, you can define the detection method by specifying the KQL code that will run against the Azure Sentinel workspace."
+      explanation: "In the Set rule logic section, you can define the detection method by specifying the KQL code that will run against the Microsoft Sentinel workspace."
     - content: "Incident Settings"
       isCorrect: false
       explanation: "The Incident settings page can create an incident from the alerts that are triggered by the analytics rule."
@@ -37,4 +37,3 @@ quiz:
     - content: "You can create you own query to define the detection of the threat."
       isCorrect: true
       explanation: "You can use either a predefined or a custom query to detect threats."
-

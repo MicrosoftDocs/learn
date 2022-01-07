@@ -35,7 +35,7 @@ Data can be ingested in two modes: **Batching** or **Streaming**. Batching inges
 
 ### How do I analyze my data?
 
-Azure Data Explorer uses the proprietary Kusto Query Language (KQL) to analyze data. It's widely used in Microsoft (Azure Monitor - Log Analytics and Application Insights, Azure Sentinel, and Microsoft 365 Defender). KQL is optimized for fast-flowing, diverse, big data exploration. Queries reference tables, views, functions, and any other tabular expressions. This can includes tables in different databases or even clusters. Queries can be run using the Web UI, a variety of query tools, or with one of the Azure Data Explorer SDKs.
+Azure Data Explorer uses the proprietary Kusto Query Language (KQL) to analyze data. It's widely used in Microsoft (Azure Monitor - Log Analytics and Application Insights, Microsoft Sentinel, and Microsoft 365 Defender). KQL is optimized for fast-flowing, diverse, big data exploration. Queries reference tables, views, functions, and any other tabular expressions. This can includes tables in different databases or even clusters. Queries can be run using the Web UI, a variety of query tools, or with one of the Azure Data Explorer SDKs.
 
 ### How does the Kusto Query Language work?
 

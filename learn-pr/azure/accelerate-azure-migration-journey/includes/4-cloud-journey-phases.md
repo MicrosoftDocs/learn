@@ -41,7 +41,7 @@ This is accomplished by creating a cloud strategy team. This team will be respon
 
 #### Engage a partner
 
-The migration and modernization process often requires a deep understanding of Azure in order to ensure a smooth an successful migration. Engaging a partner early in the process provides the ability to leverage their deep domain expertise both in the planning and execution of the move.
+The migration and modernization process often requires a deep understanding of Azure in order to ensure a smooth a successful migration. Engaging a partner early in the process provides the ability to leverage their deep domain expertise both in the planning and execution of the move.
 
 By engaging a partner in the planning process, potential pitfalls can be avoided in the migration and modernization journey as they will have the experience to drive the move forward along the correct path.
 
@@ -135,7 +135,7 @@ Putting the proper foundation down for moving to the cloud is critical. However,
 
 #### Security
 
-Once workloads have been moved into the cloud, Azure Defender can help manage security to help manage the security of these application. This protection can be provided at the network level using Azure Firewalls, the identity level in Azure Active Directory, or by sending alerts of particular activities with Azure Sentinel.
+Once workloads have been moved into the cloud, Microsoft Defender for Cloud can help manage security to help manage the security of these application. This protection can be provided at the network level using Azure Firewalls, the identity level in Azure Active Directory, or by sending alerts of particular activities with Microsoft Sentinel.
 
 ![Graphic showing Security option in Azure](../media/manage-security.png)
 

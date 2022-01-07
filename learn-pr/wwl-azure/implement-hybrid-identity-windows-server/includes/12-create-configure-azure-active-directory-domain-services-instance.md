@@ -6,7 +6,7 @@ In this demonstration, you'll learn how to:
 
 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ALnB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ALnB]
 
 ## Next steps
 

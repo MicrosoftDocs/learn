@@ -29,7 +29,7 @@ prerequisites: |
     - An active Azure subscription
     - Visual Studio Code installed on your computer
     - Arduino IDE installed on your computer
-    - .NET Core SDK installed on your computer
+    - .NET SDK installed on your computer
 
 iconUrl: /learn/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:

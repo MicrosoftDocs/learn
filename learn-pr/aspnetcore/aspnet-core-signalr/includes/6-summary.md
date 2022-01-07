@@ -6,3 +6,5 @@ SignalR could allow us to replace the client-side polling, and solve the loss of
 - [Send messages from outside hub](/aspnet/core/signalr/hubcontext)
 - [Manage users and groups in SignalR](/aspnet/core/signalr/groups)
 - [ASP.NET Core SignalR clients](/aspnet/core/signalr/client-features)
+
+[!include[](../../../includes/dotnet-summary.md)]

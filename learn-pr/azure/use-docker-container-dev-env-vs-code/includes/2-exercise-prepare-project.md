@@ -16,7 +16,7 @@ In this exercise, you'll clone one of the agency's projects: a Products Dashboar
 1.  Paste in the URL from your clipboard.
 1.  Select a location on your disk where the project can be cloned to.
 1.  Select **Open** from the notification in Visual Studio Code.
-1.  Select "Yes, I trust the authors". 
+1.  If you see a pop-up that asks if you trust the authors, select "Yes, I trust the authors". 
 
 The project should now be open in Visual Studio Code.
 
@@ -25,18 +25,13 @@ The project should now be open in Visual Studio Code.
 
 ## Install the Remote - Containers extension
 
-1. Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> to open the **Extensions** viewlet, or click on the "Extensions" icon in the activity bar.
+1. Click on the "Extensions" icon in the Activity Bar to open the **Extensions** viewlet
+
+   :::image type="content" source="../media/extensions-icon.png" alt-text="Screenshot of the Visual Studio Code activity bar with Extension icon highlighted"::: <!-- no-loc -->
+
 1. Type **remote containers**.
 1. Locate the **Remote - Containers** extension and select the **Install** button.
 
    :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Remote Containers extension." loc-scope="other"::: <!-- no-loc -->
 
 The Remote - Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
-
-### Windows Only : Configure Docker
-
-If you are using Windows and are **not** using the Windows Subsystem For Linux (WSL) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
-
-1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. This option is not available if you have enabled the WSL 2 back-end.
-
-   :::image type="content" source="../media/docker-file-sharing.png" alt-text="Screenshot of the Docker Desktop client with File Sharing settings open." loc-scope="other"::: <!-- no-loc -->

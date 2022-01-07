@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-aspnetcore
 title: Build a web API with minimal API, ASP.NET Core, and .NET 6
 summary: Learn how to build a web API with minimal API and .NET 6.
 abstract: |

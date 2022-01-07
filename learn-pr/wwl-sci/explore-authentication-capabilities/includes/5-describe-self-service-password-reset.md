@@ -2,7 +2,7 @@ Self-service password reset (SSPR) is a feature of Azure AD that allows users to
 
 If a user's account is locked or they forget the password, they can follow a prompt to reset it and get back to work. Self-service password reset has several benefits:
 
-- It increases security, as help desks add an extra security layer.
+- Administrators can change settings to accommodate new security requirements and roll these changes out to users without disrupting their sign-in.
 - It saves the organization money by reducing the number of calls and requests to help desk staff.
 - It increases productivity, allowing the user to return to work faster.
 

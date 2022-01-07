@@ -27,7 +27,7 @@ On Azure your developers have the flexibility to build and deploy apps using the
 
 ## Operate hybrid seamlessly
 
-Azure is the only consistent hybrid cloud on the market, allowing your business to develop and deploy where you want. For example, you can store you data on-premises to meet regulatory standards, run your applications in the cloud, and interact with your customer using Edge devices like HoloLens and Azure Sphere.
+Azure is the only consistent hybrid cloud on the market, allowing your business to develop and deploy where you want. For example, you can store your data on-premises to meet regulatory standards, run your applications in the cloud, and interact with your customer using Edge devices like HoloLens and Azure Sphere.
 
 |  |  |
 | ------------ | -------------| 

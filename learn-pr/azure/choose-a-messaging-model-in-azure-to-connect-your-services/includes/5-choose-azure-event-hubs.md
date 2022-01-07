@@ -7,27 +7,23 @@ You want to use historic sensor data to find patterns in the sensor readings tha
 ## What is Azure Event Hubs?
 [Event Hubs](https://azure.microsoft.com/services/event-hubs/) is an intermediary for the publish-subscribe communication pattern. Unlike [Event Grid](https://azure.microsoft.com/services/event-grid/), however, it is optimized for extremely high throughput, a large number of publishers, security, and resiliency.
 
-#### What is an Event Hub?
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuat]
 
 Whereas Event Grid fits perfectly into the publish-subscribe pattern in that it simply manages subscriptions and routes communications to those subscribers, Event Hubs performs quite a few additional services. These additional services make it look more like a service bus or message queue, than a simple event broadcaster.
 
 #### Partitions
-As Event Hubs receives communications, it divides them into partitions. Partitions are buffers into which the communications are saved. Because of the event buffers, events are not completely ephemeral, and an event isn't missed just because a subscriber is busy or even offline. The subscriber can always use the buffer to "catch up." By default, events stay in the buffer for 24 hours before they automatically expire.
-
-The buffers are called partitions because the data is divided amongst them. Every event hub has at least two partitions, and each partition has a separate set of subscribers.
+As Event Hubs receives communications, it divides them into partitions. Partitions are buffers into which the communications are saved. Because of the event buffers, events are not completely ephemeral, and an event isn't missed just because a subscriber is busy or even offline. The subscriber can always use the buffer to "catch up." By default, events stay in the buffer for 24 hours before they automatically expire. The buffers are called partitions because the data is divided amongst them. Each partition has a separate set of subscribers.
 
 #### Capture
 Event Hubs can send all your events immediately to Azure [Data Lake](https://azure.microsoft.com/services/storage/data-lake-storage/) or Azure Blob storage for inexpensive, permanent persistence.
 
 #### Authentication
-All publishers are authenticated and issued a token. This means Event Hubs can accept events from external devices and mobile apps, without worrying that fraudulent data from pranksters could ruin our analysis. 
+All publishers are authenticated and issued a token. This means Event Hubs can accept events from external devices and mobile apps, without worrying that fraudulent data from prankers could ruin our analysis. 
 
 ## Using Event Hubs
 Event Hubs has support for pipelining event streams to other Azure services. Using it with Azure Stream Analytics, for instance, allows complex analysis of data in near real time, with the ability to correlate multiple events and look for patterns. In this case, Stream Analytics would be considered a subscriber.
 
-For our aircraft engines, we'll set up our architecture so that Event Hubs will authenticate the communications from our engines. We will then have it use capture to save all the data to Data Lake. Later, we can use all that data to retrain and improve our machine learning models. Finally, our event streams will be picked up by Stream Analytics subscribers. Stream Analytics will use our machine learning model to look for patterns in the sensor data that might indicate problems.
+For our aircraft engines, we'll set up our architecture so that Event Hubs will authenticate the communications from our engines. We will then have it use capture to save all the data to Data Lake. Later, we can use all that data to retrain and improve our machine-learning models. Finally, our event streams will be picked up by Stream Analytics subscribers. Stream Analytics will use our machine-learning model to look for patterns in the sensor data that might indicate problems.
 
 Because we have several partitions, and each engine sends all its data to only one partition, each instance of our Stream Analytics subscriber only needs to deal with a subset of our overall data. It does not have to filter and correlate over all of it.
 

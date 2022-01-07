@@ -129,7 +129,12 @@ To complete the component that sends messages about sales performance, follow th
     ```
 
     As the program executes, you'll see notifications in the Azure Cloud Shell indicating that it's sending a message. Each time you run the app, one more message will be added to the topic and each subscriber will receive a copy.
-
+    
+    ```command
+    Sending a message to the Sales Performance topic...
+    Sending message: Total sales for Brazil in August: $13m.
+    Message was sent successfully.
+    ```
 1. When you see **Message was sent successfully**, run the following command to see how many messages are in the Americas subscription. Remember to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
@@ -147,7 +152,8 @@ To complete the component that sends messages about sales performance, follow th
 
 To complete the component that retrieves messages about sales performance, follow these steps:
 
-1. In the editor, open **performancemessagereceiver/Program.cs** and locate the following line of code:
+1. Run `code .` to launch the editor. 
+2. In the editor, open **performancemessagereceiver/Program.cs** and locate the following line of code:
 
     ```C#
     const string ServiceBusConnectionString = "";
@@ -220,7 +226,18 @@ To complete the component that retrieves messages about sales performance, follo
     await processor.StartProcessingAsync();
     ```
 
-1. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
+1. Look for the following line of code. 
+
+    ```csharp
+    // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client    
+    ```
+1. Replace the line with the following code. 
+
+    ```csharp
+    await processor.DisposeAsync();
+    await client.DisposeAsync();    
+    ```
+3. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
 
 1. To display incoming messages in the console, replace all the code within that method with the following code.
 
@@ -279,7 +296,6 @@ To complete the component that retrieves messages about sales performance, follo
                 
                 Console.Read();
 
-                // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client
                 await processor.DisposeAsync();
                 await client.DisposeAsync();
             }
@@ -312,7 +328,12 @@ To complete the component that retrieves messages about sales performance, follo
     ```bash
     dotnet run -p performancemessagereceiver
     ```
-
+    
+    You'll see output similar to the following:
+    
+    ```command
+    Received message: SequenceNumber:31806672368304129 Body:Total sales for Brazil in August: $13m.
+    ```
 1. When the program has returned notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app. Then, run the following command to confirm that there are zero remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli

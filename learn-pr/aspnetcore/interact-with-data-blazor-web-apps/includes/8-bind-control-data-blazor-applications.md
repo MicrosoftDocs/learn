@@ -14,12 +14,12 @@ To bind a control, use the `@bind` directive:
 @page "/"
 
 <p>
-	Your email address is:
-	<input @bind="customerEmail" />
+    Your email address is:
+    <input @bind="customerEmail" />
 </p>
 
 @code {
-	private string customerEmail = "john.doe@contoso.com"
+    private string customerEmail = "john.doe@contoso.com"
 }
 ```
 
@@ -38,12 +38,12 @@ The `@bind` directive is smart and understands the controls it uses. For example
 <h1>My favorite pizza is: @favPizza</h1>
 
 <p>
-	Enter your favorite pizza:
-	<input @bind="favPizza" />
+    Enter your favorite pizza:
+    <input @bind="favPizza" />
 </p>
 
 @code {
-	private string favPizza { get; set; } = "Margherita"
+    private string favPizza { get; set; } = "Margherita"
 }
 ```
 
@@ -57,12 +57,12 @@ Often, that's the behavior you want. But suppose you want the `<h1>` element to 
 <h1>My favorite pizza is: @favPizza</h1>
 
 <p>
-	Enter your favorite pizza:
-	<input @bind-value="favPizza" @bind-value:event="oninput" />
+    Enter your favorite pizza:
+    <input @bind-value="favPizza" @bind-value:event="oninput" />
 </p>
 
 @code {
-	private string favPizza { get; set; } = "Margherita"
+    private string favPizza { get; set; } = "Margherita"
 }
 ```
 
@@ -78,12 +78,12 @@ If you're displaying dates to the user, you might want to use a localized data f
 <h1>Order a pizza for your birthday!</h1>
 
 <p>
-	Enter your birth date:
-	<input @bind="birthdate" @bind:format="dd-MM-yyyy" />
+    Enter your birth date:
+    <input @bind="birthdate" @bind:format="dd-MM-yyyy" />
 </p>
 
 @code {
-	private DateTime birthdate { get; set; } = new(2000, 1, 1);
+    private DateTime birthdate { get; set; } = new(2000, 1, 1);
 }
 ```
 
@@ -101,27 +101,27 @@ As an alternative to using the `@bind:format` directive, you can write C# code t
 <p>Approval rating: @approvalRating</p>
 
 <p>
-	<label>
-		Set a new approval rating:
-		<input @bind="ApprovalRating" />
-	</label>
+    <label>
+        Set a new approval rating:
+        <input @bind="ApprovalRating" />
+    </label>
 </p>
 
 @code {
     private decimal approvalRating = 1.0;
-	private NumberStyles style = NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign;
-	private CultureInfo culture = CultureInfo.CreateSpecificCulture("en-US");
-
+    private NumberStyles style = NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign;
+    private CultureInfo culture = CultureInfo.CreateSpecificCulture("en-US");
+    
     private string ApprovalRating
-	{
-		get => approvalRating.ToString("0.000", culture);
-		set
-		{
-			if (Decimal.TryParse(value, style, culture, out var number))
-			{
-				approvalRating = Math.Round(number, 3);
-			}
-		}
-	}
+    {
+        get => approvalRating.ToString("0.000", culture);
+        set
+        {
+            if (Decimal.TryParse(value, style, culture, out var number))
+            {
+                approvalRating = Math.Round(number, 3);
+            }
+        }
+    }
 }
 ```

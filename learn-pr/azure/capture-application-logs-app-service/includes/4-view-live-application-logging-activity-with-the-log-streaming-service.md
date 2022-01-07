@@ -8,17 +8,17 @@ Live log streaming is an easy and efficient way to view live logs for troublesho
 
 The log streaming service adds a redirect from the file system logs, so you'll see the same information as is saved to those log files. So, if you enable verbose logging for ASP.NET Windows apps, for example, the live log stream will show all your logged messages.
 
-![Screenshot of a live log stream with sample data from an ASP.NET website including the process I D, error severity, and full error message.](../media/4-live-log-stream.png)
+:::image type="content" source="../media/4-live-log-stream.png" alt-text="Screenshot of Azure portal live log stream pane showing output from asplogs container from previous exercise." border="false":::
 
 ### Typical scenarios for using live logging
 
-Live logging is a good tool for initial debugging. Log messages show in real time to give you quick feedback on code or server issues. You can then make a change, redeploy your app, and instantly see the results.
+Live logging is a useful tool for initial debugging. Log messages show in real time to give you immediate feedback for code or server issues. You can then make a change, redeploy your app, and instantly see the results.
 
-The live log stream connects to only one app instance, so is not useful if you have a multi-instance app. Live logging is also of limited use as you scale up your apps. In these scenarios, it is better to ensure that messages are saved to log files that can be opened and studied offline.
+The live log stream connects to a single app instance, so is not useful if you have a multi-instance app. Live logging is also of limited use as you scale up your apps. In these scenarios, it is better to ensure that messages are saved to log files that can be opened and studied offline.
 
 ## How to use live log streaming
 
-To enable live log streaming from the command line, run **Azure CLI** or **curl** commands.
+You can enable live log streaming from the command line, in a Cloud Shell session directly from the Azure portal. There are two options: **Azure CLI** or **curl** commands.
 
 ### Azure CLI
 
@@ -38,11 +38,15 @@ To use Curl, you need *FTPS credentials*. There are two types of FTPS credential
 
 - **User scope**. You can create your own credentials for use with any Web app; you can manage these credentials in the Azure portal, *as long as you already have at least one Web app*, or by using Azure CLI commands.
 
-To view and copy these details, in the left menu pane, under **Deployment**, select **Deployment Center**, and then select the **FTPS credentials** tab in the Azure portal.
+### Azure portal UI
 
-![Screenshot of the deployment center detail pane with the App deployment credentials dialog displayed.](../media/4-deployment-credentials.png)
+To view and copy these details from the Azure portal, in the **App Service** menu, under **Deployment**, select **Deployment Center**, and then select the **FTPS credentials**. tab.
 
-To create a new set of user-level credentials, run the following command.
+:::image type="content" source="../media/4-deployment-credentials.png" alt-text="Screenshot of the App Service Deployment Center pane showing FTPS credentials tab." border="false":::
+
+## Reset user-level credentials
+
+To create a new set of user-level credentials, run the following command in the Cloud Shell.
 
 ```
 az webapp deployment user set --user-name <name-of-user-to create> --password <new-password>
@@ -57,4 +61,4 @@ After you have created a set of credentials, to open the log stream, run the fol
 curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream
 ```
 
-To close the log stream session, press <kbd>Ctrl+C</kbd>.
+To close an active log stream session, press <kbd>Ctrl+C</kbd>.

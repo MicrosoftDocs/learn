@@ -189,7 +189,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 ### Create a file share
 
-1. On the storage account page, under **File service** select **File shares**.
+1. On the storage account page, under **Data storage** select **File shares**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Overview** page for the storage account. The user has selected **File shares**.](../media/7-file-shares.png)
@@ -200,7 +200,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     > [!div class="mx-imgBorder"]
     > ![Image of the **File shares** page for the storage account. The user has selected **+ File share**.](../media/7-new-file-share.png)
 
-3. Create a new file share named **reports**. Leave the **Quota** empty.
+3. Create a new file share named **reports**. Leave the **Tier** as **Transaction optimized**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **New file share** dialog box. The user has entered the name of the new file share.](../media/7-create-file-share.png)

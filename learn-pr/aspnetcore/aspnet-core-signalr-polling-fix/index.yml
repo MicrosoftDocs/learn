@@ -31,7 +31,6 @@ roles:
 products:
   - aspnet-core
   - blazor
-  - blazor-webassembly
   - dotnet
 units:
 - learn.aspnet-core-signalr-polling-fix.introduction

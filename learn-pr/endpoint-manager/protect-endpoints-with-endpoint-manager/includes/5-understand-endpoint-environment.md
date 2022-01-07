@@ -8,7 +8,7 @@ You can manage devices, apps, and data by using a cloud-based mobile device mana
 
 ## On-premises endpoint management
 
-By using an on-premises endpoint management solution, you can manage your on-premise Windows 10 devices, apps, data, and optimize downloads and content. By restricting access and location, your environment is more secure. Your end users will not be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices will not be protected as corporately recognized endpoints. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud (cloud attach), which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services.
+By using an on-premises endpoint management solution, you can manage your on-premise Windows 10/11 devices, apps, data, and optimize downloads and content. By restricting access and location, your environment is more secure. Your end users will not be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices will not be protected as corporately recognized endpoints. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud (cloud attach), which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services.
 
 ## Cloud + on-premises endpoint management
 
@@ -16,5 +16,5 @@ For Configuration Manager managed devices, data can also flow to Microsoft Endpo
  
 ## Co-managed endpoint management
 
-Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. Co-management combines your existing on-premises Configuration Manager investment with the cloud, by using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. By using co-management, you keep some tasks on-premises, while running other tasks in the cloud with Intune.
+Co-management is where you concurrently manage Windows 10/11 devices with both Configuration Manager and Microsoft Intune. Co-management combines your existing on-premises Configuration Manager investment with the cloud, by using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. By using co-management, you keep some tasks on-premises, while running other tasks in the cloud with Intune.
 

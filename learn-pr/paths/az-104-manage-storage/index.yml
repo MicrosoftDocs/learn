@@ -83,7 +83,6 @@ modules:
 - learn.wwl.configure-storage-tools
 - learn.create-azure-storage-account
 - learn.control-access-to-azure-storage-with-sas
-- learn.store-and-share-with-azure-files
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 trophy:
   uid: learn.az-104-manage-storage.trophy

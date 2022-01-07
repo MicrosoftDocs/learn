@@ -4,9 +4,9 @@ title: Manage integration runtimes
 metadata:
   title: Manage integration runtimes
   description: "Manage integration runtimes"
-  ms.date: 11/15/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -1,19 +1,19 @@
-Azure Sentinel provides several templates that are ready for use. You can use these templates to create your own workbook and then modify them as needed for Contoso.
+Microsoft Sentinel provides several templates that are ready for use. You can use these templates to create your own workbook and then modify them as needed for Contoso.
 
-## Azure Sentinel Workbooks
+## Microsoft Sentinel Workbooks
 
-Most of the data connectors Azure Sentinel uses to ingest data come with their own workbooks. You can get better insight into the data that is being ingested by using tables and visualizations, including bar and pie charts. You can also make your own workbooks from the beginning instead of using the predefined templates.
+Most of the data connectors Microsoft Sentinel uses to ingest data come with their own workbooks. You can get better insight into the data that is being ingested by using tables and visualizations, including bar and pie charts. You can also make your own workbooks from the beginning instead of using the predefined templates.
 
 ## Workbook page
 
-You can access the **Workbook** page from the Azure Sentinel from the navigation pane.
+You can access the **Workbook** page from the Microsoft Sentinel from the navigation pane.
 
 The **Workbook** page consists of the:
 
 - Workbook header. You can add a new workbook and review the saved workbooks and templates that are available on the **Workbook** page.
 - Templates section. You can access existing workbook templates on the **Templates** tab. You can save some of the workbooks for quick access and they will appear on the **My workbooks** tab.
 
-From the **Templates** page, you can select an existing workbook to display a details pane for it, which contains additional information for the templates. The details pane also contains information about the required data types and data connectors that must be connected to Azure Sentinel. You can also review how the report will display.
+From the **Templates** page, you can select an existing workbook to display a details pane for it, which contains additional information for the templates. The details pane also contains information about the required data types and data connectors that must be connected to Microsoft Sentinel. You can also review how the report will display.
 
 ## Review an existing workbook template
 
@@ -32,7 +32,7 @@ Contoso is interested in identifying the failed sign-in attempts, so that they c
 - **Sign-ins by device**. This section lists devices used by the users to sign-in Azure AD.
 - **Device sign-in details**. This section displays the users that signed in on a particular device and the time they signed in.
 
-This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Azure Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
+This information tile in the background is configured to run the query and filter the data collected from the Azure AD connector. Microsoft Sentinel then visualizes and presents the data collected with tables that are more meaningful and provide useful insight on user sign-in attempts.
 
 The workbook contains additional tiles that indicate the users who signed in using Conditional Access. From the **Conditional access status** table, you can review users who required multifactor authentication (MFA) to validate their identity.
 
@@ -47,7 +47,7 @@ The rest of the page also contains tables and charts that are interactive, and b
 
 ## Edit the query from the workbook
 
-For example, Contoso wants to search the logs for more information that presents the failed user sign-in and they are redirected to the Azure Data Explorer, where Azure Sentinel performs the log query to filter the information.
+For example, Contoso wants to search the logs for more information that presents the failed user sign-in and they are redirected to the Azure Data Explorer, where Microsoft Sentinel performs the log query to filter the information.
 
 :::image type="content" source="../media/05-data-explorer.png" alt-text="Screenshot of Data Explorer." border="true":::
 
@@ -65,7 +65,7 @@ The header bar in the editing mode contains several options, which the following
 
 When you switch to the editing mode, you'll notice several **Edit** options, which correspond to each individual aspect of your workbook.
 
-If you select one of these edit options, you can examine the query that Azure Sentinel uses to filter the data from the corresponding log.
+If you select one of these edit options, you can examine the query that Microsoft Sentinel uses to filter the data from the corresponding log.
 
 When you select the settings icon, the **Settings** page opens, where you can provide additional resources that you want to use in the workbook. You can also change the style of the workbook, provide tagging, or pin an item in the workbook.
 
@@ -76,8 +76,8 @@ You can rearrange the placement of different tables in the workbook by selecting
 For advanced customization, you can select **Advanced Editor** to open the JSON representation of the current workbook, and then further customize it in the text editor.
 You can save your changes in the existing workbook or save as another workbook. When you are done with all the customization, you can exit the edit mode by selecting **Done Editing**.
 
-## Explore the Azure Sentinel repository on GitHub
+## Explore the Microsoft Sentinel repository on GitHub
 
-The Azure Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and detect threats. Microsoft and the Azure Sentinel community contribute to this repository.
+The Microsoft Sentinel repository contains out-of-the-box detections, exploration queries, hunting queries, workbooks, playbooks and much more to help you secure your environment and detect threats. Microsoft and the Microsoft Sentinel community contribute to this repository.
 
-The repository contains folders with contributed content for several areas of Azure Sentinel functionality, including detection queries. You can use the code from these queries to create custom queries in your Azure Sentinel workspace.
+The repository contains folders with contributed content for several areas of Microsoft Sentinel functionality, including detection queries. You can use the code from these queries to create custom queries in your Microsoft Sentinel workspace.

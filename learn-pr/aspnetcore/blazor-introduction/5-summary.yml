@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: "Blazor is a user-interface framework for .NET developers that can be used to build applications with Razor and C#.  Applications run on the server with ASP.NET Core or in the browser with Web Assembly"
+  description: "Blazor is a user-interface framework for .NET developers that can be used to build applications with Razor and C#.  Applications run on the server with ASP.NET Core or in the browser with WebAssembly"
   ms.date: 9/29/2021
   author: csharpfritz
   ms.author: jefritz

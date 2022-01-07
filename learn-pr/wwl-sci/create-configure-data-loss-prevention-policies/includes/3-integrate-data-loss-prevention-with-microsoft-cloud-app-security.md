@@ -4,25 +4,25 @@ You can use DLP policies for non-Microsoft cloud apps to monitor and detect when
 
 You can create DLP policies for non-Microsoft cloud apps in two ways:
 
-- Create file policies in the cloud app security portal
+- Create file policies in the Microsoft Defender for Cloud Apps portal
 
-- Create DLP policies in the Compliance center and specify Microsoft cloud app security as the location
+- Create DLP policies in the Compliance center and specify Microsoft Defender for Cloud Apps as the location
 
-File policies allow control of the actions you can execute in MCAS when a policy match is found. Whereas DLP policies allow you more control over non-Microsoft cloud apps. If you want more control over the SharePoint Online and OneDrive for Business cloud apps you should use the SharePoint Online or OneDrive for Business portals.
+File policies allow control of the actions you can execute in Microsoft Defender for Cloud Apps when a policy match is found. Whereas DLP policies allow you more control over non-Microsoft cloud apps. If you want more control over the SharePoint Online and OneDrive cloud apps, you should use the SharePoint Online or OneDrive portals.
 
-You may need to activate the file monitoring in MCAS before creating file policies. Perform the following steps to enable MCAS to see files in the SaaS apps:
+You may need to activate the file monitoring in Defender for Cloud Apps before creating file policies. Perform the following steps to enable Defender for Cloud Apps to see files in the SaaS apps:
 
-1. Navigate to the **Cloud App Security** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true).
+1. Navigate to the **Microsoft Defender for Cloud Apps** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true).
 
-1. Select the cogwheel in the upper right and select **Settings**.
+1. Select the cogwheel in the upper right and select **Settings**, the select **Settings** again.
 
 1. Select **Files** from the **Information Protection** section.
 
 1. Check **Enable file monitoring** if not checked already and select **Save**.
 
-After selecting this setting, you can create file policies in MCAS.
+After selecting this setting, you can create file policies in Microsoft Defender for Cloud Apps.
 
-To use the capabilities of the Compliance center to monitor non-Microsoft cloud apps you need to connect these apps to Microsoft Cloud App Security. Afterwards they will be available as instances in the Microsoft Cloud app security location of your DLP policies. This is required to complete integration of MCAS into DLP.
+To use the capabilities of the Microsoft Compliance center to monitor non-Microsoft cloud apps, you need to connect these apps to Microsoft Defender for Cloud Apps. Afterwards they will be available as instances in the Microsoft Defender for Cloud Apps location of your DLP policies. This is required to complete integration of Microsoft Defender for Cloud Apps into DLP.
 
 If you do not select a specific instance the policy will apply to all connected apps.
 

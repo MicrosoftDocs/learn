@@ -21,9 +21,9 @@ quiz:
     - content: "Governance through Azure Policy and Guest Configuration"
       isCorrect: false
       explanation: "Azure Policy and Guest Configuration can be used for governance of Azure Arc-enabled servers."
-    - content: "Security through Azure Security Center and Azure Sentinel"
+    - content: "Security through Microsoft Defender for Cloud and Microsoft Sentinel"
       isCorrect: false
-      explanation: "Azure Security Center and Azure Sentinel can be used for improved security posture of Azure Arc-enabled servers."
+      explanation: "Microsoft Defender for Cloud and Microsoft Sentinel can be used for improved security posture of Azure Arc-enabled servers."
     - content: "Observability through Azure Monitor and Log Analytics"
       isCorrect: false
       explanation: "Azure Monitor and Log Analytics can be used for observability into Azure Arc-enabled servers."

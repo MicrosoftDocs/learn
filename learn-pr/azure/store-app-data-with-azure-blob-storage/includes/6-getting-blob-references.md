@@ -1,4 +1,4 @@
-To interact with a container in Blob Storage, you use a `BlobContainerClient` object.  In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
+To interact with a container in Blob Storage, use a `BlobContainerClient` object.  In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
 
 ## Listing blobs in a container
 
@@ -40,4 +40,4 @@ public async Task<IEnumerable<string>> GetNames()
 }
 ```
 
-To turn the names returned by this method into URLs, the names returned by this method are processed by `FilesController`. When they are returned to the client, they are rendered as hyperlinks on the page.
+To turn the names returned by this method into URLs, the names this method returns are processed by `FilesController`. When returned to the client, the names are rendered as hyperlinks on the page.

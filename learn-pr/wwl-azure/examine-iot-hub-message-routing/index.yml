@@ -3,7 +3,7 @@ uid: learn.wwl.examine-iot-hub-message-routing
 metadata:
   title: Examine IoT Hub message routing
   description: "This module introduces you to IoT Hub message routing, the common message format implemented by IoT Hub, IoT Hub’s service-facing endpoints, and the message routing query syntax."
-  ms.date: 11/18/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features and capabilities of IoT Hub.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot-hub-message-routing.svg
 levels:
 - intermediate
 roles:

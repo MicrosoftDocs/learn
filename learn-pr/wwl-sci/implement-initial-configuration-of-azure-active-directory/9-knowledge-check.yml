@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/12/2021
+  ms.date: 12/16/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -21,14 +21,14 @@ quiz:
     choices:
     - content: "Yes, a domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
       isCorrect: true
-      explanation: "Correct. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
+      explanation: "Correct. When an organization that contains and application or other resources, the domain can be included if it is owned by the same organization."
     - content: "A domain name can be included as part of the app ID URI for an application, but cannot be included as part of other resources."
       isCorrect: false
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
     - content: "No, a domain name cannot be included as part of an application or other resource."
       isCorrect: false
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the domain name is owned by the organization that contains the resource."
-  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and anytime.  What is the other goal?"
+  - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and anytime. What is the other goal?"
     choices:
     - content: "Provide antimalware apps for a various devices."
       isCorrect: false
@@ -46,7 +46,7 @@ quiz:
       explanation: "Sorry, that's incorrect. Azure AD guest users cannot add other B2B guests to groups."
     - content: "They can manage their own profile, change their own password, and retrieve some information about other users, groups, and apps."
       isCorrect: true
-      explanation: "Correct.  Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
+      explanation: "Correct. Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
     - content: "They can manage their own profile, change their own password, and identify group members or other directory objects."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Azure AD guest users cannot identify group members and other directory objects."

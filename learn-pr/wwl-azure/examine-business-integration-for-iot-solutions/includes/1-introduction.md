@@ -1,8 +1,8 @@
 Business integration involves sharing data between the IoT solution and other business systems so that more informed decisions can be made.
 
-Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to support downstream business integration and efforts to generate insights from IoT data. Understanding the tools and processes that can be used to integrate with downstream services will help you to ensure positive results. You decide to begin by examining contributor responsibilities and the Azure tools that can be used to implement business integration.<br>
+Suppose you have joined a team that is implementing an Azure IoT solution for the company. The company needs your team to support downstream business integration and efforts to generate insights from IoT data. Understanding the tools and processes that can be used to integrate with downstream services will help you to ensure positive results. You decide to begin by examining contributor responsibilities and the Azure tools that can be used to implement business integration.
 
-In this module, you will: 
+In this module, you will:
 
  -  Review business contributor responsibilities and the Azure services that enable downstream workflows.
  -  Examine Azure Event Grid integration within an IoT solution.

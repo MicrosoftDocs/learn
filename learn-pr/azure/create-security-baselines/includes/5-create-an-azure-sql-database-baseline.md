@@ -45,9 +45,9 @@ Threat detection is part of the Advanced Data Security (ADS) offering, which is 
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Security Center**. The **Security Center** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Defender for Cloud**. The **Defender for Cloud** pane appears for your SQL database instance.
 
-1. Under the **Recommendations** section, select **View all recommendations in Security Center**. The **Recommendations** pane appears for your SQL database instance.
+1. Under the **Recommendations** section, select **View all recommendations in Defender for Cloud**. The **Recommendations** pane appears for your SQL database instance.
 
 ### Enable all threat detection types - Level 1
 

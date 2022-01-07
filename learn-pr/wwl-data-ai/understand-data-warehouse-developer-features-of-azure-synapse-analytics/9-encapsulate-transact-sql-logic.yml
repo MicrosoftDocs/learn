@@ -4,9 +4,9 @@ title: Encapsulate transact-SQL logic with stored procedures
 metadata:
   title: Encapsulate transact-SQL logic with stored procedures
   description: "Encapsulate transact-SQL logic with stored procedures"
-  ms.date: 10/09/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

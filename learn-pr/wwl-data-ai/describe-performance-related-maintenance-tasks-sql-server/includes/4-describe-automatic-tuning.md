@@ -20,7 +20,7 @@ You can enable automatic plan correction via a T-SQL query, as shown below. The 
 ALTER DATABASE [WideWorldImporters] SET AUTOMATIC_TUNING (FORCE_LAST_GOOD_PLAN = ON);
 ```
 
-You can examine the automatic tuning recommendations through a dynamic management view (DMV), *sys.dm_db_tuning_recommendations*, which is available in SQL Server 2017 or higher and is also available in Azure SQL Database solutions. This DMV provides information such as reasons as to why the recommendation was provided, the type of recommendation, the state of the recommendation, as well as others. To confirm that automatic tuning is enabled for a database, there is a DMV sys.*database_automatic_tuning_options* that can be queried.
+You can examine the automatic tuning recommendations through a dynamic management view (DMV), `sys.dm_db_tuning_recommendations`, which is available in SQL Server 2017 or higher and is also available in Azure SQL Database solutions. This DMV provides information such as reasons as to why the recommendation was provided, the type of recommendation, the state of the recommendation, as well as others. To confirm that automatic tuning is enabled for a database, there is a DMV sys.*database_automatic_tuning_options* that can be queried.
 
 ### Automatic index management
 
@@ -29,5 +29,15 @@ Azure SQL Database can perform automatic index tuning. Over time, the database w
 :::image type="content" source="../media/module-44-optimize-resources-final-26.png" alt-text="Automatic tuning Options":::
 
 When enabled, the Performance Recommendations blade will identify indexes that can be created or dropped depending on query performance. Remember this feature is not available for on-premises databases and only available for Azure SQL Database.
+
+Alternatively, use the following query to see the automatic tuning features enabled in your database:
+
+```sql
+SELECT name,
+    desired_state_desc,
+    actual_state_desc,
+    reason_desc
+FROM sys.database_automatic_tuning_options
+```
 
 Creating new indexes can consume resources, and the timing of the index creations is critical to ensure no negative impact is felt on your workloads. Azure SQL Database will monitor windows of time to implement new indexes to avoid causing performance issues. If resources are needed for existing workloads and potentially not available to create an index, the tuning action is postponed until such time as resources are available. If a newly created index does not result in an increase in query performance, it will be dropped quickly. This monitoring process will validate that any actions taken only helps performance and does not degrade it. If an index is dropped and query performance noticeably degrades, the recently dropped index will be recreated automatically.
