@@ -2,12 +2,12 @@ In this exercise, you'll use enums, structs, and functions to process new car or
 Your challenge is to correct the sample code so it compiles and runs.
 
 To work on the sample code for this exercise, you have two options:
-- Copy the code and edit it in your local development environment. 
+
+- Copy the code and edit it in your local development environment.
 - Open the code in a prepared Rust Playground.
 
 > [!Note]
 > In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
-
 
 ## Define an enum
 
@@ -15,8 +15,7 @@ Your first task is to fix syntax issues in the enum definition, so the code comp
 
 1. Open the first block of sample code.
 
-    Copy the following code and edit it in your local development environment,<br>
-    or open the code in this prepared [Rust Playground][RustPlay-exercise].
+    Copy the following code and edit it in your local development environment, or open the code in this prepared [Rust Playground][RustPlay-exercise].
 
     ```rust
     // Declare Car struct to describe vehicle with four named fields
@@ -42,7 +41,6 @@ Your first task is to fix syntax issues in the enum definition, so the code comp
     Make sure the code compiles before you continue to the next section. The code doesn't display any output yet, but it needs to compile without any errors.
 
     You can ignore *warning* messages from the compiler. The warnings are because you declared enum and struct definitions, but haven't used them yet.
-
 
 ## Instantiate a struct
 
@@ -70,8 +68,7 @@ Next, add code for the `car_factory` function to create an instance of a `Car` s
     > [!Tip]
     > You'll need to change the statement from a type declaration `let car: Car` to an instantiation `let car = Car { ... }`.
 
-1. Rebuild your code and make sure it compiles. 
-
+1. Rebuild your code and make sure it compiles.
 
 ## Return a value from a function
 
@@ -86,7 +83,7 @@ Now, update the `car_factory` function to return the created `Car` struct. To re
     > [!Tip]
     > Watch for case sensitivity. Don't try to compile your code yet!
 
-1. To return the newly created car, adjust the statement where you instantiated the `Car` struct. 
+1. To return the newly created car, adjust the statement where you instantiated the `Car` struct.
 
     ```rust
         let car: Car = todo!("An instance of a `Car` struct", "Set the function return value");
@@ -121,18 +118,16 @@ Now you're ready to call the function and build some cars!
     ```
 
 1. Rebuild the code. All the declared items are now used, so the compiler shouldn't issue any errors or warnings. You should see the following output:
-    
+
     ```output
     Car 1 = Red, Manual transmission, convertible: false, mileage: 0
     Car 2 = Silver, Automatic transmission, convertible: true, mileage: 0
     Car 3 = Yellow, SemiAuto transmission, convertible: false, mileage: 0
     ```
 
-
 ## Solution
 
 You can compare your code with the prepared solution in this [Rust Playground][RustPlay-answer].
-
 
 <!-- Links -->
 

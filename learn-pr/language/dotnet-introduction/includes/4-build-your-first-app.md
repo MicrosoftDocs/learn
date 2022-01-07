@@ -27,7 +27,7 @@ Press the green **Run** button on the right side of the .NET editor. Assuming yo
 
 ### What happens to the code you write?
 
-The browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2019, or Visual Studio Code.
+The browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2022, or Visual Studio Code.
 
 When you include the hidden code, here's how the example looks:
 
