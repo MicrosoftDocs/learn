@@ -14,9 +14,9 @@ Let's start by configuring the 5-year retention by using the portal.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
-1. Under **Settings**, select **Backups**.
+1. Under **Data Management**, select **Backups**.
 
-1. In the list of databases, select **sql-erp-db**, and then select **Configure retention**.
+1. In the list of databases, select **sql-erp-db**. Select the **Retention policies** tab, and then select **Configure policies**.
 
 1. Select **Yearly LTR Backups**.
 
