@@ -6,7 +6,7 @@ The following video explains the problem with passwords, and why multi-factor au
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zhD7]
 
-Azure Active Directory Multi-factor Authentication works by requiring:
+Azure Active Directory Multi-Factor Authentication works by requiring:
 
 - **Something you know** – typically a password or PIN **and**
 - **Something you have** – such as a trusted device that's not easily duplicated, like a phone or hardware key **or**
@@ -16,7 +16,7 @@ Multi-factor authentication verification prompts are configured to be part of th
 
 An administrator can require certain verification methods, or the user can access their MyAccount to edit or add verification methods.
 
-The following extra forms of verification can be used with Azure Active Directory Multi-factor Authentication:
+The following extra forms of verification can be used with Azure Active Directory Multi-Factor Authentication:
 
 - Microsoft Authenticator app
 - SMS
@@ -29,7 +29,7 @@ The following extra forms of verification can be used with Azure Active Director
 
 Security defaults are a set of basic identity security mechanisms recommended by Microsoft. When enabled, these recommendations will be automatically enforced in your organization. The goal is to ensure that all organizations have a basic level of security enabled at no extra cost. These defaults enable some of the most common security features and controls, including:
 
-- Enforcing Azure Active Directory Multi-factor Authentication registration for all users.
+- Enforcing Azure Active Directory Multi-Factor Authentication registration for all users.
 - Forcing administrators to use multi-factor authentication.
 - Requiring all users to complete multi-factor authentication when needed.
 
