@@ -1,4 +1,4 @@
-Alerts triggered in Microsoft security solutions that are connected to Microsoft Sentinel, such as Microsoft Defender for Cloud Apps and Azure Advanced Threat Protection, do not automatically create incidents in Microsoft Sentinel. By default, when you connect a Microsoft solution to Microsoft Sentinel, any alert generated in that service will be stored as raw data in Microsoft Sentinel, in the Security Alert table in your Microsoft Sentinel workspace. You can then use that data like any other raw data you connect into Sentinel.
+Alerts that are triggered in Microsoft security solutions that are connected to Microsoft Sentinel, such as Microsoft Defender for Cloud Apps and Azure Advanced Threat Protection, don't automatically create incidents in Microsoft Sentinel. By default, when you connect a Microsoft solution to Microsoft Sentinel, any alert generated in that service will be stored as raw data in Microsoft Sentinel, in the Security Alert table in your Microsoft Sentinel workspace. You can then use that data like any other raw data you connect into Sentinel.
 
 ### Using Microsoft Security incident creation analytic rules
 
