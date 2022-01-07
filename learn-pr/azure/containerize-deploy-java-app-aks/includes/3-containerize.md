@@ -24,6 +24,9 @@ First you'll clone the Flight Booking System Sample repo.
 > [!NOTE]
 > If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone the Flight Booking System Sample.
 
+> [!NOTE]
+Optionally, if you have Java & Maven installed, you can run the following command(s) in your CLI to get an sense of the experience in building the application without Docker. If you do not have Java & Maven installed, you can safely jump ahead to the next section below titled "Construct a Docker file", In that section you will use Docker to pull down Java and Maven to execute the builds on your behalf.
+
 Run the following command in your CLI:
 
 ```bash
