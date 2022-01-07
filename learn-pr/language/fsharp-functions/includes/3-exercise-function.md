@@ -36,9 +36,9 @@ You'll start by scaffolding a new F# project, and then you'll take a piece of co
       else string no
    ```
 
-    The first line of this code `let cardFace card` makes it into a function. It's now a function called `cardFace` that takes the parameter `card`.
+    The first line of this code `let cardFace card` makes it into a function. It's now a function called `cardface()` that takes the parameter `card`.
 
-1. Add the following code below the 'cardFace` function.
+1. Add the following code below the `cardface()` function.
 
    ```fsharp
    printfn "%s" (cardFace 11)
@@ -62,7 +62,7 @@ Congratulations! You've taken a piece of code that you wanted to make reusable a
 
 You've turned your colleague's code into a function. To make this code more readable, you decide to add type definitions to it.
 
-1. Modify your existing function `cardFace()` to look like so:
+1. Modify your existing `cardface()` function  to look like so:
 
    ```fsharp
    let cardFace (card:int) = 
@@ -88,7 +88,7 @@ You've turned your colleague's code into a function. To make this code more read
 
    The code still works and you've made it clearer by adding a type to the input parameter.
 
-1. Alter your `cardFace()` function to look like so:
+1. Alter your `cardface()` function to look like so:
 
    ```fsharp
    let cardFace (card:int) :string = 

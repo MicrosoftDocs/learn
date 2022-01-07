@@ -33,7 +33,7 @@ By placing `product` on the last line, it tells you what's being returned. So ho
 
 ### Call a function
 
-To call, or invoke, a function, use the name of the function and add any parameters you want to use, separated by a space character. For example, to call the `addAndMultiply` function, enter the following code:
+To call, or invoke, a function, use the name of the function and add any parameters you want to use, separated by a space character. For example, to call the `addAndMultiply()` function, enter the following code:
 
 ```fsharp
 addAndMultiply 2 3 3 // 15
@@ -67,7 +67,7 @@ but here has type
     'string'    
 ```
 
-The reason for the failure is that F# already determined what parameter type should be used, and it decided on integer. The reason it decided on integer was because of the information in the second row, `let sum = add 2 2`. The function `add` was used in a way that stated that the parameter type was definitely integer.
+The reason for the failure is that F# already determined what parameter type should be used, and it decided on integer. The reason it decided on integer was because of the information in the second row, `let sum = add 2 2`. The function `add()` was used in a way that stated that the parameter type was definitely integer.
 
 If the second row didn't exist, your code works:
 
