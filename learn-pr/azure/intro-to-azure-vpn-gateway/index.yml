@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.azure-vpn-gateway-introduction
+uid: learn.azure.intro-to-azure-vpn-gateway
 metadata:
   title: Introduction to Azure VPN Gateway
   description: Learn what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
@@ -28,11 +28,11 @@ products:
 prerequisites: |
   Understanding of basic networking concepts.
 units:
-  - learn.azure.azure-vpn-gateway-introduction.introduction
-  - learn.azure.azure-vpn-gateway-introduction.what-is-azure-vpn-gateway
-  - learn.azure.azure-vpn-gateway-introduction.how-vpn-gateway-works
-  - learn.azure.azure-vpn-gateway-introduction.vpn-gateway-scenarios
-  - learn.azure.azure-vpn-gateway-introduction.knowledge-check
-  - learn.azure.azure-vpn-gateway-introduction.summary
+  - learn.azure.intro-to-azure-vpn-gateway.introduction
+  - learn.azure.intro-to-azure-vpn-gateway.what-is-azure-vpn-gateway
+  - learn.azure.intro-to-azure-vpn-gateway.how-vpn-gateway-works
+  - learn.azure.intro-to-azure-vpn-gateway.vpn-gateway-scenarios
+  - learn.azure.intro-to-azure-vpn-gateway.knowledge-check
+  - learn.azure.intro-to-azure-vpn-gateway.summary
 badge:
-  uid: learn.azure.azure-vpn-gateway-introduction.badge
+  uid: learn.azure.intro-to-azure-vpn-gateway.badge
