@@ -40,8 +40,7 @@ Rust comes with some built-in primitive data types to express numbers, text, and
 - Booleans
 - Characters
 
-Rust also offers more complex data types to work with data series, such as string and tuple values. 
-
+Rust also offers more complex data types to work with data series, such as string and tuple values.
 
 ## Numbers: Integers and floating point values
 
@@ -76,25 +75,23 @@ println!("9 / 2 = {} but 9.0 / 2.0 = {}", 9u32 / 2, 9.0 / 2.0);
 ```
 
 > [!NOTE]
-> When we call the `println` function, we add the data type suffix to each literal number to inform Rust about the data type. The syntax `1u32` tells the compiler the value is the number 1 and to interpret the value as an unsigned 32-bit integer. 
-> &nbsp;
+> When we call the `println` macro, we add the data type suffix to each literal number to inform Rust about the data type. The syntax `1u32` tells the compiler the value is the number 1 and to interpret the value as an unsigned 32-bit integer.
+>
 > If we don't provide type annotations, Rust tries to infer the type from the context. When the context is ambiguous, it assigns the `i32` type (a 32-bit signed integer) by default.
 
 You can try running this example in the [Rust Playground][RustPlay-numbers].
 
-
 ## Booleans: True or false
 
-The boolean type in Rust is used to store truthiness. The `bool` type has two possible values: `true` or `false`. Boolean values are used widely in conditional expressions. If a `bool` statement or value is true, then do this action; otherwise (the statement or value is false), do a different action. A boolean value is often returned by a comparison check. 
+The boolean type in Rust is used to store truthiness. The `bool` type has two possible values: `true` or `false`. Boolean values are used widely in conditional expressions. If a `bool` statement or value is true, then do this action; otherwise (the statement or value is false), do a different action. A boolean value is often returned by a comparison check.
 
-In the following example, we use the greater than `>` operator to test two values. The operator returns a boolean value that shows the result of the test. 
+In the following example, we use the greater than `>` operator to test two values. The operator returns a boolean value that shows the result of the test.
 
 ```rust
 // Declare variable to store result of "greater than" test, Is 1 > 4? -- false
 let is_bigger = 1 > 4;
 println!("Is 1 > 4? {}", is_bigger);  
 ```
-
 
 ## Text: Characters and strings
 
@@ -111,29 +108,27 @@ let smiley_face = '😃';
 > [!NOTE]
 > Some languages treat their `char` types as 8-bit unsigned integers, which is the equivalent of the Rust `u8` type. The `char` type in Rust contains unicode code points, but they don't use utf-8 encoding. A `char` in Rust is a 21-bit integer that's padded to be 32 bits wide. The `char` contains the plain code point value directly.
 
-
 ### Strings
 
-The `str` type, also known as a *string slice* is a **view** into string data. Most of the time, we refer to these types by using reference-style syntax that precedes the type with the ampersand `&str`. We'll cover references in the following modules. For now, you can think of `&str` as a pointer to an immutable string data. String literals are all of type `&str`.
+The `str` type, also known as a *string slice* is a **view** into string data. Most of the time, we refer to these types by using reference-style syntax that precedes the type with the ampersand `&str`. We'll cover references in the following modules. For now, you can think of `&str` as a pointer to immutable string data. String literals are all of type `&str`.
 
 Although string literals are convenient to use in introductory Rust examples, they aren't suitable for every situation where we might want to use text. Not every string can be known at compile time. An example is when a user interacts with a program during runtime and sends text via a terminal.
 
-For these scenarios, Rust has a second string type named `String`. This type is allocated on the heap. When you use the `String` type, the length of the string (number of characters) doesn't need to be known before the code is compiled. 
+For these scenarios, Rust has a second string type named `String`. This type is allocated on the heap. When you use the `String` type, the length of the string (number of characters) doesn't need to be known before the code is compiled.
 
 > [!NOTE]
-> If you're familiar with a garbage-collected language, you might be wondering why Rust has two string types.<sup>**1**</sup> Strings are extremely complex data types. Most languages use their garbage collectors to gloss over this complexity. Rust as a system's language exposes some of the inherent complexity of strings. With the added complexity comes a very fine-grained amount of control over how memory is used in your program.<br>
-> 
+> If you're familiar with a garbage-collected language, you might be wondering why Rust has two string types.<sup>**1**</sup> Strings are extremely complex data types. Most languages use their garbage collectors to gloss over this complexity. Rust as a system's language exposes some of the inherent complexity of strings. With the added complexity comes a very fine-grained amount of control over how memory is used in your program.
+>
 > <sup>**1**</sup> _Actually, Rust has more than two string types. In this module, we cover only the `String` and `&str` types. You can learn more about the string types offered in the [Rust documentation][Rust-string].
 
 We won't get a full idea of the difference between `String` and `&str` until we learn about Rust's ownership and borrowing system. Until then, you can think of `String` type data as text data that can change as your program runs. The `&str` references are immutable views into the text data that don't change as your program runs.
-
 
 ### Text example
 
 The following example shows how to use the `char` and `&str` data types in Rust.
 
 - Two character variables are declared with the `: char` annotation syntax. The values are specified by using single quotation marks.
-- A third character variable is declared and bound to a single image. For this variable, we let the compiler infer the data type. 
+- A third character variable is declared and bound to a single image. For this variable, we let the compiler infer the data type.
 - Two string variables are declared and bound to their respective values. The strings are enclosed in double quotation marks.
 - One of the string variables is declared with the `: &str` annotation syntax to specify the data type. The data type for the other variable is left unspecified. The compiler will infer the data type for this variable based on the context.
 
@@ -168,7 +163,6 @@ What happens if we don't specify the ampersand `&` before `str` in this example?
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
-
 
 <!-- Links -->
 
