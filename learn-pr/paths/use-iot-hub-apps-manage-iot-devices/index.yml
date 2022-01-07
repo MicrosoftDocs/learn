@@ -3,7 +3,7 @@ uid: learn.wwl.manage-iot-devices-by-using-iot-hub-apps
 metadata:
   title: Manage IoT devices by using IoT Hub and apps
   description: Manage IoT devices by using IoT Hub and apps
-  ms.date: 11/29/2021
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   - Describe the concept of device twins and how devices twins are used.
 summary: |
   You will learn about device management patterns and the capabilities for device management, including bulk device management, that can be implemented using features of IoT Hub and by developing code.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/iot-hub-devices-apps.svg
 levels:
 - intermediate
 roles:
