@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cultivate-an-innovative-mindset.wpp-case-study-introduction
+title: WPP – Case study introduction 
+metadata:
+  title: WPP – Case study introduction 
+  description: PENDING
+  ms.date: 12/13/2021
+  author: amiguelblanco
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-wpp-case-study-introduction.md)] 

@@ -1,9 +1,9 @@
-Like businesses, governments around the world are looking to take advantage of AI to engage citizens, aid tax compliance, drive smart city initiatives, and improve security and defense. Because governments make decisions and deliver services that have a serious impact on people’s lives, they are seeing a growing need to provide oversight and create guidelines to help them design and manage AI solutions responsibly.
+Innovation doesn’t exist in just one department, or rather it doesn’t have to. It comes from anywhere in an organization, but for that to happen business leaders need to lead employees to feel empowered to innovate. That means intentionally investing in the space, time, and resources to continuously encourage experimentation, trial and error, and brainstorming to improve, iterate, and adapt long term.
 
-**In this module, you will learn to:**
+Companies that instill this practice will accelerate making changes to their operating environment, develop strategies in the face of sudden change, and define potential responses. Continuous innovation today requires merging the powers of human ingenuity and technology—and by doing so, business leaders are cultivating an innovative mindset across the organization.
 
-* Determine the elements of an AI governance system.
-* Choose an AI governance model that fits your government’s needs.
-* Approach policy discussions to promote broad development and deployment of ethical AI systems.
+**By completing this module, you will be able to:**
 
-Let’s explore the governing practices of responsible AI in government.
+* Learn why a culture that empathizes, supports, and encourages collaboration is paramount to innovation.
+* Evaluate and prioritize organizational readiness for long-term innovation.
+* Learn how to apply creative ways to encourage experimentation and coinnovation across your organization.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cultivate-an-innovative-mindset.establish-collaborative-environment
+title: Establish a collaborative environment
+metadata:
+  title: Establish a collaborative environment
+  description: PENDING
+  ms.date: 12/13/2021
+  author: amiguelblanco
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-establish-collaborative-environment.md)] 
