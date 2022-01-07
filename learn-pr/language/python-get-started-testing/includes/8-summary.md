@@ -1,0 +1,1 @@
+In this module we introduced you to testing, an essential part of software engineering. You should now feel comfortable discussing different aspects of testing and testing types, and have a good foundation to start implementing a testing strategy for almost any software project.
