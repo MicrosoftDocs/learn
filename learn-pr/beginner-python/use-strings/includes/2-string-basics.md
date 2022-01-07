@@ -37,13 +37,13 @@ You can enclose Python strings in single, double, or triple quotation marks. Alt
 moon_radius = "The Moon has a radius of 1,080 miles"
 ``` 
 
-However, when a string has words (a *substring*) within it that also have quotation marks, you should use a different style. For example, if you have a substring that uses double quotation marks, use single quotation marks to surround the entire string:
+However, when a string contains words, numbers, or special characters (a *substring*) that are also enclosed in quotation marks, you should use a different style. For example, if a substring uses double quotation marks, enclose the entire string in single quotation marks, as shown here:
 
 ```python
 'The "near side" is the part of the Moon that faces the Earth'
 ```
 
-Similarly, if there are single quotation marks (or an apostrophe, as in *Moon's* in the following example) anywhere within the string, use double quotation marks to surround the entire string. 
+Similarly, if there are single quotation marks (or an apostrophe, as in *Moon's* in the following example) anywhere within the string, enclose the entire string in double quotation marks: 
 
 ```python
 "We only see about 60% of the Moon's surface"
