@@ -56,7 +56,7 @@ To disable this attenuation, you need to adjust the **Volume** curve In the **Au
 
 ## Test the spatialize audio
 
-To test the spatialize audio in the unity editor you've to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.
+To test the spatialize audio in the Unity editor you've to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.
 
 In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on your workstation. You can also change the Audio Source settings for testing by:
 
