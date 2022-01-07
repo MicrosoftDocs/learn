@@ -1,4 +1,4 @@
-In the previous unit, you learned about multifactor authentication, and why it improves security. In this unit, we consider the different authentication methods that can be used with Azure AD multi-factor authentication.
+In the previous unit, you learned about multi-factor authentication, and why it improves security. In this unit, we consider the different authentication methods that can be used with Azure AD Multi-Factor Authentication.
 
 :::image type="content" source="../media/3-passwords-supplemented-replaced.png" alt-text="Passwords should be supplemented or replaced":::
 
@@ -20,7 +20,7 @@ If you set up your additional security verification to receive a text message, y
 
 ## Microsoft Authenticator app
 
-The Microsoft Authenticator phone app allows you to securely verify your identity. The Authenticator app is used to provide the additional information required for two-step or multifactor authentication. Microsoft Authenticator can also be configured to use biometrics, such as a fingerprint or facial scan.
+The Microsoft Authenticator phone app allows you to securely verify your identity. The Authenticator app is used to provide the additional information required for two-step or multi-factor authentication. Microsoft Authenticator can also be configured to use biometrics, such as a fingerprint or facial scan.
 
 To use Microsoft Authenticator, you must download the phone app from the Microsoft store, and register your account. Microsoft Authenticator is available for Android and iOS. When a user chooses Authenticator as their extra authentication method, a notification is pushed to the phone or tablet. if the notification is legitimate, the user selects **Approve**, otherwise, they select **Deny**.
 

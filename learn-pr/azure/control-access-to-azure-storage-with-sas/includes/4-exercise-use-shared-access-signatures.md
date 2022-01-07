@@ -133,7 +133,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     The URL should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. 
     
-    The **Lamna Healthcare** Patient Diagnostic Image System appears.
+    Sign in if you're prompted to do so. The **Lamna Healthcare** Patient Diagnostic Image System appears.
 
 1. Select **Get all patients** to view a listing of all the images in the storage account.
 
