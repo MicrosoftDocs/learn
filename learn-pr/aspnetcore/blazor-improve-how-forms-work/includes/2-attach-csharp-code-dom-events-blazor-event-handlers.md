@@ -120,7 +120,7 @@ On an HTML page, the user can tab between elements, and the focus naturally trav
 
 The simplest way to perform this task is to use the `FocusAsync` method. This is an instance method of an `ElementReference` object. The `ElementReference` should reference the item to which you want to set the focus. You designate an element reference with the `@ref` attribute, and create a C# object with the same name in your code.
 
-In the example below, the `@onclick` event handler for the \<button\> element sets the focus to the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message `Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
+In the example below, the `@onclick` event handler for the \<button\> element sets the focus to the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message "Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
  
 ```razor
 <button class="btn btn-primary" @onclick="ChangeFocus">Click me to change focus</button>
