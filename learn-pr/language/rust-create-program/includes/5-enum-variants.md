@@ -1,7 +1,6 @@
 Enums are types that can be any one of several variants. What Rust calls enums are more commonly known as [algebraic data types][Wikipedia-algebraic]. The important detail is that each enum variant can have data to go along with it.
 
-We use the `enum` keyword to create an enum type, which can have any combination of the enum variants. Like structs, enum variants can have named fields, fields without names, or no fields at all. Like struct types, enum types are also capitalized.
-
+We use the `enum` keyword to create an enum type, which can have any combination of the enum variants. Like structs, enum variants can have named fields, but they can also have fields without names, or no fields at all. Like struct types, enum types are also capitalized.
 
 ## Define an enum
 
@@ -26,7 +25,6 @@ The enum in our example has three variants of different types:
 
 We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `WEClick` variant, but not the other variants.
 
-
 ## Define an enum with structs
 
 A way to work around enum variant requirements is to define a separate struct for each variant in the enum. Then, each variant in the enum uses the corresponding struct. The struct holds the same data that was held by the corresponding enum variant. This style of definition allows us to refer to each logical variant on its own.
@@ -45,11 +43,9 @@ struct MouseClick { x: i64, y: i64 }
 enum WebEvent { WELoad(bool), WEClick(MouseClick), WEKeys(KeyPress) }
 ```
 
-
 ## Instantiate an enum
 
 Now let's add code to create instances of our enum variants. For each variant, we use the `let` keyword to make the assignment. To access the specific variant in the enum definition, we use the syntax `<enum>::<variant>` with double colons `::`.
-
 
 ### Simple variant: WELoad(bool)
 
@@ -58,7 +54,6 @@ The first variant in the `WebEvent` enum has a single boolean value, `WELoad(boo
 ```rust
 let we_load = WebEvent::WELoad(true);
 ```
-
 
 ### Struct variant: WEClick(MouseClick)
 
@@ -72,7 +67,6 @@ let click = MouseClick { x: 100, y: 250 };
 let we_click = WebEvent::WEClick(click);
 ```
 
-
 ### Tuple variant: WEKeys(KeyPress)
 
 The last variant contains a tuple `WEKeys(KeyPress)`. The tuple has two fields that use the `String` and `char` data types. To create this variant, first we instantiate the tuple. Then we pass the tuple as an argument in the call to instantiate the variant.
@@ -85,14 +79,26 @@ let keys = KeyPress(String::from("Ctrl+"), 'N');
 let we_key = WebEvent::WEKeys(keys);
 ```
 
-Notice that we use new syntax in this piece of code, `String::from("<value>")`. This syntax creates a value of type `String` by calling the Rust `from` method. The method expects an input argument of data enclosed in double quotation marks.
-
+Notice that we use the `String::from("<value>")` syntax in this piece of code. This syntax creates a value of type `String` by calling the Rust `from` method. The method expects an input argument of data enclosed in double quotation marks.
 
 ### Enums example
 
 Here's the final code to instantiate the enum variants:
 
 ```rust
+// Define a tuple struct
+#[derive(Debug)]
+struct KeyPress(String, char);
+
+// Define a classic struct
+#[derive(Debug)]
+struct MouseClick { x: i64, y: i64 }
+
+// Define the WebEvent enum variants to use the data from the structs
+// and a boolean type for the page Load variant
+#[derive(Debug)]
+enum WebEvent { WELoad(bool), WEClick(MouseClick), WEKeys(KeyPress) }
+
 // Instantiate a MouseClick struct and bind the coordinate values
 let click = MouseClick { x: 100, y: 250 };
 println!("Mouse click location: {}, {}", click.x, click.y);
@@ -116,23 +122,20 @@ println!("\nWebEvent enum structure: \n\n {:#?} \n\n {:#?} \n\n {:#?}", we_load,
 
 Try to interact with this example code in the [Rust Playground][RustPlay-enums].
 
-
 ### Debug statements
 
-In the Rust Playground, look for the following code statement. This statement is used in several places in the code.
+In the previous example, look for the following code statement. This statement is used in several places in the code.
 
 ```rust
 // Set the Debug flag so we can check the data in the output
 #[derive(Debug)]
 ```
 
-The `#[derive(Debug)]` syntax lets us see certain values during the code execution that aren't otherwise viewable in standard output. To view debug data with the `println!` macro, we use the syntax `{:#?}` to format the data in a readable manner. 
-
+The `#[derive(Debug)]` syntax lets us see certain values during the code execution that aren't otherwise viewable in standard output. To view debug data with the `println!` macro, we use the syntax `{:#?}` to format the data in a readable manner.
 
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
-
 
 <!-- Links -->
 
