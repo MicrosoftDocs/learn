@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 01/07/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 quiz:
   questions:
@@ -28,10 +29,10 @@ quiz:
     choices:
     - content: "df.write.mode(\"overwrite\").option(\"...\").option(\"...\").save()"
       isCorrect: false
-      explanation: "You must specify a format."
+      explanation: "Incorrect. You must specify a format."
     - content: "df.write.format(\"com.databricks.spark.sqldw\").overwrite().option(\"...\").option(\"...\").save()"
       isCorrect: false
-      explanation: "There is no property named overwrite()."
+      explanation: "Incorrect. There is no property named overwrite()."
     - content: "df.write.format(\"com.databricks.spark.sqldw\").mode(\"overwrite\").option(\"...\").option(\"...\").save()"
       isCorrect: true
-      explanation: "The key is to specify the correct format, intended write mode, and options that specify the Azure Synapse Analytics properties."
+      explanation: "Correct. The key is to specify the correct format, intended write mode, and options that specify the Azure Synapse Analytics properties."
