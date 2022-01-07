@@ -34,23 +34,23 @@ using  System.ComponentModel.DataAnnotations;
 
 public class Pizza
 {
-	public int Id { get; set; }
-	
-	[Required]
-	public string Name { get; set; }
-	
-	public string Description { get; set; }
-	
-	[EmailAddress]
-	public string ChefEmail { get; set;}
-	
-	[Required]
-	[Range(10.00, 25.00)]
-	public decimal Price { get; set; }
+    public int Id { get; set; }
+    
+    [Required]
+    public string Name { get; set; }
+    
+    public string Description { get; set; }
+    
+    [EmailAddress]
+    public string ChefEmail { get; set;}
+    
+    [Required]
+    [Range(10.00, 25.00)]
+    public decimal Price { get; set; }
 }
 ```
 
-We'll use this model in a form that enables Blazing Pizza personnel to add new pizzas to the menu. It includes the `[Required]` attribute to ensure that the `Name` and `Price` values are always completed. It also uses the `[Range]` attribute to check that the price entered is within a sensible range for a pizza. Finally, it uses the `[EmailAddress]` attribute to check the `ChefEmail` value entered is a valid email address. 
+We'll use this model in a form that enables Blazing Pizza personnel to add new pizzas to the menu. It includes the `[Required]` attribute to ensure that the `Name` and `Price` values are always completed. It also uses the `[Range]` attribute to check that the price entered is within a sensible range for a pizza. Finally, it uses the `[EmailAddress]` attribute to check the `ChefEmail` value entered is a valid email address.
 
 Other annotations that you can use in a model include:
 
@@ -75,23 +75,23 @@ To configure your form to use data annotation validation, first make sure you've
 <h1>Add a new pizza</h1>
 
 <EditForm Model="@pizza">
-	<DataAnnotationsValidator />
-	<ValidationSummary />
-	
-	<InputText id="name" @bind-Value="pizza.Name" />
-	<ValidationMessage For="@(() => pizza.Name)" />
-	
-	<InputText id="description" @bind-Value="pizza.Description" />
-	
-	<InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
-	<ValidationMessage For="@(() => pizza.ChefEmail)" />
-	
-	<InputText id="price" @bind-Value="pizza.Price" />
-	<ValidationMessage For="@(() => pizza.Price)" />
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <InputText id="name" @bind-Value="pizza.Name" />
+    <ValidationMessage For="@(() => pizza.Name)" />
+    
+    <InputText id="description" @bind-Value="pizza.Description" />
+    
+    <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
+    <ValidationMessage For="@(() => pizza.ChefEmail)" />
+    
+    <InputText id="price" @bind-Value="pizza.Price" />
+    <ValidationMessage For="@(() => pizza.Price)" />
 </EditForm>
 
 @code {
-	private Pizza pizza = new();
+    private Pizza pizza = new();
 }
 ```
 
@@ -107,19 +107,19 @@ If a form fails validation, messages are displayed in the **ValidationSummary** 
 ```csharp
 public class Pizza
 {
-	public int Id { get; set; }
-	
-	[Required(ErrorMessage = "You must set a name for your pizza.")]
-	public string Name { get; set; }
-	
-	public string Description { get; set; }
-	
-	[EmailAddress(ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
-	public string ChefEmail { get; set;}
-	
-	[Required]
-	[Range(10.00, 25.00, ErrorMessage = "You must set a price between $10 and $25.")]
-	public decimal Price { get; set; }
+    public int Id { get; set; }
+    
+    [Required(ErrorMessage = "You must set a name for your pizza.")]
+    public string Name { get; set; }
+    
+    public string Description { get; set; }
+    
+    [EmailAddress(ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
+    public string ChefEmail { get; set;}
+    
+    [Required]
+    [Range(10.00, 25.00, ErrorMessage = "You must set a price between $10 and $25.")]
+    public decimal Price { get; set; }
 }
 ```
 
@@ -128,17 +128,17 @@ The built-in validation attributes are versatile and you can use regular express
 ```csharp
 public class PizzaBase : ValidationAttribute
 {
-	public string GetErrorMessage() => $"Sorry, that's not a valid pizza base.";
-	
-	protected override ValidationResult IsValid(object value, ValidationContext validationContext)
-	{
-		if (value != "Tomato" || value != "Pesto")
-		{
-			return new ValidationResult(GetErrorMessage());
-		}
-		
-		return ValidationResult.Success;
-	}
+    public string GetErrorMessage() => $"Sorry, that's not a valid pizza base.";
+    
+    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    {
+        if (value != "Tomato" || value != "Pesto")
+        {
+            return new ValidationResult(GetErrorMessage());
+        }
+        
+        return ValidationResult.Success;
+    }
 }
 ```
 
@@ -147,22 +147,22 @@ Now, you can use your custom validation attribute as you use the built-in attrib
 ```csharp
 public class Pizza
 {
-	public int Id { get; set; }
-	
-	[Required(ErrorMessage = "You must set a name for your pizza.")]
-	public string Name { get; set; }
-	
-	public string Description { get; set; }
-	
-	[EmailAddress(ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
-	public string ChefEmail { get; set;}
-	
-	[Required]
-	[Range(10.00, 25.00, ErrorMessage = "You must set a price between $10 and $25.")]
-	public decimal Price { get; set; }
-	
-	[PizzaBase]
-	public string Base { get; set; }
+    public int Id { get; set; }
+    
+    [Required(ErrorMessage = "You must set a name for your pizza.")]
+    public string Name { get; set; }
+    
+    public string Description { get; set; }
+    
+    [EmailAddress(ErrorMessage = "You must set a valid email address for the chef responsible for the pizza recipe.")]
+    public string ChefEmail { get; set;}
+    
+    [Required]
+    [Range(10.00, 25.00, ErrorMessage = "You must set a price between $10 and $25.")]
+    public decimal Price { get; set; }
+    
+    [PizzaBase]
+    public string Base { get; set; }
 }
 ```
 
@@ -182,33 +182,33 @@ If you use `OnSubmit`, the other two events will not fire. Instead you can use t
 <h1>Add a new pizza</a>
 
 <EditForm Model="@pizza" OnSubmit=@HandleSubmission>
-	<DataAnnotationsValidator />
-	<ValidationSummary />
-	
-	<InputText id="name" @bind-Value="pizza.Name" />
-	<ValidationMessage For="@(() => pizza.Name)" />
-	
-	<InputText id="description" @bind-Value="pizza.Description" />
-	
-	<InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
-	<ValidationMessage For="@(() => pizza.ChefEMail)" />
-	
-	<InputText id="price" @bind-Value="pizza.Price" />
-	<ValidationMessage For="@(() => pizza.Price" />
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <InputText id="name" @bind-Value="pizza.Name" />
+    <ValidationMessage For="@(() => pizza.Name)" />
+    
+    <InputText id="description" @bind-Value="pizza.Description" />
+    
+    <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
+    <ValidationMessage For="@(() => pizza.ChefEMail)" />
+    
+    <InputText id="price" @bind-Value="pizza.Price" />
+    <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 
 @code {
-	private Pizza pizza = new();
-	
-	void HandleSubmission(EditContext context)
-	{
-		bool dataIsValid = context.Validate();
-		
-		if (dataIsValid)
-		{
-			// Store valid data here
-		}
-	}
+    private Pizza pizza = new();
+    
+    void HandleSubmission(EditContext context)
+    {
+        bool dataIsValid = context.Validate();
+        
+        if (dataIsValid)
+        {
+            // Store valid data here
+        }
+    }
 }
 ```
 
@@ -220,32 +220,32 @@ If you use `OnValidSubmit` and `OnInvalidSubmit` instead, you don't have to chec
 <h1>Add a new pizza</a>
 
 <EditForm Model="@pizza" OnValidSubmit=@ProcessInputData OnInvalidSubmit=@ShowFeedback>
-	<DataAnnotationsValidator />
-	<ValidationSummary />
-	
-	<InputText id="name" @bind-Value="pizza.Name" />
-	<ValidationMessage For="@(() => pizza.Name)" />
-	
-	<InputText id="description" @bind-Value="pizza.Description" />
-	
-	<InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
-	<ValidationMessage For="@(() => pizza.ChefEMail)" />
-	
-	<InputText id="price" @bind-Value="pizza.Price" />
-	<ValidationMessage For="@(() => pizza.Price" />
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <InputText id="name" @bind-Value="pizza.Name" />
+    <ValidationMessage For="@(() => pizza.Name)" />
+    
+    <InputText id="description" @bind-Value="pizza.Description" />
+    
+    <InputText id="chefemail" @bind-Value="pizza.ChefEmail" />
+    <ValidationMessage For="@(() => pizza.ChefEMail)" />
+    
+    <InputText id="price" @bind-Value="pizza.Price" />
+    <ValidationMessage For="@(() => pizza.Price" />
 </EditForm>
 
 @code {
-	private Pizza pizza = new();
-	
-	void ProcessInputData (EditContext context)
-	{
-		// Store valid data here
-	}
-	
-	void ShowFeedback(EditContext context)
-	{
-		// Take action here to help the user correct the issues
-	}
+    private Pizza pizza = new();
+    
+    void ProcessInputData (EditContext context)
+    {
+        // Store valid data here
+    }
+    
+    void ShowFeedback(EditContext context)
+    {
+        // Take action here to help the user correct the issues
+    }
 }
 ```
