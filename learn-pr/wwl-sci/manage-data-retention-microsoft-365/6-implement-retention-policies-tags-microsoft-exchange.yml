@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-data-retention-microsoft-365.implement-retention-policies-tags-microsoft-exchange
-title: Implement retention policies and tags in Microsoft Exchange
+title: Activate archive mailboxes in Microsoft Exchange
 metadata:
-  title: Implement retention policies and tags in Microsoft Exchange
-  description: "Implement retention policies and tags in Microsoft Exchange"
+  title: Activate archive mailboxes in Microsoft Exchange
+  description: "Activate archive mailboxes in Microsoft Exchange"
   ms.date: 01/07/2022
   author: wwlpublish
   ms.author: bneeb
