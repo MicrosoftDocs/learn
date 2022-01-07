@@ -8,7 +8,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 ## Add data annotations to a Blazor model
 
 1. In Visual Studio Code, in the file explorer, expand **Model**, then select **Address.cs**.
-1. Add a reference to `System.ComponentModel.DataAnnotations` at the top of the class. 
+1. Add a reference to `System.ComponentModel.DataAnnotations` at the top of the class.
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -137,7 +137,7 @@ In this exercise, you'll replace the current server-side validation to use data 
     ```
 
 1. In the file explorer, expand **Model**, then select **Address.cs**.
-1. Add a custom error message for each field's data annotation. 
+1. Add a custom error message for each field's data annotation.
 
     ```csharp
     public class Address
@@ -291,4 +291,3 @@ Would a better user experience be a customer can't submit their order until they
     A customer is now prompted to enter information, and to begin with the Place order button is disabled. Only after all the required fields have data does the button become clickable.
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
-
