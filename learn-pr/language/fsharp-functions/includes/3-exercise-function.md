@@ -6,43 +6,43 @@ You'll start by scaffolding a new F# project, and then you'll take a piece of co
 
 1. Create a new F# project by running `dotnet new`.
 
-    ```bash
-    dotnet new console --language F# -o Functions
-    cd Functions
-    ```
+   ```bash
+   dotnet new console --language F# -o Functions
+   cd Functions
+   ```
 
-    Now you have a new project. Let's look at the code next.
+   Now that you have a new project, let's look at the code.
 
-    Here's the code from your colleague.
+   Here's the code from your colleague.
 
-    ```fsharp
-    let no = card % 13
-    if no = 1 then "Ace"
-    elif no = 0 then "King"
-    elif no = 12 then "Queen"
-    elif no = 11 then "Jack"
-    else string no
-    ```
+   ```fsharp
+   let no = card % 13
+   if no = 1 then "Ace"
+   elif no = 0 then "King"
+   elif no = 12 then "Queen"
+   elif no = 11 then "Jack"
+   else string no
+   ```
 
-1. Above the `main()` method, place the following code:
+1. Replace the default code in the _Program.fs_ file with the following code:
 
-    ```fsharp
-    let cardFace card = 
-       let no = card % 13
-       if no = 1 then "Ace"
-       elif no = 0 then "King"
-       elif no = 12 then "Queen"
-       elif no = 11 then "Jack"
-       else string no
-    ```
+   ```fsharp
+   let cardFace card = 
+      let no = card % 13
+      if no = 1 then "Ace"
+      elif no = 0 then "King"
+      elif no = 12 then "Queen"
+      elif no = 11 then "Jack"
+      else string no
+   ```
 
-    The top part of this code `let cardFace card` makes it into a function. It's now a function called `cardFace` that takes the parameter `card`.
+    The first line of this code `let cardFace card` makes it into a function. It's now a function called `cardFace` that takes the parameter `card`.
 
-1. Add the following code to the `main()` method.
+1. Add the following code below the 'cardFace` function.
 
-    ```fsharp
-    printfn "%s" (cardFace 11)
-    ```
+   ```fsharp
+   printfn "%s" (cardFace 11)
+   ```
 
 1. Run the project by calling `dotnet run` in the console.
 
@@ -86,7 +86,7 @@ You've turned your colleague's code into a function. To make this code more read
    Jack
    ```
 
-   The code still works, you've just made it more clear by adding a type to the input parameter.
+   The code still works and you've made it clearer by adding a type to the input parameter.
 
 1. Alter your `cardFace()` function to look like so:
 
