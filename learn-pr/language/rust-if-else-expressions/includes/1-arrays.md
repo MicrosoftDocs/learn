@@ -13,7 +13,7 @@ An array can be defined in two ways:
 In both cases, the content is enclosed in square brackets `[]`.
 
 ```rust
-// Declare array, initialize all values individually, compiler infers length = 7
+// Declare array, initialize all values, compiler infers length = 7
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
 // Declare array, initialize all values to 0, length = 5
