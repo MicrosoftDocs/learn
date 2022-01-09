@@ -41,7 +41,7 @@ The following query creates a calculated column using the `extend` operator to a
 
     You should get results that look like the following image:
 
-    :::image type="content" source="../media/6-avg.png" alt-text="Screenshot of avg aggregate function results.":::
+    :::image type="content" source="../media/6-avg.png" alt-text="Screenshot of avg aggregate function results second version.":::
 
 ## Find extremes using `min()` and `max()`
 

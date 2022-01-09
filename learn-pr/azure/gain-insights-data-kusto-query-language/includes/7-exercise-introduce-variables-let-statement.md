@@ -15,7 +15,7 @@ Notice the commented-out portions of the query that begin with double forward sl
 1. Run the following query:
     
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA8tJLVHwzcxzScxNTE9VsFUwtFbQ11fIK81NSi3iygFKFuQkJoMklByDPKP8/RyVrBVAKopLijLz0rmCS/KLcl3LUvNKihW4ahTKM1KLUhWCSxJLgFpsoXrh4hBLnIvyC4q1IewAIDu1qKRSwc4W4Qqg+uLS3NzEoswqmB7bxLJ0DVQt2kimaSokVSqAXRFSWZAKAC4bJzfTAAAA" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     let MinDamage = 1; // number
     let place = "ARIZONA";  // string
