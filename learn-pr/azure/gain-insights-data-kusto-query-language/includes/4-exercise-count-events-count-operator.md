@@ -1,12 +1,16 @@
-A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset and want to compare events to gain insights from this data. Here, we'll find out how many of a certain type of events occurred in a particular area. 
+A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset and want to compare events to gain insights from this data. Here, you'll find out how many of a certain type of events occurred in a particular area. 
 
 ## Use the `count` operator
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. That's a lot of individual storms, and it can be difficult to gain meaningful insights by looking at individual events.
 
-To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. Within each `summarize` operator, you specify the type of aggregation to perform, and the way you want to group the aggregation. 
+To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example by counting the number of results using the following query:
 
-For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregate function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank"> Click to run query</a>
+
+:::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator usage and results.":::
+
+You can also summarize your data by grouping similar types of events. Within each `summarize` operator, you can specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregate function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
 
 1. Copy and paste the query into your query editor.
 
@@ -23,11 +27,11 @@ For example, to count events by state, you'll write a query to `summarize` `coun
     
     :::image type="content" source="../media/4-count-1.png" alt-text="Screenshot of count operator usage and results.":::
 
-## Use the `dcount` and `countif` operators
+## Use the `dcount` and `countif` functions
 
 The above query returned the number of events per state. There are, however, more sophisticated ways to count events. 
-* For example, you could count only certain types of events. The `countif()` operator counts records for which a predicate is true. The query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
-* You can also count distinct types of events by using the `dcount()` operator. This operator gives an estimation of the cardinality of the specified set.
+* For example, you could count only certain types of events. The `countif()` function counts records for which a predicate is true. The query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
+* You can also count distinct types of events by using the `dcount()` function. This function gives an estimation of the cardinality of the specified set.
 
 The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and are grouped by the same column, in this case *State*. The columns that have been aggregated are renamed, and all other columns are dropped. If you want to include other columns, name them after the column on which data is summarized. 
 

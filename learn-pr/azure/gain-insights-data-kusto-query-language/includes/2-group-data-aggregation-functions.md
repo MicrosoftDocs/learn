@@ -4,7 +4,7 @@ You'll use aggregate functions to compare different groups of information. You'l
 
 ## What is an aggregate function?
 
-The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. If you group these individual events by common fields, such as location, time, or event type, you can then make meaningful comparisons across groups.
+The data in the storm events scenario is presented on an event level, meaning that each row represents a specific event and its associated information. If you group these individual events by common fields, such as location, time, or event type, you can then make meaningful comparisons across groups. 
 
 An aggregate function allows you to make these comparisons by grouping values of multiple rows to form a single summary value. The type of summary value depends on the specific function you use, and could be an average, maximum, minimum, or median value, just to name a few.
 
