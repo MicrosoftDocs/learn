@@ -96,7 +96,7 @@ func main() {
     t := triangle{3}
     t.doubleSize()
     fmt.Println("Size:", t.size)
-    fmt.Println("Perimeter:", s.perimeter())
+    fmt.Println("Perimeter:", t.perimeter())
 }
 ```
 
@@ -143,7 +143,7 @@ Learning Go!
 LEARNING GO!
 ```
 
-Notice how you can use the new object `s` as if it were a string when you first print out its value. Then, when you call the `Upper` method, `s` prints out all uppercase letters of type string.
+Notice how you can use the new object `s` as if it were a string when you first print its value. Then, when you call the `Upper` method, `s` prints all uppercase letters of type string.
 
 ## Embed methods
 
@@ -175,7 +175,7 @@ Size: 3
 Perimeter 9
 ```
 
-If you're familiar with an OOP language such as Java or C++, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (such as inheritance), but that's not quite correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, which looks something like this:
+If you're familiar with an OOP language such as Java or C++, you might think that the `triangle` struct looks like a base class and `coloredTriangle` is a subclass (such as inheritance), but that's not correct. What's happening, in reality, is that the Go compiler is promoting the `perimeter()` method by creating a wrapper method, which looks something like this:
 
 ```go
 func (t coloredTriangle) perimeter() int {
