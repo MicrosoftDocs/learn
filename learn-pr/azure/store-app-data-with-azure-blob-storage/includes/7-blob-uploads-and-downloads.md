@@ -211,11 +211,11 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
         <version>2.3.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
-          <subscriptionId>${subscriptionId}</subscriptionId>
-          <resourceGroup>${resourceGroup}</resourceGroup>
-          <appName>${appName}</appName>
-          <pricingTier>${pricingTier}</pricingTier>
-          <region>${region}</region>
+          <subscriptionId>${env.AZ_SUBSCRIPTION_ID}</subscriptionId>
+          <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
+          <appName>${env.AZ_APP_NAME}</appName>
+          <pricingTier>${env.AZ_PRICING_TIER}</pricingTier>
+          <region>${env.AZ_REGION}</region>
           <runtime>
             <os>Linux</os>
             <javaVersion>Java 11</javaVersion>
@@ -234,11 +234,11 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
                 <appSettings>
                   <property>
                      <name>STORAGE_CONNECTION_STRING</name>
-                     <value>${storageConnectionString}</value>
+                     <value>${env.AZ_STORAGE_CONNECTION_STRING}</value>
                   </property>
                   <property>
                      <name>STORAGE_CONTAINER_NAME</name>
-                     <value>${storageContainerName}</value>
+                     <value>${env.AZ_STORAGE_CONTAINER_NAME}</value>
                   </property>
                </appSettings>
         </configuration>
@@ -246,25 +246,28 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
     </plugins>
     ```
 
-1. Now, you'll deploy your app. The following commands will build the app into `ROOT.war`, and deploy the WAR file to App Service. The Maven Plugin for Azure App Service will automatically provision resources at first deployment attempt. You'll extract the storage account's connection string with `az storage account show-connection-string` and pass it along with the container name `files` to Maven plugin. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+1. The following commands prepare environment variables for the Maven Plugin for Azure App Service. You'll extract the storage account's connection string with `az storage account show-connection-string`, the subscription id with `az account show`, set region, pricing, container name and app name. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+
+    ```azurecli
+    AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
+    AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    AZ_REGION=centralus
+    AZ_APP_NAME=<your-unique-app-name>
+    AZ_PRICING_TIER=F1
+    AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
+    AZ_STORAGE_CONTAINER_NAME=files
+    ```
+
+    > [!TIP]
+    > The minimum recommended pricing tier outside of sandbox environment is B2.
+
+1. Now, you'll deploy your app. The following command will build the app into `ROOT.war`, and deploy the WAR file to App Service. The Maven Plugin for Azure App Service will automatically provision resources at first deployment attempt.
 
     > [!NOTE]
     > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location. 
 
     ```console
-    mvn clean package
-    ```
-
-    ```console
-    mvn \
-    -DsubscriptionId=$(az account show --query id --output tsv) \
-    -DresourceGroup=<rgn>[sandbox resource group name]</rgn> \
-    -Dregion=centralus \
-    -DappName=<your-unique-app-name> \
-    -DpricingTier=F1 \
-    -DstorageConnectionString=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv) \
-    -DstorageContainerName=files \
-    azure-webapp:deploy
+    mvn clean package azure-webapp:deploy
     ```
 
     To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
