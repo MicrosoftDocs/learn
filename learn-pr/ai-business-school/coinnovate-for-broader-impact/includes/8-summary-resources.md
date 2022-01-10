@@ -1,35 +1,29 @@
-Now is the time for educational institutions to reimagine the classroom with AI. It’s important for such institutions to educate themselves about the potential value of AI in order to create an appropriate AI strategy.
+Throughout this module, we’ve discussed how important it’s to coinnovate beyond your organization to accelerate solutions and remain competitive long term. We’ve also uncovered that innovation doesn’t exist in a vacuum—especially with technology companies. New technologies bring new challenges for organizations of all sizes. These challenges have a huge impact on communities, and when specific issues arise, specialized partnerships are necessary. That’s why external partnerships and collaboration play a key role in understanding how innovation efforts impact people and the community beyond your organization—especially with groups who have more knowledge of the issue at hand. By creating this culture and understanding the different relationships, your organization will thrive despite disruptions—making you more resilient.
 
-Now that you have reviewed this module, you should be able to:
+Now that you have reviewed the module, you should be able to:
 
-* Describe the outcomes educational institutions have achieved through the adoption of AI.
-* Articulate the components of an AI strategy.
-* Apply the value creation framework.
+* Describe the benefits of collaborating with external partners.
+* Understand the relationship between ESG scores and innovation.
+* Learn how coinnovating with external partners can help make it easier to adopt new technology quicker. 
 
 ## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-Read the Transforming Education [e-book](https://info.microsoft.com/ww-landing-Transforming-Education-eBook.html), which shows how school leaders can prepare their organizations and students for digital transformation. Visit our [landing page for education](https://www.microsoft.com/education) and [support page](https://support.office.com/education) to read more about how technology can create learning environments that empower students to be independent and creative learners; build reading, language and STEM skills; and prepare them for their futures.
-
-For more, you can explore education case studies, blogs, and books:
-
-* [Teaching AI: Exploring New Frontiers for Learning by Michelle Zimmerman](https://id.iste.org/connected/resources/product?id=4209)
-* [Immersive Reader is coming to an app near you – now partners can use as an Azure Cognitive Service](https://techcommunity.microsoft.com/t5/education-blog/immersive-reader-is-coming-to-an-app-near-you-now-partners-can/ba-p/679795)
-* [Karrick learns to read with Immersive Reader](https://www.youtube.com/watch?v=ZrO-l1IKjbw)
-* [Inclusive Classroom round up for Microsoft Education at ISTE 2019](https://techcommunity.microsoft.com/t5/Education-Blog/Inclusive-Classroom-round-up-for-Microsoft-Education-at-ISTE/ba-p/679764)
-* [The future of advanced learning will be FLEXAble with the help of AI](https://customers.microsoft.com/story/mip-artificial-intelligence-ai-higher-education-italy-en)
-* [NSU engages students with AI-enabled chatbot using Microsoft Azure](https://customers.microsoft.com/story/720268-nsu-education-azure-bot-framework-powerbi)
-* [Technology-focused university levels the playing field with AI for students who are deaf and hard of hearing](https://customers.microsoft.com/story/rit-higher-education-cognitive-services)
-* [The Artificial Intelligence Pursuit that Led to the Open Source Data Model for Higher Education](https://blog.campusmanagement.com/the-artificial-intelligence-pursuit-that-led-to-the-open-source-data-model-for-higher-education)
-
-* [Download PDF](https://aka.ms/AA629x6) of the case study introduction to share with others.  
-* [Download PDF](https://aka.ms/AA62hp4) of the case study resolution to share with others.
+* Learn more Microsoft’s commitment to the advancement of AI driven by principles that put people first in the [Responsible AI](https://www.microsoft.com/ai/ai-business-school#primaryR7) learning path.
+* Discover how Microsoft solutions can help you strengthen resilience in people, teams, and your broader organization, visit [Organizational Resilience](https://www.microsoft.com/resilience).
+* Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
+* Learn about advancements in technology on the horizon, visit [Microsoft Innovation](https://innovation.microsoft.com).
+* Read about programs and experiences that help spark ideas and foster a collaborative culture, visit [The Garage](https://www.microsoft.com/garage/).
 
 ## References
 
-[(1) Microsoft, “UNSW transforms campus experience, boosts efficiency with cloud and CRM solutions.” 1 March 2019.](https://customers.microsoft.com/story/unsw-education-d365-for-finance-and-operations-customer-service-australia)  
-[(2) Microsoft, “UNSW’s Teams project brings Artificial Intelligence to student engagement.” Ray Fleming, 18 July 2019.](https://edublog.microsoft.com/en-au/2019/07/unsws-teams-project-brings-artificial-intelligence-to-student-engagement/)  
-[(3) Antares Solutions, “Antares and Microsoft join forces to develop a chatbot with a difference at UNSW.” Aaron Cunnington.](https://antares.solutions/antares-microsoft-join-forces-develop-chatbot-difference-unsw/)  
-[(4) Microsoft, “Demo: Teams in the Classroom at Microsoft Inspire 2019.” David Kellerman, July 2019.](https://www.youtube.com/watch?v=NcbQ2UK69Tc)  
-[(5) itnews, “UNSW adds Question bot to online classroom for engineering students.” Ry Crozier, 7 June 2019.](https://www.itnews.com.au/news/unsw-adds-question-bot-to-online-classroom-for-engineering-students-525188)  
+1. Forbes, [“The Growing Importance of Social Responsibility in Business,”](https://www.forbes.com/sites/forbesbusinesscouncil/2020/11/18/the-growing-importance-of-social-responsibility-in-business/?sh=139052a02283) Chastity Heyward, 18 November 2020.
+1. Accenture, [“Life Reimagined: Mapping the motivations that matter for today’s consumers,”](https://www.accenture.com/us-en/insights/strategy/reimagined-consumer-expectations?c=acn_glb_lifereimaginedbing_12319046&n=psbs_0721&&msclkid=ca40820755a41e696ca7e37767f285fd&utm_source=bing&utm_medium=cpc&utm_campaign=US_EVNT_CORP_MCE_LIFEREIMG_GENERIC_PHRS_STND_EN_NA_SRVC-STRTE-NA-NA_NA_NA&utm_term=consumer%20expectations&utm_content=CONS_ENT_NA_LIFEREIMG_NA_SRVC-STRTE-NA-NA_NA_Consumer%20Preference%20%26%20Choice&gclid=ca40820755a41e696ca7e37767f285fd&gclsrc=3p.ds) Mark Curtis, Kevin Quiring, Bill Theofilou, and Agneta Björnsjö, 2021.
+1. Prevalent, [“Enviromental, Social & Governance Risk Monitoring.”](https://www.prevalent.net/use-cases/esg-environmental-social-governance-risk-assessment-monitoring/).
+1. Microsoft, [“One year later: The path to carbon negative-a progress report on our climate ‘moonshot’,”](https://blogs.microsoft.com/blog/2021/01/28/one-year-later-the-path-to-carbon-negative-a-progress-report-on-our-climate-moonshot/) Brad Smith, 28 January 2021.
+1. Accenture, [“Growth: It Comes Down To Experience,”](https://www.accenture.com/us-en/insights/interactive/business-of-experience?c=acn_glb_businessofexperbing_11734516&n=psbs_0121&&msclkid=206e16e8af1e13d19d65779fac319b46&utm_source=bing&utm_medium=cpc&utm_campaign=US_EXPT_CONS_MCE_BOE_GENERIC_PHRS_STND_EN_NA_SRVC-INTEN-CINT-NA_NA_NA&utm_term=business%20innovation&utm_content=CONS_ENT_MCE_BOE_NA_SRVC-INTEN-CINT-NA_NA_BUSINESS%20OF%20EXPERIENCE&gclid=206e16e8af1e13d19d65779fac319b46&gclsrc=3p.ds) Baiju Shah, Lisa De Bonis, Flaviano Faleiro, and Nevine El-Warraky, 2020.
+1. Biotechnology Innovation Organization (BIO), Informa Pharma Intelligence, and QLS, [“Clinical Development Success Rates and Contributing Factors 2011-2020,”](https://pharmaintelligence.informa.com/~/media/informa-shop-window/pharma/2021/files/reports/2021-clinical-development-success-rates-2011-2020-v17.pdf) David Thomas, Daniel Chancellor, Amanda Micklus, Sara LaFever, Michael Hay, Shomesh Chaudhuri, Robert Bowden, and Andrew W. Lo, February 2021.
+1. UCB, [“Collaborating with Microsoft to reinvent how medicines are made,”](https://www.ucb.com/our-science/magazine/article/Collaborating-with-Microsoft-to-reinvent-how-medicines-are-made) Herman De Prins, March 2021.
+1. UCB, [“Our R&D Response to COVID-19: A Patients’ First Approach,”](https://www.ucb-usa.com/stories-media/UCB-U-S-News/detail/article/our-rd-response-covid-19-patients-first-approach) September 2020.
+1. UCB Annual Report 2020, [“Global COVID-19 collaborations,”](https://reports.ucb.com/annual-report-2020/caring-for-communities/global-covid19-collaborations) 2020.

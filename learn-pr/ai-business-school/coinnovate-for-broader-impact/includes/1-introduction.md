@@ -1,9 +1,9 @@
-To achieve meaningful and positive transformation, educational institutions need to bring AI to more than just technical departments. Stakeholders throughout the organization must partner with data scientists and developers to redefine every relevant process. In education, decision-makers must take industry-specific considerations into account in order to realize the true transformational impact of AI.
+For businesses, innovation helps increase the bottom line, produce better products, and enhance and accelerate processes. But innovation doesn’t exist in a vacuum, especially when it involves technology. Innovation almost always has implications that extend beyond our own walls, and intended or not, new technologies, like AI, bring with them new challenges that have very real impacts on communities—so it’s essential to ensure you’re innovating with collective purpose and in a responsible way. Check out our Responsible AI for Business learning path to learn more about the six principles to consider for responsible AI.
 
-**In this module, you will learn to:**
+Organizations should lead their innovation efforts to ultimately help their people, their customers, and their communities, which will ultimately make or keep them competitive. Co-innovation requires input from diverse perspectives found outside your organization. Sourcing and validating ideas from relevant external audiences and customers helps develop a fuller picture of the root challenges businesses are trying to solve. Engaging with external partners not only leads to better ideas, but also shows appreciation and builds public trust in your organization. After all, people are more inclined to support businesses that serve a genuine and meaningful purpose that resonates with their own community.
 
-* Describe the outcomes educational institutions have achieved through the adoption of AI.
-* Articulate the components of an AI strategy.
-* Apply the value creation framework.
+**By completing this module, you will be able to:**
 
-Let’s explore what we mean when we ask you to think strategically about AI, and identify how your organization can create value with AI.
+* Describe the benefits of collaborating with external partners.
+* Understand the relationship between ESG scores and innovation.
+* Learn how coinnovating with external partners can help make it easier to adopt new technology quicker.
