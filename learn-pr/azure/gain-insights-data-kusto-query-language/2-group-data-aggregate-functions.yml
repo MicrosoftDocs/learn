@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.gain-insights-data-kql.group-data-aggregation-functions
+uid: learn.azure.gain-insights-data-kql.group-data-aggregate-functions
 title: Group data using aggregation functions
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-group-data-aggregation-functions.md)]
+  [!include[](includes/2-group-data-aggregate-functions.md)]
