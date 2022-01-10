@@ -9,6 +9,6 @@ metadata:
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 2
 content: |
   [!include[](includes/5-wpp-executive-qa.md)] 
