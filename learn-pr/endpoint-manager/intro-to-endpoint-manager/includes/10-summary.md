@@ -22,3 +22,5 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 
 For more information about Microsoft Endpoint Manager, see the following resources:
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+- [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)

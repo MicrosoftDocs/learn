@@ -25,3 +25,4 @@ For additional information about Microsoft Endpoint Manager, see the following r
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
 - [Understand Microsoft Intune](/learn/modules/intro-to-endpoint-manager/3-intune/?azure-portal=true)
 - [Understand Microsoft Endpoint Configuration Manager](/learn/modules/intro-to-endpoint-manager/4-endpoint-configuration-manager/?azure-portal=true)
+- [Microsoft Intune fundamentals](/mem/intune/fundamentals/)
