@@ -42,9 +42,9 @@ The code consists of different parts that will help you implement a card game. S
     cd Cards
     ```
 
-1. Take the code you've been given and place it above the `main()` method in the _Program.fs_ file.
+1. Replace the code in the _Program.fs_ file with the code you've been given.
 
-1. Create a pipeline by adding the following line in the `main()` method:
+1. Create a pipeline by adding the following line at the end:
 
    ```fsharp
    cards |> shuffle |> take 3 |> printAll

@@ -12,6 +12,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
+    
     ```
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.

@@ -16,7 +16,7 @@ In both cases, the content is enclosed in square brackets `[]`.
 // Declare array, initialize all values, compiler infers length = 7
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
-// Declare array, first value = "0", length = 5
+// Declare array, initialize all values to 0, length = 5
 let bytes = [0; 5];
 ```
 
