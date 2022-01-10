@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gain-insights-data-kql.exercise-count-events-count-function
-title: Exercise: Count events using the count function
+title: "Exercise: Count events using the count function"
 metadata:
   unitType: exercise
-  title: "Exercise: Count events using the count operator"
-  description: "Exercise: Count events using the count operator"
+  title: "Exercise: Count events using the count function"
+  description: "Exercise: Count events using the count function"
   ms.date: 01/04/2022
   author: YaelSchuster
   ms.author: yaschust
