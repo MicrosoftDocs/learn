@@ -8,7 +8,9 @@ The data in the storm events scenario is presented on an event level, meaning th
 
 An aggregate function allows you to make these comparisons by grouping values of multiple rows to form a single summary value. The type of summary value depends on the specific function you use, and could be an average, maximum, minimum, or median value, just to name a few.
 
-ADD SCHEMATIC IMAGE
+For example, the following query uses the aggregate function `avg()` to calculate the average property damage grouped by the state in which the storm damage was caused.
+
+:::image type="content" source="../media/2-intro-example.png" alt-text="Sample query showing average and summarize operator.":::
 
 ## Get insights from the results
 
