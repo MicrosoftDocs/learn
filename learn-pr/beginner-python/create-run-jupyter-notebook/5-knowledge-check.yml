@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Equations and UI elements."
       isCorrect: false
-      explanation: "This answer is true, but it's not the only correct answer."
+      explanation: "Although this answer is true, it's not the only correct answer."
     - content: "Charts and graphs."
       isCorrect: false
-      explanation: "This answer is true, but it's not the only correct answer."
+      explanation: "Although this answer is true, it's not the only correct answer."
     - content: "Both of the above."
       isCorrect: true
-      explanation: "Correct. In addition to many others, equations, UI elements, charts, and graphs are types of elements in an interactive notebook."
+      explanation: "Correct. In addition to many other elements, equations, UI elements, charts, and graphs are types of elements in an interactive notebook."
   - content: "Which of the following types of content blocks are available in a Jupyter notebook?"
     choices:
     - content: "HTML"
