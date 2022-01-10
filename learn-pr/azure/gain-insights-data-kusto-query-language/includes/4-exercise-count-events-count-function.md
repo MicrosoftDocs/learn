@@ -1,6 +1,6 @@
 A Kusto query can be used to explore datasets and gain insights. Recall that we have a meteorological dataset and want to compare events to gain insights from this data. Here, you'll find out how many of a certain type of events occurred in a particular area. 
 
-## Use the `count` operator
+## Use the `count` function
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. 
 
