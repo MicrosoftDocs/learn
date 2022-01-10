@@ -2,7 +2,7 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 ## Use the `count` operator
 
-The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. That's a lot of individual storms, and it can be difficult to gain meaningful insights by looking at individual events.
+The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records. 
 
 To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example by counting the number of results using the following query:
 
@@ -10,7 +10,7 @@ To group these events into chunks of information, you'll use the `summarize` ope
 
 :::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator general query and results.":::
 
-You can also summarize your data by grouping similar types of events. Within each `summarize` operator, you can specify the type of aggregation to perform, and the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregate function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
+You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregate function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*.
 
 1. Copy and paste the query into your query editor.
 
