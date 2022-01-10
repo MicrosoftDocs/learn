@@ -22,3 +22,5 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
+- [Conditional access with Intune](/mem/intune/protect/conditional-access)
+- [Conditional Access with co-management](/mem/configmgr/comanage/quickstart-conditional-access)
