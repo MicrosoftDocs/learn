@@ -115,7 +115,7 @@ Here are the VMware software versions used in new deployments of Azure VMware So
 | VCSA/vSphere/vCenter | 6.7 Update 3 |
 | ESXi | 6.7 Update 3 |
 | vSAN | 6.7 Update 3 |
-| NSX-T | 2.5.2 |
+| NSX-T | 3.1.2 |
 
 Knowledge of the VMware versions gives customers an understanding of compatibility as it relates to on-premises environments.
 
