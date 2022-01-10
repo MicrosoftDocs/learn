@@ -3,7 +3,7 @@
 Download and import the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.OpenXR.unitypackage).
 
 >[!Tip]
->For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit instructions](../../../learn-mrtk-tutorials/includes/1-5-exercise-configure-resources.md).
+>For a reminder on how to import a Unity custom package, you can refer to the Importing the Mixed Reality Toolkit instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 
@@ -14,7 +14,7 @@ After importing the tutorial assets, your Project window should look similar to 
 Download and import the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.OpenXR.unitypackage).
 
 > [!Tip]
->For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit instructions](../../../learn-mrtk-tutorials/includes/1-5-exercise-configure-resources.md).
+>For a reminder on how to import a Unity custom package, you can refer to the Importing the Mixed Reality Toolkit instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 
