@@ -153,7 +153,7 @@ The details page includes all the details and information concerning the selecte
     > [!Tip]
     > To save your progress, select the **File** tab at the top and select the **Save** option. You can also use **Ctrl+S** to save your progress.
 
-    > !Note]
+    > [!Note]
     > Avoid including the **View in 3D** component on the **Carpet_details** page. We don't use 3D models for the **Carpet** category.
 
 ## View in MR component

@@ -12,7 +12,7 @@ We'll be using SharePoint as our primary data source for this application. You c
 
 3. On the SharePoint start page, you'll find the following information:
 
-    * It willl ask you to choose the site type; the choice is "communication site" or "Team site." Select **Communication site**.
+    * It will ask you to choose the site type; the choice is "communication site" or "Team site." Select **Communication site**.
 
     * Enter a suitable name for the site--for example, *Easy Sales*.
 

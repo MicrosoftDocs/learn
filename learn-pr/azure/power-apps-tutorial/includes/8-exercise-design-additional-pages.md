@@ -238,19 +238,19 @@ Implementing the above steps must make your application work in the following wa
 ## Test your application in a mobile device
 
 1. Choose the download link for your device:
-2. 
+
     * For iOS (iPad or iPhone), go to the [App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8).
     * For Android, go to [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps).
 
-3. Open Power Apps on your mobile device and sign in with your Microsoft account credentials.
+2. Open Power Apps on your mobile device and sign in with your Microsoft account credentials.
 
-4. The apps that you used recently will appear on the default screen when you sign in to Power Apps mobile.
+3. The apps that you used recently will appear on the default screen when you sign in to Power Apps mobile.
 
     The Home is the default screen when you sign in. It displays the apps you used recently and the apps that you've marked as favorites.
 
-5. To run an app on a mobile device, select the app tile. If this is the first time you're running a canvas app by using Power Apps mobile, a screen shows the swipe gestures.
+4. To run an app on a mobile device, select the app tile. If this is the first time you're running a canvas app by using Power Apps mobile, a screen shows the swipe gestures.
 
-6. To close an app, use your finger to swipe from the left edge of the app to the right. On Android devices, you can also press the Back button and then confirm that you intended to close the app.
+5. To close an app, use your finger to swipe from the left edge of the app to the right. On Android devices, you can also press the Back button and then confirm that you intended to close the app.
 
     > [!Note]
     > If an app requires a connection to a data source or permission to use the device's capabilities (such as the camera or location services), you must give consent before you can use the app. Typically, you're prompted only the first time you run the app.
