@@ -8,16 +8,10 @@ The data in the storm events scenario is presented on an event level, meaning th
 
 An aggregate function allows you to make these comparisons by grouping values of multiple rows to form a single summary value. The type of summary value depends on the specific function you use, and could be an average, maximum, minimum, or median value, just to name a few.
 
-For example, the following query uses the aggregate function `avg()` to calculate the average property damage grouped by the state in which the storm damage was caused.
+INSERT CONCEPTUAL IMAGE
 
-:::image type="content" source="../media/2-intro-example.png" alt-text="Sample query showing average and summarize operator.":::
-
-## Get insights from the results
+## Present the results visually
 
 Once you've grouped your data, you'll want to get insights from the results. The default output for queries is tabular. However, in many scenarios, graphical representations can better communicate the results. We'll explore some of the ways to convert Kusto query results to graphical visualizations using the `render` operator.
-
-For example, the following query returns the total damage caused by each type of storm. The results are then represented as a pie chart. This visualization allows you to quickly compare and find the most and least damaging types of storms.
-
-:::image type="content" source="../media/5-pie-chart.png" alt-text="Screenshot of sample query with pie chart result." lightbox="../media/5-pie-chart.png":::
 
 In the next units, we'll learn about some of the most common aggregate functions, visualize their results using the `render` operator, and then build complex queries. These KQL skills will help you gain insights into a sample dataset containing US meteorological data.
