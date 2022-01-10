@@ -252,11 +252,11 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
     > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location. 
 
     ```console
-    ./mvnw clean package
+    mvn clean package
     ```
 
     ```console
-    ./mvnw \
+    mvn \
     -DsubscriptionId=$(az account show --query id --output tsv) \
     -DresourceGroup=<rgn>[sandbox resource group name]</rgn> \
     -DappName=<your-unique-app-name> \
