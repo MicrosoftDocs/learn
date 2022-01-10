@@ -17,6 +17,9 @@ In the Project Settings window, expand the **Publishing Settings**, then scroll 
 
 ## Test holographic remoting remote application
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 To connect your PC application to your HoloLens 2, do the following:
 
 ### 1. Install the remoting player application on HoloLens 2 device

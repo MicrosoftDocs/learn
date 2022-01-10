@@ -40,12 +40,18 @@ In this section, you will learn how to configure the scene and make the necessar
 
 ## Build and deploy the app to your HoloLens 2
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the Building your application to your HoloLens 2 instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2 instructions](../../learn-mrtk-tutorials/includes/1-7-exercise-hand-interaction-with-objectmanipulator.md).
 
 ## Run the app on your HoloLens 2 and follow the in-app instructions
+
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
 
 ### Create an anchor to store a location
 

@@ -65,6 +65,9 @@ its **Transform** component as follows
 
 ## 2. (Optional) Build and deploy the application
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 1. When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 
     :::image type="content" source="../media/file-explorer.png" alt-text="Screenshot of File Explorer." lightbox="../media/file-explorer.png":::
@@ -75,8 +78,10 @@ its **Transform** component as follows
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
+    
     > [!NOTE]
     > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
+    
     > [!NOTE]
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
 
@@ -86,6 +91,7 @@ its **Transform** component as follows
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
+    
     > [!TIP]
     > You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 

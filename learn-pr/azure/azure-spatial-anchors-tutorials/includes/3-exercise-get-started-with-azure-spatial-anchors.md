@@ -107,6 +107,9 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
 ## Try the basic behaviors of Azure Spatial Anchors
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
 > [!Tip]

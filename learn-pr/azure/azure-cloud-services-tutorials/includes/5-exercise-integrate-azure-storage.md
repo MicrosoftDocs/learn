@@ -49,6 +49,9 @@ While you can see and verify all data changes from the UI inside the application
 
 ## Write and read data from Azure Table Storage
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 With everything prepared, it's time to create a *Tracked Object*.
 
 1. Open the application on your HoloLens, click on the **Set Object** and you'll see how the *EnterObjectName* object will become active in the hierarchy. In this menu click on the *search bar* and type in the name, you want to give the *Tracked Object*. After providing a name click on the **Set object** button. This will create the *Tracked Object* on the Azure Table storage and you'll see now the **Object Card**.
@@ -66,6 +69,9 @@ With everything prepared, it's time to create a *Tracked Object*.
 
 ## Upload and download image from Azure Blob Storage
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+
 In this section, you'll use the Azure Blob storage to upload and download images that will be used as thumbnails for *Tracked Objects*.
 
 > [!NOTE]
@@ -76,6 +82,9 @@ In this section, you'll use the Azure Blob storage to upload and download images
 2. Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
 ## Delete image from Azure Blob Storage
+
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
 
 In the previous section you uploaded new images to Azure Blob storage, in this section you'll delete an image thumbnail for *Tracked Objects*.
 
