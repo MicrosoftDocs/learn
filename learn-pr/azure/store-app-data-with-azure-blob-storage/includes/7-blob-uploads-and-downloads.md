@@ -214,8 +214,8 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
           <subscriptionId>${subscriptionId}</subscriptionId>
           <resourceGroup>${resourceGroup}</resourceGroup>
           <appName>${appName}</appName>
-          <pricingTier>F1</pricingTier>
-          <region>centralus</region>
+          <pricingTier>${pricingTier}</pricingTier>
+          <region>${region}</region>
           <runtime>
             <os>Linux</os>
             <javaVersion>Java 11</javaVersion>
@@ -259,7 +259,9 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
     mvn \
     -DsubscriptionId=$(az account show --query id --output tsv) \
     -DresourceGroup=<rgn>[sandbox resource group name]</rgn> \
+    -Dregion=centralus \
     -DappName=<your-unique-app-name> \
+    -DpricingTier=F1 \
     -DstorageConnectionString=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv) \
     -DstorageContainerName=files \
     azure-webapp:deploy
