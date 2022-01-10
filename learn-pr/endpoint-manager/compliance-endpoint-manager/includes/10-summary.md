@@ -28,3 +28,5 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
 - [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
+- [Protect Data and Devices with Intune](/mem/intune/protect/)
+- [Device compliance with Configuration Manager](/mem/configmgr/compliance/)
