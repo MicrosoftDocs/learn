@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.gain-insights-data-kql.exercise-count-events-count-operator
-title: "Exercise: Count events using the count operator"
+uid: learn.azure.gain-insights-data-kql.exercise-count-events-count-function
+title: Exercise: Count events using the count function
 metadata:
   unitType: exercise
   title: "Exercise: Count events using the count operator"
@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-exercise-count-events-count-operator.md)]
+  [!include[](includes/4-exercise-count-events-count-function.md)]
