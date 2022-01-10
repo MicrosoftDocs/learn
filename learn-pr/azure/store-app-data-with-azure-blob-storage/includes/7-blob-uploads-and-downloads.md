@@ -249,13 +249,13 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
 1. The following commands prepare environment variables for the Maven Plugin for Azure App Service. You'll extract the storage account's connection string with `az storage account show-connection-string`, the subscription id with `az account show`, set region, pricing, container name and app name. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
     ```azurecli
-    AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
-    AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-    AZ_REGION=centralus
-    AZ_APP_NAME=<your-unique-app-name>
-    AZ_PRICING_TIER=F1
-    AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
-    AZ_STORAGE_CONTAINER_NAME=files
+    export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
+    export AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export AZ_REGION=centralus
+    export AZ_APP_NAME=<your-unique-app-name>
+    export AZ_PRICING_TIER=F1
+    export AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
+    export AZ_STORAGE_CONTAINER_NAME=files
     ```
 
     > [!TIP]
