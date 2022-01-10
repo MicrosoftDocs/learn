@@ -105,12 +105,12 @@ The circuit owner creates an authorization, which creates an authorization key t
 
 You can delete a connection by selecting the Delete icon for the authorization key for your connection.
 
-    :::image type="content" source="../media/delete-authorization-key-eb398439.png" alt-text="Azure portal - delete authorization key only":::
+:::image type="content" source="../media/delete-authorization-key-eb398439.png" alt-text="Azure portal - delete authorization key only":::
 
 
 If you want to delete the connection but retain the authorization key, you can delete the connection from the connection page of the circuit.
 
-    :::image type="content" source="../media/delete-connection-owning-circuit-d3fe783f.png" alt-text="Azure portal - delete connection owning circuit":::
+:::image type="content" source="../media/delete-connection-owning-circuit-d3fe783f.png" alt-text="Azure portal - delete connection owning circuit":::
 
 
 **Circuit user operations**
