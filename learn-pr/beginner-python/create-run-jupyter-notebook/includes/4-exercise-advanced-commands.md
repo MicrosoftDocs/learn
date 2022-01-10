@@ -4,7 +4,7 @@ In your ship's manual, you'd like to create a chart of your ship's daily statist
 
 ## Create a visualization
 
-Build a bar chart with some mock data to show how you could plot oxygen levels in your ship. To do this, you will need some more libraries.
+Build a bar chart with some mock data to show how you could plot oxygen levels in your ship. To do this, you'll need some more libraries.
 
 1. Create a Markdown block to notate what you will display:
 
