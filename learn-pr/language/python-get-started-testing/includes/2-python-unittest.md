@@ -6,7 +6,7 @@ Classes and inheritance are the basis for using `unittest` to write tests. So, i
 
 ## Write tests using unittest
 
-Create a new file called *test_assertions.py* and add the following code:
+Writing tests with the `unittest` requires importing the module and creating at least one class that inherits from the `unittest.TestCase` class. This is how an example test looks in a file called *test_assertions.py* :
 
 ```python
 import unittest
@@ -24,9 +24,16 @@ There are several essential items in the file that are required for the test to 
 
 ### Running tests
 
-There are two ways to run a test file. At the end of the *test_assertions.py* file, the `unittest.main()` call allows running the tests by executing the file with Python:
+There are two ways to run a test file. Let's look again at the end of the *test_assertions.py* file, where the `unittest.main()` call allows running the tests by executing the file with Python:
 
+```python
+if __name__ == '__main__':
+    unittest.main()
 ```
+
+The test run is possible because of the `if` block at the end, where the condition is only met when running the script directly with Python. Let's check the output when running it in that way:
+
+```bash
 $ python test_assertions.py
 .
 ----------------------------------------------------------------------
@@ -35,11 +42,9 @@ Ran 1 test in 0.000s
 OK
 ```
 
-The test run is possible because of the `if` block at the end, where the condition is only met when running the script directly with Python.
+Another way to run tests with the `unittest` module is by using it with the Python executable. This time, it isn't necessary to specify the filename because tests can be discovered automatically:
 
-Another way to run tests with `unittest` is by using the module with the Python executable. This time, it isn't necessary to specify the filename because tests can be discovered automatically:
-
-```
+```bash
 $ python -m unittest
 .
 ----------------------------------------------------------------------
@@ -54,11 +59,19 @@ OK
 
 ### Naming conventions
 
-The class and method names are following a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separate with an underscore.  
+The class and method names are following a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separate with an underscore. For example, this is how a test for customer accounts that verify creation and deletion could look:
+
+```python
+class TestAccounts(unittest.TestCase):
+
+    def test_creation(self):
+        self.assertTrue(account.create())
+
+    def test_deletion(self):
+        self.assertTrue(account.delete())
+``` 
 
 Test classes or methods that don't follow these conventions won't get run. Although it might seem like a problem not to run every single method in a class, it can be helpful when creating non-test code.
-
-If using test discovery with `unittest`, then test files require the *test* prefix. 
 
 ### Assertions and assert methods
 
@@ -71,8 +84,8 @@ self.assertEqual("one string", "one string")
 In this case, both strings are equal, so the test passes. Testing equality is one of the many different assertions that the `unittest.TestCase` class offers. Although there are over 30 assert methods, these are most commonly used aside from `self.assertEqual()`:
 
 * `self.assertTrue(value)`: Ensure that `value` is true. 
-* `self.assertFalse(value)`
-* `self.assertNotEqual(a, b)`
+* `self.assertFalse(value)`: Ensure that `value` is false.
+* `self.assertNotEqual(a, b)`: Check that `a` and `b` are not equal.
 
 > [!Note]
 > Python data structures like dictionaries and lists evaluate as true when they have at least one item in them and false when they are empty. Avoid evaluating data structures in this way with `assertTrue()` and `assertFalse()` to prevent unexpected items go undetected. It is preferable to be as accurate as possible when testing.
@@ -81,9 +94,9 @@ In this case, both strings are equal, so the test passes. Testing equality is on
 
 Passing tests are a great way to ensure robustness. Still, understanding failure reporting is crucial to update and fix production code. 
 
-Update the *test_assertion.py* file so that the strings are different. In the next example, I change one of the strings from `"one string"` to `"other string"`, run the tests, and inspect the output:
+In the next example, I change one of the strings from `"one string"` to `"other string"`. Then, I execute the test with Python. Here is how the output looks now:
 
-```
+```bash
 $ python test_assertions.py
 F
 ======================================================================

@@ -11,9 +11,9 @@ Test functions and methods that are very long, with multiple logical conditions 
 
 There aren't any hard rules about unit testing, but in general the following are commonly accepted norms about unit tests:
 
-1. They test the smallest piece of logic possible.
-1. Functions, methods, or classes are tested as isolated as possible, avoiding the need to setup other functions, methods, or classes as a requirement.
-1. No external services like databases or network services are needed for them to run.
+- They test the smallest piece of logic possible.
+- Functions, methods, or classes are tested as isolated as possible, avoiding the need to setup other functions, methods, or classes as a requirement.
+- No external services like databases or network services are needed for them to run.
 
 ## Integration Testing
 
@@ -23,16 +23,22 @@ For example, a function that checks a username and password will probably need t
 
 These are some generally accepted norms about integration testing:
 
-1. Not as fast as unit tests, and they tend to require more setup upfront before running
-1. Functions, methods, or classes are tested with functionality in other functions, methods, or classes. 
-1. An external service might be used, but not all the services for the application
+- Not as fast as unit tests, and they tend to require more setup upfront before running
+- Functions, methods, or classes are tested with functionality in other functions, methods, or classes. 
+- An external service might be used, but not all the services for the application
 
 ## Functional Testing
 
-Functional testing usually requires running an application as a whole. For a website, a functional test might need a web server, a database, and any other required service for the application to run. The idea is to replicate the application as close as possible as the production environment. 
-Since it's not always possible to accurately replicate a production environment, special care needs to be put into the drawbacks of the setup. For example, if a website has one terabyte of data in production, it's probably fine to test with a subset of the production data. However, it wouldn't be advisable to use an embedded database like SQLite instead of the same PostgreSQL database used in production.
+Functional testing usually requires running an application as a whole. For a website, a functional test might need a web server, a database, and any other required service for the application to run. The idea is to replicate the application as close as possible as the production environment.
 
-Version differences of external services like databases can cause a test to pass but fail in production. 
+Since it's not always possible to accurately replicate a production environment, special care needs to be put into the drawbacks of the setup. For example, if a website has one terabyte of data in production, it's probably fine to test with a subset of the production data. However, it wouldn't be advisable to use an embedded database like SQLite instead of the same PostgreSQL database used in production. Version differences of external services like databases can cause a test to pass but fail in production. 
+
+These are some aspects of functional testing:
+
+- Not as fast as unit tests, and they tend to require more setup upfront before running
+- Functions, methods, or classes are tested with functionality in other functions, methods, or classes. 
+- An external service might be used, but not all the services for the application
+
 
 Since functional tests require more services, a reproduction of the production environment, and the most complex setup of the test types, it will usually be time consuming and resource intensive.
 
@@ -43,12 +49,6 @@ A single functional test for an online retail store could involve the following 
 1. Complete the shipping and billing information
 1. Select the "buy" button to complete the purchase
 1. Verify that the new account exists, billing and shipping information is correct, and inventory was updated
-
-These are some aspects of functional testing:
-
-1. Not as fast as unit tests, and they tend to require more setup upfront before running
-1. Functions, methods, or classes are tested with functionality in other functions, methods, or classes. 
-1. An external service might be used, but not all the services for the application
 
 ## Continuous Integration
 
@@ -68,4 +68,3 @@ A recurrent scheduled test run can also be helpful running tests that take a lon
 ### Manual triggering
 
 Finally, even though scheduled and event-driven test runs are useful, it's good to be able to run a test suite manually. For example, when a test suite is known to have a problem, a developer can try a fix by rerunning a previously failed run. This feedback loop allows fixes to be tested without the need for a specific event or schedule. Further, a CI run might allow configuration changes for a test to run, and these can be altered ad-hoc to ensure certain conditions are met.
-

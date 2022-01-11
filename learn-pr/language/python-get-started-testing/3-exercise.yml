@@ -2,14 +2,14 @@
 uid: learn.python-get-started-testing.exercise
 title: Exercise - write a unit test with the unittest module
 metadata:
-  unitType: exercise
-  title: exercise
-  description: "Write a unit test with Python's unittest module"
-  ms.date: 8/30/2021
+  title: Exercis - write a unit test with the unittest module
+  description: Practice writing a unit test with Python's unittest module in this exercise, using a class and test methods.
+  ms.date: 1/14/2022
   author: alfredodeza
   ms.author: alfredodeza
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  ms.prod: learning-language 
+durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise.md)]

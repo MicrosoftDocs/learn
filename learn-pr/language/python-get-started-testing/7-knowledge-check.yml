@@ -2,29 +2,15 @@
 uid: learn.python-get-started-testing.knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge about testing challenges and test types."
-  ms.date: 8/30/2021
+  ms.date: 1/14/2022
   author: alfredodeza
   ms.author: alfredodeza
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
-###  - Questions are complete sentences ending with a question mark 
-###  - No true/false questions 
-###  - 3 answers per question 
-###  - All answers about the same length 
-###  - Numeric answers listed in sorted order 
-###  - No "All of the above" and/or "None of the above" as answer choices 
-###  - No "Not" or "Except" in questions 
-###  - No second person ("you") in the questions or answers 
-###  - Provide a meaningful explanation for both correct and incorrect answers 
-###
-###########################################################################
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
+durationInMinutes: 4
 content: |
 quiz:
   questions:
@@ -50,36 +36,14 @@ quiz:
     - content: "They don't tend to raise exceptions"
       isCorrect: false
       explanation: "Incorrect. Code can raise exceptions even when they are tested thoroughly."
-  - content: "What is a negative effect of unreliable (flaky) tests?"
+  - content: "What is the correct Python invocation to use test auto discovery?"
     choices:
-    - content: "The error reporting becomes harder to read"
+    - content: "`python -m autodiscovery`"
       isCorrect: false
-      explanation: "Incorrect. An unreliable test does not necessarily affect the error reporting."
-    - content: "It causes a test suite to be slower."
+      explanation: "`autodiscovery` isn't a Python module, so this invocation wouldn't work."
+    - content: "`python -m discovery`"
       isCorrect: false
-      explanation: "Incorrect. An unreliable test is not directly related to the speed of a test suite."
-    - content: "You can't tell if the code needs to be changed or if a patch has introduced a regression."
+      explanation: "`discovery` isn't a Python module, so this invocation wouldn't work."
+    - content: "`python -m unittest`"
       isCorrect: true
-      explanation: "Correct! An unreliable test might fail for unrelated reasons which makes it hard to understand the failure."
-  - content: "What is one aspect of unit testing?"
-    choices:
-    - content: "No external services like databases or network services are needed for them to run."
-      isCorrect: true
-      explanation: "Correct! Unit tests are usually as isolated as possible and will not require other services to run."
-    - content: "Unit tests cover as much as possible of a software project."
-      isCorrect: false
-      explanation: "Incorrect. Although this test type can have high coverage, it isn't a recognizable aspect from unit testing."
-    - content: "Unit tests concentrate in testing a single function"
-      isCorrect: false
-      explanation: "Incorrect. Although a unit test can test a single function, this isn't always the case."
-  - content: "What is an attribute of functional testing?"
-    choices:
-    - content: "Functional testing can interact with different parts of the codebase"
-      isCorrect: false
-      explanation: "Incorrect. Even if a functional test can interact with different parts, this isn't an accurate attribute."
-    - content: "It usually requires running an application as a whole"
-      isCorrect: true
-      explanation: "That's right! A functional test will probably need running the whole application in an environment resembling production."
-    - content: "Uses all of the data from a production environment"
-      isCorrect: false
-      explanation: "Incorrect. A functional test doesn't always need all the data from a production environment to execute."
+      explanation: "Correct!"

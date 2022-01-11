@@ -1,12 +1,12 @@
 ### YamlMime:Module
 uid: learn.python-get-started-testing
 metadata:
-  moduleType: standard
   title: Getting started with Testing In Python
   description: "Use Python's standard library module to write unit tests, and then get exposed to the concepts of other types of testing and how to apply them."
-  ms.date: 8/30/2021
+  ms.date: 1/14/2022
   author: alfredodeza
   ms.author: alfredodeza
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language # Edit as appropriate for your portfolio area
 title: Getting started with Testing In Python
@@ -20,17 +20,17 @@ prerequisites: |
   - "Ability to write Python scripts"
   - "Familiarity with command-line tools and executing scripts"
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
+levels:
   - beginner
-roles: 
+roles:
   - developer
-products: 
-  - python
+  - student
+products:
+  - vs-code
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest
 - learn.python-get-started-testing.exercise
-- learn.python-get-started-testing.unittest-knowledge-check
 - learn.python-get-started-testing.challenges-with-testing
 - learn.python-get-started-testing.testing-types
 - learn.python-get-started-testing.knowledge-check
