@@ -43,7 +43,7 @@ In this section you will open your terminal and create some variables that will 
 1. Create a Service Bus queue
 
     ```bash
-    az servicebus queue create --resource-group $myResourceGroup \
+    az servicebus queue create --resource-group az204-svcbus-rg \
         --namespace-name $myNameSpaceName \
         --name az204-queue
     ```

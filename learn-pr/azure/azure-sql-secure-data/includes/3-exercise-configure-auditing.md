@@ -8,10 +8,11 @@ At the right is Azure Cloud Shell, which is a way to interact with Azure by usin
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
+1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command, and note the resulting IP address.
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
+    
     
     ```
 
@@ -30,6 +31,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $location = $resourceGroup.Location
     # The logical server name has to be unique in the system
     $serverName = "aw-server$($uniqueID)"
+    
+    
     ```
 
 1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
@@ -39,6 +42,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Your resource group name is:" $resourceGroupName
     Write-Host "Your resources were deployed in the following region:" $location
     Write-Host "Your server name is:" $serverName
+    
+    
     ```
 
     Remember to note your password, unique ID, and region. You'll use them throughout the module.
