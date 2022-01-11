@@ -24,7 +24,7 @@ In this section, you'll learn how to save and retrieve the Azure Anchor ID to an
     * For the **GetAzureAnchorIdFromDisk** button object, assign the **AnchorModuleScript** > **GetAzureAnchorIdFromDisk ()** function.
 
     > [!Note]
-    > Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+    > Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
     If you build the updated app to your HoloLens, you can now persist Azure Spatial Anchors between app sessions by saving the Azure Anchor ID. To test it out, you can follow these steps:
 
@@ -56,7 +56,7 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
     * For the GetAzureAnchorIdFromNetwork object, assign the AnchorModuleScript > GetAzureAnchorIdFromNetwork () function.
 
     > [!Note]
-    > Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+    > Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
     If you build the updated app to two HoloLens devices, you can now achieve spatial alignment by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 

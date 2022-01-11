@@ -66,7 +66,7 @@ its **Transform** component as follows
 ## 2. (Optional) Build and deploy the application
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 1. When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 

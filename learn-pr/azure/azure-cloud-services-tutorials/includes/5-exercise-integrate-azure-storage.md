@@ -50,7 +50,7 @@ While you can see and verify all data changes from the UI inside the application
 ## Write and read data from Azure Table Storage
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 With everything prepared, it's time to create a *Tracked Object*.
 
@@ -70,7 +70,7 @@ With everything prepared, it's time to create a *Tracked Object*.
 ## Upload and download image from Azure Blob Storage
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 In this section, you'll use the Azure Blob storage to upload and download images that will be used as thumbnails for *Tracked Objects*.
 
@@ -84,7 +84,7 @@ In this section, you'll use the Azure Blob storage to upload and download images
 ## Delete image from Azure Blob Storage
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 In the previous section you uploaded new images to Azure Blob storage, in this section you'll delete an image thumbnail for *Tracked Objects*.
 
