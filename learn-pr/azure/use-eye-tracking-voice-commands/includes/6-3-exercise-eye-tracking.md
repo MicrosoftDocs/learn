@@ -53,4 +53,4 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
     :::image type="content" source="../media/text-mesh-pro-object.png" alt-text="Screenshot of Unity with Hints TextMeshPro object selected and EyeTrackingTarget component configured." lightbox="../media/text-mesh-pro-object.png":::
 
-4. Repeat this step for the **Explode** and **Reset** button object to configure eye tracking for remaining buttons. If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the buttons, you'll see the text font size increase by 50% and reset back to its original size when looking away:
+4. Repeat this step for the **Explode** and **Reset** button object to configure eye tracking for remaining buttons. If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the buttons, you'll see the text font size increase by 50% and reset back to its original size when looking away.
