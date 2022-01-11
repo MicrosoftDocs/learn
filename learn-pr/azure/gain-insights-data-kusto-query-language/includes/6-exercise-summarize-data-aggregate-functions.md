@@ -6,7 +6,7 @@ In the last unit, you looked at the number of storms as a function of time and t
 
 First, you'll use the `avg()` function to calculate the average damage caused by storms.
 
-The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops*. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
+The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops* (in US dollars). The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
 
 1. Run the following query: 
 
@@ -47,7 +47,7 @@ The following query creates a calculated column using the `extend` operator to a
 
 Let's now look at the damage extremes.
 
-For absolute maximum or minimum values, use the `max()` and `min()` aggregate functions. Define the column on which to calculate the max or min value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column.
+For absolute maximum or minimum values, use the `max()` and `min()` aggregate functions. Within these functions, you have to define the column on which to calculate the maximum or mininum value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column. Notice that we have renamed the output columns within the query.
 
 You can rename the summarized columns within the query, as follows:
 
@@ -73,8 +73,7 @@ You can rename the summarized columns within the query, as follows:
 
 So far, you've calculated the min, max, and average values of damage caused by each event. To complete the picture of the distribution of these values, it can be useful to calculate the percentiles. Using the `percentiles()` function, you can define the input data and the percentiles to calculate. In the following example, you'll calculate the 5th, 20th, 50th, 80th, and 95th percentile values of damage for each event type.
 
-> [!NOTE]
-> *Percentiles*, which represent a frequency distribution, should not be confused with *percentages*, which are a proportion of a whole.
+*Percentiles*, which represent a frequency distribution, should not be confused with *percentages*, which are a proportion of a whole.
 
 1. Run the following query:
 

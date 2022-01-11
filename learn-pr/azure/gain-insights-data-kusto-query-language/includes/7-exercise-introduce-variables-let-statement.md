@@ -33,9 +33,26 @@ Notice the commented-out portions of the query that begin with double forward sl
 
 ## Convert a tabular answer to scalar input using a `let` statement
 
-Next, let's look at a count of the most frequent event type as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query.
+Next, let's look at a count of the most frequent event type as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query. Use the *StormEvents* table to find the top 1 *EventType* by counting the number of events within each type. Use the `project` operator to return only the *EventType* column.
 
-To construct this query, you'll use a `let` statement. First, define the variable name we want to introduce as *MostFrequentEventType*. We'll use the *StormEvents* table to find the top 1 *EventType* by counting the number of events within each type. Use the `project` operator to return only the *EventType* column. Finally, you want to convert this tabular result with one column and one row to a scalar value to be used as input into the query. Change the datatype by putting the whole query inside the `toscalar()` function.
+Before starting to construct the `let` statement, let's find out what this event actually is.
+
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qopLs3NTSzKrEpVSM4vzSvR0FRIqlQAS4ZUFqRy1SiU5BcoGIIEwfLxQJGCovys1OQShCoA5j76MVEAAAA=" target="_blank"> Click to run query</a>
+
+```Kusto
+StormEvents
+|summarize count() by EventType
+| top 1 by count_
+| project EventType
+```
+
+**Output:**
+
+|Event type|
+|---|
+| Thunderstorm wind|
+
+Now that you know what the most frequent event is, let's construct a `let` statement that uses this output in a query. First, define the variable name we want to introduce as *MostFrequentEventType*. Next, you want to convert the above tabular result with one column and one row to a scalar value to be used as input into the query. Change the datatype by putting the whole query inside the `toscalar()` function.
 
 The above steps are summarized in the following let statement:
 

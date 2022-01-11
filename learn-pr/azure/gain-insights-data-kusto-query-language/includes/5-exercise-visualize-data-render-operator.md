@@ -1,4 +1,4 @@
-A Kusto query can be used to explore datasets and gain insights. We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs. 
+We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs. 
 
 ## Use the `render` operator
 
@@ -25,15 +25,17 @@ In this example, you'll visualize the previous query using a bar chart.
  
     :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with bar chart results." lightbox="../media/5-column-chart.png":::
 
-1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you should get a graph that looks like the following image:
+1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
+
+1. What insights can you gain from this? You may notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
 
 ## Group values using the `bin` operator
 
 Until now, you've used aggregate functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have are start time and end time values. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
 
-You'll use the `bin` operator, which groups values into certain bin sizes. The syntax of this operator is:
+You'll use the `bin` operator, which groups values into set intervals. For example, you may have a data from every day of the year and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
 
 > `bin(`*value*`,`*roundTo*`)`
 

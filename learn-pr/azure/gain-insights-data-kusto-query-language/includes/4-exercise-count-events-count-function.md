@@ -31,9 +31,14 @@ You can also summarize data into groups of similar types of events by specifying
 
 The above query returned the number of events per state. There are, however, more sophisticated ways to count events. 
 * For example, you could count only certain types of events. The `countif()` function counts records for which a predicate is true. The query using `countif(DamageCrops > 0)` would count the number of records for which the damage to crops was greater than zero.
-* You can also count distinct types of events by using the `dcount()` function. This function gives an estimation of the cardinality of the specified set.
+* You can also count distinct types of events by using the `dcount()` function.
 
-The following query incorporates both operator types within the `summarize` operator. Notice that all elements within the summarize operator are separated by commas, and are grouped by the same column, in this case *State*. The columns that have been aggregated are renamed, and all other columns are dropped. If you want to include other columns, name them after the column on which data is summarized. 
+We've constructed a query that uses the `summarize` operator with these count functions to answer the following questions:
+* How many storm events happened in each state?
+* How many events in each state caused damage?
+* How many different type of events happened in each state?
+
+Notice that all elements within the summarize operator are separated by commas, and are grouped by the same column, in this case *State*. Columns not named in the `summarize` operator are dropped. If you want to include other columns, name them after the column on which data is summarized.
 
 1. Run the following query:
 
@@ -71,4 +76,4 @@ The above query returned a distinct count of 27 different types of storms in Tex
     
     :::image type="content" source="../media/4-distinct.png" alt-text="Screenshot of Kusto query using the distinct operator.":::
 
-1. Take a look at the resulting list. How many types of storms are related to some kind of wind? Can you construct a query that could answer this question?
+1. Take a look at the resulting list. Did any of the storm types surprise you?
