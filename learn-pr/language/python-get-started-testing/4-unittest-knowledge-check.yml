@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-get-started-testing.knowledge-check
-title: Knowledge check
+uid: learn.python-get-started-testing.unittest-knowledge-check
+title: Unittest Knowledge Check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
