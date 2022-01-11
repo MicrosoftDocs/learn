@@ -64,3 +64,6 @@ In the play mode move the **PressableButtonHoloLens2** object from left to right
 2) Checking and unchecking the **Spatialize** property
 
 Try out the app on HoloLens 2. In the app, you can click the button and hear the spatialized button interaction sounds.
+
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).

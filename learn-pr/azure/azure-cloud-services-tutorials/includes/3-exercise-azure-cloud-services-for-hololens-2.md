@@ -110,7 +110,7 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 ## Prepare project build pipeline
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can continue with the subsequent modules without any difficulty.
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 While the project yet has to be filled with content, you have to perform some preparations, so the project is ready for building for **HoloLens 2**.
 
