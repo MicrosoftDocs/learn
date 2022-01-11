@@ -12,7 +12,7 @@ An aggregate function allows you to make these comparisons by grouping values of
 
 Once you've grouped your data, you'll want to get insights from the results. The default output for queries is tabular. However, in many scenarios, graphical representations can better communicate the results. We'll explore some of the ways to convert Kusto query results to graphical visualizations using the `render` operator. 
 
-Some available types of visualization are `linechart`, `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. The following image shows a few examples of the Kusto query results of the sample data rendered visually.
+Some available types of visualization are `linechart`, `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. The following image shows sample Kusto query results rendered as a line chart, bar chart, and column chart.
 
 :::image type="content" source="../media/2-visualizations.png" alt-text="Screenshot of several types of visualizations of Kusto queries.":::
 

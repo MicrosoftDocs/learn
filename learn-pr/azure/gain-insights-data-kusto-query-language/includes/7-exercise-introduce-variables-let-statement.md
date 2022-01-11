@@ -94,7 +94,7 @@ Finally, render the results as a column chart to get a histogram of the count of
 
 The above examples created a stored scalar value to be used as an input parameter in a query. However, it's also possible to use a `let` statement to create a tabular output that's then used as the input to a query.
 
-1. Filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, project a subset of the columns using the `project` operator. This statement gives a tabular output called *KillerStorms*. Use this `let` statement as the beginning input for your query.
+1. Filter the *StormEvents* table on events that caused deaths (indirectly or directly). Then, return a subset of the columns using the `project` operator. This statement gives a tabular output called *KillerStorms*. Use this `let` statement as the beginning input for your query.
 
     ```kusto
         let KillerStorms=StormEvents

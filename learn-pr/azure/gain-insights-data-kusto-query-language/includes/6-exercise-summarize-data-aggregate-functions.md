@@ -4,7 +4,7 @@ A Kusto query can be used to explore datasets and gain insights. We've used a me
 
 In the last unit, you looked at the number of storms as a function of time and the damage caused by these storms. Let's look at other statistics that can help characterize the storms themselves.
 
-First, you'll use the `avg()` function to calculate the average damage caused by storms.
+First, you'll use the `avg()` function to calculate the average damage caused by storms in U.S. dollars.
 
 The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops* (in US dollars). The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
 
