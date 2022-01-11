@@ -8,7 +8,7 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
 title: Getting started with Testing In Python
 summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
 abstract: |
@@ -20,17 +20,17 @@ prerequisites: |
   - "Ability to write Python scripts"
   - "Familiarity with command-line tools and executing scripts"
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+levels: 
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+roles: 
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
-  {{products}}
+products: 
+  - python
 units:
 - learn.python-get-started-testing.introduction
 - learn.python-get-started-testing.python-unittest
 - learn.python-get-started-testing.exercise
-- learn.python-get-started-testing.knowledge-check
+- learn.python-get-started-testing.unittest-knowledge-check
 - learn.python-get-started-testing.challenges-with-testing
 - learn.python-get-started-testing.testing-types
 - learn.python-get-started-testing.knowledge-check
