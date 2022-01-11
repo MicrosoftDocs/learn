@@ -35,7 +35,7 @@ The guidelines are separated into 23 individual sections that focus on specific 
 - [XAG 112: UI navigation](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/112)
 - [XAG 113: UI focus handling](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/113)
 - [XAG 114: UI context](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/114)
-- [XAG 115: Error messages and destructive actions](https://docs.microsoft.com/gaming/accessibility-xbox-accessibility-guidelines/115)
+- [XAG 115: Error messages and destructive actions](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/115)
 - [XAG 116: Time limits](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/116)
 - [XAG 117: Visual distractions](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/117)
 - [XAG 118: Photosensitivity](https://docs.microsoft.com/gaming/accessibility/xbox-accessibility-guidelines/118)
