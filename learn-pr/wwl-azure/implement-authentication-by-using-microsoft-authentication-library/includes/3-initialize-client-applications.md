@@ -51,16 +51,16 @@ In the code snippets using application builders, a number of `.With` methods can
 
 The table below lists some of the modifiers you can set on a public, or client confidential client.
 
-Modifier | Description
-- | -
-`.WithAuthority()` 7 overrides | Sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI.
-`.WithTenantId(string tenantId)` | Overrides the tenant ID, or the tenant description. 
-`.WithClientId(string)` | Overrides the client ID.
-`.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios requiring a broker.
-`.WithComponent(string)` | Sets the name of the library using MSAL.NET (for telemetry reasons).
-`.WithDebugLoggingCallback()` | If called, the application will call `Debug.Write` simply enabling debugging traces. 
-`.WithLogging()` | If called, the application will call a callback with debugging traces. 
-`.WithTelemetry(TelemetryCallback telemetryCallback)` | Sets the delegate used to send telemetry.
+| Modifier | Description |
+|--|--|
+| `.WithAuthority()` | Sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI. |
+| `.WithTenantId(string tenantId)` | Overrides the tenant ID, or the tenant description. |
+| `.WithClientId(string)` | Overrides the client ID. |
+| `.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. In the case of public client applications, this will be useful for scenarios requiring a broker. |
+| `.WithComponent(string)` | Sets the name of the library using MSAL.NET (for telemetry reasons). |
+| `.WithDebugLoggingCallback()` | If called, the application will call `Debug.Write` simply enabling debugging traces. |
+| `.WithLogging()` | If called, the application will call a callback with debugging traces. |
+| `.WithTelemetry(TelemetryCallback telemetryCallback)` | Sets the delegate used to send telemetry. |
 
 
 ## Modifiers specific to confidential client applications
