@@ -54,3 +54,16 @@ With Advanced Threat Protection, you can detect and respond to potential threats
 * Anomalous client login
 
 In the next two exercises, you'll dive into the capabilities and scenarios that Microsoft Defender for Cloud, and Azure SQL in general, enables and protects against.
+
+### Row-level Security
+
+Row-Level Security enables you to use group membership or execution context to control access to rows in a database table.
+
+Row-Level Security (RLS) helps you implement restrictions on data row access. For example, you can ensure that workers access only those data rows that are pertinent to their department. Another example is to restrict customers' data access to only the data relevant to their company.
+
+The access restriction logic is located in the database tier rather than away from the data in another application tier. The database system applies the access restrictions every time that data access is attempted from any tier. This makes your security system more reliable and robust by reducing the surface area of your security system.
+
+RLS supports two types of security predicates.
+
+- Filter predicates silently filter the rows available to read operations (SELECT, UPDATE, and DELETE).
+- Block predicates explicitly block write operations (AFTER INSERT, AFTER UPDATE, BEFORE UPDATE, BEFORE DELETE) that violate the predicate.

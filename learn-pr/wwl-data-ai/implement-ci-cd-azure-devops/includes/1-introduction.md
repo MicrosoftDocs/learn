@@ -6,7 +6,7 @@ So how do you do that? What are the options for presenting your advanced and com
 
 In this module, we'll discover tools and processes you can use to implement CI/CD in your Azure Databricks environment.
 
-## Learning objectives 
+## Learning objectives
 
 In this module, you'll:
 

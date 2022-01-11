@@ -13,13 +13,13 @@ When you approach your own builds, it's a good idea to start by making sure you 
 When you create your own pipeline, you have two choices: the visual designer or YAML files. If you choose the visual designer to get started, you can switch to the YAML version of your configuration to learn how each task is structured.
 
 > [!NOTE]
-> At this point, you have a build artifact that you could deploy to a QA or production environment. For the rest of this learning path, you'll focus on using Azure Pipelines to build, and test your software. You'll learn how to use Azure Pipelines to deploy your apps in a future learning path.
+> At this point, you have a build artifact that you could deploy to a QA or production environment. For the rest of this learning path, you'll focus on using Azure Pipelines to build and test your software. You'll learn how to use Azure Pipelines to deploy your apps in a future learning path.
 
 ## Additional resources
 
 To further your understanding, see the following additional resources.
 
-If you're looking for a more academic approach, [*Continuous Delivery*](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble and David Farley, is a great starting point.
+If you're looking for a more academic approach, [*Continuous Delivery*](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble and David Farley is a great starting point.
 
 ### Learn YAML
 
