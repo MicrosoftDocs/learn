@@ -47,7 +47,7 @@ The following query creates a calculated column using the `extend` operator to a
 
 Let's now look at the damage extremes.
 
-For absolute maximum or minimum values, use the `max()` and `min()` aggregate functions. Within these functions, you have to define the column on which to calculate the maximum or mininum value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column. Notice that we have renamed the output columns within the query.
+For absolute maximum or minimum values, use the `max()` and `min()` aggregate functions. Within these functions, you have to define the column on which to calculate the maximum or minimum value, and the field on which to aggregate the data. The following query builds on the above calculated `damage` column, adding `max()` and `min()` values for the same column. Notice that we have renamed the output columns within the query.
 
 You can rename the summarized columns within the query, as follows:
 
