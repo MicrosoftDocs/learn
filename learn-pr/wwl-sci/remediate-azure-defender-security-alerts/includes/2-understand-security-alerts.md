@@ -64,7 +64,7 @@ Defender for Cloud benefits from having security research and data science teams
 
 The current alert reference list contains over 500 types of alerts.  The reference list can be reviewed at: [Security alerts - a reference guide](/azure/security-center/alerts-reference?azure-portal=true)
 
-Each alert type has a description, severity, and MITRE ATTA&CK tactic
+Each alert type has a description, severity, and MITRE ATT&CK tactic
 
 ### **MITRE ATT&CK tactics**
 
