@@ -238,7 +238,7 @@ From the Entities page, navigate back to the **PressButton** intent page.
 
 2. Back in your Unity project, in the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, locate the **Lunarcom Intent Recognizer (Script)** component and configure it as follows:
 
-    * In the **LUIS Endpoint** field, pass the **Example Query** you copied in the previous step:
+    * In the **LUIS Endpoint** field, pass the **Example Query** you copied in the previous step. Make sure to remove `YOUR_QUERY_HERE` from the URL:
 
     :::image type="content" source="../media/example-query.png" alt-text="Screenshot of Pass the example query you copied." lightbox="../media/example-query.png":::
 
