@@ -29,7 +29,6 @@ Familiarity with Kusto Query Language operators such as count, take, project, wh
 
 ## Summary
 
-Add the summary [(Summary guidance)](/help/learn/id-guidance-introductory-summaries)
 Write advanced queries in Kusto Query Language to help you gain insights from your data. Learn how to use the aggregation operators `count`, `dcount`, `countif`, `sum`, `min`,`max`, `avg`, `percentiles`, and others. Communicate these results visually in charts. 
 
 ## Learning objectives
@@ -44,7 +43,7 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: Exercise or Knowledge check? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Group data by using aggregation functions | Introduce concepts | Knowledge check | 1 | yes |
+| Group data by using aggregate functions | Introduce concepts | Knowledge check | 1 | yes |
 | Exercise: Count different types of events using the `count`, `dcount`, and `countif` operators | basic questions | Exercise| 1 | yes |
 | Exercise: Visualize data across time using the `bin`, `render`, and `sum` operators | compare| Exercise | 2 | yes |
 | Exercise: Summarize data using the `min`,`max`, `avg`, and `percentiles` operators | compare| Exercise | 1 | yes |
@@ -54,7 +53,7 @@ Identify the subtasks of module title.
 
 1. Introduction
         You're a data analyst with a passion for meteorological data. You want to use KQL to explore and prepare a dataset that will enable you to answer basic questions about the kinds and locations of storms in the US. In particular, you want to compare the impact of different types of storms in different locations.
-1. Group data by using aggregation functions
+1. Group data by using aggregate functions
 1. Exercise: Count different types of events using the `count`, `dcount`, and `countif` operators
 1. Exercise: Visualize data across time using the `bin`, `render`, and `sum` operators
 1. Exercise: Summarize data using the `min`,`max`, `avg`, and `percentiles` operators

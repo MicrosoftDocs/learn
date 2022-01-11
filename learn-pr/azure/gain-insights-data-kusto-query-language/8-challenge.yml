@@ -3,7 +3,7 @@ uid: learn.azure.gain-insights-data-kql.challenge
 title: Challenge
 metadata:
   unitType: exercise
-  title: challenge
+  title: Challenge
   description: "Challenge"
   ms.date: 11/30/2021
   author: YaelSchuster
@@ -12,4 +12,4 @@ metadata:
   ms.prod: azure-data-explorer
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-challenge.md)]
+  [!include[](includes/8-challenge.md)]
