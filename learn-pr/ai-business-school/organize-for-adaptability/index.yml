@@ -2,7 +2,7 @@
 uid: learn-wwl.organize-for-adaptability
 metadata:
   title: Organize for adaptability
-  description: PENDING
+  description: Free online course on how to successfully apply innovation frameworks including AI to your company
   ms.date: 12/13/2021
   author: amiguelblanco
   ms.author: japerena
@@ -25,8 +25,6 @@ roles:
 - business-user
 products: 
 - azure
-- dynamics-365
-- m365
 units: 
 - learn-wwl.organize-for-adaptability.introduction
 - learn-wwl.organize-for-adaptability.understand-adaptability
