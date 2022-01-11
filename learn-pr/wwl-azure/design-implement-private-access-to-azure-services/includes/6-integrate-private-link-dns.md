@@ -56,7 +56,7 @@ Your applications don't need to change the connection URL. When resolving to a p
 
 Private networks already using the private DNS zone for a given type, can only connect to public resources if they don't have any Private Endpoint connections, otherwise a corresponding DNS configuration is required on the private DNS zone in order to complete the DNS resolution sequence.
 
-For Azure services, use the [recommended zone names](https://docs.microsoft.com/azure/private-link/private-endpoint-dns#azure-services-dns-zone-configuration) found in the documentation. 
+For Azure services, use the [recommended zone names](/azure/private-link/private-endpoint-dns#azure-services-dns-zone-configuration) found in the documentation. 
 
 
 ## DNS configuration scenarios
