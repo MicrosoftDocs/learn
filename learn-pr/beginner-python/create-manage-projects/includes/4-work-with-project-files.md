@@ -105,8 +105,6 @@ pip install "python-dateutil==2.7.*" --upgrade
 
 In the preceding example, you specify that you want to upgrade only if there are new patch versions that use the "2.7.*" pattern. That means if you're on version 2.7.1, you're OK to upgrade to 2.7.2 (for example), because the rightmost number is about patch version. However, you're not OK with upgrading the minor version--for example, from 2.7 to 2.8.
 
-There's a lot more to be said on the topic of upgrading your packages, but now you have an idea of what these version numbers mean and when to upgrade.
-
 ## Clean up unused packages
 
 Sometimes, you might realize that you no longer need a certain Python package and you want to remove it. For such a case, you can use `pip uninstall`:
