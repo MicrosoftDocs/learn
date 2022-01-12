@@ -1,6 +1,6 @@
 Beyond core arithmetic, you can use other operations on numbers. You might need to perform rounding, or convert strings into numbers.
 
-In the scenario for this module, you want to accept input from a user. The input will be a string rather than a number, so you will need to convert it to a number. Also, the user might enter values that give you a negative answer, which you won't want to display. You might need to convert the answer to the absolute value. Fortunately, Python provides utilities for these operations.
+In the scenario for this module, you want to accept input from a user. The input will be a string rather than a number, so you'll need to convert it to a number. Also, the user might enter values that give you a negative answer, which you won't want to display. You might need to convert the answer to the absolute value. Fortunately, Python provides utilities for these operations.
 
 ## Convert strings to numbers
 
@@ -57,7 +57,7 @@ print(round(14.5))
 
 ## Math library
 
-Python has different libraries to provide more advanced operations and calculations. One of the most common is the `math` library. `math` allows you to perform rounding with `floor` and `ceil`, provide the value of pi, and numerous other operations. Let's see how to use this library for rounding up or down.
+Python has libraries to provide more advanced operations and calculations. One of the most common is the `math` library. `math` allows you to perform rounding with `floor` and `ceil`, provide the value of pi, and numerous other operations. Let's see how to use this library for rounding up or down.
 
 Rounding numbers enables you to remove the decimal portion of a float. You can choose to always round up to the nearest whole number by using `ceil`, or down by using `floor`.
 
