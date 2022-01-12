@@ -14,9 +14,9 @@ WPP needed a way to bridge the innovative ideas and best practices across employ
 
 ## Questions for consideration
 
-1. How could WPP best utilize their different teams to achieve a unified strategy for innovation?
-1. Digitalization and AI are growing trends across industries. How could marketing companies like WPP approach marrying technology and creativity to create more business value for their clients?
-1. How can companies interested in creating a collaborative environment make innovation spaces more accessible?
-1. In what ways can companies encourage a culture of collaboration to ensure their initiatives both solve existing problems and have legs for long-term success?
+* How could WPP best utilize their different teams to achieve a unified strategy for innovation?
+* Digitalization and AI are growing trends across industries. How could marketing companies like WPP approach marrying technology and creativity to create more business value for their clients?
+* How can companies interested in creating a collaborative environment make innovation spaces more accessible?
+* In what ways can companies encourage a culture of collaboration to ensure their initiatives both solve existing problems and have legs for long-term success?
 
 Now let’s watch WPP’s video to learn how they addressed their industry need to deliver more targeted marketing strategies.

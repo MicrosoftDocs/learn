@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-wwl.cultivate-an-innovative-mindset
+uid: learn-wwl.cultivate-innovative-mindset
 metadata:
   title: Cultivate an innovative mindset
   description: Online free course on how organizational culture can foster innovation through collaboration
@@ -17,7 +17,7 @@ abstract: |
   - Evaluate and prioritize organizational readiness for long-term innovation. 
   - Learn how to apply creative ways to encourage experimentation and coinnovation across your organization. 
 prerequisites: Familiarity with successful implementations of AI
-iconUrl: /learn/achievements/cultivate-an-innovative-mindset.svg
+iconUrl: /learn/achievements/cultivate-innovative-mindset.svg
 levels: 
 - intermediate
 roles: 
@@ -28,13 +28,13 @@ products:
 - dynamics-365
 - m365
 units: 
-- learn-wwl.cultivate-an-innovative-mindset.introduction
-- learn-wwl.cultivate-an-innovative-mindset.power-embracing-innovative-mindset
-- learn-wwl.cultivate-an-innovative-mindset.establish-collaborative-environment
-- learn-wwl.cultivate-an-innovative-mindset.wpp-case-study-introduction
-- learn-wwl.cultivate-an-innovative-mindset.wpp-executive-qa
-- learn-wwl.cultivate-an-innovative-mindset.case-study-resolution
-- learn-wwl.cultivate-an-innovative-mindset.knowledge-check
-- learn-wwl.cultivate-an-innovative-mindset.summary-and-resources
+- learn-wwl.cultivate-innovative-mindset.introduction
+- learn-wwl.cultivate-innovative-mindset.power-embracing-innovative-mindset
+- learn-wwl.cultivate-innovative-mindset.establish-collaborative-environment
+- learn-wwl.cultivate-innovative-mindset.wpp-case-study-introduction
+- learn-wwl.cultivate-innovative-mindset.wpp-executive-qa
+- learn-wwl.cultivate-innovative-mindset.case-study-resolution
+- learn-wwl.cultivate-innovative-mindset.knowledge-check
+- learn-wwl.cultivate-innovative-mindset.summary-and-resources
 badge: 
-  uid: learn-wwl.cultivate-an-innovative-mindset.badge #add the uid for your achievement badge.
+  uid: learn-wwl.cultivate-innovative-mindset.badge #add the uid for your achievement badge.
