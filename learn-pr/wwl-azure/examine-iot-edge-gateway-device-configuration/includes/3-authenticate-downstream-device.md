@@ -31,7 +31,7 @@ When you create the new device identity, provide the following information:
  -  Select **Symmetric key** as the authentication type.
  -  Optionally, choose to **Set a parent device** and select the IoT Edge gateway device that this downstream device will connect through. This step is optional for symmetric key authentication, but it's recommended because setting a parent device enables offline capabilities for your downstream device. You can always update the device details to add or change the parent later.
 
-:::image type="content" source="../media/m06-l03-edge-gateway-symmetric-key-portal-93d92342.png" alt-text="Screen shot that shows how to create a device identity that uses symmetric key authentication.":::
+:::image type="content" source="../media/m06-l03-edge-gateway-symmetric-key-portal-93d92342.png" alt-text="Screenshot that shows how to create a device identity that uses symmetric key authentication.":::
 
 
 You can use the IoT extension for Azure CLI to complete the same operation. The following example creates a new IoT device with symmetric key authentication and assigns a parent device:
@@ -112,7 +112,7 @@ You should have created a root CA certificate and an intermediate certificate.
      -  Paste the hexadecimal strings that you copied from your device's primary and secondary certificates.
      -  Select Set a parent device and choose the IoT Edge gateway device that this downstream device will connect through. A parent device is required for X.509 authentication of a downstream device.
     
-    :::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Screen shot that shows how to create a device identity that uses X.509 self-signed certificate authentication.":::
+    :::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Screenshot that shows how to create a device identity that uses X.509 self-signed certificate authentication.":::
     
 5.  Copy the following files to any directory on your downstream device:
     
