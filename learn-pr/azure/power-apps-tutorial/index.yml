@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.power-apps-tutorial
 metadata:
-  title: Build a 3D mobile app with Power Apps in Mixed Reality
-  description: Learn about all the foundational elements required to build a Mixed Reality application using Power Apps.
-  ms.date: 10/19/2021
+  title: Build a 3D mobile app with Power Apps in mixed reality
+  description: Learn about all the foundational elements required to build a mixed reality application using Power Apps.
+  ms.date: 01/01/2022
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.author: "vinnietieto"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a 3D mobile app with Power Apps in Mixed Reality
-summary: Learn about the foundational elements required to build a Mixed Reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in Mixed Reality.
+title: Build a 3D mobile app with Power Apps in mixed reality
+summary: Learn about the foundational elements required to build a mixed reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in mixed reality.
 abstract: |
-  By the end of this module you will be able to:
+  By the end of this module you'll be able to:
   - Understand Power Apps in Mixed Reality and its use cases.
-  - Learn about some of the Mixed Reality components included in Power Apps such as Measure in MR and View in MR
-  - Configure, set up, and build a "Sales" oriented Mixed reality application with Power Apps.
+  - Learn about some of the mixed reality components included in Power Apps such as Measure in MR and View in MR
+  - Configure, set up, and build a "Sales" oriented mixed reality application with Power Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -27,10 +27,10 @@ products:
 prerequisites: |
   - Microsoft organization credentials.
   - Power Apps account.
-  - Mixed reality supported iOS mobile device(iOS 13 or later) or Android mobile device(Android 7 or later).
+  - Mixed reality-supported iOS mobile device (iOS 13 or later) or Android mobile device (Android 7 or later).
   - A Windows 8.1 or later PC.
-  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config)
-  - Familiarity with OneDrive, SharePoint, and Excel
+  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config).
+  - Familiarity with OneDrive, SharePoint, and Excel.
   - Power Apps application installed in a mobile device.
   
 units: 

@@ -105,7 +105,7 @@ Run the code.  You should see the following output:
 
 ```output
 Modulus of 200 / 5 : 0
-Modulus of 7 / 5: 2
+Modulus of 7 / 5 : 2
 ```
 
 When the modulus is 0, that means the dividend is divisible by the divisor.

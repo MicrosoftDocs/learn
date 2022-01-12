@@ -22,6 +22,12 @@ In the exercise, you'll replace the current HTML fields with a Blazor component 
     </div>
     ```
 
+1. Remove the `@onclick` event on the `</button>`.
+
+    ```razor
+    <button class="checkout-button btn btn-warning" disabled=@isSubmitting>
+    ```
+
 1. In the `@code` block, add the code to handle the form submission above the existing `PlaceOrder` method.
 
     ```csharp
@@ -51,7 +57,7 @@ In the exercise, you'll replace the current HTML fields with a Blazor component 
     :::image type="content" source="../media/5-replace-input-elements.png" alt-text="Screenshot of Visual Studio Code and the text replace dialog."::: 
 
 1. Select the **Edit** menu, then select **Replace**. 
-1. In the first field, enter `@bind=` in the replace field enter `@bind-Value`, then select replace all.
+1. In the first field, enter `@bind=` in the replace field enter `@bind-Value=`, then select replace all.
 1. Remove the `@ref="startName"` code on the Name field. 
 1. Remove all the code below the Parameter declaration in the `@code` block. The block should now look like this.
 
@@ -93,16 +99,19 @@ Let's add an error message the app can show a customer if they don't enter their
     ```csharp
     private async Task CheckSubmission(EditContext editContext)
     {
-      var model = editContext.Model as Address;
-      isSubmitting = true;
-      if (model is null) {
-        isError = true;
-      } else if (model.Name is null || model.Line1 is null || model.PostalCode is null) {
-        isError = true;
-      } else {
-        isError = false;
-        await PlaceOrder();
-      }
+        var model = editContext.Model as Address;
+        isSubmitting = true;
+        if (string.IsNullOrWhitespace(model?.Name) || 
+            string.IsNullOrWhitespace(model?.Line1) ||
+            string.IsNullOrWhitespace(model?.PostalCode)
+        {
+            isError = true;
+        } 
+        else 
+        {
+            isError = false;
+            await PlaceOrder();
+        }
       isSubmitting = false;
     }  
     ```

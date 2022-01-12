@@ -1,14 +1,12 @@
-In this module, you've learned to develop and design an application in a short period with no bit of coding where users with any level of knowledge can use the apps for business purposes. With the use of the Microsoft Cloud and services like Dynamics 365, Power Apps enable you to access work across the web and mobile without the time and expense of custom software development.
-
-As it uses extensive number of clouds and on-premise applications, including Dynamic 365, you can access the work across the web and mobile without the time and expense of custom software development.
+In this module, you learned how to design and develop an application in a short period of time and without the need for any coding. Users with any level of knowledge can use the apps for business purposes. By using the Microsoft Cloud and services like Dynamics 365, Power Apps enables you to access work across the Web and mobile without the time and expense of custom software development.
 
 ## Next steps
 
-The application you built in this module is a simple application that can be further added to and extended. You can access few more functions or features provided by Microsoft Power Apps, to unlock new scenarios for your business. Consider trying the following features:
+The application you built is basic, but you can extend it with more Power Apps features to unlock new scenarios for your business. Consider trying the following features:
 
-* Try using different **Connectors**.
-* Consider including the feature of ordering more than one product.
-* Incorporate **View shape in MR** in your present developed application.
+* Use different **Connectors**.
+* Add functionality that lets the user order more than one product.
+* Incorporate **View shape in MR**.
 
 ## Further reading
 

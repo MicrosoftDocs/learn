@@ -21,9 +21,6 @@ The `CosmosClient.CreateDatabaseIfNotExistsAsync` checks if a database exists, a
 ```csharp
 // An object containing relevant information about the response
 DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync(databaseId, 10000);
-
-// A client side reference object that allows additional operations like ReadAsync
-Database database = databaseResponse;
 ```
 
 ### Read a database by ID

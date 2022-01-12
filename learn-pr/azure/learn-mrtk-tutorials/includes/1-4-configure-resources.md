@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit's an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
+The Mixed Reality Toolkit is an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
 
 ## What is the Mixed Reality Toolkit?
 
@@ -38,7 +38,7 @@ The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** 
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The **MixedRealityToolkit** object contains the active profile and can be viewed in the Inspector window. When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
-MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it'sn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
+MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it isn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 
 ## How are configuration profiles organized
 

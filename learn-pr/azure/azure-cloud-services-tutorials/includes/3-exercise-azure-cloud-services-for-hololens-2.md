@@ -109,6 +109,9 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 
 ## Prepare project build pipeline
 
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
+
 While the project yet has to be filled with content, you have to perform some preparations, so the project is ready for building for **HoloLens 2**.
 
 ### 1. Add additional required capabilities
@@ -126,6 +129,9 @@ While the project yet has to be filled with content, you have to perform some pr
     :::image type="content" source="../media/capabilty.png" alt-text="Screenshot of Unity Capabilities" lightbox="../media/capabilty.png":::
 
 ### 2. Deploy the app to your HoloLens 2
+
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
