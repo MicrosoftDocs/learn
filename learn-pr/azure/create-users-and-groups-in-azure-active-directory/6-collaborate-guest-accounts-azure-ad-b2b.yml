@@ -5,8 +5,8 @@ metadata:
   title: Collaborate by using guest accounts and Azure Active Directory B2B
   description: Collaborate by using guest accounts and Azure Active Directory B2B
   ms.date: 10/25/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
