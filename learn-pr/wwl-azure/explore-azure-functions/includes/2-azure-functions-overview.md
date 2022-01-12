@@ -17,7 +17,7 @@ You can mix and match services when you build an orchestration, calling function
 | **Actions** | Each activity is an Azure function; write code for activity functions | Large collection of ready-made actions |
 | **Monitoring** | Azure Application Insights | Azure portal, Azure Monitor logs |
 | **Management** | REST API, Visual Studio | Azure portal, REST API, PowerShell, Visual Studio |
-| **Execution context** | Can run locally or in the cloud | Runs only in the cloud |
+| **Execution context** | Can run locally or in the cloud | Supports run-anywhere scenarios |
 
 ## Compare Functions and WebJobs
 
