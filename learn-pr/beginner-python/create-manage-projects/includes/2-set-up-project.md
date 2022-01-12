@@ -8,7 +8,7 @@ You have a development machine. On that machine, you might have one version of P
 
 One thing you don't want to do is assume that your program will work and that you can just install the latest version of whatever libraries you depend on. If you do that, you might end up destroying the ability of the other programs to function on the target machine. The solution is to find a way for your app to work in isolation. 
 
-Python's solution for these problems is a virtual environment. A virtual environment is a self-contained copy of everything needed to run your program. This includes the Python interpreter and any libraries your program needs. By using a virtual environment, you can ensure your program will have access to the correct versions and resources to execute correctly.
+Python's solution for these problems is a virtual environment. A virtual environment is a self-contained copy of everything needed to run your program. This includes the Python interpreter and any libraries your program needs. By using a virtual environment, you can ensure your program will have access to the correct versions and resources to run correctly.
 
 The basic workflow looks like this:
 
@@ -69,8 +69,6 @@ At this point, you're inside your virtual environment. Anything you do happens i
 ## What's a package?
 
 One of the main advantages of using external libraries is to speed up the development time of your program. You can fetch such a library on the internet. But by fetching and installing these libraries through a virtual environment, you ensure that you install theses libraries only for the virtual environment and not globally for the entire machine. 
-
-A library is also called a package.
 
 ## Install a package
 
