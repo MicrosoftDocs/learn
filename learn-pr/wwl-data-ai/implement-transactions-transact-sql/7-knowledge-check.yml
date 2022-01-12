@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2021
+  ms.date: 01/12/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -38,13 +38,13 @@ quiz:
       explanation: "That's incorrect. The BREAK keyword is used to exit a WHILE loop and is not used to control transactions."
   - content: "What does XACT_STATE test for?"
     choices:
-    - content: "Whether or not the transaction has been committed."
+    - content: "WWhether there are nested transactions."
       isCorrect: false
-      explanation: "That's incorrect. XACT_STATE does not test whether a transaction has been committed."
-    - content: "An error in the transaction."
+      explanation: "That's incorrect. XACT_STATE does not test for whether there are nested transactions."
+    - content: "The status of the current request."
       isCorrect: true
-      explanation: "That's correct. If an error occurs that causes the transaction to be classified an uncommittable, it will return -1."
-    - content: "Whether or not the current transaction has finished."
+      explanation: "That's correct. XACT_STATE tests for the status of the current request."
+    - content: "Returns the error number that caused the transaction to fail."
       isCorrect: false
       explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
   - content: "What is the default transaction isolation level for Azure SQL Database?"
