@@ -1,4 +1,4 @@
-When you start building a program, you think about what the program should do, what libraries you need, and how to architect the program. These are important considerations during development but also as you maintain the program over time.
+Most programs that you write will rely on code written by others. This code often comes in the form of packages, which are external modules or libraries that you include in your project. As with any project that requires a set of resources, it's important to consider how you'll ensure that the right resources are available for your program.
 
 A good start is learning how to manage your program. A way to do that is to think of the program as a project. Python approaches this by using something called virtual environments.
 
