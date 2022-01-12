@@ -6,7 +6,7 @@ In this module, you learned how to use Azure Blob Storage to store web app data.
 
 1. You discovered tips for creating a strategy to use Blob Storage in a web app.
 
-1. You learnt how to use the Azure Storage SDK to list, write to and read from blobs. 
+1. You learned how to use the Azure Storage SDK to list, write to and read from blobs. 
 
 1. You created an app that accepts uploaded files from users, stores them in Blob Storage, and makes them available for download.
 
