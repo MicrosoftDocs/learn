@@ -8,7 +8,9 @@ You have a development machine. On that machine, you might have one version of P
 
 One thing you don't want to do is assume that your program will work and that you can just install the latest version of whatever libraries you depend on. If you do that, you might end up destroying the ability of the other programs to function on the target machine. The solution is to find a way for your app to work in isolation. 
 
-Python's solution for these problems is a virtual environment. The idea is that you perform the following actions in sequence:
+Python's solution for these problems is a virtual environment. A virtual environment is a self-contained copy of everything needed to run your program. This includes the Python interpreter and any libraries your program needs. By using a virtual environment, you can ensure your program will have access to the correct versions and resources to execute correctly.
+
+The basic workflow looks like this:
 
 1. Create a virtual environment that won't affect the rest of the machine.
 1. Step into the virtual environment, where you specify the Python version and libraries that you need.
