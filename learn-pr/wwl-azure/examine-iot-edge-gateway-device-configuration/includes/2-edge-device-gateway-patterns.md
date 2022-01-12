@@ -47,7 +47,7 @@ Here is a quick cheat sheet that compares IoT Hub primitives when using transpar
 :::row-end:::
 :::row:::
   :::column:::
-    Identities stored in the IoT Hub identity registry
+    Identities stored in the IoT Hub identity registry.
   :::column-end:::
   :::column:::
     Identities of all connected devices.
@@ -61,7 +61,7 @@ Here is a quick cheat sheet that compares IoT Hub primitives when using transpar
 :::row-end:::
 :::row:::
   :::column:::
-    Device twin
+    Device twin.
   :::column-end:::
   :::column:::
     Each connected device has its own device twin.
@@ -75,7 +75,7 @@ Here is a quick cheat sheet that compares IoT Hub primitives when using transpar
 :::row-end:::
 :::row:::
   :::column:::
-    Direct methods and cloud-to-device messages
+    Direct methods and cloud-to-device messages.
   :::column-end:::
   :::column:::
     The cloud can address each connected device individually.
@@ -89,7 +89,7 @@ Here is a quick cheat sheet that compares IoT Hub primitives when using transpar
 :::row-end:::
 :::row:::
   :::column:::
-    IoT Hub throttles and quotas
+    IoT Hub throttles and quotas.
   :::column-end:::
   :::column:::
     Apply to each device.
