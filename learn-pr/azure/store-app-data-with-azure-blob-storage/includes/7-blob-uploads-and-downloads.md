@@ -272,7 +272,7 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
 
     To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
 
-    :::image type="content" source="../media/7-fileuploader-empty-java.PNG" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/7-fileuploader-empty-java.png" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
     > [!TIP]
     > This module uses Maven Plugin for Azure App Service to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.

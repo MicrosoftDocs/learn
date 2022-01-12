@@ -22,7 +22,7 @@ You're going to complete an unfinished app by adding code to use Azure Blob Stor
 
 ::: zone pivot="java"
 
-![Screenshot of the FileUploader web app.](../media/4-fileuploader-with-files-java.PNG)
+![Screenshot of the FileUploader web app.](../media/4-fileuploader-with-files-java.png)
 
 ::: zone-end
 
