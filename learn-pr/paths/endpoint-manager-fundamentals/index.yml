@@ -4,14 +4,15 @@ metadata:
   title: Microsoft Endpoint Manager fundamentals
   description: This learning path help you understand the fundamentals concepts involved in managing your endpoint environment.
   brand: azure
-  ms.date: 10/27/2020
+  ms.date: 01/12/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Endpoint Manager fundamentals
 summary: | 
-  This learning path helps you understand the fundamental concepts involved in managing your endpoint environment.
+  Managing and protecting your organization’s data, devices, and apps using Microsoft Endpoint Manager requires you to understand key concepts involving access, security rules, and compliance. This learning path starts by explaining the products and services that encompass Microsoft Endpoint Manager, as well as the value that each provides. You also need to understand the endpoint environment and the supported platforms, such iOS, Windows, and Android. You will learn about ensuring proper device access, understanding device security rules, and resolving device compliance issues. Apps can be assigned, managed, and protected as well. You will learn about configuring apps, protecting app data, managing app policy assignments, and implementing app security rules. 
+  There are several benefits of using Microsoft Endpoint Manager for your organization. These benefits are explained, including how Microsoft Endpoint Manager increases security and productivity, provides flexibility, and maximizes your investment.
 
   By completing this learning path, you'll:
 
