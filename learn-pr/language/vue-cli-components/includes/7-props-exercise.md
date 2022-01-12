@@ -51,7 +51,7 @@ Let's add the template to display the information for our bookings. You'll use `
     </h2>
 
     <div class="row" v-for="(booking, index) in bookings" :key="index">
-        <div>{{ booking.cabin }} </div>
+        <div>{{ booking.name }} </div>
     </div>
 
     <h3 class="row">

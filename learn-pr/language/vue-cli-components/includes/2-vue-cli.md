@@ -2,7 +2,7 @@ Vue CLI provides a suite of tools for development, including project scaffolding
 
 ## Bootstrapping
 
-The core feature of Vue CLI is to bootstrap an application. The *create* script provides a wizard where you can select from some of the most common configurations, including:
+The core usage of Vue CLI is to bootstrap an application. The *create* script provides a wizard where you can select from some of the most common configurations, including:
 
 - **Linting options**: Ensure that all code looks consistent. These options can also help uncover errors.
 - **Application type**: Choose whether to add Progressive Web Apps support.
