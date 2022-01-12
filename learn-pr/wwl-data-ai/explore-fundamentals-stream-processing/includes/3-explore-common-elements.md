@@ -38,4 +38,4 @@ The output from stream processing is often sent to the following services:
 - **Azure Event Hubs**: Used to queue the processed data for further downstream processing.
 - **Azure Data Lake Store Gen 2** or **Azure blob storage**: Used to persist the processed results as a file.
 - **Azure SQL Database** or **Azure Synapse Analytics**, or **Azure Databricks**: Used to persist the processed results in a database table for querying and analysis.
-- **Microsoft Power BI**: Used to generate realtime data visualizations in reports and dashboards.
+- **Microsoft Power BI**: Used to generate real time data visualizations in reports and dashboards.

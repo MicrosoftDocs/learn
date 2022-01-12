@@ -25,7 +25,7 @@ quiz:
     - content: "Offline processing."
       isCorrect: false
       explanation: "Incorrect. The source is a continuous stream of data and the requirement is for real-time reporting. This requires the data processing solution to be running continuously, not offline."
-  - content: "You need to process a stream of stock price data from a real-time stock market feed that is captured in an Azure Event Hub, filter the data to include only prices for a specific list of stocks, and store the filtered results in Azure SQL Database. Which service should you use to filter the data?"
+  - content: "You need to process a stream of stock price data from a real-time stock market feed that is captured in an Azure event hub, filter the data to include only prices for a specific list of stocks, and store the filtered results in Azure SQL Database. Which service should you use to filter the data?"
     choices:
     - content: "Azure Batch."
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. Azure Storage does not provide stream querying functionality."
     - content: "Azure Stream Analytics"
       isCorrect: true
-      explanation: "Correct. Azure Stream Analytics can be used to query a stream of data from Azure Event Hubs and store the results in Azure SQL Database."
+      explanation: "Correct. Azure Stream Analytics can be used to query a stream of data from Azure event hubs and store the results in Azure SQL Database."
   - content: "Which capability of Azure Synapse Analytics enables you to implement table-based stream processing for data in a data lake?"
     choices:
     - content: "Serverless SQL pool."
