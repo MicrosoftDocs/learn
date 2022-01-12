@@ -1,14 +1,14 @@
-The world wide web is an amazing place, and it's best when everyone can participate. The first step to building accessible web applications is a basic awareness of the diverse ways that users interact with our web applications.
+The web is an amazing place, and it's best when everyone can participate. The first step to building accessible web applications is a basic awareness of the diverse ways that users interact with web applications.
 
 ## The importance of inclusive design
 
 When you're developing web applications, it's easy to get into a workflow of writing some code, testing it in a browser, fixing bugs, repeat, repeat, repeat. Unfortunately, this approach leads to web applications that don't work for everyone.
 
-There are numerous good reasons to consider accessibility in your web applications:
+There are good reasons to consider accessibility in your web applications:
 
-- A good percentage of your potential users may have one or more impairments that require them to interact differently with your web application. Improving accessibility increases your potential user base.
-- Web applications are now under many legal requirements, which require web accessibility standards compliance. Failure to incorporate accessibility into your development methodology can result in legal and financial penalties.
-- Accessibility is a human rights issue. Helping others to gain full access to the internet is just the right, and nice, thing to do.
+- A substantial number of your potential users might have one or more impairments that require them to interact differently with your web application. Improving accessibility increases your potential user base.
+- Web applications are now under many legal requirements that require compliance with web accessibility standards. Failure to incorporate accessibility into your development methodology can result in legal and financial penalties.
+- Accessibility is a human right. Helping others to gain full access to the internet is just the right, and nice, thing to do.
 
 ## We don't all browse the same way
 
