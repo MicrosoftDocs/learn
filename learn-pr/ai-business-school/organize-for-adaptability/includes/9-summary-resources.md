@@ -19,4 +19,4 @@ Now that you’ve reviewed this module, you should be able to:
 
 1. Boston Consulting Group, [“The Digital Path to Business Resilience,”](https://www.bcg.com/publications/2020/digital-path-to-business-resilience) Karalee Close, Michael Grebe, Phillip Andersen, Varun Khurana, Marc Roman Franke, and Roelant Kalthof, 06 July 2020.
 1. McKinsey & Company, [“Enduring Ideas: The three horizons of growth,”](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/enduring-ideas-the-three-horizons-of-growth) 01 December 2009.
-1. Microsoft, [“The Next Great Distruption is Hybrid Work—Are We Ready?”](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work) 22 March 2021.  
+1. Microsoft, [“The Next Great Disruption is Hybrid Work—Are We Ready?”](https://www.microsoft.com/en-us/worklab/work-trend-index/hybrid-work) 22 March 2021.  
