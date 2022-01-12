@@ -1,0 +1,1 @@
+In this unit, you'll understand how the .NET Upgrade Assistant can help you analyze your existing ASP.NET applications and plan your upgrade to ASP.NET Core.
