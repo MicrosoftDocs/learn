@@ -15,12 +15,12 @@ In this task, we will review conditional access policy settings and create a pol
 4.  Click **New Policy**.
     
      -  Name: **AZ500Policy1**
-     -  Users and groups > Select users and groups > Users and Groups > Select: **AZ500User1**
-     -  Cloud apps or actions > Select apps > Select: **Microsoft Azure Management**
+     -  Users and groups &gt; Select users and groups &gt; Users and Groups &gt; Select: **AZ500User1**
+     -  Cloud apps or actions &gt; Select apps &gt; Select: **Microsoft Azure Management**
      -  Review the warning that this policy impacts Portal access.
-     -  Conditions > Sign-in risk > Review the risk levels
-     -  Device platforms > Review the devices that can included, such as Android and iOS.
-     -  Locations > Review the physical location selections.
+     -  Conditions &gt; Sign-in risk &gt; Review the risk levels
+     -  Device platforms &gt; Review the devices that can included, such as Android and iOS.
+     -  Locations &gt; Review the physical location selections.
      -  Under **Access controls** click **Grant**.
      -  Review the Grant options such as MFA. You may require one or more of the controls.
      -  Select **Require multi-factor authentication**.
