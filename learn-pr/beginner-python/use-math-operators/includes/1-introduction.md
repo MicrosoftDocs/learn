@@ -6,7 +6,7 @@ Imagine you're creating a program to calculate the distance between planets. The
 
 ## What will you learn?
 
-In this module, you will explore the core mathematic capabilities of Python. You will learn:
+In this module, you'll explore the core mathematic capabilities of Python. You'll learn:
 
 - The mathematic operators available in Python.
 - The order of operations.
