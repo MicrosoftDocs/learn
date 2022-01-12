@@ -6,11 +6,11 @@ metadata:
   brand: azure
   ms.date: 09/14/2020
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
-title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
+title: "Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure"
 summary: |
   Core solutions encompass a wide array of tools and services from Microsoft Azure. In this learning path, you'll be introduced to many of these tools and services and will be asked to help choose the best one for a given business scenario.
   
