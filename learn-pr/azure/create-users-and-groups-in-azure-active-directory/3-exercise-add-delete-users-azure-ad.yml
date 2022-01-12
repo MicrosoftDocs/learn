@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add and delete users in Azure Active Directory
   description: Exercise - Add and delete users in Azure Active Directory
   ms.date: 10/25/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

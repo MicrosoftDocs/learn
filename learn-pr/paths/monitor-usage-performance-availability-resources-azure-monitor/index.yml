@@ -5,8 +5,8 @@ metadata:
   description: Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
   brand: azure
   ms.date: 06/18/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor the usage, performance, and availability of resources with Azure Monitor

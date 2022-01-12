@@ -4,8 +4,8 @@ metadata:
   title: Secure your application by using OpenID Connect and Azure AD
   description: In this module, you will learn how to enable users to authenticate in multiple systems by using their Azure AD identities.
   ms.date: 07/17/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your application by using OpenID Connect and Azure AD
