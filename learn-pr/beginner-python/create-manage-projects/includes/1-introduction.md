@@ -6,7 +6,7 @@ So what do you do? You need to find a way for your program to work in isolation,
 
 ## Scenario: Let's build a program
 
-To build more advanced programs, you want to start with a good approach. You want to think of the program that you build as more of a project, with the code spread out over many files. If possible, you also want to use libraries that others have written, to speed up development time.
+As your skills grow and you begin building more advanced programs, you always want to start with a good approach. You want to think of the program that you build as more of a project, with the code spread out over many files. If possible, you also want to use libraries that others have written, to speed up development time.
 
 ## What will you learn?
 
