@@ -1,10 +1,6 @@
 Typically, math involves about four core operations: addition, subtraction, multiplication, and division. Python supports these four operators and a few others. Let's explore the most common operators you'll use in your programs.
 
-## Addition, subtraction, multiplication, and division
-
-These core operators that Python uses are similar to what you would use in a math class or in other programming languages.
-
-### Addition
+## Addition
 
 Python uses `+` to indicate addition. Using `+` between two numbers adds them together and provides the total.
 
@@ -18,9 +14,9 @@ print(answer)
 > [!NOTE]
 > Operators behave the same when using literal numbers (such as `42`) or variables.
 
-### Subtraction
+## Subtraction
 
-Similarly, Python uses `-` for subtraction. `-` between two numbers subtracts the two numbers and provides the difference.
+Similarly, Python uses `-` for subtraction. Using `-` between two numbers subtracts the two numbers and provides the difference.
 
 ```python
 difference = 30 - 12
@@ -29,9 +25,9 @@ print(difference)
 # Output: 18
 ```
 
-### Multiplication
+## Multiplication
 
-In Python, `*` is the multiplication operator, and provides the product of two numbers:
+In Python, `*` is the multiplication operator. It provides the product of two numbers:
 
 ```python
 product = 30 * 12
@@ -40,9 +36,9 @@ print(product)
 # Output: 360
 ```
 
-### Division
+## Division
 
-And finally, `/` is used for division, and provides the quotient of two numbers:
+Finally, `/` is used for division. It provides the quotient of two numbers:
 
 ```python
 quotient = 30 / 12
@@ -51,7 +47,7 @@ print(quotient)
 # Output: 2.5
 ```
 
-## Work with division
+### Work with division
 
 Imagine you need to convert a number of seconds into minutes and seconds for display.
 
@@ -59,7 +55,7 @@ Imagine you need to convert a number of seconds into minutes and seconds for dis
 seconds = 1042
 ```
 
-The first step is to determine the number of minutes in `1042` seconds. With `60` seconds in a minute, you can divide by `60`, and get an answer of `17.3666667`. The number you're interested in is simply `17`. You always want to round down, by using what's known as *floor division*. To perform floor division in Python, you use `//`.
+The first step is to determine the number of minutes in `1042` seconds. With `60` seconds in a minute, you can divide by `60` and get an answer of `17.3666667`. The number you're interested in is simply `17`. You always want to round down, by using what's known as *floor division*. To perform floor division in Python, you use `//`.
 
 ```python
 seconds = 1042
