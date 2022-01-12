@@ -12,3 +12,5 @@ See this guidance for in-depth information on how to modernize your ASP.NET appl
 * [Porting Existing ASP.NET Apps to .NET Core](/dotnet/architecture/porting-existing-aspnet-apps/)
 * [Architectural differences between ASP.NET MVC and ASP.NET Core](/dotnet/architecture/porting-existing-aspnet-apps/architectural-differences)
 * [Example migration of eShop to ASP.NET Core](/dotnet/architecture/porting-existing-aspnet-apps/example-migration-eshop)
+* [Migrate Authentication and Identity to ASP.NET Core](/aspnet/core/migration/identity)
+* [Choose between ASP.NET 4.x and ASP.NET Core](/aspnet/core/fundamentals/choose-aspnet-framework)
