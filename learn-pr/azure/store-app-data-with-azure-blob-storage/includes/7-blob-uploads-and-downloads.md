@@ -259,7 +259,7 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
     ```
 
     > [!TIP]
-    > The minimum recommended pricing tier outside of sandbox environment is B2.
+    > The minimum recommended tier for deploying real world Java applications is any Premium V2 Service Plan.
 
 1. Now, you'll deploy your app. The following command will build the app into `ROOT.war`, and deploy the WAR file to App Service. The Maven Plugin for Azure App Service will automatically provision resources at first deployment attempt.
 
