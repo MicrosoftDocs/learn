@@ -2,7 +2,13 @@ In this module, you examined when and why to modernize an existing ASP.NET appli
 
 ## Next steps
 
-Take a deeper dive into the documentation. The following ASP.NET Core features and concepts were introduced in this module:
+Take a deeper dive into the documentation for the .NET Upgrade Assistant:
 
 * [.NET Upgrade Assistant](https://dotnet.microsoft.com/platform/upgrade-assistant)
 * [Overview of the .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-overview)
+
+See this guidance for in-depth information on how to modernize your ASP.NET application to ASP.NET Core:
+
+* [Porting Existing ASP.NET Apps to .NET Core](/dotnet/architecture/porting-existing-aspnet-apps/)
+* [Architectural differences between ASP.NET MVC and ASP.NET Core](/dotnet/architecture/porting-existing-aspnet-apps/architectural-differences)
+* [Example migration of eShop to ASP.NET Core](/dotnet/architecture/porting-existing-aspnet-apps/example-migration-eshop)
