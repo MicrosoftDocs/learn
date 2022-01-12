@@ -368,7 +368,15 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 1. Save and close the file.
 
-1. To push all the changes to the fork, run this command:
+1. To push all the changes to the fork, run these commands in order:
+
+    ```bash
+    git add .
+    ```
+
+    ```bash
+    git commit -m "Add helm"
+    ```
 
     ```bash
     git push -u origin main

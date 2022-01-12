@@ -186,11 +186,14 @@ In the Inspector, you'll see that there is an empty **Direct Line Secret Key** f
 First you test asking the bot how many **Tracked Objects** are stored in the database.
 
 > [!NOTE]
-> This time you must run the application from the HoloLens 2 because services like *text-to-speech* may not be available on your system.
+> This time run the application from the HoloLens 2 because services like *text-to-speech* may not be available on your system.
 
 Run the application on your HoloLens 2 and click on the *Chat Bot* button next to the main menu.
 The bot will be greeting you, now ask **how many objects do we have?**
 It should tell you the quantity and end the conversation.
+
+> [!Note]
+> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
 #### Ask about a tracked object
 

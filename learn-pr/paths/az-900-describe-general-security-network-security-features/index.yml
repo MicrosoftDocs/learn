@@ -6,11 +6,11 @@ metadata:
   brand: azure
   ms.date: 09/14/2020
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
-title: "Azure Fundamentals part 4: Describe general security and network security features"
+title: "Microsoft Azure Fundamentals: Describe general security and network security features"
 summary: |
   Having a good security strategy is essential in today's digital world. Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. Security needs to happen at the application level, at the data level, and at the network level.
 
