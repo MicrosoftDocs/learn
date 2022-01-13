@@ -14,17 +14,17 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Under what conditions does a test expression that uses the `and` operator evaluate to `true`?"
+  - content: "Under what conditions does a test expression that uses the `and` operator evaluate to `True`?"
     choices:
-    - content: "A test expression that uses the `and` operator evaluates to `true` when both subexpressions are true."
+    - content: "A test expression that uses the `and` operator evaluates to `True` when both subexpressions are true."
       isCorrect: true
       explanation: "Correct! Both conditions in the test expression must be true for the entire test expression to evaluate to `true`. "
-    - content: "A test expression that uses the `and` operator evaluates to `true` when one subexpression is true and the other is false."
+    - content: "A test expression that uses the `and` operator evaluates to `True` when one subexpression is true and the other is false."
       isCorrect: false
       explanation: "Incorrect. This answer is true for the `or` operator, but not the `and` operator."
-    - content: "A test expression that uses the `and` operator evaluates to `true` when both subexpressions are false."
+    - content: "A test expression that uses the `and` operator evaluates to `True` when both subexpressions are false."
       isCorrect: false
-      explanation: "Incorrect. If a test expression uses the `and` operator and both subexpressions are false, the value of the whole test expression evaluates to `false`."
+      explanation: "Incorrect. If a test expression uses the `and` operator and both subexpressions are false, the value of the whole test expression evaluates to `False`."
   - content: "What is the keyword `elif` short for in Python?"
     choices:
     - content: "else if"
