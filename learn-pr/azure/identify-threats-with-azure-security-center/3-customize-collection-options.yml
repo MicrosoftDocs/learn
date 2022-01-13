@@ -5,8 +5,8 @@ metadata:
   title: Customize Microsoft Defender for Cloud options
   description: Customize Microsoft Defender for Cloud options
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

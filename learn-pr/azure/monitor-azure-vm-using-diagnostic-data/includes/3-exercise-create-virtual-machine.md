@@ -78,7 +78,7 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 1. In the upper menu bar, select **Settings**. The **Boot diagnostics** pane appears.
 
-1. Under **Status**, select **Enable with managed storage account (recommended)**, and in the top menu bar, select **Save**.
+1. Select **Settings**, select **Enable with managed storage account (recommended)**, and in the top menu bar, select **Save**.
 
 1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly. You may need to select **Refresh** in the top menu bar for verification.
 

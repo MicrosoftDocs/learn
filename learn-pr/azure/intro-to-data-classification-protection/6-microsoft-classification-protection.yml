@@ -5,8 +5,8 @@ metadata:
   title: Microsoft technologies for data classification and protection
   description: Microsoft technologies for data classification and protection
   ms.date: 03/25/2021
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

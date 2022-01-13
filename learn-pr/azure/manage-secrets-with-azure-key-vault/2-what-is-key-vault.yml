@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Key Vault?
   description: What is Azure Key Vault?
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

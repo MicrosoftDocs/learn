@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.classification-and-protection
 metadata:
-  title: Intro to data classification and protection 
+  title: Intro to data classification and protection
   description: Learners should know and be able to describe data classification and data protection key concepts.
   ms.date: 03/25/2021
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Intro to data classification and protection 

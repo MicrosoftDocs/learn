@@ -4,8 +4,8 @@ metadata:
   title: Manage secrets in your server apps with Azure Key Vault
   description: Learn how to create an Azure Key Vault to store secret values and how to enable secure access to the vault.
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage secrets in your server apps with Azure Key Vault
