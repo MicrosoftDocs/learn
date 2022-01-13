@@ -4,8 +4,8 @@ metadata:
   title: Deploy Microsoft Sentinel and connect data sources
   description: Learn how to deploy Microsoft Sentinel and connect the services you want to monitor. Then you can use Azure and AI to provide analysis of security alerts.
   ms.date: 09/21/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Microsoft Sentinel and connect data sources

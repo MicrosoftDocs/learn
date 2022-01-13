@@ -12,9 +12,19 @@ For apps that rely on a known set of containers with hard-coded or preconfigured
 
 ## Exercise
 
-You're going to complete an unfinished ASP.NET Core app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
+You're going to complete an unfinished app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
+
+::: zone pivot="csharp"
 
 ![Screenshot of the FileUploader web app.](../media/4-fileuploader-with-files.PNG)
+
+::: zone-end
+
+::: zone pivot="java"
+
+![Screenshot of the FileUploader web app.](../media/4-fileuploader-with-files-java.png)
+
+::: zone-end
 
 Your app works like a shared folder that accepts file uploads and makes them available for download. It doesn't use a database for organizing blobs; instead, it sanitizes the names of uploaded files and uses them as blob names directly. All uploaded files are stored in a single container.
 

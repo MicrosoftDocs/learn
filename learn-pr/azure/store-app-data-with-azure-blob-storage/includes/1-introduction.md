@@ -1,4 +1,4 @@
-Blobs give you file storage in the cloud and an API that lets you build apps to access the data.
+Blobs give you object storage in the cloud and an API that lets you build apps to access the data.
 
 Suppose you work at an augmented-reality gaming company. Your game runs on every mobile platform. You want to add a new feature to let users record video clips of their gameplay and upload the clips to your servers. Users will be able to watch clips directly in the game or through your website. You plan to log every upload and viewing for use in analytics and for traceability.
 

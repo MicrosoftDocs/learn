@@ -5,8 +5,8 @@ metadata:
   title: Identify security threats with Microsoft Defender for Cloud
   description: Master securing your Azure workloads with Microsoft Defender for Cloud. In this module, you’ll discover how to detect and respond to threats with Microsoft Defender for Cloud.
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Identify security threats with Microsoft Defender for Cloud

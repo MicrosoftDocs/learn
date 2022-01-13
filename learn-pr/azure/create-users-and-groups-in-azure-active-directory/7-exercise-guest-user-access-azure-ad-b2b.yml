@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Give guest users access in Azure Active Directory B2B
   description: Exercise - Give guest users access in Azure Active Directory B2B
   ms.date: 10/25/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
