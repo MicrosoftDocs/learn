@@ -9,7 +9,7 @@ To express conditional logic in Python, you use `if` statements. When you're wri
 
 ## Test expressions
 
-You need to use an `if` statement to run code only if a certain condition is satisfied. The first thing you do when you write an `if` statement is check the condition by using a *test expression*. You then determine whether the statement is `true` or `false`. If it's `true`, the next indented code block is run:
+You need to use an `if` statement to run code only if a certain condition is satisfied. The first thing you do when you write an `if` statement is check the condition by using a *test expression*. You then determine whether the statement evaluates to `True` or `False`. If it's `True``, the next indented code block is run:
 
 ```python
 a = 97
@@ -20,10 +20,10 @@ if a < b:
     print(b)
 ```
 
-In this example, `a < b` is the test expression. The program evaluates the test expression and then runs the code within the `if` statement only if the test expression is `true`. If you evaluate the expression, you know that it's `false`, so any code you write in the `if` statement won't be run.
+In this example, `a < b` is the test expression. The program evaluates the test expression and then runs the code within the `if` statement only if the test expression is `True`. If you evaluate the expression, you know that it's `False`, so any code you write in the `if` statement won't be run.
 
 > [!NOTE]
-> In Python, `None` and `0` are also interpreted as `false`.
+> In Python, `None` and `0` are also interpreted as `False`.
 
 ## Write `if` statements
 
@@ -56,4 +56,4 @@ print(b)
 Output:
 `44`
 
-In this example, the output is `44` because the test expression is `false` and the `print(b)` statement isn't indented at the same level as the `if` statement.
+In this example, the output is `44` because the test expression is `False` and the `print(b)` statement isn't indented at the same level as the `if` statement.
