@@ -5,8 +5,8 @@ metadata:
   title: Vault authentication with managed identities for Azure resources
   description: Vault authentication with managed identities for Azure resources
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
