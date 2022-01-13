@@ -5,8 +5,8 @@ metadata:
   title: Monitor your security status with Defender for Cloud recommendations
   description: Monitor your security status with Defender for Cloud recommendations
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

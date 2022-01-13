@@ -5,8 +5,8 @@ metadata:
   title: Solve common problems when adding a custom domain name
   description: Resolve an unmanaged Azure Active Directory organization problem, and also explore other problems and how to resolve them.
   ms.date: 02/25/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: ajburnle
+  ms.author: ajburnle
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

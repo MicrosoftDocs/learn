@@ -2,11 +2,11 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-enterprise-state-roaming
 title: What is Enterprise State Roaming?
 metadata:
-  title:  What is Enterprise State Roaming?
+  title: What is Enterprise State Roaming?
   description: Learn about Enterprise State Roaming.
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
