@@ -2,7 +2,7 @@ You might occasionally want to combine test expressions to evaluate multiple con
 
 ## The `or` operator
 
-You can connect two Boolean, or test, expressions by using the Boolean `or` operator. For the entire expression to evaluate to `true`, at least one of the subexpressions must be true. If none of the subexpressions is true, the whole expression evaluates to `false`. For example, in the following expression, the entire test expression evaluates to `true`, because one of the conditions in the subexpressions has been met:
+You can connect two Boolean, or test, expressions by using the Boolean `or` operator. For the entire expression to evaluate to `True`, at least one of the subexpressions must be true. If none of the subexpressions is true, the whole expression evaluates to `False`. For example, in the following expression, the entire test expression evaluates to `True`, because one of the conditions in the subexpressions has been met:
 
 ```python
 a = 23
@@ -11,7 +11,7 @@ if a = 34 or b = 34:
     print(a + b)
 ```
 
-If both subexpressions are true, the entire test expression also evaluates to `true`.
+If both subexpressions are true, the entire test expression also evaluates to `True`.
 
 A Boolean expression that uses `or` has the following syntax:
 
@@ -21,7 +21,7 @@ sub-expression1 or sub-expression2
 
 ## The `and` operator
 
-You can also connect two test expressions by using the Boolean `and` operator. Both conditions in the test expression must be true for the entire test expression to evaluate to `true`. In any other case, the test expression is `false`. In the following example, the entire test expression evaluates to `false`, because only one of the conditions in the subexpressions is true:
+You can also connect two test expressions by using the Boolean `and` operator. Both conditions in the test expression must be true for the entire test expression to evaluate to `True`. In any other case, the test expression is `False`. In the following example, the entire test expression evaluates to `False`, because only one of the conditions in the subexpressions is true:
 
 ```python
 a = 23
@@ -44,16 +44,16 @@ Here's the truth table for `and`:
 
 | `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
-| `true`            | `and`      | `true`            | `true`   |
-| `true`            | `and`      | `false`           | `false`  |
-| `false`          | `and`      | `true`            | `false`  |
-| `false`           | `and`      | `false`           | `false`  |
+| `True`            | `and`      | `True`            | `True`   |
+| `True`            | `and`      | `False`           | `False`  |
+| `False`          | `and`      | `True`            | `False`  |
+| `False`           | `and`      | `False`           | `False`  |
 
 Here's the truth table for `or`:
 
 | `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
-| `true`            | `or`       | `true`            | `true`   |
-| `true`            | `or`       | `false`           | `true`   |
-| `false`           | `or`       | `true`            | `true`   |
-| `false`           | `or`       | `false`           | `false`  |
+| `True`            | `or`       | `True`            | `True`   |
+| `True`            | `or`       | `False`           | `True`   |
+| `False`           | `or`       | `True`            | `True`   |
+| `False`           | `or`       | `False`           | `False`  |
