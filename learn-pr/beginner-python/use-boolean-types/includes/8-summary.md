@@ -4,7 +4,7 @@ Boolean expressions and statements are a key part of creating complex Python pro
 
 Here are some of the essentials you now know about conditional logic:
 
-- Booleans can have one of two values, `true` or `false`.
+- Booleans can have one of two values, `True` or `False`.
 - `if`, `else`, and `elif` statements can be used to run code under specific conditions.
 - `and` and `or` operators can be used to combine test expressions and create more complex conditions.
 
