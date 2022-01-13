@@ -16,7 +16,7 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "What is meant by seasonable data?"
+  - content: "What is meant by seasonal data?"
     choices:
     - content: "Data based on the time or year it was recorded."
       isCorrect: false
