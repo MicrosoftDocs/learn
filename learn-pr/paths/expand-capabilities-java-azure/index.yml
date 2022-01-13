@@ -59,6 +59,7 @@ modules:
 # Kafka
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis
 - learn.azure.azure-java-app-enable-authentication-authorization
+- learn.store-app-data-with-azure-blob-storage
 # Microservices auth/auth
 trophy:
   uid: learn.expand-capabilities-java-azure.trophy

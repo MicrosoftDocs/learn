@@ -5,8 +5,8 @@ metadata:
   title: Install, configure, and initialize the Application Insights SDK
   description: In this unit, you'll learn why and how to install and activate the Application Insights server-side SDK in a web app.
   ms.date: 02/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
