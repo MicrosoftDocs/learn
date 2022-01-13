@@ -20,7 +20,7 @@ As you can see, rethinking the relationship between remote work groups and desir
 
 Watch this video from Richard Chin, Corporate Vice President, Business Planning and Commercial Licensing at Microsoft, as he shares how the company approaches the need to change its business model. Richard Chin also provides insight on how businesses should approach the search for the next big revenue opportunity.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pmX2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRwc1]
 
 In this video, you heard Richard Chin describe how Microsoft changed its business model from selling software to selling cloud services. He explained how the willingness to make this change helped Microsoft grow the business and add more value to the markets and customers we serve.
 
