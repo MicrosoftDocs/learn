@@ -7,5 +7,6 @@ When you learn to combine cmdlets, you unlock much of the power that's built int
 ## Learning objectives
 
 After you complete this module, you'll be able to:
-  - Explore cmdlets further and construct a sequence of them in a pipeline.
-  - Apply sound principles to your commands by using _filtering_ and _formatting_.
+
+- Explore cmdlets further and construct a sequence of them in a pipeline.
+- Apply sound principles to your commands by using _filtering_ and _formatting_.

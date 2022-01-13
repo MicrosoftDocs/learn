@@ -1,4 +1,4 @@
-Running a command can be powerful, you get data from either your local machine or across the network. To be even more effective, you need to learn how to get the data that you want. Most commands operate on objects, as input or as output, or both. Objects have properties and you likely want a subset of those properties and present them in reports for example. You might also want to sort the data based on one or more columns. But how do you get there?
+Running a command can be powerful, you get data from your local machine or from across the network. To be even more effective, you need to learn how to get the data that you want. Most commands operate on objects, as input or as output, or both. Objects have properties and you may want to access a subset of those properties and present them in a report. You might also want to sort the data based on one or more properties. But how do you get there?
 
 ## Use Get-Member to inspect output
 
