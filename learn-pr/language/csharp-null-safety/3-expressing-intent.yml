@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-null-safety.summary
-title: Summary
+uid: learn.languages.csharp-null-safety.expressing-intent
+title: Expressing intent
 metadata:
-  unitType: summary
-  title: summary
+  unitType: exercise
+  title: exercise
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 1/7/2022
   author: IEvangelist
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/3-expressing-intent.md)]

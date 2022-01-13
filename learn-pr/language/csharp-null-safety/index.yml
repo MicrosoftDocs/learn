@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Defensive coding practices within a nullable aware context in C#
   description: Learn coding practices to help prevent the occurrence of NullReferenceException.
-  ms.date: 1/7/2022
+  ms.date: 01/13/2022
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
@@ -13,11 +13,11 @@ title: Defensive coding practices within a nullable aware context in C#
 summary: Learn coding practices to help prevent the occurrence of NullReferenceException.
 abstract: |
   In this module, you will:
-    - Use a nullable enabled context to perform automatic static flow analysis.
-    - Use the null-forgiving (`!`) operator to tell the C# compiler you know what you're doing.
-    - Understand the different ways in which you can declare nullable types.
-    - Learn about the null-coalescing (`??`) and null-conditional (`?.`) operators.
     - Learn how to configure the nullable context of your C# project or code.
+    - Use a nullable enabled context to perform automatic static flow analysis.
+    - Understand the different ways in which you can declare nullable types.
+    - Use the null-forgiving (`!`) operator to tell the C# compiler you know what you're doing.
+    - Learn about the null-coalescing (`??`) and null-conditional (`?.`) operators.
 prerequisites: |
   - "TODO prerequisite 1"
   - "TODO prerequisite 2"
@@ -33,11 +33,10 @@ products:
 
 units:
 - learn.languages.csharp-null-safety.introduction
-- learn.languages.csharp-null-safety.learning-content
-- learn.languages.csharp-null-safety.exercise
-- learn.languages.csharp-null-safety.knowledge-check
+- learn.languages.csharp-null-safety.understanding-nullability
+- learn.languages.csharp-null-safety.expressing-intent
+- learn.languages.csharp-null-safety.applied-learnings
 - learn.languages.csharp-null-safety.summary
-
 badge:
   uid: learn.languages.csharp-null-safety.badge
 
@@ -67,3 +66,12 @@ badge:
 # Learn: Null-coalescing
 # Exercise: Null-coalescing
 # Summary
+
+# Bill's brain:
+# string vs string? "Tony Hoare"
+
+# "The compiler will let you know when you might be de-referencing null"
+
+# start with locals
+# then params, ah ha... do we cover attributes
+# variable = might be null or definitely not null`
