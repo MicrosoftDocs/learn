@@ -3,13 +3,13 @@ uid: learn.beginner-python.intro-python-lists.summary
 title: Summary
 metadata:
   unitType: summary
-  title: Summary - Using lists in Python # user input: module title for browser tab and search results
-  description: This module explored how to use lists in Python. # user input: a description for site search and SEO
+  title: Summary - Use lists in Python
+  description: This module explored how to use lists in Python.
   ms.date: 12/03/2021
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
