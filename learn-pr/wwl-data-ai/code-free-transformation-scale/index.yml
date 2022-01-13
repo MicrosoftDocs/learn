@@ -14,7 +14,7 @@ abstract: |
   * Introduction
   * Explain Data Factory transformation methods
   * Describe Data Factory transformation types
-  * Exercise: Use Data Factory mapping data flow
+  * Exercise: Author an Azure Data Factory mapping data flow
   * Debug mapping data flow
   * Exercise: Use Data Factory wrangling data
   * Exercise: Use compute transformations within Data Factory
