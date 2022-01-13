@@ -1,8 +1,8 @@
-What if you also want your program to run a piece of code when your test expression is `false`? Or what if you want to include another test expression? Python has other keywords you can use to make more complex `if` statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to run. 
+What if you also want your program to run a piece of code when your test expression is `False`? Or what if you want to include another test expression? Python has other keywords you can use to make more complex `if` statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to run. 
 
 ## Work with `else`
 
-You know that when you use an `if` statement, the body of the program will run only if the test expression is `true`. To add more code that will run when your test expression is `false`, you need to add an `else` statement.
+You know that when you use an `if` statement, the body of the program will run only if the test expression is `True`. To add more code that will run when your test expression is `False`, you need to add an `else` statement.
 
 Let's go back to the example from the previous section:
 
@@ -13,7 +13,7 @@ if a >= b:
     print(a)
 ```
 
-In this example, if `a` is not greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `false`:
+In this example, if `a` is not greater than or equal to `b`, nothing happens. Let's say you want to instead print `b` if the test expression is `False`:
 
 ```python
 a = 93
@@ -24,7 +24,7 @@ else:
     print(b)
 ```
 
-If the test expression is `false`, the code in the body of the `if` statement is skipped, and the program continues running from the `else` statement. The syntax of an `if/else` statement is always:
+If the test expression is `False`, the code in the body of the `if` statement is skipped, and the program continues running from the `else` statement. The syntax of an `if/else` statement is always:
 
 ```python
 if test_expression:
@@ -35,7 +35,7 @@ else:
 
 ## Work with `elif`
 
-In Python, the keyword `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `false`. For example:
+In Python, the keyword `elif` is short for *else if*. Using `elif` statements enables you to add multiple test expressions to your program. These statements run in the order in which they're written, so your program will enter an `elif` statement only if the first `if` statement is `False`. For example:
 
 ```python
 a = 93
@@ -46,7 +46,7 @@ elif a == b:
     print("a is equal to b")
 ```
 
-The `elif` statement in this block of code will not run, because the `if` statement is `true`.
+The `elif` statement in this block of code will not run, because the `if` statement is `True`.
 
 The syntax of an `if/elif` statement is:
 
