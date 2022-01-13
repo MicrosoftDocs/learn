@@ -22,7 +22,7 @@ At its most basic, a screen reader reads a page from top to bottom audibly. If y
 
 ### Visual impairments
 
-Visual ability is a spectrum. Some users require, or prefer, an auditory experience. Many prefer a visual experience but might encounter issues with small text, contrast, or color blindness.
+Visual ability is a spectrum. Some users require, or prefer, an auditory experience. Many prefer a visual experience but might encounter issues with small text, contrast, or color-blindness.
 
 ### Input devices
 
