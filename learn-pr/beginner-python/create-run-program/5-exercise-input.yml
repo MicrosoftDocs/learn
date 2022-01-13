@@ -3,7 +3,7 @@ uid: learn.beginner-python.create-run-program.exercise-input
 title: Exercise - Collect input
 metadata:
   title: Exercise - Collect input
-  description: In this exercise, you'll build programs that collects input from both command-line argument and user input.
+  description: In this exercise, you'll build programs that collect input from both command-line arguments and user input.
   ms.date: 12/02/2021
   author: softchris
   ms.author: chnoring
