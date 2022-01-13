@@ -12,7 +12,7 @@ To process streaming data on Spark, you can use the *Spark Structured Streaming*
 
 Spark Structured Streaming is built on a ubiquitous structure in Spark called a *dataframe*, which encapsulates a table of data. You use the Spark Structured Streaming API to read data from a real-time data source, such as a Kafka hub, a file store, or a network port, into a "boundless" dataframe that is continually populated with new data from the stream. You then define a query on the dataframe that selects, projects, or aggregates the data - often in temporal widows. The results of the query generate another dataframe, which can be persisted for analysis or further processing.
 
-![Streaming data is written to a dataframe, which is queried to create another dataframe for analysis](../media/spark-streaming.png).
+![Streaming data is written to a dataframe, which is queried to create another dataframe for analysis](../media/spark-streaming.png)
 
 > [!NOTE]
 > For more information about Spark Structured Streaming, see the [Spark Structured Streaming programming guide.](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html)

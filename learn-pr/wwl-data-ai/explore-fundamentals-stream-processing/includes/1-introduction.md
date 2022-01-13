@@ -1,6 +1,6 @@
 Increased use of technology by individuals, companies, and other organizations, together with the proliferation of smart devices and Internet access has led to a massive growth in the volume of data that can be generated, captured, and analyzed. Much of this data can be processed in real-time (or at least, *near* real-time) as a perpetual *stream* of data, enabling the creation of systems that reveal instant insights and trends, or take immediate responsive action to events as they occur.
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you'll learn about the basics of *stream processing*, and the services in Microsoft Azure that you can use to implement streaming data solutions. Specifically, you'll learn how to:
 
