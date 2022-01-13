@@ -14,9 +14,11 @@ Before C# 2.0, value-types such as `int`, or `DateTime` could not be `null`. Sta
 <!-- how null state analysis solves this problem in C# 8 and greater -->
 
 > [!IMPORTANT]
-> `<Nullable>` is enabled by default in all C# project templates in .NET 6.0 and greater.
+> The nullable context is enabled by default in all C# project templates starting with .NET 6.0 and greater.
 
 ```Output
 System.NullReferenceException: Object reference not set to an instance of an object.
    at <Program>$.<Main>$(String[] args)
 ```
+
+:::image type="content" source="../media/possible-null-warning.png" lightbox="../media/possible-null-warning.png" alt-text="Visual Studio Code: Possible null warning.":::
