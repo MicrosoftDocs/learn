@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.python-testing-with-pytest
+metadata:
+  moduleType: standard
+  title: Testing with Pytest
+  description: Use Pytest, a popular test framework to write and run tests in Python. Find about useful patterns, utilities, and helpful reporting that make Pytest a solid choice for testing.
+  ms.date: 1/12/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Testing with Pytest
+summary: Improve your testing experience with Pytest, a great choice to write, run, and extend tests in Python. Get exposed to useful patterns and the basics of testing with Pytest.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Write tests using `pytest`, one of the most popular test frameworks for Python
+    - Get used to the powerful reporting in tests failures
+    - Use functions, classes, and methods for testing
+prerequisites: |
+  - Ability to write Python scripts
+  - Familiarity with command-line tools and executing scripts
+  - Python 3.6 or later and a virtual environment with Pytest installed on your computer. Follow the steps in the [Install Python 3](/learn/modules/python-install-vscode/3-exercise-install-python3) module. At the top of the article, choose the instructions for your configuration: Windows, Linux, or macOS.
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+- learn.python-testing-with-pytest.introduction
+- learn.python-testing-with-pytest.pytest-basics
+- learn.python-testing-with-pytest.test-classes-and-methods
+- learn.python-testing-with-pytest.exercise
+- learn.python-testing-with-pytest.knowledge-check
+- learn.python-testing-with-pytest.summary
+badge:
+  uid: learn.python-testing-with-pytest.badge
