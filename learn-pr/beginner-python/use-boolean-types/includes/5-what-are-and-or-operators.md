@@ -1,8 +1,8 @@
-Sometimes, you'll want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. To do this, you'll need to use the Boolean operators `and` and `or`. 
+You might occasionally want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. To do this, you use the Boolean operators `and` and `or`. 
 
-## The or operator
+## The `or` operator
 
-You can connect two Boolean, or test, expressions using the Boolean `or` operator. For the entire expression to be true, at least one of the subexpressions must be true. If none of the subexpressions are true, then the whole expression is false. For example, in this expression, the entire test expression would evaluate to `True`, since one of the conditions in the subexpressions has been met:
+You can connect two Boolean, or test, expressions by using the Boolean `or` operator. For the entire expression to evaluate to `True`, at least one of the subexpressions must be true. If none of the subexpressions is true, the whole expression evaluates to `False`. For example, in the following expression, the entire test expression evaluates to `True`, because one of the conditions in the subexpressions has been met:
 
 ```python
 a = 23
@@ -11,17 +11,17 @@ if a = 34 or b = 34:
     print(a + b)
 ```
 
-If both subexpressions are true, the entire test expression will also evaluate to `True`.
+If both subexpressions are true, the entire test expression also evaluates to `True`.
 
-Here's the syntax for a Boolean expression using `or`:
+A Boolean expression that uses `or` has the following syntax:
 
 ```python
 sub-expression1 or sub-expression2
 ```
 
-## The and operator
+## The `and` operator
 
-You can also connect two test expressions using the Boolean `and` operator. Both conditions in the test expression must be true in order for the entire test expression to be `True`. In any other case, the test expression is `False`. For example, in this expression, the entire test expression would evaluate to `False`, since only one of the conditions in the subexpressions is `True`:
+You can also connect two test expressions by using the Boolean `and` operator. Both conditions in the test expression must be true for the entire test expression to evaluate to `True`. In any other case, the test expression is `False`. In the following example, the entire test expression evaluates to `False`, because only one of the conditions in the subexpressions is true:
 
 ```python
 a = 23
@@ -30,28 +30,30 @@ if a = 34 and b = 34:
     print (a + b)
 ```
 
-Here's the syntax for a Boolean expression using `and`:
+A Boolean expression that uses `and` has the following syntax:
 
 ```python
 sub-expression1 and sub-expression2
 ```
 
-## The difference between and and or
+## The difference between `and` and `or`
 
-To highlight the difference between the two Boolean operators, you can use a **truth table**. A truth table shows you what the entire test expression evaluates to based on the two subexpressions. Here's the truth table for `and`:
+To highlight the difference between the two Boolean operators, you can use a *truth table*. A truth table shows you what the entire test expression evaluates to based on the two subexpressions. 
 
-| `sub-expression1` | Operator | `sub-expression2` | Result |
+Here's the truth table for `and`:
+
+| `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
-| `true`            | `and`      | `true`            | `true`   |
-| `true`            | `and`      | `false`           | `false`  |
-| `false`          | `and`      | `true`            | `false`  |
-| `false`           | `and`      | `false`           | `false`  |
+| `True`            | `and`      | `True`            | `True`   |
+| `True`            | `and`      | `False`           | `False`  |
+| `False`          | `and`      | `True`            | `False`  |
+| `False`           | `and`      | `False`           | `False`  |
 
-And here's the truth table for `or`:
+Here's the truth table for `or`:
 
-| `sub-expression1` | Operator | `sub-expression2` | Result |
+| `subexpression1` | Operator | `subexpression2` | Result |
 |-----------------|----------|-----------------|--------|
-| `true`            | `or`       | `true`            | `true`   |
-| `true`            | `or`       | `false`           | `true`   |
-| `false`           | `or`       | `true`            | `true`   |
-| `false`           | `or`       | `false`           | `false`  |
+| `True`            | `or`       | `True`            | `True`   |
+| `True`            | `or`       | `False`           | `True`   |
+| `False`           | `or`       | `True`            | `True`   |
+| `False`           | `or`       | `False`           | `False`  |
