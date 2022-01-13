@@ -2,26 +2,29 @@
 uid: learn.languages.csharp-null-safety
 metadata:
   moduleType: standard
-  title: Defensive coding practices within a nullable aware context in C#
+  title: Null safety in C#
   description: Learn coding practices to help prevent the occurrence of NullReferenceException.
   ms.date: 01/13/2022
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Defensive coding practices within a nullable aware context in C#
-summary: Learn coding practices to help prevent the occurrence of NullReferenceException.
+title: Null safety in C#
+summary: Learn coding practices to help prevent the occurrence of `NullReferenceException`.
 abstract: |
   In this module, you will:
     - Learn how to configure the nullable context of your C# project or code.
     - Use a nullable enabled context to perform automatic static flow analysis.
     - Understand the different ways in which you can declare nullable types.
-    - Use the null-forgiving (`!`) operator to tell the C# compiler you know what you're doing.
-    - Learn about the null-coalescing (`??`) and null-conditional (`?.`) operators.
+    - Learn how and when to use various null-related C# operators:
+      - null-forgiving (`!`) operator
+      - null-coalescing (`??`) operator
+      - null-conditional (`?.`) operator
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master"
+  - Experience writing C# at the beginner level
+  - Visual Studio Code
+  - .NET SDK 6.0 or greater
+  - Git command-line client
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
