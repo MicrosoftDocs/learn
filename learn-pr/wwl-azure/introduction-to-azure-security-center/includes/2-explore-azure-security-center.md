@@ -25,7 +25,7 @@ To access the full suite of Azure Security Center services, you'll need to upgra
 
 You can access the 60-day free trial from within the Azure Security Center dashboard in the Azure portal.
 
-:::image type="content" source="../media/security-center-free-trial-dashboard-61c3da3c.png" alt-text="Screenshot of the Azure Security Center - Getting Started dashboard in the Azure portal. Information about a free 60-day trial displays" lightbox="../media/security-center-free-trial-dashboard-61c3da3c.png":::
+:::image type="content" source="../media/security-center-free-trial-dashboard-61c3da3c.png" alt-text="Screenshot of the Azure Security Center - Getting Started dashboard in the Azure portal. Information about a free 60-day trial displays":::
 
 
 You can read more about Azure Security Center at [Azure Security Center](https://azure.microsoft.com/services/security-center/).
