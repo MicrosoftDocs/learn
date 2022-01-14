@@ -6,7 +6,7 @@ Before you try to move through the sample webpage by using a screen reader, you'
 
    :::image type="content" source="../media/missing-alt-error.png" alt-text="Screenshot of Accessibility Insights for Web that shows an error about missing alt text for an image.":::
 
-1. This is a purely decorative image, so we can just add an empty `alt` description:
+1. This is a purely decorative image, so you can just add an empty `alt` description:
 
    ```html
    <img alt="" width="120" src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.226 112L36.2.2c60 16 74 49 81 84z' fill='%23ea8'/%3e%3cpath d='M.197 112L31 14C84 29 96 57 103 88z' fill='%23fea' /%3e%3c/svg%3e">
@@ -33,7 +33,7 @@ There are a few remaining issues that FastPass doesn't detect. You can find them
 
 Narrator is a screen reader built directly into Windows that enables users to complete common tasks without a mouse. You can enable Narrator in one of two ways:
 
-- Select Windows logo key+Ctrl+Enter to start Narrator. Select these keys again to stop Narrator. (On older versions of Windows, the command was Windows logo key+Enter.) On many keyboards, the Windows logo key is located on the bottom row of keys, to the left or right of the Alt key.
+- Select Windows logo key+Ctrl+Enter to start Narrator. Select these keys again to stop Narrator. (On older versions of Windows, the shortcut was Windows logo key+Enter.) On many keyboards, the Windows logo key is located on the bottom row of keys, to the left or right of the Alt key.
 
 - Select Windows logo key+Ctrl+N to open Narrator settings, and then turn on the toggle under **Use Narrator**.
 
@@ -92,13 +92,13 @@ You have a couple of remaining items to fix on this page: headings and the myste
 
 ## Change "Click here"
 
-In the following line, "Click here" is not helpful to screen readers:
+Find the line that has the unhelpful "Click here" text:
 
 ```html
 Want to know more? <a href="/Privacy">Click here.</a>
 ```
 
-Change that line to this:
+Change it to this wording:
 
 ```html
 View our <a href="/Privacy">privacy policy</a> for more information.
@@ -108,10 +108,8 @@ View our <a href="/Privacy">privacy policy</a> for more information.
 
 1. Open Narrator by selecting Windows logo key+Ctrl+Enter.
 1. With Narrator running, switch to the pizza webpage.
-1. Select the Tab key repeatedly to move through the links on the page. This time, instead of hearing "Link: Click here," you'll hear "Link: Privacy policy." That's fixed!
-1. Select the 1 key to list the top-level heading. You should hear "Welcome" read aloud.
+1. Select the Tab key repeatedly to move through the links on the page. This time, instead of hearing "Link: Click here," you'll hear "Link: privacy policy." That's fixed!
+1. Select the 1 key to list the top-level headings. You should hear "Welcome" read aloud.
 1. Select the 1 key again. You'll hear Narrator report that there are no remaining level 1 headings. Success!
 1. Select the 2 key repeatedly to cycle through the level 2 headings. Narrator will read them all aloud.
 1. Stop Narrator by selecting Windows logo key+Ctrl+Enter.
-
-In this exercise, you've seen how to find and fix issues that affect screen reader functionality.

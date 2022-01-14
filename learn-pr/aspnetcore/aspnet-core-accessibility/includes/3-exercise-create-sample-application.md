@@ -2,19 +2,19 @@ Let's start implementing the design for the app by creating a new project and sp
 
 ## Create a solution
 
-The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed when you installed the .NET SDK.
+The .NET CLI is the simplest way to create an ASP.NET Core web API. The CLI is pre-installed when you install the .NET SDK.
 
 In this unit, you'll use the .NET CLI to create a web API locally. You'll also gain an understanding of the resulting project.
 
 ## Create and explore a web API project
 
-To set up a .NET project to work with a web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+To set up a .NET project to work with a web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can use a terminal to run the commands in this module.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
 1. Create a folder named **AccessibleWeb** in the location of your choice, and then click **Select Folder**.
 
-1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+1. Open the integrated terminal in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
 1. In the terminal window, copy and paste the following command:
 
@@ -162,4 +162,4 @@ To set up a .NET project to work with a web API, we'll use Visual Studio Code. V
     dotnet run
     ```
 
-2. In your web browser, go to https://localhost:5001. You'll see the home page of our pizza restaurant's website. This page might look OK at first glance, but it contains many issues that limit its accessibility. In the following units, we'll find and fix these issues.
+2. In your web browser, go to https://localhost:5001. You'll see the home page of the pizza restaurant's website. This page might look OK at first glance, but it contains many issues that limit its accessibility. In the following units, you'll find and fix these issues.

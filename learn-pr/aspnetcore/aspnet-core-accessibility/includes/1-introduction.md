@@ -6,7 +6,7 @@ Suppose your team has been hired to build a web app for a pizza restaurant by us
 
 ## What will we be doing?
 
-In this module, you'll first create a new ASP.NET Core web app and observe problems that affect its accessibility. You'll install tools to diagnose accessibility issues, and then fix issues with forms and visual accessibility. Finally, you'll use your screen reader to understand how accessibility issues can affect the screen reader experience. You'll further improve your application to allow for screen reader-based navigation.
+In this module, you'll first create a new ASP.NET Core web app and observe problems that affect its accessibility. You'll install tools to diagnose accessibility issues, and then fix issues with forms and visual accessibility. Finally, you'll use a screen reader to understand how accessibility issues can affect the screen reader experience. You'll further improve your application to allow for screen reader-based navigation.
 
 ## What is the main goal?
 

@@ -42,7 +42,7 @@ HTML form elements offer comprehensive validation support for common input types
 <input type="date" id="birthday">
 ```
 
-This code provides a native date picker popup for the user's browser and operating system that's already tested for accessibility. It handles validation for you. There's broad support for input types that used to require custom Regex validation, UI elements, and JavaScript:
+This code provides a native date picker pop-up for the user's browser and operating system that's already tested for accessibility. It handles validation for you. There's broad support for input types that used to require custom Regex validation, UI elements, and JavaScript:
 
 - Email
 - Date
@@ -77,7 +77,7 @@ You've probably picked up the pattern by now: using the built-in HTML form behav
 
 ## Accessibility Insights for Web
 
-Accessibility Insights for Web is an extension for Chrome and Microsoft Edge that helps developers find and fix accessibility issues in web apps and sites. We'll use it in the following exercises to identify and fix accessibility issues in the sample application.
+Accessibility Insights for Web is an extension for Google Chrome and Microsoft Edge. We'll use it in the following exercises to identify and fix accessibility issues in the sample application.
 
 The extension supports these primary tools:
 

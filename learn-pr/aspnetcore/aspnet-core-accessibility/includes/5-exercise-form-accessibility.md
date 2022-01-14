@@ -2,7 +2,7 @@ In this exercise, you'll use Accessibility Insights for Web to identify and fix 
 
 ## Install the Accessibility Insights for Web browser extension
 
-1. Go to the [Accessibility Insights for Web](https://accessibilityinsights.io/docs/en/web/overview/) page in either Chrome or Microsoft Edge.
+1. Go to the [Accessibility Insights for Web](https://accessibilityinsights.io/docs/en/web/overview/) page in either Google Chrome or Microsoft Edge.
 1. Select the install button that corresponds to your browser. 
 1. When the extension page appears, select the appropriate button for your browser (**Get** for Edge, **Add to Chrome** for Chrome) to install the extension.
 
@@ -10,7 +10,7 @@ In this exercise, you'll use Accessibility Insights for Web to identify and fix 
 
 For this exercise, you'll use the FastPass tool. In FastPass, you run three tests to find the most common accessibility issues in less than five minutes.
 
-1. Open **Launch Pad** for Accessibility Insights for Web by selecting the extension's toolbar button in the browser. You can also use the keyboard shortcut Ctrl+Shift+K (⌘+Shift+K for macOS).
+1. Open **Launch pad** for Accessibility Insights for Web by selecting the extension's toolbar button in the browser. You can also use the keyboard shortcut Ctrl+Shift+K (⌘+Shift+K for macOS).
 
    :::image type="content" source="../media/launch-pad.png" alt-text="Screenshot that shows the launch pad in Accessibility Insights for Web.":::
 
@@ -20,7 +20,7 @@ For this exercise, you'll use the FastPass tool. In FastPass, you run three test
 
    Automated checks have detected many errors. We're going to focus on the form in this exercise.
 
-1. There are two ways to interact with the error message. You can use the list in the FastPass tool, or you can select the error messages on the webpage. In this case, the FastPass tool lists errors across the entire page, which can be a little overwhelming when you want to focus on the form. We'll use the in-page error message for now. 
+1. There are two ways to interact with error messages. You can use the list in the FastPass tool, or you can select the error messages on the webpage. In this case, the FastPass tool lists errors across the entire page, which can be a little overwhelming when you want to focus on the form. We'll use the in-page error message for now. 
 
    Select the exclamation point to the right of the **First Name** label.
 
@@ -60,7 +60,7 @@ For this exercise, you'll use the FastPass tool. In FastPass, you run three test
 
     Great! Now that you know the fix, you can do the same thing for the rest of the labels. 
 
-1. Review the HTML for the rest of the form. You can see that the labels are using either `text-primary` or `text-black-50` for color. Remove these attributes, and add the `required` attribute to the **Last Name** and **E-mail Address** input fields:
+1. Review the HTML for the rest of the form. You can see that the labels are using either `text-primary` or `text-black-50` for color. Remove these attributes, and add the `required` attribute to the **Last Name** and **Email Address** input fields:
 
    ```html
    <form name="CustomerInfo">
@@ -99,10 +99,10 @@ For this exercise, you'll use the FastPass tool. In FastPass, you run three test
        </div>
        <div class="row">
          <div class="col-4">
-           E-mail Address
+           Email Address
          </div>
          <div class="col-8">
-           <input type="text" id="E-mail" required>
+           <input type="text" id="Email" required>
          </div>
        </div>
        <div class="button">
@@ -184,7 +184,7 @@ For this exercise, you'll use the FastPass tool. In FastPass, you run three test
    </div>
    ```
 
-1. Run the application and FastPass again. You should see two things. First, the error message for the `FirstName` element has cleared. Second, selecting the **First Name** label now selects the **First Name** input.
+1. Run the application and check FastPass again. You should see two things. First, the error message for the `FirstName` element has been cleared. Second, selecting the **First Name** label now selects the **First Name** input.
 
 1. Add `<label>` tags to the other form input fields. Your form code should look like this now:
 
@@ -225,10 +225,10 @@ For this exercise, you'll use the FastPass tool. In FastPass, you run three test
        </div>
        <div class="row">
          <div class="col-4">
-           <label for="E-mail">E-mail Address</label>
+           <label for="Email">Email Address</label>
          </div>
          <div class="col-8">
-           <input type="text" id="E-mail" required>
+           <input type="text" id="Email" required>
          </div>
        </div>
        <div class="button">
@@ -266,7 +266,7 @@ You've completed all the required fixes, but there's one more quick improvement 
 
 1. Change the `type` attribute for the **Phone** field to `tel`.
 1. Change the `type` attribute for the **Birthday** field to `date`.
-1. Change the `type` attribute for the **E-mail** field to `email`. The completed code for the form should appear as follows:
+1. Change the `type` attribute for the **Email** field to `email`. The completed code for the form should appear as follows:
 
    ```html
    <form name="CustomerInfo">
@@ -305,10 +305,10 @@ You've completed all the required fixes, but there's one more quick improvement 
        </div>
        <div class="row">
          <div class="col-4">
-           <label for="E-mail">E-mail Address</label>
+           <label for="Email">Email Address</label>
          </div>
          <div class="col-8">
-           <input type="email" id="E-mail" required>
+           <input type="email" id="Email" required>
          </div>
        </div>
        <div class="text-center">

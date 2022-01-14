@@ -25,7 +25,7 @@ However, you can provide a lot more semantic information and context to screen r
 - `<footer>`: This is the information at the bottom of a page that generally includes copyright info and a privacy policy.
 - `<section>`: This represents a block of content that doesn't fit in one of the preceding groupings.
 
-All these items can generally be styled the same as a `<div>`, so you can just replace the tag. The default ASP.NET Core layout page (found in `/Pages/Shared/_Layout.cshtml`) uses many of these elements, including `header`, `nav`, `main`, and `footer`. 
+All these items can generally be styled the same as a `<div>` element, so you can just replace the tag. The default ASP.NET Core layout page (found in */Pages/Shared/_Layout.cshtml*) uses many of these elements, including `header`, `nav`, `main`, and `footer`. 
 
 ### Heading elements
 

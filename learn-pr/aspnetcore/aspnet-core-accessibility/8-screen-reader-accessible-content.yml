@@ -26,4 +26,4 @@ quiz:
         explanation: "Don't use GUIDs for alt text."
       - content: "Use `alt=\u0022\u0022`."
         isCorrect: true
-        explanation: "Correct. You should use a blank alt value for decorative images."
+        explanation: "Correct. You should use a blank `alt` value for decorative images."

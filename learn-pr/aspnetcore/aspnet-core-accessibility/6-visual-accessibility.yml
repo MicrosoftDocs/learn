@@ -24,6 +24,6 @@ quiz:
       - content: "Users might be using a screen reader."
         isCorrect: false
         explanation: "This is true, but it isn't the complete answer."
-      - content: "All of these answers are correct."
+      - content: "Both of these answers are correct."
         isCorrect: true
-        explanation: "Yes, they're all correct."
+        explanation: "Yes, they're both correct."
