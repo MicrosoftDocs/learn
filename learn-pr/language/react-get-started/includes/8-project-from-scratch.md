@@ -1,6 +1,6 @@
 In this module, we used a starter project to get up and running quickly. This setup allowed us to focus on React and some of the new syntax. You're free to use the starter project for your own work.
 
-Of course, you might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project.
+You might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project.
 
 This unit is optional. If you don't need to create your own project, continue to the next unit.
 
@@ -30,7 +30,7 @@ We need three main packages for our application:
 
 In an empty directory, start by installing the necessary components by using npm. Then configure Snowpack and add the scripts to the *package.json* file.
 
-1. Open a terminal or command window. Then, run the following command to create the directory, and the *package.json* file for npm.
+1. Open a terminal or command window on Mac or Linux. On Windows, open a bash terminal window. Then, run the following command to create the directory, and the *package.json* file for npm.
 
     ```bash
     # Windows
@@ -65,7 +65,7 @@ In an empty directory, start by installing the necessary components by using npm
 
 ## Set up Snowpack
 
-One of the advantages of a tool like Snowpack is that it's generally self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.js* file.
+One of the advantages of a tool like Snowpack is that it's mostly self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.js* file.
 
 1. In Visual Studio Code, create a new file by selecting **File** > **New File**.
 
