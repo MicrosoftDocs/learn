@@ -23,7 +23,7 @@ quiz:
             fib(100)
         ```
 
-        Which of the following creates an annotation that the above block can be used with?
+        Which of the following expressions creates an annotation that the above block can be used with?
       choices:
         - content: '`pybryt.TimeComplexity(cplx.linear, name="foo")`'
           isCorrect: true

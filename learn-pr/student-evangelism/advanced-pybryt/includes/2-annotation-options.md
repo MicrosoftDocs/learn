@@ -2,7 +2,7 @@ There are a few options that are common to all annotations; in the last module, 
 
 ## `name`
 
-The `name` option is used to group different instances of annotation classes that represent the same annotation together. This is mainly used to prevent messages from being displayed multiple times when they don't need to be. Let's consider a simple example: the `maximum` function below just calls Python's `max` function to check that the student correctly identified the maximum, but one success message is printed for each input the function is tested on.
+The `name` option is used to group different instances of annotation classes that represent the same annotation together. This is mainly used to prevent messages from being displayed multiple times when they don't need to be. Let's consider an example: the `maximum` function below just calls Python's `max` function to check that the student correctly identified the maximum, but one success message is printed for each input the function is tested on.
 
 
 ```python
@@ -85,7 +85,7 @@ MESSAGES:
 
 The `limit` option allows you to control how many copies of named annotations are included in the reference implementation. This helps for cases in which the functions constructing the annotations are reused many times throughout an assignment but a few initial tests are sufficient for checking the validity of the implementation by reducing the size of the reference implementation itself.
 
-Let's illustrate this using our maximum function. We'll use a similar implementation to the reference above but set `limit` to 5 annotations and test it on several input lists.
+Let's illustrate this using our maximum function. We'll use a similar implementation to the reference above but set `limit` to five annotations and test it on several input lists.
 
 
 ```python
@@ -115,7 +115,7 @@ As you can see, the length of `max_ref.annotations` is 5 even though 1,000 annot
 
 ## `group`
 
-The `group` option is similar to the `name` option in that it is used to group annotations together, but these annotations do not necessarily represent the "same annotation"; instead, they are grouped into meaningful chunks so that specific portions of references can be checked one at a time instead of all at once. This can be useful in constructing assignments with multiple questions in PyBryt.
+The `group` option is similar to the `name` option in that it's used to group annotations together, but these annotations don't necessarily represent the "same annotation"; instead, they're grouped into meaningful chunks so that specific portions of references can be checked one at a time instead of all at once. This can be useful in constructing assignments with multiple questions in PyBryt.
 
 For example, consider a simple assignment that asks students to implement a `mean` and `median` function. You may divide it up into two questions like so:
 

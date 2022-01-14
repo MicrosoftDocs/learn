@@ -26,7 +26,7 @@ pybryt.TimeComplexity
 
 And that's all that's required on the reference implementation end. The real work of checking the time complexity of students' code comes in writing the scaffold provided to students, which must use PyBryt's `check_time_complexity` context manager to mark a block of code as a block that should be checked for time complexity. This context manager accepts as arguments the name of the block (which should be the same as the `name` provided to the annotation) and the size of input being run in that context.
 
-For example, consider a simple exponentiation algorithm. Here, the size of the input is the power that the base is being raised to.
+For example, consider a simple exponentiation algorithm where the size of the input is the power that the base is being raised to.
 
 
 ```python
@@ -39,7 +39,7 @@ with pybryt.check_time_complexity("foo", 10):
     assert power(2, 10) == 2 ** 10
 ```
 
-One data point, however, is not enough. To collect data for multiple input sizes, you can use the context manager with the same name and vary the input length:
+One data point, however, isn't enough. To collect data for multiple input sizes, you can use the context manager with the same name and vary the input length:
 
 
 ```python
@@ -57,4 +57,4 @@ with pybryt.check_time_complexity("bar", l):
     sort(l)
 ```
 
-When used in the student's code (or in any context where the notebook is not being executed by PyBryt to generate a memory footprint), the `check_time_complexity` context does nothing. However, when PyBryt is running the code, it tracks the number of steps it takes to execute the block. Because the input lengths needed to accurately measure time complexity can get very high, PyBryt does not trace for values inside these contexts; this means that any calls needed to satisfy value annotations must occur **outside** a `check_time_complexity` context, otherwise PyBryt won't see the value in the student's memory footprint.
+When used in the student's code (or in any context where the notebook isn't being executed by PyBryt to generate a memory footprint), the `check_time_complexity` context does nothing. However, when PyBryt is running the code, it tracks the number of steps it takes to execute the block. Because the input lengths needed to accurately measure time complexity can get very high, PyBryt doesn't trace for values inside these contexts; this means that any calls needed to satisfy value annotations must occur **outside** a `check_time_complexity` context, otherwise PyBryt won't see the value in the student's memory footprint.

@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
     - content: |
-        Which of the following calls caps the number of times that the `lst` variable is tracked at 5 times?
+        Which of the following calls caps the number of times that the `lst` variable is tracked at five times?
       choices:
         - content: "`pybryt.Value(lst, limit=5)`"
           isCorrect: false
@@ -58,4 +58,4 @@ quiz:
           explanation: "Correct!"
         - content: "15"
           isCorrect: false
-          explanation: "Not quite. Note that the value of `group` has no effect on `name` or `limit` (event if they're the same)."
+          explanation: "Not quite. The value of `group` has no effect on `name` or `limit` (event if they're the same)."

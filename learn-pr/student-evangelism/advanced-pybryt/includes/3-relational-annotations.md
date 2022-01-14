@@ -98,7 +98,7 @@ To create a logic annotation, use Python's bitwise logical operators on any anno
 (pybryt.AndAnnotation, pybryt.OrAnnotation, pybryt.XorAnnotation)
 ```
 
-To create conditions involving more than just two annotations, you can chain the operators, or instantiate the annotations directly with their child annotations. Similar to temporal annotations, the options for logical annotations can be set by updating the corresponding attribute on the 
+To create conditions involving more than just two annotations, you can chain the operators, or instantiate the annotations directly with their child annotations. Similar to temporal annotations, the options for logical annotations can be set by updating the corresponding attribute on the annotation object.
 
 
 ```python
@@ -116,3 +116,14 @@ one_ann = a1 ^ a2 ^ a3
 one_ann.success_message = "Found exactly of a1, a2, or a3"
 one_ann.failure_message = "Did not find exactly one of a1, a2, or a3"
 ```
+
+PyBryt also supports the not (`~`) operator, to produce annotations that are only satisfied if their child annotation is _not_ satisfied. For example, these can be used to send a message to students if there is a particular value in their memory footprint which should not be there:
+
+
+```python
+not_lst = ~pybryt.Value(lst)
+not_lst.failure_message = "Found an incorrect value in your submission; " + \
+    "please double-check your implementation."
+```
+
+The annotation above provides a message to students if it finds the value of `lst` in the memory footprint. (Note that the same effect could be achieved by setting the `success_message` in the `pybryt.Value` constructor.)
