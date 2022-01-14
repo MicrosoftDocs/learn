@@ -55,6 +55,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
     metadata:
       name: contoso-microservice
     spec:
+      replicas: 1                   # Here we are telling K8S the number of containers to process the Redis list items
       selector:                     # Define the wrapping strategy
         matchLabels:                # Match all pods with the defined labels
           app: contoso-microservice # Labels follow the `name: value` template
@@ -63,7 +64,6 @@ Kubernetes groups containers into logical structures called pods, which have no 
           labels:
             app: contoso-microservice
         spec:
-          replicas: 1               # here we are telling K8S the number of containers to process the Redis list items
           containers:
             - image: mcr.microsoft.com/mslearn/samples/redis-client:latest
               name: contoso-microservice

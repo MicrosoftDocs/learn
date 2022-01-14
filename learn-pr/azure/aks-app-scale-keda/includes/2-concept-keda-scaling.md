@@ -23,7 +23,7 @@ The diagram below shows how KEDA integrates with the Kubernetes HPA, external ev
 :::image type="content" source="../media/2-1-keda-architecture.png" alt-text="A diagram that depicts the KEDA architecture in Kubernetes.":::
 
 > [!TIP]
-> For more detailed information see the [official documentation](https://keda.sh/docs/2.2/concepts/)
+> For more detailed information, see the [official KEDA documentation](https://keda.sh/docs/2.2/concepts/).
 
 ### Event sources and scalers
 
