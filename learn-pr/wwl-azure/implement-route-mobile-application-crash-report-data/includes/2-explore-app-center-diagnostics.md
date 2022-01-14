@@ -46,12 +46,12 @@ In the App Center Diagnostics UI, you can attach, view, and download one binary 
 
 You can learn to add attachments to your crash reports by reading the SDK Crashes documentation for:
 
- -  [Android](https://docs.microsoft.com/appcenter/sdk/crashes/android#add-attachments-to-a-crash-report).
- -  [iOS](https://docs.microsoft.com/appcenter/sdk/crashes/ios#add-attachments-to-a-crash-report).
- -  [macOS](https://docs.microsoft.com/appcenter/sdk/crashes/macos#add-attachments-to-a-crash-report).
- -  [React Native](https://docs.microsoft.com/appcenter/sdk/crashes/react-native#add-attachments-to-a-crash-report).
- -  [Xamarin](https://docs.microsoft.com/appcenter/sdk/crashes/xamarin#add-attachments-to-a-crash-report).
- -  [Apache Cordova](https://docs.microsoft.com/appcenter/sdk/crashes/cordova#add-attachments-to-a-crash-report).
+ -  [Android](/appcenter/sdk/crashes/android#add-attachments-to-a-crash-report).
+ -  [iOS](/appcenter/sdk/crashes/ios#add-attachments-to-a-crash-report).
+ -  [macOS](/appcenter/sdk/crashes/macos#add-attachments-to-a-crash-report).
+ -  [React Native](/appcenter/sdk/crashes/react-native#add-attachments-to-a-crash-report).
+ -  [Xamarin](/appcenter/sdk/crashes/xamarin#add-attachments-to-a-crash-report).
+ -  [Apache Cordova](/appcenter/sdk/crashes/cordova#add-attachments-to-a-crash-report).
 
 Select a crash group, a specific device report, and click on the attachments tab to view and download the attachments.
 
