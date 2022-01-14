@@ -1,23 +1,53 @@
-If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at runtime when a `null` is dereferenced. This exception is by far the most commonly occuring exception within the .NET ecosystem. Tony Hoare (the creator of `null`) refers to `null` as the "billion dollar mistake".
+If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced. This exception is by far the most commonly occuring exception within the .NET ecosystem. Tony Hoare (the creator of `null`) refers to `null` as the "billion dollar mistake".
 
 In the following example, the `FooBar` object is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
 
 ```csharp
+// Declare variable and assign it as null.
 FooBar fooBar = null;
-_ = fooBar.ToString(); // throws NullReferenceException
 
+// Dereference variable by calling ToString.
+// This will throw a NullReferenceException.
+_ = fooBar.ToString();
+
+// The FooBar type definition for example.
 record FooBar(int Id, string Name);
 ```
 
-The preceding example is obvious, but when your applications grow in size and complexity, it's much less obvious whether or not a variable is ever `null`.
+The preceding example is obvious, but when your apps grow in size and complexity, the problem becomes much more difficult to spot as a developer. This is a job for tooling, and the C# compiler platform (Rosyln) is here to help!
+
+## What is null safety
+
+The term _null safety_ defines a set of features specific to [nullable types](#nullable-types) that help reduce the number of possible `NullReferenceException` occurrences.
+
+> [!IMPORTANT]
+> There is no _guaranteed_ null safety, even if you react to and eliminate all the warnings. There are many holes in the analysis by necessity, and also some by choice.
+
+Considering the previous `FooBar` example, the `NullReferenceException` could be avoided by simply checking if the `fooBar` variable was `null` before dereferencing it:
+
+```csharp
+// Declare variable and assign it as null.
+FooBar fooBar = null;
+
+// Check for null
+if (fooBar is not null)
+{
+    _ = fooBar.ToString();
+}
+
+// The FooBar type definition for example.
+record FooBar(int Id, string Name);
+```
+
+Rosyln has the ability to reason about the intent of your code and it can help to enforce behavior, but this is only when a _nullable context_ is enabled. Before discussing [nullable context](#nullable-context), let's describe the possible nullable types.
 
 ## Nullable types
 
-Before C# 2.0, value-types such as `int`, or `DateTime` could _not_ be `null`. Starting with C# 2.0, the `Nullable<T>` type was introduced to allow value-types to be nullable. Before C# 8.0, reference types were implicitly nullable. The `default` value for all reference types is `null`.
+Before C# 2.0, value-types such as `int`, or `DateTime` could _not_ be `null`. The `default` value for all reference types is `null`, consider the following C# snippet:
 
 ```csharp
 string first;                  // first is null
-string second = string.Empty   // second is not null
+string second = string.Empty   // second is not null, instead it's an empty string ""
 int third;                     // third is 0 because int is a value type
 DateTime date;                 // date is DateTime.MinValue
 ```
@@ -27,14 +57,69 @@ In the preceding example:
 - `first` is `null` because the reference type `string` was declared but no assignment was made.
 - `second` is assigned `string.Empty` when it's declared. The object never had a `null` assignment.
 - `third` is `0` despite not being assigned to. It's a `struct` (value-type) and has a `default` value of `0`.
+- `date` is uninitialized but its value is <xref:System.DateTime.MinValue?displayProperty=fullName>.
 
-C# 8.0 introduced the nullable reference types, where you as the developer can express explicit intent that a reference type might be `null` or is always non-`null`. This is possible within a nullable context.
+Starting with C# 2.0, you could define _nullable value types_ using `Nullable<T>` (or `T?` for shorthand). This allows value-types to be nullable. Consider the following C# snippet:
+
+```csharp
+int? first;            // first is implicitly null (uninitialized)
+int? second = null;    // second is explicitly null
+int? third = default;  // third is null as the default value for Nullable<Int32> is null
+int? forth = new();    // forth is 0, since new calls the nullable constructor
+```
+
+In the preceding example:
+
+- `first` is `null` because the nullable value type is uninitialized.
+- `second` is assigned `null` when it's declared.
+- `third` is `null` as the `default` value for `Nullable<int>` is `null`.
+- `forth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
+
+C# 8.0 introduced _nullable reference types_, where you as the developer can express your intent that a reference type might be `null` or is always non-`null`. It might be asking yourself, "I thought they said that all reference types are nullable", you're not wrong. This feature allows you to express your intent and it helps the compiler enforce behavior based on your intent. The same shorthand syntax exists for expressing that a reference type is intended to be nullable. For example, consider the following C# snippet:
+
+```csharp
+// TODO: Add a nullable parameter example here
+```
+
+> [!TIP]
+> In order to use the nullable reference types feature, you must enable it. For more information, see [Enable nullable reference types](#enable-nullable-reference-types).
 
 ## Nullable context
 
+Nullable contexts enable fine-grained control for how the compiler interprets reference type variables. There four possible nullable contexts:
 
+- `disable`: The compiler behaves similarly to C# 7.3 and earlier.
+- `enable`: The compiler enables all null reference analysis and all language features.
+- `warnings`: The compiler performs all null analysis and emits warnings when code might dereference `null`.
+- `annotations`: The compiler doesn't perform null analysis or emit warnings when code might dereference `null`.
+
+This learn module is scoped to the either `disable` or `enable` nullable contexts. For more information, see [Nullable reference types: Nullable contexts](/dotnet/csharp/nullable-references#nullable-contexts).
 
 <!-- how null state analysis solves this problem in C# 8 and greater -->
+
+### Enable nullable reference types
+
+In the C# project file (_.csproj), add a child node to the `<Project>` element (or append to an existing `<PropertyGroup>`):
+
+```diff
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
++       <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <!-- Omitted for brevity -->
+
+</Project>
+```
+
+When the nullable context is enabled, you'll get new warnings. Consider the previous `FooBar` example.
+
+:::image type="content" source="../media/null-warning-cs8600.png" lightbox="../media/null-warning-cs8600.png" alt-text="C# Warning CS8600: Converting null literal or possible null value to non-nullable type.":::
+
+:::image type="content" source="../media/null-warning-cs8602.png" lightbox="../media/null-warning-cs8602.png" alt-text="C# Warning CS8602: Dereference of a possibly null reference.":::
 
 > [!IMPORTANT]
 > The nullable context is enabled by default in all C# project templates starting with .NET 6.0 and greater.
@@ -43,5 +128,3 @@ C# 8.0 introduced the nullable reference types, where you as the developer can e
 System.NullReferenceException: Object reference not set to an instance of an object.
    at <Program>$.<Main>$(String[] args)
 ```
-
-:::image type="content" source="../media/possible-null-warning.png" lightbox="../media/possible-null-warning.png" alt-text="Visual Studio Code: Possible null warning.":::
