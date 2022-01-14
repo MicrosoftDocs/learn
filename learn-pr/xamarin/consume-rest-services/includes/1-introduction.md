@@ -2,6 +2,7 @@ Think about the applications that are installed on your phone. You might have so
 
 In this module, you build a Xamarin.Forms application that consumes data from a REST web service. You start by determining if your device is connected to the internet and only running code if you have an active connection. Then you use `HttpClient` to perform basic CRUD operations on a hosted REST web service. Finally, you use message handlers with `HttpClient` to take advantage of the native networking stacks on each device.
 
+[!include[](../../includes/dotnet-maui-note.md)]
 [!include[](../../../includes/install-vs-mobile-workload.md)]
 
 ## Learning objectives
@@ -15,4 +16,5 @@ In this module, you will:
 ## Prerequisites
 
 [!include[](../../../includes/prerequisites.md)]
+
 - Basic knowledge of REST
