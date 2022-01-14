@@ -12,7 +12,7 @@ You've now had a basic introduction to Visual Studio. As mentioned in the beginn
 
 Recall the example at the beginning of this module of learning to program your first website. Visual Studio can help you select website templates to help you get started. It offers hints and warnings as you type in the Editor. And you can inspect your webapp as it runs locally with debugger tools. Hopefully this module gave you a good understanding of why so many developers find that IDEs make them more productive. Happy coding!
 
-## Next Steps
+## Next steps
 
 **[Download Visual Studio](https://visualstudio.microsoft.com/downloads/)** to try out what you have learned.
 
