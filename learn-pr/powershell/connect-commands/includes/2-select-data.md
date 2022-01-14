@@ -2,7 +2,7 @@ Running a command can be powerful, you get data from your local machine or from 
 
 ## Use Get-Member to inspect output
 
-When you pass the results of a command to `Get-Member`, `Get-Member` returns information about the object, information like:
+When you pass the results of a command to `Get-Member`, `Get-Member` returns information about the object, like:
 
 - The type of object being passed to Get-Member.
 - The Properties of the object that may be evaluated.
@@ -14,7 +14,7 @@ Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`
 Get-Process zsh | Get-Member
 ```
 
-Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The outcome of the statement above looks like so (at least the first few lines):
+Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement looks like so:
 
 ```output
 TypeName: System.Diagnostics.Process
@@ -31,7 +31,7 @@ WS                         AliasProperty  WS = WorkingSet64
 ...
 ```
 
-Above you are shown both the type of object the `Get-Process` returns, i.e `System.Diagnostics.Process` and also properties. The rest of the response shows all the properties this object consist of. If you wanted to fit `Get-Process` with another command in a pipeline, running `Get-Member` would be the first steps in finding this out.
+The output shows the type of object that the `Get-Process` command returns (`System.Diagnostics.Process`). The rest of the response shows the name, type, and definition of the Members (or properties) that this object consists of. You can see that If you wanted to fit `Get-Process` with another command in a pipeline, pairing it with `Get-Member` would be a good first step.
 
 ## Select-Object
 
@@ -39,7 +39,7 @@ By default, when you run a command that is going to output to the screen, PowerS
 
 The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are selected in the view.
 
-You can override the default view by using `Select-Object` and choosing your own list of properties. you can then send those properties to `Format-Table` or `Format-List`, to display the table however you like...
+You can override the default view by using `Select-Object` and choosing your own list of properties. You can then send those properties to `Format-Table` or `Format-List`, to display the table however you like.
 
 Consider the result of running `Get-Process` on the process `zsh`:
 
@@ -56,7 +56,7 @@ Consider the result of running `Get-Process` on the process `zsh`:
       0     0.00       1.16       0.31   68298 …98 zsh
 ```
 
-What you are seeing is a view that represents what you most likely want to see from this command, that does not mean that's all the information there is. The way to show something different than the above response is by explicitly specifying what properties you want to see.
+What you see is a view that represents what you most likely want to see from this command. However, this view does not show you a complete set of information. In order to see something different, you can explicitly specify which properties you want to see in the result.
 
 ### Getting the full response
 
@@ -66,7 +66,7 @@ What you've seen so far is a limited response. To present the full response, you
 Get-Process zsh | Format-List -Property *
 ```
 
-This character `*`, shows you every single attribute and their value and you can start investigating what values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
+Th `*` character shows you every single attribute and its value. It allows you to investigate the values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
 
 However, the response you get is using presentation names for properties, not the actual property names and is something that looks good in a report.
 
@@ -84,13 +84,13 @@ Let's quickly recap on the default response, with this subset:
       0     0.00       0.01       0.38     644 620 zsh
 ```
 
-From the default response, the properties `Id` and `ProcessName` are most likely called the same, but CPU(s) is a presentation name, real property names tend to consist of only text characters and no spaces. To find out the real name for said property, you can use `Get-Member` to find out:
+From the default response, the properties `Id` and `ProcessName` are most likely called the same, but CPU(s) is a presentation name, real property names tend to consist of only text characters and no spaces. To find out the real name for a specific property, you can use `Get-Member`:
 
 ```powershell
 Get-Process zsh | Get-Member -Name C*
 ```
 
-You now get a list of all members that starts with a `C` and among them is `CPU`, which is likely what you want:
+You now get a list of all members with names that start with a `C`. Among them is `CPU`, which is likely what you want:
 
 ```output
 TypeName: System.Diagnostics.Process
@@ -107,7 +107,7 @@ Company          ScriptProperty System.Object Company {get=$this.Mainmodule.File
 CPU              ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
 ```
 
-With all these learnings, you can now use `Select-Object` and ask exactly for what you need and with correct property names like so:
+You now know how to use `Select-Object` and ask exactly for what you need, with the correct property names like so:
 
 ```powershell
 Get-Process zsh | Select-Object -Property Id, Name, CPU
