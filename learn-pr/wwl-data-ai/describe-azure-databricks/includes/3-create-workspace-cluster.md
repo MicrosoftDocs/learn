@@ -32,7 +32,7 @@ The notebooks are backed by clusters, or networked computers, that work together
 
 2. Select **Launch Workspace** to open your Databricks workspace in a new tab.
 
-3. In the left-hand menu of your Databricks workspace, select **Clusters**.
+3. In the left-hand menu of your Databricks workspace, select **Compute**.
 
 4. Select **Create Cluster** to add a new cluster.
 
