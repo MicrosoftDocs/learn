@@ -4,14 +4,14 @@ title: Describe how JEA endpoints work to limit access to a PowerShell session
 metadata:
   title: Describe how JEA endpoints work to limit access to a PowerShell session
   description: "Describe how JEA endpoints work to limit access to a PowerShell session"
-  ms.date: 11/25/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/5-describe-how-jea-endpoints-work-to-limit-access-to-powershell-session.md)]
 quiz:
