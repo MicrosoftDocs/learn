@@ -16,7 +16,7 @@ record FooBar(int Id, string Name);
 
 The preceding example is obvious, but when your apps grow in size and complexity, the problem becomes much more difficult to spot as a developer. This is a job for tooling, and the C# compiler platform (Rosyln) is here to help!
 
-## What is null safety
+## Defining null safety
 
 The term _null safety_ defines a set of features specific to [nullable types](#nullable-types) that help reduce the number of possible `NullReferenceException` occurrences.
 
@@ -75,11 +75,70 @@ In the preceding example:
 - `third` is `null` as the `default` value for `Nullable<int>` is `null`.
 - `forth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
 
-C# 8.0 introduced _nullable reference types_, where you as the developer can express your intent that a reference type might be `null` or is always non-`null`. It might be asking yourself, "I thought they said that all reference types are nullable", you're not wrong. This feature allows you to express your intent and it helps the compiler enforce behavior based on your intent. The same shorthand syntax exists for expressing that a reference type is intended to be nullable. For example, consider the following C# snippet:
+C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then enforces. The same `?` syntax expresses that a reference type is intended to be nullable.
+
+Let's define a `record class` for a `Node` type:
 
 ```csharp
-// TODO: Add a nullable parameter example here
+public sealed record class Node(int Id, string Name)
+{
+    public Node? Parent { get; init; }
+    
+    public bool IsRoot => Parent is null;
+
+    public override string ToString() =>
+        $"{{ Id = {Id}, Name = {Name}, IsRoot = {IsRoot} }}";
+}
 ```
+
+The preceding positional record object:
+
+- Defines a constructor requiring an `Id` and `Name`.
+- Defines a `Parent` property, which allows for a hierarchical object-graph.
+- Defines a readonly `IsRoot` property which is `true` when the `Node` doesn't have a `Parent`.
+- Overrides `ToString` to avoid printing the `Parent`.
+
+Next, let's create some C# functionality that can evaluate a `Node` instance to find the root. For example, consider the following C# snippet:
+
+```csharp
+#nullable enable
+
+using System;
+
+Node grandchild = new(3, "Grandchild")
+{
+    Parent = new(2, "Child")
+    {
+        Parent = new(1, "Parent")
+    }
+};
+
+static Node FindRoot(Node? node)
+{
+    if (node is null)
+    {
+        throw new ArgumentNullException(nameof(node));
+    }
+
+    Node? current = node;
+    while (!current.IsRoot)
+    {
+        current = current.Parent;
+    }
+
+    return current;
+}
+
+Console.WriteLine(FindRoot(grandchild));
+// Output: { Id = 1, Name = Parent, IsRoot = True }
+```
+
+In the preceding example:
+
+- A `Node` object-graph is instantiated, creating a hierarchy of three nodes; parent > child > grandchild.
+- A function named `FindRoot` returns a non-nullable `Node` object given a `Node?` argument.
+- The `Node?` is a nullable `Node`.
+- 
 
 > [!TIP]
 > In order to use the nullable reference types feature, you must enable it. For more information, see [Enable nullable reference types](#enable-nullable-reference-types).
@@ -99,15 +158,15 @@ This learn module is scoped to the either `disable` or `enable` nullable context
 
 ### Enable nullable reference types
 
-In the C# project file (_.csproj), add a child node to the `<Project>` element (or append to an existing `<PropertyGroup>`):
+In the C# project file (_.csproj_), add a child node to the `<Project>` element (or append to an existing `<PropertyGroup>`):
 
-```diff
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
-+       <Nullable>enable</Nullable>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <!-- Omitted for brevity -->
