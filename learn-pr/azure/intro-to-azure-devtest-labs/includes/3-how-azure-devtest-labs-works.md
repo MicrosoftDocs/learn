@@ -1,34 +1,34 @@
 Azure DevTest Labs uses various objects to configure each lab to your requirements. 
 
-In the e-commerce scenario, you want to know how to use objects such as artifacts and policies to manage environments and govern their usage. 
+In the e-commerce scenario, you want to know how to use objects such as artifacts and policies to manage environments and govern their usage.
 
-In this unit, you'll learn what these objects are and how they govern the behavior of your lab to provide a flexible and secure environment for training, testing, development, and other purposes.
+In this unit, you'll learn what these objects are and how they govern the behavior of your lab. Using these objects provides a flexible and secure environment for training, testing, and development.
 
 ## Objects in DevTest Labs
 
-When you create test environments or development machines, you can use objects to ensure that users can perform necessary tasks. These objects also enable you to prevent unauthorized actions. The objects include:
+When you create test environments or development machines, you can use objects to ensure that users can do necessary tasks. These objects also enable you to prevent unauthorized actions. The objects include:
 
 - Environments
 - Artifacts
-- Formulas and images
+- Formulas and custom images
 - Policies
 - Virtual machines
 
 :::image type="content" source="../media/3-devtest-labs-overview.png" alt-text="Diagram illustrating the relationship between logical DevTest Labs objects.":::
 
-Let's examine these objects in more detail.
+The following sections describe these objects in more detail.
 
 ## Environments
 
-Azure DevTest Labs has a public repository of Azure Resource Manager templates (ARM templates) that you can use to create environments. This setup is similar to the artifacts repository that's available in the Azure portal for each lab. The environment repository gets you started quickly in a preconfigured environment that has few input parameters. For example, you could use PaaS resources such as Azure Service Fabric or the Web Apps feature of Azure App Service.
+Azure DevTest Labs has a public repository of Azure Resource Manager templates (ARM templates) that you can use to create environments. This setup is similar to the artifacts repository available in the Azure portal for each lab. The environment repository gets you started quickly in a preconfigured environment that has few input parameters. For example, you can use PaaS resources such as Azure Service Fabric or the Web Apps feature of Azure App Service.
 
-When you create environments or templates, you can store them in the environment repository to share with others, or you can set up your own Git repository.
+When you create environments or templates, you can either store them in the environment repository to share with others, or you can set up your own Git repository.
 
 ## Artifacts
 
 Use artifacts to deploy and configure an application after you set up a virtual machine. An artifact consists of a JavaScript Object Notation (JSON) definition file and other script files that are stored in a folder within a specified Git repository. These files contain expressions that can be used to specify what's required on the virtual machine. For example, you might define a command to run and parameters that are available when that command is run. 
 
-This code is an example JSON artifact:
+The following code shows an example JSON artifact:
 
 ```JSON
 {
@@ -50,7 +50,7 @@ This code is an example JSON artifact:
 }
 ```
 
-Suppose that, for the e-commerce developer who's onboarding labs, the Windows package manager *Chocolatey* is required on all development machines. You could set up an artifact to install the required package through a PowerShell script.
+Suppose that, for the e-commerce developer who's onboarding labs, the Windows package manager *Chocolatey* is required on all development machines. You can set up an artifact to install the required package through a PowerShell script:
 
 ```JSON
 runCommand": {
@@ -60,14 +60,13 @@ runCommand": {
 , ' -Password ', parameters('installPassword'))]"
 }
 ```
-<br>
 
 The following table details each section of the JSON artifact schema and how it's used:
 
 | Element name | Required? | Description |
 | ------------ | --------- | ----------- |
-| $schema	| No | The location of the JSON schema file. This value ensures validation checking of your custom artifact. |
-| title | Yes |	The name of the JSON file. |
+| $schema | No | The location of the JSON schema file. This value ensures validation checking of your custom artifact. |
+| title | Yes | The name of the JSON file. |
 | description | Yes | The description of the JSON file. |
 | iconUri | No | The URI of the icon that's displayed in the lab. |
 | targetOsType | Yes | The operating system of the virtual machine: Windows or Linux. |
@@ -77,30 +76,36 @@ The following table details each section of the JSON artifact schema and how it'
 
 ## Formulas and custom images
 
-You can use both custom images and formulas as a base for creating new virtual machines, although they're different. A custom image is based on a virtual hard drive (a VHD file). A formula is an image that's based on a virtual hard drive with preconfigured settings, such as virtual machine size, virtual network, subnet, and artifacts. These preconfigured settings are set up with default values that can be overridden when the virtual machine is created.
+You can use both custom images and formulas as a basis for creating new virtual machines. A custom image is based on a virtual hard drive (a VHD file). A formula is an image that's based on a virtual hard drive with preconfigured settings, such as virtual machine size, virtual network, subnet, and artifacts. The system sets these preconfigured settings with default values, which you can override when you create the virtual machine.
 
-You manage formulas within the following Azure submenu:
+To manage formulas:
 
-:::image type="content" source="../media/3-lab-settings-formulas.png" alt-text="Screenshot of the left pane in the Azure portal with the Formulas command highlighted.":::
+1. From the left pane of the **DevTest Labs** page, under **Settings**, select **Configuration and policies**.
 
-Start by selecting a base for your formula:
+1. From the left pane of the **Configuration and policies** page, under **Virtual machine bases**, select **Formulas (reusable bases)**.
 
-:::image type="content" source="../media/3-base-list.png" alt-text="Screenshot of the Azure portal illustrating options for DevTest virtual machine bases.":::
+   :::image type="content" source="../media/3-lab-settings-formulas.png" alt-text="Screenshot of the left pane with the Formulas command highlighted.":::
 
-Then use **basic settings** to configure:
+1. Select **Add**, and then select a base for your formula.
 
-- A name for your formula.
-- A username and password for the default user account.
-- A virtual machine size.
-- Artifacts to install.
+   :::image type="content" source="../media/3-base-list.png" alt-text="Screenshot of the Azure portal that shows options for DevTest virtual machine bases.":::
+
+1. In the **Basic settings** tab of the **Create formula (reusable base)** window, configure the following settings:
+
+   - A **Formula name** for your formula.
+   - A **User name** and **Password** for the default user account.
+   - A **Virtual machine size**.
+   - The **Artifacts** to install.
+
+1. Select **Create formula**
 
 ## Policies
 
-In Azure DevTest Labs, you use policies to manage costs and minimize waste in each lab environment. You can set things such as the number of virtual machines or the sizes that each person can use. You can also set auto-shutdown rules, because costs are incurred only when a virtual machine is running. 
+In Azure DevTest Labs, you use policies to manage costs and minimize waste in each lab environment. You can set things such as the number of virtual machines or the sizes that each person uses. You can also set autoshutdown rules. Doing so is important, because costs are incurred only when a virtual machine is running.
 
 Policies cover the following areas:
 
 - Allowed virtual machine sizes
-- The maximum number of virtual machines per user
-- The total number of virtual machines allowed
-- The auto-shutdown policy
+- Maximum number of virtual machines per user
+- Total number of virtual machines allowed
+- Autoshutdown policy
