@@ -14,7 +14,7 @@ Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`
 Get-Process zsh | Get-Member
 ```
 
-Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement looks like so:
+Note how you are using the pipe `|` and that by calling `Get-Member`, you are in fact creating a pipeline already. The first few lines of output from the preceding statement look like so:
 
 ```output
 TypeName: System.Diagnostics.Process
@@ -31,11 +31,11 @@ WS                         AliasProperty  WS = WorkingSet64
 ...
 ```
 
-The output shows the type of object that the `Get-Process` command returns (`System.Diagnostics.Process`). The rest of the response shows the name, type, and definition of the Members (or properties) that this object consists of. You can see that If you wanted to fit `Get-Process` with another command in a pipeline, pairing it with `Get-Member` would be a good first step.
+The output shows the type of object that the `Get-Process` command returns (`System.Diagnostics.Process`). The rest of the response shows the name, type, and definition of the object's members. You can see that If you want to fit `Get-Process` with another command in a pipeline, pairing it with `Get-Member` is a good first step.
 
 ## Select-Object
 
-By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, if so, it uses that view.
+By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, and if so, it uses that view.
 
 The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are selected in the view.
 
@@ -66,9 +66,9 @@ What you've seen so far is a limited response. To present the full response, you
 Get-Process zsh | Format-List -Property *
 ```
 
-Th `*` character shows you every single attribute and its value. It allows you to investigate the values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
+The `*` character shows you every attribute and its value, which allows you to investigate the values you are interested in. The full response also uses presentation names for properties instead of the actual property names, and presentation names look good in a report.
 
-However, the response you get is using presentation names for properties, not the actual property names and is something that looks good in a report.
+Despite these benefits, you may not want a full output of data, but you may not be content with the default response either.
 
 ### Selecting specific columns
 
@@ -107,13 +107,13 @@ Company          ScriptProperty System.Object Company {get=$this.Mainmodule.File
 CPU              ScriptProperty System.Object CPU {get=$this.TotalProcessorTime.TotalSeconds;}
 ```
 
-You now know how to use `Select-Object` and ask exactly for what you need, with the correct property names like so:
+You now know how to use `Select-Object` to ask for exactly what you need with the correct property names, like so:
 
 ```powershell
 Get-Process zsh | Select-Object -Property Id, Name, CPU
 ```
 
-and here it is:
+And here it is:
 
 ```output
 Id Name       CPU
@@ -128,11 +128,11 @@ Id Name       CPU
 68298 zsh  0.3121695
 ```
 
-an output that differs from the default output but contains properties that you care about.
+This sequence of commands gives you an output that differs from the default output but contains properties that you care about.
 
 ## Sorting
 
-Using `Sort-Object` in pipeline, PowerShell attempts to sort the output data. It does so by relying by first looking at the default properties and sort by those properties. If no such properties exist, it tries to compare the objects themselves. The sorting is either by ascending or descending order.
+When using `Sort-Object` in a pipeline, PowerShell sorts the output data by using the default properties first. If no such properties exist, it then tries to compare the objects themselves. The sorting is either by ascending or descending order.
 
 By providing properties, you can choose to sort by specific columns, like so:
 
@@ -140,17 +140,16 @@ By providing properties, you can choose to sort by specific columns, like so:
 Get-Process | Sort-Object -Descending -Property Name
 ```
 
-Above we are sorting by both the column `Name` and in descending order. To sort by more than one column, you can add a secondary column to sort by, by separating column names via a comma, like so:
+In the preceding command, we are sorting by the column `Name` in descending order. To sort by more than one column, separate the column names with a comma, like so:
 
 ```powershell
 Get-Process | Sort-Object -Descending -Property Name, CPU
 ```
 
-Additionally to sorting by column name, you can also provide your own custom expression, like in this example:
+In addition to sorting by column name, you can also provide your own custom expression. In this example, we use a custom expression to sort by the columns `Name` and `CPU` and control the sort order for each column.
 
 ```powershell
 Get-Process 'some process' | Sort-Object -Property @{Expression = "Name"; Descending = $True}, @{Expression = "CPU"; Descending = $False}
 ```
 
-In the above example, you sort by columns `Name` and `CPU` and you're able to control sort order for each column. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules. It's good to see though that `Sort-Object` is powerful and flexible.
-
+The preceding example demonstrates how powerful and flexible `Sort-Object` can be. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules.

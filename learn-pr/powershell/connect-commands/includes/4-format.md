@@ -28,7 +28,7 @@ In this version, the parameter `-Name` does the filtering for you.
 
 ## Formatting right, formatting as the last thing you do
 
-Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alter the resulting object so that your your data is no longer found in the same properties. This alteration impacts your ability to retrieve the information you want by using pipe commands, `Select-Object`, or by looping through the object with `foreach`, and more.
+Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alter the resulting object so that your data is no longer found in the same properties. This alteration impacts your ability to retrieve the information you want by using pipe commands, `Select-Object`, or by looping through the object with `foreach`.
 
 The formatting destroys the object you are dealing with. Take the following call for example:
 
@@ -51,13 +51,13 @@ TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatEntryData
 TypeName: Microsoft.PowerShell.Commands.Internal.Format.GroupEndData
 ```
 
-What exactly these types are, are not important for this lesson. What is important is to realize is that when you use any type of formatting command, your data is different and when it's different it might no longer contain the columns you care about. Let's illustrate this with an example:
+What these types are, is not important for this lesson. What is important is to realize that when you use any type of formatting command, your data is different and when it's different it might no longer contain the columns you care about. Let's illustrate this with an example:
 
 ```powershell
 Get-Process 'some process' | Select-Object Name, Cpu
 ```
 
-The preceding command gives you a result with the columns `Name` and `CPU` that looks like the following:
+The preceding command gives you a result with the columns `Name` and `CPU`.
 
 ```output
 Name       CPU
@@ -78,14 +78,16 @@ Let's use formatting first and then `Select-Object`, to illustrate what might ha
 Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU
 ```
 
-The result coming back now looks like so:
+The result now looks like so:
 
 ```output
 Name CPU
 ---- ---
 ```
 
-It's empty, because `Format-Table` transformed your object by placing data into other properties. Your data isn't gone, only your properties, and the preceding PowerShell command makes an honest attempt at resolving non existing properties. Formatting commands is supposed to be the last thing you do because they are meant for formatting things nicely for screen presentation, not for you to keep massaging the data via commands like `Select-Object`.
+It's empty, because `Format-Table` transformed your object by placing data into other properties. Your data isn't gone, only your properties. The preceding PowerShell command makes an attempt to find the properties but is unable to.
+
+Formatting commands should be the last thing you use in your statement because they are meant for formatting things nicely for screen presentation. They aren't meant to be used as a way to filter or sort your data.
 
 ### Formatting commands
 
