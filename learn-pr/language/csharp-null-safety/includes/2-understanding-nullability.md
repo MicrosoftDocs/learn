@@ -1,4 +1,4 @@
-If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced. This exception is by far the most commonly occuring exception within the .NET ecosystem. Tony Hoare (the creator of `null`) refers to `null` as the "billion dollar mistake".
+If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when an object is evaluated at runtime, but the object points to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. Tony Hoare (the creator of `null`) refers to `null` as the "billion dollar mistake".
 
 In the following example, the `FooBar` object is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
 
@@ -10,7 +10,7 @@ FooBar fooBar = null;
 // This will throw a NullReferenceException.
 _ = fooBar.ToString();
 
-// The FooBar type definition for example.
+// The FooBar type definition.
 record FooBar(int Id, string Name);
 ```
 
@@ -21,7 +21,7 @@ The preceding example is obvious, but when your apps grow in size and complexity
 The term _null safety_ defines a set of features specific to [nullable types](#nullable-types) that help reduce the number of possible `NullReferenceException` occurrences.
 
 > [!IMPORTANT]
-> There is no _guaranteed_ null safety, even if you react to and eliminate all the warnings. There are many holes in the analysis by necessity, and also some by choice.
+> There is no _guaranteed_ null safety, even if you react to and eliminate all the warnings. There are some limited scenarios that will pass the compiler's analysis yet result in a runtime `NullReferenceException`.
 
 Considering the previous `FooBar` example, the `NullReferenceException` could be avoided by simply checking if the `fooBar` variable was `null` before dereferencing it:
 
@@ -39,11 +39,15 @@ if (fooBar is not null)
 record FooBar(int Id, string Name);
 ```
 
-Rosyln has the ability to reason about the intent of your code and it can help to enforce behavior, but this is only when a _nullable context_ is enabled. Before discussing [nullable context](#nullable-context), let's describe the possible nullable types.
+The compiler infers the intent of your code to help enforce behavior, but this is only when a _nullable context_ is enabled. Before discussing [nullable context](#nullable-context), let's describe the possible nullable types.
 
 ## Nullable types
 
-Before C# 2.0, value-types such as `int`, or `DateTime` could _not_ be `null`. The `default` value for all reference types is `null`, consider the following C# snippet:
+Before C# 2.0, only reference types were nullable and value-types such as `int` or `DateTime` could _not_ be `null`. If these types are initialized without a value, they fallback to their `default` value. In the case of an `int`, this is `0`. For a `DateTime`, it's `DateTime.MinValue`.
+
+Reference types instantiated without initial values work differently. The `default` value for all reference types is `null`.
+
+Consider the following C# snippet:
 
 ```csharp
 string first;                  // first is null
@@ -75,73 +79,26 @@ In the preceding example:
 - `third` is `null` as the `default` value for `Nullable<int>` is `null`.
 - `forth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
 
-C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then enforces. The same `?` syntax expresses that a reference type is intended to be nullable.
+C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
 
-Let's define a `record class` for a `Node` type:
+Consider the following C# snippet:
 
-```csharp
-public sealed record class Node(int Id, string Name)
-{
-    public Node? Parent { get; init; }
-    
-    public bool IsRoot => Parent is null;
-
-    public override string ToString() =>
-        $"{{ Id = {Id}, Name = {Name}, IsRoot = {IsRoot} }}";
-}
-```
-
-The preceding positional record object:
-
-- Defines a constructor requiring an `Id` and `Name`.
-- Defines a `Parent` property, which allows for a hierarchical object-graph.
-- Defines a readonly `IsRoot` property which is `true` when the `Node` doesn't have a `Parent`.
-- Overrides `ToString` to avoid printing the `Parent`.
-
-Next, let's create some C# functionality that can evaluate a `Node` instance to find the root. For example, consider the following C# snippet:
+> [!IMPORTANT]
+> In order to use the nullable reference types feature as shown below, it must be within a _nullable context_. This is detailed in [Enable nullable reference types](#enable-nullable-reference-types).
 
 ```csharp
 #nullable enable
 
-using System;
-
-Node grandchild = new(3, "Grandchild")
-{
-    Parent = new(2, "Child")
-    {
-        Parent = new(1, "Parent")
-    }
-};
-
-static Node FindRoot(Node? node)
-{
-    if (node is null)
-    {
-        throw new ArgumentNullException(nameof(node));
-    }
-
-    Node? current = node;
-    while (!current.IsRoot)
-    {
-        current = current.Parent;
-    }
-
-    return current;
-}
-
-Console.WriteLine(FindRoot(grandchild));
-// Output: { Id = 1, Name = Parent, IsRoot = True }
+string first = string.Empty;
+string second;
+string? third;
 ```
 
-In the preceding example:
+Given the preceding example, the compiler infers your *intent* as follows:
 
-- A `Node` object-graph is instantiated, creating a hierarchy of three nodes; parent > child > grandchild.
-- A function named `FindRoot` returns a non-nullable `Node` object given a `Node?` argument.
-- The `Node?` is a nullable `Node`.
-- 
-
-> [!TIP]
-> In order to use the nullable reference types feature, you must enable it. For more information, see [Enable nullable reference types](#enable-nullable-reference-types).
+- `first` is *never* `null` as it is definitely assigned.
+- `second` *should never* be `null`, even though it's initially `null`. Evaluating `second` before assigning a value results in a compiler warning as it is uninitialized.
+- `third` *might be* `null`. For example, it *might* point to a `System.String`, but it *might* point to `null`. Either is acceptable to you.
 
 ## Nullable context
 
@@ -154,11 +111,9 @@ Nullable contexts enable fine-grained control for how the compiler interprets re
 
 This learn module is scoped to the either `disable` or `enable` nullable contexts. For more information, see [Nullable reference types: Nullable contexts](/dotnet/csharp/nullable-references#nullable-contexts).
 
-<!-- how null state analysis solves this problem in C# 8 and greater -->
-
 ### Enable nullable reference types
 
-In the C# project file (_.csproj_), add a child node to the `<Project>` element (or append to an existing `<PropertyGroup>`):
+In the C# project file (_.csproj_), add a child node to the `<Project>` element (or append to an existing `<PropertyGroup>`). This will apply the `enable` nullable context to the entire project.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -174,16 +129,47 @@ In the C# project file (_.csproj_), add a child node to the `<Project>` element 
 </Project>
 ```
 
-When the nullable context is enabled, you'll get new warnings. Consider the previous `FooBar` example.
+Alternatively, you can scope nullable context to a C# file using a compiler directive.
 
-:::image type="content" source="../media/null-warning-cs8600.png" lightbox="../media/null-warning-cs8600.png" alt-text="C# Warning CS8600: Converting null literal or possible null value to non-nullable type.":::
+```csharp
+#nullable enable
+```
 
-:::image type="content" source="../media/null-warning-cs8602.png" lightbox="../media/null-warning-cs8602.png" alt-text="C# Warning CS8602: Dereference of a possibly null reference.":::
+The preceding C# compiler directive is functionally equivalent to the project configuration, but is scoped to the file in which it resides.
 
 > [!IMPORTANT]
-> The nullable context is enabled by default in all C# project templates starting with .NET 6.0 and greater.
+> The nullable context is enabled in the _.csproj_ file by default in all C# project templates starting with .NET 6.0 and greater.
 
-```Output
-System.NullReferenceException: Object reference not set to an instance of an object.
-   at <Program>$.<Main>$(String[] args)
+When the nullable context is enabled, you'll get new warnings. Consider the previous `FooBar` example&mdash;it has two warnings when analyzed in a nullable context:
+
+1. The `FooBar fooBar = null;` line has a warning on the `null` assignment. C# Warning CS8600: Converting null literal or possible null value to non-nullable type.
+
+    :::image type="content" source="../media/null-warning-cs8600.png" lightbox="../media/null-warning-cs8600.png" alt-text="C# Warning CS8600: Converting null literal or possible null value to non-nullable type.":::
+
+1. The `_ = fooBar.ToString();` line also has a warning. This time the compiler is concerned that `fooBar` may be null. C# Warning CS8602: Dereference of a possibly null reference.
+
+    :::image type="content" source="../media/null-warning-cs8602.png" lightbox="../media/null-warning-cs8602.png" alt-text="C# Warning CS8602: Dereference of a possibly null reference.":::
+
+### Enforcing behavior
+
+You now have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continuing examining the `FooBar` code and scrutinize the declaration and assignment:
+
+```csharp
+// Define as nullable
+FooBar? fooBar = null;
 ```
+
+This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for the `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
+
+```csharp
+// Define as non-nullable, but tell compiler to ignore warning
+// Same as FooBar fooBar = default!;
+FooBar fooBar = null!;
+```
+
+This is the null-forgiving (`!`) operator and it tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _probably actually know what you're doing_.
+
+> [!TIP]
+> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_
+
+In the next unit, you'll learn more about expressing intent with nullable reference types.
