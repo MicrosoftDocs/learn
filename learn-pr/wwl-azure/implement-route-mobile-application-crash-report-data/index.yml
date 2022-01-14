@@ -3,7 +3,7 @@ uid: learn.wwl.implement-route-for-mobile-application-crash-report-data
 metadata:
   title: Implement route for mobile application crash report data
   description: "Implement route for mobile application crash report data"
-  ms.date: 11/30/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Create a bug tracker
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/mobile-application-crash-report.svg
 levels:
 - advanced
 roles:
