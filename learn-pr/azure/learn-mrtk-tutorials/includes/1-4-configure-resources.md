@@ -42,7 +42,7 @@ MRTK provides additional default profiles, which cover most platforms and scenar
 
 ## How are configuration profiles organized
 
-there's essentially an entire tree of connected profiles that make up the configuration information for how to start the MRTK subsystems and features. The top-level MRTK Configuration Profile contains sub-profile data for each of the primary core systems. Each primary core system is designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles can contain references to other profile objects one level below them.
+There's essentially an entire tree of connected profiles that make up the configuration information for how to start the MRTK subsystems and features. The top-level MRTK Configuration Profile contains sub-profile data for each of the primary core systems. Each primary core system is designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles can contain references to other profile objects one level below them.
 
 ## How to customize and configure the default MRTK profiles
 
