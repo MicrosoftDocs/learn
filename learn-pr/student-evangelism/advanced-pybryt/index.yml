@@ -29,10 +29,10 @@ products:
 prerequisites: None 
 units:
   - learn.advanced-pybryt.1-introduction
-  - learn.advanced-pybryt.2-high-level
-  - learn.advanced-pybryt.3-annotations
-  - learn.advanced-pybryt.4-reference-implementations
-  - learn.advanced-pybryt.5-reference-exercise
+  - learn.advanced-pybryt.2-annotation-options
+  - learn.advanced-pybryt.3-relational-annotations
+  - learn.advanced-pybryt.4-complexity-annotations
+  - learn.advanced-pybryt.5-grading-pipelines
   - learn.advanced-pybryt.6-summary
 badge:
   uid: learn.advanced-pybryt.badge
