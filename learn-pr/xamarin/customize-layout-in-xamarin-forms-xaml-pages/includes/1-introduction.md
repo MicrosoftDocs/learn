@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Xamarin.Forms layout panels help you create consistent user interfaces for your application across a wide range of devices.
 
 Suppose you're building a tip calculator application that you plan to deploy on many devices. Each device could have a different screen size and pixel density. Your goal is to make the application look as similar as possible on all devices. You'd like to avoid manual calculation of view size and position for each screen size. Xamarin.Forms include a layout management system that does these calculations for you. You put your views inside layout panels that automatically manage the size and position of their child views. The panels make it much easier to create consistent user interfaces across different devices.

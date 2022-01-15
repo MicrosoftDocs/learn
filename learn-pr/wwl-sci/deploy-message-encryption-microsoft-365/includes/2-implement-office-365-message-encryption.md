@@ -68,5 +68,5 @@ The following image provides an overview of the customizable areas of a branding
 
 ![Picture that shows which areas of the Office 365 OME portal can be edited.](../media/branding-template.png)
 
-Learn more about the PowerShell commands to modify these settings: [Modify and OME branding template](/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages)
+Learn more about the PowerShell commands to modify these settings: [Modify and OME branding template](/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages?view=o365-worldwide?azure-portal=true)
 

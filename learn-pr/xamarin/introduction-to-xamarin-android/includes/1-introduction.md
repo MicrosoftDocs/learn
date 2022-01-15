@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 It's a mobile-first, cloud-first world, and users expect devices of all types to be connected and online and to generate data. They want updates on everything from their taxi or flight arrival to the temperature of their home while they're on vacation. 
 
 Users need their data to be relevant, detailed, and readily available across multiple devices. And work data isn't the only focus. We see smart devices in all aspects of our lives. These devices, and more relevantly, the applications running on them, need to work everywhere: across devices, across network types, and across country borders.
