@@ -1,16 +1,16 @@
 In this exercise, you'll add if/else test conditions to the car factory program to assign values based on expression results.
 
-We'll revise the `car_quality` function to identify to the caller whether the ordered car is "New" or "Used." We'll add a conditional expression to check the mileage and update how the tuple value is assigned. In the `car_factory` function, we'll use several if/else expressions to control program flow and output. 
+We'll revise the `car_quality` function to identify to the caller whether the ordered car is "New" or "Used." We'll add a conditional expression to check the mileage and update how the tuple value is assigned. In the `car_factory` function, we'll use several if/else expressions to control program flow and output.
 
 Your challenge is to finish the sample code so it compiles and runs.
 
 To work on the sample code for this exercise, you have two options:
-- Copy the code and edit it in your local development environment. 
+
+- Copy the code and edit it in your local development environment.
 - Open the code in a prepared Rust Playground.
 
 > [!Note]
 > In the sample code, look for the `todo!` macro. This macro indicates code that needs to be completed or updated.
-
 
 ## Get the sample code
 
@@ -84,26 +84,25 @@ Start by opening the existing sample code in an editor.
         car_factory(String::from("White"), Transmission::Automatic, true, 3000);
     }
     ```
- 
+
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
     The code doesn't display any output yet, but it needs to compile without any errors. You can ignore *warning* messages from the compiler. The warnings are because you declared enum and struct definitions, but haven't used them yet.
-
 
 ## Update the car_quality function
 
 The `car_quality` function takes car mileage as an input argument. In the previous exercise, we created a tuple named `quality` for a "New" car with zero miles, and returned the tuple to the calling function.
 
-We'll update the function to use a conditional expression to check the mileage and set the tuple based on the condition. Rather than storing the tuple in a declared variable, we'll simply send the correct tuple back to the calling function.
+We'll update the function to use a conditional expression to check the mileage and set the tuple based on the condition. Rather than storing the tuple in a declared variable, we'll send the correct tuple back to the calling function.
 
 1. Add an `if/else` conditional expression to check if the ordered car can have accumulated miles. Return the correct tuple value based on the result of the condition.
 
     ```rust
         todo!("Add conditional expression: If car has accumulated miles, return tuple for Used car with current mileage");
-    ``` 
+    ```
 
     > [!Tip]
-    > When the car has accumulated miles, we can return the tuple value early to the calling function. 
+    > When the car has accumulated miles, we can return the tuple value early to the calling function.
 
 1. When the car order is for a "New" car, the returned tuple value has mileage set to 0.
 
@@ -112,7 +111,6 @@ We'll update the function to use a conditional expression to check the mileage a
     ```
 
 1. Build the program. Make sure the code compiles before you continue to the next section.
-
 
 ## Update the car_factory function
 
@@ -135,22 +133,19 @@ Now we'll update the `car_factory` function. Use an if/else conditional expressi
 
 1. Build your program. Make sure the code compiles without any errors. You can ignore any warning messages.
 
-
 ## Run the program
 
 When the program is complete, you should see output similar to this example:
-    
+
 ```output
 Build a new car: Manual, Orange, Hard top, 0 miles
 Prepare a used car: SemiAuto, Red, Convertible, 565 miles
 Prepare a used car: Automatic, White, Hard top, 3000 miles
 ```
 
-
 ## Solution
 
 You can compare your program output to the solution for this exercise in this [Rust Playground][RustPlay-answer].
-
 
 <!-- Links -->
 
