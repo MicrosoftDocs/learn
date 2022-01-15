@@ -4,7 +4,6 @@ In the exercise, you wrote a group of functions to work together to build cars. 
 
 In the next module in this Learning Path, we explore how to iterate through data by using loops.
 
-
 ## Learn more
 
 Visit the following links to learn more about some of the items we explored in this module:
@@ -40,7 +39,6 @@ Visit the following links to learn more about some of the items we explored in t
 - [Use if/else conditions][Rust-if-else]
 - [Add control flow with loops][Rust-loops]
 - [Show output with the println! macro][Rust-println]
-
 
 <!-- Links -->
 
