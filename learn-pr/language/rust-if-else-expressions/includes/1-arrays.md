@@ -2,7 +2,6 @@ Rust has several compound data types that can be used to group multiple values i
 
 An array is a collection of objects of the same type that are stored sequentially in memory. The length or *size* of an array equals the number of elements in the array. The size of an array can be specified in the code, or computed by the compiler.
 
-
 ## Define an array
 
 An array can be defined in two ways:
@@ -34,16 +33,15 @@ The signature reveals two important characteristics about arrays:
 
 Only one thing about an array can change over time: the values for the elements in the array. The data type remains constant and the number of elements (length) remains constant. Only the values can change.
 
-
 ### Index into an array
 
-The elements in an array are implicitly numbered starting from 0. We use indexing to access the elements in an array with the expression `<array>[<index>]`. `my_array[0]` accesses the element at index 0 in the `my_array` variable. The expression returns the value of the array element at that index location.
+The elements in an array are implicitly numbered starting from 0. We use indexing to access the elements in an array with the expression `<array>[<index>]`. For example, `my_array[0]` accesses the element at index 0 in the `my_array` variable. The expression returns the value of the array element at that index location.
 
 Let's look at an array named `days` with seven elements:
 
 ```rust
 // Set first day of week
-let first  = days[0];
+let first = days[0];
 
 // Set second day of week
 let second = days[1];
@@ -53,7 +51,6 @@ To access the elements in the `days` array, we use an index that ranges from 0 t
 
 To assign a value to the `first` variable, we use the expression `days[0]` to get the value of the first element in the `days` array, which is `Sunday`. For the `second` variable, we use a similar expression `days[1]` to get the value of the second element in the `days` array, which is `Monday`.
 
-
 ### Watch for out-of-bounds index values
 
 If we try to access an element in our array with an index that's not in the allowed range, the compiler returns an error. An expression like `days[7]` is out of bounds because our array has only seven elements. The valid index range is 0 - 6. Any index that's equal to or greater than the array length is out of bounds. Any index that's a negative number is also out of bounds.
@@ -62,7 +59,7 @@ The following code shows the out-of-bounds compiler error:
 
 ```rust
 // Set seventh day of week, use wrong index - should be 6
-let seventh  = days[7];
+let seventh = days[7];
 ```
 
 Error output:
@@ -71,7 +68,7 @@ Error output:
     error: this operation will panic at runtime
      --> src/main.rs:19:42
    |
-19 |     let seventh  = days[7];
+19 |     let seventh = days[7];
    |                    ^^^^^^^ index out of bounds: the length is 7 but the index is 7
    |
 ```
@@ -80,11 +77,9 @@ Because the array length is known at compile time, Rust makes it impossible to b
 
 You can interact with this code and explore arrays in this [Rust Playground][RustPlay-array].
 
-
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
-
 
 <!-- Links -->
 [RustPlay-array]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=31b8dba4c5391da0abcd570b38ca8bf2?azure-portal=true

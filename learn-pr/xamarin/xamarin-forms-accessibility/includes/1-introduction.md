@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 By using Xamarin.Forms automation properties, app developers can improve the accessibility of their apps in several ways. Automation properties provide access to the accessibility features of underlying native platforms. These properties give developers better control over screen readers and navigation assistance tools, which are crucial to support in building accessible mobile apps.
 
 ## Example scenario

@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Xamarin.Forms `ListView` controls are used to display a row for every element of a collection. For some apps, a simple row per element might be enough. For other apps, you might want to customize of your `ListView` controls. You might want to use rows with custom user interfaces (UI), groupings of similar elements, or headers and footers.
 
 Imagine that you work a manufacturer of smart home hardware. Your job is to craft an app that users can install on their phones to monitor and control things like thermostats, lights, garage door openers, and smoke detectors. The main screen of your app displays a list of all the user's smart home appliances. Because these device types are diverse, you want their rows in the `ListView` to be optimized for each type. And because users might have many devices, you want your `ListView` to support grouping rows for easier browsing.
