@@ -1,4 +1,4 @@
-So far, you've learned how to install and configure your Visual Studio, then enable the developer mode (on HoloLens for example?). In this module, you'll have a basic understanding of the components that are included in the **StereoKit Ink Application**. StereoKit Ink is a demo application used to help you understand the core components provided by StereoKit.
+So far, you've learned how to install and configure your Visual Studio, then enable the developer mode for both desktop and HoloLens 2. In this module, you'll have a basic understanding of the components that are included in the **StereoKit Ink Application**. StereoKit Ink is a demo application used to help you understand the core components provided by StereoKit.
 
 This StereoKit demo project aims to introduce people to the fundamentals of how to draw and interact with the **Mixed Reality** content. You'll learn how to make:
 
@@ -11,7 +11,7 @@ You'll also discover how simple it is to draw models, lines and interact with th
 
 :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the StereoKit Ink application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
 
-It's a great example of how to do things and a great way to start for anyone who wants to make an identical feature for themselves. It is just not intended to be a comprehensive or utterly functional product.
+It's a great example of how to do things and a great way to start for anyone who wants to make an identical feature for themselves. These simple features can help you build a fully functional product at ease.
 
 ## Pre-requisites
 

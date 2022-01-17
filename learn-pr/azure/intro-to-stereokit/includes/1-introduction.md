@@ -2,6 +2,8 @@ StereoKit is an open-source Mixed Reality framework, that develops HoloLens and 
 
 Imagine a scenario wherein you are asked to build a Mixed Reality application with a fast user experience, stylish visuals, and a realistic environment. But you are aware about all that power to create cutting-edge visuals providing you with many opportunities to ruin your application performance. You may easily use StereoKit's features in such situations. StereoKit takes care of this performance problem, focusing on a smaller portion of the rendering process. It employs an instanced rendering pipeline with a reduced lighting model that prioritizes performance above a lofty goal.
 
+:::image type="content" source="../media/stereokit-hero-image.gif" alt-text="Gif of 3D models in StereoKit" lightbox="../media/stereokit-hero-image.gif":::
+
 StereoKit is a code-first library aimed initially at engineers and others working on similar platforms. StereoKit concerns a large number of non-game C# developers. Visual Studio Developers can continue working as they have in the past, using NuGet's extended functionality.
 
 In this module, you'll understand some of the features of StereoKit. Also we will learn how easily to use it in your development process. You'll also learn about a demo application called StereoKit Ink to better understand the implementations of StereoKit.
