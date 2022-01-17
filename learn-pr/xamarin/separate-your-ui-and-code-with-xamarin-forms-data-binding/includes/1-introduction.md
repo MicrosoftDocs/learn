@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Xamarin.Forms data binding lets you declare relationships between your data and your user interface (UI) controls. They automatically stay in sync when either element changes. Data bindings can make your code faster to read, easier to maintain, and more testable.
 
 Suppose you're writing an app that teaches children about countries and their flags. The user can select a region, view an interactive map of that area, and take notes about what they learned. Currently, you're using code to keep the UI and the data synchronized. It takes many lines of code, and it's becoming hard to handle. You want to replace your code with data bindings.
