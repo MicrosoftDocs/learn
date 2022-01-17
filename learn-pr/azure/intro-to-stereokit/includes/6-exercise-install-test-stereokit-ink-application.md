@@ -21,7 +21,7 @@ Start Debugging automatically starts the application on your device with the Vis
   
    :::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows selectings of Start Debugging." lightbox="../media/start-debug.png":::
 
-3. In the menu bar, click on the **Build** > **Deploy Solution** to deploy to your device without having the app start automatically.
+3. In the menu bar, click on the **Build** > **Deploy Solution** to deploy to your device without starting the app automatically.
   
    :::image type="content" source="../media/select-deploy-solution.png" alt-text="Screenshot shows Selecting of Deploy Solution." lightbox="../media/select-deploy-solution.png":::
 
@@ -49,7 +49,7 @@ Start Debugging automatically starts the application on your device with the Vis
 
 ## Test StereoKit Ink application
 
-Once the solution is deployed, you can see the StereoKit Ink application window pop-up on your target device, such as HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
+Once the solution is deployed, you can see the StereoKit Ink application window pop-up on your target device, like HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
 
 You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors. You can customize these colors by altering the Hue, Saturation, and Value properties. Modify the size of brushstrokes using the slider. The handle helps you to move around your painting.
 
