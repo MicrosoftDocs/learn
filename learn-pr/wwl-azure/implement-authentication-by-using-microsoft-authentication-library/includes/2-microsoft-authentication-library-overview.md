@@ -41,11 +41,9 @@ Integrated Windows | Windows computers silently acquire an access token when the
 Interactive | Mobile and desktops applications call Microsoft Graph in the name of a user 
 Username/password | The application signs in a user by using their username and password 
 
-### Single-page, public client, and confidential client applications
+### Public client, and confidential client applications
 
-Security tokens can be acquired by multiple types of applications. These applications tend to be separated into the following three categories. Each is used with different libraries and objects.
-
-* **Single-page applications**: Also known as SPAs, these are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. The application often uses a framework like Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports single-page applications.
+Security tokens can be acquired by multiple types of applications. These applications tend to be separated into the following two categories. Each is used with different libraries and objects.
 
 * **Public client applications**: Are apps that run on devices or desktop computers or in a web browser. They're not trusted to safely keep application secrets, so they only access web APIs on behalf of the user. (They support only public client flows.) Public clients can't hold configuration-time secrets, so they don't have client secrets.
 
