@@ -212,4 +212,4 @@ The **Diagnostic Toolkit** drop-down list provides to access to the following ne
  -  Identify next hops - opens the **Network Watcher Next hop** network diagnostic tool to obtain the next hop type and IP address of a packet from a specific VM and NIC. Knowing the next hop can help you establish if traffic is being directed to the expected destination, or whether the traffic is being sent nowhere.
  -  Diagnose traffic filtering issues - opens the **Network Watcher IP flow verify** network diagnostic tool to verify if a packet is allowed or denied, to or from a virtual machine, based on 5-tuple information. The security group decision and the name of the rule that denied the packet is returned.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-diagnostic-toolkit-0e306787.png" alt-text="Azure Monitor Network Insights - Diagnostic toolkit highlighted":::
+:::image type="content" source="../media/network-insights-diagnostic-toolkit-0e306787.png" alt-text="Azure Monitor Network Insights - Diagnostic toolkit highlighted":::
