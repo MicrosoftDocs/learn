@@ -37,7 +37,7 @@ This type of splitting becomes handy when you need a loop to process or extract 
 
 ## Search for a string
 
-Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume that you have two sentences that discuss temperatures on various planets and moons, but we're interested only in temperatures that are related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
+Aside from using a loop, some string methods can look for content before processing, without the need for a loop. Let's assume that you have two sentences that discuss temperatures on various planets and moons, but you're interested only in temperatures that are related to our Moon. That is, if the sentences aren't talking about the Moon, they shouldn't be processed to extract information.
 
 The simplest way to discover whether a given word, character, or group of characters exists in a string is _without_ using a method:
 
