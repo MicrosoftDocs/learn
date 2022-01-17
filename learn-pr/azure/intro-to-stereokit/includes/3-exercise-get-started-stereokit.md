@@ -1,4 +1,4 @@
-Now that we know what StereoKit is and how to utilize it to overcome complex game engine structures let's move on to the next step. Let's start installing all of the tools we'll need to work with StereoKit. In this chapter, you will learn how to install StereoKit with its template and enable Developer Mode on your device, PC, and HoloLens 2.
+Now that we know what StereoKit is and how to utilize it to overcome complex game engine structures, let's move on to the next step. Let's start installing all the tools we'll need to work with StereoKit. In this chapter, you will learn how to install StereoKit with its template and enable Developer Mode on your device, PC, and HoloLens 2.
 
 Here is a quick list of what is required to start developing with StereoKit:
 

@@ -51,6 +51,6 @@ Start Debugging automatically starts the application on your device with the Vis
 
 Once the solution is deployed, you can see the StereoKit Ink application window pop-up on your target device, such as HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
 
-You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors and can customize these colors by altering the Hue, Saturation, and Value properties. You can modify the size of brushstrokes using the slider. You may move around your painting using the handle.
+You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors. You can customize these colors by altering the Hue, Saturation, and Value properties. Modify the size of brushstrokes using the slider. The handle helps you to move around your painting.
 
 You can use UI buttons in the painting menu to make changes to the drawing if necessary. Undo option removes the most recent to the painting, while the Redo option removes the most recent undo from the stack. Save the drawing in the system's preferred location by clicking the save button. The Load button lets you select any .skp file, while the clear button clears the painting stroke. Finally, the Quit button allows you to close the StereoKit Ink application window.

@@ -1,6 +1,13 @@
-So far, you've learned how to install, configure your Visual Studio and enable the developer mode. In this module, you'll have a basic understanding of the components that are included in **StereoKit Ink Application**. StereoKit Ink is a demo application perfect for understanding the core components provided by StereoKit.
+So far, you've learned how to install and configure your Visual Studio, then enable the developer mode (on HoloLens for example?). In this module, you'll have a basic understanding of the components that are included in the **StereoKit Ink Application**. StereoKit Ink is a demo application used to help you understand the core components provided by StereoKit.
 
-This StereoKit demo project aims to introduce people to the fundamentals of how to draw and interact with the **Mixed Reality** content. You'll learn how to make radial hand menus, easy window menus with automatic layout, object-based menus with more specific designs, and file pickers, among other things. You'll also discover how simple it is to draw models, lines and interact with the game with only your fingers.
+This StereoKit demo project aims to introduce people to the fundamentals of how to draw and interact with the **Mixed Reality** content. You'll learn how to make:
+
+* radial hand menus
+* easy window menus with automatic layout
+* object-based menus with more specific designs
+* file pickers etc.
+
+You'll also discover how simple it is to draw models, lines and interact with the game with only your fingers.
 
 :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the StereoKit Ink application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
 
@@ -8,11 +15,11 @@ It's a great example of how to do things and a great way to start for anyone who
 
 ## Pre-requisites
 
-This project uses **StereoKit** to generate and drive this as a Mixed Reality application, allowing us to run it on the HoloLens 2 and VR headsets.
+This project uses **StereoKit** to generate and build a Mixed Reality application, that runs on HoloLens 2 and VR headsets.
 
 ## Project layout
 
-A two-project arrangement is used in this solution: one is **.Net Core** and the other is **UWP**. Different projects support different features and goals, and you can frequently swap between them depending on the current project.
+Different projects support different features and goals, and you can frequently swap between them depending on the current project. There're two project arrangements used in this solution: **.Net Core** and **UWP**.
 
 * Features and targets supported in **.Net Core Project** include:
   * WMR VR Desktop
