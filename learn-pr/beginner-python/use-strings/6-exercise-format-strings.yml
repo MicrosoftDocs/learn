@@ -3,7 +3,7 @@ uid: learn.beginner-python.use-strings.exercise-format-strings
 title: Exercise - Format strings
 metadata:
   title: Exercise - Format strings
-  description: In this exercise, you'll use variables defined in code to replace text. You also will manipulate the text to conform to specific guidelines.
+  description: In this exercise, you'll use variables that are defined in code to replace text. You'll also manipulate the text to conform to specific guidelines.
   ms.date: 12/02/2021
   author: alfredodeza
   ms.author: chnoring
