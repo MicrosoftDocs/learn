@@ -1,8 +1,8 @@
 Azure Event Hubs supports both Azure Active Directory and shared access signatures (SAS) to handle both authentication and authorization. Azure provides the following Azure built-in roles for authorizing access to Event Hubs data using Azure Active Directory and OAuth:
 
-* [Azure Event Hubs Data Owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-owner): Use this role to give *complete access* to Event Hubs resources.
-* [Azure Event Hubs Data Sender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-sender): Use this role to give *send access* to Event Hubs resources.
-* [Azure Event Hubs Data Receiver](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-receiver): Use this role to give *receiving access* to Event Hubs resources.
+* [Azure Event Hubs Data Owner](/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-owner): Use this role to give *complete access* to Event Hubs resources.
+* [Azure Event Hubs Data Sender](/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-sender): Use this role to give *send access* to Event Hubs resources.
+* [Azure Event Hubs Data Receiver](/azure/role-based-access-control/built-in-roles#azure-event-hubs-data-receiver): Use this role to give *receiving access* to Event Hubs resources.
 
 ## Authorize access with managed identities
 
