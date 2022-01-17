@@ -1,4 +1,4 @@
-From the previous chapter, you have a basic understanding of the StereoKit Ink application. In this module, we will understand the three main programs; used to build this application. The code strives to be very legible and easy to understand.
+ In the previous chapter, we have understood the StereoKit Ink application. In this module, we will understand the three main programs; used to build this application. The code strives to be very legible and easy to understand.
 
 ## Program.cs script
 
@@ -17,7 +17,7 @@ The application logic, the hand menu, and the application menu are all contained
     Environment.Exit(1);
     ```
 
-* **Radial hand menu**: Radial hand menus are an easy way to store actions out of the way. In addition, these menus are easily accessible to the user. Selecting any option from the menu can trigger actions or even open a series of sub-options for the users to choose.
+* **Radial hand menu**: Radial hand menus are an easy way to store actions out of the way. Additionally, these menus are easily accessible to the user. Selecting any option from the menu can trigger actions or even open a series of sub-options for the users to choose.
 
     It's actuated by a grip motion and is ideal for quick, gesture-like menu item activation. It can also be combined with several HandRadialLayers to create sub-menus. These menus are paired up with the **Steppers** classes. Once added to the StereoKit's stepper list, they will have their **Step** method called each frame. It is a great way to add objects that need to update each frame.
 
@@ -85,9 +85,9 @@ The application logic, the hand menu, and the application menu are all contained
 
 ## PaletteMenu.cs script
 
-It is a menu that allows you to change the painting options. It's primarily made up of pre-built UI pieces, also showing how to make your own with StereoKit's layout and interaction capabilities.
+It is a menu allowing you to change the painting options. It's primarily made up of pre-built UI pieces, showing how to make your own with StereoKit's layout and interaction capabilities.
 
-* **Loading models**: Both of these models are used in the user interface! The first is a bottle that will serve as decoration and context while also displaying the active color, and the second is a "splash of ink" that will be turned into a pressable button that will allow users to select colors.
+* **Loading models**: Both of these models are used in the user interface! The first is a bottle serving as decoration and context while also displaying the active color, and the second is a "splash of ink" that will be turned into a pressable button that will allow users to select colors.
 
     ```c#
      Model _model       = Model.FromFile("InkBottle.glb");
@@ -112,7 +112,7 @@ It is a menu that allows you to change the painting options. It's primarily made
     UI.Model(_model, V.XY(0, UI.LineHeight*2));
     ```
 
-* **Color swatches**: It Shows a list of color swatches that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
+* **Color swatches**: It Shows a color swatches list  that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
@@ -132,9 +132,9 @@ It is a menu that allows you to change the painting options. It's primarily made
   UI.Space(UI.LineHeight*0.5f);
     ```
 
-* **Sliders**: A slider will move in increments between two values. Therefore, the function requires a reference to a float variable where the slider's state is stored. It allows you to handle the state independently, and it's perfectly acceptable to modify the slider state without affecting the UI element.
+* **Sliders**: A slider will move in increments between two values. Therefore, the function requires a reference to a float variable where the slider's state is stored. Allows you to handle the state independently and perfectly acceptable to modify the slider state without affecting the UI element.
 
-    By themselves, swatches are never enough. So here are some sliders that let the user manually HSV their color. We'll start with a fixed-size label and then add a fixed-size slider to the same line. Fixing the sizes here makes it easier for them to align in columns.
+    By themselves, swatches are never enough. So here are some sliders that let the user manually HSV their color. We'll start with a fixed-size label adding a fixed-size slider to the same line. Fixing the sizes here makes it easier for them to align in columns.
 
     :::image type="content" source="../media/slider.png" alt-text="Screenshot of slider in ink tools window.” " lightbox="../media/slider.png":::
 
@@ -157,7 +157,7 @@ It is a menu that allows you to change the painting options. It's primarily made
   UI.HSeparator();
   ```
 
-* **Size swatches**: The users can also customize the sizes of brush strokes. To do so, they are provided with size swatches. These swatches are comparable to color swatches, except they have more control over the swatch size.
+* **Size swatches**: The users can also customize the sizes of brush strokes. To do so, they are provided with size swatches. These swatches are comparable to color swatches, except they control more over the swatch size.
 
     Users can have a preview of the brush strokes before committing to it. We'll set aside a large box to handle the brush stroke's maximum size and preview the stroke with an unlit cube scaled to the brush's size.
 
@@ -203,7 +203,7 @@ It is a menu that allows you to change the painting options. It's primarily made
 
 ## Painting.cs script
 
-This class captures the entire concept of finger painting! It takes in hand input and turns it into three-dimensional lines. It's also in charge of loading and saving painting files. StereoKit's Hierarchy structure can be found here as well.
+This class captures the entire concept of finger painting! It takes in hand input and turns it into three-dimensional lines. Also in charge of loading and saving painting files. StereoKit's Hierarchy structure can be found here as well.
 
 * **Create a child of handle**: We'll turn the entire painting into a child of a handle so that we can move it around while we work on it! Handles and Windows push a transform onto the Hierarchy stack, making all subsequent locations relative to it.
 
@@ -221,7 +221,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
   ```
 
-* **Undo stack**: A stack is a collection of objects ordered from last in to first out. When you need last-in, first-out access to items, this is the method to utilize. For the **undo** function, you push the last stroke of the painting onto the stack and remove it from the painting. However, you pop the recent undo off the stack and add it to the painting for the **redo** function.
+* **Undo stack**: A stack is a collection of objects ordered from last in to first out. When you need last-in, first-out access to items, use this method. For the **undo** function, you push the last stroke of the painting onto the stack and remove it from the painting. However, you pop the recent undo off the stack and add it to the painting for the **redo** function.
 
     ```c#
     public void Undo()
@@ -239,7 +239,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
    ```
 
-* **Translate the fingertip coordinates into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, and smooth it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
+* **Translate the fingertip coordinates into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, smoothing it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it. Because we're inside an Affordance that uses the Hierarchy stack.
 
   :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
@@ -273,7 +273,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
 
     We will begin with calculating the distance between the current and the previous point and the pace at which the hand moves. Later, make a point at the current location by utilizing speed as the stroke thickness.
 
-    We'll add a new point if we're more than a centimeter away from our previous point! This is straightforward, but it works well enough. A higher-quality implementation might include an error/change function that considers angle change. Otherwise, to avoid 'popping' while adding a new point, the last point in the stroke should always be at the current fingertip location.
+    We'll add a new point if we're more than a centimeter away from our previous point! It is easy, but it works well enough. A higher-quality implementation might include an error/change function that considers angle change. Otherwise, to avoid 'popping' while adding a new point, the last point in the stroke should always be at the current fingertip location.
 
     ```c#
     void UpdateStroke(Vec3 at, Color32 color, float thickness)
@@ -291,7 +291,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
    }
    ```
 
-* **Language Integrated Query (LINQ)**: The query expression is the most evident "language-integrated" aspect of LINQ for a developer who writes queries. Declarative query syntax is used to write query expressions. You may perform filtering, ordering, and grouping actions on data sources with a minimum of code by using query syntax.
+* **Language Integrated Query (LINQ)**: The query expression is the most evident "language-integrated" aspect of LINQ for a developer who writes queries. Declarative query syntax is used to write query expressions. You may perform filtering, ordering, and grouping actions on data sources with a minimum of code using query syntax.
 
     Linq is being used to parse a file! Linq is a functional programming language that, if learned, can be considerably useful. Linq is not a good choice for performance-critical areas, but it's fine for discrete occurrences.
 
