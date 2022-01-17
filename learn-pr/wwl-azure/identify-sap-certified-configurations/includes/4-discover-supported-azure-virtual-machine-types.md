@@ -844,6 +844,119 @@ For A- and D- series VMs, SAP database files can be stored on Standard Storage o
 :::row-end:::
 :::row:::
   :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2(d)s\_v5
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    3,405
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4(d)s\_v5
+
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    6,810
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8(d)s\_v5
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    13,621
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16(d)s\_v5
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    27,242
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32(d)s\_v5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    54,483
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D48(d)s\_v5
+  :::column-end:::
+  :::column:::
+    48 vCPU, 196 GiB
+  :::column-end:::
+  :::column:::
+    81,725
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64(d)s\_v5
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    108,967
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D96(d)s\_v5
+  :::column-end:::
+  :::column:::
+    96 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    163,450
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
     Edsv4-series
   :::column-end:::
   :::column:::
@@ -952,6 +1065,118 @@ For A- and D- series VMs, SAP database files can be stored on Standard Storage o
   :::column-end:::
   :::column:::
     100,550
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2(d)s\_v5
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    3,405
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4(d)s\_v5
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    6,810
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8(d)s\_v5
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    13,621
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16(d)s\_v5
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    27,242
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32(d)s\_v5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    54,483
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E48(d)s\_v5
+  :::column-end:::
+  :::column:::
+    48 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    81,725
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64(d)s\_v5
+  :::column-end:::
+  :::column:::
+    64 vCPU, 512 GiB
+  :::column-end:::
+  :::column:::
+    108,967
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E96(d)s\_v5
+  :::column-end:::
+  :::column:::
+    96 vCPU, 672 GiB
+  :::column-end:::
+  :::column:::
+    163,450
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -1420,8 +1645,10 @@ For A- and D- series VMs, SAP database files can be stored on Standard Storage o
 
  -  [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533) provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads. At the time of authoring this content, the listing was as reproduced above.
  -  For VMs planned for retirement information, see [Previous generations of virtual machine sizes](/azure/virtual-machines/sizes-previous-gen).
- -  **Dsv3-series**: CPU hyperthreading enabled on the hypervisor layer.
- -  **M-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019, SLES 12 SP4 and higher Red Hat Enterprise Linux 7.6 and higher Oracle Linux 7.3 and higher.
+ -  **Dsv3-series**, **Edsv4-series**: CPU hyperthreading enabled on the hypervisor layer.
+ -  **D(d)sv5-series**: Only usage of Azure Gen2 virtual machine format is supported. CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2012 R2 and higher, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. Base VHD minimum size supported for VMs without temp disk Standard\_Dsv5: 128GB.
+ -  **E(d)sv5-series**: Only usage of Azure Gen2 virtual machine format is supported. CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2012 R2 and higher, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. Base VHD minimum size supported for VMs without temp disk Standard\_Esv5: 128GB.<br>
+ -  **M-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.3 and higher.
  -  **Mv2-series**, **Msv2-series**, **Mdsv2-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. For Windows guest OS Registry Key described in [SAP Note \#2553235](https://launchpad.support.sap.com/#/notes/2553235) is required to be applied.
  -  **Msv2-series**: Base VHD minimum size supported is 128 GB.
  -  SAP performance is measured by relying on the SAP Application Performance Standard metric (SAPS). SAPS is a hardware-independent unit of measurement that describes the performance of a system configuration in the SAP environment. It is derived from the Sales and Distribution benchmark, where 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice. Another way to look at the performance rating is to consider that one SAPS is equal to 24 Sales and Distribution transactions per hour. In general SAPS are used to size CPU and memory of an SAP system.
