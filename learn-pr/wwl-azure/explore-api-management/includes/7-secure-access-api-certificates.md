@@ -4,7 +4,7 @@ Certificates can be used to provide Transport Layer Security (TLS) mutual authen
 
 With TLS client authentication, the API Management gateway can inspect the certificate contained within the client request and check for properties like:
 
-| Property | Reason |
+| Property | Description |
 |--|--|
 | **Certificate Authority (CA)** | Only allow certificates signed by a particular CA |
 | **Thumbprint** | Allow certificates containing a specified thumbprint |
