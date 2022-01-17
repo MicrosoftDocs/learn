@@ -1,11 +1,30 @@
 # [Web download](#tab/unity-package-web-ui)
 
-Follow the instructions in [installing a package from a local tarball file](https://docs.unity3d.com/Manual/upm-ui-tarball.html) to import
+Locate the Azure Object Anchors package for Unity (`com.microsoft.azure.object-anchors.runtime`) [here](https://aka.ms/aoa/unity-sdk/package). Select the version you want and download the package using the **Download** button.
+
+Next follow the instructions in [installing a package from a local tarball file](https://docs.unity3d.com/Manual/upm-ui-tarball.html) to import
 the Azure Object Anchors package you downloaded into the Unity project using the Unity Package Manager.
 
 # [NPM download](#tab/unity-package-npm)
 
-Follow the instructions in [installing a package from a local tarball file](https://docs.unity3d.com/Manual/upm-ui-tarball.html) to import
+This step requires that <a href="https://www.npmjs.com/get-npm" target="_blank">NPM</a> is installed and available.
+
+Run the following command replacing `<version_number>` with the version of Azure Object Anchors you want to download:
+
+```bash
+npm pack com.microsoft.azure.object-anchors.runtime@<version_number> --registry https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/
+```
+
+> [!NOTE]
+> To list the available versions of the Azure Object Anchors package, run the following:
+>
+> ```bash
+> npm view com.microsoft.azure.object-anchors.runtime --registry https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/ versions
+> ```
+
+The Azure Object Anchors package will be downloaded to the folder where you ran the command.
+
+Next follow the instructions in [installing a package from a local tarball file](https://docs.unity3d.com/Manual/upm-ui-tarball.html) to import
 the Azure Object Anchors package you downloaded into the Unity project using the Unity Package Manager.
 
 # [Mixed Reality Feature Tool (beta)](#tab/unity-package-mixed-reality-feature-tool)
