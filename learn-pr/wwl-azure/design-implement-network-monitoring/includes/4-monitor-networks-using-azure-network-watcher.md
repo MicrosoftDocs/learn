@@ -192,7 +192,7 @@ To create a monitor in **Connection Monitor** by using the **Azure portal**:
     - Action group: You can enter your email directly or you can create alerts via action groups. If you enter your email directly, an action group with the name NPM Email ActionGroup is created. The email ID is added to that action group. If you choose to use action groups, you need to select a previously created action group.
     - Alert rule name: This is the name of the connection monitor and is already filled in for you.
     - Enable rule upon creation: Select this check box to enable the alert rule based on the condition (default setting). Disable this check box if you want to create the rule without enabling it - perhaps for evaluation and testing purposes, or because you are just not ready to deploy it yet.
-    
+
     :::image type="content" source="../media/create-connection-monitor-6-0b171ed4.png" alt-text="Create Connection Monitor - Create Alerts tab":::
 
 
@@ -238,4 +238,4 @@ To view Traffic Analytics, search for **Network Watcher** in the portal search b
 
 The example screenshot below shows the Traffic Analytics dashboard.
 
-:::image type="content" source="../media/traffic-analytics-dashboard-6f25b7bb.png" alt-text="Network Watcher - Traffic Analytics dashboard":::
+:::image type="content" source="../media/traffic-analytics-dashboard-6f25b7bb.png" alt-text="Network Watcher - Traffic Analytics dashboard" lightbox="../media/traffic-analytics-dashboard-6f25b7bb.png":::

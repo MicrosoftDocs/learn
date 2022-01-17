@@ -246,7 +246,9 @@ In this section, you will create a test VM, and then test the load balancer.
 9.  Click the **Internet Explorer** icon in the task bar to open the web browser.
 10. Click **OK** on the **Set up Internet Explorer 11** dialog box.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
-12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/load-balancer-web-test-1-29359934.png" alt-text="Browser window showing Hello World response from VM1":::
+12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond. 
+
+    :::image type="content" source="../media/load-balancer-web-test-1-29359934.png" alt-text="Browser window showing Hello World response from VM1":::
     
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
 
@@ -292,7 +294,9 @@ In this section, you will create a test VM, and then test the load balancer.
     :::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view" lightbox="../media/network-insights-functional-dependency-view-2-e5d175bd.png":::
 
 9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
-10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
+10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. 
+
+    :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
 11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
@@ -301,16 +305,22 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Task 12: View detailed metrics
 
-1.  To view more comprehensive metrics for this network resource, click **View detailed metrics**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-1-22ee4f03.png" alt-text="Azure Monitor Network Insights - View detailed metrics button highlighted":::
+1.  To view more comprehensive metrics for this network resource, click **View detailed metrics**. 
+
+    :::image type="content" source="../media/network-insights-detailed-metrics-1-22ee4f03.png" alt-text="Azure Monitor Network Insights - View detailed metrics button highlighted":::
     
-2.  This opens a large full **Metrics** page in the Azure Network Insights platform. The first tab you land on is the **Overview** tab, which shows the availability status of the load balancer and overall Data Throughput and Frontend and Backend Availability for each of the Frontend IPs attached to your Load Balancer. These metrics indicate whether the Frontend IP is responsive and the compute instances in your Backend Pool are individually responsive to inbound connections. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-2-1447de22.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Overview tab":::
+2.  This opens a large full **Metrics** page in the Azure Network Insights platform. The first tab you land on is the **Overview** tab, which shows the availability status of the load balancer and overall Data Throughput and Frontend and Backend Availability for each of the Frontend IPs attached to your Load Balancer. These metrics indicate whether the Frontend IP is responsive and the compute instances in your Backend Pool are individually responsive to inbound connections. 
+
+    :::image type="content" source="../media/network-insights-detailed-metrics-2-1447de22.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Overview tab":::
     
 3.  Click the **Frontend & Backend Availability** tab and scroll down the page to see the Health Probe Status charts. If you see **values that are lower than 100** for these items, it indicates an outage of some kind on those resources. 
     
     :::image type="content" source="../media/network-insights-detailed-metrics-5-893ae89d.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Health probe status charts highlighted" lightbox="../media/network-insights-detailed-metrics-5-893ae89d.png":::
 
 4.  Click the **Data Throughput** tab and scroll down the page to see the other data throughput charts.
-5.  Hover over some of the data points in the charts, and you will see that the values change to show the exact value at that point in time. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/network-insights-detailed-metrics-3-9e9d0595.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab":::
+5.  Hover over some of the data points in the charts, and you will see that the values change to show the exact value at that point in time. 
+
+    :::image type="content" source="../media/network-insights-detailed-metrics-3-9e9d0595.png" alt-text="Azure Monitor Network Insights - Detailed metrics view - Data Throughput tab":::
     
 6.  Click the **Flow Distribution** tab and scroll down the page to see the charts under the **VM Flow Creation and Network Traffic** section.
 
@@ -329,7 +339,7 @@ In this section, you will create a test VM, and then test the load balancer.
 5.  Then select the name of your load balancer from the list.
 6.  The **Resource health** page will identify any major availability issues with your load balancer resource. If there are any events under the **Health History** section, you can expand the health event to see more detail about the event. You can even save the detail about the event as a PDF file for later review and for reporting.
 
-    [:::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page.":::](../media/resource-health-2-27a75d1f.png#lightbox)
+    :::image type="content" source="../media/resource-health-2-27a75d1f.png" alt-text="Heath history page." lightbox="../media/resource-health-2-27a75d1f.png":::
 
 ## Task 14: Configure diagnostic settings
 
@@ -360,5 +370,5 @@ In this section, you will create a test VM, and then test the load balancer.
     
     ```
 
-> [!NOTE]
-> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE]
+    > The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
