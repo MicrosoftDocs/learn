@@ -66,7 +66,7 @@ In this task, you'll use the Azure portal to enable app logging for the file sys
 
 1. Under **Application Logging (Blob)**, select **On**, and in the **Level** box dropdown list, select **Verbose**.
 
-1. Select **Storage Settings**. The **Storage accounts** pane appears. 
+1. Select the link under **Storage Containers**. The **Storage accounts** pane appears. 
 
     > [!NOTE]
     > If a notification **Storage not configured** appears, select that text, and complete the previous 3 steps.
