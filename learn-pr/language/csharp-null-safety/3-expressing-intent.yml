@@ -17,14 +17,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is the default value "
+    - content: "What is the `default` value of the `string` reference type?"
       choices:
-      - content: "SqlConnection"
+      - content: "`string.Empty`"
         isCorrect: false
-        explanation: "Incorrect. You aren't required to use SqlConnection in EF Core."
-      - content: " DbContext"
+        explanation: "Incorrect. The `default` value for all reference types is `null`."
+      - content: "`null`"
         isCorrect: true
-        explanation: "Correct! DbContext is the gateway to interacting with the database."
-      - content: "ConcurrentDictionary"
+        explanation: "Correct! The `default` value for all reference types is `null`."
+      - content: "\"\""
         isCorrect: false
-        explanation: "Incorrect. ConcurrentDictionary is a collection."
+        explanation: "Incorrect. The `default` value for all reference types is `null`."
