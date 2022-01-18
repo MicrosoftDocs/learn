@@ -6,7 +6,7 @@ Diagnostics is determining when an app has an issue and finding the cause of tha
 
 ## When is data collected?
 
-When you're using the App Center Diagnostics SDK and your app encounters an error that will cause the app the crash, the details are written to local storage before the app unloads. Since your app has encountered an unexpected error, the app is in a state that isn't reliable enough to send the data to App Center. However, when the app is launched by the user again, it will send the diagnostics data to App Center.
+When you're using the App Center Diagnostics SDK and your app encounters an error that will cause the app to crash, the details are written to local storage before the app unloads. Since your app has encountered an unexpected error, the app is in a state that isn't reliable enough to send the data to App Center. However, when the app is launched by the user again, it will send the diagnostics data to App Center.
 
 > [!NOTE]
 > You can configure your app so that users can opt out of the diagnostics data submission process via a privacy setting.
