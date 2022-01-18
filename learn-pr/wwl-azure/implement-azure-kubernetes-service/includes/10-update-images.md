@@ -25,7 +25,7 @@ RUN cmd /c echo hello world
 
 Into:
 
-```YML
+```yaml
 FROM microsoft/windowsservercore:10.0.14393.693
 RUN cmd /c echo hello world
 ```
