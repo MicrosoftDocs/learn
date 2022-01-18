@@ -4,13 +4,12 @@ title: Describe Azure Network Security groups
 metadata:
   title: Describe Azure Network Security groups
   description: "Describe Azure Network Security groups"
-  ms.date: 09/16/2021
+  ms.date: 01/18/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
