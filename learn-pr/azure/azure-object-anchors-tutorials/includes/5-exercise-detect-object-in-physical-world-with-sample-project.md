@@ -49,7 +49,7 @@ In the Assets folder go to **Assets** > **AzureObjectAnchors.SDK** > **Resources
 
 2) In the Build Universal Windows Platform window, choose a suitable location to store your build, and then click the Select Folder button to start the build process:
 
-    :::image type="content" source="../media/build-scene.png" alt-text="Screenshot of selecting required folder for build process." lightbox="../media/build-scene.png":::
+    :::image type="content" source="../media/build-location.png" alt-text="Screenshot of selecting required folder for build process." lightbox="../media/build-location.png":::
 
 3) Wait for Unity to finish the build process:
 
