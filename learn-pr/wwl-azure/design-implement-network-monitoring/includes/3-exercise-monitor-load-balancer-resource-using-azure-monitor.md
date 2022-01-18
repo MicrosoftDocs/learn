@@ -150,7 +150,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
     |      Floating IP       |       **Disabled**       |
 3.  Click **Add**.
 
-    :::image type="content" source="../media/create-loadbalancerrule-f1760138.png" alt-text="Show load balancing rule created in load balancer":::
+    :::image type="content" source="../media/create-load-balancer-rule-f1760138.png" alt-text="Show load balancing rule created in load balancer":::
 
 
 ## Task 6: Create backend servers
