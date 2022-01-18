@@ -25,6 +25,6 @@ quiz:
       - content: "`null`"
         isCorrect: true
         explanation: "Correct! The `default` value for all reference types is `null`."
-      - content: "\"\""
+      - content: "`\"\"`"
         isCorrect: false
         explanation: "Incorrect. The `default` value for all reference types is `null`."
