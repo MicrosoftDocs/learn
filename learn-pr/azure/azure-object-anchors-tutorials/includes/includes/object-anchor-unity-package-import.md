@@ -7,7 +7,7 @@ the Azure Object Anchors package you downloaded into the Unity project using the
 
 # [NPM download](#tab/unity-package-npm)
 
-This step requires that <a href="https://www.npmjs.com/get-npm" target="_blank">NPM</a> is installed and available.
+This step requires that [NPM](https://www.npmjs.com/get-npm?azure-portal=true) is installed and available.
 
 Run the following command replacing `<version_number>` with the version of Azure Object Anchors you want to download:
 
