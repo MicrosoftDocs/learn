@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/3-expressing-intent.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the default value "
+      choices:
+      - content: "SqlConnection"
+        isCorrect: false
+        explanation: "Incorrect. You aren't required to use SqlConnection in EF Core."
+      - content: " DbContext"
+        isCorrect: true
+        explanation: "Correct! DbContext is the gateway to interacting with the database."
+      - content: "ConcurrentDictionary"
+        isCorrect: false
+        explanation: "Incorrect. ConcurrentDictionary is a collection."
