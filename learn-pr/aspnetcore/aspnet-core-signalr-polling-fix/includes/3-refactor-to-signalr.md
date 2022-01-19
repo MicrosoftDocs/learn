@@ -31,7 +31,7 @@ The preceding interface defines a single method, which acts as an event that cli
 
 :::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Hubs/OrderStatusHub.cs":::
 
-The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder`, given an `order` instance, and the client's unique connection is added to a group where notifications will be sent. Likewise, a call to `StopTrackingOrder` has the connection leave the group and no longer receive notifications.
+The preceding hub implementation exposes two methods that are invokable from clients. A client calls `StartTrackingOrder` and is given an `order` instance, and the client's unique connection is added to a group where notifications will be sent. Likewise, a call to `StopTrackingOrder` has the connection leave the group and no longer receive notifications.
 
 ### SignalR server configuration
 
