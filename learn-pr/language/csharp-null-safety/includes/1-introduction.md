@@ -22,3 +22,7 @@ In this module, you will:
 - Visual Studio Code
 - .NET SDK 6.0 or greater
 - Git command-line client
+
+## Get started
+
+In the next unit, you'll learn about nullability and null safety in C#.

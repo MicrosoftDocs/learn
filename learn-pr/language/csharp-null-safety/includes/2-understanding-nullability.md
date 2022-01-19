@@ -1,4 +1,4 @@
-If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when an object is evaluated at runtime, but the object points to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (sir Tony Hoare) refers to `null` as the "billion dollar mistake".
+If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when an object is evaluated at runtime, but the object points to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (Sir Tony Hoare) refers to `null` as the "billion dollar mistake".
 
 In the following example, the `FooBar` object is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
 
@@ -150,26 +150,6 @@ When the nullable context is enabled, you'll get new warnings. Consider the prev
 
     :::image type="content" source="../media/null-warning-cs8602.png" lightbox="../media/null-warning-cs8602.png" alt-text="C# Warning CS8602: Dereference of a possibly null reference.":::
 
-### Enforcing behavior
+## Next unit
 
-You now have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continuing examining the `FooBar` code and scrutinize the declaration and assignment:
-
-```csharp
-// Define as nullable
-FooBar? fooBar = null;
-```
-
-This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for the `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
-
-```csharp
-// Define as non-nullable, but tell compiler to ignore warning
-// Same as FooBar fooBar = default!;
-FooBar fooBar = null!;
-```
-
-This is the null-forgiving (`!`) operator and it tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
-
-> [!TIP]
-> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_
-
-In the next unit, you'll learn more about expressing intent with nullable reference types.
+ In this unit, you learned to enable a nullable context in C# to help guard against `NullReferenceException`. In the next unit, you'll learn more about explicitly expressing your intent in a nullable context.
