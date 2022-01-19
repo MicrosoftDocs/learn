@@ -37,7 +37,7 @@ quiz:
       isCorrect: false
       explanation: "The CLI provides the same set of commands everywhere it is available."
 
-  - content: "Which parameter can you add to most CLI commands to get concise, formatted output?"
+  - content: "Which parameter value can you add to most CLI commands to get concise, formatted output?"
     choices:
     - content: "list"
       isCorrect: false
