@@ -1,4 +1,4 @@
-ASP.NET Core SignalR is an open-source library that simplifies adding real-time web functionality to apps. Real-time web functionality enables server-side code to push events to connected clients as they fire on the server. Clients can also send messages to the server, an action that demonstrates duplex communication.
+ASP.NET Core SignalR is an open-source library that simplifies adding real-time web functionality to apps. Real-time web functionality enables server-side code to push events to connected clients as they fire on the server. Clients can also send messages to the server, action that demonstrates duplex communication.
 
 ## Learning objectives
 
@@ -6,7 +6,7 @@ In this module, you'll learn how to replace existing functionality in a client a
 
 ## Blazing Pizza ordering app scenario
 
-Imagine you're part of a development team that's hired to update an existing website's live map feature. The live map is part of an ordering system that lets Blazing Pizza customers track the progress of their orders. You implement the current solution by using client-side polling for order status updates. This method is less than ideal, because it has the potential to flood the server with requests. Blazing Pizza has been getting reports of orders that fail to be processed, resulting in a loss of sales and potential repeat customers. The failures that are reported in the logs occur during the peak hours of the sales day and are correlated to customers' watching the live order map. Their clients are flooding the server with too many requests, and it fails. We'll use SignalR to address these concerns.
+Imagine you're part of a development team that's hired to update an existing website's live map feature. The live map is part of an ordering system that lets Blazing Pizza customers track the progress of their orders. You implement the current solution by using client-side polling for order status updates. This method is less than ideal, because it has the potential to flood the server with requests. Blazing Pizza has been getting reports of orders that fail to be processed, resulting in a loss of sales and potential repeat customers. The failures that are reported in the logs occur during the peak hours of the sales day and are correlated with customers' watching the live order map. Their clients are flooding the server with too many requests, and it fails. We'll use SignalR to address these concerns.
 
 ## What is the main goal?
 
