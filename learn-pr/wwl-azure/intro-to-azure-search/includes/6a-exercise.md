@@ -104,7 +104,7 @@ There are several ways to upload content to Azure. In this case, we will use a s
  
     ![The code editor.](../media/bash-portal-code-guide.png)
 
-3. In the **Files** pane on the left, expand **ai-900** and select **upload-content-to-storage.sh**. Edit the first line to add your resource group name. You can find your resource group name on the Overview page of your search service resource in the Azure portal.
+3. In the **Files** pane on the left, expand **ai-900** and select **upload-content-for-search.sh**. Edit the first line to add your resource group name. You can find your resource group name on the Overview page of your search service resource in the Azure portal.
 
     After pasting in your resource group name, the first line should look similar to this line:
 
@@ -113,7 +113,7 @@ There are several ways to upload content to Azure. In this case, we will use a s
     ```
     Make sure to save the document. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
-4. Copy the following commands and paste them into the Cloud Shell. Then press enter. The commands will go to the ai-900 folder, and use the script **upload-content-to-storage.sh** to create a storage account and container. It will also upload the JSON array of the video content to your storage blob. 
+4. Copy the following commands and paste them into the Cloud Shell. Then press enter. The commands will go to the ai-900 folder, and use the script **upload-content-for-search.sh** to create a storage account and container. It will also upload the JSON array of the video content to your storage blob. 
 
     ```bash
     cd ai-900
