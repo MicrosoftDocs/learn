@@ -16,7 +16,7 @@ App Center presents this data in the Analytics **Overview** page. You can also v
 
 ## Collect custom event data
 
-App Center Events are actions taken by the user. Tracking event allows you to learn how your users interact with your app. For example, you could track events that follow users' progress through the app from launch to completing a primary use case. You can then use this information to see where users are leaving that progression, which could potentially indicate a place to improve the usability of your app. You can also see what areas of your app are the most popular, allowing you to grow those areas or improve the presentation of that information in other parts of the app.
+App Center Events are actions taken by the user. Tracking events allows you to learn how your users interact with your app. For example, you could track events that follow users' progress through the app from launch to completing a primary use case. You can then use this information to see where users are leaving that progression, which could potentially indicate a place to improve the usability of your app. You can also see what areas of your app are the most popular, allowing you to grow those areas or improve the presentation of that information in other parts of the app.
 
 While tracking events, you can also attach properties to your events. For example, you might be tracking an event for when your user uploads a file. Attaching properties about the file type (image, text, etc.) would enable you to see the most popular file types. If you discover that your users are frequently uploading images, but your app currently doesn't offer a way to preview images, that might be a feature users would find useful in a future release.
 
