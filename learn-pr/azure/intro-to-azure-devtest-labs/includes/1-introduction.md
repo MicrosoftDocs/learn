@@ -3,11 +3,11 @@ Unfortunately, the overhead of onboarding developers into new systems is getting
 
 ## Example scenario
 
-Suppose you work for an e-commerce company. Your company uses systems-enabling orders that are placed and processed by using different technologies. Some of these systems are for offline processing and some are for real time. Your company wants to reduce the time and money it spends to onboard new developers. To do so, it intends to create virtual machines that are set up with systems already configured and installed. Your company is curious about Azure and wants to see what it can offer.  
+Suppose you work for an e-commerce company. Your company uses systems-enabling orders that are placed and processed by using different technologies. Some of these systems are for offline processing and some are for real time. Your company wants to reduce the time and money it spends to onboard new developers. To do so, it intends to create VMs that are set up with systems already configured and installed. Your company is curious about Azure and wants to see what it can offer.  
 
 ## Goals of this module
 
 By the end of this module, you can:
 
-- Evaluate whether Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
+- Evaluate whether Azure DevTest Labs is appropriate for setting up VM environments for your team.
 - Describe how the resource-creation features of DevTest Labs work to automate developer onboarding and the creation of deployment environments.

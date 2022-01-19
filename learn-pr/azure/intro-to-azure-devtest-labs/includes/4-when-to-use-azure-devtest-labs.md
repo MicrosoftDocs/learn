@@ -1,6 +1,6 @@
-There are many use cases for and advantages to be gained from a cloud solution for development testing and development virtual machines. 
+There are many advantages to be gained from a cloud solution for development testing and using development VMs.
 
-In your e-commerce company, you've decided to use Azure DevTest Labs to manage training environments to help you onboard new developers quickly. You also want to know whether DevTest Labs can help you manage your testing and staging environments.
+In your e-commerce company, you've decided to use Azure DevTest Labs to manage training environments to quickly onboard new developers. You also want to know whether DevTest Labs can help you manage your testing and staging environments.
 
 In this unit, you'll learn about common business problems that DevTest Labs can help to address.
 
@@ -10,7 +10,7 @@ In today's environments, developers might find that on-premises solutions take a
 
 - Compromised agility
 - Limited software licensing
-- Resource contention with virtual machines
+- Resource contention with VMs
 - Difficulty in setting up realistic scale tests
 - Procurement delays
 
@@ -27,7 +27,7 @@ You can help eliminate these problems by using the features in the following tab
 
 | Feature | Description |
 | ------- | ----------- |
-| **Self-service** | You control the number of virtual machines each user can have. You can also create policies to automatically close virtual machines, depending on your business agenda or other criteria. |
+| **Self-service** | You control the number of VMs each user can have. You can also create policies to automatically close VMs, depending on your business agenda or other criteria. |
 | **Ready to use** | Reusable templates supply everything your developers need to start developing and testing applications. They enable you to easily create an environment where your application's most up-to-date build is ready and you can start working immediately. |
 | **Fast provisioning** | Start within minutes of requesting an environment. |
 
@@ -35,14 +35,14 @@ You can help eliminate these problems by using the features in the following tab
 
 The two most common use cases that DevTest Labs addresses are:
 
-- Virtual machines in the cloud
+- VMs in the cloud
 - Test environments
 
 These use cases are described in the following sections.
 
 ### Development machines in the cloud
 
-Developing software is a complex and often difficult process. Because there are many aspects to consider, it's often easier to manage them in the cloud. For example, using the cloud can help with the following tasks:
+Developing software is a complex and often difficult process. Because there are many aspects to consider, it's often easier to manage it in the cloud. For example, using the cloud can help with the following tasks:
 
 - Ensure that every developer on the team has the same libraries and applications, so that everything works the same for all parties.
 - Provide a fresh development machine to new developers, so they can start contributing immediately.
@@ -50,10 +50,10 @@ Developing software is a complex and often difficult process. Because there are 
 
 ### Test environments
 
-DevTest Labs is also a great fit for handling test servers. You can set up servers with autoshutdown to help control spending. Test environments in the cloud have the following advantages:
+DevTest Labs is also a great fit for handling test servers. You can set up servers with auto-shutdown to help control spending. Test environments in the cloud have the following advantages:
 
-- Because you don't pay for virtual machines when they're turned off, you can reduce costs by switching off unused machines.
+- Because you don't pay for VMs when they're turned off, you can reduce costs by switching off unused machines.
 
-- If you're using Azure for production, the virtual machines are close to the rest of your Azure resources, which makes it an ideal partner.
+- If you're using Azure for production, the VMs are close to the rest of your Azure resources, which makes it an ideal partner.
 
 - You can automate your operations by integrating Azure DevTest Labs with your preferred build and release tool.
