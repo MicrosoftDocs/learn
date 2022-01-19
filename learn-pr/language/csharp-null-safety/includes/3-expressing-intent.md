@@ -17,13 +17,13 @@ Note the `?` added to `FooBar`. This tells the compiler that you explicitly inte
 FooBar fooBar = null!;
 ```
 
-This example adds the null-forgiving (`!`) operator to `null`, which instructs the compiler that you're explictly initializing this variable as null. The compiler will not issue warnings about this reference being null.
+This example adds the null-forgiving (`!`) operator to `null`, which instructs the compiler that you're explicitly initializing this variable as null. The compiler will not issue warnings about this reference being null.
 
 A good practice is to assign your non-nullable variables non-`null` values when they're declared, if possible:
 
 ```csharp
 // Define as non-nullable, assign using 'new' keyword
-FooBar fooBar = new FooBar(Id: 1, Name: Foo);
+FooBar fooBar = new(Id: 1, Name: Foo);
 ```
 
 ## Operators
