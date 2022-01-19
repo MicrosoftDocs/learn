@@ -24,7 +24,7 @@ quiz:
       explanation: "That's incorrect. The Alerts page shows New when an issue has been detected and has not yet been reviewed."
     - content: "An administrator has reviewed the alert and started working on it."
       isCorrect: true
-      explanation: "That's correct. the Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
+      explanation: "That's correct. The Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
     - content: "An issue has been resolved."
       isCorrect: false
       explanation: "That's incorrect. The Alerts page shows Closed when an issue has been resolved."
