@@ -1,6 +1,6 @@
 In the previous unit, you learned how the C# compiler can perform static analysis to help guard against `NullReferenceException`. You also learned how to enable a nullable context. In this unit, you'll learn more about explicitly expressing your intent within a nullable context.
 
-## Enforcing behavior
+## Declaring variables
 
 With a nullable context enabled, you now have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continuing examining the `FooBar` code and scrutinize the declaration and assignment:
 
@@ -9,7 +9,7 @@ With a nullable context enabled, you now have more visibility into how the compi
 FooBar? fooBar = null;
 ```
 
-This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for the `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
+Note the `?` added to `FooBar`. This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for the `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
 
 ```csharp
 // Define as non-nullable, but tell compiler to ignore warning
@@ -17,29 +17,89 @@ This tells the compiler that you explicitly intend for `fooBar` to be nullable. 
 FooBar fooBar = null!;
 ```
 
-This is the null-forgiving (`!`) operator and it tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
+This example adds the null-forgiving (`!`) operator to `null`, which instructs the compiler that you're explictly initializing this variable as null. The compiler will not issue warnings about this reference being null.
 
-> [!TIP]
-> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_
+A good practice is to assign your non-nullable variables non-`null` values when they're declared, if possible:
+
+```csharp
+// Define as non-nullable, assign using 'new' keyword
+FooBar fooBar = new FooBar(Id: 1, Name: Foo);
+```
 
 ## Operators
 
+As discussed in the previous unit, C# defines several operators to express your intent around nullable reference types.
+
 ### null-forgiving (`!`) operator
 
-You were introduced to the null-forgiving operator (`!`) in the previous section. When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness.
+You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
+
+> [!TIP]
+> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_ When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness.
 
 For example, consider the following code:
 
 ```csharp
 #nullable enable
 
-FooBarFactory factory = new FooBarFactory();
-FooBar fooBar = factory.GetFooBar();
+using System.Collections.Generic;
 
-Console.WriteLine(fooBar.Name);
+var fooList = new[]
+{
+    new FooBar(Id: 1, Name: "Foo"),
+    new FooBar(Id: 2, Name: "Bar")
+};
+
+FooBar fooBar = fooList.Find(f => f.Name == "Bar");
+
+// The FooBar type definition for example.
+record FooBar(int Id, string Name);
 ```
 
-In the preceding example, assume `fooBar` is 
+In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name=="Bar");` generates a CS8600 warning because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
+
+```csharp
+FooBar fooBar = fooList.Find(f => f.Name =="Bar")!;
+```
+
+Note the `!` at the end of `fooList.Find(f => f.Name =="Bar")`. This tells the compiler that you know that the object returned by the `Find` method might be `null`, and it's okay.
+
+The null-forgiving operator can be applied to an object inline prior to a method call or property evaluation, too. Consider another contrived example:
+
+```csharp
+List<FooBar>? fooList = FooListFactory.GetFooList();
+
+// Declare variable and assign it as null.
+FooBar fooBar = fooList.Find(f => f.Name=="Bar")!; // generates warning
+
+// The FooBar type definition for example.
+record FooBar(int Id, string Name);
+
+static class FooListFactory
+{
+    public static List<FooBar>? GetFooList()
+    {
+        return new List<FooBar>
+        {
+            new FooBar(Id: 1, Name: "Foo"),
+            new FooBar(Id: 2, Name: "Bar")
+        };
+    }
+}
+```
+
+In the preceding example:
+
+- `GetFooList` is a static method that returns a nullable type, `List<FooBar>?`.
+- `fooList` is assigned the value returned by `GetFooList`.
+- The compiler generates a warning on `fooList.Find(f => f.Name == "Bar");` because the value assigned to `fooList` might be `null`.
+- Assuming `fooList` isn't `null`, `Find` *might* return `null`, but we know it won't, so the null-forgiving operator is applied.
+
+You can use the null-forgiving operator to `fooList` to disable the warning:
+
+```csharp
+FooBar fooBar = fooList!.Find(f => f.Name=="Bar")!;
+```
 
 ### null-coalescing (`??`) operator
 
