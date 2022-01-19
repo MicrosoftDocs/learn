@@ -63,7 +63,7 @@ You have created an Azure function app with logic to print a message to the log 
 
 1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
 
-1. Enter the following value into the **Schedule** field. T
+1. Enter the following value into the **Schedule** field.
 
     ```log
     */20 * * * * *
