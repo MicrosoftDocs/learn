@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.python-get-started-testing
 metadata:
-  title: Getting started with Testing In Python
+  title: Get started with testing in Python
   description: "Use Python's standard library module to write unit tests, and then get exposed to the concepts of other types of testing and how to apply them."
   ms.date: 1/14/2022
   author: alfredodeza
@@ -9,7 +9,7 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language # Edit as appropriate for your portfolio area
-title: Getting started with Testing In Python
+title: Get started with testing in Python
 summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
 abstract: |
   By the end of this module, you'll be able to:

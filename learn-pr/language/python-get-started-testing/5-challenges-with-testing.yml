@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-get-started-testing.challenges-with-testing
-title: Challenges with Testing
+title: Challenges with testing
 metadata:
-  title: Challenges with Testing 
+  title: Challenges with testing
   description: In general, testing can be difficult. Identifying the problems with testing makes it easier to solve them later with solid testing techniques.
   ms.date: 1/14/2022
   author: alfredodeza
