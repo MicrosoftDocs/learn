@@ -41,7 +41,7 @@ In this exercise, you'll take advantage of the `unittest` module, which is inclu
 
 Now that the test file has a function to test and a couple of tests to verify its behavior, it is time to run the tests and work with failures.
 
-1. Execute the file with Python:
+- Execute the file with Python:
 
     ```bash
     $ python test_exercise.py
