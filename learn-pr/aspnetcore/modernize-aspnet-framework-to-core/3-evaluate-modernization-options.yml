@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Evaluate Modernization options an opportunities for ASP.NET applications
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/3-evaluate-modernization-options.md)]
