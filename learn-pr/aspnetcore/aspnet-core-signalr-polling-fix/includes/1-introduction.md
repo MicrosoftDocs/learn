@@ -14,4 +14,4 @@ The failures that are reported in the logs occur during peak hours of the sales 
 
 ## What is the main goal?
 
-By the end of this session, you'll be familiar with the process of identifying opportunities to use ASP.NET Core SignalR. You'll understand the steps involved in evaluating what code needs to change as part of refactoring to ASP.NET Core SignalR. You'll realize the benefits associated with using ASP.NET Core SignalR as an alternative to client-side polling.
+By the end of this session, you'll be familiar with the process of identifying opportunities to use ASP.NET Core SignalR. You'll understand the steps involved in evaluating what code needs to change as part of refactoring to ASP.NET Core SignalR. And you'll realize the benefits associated with using ASP.NET Core SignalR as an alternative to client-side polling.
