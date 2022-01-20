@@ -10,24 +10,33 @@ Currently the tool supports the following .NET Framework app types:
 - .NET Framework console apps
 - .NET Framework class libraries
 
-## How to install the .NET Upgrade Assistant
+### Upgrade Solution
 
-The [Get Started tutorial](https://aka.ms/dotnet-upgrade-assistant-install) walks through how to install and use the .NET Upgrade Assistant.
+When run on a solution in order to upgrade, the tool will:
 
-### Prerequisites
+- Determine which projects need upgraded and recommend the order the projects should be upgraded in
+- Update the project file to be an SDK-style project
+- Remove transitive NuGet package dependencies that may have been present in packages.config
+- Re-target project to .NET current, LTS, or preview
+- Update NuGet package dependencies to versions that are compatible with .NET current, LTS, or preview
+- Make simple updates in C# source code to replace patterns that worked in .NET Framework with current, LTS, or preview equivalents
+- For some app models (like ASP.NET apps), add common template files (like startup.cs) and make simple updates based on recognized web.config or app.config values
+- For projects targeting Windows, add a reference to the Microsoft.Windows.Compatibility package
+- Add references to analyzers that help with upgrade, such as the Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers package
 
-- This tool uses MSBuild to work with project files. Make sure that a recent version of MSBuild is installed. An easy way to satisfy this requirement is to [install Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
+After running this tool on a solution to upgrade, the solution will likely not build until the upgrade is completed manually. Analyzers added to the solution will highlight some of the remaining changes needed after the tool runs.
 
-### Installation steps
+### Analyze Solution prior to Upgrade
 
-The tool can be installed as a .NET CLI tool by running:
+When run on a solution in order to analyze dependencies prior to upgrade, the tool will provide an analysis report for each of the projects in the solution containing details on:
+- Package dependencies that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
+- References that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
+- Framework References that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
+- Call out if there is a package upgrade across major versions that could lead towards having breaking changes.
+- Unsupported API for the chosen TFM (current, LTS, or preview) used in the projects with pointers to recommended path forward if one is available.
 
-```dotnet
-dotnet tool install -g upgrade-assistant
-```
+## Troubleshooting tips
 
-Similarly, because the .NET Upgrade Assistant is installed as a .NET CLI tool, it can be easily updated by running:
+There are several known problems that can occur when using the .NET Upgrade Assistant. In some cases, these are problems with the [try-convert tool](https://github.com/dotnet/try-convert) that the .NET Upgrade Assistant uses internally.
 
-```dotnet
-dotnet tool update -g upgrade-assistant
-```
+[The tool's GitHub repository](https://github.com/dotnet/upgrade-assistant#troubleshooting-common-issues) has more troubleshooting tips and known issues.
