@@ -45,3 +45,7 @@ In this module, you’ve learned how to design with authentication and authoriza
 - [Enable secure access to apps for external users with Azure AD B2C - Learn | Microsoft Docs](/learn/modules/enable-external-access-with-b2c/)
 
 - [Authenticate apps to Azure services by using service principals and managed identities for Azure resources - Learn](/learn/modules/authenticate-apps-with-managed-identities/)
+
+## Learn more with optional hands-on exercises
+
+- [Add and delete users in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)
