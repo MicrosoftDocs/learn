@@ -8,11 +8,14 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge.
- -  Explain how to integrate hybrid cloud scenarios using Azure Stack Hub.
- -  Provide an overview of the Azure Stack Hub systems.
- -  Explain how Azure Stack Hub is managed.
- -  Identify the key resource providers for Azure Stack Hub.
+ -  Plan name resolution for Active Directory (AD) and Azure Active Directory
+ -  Domain Services (Azure AD DS)
+ -  Plan a host pools architecture
+ -  Recommend resource groups, subscriptions, and management groups
+ -  Configure a location for the Azure Virtual Desktop metadata
+ -  Calculate and recommend a configuration for performance requirements
+ -  Calculate and recommend a configuration for Azure Virtual Machine capacity
+ -  requirements
 
 ## Prerequisites
 
