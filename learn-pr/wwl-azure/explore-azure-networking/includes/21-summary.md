@@ -38,7 +38,7 @@ Now you have:
  -  [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)
  -  [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log)
  -  [Available for Internal load balancer](/azure/load-balancer/load-balancer-ha-ports-overview)
- -  [Declarative outbound NAT configuration](https://docs.microsoft.com/azure/load-balancer/load-balancer-outbound-connections#outboundrules)
+ -  [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules)
  -  [Load Balancer TCP Reset and Idle Timeout](/azure/load-balancer/load-balancer-tcp-reset)
  -  [Using Source Network Address Translation (SNAT) for outbound connections](/azure/load-balancer/load-balancer-outbound-connections)
  -  [SLA for Load balancing](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)
