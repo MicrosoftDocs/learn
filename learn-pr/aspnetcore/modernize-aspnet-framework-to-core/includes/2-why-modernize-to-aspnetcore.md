@@ -45,4 +45,4 @@ Updating your applications to ASP.NET Core gives you access to the newest releas
 
 ## Access to new features in .NET updates
 
-.NET Framework continues to be supported and receive security updates, but updates do not include new feature. Updating to .NET Core gives you access to new features in the yearly version updates.
+.NET Framework continues to be supported and receive security updates, but updates do not include new feature. Updating to ASP.NET Core gives you access to new features in the yearly version updates.
