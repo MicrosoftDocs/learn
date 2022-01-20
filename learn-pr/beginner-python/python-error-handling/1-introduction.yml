@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Introducing exceptions, tracebacks and managing errors in Python"
+  description: "Introducing exceptions, tracebacks, and managing errors in Python."
   ms.date: 12/10/2021
   author: softchris
   ms.author: chnoring
