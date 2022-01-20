@@ -7,7 +7,7 @@ Currently, two VMs are running the company's patient and employee systems. These
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
 > [!NOTE]
-> This exercise is optional, but depends on resources and an environent that was created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
+> This exercise is optional, but depends on resources and an environment that was created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
 > If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
 
 ## Create a recovery services vault
@@ -16,7 +16,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 1. On the Azure portal **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **IT & Management Tools**, and then search for **Backup and Site Recovery**. 
+1. In the left menu pane, select **IT & Management Tools**, then search for **Backup and Site Recovery**. 
  
 1. Select **Create**. The **Create Recovery Services vault** page appears.
 
@@ -31,7 +31,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | Vault name | **asr-vault** |
     | Region | **East US 2** |
 
-1. Select. **Review + create**, and after validation passes, then select **Create**. It may take a few minutes for the deployment to complete.
+1. Select **Review + create**, and after validation passes, then select **Create**. It may take a few minutes for the deployment to complete.
  
 1. After deployment completes, select **Go to resource** to view your **asr-vault** Recovery Services vault.
 
@@ -41,7 +41,7 @@ In this task, you'll replicate the two VMs that you created in the previous unit
 
 1. In the resources menu, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
-1. In the command bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. The **Enable replication** pane appears.
+1. In the command bar, select **Replicate**, then select **Azure virtual machines** from the dropdown list. The **Enable replication** pane appears.
 
 1. Enter the following values in the specified tabs, leaving other fields at their default values. Select **Next** to advance to the next tab.
 
@@ -54,7 +54,7 @@ In this task, you'll replicate the two VMs that you created in the previous unit
     | Select both VMs | **hr-records** and **patient-records**|
     | **Replication settings** tab |
     | Target location | **East US 2** |
-    | Target subscription | Select  **Customize**. In the **Target subscription** field, select your Azure subscription, and select **OK**. |
+    | Target subscription | Select  **Customize**. In the **Target subscription** field, select your Azure subscription and select **OK**. |
 
     :::image type="content" source="../media/4-enable-replication-source.png" alt-text="Screenshot showing the source options for replication.":::
 
