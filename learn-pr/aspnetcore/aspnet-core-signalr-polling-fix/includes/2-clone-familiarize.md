@@ -36,7 +36,7 @@ cd .\mslearn-blazing-pizza-signalr\blazor-workshop\src
 
 ### Run the application
 
-You're free to use your IDE or the .NET CLI. From the CLI use the `dotnet run` command:
+You're free to use your IDE or the .NET CLI. From the CLI, use the `dotnet run` command:
 
 # [Linux](#tab/linux)
 
@@ -64,11 +64,11 @@ After you add extra toppings to your order, place it by selecting the **Order** 
 
 :::image type="content" source="../media/place-order.png" lightbox="../media/place-order.png" alt-text="Screenshot of the Blazing Pizza window for placing order.":::
 
-Immediately after you've created the order, the app redirects to the order status page. This page displays the various order status details sequentially, from **Preparing** to **Out for delivery** and, finally, **Delivered**. While the order is **Out for delivery**, the live map updates by incrementally emulating the delivery driver's location.
+Immediately after you've created the order, the app redirects to the order status page, **My Orders**. This page displays the various order status details sequentially, from **Preparing** to **Out for delivery** and, finally, **Delivered**. While the order is **Out for delivery**, the live map updates by incrementally changing and emulating the delivery driver's location.
 
-Consider the following series of images, which display on the live map a progression from the starting location to the ending location:
+Consider the following series of images, which display on the live map a progression from the starting location to the ending location. Here are the statuses:
 
-**Preparing order**
+**Preparing**
 :::image type="content" source="../media/preparing-order.png" lightbox="../media/preparing-order.png" alt-text="Screenshot of the Blazing Pizza 'My Orders' window with an order status of 'Preparing'.":::
 
 **Out for delivery 1**
@@ -96,7 +96,7 @@ The console should output various logs, letting you know that the app has succes
 
 ## Familiarize yourself with the code
 
-The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. The process of ordering a pizza redirects users to the order details page. This page performs the client-side polling. Let's make sure that you understand how this is currently implemented so that you know what needs to be refactored. Consider the _OrderDetails.razor_ file:
+The primary focus for this module is refactoring the client-side polling to instead use ASP.NET Core SignalR. The process of ordering a pizza redirects users to the order details page. This page performs the client-side polling. Make sure that you understand how this is currently implemented, so that you know what needs to be refactored. Consider the _OrderDetails.razor_ file:
 
 :::code language="razor" source="~/../blazing-pizza-main/blazor-workshop/src/BlazingPizza.Client/Pages/OrderDetails.razor":::
 
@@ -117,7 +117,7 @@ Each time the order is received, it recalculates delivery status updates and cor
 
 :::code language="csharp" source="~/../blazing-pizza-main/blazor-workshop/src/BlazingPizza.Shared/OrderWithStatus.cs":::
 
-In the preceding C# code, the `FromOrder` calculates a new order status that's based on the current time. Based on your understanding of how this was implemented, you'll be able to reuse the `OrderWithStatus` object, but you'll learn how the app was refactored.
+In the preceding C# code, `FromOrder` calculates a new order status that's based on the current time. Based on your understanding of how this was implemented, you'll be able to reuse the `OrderWithStatus` object, and you'll learn how the app was refactored.
 
 ## Fetch the refactored code
 
