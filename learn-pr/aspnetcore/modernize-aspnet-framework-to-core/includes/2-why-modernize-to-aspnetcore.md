@@ -43,6 +43,6 @@ ASP.NET Core is designed to be a lightweight, modular, and extensible framework 
 
 Updating your applications to ASP.NET Core gives you access to the newest releases of popular NuGet libraries, modern development tools, and the latest components from commercial tool vendors.
 
-## Access to new features in .NET Core updates
+## Access to new features in .NET updates
 
 .NET Framework continues to be supported and receive security updates, but updates do not include new feature. Updating to .NET Core gives you access to new features in the yearly version updates.
