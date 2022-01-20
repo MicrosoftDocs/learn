@@ -36,7 +36,7 @@ These are the five primary application scenarios that Azure AD supports:
  -  Web browser to web application - A user needs to sign in to a web application that Azure AD helps secure.
  -  Native application to web API - A native application that runs on a phone, tablet, or computer needs to authenticate a user to get resources from a web API that Azure AD helps secure.
  -  Web application to web API - A web application needs to get resources from a web API that Azure AD helps secure.
- -  Daemon or server application to web API\] - A daemon application or a server application with no web user interface needs to get resources from a web API that Azure AD helps secure.
+ -  Daemon or server application to web API - A daemon application or a server application with no web user interface needs to get resources from a web API that Azure AD helps secure.
 
 ### Microsoft identity platform endpoint
 
