@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - windows
+- vs-ide
 units:
 - learn-windows.introducing-visual-studio.1-visual-studio-features
 - learn-windows.introducing-visual-studio.2-debugging
