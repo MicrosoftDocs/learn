@@ -10,7 +10,7 @@ If your project timeline and budget allow for a full upgrade to ASP.NET Core, yo
 
 ## Option 3: Incremental Upgrade
 
-In a large number of cases, development teams decide to implement a phased update to .NET Core. This will allow you to continue to use the existing ASP.NET MVC 5 application, but will allow you to upgrade the .NET Core runtime in a series of smaller steps. This is generally approached by [dividing the application by either vertical slices or horizontal layers](/dotnet/architecture/porting-existing-aspnet-apps/incremental-migration-strategies), and approaching each upgrade as a separate step.
+In a large number of cases, development teams decide to implement a phased update to ASP.NET Core. This will allow you to continue to use the existing ASP.NET MVC 5 application, but will allow you to upgrade the .NET runtime in a series of smaller steps. This is generally approached by [dividing the application by either vertical slices or horizontal layers](/dotnet/architecture/porting-existing-aspnet-apps/incremental-migration-strategies), and approaching each upgrade as a separate step.
 
 ## Additional opportunities
 
