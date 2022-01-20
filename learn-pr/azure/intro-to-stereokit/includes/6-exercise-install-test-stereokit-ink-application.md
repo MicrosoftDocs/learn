@@ -1,9 +1,9 @@
-In the previous chapter, you have learned how the StereoKit Ink application is developed and configured. In this chapter, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
+In the previous chapter, you have learned how to develop and configure the StereoKit Ink application. In this chapter, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
 
 > [!Important]
 > Make sure you have installed **StereoKit's Visual Studio template**.
 
-First, download the StereoKit Ink sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/). Then click on the **Code** button & select **Download ZIP**. Once the file download is done, click on the folder & select the **StereoKitInk.sln** file. Then **solution file** will open in Visual Studio. On the right corner of the Visual Studio, you can find **Solution Explorer**, which contains the **assets folder** and three other **program files** such as the painting menu, palette menu, and main program, which operates the main logic.
+First, download the StereoKit Ink sample application from [GitHub repository](https://github.com/maluoi/StereoKit-PaintTutorial/). Then click on the **Code** button & select **Download ZIP**. Once the file download completes, click on the folder & select the **StereoKitInk.sln** file. Then **solution file** will open in Visual Studio. On the right corner of the Visual Studio, you can find **Solution Explorer**, which contains the **assets folder** and three other **program files** such as the painting menu, palette menu, and main program, which operates the main logic.
 
 :::image type="content" source="../media/scripts.png" alt-text="Screenshot of solution explorer with script list.” " lightbox="../media/scripts.png":::
 
@@ -17,7 +17,7 @@ First, download the StereoKit Ink sample application from [GitHub repository](ht
    :::image type="content" source="../media/configuration-solution-platform.png" alt-text="Screenshot shows configuration of solution platform." lightbox="../media/configuration-solution-platform.png":::
 
 2. Connect your HoloLens 2 to your computer, then in the menu bar, click on the **Debug** > **Start Debugging**.
-Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
+Start Debugging will start the application on your device with the Visual Studio debugger attached.
   
    :::image type="content" source="../media/start-debug.png" alt-text="Screenshot shows selectings of Start Debugging." lightbox="../media/start-debug.png":::
 
@@ -30,7 +30,7 @@ Start Debugging automatically starts the application on your device with the Vis
 
 ## Build StereoKit Ink application on Desktop
 
-1. To build StereoKit Ink application to Desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any CPU** is selected.
+1. To build StereoKit Ink application to your desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any CPU** is selected.
   
    :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 
@@ -39,7 +39,7 @@ Start Debugging automatically starts the application on your device with the Vis
    :::image type="content" source="../media/ensure-project-setup-desktop.png" alt-text="Screenshot shows ensuring of project setup desktop is selected." lightbox="../media/ensure-project-setup-desktop.png":::
 
 3. Then, click on the **Debug** > **Start Debugging** in the menu bar.
-  Start Debugging automatically starts the application on your device with the Visual Studio debugger attached.
+  Start Debugging will start the application on your device with the Visual Studio debugger attached.
   
    :::image type="content" source="../media/select-start-debug.png" alt-text="Screenshot shows selecting of Start Debugging." lightbox="../media/select-start-debug.png":::
 
@@ -49,7 +49,7 @@ Start Debugging automatically starts the application on your device with the Vis
 
 ## Test StereoKit Ink application
 
-Once the solution is deployed, you can see the StereoKit Ink application window pop-up on your target device, like HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
+Once you deploy the solution, you can see the StereoKit Ink application window pop-up on your target device, like HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
 
 You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors. You can customize these colors by altering the Hue, Saturation, and Value properties. Modify the size of brushstrokes using the slider. The handle helps you to move around your painting.
 

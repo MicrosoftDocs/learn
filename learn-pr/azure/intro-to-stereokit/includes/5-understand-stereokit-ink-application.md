@@ -19,7 +19,7 @@ The application logic, the hand menu, and the application menu are all contained
 
 * **Radial hand menu**: Radial hand menus are an easy way to store actions out of the way. Additionally, these menus are easily accessible to the user. Selecting any option from the menu can trigger actions or even open a series of sub-options for the users to choose.
 
-    It's actuated by a grip motion and is ideal for quick, gesture-like menu item activation. It can also be combined with several HandRadialLayers to create sub-menus. These menus are paired up with the **Steppers** classes. Once added to the StereoKit's stepper list, they will have their **Step** method called each frame. It is a great way to add objects that need to update each frame.
+    These menus use a grip motion and are ideal for quick, gesture-like menu item activation. They can easily combine with several HandRadialLayers to create sub-menus. These menus pair up with the **Steppers** classes. Once added to the StereoKit's stepper list, they will have their **Step** method called each frame. It is a great way to add objects that need to update each frame.
 
     :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
@@ -30,7 +30,7 @@ The application logic, the hand menu, and the application menu are all contained
         new HandMenuItem("Redo", null, ()=>activePainting?.Redo()))));
     ```
 
-* **Step the application each frame**: Once the palette menu is initialized, the app logo is loaded, the application is stepped each frame until it is asked to exit. The input information required to create brush strokes is sent to painting. Later, Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
+* **Step the application each frame**: Once the palette menu initializes, the app logo is loaded, the application steps frame by frame until it exits. The input information required to create brush strokes is sent to painting. Later, Step the palette UI and the application's menu. Application menu stores options like save/load, clear, and quit.
 
     ```c#
     while (SK.Step(() =>
@@ -43,11 +43,11 @@ The application logic, the hand menu, and the application menu are all contained
       }));
     ```
 
-* **Application's menu window**: The application's menu window is made using a nice application image instead of a head bar (body only). The logo is positioned neatly at the top of the menu window. Although the undo and redo options are present in the radial hand menu designed earlier, it is included here as it'll be easier to discover.
+* **Application's menu window**: The application's menu window uses a nice application image instead of a head bar (body only). The logo is positioned neatly at the top of the menu window. Although the undo and redo options are present in the radial hand menu designed earlier, it's included here as it'll be easier to discover.
 
-    The save option is also included in the window. The user on clicking the save button, let's show a file dialog where; the user is prompted to select the file name and the folder. The file is saved in **.skp** extension.
+    The save option appears in the window. On clicking the save button, let's show a file dialog to select the file name and the folder. The file is in **.skp** extension.
 
-    The **Load** option allows users to load the previously created .skp files. The **Clear** option helps user to create a new painting. When the user wants to **Quit** then the Step loop is broken.
+    The **Load** option allows users to load the previously created .skp files. The **Clear** option helps the user to create a new painting. The Step loop terminates when the user clicks **Quit**.
 
     :::image type="content" source="../media/ink-functional-window.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/ink-functional-window.png":::
 
@@ -102,7 +102,7 @@ It is a menu allowing you to change the painting options. It's primarily made up
      float _value = 1;
      ```
 
-* **Standard window**: The standard window is used to store all the ink brush settings. The ink bottle is used to draw attention to the area's function. The size specified here will auto-fill on the x-axis, centering the model and doubling its height to two lines.
+* **Standard window**: The standard window stores all the ink brush settings. The ink bottle draws attention to the area's function. The size specified here will auto-fill on the x-axis, centering the model and doubling its height to two lines.
 
   :::image type="content" source="../media/ink-tools-window.png" alt-text="Screenshot of Ink tools window.” " lightbox="../media/ink-tools-window.png":::
 
@@ -112,7 +112,7 @@ It is a menu allowing you to change the painting options. It's primarily made up
     UI.Model(_model, V.XY(0, UI.LineHeight*2));
     ```
 
-* **Color swatches**: It Shows a color swatches list  that have been pre-loaded. Then, check out the SwatchColor function below to see how these color swatches are applied as custom buttons.
+* **Color swatches**: It shows a color swatches list that's pre-loaded. Then, check out the SwatchColor function below to see how these color swatches apply to custom buttons.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
@@ -157,7 +157,7 @@ It is a menu allowing you to change the painting options. It's primarily made up
   UI.HSeparator();
   ```
 
-* **Size swatches**: The users can also customize the sizes of brush strokes. To do so, they are provided with size swatches. These swatches are comparable to color swatches, except they control more over the swatch size.
+* **Size swatches**:  The users can also customize the sizes of brush strokes using size swatches. These swatches are comparable to color swatches, except they control more over the swatch size.
 
     Users can have a preview of the brush strokes before committing to it. We'll set aside a large box to handle the brush stroke's maximum size and preview the stroke with an unlit cube scaled to the brush's size.
 
@@ -185,7 +185,7 @@ It is a menu allowing you to change the painting options. It's primarily made up
   Mesh.Cube.Draw(Material.Unlit, Matrix.TS(linePreview.center, linePreview.dimensions), _color);
     ```
 
-* **Colorize**: It Changes the material of the ink bottle to match the current hue. In addition, you can colorize the user's hand mesh.  Input might also be used to set specific hands to a custom material using Input.HandMaterial.
+* **Colorize**: It changes the ink bottle's material to match the current hue. In addition, you can colorize the user's hand mesh. Use its input to set specific hands to a custom material using Input.HandMaterial.
 
     ```c#
     void SetColor(float hue, float saturation, float value)
@@ -203,7 +203,7 @@ It is a menu allowing you to change the painting options. It's primarily made up
 
 ## Painting.cs script
 
-This class captures the entire concept of finger painting! It takes in hand input and turns it into three-dimensional lines. Also in charge of loading and saving painting files. StereoKit's Hierarchy structure can be found here as well.
+This class captures the entire concept of finger painting! It takes in hand input and turns it into three-dimensional lines. Also, it's in charge of loading and saving painting files. One can also find StereoKit's Hierarchy structure here.
 
 * **Create a child of handle**: We'll turn the entire painting into a child of a handle so that we can move it around while we work on it! Handles and Windows push a transform onto the Hierarchy stack, making all subsequent locations relative to it.
 
@@ -239,7 +239,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
    ```
 
-* **Translate the fingertip coordinates into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, smoothing it down. Of course, the hand position data is always provided in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it. Because we're inside an Affordance that uses the Hierarchy stack.
+* **Translate the fingertip coordinates into Hierarchy local coordinates**: To eliminate any jagged noise, get the hand's fingertip, transfer it to local space, smoothing it down. Of course, the hand position data is always available in world space. Still, we need to convert the fingertip's coordinates into Hierarchy local coordinates before dealing with it because we're inside an Affordance that uses the Hierarchy stack.
 
   :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
@@ -250,7 +250,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
   ```
 
-* **Pinching motion**: The paint strokes are initiated from the user's end when performing the pinch motion, not interacting with the UI elements. Therefore, the paint strokes are continuously updated with the current Step information. When the user ceases the pinch motion, the paint stroke is considered to be completed.
+* **Pinching motion**: The paint strokes are initiated from the user's end when performing the pinch motion, not interacting with the UI elements. Therefore, the paint strokes continuously update with the current Step information. When the user ceases the pinch motion, the paint stroke completes.
 
     ```c#
     if (hand.IsJustPinched && !UI.IsInteracting(handed))
@@ -269,7 +269,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   _prevFingertip = fingertip;
   ```
 
-* **Popping effect**: Let's start with two points. The first starts at the specified location, while the second is updated to the current fingertip location. When we reach a particular distance from the previous point, we add additional points. Still, a naive implementation can result in a popping effect if points are merely added at distance intervals. This 'popping' artifact will be effectively prevented by the extra point that directly follows the fingertip.
+* **Popping effect**: Let's start with two points. The first starts at the specified location, while the second updates to the current fingertip location. When we reach a particular distance from the previous point, we add additional points. Still, a naive implementation can result in a popping effect if points are at distance intervals. You can prevent this 'popping' artifact by the extra point that directly follows the fingertip.
 
     We will begin with calculating the distance between the current and the previous point and the pace at which the hand moves. Later, make a point at the current location by utilizing speed as the stroke thickness.
 
@@ -293,9 +293,9 @@ This class captures the entire concept of finger painting! It takes in hand inpu
 
 * **Language Integrated Query (LINQ)**: The query expression is the most evident "language-integrated" aspect of LINQ for a developer who writes queries. Declarative query syntax is used to write query expressions. You may perform filtering, ordering, and grouping actions on data sources with a minimum of code using query syntax.
 
-    Linq is being used to parse a file! Linq is a functional programming language that, if learned, can be considerably useful. Linq is not a good choice for performance-critical areas, but it's fine for discrete occurrences.
+    Linq is being used to parse a file! Linq is a functional programming language that, if learned, can be considerably useful. Linq is not good for performance-critical areas, but it's okay for discrete occurrences.
 
-    Each line in this file represents a paint stroke, with a comma between each point on that stroke. Each item within a point is separated by spaces, which LinePointFromString takes care of.
+    Each line in this file represents a paint stroke, with a comma between each point on that stroke. Spaces separate each item within a point handled by 'LinePointFromString'.
 
     ```c#
     public static Painting FromFile(string fileData)
@@ -312,7 +312,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
   }
   ```
 
-* **Converting the painting file**: Converting this painting to a file is easy. We can use LinePointToString for each point, and then we need to join all of the data together. For example, '\n' separates each paint stroke on its line, and a comma separates each point on that stroke.
+* **Converting the painting file**: It's easy to convert this painting to a file. We can use LinePointToString for each point, and then we need to join all of the data together. For example, '\n' separates each paint stroke on its line, and a comma separates each point on that stroke.
 
     ```c#
     public string ToFileData()

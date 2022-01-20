@@ -47,7 +47,7 @@ There are two templates provided:
 
 3. **Cross-Platform Template (in development)** - A pre-production version still in project format. Uses a DLL shared across several platform-specific applications to work with .Net Core, UWP, and Xamarin(Android/Quest) altogether.
 
-4. **Native C++ Template (in development)** - StereoKit does offer a C API. However only experienced developers can use it if the benefits exceed the documentation insufficiencies.
+4. **Native C++ Template (in development)** - StereoKit does offer a C API. However, only experienced developers can use it if the benefits exceed the documentation insufficiencies.
 
 > [!Note]
 >Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
@@ -107,4 +107,4 @@ If you're using a Windows Mixed Reality headset with your PC, enable Developer M
 
    :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable Developer Mode."  lightbox="../media/enable-developer-mode.png":::
 
-By following this chapter, you have understood the conditions required for developing a Mixed Reality application using StereoKit. Next, you'll understand the StereoKit Ink application to experience better what can be done using StereoKit.
+By following this chapter, you have understood the conditions required for developing a Mixed Reality application using StereoKit. Next, you'll appreciate the StereoKit Ink application to experience better what is achievable using StereoKit.

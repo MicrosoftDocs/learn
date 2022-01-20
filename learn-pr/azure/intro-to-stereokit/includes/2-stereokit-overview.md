@@ -1,6 +1,6 @@
-StereoKit is a mixed reality library written in C#. It draws inspiration from XNA, Dear ImGui, and Processing. It provides a simple user interface for graphics, physics, user interface, and other features for creating a Mixed Reality application! You don't need a game engine to make an app, and certainly don't need to be a graphics programmer to get your models onto a headset! All you need to create a user interface and design interactions is a simple approach! StereoKit succeeds in achieving this goal. A single line of code may make a clickable UI button, load a .gltf model, play a sound, and do many more.
+StereoKit is a mixed reality library written in C#. It draws inspiration from XNA, Dear ImGui, and Processing, which provides a simple user interface for graphics, physics, user interface, and other features for creating a Mixed Reality application! You don't need a game engine to make an app, and certainly don't need to be a graphics programmer to get your models onto a headset! All you need to create a user interface and design interactions is a simple approach! StereoKit succeeds in achieving this goal. A single line of code may make a clickable UI button, load a .gltf model, play a sound, and do many more.
 
-You may develop custom applications using StereoKit as it focuses on non-game Mixed Reality use cases. StereoKit allows you to create high-quality Mixed Reality experiences. It is possible to carry out Mixed Reality operations natively using basic core APIs. Also, StereoKit helps you to overcome complex game engine structures.
+You may develop custom applications using StereoKit, focusing on non-game Mixed Reality use cases. StereoKit allows you to create high-quality Mixed Reality experiences. It is possible to carry out Mixed Reality operations natively using basic core APIs. Also, StereoKit helps you to overcome complex game engine structures.
 
 ## StereoKit key features
 
@@ -22,7 +22,7 @@ You may develop custom applications using StereoKit as it focuses on non-game Mi
 
 ## Coding in StereoKit
 
-StereoKit focuses on getting you up, running with as little code as possible. Most activities, including UI, can be performed with just one line of code. Here's an example of a code showing how easy loading a 3D asset into your application.
+StereoKit focuses on getting you up, running with as little code as possible. Most activities, including UI, can be performed with just one line of code. Here's an example of a code showing how easy loading a 3D asset is into your application.
 
 ```c#
 using StereoKit;
