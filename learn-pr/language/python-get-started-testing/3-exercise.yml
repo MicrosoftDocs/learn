@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-get-started-testing.exercise
-title: Exercise - write a unit test with the unittest module
+title: Exercise - Write a unit test with the unittest module
 metadata:
-  title: Exercise - write a unit test with the unittest module
+  title: Exercise - Write a unit test with the unittest module
   description: Practice writing a unit test with Python's unittest module in this exercise, using a class and test methods.
   ms.date: 1/14/2022
   author: alfredodeza

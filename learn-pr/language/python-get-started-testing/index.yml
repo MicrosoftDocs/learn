@@ -13,12 +13,12 @@ title: Get started with testing in Python
 summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Write tests using `unittest`: Python's standard library testing module"
-    - "Identify and fix failures by reading test failure reports"
-    - "Differentiate between unit, functional, and integration testing types"
+    - Write tests using `unittest`: Python's standard library testing module
+    - Identify and fix failures by reading test failure reports
+    - Differentiate between unit, functional, and integration testing types
 prerequisites: |
-  - "Ability to write Python scripts"
-  - "Familiarity with command-line tools and executing scripts"
+  - Ability to write Python scripts
+  - Familiarity with command-line tools and executing scripts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

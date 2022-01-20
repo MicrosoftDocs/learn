@@ -3,7 +3,7 @@ There are different types of testing, which can cause some confusion when trying
 > [!NOTE] 
 > The difference between unit, integration, and functional testing can be controversial. These descriptions are meant as guidelines. The most important thing is to be consistent with the project and other developers. 
 
-## Unit Testing
+## Unit testing
 
 The primary focus of unit testing is testing the smallest piece of code logic possible. The side-effect of this type of testing is speed. Unit tests will usually run very fast since (ideally) no external resources like databases, websites, or network calls are needed.
 
@@ -15,7 +15,7 @@ There aren't any hard rules about unit testing, but in general the following are
 - Functions, methods, or classes are tested as isolated as possible, avoiding the need to setup other functions, methods, or classes as a requirement.
 - No external services like databases or network services are needed for them to run.
 
-## Integration Testing
+## Integration testing
 
 When discussing this type of testing, it's usually about testing logic that will interact with other pieces of logic in a code project. Sometimes, these tests will require connecting to a database or other external service. 
 
@@ -27,7 +27,7 @@ These are some generally accepted norms about integration testing:
 - Functions, methods, or classes are tested with functionality in other functions, methods, or classes. 
 - An external service might be used, but not all the services for the application
 
-## Functional Testing
+## Functional testing
 
 Functional testing usually requires running an application as a whole. For a website, a functional test might need a web server, a database, and any other required service for the application to run. The idea is to replicate the application as close as possible as the production environment.
 

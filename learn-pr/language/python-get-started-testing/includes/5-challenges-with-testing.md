@@ -1,6 +1,6 @@
 In software projects, testing can be complicated and feel overwhelming. When existing projects aren't built with many tests, the code tends to be complex and less robust. Grasping the problems and potential pitfalls with testing is crucial for a successful software project.
 
-## Lack of Testing
+## Lack of testing
 
 When software projects are built with no tests (or an inadequate number of tests), code deteriorates, becomes brittle, and hard to understand. Tests make code accountable for their behavior, and when tests are introduced, it forces the engineer to make code easier to test.
 
@@ -12,7 +12,7 @@ There are a few positive side-effects of testing. These are some recognizable as
 
 Short, single-responsibility, and minimal input makes code easier to understand, maintain, and test. When testing isn't involved, it's common to see smaller functions grow into several hundred lines, doing many things. This happens because there's no accountability preventing the unnecessary complexity.
 
-## Legacy Code
+## Legacy code
 
 One way to think about untested code is to label it as _legacy_. It's common to find untested code in software projects. This can happen for different kinds of reasons like a lack of experience with testing or development practices that don't allow sufficient time to consider testing as part of producing software.
 
