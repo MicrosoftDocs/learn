@@ -33,5 +33,5 @@ Azure VMs can benefit from accelerated networking and Proximity Placement Groups
  -  SQL Server running with datafiles stored directly on blob storage are likely to greatly benefit from accelerated networking.
  -  It is possible to have one or more accelerated NICs and a traditional non-accelerated network card on the same VM.
  -  SAP application server to database server latency can be tested with ABAP report /SSA/CAT -&gt; ABAPMeter.
- -  Inefficient “chatty” ABAP code or particularly intensive operations such as large Payroll jobs or IS-Utilities Billing jobs have shown very significant improvement after enabling accelerated networking.
+ -  Inefficient “chatty” ABAP code or intensive operations such as large Payroll jobs or IS-Utilities Billing jobs have shown significant improvement after enabling accelerated networking.
  -  To take advantage of accelerated networking in load balancing scenarios, make sure to use Standard Azure load balancer (rather than Basic).
