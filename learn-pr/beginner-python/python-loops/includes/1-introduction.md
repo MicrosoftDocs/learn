@@ -9,7 +9,7 @@ By the end of the module, you'll be able to use `while` and `for` loops.
 ## What will you learn?
 
 After you've completed this module, you'll be able to:
-  - Identify when to use `while` and `for`` loops.
+  - Identify when to use `while` and `for` loops.
   - Run a task multiple times by using `while` loops.  
   - Loop over list data by using `for` loops.
 
