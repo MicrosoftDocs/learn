@@ -30,7 +30,7 @@ You can use SignalR on-premises, in the cloud, or with Azure SignalR Service.
 
 ### Valid use cases
 
-SignalR is not a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way they complement each other. 
+SignalR is not a replacement for traditional HTTP requests. Applications could use SignalR to know when to make specific HTTP requests. In this way, they complement each other. 
 
 There are many valid use cases for SignalR. The following list represents good candidates for SignalR:
 
@@ -60,4 +60,4 @@ There are many valid use cases for SignalR. The following list represents good c
 
 ## Contoso Pizza scenario
 
-If you're considering a client-side polling solution in the Contoso Pizza live orders map, SignalR could be a viable alternative approach. As with all programming and architectural decisions, it's your responsibility to weigh the advantages and disadvantages.
+If you're considering a client-side polling solution in the Contoso Pizza live orders map, SignalR could be a viable alternative. As with all programming and architectural decisions, it's critically important to weigh the advantages and disadvantages.
