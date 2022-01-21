@@ -4,13 +4,12 @@ title: Explore an IaaS high availability and disaster recovery solution
 metadata:
   title: Explore an IaaS high availability and disaster recovery solution
   description: "Explore an IaaS high availability and disaster recovery solution"
-  ms.date: 09/16/2021
+  ms.date: 01/21/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 11
 content: |
