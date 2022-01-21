@@ -104,31 +104,102 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 ## Complete Manual Upgrade Steps
 
-1. Open the project in Visual Studio and review it. Look for static files like these:
+After completing the steps in the Upgrade Assistant, you will need complete some manual steps to complete the upgrade.
 
-```xml
-  <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-```
+> [!NOTE]
+> Since both NuGet packages and the Upgrade Assistant are regularly updated, you may not hit the issues listed below, or you may encounter different issues. Troubleshooting steps are provided in the [Upgrade Assistant documentation](/aspnet/core/migration/upgrade-assistant).
 
-Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details. Once the files have been moved, the `<Content>` elements in the project file corresponding to these files can be deleted. In fact, all `<Content>` elements and their containing groups can be removed. Also, any `<PackageReference>` to a client-side library like `bootstrap` or `jQuery` should be removed.
+### Remove unneeded NuGet packages
 
-By default, the project will be converted as a class library. Change the first line's `Sdk` attribute to `Microsoft.NET.Sdk.Web` and set the `<TargetFramework>` to `net6.0`. Compile the project. At this point, the number of errors should be fairly small. When porting a new ASP.NET 4.6.1 MVC project, the remaining errors refer to files in the `App_Start` folder:
+The Upgrade Assistant will attempt remove any packages that are no longer needed, but in some cases, the tool cannot determine if a package is no longer needed. These packages will need to be reviewed removed manually.
 
-- BundleConfig.cs
-- FilterConfig.cs
-- RouteConfig.cs
+As you upgrade your existing projects, you will need to decide how you adapt to some architectural and stylistic changes. In this walkthrough, we will be removing a NuGet reference to `Newtonsoft.Json` since a newer version already included in the `Microsoft.AspNetCore.Mvc.NewtonsoftJson` package. Additionally, we will be removing NuGet packages which are used to include static JavaScript and CSS libraries.
 
-These files, and the entire `App_Start` folder, can be deleted. Likewise, the `Global.asax` and `Global.asax.cs` files can be removed.
+1. Open the project file in Visual Studio.
+1. Delete the **PackageReference** elements for the following packages:
 
-At this point the only errors that remain are related to bundling. There are [several ways to configure bundling and minification in ASP.NET Core](/aspnet/core/migration/mvc#configure-bundling-and-minification). Choose whatever makes the most sense for your project.
+   - `bootstrap`
+   - `jQuery`
+   - `jQuery.Validation`
+   - `Microsoft.jQuery.Unobtrusive.Validation`
+   - `Modernizr`
+   - `Newtonsoft.Json`
+
+1. Save and close the project file.
+
+### Delete unused source files
+
+1. Attempt to build the project. You will see multiple build errors in `BundleConfig.cs`, `FilterConfig.cs`, `RouteConfig.cs`, `HomeController,cs`, and `Global.asax.cs`.
+
+   In a production application, you would need to review all of these files and manually migrate any custom code. Since this is a default project without any customizations, we can simply delete all of these files files with the exception of `HomeController.cs`.
+
+1. Delete the `App_Start` directory.
+1. Delete `Global.asax.cs`.
+1. Delete `web.config`.
+
+### Remove unnecessary Using directives in the HomeController
+
+The `HomeController` has an error due to a `using` directive that references `System.Web.Mvc`. This `using` statement will need to be removed in order to make the code compile. However, we can take advantage of the new [implicit usings](/dotnet/core/tutorials/top-level-templates#implicit-using-directives) feature in C# 6.0 to simplify our code further but removing all `using` directives from the `HomeController`.
+
+1. Open the `HomeController.cs` and delete the top 5 lines to remove all `using` directives from the file.
+
+### Move static files to *wwwroot*
+
+Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details.
+
+For this upgrade, we are going to follow the structure in a new ASP.NET Core 6 project, but you are free to structure the static files in `wwwroot` however you like.
+
+1. Create a new `wwwroot` directory in the root of the project.
+1. Drag the `Scripts` directory into the `lib` directory.
+1. Rename the `Scripts` directory to `lib`.
+1. Drag the `Content` directory into the `wwwroot` directory.
+1. Rename the `Content` directory to `css`.
+1. Open the project file and delete the entire `<ItemGroup>` element that contains the JavaScript and CSS files that have been moved to `wwwroot`.
+
+> [!NOTE]
+> If you encounter build errors due to JavaScript references, you can close and re-open the project in Visual Studio.
+
+### Update static file references in the Layout page
+
+1. Open `Views/Shared/_Layout.cshtml`.
+1. Delete the following lines from the `<head>` element:
+
+   ```razor
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   ```
+
+1. Replace the above lines with:
+
+   ```html
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+   ```
+
+1. Delete the following lines from the bottom of the `<body>` element:
+
+   ```razor
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+   ```
+
+1. Replace the above lines with:
+
+   ```html
+    <script src="~/lib/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/modernizr-2.8.3.js"></script>
+    <script src="~/lib/bootstrap.min.js"></script>
+   ```
+
+### Run the application
+
+At this point, the application should build and run successfully. Congratulations!
+
+   ![Upgraded web application running in browser](../media/upgraded-app-running.png)
+
+## Summary
+
+In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you will need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/index).
