@@ -3,7 +3,7 @@ Now you have:
  -  Explored the monitoring requirements of Azure for SAP workloads.
  -  Examined monitoring, logging, and alerting services.
  -  Explored Azure VM monitoring considerations.
- -  Learned how to troubleshoot Azure Enhanced Monitoring for SAP.
+ -  Learned how to troubleshoot the Azure Extension for SAP.
  -  Explored Azure Monitor and Log Analytics.
  -  Explored SAP HANA alerts.
  -  Examined diagnostic tools.
