@@ -8,4 +8,4 @@ The load balancer offers an option of DirectServerReturn. If that option is conf
 
 Microsoft recommends that you configure DirectServerReturn combined with load balancers that are positioned between the SAP application layer and the DBMS layer. This configuration reduces network latency between the two layers.
 
-As mentioned earlier, you should use Azure load balancer Standard in order to benefit from its integration with Accelerated Networking. In addition, its High Availability Ports feature considerably simplifies the configuration of load balancing rules.
+As mentioned earlier, you should use Azure load balancer Standard in order to benefit from its integration with Accelerated Networking. In addition, its High Availability Ports feature considerably simplifies the configuration of load-balancing rules.
