@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:
 
@@ -18,7 +19,9 @@ This exercise requires two instances of a web application that run in different 
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  On the Azure portal home page, select + **Create a resource**.
-3.  On the Create a resource page, select **WebApp**. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-web-app-8a342a65.png" alt-text="Azure portal Create a web app.":::
+3.  On the Create a resource page, select **WebApp**. 
+
+    :::image type="content" source="../media/create-web-app-8a342a65.png" alt-text="Azure portal Create a web app.":::
     
 4.  On the Create Web App page, on the **Basics** tab, enter or select the following information.
     
@@ -57,7 +60,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 1.  On any Azure portal page, in **Search resources, services and docs (G+/)**, enter front door, and then select **Front Doors** from the results.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/search-front-door-2565a84c.png" alt-text="Azure portal Search for Front Door":::
+    :::image type="content" source="../media/search-front-door-2565a84c.png" alt-text="Azure portal Search for Front Door":::
 
 
 2.  On the Front Doors page, select **+ Create**.
@@ -71,13 +74,13 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 4.  Select **Next: Configuration**.
 5.  On the Configuration tab, in **Frontends/domains**, select **+** to add a frontend host.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-frontends-domains-6811137a.png" alt-text="Adding a frontend in the Azure portal":::
+    :::image type="content" source="../media/add-frontends-domains-6811137a.png" alt-text="Adding a frontend in the Azure portal":::
 
 
 6.  Enter a globally unique **host name**, like contoso-frontend, and then select **Add**.
 7.  Next, create a backend pool that contains your two web apps.<br>‎In Create a Front Door, in **Backend** pools, select + to add a backend pool.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-backends-15334426.png" alt-text="Create a Front Door add a backend pool":::
+    :::image type="content" source="../media/add-backends-15334426.png" alt-text="Create a Front Door add a backend pool":::
 
 
 8.  Enter a globally unique **host name**, like BackendPool.
@@ -102,7 +105,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 15. Finally, add a routing rule. A routing rule maps your frontend host to the backend pool. This rule forwards a request for contoso-frontend.azurefd.net to myBackendPool.
 16. In Create a Front Door, in **Routing rules**, select **+** to configure a routing rule.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/add-routing-rules-f2d3427f.png" alt-text="Create a Front Door add a routing rule":::
+    :::image type="content" source="../media/add-routing-rules-f2d3427f.png" alt-text="Create a Front Door add a routing rule":::
 
 
 17. In Add a rule, for **Name**, enter LocationRule.
@@ -118,20 +121,20 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1.  In the Azure portal, navigate to your Front Door frontend. Select **Go to Resource**. Or in Search resources, services, and docs (G+/), enter **front door**, and select **Front Doors** from the results, and then select your Front Door.
 2.  On the Front Door page, note the **Frontend host** URL. This exercise uses contoso-frontend.azurefd.net, but you may have altered it to ensure the name is unique.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/frontend-url-f22dc477.png" alt-text="Azure portal Frontend page - Verify Frontend URL":::
+    :::image type="content" source="../media/frontend-url-f22dc477.png" alt-text="Azure portal Frontend page - Verify Frontend URL":::
 
 
 3.  In a browser, go to your Frontend host URL (contoso-frontend.azurefd.net). Your request will automatically be routed to the nearest server to you from the specified servers in the backend pool.
 4.  You'll see the following information page:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/app-service-info-page-6b633245.png" alt-text="Browser showing App Service information page":::
+    :::image type="content" source="../media/app-service-info-page-6b633245.png" alt-text="Browser showing App Service information page":::
 
 
 5.  To test instant global failover in action, try the following steps:
 6.  Switch to the Azure portal, search for and select **App services**.
 7.  Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/stop-web-app-467fd292.png" alt-text="Azure portal showing stopped Web App":::
+    :::image type="content" source="../media/stop-web-app-467fd292.png" alt-text="Azure portal showing stopped Web App":::
 
 
 8.  Switch back to your browser and select Refresh. You should see the same information page.
@@ -141,14 +144,15 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1.  Switch back to the Azure portal, locate the other web app, and stop it.
 2.  Switch back to your browser and select Refresh. This time, you should see an error message.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/web-apps-both-stopped-151f5f64.png" alt-text="Browser showing App Service error page":::
+:::image type="content" source="../media/web-apps-both-stopped-151f5f64.png" alt-text="Browser showing App Service error page":::
 
 
 Congratulations! You have configured and tested an Azure Front Door.
 
 ## Task 4: Clean up resources
 
-\[!NOTE\]<br>Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE]
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
@@ -158,4 +162,5 @@ Congratulations! You have configured and tested an Azure Front Door.
     
     ```
 
-\[!NOTE\]<br>The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE]
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

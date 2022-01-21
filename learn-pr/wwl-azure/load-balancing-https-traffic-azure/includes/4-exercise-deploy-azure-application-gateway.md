@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE]
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
 
@@ -65,7 +66,7 @@ In this exercise, you will:
     |  Frontend IP  | Select **Public** |
 19. Accept the default values for the other settings on the **Listener** tab.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/routing-rule-listener-tab-f17d3760.png" alt-text="Azure portal add an Application Gateway routing rule":::
+    :::image type="content" source="../media/routing-rule-listener-tab-f17d3760.png" alt-text="Azure portal add an Application Gateway routing rule":::
 
 
 20. Select the **Backend targets** tab to configure the rest of the routing rule.
@@ -166,7 +167,7 @@ In this example, you install IIS on the virtual machines to verify Azure created
 6.  In **Target type**, select **Virtual machine**.
 7.  Under **Target**, select **BackendVM2.**
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/edit-backend-pool-bf78b276.png" alt-text="Azure portal add target backends to backend pool":::
+    :::image type="content" source="../media/edit-backend-pool-bf78b276.png" alt-text="Azure portal add target backends to backend pool":::
 
 
 8.  Select **Save**.
@@ -181,13 +182,13 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 1.  Find the public IP address for the application gateway on its **Overview** page.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/app-gateway-public-ip-3b4bbcae.png" alt-text="Azure portal look up Frontend Public IP address":::
+    :::image type="content" source="../media/app-gateway-public-ip-3b4bbcae.png" alt-text="Azure portal look up Frontend Public IP address":::
 
 
 2.  Copy the public IP address, and then paste it into the address bar of your browser to browse that IP address.
 3.  Check the response. A valid response verifies that the application gateway was successfully created and can successfully connect with the backend.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/browse-backend-79de39d0.png" alt-text="Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.":::
+    :::image type="content" source="../media/browse-backend-79de39d0.png" alt-text="Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.":::
 
 
 4.  Refresh the browser multiple times and you should see connections to both BackendVM1 and BackendVM2.

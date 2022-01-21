@@ -49,7 +49,7 @@ Front Door attempts to match to the **most-specific match first** looking only a
 
 Azure Front Door redirects traffic at each of the following levels: protocol, hostname, path, query string. These functionalities can be configured for individual microservices since the redirection is path-based. This can simplify application configuration by optimizing resource usage and supports new redirection scenarios including global and path-based redirection.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/front-door-url-redirect-58c0d5cd.png" alt-text="Azure Portal configure route details":::
+:::image type="content" source="../media/front-door-url-redirect-58c0d5cd.png" alt-text="Azure Portal configure route details":::
 
 
 ### Redirection types
