@@ -40,8 +40,12 @@ In this module, you’ve learned how to design with authentication and authoriza
 
 - [Plan, implement, and manage access review - Learn | Microsoft Docs](/learn/modules/plan-implement-manage-access-review/)
 
-- [Create custom roles for Azure resources with Azure role-based access control (Azure RBAC) - Learn | Microsoft Docs](/learn/modules/create-custom-azure-roles-with-rbac/)
-
 - [Enable secure external collaboration for your applications with Azure AD B2B - Learn | Microsoft Docs](/learn/modules/enable-external-collaboration-with-b2b/)
 
 - [Enable secure access to apps for external users with Azure AD B2C - Learn | Microsoft Docs](/learn/modules/enable-external-access-with-b2c/)
+
+- [Authenticate apps to Azure services by using service principals and managed identities for Azure resources - Learn](/learn/modules/authenticate-apps-with-managed-identities/)
+
+## Learn more with optional hands-on exercises
+
+- [Add and delete users in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)

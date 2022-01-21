@@ -6,6 +6,6 @@ Tailwind Traders is planning on making some significant changes to their identit
 
 - **External developer accounts.** A new development project requires external software developers to access company data files. The IT team needs to create user accounts for approximately five developers.
 
-- **User sign-in attempts.** A recent audit of user sign-ins attempts revealed anonymous IP addresses and unusual locations. The IT team wants to require multifactor authentication for these attempted sign-ins. 
+- **User sign-in attempts.** A recent audit of user sign-ins attempts revealed anonymous IP addresses and unusual locations. The IT team wants to require multi-factor authentication for these attempted sign-ins. 
 
 Choose the best response for each of the questions below. Then select **Check your answers**.

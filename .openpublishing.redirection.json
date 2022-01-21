@@ -10744,6 +10744,11 @@
       "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-databricks-other-azure-services/4-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-monitoring-requirements-of-azure-for-sap-workloads/4-explore-azure-vm-monitoring-considerations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-monitoring-requirements-of-azure-for-sap-workloads/4-explore-azure-virtual-machine-monitoring-considerations",
+      "redirect_document_id": true
     }
   ]
 }
