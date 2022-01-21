@@ -17,7 +17,7 @@ When run on a solution in order to upgrade, the tool will:
 - Determine which projects need upgraded and recommend the order the projects should be upgraded in
 - Update the project file to be an SDK-style project
 - Remove transitive NuGet package dependencies that may have been present in packages.config
-- Re-target project to .NET current, LTS, or preview
+- Re-target project to .NET current, [Long Term Support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core), or preview
 - Update NuGet package dependencies to versions that are compatible with .NET current, LTS, or preview
 - Make simple updates in C# source code to replace patterns that worked in .NET Framework with current, LTS, or preview equivalents
 - For some app models (like ASP.NET apps), add common template files (like startup.cs) and make simple updates based on recognized web.config or app.config values
@@ -29,11 +29,15 @@ After running this tool on a solution to upgrade, the solution will likely not b
 ### Analyze Solution prior to Upgrade
 
 When run on a solution in order to analyze dependencies prior to upgrade, the tool will provide an analysis report for each of the projects in the solution containing details on:
-- Package dependencies that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
-- References that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
-- Framework References that need to be removed / added / upgraded in order to upgrade the project to chosen TFM (current, LTS, or preview)
+
+- Package dependencies that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
+- References that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
+- Framework References that need to be removed / added / upgraded in order to upgrade the project to chosen target framework (current, LTS, or preview)
 - Call out if there is a package upgrade across major versions that could lead towards having breaking changes.
-- Unsupported API for the chosen TFM (current, LTS, or preview) used in the projects with pointers to recommended path forward if one is available.
+- Unsupported API for the chosen target framework (current, LTS, or preview) used in the projects with pointers to recommended path forward if one is available.
+
+> [!NOTE]
+> The Upgrade Assistant and upgrade documentation make repeated references to **TFM**. The TFM is an abbreviation for [Target Framework Moniker](/dotnet/standard/frameworks), and is used to indicate the set of APIs available to a project or library. Some example TFM's include `net48` for .NET Framework 4.8 and `net6.0` for .NET 6.0. The Upgrade Assistant will handle the TFM conversion in your project file for you.
 
 ## Troubleshooting tips
 
