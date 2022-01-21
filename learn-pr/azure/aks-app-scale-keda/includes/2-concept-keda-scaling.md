@@ -14,7 +14,7 @@ KEDA is a single-purpose and lightweight component that can be added into any Ku
 
 KEDA acts as an agent in Kubernetes.  It activates and deactivates Deployments and StatefulSets to scale to and from zero.
 
-KEDA is also a Kubernetes metrics server. The metrics server exposes detailed event data from sources like messages in a Kafka topic, queue length of an AWS SQS Queue or number of events in an Azure Event Hub.
+KEDA is also a Kubernetes metrics server. The metrics server exposes detailed event data from sources like messages in a Kafka topic, queue length of an AWS SQS Queue or number of events in an Azure event hub.
 
 ### Architecture
 
