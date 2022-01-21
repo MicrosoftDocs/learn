@@ -1,4 +1,4 @@
-In this unit, you'll upgrade an ASP.NET MVC 5 application to ASP.NET Core.
+In this unit, you'll upgrade an ASP.NET MVC 5 application to ASP.NET Core using the Upgrade Assistant.
 
 ## Upgrade .NET Framework ASP.NET MVC apps
 
@@ -23,7 +23,6 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 1. Before converting the project, we'll want to look at the project file. Right-click the project in the Solution Explorer and select **Unload Project**. The source for the project file (`AspNetMvcTest.csproj`) will be displayed in the editor.
 
 1. Close Visual Studio.
-
 
 ## Install the .NET Upgrade Assistant
 
