@@ -37,7 +37,7 @@ Properly indexing a database is a complex task. When planning your indexes for a
 * Understand what queries are run most frequently , and optimize your indexes around those queries
 * Understand the data types of the columns used in your queries. Indexes are ideal for integer data types, or unique or non-null columns.
 * Create nonclustered indexes on columns that are frequently used in predicates and join clauses, and keep those indexes as narrow as possible to avoid overhead.
-* Understand your data size/volume – A table scan on a small table will be a relatively cheap operation and SQL may decide to do a table scan simply because it is easy (trivial) to do. A table scan on a very large table would be very costly.
+* Understand your data size/volume – A table scan on a small table will be a relatively cheap operation and SQL Server may decide to do a table scan simply because it is easy (trivial) to do. A table scan on a very large table would be very costly.
 
 Another option SQL Server provides is the creation of filtered indexes. Filtered indexes are best suited to columns in large tables where a large percentage of the rows have the same value in that column. A practical example would be an employee table as shown below that stored the records of all employees, including ones who had left or retired.
 
