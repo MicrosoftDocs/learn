@@ -17,7 +17,7 @@ Our struct has two fields:
 - `text` stores the task description, like `"pay the bills"`.
 - `created_at` stores the timestamp of the task's creation.
 
-We won't add a `status` or `is_complete` field because we'll represent the to-do list as a vector of tasks (`Vec<Task>`). So when a task is complete, we can simply remove it from the vector.
+We won't add a `status` or `is_complete` field because we'll represent the to-do list as a vector of tasks (`Vec<Task>`). So when a task is complete, we can just remove it from the vector.
 
 You might have noticed that we're using a third-party crate, `chrono`. We've specified the `Utc` parameter for its `DateTime` struct. `chrono` is a good crate to use if you need to
 handle date and time data in Rust. It provides an easy API for representing a moment in time.
@@ -26,8 +26,8 @@ Because we're using it, we need to declare it in the `Cargo.toml` file:
 
 ```toml
 [dependencies]
-structopt = "0.3"
 chrono = "0.4"
+structopt = "0.3"
 ```
 
 The next step is to implement a method for instantiating new tasks. Tasks will always be timestamped with the current date and time. Add the following code after the `Task` struct:
@@ -68,16 +68,16 @@ As always, the first step is to include `serde_json` and `serde` in the `[depend
 
 ```toml
 [dependencies]
-structopt = "0.3"
 serde_json = "1.0"    # Add serde_json.
-
-[dependencies.serde]  # Add serde in its own section.
-version = "1.0"
-features = ["derive"] # We'll need the derive feature.
+structopt = "0.3"
 
 [dependencies.chrono]
-version = "0.4"
 features = ["serde"]  # We're also going to need the serde feature for the chrono crate, so we can serialize the DateTime field.
+version = "0.4"
+
+[dependencies.serde]  # Add serde in its own section.
+features = ["derive"] # We'll need the derive feature.
+version = "1.0"
 ```
 
 We should now be able to adapt the `Task` struct to use the new features from `serde`. Open the `tasks.rs` file and modify the struct so it looks like this:
