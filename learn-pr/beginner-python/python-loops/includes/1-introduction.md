@@ -1,19 +1,18 @@
-Computer programs are great at dealing with repetitive tasks. You'll often find yourself needing to loop over sequences of values such as strings, numbers, and objects. Python provides two mechanisms for performing a task multiple times - `while` and `for` loops.
+Computer programs are great at dealing with repetitive tasks. As a developer, you'll often find yourself needing to loop over sequences of values, such as strings, numbers, and objects. Python provides two mechanisms for performing such tasks: `while` and `for` loops.
 
-## Scenario: working with flow control on a planetary app
+## Scenario: Working with flow control on a planetary app
 
-Imagine you're creating an application where a user enters a list of planets. After they enter the list, you'll display the results back to them. This will require prompting the user multiple times for values, followed by printing out all the data in the list. We'll explore how `while` and `for` loops can be used to create this application.
+Imagine you're creating an application where users will enter a list of planet names. After the users enter the names, you'll display the results back to them. This will require prompting them multiple times to enter values, and when they're done, your code will print out all the data in the list. In this module, we'll explore how you can use `while` and `for` loops to create this application.
 
-By the end of the module, you'll be able to use `for` and `while` loops.
+By the end of the module, you'll be able to use `while` and `for` loops.
 
-## What will I learn?
+## What will you learn?
 
-After completing this module, you'll be able to:
-
-- Identify when to use `for` or `while`
-- Run a task multiple times using `while`
-- Loop over list data using `for`
+After you've completed this module, you'll be able to:
+  - Identify when to use `while` and `for` loops.
+  - Run a task multiple times by using `while` loops.  
+  - Loop over list data by using `for` loops.
 
 ## What is the main objective?
 
-Learn to apply flow control to your app to repeat statements and work with list structures.
+In this module, you'll learn how to apply flow control to your app to repeat statements and work with list structures.
