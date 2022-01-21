@@ -29,7 +29,7 @@ products:
 - aspnet-core
 units:
 - learn.modernize-aspnet-framework-to-core.1-introduction
-- learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnetcore
+- learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core
 - learn.modernize-aspnet-framework-to-core.3-evaluate-modernization-options
 - learn.modernize-aspnet-framework-to-core.4-what-is-upgrade-assistant
 - learn.modernize-aspnet-framework-to-core.5-exercise-upgrade-aspnet-app
