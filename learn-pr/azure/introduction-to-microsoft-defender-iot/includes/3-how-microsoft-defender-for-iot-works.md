@@ -1,65 +1,33 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Now that we know the basics of Defender for IoT, let's see how it works behind the scenes.
+ 
+## Microsoft Defender for IoT sensors
+ 
+Defender for IoT sensors are deployed on-premises as a virtual or physical appliance connected to a SPAN port or tap. Sensors discover, and continuously monitor network devices and collect ICS network traffic using passive (agentless) monitoring on IoT and OT devices.  Defender for IoT sensors connect to a SPAN port or network TAP and immediately begins performing DPI on IoT and OT network traffic.
 
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
+Data collection, processing, analysis, and alerting takes place directly on the sensor. This process makes it ideally suited for locations with low bandwidth or high latency connectivity, because only metadata is transferred to the management console.
 
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how (features) of (product) work to (solve problem)."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
+## Defender for IoT Engines
 
-    Heading: none
+Self-learning analytics engines eliminate the need for updating signatures or defining rules. The engines use ICS-specific behavioral analytics and data science to continuously analyze OT network traffic for anomalies, malware, operational problems, protocol violations, and baseline network activity deviations.
 
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+The sensor includes five analytics detection engines that trigger alerts based on analysis of both real-time and pre-recorded traffic.  
 
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
+### Policy violation detection engine
 
-    Goal:
-        Cover the components of (product) and how they work.
-        Repeat this pattern multiple times as needed.
+Using machine learning, this engine alerts users of deviations in baseline behavior, such as unauthorized use of specific function codes, access to specific objects, or changes to device configuration. For example: DeltaV software version changed, firmware changes, and Unauthorized PLC programming alerts. 
 
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
+### Protocol violation detection engine
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+Identifies the use of packet structures and field values that violate ICS protocol specifications, for example: Modbus exception, and Initiation of an obsolete function code alerts.
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+### Malware detection engine
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+The industrial malware detection engine identifies behaviors that indicate the presence of known malware, such as Conficker, Black Energy, Havex, WannaCry, NotPetya, and Triton. 
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+### Anomaly detection engine
 
-<!-- Do not add a unit summary or references/links -->
+The anomaly engine detects unusual machine-to-machine (M2M) communications and behaviors, for example Excessive SMB sign in attempts and PLC scans.
+
+### Operational incident detection engine
+
+Detects operational issues such as intermittent connectivity that can indicate early signs of equipment failure. For example, the device is thought to be disconnected (unresponsive): A Siemens S7 stop PLC command was sent alerts. 
