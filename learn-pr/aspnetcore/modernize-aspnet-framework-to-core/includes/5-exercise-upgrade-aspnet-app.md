@@ -8,15 +8,15 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 1. Using Visual Studio, create a new ASP.NET Web Application project using .NET Framework.
 
-   :::image type="content" source="../media/new-project.png" alt-text="Screenshot of the Visual Studio new project dialog with "ASP.NET Web Application (.NET Framework)" highlighted.":::
+   :::image type="content" source="../media/new-project.png" alt-text="Screenshot of the Visual Studio new project dialog with 'ASP.NET Web Application (.NET Framework)' highlighted.":::
 
 1. Name the project **AspNetMvcTest**. Configure the project to use **.NET Framework 4.6.1**.
 
-   :::image type="content" source="../media/configure-project.png" alt-text="Screenshot of the "Configure your new project" dialog in Visual Studio. The Project Name has been set to AspNetMvcTest, and the Framework has been set to .NET Framework 4.6.1.":::
+   :::image type="content" source="../media/configure-project.png" alt-text="Screenshot of the 'Configure your new project' dialog in Visual Studio. The Project Name has been set to AspNetMvcTest, and the Framework has been set to .NET Framework 4.6.1.":::
 
 1. In the next dialog, choose **MVC** application, then select **Create**.
 
-   :::image type="content" source="../media/create-mvc-webapi.png" alt-text="Screenshot of the "Create a new ASP.NET Web Application" dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
+   :::image type="content" source="../media/create-mvc-webapi.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
 
    Review the created project and its files.
 
