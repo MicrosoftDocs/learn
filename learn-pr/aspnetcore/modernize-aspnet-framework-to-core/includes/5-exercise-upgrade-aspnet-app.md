@@ -92,7 +92,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 1. The tool applies known fixes to migrate C# references to their new counterparts. Press the <kbd>Enter</kbd> key to continue.
 
-   ![.NET Upgrade Assistant update C# source](../media/apply-fixes.png)
+   ![.NET Upgrade Assistant apply fixes](../media/apply-fixes.png)
 
 1. Finally, the tool updates C# source code where possible, and notes manual updates that will need to be completed. Press the <kbd>Enter</kbd> key to continue.
 
