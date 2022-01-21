@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "What statement would loop over the sequence `collection` and assign the variable `item`?"
     choices:
-    - content: "for each item in collection:"
+    - content: "`for each item in collection:`"
       isCorrect: false
-      explanation: "Incorrect. Python uses the word 'for', not 'for each'. The correct answer is `for item in collection:`."
-    - content: "for item in collection:"
+      explanation: "Incorrect. Python uses the word `for`, not `for each`."
+    - content: "`for item in collection:`"
       isCorrect: true
-      explanation: "Correct! Using the 'for' variable in the sequence is the right syntax."
-    - content: "for collection in item:"
+      explanation: "Correct! Using the `for` variable in the sequence is the right syntax."
+    - content: "`for collection in item:`"
       isCorrect: false
-      explanation: "Incorrect. The variable to assign comes first, and 'collection' comes after the 'in' keyword. The correct answer is `for item in collection:`."
+      explanation: "Incorrect. The variable to assign comes first, and `collection` comes after the `in` keyword."
   - content: "What is the correct statement to use to unpack variables named `left` and `right` from the list `turns`?"
     choices:
     - content: "`for left, right in turns:`"
