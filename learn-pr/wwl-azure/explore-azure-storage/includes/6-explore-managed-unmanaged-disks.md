@@ -1,14 +1,14 @@
-When deploying an Azure VM, you must choose the type of disks that will host the operating system disk and, optionally, data disks. You can use the unmanaged or managed disk type. Your decision has important implications for functionality, manageability, and pricing.
+When deploying an Azure VM, you can use the unmanaged or managed disk type to host the operating system disk and can optionally define data disks. Your decision has important implications for functionality, manageability, and pricing.
 
 ## Unmanaged disks
 
-With unmanaged disks, you must manage Azure Storage accounts where Azure VM disks will reside. You also will need to determine the number of storage accounts you will create and how you will distribute .vhd disk files across them. This management overhead might be significant in larger environments, due to the need to address capacity, performance, and resiliency constraints.
+With unmanaged disks, you must manage Azure Storage accounts where Azure VM disks will be located. You also will need to determine the number of storage accounts you will create and how you will distribute .vhd disk files across them. This management overhead might be significant in larger environments, due to the need to address capacity, performance, and resiliency constraints.
 
 Using managed disks can eliminate this management overhead. With managed disks, the Azure platform controls the placement of VM disk files and hides the complexity associated with managing Azure Storage accounts.
 
 ## Managed disks
 
-Managed disks provide better reliability for Availability Sets by ensuring that the disks of VMs in an Availability Set are sufficiently isolated from each other to avoid single points of failure. It does this by automatically placing the disks in different storage fault domains (storage clusters) and aligning them with the VM fault domain. If a storage fault domain fails due to hardware or software failure, only the VM instance with disks on the storage fault domain fails.
+Managed disks provide better reliability for Availability Sets by ensuring that the disks of VMs in an Availability Set are sufficiently isolated from each other to avoid single points of failure. Managed disks, by automatically placing the disks in different storage fault domains (storage clusters) and aligning them with the VM fault domain the VM disks will be adequately isolated. If a storage fault domain fails due to hardware or software failure, only the VM instance with disks on the storage fault domain fails.
 
 Managed disks also provide other functional benefits. For example, you can create an Azure VM from a custom image stored in any storage account in the same region and the same subscription. With unmanaged disks, you must store Azure VM disks in the same storage account as the image.
 
@@ -53,7 +53,7 @@ Azure offers four tiers of managed disks according to their performance characte
     **Scenario**
   :::column-end:::
   :::column:::
-    IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.
+    IO-intensive workloads such as SAP HANA, top-tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.
   :::column-end:::
   :::column:::
     Production and performance-sensitive workloads

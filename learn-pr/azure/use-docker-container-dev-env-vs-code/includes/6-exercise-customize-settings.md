@@ -4,7 +4,7 @@ In this exercise, you'll use the devcontainer.json file to smooth these edges an
 
 ## Install Visual Studio Code extensions
 
-The container comes with the Microsoft Python extension. The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and a different extension needs to be installed to get syntax highlighting in that file.
+The container comes with the Microsoft Python extension. The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and you need to install a different extension to get syntax highlighting in that file.
 
 1.  Press <kbd>F1</kbd> to open the Command Palette.
 1.  Type **extension** and select **Extensions: Install Extensions**.
@@ -34,7 +34,7 @@ Right now, a developer who's setting up the project for the first time has to kn
     ```
 1. Save the devcontainer.json file.
 
-This will cause the container to automatically install dependencies whenever a container is created.
+The container will automatically install dependencies whenever a container is created.
 
 ## Rebuild the new container
 
