@@ -3,7 +3,7 @@ When you write code, one common challenge is to have it perform a task an unknow
 A `while` loop performs an operation *while* a certain condition is true. You could look to see if there's another line in a file, a flag has been set, a user has finished entering values, or something else has changed to indicate that the code can stop performing the operation.
 
 > [!IMPORTANT]
-> The most important thing to remember do when you create `while` loops is to ensure that the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
+> The most important thing to remember when you create `while` loops is to ensure that the condition changes. If the condition is always true, Python will continue to run your code until the program crashes.
 
 The syntax of a `while` loop is similar to that of an `if` statement. You provide both a condition and the code you want to run while the condition is true. 
 
