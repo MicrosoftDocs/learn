@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/22/2021
+  ms.date: 01/21/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When running Azperflib.exe as part the readiness check after installing the Azure Enhanced Monitoring Extension for SAP on a Windows VM, is it automatically a problem if Storage Read Op Latency Server msec counter is empty?"
+  - content: "When running Azperflib.exe as part the readiness check after installing the Azure Extension for SAP on a Windows VM, is it automatically a problem if Storage Read Op Latency Server msec counter is empty?"
     choices:
     - content: "Yes"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Only if the Storage Read Op Latency E2E msec counter is also empty"
       isCorrect: false
       explanation: "Incorrect. The Storage Read Op Latency Server msec and Storage Read Op Latency E2E msec counters can be empty. All other counters must have values."
-  - content: "Which version of the VM Extension for SAP does Microsoft recommend for installation?"
+  - content: "Which version of the Azure Extension for SAP does Microsoft recommend for installation?"
     choices:
     - content: "The New version is recommended in all cases."
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "The New version is recommended, except for certain specific use cases."
       isCorrect: false
       explanation: "Incorrect. The Standard version of the extension is currently recommended for each installation where none of the use cases for the new version of the extension apply."
-  - content: "Does Microsoft recommend a particular version of the VM Extension for SAP for installation of SUSE SLES 15?"
+  - content: "Does Microsoft recommend a particular version of the Azure Extension for SAP for installation of SUSE SLES 15?"
     choices:
     - content: "Yes, the Standard version is recommended."
       isCorrect: false
