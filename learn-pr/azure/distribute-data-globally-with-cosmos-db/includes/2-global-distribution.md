@@ -22,15 +22,29 @@ When a database is replicated, the throughput and storage are replicated equally
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
     > [!IMPORTANT]
-    > Login to the Azure portal and the sandbox with the same account.
+    > Sign in to the Azure portal and the sandbox with the same account.
     >
-    > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
+    > Sign in to the Azure portal using the link above to ensure you're connected to the sandbox, which provides access to a Concierge Subscription.
 
-1. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
+1. Select **Create a resource**.
 
-   ![The Azure portal Databases pane.](../media/2-global-distribution/2-create-nosql-db-databases-json-tutorial.png)
+   :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-create-resource-2022.png" alt-text="Screenshot that shows selecting the Create a resource icon in the Azure portal.":::
 
-1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
+1. Select **Databases**, and then **Create** under **Azure Cosmos DB**.
+
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-create-cosmos-db-resource.png" alt-text="Screenshot that shows the Create a resource page with the Databases category selected and Create selected under Azure Cosmos DB.":::
+
+1. On the **Select API option** page, select the **Create** button for **Core (SQL) - Recommended**.
+
+    The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: Core (SQL), Gremlin (graph database), Azure Cosmos DB for MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account.
+
+    You're selecting Core (SQL) because in this module you're creating a document database that is queryable using SQL syntax and accessible with the SQL API.
+
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-select-api.png" alt-text="Screenshot that shows the Core (SQL) API selected from the Select API option page.":::
+
+1. On the **Create Azure Cosmos DB Account - Core (SQL)** page **Basics** tab, enter the settings for the new Azure Cosmos DB account, including the location.
+
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-create-account-basics.png" alt-text="Screenshot that shows the settings entered on the Create Azure Cosmos DB Account Basics tab.":::
 
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -40,41 +54,42 @@ When a database is replicated, the throughput and storage are replicated equally
     Subscription|*Concierge Subscription*|Select your Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
     Resource Group|Use existing<br><br><rgn>[sandbox resource group name]</rgn>|Select **Use existing**, and then enter <rgn>[sandbox resource group name]</rgn>.
     Account Name|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters.
-    API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
     Location|*Select the region closest to you*|Select the region closest to you from the list of regions above.
+
+1. Select **Next: Global Distribution**. On the Global Distribution tab, enter the following settings, and then select **Review + Create**.
+
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-create-account-global-distribution.png" alt-text="Screenshot that shows the settings selected on the Create Azure Cosmos DB Account Global Distribution tab.":::
+
+    Setting|Value|Description
+    ---|---|---
     Geo-Redundancy| Disable | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as you will replicate the database later.
     Multi-region Writes | Enable | This setting enables you to write to multiple regions at the same time. This setting can only be configured during account creation.
 
-1. Click **Review + Create**.
+1. After the settings validate, select **Create** to create the account.
 
-    ![The new account page for Azure Cosmos DB.](../media/2-global-distribution/2-azure-cosmos-db-create-new-account.png)
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-review-account-creation.png" alt-text="Screenshot that shows the Review + create tab with the Create button selected.":::
 
-1. After the settings are validated, click **Create** to create the account.
+1. The account creation takes a few minutes. Wait for the portal to display that the deployment succeeded, and then select **Go to resource**.
 
-1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded and click the notification.
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-deployment-success.png" alt-text="Screenshot that shows a successful Azure Cosmos DB deployment message with the Go to resource button selected.":::
 
-    ![Notification alert.](../media/2-global-distribution/2-azure-cosmos-db-notification.png)
+1. The portal displays the **Congratulations! Your Azure Cosmos DB account was created** page.
 
-1. In the notification window, click **Go to resource**.
-
-    ![Go to resource.](../media/2-global-distribution/2-azure-cosmos-db-go-to-resource.png)
-
-    The portal displays the **Congratulations! Your Azure Cosmos DB account was created** page.
-
-    ![The Azure portal Notifications pane.](../media/2-global-distribution/2-azure-cosmos-db-account-created.png)
+    :::image type="content" source="../media/2-global-distribution/2-azure-cosmos-db-account-created.png" alt-text="Screenshot that shows the Quick start page with an account created message.":::
 
 ## Replicate data in multiple regions
 
 Let's now replicate your database closest to your global users in Los Angeles, New York, and Tokyo.
 
 1. On the left-hand menu, click **Replicate data globally** from the menu.
-1. In the **Replicate data globally** page, select the West US 2, East US, and Japan East regions, and then click **Save**.
+
+1. In the **Replicate data globally** page, select the West Central US, East US, and Japan East regions, and then click **Save**.
 
     If you don't see the map in the Azure portal, minimize the menus of the left side of the screen to display it.
 
     The page will display an **Updating** message while the data is written to the new regions. Data in the new regions will be available within 30 minutes.
 
-    ![Click the regions in the map to add them.](../media/2-global-distribution/2-global-replication.gif)
+    :::image type="content" source="../media/2-global-distribution/2-global-replication-new-region.gif" alt-text="Screenshot GIF that shows the regions being selected for data replication.":::
 
 ## Summary
 
