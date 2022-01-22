@@ -1,19 +1,5 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Microsoft Defender for IoT provides security for business-critical infrastructures that run Operational Technology (OT) networks. It supports a digital transformation that bring OT and IT realities together to achieve common goals under shared governance, using mutual beneficial tools and technologies. Operational and security teams can have a holistic view of IT and OT assets and network zones. They will be able to monitor and protect the devices and systems in each zone, as well as the connections between them.
 
-    Goal: briefly orient the learner to the product; what category of problem does it solve?
-
-    Heading: none
-
-    Example: "Implementing a business process can be challenging because you typically need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Microsoft 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products? Azure Logic Apps gives you pre-built components to connect to hundreds of services. You use a graphical design tool to put the pieces together in any combination you need and Logic Apps will run your process automatically in the cloud."
-
-    Recommended: visual like an image (preferred), table, list, etc.
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add your visual element
-
-Briefly explain what Microsoft Defender for IoT is. You could also briefly explain what operational technology is (in one or two sentences.)
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -28,42 +14,40 @@ Briefly explain what Microsoft Defender for IoT is. You could also briefly expla
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+Here you’ll learn about the OT challenges that a building management company may deal with.
 
-What you have on pages 5 & 6 go here.
+Suppose you own a smart building management company that is responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 building that total 5 million square feet of residential space and 3 million square feet of office space.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+The Chief Operations Officer  on the operational technology (OT) team is responsible for:  
 
-    Goal: List the activities the learner will do. This differs from the learning objectives. The learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+- Reducing costs for maintaining skyscraper elevators  
+- Increasing employee and machine productivity  
+- Increasing safety against unauthorized guests 
+- Enhancing services in conference rooms
 
-    Heading: "## What will we be doing?"
+To reach these goals, the Chief Operations officer installs new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors. 
 
-    Example: "We’ll analyze the capabilities of Logic Apps to help you decide when to use them:
-                * **Launch**: what conditions can you set to launch your app?
-                * **Connect**: which services can you connect to?
-                * **Branch**: what types of business logic can you add to your app?"
+The Chief Security Officer indicates that these new technologies integrated with the current OT architecture have increased the security attack surface in the OT network. For example:  Networked elevator controls improve elevator usage, power consumption, and user experience, but introduces remotely accessible services which are easily penetrable.  
 
- -->
+Both security and operation officers need visibility of:
+
+- All equipment running in the operational network, including vendor-specific equipment that runs on proprietary protocols 
+- Communications paths  between the various subsystems, as well as any unauthorized connections to the internet or corporate subnetworks. 
+
+The teams would like to be alerted if unauthorized users take action or unplanned activities occur.  For example, if elevator controllers are reconfigured at an unplanned time or controllers monitoring fire detectors are accessed remotely, but remote access is unauthorized.  
+ 
+Both teams need to respond to immediate threats and carry out ongoing operational and network security tasks, such as securing configurations of network switches, installing firmware updates on PLCs and security patches on BMS workstations
+ 
+Currently the IT SOC team is working with standard security solutions but has no visibility into OT network assets, or connections, and cannot be alerted when equipment is compromised, updated at unplanned times, accessed without the right credentials, etc.
+
+The OT team is managing its asset inventory using a computerized spread sheets and managing system architecture drawings using a CAD system. 
+
+Information about dated firmware, OS versions, patch levels and, installed software and firmware is managed in communication between the vendor and OT staff.
+
 ## What will we be doing?
 
 You'll analyze the capabilities of Microsoft Defender for IoT to help you decide when use it.
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: The title of an "Introduction to (product)" module tells our customers that this is a good place to start their learning. This helps our customers find the right content quickly. The trade-off is that the title does not reflect the terminal learning objective of the module. Here, you explain that this module teaches the 'evaluate' task. To do this, you:
-        - Start with your 'evaluate' learning objective
-        - Make it a complete sentence if it's not already
-        - Use plain language so it sounds conversational
-        - Include the lead-in shown below ("By the end...")
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
-
- -->
 ## What is the main goal?
 
 By the end of this session, you'll be able to decide whether Microsoft Defender for IoT is a good choice to provide security monitoring for your operational technology and IoT devices.
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
