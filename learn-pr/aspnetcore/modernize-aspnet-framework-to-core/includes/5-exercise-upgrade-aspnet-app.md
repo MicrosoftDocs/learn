@@ -647,7 +647,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    C:\Users\Jon\source\repos\AspNetMvcTest>
    ```
 
-## Complete Manual Upgrade Steps
+## Complete manual upgrade steps
 
 After completing the steps in the Upgrade Assistant, you will need complete some manual steps to complete the upgrade.
 

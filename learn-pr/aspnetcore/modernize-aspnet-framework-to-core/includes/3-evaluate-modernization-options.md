@@ -8,7 +8,7 @@ ASP.NET MVC on .NET Framework continues to be supported and maintained by Micros
 
 If your project timeline and budget allow for a full upgrade to ASP.NET Core, you should consider this option. A complete upgrade will provide you the full benefits of ASP.NET Core, and can simplify issues encountered on running in a mixed environment.
 
-## Option 3: Incremental Upgrade
+## Option 3: Incremental upgrade
 
 In a large number of cases, development teams decide to implement a phased update to ASP.NET Core. This migration strategy will allow you to continue to use the existing ASP.NET MVC 5 application, but will allow you to upgrade the .NET runtime in a series of smaller steps. You will start by [dividing the application by either vertical slices or horizontal layers](/dotnet/architecture/porting-existing-aspnet-apps/incremental-migration-strategies), then upgrade each as a separate step.
 

@@ -1,6 +1,6 @@
 In this module, you'll upgrade an ASP.NET MVC application running on .NET framework to ASP.NET Core.
 
-## Example Scenario
+## Example scenario
 
 Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to evaluate whether you should upgrade an existing internal application written in ASP.NET MVC 5 running on .NET Framework 4.6 to ASP.NET Core.
 
