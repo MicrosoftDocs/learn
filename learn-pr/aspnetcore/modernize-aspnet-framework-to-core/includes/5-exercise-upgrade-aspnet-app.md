@@ -16,7 +16,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 1. In the next dialog, choose **MVC** application, then select **Create**.
 
-   :::image type="content" source="../media/create-mvc-webapi.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
+   :::image type="content" source="../media/create-mvc-web-api.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
 
    Review the created project and its files.
 
