@@ -1,6 +1,6 @@
 In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI).
 
-Now that you have a Azure Cognitive Services account to work with, you can begin working on your text-to-speech application.
+Now that you have an Azure Cognitive Services account to work with, you can begin working on your text-to-speech application.
 
 In this module, we're going to focus on two ways to pass text to Azure Cognitive Services's text-to-speech engine:
 
