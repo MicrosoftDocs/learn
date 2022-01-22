@@ -11,9 +11,3 @@ You'll learn how to build a so-called minimal API by using ASP.NET Core and .NET
 ## What is the main goal?
 
 Build a powerful API that supports reading and writing with just a few lines of code.
-
-## Prerequisites
-
-* Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).
-* Recommended familiarity with .NET 6.
-* Having a basic understanding what an API is.
