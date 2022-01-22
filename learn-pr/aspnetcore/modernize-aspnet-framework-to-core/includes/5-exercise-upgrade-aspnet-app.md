@@ -44,7 +44,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    The tool runs and shows you a list of the steps it will do.
 
-:::image type="content" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant.":::
+:::image type="complex" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant.":::
    Screenshot of the Windows Terminal. The screenshot shows the execution of the upgrade-assistant command. The command lists out the initialization information, showing the MSBuild, Visual Studio, and project file paths. It lists the steps it will perform, showing the first step is to back up the file. The first step is highlighted. A command list is shown in the bottom right of the screen. The first command is "Apply next step (Back up project)".
 :::image-end:::
 
