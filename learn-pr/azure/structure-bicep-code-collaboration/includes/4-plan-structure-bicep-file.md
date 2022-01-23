@@ -79,8 +79,23 @@ When you do hard-code values, it's good to make sure that they're understandable
 For some resource properties, to construct values automatically, you need to create complex expressions that include functions and string interpolation. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks.
 
 > [!TIP]
-> Try to use resource properties as outputs, rather than making assumptions about how resources will behave (e.g., use the _defaultHostname_ property of an App Service app to output the URL instead of creating a string for the URL yourself).
+> When creating outputs, try to use resource properties wherever you can. Avoid incorporating your own assumptions about how resources work, because these assumptions might change over time.
 >
+> For example, if you need to output the URL of an App Service app, avoid constructing a URL:
+>
+> ```bicep
+> output hostname string = '${app.name}.azurewebsites.net'
+> ```
+>
+> The above approach will break if App Service changes the way they assign hostnames to apps, or if you deploy to Azure environments that use different URLs.
+>
+> Instead, use the `defaultHostname` property of the app resource:
+>
+> ```bicep
+> output hostname string = app.properties.defaultHostname
+> ```
+
+> [!TIP]
 > For existing resources, use the `existing` keyword to look up their properties, instead of passing property values around through outputs. In this way, you'll always get the most up-to-date data.
 
 ## How do you use version control effectively?

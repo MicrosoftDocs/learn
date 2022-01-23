@@ -9,7 +9,9 @@ When you're working individually, it's easy to forget to structure your Bicep co
 You're also making it easier on yourself when you need to use your Bicep code in the future.
 
 > [!TIP]
-> As you continue to use Bicep, you'll benefit from understanding the [Bicep patterns](/azure/azure-resource-manager/bicep/patterns-configuration-set). The patterns provide proven solutions to common scenarios Bicep users face. You should also be familiar with the [scenario documentation](/azure/azure-resource-manager/bicep/scenarios-rbac), which provides guidance on how to build Bicep files for specific types of Azure resources.
+> As you continue to use Bicep, you'll benefit from understanding the [Bicep patterns](/azure/azure-resource-manager/bicep/patterns-configuration-set). The patterns provide proven solutions to some of the common scenarios Bicep users face.
+>
+> You should also be familiar with [Bicep scenarios](/azure/azure-resource-manager/bicep/scenarios-rbac), which provide guidance on how to build Bicep files for specific types of Azure resources.
 
 ## References
 
