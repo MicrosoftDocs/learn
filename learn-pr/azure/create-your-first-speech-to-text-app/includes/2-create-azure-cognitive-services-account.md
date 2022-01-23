@@ -10,13 +10,13 @@ In the next unit, you'll complete an exercise that use the Azure Command Line In
 
 1. Sign into the  [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. On the home page, click **Create a resource**.
+1. On the home page, select **Create a resource**.
 
 1. When the **Create a resource** page is displayed, enter **Cognitive Services** in the the search box, and then select **Cognitive Services** when it is displayed.
 
     [![Screenshot showing the search for Cognitive Services in the Azure portal.](../media/2-search-for-cognitive-services-small.png)](../media/2-search-for-cognitive-services.png#lightbox)
 
-1. When the **Cognitive Services** page is displayed, click **Create**.
+1. When the **Cognitive Services** page is displayed, select **Create**.
 
     [![Screenshot showing the Cognitive Services page and Create button.](../media/2-create-cognitive-services-small.png)](../media/2-create-cognitive-services.png#lightbox)
 
@@ -24,18 +24,18 @@ In the next unit, you'll complete an exercise that use the Azure Command Line In
 
     1. Choose your **Subscription** from the drop-down menu.
 
-    1. Choose a **Resource group** from the drop-down menu, or click the **Create new** link to create a new resource group.
+    1. Choose a **Resource group** from the drop-down menu, or select the **Create new** link to create a new resource group.
 
     1. Choose the **Region** that is closest to you.
 
     1. Enter a unique name for the **Name**.
 
-    1. Choose a **Pricing tier** from the drop-down menu. (You can click the link for pricing details for the tiers.)
+    1. Choose a **Pricing tier** from the drop-down menu. (You can select the link for pricing details for the tiers.)
 
     1. After you have reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you have read and understood all the terms.
 
-    1. After you have entered the above information, click **Review + create**.
+    1. After you have entered the above information, select **Review + create**.
 
     [![Screenshot showing the options for creating a Cognitive Services account.](../media/2-configure-cognitive-services-options-small.png)](../media/2-configure-cognitive-services-options.png#lightbox)
 
-1. If the information that you have entered looks good and you see the **Validation Passed** notification, click **Create**.
+1. If the information that you have entered looks good and you see the **Validation Passed** notification, select **Create**.
