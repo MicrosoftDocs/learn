@@ -10,7 +10,7 @@ Currently the tool supports the following .NET Framework app types:
 - .NET Framework console apps
 - .NET Framework class libraries
 
-### Upgrade Solution
+### Upgrade steps performed by the Upgrade Assistant
 
 When run on a solution in order to upgrade, the tool will:
 
@@ -26,7 +26,7 @@ When run on a solution in order to upgrade, the tool will:
 
 After running this tool on a solution to upgrade, the solution will likely not build until the upgrade is completed manually. Analyzers added to the solution will highlight some of the remaining changes needed after the tool runs.
 
-### Analyze Solution prior to Upgrade
+### Analyze solution prior to upgrade
 
 When run on a solution in order to analyze dependencies prior to upgrade, the tool will provide an analysis report for each of the projects in the solution containing details on:
 

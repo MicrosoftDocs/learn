@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - dotnet
+- aspnet
 - aspnet-core
 units:
 - learn.modernize-aspnet-framework-to-core.1-introduction

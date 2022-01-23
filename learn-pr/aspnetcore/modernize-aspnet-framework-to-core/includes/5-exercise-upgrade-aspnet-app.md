@@ -16,7 +16,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 1. In the next dialog, choose **MVC** application, then select **Create**.
 
-   :::image type="content" source="../media/create-mvc-webapi.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
+   :::image type="content" source="../media/create-mvc-web-api.png" alt-text="Screenshot of the 'Create a new ASP.NET Web Application' dialog in Visual Studio. MVC has been selected, and other settings have been left to their default values.":::
 
    Review the created project and its files.
 
@@ -26,7 +26,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
 ## Install the .NET Upgrade Assistant
 
-1. Open a console window and run the following command:
+- Open a console window and run the following command:
 
    ```dotnetcli
    dotnet tool install -g upgrade-assistant
@@ -44,9 +44,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    The tool runs and shows you a list of the steps it will do.
 
-:::image type="complex" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant.":::
-   Screenshot of the Windows Terminal. The screenshot shows the execution of the upgrade-assistant command. The command lists out the initialization information, showing the MSBuild, Visual Studio, and project file paths. It lists the steps it will perform, showing the first step is to back up the file. The first step is highlighted. A command list is shown in the bottom right of the screen. The first command is "Apply next step (Back up project)".
-:::image-end:::
+   :::image type="complex" source="../media/initial-run.png" alt-text="Screenshot of Windows Terminal showing the initial run of the Upgrade Assistant."::: Screenshot of the Windows Terminal. The screenshot shows the execution of the upgrade-assistant command. The command lists out the initialization information, showing the MSBuild, Visual Studio, and project file paths. It lists the steps it will perform, showing the first step is to back up the file. The first step is highlighted. A command list is shown in the bottom right of the screen. The first command is "Apply next step (Back up project)". :::image-end:::
 
    As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
@@ -649,7 +647,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    C:\Users\Jon\source\repos\AspNetMvcTest>
    ```
 
-## Complete Manual Upgrade Steps
+## Complete manual upgrade steps
 
 After completing the steps in the Upgrade Assistant, you will need complete some manual steps to complete the upgrade.
 
