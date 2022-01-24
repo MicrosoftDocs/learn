@@ -49,3 +49,7 @@ Now that you've completed this module, you should be able to:
 - [Microsoft Azure Well-Architected Framework - Reliability - Learn | Microsoft Docs](/learn/modules/azure-well-architected-reliability/)
 
 - [Describe high-availability and disaster-recovery strategies - Learn | Microsoft Docs](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
+
+**Learn more with optional hands-on labs**
+
+- [Backup and restore your Azure SQL database - Learn | Microsoft Docs](/learn/modules/backup-restore-azure-sql/)
