@@ -23,7 +23,7 @@ pub fn list_tasks(journal_path: PathBuf) -> Result<()> {
 }
 ```
 
-This function is a bit more simple than its siblings because it doesn't need to write to the file. We reuse the `collect_tasks` helper function again, proving the usefulness of our refactor. We then check if the task vector is empty before we try to list its contents.
+This function is a bit less complex than its siblings because it doesn't need to write to the file. We reuse the `collect_tasks` helper function again, proving the usefulness of our refactor. We then check if the task vector is empty before we try to list its contents.
 
 When we print the list, we use a simple counter that starts at `1` to enumerate the tasks. This number will be the same one that our users will pass to the `complete_task` action.
 
@@ -44,7 +44,7 @@ impl fmt::Display for Task {
 
 In the `Display::fmt` function, we convert the `DateTime<Utc>` timestamp into a `DateTime<Local>` struct, so users can see the date and time the task was created in local time.
 
-You might be wondering why we didn't define the `created_at` field by using the `DateTime<Local>` type since the beginning. We didn't do that because the `chrono::serde::ts_seconds` module expects `DateTime` structs to be specialized over the `Utc` type.
+You might be wondering why we didn't define the `created_at` field by using the `DateTime<Local>` type from the beginning. We didn't do that because the `chrono::serde::ts_seconds` module expects `DateTime` structs to be specialized over the `Utc` type.
 
 We then write the `Task` representation to the `Formatter` value `f` by using the `write!` macro. We represent our `Task` type like this:
 

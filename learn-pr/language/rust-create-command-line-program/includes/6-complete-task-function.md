@@ -1,4 +1,5 @@
-The `complete_task` function is responsible for trying to remove a task from the to-do list, which is stored in a file. The function needs to complete these actions: 
+The `complete_task` function is responsible for trying to remove a task from the to-do list, which is stored in a file. The function needs to complete these actions:
+
 - Read the file. 
 - Collect existing tasks, if there are any.
 - Remove the task that's at the indicated position, if there is one.
@@ -77,7 +78,7 @@ pub fn add_task(journal_path: PathBuf, task: Task) -> Result<()> {
 }
 ```
 
-After this refactor, `add-task` looks much better and is easier to read!
+After the refactor, `add-task` looks much better and is easier to read!
 
 ## The final version of `complete_task`
 
