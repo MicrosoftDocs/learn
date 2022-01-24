@@ -365,18 +365,18 @@ Node packages typically use the [Semantic Versioning](https://semver.org?azure-p
 
 Before you proceed, make sure you have your VM's IP address handy. If you don't have it, run these commands from the Cloud Shell to retrieve it:
 
-    ```azurecli
-    ipaddress=$(az vm show \
-      --name MeanStack \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --show-details \
-      --query [publicIps] \
-      --output tsv)
-    ```
+```azurecli
+ipaddress=$(az vm show \
+  --name MeanStack \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --show-details \
+  --query [publicIps] \
+  --output tsv)
+```
 
-    ```bash
-    echo $ipaddress
-    ```
+```bash
+echo $ipaddress
+```
 
 1. You're all done editing files. Make sure that you saved changes to each file and then close the editor.
 
