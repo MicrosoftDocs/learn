@@ -1,6 +1,6 @@
 Before we start coding, we should take some time to think about all the parts we should expect to implement for this application. It will be a command-line journal app to manage to-do items. We don't need to worry about fancy interfaces. But we'll need to handle and parse command-line arguments to interpret the actions our users will issue to the command line.
 
-The program interface will handle these three simple actions:
+The program interface will handle these three actions:
 
 - Add new tasks to a to-do list.
 - Remove completed tasks from that list.

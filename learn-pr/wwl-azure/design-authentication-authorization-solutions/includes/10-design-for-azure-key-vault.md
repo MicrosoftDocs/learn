@@ -9,17 +9,17 @@ Azure Key Vault helps solve the following problems:
 Azure Key Vault has two service tiers: Standard, which encrypts with a software key, and a Premium tier, which includes hardware security module(HSM)-protected keys.
 
 ## Why use Azure Key Vault?
-- Separation of sensitive app information from other configuration and code, reducing the risk of accidental leaks
-- Restricted secret access with access policies tailored to the apps and individuals that need them
-- Centralized secret storage, allowing required changes to happen in only one place
-- Access logging and monitoring to help you understand how and when secrets are accessed
+- Separation of sensitive app information from other configuration and code, reducing the risk of accidental leaks.
+- Restricted secret access with access policies tailored to the apps and individuals that need them.
+- Centralized secret storage, allowing required changes to happen in only one place.
+- Access logging and monitoring to help you understand how and when secrets are accessed.
 
 Key Vault allows you to securely access sensitive information from within your applications:
 - Keys, secrets, and certificates are protected without having to write the code yourself and you're easily able to use them from your applications.
 - You allow customers to own and manage their own keys, secrets, and certificates so you can concentrate on providing the core software features. In this way, your applications will not own the responsibility or potential liability for your customers' tenant keys, secrets, and certificates.
-- Your application can use keys for signing and encryption yet keeps the key management external from your application. For more information about keys, see About Keys
-- You can manage credentials like passwords, access keys, and sas tokens by storing them in Key Vault as secrets, see About Secrets
-- Manage certificates. For more information, see About Certificates
+- Your application can use keys for signing and encryption yet keeps the key management external from your application. 
+- You can manage credentials like passwords, access keys, and sas tokens by storing them in Key Vault as secrets.
+- Manage certificates. 
 
 ## Design a solution using Keys and SAS tokens 
 A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
