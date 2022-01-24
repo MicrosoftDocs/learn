@@ -4,7 +4,7 @@ Data adoption isn’t a one-time fix—it’s a journey. Years of experience in 
 
 These digital feedback loops are flows of information that emerge when a business process—like a customer interaction or back-office operation—has been redesigned around data. Whatever the circumstance, the related data is collected and used to optimize that process by AI-enabled applications.
 
-Crucially, all information can be surfaced to the business processes that need it. In turn, this enables organizations to be more productive at scale and become increasingly customer centric, which ultimately helps inform their ability to innovate.
+Crucially, all information can be surfaced to the business processes that need it. In turn, this enables organizations to be more productive at scale and become increasingly customer-centric, which ultimately helps inform their ability to innovate.
 
 The IDO model makes digital feedback loops a reality with four key steps:
 
@@ -13,7 +13,7 @@ The IDO model makes digital feedback loops a reality with four key steps:
 * Ensure your day-to-day execution is enabled by an agile operating model.
 * Envision and prioritize a set of future business use cases that represent the desired business outcomes.
 
-Following the four steps helps organizations overcome common obstacles such as shortage of data science skills, difficulty envisioning the right business use cases, and a culture that struggles to understand the need to be data driven.
+Following the four steps helps organizations overcome common obstacles such as shortage of data science skills, difficulty envisioning the right business use cases, and a culture that struggles to understand the need to be data-driven.
 
 By becoming a business driven by data and AI, companies can build the foundation they need to innovate and face the challenges of the future.
 

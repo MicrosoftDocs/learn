@@ -7,15 +7,15 @@ The answer is to carefully construct an *innovation architecture* that includes 
 There’s no question that organizations that embrace innovation have an advantage over competitors—but getting there requires buy-in at every level. As we mentioned earlier, the right type of encouragement is paramount to getting people involved. You can encourage people from across the organization by providing the resources, technology, and skill-building needed to innovate effectively. If this is new and unfamiliar territory, there are actions you can take to create the optimal environment for innovation.
 
 * Give employees time, space, and incentives for experimentation.
-* Offer seed funds for start-up style pitches, and consider potential additional funding, if needed.
+* Offer seed funds for start-up style pitches and consider potential additional funding, if needed.
 * Focus on learning through failures and wins—a practice that helps employees understand that innovation is an iterative process.
 * Sponsor lectures, trainings, and workshops on both technical and non-technical topics.
 * Offer sharing sessions in which employees present a lecture series to others on topics of expertise.  
 * Organize a small-scale hackathon or an idea generation contest.
 
-The ideas are endless, and most can be tailored to match your organization’s budget. No matter the chosen path, if you provide the space, resources, and time, the potential added business value is significant—perhaps even more so when cross-disciplinary teams collaborate in unexpected ways. When teams come together, people build off of others’ ideas and expertise, setting the stage for the next big success.
+The ideas are endless and most can be tailored to match your organization’s budget. No matter the chosen path, if you provide the space, resources, and time, the potential added business value is significant—perhaps even more so when cross-disciplinary teams collaborate in unexpected ways. When teams come together, people build off of others’ ideas and expertise, setting the stage for the next big success.
 
-Notably, providing consistent support and follow-through will be critical for success. When people feel prepared to collaborate and are given the right tools and support, adaptability becomes a natural part of the workflow. Then, disruptions become manageable, and businesses keep moving forward.
+Notably, providing consistent support and follow-through will be critical for success. When people feel prepared to collaborate and are given the right tools and support, adaptability becomes a natural part of the workflow. Then, disruptions become manageable and businesses keep moving forward.
 
 ## Leverage a horizon-based framework
 
