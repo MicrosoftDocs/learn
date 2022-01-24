@@ -374,11 +374,6 @@ Before you proceed, make sure you have your VM's IP address handy. If you don't 
       --output tsv)
     ```
 
-
-    ```bash
-    echo $ipaddress
-    ```
-
 1. You're all done editing files. Make sure that you saved changes to each file and then close the editor.
 
     To close the editor, select the ellipses in the corner, then select **Close Editor**.
