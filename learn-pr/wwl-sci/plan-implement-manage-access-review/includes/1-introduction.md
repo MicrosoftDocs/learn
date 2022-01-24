@@ -6,19 +6,13 @@ In this module, you will learn all about access reviews, including why they're i
 
 By the end of this module you should be able to:
 
-- Plan for access reviews.
-
-- Create access reviews for groups and apps.
-
-- Monitor access review findings.
-
-- Manage licenses for access reviews.
-
-- Automate access review management tasks.
-
-- Configure recurring access reviews.
+ -  Plan for access reviews.
+ -  Create access reviews for groups and apps.
+ -  Monitor access review findings.
+ -  Manage licenses for access reviews.
+ -  Automate access review management tasks.
+ -  Configure recurring access reviews.
 
 ## Prerequisites
 
 None
-
