@@ -49,6 +49,9 @@ When a database is replicated, the throughput and storage are replicated equally
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+    > [!NOTE]
+    > Some regions might not be available due to high demand. In these cases, select your next closest region.
+
     Setting|Value|Description
     ---|---|---
     Subscription|*Concierge Subscription*|Select your Concierge Subscription. If you don't see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
