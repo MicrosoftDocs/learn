@@ -30,7 +30,7 @@ The major advantages of REST are that it is:
 -  A standards-based communication because it runs on top of HTTP.
 - Operational in the presence of firewalls as long as HTTP or HTTPS traffic is not filtered.
 
-To learn more about using REST to access and manage data that is stored in the cloud, see [RESTful web API design](/azure/architecture/best-practices/api-design.md).
+To learn more about using REST to access and manage data that is stored in the cloud, see [RESTful web API design](/azure/architecture/best-practices/api-design?azure-portal=true).
 
 ## Object storage systems
 
@@ -68,6 +68,8 @@ Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
 ```
 
 In the response, Azure has acknowledged the request, indicated that the request was successful (with a "201 Created" message), and returned some information regarding the request.
+
+For information about using REST with Azure Blob Storage, see [Blob Storage REST API](/rest/api/storageservices/blob-service-rest-api?azure-portal=true).
 
 ## Cloud object storage standards: CDMI
 
