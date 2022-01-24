@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.pytorch.intro-computer-vision.multilayer-convolutions
-title: Use a convolutional neural network
+title: Train multi-layer convolutional neural network
 metadata:
-  title: Use a convolutional neural network
+  title: Train multi-layer convolutional neural network
   description: In this unit, we learn how several convolutional layers can be stacked in order to recognize hierarchy of patterns that build up objects on the image.
   author: shwars
   ms.author: dmitryso
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.custom: team=nextgen
-durationInMinutes: 15
+durationInMinutes: 10
 sandbox: true
 notebook: notebooks/5-multilayer-convolutions.ipynb
 quiz:

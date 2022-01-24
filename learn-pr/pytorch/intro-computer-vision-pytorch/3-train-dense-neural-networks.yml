@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.custom: team=nextgen
-durationInMinutes: 15
+durationInMinutes: 10
 sandbox: true
 notebook: notebooks/3-train-dense-neural-networks.ipynb
