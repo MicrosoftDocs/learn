@@ -11,16 +11,19 @@ metadata:
   ms.prod: learning-language
 title: Python for beginners
 summary: |
-  Get started with Python! Learn how create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
+  Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
   
   In this learning path, you'll:
     - Get familiar with Jupyter notebooks
-    - Learn the basics of programming in Python
-    - Dive in to elements of Python, such as:
-      - Math 
+    - Write your first program in Python
+    - Explore packages to better manage projects
+    - Learn Python basics, including the following elements:
+
+      - Boolean types
+      - Strings
+      - Mathematical operations 
+      - Lists and loops
       - Dictionaries
-      - Loops
-      - List
       - Functions
       - Error checking 
  
@@ -33,7 +36,7 @@ roles:
 - developer
 - student
 products:
-- vs
+- vs-code
 modules:
 - learn.beginner-python.create-run-jupyter-notebook
 - learn.beginner-python.create-run-program
