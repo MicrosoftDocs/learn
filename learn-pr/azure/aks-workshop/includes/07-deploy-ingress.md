@@ -145,7 +145,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 1. Paste the following text in the file.
 
     ```yaml
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ratings-web-ingress
