@@ -2,7 +2,7 @@
 
 In this task, we will review Azure Active Directory licensing and tenants.
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+1.  In the **portal**, search for and select **Azure Active Directory**.
 2.  On the **Overview** page, locate the license information.
 3.  Go to the [Azure AD pricing page](https://azure.microsoft.com/pricing/details/active-directory/) and review the features and pricing for each edition.
 4.  On the **Overview** page, discuss creating directories and how to switch between directories.
@@ -28,7 +28,7 @@ In this task, we will create users and groups.
 11. Create another new group with **Membership type** as **Dynamic user**.
 12. Review the details to construct dynamic group membership rules.
 
-## Task 3: multifactor authentication in Azure
+## Task 3: Multifactor authentication in Azure
 
 > [!NOTE]
 > This task requires a user account, **AZ500User1**.
@@ -39,7 +39,7 @@ In this demonstration, we will configure and test MFA.
 
 In this task, we will enable MFA for a user.
 
-1.  In the **Portal**, search for and select **Azure Active Directory**.
+1.  In the **portal**, search for and select **Azure Active Directory**.
 2.  Under **Manage** select **Security**.
 3.  Under **Manage** select **MFA**.
 4.  In the center pane, under **Configure** select **Additional cloud-based MFA settings**.
@@ -57,7 +57,7 @@ In this task, we will enable MFA for a user.
 
 In this task, we will test the MFA requirement.
 
-1.  Sign in to the **Portal** as **AZ500User1**. Use their user name from a previous step.
+1.  Sign in to the **portal** as **AZ500User1**. Use your user name from a previous task.
 2.  Provide the password, click **Next**.
 3.  Note that more information is required. Click **Next**.
 4.  Review the **Additional security** verification page.
@@ -71,4 +71,4 @@ In this task, we will test the MFA requirement.
 12. Click **Done**.
 13. On the **Update password** screen provide and confirm a new password.
 14. Click **Sign-in**.
-15. Confirm that you can now access the Portal.
+15. Confirm that you can now access the portal.
