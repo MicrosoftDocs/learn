@@ -34,11 +34,7 @@ To learn more about using REST to access and manage data that is stored in the c
 
 ## Object storage systems
 
-The following video covers the basics ideas behind object storage systems:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qD]
-
-An example of object-based storage on the cloud is Azure Blob Storage. Blob Storage allows users to store **objects** in **containers**. Each object can be created, read, and deleted. Note that in the Blob Storage model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite.
+Azure Blob Storage is an example of object-based storage in the cloud. Blob Storage allows users to store **objects** in **containers**. Each object can be created, read, and deleted. Note that in the Blob Storage model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite.
 
 Here is an example of a RESTful HTTP call to Azure Blob Storage to create a container named `mycontainer`. The HTTP call includes authorization information for the client to access the bucket. 
 
