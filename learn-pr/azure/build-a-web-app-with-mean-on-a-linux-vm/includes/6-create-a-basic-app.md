@@ -374,6 +374,7 @@ Before you proceed, make sure you have your VM's IP address handy. If you don't 
       --output tsv)
     ```
 
+
     ```bash
     echo $ipaddress
     ```
