@@ -1,4 +1,4 @@
-Planning a cloud adoption strategy leveraging U.S. Sovereign clouds has many considerations. There are numerous events that oftentimes trigger the need to decide whether to migrate or to innovate the workloads within different Sovereign Cloud environments. As a result, you must decide whether to migrate or innovate.
+Planning a cloud adoption strategy leveraging U.S. Sovereign clouds has many considerations. There are numerous events that often trigger the need to decide whether to migrate or to innovate the workloads within different Sovereign Cloud environments. As a result, you must decide whether to migrate or innovate.
 
 ## Common Critical Organization Events
 
