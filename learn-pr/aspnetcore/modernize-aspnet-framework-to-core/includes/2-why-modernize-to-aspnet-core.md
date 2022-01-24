@@ -1,4 +1,4 @@
-In this unit, you'll learn when and why to upgrade existing ASP.NET applications running on .NET Framework to ASP.NET Core.
+In this unit, you will learn when and why to upgrade existing ASP.NET applications running on .NET Framework to ASP.NET Core.
 
 ASP.NET Core provides many benefits over ASP.NET MVC running on .NET Framework. The [full listing from the ASP.NET Core documentation](/aspnet/core/fundamentals/choose-aspnet-framework) lists the following advantages:
 
@@ -29,11 +29,11 @@ Let's discuss some top benefits in a little more detail.
 
 ASP.NET Core provides significantly higher performance over .NET Framework. This performance improvement provides several potential advantages, including faster response for individual responses, higher throughput, greater server efficiency, and reduced memory usage. All of these improvements translate to cost savings: serving more responses with lower server resources.
 
-These performance benefits has been documented by a number of case studies. Azure Active Directory serves 115 billion requests per day, and was able to [cut CPU costs by 50% by moving to .NET Core](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/). [Bing documented a 34% server latency improvement in migrating to .NET Core 2.1](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/), and continued to see big improvements in each future .NET Core version update.
+These performance benefits have been documented by a number of case studies. Azure Active Directory serves 115 billion requests per day, and was able to [cut CPU costs by 50% by moving to .NET Core](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/). [Bing documented a 34% server latency improvement in migrating to .NET Core 2.1](https://devblogs.microsoft.com/dotnet/azure-active-directorys-gateway-service-is-on-net-core-3-1/). Once Bing was running on .NET Core, the team was able to take advantage of each .NET Core version update, and continued to see large improvements in each update.
 
 ## Cross-platform support
 
-Whereas .NET Framework is a Windows-only framework, ASP.NET Core is a cross-platform framework. ASP.NET Core can be developed and hosted on Windows, macOS, and Linux. This cross-platform support allows for flexibility in developer environments, CI/CD pipelines, and deployment. It is common to see developers and designers working on a mix of Windows and macOS environments and deploying applications to a variety of hosting environments, including Linux, Docker, Windows, and cloud hosting platforms.
+While .NET Framework is a Windows-only framework, ASP.NET Core is a cross-platform framework. ASP.NET Core can be developed and hosted on Windows, macOS, and Linux. This cross-platform support allows for flexibility in developer environments, CI/CD pipelines, and deployment. It is common to see developers and designers working on a mix of Windows and macOS environments and deploying applications to a variety of hosting environments, including Linux, Docker, Windows, and cloud hosting platforms.
 
 ## Microservices
 
