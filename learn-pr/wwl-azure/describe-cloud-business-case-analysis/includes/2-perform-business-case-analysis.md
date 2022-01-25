@@ -109,7 +109,7 @@ Conclude includes the following steps:
 - Distribute the business case analysis for validation
 - Adjudicate any edits
 - Obtain final validation
-- Document lessons learned, best practices, and resources identified
+- Obtain lessons learned, best practices, and resources identified
 - Implement the business case analysis recommendations
 - Satisfy the business case analysis requirements
 
@@ -140,7 +140,7 @@ You can project the savings projections the investment will guarantee by using
 - Total Cost of Ownership Calculator
 - [Cost optimization](/azure/architecture/framework/cost/) in the [Azure Well-Architected Framework](/azure/architecture/framework/cost/)
 
-Azure Commercial, Azure Government, Azure Secret, and Azure Top Secret all have slightly different costs. This is due to the requirements for accreditation, cleared personnel, and facilities. When deciding whether or not to use Azure Top Secret versus Azure Commercial, be sure to know the differences in cost between the different environments.
+Azure Commercial, Azure Government, Azure Secret, and Azure Top Secret all have slightly different costs. This is due to the requirements for accreditation, cleared personnel, and facilities. When deciding whether or not to use Azure Top Secret versus Azure Commercial, be sure to know the cost differences between the different environments.
 
 ### Know your requirements
 

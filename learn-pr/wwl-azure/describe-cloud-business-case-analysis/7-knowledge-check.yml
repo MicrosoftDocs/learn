@@ -49,7 +49,7 @@ quiz:
     choices:
     - content: "Performance"
       isCorrect: false
-      explanation: "That's incorrect. Performance refers the response time of a system (or systems). Performance is typically measured by the amount of time a user or users wait to receive a response after performing an action."
+      explanation: "That's incorrect. Performance refers to the response time of a system (or systems). Performance is typically measured by the amount of time a user or users wait to receive a response after performing an action."
     - content: "Scalability"
       isCorrect: false
       explanation: "That's incorrect. Scalability refers to the ability of a system to increase the resources available to achieve its workload purpose. This can be either horizontally (adding more instances) or vertically (adding more computing power)."
