@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/28/2021
+  ms.date: 01/25/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
-      explanation: "Incorrect. When two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources."
+      explanation: "Incorrect. When two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources"
     - content: "An employee requires permanent permissions to perform their job role."
       isCorrect: false
       explanation: "Incorrect. Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department."
-    - content: "For access that requires the approval of an employee's manager or other designated individuals."
+    - content: "For access that requires the approval of an employee's manager or other designated individuals"
       isCorrect: true
       explanation: "-Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources."
