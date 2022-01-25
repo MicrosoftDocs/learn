@@ -1,15 +1,15 @@
 > [!IMPORTANT]
-> While the requirement to conduct a Business Case Analysis varies by agency or organization, the process of doing so will help to ensure that your efforts to use cloud computing, especially US Sovereign clouds, will ensure success.
+> While the requirement to conduct a business case analysis varies by agency or organization, the process of doing so will help to ensure that your efforts to use cloud computing, especially US Sovereign clouds, will ensure success.
 
 :::row:::
     :::column span="":::
 
-        :::image type="content" source="../media/business-case-analysis-guidebook-2011.png" border="false" alt-text="DoD Business Case Analysis Guidebook cover page":::
+        :::image type="content" source="../media/business-case-analysis-guidebook-2011.png" border="false" alt-text="DoD business case analysis Guidebook cover page":::
 
     :::column-end:::
     :::column span="":::
 
-        In 2011, the DoD published the [Product Support Business Case Analysis (BCA) Guidebook](https://www.dau.edu/guidebooks/Shared%20Documents/BCA%20Guidebook%202014.pdf). In it, the DoD defined the purpose of a BCA as
+        In 2011, the DoD published the [Product Support business case analysis (BCA) Guidebook](https://www.dau.edu/guidebooks/Shared%20Documents/BCA%20Guidebook%202014.pdf). In it, the DoD defined the purpose of a BCA as
 
         > “...a structured methodology and document that aids decision making by identifying and comparing alternatives by examining the mission and business impacts (both financial and non-financial), risks, and sensitivities… The Product Support BCA concludes with a recommendation and associated specific actions and an implementation plan to achieve stated organizational objectives and desired outcomes.”
 
@@ -20,7 +20,7 @@
 
 ### Business case analysis purposes
 
-A Business Case Analysis has three primary purposes:
+A business case analysis has three primary purposes:
 
 - Ensure a consistent approach to IT investment analysis
 - Facilitate comparison of alternatives
@@ -28,7 +28,7 @@ A Business Case Analysis has three primary purposes:
 
 ### Business case analysis components
 
-The major components of a Business Case Analysis are:
+The major components of a business case analysis are:
 
 - Cost and economic viability
 - Requirement satisfaction and completeness
@@ -38,11 +38,11 @@ The major components of a Business Case Analysis are:
 - Balance of cost effectiveness and operational benefit
 - Identification of funding type(s) and resources
 
-## Standardized Business Case Analysis template
+## Standardized business case analysis template
 
-In 2014, the DoD published the "DOD Use of Enterprise Information Technology Standard Business Case Analysis" memorandum. This memo provides a template to ensure consistency. The costs, benefits, operational impacts, and risks are standardized when a cloud consumer chooses a solution.
+In 2014, the DoD published the "DOD Use of Enterprise Information Technology Standard business case analysis" memorandum. This memo provides a template to ensure consistency. The costs, benefits, operational impacts, and risks are standardized when a cloud consumer chooses a solution.
 
-### Business Case Analysis outline example
+### Business case analysis outline example
 
 A business case analysis report (the output) typically follows the following format:
 
@@ -115,7 +115,7 @@ Conclude includes the following steps:
 
 ## Importance
 
-When choosing which cloud environment to leverage, a Business Case Analysis may be necessary. Fortunately, Microsoft provides numerous tools to help support a business case analysis.
+When choosing which cloud environment to leverage, a business case analysis may be necessary. Fortunately, Microsoft provides numerous tools to help support a business case analysis.
 
 ### Performance measures (baseline, target, and goal)
 
@@ -144,6 +144,6 @@ Azure Commercial, Azure Government, Azure Secret, and Azure Top Secret all have 
 
 ### Know your requirements
 
-All projects include gathering requirements for the workload to be deployed. As you decide which Sovereign Cloud environment to use, be sure to have a current list of requirements to ensure they will be met in the environment (or environments) you select.
+All projects include gathering requirements for the workload to be deployed. As you decide which Sovereign Cloud environment to use, be sure to have a current list of requirements. This will ensure that your requirements will be met in the environment (or environments) you select.
 
 Within the Cloud Adoption Framework, [Microsoft provides guidance on how to create a Business Case](/azure/cloud-adoption-framework/strategy/cloud-migration-business-case).
