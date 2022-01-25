@@ -12,7 +12,7 @@ After this module, you'll be able to design and execute an inference strategy to
 
 In this module, you'll learn:
 
-- To choose the appropriate inference strategy
-- To optimize model scoring with ONNX
-- To deploy Triton as a managed online endpoint
+- To choose the appropriate inference strategy.
+- To optimize model scoring with ONNX.
+- To deploy Triton as a managed online endpoint.
 
