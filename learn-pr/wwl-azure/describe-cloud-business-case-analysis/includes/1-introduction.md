@@ -6,7 +6,7 @@ Government entities act in the interest of their stakeholders, U.S. persons. Whe
 
 In this module, we'll cover how to perform a business case analysis, an analysis of alternatives, and understand the importance of doing so.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, you'll be able to describe: 
 
