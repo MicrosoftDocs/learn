@@ -13,7 +13,7 @@ The most common problems of computer vision include:
 
 * **Segmentation** is similar to object detection, but instead of giving bounding box we need to return an exact pixel map outlining each of the recognized objects.  
 
-![An image showing how computer vision object detection can be performed with cats, dogs, and ducks.](https://i.stack.imgur.com/mFBCV.png)
+![An image showing how computer vision object detection can be performed with cats, dogs, and ducks.](../images/mFBCV.png)
 
 Image taken from [CS224d Stanford Course](https://cs224d.stanford.edu/index.html)
 
@@ -48,5 +48,5 @@ In this module you will:
 ## Prerequisites
 
   - **Knowledge of Python**. We will be using Python to define and train our neural networks, so understanding this code would be helpful. We also allow you to execute this code in a sandbox using **Jupyter Notebook**, so we expect some familiarity with Jupyter.
-  - Familiarity with **PyTorch framework** is required, because we will not go into details on tensor operations and implementing back propagation. It is recommended to go through [Introduction to PyTorch](https://docs.microsoft.com/learn/paths/pytorch-fundamentals/) module.
+  - Familiarity with **PyTorch framework** is required, because we will not go into details on tensor operations and implementing back propagation. It is recommended to go through [Introduction to PyTorch](/learn/modules/intro-machine-learning-pytorch/) module.
   - Basic understanding of machine learning is also helpful 
