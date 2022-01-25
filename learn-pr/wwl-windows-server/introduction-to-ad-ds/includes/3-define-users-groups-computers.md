@@ -51,7 +51,7 @@ To create the KDS root key, run the following command from the Active Directory 
 Add-KdsRootKey –EffectiveImmediately
 ```
 
-You create group managed service accounts by using `New-ADServiceAccount` Windows PowerShell  cmdlet with the `–PrinicipalsAllowedToRetrieveManagedPassword` parameter.
+You create group managed service accounts by using `New-ADServiceAccount` Windows PowerShell  cmdlet with the `–PrincipalsAllowedToRetrieveManagedPassword` parameter.
 
 For example:
 

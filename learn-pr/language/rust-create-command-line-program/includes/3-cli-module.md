@@ -1,4 +1,4 @@
-The `cli` module will handle user input, which users will enter via a command-line
+The `cli` module will handle user input, which users will enter through a command-line
 interface (hence the name). To add the module to our project, we need to create a file named `src/cli.rs` at
 the project root and add the following line to the `main.rs` file:
 

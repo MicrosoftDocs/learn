@@ -25,7 +25,7 @@ roles:
 products:
 - azure
 - dotnet
-- vs
+- vs-ide
 modules:
 - learn.visual-studio.visual-studio-intro
 - learn.visual-studio-github-push
