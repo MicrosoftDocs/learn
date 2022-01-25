@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-error-handling.exercise-work-with-exceptions
+title: Exercise - Work with exceptions
+metadata:
+  unitType: exercise
+  title: Exercise - Work with exceptions
+  description: "In this exercise, you'll use exceptions for error reporting and for making logical decisions when building code."
+  ms.date: 12/10/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/6-exercise-work-with-exceptions.ipynb
