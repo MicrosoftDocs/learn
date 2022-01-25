@@ -48,7 +48,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 
    As each step is completed, the tool provides a set of commands allowing the user to apply or skip the next step, see more details, configure logging, or exit the process. If the tool detects that a step will perform no actions, it automatically skips that step and continues to the next step until it reaches one that has actions to do. Pressing <kbd>Enter</kbd> will start the next step if no other selection is made.
 
-1. In this example, you will chose the the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
+1. In this example, you will choose the the apply step each time. The first step is to back up the project. Type **1** and press the <kbd>Enter</kbd> key to continue.
 
    ```dos
    Upgrade Steps
@@ -136,7 +136,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    Please press enter to continue...
    ```
 
-1. Once the project format has been updated, the next step is to clean up NuGet package references. Press the <kbd>Enter</kbd> key to continue.
+1. Once the project format has been updated, the next step is to clean up NuGet package references. This removes some transitive dependencies, replaces a framework assembly reference with a NuGet package reference, and adds a new analyzer package. Press the <kbd>Enter</kbd> key to continue.
 
    ```dos
    [13:26:23 INF] Initializing upgrade step Clean up NuGet package references
@@ -243,7 +243,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    Please press enter to continue...
    ```
 
-1. Next, the tool updates the project's NuGet packages. Several packages need updates, and a new analyzer package is added. Press the <kbd>Enter</kbd> key to continue.
+1. Next, the tool updates the project's NuGet packages. Several packages need updates. Press the <kbd>Enter</kbd> key to continue.
 
    ```dos
    [13:42:45 INF] Initializing upgrade step Update NuGet Packages
@@ -414,7 +414,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    Please press enter to continue...
    ```
 
-   The tool completes the migration of config files by migrating `system.web.webPages.razor/pages/namespaces`.
+   The tool completes the migration of config files by migrating `system.web.webPages.razor/pages/namespaces`. This moves namespaces that are automatically imported into views from config files to a _ViewImports.cshtml file, instead.
 
    ```dos
    Upgrade Steps
@@ -660,7 +660,7 @@ The Upgrade Assistant will attempt remove any packages that are no longer needed
 
 As you upgrade your existing projects, you will need to decide how you adapt to some architectural and stylistic changes. In this walkthrough, we will be removing a NuGet reference to `Newtonsoft.Json` since a newer version already included in the `Microsoft.AspNetCore.Mvc.NewtonsoftJson` package. Additionally, we will be removing NuGet packages which are used to include static JavaScript and CSS libraries.
 
-1. Open the project file in Visual Studio.
+1. Open the project file in Visual Studio and reload the project if it is unloaded (by right-clicking it in the solution explorer and choosing "Reload project").
 1. Delete the **PackageReference** elements for the following packages:
 
    - `bootstrap`
@@ -695,7 +695,7 @@ Static files that should be served by the web server should be moved to an appro
 For this upgrade, we are going to follow the structure in a new ASP.NET Core 6 project, but you are free to structure the static files in `wwwroot` however you like.
 
 1. Create a new `wwwroot` directory in the root of the project.
-1. Drag the `Scripts` directory into the `lib` directory.
+1. Drag the `Scripts` directory into the `wwwroot` directory.
 1. Rename the `Scripts` directory to `lib`.
 1. Drag the `Content` directory into the `wwwroot` directory.
 1. Rename the `Content` directory to `css`.
