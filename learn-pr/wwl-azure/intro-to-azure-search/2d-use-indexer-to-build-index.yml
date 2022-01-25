@@ -4,14 +4,13 @@ title: Use indexer to build index
 metadata:
   title: Use indexer to build index
   description: "Use indexer to build index"
-  ms.date: 11/30/2021
+  ms.date: 01/25/2022
   author: wwlpublish
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2b-use-indexer-to-build-index.md)]
+  [!include[](includes/2d-use-indexer-to-build-index.md)]

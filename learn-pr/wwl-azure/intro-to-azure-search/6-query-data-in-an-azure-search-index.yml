@@ -4,13 +4,12 @@ title: Query data in an Azure Cognitive Search index
 metadata:
   title: Query data in an Azure Cognitive Search index
   description: "Write simple search queries in the Search explorer, then append extra parameters to manipulate those results"
-  ms.date: 11/30/2021
+  ms.date: 01/25/2022
   author: wwlpublish
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 10
 content: |

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-introduction-to-azure-search.exercise
-title: Exercise
+uid: learn.azure-introduction-to-azure-search.2f-start-with-portal
+title: Start with portal
 metadata:
-  title: Exercise
-  description: "Exercise"
+  title: Start with portal
+  description: "Start with portal"
   ms.date: 01/25/2022
   author: wwlpublish
   ms.author: robmcm
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6a-exercise.md)]
+  [!include[](includes/2f-start-with-portal.md)]
