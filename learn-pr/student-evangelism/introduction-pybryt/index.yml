@@ -26,7 +26,8 @@ roles:
   - school-leader
 products:
   - vs-code
-prerequisites: None 
+prerequisites: |
+  - Basic Python knowledge
 units:
   - learn.intro-to-pybryt.1-introduction
   - learn.intro-to-pybryt.2-high-level
