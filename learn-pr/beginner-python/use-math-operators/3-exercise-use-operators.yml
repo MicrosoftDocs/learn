@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-math-operators.exercise-use-operators
+title: Exercise - Use arithmetic operators
+metadata:
+  title: Exercise - Use arithmetic operators
+  description: This exercise will walk you through a scenario where you will use arithmetic operators in Python.
+  ms.date: 12/02/2021
+  author: geektrainer
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/3-exercise-use-operators.ipynb

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-dictionaries.exercise-create-modify
+title: Exercise - Create Python dictionaries
+metadata:
+  unitType: exercise
+  title: Exercise - Create Python dictionaries
+  description: In this exercise, you'll create and modify data in a Python dictionary.
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/3-exercise-create-modify.ipynb
