@@ -39,9 +39,10 @@ Let's take the example of the insurance company again. You want to train a deep 
 - **PyTorch**: Explore the [PyTorch documentation](https://pytorch.org/).
 - **TensorFlow**: Explore the [TensorFlow documentation](https://www.tensorflow.org/).
 
-Which of these libraries you use depends on your preference. Assuming you'll train a deep learning model for the first time, you may find PyTorch easier to work with when you use Azure Machine Learning. 
+Which of these libraries you use depends on your preference. Assuming you'll train a deep learning model for the first time, you may find PyTorch easier to work with when you use Azure Machine Learning. Both of these frameworks work well with GPUs and support distributed training.
 
-Curated environments exist for both frameworks, or you can create your own custom environment to include the necessary packages. Both of these frameworks work well with GPUs and support distributed training.
+> [!Important]
+> To use a framework like PyTorch or TensorFlow, the necessary software dependencies need to be installed on the compute. To easily create and manage the dependencies across different compute targets, [use Azure Machine Learning **environments**](/azure/machine-learning/how-to-use-environments). Curated environments exist for both frameworks, or you can create your own custom environment to include the necessary packages. 
 
 ### Track metrics and models
 

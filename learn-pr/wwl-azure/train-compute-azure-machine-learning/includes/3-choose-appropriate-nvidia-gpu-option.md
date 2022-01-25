@@ -28,7 +28,7 @@ When using frameworks or libraries that are designed to use GPUs, make sure you 
 To decide which compute to use for a job, think about the following factors:
 
 - **Performance**: Think about the framework you use to train a model. Certain algorithms may deliver a need less time to train but come at a higher cost. GPU performance varies per workload but [a quick overview can be found on NVIDIA's website](https://developer.nvidia.com/deep-learning-performance-training-inference).
-- **Cost**: Depending on your requirements, you may need to choose a model that either is more cost effective or performs better. To save on costs, you can make use of [reserved instances for virtual machines](https://azure.microsoft.com/pricing/reserved-vm-instances/) or [spot pricing](https://azure.microsoft.com/services/virtual-machines/spot/).
+- **Cost**: Depending on your requirements, you may need to choose a model that either is more cost effective or performs better. To save on costs, you can make use of [reserved instances for virtual machines](https://azure.microsoft.com/pricing/reserved-vm-instances/) or [low-priority virtual machines](/azure/machine-learning/how-to-manage-optimize-cost).
 - **Location**: Be aware of the availability of virtual machines per Azure region. If your data needs to remain within a certain region, it can affect your choice of model. 
 - **GPU memory size**: Deep learning models benefit when a compute cluster has enough GPU memory available. Think about the memory requirements for the model you want to train. Requirements may include the size of the dataset and number of parameters. 
 

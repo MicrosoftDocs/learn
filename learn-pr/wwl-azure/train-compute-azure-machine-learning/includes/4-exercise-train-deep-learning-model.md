@@ -3,7 +3,7 @@
 > If you do not already have an Azure subscription, sign up at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
 > To check the available GPU VMs, you can run the `az vm list-skus` command from the Azure Cloud Shell.
 
-Now, it's your chance to load and preprocess data with RAPIDS cuDF.
+Now, it's your chance to train a model with a GPU compute cluster.
 
 In this exercise, you will:
 
