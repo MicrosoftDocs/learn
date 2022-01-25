@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-loops.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "This unit summarizes what you've learned about using `while` and `for` loops in Python."
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

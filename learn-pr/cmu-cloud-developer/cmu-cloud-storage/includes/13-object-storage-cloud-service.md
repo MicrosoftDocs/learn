@@ -8,10 +8,7 @@ An **object** can be considered as a generic container that can store any arbitr
 
 ## REST
 
-**Representational state transfer** (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. The following video discusses HTTP and RESTful interfaces:
-<br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSF5]
+**Representational state transfer** (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. 
 
 REST is an **architectural style** for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a **RESTful** interface. 
 
@@ -33,13 +30,11 @@ The major advantages of REST are that it is:
 -  A standards-based communication because it runs on top of HTTP.
 - Operational in the presence of firewalls as long as HTTP or HTTPS traffic is not filtered.
 
+To learn more about using REST to access and manage data that is stored in the cloud, see [RESTful web API design](/azure/architecture/best-practices/api-design?azure-portal=true).
+
 ## Object storage systems
 
-The following video covers the basics ideas behind object storage systems:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qD]
-
-An example of object-based storage on the cloud is Azure's Blob Storage. Blob Storage allows users to store **objects** in **containers**. Each object can be created, read, and deleted. Note that in the Blob Storage model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite.
+Azure Blob Storage is an example of object-based storage in the cloud. Blob Storage allows users to store **objects** in **containers**. Each object can be created, read, and deleted. Note that in the Blob Storage model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite.
 
 Here is an example of a RESTful HTTP call to Azure Blob Storage to create a container named `mycontainer`. The HTTP call includes authorization information for the client to access the bucket. 
 
@@ -53,7 +48,7 @@ x-ms-meta-Name: StorageSample
 Authorization: SharedKey myaccount:Z5043vY9MesKNh0PNtksNc9nbXSSqGHueE00JdjidOQ=
 ```
 
-Blob Storage can process the request and will send back an HTTP response similar to the following:
+Blob Storage can process the request and will send back an HTTP response similar to the following example:
 
 ``` text
 Response Status:  
@@ -69,6 +64,8 @@ Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
 ```
 
 In the response, Azure has acknowledged the request, indicated that the request was successful (with a "201 Created" message), and returned some information regarding the request.
+
+For information about using REST with Azure Blob Storage, see [Blob Storage REST API](/rest/api/storageservices/blob-service-rest-api?azure-portal=true).
 
 ## Cloud object storage standards: CDMI
 
@@ -95,11 +92,11 @@ The CDMI model is illustrated in Figure 24. A CDMI resource exists on a root loc
 _Figure 24: The CDMI data model_
 
 In addition, CDMI supports the following resource types: 
-- **cdmi-capability:** A special entity that describes the capabilities of this particular cloud store. This entity is important and can be used to discover the capabilities of a cloud (e.g., backup and replication).
-- **cdmi-domain:** Allows for the creation of domains (e.g., groups of users with object access permissions).
+- **cdmi-capability:** A special entity that describes the capabilities of this particular cloud store. This entity is important and can be used to discover the capabilities of a cloud (for example, backup and replication).
+- **cdmi-domain:** Allows for the creation of domains (for example, groups of users with object access permissions).
 - **cdmi-queue:** Allows for the creation of queues of objects that operate in first in, first out (FIFO) order. Applications can use such queues to implement notification or messaging systems.
 
-The advantages of CDMI include the following:
+CDMI offers the following advantages:
 
 - Its vendor-neutral specification of a cloud object storage system allows for simpler data migration from one cloud to another.
 - It enables **cloud peering** for storage, which is a concept wherein resources from different clouds can be connected to enable seamless data sharing between clouds. 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-error-handling.exercise-handle-exceptions
+title: "Exercise - Handle exceptions"
+metadata:
+  unitType: exercise
+  title: Exercise - Handle exceptions
+  description: "Practice how to handle exceptions in this notebook, from simple try/except blocks to handling multiple exceptions."
+  ms.date: 12/10/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/4-exercise-handle-exceptions.ipynb

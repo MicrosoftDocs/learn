@@ -175,7 +175,7 @@ $templateFile = "azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="blanktemplate-"+"$today"
 New-AzResourceGroupDeployment
-  -Name $deploymentName
+  -Name $deploymentName `
   -TemplateFile $templateFile
 ```
 

@@ -12,4 +12,4 @@ Update the SAP monitoring configuration in any of the following scenarios:
  -  You change the size of your Azure VM.
  -  You add new network interfaces to your Azure VM.
 
-To update monitoring settings, redeploy the Azure Enhanced Monitoring Extension for SAP (by rerunning the PowerShell cmdlet **Set-AzVMAEMExtension** or the Azure CLI command `azure vm enable-aem`).
+To update monitoring settings, redeploy the Azure Extension for SAP (by rerunning the PowerShell cmdlet **Set-AzVMAEMExtension** or the Azure CLI command `azure vm enable-aem`).
