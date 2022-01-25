@@ -3,7 +3,7 @@
 
 When you've deployed the VM, the Azure VM Agent is automatically installed within the guest OS. The agent is required in order to install the Azure Extension for SAP, which is available in the Azure Extension Repository. Installation of the extension can be performed by using PowerShell or Azure CLI.
 
-:::image type="content" source="../media/azure-extension-for-sap-animated-09db31af.gif":::
+:::image type="content" source="../media/azure-extension-for-sap-animated-09db31af.gif" alt-text="Azure Extension for SAP and Windows Azure Diagnostic Agent Extension are installed on Azure VM running SAP NetWeaver system. The SAP SAPOSCOL/SAP HostControl process reads, writes and requests Monitoring data.":::
 
 
 There are two versions of the Azure Extension for SAP. Check the prerequisites for SAP and required minimum versions of SAP Kernel and SAP Host Agent in the resources listed in [SAP resources](/azure/virtual-machines/workloads/sap/vm-extension-for-sap#42ee2bdb-1efc-4ec7-ab31-fe4c22769b94).
