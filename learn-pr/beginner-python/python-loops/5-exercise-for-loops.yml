@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-loops.exercise-for-loops
+title: Exercise - Create a 'for' loop
+metadata:
+  unitType: exercise
+  title: Exercise - Create a 'for' loop
+  description: In this exercise, you'll create a list and then loop over the contents by using a `for` loop.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/5-exercise-for-loops.ipynb

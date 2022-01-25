@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-dictionaries.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: 'Summary: Managing data with Python dictionaries'
+  description: This module explored how to use dictionaries in Python.
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

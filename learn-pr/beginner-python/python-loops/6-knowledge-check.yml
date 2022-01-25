@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-loops.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge about Python 'for' loops.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "What statement would loop over the sequence `collection` and assign the variable `item`?"
+    choices:
+    - content: "`for each item in collection:`"
+      isCorrect: false
+      explanation: "Incorrect. Python uses the word `for`, not `for each`."
+    - content: "`for item in collection:`"
+      isCorrect: true
+      explanation: "Correct! Using the `for` variable in the sequence is the right syntax."
+    - content: "`for collection in item:`"
+      isCorrect: false
+      explanation: "Incorrect. The variable to assign comes first, and `collection` comes after the `in` keyword."
+  - content: "What is the correct statement to use to unpack variables named `left` and `right` from the list `turns`?"
+    choices:
+    - content: "`for left, right in turns:`"
+      isCorrect: true
+      explanation: "Correct! Variables are separated by commas."
+    - content: "`for left and right in turns:`"
+      isCorrect: false
+      explanation: "Incorrect. Variables are separated by commas in an unpacking sequence, not the `and` keyword."
+    - content: "`for [left, right] in turns:`"
+      isCorrect: false
+      explanation: "Incorrect. The variables to unpack don't need to be surrounded by brackets."
