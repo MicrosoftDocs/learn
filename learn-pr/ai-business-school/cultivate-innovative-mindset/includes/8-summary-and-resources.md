@@ -10,19 +10,16 @@ Now that you’ve reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-To learn more about our perspective on responsible AI as well as the impact of AI on our future, read our book [The Future Computed](https://blogs.microsoft.com/uploads/2018/02/The-Future-Computed_2.8.18.pdf).
-
-* [Download PDF](https://aka.ms/AA629xh) of Responsible AI in Government – Choosing a governance model to share with others.
-* [Download PDF](https://aka.ms/AA62hpi) of Responsible AI in Government – Policy considerations to share with others.
-* [Download PDF](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4DIvg) of "AI Maturity and organizations: Understanding AI maturity."
-* Check out reports, podcasts, and training resources in the [AI in Government content hub](https://info.microsoft.com/ww-landing-AI-in-Government-Playlist.html) to learn more about how governments can leverage AI to lower costs while providing higher-quality services to citizens.
-* To see how enterprises and other organizations are governing their use of responsible AI, review this module: [Identify governing practices for responsible AI](/learn/modules/responsible-ai-governing-practices/index).
+* To learn more about WPP, Mondelez and other businesses leading their industries with AI, visit [Best of Business AI](https://businessai.microsoft.com/).
+* To learn more about the six dimensions of resilience, visit [The Digital Path to Business Resilience](https://www.bcg.com/publications/2020/digital-path-to-business-resilience).
+* Learn how to build a more inclusive future for the tech industry and check out the [Build your tech resilience](https://docs.microsoft.com/learn/paths/tech-resilience/) learning path.
+* Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
 * Download PDF of the case study introduction to share with others.
 * Download PDF of the case study resolution to share with others.
 
 ## References
 
-1. To learn more about WPP, Mondelez and other businesses leading their industries with AI, visit [Best of Business AI](https://businessai.microsoft.com/).
-1. To learn more about the six dimensions of resilience, visit [The Digital Path to Business Resilience](https://www.bcg.com/publications/2020/digital-path-to-business-resilience).
-1. Learn how to build a more inclusive future for the tech industry and check out the [Build your tech resilience](https://docs.microsoft.com/learn/paths/tech-resilience/) learning path.
-1. Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
+1. McKinsey and Company, [“Innovation in a crisis: Why it is more critical than ever,”](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/innovation-in-a-crisis-why-it-is-more-critical-than-ever) Jordan Bar Am, Laura Furstenthal, Felicitas Jorge, and Erik Roth, 17 June 2020.
+1. Deloitte Insights, [“Accelerating digital innovation inside and out,”](https://www2.deloitte.com/us/en/insights/focus/digital-maturity/digital-innovation-ecosystems-organizational-agility.html) 04 June 2019.
+1. Harvard Business Review, [“Cross-Silo Leadership,”](https://hbr.org/2019/05/cross-silo-leadership) Amy C. Edmondson, Sujin Jang, and Tizana Casciaro, May-June 2019.
+1. Fast Company, [“How 3M Gave Everyone Days Off and Created an Innovation Dynamo,”](https://www.fastcompany.com/1663137/how-3m-gave-everyone-days-off-and-created-an-innovation-dynamo) Kaomi Goetz, 01 February 2011.
