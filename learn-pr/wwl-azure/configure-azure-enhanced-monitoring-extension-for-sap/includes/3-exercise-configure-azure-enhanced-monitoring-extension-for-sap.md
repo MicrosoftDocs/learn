@@ -1,6 +1,6 @@
 ## Azure PowerShell for Linux and Windows VMs
 
-To install the Azure Enhanced Monitoring Extension for SAP by using PowerShell:
+To install the Azure Extension for SAP by using PowerShell:
 
 1.  Make sure that you have installed the latest version of the Az PowerShell module.
 2.  Run the following PowerShell cmdlet. For a list of available environments, run the commandlet `Get-AzEnvironment`. If you want to use global Azure, your environment is `AzureCloud`. For Azure in China, select `AzureChinaCloud`.
@@ -30,7 +30,7 @@ Wait 15-30 minutes for Azure Diagnostics to collect the relevant data.
 
 ## Azure CLI for Linux VMs
 
-To install the Azure Enhanced Monitoring Extension for SAP by using Azure CLI:
+To install the Azure Extension for SAP by using Azure CLI:
 
 1.  Install using Azure CLI 2.0.
 2.  Sign in with your Azure account:
@@ -54,7 +54,7 @@ To install the Azure Enhanced Monitoring Extension for SAP by using Azure CLI:
 
 ## Checks and troubleshooting for end-to-end monitoring
 
-After you have deployed your Azure VM and set up the relevant Azure monitoring infrastructure, run the readiness check for the Azure Enhanced Monitoring Extension for SAP to make sure that all performance metrics that appear inside your SAP application are provided by the underlying Azure monitoring infrastructure.
+After you have deployed your Azure VM and set up the relevant Azure monitoring infrastructure, run the readiness check for the Azure Extension for SAP to make sure that all performance metrics that appear inside your SAP application are provided by the underlying Azure monitoring infrastructure.
 
 If all readiness check results are positive and all relevant performance counters appear fine, Azure monitoring has been set up successfully and you can proceed with the installation of SAP Host Agent. If the readiness check indicates that counters are missing, run the health check for the Azure monitoring infrastructure.
 
@@ -62,11 +62,11 @@ If all readiness check results are positive and all relevant performance counter
 
 1.  Sign in to the Azure virtual machine (using an admin account is not necessary).
 2.  Open a Command Prompt window.
-3.  At the command prompt, change the directory to the installation folder of the Azure Enhanced Monitoring Extension for SAP: `C:\Packages\Plugins\Microsoft.AzureCAT.AzureEnhancedMonitoring.AzureCATExtensionHandler\[version]\drop`. The version in the path to the monitoring extension might vary. If you see folders for multiple versions of the monitoring extension in the installation folder, check the configuration of the AzureEnhancedMonitoring Windows service, and then switch to the folder indicated as **Path to executable**.
+3.  At the command prompt, change the directory to the installation folder of the Azure Extension for SAP: `C:\Packages\Plugins\Microsoft.AzureCAT.AzureEnhancedMonitoring.AzureCATExtensionHandler\[version]\drop`. The version in the path to the monitoring extension might vary. If you see folders for multiple versions of the monitoring extension in the installation folder, check the configuration of the **AzureEnhancedMonitoring** Windows service, and then switch to the folder indicated as **Path to executable**.
 4.  At the command prompt, run azperflib.exe without any parameters. Azperflib.exe runs in a loop and updates the collected counters every 60 seconds. To end the loop, close the Command Prompt window.
     
     > [!NOTE]
-    > If the Azure Enhanced Monitoring Extension is not installed, or the AzureEnhancedMonitoring service is not running, the extension has not been configured correctly.
+    > If the Azure Extension for SAP is not installed, or the **AzureEnhancedMonitoring** service is not running, the extension has not been configured correctly.
 5.  Azperflib.exe output shows all populated Azure performance counters for SAP. At the bottom of the list of collected counters, a summary and health indicator show the status of Azure monitoring. Check the result returned for the **Counters total** output, which is reported as empty, and for **Health status**. Next, interpret the resulting values as follows:
     
     :::row:::
@@ -90,9 +90,7 @@ If all readiness check results are positive and all relevant performance counter
         **Counters total - empty**
       :::column-end:::
       :::column:::
-        
-    
-    The following two Azure storage counters can be empty:
+        The following two Azure storage counters can be empty:
     
      -  Storage Read Op Latency Server msec
      -  Storage Read Op Latency E2E msec
