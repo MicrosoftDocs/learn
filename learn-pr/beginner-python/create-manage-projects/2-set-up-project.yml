@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-manage-projects.set-up-project
+title: Work with packages
+metadata:
+  title: Work with packages
+  description: Learn how to use a virtual environment, and then install and use packages.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-set-up-project.md)]

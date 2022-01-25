@@ -363,9 +363,24 @@ Node packages typically use the [Semantic Versioning](https://semver.org?azure-p
 
 ### Copy the files to your VM
 
-1. You're all done editing files. Ensure that you saved changes to each file and then close the editor.
+Before you proceed, make sure you have your VM's IP address handy. If you don't have it, run these commands from the Cloud Shell to retrieve it:
 
-    To close the editor, select the ellipses in the corner, and then select **Close Editor**.
+```azurecli
+ipaddress=$(az vm show \
+  --name MeanStack \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --show-details \
+  --query [publicIps] \
+  --output tsv)
+```
+
+```bash
+echo $ipaddress
+```
+
+1. You're all done editing files. Make sure that you saved changes to each file and then close the editor.
+
+    To close the editor, select the ellipses in the corner, then select **Close Editor**.
 
 1. Run the following `scp` command to copy the contents of the `~/Books` directory in your Cloud Shell session to the same directory name on your VM.
 
@@ -387,20 +402,7 @@ The application also requires Express and the body-parser packages. body-parser 
 
 Let's connect to your VM and install the packages you specified in `package.json`.
 
-1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run these commands from the Cloud Shell to retrieve it.
-
-    ```azurecli
-    ipaddress=$(az vm show \
-      --name MeanStack \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --show-details \
-      --query [publicIps] \
-      --output tsv)
-    ```
-
-    ```bash
-    echo $ipaddress
-    ```
+1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run the Cloud Shell commands in the previous section to retrieve it.
 
 1. Like you did earlier, create an SSH connection to your VM.
 

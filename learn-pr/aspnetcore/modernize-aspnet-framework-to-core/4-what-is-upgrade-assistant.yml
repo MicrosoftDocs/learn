@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.modernize-aspnet-framework-to-core.4-what-is-upgrade-assistant
+metadata:
+  title: What is the .NET Upgrade Assistant?
+  description: Understand how the .NET Upgrade Assistant helps you to analyze and incrementally upgrade an ASP.NET application to ASP.NET Core.
+  ms.date: 01/11/2022
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: What is the .NET Upgrade Assistant?
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-what-is-upgrade-assistant.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which of the following is not a feature of the .NET Upgrade Assistant?
+      choices:
+      - content: Update my authentication and authorization logic to use ASP.NET Core Identity.
+        isCorrect: true
+        explanation: This is not a feature provided by the .NET Upgrade Assistant.
+      - content: Analyze my application to determine which features are not supported in ASP.NET Core.
+        isCorrect: false
+        explanation: The .NET Upgrade Assistant can analyze ASP.NET features and help you determine which are not supported in ASP.NET Core.
+      - content: Scan the NuGet packages in my application to determine which features are not supported in ASP.NET Core.
+        isCorrect: false
+        explanation: The .NET Upgrade Assistant can scan the NuGet packages in your application to determine which features are not supported in ASP.NET Core.

@@ -28,6 +28,7 @@ products:
   - vs-code
   - aspnet-core
 prerequisites: |
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download).
   - Familiarity with .NET 6
   - A basic understanding of what an API is
 units:
