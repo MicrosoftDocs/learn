@@ -110,7 +110,20 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
+                "src": "beginner-python",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },           
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -560,6 +573,18 @@
         ],
         "resource": [{
                 "src": "azure",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "beginner-python",
                 "files": [
                     "**/*.gif",
                     "**/*.png",
