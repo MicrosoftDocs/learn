@@ -85,7 +85,7 @@ The destination fragment is the portion of URL after '\#', which is used by the 
 
 ### Query string parameters
 
-You can also replace the query string parameters in the redirected URL. To replace any existing query string from the incoming request URL, set this field to 'Replace' and then set the appropriate value. Otherwise, keep the original set of query strings by setting the field to 'Preserve'. As an example, using this field, you can redirect all traffic sent to https://www.contoso.com/foo/bar to https://www.contoso.com/foo/bar?&amp;utm\_referrer=https%3A%2F%2Fwww.bing.com%2F.
+You can also replace the query string parameters in the redirected URL. To replace any existing query string from the incoming request URL, set this field to 'Replace' and then set the appropriate value. Otherwise, keep the original set of query strings by setting the field to 'Preserve'. As an example, using this field, you can redirect all traffic sent to https://www.contoso.com/foo/bar to https://www.contoso.com/foo/bar?&utm_referrer=https%3A%2F%2Fwww.bing.com%2F.
 
 ## Configure rewrite policies
 
