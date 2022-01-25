@@ -202,23 +202,29 @@ With a reference constructed as above, we can give students a chance to check th
 >>> with pybryt.check(assignment_ref, group="mean"):
 ...     for test_list in test_lists:
 ...         mean(test_list)
->>> with pybryt.check(assignment_ref, group="median"):
-...     for test_list in test_lists:
-...         median(test_list)
->>> with pybryt.check(assignment_ref):
-...     for test_list in test_lists:
-...         mean(test_list)
-...         median(test_list)
 REFERENCE: mean-median
 SATISFIED: True
 MESSAGES:
   - Determined the length of the list
   - Calculated the correct mean of the list
+```
+
+```python
+>>> with pybryt.check(assignment_ref, group="median"):
+...     for test_list in test_lists:
+...         median(test_list)
 REFERENCE: mean-median
 SATISFIED: True
 MESSAGES:
   - Determined the length of the list
   - Sorted the list
+```
+
+```python
+>>> with pybryt.check(assignment_ref):
+...     for test_list in test_lists:
+...         mean(test_list)
+...         median(test_list)
 REFERENCE: mean-median
 SATISFIED: True
 MESSAGES:
