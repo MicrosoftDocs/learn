@@ -33,7 +33,7 @@ roles:
 - student
 products:
 - github
-- vs
+- vs-ide
 units:
 - learn.visual-studio-github-push.1-introduction
 - learn.visual-studio-github-push.2-add-github-account
