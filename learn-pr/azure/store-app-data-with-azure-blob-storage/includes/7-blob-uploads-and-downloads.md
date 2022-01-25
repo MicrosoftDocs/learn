@@ -8,7 +8,7 @@ To get a `BlobClient` by name, call the `GetBlobClient` methods on the `BlobCont
 
 Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  We recommend using these async implementations whenever possible in your application.
 
-We also recommend using streams instead of in-memory structures like bite arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
+We also recommend using streams instead of in-memory structures like byte arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
 
 ::: zone-end
 
