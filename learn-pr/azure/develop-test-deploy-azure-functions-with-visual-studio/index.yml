@@ -27,7 +27,7 @@ roles:
 - student
 products:
 - azure
-- vs
+- vs-ide
 - azure-functions
 units:
 - learn.develop-test-deploy-azure-functions-with-visual-studio.1-introduction

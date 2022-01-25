@@ -1,22 +1,22 @@
 ## Learn more with a .NET beginner video series
 
-- [C# Beginner Series](https://aka.ms/CsharpBeginnerVideos)
+- [C# 101](https://aka.ms/CsharpBeginnerVideos)
 - [Blazor for Beginners](https://aka.ms/BlazorBeginnerVideos)
-- [Web API for Beginners](https://aka.ms/WebAPIBeginnerVideos)
-- [Mobile development with Xamarin for Beginners](https://aka.ms/XamarinBeginnerVideos)
+- [Web APIs for Beginners](https://aka.ms/WebAPIBeginnerVideos)
+- [Xamarin 101](https://aka.ms/XamarinBeginnerVideos)
 
 ## Looking for more information?
 
-- [Check Out the C# Documentation](https://aka.ms/CsharpDocs)
-- [Check Out the .NET Documentation](https://aka.ms/NetDocs)
+- [C# documentation](https://aka.ms/CsharpDocs)
+- [.NET documentation](https://aka.ms/NetDocs)
 
 ## Ready to build something?
 
-- [Build a Mobile App](https://aka.ms/LearnXamarinForms) 
-- [Build a Web UI in under one hour](https://aka.ms/LearnASPCore)
-- [Build a Web API in under one hour](https://aka.ms/LearnASPCoreapi)
-- [Build a Web App](https://aka.ms/LearnBlazorWebassembly)
+- [Build mobile apps with Xamarin.Forms](https://aka.ms/LearnXamarinForms) 
+- [Create a web UI with ASP.NET Core](https://aka.ms/LearnASPCore)
+- [Create a web API with ASP.NET Core Controllers](https://aka.ms/LearnASPCoreapi)
+- [Build a web app with Blazor](https://aka.ms/LearnBlazorWebassembly)
 
 ## Find more resources and ways to connect
 
-- [.NET Community Resources](https://aka.ms/NetCommunity)
+- [.NET Developer Community](https://aka.ms/NetCommunity)

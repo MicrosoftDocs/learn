@@ -42,7 +42,7 @@ You can choose to use the terminal, or Visual Studio Code to run your app.
 
     This command will build and then start the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to projects files will automatically trigger a rebuild and then restart your app.
 
-    Your computers default browser should open a new page at [http://localhost:5000](http://localhost:5000).
+    Your computers default browser should open a new page at `http://localhost:5000`.
 
 1. To stop the app running, press <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal window.
 

@@ -84,8 +84,13 @@ In this example, because the instrumentation key isn't considered sensitive data
 
 :::code language="bicep" source="code/6-existing-listkeys.bicep" highlight="1-3,15":::
 
-Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array.
+Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array. Each resource type has different information available from the `listKeys()` function. The Bicep extension for Visual Studio Code gives you hints to help you to understand the data that each resource's `listKeys()` function returns. The screenshot below shows the `listKeys()` function's output for a storage account:
 
-Different resource types have different information available from the `listKeys()` function. Some resources don't support `listKeys()` at all, or use other function names instead.
+:::image type="content" source="../media/6-code-hint-listkeys-storage.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several the information returned by the listKeys function for a storage account." border="true":::
 
-The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.
+Some resources support other functions, too. Visual Studio Code's IntelliSense lists the functions available for each resource. In the screenshot below, you can see that storage accounts provide functions named `listAccountSas()` and `listServiceSas()` in addition to `listKeys()`:
+
+:::image type="content" source="../media/6-code-hint-functions.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several functions available for the storage account." border="true":::
+
+> [!IMPORTANT]
+> The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.

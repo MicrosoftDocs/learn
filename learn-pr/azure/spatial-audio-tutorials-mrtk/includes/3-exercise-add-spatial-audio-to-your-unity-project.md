@@ -1,4 +1,4 @@
-Through this module series, you'll learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and How to enable reverb when using HRTF offload.
+Through this module series, you'll learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and how to enable reverb when using HRTF offload.
 
 The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity) has a completed Unity project of this tutorial sequence.
 

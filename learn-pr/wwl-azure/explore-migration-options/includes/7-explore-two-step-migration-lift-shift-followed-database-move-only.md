@@ -4,7 +4,7 @@ Consider the following for the two-step migration:
  -  Allocate the target infrastructure on Azure, which includes the cloned system and target SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be deployed using predefined Azure Resource Manager templates.
  -  The cloned system can be built with a homogeneous system copy (backup/restore) or via DBMS replication tools (e.g. Oracle Data Guard or SQL Always-On).
  -  Business and technical testing should be initiated (with functional, integration and acceptance testing to ensure the move of data has been successful).
- -  Following business and technical validation, the traditional DMO process can be followed to migrate and upgrade to SAP HANA.
+ -  Following business and technical validation, the traditional Database Migration Option (DMO) process can be followed to migrate and upgrade to SAP HANA.
  -  DMO can be leveraged with the memory pipe method (for example, export/import occurs within the same application server and memory segment for accelerated migrations).
  -  Following the migration to SAP HANA, business and technical validation should again be initiated.
  -  In this approach, two downtimes and two testing cycles are required.
@@ -58,7 +58,7 @@ There are many factors that influence the downtime associated with an SAP databa
     Toolset
   :::column-end:::
   :::column:::
-    SWPM, SUM, DMO of SUM, version of the toolset
+    SAP Software Provisioning Manager (SWPM), Software Update Manager (SUM), DMO of SUM, version of the toolset
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,7 +82,7 @@ There are many factors that influence the downtime associated with an SAP databa
     Pre and post migration validation
   :::column-end:::
   :::column:::
-    Functional, integration and acceptance Testing.
+    Functional, integration, and acceptance testing.
   :::column-end:::
 :::row-end:::
 

@@ -32,7 +32,7 @@ products:
 prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
-  - A HoloLens 2 device configured for development
+  - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2020.3.X/2019.4.X installed, and the Universal Windows Platform Build Support module added
   - [Set Up Your Project and Use Hand Interaction](/learn/modules/learn-mrtk-tutorials/)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)

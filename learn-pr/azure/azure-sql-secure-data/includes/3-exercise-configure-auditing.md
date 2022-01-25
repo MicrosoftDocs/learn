@@ -109,7 +109,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) search bar, enter **Log analytics**, and then select **Log Analytics workspaces** from the results. The **Log Analytics workspaces** pane appears.
 
-1. Select **Create log analytics workspace**. The **Create Log Analytics workspace** appears.
+1. Select **Create**. The **Create Log Analytics workspace** appears.
   
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -119,7 +119,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
-    | Logic app name | Enter *azuresql-la* |
+    | Name | Enter *azuresql-la* |
     | Region | Select a location closest to you from the following list |
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)] 

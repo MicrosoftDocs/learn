@@ -110,7 +110,20 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
+                "src": "beginner-python",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },           
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -571,6 +584,18 @@
                 "dest": "modules"
             },
             {
+                "src": "beginner-python",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
                 "files": [
                     "**/*.gif",
@@ -671,6 +696,9 @@
         },
         "fileMetadata": {
             "sandbox-disabled": {},
+            "adobe-target": {
+                "azure/*/*-*.yml": true
+            },
             "localization_scopes": {
                 "azure/**/*.yml": [
                     "de-de",

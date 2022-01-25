@@ -5,8 +5,8 @@ metadata:
   title: What is Microsoft Information Protection and Azure Information Protection?
   description: What is Microsoft Information Protection and Azure Information Protection?
   ms.date: 03/25/2021
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

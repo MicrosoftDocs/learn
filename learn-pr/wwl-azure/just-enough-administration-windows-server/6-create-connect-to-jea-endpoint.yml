@@ -4,13 +4,13 @@ title: Create and connect to a JEA endpoint
 metadata:
   title: Create and connect to a JEA endpoint
   description: "Create and connect to a JEA endpoint"
-  ms.date: 11/25/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-create-connect-to-jea-endpoint.md)]

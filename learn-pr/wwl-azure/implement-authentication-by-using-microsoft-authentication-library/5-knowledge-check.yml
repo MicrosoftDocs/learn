@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/11/2022
+  ms.date: 01/17/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which of the following MSAL libraries supports single-page web apps?"
     choices:
-    - content: "MSAL Angular"
+    - content: "MSAL Node"
       isCorrect: false
-      explanation: "That's incorrect. MSAL Angular does not support single-page web apps."
+      explanation: "That's incorrect. MSAL Node does not support single-page web apps."
     - content: "MSAL.js"
       isCorrect: true
-      explanation: "That's correct. MSAL.js is the only Microsoft Authentication Library that supports single-page applications."
+      explanation: "That's correct. MSAL.js supports single-page applications."
     - content: "MSAL.NET"
       isCorrect: false
       explanation: "That's incorrect. MSAL.NET does not support single-page web apps."

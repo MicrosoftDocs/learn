@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-error-handling.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "In this module, we covered handling and raising exceptions, along with common problems with catching all exceptions."
+  ms.date: 12/10/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

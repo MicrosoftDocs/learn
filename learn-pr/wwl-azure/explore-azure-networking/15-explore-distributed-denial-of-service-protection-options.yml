@@ -4,13 +4,12 @@ title: Explore Distributed Denial-of-Service (DDoS) protection options
 metadata:
   title: Explore Distributed Denial-of-Service (DDoS) protection options
   description: "Explore Distributed Denial-of-Service (DDoS) protection options"
-  ms.date: 12/08/2021
+  ms.date: 01/21/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 4
 content: |

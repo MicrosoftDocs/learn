@@ -6,7 +6,7 @@ In this module, you'll configure Unity for Windows Mixed Reality development and
 
 By the end of this module, you'll be able to set up a Unity project configured for Windows Mixed Reality development and use the Mixed Reality Toolkit to accelerate your mixed reality development. You'll understand how to enable the user to manipulate holograms with their hands.
 
-    :::image type="content" source="../media/001-hololens-interaction.png" alt-text="Screenshot of HoloLens user interacting with a hologram." :::
+:::image type="content" source="../media/001-hololens-interaction.png" alt-text="Screenshot of HoloLens user interacting with a hologram." lightbox="../media/001-hololens-interaction.png":::
 
 ## Learning objectives
 

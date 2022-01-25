@@ -5,8 +5,8 @@ metadata:
   title: Instrument the application
   description: In this unit, you'll learn why and how to add custom telemetry code to a web application.
   ms.date: 02/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

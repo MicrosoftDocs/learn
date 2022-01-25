@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.4-list-access
 metadata:
-  title: Exercise - List access using Azure RBAC and the Azure portal 
-  description: Exercise - Learn how to list the role assignments for yourself and at different scopes in the Azure portal. 
+  title: Exercise - List access using Azure RBAC and the Azure portal
+  description: Exercise - Learn how to list the role assignments for yourself and at different scopes in the Azure portal.
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - List access using Azure RBAC and the Azure portal

@@ -19,7 +19,7 @@ More detailed information is available in [SAP Note \#2367194](https://launchpad
  -  An Azure Storage Account, which uses Standard Storage throttles around 20 K IOPS.
  -  Latency for typical DBMS I/Os is usually in the double-digit millisecond range. Depending on the size, latencies can be even in the middle double-digit millisecond range.
  -  You see large variations in disk latency.
- -  Latency for writing to DBMS transaction logs might be so high that the database throttles. This might restrict the CPU resource consumption for the DBMS, and slow down business processing of the SAP application.
+ -  Latency for writing to DBMS transaction logs might be so high that the database throttles. This latency might restrict the CPU resource consumption for the DBMS, and slow down business processing of the SAP application.
  -  When using Azure Standard different VM types might not be certified for SAP usage, for example, D- and G-Series. Only those VMs that work with Azure Premium Storage (DS- and GS-series) were certified."
 
 Most of the performance issues of the DBMS that are deployed in Azure VMs are related to:
