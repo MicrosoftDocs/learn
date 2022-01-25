@@ -1,6 +1,6 @@
 A cloud business case analysis may be required before a government agency may utilize the cloud or cloud computing technologies, including sovereign clouds, as well as the different types of cloud hosting environments. Because government entities act in the interest of their stakeholders, U.S. persons, they must do so by making investments to avoid waste and abuse.
 
-Performing a Business Case Analysis follows a pre-defined process using a template provided by the U.S. Government. Investments are measured based upon performance measures (baseline, target, and goal), the operational impact, and financial costs, such as savings projections the investment will guarantee.
+Performing a business case analysis follows a pre-defined process using a template provided by the U.S. Government. Investments are measured based upon performance measures (baseline, target, and goal), the operational impact, and financial costs. The financial costs include savings projections that the investment will guarantee.
 
 While it's not always required, performing an Analysis of Alternatives (AoA) can provide a holistic picture of financial measures, financial run costs, migration and innovation costs, productivity gains, and business and mission gains that are part of a digital transformation journey. By enumerating these considerations, you may benefit in helping to determine which cloud environment best suits your workload.
 

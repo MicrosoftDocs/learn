@@ -3,7 +3,7 @@ Planning a cloud adoption strategy leveraging U.S. Sovereign clouds has many con
 ## Common Critical Organization Events
 
 - Data center exit
-- Merger, acquisition, re-organization, or divestiture
+- Merger, acquisition, reorganization, or divestiture
 - Reduction in capital expenses or reduction in allocated budget
 - End of support for mission-critical technologies
 - Response to regulatory compliance changes
@@ -14,7 +14,7 @@ Planning a cloud adoption strategy leveraging U.S. Sovereign clouds has many con
 
 Consolidating or eliminating data centers occurs regularly, and as the nature of Government evolves, so do its organizational structures. Government organizations have fluctuating budgets, and over time, must evaluate whether it’s financially viable to maintain support for some mission-critical technologies.
 
-As the OMB, GSA, President, Congress, and other Government organizations introduce new orders, organizations must decide how they will respond. If there is a need to improve IT stability and even address climate change, for example, organizations must decide whether to migrate workloads or innovate.
+As the OMB, GSA, President, Congress, and other Government organizations introduce new orders, organizations must decide how they'll respond. If there's a need to improve IT stability and even address climate change, for example, organizations must decide whether to migrate workloads or innovate.
 
 ## Moving away from "The Five R's"
 
@@ -30,7 +30,7 @@ Over time, we’ve noticed that these critical organization events typically req
 
 ## When to Migrate
 
-If the desire is simply cost savings, reduction in complexity, operational optimization, better agility, providing the ability to later provide more technical capabilities, scaling to meet mission and geographic demands, or integrating into a broader IT systems portfolio, Government entities benefit best by simply migrating their workloads to the cloud.
+If the desire is cost savings, reduction in complexity, operational optimization, better agility, providing the ability to later provide more technical capabilities, scaling to meet mission and geographic demands, or integrating into a broader IT systems portfolio, Government entities benefit best by migrating their workloads to the cloud.
 
 > - Cost savings
 > - Reduction in technical complexity

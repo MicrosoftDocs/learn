@@ -40,7 +40,7 @@ The major components of a Business Case Analysis are:
 
 ## Standardized Business Case Analysis template
 
-In 2014, the DoD published the "DOD Use of Enterprise Information Technology Standard Business Case Analysis" memorandum. This memo provides a template to ensure consistency, and that the costs, benefits, operational impacts, and risks are standardized when a cloud consumer chooses a solution.
+In 2014, the DoD published the "DOD Use of Enterprise Information Technology Standard Business Case Analysis" memorandum. This memo provides a template to ensure consistency. The costs, benefits, operational impacts, and risks are standardized when a cloud consumer chooses a solution.
 
 ### Business Case Analysis outline example
 
@@ -119,7 +119,7 @@ When choosing which cloud environment to leverage, a Business Case Analysis may 
 
 ### Performance measures (baseline, target, and goal)
 
-You can determine your baseline, target and goal performance measures by using:
+You can determine your baseline, target, and goal performance measures by using:
 - [Azure service level agreements](https://azure.microsoft.com/support/legal/sla/)
 - [Performance efficiency](/azure/architecture/framework/#performance-efficiency) in the [Well-Architected Framework](/azure/architecture/framework/)
 
@@ -144,6 +144,6 @@ Azure Commercial, Azure Government, Azure Secret, and Azure Top Secret all have 
 
 ### Know your requirements
 
-All projects include gathering requirements for the workload to be deployed. As you decide which Sovereign Cloud environment to use, be sure to have a current list of requirements to ensure that the requirements will be met in the environment or environments you select.
+All projects include gathering requirements for the workload to be deployed. As you decide which Sovereign Cloud environment to use, be sure to have a current list of requirements to ensure they will be met in the environment (or environments) you select.
 
 Within the Cloud Adoption Framework, [Microsoft provides guidance on how to create a Business Case](/azure/cloud-adoption-framework/strategy/cloud-migration-business-case).

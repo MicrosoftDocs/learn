@@ -26,7 +26,7 @@ Some examples of NFO's are improvements in
 
 As part of an Analysis of Alternatives process, it’s also very important to identify the non-financial operational benefits that utilizing US Sovereign Clouds will bring.
 
-- **Workload sovereignty**. Utilizing US Sovereign Clouds allows an agency the ability to meet data sovereignty and data residency requirements of Federal mandates. It provides ultra low latency to end users and extends the ability for the agency to provide its services to employees, support contractors, citizens, and soldiers globally.
+- **Workload sovereignty**. Utilizing US Sovereign Clouds allows an agency the ability to meet data sovereignty and data residency requirements of Federal mandates. It provides ultra-low latency to end users and extends the ability for the agency to provide its services to employees, support contractors, citizens, and soldiers globally.
 
 - **Pro-active Cybersecurity posture.** Because Microsoft operates security operations centers, it provides users to proactively address cyber security challenges, while also enabling exponential growth.
 
