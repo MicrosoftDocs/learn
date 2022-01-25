@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.advanced-pybryt
 metadata:
-  title: Advanced PyBryt
+  title: Advanced PyBryt for Classroom Auto-assessment
   description: Learn advanced patterns in auto-assessment with PyBryt.
   ms.date: 1/10/2022
   author: chrispyles
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Advanced PyBryt
+title: Advanced PyBryt for Classroom Auto-assessment
 summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
 abstract: |
   In this module you will:
