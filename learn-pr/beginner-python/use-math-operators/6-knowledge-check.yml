@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-math-operators.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 12/02/2021
+  author: geektrainer
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "What function is used to convert a string to an integer?"
+    choices:
+    - content: "`int`"
+      isCorrect: true
+      explanation: "Correct! Use `int` to convert strings to integers."
+    - content: "`float`"
+      isCorrect: false
+      explanation: "Incorrect. Use `float` to convert strings to floating points."
+    - content: "`input`"
+      isCorrect: false
+      explanation: "Incorrect. Use `input` to prompt the user for information."
+  - content: "What function is used to determine an absolute value?"
+    choices:
+    - content: "`round`"
+      isCorrect: false
+      explanation: "Incorrect. `round` is used to round a number."
+    - content: "`floor`"
+      isCorrect: false
+      explanation: "Incorrect. `floor` is used to round a number down."
+    - content: "`abs`"
+      isCorrect: true
+      explanation: "Correct! `abs` is used to determine an absolute value."
+  - content: "What operator is used to determine a modulo?"
+    choices:
+    - content: "`*`"
+      isCorrect: false
+      explanation: "Incorrect. `*` is used for multiplication."
+    - content: "`+`"
+      isCorrect: false
+      explanation: "Incorrect. `+` is used for addition."
+    - content: "`%`"
+      isCorrect: true
+      explanation: "Correct! `%` is used to determine the modulo."

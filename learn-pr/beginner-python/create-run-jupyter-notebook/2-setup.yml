@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-jupyter-notebook.setup
+title: Set up your environment
+metadata:
+  title: Set up your environment
+  description: Set up your environment to use Jupyter notebooks, a useful way to organize your code authoring process in Python.
+  ms.date: 12/02/2021
+  author: jlooper
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-setup.md)]
