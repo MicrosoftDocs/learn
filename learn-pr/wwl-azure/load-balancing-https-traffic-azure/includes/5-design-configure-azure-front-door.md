@@ -73,15 +73,15 @@ You can set the protocol that will be used for redirection. The most common use 
 
 ### Destination host
 
-As part of configuring a redirect routing, you can also change the hostname or domain for the redirect request. You can set this field to change the hostname in the URL for the redirection or otherwise preserve the hostname from the incoming request. So, using this field you can redirect all requests sent on https://www.contoso.com/\* to https://www.fabrikam.com/\*.
+As part of configuring a redirect routing, you can also change the hostname or domain for the redirect request. You can set this field to change the hostname in the URL for the redirection or otherwise preserve the hostname from the incoming request. So, using this field you can redirect all requests sent on https://www.contoso.com/* to https://www.fabrikam.com/*.
 
 ### Destination path
 
-For cases where you want to replace the path segment of a URL as part of redirection, you can set this field with the new path value. Otherwise, you can choose to preserve the path value as part of redirect. So, using this field, you can redirect all requests sent to https://www.contoso.com/\* to https://www.contoso.com/redirected-site.
+For cases where you want to replace the path segment of a URL as part of redirection, you can set this field with the new path value. Otherwise, you can choose to preserve the path value as part of redirect. So, using this field, you can redirect all requests sent to https://www.contoso.com/* to https://www.contoso.com/redirected-site.
 
 ### Destination fragment
 
-The destination fragment is the portion of URL after '\#', which is used by the browser to land on a specific section of a web page. You can set this field to add a fragment to the redirect URL.
+The destination fragment is the portion of URL after '#', which is used by the browser to land on a specific section of a web page. You can set this field to add a fragment to the redirect URL.
 
 ### Query string parameters
 
@@ -145,4 +145,4 @@ Some of the key attributes of the custom HTTPS feature are:
 
 You can enable the HTTPS protocol for a custom domain that's associated with your Front Door under the frontend hosts section.
 
-For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door \| Microsoft Docs](/azure/frontdoor/front-door-custom-domain-https).
+For more information on how to configure HTTPS on Front door, see [Tutorial - Configure HTTPS on a custom domain for Azure Front Door | Microsoft Docs](/azure/frontdoor/front-door-custom-domain-https).
