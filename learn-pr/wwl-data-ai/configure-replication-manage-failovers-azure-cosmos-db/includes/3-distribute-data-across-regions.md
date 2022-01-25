@@ -13,3 +13,7 @@ The creation wizard includes a Global Distribution tab where the geo-redundancy 
 For existing Azure Cosmos DB accounts, the Replicate data globally pane is used to add or remove regions. Each region is added using a map, and then replication only occurs once the changes are saved. This pane can also be used to remove existing regions where data is currently replicated.
 
 [![Replicate data globally pane in the Azure portal with a map control](../media/3-replication-map.png)](../media/3-replication-map-full.png#lightbox)
+
+
+
+

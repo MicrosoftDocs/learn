@@ -10,7 +10,7 @@ A SAS gives you granular control over the type of access you grant to clients wh
  -  The permissions granted by the SAS. For example, a SAS for a blob might grant read and write permissions to that blob, but not delete permissions.
 
 > [!NOTE]
-> There are two types of SAS: **account** and **service**. The account SAS delegates access to resources in one or more of the storage services. The service SAS delegates access to a resource in just one of the storage services.
+> SAS both provides both **account-level** and **service-level** control. The account-level SAS delegates access to resources in one or more of the storage services. The service-level SAS delegates access to a resource in just one of the storage services.
 
 Optionally, you can also:
 
