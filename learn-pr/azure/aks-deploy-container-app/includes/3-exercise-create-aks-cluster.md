@@ -102,7 +102,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     az aks nodepool add \
         --resource-group $RESOURCE_GROUP \
         --cluster-name $CLUSTER_NAME \
-        --name userpool \
+        --name uspool \
         --node-count 2 \
         --node-vm-size Standard_B2s \
         --os-type Windows
@@ -148,8 +148,8 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
    NAME                                STATUS   ROLES   AGE    VERSION
    aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.19.9
    aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
-   aksuserpool000000                   Ready    agent   105s   v1.19.9
-   aksuserpool000001                   Ready    agent   105s   v1.19.9
+   aksuspool000000                     Ready    agent   105s   v1.19.9
+   aksuspool000001                     Ready    agent   105s   v1.19.9
    ```
 
 ---
