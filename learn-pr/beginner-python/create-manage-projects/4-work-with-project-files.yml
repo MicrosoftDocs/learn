@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-manage-projects.work-with-project-files
+title: Work with project files
+metadata:
+  title: Work with project files
+  description: Look at how to create a project file, and then manage your dependent libraries by upgrading them and removing them when they're no longer needed.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-work-with-project-files.md)]
