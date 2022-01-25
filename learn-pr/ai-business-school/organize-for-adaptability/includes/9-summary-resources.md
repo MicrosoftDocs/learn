@@ -1,8 +1,8 @@
-Through this module, we have discussed some of the ways businesses support and encourage innovation. Regardless of size or industry, there are steps you can take and programs you can implement—all of which can be scaled depending on your business and customer needs. Being proactive and intentional about doing so will help your organization stay agile and adapt to disruption.
+Through this module, we've discussed some of the ways businesses support and encourage innovation. Regardless of size or industry, there are steps you can take and programs you can implement—all of which can be scaled depending on your business and customer needs. Being proactive and intentional about doing so will help your organization stay agile and adapt to disruption.
 
-There is another important consideration, though, when it comes to innovation and long-term resilience. The programs and services you put in place are only as strong as your organization’s ability and willingness to follow through with them. That support needs to come from leadership. Innovation cannot happen in a vacuum and people at all levels of the business should be encouraged to participate to reap the full benefits. But your organization’s leadership must set the vision, articulate it clearly, and follow through by consistently building a culture that can help innovation thrive.
+There is another important consideration, though, when it comes to innovation and long-term resilience. The programs and services you put in place are only as strong as your organization’s ability and willingness to follow through with them. That support needs to come from leadership. Innovation can't happen in a vacuum and people at all levels of the business should be encouraged to participate to reap the full benefits. But your organization’s leadership must set the vision, articulate it clearly, and follow through by consistently building a culture that can help innovation thrive.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 * Understand the relationship between technology, innovation, and adaptability.
 * Consider different innovation frameworks to apply to your organizational structure.
