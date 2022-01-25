@@ -323,7 +323,7 @@ In this exercise, you will:
 
 2.   Select **Create** on the Virtual networks page.
 
-    :::image type="content" source="../media/create-virtual-network.png.png" alt-text="Create a virtual network wizard.":::
+    :::image type="content" source="../media/create-virtual-network.png" alt-text="Create a virtual network wizard.":::
       
 3.  Use the information in the following table to create the CoreServicesVnet virtual network.<br>‎Remove or overwrite the default IP Address space 
 
