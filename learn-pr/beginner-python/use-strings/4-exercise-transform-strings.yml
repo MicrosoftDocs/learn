@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-strings.exercise-transform-strings
+title: Exercise - Transform text by using string methods
+metadata:
+  title: Exercise - Transform text by using string methods
+  description: In this exercise, you'll transform a paragraph and then extract key information from it.
+  ms.date: 12/02/2021
+  author: alfredodeza
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 5
+sandbox: true
+notebook: notebooks/4-exercise-transform-strings.ipynb

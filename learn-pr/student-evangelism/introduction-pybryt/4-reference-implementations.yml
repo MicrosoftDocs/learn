@@ -5,7 +5,7 @@ metadata:
   title: Reference implementations
   description: How to combine annotations into reference implementations and use references to assess submissions
   author: chrispyles
-  ms.author: v-chpyles
+  ms.author: leestott
   ms.date: 10/27/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

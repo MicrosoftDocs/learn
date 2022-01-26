@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.aspnetcore-accessibility.4-accessible-web-forms
 metadata:
-  title: Find and fix form accessibility issues with Accessibility Insights
-  description: Find and fix form accessibility issues with Accessibility Insights
+  title: Find and fix form accessibility issues by using Accessibility Insights for Web
+  description: Find and fix form accessibility issues by using Accessibility Insights for Web.
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Find and fix form accessibility issues with Accessibility Insights
+title: Find and fix form accessibility issues by using Accessibility Insights for Web
 durationInMinutes: 5
 content: |
   [!include[](includes/4-accessible-web-forms.md)]
@@ -22,10 +22,10 @@ quiz:
         explanation: "Alt text is used to provide descriptions for images, not form fields."
       - content: "Label"
         isCorrect: true
-        explanation: "Correct. The Label element is used to describe HTML form elements, and is understood by screen readers."
+        explanation: "Correct. The `Label` element is used to describe HTML form elements and is understood by screen readers."
       - content: "Name"
         isCorrect: false
-        explanation: "The Name attribute is used to identify the data submitted to the server by the form field, but is not used for accessibility."
+        explanation: "The `Name` attribute is used to identify the data that the form field submits to the server. It's not used for accessibility."
       - content: "Description"
         isCorrect: false
-        explanation: "Description is not an HTML element."
+        explanation: "`Description` is not an HTML element."

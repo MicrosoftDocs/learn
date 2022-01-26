@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/13/2021
+  ms.date: 01/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -44,7 +43,7 @@ quiz:
     choices:
     - content: "Use shared access signatures for the production apps."
       isCorrect: false
-      explanation: "That's incorrect. Shared access signatures is not the best solution for the production app."
+      explanation: "That's incorrect. Shared access signatures are not the best solution for the production app."
     - content: "Use access keys for the production apps."
       isCorrect: true
       explanation: "That's correct. Access keys provide unrestricted access to the storage resources, which is the requirement for production apps in this scenario."

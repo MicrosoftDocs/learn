@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.use-indexer-to-build-index
+title: Use indexer to build index
+metadata:
+  title: Use indexer to build index
+  description: "Use indexer to build index"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2d-use-indexer-to-build-index.md)]
