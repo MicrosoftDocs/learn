@@ -34,7 +34,7 @@ Here, you'll use Helm to install cert-manager and then configure it to use Let's
 1. Next, run the following command to install cert-manager by deploying the cert-manager CRD.
 
     ```bash
-    kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.14/deploy/manifests/00-crds.yaml
+    kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.6.1/cert-manager.yaml
     ```
 
 1. Install the cert-manager Helm chart.
@@ -136,7 +136,7 @@ The last part of the configuration is to configure the Kubernetes Ingress file f
 1. Replace the existing content in the file with the following text. Note the addition of the `cert-manager.io/issuer` annotation and the new `tls` section.
 
     ```yaml
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ratings-web-ingress

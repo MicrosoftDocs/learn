@@ -32,4 +32,4 @@ There is more than one type of agile coach.
         
          -  They might mentor staff in how to fill these roles.
 
-Over time, though, team members need to develop an ability to mentor each other. Teams should aim to be self-organizing. Team embers are often expected to learn as they work and to acquire skills from each other. To make it effective, though, the work itself needs to be done collaboratively, not by individuals working by themselves.
+Over time, though, team members need to develop an ability to mentor each other. Teams should aim to be self-organizing. Team members are often expected to learn as they work and to acquire skills from each other. To make it effective, though, the work itself needs to be done collaboratively, not by individuals working by themselves.

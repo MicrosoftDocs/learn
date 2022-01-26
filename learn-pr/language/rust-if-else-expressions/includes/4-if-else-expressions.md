@@ -2,8 +2,7 @@ An essential part of programming involves making decisions based on the data. In
 
 We can create *conditional branches* in our code by using the `if` and `else` keywords. Many programming languages offer this functionality and use similar syntax.
 
-The `if` and `else` keywords are used with expressions to test values and do actions based on the test result. All conditional expressions result to a boolen: true or false. 
-
+The `if` and `else` keywords are used with expressions to test values and do actions based on the test result. All conditional expressions result to a boolean: true or false.
 
 ## Define an if/else condition
 
@@ -33,10 +32,9 @@ println!("{}", greeting)   // prints "Good day to you."
 
 In this example, we assign a value to the `greeting` variable based on the result of the `if formal` expression. When the expression `if formal` is true, the `greeting` value is set to the string "Good day to you." When the expression is false, the `greeting` value is set to the string "Hey!". Because we initialized the `formal` variable to true, we know the result of the expression `if formal` is also true.
 
-
 ## Combine multiple test conditions
 
-You can combine `if` and `else` together to form an `else if` expression. Multiple `else if` conditions can be used after the starting `if` condition, and before a closing `else` condition, which is optional. 
+You can combine `if` and `else` together to form an `else if` expression. Multiple `else if` conditions can be used after the starting `if` condition, and before a closing `else` condition, which is optional.
 
 If a condition expression evaluates to `true`, the corresponding action block is executed. Any following `else if` or `else` blocks are skipped. If a condition expression evaluates to `false`, the corresponding action block is skipped. Any following `else if` condition is evaluated. If all `if` and `else if` conditions evaluate to `false`, then any `else` block is executed.
 
