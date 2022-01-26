@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.intro-python-lists.numeric-lists
+title: Work with numbers in lists
+metadata:
+  unitType: learning-content
+  title: Work with numbers in lists
+  description: You can work with data other than strings in lists, including numbers.
+  ms.date: 12/03/2021 
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms. prod: learning-languages 
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/4-numeric-lists.md)]

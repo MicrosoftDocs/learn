@@ -12,7 +12,7 @@ BEGIN TRY
 	INSERT INTO dbo.OrderDetails(orderid,productid,unitprice,qty)
 	VALUES (1, 2,15.20,20);
  COMMIT TRANSACTION
-END TRY </CODE>
+END TRY 
 ```
 
 ## Rollback transaction

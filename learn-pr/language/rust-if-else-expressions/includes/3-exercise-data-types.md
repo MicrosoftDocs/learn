@@ -39,9 +39,9 @@ Your first task is to change the `Car` struct definition. We're going to move th
 
 1. Correct the declaration of the `Car` struct.
 
-    1. Replace the `mileage: u32` field with a tuple field named `age`. 
+    1. Replace the `mileage: u32` field with a tuple field named `age`.
     1. Define the `age` tuple to have two fields: an `Age` enum value and the car mileage.
- 
+
 1. Build the program. Make sure the code compiles before you continue to the next section.
 
     The code doesn't display any output yet, but it needs to compile without any errors. You can ignore *warning* messages from the compiler. The warnings are because you declared enum and struct definitions, but haven't used them yet.
@@ -68,7 +68,7 @@ Next, we'll add code for a new function named `car_quality`. This function will 
         todo!("Return the tuple");
     }
     ```
- 
+
 1. Complete the code to set the `quality` tuple values for a "New" car.
 
 1. Update the `return` statement at the end of the function, so it sends the completed tuple back to the caller.
@@ -138,7 +138,6 @@ Now we're ready to start working on our `main` function. The first step is to de
     > Don't forget to create both variables as changeable.
 
 1. Build your program. Make sure the code compiles without any errors before you continue to the next section.
-
 
 ## Call a function to fulfill the car orders
 
