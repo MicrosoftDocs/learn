@@ -44,10 +44,10 @@ For example, consider the following code:
 
 using System.Collections.Generic;
 
-var fooList = new[]
+var fooList = new FooBar[]
 {
-    new FooBar(Id: 1, Name: "Foo"),
-    new FooBar(Id: 2, Name: "Bar")
+    new(Id: 1, Name: "Foo"),
+    new(Id: 2, Name: "Bar")
 };
 
 FooBar fooBar = fooList.Find(f => f.Name == "Bar");
@@ -56,7 +56,7 @@ FooBar fooBar = fooList.Find(f => f.Name == "Bar");
 record FooBar(int Id, string Name);
 ```
 
-In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name=="Bar");` generates a CS8600 warning because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
+In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name == "Bar");` generates a CS8600 warning because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
 
 ```csharp
 FooBar fooBar = fooList.Find(f => f.Name =="Bar")!;
@@ -77,14 +77,12 @@ record FooBar(int Id, string Name);
 
 static class FooListFactory
 {
-    public static List<FooBar>? GetFooList()
-    {
-        return new List<FooBar>
+    public static List<FooBar>? GetFooList() =>
+        new List<FooBar>
         {
-            new FooBar(Id: 1, Name: "Foo"),
-            new FooBar(Id: 2, Name: "Bar")
+            new(Id: 1, Name: "Foo"),
+            new(Id: 2, Name: "Bar")
         };
-    }
 }
 ```
 
