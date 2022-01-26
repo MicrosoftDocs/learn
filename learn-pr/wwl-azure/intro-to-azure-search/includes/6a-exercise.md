@@ -63,7 +63,7 @@ If you don't already have one in your subscription, you'll need to provision a *
 
     ![Screenshot of storage blob overview page.](../media/storage-blob-1.png)
 
-2. Select **+ Container**. A pane on your right hand side will open up. 
+2. Select **+ Container**. A pane on your right-hand side will open up. 
     ![Screenshot of creating a storage container.](../media/storage-blob-2.png)
     Enter the following settings: 
     - **Name**: coffee-reviews  
@@ -163,7 +163,7 @@ You'll use the Search explorer to write and test queries. Search explorer is a t
 Finally let's see the power of the knowledge store in action. When you ran the Import data wizard, you also created a knowledge store. Inside the knowledge store you'll find the enriched data extracted by AI skills persisted in the form of projections and tables.
 
 1. Navigate back to your Azure blob. 
-2. On the left hand pane, click on **Storage browser (preview)**. In the storage browser tree click on **Blob containers**. Select the container you labeled as the knowledge store. 
+2. On the left-hand pane, click on **Storage browser (preview)**. In the storage browser tree click on **Blob containers**. Select the container you labeled as the knowledge store. 
 3. Click on any of the items, and then click on the **objectprojection.json** file. 
    
     ![Screenshot of the objectprojection.json.](../media/knowledge-store-blob1.png)
@@ -176,7 +176,7 @@ Finally let's see the power of the knowledge store in action. When you ran the I
    
     ![Screenshot of the storage blob breadcrumb.](../media/knowledge-store-blob4.png)
 
-6. Now click on **Blob containers** on the left hand panel again. Select the container starting with *skillset*. Click on any of the items. 
+6. Now click on **Blob containers** on the left-hand panel again. Select the container starting with *skillset*. Click on any of the items. 
     
     ![Screenshot of the skillset container.](../media/knowledge-store-blob5.png)
 
@@ -185,7 +185,7 @@ Finally let's see the power of the knowledge store in action. When you ran the I
     ![Screenshot of the image saved.](../media/knowledge-store-blob3.png)
 
 8. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
-9. Now click on **Tables** on the left hand panel. Select the table ending with *KeyPhrases*. Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews.
+9. Now click on **Tables** on the left-hand panel. Select the table ending with *KeyPhrases*. Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews.
 
 ## Learn more 
 
