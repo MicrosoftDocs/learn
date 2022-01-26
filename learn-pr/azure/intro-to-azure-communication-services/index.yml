@@ -1,11 +1,11 @@
 ### YamlMime:Module
 
-uid: learn.azure.communication-services-introduction-to-communication-services
+uid: learn.azure.intro-to-azure-communication-services
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Communication Services          # Do not edit: title must be "Introduction to (product)"
   description: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
-  ms.date: 2022-01-13             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 01/25/2022            # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: ProbablePrime      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: rifox           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
@@ -106,15 +106,15 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
 ###
 units: # stub based on prefix, module folder, and unit names
-  learn.azure.communication-services-introduction-to-communication-services.introduction
-  learn.azure.communication-services-introduction-to-communication-services.what-is-it
-  learn.azure.communication-services-introduction-to-communication-services.how-it-works
-  learn.azure.communication-services-introduction-to-communication-services.when-to-use-it
-  learn.azure.communication-services-introduction-to-communication-services.knowledge-check
-  learn.azure.communication-services-introduction-to-communication-services.summary
+  - learn.azure.intro-to-azure-communication-services.introduction
+  - learn.azure.intro-to-azure-communication-services.what-is-it
+  - learn.azure.intro-to-azure-communication-services.how-it-works
+  - learn.azure.intro-to-azure-communication-services.when-to-use-it
+  - learn.azure.intro-to-azure-communication-services.knowledge-check
+  - learn.azure.intro-to-azure-communication-services.summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn.azure.communication-services-introduction-to-communication-services.badge
+  uid: learn.azure.intro-to-azure-communication-services.badge

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.communication-services-introduction-to-communication-services.knowledge-check
+uid: learn.azure.intro-to-azure-communication-services.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2022-01-13             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 01/25/2022           # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: ProbablePrime      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: rifox           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial
