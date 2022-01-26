@@ -32,7 +32,7 @@ namespace ExampleServer.Hubs;
 public class NotificationHub : Hub
 {
     public Task NotifyAll(Notification notification) =>
-   Clients.All.SendAsync("NotificationReceived", notification);
+        Clients.All.SendAsync("NotificationReceived", notification);
 }
 ```
 
@@ -65,12 +65,12 @@ public class NotificationService
     private readonly IHubContext<NotificationHub> _hubContext;
 
     public NotificationService(IHubContext<NotificationHub> hubContext) =>
-   _hubContext = hubContext;
+        _hubContext = hubContext;
 
     public Task SendNotificationAsync(Notification notification) =>
-   notification is not null
-    ? _hubContext.Clients.All.SendAsync("NotificationReceived", notification)
-    : Task.CompletedTask;
+        notification is not null
+            ? _hubContext.Clients.All.SendAsync("NotificationReceived", notification)
+            : Task.CompletedTask;
 }
 ```
 
@@ -167,28 +167,28 @@ namespace ExampleClient;
 public sealed class Consumer : IAsyncDisposable
 {
     private readonly string HostDomain =
-   Environment.GetEnvironmentVariable("HOST_DOMAIN");
+        Environment.GetEnvironmentVariable("HOST_DOMAIN");
     
     private HubConnection _hubConnection;
 
     public Consumer()
     {
-   _hubConnection = new HubConnectionBuilder()
-    .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
-    .WithAutomaticReconnect()
-    .Build();
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
+            .WithAutomaticReconnect()
+            .Build();
     }
 
     public Task StartNotificationConnectionAsync() =>
-   _hubConnection.StartAsync();
+        _hubConnection.StartAsync();
 
     public async ValueTask DisposeAsync()
     {
-   if (_hubConnection is not null)
-   {
-    await _hubConnection.DisposeAsync();
-    _hubConnection = null;
-   }
+        if (_hubConnection is not null)
+        {
+            await _hubConnection.DisposeAsync();
+            _hubConnection = null;
+        }
     }
 }
 ```
@@ -207,7 +207,7 @@ When it adds a method to the previous `Consumer` class, the `SendNotificationAsy
 ```csharp
 public Task SendNotificationAsync(string text) =>
     _hubConnection.InvokeAsync(
-   "NotifyAll", new Notification(text, DateTme.UtcNow));
+        "NotifyAll", new Notification(text, DateTme.UtcNow));
 ```
 
 <!--
@@ -274,24 +274,24 @@ namespace ExampleClient;
 public sealed class Consumer : IAsyncDisposable
 {
     private readonly string HostDomain =
-   Environment.GetEnvironmentVariable("HOST_DOMAIN");
+        Environment.GetEnvironmentVariable("HOST_DOMAIN");
     
     private HubConnection _hubConnection;
 
     public Consumer()
     {
-   _hubConnection = new HubConnectionBuilder()
-    .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
-    .WithAutomaticReconnect()
-    .Build();
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(new Uri($"{HostDomain}/hub/notifications"))
+            .WithAutomaticReconnect()
+            .Build();
 
-   _hubConnection.On<Notification>(
-    "NotificationReceived", OnNotificationReceivedAsync);
+        _hubConnection.On<Notification>(
+            "NotificationReceived", OnNotificationReceivedAsync);
     }
 
     private async Task OnNotificationReceivedAsync(Notification notification)
     {
-   // Do something meaningful with the notification.
+        // Do something meaningful with the notification.
     }
 
     // Omitted for brevity.
