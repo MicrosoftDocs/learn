@@ -171,6 +171,7 @@ A *remote* is a Git repository where team members collaborate (like a repository
     origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
     origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
     upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (push)
     ```
 
 ### Open the project in the file explorer
