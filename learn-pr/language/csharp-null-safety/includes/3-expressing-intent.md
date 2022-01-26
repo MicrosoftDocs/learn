@@ -156,3 +156,7 @@ The preceding C# code:
 - Declares and assigns a variable named `fooBar` (of type `FooBar`) to `null`.
 - It conditionally dereferences `fooBar`, assigning the result of `ToString` to the `str` variable.
 - It writes the value of `str` to standard output which is nothing.
+
+## Summary
+
+In this unit, you learned about expressing your nullability intent in code. In the next unit, you'll apply what you've learned to an existing project.

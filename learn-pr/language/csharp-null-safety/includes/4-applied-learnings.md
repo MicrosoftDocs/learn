@@ -45,7 +45,7 @@ Now you'll enable a nullable context and examine its effect on the build.
 
 1. In _src/ContosoPizza.Models/ContosoPizza.Models.csproj_, add the highlighted line and save your changes:
 
-    :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/ContosoPizza.Models.csproj" highlight="7" range="1-6,8-10":::
+    :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/ContosoPizza.Models.csproj" highlight="6" range="1-6,8-10":::
 
     The preceding change enables the nullable context for the entire `ContosoPizza.Models` project.
 
@@ -95,7 +95,7 @@ Now you'll enable a nullable context and examine its effect on the build.
 
     :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Service/ContosoPizza.Service.csproj" highlight="8":::
 
-    :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/ContosoPizza.Models.csproj" highlight="8":::
+    :::code language="xml" source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/ContosoPizza.Models.csproj" highlight="7":::
 
     The previous changes instruct the compiler to fail the build whenever a warning is encountered.
 
@@ -112,19 +112,86 @@ Now you'll enable a nullable context and examine its effect on the build.
 
     ```dotnetcli
     dotnet build
+    Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET
+    Copyright (C) Microsoft Corporation. All rights reserved.
     
-    #output
-    #output
-    #output
+      Determining projects to restore...
+      All projects are up-to-date for restore.
+    .\src\ContosoPizza.Models\Pizza.cs(3,28): error CS8618: Non-nullable property 'Cheeses' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [.\src\ContosoPizza.Models\ContosoPizza.Models.csproj]
+    .\src\ContosoPizza.Models\Pizza.cs(3,28): error CS8618: Non-nullable property 'Toppings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [.\src\ContosoPizza.Models\ContosoPizza.Models.csproj]
+    
+    Build FAILED.
+    
+    .\src\ContosoPizza.Models\Pizza.cs(3,28): error CS8618: Non-nullable property 'Cheeses' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [.\src\ContosoPizza.Models\ContosoPizza.Models.csproj]
+    .\src\ContosoPizza.Models\Pizza.cs(3,28): error CS8618: Non-nullable property 'Toppings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [.\src\ContosoPizza.Models\ContosoPizza.Models.csproj]
+        0 Warning(s)
+        2 Error(s)
+    
+    Time Elapsed 00:00:02.95
     ```
+
+    Now that we're treating warnings as errors, the app no longer builds. This is in fact desired in this situation, as the number of errors is small and we'll quickly address them. The two errors (CS8618) let you know that there are properties, which are declared as non-nullable that have not yet been initialized with a value. There are many ways to address this.
 
 ## Fix the errors
 
-Possible solutions:
+There are a plethora of tactics to resolve warnings/errors related to nullability. Some examples include:
 
-1. require a non-nullable collection of cheeses and toppings as .ctor parameters.
-2. intercept the property get/set and add a null check.
-3. express nullability as the desired property.
-4. initialize the collection with a default value (empty).
-5. assign it in the .ctor with a default value (empty).
+- Require a non-nullable collection of cheeses and toppings as constructor parameters.
+- Intercept the property `get`/`set` and add a `null` check.
+- Express the intent for the properties to be nullable.
+- Initialize the collection with a default (empty) value inline using property initializers.
+- Assign the property a default (empty) value in the constructor.
 
+1. To fix the error on the `Pizza.Cheeses` property, modify the property definition on *Pizza.cs* to add a `null` check. It's not really a pizza without cheese, is it?!
+
+    :::code source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/Pizza.cs" highlight="5,16-20":::
+
+    In the preceding code:
+
+    - A new backing field is added to help intercept the `get` and `set` property accessors named `_cheeses`. It is declared as nullable (`?`) and initialized with the null-forgiving operator (`!`).
+    - The `get` accessor is mapped to an expression that uses the null-coalescing operator (`??`). This expression returns the `_cheeses` field, assuming it's not `null`. If it's `null`, it assigns `_cheeses` to `new List<PizzaCheese>()` before returning `_cheeses`.
+    - The `set` accessor is also mapped to an expression and makes use of the null-coalescing operator. When a consumer assigns a `null` value the <xref:System.ArgumentNullException> is thrown.
+
+1. To fix the error on the `Pizza.Toppings` property (because not all pizzas have toppings):
+
+    1. Modify the property definition on *Pizza.cs* to allow `Toppings` to be nullable.
+
+        :::code source="~/../csharp-null-safety-solution/src/ContosoPizza.Models/Pizza.cs" highlight="22":::
+
+        The `Toppings` property is now expressed as being nullable.
+
+    1. Add the highlighted line to *ContosoPizza.Service\Program.cs*:
+
+        :::code source="~/../csharp-null-safety-solution/src/ContosoPizza.Service/Program.cs" highlight="17":::
+
+    In the preceding code, the null-coalescing operator is used to assign `Toppings` to `new List<PizzaTopping>();` if it's `null`.
+
+## Run the completed solution
+
+1. Save your all your changes and then build the solution.
+
+    ```dotnetcli
+    dotnet build
+    ```
+
+    The build completes with no warnings or errors.
+
+1. Run the app.
+
+    ```dotnetcli
+    dotnet run --project src/ContosoPizza.Service/ContosoPizza.Service.csproj
+    ```
+
+    The app runs to completion and displays the following output:
+
+    ```dotnetcli
+    dotnet run --project src/ContosoPizza.Service/ContosoPizza.Service.csproj
+    The "Meat Lover's Special" is a deep dish pizza with marinara sauce.
+    It's covered with a blend of mozzarella and parmesan cheese.
+    It's layered with sausage, pepperoni, bacon, ham and meatballs.
+    This medium size is $17.99. Delivery is $2.50 more, bringing your total $20.49!
+    ```
+
+## Summary
+
+In this unit, you used a nullable context to identify and prevent possible `NullReferenceException` occurrences in your code.

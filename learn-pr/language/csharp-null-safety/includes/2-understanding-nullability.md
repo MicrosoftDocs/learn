@@ -142,14 +142,14 @@ The preceding C# compiler directive is functionally equivalent to the project co
 
 When the nullable context is enabled, you'll get new warnings. Consider the previous `FooBar` example&mdash;it has two warnings when analyzed in a nullable context:
 
-1. The `FooBar fooBar = null;` line has a warning on the `null` assignment. C# Warning CS8600: Converting null literal or possible null value to non-nullable type.
+1. The `FooBar fooBar = null;` line has a warning on the `null` assignment: _C# Warning CS8600: Converting null literal or possible null value to non-nullable type_.
 
     :::image type="content" source="../media/null-warning-cs8600.png" lightbox="../media/null-warning-cs8600.png" alt-text="C# Warning CS8600: Converting null literal or possible null value to non-nullable type.":::
 
-1. The `_ = fooBar.ToString();` line also has a warning. This time the compiler is concerned that `fooBar` may be null. C# Warning CS8602: Dereference of a possibly null reference.
+1. The `_ = fooBar.ToString();` line also has a warning. This time the compiler is concerned that `fooBar` may be null: _C# Warning CS8602: Dereference of a possibly null reference_.
 
     :::image type="content" source="../media/null-warning-cs8602.png" lightbox="../media/null-warning-cs8602.png" alt-text="C# Warning CS8602: Dereference of a possibly null reference.":::
 
-## Next unit
+## Summary
 
  In this unit, you learned to enable a nullable context in C# to help guard against `NullReferenceException`. In the next unit, you'll learn more about explicitly expressing your intent in a nullable context.
