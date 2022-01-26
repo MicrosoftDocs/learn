@@ -1,1 +1,1 @@
-You explored and configured the Azure Enhanced Monitoring Extension for SAP.
+You explored and configured the Azure Extension for SAP.
