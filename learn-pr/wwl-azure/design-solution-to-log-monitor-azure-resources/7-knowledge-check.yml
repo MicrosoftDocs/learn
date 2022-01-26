@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2022
+  ms.date: 01/26/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Azure Active Directory Audit Logs"
       isCorrect: true
-      explanation: "That’s correct. Azure Active Directory Audit logs contains the history of sign-in activity and audit trail of changes made within a particular tenant"
+      explanation: "That’s correct. Azure Active Directory audit logs contains the history of sign-in activity. The logs also contain an audit trail of tenant changes"
     - content: "VM Insights"
       isCorrect: false
       explanation: "That’s incorrect. Azure insights can be used for applications, VMs, and containers but not sign-in activity."
     - content: "Azure Alerts"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Alerts can notify you of an activity log event but it does not log user sign-in activity"
+      explanation: "That’s incorrect. Azure Alerts can notify you of an activity log event but it doesn't log user sign-in activity"
   - content: "What monitoring tool should be used to measure user experience and analyze users' behavior for all external facing applications?"
     choices:
     - content: "Azure Application Insights"
