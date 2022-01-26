@@ -32,27 +32,27 @@ Over time, we’ve noticed that these critical organization events typically req
 
 If the desire is cost savings, reduction in complexity, operational optimization, better agility, providing the ability to later provide more technical capabilities, scaling to meet mission and geographic demands, or integrating into a broader IT systems portfolio, Government entities benefit best by migrating their workloads to the cloud.
 
-> - Cost savings
-> - Reduction in technical complexity
-> - Optimization of internal operations
-> - Increase in mission agility
-> - Preparation for new technical capabilities
-> - Scaling to meet mission demands
-> - Scaling to meet geographic demands
-> - Integration of a complex IT or systems portfolio
+- Cost savings
+- Reduction in technical complexity
+- Optimization of internal operations
+- Increase in mission agility
+- Preparation for new technical capabilities
+- Scaling to meet mission demands
+- Scaling to meet geographic demands
+- Integration of a complex IT or systems portfolio
 
 ## When to Innovate
 
 If the desire is to not only prepare for new capabilities but also build them to advance the mission, scale to meet geographic and mission demands, improve experiences and services provided to citizens, transform the way the agency operates, and be a disruptor through self-service and optimization, then innovation is the path organizations choose.
 
-> - Preparation for new technical capabilities
-> - Building new technical capabilities
-> - Scaling to meet mission demands
-> - Scaling to meet geographic demands
-> - Improved citizen experiences and engagements
-> - Transformation of products or services
-> - Market disruption with new products or services
-> - Democratization and/or self-service environments
+- Preparation for new technical capabilities
+- Building new technical capabilities
+- Scaling to meet mission demands
+- Scaling to meet geographic demands
+- Improved citizen experiences and engagements
+- Transformation of products or services
+- Market disruption with new products or services
+- Democratization and/or self-service environments
 
 ## Importance
 
