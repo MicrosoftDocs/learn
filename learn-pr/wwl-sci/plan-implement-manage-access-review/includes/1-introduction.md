@@ -1,6 +1,6 @@
-Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews.
+Once identity is deployed, you will learn that proper governance is required. Using access reviews is necessary for a secure solution. Explore how you plan for and implement access reviews.
 
-In this module, you will learn all about access reviews, including why they're important to the security of your organization, how to prepare for and perform them, and how to configure them to occur on a recurring basis.
+In this module, you will learn all about access reviews. Topics included why access reviews are important to the security of your organization,and how to prepare for and perform them. Additionally you explore how to configure access reviews to occur on a recurring basis.
 
 ## Learning objectives
 

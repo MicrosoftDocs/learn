@@ -7,13 +7,10 @@ You can start the Access Review process from the notification email or by going 
 1.  **Email**:
     
     > [!IMPORTANT]
-    > There could be delays in receiving email. In some cases it could take up to 24 hours. Add azure-noreply@microsoft.com to your safe recipients list to make sure that you are receiving all emails. a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.
-
-:::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
-
+    > There could be delays in receiving email. In some cases it could take up to 24 hours. Add azure-noreply@microsoft.com to your safe recipients list to make sure that you are receiving all emails. a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.<br>:::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
 
 ```
-b. Click the **Start review** link to open the access review.
+Click the **Start review** link to open the access review.
 
 ```
 
@@ -44,9 +41,9 @@ There are two ways that you can approve or deny access:
     
     > [!NOTE]
     > You can change your response at any time before the access review has ends. If you want to change your response, select the row and update the response. For example, you can approve a previously denied user or deny a previously approved user.
-
- -  If a user is denied access, they aren't removed immediately. They are removed when the review period has ended or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
- -  If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
+    
+     -  If a user is denied access, they aren't removed immediately. They are removed when the review period has ended or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
+     -  If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
 
 ### Approve or deny access based on recommendations
 
