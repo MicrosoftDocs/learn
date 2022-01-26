@@ -1,12 +1,14 @@
-**Azure AD is different from Active Directory Domain Services (AD DS)** \- Although Azure AD has many similarities to AD DS, there are also many differences. It is important to realize that using Azure AD is different from deploying an Active Directory domain controller on an Azure virtual machine and adding it to your on-premises domain. Here are some characteristics of Azure AD that make it different.
+**Azure AD is different from Active Directory Domain Services (AD DS)** \- Although Azure AD is similar to AD DS, it's important to know how they are different. Using Azure AD is different from deploying an Active Directory domain controller on an Azure virtual machine and adding it to your on-premises domain. 
 
- -  **Identity solution.** Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications.
- -  **REST API Querying.** Because Azure AD is HTTP/HTTPS based, it cannot be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
- -  **Communication Protocols.** Because Azure AD is HTTP/HTTPS based, it does not use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
- -  **Authentication Services.** Include SAML, WS-Federation, or OpenID.
- -  **Authorization Service.** Uses OAuth.
- -  **Federation Services.** Azure AD includes federation services, and many third-party services (such as Facebook).
- -  **Flat structure.** Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
+Here are some characteristics of Azure AD that make it different from AD DS:
+
+ -  **Identity solution**: Azure AD is primarily an identity solution, and it is designed for internet-based applications by using HTTP and HTTPS communications.
+ -  **REST API querying**: Because Azure AD is HTTP/HTTPS-based, it can't be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
+ -  **Communication protocols**: Because Azure AD is HTTP/HTTPS-based, it doesn't use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols like SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
+ -  **Authentication services**: Includes SAML, WS-Federation, or OpenID.
+ -  **Authorization service**: Uses OAuth.
+ -  **Federation services**: Azure AD includes federation services, and many third-party services (such as Facebook).
+ -  **Flat structure**: Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
 
 The following table summarizes the differences:
 
@@ -23,7 +25,7 @@ The following table summarizes the differences:
     Cloud
   :::column-end:::
   :::column:::
-    On-Premises
+    On-premises
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -36,10 +38,10 @@ The following table summarizes the differences:
 :::row-end:::
 :::row:::
   :::column:::
-    Queried via REST API's
+    Query via REST APIs
   :::column-end:::
   :::column:::
-    Used Kerberos for Authentication
+    Uses Kerberos for authentication
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -47,7 +49,7 @@ The following table summarizes the differences:
     Uses SAML, WS-Federation, or OpenID for authentication
   :::column-end:::
   :::column:::
-    No Federated Services
+    No federated services
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -55,7 +57,7 @@ The following table summarizes the differences:
     Uses OAuth for authorization
   :::column-end:::
   :::column:::
-    Organizational Units (OU's)
+    Organizational Units (OUs)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -63,12 +65,12 @@ The following table summarizes the differences:
     Includes federation services
   :::column-end:::
   :::column:::
-    Group Policy (GPO's)
+    Group Policy Objects (GPOs)
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Flat Structure
+    Flat structure
   :::column-end:::
   :::column:::
     
@@ -77,4 +79,4 @@ The following table summarizes the differences:
 
 
 > [!IMPORTANT]
-> Azure AD is a managed service. You only manage the users, groups, and policies. Deploying AD DS with virtual machines using Azure is a **IaaS deployment**. Meaning that you manage the deployment, configuration, virtual machines, patching, and other backend tasks.
+> Azure AD is a managed service. You manage only the users, groups, and policies. Deploying AD DS with virtual machines by using Azure is an **IaaS deployment**. In an IaaS deployment, you manage the deployment, configuration, virtual machines, patching, and other back-end tasks.
