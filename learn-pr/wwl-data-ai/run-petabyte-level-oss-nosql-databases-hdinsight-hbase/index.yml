@@ -3,9 +3,9 @@ uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
 metadata:
   title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   description: "Run Petabyte level OSS NoSQL databases with HDInsight HBase"
-  ms.date: 02/02/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run Petabyte level OSS NoSQL databases with HDInsight HBase

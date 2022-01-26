@@ -1,28 +1,28 @@
 ### YamlMime:Module
 uid: learn.languages.aspnetcore-accessibility
 metadata:
-  title: Create accessible web apps with ASP.NET Core
+  title: Create accessible web apps by using ASP.NET Core
   description: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Create accessible web apps with ASP.NET Core
+title: Create accessible web apps by using ASP.NET Core
 summary: Diagnose and fix common web accessibility issues in an ASP.NET Core application.
 abstract: |
   By the end of this module, you'll be able to:
-  - Use Accessibility Insights for Web to find and fix common accessibility issues
-  - Navigate your web applications using a screen reader
-  - Improve accessibility by following web standards and best practices
+  - Use Accessibility Insights for Web to find and fix common accessibility issues.
+  - Browse through your web applications by using a screen reader.
+  - Improve accessibility by following web standards and best practices.
 prerequisites: |
-  - Familiarity with building and deploying ASP.NET Core apps
-  - Ability to write C# at the beginner level
-  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
-  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
-  - Experience with using the command line  
-  - Familiarity with the concepts of accessibility, disability, and inclusion
-  - Basic familiarity with web accessibility tools and design techniques. See [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/) for an introduction.
+  - Familiarity with building and deploying ASP.NET Core apps.
+  - Ability to write C# at the beginner level.
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).
+  - Installation of the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+  - Experience with using the command line.  
+  - Familiarity with the concepts of accessibility, disability, and inclusion.
+  - Basic familiarity with web accessibility tools and design techniques. For an introduction, see [Learn the basics of web accessibility](/learn/modules/web-development-101/accessibility/).
 iconUrl: /learn/achievements/aspnetcore-accessibility.svg
 levels:
 - intermediate

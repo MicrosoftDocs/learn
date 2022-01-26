@@ -47,7 +47,7 @@ Let's add a queue for messages about individual sales to your namespace.
 
 1. After deployment completes, select **Go to resource**. The Overview pane for the Service Bus Namespace you created appears.
 
-1. In the command bar, select **Queue**. The  **Create queue** pane appears.
+1. In the command bar, select **+ Queue**. The  **Create queue** pane appears.
     
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus Namespace and Create queue panes with Queue and Create highlighted.":::
 
@@ -61,7 +61,7 @@ You also want to create a topic that will be used for messages that relate to sa
 
 Let's add a Service Bus topic and subscriptions.
 
-1. In the command bar of the **Service Bus Namespace** pane, select **Topic**. The **Create topic** pane appears.
+1. In the command bar of the **Service Bus Namespace** pane, select **+ Topic**. The **Create topic** pane appears.
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Service Bus Namespace and Create topic panes with Topic and Create highlighted.":::
 
@@ -69,11 +69,11 @@ Let's add a Service Bus topic and subscriptions.
 
 1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace.
  
-1. You can add or remove subscriptions to a queue or topic from the respective tab in the Service Bus Namespace, or you can use the Entities menu. Let's use the menu option. In the Service Bus Namespace menu, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
+1. You can add or remove subscriptions to a queue or topic from the respective tab in the Service Bus Namespace, or you can use the Entities menu. Let's use the menu option. In the Service Bus Namespace menu on the left, scroll down to **Entities**, select **Topics**, and in the list of topics, select **salesperformancemessages**. 
  
 1. The sales performance messages Service Bus Topic pane appears. 
 
-1. In the command bar, select **Subscription**. The **Create subscription** pane appears.
+1. In the command bar, select **+ Subscription**. The **Create subscription** pane appears.
 
 1. For **Name**, enter **Americas**; for **Max delivery count**, enter **100**; and then select **Create**. 
  

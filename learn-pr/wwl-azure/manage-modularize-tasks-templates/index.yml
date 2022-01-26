@@ -3,7 +3,7 @@ uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
   title: Manage and modularize tasks and templates
   description: "Manage and modularize tasks and templates"
-  ms.date: 11/26/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   *   Create custom build and release tasks
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:

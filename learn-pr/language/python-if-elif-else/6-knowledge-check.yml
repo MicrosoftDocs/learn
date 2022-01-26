@@ -27,7 +27,7 @@ quiz:
     - content: "It's missing `:` at the end."
       isCorrect: true
       explanation: "Valid if statements must terminate with a colon character."
-  - content: "What's the result of the following Boolean expression when `x = 6`: `x > 3 or x < 5`?"
+  - content: "When `x = 6`, what's the result of the following Boolean expression: `x > 3 or x < 5`?"
     choices:
     - content: "`True`"
       isCorrect: true
@@ -38,14 +38,14 @@ quiz:
     - content: "The syntax is incorrect for a Boolean expression."
       isCorrect: false
       explanation: "The Boolean expression syntax in this code example is correct."
-  - content: "What's the result of the following Boolean expression when `x = 6`: `not x`?"
+  - content: "When `x = 7`, what's the result of the following Boolean expression: `not x`?"
     choices:
     - content: "`True`"
       isCorrect: false
       explanation: "The Boolean expression doesn't evaluate to `True`."
     - content: "`False`"
       isCorrect: true
-      explanation: "Since `bool(6)` evaluates to `True`, adding the `not` operator would evaluate to `False`."
+      explanation: "Since `bool(7)` evaluates to `True`, adding the `not` operator would evaluate to `False`."
     - content: "The syntax is incorrect for a Boolean expression."
       isCorrect: false
       explanation: "The Boolean expression syntax in this code example is correct."

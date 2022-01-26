@@ -22,7 +22,8 @@ az cosmosdb update \
     --locations regionName='centralus' failoverPriority=2 isZoneRedundant=False
 ```
 
-> &#128221; If you are performing any operationg involving an account region, you cannot many any other changegs to your account and must wait for the operation to complete.
+> [!NOTE]
+> If you are performing any operationg involving an account region, you cannot many any other changegs to your account and must wait for the operation to complete.
 
 ## Enable automatic failover
 
@@ -54,7 +55,8 @@ az cosmosdb failover-priority-change \
     --failover-policies 'eastus=0' 'centralus=1' 'westus2=2'
 ```
 
-> &#128221; Even if you are not changing the priorities of every region, you must include all regions in the **failover-policies** argument.
+> [!NOTE]
+> Even if you are not changing the priorities of every region, you must include all regions in the **failover-policies** argument.
 
 The Azure Cosmos DB account would then be configured for automatic failover with these new priority values:
 

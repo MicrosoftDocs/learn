@@ -2,14 +2,15 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.6-enabling-monitoring-hdinsight-jobs
 title: Enable monitoring of HDInsight jobs
 metadata:
-  title: Enabling monitoring of HDInsight jobs
-  description: Enabling monitoring of HDInsight jobs
-  ms.date: 10/25/2019
+  title: Enable monitoring of HDInsight jobs
+  description: "Enable monitoring of HDInsight jobs"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/6-enabling-monitoring-hdinsight-jobs.md)]

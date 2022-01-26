@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.gaming-assistive-technologies.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: This content is part of the Gaming Assistive Technologies module.
+  ms.date: 11/28/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 2
+content: |
+  [!include[](includes/03-summary.md)]

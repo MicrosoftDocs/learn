@@ -10,6 +10,9 @@ The storage type you select (standard or premium) will decide how fast your disk
 
 IOPS is number of requests that can be processed by the disk in one second. A single request is a read or write operation. This measurement is applied directly to storage. For example, if you have a disk that can do a **5000 IOPS**, it means that it is theoretically capable of processing 5,000 read and or write operations per second.
 
+> [!NOTE]
+> External factors, including latency, can affect IOPS.
+
 IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to handle all the small and random I/O requests that must be processed quickly to keep the site responsive.
 
 ### IOPS in Azure

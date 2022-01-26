@@ -8,10 +8,10 @@ Indexing policies are defined and managed in JSON. The default indexing policy f
 
 | **Component** | **Description** | **Default value** |
 | ---: | :--- | :--- |
-| **Indexing mode** | Configures whether indexing is enabled (Consistent) or note (None) for the container | **Consistent** |
+| **Indexing mode** | Configures whether indexing is enabled (Consistent) or not (None) for the container | **Consistent** |
 | **Automatic** | Configures whether automatically indexes items as they are written | **Enabled** |
-| **Included paths** | Set of paths to include in the index | **All (``*``)** |
-| **Excluded paths** | Set of paths to exclude from the index | **``_etag`` property path** |
+| **Included paths** | Set of paths to include in the index | **All (\*)** |
+| **Excluded paths** | Set of paths to exclude from the index | **_etag property path** |
 
 The default indexing policy, in JSON, contains the following content:
 
@@ -39,9 +39,6 @@ There are two primary indexing mode options for most Azure Cosmos DB SQL API con
 The **consistent** indexing mode updates the index synchronously as your perform individual operations that modify an item (create, update, or delete). This indexing mode will be the standard choice for most containers to ensure the index is updated as items change.
 
 The **none** indexing mode completely disables indexing on a container. This indexing mode is a scenario-specific mode where the indexing operation is either unnecessary or could impact the solution's overall performance. Two examples include:
-
-> [!TIP]
-> There is an additional **lazy** indexing mode that is used for specific scenarios. Use the **Learn more** links at the end of this module to learn more about this specific indexing mode.
 
 - A bulk operation to create, update, or delete multiple documents may benefit from disabling indexing during the bulk execution period. Once the bulk operations are complete, the indexing mode can be switched back to **consistent**.
 - Solutions that use containers as a pure key-value store only perform point-read operations. These containers do not benefit from the secondary indexes created by running the indexer.
@@ -88,8 +85,8 @@ Using these operators, you can create a few example property path expressions fo
 
 | **Path expression** | **Description** |
 | ---: | :--- |
-| ``/*`` | All properties |
-| ``/name/?`` | The scalar value of the **name** property |
-| ``/category/*`` | All properties under the **category** property |
-| ``/metadata/sku/?`` | The scalar value of the **metadata.sku** property |
-| ``/tags/[]/name/?`` | Within the **tags** array, the scalar values of all possible **name** properties |
+| **/\*** | All properties |
+| **/name/?** | The scalar value of the **name** property |
+| **/category/\*** | All properties under the **category** property |
+| **/metadata/sku/?** | The scalar value of the **metadata.sku** property |
+| **/tags/[]/name/?** | Within the **tags** array, the scalar values of all possible **name** properties |

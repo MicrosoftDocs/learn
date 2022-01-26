@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.standard-devices
+title: Accessibility and standard device development
+metadata:
+  title: Determine the role of accessible design for standard hardware devices
+  description: This content is part of the accessibility best practices for gaming hardware module.
+  ms.date: 11/02/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 10
+content: |
+  [!include[](includes/01-standard-devices.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why is it important to consider accessible design approaches for standard hardware devices like consoles, PCs, and headsets?"
+    choices:
+    - content: "To ensure that all standard gaming devices are as accessible as bespoke accessibility devices and assistive technologies."
+      isCorrect: false
+      explanation: "Incorrect. Ideally, all devices would be fully accessible to all players. However, diverse player needs often require specific design considerations to address these needs. This might not be possible for all standard devices. Including the accessible elements needed for users to complete initial setup can help support these players."
+    - content: "Standard hardware devices often need to be used before a player can use their specific assistive technologies or adaptive input devices."
+      isCorrect: true
+      explanation: "Correct. Even though a player might have a customized input device for gameplay, if they can't power on their platform device, they can't use their customized controllers."
+    - content: "It isn't necessary to ensure that standard hardware devices are accessible if an accessible version of the same device already exists."
+      isCorrect: false
+      explanation: "Incorrect. Although many standard hardware devices such as the standard Xbox controller have an accessible counterpart (the Xbox Adaptive Controller), it doesn't mean that all players need the same level of customization and flexibility that a product like the Xbox Adaptive Controller offers. Instead, all hardware devices should provide a baseline level of accessible elements when possible to provide better experiences for more players."
+  - content: "Which of the following options does not accurately reflect the benefits of developing accessible standard gaming hardware?"
+    choices:
+    - content: "Providing players an opportunity to own and use devices that are similar in look and feel to the rest of commercial gaming hardware on the market."
+      isCorrect: false
+      explanation: "Incorrect. Many bespoke assistive technologies largely differ in appearance compared to products created by large commercial gaming companies. When standard devices are more accessible, more players have an opportunity to use the same types of devices that fit in with those being used by the friends or family they play with."
+    - content: "Improving the accessibility of standard devices creates better experiences for all players. This includes those who don't use assistive technologies but still benefit from the improved ease of use."
+      isCorrect: false
+      explanation: "Incorrect. Accessible experiences can ultimately provide better experiences in general for all players as situational circumstances like a broken hand can arise at any time, making it difficult to use devices in the manner they are used to."
+    - content: "More accessible standard devices eliminate the need for developers to ensure that the devices they create are compatible with existing assistive technologies in the market."
+      isCorrect: true
+      explanation: "Correct. This option does not accurately reflect the benefits of developing accessible standard devices. Creating more accessible standard devices does not mean that assistive technologies might still be required by players. Compatibility between these devices should continue to be prioritized accordingly."

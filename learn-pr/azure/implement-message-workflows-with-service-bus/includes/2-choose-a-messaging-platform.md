@@ -34,9 +34,9 @@ This difference between events and messages is fundamental because communication
 
 Azure also has Azure Event Hubs, but it is most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors in our manufacturing warehouses, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
 
-## Service Bus topics, queues, and relays
+## Service Bus topics and queues
 
-Azure Service Bus can exchange messages in three different ways: queues, topics, and relays.
+Azure Service Bus can exchange messages in three different ways: queues and topics.
 
 ### What is a queue?
 
@@ -54,17 +54,10 @@ A queue responds to high demand without needing to add resources to the system. 
 
 A **topic** is similar to a queue but can have multiple subscriptions. This means that multiple destination components can subscribe to a given topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
-> [NOTE!] 
+> [!NOTE] 
 > Topics are not supported in the Basic pricing tier.
 
 :::image type="content" source="../media/2-service-bus-topic.png" alt-text="An illustration showing one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscription are used by three receivers to retrieve the relevant messages.":::
-
-### What is a relay?
-
-A **relay** is an object that performs synchronous, two-way communication between applications. Unlike queues and topics, it is not a temporary storage location for messages. Instead, it provides bidirectional, unbuffered connections across network boundaries such as firewalls. Use a relay when you want direct communications between components as if they were located on the same network segment but separated by network security devices.
-
-> [!NOTE]
-> Although relays are part of Azure Service Bus, they do not implement loosely coupled messaging workflows and are not considered further in this module.
 
 ## Service Bus queues and storage queues
 
@@ -72,7 +65,7 @@ There are two Azure features that include message queues: Service Bus and Azure 
 
 Key advantages of Service Bus queues include:
 
-* Supports larger messages sizes of 256 KB (standard tier) or 1MB (premium tier) per message versus 64 KB
+* Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB
 * Supports both at-most-once and at-least-once delivery - choose between a very small chance that a message is lost or a very small chance it is handled twice
 * Guarantees **first-in-first-out (FIFO)** order - messages are handled in the same order they are added (although FIFO is the normal operation of a queue, it is not guaranteed for every message)
 * Can group multiple messages into a transaction - if one message in the transaction fails to be delivered, all messages in the transaction will not be delivered
@@ -103,7 +96,7 @@ If you decide that you need a queue:
 * You need to group messages into transactions
 * You want to receive messages without polling the queue
 * You need to provide role-based access to the queues
-* You need to handle messages larger than 64 KB but smaller than 256 KB
+* You need to handle messages larger than 64 KB but smaller than 256 KB for the standard tier or 100 MB for the premium tier
 * Your queue size will not grow larger than 80 GB
 * You would like to be able to publish and consume batches of messages
 

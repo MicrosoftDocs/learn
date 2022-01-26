@@ -38,7 +38,7 @@ Let’s consider a JSON object for a product with a metadata object with fields 
 }
 ```
 
-When designing an indexing policy, you should consider the needs of your SQL queries. In this fictional example, the **name** and **price** properties are regularly used in SQL queries. The easiest way to design this indexing policy is to include all paths and then selectively exclude the **name** and **price** property paths.
+When designing an indexing policy, you should consider the needs of your SQL queries. In this fictional example, the **description** and **metadata** properties are never used in SQL queries. The easiest way to design this indexing policy is to include all paths and then selectively exclude the **description** and **metadata** property paths.
 
 ```json
 {
@@ -81,3 +81,6 @@ Alternatively, you can exclude all paths and only selectively include the **name
   ]
 }
 ```
+
+> [!TIP]
+> The drawback to this approach is that you will need to update the index anytime you change your schema.

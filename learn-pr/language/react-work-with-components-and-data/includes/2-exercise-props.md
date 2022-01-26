@@ -21,6 +21,8 @@ To make components reusable, you typically pass the data to be displayed as prop
             </section>
         )
     };
+
+    export default RecipeTitle;
     ```
 
 #### Explore the code
@@ -36,6 +38,13 @@ Second, you're able to use the values contained in `props` like you would any no
 Now let's update **App.jsx** to use the new `RecipeTitle` component with the `title` property.
 
 1. Open **App.jsx**
+1. Add the following code under the line that reads `TODO: Add import for RecipeTitle` to import the newly created `RecipeTitle` component:
+
+    ```javascript
+    // TODO: Add import for RecipeTitle
+    import RecipeTitle from './RecipeTitle'
+    ```
+
 1. Add the following code under the line that reads `TODO: Add recipe object` to create an object for our recipe:
 
     ```javascript
@@ -50,8 +59,8 @@ Now let's update **App.jsx** to use the new `RecipeTitle` component with the `ti
             { name: '3 potatoes, cut into 1/2" pieces', prepared: false },
             { name: '4 Tbsp butter', prepared: false },
             { name: '1/8 cup heavy cream', prepared: false },
-            { name: 'Salt', prepared: false },
-            { name: 'Pepper', prepared: false },
+            { name: 'Salt', prepared: true },
+            { name: 'Pepper', prepared: true },
         ],
     };
     ```

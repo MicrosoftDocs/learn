@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Accelerate your migration and modernization journey to Azure
-summary: Moving Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand, and focus on more important tasks. There are many reasons for moving to Azure, and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success. 
+summary: Moving to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand, and focus on more important tasks. There are many reasons for moving to Azure, and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success. 
 abstract: |
   In this module, you will:
   - List the drivers and benefits of moving to Azure.

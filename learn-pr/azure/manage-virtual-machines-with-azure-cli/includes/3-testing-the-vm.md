@@ -1,4 +1,4 @@
-When you create a virtual machine, it is assigned a public IP address that is reachable over the Internet, and a private IP address used within the Azure data center. Both of these values appear in the JSON block that is returned from the `create` command:
+When you create a virtual machine, it is assigned a public IP address that is reachable over the Internet, and a private IP address used within the Azure data center. Both of these values appear in the JSON block the `create` command returns, like the following:
 
 ```json
 {

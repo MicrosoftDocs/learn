@@ -10,6 +10,11 @@ We applied all of these concepts and techniques to a relational database to mode
 
 We also modeled the product category and product tag entities. And we used a special technique to reduce the overall storage and throughput required for small lookup tables.
 
+Now that you have completed this module, you can:
+
+- Determine access patterns for data.
+- Apply data model and partitioning strategies to support an efficient and scalable NoSQL database.
+
 ## Learn more
 
 - [Understanding the differences between NoSQL and relational databases][/azure/cosmos-db/relational-nosql]

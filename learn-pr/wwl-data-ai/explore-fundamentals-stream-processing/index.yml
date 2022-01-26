@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.explore-fundamentals-of-stream-processing
+metadata:
+  title: Explore fundamentals of stream processing
+  description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement streaming data solutions."
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore fundamentals of stream processing
+summary: Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement streaming data solutions.
+abstract: |
+  In this module, you'll learn how to:
+  - Compare batch and stream processing
+  - Describe common elements of streaming data solutions
+  - Describe features and capabilities of Azure Stream Analytics
+  - Describe features and capabilities of Spark Structured Streaming on Azure
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.explore-fundamentals-of-stream-processing.introduction
+- learn.wwl.explore-fundamentals-of-stream-processing.understand-batch
+- learn.wwl.explore-fundamentals-of-stream-processing.explore-common-elements-architecture
+- learn.wwl.explore-fundamentals-of-stream-processing.explore-azure-stream-analytics
+- learn.wwl.explore-fundamentals-of-stream-processing.exercise-analyze-streaming-data
+- learn.wwl.explore-fundamentals-of-stream-processing.explore-apache-spark-microsoft-azure
+- learn.wwl.explore-fundamentals-of-stream-processing.exercise-process-streaming-data-using-spark
+- learn.wwl.explore-fundamentals-of-stream-processing.knowledge-check
+- learn.wwl.explore-fundamentals-of-stream-processing.summary
+badge:
+  uid: learn.wwl.explore-fundamentals-of-stream-processing.badge

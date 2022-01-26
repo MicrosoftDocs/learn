@@ -11,16 +11,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/build-blazor-webapps.svg
 levels:
 - beginner
 - intermediate
 roles:
-- solution-architect
+- developer
 products: 
-- dotnet
+- blazor
 - aspnet-core
-- dotnet-core
+- dotnet
 modules:
 - learn.intro-to-blazor
 - learn.build-web-app-blazor-webassembly-vscode

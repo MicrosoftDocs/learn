@@ -12,7 +12,7 @@ Let's start by creating the infrastructure. We will also purposely be creating a
 
 1. In your browser, open an [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) session.
  
-1. Open the directory you want to create resources in.
+1. Open the directory in which you want to create resources.
 
 1. List the supported regions for your subscription.
     
@@ -156,7 +156,7 @@ Now, you can use Network Watcher in the Azure portal to troubleshoot connectivit
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the global search enter **Network Watcher** and select that service. The **Network Watcher** Overview pane appears, listing the active network watcher.
+1. In the global search, enter **Network Watcher** and select that service. The **Network Watcher** Overview pane appears, listing the active network watcher.
 
 1. In the Network Watcher menu, under **Monitoring**, select **Topology**. The **Network Watcher | Topology** pane appears.
 
@@ -177,8 +177,8 @@ The topology appears to be correct. To get more information, let's set up some t
     | Setting | Value |
     | --- | --- |
     | Connection Monitor Name | Back-to-front-HTTP-test |
-    | Subscription | From the dropdown list, select your subscription |
-    | Region | Select the Azure region you deployed your resources in |
+    | Subscription | Select your subscription from the drop-down list |
+    | Region | Select the Azure region in which you deployed your resources |
     | Workspace configuration | Use workspace created by connection monitor (default) is checked |
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
@@ -191,13 +191,13 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)** and note that your *BackendVM* and *FrontendVM* Azure endpoints are listed.
 
-1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a Deployment succeeded notification. Optionally, select the Notifications icon in your global controls at the top right to read your recent notification events.
+1. At the far right of each endpoint in the list, select the ellipsis, and then select **Enable Network Watcher**. It may take some time for each endpoint to deploy. Watch for a Deployment succeeded notification. You could also select the Notifications icon in your global controls at the top right to read your recent notification events.
 
     :::image type="content" source="../media/3-enable-network-watcher.png" alt-text="Screenshot that shows enabling of Network Watcher.":::
 
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
-1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. Select this endpoint and rename it to **BackendVM**. 
+1. Select **Add endpoints**. The **Add test group details** pane reappears with the BackendSubnet identified as your source. Select this endpoint, select **Edit**, and rename it to **BackendVM**. 
 
 1. Select **Save**. The **Add test group details** reappears with your BackendVM identified a source Azure endpoint.
 
@@ -223,7 +223,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. Select **FrontendVM** from the expanded Azure endpoint list.
 
-1. Select **Add endpoints**. The **Add test group details** reappears with your with the FrontendSubnet identified as your destination.  
+1. Select **Add endpoints**. The **Add test group details** reappears with the FrontendSubnet identified as your destination.  
 
 1. At the bottom of the pane, select **Add Test Group**. The **Create Connection Monitor** pane appears.
 
@@ -237,25 +237,25 @@ The results should show that, because the NSG is associated with the backend sub
 
 Run the same test in the opposite direction. Let's set up another test in Connection Monitor. Start by creating a test from the frontend VM to the backend VM.
 
-1. On the **Create Connection Monitor** pane select **Create** twice.
+1. On the **Create Connection Monitor** pane, select **Create** twice.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
     | Connection Monitor Name | Front-to-back-HTTP-test |
-    | Subscription | From the dropdown, select your subscription |
-    | Region | Select the Azure region you deployed your resources in |
+    | Subscription | Select your subscription from the drop-down list |
+    | Region | Select the Azure region in which you deployed your resources |
 
 1. Select **Next : Test groups**. The **Add test group details** pane appears.
 
-1. In **Test group name**, enter 'Front-to-back-HTTP-test-group' and then, in the Sources box select **Add sources**. The **Add Sources** pane appears. 
+1. In **Test group name**, enter 'Front-to-back-HTTP-test-group', then select **Add sources** in the Sources box. The **Add Sources** pane appears. 
 
-1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, select **MyVNet1** from the list.
+1. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and select **MyVNet1** from the list.
 
 1. At the bottom of the pane, expand **Selected sources (2 Azure endpoints)**, and then select **FrontendVM** from the list.
 
-1. Select **Add endpoints**. The **Add test group details** pane reappears. add FrontendSubnet for the source endpoint name.
+1. Select **Add endpoints**. The **Add test group details** pane reappears. Add FrontendSubnet for the source endpoint name.
 
 1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** pane appears.
 

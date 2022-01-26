@@ -58,7 +58,7 @@ Many event handler methods take a parameter that provides extra contextual infor
 }
 ```
 
-Other events provide different `EventArgs` parameters. For instance, the `@onkeypress` event passes a `KeyboardEventArgs` parameter that indicates which key the user pressed. For any of the DOM events, if you don't need this information, you can simply omit the `EventArgs` parameter from the event handling method.
+Other events provide different `EventArgs` parameters. For instance, the `@onkeypress` event passes a `KeyboardEventArgs` parameter that indicates which key the user pressed. For any of the DOM events, if you don't need this information, you can omit the `EventArgs` parameter from the event handling method.
 
 ## Understand event handling in JavaScript versus event handling with Blazor
 
@@ -120,7 +120,7 @@ On an HTML page, the user can tab between elements, and the focus naturally trav
 
 The simplest way to perform this task is to use the `FocusAsync` method. This is an instance method of an `ElementReference` object. The `ElementReference` should reference the item to which you want to set the focus. You designate an element reference with the `@ref` attribute, and create a C# object with the same name in your code.
 
-In the example below, the `@onclick` event handler for the \<button\> element sets the focus to the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message `Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
+In the example below, the `@onclick` event handler for the \<button\> element sets the focus to the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message "Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
  
 ```razor
 <button class="btn btn-primary" @onclick="ChangeFocus">Click me to change focus</button>
@@ -313,9 +313,9 @@ As an example, consider the following scenario. You want to create a component n
 
     private async Task HandleKeypress(KeyboardEventArgs e)
     {
-        KeyTransformation t = new KeyTransformation() { key = e.Key };
+        KeyTransformation t = new KeyTransformation() { Key = e.Key };
         await OnKeypressCallback.InvokeAsync(t);
-        data += t.transformedKey;
+        data += t.TransformedKey;
     }
 }
 ```
@@ -327,13 +327,13 @@ namespace WebApplication.Data
 {
     public class KeyTransformation
     {
-        public string key { get; set; }
-        public string transformedKey { get; set; }
+        public string Key { get; set; }
+        public string TransformedKey { get; set; }
     }
 }
 ```
 
-The `key` field contains the value entered by the user, and the `transformedKey` field will hold the transformed value of the key when it has been processed.
+The `key` field contains the value entered by the user, and the `TransformedKey` field will hold the transformed value of the key when it has been processed.
 
 In this example, the `EventCallback` object is a component parameter, and its value is supplied when the component is created. This action is performed by another component, named `TextTransformer`:
 
@@ -348,12 +348,12 @@ In this example, the `EventCallback` object is a component parameter, and its va
 @code {
     private void TransformText(KeyTransformation k)
     {
-        k.transformedKey = k.key.ToUpper();
+        k.TransformedKey = k.Key.ToUpper();
     }
 }
 ```
 
-The `TextTransformer` component is a Blazor page that creates an instance of the `TextDisplay` component. It populates the `OnKeypressCallback` parameter with a reference to the `TransformText` method in the code section of the page. The `TransformText` method takes the `KeyTransformation` object provided as its argument, and fills in the `transformedKey` property with the value found in the `Key` property converted to upper case. The diagram below illustrates the flow of control when a user enters a value into the \<input\> field in the `TextDisplay` component displayed by the `TextTransformer` page:
+The `TextTransformer` component is a Blazor page that creates an instance of the `TextDisplay` component. It populates the `OnKeypressCallback` parameter with a reference to the `TransformText` method in the code section of the page. The `TransformText` method takes the `KeyTransformation` object provided as its argument, and fills in the `TransformedKey` property with the value found in the `Key` property converted to upper case. The diagram below illustrates the flow of control when a user enters a value into the \<input\> field in the `TextDisplay` component displayed by the `TextTransformer` page:
 
 :::row:::
     :::column:::
@@ -381,4 +381,3 @@ You can wire a callback up to an event handler directly without using an interme
 ```
 
 In this case, the `EventCallback` takes a `MouseEventArgs` type parameter, so it can be specified as the handler for the `@onclick` event.
-

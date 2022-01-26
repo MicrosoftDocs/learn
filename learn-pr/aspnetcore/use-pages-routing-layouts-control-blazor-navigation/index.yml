@@ -19,11 +19,11 @@ abstract: |
 prerequisites: |
   - Basic knowledge of web app concepts
   - C# .NET experience at a beginner level
-  - Local installations of the .NET Core SDK and Visual Studio Code
+  - Local installations of the .NET SDK and Visual Studio Code
   - C# extension for Visual Studio Code
   - Experience with using the command line
   - Knowledge of Blazor components
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
 levels: 
   - intermediate
 roles: 

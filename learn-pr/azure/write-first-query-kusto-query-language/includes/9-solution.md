@@ -17,6 +17,8 @@ This solution provides one possible way to construct a query that answers the qu
 
 The following query includes all the preceding steps:
 
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLCoJycxNVUhKLSlPTc1T0EhJLEktAYpomOga6hoZGJhr6ukhiRkbQAQ1kc0oSVWwtVVQCvMMcvf083RUAsoVFOVnpSaXKLgk5iamp9pCqICi/ILUopJKbQjXGcgt1lEAuymksiAVqK0kv0DBVCGpEqoPALF1AUy0AAAA" target="_blank"> Click to run query</a>
+
 ```kusto
 StormEvents
 | where StartTime between (datetime(4-1-2007)..datetime(4-30-2007))

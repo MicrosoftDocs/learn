@@ -3,15 +3,15 @@ uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-e
 metadata:
   title: Configure for alerts and detections in Microsoft Defender for Endpoint
   description: "Configure for alerts and detections in Microsoft Defender for Endpoint"
-  ms.date: 03/12/2021
+  ms.date: 12/10/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Configure for alerts and detections in Microsoft Defender for Endpoint
-summary: Learn how to configure settings to manage alerts and notifications.  You will also learn to enable indicators as part of the detection process.
+summary: Learn how to configure settings to manage alerts and notifications.  You'll also learn to enable indicators as part of the detection process.
 abstract: |
-  After completion of this module, you will be able to:
+  After completion of this module, you'll be able to:
   - Configure alert settings in Microsoft Defender for Endpoint
   - Manage indicators in Microsoft Defender for Endpoint
 prerequisites: |
@@ -29,7 +29,6 @@ units:
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.configure-alert-notifications
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-alert-suppression
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-indicators
-- learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-custom-detections
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.knowledge-check
 - learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.summary-resources
 badge:

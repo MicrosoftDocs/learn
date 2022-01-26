@@ -2,8 +2,8 @@ You should have a basic understanding of the provided tables and their intended 
 
 You should now be able to:
 
-- Use the Logs page to view tables in Microsoft Sentinel
-- Query the most used tables in Microsoft Sentinel
+- Use the Logs page to view tables with Microsoft Sentinel
+- Query the most used tables with Microsoft Sentinel
 
 ## Learn more
 

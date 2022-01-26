@@ -3,7 +3,7 @@ uid: learn.wwl.examine-components-iot-solution
 metadata:
   title: Examine the components of an IoT solution
   description: "This module introduces you to the device hardware, device software, and Azure service options that are used within an Azure IoT solution."
-  ms.date: 11/24/2021
+  ms.date: 12/15/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of the IoT solution architecture and the data workflows within an IoT solution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot-components-of-solution.svg
 levels:
 - intermediate
 roles:

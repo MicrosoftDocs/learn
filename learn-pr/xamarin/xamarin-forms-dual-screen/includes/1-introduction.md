@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Mobile devices are becoming more varied in size and shape, such as the dual-screen Microsoft Surface Duo. Applications can take advantage of the additional space to build new features, but still need to work well on traditional devices.
 
 Suppose you're building a data-driven app where the user drills down into more details. On a single-screen device the user will typically be switching back-and-forth between screens, while a dual-screen device provides space for both the list and detail information to be shown at the same time. The `TwoPaneView` control can be used to build apps that work well for both.

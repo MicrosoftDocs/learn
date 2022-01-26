@@ -7,7 +7,7 @@ In this module, we learned how Blazor applications are structured, where they ca
 * Network Requirements
 * Code Security Requirements
 
-Building your next application with Blazor has the potential to save your organization time and money.  If your development team is already familiar with C# and .NET, they will find Blazor to be a comfortable choice in building their application.  Blazor will also allow the team to integrate with existing .NET investments and choose where they would like the application to run with a Web Assembly deployment option.
+Building your next application with Blazor has the potential to save your organization time and money.  If your development team is already familiar with C# and .NET, they will find Blazor to be a comfortable choice in building their application.  Blazor will also allow the team to integrate with existing .NET investments and choose where they would like the application to run with a WebAssembly deployment option.
 
 ## References
 

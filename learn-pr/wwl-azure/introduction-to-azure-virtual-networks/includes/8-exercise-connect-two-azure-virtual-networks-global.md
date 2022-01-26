@@ -19,15 +19,11 @@ In this unit, you will:
 In this section, you will create a test VM on the Manufacturing VNet to test if you can access resources inside another Azure virtual network from your ManufacturingVnet.
 
 ### Create ManufacturingVM
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-1.  On the Azure home page, select Virtual Machines.
-2.  In Virtual Machines, select **+ Add > + Start with a preset configuration**. 
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-    :::image type="content" source="../media/add-virtual-machine-preset-b95645b4.png" alt-text="Screenshot of adding a VM preset in the Azure portal":::
-    
-3.  In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-4.  Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-5.  Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
     
     :::row:::
       :::column:::
@@ -70,7 +66,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
         Region
       :::column-end:::
       :::column:::
-        (Europe) North Europe
+        West Europe
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -92,7 +88,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
         Image
       :::column-end:::
       :::column:::
-        Windows Server 2022 Datacenter- Gen2
+        Windows Server 2022 Datacenter- Gen1
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -114,7 +110,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
         Size
       :::column-end:::
       :::column:::
-        Standard\_D2\_v3 - 2vcpus, 8GiB memory
+        Standard\_D2s\_v3 - 2vcpus, 8GiB memory
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -294,7 +290,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
       :::column-end:::
     :::row-end:::
     
-6.  When the deployment is complete, select **Go to resource**.
+4.  When the deployment is complete, select **Go to resource**.
 
 ## Task 2: Connect to the Test VMs using RDP
 

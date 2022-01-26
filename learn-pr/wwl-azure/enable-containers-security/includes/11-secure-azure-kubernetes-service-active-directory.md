@@ -1,4 +1,3 @@
-
 There are different ways to authenticate with and secure Kubernetes clusters. Using role-based access controls (RBAC), you can grant users or groups access to only the resources they need. With Azure Kubernetes Service (AKS), you can further enhance the security and permissions structure by using Azure Active Directory. These approaches help you secure your application workloads and customer data.
 
 ## Kubernetes service accounts
@@ -11,7 +10,8 @@ Normal user accounts allow more traditional access for human administrators or d
 
 The security of AKS clusters can be enhanced with the integration of Azure Active Directory (AD). Built on decades of enterprise identity management, Azure AD is a multi-tenant, cloud-based directory, and identity management service that combines core directory services, application access management, and identity protection. With Azure AD, you can integrate on-premises identities into AKS clusters to provide a single source for account management and security.
 
-![A user is authenticated on first connection. The Cluster Master verifies credentials against Azure AD. ](../media/az500-kubernetes-azure-active-directory.png)
+:::image type="content" source="../media/az500-kubernetes-azure-active-directory-f1969540.png" alt-text="A user is authenticated on first connection. The Cluster Master verifies credentials against Azure AD.":::
+
 
 With Azure AD-integrated AKS clusters, you can grant users or groups access to Kubernetes resources within a namespace or across the cluster. To obtain a kubectl configuration context, a user can run the az aks get-credentials command. When a user then interacts with the AKS cluster with kubectl, they are prompted to sign in with their Azure AD credentials. This approach provides a single source for user account management and password credentials. The user can only access the resources as defined by the cluster administrator.
 

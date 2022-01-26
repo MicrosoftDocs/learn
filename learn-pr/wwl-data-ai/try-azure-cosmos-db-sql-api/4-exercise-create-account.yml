@@ -4,13 +4,12 @@ title: 'Exercise: Create an Azure Cosmos DB SQL API account'
 metadata:
   title: 'Exercise: Create an Azure Cosmos DB SQL API account'
   description: "Exercise: Create an Azure Cosmos DB SQL API account"
-  ms.date: 11/24/2021
+  ms.date: 12/21/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107570
 labModal: true
 durationInMinutes: 15

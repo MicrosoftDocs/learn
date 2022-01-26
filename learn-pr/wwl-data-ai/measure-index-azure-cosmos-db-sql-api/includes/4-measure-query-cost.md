@@ -11,7 +11,7 @@ QueryRequestOptions options = new()
 FeedIterator<Product> iterator = container.GetItemQueryIterator<Product>(query, requestOptions: options);
 ```
 
-Next, iterator over your results as usual with two minor changes:
+Next, iterate over your results as usual with two minor changes:
 
 1. Within each iteration of the while loop. Print the current RU/s charge for the result page to the console.
 1. Aggregate all of the RU/s charges for each page of results, and then print the total RU/s consumed outside of the while loop.

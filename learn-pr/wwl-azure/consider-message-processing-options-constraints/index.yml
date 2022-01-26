@@ -3,7 +3,7 @@ uid: learn.wwl.consider-message-processing-options-constraints
 metadata:
   title: Consider message processing options and constraints
   description: "This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages, and examines IoT Hub message processing limits."
-  ms.date: 11/19/2021
+  ms.date: 12/22/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features and capabilities of IoT Hub.
   - Describe how an IoT solution uses message routing to process message and event data.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/messaging-processing-options.svg
 levels:
 - intermediate
 roles:

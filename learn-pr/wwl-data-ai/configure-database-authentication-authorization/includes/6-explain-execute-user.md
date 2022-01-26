@@ -12,61 +12,44 @@ The example then changes content to be the new user and an attempt is made to se
 
 ```sql
 USE AdventureWorks2016;
-
 GO
 
 CREATE USER [DP300User1] WITH PASSWORD = 'Pa55.w.rd';
-
 GO
 
 CREATE ROLE [SalesReader];
-
 GO
 
 ALTER ROLE [SalesReader] ADD MEMBER [DP300User1];
-
 GO
 
 GRANT SELECT, EXECUTE ON SCHEMA::Sales TO [SalesReader];
-
 GO
 
-
-
 CREATE OR ALTER PROCEDURE Sales.DemoProc
-
-as
-
-SELECT P.Name, Sum(SOD.LineTotal) as TotalSales ,SOH.OrderDate 
-
+AS
+SELECT P.Name, 
+    SUM(SOD.LineTotal) AS TotalSales,
+    SOH.OrderDate 
 FROM Production.Product P
-
-INNER JOIN Sales.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
-
-INNER JOIN Sales.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
-
-GROUP BY P.Name, SOH.OrderDate
-
+    INNER JOIN Sales.SalesOrderDetail SOD ON (SOD.ProductID = P.ProductID)
+    INNER JOIN Sales.SalesOrderHeader SOH ON (SOH.SalesOrderID = SOD.SalesOrderID)
+GROUP BY P.Name, 
+    SOH.OrderDate
 ORDER BY TotalSales DESC;
 
 GO
 
-
-
 EXECUTE AS USER = 'DP300User1';
 
-
-
-SELECT P.Name, Sum(SOD.LineTotal) as TotalSales ,SOH.OrderDate 
-
+SELECT P.Name, 
+    SUM(SOD.LineTotal) AS TotalSales,
+    SOH.OrderDate 
 FROM Production.Product P
-
-INNER JOIN Sales.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
-
-INNER JOIN Sales.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
-
-GROUP BY P.Name, SOH.OrderDate
-
+    INNER JOIN Sales.SalesOrderDetail SOD ON (SOD.ProductID = P.ProductID)
+    INNER JOIN Sales.SalesOrderHeader SOH ON (SOH.SalesOrderID = SOD.SalesOrderID)
+GROUP BY P.Name, 
+    SOH.OrderDate
 ORDER BY TotalSales DESC;
 ```
 
@@ -84,25 +67,19 @@ Permission changes do not apply when dynamic SQL is being used within stored pro
 
 ```sql
 CREATE OR ALTER PROCEDURE Sales.DemoProc
-
 AS
-
 DECLARE @sqlstring NVARCHAR(MAX)
 
-
-
-SET @sqlstring = 'SELECT P.Name, Sum(SOD.LineTotal) as TotalSales, SOH.OrderDate 
-
+SET @sqlstring = '
+SELECT P.Name, 
+    SUM(SOD.LineTotal) AS TotalSales, 
+    SOH.OrderDate 
 FROM Production.Product P
-
-INNER JOIN Sales.SalesOrderDetail SOD on SOD.ProductID = P.ProductID
-
-INNER JOIN Sales.SalesOrderHeader SOH on SOH.SalesOrderID = SOD.SalesOrderID
-
+    INNER JOIN Sales.SalesOrderDetail SOD ON (SOD.ProductID = P.ProductID)
+    INNER JOIN Sales.SalesOrderHeader SOH ON (SOH.SalesOrderID = SOD.SalesOrderID)
 GROUP BY P.Name, SOH.OrderDate'
 
 EXECUTE sp_executesql @sqlstring
-
 GO
 
 --

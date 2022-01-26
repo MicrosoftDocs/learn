@@ -18,4 +18,5 @@ az cosmosdb failover-priority-change \
     --failover-policies 'westus2=0' 'eastus=1'
 ```
 
-> &#128161; Any priority change to a region that is **!= 0** will not trigger a failover.
+> [!TIP]
+> Any priority change to a region that is **!= 0** will not trigger a failover.

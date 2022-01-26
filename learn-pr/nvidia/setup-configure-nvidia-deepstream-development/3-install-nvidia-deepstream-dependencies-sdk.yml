@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Install the NVIDIA DeepStream dependencies and SDK
   description: Exercise - Install the NVIDIA DeepStream dependencies and SDK.
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
   ms.date: 11/09/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

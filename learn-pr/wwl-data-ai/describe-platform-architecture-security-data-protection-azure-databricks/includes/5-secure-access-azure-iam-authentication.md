@@ -1,4 +1,4 @@
-[Azure role-based access control (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope.
+[Azure role-based access control (RBAC)](/azure/role-based-access-control/overview) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope.
 
 **Access control (IAM)** is the blade that you use to assign roles to grant access to Azure resources. It's also known as identity and access management and appears in several locations in the Azure portal.
 
@@ -27,13 +27,13 @@ Example attribute mappings:
 
 ![Attribute mappings.](../media/scim-attribute-mappings.png)
 
-## Conditional Access
+## Conditional access
 
-Azure Databricks supports Azure Active Directory Conditional Access, which allows administrators to control where and when users are permitted to sign in to Azure Databricks. For example, Conditional Access policies can restrict sign-in to your corporate network or can require multi-factor authentication.
+Azure Databricks supports Azure Active Directory conditional access, which allows administrators to control where and when users are permitted to sign in to Azure Databricks. For example, conditional access policies can restrict sign-in to your corporate network or can require multi-factor authentication.
 
 > This feature is available in the Azure Databricks premium tier only.
 
-![Conditional Access.](../media/conditional-access.png)
+![Conditional access.](../media/conditional-access.png)
 
 ## Azure Active Directory token support
 

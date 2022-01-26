@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 12/02/2021
   author: wwlpublish
-  ms.author: lumac
+  ms.author: luiz.macedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Source control is the practice of controlling what is deployed to test and production environments."
       isCorrect: false
-      explanation: "That is incorrect. Source control is the practice of tracking and managing changes to code."
+      explanation: "Incorrect. Source control is the practice of tracking and managing changes to code."
     - content: "Source control is the practice of controlling security through code files."
       isCorrect: false
-      explanation: "That is incorrect. Source control is the practice of tracking and managing changes to code."
+      explanation: "Incorrect. Source control is the practice of tracking and managing changes to code."
     - content: "Source control is the practice of tracking and managing changes to code."
       isCorrect: true
-      explanation: "That's correct. Source control is the practice of tracking and managing changes to code."
+      explanation: "Correct. Source control is the practice of tracking and managing changes to code."
   - content: "Which of the following choices isn't a benefit of using distributed version control?"
     choices:
     - content: "Complete offline support"
       isCorrect: false
-      explanation: "That is incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
+      explanation: "Incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
     - content: "Allows exclusive file locking"
       isCorrect: true
-      explanation: "That's correct. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
+      explanation: "Correct. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
     - content: "Portable history"
       isCorrect: false
-      explanation: "That is incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
+      explanation: "Incorrect. Distributed version control supports full offline versioning; it is cross-platform and has a portable history."
   - content: "Which of the following choices isn't a benefit of using centralized version control?"
     choices:
     - content: "Easily scales for large codebases"
       isCorrect: false
-      explanation: "That is incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic.."
+      explanation: "Incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic.."
     - content: "An open-source friendly code review model via pull requests"
       isCorrect: true
-      explanation: "That is correct. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."
+      explanation: "Correct. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."
     - content: "Allows exclusive file locking"
       isCorrect: false
-      explanation: "That's incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."
+      explanation: "Incorrect. Only open-source friendly code review models via PRs are exclusive distributed version control based on Git characteristic."

@@ -17,7 +17,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 :::row-end:::
 :::row:::
   :::column:::
-    **[Backend pool size](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)**
+    **[Backend pool size](/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)**
   :::column-end:::
   :::column:::
     Supports up to 1000 instances.
@@ -39,7 +39,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 :::row-end:::
 :::row:::
   :::column:::
-    **[Health probes](https://docs.microsoft.com/azure/load-balancer/load-balancer-custom-probe-overview#types)**
+    **[Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)**
   :::column-end:::
   :::column:::
     TCP, HTTP, HTTPS
@@ -50,7 +50,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
 :::row-end:::
 :::row:::
   :::column:::
-    **[Health probe down behavior](https://docs.microsoft.com/azure/load-balancer/load-balancer-custom-probe-overview#probedown)**
+    **[Health probe down behavior](/azure/load-balancer/load-balancer-custom-probe-overview#probedown)**
   :::column-end:::
   :::column:::
     TCP connections stay alive on an instance probe down **and** on all probes down.
@@ -108,7 +108,7 @@ Azure load balancer is available in two SKUs: Basic and Standard.
     **Outbound rules**
   :::column-end:::
   :::column:::
-    [Declarative outbound NAT configuration](https://docs.microsoft.com/azure/load-balancer/load-balancer-outbound-connections#outboundrules)
+    [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules)
   :::column-end:::
   :::column:::
     Not available

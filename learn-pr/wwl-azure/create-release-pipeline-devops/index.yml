@@ -3,7 +3,7 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 11/25/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -11,15 +11,13 @@ metadata:
 title: Create a release pipeline
 summary: This module describes Azure Pipelines capabilities, build and release tasks, and multi-configuration and multi-agent differences.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to:
   - Explain the terminology used in Azure DevOps and other Release Management Tooling
   - Describe what a Build and Release task is, what it can do, and some available deployment tasks
   - Implement release jobs
-  - Differentiate between multi-agent and multi
-  -configuration release job&quot;
+  - Differentiate between multi-agent and multi-configuration release job
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:

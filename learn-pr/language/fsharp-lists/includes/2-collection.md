@@ -13,16 +13,16 @@ let logEntryWednesday = "third entry"
 In this code, you can continue adding one similar entry after another, but at some point that approach begins to feel impractical. The separate entries are not only related but are, in fact, of the same type. Is it a good idea to create a new variable for each entry? Probably not. Instead, consider using a collection, where you can create a logical, manageable grouping, whether it's adding or removing data or using some other operation:
 
 ```fsharp
-logEntriesWeek = ["first entry", "second entry"; "third entry"]
+logEntriesWeek = ["first entry"; "second entry"; "third entry"]
 ```
 
-This code not only requires a lot less typing, but it also creates a sense of order, where everything that's related is grouped together. 
+This code not only requires a lot less typing, but it also creates a sense of order, where everything that's related is grouped together.
 
 So what can F# offer you? For starters, it gives you three types of collections, each one designed for a particular situation.
 
 - **Lists**: A list in F# is an ordered, *immutable* set of elements of the same type. Immutable means that a list might offer better performance than an array, but you might have to be more creative if you want to change its content. For example, you might want to create a new list from an existing list. This unit focuses on using lists.
 
-- **Arrays**: Arrays are fixed-size, zero-based, *mutable* collections of consecutive data elements that are all of the same type. Mutable means that it's easy to add and remove data elements, but there might be a performance hit.
+- **Arrays**: Arrays are fixed-size, *mutable* collections of data elements of the same type that are ordered consecutively with a zero-based index. Mutable means that it's easy to add and remove data elements, but there might be a performance hit.
 
 - **Sequences**: A sequence is a logical series of elements of the same type. A sequence has a just-in-time feeling to it, because it works well with large collections of data, where you don't expect to use all elements. It also computes elements only when it's required to do so. Therefore, sequences can offer better performance than lists in certain situations.
 
@@ -34,7 +34,7 @@ As we've mentioned, a list is an ordered, immutable set of elements. Here are so
 let cards = ["Ace"; "King"; "Queen"]
 ```
 
-In this code, you enclose the elements in brackets (`[]`) to define the list. The list items are separated by a semicolon (`;`). 
+In this code, you enclose the elements in brackets (`[]`) to define the list. The list items are separated by a semicolon (`;`).
 
 Another way to create a list is to place each element on a new line, as shown here. This also removes the need to use semicolons.
 
@@ -49,7 +49,7 @@ let cards = [
 In lists, elements must be of the same type, so the following declaration is not permitted:
 
 ```fsharp
-let cards = [ 1, "Ace", "King" ] // not permitted
+let cards = [ 1; "Ace"; "King" ] // not permitted
 ```
 
 In this code, because the declaration mixes numbers and strings, it isn't permitted. Another way to create a list is to use a range operator (`..`). The idea is to specify the start and end elements, separated by a range operator (`..`). Doing so creates all the numbers from start to end, including the in-between elements. For example, you can create the numbers `1 2 3 4 5` by using the following code:
@@ -66,7 +66,7 @@ As we mentioned, lists are immutable, which means that they can't change. By thi
 let cards = ["Ace"; "King"; "Queen"]
 ```
 
-The preceding code is a list consisting of three strings. By using a double colon (`::`) operator, you can append an item to the list. The result is a new list, and the old list is unaffected:
+The preceding code is a list consisting of three strings. By using a double colon (`::`) operator, you can append an item to the beginning of a list. The result is a new list, and the old list is unaffected:
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
@@ -77,7 +77,7 @@ You can also add an entire list by using the at sign (`@`) operator, as shown he
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
-let otherCardList = ["Jack", "10"]
+let otherCardList = ["Jack"; "10"]
 let fullList = cards @ otherCardList // "Ace", "King", "Queen", "Jack", "10"
 ```
 
@@ -85,16 +85,16 @@ There's an `append()` function in the list module, and it works for both array a
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
-let otherCardList = ["10", "9"]
-let fullList = cards |> List.append ["Jack"]
-let fullList = cards |> List.append otherCardList // "Ace", "King", "Queen", "Jack", "10", "9"
+let otherCardList = ["10"; "9"]
+let fullList = cards |> List.append ["Jack"] // "Jack", "Ace", "King", "Queen"
+let fullList = cards |> List.append otherCardList // "10", "9", "Ace", "King", "Queen"
 ```
 
 ## Properties
 
-Lists in F# are implemented as linked lists. That is, a list is a structure in which each element is connected to another element. More terms to learn are *head*, which is the first element in the list, and *tail*, which includes the elements that aren't in the head. For example, in list `1 2 3 4`, the head would be `1` and the tail would be `2 3 4`.
+Lists in F# are implemented as linked lists. That is, a list is a structure in which each element is connected to another element. More terms to learn are *head*, which is the first element in the list, and *tail*, which includes the elements that aren't in the head. For example, in the list `1 2 3 4`, the head would be `1` and the tail would be `2 3 4`.
 
-By separating the elements in this way, you can quickly access the first element so that you can read, remove, or perform other actions on it. To access any specific item in the list, you can use an `Item` property, which takes a 0-based index, as shown here:
+By separating the elements in this way, you can quickly access the first element so that you can read, remove, or perform other actions on it. To access any specific item in the list, you can use an `Item` property, which takes a zero-based index, as shown here:
 
 ```fsharp
 let list = [1; 2; 3; 4]
@@ -108,6 +108,6 @@ The list properties are described in the following table:
 | Head | The first element in a list |
 | Empty | Returns an empty list; can be used when you want to create an empty list |
 | IsEmpty | Checks to see whether the current list is empty |
-| Item | Retrieves the current element at the specified position (0-based index) |
-| Length | Returns the number of items |
+| Item | Retrieves the current element at the specified position (zero-based index) |
+| Length | Returns the number of items in the list |
 | Tail | Returns all but the first element in the list |

@@ -352,7 +352,7 @@ In this task you will test the network rule to confirm that it works as expected
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:
     
     ```powershell
-    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+    Remove-AzResourceGroup -Name 'fw-manager-rg' -Force -AsJob
     
     ```
 

@@ -1,6 +1,7 @@
 In this module, you used Azure Resource Manager and Bicep templates to automate the deployment and management of Azure Cosmos DB SQL API resources in the cloud.
 
-> &#128161; Remember, the **Microsoft.DocumentDB** resource provider has many other resources that can be deployed using templates. This module only covered a subset of possible resources.
+> [!TIP]
+> Remember, the **Microsoft.DocumentDB** resource provider has many other resources that can be deployed using templates. This module only covered a subset of possible resources.
 
 Now that you have completed this module, you can:
 

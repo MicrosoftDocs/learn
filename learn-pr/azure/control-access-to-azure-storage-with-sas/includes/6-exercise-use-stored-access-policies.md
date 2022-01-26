@@ -99,7 +99,7 @@ In this exercise, you'll update your web app to create SASs with stored access p
     dotnet build
     ```
 
-1. In the even that the port might have closed since you finished the previous exercise, run the `curl` command to open it again.
+1. In the event that the port might have closed since you finished the previous exercise, run the `curl` command to open it again.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;

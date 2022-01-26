@@ -1,4 +1,4 @@
-In this exercise, we'll create a function that runs when it receives an HTTP request, and responds to each request by returning a message. The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
+In this exercise, we'll create a function that runs when it receives an HTTP request, and responds to each request by returning a message. 
 
 See the following high-level illustration of what we're going to build.
 
@@ -6,11 +6,15 @@ See the following high-level illustration of what we're going to build.
 
 :::image type="content" source="../media/3-default-http-trigger-implementation-javascript-small.png" alt-text="Screenshot of Code and Test pane showing default code for HTTP trigger function template." lightbox="../media/3-default-http-trigger-implementation-javascript.png":::
 
+The parameters `req` and `res` are the *trigger binding* and *output binding*, respectively. (It might help to think of those parameters as abbreviations for "request" and "response.")
+
 ::: zone-end
 
 ::: zone pivot="powershell"
 
 :::image type="content" source="../media/3-default-http-trigger-implementation-powershell-small.png" alt-text="Screenshot of Code and Test pane showing default code for HTTP trigger function template." lightbox="../media/3-default-http-trigger-implementation-powershell.png"::: 
+
+The parameters `Request` and `Response` are the *trigger binding* and *output binding*, respectively.
 
 ::: zone-end
 
@@ -23,7 +27,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
-Create
+
 1. In the **Create a resource** menu, select **Compute**, and in results list select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
@@ -87,7 +91,7 @@ Create
 
 Now that we have a function app, it's time to create a function. Each function is activated by a trigger. In this module, we'll define an HTTP trigger by using a predefined template.
 
-1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears. This page lists all the functions that are defined for the function app. The list is empty; we need to create a function.
+1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your *Function App* appears.
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
@@ -183,7 +187,7 @@ In the preceding code for our function, we saw that we accessed the payload of t
 
 Now that we have a function app, let's create a function. Each function is activated by a trigger. In this module, we'll create an HTTP trigger by using a template.
 
-1. In the **Function App** menu, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
+1. In the **Function App** menu on the left, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
 1. From the command bar, select **Create**. The **Create function** pane appears.
 
@@ -291,9 +295,9 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-    Notice that we've already defined a trigger and an output binding, as shown in the following image.
+    Notice that we've already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display horizontally, if your screen is wide enough.
 
-    :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Output." lightbox="../media/3-function-integration-vertical.png":::
+    :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-vertical.png":::
 
     You can see that we can't add more than _one_ trigger. To change a trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value and return more than one output value.
 
@@ -317,9 +321,11 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-    Notice that we have already defined a trigger and an output binding, as shown in the following image.
+    Notice that we have already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen is not wide enough.
 
-    :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of horizontal flow diagram showing Trigger and Inputs leading to Function and Function leading to Output." lightbox="../media/3-function-integration-horizontal.png":::
+
+
+    :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of horizontal flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-horizontal.png":::
     
     You can see that we can't add more than _one_ trigger. To change the trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add multiple bindings, so the function can accept more than one input value and return more than one output value.
 

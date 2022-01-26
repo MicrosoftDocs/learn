@@ -1,12 +1,10 @@
 In this unit, we'll explore two data types that are useful for working with data collections or compound data: tuples and structs.
 
-
 ## Tuples 
 
 A tuple is a grouping of values of different types collected into one compound value. The individual values in a tuple are called *elements*. The values are specified as a comma-separated list enclosed in parentheses `(<value>, <value>, ...)`.
 
 A tuple has a fixed length, which is equal to its number of elements. After a tuple is declared, it can't grow or shrink in size. Elements can't be added or removed. The data type of a tuple is defined by the sequence of the data types of the elements.
-
 
 ## Define a tuple
 
@@ -26,7 +24,6 @@ Element | Value | Data type
 2 | true | `bool`
 
 The type signature for this tuple is defined by the sequence of the types for the three elements: `(char, i32, bool)`.
-
 
 ## Access elements in a tuple
 
@@ -50,12 +47,11 @@ Is 'E' the 5th letter of the alphabet? true
 
 You can explore this example in the [Rust Playground][RustPlay-tuple].
 
-Tuples are useful when you want to combine different types into a single value. Functions can use tuples to return multiple values because tuples can hold any number of values. 
-
+Tuples are useful when you want to combine different types into a single value. Functions can use tuples to return multiple values because tuples can hold any number of values.
 
 ## Structs
 
-A struct is a type that's composed of other types. The elements in a struct are called *fields*. Like tuples, the fields in a struct can have different data types. A significant benefit of the struct type is that you can name each field so it's clear what the value means. 
+A struct is a type that's composed of other types. The elements in a struct are called *fields*. Like tuples, the fields in a struct can have different data types. A significant benefit of the struct type is that you can name each field so it's clear what the value means.
 
 To work with structs in a Rust program, first you define the struct by name and specify the data type for each field. Then, you create an *instance* of the struct with another name. When you declare the instance, you provide the specific values for the fields.
 
@@ -78,13 +74,11 @@ struct Grades(char, char, char, char, f32);
 struct Unit;
 ```
 
-
 ## Define a struct
 
 To define a struct, we enter the keyword `struct` followed by the struct name. Choose a name for the struct type that describes the significant characteristic of the grouped data. Unlike the naming convention that we've used so far, the name of a struct type is capitalized.
 
 Struct types are often defined outside of the `main` function and other functions in the Rust program. For this reason, the start of the struct definition isn't indented from the left margin. Only the inside portion of the definition is indented to show how the data is organized.
-
 
 ### Classic struct
 
@@ -97,18 +91,16 @@ struct Student { name: String, level: u8, remote: bool }
 
 A benefit of the classic struct definition is you can access the value for a struct field by name. To access the field value, we use the syntax `<struct>.<field>`.
 
-
 ### Tuple struct
 
 Like a tuple, the body of a tuple struct is defined inside parentheses `()`. The parentheses immediately follow the struct name. There's no space between the struct name and the opening parentheses.
 
-Unlike a tuple, the tuple struct definition contains only the data type for each field. The data types in the tuple struct are specified as a comma-separated list `<type>, <type>, ...`. 
+Unlike a tuple, the tuple struct definition contains only the data type for each field. The data types in the tuple struct are specified as a comma-separated list `<type>, <type>, ...`.
 
 ```rust
 // Tuple struct with data types only
 struct Grades(char, char, char, char, f32);
 ```
-
 
 ## Instantiate a struct
 
@@ -130,7 +122,6 @@ println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}",
 println!("{}, level {}. Remote: {}. Grades: {}, {}, {}, {}. Average: {}", 
          user_2.name, user_2.level, user_2.remote, mark_2.0, mark_2.1, mark_2.2, mark_2.3, mark_2.4);
 ```
-
 
 ## Convert a string literal to a String type
 
@@ -160,14 +151,11 @@ error: aborting due to previous error
 
 The compiler suggests that we can use the `.to_string()` function to make the conversion. In our examples, we use the `String::from(&str)` method.
 
-
 You can interact with the example code in this [Rust Playground][RustPlay-structs].
-
 
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
-
 
 <!-- Links -->
 

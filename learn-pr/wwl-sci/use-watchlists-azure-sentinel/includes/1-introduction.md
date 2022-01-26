@@ -6,8 +6,8 @@ You must import a list of server names into Microsoft Sentinel, which can then b
 
 After completing this module, you will be able to:
 
-- Create a watchlist in Microsoft Sentinel
-- Use KQL to access the watchlist in Microsoft Sentinel
+- Create a watchlist with Microsoft Sentinel
+- Use KQL to access the watchlist with Microsoft Sentinel
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Introducing Blazor for web application development.  Blazor is a .NET user-interface framework that is built using components, Razor templates, and HTML to deliver applications that run on a server or with Web Assembly"
+  description: "Introducing Blazor for web application development.  Blazor is a .NET user-interface framework that is built using components, Razor templates, and HTML to deliver applications that run on a server or with WebAssembly"
   ms.date: 9/29/2021
   author: csharpfritz
   ms.author: jefritz

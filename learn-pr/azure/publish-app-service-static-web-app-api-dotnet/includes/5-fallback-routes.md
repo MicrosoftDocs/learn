@@ -6,7 +6,7 @@ Fortunately, it's easy to resolve this by creating a fallback route. A fallback 
 
 ## Configure a fallback route
 
-Azure Static Web Apps supports custom routing rules defined in an optional _staticwebapp.config.json_ file located in the app's artifact folder. You can define a navigation fallback route in the **navigationFallback** object. A common fallback route configuration follows.
+Azure Static Web Apps supports custom routing rules defined in an optional _staticwebapp.config.json_ file located in the app's source folder. You can define a navigation fallback route in the **navigationFallback** object. A common fallback route configuration follows.
 
 ```json
 {
@@ -19,8 +19,8 @@ Azure Static Web Apps supports custom routing rules defined in an optional _stat
 
 | Setting | Value                       | Description                                                  |
 | ------- | --------------------------- | ------------------------------------------------------------ |
-| rewrite | `index.html`                | The file to serve when a route didn't match any other files. |
-| exclude | ["/_framework/*", "/css/*"] | Path(s) to ignore from fallback routing.                     |
+| rewrite | `index.html`                  | The file to serve when a route didn't match any other files. |
+| exclude | `["/_framework/*", "/css/*"]` | Path(s) to ignore from fallback routing.                     |
 
 The navigation fallback rule is applied after any other routing rules that appear in the _staticwebapp.config.json_ file.
 

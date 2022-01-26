@@ -2,9 +2,9 @@ You should have learned how Microsoft 365 provides data loss prevention (DLP) pr
 
 You should now be able to:
 
-- Describe data loss prevention (DLP) components in Microsoft 365
-- Investigate DLP alerts in Microsoft 365
-- Investigate DLP alerts in Microsoft Cloud App Security
+- Describe data loss prevention (DLP) components for Microsoft 365
+- Investigate DLP alerts for Microsoft 365
+- Investigate DLP alerts for Microsoft Defender for Cloud Apps
 
 ## Learn more
 

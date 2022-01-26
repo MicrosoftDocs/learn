@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2021
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
@@ -23,9 +22,9 @@ quiz:
     - content: "Consistent"
       isCorrect: false
       explanation: "That's incorrect. The consistent indexing mode will still continue to index items."
-    - content: "Lazy"
+    - content: "Automatic"
       isCorrect: false
-      explanation: "That's incorrect. The lazy indexing mode will index items at a lower priority, but will not disable indexing."
+      explanation: "That's incorrect. Automatic is not a valid indexing mode option."
   - content: "You are authoring a new indexing policy for a container in Azure Cosmos DB SQL API. You would like to define an included path that includes all possible properties from the root of any JSON document. Which path expression should you use?"
     choices:
     - content: "``/*``"

@@ -1,6 +1,6 @@
 In time-streaming scenarios, performing operations on the data contained in temporal windows is a common pattern. Stream Analytics has native support for windowing functions, enabling developers to author complex stream processing jobs with minimal effort.
 
-There are four kinds of temporal windows to choose from: Tumbling, Hopping, Sliding, Session, and Snapshot windows. You use the window functions in the GROUP BY clause of the query syntax in your Stream Analytics jobs. You can also aggregate events over multiple windows using the Windows() function.
+There are five kinds of temporal windows to choose from: Tumbling, Hopping, Sliding, Session, and Snapshot windows. You use the window functions in the GROUP BY clause of the query syntax in your Stream Analytics jobs. You can also aggregate events over multiple windows using the Windows() function.
 
 All the windowing operations output results at the end of the window. The output of the window will be single event based on the aggregate function used. The output event will have the time stamp of the end of the window and all window functions are defined with a fixed length.
 

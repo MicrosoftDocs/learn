@@ -2,11 +2,11 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-device-identity
 title: What is device identity in Azure?
 metadata:
-  title:  What is device identity in Azure?
+  title: What is device identity in Azure?
   description: Learn about device identity in Azure.
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

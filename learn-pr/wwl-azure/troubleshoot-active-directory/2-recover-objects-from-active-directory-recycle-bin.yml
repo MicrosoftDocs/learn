@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-active-directory.recover-objects-from-ad-recycle-bin
+title: Recover objects from the AD recycle bin
+metadata:
+  title: Recover objects from the AD recycle bin
+  description: "Recover objects from the AD recycle bin"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-recover-objects-from-active-directory-recycle-bin.md)]

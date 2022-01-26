@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Reliable."
       isCorrect: false
-      explanation: "That is incorrect. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
+      explanation: "Incorrect. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
     - content: "Repeatable."
       isCorrect: false
-      explanation: "That's incorrect. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
+      explanation: "Incorrect. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
     - content: "Immutable."
       isCorrect: true
-      explanation: "That is correct. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
+      explanation: "Correct. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
   - content: "Which of the following statements is true?"
     choices:
     - content: "Azure Pipelines works exclusively with Azure and Microsoft Technology. For open-source, GitHub is recommended."
       isCorrect: false
-      explanation: "That is incorrect. Azure Pipelines work with any language or platform."
+      explanation: "Incorrect. Azure Pipelines work with any language or platform."
     - content: "Azure Pipelines work with any language or platform."
       isCorrect: true
-      explanation: "That is correct. Azure Pipelines work with any language or platform."
+      explanation: "Correct. Azure Pipelines work with any language or platform."
     - content: "Azure Pipelines only deploys in cloud environments."
       isCorrect: false
-      explanation: "That is incorrect. Azure Pipelines work with any language or platform."
+      explanation: "Incorrect. Azure Pipelines work with any language or platform."
   - content: "Which of the following choices is a Continuous Integration (CI) benefit?"
     choices:
     - content: "Automatically ensure you don't ship broken code."
       isCorrect: true
-      explanation: "That's correct. Automatically ensure you don't ship broken code."
+      explanation: "Correct. Automatically ensure you don't ship broken code."
     - content: "Automatically deploy code to production."
       isCorrect: false
-      explanation: "That's incorrect. Automatically ensure you don't ship broken code."
+      explanation: "Incorrect. Automatically ensure you don't ship broken code."
     - content: "Ensure deployment targets have the latest code."
       isCorrect: false
-      explanation: "That's incorrect. Automatically ensure you don't ship broken code."
+      explanation: "Incorrect. Automatically ensure you don't ship broken code."

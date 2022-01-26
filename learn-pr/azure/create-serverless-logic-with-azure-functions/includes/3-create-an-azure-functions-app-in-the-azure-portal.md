@@ -42,7 +42,7 @@ Let's create a function app in the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
-    | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where xxx can be replaced with your initials and a number. Valid characters are a-z, 0-9 and - |
+    | Function App name  | Enter a globally unique app name, which becomes part of the base URL of your service. For example, you can name it **escalator-functions-xxx**, where you can replace xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language we use to implement the function examples in this exercise). |
     | Version | Accept *default* |

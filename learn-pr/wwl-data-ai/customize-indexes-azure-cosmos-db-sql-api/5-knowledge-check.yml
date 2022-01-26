@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/25/2021
+  ms.date: 01/12/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
@@ -34,6 +33,6 @@ quiz:
     - content: "``(price DESC, name ASC)``"
       isCorrect: false
       explanation: "That's incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
-    - content: "``(name ASC, price DESC)``"
+    - content: "``(name ASC, price ASC)``"
       isCorrect: true
       explanation: "That's correct. This composite index will support the SQL query."

@@ -16,5 +16,5 @@ Let’s first focus on the identity solution. There are three basic choices.
 | If you need this | Use this |
 | - | -|
 | Provide identity and access management for employees in a cloud or hybrid environment.| [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) |
-| Collaborate with guest users and external business partners like suppliers and vendors.| [Azure AD Business to Business (B2B)](/azure/active-directory-b2c/overview) |
+| Collaborate with guest users and external business partners like suppliers and vendors.| [Azure AD Business to Business (B2B)](/azure/active-directory/external-identities/compare-with-b2c) |
 | Control how customers sign up, sign in, and manage their profiles when they use your applications.| [Azure AD Business to Consumer (B2C)](/azure/active-directory-b2c/overview) |

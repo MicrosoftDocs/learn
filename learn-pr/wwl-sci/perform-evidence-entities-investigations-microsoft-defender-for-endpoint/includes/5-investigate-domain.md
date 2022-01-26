@@ -34,7 +34,7 @@ The Alerts tab can be adjusted to show more or less information by selecting Cus
 
 ### Observed in organization
 
-The Observed in organization tab provides a chronological view of the events and associated alerts observed on the URL. This tab includes a timeline and a customizable table listing event details, such as the time, device, and a brief description of what happened.
+The Observed in organization tab provides a chronological view of the events and associated alerts observed on the URL. This tab includes a timeline and a customizable table-listing event details, such as the time, device, and a brief description of what happened.
 
 You can view events from different periods of time by entering the dates into the text fields above the table headers. You can also customize the time range by selecting different areas of the timeline.
 

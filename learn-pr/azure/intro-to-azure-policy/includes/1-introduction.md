@@ -4,7 +4,7 @@ Policy is the backbone of Azure implementation and compliance. Compliance is an 
 
 ## Example scenario
 
-Due a new cost optimization initiative in your company, you should be able to have a more granular control over the resources deployed in your Azure environment. Also you should avoid deploying resources in regions where the costs are higher.
+Due to a new cost optimization initiative in your company, you should be able to have a more granular control over the resources deployed in your Azure environment. Also you should avoid deploying resources in regions where the costs are higher.
 
 The cloud administration team brings to you the following definitions:
 

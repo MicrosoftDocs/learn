@@ -109,38 +109,38 @@ Each of these elements has attributes that are recognized by Blazor, such as `Di
 </EditForm>    
 ```
 
-The next example shows how to use the `InputRadioGroup<TValue>` and `InputRadio<TValue>` components. You typically use a radio button group to present a series of radio buttons. Each button enables the user to select one value from a given set. An `EditForm` can contain multiple `RadioButtonGroup<TValue>` components, and each group can be bound to a field in the model for the `EditForm`. The example presents details from a clothing store app. The form displays data for T-Shirts. The `T_Shirt` model class looks like this:
+The next example shows how to use the `InputRadioGroup<TValue>` and `InputRadio<TValue>` components. You typically use a radio button group to present a series of radio buttons. Each button enables the user to select one value from a given set. An `EditForm` can contain multiple `RadioButtonGroup<TValue>` components, and each group can be bound to a field in the model for the `EditForm`. The example presents details from a clothing store app. The form displays data for T-Shirts. The `Shirt` model class looks like this:
 
 ```csharp
-public enum T_ShirtColor
+public enum ShirtColor
 {
     Red, Blue, Yellow, Green, Black, White
 };
 
-public enum T_ShirtSize
+public enum ShirtSize
 {
     Small, Medium, Large, ExtraLarge
 };
 
-public class T_Shirt
+public class Shirt
 {
-    public T_ShirtColor Color { get; set; }
-    public T_ShirtSize Size { get; set; }
+    public ShirtColor Color { get; set; }
+    public ShirtSize Size { get; set; }
     public decimal Price;
 }
 ```
 
-Notice that the color and size of the t-shirt are specified as enumerations. In the Razor page below, the code creates a T_Shirt object to act as test data. The \<EditForm\> element is bound to this object. The form displays the size, color, and price of the t-shirt. The first \<InputRadioGroup\> element is attached to the `Size` property. The `foreach` loop iterates through the possible values in the enumeration and creates a \<InputRadio\> element for each one. The `Name` attribute of the \<InputRadio\> element must match that of the \<InputRadioGroup\> element; the HTML renderer uses this attribute to tie the group and radio buttons together. The second \<InputRadioGroup\> element is attached to the `Color` property, and uses the same technique to generate radio buttons for each size. The final element displays the price using an \<InputNumber\> element. This element applies the `max`, `min`, and `step` attributes available with the HTML \<input\> element. This example uses \<label\> elements to display the name of the value associated with each component.
+Notice that the color and size of the t-shirt are specified as enumerations. In the Razor page below, the code creates a Shirt object to act as test data. The \<EditForm\> element is bound to this object. The form displays the size, color, and price of the t-shirt. The first \<InputRadioGroup\> element is attached to the `Size` property. The `foreach` loop iterates through the possible values in the enumeration and creates a \<InputRadio\> element for each one. The `Name` attribute of the \<InputRadio\> element must match that of the \<InputRadioGroup\> element; the HTML renderer uses this attribute to tie the group and radio buttons together. The second \<InputRadioGroup\> element is attached to the `Color` property, and uses the same technique to generate radio buttons for each size. The final element displays the price using an \<InputNumber\> element. This element applies the `max`, `min`, and `step` attributes available with the HTML \<input\> element. This example uses \<label\> elements to display the name of the value associated with each component.
 
 ```razor
-<EditForm Model="@t_shirt">
+<EditForm Model="@shirt">
     <label>
         <h3>Size</h3>
-        <InputRadioGroup Name="size" @bind-Value=t_shirt.Size>
-            @foreach(var shirt_size in Enum.GetValues(typeof(T_ShirtSize)))
+        <InputRadioGroup Name="size" @bind-Value=shirt.Size>
+            @foreach(var shirtSize in Enum.GetValues(typeof(ShirtSize)))
             {
-                <label>@shirt_size:
-                    <InputRadio Name="size" Value="@shirt_size"></InputRadio>  
+                <label>@shirtSize:
+                    <InputRadio Name="size" Value="@shirtSize"></InputRadio>  
                 </label>
                 <br />
             }
@@ -149,11 +149,11 @@ Notice that the color and size of the t-shirt are specified as enumerations. In 
     <p></p>
     <label>
         <h3>Color</h3>
-        <InputRadioGroup Name="color" @bind-Value=t_shirt.Color>
-            @foreach(var shirt_color in Enum.GetValues(typeof(T_ShirtColor)))
+        <InputRadioGroup Name="color" @bind-Value=shirt.Color>
+            @foreach(var shirtColor in Enum.GetValues(typeof(ShirtColor)))
             {
-                <label>@shirt_color:
-                    <InputRadio Name="color" Value="@shirt_color"></InputRadio>
+                <label>@shirtColor:
+                    <InputRadio Name="color" Value="@shirtColor"></InputRadio>
                 </label>
                 <br />
             }
@@ -162,15 +162,15 @@ Notice that the color and size of the t-shirt are specified as enumerations. In 
     <p></p>
     <label>
         <h3>Price</h3>
-        <InputNumber @bind-Value=t_shirt.Price min="0" max="100" step="0.01"></InputNumber>
+        <InputNumber @bind-Value=shirt.Price min="0" max="100" step="0.01"></InputNumber>
     </label>
 </EditForm>
 
 @code {
-    private T_Shirt t_shirt = new T_Shirt
+    private Shirt shirt = new Shirt
     {
-        Size = T_ShirtSize.Large,
-        Color = T_ShirtColor.Blue,
+        Size = ShirtSize.Large,
+        Color = ShirtColor.Blue,
         Price = 9.99M
     };
 }
@@ -213,7 +213,7 @@ The example below shows the `EditForm` from the previous example with a submit b
 If an illegal combination is detected, the `Message` field on the form displays the reason for the validation failure. If the fields are valid, the data is processed and the data is saved (the logic for this process isn't shown).
 
 ```razor
-<EditForm Model="@t_shirt" OnSubmit="ValidateData">
+<EditForm Model="@shirt" OnSubmit="ValidateData">
     ...
     <input type="submit" class="btn btn-primary" value="Save"/>
     <p></p>
@@ -227,26 +227,26 @@ If an illegal combination is detected, the `Message` field on the form displays 
 
     private async Task ValidateData(EditContext editContext)
     {
-        var t_shirt = editContext.Model as T_Shirt;
-        if (t_shirt is null)
+        var shirt = editContext.Model as Shirt;
+        if (shirt is null)
         {
             Message = "T-Shirt object is invalid";
             return;
         }
 
-        if (t_shirt.Color is T_ShirtColor.Red && t_shirt.Size is T_ShirtSize.ExtraLarge)
+        if (shirt.Color is ShirtColor.Red && shirt.Size is ShirtSize.ExtraLarge)
         {
             Message = "Red T-Shirts not available in Extra Large size";
             return;
         }
 
-        if (t_shirt.Color is T_ShirtColor.Blue && t_shirt.Size is T_ShirtSize.Small or T_ShirtSize.Medium)
+        if (shirt.Color is ShirtColor.Blue && shirt.Size is ShirtSize.Small or ShirtSize.Medium)
         {
             Message = "Blue T-Shirts not available in Small or Medium sizes";
             return;
         }
 
-        if (t_shirt.Color is T_ShirtColor.White && t_shirt.Price > 50)
+        if (shirt.Color is ShirtColor.White && shirt.Price > 50)
         {
             Message = "White T-Shirts must be priced at 50 or lower";
             return;

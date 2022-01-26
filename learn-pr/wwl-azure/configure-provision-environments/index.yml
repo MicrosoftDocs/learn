@@ -3,7 +3,7 @@ uid: learn.wwl.configure-provision-environments
 metadata:
   title: Configure and provision environments
   description: "Configure and provision environments"
-  ms.date: 11/30/2021
+  ms.date: 12/02/2021
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,6 @@ abstract: |
   *   Setup test infrastructure
 prerequisites: ""
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels:
 - advanced
 roles:

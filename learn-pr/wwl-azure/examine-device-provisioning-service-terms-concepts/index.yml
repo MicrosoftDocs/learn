@@ -3,7 +3,7 @@ uid: learn.wwl.examine-device-provisioning-service-terms-concepts
 metadata:
   title: Examine Device Provisioning Service terms and concepts
   description: "This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle."
-  ms.date: 11/24/2021
+  ms.date: 12/23/2021
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   Ability to:
   *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   *   Describe the role of the Azure IoT Hub Device Provisioning Service within an Azure IoT solution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/provisioning-device-terms-conditions.svg
 levels:
 - intermediate
 roles:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.python-get-started-testing.introduction
+title: Introduction
+metadata:
+  title: "Introduction to testing"
+  description: Verifying code in an automated way is essential for robust projects. This module will go through the basics and types of testing, and some of the challenges of testing in general.
+  ms.date: 1/14/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

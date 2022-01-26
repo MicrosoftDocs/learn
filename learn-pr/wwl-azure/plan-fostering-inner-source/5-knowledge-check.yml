@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/24/2021
+  ms.date: 01/19/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,9 +15,9 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements is true?"
+  - content: "Which of the following is a correct statement about a fork?"
     choices:
     - content: "A fork is a copy of a repository."
       isCorrect: true

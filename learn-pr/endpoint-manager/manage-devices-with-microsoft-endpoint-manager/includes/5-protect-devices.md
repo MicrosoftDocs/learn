@@ -1,14 +1,14 @@
 In the modern IT world, protecting devices from unauthorized access is one of the most important tasks that you perform. In addition to the items in the **Configure** step of the device lifecycle, Intune provides these capabilities that help protect devices you manage from unauthorized access or malicious attacks. For example, you can restrict use of hardware features on the device such as the camera, or Bluetooth.
 
 You can require devices to be compliant. Intune features device compliance policies that let you evaluate (and in some cases remediate) devices that aren't compliant with rules that you specify. For example, you can get reports on the following device characteristics before taking action:
-- jailbroken iOS/iPadOS devices
-- encrypted or not encrypted devices
-- the health of Windows 10 devices (as determined by the Health Attestation Service).
+- Jailbroken iOS/iPadOS devices
+- Encrypted or not encrypted devices
+- The health of Windows 10/11 devices (as determined by the Health Attestation Service)
 
 You can protect apps and the data they use. Intune gives you a range of features to help you protect apps and their data. For example, mobile application management (MAM) policies can:
-- prevent data from being backed up from a protected app
-- restrict copy and paste to other apps
-- require a PIN to access an app
+- Prevent data from being backed up from a protected app
+- Restrict copy and paste to other apps
+- Require a PIN to access an app
 
 You can also add an additional layer of protection to devices, such as:
 - **Multi-factor authentication** - Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multi-factor authentication that requires a second level of authentication, such as a phone call or text message, before users can gain access.

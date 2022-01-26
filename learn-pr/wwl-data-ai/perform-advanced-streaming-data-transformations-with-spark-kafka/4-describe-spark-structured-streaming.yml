@@ -4,12 +4,13 @@ title: Describe Spark structured streaming
 metadata:
   title: Describe Spark structured streaming
   description: "Describe Spark structured streaming"
-  ms.date: 08/05/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-describe-spark-structured-streaming.md)]

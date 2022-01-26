@@ -20,8 +20,6 @@ When you investigate a user account entity, you'll see:
 
 - Observed locations in the organization (devices logged on to)
 
-  ![User Account Page](../media/advanced-threat-protection-user-details-view.png)
-
 ### User details
 
 The User details pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, Azure ATP alerts, number of devices the user is logged on to, when the user was first and last seen, role, and log-on types. Depending on the integration features you've enabled, you'll see other details. For example, if you enable the Skype for business integration, you'll be able to contact the user from the portal. The Azure ATP alerts section contains a link that will take you to the Azure ATP page if you have enabled the Azure ATP feature, and there are alerts related to the user. The Azure ATP page will provide more information about the alerts.

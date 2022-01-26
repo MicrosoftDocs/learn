@@ -4,13 +4,12 @@ title: Evaluate composite indexes
 metadata:
   title: Evaluate composite indexes
   description: "Evaluate composite indexes"
-  ms.date: 11/25/2021
+  ms.date: 01/12/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 8
 content: |

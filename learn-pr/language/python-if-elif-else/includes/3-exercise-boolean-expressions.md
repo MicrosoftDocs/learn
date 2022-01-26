@@ -67,8 +67,8 @@ False
 True
 True
 ```
-The `bool()` function converted the strings `'True'` and `'False'` to the Boolean value `True`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
 
+The `bool()` function converted the strings `'True'` and `'False'` to the Boolean value `True`. When the function is supplied with an empty string, it returns `False`, while any other non-empty string returns `True`.
 
 ### Step 4: Comment out code from the previous step, and then add code that uses the built-in `bool()` function to convert various integer values to Boolean values
 
@@ -80,6 +80,7 @@ print(bool(1))
 print(bool(0))
 print(bool(-1))
 ```
+
 If you run the code, you'll see the following output:
 
 ```output
@@ -88,20 +89,18 @@ True
 False
 True
 ```
+
 The `bool()` function converts any non-zero value to `True`, but it converts the value `0` to `False`.
 
 
 ## What is a Boolean expression?
 
-As you add logic to our applications, you'll evaluate Boolean expressions. A simple example illustrates the basic idea.
+As you add logic to your applications, you'll evaluate Boolean expressions. A simple example illustrates the basic idea.
 
-`1 + 1 = 3`
+- `1 + 1 = 3` is a `False` statement.
+- `1 + 1 = 2` is a `True` statement.
 
-That's a `False` statement. But:
-
-`1 + 1 = 2`
-
-... is a `True` statement. In both of these examples from early math, we're evaluating the entire expression to see whether it's true or false.
+In both of these examples from early math, we're evaluating the entire expression to see whether it's true or false.
 
 In Python, a Boolean expression does the same thing. A Boolean expression expands this idea to any function call that ultimately returns `True` or `False`.
 
@@ -146,7 +145,7 @@ An operator is like a mini function. Operators perform an operation on operands,
 - Membership operators
 
 
-In this unit, you'll look at comparison and logic operators. You'll likely cover most operators as you continue through this learning path.
+In this unit, you'll look at comparison and logical operators. You'll likely cover most operators as you continue through this learning path.
 
 Some operators consist of a single symbol, like many of the operators we'll use in this unit. They operate on the values to their left and right. Other operators consist of a pair of symbols. They operate on the values in between their opening symbol and their closing symbol.
 

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-user-experience-settings
+metadata:
+  title: Configure user experience settings
+  description: "Configure user experience settings"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure user experience settings
+summary: Persistent virtual desktops save the operating system state in between reboots. Virtual desktop provides users easy and seamless access to their assigned VMs, often with a single sign-on solution.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Configure user settings through group policies for Azure Virtual Desktop.
+  *  Configure user settings through Endpoint Manager policies for Azure Virtual Desktop.
+  *  Configure session timeout properties for Azure Virtual Desktop.
+  *  Configure device redirections for Azure Virtual Desktop.
+  *  Configure Universal Print.
+  *  Troubleshoot user profile issues.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.configure-user-experience-settings.introduction
+- learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles
+- learn.wwl.configure-user-experience-settings.persistent-virtual-desktop-environments
+- learn.wwl.configure-user-experience-settings.settings-through-group-policies
+- learn.wwl.configure-user-experience-settings.settings-through-endpoint-manager-policies
+- learn.wwl.configure-user-experience-settings.configure-session-timeout-properties
+- learn.wwl.configure-user-experience-settings.configure-device-redirections
+- learn.wwl.configure-user-experience-settings.configure-universal-print
+- learn.wwl.configure-user-experience-settings.troubleshoot-user-profile-issues
+- learn.wwl.configure-user-experience-settings.troubleshoot-azure-virtual-desktop-clients
+- learn.wwl.configure-user-experience-settings.knowledge-check
+- learn.wwl.configure-user-experience-settings.summary
+badge:
+  uid: learn.wwl.configure-user-experience-settings.badge
