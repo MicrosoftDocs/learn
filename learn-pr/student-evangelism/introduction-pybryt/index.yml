@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.intro-to-pybryt
 metadata:
-  title: Introduction to PyBryt
+  title: Introduction to PyBryt for Classroom Auto-assessment
   description: Learn how to use PyBryt to create an assignment with auto-assessment.
   ms.date: 10/27/2021
   author: chrispyles
-  ms.author: v-chpyles
+  ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to PyBryt
+title: Introduction to PyBryt for Classroom Auto-assessment
 summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
 abstract: |
   In this module you will:
@@ -26,7 +26,8 @@ roles:
   - school-leader
 products:
   - vs-code
-prerequisites: None 
+prerequisites: |
+  - Basic Python knowledge
 units:
   - learn.intro-to-pybryt.1-introduction
   - learn.intro-to-pybryt.2-high-level
