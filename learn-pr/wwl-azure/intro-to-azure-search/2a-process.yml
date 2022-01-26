@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.process
+title: Process
+metadata:
+  title: Process
+  description: "Process"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2a-process.md)]

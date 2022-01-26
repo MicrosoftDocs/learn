@@ -29,9 +29,9 @@ At compile time, the signature of an array is defined as `[T; size]`:
 The signature reveals two important characteristics about arrays:
 
 - Every element of an array has the same data type. The data type never changes.
-- The size of an array is fixed. The length never changes. 
+- The size of an array is fixed. The length never changes.
 
-Only one thing about an array can change over time: the values for the elements in the array. The data type remains constant and the number of elements (length) remains constant. Only the values can change.
+Only one thing about an array can change over time: the values of the elements in the array. The data type remains constant and the number of elements (length) remains constant. Only the values can change.
 
 ### Index into an array
 
@@ -40,10 +40,13 @@ The elements in an array are implicitly numbered starting from 0. We use indexin
 Let's look at an array named `days` with seven elements:
 
 ```rust
-// Set first day of week
+// Days of the week
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// Get the first day of the week
 let first = days[0];
 
-// Set second day of week
+// Get the second day of the week
 let second = days[1];
 ```
 
@@ -58,7 +61,7 @@ If we try to access an element in our array with an index that's not in the allo
 The following code shows the out-of-bounds compiler error:
 
 ```rust
-// Set seventh day of week, use wrong index - should be 6
+// Get the seventh day of the week using the wrong index - should be 6
 let seventh = days[7];
 ```
 
