@@ -2,13 +2,13 @@
 
 Here are some characteristics of Azure AD that make it different from AD DS:
 
- -  **Identity solution**: Azure AD is primarily an identity solution, and it is designed for internet-based applications by using HTTP and HTTPS communications.
- -  **REST API querying**: Because Azure AD is HTTP/HTTPS-based, it can't be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
- -  **Communication protocols**: Because Azure AD is HTTP/HTTPS-based, it doesn't use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols like SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
- -  **Authentication services**: Includes SAML, WS-Federation, or OpenID.
- -  **Authorization service**: Uses OAuth.
- -  **Federation services**: Azure AD includes federation services, and many third-party services (such as Facebook).
- -  **Flat structure**: Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
+ -  **Identity solution** - Azure AD is primarily an identity solution, and it is designed for internet-based applications by using HTTP and HTTPS communications.
+ -  **REST API querying** - Because Azure AD is HTTP/HTTPS-based, it can't be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
+ -  **Communication protocols** - Because Azure AD is HTTP/HTTPS-based, it doesn't use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols like SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
+ -  **Authentication services** - Includes SAML, WS-Federation, or OpenID.
+ -  **Authorization service** - Uses OAuth.
+ -  **Federation services** - Azure AD includes federation services and many third-party services (such as Facebook).
+ -  **Flat structure** - Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
 
 The following table summarizes the differences:
 
