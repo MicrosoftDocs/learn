@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "`python -m autodiscovery`"
       isCorrect: false
-      explanation: "`autodiscovery` isn't a Python module, so this invocation wouldn't work."
+      explanation: "Incorrect. `autodiscovery` isn't a Python module, so this invocation wouldn't work."
     - content: "`python -m discovery`"
       isCorrect: false
-      explanation: "`discovery` isn't a Python module, so this invocation wouldn't work."
+      explanation: "Incorrect. `discovery` isn't a Python module, so this invocation wouldn't work."
     - content: "`python -m unittest`"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! Using the Python executable along with the unittest module is the right way to use test auto discovery"
