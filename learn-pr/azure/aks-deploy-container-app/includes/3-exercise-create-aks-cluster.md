@@ -4,7 +4,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
 #### [Linux](#tab/linux)
 
-## Activate the Azure sandbox
+## Activate the Azure sandboxcd
 
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
@@ -102,7 +102,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     az aks nodepool add \
         --resource-group $RESOURCE_GROUP \
         --cluster-name $CLUSTER_NAME \
-        --name userpool \
+        --name uspool \
         --node-count 2 \
         --node-vm-size Standard_B2s \
         --os-type Windows
@@ -148,8 +148,8 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
    NAME                                STATUS   ROLES   AGE    VERSION
    aks-nodepool1-40010859-vmss000000   Ready    agent   245s   v1.19.9
    aks-nodepool1-40010859-vmss000001   Ready    agent   245s   v1.19.9
-   aksuserpool000000                   Ready    agent   105s   v1.19.9
-   aksuserpool000001                   Ready    agent   105s   v1.19.9
+   aksuspool000000                     Ready    agent   105s   v1.19.9
+   aksuspool000001                     Ready    agent   105s   v1.19.9
    ```
 
 ---

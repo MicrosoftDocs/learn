@@ -8,7 +8,7 @@ To get a `BlobClient` by name, call the `GetBlobClient` methods on the `BlobCont
 
 Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  We recommend using these async implementations whenever possible in your application.
 
-We also recommend using streams instead of in-memory structures like bite arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
+We also recommend using streams instead of in-memory structures like byte arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
 
 ::: zone-end
 
@@ -97,7 +97,7 @@ public void save(String name, InputStream inputStream, long contentLength) {
 
 ::: zone pivot="csharp"
 
-To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream which can be used by ASP.NET Core to stream the file to the browser.
+To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream, which can be used by ASP.NET Core to stream the file to the browser.
 
 - Replace `Load` with this code and save your work using CTRL + S.
 
@@ -120,7 +120,7 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
 ::: zone pivot="java"
 
-To download a file use the `openInputStream` method on the `BlobClient`. This method returns an `InputStream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream which can be used by `IndexBean` to stream the content to the browser.
+To download a file, use the `openInputStream` method on the `BlobClient`. This method returns an `InputStream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream, which can be used by `IndexBean` to stream the content to the browser.
 
 Replace `read` with this code and save your work.
 
@@ -246,7 +246,7 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
     </plugins>
     ```
 
-1. The following commands prepare environment variables for the Maven Plugin for Azure App Service. You'll extract the storage account's connection string with `az storage account show-connection-string`, the subscription id with `az account show`, set region, pricing, container name and app name. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
+1. The following commands prepare environment variables for the Maven Plugin for Azure App Service. You'll extract the storage account's connection string with `az storage account show-connection-string`, the subscription id with `az account show`, set region, pricing, container name, and app name. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
     ```azurecli
     export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
