@@ -126,7 +126,6 @@ Here are a few of more things to know about ZRS:
 
  -  ZRS is not yet available in all regions.
  -  Changing to ZRS from another data replication option requires the physical data movement from a single storage stamp to multiple stamps within a region.
- -  ZRS may not protect your data against a regional disaster where multiple zones are permanently affected. Instead, ZRS offers resiliency for your data.
 
 ## Geo-redundant storage
 
