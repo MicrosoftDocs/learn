@@ -1,6 +1,6 @@
-Let's imagine you work for Fourth Coffee, a national coffee chain. You are asked to help build a knowledge mining solution that will make it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
+Let's imagine you work for Fourth Coffee, a national coffee chain. You're asked to help build a knowledge mining solution that will make it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
 
-In this lab you will:  
+In this lab you'll:  
 - Create Azure resources  
 - Extract data from a data source 
 - Enrich data with AI skills 
@@ -9,7 +9,7 @@ In this lab you will:
 - Save results to a Knowledge Store
 
 ## Azure resources needed 
-The solution you will create for Fourth Coffee requires the following resources in your Azure subscription:
+The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
 - An **Azure Cognitive Search** resource, which will manage indexing and querying.
 - A **Cognitive Services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
@@ -97,7 +97,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
     - **Blob folder**: *Leave this blank*
     - **Description**: Reviews for Fourth Coffee shops.
 3. Proceed to the next step (*Add cognitive skills (Optional)*).
-4. in the **Attach Cognitive Services** section, select your Cognitive Services resource. Remember, the Cognitive Services resource needs to have the same location as your Azure Cognitive Search resource. If they are not in the same location, you will need to create a new Cognitive Services resource that matches the location of your Search resource. 
+4. in the **Attach Cognitive Services** section, select your Cognitive Services resource. Remember, the Cognitive Services resource needs to have the same location as your Azure Cognitive Search resource. If they aren't in the same location, you'll need to create a new Cognitive Services resource that matches the location of your Search resource. 
 5. In the **Add enrichments** section:
     - Change the **Skillset name** to **coffee-skillset**.
     - Select the option **Enable OCR and merge all text into merged_content field**.
@@ -116,7 +116,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
         | Generate captions from images | | imageCaption |
         
 
-6. Double-check your selections (it can be difficult to change them later). Then for **Save Enrichments to a Knowledge Store**, select the boxes: Image projections, Documents, Key phrases, Image details, Image references). You will be prompted for a Storage Account Connection String.  
+6. Double-check your selections (it can be difficult to change them later). Then for **Save Enrichments to a Knowledge Store**, select the boxes: Image projections, Documents, Key phrases, Image details, Image references). You'll be prompted for a Storage Account Connection String.  
 7. In the prompt for the Storage Account Connection String, click on **Choose and existing connection**. Choose your *fourthcoffeeblob* storage account, then create a new container called *ai-knowledge-store*. Then click *Select* at the bottom of the screen. 
 8. Select **Azure blob projects: Document**. A setting for *Container name* with the knowledge store container auto-populated will appear. Keep the container name as-is. 
 9. Click **Next, Customize Target Index**. Change the **Index name** to **fourthcoffee-index**.
@@ -160,7 +160,7 @@ You'll use the Search explorer to write and test queries. Search explorer is a t
 
 ## Review the knowledge store 
 
-Finally let's see the power of the knowledge store in action. When you ran the Import data wizard, you also created a knowledge store. Inside the knowledge store you will find the enriched data extracted by AI skills persisted in the form of projections and tables.
+Finally let's see the power of the knowledge store in action. When you ran the Import data wizard, you also created a knowledge store. Inside the knowledge store you'll find the enriched data extracted by AI skills persisted in the form of projections and tables.
 
 1. Navigate back to your Azure blob. 
 2. On the left hand pane, click on **Storage browser (preview)**. In the storage browser tree click on **Blob containers**. Select the container you labeled as the knowledge store. 
