@@ -109,3 +109,6 @@ An annotation collection is satisfied when all of its children are satisfied and
  AnnotationResult(satisfied=False, annotation=pybryt.Collection))
 ```
 
+Annotation collections can be useful for grouping annotations together that represent parts of a problem for providing cohesive feedback. For example, if you're writing a reference for summing a list of numbers, you may put an annotation for each partial sum into a collection that has its own success and failure message so that students get a single message in their feedback for validating their sum. You can also use this collection to enforce the ordering of the iteration over the list, to make sure students are going in the correct order.
+
+There are several more types of relational annotations beyond just collections, which will be covered in the advanced PyBryt module.
