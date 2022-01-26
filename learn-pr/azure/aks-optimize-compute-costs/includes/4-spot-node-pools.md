@@ -198,7 +198,7 @@ A taint is applied to a node to indicate that only specific pods can be schedule
 
 ### What is toleration?
 
-Toleration is a specification applied to a pod to allow it to tolerate a node's taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
+Toleration is a specification applied to a pod to allow, but not require, a pod to be scheduled on a node with the corresponding taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
 
 ### What is node affinity?
 
