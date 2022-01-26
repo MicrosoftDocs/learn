@@ -15,7 +15,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
 - A **Cognitive Services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
 [!NOTE]
 >Your Azure Cognitive Search and Cognitive Services resources must be in the same location!
-- A **Storage account** with a blob container which will store the raw documents.
+- A **Storage account** with a blob container, which will store the raw documents.
 
 ### Create an *Azure Cognitive Search* resource 
 
