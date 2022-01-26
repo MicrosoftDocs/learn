@@ -10,12 +10,7 @@ It's possible to reach Azure virtual machines (VMs) by using **Remote Desktop Pr
 
 The potential security problem with using these protocols over the internet is that attackers can use brute force techniques to gain access to Azure VMs. After the attackers gain access, they can use your VM as a launching pad for compromising other machines on your virtual network or even attack networked devices outside Azure.
 
-We recommended that you disable direct RDP and SSH access to your Azure VMs from the internet. After direct RDP and SSH access from the internet is disabled, you have other options that you can use to access these VMs for remote management:
-
-- Point-to-site VPN
-- Site-to-site VPN
-- Azure ExpressRoute
-- Azure Bastion Host
+We recommended that you disable direct RDP and SSH access to your Azure VMs from the internet. 
 
 1. Sign in to the Azure portal.
 
@@ -29,6 +24,13 @@ We recommended that you disable direct RDP and SSH access to your Azure VMs from
 
     :::image type="content" source="../media/7-rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/7-rdp.png#lightbox":::
 
+ After direct RDP and SSH access from the internet is disabled, you have other options that you can use to access these VMs for remote management:
+
+- Point-to-site VPN
+- Site-to-site VPN
+- Azure ExpressRoute
+- Azure Bastion Host
+
 ### Restrict SQL Server access from the Internet - Level 1
 
 Firewall systems help prevent unauthorized access to computer resources. If a firewall is turned on but not correctly configured, attempts to connect to SQL Server might be blocked.
@@ -41,7 +43,7 @@ To access an instance of the SQL Server through a firewall, you must configure t
 
 1. For each SQL server selection, in the middle menu pane, under **Security**, select **Firewalls and virtual networks**. The **Firewalls and virtual networks** pane appears for the SQL server.
 
-1. Ensure that the firewall rules exist, and no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or other combinations which allows access to wider public IP ranges.
+1. Ensure that the firewall rules exist, and no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or other combinations that allow access to wider public IP ranges.
 
 1. On the top menu bar, select **Save**.
 
@@ -52,6 +54,7 @@ To access an instance of the SQL Server through a firewall, you must configure t
 When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your virtual network's region. There is no impact to your resources or associated charge for automatically enabling Network Watcher.
 
 Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG. Flow logs are written in JSON format, and show:
+
 - Outbound and inbound flows on a per rule basis
 - Network interface (NIC) the flow applies to
 - 5-tuple information about the flow (Source/destination IP, source/destination port, and protocol)

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.understand-knowledge-store
+title: Understand knowledge store
+metadata:
+  title: Understand knowledge store
+  description: "Understand knowledge store"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2e-understand-knowledge-store.md)]
