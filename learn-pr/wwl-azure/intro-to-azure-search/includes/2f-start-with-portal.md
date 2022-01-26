@@ -1,4 +1,4 @@
-Before using the Azure Search service, you will first need to extract your data to an Azure data source. Supported data storage sources include:
+Before using the Azure Search service, you'll first need to extract your data to an Azure data source. Supported data storage sources include:
 
 - Azure SQL Database
 - SQL Server on an Azure VM
@@ -16,7 +16,7 @@ Once your data is in an Azure data source, you can begin using Azure Cognitive S
 - **Skillset**: A complete set of instructions for manipulating, transforming, and shaping content, including analyzing and extracting information from image files. Except for very simple and limited structures, it includes a reference to a Cognitive Services resource that provides enrichment.
 - **Knowledge store**: Stores output from an AI enrichment pipeline in tables and blobs in Azure Storage for independent analysis or downstream processing.
 
-To use Azure Cognitive Search, you will need an Azure Cognitive Search resource. You can create a resource in the Azure portal. Once the resource is created, you can manage components of your service from the resource *Overview* page in the portal. 
+To use Azure Cognitive Search, you'll need an Azure Cognitive Search resource. You can create a resource in the Azure portal. Once the resource is created, you can manage components of your service from the resource *Overview* page in the portal. 
 
 ![Image of the overview page of an Azure Cognitive Search resource.](../media/azure-search-portal.png) 
 

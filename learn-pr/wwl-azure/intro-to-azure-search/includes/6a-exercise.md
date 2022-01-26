@@ -1,4 +1,4 @@
-Let's imagine you work for Fourth Coffee, a national coffee chain. You are asked to help build a knowledge mining solution that will will make it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
+Let's imagine you work for Fourth Coffee, a national coffee chain. You are asked to help build a knowledge mining solution that will make it easy to search for insights about customer experiences. You decide to build an Azure Cognitive Search index using data extracted from customer reviews.  
 
 In this lab you will:  
 - Create Azure resources  
@@ -59,7 +59,7 @@ If you don't already have one in your subscription, you'll need to provision a *
 
 ## Upload Documents to Azure Storage
 
-1. Select **Go to resouce** to access the Storage account you just created. Then navigate to the left-hand pane and click on **Containers**. 
+1. Select **Go to resource** to access the Storage account you just created. Then navigate to the left-hand pane and click on **Containers**. 
 
     ![Screenshot of storage blob overview page.](../media/storage-blob-1.png)
 
@@ -69,6 +69,7 @@ If you don't already have one in your subscription, you'll need to provision a *
     - **Name**: coffee-reviews  
     - **Public access level**: Container (anonymous read access for containers and blobs)
     - **Advanced**: *no changes*
+    
     Click **Create**. 
 
 3. Download and extract the zipped documents from https://aka.ms/km-documents. 
@@ -82,6 +83,7 @@ If you don't already have one in your subscription, you'll need to provision a *
 Once you have the documents in storage, you can use Azure Cognitive Search to extract insights from the documents.
 
 1. In the Azure portal, browse to your Azure Cognitive Search resource. Then, on its **Overview** page, select **Import data**. The Azure portal provides the Import data wizard that enables you to automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure Cognitive Search index. Selecting the **Import data** button starts the Import data wizard. 
+    
     ![Screenshot of import data wizard.](../media/azure-search-wizard-1.png)
 
 2. On the **Connect to your data** page, in the **Data Source** list, select **Azure Blob Storage**. Then complete the data store details with the following values:
@@ -139,13 +141,13 @@ You'll use the Search explorer to write and test queries. Search explorer is a t
 
 2. Notice how the index selected is the index you just created. 
 
-![Screenshot of the Search explorer.](../media/search-explorer-query.png)
+    ![Screenshot of the Search explorer.](../media/search-explorer-query.png)
 
-In the **Query string** field, enter `search=*&$count=true`, and then select **Search**. The search query returns all the documents in the search index, including a count of all the documents:
-```
-@odata.count": 9  
-```
-The search index should return a JSON document containing your search results. 
+    In the **Query string** field, enter `search=*&$count=true`, and then select **Search**. The search query returns all the documents in the search index, including a count of all the documents:
+    ```
+    @odata.count": 9  
+    ```
+    The search index should return a JSON document containing your search results. 
 
 3. Now let's search by location with this search `Locations Chicago &$count=true`. The search query returns all the documents in the search index, including a count of 3 documents.
 
@@ -163,15 +165,25 @@ Finally let's see the power of the knowledge store in action. When you ran the I
 1. Navigate back to your Azure blob. 
 2. On the left hand pane, click on **Storage browser (preview)**. In the storage browser tree click on **Blob containers**. Select the container you labeled as the knowledge store. 
 3. Click on any of the items, and then click on the **objectprojection.json** file. 
-![Screenshot of the objectprojection.json.](../media/knowledge-store-blob1.png)
+   
+    ![Screenshot of the objectprojection.json.](../media/knowledge-store-blob1.png)
+
 4. Click **Edit** to see the JSON produced for one of the documents from your Azure data store. 
-![Screenshot of how to find the edit button.](../media/knowledge-store-blob2.png)
+   
+    ![Screenshot of how to find the edit button.](../media/knowledge-store-blob2.png)
+
 5. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
-![Screenshot of the storage blob breadcrumb.](../media/knowledge-store-blob4.png)
+   
+    ![Screenshot of the storage blob breadcrumb.](../media/knowledge-store-blob4.png)
+
 6. Now click on **Blob containers** on the left hand panel again. Select the container starting with *skillset*. Click on any of the items. 
-![Screenshot of the skillset container.](../media/knowledge-store-blob5.png)
+    
+    ![Screenshot of the skillset container.](../media/knowledge-store-blob5.png)
+
 7. Click on any of the files. Click **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner. 
-![Screenshot of the image saved.](../media/knowledge-store-blob3.png)
+    
+    ![Screenshot of the image saved.](../media/knowledge-store-blob3.png)
+
 8. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
 9. Now click on **Tables** on the left hand panel. Select the table ending with *KeyPhrases*. Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews.
 

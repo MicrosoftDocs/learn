@@ -1,4 +1,4 @@
-AI enrichment refers to embedded image and natural language processing in an pipeline that extracts text and information from content that cannot otherwise be indexed for full text search. 
+AI enrichment refers to embedded image and natural language processing in a pipeline that extracts text and information from content that cannot otherwise be indexed for full text search. 
 
 AI processing is achieved by adding and combining skills in a skillset. A skillset defines the operations that extract and enrich data to make it searchable. These AI skills can be either built-in skills, such as text translation or Optical Character Recognition (OCR), or custom skills that you provide.
 
