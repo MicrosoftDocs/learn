@@ -168,23 +168,23 @@ Finally let's see the power of the knowledge store in action. When you ran the I
 2. On the left-hand pane, click on **Storage browser (preview)**. In the storage browser tree click on **Blob containers**. Select the container you labeled as the knowledge store. 
 3. Click on any of the items, and then click on the **objectprojection.json** file. 
    
-    ![Screenshot of the objectprojection.json.](../media/knowledge-store-blob1.png)
+    ![Screenshot of the objectprojection.json.](../media/knowledge-store-blob-1.png)
 
 4. Click **Edit** to see the JSON produced for one of the documents from your Azure data store. 
    
-    ![Screenshot of how to find the edit button.](../media/knowledge-store-blob2.png)
+    ![Screenshot of how to find the edit button.](../media/knowledge-store-blob-2.png)
 
 5. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
    
-    ![Screenshot of the storage blob breadcrumb.](../media/knowledge-store-blob4.png)
+    ![Screenshot of the storage blob breadcrumb.](../media/knowledge-store-blob-4.png)
 
 6. Now click on **Blob containers** on the left-hand panel again. Select the container starting with *skillset*. Click on any of the items. 
     
-    ![Screenshot of the skillset container.](../media/knowledge-store-blob5.png)
+    ![Screenshot of the skillset container.](../media/knowledge-store-blob-5.png)
 
 7. Click on any of the files. Click **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner. 
     
-    ![Screenshot of the image saved.](../media/knowledge-store-blob3.png)
+    ![Screenshot of the image saved.](../media/knowledge-store-blob-3.png)
 
 8. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
 9. Now click on **Tables** on the left-hand panel. Select the table ending with *KeyPhrases*. Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews.
