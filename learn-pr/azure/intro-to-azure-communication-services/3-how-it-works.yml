@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-communication-services.how-it-works
+title: How Azure Communication Services works
+metadata:
+  unitType: learning-content
+  title: How Azure Communication Services works
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 1/25/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-it-works.md)]

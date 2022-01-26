@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-communication-services.when-to-use-it
+title: When to use Azure Communication Services
+metadata:
+  unitType: learning-content
+  title: When to use Azure Communication Services
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 1/25/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-when-to-use-it.md)]
