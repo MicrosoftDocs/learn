@@ -257,7 +257,7 @@ The Terms of use screen shows a count of the users who have accepted and decline
 Users can review and see the terms of use that they have accepted by using the following procedure.
 
 1.  Browse to [https://myaccount.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
-2.  On the Overview page, select VIEW SETTINGS AND PRIVACY.<br>:::image type="content" source="../media/my-account-settings-privacy-035c38bb.png":::
+2.  On the Overview page, select VIEW SETTINGS AND PRIVACY.<br>:::image type="content" source="../media/my-account-settings-privacy-035c38bb.png" alt-text="Screen image of a popup which says View settings and privacy":::
     
 
 3.  On the Settings &amp; Privacy page, select the **Privacy** tab.<br>:::image type="content" source="../media/my-account-settings-privacy-organization-notes-db514a84.png" alt-text="Screen image displaying the settings and privacy page with organization notice highlighted. There is a terms of use enforced.":::
