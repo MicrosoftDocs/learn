@@ -95,9 +95,6 @@ For some resource properties, to construct values automatically, you need to cre
 > output hostname string = app.properties.defaultHostname
 > ```
 
-> [!TIP]
-> For existing resources, use the `existing` keyword to look up their properties, instead of passing property values around through outputs. In this way, you'll always get the most up-to-date data.
-
 ## How do you use version control effectively?
 
 Version control systems such as Git can help simplify your work when you're refactoring code.
