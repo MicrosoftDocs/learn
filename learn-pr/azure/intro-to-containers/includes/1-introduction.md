@@ -21,4 +21,4 @@ In this module, you will:
 - Familiarity with basic web application development concepts
 
 > [!NOTE]
-> The exercises in this module require local installations of Docker and Git.
+> The exercises in this module require local installations of [Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) and [Git](https://git-scm.com/downloads).
