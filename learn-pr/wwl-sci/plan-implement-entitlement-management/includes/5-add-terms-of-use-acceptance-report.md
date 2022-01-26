@@ -3,7 +3,7 @@
 :::image type="content" source="../media/sc300-terms-of-use-entitlement-eb2a99ab.png" alt-text="Screenshot of terms of use settings.  You can set Name, Display Name, link to a PDF document with the terms, and some settings to ensure the user actually sees the terms of use.":::
 
 
-Azure AD terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain a End User License Agreement (EULA), which the user has to commit to before access resources based on their entitlement settings.
+Azure AD terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
 
 ## Add terms of use
 
@@ -12,14 +12,14 @@ Once you have finalized your terms of use document, use the following procedure 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
 2.  Open **Azure Active Directory** and the select **Identity Governance**.
 3.  In the left navigation menu, under **Terms of use**, select **Terms of use**.
-4.  On the Terms of use page, on the top menu, select **+ New terms**
+4.  On the Terms of use page, on the top menu, select **+ New terms.**
 
 :::image type="content" source="../media/new-terms-of-use-f50f193c.png" alt-text="Screen image displaying the Terms of use page with New terms highlighted":::
 
 
 5.  In the **Name** box, enter **Testing terms of use**. This is the terms of use that will be used in the Azure portal.
 6.  In the **Display name** box, enter **Contoso Terms of Use**. This is the title that users see when they sign in.
-7.  Select the **Terms of use document box**, browse to your finalized terms of use PDF and select it. For this exercise you can choose any PDF you may have or, using Microsoft Word, create a terms of use doc and then print to PDF.
+7.  Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise you can choose any PDF you may have. Another option is use Microsoft Word to create a terms of use doc and then save as PDF.
 8.  Select the language for your terms of use document. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 9.  To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
 10. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install additional applications if this option is enabled.
@@ -92,16 +92,16 @@ Once you have finalized your terms of use document, use the following procedure 
         Alice
       :::column-end:::
       :::column:::
-        Jan 1
+        January 1
       :::column-end:::
       :::column:::
-        Feb 1
+        February 1
       :::column-end:::
       :::column:::
-        Mar 1
+        March 1
       :::column-end:::
       :::column:::
-        Apr 1
+        April 1
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -109,20 +109,20 @@ Once you have finalized your terms of use document, use the following procedure 
         Bob
       :::column-end:::
       :::column:::
-        Jan 15
+        January 15
       :::column-end:::
       :::column:::
-        Feb 1
+        February 1
       :::column-end:::
       :::column:::
-        Mar 1
+        March 1
       :::column-end:::
       :::column:::
-        Apr 1
+        April 1
       :::column-end:::
     :::row-end:::
     
-13. Use the **Duration before re-acceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here is how expirations might occur for two users:
+13. Use the **Duration before reacceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here is how expirations might occur for two users:
     
     :::row:::
       :::column:::
@@ -146,16 +146,16 @@ Once you have finalized your terms of use document, use the following procedure 
         Alice
       :::column-end:::
       :::column:::
-        Jan 1
+        January 1
       :::column-end:::
       :::column:::
-        Jan 31
+        January 31
       :::column-end:::
       :::column:::
-        Mar 2
+        March 2
       :::column-end:::
       :::column:::
-        Apr 1
+        April 1
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -163,22 +163,22 @@ Once you have finalized your terms of use document, use the following procedure 
         Bob
       :::column-end:::
       :::column:::
-        Jan 15
+        January 15
       :::column-end:::
       :::column:::
-        Feb 14
+        February 14
       :::column-end:::
       :::column:::
-        Mar 16
+        March 16
       :::column-end:::
       :::column:::
-        Apr 15
+        April 15
       :::column-end:::
     :::row-end:::
     
     
     > [!NOTE]
-    > It is possible to use the Expire consents and Duration before re-acceptance requires (days) settings together, but typically you use one or the other.
+    > It is possible to use the Expire consents and Duration before reacceptance requires (days) settings together, but typically you use one or the other.
 14. Under **Conditional Access**, select **Custom policy**.
     
     :::row:::
@@ -232,7 +232,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 ## View report of who has accepted and declined
 
-The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
+The Terms of use screen shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
 1.  In Microsoft Azure, in **Identity Governance** &gt; **Terms of use**, locate your terms of use.
 2.  For a terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
@@ -240,7 +240,7 @@ The Terms of use blade shows a count of the users who have accepted and declined
 :::image type="content" source="../media/terms-of-use-accept-decline-bb78f857.png" alt-text="Screen image displaying the terms of use with the Accepted and Declined columns highlighted":::
 
 
-3.  In this exercise you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
+3.  In this exercise, you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
 
 :::image type="content" source="../media/accepted-terms-of-use-9e3c6bb6.png" alt-text="Terms of use consents pane listing the users that have accepted":::
 
@@ -284,7 +284,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 3.  On the Settings &amp; Privacy page, select the **Privacy** tab.
 
-:::image type="content" source="../media/my-account-settings-privacy-organization-notes-db514a84.png" alt-text="Screen image displaying the settings and privacy page with organization's notes highlighted":::
+:::image type="content" source="../media/my-account-settings-privacy-organization-notes-db514a84.png" alt-text="Screen image displaying the settings and privacy page with organization notice highlighted. In this case there is a terms of use enforced.":::
 
 
 4.  Under **Organization’s notice**, you can review the terms of use you have accepted.
@@ -300,11 +300,11 @@ You can edit some details of terms of use, but you can't modify an existing docu
 5.  On the top menu, select **Edit terms**.
 6.  In the Edit terms of use pane, you can change the following settings:
     
-     -  **Name** – this is the internal name of the ToU that is not shared with end users
-     -  **Display name** – this is the name that end users can see when viewing the ToU
+     -  **Name** – this is the internal name of the ToU that is not shared with end users.
+     -  **Display name** – this is the name that end users can see when viewing the ToU.
      -  **Require users to expand the terms of use** – Setting this to **On** will force the end use to expand the terms of use document before accepting it.
      -  **Update an existing terms of use** document.
-     -  You can add a language to an existing ToU. If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use. :::image type="content" source="../media/edit-terms-of-use-1ca5ade5.png" alt-text="Screen image of the Identity Governance terms of use being edited.":::
+     -  You can add a language to an existing ToU. There are other settings you can change, such as require users to consent on every device, and expire consents. You can also set duration before reacceptance, or Conditional Access policy. You must create a new terms of use. :::image type="content" source="../media/edit-terms-of-use-1ca5ade5.png" alt-text="Screen image of the Identity Governance terms of use being edited.":::
         
 7.  Once you are done, select **Save** to save your changes.
 
@@ -320,10 +320,10 @@ You may, on occasion, be required to update the terms of use document.
 
 
 4.  In the Update terms of use version pane, you can upload a new version of your terms of use document.
-5.  Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to re-accept, their previous consent will stay current and only new users who have not consented before or whose consent expires will see the new version.
+5.  Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to reaccept, their previous consent will stay current. Only new users who have not consented before or whose consent expires will see the new version.
 
 :::image type="content" source="../media/update-terms-of-use-version-b5bb708d.png" alt-text="Screen image displaying the update terms of use version pane with the upload required pdf and require re-accept highlighted":::
 
 
-6.  Once you have uploaded your new pdf and decided on re-accept, select **Add**.
+6.  Once you have uploaded your new pdf and decided on reaccept, select **Add**.
 7.  You will now see the most recent version under the Document column.
