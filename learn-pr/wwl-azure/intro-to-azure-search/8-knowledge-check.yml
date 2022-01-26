@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 11/30/2021
+  ms.date: 01/26/2022
   author: wwlpublish
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 quiz:
   title: "Check your knowledge"
   questions:
@@ -27,14 +26,8 @@ quiz:
     - content: "Search explorer returns results in JSON only."
       isCorrect: true
       explanation: "Correct. Search explorer returns results in JSON only."
-    - content: "SearchMode must be set to ON in order for queries to work."
-      isCorrect: false
-      explanation: "Incorrect. Valid values are \"any\" or \"all\". The searchMode specifies whether a positive match can be made using any of the criteria, or whether all of the criteria must be satisfied."
   - content: "Which of the following data sources can be used as an input data source?"
     choices:
-    - content: "Azure Data Lake."
-      isCorrect: false
-      explanation: "Incorrect. Azure Data Lake is not a supported external data source. It is, however, entirely possible to write code to use the REST API, and push data from Azure Data Lake to Azure Cognitive Search."
     - content: "Azure Virtual Machines."
       isCorrect: false
       explanation: "Incorrect. Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however."
@@ -52,9 +45,6 @@ quiz:
     - content: "SQL."
       isCorrect: false
       explanation: "Incorrect. SQL isn't supported."
-    - content: "XML."
-      isCorrect: false
-      explanation: "Incorrect. XML isn't supported."
     - content: "JSON."
       isCorrect: true
       explanation: "Correct. Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."

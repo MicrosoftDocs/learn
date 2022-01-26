@@ -2,7 +2,7 @@
  -  Use the latest possible DB with latest patches.
  -  Use the latest possible SAP Kernel with latest patches (for example, upgrade from 7.45 kernel to 7.49 or 7.53).
  -  Consider using the largest available Azure VM. The VM type can be lowered to a smaller VM after the Import process
- -  Create multiple transaction log files with the first transaction log file on the local non-persistent SSD. Additional transaction log files can be created on P50 disks. VLDB migrations could require more than 5 TB of transaction log space. It is strongly recommended to ensure there is always a large amount of transaction log space is always free (20% is a safe figure). Extending transaction log files during an import is not recommended and will impact performance.
+ -  Create multiple transaction log files with the first transaction log file on the local non-persistent SSD. Additional transaction log files can be created on P50 disks. VLDB migrations could require more than 5 TB of transaction log space. It is recommended to ensure there is always a large amount of transaction log space is always free (20% is a safe figure). Extending transaction log files during an import is not recommended and will impact performance.
  -  SQL Server max degree of parallelism (MAXDOP) should usually be set to 1. Only certain index build operations will benefit from MAXDOP and then only for specific tables.
  -  Accelerated Networking is mandatory for DB and R3load servers.
  -  Limit the maximum memory a single SQL Server query can request with Resource Governor. This is required to prevent index build operations from requesting very large memory grants.
