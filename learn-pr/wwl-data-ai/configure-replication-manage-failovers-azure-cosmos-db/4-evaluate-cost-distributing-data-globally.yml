@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.evaluate-cost-of-distributing-data-globally
-title: Evaluate the cost distributing data globally
+title: Evaluate the cost of distributing data globally
 metadata:
-  title: Evaluate the cost distributing data globally
-  description: "Evaluate the cost distributing data globally"
-  ms.date: 12/09/2021
+  title: Evaluate the cost of distributing data globally
+  description: "Evaluate the cost of distributing data globally"
+  ms.date: 01/25/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

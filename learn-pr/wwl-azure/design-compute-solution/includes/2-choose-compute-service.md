@@ -1,4 +1,4 @@
-Compute refers to the hosting model for the computing resources that your applications run on. Azure offers several compute services, which we will cover in this module. Here’ a short summary. 
+Compute refers to the hosting model for the computing resources that your applications run on. Azure offers several compute services, which we will cover in this module. Here’s a short summary. 
 
 - **Virtual machines (IaaS)**. Deploy and manage VMs inside an Azure virtual network.
 
