@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
 There are several essential items in the file that are required for the test to work. From naming conventions to particular methods that combined allow a test file to get executed.
 
-### Running tests
+### Run tests
 
 There are two ways to run a test file. Let's look again at the end of the *test_assertions.py* file, where the `unittest.main()` call allows running the tests by executing the file with Python:
 
