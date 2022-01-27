@@ -100,7 +100,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     The previous changes instruct the compiler to fail the build whenever a warning is encountered.
 
     > [!TIP]
-    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures warnings aren't allowed to inadvertently pass a continuous integration build.
+    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures warnings aren't allowed to inadvertently pass a continuous integration build warning.
 
 1. Build the sample solution using the `dotnet build` command.
 
