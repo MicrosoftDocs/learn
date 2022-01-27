@@ -1,8 +1,8 @@
-The data in your Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it is protected from planned and unplanned events ranging from transient hardware failures, network or power outages, massive natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. Replication ensures that your storage account meets the Service-Level Agreement (SLA) for Storage even in the face of failures.
+The data in your Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it is protected from planned and unplanned events. These events range from transient hardware failures, network or power outages, massive natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. Replication ensures that your storage account meets the Service-Level Agreement (SLA) for Storage even in the face of failures.
 
 ## Comparison of replication options
 
-The following table provides a quick overview of the scope of durability and availability that each replication strategy will provide you for a given type of event (or event of similar impact).
+The following table provides a short overview of the scope of durability and availability for different replication strategies.
 
 :::row:::
   :::column:::
@@ -126,7 +126,6 @@ Here are a few of more things to know about ZRS:
 
  -  ZRS is not yet available in all regions.
  -  Changing to ZRS from another data replication option requires the physical data movement from a single storage stamp to multiple stamps within a region.
- -  ZRS may not protect your data against a regional disaster where multiple zones are permanently affected. Instead, ZRS offers resiliency for your data.
 
 ## Geo-redundant storage
 
