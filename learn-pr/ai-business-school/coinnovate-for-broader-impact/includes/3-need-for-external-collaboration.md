@@ -6,6 +6,6 @@ Additionally, organizations should look to partner externally with other organiz
 
 But you can’t just account for your customers interests, it’s also important to include how vulnerable communities could be impacted by the work you’re doing. Serving vulnerable communities requires an understanding of their immediate needs and concerns. As an organization, do your part in researching the needs of the communities and how you can innovate ideas and technology to support the company's mission and the community.
 
-It’s important to remember that sometimes, businesses just can’t solve everything on their own. The necessity of specialized partnerships as needs, and issues become more specific require external collaboration.
+It’s important to remember that sometimes, businesses just can’t solve everything on their own. The necessity of specialized partnerships as needs and issues become more specific require external collaboration.
 
 Now, let’s read up on how UCB demonstrates collaboration with external partnership to show case their commitment to the community and foster resilience.
