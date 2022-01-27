@@ -66,7 +66,7 @@ Telephony provides Calling via the Publicly Switched Telephone Network(PSTN). Th
 
 ### SMS features
 
-Our Simple Messaging Service(SMS) features let you interact with regular SMS messaging including:
+Our Short Messaging Service(SMS) features let you interact with regular SMS messaging including:
 
 - Send SMS - Send text messages to Phone numbers.
 - Receive SMS - Receive text messages and process them through Event Grid.
