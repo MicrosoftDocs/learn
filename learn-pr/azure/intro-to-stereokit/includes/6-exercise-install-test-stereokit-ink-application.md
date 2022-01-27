@@ -8,7 +8,7 @@ First, download the StereoKit Ink sample application from [GitHub repository](ht
 :::image type="content" source="../media/scripts.png" alt-text="Screenshot of solution explorer with script list.” " lightbox="../media/scripts.png":::
 
 > [!Note]
-> The program will contain errors, which will clear at a later time during debugging.
+> The program will contain errors, which will clear later during debugging.
 
 ## Build StereoKit Ink application on HoloLens 2
 
@@ -30,7 +30,7 @@ Start Debugging will start the application on your device with the Visual Studio
 
 ## Build StereoKit Ink application on Desktop
 
-1. To build StereoKit Ink application to your desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any CPU** is selected.
+1. To build the StereoKit Ink application to your desktop, configure Visual Studio for Desktop by clicking on "Solution Configuration" to ensure the **Debug** and **Any CPU** is selected.
   
    :::image type="content" source="../media/change-solution-configuration.png" alt-text="Screenshot shows changing of Solution configuration." lightbox="../media/change-solution-configuration.png":::
 
@@ -51,6 +51,6 @@ Start Debugging will start the application on your device with the Visual Studio
 
 Once you deploy the solution, you can see the StereoKit Ink application window pop-up on your target device, like HoloLens 2 or desktop. You can see a UI with three operable components. The components present on the screen are the painting menu, palette menu, handle, and operating hand.
 
-You may start interacting with the application using the fingertip of your right hand. Choose a color of your choice from the available six colors. You can customize these colors by altering the Hue, Saturation, and Value properties. Modify the size of brushstrokes using the slider. The handle helps you to move around your painting.
+You may start interacting with the application using the fingertip of your right hand. First, choose a color of your choice from the available six colors. You can customize these colors by altering the Hue, Saturation, and Value properties. Next, modify the size of brushstrokes using the slider. The handle helps you to move around your painting.
 
 You can use UI buttons in the painting menu to make changes to the drawing if necessary. Undo option removes the most recent to the painting, while the Redo option removes the most recent undo from the stack. Save the drawing in the system's preferred location by clicking the save button. The Load button lets you select any .skp file, while the clear button clears the painting stroke. Finally, the Quit button allows you to close the StereoKit Ink application window.

@@ -1,10 +1,10 @@
- In the previous unit, we looked at the StereoKit Ink sample project. In this unit, we will look at the three main code files used to build this application. The code strives to be very legible and easy to understand.
+In the previous unit, we looked at the StereoKit Ink sample project. This unit will look at the three main code files used to build this application. The code strives to be very legible and easy to understand.
 
 ## Program.cs
 
-This file contains the application logic, the hand menu, and the application menu! It's a great place to start, since the application menu ties everything together.
+This file contains the application logic, the hand menu, and the application menu! It's a great place to start since the application menu ties everything together.
 
-* **Initialization**: The Program.cs script starts by initializing StereoKit. During initialization, we can prepare a few settings, like the assetsFolder and appName. assetsFolder is the folder that StereoKit will look for assets in when provided a relative folder name. Settings can also be told to make a flatscreen app, or how to behave if the preferred initialization mode fails.
+* **Initialization**: The Program.cs script starts by initializing StereoKit. We can prepare a few settings during initialization, like the assetsFolder and appName. assetsFolder is the folder that StereoKit will look for assets when provided a relative folder name. Settings can also be told to make a flatscreen app or how to behave if the preferred initialization mode fails.
 
     ```c#
     SKSettings settings = new SKSettings
@@ -17,9 +17,9 @@ This file contains the application logic, the hand menu, and the application men
         Environment.Exit(1);
     ```
 
-* **Radial hand menu**: This is a simple radial hand menu where we'll store some quick actions! It's activated by a grip motion, and is great for fast, gesture-like activation of menu items. It also can be used with multiple HandRadialLayers to nest commands in sub-menus.
+* **Radial hand menu**: This is a simple radial hand menu where we'll store some quick actions! It's activated by a grip motion and is excellent for fast, gesture-like activation of menu items. It also can be used with multiple HandRadialLayers to nest commands in sub-menus.
 
-    The HandMenuRadial is an example of a stepper objet. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, will have their Step method called each frame! This is a great way to add fire-and-forget objects or systems that need to update each frame.
+    The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, they will have their Step method called each frame! This is a great way to add fire-and-forget objects or systems that need to update each frame.
 
     :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
@@ -30,7 +30,7 @@ This file contains the application logic, the hand menu, and the application men
             new HandMenuItem("Redo", null, ()=>activePainting?.Redo()))));
     ```
 
-* **Step the application each frame**: StereoKit applications are immersive 3D experiences, which normally work by redrawing the screen every time the display refreshes. This can mean executing a good portion of your codebase anywhere between 60 and 120 times per second! You control this display loop by stepping StereoKit in a while loop until your app is complete. During each step, you will call all of the code that needs to be drawn, or stepped for the frame. Here, each frame we're stepping the currently active painting object, the palette window, and an application menu window.
+* **Step the application each frame**: StereoKit applications are immersive 3D experiences, which generally work by redrawing the screen every time the display refreshes. Unfortunately, this can mean executing a good portion of your codebase anywhere between 60 and 120 times per second! You control this display loop by stepping StereoKit in a while loop until your app is complete. You will call all of the code that needs to be drawn or stepped for the frame during each step. Here, we're stepping the currently active painting object, the palette window, and an application menu window in each frame.
 
     ```c#
     while (SK.Step(() =>
@@ -45,9 +45,9 @@ This file contains the application logic, the hand menu, and the application men
 
 * **Application's menu window**: This menu is built using StereoKit's built-in immediate mode UI system. You can read more about StereoKit's UI system in [the UI guide](https://stereokit.net/Pages/Guides/User-Interface.html), but the basics are pretty easy to follow!
 
-    Here, we're creating a window panel enclosed by UI.WindowBegin and UI.WindowEnd calls. It can contain a number of UI elements, and can be grabbed and moved around by the user. Within the window, we can add different UI elements, such as the UI.Image or UI.Button, which are automatically laid out within the window panel. Additional tools such as UI.SameLine, and UI.HSeparator are used to manipulate the layout of the window contents.
+    Here, we're creating a window panel enclosed by UI.WindowBegin and UI.WindowEnd calls. It can contain several UI elements and can be grabbed and moved around by the user. We can add different UI elements within the window, such as the UI.Image or UI.Button, which is automatically laid out within the window panel. Additional tools such as UI.SameLine, and UI.HSeparator is used to manipulate the layout of the window contents.
 
-    UI.Button returns true when it is pressed, so it's pretty easy to wrap in an 'if' statement, and execute some code based on that! You can see here a number of actions that are getting performed this way, but we'll call out the Platform.FilePicker calls as something a little more interesting. Platform.FilePicker will load up a platform native file picker windows (or a built-in fallback file picker if the platform doesn't provide an MR compatible file picker), and call your provided callback function with the resulting file name. This makes it really trivial to work with content in the file-system!
+    UI.Button returns true when pressed, so it's pretty easy to wrap in an 'if' statement and execute some code based on that! You can see several actions that are being performed here, but we'll call out the Platform.FilePicker calls as something a little more interesting. Platform.FilePicker will load up a platform-native file picker windows (or a built-in fallback file picker if the platform doesn't provide an MR-compatible file picker) and call your provided callback function with the resulting file name. This makes it trivial to work with content in the file system!
 
     :::image type="content" source="../media/ink-functional-window.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/ink-functional-window.png":::
 
@@ -84,11 +84,11 @@ This file contains the application logic, the hand menu, and the application men
 
 ## PaletteMenu.cs script
 
-This file is a menu that controls painting options. It's mostly composed of built-in UI elements, but also illustrates how to use StereoKit's layout and interaction tools to create your own.
+This file is a menu that controls painting options. It's mainly composed of built-in UI elements and illustrates how to use StereoKit's layout and interaction tools to create your own.
 
-* **Fields**: These fields track the state of the PaletteMenu, a Pose for the window, a color and size for the paint stroke, and hue, saturation value variables that are used to drive the UI color sliders.
+* **Fields**: These fields track the state of the PaletteMenu, a Pose for the window, color and size for the paint stroke, and hue saturation value variables used to drive the UI color sliders.
 
-    The Models here are assets used for the UI. One is a bottle that's used for decoration and will display the active color, and the other is a "splash of ink" that we'll turn into a pressable button that will allow users to pick colors with it.
+    The Models here are assets used for the UI. One is a bottle used for decoration and will display the active color, and the other is a "splash of ink" that we'll turn into a pressable button that will allow users to pick colors with it.
 
     ```c#
      Model _model       = Model.FromFile("InkBottle.glb");
@@ -103,7 +103,7 @@ This file is a menu that controls painting options. It's mostly composed of buil
      float _value = 1;
      ```
 
-* **The Window**: In the Step function, we'll start a window to contain all the controls, and start it off with an ink bottle to highlight the purpose of this area! The size provided here will auto-fill on the x-axis, which will center the Model, and we'll make it two lines tall.
+* **The Window**: In the Step function, we'll start a window to contain all the controls and start it off with an ink bottle to highlight the purpose of this area! The size provided here will auto-fill on the x-axis, which will center the Model, and we'll make it two lines tall.
 
   :::image type="content" source="../media/ink-tools-window.png" alt-text="Screenshot of Ink tools window.” " lightbox="../media/ink-tools-window.png":::
 
@@ -113,7 +113,7 @@ This file is a menu that controls painting options. It's mostly composed of buil
     UI.Model(_model, V.XY(0, UI.LineHeight*2));
     ```
 
-* **Color swatches**: Here, we'll display a list of pre-picked color swatches. These color swatches are implemented as custom buttons, so check out the SwatchColor method later.
+* **Color swatches**: Here, we'll display a list of pre-picked color swatches. These color swatches are custom buttons, so check out the SwatchColor method later.
 
   :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
 
@@ -133,7 +133,7 @@ This file is a menu that controls painting options. It's mostly composed of buil
     UI.Space(UI.LineHeight*0.5f);
     ```
 
-* **Sliders**: Swatches are never enough by themselves! So here's some sliders to let the user HSV their color manually. We start with a fixed size label, and on the same line add a fixed size slider. Fixing the sizes here helps them to line up in columns.
+* **Sliders**: Swatches are never enough by themselves! So here are some sliders to let the user HSV their color manually. We start with a fixed size label, and on the same line, add a fixed size slider. Fixing the sizes here helps them to line up in columns.
 
     :::image type="content" source="../media/slider.png" alt-text="Screenshot of slider in ink tools window.” " lightbox="../media/slider.png":::
 
@@ -156,9 +156,9 @@ This file is a menu that controls painting options. It's mostly composed of buil
     UI.HSeparator();
     ```
 
-* **Size swatches**:  Now for brush sizes! We'll have some size swatches first, these are similar to the color swatches, except they have some control over how large the swatch looks.
+* **Size swatches**:  Now for brush sizes! We'll have some size swatches. First, these are similar to the color swatches, except they control how large the swatch looks.
 
-    We'll also display a preview of the brush stroke's size. We'll reserve a box that can hold the maximum size for the brush stroke, and preview the stroke with an unlit cube scaled to the brush's size.
+    We'll also display a preview of the brush stroke's size. We'll reserve a box that can hold the maximum size for the brush stroke and preview the stroke with an unlit cube scaled to the brush's size.
 
     :::image type="content" source="../media/brush-size.png" alt-text="Screenshot of brush size slider.” " lightbox="../media/brush-size.png":::
 
@@ -184,7 +184,7 @@ This file is a menu that controls painting options. It's mostly composed of buil
     Mesh.Cube.Draw(Material.Unlit, Matrix.TS(linePreview.center, linePreview.dimensions), _color);
     ```
 
-* **Colorize**: This updates the active color that we're painting. To visually indicate the active color, we also change the colors of the ink bottle's material, as well as StereoKit's hand material.
+* **Colorize**: This updates the active color we're painting. To visually indicate the active color, we also change the colors of the ink bottle's material and StereoKit's hand material.
 
     ```c#
     void SetColor(float hue, float saturation, float value)
@@ -204,7 +204,7 @@ This file is a menu that controls painting options. It's mostly composed of buil
 
 This class captures the entire concept of finger painting! It takes in hand input and turns it into three-dimensional lines. It's also in charge of loading and saving painting files.
 
-* **Create a child of handle**: We'll turn the entire painting into a child of a handle so that we can move it around while we work on it! Handles and Windows both will push a transform onto the Hierarchy stack, making all subsequent locations relative to that transform.
+* **Create a child of handle**: We'll turn the entire painting into a child of a handle so that we can move it around while we work on it! Handles and Windows will push a transform onto the Hierarchy stack, making all subsequent locations relative to that transform.
 
   :::image type="content" source="../media/handle.png" alt-text="Screenshot of handle.” " lightbox="../media/handle.png":::
 
@@ -220,7 +220,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     }
     ```
 
-* **Undo stack**: For Undo/Redo, we use a somewhat oversimplified undo stack. When we **undo** a paint stroke, we remove the last stroke from the painting and add it to the top of the undo stack. To **redo** a paint stroke, we remove the top stroke on the undo stack, and add it back to the painting. This is not a robust implementation, but can be somewhat passable in simple interactions.
+* **Undo stack**: For Undo/Redo, we use a somewhat oversimplified undo stack. When we **undo** a paint stroke, we remove the last stroke from the painting and add it to the top of the undo stack. Likewise, to **redo** a paint stroke, we remove the top stroke on the undo stack and add it back to the painting. This is not a robust implementation but can be somewhat passable in simple interactions.
 
     ```c#
     public void Undo()
@@ -238,7 +238,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     }
     ```
 
-* **Translate the fingertip coordinates into Hierarchy local coordinates**: Here, we get the hand's fingertip, convert it to local space, and smooth it out to reduce any jagged noise! The hand's location data is always provided in world space, but since we're inside of a Handle which uses the Hierarchy stack, we need to convert the fingertip's coordinates into Hierarchy local coordinates before we can work with it.
+* **Translate the fingertip coordinates into Hierarchy local coordinates**: Here, we get the hand's fingertip, convert it to local space, and smooth it out to reduce any jagged noise! Of course, the hand's location data is always provided in world space. Still, since we're inside a Handle that uses the Hierarchy stack, we need to convert the fingertip's coordinates into Hierarchy local coordinates before working with it.
 
   :::image type="content" source="../media/hand.png" alt-text="Screenshot of hand.” " lightbox="../media/hand.png":::
 
@@ -249,7 +249,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     fingertip = Vec3.Lerp(_prevFingertip, fingertip, 0.3f);
     ```
 
-* **Stroke gesture**: Here we're managing the paint stroke gesture itself. If the user just made a pinching motion, and is not interacting with the UI, we'll begin a paint gesture. We'll update the stroke while the gesture is active, and then end the gesture when the user has ceased pinching.
+* **Stroke gesture**: Here, we're managing the paint stroke gesture itself. If the user just made a pinching motion and is not interacting with the UI, we'll begin a paint gesture. We'll update the stroke while the gesture is active and then end the gesture when the user has ceased pinching.
 
     ```c#
     if (hand.IsJustPinched && !UI.IsInteracting(handed))
@@ -267,13 +267,13 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     }
     ```
 
-* **Creating the paint stroke**: We'll begin the stroke gesture by adding two initial points to the stroke point list! The first one begins at the point provided, and the second one will always be updated to the current fingertip location. We add new points once we reach a certain distance from the last point, but a naive implementation of this can result in a popping effect when points are simply added at distance intervals. The extra point that directly follows the fingertip will nicely prevent this 'popping' artifact!
+* **Creating the paint stroke**: We'll begin the stroke gesture by adding two initial points to the stroke point list! The first one begins at the point provided, and the second one will constantly be updated to the current fingertip location. We add new points once we reach a certain distance from the last point, but a naive implementation can result in a popping effect when points are added at distance intervals. The extra point directly following the fingertip will nicely prevent this 'popping' artifact!
 
     During UpdateStroke, we'll begin with calculating the current distance from the last point, as well as the speed at which the hand is traveling. Then we'll create a point at the current location, using speed as the thickness of the stroke!
 
-    If we're more than a centimeter away from our last point, we'll add a new point! This is simple, but effective enough. A higher quality implementation might use an error/change function that also factors into account the change in angle. Otherwise, the last point in the stroke should always be at the current fingertip location to prevent 'popping' when adding a new point.
+    If we're more than a centimeter away from our last point, we'll add a new point! This is simple but effective enough. A higher-quality implementation might use an error/change function that also factors in the change in angle. Otherwise, the last point in the stroke should always be at the current fingertip location to prevent 'popping' when adding a new point.
 
-    Then at the end of the gesture, we just add the active stroke to the painting, and clear it out for the next stroke!
+    Then at the end of the gesture, we add the active stroke to the painting and clear it out for the next stroke!
 
     ```c#
     void BeginStroke(Vec3 at, Color32 color, float thickness)
@@ -302,9 +302,9 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     }
     ```
 
-* **Loading the paint file**: We'll use a really simple text file format for our painting data. In this file, each line is a paint stroke, and each point on that stroke is separated by a comma. Each item within a point is separated by spaces, which is taken care of in LinePointFromString.
+* **Loading the paint file**: We'll use a really simple text file format for our painting data. Each line is a paint stroke in this file, and a comma separates each point on that stroke. In addition, each item within a point is separated by spaces, which is taken care of in LinePointFromString.
 
-    For some context, here's an simple example of file containing a two stroke painting, with two points in the first stroke (white), and three points in the second stroke (red):
+    For some context, here's a simple example of a file containing a two-stroke painting, with two points in the first stroke (white) and three points in the second stroke (red):
 
     ```text
     0 0 0 255 255 255 0.01, 0.1 0 0 255 255 255 0.01
@@ -341,7 +341,7 @@ This class captures the entire concept of finger painting! It takes in hand inpu
     }
     ```
 
-* **Saving the paint file**: Converting this painting to a file is even simpler than loading it from one! We have LinePointToString which we can use for each point, and then we just have to join all the data together. Each paint stroke goes on its own line using '\n', and each point on that stroke is separated with a comma.
+* **Saving the paint file**: Converting this painting to a file is even simpler than loading it from one! First, we have LinePointToString, which we can use for each point, and then we have to combine all the data. Then, each paint stroke goes on its line using '\n,' and each point on that stroke is separated with a comma.
 
     ```c#
     public string ToFileData()

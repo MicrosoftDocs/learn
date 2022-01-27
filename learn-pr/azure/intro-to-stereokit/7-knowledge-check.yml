@@ -36,25 +36,25 @@ quiz:
         - content: "StereoKit allows computation to proceed faster."
           isCorrect: false
           explanation: Because StereoKit enables computation to be performed more quickly.
-    - content: "Select the correct format to store a given StereoKit 3D model."
+    - content: "What makes StereoKit's UI different from other UI Systems?"
       choices:
-        - content: .tga
+        - content: The API used is really complicated.
           isCorrect: false
-          explanation: It is a Texture format used in StereoKit.
-        - content:  .bmp
+          explanation: The API is really simple, and StereoKit doesn't store the state of the UI itself.
+        - content:  StereoKit doesnt allow you to add, remove, or rearrange your UI from one frame to the next. 
           isCorrect: false
-          explanation: It is a Texture format used in StereoKit.
-        - content: .obj
+          explanation: You can add, remove, or completely rearrange your UI from one frame to the next using standard code structures.
+        - content: StereoKit doesn't store the state of the UI itself
           isCorrect: true
-          explanation: As it supports the Model format.
-    - content: "Which workload is not required to set up a StereoKit Ink application?"
+          explanation: StereoKit uses an Immediate Mode UI paradigm. You can change or check the state of the UI quite trivially.
+    - content: "Which of the following feature is an example of a stepper object?"
       choices:
-        - content: .NET Desktop development
+        - content: Sliders
           isCorrect: false
-          explanation: .NET is a software development framework and ecosystem designed and supported by Microsoft to allow for easy desktop and web application engineering.
-        - content: Universal Window Platform Development
+          explanation: A slider will slide between two values at increments. The function requires a reference to a float variable where the slider's state is stored. 
+        - content: Color swatches
           isCorrect: false
-          explanation: Universal Windows Platform (UWP) is a computing platform created by Microsoft and first introduced in Windows 10. The purpose of this platform is to help develop universal apps that run on Windows 10, Windows 10 Mobile, Xbox One, and HoloLens without the need to be rewritten for each.
-        - content: Mobile development with .NET (for Quest)
+          explanation: Displays a list of pre-picked color swatches. These color swatches are custom buttons.
+        - content: Radial hand menu
           isCorrect: true
-          explanation: .NET (for Quest) is a software development framework for mobile applications, whereas StereoKit Ink is a Windows PC application.
+          explanation: The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, they will have their Step method called each frame.
