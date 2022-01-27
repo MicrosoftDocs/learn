@@ -77,6 +77,6 @@ quiz:
         - content: "Messages can be sent only from the server to the clients."
           isCorrect: false
           explanation: "Incorrect. Although the server can send messages to clients, clients can also send messages to the server."
-        - content: "Both clients and server can send messages to each other (duplex communication)"
+        - content: "Both clients and the server can send messages to each other (duplex communication)."
           isCorrect: true
           explanation: "Correct! SignalR creates a duplex communication in which the server and clients can send messages to each other."
