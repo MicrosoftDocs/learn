@@ -3,7 +3,7 @@ uid: learn.languages.csharp-null-safety.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "In this introduction to C# null safety, you'll learn how to configure a nullable context. You'll also learn how to apply the null-forgiving, null-coalescing, and null-conditional operators in C#."
   ms.date: 01/27/2022
   author: IEvangelist

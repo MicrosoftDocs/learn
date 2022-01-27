@@ -3,7 +3,7 @@ uid: learn.languages.csharp-null-safety.understanding-nullability
 title: Understanding nullability
 metadata:
   unitType: learning-content
-  title: learning-content
+  title: Understanding nullability
   description: "In the understanding nullability section of the null-safety module, you'll learn the history of nullability in C#. You'll have an understanding of nullability as it relates to the various types with C#."
   ms.date: 01/27/2022
   author: IEvangelist
