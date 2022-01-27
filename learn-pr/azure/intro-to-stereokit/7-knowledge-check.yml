@@ -22,10 +22,10 @@ quiz:
         - content: "StereoKit holds a series of functions and features to promote mobile application development."
           isCorrect: false
           explanation: StereoKit prioritizes the development of Mixed Reality apps on mobile and immersive devices.
-        - content: "It is an open-source Mixed Reality framework used to develop HoloLens and VR apps with C# and OpenXR"
+        - content: "It's an open-source Mixed Reality framework used to develop HoloLens and VR apps with C# and OpenXR"
           isCorrect: true
           explanation: It is an open-source Mixed Reality framework used to develop HoloLens and VR apps with C# and OpenXR. It comes with a first-class Mixed Reality input system, excellent performance even on mobile devices. It also supports fast on-device iteration time and a runtime asset pipeline allowing users and developers to load actual files from the file system.
-    - content: "Which of the following is not a feature of StereoKit?"
+    - content: "Which of the following isn't a feature of StereoKit?"
       choices:
         - content: "Assets are loaded at compilation time."
           isCorrect: true
@@ -41,7 +41,7 @@ quiz:
         - content: The API used is really complicated.
           isCorrect: false
           explanation: The API is really simple, and StereoKit doesn't store the state of the UI itself.
-        - content:  StereoKit doesnt allow you to add, remove, or rearrange your UI from one frame to the next. 
+        - content:  StereoKit doesn't allows you to add, remove, or rearrange your UI from one frame to the next. 
           isCorrect: false
           explanation: You can add, remove, or completely rearrange your UI from one frame to the next using standard code structures.
         - content: StereoKit doesn't store the state of the UI itself
@@ -57,4 +57,4 @@ quiz:
           explanation: Displays a list of pre-picked color swatches. These color swatches are custom buttons.
         - content: Radial hand menu
           isCorrect: true
-          explanation: The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, they will have their Step method called each frame.
+          explanation: The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, they'll have their Step method called each frame.

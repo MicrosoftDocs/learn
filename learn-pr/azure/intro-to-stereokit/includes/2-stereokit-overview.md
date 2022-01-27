@@ -18,13 +18,13 @@ StereoKit has a pretty extensive list of features, but here are some highlights 
 
 * Runtime asset loading and a built-in cross-platform file picker.
 
-* Flatscreen MR simulator with input emulation for faster development.
+* Flat screen MR simulator with input emulation for faster development.
 
 * Easy and powerful UI and interactions for Mixed Reality.
 
 ## Coding in StereoKit
 
-StereoKit focuses on getting you productive with the least amount of code possible. You can do most tasks with a single line of code, including UI! So here's hello world with StereoKit. This is all you need to get up and to run!
+StereoKit focuses on getting you productive with the least amount of code possible. You can do most tasks with a single line of code, including UI. So here's hello world with StereoKit. This is all you need to get up and to run.
 
 ```c#
 using StereoKit;
@@ -46,4 +46,4 @@ class Program
 }
 ```
 
-The code above shows how easy it is to spin up StereoKit and draw a 3D model. Just initialize StereoKit, load your model from the file, and draw it every step! This simple API is easy and performant and lets you build your code the way you want to. Of course, you'll still find plenty of options to configure StereoKit, but everything is designed to work right out of the box for Mixed Reality!
+The code above shows how easy it's to spin up StereoKit and draw a 3D model. Just initialize StereoKit, load your model from the file, and draw it every step. This simple API is easy and performant and lets you build your code the way you want to. Of course, you'll still find plenty of options to configure StereoKit, but everything is designed to work right out of the box for Mixed Reality.
