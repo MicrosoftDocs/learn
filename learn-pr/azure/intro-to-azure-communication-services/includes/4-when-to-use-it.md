@@ -11,15 +11,15 @@ We'll list some criteria that will help you make the right decision.
 
 ### Existing Business/Application/Idea
 
-ACS can't create an application or business all by itself. It works best when there's an existing application with which to integrate ACS into. Or at least if an idea exists that it would make sense to create an application for. If you don't have an existing application or idea, then a different solution or product that fulfills your needs and requirements might be better.
+ACS can't create an application or business all by itself. It works best when there's an existing application with which to integrate ACS into. Or at least if an idea exists that it would make sense to create an application for. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
 
-A good example here's that you'll need an existing form of Identity solution(Log In, Log Out etc) to tie your user's identities to our identity platform. Creating calls without this is possible but users won't have a consistently defined identity.
+A good example here's that you'll need an existing form of Identity solution(Log In, Log Out etc.) to tie your user's identities to our identity platform. Creating calls without this is possible but users won't have a consistently defined identity.
 
 ### Features
 
 ACS has a wide array of features but you need to decide if these features are of use to you within your solution. Ensure that you're reviewing the list of features available and deciding if they're applicable.
 
-It's possible to mix and match ACS features and combine them with other Azure offerings. It's not required to use all of our features. You can pick and choose the areas that are of most interest to you. For example, you might need voice and video calling features but you might not need our telephony features. Your calls and contact points, could be designed to occur only digitally. Do not feel obligated to use every feature we have to offer.
+It's possible to mix and match ACS features and combine them with other Azure offerings. It's not required to use all of our features. You can pick and choose the areas that are of most interest to you. For example, you might need voice and video calling features but you might not need our telephony features. Your calls and contact points, could be designed to occur only digitally. Don't feel obligated to use every feature we have to offer.
 
 ### Environment
 
@@ -46,16 +46,16 @@ If your business/application/idea intends to use languages or surface areas/plat
 
 Some features of ACS are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in ACS' support across the world, can be caused by legal or regulatory matters or by ACS simply not supporting a region yet. When considering if ACS is right for you, ensure that you factor this into your current business as well as any potential expansion of your business. You can read about regional differences in offerings of ACS features on a variety of pages:
 
-* [Telephony/SMS regions eligibility](https://docs.microsoft.com/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
-* [Additional SMS Information](https://docs.microsoft.com/azure/communication-services/concepts/sms/sms-faq)
+* [Telephony regions eligibility](https://docs.microsoft.com/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
+* [Additional tes message information](https://docs.microsoft.com/azure/communication-services/concepts/sms/sms-faq)
 
 ## Apply the criteria
 
-Ultimately, ACS works best when you've already got existing ideas, applications and businesses that need communication features and a compatible platform or environment to launch on. As with many things there are cases where it might be difficult to decide or edge cases where, even with these criteria in mind you might want to use ACS. The decision is up to you and you may need to make a judgment call based on your individual circumstances.
+Ultimately, ACS works best when you've already got existing ideas, applications, and businesses that need communication features and a compatible platform to launch on. As with many things there are cases where it might be difficult to decide or edge cases where, even with these criteria in mind you may still use ACS. The decision is up to you and you may need to make a judgment call based on your individual circumstances.
 
 ### Applying criteria to the Example Scenario
 
-If we think back to our example scenario from earlier in the module with our fictional home appliance company, we can apply our decision criteria to their business goals and requirements:
+If we think back to our example scenario from earlier in the module with our appliance company, we can apply our decision criteria to their goals and requirements:
 
 * Their business is established and has existing websites, applications etc.
 * They're in need of calling and chat related features which ACS has.
