@@ -50,10 +50,10 @@ quiz:
       explanation: "You can assign a maximum VM size limit to the lab by using policies."
   - content: "Can you save money by using DevTest Labs to set up test environments in the cloud?"
     choices:
-    - content: "True"
+    - content: "Yes"
       isCorrect: true
       explanation: "Using test environments in the cloud with DevTest Labs has several cost advantages. For example, you can set up servers with auto-shutdown to save energy costs."
-    - content: "False"
+    - content: "No"
       isCorrect: false
       explanation: "Setting up on-premises test environments can be costly, due to long approval processes and complicated system configurations."
 
