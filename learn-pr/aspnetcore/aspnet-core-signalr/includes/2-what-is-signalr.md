@@ -1,4 +1,4 @@
-All internet-connected applications are composed of servers and clients. Clients rely on servers for data, and their primary mechanism for receiving data is through making hypertext transfer protocol (HTTP) requests. Some client applications require data that changes frequently.
+All internet-connected applications are composed of servers and clients. Clients rely on servers for data, and their primary mechanism for receiving data is through making Hypertext Transfer Protocol (HTTP) requests. Some client applications require data that changes frequently.
 
 ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPCs). RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its own client SDK. Because of this, the programming language being invoked by RPC calls varies.
 
