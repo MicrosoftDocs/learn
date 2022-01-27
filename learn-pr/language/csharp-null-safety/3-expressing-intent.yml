@@ -4,8 +4,8 @@ title: Expressing intent
 metadata:
   unitType: learning-content
   title: exercise
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 01/19/2022
+  description: "In the expressing intent section of the null-safety module, you'll learn how to express your intent. With your intent expressed, you'll learn how to use null-related operators."
+  ms.date: 01/27/2022
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial

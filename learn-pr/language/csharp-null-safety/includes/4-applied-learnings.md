@@ -182,7 +182,7 @@ There are a plethora of tactics to resolve warnings/errors related to nullabilit
     dotnet run --project src/ContosoPizza.Service/ContosoPizza.Service.csproj
     ```
 
-    The app runs to completion and displays the following output:
+    The app runs to completion (without error) and displays the following output:
 
     ```dotnetcli
     dotnet run --project src/ContosoPizza.Service/ContosoPizza.Service.csproj

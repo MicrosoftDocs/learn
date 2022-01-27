@@ -4,8 +4,8 @@ title: Applied learnings
 metadata:
   unitType: learning-content
   title: applied-learnings
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 01/19/2022
+  description: "In the applied learnings section of the null-safety module, you'll apply your learnings by refactoring a code base that has a NullReferenceException bug in it."
+  ms.date: 01/27/2022
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial

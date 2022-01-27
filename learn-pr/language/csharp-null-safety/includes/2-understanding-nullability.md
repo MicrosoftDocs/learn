@@ -135,7 +135,7 @@ Alternatively, you can scope nullable context to a C# file using a compiler dire
 #nullable enable
 ```
 
-The preceding C# compiler directive is functionally equivalent to the project configuration, but is scoped to the file in which it resides.
+The preceding C# compiler directive is functionally equivalent to the project configuration, but is scoped to the file in which it resides. For more information, see [Nullable reference types: Nullable contexts (docs)](/dotnet/csharp/nullable-references#nullable-contexts)
 
 > [!IMPORTANT]
 > The nullable context is enabled in the _.csproj_ file by default in all C# project templates starting with .NET 6.0 and greater.

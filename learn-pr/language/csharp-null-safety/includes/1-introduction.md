@@ -2,7 +2,7 @@ In this module, you'll gain an understanding of nullability in C#. You'll use nu
 
 ## Example scenario
 
-Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to maintain an existing .NET console app that's part of the order system. You've decided to enforce null safety in the app using nullable reference types.
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to maintain an existing .NET console app that's part of the ordering system. You've decided to enforce _null safety_ in the app using nullable reference types.
 
 ## Learning objectives
 
