@@ -1,4 +1,4 @@
-SAP application servers and the Central Services clusters can scale up/down or scale out by adding more instances. The AnyDB database can scale up/down but does not scale out. The SAP database container for AnyDB does not support sharding.
+SAP application servers and the Central Services clusters can scale up/down or scale out by adding more instances. The AnyDB database can scale up/down but doesn't scale out. The SAP database container for AnyDB doesn't support sharding.
 
 ## SAP HANA scale-out
 
@@ -86,9 +86,9 @@ SAP provides a formula that defines the size of the **/hana/shared** volume for 
 
 From the networking standpoint, SAP highly recommends a separation of the client/application facing traffic from the communications between the HANA nodes. This goal can be achieved by having two different vNICs attached to the VM. Both vNICs are in different subnets and have different IP addresses. You then control the flow of traffic with NSGs and user-defined routes.
 
-Azure does not offer the ability to enforce quality of service and quotas on specific vNICs. As a result, the separation of client/application facing, and intra-node communication does not provide a mechanism to prioritize one traffic stream over the other. Instead, the separation constitutes a measure of security in shielding the intra-node communications of the scale-out configurations. To optimize network performance, you should also consider the following:
+Azure doesn't offer the ability to enforce quality of service and quotas on specific vNICs. As a result, the separation of client/application facing, and intra-node communication doesn't provide a mechanism to prioritize one traffic stream over the other. Instead, the separation constitutes a measure of security in shielding the intra-node communications of the scale-out configurations. To optimize network performance, you should also consider the following:
 
- -  Since traffic to **/hana/shared** is moderate, route it through the vNIC that is assigned to the client network in the minimum configuration
+ -  Since traffic to **/hana/shared** is moderate, route it through the vNIC that is assigned to the client network in the minimum configuration.
  -  Eventually, for the traffic to **/hana/shared**, create a third subnet in the VNet hosting the SAP HANA scale-out configuration and assign a third vNIC that is hosted in that subnet. Use the third vNIC and associated IP address for the traffic to the NFS share. You then can apply separate access and routing rules.
 
 If you want to share the highly available NFS cluster between SAP HANA configurations, move all those HANA configurations into the same VNet.
