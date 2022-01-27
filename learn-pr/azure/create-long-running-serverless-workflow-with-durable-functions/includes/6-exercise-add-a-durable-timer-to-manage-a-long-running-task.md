@@ -162,7 +162,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
+1. Wait for 20 seconds and refresh the browser window. The timeout will have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
 
     ```json
     {
