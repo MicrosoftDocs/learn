@@ -15,7 +15,7 @@ There are a range of tools and services that can help you plan and complete the 
 | Azure Cost Management| Optimize| Helps you monitor, optimize, and control your ongoing Azure costs. |
 | Azure Advisor| Optimize| Helps optimize your Azure resources for reliability, performance, cost, security, and operational excellence. |
 | Azure Monitor| Monitor| Collects monitoring telemetry from both on-premises and Azure resources. Enables you to analyze data, setup alerts, and identify problems. |
-| Azure Sentinel| Monitor| Provides intelligent security analytics for your applications enabling you to collect, detect, investigate, and respond to incidents. |
+| Microsoft Sentinel| Monitor| Provides intelligent security analytics for your applications enabling you to collect, detect, investigate, and respond to incidents. |
 
 
 ### Assess your environment
