@@ -1,8 +1,8 @@
-Communication is of ever growing importance within our modern world and keeping connected to your customers is of vital to the success of your business. Building communication solutions that are able to keep up with this and your customers is challenging. Azure Communication Services(ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure.
+Communication is of ever growing importance within our modern world. Keeping connected to your customers is of vital to the success of your business. Building communication solutions that are able to keep up with this and your customers is challenging. Azure Communication Services(ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure.
 
 ## Example scenario
 
-Let's start with an example scenario that will help you understand the potential of ACS. Imagine you work on the engineering/product team of a household appliance producer which offers many appliances for the household such as refrigerators, washers and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. You and your team have been tasked to fix this issue. The team has come up with some ideas and features such as:
+Let's start with an example scenario that will help you understand the potential of ACS. Imagine you work on the engineering/product team of a household appliance producer which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. You and your team have been tasked to fix this issue. The team has come up with some ideas and features such as:
 
 - Live Chat on the website
 - Video support and maintenance calls
@@ -20,9 +20,9 @@ TODO: add your image
 In this module, you'll:
 
 - Discover the various component parts of Azure Communication Services.
-- Learn how they can be used to solve communication related scenarios ,such as the one above.
+- Learn how they can be used to solve communication-related scenarios, such as the one above.
 - Learn how to evaluate if ACS is the right solution for your communication problems.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to evaluate ACS for its suitability to make sure its the right choice for your business.
+By the end of this session, you'll be able to evaluate ACS for its suitability to make sure it is the right choice for your business.
