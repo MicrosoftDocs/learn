@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.optimize-data-loading-preprocessing
+title: Optimize data loading and preprocessing in Azure Machine Learning
+metadata:
+  title: Optimize data loading and preprocessing in Azure Machine Learning
+  description: "Optimize data loading and preprocessing in Azure Machine Learning"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-optimize-data-loading-preprocessing.md)]
