@@ -3,23 +3,23 @@ uid: learn.aspnet-core-signalr-polling-fix
 metadata:
   moduleType: standard
   title: Replace client-side polling with ASP.NET Core SignalR
-  description: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in an existing web app.
+  description: In this module, you'll use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-aspnetcore
 title: Replace client-side polling with ASP.NET Core SignalR
-summary: In this module you'll use ASP.NET Core SignalR to replace existing client-side polling functionality in an existing web app.
+summary: In this module, you'll use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
 abstract: |
   By the end of this module, you'll be able to:
   - Identify opportunities to use ASP.NET Core SignalR.
   - Evaluate code changes as part of refactoring to ASP.NET Core SignalR.
     - Implement refactoring of existing code.
-    - Validate code changes are functionally equivalent.
+    - Validate that code changes are functionally equivalent.
   - Realize the benefits associated with using ASP.NET Core SignalR as an alternative to client-side polling.
 prerequisites: |
-  - Ability to clone GitHub repository.
+  - Ability to clone a GitHub repository.
   - Familiarity with ASP.NET Core Blazor web apps.
   - .NET SDK 5 or later.
     - Intermediate knowledge of .NET.
