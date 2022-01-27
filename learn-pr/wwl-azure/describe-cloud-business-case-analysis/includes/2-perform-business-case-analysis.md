@@ -4,7 +4,7 @@
 :::row:::
     :::column span="":::
 
-        :::image type="content" source="../media/business-case-analysis-guidebook-2011.png" border="false" alt-text="DoD business case analysis Guidebook cover page":::
+        :::image type="content" source="../media/business-case-analysis-guidebook-2011-300w.png" border="false" alt-text="DoD business case analysis Guidebook cover page" border="false" lightbox="../media/business-case-analysis-guidebook-2011-1400w.png":::
 
     :::column-end:::
     :::column span="":::

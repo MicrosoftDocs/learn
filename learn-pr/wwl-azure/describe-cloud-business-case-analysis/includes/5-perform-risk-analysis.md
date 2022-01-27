@@ -2,7 +2,7 @@ One of the components of a Business Case Analysis is a risk analysis. Agencies h
 
 As part of a Business Case Analysis, the Department of Defense requires the completion of a risk assessment and analysis on the basis of cost, schedule, and performance.
 
-:::image type="content" source="../media/risk-reporting-matrix.png" alt-text="Risk Reporting matrix":::
+:::image type="content" source="../media/risk-reporting-matrix-900w.png" alt-text="Risk Reporting matrix" border="false" lightbox="../media/risk-reporting-matrix-1400w.png":::
 
 ## Examples of risk
 

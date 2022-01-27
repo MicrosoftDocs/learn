@@ -1,6 +1,6 @@
 A non-financial operational benefit, or "NFO", is an advantage provided by the implementation of a technology or approach that improves a system in a means other than purely cost.
 
-:::image type="content" source="../media/analysis-alternatives.png" alt-text="Analysis of Alternatives grid":::
+:::image type="content" source="../media/key-non-financial-measures-900w.png" alt-text="Analysis of Alternatives grid" border="false" lightbox="../media/key-non-financial-measures-1400w.png":::
 
 Alternatives are examined to determine whether or not they exceed the requirements, meet requirements, or are not acceptable to meeting requirements.
 

@@ -3,9 +3,11 @@ Some agencies require the completion of an Analysis of Alternatives (AoA) as par
 > [!TIP]
 > An Analysis of Alternatives (AoA) is a great way to determine which U.S. Sovereign Cloud environment is best suited for your workload(s).
 
-:::image type="content" source="../media/analysis-alternatives.png" alt-text="Analysis of Alternatives grid":::
+:::image type="content" source="../media/analysis-of-alternatives-900w.png" alt-text="Analysis of Alternatives grid" border="false" lightbox="../media/analysis-of-alternatives-1400w.png":::
 
 ## Key financial measures
+
+:::image type="content" source="../media/key-financial-measures-900w.png" alt-text="Analysis of Alternatives grid" border="false" lightbox="../media/key-financial-measures-1400w.png":::
 
 An Analysis of Alternatives also allows you to address both financial and non-financial measures across different solutions.
 
