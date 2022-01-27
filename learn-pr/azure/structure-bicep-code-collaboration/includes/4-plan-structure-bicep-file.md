@@ -6,13 +6,13 @@ Your Bicep templates can contain many elements, including parameters, variables,
 
 There are two main approaches to ordering your code:
 * Group elements by element type
-* Group elements by resource 
+* Group elements by resource
 
 You and your team should agree on one and use it consistently.
 
 ### Group elements by element type
 
-You can group all elements of the same type together. So, all your parameters would go in one place, usually at the top of the file. Variables come next, followed by resources and modules, and outputs are at the bottom. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account. 
+You can group all elements of the same type together. So, all your parameters would go in one place, usually at the top of the file. Variables come next, followed by resources and modules, and outputs are at the bottom. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account.
 
 When you group your elements by type, they might look like this:
 
@@ -23,7 +23,7 @@ When you group your elements by type, they might look like this:
 
 This ordering makes sense when you're used to other infrastructure as code languages (for example, the language in Azure Resource Manager templates). It also can make your template easy to understand, because it's clear where to look for specific types of elements. In longer templates, though, it can be challenging to navigate and jump between the elements.
 
-You still have to decide how to order the elements within these categories. It's a good idea to group related parameters together. For example, all parameters that are about a storage account belong together and, within that, the storage account's SKU parameters belong together. 
+You still have to decide how to order the elements within these categories. It's a good idea to group related parameters together. For example, all parameters that are about a storage account belong together and, within that, the storage account's SKU parameters belong together.
 
 Similarly, you can group related resources together. Doing so helps anyone who uses your template to quickly navigate it, and to understand the important parts of the template.
 
@@ -78,12 +78,29 @@ When you do hard-code values, it's good to make sure that they're understandable
 
 For some resource properties, to construct values automatically, you need to create complex expressions that include functions and string interpolation. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks.
 
+> [!TIP]
+> When creating outputs, try to use resource properties wherever you can. Avoid incorporating your own assumptions about how resources work, because these assumptions might change over time.
+>
+> For example, if you need to output the URL of an App Service app, avoid constructing a URL:
+>
+> ```bicep
+> output hostname string = '${app.name}.azurewebsites.net'
+> ```
+>
+> The above approach will break if App Service changes the way they assign hostnames to apps, or if you deploy to Azure environments that use different URLs.
+>
+> Instead, use the `defaultHostname` property of the app resource:
+>
+> ```bicep
+> output hostname string = app.properties.defaultHostname
+> ```
+
 ## How do you use version control effectively?
 
 Version control systems such as Git can help simplify your work when you're refactoring code.
 
 Because version control systems are designed to keep track of the changes to your files, you can use them to easily return to an older version of your code if you make a mistake. It's a good idea to commit your work often so that you can go back to the exact point in time that you need.
 
-Version control also helps you to remove old code from your Bicep files. What if your Bicep code includes a resource definition that you don't need anymore? You might need the definition again in the future, and it's tempting to simply comment it out and keep it in the file. But really, keeping it there only clutters up your Bicep file, making it hard for others to understand why the commented-out resources are still there. 
+Version control also helps you to remove old code from your Bicep files. What if your Bicep code includes a resource definition that you don't need anymore? You might need the definition again in the future, and it's tempting to simply comment it out and keep it in the file. But really, keeping it there only clutters up your Bicep file, making it hard for others to understand why the commented-out resources are still there.
 
 Another consideration is that it's possible for someone to accidentally uncomment the definition, with unpredictable or potentially adverse results. When you use a version control system, you can simply remove the old resource definition. If you need the definition again in the future, you can retrieve it from the file history.
