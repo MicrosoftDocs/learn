@@ -15,7 +15,7 @@ RAPIDS is a machine-learning framework created by NVIDIA. You can use the RAPIDS
 
 Here, we'll focus on data loading and preprocessing with RAPIDS cuDF.
 
-> [!Note]
+> [!NOTE]
 > To learn more about how to use RAPIDS for machine learning, graph analytics and visualization, go to the [RAPIDS Docs](https://docs.rapids.ai/api).
 
 ### cuDF
@@ -44,7 +44,7 @@ flight_data = cudf.read_csv(csvfile)
 
 After you loaded the data, you may want to process it to prepare it for model training. Let's look at some data manipulations we can do with cuDF.
 
-> [!Tip]
+> [!TIP]
 > When working with data, use the [cuDF documentation](https://docs.rapids.ai/api/cudf/stable/) to find the methods you need.
 
 For example, working for the air carrier company you've received all the flight data. The data includes where and when an airplane took off, and where and when it landed. The values for the origin and destination of a flight are the codes of the airports they visited. 
@@ -76,5 +76,5 @@ data = data.dropna()
 
 For data scientists working with pandas, cuDF is a familiar approach to data processing that is compatible with GPU and will allow you to process data much faster.
 
-> [!Tip]
+> [!TIP]
 > If you want to improve performance even more, learn about [multi-GPU processing with Dask](https://docs.rapids.ai/api/cudf/stable/basics/dask-cudf.html).

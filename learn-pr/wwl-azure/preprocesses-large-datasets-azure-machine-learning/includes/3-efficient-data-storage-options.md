@@ -16,7 +16,7 @@ Compared to an Azure Blob Storage, the Azure Data Lake Gen2 provides a **hierarc
 
 With the hierarchical namespace, you can use a nested folder structure to optimize listing operations. Next to better scalability and performance, structuring your files like this will also allow for fine-granular access. 
 
-> [!Tip]
+> [!TIP]
 > Learn more about [the capabilities of Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction).
 
 ### Use a nested folder structure
@@ -40,5 +40,5 @@ When working with data in Azure Machine Learning, you can either download or mou
 - Download the data if you estimate the dataset will fit onto the virtual machine's disk.
 - Mount the data if you expect the dataset to be too large to be downloaded on to the disk.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to work with Azure Machine Learning datasets](/azure/machine-learning/how-to-train-with-datasets).

@@ -32,7 +32,7 @@ Some examples of what deep learning can be used for:
 - **Voice recognition**: transcribe speech to text and identify the individual speaker.
 - **Real-time language translation**: translate text in real time for automatic subtitles.
 
-> [!Note]
+> [!NOTE]
 > If you're new to deep learning, explore it in more depth by going through Microsoft's learn module about how to [train and evaluate deep learning models](/learn/modules/train-evaluate-deep-learn-models/) and NVIDIA's course on [building a brain in 10 minutes](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-01+V1/about).
 
 Whether working with machine learning or deep learning algorithms, it's important to have a good *quality* dataset to improve your model's performance. Next to quality, data scientists also strive for large datasets as more data *can* result in a more representative model. 
@@ -45,7 +45,7 @@ Azure Machine Learning supports the use of both CPU, and GPU virtual machines wh
 
 For standard workloads, a CPU virtual machine type is likely to be sufficient. For example, if you have a small dataset and you want to manipulate the data with the *pandas* library, use CPU. 
 
-> [!Note]
+> [!NOTE]
 > Some frameworks and libraries only work with either CPU or GPU compute. Be aware of the restrictions of the framework or library you want to work with to avoid paying for unused resources. For example, *scikit-learn* is only compatible with CPU compute.
 
 Alternatively, GPU-optimized compute is more powerful, which results in faster processing. The performance GPU offers however, comes at a larger cost. If you want to train a deep learning model with the *TensorFlow* or *PyTorch* library, for example, you’ll need GPU compute to do it efficiently.
@@ -57,5 +57,5 @@ Whether you should use GPU instead of CPU compute depends on the data you work w
 
 Whenever CPUs appear to increase the processing time significantly, GPUs can minimize costs by running the workload in a fraction of the time. 
 
-> [!Tip]
+> [!TIP]
 > Learn more about [GPU optimized virtual machine sizes](/azure/virtual-machines/sizes-gpu).
