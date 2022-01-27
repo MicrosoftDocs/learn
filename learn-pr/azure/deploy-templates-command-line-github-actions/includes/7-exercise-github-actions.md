@@ -196,7 +196,7 @@ You can create a workflow file and then push/upload the file to the repository. 
               scope: resourcegroup
               subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
               resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-              template: ./path-to/azuredeploy.json
+              template: ./azuredeploy.json
     ```
 
     The workflow file has three sections:

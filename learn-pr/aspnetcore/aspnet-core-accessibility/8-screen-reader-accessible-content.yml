@@ -2,7 +2,7 @@
 uid: learn.languages.aspnetcore-accessibility.8-screen-reader-accessible-content
 metadata:
   title: Find and fix screen reader accessibility issues
-  description: Find and fix screen reader accessibility issues
+  description: Find and fix accessibility issues for screen readers.
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow
@@ -16,14 +16,14 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "What alt text should I use for a purely decorative image?"
+    - content: "What alt text should you use for a purely decorative image?"
       choices:
-      - content: "You should describe the decoration."
+      - content: "Describe the decoration."
         isCorrect: false
-        explanation: "This is not correct. Decorative images should not be described."
-      - content: "The alt text should be a GUID."
+        explanation: "Decorative images should not be described."
+      - content: "Use a GUID."
         isCorrect: false
-        explanation: "Do not use GUIDs for alt text."
-      - content: "Use alt=\u0022\u0022"
+        explanation: "Don't use GUIDs for alt text."
+      - content: "Use `alt=\u0022\u0022`."
         isCorrect: true
-        explanation: "Correct, you should use a blank alt value for decorative images"
+        explanation: "Correct. You should use a blank `alt` value for decorative images."

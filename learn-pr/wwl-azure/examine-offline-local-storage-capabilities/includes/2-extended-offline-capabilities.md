@@ -31,7 +31,7 @@ The following sections provide examples of how you can declare the parent/child 
 
 You can declare the parent-child relationship when creating a new device. Or for existing devices, you can declare the relationship from the device details page of either the parent IoT Edge device or the child IoT device.
 
-:::image type="content" source="../media/m06-l03-edge-gateway-manage-child-devices-b7de833f.png" alt-text="Screen shot that shows how to configure the child devices of an Edge gateway from the device details page of the gateway device.":::
+:::image type="content" source="../media/m06-l03-edge-gateway-manage-child-devices-b7de833f.png" alt-text="Screenshot that shows how to configure the child devices of an Edge gateway from the device details page of the gateway device.":::
 
 
 #### Option 2: Use the az command-line tool

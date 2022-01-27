@@ -10744,6 +10744,26 @@
       "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-azure-databricks-other-azure-services/4-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-monitoring-requirements-of-azure-for-sap-workloads/4-explore-azure-vm-monitoring-considerations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-monitoring-requirements-of-azure-for-sap-workloads/4-explore-azure-virtual-machine-monitoring-considerations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2a-understand-index-schema.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2b-use-indexer-to-build-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search/2d-use-indexer-to-build-index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/4-index-data-with-azure-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-search",
+      "redirect_document_id": false
     }
   ]
 }

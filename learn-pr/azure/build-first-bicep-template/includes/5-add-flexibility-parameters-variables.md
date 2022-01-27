@@ -177,7 +177,7 @@ Next, you can create variables that determine the SKUs to use for the storage ac
 
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 ```
 
 Notice some new syntax here too. Let's break it down:
@@ -188,7 +188,7 @@ Notice some new syntax here too. Let's break it down:
 These rules can be translated to:
 
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `Standard_GRS` SKU. Otherwise, use the `Standard_LRS` SKU.
-- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2_v3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
+- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2V3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
 
 > [!TIP]
 > When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, because it avoids cluttering your resource definitions with logic.

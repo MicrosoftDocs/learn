@@ -48,7 +48,7 @@ To build your code, you'll use g++. Building your code produces an executable, w
    You should now see *a.out* as one of the files as shown in the following output example. *a.out* is the file the g++ compiler created for you.
 
    ```output
-   PS /home/user> ls
+   <user>@Azure:~$ ls
    a.out  clouddrive  hello.cpp
    ```
 

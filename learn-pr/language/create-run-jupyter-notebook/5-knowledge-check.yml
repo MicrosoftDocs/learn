@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-run-jupyter-notebook.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your understanding of Jupyter notebooks
+  description: Knowledge check on Jupyter notebooks.
+  ms.date: 12/02/2021
+  author: jlooper
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What file extension does a Jupyter notebook have?"
+    choices:
+    - content: ".ipynb"
+      isCorrect: true
+      explanation: "Correct. The .ipynb file extension refers to *iPython Notebook*, now called a Jupyter notebook."
+    - content: ".opynb"
+      isCorrect: false
+      explanation: "Incorrect. .opynb isn't the file extension that's used for Jupyter notebooks."
+    - content: ".epynb"
+      isCorrect: false
+      explanation: "Incorrect. .epynb isn't the file extension that's used for Jupyter notebooks."
+  - content: "Which of the following answers include types of elements in an interactive notebook?"
+    choices:
+    - content: "Equations and UI elements."
+      isCorrect: false
+      explanation: "Although this answer is true, it's not the only correct answer."
+    - content: "Charts and graphs."
+      isCorrect: false
+      explanation: "Although this answer is true, it's not the only correct answer."
+    - content: "Both of the above."
+      isCorrect: true
+      explanation: "Correct. In addition to many other elements, equations, UI elements, charts, and graphs are types of elements in an interactive notebook."
+  - content: "Which of the following types of content blocks are available in a Jupyter notebook?"
+    choices:
+    - content: "HTML"
+      isCorrect: false
+      explanation: "Incorrect, although you can run HTML in a Markdown block."
+    - content: "PDF"
+      isCorrect: false
+      explanation: "Incorrect. You can't create PDF files in a notebook, although you can export your notebook as a PDF file by using some libraries."
+    - content: "Markdown"
+      isCorrect: true
+      explanation: "Correct. You can use a Markdown content block in a Jupyter notebook."

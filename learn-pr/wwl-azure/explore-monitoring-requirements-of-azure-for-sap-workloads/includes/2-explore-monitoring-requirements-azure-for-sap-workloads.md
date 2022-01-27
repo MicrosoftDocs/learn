@@ -1,11 +1,11 @@
 As per [SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553), "for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure." Therefore, you must set up every Azure instance that hosts SAP software and related DBMS systems such that:
 
- -  The Azure Monitoring Extension for SAP is deployed and correctly configured.
- -  Data from the Azure Monitoring Extension for SAP is visible in the SAP NetWeaver system.
+ -  The Azure Extension for SAP is deployed and correctly configured.
+ -  Data from the Azure Extension for SAP is visible in the SAP NetWeaver system.
 
-Make sure that the following Azure Monitoring Extension for SAP technical requirements are met:
+Make sure that the following Azure Extension for SAP technical requirements are met:
 
- -  The Azure virtual machine instance requires an active route to the internet to be able to access the Azure Extension Pool. This might require setting Internet proxies for the virtual machine instance before deploying the Azure Virtual Machine Extension for SAP.
+ -  The Azure virtual machine instance requires an active route to the internet to be able to access the Azure Extension Pool. This might require setting Internet proxies for the virtual machine instance before deploying the Azure Extension for SAP.
  -  SAP Enhanced Monitoring is deployed. To include Azure performance counters in SAP Enhanced Monitoring, SAP has enhanced the SAP Host Agent and its monitoring transaction ST06. Therefore, check the configuration, the required versions, and minimum support package levels, as described in the following SAP Notes:
     
      -  **Windows**: [SAP Note \#1409604](https://launchpad.support.sap.com/#/notes/1409604)

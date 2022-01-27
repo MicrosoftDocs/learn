@@ -3,7 +3,7 @@ uid: learn.wwl.develop-for-storage-cdns
 metadata:
   title: Develop for storage on CDNs
   description: "Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET."
-  ms.date: 11/16/2021
+  ms.date: 01/27/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cdn-develop-storage.svg
 levels:
 - intermediate
 roles:
