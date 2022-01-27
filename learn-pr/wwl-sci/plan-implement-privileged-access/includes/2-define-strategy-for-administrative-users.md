@@ -1,30 +1,30 @@
 ## What is Privileged identity management (PIM)?
 
-PIM is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
+PIM is a service in Azure Active Directory (Azure AD) for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
 
 ## What does PIM do?
 
-PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
+PIM provides time-based and approval-based role activation to access resources. This helps to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
 
  -  Provide just-in-time privileged access to Azure AD and Azure resources
  -  Assign time-bound access to resources using start and end dates
  -  Require approval to activate privileged roles
- -  Enforce multifactor authentication to activate any role
+ -  Enforce multi-factor authentication to activate any role
  -  Use justification to understand why users activate
  -  Get notifications when privileged roles are activated
  -  Conduct access reviews to ensure users still need roles
  -  Download audit history for internal or external audit
 
-Before you deploy PIM in your organization, follow the instructions and understand the concepts in this section to help you create a plan tailored to your organization’s privileged identity requirements.
+Before you deploy PIM in your organization, follow the instructions and understand the concepts in this section. This will help you create a plan tailored to your organization’s privileged identity requirements.
 
 > [!NOTE]
 > PIM requires a Premium P2 license.
 
 ## Identify your stakeholders
 
-The following section helps you identify all the stakeholders who are involved in the project and need to sign off, review, or stay informed. It includes separate tables for deploying PIM for Azure AD roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
+The following section helps you identify all the stakeholders who are involved in the project. You will look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Azure AD roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
 
-SO = Sign off on this project
+SO = Approval on this project
 
 R = Review this project and provide input
 
@@ -73,7 +73,7 @@ A representative from the IT owners of a service or a group of services. They're
   :::column-end:::
   :::column:::
     **Security owner**
-A representative from the security team who can sign off that the plan meets the security requirements of your organization.
+A representative from the security team who can approve that the plan meets the security requirements of your organization.
   :::column-end:::
   :::column:::
     SO/R
@@ -136,7 +136,7 @@ A representative from the IT owners of each subscription or resource that you wa
   :::column-end:::
   :::column:::
     **Security owner**
-A representative from the security team that can sign off that the plan meets the security requirements of your organization.
+A representative from the security team that can approve that the plan meets the security requirements of your organization.
   :::column-end:::
   :::column:::
     SO/R
@@ -214,7 +214,7 @@ Users with the Owner role for an Azure subscription can also use [access reviews
 
 After cleaning up privileged role assignments in your organization, you'll need to decide which roles to protect with PIM.
 
-If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using multifactor authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
+If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using multi-factor authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
 
 Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Azure AD and Azure roles.
 
@@ -259,7 +259,7 @@ If you're a Global Administrator having trouble deciding which subscriptions and
 
 PIM for Azure resources supports time-bound service accounts. You should treat service accounts exactly the same as you would treat a regular user account.
 
-For subscriptions/resources that are not as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
+For subscriptions/resources that aren't as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
 
 > [!TIP]
 > Microsoft recommends that you manage Owner roles and User Access Administrator roles of all subscriptions/resources using PIM.
@@ -288,7 +288,7 @@ Once you have decided the list of roles to be managed by PIM, you must decide wh
 
 Microsoft recommends you have zero permanently active assignments for both Azure AD roles and Azure roles other than the recommended [two break-glass emergency access accounts](/azure/active-directory/roles/security-emergency-access), which should have the permanent Global Administrator role.
 
-Even though we recommend zero standing administrators, it is sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
+Even though we recommend zero standing-administrators, it is sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
 
  -  Frequency of elevation – If the user only needs the privileged assignment once, they shouldn’t have the permanent assignment. On the other hand, if the user needs the role for their day-to-day job and using PIM would greatly reduce their productivity, they can be considered for the permanent role.
  -  Cases specific to your organization – If the person being given the eligible role is from a distant team or a high-ranking executive to the point that communicating and enforcing the elevation process is difficult, they can be considered for the permanent role.
@@ -547,7 +547,7 @@ The following table describes each of the settings.
     Role
   :::column-end:::
   :::column:::
-    Name of the role you are defining the settings for.
+    Name of the role you're defining the settings for.
   :::column-end:::
 :::row-end:::
 :::row:::
