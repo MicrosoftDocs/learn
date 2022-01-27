@@ -1,14 +1,14 @@
 Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Microsoft Defender for Cloud, have onboarded to Azure Monitor and are producing relevant security logs.
 
-The integration process has also been simplified with key capabilities like security information and event management (SIEM) tools, such as routing data to a single event hub and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
+The integration process has also been simplified with key capabilities like security information and event management (SIEM) tools, such as routing data to a single Azure Event Hubs and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
 
-Azure has also partnered with the top SIEM partners to build connectors that get the data from Azure Monitor into those tools. These connectors consume data routed to Azure Event Hubs by Azure Monitor—a simple, scalable, and manageable approach for delivering log data to an external application, and Microsoft’s recommended approach for integrating Azure with SIEM tools going forward.
+Azure has also partnered with the top SIEM partners to build connectors that get the data from Azure Monitor into those tools. These connectors consume data routed to Azure Event Hubs by Azure Monitor – a simple, scalable, and manageable approach for delivering log data to an external application, and the Microsoft recommended approach for integrating Azure with SIEM tools going forward.
 
 We’ve continued to support customers who are using the Azure Log Integration tool (AzLog) to integrate with these same SIEMs. AzLog was initially released to help customers navigate the complex process of consolidating, translating, and forwarding logs from a variety of Azure services to a SIEM tool. At the time, Azure Monitor didn’t exist, and there was very little standardization in terms of how Azure services exposed log data to customers. Some dumped data into a storage account, others exposed an API, etc.
 
 ## Integration recommendations
 
-The table below indicates what you should do based on the SIEM tool(s) you are using and your current integration status. Only SIEM tools that were officially supported by AzLog are included below.
+The table below indicates what you should do based on the SIEM tool(s) you're using and your current integration status. Only SIEM tools that were officially supported by AzLog are included below.
 
 :::row:::
   :::column:::
@@ -37,10 +37,10 @@ The table below indicates what you should do based on the SIEM tool(s) you are u
     **IBM QRadar**
   :::column-end:::
   :::column:::
-    Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website.
+    Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website.
   :::column-end:::
   :::column:::
-    Use the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website. You can learn more about the integration with Azure.
+    Use the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. You can learn more about the integration with Azure.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -62,7 +62,7 @@ Today, Azure Monitor’s SIEM integration capabilities can’t do everything the
 
 **Azure Active Directory logs** – Azure Active Directory logs are the only log type directly integrated with AzLog that aren’t yet available in Azure Monitor.
 
-**Integrate Azure VM logs** – AzLog provided the option to integrate your Azure VM guest operating system logs (e.g., Windows Security Events) with select SIEMs. Azure Monitor has agents available for Linux and Windows that are capable of routing OS logs to an event hub, but end-to-end integration with SIEMs is nontrivial.
+**Integrate Azure VM logs** – AzLog provided the option to integrate your Azure VM guest operating system logs (e.g., Windows Security Events) with select SIEMs. Azure Monitor has agents available for Linux and Windows that are capable of routing OS logs to an Azure Event Hubs, but end-to-end integration with SIEMs is nontrivial.
 
 **End-to-end setup** – AzLog has a script that automates the end-to-end setup of log sources. While Azure Monitor offers the ability to script out creation of diagnostic settings, we’re partnering with the Azure Policy team to deliver seamless enablement via Resource Manager policies that ensure log data is being routed from all sources.
 
