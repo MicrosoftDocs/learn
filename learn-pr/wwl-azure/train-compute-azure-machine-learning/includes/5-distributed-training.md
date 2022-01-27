@@ -28,5 +28,5 @@ Azure Machine Learning supports many frameworks that help you to set up multi-GP
 - **Horovod**: Focuses on infrastructure management to run distributed training of deep learning models with data parallelism. Also used for model parallelism, which needs to be configured with PyTorch, TensorFlow, or Keras.
 - **DeepSpeed**: Enables data and model parallelism, as well as 3D parallelism (data parallelism, model parallelism, and pipeline parallelism) with the **Zero Redundancy Optimizer** (**ZeRO**). Includes a wide array of distributed training features to fit your requirements best.
 
-> [!Tip]
+> [!TIP]
 > Examples for distributed training in Azure Machine Learning can be found on Github. For example, explore the example of [TensorFlow distributed training using Horovod](https://github.com/Azure/azureml-examples/tree/main/python-sdk/workflows/train/tensorflow/mnist-distributed-horovod), [distributed training with PyTorch](https://github.com/Azure/azureml-examples/tree/main/python-sdk/workflows/train/pytorch/cifar-distributed), or of [distributed training with DeepSpeed on CIFAR-10](https://github.com/Azure/azureml-examples/tree/main/python-sdk/workflows/train/deepspeed/cifar).

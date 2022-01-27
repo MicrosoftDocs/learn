@@ -27,7 +27,7 @@ Be mindful with testing: when you want to use GPU compute, you're likely to use 
 
 Per workspace, there are limits to how much compute can be created. Next to that, your organization may have configured quotas on your workspace. You can request limits and quotas to be increased. Still, it's a good practice to check the available compute types and number of cores before you decide on how to train your model. 
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to manage quotas for Azure Machine Learning](/azure/machine-learning/how-to-manage-quotas)
 
 ### Choose the appropriate framework
@@ -41,7 +41,7 @@ Let's take the example of the insurance company again. You want to train a deep 
 
 Which of these libraries you use depends on your preference. Assuming you'll train a deep learning model for the first time, you may find PyTorch easier to work with when you use Azure Machine Learning. Both of these frameworks work well with GPUs and support distributed training.
 
-> [!Important]
+> [!IMPORTANT]
 > To use a framework like PyTorch or TensorFlow, the necessary software dependencies need to be installed on the compute. To easily create and manage the dependencies across different compute targets, [use Azure Machine Learning **environments**](/azure/machine-learning/how-to-use-environments). Curated environments exist for both frameworks, or you can create your own custom environment to include the necessary packages. 
 
 ### Track metrics and models
@@ -54,5 +54,5 @@ To track your experiment runs with MLflow:
 2. Import `mlflow` in your training script. 
 3. Log any parameters, metrics, and models that you want to retrieve after a run has successfully executed.
 
-> [!Tip]
+> [!TIP]
 > Learn more about [how to track experiments with MLflow](/azure/machine-learning/how-to-use-mlflow)

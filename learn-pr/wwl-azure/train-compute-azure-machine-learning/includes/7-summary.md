@@ -7,5 +7,5 @@ In this module, you learned:
 Continue learning:
 
 - [Join the NVIDIA Developer Program and access free SDKs, technical documentation, and peer and domain expert help.](http://developer.nvidia.com/join)
-- [Explore self-paced courses and instructor-led trainings from the NVIDIA Deep Learning Institute](www.nvidia.com/dli)
+- [Explore self-paced courses and instructor-led trainings from the NVIDIA Deep Learning Institute](https://www.nvidia.com/dli)
 

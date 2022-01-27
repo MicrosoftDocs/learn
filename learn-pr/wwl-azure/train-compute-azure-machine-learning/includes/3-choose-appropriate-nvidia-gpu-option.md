@@ -20,7 +20,7 @@ The most common GPU programming interface is **CUDA** (Compute Unified Device Ar
 
 When using frameworks or libraries that are designed to use GPUs, make sure you choose the appropriate GPU type. For example, if you use RAPIDs to process large amounts of data, you need to create a Tesla V100 GPU compute.
 
-> [!Tip]
+> [!TIP]
 > Explore [the overview of curated environments](/azure/machine-learning/resource-curated-environments) to find the environment that you need.
 
 ## Decide which GPU type to use
@@ -34,23 +34,23 @@ To decide which compute to use for a job, think about the following factors:
 
 ## Monitor to find optimal configuration
 
- The only reliable way to find the optimal compute configuration is to run the workload and monitor the results. 
+The only reliable way to find the optimal compute configuration is to run the workload and monitor the results. 
 
- There are a wide range of command-line tools available to monitor how your GPU compute is performing. One of the most common command-line tools is the **NVIDIA System Management Interface (nvidia-smi)**, which can run at a defined interval. 
+There are a wide range of command-line tools available to monitor how your GPU compute is performing. One of the most common command-line tools is the **NVIDIA System Management Interface (nvidia-smi)**, which can run at a defined interval. 
 
- ![Example nvidia-smi log](../media/01-monitor-cli.png)
+![Example nvidia-smi log](../media/01-monitor-cli.png)
 
- > [!Tip]
- > Learn more about [how to use nvidia-smi to monitor your GPU compute](https://developer.nvidia.com/nvidia-system-management-interface).
+> [!TIP]
+> Learn more about [how to use nvidia-smi to monitor your GPU compute](https://developer.nvidia.com/nvidia-system-management-interface).
 
- To monitor the GPU consumption of an Azure Machine Learning compute cluster, you can use the **Azure Monitor**. An easy way to access it is through the Azure portal:
+To monitor the GPU consumption of an Azure Machine Learning compute cluster, you can use the **Azure Monitor**. An easy way to access it is through the Azure portal:
 
- 1. Navigate to [https://portal.azure.com](https://portal.azure.com). 
- 2. Go to your Azure Machine Learning resource.
- 3. Under **Monitoring**, select **Metrics**.
- 4. Create a new chart and explore the metrics for GPU utilization.
+1. Navigate to [https://portal.azure.com](https://portal.azure.com). 
+2. Go to your Azure Machine Learning resource.
+3. Under **Monitoring**, select **Metrics**.
+4. Create a new chart and explore the metrics for GPU utilization.
 
- ![Azure Monitor for GPU utilization](../media/02-02-monitor-azure.png)
+![Azure Monitor for GPU utilization](../media/02-02-monitor-azure.png)
 
 Within the Azure Machine Learning Studio, it's also possible to monitor the GPU usage for specific runs. 
 
