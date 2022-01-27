@@ -9,7 +9,7 @@ metadata:
   ms.author: paplavet
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Scale container applications in Azure Kubernetes Services (AKS) using KEDA
+title: Scale container applications in Azure Kubernetes Services using KEDA
 summary: Scale a containerized application hosted on Azure Kubernetes Services (AKS) using event driven scaling using KEDA.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to:
@@ -18,7 +18,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Deploy and configure a built-in KEDA scaler
     - Understand K8S scaling options including KEDA, Cluster Autoscaling (CA), and Horizontal Pod Autoscaling (HPA)
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - An Azure Subscription
+  - An Azure subscription
   - Ability to use the Azure CLI
   - Ability to run and exec into a Docker container
   - Ability to navigate the Azure portal

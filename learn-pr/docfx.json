@@ -111,19 +111,6 @@
                 "dest": "modules"
             },
             {
-                "src": "beginner-python",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
-            },           
-            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -584,7 +571,7 @@
                 "dest": "modules"
             },
             {
-                "src": "beginner-python",
+                "src": "language",
                 "files": [
                     "**/*.gif",
                     "**/*.png",
