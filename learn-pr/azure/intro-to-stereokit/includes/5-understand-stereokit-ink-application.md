@@ -19,7 +19,7 @@ This file contains the application logic, the hand menu, and the application men
 
 * **Radial hand menu**: This is a simple radial hand menu where we'll store some quick actions! It's activated by a grip motion and is excellent for fast, gesture-like activation of menu items. It also can be used with multiple HandRadialLayers to nest commands in sub-menus.
 
-    The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface, and once added to StereoKit's stepper list, they will have their Step method called each frame! This is a great way to add fire-and-forget objects or systems that need to update each frame.
+    The HandMenuRadial is an example of a stepper object. Steppers are classes that implement the IStepper interface. Once added to StereoKit's stepper list, they will have their Step method called each frame! This is a great way to add fire-and-forget objects or systems that need to update each frame.
 
     :::image type="content" source="../media/radial-menu.png" alt-text="Screenshot of radial menu.” " lightbox="../media/radial-menu.png":::
 
@@ -45,9 +45,9 @@ This file contains the application logic, the hand menu, and the application men
 
 * **Application's menu window**: This menu is built using StereoKit's built-in immediate mode UI system. You can read more about StereoKit's UI system in [the UI guide](https://stereokit.net/Pages/Guides/User-Interface.html), but the basics are pretty easy to follow!
 
-    Here, we're creating a window panel enclosed by UI.WindowBegin and UI.WindowEnd calls. It can contain several UI elements and can be grabbed and moved around by the user. We can add different UI elements within the window, such as the UI.Image or UI.Button, which is automatically laid out within the window panel. Additional tools such as UI.SameLine, and UI.HSeparator is used to manipulate the layout of the window contents.
+    Here, we're creating a window panel enclosed by UI.WindowBegin and UI.WindowEnd calls. It can contain several UI elements and can be grabbed and moved around by the user. We can add different UI elements within the window, such as the UI.Image or UI.Button. These are automatically laid out within the window panel. Additional tools such as UI.SameLine, and UI.HSeparator is used to manipulate the layout of the window contents.
 
-    UI.Button returns true when pressed, so it's pretty easy to wrap in an 'if' statement and execute some code based on that! You can see several actions that are being performed here, but we'll call out the Platform.FilePicker calls as something a little more interesting. Platform.FilePicker will load up a platform-native file picker windows (or a built-in fallback file picker if the platform doesn't provide an MR-compatible file picker) and call your provided callback function with the resulting file name. This makes it trivial to work with content in the file system!
+    UI.Button returns true when pressed, so it's pretty easy to wrap in an 'if' statement and execute some code based on that! You can see several actions that are being performed here, but we'll call out the Platform.FilePicker calls as something a little more interesting. Platform.FilePicker will load up a platform-native file picker windows or a built-in fallback file picker if the platform doesn't provide an MR-compatible file picker. It calls your provided callback function with the resulting file name. This makes it trivial to work with content in the file system!
 
     :::image type="content" source="../media/ink-functional-window.png" alt-text="Screenshot of On the toggle button to enable “Developer Mode.” " lightbox="../media/ink-functional-window.png":::
 
