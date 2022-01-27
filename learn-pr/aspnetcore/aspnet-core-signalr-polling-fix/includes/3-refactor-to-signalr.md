@@ -23,7 +23,7 @@ The server is responsible for exposing a SignalR endpoint. The endpoint maps to 
 
 ### The addition of the `OrderStatusHub`
 
-ASP.NET Core SignalR supports strongly-typed hub implementations, <xref:Microsoft.AspNetCore.SignalR.Hub%601>, where `T` is the client type. Consider the following _IOrderStatusHubs.cs_ file:
+ASP.NET Core SignalR supports strongly typed hub implementations, <xref:Microsoft.AspNetCore.SignalR.Hub%601>, where `T` is the client type. Consider the following _IOrderStatusHubs.cs_ file:
 
 :::code source="~/../blazing-pizza-signalr/blazor-workshop/src/BlazingPizza.Server/Hubs/IOrderStatusHub.cs":::
 
@@ -42,7 +42,7 @@ The `Startup` class needed to be updated to add ASP.NET Core SignalR and the Mes
 The preceding code highlights these changes:
 
 - Add SingalR and the MessagePack protocol.
-- Map the `OrderStatusHub` to the `"/orderstatus"` endpoint.
+- Map `OrderStatusHub` to the `"/orderstatus"` endpoint.
 
 ## Refactored client app
 
