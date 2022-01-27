@@ -1,16 +1,16 @@
 Throughout this module, we’ve discussed how important it’s to coinnovate beyond your organization to accelerate solutions and remain competitive long term. We’ve also uncovered that innovation doesn’t exist in a vacuum—especially with technology companies. New technologies bring new challenges for organizations of all sizes. These challenges have a huge impact on communities and when specific issues arise, specialized partnerships are necessary. That’s why external partnerships and collaboration play a key role in understanding how innovation efforts impact people and the community beyond your organization—especially with groups who have more knowledge of the issue at hand. By creating this culture and understanding the different relationships, your organization will thrive despite disruptions—making you more resilient.
 
-Now that you have reviewed the module, you should be able to:
+Now that you've reviewed the module, you should be able to:
 
 * Describe the benefits of collaborating with external partners.
 * Understand the relationship between ESG scores and innovation.
-* Learn how coinnovating with external partners can help make it easier to adopt new technology quicker. 
+* Learn how coinnovating with external partners can help make it easier to adopt new technology quicker.
 
 ## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* Learn more Microsoft’s commitment to the advancement of AI driven by principles that put people first in the [Responsible AI](https://www.microsoft.com/ai/ai-business-school#primaryR7) learning path.
+* Learn more Microsoft commitment to the advancement of AI driven by principles that put people first in the [Responsible AI](https://www.microsoft.com/ai/ai-business-school#primaryR7) learning path.
 * Discover how Microsoft solutions can help you strengthen resilience in people, teams, and your broader organization, visit [Organizational Resilience](https://www.microsoft.com/resilience).
 * Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
 * Learn about advancements in technology on the horizon, visit [Microsoft Innovation](https://innovation.microsoft.com).
