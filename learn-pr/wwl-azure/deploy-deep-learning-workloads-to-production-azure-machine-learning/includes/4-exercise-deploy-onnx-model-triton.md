@@ -16,5 +16,5 @@ Follow these instructions to complete the exercise:
 1. Open the exercise instructions at [https://aka.ms/deep-learning](https://aka.ms/deep-learning?azure-portal=true).
 1. Complete the **Deploy Triton with an ONNX model to a managed online endpoint** exercise.
 
-> [!Important]
+> [!IMPORTANT]
 > Managed online endpoints on Azure Machine Learning is currently in public preview. The preview version is provided without a service-level agreement and is not recommended yet for production workloads. 

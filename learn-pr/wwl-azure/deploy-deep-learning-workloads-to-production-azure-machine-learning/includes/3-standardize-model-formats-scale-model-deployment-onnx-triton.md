@@ -14,5 +14,5 @@ For example, imagine you deploy your model to a managed online endpoint and you 
 
 By training an ONNX model in Azure Machine Learning, or converting your model to ONNX format, you can use the ONNX Runtime when inferencing to get a better performance.
 
-> [!Tip] 
+> [!TIP] 
 > Learn more about [ONNX and Azure Machine Learning](/azure/machine-learning/concept-onnx#get-onnx-models).
