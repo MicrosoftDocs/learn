@@ -1,4 +1,4 @@
-Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Azure Security Center, have onboarded to Azure Monitor and are producing relevant security logs.
+Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Microsoft Defender for Cloud, have onboarded to Azure Monitor and are producing relevant security logs.
 
 The integration process has also been simplified with key capabilities like security information and event management (SIEM) tools, such as routing data to a single event hub and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
 
@@ -10,11 +10,51 @@ We’ve continued to support customers who are using the Azure Log Integration t
 
 The table below indicates what you should do based on the SIEM tool(s) you are using and your current integration status. Only SIEM tools that were officially supported by AzLog are included below.
 
-| **SIEM Tool**| **Currently using log integrator**| **Currently investigating SIEM integration options**|
-| :--- | :--- | :--- |
-| **Splunk**| Begin migrating to the Azure Monitor Add-On for Splunk.| Use the Azure Monitor Add-On for Splunk.|
-| **IBM QRadar**| Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website.| Use the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website. You can learn more about the integration with Azure.|
-| **ArcSight**| The Azure log integration tool offered collecting Azure logs into JSON files for the purpose of integrating with ArcSight using existing JSON connectors from ArcSight, with JSON to CEF mapping available only for Azure Activity Logs and not for the other types of Azure logs. |  |
+:::row:::
+  :::column:::
+    **SIEM Tool**
+  :::column-end:::
+  :::column:::
+    **Currently using log integrator**
+  :::column-end:::
+  :::column:::
+    **Currently investigating SIEM integration options**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Splunk**
+  :::column-end:::
+  :::column:::
+    Begin migrating to the Azure Monitor Add-On for Splunk.
+  :::column-end:::
+  :::column:::
+    Use the Azure Monitor Add-On for Splunk.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **IBM QRadar**
+  :::column-end:::
+  :::column:::
+    Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website.
+  :::column-end:::
+  :::column:::
+    Use the Microsoft Azure DSM and Microsoft Azure Event Hub Protocol, available from the IBM support website. You can learn more about the integration with Azure.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **ArcSight**
+  :::column-end:::
+  :::column:::
+    The Azure log integration tool offered collecting Azure logs into JSON files for the purpose of integrating with ArcSight using existing JSON connectors from ArcSight, with JSON to CEF mapping available only for Azure Activity Logs and not for the other types of Azure logs.
+  :::column-end:::
+  :::column:::
+    
+  :::column-end:::
+:::row-end:::
+
 
 ## Integration roadmap
 
@@ -29,4 +69,3 @@ Today, Azure Monitor’s SIEM integration capabilities can’t do everything the
 **Integration with other SIEM tools** – AzLog provided a generic capability to push standardized Azure logs in JSON format to disk. While other SIEM tools weren’t officially supported by AzLog, this offered a way to easily get log data into tools such as LogRhythm. Our recommendation for customers using AzLog for these tools is to work with the producer of that tool to provide an Azure Monitor Event Hubs integration.
 
 The security of your Azure environment is always top priority on the Azure team, both in terms of how we engineer the Azure platform and in terms of the capabilities we provide for you for securing your own assets on that platform. Moving SIEM integration to Azure Monitor is a step towards enabling you to manageably secure your applications on Azure at scale.
-
