@@ -199,7 +199,7 @@ WARNING: All illegal access operations will be denied in a future release
 07-Oct-2021 18:32:03.267 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 48195 ms
 ```
 
-You can now use the ```EXTERNAL-IP``` from your ```kubectl get services turkishairlines``` output to access the running app within Azure Kubernetes Service.
+You can now use the ```EXTERNAL-IP``` from your ```kubectl get services flightbookingsystemsample``` output to access the running app within Azure Kubernetes Service.
 
 > [!NOTE]
 > You'll want to substitute the ip address below, 20.81.13.151, with that of your EXTERNAL-IP from the command above.
