@@ -100,7 +100,7 @@ You can categorize alerts as New, In Progress, or Resolved by changing their sta
 
 For example, a team leader can review all New alerts, and decide to assign them to the In Progress queue for further analysis.
 
-Alternatively, the team leader might assign the alert to the Resolved queue if they know the alert is benign, coming from an irrelevant device (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
+Alternatively, the team leader might assign the alert to the Resolved queue if they know the alert is begin, coming from an irrelevant device (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
 
 ### Alert classification
 
