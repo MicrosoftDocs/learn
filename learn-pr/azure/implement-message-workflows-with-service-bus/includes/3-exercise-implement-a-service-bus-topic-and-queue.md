@@ -19,7 +19,7 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
 
 1. Enter **Service Bus** in global search, and in the results, on **Service Bus** published by Microsoft for Azure, select **Create**. The **Create namespace** pane appears.
 
-1. On the **Basics** tab, enter or select the following values for each setting.
+1. On the **Basics** tab, enter or select the following values for each setting:
 
     | Setting | Value | Description |
     | ------- | --- | ---- |
@@ -65,7 +65,7 @@ Let's add a Service Bus topic and subscriptions.
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Service Bus Namespace and Create topic panes with Topic and Create highlighted.":::
 
-1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**. 
+1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**.
 
 1. When the topic has been created, **salesperformancemessages** is listed under **Topics** tab at the bottom of the Service Bus Namespace.
  
@@ -75,7 +75,7 @@ Let's add a Service Bus topic and subscriptions.
 
 1. In the command bar, select **+ Subscription**. The **Create subscription** pane appears.
 
-1. For **Name**, enter **Americas**; for **Max delivery count**, enter **100**; and then select **Create**. 
+1. For **Name**, enter **Americas**; for **Max delivery count**, enter **100**; and then select **Create**.
  
     The `salesperformancemessages` Service Bus Topic appears with the **Americas** subscription listed in the Subscriptions section at the bottom of the pane.
 

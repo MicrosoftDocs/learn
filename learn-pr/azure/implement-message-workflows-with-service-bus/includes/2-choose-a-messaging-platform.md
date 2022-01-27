@@ -8,7 +8,7 @@ We need to decide which techniques to use in the Contoso Bicycles application. T
 
 ## Decide between messages and events
 
-Both messages and events are **datagrams**: packages of data sent from one component to another. They are different in ways that at first seem subtle, but can make significant differences in how you architect your application.
+Both messages and events are *datagrams*: packages of data sent from one component to another. They are different in ways that at first seem subtle, but can make significant differences in how you architect your application.
 
 ### Messages
 
@@ -40,7 +40,7 @@ Azure Service Bus can exchange messages in three different ways: queues and topi
 
 ### What is a queue?
 
-A **queue** is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
+A *queue* is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
 
 :::image type="content" source="../media/2-service-bus-queue.png" alt-text="An illustration showing a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one-by-one from the queue.":::
 
@@ -52,7 +52,7 @@ A queue responds to high demand without needing to add resources to the system. 
 
 ### What is a topic?
 
-A **topic** is similar to a queue but can have multiple subscriptions. This means that multiple destination components can subscribe to a given topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
+A *topic* is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
 > [!NOTE] 
 > Topics are not supported in the Basic pricing tier.
@@ -65,12 +65,12 @@ There are two Azure features that include message queues: Service Bus and Azure 
 
 Key advantages of Service Bus queues include:
 
-* Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB
-* Supports both at-most-once and at-least-once delivery - choose between a very small chance that a message is lost or a very small chance it is handled twice
-* Guarantees **first-in-first-out (FIFO)** order - messages are handled in the same order they are added (although FIFO is the normal operation of a queue, it is not guaranteed for every message)
-* Can group multiple messages into a transaction - if one message in the transaction fails to be delivered, all messages in the transaction will not be delivered
-* Supports role-based security
-* Does not require destination components to continuously poll the queue
+* Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Service Bus messages.
+* Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it is handled twice.
+* Guarantees *first-in, first-out (FIFO)* order. Messages are handled in the same order they are added. (Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages.)
+* Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
+* Supports role-based security.
+* Does not require destination components to continuously poll the queue.
 
 Advantages of storage queues:
 
