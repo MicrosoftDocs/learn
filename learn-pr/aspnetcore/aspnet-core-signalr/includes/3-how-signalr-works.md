@@ -7,7 +7,7 @@ A `Hub` is exposed through a route. For example, the `https://www.contoso-pizza.
 There are two modalities to expose methods on a hub. You create a subclass of the following types and write [methods](#methods):
 
 - <xref:Microsoft.AspNetCore.SignalR.Hub>: A standard hub.
-- <xref:Microsoft.AspNetCore.SignalR.Hub%601>: A strongly-typed generic hub.
+- <xref:Microsoft.AspNetCore.SignalR.Hub%601>: A strongly typed generic hub.
 
 ### Example `Hub`
 
@@ -43,7 +43,7 @@ As for the difference between methods and events, the method in the preceding hu
 You fire [events](#events) from either a `Hub` or `IHubContext` instance. The SignalR hub is the core abstraction for sending messages to clients that are connected to the SignalR server. It's also possible to send messages from other places in your app by using either of the following types:
 
 - <xref:Microsoft.AspNetCore.SignalR.IHubContext%601>: A context where `THub` represents a standard hub.
-- <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents the strongly-typed generic hub, and `T` represents the corresponding type of client.
+- <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents the strongly typed generic hub, and `T` represents the corresponding type of client.
 
 > [!IMPORTANT]
 > `IHubContext` is for sending notifications to clients. It is *not* used to call methods on the `Hub`.
@@ -304,4 +304,4 @@ The `OnNotificationReceivedAsync` method is called when the server's hub instanc
 
 The server code for the web application needs to have a `Hub` implementation and expose a route to clients. The `Hub` could use the order object's unique identifier to create a group for tracking. All order status change updates could then be communicated in this group.
 
-The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET Client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You subscribe to the event for order status changes, and then handle it accordingly.
+The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You subscribe to the event for order status changes, and then handle it accordingly.
