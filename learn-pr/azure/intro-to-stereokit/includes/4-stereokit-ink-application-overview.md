@@ -1,67 +1,58 @@
-So far, you've learned how to install and configure your Visual Studio enabling the developer mode for both desktop and HoloLens 2. In this module, you'll have a basic understanding of the components included in StereoKit Ink Application. StereoKit Ink is a demo application used to help you understand the core components provided by StereoKit.
+So far, you've learned how to install and configure Visual Studio, and enable developer mode for both desktop and HoloLens 2. In this unit, you'll get an overview of StereoKit Ink's structure. StereoKit Ink is a sample project used to demonstrate the core components provided by StereoKit.
+
+> [!Note]
+> You can find the original source code for StereoKit Ink [on Github here](https://github.com/maluoi/StereoKit-PaintTutorial).
 
 This StereoKit demo project aims to introduce people to the fundamentals of how to draw and interact with **Mixed Reality** content. You'll learn how to make:
 
-* radial hand menus
-* easy window menus with automatic layout
-* object-based menus with more specific designs
-* file pickers etc.
+* Radial hand menus.
+* Easy window menus with automatic layouts.
+* Custom UI elements.
+* File pickers.
 
-Also, discover how simple it is to draw models, lines and interact with the game with only your fingers.
+Also, you'll discover how simple it is to draw models, lines, and create hand based interactions.
 
 :::image type="content" source="../media/desktop-stereokit-ink-application.png" alt-text="Screenshot of the StereoKit Ink application on desktop" lightbox="../media/desktop-stereokit-ink-application.png":::
 
-It's a great example of how to do things and a great way to start for anyone who wants to make an identical feature for themselves. These simple features can help you build a fully functional product at ease.
+StereoKit Ink's features were chosen to represent a sampling of common tasks required by content creation tools. The code provided is meant to be easy to read and understand, rather than to be fully featured or robust. This should serve as a great way to get a feel for how to use StereoKit's API, and see how much can be done with very little code.
 
 ## Pre-requisites
 
-This project uses **StereoKit** to generate and build a Mixed Reality application that runs on HoloLens 2 and VR headsets.
+This project uses **StereoKit** to build a Mixed Reality application that runs on HoloLens 2 and VR headsets.
 
 ## Project layout
 
-Different projects support different features and goals. One can frequently swap between them depending on the current project. There're two project arrangements used in this solution: **.Net Core** and **UWP**.
+StereoKit Ink's solution uses a 2 project setup: one is **.Net Core**, and one is **UWP**. Different project types support different features and platforms, and it may be common to switch between them depending on what you're working on.
 
-* Features and targets supported in **.Net Core Project** include:
-  * WMR VR Desktop
-  * Flatscreen Desktop
+* **.Net Core project** includes:
+  * Desktop VR
+  * Flatscreen MR Simulator
   * Leap Motion articulated hands
   * No compile time
 
-* Features and targets supported in **UWP Project** include:
+* **UWP project** includes:
   * HoloLens 2 + articulated hands
-  * WMR VR Desktop
-  * Flatscreen Desktop
+  * Desktop VR
+  * Flatscreen MR Simulator
   * Controller simulated hands
   * Some compile time
 
 ## Window menus
 
-There are two window menus used in the **StereoKit Ink** application: the **Ink Tools** window and the **Ink Functional** window. Both windows have a series of functionalities attached through various UI components.
+There are two window menus used in the **StereoKit Ink** application: the **Ink Tools** window and the **Ink Menu** window. Both windows perform a number of different tasks using UI elements.
 
-* **Ink Tools Window** - The **Ink Tools Window** consists of all the options required to draw models, lines and interact with your fingers. This window allows users to choose colors, customize the colors, and even change the size of the lines. In addition, the user can select various blobs of frequently used primary colors. The Ink bottle present at the top of the window indicates the color chosen for the drawing. There are three sliders attached to the window allowing users to alter some properties of the selected color, such as Hue, Saturation, and Value. You also have a slider to modify the size of the drawing.
+* **Ink Tools Window** - The **Ink Tools Window** consists of a number of options for configuring the line that you're drawing. This window allows users to choose colors from swatches, refine the colors with sliders, and even change the size of the lines. This window also contains a ink bottle model at the top to spice things up a bit, and make it clear what the window is for. While most of these are easy built-in UI elements, the swatch buttons are done using custom UI tools, to illustrate how to use StereoKit's API to design UI elements of your own.
 
-* **Ink Functional Window** - The **Ink Functional Window** has some options functional like *Undo*, *Redo*, *Save*, *Load*, *Clear*, and *Quit*. UI buttons allow you to take **action** and make **choices**. If you want to perform specific actions after any interaction with the objects on the scene, you can use UI buttons.
+* **Ink Menu Window** - The **Ink Menu Window** has some options for managing the active ink drawing: *Undo*, *Redo*, *Save*, *Load*, *Clear*, and *Quit*. Most of these buttons are quite simple, but *Save* and *Load* illustrate using the built-in cross-platform file picker to work with files.
 
-Creating windows using StereoKit is precise. You can convert any object into an interface by adding required UI elements. In addition, instead of using the old "window" pattern, users can customize the look and feel of their window through StereoKit.
+StereoKit uses an Immediate Mode UI paradigm. This may be a bit different from UI systems that you're used to, but it has some rather pleasant strengths. In particular, the API is really simple, and StereoKit doesn't store the state of the UI itself. You can add, remove, or completely rearrange your UI from one frame to the next using standard code structures, and you can change or check the state of the UI quite trivially. This combination of features allows for very quick development of UI with very little mental overhead.
 
-Since StereoKit doesn't store state, you can add, remove, and change your UI components with minor and standard code structures. The main reason is to accelerate working with UI and avoid compromising the design outcome. All the visual elements added to the window are relative to it.
+The UI system also provides a collection of tools for customizing the look and feel of the UI visuals. While StereoKit Ink preserves most of StereoKit's default UI settings, it's entirely possible to modify the UI's appearance quite a bit!
 
-## Accessing hand interaction
+## Accessing hand data
 
-The **StereoKit Ink** application utilizes a fully articulated hand to draw lines and models on the canvas. The accessing hand in the application is essential as it mimics the movement of the user's hands to draw effortlessly. Fully flexible hands are always available to work with as StereoKit uses a hands-first approach. Even when the hand sensors aren't available, the existing devices simulate the hand data.
+The **StereoKit Ink** application uses hand joint data to draw lines on the canvas. StereoKit is a hands-first API, and will **always** provide good hand joints. While StereoKit will prioritize any articulated hand sensors the system might have, it will also fall back to controllers, or a mouse, and simulate hand joints based on those devices.
 
-StereoKit provides various functions to users to access the hand information. Some of the functions are listed below:
+StereoKit provides a collection of high level and low level information about hand data. You can find a quick overview of how to get and use hand data in [this guide](https://stereokit.net/Pages/Guides/Using-Hands.html).
 
-* hand.IsPinched
-
-* hand.IsJustPinched
-
-* hand.IsJustUnpinched
-
-* hand.IsGripped
-
-* hand.IsJustGripped
-
-* hand.IsJustUngripped
-
-Only three code files and a few art elements make up this project. The code strives to be very readable, with plenty of comments to clarify anything not immediately apparent. The following chapters will explain these functions.
+The StereoKit Ink sample consists of only 3 code files, and a few art assets. The code aims to be very readable, with plenty of comments to clarify anything not immediately apparent. The following chapters will explain some of these details.

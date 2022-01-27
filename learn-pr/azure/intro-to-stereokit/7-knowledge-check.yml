@@ -14,17 +14,17 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Choose the correct platform for which StereoKit app locations are built."
+    - content: "What is StereoKit?"
       choices:
-        - content: "Windows MR"
+        - content: "StereoKit positively needs a game engine to deliver quality Mixed Reality applications on target devices."
           isCorrect: false
-          explanation: Windows Mixed Reality is a mixed reality platform introduced as part of the Windows 10 operating system, which provides augmented reality and mixed reality experiences with compatible head-mounted displays.
-        - content: "HoloLens and Oculus Quest"
+          explanation: You don't need a game engine to make an app, and certainly don't need to be a graphics programmer to get your models onto a headset.
+        - content: "StereoKit holds a series of functions and features to promote mobile application development."
           isCorrect: false
-          explanation: HoloLens is a pair of mixed reality smart glasses developed and manufactured by Microsoft and Oculus. It is a standalone device that can run games and software wirelessly under an Android-based operating system.
-        - content: "All of the above"
+          explanation: StereoKit prioritizes the development of Mixed Reality apps on mobile and immersive devices.
+        - content: "It is an open-source Mixed Reality framework used to develop HoloLens and VR apps with C# and OpenXR"
           isCorrect: true
-          explanation: StereoKit supports all OpenXR platforms.
+          explanation: It is an open-source Mixed Reality framework used to develop HoloLens and VR apps with C# and OpenXR. It comes with a first-class Mixed Reality input system, excellent performance even on mobile devices. It also supports fast on-device iteration time and a runtime asset pipeline allowing users and developers to load actual files from the file system.
     - content: "Which of the following is not a feature of StereoKit?"
       choices:
         - content: "Assets are loaded at compilation time."

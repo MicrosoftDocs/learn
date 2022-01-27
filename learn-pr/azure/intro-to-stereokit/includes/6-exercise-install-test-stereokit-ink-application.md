@@ -1,4 +1,4 @@
-In the previous chapter, you have learned how to develop and configure the StereoKit Ink application. In this chapter, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
+In the previous unit, you explored the contents and details of the StereoKit Ink application. In this unit, you'll learn how to build and test the StereoKit Ink application on HoloLens 2 and Desktop.
 
 > [!Important]
 > Make sure you have installed **StereoKit's Visual Studio template**.

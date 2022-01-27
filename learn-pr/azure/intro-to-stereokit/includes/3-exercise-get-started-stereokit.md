@@ -1,4 +1,4 @@
-Now, as we know what StereoKit is and how to utilize it to overcome complex game engine structures, let's move on to the next step. Let's start installing all the tools we'll need to work with StereoKit. In this chapter, you will learn how to install StereoKit with its template and enable Developer Mode on your device, PC, and HoloLens 2.
+Now that we know a bit about what StereoKit is, let's move on to the next step. We will start by installing the tools and pre-requisites we will need to work with StereoKit. In this unit, you will learn how to install StereoKit via the Visual Studio templates and enable Developer Mode on your device, PC, and HoloLens 2.
 
 Here is a quick list of what is required to start developing with StereoKit:
 
@@ -36,22 +36,22 @@ Here is a quick list of what is required to start developing with StereoKit:
 
 ## StereoKit's Visual Studio template
 
-StereoKit's visual studio template is the quickest method to start a StereoKit project. By default, it has been set to copy project assets correctly with some basic code that gives you a bit of functionality to start right away and test.
+StereoKit's Visual Studio template is the quickest method to start a StereoKit project. By default, it has been set to copy project assets correctly, and comes with some basic code that gives you some functionality to play around with right away.
 
 There are two templates provided:
 
-1. **Universal Windows Platform** - is for HoloLens 2 and can also run on Windows desktop. However, UWP can be slower to compile, and it will not receive updates from the .NET team.
+1. **Universal Windows Platform** - is for HoloLens 2 and can also run on Windows desktop. However, UWP can be slower to compile, and is no longer receiving updates from the .NET team.
 2. **.NET Core** - is used for desktop XR on Windows and Linux. It is simple to use, compiles quickly, and is the best option for most developers.
 
    :::image type="content" source="../media/stereokit-templates-visual-studio.png" alt-text="Screenshot of downloaded stereoKit templates in Visual Studio." lightbox="../media/stereokit-templates-visual-studio.png":::
 
-3. **Cross-Platform Template (in development)** - A pre-production version still in project format. Uses a DLL shared across several platform-specific applications to work with .Net Core, UWP, and Xamarin(Android/Quest) altogether.
+3. **[Cross-Platform Template (in development)](https://github.com/maluoi/StereoKit/tree/master/StereoKitTemplates/StereoKitXPlat)** - This is an early version still in project format. It works with .Net Core, UWP, and Xamarin(Android/Quest) all at once via a DLL shared between multiple platform specific projects.
 
-4. **Native C++ Template (in development)** - StereoKit does offer a C API. However, only experienced developers can use it if the benefits exceed the documentation insufficiencies.
+4. **[Native C++ Template (in development)](https://github.com/maluoi/StereoKit/tree/master/StereoKitTemplates/SKNative)** - StereoKit does provide a C API, but experienced developers should only choose this if the benefits outweigh the lack of C API documentation.
 
 > [!Note]
->Iteration is slower with Universal Windows Platform because it builds apps, so use it only if HoloLens is essential to you.
->You may also install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into your project.
+>Iteration is slower with Universal Windows Platform, so use it only if HoloLens is essential to you. Building for ARM instead of ARM64 can save some time, as it can skip the .Net Native compile required by ARM64.
+>You may also skip the template, and install the [NuGet package](https://www.nuget.org/packages/StereoKit) directly into an existing project.
 
 ### Download & install StereoKit's Visual Studio template
 
@@ -69,7 +69,7 @@ There are two templates provided:
 
 ## Enable developer mode
 
-Enabling Developer Mode in **HoloLens 2** & **Windows PC** makes it easier to test the ready applications. Furthermore, you can install Universal Windows Platform & Windows apps from outside the Windows Store, even if it is a valid certificate without the sign. That is an essential feature for app developers who want to test their apps on their PCs while still developing.
+Enabling Developer Mode in **HoloLens 2** & **Windows PC** makes it easier to test applications. This allows you to install Universal Windows Platform & Windows apps from outside the Windows Store, which can be an essential feature for app developers who want to test their apps on PC while developing.
 
 ### Enable developer mode for HoloLens 2
 
@@ -107,4 +107,4 @@ If you're using a Windows Mixed Reality headset with your PC, enable Developer M
 
    :::image type="content" source="../media/enable-developer-mode.png" alt-text="Screenshot of On the toggle button to enable Developer Mode."  lightbox="../media/enable-developer-mode.png":::
 
-By following this chapter, you have understood the conditions required for developing a Mixed Reality application using StereoKit. Next, you'll appreciate the StereoKit Ink application to experience better what is achievable using StereoKit.
+In this unit, you have seen the pre-requisites for developing a Mixed Reality application using StereoKit. Next, you'll get an overview of the StereoKit Ink demo project, as a simplified example of some of StereoKit's features and abilities.

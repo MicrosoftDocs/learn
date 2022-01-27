@@ -1,10 +1,10 @@
 In this module, you've learned some fundamental features of StereoKit and how to set up StereoKit for Mixed Reality development. With the help of the StereoKit Ink sample application, you learned the basics of drawing and interacting with Mixed Reality content through various UI options.
 
-This course provides you with an understanding of developing the Mixed Reality application with StereoKit working across OpenXR platforms like HoloLens 2, Windows Mixed Reality, Monado Linux, and so on.
+This course provides you with an understanding of developing the Mixed Reality application with StereoKit working across OpenXR platform.
 
 ## Next steps
 
-You can further improve the application you created with StereoKit by including a few more functions or features. Consider the following options:
+You can continue to improve the application you by including a few more functions or features. Consider the following options:
 
 * Include features such as pencil, brush, and airbrush tool.
 * Incorporate the ability to add lines and shapes.

@@ -1,47 +1,49 @@
-StereoKit is a mixed reality library written in C#. It draws inspiration from XNA, Dear ImGui, and Processing, which provides a simple user interface for graphics, physics, user interface, and other features for creating a Mixed Reality application! You don't need a game engine to make an app, and certainly don't need to be a graphics programmer to get your models onto a headset! All you need to create a user interface and design interactions is a simple approach! StereoKit succeeds in achieving this goal. A single line of code may make a clickable UI button, load a .gltf model, play a sound, and do many more.
-
-You may develop custom applications using StereoKit, focusing on non-game Mixed Reality use cases. StereoKit allows you to create high-quality Mixed Reality experiences. It is possible to carry out Mixed Reality operations natively using basic core APIs. Also, StereoKit helps you to overcome complex game engine structures.
+StereoKit has a pretty extensive list of features, but here's a number of highlights that will give you an idea of what StereoKit is capable of.
 
 ## StereoKit key features
 
-* You can use StereoKit on OpenXR platforms like HoloLens 2, Oculus Quest, Windows Mixed Reality, Oculus Desktop, SteamVR, Varjo, and Monado Linux.
+* Runs on any device that supports OpenXR. This includes HoloLens 2, Oculus Quest, Windows Mixed Reality, Oculus Desktop, SteamVR, Varjo, and Monado on Linux.
 
-* The StereoKit supports 3D model of formats: gltf, glb, obj, stl, ascii ply, and procedural.
+* A lightweight core that builds to your device in seconds, not minutes.
 
-* The StereoKit supports image or texture of format: jpg, png, tga, bmp, psd, gif, hdr, pic, equirectangular cubemap, and procedural.
+* 3D model file formats: gltf, glb, obj, stl, ply, and procedural.
 
-* StereoKit helps build your application on time.
+* Texture formats: jpg, png, tga, bmp, psd, gif, hdr, pic, qoi, equirectangular cubemap, and procedural.
 
-* StereoKit supports flat-screen mode with input emulation, powerful UI, and interactions for easy development.
+* Flexible shader/material system, with built in shaders for Physically Based Rendering.
 
-* Assets are loaded at runtime, allowing faster computations.
+* A performance-by-default instanced rendering pipeline.
 
-* Physics enables the 3D object to function as a real-world object, with all physical constraints.
+* Skeletal/skinned animation.
 
-* By default StereoKit, uses a flexible shader or material system with a built-in PBR.
+* Runtime asset loading and a built-in cross-platform file picker.
+
+* Flatscreen MR simulator with input emulation for faster development.
+
+* Easy and powerful UI and interactions for Mixed Reality.
 
 ## Coding in StereoKit
 
-StereoKit focuses on getting you up, running with as little code as possible. Most activities, including UI, can be performed with just one line of code. Here's an example of a code showing how easy loading a 3D asset is into your application.
+StereoKit focuses on getting you productive with the least amount of code possible. You can actually do most tasks with a single line of code, including UI! Here's hello world with StereoKit, this is all you need to get up and running!
 
 ```c#
 using StereoKit;
 
 class Program
 {
- static void Main(string[] args)
- {
-  SK.Initialize(new SKSettings{ appName = "Project" });
-
-  Model helmet = Model.FromFile("Assets/DamagedHelmet.gltf");
-
-  while (SK.Step(() => {
-   helmet.Draw(Matrix.TS(Vec3.Zero, 0.1f));
-  }));
-
-  SK.Shutdown();
- }
+    static void Main(string[] args)
+    {
+        SK.Initialize(new SKSettings{ appName = "Project" });
+        
+        Model helmet = Model.FromFile("Assets/DamagedHelmet.gltf");
+        
+        while (SK.Step(() => {
+            helmet.Draw(Matrix.TS(Vec3.Zero, 0.1f));
+        }));
+        
+        SK.Shutdown();
+    }
 }
 ```
 
-The code above indicates how easy it is to adjust the transform positions of a 3D model, for example, a **DamagedHelmet**. The Matrix will transform the Model from Model Space into the current Hierarchy Space. StereoKit focuses on the Core API, improving performance and ensuring that all critical features are available and working correctly! In addition, you may create some fundamental tools, such as a visual shader editor. StereoKit's primary technology is an Immediate Mode system that doesn't use a framework or manage application state.
+The code above shows how easy it is to spin up StereoKit and draw a 3D model. Just initialize StereoKit, load your model from file, and then draw it every step! This simple API is easy and performant, and lets you build your code the way you want to. You'll still find plenty of options to configure StereoKit, but everything is designed to work right out-of-the-box for Mixed Reality!
