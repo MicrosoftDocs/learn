@@ -20,7 +20,7 @@ quiz:
     - content: "Business leaders should expect their employees to have the knowledge of using their resources and tools to venture out and coinnovate with external partners."
       isCorrect: false
       explanation: "Incorrect. Expecting employees to coinnovate with little to no guidance leads to missed opportunities. Business leaders should dedicate their time in investing in their employees’ skills to prepare them for co-innovating with external partners."
-    - content: "Business leaders should approach co-innovation by sourcing and validating ideas from relevant external partners and customers to help develop a fuller picture of their business needs and challenges."
+    - content: "Business leaders should approach coinnovation by sourcing and validating ideas from relevant external partners and customers to help develop a fuller picture of their business needs and challenges."
       isCorrect: true
       explanation: "Correct. As the marketplace becomes increasingly competitive, there’s no doubt that innovation is vital for a business growth and success. But it doesn’t have to be in a vacuum. By reaching out to external partners and audiences, companies can coinnovate to help harness innovation to stand out from competitors."
     - content: "Business leaders should only coinnovate with consumers to bring in more revenue for their business. "
@@ -37,7 +37,7 @@ quiz:
     - content: "Corporate social responsibility is only helpful to society."
       isCorrect: false
       explanation: "Incorrect. Although implementing a corporate social responsibility business model can be beneficial to society—it’s equally valuable for a company. It can help boost profit, employee engagement, and morale at the workplace."
-  - content: "How is UCB an example of co-innovation?"
+  - content: "How is UCB an example of coinnovation?"
     choices:
     - content: "UCB partnered with Microsoft using technology like AI to research the SARS-CoV-2 virus in an effort to expand scientific understanding around the disease to inform corresponding drug development."
       isCorrect: true
