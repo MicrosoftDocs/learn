@@ -7,7 +7,7 @@ In this unit, you'll use the Azure CLI to create the Azure resources that will b
 
 ### Authenticate with Azure Resource Manager
 
-Login:
+Sign in:
 
 ```bash
 az login
@@ -15,13 +15,13 @@ az login
 
 ### Select an Azure subscription
 
-Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription id (SubscriptionId) that you plan to use in this module. List your Azure subscriptions:
+Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription ID (SubscriptionId) that you plan to use in this module. List your Azure subscriptions:
 
 ```bash
 az account list --output table
 ```
 
-Ensure your using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription id (SubscriptionId) of choice:
+Ensure your using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription ID (SubscriptionId) of choice:
 
 ```bash
 az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
@@ -62,9 +62,9 @@ az group create \
 >
 > If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all commands in this module.
 
-### Create a Azure Container Registry
+### Create an Azure Container Registry
 
-Azure Container Registry allows you to build, store, and manage container images, which is ultimately where the container image for the Java app will be stored. Create a Container registry:
+Azure Container Registry allows you to build, store, and manage container images, which are ultimately where the container image for the Java app will be stored. Create a Container registry:
 
 ```bash
 az acr create \

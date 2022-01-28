@@ -7,7 +7,7 @@ Azure Container Registry allows you to build, store, and manage container images
 >
 >AZ_RESOURCE_GROUP=javacontainerizationdemorg
 >
->AZ_CONTAINER_REGISTRY=javacontainerizationdemoacr
+>AZ_CONTAINER_REGISTRY=<YOUR_CONTAINER_REGISTRY>
 >
 >AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
 >
@@ -21,11 +21,11 @@ Azure Container Registry allows you to build, store, and manage container images
 
 ## Push a container image
 
-You can push your newly built container image to the Azure Container Registry. By doing so, your container image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You will ultimately configure AKS to pull the flightbookingsystemsample image from Azure Container Registry.
+You can push your newly built container image to the Azure Container Registry. By doing so, your container image will be network close to all of your Azure resources, such as your Azure Kubernetes Cluster. You’ll ultimately configure AKS to pull the flightbookingsystemsample image from Azure Container Registry.
 
 To push the container image to Azure Container Registry, run the following three commands in your CLI:
 
-Login to Azure Container Registry:
+Log in Azure Container Registry:
 
 ```bash
 az acr login
@@ -49,7 +49,7 @@ You can now view the Azure Container Registry image meta-data of the newly pushe
 az acr repository show -n $AZ_CONTAINER_REGISTRY --image flightbookingsystemsample:latest
 ```
 
-You will see the following meta-data as seen below:
+You’ll see something similar:
 
 ```json
 {

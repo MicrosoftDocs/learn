@@ -2,7 +2,7 @@ In this unit, you'll build and run the container image. As mentioned earlier, a 
 
 ## Build a container image
 
-Now that you have successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
+Now that you've successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
 
 > [!NOTE]
 > Ensure your Docker runtime is configured to build Linux containers. This is important as the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
@@ -14,7 +14,7 @@ Now that you have successfully constructed a Dockerfile, you can instruct Docker
 docker build -t flightbookingsystemsample .
 ```
 
-You will see an output similar to the following:
+You’ll see something similar:
 
 ```bash
 docker build -t flightbookingsystemsample .
@@ -94,7 +94,7 @@ Successfully built a0b73d3f3f91
 Successfully tagged flightbookingsystemsample:latest
 ```
 
-As you can see above, Docker has executed the instructions from the lines that you have previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that have not changed. If your not making app changes (before rerunning the ```docker build``` command), then you will notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
+As you saw previously, Docker has executed the instructions from the lines that you’ve previously written in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps, you'll notice ```---> Using cache``` for layers that haven’t changed. If your not making app changes (before rerunning the ```docker build``` command), then you’ll notice all cached layers as the binaries are untouched and can be sourced from Docker cache). This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
 
 Docker can also display the available images that are resident. This is helpful for viewing what's available to run. Run the following command in your CLI:
 
@@ -102,7 +102,7 @@ Docker can also display the available images that are resident. This is helpful 
 docker image ls
 ```
 
-You will see an output similar to the following:
+You’ll see something similar:
 
 ```bash
 docker image ls
@@ -120,7 +120,7 @@ Now that you have successfully built a container image, you can run it.
 docker run -p 8080:8080 flightbookingsystemsample
 ```
 
-You will see an output similar to the following:
+You’ll see something similar:
 
 ```bash
 docker run -p 8080:8080 flightbookingsystemsample
@@ -175,6 +175,6 @@ You should see the following
 
 ![Screenshot showing the running app.](../media/build-and-run.png)
 
-You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com:password
+You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com: password
 
 To stop the container hold ctrl + c inside the CLI.

@@ -1,6 +1,6 @@
 Imagine you’re a Java developer, building and deploying apps that will run on on-premises servers. Orchestrating these servers, dependencies, and scale, to name a few, are all challenging processes. 
 
-Unlike virtual machines that emulate hardware, containers run directly on top of the host operating system, kernel and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster app startup times, and a great use case for scaling on demand.
+Unlike virtual machines that emulate hardware, containers run directly on top of the host operating system, kernel, and hardware, as essentially just another process. Because of this, containers require less system resources, resulting in a smaller footprint with substantially less overhead, faster app startup times, and a great use case for scaling on demand.
 
 With Containers, you’ll ensure your apps, and dependencies, are always isolated in container image(s) and ready for deployment at scale.
 
