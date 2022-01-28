@@ -837,3 +837,53 @@ achievements:
   title: Introduction to implementing lambda architecture for IoT solutions
   summary: Introduction to implementing lambda architecture for IoT solutions
   iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
+- uid: learn.languages.python-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Python
+  summary: Learn the basic syntax and thought processes required to build simple applications using Python
+  iconUrl: /learn/achievements/python-first-steps.svg
+- uid: learn.languages.python-introduction.badge
+  type: badge
+  title: What is Python?
+  summary: Introduction to Python, programming languages, compilation, and the process of programming
+  iconUrl: /learn/achievements/python-introduction.svg
+- uid: learn.languages.python-create-first.badge
+  type: badge
+  title: Create your first Python program
+  summary: Get started with Python by writing code to interact with end users
+  iconUrl: /learn/achievements/python-create-first.svg
+- uid: learn.languages.python-if-elif-else.badge
+  type: badge
+  title: Branch code execution with the if and else statements in Python
+  summary: Use the if statement Boolean expressions with comparison and logic operators to express decision logic
+  iconUrl: /learn/achievements/python-if-elif-else.svg
+- uid: learn.languages.python-format-strings.badge
+  type: badge
+  title: Manipulate and format string data for display in Python
+  summary: Use built-in features of the string class and other helper methods to control string data
+  iconUrl: /learn/achievements/python-format-strings.svg
+- uid: learn.languages.python-datatypes-numeric-operations.badge
+  type: badge
+  title: Perform mathematical operations on numeric data in Python
+  summary: Convert user input to numeric values, and use mathematical operators to perform calculations
+  iconUrl: /learn/achievements/python-datatypes-numeric-operations.svg
+- uid: learn.languages.python-standard-library.badge
+  type: badge
+  title: Import standard library modules to add features to Python programs
+  summary: Explore using the Python standard library
+  iconUrl: /learn/achievements/python-standard-library.svg
+- uid: learn.languages.python-while.badge
+  type: badge
+  title: Iterate through code blocks by using the while statement
+  summary: Use the while statement and related Python code constructs to add looping logic to programs
+  iconUrl: /learn/achievements/python-while.svg
+- uid: learn.languages.python-lists.badge
+  type: badge
+  title: Manage a sequence of data by using Python lists
+  summary: Learn how to use lists in Python to manage a collection of data
+  iconUrl: /learn/achievements/python-lists.svg
+- uid: learn.languages.python-functions.badge
+  type: badge
+  title: Create reusable functionality with functions in Python
+  summary: Define functions to create encapsulated modular code
+  iconUrl: /learn/achievements/python-functions.svg
