@@ -24,8 +24,6 @@ Here is a quick list of what is required to start developing with StereoKit:
 
 2. Save the **Visual Studio installer** to your device path. Once the download is complete, start the installation by running the Visual Studio installer.
 
-   :::image type="content" source="../media/run-visual-studio-installer.png" alt-text="Screenshot shows how to run the Visual Studio installer to your PC." lightbox="../media/run-visual-studio-installer.png":::
-
 3. Once your Visual Studio starts to install, you'll see a few seconds of initialization followed by a feature selection option. First, select the **.NET Desktop development** and **Universal Windows Platform development (for HoloLens)** checkbox in Visual Studio 2019's features list. Then, after making the required selections, click the **Modify** button.
 
    :::image type="content" source="../media/select-workloads.png" alt-text="Screenshot of how to select .NET Desktop development and Universal Windows Platform development (for HoloLens) in Visual Studio 2019." lightbox="../media/select-workloads.png":::
