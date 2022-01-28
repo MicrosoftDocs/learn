@@ -19,7 +19,7 @@ Although it might look as though we've modified the variable `fact`, a quick che
 'The Moon has no atmosphere.'
 ```
 
-The trick here is that you must use a return value. When you add strings, Python doesn't modify any string, but it returns a _new_ string as the result. To keep this new result, assign it to a new variable:
+The trick here’s that you must use a return value. When you add strings, Python doesn't modify any string, but it returns a _new_ string as the result. To keep this new result, assign it to a new variable:
 
 ```python
 >>> two_facts = fact + "No sound can be heard on the Moon."

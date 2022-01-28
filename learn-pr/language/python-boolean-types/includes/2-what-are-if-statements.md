@@ -1,11 +1,11 @@
-To express conditional logic in Python, you use `if` statements. When you're writing an `if` statement, you're relying on another concept we cover in this module, *mathematical operators*. Python supports the common logic operators from math: equals, not equals, less than, less than or equal to, greater than, and greater than or equal to. You're probably used to seeing these operators displayed using symbols, which is how they are represented in Python, too. 
+To express conditional logic in Python, you use `if` statements. When you're writing an `if` statement, you're relying on another concept we cover in this module, *mathematical operators*. Python supports the common logic operators from math: equals, not equals, less than, less than or equal to, greater than, and greater than or equal to. You're probably used to seeing these operators displayed using symbols, which is how they’re represented in Python, too. 
 
-* Equals: a == b
-* Not Equals: a != b
-* Less than: a < b
-* Less than or equal to: a <= b
-* Greater than: a > b
-* Greater than or equal to: a >= b
+* Equals: `a == b`
+* Not Equals: `a != b`
+* Less than: `a < b`
+* Less than or equal to: `a <= b`
+* Greater than: `a > b`
+* Greater than or equal to: `a >= b`
 
 ## Test expressions
 
