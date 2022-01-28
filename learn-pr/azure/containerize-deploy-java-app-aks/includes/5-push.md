@@ -25,7 +25,7 @@ You can push your newly built container image to the Azure Container Registry. B
 
 To push the container image to Azure Container Registry, run the following three commands in your CLI:
 
-Log in Azure Container Registry:
+Sign in Azure Container Registry:
 
 ```bash
 az acr login

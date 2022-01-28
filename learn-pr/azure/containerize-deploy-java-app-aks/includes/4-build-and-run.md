@@ -175,6 +175,6 @@ You should see the following
 
 ![Screenshot showing the running app.](../media/build-and-run.png)
 
-You can optionally log in with any user from tomcat-users.xml for example someuser@azure.com: password
+You can optionally sign in with any user from tomcat-users.xml for example someuser@azure.com: password
 
 To stop the container hold ctrl + c inside the CLI.

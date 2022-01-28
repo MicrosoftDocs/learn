@@ -59,7 +59,7 @@ Maven should have successfully built the Flight Booking System for Airline Reser
 [INFO] ------------------------------------------------------------------------
 ```
 
-Imagine your that Java developer and you have just built this FlightBookingSystemSample-0.0.1-SNAPSHOT.war, your next step is to probably work with the operation engineers to get this artifact deployed, to either an on-premises server or a virtual machine. For the application to start and run successfully, this requires that the servers and virtual machines are to be available and configured with the required dependencies. This is challenging and time consuming, especially on demand when increased load is hitting your application. With containers, these challenges are alleviated.
+Imagine you're a Java developer and you have just built this FlightBookingSystemSample-0.0.1-SNAPSHOT.war, your next step is to probably work with the operation engineers to get this artifact deployed, to either an on-premises server or a virtual machine. For the application to start and run successfully, this requires that the servers and virtual machines are to be available and configured with the required dependencies. This is challenging and time consuming, especially on demand when increased load is hitting your application. With containers, these challenges are alleviated.
 
 ## Construct a Docker file
 
