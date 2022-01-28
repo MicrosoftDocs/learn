@@ -34,7 +34,7 @@ To simplify the commands that will be executed further down, set up the followin
 > [!NOTE]
 > You'll want to replace <YOUR_AZURE_REGION> with your region of choice, for example: eastus  
 >
-> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your cluster when it is created, for example: somerandomvaluejavacontainerizationdemoaks
+> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Service cluster when it is created, for example: somerandomvaluejavacontainerizationdemoaks
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
