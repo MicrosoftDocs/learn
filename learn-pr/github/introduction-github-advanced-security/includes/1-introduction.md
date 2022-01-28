@@ -28,5 +28,5 @@ At the end of the module, you'll be able to:
 
 ## Prerequisites
 
-- A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
-- Basic knowledge of GitHub Actions
+- Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
+- Familiarity with personal and organizational authentication technologies and processes would be helpful
