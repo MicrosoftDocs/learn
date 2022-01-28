@@ -29,4 +29,4 @@ At the end of the module, you'll be able to:
 ## Prerequisites
 
 - A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
-- Working knowledge of GitHub Actions and workflows
+- Basic knowledge of GitHub Actions
