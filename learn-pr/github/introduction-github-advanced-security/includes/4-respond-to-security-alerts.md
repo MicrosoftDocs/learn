@@ -13,7 +13,7 @@ In the "What is GitHub Advanced Security" unit, you learned that GitHub's code s
 
 :::image type="content" source="../media/triage.png" alt-text="Screenshot showing menu options for resolving alerts." border="false":::
 
-As you see in the image above, you have control over the code scanning process. If the scan has misunderstood your intent, you can dismiss the alert identifying a reason for the dismissal. Indicate if the scan has highlighted a false positive, code used in tests, or an irrelevant alert.
+As you see in the image above, you control the code scanning process. If the scan has misunderstood your intent, you can dismiss the alert identifying a reason for the dismissal. Indicate if the scan has highlighted a false positive, code used in tests, or an irrelevant alert.
 
 You can also interact with scanning alerts through pull requests. You can see details related to the alert if you have write permission to the repository. A check must pass before you can merge the pull request.
 
