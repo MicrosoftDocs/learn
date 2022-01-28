@@ -20,7 +20,7 @@
 
 ### Things to consider when using Azure policy
 
-Tailwind Traders is now ready to consider applying Azure policy to their apps. Some policies will be applied at the IT management group level. Other policies will be assigned at the app level. 
+Tailwind Traders is now ready to consider applying Azure policy to their apps. Some policies will be applied at the Production management group level. Other policies will be assigned at the app level. 
 
 :::image type="content" source="../media/azure-policy-choices.png" alt-text="Azure policies are applied at the management group and resource group level.":::
 
