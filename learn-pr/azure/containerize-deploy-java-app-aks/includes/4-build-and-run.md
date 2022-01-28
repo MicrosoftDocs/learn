@@ -107,7 +107,7 @@ You will see an output similar to the following:
 ```bash
 docker image ls
 REPOSITORY                                        TAG                 IMAGE ID            CREATED             SIZE
-flightbookingsystemsample                                   latest              cda4f5b459f1        About an hour ago   268MB
+flightbookingsystemsample                         latest              cda4f5b459f1        About an hour ago   268MB
 ```
 
 ## Run a container image
