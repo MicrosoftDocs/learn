@@ -22,7 +22,7 @@ This project uses **StereoKit** to build a Mixed Reality application on HoloLens
 
 ## Project layout
 
-StereoKit Ink's solution uses a 2 project setup: **.Net Core**and  **UWP**. Different project types support different features and platforms, and it may be common to switch between them depending on what you're working on.
+StereoKit Ink's solution uses a 2 project setup: **.Net Core** and  **UWP**. Different project types support different features and platforms, and it may be common to switch between them depending on what you're working on.
 
 * **.Net Core project** includes:
   * Desktop VR
