@@ -23,7 +23,7 @@ With Azure Kubernetes Service, you’ll be configuring your Kubernetes Cluster t
 
 You'll deploy this the ```flightbookingsystemsample``` container image to your Azure Kubernetes Cluster.
 
-Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/TurkishAirlines, Create a file called deployment.yml. Run the following command in your CLI:
+Within the root of your project, Flight-Booking-System-JavaServlets_App/Project/Airlines, Create a file called deployment.yml. Run the following command in your CLI:
 
 ```bash
 vi deployment.yml

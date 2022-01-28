@@ -19,7 +19,7 @@ The Docker runtime is used to build, pull, run, and push container images. The f
 
 ## Clone the Java Application
 
-First you'll clone the Flight Booking System for Airline Reservations repository and cd to the TurkishAirlines web application project folder.
+First you'll clone the Flight Booking System for Airline Reservations repository and cd to the Airlines web application project folder.
 
 > [!NOTE]
 > If the Azure Kubernetes Service creation has successfully completed in your CLI tab, use that one, otherwise if it's still running, open a new tab and cd to the location of where you prefer to clone the Flight Booking System for Airline Reservations.
@@ -35,7 +35,7 @@ git clone https://github.com/Azure-Samples/containerize-and-deploy-Java-app-to-A
 Run the following command in your CLI:
 
 ```bash
-cd containerize-and-deploy-Java-app-to-Azure/Project/TurkishAirlines
+cd containerize-and-deploy-Java-app-to-Azure/Project/Airlines
 ```
 
 Optionally, if you have Maven and a JDK(8) or higher installed, you can run the following command in your CLI:
@@ -83,7 +83,7 @@ The following image depicts the multi-stage build and what is occurring in each 
 
 ![Screenshot showing the Docker multi-stage build.](../media/dockerfile-package-stage.png)
 
-Within the root of your project, containerize-and-deploy-Java-app-to-Azure/Project/TurkishAirlines, Create a file called Dockerfile:
+Within the root of your project, containerize-and-deploy-Java-app-to-Azure/Project/Airlines, Create a file called Dockerfile:
 
 ```bash
 vi Dockerfile
