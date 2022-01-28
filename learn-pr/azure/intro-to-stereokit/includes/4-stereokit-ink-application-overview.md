@@ -16,15 +16,15 @@ Also, you'll discover how simple it is to draw models, lines, and create hand-ba
 
 StereoKit Ink's features were chosen to represent a sampling of common tasks required by content creation tools. The code provided is meant to be easy to read and understand rather than fully featured or robust. This should serve as a great way to get a feel for how to use StereoKit's API and see how much can be done with very little code.
 
-## Pre-requisites
+## Prerequisites
 
 This project uses **StereoKit** to build a Mixed Reality application on HoloLens 2 and VR headsets.
 
 ## Project layout
 
-StereoKit Ink's solution uses a 2 project setup: **.Net Core** and  **UWP**. Different project types support different features and platforms, and it may be common to switch between them depending on what you're working on.
+StereoKit Ink's solution uses a 2 project setup: **.NET Core** and  **UWP**. Different project types support different features and platforms, and it may be common to switch between them depending on what you're working on.
 
-* **.Net Core project** includes:
+* **.NET Core project** includes:
   * Desktop VR
   * Flatscreen MR Simulator
   * Leap Motion articulated hands

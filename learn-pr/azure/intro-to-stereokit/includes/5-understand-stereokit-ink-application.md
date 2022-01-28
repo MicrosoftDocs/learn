@@ -115,7 +115,7 @@ This file is a menu that controls painting options. It's mainly composed of buil
 
 * **Color swatches**: Here, we'll display a list of pre-picked color swatches. These color swatches are custom buttons, so check out the SwatchColor method later.
 
-  :::image type="content" source="../media/inkcolor.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/inkcolor.png":::
+  :::image type="content" source="../media/ink-color.png" alt-text="Screenshot of ink colors in ink tools window.” " lightbox="../media/ink-color.png":::
 
     ```c#
     SwatchColor("White", _hue, 0,   1);
