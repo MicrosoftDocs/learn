@@ -25,3 +25,8 @@ At the end of the module, you'll be able to:
 - Understand the value of a security-focused team culture
 - Highlight the roles involved in securing your workflow
 - Recognize best practices for identifying and responding to security vulnerabilities
+
+## Prerequisites
+
+- A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
+- Working knowledge of GitHub Actions and workflows
