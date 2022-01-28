@@ -38,11 +38,14 @@ Run the following command in your CLI:
 cd containerize-and-deploy-Java-app-to-Azure/Project/TurkishAirlines
 ```
 
-Run the following command in your CLI:
+Optionally, if you have Maven and a JDK installed, you can run the following command in your CLI:
 
 ```bash
 mvn clean install
 ```
+
+> [!NOTE]
+> The ```mvn clean install``` command was used to illustrate the orchestration challenges of not using Docker multi-stage builds, that we will cover next. Again this step is optional, either way you can safely move along without executing the Maven command.
 
 Maven should have successfully built the Flight Booking System for Airline Reservations Web Application Archive artifact FlightBookingSystemSample-0.0.-SNAPSHOT.war, as seen below:
 
