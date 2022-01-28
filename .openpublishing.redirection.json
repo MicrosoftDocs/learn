@@ -1231,6 +1231,251 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/2-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/2-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/3-exercise-run-notebook.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/3-exercise-run-notebook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/4-exercise-advanced-commands.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/4-exercise-advanced-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-jupyter-notebook/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-jupyter-notebook/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/2-print.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/2-print",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/3-exercise-print.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/3-exercise-print",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/4-input.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/4-input",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/5-exercise-input.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/5-exercise-input",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-run-program/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/2-set-up-project.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/2-set-up-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/3-exercise-create-package.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/3-exercise-create-package",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/4-work-with-project-files.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/4-work-with-project-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/5-exercise-manage-project-file.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/5-exercise-manage-project-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/create-manage-projects/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-manage-projects/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/2-what-are-if-statements.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/2-what-are-if-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/3-what-are-else-elif-statements.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/3-what-are-else-elif-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/4-exercise-write-if-statements.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/4-exercise-write-if-statements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/5-what-are-and-or-operators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/5-what-are-and-or-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/6-exercise-use-and-or-operators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/6-exercise-use-and-or-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-boolean-types/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/2-what-are-operators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/2-what-are-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/3-exercise-use-operators.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/3-exercise-use-operators.yml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/4-advanced-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/4-advanced-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/5-exercise-use-advanced-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/5-exercise-use-advanced-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-math-operators/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/2-string-basics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/2-string-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/3-string-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/3-string-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/4-exercise-transform-strings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/4-exercise-transform-strings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/5-string-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/5-string-format",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/6-exercise-format-strings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/6-exercise-format-strings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/use-strings/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/8-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/languages/python-create-first/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-first/1-introduction",
       "redirect_document_id": false
