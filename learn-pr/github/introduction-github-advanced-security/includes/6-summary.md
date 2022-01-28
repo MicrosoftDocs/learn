@@ -23,4 +23,3 @@ Use the following resources to learn more about GitHub Advanced Security:
 - [Secret scanning](https://docs.github.com/en/code-security/secret-scanning)
 - [CodeQL](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-code-scanning-with-codeql)
 - [About billing for GitHub Advanced Security](https://docs.github.com/en/billing/managing-billing-for-github-advanced-security/about-billing-for-github-advanced-security)
-

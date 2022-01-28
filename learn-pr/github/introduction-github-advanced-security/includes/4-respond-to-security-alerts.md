@@ -11,7 +11,7 @@ Although teams cannot always avoid errors, quick action reduces risks. Failing t
 
 In the "What is GitHub Advanced Security" unit, you learned that GitHub's code scanning helps to identify vulnerabilities in your code. When the system identifies a problem, it notifies your team with alerts highlighting the issue. This helps you to quickly identify the issue. Once GitHub flags a vulnerability in your codebase, analyzing the flaw is the next step.
 
-:::image type="content" source="../media/triage.png" alt-text="Screenshot showing menu options for resolving alerts" border="false":::
+:::image type="content" source="../media/triage.png" alt-text="Screenshot showing menu options for resolving alerts." border="false":::
 
 As you see in the image above, you have control over the code scanning process. If the scan has misunderstood your intent, you can dismiss the alert identifying a reason for the dismissal. Indicate if the scan has highlighted a false positive, code used in tests, or an irrelevant alert.
 
@@ -19,7 +19,7 @@ You can also interact with scanning alerts through pull requests. You can see de
 
 ### Manage security alerts
 
-:::image type="content" source="../media/code-scanning-filter-by-tool.png" alt-text="Screenshot of code scanning alerts" border="false":::
+:::image type="content" source="../media/code-scanning-filter-by-tool.png" alt-text="Screenshot of code scanning alerts." border="false":::
 
 GitHub provides you with an overview of your repository alerts along with the triage functionality. This summary facilitates the prioritization of security alerts. Navigate to the security tab of your repository and select **Code scanning alerts**. Use the free text search box or the drop-down menus to filter alerts.
 

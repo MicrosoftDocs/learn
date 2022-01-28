@@ -8,7 +8,7 @@ Why should you care about creating a culture centered around security in your or
 
 ## Shift left
 
-:::image type="content" source="../media/shift-left3.png" alt-text="Screenshot of shift left icon." border="false":::
+:::image type="content" source="../media/shift-left-3.png" alt-text="Screenshot of shift left icon." border="false":::
 
 You may have heard that a company or development team is beginning to "shift left." To understand this phrase, you must first realize that security has commonly been an isolated topic in many software development paradigms. The development lifecycle has figuratively begun "on the left" with design and development. Then the lifecycle ends to the right, bringing in quality control and deployment tasks. Workflows often include security only after the development stage. At that point, only a specific group of team members would perform a security review.
 

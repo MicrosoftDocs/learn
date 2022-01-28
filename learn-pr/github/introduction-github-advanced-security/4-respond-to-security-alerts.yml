@@ -9,6 +9,7 @@ metadata:
   author: davenowell
   ms.author: dapolite
   ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/4-respond-to-security-alerts.md)]

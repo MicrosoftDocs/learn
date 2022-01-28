@@ -1,6 +1,6 @@
 The previous unit discussed the importance of securing your environment from malicious actors. The real-life cases highlighted some of the ways in which hackers can exploit systems. In this unit, you'll be introduced to GitHub Advanced Security. Let's focus on the various product features and the challenge or problem that these features address.
 
-:::image type="content" source="../media/ghas-intro.png" alt-text="Diagram showing GHAS features" border="false":::
+:::image type="content" source="../media/ghas-intro.png" alt-text="Diagram showing GHAS features." border="false":::
 
 GitHub Advanced Security is a powerful suite of tools and features that give you the ability to identify security vulnerabilities in your codebase and environment. These features enable you to secure your code at every step of the software development lifecycle, not just in your production environment. You stay ahead of security threats and breaches, leverage the expertise of the security community, and continue to use open source software securely. GitHub Advanced Security also includes implementing security best practices that help create a security-minded culture within your organization.
 
@@ -26,7 +26,7 @@ Let's look at the features you can use to monitor and secure your software suppl
 
 ### The security overview
 
-:::image type="content" source="../media/security-overview.png" alt-text="Screenshot of security overview" border="true":::
+:::image type="content" source="../media/security-overview.png" alt-text="Screenshot of security overview." border="true":::
 
 Once you have an established supply chain, GitHub's security overview provides you with a central location to properly oversee it.  This makes it easier to monitor the state of your project's dependencies. The security overview enables you to identify problematic repositories and understand how your dependencies impact the security of your code. You can also enable security features from the security overview. View, filter, and sort automated security alerts generated for your organization or a specific team. The overview also enables you to filter alerts by their level of risk so you can prioritize your response.
 
@@ -36,7 +36,7 @@ The security overview includes icons for different types of alerts. These icons 
 
 Visualizations can simplify and summarize large amounts of data. Dependency graphs enable you to acquire important insights into your project's direct and indirect package dependencies and their current state. The graphs display a summary of manifest and lock files in the project's ecosystem, repository, and packages. You can also see if dependencies are up-to-date and secure.
 
-:::image type="content" source="../media/dependency-graph.png" alt-text="Screenshot of dependency graph" border="true":::
+:::image type="content" source="../media/dependency-graph.png" alt-text="Screenshot of dependency graph." border="true":::
 
 The dependency graph enables you to monitor any known issues within dependencies that may affect the security of your application. It is important to note that once you have activated the dependency graph, you have access to dependency reviews for both private and public repositories belonging to your organization. These reviews help keep dependency vulnerabilities from being introduced into your environment.
 
@@ -50,7 +50,7 @@ Now, let's look at another component that relies on the GitHub Advisory Database
 
 ### Dependabot for automated dependency management
 
-:::image type="content" source="../media/dependabot-gh.png" alt-text="Screenshot of Dependabot icon" border="false":::
+:::image type="content" source="../media/dependabot-github.png" alt-text="Screenshot of Dependabot icon." border="false":::
 
 Imagine a project that includes 20 to 30 third-party integrations. Manually monitoring so many dependencies and keeping them up to date is time-consuming and tedious. Dependabot is GitHub's answer to this challenge. The built-in mechanism detects vulnerable dependencies by first examining the project's manifest file (such as the `package.json` file used in NodeJS). Next, Dependabot consults the GitHub Advisory Database to see if the detected dependencies have a flag that indicates they are out-of-date or vulnerable. If there is an issue with any dependency or when a dependency graph related to a repositories changes, Dependabot alerts authorized team members.
 
