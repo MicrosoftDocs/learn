@@ -1,6 +1,6 @@
-If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when an object is evaluated at runtime, but the object points to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (Sir Tony Hoare) refers to `null` as the "billion dollar mistake".
+If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when a variable is evaluated at runtime, but the variable refers to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (Sir Tony Hoare) refers to `null` as the "billion dollar mistake".
 
-In the following example, the `FooBar` object is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
+In the following example, the `FooBar` variable is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
 
 ```csharp
 // Declare variable and assign it as null.
@@ -14,7 +14,7 @@ _ = fooBar.ToString();
 record FooBar(int Id, string Name);
 ```
 
-The preceding example is obvious, but when your apps grow in size and complexity, the problem becomes much more difficult to spot as a developer. This is a job for tooling, and the C# compiler platform (Rosyln) is here to help!
+The preceding example is obvious, but when your apps grow in size and complexity, the problem becomes much more difficult to spot as a developer. This is a job for tooling, and the C# compiler is here to help!
 
 ## Defining null safety
 
@@ -69,7 +69,7 @@ Starting with C# 2.0, you could define _nullable value types_ using `Nullable<T>
 int? first;            // first is implicitly null (uninitialized)
 int? second = null;    // second is explicitly null
 int? third = default;  // third is null as the default value for Nullable<Int32> is null
-int? forth = new();    // forth is 0, since new calls the nullable constructor
+int? fourth = new();    // fourth is 0, since new calls the nullable constructor
 ```
 
 In the preceding example:
@@ -77,7 +77,7 @@ In the preceding example:
 - `first` is `null` because the nullable value type is uninitialized.
 - `second` is assigned `null` when it's declared.
 - `third` is `null` as the `default` value for `Nullable<int>` is `null`.
-- `forth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
+- `fourth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
 
 C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
 
@@ -98,7 +98,7 @@ Given the preceding example, the compiler infers your *intent* as follows:
 
 - `first` is *never* `null` as it is definitely assigned.
 - `second` *should never* be `null`, even though it's initially `null`. Evaluating `second` before assigning a value results in a compiler warning as it is uninitialized.
-- `third` *might be* `null`. For example, it *might* point to a `System.String`, but it *might* point to `null`. Either is acceptable to you.
+- `third` *might be* `null`. For example, it *might* point to a `System.String`, but it *might* point to `null`. Either is acceptable to you. The compiler helps you by warning you if you dereference `third` without first checking that it isn't null.
 
 ## Nullable context
 

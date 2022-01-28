@@ -91,7 +91,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     dotnet build
     ```
 
-    This time, the build succeeds with no errors or warnings. That's because the first build was successful regardless of warnings. Since the first build successfully completed, the compiler doesn't attempt to compile unchanged code again on subsequent builds. Warnings only occur at compile time. If the compiler doesn't run, warnings aren't generated.
+    This time, the build succeeds with no errors or warnings. The previous build completed successfully, with warnings. Because the source didn't change, the build process doesn't run the compiler again. Because the build doesn't run the compiler, there's no warnings.
 
     > [!TIP]
     > You can force a rebuild of all assemblies in a project by using the `dotnet clean` command prior to `dotnet build`.
@@ -105,7 +105,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     The previous changes instruct the compiler to fail the build whenever a warning is encountered.
 
     > [!TIP]
-    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures warnings aren't allowed to inadvertently pass a continuous integration build warning.
+    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures warnings prevent you from missing any remaining warnings when you've finished your coding tasks.
 
 1. Build the sample solution using the `dotnet build` command.
 
@@ -153,7 +153,7 @@ There are a plethora of tactics to resolve warnings/errors related to nullabilit
 
     In the preceding code:
 
-    - A new backing field is added to help intercept the `get` and `set` property accessors named `_cheeses`. It is declared as nullable (`?`) and initialized with the null-forgiving operator (`!`).
+    - A new backing field is added to help intercept the `get` and `set` property accessors named `_cheeses`. It is declared as nullable (`?`) and left uninitialized.
     - The `get` accessor is mapped to an expression that uses the null-coalescing operator (`??`). This expression returns the `_cheeses` field, assuming it's not `null`. If it's `null`, it assigns `_cheeses` to `new List<PizzaCheese>()` before returning `_cheeses`.
     - The `set` accessor is also mapped to an expression and makes use of the null-coalescing operator. When a consumer assigns a `null` value the <xref:System.ArgumentNullException> is thrown.
 

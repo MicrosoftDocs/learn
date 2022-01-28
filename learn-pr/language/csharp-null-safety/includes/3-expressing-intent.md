@@ -23,7 +23,7 @@ A good practice is to assign your non-nullable variables non-`null` values when 
 
 ```csharp
 // Define as non-nullable, assign using 'new' keyword
-FooBar fooBar = new(Id: 1, Name: Foo);
+FooBar fooBar = new(Id: 1, Name: "Foo");
 ```
 
 ## Operators
@@ -96,7 +96,7 @@ In the preceding example:
 You can use the null-forgiving operator to `fooList` to disable the warning:
 
 ```csharp
-FooBar fooBar = fooList!.Find(f => f.Name=="Bar")!;
+FooBar fooBar = fooList!.Find(f => f.Name == "Bar")!;
 ```
 
 ### null-coalescing (`??`) operator
