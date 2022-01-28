@@ -36,7 +36,7 @@ To simplify the commands that will be executed further down, set up the followin
 >
 > You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created, for example: someuniquevaluejavacontainerregistry
 >
-> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Service cluster when it is created, for example: someuniquevaluejavacontainerizationdemoaks
+> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created, for example: someuniquevaluejavacontainerizationdemoaks
 
 ```bash
 AZ_RESOURCE_GROUP=javacontainerizationdemorg
