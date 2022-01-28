@@ -59,7 +59,7 @@ record FooBar(int Id, string Name);
 In the preceding example, `FooBar fooBar = fooList.Find(f => f.Name == "Bar");` generates a CS8600 warning because `Find` might return `null`. This possible `null` would be assigned to `fooBar`, which is non-nullable in this context. However, in this contrived example, we know that `Find` will never return `null` as written. You can express this intent to the compiler with the null-forgiving operator:
 
 ```csharp
-FooBar fooBar = fooList.Find(f => f.Name =="Bar")!;
+FooBar fooBar = fooList.Find(f => f.Name == "Bar")!;
 ```
 
 Note the `!` at the end of `fooList.Find(f => f.Name =="Bar")`. This tells the compiler that you know that the object returned by the `Find` method might be `null`, and it's okay.
@@ -72,9 +72,6 @@ List<FooBar>? fooList = FooListFactory.GetFooList();
 // Declare variable and assign it as null.
 FooBar fooBar = fooList.Find(f => f.Name=="Bar")!; // generates warning
 
-// The FooBar type definition for example.
-record FooBar(int Id, string Name);
-
 static class FooListFactory
 {
     public static List<FooBar>? GetFooList() =>
@@ -84,6 +81,9 @@ static class FooListFactory
             new(Id: 2, Name: "Bar")
         };
 }
+
+// The FooBar type definition for example.
+record FooBar(int Id, string Name);
 ```
 
 In the preceding example:
@@ -98,6 +98,11 @@ You can apply the null-forgiving operator to `fooList` to disable the warning:
 ```csharp
 FooBar fooBar = fooList!.Find(f => f.Name == "Bar")!;
 ```
+
+> [!NOTE]
+> The null-forgiving operator should be used judiciously. Using it simply to dismiss a warning means that you're telling the compiler not to help you discover possible null mishaps. Use sparingly and only when you are certain.
+
+For more information, see [! (null-forgiving) operator (C# reference)](/dotnet/csharp/language-reference/operators/null-forgiving).
 
 ### Null-coalescing (`??`) operator
 
@@ -135,6 +140,26 @@ In the preceding C# code:
 > }
 > ```
 
+Another common C# idiom where the null-coalescing operator can be useful, is shown in the following example:
+
+```csharp
+public sealed class Wrapper<T> where T : new()
+{
+    private T _source;
+
+    // If given a source, wrap it. Otherwise, wrap a new source:
+    public Wrapper(T source = null) => _source = source ?? new T();
+}
+```
+
+The preceding C# code:
+
+- Defines a generic wrapper class, where the generic type parameter is constrained to `new()`.
+- The constructor accepts a `T source` parameter that is defaulted to `null`.
+- The wrapped `_source` is conditionally initialized to a `new T()`.
+
+For more information, see [?? and ??= operators (C# reference)](/dotnet/csharp/language-reference/operators/null-coalescing-operator).
+
 ### Null-conditional (`?.`) operator
 
 When working with nullable types, you may need to conditionally perform actions based on the state of a `null` object. For example, in the previous unit, the `FooBar` record was used to demonstrate `NullReferenceException` by dereferencing `null`. This was caused when its `ToString` was called. Consider this same example, but now applying the null-conditional operator:
@@ -155,9 +180,11 @@ record FooBar(int Id, string Name);
 
 The preceding C# code:
 
-- Declares and assigns a variable named `fooBar` (of type `FooBar`) to `null`.
 - Conditionally dereferences `fooBar`, assigning the result of `ToString` to the `str` variable.
-- Writes the value of `str` to standard output which is nothing.
+  - The `str` variable is of type `string?` (nullable string).
+- It writes the value of `str` to standard output which is nothing.
+- Calling `Console.Write(null)` is valid, so there is no warnings.
+- You would get a warning if you were to call `Console.Write(str.Length)` because you'd be potentially dereferencing null.
 
 > [!TIP]
 > This is functionally equivalent to the following C# code:
@@ -175,6 +202,16 @@ The preceding C# code:
 > // The FooBar type definition.
 > record FooBar(int Id, string Name);
 > ```
+
+You can combine operator to further express your intent. For example, you could chain the `?.` and `??` operators:
+
+```csharp
+FooBar fooBar = null;
+var str = fooBar?.ToString() ?? "unknown";
+Console.Write(str); // output: unknown
+```
+
+For more information, see [?. and ?[] (null-conditional) operators](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
 
 ## Summary
 

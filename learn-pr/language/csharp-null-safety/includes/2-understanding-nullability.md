@@ -104,7 +104,7 @@ Nullable contexts enable fine-grained control for how the compiler interprets re
 - `disable`: The compiler behaves similarly to C# 7.3 and earlier.
 - `enable`: The compiler enables all null reference analysis and all language features.
 - `warnings`: The compiler performs all null analysis and emits warnings when code might dereference `null`.
-- `annotations`: The compiler doesn't perform null analysis or emit warnings when code might dereference `null`.
+- `annotations`: The compiler doesn't perform null analysis or emit warnings when code might dereference `null`, but you can still annotate your code using nullable reference types `?` and null-forgiving operators (`!`).
 
 This module is scoped to the either `disable` or `enable` nullable contexts. For more information, see [Nullable reference types: Nullable contexts](/dotnet/csharp/nullable-references#nullable-contexts).
 
