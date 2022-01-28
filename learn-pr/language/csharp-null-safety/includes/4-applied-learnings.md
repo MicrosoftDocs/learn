@@ -91,7 +91,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     dotnet build
     ```
 
-    This time, the build succeeds with no errors or warnings. The previous build completed successfully, with warnings. Because the source didn't change, the build process doesn't run the compiler again. Because the build doesn't run the compiler, there's no warnings.
+    This time, the build succeeds with no errors or warnings. The previous build completed successfully, with warnings. Since the source didn't change, the build process doesn't run the compiler again. Since the build doesn't run the compiler, there are no warnings.
 
     > [!TIP]
     > You can force a rebuild of all assemblies in a project by using the `dotnet clean` command prior to `dotnet build`.
@@ -105,7 +105,7 @@ Now you'll enable a nullable context and examine its effect on the build.
     The previous changes instruct the compiler to fail the build whenever a warning is encountered.
 
     > [!TIP]
-    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures warnings prevent you from missing any remaining warnings when you've finished your coding tasks.
+    > The use of `<TreatWarningsAsErrors>` is optional. However, we recommend it as it ensures you don't overlook any warnings.
 
 1. Build the sample solution using the `dotnet build` command.
 
@@ -135,11 +135,11 @@ Now you'll enable a nullable context and examine its effect on the build.
     Time Elapsed 00:00:02.95
     ```
 
-    Now that we're treating warnings as errors, the app no longer builds. This is in fact desired in this situation, as the number of errors is small and we'll quickly address them. The two errors (CS8618) let you know that there are properties, which are declared as non-nullable that have not yet been initialized with a value. There are many ways to address this.
+    Now that we're treating warnings as errors, the app no longer builds. This is in fact desired in this situation, as the number of errors is small and we'll quickly address them. The two errors (CS8618) let you know that there are properties declared as non-nullable that have not yet been initialized.
 
 ## Fix the errors
 
-There are a plethora of tactics to resolve warnings/errors related to nullability. Some examples include:
+There are a plethora of tactics to resolve the warnings/errors related to nullability. Some examples include:
 
 - Require a non-nullable collection of cheeses and toppings as constructor parameters.
 - Intercept the property `get`/`set` and add a `null` check.
@@ -157,7 +157,7 @@ There are a plethora of tactics to resolve warnings/errors related to nullabilit
     - The `get` accessor is mapped to an expression that uses the null-coalescing operator (`??`). This expression returns the `_cheeses` field, assuming it's not `null`. If it's `null`, it assigns `_cheeses` to `new List<PizzaCheese>()` before returning `_cheeses`.
     - The `set` accessor is also mapped to an expression and makes use of the null-coalescing operator. When a consumer assigns a `null` value the <xref:System.ArgumentNullException> is thrown.
 
-1. To fix the error on the `Pizza.Toppings` property (because not all pizzas have toppings):
+1. Since not all pizzas have toppings, `null` might be a valid value for the `Pizza.Toppings` property. In this case, it makes sense to express it as being nullable.
 
     1. Modify the property definition on *Pizza.cs* to allow `Toppings` to be nullable.
 

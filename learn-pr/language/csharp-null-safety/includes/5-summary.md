@@ -1,6 +1,6 @@
-Our goal was to learn how to enable nullable context and act on build warnings/errors to avoid `NullReferenceException`. At the outset, we said that defined what nullability in C# looks like. You learned that all reference types can be `null` and that `Nullable<T>` enables value types to also be consider `null`.
+In this module, you learned how to enable nullable context and act on build warnings/errors to avoid `NullReferenceException`. You began by defining nullability in C#. You learned that all reference types can be `null` and that `Nullable<T>` enables value types to also be assigned `null`.
 
-Utilizing a nullable enabled context, we could identify potential places in our code where `null` might have been errantly dereferenced. After reevaluating the code, we were able to express our intent and adjust the desired behavior of our code using various C# operators. You learned about the null-forgiving (`!`), null-coalescing (`??`), and null-conditional (`?.`) operators.
+Utilizing a nullable enabled context, you identified code where `null` might have been errantly dereferenced. After reevaluating the code, you expressed your intent and adjusted the desired behavior of the code using various C# operators. You learned about the null-forgiving (`!`), null-coalescing (`??`), and null-conditional (`?.`) operators.
 
 There are many possible ways to handle nullability within C#. In a nullable enabled context the C# compiler helps you have a better understanding of how your expressed intent flows through.
 

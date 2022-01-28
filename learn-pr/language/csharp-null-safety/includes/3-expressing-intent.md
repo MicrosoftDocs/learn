@@ -2,14 +2,14 @@ In the previous unit, you learned how the C# compiler can perform static analysi
 
 ## Declaring variables
 
-With a nullable context enabled, you now have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continuing examining the `FooBar` code and scrutinize the declaration and assignment:
+With a nullable context enabled, you have more visibility into how the compiler sees your code. The warnings generated from a nullable-enabled context can be acted upon, and in doing so you're explicitly defining your intentions. For example, let's continue examining the `FooBar` code and scrutinize the declaration and assignment:
 
 ```csharp
 // Define as nullable
 FooBar? fooBar = null;
 ```
 
-Note the `?` added to `FooBar`. This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for the `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
+Note the `?` added to `FooBar`. This tells the compiler that you explicitly intend for `fooBar` to be nullable. If you do not intend for `fooBar` to be nullable, but you still want to avoid the warning, consider the following:
 
 ```csharp
 // Define as non-nullable, but tell compiler to ignore warning
@@ -30,14 +30,14 @@ FooBar fooBar = new(Id: 1, Name: "Foo");
 
 As discussed in the previous unit, C# defines several operators to express your intent around nullable reference types.
 
-### null-forgiving (`!`) operator
+### Null-forgiving (`!`) operator
 
 You were introduced to the null-forgiving operator (`!`) in the previous section. It tells the compiler to ignore the CS8600 warning. This is one way to tell the compiler that you know what you're doing, but it comes with the caveat that you should _actually know what you're doing_!
 
 > [!TIP]
-> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_ When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness.
+> The null-forgiving operator is colloquially referred to as the "dammit" operator. _I know what I'm doing, dammit!_
 
-For example, consider the following code:
+When you initialize non-nullable types while a nullable context is enabled, you may need to explicitly ask the compiler for forgiveness. For example, consider the following code:
 
 ```csharp
 #nullable enable
@@ -93,15 +93,17 @@ In the preceding example:
 - The compiler generates a warning on `fooList.Find(f => f.Name == "Bar");` because the value assigned to `fooList` might be `null`.
 - Assuming `fooList` isn't `null`, `Find` *might* return `null`, but we know it won't, so the null-forgiving operator is applied.
 
-You can use the null-forgiving operator to `fooList` to disable the warning:
+You can apply the null-forgiving operator to `fooList` to disable the warning:
 
 ```csharp
 FooBar fooBar = fooList!.Find(f => f.Name == "Bar")!;
 ```
 
-### null-coalescing (`??`) operator
+### Null-coalescing (`??`) operator
 
-When working with nullable types, you may need to evaluate whether they're currently `null` and take certain action. For example, when a nullable type has either been assigned `null` or they're uninitialized you may need to assign them a non-null value.
+When working with nullable types, you may need to evaluate whether they're currently `null` and take certain action. For example, when a nullable type has either been assigned `null` or they're uninitialized, you may need to assign them a non-null value. That's where the null-coalescing operator (`??`) is useful.
+
+Consider the following example:
 
 ```csharp
 public void CalculateSalesTax(IStateSalesTax? salesTax = null)
@@ -114,12 +116,12 @@ public void CalculateSalesTax(IStateSalesTax? salesTax = null)
 
 In the preceding C# code:
 
-- The `salesTax` parameter is defined as being nullable.
+- The `salesTax` parameter is defined as being a nullable `IStateSalesTax`.
 - Within the method body, the `salesTax` is conditionally assigned using the null-coalescing operator.
   - This ensures that if `salesTax` was passed in as `null` that it will have a value.
 
 > [!TIP]
-> This is functionally equivalent as the following C# code:
+> This is functionally equivalent to the following C# code:
 >
 > ```csharp
 > public void CalculateSalesTax(IStateSalesTax? salesTax = null)
@@ -133,9 +135,9 @@ In the preceding C# code:
 > }
 > ```
 
-### null-conditional (`?.`) operator
+### Null-conditional (`?.`) operator
 
-When working with nullable types, you may need to conditionally perform actions based on the state of a `null` object. For example, from the previous unit the `FooBar` record exemplified the `NullReferenceException` by dereferencing `null`. This was caused when its `ToString` was called. Consider this same example, but now applying the null-conditional operator:
+When working with nullable types, you may need to conditionally perform actions based on the state of a `null` object. For example, in the previous unit, the `FooBar` record was used to demonstrate `NullReferenceException` by dereferencing `null`. This was caused when its `ToString` was called. Consider this same example, but now applying the null-conditional operator:
 
 ```csharp
 using System;
@@ -154,8 +156,25 @@ record FooBar(int Id, string Name);
 The preceding C# code:
 
 - Declares and assigns a variable named `fooBar` (of type `FooBar`) to `null`.
-- It conditionally dereferences `fooBar`, assigning the result of `ToString` to the `str` variable.
-- It writes the value of `str` to standard output which is nothing.
+- Conditionally dereferences `fooBar`, assigning the result of `ToString` to the `str` variable.
+- Writes the value of `str` to standard output which is nothing.
+
+> [!TIP]
+> This is functionally equivalent to the following C# code:
+>
+> ```csharp
+> using System;
+>
+> // Declare variable and assign it as null.
+> FooBar fooBar = null;
+>
+> // Conditionally dereference variable.
+> string str = (fooBar is not null) ? fooBar.ToString() : default;
+> Console.Write(str);
+>
+> // The FooBar type definition.
+> record FooBar(int Id, string Name);
+> ```
 
 ## Summary
 
