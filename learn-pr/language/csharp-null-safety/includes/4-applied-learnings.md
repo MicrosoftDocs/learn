@@ -1,5 +1,10 @@
 In the previous unit, you learned about expressing your nullablility intent in code. In this unit, you'll apply what you've learned to an existing C# project.
 
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
+[!include[](../../../includes/dotnet6-sdk-version.md)]
+
 ## Retrieve and examine the sample code
 
 1. At a command terminal, clone the sample GitHub repository and switch to the cloned directory.
@@ -29,7 +34,7 @@ In the previous unit, you learned about expressing your nullablility intent in c
        at Program.<Main>$(String[] args) in .\src\ContosoPizza.Service\Program.cs:line 13
     ```
 
-    The stack trace indicates that the exception occurred on line 13. On line 13, the `Add` method is called on the `pizza.Cheeses` property. Since `pizza.Cheeses` is `null`, a <xref:System.NullReferenceException> is thrown.
+    The stack trace indicates that the exception occurred on line 13 in _.\src\ContosoPizza.Service\Program.cs_.. On line 13, the `Add` method is called on the `pizza.Cheeses` property. Since `pizza.Cheeses` is `null`, a <xref:System.NullReferenceException> is thrown.
 
     :::code source="~/../csharp-null-safety-main/src/ContosoPizza.Service/Program.cs" highlight="13":::
 

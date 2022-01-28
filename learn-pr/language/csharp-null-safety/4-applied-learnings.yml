@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-null-safety.applied-learnings
-title: Applied learnings
+title: Exercise - Apply null-safety strategies
 metadata:
   unitType: learning-content
   title: Applied learnings
@@ -10,6 +10,6 @@ metadata:
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/4-applied-learnings.md)]
