@@ -1481,232 +1481,232 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/1-introduction.md",
+      "source_path": "learn-pr/languages/python-create-first/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/2-exercise-hello-world.md",
+      "source_path": "learn-pr/languages/python-create-first/2-exercise-hello-world.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/3-exercise-hello-name.md",
+      "source_path": "learn-pr/languages/python-create-first/3-exercise-hello-name.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/4-exercise-add-numbers.md",
+      "source_path": "learn-pr/languages/python-create-first/4-exercise-add-numbers.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/5-challenge.md",
+      "source_path": "learn-pr/languages/python-create-first/5-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/6-solution.md",
+      "source_path": "learn-pr/languages/python-create-first/6-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/7-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-create-first/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/8-summary.md",
+      "source_path": "learn-pr/languages/python-create-first/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-create-first/index.md",
+      "source_path": "learn-pr/languages/python-create-first/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-create-run-program/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/10-summary.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/1-introduction.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/2-exercise-determine-datatypes.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/2-exercise-determine-datatypes.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/3-exercise-isnumeric.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/3-exercise-isnumeric.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/4-exercise-numeric-operations.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/4-exercise-numeric-operations.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/5-challenge.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/5-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/6-solution.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/6-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/7-challenge-2.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/7-challenge-2.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/8-solution-2.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/8-solution-2.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/9-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/9-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-datatypes-numeric-operations/index.md",
+      "source_path": "learn-pr/languages/python-datatypes-numeric-operations/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-math-operators/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/1-introduction.md",
+      "source_path": "learn-pr/languages/python-format-strings/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/2-exercise-format-string-literals.md",
+      "source_path": "learn-pr/languages/python-format-strings/2-exercise-format-string-literals.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/3-exercise-string-helper-functions.md",
+      "source_path": "learn-pr/languages/python-format-strings/3-exercise-string-helper-functions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/4-exercise-format-function.md",
+      "source_path": "learn-pr/languages/python-format-strings/4-exercise-format-function.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/5-challenge.md",
+      "source_path": "learn-pr/languages/python-format-strings/5-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/6-solution.md",
+      "source_path": "learn-pr/languages/python-format-strings/6-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/7-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-format-strings/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/8-summary.md",
+      "source_path": "learn-pr/languages/python-format-strings/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-format-strings/index.md",
+      "source_path": "learn-pr/languages/python-format-strings/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-strings/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/1-introduction.md",
+      "source_path": "learn-pr/languages/python-functions/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/2-exercise-functions.md",
+      "source_path": "learn-pr/languages/python-functions/2-exercise-functions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/3-exercise-parameters.md",
+      "source_path": "learn-pr/languages/python-functions/3-exercise-parameters.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/4-exercise-modules.md",
+      "source_path": "learn-pr/languages/python-functions/4-exercise-modules.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/5-challenge.md",
+      "source_path": "learn-pr/languages/python-functions/5-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/6-solution.md",
+      "source_path": "learn-pr/languages/python-functions/6-solution.md",
       "redirect_url": "hhttps://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/7-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-functions/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/8-summary.md",
+      "source_path": "learn-pr/languages/python-functions/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-functions/index.md",
+      "source_path": "learn-pr/languages/python-functions/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/functions-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/1-introduction.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/2-exercise-branch-code.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/2-exercise-branch-code.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/3-exercise-boolean-expressions.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/3-exercise-boolean-expressions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/4-challenge.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/4-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/5-solution.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/5-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/6-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/6-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/7-summary.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-if-elif-else/index.md",
+      "source_path": "learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-boolean-types/",
       "redirect_document_id": false
     },
@@ -1756,162 +1756,162 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/1-introduction.md",
+      "source_path": "learn-pr/languages/python-introduction/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/2-understand-programming.md",
+      "source_path": "learn-pr/languages/python-introduction/2-understand-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/3-understand-compilation.md",
+      "source_path": "learn-pr/languages/python-introduction/3-understand-compilation.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/4-understand-process-programming.md",
+      "source_path": "learn-pr/languages/python-introduction/4-understand-process-programming.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/5-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-introduction/5-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/6-summary.md",
+      "source_path": "learn-pr/languages/python-introduction/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-introduction/index.md",
+      "source_path": "learn-pr/languages/python-introduction/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-python/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/1-introduction.md",
+      "source_path": "learn-pr/languages/python-lists/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/2-exercise-list.md",
+      "source_path": "learn-pr/languages/python-lists/2-exercise-list.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/3-exercise-for.md",
+      "source_path": "learn-pr/languages/python-lists/3-exercise-for.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/4-challenge.md",
+      "source_path": "learn-pr/languages/python-lists/4-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/5-solution.md",
+      "source_path": "learn-pr/languages/python-lists/5-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/6-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-lists/6-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/7-summary.md",
+      "source_path": "learn-pr/languages/python-lists/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-lists/index.md",
+      "source_path": "learn-pr/languages/python-lists/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-python-lists/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/1-introduction.md",
+      "source_path": "learn-pr/languages/python-standard-library/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/2-overview.md",
+      "source_path": "learn-pr/languages/python-standard-library/2-overview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/3-exercise-include.md",
+      "source_path": "learn-pr/languages/python-standard-library/3-exercise-include.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/4-exercise-pip.md",
+      "source_path": "learn-pr/languages/python-standard-library/4-exercise-pip.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/5-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-standard-library/5-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/6-summary.md",
+      "source_path": "learn-pr/languages/python-standard-library/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-standard-library/index.md",
+      "source_path": "learn-pr/languages/python-standard-library/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-dictionaries/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/1-introduction.md",
+      "source_path": "learn-pr/languages/python-while/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/2-exercise-while.md",
+      "source_path": "learn-pr/languages/python-while/2-exercise-while.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/3-exercise-assignment-operators.md",
+      "source_path": "learn-pr/languages/python-while/3-exercise-assignment-operators.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/4-challenge.md",
+      "source_path": "learn-pr/languages/python-while/4-challenge.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/5-solution.md",
+      "source_path": "learn-pr/languages/python-while/5-solution.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/6-challenge-2.md",
+      "source_path": "learn-pr/languages/python-while/6-challenge-2.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/7-solution-2.md",
+      "source_path": "learn-pr/languages/python-while/7-solution-2.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/8-knowledge-check.md",
+      "source_path": "learn-pr/languages/python-while/8-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/9-summary.md",
+      "source_path": "learn-pr/languages/python-while/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/language/python-while/index.md",
+      "source_path": "learn-pr/languages/python-while/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/python-loops/",
       "redirect_document_id": false
     },
