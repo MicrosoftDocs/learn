@@ -41,46 +41,46 @@ quiz:
     choices:
     - content: "Chat"
       isCorrect: false
-      explanation: "ACS' Chat feature requires that a user be logged in and connected to a chat thread before they can get a reminder. SMS can deliver a message directly to their phone which they can read anywhere at any time."
-    - content: "SMS"
+      explanation: "ACS' Chat feature requires that a user be logged in and connected to a chat thread before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
+    - content: "Short Messaging Service(SMS)"
       isCorrect: true
-      explanation: "SMS can deliver a message directly to their phone which they can read anywhere at any time."
+      explanation: "Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
     - content: "Voice and video calling"
       isCorrect: false
-      explanation: "ACS' Calling features requires that a user be logged in and connected to a call before they can get a reminder. SMS can deliver a message directly to their phone which they can read anywhere at any time."
+      explanation: "ACS' Calling features requires that a user be logged in and connected to a call before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
   - content: "A company wants to provide live communication on their website for potential customers, which ACS feature would be most effective?"
     choices:
-    - content: "SMS"
+    - content: "Short Messaging Service(SMS)"
       isCorrect: false
-      explanation: "New customers are unlikely to be willing to provide their mobile phone number so SMS messages could not be sent to them. Chat is a better option for prospective customers as it does not require an existing identity or relationship with a customer."
+      explanation: "New customers are unlikely to be willing to provide their mobile phone number so Short Messaging Service(SMS) messages couldn't be sent to them. Chat is a better option for prospective customers as it doesn't require an existing identity or relationship with a customer."
     - content: "Chat"
       isCorrect: true
-      explanation: "Engaging with a new customer with a live chat interface is a great way to answer any immediate questions they have. This can also be done in a way that does not require a customer commitment."
+      explanation: "Engaging with a new customer with a live chat interface is a great way to answer any immediate questions they have. This can also be done in a way that doesn't require a customer commitment."
     - content: "Voice and video calling"
       isCorrect: false
-      explanation: "New customers are usually unwilling to be forced into a call with a live agent. Chat is a better option for prospective customers as it can be more passive and does not require a customer commitment."
-  - content: "A business in Australia wants to send SMS messages to its customers, why does this make ACS not a good choice?"
+      explanation: "New customers are usually unwilling to be forced into a call with a live agent. Chat is a better option for prospective customers as it can be more passive and doesn't require a customer commitment."
+  - content: "A business in Australia wants to send Short Messaging Service(SMS) messages to its customers, why does this make ACS not a good choice?"
     choices:
-    - content: "SMS features are not available in Australia"
+    - content: "Short Messaging Service(SMS) features aren't available in Australia"
       isCorrect: true
       explanation: "ACS currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
     - content: "Australia is too far away to use ACS."
       isCorrect: false
       explanation: "ACS is a global cloud service provider. ACS is only available in Australia. ACS currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
-  - content: "A new company is working on a brand new device for communication it also runs a proprietary programming language. Why is ACS not a good choice for this scenario?"
+  - content: "A new company is working on a brand-new device for communication it also runs a proprietary programming language. Why is ACS not a good choice for this scenario?"
     choices:
     - content: "The new business is risky and might fail."
       isCorrect: false
       explanation: "All sorts of businesses can use ACS even ones that might not succeed. It is the platform and programming language that the business is using that is the problem."
-    - content: "The business's programming language and platform are not compatible with ACS"
+    - content: "The business's programming language and platform aren't compatible with ACS"
       isCorrect: true
-      explanation: "ACS does not support all programming languages or devices yet. As this business is using a proprietary programming language and device, it is not compatible with ACS."
-    - content: "New businesses should not use ACS"
+      explanation: "ACS doesn't support all programming languages or devices yet. As this business is using a proprietary programming language and device, it isn't compatible with ACS."
+    - content: "New businesses shouldn't use ACS"
       isCorrect: false
       explanation: "New businesses can provide innovation and new insights to an industry they're welcome to try ACS. The issue is that their platform and device is incompatible with ACS."
   - content: "A company wants to process live communication data from its customers, why is ACS not a good choice for this?"
     choices:
-    - content: "ACS is not a data processing or analysis service."
+    - content: "ACS isn't a data processing or analysis service."
       isCorrect: true
       explanation: "That's correct, ACS is for communication features and not data processing. You'll need to use other Azure offerings."
     - content: "ACS cannot be used for communication reasons."
