@@ -13,7 +13,7 @@ code .
 
 To complete the component that sends messages about sales performance, follow these steps:
 
-1. In the Azure Cloud Shell editor, open **performancemessagesender/Program.cs** and locate the following line of code:
+1. In the Azure Cloud Shell editor, open *performancemessagesender/Program.cs* and locate the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
@@ -139,7 +139,7 @@ To complete the component that sends messages about sales performance, follow th
 
 ### Check the message count before you retrieve messages for a subscription
 
-When you see **Message was sent successfully**, run the following command to see how many messages are in the `Americas` subscription. Remember to replace \<namespace-name\> with your Service Bus Namespace.
+When you see **Message was sent successfully**, run the following command to see how many messages are in the `Americas` subscription. Remember to replace \<namespace-name\> with your Service Bus namespace.
 
 ```azurecli
 az servicebus topic subscription show \
@@ -157,6 +157,7 @@ If you replace `Americas` with `EuropeAndAsia` and run the command again, you'll
 To create the component that retrieves messages about sales performance, follow these steps:
 
 1. Run `code .` to launch the editor.
+
 1. In the editor, open *performancemessagereceiver/Program.cs* and locate the following line of code:
 
     ```csharp
@@ -327,7 +328,7 @@ To create the component that retrieves messages about sales performance, follow 
     }
     ```
 
-1. Save the file using either the **&#9776;** menu, or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Run code to retrieve a topic message for a subscription
 

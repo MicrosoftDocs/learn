@@ -2,20 +2,18 @@ You've chosen to use a Service Bus queue to handle messages about individual sal
 
 In the previous exercise, you implemented the necessary objects in your Azure subscription. Let's build upon those. Now, you want to write code that sends messages to that queue and retrieves messages.
 
-In this unit, you'll build two console applications, one that places messages into a Service Bus queue and one that retrieves them from a Service Bus queue. The applications are part of a single .NET Core solution.
+In this unit, you'll build two console applications: one application places messages into a Service Bus queue, and one application retrieves messages from a Service Bus queue. The applications are part of a single .NET Core solution.
 
-## Get the connection string to the Service Bus Namespace
+## Get the connection string to the Service Bus namespace
 
-You must configure two pieces of information in your two console apps to access your Service Bus Namespace and to use the queue within that namespace:
+You must configure two pieces of information in your two console apps to access your Service Bus namespace and to use the queue within that namespace:
 
 * Endpoint for your namespace
 * Shared access key for authentication
 
-These values can be obtained from the connection string. 
+These values can be obtained from the connection string.
 
-The following Azure command will return the complete connection string.
-
-1. In Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus Namespace that you created in Unit 3.
+1. In Azure Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -39,14 +37,14 @@ The following Azure command will return the complete connection string.
 > [!NOTE]
 > For simplicity, the following tasks will instruct you to hard-code the connection string in the *Program.cs* file of both console applications. In a production application, you should use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in Azure Cloud Shell to clone the Git project solution.  
+1. Run the following command in Cloud Shell to clone the Git project solution:
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 
-1. Run the following command to go the start folder in your cloned project and open Cloud Shell editor.
+1. Run the following command to go the start folder in your cloned project and open the Cloud Shell editor:
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -55,25 +53,23 @@ The following Azure command will return the complete connection string.
 
 ## Write code that sends a message to the queue
 
-1. In the Cloud Shell editor, open **privatemessagesender/Program.cs** and locate the following line of code.
+1. In the Cloud Shell editor, open *privatemessagesender/Program.cs* and locate the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
     ```
 
-1. Paste the connection string between the quotation marks. 
+1. Paste the connection string between the quotation marks.
 
-   To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes.
+1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Locate the `SendSalesMessageAsync()` method.
 
-1. Locate the `SendSalesMessageAsync()` method.
-
-1. Within that method, locate the following line of code.
+1. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client here
     ```
 
-1. Replace that line of code with the following code.
+1. Replace that line of code with the following code:
 
     ```csharp
     // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope. 
@@ -137,7 +133,7 @@ The following Azure command will return the complete connection string.
     }
     ```
   
-1. Your final code for **privatemessagesender/Program.cs** should resemble the following example:
+1. Your final code for *privatemessagesender/Program.cs* should resemble the following example:
 
     ```csharp
     using System;
@@ -187,7 +183,8 @@ The following Azure command will return the complete connection string.
     }
     ```
 
-1. Save the **privatemessagesender/Program.cs** file using either the **...** icon, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+
 1. Select **...** in the right corner, and select **Close Editor** to close the editor.
 
 ## Send a message to the queue
@@ -202,7 +199,7 @@ The following Azure command will return the complete connection string.
     > [!NOTE]
     > The first time you run the apps in this exercise, allow `dotnet` to restore packages from remote sources and build the apps.
 
-    As the program runs, messages are printed to the console indicating that the app is sending a message.
+    As the program runs, messages are printed to the console indicating that the app is sending a message:
   
     ```command
     Sending a message to the Sales Messages queue...
@@ -210,7 +207,7 @@ The following Azure command will return the complete connection string.
     Message was sent successfully.
     ```
 
-1. When the app has finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus Namespace. This command will return the number of messages that are in the queue.
+1. When the app has finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
 
     ```azurecli
     az servicebus queue show \
@@ -220,17 +217,17 @@ The following Azure command will return the complete connection string.
         --namespace-name <namespace-name>
     ```
 
-1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message will be added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
+1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
   
 ## Write code that receives a message from the queue
 
-1. Run the following command to open the editor again.
+1. Run the following command to open the editor again:
 
     ```command
     code .
     ```
 
-1. In the editor, open **privatemessagereceiver/Program.cs** and locate the following line of code:
+1. In the editor, open *privatemessagereceiver/Program.cs* and locate the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
@@ -346,7 +343,7 @@ The following Azure command will return the complete connection string.
     }    
     ```
 
-1. Your final code for **privatemessagereceiver/Program.cs** should resemble the following example:
+1. Your final code for *privatemessagereceiver/Program.cs* should resemble the following example:
 
     ```csharp
     using System;
@@ -420,7 +417,7 @@ The following Azure command will return the complete connection string.
     
     ```
 
-1. Save the file either through the **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 1. Select **...** in the right corner, and click **Close Editor** to close the editor.
 
@@ -432,14 +429,14 @@ The following Azure command will return the complete connection string.
     dotnet run -p privatemessagereceiver
     ```
 
-1. Check the notifications in Cloud Shell and in the Azure portal, navigate to your Service Bus Namespace and check your Messages chart:
+1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
 
     ```command
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
-1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all of the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus Namespace.
+1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
 
     ```azurecli
     az servicebus queue show \

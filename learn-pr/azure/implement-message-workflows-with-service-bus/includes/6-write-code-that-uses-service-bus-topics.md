@@ -26,7 +26,7 @@ For our StoreId filter, we *could* use a SQL filter. SQL filters are the most fl
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus topic.
 
-```C#
+```csharp
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Messaging.ServiceBus;
@@ -34,7 +34,7 @@ using Azure.Messaging.ServiceBus;
 
 To send a message, start by creating a new `ServiceBusClient` object, and passing it the connection string and the name of the topic.
 
-```C#
+```csharp
 await using var client = new ServiceBusClient(connectionString);
 ```
 
@@ -46,7 +46,7 @@ ServiceBusSender sender = client.CreateSender(topicName);
 
 You can send a message to the topic by calling the ServiceBusSender.SendMessageAsync() method, and passing a ServiceBusMessage. As with queues, the message must be in the form of a UTF-8 encoded string.
 
-```C#
+```csharp
 string message = "Cancel! I have changed my mind!";
 var message = new ServiceBusMessage(message);
 
@@ -58,7 +58,7 @@ await sender.SendMessageAsync(message);
 
 To receive messages, you must create a `ServiceBusProcessor` object, and pass it the topic name and the subscription name.
 
-```C#
+```csharp
 processor = client.CreateProcessor(topicName, subscriptionName, options);
 ```
 
@@ -74,7 +74,7 @@ processor.ProcessErrorAsync += ErrorHandler;
 
 Within the message handler, do your processing work. Then, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the subscription.
 
-```C#
+```csharp
 // complete the message. messages is deleted from the subscription. 
 await args.CompleteMessageAsync(args.Message);
 ```

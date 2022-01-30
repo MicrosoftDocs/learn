@@ -16,7 +16,7 @@ To make it easy to write code that sends and receives messages through Service B
 
 Source components and destination components both need two pieces of information to connect to a queue in a Service Bus namespace:
 
-- The location of the Service Bus namespace, also known as an **endpoint**. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
+- The location of the Service Bus namespace, also known as an *endpoint*. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
 - An access key. Service Bus restricts access to queues or topics by requiring a valid access key.
 
 Both of these pieces of information are provided to the [ServiceBusClient](/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
@@ -29,50 +29,50 @@ When sending a message to a queue, for example, use the [SendMessageAsync](/dotn
 
 ## Write code that sends to queues
 
-In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue.
+1. In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue:
 
-```C#
-using System.Threading;
-using System.Threading.Tasks;
-using Azure.Messaging.ServiceBus;
-```
+    ```csharp
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Azure.Messaging.ServiceBus;
+    ```
 
-Next, create a new `ServiceBusClient` object, and pass it the connection string and the name of the queue.
+1. Next, create a new `ServiceBusClient` object, and pass it the connection string and the name of the queue:
 
-```C#
-// create a ServiceBusClient object using the connection string to the namespace
-await using var client = new ServiceBusClient(connectionString);
+    ```csharp
+    // create a ServiceBusClient object using the connection string to the namespace
+    await using var client = new ServiceBusClient(connectionString);
+    
+    // create a ServiceBusSender object by invoking the CreateSender method on the ServiceBusClient object, and specifying the queue name. 
+    ServiceBusSender sender = client.CreateSender(queueName);
+    ```
+    
+1. You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`:
 
-// create a ServiceBusSender object by invoking the CreateSender method on the ServiceBusClient object, and specifying the queue name. 
-ServiceBusSender sender = client.CreateSender(queueName);
-```
+    ```csharp
+    // create a new message to send to the queue
+    string messageContent = "Order new crankshaft for eBike.";
+    var message = new ServiceBusMessage(messageContent);
 
-You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`.
-
-```C#
-// create a new message to send to the queue
-string messageContent = "Order new crankshaft for eBike.";
-var message = new ServiceBusMessage(messageContent);
-
-// send the message to the queue
-await sender.SendMessageAsync(message);
-```
+    // send the message to the queue
+    await sender.SendMessageAsync(message);
+    ```
 
 ## Receive messages from the queue
 
-To receive messages, you must first register a message handler - this is the method in your code that will be invoked when a message is available on the queue.
+1. To receive messages, you must first register a message handler. The message handler is the method in your code that will be invoked when a message is available on the queue:
 
-```C#
-// create a ServiceBusProcessor for the queue
-await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+    ```csharp
+    // create a ServiceBusProcessor for the queue
+    await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+    
+    // specify handler methods for messages and errors
+    processor.ProcessMessageAsync += MessageHandler;
+    processor.ProcessErrorAsync += ErrorHandler;
+    ```
 
-// specify handler methods for messages and errors
-processor.ProcessMessageAsync += MessageHandler;
-processor.ProcessErrorAsync += ErrorHandler;
-```
+1. Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue:
 
-Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue.
-
-```C#
-await args.CompleteMessageAsync(args.Message);
-```
+    ```csharp
+    await args.CompleteMessageAsync(args.Message);
+    ```
