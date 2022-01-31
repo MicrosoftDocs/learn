@@ -1,4 +1,4 @@
-If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when a variable is evaluated at runtime, but the variable refers to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (Sir Tony Hoare) refers to `null` as the "billion dollar mistake".
+If you're a .NET developer, chances are you've encountered the <xref:System.NullReferenceException?displayProperty=fullName>. This occurs at run time when a `null` is dereferenced&mdash;that is, when a variable is evaluated at runtime, but the variable refers to `null`. This exception is by far the most commonly occurring exception within the .NET ecosystem. The creator of `null` (Sir Tony Hoare) refers to `null` as the "billion-dollar mistake".
 
 In the following example, the `FooBar` variable is assigned to `null` and immediately dereferenced, thus exhibiting the problem:
 
@@ -14,13 +14,13 @@ _ = fooBar.ToString();
 record FooBar(int Id, string Name);
 ```
 
-The preceding example is obvious, but when your apps grow in size and complexity, the problem becomes much more difficult to spot as a developer. This is a job for tooling, and the C# compiler is here to help!
+The problem becomes much more difficult to spot as a developer when your apps grow in size and complexity. Spotting potential errors like this is a job for tooling, and the C# compiler is here to help.
 
 ## Defining null safety
 
 The term _null safety_ defines a set of features specific to [nullable types](#nullable-types) that help reduce the number of possible `NullReferenceException` occurrences.
 
-Considering the previous `FooBar` example, the `NullReferenceException` could be avoided by simply checking if the `fooBar` variable was `null` before dereferencing it:
+Considering the previous `FooBar` example, the `NullReferenceException` could be avoided by checking if the `fooBar` variable was `null` before dereferencing it:
 
 ```csharp
 // Declare variable and assign it as null.
@@ -40,7 +40,7 @@ To aid in identifying scenarios like this, the compiler can infer the intent of 
 
 ## Nullable types
 
-Before C# 2.0, only reference types were nullable. Value-types such as `int` or `DateTime` could _not_ be `null`. If these types are initialized without a value, they fallback to their `default` value. In the case of an `int`, this is `0`. For a `DateTime`, it's `DateTime.MinValue`.
+Before C# 2.0, only reference types were nullable. Value-types such as `int` or `DateTime` could _not_ be `null`. If these types are initialized without a value, they fall back to their `default` value. In the case of an `int`, this is `0`. For a `DateTime`, it's `DateTime.MinValue`.
 
 Reference types instantiated without initial values work differently. The `default` value for all reference types is `null`.
 
@@ -76,7 +76,7 @@ In the preceding example:
 - `third` is `null` as the `default` value for `Nullable<int>` is `null`.
 - `fourth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
 
-C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
+C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable"! You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
 
 Consider the following C# snippet:
 
@@ -92,7 +92,7 @@ Given the preceding example, the compiler infers your *intent* as follows:
 
 - `first` is *never* `null` as it is definitely assigned.
 - `second` *should never* be `null`, even though it's initially `null`. Evaluating `second` before assigning a value results in a compiler warning as it is uninitialized.
-- `third` *might be* `null`. For example, it *might* point to a `System.String`, but it *might* point to `null`. Either is acceptable to you. The compiler helps you by warning you if you dereference `third` without first checking that it isn't null.
+- `third` *might be* `null`. For example, it *might* point to a `System.String`, but it *might* point to `null`. Either of these variations are acceptable. The compiler helps you by warning you if you dereference `third` without first checking that it isn't null.
 
 > [!IMPORTANT]
 > In order to use the nullable reference types feature as shown above, it must be within a _nullable context_. This is detailed in the next section.
@@ -126,7 +126,7 @@ In the C# project file (_.csproj_), add a child `<Nullable>` node to the `<Proje
 </Project>
 ```
 
-Alternatively, you can scope nullable context to a C# file using a compiler directive.
+Alternatively, you can scope _nullable context_ to a C# file using a compiler directive.
 
 ```csharp
 #nullable enable

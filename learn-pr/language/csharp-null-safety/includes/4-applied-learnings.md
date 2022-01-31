@@ -135,11 +135,11 @@ Now you'll enable a nullable context and examine its effect on the build.
     Time Elapsed 00:00:02.95
     ```
 
-    Now that we're treating warnings as errors, the app no longer builds. This is in fact desired in this situation, as the number of errors is small and we'll quickly address them. The two errors (CS8618) let you know that there are properties declared as non-nullable that have not yet been initialized.
+    When treating warnings as errors, the app no longer builds. This is in fact desired in this situation, as the number of errors is small and we'll quickly address them. The two errors (CS8618) let you know there are properties declared as non-nullable that haven't yet been initialized.
 
 ## Fix the errors
 
-There are a plethora of tactics to resolve the warnings/errors related to nullability. Some examples include:
+There's a plethora of tactics to resolve the warnings/errors related to nullability. Some examples include:
 
 - Require a non-nullable collection of cheeses and toppings as constructor parameters.
 - Intercept the property `get`/`set` and add a `null` check.
@@ -153,7 +153,7 @@ There are a plethora of tactics to resolve the warnings/errors related to nullab
 
     In the preceding code:
 
-    - A new backing field is added to help intercept the `get` and `set` property accessors named `_cheeses`. It is declared as nullable (`?`) and left uninitialized.
+    - A new backing field is added to help intercept the `get` and `set` property accessors named `_cheeses`. It's declared as nullable (`?`) and left uninitialized.
     - The `get` accessor is mapped to an expression that uses the null-coalescing operator (`??`). This expression returns the `_cheeses` field, assuming it's not `null`. If it's `null`, it assigns `_cheeses` to `new List<PizzaCheese>()` before returning `_cheeses`.
     - The `set` accessor is also mapped to an expression and makes use of the null-coalescing operator. When a consumer assigns a `null` value the <xref:System.ArgumentNullException> is thrown.
 

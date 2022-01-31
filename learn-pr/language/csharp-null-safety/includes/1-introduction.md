@@ -20,7 +20,7 @@ In this module, you will:
 
 - Experience writing C# at the beginner level
 - Visual Studio Code
-- .NET SDK 6.0 or greater
+- .NET software development kit (SDK) 6.0 or greater
 - Git command-line client
 
 ## Get started
