@@ -3,7 +3,7 @@ uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings
 metadata:
   title: Identify SAP HANA on Azure (Large Instances) certified offerings
   description: "This module examines SAP HANA on Azure (Large Instances) certified offerings and deployment offerings. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 12/08/2021
+  ms.date: 01/31/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
