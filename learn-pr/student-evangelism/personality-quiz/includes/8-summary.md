@@ -14,7 +14,7 @@ As an added challenge, you can start exploring how you might:
 
 ## Dive deeper into Python
 
-If Python has piqued your interest, you might want to check out the rest of the [Take your First Steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true) learning path.
+If Python has piqued your interest, you might want to check out the rest of the [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true) learning path.
 
 After you complete this learning path, you can find other Learn modules to inspire your next steps on our [Student page](/learn/roles/student?azure-portal=true). 
 

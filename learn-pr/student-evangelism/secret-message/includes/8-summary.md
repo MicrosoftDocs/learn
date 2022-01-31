@@ -18,7 +18,7 @@ Having decoded your first secret message, the natural next step is to determine 
 
 ## Dive deeper into Python
 
-If Python has piqued your interest, check out the rest of the [Take your first steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true) learning path.
+If Python has piqued your interest, check out the rest of the [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true) learning path.
 
 After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/learn/roles/student?azure-portal=true). 
 

@@ -20,4 +20,4 @@ This module is self-contained so that you can complete it on its own. However, w
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 * [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
-This module also assumes you are already familiar with Python, although that is not a requirement for completing the steps involved. If you would like to learn more about the basics of Python first, see [Take your first steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true).
+This module also assumes you are already familiar with Python, although that is not a requirement for completing the steps involved. If you would like to learn more about the basics of Python first, see [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true).
