@@ -36,7 +36,7 @@ Azure also has Azure Event Hubs, but it is most often used for a specific type o
 
 ## Service Bus topics and queues
 
-Azure Service Bus can exchange messages in three different ways: queues and topics.
+Azure Service Bus can exchange messages in two different ways: queues and topics.
 
 ### What is a queue?
 
