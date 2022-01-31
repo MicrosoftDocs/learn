@@ -48,7 +48,8 @@ The table below indicates what you should do based on the SIEM tool(s) you're us
     **ArcSight**
   :::column-end:::
   :::column:::
-    The Azure log integration tool offered collecting Azure logs into JSON files for the purpose of integrating with ArcSight using existing JSON connectors from ArcSight, with JSON to CEF mapping available only for Azure Activity Logs and not for the other types of Azure logs.
+    The ArcSight Azure Event Hub smart connector is available as part of the ArcSight smart connector collection.
+
   :::column-end:::
   :::column:::
     
