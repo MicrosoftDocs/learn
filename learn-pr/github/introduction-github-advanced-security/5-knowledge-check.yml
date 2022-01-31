@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-advanced-security.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check - Introduction to GitHub Advanced Security
+  description: Knowledge check - Introduction to GitHub Advanced Security module
+  ms.date: 1/28/2022
+  author: davenowell
+  ms.author: dapolite
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+quiz:
+  title: Check your knowledge 
+  questions:
+  - content: Which area of focus does GitHub dependency management belong to?
+    choices:
+    - content: "Code scanning"
+      isCorrect: false
+      explanation: "Code scanning refers to security functionality discover vulnerabilities directly in the codebase."
+    - content: "Policies"
+      isCorrect: false
+      explanation: "Policies establish guidelines for contributors."
+    - content: "Supply chain"
+      isCorrect: true
+      explanation: "Dependency management ensures safe contributions from third-party plugins."
+  - content: "What is the purpose of security advisories?"
+    choices:
+    - content: "To gather suggestions from the public on how to best repair a bug."
+      isCorrect: false
+      explanation: "Code maintainers aim to fix errors before they become public knowledge."
+    - content: "To keep a list of vulnerabilities found in dependencies that have been used in the project."
+      isCorrect: false
+      explanation: "Code maintainers aim to fix errors before they become public knowledge."
+    - content: "To provide a safe space for code maintainers to discuss how to best address errors and vulnerabilities found in the codebase."
+      isCorrect: true
+      explanation: "After the error has been fixed, security advisories are then published so that external developers can take any necessary action within their projects."
+  - content: "Which GitHub feature is powered by CodeQL?"
+    choices:
+    - content: "Code scanning"
+      isCorrect: true
+      explanation: "CodeQL runs queries that scan code for errors."
+    - content: "Dependabot"
+      isCorrect: false
+      explanation: "Dependabot ensures the reliability of dependencies."
+    - content: "The GitHub Advisory Database "
+      isCorrect: false
+      explanation: "The GitHub Advisory Database keeps track of vulnerabilities in dependencies."
+  - content: "What does the term 'shifting left' mean?"
+    choices:
+    - content: "Embedding security team members into development teams."
+      isCorrect: false
+      explanation: "Although security teams should collaborate with other teams, this isn't the meaning of 'shifting left' ."
+    - content: "Implementing security best practices after reviews are completed."
+      isCorrect: false
+      explanation: "Security shouldn't be considered as an isolated, post-development exercise."
+    - content: "Incorporating security principles early in the software development lifecycle"
+      isCorrect: true
+      explanation: "Security should be considered at each development phase."
+  - content: "Which technology does GitHub use to authenticate one application with another?"
+    choices:
+    - content: "Branches"
+      isCorrect: false
+      explanation: "Branches are a copy of the repository for a developer to use."
+    - content: "Secrets"
+      isCorrect: true
+      explanation: "Secrets are encrypted authentication keys."
+    - content: "Environment variable"
+      isCorrect: false
+      explanation: "Environment variables aren't used for authentication."
+  - content: "What is a common cause of security breaches?"
+    choices:
+    - content: "Users remove packages from projects."
+      isCorrect: false
+      explanation: "Package removal isn't a common cause of security breaches."
+    - content: "Developers share their code with other developers outside their organization."
+      isCorrect: false
+      explanation: "Sharing code isn't a common cause of security breaches."
+    - content: "Administrators delay in patching a system after updates are available."
+      isCorrect: true
+      explanation: "Failing to promptly patch a system leaves it vulnerable to attacks or exploits."
