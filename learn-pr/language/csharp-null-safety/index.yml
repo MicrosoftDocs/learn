@@ -36,8 +36,8 @@ products:
 
 units:
 - learn.languages.csharp-null-safety.introduction
-- learn.languages.csharp-null-safety.understanding-nullability
-- learn.languages.csharp-null-safety.expressing-intent
+- learn.languages.csharp-null-safety.understand-nullability
+- learn.languages.csharp-null-safety.express-intent
 - learn.languages.csharp-null-safety.applied-learnings
 - learn.languages.csharp-null-safety.summary
 badge:

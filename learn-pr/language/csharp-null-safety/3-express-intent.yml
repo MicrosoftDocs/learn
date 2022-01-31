@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-null-safety.expressing-intent
+uid: learn.languages.csharp-null-safety.express-intent
 title: Expressing intent
 metadata:
   unitType: learning-content
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-expressing-intent.md)]
+  [!include[](includes/3-express-intent.md)]
 
 quiz:
   title: Check your knowledge
