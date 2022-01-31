@@ -14,7 +14,7 @@ As an added challenge, you can explore how to:
 
 ## Discover the next coding challenge
 
-Having decoded your first secret message, the natural next step is to determine what your super sleuth character is! In the next module in this learning path, you'll create a test to determine your superpower with Python and Visual Studio Code.
+Now that you've decoded your first secret message, the natural next step is to determine what your super sleuth character is! In the next module in this learning path, you'll create a test to determine your superpower with Python and Visual Studio Code.
 
 ## Dive deeper into Python
 
@@ -22,4 +22,4 @@ If Python has piqued your interest, check out the rest of the [Python for beginn
 
 After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/learn/roles/student?azure-portal=true). 
 
-From [tracking global air quality with Azure Maps](/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text message weather alerts from Azure Functions](/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
+From [tracking global air quality with Azure Maps](/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text weather alerts from Azure Functions](/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
