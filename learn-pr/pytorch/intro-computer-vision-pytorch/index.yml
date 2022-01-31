@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to Computer Vision with PyTorch 
-summary:   In this module, you will get an introduction to Computer Vision using one of the most popular deep learning frameworks, PyTorch! We'll focus on the image classification task to learn how neural networks can be used to classify handwritten digits, see how convolutional neural networks work and how they improve image classification, and then learn to use pre-trained networks and transfer learning to train models that can solve real-world problems, such as cats vs. dogs classification on real photographs.
+summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
 abstract: | 
   In this module you will:
   - Learn about computer vision tasks most commonly solved with neural networks
@@ -27,9 +27,9 @@ roles:
 products:
 - azure
 prerequisites: |
-  - Knowledge of Python and some experience using Jupyter Notebooks
-  - Basic understanding of machine learning
-  - Familiarity with PyTorch framework (understanding tensors, basics of back propagation)
+  - Basic knowledge of Python and Jupyter Notebooks
+  - Familiarity with PyTorch framework, including tensors, basics of back propagation and building models
+  - Understanding machine learning concepts, such as classification, train/test dataset, accuracy, etc.
 
 units:
 - learn.pytorch.intro-computer-vision.introduction
