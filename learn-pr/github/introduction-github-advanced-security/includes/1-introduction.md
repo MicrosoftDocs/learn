@@ -4,7 +4,7 @@ A few examples from recent years come to mind:
 
 - **2017:** A vulnerability found on Equifax servers allows hackers to execute malicious code remotely. The event exposes more than 143 million records, including 209,000 credit card numbers. An attack that human error makes possible, breaks customer trust. The Apache Foundation had released a patch to address the vulnerability just two months before the breach. Unfortunately, Equifax delayed applying the necessary system updates.
 
-- **2018:** Hackers successfully breach the Marriot Hotels systems. The breach compromises 500 million users and exposes data records for 327 million guests. This data includes names, travel dates, passport numbers, and home addresses.
+- **2018:** Hackers successfully breach the Marriott Hotels systems. The breach compromises 500 million users and exposes data records for 327 million guests. This data includes names, travel dates, passport numbers, and home addresses.
 
 - **2021:** The discovery of a vulnerability in the open-source logging software Log4j marks the later part of 2021. Cybersecurity experts label the fallout caused by the bug as the most serious to date due to the popularity of the software. Because of this popularity, hackers seeking to break into digital spaces exploit a massive field of operation, which puts millions of servers at risk. The vulnerability gives these hackers complete control over some of these applications.
 

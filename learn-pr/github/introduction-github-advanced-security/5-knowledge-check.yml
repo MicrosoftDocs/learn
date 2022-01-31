@@ -58,7 +58,7 @@ quiz:
       explanation: "Security should not be considered as an isolated, post-development exercise."
     - content: "Incorporating security principles early in the software development lifecycle"
       isCorrect: true
-      explanation: "Security should be consider at each development phase."
+      explanation: "Security should be considered at each development phase."
   - content: "Which technology does GitHub use to authenticate one application with another?"
     choices:
     - content: "Branches"
@@ -70,7 +70,7 @@ quiz:
     - content: "Environment variable"
       isCorrect: false
       explanation: "Environment variables are not used for authentication."
-  - content: "What is a common cause of security breaches."
+  - content: "What is a common cause of security breaches?"
     choices:
     - content: "Users remove packages from projects."
       isCorrect: false
