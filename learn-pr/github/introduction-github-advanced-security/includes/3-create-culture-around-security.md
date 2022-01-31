@@ -4,19 +4,19 @@ At the end of this unit, you'll understand how the right tools, combined with or
 
 ## Adopt a security mindset
 
-The more security-centric your organizational culture is, the more team members remember to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also have to account for human error. A user could accidentally enable an attack or a developer could write insecure code. Think about how many attacks begin by tricking or forcing a member of an organization.
+The more security-centric your organizational culture is, the more everyone remembers to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also have to account for human error. A user could accidentally enable an attack or a developer could write insecure code. Think about how many attacks begin by tricking or forcing a member of an organization.
 
 ## Shift left
 
 :::image type="content" source="../media/shift-left-3.png" alt-text="Screenshot of shift left icon." border="false":::
 
-You may have heard that a company or development team is beginning to "shift left." To understand this phrase, you must first realize that security has commonly been an isolated topic in many software development paradigms. The development lifecycle has figuratively begun "on the left" with design and development. Then the lifecycle ends to the right, bringing in quality control and deployment tasks. Workflows often include security only after the development stage. At that point, only a specific group of team members would perform a security review.
+You may have heard that a company or development team is beginning to "shift left." To understand this phrase, you must first realize that security has commonly been an isolated topic in many software development paradigms. The development lifecycle has figuratively begun "on the left" with design and development. Then the lifecycle ends to the right, bringing in quality control and deployment tasks. Workflows often include security only after the development stage. At that point, only a specific group would perform a security review.
 
-In the SDLC, shifting left means adopting security practices early. When development shifts left, team members consider security when they contribute to the code. They integrate security into the design phase, making it easier to write secure code and policies.
+In the SDLC, shifting left means adopting security practices early. When development shifts left, everyone considers security when they contribute to the code. They integrate security into the design phase, making it easier to write secure code and policies.
 
 ### Faulty security models
 
-Developers that view security as an isolated consideration can struggle when quality assurance or security teams discover errors in the project's code. The development team has to fix the code. At this point, they may have already begun a new project. Passing code back to be repaired results in two open work streams. This is an inefficient use of time and resources. Although some elements of a defective security model may be common, you should still work to avoid them.
+Developers that view security as an isolated consideration can struggle when quality assurance or security discover errors in the project's code. The development team has to fix the code. At this point, they may have already begun a new project. Passing code back to be repaired results in two open work streams. This is an inefficient use of time and resources. Although some elements of a defective security model may be common, you should still work to avoid them.
 
 This table outlines traits regularly found in faulty organizational security models.
 
@@ -29,7 +29,7 @@ This table outlines traits regularly found in faulty organizational security mod
 
 ### The ideal security model
 
-Ideally, each team member is responsible for securing the project within their scope of work. The team that writes the code is the same team performing tests and dealing with the results of those tests in real time. Policies exist for each phase of the operation to ensure code quality. Automation plays a significant role in creating an efficient workflow.
+Ideally, everyone is responsible for securing the project within their scope of work. The team that writes the code is the same team performing tests and dealing with the results of those tests in real time. Policies exist for each phase of the operation to ensure code quality. Automation plays a significant role in creating an efficient workflow.
 
 This table shows key elements of the ideal security model:
 
@@ -46,6 +46,6 @@ A strong security culture needs documentation to define the persons or roles tha
 
 #### Enforce policies
 
-GitHub Advanced Security includes compliance and policy management features. You can use policies to stipulate standards and procedures that keep your code healthy. Policies also identify which team members to contact when an error is found.
+GitHub Advanced Security includes compliance and policy management features. You can use policies to stipulate standards and procedures that keep your code healthy. Policies also identify who to contact when an error is found.
 
 Policies alone don't enforce your organization's requirements. Policies are organizational measures. Administrators ensure user adherence by setting up protected branches. The configuration of a branch allows you to force specific requirements. For example, tests such as code scanning must pass before merging changes. Another example is requiring a reviewer to approve a pull request before reviews release it for merging.
