@@ -1,10 +1,10 @@
-Now that you've learned about the GitHub Advanced Security features, let's look at how your organization can use these features to improve security. In this moduule, you'll learn what it means for an organization to "shift left." You'll understand how shifting left helps secure your Software Development Life Cycle (SDLC). You'll also review different security workflow models to get a sense of best practices.
+Now, let's look at how your organization can use Github Advanced Security features to improve security. In this module, you'll learn what it means to "shift left." You'll understand how shifting left helps secure your Software Development Life Cycle (SDLC). You'll also review different security workflow models to identify best practices.
 
 At the end of this unit, you'll understand how the right tools, combined with organizational culture, increase the security of your environments and codebases. This begins with adopting a security-focused mindset.
 
 ## Adopt a security mindset
 
-The more security-centric your organizational culture is, the more team members remember to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also have to account for human error. A user could accidentally enable an attack or a developer could write insecure code. Consider how many attacks begin with deceiving or coercing an organization member to do something that gives access to bad actors.
+The more security-centric your organizational culture is, the more team members remember to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also have to account for human error. A user could accidentally enable an attack or a developer could write insecure code. Think about how many attacks begin by tricking or forcing a member of an organization.
 
 ## Shift left
 
