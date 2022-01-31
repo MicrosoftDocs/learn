@@ -39,7 +39,7 @@ quiz:
       - content: "`NullReferenceException`"
         isCorrect: true
         explanation: "Correct! When you dereference a `null` value the `NullReferenceException` is thrown."
-    - content: "What happens when the following C# code is executed: `throw null;`?"
+    - content: "What happens when this `throw null;` C# code is executed?"
       choices:
       - content: "`NullReferenceException`"
         isCorrect: true
@@ -52,12 +52,12 @@ quiz:
         explanation: "Incorrect. This will throw a `NullReferenceException`."
     - content: "Which statement is most accurate regarding nullable reference types?"
       choices:
-      - content: "The C# compiler provides warnings when possibly dereferencing `null`."
-        isCorrect: true
-        explanation: "Correct! The compiler provides warnings, but makes no guarantees."
       - content: "The C# compiler will prevent all `null` errors."
         isCorrect: false
         explanation: "Incorrect. The compiler provides warnings, but makes no guarantees."
       - content: "The C# compiler guarantees null safety."
         isCorrect: false
         explanation: "Incorrect. The compiler provides warnings, but makes no guarantees."
+      - content: "The C# compiler provides warnings when possibly dereferencing `null`."
+        isCorrect: true
+        explanation: "Correct! The compiler provides warnings, but makes no guarantees."

@@ -2,7 +2,7 @@ In this module, you learned how to enable nullable context and act on build warn
 
 Utilizing a nullable-enabled context, you identified code where `null` might have been errantly dereferenced. After reevaluating the code, you expressed your intent and adjusted the desired behavior of the code using various C# operators. You learned about the null-forgiving (`!`), null-coalescing (`??`), and null-conditional (`?.`) operators.
 
-There are many possible ways to handle nullability within C#. In a nullable-enabled context the C# compiler helps you have a better understanding of how your expressed intent flows through.
+There are many possible ways to handle nullability within C#. In a nullable-enabled context, the C# compiler helps you have a better understanding of how your expressed intent flows through.
 
 ## Additional resources
 

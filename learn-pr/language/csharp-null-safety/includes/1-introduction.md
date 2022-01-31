@@ -9,7 +9,7 @@ Suppose you're an employee of a pizza company named Contoso Pizza. Your manager 
 In this module, you will:
 
 - Learn how to configure the nullable context of your C# project or code.
-- Use a nullable enabled context to perform automatic static flow analysis.
+- Use a nullable-enabled context to perform automatic static flow analysis.
 - Understand the different ways in which you can declare nullable types.
 - Learn how and when to use various null-related C# operators:
   - null-forgiving (`!`) operator
@@ -18,10 +18,10 @@ In this module, you will:
 
 ## Prerequisites
 
-- Experience writing C# at the beginner level
-- Visual Studio Code
-- .NET software development kit (SDK) 6.0 or greater
-- Git command-line client
+- [Experience writing C# at the beginner level](/dotnet/csharp/tour-of-csharp)
+- [Visual Studio Code](https://code.visualstudio.com/Download)
+- [.NET SDK 6.0 or greater](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [Git command-line client](https://github.com/git-guides/install-git)
 
 ## Get started
 
