@@ -1,4 +1,4 @@
-In this module, let's look at how your organization can use Github Advanced Security features to improve security. You'll learn what it means to "shift left." You'll understand how shifting left helps secure your Software Development Life Cycle (SDLC). You'll also review different security workflow models to identify best practices.
+This module looks at how your organization can use Github Advanced Security features to improve security. You'll learn what it means to "shift left." Develop an understanding of how shifting left helps secure your Software Development Life Cycle (SDLC). Finally, you'll review different security workflow models to identify best practices.
 
 At the end of this unit, you'll understand how the right tools, combined with organizational culture, increase the security of your environments and codebases. This begins with adopting a security-focused mindset.
 
