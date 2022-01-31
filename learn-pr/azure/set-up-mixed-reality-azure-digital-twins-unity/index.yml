@@ -13,8 +13,8 @@ summary: Learn how to set up a mixed reality project and learn about Azure Digit
 abstract: |
   By the end of this module, you'll be able to:
   - Understand the breadth of Mixed Reality use cases for industry
-  - Describe a Digital Twin and summarize how they can be used in business settings
-  - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
+  - Describe a Digital Twins and summarize how they can be used in business settings
+  - Summarize Digital Twins platforms and services such as Azure Digital Twins and Unity
   - Install and configure your development environment for building Mixed Reality solutions using Azure Digital Twins and Unity
 iconUrl: /learn/achievements/set-up-mixed-reality-azure-digital-twins-unity.svg
 levels:
