@@ -33,16 +33,16 @@ quiz:
     choices: 
     - content: "Microsoft Power Automate"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
     - content: "Azure App Service WebJobs" 
       isCorrect: true
-      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+      explanation: "Azure WebJobs permits developers to control retry policies."
   - content: "In the merged camera company, which technology would you use for the lens quality control procedure?"
     choices: 
     - content: "Microsoft Power Automate"
