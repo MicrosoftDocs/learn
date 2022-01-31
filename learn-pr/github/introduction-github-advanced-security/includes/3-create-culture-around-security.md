@@ -1,4 +1,4 @@
-Now, let's look at how your organization can use Github Advanced Security features to improve security. In this module, you'll learn what it means to "shift left." You'll understand how shifting left helps secure your Software Development Life Cycle (SDLC). You'll also review different security workflow models to identify best practices.
+In this module, let's look at how your organization can use Github Advanced Security features to improve security. You'll learn what it means to "shift left." You'll understand how shifting left helps secure your Software Development Life Cycle (SDLC). You'll also review different security workflow models to identify best practices.
 
 At the end of this unit, you'll understand how the right tools, combined with organizational culture, increase the security of your environments and codebases. This begins with adopting a security-focused mindset.
 
@@ -12,7 +12,7 @@ The more security-centric your organizational culture is, the more team members 
 
 You may have heard that a company or development team is beginning to "shift left." To understand this phrase, you must first realize that security has commonly been an isolated topic in many software development paradigms. The development lifecycle has figuratively begun "on the left" with design and development. Then the lifecycle ends to the right, bringing in quality control and deployment tasks. Workflows often include security only after the development stage. At that point, only a specific group of team members would perform a security review.
 
-In the SDLC, shifting left refers to adopting security practices early in the process. When development shifts left, every team member involved in application development considers security when they contribute to the code. They integrate security into the design phase, making it easier to write secure code and policies.
+In the SDLC, shifting left means adopting security practices early. When development shifts left, team members consider security when they contribute to the code. They integrate security into the design phase, making it easier to write secure code and policies.
 
 ### Faulty security models
 
