@@ -11,7 +11,7 @@ Note that a user has to be enrolled into self-service password reset, and that a
 
 ## Enable self-service password reset
 
-:::image type="content" source="../media/sc300-enable-password-reset-d2295bf1.png" alt-text="Screenshot of Azure AD, configure Self-Service Password Reset dialog.  In the setting the SSPR feature is being enable for a group of users called SSPR-Test-Group.":::
+:::image type="content" source="../media/sc300-enable-password-reset-d2295bf1.png" alt-text="Screenshot of Azure AD, configure Self-Service Password Reset dialog.  In the setting the SSPR feature is being enabled for a group of users called SSPR-Test-Group.":::
 
 
 Basic steps to enable self-service password reset:
@@ -40,7 +40,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
 2.  Open the portal menu and then select **Azure Active Directory**.
-3.  On the Azure Active Directory blade, under **Manage**, select **+ New Group**.
+3.  On the Azure Active Directory screen, under **Manage**, select **+ New Group**.
 4.  Create a new group using the following information:
     
     :::row:::
@@ -99,15 +99,15 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1.  Browse back to the Azure Active Directory blade.
+1.  Browse back to the Azure Active Directory screen.
 2.  Under **Manage**, select **Password reset**.
     
     > [!IMPORTANT]
     > If the Password reset page still displays the message Get a free Premium trial to use this feature, wait for a few minutes and then refresh the page.
-3.  On the Password reset blade **Properties** page, under **Self-service password reset enabled**, select **Selected**.
+3.  On the Password reset dialog **Properties** page, under **Self-service password reset enabled**, select **Selected**.
 4.  Select **Select group**.
 5.  In the Default password reset policy pane, select the **SSPRTesters** group.
-6.  On the Password reset blade **Properties** page, select **Save**.:::image type="content" source="../media/enable-password-reset-for-selected-group-221d22a2.png" alt-text="Screen image displaying the Password reset properties page with selected, select group, and save highlighted":::
+6.  On the Password reset dialog, **Properties** page, select **Save**.:::image type="content" source="../media/enable-password-reset-for-selected-group-221d22a2.png" alt-text="Screen image displaying the Password reset properties page with selected, select group, and save highlighted":::
     
 
 7.  Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
@@ -120,14 +120,14 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 2.  Sign in as **julieta@*organization-domain-name*.onmicrosoft.com** with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.
-5.  On the Keep your account secure page, user the **Phone** option or select the **I want to set up a different method** link.:::image type="content" source="../media/keep-your-account-secure-page-b4a3ea61.png" alt-text="Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted":::
+5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.:::image type="content" source="../media/keep-your-account-secure-page-b4a3ea61.png" alt-text="Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted":::
     
 
-6.  In this example, you will use the Phone option. Enter your mobile phone details.
+6.  In this example, you'll use the Phone option. Enter your mobile phone details.
 7.  Select **Text me a code**.
 8.  When you receive the code on your mobile phone, enter the code in the text box and then select Next.
 9.  After your phone has been registered, select Next and then select Done.
-10. Close the browser. You do not need to complete the sign in process.
+10. Close the browser. You don't need to complete the sign in process.
 
 ## Test self-service password reset
 
