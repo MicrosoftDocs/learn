@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   - Beginner level understanding of running Linux on Azure 
   - Awareness of Elastic and the Elastic Stack (“ELK Stack”)  
+hidden: true
 iconUrl: /learn/achievements/introduction-elastic-azure.svg
 levels:
   - beginner
