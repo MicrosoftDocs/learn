@@ -73,6 +73,7 @@ The problem is that the `input()` function returns data represented as strings, 
 
 In Python, every value in your programs has an associated data type that describes what kind of data it is and what you can do with it.  In other words, since your two values are strings, they can only be concatenated.  
 
+> [!TIP]
 > If you want to perform mathematical operations on two values, they both must be numeric data types.
 
 How can you convert a string value into an integer value, and why do you need to?
@@ -134,7 +135,7 @@ Ideally, you would first perform a check to ensure that the value users enter ca
 
 ### Step 7 - Revise the code to display a label in front of the sum value
 
-The next task is to format the last line of content to make it clear what the number `9` represents.  Ideally, you would preface that number with a label, such as *Sum :*.
+The next task is to format the last line of content to make it clear what the number `9` represents.  Ideally, you would preface that number with a label, such as *Sum:*.
 
 Update the last line of code to match the following code example:
 
