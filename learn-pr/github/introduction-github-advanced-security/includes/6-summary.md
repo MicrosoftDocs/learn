@@ -1,6 +1,6 @@
-You now have a solid understanding of GitHub Advanced Security and how its features defend against gaps in security. This module also explained the importance of responding quickly to threats. You reviewed examples of best practices to keep your supply chain, codebase, and development environment safe.  Now that you understand what it means to shift left, you can start improving how teams work within your organization.
+You now have a solid understanding of GitHub Advanced Security and how its features defend against gaps in security. This module also explained the importance of responding quickly to threats. You reviewed examples of best practices to keep your supply chain, codebase, and development environment safe.  Now you can start improving how teams work within your organization.
 
-Implementing security is much more than passing an already built project to a security team. As you know, security needs to be front of mind at each step of the software development lifecycle. You can continue exploring this topic, including how secure development involves dependency management and enforcing predefined policies using protected branches. 
+Security is about much more than passing a complete project to a security team. Security needs to be front of mind at each step of the software development lifecycle. You can continue learning more about GitHub Advanced Security, including how secure development involves dependency management and enforcing predefined policies using protected branches.
 
 In this unit, you learned how to:
 

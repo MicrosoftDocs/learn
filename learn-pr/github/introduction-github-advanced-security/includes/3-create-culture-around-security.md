@@ -4,7 +4,7 @@ At the end of this unit, you'll understand how the right tools, combined with or
 
 ## Adopt a security mindset
 
-Why should you care about creating a culture centered around security in your organization? The more security-centric your organizational culture is, the more team members remember to view their actions, work, and decisions through the lens of security. Operating from this point of view means better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You may have tools to protect your assets and systems but that don't account for human error. There are many situations in which tools aren't enough. A user could accidentally enable an attack or a developer could write insecure code. Think of how many attacks begin with deceiving or coercing people inside an organization to perform some task that gives access to bad actors.
+The more security-centric your organizational culture is, the more team members remember to view their actions, work, and decisions through the lens of security. This perspective provides better outcomes for your software development and planning. However, a sound security strategy involves more than simply putting protective tools in place. You also have to account for human error. A user could accidentally enable an attack or a developer could write insecure code. Consider how many attacks begin with deceiving or coercing an organization member to do something that gives access to bad actors.
 
 ## Shift left
 
@@ -29,7 +29,7 @@ This table outlines traits regularly found in faulty organizational security mod
 
 ### The ideal security model
 
-In the ideal scenario, each member involved in the development process is responsible for securing the project within their scope of work. The team that writes the code is the same team performing tests and dealing with the results of those tests in real time. Policies exist for each phase of the operation to ensure code quality. Automation plays a significant role in creating an efficient workflow.
+Ideally, each team member is responsible for securing the project within their scope of work. The team that writes the code is the same team performing tests and dealing with the results of those tests in real time. Policies exist for each phase of the operation to ensure code quality. Automation plays a significant role in creating an efficient workflow.
 
 This table shows key elements of the ideal security model:
 
@@ -42,10 +42,10 @@ This table shows key elements of the ideal security model:
 
 ### Security policies
 
-A security-centric culture needs written documentation that defines which persons or roles have the right to perform specific actions within a repository or branch. In GitHub, these documents are _policies_. Policies may require a code review before merging. They ensure that the code passes certain status checks. For example, you may want to specify who can delete a branch or push code to it. In GitHub, you store policy details in your repository, in the `SECURITY.md` file. This file will also include instructions on reporting any bugs or vulnerabilities found in the project.
+A strong security culture needs documentation to define the persons or roles that can perform specific actions within a repository or branch. In GitHub, these documents are _policies_. Policies may require a code review before merging. They ensure that the code passes certain status checks. For example, you may want to specify who can delete a branch or push code to it. In GitHub, you store policy details in your repository, in the `SECURITY.md` file. This file will also include instructions on reporting any bugs or vulnerabilities found in the project.
 
 #### Enforce policies
 
 GitHub Advanced Security includes compliance and policy management features. You can use policies to stipulate standards and procedures that keep your code healthy. Policies also identify which team members to contact when an error is found.
 
-On their own, Policies don't enforce your organization's requirements. Policies are organizational measures, administrators ensure user adherence by setting up protected branches. The configuration of a branch allows you to force specific requirements. For example, tests such as code scanning must pass before merging changes. Another example is requiring a reviewer to approve a pull request before reviews release it for merging.
+Policies alone don't enforce your organization's requirements. Policies are organizational measures. Administrators ensure user adherence by setting up protected branches. The configuration of a branch allows you to force specific requirements. For example, tests such as code scanning must pass before merging changes. Another example is requiring a reviewer to approve a pull request before reviews release it for merging.

@@ -1,8 +1,8 @@
 The previous unit discussed the importance of securing your environment from malicious actors. The real-life cases highlighted some of the ways in which hackers can exploit systems. In this unit, you'll be introduced to GitHub Advanced Security. Let's focus on the various product features and the challenge or problem that these features address.
 
-:::image type="content" source="../media/ghas-intro.png" alt-text="Diagram showing GHAS features." border="false":::
+:::image type="content" source="../media/ghas-intro.png" alt-text="Diagram showing GitHub Advanced Security features." border="false":::
 
-GitHub Advanced Security is a powerful suite of tools and features that give you the ability to identify security vulnerabilities in your codebase and environment. These features enable you to secure your code at every step of the software development lifecycle, not just in your production environment. You stay ahead of security threats and breaches, leverage the expertise of the security community, and continue to use open source software securely. GitHub Advanced Security also includes implementing security best practices that help create a security-minded culture within your organization.
+GitHub Advanced Security is a powerful suite of tools and features that give you the ability to identify security vulnerabilities in your codebase and environment. These features enable you to secure your code at every step of the software development lifecycle, not just in your production environment. You stay ahead of security threats and breaches, leverage the expertise of the security community, and continue to use open-source software securely. GitHub Advanced Security also includes implementing security best practices that help create a security-minded culture within your organization.
 
 GitHub Advanced Security focuses on protecting your organization in three primary areas:
 
@@ -10,13 +10,13 @@ GitHub Advanced Security focuses on protecting your organization in three primar
 - Code
 - Environments
 
-Let's take a closer look at each of these three categories and identify how you can use advanced security to maintain a security-focused workflow experience within your GitHub organization.
+Let's look at these three categories to see how you can use advanced security to improve security within your GitHub organization.
 
 ## Secure your software supply chain
 
 When you think about supply chains, you may think of manufacturing goods within an industrial warehouse. However, the concept of a supply chain also applies to what happens during your software development lifecycle. Your workflow produces chunks of code that are then reviewed for quality assurance before reaching the next stage. Protections and guidelines are enforced along the way to optimize production and make an acceptable end product.
 
-In the context of software development, supply chain also refers to the integration of any third-party or open-sourced software. Your software is most likely more than the code you have written in-house. With up to 94% of active repositories relying on open source, you may rely on many components you didn't produce but that still need to be secured. These components are called _dependencies_. You need to actively review them for vulnerabilities.
+In the context of software development, supply chain also refers to the integration of any third-party or open-sourced software. Your software is most likely more than the code you have written in-house. Up to 94% of active repositories rely on open-source, so you may rely on many components you didn't produce. These components are called _dependencies_. You need to actively review them for vulnerabilities.
 
 In 2021, Log4j was a dependency included in many applications worldwide. The events surrounding the Log4j vulnerability show how crucial dependency management is to securing your codebase. If you use any third-party software with security vulnerabilities, your project inherits the same weaknesses.
 
@@ -38,7 +38,7 @@ Visualizations can simplify and summarize large amounts of data. Dependency grap
 
 :::image type="content" source="../media/dependency-graph.png" alt-text="Screenshot of dependency graph." border="true":::
 
-The dependency graph enables you to monitor any known issues within dependencies that may affect the security of your application. It is important to note that once you have activated the dependency graph, you have access to dependency reviews for both private and public repositories belonging to your organization. These reviews help keep dependency vulnerabilities from being introduced into your environment.
+The dependency graph enables you to monitor any known issues within dependencies that may affect the security of your application. Once you activate the dependency graph, you have access to dependency reviews for both private and public repositories belonging to your organization. These reviews help keep dependency vulnerabilities from being introduced into your environment.
 
 ### The GitHub Advisory Database
 
@@ -52,7 +52,7 @@ Now, let's look at another component that relies on the GitHub Advisory Database
 
 :::image type="content" source="../media/dependabot-github.png" alt-text="Screenshot of Dependabot icon." border="false":::
 
-Imagine a project that includes 20 to 30 third-party integrations. Manually monitoring so many dependencies and keeping them up to date is time-consuming and tedious. Dependabot is GitHub's answer to this challenge. The built-in mechanism detects vulnerable dependencies by first examining the project's manifest file (such as the `package.json` file used in NodeJS). Next, Dependabot consults the GitHub Advisory Database to see if the detected dependencies have a flag that indicates they are out-of-date or vulnerable. If there is an issue with any dependency or when a dependency graph related to a repositories changes, Dependabot alerts authorized team members.
+Imagine a project that includes 20 to 30 third-party integrations. Manually monitoring so many dependencies and keeping them up to date is time-consuming and tedious. Dependabot is GitHub's answer to this challenge. The built-in mechanism detects vulnerable dependencies by first examining the project's manifest file (such as the `package.json` file used in NodeJS). Next, Dependabot consults the GitHub Advisory Database to see if the detected dependencies have a flag that indicates they are out-of-date or vulnerable. If there is an issue with any dependency or when a dependency graph related to a repository's changes, Dependabot alerts authorized team members.
 
 This automated process helps avoid maintenance oversights and increases efficiency.
 
@@ -61,7 +61,7 @@ This automated process helps avoid maintenance oversights and increases efficien
 After securing the supply chain, the next area of focus for GitHub Advanced Security is code analysis. Human error can introduce information into the codebase that puts your project at risk. You'll now learn about two features that address this risk, code scanning and secret scanning.
 
 ### Code scanning 
-Even the best developers produce code with errors that their team must find, triage, and fix. GitHub's code scanning feature enables you to complete all of those tasks. Code scanning is a static analysis of every git push. The scan happens at the same time as development and checks for common misconfigurations, errors, and vulnerabilities, ensuring that you catch problems before they make it into production. GitHub alerts authorized developers in the affected repository if the system detects an issue. You will receive alerts about the state of your code and guidance with suggestions on how to fix any errors. Code scanning also enables members of your organization to learn how to write more secure code.
+Even the best developers produce code with errors that their team must find, triage, and fix. GitHub's code scanning feature enables you to complete all of those tasks. Code scanning is a static analysis of every git push. The scan happens at the same time as development and checks for common misconfigurations, errors, and vulnerabilities. This ensures that you catch problems before they make it into production. GitHub alerts authorized developers in the affected repository if the system detects an issue. You will receive alerts about the state of your code and guidance with suggestions on how to fix any errors. Code scanning also enables members of your organization to learn how to write more secure code.
 
 To use code scanning, you first have to enable it for your repository by completing these steps. 
 
@@ -107,7 +107,7 @@ Secret scanning also takes place on a very granular level. You can use a regular
 
 Some GitHub Advanced Security features are not accessible from the user interface. They work behind the scenes to improve the performance of your platform.
 
-The table below highlights some of these features.
+The following table highlights some of these features.
 
 | Feature | Description |
 |---|---|
@@ -139,7 +139,7 @@ Remember these tips to safely use runners:
 
 ## Licensing considerations
 
-It is GitHub's mission to be the home for all developers. That is why GitHub makes advanced security features such as dependency review, code scanning, and secret scanning automatically available free of charge for public repositories on GitHub.com. Open source projects can benefit from these features. Smaller teams and individual developers have the opportunity to secure their development.
+It is GitHub's mission to be the home for all developers. That is why GitHub makes advanced security features such as dependency review, code scanning, and secret scanning automatically available free of charge for public repositories on GitHub.com. Open-source projects can benefit from these features. Smaller teams and individual developers have the opportunity to secure their development.
 
 To use GitHub Advanced Security features on private repositories, you'll need a GitHub Advanced Security license(GHAS). GHAS is available with GitHub Enterprise Cloud or GitHub Enterprise Server. Each license for GHAS specifies a maximum number of accounts or seats.
 

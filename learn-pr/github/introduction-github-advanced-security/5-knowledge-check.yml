@@ -52,10 +52,10 @@ quiz:
     choices:
     - content: "Embedding security team members into development teams."
       isCorrect: false
-      explanation: "Although security teams should collaborate with other teams, this is not the meaning of 'shifting left' ."
+      explanation: "Although security teams should collaborate with other teams, this isn't the meaning of 'shifting left' ."
     - content: "Implementing security best practices after reviews are completed."
       isCorrect: false
-      explanation: "Security should not be considered as an isolated, post-development exercise."
+      explanation: "Security shouldn't be considered as an isolated, post-development exercise."
     - content: "Incorporating security principles early in the software development lifecycle"
       isCorrect: true
       explanation: "Security should be considered at each development phase."
@@ -69,15 +69,15 @@ quiz:
       explanation: "Secrets are encrypted authentication keys."
     - content: "Environment variable"
       isCorrect: false
-      explanation: "Environment variables are not used for authentication."
+      explanation: "Environment variables aren't used for authentication."
   - content: "What is a common cause of security breaches?"
     choices:
     - content: "Users remove packages from projects."
       isCorrect: false
-      explanation: "Package removal is not a common cause of security breaches."
+      explanation: "Package removal isn't a common cause of security breaches."
     - content: "Developers share their code with other developers outside their organization."
       isCorrect: false
-      explanation: "Sharing code is not a common cause of security breaches."
+      explanation: "Sharing code isn't a common cause of security breaches."
     - content: "Administrators delay in patching a system after updates are available."
       isCorrect: true
       explanation: "Failing to promptly patch a system leaves it vulnerable to attacks or exploits."
