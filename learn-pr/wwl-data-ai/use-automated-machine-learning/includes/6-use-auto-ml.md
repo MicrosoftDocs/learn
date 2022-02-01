@@ -31,10 +31,11 @@ Notice under task type there are settings _View additional configuration setting
 - **Additional configuration settings:**
     - **Primary metric**: Select **Normalized root mean squared error** *(more about this metric later!)*
     - **Explain best model**: Selected - *this option causes automated machine learning to calculate feature importance for the best model; making it possible to determine the influence of each feature on the predicted label.*
-    - **Blocked algorithms**: *Block **all** other than **RandomForest** and **LightGBM** - normally you'd want to try as many as possible, but doing so can take a long time!*
+    - **Allowed models**: *Select **RandomForest** and **LightGBM** - normally you'd want to try as many as possible, but doing so can take a long time!*
     - **Exit criterion**:
         - **Training job time (hours)**: 0.5 - *this causes the experiment to end after a maximum of 30 minutes.*
         - **Metric score threshold**: 0.08 - *this causes the experiment to end if a model achieves a normalized root mean squared error metric score of 0.08 or less.*
+    - **Concurrency**: *do not change*
 > [!div class="centered"]
 > ![Click on Select from all options to locate the VM size.](../media/new-automated-ml-run-5.png)
 - **Featurization settings:**
