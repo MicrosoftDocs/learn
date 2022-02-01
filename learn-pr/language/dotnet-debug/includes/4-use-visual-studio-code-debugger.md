@@ -126,7 +126,7 @@ The fifth value in this list is 5, but our program returned 3. Let's use the deb
 
    :::image source="../media/breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
-1. Start debugging again. The program begins to execute. It breaks (pauses execution) on line 9 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
+1. Start debugging again. The program begins to execute. It breaks (pauses execution) on line 1 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
 
    :::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
