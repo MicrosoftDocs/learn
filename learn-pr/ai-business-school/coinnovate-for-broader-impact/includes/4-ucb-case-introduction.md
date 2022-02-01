@@ -10,8 +10,8 @@ To help with this, UCB wanted to use AI to identify potential molecules that pre
 
 ## Questions for consideration
 
-1. What are some ways UCB could have tried accelerating the drug development process?
-1. Why might UCB choose to pursue external partnerships rather than innovating within their own firm? What are the benefits of external coinnovation?
-1. How might UCB make their findings available to the public? What are some ways they could make this information known?
+* What are some ways UCB could have tried accelerating the drug development process?
+* Why might UCB choose to pursue external partnerships rather than innovating within their own firm? What are the benefits of external coinnovation?
+* How might UCB make their findings available to the public? What are some ways they could make this information known?
 
 Next, let’s watch how UCB approached solving these challenges by coinnovating with Microsoft and how they continue maximizing this partnership throughout and beyond COVID-19.
