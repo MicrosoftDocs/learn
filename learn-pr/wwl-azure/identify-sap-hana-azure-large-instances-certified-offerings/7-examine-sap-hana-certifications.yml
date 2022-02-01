@@ -4,13 +4,12 @@ title: Examine SAP HANA certifications
 metadata:
   title: Examine SAP HANA certifications
   description: "Examine SAP HANA certifications"
-  ms.date: 12/08/2021
+  ms.date: 01/31/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
