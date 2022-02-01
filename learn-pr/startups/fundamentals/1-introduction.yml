@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Overview of startup fundamentals and core business concepts.
+  ms.date: 02/15/2022
+  author: ryanmesches
+  ms.author: Ryan.Mesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

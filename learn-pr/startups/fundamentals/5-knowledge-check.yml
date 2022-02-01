@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Review what you've learned in the course about startup fundamentals. Topics include applying principles of conversational AI, creating bots, and editing bots."
+  ms.date: 02/15/2022
+  author: ryanmesches
+  ms.author: Ryan.Mesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which of the following is the best use of your time when exploring an idea for a new startup?"
+    choices:
+    - content: "Create detailed wireframes or a clickable prototype and give a product demo to potential users."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Interview potential users to understand the problem you might solve for them and how important a solution is to them."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Pitch investors so that you have the funds to be able to grow your company fast."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Create a media release to attract as much media attention to your startup as possible."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "Which of these startup attributes is least likely to contribute to success?"
+    choices:
+    - content: "Addressing a large, growing market."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Leveraging the domain expertise of the founders."
+      isCorrect: true
+      explanation: "Incorrect."
+    - content: "Remaining a sole founder."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "A product that's inherently shareable."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A diverse founding team."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "Which of these startup attributes is likely to lead to failure?"
+    choices:
+    - content: "Building a product before talking to potential customers."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Keeping the idea a secret until the product is launched."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Taking advice from your cousin who's a corporate tax lawyer."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Trying to scale the company before you have problem-solution fit."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.3-success
+title: What makes startups succeed?
+metadata:
+  title: What makes startups succeed?
+  description: Overview of startup fundamentals and core business concepts.
+  ms.date: 02/15/2022
+  author: ryanmesches
+  ms.author: Ryan.Mesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-success.md)]
