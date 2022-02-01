@@ -165,7 +165,7 @@ You want to create a separate node pool that supports the batch-processing servi
 
 ## Schedule a pod with spot node affinity
 
-You can schedule a pod to run on a spot node by adding a toleration and an affinity to the pod's deployment manifest file. When the toleration and node affinity corresponds with the taint and label applied to your spot nodes, the pod is scheduled on these nodes.
+You can schedule a pod to run on a spot node by adding a toleration and an affinity to the pod's deployment manifest file. When the toleration and node affinity correspond with the taint and label applied to your spot nodes, the pod is scheduled on these nodes.
 
 The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` and a label that equals `kubernetes.azure.com/scalesetpriority=spot`. Use the information in this key-value pair in the `tolerations` and `affinity` section of your workloads YAML manifest file. With the second batch-processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
 
