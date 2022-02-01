@@ -87,7 +87,7 @@ To use `ResourcesEstimator`:
 1. Run your program from the command line, and select `ResourcesEstimator` as your simulator.
 
    ```dotnetcli
-   dotnet run -- --n-qubits 2 --idx-marked --simulator ResourcesEstimator
+   dotnet run -- --n-qubits 2 --idx-marked 1 --simulator ResourcesEstimator
    ```
 
 1. Review the printed list of the quantum resources that are required to run the job.
