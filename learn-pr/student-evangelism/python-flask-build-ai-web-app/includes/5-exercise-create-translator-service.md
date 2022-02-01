@@ -45,11 +45,11 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the key dashboard.](../media/translator-keys.png)
-    
+
     > [!NOTE]
     > There's no difference between Key 1 and Key 2. By providing two keys you have the opportunity to migrate to new keys, by regenerating one while using the other.
 
-13. Make a note of the **endpoint** and **location** values
+13. Make a note of the **Text Translation** and **location** values
 
 ## Create .env file to store the key
 
