@@ -49,6 +49,16 @@
       "path_to_root": "blazing-pizza-signalr",
       "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
       "branch": "signalr"
+    },
+    {
+      "path_to_root": "csharp-null-safety-main",
+      "url": "https://github.com/MicrosoftDocs/mslearn-csharp-null-safety",
+      "branch": "main"
+    },
+    {
+      "path_to_root": "csharp-null-safety-solution",
+      "url": "https://github.com/MicrosoftDocs/mslearn-csharp-null-safety",
+      "branch": "solution"
     }
   ],
   "dependent_packages": [
