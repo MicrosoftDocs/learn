@@ -99,7 +99,7 @@ The success of a startup is a function of volume and value – "volume" being th
 
 Startup founders should aim to serve as large a market as possible and ensure that their product creates meaningful value for customers.
 
-As noted by Marc Andreessen, founder of Netscape and co-founder of the venture capital firm Andreessen Horowitz, "software is eating the world". Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old ‘legacy' companies to new ‘digitally-enabled' ones. There are countless opportunities to build companies capable of disrupting multi-billion-dollar markets, so why create a company that is serving a narrow niche or focused just on a small market?
+As noted by Marc Andreessen, founder of Netscape and cofounder of the venture capital firm Andreessen Horowitz, "software is eating the world". Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old ‘legacy' companies to new ‘digitally-enabled' ones. There are countless opportunities to build companies capable of disrupting multi-billion-dollar markets, so why create a company that is serving a narrow niche or focused just on a small market?
 
 **Ask yourself:** Am I focused on a large and growing market? Are there enough people who will rely on my product every day to make this an opportunity worth pursuing? Is this a market that's dominated by large, inefficient incumbents who could be disrupted by my solution?
 

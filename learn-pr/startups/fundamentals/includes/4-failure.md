@@ -80,7 +80,7 @@ There are plenty of reasons why it's generally better to tell people what you're
 
 - Ideas are cheap and easy to come up with. Millions of people in the world have startup ideas. Most of those ideas will prove not to be worthwhile. If you ask anyone who's even remotely interested in being an entrepreneur, chances are they already have multiple startup ideas that they're passionate about pursuing. Why would they want to devote years of their life working on something they didn't come up with, and that they're most likely not passionate about?
 - The longer you keep your idea to yourself the more you're depriving yourself of valuable feedback. You should take every opportunity to tell people about your idea and find out if it meets a need. Don't just tell your friends or family, as they'll most likely give you well-meaning (but unhelpful) positive feedback. The best feedback comes from potential customers, followed by experienced founders, mentors, and investors who can share their advice and insights.
-- Talking about your startup idea is a great way to attract co-founders and collaborators, particularly if you're part of an existing startup community and can take part in networking opportunities and pitch events. By sharing your vision and passion you're more likely to find others who can join you and contribute to your startup journey.
+- Talking about your startup idea is a great way to attract cofounders and collaborators, particularly if you're part of an existing startup community and can take part in networking opportunities and pitch events. By sharing your vision and passion you're more likely to find others who can join you and contribute to your startup journey.
 - If you want to raise money from investors, you have to be able to talk openly about what you're working on. Good investors are highly protective of their reputations and there is no sense in an investor stealing your idea. They have better things to do with their time, and the feedback you will get from good investors more than outweighs any risk there might be in talking to them about your idea.
 
    Very few investors will sign a non-disclosure agreement before you tell them about your startup and asking them to sign one generally doesn't go over well.
@@ -104,15 +104,15 @@ Similarly, investors are always on the lookout for promising startups. Good inve
 
 **Need help finding quality mentors?** The Microsoft for Startups Mentor Network has hundreds of subject area experts ready to help you overcome obstacles and hit your next milestone. For more information, see [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer). For existing Microsoft for Startups Founders Hub members, to learn how to access the benefit, see [About mentorship offer details](https://foundershubsupportcenter.powerappsportals.com/article/KA-01083/).
 
-## Co-founder conflict
+## Cofounder conflict
 
-Disagreement among co-founders is unfortunately a common cause of startup failure.
+Disagreement among cofounders is unfortunately a common cause of startup failure.
 
-Disagreements by themselves are a normal part of building a business. However, it's important that co-founders have a sufficiently robust relationship, and the right processes in place, that they can discuss difficult issues and reach agreement without causing irreparable harm to their working relationships and to the company.
+Disagreements by themselves are a normal part of building a business. However, it's important that cofounders have a sufficiently robust relationship, and the right processes in place, that they can discuss difficult issues and reach agreement without causing irreparable harm to their working relationships and to the company.
 
-Co-founder conflict can be particularly acute if the founders have not worked together before, if they have different levels of commitment to the company (both time and financial), they have different financial needs, or if there is a lack of clarity about the respective roles that each will play in the business.
+Cofounder conflict can be particularly acute if the founders have not worked together before, if they have different levels of commitment to the company (both time and financial), they have different financial needs, or if there is a lack of clarity about the respective roles that each will play in the business.
 
-**Ask yourself:** Do the co-founders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet discussed in [Should you found a startup?](./2-found-startup.yml#are-the-co-founders-aligned) and use it as an input to this process.
+**Ask yourself:** Do the cofounders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet discussed in [Should you found a startup?](../2-found-startup.yml#are-the-cofounders-aligned) and use it as an input to this process.
 
 ### Worksheet
 
@@ -134,7 +134,7 @@ Finally, bear in mind that as well as these indicators of failure you should be 
 
 ## Conclusions
 
-- It's important to consider the motivations and risk tolerance of each co-founder early in the journey. This will help you to ensure you have an informed view of what's ahead and can address any misalignment of expectations before they become problematic.
+- It's important to consider the motivations and risk tolerance of each cofounder early in the journey. This will help you to ensure you have an informed view of what's ahead and can address any misalignment of expectations before they become problematic.
 - There are a lot of things you can do to validate your startup idea prior to committing full-time. Your objective should be to de-risk the opportunity as much as possible and to make commitments of time and money in step with this de-risking process.
 - Your most important job early on is to find a repeatable, scalable business model. You should resist the temptation to try and acquire users or generate revenue until you have strong evidence that your idea addresses a real pain point, you have a clear understanding of the needs of your target users and you know what product they need you to build.
 - Successful startups have a number of important shared attributes. By understanding these you can integrate them into your startup from the very beginning.
