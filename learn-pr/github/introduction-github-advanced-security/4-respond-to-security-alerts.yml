@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-advanced-security.respond-to-security-alerts
+title: Responding to security alerts
+metadata:
+  unitType: learning-content
+  title: "Responding to security alerts"
+  description: "In this unit, you'll learn the importance of responding to security alerts and what that response should look like. You'll also see GitHub functionality that enables you to quickly react to these alerts." # user input: a description for site search and SEO
+  ms.date: 1/28/2022
+  author: davenowell
+  ms.author: dapolite
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-respond-to-security-alerts.md)]
