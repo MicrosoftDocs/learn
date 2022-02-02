@@ -3,7 +3,7 @@ uid: learn.startups.fundamentals.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Review what you've learned in the course about startup fundamentals. Topics include applying principles of conversational AI, creating bots, and editing bots."
+  description: Review startup fundamentals. Topics include factors that lead to success and failure, and the best approach to exploring startup ideas.
   ms.date: 02/15/2022
   author: ryanmesches
   ms.author: Ryan.Mesches
@@ -33,7 +33,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect."
     - content: "Leveraging the domain expertise of the founders."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect."
     - content: "Remaining a sole founder."
       isCorrect: true
