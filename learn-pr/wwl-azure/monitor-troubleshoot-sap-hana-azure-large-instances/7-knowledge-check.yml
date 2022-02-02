@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Every minute"
       isCorrect: false
-      explanation: "Incorrect. By default, checks are auto-refreshed every 15-minutes."
-    - content: "Every 15-minutes"
+      explanation: "Incorrect. By default, checks are refreshed every 15 minutes."
+    - content: "Every 15 minutes"
       isCorrect: true
-      explanation: "Correct. By default, checks are auto-refreshed every 15-minutes."
+      explanation: "Correct. By default, checks are refreshed every 15 minutes."
     - content: "Every hour"
       isCorrect: false
-      explanation: "Incorrect. By default, checks are auto-refreshed every 15-minutes."
+      explanation: "Incorrect. By default, checks are refreshed every 15 minutes."
   - content: "Which tool is used to raise support requests for SAP HANA on Azure (Large Instances)?"
     choices:
     - content: "Azure portal"
