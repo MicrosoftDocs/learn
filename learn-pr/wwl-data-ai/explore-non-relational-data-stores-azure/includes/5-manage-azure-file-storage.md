@@ -110,7 +110,7 @@ TotalBytesTransferred: 43686370
 Final Job Status: Completed
 ```
 
-The *AzCopy copy* command has other options as well. For more information, see the page [Upload files](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-files?toc=/azure/storage/files/toc.json#upload-files) on the Microsoft website.
+The *AzCopy copy* command has other options as well. For more information, see the page [Upload files](/azure/storage/common/storage-use-azcopy-files?toc=/azure/storage/files/toc.json#upload-files) on the Microsoft website.
 
 ### Download files
 
@@ -120,4 +120,4 @@ You can also use the *AzCopy copy* command to transfer files and folders from Az
 azcopy copy "https://<storage-account-name>.file.core.windows.net/myshare/myfolder<SAS-token>" "localfolder" --recursive
 ```
 
-For full details on downloading files using AzCopy, see [Download files](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-files?toc=/azure/storage/files/toc.json#download-files).
+For full details on downloading files using AzCopy, see [Download files](/azure/storage/common/storage-use-azcopy-files?toc=/azure/storage/files/toc.json#download-files).
