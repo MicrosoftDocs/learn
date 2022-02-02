@@ -35,5 +35,5 @@ The [Build and release tasks](/azure/devops/pipelines/tasks/?azure-portal=true) 
 
 In this module, you created the pipeline from Azure DevOps. You can repeat a similar process to create your own pipeline. You can also create a pipeline from the Azure portal or from the GitHub Marketplace app.
 
-* [Use the Azure portal](/azure/devops/pipelines/get-started-azure-devops-project?azure-portal=true)
+* [Use the Azure portal](/azure/devops/pipelines/get-started/pipelines-get-started)
 * [Azure Pipelines](https://github.com/marketplace/azure-pipelines?azure-portal=true) app on GitHub Marketplace
