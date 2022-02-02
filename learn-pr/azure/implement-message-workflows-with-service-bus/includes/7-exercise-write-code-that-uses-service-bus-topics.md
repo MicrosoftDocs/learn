@@ -1,8 +1,8 @@
-You have decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services located in the company's operational regions, including the Americas and Europe.
+You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services that are located in the company's operational regions, including the Americas and Europe.
 
-You have already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and retrieves messages from a subscription.
+You've already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and code that retrieves messages from a subscription.
 
-Make sure you are working in the correct directory by running the following commands in the Azure Cloud Shell:
+Make sure you're working in the correct directory by running the following commands in Azure Cloud Shell:
 
 ```bash
 cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -19,7 +19,7 @@ To complete the component that sends messages about sales performance, follow th
     const string ServiceBusConnectionString = "";
     ```
 
-    Paste the connection string that you saved in the previous exercise between the quotation marks.
+    Between the quotation marks, paste the connection string you saved in the previous exercise.
 
 1. Locate the `SendPerformanceMessageAsync()` method. (*Hint*: It's located at or near line 26.)
 
@@ -32,8 +32,8 @@ To complete the component that sends messages about sales performance, follow th
 1. Replace that line of code with the following code:
 
     ```csharp
-    // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope.
-    // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
+    // By leveraging "await using", the DisposeAsync method will be called automatically when the client variable goes out of scope.
+    // In more realistic scenarios, you would store off a class reference to the client (rather than to a local variable) so that it can be used throughout your program.
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
@@ -98,7 +98,7 @@ To complete the component that sends messages about sales performance, follow th
             static async Task SendPerformanceMessageAsync()
             {
                 // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope.
-                // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
+                // In more realistic scenarios, you would store off a class reference to the client (rather than to a local variable) so that it can be used throughout your program.
                 await using var client = new ServiceBusClient(ServiceBusConnectionString);
 
                 await using ServiceBusSender sender = client.CreateSender(TopicName);
@@ -123,13 +123,13 @@ To complete the component that sends messages about sales performance, follow th
 
 ## Send a message to the topic
 
-1. To run the component that sends a message about a sale, run the following command in the Azure Cloud Shell:
+1. To run the component that sends a message about a sale, run the following command in Cloud Shell:
 
     ```bash
     dotnet run -p performancemessagesender
     ```
 
-1. As the program executes, watch for notifications in the Cloud Shell that indicate a message is being sent. Each time you run the app, another message is added to the topic, and a copy becomes available for each subscription.
+1. As the program executes, watch for notifications in Cloud Shell that indicate that a message is being sent. Each time you run the app, another message is added to the topic, and a copy becomes available for each subscription.
   
     ```command
     Sending a message to the Sales Performance topic...
@@ -139,7 +139,7 @@ To complete the component that sends messages about sales performance, follow th
 
 ### Check the message count before you retrieve messages for a subscription
 
-When you see **Message was sent successfully**, run the following command to see how many messages are in the `Americas` subscription. Remember to replace \<namespace-name\> with your Service Bus namespace.
+When you see `Message was sent successfully`, run the following command to see how many messages are in the `Americas` subscription. Remember to replace \<namespace-name\> with your Service Bus namespace.
 
 ```azurecli
 az servicebus topic subscription show \
@@ -164,29 +164,27 @@ To create the component that retrieves messages about sales performance, follow 
     const string ServiceBusConnectionString = "";
     ```
 
-    Paste the connection string that you saved in the previous exercise between the quotation marks.
+    Between the quotation marks, paste the connection string that you saved in the previous exercise.
 
-1. Locate the `MainAsync()` method.
-
-1. Within that method, locate the following line of code:
+1. To create a Service Bus client, find the `MainAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client that will authenticate using a connection string
     ```
 
-1. To create a Service Bus client, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
-1. Locate the following line of code:
+1. To configure message handling options, find the following line of code:
 
     ```csharp
     // Create the options to use for configuring the processor
     ```
 
-1. To configure message handling options, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     var processorOptions = new ServiceBusProcessorOptions
@@ -196,59 +194,59 @@ To create the component that retrieves messages about sales performance, follow 
     };
     ```
 
-1. Locate the following line of code:
+1. To create a processor, find the following line of code:
 
     ```csharp
     // Create a processor that we can use to process the messages
     ```
 
-1. To create a processor, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
     ```
 
-1. Locate the following line of code:
+1. To configure the handler, find the following line of code:
 
     ```csharp
     // Configure the message and error handler to use
     ```
 
-1. To configure the handler, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     processor.ProcessMessageAsync += MessageHandler;
     processor.ProcessErrorAsync += ErrorHandler;
     ```
 
-1. Locate the following line of code:
+1. To start processing, find the following line of code:
 
     ```csharp
     // Start processing
     ```
 
-1. To start processing, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     await processor.StartProcessingAsync();
     ```
 
-1. Look for the following line of code. 
+1. Look for the following line of code:
 
     ```csharp
     // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client    
     ```
 
-1. Replace the line with the following code:
+   Replace the line with the following code:
 
     ```csharp
     await processor.DisposeAsync();
     await client.DisposeAsync();    
     ```
 
-1. Locate the `MessageHandler()` method. You have registered this method to handle incoming messages.
+1. To display incoming messages in the console, find the `MessageHandler()` method. You've registered this method to handle incoming messages.
 
-1. To display incoming messages in the console, replace all the code within that method with the following code:
+    Replace all the code within that method with the following code:
 
     ```csharp
     Console.WriteLine($"Received message: SequenceNumber:{args.Message.SequenceNumber} Body:{args.Message.Body}");
@@ -260,7 +258,7 @@ To create the component that retrieves messages about sales performance, follow 
     await args.CompleteMessageAsync(args.Message);
     ```
 
-1. Your final code should resemble the following example:
+1. Check that your final code resembles the following example:
 
     ```csharp
     using System;
@@ -344,11 +342,11 @@ To create the component that retrieves messages about sales performance, follow 
     Received message: SequenceNumber:31806672368304129 Body:Total sales for Brazil in August: $13m.
     ```
 
-1. When the program has returned notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app.
+1. When the program has returned notifications that it's receiving messages, press <kbd>Enter</kbd> to stop the app.
 
 ### Check the message count after you retrieve messages for a subscription
 
-Run the following command to confirm that there are 0 remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus namespace.
+Run the following command to confirm that there are no remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus namespace.
 
 ```azurecli
 az servicebus topic subscription show \
@@ -359,4 +357,4 @@ az servicebus topic subscription show \
      --query messageCount
 ```
 
-If you replace `Americas` with `EuropeAndAsia` in this code to see the current message count for the `EuropeAndAsia` subscription, you'll see that the message count is 1. In the preceding code, only `Americas` was set to retrieve topic messages, so that message is still waiting for `EuropeAndAsia` to retrieve it.
+If you replace `Americas` with `EuropeAndAsia` in this code to see the current message count for the `EuropeAndAsia` subscription, you'll see that the message count is `1`. In the preceding code, only `Americas` was set to retrieve topic messages, so that message is still waiting for `EuropeAndAsia` to retrieve it.

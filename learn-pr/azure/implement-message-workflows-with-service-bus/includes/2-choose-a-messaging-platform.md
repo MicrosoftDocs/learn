@@ -1,14 +1,14 @@
-Here, you will learn about the communications platforms available in Azure so that you can choose the right one for each requirement in your application.
+Here, you'll learn about the communications platforms available in Azure so that you can choose the right one for each requirement in your application.
 
 There are many communications platforms that can help improve the reliability of a distributed application, including several within Azure. Each of these tools serves a different purpose; let's review the messaging in Azure to help choose the right one.
 
 The architecture of Contoso Bicycles ordering and tracking application requires several components: a website, data storage, back-end service, etc. We can bind the components of our application together in many different ways, and a single application can take advantage of multiple techniques. 
 
-We need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there is communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
+We need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there's communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
 
 ## Decide between messages and events
 
-Both messages and events are *datagrams*: packages of data sent from one component to another. They are different in ways that at first seem subtle, but can make significant differences in how you architect your application.
+Both messages and events are *datagrams*: packages of data sent from one component to another. They're different in ways that at first seem subtle, but the differences can make significant differences in how you architect your application.
 
 ### Messages
 
@@ -24,15 +24,15 @@ An event triggers a notification that something has occurred. Events are "lighte
 
 Events have the following characteristics:
 
-* The event may be sent to multiple receivers, or to none at all
-* Events are often intended to "fan out," or have a large number of subscribers for each publisher
-* The publisher of the event has no expectation about the action a receiving component takes
+* The event may be sent to multiple receivers, or to none at all.
+* Events are often intended to "fan out," or have a large number of subscribers for each publisher.
+* The publisher of the event has no expectation about the action a receiving component takes.
 
 Our bicycle parts chain would likely use events for notifications to users about status changes. Status change events could be sent to Azure Event Grid, then on to Azure Functions, and to Azure Notification Hubs for a completely _serverless_ solution.
 
 This difference between events and messages is fundamental because communications platforms are generally designed to handle one or the other. Service Bus is designed to handle messages. If you want to send events, you would likely choose Event Grid.
 
-Azure also has Azure Event Hubs, but it is most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors in our manufacturing warehouses, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
+Azure also has Azure Event Hubs, but it's most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors in our manufacturing warehouses, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
 
 ## Service Bus topics and queues
 
@@ -40,9 +40,9 @@ Azure Service Bus can exchange messages in two different ways: queues and topics
 
 ### What is a queue?
 
-A *queue* is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
+A Service Bus *queue* is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
 
-:::image type="content" source="../media/2-service-bus-queue.png" alt-text="An illustration showing a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one-by-one from the queue.":::
+:::image type="content" source="../media/2-service-bus-queue.png" alt-text="Illustration that shows a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one by one from the queue.":::
 
 Queues decouple the source and destination components to insulate destination components from high demand.
 
@@ -52,21 +52,21 @@ A queue responds to high demand without needing to add resources to the system. 
 
 ### What is a topic?
 
-A *topic* is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
+A Service Bus *topic* is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
 > [!NOTE] 
 > Topics are not supported in the Basic pricing tier.
 
-:::image type="content" source="../media/2-service-bus-topic.png" alt-text="An illustration showing one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscription are used by three receivers to retrieve the relevant messages.":::
+:::image type="content" source="../media/2-service-bus-topic.png" alt-text="Illustration that shows one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscriptions are used by three receivers to retrieve the relevant messages.":::
 
 ## Service Bus queues and storage queues
 
-There are two Azure features that include message queues: Service Bus and Azure Storage accounts. As a general guide, storage queues are simpler to use but are less sophisticated and flexible than Service Bus queues.
+Two Azure services include message queues: Service Bus and Azure Storage. As a general guide, storage queues are simpler to use, but they're less sophisticated and less flexible than Service Bus queues.
 
-Key advantages of Service Bus queues include:
+The key advantages of Service Bus queues include:
 
 * Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Service Bus messages.
-* Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it is handled twice.
+* Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it's handled twice.
 * Guarantees *first-in, first-out (FIFO)* order. Messages are handled in the same order they are added. (Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages.)
 * Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
 * Supports role-based security.
@@ -74,42 +74,48 @@ Key advantages of Service Bus queues include:
 
 Advantages of storage queues:
 
-* Supports unlimited queue size (versus 80-GB limit for Service Bus queues)
-* Maintains a log of all messages
+* Supports unlimited queue size (versus 80-GB limit for Service Bus queues).
+* Maintains a log of all messages.
 
 ## How to choose a communications technology
 
 We've seen the different concepts and the implementations Azure provides. Let's discuss what our decision process should look like for each of our communications.
 
-#### Consider the following questions:
+### Considerations
+
+As you choose a method for sending and receiving messages, consider the following questions:
 
 1. Is the communication an event? If so, consider using Event Grid or Event Hubs.
 
-1. Should a single message be delivered to more than one destination? If so, use a Service Bus topic. Otherwise, use a queue.
+1. Should a single message be delivered to more than one destination? If so, use a Service Bus topic. Otherwise, use a Service Bus queue.
 
-If you decide that you need a queue:
+#### Queues: Service Bus vs. storage
 
-#### Choose Service Bus queues if:
+If you decide that you need a queue, narrow down your choice further.
 
-* You need an at-most-once delivery guarantee
-* You need a FIFO guarantee
-* You need to group messages into transactions
-* You want to receive messages without polling the queue
-* You need to provide role-based access to the queues
-* You need to handle messages larger than 64 KB but smaller than 256 KB for the standard tier or 100 MB for the premium tier
-* Your queue size will not grow larger than 80 GB
-* You would like to be able to publish and consume batches of messages
+Choose a *Service Bus* queue if:
 
-#### Choose queue storage if:
+* You need an at-most-once delivery guarantee.
+* You need a FIFO guarantee (if no other settings preempt the default FIFO order)
+* You need to group messages into transactions.
+* You want to receive messages without polling the queue.
+* You need to provide role-based access to the queues.
+* You need to handle messages larger than 64 KB but smaller than 256 KB for the standard tier or 100 MB for the premium tier.
+* Your queue size won't grow larger than 80 GB.
+* You'd like to be able to publish and consume batches of messages.
 
-* You need a simple queue with no particular additional requirements
-* You need an audit trail of all messages that pass through the queue
-* You expect the queue to exceed 80 GB in size
-* You want to track progress for processing a message inside of the queue
+Choose a *storage* queue if:
 
-Although the components of a distributed application can communicate directly, you can often increase the reliability of that communication by using an intermediate communication platform such as Azure Service Bus or Azure Event Grid.
+* You need a simple queue with no particular additional requirements.
+* You need an audit trail of all messages that pass through the queue.
+* You expect the queue to exceed 80 GB in size.
+* You want to track progress for processing a message inside the queue.
 
-Event Grid is designed for events, which notify recipients only of an event and do not contain the raw data associated with that event. Azure Event Hubs is designed for high-flow analytics types of events. Azure Service Bus and storage queues are for messages, which can be used for binding the core pieces of any application workflow.
+Although the components of a distributed application can communicate directly, you often can increase the reliability of that communication by using an intermediate communication platform like Azure Event Hubs or Azure Event Grid.
+
+Event Hubs and Event Grid are designed for events, which notify recipients only of an event and don't contain the raw data associated with that event. Azure Event Hubs is designed for high-flow, analytics types of events.
+
+Azure Service Bus and storage queues are for messages, which can be used for binding the core pieces of any application workflow.
 
 If your requirements are simple, if you want to send each message to only one destination, or if you want to write code as quickly as possible, a storage queue may be the best option. Otherwise, Service Bus queues provide many more options and flexibility.
 

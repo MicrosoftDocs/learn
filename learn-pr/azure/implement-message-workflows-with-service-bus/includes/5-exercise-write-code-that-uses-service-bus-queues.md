@@ -1,6 +1,6 @@
 You've chosen to use a Service Bus queue to handle messages about individual sales between the mobile app, which your sales personnel use, and the web service hosted in Azure, which stores details about each sale in an Azure SQL Database instance.
 
-In the previous exercise, you implemented the necessary objects in your Azure subscription. Let's build upon those. Now, you want to write code that sends messages to that queue and retrieves messages.
+In the previous exercise, you implemented the necessary objects in your Azure subscription. Now, you want to write code that sends messages to that queue and retrieves messages.
 
 In this unit, you'll build two console applications: one application places messages into a Service Bus queue, and one application retrieves messages from a Service Bus queue. The applications are part of a single .NET Core solution.
 
@@ -11,7 +11,7 @@ You must configure two pieces of information in your two console apps to access 
 * Endpoint for your namespace
 * Shared access key for authentication
 
-These values can be obtained from the connection string.
+You can get these values from the connection string.
 
 1. In Azure Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
@@ -35,7 +35,7 @@ These values can be obtained from the connection string.
 ## Clone and open the starter application
 
 > [!NOTE]
-> For simplicity, the following tasks will instruct you to hard-code the connection string in the *Program.cs* file of both console applications. In a production application, you should use a configuration file or Azure Key Vault to store the connection string.
+> For simplicity, the following tasks instruct you to hard-code the connection string in the *Program.cs* file of both console applications. In a production application, you should use a configuration file or Azure Key Vault to store the connection string.
 
 1. Run the following command in Cloud Shell to clone the Git project solution:
 
@@ -59,17 +59,15 @@ These values can be obtained from the connection string.
     const string ServiceBusConnectionString = "";
     ```
 
-1. Paste the connection string between the quotation marks.
+   Paste the connection string between the quotation marks.
 
-1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Locate the `SendSalesMessageAsync()` method.
-
-1. Within that method, locate the following line of code:
+1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client here
     ```
 
-1. Replace that line of code with the following code:
+   Replace that line of code with the following code:
 
     ```csharp
     // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope. 
@@ -78,25 +76,25 @@ These values can be obtained from the connection string.
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
   
-1. Within that method, locate the following line of code:
+1. Within the `SendSalesMessageAsync()` method, find the following line of code:
 
     ```csharp
     // Create a sender here
     ```
 
-1. Replace that comment with the following code:
+   Replace that comment with the following code:
 
     ```csharp
     await using ServiceBusSender sender = client.CreateSender(QueueName);
     ```
 
-1. Within the `try...catch` block, locate the following line of code:
+1. Within the `try...catch` block, find the following line of code:
 
     ```csharp
     // Create and send a message here
     ```
 
-1. Replace that line of code with the following lines of code:
+   Replace that line of code with the following lines of code:
 
     ```csharp
     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
@@ -115,13 +113,13 @@ These values can be obtained from the connection string.
     await sender.SendMessageAsync(message);
     ```
 
-1. Near the end of the file, locate the following comment:
+1. To dispose sender and client objects, near the end of the file, find the following comment:
 
     ```csharp
     // Close the connection to the sender here
     ```
 
-1. Replace that line with the following code to dispose sender and client objects:
+   Replace that line with the following code:
 
     ```csharp
     finally
@@ -133,7 +131,7 @@ These values can be obtained from the connection string.
     }
     ```
   
-1. Your final code for *privatemessagesender/Program.cs* should resemble the following example:
+1. Check that your final code for *privatemessagesender/Program.cs* resembles the following example:
 
     ```csharp
     using System;
@@ -207,7 +205,7 @@ These values can be obtained from the connection string.
     Message was sent successfully.
     ```
 
-1. When the app has finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
+1. When the app is finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
 
     ```azurecli
     az servicebus queue show \
@@ -227,35 +225,33 @@ These values can be obtained from the connection string.
     code .
     ```
 
-1. In the editor, open *privatemessagereceiver/Program.cs* and locate the following line of code:
+1. In the editor, open *privatemessagereceiver/Program.cs* and find the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
     ```
 
-1. Paste the connection string that you saved earlier between the quotation marks.
+   Between the quotation marks, paste the connection string that you saved earlier.
 
-1. Locate the `ReceiveSalesMessageAsync()` method.
-  
-1. Within that method, locate the following line of code:
+1. Find the `ReceiveSalesMessageAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client that will authenticate using a connection string
     ```
 
-1. Replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
-1. Locate the following line of code:
+1. To configure message handling options, find the following line of code:
 
     ```csharp
     // Create the options to use for configuring the processor
     ```
 
-1. Replace that line with the following lines of code, which configures message handling options:
+   Replace that line with the following lines of code:
 
     ```csharp
     var processorOptions = new ServiceBusProcessorOptions
@@ -265,56 +261,56 @@ These values can be obtained from the connection string.
     };
     ```
 
-1. Locate the following line of code:
+1. To create a processor, find the following line of code:
 
     ```csharp
     // Create a processor that we can use to process the messages
     ```
 
-1. Replace that line with the following code to create a processor:
+   Replace that line with the following code:
 
     ```csharp
     await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
     ```
 
-1. Locate the following line of code:
+1. To configure the handlers, find the following line of code:
 
     ```csharp
     // Configure the message and error handler to use
     ```
 
-1. To configure the handlers, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     processor.ProcessMessageAsync += MessageHandler;
     processor.ProcessErrorAsync += ErrorHandler;
     ```
 
-1. Locate the following line of code:
+1. To start processing, find the following line of code:
 
     ```csharp
     // Start processing
     ```
 
-1. To start processing, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     await processor.StartProcessingAsync();
     ```
 
-1. Locate the following line of code:
+1. To close the connection to Service Bus, find the following line of code:
 
     ```csharp
     // Close the processor here
     ```
 
-1. To close the connection to Service Bus, replace that line with the following code:
+   Replace that line with the following code:
 
     ```csharp
     await processor.CloseAsync();
     ```
 
-1. Review code in the **MessageHandler** in the method:
+1. Review code in the `MessageHandler` method:
 
     ```csharp
     // handle received messages
@@ -331,7 +327,7 @@ These values can be obtained from the connection string.
     }
     ```
 
-1. Review code in the **ErrorHandler** method:
+1. Review code in the `ErrorHandler` method:
 
     ```csharp
     // handle any errors when receiving messages
@@ -343,7 +339,7 @@ These values can be obtained from the connection string.
     }    
     ```
 
-1. Your final code for *privatemessagereceiver/Program.cs* should resemble the following example:
+1. Check that your final code for *privatemessagereceiver/Program.cs* resembles the following example:
 
     ```csharp
     using System;
@@ -419,7 +415,7 @@ These values can be obtained from the connection string.
 
 1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-1. Select **...** in the right corner, and click **Close Editor** to close the editor.
+1. Select **...** in the right corner, and select **Close Editor** to close the editor.
 
 ## Retrieve a message from the queue
 
@@ -436,18 +432,22 @@ These values can be obtained from the connection string.
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
-1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
+1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
 
-    ```azurecli
-    az servicebus queue show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name salesmessages \
-        --query messageCount \
-        --namespace-name <namespace-name>
-    ```
+### Check the message count after you retrieve messages for a subscription
 
-    The output will be `0` if all the messages have been removed.
+Run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
 
-You've written code that sends a message about individual sales to a Service Bus queue. In the sales force distributed application, you should write this code in the mobile app that sales personnel use on devices.
+```azurecli
+az servicebus queue show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name salesmessages \
+    --query messageCount \
+    --namespace-name <namespace-name>
+```
 
-You've also written code that receives a message from the Service Bus queue. In the sales force distributed application, you should write this code in the web service that runs in Azure and processes received messages.
+The output will be `0` if all the messages have been removed.
+
+You've written code that sends a message about individual sales to a Service Bus queue. In the salesforce distributed application, you should write this code in the mobile app that sales personnel use on devices.
+
+You've also written code that receives a message from the Service Bus queue. In the salesforce distributed application, you should write this code in the web service that runs in Azure and processes received messages.

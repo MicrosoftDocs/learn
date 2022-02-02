@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: 'An Azure Service Bus queue.'
       isCorrect: false
-      explanation: "Incorrect. A queue can only have one destination component at a time, which means that each message in the queue is delivered to only one receiver."
+      explanation: "Incorrect. A queue can have only one destination component at a time, which means that each message in the queue is delivered to only one receiver."
     - content: 'An Azure Service Bus topic.'
       isCorrect: true
       explanation: "Correct. A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."

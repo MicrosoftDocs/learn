@@ -1,12 +1,12 @@
-Distributed applications use queues, as temporary storage locations for messages that are awaiting delivery to a destination component. To send and receive messages through a queue, you must write code in both the source and destination components.
+Distributed applications use Service Bus queues as temporary storage locations for messages that are awaiting delivery to a destination component. To send and receive messages through a queue, you must write code in both the source and destination components.
 
-Consider the Contoso Bicycles application. The customer can place an order through a website or mobile app. Because websites and mobile apps run on customer devices, there is really no limit to how many orders could be made at the same time. By having the mobile app and website deposit the orders in a Service Bus queue, the back-end component (a web app) is able to process orders from that queue at its own pace.
+Consider the Contoso Bicycles application. The customer can place an order through a website or mobile app. Because websites and mobile apps run on customer devices, there really is no limit to how many orders can be made at the same time. By having the mobile app and website deposit the orders in a Service Bus queue, the back-end component (a web app) is able to process orders from that queue at its own pace.
 
 The Contoso Bicycles application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so we decide to use a queue. Our receiving component's first job will be processing the payment.
 
-In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, they'll write code that picks up messages from the queue.
+In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, Contoso will write code that picks up messages from the queue.
 
-Here, you will learn how to write that code.
+Here, you'll learn how to write that code.
 
 ## Azure.Messaging.ServiceBus NuGet package
 
@@ -19,60 +19,60 @@ Source components and destination components both need two pieces of information
 - The location of the Service Bus namespace, also known as an *endpoint*. The location is specified as a fully qualified domain name within the **servicebus.windows.net** domain. For example: **bicycleService.servicebus.windows.net**.
 - An access key. Service Bus restricts access to queues or topics by requiring a valid access key.
 
-Both of these pieces of information are provided to the [ServiceBusClient](/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
+Both these pieces of information are provided to the [ServiceBusClient](/dotnet/api/azure.messaging.servicebus.servicebusclient) object in the form of a connection string. You can get the correct connection string for your namespace from the Azure portal.
 
 ## Call methods asynchronously
 
-The queue in Azure may be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention may cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
+The queue in Azure might be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention might cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 
 When sending a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
 
-## Write code that sends to queues
+## Write code that sends a message to the queue
 
-1. In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue:
+In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue.
 
-    ```csharp
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Azure.Messaging.ServiceBus;
-    ```
+```csharp
+using System.Threading;
+using System.Threading.Tasks;
+using Azure.Messaging.ServiceBus;
+```
 
-1. Next, create a new `ServiceBusClient` object, and pass it the connection string and the name of the queue:
+Next, create a new `ServiceBusClient` object, and pass it the connection string and the name of the queue.
 
-    ```csharp
-    // create a ServiceBusClient object using the connection string to the namespace
-    await using var client = new ServiceBusClient(connectionString);
+```csharp
+// Create a ServiceBusClient object using the connection string to the namespace.
+await using var client = new ServiceBusClient(connectionString);
     
-    // create a ServiceBusSender object by invoking the CreateSender method on the ServiceBusClient object, and specifying the queue name. 
-    ServiceBusSender sender = client.CreateSender(queueName);
-    ```
-    
-1. You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method, and passing a `ServiceBusMessage`:
+// Create a ServiceBusSender object by invoking the CreateSender method on the ServiceBusClient object, and specifying the queue name. 
+ServiceBusSender sender = client.CreateSender(queueName);
+```
+  
+You can send a message to the queue by calling the `ServiceBusSender.SendMessageAsync()` method and passing a `ServiceBusMessage`.
 
-    ```csharp
-    // create a new message to send to the queue
-    string messageContent = "Order new crankshaft for eBike.";
-    var message = new ServiceBusMessage(messageContent);
+```csharp
+// Create a new message to send to the queue.
+string messageContent = "Order new crankshaft for eBike.";
+var message = new ServiceBusMessage(messageContent);
 
-    // send the message to the queue
-    await sender.SendMessageAsync(message);
-    ```
+// Send the message to the queue.
+await sender.SendMessageAsync(message);
+```
 
 ## Receive messages from the queue
 
-1. To receive messages, you must first register a message handler. The message handler is the method in your code that will be invoked when a message is available on the queue:
+To receive messages, you must first register a message handler. The message handler is the method in your code that will be invoked when a message is available on the queue.
 
-    ```csharp
-    // create a ServiceBusProcessor for the queue
-    await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
+```csharp
+// Create a ServiceBusProcessor for the queue.
+await using ServiceBusProcessor processor = client.CreateProcessor(queueName, options);
     
-    // specify handler methods for messages and errors
-    processor.ProcessMessageAsync += MessageHandler;
-    processor.ProcessErrorAsync += ErrorHandler;
-    ```
+// Specify handler methods for messages and errors.
+processor.ProcessMessageAsync += MessageHandler;
+processor.ProcessErrorAsync += ErrorHandler;
+```
 
-1. Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue:
+Do your processing work. Then, within the message handler, call the `ProcessMessageEventArgs.CompleteMessageAsync()` method to remove the message from the queue.
 
-    ```csharp
-    await args.CompleteMessageAsync(args.Message);
-    ```
+```csharp
+await args.CompleteMessageAsync(args.Message);
+```
