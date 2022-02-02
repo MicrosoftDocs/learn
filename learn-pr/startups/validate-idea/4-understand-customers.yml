@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.validate-idea.4-understand-customers
+title: Test assumptions with customers
+metadata:
+  title: Test assumptions with customers
+  description: See an overview of startup basics. Topics include personal considerations, first-year focus, and what makes startups succeed and fail.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-understand-customers.md)]

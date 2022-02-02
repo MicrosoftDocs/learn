@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review startup fundamentals. Topics include factors that lead to success and failure, and the best approach to exploring startup ideas.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "When completing a Value Proposition Canvas, which three elements of your value proposition are you aiming to test?"
+    choices:
+    - content: "Costs, revenues, and channels."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Acquisition, retention, and referral."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Customer jobs-to-be-done, pains, and gains."
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "Which of these business model blocks should you populate first when using the Lean Canvas?"
+    choices:
+    - content: "Cost structure, revenue streams, and key metrics."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Problem, solution, and customer segments."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Any business model blocks about which you have some information."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "Which category of assumption are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
+    choices:
+    - content: "Desirability."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Feasibility."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Viability."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Scalability."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "When interviewing customers, which of the following things is unlikely to be helpful?"
+    choices:
+    - content: "Asking open questions."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Having a prepared set of interview questions."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Asking how much time or money they've spent trying to solve the problem."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Pitching your product and trying to get them to commit to a sale."
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "What is the main difference between a Concierge experiment and a Wizard of Oz experiment?"
+    choices:
+    - content: "In Concierge the customer does not provide feedback."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "In Wizard of Oz you do not attempt to make any sales."
+      isCorrect: false
+      explanation: "In Wizard of Oz the customer is unaware that the process is being completed manually."
+    - content: "Viability."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "In Concierge you do not need a landing page."
+      isCorrect: false
+      explanation: "Incorrect."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.validate-idea.5-experiment-power
+title: The power of experiments
+metadata:
+  title: The power of experiments
+  description: See an overview of startup basics. Topics include personal considerations, first-year focus, and what makes startups succeed and fail.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-experiment-power.md)]
