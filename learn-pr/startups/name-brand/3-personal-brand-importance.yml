@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.name-brand.3-personal-brand-importance
+title: The importance of personal brand
+metadata:
+  title: The importance of personal brand
+  description: See an overview of concepts on revenue models. Topics include how to choose a model for your startup and how to make early sales.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-personal-brand-importance.md)]

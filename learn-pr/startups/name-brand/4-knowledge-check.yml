@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.name-brand.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "When choosing a name for your company, which of the following searches is unlikely to be useful?"
+    choices:
+    - content: "A web search to find any other companies with a similar name."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A Trademark search to identify whether the name would be infringing an existing trademark."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A patent search to check whether you would be infringing an existing patent."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "A domain name search to see whether you can register the domain <your-company-name> dot com."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "If you chose to name your company Zeppiir Advanced Online Travel Booking Systems, which of the startup naming principles would you be breaking?"
+    choices:
+    - content: "Simple."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Memorable."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Easy to spell."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Easy to say."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "When establishing your personal brand as a founder, which of the following activities is unlikely to be helpful?"
+    choices:
+    - content: "Creating a professional LinkedIn profile."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Writing blog posts relevant to your company and posting them on your web site."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Getting your teeth whitened."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Doing a media training course to improve your public speaking and interview skills."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "When seeking media coverage for your startup, which of the following events is likely to be covered by mainstream media?"
+    choices:
+    - content: "Launching your MVP."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Getting accepted into a local startup accelerator."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Raising a funding round from a well-known investor."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Posting a really interesting blog post on your website."
+      isCorrect: false
+      explanation: "Incorrect."
