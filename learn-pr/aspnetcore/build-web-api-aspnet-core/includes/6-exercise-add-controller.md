@@ -134,7 +134,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    cd Pizza
    ```
 
-   The preceding command will show an ouptput of available APIs for the `Pizza` endpoint:
+   The preceding command will show an output of available APIs for the `Pizza` endpoint:
 
    ```dotnetcli
    https://localhost:{PORT}/> cd Pizza

@@ -19,7 +19,7 @@ quiz:
       choices:
       - content: "`[ApiController]` enables opinionated behaviors that make it easier to build web APIs."
         isCorrect: true
-        explanation: "This is correct. This attribute includes several opinionated API-specific behaviors, such as automatic handling for bad HTTP requests."
+        explanation: "Correct. This attribute includes several opinionated API-specific behaviors, such as automatic handling for bad HTTP requests."
       - content: "`ApiController` is the base class, which provides standard functionality for handling HTTP requests."
         isCorrect: false
         explanation: "`ControllerBase` is the base class, which provides standard HTTP handling to the controller class."

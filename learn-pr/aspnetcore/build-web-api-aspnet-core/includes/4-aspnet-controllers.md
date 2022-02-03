@@ -74,4 +74,4 @@ As you'll learn later in this module, other common actions are associated with a
 
 In this case, you're getting the full list of `WeatherForecast` returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET, you can achieve this by using the `[HttpGet("{id}")]` attribute. You'll implement that attribute in the next exercise.
 
-Now that you've learned the fundamental components of an web API controller, you're ready to create your own `PizzaController` class.
+Now that you've learned the fundamental components of a web API controller, you're ready to create your own `PizzaController` class.
