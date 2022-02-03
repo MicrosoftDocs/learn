@@ -40,9 +40,9 @@ public class WeatherForecastController : ControllerBase
 
 ```
 
-## The base class: ControllerBase
+## The base class: `ControllerBase`
 
-A controller is a public class with one or more public methods known as actions. By convention, a controller is placed in the project root's *Controllers* directory. The actions are exposed as HTTP endpoints via routing. So an HTTP `GET` request to https://localhost:{PORT}/weatherforecast causes the `Get()` method of the `WeatherForecastController` class to be executed.
+A controller is a public class with one or more public methods known as *actions*. By convention, a controller is placed in the project root's *Controllers* directory. The actions are exposed as HTTP endpoints via routing. So an HTTP `GET` request to `https://localhost:{PORT}/weatherforecast` causes the `Get()` method of the `WeatherForecastController` class to be executed.
 
 The first thing to notice is that this class inherits from the `ControllerBase` base class. This base class provides a lot of standard functionality for handling HTTP requests, so you can focus on the specific business logic for your application.
 
@@ -70,7 +70,7 @@ public class WeatherForecastController : ControllerBase
 
 `WeatherForecastController` includes a single controller action, designated by the `[HttpGet(Name = "GetWeatherForecast")]` attribute. This attribute routes HTTP `GET` requests to the `public IEnumerable<WeatherForecast> Get()` method. That's why, in the previous exercise, you saw that requests to `https://localhost:{PORT}/weatherforecast` caused the weather results to be returned. 
 
-As you'll learn later in this module, other common actions are associated with a web API that performs *CRUD* operations (`GET`, `PUT`, `POST`, `DELETE`). But an API controller needs to implement only one controller action. 
+As you'll learn later in this module, other common actions are associated with a web API that performs CRUD operations (`GET`, `PUT`, `POST`, `DELETE`). But an API controller needs to implement only one controller action. 
 
 In this case, you're getting the full list of `WeatherForecast` returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET, you can achieve this by using the `[HttpGet("{id}")]` attribute. You'll implement that attribute in the next exercise.
 

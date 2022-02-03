@@ -15,9 +15,9 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following is not a reason to build a web API by using ASP.NET Core?"
+    - content: "Which of the following is *not* a reason to build a web API by using ASP.NET Core?"
       choices:
-      - content: "To provide a back-end server for a single-page application (SPA) front end, such as Angular or React."
+      - content: "To provide a back-end server for an SPA front end, such as Angular or React."
         isCorrect: false
         explanation: "This is a great use case for ASP.NET Core, because it can serve the initial HTML via Razor Pages and then handle client interactions via RESTful web APIs."
       - content: "To provide data to a mobile client application by using XML or JSON."

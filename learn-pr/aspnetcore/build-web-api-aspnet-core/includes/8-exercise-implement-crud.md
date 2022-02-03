@@ -119,7 +119,7 @@ The preceding action:
     ls
     ```
 
-    The preceding command will show an output of available APIs for the `Pizza` endpoint:
+    The preceding command shows an output of available APIs for the `Pizza` endpoint:
 
     ```dotnetcli
         https://localhost:{PORT}/Pizza> ls
@@ -134,7 +134,7 @@ The preceding action:
     post -c "{"name":"Hawaii", "isGlutenFree":false}"
     ```
 
-    This command will make a `POST` request to add the new pizza to our inventory and then will return a list of all pizza:
+    The preceding command returns a list of all pizza:
 
     ```dotnetcli
     HTTP/1.1 201 Created
@@ -157,7 +157,7 @@ The preceding action:
     put 3 -c  "{"id": 3, "name":"Hawaiian", "isGlutenFree":false}"
     ```
 
-    This command will return the following output that it was successful:
+    The preceding command returns the following output that indicates success:
 
     ```dotnetcli
     HTTP/1.1 204 No Content
@@ -171,7 +171,7 @@ The preceding action:
     get 3
     ```
 
-    This command will return the newly updated pizza:
+    The preceding command returns the newly updated pizza:
 
     ```dotnetcli
     HTTP/1.1 200 OK
@@ -193,7 +193,7 @@ The preceding action:
     delete 3
     ```
 
-    This command will return a `204 No Content` result for success:
+    The preceding command returns a `204 No Content` result for success:
 
     ```dotnetcli
     HTTP/1.1 204 No Content
@@ -207,7 +207,7 @@ The preceding action:
     get
     ```
 
-    This command will return the original pizzas as results:
+    The preceding command returns the original pizzas as results:
 
     ```dotnetcli
     HTTP/1.1 200 OK

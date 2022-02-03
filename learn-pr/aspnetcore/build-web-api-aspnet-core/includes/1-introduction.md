@@ -4,7 +4,7 @@ This module uses the [.NET CLI (command-line interface)](/dotnet/core/tools/) an
 
 ## Example scenario
 
-Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful service for pizza inventory management as a prerequisite for the company's web storefront and mobile application. The service has to support adding, viewing, modifying, and removing types of pizza&mdash;a standardized usage of HTTP action verbs better known as create, read, update, delete (CRUD).
+Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop a RESTful service for pizza inventory management as a prerequisite for the company's web storefront and mobile application. The service has to support adding, viewing, modifying, and removing types of pizza&mdash;a standardized usage of HTTP verbs better known as *create, read, update, delete* (CRUD).
 
 ## What will we be doing?
 
@@ -12,4 +12,4 @@ In this module, you'll create a new web API application by using ASP.NET Core, a
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create new web API applications with ASP.NET Core. You'll also know how to create API controllers that implement basic CRUD logic.
+By the end of this session, you'll be able to create new web API applications by using ASP.NET Core. You'll also know how to create API controllers that implement basic CRUD logic.

@@ -2,7 +2,7 @@
 
 ## Create and explore a web API project
 
-To set up a .NET project to work with the web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal that makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+To set up a .NET project to work with the web API, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal that makes creating a new project easy. If you don't want to use a code editor, you can run the commands in this module in a terminal.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
@@ -24,7 +24,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
 
     You might receive a prompt from Visual Studio Code to add assets to debug the project. Select **Yes** in the dialog.
 
-    The command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.    
+    The command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created. This directory contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.    
 
     You should now have access to these files:
 
@@ -38,8 +38,6 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     -| Program.cs
     -| WeatherForecast.cs
     ```
-
-    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created and contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.
 
 1. Examine the following files and directories:
 
@@ -83,7 +81,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     If you're running this app on your own machine, you could direct a browser to the HTTPS link that's displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you'll use it throughout the module where `{PORT}` is used.
 
     > [!IMPORTANT]
-    > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
+    > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps you troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
 
 1. Open a web browser and go to:
 
@@ -137,7 +135,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
    ls
    ```
 
-   The preceding command will detect all APIs available on the connected endpoint. It should display the following:
+   The preceding command detects all APIs available on the connected endpoint. It should display the following:
 
     ```dotnetcli
    https://localhost:{PORT}/> ls
@@ -151,7 +149,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
      cd WeatherForecast
      ```
 
-   The following command will show an output of available APIs for the `WeatherForecast` endpoint:
+   The preceding command shows an output of available APIs for the `WeatherForecast` endpoint:
 
    ```dotnetcli
    https://localhost:{PORT}/> cd WeatherForecast
@@ -164,7 +162,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
    get
    ```
 
-   The following command will make a `GET` request similar to going to the endpoint in the browser:
+   The preceding command makes a `GET` request similar to going to the endpoint in the browser:
 
    ```dotnetcli
    HTTP/1.1 200 OK

@@ -119,7 +119,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    ls
    ```
 
-   The preceding command will detect all APIs available on the connected endpoint. It should display the following code:
+   The preceding command detects all APIs available on the connected endpoint. It should display the following code:
 
    ```dotnetcli
     https://localhost:{PORT}/> ls
@@ -134,7 +134,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    cd Pizza
    ```
 
-   The preceding command will show an output of available APIs for the `Pizza` endpoint:
+   The preceding command shows an output of available APIs for the `Pizza` endpoint:
 
    ```dotnetcli
    https://localhost:{PORT}/> cd Pizza
@@ -147,7 +147,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    get
    ```
 
-   The following command will make a `GET` request and return a list of all pizza in `json`:
+   The preceding command returns a list of all pizzas in `json`:
 
    ```dotnetcli
      HTTP/1.1 200 OK
@@ -176,7 +176,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
     get 1
     ```
 
-    This command will return `Classic Italian` with the following output:
+    The preceding command returns `Classic Italian` with the following output:
 
     ```dotnetcli
     HTTP/1.1 200 OK
@@ -198,7 +198,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
     get 5
     ```
 
-    This command will return a `404 Not Found` error with the following output:
+    The preceding command returns a `404 Not Found` error with the following output:
 
     ```dotnetcli
     HTTP/1.1 404 Not Found
