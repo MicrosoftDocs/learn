@@ -3,7 +3,7 @@ uid: learn.startups.revenue.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts on how to test your startup assumptions. Topics include experiments, interview strategies, and tools that measure value.
+  description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
   ms.date: 02/02/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -44,10 +44,10 @@ quiz:
 
   - content: "It's generally helpful to focus on your ideal first customer (rather than just any customer) in the early days because:"
     choices:
-    - content: "They will recommend your product to others in their networks."
+    - content: "They'll recommend your product to others in their networks."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "You will get better reviews and more five-star ratings."
+    - content: "You'll get better reviews and more five-star ratings."
       isCorrect: false
       explanation: "Incorrect."
     - content: "Your customer lifetime value will be higher because these users are sticky."
@@ -65,12 +65,12 @@ quiz:
     - content: "They have a high disposable income."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "They work in tech ."
+    - content: "They work in tech."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "They have already built a complex spreadsheet in an attempt to solve the problem ."
+    - content: "They've already built a complex spreadsheet in an attempt to solve the problem."
       isCorrect: true
       explanation: "Correct."
-    - content: "They work for a company that you are competing with."
+    - content: "They work for a company that you're competing with."
       isCorrect: false
       explanation: "Incorrect."

@@ -1,4 +1,4 @@
-In another module, we discussed the importance of testing your assumptions with customers before spending a lot of time building a product.
+It's important to test your assumptions with customers before spending a lot of time building a product.
 
 The same principle of testing assumptions can, and should, be applied to other parts of your business, including how you select the revenue model that you'll use to generate sales and grow your business.
 
@@ -73,7 +73,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Customers can compare prices easily, so unless you have a highly differentiated offering, prices can be driven down by competition, leading to low margins and a need for high transaction volume.
 - You need to actually produce  each product (or deliver, in the case of wholesale), so beyond a certain volume, there's generally limited scope to reduce the cost base significantly.
 - A good checkout experience can provide opportunities to upsell by recommending complementary products or to drive repeat purchases by offering a discount code for returning customers.
-- Can be associated with high customer acquisition costs as it's difficult to find customer acquisition channels that are profitable.
+- Can be associated with high customer acquisition costs because it's difficult to find customer acquisition channels that are profitable.
 - Doesn't work well for most high-value purchases because these may require multiple sales touch points and trust developed through relationship-building before the customer is comfortable completing the transaction.  
 
 **Revenue model #6:** Service delivery
@@ -84,9 +84,9 @@ There are many ways in which startups can generate revenue. For the purpose of t
 
 **Practical considerations:**
 
-- Generally limited scope for recurring revenues as each customer job is an isolated event.
+- Generally limited scope for recurring revenues because each customer job is an isolated event.
 - Cheap to start and can be profitable, especially if you have a rare skill set or one that would be highly valued by prospective clients.
-- Limited scope for passive income as you stop getting paid when you stop delivering the service.
+- Limited scope for passive income, because you stop getting paid when you stop delivering the service.
 - Doesn't scale well since there's a time cost associated with every occasion that you deliver the service, and only 24 hours in a day.
 
 **Revenue model #7:** Rental
