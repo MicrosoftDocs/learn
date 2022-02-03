@@ -8,7 +8,7 @@ If demand exceeds the available resources for your tier for any resource (CPU, s
 
 ## vCore-based pricing model
 
-A virtual core (vCore) represents the logical CPU offered with an option to choose between generations of hardware and physical characteristics of hardware (for example, number of cores, memory, storage size). 
+A virtual core (vCore) represents the logical CPU offered with an option to choose between generations of hardware and physical characteristics of hardware (for example, number of cores, memory, storage size).
 
 The vCore-based purchasing model gives you flexibility and control over individual resource consumption, and a straightforward way to translate on-premises workload requirements to the cloud. This model allows you to choose compute, memory, and storage based upon their workload needs within the **general purpose** or **business critical** service tier.
 
