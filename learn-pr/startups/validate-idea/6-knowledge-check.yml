@@ -3,7 +3,7 @@ uid: learn.startups.fundamentals.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review startup fundamentals. Topics include factors that lead to success and failure, and the best approach to exploring startup ideas.
+  description: Review concepts on how to test your startup assumptions. Topics include experiments, interview strategies, and tools that measure value.
   ms.date: 02/02/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -66,17 +66,17 @@ quiz:
       isCorrect: true
       explanation: "Correct."
 
-  - content: "What is the main difference between a Concierge experiment and a Wizard of Oz experiment?"
+  - content: "What's the main difference between a Concierge experiment and a Wizard of Oz experiment?"
     choices:
-    - content: "In Concierge the customer does not provide feedback."
+    - content: "In Concierge, the customer doesn't provide feedback."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "In Wizard of Oz you do not attempt to make any sales."
+    - content: "In Wizard of Oz, you don't attempt to make any sales."
       isCorrect: false
-      explanation: "In Wizard of Oz the customer is unaware that the process is being completed manually."
-    - content: "Viability."
+      explanation: "Incorrect."
+    - content: "In Wizard of Oz, the customer is unaware that the process is being completed manually."
       isCorrect: true
       explanation: "Correct."
-    - content: "In Concierge you do not need a landing page."
+    - content: "In Concierge, you don't need a landing page."
       isCorrect: false
       explanation: "Incorrect."
