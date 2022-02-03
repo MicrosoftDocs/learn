@@ -14,7 +14,7 @@ Besides providing data scientists and marketing experts with the resources and c
 
 WPP is delivering creativity that’s powered by technology, helping employees globally experiment with and use new technologies to better predict and understand customer behavior and preferences and develop more engaging communications for the brands they work with. WPP’s openness to change and the ability to see possibilities has been essential to their success. To reap the benefits of solutions such as AI, WPP made the necessary investments and adopted a “fail fast” philosophy. This philosophy encouraged learning and iteration early in the innovation process, so they didn’t get stuck.
 
-The results of this collaboration process are plentiful. WPP created the WPP Data Catalogue, containing highly diverse datasets easily available to everyone and already used by more than 1,000 people throughout all 80 agencies.
+The results of this collaboration process are plentiful. WPP created the WPP Data Catalog, containing highly diverse datasets easily available to everyone and already used by more than 1,000 people throughout all 80 agencies.
 
 Here are a few examples of these AI projects that unfolded because of the enhanced collaboration and AI education:
 
