@@ -1,6 +1,6 @@
 There are many ways your organization can foster innovation through collaborative work, depending on your organization’s needs and capabilities. The key to bridging the gap between cultural disconnect is adapting an all-hands-on-deck approach. One that encourages perspective and participation from the entire organization.
 
-Now that you’ve reviewed this module, you should be able to: 
+Now that you’ve reviewed this module, you should be able to:
 
 * Learn why a culture that empathizes, supports, and encourages collaboration is paramount to innovation.
 * Evaluate and prioritize organizational readiness for long-term innovation.
@@ -14,8 +14,8 @@ Now that you’ve reviewed this module, you should be able to:
 * To learn more about the six dimensions of resilience, visit [The Digital Path to Business Resilience](https://www.bcg.com/publications/2020/digital-path-to-business-resilience).
 * Learn how to build a more inclusive future for the tech industry and check out the [Build your tech resilience](/learn/paths/tech-resilience/) learning path.
 * Discover the people and ideas that are helping us overcome the pandemic and emerge more resilient than ever, visit [Societal Resilience](https://www.microsoft.com/societal-resilience#coreui-feature-sl9cfe9).
-* Download PDF of the case study introduction to share with others.
-* Download PDF of the case study resolution to share with others.
+* Download [PDF of the case study introduction](https://aka.ms/AIBSBIOWPPINT) to share with others.
+* Download [PDF of the case study resolution](https://aka.ms/AIBSBIOWPPRES) to share with others.
 
 ## References
 
