@@ -69,7 +69,7 @@ Gains can also be personal to the individual user, such as relaxation, enjoyment
 
 Similar to painkillers, you can use feedback from customers to plot gains on a Customer Gain Matrix using significance and immediacy as the two axes, as shown below.
 
-:::image type="content" source="../media/learning-path-gain-matrix.png" alt-text="Chart that shows the relationship between the intensity and frequency of pain.":::
+:::image type="content" source="../media/learning-path-gain-matrix.png" alt-text="Chart that shows the relationship between the significance and immediacy of gains. A point indicates that a high significance, now, is ideal.":::
 
 If you deliver a significant gain to a customer, and it occurs quickly after they use your product, they're more likely to want to use it than if you only deliver a minor gain, and it takes a while for them to achieve it.
 
