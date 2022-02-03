@@ -25,7 +25,7 @@ In this exercise, we'll manage the SQL elastic pool, and add an additional datab
     | Setting | Value |
     |---|---|
     | **Database details** |
-    | Database name | Provide your new database a meaningful name, such as *FitnessLondonDB*. |
+    | Database name | Provide your new database a meaningful name, such as *fitnesslondondb*. |
 
 1. Select **Review + create**, and then select **Create**.
 
