@@ -55,7 +55,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     The `<NotFound>` code block is what customers will see if they try to go to a page that doesn't exist.
 
-1. In the explorer, expand **Pages**, right-click the folder, and select **New File**.
+1. In the file explorer, expand **Pages**, right-click the folder, and select **New File**.
 1. Name the new file **Checkout.razor**. In this file, write the following code:
 
     ```razor
@@ -112,7 +112,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     This page builds on the current app and makes use of the app state saved in `OrderState`. The first `div` is the app's new header navigation. Let's add this to the index page.
 
-1. In the explorer, expand **Pages**, and then select **index.razor**.
+1. In the file explorer, expand **Pages**, and then select **index.razor**.
 1. Above the `<div class="main">` class, add the `top-bar` html.
 
     ```html
@@ -157,7 +157,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 At the moment, the checkout page doesn't allow customers to place their orders. The logic of the app needs to store the order to send to the kitchen. After the order is sent, let's redirect customers back to the home page.
 
-1. In the explorer, expand **Pages**, and select **Checkout.razor**.
+1. In the file explorer, expand **Pages**, and select **Checkout.razor**.
 1. Replace the button element with code to call a `PlaceOrder` method.
 
     ```razor
@@ -189,7 +189,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 
 ## Add entity framework support for orders and pizzas
 
-1. In the explorer, select **PizzaStoreContext.cs**.
+1. In the file explorer, select **PizzaStoreContext.cs**.
 1. Replace the `PizzaStoreContext` class with this code:
 
     ```csharp
@@ -281,7 +281,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 
 1. Save your changes with <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 1. For the filename, use **OrderController.cs**. Make sure you save the file in the same directory as **OrderState.cs**.
-1. In the explorer, select **OrderState.cs**.
+1. In the file explorer, select **OrderState.cs**.
 1. At the bottom of the class under the `RemoveConfiguredPizza` method, add this code to reset the order:
 
     ```csharp
@@ -299,7 +299,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
 
-1. In the explorer, delete the **pizza.db** file.
+1. In the file explorer, delete the **pizza.db** file.
 
 1. Select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
 
@@ -311,7 +311,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
 
 ## Add an orders page
 
-1. In the explorer, expand **Pages**, right-click the folder, and select **New File**.
+1. In the file explorer, expand **Pages**, right-click the folder, and select **New File**.
 1. Name the new file **MyOrders.razor**. In this file, write the following code:
 
     ```razor
@@ -386,7 +386,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
     }
     ```
     
-    The navigation needs to change on all the pages we have at the moment to include a link to the new **My orders** page. Open **Checkout.razor** and **Index.razor** and replace the navigation with this code:
+    The navigation needs to change on all the pages we have now to include a link to the new **My orders** page. Open **Checkout.razor** and **Index.razor** and replace the navigation with this code:
 
     ```html
     <div class="top-bar">
@@ -431,7 +431,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
 
     The `active` css class is now added automatically to pages by the NavLink component. You don't have to remember to do it on each page the navigation is on.
 
-1. The last step is to change `NavigationManager` to redirect to the **murders** page after an order is placed. In the explorer, expand **Pages**, and then select **Checkout.razor**.
+1. The last step is to change `NavigationManager` to redirect to the **murders** page after an order is placed. In the file explorer, expand **Pages**, and then select **Checkout.razor**.
 1. Change the `PlaceOrder` method to redirect to the correct page.
 
     ```razor
