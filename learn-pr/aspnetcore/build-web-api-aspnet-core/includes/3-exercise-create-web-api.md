@@ -151,7 +151,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
      cd WeatherForecast
      ```
 
-   The following command will output available APIs available for the `WeatherForecast` endpoint:
+   The following command will show an output of available APIs for the `WeatherForecast` endpoint:
 
    ```dotnetcli
    https://localhost:{PORT}/> cd WeatherForecast

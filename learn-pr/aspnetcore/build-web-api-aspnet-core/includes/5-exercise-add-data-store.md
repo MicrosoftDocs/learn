@@ -16,7 +16,7 @@ In this unit, that data store will be a simple local in-memory caching service. 
 
     ![Screenshot of adding a new file to the Models folder in Visual Studio Code.](../media/add-pizza-file.png)
 
-    The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Pizza.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the MVC architecture that the web API uses.
+    The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Pizza.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the *model*-view-controller architecture that the web API uses.
 
 1. Add the following code to *:::no-loc text="Models/Pizza.cs":::* to define a pizza. Save your changes.
 
@@ -33,17 +33,17 @@ In this unit, that data store will be a simple local in-memory caching service. 
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-## Add data service
+## Add a data service
 
-1. Run the following command to create a `Services` folder:
+1. Run the following command to create a *Services* folder:
 
     ```bash
     mkdir Services
     ```
 
-    Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`. 
+    Select the folder in Visual Studio Code and add a new file called *PizzaService.cs*. 
 
-    ![Image of Visual Studio Code adding a new file to the Services folder.](../media/add-pizza-service-file.png)
+    ![Screenshot of Visual Studio Code that shows adding a new file to the Services folder.](../media/add-pizza-service-file.png)
 
 
 1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create an in-memory pizza data service. Save your changes.
@@ -96,10 +96,10 @@ In this unit, that data store will be a simple local in-memory caching service. 
     }
     ```
     
-    This service provides a simple in-memory data caching service with two pizzas by default that our web API will use for demo purposes. When we stop and start the web API the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
+    This service provides a simple in-memory data caching service with two pizzas by default. Our web API will use that service for demo purposes. When you stop and start the web API, the in-memory data cache will be reset to the two default pizzas from the constructor of `PizzaService`.
 
 ## Build the web API project
 
 [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-The `Pizza` Model and `PizzaService` class will be used by the controller created in the next unit.
+In the next unit, you'll create a controller that will use the `Pizza` model and `PizzaService` class.
