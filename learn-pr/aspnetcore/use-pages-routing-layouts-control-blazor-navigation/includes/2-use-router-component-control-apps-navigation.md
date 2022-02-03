@@ -1,6 +1,6 @@
 Blazor's routing system provides flexible options that you can use to ensure that user requests reach a component that can handle them and return information that the user wants. 
 
-Suppose you're working on the pizza delivery company's website. You want to set up the site so that requests for pizza details and custom-topping details are both handled by the same component. You've completed this phase, but testing shows that the topping requests are receiving an error message. You need to fix this problem.
+Suppose you're working on the pizza delivery company's website. You want to set up the site so that requests for pizza details and custom-topping details are both handled by the same component. You've completed this phase, but your testing shows that the topping requests are receiving an error message. You need to fix this problem.
 
 Here, you'll learn how to configure routes in Blazor by using the `@page` directive.
 

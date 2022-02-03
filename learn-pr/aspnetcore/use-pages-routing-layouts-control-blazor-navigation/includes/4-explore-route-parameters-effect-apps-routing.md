@@ -10,7 +10,7 @@ Earlier in this module, you learned how parts of the URI that the user requests 
 
 `http://www.contoso.com/favoritepizza/hawaiian`
 
-By using the `@page` directive, you've learned how to route this request to, for example, the **FavoritePizza.razor** component. You want to make use of the value **hawaiian** in your component. To obtain this value, you can declare it as a route parameter.
+By using the `@page` directive, you've learned how to route this request to, for example, the **FavoritePizza.razor** component. Now you want to make use of the value **hawaiian** in your component. To obtain this value, you can declare it as a route parameter.
 
 Use the `@page` directive to specify parts of the URI that will be passed to the component as route parameters. In your component's code, you can obtain the value of a route parameter in the same way as you would obtain the value of a component parameter:
 

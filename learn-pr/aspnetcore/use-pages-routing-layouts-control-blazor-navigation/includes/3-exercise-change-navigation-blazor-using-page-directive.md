@@ -2,7 +2,7 @@ Blazor has a navigation state helper that helps C# code manage an app's URIs. Th
 
 Your team has made a start on the Blazing Pizza app and have built Blazor components to represent pizzas and orders. The app now needs to have checkout and other order-related pages.
 
-In this exercise, you'll add a new checkout page, add a top navigation to the app, and then use a Blazor NavLink component to improve your code.
+In this exercise, you'll add a new checkout page, add a top navigation to the app, and then use a Blazor **NavLink** component to improve your code.
 
 ## Clone your team's existing app
 
@@ -407,7 +407,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
     </div>
     ```
 
-    By using `<a>` elements, we need to manage which is the active page manually by adding the `active` css class. Let's update all the navigation to use a **NavLink** component instead.
+    By using `<a>` elements, we can manage which is the active page manually by adding the `active` css class. Let's update all the navigation to use a **NavLink** component instead.
 
 1. On all the pages with navigation, use the same Blazor code.
 
@@ -429,9 +429,9 @@ The app is improving. We have pizza configuration and a checkout. We want to all
     </div>
     ```
 
-    The `active` css class is now added automatically to pages by the NavLink component. You don't have to remember to do it on each page the navigation is on.
+    The `active` css class is now added automatically to pages by the **NavLink** component. You don't have to remember to do it on each page the navigation is on.
 
-1. The last step is to change `NavigationManager` to redirect to the **murders** page after an order is placed. In the file explorer, expand **Pages**, and then select **Checkout.razor**.
+1. The last step is to change `NavigationManager` to redirect to the **myorders** page after an order is placed. In the file explorer, expand **Pages**, and then select **Checkout.razor**.
 1. Change the `PlaceOrder` method to redirect to the correct page.
 
     ```razor

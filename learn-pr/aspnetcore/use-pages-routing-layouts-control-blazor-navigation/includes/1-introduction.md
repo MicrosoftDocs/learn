@@ -1,4 +1,4 @@
-Blazor creates interactive web applications by using .NET that allow you to share app logic on both the server and client side, without the complexity of managing client-side JavaScript libraries.
+Blazor creates interactive web applications using .NET that allow you to share app logic on both the server and client side, without the complexity of managing client-side JavaScript libraries.
 
 Suppose you've been hired by a pizza delivery firm to modernize its customer-facing website. You've already built pages that display pizzas that enable customers to customize the toppings for their pizzas. You want to add ordering pages and improve the app's navigation. You also want to ensure a consistent layout across the app to ensure that customers can find what they're looking for easily.
 
