@@ -6,11 +6,13 @@ A revenue model is a strategy for how to assign value to your product or service
 
 Companies can have more than one revenue model, but generally each product or service has its own revenue model. Your choice of revenue model will affect every aspect of your business, so it's important that you think through the pros and cons of each option, and test your assumptions with customers before locking anything in.
 
-There are many ways in which startups can generate revenue. For the purpose of this module, we're going to disregard traditional brick-and-mortar revenue models such as retail and focus on the 10 most common ones used by tech startups.
+There are many ways in which startups can generate revenue. For the purpose of this module, we're going to disregard traditional brick-and-mortar revenue models such as retail and focus on models that tech startups use.
 
-## The 10 most common startup revenue models
+## Common startup revenue models
 
-**Revenue model #1:** Usage
+The following models are the 10 most common ones that tech startups use.
+
+### Revenue model #1: Usage
 
 **Description:** Customers pay based on the frequency or volume at which they use or consume your product.
 
@@ -23,7 +25,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Requires patient investment because revenues from each customer are tied to the customer's growth rate.
 - Often requires providing education and support to ensure customers gain maximum benefit from the service and can access more advanced functionality as they grow.
 
-**Revenue model #2:** Subscription
+### Revenue model #2: Subscription
 
 **Description:** Customers sign up for your product. In return for ongoing use, they pay you a recurring subscription fee (software as a service, or SaaS) which can be annual, quarterly, monthly, or weekly.
 
@@ -38,7 +40,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - As long as you have a higher new customer sign-up rate than churn (unsubscribe) rate, your company will be growing.
 - For relatively inexpensive products, it's common for some customers to keep paying even once they no longer use the product. For higher-priced products, this is less common.
 
-**Revenue model #3:** Direct sales
+### Revenue model #3: Direct sales
 
 **Description:** Make sales by directly contacting potential customers (outbound sales) or enabling customers to contact you directly (inbound sales).
 
@@ -49,7 +51,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Generally, requires a sales team with relevant industry knowledge and a deep understanding of your product. These sales reps are usually paid a salary plus commission.
 - Generally, not suited to low-price products or services because the cost of maintaining a sales team is too high relative to the average sale price.
 
-**Revenue model #4:** Commission
+### Revenue model #4: Commission
 
 **Description:** Get paid a commission (either a set fee or a percentage of the transaction value) every time a transaction takes place.
 
@@ -61,7 +63,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - For two-sided marketplace businesses, you need to attract both sides of the market before you can deliver value and make any transactions. This is referred to as the *cold start problem* for platforms.  
 - Marketplace transactions can drop off via *platform leakage* where buyers and sellers decide to continue working together directly. Marketplaces often work best for one-off transactions (such as hiring a freelancer to do a specific job) or those with a heavy reliance on insurance or safety (such as booking a place to stay on holiday), rather than low-risk, recurring transactions (such as booking a math tutor).
 
-**Revenue model #5:** Transactional
+### Revenue model #5: Transactional
 
 **Description:** Make one-off sales and get paid a set price for each transaction.
 
@@ -76,7 +78,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Can be associated with high customer acquisition costs because it's difficult to find customer acquisition channels that are profitable.
 - Doesn't work well for most high-value purchases because these may require multiple sales touch points and trust developed through relationship-building before the customer is comfortable completing the transaction.  
 
-**Revenue model #6:** Service delivery
+### Revenue model #6: Service delivery
 
 **Description:** Deliver a service (in-person or online) and get paid an agreed amount, or a fee based on dollars per unit of time.
 
@@ -89,7 +91,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Limited scope for passive income, because you stop getting paid when you stop delivering the service.
 - Doesn't scale well since there's a time cost associated with every occasion that you deliver the service, and only 24 hours in a day.
 
-**Revenue model #7:** Rental
+### Revenue model #7: Rental
 
 **Description:** Get paid for renting a physical product to a customer. Can be on a flat fee per-use basis or based on time or distance.
 
@@ -101,7 +103,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - It's essential to make it easy for people to find and use your product, otherwise they'll seek out alternatives.
 - Some customers will eventually buy the product themselves (as seen with people renting electric scooters before eventually buying their own).
 
-**Revenue model #8:** Licensing
+### Revenue model #8: Licensing
 
 **Description:** Get paid a license fee for granting another company the right to use your intellectual property (IP) for an agreed purpose.
 
@@ -114,7 +116,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - It's often important to have IP protection in the form of patents.
 - There's a risk that your IP could be copied, particularly if the larger company is willing to risk patent litigation and knows you don't have the financial means to pursue legal action.
 
-**Revenue model #9:** Channel
+### Revenue model #9: Channel
 
 **Description:** Indirect sales made by third parties that you appoint as agents or resellers.
 
@@ -128,7 +130,7 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - You may not have access to customer data or metrics unless explicitly agreed in the channel agreement.
 - Resellers have many different sales incentive structures, and it may be challenging to ensure that your channel partners are sufficiently motivated to promote your product or service alongside others they offer.
 
-**Revenue model #10:** Advertising
+### Revenue model #10: Advertising
 
 **Description:** Sell advertising space to companies that want to promote their product or service.
 
@@ -139,4 +141,6 @@ There are many ways in which startups can generate revenue. For the purpose of t
 - Reliant on huge traffic volumes (typically millions of visitors per month) due to the low clickthrough rates on most ads.
 - Can be viable if you have a niche focus and a homogenous audience with common needs and interests, and if your site is a dominant player in that niche.
 
-**Task:** Select the revenue model that you believe makes most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work, and consider how you can test those assumptions with customers, either through customer interviews or by running experiments.
+## Task
+
+Select the revenue model that you believe makes most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work, and consider how you can test those assumptions with customers, either through customer interviews or by running experiments.
