@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.3-exercise-implement-a-service-bus-topic-and-queue
-title: Exercise - Implement a Service Bus topic and queue
+title: Exercise - Create a Service Bus namespace, queue, and topic
 metadata:
-  title: Exercise - Implement a Service Bus topic and queue
-  description: Exercise - Implement a Service Bus topic and queue
+  title: Exercise - Create a Service Bus namespace, queue, and topic
+  description: Create a Service Bus namespace, queue, and topic.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm

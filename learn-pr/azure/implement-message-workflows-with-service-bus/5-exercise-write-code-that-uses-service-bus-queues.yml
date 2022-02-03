@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.5-exercise-write-code-that-uses-service-bus-queues
-title: Exercise - Write code that uses Service Bus queues
+title: Exercise - Create a Service Bus queue to send messages
 metadata:
-  title: Exercise - Write code that uses Service Bus queues
-  description: Exercise - Write code that uses Service Bus queues
+  title: Exercise - Create a Service Bus queue to send messages
+  description: Create a Service Bus queue to send messages.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
