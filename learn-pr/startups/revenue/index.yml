@@ -31,10 +31,9 @@ products:
 - consumer
 units:
 - learn.startups.revenue.1-introduction
-- learn.startups.revenue.2-articulate-idea
-- learn.startups.revenue.3-test-assumptions
-- learn.startups.revenue.4-understand-customers
-- learn.startups.revenue.5-knowledge-check
-- learn.startups.revenue.6-summary
+- learn.startups.revenue.2-revenue-models
+- learn.startups.revenue.3-generate-early-revenues
+- learn.startups.revenue.4-knowledge-check
+- learn.startups.revenue.5-summary
 badge:
   uid: learn.startups.revenue.badge
