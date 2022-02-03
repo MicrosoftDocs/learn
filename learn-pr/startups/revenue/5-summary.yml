@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.revenue.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: See an overview of how to put the lean startup methodology into practice. Topics include testing your idea with customers.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]
