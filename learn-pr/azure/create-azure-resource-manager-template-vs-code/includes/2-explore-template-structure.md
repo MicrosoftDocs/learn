@@ -62,7 +62,7 @@ You can deploy an ARM template to Azure in one of the following ways:
 
 This module focuses on deploying a local ARM template. In future Learn modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
 
-To deploy a local template, you need to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. 
+To deploy a local template, you need to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true) installed locally. 
 
 First, sign in to Azure by using the Azure CLI or Azure PowerShell.
 
