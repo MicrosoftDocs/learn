@@ -129,7 +129,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     </div>
     ```
 
-    When we're on this page, it would be nice to show the customers by highlighting the link. The team have already created an `active` css class, so add that.
+    When we're on this page, it would be nice to show the customers by highlighting the link. The team has already created an `active` css class, so add that.
 
     ```html
     <div class="top-bar">
