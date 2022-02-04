@@ -1,10 +1,8 @@
-Here, you'll learn about the communications platforms available in Azure so that you can choose the right one for each requirement in your application.
+Many communications platforms are available to help improve the reliability of a distributed application, including several in Microsoft Azure. Each platform is a tool that serves a different purpose. It's important to choose the right tool for each requirement in your application. Take a look at your options in Azure Service Bus.
 
-There are many communications platforms that can help improve the reliability of a distributed application, including several within Azure. Each of these tools serves a different purpose; let's review the messaging in Azure to help choose the right one.
+The distributed architecture of the proposed Contoso Bicycles ordering and tracking application requires several components, including a website, data storage, and a back-end service. You can bind the components of your application together in many different ways, and a single application can take advantage of multiple techniques.
 
-The architecture of Contoso Bicycles ordering and tracking application requires several components: a website, data storage, back-end service, and so on. You can bind the components of your application together in many different ways, and a single application can take advantage of multiple techniques.
-
-You need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there's communication between multiple parts. Some components _must_ run in a timely manner for your application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like mobile app notifications, are a bit more optional.
+You need to decide which techniques to use in the new Contoso Bicycles application. The first step is to evaluate each place where there's communication between multiple parts. Some components _must_ run in a timely manner for your application to be doing its job at all. Some might be important, but not time-critical. Finally, other components, like mobile app notifications, are a bit more optional.
 
 ## Decide between messages and events
 
@@ -14,9 +12,9 @@ Both messages and events are _datagrams_: packages of data sent from one compone
 
 In the terminology of distributed applications, the defining characteristic of a message is that the overall integrity of the application may rely on messages being received. You can think of sending a message as one component passing the baton of a workflow to a different component. The entire workflow may be a vital business process, and the message is the mortar that holds the components together.
 
-A message generally contains the actual data, not just a reference (like an ID or URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
+A message generally contains the actual data, not just a reference (like an ID or a URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
 
-In the new architecture for Contoso Bicycles, when an order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
+In the new architecture for Contoso Bicycles, when an order is placed, the company likely will use messages. The web front end or mobile app will send a message to the back-end processing components. On the back end, steps like routing to the store nearest the customer and charging a credit card would take place.
 
 ### Events
 
@@ -40,7 +38,7 @@ Azure Service Bus can exchange messages in two different ways: queues and topics
 
 ### What is a queue?
 
-A Service Bus *queue* is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
+A Service Bus _queue_ is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
 
 :::image type="content" source="../media/2-service-bus-queue.png" alt-text="Illustration that shows a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one by one from the queue.":::
 
@@ -52,9 +50,9 @@ A queue responds to high demand without needing to add resources to the system. 
 
 ### What is a topic?
 
-A Service Bus *topic* is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
+A Service Bus _topic_ is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
-> [!NOTE] 
+> [!NOTE]
 > Topics are not supported in the Basic pricing tier.
 
 :::image type="content" source="../media/2-service-bus-topic.png" alt-text="Illustration that shows one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscriptions are used by three receivers to retrieve the relevant messages.":::
@@ -77,19 +75,19 @@ Advantages of storage queues:
 * Supports unlimited queue size (versus 80-GB limit for Service Bus queues).
 * Maintains a log of all messages.
 
-## How to choose a communication technology
+## How to choose a communications technology
 
-You''ve seen the different concepts and the implementations Azure provides. Next, consider what your decision process should look like for each of your communications.
+You've seen the different concepts and the implementations Azure provides. Next, consider what your decision process should look like for each of your communications.
 
 ### Considerations
 
 As you choose a method for sending and receiving messages, consider the following questions:
 
-1. Is the communication an event? If so, consider using Event Grid or Event Hubs.
+* Is the communication an event? If so, consider using Event Grid or Event Hubs.
 
-1. Should a single message be delivered to more than one destination? If so, use a Service Bus topic. Otherwise, use a Service Bus queue.
+* Should a single message be delivered to more than one destination? If so, use a Service Bus topic. Otherwise, use a Service Bus queue.
 
-#### Queues: Service Bus vs. storage
+### Queues: Service Bus vs. storage
 
 If you decide that you need a queue, narrow down your choice further.
 
