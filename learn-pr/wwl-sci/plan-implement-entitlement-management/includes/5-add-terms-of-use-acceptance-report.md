@@ -12,9 +12,10 @@ Once you have finalized your terms of use document, use the following procedure 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a Global administrator.
 2.  Open **Azure Active Directory** and the select **Identity Governance**.
 3.  In the left navigation menu, under **Terms of use**, select **Terms of use**.
-4.  On the Terms of use page, on the top menu, select **+ New terms.<br>**:::image type="content" source="../media/new-terms-of-use-f50f193c.png" alt-text="Screen image displaying the Terms of use page with New terms highlighted":::
+4.  On the Terms of use page, on the top menu, select **+ New terms**.
     
-
+    :::image type="content" source="../media/new-terms-of-use-f50f193c.png" alt-text="Screen image displaying the Terms of use page with New terms highlighted":::
+    
 5.  In the **Name** box, enter **Testing terms of use**. This is the terms of use that will be used in the Azure portal.
 6.  In the **Display name** box, enter **Contoso Terms of Use**. This is the title that users see when they sign in.
 7.  Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise you can choose any PDF you may have. Another option is use Microsoft Word to create a terms of use doc and then save as PDF.
@@ -24,9 +25,10 @@ Once you have finalized your terms of use document, use the following procedure 
     
     > [!WARNING]
     > Consent on every device will require users to register each device with Azure AD prior to getting access.
-11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.<br>:::image type="content" source="../media/new-terms-of-use-create-43bc7285.png" alt-text="Expire consents settings to set start date, frequency, and duration":::
+11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.
     
-
+    :::image type="content" source="../media/new-terms-of-use-create-43bc7285.png" alt-text="Expire consents settings to set start date, frequency, and duration":::
+    
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
     
     :::row:::
@@ -205,9 +207,10 @@ Once you have finalized your terms of use document, use the following procedure 
     
     > [!IMPORTANT]
     > Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy. Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see Quickstart: Require terms of use to be accepted before accessing cloud apps.
-15. When complete, select **Create**.<br>:::image type="content" source="../media/new-terms-of-use-create-43bc7285.png" alt-text="Screen image displaying the New terms of use page with configured options highlighted":::
+15. When complete, select **Create**.
     
-
+    :::image type="content" source="../media/new-terms-of-use-create-43bc7285.png" alt-text="Screen image displaying the New terms of use page with configured options highlighted":::
+    
 16. When the terms of use is created, you will automatically be redirected to the Conditional Access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 17. Under **Assignments**, select **Users and groups**.
 18. On the include tab, select **Users and groups** check box.
@@ -217,9 +220,10 @@ Once you have finalized your terms of use document, use the following procedure 
 22. Under **Access controls**, select **Grant**.
 23. In the Grant pane, select **Testing terms of use** and then select **Select**.
 24. Under **Enable policy**, select **On**.
-25. When complete, select **Create**.<br>:::image type="content" source="../media/terms-of-use-conditional-access-policy-bf0a3ae5.png" alt-text="Screen image displaying the Conditional Access policy with configuration options highlighted":::
+25. When complete, select **Create**.
     
-
+    :::image type="content" source="../media/terms-of-use-conditional-access-policy-bf0a3ae5.png" alt-text="Screen image displaying the Conditional Access policy with configuration options highlighted":::
+    
 26. If you chose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
 ## View report of who has accepted and declined
@@ -232,24 +236,33 @@ The Terms of use screen shows a count of the users who have accepted and decline
 :::image type="content" source="../media/terms-of-use-accept-decline-bb78f857.png" alt-text="Screen image displaying the terms of use with the Accepted and Declined columns highlighted":::
 
 
-3.  In this exercise, you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.<br>:::image type="content" source="../media/accepted-terms-of-use-9e3c6bb6.png" alt-text="Terms of use consents pane listing the users that have accepted":::
+3.  In this exercise, you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
     
-
-4.  To view the history for an individual user, select the ellipsis to the right of the user name and then **View History**.<br>:::image type="content" source="../media/view-history-menu-b1219c91.png" alt-text="View History context menu for a user":::
+    :::image type="content" source="../media/accepted-terms-of-use-9e3c6bb6.png" alt-text="Terms of use consents pane listing the users that have accepted":::
     
-
-5.  In the view history pane, you see a history of all the accepts, declines, and expirations.<br>:::image type="content" source="../media/view-history-pane-4831c950.png" alt-text="View History pane lists the history accepts, declines, and expirations for a user":::
+4.  To view the history for an individual user, select the ellipsis to the right of the user name and then **View History**.
+    
+    :::image type="content" source="../media/view-history-menu-b1219c91.png" alt-text="View History context menu for a user":::
+    
+5.  In the view history pane, you see a history of all the accepts, declines, and expirations.
+    
+    :::image type="content" source="../media/view-history-pane-4831c950.png" alt-text="View History pane lists the history accepts, declines, and expirations for a user":::
     
 
 ## What terms of use looks like for users
 
-1.  Once a terms of use is created and enforced, users who are in scope will see the terms of use page.<br>:::image type="content" source="../media/user-terms-of-use-b17057b8.png" alt-text="Example terms of use that appears when a user signs in":::
+1.  Once a terms of use is created and enforced, users who are in scope will see the terms of use page.
+    
+    :::image type="content" source="../media/user-terms-of-use-b17057b8.png" alt-text="Example terms of use that appears when a user signs in":::
+    
+2.  Users can view the terms of use and, if necessary, use buttons to zoom in and out.
+    
+    :::image type="content" source="../media/zoom-buttons-a525d9e6.png" alt-text="View of terms of use with zoom buttons":::
     
 
-2.  Users can view the terms of use and, if necessary, use buttons to zoom in and out.<br>:::image type="content" source="../media/zoom-buttons-a525d9e6.png" alt-text="View of terms of use with zoom buttons":::
+3.  On mobile devices, the terms of use will be displayed similar to the following example.
     
-
-3.  On mobile devices, the terms of use will be displayed similar to the following example.<br>:::image type="content" source="../media/mobile-terms-of-use-f474a960.png" alt-text="Example terms of use that appears when a user signs in on a mobile device":::
+    :::image type="content" source="../media/mobile-terms-of-use-f474a960.png" alt-text="Example terms of use that appears when a user signs in on a mobile device":::
     
 
 ### How users can review their terms of use
@@ -257,12 +270,15 @@ The Terms of use screen shows a count of the users who have accepted and decline
 Users can review and see the terms of use that they have accepted by using the following procedure.
 
 1.  Browse to [https://myaccount.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
-2.  On the Overview page, select VIEW SETTINGS AND PRIVACY.<br>:::image type="content" source="../media/my-account-settings-privacy-035c38bb.png" alt-text="Screen image of a popup which says View settings and privacy":::
+2.  On the Overview page, select VIEW SETTINGS AND PRIVACY.
+    
+    :::image type="content" source="../media/my-account-settings-privacy-035c38bb.png" alt-text="Screen image of a popup which says View settings and privacy":::
     
 
-3.  On the Settings &amp; Privacy page, select the **Privacy** tab.<br>:::image type="content" source="../media/my-account-settings-privacy-organization-notes-db514a84.png" alt-text="Screen image displaying the settings and privacy page with organization notice highlighted. There is a terms of use enforced.":::
+3.  On the Settings &amp; Privacy page, select the **Privacy** tab.
     
-
+    :::image type="content" source="../media/my-account-settings-privacy-organization-notes-db514a84.png" alt-text="Screen image displaying the settings and privacy page with organization notice highlighted. There is a terms of use enforced.":::
+    
 4.  Under **Organization’s notice**, you can review the terms of use you have accepted.
 
 ## Edit terms of use details
@@ -290,12 +306,14 @@ You may, on occasion, be required to update the terms of use document.
 
 1.  Select the terms of use you want to edit.
 2.  Select **Edit terms**.
-3.  In the **Language Options** table, identify the terms of use language you want to update and then, in the **Action** column, select **Update**.<br>:::image type="content" source="../media/edit-terms-of-use-update-af71738a.png" alt-text="Screen image displaying the terms of use with the update option highlighted":::
+3.  In the **Language Options** table, identify the terms of use language you want to update and then, in the **Action** column, select **Update**.
     
-
+    :::image type="content" source="../media/edit-terms-of-use-update-af71738a.png" alt-text="Screen image displaying the terms of use with the update option highlighted":::
+    
 4.  In the Update terms of use version pane, you can upload a new version of your terms of use document.
-5.  Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to reaccept, their previous consent will stay current. Only new users who have not consented before or whose consent expires will see the new version.<br>:::image type="content" source="../media/update-terms-of-use-version-b5bb708d.png" alt-text="Screen image displaying the update terms of use version pane with the upload required pdf and require re-accept highlighted":::
+5.  Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to reaccept, their previous consent will stay current. Only new users who have not consented before or whose consent expires will see the new version.
     
-
+    :::image type="content" source="../media/update-terms-of-use-version-b5bb708d.png" alt-text="Screen image displaying the update terms of use version pane with the upload required pdf and require re-accept highlighted":::
+    
 6.  Once you have uploaded your new pdf and decided on reaccept, select **Add**.
 7.  You will now see the most recent version under the Document column.

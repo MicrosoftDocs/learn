@@ -6,10 +6,9 @@ You can select what happens when an external user, who was invited to your direc
 2.  Open Azure Active Directory and the select **Identity Governance**.
 3.  In the left navigation menu, under **Entitlement management**, select **Settings**.
 4.  On the top menu, select **Edit**.
-
-:::image type="content" source="../media/manage-lifecycle-of-external-users-024f1dca.png" alt-text="Screen image displaying the Identity governance settings page with manage the lifecycle of external users highlighted.":::
-
-
+    
+    :::image type="content" source="../media/manage-lifecycle-of-external-users-024f1dca.png" alt-text="Screen image displaying the Identity governance settings page with manage the lifecycle of external users highlighted.":::
+    
 5.  In the **Manage the lifecycle of external users** section, review the different settings for external users. When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**. If a user is blocked from signing in to the directory, the user will be unable to re-request the access package or request another access in this directory. Do not configure blocking them from signing in if they will later need to request access to other access packages.
 6.  Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.
     
