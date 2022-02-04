@@ -35,4 +35,4 @@ Strong operational security practices to implement every day are:
 
 To explore the topics presented in this module in more details, see the following article:
 
-- [CIS Microsoft Azure Foundations Security Benchmark](/azure/security/benchmarks/v2-cis-benchmark)
+- [CIS Microsoft Azure Foundations Security Benchmark](/security/benchmark/azure/v2-cis-benchmark)
