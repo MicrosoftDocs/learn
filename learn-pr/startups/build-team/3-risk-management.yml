@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.build-team.risk-management
+title: What does an ideal startup team look like?
+metadata:
+  title: What does an ideal startup team look like?
+  description: Learn how to manage conflict between startup cofounders. See how to protect your startup by using founder vesting.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-risk-management.md)]
