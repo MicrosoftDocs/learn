@@ -46,7 +46,7 @@ In this exercise, you'll add packages to support database functionality, connect
 
     This class creates a database context we can use to register a database service. The context also allows us to have a controller that accesses the database.
 
-1. Select <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **PizzaStoreContext.cs**, and then select **Save**.
+1. Select <kbd>Ctrl+S</kbd>. In the **Save As** dialog, for **File name** enter **PizzaStoreContext.cs**, and then select **Save**.
 1. Select **File** > **New File**.
 1. For the language, select **C#**.
 1. Enter this code for the class:
@@ -78,7 +78,7 @@ In this exercise, you'll add packages to support database functionality, connect
 
     This class creates a controller that allows us to query the database for pizza specials and returns them as JSON at the [http://localhost:5000/specials](http://localhost:5000/specials) URL.
 
-1. Select <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **SpecialsController.cs**, and then select **Save**.
+1. Select <kbd>Ctrl+S</kbd>. In the **Save As** dialog, for **File name** enter **SpecialsController.cs**, and then select **Save**.
 
 ## Load data into the database
 
@@ -161,7 +161,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     The class uses a passed database context, creates some `PizzaSpecial` objects in an array, and then saves them.
 
-1. Select <kbd>CTRL+S</kbd>. In the **Save As** dialog, for **File name** enter **SeedData.cs**, and then select **Save**.
+1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **SeedData.cs**, and then select **Save**.
 1. In the file explorer, select **Program.cs**.
 1. At the top, add a reference to a new `PizzaStoreContext`:
 

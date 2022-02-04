@@ -141,7 +141,7 @@ The team has also created classes to represent the models in the app. Review the
 
     The app should compile and run, and you'll see that nothing has changed. The code isn't being used by anything in the client-side HTML. Let's fix that.
 
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
+1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> or select **Stop Debugging**.
 1. In **index.razor**, replace all the code in the `<h1>` tag with this code:
 
     ```razor

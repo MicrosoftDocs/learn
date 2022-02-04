@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Blazor components can receive input using two types of Parameters, what are they?"
+  - content: "Blazor components can receive input by using two types of parameters. What are they?"
     choices:
     - content: "Parameter and DescendingParameter"
       isCorrect: false
-      explanation: "DescendingParameter sounds like the other parameter type, but is not a real type in Blazor"
+      explanation: "DescendingParameter sounds like the other parameter type but it isn't a real type in Blazor."
     - content: "Parameter and RequiredParameter"
       isCorrect: false
-      explanation: "RequiredParameter does not define a different parameter type that can be injected into a Blazor component "
+      explanation: "RequiredParameter doesn't define a different parameter type that can be injected into a Blazor component."
     - content: "Parameter and CascadingParameter"
       isCorrect: true
-      explanation: "Parameters pass data directly into a component and CascadingParameter passes data indirectly into a child component"
-  - content: "AppState can be registered with the service locator using which of these statements?"
+      explanation: "Parameters pass data directly into a component, and CascadingParameter passes data indirectly into a child component."
+  - content: "AppState can be registered with the service locator by using which of these statements?"
     choices:
     - content: "`builder.Services.AddAppState()`"
       isCorrect: false
-      explanation: "AddAppState is not a method available with the Blazor framework"
+      explanation: "AddAppState isn't a method available with the Blazor framework."
     - content: "`builder.Services.AddServerSideBlazor()`"
       isCorrect: false
-      explanation: "This method enables Server Side Blazor in the application, but does not register the AppState"
+      explanation: "This method enables Server Side Blazor in the application, but it doesn't register the AppState."
     - content: "`builder.Services.AddScoped<PizzaSalesState>()`"
       isCorrect: true
-      explanation: "This method registers the PizzaSalesState object as a scoped service that can be used within Blazor pages and components"      
+      explanation: "This method registers the PizzaSalesState object as a scoped service that can be used within Blazor pages and components."      

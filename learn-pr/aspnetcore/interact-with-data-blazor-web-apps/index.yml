@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-blazor
 title: Interact with data in Blazor web apps
-summary: Design user interface elements for a web app by using Blazor components. You'll also obtain data and display it to the user in dynamic web pages.
+summary: Design user interface elements for a web app by using Blazor components. You'll also obtain data and display it to the user on dynamic webpages.
 abstract: |
   By the end of this module, you'll be able to:
     - Assemble a user interface for a web app by creating Blazor components.
