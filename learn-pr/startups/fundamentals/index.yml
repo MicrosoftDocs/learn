@@ -29,11 +29,11 @@ roles:
 products:
 - consumer
 units:
-- learn.startups.fundamentals.1-introduction
-- learn.startups.fundamentals.2-found-startup
-- learn.startups.fundamentals.3-success
-- learn.startups.fundamentals.4-failure
-- learn.startups.fundamentals.5-knowledge-check
-- learn.startups.fundamentals.6-summary
+- learn.startups.fundamentals.introduction
+- learn.startups.fundamentals.found-startup
+- learn.startups.fundamentals.success
+- learn.startups.fundamentals.failure
+- learn.startups.fundamentals.knowledge-check
+- learn.startups.fundamentals.summary
 badge:
   uid: learn.startups.fundamentals.badge
