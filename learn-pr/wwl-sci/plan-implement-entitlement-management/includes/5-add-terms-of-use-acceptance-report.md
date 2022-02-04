@@ -232,10 +232,9 @@ The Terms of use screen shows a count of the users who have accepted and decline
 
 1.  In Microsoft Azure, in **Identity Governance** &gt; **Terms of use**, locate your terms of use.
 2.  For a terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
-
-:::image type="content" source="../media/terms-of-use-accept-decline-bb78f857.png" alt-text="Screen image displaying the terms of use with the Accepted and Declined columns highlighted":::
-
-
+    
+    :::image type="content" source="../media/terms-of-use-accept-decline-bb78f857.png" alt-text="Screen image displaying the terms of use with the Accepted and Declined columns highlighted":::
+    
 3.  In this exercise, you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
     
     :::image type="content" source="../media/accepted-terms-of-use-9e3c6bb6.png" alt-text="Terms of use consents pane listing the users that have accepted":::
