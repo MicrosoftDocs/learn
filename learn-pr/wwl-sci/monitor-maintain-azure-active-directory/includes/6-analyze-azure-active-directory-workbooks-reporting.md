@@ -17,9 +17,9 @@ To access the data from the usage and insights report, you need:
 1.  Navigate to the Azure portal.
 2.  Select the right directory, then select **Azure Active Directory** and choose **Enterprise applications**.
 3.  From the **Activity** section, select **Usage &amp; insights** to open the report.
-
-:::image type="content" source="../media/main-menu-5cb9ed56.png" alt-text="Screenshot shows Usage and Insights selected from the Activity section.":::
-
+    
+    :::image type="content" source="../media/main-menu-5cb9ed56.png" alt-text="Screenshot shows Usage and Insights selected from the Activity section.":::
+    
 
 ## Use the report
 
