@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.startups.name-brand
+uid: learn.startups.build-team
 metadata:
   title: Build your team
   description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
@@ -30,12 +30,12 @@ roles:
 products:
 - consumer
 units:
-- learn.startups.name-brand.introduction
-- learn.startups.name-brand.ideal-startup-team
-- learn.startups.name-brand.risk-management
-- learn.startups.name-brand.build-diverse-teams
-- learn.startups.name-brand.use-mentors
-- learn.startups.name-brand.knowledge-check
-- learn.startups.name-brand.summary
+- learn.startups.build-team.introduction
+- learn.startups.build-team.ideal-startup-team
+- learn.startups.build-team.risk-management
+- learn.startups.build-team.build-diverse-teams
+- learn.startups.build-team.use-mentors
+- learn.startups.build-team.knowledge-check
+- learn.startups.build-team.summary
 badge:
-  uid: learn.startups.name-brand.badge
+  uid: learn.startups.build-team.badge
