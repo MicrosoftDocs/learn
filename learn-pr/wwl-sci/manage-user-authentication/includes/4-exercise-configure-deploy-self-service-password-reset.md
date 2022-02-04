@@ -92,7 +92,9 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
       :::column-end:::
     :::row-end:::
     
-5.  Select **Create**.<br>:::image type="content" source="../media/create-self-service-password-reset-security-group-188899fc.png" alt-text="Screen image displaying the New Group blade with group type, group name, and create highlighted":::
+5.  Select **Create.**
+    
+    :::image type="content" source="../media/create-self-service-password-reset-security-group-188899fc.png" alt-text="Screen image displaying the New Group blade with group type, group name, and create highlighted":::
     
 
 ## Enable self-service password reset
@@ -107,9 +109,10 @@ Enable SSPR for the group.
 3.  On the Password reset dialog **Properties** page, under **Self-service password reset enabled**, select **Selected**.
 4.  Select **Select group**.
 5.  In the Default password reset policy pane, select the **SSPRTesters** group.
-6.  On the Password reset dialog, **Properties** page, select **Save**.:::image type="content" source="../media/enable-password-reset-for-selected-group-221d22a2.png" alt-text="Screen image displaying the Password reset properties page with selected, select group, and save highlighted":::
+6.  On the Password reset dialog, **Properties** page, select **Save**.
     
-
+    :::image type="content" source="../media/enable-password-reset-for-selected-group-221d22a2.png" alt-text="Screen image displaying the Password reset properties page with selected, select group, and save highlighted":::
+    
 7.  Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
 
 ## Register for self-service password reset
@@ -120,9 +123,10 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 2.  Sign in as **julieta@*organization-domain-name*.onmicrosoft.com** with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.
-5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.:::image type="content" source="../media/keep-your-account-secure-page-b4a3ea61.png" alt-text="Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted":::
+5.  On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.
     
-
+    :::image type="content" source="../media/keep-your-account-secure-page-b4a3ea61.png" alt-text="Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted":::
+    
 6.  In this example, you'll use the Phone option. Enter your mobile phone details.
 7.  Select **Text me a code**.
 8.  When you receive the code on your mobile phone, enter the code in the text box and then select Next.
@@ -136,12 +140,14 @@ Now let's test whether the user can reset their password.
 1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/sspr](https://aka.ms/sspr). This is to ensure you well be prompted for user authentication.
 2.  In the **Email, phone, or Skype** box, enter **julieta@*organization-domain-name*.onmicrosoft.com** and then select Next. Replace the organization-domain-name with your domain name.
 3.  On the Enter password page, select **Forgot my password**.
-4.  On the Get back into your account page, complete the requested information and then select **Next**.<br>:::image type="content" source="../media/get-back-into-your-account-page-6274ef45.png" alt-text="Screen image displaying the Get back into your account page with Email or Username, captcha box, and next button highlighted":::
+4.  On the Get back into your account page, complete the requested information and then select **Next**.
     
-
-5.  In the **verification step 1** task, select **Text my mobile phone** or **Call my mobile phone**, enter your phone number and then select **Text**.:::image type="content" source="../media/self-service-password-reset-verification-step-1-527f233c.png" alt-text="Screen image displaying verification step 1 with contact methods, phone number box, and text button highlighted":::
+    :::image type="content" source="../media/get-back-into-your-account-page-6274ef45.png" alt-text="Screen image displaying the Get back into your account page with Email or Username, captcha box, and next button highlighted":::
     
-
+5.  In the **verification step 1** task, select **Text my mobile phone** or **Call my mobile phone**, enter your phone number and then select **Text**.
+    
+    :::image type="content" source="../media/self-service-password-reset-verification-step-1-527f233c.png" alt-text="Screen image displaying verification step 1 with contact methods, phone number box, and text button highlighted":::
+    
 6.  Enter your verification code and then select **Next**.
 7.  In the choose a new password step, enter and then confirm your new password.
 8.  When complete, select **Finish**.
