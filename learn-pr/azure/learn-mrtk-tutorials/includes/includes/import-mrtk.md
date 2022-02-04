@@ -55,7 +55,7 @@
 
     :::image type="content" source="../../media/xr-plug-in-management-settings.png" alt-text="Screenshot of Show XR Plug-In Management Settings." lightbox="../../media/xr-plug-in-management-settings.png":::
 
-1. **Project Settings** opens. Under **XR Plug-in Management**, ensure that Universal Windows Platform settings (Windows logo tab) is active, and then ensure **Initialize XR on Startup**, **Open XR**, and **Microsoft HoloLens feature set** are all enabled (checkboxes are checked).
+1. **Project Settings** opens. Under **XR Plug-in Management**, ensure that Universal Windows Platform settings (Windows logo tab) is active, and then ensure **Initialize XR on Startup**, **Open XR**, and **Microsoft HoloLens feature group** are all enabled (checkboxes are checked).
 
     :::image type="content" source="../../media/project-settings-window-3.png" alt-text="Screenshot of Project Settings Window 3." lightbox="../../media/project-settings-window-3.png":::
 
