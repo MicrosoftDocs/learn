@@ -6,7 +6,7 @@ The Contoso Bicycles application actually has several steps to handle a new orde
 
 In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, Contoso will write code that picks up messages from the queue.
 
-Here, you'll learn how to write that code.
+Here, you'll look at the process and considerations in writing code to send and receive messages by using a Service Bus queue.
 
 ## Azure.Messaging.ServiceBus NuGet package
 
@@ -27,9 +27,9 @@ The queue in Azure might be located thousands of miles away from sending and rec
 
 When you send a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
 
-## Send a message to a queue
+## To send a message to a queue
 
-To send a message to a queue, you'll complete the following tasks.
+To send a message to a queue, you'll complete the following steps.
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue.
 
@@ -60,7 +60,7 @@ var message = new ServiceBusMessage(messageContent);
 await sender.SendMessageAsync(message);
 ```
 
-## Receive messages from the queue
+## To receive messages from a queue
 
 To receive messages, you must first register a message handler. The message handler is the method in your code that is invoked when a message is available on the queue.
 

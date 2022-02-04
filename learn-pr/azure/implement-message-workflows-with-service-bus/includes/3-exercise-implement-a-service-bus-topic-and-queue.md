@@ -7,7 +7,7 @@ You've identified the following scenarios for message exchange between the mobil
 
 You've decided to implement a Service Bus queue for the first use case and a Service Bus topic for the second use case.
 
-In this exercise, you'll create a Service Bus namespace, which will contain both a queue and a topic with subscriptions.
+In this exercise, in the Azure portal, you'll create a Service Bus namespace that contains a queue, a topic, and subscriptions.
 
 ## Create a Service Bus namespace
 
