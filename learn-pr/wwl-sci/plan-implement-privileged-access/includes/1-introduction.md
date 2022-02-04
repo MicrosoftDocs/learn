@@ -12,8 +12,8 @@ By the end of this module, you will be able to:
  -  Analyze PIM audit history and reports.
  -  Create and manage emergency access accounts.
 
-Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Azure AD, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.<br>
+Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Azure AD, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.
 
-## Prerequisites<br>
+## Prerequisites
 
 None

@@ -15,17 +15,15 @@ Follow these steps to make a user eligible for an Azure resource role.
 3.  In the Privileged Identity Management blade, in the left navigation, select **Azure resources.**
 4.  On the top menu, select **Discover resources**.
 5.  In the Azure resources – Discovery blade, select your subscription and then, on the top menu, select **Manage resource**.
-
-:::image type="content" source="../media/privileged-identity-management-azure-resource-management-8a7e6f52.png" alt-text="Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted":::
-
-
+    
+    :::image type="content" source="../media/privileged-identity-management-azure-resource-management-8a7e6f52.png" alt-text="Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted":::
+    
 6.  In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 7.  When onboarding completes, close the Azure resources – Discovery blade.
 8.  In the Azure resources blade, select the resource you just added.
-
-:::image type="content" source="../media/privileged-identity-management-azure-resource-overview-02b20629.png" alt-text="Screen image displaying the recently added Azure resource":::
-
-
+    
+    :::image type="content" source="../media/privileged-identity-management-azure-resource-overview-02b20629.png" alt-text="Screen image displaying the recently added Azure resource":::
+    
 9.  In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 10. On the top menu, select + **Add assignments**.
 11. In the **Add assignments blade**, select the **Select role** menu and then select **API Management Service Contributor.**

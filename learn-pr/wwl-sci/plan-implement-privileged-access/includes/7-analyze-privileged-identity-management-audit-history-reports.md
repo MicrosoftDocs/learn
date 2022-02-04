@@ -6,16 +6,16 @@ Follow these steps to view the audit history for privileged access groups.
 
 ## View resource audit history
 
-**Resource audit** gives you a view of all activity associated with your privileged access groups.
+## **Resource audit** gives you a view of all activity associated with your privileged access groups.
 
 1.  Open **Azure AD Privileged Identity Management**.
 2.  Select **Privileged access groups (Preview)**.
 3.  Select the privileged access group you want to view audit history for.
 4.  Under **Activity**, select **Resource audit**.
 5.  Filter the history using a predefined date or custom range.
-
-:::image type="content" source="../media/groups-resource-audit-cedf8e11.png" alt-text="Resource audit list with filters":::
-
+    
+    :::image type="content" source="../media/groups-resource-audit-cedf8e11.png" alt-text="Resource audit list with filters":::
+    
 
 ## View my audit
 
@@ -26,5 +26,6 @@ Follow these steps to view the audit history for privileged access groups.
 3.  Select the privileged access group you want to view audit history for.
 4.  Under **Activity**, select **My audit**.
 5.  Filter the history using a predefined date or custom range.
-
-:::image type="content" source="../media/my-audit-time-1611599c.png" alt-text="Audit list for the current user":::
+    
+    :::image type="content" source="../media/my-audit-time-1611599c.png" alt-text="Audit list for the current user":::
+    

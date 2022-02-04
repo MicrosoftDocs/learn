@@ -9,7 +9,7 @@ PIM provides time-based and approval-based role activation to access resources. 
  -  Provide just-in-time privileged access to Azure AD and Azure resources
  -  Assign time-bound access to resources using start and end dates
  -  Require approval to activate privileged roles
- -  Enforce multi-factor authentication to activate any role
+ -  Enforce Azure AD Multi-Factor Authentication to activate any role
  -  Use justification to understand why users activate
  -  Get notifications when privileged roles are activated
  -  Conduct access reviews to ensure users still need roles
@@ -214,7 +214,7 @@ Users with the Owner role for an Azure subscription can also use [access reviews
 
 After cleaning up privileged role assignments in your organization, you'll need to decide which roles to protect with PIM.
 
-If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using multi-factor authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
+If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure AD Multi-Factor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
 
 Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Azure AD and Azure roles.
 
@@ -318,7 +318,7 @@ Before you implement your PIM solution, it is good practice to draft your PIM se
 :::row-end:::
 :::row:::
   :::column:::
-    Require MFA
+    Require MFA; two-step verification
   :::column-end:::
   :::column:::
     Yes
@@ -434,7 +434,7 @@ Before you implement your PIM solution, it is good practice to draft your PIM se
 :::row-end:::
 :::row:::
   :::column:::
-    Require MFA
+    Require MFA; two-step verification
   :::column-end:::
   :::column:::
     Yes
@@ -552,12 +552,12 @@ The following table describes each of the settings.
 :::row-end:::
 :::row:::
   :::column:::
-    Require MFA
+    Require MFA; two-step verification
   :::column-end:::
   :::column:::
-    Whether the eligible user needs to perform MFA before activating the role.
+    Whether the eligible user needs to perform MFA; two-step verification before activating the role.
 
-**Microsoft recommends** you enforce MFA for all administrator roles, especially if the roles have guest users.
+**Microsoft recommends** you enforce MFA; two-step verification for all administrator roles, especially if the roles have guest users.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -567,7 +567,7 @@ The following table describes each of the settings.
   :::column:::
     If set to true, Global Administrator, Privileged Role Administrator, and Security Administrator in the organization will receive an email notification when an eligible user activates the role.
 
-**Note:** Some organizations don’t have an email address tied to their administrator accounts. To get these email notifications, set an alternative email address so administrators will receive these emails.
+Some organizations don’t have an email address tied to their administrator accounts. To get these email notifications, set an alternative email address so administrators will receive these emails.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -597,7 +597,7 @@ The following table describes each of the settings.
   :::column:::
     If approval is required to activate the eligible role, list the people who should approve the request. By default, PIM sets the approver to be all users who are privileged role administrators whether they are permanent or eligible.
 
-**Note:** If a user is both eligible for an Azure AD role and an approver of the role, they will not be able to approve themselves.
+If a user is both eligible for an Azure AD role and an approver of the role, they will not be able to approve themselves.
 
 **Microsoft recommends** that you choose approvers to be users who are most knowledgeable about the role and its frequent users rather than a Global Administrator.
   :::column-end:::
