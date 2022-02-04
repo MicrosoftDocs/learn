@@ -30,10 +30,10 @@ roles:
 products:
 - consumer
 units:
-- learn.startups.revenue.1-introduction
-- learn.startups.revenue.2-revenue-models
-- learn.startups.revenue.3-generate-early-revenues
-- learn.startups.revenue.4-knowledge-check
-- learn.startups.revenue.5-summary
+- learn.startups.revenue.introduction
+- learn.startups.revenue.revenue-models
+- learn.startups.revenue.generate-early-revenues
+- learn.startups.revenue.knowledge-check
+- learn.startups.revenue.summary
 badge:
   uid: learn.startups.revenue.badge
