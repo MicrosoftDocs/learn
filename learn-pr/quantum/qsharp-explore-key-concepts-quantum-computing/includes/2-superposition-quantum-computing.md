@@ -153,6 +153,7 @@ information about the superposition. We obtain only the results after a measurem
 In the example state we produced for the quantum random bit generator, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability for each state is
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
+
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
 Each state has a 50-percent probability of being measured, so we have a balanced
