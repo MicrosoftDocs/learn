@@ -2,7 +2,7 @@ As a founder, your personal brand can add significantly to the credibility of yo
 
 What is a personal brand? It can be viewed as the sum of your professional reputation (what you've done before), what you stand for and what you're an expert at (you right now), and your mission (where you're going in the future).
 
-Amazon founder Jeff Bezos has described personal brand as ["what people say about you when you're not in the room"](https://www.forbes.com/sites/williamarruda/2016/09/06/the-most-damaging-myth-about-branding/).
+Amazon founder Jeff Bezos has described personal brand as ["what people say about you when you're not in the room"](https://www.forbes.com/sites/williamarruda/2016/09/06/the-most-damaging-myth-about-branding/?azure-portal=true).
 
 Having a strong personal brand can be a critical factor in whether others buy into the mission and vision of your company, talk about it with friends and colleagues, recommend it to others, or simply trust you. People are naturally more inclined to trust a business when they can see who owns it and what they're passionate about.
 
@@ -36,7 +36,7 @@ Besides a professional-looking photo, your profile should include a summary that
 
 The **About** section of your LinkedIn profile is also a great place to mention the kinds of opportunities you're looking for. People are naturally inclined to try to help, so you might as well make it easy for them. Think about your business objectives. What opportunities do you want more of, and how can you articulate these to make it easy for the right people to connect with you?
 
-**Task:** Review the LinkedIn Learning course [Rock Your LinkedIn Profile](https://www.linkedin.com/learning/rock-your-linkedin-profile) for practical tips on getting the most out of LinkedIn.
+**Task:** Review the LinkedIn Learning course [Rock Your LinkedIn Profile](https://www.linkedin.com/learning/rock-your-linkedin-profile?azure-portal=true) for practical tips on getting the most out of LinkedIn.
 
 ## Get some decent photos
 

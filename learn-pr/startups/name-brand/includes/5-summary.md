@@ -6,10 +6,10 @@ We also discussed the importance of building your personal brand as a founder an
 
 - Trademark databases:
 
-  - [U.S.](https://www.uspto.gov/trademarks/search)
-  - [Canada](https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home)
-  - [U.K.](https://www.gov.uk/search-for-trademark)
-  - [Europe](https://euipo.europa.eu/ohimportal/en/search-availability)
-  - [Australia](https://search.ipaustralia.gov.au/trademarks/search/quick)
+  - [U.S.](https://www.uspto.gov/trademarks/search?azure-portal=true)
+  - [Canada](https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home?azure-portal=true)
+  - [U.K.](https://www.gov.uk/search-for-trademark?azure-portal=true)
+  - [Europe](https://euipo.europa.eu/ohimportal/en/search-availability?azure-portal=true)
+  - [Australia](https://search.ipaustralia.gov.au/trademarks/search/quick?azure-portal=true)
 
-- [Namechk](https://namechk.com/) – a tool for quickly checking the availability of domains and social accounts
+- [Namechk](https://namechk.com/?azure-portal=true) – a tool for quickly checking the availability of domains and social accounts

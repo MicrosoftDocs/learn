@@ -83,7 +83,7 @@ Nevertheless, a lot of startup founders compromise the strength of their brand f
 
 Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*, or they use domain hacks such as the examples cited earlier.
 
-Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator cofounder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html).
+Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator cofounder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html?azure-portal=true).
 
 If you're going to be a successful global company, you should have the domain *\<your-company-name\>.com*.
 
@@ -95,7 +95,7 @@ Perhaps more importantly, the domain *\<your-company-name\>.com* should arguably
 
 But let's say in a couple of years from now your company is growing fast, you raise a large funding round, and you get some great media coverage. At that point you're exposed to the possibility that whoever owns *\<your-company-name\>.com* will try to take advantage of the situation and get you to buy it from them at a high price.
 
-So, before you commit to a name for your company, make sure you can have *\<your-company-name\>.com*. If it's available to register, you can do that straight away. In many cases, you'll find that someone has registered the domain and is sitting on it. If so, you'll need to make an offer to buy it. There are a number of domain registrars that offer anonymous brokerage services, such as [GoDaddy](https://www.godaddy.com/domains/domain-broker).
+So, before you commit to a name for your company, make sure you can have *\<your-company-name\>.com*. If it's available to register, you can do that straight away. In many cases, you'll find that someone has registered the domain and is sitting on it. If so, you'll need to make an offer to buy it. There are a number of domain registrars that offer anonymous brokerage services, such as [GoDaddy](https://www.godaddy.com/domains/domain-broker?azure-portal=true).
 
 There are several other domains you should consider registering at the same time, primarily to prevent opportunists from snapping them up. The main categories are:
 
@@ -108,7 +108,7 @@ Lastly, if your company will be heavily reliant on one or more social networks t
 
 ## Doesn't infringe an existing Trademark
 
-A final step before locking in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search), and can help to give you some confidence that you're not choosing a name that will lead you to an expensive lawsuit in the future.
+A final step before locking in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search?azure-portal=true), and can help to give you some confidence that you're not choosing a name that will lead you to an expensive lawsuit in the future.
 
 It's often a good idea to consult with a trademark attorney who can do a more robust search and advise you on any trademark issues.
 
