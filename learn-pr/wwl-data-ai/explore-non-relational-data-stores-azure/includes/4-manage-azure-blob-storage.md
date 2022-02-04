@@ -27,7 +27,7 @@ On the **Containers** page, select **+ Container**, and provide a name for the n
 
 ### Use the Azure CLI
 
-If you prefer to use the Azure CLI, the `az storage container create` command creates a new container. This command takes a number of optional parameters, and you can find the full details on the [az storage container create](https://docs.microsoft.com/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-create) page on the Microsoft website. The example below creates a container named *images* for storing blobs. The container is created in a storage account named *contosodata*. The container provides anonymous blob access.
+If you prefer to use the Azure CLI, the `az storage container create` command creates a new container. This command takes a number of optional parameters, and you can find the full details on the [az storage container create](/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-create) page on the Microsoft website. The example below creates a container named *images* for storing blobs. The container is created in a storage account named *contosodata*. The container provides anonymous blob access.
 
 ```azurecli
 az storage container create \
@@ -73,7 +73,7 @@ On the page for the container, in the toolbar, select **Upload**. In the **Uploa
 
 ### Use the Azure CLI
 
-Use the `az storage blob upload` command to upload a file to a blob in a container. The details describing the parameters for this command are available on the [az storage blob upload](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-upload) page on the Microsoft website. The following example uploads a local file named *racer_green_large.gif* in the *data* folder to a blob called *racer_green* in the **bikes* folder in the *images* container in the *contosodata* storage account.
+Use the `az storage blob upload` command to upload a file to a blob in a container. The details describing the parameters for this command are available on the [az storage blob upload](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-upload) page on the Microsoft website. The following example uploads a local file named *racer_green_large.gif* in the *data* folder to a blob called *racer_green* in the **bikes* folder in the *images* container in the *contosodata* storage account.
 
 ```azurecli
 az storage blob upload \
@@ -121,7 +121,7 @@ If you're using the Azure portal, go to the page for your storage account and se
 
 ### Use the Azure CLI
 
-In the Azure CLI, you can use the [`az storage blob list`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-list) command to view the blobs in a container. This command iterates recursively through any folders in the container. The example below lists the blobs previously uploaded to the images container:
+In the Azure CLI, you can use the [`az storage blob list`](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-list) command to view the blobs in a container. This command iterates recursively through any folders in the container. The example below lists the blobs previously uploaded to the images container:
 
 ```azurecli
 az storage blob list \
@@ -153,7 +153,7 @@ If you're using the Azure portal, go to the page for your storage account and se
 
 ### Use the Azure CLI
 
-The Azure CLI provides the [`az storage blob download`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download) and [`az storage blob download-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download-batch) commands. These commands are analogous to those available for uploading blobs. The example below retrieves the *racer_green"* blob from the *bikes* folder in the *images* container.
+The Azure CLI provides the [`az storage blob download`](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download) and [`az storage blob download-batch`](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download-batch) commands. These commands are analogous to those available for uploading blobs. The example below retrieves the *racer_green"* blob from the *bikes* folder in the *images* container.
 
 ```azurecli
 az storage blob download \
@@ -199,7 +199,7 @@ If you've enabled soft delete for the storage account, the blobs page listing th
 
 ### Use the Azure CLI
 
-You can delete a single blob with the [`az storage blob delete`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-green* blob from the *bikes* folder in the *images* container:
+You can delete a single blob with the [`az storage blob delete`](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-green* blob from the *bikes* folder in the *images* container:
 
 ```azurecli
 az storage blob delete ^
@@ -234,7 +234,7 @@ In the Azure portal, select **Containers** under **Blob service**, select the co
 
 ### Use the Azure CLI
 
-In the Azure CLI, use the [`az storage container delete`](https://docs.microsoft.com/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-delete) command. The following example deletes the *images* container referenced in previous examples.
+In the Azure CLI, use the [`az storage container delete`](/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-delete) command. The following example deletes the *images* container referenced in previous examples.
 
 ```azure cli
 az storage container delete \
