@@ -14,7 +14,7 @@ All founders have a finite amount of capital and time available. By testing your
 
 ## Use the Lean Canvas
 
-The [Lean Canvas](https://leanstack.com/lean-canvas), developed by Ash Maurya, author of Running Lean, is a great way to capture the assumptions you have about all aspects of your business model.
+The [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true), developed by Ash Maurya, author of Running Lean, is a great way to capture the assumptions you have about all aspects of your business model.
 
 The Lean Canvas is based on the well-known Business Model Canvas by Alex Osterwalder. It uses the structure of the Business Model Canvas and applies it to early-stage startups, making it easy for founders to spell out assumptions that relate to each of nine business model building blocks.
 
@@ -32,11 +32,11 @@ The Lean Canvas takes some of the inputs that we've discussed earlier in this un
 
 **Task:** Complete your own Lean Canvas
 
-Download the [Lean Canvas](https://leanstack.com/lean-canvas) from leanstack.com.
+Download the [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) from leanstack.com.
 
 Print the Lean Canvas and place your assumptions on the relevant section using sticky notes. Spend no more than 20 minutes, aim to write no more than one short sentence on each sticky note, and keep to a maximum of three sticky notes per block.
 
-It's best to start with Problem, Customer Segments, Solution, and Unique Value Proposition since you've already worked on these using the Value Proposition Canvas before you move onto the other blocks.
+It's best to start with Problem, Customer Segments, Solution, and Unique Value Proposition because you've already worked on these using the Value Proposition Canvas before you move onto the other blocks.
 
 ## Identify critical assumptions
 

@@ -89,7 +89,7 @@ In the context of your own startup, make sure you're asking customers not just w
 
 ## The Value Proposition Canvas
 
-The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas) is a fantastic tool developed by Strategyzer. It's freely available for anyone to use as they visualize, design, and test business models.
+The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) is a fantastic tool developed by Strategyzer. It's freely available for anyone to use as they visualize, design, and test business models.
 
 The purpose of the Value Proposition Canvas is to help you to understand the needs of your target customer with reference to jobs-to-be-done, pains, and gains, and then to design your value proposition to accurately meet those needs.
 
@@ -107,7 +107,7 @@ Now move to the left-hand side of the canvas and design your value proposition. 
 
 Let's put the Value Proposition Canvas into practice.
 
-Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas) by Strategyzer.com and Strategyzer AG.
+Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG.
 
 A lot of people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
 

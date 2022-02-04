@@ -18,11 +18,11 @@ We'd recommend these books for additional guidance on testing assumptions and in
 
 ### Tools
 
-- [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas) by Strategyzer.com and Strategyzer AG
-- [Lean Canvas](https://leanstack.com/lean-canvas) by Ash Maurya
+- [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG
+- [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) by Ash Maurya
 
 ### User persona templates for inspiration
 
-- [Adobe](https://www.adobe.com/express/create/user-persona)
-- [Miro](https://miro.com/templates/personas/)
-- [Xtensio](https://xtensio.com/user-persona-template/)
+- [Adobe](https://www.adobe.com/express/create/user-persona?azure-portal=true)
+- [Miro](https://miro.com/templates/personas/?azure-portal=true)
+- [Xtensio](https://xtensio.com/user-persona-template/?azure-portal=true)

@@ -59,7 +59,7 @@ The following are examples of commonly used experiments, starting with simple, l
 
 **Purpose:** By delivering an outcome to the customer, you can test whether they perceive the outcome as valuable. In many cases, this is a more important assumption to test than anything to do with the process by which the outcome is achieved.
 
-**Pros:** Can often be done quickly and cheaply, since you can deliver an outcome without having to build the product. Allows for collection of feedback from the customer after they've received the outcome and derived the value. This can also be an opportunity to make sales as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and ensure you integrate any learnings when you actually begin building the product.
+**Pros:** Can often be done quickly and cheaply, because you can deliver an outcome without having to build the product. Allows for collection of feedback from the customer after they've received the outcome and derived the value. This can also be an opportunity to make sales as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and ensure you integrate any learnings when you actually begin building the product.
 
 **Cons:** Doesn't scale well, so you'll only be able to deliver an outcome to a limited number of customers. Depending on the complexity of the process, you may need to set expectations so the customer knows when they can expect a response.
 
@@ -71,9 +71,9 @@ The following are examples of commonly used experiments, starting with simple, l
 
 **Purpose:** A Wizard of Oz experiment allows you to test both the perceived value of the outcome and also the process by which you deliver it.
 
-**Pros:** Provides a more robust test of pricing than the Concierge method, since from the customer's perspective they're buying and using your product.
+**Pros:** Provides a more robust test of pricing than the Concierge method, because from the customer's perspective, they're buying and using your product.
 
-**Cons:** Generally doesn't scale to a large number of customers as the process is manual. Only suited to products that create a single output for the customer (such as a report or actioning something), but not to products that require significant customer interaction.
+**Cons:** Generally doesn't scale to a large number of customers because the process is manual. Only suited to products that create a single output for the customer (such as a report or actioning something), but not to products that require significant customer interaction.
 
 **Practical tips:** You need to be prepared to deliver an outcome to the customer quickly, because they're unaware that the behind-the-scenes process is being done manually. It's generally a good idea to price your product so that you can deliver it profitably using Wizard of Oz. If you can do this, there's nothing to stop you continuing to deliver value manually for as long as you like. When you do automate the process, your profit margin can only improve.
 
@@ -81,7 +81,7 @@ The following are examples of commonly used experiments, starting with simple, l
 
 **Description:** In a mock sale experiment, you're positioning your product alongside plans and pricing information, and testing customers' interesting in buying, without actually taking any payment. When customers select a pricing option, you can tell them the product isn't available to purchase yet and ask them to provide their details to be notified when it is.
 
-**Purpose:** A mock sale is ideal for testing whether customers perceive value in your product, since clicking on a pricing option signals an intent to purchase. It's also useful for testing different price points or plans.
+**Purpose:** A mock sale is ideal for testing whether customers perceive value in your product, because selecting a pricing option signals an intent to purchase. It's also useful for testing different price points or plans.
 
 **Pros:** Can be used before the product is built by placing mockups of screenshots and other information on a landing page. Can be a valuable way to create an email list of strongly interested prospects.
 
