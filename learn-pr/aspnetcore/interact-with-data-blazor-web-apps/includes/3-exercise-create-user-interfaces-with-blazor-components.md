@@ -1,4 +1,4 @@
-You'll be starting to create a new Blazing Pizza app for the pizza delivery company. The company has provided the current CSS, imagery, and HTML from its old site to work with.
+In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company has provided the current CSS, imagery, and HTML from its old site to work with.
 
 > [!NOTE]
 > This module uses the .NET CLI and Visual Studio Code for local development. After you finish this module, you can apply the concepts by using Visual Studio for Windows and Visual Studio for Mac for macOS. For continued development, you can use Visual Studio Code for Windows, Linux, and macOS.

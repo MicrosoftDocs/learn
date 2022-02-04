@@ -18,9 +18,9 @@ abstract: |
     - Share data in your web app between multiple Blazor components.
     - Bind an HTML element to a variable in a Blazor component.
 prerequisites: |
-  - Familiarity with HTML and CSS in web development.
-  - Ability to write C# code at a novice level.
-  - Ability to create a Blazor web application.
+  - Familiarity with HTML and CSS in web development
+  - Ability to write C# code at a novice level
+  - Ability to create a Blazor web application
 iconUrl: /learn/achievements/interact-with-data-blazor-web-apps.svg
 levels: 
   - intermediate
