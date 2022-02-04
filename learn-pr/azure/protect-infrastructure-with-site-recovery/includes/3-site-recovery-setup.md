@@ -59,7 +59,7 @@ Site Recovery will manage and orchestrate our DR process for Azure VMs or on-pre
 
 ### What is a Recovery Services vault?
 
-A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we provisioned a recovery services vault using the portal or the Azure CLI.
+A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we will provision a recovery services vault using the portal or the Azure CLI.
 
 ### What are the target resources?
 
