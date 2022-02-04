@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.startups.name-brand.4-knowledge-check
+uid: learn.startups.name-brand.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
+  description: Review concepts on startup naming and branding. Topics include choosing an effective name and strengthening your personal brand.
   ms.date: 02/02/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -23,7 +23,7 @@ quiz:
     - content: "A patent search to check whether you would be infringing an existing patent."
       isCorrect: true
       explanation: "Correct."
-    - content: "A domain name search to see whether you can register the domain <your-company-name> dot com."
+    - content: "A domain name search to see whether you can register a dot-com domain for your company name."
       isCorrect: false
       explanation: "Incorrect."
 
