@@ -56,7 +56,7 @@ public ActionResult<List<Pizza>> GetAll() =>
 
 The preceding action:
 
-* Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
+* Responds only to the HTTP `GET` verb, as denoted by the `[HttpGet]` attribute.
 * Queries the service for all pizza and automatically returns data with a `Content-Type` value of `application/json`.
 
 ## Retrieve a single pizza
@@ -80,7 +80,7 @@ public ActionResult<Pizza> Get(int id)
 
 The preceding action:
 
-* Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
+* Responds only to the HTTP `GET` verb, as denoted by the `[HttpGet]` attribute.
 * Requires that the `id` parameter's value is included in the URL segment after `pizza/`. Remember, the controller-level `[Route]` attribute defined the `/pizza` pattern.
 * Queries the database for a pizza that matches the provided `id` parameter.
 
@@ -113,7 +113,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
    (Disconnected)> connect https://localhost:{PORT}
    ```
 
-1. To see our newly available `Pizza` endpoint, run the following command:
+1. To see the newly available `Pizza` endpoint, run the following command:
 
    ```dotnetcli
    ls
@@ -192,7 +192,7 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
     }
     ```
 
-1. Our API also handles situations where the item does not exist. Call the API again, but pass in an invalid pizza `id` parameter with the following command:
+1. Our API also handles situations where the item doesn't exist. Call the API again, but pass in an invalid pizza `id` parameter by using the following command:
 
     ```dotnetcli
     get 5

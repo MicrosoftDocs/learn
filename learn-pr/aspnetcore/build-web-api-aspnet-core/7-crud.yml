@@ -17,15 +17,15 @@ quiz:
   questions:
     - content: "Suppose you need to update a product's name. Which HTTP action verb is the best fit for this request?"
       choices:
-      - content: "POST"
+      - content: "`POST`"
         isCorrect: false
-        explanation: "The POST verb is intended for use in creating a new product."
-      - content: "PUT"
+        explanation: "The `POST` verb is intended for use in creating a new product."
+      - content: "`PUT`"
         isCorrect: true
-        explanation: "The PUT verb is intended for use in modifying an existing product. Additionally, PATCH can be used to update individual properties."
-      - content: "DELETE"
+        explanation: "The `PUT` verb is intended for use in modifying an existing product. Additionally, `PATCH` can be used to update individual properties."
+      - content: "`DELETE`"
         isCorrect: false
-        explanation: "The DELETE verb is intended for use in removing a product."
+        explanation: "The `DELETE` verb is intended for use in removing a product."
     - content: "In which scenario is it most appropriate to return an HTTP 404 status code, and how is it accomplished in ASP.NET Core?"
       choices:
       - content: "The product was successfully updated in the database. Call the `BadRequest` method to generate a 404."

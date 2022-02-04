@@ -12,7 +12,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
     mkdir Models
     ```
 
-    Select the *Models* folder in Visual Studio Code and add a new File called *Pizza.cs*. 
+    Select the *Models* folder in Visual Studio Code and add a new file called *Pizza.cs*. 
 
     ![Screenshot of adding a new file to the Models folder in Visual Studio Code.](../media/add-pizza-file.png)
 

@@ -13,7 +13,7 @@ You've already seen how `GET` actions work. Let's learn more about `POST`, `PUT`
 
 ## POST
 
-To enable users to add a new item to the endpoint, you must implement the `POST` action by using the `[HttpPost]` attribute. By passing the item (in this example, a pizza) into the method as a parameter, ASP.NET Core will automatically convert any application/JSON that's sent to the endpoint into a populated .NET `Pizza` object.
+To enable users to add a new item to the endpoint, you must implement the `POST` action by using the `[HttpPost]` attribute. When you pass the item (in this example, a pizza) into the method as a parameter, ASP.NET Core will automatically convert any application/JSON that's sent to the endpoint into a populated .NET `Pizza` object.
 
 Here's the method signature of the `Create` method that you'll implement in the next section:
 
@@ -25,7 +25,7 @@ public IActionResult Create(Pizza pizza)
 }
 ```
 
-The `[HttpPost]` attribute will map HTTP `POST` requests sent to http://localhost:5000/pizza by using the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method returns an `IActionResult` response. 
+The `[HttpPost]` attribute will map HTTP `POST` requests sent to `http://localhost:5000/pizza` by using the `Create()` method. Instead of returning a list of pizzas, as we saw with the `Get()` method, this method returns an `IActionResult` response. 
 
 `IActionResult` lets the client know if the request succeeded and provides the ID of the newly created pizza. `IActionResult` does this by using standard HTTP status codes, so it can easily integrate with clients regardless of the language or platform they're running on.
 
@@ -38,7 +38,7 @@ Fortunately, `ControllerBase` has utility methods that will create the appropria
 
 ## PUT 
 
-Modifying or updating a pizza in our inventory is similar to the POST method that you implemented. But it uses the [HttpPut] attribute and take in the `id` parameter, in addition to the `Pizza` object that needs to be updated:
+Modifying or updating a pizza in our inventory is similar to the POST method that you implemented. But it uses the `[HttpPut]` attribute and takes in the `id` parameter, in addition to the `Pizza` object that needs to be updated:
 
 ```csharp
 [HttpPut("{id}")]

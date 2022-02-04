@@ -107,7 +107,7 @@ The preceding action:
     (Disconnected)> connect https://localhost:{PORT}
     ```
 
-    Go to the `Pizza` endpoint by running the following command:
+1.  Go to the `Pizza` endpoint by running the following command:
 
     ```dotnetcli
     cd Pizza
