@@ -27,6 +27,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
 - azure
+- azure-app-service
 units:
 - learn.javascript-deploy-expressjs-app-service.introduction
 - learn.javascript-deploy-expressjs-app-service.learning-content
