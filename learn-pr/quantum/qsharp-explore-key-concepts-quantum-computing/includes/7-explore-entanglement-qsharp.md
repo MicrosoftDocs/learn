@@ -25,8 +25,7 @@ The most prominent example of a multiqubit gate is the
 operation. This operation takes two qubits as input. Then it flips the state of the
 second qubit (the target qubit) if, and only if, the state of the first qubit (the control
 qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can
-transform a register in the state $|00\rangle$ to the entangled state
-$\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
+transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
 Here's how it works:
 
