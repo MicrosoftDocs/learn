@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.push
+title: Push the container image to Azure Container Registry
+metadata:
+  unitType: Push the container image to Azure Container Registry
+  title: Push the container image to Azure Container Registry
+  description: Push the container image to Azure Container Registry
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-push.md)]
