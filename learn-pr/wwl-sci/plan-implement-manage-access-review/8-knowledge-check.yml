@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Engage the right stakeholders."
       isCorrect: true
-      explanation: "Correct. When technology projects fail, they typically do so due to mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear.."
+      explanation: "Correct. When technology projects fail, they typically do so due to mismatched expectations on impact, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear."
     - content: "Start planning with a small team to avoid extra work for others."
       isCorrect: false
       explanation: "Incorrect. You should identify the correct stakeholders and engage them as early in the project as possible."

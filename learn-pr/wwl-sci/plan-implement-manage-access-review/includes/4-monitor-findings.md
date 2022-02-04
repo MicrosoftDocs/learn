@@ -1,4 +1,4 @@
-Azure AD simplifies how enterprises manage access to groups and applications with Azure AD access reviews. Other Microsoft Online Services such as Microsoft 365 can also be mangaed with Azure AD access reviews.
+Azure AD simplifies how enterprises manage access to groups and applications with Azure AD access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Azure AD access reviews.
 
 ## Perform access review using My Apps
 
@@ -7,13 +7,15 @@ You can start the Access Review process from the notification email or by going 
 1.  **Email**:
     
     > [!IMPORTANT]
-    > There could be delays in receiving email. In some cases it could take up to 24 hours. Add azure-noreply@microsoft.com to your safe recipients list to make sure that you are receiving all emails. a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.<br>:::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
-
-```
-Select the **Start review** link to open the access review.
-
-```
-
+    > There could be delays in receiving email. In some cases it could take up to 24 hours. Add azure-noreply@microsoft.com to your safe recipients list to make sure that you are receiving all emails. a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.
+    
+    :::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
+    
+    
+    ```
+    Select the **Start review** link to open the access review.
+    
+    ```
 2.  **If you don't have the email**, you can find your pending access reviews by following these steps:
     
     1.  Sign in to the My Apps portal at [https://myapps.microsoft.com](https://myapps.microsoft.com/).
