@@ -30,12 +30,12 @@ roles:
 products:
 - consumer
 units:
-- learn.startups.validate-idea.1-introduction
-- learn.startups.validate-idea.2-articulate-idea
-- learn.startups.validate-idea.3-test-assumptions
-- learn.startups.validate-idea.4-understand-customers
-- learn.startups.validate-idea.5-experiment-power
-- learn.startups.validate-idea.6-knowledge-check
-- learn.startups.validate-idea.7-summary
+- learn.startups.validate-idea.introduction
+- learn.startups.validate-idea.articulate-idea
+- learn.startups.validate-idea.test-assumptions
+- learn.startups.validate-idea.understand-customers
+- learn.startups.validate-idea.experiment-power
+- learn.startups.validate-idea.knowledge-check
+- learn.startups.validate-idea.summary
 badge:
   uid: learn.startups.validate-idea.badge
