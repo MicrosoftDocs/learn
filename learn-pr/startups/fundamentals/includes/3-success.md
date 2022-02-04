@@ -1,6 +1,6 @@
-Successful startups share a number of important attributes. In this unit we are going to cover some of the most common shared attributes of successful startups and give you an opportunity to score your start up against them.
+Successful startups share a number of important attributes. In this unit, we're going to cover some of the most common shared attributes of successful startups and give you an opportunity to score your start up against them.
 
-By understanding what makes startups succeed you will be able to bake some of these attributes into your startup from the very beginning.
+By understanding what makes startups succeed, you'll be able to bake some of these attributes into your startup from the very beginning.
 
 ## Non-obvious idea
 
@@ -12,9 +12,9 @@ Let's consider a Venn diagram.
 
 :::image type="content" source="../media/learning-path-basic-venn-diagram.png" alt-text="Diagram that shows two slightly overlapping circles, one for good ideas, and the other for crazy-sounding ideas.":::
 
-The blue set on the left represents all ideas that sound crazy. When you first describe these ideas to people the most common reaction is "That wouldn't work".
+The blue set on the left represents all ideas that sound crazy. When you first describe these ideas to people, the most common reaction is "That wouldn't work".
 
-The green set on the right represents all ideas that are in fact a good idea (i.e., they could be the basis for a product that customers want and would pay for).
+The green set on the right represents all ideas that are in fact a good idea (that is, they could be the basis for a product that customers want and would pay for).
 
 Not many people start off with ideas that sound crazy and are *in fact* crazy (the blue set on the left, excluding the intersect). That's good news, because the world doesn't need any more perpetual-motion-machine inventors.
 
@@ -22,15 +22,15 @@ However, a lot of people tend to come up with ideas that are perfectly good but 
 
 Keep in mind that it's fine to have some competitors because this validates that the opportunity exists and that there are customers who are looking for this solution. However, having a lot of direct competitors is a tough starting point for any startup, particularly if those competitors are further along in their product development and have significant capital to maintain their market lead.
 
-Some of the best startup ideas exist in the intersect between these two sets. They are both a good idea (the green set) and non-obvious (the blue set). These startup ideas are counterintuitive to most people and are only visible to those with deep insights into the problem space, often acquired over long periods of "marinating", as discussed in the previous unit.
+Some of the best startup ideas exist in the intersect between these two sets. They're both a good idea (the green set) and non-obvious (the blue set). These startup ideas are counterintuitive to most people and are only visible to those with deep insights into the problem space, often acquired over long periods of "marinating", as discussed in the previous unit.
 
 If most people think your startup idea won't work, but you have some unique insight that convinces you that they're wrong and you're right, then you could be onto something.
 
 ### Case study: Airbnb
 
-When Airbnb started, a lot of smart people looked at the idea and said: "There is no way people will give their house keys to a stranger and let them stay in their house just to make a few extra bucks. It won't work, at least not at scale."
+When Airbnb started, a lot of smart people looked at the idea and said: "There's no way people will give their house keys to a stranger and let them stay in their house just to make a few extra bucks. It won't work, at least not at scale."
 
-Of course, today we know that Airbnb is a wildly successful tech company. The unique insights of the founders gave them the ability to see past this objection and pursue a business model that most people thought would not be viable.
+Of course, today we know that Airbnb is a wildly successful tech company. The unique insights of the founders gave them the ability to see past this objection and pursue a business model that most people thought wouldn't be viable.
 
 ### Task 1
 
@@ -44,7 +44,7 @@ Does your startup stand out as doing something new and innovative, or does it ap
 
 It's fine to be a sole founder at the outset, but before long most founders realize that having a team is critical to the success of their company.
 
-The amount of [work needed to build and launch a startup is massive](https://www.alexanderjarvis.com/sole-founders-are-bad-you-cant-build-a-billion-dollar-despicable-me-startup/), and it has been shown that [sole founders struggle to cope with the workload](https://www.entrepreneur.com/article/245132).
+The amount of [work needed to build and launch a startup is massive](https://www.alexanderjarvis.com/sole-founders-are-bad-you-cant-build-a-billion-dollar-despicable-me-startup/?azure-portal=true), and it has been shown that [sole founders struggle to cope with the workload](https://www.entrepreneur.com/article/245132?azure-portal=true).
 
 More than this, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup and can build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem-solving that will ultimately contribute to faster progress.
 
@@ -77,9 +77,9 @@ If you're looking at a number of customer pain points that you could address, tr
 
 Successful startups tend to be highly scalable, meaning they can grow rapidly and are able to become increasingly efficient in terms of resource requirements as they deliver their product to an expanding customer base.
 
-If your business model relies on having to perform repetitive, non-scalable tasks (even doing in-person sales calls), you may face major barriers to scalability and growth as these constraints may place an upper limit on the number of customers you can serve.
+If your business model relies on having to perform repetitive, non-scalable tasks (even doing in-person sales calls), you may face major barriers to scalability and growth because these constraints may place an upper limit on the number of customers you can serve.
 
-The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic design business. As the company gets more customers it does more graphic design work and generates more revenue. But at the same time, it needs to employ more graphic designers, so its costs increase proportionally. At some point it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing - but this is not what scalability looks like.
+The following simple graph illustrates a non-scalable company that's delivering services to customers. Let's say it's a graphic design business. As the company gets more customers, it does more graphic design work and generates more revenue. But at the same time, it needs to employ more graphic designers, so its costs increase proportionally. At some point, it stops growing and its revenues and costs plateau. As long as revenues exceed costs the business is making a profit, which is of course a good thing - but this isn't what scalability looks like.
 
 :::image type="content" source="../media/learning-path-not-scalable.png" alt-text="Line chart that shows revenues exceeding costs when both reach a plateau.":::
 
@@ -87,7 +87,7 @@ Now let's look at a scalable business model.
 
 :::image type="content" source="../media/learning-path-scalable.png" alt-text="Line chart that shows revenues exceeding costs and sharply increasing.":::
 
-In a scalable company, at some point revenues become decoupled from costs. For a lot of companies this is because they're leveraging the inherent scalability of the internet.
+In a scalable company, at some point revenues become decoupled from costs. For a lot of companies, this is because they're taking advantage of the inherent scalability of the internet.
 
 If your product is software, or something that can be achieved through software, once your product is built, the incremental cost of digitally delivering your product to each additional customer is very close to zero.
 
@@ -99,11 +99,11 @@ The success of a startup is a function of volume and value – "volume" being th
 
 Startup founders should aim to serve as large a market as possible and ensure that their product creates meaningful value for customers.
 
-As noted by Marc Andreessen, founder of Netscape and cofounder of the venture capital firm Andreessen Horowitz, "software is eating the world". Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old ‘legacy' companies to new ‘digitally-enabled' ones. There are countless opportunities to build companies capable of disrupting multi-billion-dollar markets, so why create a company that is serving a narrow niche or focused just on a small market?
+As noted by Marc Andreessen, founder of Netscape and cofounder of the venture capital firm Andreessen Horowitz, "software is eating the world". Every industry is being disrupted by software companies, resulting in massive shifts of economic value from old *legacy* companies to new *digitally enabled* ones. There are countless opportunities to build companies capable of disrupting multi-billion-dollar markets, so why create a company that is serving a narrow niche or focused just on a small market?
 
 **Ask yourself:** Am I focused on a large and growing market? Are there enough people who will rely on my product every day to make this an opportunity worth pursuing? Is this a market that's dominated by large, inefficient incumbents who could be disrupted by my solution?
 
-Remember that you could be devoting the next ten years of your life to this company, so the prize had better be worth the effort!
+Remember that you could be devoting the next 10 years of your life to this company, so the prize had better be worth the effort!
 
 ## Timing
 
@@ -139,7 +139,7 @@ Hotmail is a great example. The company started in 1996 and at that time was jus
 
 Hotmail decided to make their product shareable by putting a footer at the bottom of every email that read "Sent from Hotmail. Get your free email here". The result of this small feature was a lot of people clicked on the link, and a lot of people got a Hotmail address.
 
-Over the course of a year and a half after launching, Hotmail grew from zero users to nine million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, see [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/).) Today, nine million users doesn't seem like much, since there are billions of people on the internet. But [in 1997, this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm)!
+Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, see [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet. But [in 1997, this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
 
 ### Task 5
 
@@ -150,7 +150,7 @@ Over the course of a year and a half after launching, Hotmail grew from zero use
 
 We're going to discuss one more shared attribute of successful startups: a business model that enables recurring revenues.
 
-Unlike one-off sales, recurring revenues occur on a regular, ongoing basis. For example, software-as-a-service businesses that bill customers through a subscription agreement generate recurring revenues. With this type of business model, as long as the customer continues using your product and paying for it, you will continue making money.
+Unlike one-off sales, recurring revenues occur on a regular, ongoing basis. For example, software-as-a-service businesses that bill customers through a subscription agreement generate recurring revenues. With this type of business model, as long as the customer continues using your product and paying for it, you'll continue making money.
 
 Recurring revenues are highly attractive because:
 
@@ -159,22 +159,22 @@ Recurring revenues are highly attractive because:
 - Revenues are predictable as long as you have a high level of customer retention.
 - Predictable revenues enable more confidence in investing in product development, often leading to better products over time.
 - Companies that generate recurring revenues can be scaled much more rapidly.
-- Investors are usually more interested in investing businesses that generate recurring revenues than those that make one-off sales, since each new customer is building cumulatively on an existing revenue base.
+- Investors are usually more interested in investing businesses that generate recurring revenues than those that make one-off sales, because each new customer is building cumulatively on an existing revenue base.
 - Customers often prefer to spread the cost of your product over a monthly billing cycle rather than having to pay for it up-front.
 - You can make money while you sleep!
 
 ### Task 6
 
-Open your smartphone or your laptop. Make a note of all the products that you've subscribed to and that you are continuing to pay for on an ongoing basis.
+Open your smartphone or your laptop. Make a note of all the products that you've subscribed to and that you're continuing to pay for on an ongoing basis.
 
-Ask yourself: Why do I continue to pay for this product? Look at the communications you've received from the company to see what they have done to ensure they retain you as a paying customer.
+Ask yourself: Why do I continue to pay for this product? Look at the communications you've received from the company to see what they've done to ensure they retain you as a paying customer.
 
 Are there any lessons that you can apply in your own startup?
 
 ### Worksheet
-In this unit we've discussed nine shared attributes of successful companies. In the worksheet below you can score your company out of 9 based on the presence or absence of those attributes.
+In this unit, we've discussed nine shared attributes of successful companies. In the worksheet below you can score your company out of 9 based on the presence or absence of those attributes.
 
-Don't be concerned if you don't get all nine. By completing the remaining modules in the Microsoft for Startups Founders Hub  you will have an opportunity to address any areas where your startup is currently lacking.
+Don't be concerned if you don't get all nine. By completing the remaining modules in the Microsoft for Startups Founders Hub, you'll have an opportunity to address any areas where your startup is currently lacking.
 
 - Based on a non-obvious idea
 - Founded by the right team
@@ -182,7 +182,7 @@ Don't be concerned if you don't get all nine. By completing the remaining module
 - Has a scalable business model
 - Represents a large market opportunity
 - Benefits from advantageous timing
-- Leverages market tailwinds
+- Takes advantage of market tailwinds
 - Has an inherently shareable product
 - Has a business model based on recurring revenues
 

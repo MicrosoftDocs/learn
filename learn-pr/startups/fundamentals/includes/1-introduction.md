@@ -12,10 +12,10 @@ Finally, we're going to talk about what founders should focus on in the first ye
 
 ## Learning objectives
 
-In this module you will learn:
+In this module you'll learn:
 
 - How to think about the startup journey from a personal perspective and prepare for the road ahead.
-- How to decide if you are ready to pursue your idea full-time.
+- How to decide if you're ready to pursue your idea full-time.
 - What factors help startups succeed, and how you can take actions early on that will improve your chance of success.
 - What mistakes cause startups to fail, and how to avoid them.
 - What to focus on in the first year of launching your startup.
