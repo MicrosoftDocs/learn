@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.javascript-deploy-expressjs-app-service.knowledge-check
+uid: learn.javascript-on-azure.deploy-expressjs-app-service.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
@@ -28,58 +28,14 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+    - content: "When should you create an Azure resource group?"
+      choices:
+        - content: "After you create your resources."
+          isCorrect: false
+          explanation: "The resource group is required to create a resource and can be created at the same time."
+        - content: "Before or during resource creation."
+          isCorrect: true
+          explanation: "The resource group is required to create a resource and can be created at the same time."
+        - content: "When you need to create a new resource for the same project."
+          isCorrect: false
+          explanation: "Keep all resources for a project in the same resource group."
