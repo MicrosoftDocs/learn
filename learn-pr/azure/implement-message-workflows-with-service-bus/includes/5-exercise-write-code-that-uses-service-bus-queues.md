@@ -51,7 +51,7 @@ You can get these values from the connection string.
     code .
     ```
 
-## Write code that sends a message to the queue
+## Write code to send a message to a queue
 
 1. In the Cloud Shell editor, open *privatemessagesender/Program.cs* and locate the following line of code:
 
@@ -217,7 +217,7 @@ You can get these values from the connection string.
 
 1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
   
-## Write code that receives a message from the queue
+## Write code to receive messages that are in the queue
 
 1. Run the following command to open the editor again:
 
@@ -417,7 +417,7 @@ You can get these values from the connection string.
 
 1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
-## Retrieve a message from the queue
+## Receive a message from the queue
 
 1. To run the component that receives a message about a sale, run this command in Cloud Shell:
 
@@ -434,7 +434,7 @@ You can get these values from the connection string.
 
 1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
 
-### Check the message count after you retrieve messages for a subscription
+### Check the message count
 
 Run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
 

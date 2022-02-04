@@ -1,6 +1,6 @@
 You've decided to use an Azure Service Bus topic to distribute sales performance messages in your salesforce application. Sales personnel will use the app on their mobile devices to send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services that are located in the company's operational regions, including the Americas and Europe.
 
-You've already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and code that retrieves messages from a subscription.
+You've already implemented the necessary infrastructure in your Azure subscriptions for the topic. Now, you want to write the code that sends messages to the topic and write code that retrieves messages from a subscription. Then, you'll send a message to a topic, and then retrieve the message for a specific subscription.
 
 Make sure you're working in the correct directory by running the following commands in Azure Cloud Shell:
 
@@ -9,11 +9,11 @@ cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-
 code .
 ```
 
-## Write code that sends a message to the topic
+## Write code to send a message to a topic
 
-To complete the component that sends messages about sales performance, follow these steps:
+To complete the component that sends messages about sales performance, complete these steps:
 
-1. In the Azure Cloud Shell editor, open *performancemessagesender/Program.cs* and locate the following line of code:
+1. In the Azure Cloud Shell editor, open *performancemessagesender/Program.cs* and find the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
@@ -21,15 +21,13 @@ To complete the component that sends messages about sales performance, follow th
 
     Between the quotation marks, paste the connection string you saved in the previous exercise.
 
-1. Locate the `SendPerformanceMessageAsync()` method. (*Hint*: It's located at or near line 26.)
-
-1. Within that method, locate the following line of code:
+1. Find the `SendPerformanceMessageAsync()` method. (*Hint*: It's at or near line 26.) Within that method, find the following line of code:
 
     ```csharp
     // Create a Service Bus client here
     ```
 
-1. Replace that line of code with the following code:
+   Replace that line of code with this code:
 
     ```csharp
     // By leveraging "await using", the DisposeAsync method will be called automatically when the client variable goes out of scope.
@@ -37,25 +35,25 @@ To complete the component that sends messages about sales performance, follow th
     await using var client = new ServiceBusClient(ServiceBusConnectionString);
     ```
 
-1. Within that method, locate the following line of code:
+1. Within the `SendPerformanceMessageAsync()` method, find the following line of code:
 
     ```csharp
     // Create a sender here
     ```
 
-1. Replace that line of code with the following code:
+   Replace that line of code with this code:
 
     ```csharp
     await using ServiceBusSender sender = client.CreateSender(TopicName);
     ```
 
-1. Within the `try...catch` block, locate the following line of code:
+1. In the `try...catch` block, find the following line of code:
 
     ```csharp
     // Create and send a message here
     ```
 
-1. Replace that line of code with the following code:
+   Replace that line of code with this code:
 
     ```csharp
     string messageBody = "Total sales for Brazil in August: $13m.";
@@ -74,7 +72,7 @@ To complete the component that sends messages about sales performance, follow th
     await sender.SendMessageAsync(message);
     ```
 
-1. Your final code should resemble the following example:
+1. Check that your final code resembles the following example:
 
     ```csharp
     using System;
@@ -152,13 +150,13 @@ az servicebus topic subscription show \
 
 If you replace `Americas` with `EuropeAndAsia` and run the command again, you'll see that both subscriptions have the same number of messages.
 
-## Write code that retrieves a topic message for a subscription
+## Write code to retrieve a topic message for a subscription
 
-To create the component that retrieves messages about sales performance, follow these steps:
+To create the component that retrieves messages about sales performance, complete these steps:
 
 1. Run `code .` to launch the editor.
 
-1. In the editor, open *performancemessagereceiver/Program.cs* and locate the following line of code:
+1. In the editor, open *performancemessagereceiver/Program.cs* and find the following line of code:
 
     ```csharp
     const string ServiceBusConnectionString = "";
@@ -172,7 +170,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Create a Service Bus client that will authenticate using a connection string
     ```
 
-   Replace that line with the following code:
+   Replace that line with this code:
 
     ```csharp
     var client = new ServiceBusClient(ServiceBusConnectionString);
@@ -184,7 +182,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Create the options to use for configuring the processor
     ```
 
-   Replace that line with the following code:
+   Replace that line with this code:
 
     ```csharp
     var processorOptions = new ServiceBusProcessorOptions
@@ -200,7 +198,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Create a processor that we can use to process the messages
     ```
 
-   Replace that line with the following code:
+   Replace that line with this code:
 
     ```csharp
     ServiceBusProcessor processor = client.CreateProcessor(TopicName, SubscriptionName, processorOptions);
@@ -212,7 +210,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Configure the message and error handler to use
     ```
 
-   Replace that line with the following code:
+   Replace that line with this code:
 
     ```csharp
     processor.ProcessMessageAsync += MessageHandler;
@@ -225,7 +223,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Start processing
     ```
 
-   Replace that line with the following code:
+   Replace that line with this code:
 
     ```csharp
     await processor.StartProcessingAsync();
@@ -237,7 +235,7 @@ To create the component that retrieves messages about sales performance, follow 
     // Since we didn't use the "await using" syntax here, we need to explicitly dispose the processor and client    
     ```
 
-   Replace the line with the following code:
+   Replace the line with this code:
 
     ```csharp
     await processor.DisposeAsync();
@@ -328,7 +326,7 @@ To create the component that retrieves messages about sales performance, follow 
 
 1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-## Run code to retrieve a topic message for a subscription
+## Retrieve a topic message for a subscription
 
 1. To run the component that retrieves a message about sales performance for a subscription, run the following command:
 
@@ -344,7 +342,7 @@ To create the component that retrieves messages about sales performance, follow 
 
 1. When the program has returned notifications that it's receiving messages, press <kbd>Enter</kbd> to stop the app.
 
-### Check the message count after you retrieve messages for a subscription
+### Check the message count after you retrieve a message for a subscription
 
 Run the following command to confirm that there are no remaining messages in the `Americas` subscription. Be sure to replace \<namespace-name\> with your Service Bus namespace.
 

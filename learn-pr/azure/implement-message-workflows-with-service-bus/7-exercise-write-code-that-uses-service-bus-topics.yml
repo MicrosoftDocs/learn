@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.7-exercise-write-code-that-uses-service-bus-topics
-title: Exercise - Create a Service Bus topic
+title: Exercise - Send and receive messages in a Service Bus topic
 metadata:
-  title: Exercise - Create a Service Bus topic
-  description: Create a Service Bus topic to send and receive messages.
+  title: Exercise - Send and receive messages in a Service Bus topic
+  description: Write code that sends and receives messages in a Service Bus queue.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
