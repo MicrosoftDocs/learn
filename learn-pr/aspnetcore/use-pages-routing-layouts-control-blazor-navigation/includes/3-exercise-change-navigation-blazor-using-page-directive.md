@@ -23,7 +23,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     ```
 	
 1. Select **File**, and then select **Open folder**.
-1. In the Open dialog, go to the **BlazingPizza** folder, and choose **Select Folder**.
+1. In the **Open** dialog, go to the **BlazingPizza** folder, and choose **Select Folder**.
 
     Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
 
