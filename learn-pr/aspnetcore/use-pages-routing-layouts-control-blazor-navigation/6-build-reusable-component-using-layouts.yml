@@ -18,7 +18,7 @@ quiz:
   questions:
     - content: "Which is the correct syntax to specify a layout called `MyLayout` on a Blazor page?"
       choices:
-      - content: "`@page layout='MyLayout'"
+      - content: "@page layout='MyLayout'"
         isCorrect: false
         explanation: "Layout isn't an argument to the `@page` directive."
       - content: "@layout MyLayout"
