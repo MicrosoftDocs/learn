@@ -2,7 +2,7 @@ Distributed applications use Service Bus queues as temporary storage locations f
 
 Consider the Contoso Bicycles application. The customer can place an order through a website or mobile app. Because websites and mobile apps run on customer devices, there really is no limit to how many orders can be made at the same time. By having the mobile app and website deposit the orders in a Service Bus queue, the back-end component (a web app) is able to process orders from that queue at its own pace.
 
-The Contoso Bicycles application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so we decide to use a queue. Our receiving component's first job will be processing the payment.
+The Contoso Bicycles application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so you decide to use a queue. The receiving component's first job will be processing the payment.
 
 In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, Contoso will write code that picks up messages from the queue.
 

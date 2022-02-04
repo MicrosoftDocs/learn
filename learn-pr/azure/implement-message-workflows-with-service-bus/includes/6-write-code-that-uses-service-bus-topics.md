@@ -1,6 +1,6 @@
 In a distributed application, some messages need to be sent to a single recipient component. Other messages need to reach more than one destination.
 
-Consider what happens when a user cancels a bicycle order. Canceling an order is a little different from placing an initial order. When an order is placed, our workflow wanted to wait until the order cleared payment processing before sending the order to the local storefront. For the cancel operation, you'll notify the storefront *and* the payment processor at the same time. This approach minimizes the chances of wasting delivery driver time.
+Consider what happens when a user cancels a bicycle order. Canceling an order is a little different from placing an initial order. When an order is placed, the workflow waited until the order cleared payment processing before sending the order to the local storefront. For the cancel operation, you'll notify the storefront *and* the payment processor at the same time. This approach minimizes the chances of wasting delivery driver time.
 
 To allow multiple components to receive the same message, we'll use an Azure Service Bus _topic_. Next, you'll look at the process and considerations in writing the code.
 
@@ -12,7 +12,7 @@ You'll also use the same `ServiceBusClient` class and `ServiceBusSender` classes
 
 ## Set filters on subscriptions
 
-If you want specific messages that are sent to the topic to be delivered to a specific subscription, you can place one or more filters on the subscription in the topic. In the bicycle application, for example, our storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the `OrderCancellation` topic and filter for its own `StoreId`. We save internet bandwidth because we aren't sending unnecessary messages to multiple store locations. Meanwhile, the payment processing component subscribes to all `OrderCancellation` messages.
+If you want specific messages that are sent to the topic to be delivered to a specific subscription, you can place one or more filters on the subscription in the topic. In the bicycle application, for example, your storefronts are running Universal Windows Platform (UWP) applications. Each store can subscribe to the `OrderCancellation` topic and filter for its own `StoreId`. You save internet bandwidth because you aren't sending unnecessary messages to multiple store locations. Meanwhile, the payment processing component subscribes to all `OrderCancellation` messages.
 
 Filters can be one of three types:
 
@@ -20,7 +20,7 @@ Filters can be one of three types:
 - **SQL filters**. A SQL filter specifies a condition by using the same syntax as a `WHERE` clause in a SQL query. Only messages that return `True` when they're evaluated against this filter are delivered to the subscribers.
 - **Correlation filters**. A correlation filter holds a set of conditions that are matched against the properties of each message. If the property in the filter and the property on the message have the same value, it's considered a match.
 
-For our `StoreId` filter, we *could* use a SQL filter. SQL filters are the most flexible, but they're also the most computationally expensive, and the filter might slow down our Service Bus throughput. In this case, we choose a correlation filter.
+For your `StoreId` filter, you *could* use a SQL filter. SQL filters are the most flexible, but they're also the most computationally expensive, and the filter might slow down your Service Bus throughput. In this case, you choose a correlation filter.
 
 ## To send a message to a topic
 

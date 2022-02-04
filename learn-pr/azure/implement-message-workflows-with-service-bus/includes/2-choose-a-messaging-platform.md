@@ -2,13 +2,13 @@ Here, you'll learn about the communications platforms available in Azure so that
 
 There are many communications platforms that can help improve the reliability of a distributed application, including several within Azure. Each of these tools serves a different purpose; let's review the messaging in Azure to help choose the right one.
 
-The architecture of Contoso Bicycles ordering and tracking application requires several components: a website, data storage, back-end service, etc. We can bind the components of our application together in many different ways, and a single application can take advantage of multiple techniques. 
+The architecture of Contoso Bicycles ordering and tracking application requires several components: a website, data storage, back-end service, and so on. You can bind the components of your application together in many different ways, and a single application can take advantage of multiple techniques.
 
-We need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there's communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
+You need to decide which techniques to use in the Contoso Bicycles application. The first step is to evaluate each place where there's communication between multiple parts. Some components _must_ run in a timely manner for your application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like mobile app notifications, are a bit more optional.
 
 ## Decide between messages and events
 
-Both messages and events are *datagrams*: packages of data sent from one component to another. They're different in ways that at first seem subtle, but the differences can make significant differences in how you architect your application.
+Both messages and events are _datagrams_: packages of data sent from one component to another. They're different in ways that at first seem subtle, but the differences can make significant differences in how you architect your application.
 
 ### Messages
 
@@ -16,7 +16,7 @@ In the terminology of distributed applications, the defining characteristic of a
 
 A message generally contains the actual data, not just a reference (like an ID or URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
 
-In Contoso Bicycles' new architecture, when an order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
+In the new architecture for Contoso Bicycles, when an order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
 
 ### Events
 
@@ -28,11 +28,11 @@ Events have the following characteristics:
 * Events are often intended to "fan out," or have a large number of subscribers for each publisher.
 * The publisher of the event has no expectation about the action a receiving component takes.
 
-Our bicycle parts chain would likely use events for notifications to users about status changes. Status change events could be sent to Azure Event Grid, then on to Azure Functions, and to Azure Notification Hubs for a completely _serverless_ solution.
+A bicycle parts chain would likely use events for notifications to users about status changes. Status change events could be sent to Azure Event Grid, then on to Azure Functions, and to Azure Notification Hubs for a completely _serverless_ solution.
 
 This difference between events and messages is fundamental because communications platforms are generally designed to handle one or the other. Service Bus is designed to handle messages. If you want to send events, you would likely choose Event Grid.
 
-Azure also has Azure Event Hubs, but it's most often used for a specific type of high-flow stream of communications used for analytics. For example, if we had networked sensors in our manufacturing warehouses, we could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
+Azure also has Azure Event Hubs, but it's most often used for a specific type of high-flow stream of communications used for analytics. For example, if you had networked sensors in your manufacturing warehouses, you could use Event Hubs coupled with Azure Stream Analytics to watch for patterns in temperature changes that might indicate an unwanted fire or component wear.
 
 ## Service Bus topics and queues
 
@@ -67,7 +67,7 @@ The key advantages of Service Bus queues include:
 
 * Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Service Bus messages.
 * Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it's handled twice.
-* Guarantees *first-in, first-out (FIFO)* order. Messages are handled in the same order they are added. (Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages.)
+* Guarantees _first-in, first-out (FIFO)_ order. Messages are handled in the same order they are added. (Although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages.)
 * Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
 * Supports role-based security.
 * Does not require destination components to continuously poll the queue.
@@ -77,9 +77,9 @@ Advantages of storage queues:
 * Supports unlimited queue size (versus 80-GB limit for Service Bus queues).
 * Maintains a log of all messages.
 
-## How to choose a communications technology
+## How to choose a communication technology
 
-We've seen the different concepts and the implementations Azure provides. Let's discuss what our decision process should look like for each of our communications.
+You''ve seen the different concepts and the implementations Azure provides. Next, consider what your decision process should look like for each of your communications.
 
 ### Considerations
 
@@ -93,7 +93,7 @@ As you choose a method for sending and receiving messages, consider the followin
 
 If you decide that you need a queue, narrow down your choice further.
 
-Choose a *Service Bus* queue if:
+Choose a _Service Bus_ queue if:
 
 * You need an at-most-once delivery guarantee.
 * You need a FIFO guarantee (if no other settings preempt the default FIFO order)
@@ -104,7 +104,7 @@ Choose a *Service Bus* queue if:
 * Your queue size won't grow larger than 80 GB.
 * You'd like to be able to publish and consume batches of messages.
 
-Choose a *storage* queue if:
+Choose a _storage_ queue if:
 
 * You need a simple queue with no particular additional requirements.
 * You need an audit trail of all messages that pass through the queue.

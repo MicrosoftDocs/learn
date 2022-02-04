@@ -217,7 +217,7 @@ You can get these values from the connection string.
 
 1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
   
-## Write code to receive messages that are in the queue
+## Write code to receive messages from the queue
 
 1. Run the following command to open the editor again:
 
