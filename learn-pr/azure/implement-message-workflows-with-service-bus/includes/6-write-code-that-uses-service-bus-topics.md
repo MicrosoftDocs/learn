@@ -22,7 +22,9 @@ Filters can be one of three types:
 
 For our `StoreId` filter, we *could* use a SQL filter. SQL filters are the most flexible, but they're also the most computationally expensive and could slow down our Service Bus throughput. In this case, we choose a correlation filter.
 
-## Write code that sends messages to a topic
+## Send a message to a topic
+
+To send a message to a topic, you'll complete the following tasks.
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus topic.
 
@@ -54,7 +56,7 @@ var message = new ServiceBusMessage(message);
 await sender.SendMessageAsync(message);
 ```
 
-## Write code that receives messages from a subscription of the topic
+## Receive messages from a subscription of the topic
 
 To receive messages, you must create a `ServiceBusProcessor` object, and pass it the topic name and the subscription name.
 

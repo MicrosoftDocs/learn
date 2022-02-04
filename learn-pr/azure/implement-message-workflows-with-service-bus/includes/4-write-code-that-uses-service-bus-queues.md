@@ -10,7 +10,7 @@ Here, you'll learn how to write that code.
 
 ## Azure.Messaging.ServiceBus NuGet package
 
-To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET language to interact with a Service Bus queue or topic. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
+To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes that you can use in any .NET language to interact with a Service Bus queue or topic. You can include this library in your application by adding the **Azure.Messaging.ServiceBus** NuGet package.
 
 ## Connection strings and keys
 
@@ -25,9 +25,11 @@ Both these pieces of information are provided to the [ServiceBusClient](/dotnet/
 
 The queue in Azure might be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention might cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 
-When sending a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
+When you send a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
 
-## Write code that sends a message to the queue
+## Send a message to a queue
+
+To send a message to a queue, you'll complete the following tasks.
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue.
 
@@ -60,7 +62,7 @@ await sender.SendMessageAsync(message);
 
 ## Receive messages from the queue
 
-To receive messages, you must first register a message handler. The message handler is the method in your code that will be invoked when a message is available on the queue.
+To receive messages, you must first register a message handler. The message handler is the method in your code that is invoked when a message is available on the queue.
 
 ```csharp
 // Create a ServiceBusProcessor for the queue.
