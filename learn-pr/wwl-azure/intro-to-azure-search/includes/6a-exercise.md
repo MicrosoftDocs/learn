@@ -114,9 +114,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
         | Detect Sentiment | | sentiment |
         | Generate tags from images | | imageTags |
         | Generate captions from images | | imageCaption |
-        
 
-Double-check your selections (it can be difficult to change them later). 
 6. Under **Save Enrichments to a Knowledge Store**, select the boxes: 
     - Image projections 
     - Documents
@@ -124,14 +122,14 @@ Double-check your selections (it can be difficult to change them later).
     - Image details
     - Image references
     
-    > [!NOTE]
-    > A warning asking for a **Storage Account Connection String** will appear. 
+        > [!NOTE]
+        > A warning asking for a **Storage Account Connection String** will appear. 
 
 7. Click on **Choose and existing connection**. Choose the storage account you created earlier, then create a new container called **knowledge-store** with the privacy level set to private. Then click *Select* at the bottom of the screen.
 8. Select **Azure blob projects: Document**. A setting for *Container name* with the *knowledge-store* container auto-populated will appear. Keep the container name as-is. 
 9. Click **Next, Customize Target Index**. Change the **Index name** to **coffee-index**.
 10. Ensure that the **Key** is set to **metadata_storage_path** and leave the **Suggester name** blank and the **Search mode** autopopulated.
-11. Review the index fields with their default settings. Additionally check off **filter** for all the fields that are already selected. Proceed to the next step (*Create an indexer*).
+11. Review the index fields with their default settings. Additionally, select **filterable** for all the fields that are already selected. Proceed to the next step (*Create an indexer*).
 12. Change the **Indexer name** to **coffee-indexer**.
 13. Leave the **Schedule** set to **Once**.
 14. Expand the **Advanced** options, and ensure that the **Base-64 encode keys** option is selected (generally encoding keys make the index more efficient).
