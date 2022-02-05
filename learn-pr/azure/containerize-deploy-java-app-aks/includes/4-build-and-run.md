@@ -169,7 +169,7 @@ NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED -
 02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
 ```
 
-Open up a browser and visit the Flight Booking System for Airline Reservations landing page at [http://localhost:8080/FlightBookingSystemSample](http://localhost:8080/FlightBookingSystemSample)
+Open up a browser and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/FlightBookingSystemSample`
 
 You should see the following
 
