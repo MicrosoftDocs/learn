@@ -77,7 +77,7 @@ quiz:
 
   - content: "Which of the following is a good reason to build a diverse team within a startup?"
     choices:
-    - content: "Tap into a highly skilled but under-utilized talent pool."
+    - content: "Tap into a highly skilled but underutilized talent pool."
       isCorrect: false
       explanation: "Incorrect."
     - content: "Make better decisions by engaging a more diverse set of perspectives and experiences."

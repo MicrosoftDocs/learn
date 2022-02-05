@@ -22,13 +22,13 @@ The reasons for greater performance by ethnically diverse teams include greater 
 
 ## Neurodiversity
 
-It's estimated that around [17 percent of the population are neurodiverse](https://www.workdesign.com/2019/12/designing-for-neurodiversity-and-inclusion/?azure-portal=true). This definition includes people with autism (2 percent of the population), ADHD (4 percent) and Dyslexia (10 percent).
+It's estimated that around [17 percent of the population is neurodiverse](https://www.workdesign.com/2019/12/designing-for-neurodiversity-and-inclusion/?azure-portal=true). This definition includes people with autism (2 percent of the population), ADHD (4 percent) and Dyslexia (10 percent).
 
 According to Perrine Farque, author of the book [Inclusion](https://www.amazon.com/Inclusion-Ultimate-Secret-Organizations-Success/dp/1946425834?azure-portal=true), neurodiverse people can excel in thinking creatively about problems because they've had to adapt to difficult situations and solve problems in their own lives.
 
 Also, [many on the autism spectrum can sustain focus over longer periods of time](https://www.linkedin.com/pulse/why-neurodivergent-talents-competitive-advantage-tech-perrine/?azure-portal=true) compared to neurotypical employees, and can pick up patterns and connections especially well. These abilities make them valuable in roles that involve pattern recognition or data analysis, such as software QA, image analysis, or cybersecurity.
 
-For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft have created programs to attract neurodiverse employees](https://www.linkedin.com/pulse/why-neurodivergent-talents-competitive-advantage-tech-perrine/?azure-portal=true). In numerous examples, [participants out-perform other employees by as much as 30 percent](https://www.linkedin.com/pulse/why-neurodivergent-talents-competitive-advantage-tech-perrine/?azure-portal=true).
+For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft have created programs to attract neurodiverse employees](https://www.linkedin.com/pulse/why-neurodivergent-talents-competitive-advantage-tech-perrine/?azure-portal=true). In numerous examples, [participants outperform other employees by as much as 30 percent](https://www.linkedin.com/pulse/why-neurodivergent-talents-competitive-advantage-tech-perrine/?azure-portal=true).
 
 ## People of differing ability
 
@@ -38,7 +38,7 @@ The inclusion of people with disabilities in product development has been shown 
 
 Research has also shown that teams composed of people with disabilities make better business decisions and develop products that are more in tune with customers' changing needs. This leads to [revenue increases of up to 19 percent](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
-Yet disabled workers represent a large, under-utilized talent pool. [In late 2020, the unemployment rate for disabled workers was twice the national average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
+Yet disabled workers represent a large, underutilized talent pool. [In late 2020, the unemployment rate for disabled workers was twice the national average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
 ## Other types of diversity
 
@@ -69,7 +69,7 @@ Below are some of the ways in which startups can benefit from [building teams th
 - Easier to recruit candidates for whom a diverse workplace is an important consideration. (A survey by Glassdoor found [67 percent of candidates consider workforce diversity when evaluating a job offer](https://medium.com/swlh/driving-financial-performance-with-diversity-43eba2de0315?azure-portal=true).)
 - Minimize staff turnover caused by lack of diversity in the workplace or a lack of consideration for the needs of diverse employees.
 
-It's clear that creating a diverse team can be a massive competitive advantage for startups. The diverse population is a highly skilled but under-utilized talent pool. Startups that can attract and retain the right candidates can use this enhanced talent to their advantage and outperform companies with less diverse teams.  
+It's clear that creating a diverse team can be a massive competitive advantage for startups. The diverse population is a highly skilled but underutilized talent pool. Startups that can attract and retain the right candidates can use this enhanced talent to their advantage and outperform companies with less diverse teams.  
 
 Calendly is a great example of a company benefiting from a focus on diversity. It has implemented a number of diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It has become recognized as a highly desirable employer, with [96 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
 
