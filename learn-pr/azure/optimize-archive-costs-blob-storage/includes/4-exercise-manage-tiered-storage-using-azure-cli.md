@@ -27,7 +27,7 @@ In this step, you'll create a new storage account and container, and then upload
 
    ```azurecli
    az storage account create \
-       --location $LOCATION \ 
+       --location $LOCATION \
        --name $STORAGE_ACCOUNT_NAME \
        --resource-group $RESOURCE_GROUP \
        --kind StorageV2 \
@@ -37,7 +37,7 @@ In this step, you'll create a new storage account and container, and then upload
 1. To create a container, you will need the storage account key.  This command retrieves the storage account key and stores it in an environment variable.
 
    ```bash
-   export AZURE_STORAGE_KEY=`az storage account keys list -g $RESOURCE_GROUP -n $STORAGE_ACCOUNT_NAME --query [0].value --output tsv
+   export AZURE_STORAGE_KEY="$(az storage account keys list -g $RESOURCE_GROUP -n $STORAGE_ACCOUNT_NAME --query [0].value --output tsv)"
    ```
 
 1. Run the following command in the Cloud Shell to create a new container in your storage account:
@@ -98,7 +98,7 @@ In this step, you'll first change Access tier for your blob from Hot to Cool. Yo
 
    ```azurecli
    az storage blob set-tier \
-       --name bass-model3.png \ 
+       --name bass-model3.png \
        --container-name $CONTAINER_NAME \
        --account-name $STORAGE_ACCOUNT_NAME \
        --tier Archive

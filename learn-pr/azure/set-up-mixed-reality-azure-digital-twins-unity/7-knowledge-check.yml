@@ -12,17 +12,17 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "What is an Azure Digital Twin?"
+  - content: "What is an Azure Digital Twins?"
     choices:
     - content: "A physical representation of a digital object"
       isCorrect: false
-      explanation: "Digital Twins are digital representations of physical assets or processes.  Azure Digital Twin is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
+      explanation: "Digital Twins are digital representations of physical assets or processes.  Azure Digital Twins is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
     - content: "An Internet of Things (IoT) platform for developing digital representations of real-world objects"
       isCorrect: true
-      explanation: "Azure Digital Twin is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
+      explanation: "Azure Digital Twins is an Internet of Things (IoT) platform that enables you to create a digital representation of real-world things, places, business processes and people."
     - content: "A replicated Azure service that is twinned for redundancy and failover" 
       isCorrect: false
-      explanation: "Azure Digital Twin is a platform for building digital representations of physical objects or processes.  They aren't designed or capable of replacing the asset that they represent if the asset fails."
+      explanation: "Azure Digital Twins is a platform for building digital representations of physical objects or processes.  They aren't designed or capable of replacing the asset that they represent if the asset fails."
   - content: "Which of the following options best describes the Unity platform?"
     choices:
     - content: "A game engine used exclusively for video game development"

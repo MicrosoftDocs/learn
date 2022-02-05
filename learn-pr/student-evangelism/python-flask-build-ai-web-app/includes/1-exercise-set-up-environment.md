@@ -24,10 +24,6 @@ Visual Studio Code is an open-source code editor that allows you to create almos
 To complete this unit, you must have Python 3.6 or later installed on your computer. There's a chance you might already have Python installed, especially if you've already used it. You can confirm whether it's installed by executing one of the following commands:
 
 ```bash
-# Windows:
-python --version
-
-#macOS or Linux
 python3 --version
 ```
 
@@ -62,7 +58,7 @@ To use a virtual environment, we'll create and activate it. We create it by usin
 ```bash
 # Windows
 # Create the environment
-python -m venv venv
+python3 -m venv venv
 # Activate the environment
 .\\venv\\scripts\\activate
 
@@ -81,9 +77,9 @@ During later exercises, we'll use a couple of other libraries, including **reque
 
 1. In the command or terminal window, run the following command to open the directory in Visual Studio Code:
 
-    ```bash
-       code .
-    ```
+   ```bash
+   code .
+   ```
 
 2. In Visual Studio Code, in the **Explorer** window, select **New File**
 

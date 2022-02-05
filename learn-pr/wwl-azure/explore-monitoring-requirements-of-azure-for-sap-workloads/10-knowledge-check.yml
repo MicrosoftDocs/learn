@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/21/2022
+  ms.date: 01/28/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is one of the four broad requirements that must be met to ensure full support for monitoring of SAP workloads on Azure?"
+  - content: "Which of the following items is one of the four broad requirements that must be met to ensure full support for monitoring of SAP workloads on Azure?"
     choices:
     - content: "The Azure Extension for SAP is deployed and correctly configured."
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "Only when running Microsoft SQL Servers"
       isCorrect: false
       explanation: "Incorrect. Azure Monitor for SAP Solutions supports Azure virtual machines and Azure Large Instances, running SAP HANA databases and Microsoft SQL Servers."
-  - content: "Which of Azure's manageability features reports platform-related issues that might affect customers' resources?"
+  - content: "Which Azure manageability feature reports platform-related issues that might affect customers' resources?"
     choices:
     - content: "Azure Advisor"
       isCorrect: false
