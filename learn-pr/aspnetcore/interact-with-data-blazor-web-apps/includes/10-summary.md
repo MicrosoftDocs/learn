@@ -1,8 +1,8 @@
-You're working for a pizza delivery company that wants a brand-new website, and you have a team with years of experience in C#. By choosing Blazor, you can write client-side and server-side code in C# and minimize JavaScript code.
+You're working for a pizza delivery company that wants a new website, and you have a team with years of experience in C#. By choosing Blazor, you can write client-side and server-side code in C# and minimize JavaScript code.
 
-Before Blazor, you would have had to invest in training your developers in JavaScript and other web technologies. This training is less necessary with Blazor, and it can help to accelerate your web application development projects.
+Before Blazor, you would have had to invest in training your developers in JavaScript and other web technologies. This training isn't as necessary with Blazor. And Blazor can help to accelerate your web application development projects.
 
-After completing this unit, you've learned how to:
+After completing this module, you've learned how to:
 
 - Assemble a user interface for a web app by creating Blazor components.
 - Access data to display in your web app.
