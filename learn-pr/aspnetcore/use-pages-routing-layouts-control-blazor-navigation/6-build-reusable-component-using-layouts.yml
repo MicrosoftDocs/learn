@@ -3,7 +3,7 @@ uid: learn.use-pages-routing-layouts-improve-blazor-navigation.build-reusable-co
 title: Build reusable Blazor components using layouts
 metadata:
   unitType: learning-content
-  title: Build reusable Blazor components using Layouts
+  title: Build reusable Blazor components using layouts
   description: "Learn how to create a consistent and reusable arrangement of elements on pages in your Blazor web apps by using layouts."
   ms.date: 8/24/2021
   author: csharpfritz
@@ -18,12 +18,12 @@ quiz:
   questions:
     - content: "Which is the correct syntax to specify a layout called `MyLayout` on a Blazor page?"
       choices:
-      - content: "`@page layout='MyLayout'"
+      - content: "@page layout='MyLayout'"
         isCorrect: false
-        explanation: "Layout is not an argument to the `@page` directive"
+        explanation: "Layout isn't an argument to the `@page` directive."
       - content: "@layout MyLayout"
         isCorrect: true
-        explanation: "The layout directive assigns a layout to the current page with this single line at the top of the file"
+        explanation: "The layout directive assigns a layout to the current page with this single line at the top of the file."
       - content: "@page MyLayout"
         isCorrect: false
-        explanation: "The page directive takes an argument that defines the route of the page listens on, not the name of the layout"
+        explanation: "The page directive takes an argument that defines the route the page listens on, not the name of the layout."
