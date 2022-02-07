@@ -4,7 +4,7 @@ Azure managed identity is a feature of Azure Active Directory (Azure AD) that yo
 
 Tailwind is planning on moving applications from on-premises servers to Azure-hosted virtual machines (VMs). Now that you host the applications on VMs in Azure, you can use managed identities.
 
-In this unit, you'll explore the managed identity feature. You'll see how it works and what resources you can access in Azure.
+In this unit, you'll explore the managed identity feature. You'll learn how it works and what resources you can access in Azure.
 
 ### What are managed identities in Azure?
 
@@ -30,8 +30,8 @@ Resources that support system assigned managed identities allow you to:
 
 - Enable or disable managed identities at the resource level.
 - Use RBAC roles to grant permissions.
-- View create, read, update, delete (CRUD) operations in Azure Activity logs.
-- View sign-in activity in Azure AD sign-in logs.
+- Review create, read, update, delete (CRUD) operations in Azure Activity logs.
+- Review sign-in activity in Azure AD sign-in logs.
 
 There are two types of managed identities:
 
@@ -110,14 +110,8 @@ Microsoft identity platform supports two types of permissions: delegated permiss
 ## Effective permissions
 Effective permissions are the permissions that your app will have when making requests to the target resource. It's important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to the target resource.
 
-:::image type="content" source="../media/user-permissions.png" alt-text="Diagram showing the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to the target resource.":::
-
- 
 For delegated permissions, the effective permissions of your app are the intersection of the delegated permissions the app has been granted and the privileges of the currently signed-in user. In other words, the app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user may be determined by policy or by membership in one or more administrator roles.
 
-:::image type="content" source="../media/effective-permissions.png" alt-text="Diagram showing the effective permissions as the intersection of app permissions and user capabilities.":::
-
- 
 For example, assume your app has been granted the User.ReadWrite.All delegated permission. This permission enables your app to be used to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app can update the profile of every user in the organization. However, if the signed-in user isn't in an administrator role, your app can update only the profile of the signed-in user. It can't update the profiles of other users in the organization because the user that it has permission to act on behalf of does not have those privileges.
 
 For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.

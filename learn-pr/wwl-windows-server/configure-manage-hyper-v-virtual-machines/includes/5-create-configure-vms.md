@@ -84,4 +84,4 @@ The main steps in the process are:
 1. Create a generation 1 VM with dynamic memory enabled by using Hyper-V Manager.
 1. Manage the VMs by using Windows Admin Center.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MC7i]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7i]
