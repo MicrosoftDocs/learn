@@ -11,7 +11,7 @@ An audit log has a default list view that shows the:
  -  Target
  -  Initiator/actor (who) of an activity
 
-:::image type="content" source="../media/list-view-5be4e68a.png" alt-text="Audit logs":::
+:::image type="content" source="../media/list-view-5be4e68a.png" alt-text="Audit logs" lightbox="../media/list-view-5be4e68a.png":::
 
 
 You can customize the list view by clicking **Columns** in the toolbar.

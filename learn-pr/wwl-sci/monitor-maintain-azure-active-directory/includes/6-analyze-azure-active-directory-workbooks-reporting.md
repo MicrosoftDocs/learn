@@ -31,4 +31,4 @@ You can also set the focus on a specific application. Select **view sign-in acti
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
-:::image type="content" source="../media/usage-insights-report-5c57d35b.png" alt-text="Screenshot shows Usage and Insights for Application activity where you can select a range and view sign-in activity for different apps.":::
+:::image type="content" source="../media/usage-insights-report-5c57d35b.png" alt-text="Screenshot shows Usage and Insights for Application activity where you can select a range and view sign-in activity for different apps." lightbox="../media/usage-insights-report-5c57d35b.png":::

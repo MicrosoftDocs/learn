@@ -82,7 +82,7 @@ You can use Microsoft Sentinel's built-in connector to collect data from [Azure 
 1.  In Microsoft Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
 2.  In the **Data connectors** list, select **Azure Active Directory** and then select **Open connector page**.
     
-    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector-d6d578f0.png" alt-text="Screen image that displays the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted.":::
+    :::image type="content" source="../media/sentinel-add-azure-active-directory-connector-d6d578f0.png" alt-text="Screen image that displays the data connectors blade with the Azure Active Directory connector and Open Connector page highlighted." lightbox="../media/sentinel-add-azure-active-directory-connector-d6d578f0.png":::
     
 3.  Under **Configuration**, select the **Azure Active Directory Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
     
