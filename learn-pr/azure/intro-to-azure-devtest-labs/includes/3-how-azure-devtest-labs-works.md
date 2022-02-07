@@ -6,7 +6,7 @@ In this unit, you'll learn what these objects are and how they govern the behavi
 
 ## Objects in DevTest Labs
 
-When you create test environments or development machines, you can use objects to ensure that users can do necessary tasks. These objects also enable you to prevent unauthorized actions. The objects include:
+When you create test environments or development machines, you can use objects to ensure that users can do all necessary tasks. These objects also enable you to prevent unauthorized actions. The objects include:
 
 - Environments
 - Artifacts
@@ -20,15 +20,17 @@ The following sections describe these objects in more detail.
 
 ## Environments
 
-Azure DevTest Labs has a public repository of Azure Resource Manager templates (ARM templates) you can use to create environments. This setup is similar to the artifacts repository available in the Azure portal for each lab. The environment repository gets you started quickly in a preconfigured environment that has few input parameters. For example, you can use PaaS resources such as Azure Service Fabric or the Web Apps feature of Azure App Service.
+An environment refers to a collection of Azure resources in a lab. Azure DevTest Labs has a public repository of Azure Resource Manager templates (ARM templates) you can use to create environments. The environment repository gets you started quickly in a preconfigured environment that has few input parameters. For example, you can use PaaS resources such as Azure Service Fabric or the Web Apps feature of Azure App Service. This setup is similar to the artifacts repository available in the Azure portal for each lab.
 
 When you create environments or templates, you can either store them in the environment repository to share with others, or you can set up your own Git repository.
 
 ## Artifacts
 
-Use artifacts to deploy and configure an application after you set up a VM. An artifact consists of a JSON definition file and other script files, which are stored in a folder within a specified Git repository. These files contain expressions that you use to specify what's required on the VM. For example, you might define a command to run and parameters that are available when that command is run.
+Use artifacts to deploy and configure an application after you set up a VM. DevTest Labs artifacts can either come from the public DevTest Labs artifact repository, or you can create your own artifacts and store them in a private GitHub repository.
 
-The following code shows an example JSON artifact:
+An artifact consists of a JSON definition file and other script files, which are stored in a folder within a specified Git repository. These files contain expressions that you use to specify what's required on the VM. For example, you might define a command to run and parameters that are available when that command is run.
+
+Suppose that, for the e-commerce developer who's onboarding labs, the Windows package manager *Chocolatey* is required on all development machines. You can set up an artifact to install the required package through a PowerShell script:
 
 ```JSON
 {
@@ -45,19 +47,11 @@ The following code shows an example JSON artifact:
     }
   },
   "runCommand": {
-    "commandToExecute": ""
-  }
-}
-```
-
-Suppose that, for the e-commerce developer who's onboarding labs, the Windows package manager *Chocolatey* is required on all development machines. You can set up an artifact to install the required package through a PowerShell script:
-
-```JSON
-runCommand": {
     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installChocolatey.ps1'
-, ' -RawPackagesList ', parameters('packages')
-, ' -Username ', parameters('installUsername')
-, ' -Password ', parameters('installPassword'))]"
+  , ' -RawPackagesList ', parameters('packages')
+  , ' -Username ', parameters('installUsername')
+  , ' -Password ', parameters('installPassword'))]"
+  }
 }
 ```
 
@@ -76,32 +70,11 @@ The following table details each section of the JSON artifact schema and how it'
 
 ## Formulas and custom images
 
-You can use both custom images and formulas as a basis for creating new VMs. A custom image is based on a virtual hard drive (a VHD file). A formula is an image that's based on a virtual hard drive with preconfigured settings, such as VM size and artifacts. The system sets these preconfigured settings with default values, which you can override when you create the VM.
-
-To manage formulas:
-
-1. From the left pane of the **DevTest Labs** page, under **Settings**, select **Configuration and policies**.
-
-1. From the left pane of the **Configuration and policies** page, under **Virtual machine bases**, select **Formulas (reusable bases)**.
-
-   :::image type="content" source="../media/3-lab-settings-formulas.png" alt-text="Screenshot of the left pane with the Formulas command highlighted.":::
-
-1. Select **Add**, and then select a base for your formula.
-
-   :::image type="content" source="../media/3-base-list.png" alt-text="Screenshot of the Azure portal that shows options for DevTest virtual machine bases.":::
-
-1. In the **Basic settings** tab of the **Create formula (reusable base)** window, configure the following settings:
-
-   - A **Formula name** for your formula.
-   - A **User name** and **Password** for the default user account.
-   - A **Virtual machine size**.
-   - The **Artifacts** to install.
-
-1. Select **Create formula**.
+You can use both custom images and formulas as a basis for creating new VMs. A custom image is based on a virtual hard drive (VHD) file. A formula is a base image and a list of preconfigured settings, such as VM size and artifacts. When you create a VM from a formula, the system uses these preconfigured settings as default values to accelerate the provisioning process. Optionally, you can override the default values.
 
 ## Policies
 
-In Azure DevTest Labs, you use policies to manage costs and minimize waste in each lab environment. You can set things such as the number of VMs or the sizes that each person uses. You can also set autoshutdown rules. Doing so is important, because costs are incurred only when a VM is running.
+In Azure DevTest Labs, you use policies to manage costs and minimize waste in each lab environment. You can specify settings such as the number or size of VMs that each person is allowed to use. You can also set autoshutdown rules. Doing so is important because costs are incurred only when a VM is running.
 
 Policies cover the following areas:
 

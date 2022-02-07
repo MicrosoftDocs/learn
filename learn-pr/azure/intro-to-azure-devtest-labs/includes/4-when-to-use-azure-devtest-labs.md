@@ -16,7 +16,7 @@ In today's environments, developers might find that on-premises solutions take a
 
 By using Azure DevTest Labs, you can reduce these delays because many restrictions don't apply in the cloud. Users can create labs easily without needing to wait for hardware delivery or approvals.
 
-In contrast, because an on-premises environment doesn't have the same flexibility to grow on demand, it can slow the code development process. Common problems with on-premises solutions are:
+In contrast, because an on-premises environment doesn't have the same flexibility to grow on demand, it can slow the software development process. Common problems with on-premises solutions are:
 
 - Provisioning of infrastructure takes too long
 - System configuration takes more time
@@ -50,7 +50,7 @@ Developing software is a complex and often difficult process. Because there are 
 
 ### Test environments
 
-DevTest Labs is also a great fit for handling test servers. You can set up servers with auto-shutdown to help control spending. Test environments in the cloud have the following advantages:
+DevTest Labs is also a great fit for handling test servers. You can set up servers with autoshutdown to help control spending. Test environments in the cloud have the following advantages:
 
 - Because you don't pay for VMs when they're turned off, you can reduce costs by switching off unused machines.
 
