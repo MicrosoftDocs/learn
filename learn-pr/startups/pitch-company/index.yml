@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.startups.pitch-company
+metadata:
+  title: How to pitch your company
+  description: How to pitch your startup to investors.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+title: How to pitch your company
+summary: >
+  This module explains how to give a compelling pitch to investors such as accelerators, angel investors, and venture capital funds, and shows you how to avoid the most common mistakes in pitching.
+abstract: | 
+  In this module, you'll:
+
+  - Fill in.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+units:
+- learn.startups.pitch-company.introduction
+- learn.startups.pitch-company.how-investment-works
+- learn.startups.pitch-company.investor-types
+- learn.startups.pitch-company.funding-rounds
+- learn.startups.pitch-company.knowledge-check
+- learn.startups.pitch-company.summary
+badge:
+  uid: learn.startups.pitch-company.badge
