@@ -4,8 +4,8 @@ metadata:
   title: Manage and control traffic flow in your Azure deployment with routes
   description: Learn how to control Azure virtual network traffic by implementing custom routes.
   ms.date: 08/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage and control traffic flow in your Azure deployment with routes
