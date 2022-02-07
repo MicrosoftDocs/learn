@@ -36,13 +36,17 @@ A catalog is a container of resources and access packages. You create a catalog 
     ```
 2.  Open **Azure Active Directory** and the select **Identity Governance**.
 3.  In the left menu, under **Entitlement management**, select **Catalogs**.
-4.  On the top menu, select **+New Catalog**.<br>:::image type="content" source="../media/identity-governance-catalog-626f4895.png" alt-text="Screen image displaying the Identity governance catalog page with the New catalog menu highlighted":::
+4.  On the top menu, select **+New Catalog**.
+    
+    :::image type="content" source="../media/identity-governance-catalog-626f4895.png" alt-text="Screen image displaying the Identity governance catalog page with the New catalog menu highlighted":::
     
 
 5.  In the New catalog pane, in the **Name** box, enter **Marketing**.
 6.  In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 7.  **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
-8.  Under **Enabled, select No**. You may choose to enable the catalog for immediate use. You can disable if you intend to stage it or keep it unavailable. For this exercise, the catalog does not need to be enabled.<br>:::image type="content" source="../media/new-catalog-marketing-9ac18896.png" alt-text="Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted":::
+8.  Under **Enabled, select No**. You may choose to enable the catalog for immediate use. You can disable if you intend to stage it or keep it unavailable. For this exercise, the catalog does not need to be enabled.
+    
+    :::image type="content" source="../media/new-catalog-marketing-9ac18896.png" alt-text="Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted":::
     
 
 9.  Select Create.
@@ -56,7 +60,9 @@ To include resources in an access package, the resources must exist in a catalog
 3.  In the left navigation, under **Manage**, select **Resources**.
 4.  On the menu, select + **Add resources**.
 5.  In the Add resources to catalog screen, review the available options.
-6.  You might not have selected any resources in Groups and Teams, Applications, or SharePoint sites. To add a resource to the catalog, select a resource category, then select a resource from that category. For this exercise, it is okay to choose any resource you may have available.<br>:::image type="content" source="../media/catalog-add-resources-e20559c7.png" alt-text="Add resources to a catalog":::
+6.  You might not have selected any resources in Groups and Teams, Applications, or SharePoint sites. To add a resource to the catalog, select a resource category, then select a resource from that category. For this exercise, it is okay to choose any resource you may have available.
+    
+    :::image type="content" source="../media/catalog-add-resources-e20559c7.png" alt-text="Add resources to a catalog":::
     
 
 7.  When finished, select **Add**. These resources can now be included in access packages within the catalog.
@@ -65,7 +71,9 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1.  In the Marketing catalog blade, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Azure Active Directory** &gt; **Identity Governance &gt; Catalogs** and then select **Marketing**.<br>:::image type="content" source="../media/catalog-roles-admins-7c94f789.png" alt-text="Screen image displaying the Roles and administrators page for the Marketing catalog":::
+1.  In the Marketing catalog blade, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Azure Active Directory** &gt; **Identity Governance &gt; Catalogs** and then select **Marketing**.
+    
+    :::image type="content" source="../media/catalog-roles-admins-7c94f789.png" alt-text="Screen image displaying the Roles and administrators page for the Marketing catalog":::
     
 
 2.  On the top menu, review the available roles and then select **+ Add owner**.
@@ -78,7 +86,9 @@ You can edit the name and description for a catalog. Users see this information 
 
 1.  In the Marketing blade, in the left navigation, select **Overview**.
 2.  On the top menu, select **Edit**.
-3.  Review the setting and, under **Properties** &gt; **Enabled**, select **Yes**.<br>:::image type="content" source="../media/edit-marketing-catalog-ea59c467.png" alt-text="Screen image displaying the properties being enabled.":::
+3.  Review the setting and, under **Properties** in the **Enabled** field, select **Yes**.
+    
+    :::image type="content" source="../media/edit-marketing-catalog-ea59c467.png" alt-text="Screen image displaying the properties being enabled.":::
     
 
 4.  Select **Save**.
