@@ -71,50 +71,35 @@ Access to groups and applications for employees and guests changes over time. To
     
     :::image type="content" source="../media/upon-completion-settings-new-11d78b14.png" alt-text="Create an access review - upon completion settings":::
     
-
-```
-If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who have been reviewed by the reviewers manually. If the final reviewer's decision is Deny, then the user's access will be removed.
-
-
-  - **No change** - Leave user's access unchanged
-
-
-  - **Remove access** - Remove user's access
-
-
-  - **Approve access** - Approve user's access
-
-
-  - **Take recommendations** - Take the system's recommendation on denying or approving the user's continued access
-
-```
-
-```
-Use the Action to apply on denied **guest** users to specify what happens to guest users if they are denied.
-
-
-  - **Remove user’s membership from the resource** will remove denied user’s access to the group or application being reviewed, they will still be able to sign-in to the tenant.
-
-
-  - **Block user from signing in for 30 days, then remove user from the tenant** will block the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user has been disabled. If there is no action taken on the disabled users, they will be deleted from the tenant.
-
-  - Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
-
-```
-
-10. In **Enable review decision helpers** choose whether you would like your reviewer to receive recommendations during the review process.
+    
+    If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that are not reviewed by the reviewer within the review period. This setting does not impact users who have been reviewed by the reviewers manually. If the final reviewer's decision is Deny, then the user's access will be removed.
+    
+     -  No change - Leave user's access unchanged
+     -  Remove access - Remove user's access
+     -  Approve access - Approve user's access
+     -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access
+    
+    :::image type="content" source="../media/upon-completion-settings-new-11d78b14.png" alt-text="Upon completion settings options":::
+    
+    
+    Use the Action to apply on denied **guest** users to specify what happens to guest users if they are denied.
+    
+     -  **Remove user’s membership from the resource** will remove denied user’s access to the group or application being reviewed, they will still be able to sign-in to the tenant.
+     -  **Block user from signing in for 30 days, then remove user from the tenant** will block the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user has been disabled. If there is no action taken on the disabled users, they will be deleted from the tenant.
+     -  Action to apply on denied guest users is not configurable on reviews scoped to more than guest users. It is also not configurable for reviews of all M365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
+13. In **Enable review decision helpers** choose whether you would like your reviewer to receive recommendations during the review process.
     
     :::image type="content" source="../media/helpers-17c58ca6.png" alt-text="Enable decision helpers options":::
     
-11. In the **Advanced settings** section, you can choose the following
+14. In the **Advanced settings** section, you can choose the following
     
      -  Set **Justification required** to **Enable** to require the reviewer to supply a reason for approval.
      -  Set **email notifications** to **Enable** to have Azure AD send email notifications to reviewers when an access review starts, and to administrators when a review completes.
      -  Set **Reminders** to **Enable** to have Azure AD send reminders of access reviews in progress to reviewers who have not completed their review. These reminders will be half-way through the duration of the review.
      -  The content of the email sent to reviewers is autogenerated based on the review details, such as review name, resource name, due date, etc. If you need a way to communicate additional information, such as additional instructions or contact information, you can specify these details in the **Additional content for reviewer email** section. The information that you enter is included in the invitation and reminder emails sent to assigned reviewers. The section highlighted in the image below shows where this information is displayed.
-12. Click on **Next: Review + Create** to move to the next page.
-13. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.
-14. Review the information and select **Create**.
+15. Click on **Next: Review + Create** to move to the next page.
+16. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.
+17. Review the information and select **Create**.
     
     :::image type="content" source="../media/create-review-86a53c72.png" alt-text="create review screen":::
     
