@@ -73,4 +73,3 @@ Dumb money comes from people who don't know much about your business or about ho
 Dumb, involved money is problematic. It comes from people who don't have much value to contribute, but who insist on having an active role in your company. Sometimes dumb, involved money comes from inexperienced angel investors who have created wealth in other sectors such as retail or property investing, and who want to try their hand at angel investing.
 
 It's wise to avoid these investors, because experience has shown that the challenge of managing their involvement frequently outweighs the benefit of the capital they provide.
-
