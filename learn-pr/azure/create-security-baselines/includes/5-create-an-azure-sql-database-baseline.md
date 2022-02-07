@@ -4,9 +4,6 @@ Azure SQL is a cloud-based relational database family of products that support m
 
 See the following topics for security recommendations to set Azure SQL policies. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each.
 
-> [!NOTE]
-> Alert emails for your SQL servers and databases are sent to the address you added in [Create a Microsoft Defender for Cloud baseline](3-create-an-azure-security-center-baseline#enable-send-me-emails-about-alerts---level-1).
-
 ### Enable auditing - Level 1
 
 Auditing for Azure SQL Database and Azure Synapse Analytics tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace, or Event Hubs. Auditing also:
