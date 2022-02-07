@@ -1,29 +1,30 @@
-
 ## What is Privileged identity management (PIM)?
-PIM is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
+
+PIM is a service in Azure Active Directory (Azure AD) for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
 
 ## What does PIM do?
-PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
-- Provide just-in-time privileged access to Azure AD and Azure resources
-- Assign time-bound access to resources using start and end dates
-- Require approval to activate privileged roles
-- Enforce multifactor authentication to activate any role
-- Use justification to understand why users activate
-- Get notifications when privileged roles are activated
-- Conduct access reviews to ensure users still need roles
-- Download audit history for internal or external audit
 
+PIM provides time-based and approval-based role activation to access resources. This helps to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
 
-Before you deploy PIM in your organization, follow the instructions and understand the concepts in this section to help you create a plan tailored to your organization’s privileged identity requirements.
+ -  Provide just-in-time privileged access to Azure AD and Azure resources
+ -  Assign time-bound access to resources using start and end dates
+ -  Require approval to activate privileged roles
+ -  Enforce Azure AD Multi-Factor Authentication to activate any role
+ -  Use justification to understand why users activate
+ -  Get notifications when privileged roles are activated
+ -  Conduct access reviews to ensure users still need roles
+ -  Download audit history for internal or external audit
+
+Before you deploy PIM in your organization, follow the instructions and understand the concepts in this section. This will help you create a plan tailored to your organization’s privileged identity requirements.
 
 > [!NOTE]
-> PIM requires a Premium P2 license. 
+> PIM requires a Premium P2 license.
 
 ## Identify your stakeholders
 
-The following section helps you identify all the stakeholders who are involved in the project and need to sign off, review, or stay informed. It includes separate tables for deploying PIM for Azure AD roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
+The following section helps you identify all the stakeholders who are involved in the project. You will look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Azure AD roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
 
-SO = Sign off on this project
+SO = Approval on this project
 
 R = Review this project and provide input
 
@@ -31,22 +32,141 @@ I = Informed of this project
 
 ### Stakeholders: Privileged Identity Management for Azure AD roles
 
-|     Name                              |     Role                                                                                                                                                                                                                       |     Action    |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-|     Name and email                    | **Identity architect or Azure Global Administrator**<br>A representative from the identity management team in charge of defining how to align this change with the core identity management infrastructure in your organization. |     SO/R/I    |
-|     Name and email                    | **Service owner / Line manager**<br>A representative from the IT owners of a service or a group of services. They're key in making decisions and helping to roll out PIM for their team.                                         |     SO/R/I    |
-|     Name and email                    | **Security owner** <br>A representative from the security team who can sign off that the plan meets the security requirements of your organization.                                                                            |     SO/R      |
-|     Name and email                    | **IT support manager / Helpdesk**<br> A representative from the IT support organization who can provide feedback on the supportability of this change from a helpdesk perspective.                                             |     R/I       |
-|     Name and email for pilot users    | **Privileged role users**<br>The group of users for which privileged identity management is implemented. They'll need to know how to activate their roles once PIM is implemented.                                             |     I         |
+:::row:::
+  :::column:::
+    **Name**
+  :::column-end:::
+  :::column:::
+    **Role**
+  :::column-end:::
+  :::column:::
+    **Action**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **Identity architect or Azure Global Administrator**
+A representative from the identity management team in charge of defining how to align this change with the core identity management infrastructure in your organization.
+  :::column-end:::
+  :::column:::
+    SO/R/I
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **Service owner / Line manager**
+A representative from the IT owners of a service or a group of services. They're key in making decisions and helping to roll out PIM for their team.
+  :::column-end:::
+  :::column:::
+    SO/R/I
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **Security owner**
+A representative from the security team who can approve that the plan meets the security requirements of your organization.
+  :::column-end:::
+  :::column:::
+    SO/R
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **IT support manager / Helpdesk**
+A representative from the IT support organization who can provide feedback on the supportability of this change from a helpdesk perspective.
+  :::column-end:::
+  :::column:::
+    R/I
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email for pilot users
+  :::column-end:::
+  :::column:::
+    **Privileged role users**
+The group of users for which privileged identity management is implemented. They'll need to know how to activate their roles once PIM is implemented.
+  :::column-end:::
+  :::column:::
+    I
+  :::column-end:::
+:::row-end:::
+
 
 ### Stakeholders: Privileged Identity Management for Azure roles
 
-|     Name                           |     Role                                                                                                                                                                       |     Action |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-|     Name and email                 | **Subscription/Resource owner**<br>A representative from the IT owners of each subscription or resource that you want to deploy PIM for.                                          |     SO/R/I |
-|     Name and email                 | **Security owner**<br>A representative from the security team that can sign off that the plan meets the security requirements of your organization.                               |     SO/R   |
-|     Name and email                 | **IT support manager / Helpdesk**<br>A representative from the IT support organization who can provide feedback on the supportability of this change from a helpdesk perspective. |     R/I    |
-|     Name and email for pilot users | **Azure role users** <br>The group of users for which privileged identity management is implemented. They'll need to know how to activate their roles once PIM is implemented.    |     I      |
+:::row:::
+  :::column:::
+    **Name**
+  :::column-end:::
+  :::column:::
+    **Role**
+  :::column-end:::
+  :::column:::
+    **Action**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **Subscription/Resource owner**
+A representative from the IT owners of each subscription or resource that you want to deploy PIM for.
+  :::column-end:::
+  :::column:::
+    SO/R/I
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **Security owner**
+A representative from the security team that can approve that the plan meets the security requirements of your organization.
+  :::column-end:::
+  :::column:::
+    SO/R
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email
+  :::column-end:::
+  :::column:::
+    **IT support manager / Helpdesk**
+A representative from the IT support organization who can provide feedback on the supportability of this change from a helpdesk perspective.
+  :::column-end:::
+  :::column:::
+    R/I
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Name and email for pilot users
+  :::column-end:::
+  :::column:::
+    **Azure role users**
+The group of users for which privileged identity management is implemented. They'll need to know how to activate their roles once PIM is implemented.
+  :::column-end:::
+  :::column:::
+    I
+  :::column-end:::
+:::row-end:::
+
 
 ## Start using Privileged Identity Management
 
@@ -64,19 +184,18 @@ For Azure AD roles, it is common for organizations to assign the Global Administ
 
 Follow these steps to implement the principle of least privilege for your Azure AD roles.
 
-1. Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
-
-2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
-
-[![Discovery and insights (preview) page to reduce exposure via privileged roles](../media/new-preview-page.png)](../media/new-preview-page.png#lightbox)
-
-3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
-
-4. For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
+1.  Understand the granularity of the roles by reading and understanding the available Azure AD administrator roles. You and your team should also reference administrator roles by identity task in Azure AD, which explains the least privileged role for specific tasks.
+2.  List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
+    
+    :::image type="content" source="../media/new-preview-page-f1dbeb6e.png" alt-text="Discovery and insights (preview) page to reduce exposure via privileged roles":::
+    
+3.  For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Azure AD. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
+4.  For all other Azure AD roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
 
 To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Azure AD roles in Privileged Identity Management," you can set up an access review for every Azure AD role that has one or more members.
 
-[![Create an access review pane for Azure AD roles](../media/create-access-review.jpg)](../media/create-access-review.jpg#lightbox)
+:::image type="content" source="../media/create-access-review-8582c6f4.jpg" alt-text="Create an access review pane for Azure AD roles":::
+
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
 
@@ -94,7 +213,7 @@ Users with the Owner role for an Azure subscription can also use [access reviews
 
 After cleaning up privileged role assignments in your organization, you'll need to decide which roles to protect with PIM.
 
-If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using multifactor authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
+If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure AD Multi-Factor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Azure AD audit event logs.
 
 Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Azure AD and Azure roles.
 
@@ -102,25 +221,16 @@ Choosing which roles to protect with PIM can be difficult and will be different 
 
 It's important to prioritize protecting Azure AD roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Azure AD roles managed by PIM are:
 
-* Global Administrator
-
-* Security Administrator
-
-* User Administrator
-
-* Exchange Administrator
-
-* SharePoint Administrator
-
-* Intune Administrator
-
-* Security Reader
-
-* Service Administrator
-
-* Billing Administrator
-
-* Skype for Business Administrator
+ -  Global Administrator
+ -  Security Administrator
+ -  User Administrator
+ -  Exchange Administrator
+ -  SharePoint Administrator
+ -  Intune Administrator
+ -  Security Reader
+ -  Service Administrator
+ -  Billing Administrator
+ -  Skype for Business Administrator
 
 > [!TIP]
 > Microsoft recommends you manage all your Global Administrators and Security Administrators using PIM as a first step, because they are the users who can do the most harm when compromised.
@@ -138,9 +248,8 @@ Reader roles like the Directory Reader, Message Center Reader, and Security Read
 
 When deciding which role assignments should be managed using PIM for Azure resources, you must first identify the subscriptions/resources that are most vital for your organization. Examples of such subscriptions/resources are:
 
-- Resources that host the most sensitive data.
-
-- Resources that core customer-facing applications depend on.
+ -  Resources that host the most sensitive data.
+ -  Resources that core customer-facing applications depend on.
 
 If you're a Global Administrator having trouble deciding which subscriptions and resources are most important, you should contact subscription owners in your organization to gather a list of resources managed by each subscription. Then, work with the subscription owners to group the resources based on severity level in the case they're compromised (low, medium, high). Prioritize managing resources with PIM based on this severity level.
 
@@ -149,7 +258,7 @@ If you're a Global Administrator having trouble deciding which subscriptions and
 
 PIM for Azure resources supports time-bound service accounts. You should treat service accounts exactly the same as you would treat a regular user account.
 
-For subscriptions/resources that are not as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
+For subscriptions/resources that aren't as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
 
 > [!TIP]
 > Microsoft recommends that you manage Owner roles and User Access Administrator roles of all subscriptions/resources using PIM.
@@ -158,9 +267,8 @@ For subscriptions/resources that are not as critical, you won’t need to set up
 
 Whether to assign a role to a group instead of to individual users is a strategic decision. When planning, consider assigning a role to a group to manage role assignments when:
 
-- Many users are assigned to a role.
-
-- You want to delegate assigning the role.
+ -  Many users are assigned to a role.
+ -  You want to delegate assigning the role.
 
 ### Many users are assigned to a role
 
@@ -179,14 +287,13 @@ Once you have decided the list of roles to be managed by PIM, you must decide wh
 
 Microsoft recommends you have zero permanently active assignments for both Azure AD roles and Azure roles other than the recommended [two break-glass emergency access accounts](/azure/active-directory/roles/security-emergency-access), which should have the permanent Global Administrator role.
 
-Even though we recommend zero standing administrators, it is sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
+Even though we recommend zero standing-administrators, it is sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
 
-- Frequency of elevation – If the user only needs the privileged assignment once, they shouldn’t have the permanent assignment. On the other hand, if the user needs the role for their day-to-day job and using PIM would greatly reduce their productivity, they can be considered for the permanent role.
-
-- Cases specific to your organization – If the person being given the eligible role is from a distant team or a high-ranking executive to the point that communicating and enforcing the elevation process is difficult, they can be considered for the permanent role.
-
+ -  Frequency of elevation – If the user only needs the privileged assignment once, they shouldn’t have the permanent assignment. On the other hand, if the user needs the role for their day-to-day job and using PIM would greatly reduce their productivity, they can be considered for the permanent role.
+ -  Cases specific to your organization – If the person being given the eligible role is from a distant team or a high-ranking executive to the point that communicating and enforcing the elevation process is difficult, they can be considered for the permanent role.
+    
     > [!TIP]
-    > Microsoft recommends you to set up recurring access reviews for users with permanent role assignments (should you have any). 
+    > Microsoft recommends you to set up recurring access reviews for users with permanent role assignments (should you have any).
 
 ## Draft your Privileged Identity Management settings
 
@@ -194,40 +301,345 @@ Before you implement your PIM solution, it is good practice to draft your PIM se
 
 ### Privileged Identity Management settings for Azure AD roles
 
-|     Role                   |     Global Administrator           |     Exchange Administrator    |     Helpdesk Administrator    |
-|----------------------------|------------------------------------|-------------------------------|-------------------------------|
-|     Require MFA            |     Yes                            |     Yes                       |     No                        |
-|     Notification           |     Yes                            |     Yes                       |     No                        |
-|     Incident ticket        |     Yes                            |     No                        |     Yes                       |
-|     Require approval       |     Yes                            |     No                        |     No                        |
-|     Approver               |     Other Global Administrators    |     None                      |     None                      |
-|     Activation Duration    |     1 hour                         |     2 hour                    |     8 hour                    |
-|     Permanent admin        |     Emergency access accounts      |     None                      |     None                      |
+:::row:::
+  :::column:::
+    **Role**
+  :::column-end:::
+  :::column:::
+    **Global Administrator**
+  :::column-end:::
+  :::column:::
+    **Exchange Administrator**
+  :::column-end:::
+  :::column:::
+    **Helpdesk Administrator**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require MFA; two-step verification
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Notification
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Incident ticket
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require approval
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Approver
+  :::column-end:::
+  :::column:::
+    Other Global Administrators
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Activation Duration
+  :::column-end:::
+  :::column:::
+    1 hour
+  :::column-end:::
+  :::column:::
+    2 hour
+  :::column-end:::
+  :::column:::
+    8 hour
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Permanent admin
+  :::column-end:::
+  :::column:::
+    Emergency access accounts
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+:::row-end:::
+
 
 ### Privileged Identity Management settings for Azure roles
 
-|     Role                   |     Owner of critical subscriptions     |     User Access Administrator of less critical subscriptions    |     Virtual Machine Contributor    |
-|----------------------------|-----------------------------------------|-----------------------------------------------------------------|------------------------------------|
-|     Require MFA            |     Yes                                 |     Yes                                                         |     No                             |
-|     Notification           |     Yes                                 |     Yes                                                         |     Yes                            |
-|     Require approval       |     Yes                                 |     No                                                          |     No                             |
-|     Approver               |     Other owners of the subscription    |     None                                                        |     None                           |
-|     Activation Duration    |     1 hour                              |     1 hour                                                      |     3 hour                         |
-|     Active admin           |     None                                |     None                                                        |     None                           |
-|     Active expiration      |     n/a                                 |     n/a                                                         |     n/a                            |
+:::row:::
+  :::column:::
+    **Role**
+  :::column-end:::
+  :::column:::
+    **Owner of critical subscriptions**
+  :::column-end:::
+  :::column:::
+    **User Access Administrator of less critical subscriptions**
+  :::column-end:::
+  :::column:::
+    **Virtual Machine Contributor**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require MFA; two-step verification
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Notification
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require approval
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Approver
+  :::column-end:::
+  :::column:::
+    Other owners of the subscription
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Activation Duration
+  :::column-end:::
+  :::column:::
+    1 hour
+  :::column-end:::
+  :::column:::
+    1 hour
+  :::column-end:::
+  :::column:::
+    3 hour
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Active admin
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+  :::column:::
+    None
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Active expiration
+  :::column-end:::
+  :::column:::
+    n/a
+  :::column-end:::
+  :::column:::
+    n/a
+  :::column-end:::
+  :::column:::
+    n/a
+  :::column-end:::
+:::row-end:::
+
 
 The following table describes each of the settings.
 
-| Setting             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Role                | Name of the role you are defining the settings for.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Require MFA         | Whether the eligible user needs to perform MFA before activating the role.<br><br>**Microsoft recommends** you enforce MFA for all administrator roles, especially if the roles have guest users.                                                                                                                                                                                                                                                                                                                                                             |
-| Notification        | If set to true, Global Administrator, Privileged Role Administrator, and Security Administrator in the organization will receive an email notification when an eligible user activates the role.<br><br>**Note:** Some organizations don’t have an email address tied to their administrator accounts. To get these email notifications, set an alternative email address so administrators will receive these emails.                                                                                                                                        |
-| Incident ticket     | Whether the eligible user needs to record an incident ticket number when activating their role. This setting helps an organization identify each activation with an internal incident number to mitigate unwanted activations.<br><br>**Microsoft recommends** taking advantage of incident ticket numbers to tie PIM into your internal system. This method can be useful for approvers who need context for the activation.                                                                                                                                 |
-| Require approval    | Whether the eligible user needs to get approval to activate the role.<br><br>**Microsoft recommends** that you set up approval for roles with the most permission. Based on usage patterns of all PIM customers, Global Administrator, User Administrator, Exchange Administrator, Security Administrator, and Password Administrator are the most common roles with approval set up.                                                                                                                                                                         |
-| Approver            | If approval is required to activate the eligible role, list the people who should approve the request. By default, PIM sets the approver to be all users who are privileged role administrators whether they are permanent or eligible.<br><br>**Note:** If a user is both eligible for an Azure AD role and an approver of the role, they will not be able to approve themselves.<br><br>**Microsoft recommends** that you choose approvers to be users who are most knowledgeable about the role and its frequent users rather than a Global Administrator. |
-| Activation duration | The length of time a user will be activated in the role before it will expire.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Permanent admin     | List of users who will be a permanent administrator for the role (never have to activate).<br><br>**Microsoft recommends** you have zero standing administrator for all roles except for Global Administrators.                                                                                                                                                                                                                                                                                                                                               |
-| Active admin        | For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Azure AD roles because you can set an expiration time for when the user will lose this role.                                                                                                                                                                                                                                                                                  |
-| Active expiration   | Active role assignments for Azure roles expire after the configured duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently active.                                                                                                                                                                                                                                                                                                                                                                                         |
-| Eligible expiration | Eligible role assignments for Azure roles expire after this duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently eligible.                                                                                                                                                                                                                                                                                                                                                                                               |
+:::row:::
+  :::column:::
+    **Setting**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Role
+  :::column-end:::
+  :::column:::
+    Name of the role you're defining the settings for.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require MFA; two-step verification
+  :::column-end:::
+  :::column:::
+    Whether the eligible user needs to perform MFA; two-step verification before activating the role.
+
+**Microsoft recommends** you enforce MFA; two-step verification for all administrator roles, especially if the roles have guest users.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Notification
+  :::column-end:::
+  :::column:::
+    If set to true, Global Administrator, Privileged Role Administrator, and Security Administrator in the organization will receive an email notification when an eligible user activates the role.
+
+Some organizations don’t have an email address tied to their administrator accounts. To get these email notifications, set an alternative email address so administrators will receive these emails.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Incident ticket
+  :::column-end:::
+  :::column:::
+    Whether the eligible user needs to record an incident ticket number when activating their role. This setting helps an organization identify each activation with an internal incident number to mitigate unwanted activations.
+
+**Microsoft recommends** taking advantage of incident ticket numbers to tie PIM into your internal system. This method can be useful for approvers who need context for the activation.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Require approval
+  :::column-end:::
+  :::column:::
+    Whether the eligible user needs to get approval to activate the role.
+
+**Microsoft recommends** that you set up approval for roles with the most permission. Based on usage patterns of all PIM customers, Global Administrator, User Administrator, Exchange Administrator, Security Administrator, and Password Administrator are the most common roles with approval set up.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Approver
+  :::column-end:::
+  :::column:::
+    If approval is required to activate the eligible role, list the people who should approve the request. By default, PIM sets the approver to be all users who are privileged role administrators whether they are permanent or eligible.
+
+If a user is both eligible for an Azure AD role and an approver of the role, they will not be able to approve themselves.
+
+**Microsoft recommends** that you choose approvers to be users who are most knowledgeable about the role and its frequent users rather than a Global Administrator.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Activation duration
+  :::column-end:::
+  :::column:::
+    The length of time a user will be activated in the role before it will expire.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Permanent admin
+  :::column-end:::
+  :::column:::
+    List of users who will be a permanent administrator for the role (never have to activate).
+
+**Microsoft recommends** you have zero standing administrator for all roles except for Global Administrators.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Active admin
+  :::column-end:::
+  :::column:::
+    For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Azure AD roles because you can set an expiration time for when the user will lose this role.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Active expiration
+  :::column-end:::
+  :::column:::
+    Active role assignments for Azure roles expire after the configured duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently active.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Eligible expiration
+  :::column-end:::
+  :::column:::
+    Eligible role assignments for Azure roles expire after this duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently eligible.
+  :::column-end:::
+:::row-end:::
