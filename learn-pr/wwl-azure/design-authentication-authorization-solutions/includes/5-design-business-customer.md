@@ -27,7 +27,7 @@ With your Azure AD B2C tenant in place, you must register your app. You use user
 
 - **Use identity providers to let users sign in using their social identities**. There’s a long [list of identity providers](/azure/active-directory-b2c/add-identity-provider) and more are being added. Social providers include Amazon, Azure AD, Facebook, LinkedIn, Twitter, and Microsoft accounts. 
 
-- **Customize your user interface**. You can change the look of the pages in your user flow. Write your own HTML and CSS or use built-in templates called [page layout templates.](/azure/active-directory-b2c/customize-ui?pivots=b2c-user-flow)
+- **Customize your user interface**. You can customize the pages in your user flow. Write your own HTML and CSS or use built-in templates called [page layout templates.](/azure/active-directory-b2c/customize-ui?pivots=b2c-user-flow)
 
 - **Integrate with external user stores**. Azure AD B2C provides a directory that can hold 100 custom attributes per user. However, you can also integrate with external systems. For example, use Azure AD B2C for authentication, but delegate to an external customer relationship management (CRM) or customer loyalty database as the source of truth for customer data.
 

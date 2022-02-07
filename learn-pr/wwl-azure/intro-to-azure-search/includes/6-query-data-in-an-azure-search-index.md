@@ -20,7 +20,7 @@ By default, the search engine will match any of the terms in the query. Content 
 
 The simple query syntax in Azure Cognitive Search excludes some of the more complex features of the full Lucene query syntax, and it's the default search syntax for queries. 
 
-You can learn more about query syntax in the [documentation](/azure/search/search-explorer?WT.mc_id=Portal-Microsoft_Azure_Search). 
+You can learn more about query syntax in the [documentation](/azure/search/query-odata-filter-orderby-syntax). 
 
 
 

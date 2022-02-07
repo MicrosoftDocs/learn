@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.ai-skillsets
-title: AI skillsets
+title: Use a skillset to define an enrichment pipeline
 metadata:
-  title: AI skillsets
-  description: "AI skillsets"
-  ms.date: 01/26/2022
+  title: Use a skillset to define an enrichment pipeline
+  description: "Use a skillset to define an enrichment pipeline"
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: robmcm
   ms.topic: interactive-tutorial
