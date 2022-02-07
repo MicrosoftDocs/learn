@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a Redis Cache instance in Azure
   description: Exercise - Create a Redis Cache instance in Azure
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: flang-steyer
+  ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript

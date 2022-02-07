@@ -5,8 +5,8 @@ metadata:
   title: Throttle API requests
   description: In this unit, you will learn about throttling policies and how to use them to prevent users from over-using resources.
   ms.date: 05/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
