@@ -17,7 +17,7 @@ The solution you'll create for Fourth Coffee requires the following resources in
     > [!NOTE]
     > Your Azure Cognitive Search and Cognitive Services resources must be in the same location!
     
-- A **Storage account** with blob containers, which will store raw documents and other collection of tables, objects, or files.
+- A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
 
 ### Create an *Azure Cognitive Search* resource 
 
@@ -96,7 +96,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
     - **Container name**: *this setting is auto-populated after you choose an existing connection*
     - **Blob folder**: *Leave this blank*
     - **Description**: Reviews for Fourth Coffee shops.
-3. Proceed to the next step (*Add cognitive skills (Optional)*).
+3. Proceed to the next step *Add cognitive skills (Optional)*.
 4. In the **Attach Cognitive Services** section, select your Cognitive Services resource that is in the same location as your Cognitive Search resource.  
 5. In the **Add enrichments** section:
     - Change the **Skillset name** to **coffee-skillset**.
@@ -105,6 +105,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
         > It is important to select **Enable OCR** in order to see all of the enriched field options. 
     - Ensure that the **Source data field** is set to **merged_content**.
     - Change the **Enrichment granularity level** to **Pages (5000 character chunks)**. 
+    - Do not select *Enable incremental enrichment*
     - Select the following enriched fields:
 
         | Cognitive Skill | Parameter | Field name |
@@ -118,26 +119,31 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
 6. Under **Save Enrichments to a Knowledge Store**, select the boxes: 
     - Image projections 
     - Documents
+    - Pages
     - Key phrases 
+    - Entities
     - Image details
     - Image references
     
         > [!NOTE]
         > A warning asking for a **Storage Account Connection String** will appear. 
 
-7. Click on **Choose and existing connection**. Choose the storage account you created earlier, then create a new container called **knowledge-store** with the privacy level set to private. Then click *Select* at the bottom of the screen.
-8. Select **Azure blob projects: Document**. A setting for *Container name* with the *knowledge-store* container auto-populated will appear. Keep the container name as-is. 
-9. Click **Next, Customize Target Index**. Change the **Index name** to **coffee-index**.
-10. Ensure that the **Key** is set to **metadata_storage_path** and leave the **Suggester name** blank and the **Search mode** autopopulated.
-11. Review the index fields with their default settings. Additionally, select **filterable** for all the fields that are already selected. Proceed to the next step (*Create an indexer*).
-12. Change the **Indexer name** to **coffee-indexer**.
-13. Leave the **Schedule** set to **Once**.
-14. Expand the **Advanced** options, and ensure that the **Base-64 encode keys** option is selected (generally encoding keys make the index more efficient).
-15. Select **Submit** to create the data source, skillset, index, and indexer. The indexer is run automatically and runs the indexing pipeline, which:
-    1. Extracts the document metadata fields and content from the data source
-    2. Runs the skillset of cognitive skills to generate additional enriched fields
-    3. Maps the extracted fields to the index
-16. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, view the **Indexers** tab, which should show the newly created **coffee-indexer**. Wait a minute, and click **&orarr; Refresh** until the **Status** indicates success.
+7. Click on **Choose and existing connection**. Choose the storage account you created earlier. 
+8. Click on **+ Container** to create a new container called **knowledge-store** with the privacy level set to private. Then select the **knowledge-store** container and click *Select* at the bottom of the screen.
+9. Select **Azure blob projects: Document**. A setting for *Container name* with the *knowledge-store* container auto-populated will appear. Keep the container name as-is. 
+10. Click **Next, Customize Target Index**. Change the **Index name** to **coffee-index**.
+11. Ensure that the **Key** is set to **metadata_storage_path** and leave the **Suggester name** blank and the **Search mode** autopopulated.
+12. Review the index fields' default settings. Additionally, select **filterable** for all the fields that are already selected by default. Proceed to the next step (*Create an indexer*).
+13. Change the **Indexer name** to **coffee-indexer**.
+14. Leave the **Schedule** set to **Once**.
+15. Expand the **Advanced** options, and ensure that the **Base-64 encode keys** option is selected (generally encoding keys make the index more efficient).
+16. Select **Submit** to create the data source, skillset, index, and indexer. The indexer is run automatically and runs the indexing pipeline, which:
+    - Extracts the document metadata fields and content from the data source
+    - Runs the skillset of cognitive skills to generate additional enriched fields
+    - Maps the extracted fields to the index
+17. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, view the **Indexers** tab, which should show the newly created **coffee-indexer**. Wait a minute, and click **&orarr; Refresh** until the **Status** indicates success.
+
+![Example of successfully loaded documents.](../media/indexer-status.png)
 
 ## Query the index
 
@@ -184,12 +190,14 @@ Finally let's see the power of the knowledge store in action. When you ran the *
     
     ![Screenshot of the skillset container.](../media/knowledge-store-blob-5.png)
 
-7. Click on any of the files. Click **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner. 
+7. Click on any of the *.jpg* files. Click **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner. 
     
     ![Screenshot of the image saved.](../media/knowledge-store-blob-3.png)
 
 8. Return back to the Storage browser's tree by clicking on the storage blob breadcrumb at the top left of the screen. 
-9. Now click on **Tables** on the left-hand panel. There's a table for each entity in the index. Select the table ending with *KeyPhrases*. Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews. Many of the fields are keys (so you can link the tables like a relational database); but that the last field shows the key phrases that were extracted by the skillset.
+9. Now click on **Tables** on the left-hand panel. There's a table for each entity in the index. Select the table *coffeeSkillsetKeyPhrases*. 
+
+    Take a look at the key phrases that the knowledge store was able to capture from the content in the reviews. Many of the fields are keys so you can link the tables like a relational database. Note that the last field shows the key phrases that were extracted by the skillset.
 
 ## Learn more 
 
