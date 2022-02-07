@@ -9,6 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish a managed service offer on the Azure Marketplace
+products:
+- azure
+- azure-lighthouse
 durationInMinutes: 12
 content: |
   [!include[](includes/5-video-publish-managed-service.md)]

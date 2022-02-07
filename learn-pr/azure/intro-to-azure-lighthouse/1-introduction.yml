@@ -9,6 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
+products:
+- azure
+- azure-lighthouse
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

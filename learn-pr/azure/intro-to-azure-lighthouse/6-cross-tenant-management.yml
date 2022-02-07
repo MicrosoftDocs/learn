@@ -9,6 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up cross-tenant management
+products:
+- azure
+- azure-lighthouse
 durationInMinutes: 12
 content: |
   [!include[](includes/6-cross-tenant-management.md)]
