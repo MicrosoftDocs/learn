@@ -22,7 +22,7 @@ You'll use the following **Azure Cloud** services to implement the above feature
 
 ### Azure Storage
 
-You will use [Azure Storage](https://azure.microsoft.com/services/storage/) for the to persist data. Azure Storage allows you to store data in a table and upload large binaries like images.
+You will use [Azure Storage](https://azure.microsoft.com/services/storage/) to persist data. Azure Storage allows you to store data in a table and upload large binaries like images.
 
 ### Azure Custom Vision
 

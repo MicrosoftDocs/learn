@@ -65,7 +65,7 @@ The **Count** function queries from the **Table storage** all **TrackedObjects**
 
     :::image type="content" source="../media/replace-conncection-string.png" alt-text="Screenshot of replace connection string." lightbox="../media/replace-conncection-string.png":::
 
-10. Select tbe **Publish** button to publish the function. Wait for the publish to complete.
+10. Select the **Publish** button to publish the function. Wait for the publish to complete.
 
 11. When publishing completes, select **Manage in Azure portal** in the Actions section, then select **Configuration** in the *Settings* section. In **Application Settings**, provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Select **New Application setting**, enter *AzureStorageConnectionString* for the name, then enter your *Connection string* as the value. Select **Save**.
 
@@ -157,7 +157,7 @@ It asks the user for the *name* of the **Tracked Object** they want to know more
 
     :::image type="content" source="../media/chat-bot-manager-prefab.png" alt-text="Screenshot of Unity Project window with ChatBotManager prefab selected." lightbox="../media/chat-bot-manager-prefab.png":::
 
-2. Drage the prefab **ChatBotManager** into the scene Hierarchy.
+2. Drag the prefab **ChatBotManager** into the scene Hierarchy.
 
 3. Once you add the ChatBotManager to the scene, select the **Chat Bot Manager** component.
 In the Inspector, enter your secret key in the **Direct Line Secret Key** field.
@@ -190,7 +190,7 @@ First, let's test the bot by asking how many **Tracked Objects** are stored in t
 
 Run the application on your HoloLens 2 and select the *Chat Bot* button next to the main menu.
 After the bot greets you, ask **how many objects do we have?**
-The not should tell you the object quantity and end the conversation.
+The note should tell you the object quantity and end the conversation.
 
 > [!Note]
 > Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
