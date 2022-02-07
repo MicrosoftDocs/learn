@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.6-write-code-that-uses-service-bus-topics
-title: Write code that sends and receives messages in a Service Bus topic
+title: Write code that sends messages to a topic and retrieves messages from a topic
 metadata:
-  title: Write code that sends and receives messages in a Service Bus topic
-  description: Learn how to write code that sends and receives messages in a Service Bus topic.
+  title: Write code that sends messages to a topic and retrieves messages from a topic
+  description: Learn how to write code that sends messages to a topic and receives messages from a subscription to the topic.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm

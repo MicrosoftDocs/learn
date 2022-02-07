@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct. Azure Service Bus queues by default handle messages in the same order messages are added, and they also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction are not added."
     - content: 'Azure Storage queues'
       isCorrect: false
-      explanation: "Incorrect. Even though a queue by default is a FIFO data structure, Azure Storage queues do not guarantee FIFO because other settings might preempt message order."
+      explanation: "Incorrect. Even though a queue by default is a FIFO data structure, Azure Storage queues do not guarantee FIFO because other settings or system interruptions might preempt message order."
     
   - content: "Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus feature should you use?"
     choices:

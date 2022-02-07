@@ -3,7 +3,7 @@ uid: learn.implement-message-workflows-with-service-bus.2-choose-a-messaging-pla
 title: Choose a messaging platform
 metadata:
   title: Choose a messaging platform
-  description: Understand how to choose a messaging platform in Azure Service Bus.
+  description: Understand how to choose a messaging platform.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
