@@ -2,13 +2,13 @@ Tailwind Traders has onboarded its machines to Azure Arc-enabled servers and now
 
 ## Add non-Azure machines with Azure Arc
 
-Because your Azure VM is already registered and managed as an Azure resource, it is necessary to reconfigure the VM. Reconfiguring the VM involves removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you've made these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM will offer a starting point to install and evaluate Azure Arc-enabled servers.
+Because your Azure VM is already registered and managed as an Azure resource, it's necessary to reconfigure the VM. Reconfiguring the VM involves removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you've made these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM will offer a starting point to install and evaluate Azure Arc-enabled servers.
 
 The preferred way of adding your non-Azure machines to Microsoft Defender for Cloud is with Azure Arc-enabled servers. Connecting a machine to Azure through Azure Arc-enabled servers creates an Azure resource for the hybrid machine. When you install the Log Analytics agent on the Arc-enabled server, the hybrid machine will also appear in Defender for Cloud. Just like your other Azure resources, the Arc-enabled server can also have security recommendations, surface alerts, and be captured in your secure score.
 
-Defender for Cloud's auto-deploy tools for deploying the Log Analytics agent don't support machines running Azure Arc. Log Analytics agent deployment options include:  
+Defender for Cloud's Log Analytics auto-deploy tools don't support machines running Azure Arc. Log Analytics agent deployment options include:  
 
-1. VM extensions for Azure Arc-enabled servers from the Azure portal, using PowerShell, the Azure CLI, or with an Azure Resource Manager (ARM) template.
+1. VM extensions for Azure Arc-enabled servers can be deployed from the Azure portal. They can also be deployed using PowerShell, the Azure CLI, or with an Azure Resource Manager (ARM) template.
 1. Azure Policy through the Configure Log Analytics extension on Azure Arc enabled Linux servers / Configure Log Analytics extension on Azure Arc enabled Windows servers policy definitions
 1. Azure Automation and its support for PowerShell and Python to automate the deployment of the Log Analytics agent VM extension.
 
@@ -32,4 +32,4 @@ VM extensions can be applied to your Azure Arc-enabled server-managed machine vi
 
 Now you can see your Azure and non-Azure machines together in one place. Within Microsoft Defender for Cloud, open the asset inventory page and filter to the relevant resource types.
 
-The asset inventory page of Microsoft Defender for Cloud provides a single page for viewing the security posture of the resources you've connected to Microsoft Defender for Cloud. Defender for Cloud periodically analyzes the security state of resources connected to your subscriptions to identify potential security vulnerabilities. It then provides you with recommendations on how to remediate those vulnerabilities.
+The asset inventory page of Microsoft Defender for Cloud provides a single page for viewing your connected resources and their security postures. Defender for Cloud periodically analyzes the security state of resources connected to your subscriptions to identify potential security vulnerabilities. It then provides you with recommendations on how to remediate those vulnerabilities.
