@@ -3,7 +3,7 @@ In this demonstration, you'll learn to:
 - Create an automation account.
 - Enable auto-update management.
 
->[!VIDEO https://aka.ms/view-update-assessments]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zuid]
 
 ## Next steps
 
