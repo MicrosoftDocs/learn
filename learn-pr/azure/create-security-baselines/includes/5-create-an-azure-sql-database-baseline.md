@@ -2,7 +2,7 @@ Azure SQL Server is a cloud-based relational database server that supports many 
 
 ## Azure SQL Server recommendations
 
-See the following topics for the security recommendations to set Azure SQL Server policies. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+See the following topics for security recommendations to set Azure SQL Server policies. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### Enable auditing - Level 1
 
@@ -13,15 +13,15 @@ Auditing for Azure SQL Database and Azure Synapse Analytics tracks database even
 
 To turn on Auditing:
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, and then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, and then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance. The **Auditing** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
 1. Ensure that **Enable Azure SQL Auditing** is *enabled*.
 
@@ -37,23 +37,23 @@ Threat detection for single and pooled databases detects anomalous activities in
 
 Threat detection is part of the Advanced Data Security (ADS) offering, which is a unified package for advanced SQL security capabilities. Threat detection can be accessed and managed via the central SQL ADS portal.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Defender for Cloud**. The **Defender for Cloud** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Microsoft Defender for Cloud**. The **Microsoft Defender for Cloud** pane displays for your SQL database instance.
 
-1. Under the **Recommendations** section, select **View all recommendations in Defender for Cloud**. The **Recommendations** pane appears for your SQL database instance.
+1. Under the **Recommendations** section, select **View all recommendations in Defender for Cloud**. The **Recommendations** pane displays for your SQL database instance.
 
 ### Enable all threat detection types - Level 1
 
 Azure SQL Auditing provides a set of advanced SQL security capabilities, including data discovery and classification, and vulnerability assessment.
 
-Azure SQL Auditing is part of the advanced data security (ADS) offering, which is part of the defense in-depth SQL security strategy. Access and manage Azure SQL Auditing via the portal. In the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
+Azure SQL Auditing is part of the advanced data security (ADS) offering, which is part of the defense in-depth SQL security strategy. Access and manage Azure SQL Auditing via the portal. In the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
    ![Screenshot the SQL Server setting pane for Level 1.](../media/5-auditing.png)
 
@@ -61,31 +61,31 @@ Azure SQL Auditing is part of the advanced data security (ADS) offering, which i
 
 You can receive notifications about the detected threats via email notifications or Azure portal.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
 1. Under **Azure SQL Auditing**, ensure **Enable Azure SQL Auditing** is enabled.
 
-### Enable the email service and co-administrators - Level 1
+### Enable the email service and coadministrators - Level 1
 
-Providing the email address to receive alerts ensures that any detection of anomalous activities is reported as soon as possible, making it more likely to mitigate any potential risk sooner.
+Providing an email address to receive alerts ensures that any detection of anomalous activities is reported as soon as possible. This reporting makes it more likely to mitigate any potential risk sooner.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
 1. Under **Azure SQL Auditing**, ensure **Enable Azure SQL Auditing** is enabled.
 
@@ -93,15 +93,15 @@ Providing the email address to receive alerts ensures that any detection of anom
 
 Audit logs should be preserved for security, discovery, and to meet legal and regulatory compliance.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
 1. Select your **Audit log destination**, and then expand **Advanced properties**.
 
@@ -115,15 +115,15 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 A retention of zero days means logs have unlimited retention. Otherwise, the value can be any number of days between 1 and 3285. You should consider keeping the logs for at least 90 days to be able to look back to spot threat patterns.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the *Popular services* list. The **Create SQL Database** pane displays.
 
 1. Create an instance of your SQL database.
 
-1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
 1. Select your **Audit log destination**, and then expand **Advanced properties**.
 
