@@ -5,8 +5,8 @@ metadata:
   title: Choose a code flow strategy
   description: Learn the advantages of using a distributed version control system, such as Git.
   ms.date: 05/25/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
