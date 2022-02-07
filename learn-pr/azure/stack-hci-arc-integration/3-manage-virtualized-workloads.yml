@@ -20,18 +20,18 @@ quiz:
     choices:
     - content: "Custom Script Extension."
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect, the Custom Script Extension is used to execute a script on the target Arc-enabled server."
     - content: "Microsoft Dependency agent."
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect, the Microsoft Dependency agent is used to facilitate identifying internal and external dependencies of server workloads."
     - content: "Log Analytics Extension."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct, the Log Analytics Extension is used to configure log forwarding to a Log Analytics workspace."
   - content: "Which software component allows an administrator to use Azure Policy to audit settings within the operating system of Arc enabled servers to evaluate their compliance?"
     choices:
     - content: "Connected Machine Agent."
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. This is an agent that facilitates connection to Azure Arc-enabled servers."
     - content: "Microsoft Dependency agent."
       isCorrect: false
       explanation: "That's incorrect. This is an agent that facilitates identifying internal and external dependencies of server workloads."
