@@ -132,7 +132,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     }
     ```
 
-    You're now ready to switch to the Azure portal to configure the policy named **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
+    You're now ready to switch to the Azure portal to configure the policy named **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits**.
 
 ## Assign a built-in policy definition
 
