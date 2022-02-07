@@ -10,9 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-products:
-- azure
-- azure-lighthouse
 durationInMinutes: 10
 quiz:
   title: Check your knowledge

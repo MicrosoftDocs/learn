@@ -11,9 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 azureSandbox: false
-products:
-- azure
-- azure-lighthouse
 content: |
   [!include[](includes/6a-exercise-managing-a-customer.md)]
   

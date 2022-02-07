@@ -13,9 +13,6 @@ durationInMinutes: 45
 azureSandbox: false
 labId: 93141
 labModal: true
-products:
-- azure
-- azure-lighthouse
 content: |
   [!include[](includes/4b-exercise-deploy-azure-resource-manager-templates.md)]
   

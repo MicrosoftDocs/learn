@@ -9,9 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Using Azure Resource Manager templates to deploy Azure Lighthouse
-products:
-- azure
-- azure-lighthouse
 durationInMinutes: 8
 content: |
   [!include[](includes/4-using-templates.md)]
