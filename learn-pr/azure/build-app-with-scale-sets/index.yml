@@ -4,8 +4,8 @@ metadata:
   title: Build a scalable application with virtual machine scale sets
   description: Enable your application to automatically adjust to changes in load while minimizing costs with virtual machine scale sets.
   ms.date: 09/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: ju-shim
+  ms.author: jushiman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a scalable application with virtual machine scale sets

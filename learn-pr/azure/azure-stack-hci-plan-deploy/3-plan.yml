@@ -5,7 +5,7 @@ metadata:
   description: An overview of planning for Azure Stack HCI workloads
   ms.date: 12/09/2020
   author: micrum
-  ms.author: micrum
+  ms.author: jgerend
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
