@@ -1,0 +1,79 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundraising.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between various types of investors, and due diligence research.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "If you're pitching an early-stage investor, the most important thing to demonstrate is:"
+    choices:
+    - content: "That you've researched the investor and know that your startup is a fit for their investment mandate."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "That you're focusing 100 percent of your time on your startup."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "That you have evidence of product-market fit in the form of customer traction or revenue."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "That you've identified growth levers you can use to generate traction, revenue and profit."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "The main difference between angel investors and VC funds is:"
+    choices:
+    - content: "Angel investors get to appear on Shark Tank."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "VCs only invest in software startups."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Angels invest their own money, while VCs invest mostly other people's money."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Angel investors generally don't expect to receive a financial return."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "If you had an idea for a startup and had yet to launch an MVP, your most likely source of external funding would be:"
+    choices:
+    - content: "Friends and family."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Angel investors."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "VC funds."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The stock market."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "Which of these topics is an investor likely to cover in due diligence?"
+    choices:
+    - content: "Employment contracts including terms of IP assignment."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Previous investments, including any friends and family round that the company has raised."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Disputes with previous employees."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Loans from the founders to the company."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct."

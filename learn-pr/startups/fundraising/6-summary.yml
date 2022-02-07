@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundraising.summary
+title: How investment works
+metadata:
+  title: How investment works
+  description: Review the fundamentals startup fundraising. Concepts include finding investors versus bootstrapping, types of investors, and fundraising rounds.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

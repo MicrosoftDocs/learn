@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundraising.funding-rounds
+title: How investment works
+metadata:
+  title: How investment works
+  description: Learn about funding rounds. See how to contact investors. Understand term sheets. Find out how to make it easy for investors to complete due diligence.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-funding-rounds.md)]
