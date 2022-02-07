@@ -47,7 +47,7 @@ When you create a logic app in the Azure portal, you have the option of selectin
 Now, let's create the trigger and provide values for all required parameters.
  
 > [!NOTE]
-> If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://blog.feedspot.com/reuters_rss_feeds/`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
+> If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://rss2.feedspot.com/https://www.reuters.com/technology`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
 
 1. In the *Search connectors and triggers* field, enter *When a new tweet is posted*. In the lower dialog box, select the Twitter **When a new tweet is posted**.
 
