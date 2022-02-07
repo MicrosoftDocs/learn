@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/13/2021
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
     - content: "Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
       isCorrect: true
       explanation: "Correct. Discovery and insights can find privileged role assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
-    - content: "Discovery and insights can find when guests access resources across Azure AD."
+    - content: "Discovery and insights can find when guest's access resources across Azure AD."
       isCorrect: false
       explanation: "Incorrect. Discovery and insights finds privileged role assignments and authorized guest user access."
     - content: "Discovery and insights can find security group assignments across Azure AD, and then provide recommendations on how to secure them using Azure AD governance features like Privileged Identity Management (PIM)."
