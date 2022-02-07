@@ -4,8 +4,8 @@ metadata:
   title: Customize a Xamarin.Forms ListView
   description: Create custom cell layouts that fit the shape of your data. Group related cells together to help your users find what they're interested in.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Customize a Xamarin.Forms ListView
