@@ -1,11 +1,11 @@
-Tailwind Traders has onboarded its machines to Azure Arc-enabled servers and now wants to onboard those servers to Microsoft Sentinel. In this Unit, you’ll learn how to onboard your Azure Arc-enabled servers to Microsoft Sentinel, by connecting to a Log Analytics workspace and enabling Microsoft Sentinel on the workspace.  
+Tailwind Traders has onboarded its machines to Azure Arc-enabled servers and now wants to onboard those servers to Microsoft Sentinel. In this Unit, you’ll learn how to onboard your Azure Arc-enabled servers to Microsoft Sentinel. First, you will connect the Azure Arc-enabled server to a Log Analytics workspace. Second, you will enable Microsoft Sentinel on this workspace.  
 
 ## Connect the Azure Arc-enabled server to a Log Analytics Workspace using the Log Analytics Agent or Azure Monitor Agent
 
 For physical and virtual machines, you can install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel. Azure Arc-enabled servers support deploying the Log Analytics agent using the following methods: 
 
-- Using the **VM extensions framework**, you can deploy the Log Analytics agent VM extension to a non-Azure Windows and/or Linux server. VM extensions can be managed using the Azure portal, Azure CLI, Azure PowerShell, and Azure Resource Manager templates on your hybrid machines or servers managed by Azure Arc-enabled servers. 
-- Using **Azure Policy**, you can Deploy Log Analytics agent to Linux or Windows Azure Arc machines to audit if the Azure Arc-enabled server has the Log Analytics agent installed. If the agent is not installed, it automatically deploys it using a remediation task. Alternatively, if you plan to monitor the machines with Azure Monitor for VMs, you can use the Enable Azure Monitor for VMs initiative to install and configure the Log Analytics agent. 
+- Using the **VM extensions framework**, you can deploy the Log Analytics agent VM extension to a non-Azure Windows and/or Linux server. VM extensions can be managed using the Azure portal, Azure CLI, Azure PowerShell, and Azure Resource Manager templates. 
+- Using **Azure Policy**, you can Deploy Log Analytics agent to Linux or Windows Azure Arc machines to audit if the Azure Arc-enabled server has the Log Analytics agent installed. If the agent isn't installed, it automatically deploys it using a remediation task. You can also use the built-in Azure Policy to Enable Azure Monitor for VMs initiative to install and configure the Log Analytics agent. 
 
 ## Enable Microsoft Sentinel on the Log Analytics Workspace
 
@@ -19,7 +19,7 @@ For physical and virtual machines, you can install the Log Analytics agent that 
     
 
 1. Select **Add**.
-1. Select the workspace, to which the Azure Arc-enabled server is connected. You can run Microsoft Sentinel on more than one workspace, but the data is isolated to a single workspace.  Once deployed on a workspace, Microsoft Sentinel does not currently support the moving of that workspace to other resource groups or subscriptions.
+1. Select the workspace, to which the Azure Arc-enabled server is connected. You can run Microsoft Sentinel on more than one workspace, but the data is isolated to a single workspace.  
 
     
 
