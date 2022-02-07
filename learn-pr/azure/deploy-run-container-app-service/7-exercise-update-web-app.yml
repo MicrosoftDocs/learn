@@ -2,11 +2,11 @@
 uid: learn.azure.deploy-run-container-app-service.7-exercise-update-web-app
 title: Exercise - Modify the image and redeploy the web app  
 metadata:
-  title: Exercise - Modify the image and redeploy the web app  
+  title: Exercise - Modify the image and redeploy the web app
   description: Modify the code for the web app, upload a new Docker image, and use a webhook to automatically redeploy the web app.
   ms.date: 03/28/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript

@@ -5,8 +5,8 @@ metadata:
   title: Evaluate the performance of the deployed Event Hub using the Azure portal
   description: Evaluate the performance of the deployed Event Hub using the Azure portal
   ms.date: 08/26/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
