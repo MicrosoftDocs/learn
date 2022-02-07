@@ -23,17 +23,13 @@ A catalog is a container of resources and access packages. You create a catalog 
     > [!IMPORTANT]
     > To use and configure Azure AD terms of use, you must have:
     
-    ```
-    - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
-      - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
-    
-    - One of the following administrator accounts for the directory you want to configure:
-      - Global Administrator
-    
-      - Security Administrator
-      - Conditional Access Administrator
-    
-    ```
+     -  Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
+     -  If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
+     -  One of the following administrator accounts for the directory you want to configure:
+        
+         -  Global Administrator
+         -  Security Administrator
+         -  Conditional Access Administrator
 2.  Open **Azure Active Directory** and the select **Identity Governance**.
 3.  In the left menu, under **Entitlement management**, select **Catalogs**.
 4.  On the top menu, select **+New Catalog**.
