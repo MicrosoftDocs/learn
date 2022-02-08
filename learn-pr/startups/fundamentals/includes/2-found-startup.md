@@ -12,7 +12,8 @@ Bear in mind that few startup founders set out with anything like this commitmen
 
 Nevertheless, it will be much easier for you to devote meaningful time to solving a problem if you're passionate about it, especially in the early days when there's likely to be lots of hard work and before you've reached any significant commercial milestones.
 
-**Ask yourself:** Am I passionate about solving this problem and can I imagine devoting years of my life to working on it?
+> [!TIP]
+> Ask yourself: Am I passionate about solving this problem and can I imagine devoting years of my life to working on it?
 
 ## Do you have deep domain expertise?
 
@@ -27,10 +28,11 @@ There are four main ways in which startup founders can take advantage of their d
 - By tapping into their existing network, or using their profile as a thought leader, founders can make connections with customers that would be difficult for a newcomer.
 - In the case of deep-tech startups (those based on advanced technology or scientific research), by developing novel, cutting-edge technology that can become the basis for the company's competitive advantage.
 
-**Ask yourself:**
-
-- Does my startup idea take advantage of the time and energy I've already invested in my career or my other interests?
-- What insights do I have that most of my peers don't, which will open up an opportunity that may have been invisible to others?
+> [!TIP]
+> Ask yourself:
+> 
+> - Does my startup idea take advantage of the time and energy I've already invested in my career or my other interests?
+> - What insights do I have that most of my peers don't, which will open up an opportunity that may have been invisible to others?
 
 ## How much financial freedom do you have?
 
@@ -69,7 +71,8 @@ Additionally, opportunity cost generally increases over time. It can be more dif
 
 As a founder you should think about your own risk tolerance at the beginning of the startup journey. If you have cofounders, this is an excellent time to have a frank and open conversation about each individual's risk profile and financial situation and whether you're collectively aligned on these fronts.
 
-**Ask yourself:** How much cash am I willing to put into this company? How much income am I willing to forego as I work on this company instead of doing other paid work? What is the minimum income that I need to generate, and can I do that while working on this startup? What are my financial objectives, and will they be met by building this startup?
+> [!TIP]
+> Ask yourself: How much cash am I willing to put into this company? How much income am I willing to forego as I work on this company instead of doing other paid work? What is the minimum income that I need to generate, and can I do that while working on this startup? What are my financial objectives, and will they be met by building this startup?
 
 ## Are the cofounders aligned?
 
@@ -87,7 +90,9 @@ One way to do this is for cofounders to each reflect on their individual goals f
 
 If you're a sole founder, it's still useful to capture these thoughts and discuss them with friends, family, or your significant other in order to pressure test your own goals and the viability of your expectations.
 
-**Worksheet:** Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet and use it as a discussion-starter with your cofounders (or if you're a sole founder, with your friends or family).
+## Worksheet
+
+Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet and use it as a discussion-starter with your cofounders (or if you're a sole founder, with your friends or family).
 
 :::image type="content" source="../media/founder-alignment-exercise.png" alt-text="Image of a worksheet that outlines points to consider before pursuing a startup.":::
 

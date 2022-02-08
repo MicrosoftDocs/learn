@@ -1,4 +1,4 @@
-In this module, we're going to focus on startup basics so that you have a solid guide to lead you on your journey with Microsoft for Startups Founders Hub.
+In this module, we're going to focus on startup basics so that you have a solid guide to lead you on your journey with [Microsoft for Startups Founders Hub](https://startups.microsoft.com/?azure-portal=true).
 
 We'll start by discussing some personal considerations:
 

@@ -44,7 +44,8 @@ In these instances, you'll need to give potential users a compelling reason to u
 
 If you're competing with free, a good rule of thumb is that your product needs to be 10 times better than the free alternative. It's only by providing a massively improved experience that people will change their behavior.
 
-**Ask yourself:** How imperfect is the free solution that my target users are currently using? Can I greatly improve the way in which they complete the task? How can I make my product as simple as possible to learn and use? Are users more likely to use my product if I offer a free trial?
+> [!TIP]
+> Ask yourself: How imperfect is the free solution that my target users are currently using? Can I greatly improve the way in which they complete the task? How can I make my product as simple as possible to learn and use? Are users more likely to use my product if I offer a free trial?
 
 ## Attempting to scale before achieving problem-solution fit
 
@@ -100,9 +101,12 @@ One of the reasons first-time founders fail to get advice from the right people 
 
 Similarly, investors are always on the lookout for promising startups. Good investors will generally take a meeting with a pre-launch startup founder as long as they can see that you're working on something that fits their investment mandate and you're seeking their advice, not just pitching them. As the old adage goes, "If you want money, ask for advice; If you want advice, ask for money".
 
-**Task:** Make a wish-list of people you'd like to connect with. Start with your local startup community, but also look further afield (the world is a pretty flat place these days). Reach out through mutual contacts, using LinkedIn or by sending a cold email or direct message. Have a specific question that you want to input on that you believe that individual is well-positioned to address; nobody likes to hear "I just want to pick your brains"!
+## Task
 
-**Need help finding quality mentors?** The Microsoft for Startups Mentor Network has hundreds of subject area experts ready to help you overcome obstacles and hit your next milestone. For more information, see [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true). For existing Microsoft for Startups Founders Hub members, to learn how to access the benefit, see [About mentorship offer details](https://foundershubsupportcenter.powerappsportals.com/article/KA-01083/?azure-portal=true).
+Make a wish list of people you'd like to connect with. Start with your local startup community, but also look further afield (the world is a pretty flat place these days). Reach out through mutual contacts, using LinkedIn or by sending a cold email or direct message. Have a specific question that you want to input on that you believe that individual is well-positioned to address; nobody likes to hear "I just want to pick your brains"!
+
+> [!IMPORTANT]
+> Need help finding quality mentors? The Microsoft for Startups Mentor Network has hundreds of subject area experts ready to help you overcome obstacles and hit your next milestone. For more information, see [Microsoft for Startups mentor network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true). For existing Microsoft for Startups Founders Hub members, to learn how to access the benefit, see [About mentorship offer details](https://foundershubsupportcenter.powerappsportals.com/article/KA-01083/?azure-portal=true).
 
 ## Cofounder conflict
 
@@ -112,21 +116,22 @@ Disagreements by themselves are a normal part of building a business. However, i
 
 Cofounder conflict can be particularly acute if the founders haven't worked together before, if they have different levels of commitment to the company (both time and financial), they have different financial needs, or if there's a lack of clarity about the respective roles that each will play in the business.
 
-**Ask yourself:** Do the cofounders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet discussed in [Should you found a startup?](../2-found-startup.yml#are-the-cofounders-aligned?azure-portal=true) and use it as an input to this process.
+> [!TIP]
+> Ask yourself: Do the cofounders know each other sufficiently well? Have they developed an ability to work through difficult discussions and reach agreement? Is there any misalignment of interests? If you haven't already, review the Founder Alignment Worksheet discussed in [Should you found a startup?](../2-found-startup.yml?azure-portal=true#are-the-cofounders-aligned) and use it as an input to this process.
 
-### Worksheet
+## Worksheet
 
 In this unit we've discussed seven factors that can be early indicators of eventual startup failure. These are only indicators, and of course they don't mean that your startup is definitely going to fail. Nor are they an exhaustive list of all the things that can go wrong in your startup! However, they're a good starting point for identifying some of the most common mistakes made in early-stage startups.
 
 Complete the checklist below to score your startup against these six indicators. The ideal outcome is to get as low a score as possible. If you get zero that's fantastic, but don't be concerned if you answer "yes" to some. By completing the remaining modules in the Founders Hub you'll have an opportunity to explore ways to "un-fail" your startup by addressing any issues that you've identified.
 
-- I may be building a product that nobody wants.
-- My idea seems like a derivative idea.
-- I‘m going to be competing with free.
-- I've been attempting to scale before achieving problem-solution fit.
-- I'm too concerned about secrecy.
-- I haven't been seeking out the right advice.
-- My cofounder(s) and I haven't addressed how to manage disagreements.
+&#9744; I may be building a product that nobody wants.<br>
+&#9744; My idea seems like a derivative idea.<br>
+&#9744; I‘m going to be competing with free.<br>
+&#9744; I've been attempting to scale before achieving problem-solution fit.<br>
+&#9744; I'm too concerned about secrecy.<br>
+&#9744; I haven't been seeking out the right advice.<br>
+&#9744; My cofounder(s) and I haven't addressed how to manage disagreements.
 
 Score: __ / 7
 
