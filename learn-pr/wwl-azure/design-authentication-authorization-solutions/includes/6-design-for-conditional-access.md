@@ -19,7 +19,7 @@ Here are some example conditional access situations.
 
 - **Test by using report-only mode**. [Report-only mode](/azure/active-directory/conditional-access/concept-conditional-access-report-only) allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. Report-only mode can help predict the number and names of users affected by common deployment initiatives. Use report-only mode to test blocking legacy authentication, requiring MFA, and implementing sign-in risk policies. 
 
-- **Exclude countries from which you never expect a sign-in**. Azure Active Directory allows you to create named locations. Create a named location that includes all the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign-in from that named location. Be sure to exempt your administrators from this policy.
+- **Exclude geographic areas from which you never expect a sign-in**. Azure Active Directory allows you to create named locations. Create a named location that includes all the geographic areas from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign-in from that named location. Be sure to exempt your administrators from this policy.
 
 - [Require managed devices](/azure/active-directory/conditional-access/require-managed-devices)**.** The proliferation of supported devices to access your cloud resources helps to improve the productivity of your users. You probably don't want certain resources in your environment to be accessed by devices with an unknown protection level. For those resources, require that users can only access them using a managed device.
 
