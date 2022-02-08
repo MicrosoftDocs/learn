@@ -5,7 +5,7 @@ metadata:
   title: Explore the client API to interact with Redis
   description: Explore the StackExchange.Redis API to interact with Redis
   ms.date: 09/24/2018
-  author: flang-steyer
+  author: flang-msft
   ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
