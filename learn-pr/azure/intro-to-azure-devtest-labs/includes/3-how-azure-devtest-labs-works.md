@@ -52,13 +52,7 @@ Suppose that, for the e-commerce developer who's onboarding labs, the Windows pa
     }
   },
   "runCommand": {
-    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installChocolatey.ps1'
-  , ' -RawPackagesList ', parameters('packages')
-  , ' -Username ', parameters('installUsername')
-  , ' -Password ', (ConvertTo-SecureString ''', 
-       parameters('installPassword'), ''' 
-      -AsPlainText 
-      -Force))]"
+    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass "& ./installChocolatey.ps1', ' -RawPackagesList ', parameters('packages'), ' -Username ',parameters('installUsername'), ' -Password ', (ConvertTo-SecureString ''', parameters('installPassword'), ''' -AsPlainText -Force), '"')]"
   }
 }
 ```
