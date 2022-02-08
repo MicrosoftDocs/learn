@@ -65,14 +65,3 @@ quiz:
     - content: "Triggered events run less frequently than scheduled events."
       isCorrect: false
       explanation: "incorrect. The frequency of both triggered events and scheduled events varies depending on how often pushes and pull requests occur, as well as how the developer may have configured the frequency."
-  - content: "?"
-    choices:
-    - content: "`is:done`"
-      isCorrect: true
-      explanation: "Correct. To view all of your notifications marked as 'Done', use the  `is:done` query."
-    - content: "`is:saved`"
-      isCorrect: false
-      explanation: "Incorrect. To view all of your saved notifications, use the `is:saved` query."
-    - content: "`is:complete`"
-      isCorrect: false
-      explanation: "Incorrect. The `is:complete` query does not exist on GitHub."
