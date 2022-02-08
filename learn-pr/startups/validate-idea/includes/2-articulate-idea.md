@@ -36,7 +36,9 @@ Let's look at a simple example:
 *I want to find out quickly whether it's worth pursuing*<br>
 *So that I spend my time on something that has a good chance of succeeding*
 
-**Task:** Create a job story for your product using the above format, imagining that you're the customer. Remember that these are your hypotheses about what job your customer wants done and why. It's only by talking to customers that you can test and validate these hypotheses.
+## Task: Create a job story
+
+Create a job story for your product using the above format, imagining that you're the customer. Remember that these are your hypotheses about what job your customer wants done and why. It's only by talking to customers that you can test and validate these hypotheses.
 
 ## Pain relievers and gain creators
 
@@ -75,11 +77,13 @@ If you deliver a significant gain to a customer, and it occurs quickly after the
 
 The gains in the top right-hand quadrant will be the ones you should focus your attention on.
 
-**Task:** Create a Customer Pains Matrix and a Customer Gains Matrix for your target customer. Go and talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
+## Task: Identify pains and gains
+
+Create a Customer Pains Matrix and a Customer Gains Matrix for your target customer. Go and talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
 
 Hopefully by completing this quick task you'll get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when it comes to writing copy for your website or anywhere else that you describe your product and its value proposition.
 
-### Case study: Tylenol
+## Case study: Tylenol
 
 Let's use Tylenol as a brief case study to help us delve deeper into pains and gains. Tylenol is of course a literal pain reliever and the job it's doing for the customer taking away a physical pain. At its most basic, the value proposition for Tylenol is pain relief.
 
@@ -103,11 +107,9 @@ After you've interviewed a number of customers, you might start to see some tren
 
 Now move to the left-hand side of the canvas and design your value proposition. Populate each of the three segments, describing the product you believe will get the customer's key job(s) done, how it will relieve their most important pains, and how it will achieve their most important gains.
 
-**Task:** Complete your own Value Proposition Canvas
+## Task: Complete your own Value Proposition Canvas
 
-Let's put the Value Proposition Canvas into practice.
-
-Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG.
+Let's put the Value Proposition Canvas into practice. Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG.
 
 A lot of people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
 
@@ -116,4 +118,4 @@ Now go and talk to customers or people who are representative of the customer se
 Important notes:
 
 - This isn't an introspection exercise. You can hypothesize about jobs, pains, and gains, but the only way you'll find out what customers really want is by talking to them individually.
-- If you have multiple customer segments you should create a Value Proposition Canvas for each segment. 
+- If you have multiple customer segments you should create a Value Proposition Canvas for each segment.

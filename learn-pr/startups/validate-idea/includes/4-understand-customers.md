@@ -33,7 +33,7 @@ Wherever possible, frame your questions as falsifiable statements. Set a minimum
 
 If an assumption is validated, you should continue on your current path. If an assumption is invalidated, you need to consider a pivot or change in direction.
 
-## Scenario 1
+## Scenario: Top five assumptions
 
 Emily is working on an idea for a personal banking product that consolidates multiple bank feeds into a streamlined dashboard interface.
 
@@ -79,14 +79,14 @@ A basic user persona should include at least the following:
 - Brands they currently use in relation to their goals.
 - Technology that they have access to and regularly use.
 
-## Scenario 2
+## Scenario: A user persona
 
-Emily has decided that based on her customer interviews her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She's constructed the following "Busy Professional" persona to represent this target user.
+Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She's constructed the following "Busy Professional" persona to represent this target user.
 
 She's incorporated some of the common themes that arose in her interviews with customers, such as the banking brands they currently associate with and the software products they'e familiar with and typically use.
 
 :::image type="content" source="../media/learning-path-peter.png" alt-text="Image that shows basic characteristics of a busy-professional persona. Examples include goals, frustrations, and personality.":::
 
-**Task:** Create your own user persona
+## Task: Create your own user persona
 
 Create a user persona representing what you believe is your primary target user. Give the persona a name and description. Complete as many details as you can based on what you currently know about your target users. Check out the resources at the end of this module for some user persona templates for inspiration.

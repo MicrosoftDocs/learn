@@ -6,10 +6,10 @@ Startup founders can use experiments to test a specific hypothesis by providing 
 
 Each experiment should have at least the following elements:
 
-- Hypothesis: A concise, falsifiable statement representing one of your core assumptions
-- Actions: The steps you'll take to test your hypothesis
-- Data: What you'll measure or observe in the experiment
-- Success criterion: The minimum response you need to validate your hypothesis
+- **Hypothesis**: A concise, falsifiable statement representing one of your core assumptions
+- **Actions**: The steps you'll take to test your hypothesis
+- **Data**: What you'll measure or observe in the experiment
+- **Success criterion**: The minimum response you need to validate your hypothesis
 
 It's generally a good idea to run multiple experiments to test each of your critical hypotheses. In most cases it's advisable to start with the cheapest, quickest experiments to generate some initial data, even if it's imperfect. If the results of these initial experiments are promising, you can progress to more complex experiments that might take more time and effort to complete, but will give you a greater level of confidence in the strength of your hypotheses.
 
@@ -105,7 +105,9 @@ It's easy to think of an MVP as "version 1.0" of your product, but this can easi
 
 For many products, an MVP is better viewed as a disposable tool that you create solely for the purpose of testing assumptions with customers. It's often possible to build an MVP quickly and cheaply using low-code or no-code tools and still deliver value via a single feature. In these instances, you can throw the MVP away after the experiment is completed and start building your product based on your learnings rather than try to use a rough MVP as the basis for your product.
 
-**Task:** Select at least one experiment type that makes sense for your startup. Map out the steps you'll take to complete the experiment. Remember to consider what hypothesis you intend to test, and express it as a concise, falsifiable statement. Spell out what you'll measure or observe in the experiment, and the minimum response you need to validate your hypothesis.
+## Task: Plan an experiment
+
+Select at least one experiment type that makes sense for your startup. Map out the steps you'll take to complete the experiment. Remember to consider what hypothesis you intend to test, and express it as a concise, falsifiable statement. Spell out what you'll measure or observe in the experiment, and the minimum response you need to validate your hypothesis.
 
 ## Conclusions
 

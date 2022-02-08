@@ -30,7 +30,7 @@ A "Solution" assumption is where you believe that your product will be a better 
 
 The Lean Canvas takes some of the inputs that we've discussed earlier in this unit such as customer, problem, and solution, and adds some vital business model blocks such as revenue streams, cost structure, channels, and key metrics.
 
-**Task:** Complete your own Lean Canvas
+## Task: Complete your own Lean Canvas
 
 Download the [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) from leanstack.com.
 
@@ -57,7 +57,7 @@ For your startup to be successful, you'll need a product that is desirable and f
 
 :::image type="content" source="../media/learning-path-three-spheres.png" alt-text="Venn diagram that shows three spheres labeled desirable, feasible, and viable. They intersect slightly.":::
 
-**Task:** Identify which assumptions to test
+## Task: Identify which assumptions to test
 
 Review all of the assumptions that you captured by using the Value Proposition Canvas and Lean Canvas. Draw a large Venn diagram, and with a stack of new sticky notes, place each of your assumptions in one of the three categories.
 
