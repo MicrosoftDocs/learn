@@ -17,7 +17,7 @@ From the **Templates** page, you can select an existing workbook to display a de
 
 ## Review an existing workbook template
 
-As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Audit AD Sign-in logs** workbook by selecting the template in the template section, and then selecting **View template** in the details pane.
+As mentioned earlier, Contoso is concerned about compromised identities. As the security administrator, you can examine the existing **Azure AD Sign-in logs** workbook by selecting the template in the template section, and then selecting **View template** in the details pane.
 
 The **Azure AD Sign-in logs** workbook contains predefined charts, graphs, and tables that can provide important insight about the sign-in activity in Azure AD. You can find information about user sign-ins and locations, email addresses, and IP addresses of your users. In addition, you can also review information about failed activities and the errors that triggered the failures.
 
