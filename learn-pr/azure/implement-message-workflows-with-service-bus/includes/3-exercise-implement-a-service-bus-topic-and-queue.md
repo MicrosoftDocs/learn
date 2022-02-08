@@ -53,7 +53,7 @@ Next, add a queue for messages about individual sales to your namespace:
 
 1. In the **Create queue** pane, for **Name**, enter **salesperformancemessages**, and then select **Create**.  
   
-When the message queue has been created, **salesperformancemessages** is listed under **Queues** at the bottom of the Service Bus namespace.
+When the message queue has been created, **salesperformancemessages** is listed under **Queues** at the bottom of the Service Bus namespace pane.
 
 ## Create a Service Bus topic and subscriptions
 
@@ -67,7 +67,7 @@ Add a Service Bus topic and subscriptions:
 
 1. In the **Create topic** pane, for **Name**, enter *salesperformancemessages*, and then select **Create**.
 
-   When the topic has been created, **salesperformancemessages** is listed under **Topics** at the bottom of the Service Bus namespace.
+   When the topic has been created, **salesperformancemessages** is listed under **Topics** at the bottom of the Service Bus namespace pane.
 
 1. You can add or remove subscriptions in queues and topics by using the tabs in the Service Bus namespace, or you can use the Azure portal resource menu. To use the menu option, in the left menu, under **Entities**, select **Topics**, and then select **salesperformancemessages** in the list of topics.
 
