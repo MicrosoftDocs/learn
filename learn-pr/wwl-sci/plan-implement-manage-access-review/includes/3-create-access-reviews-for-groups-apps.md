@@ -24,29 +24,29 @@ Access to groups and applications for employees and guests changes over time. To
 2.  In the left menu, click **Access reviews**.
 3.  Click **New access review** to create a new access review.
     
-    :::image type="content" source="../media/access-reviews-652fbb52.png" alt-text="Access reviews pane in Identity Governance":::
+    :::image type="content" source="../media/access-reviews-652fbb52.png" alt-text="Access reviews pane in Identity Governance" lightbox="../media/access-reviews-652fbb52.png":::
     
 
 4.  In **Step 1: Select what to review** select the resource you would like to review.
     
-    :::image type="content" source="../media/select-what-review-ea30bcdc.png" alt-text="Create an access review - Review name and description":::
+    :::image type="content" source="../media/select-what-review-ea30bcdc.png" alt-text="Create an access review - Review name and description" lightbox="../media/select-what-review-ea30bcdc.png":::
     
 5.  If you selected **Teams + Groups** in Step 1, you have two options in Step 2:
     
      -  **All Microsoft 365 groups with guest users**. Select this option if you would like to create recurring reviews on all your guest users across all your Microsoft Teams and M365 groups in your organization. You can choose to exclude certain groups by clicking on "Select group(s) to exclude."
      -  **Select teams + groups**. Select this option if you would like to specify a finite set of teams and/or groups to review. After clicking on this option, you will see a list of groups to the right to pick from.
         
-        :::image type="content" source="../media/teams-groups-9af7b7d9.png" alt-text="Teams and groups":::
+        :::image type="content" source="../media/teams-groups-9af7b7d9.png" alt-text="Teams and groups" lightbox="../media/teams-groups-9af7b7d9.png":::
         
         
-        :::image type="content" source="../media/teams-groups-detailed-bbd33dde.png" alt-text="Teams and groups chosen in the user interface":::
+        :::image type="content" source="../media/teams-groups-detailed-bbd33dde.png" alt-text="Teams and groups chosen in the user interface" lightbox="../media/teams-groups-detailed-bbd33dde.png":::
         
 6.  If you selected **Applications** in Step 1, you can then select one or more applications in Step 2.
     
     > [!NOTE]
     > Selecting multiple groups and/or applications will result in multiple access reviews created. For example, if you select five groups to review, that will result in five separate access reviews
     
-    :::image type="content" source="../media/select-application-detailed-a5c114b6.png" alt-text="The interface displayed if you chose applications rather than groups":::
+    :::image type="content" source="../media/select-application-detailed-a5c114b6.png" alt-text="The interface displayed if you chose applications rather than groups" lightbox="../media/select-application-detailed-a5c114b6.png":::
     
 7.  Next, in Step 3 you can select a scope for the review. Your options are:
     
