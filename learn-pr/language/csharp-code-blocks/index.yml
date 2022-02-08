@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-code-blocks
 metadata:
-  title: Control variable scope and logic using code blocks in C#
+  title: 'Control variable scope and logic using code blocks in C#'
   description: Use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code.
   ms.date: 09/26/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control variable scope and logic using code blocks in C#

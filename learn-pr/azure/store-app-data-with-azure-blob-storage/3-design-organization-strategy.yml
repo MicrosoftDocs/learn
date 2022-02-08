@@ -5,8 +5,8 @@ metadata:
   title: Design a storage organization strategy
   description: Design a storage organization strategy
   ms.date: 09/28/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -36,4 +36,3 @@ quiz:
       isCorrect: false
       explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
       
-

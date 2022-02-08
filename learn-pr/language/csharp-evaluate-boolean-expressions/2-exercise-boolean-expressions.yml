@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Boolean Expressions
   description: Use various operators and techniques to build powerful Boolean expressions.
   ms.date: 09/24/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
