@@ -27,7 +27,7 @@ quiz:
       explanation: "You can use Microsoft Defender for Servers with Azure Arc-enabled servers."
       isCorrect: false
     - content: "Microsoft Defender for Containers"
-      explanation: "You cannot use Microsoft Defender for Containers with Azure Arc-enabled servers. You can use Microsoft Defender for Containers with Azure Arc-enabled Kubernetes"
+      explanation: "You can't use Microsoft Defender for Containers with Azure Arc-enabled servers. You can use Microsoft Defender for Containers with Azure Arc-enabled Kubernetes"
       isCorrect: true
   - content: "Which of the following security services helps you continuously assess, secure, and defend workloads in hybrid and multicloud environments?"
     choices:
@@ -57,17 +57,17 @@ quiz:
     - content: "Microsoft Defender for Containers"
       explanation: "Microsoft Defender for Containers offers enhanced security for your hybrid and multicloud Kubernetes clusters."
       isCorrect: false
-  - content: "Which of the following must you connect an Azure Arc-enabled server to for onboarding to Microsoft Defender for Cloud or Microsoft Sentinel?"
+  - content: "Which of the following services should you connect an Azure Arc-enabled server to before onboarding to Microsoft Defender for Cloud or Microsoft Sentinel?"
     choices:
     - content: "Azure Policy"
-      explanation: "Azure Policy can be used, but it is not required to onboard to these Azure services."
+      explanation: "Azure Policy can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
     - content: "Azure Automation"
-      explanation: "Azure Automation can be used, but it is not required to onboard to these Azure services."
+      explanation: "Azure Automation can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
     - content: "Azure Log Analytics Workspace"
       explanation: "The Azure Arc-enabled server must be connected to a Log Analytics workspace to onboard to these Azure services."
       isCorrect: true
     - content: "Azure Function"
-      explanation: "Azure Function can be used, but it is not required to onboard to these Azure services."
+      explanation: "Azure Function can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
