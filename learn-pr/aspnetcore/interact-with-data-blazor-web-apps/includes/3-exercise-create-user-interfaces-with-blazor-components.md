@@ -1,65 +1,66 @@
-You'll be starting to create a new Blazing Pizza app for the pizza delivery company. They have provided the current CSS, imagery, and HTML from their old site to work with.
+In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company has provided the current CSS, imagery, and HTML from its old site to work with.
 
 > [!NOTE]
-> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the .NET CLI and Visual Studio Code for local development. After you finish this module, you can apply the concepts by using Visual Studio for Windows and Visual Studio for Mac for macOS. For continued development, you can use Visual Studio Code for Windows, Linux, and macOS.
 
-If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is setup correctly. Stop at the **Create your app** step.
+If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check that your machine is set up correctly. Stop at the **Create your app** step.
 
 ## Create a new Blazor app
 
 [!include[](../../../includes/dotnet6-sdk-version.md)]
 
-.NET lets you create new projects with any version of Visual Studio or terminal commands. The following exercises will show you the steps using the terminal and Visual Studio Code.
+.NET lets you create new projects with any version of Visual Studio or terminal commands. The following exercises show you the steps by using the terminal and Visual Studio Code.
 
-1. Open **Visual Studio code**.
-1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
-1. In the terminal, navigate to where you'd like the project to be created. 
+1. Open Visual Studio Code.
+1. Open the integrated terminal from Visual Studio Code by selecting **View**. Then on the main menu, select **Terminal**.
+1. In the terminal, go where you want to create the project.
 1. Run the dotnet terminal command:
 
     ```dotnetcli
     dotnet new blazorserver -o BlazingPizza --no-https true -f net6.0
     ```
 
-    This command creates a new Blazor server project, in a folder named **BlazingPizza** and tells the project to disable https.
-1. Select **File**, then select **Open folder...**.
-1. In the open dialog, navigate to the **BlazingPizza** folder, and select **Select Folder**.
-1. Visual Studio Code will prompt you to add required assets to build and debug the project, select **Yes**.
+    This command creates a new Blazor server project in a folder named **BlazingPizza**. It also tells the project to disable HTTPS.
+1. Select **File** > **Open folder**.
+1. In the Open dialog, go to the **BlazingPizza** folder and choose **Select Folder**.
+1. Visual Studio Code prompts you to add required assets to build and debug the project. Select **Yes**.
 
     :::image type="content" source="../media/3-install-missing-components.png" alt-text="Screenshot showing the missing assets dialog.":::
-1. Visual Studio Code will add **launch.json** and **tasks.json** in the **.vscode** folder of your project.
+1. Visual Studio Code adds **launch.json** and **tasks.json** in the **.vscode** folder of your project.
 
 These files enable you to run and debug your Blazor app with Visual Studio Code's debugging tools.
 
 ## Test your setup
 
-You can choose to use the terminal, or Visual Studio Code to run your app. 
+You can choose to use the terminal or Visual Studio Code to run your app.
 
-1. In the terminal window, you can start the Blazor app with:
+1. In the terminal window, start the Blazor app with:
     
     ```dotnetcli
     dotnet watch
     ```
 
-    This command will build and then start the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to projects files will automatically trigger a rebuild and then restart your app.
+    This command builds and then starts the app. The **watch** command tells dotnet to watch all your project files. Any changes you make to project files automatically trigger a rebuild and then restart your app.
 
-    Your computers default browser should open a new page at `http://localhost:5000`.
+    Your computer's default browser should open a new page at `http://localhost:5000`.
 
-1. To stop the app running, press <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal window.
+1. To stop the app, select <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal window.
 
 You can also run and debug your project with Visual Studio Code.
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
-1. The app should build, and open a new browser page.
-1. Visual Studio Code will also switch to the **Run and Debug** window that allows you to restart or stop your app.
+1. In Visual Studio Code, select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
 
-    :::image type="content" source="../media/3-visual-studio-code-debugging.png" alt-text="Screenshot of the debugging window in Visual Studio Code.":::
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+   The app should build and open a new browser page.
+1. Visual Studio Code also switches to the **Run and Debug** window that allows you to restart or stop your app.
+
+    :::image type="content" source="../media/3-visual-studio-code-debugging.png" alt-text="Screenshot showing the debugging window in Visual Studio Code.":::
+1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
 
 ## Download the Blazing Pizza assets and starter files
 
-You'll now clone your teams existing Blazor app project files from the GitHub repository [https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
+You'll now clone your teams' existing Blazor app project files from the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git).
 
-1. Delete your BlazingPizza folder, with file explorer or in Visual Studio Code.
+1. Delete your **BlazingPizza** folder by using the file explorer or in Visual Studio Code.
 
 1. In the terminal, clone the current working files into a new **BlazingPizza** folder.
 
@@ -67,17 +68,17 @@ You'll now clone your teams existing Blazor app project files from the GitHub re
     git clone https://github.com/MicrosoftDocs/mslearn-interact-with-data-blazor-web-apps.git BlazingPizza
     ```
 
-1. Run the current version of the app, press <kbd>F5</kbd>.
+1. Run the current version of the app. Select <kbd>F5</kbd>.
 
-    :::image type="content" source="../media/3-blazing-pizza-start.png" alt-text="Screenshot of the stater Blazing Pizza app.":::
+    :::image type="content" source="../media/3-blazing-pizza-start.png" alt-text="Screenshot showing the starter Blazing Pizza app.":::
 
 ## Make some pizzas
 
-The **index.razor** component is going to let customers select and configure the pizzas they'd like to order. The component responds to the root url of the app. 
+The **index.razor** component lets customers select and configure the pizzas they want to order. The component responds to the root URL of the app.
 
 The team has also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
 
-1. In **Visual Studio Code**, in the explorer expand the **Model** folder, then select **PizzaSpecial**.
+1. In Visual Studio Code, in the file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
 
     ```csharp
     namespace BlazingPizza;
@@ -101,8 +102,8 @@ The team has also created classes to represent the models in the app. Review the
     }    
     ```
 
-1. Note that a pizza order has a `Name`, `BasePrice`, `Description`, and `ImageUrl`.
-1. In the explorer, expand **Pages** and then select **Index.razor**.
+   Note that a pizza order has a `Name`, `BasePrice`, `Description`, and `ImageUrl`.
+1. In the file explorer, expand **Pages** and then select **Index.razor**.
 
     ```razor
     @page "/"
@@ -111,9 +112,9 @@ The team has also created classes to represent the models in the app. Review the
     
     ```
 
-    At the moment, there is only a single H1 tag for the title. You're going to add some code to create some pizza specials.
+    At the moment, there's only a single H1 tag for the title. You're going to add code to create pizza specials.
 
-1. Under the `<h1>` tag, add this C# code.
+1. Under the `<h1>` tag, add this C# code:
 
     ```razor
     @code {
@@ -136,12 +137,12 @@ The team has also created classes to represent the models in the app. Review the
 
     The `@code` block creates an array to hold the pizza specials. When the page is initialized, it adds six pizzas to the array.
 
-1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
+1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
-    The app should compile and run, and you'll see nothing has changed. The code isn't being used by anything in the client-side HTML. Let's fix that.
+    The app should compile and run, and you'll see that nothing has changed. The code isn't being used by anything in the client-side HTML. Let's fix that.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
-1. In **index.razor** replace all the code in the `<h1>` tag with this code.
+1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> or select **Stop Debugging**.
+1. In **index.razor**, replace all the code in the `<h1>` tag with this code:
 
     ```razor
     <div class="main">
@@ -167,8 +168,8 @@ The team has also created classes to represent the models in the app. Review the
     This code combines plain HTML alongside looping and member access directives. The `@foreach` loop creates an `<li>` tag for each pizza in the `specials` array.
 
     Inside the loop, each special pizza displays its name, description, price, and image with member directives.
-1. Press <kbd>F5</kbd> or select **Run** and then **Start Debugging**.
+1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
-    :::image type="content" source="../media/3-blazing-pizzas.png" alt-text="Screenshot of a list of blazing pizzas.":::
+    :::image type="content" source="../media/3-blazing-pizzas.png" alt-text="Screenshot showing a list of blazing pizzas.":::
 
 You now have a pizza base component to allow customers to order a pizza. You'll improve on this component in following exercises.
