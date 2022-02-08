@@ -5,8 +5,8 @@ metadata:
   title: Deploy a web app by swapping deployment slots
   description: Get details on what happens when you swap deployment slots.
   ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

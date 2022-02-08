@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Connect an app to the cache
   description: Connect an app to the cache
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: flang-msft
+  ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
