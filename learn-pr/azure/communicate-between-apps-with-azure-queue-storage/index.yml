@@ -4,8 +4,8 @@ metadata:
   title: Communicate between applications with Azure Queue storage
   description: Find out to use Azure Queue storage to handle high demand and improve resilience in your distributed applications.
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Communicate between applications with Azure Queue storage

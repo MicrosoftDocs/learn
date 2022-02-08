@@ -4,8 +4,8 @@ metadata:
   title: Classify your data
   description: Classify your data
   ms.date: 11/03/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Classify your data
@@ -38,4 +38,3 @@ quiz:
     - content: "Unstructured"
       isCorrect: true
       explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
-

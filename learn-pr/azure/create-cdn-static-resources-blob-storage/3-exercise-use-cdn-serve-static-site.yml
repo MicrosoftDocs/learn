@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Use a Content Delivery Network to publish a static website
   description: Use a Content Delivery Network to publish a static website
   ms.date: 4/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

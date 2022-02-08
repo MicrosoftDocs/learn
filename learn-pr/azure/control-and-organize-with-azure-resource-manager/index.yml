@@ -4,8 +4,8 @@ metadata:
   title: Control and organize Azure resources with Azure Resource Manager
   description: Use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
   ms.date: 03/25/2020
-  author: patridge
-  ms.author: adpatrid
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control and organize Azure resources with Azure Resource Manager
