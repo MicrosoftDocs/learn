@@ -56,9 +56,9 @@ var message = new ServiceBusMessage(message);
 await sender.SendMessageAsync(message);
 ```
 
-## To retrieve a topic message for a subscription
+## To receive messages from a subscription
 
-To retrieve a message for a subscription, you must create a `ServiceBusProcessor` object, and pass it the topic name and the subscription name.
+To receive a message from a subscription, you must create a `ServiceBusProcessor` object, and pass it the topic name and the subscription name.
 
 ```csharp
 processor = client.CreateProcessor(topicName, subscriptionName, options);
