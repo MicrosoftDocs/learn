@@ -4,11 +4,10 @@ metadata:
   title: What is MVVM?
   description: Understand the goals of the Model-View-ViewModel pattern and what each part represents
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: What is MVVM?
 durationInMinutes: 7
 content: |

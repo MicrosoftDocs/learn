@@ -4,8 +4,8 @@ metadata:
   title: Set up your Python beginner development environment with Visual Studio Code
   description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
   ms.date: 07/06/2021
-  author: bobtabor-msft
-  ms.author: chnoring
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

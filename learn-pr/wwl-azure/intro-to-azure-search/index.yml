@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Cognitive Search
   description: "Explore Azure Cognitive Search to discover how to create an index, import data, and query the index for better search results."
   ms.date: 02/07/2022
-  author: wwlpublish
-  ms.author: robmcm
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Cognitive Search
