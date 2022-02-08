@@ -40,17 +40,25 @@ Suppose that, for the e-commerce developer who's onboarding labs, the Windows pa
   "iconUri": "",
   "targetOsType": "",
   "parameters": {
-    "<parameterName>": {
-      "type": "",
-      "displayName": "",
-      "description": ""
+    "installUsername": {
+    "type": "string",
+    "displayName": "User name",
+    "description": "Installation user name"
+    },
+    "installPassword": {
+    "type": "securestring",
+    "displayName": "Password",
+    "description": "Installation password"
     }
   },
   "runCommand": {
     "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./installChocolatey.ps1'
   , ' -RawPackagesList ', parameters('packages')
   , ' -Username ', parameters('installUsername')
-  , ' -Password ', parameters('installPassword'))]"
+  , ' -Password ', (ConvertTo-SecureString ''', 
+       parameters('installPassword'), ''' 
+      -AsPlainText 
+      -Force))]"
   }
 }
 ```
@@ -70,7 +78,9 @@ The following table details each section of the JSON artifact schema and how it'
 
 ## Formulas and custom images
 
-You can use both custom images and formulas as a basis for creating new VMs. A custom image is based on a virtual hard drive (VHD) file. A formula is a base image and a list of preconfigured settings, such as VM size and artifacts. When you create a VM from a formula, the system uses these preconfigured settings as default values to accelerate the provisioning process. Optionally, you can override the default values.
+You can use both custom images and formulas as a basis for creating new VMs. A custom image is based on a virtual hard drive (VHD) file. A formula is a base image and a list of preconfigured settings, such as VM size and artifacts.
+
+When you create a VM from a formula, the system uses these preconfigured settings as default values to accelerate the provisioning process. Optionally, you can override the default values.
 
 ## Policies
 
