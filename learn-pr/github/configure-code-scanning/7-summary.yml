@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: Summary
   title: Summary # user input: module title for browser tab and search results
-  description: Review what we learned in this module # user input: a description for site search and SEO
+  description: Review what we learned in this module. # user input: a description for site search and SEO
   ms.date: 2/8/2022
   author: sterling463
   ms.author: csterling 

@@ -12,7 +12,7 @@ You can upload the results using the code scanning API, the CodeQL CLI, or GitHu
 
 The code scanning API lets you retrieve and update code scanning alerts from a repository. You can use the endpoints to create automated reports for the code scanning alerts in an organization or upload analysis results generated using offline code scanning tools.   
 
-The GitHub API can be accessed over HTTPS from `https://api.github.com`. All data is sent and recieved as JSON. The API uses custom media types to let consumers choose the format of the data they wish to recieve. Media types are specific to resources, allowing them to change independently and support formats that other resources don't. 
+The GitHub API can be accessed over HTTPS from `https://api.github.com`. All data is sent and received as JSON. The API uses custom media types to let consumers choose the format of the data they wish to receive. Media types are specific to resources, allowing them to change independently and support formats that other resources don't. 
 
 There is one supported custom media type for the code scanning REST API, `application/sarif+json`. 
 
@@ -24,10 +24,12 @@ Review the [GitHub REST API docs](https://docs.github.com/en/rest/reference/code
 
 The CodeQL CLI is a standalone product that you can use to analyze code. Its main purpose is to generate a database representation of a codebase, a CodeQL database. Once the database is ready, you can query it interactively, or run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. The CodeQL CLI is free to use on public repositories that are maintained on GitHub.com, and available to use on private repositories that are owned by customers with an Advanced Security license. Download the CodeQL bundle from https://github.com/github/codeql-action/releases. 
 The bundle contains:
+
    - CodeQL CLI product
    - A compatible version of the queries and libraries from https://github.com/github/codeql
    - Precompiled versions of all the queries included in the bundle
-You should always use the CodeQL bundle as this ensures compatibility and also gives much better performance than a separate download of the CodeQL CLI and checkout of the CodeQL queries. 
+
+You should always use the CodeQL bundle as this ensures compatibility and also gives much better performance than a separate download of the CodeQL CLI and checkout of the CodeQL queries.
        
 #### Code scanning analysis with GitHub Actions
   

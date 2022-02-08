@@ -3,7 +3,7 @@ configuring code scanning for your repository.
 ​
 This GitHub exercise is graded automatically once you have attempted 
 a solution to the challenge. The results of your actions, as well as 
-helpful feedback, are provided in real-time within the `grade-learner` workflow logs.
+helpful feedback, are provided in real-time within the `grade-learner` workflow logs. 
 ​
 Here are some helpful tips before you begin the exercise:
 ​
@@ -11,7 +11,7 @@ Here are some helpful tips before you begin the exercise:
 repository README to understand how the exercise works.
 - Follow the steps provided in the **Instructions** 
 section to successfully complete the exercise.
-- To see the results of your exercise, navigate to the the **Actions** 
+- To see the results of your exercise, navigate to the **Actions** 
 tab of your cloned repository and click on the most recent run on the **Grading** workflow.
 - Stuck on what to do? Revisit the content in the last unit or 
 check out the **Useful resources** section in 

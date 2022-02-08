@@ -12,17 +12,17 @@ Follow these steps to edit a workflow file:
 
 1. To open the workflow editor, click the edit icon in the upper-right corner of the file view.
 
-  :::image type="content" source="../media/2-edit-button-screenshot.png" alt-text="screenshot of the Edit button":::
+     :::image type="content" source="../media/2-edit-button-screenshot.png" alt-text="screenshot of the Edit button":::
   
 2. Make your edits.
 
 3. After you have edited the file, click **Start commit** and complete the "Commit changes" form. You can choose to commit directly to the current branch, or create a new branch and start a pull request.
 
- :::image type="content" source="../media/3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
+    :::image type="content" source="../media/3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
  
  Review the following sections for some common code scanning configuration options. 
 
-### Configuring frequency
+### Configure frequency
 
 A common edit to the workflow file is to adjust the frequency with which code scanning occurs. You can configure the CodeQL analysis workflow to scan code on a schedule or when specific events occur in a repository. You can also edit the workflow file to scan code when someone pushes a change, and whenever a pull request is created. This prevents developers from introducing new vulnerabilities and errors into the code. Scanning code on a schedule informs you about the latest vulnerabilities and errors that GitHub, security researchers, and the community discover, even when developers aren't actively maintaining the repository.
            
@@ -30,13 +30,13 @@ A common edit to the workflow file is to adjust the frequency with which code sc
 
 By default, the CodeQL analysis workflow uses the `on.push` event to trigger a code scan on every push to the default branch of the repository and any protected branches. For code scanning to be triggered on a specified branch, the workflow must exist in that branch.  If you scan on push, then the results appear in the Security tab for your repository. 
 
-Additionally, when an `on:push` scan returns results that can be mapped to an open pull request, these alerts will automatically appear on the pull request in the same place as other pull request alerts. The alerts are identified by comparing the existing analysis of the head of the branch to the analysis for the target branch.
+Additionally, when an `on:push` scan returns a result that can be mapped to an open pull request, these alerts will automatically appear on the pull request in the same place as other pull request alerts. The alerts are identified by comparing the existing analysis of the head of the branch to the analysis for the target branch.
          
  #### Scan on PR
 
 The default CodeQL analysis workflow uses the `pull_request` event to trigger a code scan on pull requests targeted against the default branch. If a pull request is from a private fork, the `pull_request` event will only be triggered if you've selected the "Run workflows from fork pull requests" option in the repository settings. If you scan pull requests, then the results appear as alerts in a pull request check.
 
-Using the `pull_request` trigger, configured to scan the pull request's merge commit rather than the head commit, will produce more efficient and accurate results than scanning the head of the branch on each push. However, if you use a CI/CD system that cannot be configured to trigger on pull requests, you can still use the `on:push` trigger and code scanning will map the results to open pull requests on the branch and add the alerts as annotations on the pull request. 
+If you use the `pull_request` trigger, configured to scan the pull request's merge commit rather than the head commit, it will produce more efficient and accurate results than scanning the head of the branch on each push. However, if you use a CI/CD system that cannot be configured to trigger on pull requests, you can still use the `on:push` trigger and code scanning will map the results to open pull requests on the branch and add the alerts as annotations on the pull request. 
          
 ### Define the severities causing pull request check failure
 
@@ -44,15 +44,15 @@ By default, only alerts with the severity level of `Error` or security severity 
 
 1. On GitHub.com, navigate to the main page of the repository. Under your repository name, click **Settings**.
 
- :::image type="content" source="../media/3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
+    :::image type="content" source="../media/3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
        
 2. In the left sidebar, click **Security & analysis**.
  
-  :::image type="content" source="../media/3-severities-3-security-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
+    :::image type="content" source="../media/3-severities-3-security-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
   
 3. In the "Code scanning" section, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
        
-  :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the Level of Severity drop down"::: 
+    :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the Level of Severity drop down"::: 
             
 ### Avoid unnecessary scans of pull requests
 
