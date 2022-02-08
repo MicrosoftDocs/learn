@@ -35,7 +35,7 @@ products:
 - github
 units:
 - learn.github.configure-code-scanning.1-introduction
-- learn.github.configure-code-scanning.2-what-is-code-scanning
+- learn.github.configure-code-scanning.2-what-code-scanning
 - learn.github.communicate-using-markdown.3-enable-code-scanning-with-third-party-tools
 - learn.github.communicate-using-markdown.4-configure-code-scanning
 - learn.configure-code-scanning.5-exercise
