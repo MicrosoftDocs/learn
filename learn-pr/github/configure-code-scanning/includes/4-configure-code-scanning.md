@@ -44,11 +44,11 @@ By default, only alerts with the severity level of `Error` or security severity 
 
 1. On GitHub.com, navigate to the main page of the repository. Under your repository name, click **Settings**.
 
- :::image type="content" source="..media/3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
+ :::image type="content" source="../media/3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
        
 2. In the left sidebar, click **Security & analysis**.
  
-  :::image type="content" source="../media/3-severities-3-security-and-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
+  :::image type="content" source="../media/3-severities-3-security-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
   
 3. In the "Code scanning" section, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
        

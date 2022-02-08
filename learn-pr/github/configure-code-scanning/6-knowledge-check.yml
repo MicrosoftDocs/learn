@@ -37,11 +37,11 @@ quiz:
       explanation: "Correct. Pushing a change and raising a pull request will trigger a scan by default when code scanning is enabled. "
     - content: "Creating a new branch."
       isCorrect: false
-      explanation: "Incorrect. Creating a new branch does not trigger a scan by default when code scanning is enabled, but it can be configured to trigger a scan."
+      explanation: "Incorrect. Creating a new branch doesn't trigger a scan by default when code scanning is enabled. It can however, be configured to trigger a scan."
 
     - content: "Deleting a branch."
       isCorrect: false
-      explanation: "Incorrect. Deleting a branch does not trigger a scan by default when code scanning is enabled, but it can be configured to trigger a scan."
+      explanation: "Incorrect. Deleting a branch doesn't trigger a scan by default when code scanning is enabled. It can however be configured to trigger a scan."
 
   - content: "Which of the following are the tools used to upload a SARIF file?"
     choices:
