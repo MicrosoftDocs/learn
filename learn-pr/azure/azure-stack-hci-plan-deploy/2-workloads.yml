@@ -4,7 +4,7 @@ metadata:
   title: What are the use cases of Azure Stack HCI?
   description: An overview of the use cases of Azure Stack HCI.
   ms.date: 12/09/2020
-  author: micrum
+  author: JasonGerend
   ms.author: jgerend
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -4,7 +4,7 @@ metadata:
   title: Plan and deploy Azure Stack HCI
   description: This module introduces you to planing for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
   ms.date: 12/09/2020
-  author: micrum
+  author: JasonGerend
   ms.author: jgerend
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
