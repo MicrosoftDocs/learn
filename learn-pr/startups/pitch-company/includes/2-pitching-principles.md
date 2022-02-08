@@ -21,7 +21,7 @@ Most people tend to underestimate the gap between their knowledge and that of th
 If you lose your audience early in your pitch, it's likely that they'll switch off and you'll struggle to keep their attention for the remainder of your presentation.
 
 > [!TIP]
-> Road-test your pitch on people who aren't involved in your startup and don't work in your sector. Doing this can help you to identify concepts that need to be explained up-front, and makes sure you don't use jargon, technical details, or names of other companies that are familiar to you, but not to others.
+> Road test your pitch on people who aren't involved in your startup and don't work in your sector. Doing this can help you to identify concepts that need to be explained up-front, and makes sure you don't use jargon, technical details, or names of other companies that are familiar to you, but not to others.
 
 A good rule of thumb is to only refer to anything that you're confident that at least 90 percent of your audience will know about.
 
@@ -49,7 +49,7 @@ Here's an example of a Gaddie Pitch for Canva:
 
 **Well, what we do is** provide simple online tools for anyone to make professional presentations, social media graphics, and more in just a few minutes.
 
-**In fact**, since launching in 2012, our customers have created over 5 billion designs using Canva.
+**In fact**, since we launched in 2012, our customers have created over 5 billion designs using Canva.
 
 ### Demo day pitch
 
@@ -90,7 +90,7 @@ Here are two examples worth checking out:
 
 ## Task
 
-Create your own Gaddie Pitch. If you don't yet have millions of users like Canva, you can use the *In fact* sentence to describe your early traction, the size of the market, or a recent customer anecdote.
+Create your own Gaddie Pitch. If you don't yet have millions of users like Canva, you can use the *in fact* sentence to describe your early traction, the size of the market, or a recent customer anecdote.
 
 Once you're happy with it, test it out on some friends by delivering your pitch and asking them to pitch back to you, describing what your company does in their own words. If they can describe your company reasonably accurately, that's a sign that your pitch is on target. If they struggle with it, you've got more work to do.
 
