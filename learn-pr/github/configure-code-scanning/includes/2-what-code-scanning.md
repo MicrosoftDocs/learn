@@ -1,8 +1,8 @@
-Code scanning uses CodeQL to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Code scanning is available for all public repositories, and for private repositories owned by organizations where GitHub Advanced Security is enabled. If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository's **Security** tab. After you fix the code that triggered the alert, GitHub closes the alert.
+Code scanning uses CodeQL to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Code scanning is available for all public repositories, and for private repositories owned by organizations where GitHub Advanced Security is enabled. If code scanning finds a potential vulnerability or error in your code, GitHub displays an alert in the repository's Security tab. After you fix the code that triggered the alert, GitHub closes the alert.
 
 You can use code scanning to find, triage, and prioritize fixes for existing problems in your code. Code scanning also prevents developers from introducing new problems. You can schedule scans for certain days and times, or trigger scans when a specific event occurs in the repository, such as a push.
 
-In this unit, you'll learn about CodeQL,the two options for setting up code scanning, and how to add the CodeQL workflow to your repository.
+In this unit, you'll learn about CodeQL, the two options for setting up code scanning, and how to add the CodeQL workflow to your repository.
 
 ## About code scanning with CodeQL
 
