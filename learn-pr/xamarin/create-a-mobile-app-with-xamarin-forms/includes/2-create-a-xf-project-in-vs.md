@@ -34,7 +34,7 @@ Using Xamarin.iOS and Xamarin.Android directly to craft mobile apps is a popular
 
 If we want to define our UI and UI behavior just once, that's where Xamarin.Forms comes in.
 
-In a Xamarin.Forms project, we define the UI and event handler code just once and every type is interpreted based on the platform on which the app is running. If the app uses a `Xamarin.Forms.Button` and we run it on iOS -- we'll get an iOS UIButton. If we run on Android, we'll get `Android.Widget.Button`. Because Xamarin.Forms always uses the built-in platform SDK types, we get the optimal performance that goes along with that.
+In a Xamarin.Forms project, we define the UI and event handler code just once and every type is interpreted based on the platform on which the app is running. If the app uses a `Xamarin.Forms.Button` and we run it on iOS--we'll get an iOS UIButton. If we run on Android, we'll get `Android.Widget.Button`. Because Xamarin.Forms always uses the built-in platform SDK types, we get the optimal performance that goes along with that.
 
 > [!TIP]
 > We mostly talk about what Xamarin.Forms can do in terms of mobile apps on iOS and Android. Xamarin.Forms code can also run on Windows, through the Universal Windows Platform (UWP), as well as Mac and Linux desktops.
