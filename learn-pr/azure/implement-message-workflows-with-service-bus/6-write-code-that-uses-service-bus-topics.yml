@@ -5,8 +5,8 @@ metadata:
   title: Write code to send and receive messages by using a topic
   description: Learn how to write code that sends messages to a topic and receives messages from a subscription to the topic.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
