@@ -12,13 +12,13 @@ Follow these steps to edit a workflow file:
 
 1. To open the workflow editor, click the edit icon in the upper-right corner of the file view.
 
-  :::image type="content" source="2-edit-button-screenshot.png" alt-text="screenshot of the Edit button":::
+  :::image type="content" source="../media/2-edit-button-screenshot.png" alt-text="screenshot of the Edit button":::
   
 2. Make your edits.
 
 3. After you have edited the file, click **Start commit** and complete the "Commit changes" form. You can choose to commit directly to the current branch, or create a new branch and start a pull request.
 
- :::image type="content" source="3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
+ :::image type="content" source="../media/3-start-commit-button-screenshot.png" alt-text="screenshot of the start commit button":::
  
  Review the following sections for some common code scanning configuration options. 
 
@@ -44,15 +44,15 @@ By default, only alerts with the severity level of `Error` or security severity 
 
 1. On GitHub.com, navigate to the main page of the repository. Under your repository name, click **Settings**.
 
- :::image type="content" source="3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
+ :::image type="content" source="..media/3-severities-2-settings-screenshot.png" alt-text="screenshot of the Settings button":::
        
 2. In the left sidebar, click **Security & analysis**.
  
-  :::image type="content" source="3-severities-3-security-and-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
+  :::image type="content" source="../media/3-severities-3-security-and-analysis-screenshot.png" alt-text="screenshot of the Security and analsis button"::: 
   
 3. In the "Code scanning" section, use the drop-down menu to select the severity level you would like to trigger a pull request check failure.
        
-  :::image type="content" source="3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the Level of Severity drop down"::: 
+  :::image type="content" source="../media/3-severities-4-level-severity-screenshot.png" alt-text="screenshot of the Level of Severity drop down"::: 
             
 ### Avoid unnecessary scans of pull requests
 

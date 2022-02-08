@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 ### YamlMime:ModuleUnit
-uid: learn.github.configure-code-scanning.2-what-is-code-scanning
+uid: learn.github.configure-code-scanning.4-configure-code-scanning
 title: Introduction
 metadata:
   unitType: What is code scanning 
@@ -13,4 +13,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-code-scanning.md)]
+  [!include[](includes/4-configure-code-scanning.md)]

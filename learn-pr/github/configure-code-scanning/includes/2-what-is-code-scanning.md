@@ -34,15 +34,15 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
 2. Under your repository name, click **Security**.
 
-    :::image type="content" source="3rd-party-content/microsoft-learn/modules/configure-code-scanning/media/2-security-tab-screenshot.png" alt-text="screenshot of the security tab":::
+    :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="screenshot of the security tab":::
 
 3. Click **Set up code scanning**. If this option is not available, ask an organization owner or repository administrator to enable GitHub Advanced Security. 
  
-   :::image type="content" source="3rd-party-content/microsoft-learn/modules/configure-code-scanning/media/3-set-up-code-scanning-button-screenshot.png" alt-text="screenshot of the set up code scanning button":::
+   :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="screenshot of the set up code scanning button":::
 
 4. In the "Get started with code scanning" section, click **Set up this workflow** on the CodeQL analysis workflow.
 
-   :::image type="content" source="3rd-party-content/microsoft-learn/modules/configure-code-scanning/media/4-set-up-this-workflow-button-screenshot.png" alt-text="screenshot of the set up workflow button":::
+   :::image type="content" source="../media/4-set-up-this-workflow-button-screenshot.png" alt-text="screenshot of the set up workflow button":::
 
    Workflows are only displayed if they are relevant for the programming languages detected in the repository. The CodeQL analysis workflow is always displayed, but the **Set up      this workflow** option is only enabled if CodeQL analysis supports the languages present in the repository.
 
@@ -52,11 +52,11 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
 6. Select the **Start commit** drop-down, and type a commit message.
 
-    :::image type="content" source="3rd-party-content/microsoft-learn/modules/configure-code-scanning/media/6-start-commit-screenshot.png" alt-text="screenshot of the start commit     drop down":::
+    :::image type="content" source="../media/6-start-commit-screenshot.png" alt-text="screenshot of the start commit     drop down":::
 
 7. Choose whether you'd like to commit directly to the default branch, or create a new branch and start a pull request.
 
-  :::image type="content" source="3rd-party-content/microsoft-learn/modules/configure-code-scanning/media/7-choose-where-commit-screenshot.png" alt-text="screenshot of the       choose where to commit drop down":::
+  :::image type="content" source="../media/7-choose-where-commit-screenshot.png" alt-text="screenshot of the       choose where to commit drop down":::
 
 8. Click **Commit new file** or **Propose new file**.
 
