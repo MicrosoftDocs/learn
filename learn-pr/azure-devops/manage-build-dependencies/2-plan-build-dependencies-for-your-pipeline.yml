@@ -5,8 +5,8 @@ metadata:
   title: Plan build dependencies for your pipeline
   description: Share code by using packages and consume the packages in your pipeline
   ms.date: 05/28/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
