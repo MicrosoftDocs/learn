@@ -32,7 +32,7 @@ When Airbnb started, a lot of smart people looked at the idea and said: "There's
 
 Of course, today we know that Airbnb is a wildly successful tech company. The unique insights of the founders gave them the ability to see past this objection and pursue a business model that most people thought wouldn't be viable.
 
-## Task 1
+## Task: Research your competitors
 
 Imagine you're trying to raise money from a venture capital fund, and you send them your pitch deck. One of the first things they'll do is consider the competitive landscape and make an assessment as to whether your startup is doing anything new or different to existing competitors.
 
@@ -48,7 +48,7 @@ The amount of [work needed to build and launch a startup is massive](https://www
 
 More than this, startups also need a range of skill sets and perspectives, and just about every founder benefits from the moral support of being part of a team. Having people you trust as thought leadership partners within the team can help you to weather the inevitable emotional ups and downs of establishing a startup and can build the resiliency necessary to get through the most challenging periods. Moreover, these individuals can provide different approaches to problem-solving that will ultimately contribute to faster progress.
 
-## Task 2
+## Task: Complete a startup skills checklist
 
 Complete the following startup skills checklist to see how your team stacks up. There's no absolutely right mix of skills, but if you find there's an obvious gap now is a good time to start working on filling it.
 
@@ -114,7 +114,7 @@ An example of launching too far ahead of the opportunity would be a marketplace 
 
 Conversely, you'd be a brave person to start an online bookstore company today. The optimal time for starting that business has passed.
 
-## Task 3
+## Task: Identify timing factors
 
 Make a note of any factors you can think of that effect the timing of your company. Is now a good time for this idea? Why?
 
@@ -126,7 +126,7 @@ Uber benefited from tailwinds when it launched in 2009. The founders had identif
 
 Had someone tried to launch a ridesharing app like Uber five years earlier, it wouldn't have made sense. Similarly, if someone was to start another rideshare company today it would work but would face stiff competition from a large number of existing ridesharing apps that have established traction, market share, and a strong brand.
 
-## Task 4
+## Task: Identify tailwinds
 
 Make a note of all of the tailwinds you can think of that might benefit your company. What can you do now to capitalize on them?
 
@@ -142,7 +142,7 @@ Hotmail decided to make their product shareable by putting a footer at the botto
 
 Over the course of a year and a half after launching, Hotmail grew from zero users to 9 million users, and was subsequently acquired in late 1997 by Microsoft for a reported $450 million. (For more information, see [Microsoft Acquires Hotmail](https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/?azure-portal=true), [List of mergers and acquisitions by Microsoft](https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft?azure-portal=true), and [How Hotmail changed Microsoft (and email) forever](https://arstechnica.com/information-technology/2017/12/how-hotmail-changed-microsoft-and-email-forever/?azure-portal=true).) Today, 9 million users doesn't seem like much, because there are billions of people on the internet. But [in 1997, this represented around one out of every eight internet users](https://www.internetworldstats.com/emarketing.htm?azure-portal=true)!
 
-## Task 5
+## Task: Find ways to share your product
 
 Make a note of the five software products that you use most often. See if you can find a way that each of them has been deliberately designed to be shareable. Has the company found a way of incentivizing existing users to share it with new users? Do you think this has contributed to the company's growth?
 
@@ -165,15 +165,17 @@ Recurring revenues are highly attractive because:
 - Customers often prefer to spread the cost of your product over a monthly billing cycle rather than having to pay for it up-front.
 - You can make money while you sleep!
 
-## Task 6
+## Task: Find ways to make revenue recurring
 
 Open your smartphone or your laptop. Make a note of all the products that you've subscribed to and that you're continuing to pay for on an ongoing basis.
 
-Ask yourself: Why do I continue to pay for this product? Look at the communications you've received from the company to see what they've done to ensure they retain you as a paying customer.
+> [!TIP]
+> Ask yourself: Why do I continue to pay for this product? Look at the communications you've received from the company to see what they've done to ensure they retain you as a paying customer.
 
 Are there any lessons that you can apply in your own startup?
 
 ## Worksheet
+
 In this unit, we've discussed nine shared attributes of successful companies. In the worksheet below you can score your company out of 9 based on the presence or absence of those attributes.
 
 Don't be concerned if you don't get all nine. By completing the remaining modules in the Microsoft for Startups Founders Hub, you'll have an opportunity to address any areas where your startup is currently lacking.

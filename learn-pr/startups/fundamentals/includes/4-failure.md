@@ -101,7 +101,7 @@ One of the reasons first-time founders fail to get advice from the right people 
 
 Similarly, investors are always on the lookout for promising startups. Good investors will generally take a meeting with a pre-launch startup founder as long as they can see that you're working on something that fits their investment mandate and you're seeking their advice, not just pitching them. As the old adage goes, "If you want money, ask for advice; If you want advice, ask for money".
 
-## Task
+## Task: Identify potential connections
 
 Make a wish list of people you'd like to connect with. Start with your local startup community, but also look further afield (the world is a pretty flat place these days). Reach out through mutual contacts, using LinkedIn or by sending a cold email or direct message. Have a specific question that you want to input on that you believe that individual is well-positioned to address; nobody likes to hear "I just want to pick your brains"!
 
