@@ -5,8 +5,8 @@ metadata:
   title: Interact with the Azure Storage APIs
   description: Interact with the Azure Storage APIs
   ms.date: 11/28/2020
-  author: cryophobia
-  ms.author: chrvaw
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

@@ -4,8 +4,8 @@ metadata:
   title: What is Windows Server software-defined storage?
   description: Provide an introduction to software-defined storage.
   ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

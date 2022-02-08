@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a virtual machine
   description: Use the Azure CLI to create a new VM
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

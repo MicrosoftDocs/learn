@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Consider which Distributed Denial of Service protection (DDoS protection) to use for your Microsoft Azure services.
   ms.date: 02/10/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

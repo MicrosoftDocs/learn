@@ -5,8 +5,8 @@ metadata:
   title: Work with return values and input parameters
   description: Learn how methods are designed to return values, accept multiple input parameters, and offer different versions with different signatures.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

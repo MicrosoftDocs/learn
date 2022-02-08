@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.logic-apps-and-custom-connectors
 metadata:
-  title:  Call an API from a Logic Apps workflow using a custom connector
+  title: Call an API from a Logic Apps workflow using a custom connector
   description: In this module, learn to create a Logic Apps custom connector to call an API from a Logic Apps workflow.
   ms.date: 04/11/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW

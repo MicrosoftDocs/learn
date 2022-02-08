@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an HTTP trigger and run an Azure Function with an HTTP request
   description: Create an HTTP trigger
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-powershell

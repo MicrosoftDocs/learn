@@ -4,8 +4,8 @@ metadata:
   title: What is Azure Stack?
   description: Describe the Azure Stack portfolio, hybrid cloud model, hybrid characteristics of Azure Stack, and the basic characteristics of Azure Stack products
   ms.date: 12/09/2020
-  author: micrum
-  ms.author: micrum
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

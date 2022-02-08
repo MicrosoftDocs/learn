@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add Azure Storage configuration to your app
   description: Exercise - Add Azure Storage configuration to your app
   ms.date: 11/28/2020
-  author: cryophobia
-  ms.author: chrvaw
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript

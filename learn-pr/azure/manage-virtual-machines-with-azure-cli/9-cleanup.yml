@@ -5,8 +5,8 @@ metadata:
   title: Summary and cleanup
   description: Clean up the resources we used in this module
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
@@ -49,4 +49,3 @@ quiz:
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
       explanation: "This may work but is more complex than using the built-in query support of the Azure CLI."
-

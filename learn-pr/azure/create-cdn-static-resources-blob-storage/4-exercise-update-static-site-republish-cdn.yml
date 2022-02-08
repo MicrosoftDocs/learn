@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Update a Website and republish to a Content Delivery Network
   description: Update a Website and republish to a Content Delivery Network
   ms.date: 4/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
