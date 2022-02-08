@@ -2,7 +2,7 @@
 uid: learn.startups.pitch-company
 metadata:
   title: How to pitch your company
-  description: How to pitch your startup to investors.
+  description: Learn how to pitch your startup to investors. Understand what makes a pitch effective. See tips for delivering a compelling pitch.
   ms.date: 02/02/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -14,7 +14,9 @@ summary: >
 abstract: | 
   In this module, you'll:
 
-  - Fill in.
+  - Learn about types and formats of pitches.
+  - Understand what makes a pitch effective.
+  - See tips for delivering a compelling pitch.
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
@@ -29,9 +31,9 @@ products:
 - consumer
 units:
 - learn.startups.pitch-company.introduction
-- learn.startups.pitch-company.how-investment-works
-- learn.startups.pitch-company.investor-types
-- learn.startups.pitch-company.funding-rounds
+- learn.startups.pitch-company.pitching-principles
+- learn.startups.pitch-company.pitch-deck-content
+- learn.startups.pitch-company.deliver-compelling-pitch
 - learn.startups.pitch-company.knowledge-check
 - learn.startups.pitch-company.summary
 badge:

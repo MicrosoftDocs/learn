@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.pitch-company.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts of startup pitching. Topics include pitch deck material, how to polish presentation skills, and how to prepare pitch deck slides.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Which of the following slides is likely to belong in an investor pitch deck?"
+    choices:
+    - content: "Traction."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Team."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Customer acquisition."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Revenue model."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct."
+
+  - content: "Startups should have a readable version of their pitch deck because:"
+    choices:
+    - content: "Some investors make investment decisions without meeting the founders."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Some investors use a readable deck for screening deal-flow and will want to read yours before they decide to invite you to pitch."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "It's a useful asset to have available on your web site."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Customers like to know more about the companies they're buying from."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "If you're the CEO of your startup but aren't a confident presenter, how should you go about improving your pitch?"
+    choices:
+    - content: "Ask one of your cofounders to do it instead."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Record a video of your pitch and play that in investor meetings."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Work with mentors to refine the content of your pitch, work on vocal technique, and practice it until you know it back to front."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Take beta blockers before your presentation."
+      isCorrect: false
+      explanation: "Incorrect."
+
+  - content: "Roughly how many words should go on each slide for a demo day pitch?"
+    choices:
+    - content: "0-10."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "10-20."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "20-50."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "50-100."
+      isCorrect: false
+      explanation: "Incorrect."
