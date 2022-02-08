@@ -4,7 +4,7 @@ title: Exercise - Share data in Blazor applications
 metadata:
   unitType: learning-content
   title: Exercise - Share data in Blazor applications
-  description: "Add functionality to pass data using parameters and store app state in a container service."
+  description: "Add functionality to pass data by using parameters and store app state in a container service."
   ms.date: 8/13/2021
   author: csharpfritz
   ms.author: jefritz
