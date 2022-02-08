@@ -11,12 +11,8 @@ You can start the Access Review process from the notification email or by going 
     
     :::image type="content" source="../media/access-review-email-0bf34680.png" alt-text="Screenshot that shows an example email from Microsoft to review access to a group":::
     
-    
-    ```
-    Select the **Start review** link to open the access review.
-    
-    ```
-2.  **If you don't have the email**, you can find your pending access reviews by following these steps:
+2.  Select the **Start review** link to open the access review.
+3.  **If you don't have the email**, you can find your pending access reviews by following these steps:
     
     1.  Sign in to the My Apps portal at [https://myapps.microsoft.com](https://myapps.microsoft.com/).
     2.  In the upper-right corner of the page, select the user next to your name and default organization. If more than one organization is listed, select the organization that requested an access review.
