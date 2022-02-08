@@ -4,7 +4,7 @@ metadata:
   title: Move large amounts of data to the cloud by using Azure Data Box family
   description: Learn how to move large amounts of data to the cloud by using Azure Data Box devices.
   ms.date: 07/26/2019
-  author: cwatson-cat
+  author: alkohli
   ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
