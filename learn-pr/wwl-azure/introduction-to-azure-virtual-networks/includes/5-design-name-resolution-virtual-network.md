@@ -75,8 +75,6 @@ DNS servers within a virtual network can forward DNS queries to the recursive re
 
 DNS forwarding also enables DNS resolution between virtual networks and allows your on-premises machines to resolve Azure-provided host names. In order to resolve a VM's host name, the DNS server VM must reside in the same virtual network and be configured to forward host name queries to Azure. Because the DNS suffix is different in each virtual network, you can use conditional forwarding rules to send DNS queries to the correct virtual network for resolution. The following image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method.
 
-:::image type="content" source="../media/inter-vnet-dns-812cc9a7.png" alt-text="image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method":::
-
 
 ### Azure provided DNS
 
