@@ -14,7 +14,7 @@ For physical and virtual machines, you can install the Log Analytics agent that 
 
     
 
-    ![Select Microsoft Sentinel from Azure Portal](../media/image3.png)
+    ![Select Microsoft Sentinel from Azure Portal](../media/azure-portal-search.png)
 
     
 
@@ -23,7 +23,7 @@ For physical and virtual machines, you can install the Log Analytics agent that 
 
     
 
-    ![Add Microsoft Sentinel solution to Log Analytics workspace](../media/image4.png)
+    ![Add Microsoft Sentinel solution to Log Analytics workspace](../media/sentinel-add-workspace.png)
 
     
 
