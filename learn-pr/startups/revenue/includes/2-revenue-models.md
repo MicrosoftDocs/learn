@@ -138,9 +138,9 @@ The following models are the 10 most common ones that tech startups use.
 
 **Practical considerations:**
 
-- Reliant on huge traffic volumes (typically millions of visitors per month) due to the low clickthrough rates on most ads.
+- Reliant on huge traffic volumes (typically millions of visitors per month) due to the low click-through rates on most ads.
 - Can be viable if you have a niche focus and a homogenous audience with common needs and interests, and if your site is a dominant player in that niche.
 
-## Task
+## Task: Evaluate a revenue model
 
 Select the revenue model that you believe makes most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work, and consider how you can test those assumptions with customers, either through customer interviews or by running experiments.

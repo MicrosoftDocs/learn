@@ -28,6 +28,8 @@ Over time, as you refine your product, add more features, and improve the onboar
 
 This approach can be seen in practice by studying successful companies and observing which customer segment they focused on in the beginning, and how they broadened this focus over time.
 
+## Example
+
 Calendly is a great example.  The company started out focusing just on power users who needed to schedule a lot of meetings and were currently relying on sending emails back and forth to find a time that suited both parties. By making scheduling a much simpler task for these users, Calendly became an indispensable tool that saved time and reduced frustration for regular meeting organizers.
 
 Similar to Hotmail, these users regularly included a Calendly link in their emails. By demonstrating their reliance on Calendly, they convinced many new users to try the product, which contributed to Calendly's viral growth.
@@ -46,7 +48,8 @@ Some other common attributes of early adopters:
 - They're happy to give you candid feedback and genuinely want you to succeed.
 - They're likely to have experimented with alternatives, including creating makeshift solutions themselves (such as a spreadsheet or a database).
 
-**Practical tip:** When conducting customer interviews, ask whether the person would be willing to try your product before it launches and give you some feedback. If they say yes, you can tag them as a potential early adopter.
+> [!TIP]
+> When conducting customer interviews, ask whether the person would be willing to try your product before it launches and give you some feedback. If they say yes, you can tag them as a potential early adopter.
 
 Early adopters aren't the same as ideal target customers, but in many cases, there's a significant overlap between these two groups.
 
@@ -56,11 +59,12 @@ Early adopters are the users who would be willing to try your product before any
 
 By combining the attributes of your ideal first customer and early adopters, it's possible to create a persona that represents the users who are both a good fit for your product (ideal first customers), and who are likely to be receptive to trying it after your initial go-to-market (early adopters).
 
-**Practical tip:** Time that you've invested in creating an ideal customer persona will help you to define this target user.
+> [!TIP]
+> Time that you've invested in creating an ideal customer persona will help you to define this target user.
 
 There are a few others factors to consider when deciding which users to target first:
 
-- Is this person well known in their sector or recognized as a thought leader? Would their use of your product influence others to do the same? 
+- Is this person well known in their sector or recognized as a thought leader? Would their use of your product influence others to do the same?
 - Would they be willing to provide a customer testimonial or a short video?
 - Do they have a large following on social media?
 - If the customer is a business, is it a trusted brand that would confer credibility when listed as a reference customer on your website and in your marketing materials?
