@@ -24,12 +24,13 @@ the exercise's repository README for some additional resources.
 > **Altering the contents in this workflow can break the exercise's** 
 > **ability to validate your actions, provide feedback, or grade the results**.
 ​
+
 This exercise is a challenge based on content covered in this module. 
 It may take several attempts to complete the exercise, you can revisit 
-previous content in this module, or navigate to some of the additional r
-esources provided as many times as you want to find the solution.
+previous content in this module, or navigate to some of the additional 
+resources provided as many times as you want to find the solution.
 ​
-> When you've finished the exercise in GitHub, return here for:
+When you've finished the exercise in GitHub, return here for:
 > [!div class="checklist"]
 > * A quick knowledge check
 > * A summary of what you've learned
