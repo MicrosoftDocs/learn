@@ -3,7 +3,7 @@ uid: learn.wwl.explore-package-dependencies
 metadata:
   title: Explore package dependencies
   description: "Explore package dependencies"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Scan your codebase for dependencies
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-explore-package-dependencies.svg
 levels:
 - advanced
 roles:
