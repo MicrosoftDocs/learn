@@ -36,7 +36,8 @@ Besides a professional-looking photo, your profile should include a summary that
 
 The **About** section of your LinkedIn profile is also a great place to mention the kinds of opportunities you're looking for. People are naturally inclined to try to help, so you might as well make it easy for them. Think about your business objectives. What opportunities do you want more of, and how can you articulate these to make it easy for the right people to connect with you?
 
-**Task:** Review the LinkedIn Learning course [Rock Your LinkedIn Profile](https://www.linkedin.com/learning/rock-your-linkedin-profile?azure-portal=true) for practical tips on getting the most out of LinkedIn.
+> [!IMPORTANT]
+> Review the LinkedIn Learning course [Rock Your LinkedIn Profile](https://www.linkedin.com/learning/rock-your-linkedin-profile?azure-portal=true) for practical tips on getting the most out of LinkedIn.
 
 ## Get some decent photos
 

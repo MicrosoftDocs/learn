@@ -106,13 +106,13 @@ There are several other domains you should consider registering at the same time
 
 Lastly, if your company will be heavily reliant on one or more social networks to reach users, you should check on the availability of social handles. It could be highly undesirable to pick a company name only to realize later that there are existing social media accounts using that name.
 
-## Doesn't infringe an existing Trademark
+## Doesn't infringe an existing trademark
 
 A final step before locking in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search?azure-portal=true), and can help to give you some confidence that you're not choosing a name that will lead you to an expensive lawsuit in the future.
 
 It's often a good idea to consult with a trademark attorney who can do a more robust search and advise you on any trademark issues.
 
-## Task
+## Task: Evaluate your company name
 
 Score your company name (or proposed name) out of eight by using this score sheet.
 
@@ -124,14 +124,14 @@ Remember that the principles we've discussed in this unit are a guide only, and 
 
 Startup name: __________________________________
 
-- Simple.
-- Memorable.
-- Easy to spell.
-- Easy to say.
-- Safe in other languages.
-- Future-proof.
-- The dot-com domain is available.
-- Doesn't infringe an existing trademark.
+&#9744; Simple.<br>
+&#9744; Memorable.<br>
+&#9744; Easy to spell.<br>
+&#9744; Easy to say.<br>
+&#9744; Safe in other languages.<br>
+&#9744; Future-proof.<br>
+&#9744; The dot-com domain is available.<br>
+&#9744; Doesn't infringe an existing trademark.
 
 Score: ___ / 8
 
