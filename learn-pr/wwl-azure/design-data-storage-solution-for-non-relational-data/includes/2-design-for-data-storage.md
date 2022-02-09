@@ -29,7 +29,7 @@ In Azure, non-relational data is contained in several different storage data obj
 
 **Azure Blob storage** is an object store used for storing vast amounts unstructured data. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
 
-**Azure Files** is a shared storage service that lets you access files via the Server Message Block (SMB) protocol or CIFS (**Common Internet File System** )on Linux. 
+**Azure Files** is a shared storage service that lets you access files via the Server Message Block (SMB) protocol or Network File Share (NFS) )on Linux. 
 
 **Azure managed disks** are block-level storage volumes that are managed by Azure and used with Azure virtual machines. Managed disks are like a physical disk in an on-premises server but, virtualized. 
 
