@@ -118,7 +118,7 @@ The following outline lists the key topics that most investors want to see cover
 
 - Any slides that address topics you have predicted are likely to come up as questions (for example, financial forecasts, in-depth competitor analysis, etc.).
 
-## Task
+## Task: Create a rough investor pitch deck
 
 Create a rough investor pitch deck using the outline above. This is a useful exercise even if you're a long way from being ready to pitch investors. It can help you to think through and articulate the key elements of your business, and by sharing the pitch deck with others (such as mentors) you can get valuable feedback and sanity-check your thinking.
 

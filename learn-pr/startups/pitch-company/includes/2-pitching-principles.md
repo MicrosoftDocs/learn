@@ -88,7 +88,7 @@ Here are two examples worth checking out:
 - Flip Y Combinator application video
   > [!VIDEO <https://youtu.be/N5cBGeRMxms>]
 
-## Task
+## Task: Create your own Gaddie Pitch
 
 Create your own Gaddie Pitch. If you don't yet have millions of users like Canva, you can use the *in fact* sentence to describe your early traction, the size of the market, or a recent customer anecdote.
 

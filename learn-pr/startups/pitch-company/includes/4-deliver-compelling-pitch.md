@@ -150,20 +150,25 @@ Below are some practical tips to help you deliver a great pitch.
 - Some people find that they're tempted to create a script for their entire presentation. This is generally not helpful because very few people can memorize an entire script. When they try to, they inevitably lose their train of thought partway through their presentation, and it can be difficult to regain it. Even if you could memorize a script, it would sound like you're reading something rather than speaking authentically.
 - Most people find it's helpful to script the first couple of sentences of a pitch. By doing this and rehearsing them until you could say them in your sleep, you'll be starting your presentation with confidence, knowing exactly what you plan to say at the outset. After the first couple of sentences, you'll relax into a more natural speaking style.
 
-## Task
+## Task: Review these pitch videos
 
 Following is a selection of pitches from startup demo days to illustrate some of the techniques we've covered in this module. Take a few minutes to watch each pitch video. Make a note of what you like and dislike about each one. Were there any techniques that you think would work well in your own startup pitch?
 
 - DefinedCrowd (Microsoft Accelerator Seattle Demo Day)
   > [!VIDEO https://youtu.be/5PbEWPm_d2Q?t=1902]
+
 - Tethr (500 Global Demo Day)
   > [!VIDEO https://youtu.be/2PVSEljwb5g?t=694]
+
 - Kiira (500 Global Demo Day)
   > [!VIDEO https://youtu.be/2PVSEljwb5g?t=829]
+
 - Huzzle (Disruptors Demo Day)
   > [!VIDEO https://youtu.be/1rDQhweJliQ?t=218]
+
 - MightyFly (500 Global Demo Day)
   > [!VIDEO https://youtu.be/FcfAi3fAdg0?t=2743]
+
 - Eventnoire (Techstars Chicago Demo Day)
   > [!VIDEO https://youtu.be/ytSZ8Ph-CpA?t=2742]
 
