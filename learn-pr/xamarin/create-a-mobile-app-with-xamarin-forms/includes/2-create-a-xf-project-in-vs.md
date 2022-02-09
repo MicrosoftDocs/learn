@@ -12,9 +12,9 @@ Xamarin.Forms is incredibly easy to use, but to appreciate how it manages all it
 
 ### Operating system
 
-Like every piece of software running on just about any type of system, programs written for mobile devices run on operating systems. Operating systems provide several services, including providing access to critical things like memory and CPU. It's possible to write a program where the only services you consume come directly from the operating system.
+Like every piece of software running on just about any type of system, programs written for mobile devices run on operating systems. Operating systems provide several services, including providing access to critical things like memory and CPU. 
 
-Crafting mobile apps this way is very unusual. It means using C, and maybe even assembly to build your whole app.
+It's possible to write a program where the only services you consume come directly from the operating system. However, crafting mobile apps this way is unusual. It means using C, and maybe even assembly to build your entire app.
 
 ### Platform SDKs
 
@@ -47,7 +47,7 @@ As we've seen, Xamarin.Forms makes it easy to access common controls like button
 - Multiple page types for creating rich navigation types, like drawers.
 - Support for XAML and data-binding, for more elegant and maintainable development patterns.
 
-You can also extend Xamarin.Forms functionality in a number of ways:
+You can also extend Xamarin.Forms functionality in several ways:
 
 - NuGet packages help you to use third-party and other Microsoft libraries in your Xamarin.Forms apps.
 - Native controls. For instance, when your Xamarin.Forms app runs on Android, it might include a floating action button. Or, on iOS, you might include a UISegmentedControl.
@@ -65,17 +65,17 @@ Visual Studio's new project templates for Xamarin.Forms apps all include the Xam
 
 With Visual Studio and the mobile development workload installed, we have what we need to get started building mobile apps. Even the free Community Edition of Visual Studio works.
 
-To create a new project from Visual Studio 2019, go to the New Project dialog box, and search for "mobile". Then select the **Mobile App (Xamarin.Forms)** template. (We'll be doing exactly this during our first coding exercise.) You'll then enter a name and location for your new project. The next dialog box has a few starter app templates from which to choose. Select **Blank** because we'll be adding our own custom navigation and pages. As you'll see in our first exercise, even the blank app template comes with a starter "Hello World" type page, so it's not quite completely blank. This is also the dialog where you will pick the platforms you wish to support with your Xamarin.Forms app.
+To create a new project from Visual Studio 2019, go to the New Project dialog box, and search for "mobile". Then select the **Mobile App (Xamarin.Forms)** template. (We'll be doing exactly this during our first coding exercise.) You'll then enter a name and location for your new project. The next dialog box has a few starter app templates from which to choose. Select **Blank** because we'll be adding our own custom navigation and pages. As you'll see in our first exercise, even the blank app template comes with a starter "Hello World" type page, so it's not completely blank. This is also the dialog where you'll pick the platforms you wish to support with your Xamarin.Forms app.
 
 The structure of the solution looks like this:
 
 ![Screenshot of Solution Explorer showing a new blank Xamarin.Forms app collapsed to project names: App1, App1.Android, and App1.iOS.](../media/2-solution-with-project-names.png)
 
-We notice three projects are created in the solution. They all have the same root name, but two of them have a suffix (".iOS" or ".Android"). Those projects compile to executable programs, one for each platform. These are sometimes called *head projects*. The third project is used by the executables, and it's where we'll put all the code and markup we want them to have in common. In a typical Xamarin.Forms solution, almost all of our work will happen in this third project.
+Three projects are created in the solution. They all have the same root name, but two of them have a suffix (".iOS" or ".Android"). The projects compile to executable programs, one for each platform. These are sometimes called *head projects*. The third project is used by the executables, and it's where we'll put all the code and markup we want them to have in common. In a typical Xamarin.Forms solution, almost all of our work will happen in this third project.
 
 ### Head projects
 
-Taking a closer look at the head projects, we can see that iOS and Android have different basic constructions. For instance, iOS has a Main.cs and an AppDelegate.cs, but Android has a MainActivity.cs. The reason they're different is that the iOS project's construction uses the same building blocks as any iOS project, including Objective C or Swift projects. The Android project uses the same building blocks as a Java or Kotlin Android project. Fundamentally, these _are_ just an Android app and an iOS app (using Xamarin.iOS and Xamarin.Android, respectively, to expose their APIs as C# classes).
+Taking a closer look at the head projects, we can see that iOS and Android have different basic constructions. For instance, iOS has a Main.cs and an AppDelegate.cs, but Android has a MainActivity.cs. The reason they're different is that the iOS project's construction uses the same building blocks as any iOS project, including Objective C or Swift projects. The Android project uses the same building blocks as a Java or Kotlin Android project. Fundamentally, these projects *are* just an Android app using Xamarin.Android and an iOS app using Xamarin.iOS, exposing their APIs as C# classes.
 
 :::image type="complex" source="../media/2-head-projects-with-contents.png" alt-text="Screenshot showing platform-specific head projects, with project file structure and contents expanded.":::
     The Android app, App1.Android, includes an Assets folder, Resources folder, and MainActivity.cs. The iOS app, App1.iOS, includes Asset Catalogs, Native References, Resources, AppDelegate.cs, and Entitlements.plist.
@@ -94,7 +94,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 ```
 
-In Android, it's in the **OnCreate** method of the MainActivity.cs file.
+In Android, it's in the **OnCreate** method of the **MainActivity.cs** file.
 
 ```csharp
 protected override void OnCreate(Bundle savedInstanceState)

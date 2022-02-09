@@ -94,7 +94,7 @@ Next, let's restructure the code a little. We'll be creating our own code-based 
 
 Next, we need to describe the user interface for Phoneword. We are using controls defined in Xamarin.Forms, which will then be rendered with native implementations in each project.
 
-1. Working in the **MainPage.cs** constructor, do the following.
+1. Working in **MainPage.xaml.cs**, in the `MainPage` constructor, do the following.
 1. Set the page's `Padding` to "20" all around. Setting the margin will ensure the controls aren't against the edge of the screen.
 1. Create a `StackLayout` with `Spacing = 15`.
 1. Create the required controls for the Phoneword UI:
@@ -290,7 +290,7 @@ To make calls on Android an additional step is required. We must explicitly decl
 
 We can now call the dialer system in Xamarin.Essentials in our shared code.
 
-Open MainPage.cs, and replace the `TODO` line in the `OnCall` method with the following code. Add the `using Xamarin.Essentials` statement to make the `PhoneDialer` class available.
+Open MainPage.xaml.cs, and replace the `TODO` line in the `OnCall` method with the following code. Add the `using Xamarin.Essentials` statement to make the `PhoneDialer` class available.
 
 ```csharp
 using Xamarin.Essentials;
