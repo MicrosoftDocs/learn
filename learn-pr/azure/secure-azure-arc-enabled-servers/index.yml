@@ -27,7 +27,7 @@ products:
 - azure
 units:
 - learn.azure.secure-azure-arc-enabled-servers.introduction
-- learn.azure.secure-azure-arc-enabled-servers.assess-secure-and-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud
+- learn.azure.secure-azure-arc-enabled-servers.assess-secure-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud
 - learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-defender-for-cloud
 - learn.azure.secure-azure-arc-enabled-servers.secure-azure-arc-enabled-servers-with-microsoft-defender-for-servers
 - learn.azure.secure-azure-arc-enabled-servers.threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel
