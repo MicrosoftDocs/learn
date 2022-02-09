@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,19 +15,19 @@ durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a correct aspect of a dependency management strategy?"
     choices:
     - content: "Standardization."
       isCorrect: false
-      explanation: "Incorrect. There are many aspects of a dependency management strategy like Standardization, Package formats and sources, Versioning."
+      explanation: "Incorrect. There are many aspects of a dependency management strategy like Standardization, Package formats, and sources, Versioning."
     - content: "Versioning."
       isCorrect: false
-      explanation: "Incorrect. There are many aspects of a dependency management strategy like Standardization, Package formats and sources, Versioning."
+      explanation: "Incorrect. There are many aspects of a dependency management strategy like Standardization, Package formats, and sources, Versioning."
     - content: "Binaries sharing."
       isCorrect: true
-      explanation: "Correct. There are many aspects of a dependency management strategy like Standardization, Package formats and sources, Versioning."
+      explanation: "Correct. There are many aspects of a dependency management strategy like Standardization, Package formats, and sources, Versioning."
   - content: "Which of the following choices isn't a way of componentization commonly used?"
     choices:
     - content: "Symbol componentization."
@@ -35,10 +35,10 @@ quiz:
       explanation: "Correct. There are two ways of componentization commonly used, which is source componentization and package componentization."
     - content: "Source componentization."
       isCorrect: false
-      explanation: "Incorrect. There are two ways of componentization commonly used, which is source componentization and package componentization."
+      explanation: "Incorrect. There are two ways of componentization commonly used: source componentization and package componentization."
     - content: "Package componentization."
       isCorrect: false
-      explanation: "Incorrect. There are two ways of componentization commonly used, which is source componentization and package componentization."
+      explanation: "Incorrect. There are two ways of componentization commonly used: source componentization and package componentization."
   - content: "Which of the following choices is the aspect of dependency management that allows a repeatable, predictable process and usage that can be automated?"
     choices:
     - content: "Versioning."

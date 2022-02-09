@@ -24,5 +24,5 @@ For more information about onboarding them for management with DSC, see [Onboard
 
 For more information on installing and removing Hybrid Runbook Workers and groups, see:
 
- -  [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker.](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker#installing-hybrid-runbook-worker)
+ -  [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker.](/azure/automation/automation-hybrid-runbook-worker#installing-hybrid-runbook-worker)
  -  [Hybrid Management in Azure Automation](https://azure.microsoft.com/blog/hybrid-management-in-azure-automation/)
