@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Clone a repository and create a branch
   description: Perform common tasks in Visual Studio Code by using shortcuts, visual cues, and built-in Git tools.
   ms.date: 3/18/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: gregvanl
+  ms.author: gregvanl
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

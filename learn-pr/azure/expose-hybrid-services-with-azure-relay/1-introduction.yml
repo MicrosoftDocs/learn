@@ -2,10 +2,10 @@
 uid: learn.expose-hybrid-services-with-azure-relay.1-introduction
 metadata:
   title: Introduction
-  description: In this unit, you'll learn about a business scenario that you can address by using Azure Relay. 
+  description: In this unit, you'll learn about a business scenario that you can address by using Azure Relay.
   ms.date: 02/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

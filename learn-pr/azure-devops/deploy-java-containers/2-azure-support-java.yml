@@ -5,8 +5,8 @@ metadata:
   title: How do Azure and Azure DevOps support Java applications?
   description: Understand what Java containers are and how they can be deployed to Azure.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

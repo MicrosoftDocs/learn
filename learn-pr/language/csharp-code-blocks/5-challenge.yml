@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Use the concepts you just learned about to solve a real world challenge in code.
   ms.date: 09/26/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -5,8 +5,8 @@ metadata:
   title: Access an API with a Logic App custom connector
   description: In this unit, you will learn how to create a custom connector.
   ms.date: 04/11/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW

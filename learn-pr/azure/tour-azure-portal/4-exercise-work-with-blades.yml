@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Work with panes
   description: Log into the Azure portal and explore the basic UI with panes.
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 # interactive: azure-portal

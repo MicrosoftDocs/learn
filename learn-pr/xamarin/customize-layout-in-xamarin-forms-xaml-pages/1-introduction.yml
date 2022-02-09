@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 2/10/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

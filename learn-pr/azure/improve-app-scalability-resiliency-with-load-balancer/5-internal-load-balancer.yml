@@ -4,8 +4,8 @@ metadata:
   title: Internal load balancers
   description: Internal load balancers
   ms.date: 08/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Internal load balancer

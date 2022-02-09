@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Plan work using Azure Boards
   description: Create a project, a team, and a board in Azure DevOps.
   ms.date: 05/20/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: kathrynee
+  ms.author: kaelli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

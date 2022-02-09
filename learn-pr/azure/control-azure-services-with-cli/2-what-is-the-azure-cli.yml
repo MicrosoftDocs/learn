@@ -5,8 +5,8 @@ metadata:
   title: What is the Azure CLI?
   description: Learn about the Azure CLI and the basics of installing it on each platform.
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: dbradish-microsoft
+  ms.author: dbradish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
