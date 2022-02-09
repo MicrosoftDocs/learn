@@ -90,7 +90,9 @@ Founders with this attribute:
 - Are able to understand other people's perspectives and respond empathetically.
 - Can engage in disagreements without becoming personally wounded.
 
-**Task:** If you're already part of a team, consider each team member's strengths and weaknesses in relation to these attributes. Are any attributes conspicuously absent?
+## Task: Identify strengths and weaknesses on your team
+
+If you're already part of a team, consider each team member's strengths and weaknesses in relation to these attributes. Are any attributes conspicuously absent?
 
 If you're a sole founder, consider your own strengths and weaknesses and identify any gaps. This will be useful information to have in mind as you think about who else to bring into your team.
 
@@ -143,7 +145,8 @@ In the early days of most startups, there's limited funding to pay anyone. There
 
 Once the company has funding, either from customer revenues or external investment, you'll be in a position to hire employees or contractors and begin scaling the company's operations.
 
-**Practical tip:** Don't wait until you're ready to recruit to start looking for candidates. Start building a wish-list of possible candidates and cultivate your relationships with them as early as possible. By staying in touch and keeping them informed about the progress you're making in your company, you'll be in a much stronger position to find and hire the right person quickly when you have the need and the funding.
+> [!TIP]
+> Don't wait until you're ready to recruit to start looking for candidates. Start building a wish-list of possible candidates and cultivate your relationships with them as early as possible. By staying in touch and keeping them informed about the progress you're making in your company, you'll be in a much stronger position to find and hire the right person quickly when you have the need and the funding.
 
 Below are some pros and cons of bringing in a cofounder versus hiring employees or contractors.
 
@@ -153,7 +156,9 @@ Below are some pros and cons of bringing in a cofounder versus hiring employees 
 |**Employee**|Can recruit from a large talent pool and bring in very specific skills<br><br>Can create some incentive to stay and perform via issuing stock options<br><br>Can terminate employment if they don't perform|Often not as committed as founders<br><br>May leave if they receive a better offer from another company<br><br>Often need to pay a competitive salary, burning through the company's cash faster<br><br>Viable only once there's a substantive ongoing need for their particular skill set|
 |**Contractor**|Can engage for short periods or specific tasks, even when the startup is still unproven<br><br>Can utilize freelancing platforms to hire from a large talent pool including low cost-of-labor countries<br><br>Can generally access ratings and feedback from previous clients<br><br>Can scale up or down (or terminate) their time commitment as needed<br><br>Good way to evaluate someone who could become an employee in the future|Likely to have less commitment than founders or employees<br><br>Can be more difficult to manage, particularly if in a different country or time zone<br><br>Need to pay, often either an hourly rate or an agreed project fee<br><br>Motivation is to get the job done and get paid, rather than to create long-term value<br><br>Availability and responsiveness may change if they give other projects higher priority|
 
-**Task:** Briefly map out the resourcing requirements for your startup over the coming 12 months. Consider the functional roles that might need to be filled, and whether they're best filled by a contractor, an employee or a cofounder.
+## Task: Evaluate resourcing requirements
+
+Briefly map out the resourcing requirements for your startup over the coming 12 months. Consider the functional roles that might need to be filled, and whether they're best filled by a contractor, an employee or a cofounder.
 
 Consider any candidates that you already know, and assess their fit based on whether you believe they have some of the attributes that we discussed above.
 

@@ -45,13 +45,13 @@ The main benefits of founder vesting are:
 - It incentivizes founders to stay for the long term, because they'll only earn a substantial shareholding by remaining involved.
 - It protects the company in the event that a founder leaves, by minimizing the chances of them walking away with a large unearned shareholding.
 
-Founder vesting has two components: A one-year cliff and monthly vesting.
+Founder vesting has two components: A one-year *cliff* and *monthly vesting*.
 
 A *cliff* is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming each founder has remained involved, 25 percent of their shares will vest.
 
 If a founder departs within the first year, they forfeit all of their shareholding. This makes sense on the basis that in most startups, not much value is created in the first year.
 
-The second component is monthly vesting, in which the remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years, as shown below.
+The second component is *monthly vesting*, in which the remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years, as shown below.
 
 :::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After remaining at zero for a year, it jumps and then steadily climbs.":::
 
@@ -64,5 +64,3 @@ This can be a contentious point but is often requested by investors because they
 ## What happens in an exit?
 
 If the company is acquired before all of the founders' shares have fully vested, it's common for vesting agreements to allow for immediate vesting of unvested shares. This is known as accelerated vesting, and ensures that founders are properly compensated alongside investors, employees, and any other shareholders.
-
-

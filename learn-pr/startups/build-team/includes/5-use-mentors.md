@@ -9,7 +9,7 @@ In this unit, we'll focus on two types of mentoring:
 - Informal connections that you make directly with experienced founders and investors
 - Structured mentoring relationships such as those found in most incubator and accelerator programs
 
-We'll also briefly discuss the mentor network that's part of the Microsoft for Startups Founders Hub and explain how you can tap into this valuable resource.
+We'll also briefly discuss the mentor network that's part of the [Microsoft for Startups Founders Hub](https://startups.microsoft.com?azure-portal=true) and explain how you can tap into this valuable resource.
 
 ## What makes a good mentor
 
