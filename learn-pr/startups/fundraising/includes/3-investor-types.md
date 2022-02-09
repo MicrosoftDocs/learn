@@ -23,7 +23,7 @@ Tips for raising money from friends and family:
 
 ## Angel investors
 
-An angel investor is a wealthy individual who's investing their own money, such as Melanie in the scenario above. In many cases, they have been successful entrepreneurs themselves.
+An angel investor is a wealthy individual who's investing their own money, such as Melanie in the previous scenario. In many cases, they have been successful entrepreneurs themselves.
 
 Good angel investors bring not just capital, but expertise and networks that can help you as you grow your company. Angel investors often work in groups, and an angel round can have a few or sometimes 20 or more individual investors participating.
 

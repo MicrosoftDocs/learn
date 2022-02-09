@@ -76,7 +76,8 @@ Term sheets are an important part of the fundraising process because they allow 
 
 The content of term sheets is beyond the scope of this unit. However, it's highly advisable for startup founders to be familiar with the key terminology and concepts contained in term sheets, and also to have put some thought into preparing a term sheet of their own.
 
-For more information on fundraising terminology and term sheets, see Brad Feld's book, [Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist](https://www.venturedeals.com/?azure-portal=true).
+> [!TIP]
+> For more information on fundraising terminology and term sheets, see Brad Feld's book, [Venture Deals: Be Smarter Than Your Lawyer and Venture Capitalist](https://www.venturedeals.com/?azure-portal=true).
 
 ## Be prepared for due diligence
 

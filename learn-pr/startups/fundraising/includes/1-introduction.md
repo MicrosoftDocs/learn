@@ -22,5 +22,3 @@ By the end of the module, you'll know:
 - What investors are looking for when they consider investing in startups.
 - How and when to raise money.
 - Tips for getting a funding round closed in reasonable timeframe and on fair terms.
-
-

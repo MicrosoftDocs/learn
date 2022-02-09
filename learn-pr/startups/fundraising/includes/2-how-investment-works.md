@@ -4,7 +4,7 @@ At its most basic, raising money from investors means selling a shareholding in 
 
 The difference between a bootstrapped company and an externally funded one can be seen in the following two charts, which show net cash flow over time.
 
-In scenario A, which the first chart depicts, the company is growing organically. The founders self-fund it until it can generate customer revenues. After that point, revenue will be the main source of funding for continued growth (commonly referred to as *bootstrapping*).
+In the first chart below, the company is growing organically. The founders self-fund it until it can generate customer revenues. After that point, revenue will be the main source of funding for continued growth (commonly referred to as *bootstrapping*).
 
 :::image type="content" source="../media/learning-path-net-cash-flow.png" alt-text="Line chart that shows net cash flow over time. The value starts at zero and briefly dips below zero. Then it becomes positive and steadily increases.":::
 
@@ -131,7 +131,8 @@ Some additional factors that investors will consider when making investment deci
 
 Many founders take a stepwise approach to committing time to their startup. This is a perfectly rational approach. However, when you're ready to raise funding, investors will expect you to be working in your business full-time and not as a side hustle.
 
-Practical tip: Before you make contact with an investor, ensure your LinkedIn profile reflects your role as founder of your company.
+> [!TIP]
+> Before you make contact with an investor, ensure your LinkedIn profile reflects your role as founder of your company.
 
 **Risk mitigation:** Investors will want to see that you've put in place some basic risk mitigation measures, such as:
 
@@ -152,7 +153,7 @@ This is one of the most misunderstood concepts in startups. This misconception f
 
 Let's explore this further by working through a hypothetical angel investor's startup investment portfolio.
 
-## Scenario
+## Scenario: An angel investor's perspective
 
 Melanie is an angel investor. She's decided that she's going to make seed-stage investments in 10 companies. She'll make investments averaging $100,000 in each company, and these investments will take place over a period of a few years.
 
@@ -228,7 +229,7 @@ Melanie's portfolio would now look like this:
 |Company 10|$100,000|$4,200,000|
 |Total|$1,000,000|$5,000,000|
 
-Some startup founders might think that a 42x return sounds egregious. However, it's perfectly rational. If Melanie is going to invest in 10 companies, and doesn't know which of them will be successful, *every single company she invests in has to be capable of generating something like a 42x return*.
+Some startup founders might think that a 42x return sounds egregious. However, it's perfectly rational. If Melanie is going to invest in 10 companies, and doesn't know which of them will be successful, ***every single company she invests in has to be capable of generating something like a 42x return***.
 
 Let's consider what this scenario looks like from the company's point of view. An investor return of $4.2 million doesn't represent the value of the entire company. If we assume that Melanie invested in the seed round, and the company subsequently raised money from other investors, her shareholding will have been diluted. It may have gone from 10 percent at the seed round to 2 percent on exit.
 
