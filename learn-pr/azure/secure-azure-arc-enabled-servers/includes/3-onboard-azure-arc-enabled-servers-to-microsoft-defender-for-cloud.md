@@ -20,11 +20,11 @@ VM extensions can be applied to your Azure Arc-enabled server-managed machine vi
 1. In the portal, browse **Servers - Azure Arc** and select your hybrid machine from the list.
 1. Choose **Extensions**, then select **Add**. Choose the Log Analytics VM Extension from the list of available extensions and follow the instructions in the wizard.
 
-![Select the Log Analytics VM Extension from Azure Portal](../media/log-analytics-extension.png)
+   ![Select the Log Analytics VM Extension from Azure Portal](../media/log-analytics-extension.png)
 
 4. To complete the installation, provide the workspace ID and primary key.
 
-![Configure Log Analytics VM Extension with the correct workspace details](../media/log-analytics-extension-details.png)
+   ![Configure Log Analytics VM Extension with the correct workspace details](../media/log-analytics-extension-details.png)
 
 5. After confirming the required information provided, select **Review + Create**. A summary of the deployment is displayed, and you can review the status of the deployment.
 

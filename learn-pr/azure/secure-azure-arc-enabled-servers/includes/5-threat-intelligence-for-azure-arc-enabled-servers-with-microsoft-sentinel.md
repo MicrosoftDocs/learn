@@ -31,7 +31,7 @@ Automate your common tasks and simplify security orchestration with playbooks�
 
 Using Azure Logic Apps, Microsoft Sentinel's automation and orchestration solution is extensible, scalable, and modernized. To build playbooks with Azure Logic Apps, you can choose from a growing gallery of built-in playbooks. These include 200+ connectors for services such as Azure functions. The connectors allow you to apply any custom logic in code, ServiceNow, Jira, Zendesk, HTTP requests, Microsoft Teams, Slack, Windows Defender ATP, and Defender for Cloud Apps. 
 
-## Hunting and Notebooks
+## Hunting and notebooks
 
 Use Microsoft Sentinel's powerful hunting search-and-query tools, based on the MITRE framework, to proactively hunt for security threats across your organization’s data sources before an alert is triggered. After you discover which hunting query provides high-value insights into attacks, you can also create custom detection rules based on your query and surface those insights as alerts to your security incident responders. While hunting, you can create bookmarks for interesting events, enabling you to return to them later, share them with others, and group them with other correlating events to create a compelling incident for investigation. 
 
