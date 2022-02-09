@@ -49,7 +49,7 @@ In this unit, you'll use your Communication Services phone number to send an SMS
     );
     ```
 
-    Replace <leased-phone-number> with an SMS-enabled phone number you provisioned in the previous unit, and <to-phone-number> with the phone number you wish to send a message to.
+    Replace \<leased-phone-number\> with an SMS-enabled phone number you provisioned in the previous unit, and \<to-phone-number\> with the phone number you wish to send a message to.
 
 1. Run the application from your application directory with the dotnet run command.
 
