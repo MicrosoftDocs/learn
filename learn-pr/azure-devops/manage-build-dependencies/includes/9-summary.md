@@ -15,7 +15,7 @@ Deciding where to host your package depends on many factors. For example:
 
 You might need to consider the language of the package and the process for accessing it. Here are some resources to check out when you're deciding where to host your packages:
 
-* [Azure Artifacts documentation](/azure/devops/artifacts/start-using-azure-artifacts)
+* [Azure Artifacts overview](/azure/devops/artifacts/start-using-azure-artifacts)
 * [NuGet](/nuget/?azure-portal=true)
 * [NPM](https://docs.npmjs.com?azure-portal=true)
 * [Maven](https://maven.apache.org/?azure-portal=true)
