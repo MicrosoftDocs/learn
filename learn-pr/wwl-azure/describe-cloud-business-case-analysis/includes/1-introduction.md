@@ -10,13 +10,13 @@ In this module, we'll focus on understanding the importance of a business case a
 
 After completing this module, you'll be able to describe: 
 
-- How to perform a Business Case Analysis (BCA)
-- How the analysis of alternatives (AoA) process works
-- How Non-financial operational benefits (NFO) work
-- How to perform a risk analysis
-- How to plan an adoption strategy for cloud computing technologies
+- How to perform a Business Case Analysis (BCA).
+- How the analysis of alternatives (AoA) process works.
+- How Non-financial operational benefits (NFO) work.
+- How to perform a risk analysis.
+- How to plan an adoption strategy for cloud computing technologies.
 
 ## Prerequisites
 
-- You should have an understanding of why business case analysis is necessary
-- You should understand several of the factors that go into making major decisions on cloud computing workloads
+- You should have an understanding of why business case analysis is necessary.
+- You should understand several of the factors that go into making major decisions on cloud computing workloads.
