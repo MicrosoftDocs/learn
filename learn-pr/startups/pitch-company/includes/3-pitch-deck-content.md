@@ -3,12 +3,12 @@ There's no single right or wrong pitch deck format, although there's general agr
 The following outline lists the key topics that most investors want to see covered, along with comments about what should go on each slide. It can be helpful as a checklist to ensure you include essential topics. Feel free to reorder the topics to suit your delivery.
 
 > [!TIP]
-> By taking the following steps, you can come up with the information that investors look for in pitch decks:
+> Work that you've completed earlier feeds directly into what investors are looking for:
 > 
-> - Evaluate whether your startup has attributes that lead to success, such as a non-obvious idea, a scalable business model, and a large market opportunity.
-> - Complete a [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) to understand your target customer's needs.
-> - Run experiments like clickable prototypes or mock sales to test your core assumptions.
-> - Select a revenue model that makes sense for your startup, such as a subscription or service delivery model.
+> - The attributes of successful companies checklist
+> - The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true)
+> - The experiments you've run to test core assumptions
+> - The revenue model you created
 
 ## Investor pitch deck outline
 
@@ -56,7 +56,7 @@ The following outline lists the key topics that most investors want to see cover
 ### Market
 
 - Addressable market size.
-- It's usually better to derive an addressable market figure from the bottom up (for example, we sell our product for $A, there are B potential customers, so the addressable market is $A x B) rather than top-down (for example, by referring to a market research report that says the total market is $X and we hope to capture Y percent).
+- It's usually better to derive an addressable market figure from the bottom up (for example, we sell our product for \$A, there are B potential customers, so the addressable market is \$A x B) rather than top-down (for example, by referring to a market research report that says the total market is \$X and we hope to capture Y percent).
 - Is it a huge existing market that is dominated by old companies and ripe for disruption? Or a nascent market that's about to become huge? Why?
 
 ### Validation

@@ -8,7 +8,7 @@ metadata:
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: interactive-tutorial
-  ms.prod: consumer
+  ms.prod: learning-consumer
 durationInMinutes: 5
 content: |
   [!include[](includes/2-pitching-principles.md)]
