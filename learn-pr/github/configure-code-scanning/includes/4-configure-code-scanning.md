@@ -58,16 +58,16 @@ By default, only alerts with the severity level of `Error` or security severity 
 
 You might want to avoid a code scan being triggered on specific pull requests targeted against the default branch, irrespective of which files have been changed. You can configure this by specifying `on:pull_request:paths-ignore` or `on:pull_request:paths` in the code scanning workflow. For example, if the only changes in a pull request are to files with the file extensions `.md` or `.txt` you can use the following `paths-ignore` array.
       
-      ```
-      on:
-         push:
-            branches: [main, protected]
-         pull_request:
-            branches: [main]
-            paths-ignore:
-               - '**/*.md'
-               - '**/*.txt'
-      ```
+```
+on:
+   push:
+      branches: [main, protected]
+   pull_request:
+      branches: [main]
+      paths-ignore:
+         - '**/*.md'
+         - '**/*.txt'
+```
 
 ### Adjust scanning schedule
 
@@ -75,15 +75,16 @@ If you use the default CodeQL analysis workflow, the workflow will scan the code
 
 The following example shows a CodeQL analysis workflow for a repository with a default branch called `main` and one protected branch called `protected`.
    
-      ```
-      on:
-         push:
-            branches: [main, protected]
-         pull_request:
-            branches: [main]
-         schedule:
-            - cron: '20 14 * * 1'
-      ```
+```
+on:
+   push:
+      branches: [main, protected]
+   pull_request:
+      branches: [main]
+   schedule:
+      - cron: '20 14 * * 1'
+```
+
 This workflow scans:
 
 - Every push to the default branch and the protected branch
