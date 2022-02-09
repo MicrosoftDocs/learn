@@ -16,7 +16,7 @@ In another module we'll discuss methods for validating your idea with customers 
 
 ## A derivative idea
 
-Chances are you have encountered startups that are based on a derivative idea. These companies are modelled on successful existing products but tweaked slightly to create something that's more useful to a narrower set of users or a narrower geography, or that has a slightly different feature set. In some cases, the startup is essentially an alternatively branded version of the original product with no substantive changes.
+Chances are you have encountered startups that are based on a derivative idea. These companies are modeled on successful existing products but tweaked slightly to create something that's more useful to a narrower set of users or a narrower geography, or that has a slightly different feature set. In some cases, the startup is essentially an alternatively branded version of the original product with no substantive changes.
 
 Some hypothetical examples to illustrate the concept: A social network just for pet owners, a rideshare company that operates in one specific city, or a voice chat product that's invite-only instead of open to anyone.
 
@@ -125,12 +125,18 @@ In this unit we've discussed seven factors that can be early indicators of event
 
 Complete the checklist below to score your startup against these six indicators. The ideal outcome is to get as low a score as possible. If you get zero that's fantastic, but don't be concerned if you answer "yes" to some. By completing the remaining modules in the Founders Hub you'll have an opportunity to explore ways to "un-fail" your startup by addressing any issues that you've identified.
 
-&#9744; I may be building a product that nobody wants.<br>
-&#9744; My idea seems like a derivative idea.<br>
-&#9744; I‘m going to be competing with free.<br>
-&#9744; I've been attempting to scale before achieving problem-solution fit.<br>
-&#9744; I'm too concerned about secrecy.<br>
-&#9744; I haven't been seeking out the right advice.<br>
+&#9744; I may be building a product that nobody wants.
+
+&#9744; My idea seems like a derivative idea.
+
+&#9744; I‘m going to be competing with free.
+
+&#9744; I've been attempting to scale before achieving problem-solution fit.
+
+&#9744; I'm too concerned about secrecy.
+
+&#9744; I haven't been seeking out the right advice.
+
 &#9744; My cofounder(s) and I haven't addressed how to manage disagreements.
 
 Score: __ / 7

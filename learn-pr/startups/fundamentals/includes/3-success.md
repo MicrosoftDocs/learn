@@ -1,4 +1,4 @@
-Successful startups share a number of important attributes. In this unit, we're going to cover some of the most common shared attributes of successful startups and give you an opportunity to score your start up against them.
+Successful startups share a number of important attributes. In this unit, we're going to cover some of the most common shared attributes of successful startups and give you an opportunity to score your startup against them.
 
 By understanding what makes startups succeed, you'll be able to bake some of these attributes into your startup from the very beginning.
 
@@ -52,13 +52,20 @@ More than this, startups also need a range of skill sets and perspectives, and j
 
 Complete the following startup skills checklist to see how your team stacks up. There's no absolutely right mix of skills, but if you find there's an obvious gap now is a good time to start working on filling it.
 
-&#9744; More than one founder<br>
-&#9744; Diverse backgrounds and perspectives<br>
-&#9744; Domain expertise relevant to the target market<br>
-&#9744; Tech skills suited to building the product<br>
-&#9744; Design skills<br>
-&#9744; Sales skills<br>
-&#9744; Communication skills<br>
+&#9744; More than one founder
+
+&#9744; Diverse backgrounds and perspectives
+
+&#9744; Domain expertise relevant to the target market
+
+&#9744; Tech skills suited to building the product
+
+&#9744; Design skills
+
+&#9744; Sales skills
+
+&#9744; Communication skills
+
 &#9744; Leadership skills
 
 ## Intense customer pain
@@ -116,7 +123,7 @@ Conversely, you'd be a brave person to start an online bookstore company today. 
 
 ## Task: Identify timing factors
 
-Make a note of any factors you can think of that effect the timing of your company. Is now a good time for this idea? Why?
+Make a note of any factors you can think of that affect the timing of your company. Is now a good time for this idea? Why?
 
 ## Tailwinds
 
@@ -180,14 +187,22 @@ In this unit, we've discussed nine shared attributes of successful companies. In
 
 Don't be concerned if you don't get all nine. By completing the remaining modules in the Microsoft for Startups Founders Hub, you'll have an opportunity to address any areas where your startup is currently lacking.
 
-&#9744; Based on a non-obvious idea<br>
-&#9744; Founded by the right team<br>
-&#9744; Addresses intense customer pain<br>
-&#9744; Has a scalable business model<br>
-&#9744; Represents a large market opportunity<br>
-&#9744; Benefits from advantageous timing<br>
-&#9744; Takes advantage of market tailwinds<br>
-&#9744; Has an inherently shareable product<br>
+&#9744; Based on a non-obvious idea
+
+&#9744; Founded by the right team
+
+&#9744; Addresses intense customer pain
+
+&#9744; Has a scalable business model
+
+&#9744; Represents a large market opportunity
+
+&#9744; Benefits from advantageous timing
+
+&#9744; Takes advantage of market tailwinds
+
+&#9744; Has an inherently shareable product
+
 &#9744; Has a business model based on recurring revenues
 
 Score: __ / 9

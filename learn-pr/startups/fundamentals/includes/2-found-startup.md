@@ -110,9 +110,9 @@ By identifying critical milestones or inflection points that allow you to build 
 
 Founders should consciously decide to invest their time and money into their startup in the same way as an investor would decide to invest in your company – that is, based on a rational and hard-nosed assessment of the prospects of the company, including the extent to which the founders have been able to identify, address, and retire the core risks that could cause the startup to fail.
 
-One way to think of this is to make an investment case to yourself that says, "It's rational for me to invest this amount of my time and/or money at this point, because. . .". The things that should convince you that it's sensible to invest might include validating core assumptions, receiving positive feedback from potential customers, and generating early revenues.
+One way to think of this is to make an investment case to yourself that says, "It's rational for me to invest this amount of my time and/or money at this point, because ..." The things that should convince you that it's sensible to invest might include validating core assumptions, receiving positive feedback from potential customers, and generating early revenues.
 
-## Scenario
+## Scenario: A milestone chart for commitments
 
 Emily is working on an idea for a fintech startup that she hopes will make it easier for people to consolidate the bank feeds they receive from multiple banks. She comes from a consumer banking background and she's pretty sure the idea has value.
 
