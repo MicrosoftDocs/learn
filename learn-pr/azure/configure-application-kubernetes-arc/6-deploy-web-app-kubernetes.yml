@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy an Azure App Service web app on Kubernetes with Azure Arc
   description: This exercise steps through deploying an Azure App Service web app on Kubernetes with Azure Arc.
   ms.date: 05/01/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: mijacobs
+  ms.author: mijacobs
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Install MongoDB
   description: Exercise - Install MongoDB
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

@@ -4,8 +4,8 @@ metadata:
   title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles
   description: Learn how to use Xamarin.Forms to design and share XAML resources and styles for a consistent look and feel across your entire UI.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Design consistent Xamarin.Forms XAML pages by using shared resources and styles

@@ -4,8 +4,8 @@ metadata:
   title: Use shared access signatures to delegate access to Azure Storage
   description: Use shared access signatures to delegate access to Azure Storage
   ms.date: 03/06/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use shared access signatures to delegate access to Azure Storage

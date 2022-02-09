@@ -4,8 +4,8 @@ metadata:
   title: Centralize your core services by using hub and spoke Azure virtual network architecture
   description: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
   ms.date: 10/21/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Centralize your core services by using hub and spoke Azure virtual network architecture

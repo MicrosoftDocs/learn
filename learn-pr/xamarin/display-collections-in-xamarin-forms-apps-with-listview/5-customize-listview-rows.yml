@@ -5,11 +5,10 @@ metadata:
   title: Customize the appearance of ListView rows
   description: Customize the appearance of ListView rows.
   ms.date: 2/27/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/5-customize-listview-rows.md)]

@@ -5,8 +5,8 @@ metadata:
   title: How the Azure Data Box family works
   description: In this unit, you'll learn how administrators use Azure Data Box products to get data into Azure.
   ms.date: 07/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: alkohli
+  ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

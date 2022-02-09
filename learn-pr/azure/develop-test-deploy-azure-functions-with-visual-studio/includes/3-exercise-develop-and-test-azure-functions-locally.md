@@ -1,6 +1,6 @@
 Visual Studio provides an excellent environment for creating and testing an Azure Function App. You can develop an Azure Function locally, and verify that it operates correctly, before deploying it to the cloud.
 
-In the luxury watch online website scenario, there's a requirement for a function that returns detailed information about a watch when given the model number of the watch. The data that needs to be returned includes the manufacturer, the type of case back (solid, transparent, engraved), the bezel, the style of the dial, the finishing of the case, the number of jewels, and so on.
+In the luxury watch online website scenario, there's a requirement for a function that returns detailed information about a watch when given the model number of the watch. The data you need returned includes the manufacturer, the type of case back (solid, transparent, engraved), the bezel, the style of the dial, the finishing of the case, the number of jewels, and so on.
 
 In this exercise, you'll implement and test a version of this function locally using Visual Studio.
 
@@ -29,7 +29,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
     | Field | Value |
     | ---- | ---- |
-    | **Project name** |* WatchPortalFunction* |
+    | **Project name** | *WatchPortalFunction* |
     | **Location** | Browse to or create a folder on your local computer to store the project. |
     | **Solution name** | Accept *WatchPortalFunction* (default). |
     | **Place solution and project in the same directory** | Unchecked (NOT selected). This ensures the correct folder structure for this module. |
@@ -176,4 +176,4 @@ Create an Azure Function App using an **Azure Functions** template.
 
 1. On the menu bar, select **Debug** > **Stop Debugging**.
 
-You've now seen how the Azure Functions Tools extension in Visual Studio simplifies the experience of creating an Azure Function App, enabling you to use familiar tools to build and debug your code.
+You've now seen how the Azure Functions Tools extension in Visual Studio simplifies the experience of creating an Azure Function App, which lets you use familiar tools to build and debug your code.

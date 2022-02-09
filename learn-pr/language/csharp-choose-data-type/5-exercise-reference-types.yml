@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Reference types
   description: Work with the `new` operator to learn how reference type data is allocated memory and referenced throughout its life time.
   ms.date: 09/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

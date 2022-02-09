@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn about a business scenario that storage replication can address.
   ms.date: 10/08/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Get a quick review of the concepts we discussed in this module.
   ms.date: 3/18/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: gregvanl
+  ms.author: gregvanl
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
