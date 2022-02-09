@@ -49,7 +49,7 @@ We have Client SDKs available for:
 
 * JavaScript
 * .NET (C#)
-* iOS(Swift)
+* iOS (Swift)
 * Android
 
 ## Tying it all together
