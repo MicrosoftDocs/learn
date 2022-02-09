@@ -37,7 +37,7 @@ As for programming languages we support:
 * .NET
 * Java Server Edition(SE)
 * Python
-* iOS(Swift)
+* iOS (Swift)
 * Android
 
 If your business/application/idea intends to use languages or surface areas/platforms that ACS doesn't support. Then ACS may not be correct for you.
