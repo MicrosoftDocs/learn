@@ -27,7 +27,7 @@ durationInMinutes: 5 # user input: the estimate time to complete the unit
 ###########################################################################
 content: |
 quiz:
-  title: Check your knowledge 
+  title: 
   questions:
   - content: "When code scanning is enabled, what is one default event that triggers a scan?"
 
