@@ -28,7 +28,7 @@ A common edit to the workflow file is to adjust the frequency with which code sc
            
 #### Scan on Push
 
-By default, the CodeQL analysis workflow uses the `on.push` event to trigger a code scan on every push to the default branch of the repository and any protected branches. For code scanning to be triggered on a specified branch, the workflow must exist in that branch.  If you scan on push, then the results appear in the Security tab for your repository. 
+By default, the CodeQL analysis workflow uses the `on:push` event to trigger a code scan on every push to the default branch of the repository and any protected branches. For code scanning to be triggered on a specified branch, the workflow must exist in that branch.  If you scan on push, then the results appear in the Security tab for your repository. 
 
 Additionally, when an `on:push` scan returns a result that can be mapped to an open pull request, these alerts will automatically appear on the pull request in the same place as other pull request alerts. The alerts are identified by comparing the existing analysis of the head of the branch to the analysis for the target branch.
          
@@ -40,7 +40,7 @@ If you use the `pull_request` trigger, configured to scan the pull request's mer
          
 ### Define the severities causing pull request check failure
 
-By default, only alerts with the severity level of `Error` or security severity level of `Critical` or `High` will cause a pull request check failure, and a check will still succeed with alerts of lower severities. Pull request failures do not stop a code scan but represent a blocker when trying to merge code. You can find the list of pull request failures in the Code scanning alerts tab under the Security tab of your repository. You can change the levels of alert severities and of security severities that will cause a pull request check failure in your repository settings. 
+By default, only alerts with the severity level of `Error` or security severity level of `Critical` or `High` will cause a pull request check failure. Pull request failures do not stop a code scan but represent a blocker when trying to merge code. You can find the list of pull request failures in the Code scanning alerts tab under the Security tab of your repository. You can change the levels of alert severities and of security severities that will cause a pull request check failure in your repository settings. 
 
 1. On GitHub.com, navigate to the main page of the repository. Under your repository name, click **Settings**.
 

@@ -41,7 +41,7 @@ The main input parameter is `sarif-file`, which configures the file or directory
 
 The `upload-sarif` action can be configured to run when the `push` and `scheduled` event occurs.
 
-This example outlines the elements of the `upload-sarif`action yml file. 
+This example outlines the elements of the `upload-sarif` action yml file. 
 
 ```
 name: 'Code Scanning : Upload SARIF'

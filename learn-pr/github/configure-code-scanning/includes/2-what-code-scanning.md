@@ -22,7 +22,7 @@ CodeQL supports both compiled and interpreted languages, and can find vulnerabil
 - Python
 - Ruby
 
-The following section explains how to add the CodeQL workflow to your repository. You will learn how to set up CodeQL using external tools in the next unit.
+The next section explains how to add the CodeQL workflow to your repository. You'll learn how to set up CodeQL using external tools in the "Enable code scanning with third party tools" unit.
 
 ## Add the CodeQL workflow to your repository
 
@@ -62,9 +62,9 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
 
   In the default CodeQL analysis workflow, code scanning is configured to analyze your code each time you either push a change to the default branch or any protected branches, or   raise a pull request against the default branch. As a result, code scanning will now commence.
 
-The `on:pull_request` and `on:push` triggers for code scanning are each useful for different purposes. You will learn more about these triggers in the "Configure Code Scanning" unit. 
+The `on:pull_request` and `on:push` triggers for code scanning are each useful for different purposes. You'll learn more about these triggers in the "Configure Code Scanning" unit. 
 
-Running code scanning with GitHub Actions will affect your monthly billing minutes. If you want to use GitHub Actions beyond the storage or minutes included in your account, you will be billed for additional usage.
+Running code scanning with GitHub Actions will affect your monthly billing minutes. If you want to use GitHub Actions beyond the storage or minutes included in your account, you'll be billed for additional usage.
 
 ## About Billing for Actions
 

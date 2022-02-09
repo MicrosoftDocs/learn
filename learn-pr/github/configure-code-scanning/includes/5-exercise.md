@@ -1,5 +1,5 @@
 This exercise checks your knowledge on 
-configuring code scanning for your repository.
+configuring code scanning for your repository. 
 ​
 This GitHub exercise is graded automatically once you have attempted 
 a solution to the challenge. The results of your actions, as well as 
@@ -29,8 +29,7 @@ It may take several attempts to complete the exercise, you can revisit
 previous content in this module, or navigate to some of the additional r
 esources provided as many times as you want to find the solution.
 ​
-When you've finished the exercise in GitHub, return here for:
-​
+> When you've finished the exercise in GitHub, return here for:
 > [!div class="checklist"]
 > * A quick knowledge check
 > * A summary of what you've learned
