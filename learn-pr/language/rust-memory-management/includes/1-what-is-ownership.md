@@ -74,7 +74,7 @@ The simplest example is when declaring a new binding:
 
 A key thing to understand is that once ownership is transferred, the old variable is no longer valid. In our example above, after we transfer ownership of the `String` from `mascot` to `ferris`, we can no longer use the `mascot` variable.
 
-In Rust, "transferring ownership" is known as "moving". In other words, in the example above, the `String` value has been *moved* from `mascot` to `ferris`.
+In Rust, "transferring ownership" is known as "moving". In other words, in the example above, the ownership of the `String` value has been *moved* from `mascot` to `ferris`.
 
 If we try to use `mascot` after the `String` has been moved from `mascot` to `ferris`, the compiler won't compile our code:
 
