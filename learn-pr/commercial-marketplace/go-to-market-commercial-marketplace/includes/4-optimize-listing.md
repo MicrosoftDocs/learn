@@ -28,7 +28,7 @@ In addition to the information you provide customers in the online stores, you c
 
 - **Plans and pricing**: Customers like options. You can give your customers choices by offering multiple plans of your listing, with each plan representing a different version of the same product. Plans can be split by tiers of functionality, capacity, seats of access, or other variables depending on your solution. We recommend that you give customers as much choice and flexibility as possible by offering multiple plans at different price points.
 
-     Think strategically about your product’s pricing model. Pick a pricing model that makes sense for the customers you serve. For more information on pricing options in the commercial marketplace, you can reference the pricing model documentation.
+     Think strategically about your product’s pricing model. Pick a pricing model that makes sense for the customers you serve. For more information on pricing options in the commercial marketplace, you can [reference the pricing model documentation](/azure/marketplace/plans-pricing).
 
 - **Sell through Microsoft**: Publishing an offer that users can purchase through Microsoft gives your customers the ability to start using your software with less friction. We recommend that you sell your solution through Microsoft to let your customers self-serve.
 
