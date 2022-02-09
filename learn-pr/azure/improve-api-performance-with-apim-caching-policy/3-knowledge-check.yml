@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: In this unit, you will answer questions based on a scenario.
   ms.date: 04/25/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - foreach Statement
   description: Use the foreach statement to iterate through each element of your arrays.
   ms.date: 09/19/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

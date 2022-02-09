@@ -1,4 +1,4 @@
-In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This module is a two-part module where in the first part, you create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. Then, in the second part, you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
+In this module, you'll learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS), which allows the Bot to assist the user when searching for **Tracked Objects**. This module is a two-part module. In the first part, you'll create the Bot with the [Bot Composer](/composer/introduction) as a code-free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. In the second part, you use the **BotManager (script)** in the Unity project to use the hosted Bot Service.
 
 ## Understand Azure Bot Service
 
@@ -9,195 +9,195 @@ Learn more about [Azure Bot Service](/Azure/bot-service/bot-service-overview-int
 ## Part 1 - Create the bot
 
 Before you can use the bot in the Unity application, you need to develop it, provide it with data and host it on **Azure**.
-The goal of the bot is to have the abilities to tell how many *Tracked Objects* are stored in the database, find a *Tracked Object* by its name, and tell the user some basic information about it.
+
+The goal of the bot is to have the ability to tell how many *Tracked Objects* are stored in the database, find a *Tracked Object* by its name, and tell the user some basic information about it.
 
 ### A quick look into tracked objects Azure function
 
-You're about to start creating the Bot, but to make it useful you need to give it a resource from which it can pull data. Since the *Bot* can count the amount of **Tracked Objects**, find specific ones by name and tell details, you'll use a Azure Function that has access to the **Azure Table storage**.
+You're about to start creating the Bot, but to make it useful, you need to provide a resource from which it can pull data. Since the Bot can count the amount of **Tracked Objects**, find specific ones by name, and provide object details, you'll use an Azure Function that has access to **Azure Table Storage**.
 
-Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) and extract it to your hard drive.
+Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip). Extract it to your computer.
 
-This Azure Function has two actions, **Count** and **Find** which can be invoked via basic *HTTP* *GET* calls. You can inspect the code in **Visual Studio**.
+This Azure Function has two actions, **Count** and **Find**, which can be invoked via basic *HTTP* *GET* calls. You can inspect the code in **Visual Studio**.
 
 Learn more about [Azure Functions](/Azure/Azure-functions/functions-overview).
 
-The **Count** function queries from the **Table storage** all **TrackedObjects** from the table, simple. On the other hand, the **Find** function takes a *name* query parameter from the *GET* request and queries the **Table storage** for a matching **TrackedObject** and returns a DTO as JSON.
+The **Count** function queries from the **Table storage** all **TrackedObjects** from the table. The **Find** function takes a *name* query parameter from the *GET* request and queries the **Table storage** for a matching **TrackedObject** and returns a DTO as JSON.
 
-1. To deploy this **Azure Function** directly from **Visual Studio**, open the downloaded AzureFunction_TrackedObjectsService folder and open the present **.sln** file with visual studio
+1. To deploy this **Azure Function** directly from **Visual Studio**, open the downloaded `AzureFunction_TrackedObjectsService` folder and open the present **.sln** file with Visual Studio.
 
     :::image type="content" source="../media/azure-track-object.png" alt-text="Screenshot of AzureFunction_TrackedObjectsService folder." lightbox="../media/azure-track-object.png":::
 
-2. Once file loaded in visual studio, Right click over **Tracked object service** in solution explorer and select publish
+2. Right-click **Tracked object service** in the solution explorer and Select **Publish**.
 
     :::image type="content" source="../media/publish-track-object.png" alt-text="Screenshot of Publish Tracked object service." lightbox="../media/publish-track-object.png":::
 
-3. The publish pop up will be displayed and ask for target platform
-Select Azure and click on **Next** button
+3. The publish pop up will ask for a target platform. Select **Azure**, then select the **Next** button.
 
     :::image type="content" source="../media/select-target-platform.png" alt-text="Screenshot of Select target platform." lightbox="../media/select-target-platform.png":::
 
-4. In specific target, select **Azure Function App(Windows)** and click on **Next** button
+4. Select **Azure Function App(Windows)**, then select the **Next** button.
 
     :::image type="content" source="../media/select-target-host.png" alt-text="Screenshot of Select target host." lightbox="../media/select-target-host.png":::
 
-5. If you're not logged in to Azure, login through visual studio and the window look like
+5. If you're not logged in to Azure, log in through Visual Studio as below:
 
     :::image type="content" source="../media/create-azure-function.png" alt-text="Screenshot of Select or create Azure Function." lightbox="../media/create-azure-function.png":::
 
-6. Click on pulse button to create new Function App in Azure account
+6. Select the **Pulse** button to create a new Function App in your Azure account:
 
     :::image type="content" source="../media/create-new-function-app.png" alt-text="Screenshot of Create new Function App." lightbox="../media/create-new-function-app.png":::
 
     * For **Name**, enter a suitable name for the service, for example, *TrackedObjectsService*
     * For **Plan Type**, choose consumption
     * For **Location**, choose a location close to your app users' physical location, for example *(US) West US*
-    * For **Resource Group** and **Storage**, choose respective Azure group and storage account have been created in pervious chapters.
+    * For **Resource Group** and **Storage**, choose the resource group and storage accounts you created earlier in this module.
 
-7. Once Function App created click on **Finish** button
+7. Once the Function App is created, select the **Finish** button.
 
     :::image type="content" source="../media/finish-create-function-app.png" alt-text="Screenshot of Finish creating Function App." lightbox="../media/finish-create-function-app.png":::
 
-8. To update the connection string click on **3 dots** on **hosting** tab and select **Manage Azure App Service settings**
+8. To update the connection string, select the **More options** (three dots) on the **Hosting** tab and select **Manage Azure App Service settings**.
 
     :::image type="content" source="../media/update-connection-string.png" alt-text="Screenshot of update connection string." lightbox="../media/update-connection-string.png":::
 
-9. this opens the **Application Settings** window hear replace your AzureStorageConnectionString for both **Local** and **Remote** with your AzureStorageConnectionString. once replaced click on ok.
+9. In the **Application Settings** window, replace the current `AzureStorageConnectionString` for both **Local** and **Remote** with your `AzureStorageConnectionString`. Select **OK**.
 
     :::image type="content" source="../media/replace-conncection-string.png" alt-text="Screenshot of replace connection string." lightbox="../media/replace-conncection-string.png":::
 
-10. Now click on **Publish** button to publish the function and wait for publish.
+10. Select the **Publish** button to publish the function. Wait for the publish to complete.
 
-11. Once completion of publish click on **Manage in Azure portal** under Actions section, it's take you to specific function in Azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot*, which you'll create next.
+11. When publishing completes, select **Manage in Azure portal** in the Actions section, then select **Configuration** in the *Settings* section. In **Application Settings**, provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Select **New Application setting**, enter *AzureStorageConnectionString* for the name, then enter your *Connection string* as the value. Select **Save**.
 
-12. To get URL of count and Find, select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button.
+12. Select **Functions** in the *Functions* section. Select the **Count** function at the top of the screen, then select the *Get Function Url* button.
 
-Follow the same procedure to get Find function Url.
+Follow the same procedure to get the **Find** function Url.
 
 ### Create a conversation bot
 
-There are several ways to develop a Bot Framework based conversational bot. In this lesson, you'll use the [Bot Framework Composer](/composer/) desktop application, which is a visual designer that is perfect for rapid development.
+There are several ways to develop a Bot-Framework-based conversational bot. In this lesson, you'll use the [Bot Framework Composer](/composer/) desktop application, which is a visual designer that is perfect for rapid development.
 
-You can download the latest releases from the [GitHub repository](https://github.com/microsoft/BotFramework-Composer/releases). It's available for Windows, Mac, and Linux.
+You can download the latest releases from the [GitHub repository](https://github.com/microsoft/BotFramework-Composer/releases) for Windows, Mac, and Linux.
 
-1. Once the **Bot Framework Composer** is installed, start the application and you should see this interface:
+1. Once the **Bot Framework Composer** is installed, start the application and you should have this interface:
 
     :::image type="content" source="../media/bot-frame-work-composer.png" alt-text="Screenshot of Bot Framework Composer Home." lightbox="../media/bot-frame-work-composer.png":::
 
-2. We have prepared a bot composer project, which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your hard drive.
+2. We have prepared a bot composer project, which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your computer.
 
-3. On the top bar click on **Open** and select the Bot Framework project you've downloaded which is named **TrackedObjectsBot**. After the project is fully loaded, you should see the project ready.
+3. Select **Open** on the top navigation bar, then select the **TrackedObjectsBot** Bot Framework project. The project will load.
 
     :::image type="content" source="../media/track-object-bot.png" alt-text="Screenshot of Bot Framework Composer with TrackedObjectsBot project opened." lightbox="../media/track-object-bot.png":::
 
-    Let's focus on the left side where you can see the **Dialogs Panel**. There you've one dialog named **TrackedObjectsBot** under which you can see several **Triggers**.
+    Let's focus on the **Dialogs Panel** on the left side. You will have one dialog named **TrackedObjectsBot**, under which you can see several **Triggers**.
 
     Learn more about [Bot Framework concepts](/composer/concept-dialog).
 
-    These triggers do the following functionalities:
+    Let's take a look at these triggers and their functionalities.
 
 #### Greeting
 
-* Greeting is the entry point of the chat *bot* when ever a *user* initiates a conversation.
+* Greeting is the entry point of the chat bot when ever a user initiates a conversation.
 
     :::image type="content" source="../media/track-object-bot-greet.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Greeting." lightbox="../media/track-object-bot-greet.png":::
 
 #### AskingForCount
 
-* This dialog is triggered when the *user* asks for counting all **Tracked Objects**.
-These are the trigger phrases:
+* This dialog is triggered when the user asks for a count of all **Tracked Objects**.
+The trigger phrases are:
 
     >* count me all
     >* how many are stored
 
     :::image type="content" source="../media/ask-count.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger AskForCount." lightbox="../media/ask-count.png":::
 
-    Thanks to [LUIS](/composer/how-to-add-luis) the *user* doesn't have to ask the phrases in that exact way, which allows a natural conversation for the *user*.
+    Thanks to [LUIS](/composer/how-to-add-luis) the user doesn't have to ask the phrases in that exact way, which allows for more natural conversation.
 
-    In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
+    In this dialog, the bot will also talk to the **Count** Azure Function, which we will cover more later.
 
 #### Unknown intent
 
-* This dialogue is triggered if the input from the *user* doesn't fit any other trigger condition and responses the user with trying his question again.
+* This dialogue is triggered if the input from the user doesn't fit any other trigger condition, so the dialog asks the user to try their question again.
 
     :::image type="content" source="../media/unknown-intent.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger Unknown Intent." lightbox="../media/unknown-intent.png":::
 
 #### FindEntity
 
-* The last dialogue is more complex with branching and storing data in the *bots* memory.
-It asks the user for the *name* of the **Tracked Object** it wants to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
+* The last dialogue is more complex, with branching and storing data in the bot's memory.
+It asks the user for the *name* of the **Tracked Object** they want to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
 
     :::image type="content" source="../media/find-entity.png" alt-text="Screenshot of TrackedObjectsBot project dialog trigger FindEntity." lightbox="../media/find-entity.png":::
 
-    If the **Tracked Object** isn't found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the boot will check what properties are available and report on them.
+    If the **Tracked Object** isn't found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the bot will check what properties are available and report on them.
 
 ### Adapt the bot
 
-1. The **AskingForCount** and **FindEntity** trigger need to talk to the backend, this means you've to add the correct URL of the **Azure Function** you deployed previously.
+1. The **AskingForCount** and **FindEntity** trigger need to talk to the backend, so you will need to add the **Azure Function** URL you deployed previously.
 
-2. On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action, here you can see the field **URL** which you need to change the correct URL for the **Count** function endpoint.
+2. Select **AskingForCount** on the **Dialog** pane, then locate the *Send an HTTP request* action. Enter the URL for the *Count* function endpoint in the **URL** field.
 
     :::image type="content" source="../media/ask-count-end-point.png" alt-text="Screenshot of TrackedObjectsBot project AskingForCount dialog trigger endpoint configuration." lightbox="../media/ask-count-end-point.png":::
 
-3. Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action, in the **URL** field change the URL to the **Find** function endpoint.
+3. Select the **FindEntity** trigger, then locate the *Send an HTTP request* action. Enter the URL for the *Find* function endpoint in the **URL** field.
 
     :::image type="content" source="../media/find-entity-end-point.png" alt-text="Screenshot of TrackedObjectsBot project FindEntity dialog trigger endpoint configuration." lightbox="../media/find-entity-end-point.png":::
 
-    With everything set you're now ready to deploy the Bot. Since you've Bot Framework composer installed, you can publish it directly from there.
+    You're now ready to deploy the Bot. Since you have the Bot Framework composer installed, you can publish it directly from there.
 
     Learn more about [Publish a bot from Bot Composer](/composer/how-to-publish-bot).
 
     > [!TIP]
-    > Feel free playing around with Bot by adding more trigger phrases, new responses or conversation branching.
+    > Feel free to experiment with the Bot by adding more trigger phrases, new responses, or conversation branching.
 
 ## Part 2 - Put everything together in Unity
 
 ### Prepare the scene
 
-1. In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
+1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
     :::image type="content" source="../media/chat-bot-manager-prefab.png" alt-text="Screenshot of Unity Project window with ChatBotManager prefab selected." lightbox="../media/chat-bot-manager-prefab.png":::
 
-2. From there move the prefab **ChatBotManager** into the scene Hierarchy.
+2. Drag the prefab **ChatBotManager** into the scene Hierarchy.
 
-3. Once you add the ChatBotManager to the scene, click on the **Chat Bot Manager** component.
-In the Inspector, you'll see that there is an empty **Direct Line Secret Key** field, which you need to fill out.
+3. Once you add the ChatBotManager to the scene, select the **Chat Bot Manager** component.
+In the Inspector, enter your secret key in the **Direct Line Secret Key** field.
 
     > [!TIP]
-    > You can retrieve the *secret key* from the Azure portal by looking for the resource of type **Bot Channels Registration** you've created in the first part of this tutorial.
+    > You can retrieve the *secret key* from the Azure portal by looking for the **Bot Channels Registration** resource you created in the first part of this tutorial.
 
     :::image type="content" source="../media/add-chat-bot-manager.png" alt-text="Screenshot of Unity with newly added ChatBotManager prefab still selected." lightbox="../media/add-chat-bot-manager.png":::
 
-4. Now you'll connect the **ChatBotManager** object with the **ChatBotController** component that is attached to the **ChatBotPanel** object. In the Hierarchy select the **ChatBotPanel** and you'll see an empty **Chat Bot Manager** field, drag from the Hierarchy the **ChatBotManager** object into the empty **Chat Bot Manager** field.
+4. Now you'll connect the **ChatBotManager** object with the **ChatBotController** component that is attached to the **ChatBotPanel** object. In the Hierarchy, select the **ChatBotPanel** and drag the **ChatBotManager** object from the Hierarchy into the empty **Chat Bot Manager** field.
 
     :::image type="content" source="../media/chat-bot-panel-configure.png" alt-text="Screenshot of Unity with ChatBotPanel configured." lightbox="../media/chat-bot-panel-configure.png":::
 
-5. Next you need a way to open the **ChatBotPanel** so that the user can interact with it. From the Scene window, you may have noticed that there is a *Chat Bot* side button on the **MainMenu** object, you'll use it to solve this problem.
+5. Next, you need a way to open the **ChatBotPanel** so  the user can interact with it. From the Scene window, locate the *Chat Bot* side button on the **MainMenu** object. You'll use this to open the chat bot.
 
-6. In the Hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. There you'll see an empty slot on the **OnClick()** event callback. Drag and drop the **ChatBotPanel** to the event slot, from the dropdown list navigate *GameObject*, then select in the sub menu *SetActive (bool)* and enable the checkbox.
+6. In the Hierarchy, locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. Drag and drop the **ChatBotPanel** to the empty slot on the **OnClick()** event callback. From the dropdown list, select *GameObject*, then select in the sub menu *SetActive (bool)* and enable the checkbox.
 
     :::image type="content" source="../media/button-chat-bot-configure.png" alt-text="Screenshot of Unity with ButtonChatBot configured." lightbox="../media/button-chat-bot-configure.png":::
 
-    Now the chat bot can be stared from the main menu and with that the scene is ready for use.
+    Now, your user can start the chat bot from the main menu. The scene is now ready for use.
 
-### Put the bot to a test
+### Test the bot
 
 #### Ask about the quantity of tracked objects
 
-First you test asking the bot how many **Tracked Objects** are stored in the database.
+First, let's test the bot by asking how many **Tracked Objects** are stored in the database.
 
 > [!NOTE]
-> This time run the application from the HoloLens 2 because services like *text-to-speech* may not be available on your system.
+> Run the application from the HoloLens 2, as services like *text-to-speech* may not be available on your system.
 
-Run the application on your HoloLens 2 and click on the *Chat Bot* button next to the main menu.
-The bot will be greeting you, now ask **how many objects do we have?**
-It should tell you the quantity and end the conversation.
+Run the application on your HoloLens 2 and select the *Chat Bot* button next to the main menu.
+After the bot greets you, ask **how many objects do we have?**
+The note should tell you the object quantity and end the conversation.
 
 > [!Note]
-> Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
+> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
 #### Ask about a tracked object
 
-Now run the application again and this time ask **find me a tracked object**, the bot will be asking you the name to which you should respond with the "car" or the name of another *Tracked Object* you know exists in the database. The bot will tell you details like description and if it has a spatial anchor assigned.
+Now, run the application again. This time, ask **find me a tracked object**. the bot will ask you the name, to which you should respond with the **car** (or the name of another *Tracked Object* you know exists in the database). The bot will give you details, like description and if the object has a spatial anchor assigned.
 
 > [!TIP]
-> Try out asking for an **Tracked Objects** that doesn't exist and hear how the bot responds.
+> Try asking for a **Tracked Object** that doesn't exist and note how the bot responds.

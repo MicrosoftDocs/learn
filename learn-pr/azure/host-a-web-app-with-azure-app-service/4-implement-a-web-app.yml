@@ -5,8 +5,8 @@ metadata:
   title: Prepare the web application code
   description: Prepare the web application code
   ms.date: 12/01/2020
-  author: sinedied
-  ms.author: yolasors
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-java-node-python

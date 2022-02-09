@@ -5,8 +5,8 @@ metadata:
   title: Provision with optimization
   description: Learn how to provision your resources with optimization in mind.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

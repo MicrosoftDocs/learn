@@ -4,11 +4,10 @@ metadata:
   title: Update your Android SDK
   description: "Explore how to keep Xamarin.Android components up to date."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Update your Android SDK
 durationInMinutes: 9
 content: |

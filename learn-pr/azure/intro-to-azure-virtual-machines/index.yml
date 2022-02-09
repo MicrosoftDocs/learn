@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure virtual machines
   description: Learn about the decisions you make before creating a virtual machine, the options to create and manage the VM, and the extensions and services you use to manage your VM.
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure virtual machines

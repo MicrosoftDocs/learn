@@ -5,8 +5,8 @@ metadata:
   description: In this learning path, get acquainted with using Azure App Service to create and deploy your website without underlying servers, storage or network assets.
   brand: azure
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy a website to Azure with Azure App Service

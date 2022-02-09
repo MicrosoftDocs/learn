@@ -8,6 +8,9 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  products:
+    - azure
+    - azure-lighthouse
 title: Introduction
 durationInMinutes: 2
 content: |
