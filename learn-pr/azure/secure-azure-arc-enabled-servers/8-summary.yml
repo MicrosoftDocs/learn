@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-azure-arc-enabled-servers.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 02/02/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]
