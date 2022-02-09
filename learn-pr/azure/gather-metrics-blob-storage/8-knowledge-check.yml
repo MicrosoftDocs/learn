@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Questions about storage account metrics and logging for blobs
   ms.date: 03/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

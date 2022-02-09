@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Send and receive messages by using a queue
   description: Write code that sends messages to and receives messages from a Service Bus queue.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

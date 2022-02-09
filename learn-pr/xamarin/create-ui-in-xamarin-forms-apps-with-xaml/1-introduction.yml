@@ -4,11 +4,10 @@ metadata:
   title: Introduction
   description: "Introduction to creating UI in Xamarin.Forms apps with XAML"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Introduction
 durationInMinutes: 1
 content: |

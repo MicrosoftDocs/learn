@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-call-methods
 metadata:
-  title: Call methods from the .NET Class Library using C#
+  title: 'Call methods from the .NET Class Library using C#'
   description: Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Call methods from the .NET Class Library using C#

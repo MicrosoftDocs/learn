@@ -5,8 +5,8 @@ metadata:
   title: Create the Azure storage infrastructure
   description: Create the Azure storage infrastructure
   ms.date: 10/07/2021
-  author: cryophobia
-  ms.author: chrvaw
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a VM to host your web application
   description: Exercise - Create a VM to host your web application
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

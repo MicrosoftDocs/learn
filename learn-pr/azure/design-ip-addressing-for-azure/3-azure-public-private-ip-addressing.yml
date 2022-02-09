@@ -4,8 +4,8 @@ metadata:
   title: Public and private IP addressing in Azure
   description: Public and private IP addressing in Azure
   ms.date: 10/17/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Public and private IP addressing in Azure
@@ -37,5 +37,3 @@ quiz:
     - content: "Network interface"
       isCorrect: true 
       explanation: "Correct. An IP address is assigned to a network interface, which is assigned to a virtual machine."
-
-

@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: An overview of literal and variables values, basic data types, and the goals of this module.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

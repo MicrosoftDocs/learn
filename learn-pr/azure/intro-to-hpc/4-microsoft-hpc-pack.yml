@@ -4,8 +4,8 @@ metadata:
   title: Microsoft HPC Pack
   description: In this unit, you'll learn about the Microsoft HPC Pack and how you can use it to manage high-performance resources.
   ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft HPC Pack

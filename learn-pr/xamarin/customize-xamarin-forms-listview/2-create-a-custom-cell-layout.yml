@@ -4,11 +4,10 @@ metadata:
   title: Use a ViewCell
   description: "Use a ViewCell with a custom UI in a Xamarin.Forms ListView"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Use a ViewCell
 durationInMinutes: 7
 content: |

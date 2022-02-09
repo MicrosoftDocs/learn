@@ -4,8 +4,8 @@ metadata:
   title: Control access to Azure Storage with shared access signatures
   description: Grant access to data stored in your Azure Storage accounts securely through the use of shared access signatures.
   ms.date: 03/06/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control access to Azure Storage with shared access signatures

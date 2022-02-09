@@ -5,8 +5,8 @@ metadata:
   title: Enable CORS for your Azure Storage Services using the Azure CLI
   description: Enable CORS for your Azure Storage Services using the Azure CLI.
   ms.date: 04/23/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
