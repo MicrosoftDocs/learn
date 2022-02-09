@@ -2,8 +2,8 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-defender-for-cloud
 title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud.
 metadata:
-  title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud.
-  description: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud.
+  title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
+  description: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
   ms.date: 02/02/2022
   author: aurnovcy
   ms.author: aurnovc
