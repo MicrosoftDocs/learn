@@ -19,7 +19,7 @@ In Unity, the AR Foundation lets you work with augmented-reality systems across 
 
 ## AR anchor manager script
 
-A point in space that you want the devices to track is called an *anchor*. For each anchor, the anchor manager creates GameObjects. Then, the device typically performs additional work to update the anchor's position and orientation throughout its lifetime.
+A point in space that you want the devices to track is called an *anchor*. For each anchor, the anchor manager creates GameObjects. Then, the device typically performs more work to update the anchor's position and orientation throughout its lifetime.
 
 The "Anchor Prefab" field in the ARAnchorManager isn't intended for content. Instead, ARFoundation will build a new GameObject to represent an anchor using a means other than AddComponent, such as loading an ARWorldMap with anchors. The prefab field aims to extend anchors' default behavior; it's not a suggested technique to deploy content in the world.
 
