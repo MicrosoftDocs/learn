@@ -106,4 +106,4 @@ In this section, you'll learn how to configure your project, to build and deploy
 
     :::image type="content" source="../media/select-folder.png" alt-text="Screenshot of Select folder." lightbox="../media/select-folder.png":::
 
-    When the build process is complete, follow the [Export the Xcode project](azure/spatial-anchors/quickstarts/get-started-unity-ios?tabs=azure-portal#export-the-xcode-project) instructions to deploy your Xcode project to your iOS device.
+    When the build process is complete, follow the [Export the Xcode project](/azure/spatial-anchors/quickstarts/get-started-unity-ios?tabs=azure-portal#export-the-xcode-project) instructions to deploy your Xcode project to your iOS device.
