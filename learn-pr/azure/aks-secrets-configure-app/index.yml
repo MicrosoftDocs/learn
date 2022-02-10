@@ -4,8 +4,8 @@ metadata:
   title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
   description: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS).
   ms.date: 12/16/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: DCtheGeek
+  ms.author: dacoulte
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Application Configuration and Secrets in Azure Kubernetes Service (AKS)

@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create an Azure Kubernetes Service cluster
   description: In this exercise, you'll create an Azure Kubernetes Service cluster using Azure CLI and configure access from the Cloud Shell to your new cluster using Kubectl.
   ms.date: 07/31/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: DCtheGeek
+  ms.author: dacoulte
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create an Azure Kubernetes Service cluster
