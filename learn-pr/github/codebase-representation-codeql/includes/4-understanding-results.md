@@ -25,7 +25,7 @@ You will also see information on how to fix the problem when CodeQL analysis ide
 
 Here is an example:
 
-:::image type="content" source="../modules/codebase-representation-codeql/media/alert-screenshot.png" alt-text="Alerts from CodeQL analysis include a description of the problem." border="false":::
+:::image type="content" source="../media/alert-screenshot.png" alt-text="Alerts from CodeQL analysis include a description of the problem." border="false":::
 
 ### Data flow alerts
 

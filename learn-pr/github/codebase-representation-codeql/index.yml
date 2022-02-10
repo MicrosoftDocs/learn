@@ -2,15 +2,15 @@
 uid: learn.codebase-representation-codeql
 metadata:
   title: "TODO" # user input: module title for browser tab and search results
-  description: "In this module, you will learn about CodeQL and how it enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  description: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
   ms.date: 2/10/2022
   author: sterling463
   ms.author: csterling 
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: learning azure
-summary: "In this module, you will learn about CodeQL and how it enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+summary: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
-By the end of this module, you'll be able to:
+ By the end of this module, you'll be able to:
   - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase
   - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities
   - Understand CodeQL scan results using queries created by GitHub, or your own custom queries
