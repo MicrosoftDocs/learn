@@ -6,8 +6,7 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 > [!div class="checklist"]
 > * Deploy a new private registry.
-
-[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
+> * Connect to your registry.
 
 ::: zone pivot="cli"
 
