@@ -4,8 +4,8 @@ Azure ExpressRoute allows an organization like Adatum to connect their on-premis
 
 ExpressRoute provides direct access between on-premises networks and the following services:
 
-- Azure compute services (Azure IaaS Virtual Machines, Azure Kubernetes Services)
-- Azure cloud Services (Azure Files, Azure Storage, Azure SQL)
+- Azure compute services (IaaS Azure Virtual Machines, Azure Kubernetes Services)
+- Azure cloud services (Azure Files, Azure Storage, Azure SQL Server)
 - Microsoft Office 365
 - Microsoft Dynamics 365
 
@@ -19,12 +19,12 @@ ExpressRoute Global Reach allows organizations with multiple on-premises locatio
 
 ## ExpressRoute connectivity models
 
-Azure ExpressRoute supports three models for connecting on-premises networks to Microsoft’s clouds. These are: 
+Azure ExpressRoute supports three models for connecting on-premises networks to Microsoft’s clouds:
 
 - **Point-to-point Ethernet connection**. This connectivity model provides direct Layer 2 and Layer 3 connectivity between an organization’s on-premises network and Microsoft’s clouds. For example, if Adatum implemented this model, any host connected to your on-premises network that interacts with an Azure resource such as an IaaS VM or an Azure File Share would have the network traffic for that interaction travel across the ExpressRoute connection.
 - **CloudExchange co-location**. Co-located providers supply Layer 2 and Layer 3 connections between infrastructure at a co-location facility and the Microsoft cloud. For example, if your organization had servers hosted at a co-location facility, co-location at a cloud exchange allows you to connect from that facility to Microsoft’s clouds.
 - **Any-to-any (IPVPN) connection**. In this model, you can integrate your organization’s Wide Area Network (WAN) connection with Microsoft Azure. The ExpressRoute connection to Microsoft’s clouds will function as another location on your organization’s private WAN.
-- **Direct model**. You can connect directly at a Microsoft peering location rather than connecting through a service provider who connects you through to the Microsoft clouds. ExpressRoute Direct provides dual 100 Gbps or 10-GbPs connectivity.
+- **Direct model**. You can connect directly at a Microsoft peering location rather than connecting through a service provider who connects you through to the Microsoft clouds. ExpressRoute Direct provides dual 100-Gbps or 10-GbPs connectivity.
 
 :::image type="content" source="../images/expressroute-connectivity-models.png" alt-text="Diagram that depicts the types of connections Azure ExpressRoute supports.":::
 
