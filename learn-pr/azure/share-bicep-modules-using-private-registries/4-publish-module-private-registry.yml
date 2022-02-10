@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.share-bicep-modules-using-private-registries.create-custom-registry
-title: Create a private registry
+uid: learn.azure.share-bicep-modules-using-private-registries.publish-module-private-registry
+title: Publish a module to a private registry
 metadata:
   unitType: learning-content
-  title: Create a private registry
+  title: Publish a module to a private registry
   description: Learn how to create and control access to a private registry, and how to publish modules to the registry.
   ms.date: 02/10/2022
   author: johndowns

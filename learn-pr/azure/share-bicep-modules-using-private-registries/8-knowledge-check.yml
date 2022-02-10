@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
   - content: When you try to deploy the Bicep file above, Bicep gives you an error. What should you do to resolve the problem?

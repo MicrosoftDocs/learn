@@ -4,7 +4,7 @@ TODO intro para
 
 Module paths for private registries have the same structure as paths for the public registry. Here's an example path for a module in a private Azure container registry:
 
-:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
+:::image type="content" source="../media/6-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
 
 Just like you've previously seen, you use the `br` scheme for Bicep registries. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
 
