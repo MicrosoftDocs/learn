@@ -9,7 +9,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Consume and publish Bicep modules by using Bicep registries
+title: Share Bicep modules by using private registries
 summary: |
   Reuse Bicep modules to reduce code duplication and increase the quality of your deployments.
   Create a private registry for your organization. Publish shared modules to the registry, and consume them in multiple deployments.
@@ -28,7 +28,7 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
-iconUrl: /learn/achievements/bicep/consume-publish-bicep-modules-using-registries.svg
+iconUrl: /learn/achievements/bicep/share-bicep-modules-using-private-registries.svg
 levels:
   - intermediate
 roles:
