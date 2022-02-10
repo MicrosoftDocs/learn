@@ -4,7 +4,6 @@ In this exercise, you create two Bicep modules and publish them to your private 
 
 > [!div class="checklist"]
 > * Update your Bicep file to include two new modules.
-> * Deploy a new private registry.
 > * Publish the modules to your registry.
 > * Create a new Bicep file that uses the modules together.
 
@@ -31,40 +30,6 @@ TODO explain
    ::: code language="bicep" source="code/5-app.bicep" :::
 
 1. Save the file.
-
-## Create an Azure container registry
-
-Here, you create a new registry to store and share your Bicep modules. You'll use Azure Container Registry.
-
-::: zone pivot="cli"
-
-1. Decide on a unique name for your container registry. The name can't be used by any other Azure customers. Choose a name that is between 5 and 50 characters in length and contains letters and numbers. You'll use this in subsequent steps.
-
-1. Create a container registry by running this command in the Visual Studio Code **Terminal**. Make sure to replace the name placeholder with the name you selected in the preceding step.
-
-   ```azurecli
-   az acr create \
-     --name YOUR_CONTAINER_REGISTRY_NAME \
-     --sku Basic \
-     --location westus
-   ```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-1. Decide on a unique name for your container registry. The name can't be used by any other Azure customers. Choose a name that is between 5 and 50 characters in length and contains letters and numbers. You'll use this in subsequent steps.
-
-1. Create a container registry by running this command in the Visual Studio Code **Terminal**. Make sure to replace the name placeholder with the name you selected in the preceding step.
-
-   ```azurepowershell
-   New-AzContainerRegistry `
-     -Name YOUR_CONTAINER_REGISTRY_NAME `
-     -Sku Basic `
-     -Location westus
-   ```
-
-::: zone-end
 
 ## Publish the modules to your registry
 
