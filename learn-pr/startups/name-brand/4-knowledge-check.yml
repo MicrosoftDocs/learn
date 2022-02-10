@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.name-brand.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts on startup naming and branding. Topics include choosing an effective name and strengthening your personal brand.
+  ms.date: 02/02/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "When choosing a name for your company, which of the following searches is unlikely to be useful?"
+    choices:
+    - content: "A web search to find any other companies with a similar name."
+      isCorrect: false
+      explanation: "Incorrect. Before committing to a name, it's a good idea to check whether other companies use a similar name."
+    - content: "A trademark search to identify whether the name would be infringing an existing trademark."
+      isCorrect: false
+      explanation: "Incorrect. Before committing to a name, it's a good idea to do a trademark search to make sure the name doesn't infringe any existing trademarks."
+    - content: "A patent search to check whether you would be infringing an existing patent."
+      isCorrect: true
+      explanation: "Correct. When choosing a company name, it's more helpful to search for websites, domain names, and trademarks with similar names. A patent search is less useful."
+    - content: "A domain name search to see whether you can register a dot-com domain for your company name."
+      isCorrect: false
+      explanation: "Incorrect. Before committing to a name, it's a good idea to make sure that name is available as a domain name."
+
+  - content: "If you chose to name your company Zeppiir Advanced Online Travel Booking Systems, which of the startup naming principles would you be breaking?"
+    choices:
+    - content: "Simple."
+      isCorrect: false
+      explanation: "Incorrect. A startup name should contain at most three syllables and 10 characters. Short names are easy to remember, say, and type. A startup name should be simple, but it's not the only option."
+    - content: "Memorable."
+      isCorrect: false
+      explanation: "Incorrect. When your startup has a memorable name, it's easy for customers to find your business. A startup name should be memorable, but it's not the only option."
+    - content: "Easy to spell."
+      isCorrect: false
+      explanation: "Incorrect. When your startup name is easy to spell, it's easy for customers to find your business online. A startup name should be easy to spell, but it's not the only option."
+    - content: "Easy to say."
+      isCorrect: false
+      explanation: "Incorrect. When your startup name is easy to say, people can talk about your business confidently. A startup name should be easy to pronounce, but it's not the only option."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. The name Zeppiir Advanced Online Travel Booking Systems is too long to be simple or memorable. Zeppiir is also hard to spell and pronounce."
+
+  - content: "When establishing your personal brand as a founder, which of the following activities is unlikely to be helpful?"
+    choices:
+    - content: "Creating a professional LinkedIn profile."
+      isCorrect: false
+      explanation: "Incorrect. Not having a LinkedIn profile makes you look amateurish. It's essential to have an up-to-date profile."
+    - content: "Writing blog posts relevant to your company and posting them on your web site."
+      isCorrect: false
+      explanation: "Incorrect. Blog posts are an excellent way to show your expertise in your field and your passion for your domain."
+    - content: "Getting your teeth whitened."
+      isCorrect: true
+      explanation: "Correct. Having white teeth might give you a confident smile. But other factors are more helpful in establishing your personal brand. Examples include having a strong online presence and excellent communication skills."
+    - content: "Doing a media training course to improve your public speaking and interview skills."
+      isCorrect: false
+      explanation: "Incorrect. A media training course can be helpful in establishing your personal brand. When you improve your communication skills, you become more confident in pitches, presentations, and interviews, attracting more followers."
+
+  - content: "When seeking media coverage for your startup, which of the following events is likely to be covered by mainstream media?"
+    choices:
+    - content: "Launching your MVP."
+      isCorrect: false
+      explanation: "Incorrect. Media coverage of specific companies usually reports on important milestones. The mainstream media doesn't often write about basic steps that every company takes, such as launching an MVP."
+    - content: "Getting accepted into a local startup accelerator."
+      isCorrect: false
+      explanation: "Incorrect. Media coverage of specific companies usually reports on important milestones. The mainstream media doesn't often write about basic steps that every company takes, such as getting accepted into an accelerator."
+    - content: "Raising a funding round from a well-known investor."
+      isCorrect: true
+      explanation: "Correct. Media coverage of specific companies usually reports on important milestones like securing a well-known investor."
+    - content: "Posting a really interesting blog post on your website."
+      isCorrect: false
+      explanation: "Incorrect. Media coverage of specific companies usually reports on important milestones. The mainstream media doesn't often write about basic steps that every company takes, such as posting a blog entry."
