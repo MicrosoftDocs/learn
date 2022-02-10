@@ -17,7 +17,9 @@ During the process, you'll:
 
 1. Add the following trigger definition on the first line:
 
-   :::code language="yaml" source="code/8-pipeline.yml" range="1-4":::
+   :::code language="yaml" source="code/8-pipeline.yml" range="1-5":::
+
+   Notice that you also enable concurrency control, to avoid your pipeline running multiple times simultaneously.
 
 1. Save your changes to the file.
 

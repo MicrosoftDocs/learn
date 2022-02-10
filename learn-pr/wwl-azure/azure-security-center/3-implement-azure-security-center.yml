@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.implement-azure-security-center
-title: Implement Azure Security Center
+title: Implement Microsoft Defender for Cloud
 metadata:
-  title: Implement Azure Security Center
-  description: "Implement Azure Security Center"
-  ms.date: 10/14/2021
+  title: Implement Microsoft Defender for Cloud
+  description: "Implement Microsoft Defender for Cloud"
+  ms.date: 01/04/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/3-implement-azure-security-center.md)]

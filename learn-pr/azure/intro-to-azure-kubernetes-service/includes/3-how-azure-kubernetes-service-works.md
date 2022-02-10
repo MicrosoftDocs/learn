@@ -28,19 +28,15 @@ Here you use the standard Kubernetes command-line tools or the Azure CLI to mana
 
 AKS also supports all the popular development and management tools such as Helm, Draft, Kubernetes extension for Visual Studio Code and Visual Studio Kubernetes Tools.
 
-## Azure Dev Spaces
+## Bridge to Kubernetes
 
-Setting up a local Kubernetes cluster on a developer machine can be complex and most solutions offers a single node configuration. It's also common to mock or replicate dependencies between developer teams when working on microservices projects.
+Bridge to Kubernetes allows you to run and debug code on your development computer, while still connected to your Kubernetes cluster with the rest of your application or services. 
 
-Azure Dev Spaces helps your development teams be more productive on Kubernetes and allows you to:
+Using Bridge to Kubernetes lets you:
 
-- Minimize the local dev machine setup for each team member as developers can work directly in AKS
-- Rapidly iterate and debug code directly in Kubernetes using Visual Studio or Visual Studio Code
-- Generate Docker and Kubernetes configuration-as-code assets to use from development through to production
-- Develop your code in isolation, and do integrated testing with other components without replicating or mocking up dependencies
-
-> [!IMPORTANT]
-> Azure Dev Spaces is supported only by AKS clusters in specific regions.
+- Avoid having to build and deploy code to your cluster by instead creating a direct connection from your development computer to your cluster, allowing you to quickly test and develop your service in the context of the full application without creating any Docker or Kubernetes configuration. 
+- Redirect traffic between your connected Kubernetes cluster and your development computer, which allows code on your development computer and services running in your Kubernetes cluster to communicate as if they are in the same Kubernetes cluster. 
+- Provide a way to replicate environment variables and mounted volumes available to pods in your Kubernetes cluster in your development computer, which allows allows you to quickly work on your code without having to replicate those dependencies manually.
 
 ## Deployment Center
 

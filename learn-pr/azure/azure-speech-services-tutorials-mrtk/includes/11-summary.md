@@ -1,5 +1,6 @@
 Through these series of modules, you have implemented speech recognition powered by Azure, run the application on our device to ensure the feature is working correctly, and implemented speech commands powered by Azure. 
-Your project can now successfully translate the words you speak into several different languages. In addition, you can run the application on our device to ensure the feature is working correctly.
+
+Your project can now successfully translate the words you speak into several different languages. In addition, you can run the application on your device to ensure the feature is working correctly.
 
 ## Next steps
 

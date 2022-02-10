@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Explore the functionality of a Kubernetes cluster
   description: An exercise that explores the functionality of a Kubernetes cluster
   ms.date: 4/24/2020
-  author: cryophobia
-  ms.author: chrvaw
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: platform

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.interact-with-data-blazor-web-apps
+metadata:
+  moduleType: standard
+  title: Interact with data in Blazor web apps
+  description: Learn how to create a graphical user interface in a Blazor web app by creating and assembling Blazor components. Access data and share it for display on multiple pages within your app.
+  ms.date: 8/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+title: Interact with data in Blazor web apps
+summary: Design user interface elements for a web app by using Blazor components. You'll also obtain data and display it to the user on dynamic webpages.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Assemble a user interface for a web app by creating Blazor components.
+    - Access data to display in your web app.
+    - Share data in your web app between multiple Blazor components.
+    - Bind an HTML element to a variable in a Blazor component.
+prerequisites: |
+  - Familiarity with HTML and CSS in web development
+  - Ability to write C# code at a novice level
+  - Ability to create a Blazor web application
+iconUrl: /learn/achievements/interact-with-data-blazor-web-apps.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - blazor
+  - dotnet-core
+  - aspnet
+units:
+- learn.interact-with-data-blazor-web-apps.introduction
+- learn.interact-with-data-blazor-web-apps.create-user-interfaces-with-blazor-components
+- learn.interact-with-data-blazor-web-apps.exercise-create-user-interfaces-with-blazor-components
+- learn.interact-with-data-blazor-web-apps.access-data-from-blazor-components
+- learn.interact-with-data-blazor-web-apps.exercise-access-data-from-blazor-components
+- learn.interact-with-data-blazor-web-apps.share-data-in-blazor-applications
+- learn.interact-with-data-blazor-web-apps.exercise-share-data-in-blazor-applications
+- learn.interact-with-data-blazor-web-apps.bind-controls-data-blazor-applications
+- learn.interact-with-data-blazor-web-apps.exercise-bind-controls-data-blazor-applications
+- learn.interact-with-data-blazor-web-apps.summary
+badge:
+  uid: learn.interact-with-data-blazor-web-apps.badge

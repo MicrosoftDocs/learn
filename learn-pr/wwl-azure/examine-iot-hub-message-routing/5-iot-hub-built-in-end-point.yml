@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-hub-message-routing.built-endpoint
+title: Examine the IoT Hub built-in endpoint
+metadata:
+  title: Examine the IoT Hub built-in endpoint
+  description: "Examine the IoT Hub built-in endpoint"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-iot-hub-built-in-end-point.md)]

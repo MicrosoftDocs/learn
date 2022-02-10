@@ -67,11 +67,11 @@ Azure provides a strong secure foundation to strengthen your security posture ac
 
 These ongoing investments protect workloads across your hybrid environments with intelligent security services. Customers will have reduced costs and complexity with a highly secure cloud foundation managed by Microsoft. Azure also has more compliance certifications than any other cloud provider—view the comprehensive list.
 
-#### Azure Security Center
+#### Microsoft Defender for Cloud
 
-Microsoft uses a wide variety of physical, infrastructure, and operational controls to help secure Azure, but there are additional actions you need to take to help safeguard your workloads. Turn on Azure Security Center to strengthen your cloud security posture. Within [Azure Security Center](https://azure.microsoft.com/services/security-center/?azure-portal=true), use [Azure Defender](https://azure.microsoft.com/services/azure-defender/?azure-portal=true) to protect your hybrid cloud workloads.
+Microsoft uses a wide variety of physical, infrastructure, and operational controls to help secure Azure, but there are additional actions you need to take to help safeguard your workloads. Turn on Microsoft Defender for Cloud to strengthen your cloud security posture. Within [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/?azure-portal=true), use [Microsoft Defender for Cloud](https://azure.microsoft.com/services/azure-defender/?azure-portal=true) to protect your hybrid cloud workloads.
 
-![Azure Portal is shown in the Security Center with recommendations.](../media/security-portal.png)
+![Azure Portal is shown in the Defender for Cloud with recommendations.](../media/security-portal.png)
 
 #### Start with a secure foundation
 
@@ -79,7 +79,7 @@ Take advantage of multi-layered security provided by Microsoft across physical d
 
 #### Simplify security with built-in controls
 
-Protect your workloads quickly with built-in controls and services in Azure across identity, data, networking, and apps. Get continuous protection with deeper insights from Azure Security Center. Extend protections to hybrid environments and easily integrate partner solutions in Azure.
+Protect your workloads quickly with built-in controls and services in Azure across identity, data, networking, and apps. Get continuous protection with deeper insights from Microsoft Defender for Cloud. Extend protections to hybrid environments and easily integrate partner solutions in Azure.
 
 #### Detect threats early with unique intelligence
 

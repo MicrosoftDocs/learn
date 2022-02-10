@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exploratory-statistics-visualization.md)]

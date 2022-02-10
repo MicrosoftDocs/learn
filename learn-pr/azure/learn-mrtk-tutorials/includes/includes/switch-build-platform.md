@@ -1,4 +1,4 @@
-## [Unity 2020 + openxr](#tab/openxr)
+## [Unity 2020 + Openxr](#tab/openxr)
 
 1. In the Unity menu, select **File** > **Build Settings...** to open Build Settings.
 
@@ -8,14 +8,14 @@
 
     * Set **Target device** to *HoloLens*
     * Set **Architecture** to *ARM 64*
-    * Set **Build Type** to**D3D Project*
+    * Set **Build Type** to *D3D Project*
     * Set **Target SDK Version** to *Latest Installed*
     * Set **Minimum Platform Version** to *10.0.10240.0*
     * Set **Visual Studio Version** to *Latest installed*
-    * Set **Build and Run on** to **USB Device**
+    * Set **Build and Run on** to *Local Machine*
     * Set **Build configuration** to *Release* (there are known performance issues with Debug)
-    
- 1. Select **Switch Platform**.
+
+1. Select **Switch Platform**.
 
     :::image type="content" source="../../media/universal-windows-platform-settings-switch.png" alt-text="Screenshot of Unity Build Settings with Universal Windows Platform settings." lightbox="../../media/universal-windows-platform-settings-switch.png":::
 

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Install the Application Insights SDK
   description: In this unit, you'll add the Application Insights SDK to a web app.
   ms.date: 02/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

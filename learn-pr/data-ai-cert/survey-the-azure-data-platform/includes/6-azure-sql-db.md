@@ -15,7 +15,7 @@ SQL Database delivers predictable performance for multiple resource types, servi
 
 ## Ingesting and processing data
 
-SQL Database can ingest data through application integration from a wide range of developer SDKs. Allowed programming languages include .NET, Python, Java, and Node.js. Beyond applications, you can also ingest data through Transact-SQL (T-SQL) techniques and from the movement of data using Azure Data Factory.
+SQL Database can ingest data through application integration from a wide range of developer SDKs. Supported programming languages, runtime environments, and developer platforms include, .NET, Node.js, Python, and Java. Beyond applications, you can also ingest data through Transact-SQL (T-SQL) techniques and from the movement of data using Azure Data Factory.
 
 ## Queries
 
@@ -29,5 +29,5 @@ SQL Database provides a range of built-in security and compliance features. Thes
 - SQL Database auditing
 - Data encryption
 - Azure Active Directory authentication
-- Multifactor authentication
+- Multi-factor authentication
 - Compliance certification

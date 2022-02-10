@@ -4,12 +4,13 @@ title: Deploy and configure Active Directory Domain Services domain controllers 
 metadata:
   title: Deploy and configure Active Directory Domain Services domain controllers in Azure VMs
   description: "Deploy and configure Active Directory Domain Services domain controllers in Azure VMs"
-  ms.date: 10/30/2020
+  ms.date: 11/04/2021
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/03-deploy-configure-active-directory-domain-services-domain-controllers.md)]

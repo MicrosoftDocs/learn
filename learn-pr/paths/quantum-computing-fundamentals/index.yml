@@ -5,8 +5,8 @@ metadata:
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
   ms.date: 09/20/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: dphansen
+  ms.author: davidph
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Quantum computing foundations

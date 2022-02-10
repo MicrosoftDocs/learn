@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Create buttons with Unity cubes and MRTK scripts
 durationInMinutes: 10
 content: |

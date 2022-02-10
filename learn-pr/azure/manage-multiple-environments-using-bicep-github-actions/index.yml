@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.azure.manage-multiple-environments-using-bicep-github-actions
+metadata:
+  moduleType: standard
+  title: Manage multiple environments by using Bicep and GitHub Actions
+  description: Build a deployment workflow for Bicep IaC templates. Deploy to multiple environments by using reusable workflows. Learn how to provide environment-specific parameters from your workflow.
+  ms.date: 11/08/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage multiple environments by using Bicep and GitHub Actions
+summary: |
+  Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use reusable workflows to reduce code duplication, and set parameter values for each environment.
+abstract: |
+  After completing this module, you'll be able to:
+    - Deploy Bicep files to multiple Azure environments from a workflow
+    - Use reusable workflows to avoid repetition
+    - Use and secure parameters for each environment
+prerequisites: |
+  You should be familiar with using:
+  - Bicep, including creating and deploying basic files, parameter files, preflight validation, and the what-if operation.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
+  - Workflows through GitHub Actions, including jobs and secrets.
+  
+  To work through the exercises in the module, you'll need:
+  - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+  - A GitHub account.
+  
+  You'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
+iconUrl: /learn/achievements/bicep/manage-multiple-environments-using-bicep-github-actions.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+  - github
+units:
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.introduction
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.handle-similarities-between-environments-using-reusable-workflows
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-set-up-environment
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-add-multiple-environments-your-workflow
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.handle-differences-between-environments-using-bicep-parameters
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-use-bicep-parameters-multiple-environments
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.knowledge-check
+- learn.azure.manage-multiple-environments-using-bicep-github-actions.summary
+badge:
+  uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.badge

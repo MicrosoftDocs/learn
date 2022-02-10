@@ -149,12 +149,12 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
     > [!div class="mx-imgBorder"]
     > ![The **images** blob in the **BLOB CONTAINERS** folder in **Storage Explorer**](../media/6-images.png)
 
-5. Select any image , and then select **Open** in the toolbar.
+5. Select any image to open the image Overview page.
 
     > [!div class="mx-imgBorder"]
     > ![Image showing the **images** container. The user has selected a blob and is about to download and open it](../media/6-open-image.png)
 
-6. In the **File download** window, select **Click here to begin download**.
+6. In the toolbar, select **Download**.
 
     > [!div class="mx-imgBorder"]
     > ![The **File download** dialog box. The user has selected **Click here to begin download**.](../media/6-download-file.png)

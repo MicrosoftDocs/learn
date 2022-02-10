@@ -5,8 +5,8 @@ metadata:
   title: View live application logging with the log streaming service
   description: View live application logging with the log streaming service
   ms.date: 03/20/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

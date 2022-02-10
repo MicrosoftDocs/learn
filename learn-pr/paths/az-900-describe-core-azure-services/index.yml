@@ -6,11 +6,11 @@ metadata:
   brand: azure
   ms.date: 09/14/2020
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
-title: "Azure Fundamentals part 2: Describe core Azure services"
+title: "Microsoft Azure Fundamentals: Describe core Azure services"
 summary: |
   After completing this learning path, you'll be able to:
 

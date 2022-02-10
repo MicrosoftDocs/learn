@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.cognitive-accessibility
+title: Cognitive accessibility fundamentals
+metadata:
+  title: Cognitive accessibility fundamentals
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 11/01/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-cognitive-accessibility.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options is most likely to introduce unintentional barriers related to performing cognitive tasks?"
+    choices:
+    - content: "Providing players with an option to enable reminders of which button to use on a jump sequence."
+      isCorrect: false
+      explanation: "Incorrect. Providing in-game reminders of what game mechanics to use for a particular action eliminates the need for a player to remember all combinations."
+    - content: "Providing players with a list of objectives at the beginning of a level that can't be referenced again until the level is complete."
+      isCorrect: true
+      explanation: "Correct. This situation places a demand on players to memorize information critical to gameplay. Players who can't recall the information can experience unintentional barriers that block progress."
+    - content: "Providing tutorials of new mechanics introduced in gameplay."
+      isCorrect: false
+      explanation: "Incorrect. Providing an opportunity for players to try out and familiarize themselves with new mechanics in a trial space removes barriers."
+  - content: "A game has a menu behind which an animated scene unfolds with explosions, bright colors, and fast-paced movement. Which area of cognition is most likely to be affected?"
+    choices:
+    - content: "Learning and cognitive processing."
+      isCorrect: false
+      explanation: "Incorrect. Learning and cognitive processing applies to problem solving."
+    - content: "Attention."
+      isCorrect: true
+      explanation: "Correct. Attention can be affected by a range of sensory stimuli. The visual distraction provided by the animation in the background might make it difficult for someone who has a disability related to attention to navigate the menu."
+    - content: "Memory."
+      isCorrect: false
+      explanation: "Incorrect. Memory applies to recalling past information to inform future decisions."
+ 
+

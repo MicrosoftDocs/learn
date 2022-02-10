@@ -33,7 +33,7 @@ In order to get the best learning experience from this module, it's important th
 - On-premises resiliency Windows Server-based compute and storage technologies.
 - Implementing and managing IaaS services in Azure.
 - Azure Active Directory (Azure AD).
-- Security-related technologies (firewalls, encryption, multi-factor authentication).
+- Security-related technologies (firewalls, encryption, multifactor authentication).
 - Windows PowerShell scripting.
 - Automation and monitoring.
 

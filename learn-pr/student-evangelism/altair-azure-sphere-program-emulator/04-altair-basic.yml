@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.altair-basic
+title: Prepare to program the Altair emulator by using Altair BASIC
+metadata:
+  title: Prepare to program the Altair emulator by using Altair BASIC
+  description: Get overview information that will help you program the Altair emulator by using Altair BASIC.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/04-altair-basic.md)]

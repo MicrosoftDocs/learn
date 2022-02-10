@@ -1,14 +1,10 @@
-In this unit, you'll review the structure of a Razor page `PageModel` class and its components. You'll learn how page handlers interact with our Razor page. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a Razor page `PageModel` class and its components. You'll learn how page handlers interact with your Razor page. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
 
 ## Examine the structure of a Razor Pages `PageModel` class
 
 A new `PageModel` class file contains the following C# code:
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -79,7 +75,6 @@ using RazorPagesPizza.Models;
 Examine the `Pizza` model class:
 
 ```csharp
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace RazorPagesPizza.Models

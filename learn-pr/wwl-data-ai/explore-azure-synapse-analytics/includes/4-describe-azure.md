@@ -76,11 +76,10 @@ A pipeline is a logical grouping of activities that performs a unit of work. Tog
 
 ## Process data using Azure Data Lake
 
-Azure Data Lake is a collection of analytics and storage services that you can combine to implement a big data solution. It comprises three main elements:
+Azure Data Lake is a collection of analytics and storage services that you can combine to implement a big data solution. It comprises two main elements:
 
 - Data Lake Store
 - Data Lake Analytics
-- HDInsight
 
 ### What is Data Lake Store?
 

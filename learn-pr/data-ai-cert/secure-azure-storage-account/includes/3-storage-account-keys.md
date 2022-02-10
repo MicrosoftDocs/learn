@@ -39,7 +39,7 @@ If the keys are compromised, change the key values in the Azure portal. Here are
 To refresh keys:
 
 - Change each trusted app to use the secondary key.
-- Refresh the primary key in the Azure portal. Consider this as the new secondary key value.
+- Refresh the primary key in the Azure portal. This will be the new secondary key value.
 
 > [!IMPORTANT]
 > After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.

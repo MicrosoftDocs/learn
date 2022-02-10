@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist wants to train a model as a command job. Which three things should be referred to in the YAML file?"
+    choices:
+    - content: "The training script, the dataset, the compute."
+      isCorrect: false
+      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+    - content: "The training script, the dataset, the environment."
+      isCorrect: false
+      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+    - content: "The training script, the environment, the compute."
+      isCorrect: true
+      explanation: "That is correct. To submit a job, you need to state what to run (training script), how to run it (environment), and where to run it (compute)."
+  - content: "To tune hyperparameters with a sweep job, which compute can be used to train multiple models in parallel?"
+    choices:
+    - content: "A compute cluster."
+      isCorrect: true
+      explanation: "That is correct. If a compute cluster can scale up to more than one node, you can train multiple models in parallel."
+    - content: "A compute instance."
+      isCorrect: false
+      explanation: "That is incorrect. It's not possible to train multiple models in parallel on a compute instance."
+    - content: "An inference cluster."
+      isCorrect: false
+      explanation: "That is incorrect. An inference cluster is used for model deployments."

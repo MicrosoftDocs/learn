@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which API is considered the \"native API\" for Azure Cosmos DB?"
+    choices:
+    - content: "MongoDB API"
+      isCorrect: false
+      explanation: "That's incorrect. While the MongoDB API implements the wire protocol for MongoDB, it is not the native API for Azure Cosmos DB."
+    - content: "Cassandra API"
+      isCorrect: false
+      explanation: "That's incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it is not the native API for Azure Cosmos DB."
+    - content: "SQL API"
+      isCorrect: true
+      explanation: "That's correct. The SQL API is the native API for Azure Cosmos DB. All other APIs map to the SQL API in their implementations."
+  - content: "Which property is required to be specified when creating a new Azure Cosmos DB SQL API container?"
+    choices:
+    - content: "Partition key path"
+      isCorrect: true
+      explanation: "That's correct. All containers in an Azure Cosmos DB SQL API database must have a partition key path defined."
+    - content: "Time-to-live"
+      isCorrect: false
+      explanation: "That's incorrect. You can create a container without a time-to-live value. The container will not expire items automatically."
+    - content: "Indexing policy"
+      isCorrect: false
+      explanation: "That's incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB will automatically index every property of every item."
+  - content: "Your team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resource should that member of the team create?"
+    choices:
+    - content: "Container"
+      isCorrect: false
+      explanation: "That's incorrect. If your team member creates a new container, the default consistency level and global replication settings will remain the same between both teams."
+    - content: "Account"
+      isCorrect: true
+      explanation: "That's correct. In order to have different behavior for replication and default consistency, your team member must create a new account."
+    - content: "Database"
+      isCorrect: false
+      explanation: "That's incorrect. If your team member creates a new database, the default consistency level and global replication settings will remain the same between both teams."

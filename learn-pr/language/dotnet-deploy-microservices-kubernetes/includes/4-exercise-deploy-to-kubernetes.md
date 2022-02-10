@@ -31,7 +31,7 @@ You can create a file to manage the deployment of a container into Kubernetes wi
             - containerPort: 80
             env:
             - name: ASPNETCORE_URLS
-              value: http://*:5902
+              value: http://*:80
       selector:
         matchLabels:
           app: pizzabackend

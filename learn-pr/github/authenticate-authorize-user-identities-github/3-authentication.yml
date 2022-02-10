@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.authenticate-authorize-user-identities-github.3-authentication
+title: User authentication
+metadata:
+  title: User authentication
+  description: Learn the different ways to authenticate a user in GitHub.
+  ms.date: 11/01/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-authentication.md)]

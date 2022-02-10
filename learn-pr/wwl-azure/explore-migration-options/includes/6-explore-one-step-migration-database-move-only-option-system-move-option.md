@@ -1,6 +1,6 @@
  -  Ensure connectivity to Azure is available via ExpressRoute (highly recommended and with higher-speed connectivity) or Virtual Private Network (VPN) into Azure.
  -  Provision the target infrastructure in Azure that includes SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be rapidly deployed using predefined ARM templates.
- -  SUM is started on the on-premises source SAP application server.
+ -  Software Update Manager (SUM) is started on the on-premises source SAP application server.
  -  Uptime activities are executed from the on-premises SAP application server and the shadow repository is created.
  -  As part of the downtime phase, export files are generated on the source system and these files are then transferred to Azure via Express Route or VPN.
  -  File transfers can occur in **Sequential Data Transfer** or **Parallel Data Transfer** modes.

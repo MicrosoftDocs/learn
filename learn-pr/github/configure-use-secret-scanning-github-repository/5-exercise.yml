@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.configure-and-use-secret-scanning-in-your-github-repository.exercise
+title: Exercise
+metadata:
+  unitType: exercise
+  title: Exercise - Exclude files from secret scanning
+  description: This exercise checks your knowledge on excluding files from being scanned by secret scanning. It is automatically graded via a workflow once you have completed the instructions.
+  ms.date: 11/25/2021
+  author: lucie-docs
+  ms.author: lucielenaour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise.md)]

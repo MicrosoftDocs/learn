@@ -29,6 +29,7 @@ roles:
 - developer
 products:
 - azure
+- azure-marketplace
 units:
 - learn.simplify-cloud-procurement-governance-azure-marketplace.1-introduction
 - learn.simplify-cloud-procurement-governance-azure-marketplace.2-find-try-software-azure-marketplace

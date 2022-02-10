@@ -61,7 +61,7 @@ In a SQL pool, each compute node uses an Azure SQL Database and Azure Storage to
 > [!div class="mx-imgBorder"]
 > ![Graphic showing the structure of Azure Synapse Analytics](../media/3-synapse.png)
 
-You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them. However, unlike an ordinary SQL Server database engine, Azure Synapse Analytics can receive data from a wide variety of sources. To do this, Azure Synapse Analytics uses a technology named [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide). PolyBase enables you to retrieve data from relational and non-relational sources, such as delimited text files, Azure Blob Storage, and Azure Data Lake Storage. You can save the data read in as SQL tables within the Synapse Analytics service.
+You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them. However, unlike an ordinary SQL Server database engine, Azure Synapse Analytics can receive data from a wide variety of sources. To do this, Azure Synapse Analytics uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide). PolyBase enables you to retrieve data from relational and non-relational sources, such as delimited text files, Azure Blob Storage, and Azure Data Lake Storage. You can save the data read in as SQL tables within the Synapse Analytics service.
 
 You specify the number of nodes when you create a SQL pool. You can scale the SQL pool manually to add or remove compute nodes as necessary.
 

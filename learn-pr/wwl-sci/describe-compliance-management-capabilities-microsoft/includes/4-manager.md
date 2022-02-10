@@ -2,7 +2,7 @@ Microsoft Compliance Manager is a feature in the Microsoft 365 compliance center
 
 The following video provides a quick overview of Compliance Manager:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FGYZ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
 

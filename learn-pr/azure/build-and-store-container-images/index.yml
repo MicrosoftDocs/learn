@@ -4,8 +4,8 @@ metadata:
   title: Build and store container images with Azure Container Registry
   description: Learn how to use Docker to build, store, and manage private container images with the Azure Container Registry.
   ms.date: 08/20/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: georgewallace
+  ms.author: gwallace
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and store container images with Azure Container Registry

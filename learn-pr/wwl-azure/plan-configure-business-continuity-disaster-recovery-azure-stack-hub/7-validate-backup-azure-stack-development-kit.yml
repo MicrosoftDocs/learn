@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.validate-backup-using-development-kit
+title: Validate backup using the Azure Stack Development Kit
+metadata:
+  title: Validate backup using the Azure Stack Development Kit
+  description: "Validate backup using the Azure Stack Development Kit"
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-validate-backup-azure-stack-development-kit.md)]

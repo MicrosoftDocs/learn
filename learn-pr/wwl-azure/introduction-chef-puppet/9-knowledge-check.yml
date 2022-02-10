@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-chef-puppet.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices isn't the main architectural component of Chef?"
+    choices:
+    - content: "Chef Server."
+      isCorrect: false
+      explanation: "Incorrect. Chef has the following main architectural components: Chef Server, Chef Client, and Chef Workstation."
+    - content: "Chef Client."
+      isCorrect: false
+      explanation: "Incorrect. Chef has the following main architectural components: Chef Server, Chef Client, and Chef Workstation."
+    - content: "Chef Facts."
+      isCorrect: true
+      explanation: "Correct. Chef has the following main architectural components: Chef Server, Chef Client, and Chef Workstation."
+  - content: "Which of the following choices is used to manage Chef clients?"
+    choices:
+    - content: "knife."
+      isCorrect: true
+      explanation: "Correct. You can bootstrap a node or client and assign a role using the knife bootstrap command."
+    - content: "ssh."
+      isCorrect: false
+      explanation: "Incorrect. You can bootstrap a node or client and assign a role using the knife bootstrap command."
+    - content: "chef."
+      isCorrect: false
+      explanation: "Incorrect. You can bootstrap a node or client and assign a role using the knife bootstrap command."
+  - content: "Which of the following choices isn't open-source products integrated into the Chef Automate image available from Azure Marketplace?"
+    choices:
+    - content: "Habitat."
+      isCorrect: false
+      explanation: "Incorrect. Habitat and InSpec are two open-source products that are integrated into the Chef Automate image available from Azure Marketplace."
+    - content: "Console Services."
+      isCorrect: true
+      explanation: "Correct. Habitat and InSpec are two open-source products that are integrated into the Chef Automate image available from Azure Marketplace."
+    - content: "InSpec."
+      isCorrect: false
+      explanation: "Incorrect. Habitat and InSpec are two open-source products that are integrated into the Chef Automate image available from Azure Marketplace."
+  - content: "Which of the following choices is a Puppet component responsible for compiling code to create agent catalogs?"
+    choices:
+    - content: "Agent."
+      isCorrect: false
+      explanation: "Incorrect. The Puppet Master is responsible for compiling code to create agent catalogs."
+    - content: "Console Service."
+      isCorrect: false
+      explanation: "Incorrect. The Puppet Master is responsible for compiling code to create agent catalogs."
+    - content: "Master."
+      isCorrect: true
+      explanation: "Correct. The Puppet Master is responsible for compiling code to create agent catalogs."

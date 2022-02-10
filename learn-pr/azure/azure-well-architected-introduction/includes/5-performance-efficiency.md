@@ -14,11 +14,11 @@ Compute resources can be scaled in two directions:
 
 - Scaling *up* is adding more resources to a single instance. This is also known as *vertical scaling*.
 
-    ![An illustration that shows scaling up by adding resources to a virtual machine.](../media/scale-up.png)
+  ![An illustration that shows scaling up by adding resources to a virtual machine.](../media/scale-up.png)
 
 - Scaling *out* is adding more instances. This is also known as *horizontal scaling*.
 
-    ![An illustration that shows scaling out by adding instances to increase performance.](../media/scale-out.png)
+  ![An illustration that shows scaling out by adding instances to increase performance.](../media/scale-out.png)
 
 Scaling up is concerned with adding more resources, such as CPU or memory, to a single instance. This instance might be a virtual machine or a PaaS service. 
 

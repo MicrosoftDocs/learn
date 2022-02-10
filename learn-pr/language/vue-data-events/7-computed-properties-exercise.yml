@@ -8,6 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
+  ms.custom: team=nextgen
 title: Exercise - Add computed properties
 durationInMinutes: 2
 content: |

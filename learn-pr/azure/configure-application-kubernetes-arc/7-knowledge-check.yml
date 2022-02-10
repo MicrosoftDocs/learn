@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 05/01/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: mijacobs
+  ms.author: mijacobs
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -57,4 +57,3 @@ quiz:
     - content: A local workspace deployment by running `az webapp up`.
       isCorrect: false
       explanation: This method isn't currently supported.
-

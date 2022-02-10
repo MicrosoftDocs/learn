@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.use-pages-routing-layouts-improve-blazor-navigation.explore-route-parameters-effect-apps-routing
+title: Explore how route parameters affect your Blazor app's routing
+metadata:
+  unitType: learning-content
+  title: Explore how route parameters affect your Blazor app's routing
+  description: "Learn how route parameters affect your Blazor app's routing and find information about the current webpage."
+  ms.date: 8/24/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-explore-route-parameters-effect-apps-routing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which is the correct format to use a route parameter to capture a portion of the URL that defines the favorite pizza to work with?"
+      choices:
+      - content: "/FavoritePizzas/{favorite}"
+        isCorrect: true
+        explanation: "This format captures the favorite pizza name by using the curly braces to grab the second part of the requested URI."
+      - content: "/FavoritePizzas/[favorite]"
+        isCorrect: false
+        explanation: "Square brackets aren't part of the routing specification in Blazor."
+      - content: "/FavoritePizzas?favorite"
+        isCorrect: false
+        explanation: "You can work with querystring parameters in Blazor, but this format doesn't capture those values."  
+    - content: "Which syntax demonstrates a Blazor route parameter with a catch-all parameter?"
+      choices:
+      - content: "`/FavoritePizzas/{favorite?}`"
+        isCorrect: false
+        explanation: "The `?` marks a parameter as optional, not as a catch-all."
+      - content: "`/FavoritePizzas/{favorite:catchall}`"
+        isCorrect: false
+        explanation: "The `:catchall` syntax looks like a route constraint but isn't a valid route constraint."
+      - content: "`/FavoritePizzas/{*favorite}`"
+        isCorrect: true
+        explanation: "The `*` will capture the rest of the path defined after `/FavoritePizzas/` and make it available in the `favorite` parameter."

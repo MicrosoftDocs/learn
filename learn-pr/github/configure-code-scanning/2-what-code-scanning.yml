@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
+uid: learn.github.configure-code-scanning.2-what-code-scanning
+title: What is code scanning?
+metadata:
+  unitType: What is code scanning?
+  title: What is code scanning?
+  description: In this unit, you'll learn about CodeQL, the two options for setting up code scanning, and how to add the CodeQL workflow to your repository.
+  ms.date: 02/8/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-code-scanning.md)]

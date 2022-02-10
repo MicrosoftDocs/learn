@@ -6,7 +6,6 @@ In the exercise, you wrote a function to build a car by using data stored in a `
 
 In the next module in this Learning Path, you'll discover more Rust data types, and how to use if/else conditional expressions in a program.
 
-
 ## Learn more
 
 Visit the following links to learn more about some of the items we explored in this module:
@@ -38,7 +37,6 @@ Visit the following links to learn more about some of the items we explored in t
 - [Learn about functions][Rust-func]
 - [Show output with the println! macro][Rust-println]
 - [Indicate unfinished code with the todo! macro][Rust-todo]
-
 
 <!-- Links -->
 

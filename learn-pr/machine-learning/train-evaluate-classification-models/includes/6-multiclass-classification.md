@@ -2,7 +2,7 @@ It's also possible to create *multiclass* classification models, in which there 
 
 * Non-diabetic
 * Type-1 diabetic
-* Type-2 diabetic.
+* Type-2 diabetic
 
 The individual class probability values would still add up to a total of 1 as the patient is definitely in only one of the three classes, and the most probable class would be predicted by the model.
 
@@ -15,13 +15,14 @@ Multiclass classification can be thought of as a combination of multiple binary 
   * circle or not
   * triangle or not
   * hexagon or not
-* One vs One (OVO), in which a classifier for each possible pair of classes is created. The classification problem with four shape classes would require the following binary classifiers:
+* **One vs One (OVO)**, in which a classifier for each possible pair of classes is created. The classification problem with four shape classes would require the following binary classifiers:
   * square or circle
   * square or triangle
   * square or hexagon
   * circle or triangle
   * circle or hexagon
   * triangle or hexagon
+
 In both approaches, the overall model must take into account all of these predictions to determine which single category the item belongs to.
 
 Fortunately, in most machine learning frameworks, including scikit-learn, implementing a multiclass classification model is not significantly more complex than binary classification - and in most cases, the estimators used for binary classification implicitly support multiclass classification by abstracting an OVR algorithm, an OVO algorithm, or by allowing a choice of either.

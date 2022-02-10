@@ -4,8 +4,8 @@ metadata:
   title: Create an analytics rule from templates
   description: Describes the procedure to create an analytics rule from templates.
   ms.date: 12/15/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an analytics rule from templates
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Azure Defender?"
+  - content: "Which one of the template types should you use to create an incident based on all alerts generated in Microsoft Defender for Cloud?"
     choices:
     - content: "Fusion"
       isCorrect: false
@@ -25,12 +25,12 @@ quiz:
       explanation: "Machine learning behavior analytics detects anomalous SSH or RDP sign-in activity."
     - content: "Microsoft Security"
       isCorrect: true
-      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Azure Defender."
-  - content: "Which one of the following template rules are precreated in Azure Sentinel Analytics?"
+      explanation: "Template rules based on the Microsoft security type creates incidents based on all alerts generated in Microsoft Defender for Cloud."
+  - content: "Which one of the following template rules are precreated in Microsoft Sentinel Analytics?"
     choices:
     - content: "Scheduled template rules"
       isCorrect: false
-      explanation: "Scheduled template rules are not precreated in Azure Sentinel Analytics."
+      explanation: "Scheduled template rules are not precreated in Microsoft Sentinel Analytics."
     - content: "Fusion"
       isCorrect: true
       explanation: "By default, an alert rule is created by using the Fusion rule template."

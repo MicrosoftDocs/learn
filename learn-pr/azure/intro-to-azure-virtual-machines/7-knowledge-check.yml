@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
@@ -17,16 +17,16 @@ quiz:
     choices:
     - content: General purpose
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
+      explanation: "General-purpose VMs are designed to have a balanced CPU-to-memory ratio that is not as suitable for network appliances as Compute optimized virtual machines, which are designed to have a high CPU-to-memory ratio."
     - content: Compute optimized
       isCorrect: true
       explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: Memory optimized
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
+      explanation: "Memory optimized VMs are designed to have a high memory-to-CPU ratio, which is great for relational database servers, but not as suitable for network appliances as Compute optimized virtual machines, which are designed to have a high CPU-to-memory ratio."
     - content: Storage optimized
       isCorrect: false
-      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, batch processes, and application servers."
+      explanation: "Storage optimized VMs are designed to have high disk throughput and IO, which is ideal for VMs running databases but not as suitable for network appliances as Compute optimized virtual machines, which are designed to have a high CPU-to-memory ratio."
 
   - content: 'True or false: Resource Manager templates are JSON files?'
     choices:

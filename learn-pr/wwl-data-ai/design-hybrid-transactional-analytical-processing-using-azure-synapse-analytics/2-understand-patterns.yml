@@ -4,12 +4,13 @@ title: Understand hybrid transactional and analytical processing patterns
 metadata:
   title: Understand hybrid transactional and analytical processing patterns
   description: "Understand hybrid transactional and analytical processing patterns"
-  ms.date: 07/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-patterns.md)]

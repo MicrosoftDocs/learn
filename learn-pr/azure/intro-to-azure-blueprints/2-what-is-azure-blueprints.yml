@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-blueprints.what-is-azure-blueprints
+title: What is Azure Blueprints?
+metadata:
+  unitType: learning-content
+  title: What is Azure Blueprints?
+  description: "What is Azure Blueprints and what can it be used for?"
+  ms.date: 11/30/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-azure-blueprints.md)]

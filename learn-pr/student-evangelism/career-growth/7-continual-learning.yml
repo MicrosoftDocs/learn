@@ -10,6 +10,7 @@ metadata:
   ms.author: jelooper
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/7-continual-learning.md)]

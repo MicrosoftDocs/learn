@@ -4,7 +4,4 @@ Using various operators and techniques, we wrote code that evaluated equality, c
 
 Without this full complement of operators and techniques, we would be limited in the kinds of decision statements we could build.  Since all business logic requires some Boolean expressions, we've added a valuable tool to our programming toolbox.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

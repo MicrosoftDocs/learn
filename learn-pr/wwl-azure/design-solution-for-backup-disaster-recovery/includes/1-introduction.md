@@ -26,7 +26,7 @@ After completing this module, you’ll be able to:
 
 - Design for Azure virtual machine backup and recovery.
 
-- Design for6 Azure SQL backup and recovery
+- Design for Azure SQL backup and recovery
 
 - Design for Azure Site Recovery.
 

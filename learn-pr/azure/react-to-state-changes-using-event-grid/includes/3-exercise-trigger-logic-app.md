@@ -25,7 +25,7 @@ Let's start by creating a new virtual machine in the Azure portal.
     | Virtual machine name | vm1 |
     | Region | Select a region near you |
     | Availability options | No infrastructure redundancy required |
-    | Availability zone | 1 |
+    | Security type | Standard |
     | Image | Windows Server 2019 Datacenter - Gen1 |
     | Azure Spot instance | No checkmark |
     | Size | Standard DS1 v2 |
@@ -37,15 +37,15 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. Select **Review and create**, and after validation passes, select **Create**.
 
-    Wait for deployment to complete, and then select **Go to resource**. The virtual machine **Overview** pane for vm1 appears.
+    Wait for deployment to complete, and then select **Go to resource**. The **Overview** pane for **vm1** *Virtual machine* appears.
 
 ## Create a logic app
 
-The next step is to create the logic app that will run when a virtual machine change is detected. Let's create a blank logic app.
+Let's create a logic app that will run whenever a virtual machine change is detected. First, we'll create a blank logic app.
 
-1. In the top left breadcrumb, select **Home**, and then, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. In the resource menu, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, and in the results list, select **Logic App**. The **Create Logic App** pane appears.
+1. In the **Create a resource** menu, select **Integration**, and then in the results list, select **Logic App**. The **Create Logic App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -60,23 +60,23 @@ The next step is to create the logic app that will run when a virtual machine ch
     | Region | Select a region near you |
     | Enable log analytics | No |
 
-1. Select **Review + create**, and after validation passes, select **Create**.
+1. Select **Review + create**, and then select **Create**.
 
 1. Wait for deployment to complete, and then select **Go to resource**. The **Logic Apps Designer** pane appears.
 
 ## Add an Event Grid trigger to the logic app
 
-1. In the **Logic Apps Designer** pane, scroll down, and under **Templates**, select **Blank Logic App**.
+1. In the **Logic Apps Designer** pane, scroll down to **Templates** section, and then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
 
     :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Template for a blank logic app.":::
 
-1. In the resulting *Search connectors and triggers* search box, enter *event grid* as your filter. From the list of triggers, select **When a resource event occurs**.
+1. In the *Search connectors and triggers* search box, enter *event grid* as your filter. From the list of triggers, select **When a resource event occurs**.
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger.png" alt-text="Selections for adding an Event Grid trigger.":::
 
 1. When prompted, sign in to the **Microsoft Learn Sandbox** organization using your Azure account credentials.
 
-1. A **When a resource event occurs** box appears. Enter the following values for each setting from the dropdown lists to subscribe your logic app to publisher events:
+1. The **When a resource event occurs** dialog box appears. Select the following values for each setting to subscribe your logic app to publisher events:
 
     | Setting | Value |
     | --- | --- |
@@ -90,7 +90,7 @@ The next step is to create the logic app that will run when a virtual machine ch
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
 
-1. On the top menu bar, select **Save**.
+1. On the command bar, select **Save**.
 
     :::image type="content" source="../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
 

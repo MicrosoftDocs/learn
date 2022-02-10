@@ -61,6 +61,9 @@ After you've declared a parameter, you can refer to it throughout the rest of th
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
+> [!TIP]
+> The Bicep extension for Visual Studio Code shows you visual indicators to let you know if you're not following recommended practices. For example, it warns you if you define a parameter that you don't use. The *Bicep linter* continuously runs these checks while you work.
+
 ## Add a variable
 
 You can define a variable like this:
@@ -174,7 +177,7 @@ Next, you can create variables that determine the SKUs to use for the storage ac
 
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 ```
 
 Notice some new syntax here too. Let's break it down:
@@ -185,7 +188,7 @@ Notice some new syntax here too. Let's break it down:
 These rules can be translated to:
 
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `Standard_GRS` SKU. Otherwise, use the `Standard_LRS` SKU.
-- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2_v3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
+- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2V3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
 
 > [!TIP]
 > When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, because it avoids cluttering your resource definitions with logic.

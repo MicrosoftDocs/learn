@@ -14,6 +14,6 @@ When you investigate cases where you want to move alerts from one incident to an
 
 Watch this four-minute video, which describes incidents and incident management.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4J3mt]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J3mt]
 
 Use incidents to effectively and appropriately respond to alerts across your organization’s environment.

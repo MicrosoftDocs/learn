@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.visual-accessibility
+title: Visual accessibility fundamentals
+metadata:
+  title: Visual accessibility fundamentals
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 11/01/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-visual-accessibility.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options is most likely to introduce unintentional visual barriers?"
+    choices:
+    - content: "An onscreen countdown clock graphic that also announces the number of seconds left aloud through audio channels."
+      isCorrect: false
+      explanation: "Incorrect. By representing the countdown timer both audibly and visually, a visual barrier is more likely to be avoided."
+    - content: "A game represents incoming enemy damage with a red halo onscreen, and an audio cue of the character grunting."
+      isCorrect: false
+      explanation: "Incorrect. By representing enemy damage both audibly and visually, a visual barrier is more likely to be avoided."
+    - content: "A game identifies enemy characters with a red outline and ally characters with a green outline."
+      isCorrect: true
+      explanation: "Correct. Individuals who are color blind might not be able to distinguish between enemies and allies, which is a visual barrier."
+  - content: "Which of the following options would likely be useful in assisting a player without vision?"
+    choices:
+    - content: "A screen magnification tool."
+      isCorrect: false
+      explanation: "Incorrect. While useful for someone with low vision, a player without vision can't benefit from screen magnification because it requires that the user can visually perceive the larger onscreen elements."
+    - content: "Menu narration."
+      isCorrect: true
+      explanation: "Correct. Menu narration can allow someone who has no vision to navigate through the game's user interface."
+    - content: "Resizable text."
+      isCorrect: false
+      explanation: "Incorrect. While useful for someone with low vision, someone without vision can't benefit from text resizing because it requires that the user can visually perceive the larger text."
+  - content: "Which of the following options isn't a reason that developers should have an awareness of diverse player experiences when they learn about game accessibility?"
+    choices:
+    - content: "So developers can use this awareness to immediately implement changes in their games."
+      isCorrect: true
+      explanation: "Correct. Awareness of differing player experiences shouldn't be used to make immediate development decisions. This awareness is intended to drive developer's understanding of accessibility as an effort that can't be achieved with a one-size-fits-all approach. It's intended to encourage developers to collaborate with players who have lived experiences with accessibility barriers to inform effective accessibility solutions."
+    - content: "To drive awareness of the fact that game accessibility isn't a one-size-fits-all approach."
+      isCorrect: false
+      explanation: "Incorrect. This option is a reason that developers should have an awareness of diverse player experiences. Without an awareness of diverse player needs and experiences, gaming experiences and products might ship without addressing the needs of large groups of players."
+    - content: "To drive developer understanding of the importance of including the perspectives and guidance of players with each of these lived experiences to inform any future accessible design efforts."
+      isCorrect: false
+      explanation: "Incorrect. This option is a reason that developers should have an awareness of diverse player experiences. Without an awareness of these diverse experiences, developers might leave out key groups of players that should be involved in the design process of a game or experience."

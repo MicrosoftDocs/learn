@@ -3,9 +3,9 @@ uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
 metadata:
   title: Configure Azure Synapse Link with Azure Cosmos DB
   description: "Configure Azure Synapse Link with Azure Cosmos DB"
-  ms.date: 07/27/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Synapse Link with Azure Cosmos DB
@@ -25,6 +25,7 @@ levels:
 roles:
 - data-engineer
 products:
+- azure-cosmos-db
 - azure-synapse-analytics
 units:
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.introduction

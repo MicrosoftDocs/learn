@@ -5,8 +5,8 @@ metadata:
   title: Choose the right API Management policy
   description: In this unit, you will learn about API Management policies and how to execute on API requests.
   ms.date: 04/25/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

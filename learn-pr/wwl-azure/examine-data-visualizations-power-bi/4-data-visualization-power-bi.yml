@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-data-visualizations-power-bi.options-power-bi
+title: Examine data visualizations options in Power BI
+metadata:
+  title: Examine data visualizations options in Power BI
+  description: "Examine data visualizations options in Power BI"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-data-visualization-power-bi.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.machine-learning.predictive-maintenance-model-builder.exercise-consume-model-builder
-title: "Exercise: Consume model in .NET console app"
+title: "Exercise: Consume a model in a .NET console app"
 metadata:
   unitType: exercise
-  title: "Exercise: Consume model in .NET console app"
-  description: "Use a machine learning model trained with Model Builder in a .NET console application"
+  title: "Exercise: Consume a model in a .NET console app"
+  description: "Use a machine learning model trained with Model Builder in a .NET console application."
   ms.date: 10/25/2021
   author: luisquintanilla
   ms.author: chnoring

@@ -3,13 +3,14 @@ uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azur
 title: Select an option to implement directory and identity services using Active Directory Domain Services in Azure
 metadata:
   title: Select an option to implement directory and identity services using Active Directory Domain Services in Azure
-  description: "Deploy and configure Active Directory Domain Services domain controllers in Azure VMs"
-  ms.date: 10/30/2020
+  description: "Select an option to implement directory and identity services using Active Directory Domain Services in Azure"
+  ms.date: 11/04/2021
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/02-select-option-implement-directory-identity-services.md)]

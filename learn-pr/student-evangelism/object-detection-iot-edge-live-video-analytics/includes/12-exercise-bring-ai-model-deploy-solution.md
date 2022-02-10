@@ -2,7 +2,7 @@ Now that you have deployed the YOLO model to the edge device, you can deploy the
 
 Make sure that you have the followings:
 - Prediction endpoint that has form http://{module-name}:80/score
-- [tag.txt](https://github.com/Azure/live-video-analytics/blob/master/utilities/video-analysis/yolov3-onnx/tags.txt) file downloaded that has object labels
+- tag.txt file downloaded that has object labels
 - RTSP URL that has form rtsp://rtspsim:554/media/<video-name>
 
 ## Connect to web application

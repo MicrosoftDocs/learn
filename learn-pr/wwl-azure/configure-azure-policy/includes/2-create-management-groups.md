@@ -11,7 +11,7 @@ All subscriptions within a management group automatically inherit the conditions
 
 ## Adding management groups
 
-You can create the management group by using the portal, PowerShell, or Azure CLI. Currently, you can't use Resource Manager templates to create management groups.
+You can create the management group by using the portal, PowerShell, or Azure CLI. 
 
 :::image type="content" source="../media/create-management-groups-66ff9f21.png" alt-text="Screenshot of the Add a Managment group page.":::
 

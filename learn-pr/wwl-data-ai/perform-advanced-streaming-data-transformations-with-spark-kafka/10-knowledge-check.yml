@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/05/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -24,17 +25,6 @@ quiz:
     - content: "spark.writeStream()."
       isCorrect: false
       explanation: "No. spark.writeStream writes data to the stream."
-  - content: "In order to perform Spark Structured Streaming in HDInsight, should the Kafka and Spark cluster be in the same VNET or a different VNET?"
-    choices:
-    - content: "Doesn’t matter."
-      isCorrect: false
-      explanation: "Incorrect. The Kafka and Spark clusters must be in the same VNET."
-    - content: "Same VNET."
-      isCorrect: true
-      explanation: "Correct. The Kafka and Spark clusters must be in the same VNET."
-    - content: "Different VNETs."
-      isCorrect: false
-      explanation: "Incorrect. The Kafka and Spark clusters must be in the same VNET."
   - content: "Which of the following parameters cannot be used to read data from Kafka?"
     choices:
     - content: "Window."

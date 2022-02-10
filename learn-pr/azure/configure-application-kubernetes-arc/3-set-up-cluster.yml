@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up a compliant Kubernetes cluster
   description: This exercise steps through setting up a Kubernetes cluster.
   ms.date: 05/01/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: mijacobs
+  ms.author: mijacobs
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-experience-settings.configure-universal-print
+title: Configure Universal Print
+metadata:
+  title: Configure Universal Print
+  description: "Configure Universal Print"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-configure-universal-print.md)]

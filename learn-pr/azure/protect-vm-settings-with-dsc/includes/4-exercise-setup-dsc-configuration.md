@@ -48,7 +48,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
       --name myVM
     ```
 
-1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurrs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
+1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
 
 ## Create an Azure Automation account
 
@@ -68,10 +68,10 @@ Start by deploying a new VM from a Windows Server 2019 image.
     |---|---|
     | Subscription | Concierge Subscription  |
     | Resource group | Select the existing resource group in the dropdown list |
-    | Name | *\[your-automation-account-name\]* This value must be globally unique in Azure; we suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
+    | Name | *\[your-automation-account-name\]* We suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
     | Region | Accept default location |
 
-1. Select **Create**. Wait until the automation account is deployed.
+1. Select **Review + Create**, then select **Create**. Wait until the automation account is deployed.
 
 1. Select **Go to resource** when deployment completes. The **Automation Account** pane for your resource appears.
 

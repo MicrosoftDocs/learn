@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure
+metadata:
+  title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
+  description: Learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an x86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
+  ms.date: 11/09/2021
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
+summary: In this module, you'll learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
+abstract: |
+  In this module, you'll learn how to:
+  - Install the DeepStream Graph Composer application and reference graphs.
+  - Develop Intelligent Video Analytics applications by using the DeepStream Graph Composer.
+  - Package DeepStream Graph Composer applications into a container by using *container-builder*.
+  - Publish DeepStream Graph Composer container workloads into Azure Container Registry for secure redistribution.
+prerequisites: |
+  - x86-based system running Ubuntu 18.04
+  - RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
+  - Familiarity with container workloads and Docker
+  - Familiarity with Azure IoT Edge and Azure IoT Hub 
+  - Completion of the prerequisite module: [Set up and configure an NVIDIA DeepStream development environment](/learn/modules/setup-configure-nvidia-deepstream-development/)
+iconUrl: /learn/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- azure-container-registry
+units:
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.1-introduction
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.2-introduction-nvidia-deepstream-graph-composer
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.3-install-nvidia-deepstream-graph-composer
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.4-run-nvidia-deepstream-graph-composer-reference-application
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.5-package-deepstream-graph-composer-app-containerized-workload
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.6-publish-deepstream-graph-composer-container-to-azure
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.7-knowledge-check
+- learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.8-summary
+badge:
+  uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.badge

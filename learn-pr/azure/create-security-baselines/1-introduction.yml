@@ -3,10 +3,10 @@ uid: learn.azure-security.create-security-baselines.introduction
 title: Create a platform security baseline
 metadata:
   title: Create a platform security baseline
-  description: Create a platform security baseline
-  ms.date: 09/9/2019
-  author: adrianstevens
-  ms.author: adsteven
+  description: Learn how to create a platform security baseline using Identity Access Management, Azure Security Center baselines, and other security tools.
+  ms.date: 02/03/2022
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

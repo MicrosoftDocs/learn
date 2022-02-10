@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "For a NoSQL database, how should unbounded 1:Many relationships be modeled?"
     choices: 
-    - content: "Saved as separate rows and referenced"
+    - content: "Saved as separate documents and referenced"
       isCorrect: true
       explanation: "Where the 1:Many relationship is unbounded or can grow large, data should be referenced."
     - content: "Stored in separate containers"

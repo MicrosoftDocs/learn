@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.games-and-platforms.customizable
+title: Build customizable experiences
+metadata:
+  title: Build customizable experiences
+  description: This content is part of the accessibility best practices for games and platforms module.
+  ms.date: 11/23/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 11
+content: |
+  [!include[](includes/01-customizable.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options best describes the concept of customization in the context of game accessibility?"
+    choices:
+    - content: "Players should be provided options to customize the visual aspects of their UI."
+      isCorrect: false
+      explanation: "Incorrect. Visual UI customization is one of the many areas where customization options should be provided, but UI customization alone doesn't represent the best description of customization in the context of game accessibility."
+    - content: "Players should be provided options to customize the overall game difficulty."
+      isCorrect: false
+      explanation: "Incorrect. Game difficulty customization is one of the many areas where customization options should be provided. However, providing customization for game difficulty alone doesn't represent the best description of customization in the context of game accessibility."
+    - content: "Players should be provided options to customize as many aspects of their experience as possible in an attempt to meet their specific accessibility needs and preferences."
+      isCorrect: true
+      explanation: "Correct. As a foundational accessibility concept, customization of experiences should be broadly applied to as many game areas as possible to support players in creating truly accessible experiences."
+  - content: "Which of the following customization options would best support the player in the following scenario? A player continuously fails the game level they are currently on. Enemy characters appear to blend into the game's background, which allows them to inflict damage before the player is aware of their presence."
+    choices:
+    - content: "The developer can provide players the option to eliminate enemy encounters altogether."
+      isCorrect: false
+      explanation: "Incorrect. While an option like this should be provided to players in general, in this scenario it doesn't appropriately address the player's customization needs. The player's primary barrier is their inability to see enemy characters present. Eliminating enemies altogether changes the nature of the game experience without addressing the source of this player's issue."
+    - content: "The developer can provide players the option to customize the visual appearance of enemies like adding brightly colored outlines of their choice."
+      isCorrect: true
+      explanation: "Correct. This option allows the player to enhance the visibility of enemies in a way that works best for them. This option addresses the source of the player's issue (visual customization) without completely eliminating enemy character battles altogether."
+    - content: "The developer can provide the option to lessen the damage that enemies inflict in combat."
+      isCorrect: false
+      explanation: "Incorrect. While an option like this should also be included in this game, this customization approach doesn't address the player in this scenario's needs. Despite enemy damage being decreased, this option still doesn't allow the player to customize their UI to ensure the presence of enemies are more visually apparent to the player."

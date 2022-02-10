@@ -13,17 +13,13 @@ In this module, you’ll be able to:
 
 - Design a data integration solution with Azure Data Factory
 
-- Design a data integration solution with Azure Data Brick
-
 - Design a data integration solution with Azure Data Lake
 
-- Design a data integration solution with Azure Blob Storage
+- Design a data integration and analytics solution with Azure Databricks
 
-- Design a data integration solution with Azure Synapse Analytics 
+- Design a data integration and analytics solution with Azure Synapse Analytics 
 
 - Design a strategy for hot/warm/cold data path
-
-- Design Azure Synapse Analytics solution for Data Analysis
 
 - Design Azure Stream Analytics solution for Data Analysis
 

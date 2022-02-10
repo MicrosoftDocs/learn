@@ -78,7 +78,7 @@ When you create a function from a template, several files are created, including
 
 You can create or edit functions for your function app by selecting **Functions** under the **Functions** category from the Function App menu.
 
-When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values.  The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*. 
+When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar to test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values.  The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*. 
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 

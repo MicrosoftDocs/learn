@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with creating Linux VMs in Azure, including logging into the machine with ssh, using bash as cmdline, getting administrator rights with sudo 
   - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Discuss Azure fundamental concepts](/learn/modules/fundamental-azure-concepts).
   - An Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/customize-suse-linux-enterprise-server-azure.svg
 levels:
   - beginner
 roles:

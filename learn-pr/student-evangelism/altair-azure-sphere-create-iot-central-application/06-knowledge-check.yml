@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "What role does Azure IoT Central play?"
+    choices:
+    - content: "Azure IoT Central runs on Azure Sphere and is used to configure the Altair 8800 emulator."
+      isCorrect: false
+      explanation: "Azure IoT Central is a cloud-based solution that's used to configure the Altair emulator running on Azure Sphere."
+    - content: "The Altair emulator runs on Azure IoT Central."
+      isCorrect: false
+      explanation: "The Altair emulator runs on Azure Sphere. Azure IoT Central is a cloud-based solution that's used to configure the Altair emulator."
+    - content: "Azure IoT Central is a cloud-based solution that's used to configure the Altair emulator running on Azure Sphere."
+      isCorrect: true
+      explanation: "Azure IoT Central is a cloud-based application that in this case will be used to configure the Altair emulator running on Azure Sphere."
+  

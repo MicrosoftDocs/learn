@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments
+title: Understand environments
+metadata:
+  unitType: learning-content
+  title: Understand environments
+  description: Learn about the environments that you typically deploy your resources to. Also, learn about GitHub Actions environments and how to use them.
+  ms.date: 11/08/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-environments.md)]

@@ -1,4 +1,4 @@
-Horovod can help data scientists face when training *deep learning* models. Before we can explore Horovod, let's review what deep learning is and what the problem with training deep learning models can be.
+Horovod can help data scientists when training *deep learning* models. Before we can explore Horovod, let's review what deep learning is and what the problem with training deep learning models can be.
 
 ## A quick review of deep learning
 
@@ -12,7 +12,7 @@ Batches are processed by the network over multiple iterations or **epochs**. Eac
 
 Within Azure Databricks, we can train deep learning models using the popular open-source frameworks for Python: TensorFlow, PyTorch, and Keras. When we use any of these single-node frameworks to train a deep learning model, we should use a *single-node* cluster in Azure Databricks.
 
-Deep learning model benefit from having more data: the more data, the more likely it is we will get a better or more accurate model. Although it is advised to train deep learning models on single-node clusters, your model or your data may be too large to fit in the memory of a single machine. A single-node cluster being insufficient is the problem that data scientists may face when training deep learning models. Thankfully, Horovod can help in these scenarios.
+Deep learning models benefit from having more data: the more data, the more likely it is we will get a better or more accurate model. Although it is advised to train deep learning models on single-node clusters, your model or your data may be too large to fit in the memory of a single machine. A single-node cluster being insufficient is the problem that data scientists may face when training deep learning models. Thankfully, Horovod can help in these scenarios.
 
 ## Understand Horovod
 

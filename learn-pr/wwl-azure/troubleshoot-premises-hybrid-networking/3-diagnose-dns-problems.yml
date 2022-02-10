@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-dns-problems
+title: Diagnose DNS problems
+metadata:
+  title: Diagnose DNS problems
+  description: "Diagnose DNS problems"
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-diagnose-dns-problems.md)]

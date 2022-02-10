@@ -1,8 +1,8 @@
-## Respond to Azure Defender for Key Vault alerts
+## Respond to Defender for Cloud for Key Vault alerts
 
-When you receive an alert from Azure Defender for Key Vault, we recommend you investigate and respond to the alert as described below. Azure Defender for Key Vault protects applications and credentials, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
+When you receive an alert from Defender for Key Vault, we recommend you investigate and respond to the alert as described below. Defender for Key Vault protects applications and credentials, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
-Every alert from Azure Defender for Key Vault includes the following elements:
+Every alert from Defender for Key Vault includes the following elements:
 
 - Object ID
 
@@ -60,9 +60,9 @@ When you've compiled your list of the secrets, keys, and certificates that the s
 
   - If the compromised credentials were used, the application owner should identify the information that was accessed and mitigate the impact.
 
-## Respond to Azure Defender for DNS alerts
+## Respond to Defender for DNS alerts
 
-When you receive an alert from Azure Defender for DNS, we recommend you investigate and respond to the alert as described below. Azure Defender for DNS protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
+When you receive an alert from Defender for DNS, we recommend you investigate and respond to the alert as described below. Defender for DNS protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
 ### Contact
 
@@ -80,13 +80,13 @@ Isolate the resource from the network to prevent lateral movement.
 
 - Review installed and running software on the resource, removing any unknown or unwanted packages.
 
-- Revert the machine to a known good state, reinstalling the operating system if required, and restore software from a verified malware-free source.
+- Revert the machine to a known good state, reinstalling the operating system if necessary, and restore software from a verified malware-free source.
 
-- Resolve any Azure Security Center recommendations for the machine, remediating highlighted security issues to prevent future breaches.
+- Resolve any Defender for Cloud recommendations for the machine, remediating highlighted security issues to prevent future breaches.
 
-## Respond to Azure Defender for Resource Manager alerts
+## Respond to Defender for Resource Manager alerts
 
-When you receive an alert from Azure Defender for Resource Manager, we recommend you investigate and respond to the alert as described below. Azure Defender for Resource Manager protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
+When you receive an alert from Defender for Resource Manager, we recommend you investigate and respond to the alert as described below. Defender for Resource Manager protects all connected resources, so even if you're familiar with the application or user that triggered the alert, it's important to verify the situation surrounding every alert.
 
 ### Contact
 
@@ -114,7 +114,7 @@ Contact the resource owner to determine whether the behavior was expected or int
 
   - Review all Azure resources in the subscription and delete any that are unfamiliar
 
-  - Review and investigate any security alerts for the subscription in Azure Security Center
+  - Review and investigate any security alerts for the subscription in Defender for Cloud
 
   - Use Azure Activity Logs to review all activities performed in the subscription and identify any that are suspicious
 

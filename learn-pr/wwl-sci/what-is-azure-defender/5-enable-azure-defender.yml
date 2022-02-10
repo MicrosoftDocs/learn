@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.what-is-azure-defender.enable
-title: Enable Azure Defender
+title: Enable Microsoft Defender for Cloud
 metadata:
-  title: Enable Azure Defender
-  description: "Enable Azure Defender"
-  ms.date: 03/12/2021
+  title: Enable Microsoft Defender for Cloud
+  description: "Enable Microsoft Defender for Cloud"
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-enable-azure-defender.md)]

@@ -4,8 +4,8 @@ metadata:
   title: Dynamically meet changing web app performance requirements with autoscale rules
   description: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
   ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Dynamically meet changing web app performance requirements with autoscale rules

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.2-identify-deployment-workflow-prerequisites
+title: Identify deployment workflow prerequisites
+metadata:
+  unitType: learning-content
+  title: Identify deployment workflow prerequisites
+  description: This unit provides an overview of the deployment workflow prerequisites.
+  ms.date: 12/28/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-identify-deployment-workflow-prerequisites.md)]

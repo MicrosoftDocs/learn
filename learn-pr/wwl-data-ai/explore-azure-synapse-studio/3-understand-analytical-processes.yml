@@ -4,12 +4,13 @@ title: Understand the Azure Synapse Analytical processes
 metadata:
   title: Understand the Azure Synapse Analytical processes
   description: "Understand the Azure Synapse Analytical processes"
-  ms.date: 06/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-understand-analytical-processes.md)]

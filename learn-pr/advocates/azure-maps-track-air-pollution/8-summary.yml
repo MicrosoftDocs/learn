@@ -9,6 +9,7 @@ metadata:
   ms.date: 02/05/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

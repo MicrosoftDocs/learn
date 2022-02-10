@@ -5,8 +5,8 @@ metadata:
   title: Exercise - padding and alignment
   description: Use methods of the string data type to pad and align string and numeric data.
   ms.date: 1/3/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

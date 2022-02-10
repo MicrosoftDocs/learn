@@ -65,7 +65,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ReceivController {
+public class ReceiveController {
     
     @JmsListener(destination = "test-queue-jms")
     public void receiveMessage(String message) {

@@ -6,7 +6,7 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
 
 **Enable preview features** - The default is on, can be changed later.
 
-To access the Microsoft Defender portal settings for Endpoints do the following action:
+To access the Microsoft 365 Defender portal settings for Endpoints do the following action:
 
 1. Go to ([https://security.microsoft.com](https://security.microsoft.com/?azure-portal=true))
 2. Select **Settings**.

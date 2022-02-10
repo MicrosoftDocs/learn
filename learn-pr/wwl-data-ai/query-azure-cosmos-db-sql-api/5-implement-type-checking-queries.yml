@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.implement-type-checking-queries
+title: Implement type-checking in queries
+metadata:
+  title: Implement type-checking in queries
+  description: "Implement type-checking in queries"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-implement-type-checking-queries.md)]

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-aks-pipelines
+metadata:
+  title: Integrate AKS with pipelines
+  description: "Integrate AKS with pipelines"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate AKS with pipelines
+summary: This module explains the AKS and pipelines integration, Kubernetes, and Azure Key Vault.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Work with AKS
+  *   Integrate AKS with pipelines
+  *   Integrate Kubernetes and Azure Key Vault
+  *   Explain readiness and liveness probes
+prerequisites: |
+  None
+iconUrl: /learn/achievements/5-integrate-aks-with-pipelines.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.integrate-aks-pipelines.introduction
+- learn.wwl.integrate-aks-pipelines.integrate-aks-with-pipelines
+- learn.wwl.integrate-aks-pipelines.explore-kubernetes-azure-key-vault
+- learn.wwl.integrate-aks-pipelines.explore-readiness-liveness-probes
+- learn.wwl.integrate-aks-pipelines.knowledge-check
+- learn.wwl.integrate-aks-pipelines.summary
+badge:
+  uid: learn.wwl.integrate-aks-pipelines.badge

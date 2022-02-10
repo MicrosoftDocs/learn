@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create and save scripts in Azure PowerShell
   description: Exercise - Create and save scripts in Azure PowerShell
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: mikefrobbins
+  ms.author: mirobb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: powershell

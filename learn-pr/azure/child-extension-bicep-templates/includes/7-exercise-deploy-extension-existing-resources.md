@@ -34,8 +34,7 @@ In the terminal, run the following Azure PowerShell command:
 ```azurepowershell
 New-AzOperationalInsightsWorkspace `
   -Name ToyLogs `
-  -Location eastus `
-  -Sku Standard
+  -Location eastus
 ```
 
 ::: zone-end

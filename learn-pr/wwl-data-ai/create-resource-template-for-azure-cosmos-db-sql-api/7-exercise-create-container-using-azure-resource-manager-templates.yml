@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.exercise-create-container-using-azure-resource-manager-templates
+title: 'Exercise: Create an Azure Cosmos DB SQL API container using Azure Resource Manager templates'
+metadata:
+  title: 'Exercise: Create an Azure Cosmos DB SQL API container using Azure Resource Manager templates'
+  description: "Exercise: Create an Azure Cosmos DB SQL API container using Azure Resource Manager templates"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107598
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-create-container-using-azure-resource-manager-templates.md)]

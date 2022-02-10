@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.process
+title: Identify elements of a search solution
+metadata:
+  title: Identify elements of a search solution
+  description: "Identify elements of a search solution"
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2a-process.md)]

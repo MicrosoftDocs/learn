@@ -1,4 +1,5 @@
 name: deploy-toy-website-test
+concurrency: toy-company
 
 on: 
   push:

@@ -14,7 +14,7 @@ At the foundation, customers build a data lake to store all their data and diffe
 
 To ingest data, customers can do so code-free with over 100 data integration connectors with Azure Data Factory. Data Factory empowers customers to do code-free ETL/ELT, including preparation and transformation. 
 
-And while a lot of our customers are currently heavily invested in the SQL Server Integration Services packages (SSIS), they created, they can leverage these without having to rewrite those packages in Azure Data Factory.
+And while a lot of our customers are currently heavily invested in the SQL Server Integration Services packages (SSIS), they can leverage these without having to rewrite those packages in Azure Data Factory.
 
 Whether the data is an on-premises data sources, other Azure services, or other cloud services, customers can seamlessly author, monitor, and manage their big data pipelines with a visual environment that is easy to use. 
 

@@ -2,7 +2,7 @@ In this unit, you use Azure Cloud Shell to format your PowerShell output. Azure 
 
 ## Compare formatting approaches
 
-Different output formats make sense for different scenarios. For example, depending on the type of data you're working with and want to display, a table might make more sense than a list. 
+Different output formats make sense for different scenarios. For example, depending on the type of data that you want to display, a table might make more sense than a list.
 
 Some cmdlets use a certain type of formatting by default. You can override the default formatting by using a formatting cmdlet.
 
@@ -42,6 +42,7 @@ Some cmdlets use a certain type of formatting by default. You can override the d
     Name       : Clone
     MemberType : Method
     Definition : System.Object Clone(), System.Object ICloneable.Clone()
+
     TypeName   : System.String
     Name       : CompareTo
     MemberType : Method

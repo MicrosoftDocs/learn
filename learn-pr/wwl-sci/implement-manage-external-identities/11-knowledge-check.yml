@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/13/2021
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -46,6 +47,6 @@ quiz:
     - content: "Dynamic groups are security groups whose memberships are based on user attributes (such as userType, department, or country/region)."
       isCorrect: true
       explanation: "That's correct. Dynamic groups are security groups whose memberships are based on user attributes."
-    - content: "Dynamic groups are groups whose membership numbers fluctuate significantly within a given timeframe."
+    - content: "Dynamic groups are groups whose membership numbers fluctuate significantly within a given timeframe"
       isCorrect: false
       explanation: "Sorry, that's incorrect. Dynamic groups are not groups whose membership numbers fluctuate significantly."

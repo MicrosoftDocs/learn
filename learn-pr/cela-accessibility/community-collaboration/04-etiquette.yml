@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.community-collaboration.etiquette
+title: Implement best practice etiquette
+metadata:
+  title: Implement best practice etiquette
+  description: This content is part of the "Community collaboration for accessible design" module.
+  ms.date: 10/27/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 15
+content: |
+  [!include[](includes/04-etiquette.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why is it important to provide clear participant expectations?"
+    choices:
+    - content: "So participants are aware of any future accessibility features or products before they're generally announced."
+      isCorrect: false
+      explanation: "Incorrect. Participant expectations are not intended to give the participant insider knowledge or provide this knowledge as an incentive to participate."
+    - content: "So participants can assess whether they'll be able to comfortably complete any tasks or answer questions presented to them before traveling to an on-site session or attending a remote session."
+      isCorrect: true
+      explanation: "Correct. By providing participants with clear expectations on what the study or feedback session will require of them, they can make an informed decision on whether they can or want to participate."
+    - content: "So participants are already familiar with the game or product they'll be testing."
+      isCorrect: false
+      explanation: "Incorrect. Participant expectations are not intended to give the participant insider knowledge about the product they'll be testing. Genuine feedback based on the individual participant's experience is useful in creating a product that is accessible."
+  
+  - content: "Assess the following scenario and choose which option describes an alternative approach that the employee could have taken to align more closely with the etiquette guidance provided in this module: As a participant is leaving, an attachment on their wheelchair collides with the door frame and falls to the ground. An employee immediately picks up the part and attempts to reattach it to the participant's wheelchair."
+    choices:
+    - content: "The employee should have ignored the fact that the player's wheelchair attachment fell to avoid drawing attention to the player's disability or the fact that the player uses a wheelchair."
+      isCorrect: false
+      explanation: "Incorrect. This approach does not align with the etiquette guidance in this module. It might result in an unsafe situation for the player."
+    - content: "The employee should have first told the player that they planned to reattach the item that fell off the wheelchair before doing so."
+      isCorrect: false
+      explanation: "Incorrect. Even though the employee told the player that they intended to fix the wheelchair before physically doing so, this communication is in opposition to the “ask before doing” best practice etiquette."
+    - content: "The employee should have first asked if the individual wanted help before reattaching the part to the wheelchair."
+      isCorrect: true
+      explanation: "Correct. According to the best practices outlined in this module, the “ask before doing” policy should always guide these interactions. Assistive technologies and wheelchair attachments can be expensive and at risk of being broken if handled incorrectly. Assistive technologies are often considered the personal property, or within the personal space, of the owner and should be treated accordingly."

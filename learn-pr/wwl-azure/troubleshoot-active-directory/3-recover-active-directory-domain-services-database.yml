@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-active-directory.recover-ad-ds-database
+title: Recover the AD DS database
+metadata:
+  title: Recover the AD DS database
+  description: "Recover the AD DS database"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-recover-active-directory-domain-services-database.md)]

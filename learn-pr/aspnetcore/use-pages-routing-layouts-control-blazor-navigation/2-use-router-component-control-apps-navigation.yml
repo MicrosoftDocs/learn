@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.use-pages-routing-layouts-improve-blazor-navigation.use-router-component-control-apps-navigation
+title: Use the Blazor router component to control your app's navigation
+metadata:
+  unitType: learning-content
+  title: Use the Blazor router component to control your app's navigation
+  description: "Learn how to ensure that user requests are routed to the right Blazor component."
+  ms.date: 8/24/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-use-router-component-control-apps-navigation.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What component should you use to get URI location information inside of a Blazor component?"
+      choices:
+      - content: "RouteManager"
+        isCorrect: false
+        explanation: "This isn't a real object in the Blazor framework."
+      - content: "NavigationManager"
+        isCorrect: true
+        explanation: "NavigationManager allows you to get the full URI, a relative URI, and querystring information as the user interacts with the component."
+      - content: "ServiceLocator"
+        isCorrect: false
+        explanation: "The ServiceLocator is used to inject services into a component or class, not URI information."
+    - content: "What is the default CSS class added to an anchor tag by the NavLink component when NavLink is referencing the current URL?"
+      choices:
+      - content: "`current`"
+        isCorrect: false
+        explanation: "The default CSS class assigned by the NavLink component isn't `current`. You _could_ configure the NavLink ActiveClass property to specify current as the class to assign."
+      - content: "`live`"
+        isCorrect: false
+        explanation: "The default CSS class assigned by the NavLink component isn't `live`. You _could_ configure the NavLink ActiveClass property to specify live as the class to assign."
+      - content: "`active`"
+        isCorrect: true
+        explanation: "The default class added by the NavLink component is `active`. You can customize a link with different formatting when that link points to the current URL."

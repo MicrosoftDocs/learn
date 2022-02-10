@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/26/2021
+  ms.date: 01/21/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a potential disadvantage of a purely horizontal strategy when migrating SAP systems to Microsoft Azure?"
+  - content: "Which of the following options is a potential disadvantage of a purely horizontal strategy when migrating SAP systems to Microsoft Azure?"
     choices:
     - content: "There is no opportunity to gain experience with production systems on Azure prior to the migration."
       isCorrect: true
@@ -28,7 +28,7 @@ quiz:
     - content: "There is no opportunity to analyze potential cost savings, performance, and optimization potential."
       isCorrect: false
       explanation: "Incorrect. A horizontal strategy allows you to evaluate the potential cost savings, performance, and optimization of your migration strategy in a less-important environment, without significant risk to mission-critical functions on higher layers."
-  - content: "Why is classical migration is commonly referred to as \"two-step migration\", while the SAP database migration option (DMO) is referred to as \"one-step migration\"?"
+  - content: "Why is classical migration commonly referred to as \"two-step migration\", while the SAP database migration option (DMO) is referred to as \"one-step migration\"?"
     choices:
     - content: "Classical migration is a manual process, while DMO is automated."
       isCorrect: false

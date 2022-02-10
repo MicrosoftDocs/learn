@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure DDoS Protection Standard
   description: Compare the DDoS Protection Basic and DDoS Protection Standard tiers to get a better idea of the benefits of upgrading.
   ms.date: 02/10/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

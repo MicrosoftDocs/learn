@@ -1,6 +1,6 @@
 Previously, we used multiple if statements to implement the rules of our game. However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code, and improvement to fix a subtle bug in our code. We'll use variants of the if statement to improve our code.
 
-### Step 1 - Use the if-else statement instead of two separate if statements
+### Step 1 - Use the if and else statements instead of two separate if statements
 
 Instead of performing two checks to display the "You win!" or "Sorry, you lose" message, we'll use the `else` keyword. Modify your code to match the following code listing:
 
@@ -43,11 +43,11 @@ Here, if `total >= 15` is false, then the following code block the `else` keywor
 
 In the previous unit, we saw how we introduced a subtle logic bug into our application. Let's fix that using nesting.
 
-Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest an if-else statement (the check for triples) inside of another if statement (the check for doubles) to prevent them both from happening.
+Nesting allows us to place code blocks inside of code blocks. In this case, we'll nest if and else statements (the check for triples) inside of another if statement (the check for doubles) to prevent them both from happening.
 
 We'll nest the check for triples inside of the check for doubles. Modify the code to match the following code listing:
 
-```
+```csharp-interactive
 int roll1 = 6;
 int roll2 = 6;
 int roll3 = 6;
@@ -114,7 +114,7 @@ You rolled triples!  +6 bonus to total!
 You win!
 ```
 
-### Step 3 - Use the if-elseif-else statement to give a prize instead of a win-lose message.
+### Step 3 - Use the if, else if, and else statements to give a prize instead of a win-lose message.
 
 To make the game more fun, let's change the game from win-or-lose to award fictitious prizes for each score. We'll offer four prizes. The player should only win one prize.
 
@@ -171,11 +171,11 @@ else
 > [!Note]
 > Use the technique of temporarily hard coding the roll variables to test each message.
 
-The `if-else if-else` statement allows you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, then the final `else` code block will be executed. The `else` is optional, but must come last.
+The `if`, `else if`, and `else` statements allow you to create multiple exclusive conditions as Boolean expressions. In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want. If none of the `if` and `else if` statements apply, then the final `else` code block will be executed. The `else` is optional, but must come last.
 
 ## Recap
 
-- The `if-else` allows you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
-- You can nest 'if' statements to narrow down a possible condition. However, you should consider using the `if-else if-else` statement instead.
+- The combination of `if` and `else` statements allows you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
+- You can nest `if` statements to narrow down a possible condition. However, you should consider using the `if`, `else if`, and `else` statements instead.
 - Use `else if` to create multiple exclusive conditions.
 - An `else` is optional, but it must always come last.

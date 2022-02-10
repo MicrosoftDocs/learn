@@ -1,14 +1,48 @@
-
 Azure role-based access control (RBAC) has several Azure built-in roles that you can assign to users, groups, service principals, and managed identities. Role assignments are the way you control access to Azure resources. If the built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles.
 
 The four general built-in roles are:
 
-| **Built-in Role** | Description |
-| - |--|
-| **Contributor** | Lets you manage everything except granting access to resources. |
-| **Owner** | Lets you manage everything, including access to resources. |
-| **Reader** | Lets you view everything, but not make any changes. |
-| **User Access Administrator** | Lets you manage user access to Azure resources. |
+:::row:::
+  :::column:::
+    **Built-in Role**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Contributor**
+  :::column-end:::
+  :::column:::
+    Lets you manage everything except granting access to resources.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Owner**
+  :::column-end:::
+  :::column:::
+    Lets you manage everything, including access to resources.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Reader**
+  :::column-end:::
+  :::column:::
+    Lets you view everything, but not make any changes.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **User Access Administrator**
+  :::column-end:::
+  :::column:::
+    Lets you manage user access to Azure resources.
+  :::column-end:::
+:::row-end:::
+
 
 ## Custom roles for Azure resources
 
@@ -19,9 +53,10 @@ Custom roles can be shared between subscriptions that trust the same Azure AD di
 ## Custom role limits
 
 The following list describes the limits for custom roles.
-* Each directory can have up to **5000** custom roles.
-* Azure Germany and Azure China 21Vianet can have up to 2000 custom roles for each directory.
-* You cannot set AssignableScopes to the root scope ("/").
-* You can only define one management group in AssignableScopes of a custom role. Adding a management group to AssignableScopes is currently in preview.
-* Custom roles with DataActions cannot be assigned at the management group scope.
-* Azure Resource Manager doesn't validate the management group's existence in the role definition's assignable scope.
+
+ -  Each directory can have up to **5000** custom roles.
+ -  Azure Germany and Azure China 21Vianet can have up to 2000 custom roles for each directory.
+ -  You cannot set AssignableScopes to the root scope ("/").
+ -  You can only define one management group in AssignableScopes of a custom role. Adding a management group to AssignableScopes is currently in preview.
+ -  Custom roles with DataActions cannot be assigned at the management group scope.
+ -  Azure Resource Manager doesn't validate the management group's existence in the role definition's assignable scope.

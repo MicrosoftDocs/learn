@@ -2,7 +2,7 @@ A KQL query is a read-only request to process data and return results. The reque
 
 The query consists of a sequence of query statements. At least one statement is a tabular expression statement that produces data arranged in a table-like mesh of columns and rows. The query's tabular expression statements produce the results of the query.
 
-The tabular expression statement's syntax has tabular data flow from one tabular query operator to another, starting with the data source and then flowing through a set of data transformation operators bound together through the use of the pipe (|) delimiter.
+The tabular expression statement's syntax has tabular data flow from one tabular query operator to another, starting with the data source and then flowing through a set of data transformation operators bound together by using the pipe (|) delimiter.
 
 For example, the following Kusto query has a single statement, which is a tabular expression statement. The statement starts with a table called SecurityEvent. The EventID column's value then filters the data (rows) for that table and then summarizes the results by creating a new column for the count by Account.  Next, in the Prepare phase, the results are then limited to 10 rows.
 

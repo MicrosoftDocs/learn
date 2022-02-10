@@ -12,5 +12,6 @@ Thanks to your efforts, anyone on your website team can automatically deploy cha
 - [Pipeline variables](/azure/devops/pipelines/process/variables?tabs=yaml?azure-portal=true)
   - [Predefined variables](/azure/devops/pipelines/build/variables?tabs=yaml?azure-portal=true)
 - [Pipeline triggers](/azure/devops/pipelines/build/triggers?azure-portal=true)
+  - [Batching](/azure/devops/pipelines/repos/azure-repos-git?azure-portal=true#batching-ci-runs)
 - [Agents and self-hosted agents](/azure/devops/pipelines/agents/agents?azure-portal=true)
 - [Service connections](/azure/devops/pipelines/library/service-endpoints?azure-portal=true)

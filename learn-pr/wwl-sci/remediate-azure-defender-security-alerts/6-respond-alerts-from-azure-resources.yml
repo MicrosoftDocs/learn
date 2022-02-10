@@ -4,12 +4,13 @@ title: Respond to alerts from Azure resources
 metadata:
   title: Respond to alerts from Azure resources
   description: "Respond to alerts from Azure resources"
-  ms.date: 07/20/2021
+  ms.date: 01/11/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/6-respond-alerts-from-azure-resources.md)]

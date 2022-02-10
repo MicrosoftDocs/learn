@@ -3,7 +3,7 @@ uid: learn.wwl.azure-event-hubs
 metadata:
   title: Explore Azure Event Hubs
   description: "Learn how Azure Event Hubs captures events and how to scale your processing application."
-  ms.date: 11/03/2021
+  ms.date: 01/17/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-explore-azure-event-hubs.svg
 levels:
 - intermediate
 roles:

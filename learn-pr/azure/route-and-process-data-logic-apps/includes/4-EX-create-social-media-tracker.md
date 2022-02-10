@@ -47,7 +47,7 @@ When you create a logic app in the Azure portal, you have the option of selectin
 Now, let's create the trigger and provide values for all required parameters.
  
 > [!NOTE]
-> If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://blog.feedspot.com/reuters_rss_feeds/`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
+> If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://rss2.feedspot.com/https://www.reuters.com/technology`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
 
 1. In the *Search connectors and triggers* field, enter *When a new tweet is posted*. In the lower dialog box, select the Twitter **When a new tweet is posted**.
 
@@ -75,11 +75,11 @@ Now, let's create the trigger and provide values for all required parameters.
     | (Frequency) | Minute |
     | Add new parameter | Accept default (blank). |
 
-1. In the command bar, select **Save As**. The **Create a logic app** pane appears.
+1. In the command bar, select **Save**.
 
 1. Enter the name of your logic app (ShoeTrackerNNN where NNN represents a unique ID, such as your initials and a number to provide a unique identifier.
 
-1. Select **Create**.
+1. Select **Run Trigger**.
 
 ## Examine the results of your Twitter trigger
 
@@ -89,9 +89,9 @@ At this point, our logic app is scanning Twitter every minute for tweets contain
 
 1. Select **Refresh** once a minute until you see a row in the **Runs history** table.
 
-1. While you are waiting, locate the section in **Overview** labeled **EVALUATION**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
+1. While you are waiting, locate the section in **Overview** labeled **Trigger history**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
 
-1. After you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
+1. Go back to **Runs history**. After you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
 
 1. Select the Twitter trigger.
 

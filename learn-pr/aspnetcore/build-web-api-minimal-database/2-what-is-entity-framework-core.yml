@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore.build-web-api-minimal-database.what-is-entity-framework-core
+title: What is Entity Framework Core?
+metadata:
+  title: What is Entity Framework Core?
+  description: Learn what Entity Framework (EF) Core is and how to use it with your API.
+  ms.date: 10/26/2021
+  author: jongalloway
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-entity-framework-core.md)]
+  

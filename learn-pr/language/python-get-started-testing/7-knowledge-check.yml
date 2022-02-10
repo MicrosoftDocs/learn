@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.python-get-started-testing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge about testing challenges and test types."
+  ms.date: 1/14/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language # Edit as appropriate for your portfolio area
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is one common side-effect for functions when there are no tests involved?"
+    choices:
+    - content: "Functions will run faster because they don't need to use tests."
+      isCorrect: false
+      explanation: "Incorrect. Functions don't depend on tests to run."
+    - content: "Functions can grow in complexity and size."
+      isCorrect: true
+      explanation: "Correct! When a function isn't tested, it's common to see it grow and become more complex."
+    - content: "Functions will run slower and have more arguments."
+      isCorrect: false
+      explanation: "Incorrect. Although it's possible that a function may run slower and have more arguments, these aren't related to not having tests."
+  - content: "What is a recognizable aspect in functions and methods when testing is involved?"
+    choices:
+    - content: "They tend to have a single responsibility instead of doing many different things"
+      isCorrect: true
+      explanation: "Correct! Code that is well tested tends to concentrate on a single responsibility."
+    - content: "They're more flexible, allowing more arguments"
+      isCorrect: false
+      explanation: "Incorrect. Flexibility and allowing more arguments aren't usually the effects of testing."
+    - content: "They don't tend to raise exceptions"
+      isCorrect: false
+      explanation: "Incorrect. Code can raise exceptions even when they're tested thoroughly."
+  - content: "What is the correct Python invocation to use test auto discovery?"
+    choices:
+    - content: "`python -m autodiscovery`"
+      isCorrect: false
+      explanation: "Incorrect. `autodiscovery` isn't a Python module, so this invocation wouldn't work."
+    - content: "`python -m discovery`"
+      isCorrect: false
+      explanation: "Incorrect. `discovery` isn't a Python module, so this invocation wouldn't work."
+    - content: "`python -m unittest`"
+      isCorrect: true
+      explanation: "Correct! Using the Python executable along with the unittest module is the right way to use test auto discovery"

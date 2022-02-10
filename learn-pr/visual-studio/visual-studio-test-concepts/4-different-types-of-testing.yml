@@ -6,7 +6,8 @@ metadata:
   description: There are many different types of testing, including unit testing, performance testing, load testing, and UI testing. These types of tests all have different advantages in improving software quality.
   ms.date: 6/28/2021
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 4

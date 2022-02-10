@@ -152,7 +152,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    - Use the `virtualNetworkAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
    - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure you change both the `subnets` property and the nested `existing` resource.
-   - Use the `vnetDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
+   - Use the `virtualNetworkDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
 
 1. Update the `virtualMachine` resource to refer to the parameters and variables:
 

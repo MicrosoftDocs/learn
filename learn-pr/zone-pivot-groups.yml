@@ -367,7 +367,7 @@ groups:
   prompt: Choose your platform
   pivots:
     - id: vsstudio
-      title: Visual Studio 2019
+      title: Visual Studio
     - id: vsstudiomac
       title: Visual Studio for Mac
 - id: arm-template-language-azure-shell-interface

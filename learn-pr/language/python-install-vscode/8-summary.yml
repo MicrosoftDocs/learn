@@ -5,10 +5,11 @@ metadata:
   title: Summary
   description: Recap of important ideas in this module.
   ms.date: 07/06/2021
-  author: bobtabor-msft
-  ms.author: chnoring
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

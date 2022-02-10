@@ -7,7 +7,8 @@ metadata:
   description: There are many different schools of thought when it comes to testing. Find a summary of test driven development (TDD), behavior driven development (BDD), red/green/refactor, and "Don't repeat yourself" (DRY), and the advantages of each strategy.
   ms.date: 6/28/2021
   author: kendrahavens
-  ms.author: kehavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 3

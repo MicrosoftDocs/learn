@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.what-is-azure-defender.understand-azure-secure-center
-title: Explain Azure Security Center
+title: Describe Microsoft Defender for Cloud workload protections
 metadata:
-  title: Explain Azure Security Center
-  description: "Explain Azure Security Center"
-  ms.date: 03/12/2021
+  title: Describe Microsoft Defender for Cloud workload protections
+  description: "Describe Microsoft Defender for Cloud workload protections"
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/3-understand-azure-secure-center.md)]

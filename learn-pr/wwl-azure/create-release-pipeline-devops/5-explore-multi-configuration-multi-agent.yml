@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-release-pipeline.explore-multi-configuration-multi-agent
+title: Explore multi-configuration and multi-agent
+metadata:
+  title: Explore multi-configuration and multi-agent
+  description: "Explore multi-configuration and multi-agent"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-explore-multi-configuration-multi-agent.md)]

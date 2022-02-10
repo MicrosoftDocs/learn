@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.evaluate-periodic-backup
+title: Evaluate periodic backup
+metadata:
+  title: Evaluate periodic backup
+  description: "Evaluate periodic backup"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-evaluate-periodic-backup.md)]

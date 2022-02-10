@@ -4,12 +4,13 @@ title: Create an analytical store enabled container
 metadata:
   title: Create an analytical store enabled container
   description: "Create an analytical store enabled container"
-  ms.date: 07/27/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-analytical-store-enabled-container.md)]

@@ -1,23 +1,25 @@
 Authentication is the process of proving that a person is who they say they are.  When someone purchases an item with a credit card, they may be required to show an additional form of identification. This proves that they are the person whose name appears on the card. In this example, the user may show a driver’s license that serves as a form of authentication and proves their ID.
 
-The same concept of authentication applies to digital devices. We experience this every time we try to log in to a computer.  A person enters their user ID that says who they are. But that's not enough to log them in to the computer. The next step is to prove they are the person identified by their user ID.  This is typically done by entering a password, which is a form of authentication.  
+When you want to access a computer or device, you'll encounter the same type of authentication. You may get asked to enter a username and password.  The username states who you are, but by itself isn't enough to grant you access. When combined with the password, which only that user should know, it allows access to your systems. The username and password are a form of authentication.
 
-It's important to note that when someone logs in to their computer and authenticates, they're given access. The level of access that they're granted controls what they're allowed to do. It's determined by a concept called authorization that we'll cover later in this module.
+Strong authentication methods are essential to maintaining good cybersecurity and ensure that only authorized users can gain access to confidential data and resources.
+
+While authentication will verifying the user, it doesn't govern what a user can do once they've been authenticated. Control over what a user can do is called authorization and we'll cover that later in this module.
 
 ## Authentication methods
 
 Authentication can be divided into three types: *something you know*, *something you have*, and *something you are*.
 
-- Something you know includes:
+- Something you **know** includes:
   - Passwords
   - PIN numbers
   - Security questions
-- Something you have includes:
+- Something you **have** includes:
   - Identity cards
   - USB keys
   - Computers
   - Cell phones
-- Something you are includes:
+- Something you **are** includes:
   - A fingerprint
   - Facial recognition
   - Retinal scan
@@ -41,7 +43,7 @@ Single-factor authentication is convenient but isn't suitable for a highly secur
 
 ### Multifactor authentication
 
-Multifactor authentication is a system where two, or even three, authentication types are used. By providing *something that you know, something that you have*, and *something that you are*, the system's security is massively increased. For example, in a multifactor authentication system that uses two types of authentications, you might be asked for a password, and then a number is sent to your cell phone. You input this number, proving that you know the password and have your cell phone. This is a common approach when you use multifactor authentication to access an online bank account.
+Multifactor authentication is a system where two, or even three, authentication types are used. By providing *something that you know, something that you have*, and *something that you are*, the system's security is massively increased. For example, in a multifactor authentication system that uses two types of authentications, you might be asked for a password, and then a number is sent to your cell phone. You input this number, proving that you know the password and have your cell phone. This is a common approach when you use multifactor authentication to access an online bank account. Multifactor authentication reduces the likelihood that a bad actor will be able to get access to confidential information.
 
 As mentioned earlier, biometric authentication is most often used in conjunction with another method of authentication. Consider the example of a bank that has a secured area where it keeps customers’ safety deposit boxes. Before someone can gain access, they're typically required to successfully enter both a password and a fingerprint scan.
 

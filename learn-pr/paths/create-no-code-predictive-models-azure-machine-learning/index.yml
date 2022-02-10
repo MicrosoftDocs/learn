@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-no-code-predictive-models-with-azure-machine-learning
 metadata:
-  title: Use visual tools to create machine learning models with Azure Machine Learning
-  description: Use visual tools to create machine learning models with Azure Machine Learning
-  ms.date: 07/16/2020
+  title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
+  description: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
+  ms.date: 11/08/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use visual tools to create machine learning models with Azure Machine Learning
+title: 'Microsoft Azure AI Fundamentals: Explore visual tools for machine learning'
 video:
   title: "Create no-code predictive models"
   url: https://www.microsoft.com/videoplayer/embed/RWxHhp

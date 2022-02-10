@@ -5,8 +5,8 @@ metadata:
   title: Exercise - data type casting and conversion
   description: Use casting and conversion operators and methods to convert one type into another.
   ms.date: 10/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

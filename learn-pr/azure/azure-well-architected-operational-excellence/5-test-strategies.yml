@@ -5,8 +5,8 @@ metadata:
   title: Testing strategies for your application
   description: In this unit, we'll discuss how to use the various types of test to verify your application's functionality and performance.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

@@ -12,4 +12,4 @@ In this exercise, you will:
 Follow these instructions to complete the exercise:
 
 1. Open the exercise instructions at [https://aka.ms/mslearn-dp090](https://aka.ms/mslearn-dp090?azure-portal=true).
-2. Set up the exercises by following the instructions in **05-hyperparameter-tuning.md**. After set-up, you can run the two notebooks on hyperparameter tuning.
+2. Complete the **Distributed deep learning with Azure Databricks** exercise. 

@@ -8,7 +8,7 @@ You can get a list of the available VM images using the following command.
 az vm image list --output table
 ```
 > [!NOTE] 
-  >  If you get an error az: command not found.  Type exit into the shell and try again. 
+  >  If you get the error *az: command not found*, type `exit` into the shell and try again. 
 
 
 This will output the most popular images that are part of an offline list built into the Azure CLI. However, there are _hundreds_ of image options available in the Azure Marketplace. 
@@ -29,6 +29,8 @@ Or this command to see all images provided by Microsoft:
 az vm image list --publisher Microsoft --output table --all
 ```
 
+These commands can take a few moments to complete.
+
 ## Location-specific images
 
 Some images are only available in certain locations. Try adding the `--location [location]` flag to the command to scope the results to ones available in the region where you want to create the virtual machine. For example, type the following into Azure Cloud Shell to get a list of images available in the `eastus` region.
@@ -44,4 +46,4 @@ Try checking some of the images in the other Azure sandbox available locations:
 > [!TIP]
 > These are the standard images that are provided by Azure. Keep in mind that you can also [create and upload your own custom images](/azure/virtual-machines/linux/tutorial-custom-images) to create VMs based on unique configurations or less common versions or distributions of an operating system.
 
-Your command window is probably full now, you can type `clear` to clear the screen if you like.
+Your command window is probably full now. If you like, you can type `clear` to clear the screen.

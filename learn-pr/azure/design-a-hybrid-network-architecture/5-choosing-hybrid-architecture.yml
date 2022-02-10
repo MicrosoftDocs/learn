@@ -4,8 +4,8 @@ metadata:
   title: Choose a hybrid network architecture on Azure
   description: Explore some hybrid networking scenarios that use Azure ExpressRoute and Azure VPN Gateway.
   ms.date: 01/14/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

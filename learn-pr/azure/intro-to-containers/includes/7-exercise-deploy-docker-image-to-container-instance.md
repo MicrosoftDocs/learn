@@ -4,7 +4,7 @@ In the previous exercise, you packaged and tested your web app as a local Docker
 
 In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!INCLUDE [](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a container registry
 
@@ -52,8 +52,8 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     ```bash
     docker tag reservationsystem:latest <registry-name>.azurecr.io/reservationsystem:latest
     ```
-
-2. Run the `docker image ls` command to verify that the image has been tagged correctly.
+ 
+1. Run the `docker image ls` command to verify that the image has been tagged correctly.
 
     ```bash
     docker image ls
@@ -68,23 +68,27 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     microsoft/dotnet                              2.1-sdk             ff665cc04279        14 hours ago        1.73GB
     ```
 
-3. In the command prompt, sign in to your Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password from your access keys when prompted.
+1. In the command prompt, sign in to your Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password from your access keys when prompted.
 
     ```bash
     docker login <login-server>
     ```
+   
+    >[!NOTE]
+    >You may receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
-4. Upload the image to your registry in Azure Container Registry by using the `docker push` command.
+
+1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry.
 
     ```bash
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. This process will take a several minutes to push all the objects of the image to your repository.
+    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You are able to observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
 
 ## Verify the contents of the registry
 
-For the rest of the exercise, you'll return to the Azure portal.
+For the remainder of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 
@@ -96,7 +100,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 ## Load and run an image using Azure Container Instance
 
-1. In the Azure portal Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. In the Azure portal, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the resource menu, select **Containers**, and then select **Container Instances**.
 
@@ -157,6 +161,12 @@ For the rest of the exercise, you'll return to the Azure portal.
 
     :::image type="content" source="../media/7-container-fqdn.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted.":::
 
-1. Using a web browser, navigate to the URL `http://\<*fqdn*\>/api/reservations/1`, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
+1. Using a web browser, navigate to the URL `http://FQDN/api/reservations/1`, replacing  *FQDN* with the fully qualified domain name of your container instance. For example, using the visible FQDN in the screenshot above would look like:
+
+    ```output
+    http://hotel.southcentralus.azurecontainer.io/api/reservations/1
+    ```
+    
+    The web app should respond with a JSON object containing the details for reservation 1.
 
 Congratulations! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.
