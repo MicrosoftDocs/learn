@@ -1,6 +1,6 @@
 In this unit, we're going to explore how inclusive hiring can be a source of competitive advantage for your startup.
 
-We'll look specifically at gender diversity, ethnic diversity, neurodiversity, and people with differing ability. But the concepts we'll discuss apply more broadly and are intended to reflect a focus on diversity in the broadest possible sense.
+We'll look specifically at gender diversity, ethnic diversity, neurodiversity, and people with differing ability. But the concepts that we'll discuss apply more broadly and are intended to reflect a focus on diversity in the broadest possible sense.
 
 ## Gender diversity
 

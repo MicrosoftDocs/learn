@@ -8,7 +8,7 @@ If you haven't already, download and complete a [Founder Alignment Exercise](htt
 
 Another simple strategy that can reduce the risk of serious cofounder conflict is to discuss how the cofounders will work together at the outset and reflect what's agreed in a cofounder agreement.
 
-A cofounder agreement is a simple legal agreement that sets out how the company will be run, how the cofounders will make decisions, how they will resolve disagreements, and what happens in the event that an agreement can't be reached.
+A cofounder agreement is a simple legal agreement that sets out how the company will be run, how the cofounders will make decisions, how they'll resolve disagreements, and what happens in the event that an agreement can't be reached.
 
 The key elements of a cofounder agreement typically include:
 
@@ -53,7 +53,7 @@ If a founder departs within the first year, they forfeit all of their shareholdi
 
 The second component is *monthly vesting*, in which the remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years, as shown below.
 
-:::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After remaining at zero for a year, it jumps and then steadily climbs.":::
+:::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After the percentage remains at zero for a year, it jumps and then steadily climbs.":::
 
 ## What happens when the company raises money from investors?
 

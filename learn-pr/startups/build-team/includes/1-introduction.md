@@ -1,4 +1,4 @@
-When working on an early-stage startup, founders should keep some personal considerations in mind:
+When founders work on an early-stage startup, they should keep some personal considerations in mind:
 
 - What it's really like to found a startup
 - How to manage your time and energy

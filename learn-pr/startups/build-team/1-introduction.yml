@@ -8,7 +8,7 @@ metadata:
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: interactive-tutorial
-  ms.prod: consumer
+  ms.prod: learning-consumer
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

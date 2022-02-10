@@ -15,7 +15,7 @@ We'll also briefly discuss the mentor network that's part of the [Microsoft for 
 
 Not everyone who has launched a startup makes a good mentor, even if they've been successful. As highlighted by venture capitalist Bryce Roberts, "When successful people give advice, I hear this: Here are the lottery numbers I played. They worked for me!"
 
-In many cases, successful entrepreneurs have difficulty in articulating what it was that led to their success, and in the case of single-time successes their one set of experiences may not be directly relevant to other startups, particularly if those startups are in different industries or pursuing different business models.
+In many cases, successful entrepreneurs have difficulty articulating what it was that led to their success. When they have single-time successes, their one set of experiences may not be directly relevant to other startups, particularly if those startups are in different industries or pursuing different business models.
 
 The best mentors are often those who have broad positive and negative experiences spanning multiple startups, as well as a depth of understanding of startup best practices.
 
