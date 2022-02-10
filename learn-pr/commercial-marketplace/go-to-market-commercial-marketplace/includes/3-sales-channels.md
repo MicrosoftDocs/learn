@@ -48,4 +48,4 @@ If you qualify for the program, you will be required to provide additional resou
 - One-page document that summarize the value your solution creates for users
 - Customer-focused presentations that go into more detail on your solution
 
-For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](/azure/marketplace/partner-center-portal/commercial-marketplace-co-sell).
+For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](/partner-center/co-sell-overview).
