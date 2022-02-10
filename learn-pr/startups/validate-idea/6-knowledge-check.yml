@@ -16,10 +16,10 @@ quiz:
     choices:
     - content: "Costs, revenues, and channels."
       isCorrect: false
-      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with costs, revenues, or channels. Instead, it helps you understand the needs of your target customer. It looks at jobs-to-be-done, pains, and gains. Then it helps you design your value proposition to meet those needs."
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with costs, revenues, or channels. Instead, it helps you understand the needs of your target customer. Then it helps you design your value proposition to meet those needs."
     - content: "Acquisition, retention, and referral."
       isCorrect: false
-      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with acquisitions, retentions, or referrals. Instead, it helps you understand the needs of your target customer. It looks at jobs-to-be-done, pains, and gains. Then it helps you design your value proposition to meet those needs."
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with acquisitions, retentions, or referrals. Instead, it helps you understand the needs of your target customer. Then it helps you design your value proposition to meet those needs."
     - content: "Customer jobs-to-be-done, pains, and gains."
       isCorrect: true
       explanation: "Correct. A Value Proposition Canvas helps you understand the needs of your target customer. It looks at jobs-to-be-done, pains, and gains. Then it helps you design your value proposition to meet those needs."
@@ -28,13 +28,13 @@ quiz:
     choices:
     - content: "Cost structure, revenue streams, and key metrics."
       isCorrect: false
-      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the problem, solution, and customer segments first because assumptions in these areas are the most critical ones."
+      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first. Other segments are more important than cost structure, revenue streams, and key metrics."
     - content: "Problem, solution, and customer segments."
       isCorrect: true
       explanation: "Correct. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the problem, solution, and customer segments first because assumptions in these areas are the most critical ones."
     - content: "Any business model blocks about which you have some information."
       isCorrect: false
-      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the problem, solution, and customer segments first because assumptions in these areas are the most critical ones."
+      explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first, not segments that they happen to have information on."
 
   - content: "Which category of assumption are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
     choices:
@@ -43,13 +43,13 @@ quiz:
       explanation: "Correct. By tracking interest in your idea, you're testing whether customers want your product or service."
     - content: "Feasibility."
       isCorrect: false
-      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service, or its desirability. You're not testing whether you can build the product or offer the service."
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can build the product or offer the service."
     - content: "Viability."
       isCorrect: false
-      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service, or its desirability. You're not testing whether you can build a business around the idea."
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can build a business around the idea."
     - content: "Scalability."
       isCorrect: false
-      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service, or its desirability. You're not testing whether you can scale up to meed increased demand."
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can scale up to meed increased demand."
 
   - content: "When interviewing customers, which of the following things is unlikely to be helpful?"
     choices:
