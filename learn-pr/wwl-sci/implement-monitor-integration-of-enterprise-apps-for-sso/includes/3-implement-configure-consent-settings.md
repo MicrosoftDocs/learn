@@ -33,7 +33,7 @@ Risk-based step-up consent helps reduce user exposure to malicious apps that mak
 
 When a risky consent request is detected, the consent prompt will display a message indicating that admin approval is needed. If the admin consent request workflow is enabled, the user can send the request to an administrator for further review directly from the consent prompt. If it is not enabled, the following message will be displayed:
 
-- **AADSTS90094:** <clientAppDisplayName> needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
+- **AADSTS90094:** \<clientAppDisplayName\> needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
 
 In this case, an audit event will also be logged with a Category of **ApplicationManagement**, an Activity Type of **Consent to application**, and a Status Reason of **Risky application detected.**
 

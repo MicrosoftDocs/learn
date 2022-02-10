@@ -147,7 +147,7 @@ Finally, a benefit of building mobile applications with C# and .NET is that you 
 
 Applications running in the iOS Simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS Simulator can consume the operation by sending a GET request to ``http://localhost:<port>/api/todoitems/``.
 
-Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be set up for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:<port>/api/todoitems/.
+Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be set up for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:\<port\>/api/todoitems/.
 
 ASP.NET Core web services must disable HTTPS redirects by commenting out `app.UseHttpsRedirection();` in the **Startup.cs** file. 
 
