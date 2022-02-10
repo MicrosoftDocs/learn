@@ -33,7 +33,7 @@ quiz:
     - content: "Analyzes both compiled languages and interpreted languages"
       isCorrect: false
       explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages the extractor run directly on the source code, so these two different approaches are no the first step for CodeQL when creating a database"
-      - content: "Extracts a single relational representation of each source file"
+    - content: "Extracts a single relational representation of each source file"
       isCorrect: true
       explanation: "Correct. To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
     - content: "Converts results produced during query execution into a meaningful form"
