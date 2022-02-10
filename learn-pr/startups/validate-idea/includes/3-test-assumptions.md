@@ -18,7 +18,7 @@ The [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true), develope
 
 The Lean Canvas is based on the well-known Business Model Canvas by Alex Osterwalder. It uses the structure of the Business Model Canvas and applies it to early-stage startups, making it easy for founders to spell out assumptions that relate to each of nine business model building blocks.
 
-For early stage founders, the most critical assumptions about their startup's business model tend to relate to the three segments labeled "Customer Segments," "Problem," and "Solution."
+For early-stage founders, the most critical assumptions about their startup's business model tend to relate to the three segments labeled "Customer Segments," "Problem," and "Solution."
 
 A "Customer Segments" assumption is where you believe you know which potential customer you should focus on, and you've identified an early adopter persona representing the customers you'll target first.
 

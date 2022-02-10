@@ -26,15 +26,13 @@ The same concept can be applied to startups. If you think about your product fro
 
 Try the following job story format as a way of expressing the job to be done from a customer's viewpoint:
 
-*When [describe the situation or context]*<br>
-*I want to [describe the job I want done]*<br>
-*So that [describe the outcome you're seeking]*
+- *When [describe the situation or context]*
+- *I want to [describe the job I want done]*
+- *So that [describe the outcome you're seeking]*
 
 Let's look at a simple example:
 
-*When I'm working on a new startup idea*<br>
-*I want to find out quickly whether it's worth pursuing*<br>
-*So that I spend my time on something that has a good chance of succeeding*
+*When I'm working on a new startup idea, I want to find out quickly whether it's worth pursuing so that I spend my time on something that has a good chance of succeeding.*
 
 ## Task: Create a job story
 
