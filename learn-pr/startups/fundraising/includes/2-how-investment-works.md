@@ -1,4 +1,4 @@
-At its most basic, raising money from investors means selling a shareholding in your company in return for cash. The investor not only obtains an economic interest in your company, but also some degree of control by virtue of the rights attached to their shareholding.
+At its most basic, raising money from investors means to sell a shareholding in your company in return for cash. The investor not only obtains an economic interest in your company, but also some degree of control by virtue of the rights attached to their shareholding.
 
 ## Bootstrapping versus externally funded
 
@@ -62,14 +62,35 @@ When startups raise money from investors, they typically do so in discrete stage
 
 Each funding round is linked to achieving a certain level of de-risking of the opportunity. As the company goes from one funding round to the next, the amount invested generally increases, as does the valuation of the company.
 
-The terminology used to describe each of these funding rounds varies considerably by geography and by industry. The most common terms and their meaning are summarized in the following table:
+The terminology used to describe each of these funding rounds varies considerably by geography and by industry. The most common terms and their meaning are summarized in the following sections. Each section describes a different funding round.
 
-|Funding round|Typical company stage|Typical source of capital|
-|---|---|---|
-|Friends and family|Idea, concept design, prototype or building MVP|People you already know who want to support you as an entrepreneur, and who may not want or expect a large financial return|
-|Seed|MVP or product in market<br><br>Evidence of problem-solution fit<br><br>Early traction in the form of product usage and (ideally) some revenue|Angel investors<br><br>Seed-stage venture capital (VC) funds|
-|Series A|Established market<br><br>Evidence of product-market fit<br><br>Growth in revenue limited by capital rather than by demand|VC funds|
-|Series B, C, D, E, etc.|Expansion to other products, markets, and geographies|VC funds, private equity firms|
+### Friends and family
+
+|Typical company stage|Typical source of capital|
+|---|---|
+|Idea, concept design, prototype or building MVP|People you already know who want to support you as an entrepreneur, and who may not want or expect a large financial return|
+
+### Seed
+
+|Typical company stage|Typical source of capital|
+|---|---|
+|MVP or product in market|Angel investors|
+|Evidence of problem-solution fit|Seed-stage venture capital (VC) funds|
+|Early traction in the form of product usage and (ideally) some revenue||
+
+### Series A
+
+|Typical company stage|Typical source of capital|
+|---|---|
+|Established market|VC funds|
+|Evidence of product-market fit||
+|Growth in revenue limited by capital rather than by demand||
+
+### Series B, C, D, E
+
+|Typical company stage|Typical source of capital|
+|---|---|
+|Expansion to other products, markets, and geographies|VC funds, private equity firms|
 
 These funding rounds can be plotted on a time chart, showing the typical milestones against which each round is raised.
 
@@ -123,7 +144,7 @@ When an investor considers your company as an investment prospect, they're essen
 
 Some additional factors that investors will consider when making investment decisions:
 
-**Growth levers:** These are actions you can take that will translate into growth in customers and revenue (such as paid acquisition, content marketing or partnerships). Investors want to see that the founders have identified growth levers. By applying more capital to growth levers, it should be possible to generate more growth. Investors also want founders to prove that unit economics are positive. (For every dollar you spend pulling a growth lever, you generate much more than a dollar in revenue.)
+**Growth levers:** These are actions you can take that will translate into growth in customers and revenue (such as paid acquisition, content marketing or partnerships). Investors want to see that the founders have identified growth levers. When you apply capital to growth levers, you should generate more growth. Investors also want founders to prove that unit economics are positive. (For every dollar you spend pulling a growth lever, you generate much more than a dollar in revenue.)
 
 **Validation:** You've validated your riskiest assumptions. For instance, you've confirmed what product you should build and what customers you're building it for. You also have evidence that those customers see enough value to buy it.
 
@@ -155,11 +176,11 @@ Let's explore this further by working through a hypothetical angel investor's st
 
 ## Scenario: An angel investor's perspective
 
-Melanie is an angel investor. She's decided that she's going to make seed-stage investments in 10 companies. She'll make investments averaging $100,000 in each company, and these investments will take place over a period of a few years.
+Melanie is an angel investor. She's decided that she's going to make seed-stage investments in 10 companies. She'll make an average investment of $100,000 in each company, and these investments will take place over a period of a few years.
 
 Melanie of course doesn't know which of the companies she backs will ultimately be successful. However, she realizes that each company she invests in must have a chance at being hugely successful. She makes her investments with this in mind.
 
-A lot of [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](http://www.rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This is typically either because the company fails completely, or it grows slowly and remains a privately owned company but never achieves a liquidity event. (Investors sometimes refer to these as *zombie* companies.)
+Significant [research has been done on angel investor portfolios](https://seraf-investor.com/compass/article/angel-investing-returns-research-and-reality?azure-portal=true). One of the consistent findings is that [on average, at least half of all early-stage investments lead to no return](http://www.rightsidecapital.com/assets/documents/HistoricalAngelReturn.pdf?azure-portal=true). This is typically either because the company fails completely, or it grows slowly and remains a privately owned company but never achieves a liquidity event. (Investors sometimes refer to these as *zombie* companies.)
 
 As an experienced investor, Melanie knows this is a likely outcome for a large proportion of the companies she invests in. She's okay with that, and like any sensible angel investor, she only invests money that she can afford to lose.
 

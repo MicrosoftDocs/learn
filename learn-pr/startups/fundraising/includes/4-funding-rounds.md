@@ -70,7 +70,7 @@ Conversely, it's rarely a good idea to spend time trying to convert potential in
 
 A term sheet is a short legal agreement between your company and an investor that sets out the key terms of a proposed investment. Term sheets are normally not legally binding, except for clauses relating to confidentiality (you can't disclose the term sheet to other parties) and non-solicitation (you commit to proceeding with the investment and can't shop the term sheet around to other investors in an attempt to secure better terms).
 
-Once investors have signed a term sheet, they'll generally commence due diligence (discussed below), and as long as no major issues are identified, the transaction will be documented in a more substantive set of legal agreements. Only once these agreements are signed will funds actually be transferred to your company's bank account.
+Once investors have signed a term sheet, they'll generally commence due diligence (discussed below), and as long as no major issues are identified, the transaction will be documented in a more substantive set of legal agreements. Funds will only be transferred to your company's bank account after these agreements are signed.
 
 Term sheets are an important part of the fundraising process because they allow investors to make an in-principle commitment to invest, but without the overhead of negotiating detailed legal agreements. They also allow startups to have some degree of confidence about which investors are committed and on what terms.
 
@@ -83,20 +83,56 @@ The content of term sheets is beyond the scope of this unit. However, it's highl
 
 Once you've signed a term sheet, an investor will generally commence due diligence. This is the process by which they evaluate your startup in more depth, verify that the things you've told them are true, and scrutinize critical information such as existing legal agreements with employees or contractors, to ensure that there are no serious obstacles to your company succeeding.
 
-There's no single due diligence checklist that all investors use. However, there are some common themes that most investors are interested in. The following items are indicative of the due diligence topics that most early-stage investors will want to review:
+There's no single due diligence checklist that all investors use. However, there are some common themes that most investors are interested in. The following sections list due diligence review topics that most early-stage investors will want to review.
 
-||Review topics|
-|---|---|
-|**Corporate**|Confirm company structure, incorporation documents, list of shareholders, and class of shares<br><br>Copy of shareholders agreement|
-|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors<br><br>Confirm non-reliance on IP assets that aren't owned by the company|
-|**Financial**|Identify any outstanding debts or other financing arrangements<br><br>Historical financial reports verified by company accountant<br><br>Details of any financial breaches or disputes|
-|**Contracts**|Details of all material contracts, including with employees, contractors, suppliers, customers<br><br>Copies of all material contracts<br><br>Details of any contractual breaches or disputes|
-|**Investment**|Details of any prior investments, including identity of investor, investment terms|
-|**Assets**|Register of all material assets or real property owned by the company|
-|**Employees**|List of all current and past employees including roles, responsibilities, remuneration, and stock options<br><br>Details of any disputes or claims<br><br>Copies of all employment agreements|
-|**Insurance**|Details of any current insurance policies including claims made and any disputes|
-|**Litigation**|Details of any existing or threatened proceedings by third parties|
-|**Regulatory**|Details of any government approvals, licenses, or permits obtained or required|
+### Corporate
+
+- Confirm company structure, incorporation documents, list of shareholders, and class of shares.
+- Copy of shareholders agreement.
+
+### Intellectual property (IP)
+
+- Confirm ownership by the company of all relevant IP assets.
+- Confirm deed of assignment conferring ownership of the IP created by employees and contractors.
+- Confirm non-reliance on IP assets that aren't owned by the company.
+
+### Financial
+
+- Identify any outstanding debts or other financing arrangements.
+- Historical financial reports verified by company accountant.
+- Details of any financial breaches or disputes.
+
+### Contracts
+
+- Details of all material contracts, including with employees, contractors, suppliers, customers
+- Copies of all material contracts
+- Details of any contractual breaches or disputes
+
+### Investment
+
+Details of any prior investments, including identity of investor, investment terms
+
+### Assets
+
+Register of all material assets or real property owned by the company
+
+### Employees
+
+- List of all current and past employees including roles, responsibilities, remuneration, and stock options
+- Details of any disputes or claims
+- Copies of all employment agreements
+
+### Insurance
+
+Details of any current insurance policies including claims made and any disputes
+
+### Litigation
+
+Details of any existing or threatened proceedings by third parties
+
+### Regulatory
+
+Details of any government approvals, licenses, or permits obtained or required
 
 As a founder, you'll want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process greatly by creating a secure online repository of all relevant documents (sometimes referred to as a *data room*) and sharing a link with the investor.
 

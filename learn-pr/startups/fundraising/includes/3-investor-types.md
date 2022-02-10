@@ -60,7 +60,7 @@ Tips for raising money from VC funds:
 
 ## Not all money is equally valuable
 
-Good investors will add a lot of value to your company by sharing their expertise and networks and providing guidance to the founders as they work on growing the business. Recognized investors such as top-tier VC funds will also add credibility by association, and this may make it easier for you to raise subsequent funding rounds.
+Good investors will add significant value to your company by sharing their expertise and networks and providing guidance to the founders as they work on growing the business. Recognized investors such as top-tier VC funds will also add credibility by association, and this may make it easier for you to raise subsequent funding rounds.
 
 There are investors who will add limited value (such as friends and family, discussed above), and there are also investors who add negative value.
 
