@@ -78,7 +78,7 @@ Be authentic rather than posting content that looks like it was created by a soc
 
 Short blog posts are an excellent way of showing that you're genuinely passionate about the domain in which your company operates, and of demonstrating your expertise as a thought leader in your field.
 
-It's a good idea to write blog posts with a *create once, publish many times* philosophy. You might choose to publish the full version of a post on your website, use a snippet of this in your email marketing campaigns or newsletter, and put out a shorter version as a LinkedIn post or on Medium.
+It's a good idea to write blog posts with a *create-once-publish-many-times* philosophy. You might choose to publish the full version of a post on your website, use a snippet of this in your email marketing campaigns or newsletter, and put out a shorter version as a LinkedIn post or on Medium.
 
 By establishing a regular cadence of creating and releasing authentic content, you can rapidly become recognized as a subject matter expert. This won't only strengthen the credibility of your company's brand but can also lead to opportunities such as requests for comment from media outlets and even inbound inquiries from potential recruits, customers, and investors.
 
@@ -108,6 +108,6 @@ These can be daunting skills to learn, and it's not advisable to learn by trial 
 - It's easy to pick a suboptimal name for your company. Doing this is unlikely to kill your company, but it can create friction and make it harder for potential customers to find you. It can also affect the credibility of your company's brand.
 - The name of your company is one of the few things you're 100 percent in control of, so you might as well get it as close to right as possible.
 - If you aspire to be a global company, one of the key intellectual property assets your company should own is the domain *\<your-company-name\>.com*.
-- If you decide that you should change your company name, the best time to do it is now. It's never easy, but the longer you wait, the more difficult and expensive it will be.
+- If you decide that you should change your company name, the best time for the change is now. It's never easy, but the longer you wait, the more difficult and expensive it will be.
 - All startup founders should invest time in building their personal brand as a business leader and external face of their company.
 - Customers, investors, and future employees are seeking authentic communications from companies. Having the founders as the primary spokesperson for the company makes it easier for people to relate.

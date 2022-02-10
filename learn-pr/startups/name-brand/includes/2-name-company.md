@@ -118,19 +118,26 @@ Score your company name (or proposed name) out of eight by using this score shee
 
 If you score seven or eight, chances are your company name is a reasonable choice. If you score six or less, it might be time to seriously consider changing it.
 
-If you decide that you should change your company name, the best time to do it is now. It's never easy, but the longer you wait, the more difficult and expensive it will be.
+If you decide that you should change your company name, the best time for the change is now. It's never easy, but the longer you wait, the more difficult and expensive it will be.
 
 Remember that the principles we've discussed in this unit are a guide only, and there are of course companies that have been successful despite breaking one or more of these principles.
 
 Startup name: __________________________________
 
-&#9744; Simple.<br>
-&#9744; Memorable.<br>
-&#9744; Easy to spell.<br>
-&#9744; Easy to say.<br>
-&#9744; Safe in other languages.<br>
-&#9744; Future-proof.<br>
-&#9744; The dot-com domain is available.<br>
+&#9744; Simple.
+
+&#9744; Memorable.
+
+&#9744; Easy to spell.
+
+&#9744; Easy to say.
+
+&#9744; Safe in other languages.
+
+&#9744; Future-proof.
+
+&#9744; The dot-com domain is available.
+
 &#9744; Doesn't infringe an existing trademark.
 
 Score: ___ / 8
