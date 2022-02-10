@@ -30,19 +30,16 @@ quiz:
   title: Check your knowledge 
   questions:
   - content: "When code scanning is enabled, what is one default event that triggers a scan?"
-
     choices:
-    - content: "Pushing a change."
-      isCorrect: true
-      explanation: "Correct. Pushing a change and raising a pull request will trigger a scan by default when code scanning is enabled. "
     - content: "Creating a new branch."
       isCorrect: false
       explanation: "Incorrect. Creating a new branch doesn't trigger a scan by default when code scanning is enabled. It can however, be configured to trigger a scan."
-
+    - content: "Pushing a change."
+      isCorrect: true
+      explanation: "Correct. Pushing a change and raising a pull request will trigger a scan by default when code scanning is enabled. "
     - content: "Deleting a branch."
       isCorrect: false
       explanation: "Incorrect. Deleting a branch doesn't trigger a scan by default when code scanning is enabled. It can however be configured to trigger a scan."
-
   - content: "Which of the following are the tools used to upload a SARIF file?"
     choices:
     - content: "The tools used are GitHub Actions, the code scanning API, and the CodeQL CLI."
@@ -56,12 +53,12 @@ quiz:
       explanation: "Incorrect. Some of the tools listed are used to upload SARIF files, but not all of them. "
   - content: "What is the difference between scheduled versus triggered events in code scanning?"
     choices:
-    - content: "Scheduled events run based on a specified schedule and triggered events run on code events such a push. "
-      isCorrect: true
-      explanation: "Correct. Scheduled events are specified by the developer and triggered events are set by default but can also be configured by the developer."
     - content: "Scheduled events are more difficult to configure than triggered events."
       isCorrect: false
       explanation: "Incorrect. Scheduled events are not more difficult to configure than triggered events. Both can be configured easily. "
+    - content: "Scheduled events run based on a specified schedule and triggered events run on code events such a push. "
+      isCorrect: true
+      explanation: "Correct. Scheduled events are specified by the developer and triggered events are set by default but can also be configured by the developer."
     - content: "Triggered events run less frequently than scheduled events."
       isCorrect: false
       explanation: "Incorrect. The frequency of both triggered events and scheduled events varies depending on how often pushes and pull requests occur, as well as how the developer may have configured the frequency."
