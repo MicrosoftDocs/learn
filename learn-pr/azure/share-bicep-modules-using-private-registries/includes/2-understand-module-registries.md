@@ -1,5 +1,3 @@
-Bicep modules enable you create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates. When you work with Bicep code in your own organization, you often create reusable modules that your colleagues would benefit from. These modules might create resources in a way that fits your organization's requirements, such as by using your defined naming conventions and configuring resources so that they meet your security requirements. Private Bicep registries provide an easy way for you to share these modules within your organization.
-
 In this unit, you'll learn what Bicep registries are, why they're useful for sharing your Bicep code, and how you can create a registry for your own organization.
 
 ## Why do you share Bicep modules?
@@ -24,14 +22,15 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 Bicep registries are built on a technology called *container registries*.
 
-If your organization uses Kubernetes or another containerization technology, you might already be familiar with registries. However, you don't need to use containers or Kubernetes to work with Bicep - registries simply provide a generic and convenient way to store and share artifacts.
+If your organization uses Kubernetes or another containerization technology, you might already be familiar with registries. However, you don't need to use containers or Kubernetes to work with Bicep - registries simply provide a generic and convenient way to store and share artifacts. Think of them as being analogous to storage accounts.
 
+<!-- TODO I think we only support ACR today -->
 You can create a Bicep registry by using several different container registry services. In Azure, the easiest approach is to use Azure Container Registry. You'll use this approach throughout this module, but you can use other services including Docker Hub for your own registries if you prefer.
 
 Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. We provide links to more information in the summary.
 
 ## Access control
 
-Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including by using Azure Active Directory (Azure AD) and by using keys you issue to individual users. When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you likely don't even need to sign in again. You'll see how this works in the next exercise.
+Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including by using Azure Active Directory (Azure AD) and by using keys that you issue to individual users. When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you likely don't even need to sign in again. You'll see how this works in the next exercise.
 
 When you use a Bicep module registry from a pipeline, you'll use a special type of identity called a *service principal*. You'll learn more about service principals and pipelines in future modules.

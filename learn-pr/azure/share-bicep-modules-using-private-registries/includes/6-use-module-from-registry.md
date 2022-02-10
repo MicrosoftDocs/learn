@@ -32,7 +32,11 @@ To define an alias, you need to create a *bicepconfig.json* file in the same fol
 
 ::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-5, 10-13" :::
 
-When you define a module in a Bicep file, you include the alias in the module path:
+When you define a module in a Bicep file, you use a slightly different type of module path, which includes the alias:
+
+TODO diagram
+
+Here's how it looks in Bicep:
 
 ```bicep
 module myModule 'br/MyRegistry:bicep/my-module:v1' = {

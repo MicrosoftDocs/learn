@@ -16,7 +16,7 @@ The path contains four segments:
 When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
 
 > [!TIP]
-> In Azure Container Registry, the module identifier is called a *repository*.
+> In Azure Container Registry, the module identifier is called a *repository*. Don't confuse this with a Git repository - the terms are the same but the meaning is different.
 
 ## Tags and versions
 
@@ -50,15 +50,27 @@ Here's a versioning policy that often works well:
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
 > [!TIP]
-> Consider the users of your module, and make sure you think about what they expect will happen. If a user uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to minimize the likelihood that your users will get a result they don't expect.
+> Consider the users of your module, and make sure you think about what they expect will happen. If a user uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to increase the likelihood that your users will get a result they expect.
 
 ## Publish your module
 
 When you create a Bicep module that you want to share, you author the Bicep file as normal. You then *publish* the file to a registry by using the `bicep publish` command. When you publish, you need to specify the module path to save the module to:
 
+::: zone pivot="cli"
+
+```azurecli
+az bicep publish --file module.bicep --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
 ```cmd
 bicep publish module.bicep --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
 ```
+
+::: zone-end
 
 The publish operation performs the same validation steps that happen when you build or deploy a Bicep file, including:
 

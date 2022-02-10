@@ -26,17 +26,7 @@ quiz:
     - content: Add a module alias.
       isCorrect: false
       explanation: Incorrect. A registry alias enables you to simplify the name of the registry in the module path, but it isn't required and won't resolve the error.
-  - content: You've created a Bicep file that will be useful to people throughout the Bicep community. What's the best way to share it?
-    choices:
-    - content: Publish it to a private registry.
-      isCorrect: false
-      explanation: Incorrect. A private registry is designed to be used within your organization.
-    - content: Publish it as a template spec.
-      isCorrect: false
-      explanation: Incorrect. Because a template spec is stored in your Azure subscription, it's only accessible within your organization.
-    - content: Publish it to the public registry.
-      isCorrect: true
-      explanation: Correct. Microsoft maintains a public registry for the Bicep community. Anyone can submit and use modules.
+  # TODO need another question
   - content: In which of these situations should you publish a new version of your module to  a private registry?
     choices:
     - content: You add some comments to your module.

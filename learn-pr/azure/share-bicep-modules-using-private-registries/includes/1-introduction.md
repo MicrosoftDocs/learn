@@ -1,16 +1,18 @@
-Bicep modules enable you to easily reuse your Bicep code in multiple deployments. By using Bicep registries, you can use modules that others have created, and you can share your own modules within your organization and, optionally, with the wider Bicep development community.
+Bicep modules enable you create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates. When you work with Bicep code in your own organization, you often create reusable modules that your colleagues would benefit from. These modules might create resources in a way that fits your organization's requirements, such as by using your defined naming conventions and configuring resources so that they meet your security requirements. Private Bicep registries provide an easy way for you to share these modules within your organization.
 
 ## Example scenario
 
 TODO new scenario
 
+<!-- TODO can we include arch diagram? -->
+
 ## What will we be doing?
 
-In this module, you'll learn about public and private registries for sharing modules. You'll find out how to consume modules from the public Bicep registry. You'll also learn how to create your own private registry, and how you publish to and consume modules from a private registry.
+In this module, you'll learn about private registries for sharing modules. You'll find out how create your own private registry, and how you publish modules to it. You'll also learn about how to consume modules from a private registry.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to use Bicep modules from the public registry, and you'll be able to create and use private registries.
+By the end of this module, you'll be able to create private registries, publish modules to them, and consume modules from them.
 
 ## Prerequisites
 

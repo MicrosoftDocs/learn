@@ -2,21 +2,35 @@
 
 TODO
 
-In this exercise, you create a Bicep file that includes a module from the public registry. During the process, you'll:
+In this exercise, you create a private module registry for your toy company to use. During the process, you'll:
 
 > [!div class="checklist"]
 > * Deploy a new private registry.
 > * Connect to your registry.
 
+<!-- TODO bootstrapping info talks about deploying template -->
+
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+To deploy resources to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've installed the [Azure CLI](/cli/azure/install-azure-cli), and remember to sign in with the same account that you used to activate the sandbox.
+
+[!INCLUDE [Terminal instructions (CLI)](../../includes/azure-template-exercise-terminal-cli.md)]
+
+[!INCLUDE [Install Bicep (CLI)](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
+
+[!INCLUDE [Sign into sandbox (CLI)](../../includes/azure-template-exercise-sandbox-sign-in-cli.md)]
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+To deploy resources to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+
+[!INCLUDE [Terminal instructions (PowerShell)](../../includes/azure-template-exercise-terminal-powershell.md)]
+
+[!INCLUDE [Install Bicep (PowerShell)](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
+
+[!INCLUDE [Sign into sandbox (PowerShell)](../../includes/azure-template-exercise-sandbox-sign-in-powershell.md)]
 
 ::: zone-end
 
