@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure ExpressRoute
-summary: Azure ExpressRoute allows your organization to leverage a high-speed private connection to connect on-premises networks to Microsoft cloud services including Microsoft Azure and Microsoft 365. This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution. 
+summary: Azure ExpressRoute allows your organization to use a high-speed private connection to connect on-premises networks to Microsoft cloud services including Microsoft Azure and Microsoft 365. This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution. 
 abstract: |
   In this module, you will:
   - Learn what Azure ExpressRoute is and the functionality it provides.
