@@ -39,7 +39,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Let’s now start deploying an HDInsight HBase cluster with Accelerated writes. Select **Create a resource -> Analytics -> HDInsight**
 
-	![Create Azure HDInsight in the Azure Portal.](../media/create-azure-hdinsight-azure-portal.png)
+	![Create Azure HDInsight in Azure Portal.](../media/create-azure-hdinsight-azure-portal.png)
 
 1. On the Basics Tab, populate the below fields towards the creation of an HBase cluster.
 	- **Subscription**: Should be autopopulated with the subscription details
