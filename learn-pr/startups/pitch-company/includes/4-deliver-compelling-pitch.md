@@ -154,23 +154,17 @@ Below are some practical tips to help you deliver a great pitch.
 
 Following is a selection of pitches from startup demo days to illustrate some of the techniques we've covered in this module. Take a few minutes to watch each pitch video. Make a note of what you like and dislike about each one. Were there any techniques that you think would work well in your own startup pitch?
 
-- DefinedCrowd (Microsoft Accelerator Seattle Demo Day)
-  > [!VIDEO https://youtu.be/5PbEWPm_d2Q?t=1902]
+- [DefinedCrowd (Microsoft Accelerator Seattle Demo Day)](https://youtu.be/5PbEWPm_d2Q?t=1902)
 
-- Tethr (500 Global Demo Day)
-  > [!VIDEO https://youtu.be/2PVSEljwb5g?t=694]
+- [Tethr (500 Global Demo Day)](https://youtu.be/2PVSEljwb5g?t=694)
 
-- Kiira (500 Global Demo Day)
-  > [!VIDEO https://youtu.be/2PVSEljwb5g?t=829]
+- [Kiira (500 Global Demo Day)](https://youtu.be/2PVSEljwb5g?t=829)
 
-- Huzzle (Disruptors Demo Day)
-  > [!VIDEO https://youtu.be/1rDQhweJliQ?t=218]
+- [Huzzle (Disruptors Demo Day)](https://youtu.be/1rDQhweJliQ?t=218)
 
-- MightyFly (500 Global Demo Day)
-  > [!VIDEO https://youtu.be/FcfAi3fAdg0?t=2743]
+- [MightyFly (500 Global Demo Day)](https://youtu.be/FcfAi3fAdg0?t=2743)
 
-- Eventnoire (Techstars Chicago Demo Day)
-  > [!VIDEO https://youtu.be/ytSZ8Ph-CpA?t=2742]
+- [Eventnoire (Techstars Chicago Demo Day)](https://youtu.be/ytSZ8Ph-CpA?t=2742)
 
 ## Conclusions
 

@@ -83,11 +83,9 @@ Tips for completing an accelerator application video:
 
 Here are two examples worth checking out:
 
-- Teespring Y Combinator application video
-  > [!VIDEO https://youtu.be/Ipf247AmhiI]
+- [Teespring Y Combinator application video](https://youtu.be/Ipf247AmhiI)
 
-- Flip Y Combinator application video
-  > [!VIDEO https://youtu.be/N5cBGeRMxms]
+- [Flip Y Combinator application video](https://youtu.be/N5cBGeRMxms)
 
 ## Task: Create your own Gaddie Pitch
 
