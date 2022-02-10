@@ -31,7 +31,7 @@ Here are some links to more information on CodeQL;
 
 [Options to control the query evaluator](https://codeql.github.com/docs/codeql-cli/manual/database-analyze/#options-to-control-the-query-evaluator)
 
-[Github upload-results-Options](https://codeql.github.com/docs/codeql-cli/manual/github-upload-results/#options)
+[GitHub upload-results-Options](https://codeql.github.com/docs/codeql-cli/manual/github-upload-results/#options)
 
 [github/codeql-go](https://github.com/github/codeql-go)
 

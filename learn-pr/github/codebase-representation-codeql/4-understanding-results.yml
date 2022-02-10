@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.codebase-representation-codeql.understanding-results
+uid: learn.codebase-representation-codeql.4-understanding-results
 title: Understand CodeQL results 
 metadata:
   unitType: Understand CodeQL results 
   title: Understand CodeQL results 
   description: View CodeQL results and determine if there are security vulnerabilities to address
-  ms.date: 02/11/2022
+  ms.date: 02/10/2022
   author: sterling463
   ms.author: csterling
   ms.topic: interactive-tutorial

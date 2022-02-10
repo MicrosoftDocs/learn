@@ -1,37 +1,41 @@
 ### YamlMime:Module
 uid: learn.codebase-representation-codeql
 metadata:
-  moduleType: standard
   title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
-  ms.date: 11/8/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  description: "In this module, you will learn about CodeQL and how it enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
+  ms.date: 2/10/2022
+  author: sterling463
+  ms.author: csterling 
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: Codebase representation in GitHub CodeQL
-summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+title: learning azure
+summary: "In this module, you will learn about CodeQL and how it enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
-  By the end of this module, you'll be able to:
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
+By the end of this module, you'll be able to:
+  - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase
+  - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities
+  - Understand CodeQL scan results using queries created by GitHub, or your own custom queries
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - Basic knowledge of GitHub Actions
+  - Familiarity with GitHub code scanning
+  - Administrative access to a repository
+  - Familiarity with SQL, Prolog, Datalog
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - # level
+  - intermediate 
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
-  - # role 1
-  - # role 2
+  - devops-engineer
+  - administrator
+  - developer
+  - student
 products:
-  {{products}}
+  - github
 units:
-- learn.codebase-representation-codeql.introduction
-- learn.codebase-representation-codeql.learning-content
-- learn.codebase-representation-codeql.exercise
-- learn.codebase-representation-codeql.knowledge-check
-- learn.codebase-representation-codeql.summary
+- learn.codebase-representation-codeql.1-introduction
+- learn.codebase-representation-codeql.2-how-prepare-database-codeql
+- learn.codebase-representation-codeql.3-run-codeql-in-database
+- learn.codebase-representation-codeql.4-understanding-results
+- learn.codebase-representation-codeql.5-troubleshoot-your-results
+- learn.codebase-representation-codeql.6-knowledge-check
+- learn.codebase-representation-codeql.7-summary
 badge:
   uid: learn.codebase-representation-codeql.badge

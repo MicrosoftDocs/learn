@@ -55,7 +55,7 @@ Here is what happens when you dismiss an alert:
 
 - It's dismissed in all branches
 - The alert is removed from the number of current alerts for your project
-- The alert is moved to the "Closed" list in the summary of alerts You can reopen it from here, if required
+- The alert is moved to the "Closed" list in the summary of alerts. You can reopen it from here, if required
 - The reason why you closed the alert is recorded
 - Next time code scanning runs, the same code won't generate an alert
 

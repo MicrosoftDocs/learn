@@ -9,7 +9,7 @@ You can use the CodeQL CLI standalone product to analyze code and to generate da
 Before you generate a CodeQL database, you need to:
 
 - Install and set up the CodeQL CLI
-- Checkout the version of your codebase you want to analyze
+- Check out the version of your codebase you want to analyze
 
 For compiled languages, the directory should be ready to build, with all dependencies already installed. CodeQL begins by extracting a single relational representation of each source file in the codebase to create a database. This is the database you'll use to analyze your code.
 

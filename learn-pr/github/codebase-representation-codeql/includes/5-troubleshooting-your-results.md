@@ -26,9 +26,9 @@ The following are best practices for optimizing your CodeQL queries:
 
 ### Eliminate cartesian products
 
-Another issue that may be affecting performance is that you are receiving too many results. You can often determine the performace of a predicate by considering roughly how many results it has. One way of creating badly performing predicates is by using two variables without relating them in any way. Another is by only relating them using a negation. This leads to computing the Cartesian product between the sets of possible values for each variable. TThis potentially generates a huge table of results, which can occur if you don’t specify restrictions on your variables. The Cartesian product of two sets A and B, denoted A × B, is the set of all ordered pairs (a, b) where a is in A and b is in B.
+Another issue that may be affecting performance is that you are receiving too many results. You can often determine the performance of a predicate by considering roughly how many results it has. One way of creating badly performing predicates is by using two variables without relating them in any way. Another is by only relating them using a negation. This leads to computing the Cartesian product between the sets of possible values for each variable. This potentially generates a huge table of results, which can occur if you don’t specify restrictions on your variables. The Cartesian product of two sets A and B, denoted A × B, is the set of all ordered pairs (a, b) where a is in A and b is in B.
 
-Here is an example that could return a lot of results:
+Here's an example that could return many results:
 >
 ```
 predicate mayAccess(Method m, Field f) {
@@ -49,9 +49,9 @@ From the type context, the query optimizer deduces that some parts of the query 
 
 ### Determine the most specific types of a variable
 
-You can use CodeQL to determine what types an entity has if you are unfamiliar with the library used in a query. The predicate `getAQlClass()` returns the most specific QL types of the entity that it is called on.
+You can use CodeQL to determine what types an entity has if you're unfamiliar with the library used in a query. The predicate `getAQlClass()` returns the most specific QL types of the entity that it's called on.
 
-Here is an example:
+Here's an example:
 >
 ```
 import java
@@ -81,7 +81,7 @@ int depth(Stmt s) {
 }
 ```
 
-The query optimizer deduces that some parts of the query are redundant and removes ,or specializes, them from the type context. The query optimizer has special data structures for dealing with transitive closures. If possible, use a transitive closure over a simple recursive predicate, as it is likely to be computed faster.
+The query optimizer deduces that some parts of the query are redundant and removes, or specializes, them from the type context. The query optimizer has special data structures for dealing with transitive closures. If possible, use a transitive closure over a simple recursive predicate, as it is likely to be computed faster.
 
 ### Fold predicates
 
@@ -183,7 +183,7 @@ no longer necessary. Please remove this step as Code Scanning recommends
 analyzing the merge commit for best results.
 ```
 
-Here is an example on how to fix this issue by removing the following lines from the CodeQL workflow. These lines were included in the `steps` section of the `Analyze` job in initial versions of the CodeQL workflow.
+Here's an example of how to fix this issue by removing the following lines from the CodeQL workflow. These lines were included in the `steps` section of the `Analyze` job in initial versions of the CodeQL workflow.
 >
 ```
         with:
@@ -223,7 +223,7 @@ Here are some things to keep in mind when using CodeQL and the QL language.
 
 ## Analysis of Python code 
 
-You may see different results depending on whether you run the CodeQL analysis workflow on Linux, macOS, or Windows, or if you are analyzing code written in Python.
+You may see different results depending on whether you run the CodeQL analysis workflow on Linux, macOS, or Windows, or if you're analyzing code written in Python.
 
 The CodeQL analysis workflow tries to install and analyze Python dependencies, which could lead to more results on GitHub-hosted runners that use Linux. To disable the auto-install, add `setup-python-dependencies: false` to the "Initialize CodeQL" step of the workflow.
 

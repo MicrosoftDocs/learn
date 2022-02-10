@@ -9,7 +9,7 @@ There are two types of queries:
 
 ## Write a simple CodeQL query
 
-The basic CodeQL query structure has the file extension `.ql` and contain a `select` clause.
+The basic CodeQL query structure has the file extension `.ql` and contains a `select` clause.
 
 Here is an example query structure:
 
@@ -128,7 +128,7 @@ Once the database is ready, you can query it interactively, or run a suite of qu
 
 -`codeql github upload-results --sarif=<file> [--github-auth-stdin] [--github-url=<url>] [--repository=<repository-name>] [--ref=<ref>] [--commit=<commit>] [--checkout-path=<path>] <options>...`
 
-To upload results to GitHub each Continuous integration (CI) server needs a GitHub App or personal access token for the CodeQL CLI to use. You must use an access token or a GitHub App with the `security_events` write permission. You could potentially allow the CodeQL CLI to use the same token if CI servers already use a token with this scope to checkout repositories from GitHub. Otherwise, create a new token with the `security_events` write permission and add this to the CI system's secret store. The recommendation for best security practices is to set the `--github-auth-stdin` flag and pass the token to the command through the standard input.
+To upload results to GitHub each Continuous integration (CI) server needs a GitHub App or personal access token for the CodeQL CLI to use. You must use an access token or a GitHub App with the `security_events` write permission. You could potentially allow the CodeQL CLI to use the same token if CI servers already use a token with this scope to check out repositories from GitHub. Otherwise, create a new token with the `security_events` write permission and add this to the CI system's secret store. The recommendation for best security practices is to set the `--github-auth-stdin` flag and pass the token to the command through the standard input.
 
 ## Upload 3rd party SARIF results
 
