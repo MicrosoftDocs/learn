@@ -25,7 +25,7 @@ Use the following steps to set up the CodeQL CLI.
 
 You will need two things to begin using the CodeQL CLI:
 - The CLI 
-- The query of libraries, which includes the local CodeQL queries in that repo
+- The query libraries, which includes the local CodeQL queries in that repo
 
 The CodeQL CLI download package is a zip archive containing tools, scripts, and various CodeQL-specific files. You can download the `codeql-PLATFORM.zip` file for the specific CLI platform you want to use. Alternatively, you can download the `codeql.zip` file that contains the CLI for all supported platforms.
 
@@ -99,8 +99,7 @@ You can also specify additional options. These options depend on the location of
 
 Additionally, you can create a new directory that can include the CLI and any queries you want to use. The CLI's built-in search operations automatically look in all of the directory's sibling directories for the files used in the database creation.
 
-Here is the command:
-
+For example:
 >
 ```
 - $HOME/codeql-home
@@ -151,7 +150,7 @@ CodeQL databases provide you with the snapshot of a particular language's querya
 
 ## The database schema
 
-Each language has its own unique database schema. The schema provides an interface between the initial lexical and the database analysis during the extraction process. The database also contains the results of the complex analysis. The CodeQL libraries define the classes to provide a layer of abstraction over the database tables for each language.
+Each language has its own unique database schema. The schema provides an interface between the initial lexical during the extraction process , and the actual complex analysis using CodeQL.
 
 ## How does CodeQL represent the common features of your chosen language?
 
@@ -174,8 +173,8 @@ You need to use a language matrix for `autobuild` to build each of the compiled 
 
 The `autobuild` step behavior varies depending on the operating system that the extractor runs on. The `autobuild` step attempts to autodetect a suitable build method for C/C++ on Windows. It reviews the files present in the repository to determine the system used on Linux and macOS. You must understand the operating system and language used for CodeQL to work correctly.
 
-You will use build projects for compiled languages without specifying any build commands with CodeQL autobuilders. CodeQL examines the source for evidence of a build system and attempts to run the optimal of commands required to extract a database when an autobuilder is invoked.
+You will use build projects for compiled languages without specifying any build commands with CodeQL autobuilders. CodeQL examines the source for evidence of a build system and attempts to run the optimal commands required to extract a database when an autobuilder is invoked.
 
 ## VS Code extension
 
-Additionally, you can use Visual Studio (VS) Code and the CodeQL extension, as long as you are using VS Code 1.39 or later. Using the extension and CodeQL you can compile and run queries.  You can download the extension from the Visual Studio Code Marketplace. Download the CodeQL VSIX file. The extension uses your installed CLI found on your `PATH`, if is available. This most likely occurs if you create your own CodeQL databases. If not, the extension automatically manages access to the executable of the CLI for you. In doing so, this ensures that the CLI is compatible with the CodeQL extension.
+Additionally, you can use Visual Studio (VS) Code and the CodeQL extension, as long as you are using VS Code 1.39 or later. Using the extension and CodeQL you can compile and run queries.  You can download the extension from the Visual Studio Code Marketplace. Download the CodeQL VSIX file. The extension uses your installed CLI found on your `PATH`, if is available. This most likely occurred if you create your own CodeQL databases. If not, the extension automatically manages access to the executable of the CLI for you. In doing so, this ensures that the CLI is compatible with the CodeQL extension.

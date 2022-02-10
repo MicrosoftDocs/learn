@@ -64,7 +64,7 @@ select e, e.getAQlClass()
 
 The result of this query is a list of the most specific types of every `Expr` in that function. You will see multiple results for expressions that are represented by more than one type, so it will likely return a very large table of results.
 
-Use `getAQlClass()` as a debugging tool. However, this tool also slows down performance so don't use include it in the final version of your query.
+Use `getAQlClass()` as a debugging tool. However, this tool also slows down performance so don't include it in the final version of your query.
 
 ### Avoid complex recursion
 
@@ -125,7 +125,7 @@ select sink.getNode(), source, sink, "Sink is reached from $@.", source.getNode(
 If a data-flow query that you have written doesn’t produce the results you expect, you can debug it by following the steps described below: 
 
 - Checking sources and sinks
-- `fieldFlowBranchLimit`: gets the virtual dispatch branching limit when calculating field flow. This can be overridden to a smaller value to improve performance (a value of 0 disables field flow), or a larger value to get more results
+- Checking the `fieldFlowBranchLimit`: this gets the virtual dispatch branching limit when calculating field flow. This can be overridden to a smaller value to improve performance (a value of 0 disables field flow), or a larger value to get more results
 - Partial flow: you can use partial flow to debug the problem if a data-flow query doesn’t produce the results you expect to see
 
 ### Debug artifacts
@@ -138,7 +138,7 @@ The Visual Studio extension log files have detailed information to help you trou
 
 Progress and error messages are displayed as notifications in the bottom right corner of the workspace. You can use the dropdown list to select the logs you need.
 
-:::image type="content" source="../media/log-files.png" alt-text="Select the logs in the Output view." border="false":::
+:::image type="content" source="../media/log-files.png" alt-text="Screenshot showing how to select the logs in the Output view." border="false":::
 
 ## Common error messages
 
@@ -150,7 +150,7 @@ Try running the workflow again if the run of a workflow for code scanning fails 
 
 ### Error: "Out of disk" or "Out of memory"
 
-CodeQL may run out of disk or memory on the runner on very large projects. Contact GitHub Support so that we can investigate this type of issue on a hosted GitHub Actions runner.
+CodeQL may run out of disk or memory on the runner for very large projects. Contact GitHub Support so that we can investigate this type of issue on a hosted GitHub Actions runner.
 
 ### Error: 403 "Resource not accessible by integration" when using Dependabot
 

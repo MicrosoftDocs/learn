@@ -37,7 +37,7 @@ Queries that don't have metadata aren't interpreted. Those results are output as
 
 This is an example of metadata for one of the standard Java queries:
 
-:::image type="content" source="../media/query-metadata.png" alt-text="Example of query metadata." border="false":::
+:::image type="content" source="../media/query-metadata.png" alt-text="Screenshot showing query metadata." border="false":::
 
 ## QL syntax
 
@@ -103,15 +103,13 @@ You can optionally define a `nodes` query predicate, which specifies the nodes o
 
 Use filter queries to define additional constraints to limit the results that are returned by other queries. A filter query must have the same `@kind` property as the query results that it is filtering. No other metadata properties are required. 
 
-Here is an example:
-
 ## Analyze your database
 
 You'll receive meaningful results in the context of the source code when you use queries to analyze a CodeQL database. The results will be styled as alerts or paths in Static Analysis Results Interchange Format (SARIF) or another interpreted format.
 
 Here is an example of a CodeQL database command. This command combines the effect of the `codeql database run-queries` and `codeql database interpret-results` commands. 
 
--`codeql database analyze --format=<format> 
+`codeql database analyze --format=<format> 
 ---output=<output> [--threads=<num>] [--ram=<MB>] <options>... -- <database> <query|dir|suite>...`
 
 Alternatively, you can run queries that don't meet the requirements for being interpreted as source-code alerts. To do so use `codeql-database run-queries` or `codeql query run`. Then `codeql bqrs decode` to convert the raw results to a readable notation.
@@ -136,8 +134,8 @@ To upload results to GitHub each Continuous integration (CI) server needs a GitH
 
 For code scanning to display results from a third-party static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. Alternatively, your results will display in your repository on GitHub automatically if you use the default CodeQL static analysis engine. Fingerprint data is included in SARIF files created by the CodeQL analysis workflow or using the CodeQL runner.
 
-SARIF specifications use the JSON property name, `partialFingerprints`. A dictionary named fingerprint types to the fingerprint. At a minimum, this will contain a value for the `primaryLocationLineHash`, which provides a fingerprint based on the context of the primary location.
+SARIF specifications use the JSON property name, `partialFingerprints`. A dictionary from named fingerprint types to the fingerprint. This will contain, at a minimum, a value for the `primaryLocationLineHash`, which provides a fingerprint based on the context of the primary location.
 
-GitHub attempts to populate the `partialFingerprints` field from the source files if you upload a SARIF file using the `upload-sarif` action and this data is missing. Additionally, users may see duplicate alerts when code scanning alerts are processed and displayed if you upload a SARIF file without fingerprint data using the `/code-scanning/sarifs` API endpoint.
+GitHub attempts to populate the `partialFingerprints` field from the source files if you upload a SARIF file using the `upload-sarif` action and this data is missing. Additionally, users may see duplicate alerts when code scanning alerts are processed and displayed, if you upload a SARIF file without fingerprint data using the `/code-scanning/sarifs` API endpoint.
 
-To avoid seeing duplicate alerts, you should calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the script as the `upload-sarif` action.
+To avoid seeing duplicate alerts, you should calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the same script as the `upload-sarif` action.

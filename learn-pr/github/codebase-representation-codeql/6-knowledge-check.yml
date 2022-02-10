@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Analyzes both compiled languages and interpreted languages"
       isCorrect: false
-      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages the extractor run directly on the source code, so these two different approaches are no the first step for CodeQL when creating a database"
+      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages. The extractor runs directly on the source code, so these two different approaches are not the first step for CodeQL when creating a database"
     - content: "Extracts a single relational representation of each source file"
       isCorrect: true
       explanation: "Correct. To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
@@ -87,10 +87,10 @@ quiz:
     choices:
     - content: "analyze multiple languages"
       isCorrect: false
-      explanation: "Incorrect. Analyzing multiple languages may slow down the CodeQL analysis runtimes"
+      explanation: "Incorrect. Analyzing multiple languages may slow down CodeQL analysis runtimes"
     - content: "Increase the memory"
       isCorrect: true
-      explanation: "Correct. Increasing the memory will help to optimize the CodeQL analysis runtimes"
+      explanation: "Correct. Increasing the memory will help to optimize CodeQL analysis runtimes"
     - content: "increase the amount of code analyzed"
       isCorrect: false
-      explanation: "Incorrect. Increasing the amount of code analyzed may slow down the CodeQL analysis runtimes"
+      explanation: "Incorrect. Increasing the amount of code analyzed may slow down CodeQL analysis runtimes"
