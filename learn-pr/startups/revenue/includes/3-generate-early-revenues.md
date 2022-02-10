@@ -98,7 +98,7 @@ It's common for founders who haven't worked in a sales role to struggle with est
 
 Often founders who lack sales experience will lean towards hiring someone to take care of sales early in the life of the company. This is generally not a productive strategy. Because founders have a better understanding of the problem and the product than anyone else, they have more passion for the problem than a salaried sales executive, and they're best placed to evangelize their product with customers.
 
-Founders also need to continue learning what customers need, and the best way to do this is by engaging directly with them in a sales context.
+Founders also need to continue learning what customers need, and the best way to do this is to engage directly with them in a sales context.
 
 Following are some tips  for overcoming a lack of sales experience:
 
