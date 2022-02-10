@@ -25,9 +25,9 @@ quiz:
     - content: "Master Key"
       isCorrect: true
       explanation: "That's correct. A master key is required in order to encrypt databases."
-    - content: "Login"
+    - content: "User"
       isCorrect: false
-      explanation: "That's incorrect. A login is not required to enable TDE."
+      explanation: "That's incorrect. A user is not required to enable TDE."
   - content: "Which feature prevents members of the sysadmin role from viewing the values of data in a table?"
     choices:
     - content: "Always Encrypted"
@@ -66,7 +66,7 @@ quiz:
     - content: "Running a PowerShell script"
       isCorrect: false
       explanation: "That's incorrect. PowerShell only supports creating server level firewall rules."
-    - content: "Running a Azure CLI script"
+    - content: "Running an Azure CLI script"
       isCorrect: false
       explanation: "That's incorrect. CLI only supports creating server level firewall rules."
     - content: "Executing a T-SQL statement"
