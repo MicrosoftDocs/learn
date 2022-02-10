@@ -77,10 +77,6 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
-
-### Deploy the template to Azure by using the Azure CLI
-
 In the Visual Studio Code **Terminal**, deploy the Bicep template to Azure by running the following code.
 
 ```azurecli
@@ -90,10 +86,6 @@ az deployment group create --template-file main.bicep
 ::: zone-end
 
 ::: zone pivot="powershell"
-
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
-
-### Deploy the template to Azure by using Azure PowerShell
 
 In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 

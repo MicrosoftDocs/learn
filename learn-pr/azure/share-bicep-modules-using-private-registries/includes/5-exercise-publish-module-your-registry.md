@@ -104,7 +104,7 @@ TODO explain
 
 1. Paste the following into the *bicepconfig.json* file. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
-   ::: code language="bicep" source="code/5-bicepconfig.json" :::
+   ::: code language="json" source="code/5-bicepconfig.json" :::
 
 1. Save the file.
 

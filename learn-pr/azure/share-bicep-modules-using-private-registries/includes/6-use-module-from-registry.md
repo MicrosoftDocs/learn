@@ -13,16 +13,7 @@ module myModule 'br:myregistry.azurecr.io/modulepath/modulename:moduleversion' =
 }
 ```
 
-Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you instead use a special format to tell Bicep that you're referencing a module from a registry:
-
-:::image type="content" source="../media/6-private-module-path.png" alt-text="Diagram showing the module path from the example above." border="false":::
-
-The identifier contains four segments:
-
-- **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
-- **Registry**: The name of the registry that contains the module you want to use.
-- **Module identifier**: The full path to the module within the registry.
-- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions later in this module.
+Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you instead include the path to your module in your registry.
 
 After you've added a reference to the module, Visual Studio Code attempts to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
 
@@ -34,6 +25,8 @@ When you're ready to deploy your Bicep file, you deploy it just like you normall
 ## Aliases 
 
 You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias.
+
+<!-- TODO aliases reduce typing when you reuse modules from the same registry repeatedly. Also, if you need to use different registires for different environemnts, you can use this aproach to switch out the registry name -->
 
 To define an alias, you need to create a *bicepconfig.json* file in the same folder as your Bicep file. Within the *bicepconfig.json* file, you define aliases as in this example:
 

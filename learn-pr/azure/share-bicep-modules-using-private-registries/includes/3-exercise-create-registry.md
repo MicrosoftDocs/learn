@@ -9,6 +9,18 @@ In this exercise, you create a Bicep file that includes a module from the public
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
+::: zone pivot="cli"
+
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
+
+::: zone-end
+
 ## Create an Azure container registry
 
 Here, you create a new registry to store and share your Bicep modules. You'll use Azure Container Registry.
@@ -42,3 +54,9 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
    ```
 
 ::: zone-end
+
+## Access the registry
+
+TODO list modules, notice there are none
+
+TODO talk about how it's using your CLI/PowerShell session identity

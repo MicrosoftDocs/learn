@@ -6,40 +6,17 @@ Module paths for private registries have the same structure as paths for the pub
 
 :::image type="content" source="../media/6-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
 
-Just like you've previously seen, you use the `br` scheme for Bicep registries. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
+The path contains four segments:
 
-When you publish your own module identifier, use a meaningful name that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
+- **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
+- **Registry**: The name of the registry that contains the module you want to use. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
+- **Module identifier**: The full path to the module within the registry.
+- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions in the next section.
+
+When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
 
 > [!TIP]
 > In Azure Container Registry, the module identifier is called a *repository*.
-
-### Aliases 
-
-You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias.
-
-To define an alias, you need to create a *bicepconfig.json* file in the same folder as your Bicep file. Within the *bicepconfig.json* file, you define aliases as in this example:
-
-::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-5, 10-13" :::
-
-When you define a module in a Bicep file, you include the alias in the module path:
-
-```bicep
-module myModule 'br/MyRegistry:bicep/my-module:v1' = {
-  // ...
-}
-```
-
-An alias can also include the path to your modules within the registry. This is helpful if you use a common prefix for your modules:
-
-::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-3, 7-13" :::
-
-Then, you can omit the path when you define the module in your Bicep file:
-
-```bicep
-module myModule 'br/MyRegistryWithPath:my-module:v1' = {
-  // ...
-}
-```
 
 ## Tags and versions
 
