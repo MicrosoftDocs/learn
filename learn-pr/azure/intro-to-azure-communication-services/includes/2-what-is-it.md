@@ -2,9 +2,16 @@ Let's start with an overview of Azure Communication Services(ACS).
 
 ## What is Azure Communication Services?
 
-ACS is a suite of services and products that enable you to create custom communication applications and solutions. These solutions are powered by the same technology that powers Skype and Microsoft Teams. They're also within the Azure family allowing easy integration with other Azure products for additional functionality.
+ACS is a suite of services and products that enable you to create custom communication applications and solutions. These solutions are powered by the same technology that powers Skype and Microsoft Teams. They're also within the Azure family allowing easy integration with other Azure and Microsoft products for additional functionality. Examples of this additional functionality are:
+
+- [Using Azure Event Grid to process SMS, Chat and Calling events](https://docs.microsoft.com/azure/event-grid/event-schema-communication-services) through Event Grid endpoints such as Azure Functions and Webhooks.
+- [Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics](https://docs.microsoft.com/azure/communication-services/concepts/analytics/enable-logging).
+- Using [Teams Interoperability](https://docs.microsoft.com/azure/communication-services/concepts/teams-interop) to bring ACS calls into your Microsoft Teams environment.
+- Use [Azure Logic Apps](https://docs.microsoft.com/azure/communication-services/quickstarts/sms/logic-app) to process SMS messages for SMS Automation.
 
 By combining ACS with other Azure offerings, you'll be able to launch communication solutions in no time and without the pain of managing infrastructure of dealing with management or maintenance.
+
+## ACS' main product areas
 
 ACS main product areas are:
 

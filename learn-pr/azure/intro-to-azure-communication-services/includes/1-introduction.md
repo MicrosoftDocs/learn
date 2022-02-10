@@ -13,8 +13,6 @@ But they're unsure how to proceed. Do they want to make their own solution? That
 
 This scenario is exactly what Azure Communication Services can help with.
 
-TODO: add your image
-
 ## What will we be doing?
 
 In this module, you'll:
