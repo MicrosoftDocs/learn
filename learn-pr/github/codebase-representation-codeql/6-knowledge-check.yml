@@ -30,67 +30,67 @@ quiz:
   questions:
   - content: "What does CodeQL first do when creating a database?"
     choices:
-    - content: "Extracts a single relational representation of each source file"
-      isCorrect: true
-      explanation: "To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
     - content: "Analyzes both compiled languages and interpreted languages"
       isCorrect: false
-      explanation: "Compiled languages extraction works by monitoring the normal build process and interpreted languages the extractor run directly on the source code, so these two different approaches are no the first step for CodeQL when creating a database"
+      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages the extractor run directly on the source code, so these two different approaches are no the first step for CodeQL when creating a database"
+      - content: "Extracts a single relational representation of each source file"
+      isCorrect: true
+      explanation: "Correct. To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
     - content: "Converts results produced during query execution into a meaningful form"
       isCorrect: false
-      explanation: "The final step converts results produced during query execution into a form that is more meaningful in the context of the source code"
+      explanation: "Incorrect. The final step converts results produced during query execution into a form that is more meaningful in the context of the source code"
   - content: "What is the format of the command used to create and analyze CodeQL database from the CLI?"
     choices:
     - content: "`codeql [command] [subcommand]`"
       isCorrect: true
-      explanation: "The CodeQL CLI includes commands to create and analyze CodeQL databases from the command line using this command"
+      explanation: "Correct. The CodeQL CLI includes commands to create and analyze CodeQL databases from the command line using this command"
     - content: "`codeql [subcommand] [command]`"
       isCorrect: false
-      explanation: "[subcommand] does not come before [command] to create and analyze a CodeQL database from the CLI "
+      explanation: "Incorrect. [subcommand] does not come before [command] to create and analyze a CodeQL database from the CLI "
     - content: "`[command] [subcommand] codeql`"
       isCorrect: false
-      explanation: "'codeql' needs to appear to start the command"
+      explanation: "Incorrect. 'codeql' needs to appear to start the command"
   - content: "What is an extractor?"
     choices:
-    - content: "a tool that produces the relational data"
-      isCorrect: true
-      explanation: "An extractor is a tool that produces the relational data and source reference for each input file, from which a CodeQL database can be built"
     - content: "a hierarchical representation of the code"
       isCorrect: false
-      explanation: "The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
     - content: "a representation of the abstract syntax tree"
       isCorrect: false
-      explanation: "The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
+    - content: "a tool that produces the relational data"
+      isCorrect: true
+      explanation: "Correct. An extractor is a tool that produces the relational data and source reference for each input file, from which a CodeQL database can be built"
   - content: "The CLI's built-in search operations does which of the following?"
     choices:
-    - content: "automatically looks in all of its sibling directories for the files used in the database creation and analysis"
-      isCorrect: true
-      explanation: "The CLI’s built-in search operations automatically look in all of its sibling directories for the files used in database creation and analysis"
     - content: "automatically looks in parent directories for the files used in the database creation and analysis"
       isCorrect: false
-      explanation: "The siblings are searched, not the parent directories"
+      explanation: "Incorrect. The siblings are searched, not the parent directories"
     - content: "when manually prompted, looks in sibling directories for the files used in the database creation and analysis"
       isCorrect: false
-      explanation: "A manual prompt does not occur since this is automatic"
+      explanation: "Incorrect. A manual prompt does not occur since this is automatic"
+    - content: "automatically looks in all of its sibling directories for the files used in the database creation and analysis"
+      isCorrect: true
+      explanation: "Correct. The CLI’s built-in search operations automatically look in all of its sibling directories for the files used in database creation and analysis"
   - content: "By default, which severity level will cause a pull request check failure when using code scanning?"
     choices:
     - content: "`Error`"
       isCorrect: true
-      explanation: "By default, only alerts with the severity level of Error or security severity level of Critical or High will cause a pull request check failure, and a check will still succeed with alerts of lower severities"
+      explanation: "Correct. By default, only alerts with the severity level of Error or security severity level of Critical or High will cause a pull request check failure, and a check will still succeed with alerts of lower severities"
     - content: "`Warning`"
       isCorrect: false
-      explanation: "`Warning` is a setting, not a severity level"
+      explanation: "Incorrect. `Warning` is a setting, not a severity level"
     - content: "`Medium`"
       isCorrect: false
-      explanation: "`Medium` is a setting, not a severity level"
+      explanation: "incorrect. `Medium` is a setting, not a severity level"
   - content: "Which is one way to optimize CodeQL analysis runtimes?"
     choices:
-    - content: "increase the memory"
-      isCorrect: true
-      explanation: "Increasing the memory will help to optimize the CodeQL analysis runtimes"
     - content: "analyze multiple languages"
       isCorrect: false
-      explanation: "Analyzing multiple languages may slow down the CodeQL analysis runtimes"
+      explanation: "Incorrect. Analyzing multiple languages may slow down the CodeQL analysis runtimes"
+    - content: "Increase the memory"
+      isCorrect: true
+      explanation: "Correct. Increasing the memory will help to optimize the CodeQL analysis runtimes"
     - content: "increase the amount of code analyzed"
       isCorrect: false
-      explanation: "Increasing the amount of code analyzed may slow down the CodeQL analysis runtimes"
+      explanation: "Incorrect. Increasing the amount of code analyzed may slow down the CodeQL analysis runtimes"

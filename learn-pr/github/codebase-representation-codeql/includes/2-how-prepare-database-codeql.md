@@ -8,8 +8,8 @@ You can use the CodeQL CLI standalone product to analyze code and to generate da
 
 Before you generate a CodeQL database, you need to:
 
-- Install and set up the CodeQL CLI
-- Check out the version of your codebase you want to analyze
+1. Install and set up the CodeQL CLI
+2. Check out the version of your codebase you want to analyze
 
 For compiled languages, the directory should be ready to build, with all dependencies already installed. CodeQL begins by extracting a single relational representation of each source file in the codebase to create a database. This is the database you'll use to analyze your code.
 
@@ -29,7 +29,7 @@ You will need two things to begin using the CodeQL CLI:
 
 The CodeQL CLI download package is a zip archive containing tools, scripts, and various CodeQL-specific files. You can download the `codeql-PLATFORM.zip` file for the specific CLI platform you want to use. Alternatively, you can download the `codeql.zip` file that contains the CLI for all supported platforms.
 
-You can download the zip archive for Linux, Windows, or macOS, from github/codeql-cli-binaries. Then download the appropriate `codeql-PLATFORM.zip` file if you want the CLI for a specific platform. Alternatively, you can download `codeql.zip` that contains the CLI for all supported platforms.
+Download the zip archive for Linux, Windows, or macOS, from [github/codeql-cli-binaries](https://github.com/github/codeql-cli-binaries). Then download the appropriate `codeql-PLATFORM.zip` file for a specific platform. Alternatively, you can download `codeql.zip` that contains the CLI for all supported platforms.
 
 ### 2. Create a new CodeQL directory
 
@@ -51,7 +51,7 @@ You can also clone and rename the repository in a single step when using git fro
 
 For example, if the root of the cloned CodeQL repository is `$HOME/codeql-home/codeql-repo`, then the root of the cloned CodeQL for Go repository should be `$HOME/codeql-home/codeql-go`.
 
-The queries and libraries are organized into QL packs within these repositories. QL packs contain important metadata that tells the CodeQL CLI how to process the query files, along with the queries themselves. You will learn more about the QL language later in the next unit.
+The queries and libraries are organized into QL packs within these repositories. QL packs contain important metadata that tells the CodeQL CLI how to process the query files, along with the queries themselves. You will learn more about the QL language in the next unit.
 
 ### 4. Extract the zip archive
 
@@ -145,7 +145,7 @@ Each extractor defines its own set of configuration options. For CodeQL CLI v2.7
 To find out which options are available for your language's extractor, type `codeql resolve languages --format=betterjson` or `codeql resolve extractor --format=betterjson`.
 The `betterjson` output format also provides the extractor's root and other language specific options.
 
-## What to know about your data in a CodeQL database?
+## What to know about your data in a CodeQL database
 
 CodeQL databases provide you with the snapshot of a particular language's queryable data that was extracted from a codebase. This data is a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph.
 

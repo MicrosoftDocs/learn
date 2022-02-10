@@ -27,21 +27,27 @@ where / ... logical formula ... /
 select / ... expressions ... */
 ```
 
-Use query metadata to identify your custom queries when you add them to your GitHub repository. The metadata provides information about the query's purpose. The metadata also specifies how to interpret and display the query results.
+## Query metadata
+
+Using CodeQL with code scanning converts results in a way that highlights the potential issue that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Use query metadata to identify your custom queries when you add them to your GitHub repository. The metadata provides information about the query's purpose. The metadata also specifies how to interpret and display the query results.
+
+Other queries display a series of locations that represent steps along a data-flow or control-flow. Queries also include a message explaining the significance of the result.
+
+Queries that don't have metadata aren't interpreted. Those results are output as a table and not displayed in the source code.
 
 This is an example of metadata for one of the standard Java queries:
 
 :::image type="content" source="../media/query-metadata.png" alt-text="Example of query metadata." border="false":::
 
-### QL syntax
+## QL syntax
 
 Queries are written using QL. The QL basic syntax is similar to SQL.
 
 QL is a programming language made up of logical formulas. Common logical connectives such as `and`, `or`, and `not` are used. Quantifiers such as `forall` and `exists` are also used. QL also uses important logical concepts such as predicates. Furthermore, you can write complex recursive queries, because QL supports recursion and aggregates. You can also write complex recursive queries using simple QL syntax as well as aggregates like `count`, `sum`, and `average`.
 
-### Path queries
+## Path queries
 
-You can create path queries to visualize the flow of information through a codebase. Use path queries to track the path taken by data from its possible starting points (source) to its possible end points (sink). To model paths, your query must provide information about the source and the sink, as well as the data flow steps that link them.
+Create path queries to visualize the flow of information through a codebase. Use path queries to track the path taken by data from its possible starting points (source) to its possible end points (sink). To model paths, your query must provide information about the source and the sink, as well as the data flow steps that link them.
 
 The easiest way to start writing your own path query is to use one of the existing queries as a template.
 
@@ -75,7 +81,7 @@ Where:
 
 The following sections describe the main requirements for a valid path query.
 
-#### How to write a path query
+### How to write a path query
 
 Your query needs to compute a path graph in order to generate path explanations. To do so, define a query predicate called `edges`. A query predicate is a non-member predicate with a `query` annotation. The query annotation returns all the tuples that the predicate evaluates. The `edges` defines the edge relations of the graph that you are computing. It is used to compute the paths related to each result that your query generates. You can also import a predefined `edges` predicate from a path graph module in one of the standard data flow libraries. The data flow libraries contain the other `classes`, `predicates`, and `modules` that are commonly used in data flow analysis in addition to the path graph module. The CodeQL data flow libraries function by modeling its data flow graph or implement data flow analysis. Normal data flow libraries are used to analyze the information flow in which data values are preserved at each step.
 
@@ -93,19 +99,15 @@ Here is an example of the import path:
 
 You can optionally define a `nodes` query predicate, which specifies the nodes of the path graph for all languages. When you define `nodes`, only edges with endpoints are defined by the nodes selected. When you do not define `nodes`, you need to select all possible endpoints of `edges`.
 
-#### Filter queries
+### Filter queries
 
-You can use filter queries to define additional constraints to limit the results that are returned by other queries. A filter query must have the same `@kind` property as the query results that it is filtering. No other metadata properties are required. Here is an example:
+Use filter queries to define additional constraints to limit the results that are returned by other queries. A filter query must have the same `@kind` property as the query results that it is filtering. No other metadata properties are required. 
 
-### Query metadata
-
-Using CodeQL with code scanning converts results in a way that highlights the potential issue that the queries are designed to find. Queries contain metadata properties that indicate how the results should be interpreted. Other queries display a series of locations that represent steps along a data-flow or control-flow. Queries also include a message explaining the significance of the result.
-
-Queries that don't have metadata aren't interpreted. Those results are output as a table and not displayed in the source code.
+Here is an example:
 
 ## Analyze your database
 
-You will receive meaningful results in the context of the source code when you use queries to analyze a CodeQL database. The results will be styled as alerts or paths in Static Analysis Results Interchange Format (SARIF) or another interpreted format.
+You'll receive meaningful results in the context of the source code when you use queries to analyze a CodeQL database. The results will be styled as alerts or paths in Static Analysis Results Interchange Format (SARIF) or another interpreted format.
 
 Here is an example of a CodeQL database command. This command combines the effect of the `codeql database run-queries` and `codeql database interpret-results` commands. 
 
@@ -126,16 +128,16 @@ Here is one example. This value will appear (with a trailing slash appended if n
 
 Once the database is ready, you can query it interactively, or run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. This example uploads a SARIF file to GitHub code scanning.
 
--`codeql github upload-results --sarif=<file> [--github-auth-stdin] [--github-url=<url>] [--repository=<repository-name>] [--ref=<ref>] [--commit=<commit>] [--checkout-path=<path>] <options>...`
+`codeql github upload-results --sarif=<file> [--github-auth-stdin] [--github-url=<url>] [--repository=<repository-name>] [--ref=<ref>] [--commit=<commit>] [--checkout-path=<path>] <options>...`
 
-To upload results to GitHub each Continuous integration (CI) server needs a GitHub App or personal access token for the CodeQL CLI to use. You must use an access token or a GitHub App with the `security_events` write permission. You could potentially allow the CodeQL CLI to use the same token if CI servers already use a token with this scope to check out repositories from GitHub. Otherwise, create a new token with the `security_events` write permission and add this to the CI system's secret store. The recommendation for best security practices is to set the `--github-auth-stdin` flag and pass the token to the command through the standard input.
+To upload results to GitHub each Continuous integration (CI) server needs a GitHub App or personal access token for the CodeQL CLI to use. You must use an access token or a GitHub App with the `security_events` write permission. You could potentially allow the CodeQL CLI to use the same token if CI servers already use a token with this scope to check out repositories from GitHub. Otherwise, create a new token with the `security_events` write permission and add this to the CI system's secret store. Best practice for security is to set the `--github-auth-stdin` flag and pass the token to the command through the standard input.
 
-## Upload 3rd party SARIF results
+### Upload 3rd party SARIF results
 
-For code scanning to display results from a third-party static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. Alternatively, your results will display in your repository on GitHub automatically if you use the default CodeQL static analysis engine. Fingerprint data is included in SARIF files created by the CodeQL analysis workflow or using the CodeQL runner. 
+For code scanning to display results from a third-party static analysis tool in your GitHub repository, your results must be stored in a SARIF file that supports a specific subset of the SARIF 2.1.0 JSON schema. Alternatively, your results will display in your repository on GitHub automatically if you use the default CodeQL static analysis engine. Fingerprint data is included in SARIF files created by the CodeQL analysis workflow or using the CodeQL runner.
 
 SARIF specifications use the JSON property name, `partialFingerprints`. A dictionary named fingerprint types to the fingerprint. At a minimum, this will contain a value for the `primaryLocationLineHash`, which provides a fingerprint based on the context of the primary location.
 
 GitHub attempts to populate the `partialFingerprints` field from the source files if you upload a SARIF file using the `upload-sarif` action and this data is missing. Additionally, users may see duplicate alerts when code scanning alerts are processed and displayed if you upload a SARIF file without fingerprint data using the `/code-scanning/sarifs` API endpoint.
 
-To avoid seeing duplicate alerts, you should calculate fingerprint data and populate the partialFingerprints property before you upload the SARIF file. A helpful starting point is to use the script as the `upload-sarif` action.
+To avoid seeing duplicate alerts, you should calculate fingerprint data and populate the `partialFingerprints` property before you upload the SARIF file. A helpful starting point is to use the script as the `upload-sarif` action.

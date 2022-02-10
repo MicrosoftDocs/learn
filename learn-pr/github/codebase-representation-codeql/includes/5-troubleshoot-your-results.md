@@ -2,7 +2,7 @@ This unit provides common tips for troubleshooting your queries.
 
 ## Optimize CodeQL analysis runtimes
 
-There are several reasons why your CodeQL analysis may be taking too long time to complete:
+There are several reasons why your CodeQL analysis may be taking too long to complete:
 
 - If you use self-hosted runners for CodeQL analysis, you can increase the memory or the number of cores.
 - Problems can also occur when a repository contains multiple languages. The analysis of each language runs in parallel with the default CodeQL analysis workflow in order to build a matrix of languages. You can modify your workflow to use a matrix that speeds up the analysis of multiple languages.
@@ -51,7 +51,6 @@ From the type context, the query optimizer deduces that some parts of the query 
 
 You can use CodeQL to determine what types an entity has if you're unfamiliar with the library used in a query. The predicate `getAQlClass()` returns the most specific QL types of the entity that it's called on.
 
-Here's an example:
 >
 ```
 import java
@@ -65,13 +64,12 @@ select e, e.getAQlClass()
 
 The result of this query is a list of the most specific types of every `Expr` in that function. You will see multiple results for expressions that are represented by more than one type, so it will likely return a very large table of results.
 
-Use `getAQlClass()` as a debugging tool. However, it slows down performance so don't use include it in the final version of your query.
+Use `getAQlClass()` as a debugging tool. However, this tool also slows down performance so don't use include it in the final version of your query.
 
 ### Avoid complex recursion
 
-"Recursion" is about self-referencing definitions. This is an extremely powerful when used appropriately. In order to do so, you should try to make recursive predicates as simple as possible. You should define a *base case* that allows the predicate to *bottom out*, along with a single *recursive call*.
+"Recursion" is about self-referencing definitions. This is extremely powerful when used appropriately. In order to do so, you should try to make recursive predicates as simple as possible. You should define a *base case* that allows the predicate to *bottom out*, along with a single *recursive call*.
 
-Here is an example:
 >
 ```
 int depth(Stmt s) {
@@ -127,10 +125,8 @@ select sink.getNode(), source, sink, "Sink is reached from $@.", source.getNode(
 If a data-flow query that you have written doesn’t produce the results you expect, you can debug it by following the steps described below: 
 
 - Checking sources and sinks
-- `fieldFlowBranchLimit` - gets the virtual dispatch branching limit when calculating field flow. This can be overridden to a smaller value to improve performance (a value of 0 disables field flow), or a larger value to get more results
-- Partial flow - you can use partial flow to debug the problem if a data-flow query doesn’t produce the results you expect to see
-
-In CodeQL, you can use data flow analysis to compute the possible values that a variable can hold at various points in a program
+- `fieldFlowBranchLimit`: gets the virtual dispatch branching limit when calculating field flow. This can be overridden to a smaller value to improve performance (a value of 0 disables field flow), or a larger value to get more results
+- Partial flow: you can use partial flow to debug the problem if a data-flow query doesn’t produce the results you expect to see
 
 ### Debug artifacts
 

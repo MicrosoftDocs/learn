@@ -23,8 +23,6 @@ Each alert includes the following information:
 
 You will also see information on how to fix the problem when CodeQL analysis identifies an alert. Additionally, code scanning using CodeQL can detect data-flow problems in your code.
 
-Here is an example:
-
 :::image type="content" source="../media/alert-screenshot.png" alt-text="Alerts from CodeQL analysis include a description of the problem." border="false":::
 
 ### Data flow alerts
@@ -72,7 +70,5 @@ Here is what happens when you delete an alert:
 - The alert is removed from the number of current alerts for your project
 - It is not added to the "Closed" list in the summary of alerts
 - If the code that generated the alert stays the same, and the same code scanning tool runs again without any configuration changes, the alert will be shown again in your analysis results
-
-Here is an example:
 
 :::image type="content" source="../media/alert-delete.png" alt-text="Select some or all of the check boxes and click Delete, if you have admin permissions for the repository and you want to delete alerts for this code scanning tool." border="false":::

@@ -15,4 +15,4 @@ By the end of this module, you'll be able to:
 - Basic knowledge of GitHub Actions
 - Familiarity with GitHub code scanning
 - Administrative access to a repository
-- Familiarity with SQL, Prolog, Datalog
+- Familiarity with SQL, Prolog, and Datalog
