@@ -6,9 +6,9 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 Now, another team has come to you to ask to reuse the same modules for their own deployments. They're building a new toy dog, and they need to deploy a website and CDN to help promote the product on social media.
 
-You considered sending the modules to each team by email, but you're worried about how you'll control access and manage different versions. You want to find a way to share the modules throughout your organization, to make it easier for any team to reuse them.
+You considered sending the modules to each team by email, but you're worried about how you'll control access and manage different versions. You want to find a way to share the modules throughout your organization, to make it easier for any team to reuse them for future deployments.
 
-<!-- TODO can we include arch diagram? -->
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram showing the CDN and website modules being published to a registry and used by multiple other deployments." border="false":::
 
 ## What will we be doing?
 

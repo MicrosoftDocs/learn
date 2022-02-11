@@ -6,7 +6,7 @@ When you've worked with modules in the past, you've probably used the module's f
 
 Here's an example path for a module in a private Azure container registry:
 
-:::image type="content" source="../media/6-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
+:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
 
 The path contains four segments:
 
