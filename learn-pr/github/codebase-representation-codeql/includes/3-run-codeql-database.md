@@ -2,7 +2,7 @@ Now that you've extracted your code to a database, You can analyze it using Code
 
 You can use CodeQL queries in code scanning analysis to find problems in your source code and to find potential security vulnerabilities. You can also write custom queries to identify problems for each language you are using in your source code.
 
-There are two types of queries:
+There are two important types of queries:
 
 - **Alert queries**: highlight issues in specific locations of your code. 
 - **Path queries**:  describe the flow of information between a source and a sink in your code.
@@ -83,7 +83,7 @@ The following sections describe the main requirements for a valid path query.
 
 ### How to write a path query
 
-Your query needs to compute a path graph in order to generate path explanations. To do so, define a query predicate called `edges`. A query predicate is a non-member predicate with a `query` annotation. The query annotation returns all the tuples that the predicate evaluates. The `edges` defines the edge relations of the graph that you are computing. It is used to compute the paths related to each result that your query generates. You can also import a predefined `edges` predicate from a path graph module in one of the standard data flow libraries. The data flow libraries contain the other `classes`, `predicates`, and `modules` that are commonly used in data flow analysis in addition to the path graph module. The CodeQL data flow libraries function by modeling its data flow graph or implement data flow analysis. Normal data flow libraries are used to analyze the information flow in which data values are preserved at each step.
+Your query needs to compute a path graph in order to generate path explanations. To do so, define a query predicate called `edges`. A query predicate is a non-member predicate with a `query` annotation. The query annotation returns all the tuples that the predicate evaluates. The `edges` defines the edge relations of the graph that you are computing. It is used to compute the paths related to each result that your query generates. You can also import a predefined `edges` predicate from a path graph module in one of the standard data flow libraries. The data flow libraries contain the other `classes`, `predicates`, and `modules` that are commonly used in data flow analysis in addition to the path graph module. The CodeQL data flow libraries function by modeling its data flow graph or implementing data flow analysis. Normal data flow libraries are used to analyze the information flow in which data values are preserved at each step.
 
 Here is the example statement that imports the `pathgraph` module from the data flow library (`DataFlow.qll`), in which `edges` is defined.
 

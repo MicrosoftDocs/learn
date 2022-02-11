@@ -150,7 +150,7 @@ CodeQL databases provide you with the snapshot of a particular language's querya
 
 ## The database schema
 
-Each language has its own unique database schema. The schema provides an interface between the initial lexical during the extraction process , and the actual complex analysis using CodeQL.
+Each language has its own unique database schema. The schema provides an interface between the initial lexical analysis during the extraction process , and the actual complex analysis using CodeQL.
 
 ## How does CodeQL represent the common features of your chosen language?
 

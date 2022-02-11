@@ -1,7 +1,7 @@
 
 In this module, you learned how to set up a database for CodeQL and run CodeQL in this database. You also reviewed information about how to understand the CodeQL scan results, and troubleshoot any problems. Finally, the module discussed how to automate security checks and perform variant analysis using CodeQL. 
 
-# Learn more
+## Learn more
 
 Here are some links to more information on CodeQL;
 
