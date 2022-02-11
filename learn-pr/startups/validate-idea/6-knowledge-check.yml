@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "When completing a Value Proposition Canvas, which three elements of your value proposition are you aiming to test?"
+  - content: "When you complete a Value Proposition Canvas, which three elements of your value proposition are you aiming to test?"
     choices:
     - content: "Costs, revenues, and channels."
       isCorrect: false
@@ -49,9 +49,9 @@ quiz:
       explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can build a business around the idea."
     - content: "Scalability."
       isCorrect: false
-      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can scale up to meed increased demand."
+      explanation: "Incorrect. By tracking interest in your idea, you're testing whether customers want your product or service. You're not testing whether you can scale up to meet increased demand."
 
-  - content: "When interviewing customers, which of the following things is unlikely to be helpful?"
+  - content: "When you interview customers, which of the following things is unlikely to be helpful?"
     choices:
     - content: "Asking open questions."
       isCorrect: false
@@ -64,7 +64,7 @@ quiz:
       explanation: "Incorrect. Learning how much time or money customers have spent on the problem can be helpful. You can use this information to gauge interest in your idea."
     - content: "Pitching your product and trying to get them to commit to a sale."
       isCorrect: true
-      explanation: "Correct. When interviewing customers, your goal is to gather information. Before you've validated your idea, it's too early to invest a significant amount of time in selling your product."
+      explanation: "Correct. During customer interviews, your goal is to gather information. Before you've validated your idea, it's too early to invest a significant amount of time in selling your product."
 
   - content: "What's the main difference between a Concierge experiment and a Wizard of Oz experiment?"
     choices:

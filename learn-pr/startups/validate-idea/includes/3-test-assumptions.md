@@ -26,7 +26,7 @@ A "Problem" assumption is where you believe you know what problem the target cus
 
 A "Solution" assumption is where you believe that your product will be a better solution than existing alternatives, and a good enough fit for your target customers' needs that they'll choose to use it.
 
-:::image type="content" source="../media/lean-canvas.png" alt-text="Image that shows components that influence a startup business model. Examples include problems, solutions, cost structures, and revenue streams.":::
+:::image type="content" source="../media/lean-canvas.png" alt-text="Image that shows components that influence a startup business model. Examples include problems, solutions, cost structures, and revenue streams." lightbox="../media/lean-canvas-lightbox.png":::
 
 The Lean Canvas takes some of the inputs that we've discussed earlier in this unit such as customer, problem, and solution, and adds some vital business model blocks such as revenue streams, cost structure, channels, and key metrics.
 
@@ -65,7 +65,7 @@ Feel free to add any extra assumptions that you identify as part of this process
 
 You might end up with 20 or 30 assumptions. It's not practical to test them all, so your next objective is to work out which of these assumptions you should focus on testing.
 
-One way to do this is to plot each assumption on an Assumptions Matrix where the vertical axis shows the importance of the assumption and the horizontal axis shows how much you know about it, as shown below.
+One way to do this is to plot each assumption on an assumptions matrix, where the vertical axis shows the importance of the assumption and the horizontal axis shows how much you know about it, as shown below.
 
 :::image type="content" source="../media/learning-path-assumptions.png" alt-text="Chart that shows a matrix. One dimension runs from important to trivial. The other runs from known to unknown.":::
 

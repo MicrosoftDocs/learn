@@ -37,7 +37,7 @@ If an assumption is validated, you should continue on your current path. If an a
 
 Emily is working on an idea for a personal banking product that consolidates multiple bank feeds into a streamlined dashboard interface.
 
-By completing the Value Proposition Canvas and the Lean Canvas, Emily identified more than 20 assumptions. By using an Assumptions Matrix, she was able to narrow the list down. She then had five assumptions that she believed were highly important and about which she had relatively little knowledge. She also made sure that she had at least one assumption in each category of desirable, feasible, and viable.
+First Emily completed the Value Proposition Canvas and the Lean Canvas. These tools helped her identify more than 20 assumptions. Next Emily used an assumptions matrix to narrow the list down. She then had five assumptions that she believed were highly important and about which she had relatively little knowledge. She also made sure that she had at least one assumption in each category of desirable, feasible, and viable.
 
 Emily listed her top five assumptions as falsifiable statements, using a success threshold that she believed would give her some confidence to proceed. Along with each statement she identified whether the assumption was about desirability, feasibility, or viability.
 
@@ -89,4 +89,4 @@ She's incorporated some of the common themes that arose in her interviews with c
 
 ## Task: Create your own user persona
 
-Create a user persona representing what you believe is your primary target user. Give the persona a name and description. Complete as many details as you can based on what you currently know about your target users. Check out the resources at the end of this module for some user persona templates for inspiration.
+Create a user persona representing what you believe is your primary target user. Give the persona a name and description. Complete as many details as you can by using what you currently know about your target users. Check out the resources at the end of this module for some user persona templates for inspiration.

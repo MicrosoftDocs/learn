@@ -26,9 +26,9 @@ The same concept can be applied to startups. If you think about your product fro
 
 Try the following job story format as a way of expressing the job to be done from a customer's viewpoint:
 
-- *When [describe the situation or context]*
-- *I want to [describe the job I want done]*
-- *So that [describe the outcome you're seeking]*
+- When \<description-of-the-situation-or-context\>
+- I want to \<description-of-the-job-to-be-done\>
+- So that \<description-of-the-outcome\>
 
 Let's look at a simple example:
 
@@ -36,7 +36,7 @@ Let's look at a simple example:
 
 ## Task: Create a job story
 
-Create a job story for your product using the above format, imagining that you're the customer. Remember that these are your hypotheses about what job your customer wants done and why. It's only by talking to customers that you can test and validate these hypotheses.
+Create a job story for your product using the above format, imagining that you're the customer. Remember that these are your hypotheses about why your customer wants your product to do a certain job, and what that job is. It's only by talking to customers that you can test and validate these hypotheses.
 
 ## Pain relievers and gain creators
 
@@ -55,7 +55,7 @@ It can be enlightening to talk to customers and understand what pains they would
 
 Your next job is to prioritize those pain points so that you can address the most significant ones with your product. Customers are much more likely to use and pay for a product that reduces or eliminates a pain that is severe and occurs frequently than a pain which is mild and occurs rarely.
 
-It's helpful to use a Customer Pain Matrix that plots intensity versus frequency, as shown below. The pains in the top right-hand quadrant will be the ones you should focus your attention on.
+It's helpful to use a customer pain matrix that plots intensity versus frequency, as shown below. The pains in the top right-hand quadrant will be the ones you should focus your attention on.
 
 :::image type="content" source="../media/learning-path-pain-matrix-chart.png" alt-text="Chart that shows the relationship between the intensity and frequency of pain.":::
 
@@ -67,7 +67,7 @@ Now let's look at gain creators. These are products that deliver something addit
 
 Gains can also be personal to the individual user, such as relaxation, enjoyment, or self-actualization.
 
-Similar to painkillers, you can use feedback from customers to plot gains on a Customer Gain Matrix using significance and immediacy as the two axes, as shown below.
+Similar to painkillers, you can use feedback from customers to plot gains on a customer gain matrix using significance and immediacy as the two axes, as shown below.
 
 :::image type="content" source="../media/learning-path-gain-matrix.png" alt-text="Chart that shows the relationship between the significance and immediacy of gains. A point indicates that a high significance, now, is ideal.":::
 
@@ -77,9 +77,9 @@ The gains in the top right-hand quadrant will be the ones you should focus your 
 
 ## Task: Identify pains and gains
 
-Create a Customer Pains Matrix and a Customer Gains Matrix for your target customer. Go and talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
+Create a customer pains matrix and a customer gains matrix for your target customer. Go and talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
 
-Hopefully by completing this quick task you'll get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when it comes to writing copy for your website or anywhere else that you describe your product and its value proposition.
+Hopefully by completing this quick task you'll get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when you start writing copy for your website or anywhere else that you describe your product and its value proposition.
 
 ## Case study: Tylenol
 
@@ -87,7 +87,7 @@ Let's use Tylenol as a brief case study to help us delve deeper into pains and g
 
 However, if you ask customers why they want the pain taken away, they'll often tell you that pain stops them from being productive in their day or makes it harder for them to be fully present with friends and family. Therefore, we could argue that the real job being done by Tylenol is giving people back their day.
 
-In the context of your own startup, make sure you're asking customers not just what functionality they would like from your product, but what outcome they want, why they want it, and how important it is to them.
+In the context of your own startup, make sure you're asking customers not just what functionality they would like from your product, but what outcome they want. Also ask why they want the outcome, and how important the functionality is to them.
 
 ## The Value Proposition Canvas
 
@@ -109,7 +109,7 @@ Now move to the left-hand side of the canvas and design your value proposition. 
 
 Let's put the Value Proposition Canvas into practice. Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG.
 
-A lot of people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
+Many people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
 
 Now go and talk to customers or people who are representative of the customer segment you believe you should target, and find out what jobs they need your product to do, the pains they want it to relieve, and the gains they want it to create.
 
