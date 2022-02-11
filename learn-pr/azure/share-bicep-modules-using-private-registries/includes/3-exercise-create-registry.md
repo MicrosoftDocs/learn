@@ -8,6 +8,10 @@ In this exercise, you create a private module registry for your toy company to u
 > * Deploy a new private registry.
 > * Connect to your registry to verify it was created successfully.
 
+<!-- TODO -->
+> [!CAUTION]
+> **Note to reviewers:** We are still working through the sandbox onboarding process for this module. For now, please test the exercise in your own Azure subscription.
+
 ::: zone pivot="cli"
 
 To deploy resources to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've installed the [Azure CLI](/cli/azure/install-azure-cli), and remember to sign in with the same account that you used to activate the sandbox.
@@ -74,10 +78,10 @@ Now that your registry has been created, you can connect to it to verify that it
 
 1. List the modules in the registry by running this command. Make sure to replace the name placeholder with the name you selected earlier.
 
-  ```azurecli
-  az acr repository list \
-    --name YOUR_CONTAINER_REGISTRY_NAME
-  ```
+   ```azurecli
+   az acr repository list \
+     --name YOUR_CONTAINER_REGISTRY_NAME
+   ```
 
   Notice that you don't specify any credentials to connect to the container registry. The Azure CLI uses the same credentials you used to sign in to the Azure CLI. You have access to the container registry because you created it.
 

@@ -91,7 +91,7 @@ Here, you update your Bicep file to use the registry alias instead of referring 
 
    ::: code language="bicep" source="code/7-main-alias.bicep" range="12-20" highlight="1" :::
 
-1. Perform similar steps for the `cdn` module:
+1. Make a similar change to the `cdn` module:
 
    ::: code language="bicep" source="code/7-main-alias.bicep" range="22-28" highlight="1" :::
 
@@ -131,7 +131,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On the left menu, select **Deployments**.
 
-   :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." :::
+   :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." ::: <!-- TODO -->
 
    Notice that three deployments are listed: *main*, which represents the deployment of your parent Bicep file, and *cdn* and *website*, which represent the modules that you included in your *main.bicep* file.
 
@@ -139,6 +139,6 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
    Notice that both of the modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`. <!-- TODO The modules are listed twice because their outputs are also referenced within the template. -->
 
-   :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." :::
+   :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." ::: <!-- TODO -->
 
 1. Select the **toy-dog-cdn** and **toy-dog-website** deployments, and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.

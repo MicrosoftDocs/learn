@@ -1,8 +1,10 @@
-TODO intro para
+You now understand what Bicep registries are, and how they can be helpful when sharing modules in your organization. In this unit, you'll learn how to publish a module to a private registry.
 
 ## Module paths
 
-Module paths for private registries have the same structure as paths for the public registry. Here's an example path for a module in a private Azure container registry:
+When you've worked with modules in the past, you've probably used the module's file path to refer to it in your templates. When you work with modules and private registries, you need to use a different module path so that Bicep knows how to locate the module in your registry.
+
+Here's an example path for a module in a private Azure container registry:
 
 :::image type="content" source="../media/6-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
 
@@ -11,9 +13,9 @@ The path contains four segments:
 - **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
 - **Registry**: The name of the registry that contains the module you want to use. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
 - **Module identifier**: The full path to the module within the registry.
-- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions in the next section.
+- **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions shortly.
 
-When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
+When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
 
 ## Tags and versions
 
@@ -47,7 +49,7 @@ Here's a versioning policy that often works well:
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
 > [!TIP]
-> Consider the users of your module, and make sure you think about what they expect will happen. If a user uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to increase the likelihood that your users will get a result they expect.
+> Consider the users of your module, and make sure you think about what they expect will happen. If a user uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to avoid surprising your users.
 
 ## Publish your module
 
@@ -56,7 +58,9 @@ When you create a Bicep module that you want to share, you author the Bicep file
 ::: zone pivot="cli"
 
 ```azurecli
-az bicep publish --file module.bicep --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+az bicep publish \
+   --file module.bicep \
+   --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
 ```
 
 ::: zone-end
@@ -64,7 +68,9 @@ az bicep publish --file module.bicep --target 'br:toycompany.azurecr.io/modulere
 ::: zone pivot="powershell"
 
 ```cmd
-bicep publish module.bicep --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+bicep publish `
+   module.bicep `
+   --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
 ```
 
 ::: zone-end

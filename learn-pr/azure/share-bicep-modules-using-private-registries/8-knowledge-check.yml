@@ -26,8 +26,21 @@ quiz:
     - content: Add a module alias.
       isCorrect: false
       explanation: Incorrect. A registry alias enables you to simplify the name of the registry in the module path, but it isn't required and won't resolve the error.
-  # TODO need another question
-  - content: In which of these situations should you publish a new version of your module to  a private registry?
+  - content: Suppose you create a registry alias named `MyToyCompany`. Which of the following module paths is a valid reference that includes the alias?
+    choices:
+    - content: >
+          `br:MyToyCompany/mymodule:v1.0`
+      isCorrect: false
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+    - content:  >
+          `br/MyToyCompany/mymodule:v1.0`
+      isCorrect: true
+      explanation: Correct. This is the correct syntax to refer to a module with a registry alias.
+    - content: >
+          `br::MyToyCompany/mymodule:v1.0`
+      isCorrect: false
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+  - content: In which of these situations should you publish a new version of your module to a private registry?
     choices:
     - content: You add some comments to your module.
       isCorrect: false

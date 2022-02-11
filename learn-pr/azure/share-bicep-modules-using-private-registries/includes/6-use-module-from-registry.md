@@ -1,8 +1,8 @@
-TODO intro para
+You've learned how to publish modules into a private registry. In this unit, you'll learn how to use modules that are already in a registry as part of a Bicep template.
 
 ## Use a Bicep module
 
-When you've found a module you want to use, you create a *module definition* in your Bicep file:
+When you've found a module you want to use, you create a *module definition* in your Bicep template:
 
 ```bicep
 module myModule 'br:myregistry.azurecr.io/modulepath/modulename:moduleversion' = {
@@ -17,16 +17,13 @@ Notice that the module definition is similar to that of a local module, but with
 
 After you've added a reference to the module, Visual Studio Code attempts to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
 
-When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically as part of the deployment process.
-
-> [!NOTE]
-> You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
-
 ## Aliases 
 
-You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias.
+You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias. Aliases help you in a few ways:
 
-<!-- TODO aliases reduce typing when you reuse modules from the same registry repeatedly. Also, if you need to use different registires for different environemnts, you can use this aproach to switch out the registry name -->
+- Aliases can keep your Bicep file tidier, and help you to avoid typing the full name of the registry repeatedly.
+- If you change to a new registry in the future, you can update the alias instead of updating every reference to it.
+- Some organizations need to use different registries for different situations, like for development and production environments. You can switch the registry that an alias refers to by modifying a configuration file, and the change then applies to all Bicep files in the folder.
 
 To define an alias, you need to create a *bicepconfig.json* file in the same folder as your Bicep file. Within the *bicepconfig.json* file, you define aliases as in this example:
 
@@ -34,15 +31,14 @@ To define an alias, you need to create a *bicepconfig.json* file in the same fol
 
 When you define a module in a Bicep file, you use a slightly different type of module path, which includes the alias:
 
-TODO diagram
-
-Here's how it looks in Bicep:
-
 ```bicep
 module myModule 'br/MyRegistry:bicep/my-module:v1' = {
   // ...
 }
 ```
+
+> [!TIP]
+> Notice that the beginning of the path is `br/` when you use an alias, and `br:` when you don't.
 
 An alias can also include the path to your modules within the registry. This is helpful if you use a common prefix for your modules:
 
@@ -58,4 +54,6 @@ module myModule 'br/MyRegistryWithPath:my-module:v1' = {
 
 ## Build your Bicep file
 
-TODO talk about transpilation
+When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically as part of the deployment process. Bicep embeds all of the modules you refer to into the transpiled ARM template JSON file.
+
+You can also separate the module download process from the build by using the `bicep restore` command, and use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this - just let Bicep download the modules automatically.
