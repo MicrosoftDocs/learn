@@ -5,8 +5,8 @@ metadata:
   title: Plan and estimate your Azure costs
   description: Learn how to plan and estimate costs for your Azure projects.
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

@@ -5,8 +5,8 @@ metadata:
   title: Decide if MEAN is right for you
   description: Decide if MEAN is right for you
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

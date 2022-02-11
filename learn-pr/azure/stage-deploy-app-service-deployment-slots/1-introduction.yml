@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn about the kind of problems that deployment slots can solve.
   ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

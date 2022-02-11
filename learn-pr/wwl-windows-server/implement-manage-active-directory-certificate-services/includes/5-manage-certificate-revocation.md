@@ -47,4 +47,4 @@ The main steps in the process are:
 1. Configure CRL publishing. Use the Certification Authority console to configure CRL publishing.
 1. Configure CDP location. Use the Certification Authority console to configure CDP location.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvK]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvK]

@@ -2,11 +2,11 @@
 uid: learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
 title: What are deployment patterns?
 metadata:
-  title:  What are deployment patterns?
+  title: What are deployment patterns?
   description: Choose an appropriate deployment pattern that helps you minimize downtime and roll out new features progressively.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

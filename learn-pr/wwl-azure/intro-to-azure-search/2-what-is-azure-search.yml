@@ -4,9 +4,9 @@ title: What is Azure Cognitive Search?
 metadata:
   title: What is Azure Cognitive Search?
   description: "Explore Azure Cognitive Search, its concepts and how to create a search index"
-  ms.date: 01/26/2022
-  author: wwlpublish
-  ms.author: robmcm
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

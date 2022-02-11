@@ -4,8 +4,8 @@ metadata:
   title: Choose a data storage approach in Azure
   description: Learn how using Azure Storage, Azure SQL Database, and Azure Cosmos DB - or a combination of them - for your business scenario is the best way to get the most performant solution.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose a data storage approach in Azure

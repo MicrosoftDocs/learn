@@ -4,11 +4,10 @@ metadata:
   title: Use an interface to create an abstraction
   description: "Learn how to use an interface to create an abstraction."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Use an interface to create an abstraction
 durationInMinutes: 3
 content: |

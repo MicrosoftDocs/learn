@@ -4,8 +4,8 @@ metadata:
   title: Build logic that responds to an event
   description: Learn how to add Event Grid logic to filter events.
   ms.date: 04/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build logic that responds to an event

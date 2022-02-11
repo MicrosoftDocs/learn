@@ -4,8 +4,8 @@ metadata:
   title: Move Azure resources to another resource group
   description: Learn how to identify Azure resources you can move, and how to move them to a new resource group.
   ms.date: 12/23/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Move Azure resources to another resource group

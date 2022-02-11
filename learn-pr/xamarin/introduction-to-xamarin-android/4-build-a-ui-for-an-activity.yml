@@ -4,11 +4,10 @@ metadata:
   title: Build a UI for an activity
   description: "Learn how to add views in your Android app."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Build a UI for an activity
 durationInMinutes: 11
 content: |

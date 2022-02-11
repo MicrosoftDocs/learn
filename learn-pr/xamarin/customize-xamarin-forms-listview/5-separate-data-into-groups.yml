@@ -4,11 +4,10 @@ metadata:
   title: Separate data into groups
   description: "Group ListView rows together based on custom criteria."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Separate data into groups
 durationInMinutes: 5
 content: |

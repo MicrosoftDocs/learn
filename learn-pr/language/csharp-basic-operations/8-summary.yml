@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: A quick summarization of major lessons learned and where to go from here.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

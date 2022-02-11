@@ -3,7 +3,7 @@ uid: learn.wwl.az-204-develop-event-based-solutions
 metadata:
   title: 'AZ-204: Develop event-based solutions'
   description: 'AZ-204: Develop event-based solutions'
-  ms.date: 11/03/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/az-204-develop-event-based-solutions.svg
 levels:
 - intermediate
 roles:
