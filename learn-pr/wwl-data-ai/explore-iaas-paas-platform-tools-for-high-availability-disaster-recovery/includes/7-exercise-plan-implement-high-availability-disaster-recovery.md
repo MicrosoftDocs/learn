@@ -32,7 +32,7 @@ As a DBA within AdventureWorks you need to know how to enable geo-replication fo
 
 1. Select **Create replica**.
 
-    :::image type="content" source="../media/geo-replication_page.png" alt-text="Screenshot showing selecting Geo-Replication page.":::
+    :::image type="content" source="../media/geo-replication-page.png" alt-text="Screenshot showing selecting Geo-Replication page.":::
 
 1. On the **Create SQL Database - Geo Replica** page and under **Server**, select **Create New**. On the new server pane, enter a unique server name, a valid admin login, and a secure password, and select the region you chose as the target region and then click **OK** to create the server.
 
@@ -40,7 +40,7 @@ As a DBA within AdventureWorks you need to know how to enable geo-replication fo
 
 1. Now that the Azure SQL Database replica is created, you will perform a failover. Select the Replica page for the secondary server and note that the primary and secondary servers are indicated. Select the **...** menu for the secondary server and click **Forced Failover**.
 
-    :::image type="content" source="../media/geo-replication_failover.png" alt-text="Screenshot showing a Failover operation.":::
+    :::image type="content" source="../media/geo-replication-failover.png" alt-text="Screenshot showing a Failover operation.":::
 
 1. When prompted, click **Yes**.
 
