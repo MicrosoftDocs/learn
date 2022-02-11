@@ -23,6 +23,6 @@ module cdn 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/cdn:v1' = {
   name: 'toy-dog-cdn'
   params: {
     httpsOnly: true
-    originHostName: app.outputs.appServiceAppHostName
+    originHostName: website.outputs.appServiceAppHostName
   }
 }

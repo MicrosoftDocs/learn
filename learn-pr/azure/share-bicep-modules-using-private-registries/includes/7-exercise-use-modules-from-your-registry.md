@@ -51,6 +51,8 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
 1. Open the *main.json* file.
 
+   Notice that in the `resources` section of the JSON ARM template, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -65,9 +67,9 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
 1. Open the *main.json* file.
 
-::: zone-end
+   Notice that in the `resources` section of the JSON ARM template, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
 
-   Notice that in the `resources` section of the JSON ARM template, there's a resource with the type `Microsoft.Resources/deployments`. This resource represents the module deployment. Within that deployment, there's a user assigned managed identity and some role assignments. These are all defined in the module you added.
+::: zone-end
 
 ## Create a registry alias
 
@@ -90,6 +92,9 @@ Here, you update your Bicep file to use the registry alias instead of referring 
 1. Find the definition of the `website` module, and change the definition to include the registry alias:
 
    ::: code language="bicep" source="code/7-main-alias.bicep" range="12-20" highlight="1" :::
+
+   > [!TIP]
+   > Ensure you change the beginning of the module path from `br:` to `br/`.
 
 1. Make a similar change to the `cdn` module:
 
@@ -131,14 +136,14 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. On the left menu, select **Deployments**.
 
-   :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." ::: <!-- TODO -->
+   :::image type="content" source="../media/7-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." :::
 
    Notice that three deployments are listed: *main*, which represents the deployment of your parent Bicep file, and *cdn* and *website*, which represent the modules that you included in your *main.bicep* file.
 
 1. Select the **main** deployment and expand **Deployment details**.
 
-   Notice that both of the modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`. <!-- TODO The modules are listed twice because their outputs are also referenced within the template. -->
+   Notice that both of the modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`. The `toy-dog-website` module is listed twice because its output are also referenced within the template.
 
-   :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." ::: <!-- TODO -->
+   :::image type="content" source="../media/7-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." :::
 
 1. Select the **toy-dog-cdn** and **toy-dog-website** deployments, and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.

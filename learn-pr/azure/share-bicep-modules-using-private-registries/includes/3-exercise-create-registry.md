@@ -53,6 +53,9 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
      --location westus
    ```
 
+> [!TIP]
+> You can also create a container registry by using Bicep! In this example, we use the Azure CLI for simplicity.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -67,6 +70,9 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
      -Sku Basic `
      -Location westus
    ```
+
+> [!TIP]
+> You can also create a container registry by using Bicep! In this example, we use the Azure PowerShell cmdlet for simplicity.
 
 ::: zone-end
 
@@ -83,11 +89,15 @@ Now that your registry has been created, you can connect to it to verify that it
      --name YOUR_CONTAINER_REGISTRY_NAME
    ```
 
-  Notice that you don't specify any credentials to connect to the container registry. The Azure CLI uses the same credentials you used to sign in to the Azure CLI. You have access to the container registry because you created it.
+   Notice that you don't specify any credentials to connect to the container registry. The Azure CLI uses the same credentials you used to sign in to the Azure CLI. You have access to the container registry because you created it.
 
-1. The Azure CLI command returns a list containing no results, because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
+1. The Azure CLI command returns a list containing no results:
 
-  <!-- TODO check the output -->
+   ```output
+   []
+   ```
+
+   You see no results because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
 
 ::: zone-end
 
@@ -100,10 +110,10 @@ Now that your registry has been created, you can connect to it to verify that it
      -RegistryName YOUR_CONTAINER_REGISTRY_NAME
    ```
 
-  Notice that you don't specify any credentials to connect to the container registry. Azure PowerShell uses the same credentials you used to sign in to the Azure PowerShell cmdlets. You have access to the container registry because you created it.
+   Notice that you don't specify any credentials to connect to the container registry. Azure PowerShell uses the same credentials you used to sign in to the Azure PowerShell cmdlets. You have access to the container registry because you created it.
 
-1. The Azure PowerShell cmdlet returns a list containing no results, because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
+1. The Azure PowerShell cmdlet shows no output.
 
-   <!-- TODO check the output -->
+   You see no results because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
 
 ::: zone-end

@@ -23,6 +23,6 @@ module cdn 'br/ToyCompanyRegistry:cdn:v1' = {
   name: 'toy-dog-cdn'
   params: {
     httpsOnly: true
-    originHostName: app.outputs.appServiceAppHostName
+    originHostName: website.outputs.appServiceAppHostName
   }
 }
