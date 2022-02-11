@@ -113,7 +113,7 @@ Many people find it useful to print the canvas and use sticky notes to capture k
 
 Now go and talk to customers or people who are representative of the customer segment you believe you should target, and find out what jobs they need your product to do, the pains they want it to relieve, and the gains they want it to create.
 
-Important notes:
-
-- This isn't an introspection exercise. You can hypothesize about jobs, pains, and gains, but the only way you'll find out what customers really want is by talking to them individually.
-- If you have multiple customer segments you should create a Value Proposition Canvas for each segment.
+> [!IMPORTANT]
+> 
+> - This isn't an introspection exercise. You can hypothesize about jobs, pains, and gains, but the only way you'll find out what customers really want is by talking to them individually.
+> - If you have multiple customer segments you should create a Value Proposition Canvas for each segment.
