@@ -4,9 +4,9 @@ Steve had been in his job at a pet food delivery company for a few weeks. He was
 
 Days later, accounting noticed that the company was delivering a lot of pet food nobody had paid for. Someone had used the connection string to access the database and create orders by updating the database directly.
 
-After realizing his mistake, Steve hurriedly changed the database password to lock out the attacker. After changing the password, the website started returning errors to users: the app server needed an updated configuration with the new password. Steve logged directly into the app server and changed the app configuration instead of redeploying, but the server was still showing failed requests.
+After Steve realized his mistake, he hurriedly changed the database password to lock out the attacker. After Steve changed the password, the website started returning errors to users: the app server needed an updated configuration with the new password. Steve logged directly into the app server and changed the app configuration instead of redeploying, but the server was still showing failed requests.
 
-Steve had forgotten that multiple instances of the app ran on different servers, and he had only changed the configuration for one. A full redeployment was needed, causing another 30 minutes of downtime.
+Steve forgot that multiple instances of the app ran on different servers, and he had only changed the configuration for one. A full redeployment was needed, causing another 30 minutes of downtime.
 
 Fortunately for Steve, the accounting department was able to correct the errors quickly, and only one day's worth of orders were affected. He might not be so lucky in the future, though, and needs to find a way to improve the security and maintainability of the app.
 
