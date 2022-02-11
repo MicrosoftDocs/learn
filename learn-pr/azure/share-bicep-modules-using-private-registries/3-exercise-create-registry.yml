@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.share-bicep-modules-using-private-registries.exercise-create-registry
-title: Exercise - Create and use a registry
+title: Exercise - Create a registry
 metadata:
   unitType: exercise
   title: Exercise - Create a registry
