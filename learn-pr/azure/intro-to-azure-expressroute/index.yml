@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-expressroute
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure ExpressRoute
+  description: This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.
+  ms.date: 02/09/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure ExpressRoute
+summary: Azure ExpressRoute allows your organization to use a high-speed private connection to connect on-premises networks to Microsoft cloud services including Microsoft Azure and Microsoft 365. This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution. 
+abstract: |
+  In this module, you will:
+  - Learn what Azure ExpressRoute is and the functionality it provides.
+  - Determine whether Azure ExpressRoute meets the needs of your organization.
+  - Understand the difference between Azure ExpressRoute and Azure VPNs. 
+prerequisites: |
+  Understanding of basic networking concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-expressroute
+units:
+  - learn.azure.intro-to-azure-expressroute.introduction
+  - learn.azure.intro-to-azure-expressroute.what-is-azure-expressroute
+  - learn.azure.intro-to-azure-expressroute.how-azure-expressroute-works
+  - learn.azure.intro-to-azure-expressroute.when-to-use-azure-expressroute
+  - learn.azure.intro-to-azure-expressroute.knowledge-check
+  - learn.azure.intro-to-azure-expressroute.summary
+badge:
+  uid: learn.azure.intro-to-azure-expressroute.badge
