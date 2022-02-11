@@ -31,25 +31,27 @@ Now that the main branch has branch protection turned on, you will first try to 
 
 1. In the Visual Studio Code terminal execute the following statements: 
 
-```bash
-git merge origin/feature1 main
-```
+    ```bash
+    git merge origin/feature1 main
+    ```
 
     This will merge the feature1 branch into the main branch.
 
-```bash
-git push
-```
+1. TODO
+
+    ```bash
+    git push
+    ```
 
     This will push your local main branch with the changes of feature1 to the remote main branch.
     You will notice that this last statement will be unsuccessful because of the branch protection you enabled: 
 
-```bash
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn
- ! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
-error: failed to push some refs to 'https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn'
-```
+    ```bash
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn
+    ! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
+    error: failed to push some refs to 'https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn'
+    ```
 
 ## Create a pull request to merge the feature branch
 

@@ -14,9 +14,9 @@ You just created a pull request. In a team-based context one of your team member
 
 1. In the terminal window check out the feature1 branch.
 
-```bash
-git checkout feature1
-```
+   ```bash
+   git checkout feature1
+   ```
 
 1. Select the *main.bicep* file in the deploy folder.
 
