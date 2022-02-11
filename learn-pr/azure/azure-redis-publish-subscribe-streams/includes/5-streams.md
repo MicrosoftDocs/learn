@@ -30,7 +30,7 @@ Clients can produce messages for a stream using a set of field-value pairs. The 
 Redis includes a ``XADD`` command used to add new entries to a stream. The stream does not need to be created before issuing the command. For example, use the ``XADD`` command to add a new entry to the **media.photos.genthumb** stream using an auto-generated key and the following field-value pair data:
 
 | **Field** | **Value** |
-| ---: | :--- |
+| --- | --- |
 | **location** | *sd7f9sd7.png* |
 | **width** | *300* |
 | **height** | *300* |
@@ -40,7 +40,7 @@ Redis includes a ``XADD`` command used to add new entries to a stream. The strea
 Alternatively, you can specify a specific key to use with the ``XADD`` command. In this example, the ``XADD`` command is used to add a new entry to the **media.photos.genthumb** stream with a key of **1596514316945-2** and the following field-value pair data:
 
 | **Field** | **Value** |
-| ---: | :--- |
+| --- | --- |
 | **location** | *xczv897.png* |
 | **filter** | *grayscale* |
 
