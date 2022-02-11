@@ -2,7 +2,7 @@ You've learned how to publish modules into a private registry. In this unit, you
 
 ## Use a Bicep module
 
-When you've found a module you want to use, you create a *module definition* in your Bicep template:
+When you've found a module you want to use, you create a *module definition* in your Bicep template, similar to the following example:
 
 ```bicep
 module myModule 'br:myregistry.azurecr.io/modulepath/modulename:moduleversion' = {

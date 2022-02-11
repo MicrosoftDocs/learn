@@ -1,5 +1,3 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
-
 In the previous exercise, you published the CDN and website modules to your toy company's registry. Now, you want to show the toy dog development team how to use the modules for their own deployment.
 
 In this exercise, you create a Bicep file that includes modules from your private registry. During the process, you'll:
