@@ -29,6 +29,11 @@ You can create a Bicep registry by using several different container registry se
 
 Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. We provide links to more information in the summary.
 
+Soon, you'll learn how to publish modules to a registry.
+
+> [!TIP]
+> In Azure Container Registry, a module is called a *repository*. Don't confuse this with a Git repository - the terms are the same but the meaning is different.
+
 ## Access control
 
 Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including by using Azure Active Directory (Azure AD) and by using keys that you issue to individual users. When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you likely don't even need to sign in again. You'll see how this works in the next exercise.

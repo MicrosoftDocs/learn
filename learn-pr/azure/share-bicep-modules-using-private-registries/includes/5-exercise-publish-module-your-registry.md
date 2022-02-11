@@ -1,35 +1,38 @@
-TODO The R&D team working on the toy car have started their trial. Now, as you expected, the R&D team developing the toy dog has come to you to ask for the same set of Azure resources, as well as another storage account for them to use to store photos of traffic lights. You decide to take the components that are common to both teams and create your own Bicep module from them, then publish it to a private registry so that anyone in your toy company can use the modules.
-
-In this exercise, you create two Bicep modules and publish them to your private registry.
+You've created a private registry for your toy company to use. In this exercise, you publish two modules to your private registry.
 
 > [!div class="checklist"]
-> * Update your Bicep file to include two new modules.
+> * Create a module for the website resources.
+> * Create another module for the CDN resources.
 > * Publish the modules to your registry.
-> * Create a new Bicep file that uses the modules together.
+> * List the modules in the registry.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
-## Create a module for your storage account
+## Create a module for a website
 
-TODO instead of defining your storage account in your main file you'll define in a module. You make it more extensible in the process, and enforce some rules (no keys, no HTTPS)
+You previously created a module that deploys a website. Here, you save the module file so you can publish it.
 
-1. In Visual Studio Code, create a new file named *storage.bicep*.
+1. Open Visual Studio Code.
 
-1. Paste the following code into the *storage.bicep* file:
+1. Create a new file named *website.bicep*.
 
-   ::: code language="bicep" source="code/5-storage.bicep" :::
+1. Paste the following code into the *website.bicep* file:
+
+   ::: code language="bicep" source="code/5-website.bicep" :::
 
 1. Save the file.
 
-## Create a module for an App Service application
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
 
-TODO explain
+## Create a module for a CDN
 
-1. Create a new file named *app.bicep*.
+Similarly to the previous steps, you save a precreated module file so that you can publish it soon.
 
-1. Paste the following code into the *app.bicep* file:
+1. Create a new file named *cdn.bicep*.
 
-   ::: code language="bicep" source="code/5-app.bicep" :::
+1. Paste the following code into the *cdn.bicep* file:
+
+   ::: code language="bicep" source="code/5-cdn.bicep" :::
 
 1. Save the file.
 
@@ -41,12 +44,12 @@ TODO explain
 
    ```azurecli
    az bicep publish \
-     --file storage.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/storage:v1'
+     --file website.bicep \
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/website:v1'
 
    az bicep publish \
-     --file app.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/app:v1'
+     --file cdn.bicep \
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/cdn:v1'
    ```
 
    Notice that you didn't need to sign in. Bicep uses the sign-in information from the Azure CLI to authenticate you to the registry.
@@ -62,8 +65,8 @@ TODO explain
 
    ```output
    [
-     "app",
-     "storage"
+     "cdn",
+     "website"
    ]
    ```
 
@@ -74,11 +77,11 @@ TODO explain
 1. In the Visual Studio Code **Terminal**, run the following commands. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bash
-   bicep publish storage.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/storage:v1'
+   bicep publish website.bicep \
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/website:v1'
 
-   bicep publish app.bicep \
-     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/app:v1'
+   bicep publish cdn.bicep \
+     --target 'br:YOUR_CONTAINER_REGISTRY_NAME.azurecr.io/cdn:v1'
    ```
 
    Notice that you didn't need to sign in. Bicep uses the sign-in information from Azure PowerShell to authenticate you to the registry.
@@ -92,75 +95,10 @@ TODO explain
    The output shows the names of your modules:
 
    ```output
-   app
-   storage
+   cdn
+   website
    ```
 
 ::: zone-end
 
    You can also use the Azure portal to list the modules in your registry.
-
-## Create a bicepconfig.json file
-
-1. In Visual Studio Code, create a new file named *bicepconfig.json*. Ensure you create it in the same folder as the *main.bicep* file.
-
-1. Paste the following into the *bicepconfig.json* file. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
-
-   ::: code language="json" source="code/5-bicepconfig.json" :::
-
-1. Save the file.
-
-## Update your Bicep file to use the new module
-
-1. In Visual Studio Code, open the *main.bicep* file.
-
-1. Delete all of the file's contents.
-
-1. At the top of the file, add the following parameters and variables:
-
-   ::: code language="bicep" source="code/5-main.bicep" range="1-17" :::
-
-1. Below the variable declarations, define the storage account's module:
-
-   ::: code language="bicep" source="code/5-main.bicep" range="19-29" :::
-
-   Notice that you use the `ToyCompanyRegistry` alias that you defined in the *bicepconfig.json* file.
-
-1. Below the `storageAccount` module definition, define the managed identity module:
-
-   ::: code language="bicep" source="code/5-main.bicep" range="31-39" :::
-
-1. Below the `managedIdentity` module definition, define the app module:
-
-   ::: code language="bicep" source="code/5-main.bicep" range="41-64" :::
-
-1. Save the file.
-
-## Deploy to Azure
-
-In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
-
-::: zone pivot="cli"
-
-```azurecli
-az deployment group create \
-   --template-file main.bicep
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
-```
-
-::: zone-end
-
-### Verify the deployment
-
-1. In the Azure portal, navigate to the **<rgn>[sandbox resource group name]</rgn>** resource group.
-
-1. TODO navigate to deployments
-
-1. Notice that four deployments are listed: *main*, which represents the deployment of your parent Bicep file, and *managedIdentity*, *storageAccount*, and *app*, which represent the modules that you included in your *main.bicep* file.

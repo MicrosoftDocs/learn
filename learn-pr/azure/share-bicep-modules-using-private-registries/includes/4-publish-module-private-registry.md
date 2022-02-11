@@ -15,9 +15,6 @@ The path contains four segments:
 
 When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use a *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
 
-> [!TIP]
-> In Azure Container Registry, the module identifier is called a *repository*. Don't confuse this with a Git repository - the terms are the same but the meaning is different.
-
 ## Tags and versions
 
 A tag represents the version of a module. A single module in a registry can have multiple versions. All of the versions share a module identifier, but they have different tags. When you use a module, you need to use a tag to specify the version that you want to use, so that Bicep knows which module file to retrieve. 

@@ -1,14 +1,12 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-TODO
+Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. You'll publish the shared modules to the registry, and other teams can create deployments that include the shared modules. 
 
 In this exercise, you create a private module registry for your toy company to use. During the process, you'll:
 
 > [!div class="checklist"]
 > * Deploy a new private registry.
-> * Connect to your registry.
-
-<!-- TODO bootstrapping info talks about deploying template -->
+> * Connect to your registry to verify it was created successfully.
 
 ::: zone pivot="cli"
 
@@ -68,8 +66,40 @@ Here, you create a new registry to store and share your Bicep modules. You'll us
 
 ::: zone-end
 
-## Access the registry
+## List the modules in your registry
 
-TODO list modules, notice there are none
+Now that your registry has been created, you can connect to it to verify that it's working.
 
-TODO talk about how it's using your CLI/PowerShell session identity
+::: zone pivot="cli"
+
+1. List the modules in the registry by running this command. Make sure to replace the name placeholder with the name you selected earlier.
+
+  ```azurecli
+  az acr repository list \
+    --name YOUR_CONTAINER_REGISTRY_NAME
+  ```
+
+  Notice that you don't specify any credentials to connect to the container registry. The Azure CLI uses the same credentials you used to sign in to the Azure CLI. You have access to the container registry because you created it.
+
+1. The Azure CLI command returns a list containing no results, because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
+
+  <!-- TODO check the output -->
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. List the modules in the registry by running this command. Make sure to replace the name placeholder with the name you selected earlier.
+
+   ```azurepowershell
+   Get-AzContainerRegistryRepository `
+     -RegistryName YOUR_CONTAINER_REGISTRY_NAME
+   ```
+
+  Notice that you don't specify any credentials to connect to the container registry. Azure PowerShell uses the same credentials you used to sign in to the Azure PowerShell cmdlets. You have access to the container registry because you created it.
+
+1. The Azure PowerShell cmdlet returns a list containing no results, because you haven't published any modules yet. You'll learn more about publishing modules in the next unit.
+
+   <!-- TODO check the output -->
+
+::: zone-end

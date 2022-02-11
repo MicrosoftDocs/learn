@@ -1,43 +1,41 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-TODO
+In the previous exercise, you published the CDN and website modules to your toy company's registry. Now, you want to show the toy dog development team how to use the modules for their own deployment.
 
-In this exercise, you create a Bicep file that includes a module from the public registry. During the process, you'll:
+In this exercise, you create a Bicep file that includes modules from your private registry. During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep file that refers to the module from the registry.
+> * Create a Bicep file.
+> * Add references to the modules in the registry.
 > * Build and inspect the Bicep file to understand how the module restore process works.
-> * Deploy your file to Azure.
+> * Switch to using a registry alias.
+> * Deploy your Bicep file to Azure.
 
 ## Create a Bicep file
 
-1. Open Visual Studio Code.
+1. In Visual Studio Code, create a new file named *main.bicep*.
 
-1. Create a new file called *main.bicep*.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
 
-1. Copy the following Bicep code into the file:
+## Add the modules to the Bicep file
 
-   ::: code language="bicep" source="code/3-main.bicep" range="1-9, 11-31" :::
+1. In the *main.bicep* file, add the following parameters and variables:
 
-   This creates a storage account and blob container.
+   ::: code language="bicep" source="code/7-main-no-alias.bicep" range="1-10" :::
 
-## Add a module
+1. Below the parameters and variables, add the website module from your registry. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
-1. Below the `storageAccountContainerName` variable definition, add a variable to define the name of a user-assigned managed identity:
+   ::: code language="bicep" source="code/7-main-no-alias.bicep" range="12-20" :::
 
-   ::: code language="bicep" source="code/3-main.bicep" range="10" :::
+   Notice that Bicep shows some red squiggly lines underneath the module identifier when you start typing, but then the squiggly lines go away. This behavior happens because the Bicep extension for Visual Studio Code reads the module from the registry and saves it to your local file system.
 
-1. Below the storage account definition, add the following module definition:
+1. Below the module you just created, add the CDN module from your registry. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
-   ::: code language="bicep" source="code/3-main.bicep" range="33-41" :::
+   ::: code language="bicep" source="code/7-main-no-alias.bicep" range="22-28" :::
 
-   Notice that this imports a module from the public Bicep module registry.
-
-1. Save the changes to the file.
+1. Save the file.
 
 ## Build and inspect your Bicep file
 
@@ -71,21 +69,48 @@ In this exercise, you create a Bicep file that includes a module from the public
 
    Notice that in the `resources` section of the JSON ARM template, there's a resource with the type `Microsoft.Resources/deployments`. This resource represents the module deployment. Within that deployment, there's a user assigned managed identity and some role assignments. These are all defined in the module you added.
 
-## Deploy the Bicep template to Azure
+## Create a registry alias
+
+You decide to create a registry alias instead of embedding the registry URL in your Bicep file. This approach makes the Bicep file easier to read.
+
+1. In Visual Studio Code, create a new file named *bicepconfig.json*. Ensure you create it in the same folder as the *main.bicep* file.
+
+1. Paste the following into the *bicepconfig.json* file. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
+
+   ::: code language="json" source="code/5-bicepconfig.json" :::
+
+1. Save the file.
+
+## Use the registry alias
+
+Here, you update your Bicep file to use the registry alias instead of referring directly to the registry.
+
+1. Open the *main.bicep* file.
+
+1. Find the definition of the `website` module, and change the definition to include the registry alias:
+
+   ::: code language="bicep" source="code/7-main-alias.bicep" range="12-20" highlight="1" :::
+
+1. Perform similar steps for the `cdn` module:
+
+   ::: code language="bicep" source="code/7-main-alias.bicep" range="22-28" highlight="1" :::
+
+1. Save the file.
+
+## Deploy to Azure
+
+In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 
 ::: zone pivot="cli"
 
-In the Visual Studio Code **Terminal**, deploy the Bicep template to Azure by running the following code.
-
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create \
+   --template-file main.bicep
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
-
-In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -93,47 +118,27 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ::: zone-end
 
-You'll see `Running...` in the terminal.
+### Verify the deployment
 
-Wait for deployment to finish.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-## Verify the deployment
+   1. Select your avatar in the upper-right corner of the page. 
+   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
-Use the Azure portal to inspect the resources that you deploy and to inspect the results of each deployment.
-
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and make sure you're in the sandbox subscription by doing the following:
-
-   a. Select your avatar at the upper right.  
-   b. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
-
-1. On the left pane, select **Resource groups**.
+1. On the left-side panel, select **Resource groups**.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In the **Overview** section, you can see that two deployments have succeeded.
+1. On the left menu, select **Deployments**.
 
-   Notice that the name of one of the deployments is *main*. This represents the deployment you initiated for your template. The other deployment is named *managed-identity*, and it represents the deployment of the resources defined in the module you included in the template.
+   :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." :::
 
-## Clean up the resources
+   Notice that three deployments are listed: *main*, which represents the deployment of your parent Bicep file, and *cdn* and *website*, which represent the modules that you included in your *main.bicep* file.
 
-Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+1. Select the **main** deployment and expand **Deployment details**.
 
-In the Visual Studio Code terminal, run the following commands:
+   Notice that both of the modules are listed, and that their types are displayed as `Microsoft.Resources/deployments`. <!-- TODO The modules are listed twice because their outputs are also referenced within the template. -->
 
-::: zone pivot="cli"
+   :::image type="content" source="../media/4-deployment-modules.png" alt-text="Screenshot of the Azure portal that shows the deployment details for the main deployment." :::
 
-```azurecli
-az group delete --resource-group ToyModules --yes --no-wait
-```
-
-The resource group is deleted in the background.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-```azurepowershell
-Remove-AzResourceGroup -Name ToyModules -Force
-```
-
-::: zone-end
+1. Select the **toy-dog-cdn** and **toy-dog-website** deployments, and review the resources deployed in each. Notice that they correspond to the resources defined in the respective module.
