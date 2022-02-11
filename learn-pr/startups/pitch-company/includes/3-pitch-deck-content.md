@@ -5,10 +5,10 @@ The following outline lists the key topics that most investors want to see cover
 > [!TIP]
 > Work that you've completed earlier feeds directly into what investors are looking for:
 > 
-> - The attributes of successful companies checklist
-> - The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true)
-> - The experiments you've run to test core assumptions
-> - The revenue model you created
+> - The [attributes of successful companies checklist](../fundamentals/3-success.yml?azure-portal=true#worksheet)
+> - The [Value Proposition Canvas](../validate-idea/2-articulate-idea.yml?azure-portal=true#task-complete-your-own-value-proposition-canvas)
+> - The [experiments you've run to test core assumptions](../validate-idea/5-experiment-power.yml?azure-portal=true)
+> - The [revenue model you created](../revenue/2-revenue-models.yml?azure-portal=true#task-evaluate-a-revenue-model)
 
 ## Investor pitch deck outline
 
