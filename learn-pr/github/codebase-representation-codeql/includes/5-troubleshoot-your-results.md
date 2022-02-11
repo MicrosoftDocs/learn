@@ -13,8 +13,8 @@ There are several reasons why your CodeQL analysis may be taking too long to com
 
 If the CodeQL analysis workflow still fails on a commit made on the default branch, check the following items:
 
-- whether Dependabot authored the commit
-- whether the pull request that includes the commit has been merged using `@dependabot squash and merge`
+- Whether Dependabot authored the commit
+- Whether the pull request that includes the commit has been merged using `@dependabot squash and merge`
 
 This type of merge commit is authored by Dependabot. Therefore, any workflows running on the commit will have read-only permissions. Avoid using the Dependabot `@dependabot squash and merge` command if you enabled code scanning and Dependabot security updates or version updates on your repository.
 
