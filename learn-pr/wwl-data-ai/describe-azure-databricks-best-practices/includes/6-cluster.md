@@ -30,7 +30,8 @@ When it comes to taxonomy, ADB clusters are divided along the notions of "type",
 
 |Compute Optimized|Memory Optimized|Storage Optimized|General Purpose|
 |---|---|---|---|
-| **FS**</br></br>**H** | **DSv2**</br></br>**ESv3** | **L** | **DSv2**</br></br>**DSv3** |
+| **FS** | **DSv2** | **L** | **DSv2**|
+| **H** | **ESv3** |  | **DSv3**  |
 
 ### Azure VM instance type information
 
