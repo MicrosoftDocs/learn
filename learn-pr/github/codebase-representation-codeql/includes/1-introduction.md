@@ -2,7 +2,7 @@ Imagine that you're a developer with administrator permissions for a GitHub repo
 
 CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities. It is available for public repositories and private repositories owned by your organization. CodeQL supports many languages for analysis including: C/C++, Java, Python, among others.
 
-##  Learning Objectives
+##  Learning objectives
 
 By the end of this module, you'll be able to:
 

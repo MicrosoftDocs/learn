@@ -17,7 +17,7 @@ For interpreted languages, the extractor runs directly on the source code. This 
 
 Source file extraction from the codebase works by monitoring the normal build process for compiled languages. A copy of the source file is made each time a compiler is invoked to process a source file. All relevant information is collected about the source code with each source file.
 
-## CLI Setup
+## CLI setup
 
 Use the following steps to set up the CodeQL CLI.
 

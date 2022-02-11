@@ -99,9 +99,6 @@ Here is an example of the import path:
 
 You can optionally define a `nodes` query predicate, which specifies the nodes of the path graph for all languages. When you define `nodes`, only edges with endpoints are defined by the nodes selected. When you do not define `nodes`, you need to select all possible endpoints of `edges`.
 
-### Filter queries
-
-Use filter queries to define additional constraints to limit the results that are returned by other queries. A filter query must have the same `@kind` property as the query results that it is filtering. No other metadata properties are required. 
 
 ## Analyze your database
 
