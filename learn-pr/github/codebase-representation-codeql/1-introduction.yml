@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.codebase-representation-codeql.1-introduction
+title: Introduction
+metadata:
+  unitType: Introduction 
+  title: Introduction
+  description: Introduction to the CodeQL module 
+  ms.date: 02/10/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
