@@ -4,13 +4,14 @@ title: 'Exercise: Deploy an automation runbook to automatically rebuild a databa
 metadata:
   title: 'Exercise: Deploy an automation runbook to automatically rebuild a databases indexes'
   description: "Exercise: Deploy an automation runbook to automatically rebuild a databases indexes"
-  ms.date: 12/14/2020
+  ms.date: 02/10/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labId: 85888
+labModal: true
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]
