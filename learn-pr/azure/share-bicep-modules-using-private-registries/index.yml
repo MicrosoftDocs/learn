@@ -44,7 +44,7 @@ units:
 - learn.azure.share-bicep-modules-using-private-registries.publish-module-private-registry
 - learn.azure.share-bicep-modules-using-private-registries.exercise-publish-module-your-registry
 - learn.azure.share-bicep-modules-using-private-registries.use-module-from-registry
-- learn.azure.share-bicep-modules-using-private-registries.exercise-use-module-from-your-registry
+- learn.azure.share-bicep-modules-using-private-registries.exercise-use-modules-from-your-registry
 - learn.azure.share-bicep-modules-using-private-registries.knowledge-check
 - learn.azure.share-bicep-modules-using-private-registries.summary
 badge:
