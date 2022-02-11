@@ -18,7 +18,7 @@ Use the Azure portal to create a new Azure Cache for Redis instance.
 1. Within the **Basics** tab of the **New Redis Cache** pane, enter the following values for each setting:
 
     | **Setting** | **Value** |
-    | --: | :-- |
+    | -- | -- |
     | **Subscription** | *Concierge Subscription* |
     | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
     | **DNS name** | *Enter any globally unique name. The portal will check the name in real time.* |
@@ -30,7 +30,7 @@ Use the Azure portal to create a new Azure Cache for Redis instance.
 1. Within the **Advanced** tab of the **New Redis Cache** pane, enter the following values for each setting:
 
     | **Setting** | **Value** |
-    | --: | :-- |
+    | -- | -- |
     | **Redis version** | *6* |
 
 1. Select **Review + Create** to navigate to the **Review + Create** tab, and then select **Create**.
