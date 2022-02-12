@@ -4,6 +4,6 @@ The information provided in this module is meant to guide you as you start creat
 
 - [Commercial marketplace documentation](/azure/marketplace/)
 - [Marketplace Rewards](/azure/marketplace/gtm-your-marketplace-benefits#marketplace-rewards)
-- [Co-sell partner engagement](/azure/marketplace/marketplace-co-sell)
+- [Co-sell partner engagement](/partner-center/co-sell-overview)
 - [Cloud Solution Provider program](/azure/marketplace/cloud-solution-providers)
 - [Customer leads from your commercial marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
