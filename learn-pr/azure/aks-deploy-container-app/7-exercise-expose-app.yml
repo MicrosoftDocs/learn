@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Enable network access to an application
   description: In this exercise, you create and deploy a service to expose your application on the Azure Kubernetes Service cluster. You then create and deploy an ingress to allow clients to reach the application from the internet.
   ms.date: 07/31/2020
-  author: DCtheGeek
-  ms.author: dacoulte
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Enable network access to an application
