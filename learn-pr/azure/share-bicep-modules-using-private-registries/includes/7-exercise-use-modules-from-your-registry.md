@@ -37,6 +37,8 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
 ## Build and inspect your Bicep file
 
+Here, you build the Bicep file to a JSON ARM template. You don't normally need to do this, but it's helpful when you're learning how modules work.
+
 ::: zone pivot="cli"
 
 1. In the Visual Studio Code **Terminal**, run the following command to build the Bicep file to a JSON file.
@@ -49,7 +51,7 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
 1. Open the *main.json* file.
 
-   Notice that in the `resources` section of the JSON ARM template, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
+   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
 
 ::: zone-end
 
@@ -65,7 +67,7 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
 1. Open the *main.json* file.
 
-   Notice that in the `resources` section of the JSON ARM template, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
+   Notice that in the `resources` section of the JSON ARM template, starting at around line 134, there are some resources with the type `Microsoft.Resources/deployments`. These resources represent the module deployments. Within each deployment, you'll see the resources that were defined in the module you added from the registry.
 
 ::: zone-end
 
@@ -92,7 +94,7 @@ Here, you update your Bicep file to use the registry alias instead of referring 
    ::: code language="bicep" source="code/7-main-alias.bicep" range="12-20" highlight="1" :::
 
    > [!TIP]
-   > Ensure you change the beginning of the module path from `br:` to `br/`.
+   > Ensure you change the beginning of the module path from `br:` to `br/`. Also, after `ToyCompanyRegistry`, change the slash (`/`) character to a colon (`:`).
 
 1. Make a similar change to the `cdn` module:
 

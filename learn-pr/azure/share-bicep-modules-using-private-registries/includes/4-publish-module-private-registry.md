@@ -60,7 +60,7 @@ When you create a Bicep module that you want to share, you author the Bicep file
 ```azurecli
 az bicep publish \
    --file module.bicep \
-   --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+   --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
 ```
 
 ::: zone-end
@@ -70,7 +70,7 @@ az bicep publish \
 ```cmd
 bicep publish `
    module.bicep `
-   --target 'br:toycompany.azurecr.io/modulerepo/modulename:moduleversion'
+   --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
 ```
 
 ::: zone-end
