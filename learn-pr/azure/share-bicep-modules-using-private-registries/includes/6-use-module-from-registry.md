@@ -27,7 +27,7 @@ You can use a *registry alias* to simplify your module definitions. Instead of s
 
 To define an alias, you need to create a *bicepconfig.json* file in the same folder as your Bicep file. Within the *bicepconfig.json* file, you define aliases as in this example:
 
-::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-5, 10-13" :::
+::: code language="json" source="code/6-bicepconfig-aliases.json" range="1-5, 10-13" :::
 
 When you define a module in a Bicep file, you use a slightly different type of module path, which includes the alias:
 
@@ -42,7 +42,7 @@ module myModule 'br/MyRegistry:bicep/my-module:v1' = {
 
 An alias can also include the path to your modules within the registry. This is helpful if you use a common prefix for your modules:
 
-::: code language="json" source="code/4-bicepconfig-aliases.json" range="1-3, 7-13" :::
+::: code language="json" source="code/6-bicepconfig-aliases.json" range="1-3, 7-13" :::
 
 Then, you can omit the path when you define the module in your Bicep file:
 
