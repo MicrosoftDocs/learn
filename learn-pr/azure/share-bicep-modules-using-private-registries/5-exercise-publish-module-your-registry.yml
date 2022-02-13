@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.share-bicep-modules-using-private-registries.exercise-publish-module-your-registry
 title: Exercise - Publish a module to your registry
+sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Publish a module to your registry

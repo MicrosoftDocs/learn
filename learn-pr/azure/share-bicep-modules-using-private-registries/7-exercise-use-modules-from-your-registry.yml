@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.share-bicep-modules-using-private-registries.exercise-use-modules-from-your-registry
 title: Exercise - Use modules from your registry
+sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Use modules from your registry
