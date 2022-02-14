@@ -85,54 +85,18 @@ Once you've signed a term sheet, an investor will generally commence due diligen
 
 There's no single due diligence checklist that all investors use. However, there are some common themes that most investors are interested in. The following sections list due diligence review topics that most early-stage investors will want to review.
 
-### Corporate
-
-- Confirm company structure, incorporation documents, list of shareholders, and class of shares.
-- Copy of shareholders agreement.
-
-### Intellectual property (IP)
-
-- Confirm ownership by the company of all relevant IP assets.
-- Confirm deed of assignment conferring ownership of the IP created by employees and contractors.
-- Confirm non-reliance on IP assets that aren't owned by the company.
-
-### Financial
-
-- Identify any outstanding debts or other financing arrangements.
-- Historical financial reports verified by company accountant.
-- Details of any financial breaches or disputes.
-
-### Contracts
-
-- Details of all material contracts, including with employees, contractors, suppliers, customers
-- Copies of all material contracts
-- Details of any contractual breaches or disputes
-
-### Investment
-
-Details of any prior investments, including identity of investor, investment terms
-
-### Assets
-
-Register of all material assets or real property owned by the company
-
-### Employees
-
-- List of all current and past employees including roles, responsibilities, remuneration, and stock options
-- Details of any disputes or claims
-- Copies of all employment agreements
-
-### Insurance
-
-Details of any current insurance policies including claims made and any disputes
-
-### Litigation
-
-Details of any existing or threatened proceedings by third parties
-
-### Regulatory
-
-Details of any government approvals, licenses, or permits obtained or required
+||Topics|
+|---|---|
+|**Corporate**|Confirm company structure, incorporation documents, list of shareholders, and class of shares.<br><br>Copy of shareholders agreement.|
+|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets.<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors.<br><br>Confirm non-reliance on IP assets that aren't owned by the company.|
+|**Financial**|Identify any outstanding debts or other financing arrangements.<br><br>Historical financial reports verified by company accountant.<br><br>Details of any financial breaches or disputes.|
+|**Contracts**|Details of all material contracts, including with employees, contractors, suppliers, customers.<br><br>Copies of all material contracts.<br><br>Details of any contractual breaches or disputes.|
+|**Investment**|Details of any prior investments, including identity of investor, investment terms.|
+|**Assets**|Register of all material assets or real property owned by the company.|
+|**Employees**|List of all current and past employees including roles, responsibilities, remuneration, and stock options.<br><br>Details of any disputes or claims.<br><br>Copies of all employment agreements.|
+|**Insurance**|Details of any current insurance policies including claims made and any disputes.|
+|**Litigation**|Details of any existing or threatened proceedings by third parties.|
+|**Regulatory**|Details of any government approvals, licenses, or permits obtained or required.|
 
 As a founder, you'll want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process greatly by creating a secure online repository of all relevant documents (sometimes referred to as a *data room*) and sharing a link with the investor.
 
