@@ -55,9 +55,9 @@ However, attempting to scale a company based on a relatively weak signal from a 
 
 A helpful way to think about the early days of your startup is to adopt Steve Blank's definition:
 
-["A startup is a temporary organization that's designed to search for a repeatable and scalable business model."](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything?azure-portal=true)
+> ["A startup is a temporary organization that's designed to search for a repeatable and scalable business model."](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything?azure-portal=true)
 
-A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners and costs. For a great primer on business models, see [The Business Model Canvas](https://www.businessmodelsinc.com/about-bmi/tools/business-model-canvas/?azure-portal=true) by Business Models Inc.
+> A business model is a high-level plan for how the company will create, deliver, and capture value. It includes consideration of the customer, the value proposition, product or service, revenue streams, channels, activities, resources, partners and costs. For a great primer on business models, see [The Business Model Canvas](https://www.businessmodelsinc.com/about-bmi/tools/business-model-canvas/?azure-portal=true) by Business Models Inc.
 
 Although it seems counter-intuitive, startup founders should set out to not build a business initially and should resist the temptation to acquire users and make revenues. Instead, they should set out on a mission to search for a really good problem to solve, that's experienced by a large number of people, for which they could build a compelling solution, and around which they can build a scalable business model.
 
@@ -125,18 +125,12 @@ In this unit we've discussed seven factors that can be early indicators of event
 
 Complete the checklist below to score your startup against these six indicators. The ideal outcome is to get as low a score as possible. If you get zero that's fantastic, but don't be concerned if you answer "yes" to some. By completing the remaining modules in the Founders Hub you'll have an opportunity to explore ways to "un-fail" your startup by addressing any issues that you've identified.
 
-&#9744; I may be building a product that nobody wants.
-
-&#9744; My idea seems like a derivative idea.
-
-&#9744; I‘m going to be competing with free.
-
-&#9744; I've been attempting to scale before achieving problem-solution fit.
-
-&#9744; I'm too concerned about secrecy.
-
-&#9744; I haven't been seeking out the right advice.
-
+&#9744; I may be building a product that nobody wants.\
+&#9744; My idea seems like a derivative idea.\
+&#9744; I‘m going to be competing with free.\
+&#9744; I've been attempting to scale before achieving problem-solution fit.\
+&#9744; I'm too concerned about secrecy.\
+&#9744; I haven't been seeking out the right advice.\
 &#9744; My cofounder(s) and I haven't addressed how to manage disagreements.
 
 Score: __ / 7
