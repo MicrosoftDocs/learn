@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.identify-abnormal-data-patterns-in-real-time-using-anomaly-detector.exercise-setup-azure-resources
+title: Setup Azure resources
+sandbox: true
+interactive: bash
+metadata:
+  unitType: exercise
+  title: Setup Azure resources
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 11/17/2021
+  author: ruyakubu
+  ms.author: ruyakubu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-setup-azure-resources.md)]
+
