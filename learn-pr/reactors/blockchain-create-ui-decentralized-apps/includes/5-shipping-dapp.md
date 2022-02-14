@@ -8,7 +8,7 @@ The following code is the shipping contract that we'll use in this example. Copy
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.21 <0.7.0;
+pragma solidity >=0.4.21;
 
 contract Shipping
 {

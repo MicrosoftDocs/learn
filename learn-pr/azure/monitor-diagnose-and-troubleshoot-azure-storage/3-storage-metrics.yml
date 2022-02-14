@@ -4,8 +4,8 @@ metadata:
   title: Troubleshoot with storage metrics
   description: In this unit, we'll discuss how you can troubleshoot the performance of a storage account with storage metrics.
   ms.date: 11/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot with storage metrics

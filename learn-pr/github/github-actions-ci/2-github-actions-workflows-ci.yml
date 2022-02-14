@@ -5,8 +5,8 @@ metadata:
   title: How do I use GitHub Actions to create workflows for CI?
   description: Learn how to use GitHub Actions and workflows to implement continuous integration.
   ms.date: 04/13/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 9

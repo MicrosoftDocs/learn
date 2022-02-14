@@ -121,7 +121,7 @@ With this strategy, you follow a step-by-step process for migration. You move pa
 
 The marketplace includes virtual machines preconfigured for MySQL, MariaDB, and PostgreSQL servers. These images save time because you don't need to install the database server software yourself. When you're setting up database virtual machines, check if there's an image in the Marketplace with the right version of the database software, and consider using it.
 
-You could also upload a custom virtual machine image to Azure and use it to create virtual machines. This image could include the database software of your choice and even the database itself. For more information, see [Tutorial: Create a custom image of an Azure VM with Azure PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-custom-images).
+You could also upload a custom virtual machine image to Azure and use it to create virtual machines. This image could include the database software of your choice and even the database itself. For more information, see [Tutorial: Create a custom image of an Azure VM with Azure PowerShell](/azure/virtual-machines/windows/tutorial-custom-images).
 
 ### Use MySQL, MariaDB, or PostgreSQL containers
 

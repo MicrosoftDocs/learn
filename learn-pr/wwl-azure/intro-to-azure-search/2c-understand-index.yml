@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.understand-index
-title: Understand index
+title: Understand indexes
 metadata:
-  title: Understand index
-  description: "Understand index"
-  ms.date: 01/26/2022
-  author: wwlpublish
-  ms.author: robmcm
+  title: Understand indexes
+  description: "Understand indexes"
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

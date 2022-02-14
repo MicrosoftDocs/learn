@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Kubernetes Service
   description: Get acquainted with the Azure Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   ms.date: 6/25/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Kubernetes Service

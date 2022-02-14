@@ -4,8 +4,8 @@ metadata:
   title: "Consume REST web services in Xamarin apps"
   description: Learn to use Xamarin.Forms to detect internet connection for top performance when using HttpClient to consume a REST web service and perform CRUD operations.
   ms.date: 4/15/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Consume REST web services in Xamarin apps"

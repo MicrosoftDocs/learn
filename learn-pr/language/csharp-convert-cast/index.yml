@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-convert-cast
 metadata:
-  title: Convert data types using casting and conversion techniques in C#
+  title: 'Convert data types using casting and conversion techniques in C#'
   description: Take control of the data in your applications, knowing when to apply the correct technique to change data types as needed.
   ms.date: 10/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Convert data types using casting and conversion techniques in C#

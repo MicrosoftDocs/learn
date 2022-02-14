@@ -5,8 +5,8 @@ metadata:
   title: What is Azure DevTest Labs?
   description: In this unit, you'll learn what Azure DevTest Labs is and how it compares to similar products, such as Azure Lab Services.
   ms.date: 04/09/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: j-martens
+  ms.author: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure DevTest Labs?

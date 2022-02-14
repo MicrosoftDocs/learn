@@ -5,8 +5,8 @@ metadata:
   title: Knowledge Check - Identify suitable scenarios for autoscaling
   description: Knowledge Check - Identify suitable scenarios for autoscaling
   ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

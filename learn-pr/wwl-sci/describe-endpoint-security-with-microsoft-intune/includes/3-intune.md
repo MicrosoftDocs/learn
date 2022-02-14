@@ -63,4 +63,4 @@ To learn more, go to: [Role-based access control (RBAC) with Microsoft Intune](/
 
 In this eight-minute video, you’ll explore Endpoint Manager, and some of its capabilities.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LTIu]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LTIu]

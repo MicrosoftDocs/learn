@@ -4,8 +4,8 @@ metadata:
   title: Automate Python deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Python.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Python deployments with Azure Pipelines

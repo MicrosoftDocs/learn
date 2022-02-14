@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Access your Batch account using the .NET client library
   description: In this hands-on exercise, you'll add code to access your Batch account using the .NET client library.
   ms.date: 06/01/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

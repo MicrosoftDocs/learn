@@ -3,12 +3,12 @@ uid: learn.protect-virtual-desktop-deployment-azure-firewall.allow-outbound-netw
 title: Allow outbound network access for Azure Virtual Desktop
 metadata:
   unitType: learning-content
-  title: Allow outbound network access 
-  description: Allow outbound network access 
+  title: Allow outbound network access
+  description: Allow outbound network access
   ms.date: 07/05/2021
-  author: cwatson-cat 
-  ms.author: cwatson 
-  ms.topic: interactive-tutorial 
+  author: vhorne
+  ms.author: victorh
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

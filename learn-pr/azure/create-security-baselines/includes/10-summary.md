@@ -1,6 +1,11 @@
-We've covered a lot of ground in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through.
+We've covered many things in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through.
 
-1. **Turn on Microsoft Defender for Cloud - it's free** - Upgrade your Azure subscription to Microsoft Defender for Cloud Standard. Defender for Cloud's Standard tier helps you find and fix security vulnerabilities, apply access and application controls to block malicious activity, detect threats using analytics and intelligence, and respond quickly when under attack.
+1. **Turn on Microsoft Defender for Cloud - it's free** - Upgrade your Azure subscription for Microsoft Defender for Cloud. Defender for Cloud's enhanced security features help you:
+
+    - Find and fix security vulnerabilities.
+    - Apply access and application controls to block malicious activity.
+    - Detect threats using analytics and intelligence.
+    - Respond quickly when under attack.
 
 1. **Adopt Center for Internet Security (CIS) Benchmarks** - Apply them to existing tenants.
 
@@ -10,11 +15,11 @@ We've covered a lot of ground in this module to create a baseline security check
 
 1. **Install a web application firewall** - Web application firewall (WAF) is a feature of Application Gateway that provides centralized protection of your web applications from common exploits and vulnerabilities.
 
-1. **Enforce multi-factor verification for users, especially for your administrator accounts**- Azure AD Multi-Factor Authentication (Azure AD MFA) helps administrators protect their organizations and users with additional authentication methods.
+1. **Enforce multi-factor verification for users, especially for your administrator accounts**- Azure AD Multi-Factor Authentication (Azure AD MFA) helps administrators protect their organizations and users with more authentication methods.
 
-1. **Encrypt your virtual hard disk files** - This will help protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
+1. **Encrypt your virtual hard disk files** - This encryption will help protect your boot volume and data volumes at rest in storage, along with your encryption keys and secrets.
 
-1. **Connect Azure virtual machines and appliances to other networked devices by placing them on Azure virtual networks** -  VMs connected to an Azure virtual network can connect to devices on the same virtual network, different virtual networks, the internet, or your own on-premises networks.
+1. **Connect Azure virtual machines (VMs) and appliances to other networked devices by placing them on Azure virtual networks** -  VMs connected to an Azure virtual network can connect to devices on the same virtual network, different virtual networks, the internet, or your own on-premises networks.
 
 ### Strong operational security practices to implement
 
@@ -30,4 +35,4 @@ Strong operational security practices to implement every day are:
 
 To explore the topics presented in this module in more details, see the following article:
 
-- [CIS Microsoft Azure Foundations Security Benchmark](/azure/security/benchmarks/v2-cis-benchmark)
+- [CIS Microsoft Azure Foundations Security Benchmark](/security/benchmark/azure/v2-cis-benchmark)

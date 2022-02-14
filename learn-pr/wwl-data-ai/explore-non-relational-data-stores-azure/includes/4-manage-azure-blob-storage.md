@@ -187,7 +187,7 @@ Deleting a blob can reclaim the resources used in the storage container. However
 
 ### Use the Azure portal
 
-If you're using the Azure portal, go to the page for your storage account and select **Containers** under **Blob service**. On the **Containers** page, select the container holding your blobs. If the container has a folder structure, move to the folder containing the blobs you want to download. Select the blob to view its details. On the details page, select **Delete**. You'll be prompted to confirm the operation.
+If you're using the Azure portal, go to the page for your storage account and select **Containers** under **Blob service**. On the **Containers** page, select the container holding your blobs. If the container has a folder structure, move to the folder containing the blobs you want to delete. Select the blob to view its details. On the details page, select **Delete**. You'll be prompted to confirm the operation.
 
 > [!div class="mx-imgBorder"]
 > ![Image of the page for a blob container in the Azure portal. The user is deleting a blob](../media/4-delete-blob.png)
