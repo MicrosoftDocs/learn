@@ -1,8 +1,8 @@
-Network Watcher's tools become automatically available when you create a virtual network in an Azure subscription. You can access Network Watcher directly in the Azure portal by typing Network Watcher in the Search bar.
+Network Watcher's tools become automatically available when you create a virtual network in an Azure subscription. You can access Network Watcher directly in the Azure portal by typing **Network Watcher** in the **Search** bar.
 
 :::image type="content" source="../images/search-portal.png" alt-text="Screenshot that shows how to search for Network Watcher in the portal resource menu.":::
 
-## Network Watcher Topology Tool
+## Network Watcher Topology tool
 
 The topology capability of Azure Network Watcher enables you to view all of the resources in a virtual network, the resources associated to resources in a virtual network, and the relationships between the resources.
 
@@ -30,7 +30,7 @@ All resources returned in a topology have the following properties:
 
 ## Connection Monitor tool
 
-Connection Monitor provides unified, end-to-end connection monitoring in Azure Network Watcher. Connection Monitor supports both hybrid and Azure cloud deployments. Use the Connection Monitor tool to measure the latency between resources. Connection Monitor can detect changes that will affect connectivity, such as network configuration changes or modifications to network security group (NSG) rules. You can configure Connection Monitor to probe VMs at regular intervals to look for failures or changes. Connection Monitor can diagnose problems and provide explanations about why the issue occurred and the steps that you can take to fix an issue.
+Connection Monitor provides unified, end-to-end connection monitoring in Azure Network Watcher. Connection Monitor supports both hybrid and Azure cloud deployments. Use the Connection Monitor tool to measure the latency between resources. Connection Monitor can detect changes that will affect connectivity, such as network configuration changes or modifications to NSG rules. You can configure Connection Monitor to probe VMs at regular intervals to look for failures or changes. Connection Monitor can diagnose problems and provide explanations about why the issue occurred and the steps that you can take to fix an issue.
 
 :::image type="content" source="../images/connection-monitor-topology.png" alt-text="Diagram that shows how Connection Monitor interacts with Azure V Ms, non-Azure hosts, endpoints, and data storage locations." border="false":::
 
