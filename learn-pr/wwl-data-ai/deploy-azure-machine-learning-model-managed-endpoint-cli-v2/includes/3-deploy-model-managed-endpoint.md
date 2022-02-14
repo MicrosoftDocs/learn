@@ -27,7 +27,7 @@ az ml online-endpoint create --name diabetes-mlflow -f ./mslearn-aml-cli/Allfile
 ```
 
 > [!Tip]
-> Learn more about [managing online endpoint with the CLI (v2)](/cli/azure/ml/online-endpoint?view=azure-cli-latest).
+> Learn more about [managing online endpoint with the CLI (v2)](/cli/azure/ml/online-endpoint).
 
 ## Deploy a model to an endpoint
 
@@ -66,7 +66,7 @@ az ml online-deployment create --name mlflow-deployment --endpoint diabetes-mlfl
 ```
 
 > [!Tip]
-> Learn more about how to [manage online deployments with the CLI (v2)](/cli/azure/ml/online-deployment?view=azure-cli-latest).
+> Learn more about how to [manage online deployments with the CLI (v2)](/cli/azure/ml/online-deployment).
 
 Here, all traffic to the endpoint will be routed to this one deployment because we use `--all-traffic`. If you want to deploy multiple models to the endpoint, you can reconfigure traffic to route incoming requests to the different deployments.
 

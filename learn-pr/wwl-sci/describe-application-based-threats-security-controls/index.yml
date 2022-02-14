@@ -3,7 +3,7 @@ uid: learn.wwl.describe-application-based-threats-security-controls
 metadata:
   title: Describe application-based threats and how to protect against them
   description: "Describe application-based threats and security controls"
-  ms.date: 12/03/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   -	Describe the threat landscape of applications
   -	Describe how to protect your applications
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-describe-application-based-threats-security-controls.svg
 levels:
 - beginner
 roles:
