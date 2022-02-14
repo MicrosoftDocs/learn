@@ -124,28 +124,13 @@ Remember that the principles we've discussed in this unit are a guide only, and 
 
 Startup name: __________________________________
 
-&#9744; Simple.
-
-&#9744; Memorable.
-
-&#9744; Easy to spell.
-
-&#9744; Easy to say.
-
-&#9744; Safe in other languages.
-
-&#9744; Future-proof.
-
-&#9744; The dot-com domain is available.
-
+&#9744; Simple.\
+&#9744; Memorable.\
+&#9744; Easy to spell.\
+&#9744; Easy to say.\
+&#9744; Safe in other languages.\
+&#9744; Future-proof.\
+&#9744; The dot-com domain is available.\
 &#9744; Doesn't infringe an existing trademark.
 
 Score: ___ / 8
-
-
-
-
-
-
-
-
