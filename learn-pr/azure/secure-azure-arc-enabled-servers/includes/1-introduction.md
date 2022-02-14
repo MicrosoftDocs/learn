@@ -6,7 +6,7 @@ Through Azure Arc-enabled servers, you can use Microsoft Defender for Cloud, Mic
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+By the end of this module, you'll be able to:
 
 - Understand the onboarding process for and benefits of using Microsoft Defender for Cloud with Azure Arc-enabled servers 
 - Evaluate the benefits of using Microsoft Defender for Servers with Azure Arc-enabled servers 
