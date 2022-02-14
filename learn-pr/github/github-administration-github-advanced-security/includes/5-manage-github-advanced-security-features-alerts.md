@@ -13,7 +13,7 @@ The Security Overview is available in the **Security** tab of organizations and 
 - At the team level, the Security Overview displays repository-specific security information for repositories that the team has admin privileges for.
 - At the repository level, the Security Overview shows which security features are enabled for the repository, and offers the option to configure any available security features not currently in use.
 
-:::image type="content" source="../media/security_overview.png" alt-text="Screenshot of the Security Overview at the organization level.":::
+:::image type="content" source="../media/security-overview.png" alt-text="Screenshot of the Security Overview at the organization level.":::
 
 Thanks to its high level of interactivity and numerous filters, the Security Overview is useful for both broad and specific analyses of your organization's security status. For example, you can use it to monitor adoption of features by your organization or by a specific team as you rollout GitHub Advanced Security to your enterprise, or to review all alerts of a specific type and severity level across all repositories in your organization.
 
@@ -48,7 +48,7 @@ You can modify the permissions for the `GITHUB_TOKEN` in individual workflow fil
 
 You can also use the `permissions` key in your workflow files to modify permissions for the `GITHUB_TOKEN` for an entire workflow or for individual jobs. This enables you to configure the minimum required permissions for a workflow or job. When the `permissions` key is used, all unspecified permissions are set to no access, with the exception of the metadata scope, which always gets read access.
 
-```yml
+```yaml
 name: Create issue on commit
 
 on: [ push ]

@@ -26,13 +26,13 @@ A GitHub Advanced Security license provides the following additional features fo
 
 So what difference do the GitHub Advanced Security features make in your software development lifecycle? Let's have a look at a basic security scenario first.
 
-:::image type="content" source="../media/basic_scenario.png" alt-text="Image representing the different stages of the software development lifecycle in a traditional security approach.":::
+:::image type="content" source="../media/basic-scenario.png" alt-text="Image representing the different stages of the software development lifecycle in a traditional security approach.":::
 
 This example illustrates a traditional "security as a gate" approach in which a single security test or a series of security tests take place during the quality-assurance phase. In this scenario, security usually ends up being a bottleneck to shipping the software. This is what your company wants to fix by shifting security left.
 
 Now let's look at the same software development lifecycle with GitHub Advanced Security.
 
-:::image type="content" source="../media/ghas_scenario.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
+:::image type="content" source="../media/github-advanced-security-scenario.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
 
 In this scenario, security is set up right from the beginning via security policies at the project configuration stage. Developers then get alerted of potential security issues at every step of the development process:
 

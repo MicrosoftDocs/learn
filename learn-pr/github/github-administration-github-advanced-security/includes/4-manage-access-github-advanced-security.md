@@ -33,11 +33,11 @@ Follow the steps below to set up a security policy at the organization level:
 1. In your enterprise sidebar, navigate to **Policies > Advanced Security**.
 2. Under **GitHub Advanced Security**, select the drop-down menu and click a policy for the organizations owned by your enterprise.
 
-:::image type="content" source="../media/security_policy_org.png" alt-text="Screenshot of security policy drop-down.":::
+    :::image type="content" source="../media/security-policy-org.png" alt-text="Screenshot of security policy drop-down.":::
 
 3. Optionally, if you chose **Allow for selected organizations** to the right of an organization, select the drop-down menu to allow or disallow Advanced Security for the organization. Note that disallowing Advanced Security for an organization prevents repository administrators from enabling Advanced Security features for additional repositories, but does not disable the features for repositories where the features are already enabled.
 
- :::image type="content" source="../media/security_policy_org_2.png" alt-text="Screenshot of individual organization security policy drop-down.":::
+    :::image type="content" source="../media/security-policy-org-2.png" alt-text="Screenshot of individual organization security policy drop-down.":::
 
  > [!Note]
  > Keep in mind that GitHub bills for Advanced Security on a per-committer basis when setting up a policy at the organization level.

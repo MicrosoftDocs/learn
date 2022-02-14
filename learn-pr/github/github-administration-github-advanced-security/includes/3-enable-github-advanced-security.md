@@ -15,17 +15,17 @@ Follow the steps below to enable GitHub Advanced Security for all the repositori
 2. Under **Configure security and analysis features**, click the **Enable all** button next to **GitHub Advanced Security**. The control for **GitHub Advanced Security** is disabled if you have no available seats in your GitHub Advanced Security license.
 3. Review the impact of enabling Advanced Security on all repositories and click **Enable all**.
 
-:::image type="content" source="../media/enable_org.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all repositories.":::
+:::image type="content" source="../media/enable-org.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all repositories.":::
 
 If you would like to automatically enable GitHub Advanced Security on new private and internal repositories added to your organization, select the **Automatically enable for new private and internal repositories** checkbox under **GitHub Advanced Security**, review the impact of enabling Advanced Security on all new private and internal repositories, and click **Enable for new repositories**.
 
-:::image type="content" source="../media/enable_org_2.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all new private and internal repositories.":::
+:::image type="content" source="../media/enable-org-2.png" alt-text="Screenshot of the screen for reviewing the impact of enabling Advanced Security on all new private and internal repositories.":::
 
 ## Enable GitHub Advanced security for Enterprise Server
 
 Before you can enable GitHub Advanced Security for all the repositories in your organization on GitHub Enterprise Server, you must first enable Advanced Security for your GitHub Enterprise Server instance. This can be done two ways: via the GitHub user interface or via the administrative shell (SSH).
 
-Whether you plan on using the user interface or the administrative shell to do this, make sure you meet the following prerequisites before completing one of the procedure described in the next sections:
+Whether you plan on using the user interface or the administrative shell to do this, make sure you meet the following prerequisites before completing one of the procedures described in the next sections:
 
 - Your license for GitHub Enterprise Server has been upgraded to include GitHub Advanced Security and you have uploaded it to your GitHub Enterprise Server instance.
 - You have reviewed the prerequisites for the features you plan to enable:
@@ -44,7 +44,7 @@ Follow the procedure below to enable the GitHub Advanced Security features on yo
 2. In the left sidebar, click **Security**.
 3. Under **Security**, select the features that you want to enable.
 
-:::image type="content" source="../media/enable_ghes.png" alt-text="Screenshot of the security features.":::
+    :::image type="content" source="../media/enable-github-enterprise-security.png" alt-text="Screenshot of the security features.":::
 
 4. Under the left sidebar, click **Save settings** and wait for the configuration run to complete.
 
