@@ -3,7 +3,7 @@ uid: learn.wwl.understand-security-pipeline
 metadata:
   title: Understand security in the Pipeline
   description: "Understand security in the Pipeline"
-  ms.date: 12/02/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use Secure DevOps kit for Azure (AzSK)
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-understand-security-in-the-pipeline.svg
 levels:
 - advanced
 roles:

@@ -8,7 +8,7 @@ This unit introduces the next member of the Truffle Suite, [Drizzle](https://www
 
 Drizzle is built with JavaScript. It works well with and has great support for [React](https://reactjs.org/?azure-portal=true), which is the most popular JavaScript library for building front-end user interfaces. However, there's also an option to use front-end JavaScript frameworks like [Vue.js](https://vuejs.org?azure-portal=true) or [Angular](https://angular.io?azure-portal=true).
 
-Drizzle helps to synchronize and manage smart contract data. This synchronization is significant so that the blockchain data stays in aligned with your app interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for users and any environment they use.
+Drizzle helps to synchronize and manage smart contract data. This synchronization is significant so that the blockchain data stays aligned with your app interface. It uses a [Redux](https://redux.js.org/?azure-portal=true) store. Redux is a state container for JavaScript apps that makes it easy to track all transactions. Plus, it helps applications behave consistently for users and any environment they use.
 
 Drizzle apps interact with smart contacts by using a JSON-RPC layer called the Web3 API.
 

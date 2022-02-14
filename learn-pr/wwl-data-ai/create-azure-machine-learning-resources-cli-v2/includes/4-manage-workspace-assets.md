@@ -101,7 +101,7 @@ Make sure both YAML files are stored locally on the same computer from which you
 
 To get a list of all environments in your workspace, you use the `az ml environment list` command. Both curated and custom environments will show in this list. All environments can also be found in the [Azure Machine Learning Studio](https://ml.azure.com), in the Environments tab.
 
-Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment?view=azure-cli-latest).
+Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment).
 
 All registered environments will persist in the Azure Machine Learning workspace and can be used whenever you want to train a model or run a job.
 
