@@ -1,0 +1,96 @@
+### YamlMime:ModuleUnit
+uid: learn.codebase-representation-codeql.6-knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: check your knowledge # user input: module title for browser tab and search results
+  description: check your knowledge # user input: a description for site search and SEO
+  ms.date: 2/10/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What does CodeQL first do when creating a database?"
+    choices:
+    - content: "Analyzes both compiled languages and interpreted languages"
+      isCorrect: false
+      explanation: "Incorrect. Compiled languages extraction works by monitoring the normal build process and interpreted languages. The extractor runs directly on the source code, so these two different approaches are not the first step for CodeQL when creating a database"
+    - content: "Extracts a single relational representation of each source file"
+      isCorrect: true
+      explanation: "Correct. To create a database, CodeQL first extracts a single relational representation of each source file in the codebase."
+    - content: "Converts results produced during query execution into a meaningful form"
+      isCorrect: false
+      explanation: "Incorrect. The final step converts results produced during query execution into a form that is more meaningful in the context of the source code"
+  - content: "What is the format of the command used to create and analyze CodeQL database from the CLI?"
+    choices:
+    - content: "`codeql [command] [subcommand]`"
+      isCorrect: true
+      explanation: "Correct. The CodeQL CLI includes commands to create and analyze CodeQL databases from the command line using this command"
+    - content: "`codeql [subcommand] [command]`"
+      isCorrect: false
+      explanation: "Incorrect. [subcommand] does not come before [command] to create and analyze a CodeQL database from the CLI "
+    - content: "`[command] [subcommand] codeql`"
+      isCorrect: false
+      explanation: "Incorrect. 'codeql' needs to appear to start the command"
+  - content: "What is an extractor?"
+    choices:
+    - content: "A hierarchical representation of the code"
+      isCorrect: false
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
+    - content: "A representation of the abstract syntax tree"
+      isCorrect: false
+      explanation: "Incorrect. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data flow graph, and the control flow graph"
+    - content: "A tool that produces the relational data"
+      isCorrect: true
+      explanation: "Correct. An extractor is a tool that produces the relational data and source reference for each input file, from which a CodeQL database can be built"
+  - content: "The CLI's built-in search operations does which of the following?"
+    choices:
+    - content: "Automatically looks in parent directories for the files used in the database creation and analysis"
+      isCorrect: false
+      explanation: "Incorrect. The siblings are searched, not the parent directories"
+    - content: "When manually prompted, looks in sibling directories for the files used in the database creation and analysis"
+      isCorrect: false
+      explanation: "Incorrect. A manual prompt does not occur since this is automatic"
+    - content: "Automatically looks in all of its sibling directories for the files used in the database creation and analysis"
+      isCorrect: true
+      explanation: "Correct. The CLI’s built-in search operations automatically look in all of its sibling directories for the files used in database creation and analysis"
+  - content: "By default, which severity level will cause a pull request check failure when using code scanning?"
+    choices:
+    - content: "`Error`"
+      isCorrect: true
+      explanation: "Correct. By default, only alerts with the severity level of Error or security severity level of Critical or High will cause a pull request check failure, and a check will still succeed with alerts of lower severities"
+    - content: "`Warning`"
+      isCorrect: false
+      explanation: "Incorrect. `Warning` is a setting, not a severity level"
+    - content: "`Medium`"
+      isCorrect: false
+      explanation: "incorrect. `Medium` is a setting, not a severity level"
+  - content: "Which is one way to optimize CodeQL analysis runtimes?"
+    choices:
+    - content: "Analyze multiple languages"
+      isCorrect: false
+      explanation: "Incorrect. Analyzing multiple languages may slow down CodeQL analysis runtimes"
+    - content: "Increase the memory"
+      isCorrect: true
+      explanation: "Correct. Increasing the memory will help to optimize CodeQL analysis runtimes"
+    - content: "Increase the amount of code analyzed"
+      isCorrect: false
+      explanation: "Incorrect. Increasing the amount of code analyzed may slow down CodeQL analysis runtimes"
