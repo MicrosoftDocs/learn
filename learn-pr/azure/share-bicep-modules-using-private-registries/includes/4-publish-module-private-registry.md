@@ -45,7 +45,7 @@ Conversely, if you make a small change to an existing module that doesn't affect
 Here's a versioning policy that often works well:
 
 - Whenever you make significant changes to a module, create a new version. Significant changes include anything that might make a difference to somebody who uses your module. Examples include adding another resource to the module or changing a resource's properties.
-- Whenever you make small changes to a template spec, which are sometimes called a _hotfix_, update the existing module version.
+- Whenever you make small changes to a module, which are sometimes called a _hotfix_, update the existing module version.
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
 > [!TIP]
