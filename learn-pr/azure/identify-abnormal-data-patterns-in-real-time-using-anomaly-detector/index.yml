@@ -38,7 +38,6 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - azure-cognitive-services
   - azure-iot-hub
   - azure-cloud-services
-  - machine-learning
 units:
   - learn.identify-abnormal-data-patterns-in-real-time-using-anomaly-detector.introduction
   - learn.identify-abnormal-data-patterns-in-real-time-using-anomaly-detector.what-is-anomaly-detection
