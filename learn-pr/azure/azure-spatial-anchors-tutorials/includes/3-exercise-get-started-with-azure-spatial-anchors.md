@@ -1,4 +1,4 @@
-In this tutorial, you'll explore the steps required to:
+In this unit, you'll explore the steps required to:
 
 - Start and stop an Azure Spatial Anchors session.
 - Create, upload, and download spatial anchors on a single device.
@@ -12,7 +12,7 @@ First, follow the steps in [Initializing your project and deploying your first a
 1. Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
 2. Switch the build platform.
 3. Import the TextMeshPro Essential Resources.
-4. Import the Mixed Reality Toolkit and configure the Unity project
+4. Import the Mixed Reality Toolkit and configure the Unity project.
 5. Create and configure the scene and give the scene a suitable name, like **AzureSpatialAnchors**.
 
 Then, change the display options for spatial awareness to ensure that the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
@@ -35,7 +35,7 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     :::image type="content" source="../media/prefabs.png" alt-text="Screenshot of prefabs added to the Hierarchy pane." lightbox="../media/prefabs.png":::
 
     > [!Tip]
-    > If you find the large icons in your scene (for example, the large framed **T** icons) distracting, you can hide them by [switching the Gizmos toggle](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the preceding image.
+    > If you find the large icons in your scene (for example, the large framed "T" icons) distracting, you can hide them by [switching the Gizmos toggle](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the preceding image.
 
 2. Select the **MixedRealityToolkit** object on the **Hierarchy** pane. Then use the **Add Component** button on the **Inspector** pane to add the following components:
 
@@ -59,14 +59,14 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * Assign the **ParentAnchor** object to the **None (Object)** field.
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **StartAzureSession ()** to set this function as the action to be executed when the event is triggered.
 
-    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with the StartAzureSession button OnClick event configured." lightbox="../media/start-azure-session.png":::
+    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with the StartAzureSession button's OnClick event configured." lightbox="../media/start-azure-session.png":::
 
 2. On the **Hierarchy** pane, select the next button named **StopAzureSession**. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field.
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **StopAzureSession ()** to set this function as the action to be executed when the event is triggered.
 
-    :::image type="content" source="../media/stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button OnClick event configured." lightbox="../media/stop-azure-session.png":::
+    :::image type="content" source="../media/stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." lightbox="../media/stop-azure-session.png":::
 
 3. On the **Hierarchy** pane, select the **CreateAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper(Script)** component's **On Click ()** event as follows:
 
@@ -74,7 +74,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **CreateAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **CreateAzureAnchor ()** function.
 
-    :::image type="content" source="../media/create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button OnClick event configured." lightbox="../media/create-azure-anchor.png":::
+    :::image type="content" source="../media/create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." lightbox="../media/create-azure-anchor.png":::
 
 4. On the **Hierarchy** pane, select the **RemoveLocalAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -82,21 +82,21 @@ In this section, you'll add scripts to the scene to create a series of button ev
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **RemoveLocalAnchor** () to set this function as the action to be executed when the event is triggered.
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor ()** function.
     
-    :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button OnClick event configured." lightbox="../media/remove-local-anchor.png":::
+    :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/remove-local-anchor.png":::
 
 5. On the **Hierarchy** pane, select the **FindAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field.
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **FindAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
 
-     :::image type="content" source="../media/find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button OnClick event configured." lightbox="../media/find-azure-anchor.png":::
+     :::image type="content" source="../media/find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." lightbox="../media/find-azure-anchor.png":::
 
 6. On the **Hierarchy** pane, select the **DeleteAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click** () event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field.
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **DeleteAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
 
-    :::image type="content" source="../media/delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button OnClick event configured." lightbox="../media/delete-azure-anchor.png":::
+    :::image type="content" source="../media/delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." lightbox="../media/delete-azure-anchor.png":::
 
 ## Connect the scene to the Azure resource
 
@@ -104,9 +104,9 @@ In this section, you'll add scripts to the scene to create a series of button ev
 
 1. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account that you created as part of the prerequisites for this tutorial series:
 
-* In the **Spatial Anchors Account ID** field, paste the **Account ID** value from your Azure Spatial Anchors account.
-* In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** value from your Azure Spatial Anchors account.
-* In the **Spatial Anchors Account Domain** field, paste the **Account Domain** value from your Azure Spatial Anchors account.
+   * In the **Spatial Anchors Account ID** field, paste the **Account ID** value from your Azure Spatial Anchors account.
+   * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** value from your Azure Spatial Anchors account.
+   * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** value from your Azure Spatial Anchors account.
 
    :::image type="content" source="../media/spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." lightbox="../media/spatial-anchor-manager.png":::
 
@@ -151,7 +151,7 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 
     :::image type="content" source="../media/add-object.png" alt-text="Screenshot of adding an object to the scene." lightbox="../media/add-object.png":::
 
-3. With the newly added **RoverModule_Complete** object still selected on the **Hierarchy** pane, drag it to the **ParentAnchor** object to make it a child of the **ParentAnchor** object:
+3. With the newly added **RoverModule_Complete** object still selected on the **Hierarchy** pane, drag it to the **ParentAnchor** object to make it a child of the **ParentAnchor** object.
 
     :::image type="content" source="../media/rover-explorer.png" alt-text="Screenshot of Unity with the RoverExplorer_Complete object set as a child of ParentAnchor." lightbox="../media/rover-explorer.png":::
 
