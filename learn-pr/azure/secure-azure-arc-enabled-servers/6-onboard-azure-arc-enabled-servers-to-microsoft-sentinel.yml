@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-sentinel
-title: Onboard Azure Arc-enabled servers to Microsoft Sentinel.
+title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
 metadata:
   title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
   description: Onboard Azure Arc-enabled servers to Microsoft Sentinel
