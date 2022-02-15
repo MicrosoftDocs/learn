@@ -54,7 +54,8 @@ It's important to understand the difference between DNS record sets and individu
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
-The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried. 
+The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried.
+
 :::image type="content" source="../media/dns-record-set-2-dbd92ba6.png" alt-text="Screenshot of the Add a record page.":::
 
 

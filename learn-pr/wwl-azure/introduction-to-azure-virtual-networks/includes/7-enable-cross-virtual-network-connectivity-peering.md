@@ -27,7 +27,7 @@ The routing tables show the routes known to the resources in each subscription. 
 :::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso":::
 
 
-The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.17.26.0/25 subnet. 
+The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.17.26.0/24 subnet. 
 
 :::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Route table known to Fabrikam":::
 
