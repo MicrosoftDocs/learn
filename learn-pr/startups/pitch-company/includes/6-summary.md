@@ -6,4 +6,8 @@ Finally, we looked at some example pitches as a way of identifying techniques th
 
 ## Useful resources
 
-[TED Talks playlist: Before public speaking ...](https://www.ted.com/playlists/226/before_public_speaking?azure-portal=true)
+- [TED Talks playlist: Before public speaking ...](https://www.ted.com/playlists/226/before_public_speaking?azure-portal=true)
+- [Attributes of successful companies checklist](../../fundamentals/3-success.yml?azure-portal=true#worksheet)
+- [Value Proposition Canvas](../../validate-idea/2-articulate-idea.yml?azure-portal=true#task-complete-your-own-value-proposition-canvas)
+- [The power of experiments](../../validate-idea/5-experiment-power.yml?azure-portal=true)
+- [Task on evaluating a revenue model](../../revenue/2-revenue-models.yml?azure-portal=true#task-evaluate-a-revenue-model)
