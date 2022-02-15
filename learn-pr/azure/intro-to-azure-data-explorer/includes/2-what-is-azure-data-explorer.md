@@ -7,6 +7,7 @@ Azure Data Explorer is a big data analytics platform that makes it easy to analy
 By analyzing structured, semi-structured, and unstructured data across time series, and by using Machine Learning, Azure Data Explorer makes it simple to extract key insights, spot patterns and trends, and create forecasting models. Azure Data Explorer is fully managed, scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
 
 ## How to understand your big data
+
 If you remember our example clothing company, they have a lot of types of data coming in from varied domains. They need to use very different kinds of analytics on these data types, and then share their results with a range of stakeholders. They're going to use Azure Data Explorer to get insights from all of their data across the company.
 
 **Production** analyzes their product logs to manage their inventory and make manufacturing decisions. These decisions are also informed by geospatial analytics, which are used to identify geographical areas of high-performing ads and anticipate inventory.
