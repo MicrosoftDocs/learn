@@ -41,10 +41,10 @@ products:
   - azure-resource-manager
 units:
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.introduction
-- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching-pull-requests
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-enable-branch-protection-create-pull-request
-- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.review-merge-bicep-changes
-- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-review-merge-pull-request
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.review-merge-bicep-changes-using-pull-requests
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-create-review-merge-pull-request
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.summary
 badge:

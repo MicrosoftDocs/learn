@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching-pull-requests
-title: Understand branching and pull requests
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching
+title: Understand branching
 metadata:
   unitType: learning-content
-  title: Understand branching and pull requests
+  title: Understand branching
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 02/11/2022
   author: johndowns
@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-understand-branching-pull-requests.md)]
+  [!include[](includes/2-understand-branching.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-review-merge-pull-request
-title: Exercise - Review and merge a pull request
+title: Exercise - Create, review, and merge a pull request
 metadata:
   unitType: exercise
-  title: Exercise - Review and merge a pull request
+  title: Exercise - Create, review, and merge a pull request
   description: TODO
   ms.date: 02/11/2022
   author: johndowns
@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-review-merge-pull-request.md)]
+  [!include[](includes/5-exercise-create-review-merge-pull-request.md)]
