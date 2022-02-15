@@ -60,7 +60,7 @@ To use a virtual environment, we'll create and activate it. We create it by usin
 # Create the environment
 python3 -m venv venv
 # Activate the environment
-.\\venv\\scripts\\activate
+.\venv\scripts\activate
 
 # macOS or Linux
 # Create the environment

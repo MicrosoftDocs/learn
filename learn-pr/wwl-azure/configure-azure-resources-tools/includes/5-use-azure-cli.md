@@ -31,4 +31,4 @@ az storage blob --help
 ```
 
 > [!NOTE]
-> Bookmark the [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).
+> Bookmark the [Azure CLI Reference](/cli/azure/).

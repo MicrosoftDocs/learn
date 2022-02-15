@@ -37,7 +37,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed, and sign in with the same account you used to activate the sandbox.
 
 1. Select **Terminal > New Terminal** to open a terminal window.
 

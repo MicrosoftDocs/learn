@@ -1,6 +1,6 @@
-A digital asset, whether it's Bitcoin, Ether, or another cryptocurrency, represents value amount. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable.
+A digital asset, whether it's Bitcoin, Ether, or another cryptocurrency, represents a value amount. Another example of a digital asset that represents value is a token. But, with a token, the value might not be monetary. Tokens can represent time, services, property, or goods that are tradeable.
 
-In this module, you'll learn about the significance of tokens and how they are used in blockchain.
+In this module, you'll learn about the significance of tokens and how they're used in blockchain.
 
 ## Learning objectives
 
