@@ -14,7 +14,7 @@ In this module, you'll learn how you can protect the code on your main branch by
 
 ## What is the main goal?
 
-After completing this module, you'll be able to select a branching strategy to use for your own Bicep code. You'll also know how to create, review, and merge pull requests, and the key elements to look for when you review a pull request for Bicep code.
+After completing this module, you'll be able to use a branching strategy for your own Bicep code. You'll also know how to create, review, and merge pull requests, and you'll understand some important elements to look for when you review a pull request for Bicep code.
 
 ## Prerequisites
 

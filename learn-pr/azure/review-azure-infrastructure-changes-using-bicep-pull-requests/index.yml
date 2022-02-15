@@ -14,13 +14,13 @@ summary: Ensure the quality of your team's Bicep code. Use branching strategies 
 abstract: |
   After completing this module, you'll be able to:
 
-  - Select a branching strategy to use.
-  - Create, review, and merge pull requests.
-  - Review Bicep code in pull requests.
+  - Understand how branches can help when you build Bicep code
+  - Create, review, and merge pull requests
+  - Review Bicep code in pull requests
 prerequisites: |
   You should be familiar with using:
 
-  - Bicep for basic deployments to Azure.
+  - Bicep for basic deployments to Azure, including conditions.
   - Basic Git commands, including cloning, branching, committing files, and pushing changes to either Azure Repos or GitHub.
 
   To work through the exercises, you'll also need the following installed locally:

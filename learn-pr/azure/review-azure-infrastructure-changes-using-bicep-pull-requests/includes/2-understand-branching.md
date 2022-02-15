@@ -19,13 +19,9 @@ Suppose the changes that the team member made introduced a subtle bug. After the
 In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to your main branch. You now have changes on your main branch that are not completely finished. These probably should not be deployed to your production environment, because the work is not completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in your main branch, they might not be able to be deployed and used by your customers.
 
 > [!TIP]
-> These problems are particularly difficult for large teams, where multiple people contribute to the same code. But, the guidance in this module is also valuable as soon as you collaborate with more than one person - or even when it is just you working on a project and work on multiple separate features at the same time.
+> These problems are particularly difficult for large teams, where multiple people contribute to the same code. But, the guidance in this module is also valuable as soon as you collaborate with more than one person - or even when it is just you working on a project, and you work on multiple separate features at the same time.
 
-## Changing your process
-
-A better way of working is to have another team member review any changes before they're merged into the main branch of your team's shared repository. This process helps your team to make an informed decision on the change before you approve it to be merged. This review and automated validation process can be achieved by using *pull requests* and *branch protection*, which you'll learn about soon.
-
-Branch protection is extra configuration you can add to certain branches in your project and that helps you build confidence on the changes that make it into these branches. <!-- TODO maybe move this later -->
+A better way of working is to keep your changes separate while you work on them, and then to have another team member review any changes before they're merged into the main branch of your team's shared repository. This process helps your team to make an informed decision on the change before you approve it to be merged.
 
 ## Feature branches
 
@@ -53,27 +49,32 @@ Its also good to keep your feature branches small and easy to understand, and to
 > [!NOTE]
 > It can sometimes be challenging to keep your features small.
 >
-> When you build software, it can be useful to consider *feature flags*. A feature flag turns a feature on or off in production. While the feature is under development, the feature flag is turned off. After the feature is ready, you turn it on.
+> When you build software, it can be useful to consider *feature flags*. A feature flag turns a feature on or off in production. While the feature is under development, the feature flag is turned off. After the feature is ready, you turn it on. When you use feature flags, the code for the feature can be merged into your main branch and deployed to production, but the feature itself isn't visible.
 >
-> This way, the code for the feature can be merged into your main branch and deployed to production, but the feature itself isn't visible.
->
-> You can use feature flags to support releasing your changes at a certain time, like if you have an announcement. At the release time, you can turn on all of the feature flags by changing your system's configuration.
+> You can use feature flags to support releasing your changes at a certain time, like if you have a product launch announcement. At the release time, you can turn on all of the feature flags by changing your system's configuration.
 >
 > In Bicep code, it's not common to work with feature flags. But when you build a solution that includes custom software, consider using feature flags to disable the parts of your software that aren't yet ready.
 
-<!-- TODO maybe conditions could be used for this? -->
+<!-- TODO maybe conditions could be used for a version of this? -->
 
-## Merging feature branches
+### Merging feature branches
 
-When you've finished working on a feature branch, you need to merge it into your repository's main branch. It's a good practice to review the changes that were made on the feature branch before merging.
+When you've finished working on a feature branch, you need to merge it into your repository's main branch. It's a good practice to review the changes that were made on the feature branch before merging. Pull requests enable you to review your code. You'll learn more about pull requests later in this module.
 
-A *pull request* is a *request* from you, the developer of a feature, to the maintainer of the main branch. You ask the maintainer to *pull* your changes into the main branch of the repository.
+### Branch protection
 
-In Azure DevOps you can configure *branch protections*, or *branch policies*, for your main branch. Branch protections enforce rules like *no change can be merged to the main branch except through a pull request*. A pull request will start a review process of the changes you made, before these are merged into the main branch.
+In Azure DevOps, you can configure *branch protections*, or *branch policies*, for your main branch. Branch protections enforce rules like:
 
-You'll learn more about pull requests later in this module.
+- No change can be merged to the main branch except through a pull request.
+- Changed need to be reviewed by at least two other people.
 
-## Branching strategies
+If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch protection policy works:
+
+<!-- TODO diagram -->
+
+You'll learn how to apply branch protections in the next unit.
+
+## Other branching strategies
 
 When you collaborate on your Bicep code, there are different branching strategies you can use. Each branching strategy has its own benefits and drawbacks.
 
