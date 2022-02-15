@@ -39,6 +39,7 @@ products:
 - vs-code
 modules:
 - learn.beginner-python.create-run-jupyter-notebook
+- learn.languages.python-install-vscode
 - learn.beginner-python.create-run-program
 - learn.beginner-python.create-manage-projects
 - learn.beginner-python.use-boolean-types
