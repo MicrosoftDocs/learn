@@ -6,6 +6,8 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 You talk to your team and decide that it's time you start to review your code changes before they're merged and deployed.
 
+<!-- TODO diagram - person writing Bicep code, committing, review and merge -->
+
 ## What will we be doing?
 
 In this module, you'll learn how you can protect the code on your main branch by enforcing a change control process through pull requests. You'll learn about some of the branching strategies you can use in your team, and how to prevent changes being made to your main branch unless they've followed the correct process. You'll also learn how you can use pull requests to review your code.

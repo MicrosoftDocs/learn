@@ -1,33 +1,33 @@
-As you build Bicep templates and work within a Git repository, all of your team's changes are eventually merged into the main branch of your repository. It's important to protect your main branch so that no unwanted changes are deployed to your production environment. However, you also want your contributors to be able to work and collaborate flexibly, and to be able to try out ideas without interfering with others.
+When you build Bicep templates and work within a Git repository, all of your team's changes are eventually merged into the main branch of your repository. It's important to protect your main branch so that no unwanted changes are deployed to your production environment. However, you also want your contributors to be able to work and collaborate flexibly, and to be able to try out ideas easily.
 
-In this unit you'll learn about branching strategies and branch protection and how you can set up a review process for your branches.
+In this unit, you'll learn about branching strategies and branch protection. You'll also learn how you can set up a review process for your branches.
 
 ## Why do you want to protect your main branch?
 
-Your main branch is the source of truth for what gets deployed to your development, QA and production environments. Your main branch is the branch that people collaborate on. A typical process might be the following: 
+Your main branch is the source of truth for what gets deployed to your Azure environments. For many solutions, you'll have multiple environments such as *Development*, *Quality Assurance (QA)*, and *Production*. In other scenarios, you might only have a *Production* environment. Regardless of how many environments you use, your main branch is the branch that your team members contribute to. Their changes ultimately land on the main branch.
+
+A typical process might be the following: 
 
 1. A team member clones your repository.
 1. They make local changes on a branch in their own local copy of the repository.
 1. When they are finished with their changes, they merge these changes in their local repository's main branch.
-1. They push these changes to the remote main branch.
-1. This push results in triggering an automated pipeline. The pipeline verifies the code, tests it, and if all goes well, it deploys the changes to non-production environments and then to your production environment.
+1. They push these changes to the remote repository's main branch.
+1. In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
 
-Suppose the changes that were made introduce a subtle bug. Steps 4 and 5 in the above process mean that the bug is introduced in the main branch of the project. This is the branch that gets deployed to production. You might have failsafes in your deployment pipeline, like tests and approval gates, to prevent these changes to be deployed on your production environment. However, the bug is now in your main repository branch, and this might cause you other problems. To be able to recover from this bug, you need to make an additional change on the main branch and hope this fixes the bug that was accidentally introduced.
+Suppose the changes that the team member made introduced a subtle bug. After the complete process runs, the bug is now in the main branch of the project. This is the branch that gets deployed to production. You might not discover it until you try to deploy it and get an error. Or, for other types of bugs, the deployment might succeed but cause subtle problems later.
 
-A better way of working would be to have another team member review any changes before they're merged into the main branch of your team's shared repository. Even better, it'd be good to have an automated process that gives you feedback on these changes. This process helps you make an informed decision on the change before you approve it to be merged. This review and automated validation process can be achieved by using *pull requests* and *branch protection*.
+In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to your main branch. You now have changes on your main branch that are not completely finished. These probably should not be deployed to your production environment, because the work is not completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in your main branch, they might not be able to be deployed and used by your customers.
 
-Branch protection is an extra configuration you can add to certain branches in your project and that helps you build confidence on the changes that make it into these branches.
+> [!TIP]
+> These problems are particularly difficult for large teams, where multiple people contribute to the same code. But, the guidance in this module is also valuable as soon as you collaborate with more than one person - or even when it is just you working on a project and work on multiple separate features at the same time.
 
-### Risks involved with directly pushing to your main branch
+<!-- TODO here -->
 
-You've already learned about how you might inadvertently introduce bugs in your main branch. There are other scenarios that also need you to be careful about how the main branch of your repository is managed:
+## Changing your process
 
-- **Incomplete features**: A contributor might be working on a feature and push half of the finished work of the feature to your main branch. You now have changes on your main branch that are not completely finished. These probably should not be deployed to your production environment, since the work is not completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in your main branch, they might not be able to be deployed and used by your customers.
-- **Untested features**: Even though the development of a feature might be completed, you might still need to test this feature thoroughly. While testing out the feature in your QA environment, you might discover some flaws and need to make additional changes. When you're in this process of testing out the feature and applying additional changes to it, you can't promote the main branch's code to the production environment.
-- **Rollback of changes**: Suppose your team is working on three features in parallel. They first push some changes to main for feature 1, followed by some changes for feature 2, with again some changes for feature 1, next followed by some changes for feature 3. It might be hard to undo or remove the changes made for just one of the features because all of the changes are intertwined on the main branch with the other features' changes.
+A better way of working is to have another team member review any changes before they're merged into the main branch of your team's shared repository. This process helps your team to make an informed decision on the change before you approve it to be merged. This review and automated validation process can be achieved by using *pull requests* and *branch protection*.
 
-> [NOTE]
-> These problems have a big impact on large teams with multiple collaborators on the same code base and where teams are working on multiple features at the same time. But, the guidance in this module is valuable as soon as you collaborate with more than one person - or even when it is just you working on a project and you have multiple features you are working on at the same time.
+Branch protection is extra configuration you can add to certain branches in your project and that helps you build confidence on the changes that make it into these branches. <!-- TODO maybe move this later -->
 
 ## Working with feature branches
 
