@@ -3,7 +3,7 @@ uid: learn.wwl.explore-continuous-integration
 metadata:
   title: Explore continuous integration
   description: "Explore continuous integration"
-  ms.date: 12/02/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Explain benefits of continuous integration
   - Describe build properties
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-explore-continuous-integration.svg
 levels:
 - advanced
 roles:
