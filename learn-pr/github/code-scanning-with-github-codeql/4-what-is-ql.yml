@@ -14,7 +14,7 @@ durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/4-what-is-ql.md)]
 quiz:
-  title: What is QL?
+  title: Knowledge Check:What is QL?
   questions:
   - content: "What feature does QL add to the Datalog programming language?"
     choices:

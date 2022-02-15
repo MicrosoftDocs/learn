@@ -14,7 +14,7 @@ durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/3-how-does-codeql-analyze-code.md)]
 quiz:
-  title: How does CodeQL analyze code?
+  title: Knowledge Check:How does CodeQL analyze code?
   questions:
   - content: "To create a database, CodeQL extracts:"
     choices:

@@ -12,29 +12,29 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-code-scanning-and-codeql.md)]
-  quiz:
-    title: Code scanning and CodeQL
-    questions:
-    - content: "What enables you to customize how code scanning analyzes your code?"
-      choices:
-      - content: "The code scanning workflow"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "A build file"
-        isCorrect: false
-        explanation: "Incorrect. A build file is used by the code scanning autobuild process to determine the build system for Java codebases."
-      - content: "A GitHub Actions script."
-        isCorrect: false
-        explanation: "Incorrect. A GitHub Actions script can be used to perform bulk set up of code scanning."
-    - content: "Dave's company wants to use GitHub actions to generate code scanning alerts. What tools can they use for code analysis?"
-      choices:
-      - content: "CodeQL only."
-        isCorrect: false
-        explanation: "Incorrect. CodeQL is one of the options available, but not the only one."
-      - content: "CodeQL or supported third party tools."
-        isCorrect: true
-        explanation: "Correct! Code analysis can be performed with CodeQL as well as third party tools."
-      - content: "Only supported third party tools"
-        isCorrect: false
-        explanation: "Incorrect. Supported third party tools can be used for code analysis with GitHub Actions, but that is not the only tool for code analysis."
+    [!include[](includes/5-code-scanning-and-codeql.md)]
+quiz:
+  title: Knowledge Check:Code scanning and CodeQL
+  questions:
+  - content: "What enables you to customize how code scanning analyzes your code?"
+    choices:
+    - content: "The code scanning workflow"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A build file"
+      isCorrect: false
+      explanation: "Incorrect. A build file is used by the code scanning autobuild process to determine the build system for Java codebases."
+    - content: "A GitHub Actions script."
+      isCorrect: false
+      explanation: "Incorrect. A GitHub Actions script can be used to perform bulk set up of code scanning."
+  - content: "Dave's company wants to use GitHub actions to generate code scanning alerts. What tools can they use for code analysis?"
+    choices:
+    - content: "CodeQL only."
+      isCorrect: false
+      explanation: "Incorrect. CodeQL is one of the options available, but not the only one."
+    - content: "CodeQL or supported third party tools."
+      isCorrect: true
+      explanation: "Correct! Code analysis can be performed with CodeQL as well as third party tools."
+    - content: "Only supported third party tools"
+      isCorrect: false
+      explanation: "Incorrect. Supported third party tools can be used for code analysis with GitHub Actions, but that is not the only tool for code analysis."
