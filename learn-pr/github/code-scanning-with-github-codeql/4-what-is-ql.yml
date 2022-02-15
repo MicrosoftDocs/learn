@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/4-what-is-ql.md)]
+    [!include[](includes/4-what-is-ql.md)]
   quiz:
     title: What is QL?
     questions:
