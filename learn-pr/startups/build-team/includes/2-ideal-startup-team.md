@@ -104,50 +104,14 @@ Below are several broad functional roles that need to be filled in most early-st
 
 However, it's critical to make sure that every member of the team is clear on which functional role(s) they're responsible for, and that all roles are covered (or you have a plan for how to cover them as you grow your team).
 
-### Leadership
-
-Key tasks:
-
-- Communicate the vision for the company
-- Primary point of engagement with external stakeholders such as investors and the media
-- Primary responsibility for day-to-day decision-making, although likely to involve all cofounders in many decisions
-- Financial oversight, often utilizing an external accountant on an as-needed basis
-- Raising external capital if needed
-
-### Product development
-
-Key tasks:
-
-- Build the MVP
-- Choose the tech stack and cloud services
-- Build the product
-- Product management
-- Track key usage metrics
-- Manage additional developers
-
-### Design
-
-Key tasks:
-
-- Lead UX and UI development
-- Work closely with product development team
-- Brand strategy and brand management
-- Support digital marketing and sales team with visual assets as required
-
-### Digital marketing
-
-Key tasks:
-
-- Customer acquisition including paid and unpaid channels
-- Engage specialists (ad creation, copy writing, content marketing, etc.) as needed
-
-### Customer success
-
-Key task: Onboard customers and ensure they have the tools, training, and support needed to successfully use the product
-
-### Sales and business development
-
-Key task: Engage with customers and partners to close sales or partnership deals
+|Functional role|Key tasks|
+|---|---|
+|Leadership|Communicate the vision for the company<br><br>Primary point of engagement with external stakeholders such as investors and the media<br><br>Primary responsibility for day-to-day decision-making, although likely to involve all cofounders in many decisions<br><br>Financial oversight, often utilizing an external accountant on an as-needed basis<br><br>Raising external capital if needed|
+|Product development|Build the MVP<br><br>Choose the tech stack and cloud services<br><br>Build the product<br><br>Product management<br><br>Track key usage metrics<br><br>Manage additional developers|
+|Design|Lead UX and UI development<br><br>Work closely with product development team<br><br>Brand strategy and brand management<br><br>Support digital marketing and sales team with visual assets as required|
+|Digital marketing|Customer acquisition including paid and unpaid channels<br><br>Engage specialists (ad creation, copy writing, content marketing, etc.) as needed|
+|Customer success|Onboard customers and ensure they have the tools, training, and support needed to successfully use the product|
+|Sales and business development|Engage with customers and partners to close sales or partnership deals|
 
 ## Founder, employee or contractor
 
@@ -186,32 +150,11 @@ Once the company has funding, either from customer revenues or external investme
 
 Below are some pros and cons of bringing in a cofounder versus hiring employees or contractors.
 
-### Cofounder
-
-|Pros|Cons|
-|---|---|
-|High level of commitment to success of the startup|Small talent pool to draw from (typically limited to people you know personally)|
-|May be willing to work for little or no salary|Hard to get someone to make a commitment if your startup is still unproven and they're leaving a paid job|
-|Primary financial objective is to create long-term value (realized at exit)|Hard to remove from the company if they don't perform|
-
-### Employee
-
-|Pros|Cons|
-|---|---|
-|Can recruit from a large talent pool and bring in very specific skills|Often not as committed as founders|
-|Can create some incentive to stay and perform via issuing stock options|May leave if they receive a better offer from another company|
-|Can terminate employment if they don't perform|Often need to pay a competitive salary, burning through the company's cash faster|
-||Viable only once there's a substantive ongoing need for their particular skill set|
-
-### Contractor
-
-|Pros|Cons|
-|---|---|
-|Can engage for short periods or specific tasks, even when the startup is still unproven|Likely to have less commitment than founders or employees|
-|Can utilize freelancing platforms to hire from a large talent pool including low cost-of-labor countries|Can be more difficult to manage, particularly if in a different country or time zone|
-|Can generally access ratings and feedback from previous clients|Need to pay, often either an hourly rate or an agreed project fee|
-|Can scale up or down (or terminate) their time commitment as needed|Motivation is to get the job done and get paid, rather than to create long-term value|
-|Good way to evaluate someone who could become an employee in the future|Availability and responsiveness may change if they give other projects higher priority|
+||Pros|Cons|
+|---|---|---|
+|**Cofounder**|High level of commitment to success of the startup<br><br>May be willing to work for little or no salary<br><br>Primary financial objective is to create long-term value (realized at exit)|Small talent pool to draw from (typically limited to people you know personally)<br><br>Hard to get someone to make a commitment if your startup is still unproven and they're leaving a paid job<br><br>Hard to remove from the company if they don't perform|
+|**Employee**|Can recruit from a large talent pool and bring in very specific skills<br><br>Can create some incentive to stay and perform via issuing stock options<br><br>Can terminate employment if they don't perform|Often not as committed as founders<br><br>May leave if they receive a better offer from another company<br><br>Often need to pay a competitive salary, burning through the company's cash faster<br><br>Viable only once there's a substantive ongoing need for their particular skill set|
+|**Contractor**|Can engage for short periods or specific tasks, even when the startup is still unproven<br><br>Can utilize freelancing platforms to hire from a large talent pool including low cost-of-labor countries<br><br>Can generally access ratings and feedback from previous clients<br><br>Can scale up or down (or terminate) their time commitment as needed<br><br>Good way to evaluate someone who could become an employee in the future|Likely to have less commitment than founders or employees<br><br>Can be more difficult to manage, particularly if in a different country or time zone<br><br>Need to pay, often either an hourly rate or an agreed project fee<br><br>Motivation is to get the job done and get paid, rather than to create long-term value<br><br>Availability and responsiveness may change if they give other projects higher priority|
 
 ## Task: Evaluate resourcing requirements
 
