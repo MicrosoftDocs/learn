@@ -2,9 +2,9 @@ When you work on Bicep code, the main branch of your Git repository becomes the 
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. Although you use Git, every change is committed to your repository's main branch. You also find it hard to keep track of the changes your team is making.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. Recently, a new team member accidentally changed an important Bicep file on your repository's main branch, which caused a production issue for your organization.
 
-You talk to your team and decide that you should review your code changes before they're merged and deployed.
+You talk to your team and decide that it's time you start to review your code changes before they're merged and deployed.
 
 ## What will we be doing?
 
