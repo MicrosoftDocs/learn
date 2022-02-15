@@ -41,11 +41,11 @@ quiz:
     - content: "The final step of CodeQL analysis is:"
       choices:
     - content: "Interpreting the results"
-        isCorrect: true
-        explanation: "Correct!"
+      isCorrect: true
+      explanation: "Correct!"
     - content: "Running CodeQL queries against the database"
-        isCorrect: false
-        explanation: "Running CodeQL queries against the database is the second step of CodeQL analysis."
+      isCorrect: false
+      explanation: "Running CodeQL queries against the database is the second step of CodeQL analysis."
     - content: "Creating a CodeQL database"
-        isCorrect: false
-        explanation: "Creating a CodeQL database is the first step of CodeQL analysis."
+      isCorrect: false
+      explanation: "Creating a CodeQL database is the first step of CodeQL analysis."
