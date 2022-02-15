@@ -106,14 +106,14 @@ In this exercise, you will:
     ```
 3.  The test connection should fail, and you will see a result similar to the following:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/test-netconnection-fail-41df8b2b.png" alt-text="Test-NetConnection failed.":::
+:::image type="content" source="../media/test-netconnection-fail-41df8b2b.png" alt-text="Test-NetConnection failed.":::
 
 
 ## Task 6: Create CoreServicesVnet Gateway
 
 1.  In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/virtual-network-gateway-search-0baf93c0.png" alt-text="Search for virtual network gateway on Azure portal.":::
+:::image type="content" source="../media/virtual-network-gateway-search-0baf93c0.png" alt-text="Search for virtual network gateway on Azure portal.":::
 
 
 2.  In Virtual network gateways, select **+ Create**.
@@ -226,7 +226,7 @@ You will not be able to complete this configuration until the virtual network ga
 1.  In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
 2.  Wait until the status of both connections is **Connected**. You may need to refresh your screen.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connections-status-connected-a6a99c0a.png" alt-text="VPN Gateway connections successfully created.":::
+:::image type="content" source="../media/connections-status-connected-a6a99c0a.png" alt-text="VPN Gateway connections successfully created.":::
 
 
 ## Task 11: Test the connection between the VMs
@@ -240,7 +240,7 @@ You will not be able to complete this configuration until the virtual network ga
     ```
 3.  The test connection should succeed, and you will see a result similar to the following:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/test-connection-succeeded-ad24c05a.png" alt-text="Test-NetConnection succeeded.":::
+:::image type="content" source="../media/test-connection-succeeded-ad24c05a.png" alt-text="Test-NetConnection succeeded.":::
 
 
 Congratulations! You have configured a VNet-to-VNet connection by using a virtual network gateway.

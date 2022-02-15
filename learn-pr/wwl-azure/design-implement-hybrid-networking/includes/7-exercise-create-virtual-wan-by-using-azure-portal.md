@@ -14,7 +14,7 @@ In this exercise, you will:
 1.  From a browser, navigate to the Azure portal and sign in with your Azure account.
 2.  In the portal, type Virtual WAN into the search box and select **Virtual WANs** from the results list.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/search-for-virtual-wan-011e993a.png" alt-text="Search for Virtual WAN in Azure portal.":::
+:::image type="content" source="../media/search-for-virtual-wan-011e993a.png" alt-text="Search for Virtual WAN in Azure portal.":::
 
 
 3.  On the Virtual WAN page, select + **Create**.
@@ -34,7 +34,8 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
 1.  Locate the Virtual WAN that you created.
 2.  On the Virtual WAN page, under **Connectivity**, select **Hubs**.
-3.  On the Hubs page, select **+New Hub** to open the Create virtual hub page. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/create-vwan-hub-fcc2ec0d.png" alt-text="Create Virtual Hub, Basics tab.":::
+3.  On the Hubs page, select **+New Hub** to open the Create virtual hub page. 
+:::image type="content" source="../media/create-vwan-hub-fcc2ec0d.png" alt-text="Create Virtual Hub, Basics tab.":::
     
 4.  On the Create virtual hub page **Basics** tab, complete the following fields:
     
@@ -56,7 +57,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1.  Locate the Virtual WAN that you created.
 2.  In ContosoVirtualWAN, under **Connectivity**, select **Virtual network connections**.
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/connect-vnet-virtual-hub-2684c13e.png" alt-text="Virtual WAN configuration page with Virtual network connections highlighted.":::
+:::image type="content" source="../media/connect-vnet-virtual-hub-2684c13e.png" alt-text="Virtual WAN configuration page with Virtual network connections highlighted.":::
 
 
 3.  On ContosoVirtualWAN \| Virtual network connections, select **+ Add connection**.

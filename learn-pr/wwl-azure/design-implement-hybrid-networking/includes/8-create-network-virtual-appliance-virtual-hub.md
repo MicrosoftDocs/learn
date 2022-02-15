@@ -6,7 +6,7 @@ The NVAs available in the Azure Marketplace can be deployed directly into a virt
 
 The following diagram shows the NVA deployment process:
 
-\[!div class="mx-imgBorder"\] :::image type="content" source="../media/nva-high-level-process-836b75d2.png" alt-text="NVA deployment process.":::
+:::image type="content" source="../media/nva-high-level-process-836b75d2.png" alt-text="NVA deployment process.":::
 
 
 Although each NVA offers support for different CPEs and has a slightly different user experience, they all offer a Managed Application experience through Azure Marketplace, NVA Infrastructure Unit-based capacity and billing, and Health Metrics surfaced through Azure Monitor.
@@ -28,12 +28,15 @@ You still need to create Hub-to-VNet connections to connect your Virtual WAN hub
 
 In this step, you will create a Network Virtual Appliance in the hub. The procedure for each NVA will be different for each NVA partner's product. For this example, we are creating a Barracuda CloudGen WAN Gateway.
 
-1.  Locate the Virtual WAN hub you created in the previous step and open it. \[!div class="mx-imgBorder"\]  :::image type="content" source="../media/nva-hub-eec1b931.png" alt-text="screenshot of Azure Virtual WAN resource ion the Azure portal.":::
+1.  Locate the Virtual WAN hub you created in the previous step and open it. 
+:::image type="content" source="../media/nva-hub-eec1b931.png" alt-text="screenshot of Azure Virtual WAN resource ion the Azure portal.":::
   
 2.  Find the Network Virtual Appliances tile and select the Create link.
-3.  On the Network Virtual Appliance blade, select Barracuda CloudGen WAN, then select the Create button. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/select-nva-0c5ab0b6.png" alt-text="screenshot of Network Virtual Appliance configuration blade in Azure portal":::
+3.  On the Network Virtual Appliance blade, select Barracuda CloudGen WAN, then select the Create button. 
+:::image type="content" source="../media/select-nva-0c5ab0b6.png" alt-text="screenshot of Network Virtual Appliance configuration blade in Azure portal":::
     
-4.  This will take you to the Azure Marketplace offer for the Barracuda CloudGen WAN gateway. Read the terms, then select the **Create** button when you're ready. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/barracuda-create-basics-d11c3a3c.png" alt-text="Azure portal screenshot of creating a Barracuda CloudGen WAN gateway":::
+4.  This will take you to the Azure Marketplace offer for the Barracuda CloudGen WAN gateway. Read the terms, then select the **Create** button when you're ready. 
+:::image type="content" source="../media/barracuda-create-basics-d11c3a3c.png" alt-text="Azure portal screenshot of creating a Barracuda CloudGen WAN gateway":::
     
 5.  On the Basics page you will need to provide the following information:
     
@@ -42,7 +45,8 @@ In this step, you will create a Network Virtual Appliance in the hub. The proced
      -  **Region** \- Choose the same Region in which your Virtual hub resource is located.
      -  **Application Name** \- The Barracuda NextGen WAN is a Managed Application. Choose a name that makes it easy to identify this resource, as this is what it will be called when it appears in your subscription.
      -  **Managed Resource Group** \- This is the name of the Managed Resource Group in which Barracuda will deploy resources that are managed by them. The name should be pre-populated.
-6.  Select the Next: CloudGen WAN gateway button. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/barracuda-cloudgen-wan-ebe559b5.png" alt-text="screenshot":::
+6.  Select the Next: CloudGen WAN gateway button. 
+:::image type="content" source="../media/barracuda-cloudgen-wan-ebe559b5.png" alt-text="screenshot":::
     
 7.  Provide the following information here:
     
