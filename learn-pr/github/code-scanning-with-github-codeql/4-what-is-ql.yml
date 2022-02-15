@@ -13,22 +13,22 @@ metadata:
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/4-what-is-ql.md)]
-  quiz:
-    title: What is QL?
-    questions:
-    - content: "What feature does QL add to the Datalog programming language?"
-      choices:
-      - content: "Support for aggregates"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "Recursive predicates"
-        isCorrect: false
-        explanation: "QL inherits recursive predicates from Datalog."
-    - content: "One major difference between QL and general purpose programming languages is:"
-      choices:
-      - content: "QL does not have any imperative features such as assignments to variables or file system operations."
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "QL does not have object-oriented features like classes and inheritance."
-        isCorrect: false
-        explanation: "QL is an object-oriented language that does make use of classes and inheritance."
+quiz:
+  title: What is QL?
+  questions:
+  - content: "What feature does QL add to the Datalog programming language?"
+    choices:
+    - content: "Support for aggregates"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Recursive predicates"
+      isCorrect: false
+      explanation: "QL inherits recursive predicates from Datalog."
+  - content: "One major difference between QL and general purpose programming languages is:"
+    choices:
+    - content: "QL does not have any imperative features such as assignments to variables or file system operations."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "QL does not have object-oriented features like classes and inheritance."
+      isCorrect: false
+      explanation: "QL is an object-oriented language that does make use of classes and inheritance."
