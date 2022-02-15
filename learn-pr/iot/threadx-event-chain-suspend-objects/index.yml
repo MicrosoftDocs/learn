@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.iot.threadx-event-chain-suspend-objects
+metadata:
+  title: Use event-chaining to suspend multiple objects in ThreadX
+  description: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX..
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use event-chaining to suspend multiple objects in ThreadX
+summary: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX.
+abstract:  | 
+  In this module, you will:
+  - Understand the ThreadX-unique concept of event-chaining.
+  - Understand how to have one thread suspend on multiple objects.
+  - Understand the concept of notification callback functions.
+  - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio. 
+prerequisites: |
+  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - Working knowledge of C or C++, GitHub and Visual Studio
+  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+iconUrl: /learn/achievements/iot/threadx-event-chain-suspend-objects.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+- azure-rtos
+units:
+- learn.iot.threadx-event-chain-suspend-objects.1-introduction
+- learn.iot.threadx-event-chain-suspend-objects.2-overview
+- learn.iot.threadx-event-chain-suspend-objects.3-functions
+- learn.iot.threadx-event-chain-suspend-objects.4-scenario
+- learn.iot.threadx-event-chain-suspend-objects.5-activities
+- learn.iot.threadx-event-chain-suspend-objects.6-design-considerations
+- learn.iot.threadx-event-chain-suspend-objects.7-building-blocks
+- learn.iot.threadx-event-chain-suspend-objects.8-exercise-build-debug
+- learn.iot.threadx-event-chain-suspend-objects.9-knowledge-check
+- learn.iot.threadx-event-chain-suspend-objects.10-summary
+badge:
+  uid: learn.iot.threadx-event-chain-suspend-objects.badge 
+

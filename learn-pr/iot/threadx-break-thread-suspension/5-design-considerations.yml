@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-break-thread-suspension.5-design-considerations
+title: Design considerations
+metadata:
+  title: Design considerations
+  description: Design considerations.
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-design-considerations.md)]

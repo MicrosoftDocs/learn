@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.iot.introduction-azure-rtos
+metadata:
+  title: Introduction to Azure RTOS
+  description: Description TBD
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure RTOS
+summary: Summary TBD
+abstract:  | 
+  In this module, you will:
+  - TBD
+
+prerequisites: |
+  - None, although a working knowledge of C or C++, GitHub and Visual Studio will be most helpful.
+iconUrl: /learn/achievements/iot/introduction-azure-rtos.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+units:
+ - learn.iot.introduction-azure-rtos.1-introduction
+ - learn.iot.introduction-azure-rtos.2-set-up-environment
+badge:
+  uid: learn.iot.introduction-azure-rtos.badge 

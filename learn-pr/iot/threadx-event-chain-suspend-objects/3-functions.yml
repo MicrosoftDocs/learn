@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-chain-suspend-objects.3-functions
+title: Notification callback functions
+metadata:
+  title: Notification callback functions
+  description: Learn how to create notification callback functions.
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-functions.md)]

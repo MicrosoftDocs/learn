@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-break-thread-suspension.3-activities
+title: Project activities
+metadata:
+  title: Project activities
+  description: Project activities.
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-activities.md)]

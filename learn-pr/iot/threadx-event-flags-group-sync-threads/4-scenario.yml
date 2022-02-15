@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-flags-group-sync-threads.4-scenario
+title: Event flags group project scenario
+metadata:
+  title: Event flags group project scenario
+  description: Learn about the event flags group project scenario.
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-scenario.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-break-thread-suspension.2-overview
+title: Thread suspension overview
+metadata:
+  title: Thread suspension overview
+  description: Learn about thread suspension.
+  ms.date: 09/15/2020
+  author: EdLamie
+  ms.author: pacote
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-overview.md)]

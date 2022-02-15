@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.iot.azure-rtos-threadx-fundamentals
+metadata:
+  title: Azure RTOS ThreadX fundamentals
+  description: Learn the fundamentals of Azure RTOS ThreadX.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+title: Azure RTOS ThreadX fundamentals
+
+summary: Learn the fundamentals of Azure RTOS ThreadX.
+
+abstract:  | 
+  In this module, you will:
+  - Learn Azure RTOS ThreadX concepts such as scheduling, determinism, priorities, preemption, and threads.
+  - Explore the services of an RTOS and how they can be used.
+  - Learn about context switches.
+
+prerequisites: |
+  - Working knowledge of C or C++
+  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+
+iconUrl: /learn/achievements/iot/azure-rtos-threadx-fundamentals.svg
+
+levels:
+- beginner
+
+roles:
+- developer
+
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+
+units:
+- learn.iot.azure-rtos-threadx-fundamentals.1-introduction
+- learn.iot.azure-rtos-threadx-fundamentals.3-determinism
+- learn.iot.azure-rtos-threadx-fundamentals.4-scheduling
+- learn.iot.azure-rtos-threadx-fundamentals.5-priorities
+- learn.iot.azure-rtos-threadx-fundamentals.6-threads-stacks
+- learn.iot.azure-rtos-threadx-fundamentals.7-priority-based-preemption
+- learn.iot.azure-rtos-threadx-fundamentals.8-context-switches
+- learn.iot.azure-rtos-threadx-fundamentals.9-knowledge-check
+- learn.iot.azure-rtos-threadx-fundamentals.10-summary
+
+badge:
+  uid: learn.iot.azure-rtos-threadx-fundamentals.badge 
