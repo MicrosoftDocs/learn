@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2022
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Offline processing."
       isCorrect: false
       explanation: "Incorrect. The source is a continuous stream of data and the requirement is for real-time reporting. This requires the data processing solution to be running continuously, not offline."
-  - content: "You need to process a stream of stock price data from a real-time stock market feed that is captured in an Azure vent hub, filter the data to include only prices for a specific list of stocks, and store the filtered results in Azure SQL Database. Which service should you use to filter the data?"
+  - content: "You need to process a stream of stock price data from a real-time stock market feed that is captured in an Azure Event hub, filter the data to include only prices for a specific list of stocks, and store the filtered results in Azure SQL Database. Which service should you use to filter the data?"
     choices:
     - content: "Azure Batch."
       isCorrect: false

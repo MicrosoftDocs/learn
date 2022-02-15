@@ -1,20 +1,21 @@
 Here, we'll discuss how Azure Data Explorer works behind the scenes. First, you'll learn a bit about the major components of the system. Then, you'll learn about how you interact with the service by exploring a common workflow:  data ingestion, Kusto Query Language, and data visualization. This knowledge will help you decide if Azure Data Explorer is a good fit for your data needs.
 
-We'll discuss: 
+We'll discuss:
+
 * Major components
 * Data ingestion
 * Kusto Query Language
 * Visualization
 
-:::image type="content" source="../../media/overview-architecture.png" alt-text="Image representing architecture of Azure Data Explorer and data connections in and out of the service.":::
+:::image type="content" source="../media/overview-architecture.png" alt-text="Image representing architecture of Azure Data Explorer and data connections in and out of the service.":::
 
 ## Major components
 
-An Azure Data Explorer cluster does all the work to ingest, process, and query your data. The clusters are auto-scalable according to your needs. Azure Data Explorer also stores the data on Azure Storage and caches some of this data on the cluster compute nodes to achieve optimal query performance. 
+An Azure Data Explorer cluster does all the work to ingest, process, and query your data. The clusters are auto-scalable according to your needs. Azure Data Explorer also stores the data on Azure Storage and caches some of this data on the cluster compute nodes to achieve optimal query performance.
 
 ### What's in an Azure Data Explorer cluster?
 
-Each Azure Data Explorer **cluster** can hold up to 10,000 **databases** and each database up to 10,000 **tables**. The data in each table is stored in data shards also called “extents”. All data is automatically indexed and partitioned based on the ingestion time. Unlike a relational database, there are no primary foreign key constraints or any other constraints, such as uniqueness. This means you can store a lot of varied data and because of the way it's stored, you get fast access to querying it.
+Each Azure Data Explorer **cluster** can hold up to 10,000 **databases** and each database up to 10,000 **tables**. The data in each table is stored in data shards also called "extents". All data is automatically indexed and partitioned based on the ingestion time. Unlike a relational database, there are no primary foreign key constraints or any other constraints, such as uniqueness. This means you can store a lot of varied data and because of the way it's stored, you get fast access to querying it.
 
 The logical structure of a **database** is similar to many other relational databases. An Azure Data Explorer database can contain:
 
@@ -43,10 +44,10 @@ Kusto Query Language is an expressive, intuitive, and highly productive query la
 
 ### How can I display my query results?
 
-The Azure Data Explorer Web UI was designed with big data in mind, enabling you to run queries and build dashboards. It supports a display of up to 500 K records and thousands of columns. It’s highly scalable and rich with functionality that helps you draw quick insights from your data. You can also use different visual displays of your data in your Azure Data Explorer Dashboards. You can also display your results using native connectors to some of the leading visualization services available today, such as Power BI and Grafana. Azure Data Explorer also has ODBC and JDBC connector support to tools such as Tableau and Qlik.
+The Azure Data Explorer Web UI was designed with big data in mind, enabling you to run queries and build dashboards. It supports a display of up to 500 K records and thousands of columns. It's highly scalable and rich with functionality that helps you draw quick insights from your data. You can also use different visual displays of your data in your Azure Data Explorer Dashboards. You can also display your results using native connectors to some of the leading visualization services available today, such as Power BI and Grafana. Azure Data Explorer also has ODBC and JDBC connector support to tools such as Tableau and Qlik.
 
 ### How do I manage my data?
 
 Admins will want to perform a variety of maintenance and policy tasks on their Azure Data Explorer clusters. Control commands include the creation of new cluster or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, managing permissions, and security policies. They can modify materialized views (continually updated filtered views of other tables), functions (stored functions and user-defined functions), and the update policy (functions that are triggered following ingestion).
 
-Control commands are run directly on the engine using the WebUI, the Azure portal, various query tools, or one of the Azure Data Explorer SDKs. 
+Control commands are run directly on the engine using the WebUI, the Azure portal, various query tools, or one of the Azure Data Explorer SDKs.

@@ -52,20 +52,13 @@ More than this, startups also need a range of skill sets and perspectives, and j
 
 Complete the following startup skills checklist to see how your team stacks up. There's no absolutely right mix of skills, but if you find there's an obvious gap now is a good time to start working on filling it.
 
-&#9744; More than one founder
-
-&#9744; Diverse backgrounds and perspectives
-
-&#9744; Domain expertise relevant to the target market
-
-&#9744; Tech skills suited to building the product
-
-&#9744; Design skills
-
-&#9744; Sales skills
-
-&#9744; Communication skills
-
+&#9744; More than one founder\
+&#9744; Diverse backgrounds and perspectives\
+&#9744; Domain expertise relevant to the target market\
+&#9744; Tech skills suited to building the product\
+&#9744; Design skills\
+&#9744; Sales skills\
+&#9744; Communication skills\
 &#9744; Leadership skills
 
 ## Intense customer pain
@@ -187,22 +180,14 @@ In this unit, we've discussed nine shared attributes of successful companies. In
 
 Don't be concerned if you don't get all nine. By completing the remaining modules in the Microsoft for Startups Founders Hub, you'll have an opportunity to address any areas where your startup is currently lacking.
 
-&#9744; Based on a non-obvious idea
-
-&#9744; Founded by the right team
-
-&#9744; Addresses intense customer pain
-
-&#9744; Has a scalable business model
-
-&#9744; Represents a large market opportunity
-
-&#9744; Benefits from advantageous timing
-
-&#9744; Takes advantage of market tailwinds
-
-&#9744; Has an inherently shareable product
-
+&#9744; Based on a non-obvious idea\
+&#9744; Founded by the right team\
+&#9744; Addresses intense customer pain\
+&#9744; Has a scalable business model\
+&#9744; Represents a large market opportunity\
+&#9744; Benefits from advantageous timing\
+&#9744; Takes advantage of market tailwinds\
+&#9744; Has an inherently shareable product\
 &#9744; Has a business model based on recurring revenues
 
 Score: __ / 9

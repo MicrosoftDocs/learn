@@ -13,5 +13,6 @@ We applied these criteria to fit our fictional clothing company. The analysis sh
 The criteria help you evaluate whether your business processes are a good match for Azure Data Explorer. First, they give you an idea of the types and volumes of data that are appropriate for use with Azure Data Explorer. Second, they give you an idea of customization and user behavior that most benefits from work in Azure Data Explorer. This process should give you enough information to choose the right product for your work.
 
 ## References
+
 * [Azure Data Explorer documentation](/azure/data-explorer/)
 * [What is Azure Data Explorer?](/azure/data-explorer/data-explorer-overview)

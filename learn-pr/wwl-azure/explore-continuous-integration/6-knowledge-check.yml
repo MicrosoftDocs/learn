@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Version Control System."
       isCorrect: false
-      explanation: "Incorrect. The four pillars of CI is Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
+      explanation: "Incorrect. The four pillars of CI are Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
     - content: "Automated Build Process."
       isCorrect: false
-      explanation: "Incorrect. The four pillars of CI is Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
+      explanation: "Incorrect. The four pillars of CI are Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
     - content: "Automated Deploy Process."
       isCorrect: true
-      explanation: "Correct. The four pillars of CI is Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
+      explanation: "Correct. The four pillars of CI are Version Control System, Packet Management System, Continuous Integration System, and an Automated Build Process."
   - content: "Which of the following choices describe the status of a build pipeline that will queue new build requests and not start them?"
     choices:
     - content: "Disabled."
