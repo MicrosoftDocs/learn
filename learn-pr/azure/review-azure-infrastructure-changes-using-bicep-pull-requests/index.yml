@@ -42,7 +42,7 @@ products:
 units:
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.introduction
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching
-- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-enable-branch-protection-create-pull-request
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-enable-branch-protection
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.review-merge-bicep-changes-using-pull-requests
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-create-review-merge-pull-request
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
