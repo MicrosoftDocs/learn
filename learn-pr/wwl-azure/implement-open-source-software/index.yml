@@ -3,7 +3,7 @@ uid: learn.wwl.implement-open-source-software
 metadata:
   title: Implement open-source software
   description: "Implement open-source software"
-  ms.date: 12/02/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Understand the license implications and ratings
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-implement-open-source-software.svg
 levels:
 - advanced
 roles:
