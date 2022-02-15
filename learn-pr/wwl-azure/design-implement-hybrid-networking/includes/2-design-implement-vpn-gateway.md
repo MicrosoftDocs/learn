@@ -143,9 +143,8 @@ To configure your VPN device, you will need:
 
 **The public IP address of your VPN gateway**. The IP address can be new or existing.
 
-\[!NOTE\]
-
-Depending on the VPN device that you have, you may be able to [download a VPN device configuration script](/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) .
+> [!NOTE]
+> Depending on the VPN device that you have, you may be able to [download a VPN device configuration script](/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) .
 
 ### Create the VPN Connection
 

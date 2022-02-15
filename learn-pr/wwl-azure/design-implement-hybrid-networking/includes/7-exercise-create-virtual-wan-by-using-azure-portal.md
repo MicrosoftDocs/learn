@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will create a Virtual WAN for Contoso.
 
@@ -76,7 +77,8 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 
 ## Task 4: Clean up resources
 
-\[!NOTE\] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1.  In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 2.  Delete all resource groups you created throughout the labs of this module by running the following command:

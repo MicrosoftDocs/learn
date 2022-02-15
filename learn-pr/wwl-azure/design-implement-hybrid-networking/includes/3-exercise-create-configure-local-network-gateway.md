@@ -1,4 +1,5 @@
-\[!NOTE\] To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet.
 
@@ -138,9 +139,8 @@ In this exercise, you will:
     |                 |                   |                Configure BGP                |           Disabled           |
     | Review + create |                   | Review your settings and select **Create**. |                              |
 
-\[!NOTE\]
-
-It can take up to 45 minutes to create a virtual network gateway.
+> [!NOTE]
+> It can take up to 45 minutes to create a virtual network gateway.
 
 ## Task 7: Create ManufacturingVnet Gateway
 
@@ -167,9 +167,8 @@ It can take up to 45 minutes to create a virtual network gateway.
     |                 |                   |                Configure BGP                |           Disabled           |
     | Review + create |                   | Review your settings and select **Create**. |                              |
 
-\[!NOTE\]
-
-It can take up to 45 minutes to create a virtual network gateway.
+> [!NOTE]
+> It can take up to 45 minutes to create a virtual network gateway.
 
 ## Task 8: Connect CoreServicesVnet to ManufacturingVnet
 
@@ -177,9 +176,8 @@ It can take up to 45 minutes to create a virtual network gateway.
 2.  In Virtual network gateways, select **CoreServicesVnetGateway**.
 3.  In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-\[!NOTE\]
-
-You will not be able to complete this configuration until the virtual network gateways are fully deployed.
+> [!NOTE]
+> You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
 4.  Use the information in the following table to create the connection:
     
