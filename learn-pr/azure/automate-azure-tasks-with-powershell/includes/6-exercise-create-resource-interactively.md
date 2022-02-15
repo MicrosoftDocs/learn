@@ -1,17 +1,17 @@
-Recall our original scenario - creating VMs to test our CRM software. When a new build is available, we want to spin up a new VM so we can test the full install experience from a clean image. When we are finished, we want to delete the VM.
+Recall our original scenario - creating VMs to test our CRM software. When a new build is available, we want to spin up a new VM so we can test the full install experience from a clean image. When we're finished, we want to delete the VM.
 
 Let's try the commands you would use to create a VM.
 
 ## Create a Linux VM with Azure PowerShell
 
-Because we are using the Azure sandbox, you won't have to create a resource group. Instead, use the resource group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
+Because we're using the Azure sandbox, you won't have to create a resource group. Instead, use the resource group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
 
 Let's create a new Azure VM with PowerShell.
 
 1. Use the `New-AzVm` cmdlet to create a VM.
     - Use the resource group **<rgn>[sandbox resource group name]</rgn>**.
-    - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there is more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
-    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the below example command if you are using copy and paste.
+    - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there's more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
+    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the following example command if you're using copy and paste.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
@@ -93,13 +93,13 @@ Let's create a new Azure VM with PowerShell.
 To try out some more commands, let's delete the VM. We'll shut it down first.
 
 ```powershell
-Stop-AzVM -Name $vm.Name -ResourceGroup $vm.ResourceGroupName
+Stop-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
 ```
 
 Now, let's delete the VM by running the `Remove-AzVM` cmdlet.
 
 ```powershell
-Remove-AzVM -Name $vm.Name -ResourceGroup $vm.ResourceGroupName
+Remove-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
 ```
 
 Run this command to list all the resources in your resource group.
@@ -135,19 +135,19 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
 1. Next, delete the virtual network.
 
     ```powershell
-    Get-AzVirtualNetwork -ResourceGroup $vm.ResourceGroupName | Remove-AzVirtualNetwork -Force
+    Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName | Remove-AzVirtualNetwork -Force
     ```
 
 1. Delete the network security group.
 
     ```powershell
-    Get-AzNetworkSecurityGroup -ResourceGroup $vm.ResourceGroupName | Remove-AzNetworkSecurityGroup -Force
+    Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzNetworkSecurityGroup -Force
     ```
 
 1. And finally, delete the public IP address.
 
     ```powershell
-    Get-AzPublicIpAddress -ResourceGroup $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
+    Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
 We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
