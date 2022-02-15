@@ -29,7 +29,7 @@ A *feature branch* indicates a new piece of work you are starting, like a change
 
 You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all of the changes that you need to implement the change. Because all of the code changes are committed to the feature branch, they won't interfere with the main branch of the repository. And, if somebody else on your team needs to make an urgent change to your main branch, they can do that on another feature branch, independent of yours.
 
-You can collaborate on feature branches, too. By publishing and pushing your feature branch to a shared repository, you and your team members can work together on a change. Or, you can hand over a feature to someone else to complete when you go on vacation.
+You can collaborate on feature branches, too. By publishing and pushing your feature branch to the shared repository, you and your team members can work together on a change. Or, you can hand over a feature to someone else to complete when you go on vacation.
 
 ### Update your feature branches
 
@@ -66,7 +66,7 @@ When you've finished working on a feature branch, you need to merge it into your
 In Azure DevOps, you can configure *branch protections*, or *branch policies*, for your main branch. Branch protections enforce rules like:
 
 - No change can be merged to the main branch except through a pull request.
-- Changed need to be reviewed by at least two other people.
+- Changes need to be reviewed by at least two other people.
 
 If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch protection policy works:
 
@@ -82,7 +82,7 @@ The process you've learned about so far is called the  *trunk-based development*
 
 Some teams separate the work that they've completed from the work that they've deployed to production. They use a long-lived *development* branch as the target for merging their feature branches, and they merge the *development* branch to their *main* branch when they release changes to production.
 
-Some other branching strategies require you to create 8release branches*. When you have a set of changes are ready to deploy to production, you create a release branch with the changes to release. These strategies can make sense when you release changes on a regular cadence, or when you are integrating your changes with many other teams.
+Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to release. These strategies can make sense when you release changes on a regular cadence, or when you are integrating your changes with many other teams.
 
 Other branching strategies you might come across include GitFlow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, as well as separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called *cherry picking*. However, they require more management to ensure that your changes are compatible with each other. We provide links to more information on these branching strategies in the summary of this module.
 

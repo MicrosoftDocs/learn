@@ -26,7 +26,7 @@ quiz:
     - content: The pull request's author can push a change to the pull request's source branch.
       isCorrect: true
       explanation: Correct. Pull request authors can continue to push changes to their source branch while the pull request is open.
-  - content: You want to get your colleagues' input on a change you're making to a Bicep file, bug you aren't finished with the change yet. What should you do?
+  - content: You want to get your colleagues' input on a change you're making to a Bicep file, but you aren't finished with the change yet. What should you do?
     choices:
     - content: Create a pull request, and configure branch protection rules to prohibit the branch from being merged.
       isCorrect: false
