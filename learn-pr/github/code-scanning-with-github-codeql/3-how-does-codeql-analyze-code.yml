@@ -14,7 +14,7 @@ durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/3-how-does-codeql-analyze-code.md)]
 quiz:
-  title: Knowledge Check:How does CodeQL analyze code?
+  title: How does CodeQL analyze code?
   questions:
   - content: "To create a database, CodeQL extracts:"
     choices:
@@ -35,7 +35,7 @@ quiz:
     - content: "For compiled languages, extraction works by monitoring the normal build process."
       isCorrect: true
       explanation: "Correct!"
-    - content: "The extractor can run either directly on the source code, or during the build process, depending on how its configured."
+    - content: "The extractor can run either directly on the source code, or during the build process, depending on how it's configured."
       isCorrect: false
       explanation: "The extractor only runs in one way for compiled languages."
   - content: "The final step of CodeQL analysis is:"

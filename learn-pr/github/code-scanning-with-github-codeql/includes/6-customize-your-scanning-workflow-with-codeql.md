@@ -6,8 +6,8 @@ You can run extra queries if they are part of a CodeQL pack (beta) published to 
 
 There are two options for specifying which queries you want to run with CodeQL code scanning:
 
-1. Using your code scanning workflow
-2. Using a custom configuration file
+- Using your code scanning workflow
+- Using a custom configuration file
 
 In this unit, you will learn how to edit a workflow file to reference additional queries, how to use queries from query packs and how to combine queries from a workflow file and a custom configuration file.
 

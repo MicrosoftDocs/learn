@@ -7,7 +7,7 @@ Depending on which tool you want to use for analysis and how you want to generat
 | Third-party | GitHub Actions |
 | Third-party | Generated externally and then uploaded to GitHub |
 
-In this unit, you will learn how to set up code scanning with GitHub Actions, as well as how to perform bulk set up of code scanning for multiple repositories.
+In this unit, you will learn how to setup code scanning with GitHub Actions, as well as how to perform bulk setup of code scanning for multiple repositories.
 
 ## Code scanning with GitHub Actions and CodeQL
 
@@ -15,13 +15,13 @@ To set up code scanning with GitHub Actions and CodeQL on a repository, do the f
 
 1. Go to the **Security** tab of your repository.
 
-:::image type="content" source="../media/security-tab.png" alt-text="Screenshot of the Security tab.":::
+    :::image type="content" source="../media/security-tab.png" alt-text="Screenshot of the Security tab.":::
 
 2. To the right of **Code scanning alerts**, click **Set up code scanning**. If code scanning is missing, this means you need to enable GitHub Advanced Security.
 3. Under **Get started with code scanning**, click **Set up this workflow** on the CodeQL analysis workflow or on a third-party workflow.
 
-> [!Note]
-> Workflows are only displayed if they are relevant for the programming languages detected in the repository. The CodeQL analysis workflow is always displayed, but the "Set up this workflow" button is only enabled if CodeQL analysis supports the languages present in the repository.
+   > [!Note]
+   > Workflows are only displayed if they are relevant for the programming languages detected in the repository. The CodeQL analysis workflow is always displayed, but the "Set up this workflow" button is only enabled if CodeQL analysis supports the languages present in the repository.
 
 4. To customize how code scanning scans your code, edit the workflow. Generally you can commit the CodeQL analysis workflow without making any changes to it. However, many of the third-party workflows require additional configuration, so read the comments in the workflow before committing.
 5. Use the **Start commit** drop-down, and type a commit message.

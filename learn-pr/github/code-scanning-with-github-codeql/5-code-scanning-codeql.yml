@@ -12,9 +12,9 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8 # user input: the estimate time to complete the unit
 content: |
-    [!include[](includes/5-code-scanning-and-codeql.md)]
+    [!include[](includes/5-code-scanning-codeql.md)]
 quiz:
-  title: Knowledge Check:Code scanning and CodeQL
+  title: Code scanning and CodeQL
   questions:
   - content: "What enables you to customize how code scanning analyzes your code?"
     choices:

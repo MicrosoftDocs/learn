@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.code-scanning-with-github-codeql.exercise-configure-language-matrix
-title: Exercise
+title: Exercise - Configure a CodeQL language matrix
 metadata:
   unitType: exercise
   title: "Exercise - Configure a CodeQL language matrix" # user input: module title for browser tab and search results

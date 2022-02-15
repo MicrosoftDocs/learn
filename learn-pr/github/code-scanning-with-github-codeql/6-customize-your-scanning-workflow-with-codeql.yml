@@ -14,7 +14,7 @@ durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
     [!include[](includes/6-customize-your-scanning-workflow-with-codeql.md)]
 quiz:
-  title: Knowledge check:Customize your code scanning workflow with CodeQL - Part 1
+  title: Customize your code scanning workflow with CodeQL - Part 1
   questions:
   - content: "What options are available for referencing other queries in a workflow file?"
     choices:
