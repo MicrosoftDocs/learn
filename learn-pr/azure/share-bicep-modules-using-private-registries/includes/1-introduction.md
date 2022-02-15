@@ -8,7 +8,7 @@ Now, another team has come to you to ask to reuse the same modules for their own
 
 You considered sending the modules to each team by email, but you're worried about how you'll control access and manage different versions. You want to find a way to share the modules throughout your organization, to make it easier for any team to reuse them for future deployments.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram showing the C D N and website modules being published to a registry and used by multiple other deployments." border="false"::: <!-- TODO waiting for final image -->
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram showing the C D N and website modules being published to a registry and used by multiple other deployments." border="false":::
 
 ## What will we be doing?
 
