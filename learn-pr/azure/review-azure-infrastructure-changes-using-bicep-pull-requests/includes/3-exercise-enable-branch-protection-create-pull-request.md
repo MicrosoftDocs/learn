@@ -1,5 +1,17 @@
 After speaking to your team you have decided to build in better confidence in what code makes it to the main branch of your repository by requireing pull requests. In this exercise you will add branch protection to your main branch and only allow new code to be merged to the main branch once it has gone through a review process.
 
+<!--
+Suppose you are working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to add a *message queue*, so that your website can post messages to a queue whenever a customer places an order. An Azure Function will pick up these messages and process them asynchronously.
+
+This is a new feature that needs to be added to the existing template. So, you create a new branch for adding these changes. These changes might include:
+
+- Add a queue to your Bicep template.
+- Update the website's definition in the template so that it has the connection information for the queue.
+- Add the new Azure Function application to the template.
+
+By making these changes on a separate feature branch, you can iterate on them without affecting the code on the main branch. You can work in small batches, making each update with separate commits or merges, so the work is divided and easily managed. But because these updates all happen against your feature branch, they don't affect anything that happens on the main branch, and you'll have no incomplete work on the main branch. Later in this module, you'll see how you can test your changes in an environment completely separate from your development, QA or production environments.
+-->
+
 During the process, you'll: 
 
 > [!div class="checklist"]
