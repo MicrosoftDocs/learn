@@ -9,7 +9,7 @@ Now, you have increased your team's confidence in your Bicep development process
 - Pull requests on Microsoft Learn
     - [Manage repository changes by using pull requests on GitHub](xid:learn.github.manage-changes-pull-requests-github)
     - [Collaborate with pull requests in Azure Repos](xid:learn.wwl.collaborate-pull-requests-azure-repos)
-- [Merge strategies and squash merge](/azure/devops/repos/git/merging-with-squash?view=azure-devops)
+- [Merge strategies and squash merge](/azure/devops/repos/git/merging-with-squash)
 - [Trunk Based Development](https://trunkbaseddevelopment.com/)
 - [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
 - [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
