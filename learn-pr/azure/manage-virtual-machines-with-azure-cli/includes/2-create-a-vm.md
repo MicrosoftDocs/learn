@@ -22,7 +22,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 | `update` | Update a property of a virtual machine |
 
 > [!NOTE]
-> For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index?view=azure-cli-latest).
+> For a complete list of commands, you can check the [Azure CLI reference documentation](/cli/azure/reference-index).
 
 Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 

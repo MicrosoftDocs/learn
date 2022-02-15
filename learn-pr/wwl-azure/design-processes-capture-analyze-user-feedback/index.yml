@@ -3,7 +3,7 @@ uid: learn.wwl.design-processes-to-capture-analyze-user-feedback
 metadata:
   title: Design processes to capture and analyze user feedback
   description: "Design processes to capture and analyze user feedback"
-  ms.date: 11/29/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Create alerts using additional release gates
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-design-processes-to-capture-and-analyze-user-feedback.svg
 levels:
 - advanced
 roles:
