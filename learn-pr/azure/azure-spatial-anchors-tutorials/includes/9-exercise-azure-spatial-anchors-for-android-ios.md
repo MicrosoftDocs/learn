@@ -52,7 +52,7 @@ In this section, you'll configure your project to build and deploy it to an Andr
 
     [!INCLUDE[](includes/build-application-to-android-device.md)]
 
-4. In the **Build Settings** dialog, select the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then use a USB cable to connect your Android device to your computer and select it from the **Run Device** dropdown list.
+4. In the **Build Settings** dialog, select the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Use a USB cable to connect your Android device to your computer, and the select the device from the **Run Device** dropdown list.
 
     :::image type="content" source="../media/run-device-dropdown.png" alt-text="Screenshot of the Run Device dropdown list." lightbox="../media/run-device-dropdown.png":::
 
@@ -61,7 +61,7 @@ In this section, you'll configure your project to build and deploy it to an Andr
 
 5. In the **Build Settings** dialog, select the **Build And Run** button to open the **Build Android** dialog.
 
-6. Choose a suitable location to store your build &mdash; for example, *D:\MixedRealityLearning\Builds*. Give the .apk file a suitable name &mdash; for example, **MRTKTutorials-AzureSpatialAnchors** &mdash. Then select the **Save** button to start the build process.
+6. Choose a suitable location to store your build&mdash;for example, *D:\MixedRealityLearning\Builds*. Give the .apk file a suitable name&mdash;for example, **MRTKTutorials-AzureSpatialAnchors**. Then select the **Save** button to start the build process.
 
     :::image type="content" source="../media/build-android.png" alt-text="Screenshot of building to Android." lightbox="../media/build-android.png":::
 
@@ -76,7 +76,7 @@ In this section, you'll configure your project to build and deploy it to your iO
 
 1. On the Unity menu, select **File** > **Build Settings** to open the **Build Settings** dialog. Switch the platform to **iOS**.
 
-    :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of build settings and selecting the Apple operating system." lightbox="../media/build-settings.png":::
+    :::image type="content" source="../media/build-settings.png" alt-text="Screenshot of build settings and selecting the operating system." lightbox="../media/build-settings.png":::
 
     >[!Tip]
     >For information on how to switch the build platform, see [Switching the build platform](https://docs.unity3d.com/Manual/BuildSettings.html) in the Unity documentation.
@@ -89,7 +89,7 @@ In this section, you'll configure your project to build and deploy it to your iO
 
     [!INCLUDE[](includes/build-application-to-ios-device.md)]
 
-3. On the Unity menu, select **Edit** > **Project Settings** to open the **Player Settings** dialog. Locate the **Player** > **Other Settings** section, and clear the **Strip Engine Code** checkbox.
+3. On the Unity menu, select **Edit** > **Project Settings** to open the **Player Settings** dialog. Locate the **Player** > **Other Settings** section and clear the **Strip Engine Code** checkbox.
 
     :::image type="content" source="../media/strip-engine-code.png" alt-text="Screenshot of the Strip Engine Code checkbox." lightbox="../media/strip-engine-code.png":::
 
@@ -101,7 +101,7 @@ In this section, you'll configure your project to build and deploy it to your iO
 
 5. In the **Build Settings** dialog, select the **Build** button to open the **Build iOS** dialog.
 
-6. Choose a suitable location to store your Xcode project &mdash; for example, **D:\MixedRealityLearning\Builds** &mdash. Create a new folder and give it a suitable name &mdash; for example, **MRTKTutorials-AzureSpatialAnchors**. Then select the **Select Folder** button to start the build process.
+6. Choose a suitable location to store your Xcode project&mdash;for example, **D:\MixedRealityLearning\Builds**. Create a new folder and give it a suitable name&mdash;for example, **MRTKTutorials-AzureSpatialAnchors**. Then select the **Select Folder** button to start the build process.
 
     :::image type="content" source="../media/select-folder.png" alt-text="Screenshot of selecting a folder." lightbox="../media/select-folder.png":::
 
