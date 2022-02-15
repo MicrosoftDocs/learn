@@ -21,31 +21,23 @@ In another scenario, suppose a team member is working on a feature and pushes ha
 > [!TIP]
 > These problems are particularly difficult for large teams, where multiple people contribute to the same code. But, the guidance in this module is also valuable as soon as you collaborate with more than one person - or even when it is just you working on a project and work on multiple separate features at the same time.
 
-<!-- TODO here -->
-
 ## Changing your process
 
-A better way of working is to have another team member review any changes before they're merged into the main branch of your team's shared repository. This process helps your team to make an informed decision on the change before you approve it to be merged. This review and automated validation process can be achieved by using *pull requests* and *branch protection*.
+A better way of working is to have another team member review any changes before they're merged into the main branch of your team's shared repository. This process helps your team to make an informed decision on the change before you approve it to be merged. This review and automated validation process can be achieved by using *pull requests* and *branch protection*, which you'll learn about soon.
 
 Branch protection is extra configuration you can add to certain branches in your project and that helps you build confidence on the changes that make it into these branches. <!-- TODO maybe move this later -->
 
-## Working with feature branches
+## Feature branches
 
-One easy improvement you can already make to working directly on your main branch is using feature branches. A feature branch indicates a new body of work you are starting, like a new feature you want to add to your code base. Each time you start this new body of work, you create a new branch from the main branch for this body of work. This branch will now contain all the changes you need to implement the new feature. All changes will happen on this feature branch, without interfering with the main branch of the repository.
+A *feature branch* indicates a new piece of work you are starting, like a change to the configuration of a resource defined in your Bicep file, or a new set of resources you need to deploy. Every time you start a new piece of work, you create a new feature branch.
 
-Suppose you are working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to add a *message queue*, so that your website can post messages to a queue whenever a customer places an order. An Azure Function will pick up these messages and process them asynchronously.
+You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all of the changes that you need to implement the change. Because all of the code changes are committed to the feature branch, they won't interfere with the main branch of the repository. And, if somebody else on your team needs to make an urgent change to your main branch, they can do that on another feature branch, independent of yours.
 
-This is a new feature that needs to be added to the existing template. So, you create a new branch for adding these changes. These changes might include:
+<!-- TODO talk about breaking up big changes -->
 
-- Add a queue to your Bicep template.
-- Update the website's definition in the template so that it has the connection information for the queue.
-- Add the new Azure Function application to the template.
+You can collaborate on feature branches, too. By publishing and pushing your feature branch to a shared repository, you and your team members can work together on a change. Or, you can hand over a feature to someone else to complete when you go on vacation.
 
-By making these changes on a separate feature branch, you can iterate on them without affecting the code on the main branch. You can work in small batches, making each update with separate commits or merges, so the work is divided and easily managed. But because these updates all happen against your feature branch, they don't affect anything that happens on the main branch, and you'll have no incomplete work on the main branch. Later in this module, you'll see how you can test your changes in an environment completely separate from your development, QA or production environments.
-
-If someone needs to make an urgent bug fix to your main branch, they can do so without needing to wait for your change to be ready.
-
-You can collaborate on feature branches, too. By publishing and pushing your feature branch to a shared repository, you and your team members can work together on a feature. Or, you can hand over a feature to someone else to complete when you go on vacation.
+<!-- TODO here -->
 
 ### Update your feature branches
 
@@ -72,6 +64,19 @@ Its also good to keep your feature branches small and comprehensible, and avoid 
 > You can use feature flags to support releasing your changes at a certain time, like if you have an announcement. At the release time, you can turn on all of the feature flags by changing your system's configuration.
 >
 > In Bicep code, it's not common to work with feature flags. But when you build a solution that includes custom software, consider using feature flags to disable the parts of your software that aren't yet ready.
+
+<!-- TODO think we can omit
+
+Suppose you are working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to add a *message queue*, so that your website can post messages to a queue whenever a customer places an order. An Azure Function will pick up these messages and process them asynchronously.
+
+This is a new feature that needs to be added to the existing template. So, you create a new branch for adding these changes. These changes might include:
+
+- Add a queue to your Bicep template.
+- Update the website's definition in the template so that it has the connection information for the queue.
+- Add the new Azure Function application to the template.
+
+By making these changes on a separate feature branch, you can iterate on them without affecting the code on the main branch. You can work in small batches, making each update with separate commits or merges, so the work is divided and easily managed. But because these updates all happen against your feature branch, they don't affect anything that happens on the main branch, and you'll have no incomplete work on the main branch. Later in this module, you'll see how you can test your changes in an environment completely separate from your development, QA or production environments.
+-->
 
 ## Pull requests
 
