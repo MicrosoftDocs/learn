@@ -10,8 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers 
 summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about planning and securely deploying Azure Arc-enabled servers at scale.
-abstract: By the end of this module, you'll be able to:
-|
+abstract: |
   - Understand the onboarding process for and benefits of using Microsoft Defender for Cloud with Azure Arc-enabled servers 
   -	Evaluate the benefits of using Microsoft Defender for Servers with Azure Arc-enabled servers 
   -	Understand the onboarding process for and benefits of using Microsoft Sentinel with Azure Arc-enabled servers 
