@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Push a change through the pipeline
   description: Practice the entire process by adding a feature to a branch and then pushing that branch to GitHub.
   ms.date: 05/25/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 19

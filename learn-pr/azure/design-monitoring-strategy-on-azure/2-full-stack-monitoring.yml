@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: During development only 
       isCorrect: false
-      explanation: Monitoring only during development limits problematic code from being deployed but doesn’t provide visibility when the app is live in production.
+      explanation: Incorrect. Monitoring only during development limits problematic code from being deployed but doesn’t provide visibility when the app is live in production.
     - content: In production only
       isCorrect: false
-      explanation: Monitoring only during production provides visibility in to live issues but doesn’t reveal problems and errors during development, QA, and test phases.
+      explanation: Incorrect. Monitoring only during production provides visibility in to live issues but doesn’t reveal problems and errors during development, QA, and test phases.
     - content: During development and while in production
       isCorrect: true
-      explanation: Monitoring applications in development prevent errors and exceptions later in production. By monitoring applications in production, you'll promptly identify problems and risks that affect users.
+      explanation: Correct! Monitoring applications in development prevent errors and exceptions later in production. By monitoring applications in production, you'll promptly identify problems and risks that affect users.
   - content: Which Azure capability offers operations teams a pre-defined monitoring experience across multiple resources?
     choices:
-    - content: Azure Monitor Insights
+    - content: Azure Monitor Application Insights
       isCorrect: true
-      explanation: Several Azure resources have dedicated Insights, which offer curated monitoring experiences with pre-defined visualizations of usage and performance across multiple subscriptions, resource groups and resources for the specific resource type.
+      explanation: Correct! Several Azure resources have dedicated Insights, which offer curated monitoring experiences with pre-defined visualizations of usage and performance across multiple subscriptions, resource groups and resources for the specific resource type.
     - content: Key Vaults
       isCorrect: false
-      explanation: Key vaults are used to safeguard cryptographic keys and other secrets used by cloud apps and services.
+      explanation: Incorrect. Key vaults are used to safeguard cryptographic keys and other secrets used by cloud apps and services.
     - content: Azure Monitor Logs
       isCorrect: false
-      explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
+      explanation: Incorrect. You can analyze and address issues such as exceptions, failures, and availability problems.

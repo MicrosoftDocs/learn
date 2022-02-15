@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add a build badge
   description: Add a build badge to the README.md file on GitHub so others can see its status at a glance.
   ms.date: 05/25/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

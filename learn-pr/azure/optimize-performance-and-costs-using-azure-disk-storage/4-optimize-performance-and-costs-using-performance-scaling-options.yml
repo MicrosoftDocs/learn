@@ -5,11 +5,10 @@ metadata:
   title: Optimize performance and costs using performance-scaling options
   description: Learn about performance-scaling options in Azure Disk Storage.
   ms.date: 06/25/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/4-optimize-performance-and-costs-using-performance-scaling-options.md)]
-

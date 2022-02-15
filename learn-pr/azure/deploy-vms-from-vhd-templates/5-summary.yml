@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 8/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

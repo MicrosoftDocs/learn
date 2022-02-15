@@ -5,8 +5,8 @@ metadata:
   title: Identify suitable scenarios for autoscaling
   description: Identify scenarios for which autoscaling is a suitable solution.
   ms.date: 04/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

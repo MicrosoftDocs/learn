@@ -4,8 +4,8 @@ metadata:
   title: Develop Java web app on Azure using IntelliJ
   description: In this module, you will learn how to use Azure to host your Java web apps, built by using IntelliJ IDEA.
   ms.date: 03/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: bmitchell287
+  ms.author: brendm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop Java web app on Azure using IntelliJ

@@ -6,10 +6,9 @@ metadata:
   title: Exercise - Use page-level resources
   description: Exercise - Use page-level resources.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 content: |
   [!include[](includes/3-exercise-use-page-level-resources.md)]

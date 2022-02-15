@@ -5,11 +5,10 @@ metadata:
   title: Specify the size of a view
   description: Specify the size of a view
   ms.date: 2/10/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 15
 content: |
   [!include[](includes/2-specify-the-size-of-a-view.md)]

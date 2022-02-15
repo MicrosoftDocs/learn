@@ -5,9 +5,9 @@ metadata:
   unitType: introduction
   title: Introduction to Azure Bastion
   description: Provide secure and seamless connectivity to your virtual machines directly in the Azure portal
-  ms.date: 03/12/2021  
-  author: micrum  
-  ms.author: micrum  
+  ms.date: 03/12/2021
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

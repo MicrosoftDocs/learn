@@ -5,8 +5,8 @@ metadata:
   title: Use an indexer to build an index
   description: "Use an indexer to build an index"
   ms.date: 02/07/2022
-  author: wwlpublish
-  ms.author: robmcm
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

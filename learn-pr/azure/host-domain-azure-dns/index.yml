@@ -4,8 +4,8 @@ metadata:
   title: Host your domain on Azure DNS
   description: Learn how to host your domain on Azure DNS.
   ms.date: 03/13/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Host your domain on Azure DNS

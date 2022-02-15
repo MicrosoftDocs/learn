@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Group rows by the first letter of the name
   description: "In this exercise, you'll group the rows into sections based on the first letter of the device name."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Exercise - Group rows by the first letter of the name
 durationInMinutes: 12
 content: |

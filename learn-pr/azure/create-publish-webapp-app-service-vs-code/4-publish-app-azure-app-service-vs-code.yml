@@ -5,8 +5,8 @@ metadata:
   title: Publish your application to Azure App Service with Visual Studio Code
   description: In this unit, you'll learn how to deploy a webapp to Azure App Service with Visual Studio Code.
   ms.date: 04/23/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

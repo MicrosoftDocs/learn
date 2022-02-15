@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.communicate-using-markdown.3-enable-code-scanning-with-third-party-tools
+title: Enable code scanning with third party tools
+metadata:
+  unitType: Enable code scanning with third party tools 
+  title: Enable code scanning with third party tools 
+  description: In this unit, you'll learn how to enable code scanning with third party tools and how to use and upload SARIF files.
+  ms.date: 02/8/2022
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-enable-code-scanning-with-third-party-tools.md)]
