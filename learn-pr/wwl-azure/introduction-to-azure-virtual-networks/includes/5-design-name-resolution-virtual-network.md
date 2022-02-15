@@ -54,7 +54,8 @@ It's important to understand the difference between DNS record sets and individu
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
-The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/dns-record-set-2-dbd92ba6.png" alt-text="Screenshot of the Add a record page.":::
+The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried. 
+:::image type="content" source="../media/dns-record-set-2-dbd92ba6.png" alt-text="Screenshot of the Add a record page.":::
 
 
 ## Private DNS services
@@ -103,7 +104,8 @@ For scenarios which require more flexibility than Internal DNS allows, you can c
 
 ### Create a private DNS zone by using the portal
 
-You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI. \[!div class="mx-imgBorder"\] :::image type="content" source="../media/search-private-dns-ff4a44fc.png" alt-text="Azure portal - create private DNS zone.":::
+You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI. 
+:::image type="content" source="../media/search-private-dns-ff4a44fc.png" alt-text="Azure portal - create private DNS zone.":::
 
 
 When the new DNS zone is deployed, you can manually create resource records, or use auto-registration, which will create resource records based on the Azure resource name.
