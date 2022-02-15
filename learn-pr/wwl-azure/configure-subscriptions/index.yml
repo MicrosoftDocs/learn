@@ -9,9 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure subscriptions
-summary: You will learn how to configure subscriptions. This includes getting a subscription, implementing cost management, and applying resource tags.
+summary: You'll learn how to configure subscriptions. This includes getting a subscription, implementing cost management, and applying resource tags.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
    -  Determine the correct region to locate Azure services.
    -  Identify features and usage cases for Azure subscriptions.
    -  Identify how to obtain an Azure subscription.
