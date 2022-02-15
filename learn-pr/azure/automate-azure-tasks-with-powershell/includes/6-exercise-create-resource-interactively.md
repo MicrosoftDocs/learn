@@ -25,7 +25,7 @@ Let's create a new Azure VM with PowerShell.
       > - Have a digit
       > - Have a special character (Regex match [\W_])
 
-    - Add the `-OpenPorts` parameter, and pass "22" as the port. This will let us SSH into the machine.
+    - Add the `-OpenPorts` parameter, and pass "22" as the port. This port will let us SSH into the machine.
     - Create a public IP address name. You'll use this name to create and find your static IP address to sign in to the machine.
 
     ```powershell
@@ -36,7 +36,7 @@ Let's create a new Azure VM with PowerShell.
 
 1. Create a username and password, then press `Enter`. PowerShell will start creating your VM.
 
-1. This will take a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
+1. The VM creation takes a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
 
     ```powershell
     $vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>)
@@ -127,7 +127,7 @@ Microsoft.Network/publicIPAddresses
 Microsoft.Network/virtualNetworks
 ```
 
-This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources. At this point, we'd likely just delete the resource group itself, and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
+The `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources. At this point, we'd likely just delete the resource group itself, and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
 
 1. Delete the network interface.
 
@@ -159,4 +159,4 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
     Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
-We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
+We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_. Then we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
