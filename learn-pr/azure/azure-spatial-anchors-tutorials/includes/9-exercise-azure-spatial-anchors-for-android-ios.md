@@ -46,7 +46,7 @@ In this section, you'll configure your project to build and deploy it to an Andr
 
     :::image type="content" source="../media/mrtk-project-configurator-window.png" alt-text="Screenshot of the project configurator dialog for the Mixed Reality Toolkit." lightbox="../media/mrtk-project-configurator-window.png":::
 
-3. On the Unity menu, select **Edit** > **Project Settings** to open the **Project Settings** dialog. Then locate the **Player** > **Other Settings** section, select **Vulkan**, and remove it by selecting the dash (**-**).
+3. On the Unity menu, select **Edit** > **Project Settings** to open the **Project Settings** dialog. Then locate the **Player** > **Other Settings** section, select **Vulkan**, and remove it by selecting the minus sign (**-**).
 
     :::image type="content" source="../media/project-settings.png" alt-text="Screenshot of project settings." lightbox="../media/project-settings.png":::
 
@@ -61,7 +61,7 @@ In this section, you'll configure your project to build and deploy it to an Andr
 
 5. In the **Build Settings** dialog, select the **Build And Run** button to open the **Build Android** dialog.
 
-6. Choose a suitable location to store your build&mdash;for example, *D:\MixedRealityLearning\Builds*. Give the .apk file a suitable name&mdash;for example, **MRTKTutorials-AzureSpatialAnchors**. Then select the **Save** button to start the build process.
+6. Choose a suitable location to store your build&mdash;for example, **D:\MixedRealityLearning\Builds**. Give the .apk file a suitable name&mdash;for example, **MRTKTutorials-AzureSpatialAnchors**. Then select the **Save** button to start the build process.
 
     :::image type="content" source="../media/build-android.png" alt-text="Screenshot of building to Android." lightbox="../media/build-android.png":::
 

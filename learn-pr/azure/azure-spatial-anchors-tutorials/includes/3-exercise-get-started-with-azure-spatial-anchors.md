@@ -7,7 +7,7 @@ In this unit, you'll explore the steps required to:
 
 In this section, you'll create a new Unity project and get it ready for Mixed Reality Toolkit (MRTK) development.
 
-First, follow the steps in [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/) in the Hololens 2 introduction module, excluding the "Build your application to HoloLens 2" instructions in module 7. The steps that you'll follow include:
+First, follow the steps in [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/) in the HoloLens 2 introduction module, excluding the "Build your application to HoloLens 2" instructions in unit 7. The steps that you'll follow include:
 
 1. Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
 2. Switch the build platform.
@@ -79,7 +79,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 4. On the **Hierarchy** pane, select the **RemoveLocalAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **RemoveLocalAnchor** () to set this function as the action to be executed when the event is triggered.
+    * From the **No Function** dropdown list, select **AnchorModuleScript** > **RemoveLocalAnchor ()** to set this function as the action to be executed when the event is triggered.
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor ()** function.
     
     :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/remove-local-anchor.png":::
@@ -138,7 +138,7 @@ When the app runs on your device, follow the on-screen instructions displayed on
 
 ## Anchor an experience
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. You used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll anchor an entire experience by placing it as a child of the `ParentAnchor` object.
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. You used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll anchor an entire experience by placing it as a child of the **ParentAnchor** object.
 
 1. On the **Hierarchy** pane, select the **ParentAnchor** object. Then on the **Inspector** pane, configure the **Transform** components as follows:
 

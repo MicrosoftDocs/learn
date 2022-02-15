@@ -2,7 +2,7 @@ In this unit, you'll learn how to save spatial anchors across multiple app sessi
 
 ## Prepare the scene
 
-1. On the **Hierarchy** pane, expand the **ButtonParent** object. Select the last four child button objects. On the **Inspector** pane, check the box next to the **Name** field to make all the objects active.
+1. On the **Hierarchy** pane, expand the **ButtonParent** object. Select the last four child button objects. On the **Inspector** pane, select the checkbox next to the **Name** field to make all the objects active.
 
     :::image type="content" source="../media/activate-object.png" alt-text="Screenshot of activating objects." lightbox="../media/activate-object.png":::
 
@@ -42,7 +42,7 @@ In this section, you'll save and retrieve the anchor ID to and from the HoloLens
 
 ## Share Azure Spatial Anchors between devices
 
-In this section, you'll share an anchor ID between devices. This procedure will allow multiple devices to query Azure for the same anchor ID, spatially aligning the anchored holograms. *Spatial alignment*&mdash;that is, seeing the same holograms in the same physical location between multiple devices&mdash;is key to local shared experiences in HoloLens 2.
+In this section, you'll share an anchor ID between devices. This procedure will allow multiple devices to query Azure for the same anchor ID, spatially aligning the anchored holograms. *Spatial alignment* is seeing the same holograms in the same physical location between multiple devices. It's key to local shared experiences in HoloLens 2.
 
 There are many ways to transfer anchor IDs between devices. In this example, you'll use a simple web service to upload and download anchor IDs between devices.
 

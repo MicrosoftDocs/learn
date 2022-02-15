@@ -21,7 +21,7 @@
 
     :::image type="content" source="../media/create-text-object.png" alt-text="Screenshot of renaming the newly created text object." lightbox="../media/create-text-object.png":::
 
-3. On the **Hierarchy** pane, select the **Feedback** object. Then in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:
+3. On the **Hierarchy** pane, select the **Feedback** object. Then on the **Inspector** pane, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:
 
     * Assign the **Feedback** object to the **Anchor Feedback Script (Script)** component's **Feedback Text** field.
 

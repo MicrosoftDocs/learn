@@ -6,7 +6,7 @@ This unit teaches you to build spatial anchors for Android devices by using ARCo
 
 ## ARCore XR Plugin
 
-You can create augmented-reality apps for Android smartphones by using ARCore XR Plugin. Along with the ARCore Extensions for the AR Foundation SDK, a default version of this plug-in is installed. ARCore XR Plugin adds support for ARCore to Unity's multiple-platform XR API. This supports efficient background rendering, anchors, occlusion, and more.
+You can create augmented-reality apps for Android smartphones by using ARCore XR Plugin. Along with ARCore Extensions for the AR Foundation SDK, a default version of this plug-in is installed. ARCore XR Plugin adds support for ARCore to Unity's multiple-platform XR API. This supports efficient background rendering, anchors, occlusion, and more.
 
 ## ARKit XR Plugin
 
@@ -14,7 +14,7 @@ ARKit is a high-level augmented-reality development platform. It helps developer
 
 To make creating an augmented-reality experience easier, ARKit integrates device-motion tracking, camera-scene capture, powerful image processing, and display conveniences. By using these technologies and an iOS device's front or rear camera, you can create a variety of augmented-reality experiences.
 
-## Windows Mixed Reality camera setting
+## Windows Mixed Reality camera settings
 
 The Windows Mixed Reality camera settings provider detects the device on which the app is running and applies the relevant configuration settings based on the display (transparent or opaque). This configures and optimizes the application's camera for usage in mixed-reality apps by using the Microsoft Mixed Reality Toolkit (MRTK).
 

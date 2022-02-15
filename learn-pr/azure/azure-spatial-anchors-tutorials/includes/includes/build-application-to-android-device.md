@@ -6,9 +6,9 @@ On the Unity menu, select **Edit** > **Project Settings** > **XR Plug-in Managem
 
 Close the **Project Settings** dialog and open the **Build Settings** dialog again.
 
-## [Legacy WSA](#tab/wsa)
+## [Legacy Windows Store apps](#tab/wsa)
 
-On the Unity menu, select **Edit** > **Project Settings** > **Player**> **XR Settings**, and make sure you're in Android platform. Select the **Virtual Reality Supported** checkbox, select the plus sign (**+**), and then select **None**.
+On the Unity menu, select **Edit** > **Project Settings** > **Player**> **XR Settings**, and make sure you're in the Android platform. Select the **Virtual Reality Supported** checkbox, select the plus sign (**+**), and then select **None**.
 
 :::image type="content" source="../../media/build-settings-window.png" alt-text="Screenshot player settings in the Project Settings dialog." lightbox="../../media/build-settings-window.png":::
 

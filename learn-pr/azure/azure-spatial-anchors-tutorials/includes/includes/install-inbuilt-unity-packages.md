@@ -10,14 +10,14 @@ Upgrade or install one of the following inbuilt packages from Unity Package Mana
 
 For instructions on how to upgrade and install inbuilt packages, see the [Unity documentation](https://docs.unity3d.com/Manual/index.html).
 
-## [Legacy WSA](#tab/wsa)
+## [Legacy Windows Store apps](#tab/wsa)
 
 Upgrade or install the following inbuilt packages from Unity Package Manager:
 
 * XR Legacy Input Helpers 2.1.6
-* ARCore XR Plugin 3.1.3 if you're developing Android, or ARKit XR Plugin 3.1.3 if you're developing for iOS
+* ARCore XR Plugin 3.1.3 if you're developing for Android, or ARKit XR Plugin 3.1.3 if you're developing for iOS
 
 > [!Caution]
 > Not all package versions are compatible with the MRTK, and only certain versions work together. Be sure to install the exact versions shown in the list.
 
-For a reminder on how to upgrade and install inbuilt packages, see the [Unity documentation](https://docs.unity3d.com/Manual/index.html).
+For instructions on how to upgrade and install inbuilt packages, see the [Unity documentation](https://docs.unity3d.com/Manual/index.html).
