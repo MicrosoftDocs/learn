@@ -50,7 +50,7 @@ It's a good idea to aim for short-lived feature branches. This helps you to avoi
 
 Its also good to keep your feature branches small and easy to understand, and to avoid doing large changes in a single branch. Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
 
-> [NOTE]
+> [!NOTE]
 > It can sometimes be challenging to keep your features small.
 >
 > When you build software, it can be useful to consider *feature flags*. A feature flag turns a feature on or off in production. While the feature is under development, the feature flag is turned off. After the feature is ready, you turn it on.
