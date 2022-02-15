@@ -64,33 +64,12 @@ Each funding round is linked to achieving a certain level of de-risking of the o
 
 The terminology used to describe each of these funding rounds varies considerably by geography and by industry. The most common terms and their meaning are summarized in the following sections. Each section describes a different funding round.
 
-### Friends and family
-
-|Typical company stage|Typical source of capital|
-|---|---|
-|Idea, concept design, prototype or building MVP|People you already know who want to support you as an entrepreneur, and who may not want or expect a large financial return|
-
-### Seed
-
-|Typical company stage|Typical source of capital|
-|---|---|
-|MVP or product in market|Angel investors|
-|Evidence of problem-solution fit|Seed-stage venture capital (VC) funds|
-|Early traction in the form of product usage and (ideally) some revenue||
-
-### Series A
-
-|Typical company stage|Typical source of capital|
-|---|---|
-|Established market|VC funds|
-|Evidence of product-market fit||
-|Growth in revenue limited by capital rather than by demand||
-
-### Series B, C, D, E
-
-|Typical company stage|Typical source of capital|
-|---|---|
-|Expansion to other products, markets, and geographies|VC funds, private equity firms|
+|Funding round|Typical company stage|Typical source of capital|
+|---|---|---|
+|Friends and family|Idea, concept design, prototype or building MVP|People you already know who want to support you as an entrepreneur, and who may not want or expect a large financial return|
+|Seed|MVP or product in market<br><br>Evidence of problem-solution fit<br><br>Early traction in the form of product usage and (ideally) some revenue|Angel investors<br><br>Seed-stage venture capital (VC) funds|
+|Series A|Established market<br><br>Evidence of product-market fit<br><br>Growth in revenue limited by capital rather than by demand|VC funds|
+|Series B, C, D, E|Expansion to other products, markets, and geographies|VC funds, private equity firms|
 
 These funding rounds can be plotted on a time chart, showing the typical milestones against which each round is raised.
 
