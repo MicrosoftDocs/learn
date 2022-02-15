@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-review-merge-pull-request
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-create-review-merge-pull-request
 title: Exercise - Create, review, and merge a pull request
 metadata:
   unitType: exercise
