@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Retrieve and visualize multivariate results
   description: This unit calls the multivariate Anomaly Detector Results API to get the json results and display data on a graph to show anomalies patterns.
-  ms.date: 11/17/2021
+  ms.date: 02/15/2022
   author: ruyakubu
   ms.author: ruyakubu
   ms.topic: interactive-tutorial

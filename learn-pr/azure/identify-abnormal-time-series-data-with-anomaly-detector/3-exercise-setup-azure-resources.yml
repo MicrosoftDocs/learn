@@ -7,7 +7,7 @@ metadata:
   unitType: exercise
   title: Set up Azure resources
   description: This unit creates Azure storage account, containers, blog storage and Iot Hub.  Also, configure IoT Hub to route telemetry data to blog storage
-  ms.date: 11/17/2021
+  ms.date: 02/15/2022
   author: ruyakubu
   ms.author: ruyakubu
   ms.topic: interactive-tutorial

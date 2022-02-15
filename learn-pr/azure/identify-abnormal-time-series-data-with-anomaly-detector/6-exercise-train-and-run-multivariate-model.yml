@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Train and run a multivariate model
   description: "This unit shows have to use the Anomaly Detector multivariate API to train and use the detect inference."
-  ms.date: 11/17/2021
+  ms.date: 02/15/2022
   author: ruyakubu
   ms.author: ruyakubu
   ms.topic: interactive-tutorial

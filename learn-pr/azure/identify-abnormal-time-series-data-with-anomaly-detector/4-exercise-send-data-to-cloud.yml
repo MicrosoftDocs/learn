@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Send device data to the cloud
   description: The unit simulates reading telemetry data from devices and send the data to Azure IoT Hub for processing.
-  ms.date: 11/17/2021
+  ms.date: 02/15/2022
   author: ruyakubu
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
