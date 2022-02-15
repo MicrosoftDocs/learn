@@ -8,9 +8,9 @@ The preferred way of adding your non-Azure machines to Microsoft Defender for Cl
 
 Defender for Cloud's Log Analytics auto-deploy tools don't support machines running Azure Arc. Log Analytics agent deployment options include:  
 
-1. VM extensions for Azure Arc-enabled servers can be deployed from the Azure portal. They can also be deployed using PowerShell, the Azure CLI, or with an Azure Resource Manager (ARM) template.
-1. Azure Policy through the Configure Log Analytics extension on Azure Arc enabled Linux servers / Configure Log Analytics extension on Azure Arc enabled Windows servers policy definitions
-1. Azure Automation and its support for PowerShell and Python to automate the deployment of the Log Analytics agent VM extension.
+- VM extensions for Azure Arc-enabled servers can be deployed from the Azure portal. They can also be deployed using PowerShell, the Azure CLI, or with an Azure Resource Manager (ARM) template.
+- Azure Policy through the Configure Log Analytics extension on Azure Arc enabled Linux servers / Configure Log Analytics extension on Azure Arc enabled Windows servers policy definitions
+- Azure Automation and its support for PowerShell and Python to automate the deployment of the Log Analytics agent VM extension.
 
 ## Enable the Log Analytics VM extension from Azure portal.
 
