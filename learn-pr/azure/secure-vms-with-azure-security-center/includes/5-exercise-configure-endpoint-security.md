@@ -16,13 +16,13 @@ Defender for Cloud reports the following endpoint protection issues:
 
   - *Signature out of date*. An antimalware solution is installed on these VMs and computers, but the solution doesn't have the latest antimalware signatures.
 
-  - *No real-time protection*. An antimalware solution is installed on these VMs and computers, but it isn't configured for real-time protection. The service might be disabled, or Defender for Cloud might be unable to obtain the status because the solution isn't supported.
+  - *No real-time protection*. An antimalware solution is installed on these VMs and computers, but it isn't configured for real-time protection. For example, the service might be disabled. Defender for Cloud might also be unable to obtain the status because it doesn't support the solution.
 
   - *Not reporting*. An antimalware solution is installed but not reporting data.
 
   - *Unknown*. An antimalware solution is installed, but either its status is unknown, or it's reporting an unknown error.
 
-For VMs which are vulnerable, Defender for Cloud offers to resolve the issue and install malware protection onto the unprotected VMs.
+For VMs that are vulnerable, Defender for Cloud offers to resolve the issue and install malware protection onto the unprotected VMs.
 
 :::image type="content" source="../media/5-defender-for-cloud-endpoint-protection-fix.png" alt-text="Screenshot that shows the option to fix an unprotected VM.":::
 
@@ -48,11 +48,11 @@ Let's use the Azure portal to create a new VM, and install the extension.
     | Subscription | Select your subscription. |
     | Resource group | Select the resource group you previously created (*mslearnDeleteMe*) from the dropdown list. |
     | **Instance details** |
-    | Virtual machine name | Enter a VM name, such as *testvm1* .|
+    | Virtual machine name | Enter a VM name, such as *testvm1*.|
     | Region | Select a location closest to you from the dropdown list. |
     | **Administrator account** |
-    | Username | Select a valid username you will remember. |
-    | Password | Select a valid password you will remember. |
+    | Username | Select a valid username you'll remember. |
+    | Password | Select a valid password you'll remember. |
 
     ![Screenshot showing the Basic tab for VM creation.](../media/7-create-vm.png)
 
@@ -69,7 +69,7 @@ Let's use the Azure portal to create a new VM, and install the extension.
     ![Screenshot showing the Advanced tab with Microsoft malware extension installed.](../media/7-install-ms-malware2.png)
 
 1. Next, select the **Management** tab. This is where you can configure the monitoring capabilities for Microsoft Defender for Cloud:
-    - Detailed monitoring which can be viewed in Azure Monitor.
+    - Detailed monitoring you can view in Azure Monitor.
     - Boot diagnostics
     - OS guest diagnostics
 
@@ -77,11 +77,11 @@ Let's use the Azure portal to create a new VM, and install the extension.
 
 1. Select **Review + create**, verify the settings, and when validation passes, select **Create** to deploy the new VM.
 
-This will take a few minutes to complete - you can monitor the deployment through the **Notifications** (bell icon) view, or by selecting the deployment message. While it deploys, let's examine how you'd add malware protection to an _existing_ VM.
+Deploying the VM takes a few minutes to complete. You can monitor the deployment through the **Notifications** (bell icon) view, or by selecting the deployment message. While it deploys, let's examine how you'd add malware protection to an *existing* VM.
 
 ## Add the extension to an existing VM
 
-You can also add the antimalware extension to an existing VM after it's deployed. This can be done with command-line tools (so it can be scripted), using the REST APIs, or through the Azure portal. Here are the steps to use for the portal:
+You can also add the antimalware extension to an existing VM after it's deployed. You can use command-line tools, so it can be scripted. You can also use the REST APIs or the Azure portal. Here are the steps to use for the portal:
 
 1. Select the VM onto which you want to install the extension.
 
