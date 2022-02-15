@@ -43,7 +43,7 @@ In the example below, scope is the organization or personal account that publish
 
 ### Use queries in QL packs
 
-To add one or more queries, add a `with: queries:` entry within the `uses: github/codeql-action/init@v1` section of the workflow. If the queries are in a private repository, use the `external-repository-token` parameter to specify a token that has access to checkout the private repository.
+To add one or more queries, add a `with: queries:` entry within the `uses: github/codeql-action/init@v1` section of the workflow. If the queries are in a private repository, use the `external-repository-token` parameter to specify a token that has access to check out the private repository.
 
 ```yml
 - uses: github/codeql-action/init@v1

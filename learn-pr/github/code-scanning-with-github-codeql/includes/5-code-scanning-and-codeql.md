@@ -11,7 +11,7 @@ In this unit, you will learn how to set up code scanning with GitHub Actions, as
 
 ## Code scanning with GitHub Actions and CodeQL
 
-To setup code scanning with GitHub Actions and CodeQL on a repository, do the following:
+To set up code scanning with GitHub Actions and CodeQL on a repository, do the following:
 
 1. Go to the **Security** tab of your repository.
 

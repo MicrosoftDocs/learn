@@ -16,14 +16,14 @@ content: |
   quiz:
     title: Customize your code scanning workflow with CodeQL - Part 1
     questions:
-    - content: "What options are available for referencing additional queries in a workflow file?"
+    - content: "What options are available for referencing other queries in a workflow file?"
       choices:
       - content: "Workflow files can only reference query packs."
         isCorrect: false
-        explanation: "Incorrect. Query packs are not the only option for referencing additional queries."
+        explanation: "Incorrect. Query packs aren't the only option for referencing other queries."
       - content: "Workflow files can only reference individual query files (.ql) or query suite files (.qls)."
         isCorrect: false
-        explanation: "Incorrect. Individual query files and query suite file are not the only option for referencing additional queries."
+        explanation: "Incorrect. Individual query files and query suite file aren't the only option for referencing other queries."
       - content: "Workflow files can reference query packs as well as individual query and query suite files."
         isCorrect: true
         explanation: "Correct!"
@@ -34,7 +34,7 @@ content: |
         explanation: "Correct!"
       - content: "Prefix the value of packs or queries in the custom configuration file with the `+` symbol."
         isCorrect: false
-        explanation: "Incorrect. The '+' symbol is not added in the custom configuration file."
+        explanation: "Incorrect. The '+' symbol isn't added in the custom configuration file."
       - content: "Prefix the value of packs or queries in the custom configuration file with the `join` keyword."
         isCorrect: false
-        explanation: "Incorrect. The word 'join' is not used as a keyword in the custom configuration file."
+        explanation: "Incorrect. The word 'join' isn't used as a keyword in the custom configuration file."

@@ -22,7 +22,7 @@ After extraction, all the data required for analysis (relational data, copied so
 
 ## Query execution
 
-After you’ve created a CodeQL database, one or more queries are executed against it. CodeQL queries are written in a specially-designed object-oriented query language called QL.
+After you’ve created a CodeQL database, one or more queries are executed against it. CodeQL queries are written in a specially designed object-oriented query language called QL.
 
 You can run the queries checked out from the CodeQL repo (or custom queries that you’ve written yourself) using the CodeQL for VS Code extension or the CodeQL CLI.
 
