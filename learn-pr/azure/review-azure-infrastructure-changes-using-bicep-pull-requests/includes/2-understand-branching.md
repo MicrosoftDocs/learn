@@ -89,8 +89,6 @@ Other branching strategies you might come across include GitFlow, GitHub Flow, a
 The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find your team isn't able to work effectively by using this process, gradually introduce additional layers of branching, or adopt a branching strategy. But be aware that as you add more branches, it'll become more complex to manage your repository.
 
 > [!TIP]
-> Regardless of the branching strategy you use, it's good to use branch policies to protect your main branch. Other branching strategies also introduce other important branches that you should protect.
->
-> Also, however you branch, it's a good idea to use pull requests to review your code.
+> Regardless of the branching strategy you use, it's good to use branch policies to protect your main branch, and to use pull requests to review your changes. Other branching strategies also introduce other important branches that you should protect.
 
 In this module we use the trunk-based development because it's easy to understand and use.

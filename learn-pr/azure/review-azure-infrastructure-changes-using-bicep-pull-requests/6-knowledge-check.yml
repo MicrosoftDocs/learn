@@ -12,60 +12,39 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: Which of these statements is true?
     choices:
-    - content: ""
+    - content: Anybody on the team can push a change directly to the main branch.
+      isCorrect: false
+      explanation: Incorrect. The branch protection rules are configured to prevent direct commits or pushes.
+    - content: The manager of the team must review all pull requests.
+      isCorrect: false
+      explanation: Incorrect. The branch protection rules don't specify specific reviewers who must approve pull requests.
+    - content: The pull request's author can push a change to the pull request's source branch.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Correct. Pull request authors can continue to push changes to their source branch while the pull request is open.
+  - content: You want to get your colleagues' input on a change you're making to a Bicep file, bug you aren't finished with the change yet. What should you do?
     choices:
-    - content: ""
+    - content: Create a pull request, and configure branch protection rules to prohibit the branch from being merged.
+      isCorrect: false
+      explanation: Incorrect. Branch protection rules affect all changes to the repository, not just a single branch.
+    - content: Create a pull request and mark it as a draft.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes.
+    - content: Email your colleagues a link to your branch.
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes.
+  - content: You're reviewing a pull request from a colleague. You notice that the Bicep file has a typo in a variable name. The typo will cause an error when the template is deployed. What should you do?
     choices:
-    - content: ""
+    - content: Add a comment to the pull request author to let them know.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request.
+    - content: Reject the pull request.
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: Incorrect. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request.
+    - content: Approve the pull request. The author will notice the problem when they deploy the Bicep file.
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Incorrect. The pull request process is designed to stop these kinds of issues, and gives you the opportunity to comment on changes before they're merged.
