@@ -5,8 +5,8 @@ metadata:
   title: Exercise - String Interpolation
   description: Combine string templates with variable data into new strings.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

@@ -5,8 +5,8 @@ metadata:
   description: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
   brand: azure
   ms.date: 04/23/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   #ms.learn-contact: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

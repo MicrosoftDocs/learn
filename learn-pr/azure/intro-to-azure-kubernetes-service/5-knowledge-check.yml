@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 6/25/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
@@ -50,6 +50,6 @@ quiz:
     - content: "Draft"
       isCorrect: false
       explanation: "Draft streamlines the development workflow to easily initialize a container build and push the build to Kubernetes."
-    - content: "Azure Dev Spaces"
+    - content: "Bridge to Kubernetes"
       isCorrect: true
-      explanation: "Azure Dev Spaces allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."
+      explanation: "Bridge to Kubernetes allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."

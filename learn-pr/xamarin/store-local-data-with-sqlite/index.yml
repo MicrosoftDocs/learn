@@ -4,8 +4,8 @@ metadata:
   title: "Store local data with SQLite in a Xamarin.Forms app"
   description: This module guides you through building a Xamarin.Forms application that stores data locally in a SQLite database.
   ms.date: 3/19/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Store local data with SQLite in a Xamarin.Forms app"

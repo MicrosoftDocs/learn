@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.languages.csharp-logic
 metadata:
-  title: Add logic to your applications with C#
-  description: Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  title: 'Add logic to your applications with C#'
+  description: 'Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.'
   brand: azure
   ms.date: 10/30/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

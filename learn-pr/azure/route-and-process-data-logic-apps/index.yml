@@ -4,8 +4,8 @@ metadata:
   title: "Route and process data automatically using Logic Apps"
   description: Learn how to define a workflow to run your business with Logic apps using built-in triggers, actions, and conditional operators.
   ms.date: 5/10/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW

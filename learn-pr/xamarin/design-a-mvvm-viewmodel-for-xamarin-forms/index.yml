@@ -4,8 +4,8 @@ metadata:
   title: Design an MVVM viewmodel for Xamarin.Forms
   description: Discover how to improve your code testability through business logic and user interface code by using the MVVM design pattern.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Design an MVVM viewmodel for Xamarin.Forms

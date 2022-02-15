@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you will review what you have learnt about API Management caching policies.
   ms.date: 04/25/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

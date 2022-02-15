@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure
 metadata:
   title: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
   description: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
-  ms.date: 12/01/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,8 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path explores the “Infrastructure as Code” (IaC) concept and how to manage your operations environment the same way you do applications or other code for general release.
-iconUrl: /learn/achievements/generic-trophy.svg
-hidden: true
+iconUrl: /learn/achievements/az-400-manage-infrastructure-as-code-using-azure.svg
 levels:
 - advanced
 roles:

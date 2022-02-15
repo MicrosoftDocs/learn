@@ -5,8 +5,8 @@ metadata:
   title: What is automated testing?
   description: Learn about the benefits of automated testing, the kinds of testing you can use, and the kinds of testing tools that are available to you.
   ms.date: 05/26/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Use a Resource Manager template to decrypt the VM
   description: Exercise - Use a Resource Manager template to decrypt the VM
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: powershell

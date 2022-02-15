@@ -4,8 +4,8 @@ metadata:
   title: What is Azure Stack Edge?
   description: Describe the basic architecture of Azure Stack Edge, the core capabilities of Azure Stack Edge, and the primary use cases of Azure Stack Edge.
   ms.date: 12/09/2020
-  author: micrum
-  ms.author: micrum
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

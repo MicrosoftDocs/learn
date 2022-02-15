@@ -6,7 +6,6 @@ In this exercise, you will create an ExpressRoute circuit using the Azure portal
 :::image type="content" source="../media/environment-diagram-5c93199a.png" alt-text="Diagram ExpressRoute circuit layout for exercise":::
 
 
-To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 In this exercise, you will:
 
@@ -92,8 +91,6 @@ In this exercise, you will:
 
 :::image type="content" source="../media/provisioned-68d55b81.png" alt-text="Azure portal - ExpressRoute circuit properties showing status is now provisioned":::
 
-
-Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 Congratulations! You have created an ExpressRoute circuit and located the Service key, which you would need to complete the provisioning of the circuit.
 
