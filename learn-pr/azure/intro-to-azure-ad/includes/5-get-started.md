@@ -11,6 +11,7 @@ A good way to deploy Azure AD is in phases. Your deployment is split into severa
 In the first stage, build a foundation of security for your Azure AD. The doctors, internal staff members, and external healthcare partners all need the most secure access you can provide. Configure baseline security features before you add or create user accounts. The work you do here helps ensure your Azure AD instance is in a secure state from the start. The following table describes your tasks.
 
 | Task | Description | License needed |
+|---|---|---|
 | **Assign more than one global administrator**| Give at least two Azure AD accounts the global admin role. Make sure you don't use these accounts daily. Ensure the accounts have long and complicated passwords.| Free       |
 | **Use regular administrative roles where possible**|Admins who aren't global admins should never have more permissions than they need to do their work. Use these regular admin roles by default. Avoid using the global admin roles unless you need to. | Free       |
 | **Configure Privileged Identity Management (PIM) to track administrators**| Use PIM to monitor how your admin roles are used. This action helps you improve your governance and compliance.| Azure AD Premium P2 |
