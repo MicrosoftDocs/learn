@@ -1,6 +1,6 @@
-Azure Spatial Anchors gives developers tools for creating spatially aware mixed-reality applications for HoloLens, for iOS devices through ARKit, and for Android devices through ARCore.
+Azure Spatial Anchors gives developers tools for creating spatially aware mixed reality applications for HoloLens, for iOS devices through ARKit, and for Android devices through ARCore.
 
-Developers can use Azure Spatial Anchors to collaborate with mixed-reality platforms to understand spaces, mark specific places of interest, and remember those points of interest from compatible devices.
+Developers can use Azure Spatial Anchors to collaborate with mixed reality platforms to understand spaces, mark specific places of interest, and remember those points of interest from compatible devices.
 
 Use cases for Azure Spatial Anchors include:
 
@@ -10,7 +10,7 @@ Use cases for Azure Spatial Anchors include:
 
 ## AR Foundation
 
-In Unity, AR Foundation lets you work with augmented-reality systems across several platforms. This package provides an interface for Unity developers, but it doesn't include any augmented-reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
+In Unity, AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers, but it doesn't include any augmented reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
 
 * ARCore XR Plugin on Android
 * ARKit XR Plugin on iOS

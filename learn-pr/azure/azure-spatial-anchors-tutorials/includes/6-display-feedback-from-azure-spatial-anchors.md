@@ -1,4 +1,4 @@
-Azure Spatial Anchors gives developers the tools they need to create spatially aware mixed-reality apps. Users can give feedback on anchor discovery, events, and status. It's a tool for storing and retrieving spatial-point cloud data. You can see the action based on the users' feedback through a UI panel, which displays essential information about the current Spatial Anchors session.
+Azure Spatial Anchors gives developers the tools they need to create mixed reality apps that are spatially aware. Users can give feedback on anchor discovery, events, and status. It's a tool for storing and retrieving spatial-point cloud data. You can see the action based on the users' feedback through a UI panel, which displays essential information about the current Spatial Anchors session.
 
 ## Scene visibility
 

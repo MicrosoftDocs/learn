@@ -10,7 +10,7 @@ In this section, you'll configure the MRTK to deploy to a mobile device.
 
 1. On the **Hierarchy** pane, select the **MixedRealityToolkit** object. On the **Inspector** pane, select the **Camera** tab, clone the camera profile, and give it a suitable name like **AzureSpatialAnchors_ARCameraProfile**.
 
-    :::image type="content" source="../media/configure-mrtk.png" alt-text="Screenshot of configuring the Mixed Reality Toolkit for an augmented-reality camera." lightbox="../media/configure-mrtk.png":::
+    :::image type="content" source="../media/configure-mrtk.png" alt-text="Screenshot of configuring the Mixed Reality Toolkit for an augmented reality camera." lightbox="../media/configure-mrtk.png":::
 
     > [!Tip]
     > For information on how to clone MRTK profiles, see [Configuring the Mixed Reality Toolkit profiles](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide).

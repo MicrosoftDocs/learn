@@ -1,4 +1,4 @@
-Welcome to the Azure Spatial Anchors module! Through this module series, you'll learn the fundamentals of Azure Spatial Anchors and how to anchor a complete mixed-reality experience in the real world. you'll also learn how to deploy your project to Android and iOS.
+Welcome to the Azure Spatial Anchors module! Through this module series, you'll learn the fundamentals of Azure Spatial Anchors and how to anchor a complete mixed reality experience in the real world. you'll also learn how to deploy your project to Android and iOS.
 
 Imagine a scenario where you're expected to build an application that combines augmented reality and GPS to give detailed information on a tracked real-world object. To do so, you must have a clear understanding of spatial anchors and other resources.
 

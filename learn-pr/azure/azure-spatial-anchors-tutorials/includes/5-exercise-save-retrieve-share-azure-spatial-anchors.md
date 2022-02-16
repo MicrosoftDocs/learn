@@ -38,7 +38,7 @@ In this section, you'll save and retrieve the anchor ID to and from the HoloLens
     8. Find the anchor to position the Rover Explorer at the location from step 3.
 
     > [!Note]
-    > To fully restart the app, close the app window in the mixed-reality home after you close the immersive app view. You can then reopen the app from the **Start** menu. For more information, see [Using apps on HoloLens](https://github.com/MicrosoftDocs/Hololens/blob/public/hololens/holographic-home.md#using-apps-on-hololens).
+    > To fully restart the app, close the app window in the mixed reality home after you close the immersive app view. You can then reopen the app from the **Start** menu. For more information, see [Using apps on HoloLens](https://github.com/MicrosoftDocs/Hololens/blob/public/hololens/holographic-home.md#using-apps-on-hololens).
 
 ## Share Azure Spatial Anchors between devices
 
