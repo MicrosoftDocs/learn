@@ -106,7 +106,7 @@ H2 and H3 initiatives require more sophisticated data science capabilities, whic
 
 Once you've chosen AI initiatives, it's important to identify value drivers and KPIs for each project. The framework below provides a useful way to think about any investment—including AI initiatives.
 
-| Value | Sample Category | Definition | AI example |
+| Value | Sample category | Definition | AI example |
 |---|---|---|---|
 | Financial drivers | Sales |The revenue earned from products or services. | Leverage targeted marketing to improve accuracy in classifying prospects. |
 | | Cost management | Process of planning and controlling the budget of a business. In addition to employee time and effort, the costs of AI models include cloud compute, which varies depending on the model's workload. | Improve prediction models for scheduling equipment maintenance to improve sustainability. |
