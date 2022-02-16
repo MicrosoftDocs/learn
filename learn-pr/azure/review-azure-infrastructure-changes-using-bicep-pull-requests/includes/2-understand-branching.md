@@ -1,6 +1,6 @@
 When you build Bicep templates and work within a Git repository, all of your team's changes are eventually merged into the main branch of your repository. It's important to protect your main branch so that no unwanted changes are deployed to your production environment. However, you also want your contributors to be able to work and collaborate flexibly, and to be able to try out ideas easily.
 
-In this unit, you'll learn about branching strategies and branch protection. You'll also learn how you can set up a review process for your branches.
+In this unit, you'll learn about branching strategies, and how to protect your main branch. You'll also learn how you can set up a review process for your branches.
 
 ## Why do you want to protect your main branch?
 
@@ -55,23 +55,43 @@ You can use parameters to specify different values for the `storageAccountReady`
 > [!NOTE]
 > When it's time to enable the feature in production, remember that you need to change the parameter value and also redeploy your Bicep file.
 
-
 ### Merging feature branches
 
 When you've finished working on a feature branch, you need to merge it into your repository's main branch. It's a good practice to review the changes that were made on the feature branch before merging. Pull requests enable you to review your code. You'll learn more about pull requests later in this module.
 
-### Branch protection
+::: zone pivot="github"
 
-In Azure DevOps, you can configure *branch protections*, or *branch policies*, for your main branch. Branch protections enforce rules like:
+### Branch protections
+
+In GitHub, you can configure *branch protections* for your main branch. Branch protections enforce rules like:
 
 - No change can be merged to the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
 
-If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch protection policy works:
+If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch protection works:
 
 <!-- TODO diagram -->
 
 You'll learn how to apply branch protections in the next unit.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+### Branch policies
+
+In Azure DevOps, you can configure *branch policies* for your main branch. Branch policies enforce rules like:
+
+- No change can be merged to the main branch except through a pull request.
+- Changes need to be reviewed by at least two other people.
+
+If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch policy works:
+
+<!-- TODO diagram -->
+
+You'll learn how to apply branch policies in the next unit.
+
+::: zone-end
 
 ## Other branching strategies
 

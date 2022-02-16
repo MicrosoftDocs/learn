@@ -6,11 +6,25 @@ In this unit, you'll learn more about pull requests, including how you create an
 
 A *pull request* is a *request* from you, the developer of a feature, to the maintainer of the main branch. You ask the maintainer to *pull* your changes into the main branch of the repository.
 
-### Pull requests and branch protection policies
+::: zone pivot="github"
 
-When you configure branch protection, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull reuqests. Or, you can specify that every pull request must be reviewed by a certain number of people.
+### Pull requests and branch protections
+
+When you configure branch protections, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull reuqests. Or, you can specify that every pull request must be reviewed by a certain number of people.
 
 You can also require that each pull request is linked to a work item. By using this configuration, you ensure you have the ability to trace from a work item that contains a feature request, to the code that implements the change, and even through to the deployment to your production environment.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+### Pull requests and branch policies
+
+When you configure branch policies, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull reuqests. Or, you can specify that every pull request must be reviewed by a certain number of people.
+
+You can also require that each pull request is linked to a GitHub issue <!-- TODO check this is accurate -->. By using this configuration, you ensure you have the ability to trace from a work item that contains a feature request, to the code that implements the change, and even through to the deployment to your production environment.
+
+::: zone-end
 
 ### Create a pull request
 

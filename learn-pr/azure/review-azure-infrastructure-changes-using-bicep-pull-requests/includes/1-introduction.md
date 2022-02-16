@@ -25,6 +25,11 @@ You should be familiar with using:
 - Bicep for basic deployments to Azure.
 - Basic Git commands, including cloning, branching, committing files, and pushing changes to either Azure Repos or GitHub.
 
+To work through the exercises in the module, you'll need either of:
+
+- An Azure DevOps organization and account.
+- A GitHub account.
+
 To follow along with the exercises in the module, you'll need:
 
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.

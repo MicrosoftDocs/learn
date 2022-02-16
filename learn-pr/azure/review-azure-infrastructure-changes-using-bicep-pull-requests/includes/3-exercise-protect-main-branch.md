@@ -1,6 +1,6 @@
 Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to update your Bicep template to add your order processing queue.
 
-In this exercise, you'll create a feature branch for your change. You'll also add branch protection to your main branch, and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
+In this exercise, you'll create a feature branch for your change. You'll also protect your main branch, and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
 
 During the process, you'll: 
 
@@ -20,7 +20,7 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Set up a GitHub repository for this module.
 > * Clone the repository to your computer.
-> * Add branch protection to your repository's main branch.
+> * Add branch policies to your repository's main branch.
 > * Create a local feature branch for your change.
 > * Try to merge your feature branch to main.
 
@@ -152,7 +152,7 @@ TODO
 
 ::: zone pivot="azurerepos"
 
-## Add branch protection
+## Add branch policies
 
 Configure your Git repository to prevent direct pushes to the *main* branch.
 

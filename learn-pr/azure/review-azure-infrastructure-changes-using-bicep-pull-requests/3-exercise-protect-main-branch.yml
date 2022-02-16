@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-enable-branch-protection
-title: Exercise - Enable branch protection
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-protect-main-branch
+title: Exercise - Protect your main branch
 metadata:
   unitType: exercise
-  title: Exercise - Enable branch protection
+  title: Exercise - Protect your main branch
   description: TODO
   ms.date: 02/11/2022
   author: vermegi
@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-enable-branch-protection.md)]
+  [!include[](includes/3-exercise-protect-main-branch.md)]
