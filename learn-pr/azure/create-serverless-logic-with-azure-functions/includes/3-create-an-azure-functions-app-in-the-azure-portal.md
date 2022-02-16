@@ -77,7 +77,7 @@ Let's create a function app in the Azure portal.
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. This value serves as the base URL of your service. For example, you can name it **escalator-functions-xxx**, replacing xxx with your initials and a number. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
-    | Runtime stack | Node.js (the language we use to implement the function examples in this exercise). |
+    | Runtime stack | PowerShell Core |
     | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
