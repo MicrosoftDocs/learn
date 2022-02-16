@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
   ms.custom: team=nextgen, devx-track-azurecli
-  ms.devlang: azurecli
 durationInMinutes: 3
 interactive: bash
 azureSandbox: true
