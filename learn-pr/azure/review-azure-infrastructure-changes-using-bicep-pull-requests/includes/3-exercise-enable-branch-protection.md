@@ -1,4 +1,4 @@
-Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you've been asked to add a message queue, so that your website can post messages whenever a customer places an order for a toy. A backend system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
+Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you need to update your Bicep template to add your order processing queue.
 
 In this exercise, you'll create a feature branch for your change. You'll also add branch protection to your main branch, and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
 
@@ -18,6 +18,9 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
 <!-- TODO -->
+
+> [!CAUTION]
+> This isn't working yet :)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 

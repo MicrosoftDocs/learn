@@ -1,4 +1,4 @@
-You've completed the work to add a queue to your website. Now, you're ready to merge the changes to your main branch. In this exercise, you'll create and merge a pull request for your changes.
+You've completed the work to add a queue to your website. Now, the website development team is ready for you to merge the changes to your main branch. In this exercise, you'll create and merge a pull request for your changes.
 
 During the process, you'll: 
 
@@ -50,7 +50,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 ## Complete the pull request
 
-Your pull request has been approved, so you're ready to merge it.
+Your pull request has been approved. Your website's development team has confirmed they're also ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
 
 1. On the pull request page, select **Complete**.
 
