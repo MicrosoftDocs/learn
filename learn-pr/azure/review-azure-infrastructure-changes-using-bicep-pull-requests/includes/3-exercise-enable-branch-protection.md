@@ -93,7 +93,29 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Open the *main.bicep* file in the *deploy* folder.
 
-   (TODO instructions on what to do with the Bicep file)
+1. Near the top of the *main.bicep* file, add a new variable for the name of the queue:
+
+   :::code language="bicep" source="code/3-main-end.bicep" range="11-12" highlight="2" :::
+
+1. Within the storage account resource, add the queue as a nested child resource:
+
+   :::code language="bicep" source="code/3-main-end.bicep" range="14-32" highlight="12-18" :::
+
+1. In the application module definition, add the storage account and queue names as parameters.
+
+   :::code language="bicep" source="code/3-main-end.bicep" range="34-43" highlight="6-7" :::
+
+   This enables the application to find the queue to send messages to.
+
+1. Open the *appService.bicep* file in the *deploy/modules* folder.
+
+1. Near the top of the *appService.bicep* file, add new parameters for the storage account and queue names:
+
+   :::code language="bicep" source="code/3-appservice-end.bicep" range="1-4" highlight="3-4" :::
+
+1. Update the `appServiceApp` resource to propagate the storage account and queue names to the application's environment variables:
+
+   :::code language="bicep" source="code/3-appservice-end.bicep" range="23-42" highlight="7-18" :::
 
 1. Commit your changes, and push them to your Azure Repos repository, by running the following commands in the Visual Studio Code terminal:
 

@@ -30,15 +30,20 @@ Because you can't push changes directly to your repository's *main* branch, you 
 > [!NOTE]
 > Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
 
+<!-- TODO -->
+
 1. On the pull request page, select the **Files** tab.
 
    Azure DevOps shows you the files that were changed in this pull request.
 
-1. In the **main.bicep** file that was changed, find line TODO.
+   > [!TIP]
+   > TODO try to review - are there any changes you'd suggest?
+
+1. In the **main.bicep** file that was changed, find line 12.
 
 1. Hover your mouse pointer over the line in the right window with the changes, and select the **comment** button that appears.
 
-1. In the comment box, type the following text: **Standard service plan not allowed for test environments, change back to the free plan**.
+1. In the comment box, enter the following text: **TODO**.
 
 1. Select **Comment**.
 
