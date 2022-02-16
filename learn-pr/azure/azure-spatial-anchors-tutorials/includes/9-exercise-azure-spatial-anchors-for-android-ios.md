@@ -4,7 +4,7 @@ In this unit, you'll learn how to build your project to Android and iOS devices 
 
 [!INCLUDE[](includes/install-inbuilt-unity-packages.md)]
 
-## Configure MRTK for AR Foundation camera
+## Configure the MRTK for an AR Foundation camera
 
 In this section, you'll configure the MRTK to deploy to a mobile device.
 
@@ -29,7 +29,7 @@ In this section, you'll configure the MRTK to deploy to a mobile device.
 
 5. Update the MRTK UnityAR script definitions by selecting **Mixed Reality** > **Toolkit** > **Utilities** > **UnityAR** > **Update Scripting Defines**.
 
-## Build your application to your android device
+## Build your application to your Android device
 
 In this section, you'll configure your project to build and deploy it to an Android device.
 
