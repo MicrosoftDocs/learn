@@ -12,6 +12,14 @@ During the process, you'll:
 
 Because you can't push changes directly to your repository's *main* branch, you need to create a pull request.
 
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 1. In your browser, navigate to **Repos** > **Files**.
 
 1. Select the **add-orders-queue** branch.
@@ -25,12 +33,22 @@ Because you can't push changes directly to your repository's *main* branch, you 
    **Title:** Add order processing queue
    **Description:** This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.
 
+::: zone-end
+
 ## Review the pull request
 
 > [!NOTE]
 > Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
 
 <!-- TODO -->
+
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
 
 1. On the pull request page, select the **Files** tab.
 
@@ -53,9 +71,19 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. Select **Approve**.
 
+::: zone-end
+
 ## Complete the pull request
 
 Your pull request has been approved. Your website's development team has confirmed they're also ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
+
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
 
 1. On the pull request page, select **Complete**.
 
@@ -63,10 +91,24 @@ Your pull request has been approved. Your website's development team has confirm
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
+::: zone-end
+
 ## Verify the changes
+
+Because this is your first time merging a pull request, it's a good idea to confirm that the changes have been merged successfully.
+
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
 
 1. Navigate to **Repos** > **Files**.
 
-1. Navigate to the **deploy/main.bicep** file.
+1. Navigate to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
 
    Notice that the queue, and your other changes, are now in the file.
+
+::: zone-end

@@ -4,12 +4,90 @@ In this exercise, you'll create a feature branch for your change. You'll also ad
 
 During the process, you'll: 
 
+::: zone pivot="github"
+
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
 > * Clone the project's repository to your computer.
 > * Add branch protection to your repository's main branch.
 > * Create a local feature branch for your change.
 > * Try to merge your feature branch to main.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+> [!div class="checklist"]
+> * Set up a GitHub repository for this module.
+> * Clone the repository to your computer.
+> * Add branch protection to your repository's main branch.
+> * Create a local feature branch for your change.
+> * Try to merge your feature branch to main.
+
+::: zone-end
+
+::: zone pivot="github"
+
+## Get the GitHub repository
+
+Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
+
+### Start from the template repository
+
+Run a template that sets up your GitHub repository.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-review-azure-infrastructure-changes-using-bicep-pull-requests?azure-portal=true)
+
+On the GitHub site, follow these steps to create a repository from the template:
+
+1. Select **Use this template**. 
+
+   :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+
+1. Enter a name for your new project, such as *toy-website-review*.
+
+1. Select the **Public** option.
+
+   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+
+1. Select **Create repository from template**. 
+
+   :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
+
+## Clone the repository
+
+You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+
+1. Select **Code** and select the copy icon.
+
+   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
+
+1. Open Visual Studio Code. 
+
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-review_ folder, run the following command:
+
+   ```bash
+   cd toy-website-review
+   ```
+
+1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
+
+   ```bash
+   git clone https://github.com/mygithubuser/toy-website-review.git
+   ```
+
+1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
+
+   ```bash
+   code -r toy-website-review
+   ```
+
+::: zone-end
+
+::: zone pivot="azurerepos"
 
 ## Get the Azure DevOps project
 
@@ -64,6 +142,16 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
    :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
 
+::: zone-end
+
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 ## Add branch protection
 
 Configure your Git repository to prevent direct pushes to the *main* branch.
@@ -80,6 +168,8 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    > [!NOTE]
    > Here, you enable the _Allow requestors to approve their own changes_ option. In these exercises, you're working on your own, and so you need to both create and approve your changes. But in a real team environment, you might not want to enable this option.
+
+::: zone-end
 
 ## Create a local feature branch
 
@@ -117,17 +207,35 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    :::code language="bicep" source="code/3-appservice-end.bicep" range="23-42" highlight="7-18" :::
 
-1. Commit your changes, and push them to your Azure Repos repository, by running the following commands in the Visual Studio Code terminal:
+::: zone pivot="github"
 
-    ```bash
-    git add .
-    git commit -m "Add orders queue and associated configuration"
-    git push -u origin
-    ```
+Commit your changes, and push them to your GitHub repository, by running the following commands in the Visual Studio Code terminal:
 
-    The feature branch is pushed to your repository on Azure Repos.
+::: zone-end
 
-## Try to merge a feature branch to main
+::: zone pivot="azurerepos"
+
+Commit your changes, and push them to your Azure Repos repository, by running the following commands in the Visual Studio Code terminal:
+
+::: zone-end
+
+```bash
+git add .
+git commit -m "Add orders queue and associated configuration"
+git push -u origin
+```
+
+The feature branch is pushed to your remote repository.
+
+## Try to merge the feature branch to main
+
+::: zone pivot="github"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="azurerepos"
 
 You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how Azure Repos prevens you from accidentally pushing your changes to a protected branch.
 
@@ -148,3 +256,5 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
     ```
 
     The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
+
+::: zone-end
