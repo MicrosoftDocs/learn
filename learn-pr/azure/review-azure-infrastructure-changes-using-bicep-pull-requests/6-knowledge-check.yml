@@ -30,18 +30,18 @@ quiz:
     choices:
     - content: Create a pull request, and configure branch protection rules to prohibit the branch from being merged.
       isCorrect: false
-      explanation: Incorrect. Branch protection rules affect all changes to the repository, not just a single branch.
+      explanation: Incorrect. Branch protection rules affect all changes to the branch in the repository, not just a single pull request.
     - content: Create a pull request and mark it as a draft.
       isCorrect: true
       explanation: Correct. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes.
     - content: Email your colleagues a link to your branch.
       isCorrect: false
-      explanation: Incorrect. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes.
+      explanation: Incorrect. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes. You can discuss the changes inside the repository, not in a separate email thread.
   - content: You're reviewing a pull request from a colleague. You notice that the Bicep file has a typo in a variable name. The typo will cause an error when the template is deployed. What should you do?
     choices:
     - content: Add a comment to the pull request author to let them know.
       isCorrect: true
-      explanation: Correct. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request.
+      explanation: Correct. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request. After the change is made, you can approve the pull request.
     - content: Reject the pull request.
       isCorrect: false
       explanation: Incorrect. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request.

@@ -46,16 +46,15 @@ It's a good idea to aim for short-lived feature branches. This helps you to avoi
 
 Its also good to keep your feature branches small and easy to understand, and to avoid doing large changes in a single branch. Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
 
-> [!NOTE]
-> It can sometimes be challenging to keep your features small.
->
-> When you build software, it can be useful to consider *feature flags*. A feature flag turns a feature on or off in production. While the feature is under development, the feature flag is turned off. After the feature is ready, you turn it on. When you use feature flags, the code for the feature can be merged into your main branch and deployed to production, but the feature itself isn't visible.
->
-> You can use feature flags to support releasing your changes at a certain time, like if you have a product launch announcement. At the release time, you can turn on all of the feature flags by changing your system's configuration.
->
-> In Bicep code, it's not common to work with feature flags. But when you build a solution that includes custom software, consider using feature flags to disable the parts of your software that aren't yet ready.
+When you work in this manner, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. For example, you might create a Bicep file that defines a storage account, but disable the storage account's deployment until you're done with all of the changes:
 
-<!-- TODO maybe conditions could be used for a version of this? -->
+:::code language="bicep" source="code/2-storage-condition.bicep" highlight="1, 4" :::
+
+You can use parameters to specify different values for the `storageAccountReady` variable in different environments. For example, you might set the parameter value to `true` for your test environment, and `false` for your production environment, so that you can try out the new storage account in your test environment.
+
+> [!NOTE]
+> When it's time to enable the feature in production, remember that you need to change the parameter value and also redeploy your Bicep file.
+
 
 ### Merging feature branches
 
@@ -82,7 +81,7 @@ The process you've learned about so far is called the  *trunk-based development*
 
 Some teams separate the work that they've completed from the work that they've deployed to production. They use a long-lived *development* branch as the target for merging their feature branches, and they merge the *development* branch to their *main* branch when they release changes to production.
 
-Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to release. These strategies can make sense when you release changes on a regular cadence, or when you are integrating your changes with many other teams.
+Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to deploy. These strategies can make sense when you deploy your Azure infrastructure on a regular cadence, or when you are integrating your changes with many other teams.
 
 Other branching strategies you might come across include GitFlow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, as well as separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called *cherry picking*. However, they require more management to ensure that your changes are compatible with each other. We provide links to more information on these branching strategies in the summary of this module.
 
