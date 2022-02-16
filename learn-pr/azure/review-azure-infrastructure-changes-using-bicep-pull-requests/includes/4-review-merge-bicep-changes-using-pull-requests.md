@@ -39,4 +39,8 @@ When you review Bicep code, there are some key elements to look for. These inclu
 > * **Is the change complete?** If this pull request represents part of a wider piece of work, then you need to ensure that your environment will work when this change is merged and deployed. For example, if the pull request reconfigures an Azure resource in preparation for a later change, verify that the resource continues to work correctly throughout the whole process. If the pull request adds a new Azure resource that isn't needed yet, consider whether a condition should be added temporarily so that the resource isn't deployed until it's needed.
 > * **Does the change follow good Bicep practices?** In other Microsoft Learn modules, you've learned about the elements of good Bicep code. Ensure that the code you review follows those same best practices.
 
+## Complete a pull request
+
 After the pull request is approved, it can be *completed*, which means the contents of the pull request are merged into the main branch.
+
+In some teams, the author of the pull request should also complete it. This process helps to ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. Azure DevOps even enables you to automatically complete a pull request when its approval criteria are met. Your team should decide who merges pull requests and when.
