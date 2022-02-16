@@ -12,7 +12,7 @@ First, we need to define some requirements for our logic:
 
 As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
 
-1. In the previous exercise, you deployed your function app and opened it. If it is not already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
+1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
 1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This lists any functions you defined for your function app.
 
@@ -71,7 +71,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
 
 ::: zone-end
-    
+
 ::: zone pivot="powershell"
 
 5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
@@ -187,12 +187,11 @@ Because you specified *Function* when you created this function, you need to sup
     - Passed the Function Key as the header value `x-functions-key`.
     - Used a `POST` request.
     - Passed the Azure Function with the URL for your function.
-    
 
 1. Select **Run**.
 
     The **Code + Test** pane should open session displaying a log file output. 
-    
+
     1. Press r<Kbd>Enter</kbd> to run your function in the session window.  The log file updates with the status of your request, which should look something like this:
 
     ```bash
@@ -358,9 +357,9 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the response, and the . To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
 
-   :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::   
+   :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
     The **Output** tab shows that a status field has been correctly added to each of the readings.
 
