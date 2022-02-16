@@ -19,21 +19,24 @@ Let's create a new Azure VM with PowerShell.
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter.
       > [!IMPORTANT]
       > See the [Linux VM FAQ](/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length, and meet 3 out of the following 4 complexity requirements:
+
       > - Have lowercase characters
       > - Have uppercase characters
       > - Have a digit
       > - Have a special character (Regex match [\W_])
-    - Add the `-OpenPorts` parameter, and pass "22" as the port. This will let us SSH into the machine.
+
+    - Add the `-OpenPorts` parameter, and pass "22" as the port. This port will let us SSH into the machine.
+    - Create a public IP address name. You'll use this name to create and find your static IP address to sign in to the machine.
 
     ```powershell
-    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22
+    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22 -PublicIpAddressName "testvm-01"
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 1. Create a username and password, then press `Enter`. PowerShell will start creating your VM.
 
-1. This will take a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
+1. The VM creation takes a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
 
     ```powershell
     $vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>)
@@ -74,10 +77,16 @@ Let's create a new Azure VM with PowerShell.
     $vm.StorageProfile.OsDisk
     ```
 
-1. You can even pass the VM object into other cmdlets. For example, running the following command will retrieve the public IP address of your VM.
+1. You can even pass the VM object into other cmdlets. For example, running the following command will show you all available sizes for your VM.
 
     ```powershell
-    $vm | Get-AzPublicIpAddress
+    $vm | Get-AzVMSize
+    ```
+
+1. Now, run the following command to get your public IP address.
+
+    ```powershell
+    Get-AzPublicIpAddress -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-01"
     ```
 
 1. With the IP address, you can connect to the VM with SSH. For example, if you used the username "bob", and the IP address is "205.22.16.5", running this command would connect to the Linux machine.
@@ -118,7 +127,7 @@ Microsoft.Network/publicIPAddresses
 Microsoft.Network/virtualNetworks
 ```
 
-This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources. At this point, we'd likely just delete the resource group itself, and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
+The `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources. At this point, we'd likely just delete the resource group itself, and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
 
 1. Delete the network interface.
 
@@ -150,4 +159,4 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
     Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
-We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
+We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_. Then we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
