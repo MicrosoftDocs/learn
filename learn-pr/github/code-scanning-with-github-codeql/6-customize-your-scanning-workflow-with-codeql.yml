@@ -24,7 +24,7 @@ quiz:
     - content: "Workflow files can only reference individual query files (.ql) or query suite files (.qls)."
       isCorrect: false
       explanation: "Incorrect. Individual query files and query suite file aren't the only option for referencing other queries."
-    - content: "Workflow files can reference query packs, individual query and query suite files."
+    - content: "Workflow files can reference query packs, individual query files, and query suite files."
       isCorrect: true
       explanation: "Correct!"
   - content: "What is the method for ensuring that any packs or queries referenced in a custom configuration file are run in addition to the ones included in the workflow file?"
