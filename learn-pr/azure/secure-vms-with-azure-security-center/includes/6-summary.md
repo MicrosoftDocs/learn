@@ -26,7 +26,7 @@ To learn more about the topics in this module, check out the following links:
 
 - [Microsoft Security Intelligence](https://www.microsoft.com/wdsi)
 - [Microsoft Defender for Cloud overview](https://azure.microsoft.com/services/security-center/)
-- [Microsoft Defender for Cloud documentation](/azure/security-center/)
+- [Microsoft Defender for Cloud documentation](/azure/defender-for-cloud/)
 - [Microsoft Antimalware](/azure/security/fundamentals/antimalware)
 - [Azure Security blog](https://azure.microsoft.com/blog/topics/security/)
 - [ARM template to test a virus attack on an Azure VM](https://azure.microsoft.com/resources/templates/vm-virus-attack-prevention/)
