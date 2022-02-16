@@ -2,14 +2,14 @@ Let's start with an overview of Azure Communication Services(ACS).
 
 ## What is Azure Communication Services?
 
-ACS is a suite of services and products that enable you to create custom communication applications and solutions. These solutions are powered by the same technology that powers Skype and Microsoft Teams. They're also within the Azure family allowing easy integration with other Azure and Microsoft products for additional functionality. Examples of this additional functionality are:
+ACS is a platform of products and services that enable you to create custom communication applications and solutions. These solutions are powered by the same technology that powers Skype and Microsoft Teams. They're also within the Azure family allowing easy integration with other Azure and Microsoft products for additional functionality. Examples of this additional functionality are:
 
 - [Using Azure Event Grid to process SMS, Chat and Calling events](https://docs.microsoft.com/azure/event-grid/event-schema-communication-services) through Event Grid endpoints such as Azure Functions and Webhooks.
 - [Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics](https://docs.microsoft.com/azure/communication-services/concepts/analytics/enable-logging).
 - Using [Teams Interoperability](https://docs.microsoft.com/azure/communication-services/concepts/teams-interop) to bring ACS calls into your Microsoft Teams environment.
 - Use [Azure Logic Apps](https://docs.microsoft.com/azure/communication-services/quickstarts/sms/logic-app) to process SMS messages for SMS Automation.
 
-By combining ACS with other Azure offerings, you'll be able to launch communication solutions in no time and without the pain of managing infrastructure of dealing with management or maintenance.
+By combining ACS with other Azure offerings, you'll be able to launch communication solutions in no time and without the pain of managing infrastructure of dealing with maintenance.
 
 ## ACS' main product areas
 
@@ -21,7 +21,7 @@ ACS main product areas are:
 - Telephony - Acquire telephone numbers and use them within your communication applications to provide calls and other services to real phone numbers.
 - SMS - Send receive and manage text messages.
 
-ACS does have additional product areas but these are the ones we will be focusing on for this module.
+ACS does have additional product areas but these are the main ones, which we will be focusing on for this module.
 
 ## How to solve our scenario?
 
@@ -32,22 +32,19 @@ By integrating ACSs into their existing business, they can enable communication 
 - Voice and video calling - Host customer voice and video calls to diagnose appliance issues and provide support to their customers.
 - Chat - Add live chat to their website providing instant help, support, and sales to users looking at their products.
 - Telephony - Manage and automate incoming calls to the company's phone network providing a better quality service.
-
-TODO: Add your visual element
+- SMS - Deliver and manage appointment reminders for call outs to customers.
 
 ## Overview of key feature areas
 
-Now we'll provide a more detailed overview of some of ACS's features so that you can understand how you might be able to use ACS within your project.
+Now we'll provide a more detailed overview of some of ACS's features so that you can understand how you might be able to use ACS within your project. The key feature information should also provide an idea of which areas you may need and which are safe to ignore. It is not required to use every single feature area, you can pick and choose.
 
 ### Identity features
 
-To use many of ACS' other core features, you need to create and manage ACS Identities. ACS identities are separate from your existing application's identity platform but can link identities from that platform to ACS. Once created these identities uniquely identify an ACS user within other features in ACS such as Calling, Chat etc.
-
-TODO: Add visual diagram of ACS Identity
+To use many of ACS' other core features, you need to create and manage ACS Identities. ACS identities are separate from your existing application's identity platform but can link identities from that platform to ACS. Once created these identities uniquely identify an ACS user within other features in ACS such as Calling, Chat etc. They're used to provide a consistent identity withing these experiences such that each element knows who is who.
 
 ### Calling features
 
-Calling at its core provides easy to use voice and video calling so that you can get your users talking to each other. On top of this there are several additional features that may also be useful to you.
+Calling provides easy to use voice and video calling so that you can get your users talking to each other and you. On top of this there are several additional features that may also be useful to you.
 
 - Call recording - Record calls for later playback. Useful to provide a record of a meeting or call for those who weren't there or to examine the call for quality or training scenarios.
 - Call automation - Automate calls using services to provide automated messages, appointment reminders, phone menus etc.
@@ -55,18 +52,22 @@ Calling at its core provides easy to use voice and video calling so that you can
 - Screen sharing - Allow participants to share their screen to display documents, presentations and other items.
 - Custom video streams - Allow participants to share a remove video stream.
 
+:::image type="content" source="../media/calling.png" alt-text="Example ACS calling application.":::
+
 ### Chat features
 
-At its core, Chat provides 1-1 and group chat threads and messages that allow users to chat to each other within Chat "Threads". With chat comes a number of other features including:
+Chat provides 1-1 and group chat threads and messages that allow users to chat to each other. With chat comes a number of other features including:
 
-- Message History - Access the full chat history of a thread.
+- Message history - Access the full chat history of a thread.
 - Automation - Receive events from a chat thread to process them using custom business logic such as updating a Customer Relationship System(CRM).
-- Notifications - Receive push notifications of new messages or events within a chat thread.
+- Notifications - Receive push notifications of new messages or events within a chat thread on a mobile device.
 - Emojis and Metadata - Add emojis and Metadata to your chat messages.
+
+:::image type="content" source="../media/chat.png" alt-text="Example ACS pop-up chat.":::
 
 ### Telephony features
 
-Telephony provides Calling via the Publicly Switched Telephone Network(PSTN). This allows you to reach, speak to and manage calling and messaging operations over regular telephone networks rather than digital ones such as offered by Calling. In addition to these basic features Telephony includes:
+Telephony provides calling over the Publicly Switched Telephone Network(PSTN). This allows you to reach, speak to and manage calling and messaging operations over regular telephone networks rather than digital ones. In addition to these basic features Telephony includes:
 
 - Phone number management - Buy and manage real-world phone numbers to use with your telephony systems. This includes Toll Free numbers.
 - Direct routing - Route ACS numbers and calls to your on premises telephony systems.
@@ -80,3 +81,5 @@ Our Short Messaging Service(SMS) features let you interact with regular SMS mess
 - Delivery Reports - monitor who receives and reads your text messages.
 - Bulk messaging - Send large marketing or notification messages.
 - Shortcodes - Use abbreviated phone numbers for marketing and services.
+
+:::image type="content" source="../media/sms.png" alt-text="Example ACS SMS.":::
