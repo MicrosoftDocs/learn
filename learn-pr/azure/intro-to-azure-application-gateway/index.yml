@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-application-gateway
 metadata:
   moduleType: introduction
   title: Introduction to Azure Application Gateway
-  description: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Azure Application Gateway as a solution to meet your organization's needs.
+  description: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.
   ms.date: 02/16/2022
   author: Orin-Thomas
   ms.author: orthomas
@@ -11,11 +11,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Application Gateway
-summary: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Azure Application Gateway as a solution to meet your organization's needs.  
+summary: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.  
 abstract: |
   In this module, you will:
   - Learn what Azure Application Gateway is and the functionality it provides.
-  - Determine whether Azure Application Gateway meets the needs of your organization.
+  - Determine whether Application Gateway meets the needs of your organization.
 prerequisites: |
   - Understanding of basic networking concepts.
   - Familiarity with Azure virtual machines and Azure App Service.

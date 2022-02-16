@@ -2,7 +2,7 @@ Azure Application Gateway can meet your organization’s needs for the following
 
 - Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any on-premises server that may have become available.
 - Azure Application Gateway TLS termination functionality will reduce the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.
-- Azure Application Gateway allows Adatum to use a web application firewall to block cross site scripting and SQL injection traffic before it reaches servers in the back-end pool.
+- Azure Application Gateway allows Adatum to use a web application firewall to block cross-site scripting and SQL injection traffic before it reaches servers in the back-end pool.
 - Azure Application Gateway supports session affinity, required because the several web applications deployed by Adatum use user session state information stored locally on individual servers in the back-end pool.
 
 ## When not to use Azure Application Gateway
