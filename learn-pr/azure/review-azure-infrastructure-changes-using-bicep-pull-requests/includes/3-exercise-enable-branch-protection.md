@@ -1,19 +1,69 @@
 Your team is working on a Bicep template that already contains a website and a database. You've deployed the components to your production environment. Now, you've been asked to add a message queue, so that your website can post messages whenever a customer places an order for a toy. A backend system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
 
-In this exercise, you'll create a feature branch for your change. You'll also add branch protection to your main branch, and only allow changes to be merged to the main branch after they've been reviewed.
+In this exercise, you'll create a feature branch for your change. You'll also add branch protection to your main branch, and only allow changes to be merged to the main branch after they've been reviewed. Before that, though, you need to make sure that your Azure DevOps environment is set up to complete the rest of this module.
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Add branch protection to your main branch.
-> * Create a feature branch for your change.
+> * Set up an Azure DevOps project for this module.
+> * Clone the project's repository to your computer.
+> * Add branch protection to your repository's main branch.
+> * Create a local feature branch for your change.
 > * Try to merge your feature branch to main.
 
-<!-- TODO environment setup steps -->
+## Get the Azure DevOps project
 
-## Add required reviewers for pushes to your main branch
+Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
-Here, you configure your repository to prevent direct pushes.
+> [!div class="nextstepaction"]
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
+<!-- TODO -->
+
+On the Azure DevOps Demo Generator site, follow these steps to run the template:
+
+1. Select **Sign In** and accept the usage terms.
+
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
+
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
+
+1. Select **Create Project**.
+
+    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
+
+1. Select **Navigate to project** to go to your project in Azure DevOps.
+
+## Clone the repository
+
+1. Select **Repos** > **Files**.
+
+   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+
+1. Select **Clone**.
+
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
+
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
+
+1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
+
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
+
+1. Create a folder to use for the repository, and then choose **Select Repository Location**.
+
+1. You're using this repository for the first time, so you're prompted to sign in.
+
+    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+
+    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+
+1. Visual Studio Code prompts you to open the repository. Select **Open**.
+
+   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
+
+## Add branch protection
+
+Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. In your browser, navigate to **Repos** > **Branches**.
 
@@ -25,45 +75,51 @@ Here, you configure your repository to prevent direct pushes.
 
 1. Change the minimum number of reviewers to **1** and select the **Allow requestors to approve their own changes** option.
 
-> [!NOTE]
-> We are setting the _Allow requestors to approve their own changes_ option since in these exercises it will be only you who has access to the project. We need this setting so you can advance through the exercises. In a team environment you probably don't want to set this option.
+   > [!NOTE]
+   > Here, you enable the _Allow requestors to approve their own changes_ option. In these exercises, you're working on your own, and so you need to both create and approve your changes. But in a real team environment, you might not want to enable this option.
+
+## Create a local feature branch
+
+1. In the Visual Studio Code terminal, run the following statement: 
+
+    ```bash
+    git checkout -b add-orders-queue
+    ```
+
+    This creates a new feature branch for you to work from.
+
+1. Open the *main.bicep* file in the *deploy* folder.
+
+   (TODO instructions on what to do with the Bicep file)
+
+1. Commit your changes, and push them to your Azure Repos repository, by running the following commands in the Visual Studio Code terminal:
+
+    ```bash
+    git add .
+    git commit -m "Add orders queue and associated configuration"
+    git push -u origin
+    ```
+
+    The feature branch is pushed to your repository on Azure Repos.
 
 ## Try to merge a feature branch to main
 
-Now that the main branch has branch protection turned on, you will first try to directly merge a branch to the main branch.
+You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how Azure Repos prevens you from accidentally pushing your changes to a protected branch.
 
-1. In the Visual Studio Code terminal execute the following statements: 
-
-    ```bash
-    git merge origin/feature1 main
-    ```
-
-    This will merge the feature1 branch into the main branch.
-
-1. TODO
+1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and try to ush your changes:
 
     ```bash
+    git checkout main
     git push
     ```
 
-    This will push your local main branch with the changes of feature1 to the remote main branch.
-    You will notice that this last statement will be unsuccessful because of the branch protection you enabled: 
+1. Notice that the push fails with an error message that looks similar to the one below:
 
     ```bash
     Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-    To https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn
+    To https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review
     ! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
-    error: failed to push some refs to 'https://dev.azure.com/yourorg/bicepdevopslearn/_git/bicepdevopslearn'
+    error: failed to push some refs to 'https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review'
     ```
 
-## Create a pull request to merge the feature branch
-
-Since you are unable to push changes to main directly, you will now try and merge the changes through a pull request.
-
-1. In your browser, navigate to **Repos** > **Files**.
-
-1. Select the **Feature1** branch.
-
-1. You will notice a banner on top indicating there are changes in the feature1 branch and that you can create a pull request for them. Select **Create a pull request**.
-
-1. Take note of the title and the description and the extra info you can indicate. We will leave them as is. Select **Create**.
+    The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.

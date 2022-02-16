@@ -1,3 +1,16 @@
+## Create a pull request to merge the feature branch
+
+Since you are unable to push changes to main directly, you will now try and merge the changes through a pull request.
+
+1. In your browser, navigate to **Repos** > **Files**.
+
+1. Select the **Feature1** branch.
+
+1. You will notice a banner on top indicating there are changes in the feature1 branch and that you can create a pull request for them. Select **Create a pull request**.
+
+1. Take note of the title and the description and the extra info you can indicate. We will leave them as is. Select **Create**.
+
+
 You just created a pull request. In a team-based context one of your team members will review and approve your pull request so you have an extra set of eyes on it. In this case you will approve your own pull request.
 
 1. Your previous action brought you to the detail screen of your pull request. You can also navigate to this screen through **Repos** > **Pull requests** > and then select the pull request from the list.
