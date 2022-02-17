@@ -3,7 +3,7 @@ uid: learn.wwl.work-azure-repos-github
 metadata:
   title: Work with Azure Repos and GitHub
   description: "Work with Azure Repos and GitHub"
-  ms.date: 12/02/2021
+  ms.date: 02/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Work with GitHub Codespaces
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/7-work-with-azure-repos-and-github.svg
 levels:
 - advanced
 roles:
