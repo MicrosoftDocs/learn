@@ -1,4 +1,4 @@
-There are different ways that you might use GitHub with a project. Sometimes you clone a project to get a copy of it that you can work on. Sometimes it goes the other direction: you have a local project that you want to put in GitHub.
+There are different ways that you might use GitHub with a project. Sometimes you clone a project to get a copy of it, that you can work on. Sometimes it goes the other direction: you have a local project that you want to put in GitHub.
 
 Before you do anything at all with GitHub, you have to make sure that you're authenticated. GitHub needs to know who you are so it can give you access to the right repositories. 
 
