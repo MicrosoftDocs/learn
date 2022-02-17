@@ -33,7 +33,6 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - [Git](https://git-scm.com/download?azure-portal=true).
-  - TODO either Azure Repos or GH account?
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
