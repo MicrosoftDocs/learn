@@ -4,7 +4,7 @@ title: Exercise - Protect your main branch
 metadata:
   unitType: exercise
   title: Exercise - Protect your main branch
-  description: TODO
+  description: Add branch protection or branch policies to your repository's main branch.
   ms.date: 02/11/2022
   author: vermegi
   ms.author: givermei

@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: TODO
+  description: Summary for reviewing your Azure infrastructure changes by using Bicep and pull requests.
   ms.date: 02/11/2022
   author: vermegi
   ms.author: givermei
