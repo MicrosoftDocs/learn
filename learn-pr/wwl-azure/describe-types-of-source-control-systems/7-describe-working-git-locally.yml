@@ -6,7 +6,7 @@ metadata:
   description: "Describe working with Git locally"
   ms.date: 02/17/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
