@@ -38,7 +38,7 @@ quiz:
         - content: Session persistence
           isCorrect: true
           explanation: Correct. Session persistence allows you to ensure that traffic from a client computer interacting with Azure Load Balancer is always forwarded to the same server in the back-end pool.
-    - content: Which of the following would you configure to ensure that back-end pool instances that are no longer responding to traffic on TCP port 443 no longer have traffic directed to them by Load Balancer?
+    - content: Which of the following components would you configure to ensure that back-end pool instances that are no longer responding to traffic on TCP port 443 no longer have traffic directed to them by Load Balancer?
       choices:
         - content: High availability port
           isCorrect: false

@@ -17,7 +17,7 @@ The front-end IP address is the address used by clients connecting to your web a
 - **Public IP address: A public load balancer**. A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps traffic from the private IP and port of the VM to the public IP and port of the load balancer when transmitting response traffic back to the requesting client.
 - **Private IP address: An internal load balancer**. An internal load balancer distributes traffic to resources that are inside a virtual network. Azure restricts access to the front-end IP addresses of a virtual network that are load balanced. Front-end IP addresses and virtual networks are never directly exposed to an internet endpoint. Internal line-of-business applications run in Azure and are accessed from within Azure or from on-premises resources through a VPN or ExpressRoute connection.
 
-:::image type="content" source="../images/load-balancer-types.png" alt-text="Diagram that depicts how public and internal load balancers work in Azure Load Balancer." border="false":::
+    :::image type="content" source="../images/load-balancer-types.png" alt-text="Diagram that depicts how public and internal load balancers work in Azure Load Balancer." border="false":::
 
 ## Load Balancer rules
 
@@ -59,11 +59,11 @@ Load Balancer allows you to configure different health probe types for endpoints
 
 ## Session persistence
 
-By default, Load Balancer distributes network traffic equally among multiple VM instances. It provides stickiness only within a transport session. Session persistence specifies how traffic from a client should be handled. The default behavior (None) is that successive requests from a client may be handled by any virtual machine.
+By default, Load Balancer distributes network traffic equally among multiple VM instances. It provides stickiness only within a transport session. Session persistence specifies how traffic from a client should be handled. The default behavior (None) is that successive requests from a client may be handled by any VM.
 
 Session persistence is also known session affinity, source IP affinity, or client IP affinity. This distribution mode uses a two-tuple (source IP and destination IP) or three-tuple (source IP, destination IP, and protocol type) hash to route to back-end instances. When you use session persistence, connections from the same client will go to the same back-end instance within the back-end pool. You can configure one of the following session persistence options:
 
-- **None (default)**: Specifies that any healthy virtual machine can handle the request.
+- **None (default)**: Specifies that any healthy VM can handle the request.
 - **Client IP (2-tuple)**: Specifies that successive requests from the same client IP address will be handled by the same back-end instance.
 - **Client IP and protocol (3-tuple)**: Specifies that successive requests from the same client IP address and protocol combination will be handled by the same back-end instance.
 
@@ -87,12 +87,12 @@ HA ports load-balancing rules help you with critical scenarios, such as high ava
 
 ## Inbound NAT rules
 
-Load balancing rules can be used in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific virtual machine. This allows remote desktop access from outside of Azure.
+Load balancing rules can be used in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific VM. This allows remote desktop access from outside of Azure.
 
 :::image type="content" source="../images/inbound-nat-rules.png" alt-text="Diagram that shows how inbound NAT rules work in Azure Load Balancer." border="false":::
 
 ## Outbound rules
 
-An outbound rule configures Source Network Address Translation (SNAT) for all virtual machines or instances identified by the back-end pool. This rule enables instances in the back end to communicate (outbound) to the internet or other public endpoints.
+An outbound rule configures Source Network Address Translation (SNAT) for all VMs or instances identified by the back-end pool. This rule enables instances in the back end to communicate (outbound) to the internet or other public endpoints.
 
 :::image type="content" source="../images/outbound-rule.png" alt-text="Diagram that shows how outbound rules work in Azure Load Balancer." border="false":::
