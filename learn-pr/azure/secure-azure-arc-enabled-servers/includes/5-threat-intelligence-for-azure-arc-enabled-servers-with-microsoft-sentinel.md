@@ -11,7 +11,7 @@ Microsoft Sentinel is your birds-eye view across the enterprise alleviating the 
 - **Investigate threats with artificial intelligence** and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft. 
 - **Respond to incidents rapidly** with built-in orchestration and automation of common tasks. 
 
-## Connect Data
+## Connect data
 
 To on-board Microsoft Sentinel, you first need to connect to your security sources. 
 

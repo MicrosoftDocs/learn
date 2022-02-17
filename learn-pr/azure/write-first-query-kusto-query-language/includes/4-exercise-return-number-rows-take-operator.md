@@ -10,7 +10,7 @@ The `take` operator is perfect for this task, because it returns a specific numb
 
 1. Copy this query to your clipboard:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKEnMTlUwBQD5x7nrFAAAAA==" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKEnMTlUwBQD5x7nrFAAAAA==" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
