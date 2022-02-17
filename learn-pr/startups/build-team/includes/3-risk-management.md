@@ -1,4 +1,4 @@
-In this unit, we're going to discuss how to manage risk in startup teams – starting with managing conflict between cofounders, and then discussing how to use vesting of founder shares as a way of protecting the company in the event that one founder leaves.
+This unit will cover how to manage risk in startup teams. We'll start with managing conflict between cofounders. Then we'll discuss how to use vesting of founder shares to help protect the company if one founder leaves.
 
 ## Cofounder conflict
 
@@ -45,15 +45,15 @@ The main benefits of founder vesting are:
 - It incentivizes founders to stay for the long term, because they'll only earn a substantial shareholding by remaining involved.
 - It protects the company in the event that a founder leaves, by minimizing the chances of them walking away with a large unearned shareholding.
 
-Founder vesting has two components: A one-year *cliff* and *monthly vesting*.
+Founder vesting has two components: 
 
-A *cliff* is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming each founder has remained involved, 25 percent of their shares will vest.
+- **Cliff**. A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming each founder has remained involved, 25 percent of their shares will vest.
 
-If a founder departs within the first year, they forfeit all of their shareholding. This makes sense on the basis that in most startups, not much value is created in the first year.
+  If a founder departs within the first year, they forfeit all of their shareholding. This makes sense on the basis that in most startups, not much value is created in the first year.
 
-The second component is *monthly vesting*, in which the remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years, as shown below.
+- **Monthly vesting**. The remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years, as shown below.
 
-:::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After the percentage remains at zero for a year, it jumps and then steadily climbs.":::
+  :::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After the percentage remains at zero for a year, it jumps and then steadily climbs.":::
 
 ## What happens when the company raises money from investors?
 
