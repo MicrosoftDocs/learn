@@ -4,13 +4,12 @@ title: Develop online with GitHub Codespaces
 metadata:
   title: Develop online with GitHub Codespaces
   description: "Develop online with GitHub Codespaces"
-  ms.date: 12/02/2021
+  ms.date: 02/17/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
