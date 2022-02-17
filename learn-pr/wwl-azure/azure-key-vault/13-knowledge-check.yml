@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 02/17/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
       explanation: "Using Access Policies would not give you role level control, and does not follow least privilege rules."
     - content: "Role-based Access Control"
       isCorrect: true
-      explanation: "Role-based Access Control. To create and delete key vaults the data plane you should grant access with RBAC. For example, Key Vault Contributor. Using Access Policies would not give you role level control, and does not follow least privilege rules."
+      explanation: "Role-based Access Control. To create and delete key vaults in the data plane you should grant access with RBAC. For example, Key Vault Contributor. Using Access Policies would not give you role level control, and does not follow least privilege rules."
     - content: "Azure AD authentication"
       isCorrect: false
       explanation: "AD authentication is not the right way to grant your access."
