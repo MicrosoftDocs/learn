@@ -116,7 +116,7 @@ You see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have installed Azure PowerShell from the VS Code Extensions, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have installed Azure PowerShell Tools from the VS Code Extensions, and sign in to the same account that activated the sandbox.
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
