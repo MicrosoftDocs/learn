@@ -20,13 +20,7 @@ Until now, you've used only single-qubit operations. These operations act
 on single qubits individually. To entangle qubits, you need
 *multiqubit gates*.
 
-The most prominent example of a multiqubit gate is the
-[`CNOT`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true)
-operation. This operation takes two qubits as input. Then it flips the state of the
-second qubit (the target qubit) if, and only if, the state of the first qubit (the control
-qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can
-transform a register in the state $|00\rangle$ to the entangled state
-$\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
+The most prominent example of a multiqubit gate is the [`CNOT`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true) operation. This operation takes two qubits as input. Then it flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
 Here's how it works:
 

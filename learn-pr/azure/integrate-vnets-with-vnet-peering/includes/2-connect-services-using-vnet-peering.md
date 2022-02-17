@@ -58,4 +58,4 @@ When virtual networks are connected through both a gateway and virtual network p
 
 Virtual network peering can be a great way to enable network connectivity between services that are in different virtual networks. Because it's easy to implement and deploy, and it works well across regions and subscriptions, virtual network peering should be your first choice when you need to integrate Azure virtual networks.
 
-Peering might not be your best option if you have existing VPN or ExpressRoute connections or services behind Azure Basic Load Balancers that would be accessed from a peered virtual network. In these cases, you should research alternatives.
+Peering might not be your best option if you have [existing VPN or ExpressRoute](/azure/virtual-network/virtual-network-peering-overview#service-chaining) connections or services behind Azure Basic Load Balancers that would be accessed from a peered virtual network. In these cases, you should research alternatives.
