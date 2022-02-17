@@ -1,6 +1,3 @@
-
-#
-
 Visual Studio is an integrated development environment (IDE) that many software developers use around the world. GitHub is a version control platform for hosting development projects. Use GitHub to back up your code and collaborate with others. Visual Studio provides an integrated GitHub experience, so it's easier for you to manage projects from inside your code editor.
 
 Suppose you join a new software development team that's working in C# and .NET by using Visual Studio. Some team members are comfortable with using Git from the command line. Others are less confident with working in the command line and would prefer a more visual, integrated experience.  
