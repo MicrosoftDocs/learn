@@ -95,4 +95,4 @@ Load balancing rules can be used in combination with Network Address Translation
 
 An outbound rule configures Source Network Address Translation (SNAT) for all virtual machines or instances identified by the back-end pool. This rule enables instances in the back end to communicate (outbound) to the internet or other public endpoints.
 
-:::image type="content" source="../images/outbound-rules.png" alt-text="Diagram that shows how outbound rules work in Azure Load Balancer." border="false":::
+:::image type="content" source="../images/outbound-rule.png" alt-text="Diagram that shows how outbound rules work in Azure Load Balancer." border="false":::
