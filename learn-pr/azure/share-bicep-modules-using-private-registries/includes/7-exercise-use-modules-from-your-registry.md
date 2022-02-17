@@ -102,6 +102,14 @@ Here, you update your Bicep file to use the registry alias instead of referring 
 
 1. Save the file.
 
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
+
+::: code language="bicep" source="code/7-main-alias.bicep" :::
+
+If the file doesn't match, copy the example or adjust your template to match the example.
+
 ## Deploy to Azure
 
 In the Visual Studio Code **Terminal**, deploy the template to Azure by running the following command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
