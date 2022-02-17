@@ -24,7 +24,7 @@ The following references are related to Azure SQL Database's modern capabilities
 
 The following references will be very useful if you want to learn about DevOps generally and as it relates to Azure SQL Database.
 
-- [What is DevOps?](https://azure.microsoft.com/en-us/overview/what-is-devops/)
+- [What is DevOps?](https://azure.microsoft.com/overview/what-is-devops/)
 - [CI/CD](https://en.wikipedia.org/wiki/CI/CD)
 - [GitHub Actions](https://github.com/features/actions)
 - [Azure DevOps](https://azure.microsoft.com/solutions/devops/)

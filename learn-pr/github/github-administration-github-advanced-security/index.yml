@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.github-administration-github-advanced-security
+metadata:
+  moduleType: standard
+  title: GitHub administration for GitHub Advanced Security
+  description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
+  ms.date: 2/14/2022
+  author: lucie-docs
+  ms.author: lucielenaour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: GitHub administration for GitHub Advanced Security
+summary: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand what GitHub Advanced Security is and how to leverage it in the software development lifecycle
+  - Identify which GitHub Advanced Security features are available for open source projects and which are available on enterprise products
+  - Enable the different features of GitHub Advanced Security on different enterprise products
+  - Determine who should get access to GitHub Advanced Security features in an organization and grant the correct permissions
+  - Set security policies at the organization and repository levels
+  - Understand how to respond to a security alert
+  - Use the Security Overview to monitor security alerts
+  - Use the GitHub Advanced Security API endpoints to manage the GitHub Advanced Security features and alerts
+prerequisites: |
+  - A GitHub enterprise account with a GitHub Advanced Security license
+  - Repository administrator or organization owner permissions
+  - Familiarity with managing GitHub administrative settings
+  - Knowledge of GitHub Actions
+ratingEnabled: true
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+- advanced
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+- developer
+- administrator
+- security-engineer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+- github
+units:
+- learn.github-administration-github-advanced-security.introduction
+- learn.github-administration-github-advanced-security.what-is-github-advanced-security
+- learn.github-administration-github-advanced-security.enable-github-advanced-security
+- learn.github-administration-github-advanced-security.manage-access-github-advanced-security
+- learn.github-administration-github-advanced-security.manage-github-advanced-security-features-alerts
+- learn.github-administration-github-advanced-security.knowledge-check
+- learn.github-administration-github-advanced-security.summary
+badge:
+  uid: learn.github-administration-github-advanced-security.badge

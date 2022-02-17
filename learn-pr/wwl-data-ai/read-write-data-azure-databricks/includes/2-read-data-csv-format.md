@@ -1,4 +1,4 @@
-In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](#clone-the-databricks-archive).
+In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace. If you do not have a workspace available, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Import notebooks into Databricks](#import-notebooks-into-databricks).
 
 ## Unit Pre-requisites
 
@@ -34,7 +34,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 4. Select **Create Cluster** to add a new cluster.
 
-   ![The create cluster page.](../media/create-cluster.png)
+:::image type="content" source="../media/create-cluster.png" alt-text="The create cluster page":::
 
 5. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
@@ -48,7 +48,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 10. Select **Create Cluster**.
 
-## Clone the Databricks archive
+## Import notebooks into Databricks
 
 1. If you do not currently have your Azure Databricks workspace open: in the Azure portal, navigate to your deployed Azure Databricks workspace and select **Launch Workspace**.
 

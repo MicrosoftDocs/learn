@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-github-advanced-security.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: An introduction to the topics you'll learn about in this module.
+  ms.date: 2/14/2022
+  author: lucie-docs
+  ms.author: lucielenaour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

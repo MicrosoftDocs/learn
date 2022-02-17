@@ -2,7 +2,7 @@ Filter the telemetry sent by the device.
 
 To reduce the amount of telemetry sent to your IoT Central application, you want to filter the data on the IoT Edge device.
 
-In this unit, you'll use Azure Functions running on the IoT Edge device to implement a filter to ensure that the device only sends telemetry when the ambient temperature is above 21&deg;C.
+In this unit, you'll use Azure Functions running on the IoT Edge device to implement a filter. The filter ensures that the device only sends telemetry when the ambient temperature is above 21&deg;C.
 
 ## Configure a container registry
 
@@ -30,7 +30,7 @@ cd FilterFunction
 ls
 ```
 
-Run the following command to replace the existing _FilterFunction.cs_ with an implementation that filters the machine temperature telemetry values:
+Run the following command to replace the existing _FilterFunction.cs_ with an implementation that filters the machine temperature telemetry:
 
 ```azurecli
 curl -O https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/FilterFunction.cs
@@ -50,7 +50,7 @@ az acr repository list --name $REGISTRY_NAME
 
 ## Update the device template to use the new module
 
-To use the new filter module on your IoT Edge device, you need to update the deployment manifest associated with the device template and add a new interface to the device template. You'll also need to version the device template and migrate your device to use the new template.
+To use the new filter module on your IoT Edge device, update the deployment manifest associated with the device template and add a new interface to the device template. You'll also need to version the device template and migrate your device to use the new template.
 
 Download the new deployment manifest and interface definition to your local machine by right-clicking on the following links and choosing **Save as**:
 
@@ -94,8 +94,8 @@ Before you can upload the new version of the manifest to the device template, yo
 1. Navigate to the **Device templates** page in the IoT Central application.
 1. Select the **Environmental Sensor Edge Device** device template.
 1. Select **Version**. Then select **Create** to accept the new template name.
-1. Select **+ Replace manifest**, then select **Upload**, the select the *EnvironmentalSensorManifestFilter.json* file you edited previously.
-1. When the manifest is validated, select **Replace** to replace the deployment manifest with the new version.
+1. Select **Edit manifest**, then select **replace it with a new file**, Then select the *EnvironmentalSensorManifestFilter.json* file you edited previously.
+1. When the manifest is validated, select **Save** to replace the deployment manifest with the new version.
 
 The new module in the deployment manifest requires a new module definition in the device template. IoT Central doesn't add the module definition automatically when you replace the deployment manifest:
 
@@ -110,14 +110,14 @@ The new module now sends the telemetry to IoT Central. Next, add an interface to
 1. Choose the **Import interface** tile. Select the **TelemetryInterfaceFilter.json** file you downloaded previously.
 1. Select **Save** to save your changes.
 
-You can remove the original **Telemetry** interface because the **SimulatedTemperatureModule** no longer sends telemetry directly to IoT Central. The output form this module is routed to the **FilterFunction** module by the IoT Edge runtime:
+You can remove the original **Telemetry** interface because the **SimulatedTemperatureModule** no longer sends telemetry directly to IoT Central. The output from this module is routed to the **FilterFunction** module by the IoT Edge runtime:
 
 1. Select the **Telemetry** interface in the **SimulatedTemperatureSensor** module.
 1. Select **Delete** and then confirm the operation.
 
 Modify the **View IoT Edge device telemetry** view to display the telemetry sent by the **FilterFunction** module:
 
-1. In the device template, select the **View IoT Edge device telemetry** view, and then select the **Configure** option on the chart tile.
+1. In the device template, select the **View IoT Edge device telemetry** view, and then select the **Edit** option on the chart tile.
 1. Add the **ambient/temperature**, **humidity**, **machine/temperature**, and **pressure** telemetry values.
 1. Select **Update** and then **Save** to save your changes.
 1. Select **Publish** to publish the new version of the device template.

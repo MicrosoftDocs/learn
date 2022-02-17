@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -33,9 +33,9 @@ quiz:
     - content: "Automatic device management."
       isCorrect: false
       explanation: "Incorrect. Automatic device management can be done through the Azure portal or Azure CLI, but not the IoT Hub Device SDK."
-    - content: "Update a device twin."
+    - content: "Update a device twin property."
       isCorrect: true
-      explanation: "Correct. Updating the properties or tags of a device twin can be done using each of the three tools."
+      explanation: "Correct. Updating a property of a device twin can be done using each of the three tools."
     - content: "Update a device twin desired property."
       isCorrect: false
       explanation: "Incorrect. The desired properties of a device twin can be set from the service side using the Azure portal or Azure CLI, but not the IoT Hub Device SDK. You could use the IoT Hub Service SDK to set device twin desired properties from a back-end app."
