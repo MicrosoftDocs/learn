@@ -6,7 +6,7 @@ metadata:
   description: Overview of priority inversion and solutions.
   ms.date: 09/15/2020
   author: EdLamie
-  ms.author: pacote
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

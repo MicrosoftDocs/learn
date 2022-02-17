@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use Wait Abort to break thread suspension in Azure RTOS ThreadX.
   ms.date: 09/15/2020
   author: EdLamie
-  ms.author: pacote
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Wait Abort to break thread suspension

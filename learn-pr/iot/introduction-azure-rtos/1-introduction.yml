@@ -6,7 +6,7 @@ metadata:
   description: Introduction to Azure RTOS.
   ms.date: 01/27/2022
   author: EdLamie
-  ms.author: pacote
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
