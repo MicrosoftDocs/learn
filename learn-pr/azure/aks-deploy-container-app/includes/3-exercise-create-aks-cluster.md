@@ -1,6 +1,6 @@
-In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
+In this exercise, you'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You'll use the *single control plane and multiple nodes* architecture, as it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use windows node pools, the cluster must be created with additional **prerequisites** and commands. Please make a selection below, based on which type of node pools you want to add.
+AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use windows node pools, the cluster must be created with more **prerequisites** and commands. Make a selection below, based on which type of node pools you want to add.
 
 #### [Linux](#tab/linux)
 
@@ -35,7 +35,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-1. Run the `az aks nodepool add` command to add additional node pool of linux operating system.
+1. Run the `az aks nodepool add` command to add another node pool of linux operating system.
 
     ```azurecli
     az aks nodepool add \
@@ -94,9 +94,9 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
    The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes will be part of **System** mode.
 
-    The `--windows-admin-username` parameter is used to setup administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
+    The `--windows-admin-username` parameter is used to set up administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
-1. Run the `az aks nodepool add` command to add additional node pool of Windows operating system.
+1. Run the `az aks nodepool add` command to add another node pool of Windows operating system.
 
     ```azurecli
     az aks nodepool add \
