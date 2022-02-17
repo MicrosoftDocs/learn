@@ -55,7 +55,7 @@ TODO
    Azure DevOps shows you the files that were changed in this pull request.
 
    > [!TIP]
-   > TODO try to review - are there any changes you'd suggest?
+   > Imagine you're reviewing this for your own team. Would you make any suggestions?
 
 1. In the **main.bicep** file that was changed, find line 12.
 
