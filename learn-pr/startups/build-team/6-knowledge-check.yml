@@ -71,7 +71,7 @@ quiz:
     - content: "A way for founders to sell their shares before the company achieves an exit."
       isCorrect: false
       explanation: "Incorrect. With founder vesting, each founder earns equity over time, contingent on their ongoing involvement and performance. When the company achieves an exit, vesting agreements usually allow for immediate vesting of unvested shares."
-    - content: "A way to protect the company in the event of an early departure of a cofounder."
+    - content: "A way to protect the company if a cofounder departs early."
       isCorrect: true
       explanation: "Correct. With founder vesting, each founder earns equity over time, contingent on their ongoing involvement and performance. Confounders who leave early typically own few or no shares."
 

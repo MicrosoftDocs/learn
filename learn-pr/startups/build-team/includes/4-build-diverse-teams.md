@@ -18,7 +18,7 @@ According to a recent study by Kauffmann Fellows, founders and executives of US 
 
 Again, bias has been shown to play a large part in this discrepancy. A [study by Paul Gompers and Sophie Wang from Harvard Business School](https://www.hbs.edu/ris/Publication%20Files/17-067_b5578676-e44c-40aa-a9d8-9e72c287afe8.pdf?azure-portal=true) showed that investors are 39 percent more likely to invest in startups founded by people who share their race. At the same time, only 2 percent of venture capital investors are Hispanic, and fewer than 1 percent are black.
 
-The reasons for greater performance by ethnically diverse teams include greater diversity of ideas and perspectives, greater objectivity in decision-making, and less susceptibility to group-think. For more information, see [Why Diverse Teams are Smarter](https://hbr.org/2016/11/why-diverse-teams-are-smarter?azure-portal=true) by *Harvard Business Review*.
+The reasons for greater performance by ethnically diverse teams include greater diversity of ideas and perspectives, greater objectivity in decision-making, and less susceptibility to group-think. For more information, see [Why Diverse Teams Are Smarter](https://hbr.org/2016/11/why-diverse-teams-are-smarter?azure-portal=true) by *Harvard Business Review*.
 
 ## Neurodiversity
 
@@ -71,7 +71,7 @@ Here are some of the ways in which startups can benefit from [building teams tha
 
 It's clear that creating a diverse team can be a massive competitive advantage for startups. A diverse population is a highly skilled but underutilized talent pool. Startups that can attract and retain the right candidates can use this enhanced talent to their advantage and outperform companies with less diverse teams.  
 
-Calendly is a great example of a company benefiting from a focus on diversity. It has implemented a number of diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It has become recognized as a highly desirable employer, with [96 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
+Calendly is a great example of a company benefiting from a focus on diversity. It has implemented diversity programs to encourage and support employees from diverse backgrounds, including programs specifically for women of color. It has become recognized as a highly desirable employer, with [96 percent of employees reporting it's a great place to work](https://www.greatplacetowork.com/certified-company/7023983?azure-portal=true) compared to a US average of 59 percent of employees.
 
 Attracting and retaining diverse candidates requires creating a work environment that enables them to deliver their best work. Companies need to think about how to achieve this before recruiting. For example, there's no point in recruiting a candidate with autism unless you've understood their needs (which might include minimizing visual and auditory distractions) and created a work environment that allows them to be productive.
 
