@@ -146,7 +146,37 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 ::: zone pivot="github"
 
-TODO
+## Add branch protections
+
+Configure your Git repository to prevent direct pushes to the *main* branch.
+
+1. In your browser, select **Settings**.
+
+   TODO image
+
+1. Select **Branches**.
+
+   TODO image
+
+1. Select **Add rule**.
+
+   TODO image
+
+1. In the **Branch name pattern** text box, enter **main**.
+
+1. Select **Require a pull request before merging**.
+
+1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
+
+   Leave the other configuration options with their default values.
+
+   TODO image
+
+1. Near the bottom of the page, select **Create**.
+
+   TODO image
+
+   GitHub might ask you to sign in again to confirm your identity.
 
 ::: zone-end
 
@@ -191,11 +221,13 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    :::code language="bicep" source="code/3-main-end.bicep" range="14-32" highlight="12-18" :::
 
-1. In the application module definition, add the storage account and queue names as parameters.
+1. In the `appService` module definition, add the storage account and queue names as parameters.
 
    :::code language="bicep" source="code/3-main-end.bicep" range="34-43" highlight="6-7" :::
 
    This enables the application to find the queue to send messages to.
+
+1. Save the *main.bicep* file.
 
 1. Open the *appService.bicep* file in the *deploy/modules* folder.
 
@@ -231,30 +263,70 @@ The feature branch is pushed to your remote repository.
 
 ::: zone pivot="github"
 
-TODO
+You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how GitHub prevents you from accidentally pushing your changes to a protected branch.
+
+1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and merge the *add-orders-queue* branch to it:
+
+   ```bash
+   git checkout main
+   git merge add-orders-queue
+   ```
+
+   The command worked, and you merged the *add-orders-queue* branch to your *main* branch. But, this only affects your local Git repository.
+
+1. Run the following statement to try to push your changes to GitHub:
+
+    ```bash
+   git push
+   ```
+
+   Notice that your push fails with an error message that looks similar to the one below:
+
+   :::code language="output" source="code/3-merge-error-github.txt" highlight="8-9" :::
+
+   The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
+
+1. Undo the merge by running the following statement:
+
+   ```bash
+   git reset --hard HEAD~1
+   ```
+
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in.
 
 ::: zone-end
 
 ::: zone pivot="azurerepos"
 
-You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how Azure Repos prevens you from accidentally pushing your changes to a protected branch.
+You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how Azure Repos prevents you from accidentally pushing your changes to a protected branch.
 
-1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and try to ush your changes:
+1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and merge the *add-orders-queue* branch to it:
+
+   ```bash
+   git checkout main
+   git merge add-orders-queue
+   ```
+
+   The command worked, and you merged the *add-orders-queue* branch to your *main* branch. But, this only affects your local Git repository.
+
+1. Run the following statement to try to push your changes to Azure Repos:
 
     ```bash
-    git checkout main
-    git push
-    ```
+   git push
+   ```
 
-1. Notice that the push fails with an error message that looks similar to the one below:
+   Notice that your push fails with an error message that looks similar to the one below:
 
-    ```bash
-    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-    To https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review
-    ! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
-    error: failed to push some refs to 'https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review'
-    ```
+   :::code language="output" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 
-    The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
+   The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
+
+1. Undo the merge by running the following statement:
+
+   ```bash
+   git reset --hard HEAD~1
+   ```
+
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in.
 
 ::: zone-end
