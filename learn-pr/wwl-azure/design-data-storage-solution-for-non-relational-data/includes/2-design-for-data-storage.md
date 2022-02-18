@@ -36,4 +36,4 @@ In Azure, non-relational data is contained in several different storage data obj
 **Azure Queue Storage** is a service for storing large numbers of messages. Queues are commonly used to create a backlog of work to process asynchronously. 
 
 > [!TIP]
-> Before beginning your study, think about which non-relational data types are of most interest to you or our organization. 
+> Before beginning your study, think about which non-relational data types are of most interest to you or your organization. 
