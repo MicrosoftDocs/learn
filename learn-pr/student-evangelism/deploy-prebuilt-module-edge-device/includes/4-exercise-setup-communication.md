@@ -80,7 +80,7 @@ Use the following CLI command to create your IoT Edge device based on the prebui
 ```azurecli
 az deployment group create \
 --resource-group IoTEdgeResources \
---template-uri "https://aka.ms/iotedge-vm-deploy" \
+--template-uri "https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/1.2/edgeDeploy.json" \
 --parameters dnsLabelPrefix='<REPLACE_WITH_VM_NAME>' \
 --parameters adminUsername='azureuser' \
 --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name
@@ -92,6 +92,8 @@ az deployment group create \
 Make sure that your password(**adminPasswordOrKey**) must be at least 12 characters long and have three of four of the following: lowercase characters, uppercase characters, digits, and special characters.
 
 It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section:
+
+[![An illustration is showing the public ssh.](../media/public-ssh.png)](../media/public-ssh.png)
 
 ## View the IoT Edge runtime status
 
