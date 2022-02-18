@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-event-flags-group-sync-threads.declare
+title: Declare an event flags group
+metadata:
+  title: Declare an event flags group
+  description: Learn how to declare an event flags group.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-declare.md)]

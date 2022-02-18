@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-message-queues.design
+title: Design considerations for ProjectMessageQueues
+metadata:
+  title: Design considerations for ProjectMessageQueues
+  description: Design the project.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-design.md)]
