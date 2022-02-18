@@ -94,11 +94,11 @@ You now have a copy of the template repository in your own account. You will now
 Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
-<!-- TODO -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
 
 > [!CAUTION]
 > This isn't working yet :)
+<!-- TODO -->
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
