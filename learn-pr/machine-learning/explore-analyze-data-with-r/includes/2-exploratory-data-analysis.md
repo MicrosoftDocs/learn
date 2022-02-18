@@ -12,7 +12,7 @@ dplyr is a grammar of data manipulation, providing a consistent set of verbs tha
 
 ## Storing data using data frames and tibbles 
 
-Data frames present the most common way of storing data in R to permit analysis. The easiest way to think of a data frame is as R’s equivalent to the Excel spreadsheet, since it stores data in a similar format.  
+Data frames present the most common way of storing data in R to permit analysis. The easiest way to think of a data frame is as R's equivalent to the Excel spreadsheet, since it stores data in a similar format.  
 
 :::image type="content" source="../media/data-frame-example.png" alt-text="Table illustrating a data frame with some sample data."::: 
 
@@ -24,11 +24,11 @@ Jupyter notebooks are a popular way of running basic scripts using your web brow
 
 ## Testing hypotheses 
 
-Data exploration and analysis is typically an iterative process, in which the data scientist takes a sample of data and performs the following kinds of task to analyze it and test hypotheses: 
+Data exploration and analysis is typically an *iterative* process, in which the data scientist takes a sample of data and performs the following kinds of task to analyze it and test hypotheses: 
 
 - **Clean data** to handle errors, missing values, and other issues. 
 - **Apply statistical techniques to better understand the data**, and how the sample might be expected to represent the real-world population of data, allowing for random variation. 
-- **Visualize data** to determine relationships between variables, and in the case of a machine learning project, identify features that are potentially predictive of the label. 
+- **Visualize data** to determine relationships between variables, and in the case of a machine learning project, identify *features* that are potentially predictive of the *label*. 
 - Revise the hypothesis and repeat the process. 
  
 [1] Hadley Wickham and others, 'Welcome to the Tidyverse', [*Journal of Open Source Software*, 2019](https://doi.org/10.21105/joss.01686).

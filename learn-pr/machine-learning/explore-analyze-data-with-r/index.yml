@@ -25,10 +25,10 @@ levels:
 - beginner
 roles:
 - developer
+- data-scientist
 - student
 products:
 - azure
-- vs-code
 units:
 - learn.machine-learning.explore-analyze-data-r.introduction
 - learn.machine-learning.explore-analyze-data-r.exploratory-data-analysis

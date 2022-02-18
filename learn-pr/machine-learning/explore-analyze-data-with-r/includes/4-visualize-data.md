@@ -6,7 +6,7 @@ Representing data visually typically means graphing it. This is done to provide 
 
 While sometimes we know ahead of time what kind of graph will be most useful, other times we use graphs in an exploratory way. To understand the power of data visualization, consider the data below: the location (x,y) of a self-driving car. In its raw form, it's hard to see any real patterns. The mean or average tells us that its path was centered around x=0.2 and y=0.3, and the range of numbers appears to be between about -2 and 2.
 
-|Time  |Location-X |Location-Y |
+|**Time**  |**Location-X** |**Location-Y** |
 |------|-----------|-----------|
 |0     |0          |2          |
 |1     |1.682942   |1.080605   |
