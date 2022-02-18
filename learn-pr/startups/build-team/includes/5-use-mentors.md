@@ -21,13 +21,13 @@ The best mentors are often those who have broad positive and negative experience
 
 Here are some attributes to look for when you're seeking out a mentor for your startup:
 
-- Experience in more than one successful startup, either as a founder, early employee, or early-stage investor.
+- Experience in more than one successful startup as a founder, early employee, or early-stage investor.
 - Experience in failed startups, particularly if they're able to articulate why the failures happened.
 - Experience in running startup programs such as incubators or accelerators, as long as it's coupled with direct, hands-on experience in startups rather than an academic perspective.
 - A broad network of founders, investors, or potential customers with whom they could help you connect.
 - Willingness to give up some time to work with founders with no expectation of payment. (This attribute is related to the next section about mentor motivations.)
 - Willingness to say "I don't know" when asked a question that's outside their expertise.
-- Absence of an attempt to sell services such as consulting to startups, which can mean that the mentoring relationship is a thinly veiled business development activity.
+- Absence of an attempt to sell services such as consulting, which can mean that the mentoring relationship is a thinly veiled business development activity.
 
 Good mentoring generally follows a Socratic approach. The mentor guides founders by asking open questions and encouraging them to consider other possibilities. The mentor doesn't try to give founders the answers (or even worse, tell them what to do and expect compliance).
 
@@ -63,7 +63,7 @@ There are many ways to tap into high-quality mentoring. The best way to find goo
 - Search online for people who have built successful companies that have some similarities to yours (sector focus, customer persona, or business model). Reach out to them directly.
 - Utilize the mentor network that's part of the Microsoft for Startups Founders Hub. (You'll learn more about that later in this unit.)
 
-## How to make best use of mentors
+## How to make the best use of mentors
 
 Because mentoring is usually not a paid relationship, it's critical that you make the best possible use of this scarce resource and ensure that you don't overstep reasonable boundaries.
 

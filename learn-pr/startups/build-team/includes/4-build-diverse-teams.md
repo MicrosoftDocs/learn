@@ -34,11 +34,11 @@ For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft 
 
 One in four adults in the US has some type of disability, which includes challenges with [mobility (14 percent), cognition (11 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html?azure-portal=true).
 
-The inclusion of people with disabilities in product development has been shown to greatly improve companies' ability to build products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
+The inclusion of people with disabilities in product development has been shown to greatly improve companies' success in building products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
 
 Research has also shown that teams composed of people with disabilities make better business decisions and develop products that are more in tune with customers' changing needs. This leads to [revenue increases of up to 19 percent](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
-Yet disabled workers represent a large, underutilized talent pool. [In late 2020, the unemployment rate for disabled workers was twice the national average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
+Yet workers with disabilities represent a large, underutilized talent pool. [In late 2020, the unemployment rate for workers with disabilities was twice the national average](https://www.fastcompany.com/90603481/4-reasons-why-hiring-disabled-workers-is-good-for-business?azure-portal=true).
 
 ## Other types of diversity
 
@@ -75,7 +75,7 @@ Calendly is a great example of a company benefiting from a focus on diversity. I
 
 Attracting and retaining diverse candidates requires creating a work environment that enables them to deliver their best work. Companies need to think about how to achieve this before recruiting. For example, there's no point in recruiting a candidate with autism unless you've understood their needs (which might include minimizing visual and auditory distractions) and created a work environment that allows them to be productive.
 
-How you go about building a diverse team depends on where you're starting from. As a rule, what you start with scales. If your founding team lacks diversity by the time it has around 12 people, that level of diversity is likely to remain static as the company grows, due largely to the influence of unconscious bias in hiring decisions. A company that has a homogenous founding team whose networks lack diversity will need to take deliberate steps to broaden its reach and overcome unconscious bias in hiring.
+How you go about building a diverse team depends on where you're starting from. As a rule, what you start with scales. If your founding team lacks diversity by the time it has around 12 people, that level of diversity is likely to remain static as the company grows. That tendency is largely due to the influence of unconscious bias in hiring decisions. A company that has a homogenous founding team whose networks lack diversity will need to take deliberate steps to broaden its reach and overcome unconscious bias in hiring.
 
 On the other hand, if you have a high level of diversity by the time you reach 12 people, there's a much better chance that you'll be able to attract and retain a diverse workforce as the company grows. And it will take only a modest amount of extra effort.
 

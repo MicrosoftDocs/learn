@@ -108,7 +108,7 @@ However, it's critical to make sure that every member of the team is clear on wh
 |---|---|
 |Leadership|Communicate the vision for the company<br><br>Be the primary point of engagement with external stakeholders, such as investors and the media<br><br>Take primary responsibility for day-to-day decision-making, but involve all cofounders in many decisions<br><br>Provide financial oversight, often using an external accountant as needed<br><br>Raise external capital if needed|
 |Product development|Build the minimum viable product (MVP)<br><br>Choose the tech stack and cloud services<br><br>Build the product<br><br>Manage the product<br><br>Track key usage metrics<br><br>Manage additional developers|
-|Design|Lead UX and UI development<br><br>Work closely with product development team<br><br>Lead brand strategy and brand management<br><br>Support digital marketing and sales teams with visual assets as required|
+|Design|Lead UX and UI development<br><br>Work closely with the product development team<br><br>Lead brand strategy and brand management<br><br>Support digital marketing and sales teams with visual assets as required|
 |Digital marketing|Lead customer acquisition, including paid and unpaid channels<br><br>Engage specialists in areas like ad creation, copy writing, and content marketing as needed|
 |Customer success|Onboard customers and ensure that they have the tools, training, and support needed to successfully use the product|
 |Sales and business development|Engage with customers and partners to close sales or partnership deals|
@@ -147,7 +147,7 @@ In these situations, you might be better off hiring an employee or a contractor.
 
 In the early days of most startups, there's limited funding to pay anyone. So the founders do most, if not all, of the work.
 
-After the company has funding, either from customer revenues or external investment, you'll be in a position to hire employees or contractors and begin scaling the company's operations.
+After the company has funding, from either customer revenues or external investment, you'll be in a position to hire employees or contractors and begin scaling the company's operations.
 
 > [!TIP]
 > Don't wait until you're ready to recruit to start looking for candidates. Start building a wish list of possible candidates and cultivate your relationships with them as early as possible. By staying in touch and keeping them informed about the progress you're making in your company, you'll be in a much stronger position to find and hire the right person quickly when you have the need and the funding.
