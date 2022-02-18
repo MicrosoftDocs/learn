@@ -6,9 +6,9 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it's possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming, so rather than wait for the result, we hand the task off to a function and let complete this task asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming, so rather than wait for the result, we hand the task off to a function and let it complete this task asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
@@ -37,7 +37,7 @@ Let's add another Azure Cosmos DB input binding.
 
 1. The **Azure Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
 
-    If you do not see your connection listed, follow these steps to create a new connection.
+    If you don't see your connection listed, follow these steps to create a new connection.
 
     1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link.
 
@@ -83,7 +83,7 @@ Now we have a binding to read from our collection, and a binding to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario.
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it's defined. The following diagram shows, at a high level, how a queue is used in our scenario.
 
 :::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue with a function pushing and another function popping messages.":::
 
@@ -134,7 +134,7 @@ Let's break down what this code does:
 
 * Because this function changes our data, we expect the HTTP request to be a POST, and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if(bookmark)` condition checks to see whether an entry was found.
-* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we have created as a JSON string.
+* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we've created as a JSON string.
 * Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]

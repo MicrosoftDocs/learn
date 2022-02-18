@@ -28,7 +28,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and in results list select **Function App**. The **Create Function App** pane appears.
+1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -103,7 +103,7 @@ Now that we have a function app, it's time to create a function. Each function i
 
     - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but this is a reminder to use meaningful names.
 
-    - In the **Authorization level** text box, accept default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we will find once it is created.
+    - In the **Authorization level** text box, accept default value *Function*. Authorization level determines what keys need to be present on the request in order for it to run. *Function* authorization level requires a function-specific key, which we'll find once it's created.
 
 1. Select **Create**. When the trigger function has propagated to your function app, the **Functions** pane for your *Function App* appears, listing *HttpTrigger1*.
 
@@ -321,7 +321,7 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Function** menu, select **Integration**. The **Integration** pane for your function appears.
 
-    Notice that we have already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen is not wide enough.
+    Notice that we've already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen isn't wide enough.
 
 
 
@@ -345,4 +345,4 @@ Now that we have a function app, let's create a function. Each function is activ
 
 ::: zone-end
 
-So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action--one that runs when an HTTP request is made. We've also explored the Azure portal and types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.
+So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action--one that runs when an HTTP request is made. We've also explored the Azure portal and the types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.
