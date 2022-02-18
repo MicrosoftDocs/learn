@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-github-actions
 metadata:
   title: Introduction to GitHub Actions
   description: "Introduction to GitHub Actions"
-  ms.date: 12/02/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Describe Events, Jobs and Runners
   - Examine output and release management for actions
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/7-introduction-to-github-actions.svg
 levels:
 - advanced
 roles:

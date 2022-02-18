@@ -18,7 +18,7 @@ AssignableScopes: {/}
 
 ## Actions and NotActions
 
-The Actions and NotActions properties can be tailored to grant and deny the exact permissions you need. This table defines how the Owner, Contributor, and Reader roles.
+The Actions and NotActions properties can be tailored to grant and deny the exact permissions you need. This table defines the Owner, Contributor, and Reader roles.
 
 :::row:::
   :::column:::
@@ -70,7 +70,7 @@ The Actions and NotActions properties can be tailored to grant and deny the exac
 
 After defining the Actions and NotActions properties, you must scope the role.
 
-The AssignableScopes property of the role specifies the role scope. The scope can be subscriptions. resource groups, or resources.
+The AssignableScopes property of the role specifies the role scope. The scope can be subscriptions, resource groups, or resources.
 
 ```
 * /subscriptions/[subscription id]
