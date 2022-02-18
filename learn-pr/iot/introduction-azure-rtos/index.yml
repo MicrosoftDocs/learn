@@ -26,7 +26,7 @@ products:
 - azure-iot
 - azure-iot-hub
 units:
- - learn.iot.introduction-azure-rtos.1-introduction
- - learn.iot.introduction-azure-rtos.2-set-up-environment
+ - learn.iot.introduction-azure-rtos.introduction
+ - learn.iot.introduction-azure-rtos.set-up-environment
 badge:
   uid: learn.iot.introduction-azure-rtos.badge 

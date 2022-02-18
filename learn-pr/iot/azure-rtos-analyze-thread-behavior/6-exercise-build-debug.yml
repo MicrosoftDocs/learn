@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.azure-rtos-analyze-thread-behavior.6-exercise-build-debug
+uid: learn.iot.azure-rtos-analyze-thread-behavior.exercise-build-debug
 title: 'Exercise: Build and debug in ProjectAnalyze'
 metadata:
   title: 'Exercise: Build and debug in ProjectAnalyze'
   description: 'Perform a hands-on exercise: Building and debugging in ProjectAnalyze.'
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

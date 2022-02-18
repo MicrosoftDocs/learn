@@ -41,13 +41,13 @@ This image contains a description of the activities of your modified project:
 
 Several comments in the building blocks suggest which modifications need to be performed:
 
-- [Declarations](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#declarations): Use the suggested queue timer intervals, define another queue and queue timer.
-- [Variables](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#variables): Add a variable for queue contents, queue timer entry prototype, and event notification function prototype.
-- [Application definitions](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#application-definitions): Add another queue pointer. Then, create another queue timer and create another notification function registration.
-- [Urgent thread entry function](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#urgent-thread-entry): Modify the if statement to check for three queues.
-- [Routine thread entry function](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#routine-thread-entry): Modify the `if statement to check for three queues.
-- [print_stats application timer function](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#print-stats): Add one queue info get statement, and add two printf statements to display message information.
-- [Notification functions](https://review.docs.microsoft.com/en-us/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#notification-functions): Add another notification function for the new queue.
+- [Declarations](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#declarations): Use the suggested queue timer intervals, define another queue and queue timer.
+- [Variables](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#variables): Add a variable for queue contents, queue timer entry prototype, and event notification function prototype.
+- [Application definitions](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#application-definitions): Add another queue pointer. Then, create another queue timer and create another notification function registration.
+- [Urgent thread entry function](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#urgent-thread-entry): Modify the if statement to check for three queues.
+- [Routine thread entry function](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#routine-thread-entry): Modify the `if statement to check for three queues.
+- [print_stats application timer function](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#print-stats): Add one queue info get statement, and add two printf statements to display message information.
+- [Notification functions](https://review.docs.microsoft.com/learn/modules/threadx-event-chain-suspend-objects/7-building-blocks#notification-functions): Add another notification function for the new queue.
 
 When you have completed these modifications, build and debug your project, and output should be similar to what's shown in the following image: 
  

@@ -27,7 +27,7 @@ We provide two ways for setting up your environment:
 
 1. Open `training_projects\azure_rtos_threadx_training.sln` in Visual Studio and follow the instructions of the unit to build and run the project.
 
-    ![Visual Studio](../media/vs.png)
+    ![Visual Studio](../media/visual-studio-project.png)
 
 ## Reference documentation
 

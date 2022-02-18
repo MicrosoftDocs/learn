@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.azure-rtos-analyze-thread-behavior.5-building-blocks
+uid: learn.iot.azure-rtos-analyze-thread-behavior.building-blocks
 title: Building blocks for ProjectAnalyze
 metadata:
   title: Building blocks for ProjectAnalyze
   description: Learn about the building blocks for ProjectAnalyze.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

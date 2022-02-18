@@ -3,7 +3,7 @@ uid: learn.iot.threadx-event-flags-group-sync-threads
 metadata:
   title: Use an event flags group to sync threads in ThreadX
   description: Learn how to use an event flags group to sync threads in Azure RTOS ThreadX.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial
@@ -31,16 +31,16 @@ products:
 - azure-iot-hub
 - azure-rtos
 units:
-- learn.iot.threadx-event-flags-group-sync-threads.1-introduction
-- learn.iot.threadx-event-flags-group-sync-threads.2-overview
-- learn.iot.threadx-event-flags-group-sync-threads.3-declare
-- learn.iot.threadx-event-flags-group-sync-threads.4-scenario
-- learn.iot.threadx-event-flags-group-sync-threads.5-activities
-- learn.iot.threadx-event-flags-group-sync-threads.6-design-considerations
-- learn.iot.threadx-event-flags-group-sync-threads.7-building-blocks
-- learn.iot.threadx-event-flags-group-sync-threads.8-exercise-build-debug
-- learn.iot.threadx-event-flags-group-sync-threads.9-knowledge-check
-- learn.iot.threadx-event-flags-group-sync-threads.10-summary
+- learn.iot.threadx-event-flags-group-sync-threads.introduction
+- learn.iot.threadx-event-flags-group-sync-threads.overview
+- learn.iot.threadx-event-flags-group-sync-threads.declare
+- learn.iot.threadx-event-flags-group-sync-threads.scenario
+- learn.iot.threadx-event-flags-group-sync-threads.activities
+- learn.iot.threadx-event-flags-group-sync-threads.design-considerations
+- learn.iot.threadx-event-flags-group-sync-threads.building-blocks
+- learn.iot.threadx-event-flags-group-sync-threads.exercise-build-debug
+- learn.iot.threadx-event-flags-group-sync-threads.knowledge-check
+- learn.iot.threadx-event-flags-group-sync-threads.summary
 badge:
   uid: learn.iot.threadx-event-flags-group-sync-threads.badge 
 

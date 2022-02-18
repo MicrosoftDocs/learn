@@ -3,7 +3,7 @@ uid: learn.iot.threadx-event-notification
 metadata:
   title: Use a counting semaphore for event notification in Azure RTOS ThreadX
   description: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial
@@ -31,15 +31,15 @@ products:
 - azure-iot-hub
 - azure-rtos
 units:
-- learn.iot.threadx-event-notification.1-introduction
-- learn.iot.threadx-event-notification.2-counting-semaphore-mutex-comparison
-- learn.iot.threadx-event-notification.3-scenario
-- learn.iot.threadx-event-notification.4-activities
-- learn.iot.threadx-event-notification.5-design
-- learn.iot.threadx-event-notification.6-building-blocks
-- learn.iot.threadx-event-notification.7-exercise-build-debug
-- learn.iot.threadx-event-notification.8-knowledge-check
-- learn.iot.threadx-event-notification.9-summary
+- learn.iot.threadx-event-notification.introduction
+- learn.iot.threadx-event-notification.counting-semaphore-mutex-comparison
+- learn.iot.threadx-event-notification.scenario
+- learn.iot.threadx-event-notification.activities
+- learn.iot.threadx-event-notification.design
+- learn.iot.threadx-event-notification.building-blocks
+- learn.iot.threadx-event-notification.exercise-build-debug
+- learn.iot.threadx-event-notification.knowledge-check
+- learn.iot.threadx-event-notification.summary
 
 badge:
   uid: learn.iot.threadx-event-notification.badge 

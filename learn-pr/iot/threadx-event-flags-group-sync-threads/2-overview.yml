@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-event-flags-group-sync-threads.2-overview
+uid: learn.iot.threadx-event-flags-group-sync-threads.overview
 title: Event flags group overview
 metadata:
   title: Event flags group overview
   description: Event flags group overview.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial

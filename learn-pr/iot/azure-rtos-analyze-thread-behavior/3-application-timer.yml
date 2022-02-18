@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.azure-rtos-analyze-thread-behavior.3-application-timer
+uid: learn.iot.azure-rtos-analyze-thread-behavior.application-timer
 title: Application timer
 metadata:
   title: Application timer
   description: Learn about RTOS scheduling.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

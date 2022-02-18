@@ -9,7 +9,7 @@ Let's look at the building blocks we'll use to create our project in the next un
 
 We'll use this code to add declarations, definitions, and prototypes:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="13-48" highlight="7-11, 17-21":::
+:::code language="c" source="../code/project-event-chaining.c" range="13-48" highlight="7-11, 17-21":::
 
 > [!NOTE]
 > The highlighted code:
@@ -23,7 +23,7 @@ We'll use this code to add declarations, definitions, and prototypes:
 
 We'll use this code to add variables:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="50-72" highlight="12-23":::
+:::code language="c" source="../code/project-event-chaining.c" range="50-72" highlight="12-23":::
 
 > [!NOTE]
 > The highlighted code adds variables, a counter, a timer entry, and prototypes for the added queue.
@@ -34,7 +34,7 @@ We'll use this code to add variables:
 
 We'll use this code for the main entry point: 
 
-:::code language="c" source="../samples/project-event-chaining.c" range="74-83":::
+:::code language="c" source="../code/project-event-chaining.c" range="74-83":::
 
 > [!NOTE]
 > The code is identical to the code that's used in earlier modules, and no changes are needed. 
@@ -47,7 +47,7 @@ We'll use this code for the main entry point:
 
 We'll use this code to add application definitions:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="85-154" highlight="11, 40-44, 69":::
+:::code language="c" source="../code/project-event-chaining.c" range="85-154" highlight="11, 40-44, 69":::
 
 > [!NOTE]
 > The highlighted lines of code:
@@ -64,7 +64,7 @@ We'll use this code to add application definitions:
 
 We'll use this code to add an urgent thread entry function:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="160-196" highlight="13-22":::
+:::code language="c" source="../code/project-event-chaining.c" range="160-196" highlight="13-22":::
 
 > [!NOTE]
 > We'll modify the if statement to check for three queues.
@@ -75,7 +75,7 @@ We'll use this code to add an urgent thread entry function:
 
 We'll use this code to add a routine thread entry function:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="200-234" highlight="10-18":::
+:::code language="c" source="../code/project-event-chaining.c" range="200-234" highlight="10-18":::
 
 > [!NOTE]
 > In this code, you'll modify the if statement to check for three queues.
@@ -86,7 +86,7 @@ We'll use this code to add a routine thread entry function:
 
 We'll use this code to add a print_stats application timer function:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="237-264" highlight="10-14":::
+:::code language="c" source="../code/project-event-chaining.c" range="237-264" highlight="10-14":::
 
 > [!NOTE]
 > In this code, you'll modify the third queue.
@@ -98,7 +98,7 @@ We'll use this code to add a print_stats application timer function:
 
 We'll use this code to add a notification function:
 
-:::code language="c" source="../samples/project-event-chaining.c" range="288-302" highlight="6":::
+:::code language="c" source="../code/project-event-chaining.c" range="288-302" highlight="6":::
 
 > [!NOTE]
 > In this code, you'll add another notification function.

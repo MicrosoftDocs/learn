@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-memory-management.3-memory-management
+uid: learn.iot.threadx-memory-management.memory-management
 title: Memory management
 metadata:
   title: Memory management
   description: Memory management.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial

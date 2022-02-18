@@ -6,7 +6,7 @@ We'll review the four building blocks that form a solution to our problem before
 
 Building Block 1 contains a variety of declarations, definitions, and prototypes: <!--figure 5-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="1-29" highlight="18,24":::
+:::code language="c" source="../code/project-producer-consumer.c" range="1-29" highlight="18,24":::
 
 In the highlighted code we add another Consumer thread, and another counter and prototype.
 
@@ -14,19 +14,19 @@ In the highlighted code we add another Consumer thread, and another counter and 
 
 Building Block 2 contains the main entry point: <!---figure 6-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="31-36":::
+:::code language="c" source="../code/project-producer-consumer.c" range="31-36":::
 
 ## Building block 3
 
 Building Block 3, part 1 contains initialization and various application definitions: <!--figure 7-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="38-55":::
+:::code language="c" source="../code/project-producer-consumer.c" range="38-55":::
 
 <a name="building-block-3-part-2"></a>
 
 Building Block 3, part 2 contains additional application definitions: <!--figure 8-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="57-72" highlight="4-7, 11":::
+:::code language="c" source="../code/project-producer-consumer.c" range="57-72" highlight="4-7, 11":::
 
 > [!NOTE]
 > - You need to add a second Consumer thread. Its entry function should be similar to the one above. 
@@ -36,21 +36,21 @@ Building Block 3, part 2 contains additional application definitions: <!--figure
 
 Building Block 4, part 1 contains the Producer thread entry function: <!--figure 9-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="74-91":::
+:::code language="c" source="../code/project-producer-consumer.c" range="74-91":::
 
 > [!NOTE]
 > - No changes are needed for the Producer thread entry function. 
 
 Building Block 4, part 2 contains the Consumer thread entry function: <!--figure 10-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="95-108":::
+:::code language="c" source="../code/project-producer-consumer.c" range="95-108":::
 
 > [!NOTE]
 > - Use this function as a guide to creating the second consumer.
 
 Building Block 4, part 3 contains the printstats application timer entry function: <!--figure 11-->
 
-:::code language="c" source="../samples/project-producer-consumer.c" range="110-125" highlight="11-15":::
+:::code language="c" source="../code/project-producer-consumer.c" range="110-125" highlight="11-15":::
 
 > [!NOTE]
 > - Add a `printf` to display information about the second consumer that you added.

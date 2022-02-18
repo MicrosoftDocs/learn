@@ -37,15 +37,15 @@ products:
 - azure-iot-hub
 
 units:
-- learn.iot.azure-rtos-threadx-fundamentals.1-introduction
-- learn.iot.azure-rtos-threadx-fundamentals.3-determinism
-- learn.iot.azure-rtos-threadx-fundamentals.4-scheduling
-- learn.iot.azure-rtos-threadx-fundamentals.5-priorities
-- learn.iot.azure-rtos-threadx-fundamentals.6-threads-stacks
-- learn.iot.azure-rtos-threadx-fundamentals.7-priority-based-preemption
-- learn.iot.azure-rtos-threadx-fundamentals.8-context-switches
-- learn.iot.azure-rtos-threadx-fundamentals.9-knowledge-check
-- learn.iot.azure-rtos-threadx-fundamentals.10-summary
+- learn.iot.azure-rtos-threadx-fundamentals.introduction
+- learn.iot.azure-rtos-threadx-fundamentals.determinism
+- learn.iot.azure-rtos-threadx-fundamentals.scheduling
+- learn.iot.azure-rtos-threadx-fundamentals.priorities
+- learn.iot.azure-rtos-threadx-fundamentals.threads-stacks
+- learn.iot.azure-rtos-threadx-fundamentals.priority-based-preemption
+- learn.iot.azure-rtos-threadx-fundamentals.context-switches
+- learn.iot.azure-rtos-threadx-fundamentals.knowledge-check
+- learn.iot.azure-rtos-threadx-fundamentals.summary
 
 badge:
   uid: learn.iot.azure-rtos-threadx-fundamentals.badge 

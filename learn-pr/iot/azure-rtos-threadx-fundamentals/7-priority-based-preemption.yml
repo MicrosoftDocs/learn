@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.azure-rtos-threadx-fundamentals.7-priority-based-preemption
+uid: learn.iot.azure-rtos-threadx-fundamentals.priority-based-preemption
 title: Priority-based preemption
 metadata:
   title: Priority-based preemption
   description: Learn about priority-based preemption in ThreadX.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-message-queues.8-knowledge-check
+uid: learn.iot.threadx-message-queues.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

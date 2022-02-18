@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-event-flags-group-sync-threads.7-building-blocks
+uid: learn.iot.threadx-event-flags-group-sync-threads.building-blocks
 title: Project building blocks
 metadata:
   title: Project building blocks
   description: Project building blocks.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial

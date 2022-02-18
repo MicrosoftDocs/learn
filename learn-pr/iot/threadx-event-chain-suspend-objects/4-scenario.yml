@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-event-chain-suspend-objects.4-scenario
+uid: learn.iot.threadx-event-chain-suspend-objects.scenario
 title: Project scenario
 metadata:
   title: Project scenario
   description: Event-chaining to suspend objects project scenario.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial

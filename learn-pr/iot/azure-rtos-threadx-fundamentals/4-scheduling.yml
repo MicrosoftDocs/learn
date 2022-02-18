@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.azure-rtos-threadx-fundamentals.4-scheduling
+uid: learn.iot.azure-rtos-threadx-fundamentals.scheduling
 title: Scheduling
 metadata:
   title: Scheduling
   description: Learn about RTOS scheduling.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.iot.threadx-event-chain-suspend-objects
 metadata:
   title: Use event-chaining to suspend multiple objects in ThreadX
   description: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX..
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial
@@ -31,16 +31,16 @@ products:
 - azure-iot-hub
 - azure-rtos
 units:
-- learn.iot.threadx-event-chain-suspend-objects.1-introduction
-- learn.iot.threadx-event-chain-suspend-objects.2-overview
-- learn.iot.threadx-event-chain-suspend-objects.3-functions
-- learn.iot.threadx-event-chain-suspend-objects.4-scenario
-- learn.iot.threadx-event-chain-suspend-objects.5-activities
-- learn.iot.threadx-event-chain-suspend-objects.6-design-considerations
-- learn.iot.threadx-event-chain-suspend-objects.7-building-blocks
-- learn.iot.threadx-event-chain-suspend-objects.8-exercise-build-debug
-- learn.iot.threadx-event-chain-suspend-objects.9-knowledge-check
-- learn.iot.threadx-event-chain-suspend-objects.10-summary
+- learn.iot.threadx-event-chain-suspend-objects.introduction
+- learn.iot.threadx-event-chain-suspend-objects.overview
+- learn.iot.threadx-event-chain-suspend-objects.functions
+- learn.iot.threadx-event-chain-suspend-objects.scenario
+- learn.iot.threadx-event-chain-suspend-objects.activities
+- learn.iot.threadx-event-chain-suspend-objects.design-considerations
+- learn.iot.threadx-event-chain-suspend-objects.building-blocks
+- learn.iot.threadx-event-chain-suspend-objects.exercise-build-debug
+- learn.iot.threadx-event-chain-suspend-objects.knowledge-check
+- learn.iot.threadx-event-chain-suspend-objects.summary
 badge:
   uid: learn.iot.threadx-event-chain-suspend-objects.badge 
 

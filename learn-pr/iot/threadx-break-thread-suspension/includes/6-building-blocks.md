@@ -6,7 +6,7 @@ Let's look at the code building blocks we'll use in the project.
 
 We'll use this code to create declarations, definitions, and prototypes:
 
-:::code language="c" source="../samples/project-break-suspension.c" range="1-43" highlight="16, 17, 26, 32, 37":::
+:::code language="c" source="../code/project-break-suspension.c" range="1-43" highlight="16, 17, 26, 32, 37":::
 
 > [!NOTE]
 > The highlighted code shows where:
@@ -22,7 +22,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 We'll use this code for the main entry point. 
 
-:::code language="c" source="../samples/project-break-suspension.c" range="54-62":::
+:::code language="c" source="../code/project-break-suspension.c" range="54-62":::
 
 > [!NOTE]
 > This building block is identical in the projects in earlier modules, and no changes are needed.
@@ -34,7 +34,7 @@ We'll use this code for the main entry point.
 
 We'll use this code to create application definitions:
 
-:::code language="c" source="../samples/project-break-suspension.c" range="53-94" highlight="7, 29, 33":::
+:::code language="c" source="../code/project-break-suspension.c" range="53-94" highlight="7, 29, 33":::
 
 > [!NOTE]
 > This code shows how these items are created:
@@ -53,7 +53,7 @@ We'll use this code to create application definitions:
 
 We'll use this code to create the urgent thread entry function. One feature that is new to this function is the use of the counting semaphore that controls when the Urgent function establishes its sleep time and begins its processing.
 
-:::code language="c" source="../samples/project-break-suspension.c" range="98-127" highlight="16, 20":::
+:::code language="c" source="../code/project-break-suspension.c" range="98-127" highlight="16, 20":::
 
 > [!NOTE]
 > The highlighed lines of code:
@@ -65,7 +65,7 @@ We'll use this code to create the urgent thread entry function. One feature that
 
 We'll use the following code to create the routine thread entry function. A major difference between this function and the Urgent thread entry function is that the amount of sleep time is considerably greater for the Routine thread. We use the same approach to obtain the sleep times for the Routine thread entry function. Another major difference is that there are no modifications for you to make in the Urgent thread entry function. Still, you need to write code to detect excessive wait time for the Routine thread entry function (use the Urgent thread entry function as a guide).
 
-:::code language="c" source="../samples/project-break-suspension.c" range="136-167" highlight="16, 20":::
+:::code language="c" source="../code/project-break-suspension.c" range="136-167" highlight="16, 20":::
 
 > [!NOTE]
 > The highlighed lines of code:
@@ -77,7 +77,7 @@ We'll use the following code to create the routine thread entry function. A majo
 
 We'll use the following code to create the monitor thread entry function. This function checks both the Urgent thread and the Routine thread every 50 timer ticks to determine whether the run counts of the two threads have changed since the previous time they were checked. If a run count hasn't changed, the Monitor thread considers this as excessive wait time, and the thread suspension is aborted. You are given the code for the Urgent thread, and your task is the write the code for the Routine thread to detect whether there is excessive wait time. 
 
-:::code language="c" source="../samples/project-break-suspension.c" range="171-196" highlight="13, 17, 20, 23":::
+:::code language="c" source="../code/project-break-suspension.c" range="171-196" highlight="13, 17, 20, 23":::
 
 > [!NOTE]
 > The highlighed lines of code:
@@ -93,5 +93,5 @@ We'll use the following code to create the print_stats application timer functio
 
 No changes are needed for this code.
 
-:::code language="c" source="../samples/project-break-suspension.c" range="190-228":::
+:::code language="c" source="../code/project-break-suspension.c" range="190-228":::
 

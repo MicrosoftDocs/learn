@@ -6,7 +6,7 @@ Let's look at the code building blocks we'll use in the project.
 
 We'll use this code to create declarations, definitions, and prototypes:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="1-52":::
+:::code language="c" source="../code/project-priority-inversion.c" range="1-52":::
 
 > [!NOTE]
 > You won't make any changes in this code when you work with the project file in Visual Studio.
@@ -18,7 +18,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 We'll use this code for the main entry point. 
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="54-62":::
+:::code language="c" source="../code/project-priority-inversion.c" range="54-62":::
 
 > [!NOTE]
 > This building block is identical to the projects in earlier modules. You won't make any changes in this code when you work with the project file in Visual Studio.
@@ -32,7 +32,7 @@ We'll use this code for the main entry point.
 
 We'll use this code to create application definitions:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="64-123" highlight="42-47, 49-51":::
+:::code language="c" source="../code/project-priority-inversion.c" range="64-123" highlight="42-47, 49-51":::
 
 > [!NOTE]
 > In the next unit, you'll make these changes to the highlighted lines of code:
@@ -47,23 +47,23 @@ You won't make any changes in the following code when you work with the project 
 
 We'll use this code to create the urgent thread entry function:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="125-144":::
+:::code language="c" source="../code/project-priority-inversion.c" range="125-144":::
 
 ### Important thread entry function
 
 We'll use this code to create the important thread entry function:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="146-163":::
+:::code language="c" source="../code/project-priority-inversion.c" range="146-163":::
 
 ### Routine thread entry function
 
 We'll use this code to create the routine thread entry function:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="165-188":::
+:::code language="c" source="../code/project-priority-inversion.c" range="165-188":::
 
 ### print_stats application timer function
 
 We'll use this code to create the print_stats application timer function:
 
-:::code language="c" source="../samples/project-priority-inversion.c" range="198-228":::
+:::code language="c" source="../code/project-priority-inversion.c" range="198-228":::
 

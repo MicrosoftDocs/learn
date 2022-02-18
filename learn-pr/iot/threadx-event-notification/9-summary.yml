@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-event-notification.9-summary
+uid: learn.iot.threadx-event-notification.summary
 title: Summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: pacorte
   ms.topic: interactive-tutorial

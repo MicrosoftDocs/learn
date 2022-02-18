@@ -35,13 +35,13 @@ products:
 - azure-iot-hub
 - azure-rtos
 units:
-- learn.iot.create-first-threadx-project.1-introduction
-- learn.iot.create-first-threadx-project.2-example-threadx-project
-- learn.iot.create-first-threadx-project.3-hello-world
-- learn.iot.create-first-threadx-project.4-identify-threadx-components
-- learn.iot.create-first-threadx-project.5-design-project
-- learn.iot.create-first-threadx-project.6-exercise-build-debug-project
-- learn.iot.create-first-threadx-project.7-knowledge-check
-- learn.iot.create-first-threadx-project.8-summary
+- learn.iot.create-first-threadx-project.introduction
+- learn.iot.create-first-threadx-project.example-threadx-project
+- learn.iot.create-first-threadx-project.hello-world
+- learn.iot.create-first-threadx-project.identify-threadx-components
+- learn.iot.create-first-threadx-project.design-project
+- learn.iot.create-first-threadx-project.exercise-build-debug-project
+- learn.iot.create-first-threadx-project.knowledge-check
+- learn.iot.create-first-threadx-project.summary
 badge:
   uid: learn.iot.create-first-threadx-project.badge 

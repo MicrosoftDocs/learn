@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-priority-inversion-solutions.2-overview
+uid: learn.iot.threadx-priority-inversion-solutions.overview
 title: Overview
 metadata:
   title: Overview
   description: Overview of priority inversion and solutions.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial

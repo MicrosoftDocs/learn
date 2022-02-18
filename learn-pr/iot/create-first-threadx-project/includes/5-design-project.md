@@ -8,7 +8,7 @@ There are more details in this block than in the illustrative example. We wish t
 
 The first building block contains defines, declarations, includes, and prototypes and is illustrated in the code illustrated below. <!--figure 7-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="1-24" highlight="10,11,13,14,17,18,19,20,23,24":::
+:::code language="c" source="../code/project-hello-world.c" range="1-24" highlight="10,11,13,14,17,18,19,20,23,24":::
 
 The highlighted code is explained as follows:
 - `tx_api.h` is required and `stdio.h` is needed for output display
@@ -18,25 +18,25 @@ The highlighted code is explained as follows:
 
 ## Building block 2
 
-The main entry point is the same as in the [illustrative example](https://review.docs.microsoft.com/en-us/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-2-example) and is contained in the code below: <!--figure 8-->
+The main entry point is the same as in the [illustrative example](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-2-example) and is contained in the code below: <!--figure 8-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="25-35":::
+:::code language="c" source="../code/project-hello-world.c" range="25-35":::
 
 As noted earlier, the `tx_kernel_enter()` statement is required to start ThreadX. Statements may precede the `tx_kernel_enter()` statement but any statement following the `tx_kernel_enter()` statement is unreachable.
 
 ## Building block 3
 
-Building block 3 is more complex than the one in the [illustrative example](https://review.docs.microsoft.com/en-us/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-3-example) and it is displayed in two parts, below. This building block contains the `application define` function, which is required by ThreadX. This function is the initialization of the project, and it contains the creation of the memory byte pool, the thread stacks, the threads, and the mutex.
+Building block 3 is more complex than the one in the [illustrative example](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-3-example) and it is displayed in two parts, below. This building block contains the `application define` function, which is required by ThreadX. This function is the initialization of the project, and it contains the creation of the memory byte pool, the thread stacks, the threads, and the mutex.
 
 Building block 3, part 1, contains the creation of the memory byte pool and the thread stacks: <!--figure 9-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="37-56" highlight="11-12, 14-16, 18-20":::
+:::code language="c" source="../code/project-hello-world.c" range="37-56" highlight="11-12, 14-16, 18-20":::
 
 In the highlighted code we define two stack pointers, a memory byte pool, and a stack for the Urgent thread.
 
 Building block 3, part 2, contains the creation of the two threads and the mutex: <!--figure 10-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="58-76" highlight="1-5, 11-15, 17-18":::
+:::code language="c" source="../code/project-hello-world.c" range="58-76" highlight="1-5, 11-15, 17-18":::
 
 In the highlighted code we create the Urgent thread, the stack for the Routine thread, the Routine thread, and the mutex.
 
@@ -48,7 +48,7 @@ Building block 4 is also more complex than the one in the illustrative example, 
 
 Building block 4, part 1, contains the function definition for Urgent thread: <!--figure 11-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="78-104" highlight="13-14, 16-21":::
+:::code language="c" source="../code/project-hello-world.c" range="78-104" highlight="13-14, 16-21":::
 
 Activity 1, highlighted, shows the preparation. Activity 2, also highlighted, shows the message handling.
 
@@ -56,7 +56,7 @@ Activity 1, highlighted, shows the preparation. Activity 2, also highlighted, sh
 
 Building block 4, part 2, contains the function definition for Routine thread: <!--figure 12-->
 
-:::code language="c" source="../samples/project-hello-world.c" range="105-127" highlight="11-14, 16-17":::
+:::code language="c" source="../code/project-hello-world.c" range="105-127" highlight="11-14, 16-17":::
 
 Activity 3, highlighted, shows the preparation. Activity 4, also highlighted, shows the message handling (incomplete).
 

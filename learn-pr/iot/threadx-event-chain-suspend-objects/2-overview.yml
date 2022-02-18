@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-event-chain-suspend-objects.2-overview
+uid: learn.iot.threadx-event-chain-suspend-objects.overview
 title: Overview
 metadata:
   title: Overview
   description: Event-chaining to suspend objects overview.
-  ms.date: 09/15/2020
+  ms.date: 01/27/2022
   author: EdLamie
   ms.author: liydu
   ms.topic: interactive-tutorial
