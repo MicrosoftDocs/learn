@@ -14,7 +14,18 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 ::: zone pivot="github"
 
-TODO
+1. In your browser, navigate to **Code**.
+
+   GitHub detects that you have an unmerged branch, and prompts you to create a pull request.
+
+1. Select **Compare & pull request**.
+
+1. Enter the following details for the pull request:
+
+   **Title:** Add order processing queue
+   **Description:** This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.
+
+1. Select **Create pull request**.
 
 ::: zone-end
 
@@ -33,6 +44,8 @@ TODO
    **Title:** Add order processing queue
    **Description:** This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.
 
+1. TODO create button?
+
 ::: zone-end
 
 ## Review the pull request
@@ -40,11 +53,30 @@ TODO
 > [!NOTE]
 > Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
 
-<!-- TODO -->
-
 ::: zone pivot="github"
 
-TODO
+1. On the pull request page, select the **Files changed** tab.
+
+   GitHub shows you the files that were changed in this pull request.
+
+   > [!TIP]
+   > Imagine you're reviewing this for your own team. Would you make any suggestions?
+
+1. In the **main.bicep** file that was changed, find line 12.
+
+1. Hover over line 12 and select the button with the plus sign (**+**).
+
+1. In the comment box, enter the following text: **TODO**.
+
+1. Select **Start a review**.
+
+1. Select **Finish your review**.
+
+1. Select **Comment**. Normally, you'd approve the pull request. But because you're the author of the pull request, GitHub doesn't allow you to approve it.
+
+   Add a comment: **This looks good. Ok to merge.**. 
+
+1. Select **Submit review**.
 
 ::: zone-end
 
@@ -79,7 +111,13 @@ Your pull request has been approved. Your website's development team has confirm
 
 ::: zone pivot="github"
 
-TODO
+1. On the pull request page, select the **Conversation** tab.
+
+1. Select **Merge pull request**.
+
+1. Select **Confirm merge**.
+
+   Your pull request is merged, and your new feature is now in the main branch of your repository.
 
 ::: zone-end
 
@@ -99,7 +137,11 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
 ::: zone pivot="github"
 
-TODO
+1. Navigate to **Code**.
+
+1. Navigate to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
+
+   Notice that the queue, and your other changes, are now in the file.
 
 ::: zone-end
 

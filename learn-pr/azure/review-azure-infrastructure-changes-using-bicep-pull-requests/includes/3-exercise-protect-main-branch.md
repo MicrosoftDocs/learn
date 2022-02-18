@@ -166,6 +166,8 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Select **Require a pull request before merging**.
 
+   Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing this.
+
 1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
 
    Leave the other configuration options with their default values.
@@ -254,7 +256,7 @@ Commit your changes, and push them to your Azure Repos repository, by running th
 ```bash
 git add .
 git commit -m "Add orders queue and associated configuration"
-git push -u origin
+git push --set-upstream origin add-orders-queue
 ```
 
 The feature branch is pushed to your remote repository.
@@ -282,7 +284,7 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
 
    Notice that your push fails with an error message that looks similar to the one below:
 
-   :::code language="output" source="code/3-merge-error-github.txt" highlight="8-9" :::
+   :::code language="output" source="code/3-merge-error-github.txt" highlight="8-9" ::: <!-- TODO check if this is still the correct error -->
 
    The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
 
@@ -292,7 +294,7 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in.
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in. The *add-orders-queue* branch isn't affected.
 
 ::: zone-end
 
@@ -327,6 +329,6 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in.
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in. The *add-orders-queue* branch isn't affected.
 
 ::: zone-end

@@ -10,6 +10,7 @@ metadata:
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 1
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -19,10 +20,10 @@ quiz:
     choices:
     - content: Anybody on the team can push a change directly to the main branch.
       isCorrect: false
-      explanation: Incorrect. The branch protection rules are configured to prevent direct commits or pushes.
+      explanation: Incorrect. The rules are configured to prevent direct commits or pushes.
     - content: The manager of the team must review all pull requests.
       isCorrect: false
-      explanation: Incorrect. The branch protection rules don't specify specific reviewers who must approve pull requests.
+      explanation: Incorrect. The rules don't specify specific reviewers who must approve pull requests.
     - content: The pull request's author can push a change to the pull request's source branch.
       isCorrect: true
       explanation: Correct. Pull request authors can continue to push changes to their source branch while the pull request is open.
