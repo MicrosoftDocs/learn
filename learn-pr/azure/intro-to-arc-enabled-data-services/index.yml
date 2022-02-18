@@ -36,6 +36,7 @@ roles:
 - solution-architect
 - student
 - technology-manager
+- azure-arc
 products:
 - azure
 units:
