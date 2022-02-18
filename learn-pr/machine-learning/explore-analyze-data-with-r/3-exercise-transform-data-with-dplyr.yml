@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.explore-analyze-data-r.exercise-transform-data-with-dplyr
+title: Exercise - Transform data with dplyr
+metadata:
+  title: Exercise - Transform data with dplyr
+  description: Exercise - Transform data with dplyr.
+  ms.date: 02/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/3-exercise-transform-data-with-dplyr.ipynb
