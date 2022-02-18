@@ -44,7 +44,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
-Next, we'll add a database and then add a container to the database.
+Next, we'll add a container and then add a database to the Azure Cosmos DB account.
 
 ### Add a container
 
@@ -60,9 +60,9 @@ Let's use the Data Explorer tool to create a database and container.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You' can enter whatever you want, but we are using _func-io-learn-db_ in this module. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You' can enter whatever you want, but we are using *func-io-learn-db* in this module. |
     | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
-    | Container id | Bookmarks | Container IDs have the same character requirements as database names. |
+    | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. |
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
     Accept the defaults for all the other settings.
@@ -154,7 +154,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. Accept all default settings, and select **Create** to create your function.
 
-   The Overview pane for your function appears, displaying a default implementation of your new HttpTrigger function.
+   The Overview pane for the **HttpTrigger2** function appears.
 
 ### Verify the function
 
@@ -232,13 +232,12 @@ Now that your binding is defined, we can use it in your function. You need to ma
             }
             };
         }
-	else {
-
+        else {
             context.res = {
                 status: 404,
                 body : "No bookmarks found",
                 headers: {
-        		'Content-Type': 'application/json'
+                'Content-Type': 'application/json'
                 }
             };
         }
@@ -246,9 +245,9 @@ Now that your binding is defined, we can use it in your function. You need to ma
         context.done();
     };
     ```
-    
-1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!` 
- 
+
+1. In the command bar, select **Save**. The **Logs** pane appears, showing you have `Connected!`
+
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -296,7 +295,7 @@ Let's examine what this code is doing.
 
 ### Modify your function's JSON implementation code
 
-1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \ `** path.
+1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
 1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
 

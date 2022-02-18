@@ -6,11 +6,11 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it's possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
 What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming, so rather than wait for the result, we hand the task off to a function and let it complete this task asynchronously.
 
-Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
+Just as Azure Functions supports input bindings for various integration sources, it also has a set of templates for output bindings to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
 > This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for **HttpTrigger3** Function appears.
+1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for the **HttpTrigger3** function appears.
 
 ## Add an Azure Cosmos DB input binding
 
@@ -35,7 +35,7 @@ Let's add another Azure Cosmos DB input binding.
 
 1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
-1. The **Azure Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
+1. The **Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
 
     If you don't see your connection listed, follow these steps to create a new connection.
 
@@ -99,26 +99,26 @@ Let's create the binding through the portal.
 
 Next, we'll set up a storage account connection, where our queue will be hosted.
 
-3. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
+1. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
 
 1. At the beginning of this module, when you created your function app, a storage account was also created for you. Select it from the dropdown list, and then select **OK**.
 
-    The Storage account connection setting is populated with the name of a connection.
+   The **Storage account connection** setting is populated with the name of a connection.
 
 Although we could keep the default values, let's change some settings to lend more meaning to the remaining properties. 
- 
-5. Complete the settings in the **Create Output** pane, by replacing the following old values with the new values:
+
+1. Complete the settings in the **Create Output** pane, by replacing the following old values with the new values:
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. Select **OK** to save your output configuration for Queue Storage. The **Storage account connection** setting is populated with the name of a connection.
+1. Select **OK** to save your output configuration for Azure Queue Storage.
 
 ## Update function implementation
 
-We now have all our bindings set up for your function. It's time to use them in our function.
+We now have all our bindings set up. It's time to use them in our function.
 
 ::: zone pivot="javascript"
 
