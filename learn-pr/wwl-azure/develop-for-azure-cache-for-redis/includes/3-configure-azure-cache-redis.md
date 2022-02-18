@@ -22,7 +22,7 @@ You will need to decide where the Redis cache will be physically located by sele
 As mentioned in the last unit, there are three pricing tiers available for an Azure Cache for Redis.
 
 * **Basic:** Basic cache ideal for development/testing. Is limited to a single server, 53 GB of memory, and 20,000 connections. There is no SLA for this service tier.
-* **Standard:** Production cache which supports replication and includes an 99.99% SLA. It supports two servers, and has the same memory/connection limits as the Basic tier.
+* **Standard:** Production cache which supports replication and includes an SLA. It supports two servers, and has the same memory/connection limits as the Basic tier.
 * **Premium:** Enterprise tier which builds on the Standard tier and includes persistence, clustering, and scale-out cache support. This is the highest performing tier with up to 530 GB of memory and 40,000 simultaneous connections.
 
 You can control the amount of cache memory available on each tier - this is selected by choosing a cache level from C0-C6 for Basic/Standard and P0-P4 for Premium. Check the [pricing page](https://azure.microsoft.com/pricing/details/cache/) for full details.

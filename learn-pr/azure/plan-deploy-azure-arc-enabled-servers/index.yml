@@ -27,6 +27,7 @@ roles:
 - developer
 products:
 - azure
+- azure-arc
 units:
 - learn.azure.plan-deploy-azure-arc-enabled-servers.introduction
 - learn.azure.plan-deploy-azure-arc-enabled-servers.what-is-azure-arc-enabled-servers

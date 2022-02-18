@@ -6,5 +6,5 @@ In this module, you've learned how to:
 ## Overview of resources
 
 - [Train models with the CLI (v2)](/azure/machine-learning/how-to-train-cli)
-- [Official `az ml job` reference documentation](/cli/azure/ml/job?view=azure-cli-latest)
+- [Official `az ml job` reference documentation](/cli/azure/ml/job)
 - [Azure Machine Learning CLI (v2) examples](https://github.com/Azure/azureml-examples/tree/main/cli)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-network-watcher.when-to-use-azure-network-watcher
+title: When to use Azure Network Watcher
+metadata:
+  title: When to use Azure Network Watcher
+  description: Learn when you should choose to use Azure Network Watcher as a solution to meet your organization's needs.
+  ms.date: 02/09/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-when-to-use-azure-network-watcher.md)]
