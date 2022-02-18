@@ -2,31 +2,34 @@
 uid: learn.setup-first-lab-using-azure-devtest-labs
 metadata:
   moduleType: standard
-  title: setup-first-lab-using-azure-devtest-labs
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 2/3/2022
+  title: Set up your first development lab by using Azure DevTest Labs
+  description: "Learn how to set up your first development lab by using Azure DevTest Labs. You'll create a development virtual machine from a base image and pre-install required software. You'll then use a Remote Desktop client to access the VM."
+  ms.date: 02/18/2022
   author: ntrogh
   ms.author: nicktrog
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: setup-first-lab-using-azure-devtest-labs
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+  ms.prod: learning-azure 
+title: Set up your first development lab by using Azure DevTest Labs
+summary: "Create a development virtual machine from a base image and pre-install required software. You will use a Remote Desktop client to access the VM."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)"
+    - "Configure a DevTest lab with a curated list of images by using the Azure portal."
+    - "Provision a pre-configured VM with all the required software, tools, and artifacts."
+    - "Claim and access a VM by using Remote Desktop client software."
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master"
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - "Basic knowledge of the Azure DevTest Labs concepts of environments, artifacts, and virtual machines."
+  - "Experience creating and managing Azure virtual machine resources using the Azure portal at the beginner level."
+  - "Remote Desktop client installed. Get a [Remote Desktop client](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients)."
+iconUrl: /learn/achievements/setup-first-lab-using-azure-devtest-labs.svg
+levels: 
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+roles: 
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+  - administrator
+products: 
 - azure
+- azure-devtest-labs
+- azure-portal
 units:
 - learn.setup-first-lab-using-azure-devtest-labs.introduction
 - learn.setup-first-lab-using-azure-devtest-labs.understand-azure-devtest-labs
