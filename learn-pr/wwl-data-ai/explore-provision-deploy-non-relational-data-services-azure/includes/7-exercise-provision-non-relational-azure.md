@@ -38,7 +38,7 @@ You'll perform this exercise using the Azure portal.
     | Field | Value |
     |-|-|
     | Subscription | Concierge Subscription |
-    | Resource Group | [sandbox resource group] (This resource group will have been created for you in the sandbox. Click on the Resource Group field's drop-down arrow to select.) |
+    | Resource Group | <rgn>[sandbox resource group]</rgn> (This resource group will have been created for you in the sandbox. Click on the Resource Group field's drop-down arrow to select.) |
     | Account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *cosmosdbaccount*. For example, *jpws01012020cosmosdbaccount* |
     | Location | Accept the default location |
     | Capacity mode | Provisioned throughput |
@@ -128,7 +128,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Field | Value |
     |-|-|
     | Subscription | Concierge Subscription |
-    | Resource Group | [sandbox resource group] |
+    | Resource Group | <rgn>[sandbox resource group]</rgn> |
     | Storage account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *storage*. For example, *jpws01012020storage* |
     | Performance | Standard |
     | Redundancy | Geo-redundant storage (GRS) |
