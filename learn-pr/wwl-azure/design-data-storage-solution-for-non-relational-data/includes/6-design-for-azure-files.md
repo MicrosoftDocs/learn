@@ -54,7 +54,7 @@ Azure Files offers four different tiers of storage, premium, transaction optimiz
 ### When to use Azure files instead of Azure blobs or Azure NetApp Files
 
 
-Let’s take a minute to review when you should select Azure blob storage or [Azure NetApp Files](https://azure.microsoft.com/services/netapp/) instead of Azure file storage. 
+Let’s take a minute to review when you should select Azure blob storage or [Azure NetApp Files](/azure/azure-netapp-files/) instead of Azure file storage. 
 
 NetApp Files is a fully managed, highly available, enterprise-grade NAS service. NetApp Files can handle the most demanding, high-performance, low-latency workloads. It enables the migration of workloads, which are deemed "un-migratable" without. 
 

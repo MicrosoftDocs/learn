@@ -47,73 +47,73 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
 ## How to do it
 
 1.  Open the Command Prompt and create a new-working folder:
-
-```Cmd
-mkdir myWebApp
-cd myWebApp
-
-```
+    
+    ```Cmd
+    mkdir myWebApp
+    cd myWebApp
+    
+    ```
 
 2.  In myWebApp, initialize a new Git repository:
-
-```Cmd
-git init
-
-```
+    
+    ```Cmd
+    git init
+    
+    ```
 
 3.  Configure global settings for the name and email address to be used when committing in this Git repository:
-
-```Cmd
-git config --global user.name "John Doe"
-git config --global user.email "john.doe@contoso.com"
-
-```
-
+    
+    ```Cmd
+    git config --global user.name "John Doe"
+    git config --global user.email "john.doe@contoso.com"
+    
+    ```
+    
     If you are working behind an enterprise proxy, you can make your Git repository proxy-aware by adding the proxy details in the Git global configuration file.
-
+    
     Different variations of this command will allow you to set up an HTTP/HTTPS proxy (with username/password) and optionally bypass SSL verification.
-
+    
     Run the below command to configure a proxy in your global git config.
-
-```Cmd
-git config --global http.proxy
-http://proxyUsername:proxyPassword@proxy.server.com:port
-
-```
+    
+    ```Cmd
+    git config --global http.proxy
+    http://proxyUsername:proxyPassword@proxy.server.com:port
+    
+    ```
 
 4.  Create a new ASP.NET core application. The new command offers a collection of switches that can be used for language, authentication, and framework selection. More details can be found on [Microsoft docs](/dotnet/core/tools/dotnet-new).
-
-```Cmd
-dotnet new mvc
-
-```
-
+    
+    ```Cmd
+    dotnet new mvc
+    
+    ```
+    
     Launch Visual Studio Code in the context of the current-working folder:
-
-```Cmd
-code .
-
-```
+    
+    ```Cmd
+    code .
+    
+    ```
 
 5.  When the project opens in Visual Studio Code, select **Yes** for the **Required assets to build and debug are missing from 'myWebApp.' Add them?** Warning message. Select **Restore** for the **There are unresolved dependencies** info message. Hit **F5** to debug the application, then myWebApp will load in the browser, as shown in the following screenshot:
-
+    
     :::image type="content" source="../media/web-app-from-visual-studio-code-578464bb.png" alt-text="Web App from Visual Studio Code.":::
-
-
+    
+    
     If you prefer to use the command line, you can run the following commands in the context of the git repository to run the web application.
-
-```Cmd
-
-dotnet build
-dotnet run
-
-
-```
-
+    
+    ```Cmd
+    
+    dotnet build
+    dotnet run
+    
+    
+    ```
+    
     You will notice the ".vscode" folder is added to your working folder. To avoid committing this folder into your Git repository, you can include it in the .gitignore file. With the ".vscode" folder selected, hit F1 to launch the command window in Visual Studio Code, type gitIgnore, and accept the option to include the selected folder in the .gitIgnore file:
-
+    
     :::image type="content" source="../media/add-file-gitignore-a59fa521.png" alt-text="Add file to .gitignore.":::
-
+    
 
 6.  To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
 
@@ -126,30 +126,30 @@ dotnet run
 
 
 7.  Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `main` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
-
-```Cmd
-git branch feature-devops-home-page
-git checkout feature-devops-home-page
-git branch --list
-
-```
-
+    
+    ```Cmd
+    git branch feature-devops-home-page
+    git checkout feature-devops-home-page
+    git branch --list
+    
+    ```
+    
     With these commands, you have created a new branch, checked it out. The `--list` keyword shows you a list of all branches in your repository. The green color represents the branch that is currently checked out.
 
 8.  Now navigate to the file `~\Views\Home\Index.cshtml` and replace the contents with the text below.
-
-```csharp
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://azure.microsoft.com/services/devops/">Azure DevOps</a>.</p>
-</div>
-
-
-```
+    
+    ```csharp
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+    
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://azure.microsoft.com/services/devops/">Azure DevOps</a>.</p>
+    </div>
+    
+    
+    ```
 
 9.  Refresh the web app in the browser to see the changes.
 
@@ -157,40 +157,40 @@ git branch --list
 
 
 10. In the context of the git repository, execute the following commands. These commands will stage the changes in the branch and then commit them.
-
-```Cmd
-git status
-
-git add .
-
-git commit -m "updated welcome page."
-
-git status
-
-```
+    
+    ```Cmd
+    git status
+    
+    git add .
+    
+    git commit -m "updated welcome page."
+    
+    git status
+    
+    ```
 
 11. To merge the changes from the feature-devops-home-page into main, run the following commands in the context of the git repository.
-
-```Cmd
-
-git checkout main
-
-git merge feature-devops-home-page
-
-
-```
-
+    
+    ```Cmd
+    
+    git checkout main
+    
+    git merge feature-devops-home-page
+    
+    
+    ```
+    
     :::image type="content" source="../media/merge-feature-devops-home-page-output-window-4ee10ad1.png" alt-text="Merge feature-devops-home-page output window.":::
-
+    
 
 12. Run the below command to delete the feature branch.
-
-```Cmd
-
-git branch --delete feature-devops-home-page
-
-
-```
+    
+    ```Cmd
+    
+    git branch --delete feature-devops-home-page
+    
+    
+    ```
 
 ## How it works
 
