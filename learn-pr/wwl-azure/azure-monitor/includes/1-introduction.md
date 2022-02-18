@@ -1,10 +1,10 @@
-Azure Monitor is a key resource to keep watch on how all your Azure resources are performing, and to trigger alerts if there is any sort of problem. Monitoring you systems and updating them as needed is as important as your initial secure setup.
+Azure Monitor is a key resource to keep watch on how all your Azure resources are performing, and to trigger alerts if there is any sort of problem. Monitoring your systems and updating them as needed is as important as your initial secure setup.
 
 ## Scenario
 
 A security engineer uses Azure Monitor to watch over all the Azure resources deployed in an organization, you will work on such tasks as:
 
- -  Configure Azure Monitory to look at metrics and logs.
+ -  Configure Azure Monitor to look at metrics and logs.
  -  Setup and respond to alerts.
  -  Review diagnostic settings and other features.
 
