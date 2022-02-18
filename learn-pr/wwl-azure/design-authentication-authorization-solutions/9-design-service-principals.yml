@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-authentication-authorization-solutions.design-service-principles
-title: Design service principles for applications
+title: Design service principals for applications
 metadata:
-  title: Design service principles for applications
-  description: "Design service principles for applications"
-  ms.date: 02/07/2022
+  title: Design service principals for applications
+  description: "Design service principals for applications"
+  ms.date: 02/18/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-design-service-principles.md)]
+  [!include[](includes/9-design-service-principals.md)]
