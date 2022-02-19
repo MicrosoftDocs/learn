@@ -23,9 +23,9 @@ It's possible to mix and match ACS features and combine them with other Azure of
 
 ### Environment
 
-ACS requires a suitable environment to work within. By environment we mean both the target surface area/platform and the programming language of the application written for that surface area/platform. 
+ACS requires a suitable environment to work within. By environment we mean both the target device/browser and the programming language of the application written for that device/browser. 
 
-When it comes to surface areas, we support:
+When it comes to these, we support:
 
 * Most Modern Browsers (Chrome, Edge, Safari)
 * Android Phones and Devices
@@ -40,7 +40,7 @@ As for programming languages we support:
 * iOS (Swift)
 * Android
 
-If your business/application/idea intends to use languages or surface areas/platforms that ACS doesn't support. Then ACS may not be correct for you.
+If your business/application/idea intends to use languages or devices/browsers that ACS doesn't support. Then ACS may not be correct for you.
 
 ### Geographic Region
 

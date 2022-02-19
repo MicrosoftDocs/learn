@@ -6,7 +6,7 @@ We'll be covering:
 * Azure Communication Services SDKs for Client-based tasks.
 * Azure Communication Services SDKs for Server-based tasks.
 
-## Azure Resources
+## Azure resources
 
 The first element is making Azure Communication Services work is an Azure resource, which is created within the Azure Portal by you. Once a resource is created from the Azure Portal, it becomes the central hub for managing many Azure Communication Services tasks and administration.
 
@@ -39,11 +39,13 @@ We have Server SDKs available for:
 * Java Server Edition(SE)
 * Python
 
+You can get these from our [SDK Documentation page](https://docs.microsoft.com/azure/communication-services/concepts/sdk-options).
+
 ## Client SDKs
 
 The last component of how Azure Communication Services works is also the most important as it provides the gateway for your customers to use Azure Communication Services products.
 
-Our Client SDKs are downloaded and then integrated into your existing applications and products. When a user makes a video call or talks using chat, it's the Client SDKs that are doing the heavy lifting for you.
+Our Client SDKs are downloaded and then integrated into your existing applications and products. When a customer makes a video call or talks using chat, it's the Client SDKs that connect you to the call and receive/transmit the audio and video.
 
 We have Client SDKs available for:
 
@@ -51,6 +53,8 @@ We have Client SDKs available for:
 * .NET (C#)
 * iOS (Swift)
 * Android
+
+You can get these from our [SDK Documentation page](https://docs.microsoft.com/azure/communication-services/concepts/sdk-options).
 
 ## Tying it all together
 
