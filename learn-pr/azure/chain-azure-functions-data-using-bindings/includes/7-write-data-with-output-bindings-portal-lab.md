@@ -49,7 +49,7 @@ Let's add another Azure Cosmos DB input binding.
     |---|---|---|
     | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. We defined this setting earlier in the lesson. |
     | **Document ID** | `{id}` | Add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **Partition key** | `{id}` | Again, add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **SQL Query (optional)** | _Leave blank_ | We are only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
@@ -74,7 +74,7 @@ We now have an Azure Cosmos DB input binding. Let's add an output binding so we 
     |---|---|---|
     | **Document parameter name** | `newbookmark` | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined the container earlier in the lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. This is the name of the container that we defined earlier in the lesson. |
     | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding configuration `<key>`) must match the one in the container. |
 
 1. Select **OK** to save this output binding configuration.
@@ -181,6 +181,7 @@ So, that's it. Let's see our work in action in the next section.
         ContentType = "application/json"
     })
     ```
+
 1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
 
 Let's break down what this code does:
@@ -203,7 +204,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
+1. In command bar of the **Code + Test** pane for your **HttpTrigger3** function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
 
     :::image type="content" source="../media/7-test-panel-open-small.png" alt-text="Screenshot showing the test/run pane.":::
 
@@ -224,7 +225,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
     :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark already exists response.":::
 
-    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly.
+    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly, and that your PowerShell code is making the same connection.
 
 1. Let's post a second bookmark to the database. Select the **Input** tab.
 

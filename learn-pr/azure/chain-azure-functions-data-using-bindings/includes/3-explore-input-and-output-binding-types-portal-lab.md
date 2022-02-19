@@ -46,7 +46,7 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. Select **Review + create** to validate your settings, and then select **Create** to provision and deploy the function app.
 
-1. Deployment can take some time. In the global controls next to your account name, select the **Notifications** icon, and watch for a **Deployment succeeded** message. You will also see the message **Your deployment is complete** on the overview page for your resource group.
+1. Deployment can take some time. In the global controls next to your account name, select the **Notifications** icon, and watch for a **Deployment succeeded** message.
 
 1. When your function deployment is complete, select **Go to resource**. The **Overview** pane for your function app appears.
 
@@ -99,7 +99,7 @@ Now that we have a function app, it's time to create a function. Each function i
 
 1. In the **Select a template** section, select the **HTTP trigger** template.
 
-1. In the **Template details** section, confirm the following information.
+1. In the **Template details** section, confirm the following settings.
 
     - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically creates unique names for the functions you create. You can choose a different name, but this is a reminder to use meaningful names.
 
@@ -193,7 +193,7 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. In the **Select a template** section, select the **HTTP trigger** template.
 
-1. In the **Template details** section, enter the following information.
+1. In the **Template details** section, confirm the following settings.
 
     - In the **New Function** text box, accept the default name *HttpTrigger1*. Azure automatically provides a unique name when you create a function. You can choose a different name, but this is a reminder to use meaningful names.
 
@@ -207,17 +207,17 @@ Now that we have a function app, let's create a function. Each function is activ
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog box.
 
-1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request. 
- 
+1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response may take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
+
    When the function responds, you should see output similar to the following example displayed in your browser.
 
     ```output
     This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.
     ```
 
-1. Add query string `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
+1. Add query string `&name=Joe` to the end of the URL. Your resulting URL should resemble the following example:
 
-    `https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Joe`  
+   `https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Joe`  
 
 1. Press <kbd>Enter</kbd> to run the request in your browser. When the function responds, you should see output similar to the following example displayed in your browser.
 
@@ -323,10 +323,8 @@ Now that we have a function app, let's create a function. Each function is activ
 
     Notice that we've already defined a trigger and an output binding, as shown in the following image. The integration view adjusts to the best fit for the width and height of your screen. The same information can display vertically, if your screen isn't wide enough.
 
-
-
     :::image type="content" source="../media/3-function-integration-horizontal-small.png" alt-text="Screenshot of horizontal flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-horizontal.png":::
-    
+
     You can see that we can't add more than _one_ trigger. To change the trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add multiple bindings, so the function can accept more than one input value and return more than one output value.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
