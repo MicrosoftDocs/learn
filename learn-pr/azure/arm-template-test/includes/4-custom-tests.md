@@ -1,6 +1,6 @@
 So far you've looked at how to run some tests on your templates. However, you might operate in a company or team that has its own set of rules. These rules might mean that you want to *customize* the test experience. You might have the following scenarios:
 
-- **Run a specific test suite**. Upon installation of the test toolkit, you're given a set of tests that will be run. These tests are located at the following directory: *<install directory>/arm-ttk/testcases/deploymentTemplate*. 
+- **Run a specific test suite**. Upon installation of the test toolkit, you're given a set of tests that will be run. These tests are located at the following directory: *\<install directory>\/arm-ttk/testcases/deploymentTemplate*. 
 
   It's possible to customize this test run experience. One way to customize, as we've seen in the previous unit, is by using the `-Test` parameter. You can also edit what tests are being run by removing files in the directory. You can skip specific tests by using the `-Skip` parameter.
 
@@ -10,13 +10,13 @@ So far you've looked at how to run some tests on your templates. However, you mi
 
 You've decided to author your own domain-specific test. There's a flow to authoring and running such a test:
 
-1. Create a file in the directory *<install directory>/arm-ttk/testcases/deploymentTemplate*.
+1. Create a file in the directory *\<install directory\>/arm-ttk/testcases/deploymentTemplate*.
 1. Author the file in PowerShell.
 1. Run the file and inspect the results.
 
 ### Creating a custom test
 
-A custom test needs to be placed in the correct directory: _<install directory>/arm-ttk/testcases/deploymentTemplate_. It also needs to follow a naming standard with dashes, a postfix of _.test_, and an ending in _.ps1_. A typical test file looks like this:
+A custom test needs to be placed in the correct directory: _\<install directory\>/arm-ttk/testcases/deploymentTemplate_. It also needs to follow a naming standard with dashes, a postfix of _.test_, and an ending in _.ps1_. A typical test file looks like this:
 
 ```bash
 Domain-Specific.test.ps1
