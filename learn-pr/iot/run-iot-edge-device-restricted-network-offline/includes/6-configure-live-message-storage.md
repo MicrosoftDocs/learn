@@ -52,7 +52,7 @@ You will note that the "desired" properties are empty for this new device.
 
     This Binds value configures the /iotedge/storage/ directory in the Docker container for the Edge Hub Module to be mapped to the /etc/iotedge/storage/ host system directory on the physical IoT Edge Device.
 
-    The value is in the format of <HostStoragePath>:<ModuleStoragePath>. The <HostStoragePath> value is the host directory location on the IoT Edge Device. The <ModuleStoragePath> is the module storage path made available within the container. Both of these values must be an absolute path.
+    The value is in the format of \<HostStoragePath\>:\<ModuleStoragePath\>. The \<HostStoragePath\> value is the host directory location on the IoT Edge Device. The \<ModuleStoragePath\> is the module storage path made available within the container. Both of these values must be an absolute path.
 
 1. The resulting JSON in the Create Options box should look similar to the following script:
 
