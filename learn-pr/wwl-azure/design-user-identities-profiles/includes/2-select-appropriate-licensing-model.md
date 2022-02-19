@@ -37,15 +37,17 @@ Personal desktops are typically chosen for the following reasons:
     Windows 10 Enterprise and Windows 7 Enterprise desktops and apps available at no cost with an eligible Windows or Microsoft 365 license.Get free Extended Security Updates until January 2023 for your Windows 7 virtual desktop—offering more options to support legacy apps while you transition to Windows 10.
   :::column-end:::
   :::column:::
-    Windows 10 and Windows 7 with Azure Virtual Desktop with one of the per user licenses\* seen below:
+    
 
-Microsoft 365 E3/E5
-Microsoft 365 A3/A5/Student Use Benefits
-Microsoft 365 F3
-Microsoft 365 Business Premium\*\*
-Windows 10 Enterprise E3/E5
-Windows 10 Education A3/A5
-Windows 10 VDA per user
+ -  Microsoft 365 E3/E5
+ -  Microsoft 365 A3/A5/Student Use Benefits
+ -  Microsoft 365 F3
+ -  Microsoft 365 Business Premium\*\*
+ -  Windows 10 Enterprise E3/E5
+ -  Windows 10 Education A3/A5
+ -  Windows 10 VDA per user
+
+
   :::column-end:::
 :::row-end:::
 :::row:::
