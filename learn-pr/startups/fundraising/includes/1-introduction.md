@@ -21,4 +21,4 @@ By the end of the module, you'll know:
 - How to evaluate the pros and cons of raising money from investors versus organic growth.
 - What investors are looking for when they consider investing in startups.
 - How and when to raise money.
-- Tips for getting a funding round closed in a reasonable timeframe and on fair terms.
+- Tips for getting a funding round closed in a reasonable time frame and on fair terms.

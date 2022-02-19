@@ -178,11 +178,11 @@ Let's look at Melanie's investment portfolio and assume from the outset that hal
 |Company 10|$100,000|Unknown|
 |Total|$1,000,000|$0|
 
-Research has also shown that out of every 10 angel investments, on average two will make a 1x return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
+Research has also shown that out of every 10 angel investments, on average two will make a 1-time return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
 
-Similarly, out of every 10 investments, on average two will make a small positive return of 2x to 4x the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
+Similarly, out of every 10 investments, on average two will make a small positive return of 2 times to 4 times the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
 
-If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five have failed, generating zero return. Two have generated a 1x return, and two more have generated a 2x and a 4x return.
+If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five have failed, generating zero return. Two have generated a 1-time return, and two more have generated a 2-time and a 4-time return.
 
 We can see that Melanie's portfolio return from these nine investments is $800,000.
 
@@ -210,7 +210,7 @@ A $5 million return might sound like a phenomenal outcome. That's $4 million mor
 
 If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 
-That's a return of $4.2 million on an investment of $100,000, or a 42x return on Melanie's investment.
+That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
 
 Melanie's portfolio would now look like the following table:
 
@@ -228,7 +228,7 @@ Melanie's portfolio would now look like the following table:
 |Company 10|$100,000|$4,200,000|
 |Total|$1,000,000|$5,000,000|
 
-Some startup founders might think that a 42x return sounds egregious, but it's perfectly rational. If Melanie invests in 10 companies, and she doesn't know which of them will be successful, *every single company she invests in must be capable of generating something like a 42x return*.
+Some startup founders might think that a 42-time return sounds egregious, but it's perfectly rational. If Melanie invests in 10 companies, and she doesn't know which of them will be successful, *every single company she invests in must be capable of generating something like a 42-time return*.
 
 Let's consider what this scenario looks like from the company's point of view. An investor return of $4.2 million doesn't represent the value of the entire company. If we assume that Melanie invested in the seed round, and the company then raised money from other investors, her shareholding will have been diluted. It might have gone from 10 percent at the seed round to 2 percent on exit.
 
