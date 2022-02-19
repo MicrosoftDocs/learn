@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. These are instructions that behave according to how resources are configured in the system. Does the *Set CPU timer* instruction modify any configuration of the resources in the system?"
     - content: "Innocuous"
       isCorrect: false
-      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the 'Set CPU timer' instruction modify any configuration of the resources in the system?"
+      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the *Set CPU timer* instruction modify any configuration of the resources in the system?"
 
   - content: "The *Load Real Address* instruction from IBM takes a virtual address and saves the corresponding physical address in a specified general-purpose register. The result of the value stored in the register depends on the state of the physical memory resource. What is the type of this instruction?"
     choices:
