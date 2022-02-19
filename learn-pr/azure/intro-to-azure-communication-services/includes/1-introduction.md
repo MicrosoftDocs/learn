@@ -1,6 +1,6 @@
 Communication is of ever growing importance within our modern world. Keeping connected to your users is of vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services(ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure.
 
-:::image type="content" source="../media/communication-services.png.png" alt-text="Communication Services marketing image.":::
+:::image type="content" source="../media/communication-services.png" alt-text="Communication Services marketing image.":::
 
 ## Example scenario
 
