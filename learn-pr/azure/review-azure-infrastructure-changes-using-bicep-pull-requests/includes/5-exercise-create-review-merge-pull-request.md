@@ -16,16 +16,23 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. In your browser, navigate to **Code**.
 
-   GitHub detects that you have an unmerged branch, and prompts you to create a pull request.
+1. Select **2 branches** to list the branches in your GitHub repository.
 
-1. Select **Compare & pull request**.
+   :::image type="content" source="../media/5-github-branches.png" alt-text="TODO":::
 
-1. Enter the following details for the pull request:
+1. Next to **add-orders-queue**, select **New pull request**.
 
-   **Title:** Add order processing queue
-   **Description:** This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.
+   :::image type="content" source="../media/5-github-new-pull-request.png" alt-text="TODO":::
+
+1. On the pull request creation page, notice that GitHub automatically used the Git commit message as the pull request title.
+
+   Enter the following description:
+
+   *This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.*
 
 1. Select **Create pull request**.
+
+   :::image type="content" source="../media/5-github-pull-request-create.png" alt-text="TODO":::
 
 ::: zone-end
 
