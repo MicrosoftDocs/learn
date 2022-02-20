@@ -55,7 +55,40 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+## Get the Azure DevOps project
+
+Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
+
+> [!CAUTION]
+> This isn't working yet :)
+<!-- TODO -->
+
+On the Azure DevOps Demo Generator site, follow these steps to run the template:
+
+1. Select **Sign In** and accept the usage terms.
+
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
+
+    <!-- TODO screenshot once the demo is working -->
+
+1. Select **Create Project**.
+
+    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
+
+1. Select **Navigate to project** to go to your project in Azure DevOps.
+
+::: zone-end
+
 ## Clone the repository
+
+::: zone pivot="github"
 
 You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
 
@@ -89,46 +122,21 @@ You now have a copy of the template repository in your own account. You will now
 
 ::: zone pivot="azurerepos"
 
-## Get the Azure DevOps project
-
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
-
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
-
-> [!CAUTION]
-> This isn't working yet :)
-<!-- TODO -->
-
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
-
-1. Select **Sign In** and accept the usage terms.
-
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
-
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
-
-1. Select **Create Project**.
-
-    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
-
-1. Select **Navigate to project** to go to your project in Azure DevOps.
-
-## Clone the repository
+You now have a proejct in your own account. You will now clone this repository locally so you can start work in it. 
 
 1. Select **Repos** > **Files**.
 
-   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+   :::image type="content" source="../media/3-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
 
 1. Select **Clone**.
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
+   :::image type="content" source="../media/3-repos-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
 
 1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
+    :::image type="content" source="../media/3-repos-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
 
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
@@ -188,9 +196,13 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Select **Branch policies**.
 
+   :::image type="content" source="../media/3-repos-branch-policies.png" alt-text="TODO":::
+
 1. In the Branch policies window, change the setting for **Require a minimum number of reviewers** to **On**.
 
 1. Change the minimum number of reviewers to **1** and select the **Allow requestors to approve their own changes** option.
+
+   :::image type="content" source="../media/3-repos-branch-policy-main.png" alt-text="TODO":::
 
    > [!NOTE]
    > Here, you enable the _Allow requestors to approve their own changes_ option. In these exercises, you're working on your own, and so you need to both create and approve your changes. But in a real team environment, you might not want to enable this option.
@@ -290,7 +302,7 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in. The *add-orders-queue* branch isn't affected.
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
 
 ::: zone-end
 
@@ -325,6 +337,6 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in. The *add-orders-queue* branch isn't affected.
+   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
 
 ::: zone-end
