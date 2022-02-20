@@ -43,7 +43,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Use this template**. 
 
-   :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
 1. Enter a name for your new project, such as *toy-website-review*.
 
@@ -53,7 +53,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Create repository from template**. 
 
-   :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
+   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
 ## Clone the repository
 
@@ -152,31 +152,25 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. In your browser, select **Settings**.
 
-   TODO image
-
 1. Select **Branches**.
-
-   TODO image
 
 1. Select **Add rule**.
 
-   TODO image
+   :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
 
 1. In the **Branch name pattern** text box, enter **main**.
 
 1. Select **Require a pull request before merging**.
 
-   Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing this.
+   Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
 
 1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
 
    Leave the other configuration options with their default values.
 
-   TODO image
-
 1. Near the bottom of the page, select **Create**.
 
-   TODO image
+   :::image type="content" source="../media/3-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
 
    GitHub might ask you to sign in again to confirm your identity.
 
@@ -214,6 +208,8 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
     This creates a new feature branch for you to work from.
 
 1. Open the *main.bicep* file in the *deploy* folder.
+
+   :::image type="content" source="../media/3-visual-studio-code-main-bicep.png" alt-text="Screenshot of Visual Studio Code that shows the main dot bicep file in the deploy folder.":::
 
 1. Near the top of the *main.bicep* file, add a new variable for the name of the queue:
 
@@ -284,7 +280,7 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
 
    Notice that your push fails with an error message that looks similar to the one below:
 
-   :::code language="output" source="code/3-merge-error-github.txt" highlight="8-9" ::: <!-- TODO check if this is still the correct error -->
+   :::code language="output" source="code/3-merge-error-github.txt" highlight="3" :::
 
    The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
 

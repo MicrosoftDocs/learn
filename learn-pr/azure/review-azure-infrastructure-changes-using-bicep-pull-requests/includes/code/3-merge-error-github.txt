@@ -1,12 +1,6 @@
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (4/4), 369 bytes | 369.00 KiB/s, done.
-Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: error: GH006: Protected branch update failed for refs/heads/main.
-remote: error: At least 1 approving review is required by reviewers with write access.
+remote: error: Changes must be made through a pull request.
 To https://github.com/mygithubuser/toy-website-review.git
-! [remote rejected] main -> main (protected branch hook declined)
+ ! [remote rejected] main -> main (protected branch hook declined)
 error: failed to push some refs to 'https://github.com/mygithubuser/toy-website-review.git'
