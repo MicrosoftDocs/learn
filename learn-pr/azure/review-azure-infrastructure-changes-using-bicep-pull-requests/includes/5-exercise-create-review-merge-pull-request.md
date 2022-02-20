@@ -40,18 +40,21 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. In your browser, navigate to **Repos** > **Files**.
 
-1. Select the **add-orders-queue** branch.
+   Notice that Azure DevOps shows a banner indicating there are changes in the *add-orders-queue* branch, and offers to create a pull request for them.
 
-   Notice that Azure DevOps shows a banner indicating there are changes in the *add-orders-queue* branch, and offering to create a pull request for them.
+   :::image type="content" source="../media/5-repos-new-pull-request.png" alt-text="TODO":::
 
 1. Select **Create a pull request**.
 
-1. Enter the following details for the pull request:
+1. On the pull request creation page, notice that GitHub automatically used the Git commit message as the pull request title.
 
-   **Title:** Add order processing queue
-   **Description:** This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.
+   Enter the following description:
 
-1. TODO create button?
+   *This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.*
+
+1. Select **Create**.
+
+   :::image type="content" source="../media/5-repos-pull-request-create.png" alt-text="TODO":::
 
 ::: zone-end
 
@@ -87,36 +90,60 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
    GitHub returns you to the pull request's **Conversation** tab.
 
-1. Now, imagine you're the author of this file. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
-
-   :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="TODO":::
-
-1. Select **Comment**, and then select **Resolve conversation** to indicate there discussion on the line is over.
-
 ::: zone-end
 
 ::: zone pivot="azurerepos"
 
 1. On the pull request page, select the **Files** tab.
 
-   Azure DevOps shows you the files that were changed in this pull request.
+   :::image type="content" source="../media/5-repos-pull-request-review-files-changed.png" alt-text="TODO":::
+
+   Azure DevOps shows you the files that were changed in this pull request. Notice that it highlights all of the lines that have changed, so you can easily see what you should review.
 
    > [!TIP]
    > Imagine you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the **main.bicep** file that was changed, find line 12.
+1. In the **main.bicep** file that was changed, hover over line 12 and select the comment button.
 
-1. Hover your mouse pointer over the line in the right window with the changes, and select the **comment** button that appears.
+   :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="TODO":::
 
-1. In the comment box, enter the following text: **TODO**.
+1. In the comment box, enter the following text: **Should this be capitalized?**.
 
 1. Select **Comment**.
 
-1. Select the **Overview** tab.
-
-1. Add a comment: **This looks good. Ok to merge.**. 
+   :::image type="content" source="../media/5-repos-pull-request-review-comment.png" alt-text="TODO":::
 
 1. Select **Approve**.
+
+   :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="TODO":::
+
+::: zone-end
+
+## Respond to the pull request review
+
+When you create or review a pull request, you can participate in a conversation about its contents. Imagine you're the author of this file, and you want to respond to the comment left by the reviewer.
+
+::: zone pivot="github"
+
+1. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
+
+1. Select **Comment**, and then select **Resolve conversation** to indicate there discussion on the line is over.
+
+   :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="TODO":::
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
+1. Select the **Overview** tab.
+
+   :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="TODO":::
+
+1. Now, imagine you're the author of this file. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
+
+1. Select **Reply & resolve** to indicate there discussion on the line is over.
+
+   :::image type="content" source="../media/5-repos-pull-request-respond-comment.png" alt-text="TODO":::
 
 ::: zone-end
 
@@ -144,11 +171,17 @@ Your pull request has been approved. Your website's development team has confirm
 
 ::: zone pivot="azurerepos"
 
-1. On the pull request page, select **Complete**.
+1. Select **Complete**.
 
-1. In the slide out window, leave all the defaults in place and select **Complete merge**.
+   :::image type="content" source="../media/5-github-pull-request-complete.png" alt-text="TODO":::
+
+1. In the slide out window, leave all the default settings. Select **Complete merge**.
+
+   :::image type="content" source="../media/5-github-pull-request-complete-merge.png" alt-text="TODO":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
+
+   Azure DevOps automatically deleted the feature branch when you merged the pull request. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is sitll in progress.
 
 ::: zone-end
 
