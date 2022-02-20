@@ -164,7 +164,7 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
    :::image type="content" source="../media/5-github-code-final.png" alt-text="TODO":::
 
-   Notice that the queue, and your other changes, are now in the file.
+   Notice that the queue, and your other changes, are now in the files.
 
 ::: zone-end
 
@@ -174,6 +174,6 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
 1. Navigate to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
 
-   Notice that the queue, and your other changes, are now in the file.
+   Notice that the queue, and your other changes, are now in the files.
 
 ::: zone-end
