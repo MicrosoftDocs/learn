@@ -173,11 +173,11 @@ Your pull request has been approved. Your website's development team has confirm
 
 1. Select **Complete**.
 
-   :::image type="content" source="../media/5-github-pull-request-complete.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-complete.png" alt-text="TODO":::
 
 1. In the slide out window, leave all the default settings. Select **Complete merge**.
 
-   :::image type="content" source="../media/5-github-pull-request-complete-merge.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-complete-merge.png" alt-text="TODO":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
