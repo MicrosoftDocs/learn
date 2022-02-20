@@ -64,26 +64,34 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. On the pull request page, select the **Files changed** tab.
 
-   GitHub shows you the files that were changed in this pull request.
+   :::image type="content" source="../media/5-github-pull-request-review-files-changed.png" alt-text="TODO":::
+
+   GitHub shows you the files that were changed in this pull request. Notice that it highlights all of the lines that have changed, so you can easily see what you should review.
 
    > [!TIP]
    > Imagine you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the **main.bicep** file that was changed, find line 12.
+1. In the **main.bicep** file that was changed, hover over line 12 and select the button with the plus sign (**+**).
 
-1. Hover over line 12 and select the button with the plus sign (**+**).
+   :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="TODO":::
 
-1. In the comment box, enter the following text: **TODO**.
+1. In the comment box, enter the following text: **Should this be capitalized?**.
 
 1. Select **Start a review**.
 
-1. Select **Finish your review**.
-
-1. Select **Comment**. Normally, you'd approve the pull request. But because you're the author of the pull request, GitHub doesn't allow you to approve it.
-
-   Add a comment: **This looks good. Ok to merge.**. 
+   :::image type="content" source="../media/5-github-pull-request-review-comment.png" alt-text="TODO":::
 
 1. Select **Submit review**.
+
+   :::image type="content" source="../media/5-github-pull-request-review-submit.png" alt-text="TODO":::
+
+   GitHub returns you to the pull request's **Conversation** tab.
+
+1. Now, imagine you're the author of this file. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
+
+   :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="TODO":::
+
+1. Select **Comment**, and then select **Resolve conversation** to indicate there discussion on the line is over.
 
 ::: zone-end
 
@@ -118,13 +126,19 @@ Your pull request has been approved. Your website's development team has confirm
 
 ::: zone pivot="github"
 
-1. On the pull request page, select the **Conversation** tab.
-
 1. Select **Merge pull request**.
 
-1. Select **Confirm merge**.
+   :::image type="content" source="../media/5-github-pull-request-merge.png" alt-text="TODO":::
+
+1. GitHub asks you to confirm the merge. When GitHub merges the pull request, it creates a commit and uses the commit message . Select **Confirm merge**.
+
+   :::image type="content" source="../media/5-github-pull-request-merge-confirm.png" alt-text="TODO":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
+
+1. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is sitll in progress. Select **Delete branch.**
+
+   :::image type="content" source="../media/5-github-pull-request-merge-delete.png" alt-text="TODO":::
 
 ::: zone-end
 
@@ -147,6 +161,8 @@ Because this is your first time merging a pull request, it's a good idea to conf
 1. Navigate to **Code**.
 
 1. Navigate to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
+
+   :::image type="content" source="../media/5-github-code-final.png" alt-text="TODO":::
 
    Notice that the queue, and your other changes, are now in the file.
 
