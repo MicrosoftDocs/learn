@@ -42,9 +42,9 @@ It's a good idea to update your feature branch regularly so that you incorporate
 
 ### Use small, short-lived branches
 
-It's a good idea to aim for short-lived feature branches. This helps you to avoid merge conflicts by reducing the amount of time that your branches might get out of sync.
+It's a good idea to aim for short-lived feature branches. This helps you to avoid merge conflicts by reducing the amount of time that your branches might get out of sync. It also makes it easier for you colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
 
-Its also good to keep your feature branches small and easy to understand, and to avoid doing large changes in a single branch. Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
+Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
 
 When you work in this manner, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. For example, you might create a Bicep file that defines a storage account, but disable the storage account's deployment until you're done with all of the changes:
 
