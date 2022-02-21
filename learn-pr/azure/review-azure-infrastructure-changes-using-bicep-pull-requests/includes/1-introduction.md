@@ -6,7 +6,7 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 Now, you need to make a change to the way your website processes orders. You need to add a message queue, so that your website can post messages whenever a customer places an order for a toy. A backend system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
 
-After talking to your team, you decide that this is a great opportunity to try out a new process for how your Bicep changes are merged.
+After talking to your team, you decide that this is a great opportunity to try out a new process. You'll use pull requests to control how your Bicep changes are merged.
 
 :::image type="content" source="../media/1-process.png" alt-text="Diagram showing a Bicep code review process. Code is written by the author, reviewed by a reviewer, and then merged to a Git repository before it's deployed to Azure." border="false":::
 
