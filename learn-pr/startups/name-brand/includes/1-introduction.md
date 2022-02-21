@@ -4,9 +4,9 @@ When you're a startup founder, the name of your company is one of the few things
 
 Unfortunately, a lot of founders pick a suboptimal name for their company. This introduces friction for customers who are trying to find and talk about the company. A suboptimal name makes it harder for the company to build a strong brand. In many cases, it causes the company to spend time and money later to change its name by rebranding.
 
-In this module, we're going to cover how to choose a great name from the beginning. That information includes the importance of tying your brand to a strong web presence in the form of a dot-com domain and relevant social handles.
+In this module, we'll cover how to choose a great name from the beginning. That information includes the importance of tying your brand to a strong web presence in the form of a .com domain and relevant social handles.
 
-We're also going to introduce the concept of a personal brand for startup founders. We'll discuss some of the ways you can position yourself as a thought leader to help boost the strength of your company's brand.
+We'll also introduce the concept of a personal brand for startup founders. We'll discuss some of the ways you can position yourself as a thought leader to help boost the strength of your company's brand.
 
 ## Learning objectives
 

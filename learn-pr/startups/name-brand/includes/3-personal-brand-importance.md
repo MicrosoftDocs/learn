@@ -47,10 +47,10 @@ A good photo has the following attributes:
 
 - Current (no more than a couple of years old)
 - Friendly and engaging (you're smiling and looking at the camera)
-- Confident expression and body language
+- Confident in expression and body language
 - High quality (ideally taken with a professional camera and available in high resolution when needed)
 - Well lit (not backlit or shadowy, and not in bright sunlight that makes you squint)
-- A plain background that's not distracting and doesn't include other people
+- Free of distractions or other people in the background
 
 It's also a good idea to have a variety of photos available for different uses.
 
@@ -79,7 +79,7 @@ Be authentic rather than posting content that looks like it was created by a soc
 
 ## Write blog posts relevant to your company or industry
 
-Short blog posts are an excellent way to show that you're genuinely passionate about the domain in which your company operates, and to demonstrate your expertise as a thought leader in your field.
+Short blog posts are an excellent way to show that you're genuinely passionate about the domain in which your company operates. They can also demonstrate your expertise as a thought leader in your field.
 
 It's a good idea to write blog posts with a *create once, publish many times* philosophy. You might choose to publish the full version of a post on your website, use a snippet of it in your email marketing campaigns or newsletter, and release a shorter version as a LinkedIn post or on Medium.
 
@@ -97,12 +97,12 @@ Storytelling is also an important part of delivering investor pitches. The more 
 
 Broadly speaking, there are two types of media opportunities that startup founders should seek out:
 
-- Opinion pieces in which you comment as a voice of authority on a particular topic. These pieces aren't about your company but might provide an opportunity for a brief mention of your company and what it does.
-- Pieces about your company. These tend to be tied to important milestones such as closing a funding round, announcing a notable hire, or signing an important brand-name customer. Unless you're doing something particularly unusual, it's uncommon for the mainstream media to write about your company simply because it has launched. You might, however, be able to attract the attention of startup-focused media if you can provide an interesting story about why your company exists.
+- Opinion pieces in which you comment as a voice of authority on a topic. These pieces aren't about your company but might provide an opportunity for a brief mention of your company and what it does.
+- Pieces about your company. These tend to be tied to important milestones such as closing a funding round, announcing a notable hire, or signing an important brand-name customer. Unless you're doing something unusual, it's uncommon for the mainstream media to write about your company simply because it has launched. You might, however, be able to attract the attention of startup-focused media if you can provide an interesting story about why your company exists.
 
 ## Get media training if you need it
 
-Not all first-time startup founders have experience in public speaking, and relatively few are experienced in doing media interviews or talking on camera.
+Not all first-time startup founders have experience in public speaking. Relatively few are experienced in doing media interviews or talking on camera.
 
 These can be daunting skills to learn. It's not advisable to learn by trial and error. 
 

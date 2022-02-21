@@ -8,8 +8,8 @@ Good startup names have the following eight attributes:
 - Easy to say
 - Safe in other languages
 - Future-proof
-- Available as a dot-com domain
-- Doesn't infringe on an existing trademark
+- Available as a .com domain
+- Free of infringements on existing trademarks
 
 Let's go through each of these and discuss why they're important.
 
@@ -39,7 +39,7 @@ Examples (ordered from the most indirect to most direct hints):
 
 You should choose a company name that people can spell, so that when they hear about your company, they can find it easily online.
 
-If people have to guess the spelling of your company name, you're introducing unnecessary friction, and some of those users will give up before they find you.
+If people have to guess the spelling of your company name, you're introducing unnecessary friction. Some of those users will give up before they find you.
 
 This is an attribute that you can test objectively with another person. Say the name of your company and ask the person to write it down or enter it into a search engine. Do this with 10 people and see how many of them correctly spell your company name the first time.
 
@@ -65,7 +65,7 @@ You should choose a company name that's easy to say. There are two parts to this
 
 We've all heard of company and product names that turned out to be an insult in another language.
 
-Research online to make sure that your preferred name doesn't translate to something offensive in another language. You might also decide to test similar-sounding words with different spellings, and to check with people who speak the language of your target non-English-speaking markets.
+Research online to make sure that your preferred name doesn't translate to something offensive. You might also decide to test similar-sounding words with different spellings, and to check with people who speak the language of your target non-English-speaking markets.
 
 ## Future-proof
 
@@ -77,17 +77,17 @@ For example, Emily is building a product to streamline personal banking. She mig
 
 Think about all the adjacent markets you might ultimately focus on. Does your preferred company name give you a reasonable degree of freedom to build other products or enter other markets?
 
-## Available as a dot-com domain
+## Available as a .com domain
 
 If you wanted to start a company called Microsoft today, you wouldn't be able to have the domain microsoft.com (for obvious reasons). Maybe you could use a *domain hack* and try to register microsoft.io, microso.ft, getmicrosoft.com, hellomicrosoft.com, microsoft-app.com, or some other variant. But most people would agree that this isn't a good strategy.
 
-A lot of startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*. Or they use domain hacks such as the examples cited earlier.
+A lot of startup founders compromise the strength of their brand from the outset by choosing a name for which the domain *\<their-company-name\>.com* isn't available, either because someone has registered it and is sitting on it, or (even worse) because an existing business is using that domain. Instead, they settle for an inferior domain such as *\<their-company-name\>.io* or *.biz*. Or they use domain hacks like the examples cited earlier.
 
 Apart from causing confusion among users and making it harder for them to find your company, this brand compromise signals weakness. As pointed out by Y Combinator cofounder Paul Graham, [startups that choose a marginal domain are often viewed as marginal companies](http://paulgraham.com/name.html?azure-portal=true).
 
 If you're going to be a successful global company, you should have the domain *\<your-company-name\>.com*.
 
-This might seem like an inflexible view. But experience suggests that a small investment of time up front will pay off massively by allowing your company to start with a strong brand, rather than starting with a suboptimal brand and having to change it later.
+This might seem like an inflexible view. But experience suggests that a small investment of time up front will pay off by allowing your company to start with a strong brand, rather than starting with a suboptimal brand and forcing you to change it later.
 
 Not having *\<your-company-name\>.com* is unlikely to kill your company, but it does add friction by forcing potential customers to take extra time to find you online. As your company matures beyond the startup phase, not having the domain *\<your-company-name\>.com* can start to look highly conspicuous.
 
@@ -104,9 +104,9 @@ Consider registering several other domains at the same time, primarily to preven
 - Any likely domain hacks such as get-*\<your-company-name\>.com*.
 - The relevant country-specific domain if you're located outside the United States.
 
-Last, if your company will heavily rely on one or more social networks to reach users, you should check the availability of social handles. It could be highly undesirable to pick a company name only to realize later that existing social media accounts are using that name.
+Last, if your company will heavily rely on one or more social networks to reach users, you should check the availability of social handles. It could be highly undesirable to pick a company name and realize later that existing social media accounts are using that name.
 
-## Doesn't infringe on an existing trademark
+## Free of infringements on existing trademarks
 
 A final step before you lock in a name for your company is to do a trademark search. A basic [search of US trademarks is free](https://www.uspto.gov/trademarks/search?azure-portal=true). It gives you some confidence that you're not choosing a name that will lead you to an expensive lawsuit in the future.
 
@@ -114,7 +114,7 @@ It's often a good idea to consult with a trademark attorney who can do a more ro
 
 ## Task: Evaluate your company name
 
-Score your company name (or proposed name) out of eight by using this score sheet.
+Score your company name (or proposed name) out of eight by using the following score sheet.
 
 If you score seven or eight, chances are your company name is a reasonable choice. If you score six or less, consider changing it.
 
@@ -130,7 +130,7 @@ Startup name: __________________________________
 &#9744; Easy to say\
 &#9744; Safe in other languages\
 &#9744; Future-proof\
-&#9744; Availability of a dot-com domain\
-&#9744; Doesn't infringe on an existing trademark
+&#9744; Availability of a .com domain\
+&#9744; Free of infringements on existing trademarks
 
 Score: ___ / 8
