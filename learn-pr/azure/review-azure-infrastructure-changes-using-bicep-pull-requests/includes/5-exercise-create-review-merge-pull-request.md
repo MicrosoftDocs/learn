@@ -18,11 +18,11 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. Select **2 branches** to list the branches in your GitHub repository.
 
-   :::image type="content" source="../media/5-github-branches.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-branches.png" alt-text="Screenshot of GitHub showing the repository page. The link to the branch list is highlighted.":::
 
 1. Next to **add-orders-queue**, select **New pull request**.
 
-   :::image type="content" source="../media/5-github-new-pull-request.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-new-pull-request.png" alt-text="Screenshot of GitHub showing the branch list. The New pull request button is highlighted for the add-orders-queue branch.":::
 
 1. On the pull request creation page, notice that GitHub automatically used the Git commit message as the pull request title.
 
@@ -32,7 +32,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. Select **Create pull request**.
 
-   :::image type="content" source="../media/5-github-pull-request-create.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-create.png" alt-text="Screenshot of GitHub showing the pull request creation page. The Create pull request button is highlighted.":::
 
 ::: zone-end
 
@@ -42,7 +42,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
    Notice that Azure DevOps shows a banner indicating there are changes in the *add-orders-queue* branch, and offers to create a pull request for them.
 
-   :::image type="content" source="../media/5-repos-new-pull-request.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-new-pull-request.png" alt-text="Screenshot of Azure DevOps showing the repository's file list, including a banner offering to create a pull request.":::
 
 1. Select **Create a pull request**.
 
@@ -54,20 +54,19 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. Select **Create**.
 
-   :::image type="content" source="../media/5-repos-pull-request-create.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-create.png" alt-text="Screenshot of Azure DevOps showing the pull request creation page. The Create button is highlighted.":::
 
 ::: zone-end
 
 ## Review the pull request
 
-> [!NOTE]
-> Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
+Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
 
 ::: zone pivot="github"
 
 1. On the pull request page, select the **Files changed** tab.
 
-   :::image type="content" source="../media/5-github-pull-request-review-files-changed.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-review-files-changed.png" alt-text="Screenshot of GitHub showing the files changed in the pull request.":::
 
    GitHub shows you the files that were changed in this pull request. Notice that it highlights all of the lines that have changed, so you can easily see what you should review.
 
@@ -76,17 +75,17 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. In the **main.bicep** file that was changed, hover over line 12 and select the button with the plus sign (**+**).
 
-   :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub showing the changes to the main dot bicep file. The mouse is hovering over line 12 and the add comment button is highlighted.":::
 
 1. In the comment box, enter the following text: **Should this be capitalized?**.
 
 1. Select **Start a review**.
 
-   :::image type="content" source="../media/5-github-pull-request-review-comment.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-review-comment.png" alt-text="Screenshot of GitHub showing the comment field. The Start a review button is highlighted.":::
 
 1. Select **Submit review**.
 
-   :::image type="content" source="../media/5-github-pull-request-review-submit.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-review-submit.png" alt-text="Screenshot of GitHub showing the Finish your review panel. The Submit review button is highlighted.":::
 
    GitHub returns you to the pull request's **Conversation** tab.
 
@@ -96,7 +95,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. On the pull request page, select the **Files** tab.
 
-   :::image type="content" source="../media/5-repos-pull-request-review-files-changed.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-review-files-changed.png" alt-text="Screenshot of Azure DevOps showing the files changed in the pull request.":::
 
    Azure DevOps shows you the files that were changed in this pull request. Notice that it highlights all of the lines that have changed, so you can easily see what you should review.
 
@@ -105,17 +104,17 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. In the **main.bicep** file that was changed, hover over line 12 and select the comment button.
 
-   :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-review-line.png" alt-text="Screenshot of Azure DevOps showing the changes to the main dot bicep file. The mouse is hovering over line 12 and the add comment button is highlighted.":::
 
 1. In the comment box, enter the following text: **Should this be capitalized?**.
 
 1. Select **Comment**.
 
-   :::image type="content" source="../media/5-repos-pull-request-review-comment.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-review-comment.png" alt-text="Screenshot of Azure DevOps showing the comment field. The Comment button is highlighted.":::
 
 1. Select **Approve**.
 
-   :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="Screenshot of Azure DevOps showing the Approve button for the pull request.":::
 
 ::: zone-end
 
@@ -129,7 +128,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 1. Select **Comment**, and then select **Resolve conversation** to indicate there discussion on the line is over.
 
-   :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="Screenshot of GitHub showing the response to the comment. The Comment and Resolve conversation buttons are highlighted.":::
 
 ::: zone-end
 
@@ -137,13 +136,13 @@ When you create or review a pull request, you can participate in a conversation 
 
 1. Select the **Overview** tab.
 
-   :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-overview.png" alt-text="Screenshot of Azure DevOps showing the Overview tab.":::
 
 1. Now, imagine you're the author of this file. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
 
 1. Select **Reply & resolve** to indicate there discussion on the line is over.
 
-   :::image type="content" source="../media/5-repos-pull-request-respond-comment.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-respond-comment.png" alt-text="Screenshot of Azure DevOps the response to the comment. The Reply and resolve button is highlighted.":::
 
 ::: zone-end
 
@@ -155,17 +154,17 @@ Your pull request has been approved. Your website's development team has confirm
 
 1. Select **Merge pull request**.
 
-   :::image type="content" source="../media/5-github-pull-request-merge.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-merge.png" alt-text="Screenshot of GitHub showing the pull request. The Merge pull request button is highlighted.":::
 
 1. GitHub asks you to confirm the merge. When GitHub merges the pull request, it creates a commit and uses the commit message . Select **Confirm merge**.
 
-   :::image type="content" source="../media/5-github-pull-request-merge-confirm.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-merge-confirm.png" alt-text="Screenshot of GitHub showing the pull request. The Confirm merge button is highlighted.":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
 1. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is sitll in progress. Select **Delete branch.**
 
-   :::image type="content" source="../media/5-github-pull-request-merge-delete.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-pull-request-merge-delete.png" alt-text="Screenshot of GitHub showing the pull request. The Delete branch button is highlighted.":::
 
 ::: zone-end
 
@@ -173,11 +172,11 @@ Your pull request has been approved. Your website's development team has confirm
 
 1. Select **Complete**.
 
-   :::image type="content" source="../media/5-repos-pull-request-complete.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-complete.png" alt-text="Screenshot of Azure DevOps showing the Complete button for the pull request.":::
 
 1. In the slide out window, leave all the default settings. Select **Complete merge**.
 
-   :::image type="content" source="../media/5-repos-pull-request-complete-merge.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-repos-pull-request-complete-merge.png" alt-text="Screenshot of Azure DevOps showing the pull request completion panel. The Complete merge button is highlighted.":::
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
@@ -195,7 +194,7 @@ Because this is your first time merging a pull request, it's a good idea to conf
 
 1. Navigate to the *deploy/main.bicep* file, and then to the *deploy/modules/appService.bicep* file.
 
-   :::image type="content" source="../media/5-github-code-final.png" alt-text="TODO":::
+   :::image type="content" source="../media/5-github-code-final.png" alt-text="Screenshot of GitHub showing the repository's file list after the pull request is merged.":::
 
    Notice that the queue, and your other changes, are now in the files.
 

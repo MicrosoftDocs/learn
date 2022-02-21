@@ -196,13 +196,13 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Select **Branch policies**.
 
-   :::image type="content" source="../media/3-repos-branch-policies.png" alt-text="TODO":::
+   :::image type="content" source="../media/3-repos-branch-policies.png" alt-text="Screenshot of Azure DevOps that shows the list of branches, with the context menu displayed and the Branch policies menu item highlighted.":::
 
 1. In the Branch policies window, change the setting for **Require a minimum number of reviewers** to **On**.
 
 1. Change the minimum number of reviewers to **1** and select the **Allow requestors to approve their own changes** option.
 
-   :::image type="content" source="../media/3-repos-branch-policy-main.png" alt-text="TODO":::
+   :::image type="content" source="../media/3-repos-branch-policy-main.png" alt-text="Screenshot of Azure DevOps that shows the branch policies page for the main branch.":::
 
    > [!NOTE]
    > Here, you enable the _Allow requestors to approve their own changes_ option. In these exercises, you're working on your own, and so you need to both create and approve your changes. But in a real team environment, you might not want to enable this option.
