@@ -6,7 +6,7 @@ metadata:
   description: "Use scalar functions"
   ms.date: 02/21/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
