@@ -4,11 +4,11 @@ When you work on Bicep code, the main branch of your Git repository becomes the 
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. Recently, a new team member accidentally changed an important Bicep file on your repository's main branch, which caused a production issue for your organization. You talk to your team and decide that it's time you start to review your code changes before they're merged and deployed.
 
-You need to make a change to the way your website processes orders. You need to add a message queue, so that your website can post messages whenever a customer places an order for a toy. A backend system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
+Now, you need to make a change to the way your website processes orders. You need to add a message queue, so that your website can post messages whenever a customer places an order for a toy. A backend system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
 
 After talking to your team, you decide that this is a great opportunity to try out a new process for how your Bicep changes are merged.
 
-<!-- TODO diagram - person writing Bicep code, committing, review and merge -->
+:::image type="content" source="../media/1-process].png" alt-text="Diagram showing a Bicep code review process. Code is written by the author, reviewed by a reviewer, and then merged to a Git repository before it's deployed to Azure." border="false":::
 
 ## What will we be doing?
 

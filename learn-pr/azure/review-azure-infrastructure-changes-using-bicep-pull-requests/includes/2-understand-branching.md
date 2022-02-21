@@ -68,11 +68,7 @@ In GitHub, you can configure *branch protections* for your main branch. Branch p
 - No change can be merged to the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
 
-If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch protection works:
-
-<!-- TODO diagram -->
-
-You'll learn how to apply branch protections in the next unit.
+If somebody tries to push a commit directly to a protected branch, the push will fail. You'll learn how to apply branch protections in the next unit.
 
 ::: zone-end
 
@@ -85,11 +81,7 @@ In Azure DevOps, you can configure *branch policies* for your main branch. Branc
 - No change can be merged to the main branch except through a pull request.
 - Changes need to be reviewed by at least two other people.
 
-If somebody tries to push a commit directly to a protected branch, the push will fail. The following diagram illustrates how a branch policy works:
-
-<!-- TODO diagram -->
-
-You'll learn how to apply branch policies in the next unit.
+If somebody tries to push a commit directly to a protected branch, the push will fail. You'll learn how to apply branch policies in the next unit.
 
 ::: zone-end
 
