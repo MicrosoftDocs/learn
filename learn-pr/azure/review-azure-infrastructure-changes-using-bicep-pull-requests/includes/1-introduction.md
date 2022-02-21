@@ -8,7 +8,7 @@ Now, you need to make a change to the way your website processes orders. You nee
 
 After talking to your team, you decide that this is a great opportunity to try out a new process for how your Bicep changes are merged.
 
-:::image type="content" source="../media/1-process].png" alt-text="Diagram showing a Bicep code review process. Code is written by the author, reviewed by a reviewer, and then merged to a Git repository before it's deployed to Azure." border="false":::
+:::image type="content" source="../media/1-process.png" alt-text="Diagram showing a Bicep code review process. Code is written by the author, reviewed by a reviewer, and then merged to a Git repository before it's deployed to Azure." border="false":::
 
 ## What will we be doing?
 
