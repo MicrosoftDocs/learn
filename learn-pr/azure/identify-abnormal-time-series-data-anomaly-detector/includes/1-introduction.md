@@ -4,7 +4,7 @@ Suppose you work for an electricity company that installs smart meters in reside
 
 Your task to build a solution that monitors energy consumption, identify odd data patterns quickly and pinpoint root-causes.  However, you don’t know how to send the data streams from smart meter devices to the cloud, store the data and detect anomalies.
 
-## Learning Objectives
+## Learning objectives
 By the end of this module, you'll be able to: 
 - Understand what anomaly detection is
 - Understand how the Azure Anomaly Detector APIs work and when to use for your scenario

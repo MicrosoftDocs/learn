@@ -25,6 +25,6 @@ quiz:
     - content: "When the expected value does not match the actual value, it means the data source or device is not reliable and you should replace it as soon as possible."
       isCorrect: false
       explanation: "Incorrect. The Anomaly Detector API predicts what the expected data the pattern should be to identify abnormal values that fall within a determined boundary."
-    - content: "The expected value helps in determining the upper and lower margin boundaries in which the actual data point values must fall within to be treated as normal and acceptable data behavior"
+    - content: "The expected value helps in determining the upper and lower margin boundaries in which the actual data point values must fall within to be treated as normal and acceptable data behavior."
       isCorrect: true
       explanation: "Correct. Anomaly Detector uses the expected value to determine the upper and lower margin boundaries the actual value should fall within. If the actual value at a given timestamp is not between upper boundary and lower boundary, it should be treated as an abnormal value."

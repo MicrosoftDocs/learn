@@ -127,14 +127,14 @@ We'll create a class that uses the anomaly detector SDK to call the different AP
 - The **init** initializes the function with the client connection to your Multivariate Anomaly Detection service and sets the location of the Blob.
 - The **train** function uses the _train_ method of the Multivariate Anomaly Detector APIs to train the model with your data that is stored in the Azure Blob. You also need to specify the start and end timestamp of the training dataset. 
 
-> [!NOTE]
-> You need a large training dataset (e.g. 1000 rows of data) for better model accuracy. The function's output is the unique trained model_id
+   > [!NOTE]
+   > You need a large training dataset (e.g. 1000 rows of data) for better model accuracy. The function's output is the unique trained model_id.
 
 - The **detect** function uses the _detect_ method of the Multivariate Anomaly Detector APIs to detect the anomalies in the data in the Azure Blob. The output is the result_id from the results of the API for all the input time-series data points.
 - The **export** function uses the _export_ method of the Multivariate Anomaly Detector APIs to export the trained model to a file destination (e.g. local directory). 
 
-> [!NOTE]
-> You can take the model zip file to other environments or your application for inference.
+   > [!NOTE]
+   > You can take the model zip file to other environments or your application for inference.
 
 ```python
 class MultivariateSample():

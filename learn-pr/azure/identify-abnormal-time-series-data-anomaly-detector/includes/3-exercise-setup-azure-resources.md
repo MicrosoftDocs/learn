@@ -8,7 +8,7 @@ Azure services to understand before we start:
 - _Azure IoT Hub_ is a communication channel for sending and receiving data between IoT devices and the cloud. 
 - _Azure Blob storage_ is used to store massive amounts of unstructured data. It helps you create data lakes for your analytics workloads. It's useful for storing raw data collected from the Azure IoT Hub.
 
-### Setup a Blob storage, IoT Hub, and Anomaly Detector instance
+### Set up a Blob storage, IoT Hub, and Anomaly Detector instance
 
 Manually creating and configuring a Blob storage, IoT Hub and Anomaly Detector instance can take some time. To save time, you can use a Bash setup script, which is available on GitHub. Follow these instructions to create the Azure resources you need with Azure CLI commands script.
 
