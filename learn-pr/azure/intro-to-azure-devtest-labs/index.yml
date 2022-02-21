@@ -3,21 +3,21 @@ uid: learn.azure.intro-to-azure-devtest-labs
 metadata:
   moduleType: introduction
   title: Introduction to Azure DevTest Labs
-  description: In this module, you'll learn how to evaluate whether Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
-  ms.date: 04/09/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: In this module, you'll learn how to evaluate whether Microsoft Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
+  ms.date: 01/18/2022
+  author: j-martens
+  ms.author: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure DevTest Labs
-summary: Learn how to use Azure DevTest Labs to quickly set up virtual computing environments for application development and testing.
+summary: Learn how to use Microsoft Azure DevTest Labs to quickly set up virtual computing environments for application development and testing.
 abstract: | 
-  By the end of this module, you'll be able to:
-    - Evaluate whether Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
+  By the end of this module, you can:
+    - Evaluate whether Azure DevTest Labs is appropriate for setting up virtual machine (VM) environments for your team.
     - Describe how the resource-creation features of DevTest Labs work to automate developer onboarding and the creation of deployment environments.
 prerequisites: | 
-  - Basic familiarity with Azure virtual machines
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+  - Basic familiarity with Microsoft Azure virtual machines
+iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
 levels:
 - beginner
 roles:

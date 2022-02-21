@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Implement Azure App Services on Kubernetes with Azure Arc
   description: This exercise steps through implementing Azure App Service on Kubernetes using Arc.
   ms.date: 05/01/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: mijacobs
+  ms.author: mijacobs
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

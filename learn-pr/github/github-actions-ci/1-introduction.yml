@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn how to implement continuous integration using GitHub Actions and workflows in your GitHub repositories.
   ms.date: 04/13/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

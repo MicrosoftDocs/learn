@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.7-exercise-write-code-that-uses-service-bus-topics
-title: Exercise - Write code that uses Service Bus topics
+title: Exercise - Send and receive messages by using a topic
 metadata:
-  title: Exercise - Write code that uses Service Bus topics
-  description: Exercise - Write code that uses Service Bus topics
+  title: Exercise - Send and receive messages by using a topic
+  description: Write code that sends messages to a topic and receives messages from a subscription to the topic.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

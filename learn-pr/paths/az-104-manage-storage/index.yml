@@ -5,8 +5,8 @@ metadata:
   description: "Learn how to manage storage in Azure and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
   ms.date: 08/06/2021
-  author: wwlpublish
-  ms.author: cynthist
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-104: Implement and manage storage in Azure"
@@ -52,8 +52,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). 
 prerequisites:   | 
   - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)

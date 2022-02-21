@@ -4,11 +4,10 @@ metadata:
   title: Apply an effect to a Xamarin.Forms element
   description: Apply an effect to a Xamarin.Forms element
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Apply an effect to a Xamarin.Forms element
 durationInMinutes: 7
 content: |

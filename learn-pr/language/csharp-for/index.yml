@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-for
 metadata:
-  title: Iterate through a code block using for statement in C#
+  title: 'Iterate through a code block using for statement in C#'
   description: Use the `for` iteration statement to loop a pre-set number of times and control the iteration process.
   ms.date: 09/27/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Iterate through a code block using for statement in C#

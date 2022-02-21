@@ -28,5 +28,5 @@ To follow along with the exercises in the module, you'll need:
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&preserve-view=true) tools installed locally.
+  - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools installed locally.
   - The latest [Azure PowerShell](/powershell/azure/install-az-ps?&azure-portal=true) version installed locally.

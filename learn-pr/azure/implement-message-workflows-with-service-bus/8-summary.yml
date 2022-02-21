@@ -3,10 +3,10 @@ uid: learn.implement-message-workflows-with-service-bus.8-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -16,32 +16,31 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following queues should you use if you need first-in-first-out order and support for transactions?"
+  - content: "Which of the following queues should you use if you need FIFO message order and support for transactions?"
     choices:
     - content: 'Azure Service Bus queues'
       isCorrect: true
-      explanation: "Azure Service Bus queues handle messages in the same order they're added and also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction will not be added."
+      explanation: "Correct. Azure Service Bus queues by default handle messages in the same order messages are added, and they also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction are not added."
     - content: 'Azure Storage queues'
       isCorrect: false
-      explanation: "Even though a queue is a first-in-first-out data structure, Azure Storage queues do not guarantee it."
+      explanation: "Incorrect. Even though a queue by default is a FIFO data structure, Azure Storage queues do not guarantee FIFO because other settings or system interruptions might preempt message order."
     
   - content: "Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus feature should you use?"
     choices:
-    - content: 'Queue'
+    - content: 'An Azure Service Bus queue.'
       isCorrect: false
-      explanation: "A queue can only have one destination component at a time, which means that each message in the queue is delivered to only one receiver."
-    - content: 'Topic'
+      explanation: "Incorrect. A queue can have only one destination component at a time, which means that each message in the queue is delivered to only one receiver."
+    - content: 'An Azure Service Bus topic.'
       isCorrect: true
-      explanation: "A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
+      explanation: "Correct. A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
 
-  - content: "True or false: You can add a message to an Azure Service Bus queue that is 20 MB in size."
+  - content: "True or false: You can add a message that's 20 MB in size to an Azure Service Bus queue."
     choices:
     - content: 'True'
       isCorrect: true
-      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
+      explanation: "Correct. If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
     - content: 'False'
       isCorrect: false
-      explanation: "If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
+      explanation: "Incorrect. If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
 
       
-

@@ -4,8 +4,8 @@ metadata:
   title: Create the RespondToSlackCommand Azure function
   description: Create a second endpoint which slack will call everytime someone executes the `\mojify` command.
   ms.date: 10/18/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create the RespondToSlackCommand Azure function

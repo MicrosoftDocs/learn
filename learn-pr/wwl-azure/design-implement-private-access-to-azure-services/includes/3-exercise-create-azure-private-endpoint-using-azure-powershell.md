@@ -359,7 +359,7 @@ In this section, you'll use the virtual machine you created in the previous step
     A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
 10. In the bastion connection to **myVM**, open Internet Explorer.
-11. Enter the url of your web app, **https://<your-webapp-name>.Azurewebsites.net**.
+11. Enter the url of your web app, **https://\<your-webapp-name\>.Azurewebsites.net**.
 
     -  You'll receive the default web app page if your application hasn't been deployed: 
     

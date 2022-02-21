@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Boards?
   description: Discover how Azure Boards can help you plan the work that needs to be done, and learn about the four processes you can choose from.
   ms.date: 05/20/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: kathrynee
+  ms.author: kaelli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

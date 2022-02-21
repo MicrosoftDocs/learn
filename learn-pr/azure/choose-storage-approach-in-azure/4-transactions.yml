@@ -4,8 +4,8 @@ metadata:
   title: Group multiple operations in a transaction
   description: Group multiple operations in a transaction
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Group multiple operations in a transaction
@@ -35,5 +35,3 @@ quiz:
     - content: "One order would be processed and use the in-store credit, and the other order would not be processed."
       isCorrect: true
       explanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
-
-

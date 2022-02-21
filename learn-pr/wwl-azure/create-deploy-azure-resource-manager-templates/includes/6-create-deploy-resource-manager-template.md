@@ -163,7 +163,7 @@ It's time to deploy the template. Follow the steps below, in the VS Code termina
 1. Use the `az deployment group create` command to deploy your template. The deployment will take a few minutes to complete, progress will be shown in the terminal.
 
     ```bash
-    az  group deployment create --resource-group az204-arm-rg --template-file azuredeploy.json --parameters azuredeploy.parameters.json
+    az  deployment group create --resource-group az204-arm-rg --template-file azuredeploy.json --parameters azuredeploy.parameters.json
     ```
 
 1. You can verify the deployment by running the command below. Replace `<myStorageAccount>` with the name you used earlier.

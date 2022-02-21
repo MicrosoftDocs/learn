@@ -4,11 +4,11 @@ In this module, we'll learn more about the building blocks of the Xamarin.Forms 
 
 The Xamarin.Forms app that was created from our "Blank App" template started with two classes: App and MainPage. The `.cs` files for these classes are actually "tucked under" the `App.xaml` and `MainPage.xaml` file listings in Solution Explorer.
 
-The .xaml files themselves are a useful way to define an applications user interface (UI) without using code. It's somewhat analogous to HTML -- a markup language to describe UI layout. There are advantages to using XAML and advantages to creating your UI in code.
+The .xaml files themselves are a useful way to define an applications user interface (UI) without using code. It's somewhat analogous to HTML--a markup language to describe UI layout. There are advantages to using XAML and advantages to creating your UI in code.
 
 ### Application class
 
-The `App` class represents our Xamarin.Forms application as a whole and inherits from `Xamarin.Forms.Application`. We'll recall from the last unit that it's the `App` class that is instantiated and loaded by the head projects. The constructor of the `App` class will, in turn, usually set its own `MainPage` property. It's this property that will control the first screen the user sees.
+The `App` class represents our Xamarin.Forms application as a whole and inherits from `Xamarin.Forms.Application`. We'll recall from the last unit that it's the `App` class that is instantiated and loaded by the head projects. The constructor of the `App` class will, in turn, set its own `MainPage` property. It's this property that will control the first screen the user sees.
 
 The `App` class also has:
 
@@ -18,11 +18,11 @@ The `App` class also has:
 
 ### Pages
 
-Pages are the root of the UI hierarchy in Xamarin.Forms. The solution we've seen so far included a class called `MainPage`. This class derives from `ContentPage`, which is the simplest and most common page type. A content page simply displays its contents. Xamarin.Forms has several other built-in page types, too, including the following:
+Pages are the root of the UI hierarchy in Xamarin.Forms. The solution we've seen so far included a class called `MainPage`. The `MainPage` class derives from `ContentPage`, which is the simplest and most common page type. A content page simply displays its contents. Xamarin.Forms has several other built-in page types, too, including the following:
 
-- `MasterDetailPage`: This hosts drawer type navigation as well as split views. It has two key properties, `Master` and `Detail`, each of which is assigned a `ContentPage`.
-- `NavigationPage`: This adds the familiar navigation bar to the top of the screen, but more importantly manages a *navigation stack*. This stack allows the user to navigate backward to previous screens.
-- `TabbedPage`: This is the root page used for tab navigation.
+- `FlyoutPage`: Manages two panes of information. A `Flyout` page that generally shows a list or menu, and a `Detail` page that shows a selected item from the flyout page.
+- `NavigationPage`: Adds the familiar navigation bar to the top of the screen, but more importantly manages a *navigation stack*. This stack allows the user to navigate backward to previous screens.
+- `TabbedPage`: The root page used for tab navigation.
 
 As you can see, the other page types are mostly for enabling different navigation patterns in multi-screen apps. We look at these patterns in another module.
 
@@ -52,7 +52,7 @@ Let's take a closer look at what this code produces, though. On iOS, we get a de
 
 ![Illustration showing how a Xamarin.Forms button is rendered as a native control at runtime, either an Android Android.Widget.Button or an iOS UIKit.UIButton.](../media/4-ButtonRenderTargets.png)
 
-It works this way because Xamarin.Forms doesn't draw any controls directly. Instead, there is a platform renderer for each control on each platform. So when we run on Android, the Android button renderer is invoked, and it creates a native button.
+It works this way because Xamarin.Forms doesn't draw any controls directly. Instead, there's a platform renderer for each control on each platform. So when we run on Android, the Android button renderer is invoked, and it creates a native button.
 
 We can also control the appearance of our controls by setting properties on the Xamarin.Forms object. The platform renderer performs all the necessary type conversions and translations for us. It also sets the property on the underlying native control whenever we change a Xamarin.Forms visual property.
 
@@ -62,7 +62,7 @@ Not all the native properties of a control are exposed by Xamarin.Forms. But the
 
 With pages and views defined, it might seem like we have everything we need to start creating a UI. However, let's say we add two controls to a page: an entry field and a button. In some UI frameworks, we'd assume those would flow top to bottom and left to right, and things like height, width, and line-breaks would be set with control properties.
 
-But in Xamarin.Forms, we use a more flexible system called layouts. When you choose a layout, you are choosing the rules by which your controls will be laid out.
+But in Xamarin.Forms, we use a more flexible system called layouts. When you choose a layout, you're choosing the rules by which your controls will be laid out.
 
 ![Illustration showing visual representations of the Xamarin.Forms layout types: StackLayout, AbsoluteLayout, RelativeLayout, Grid, and ScrollView.](../media/4-LayoutTypes.png)
 
@@ -71,12 +71,12 @@ These illustrations show some of the built-in layout types. We'll get to know th
 - StackLayout - Lays out controls in a top-to-bottom or left-to-right stack depending on an orientation property.
 - AbsoluteLayout - Lets us set exact coordinates for controls.
 - RelativeLayout - Lets us define relationships between multiple controls' sizes and shapes. For instance, `button1` should be 50% the size of `entry1` and should be 5 points below it.
-- Grid - Lays out its controls according to a column and row location we set. We can define the column and row sizes as well as spans, so grid layouts don't necessarily have a "checkerboard look" to them.
+- Grid - Lays out its controls according to a column and row location we set. We can define the column and row sizes and spans, so grid layouts don't necessarily have a "checkerboard look" to them.
 - ScrollView - Technically, this isn't considered a layout, since it only holds one child directly but it's very important to screen layouts. By default, all the other layouts will actually try to squeeze their contents, if necessary, to fit on a single screen. But if those other layouts are put inside a ScrollView, then the screen can scroll and squeezing the contents isn't necessary.
 
 We can also nest our layouts for even more flexibility.
 
-The only layout we need for our proof-of-concept is the `StackLayout`. To work with it, we will instantiate it, and make sure the orientation property is set as we need it to make the children flow top-to-bottom:
+The only layout we need for our proof-of-concept is the `StackLayout`. To work with it, we'll instantiate it, and make sure the orientation property is set as we need it to make the children flow top-to-bottom:
 
 ```csharp
 var layout = new StackLayout{

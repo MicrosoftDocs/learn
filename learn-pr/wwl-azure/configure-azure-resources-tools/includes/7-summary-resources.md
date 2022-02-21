@@ -14,7 +14,7 @@ You can learn more by reviewing the following.
  -  [Azure portal documentation](/azure/azure-portal/)
  -  [Azure Cloud Shell overview](/azure/cloud-shell/overview)
  -  [Azure PowerShell documentation](/powershell/azure)
- -  [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).
+ -  [Azure CLI Reference](/cli/azure/).
  -  [Learn - Manage services with the Azure portal](/learn/modules/tour-azure-portal/)
  -  [Learn - Introduction to PowerShell](/learn/modules/introduction-to-powershell/)
  -  [Learn - Automate Azure tasks using scripts with PowerShell](/learn/modules/automate-azure-tasks-with-powershell/)

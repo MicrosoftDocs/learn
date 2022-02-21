@@ -71,7 +71,7 @@ The Shared Image Gallery feature has multiple resource types:
 :::row-end:::
 
 
-## Image definitions<br>
+## Image definitions
 
 Image definitions are a logical grouping for versions of an image. The image definition holds information about why the image was created. An image definition is like a plan for all of the details around creating a specific image. You don't deploy a VM from an image definition, but from the image versions created from the definition.
 

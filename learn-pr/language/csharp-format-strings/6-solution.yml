@@ -5,8 +5,8 @@ metadata:
   title: Solution
   description: Review a solution to the coding challenge in this module.
   ms.date: 1/3/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

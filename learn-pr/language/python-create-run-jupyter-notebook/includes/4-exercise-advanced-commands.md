@@ -27,7 +27,7 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
    ```
 
    > [!TIP]
-   > If you're a new user of Python, you might need to install `numpy`, `matplotlib`, and other libraries not yet installed on your system. To do this, use an activated virtual environment, type `pip install numpy` in a code block, and run it. Do this for each library you need to install.
+   > If you're a new user of Python, you might need to install `numpy`, `matplotlib`, and other libraries not yet installed on your system. To install `numpy`, use an activated virtual environment, type `pip install numpy` in a code block, and run it. To install `matplotlib`, use an activated virtual environment, type `pip install matplotlib` in a code block, and run it. Follow this basic procedure for any other libraries you need to install.
    
    Of course, this data is a mockup of real data, using `numpy` to create an array of 100 integers between 1 and 10.
 

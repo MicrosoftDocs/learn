@@ -4,8 +4,8 @@ metadata:
   title: "Introduction to Azure Logic Apps"
   description: Learn how to evaluate Logic Apps as an automation choice for your organization using criteria for integration, performance, conditionals, and connectors.
   ms.date: 4/25/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW
