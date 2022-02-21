@@ -14,6 +14,10 @@ A typical process might be the following:
 1. They push these changes to the remote repository's main branch.
 1. In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
 
+The following diagram illustrates the process above.
+
+:::image type="content" source="../media/2-basic-process.png" alt-text="Diagram illustrating the process described above." border="false":::
+
 Suppose the changes that the team member made introduced a subtle bug. After the complete process runs, the bug is now in the main branch of the project. This is the branch that gets deployed to production. You might not discover it until you try to deploy it and get an error. Or, for other types of bugs, the deployment might succeed but cause subtle problems later.
 
 In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to your main branch. You now have changes on your main branch that are not completely finished. These probably should not be deployed to your production environment, because the work is not completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in your main branch, they might not be able to be deployed and used by your customers.
