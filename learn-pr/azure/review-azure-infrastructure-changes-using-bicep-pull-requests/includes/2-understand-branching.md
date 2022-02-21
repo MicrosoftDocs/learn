@@ -8,7 +8,7 @@ Your main branch is the source of truth for what gets deployed to your Azure env
 
 A typical process might be the following: 
 
-1. A team member clones your repository.
+1. A team member clones your shared repository.
 1. They make local changes on a branch in their own local copy of the repository.
 1. When they are finished with their changes, they merge these changes in their local repository's main branch.
 1. They push these changes to the remote repository's main branch.
@@ -52,7 +52,7 @@ Split up large pieces of work into multiple smaller pieces and create new featur
 
 When you work in this manner, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. For example, you might create a Bicep file that defines a storage account, but disable the storage account's deployment until you're done with all of the changes:
 
-:::code language="bicep" source="code/2-storage-condition.bicep" highlight="1, 4" :::
+:::code language="bicep" source="code/2-storage-condition.bicep" highlight="4" :::
 
 You can use parameters to specify different values for the `storageAccountReady` variable in different environments. For example, you might set the parameter value to `true` for your test environment, and `false` for your production environment, so that you can try out the new storage account in your test environment.
 
