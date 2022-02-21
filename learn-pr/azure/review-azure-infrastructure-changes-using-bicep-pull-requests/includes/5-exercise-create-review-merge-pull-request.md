@@ -83,7 +83,12 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-github-pull-request-review-comment.png" alt-text="Screenshot of GitHub showing the comment field. The Start a review button is highlighted.":::
 
-1. Select **Submit review**.
+   > [!TIP]
+   > GitHub doesn't let you approve your own pull requests. Here, you'll comment on your pull request but won't approve it. When you work with your own team's pull requests, this is the point at which you'd approve it to indicate you're happy for it to be merged.
+
+1. Select **Finish your review**.
+
+1. In the review panel that appears, select **Submit review**.
 
    :::image type="content" source="../media/5-github-pull-request-review-submit.png" alt-text="Screenshot of GitHub showing the Finish your review panel. The Submit review button is highlighted.":::
 
@@ -148,7 +153,17 @@ When you create or review a pull request, you can participate in a conversation 
 
 ## Complete the pull request
 
+::: zone pivot="github"
+
+Your website's development team has confirmed they're ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 Your pull request has been approved. Your website's development team has confirmed they're also ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
+
+::: zone-end
 
 ::: zone pivot="github"
 
@@ -162,7 +177,7 @@ Your pull request has been approved. Your website's development team has confirm
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
-1. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is sitll in progress. Select **Delete branch.**
+1. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is still in progress. Select **Delete branch.**
 
    :::image type="content" source="../media/5-github-pull-request-merge-delete.png" alt-text="Screenshot of GitHub showing the pull request. The Delete branch button is highlighted.":::
 
@@ -180,7 +195,7 @@ Your pull request has been approved. Your website's development team has confirm
 
    Your pull request is merged, and your new feature is now in the main branch of your repository.
 
-   Azure DevOps automatically deleted the feature branch when you merged the pull request. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is sitll in progress.
+   Azure DevOps automatically deleted the feature branch when you merged the pull request. It's a good practice to delete your feature branches when you're done with them. This helps you to avoid confusing team members in future about which work is still in progress.
 
 ::: zone-end
 

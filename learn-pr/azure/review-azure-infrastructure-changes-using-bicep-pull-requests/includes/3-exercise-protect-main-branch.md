@@ -7,8 +7,8 @@ During the process, you'll:
 ::: zone pivot="github"
 
 > [!div class="checklist"]
-> * Set up an Azure DevOps project for this module.
-> * Clone the project's repository to your computer.
+> * Set up a GitHub repository for this module.
+> * Clone the repository to your computer.
 > * Add branch protection to your repository's main branch.
 > * Create a local feature branch for your change.
 > * Try to merge your feature branch to main.
@@ -18,8 +18,8 @@ During the process, you'll:
 ::: zone pivot="azurerepos"
 
 > [!div class="checklist"]
-> * Set up a GitHub repository for this module.
-> * Clone the repository to your computer.
+> * Set up an Azure DevOps project for this module.
+> * Clone the project's repository to your computer.
 > * Add branch policies to your repository's main branch.
 > * Create a local feature branch for your change.
 > * Try to merge your feature branch to main.
@@ -267,7 +267,7 @@ git commit -m "Add orders queue and associated configuration"
 git push --set-upstream origin add-orders-queue
 ```
 
-The feature branch is pushed to your remote repository.
+The feature branch is pushed to a new branch, also named *add-orders-queue*, in your remote repository.
 
 ## Try to merge the feature branch to main
 

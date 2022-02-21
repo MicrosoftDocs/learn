@@ -10,7 +10,7 @@ A *pull request* is a *request* from you, the developer of a feature, to the mai
 
 ### Pull requests and branch protections
 
-When you configure branch protections, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull reuqests. Or, you can specify that every pull request must be reviewed by a certain number of people.
+When you configure branch protections, you can require that the owners of your code need to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you can specify that every pull request must be reviewed by a certain number of people.
 
 ::: zone-end
 
@@ -18,7 +18,7 @@ When you configure branch protections, you can require that specific people, or 
 
 ### Pull requests and branch policies
 
-When you configure branch policies, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull reuqests. Or, you can specify that every pull request must be reviewed by a certain number of people.
+When you configure branch policies, you can require that specific people, or a group of people, need to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you can specify that every pull request must be reviewed by a certain number of people.
 
 You can also require that each pull request is linked to a work item. By using this configuration, you ensure you have the ability to trace from a work item that contains a feature request, to the code that implements the change, and even through to the deployment to your production environment.
 
@@ -26,7 +26,17 @@ You can also require that each pull request is linked to a work item. By using t
 
 ### Create a pull request
 
+::: zone pivot="github"
+
+You can create a pull request by using the GitHub web interface. You select the source branch, where you've made your changes, and the target branch, which is usually the main branch of the repository.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 You can create a pull request by using the Azure DevOps web interface. You select the source branch, where you've made your changes, and the target branch, which is usually the main branch of the repository.
+
+::: zone-end
 
 When you create a pull request, you need to give it a name. It's a good practice to make your pull requests' names clear and understandable. This practice helps your team members to understand the context of what they're being asked to review. If they have different areas of expertise, a good name can help them to find pull requests that they can contribute meaningful feedback for, and skip those that aren't relevant. Also, pull request names often become part of your Git repository's history, so it's a good idea to make them understandable when somebody looks back at the history.
 
@@ -55,4 +65,14 @@ When you review Bicep code, there are some key elements to look for. These inclu
 
 After the pull request is approved, it can be *completed*, which means the contents of the pull request are merged into the main branch.
 
+::: zone pivot="github"
+
+In some teams, the author of the pull request should also complete it. This process helps to ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. Your team should decide who merges pull requests and when.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 In some teams, the author of the pull request should also complete it. This process helps to ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. Azure DevOps even enables you to automatically complete a pull request when its approval criteria are met. Your team should decide who merges pull requests and when.
+
+::: zone-end
