@@ -106,7 +106,7 @@ For example, you might want to build a lifestyle business or a company that you 
 
 Finally, recognize that investors are often themselves successful founders who exited one or more of their own companies. They might want to actively support other founders by reinvesting the wealth they've generated. This is especially true in more mature startup ecosystems that have large numbers of successful serial entrepreneurs.
 
-## What investors are looking for
+## What investors look for
 
 When an investor considers your company as an investment prospect, they're essentially trying to assess risk versus rate of return. In this context, the following indicators of *failure* are a good proxy for risk. The *success* indicators are a good proxy for rate of return. Investors will essentially score your company by considering each indicator in the following checklists.
 
@@ -140,7 +140,7 @@ Some other factors that investors consider when they make investment decisions i
   - Good governance practices, such as regular board meetings, even if prior to the investment the founders are the only directors.
   - An employee stock option program, if you have employees, to ensure maximum alignment of interests and retention of key personnel.
 
-## Investors are looking for outliers
+## Investors look for outliers
 
 Many early-stage investors see thousands of opportunities a year. They typically invest in only 1 to 2 percent of all the companies they see.
 
@@ -182,7 +182,7 @@ Research has also shown that out of every 10 angel investments, on average two w
 
 Similarly, out of every 10 investments, on average two will make a small positive return of two times to four times the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
 
-If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five have failed, generating zero return. Two have generated a one-time return, and two more have generated a two-time and a four-time return.
+If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five failed, which generated zero return. Two generated a one-time return, and two more generated a two-time and a four-time return.
 
 We can see that Melanie's portfolio return from these nine investments is $800,000.
 
@@ -200,17 +200,17 @@ We can see that Melanie's portfolio return from these nine investments is $800,0
 |Company 10|$100,000|Unknown|
 |Total|$1,000,000|$800,000|
 
-The preceding table tells us that company number 10 must be the one that makes Melanie's investment portfolio a success overall. It needs to make up for the startups that failed and those companies that made a small return.
+The table tells us that company number 10 must be the one that makes Melanie's investment portfolio a success overall. It needs to make up for the startups that failed and those companies that made a small return.
 
-How well does company number 10 need to do? We can estimate this amount by working backwards from an expected portfolio rate of return. We noted earlier that seed-stage investors are looking for at least a 30 percent annual rate of return across their startup investment portfolio.
+How well does company number 10 need to do? We can estimate this amount by working backwards from an expected portfolio rate of return. We noted earlier that seed-stage investors look for at least a 30 percent annual rate of return across their startup investment portfolio.
 
-If Melanie has invested $1 million and holds these investments for seven years, Melanie will need to realize a $5 million return on her $1 million invested. A simple [Internal Rate of Return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation will confirm this return.
+If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
 
 A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could have made a much safer return by investing in lower-risk assets.
 
 If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 
-That's a return of 4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
+That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
 
 Melanie's portfolio would now look like the following table:
 
