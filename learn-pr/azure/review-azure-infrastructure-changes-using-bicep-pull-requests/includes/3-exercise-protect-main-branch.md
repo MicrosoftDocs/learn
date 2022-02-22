@@ -65,8 +65,8 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 
 > [!CAUTION]
 > **Note to reviewers:** The instructions below don't work yet. Instead, please follow these instructions:
-> 1. Download [this zip file](https://microsoft-my.sharepoint.com/:u:/p/jodowns/ETGdBebkHPdFieKE_gJp_YoBziOsdI9_5iJRwYJBuoibRg?e=uQc3pX).
-> 1. Open the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net).
+> 1. Download [this zip file](https://microsoft-my.sharepoint.com/:u:/p/jodowns/ETGdBebkHPdFieKE_gJp_YoBziOsdI9_5iJRwYJBuoibRg?e=uQc3pX?azure-portal=true).
+> 1. Open the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net?azure-portal=true).
 > 1. Sign in.
 > 1. Select **Choose template**, then select the **Private** tab, and select the path to the zip file you downloaded.
 > 1. Enter the other project information, and then select **Create project**.
