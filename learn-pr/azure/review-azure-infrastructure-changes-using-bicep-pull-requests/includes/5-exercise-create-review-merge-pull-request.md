@@ -26,7 +26,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. On the pull request creation page, notice that GitHub automatically used the Git commit message as the pull request title.
 
-   Enter the following description:
+   Update the description to the following text:
 
    *This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.*
 
@@ -48,7 +48,7 @@ Because you can't push changes directly to your repository's *main* branch, you 
 
 1. On the pull request creation page, notice that GitHub automatically used the Git commit message as the pull request title.
 
-   Enter the following description:
+   Update the description to the following text:
 
    *This PR adds a new Azure Storage queue for processing orders, and updates the website configuration to include the storage account and queue information.*
 
