@@ -15,7 +15,7 @@ In this step, we're going to create a VM.
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select **Windows Server 2019 VM** from the list of *Popular offers* Marketplace entities. If not, search for *Windows Server 2019 DataCenter* using the search box on the top. The **Create a virtual machine** pane appears.
+1. Select **Windows Server 2019 Datacenter** from the list of *Popular products* Marketplace entities. If not, search for *Windows Server 2019 Datacenter* using the search box on the top. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -57,7 +57,7 @@ After our VM is deployed, we can confirm the caching status of the OS disk with 
 
 From the dropdown list, change the **Host caching** value for the OS disk to **Read-only**, and from the top menu bar, select **Save**.
 
-This update can take some time. The reason is that changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM is also restarted. When the operation completes, you'll get a notification saying the VM disks have been updated. See the *Notifications* icon in the top taskbar of the portal for confirmation.
+This update can take some time, since changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you'll get a notification saying the VM disks have been updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
 
 After completion, the OS disk cache type is set to **Read-only**.
 
@@ -65,7 +65,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 ## Add a data disk to the VM and set caching type
 
-1. Under **Data disks**, select **Cache and attach a new disk**.
+1. Under **Data disks**, select **Create and attach a new disk**.
 
 1. In the **Disk name** field, enter *fotoshareVM-data*.
 
