@@ -101,7 +101,7 @@ Much like the backend service, we will need a deployment file for the front end 
         spec:
           containers:
           - name: pizzafrontend
-            image: [YOUR DOCKER USER NAME]/pizzafrontend
+            image: [YOUR DOCKER USER NAME]/pizzafrontend:latest
             ports:
             - containerPort: 80
             env:
