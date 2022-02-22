@@ -3,7 +3,7 @@ uid: learn.startups.fundraising.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between various types of investors, and due diligence research.
+  description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between types of investors, and due diligence research.
   ms.date: 02/11/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. An angel investor is a wealthy individual who invests their own money. VC funds are professional investment firms that generally invest money that's provided by institutional investors."
     - content: "Angel investors generally don't expect to receive a financial return."
       isCorrect: false
-      explanation: "Incorrect. Like any other type of investor, angel investors look for a healthy rate of return in all their investments."
+      explanation: "Incorrect. Like any other type of investor, angel investors look for a healthy rate of return on all their investments."
 
   - content: "If you had an idea for a startup and had yet to launch a minimal viable product (MVP), your most likely source of external funding would be:"
     choices:
