@@ -4,7 +4,7 @@ In this unit, we're going to cover three of the most common types of startup inv
 
 It's reasonably common for startup founders to raise their first funding round from friends and family members.
 
-The motivations of these investors vary. They typically range from supporting the entrepreneur, for example, the investor is your uncle and wants to help you get started, to trying to generate a return from their investment by *getting in early*.
+The motivations of these investors vary. Typically, they want to support the entrepreneur. For example, the investor might be your uncle who wants to help you get started. They also might want to try to generate a return from their investment by *getting in early*.
 
 It's worth noting that friends and family are generally the only investors who will fund you when all you have is an idea for a company.
 

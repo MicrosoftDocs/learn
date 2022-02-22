@@ -1,6 +1,6 @@
 At its most basic, raising money from investors means to sell a shareholding in your company in return for cash. The investor obtains an economic interest in your company. They also gain some degree of control by virtue of the rights attached to their shareholding.
 
-## Bootstrapping versus externally funded
+## Bootstrapping vs. externally funded
 
 The difference between a bootstrapped company and an externally funded one can be seen in the following two charts, which show net cash flow over time.
 
@@ -178,11 +178,11 @@ Let's look at Melanie's investment portfolio and assume from the outset that hal
 |Company 10|$100,000|Unknown|
 |Total|$1,000,000|$0|
 
-Research has also shown that out of every 10 angel investments, on average two will make a 1-time return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
+Research has also shown that out of every 10 angel investments, on average two will make a one-time return, which is better than zero but not a successful outcome. This scenario sometimes occurs because the founders know the company isn't working out. They're able to do an orderly windup and return the investors' capital to them before the company completely fails.
 
-Similarly, out of every 10 investments, on average two will make a small positive return of 2 times to 4 times the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
+Similarly, out of every 10 investments, on average two will make a small positive return of two times to four times the amount invested. This scenario can occur when the company is *acquihired*, meaning a small acquisition coupled with hiring the team that started the company. Again, this return is better than zero, but it's not the outcome that Melanie is seeking.
 
-If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five have failed, generating zero return. Two have generated a 1-time return, and two more have generated a 2-time and a 4-time return.
+If we now look at Melanie's investment portfolio, we can populate 9 of the 10 investment outcomes. Five have failed, generating zero return. Two have generated a one-time return, and two more have generated a two-time and a four-time return.
 
 We can see that Melanie's portfolio return from these nine investments is $800,000.
 
@@ -210,7 +210,7 @@ A $5 million return might sound like a phenomenal outcome. That's $4 million mor
 
 If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 
-That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
+That's a return of 4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
 
 Melanie's portfolio would now look like the following table:
 
