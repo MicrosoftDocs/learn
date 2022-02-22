@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/17/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ quiz:
     - content: "Declare a variable inside the stored procedure and then view it after you run the stored procedure"
       isCorrect: false
       explanation: "Incorrect. You cannot view values in variables inside the stored procedure."
-  - content: "Where can you us a table-valued function?"
+  - content: "Where can you use a table-valued function?"
     choices:
     - content: "Only inside stored procedures"
       isCorrect: false
