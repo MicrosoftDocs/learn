@@ -40,7 +40,17 @@ You can create a pull request by using the Azure DevOps web interface. You selec
 
 When you create a pull request, you need to give it a name. It's a good practice to make your pull requests' names clear and understandable. This practice helps your team members to understand the context of what they're being asked to review. If they have different areas of expertise, a good name can help them to find pull requests that they can contribute meaningful feedback for, and skip those that aren't relevant. Also, pull request names often become part of your Git repository's history, so it's a good idea to make them understandable when somebody looks back at the history.
 
+::: zone pivot="github"
+
+You can also give pull requests a description. You can mention specific people, or refer to issues, in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
+
+::: zone-end
+
+::: zone pivot="azurerepos"
+
 You can also give pull requests a description. You can mention specific people, or refer to work items, in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
+
+::: zone-end
 
 When you create a pull request, you can also invite people to review the changes.
 
