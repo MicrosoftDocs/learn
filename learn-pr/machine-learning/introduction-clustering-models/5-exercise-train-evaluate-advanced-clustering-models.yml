@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
-notebook: notebooks/5-exercise-train-evaluate-advanced-models.ipynb
+notebook: notebooks/5-exercise-train-evaluate-advanced-clustering-models.ipynb
