@@ -8,7 +8,7 @@ This journey is summarized in the following table, which shows the different bin
 | [Read data with input bindings](../4-read-data-with-input-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_ |
 | [Write data with output bindings](../6-write-data-with-output-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_<br/>_Azure Cosmos DB_<br/>_Azure Queue Storage_ |
 
-You can apply the approaches you have learned here to add and test bindings in your functions. Here are a few interesting ideas to get more practice with bindings and to build on what you have learned here.
+You can apply the approaches you've learned here to add and test bindings in your functions. Here are a few interesting ideas to get more practice with bindings and to build on what you have learned here.
 
 * Create another function to read from Blob storage and other input bindings that we haven't used in this module.
 
@@ -24,7 +24,7 @@ If you're interested in doing serverless integrations like these with visual wor
 
 ## Additional resources
 
-Although this is not intended to be an exhaustive list, the following are some resources related to the topics covered in this module that you might find interesting:
+Although this isn't intended to be an exhaustive list, the following are some resources related to the topics covered in this module that you might find interesting:
 
 * [Azure Functions documentation](/azure/azure-functions/)
 * [Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/)

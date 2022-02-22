@@ -3,7 +3,7 @@ Now that you have deployed the YOLO model to the edge device, you can deploy the
 Make sure that you have the followings:
 - Prediction endpoint that has form http://{module-name}:80/score
 - tag.txt file downloaded that has object labels
-- RTSP URL that has form rtsp://rtspsim:554/media/<video-name>
+- RTSP URL that has form rtsp://rtspsim:554/media/\<video-name\>
 
 ## Connect to web application
 In this exercise, you'll connect to the Vision on Edge solution web application. Firstly, you'll add a camera that streams out the video.
@@ -24,7 +24,7 @@ In this exercise, you'll connect to the Vision on Edge solution web application.
 2. Navigate to the Cameras page and add a camera.
 3. Fill in the required information:
    - Camera name: Give a name to your camera
-   - RTSP URL: Enter URL that has form of rtsp://rtspsim:554/media/<video-name>
+   - RTSP URL: Enter URL that has form of rtsp://rtspsim:554/media/\<video-name\>
    - Location: Create a location or choose an existing one
 
    [![The illustration shows how to add a camera.](../media/add-camera.png)](../media/add-camera.png#lightbox)
