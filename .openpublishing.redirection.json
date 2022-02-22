@@ -11439,6 +11439,11 @@
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principles.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/9-design-service-principals",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/understand-azure-defender-cloud-workload-protection/10-understand-azure-defender-for-kubernetes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-azure-defender-cloud-workload-protection/",
+      "redirect_document_id": false
     }
   ]
 }
