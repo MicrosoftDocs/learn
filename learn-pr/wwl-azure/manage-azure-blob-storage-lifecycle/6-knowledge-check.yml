@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which access tier is considered to be offline and cannot be read or modified?"
+  - content: "Which access tier is considered to be offline and can't be read or modified?"
     choices:
     - content: "Cool"
       isCorrect: false
