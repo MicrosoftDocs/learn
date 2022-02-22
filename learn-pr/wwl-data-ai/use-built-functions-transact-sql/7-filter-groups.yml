@@ -4,12 +4,13 @@ title: Filter groups with HAVING
 metadata:
   title: Filter groups with HAVING
   description: "Filter groups with HAVING"
-  ms.date: 06/30/2021
+  ms.date: 02/21/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-filter-groups.md)]

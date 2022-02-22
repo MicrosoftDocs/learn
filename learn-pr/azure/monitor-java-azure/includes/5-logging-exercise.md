@@ -45,7 +45,7 @@ Next, we'll create an error, to show the value of how you can quickly debug and 
     az spring-cloud app logs --name customers-service -f
     ```
 
-2. Next, in a web browser, open a new window and trigger a warning with the following command: (Replace the "<spring-cloud-name>" with the name of your spring cloud instance)
+2. Next, in a web browser, open a new window and trigger a warning with the following command: (Replace the "\<spring-cloud-name\>" with the name of your spring cloud instance)
 
     ```html
     https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/George

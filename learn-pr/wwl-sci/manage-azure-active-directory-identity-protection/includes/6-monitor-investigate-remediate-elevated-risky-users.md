@@ -264,9 +264,9 @@ To authenticate, send a post request to `https://login.microsoft.com` with the f
 
 - resource: `https://graph.microsoft.com`
 
-- client_id: <your client ID>
+- client_id: \<your client ID\>
 
-- client_secret: <your key>
+- client_secret: \<your key\>
 
 If successful, this request returns an authentication token.To call the API, create a header with the following parameter:
 
