@@ -249,6 +249,8 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    :::code language="bicep" source="code/3-appservice-final.bicep" range="23-42" highlight="7-18" :::
 
+## Commit and push your feature branch
+
 ::: zone pivot="github"
 
 Commit your changes, and push them to your GitHub repository, by running the following commands in the Visual Studio Code terminal:
