@@ -2,7 +2,7 @@ You've built up a significant number of Bicep modules, and now you need to share
 
 In this module, you learned how to create your own registry, and how to publish modules so you can share them with your organization.
 
-By using registries, you can support the sharing and reuse of Bicep code throughout your organization, along with ensuring that the modules that other people consume will meet your organization's requirements. Your colleagues can then create their own Bicep templates by using your modules, reducing the time it takes to define their infrastructure while also increasing the quality of their deployments.
+By using registries, you can support the sharing and reuse of Bicep code throughout your organization, along with ensuring that the modules that other people consume will meet your organization's requirements. Your colleagues can then create their own Bicep templates by putting together your modules. These templates can reduce the time that your colleagues take to define their infrastructure while increasing the quality of their deployments.
 
 ## Related links
 
