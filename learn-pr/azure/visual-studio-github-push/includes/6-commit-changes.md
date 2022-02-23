@@ -1,6 +1,6 @@
 The core part of any Git workflow is modifying files and committing the changes in those files. While you're working on your project, you should commit early and often. In this unit, you'll learn how the **Git Changes** window helps you with managing your changed files. 
 
-The **Git Changes** window is a side panel in Visual Studio. It shows the most common Git commands for easy access while you're coding. Keeping this tool window docked next to your code along with Solution Explorer makes it just a click away. 
+The **Git Changes** window is a side panel in Visual Studio. It shows the most common Git commands for easy access while you're coding. Keeping this tool window docked next to your code along with Solution Explorer makes it just a click away.
 
 :::image type="content" source="../media/6-git-changes.png" alt-text="Screenshot of the Git Changes window.":::
 
@@ -10,7 +10,7 @@ The top part of the **Git Changes** window is the status section. It shows what 
 
 Selecting the branch picker lets you switch branches or create a new branch. Next to the branch picker are **Fetch**, **Pull**, and **Push** buttons. These buttons help keep your local branch in sync with your remote branch.
 
-Under the branch picker, is the number of outgoing and incoming commits. Whenever you make commits, you'll notice the first number increment higher to indicate commits that you might want to push to your remote branch. And whenever you fetch, you can see if there are any unpulled commits from the remote tracking branch. Selecting the link takes you to the **Git Repository** window, where you can see the details of the outgoing and incoming commits, along with the branch's local history.
+Under the branch picker, is the number of outgoing and incoming commits. Whenever you make commits, you'll notice the first number increment higher to indicate commits that you might want to push to your remote branch. And whenever you fetch, you can see if there are any commits not pulled in from the remote tracking branch. Selecting the link takes you to the **Git Repository** window, where you can see the details of the outgoing and incoming commits, along with the branch's local history.
 
 :::image type="content" source="../media/6-status-section.png" alt-text="Screenshot of the Git Changes window, with the status section highlighted.":::
 
@@ -22,7 +22,7 @@ Any file that you add, delete, or modify will appear in the **Changes** section 
 - **D** for deleted file
 - **M** for modified file
 
-There's also a quick action button to undo the change.
+There's also a quick action button to undo the change made.
 
 Selecting a modified file opens the Visual Studio *diff* view. This view shows the difference in the previous version and the current modified version of the file. Git compares the changes that you made in the file to the last commit of the file. Select an added or deleted file to open the file in the document well.
 
