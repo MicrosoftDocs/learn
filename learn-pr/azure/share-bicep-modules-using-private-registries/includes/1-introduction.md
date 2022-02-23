@@ -4,17 +4,17 @@ When you work with Bicep code in your own organization, you often create reusabl
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously worked with one of your toy product development teams to create a set of Bicep modules. You created a module to deploy a website, and another module to deploy a content delivery network.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've previously worked with one of your toy product development teams to create a set of Bicep modules. You created a module to deploy a website, and another module to deploy a content delivery network (CDN).
 
-Now, members of another team have asked you if they can reuse the same modules for their own deployments. They're building a new toy dog, and they need to deploy a website and content delivery network to help promote the product on social media.
+Now, members of another team have asked you if they can reuse the same modules for their own deployments. They're building a new toy dog, and they need to deploy a website and CDN to help promote the product on social media.
 
 You considered sending the modules to each team by email, but you're worried about how you'll control access and manage different versions. You want to find a way to share the modules throughout your organization, to make it easier for any team to reuse them for future deployments.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram that shows the content delivery network and website modules being published to a registry and used by multiple other deployments." border="false":::
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram that shows the C D N and website modules being published to a registry and used by multiple other deployments." border="false":::
 
 ## What will we be doing?
 
-In this module, you'll learn about private registries for sharing modules. You'll find out how create your own private registry, and how you publish modules to it. You'll also learn how to consume modules from a private registry.
+In this module, you'll learn about private registries for sharing modules. You'll find out how to create your own private registry, and how you publish modules to it. You'll also learn how to consume modules from a private registry.
 
 ## What is the main goal?
 
@@ -27,7 +27,7 @@ You should be familiar with using:
 - Bicep, including how to use modules and parameters, and how to deploy Bicep files to Azure.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-To work through the exercises, you'll also need the following installed locally:
+To work through the exercises, you also need the following items installed locally:
 
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
 - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).

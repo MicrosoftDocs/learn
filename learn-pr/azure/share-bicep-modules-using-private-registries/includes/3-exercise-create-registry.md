@@ -1,11 +1,11 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-Before you can publish the Bicep modules for the content delivery network and website, you need to create a registry for your organization. You'll publish the shared modules to the registry. Other teams can then create deployments that include the shared modules. 
+Before you can publish the Bicep modules for the CDN and website, you need to create a registry for your organization. You'll publish the shared modules to the registry. Other teams can then create deployments that include the shared modules. 
 
-In this exercise, you create a private module registry for your toy company to use. During the process, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Deploy a new private registry.
+> * Deploy a new private registry for your toy company to use.
 > * Connect to your registry to verify that it was created successfully.
 
 ::: zone pivot="cli"
@@ -22,7 +22,7 @@ To deploy resources to Azure, you need to sign in to your Azure account from the
 
 ::: zone pivot="powershell"
 
-To deploy resources to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+To deploy resources to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
 [!INCLUDE [Terminal instructions (PowerShell)](../../includes/azure-template-exercise-terminal-powershell.md)]
 

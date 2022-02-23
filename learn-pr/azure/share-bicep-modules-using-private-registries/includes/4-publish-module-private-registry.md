@@ -49,7 +49,7 @@ Here's a versioning policy that often works well:
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
 > [!TIP]
-> Consider the users of your module, and make sure you think about what they expect will happen. If someone uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to avoid surprising your users.
+> Consider the users of your module, and be sure to think about what they expect will happen. If someone uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to avoid surprising your users.
 
 ## Publish your module
 
@@ -75,7 +75,7 @@ bicep publish `
 
 ::: zone-end
 
-The publish operation performs the same validation steps that happen when you build or deploy a Bicep file, including:
+The publish operation performs the same validation steps that happen when you build or deploy a Bicep file. These steps include:
 
 - Checking that your code doesn't have any syntactical errors.
 - Verifying that you're specifying valid resource definitions.

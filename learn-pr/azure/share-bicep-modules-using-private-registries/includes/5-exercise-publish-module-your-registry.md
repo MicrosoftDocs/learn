@@ -1,8 +1,8 @@
-You've created a private registry for your toy company to use. In this exercise, you publish two modules to your private registry.
+You've created a private registry for your toy company to use. In this exercise, you will:
 
 > [!div class="checklist"]
 > * Create a module for the website resources.
-> * Create another module for the resources in the content delivery network.
+> * Create another module for the resources in the CDN.
 > * Publish the modules to your registry.
 > * List the modules in the registry.
 
@@ -24,7 +24,7 @@ You previously created a module that deploys a website. Here, you save the modul
 
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> on Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you save the file. For example, you might want to create a *templates* folder to save it in.
 
-## Create a module for a content delivery network
+## Create a module for a CDN
 
 Similar to the previous steps, you save a precreated module file so that you can publish it soon.
 

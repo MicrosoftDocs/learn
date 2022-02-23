@@ -1,9 +1,9 @@
-In the previous exercise, you published the content delivery network and website modules to your toy company's registry. Now, you want to show the team that's developing the toy dog how to use the modules for their own deployment.
+In the previous exercise, you published the CDN and website modules to your toy company's registry. Now, you want to show the team that's developing the toy dog how to use the modules for their own deployment.
 
-In this exercise, you create a Bicep file that includes modules from your private registry. During the process, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Create a Bicep file.
+> * Create a Bicep file that includes modules from your private registry.
 > * Add references to the modules in the registry.
 > * Build and inspect the Bicep file to understand how the module restore process works.
 > * Switch to using a registry alias.
@@ -29,7 +29,7 @@ In this exercise, you create a Bicep file that includes modules from your privat
 
    Notice that Bicep shows red squiggly lines under the module identifier when you start typing, but then the squiggly lines go away. This behavior happens because the Bicep extension for Visual Studio Code reads the module from the registry and saves it to your local file system.
 
-1. Below the module that you just created, use the following code to add the content delivery network module from your registry. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
+1. Below the module that you just created, use the following code to add the CDN module from your registry. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ::: code language="bicep" source="code/7-main-no-alias.bicep" range="22-28" :::
 

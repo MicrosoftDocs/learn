@@ -14,7 +14,7 @@ You can save an Azure Resource Manager template (ARM template) as a *template sp
 
 Modules stored in Bicep registries and template specs are both ways of adding reusability to your deployment code. But they're optimized for different things:
 
-- Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template. You can deploy template specs by using the Azure portal by using tooling like the Azure CLI and Azure PowerShell. But if you've created a template spec, Bicep also enables you to use it as a module if you want.
+- Bicep modules are intended to be combined into a larger deployment. Template specs are designed to be deployable as a complete template. You can deploy template specs by using the Azure portal, along with tooling like the Azure CLI and Azure PowerShell. But if you've created a template spec, Bicep also enables you to use it as a module if you want.
 - Template specs are stored in Azure as resources. Modules in registries are stored as *container artifacts*.
 - Template specs provide access control capabilities. When you work with a private registry, you need to control the access to your modules in other ways. You'll learn more about this in a later unit.
 
@@ -31,7 +31,7 @@ Currently, Bicep supports Azure Container Registry. Azure Container Registry pro
 Soon, you'll learn how to publish modules to a registry.
 
 > [!TIP]
-> In Azure Container Registry, a module is called a *repository*. Don't confuse this with a Git repository. The terms are the same but the meaning is different.
+> In Azure Container Registry, a module is called a *repository*. Don't confuse this with a Git repository. The terms are the same, but the meaning is different.
 
 ## Access control
 
