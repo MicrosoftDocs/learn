@@ -6,7 +6,7 @@ When you work with Bicep, you often use similar resources repeatedly. Also, it's
 
 One of the benefits of using modules is that you can share them with others, and you can benefit from the modules that others share with you. For example, you might invest time in building and testing a Bicep file to deploy a set of resources that you often use together. When you share your file as a Bicep module, your colleagues can use the module to quickly deploy the same resources.
 
-A Bicep *registry* is the place where modules are stored and shared. Anyone can create their own registry.
+A Bicep *registry* is the place where modules are stored and shared. Anyone can create their own registry. In the future, Microsoft plans to support publishing more types of Bicep content to registries, in addition to modules.
 
 ## How do registries compare to template specs?
 
@@ -26,7 +26,9 @@ Bicep registries are built on a technology called *container registries*.
 
 If your organization uses Kubernetes or another containerization technology, you might already be familiar with registries. However, you don't need to use containers or Kubernetes to work with Bicep. Registries simply provide a generic and convenient way to store and share artifacts. Think of them as being analogous to storage accounts.
 
-Currently, Bicep supports Azure Container Registry. Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. You'll get links to more information in the summary unit.
+Currently, Bicep supports Azure Container Registry. In the future, Microsoft plans to support other registries, such as Docker Hub. 
+
+Azure Container Registry provides multiple service tiers, with different capabilities and limits. When you provision your own registry, you'll need to select the tier that suits your requirements. You'll get links to more information in the summary unit.
 
 Soon, you'll learn how to publish modules to a registry.
 
@@ -37,6 +39,6 @@ Soon, you'll learn how to publish modules to a registry.
 
 Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including Azure Active Directory (Azure AD) and keys that you issue to individual users. 
 
-When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you likely don't need to sign in again. You'll see how this works in the next exercise.
+When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you likely don't need to sign in again. You'll see how this works in the next exercise. When you use a Bicep module registry from a pipeline, you'll use a special type of identity called a *service principal*. 
 
-When you use a Bicep module registry from a pipeline, you'll use a special type of identity called a *service principal*. You can separately control who has permission to write modules to your registry and who has permission to read modules.
+You can separately control who has permission to write modules to your registry and who has permission to read modules.
