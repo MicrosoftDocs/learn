@@ -16,7 +16,7 @@ For example, suppose you have a logic app that needs to send an email based on c
 
 ## Actions
 
-Logic apps provide built-in triggers and actions. Yoy can use logic apps to orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
+Logic apps provide built-in triggers and actions. You can use logic apps to orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
 
 Here are some of the many built-in actions:
 
