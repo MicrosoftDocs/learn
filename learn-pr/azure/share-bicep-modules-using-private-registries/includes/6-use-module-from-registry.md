@@ -54,6 +54,6 @@ module myModule 'br/MyRegistryWithPath:my-module:v1' = {
 
 ## Build your Bicep file
 
-When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically as part of the deployment process. Bicep embeds all of the modules that you refer to into the transpiled JSON file for the ARM template.
+When you're ready to deploy your Bicep file, you deploy it just like you normally do. Bicep downloads the module from the registry automatically as part of the deployment process. Bicep embeds all of the modules that you refer to into the transpiled ARM template, which is a JSON file.
 
 You can also separate the module download process from the build by using the `bicep restore` command. You can then use the `bicep build` command with the `--no-restore` command-line switch to stop the build process from downloading the module. Generally, though, you don't need to do this. Just let Bicep download the modules automatically.
