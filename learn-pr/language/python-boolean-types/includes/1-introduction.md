@@ -2,9 +2,9 @@ Booleans are a common type in Python. Their value can only ever be one of two th
 
 ## Scenario: Print warning messages
 
-Suppose you're creating a program that will alert people worldwide that a large, fast asteroid is zooming toward Earth. If the asteroid is close enough to earth to pose a danger, you want to print a warning message on people's devices. If there's no danger, you want to let everyone know that, so they can go on with their day. To be able to provide these messages, you would have to find a way to reason whether a condition is true or false. 
+Suppose you're creating a program that identify if a piece of space debris is a danger to a spacecraft. If the object is larger than a specified size and will come within range of the spacecraft, a maneuver needs to be performed to avoid a collision. Otherwise, the spacecraft can stay on course.
 
-In this module, you'll use Boolean keywords and operators to write several types of conditional expressions.
+In this module, you'll use Boolean keywords and operators to write several types of conditional expressions, and determine the spacecraft's reaction.
 
 ## What will you learn?
 
