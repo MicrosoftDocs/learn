@@ -1,4 +1,4 @@
-In the previous exercise, you published the CDN and website modules to your toy company's registry. Now, you want to show the team that's developing the toy dog how to use the modules for their own deployment.
+In the previous exercise, you published the CDN and website modules to your toy company's registry. Now, you want to show the team that's developing the toy dog how to use the modules for its own deployment.
 
 In this exercise, you will:
 

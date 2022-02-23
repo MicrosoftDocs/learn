@@ -15,13 +15,13 @@ module myModule 'br:myregistry.azurecr.io/modulepath/modulename:moduleversion' =
 
 Notice that the module definition is similar to that of a local module, but with one important difference. Instead of specifying the path to a Bicep file on your file system, you include the path to your module in your registry.
 
-After you've added a reference to the module, Visual Studio Code tries to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code authoring assistance as you work.
+After you've added a reference to the module, Visual Studio Code tries to automatically download the module from the registry. When the module is downloaded, the Bicep extension for Visual Studio Code gives you IntelliSense and other code-authoring assistance as you work.
 
 ## Aliases 
 
 You can use a *registry alias* to simplify your module definitions. Instead of specifying the registry name every time you define a module, you use its alias. Aliases help you in a few ways:
 
-- Aliases can keep your Bicep file tidier and help you avoid typing the full name of the registry repeatedly.
+- They can keep your Bicep file tidier and help you avoid typing the full name of the registry repeatedly.
 - If you change to a new registry in the future, you can update the alias instead of updating every reference to it.
 - Some organizations need to use different registries for different situations, like for development and production environments. You can switch the registry that an alias refers to by modifying a configuration file. The change then applies to all Bicep files in the folder.
 
