@@ -35,7 +35,7 @@ low_samples.head()
 ```
 
 | Index | ID | Mission | Type | Subtype	weight (kg) | Pristine (%) | Remaining (kg) |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | 11 | 10017 | Apollo11 | Basalt | Ilmenite | 0.973 | 43.71 | 0.425298 |
 | 14 | 10020 | Apollo11 | Basalt | Ilmenite | 0.425 | 27.88 | 0.118490 |
 | 15 | 10021 | Apollo11 | Breccia | Regolith | 0.250 | 30.21 | 0.075525 |

@@ -4,12 +4,12 @@ Digital technologies create new opportunities for businesses across the globe by
 Microsoft enables impactful digital transformation across four pillars: 
 
 
-|  |  |  |
-|---------|---------|---------|
-|![Icon for Empower employees shows a wrench and screwdriver](../media/empower-employees.png)|**Empower employees**|Help your employees achieve more by creating a work environment that’s intelligent, flexible, and secure.|
-|![Icon for Engage customers shows a pair of dialog balloons](../media/engage-customers.png)|**Engage customers**|Tailor individual customer experiences by harnessing data and drawing actionable insights.|
-|![Icon for Optimize operations shows a set of gears](../media/optimize-operations.png)|**Optimize operations**|Accelerate the responsiveness of your business, improve service levels, and reduce costs with intelligent processes.|
-|![Icon for Transform products shows a simple hypercube](../media/transform-products.png)|**Transform products**|Find and capture the best new opportunities by using data as a strategic asset and shifting from hindsight to foresight.|
+| Pillars | Advantages |
+|:--:|---|
+|![Icon for Empower employees shows a wrench and screwdriver](../media/empower-employees.png)</BR>**Empower employees**|Help your employees achieve more by creating a work environment that’s intelligent, flexible, and secure.|
+|![Icon for Engage customers shows a pair of dialog balloons](../media/engage-customers.png)</BR>**Engage customers**|Tailor individual customer experiences by harnessing data and drawing actionable insights.|
+|![Icon for Optimize operations shows a set of gears](../media/optimize-operations.png)</BR>**Optimize operations**|Accelerate the responsiveness of your business, improve service levels, and reduce costs with intelligent processes.|
+|![Icon for Transform products shows a simple hypercube](../media/transform-products.png)</BR>**Transform products**|Find and capture the best new opportunities by using data as a strategic asset and shifting from hindsight to foresight.|
 
 ## Digital feedback loop
 

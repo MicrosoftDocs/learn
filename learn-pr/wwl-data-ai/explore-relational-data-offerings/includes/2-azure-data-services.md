@@ -13,11 +13,11 @@ Before delving into Azure Data Services, you need to understand some common term
 
 **SaaS** is short for *Software-as-a-Service*. SaaS services are typically specific software packages that are installed and run on virtual hardware in the cloud. SaaS packages are typically hosted applications rather than more generalized software such as a DBMS. Common SaaS packages available on Azure include Microsoft 365 (formerly Office 365).
 
-|      | Example               | Includes                                                                        |
-|------|-----------------------|---------------------------------------------------------------------------------|
-| IaaS | Azure virtual network | Servers, storage, networking, and physical data center.                         |
-| PaaS | Azure SQL Databases   | IaaS plus database management (or other server systems), and operating systems. |
-| SaaS | Office 365            | PaaS plus apps.                                                                 |
+|  | Example | Includes |
+|---|---|---|
+| **IaaS** | Azure virtual network | Servers, storage, networking, and physical data center. |
+| **PaaS** | Azure SQL Databases | IaaS plus database management (or other server systems), and operating systems. |
+| **SaaS** | Office 365  | PaaS plus apps. |
 
 :::image type="content" source="../media/2-saas-paas-iaas.png" alt-text="IaaS, PaaS, and Saas":::
 
