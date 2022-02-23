@@ -54,7 +54,7 @@ When you're using the Azure portal, select **+ Create a resource** and search fo
 | **Region** | The Azure location in which to create the circuit. |
 | **Name** | A meaningful name for your circuit, without any white space or special characters. |
 
-![Create a circuit basics tab by using the Azure portal](../media/3-create-circuit-basics.png)
+:::image type="content" source="../media/3-create-circuit-basics.png" alt-text="Create a circuit basics tab by using the Azure portal.":::
 
 #### Configuration tab
 
@@ -69,13 +69,13 @@ When you're using the Azure portal, select **+ Create a resource** and search fo
 | **Billing model** | Select **Unlimited** to pay a flat fee regardless of usage. Or select **Metered** to pay according to the volume of traffic that enters and exits the circuit. |
 | **Allow classic operations** | Select **Yes** allows classic virtual networks to connect to the circuit. Otherwise, select **No**. |
 
-![Creating a circuit configuration tab by using the Azure portal.](../media/3-create-circuit-configuration.png)
+:::image type="content" source="../media/3-create-circuit-configuration.png" alt-text="Creating a circuit configuration tab by using the Azure portal.":::
 
 Circuit creation can take several minutes. After the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network.
 
 You send the provider the value in the **Service key** field to enable them to configure the connection. This can take several days. You can revisit this page to check the provider status.
 
-![Provisioning a circuit by using the Azure portal.](../media/3-provision-circuit.png)
+:::image type="content" source="../media/3-provision-circuit.png" alt-text="Provisioning a circuit by using the Azure portal.":::
 
 ### Create a peering configuration
 
@@ -107,14 +107,14 @@ You use Microsoft peering to connect to Office 365 and its associated services. 
 
 After the ExpressRoute circuit has been established, Azure private peering is configured for your circuit, and the BGP session between your network and Microsoft is active, you can enable connectivity from your on-premises network to Azure.
 
-Before you can connect to a private circuit, you must create an Azure virtual network gateway by using a subnet on one of your Azure virtual networks. The virtual network gateway provides the entry point to network traffic that enters from your on-premises network. It directs incoming traffic through the virtual network to your Azure resources. 
+Before you can connect to a private circuit, you must create an Azure virtual network gateway by using a subnet on one of your Azure virtual networks. The virtual network gateway provides the entry point to network traffic that enters from your on-premises network. It directs incoming traffic through the virtual network to your Azure resources.
 
 You can configure network security groups and firewall rules to control the traffic that's routed from your on-premises network. You can also block requests from unauthorized addresses in your on-premises network.
 
 > [!NOTE]
 > You must create the virtual network gateway by using the type **ExpressRoute** and not **VPN**.
 >
-> ![Creating a virtual network gateway with the gateway type set to ExpressRoute.](../media/3-create-virtual-network-gateway.png)
+> :::image type="content" source="../media/3-create-virtual-network-gateway.png" alt-text="Creating a virtual network gateway with the gateway type set to ExpressRoute.":::
 
 Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geographical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
 
