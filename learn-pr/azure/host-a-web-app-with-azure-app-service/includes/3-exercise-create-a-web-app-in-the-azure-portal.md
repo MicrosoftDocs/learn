@@ -1,4 +1,4 @@
-In this unit, you will use the Azure portal to create a web app.
+In this unit, you'll use the Azure portal to create a web app.
 
 ## Create a web app
 
@@ -19,7 +19,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
     | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
@@ -29,7 +29,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | Free F1 | The pricing tier of the service plan being created. SKU and size determines the performance characteristics of the virtual servers that power your app and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Sku and size | Free F1 | The pricing tier of the service plan being created. SKU and size determine the performance characteristics of the virtual servers that power your app and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-dotnet.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -50,7 +50,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
     | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
@@ -61,7 +61,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. SKU and size determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, then select **Apply**. |
+    | Sku and size | F1 | The pricing tier of the service plan being created. SKU and size determine the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-java.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -82,7 +82,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
     | Resource Group | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
@@ -92,7 +92,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-node.png" alt-text="Screenshot showing web app creation details.":::
 
@@ -113,7 +113,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Setting | Value | Details |
     |---|---|---|
     | **Project Details** |
-    | Subscription | Concierge Subscription | The web app you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating it within the wizard). |
+    | Subscription | Concierge Subscription | The web app you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you're creating it within the wizard). |
     | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Instance Details** |
     | Name | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
@@ -123,7 +123,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Region | Central US | The geographical region from which your app will be hosted. |
     | **App Service Plan** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
+    | Sku and size | F1 | The pricing tier of the service plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features to which it has access. To select the F1 tier, select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
 
     :::image type="content" source="../media/3-create-web-app-python.png" alt-text="Screenshot showing web app creation details.":::
 
