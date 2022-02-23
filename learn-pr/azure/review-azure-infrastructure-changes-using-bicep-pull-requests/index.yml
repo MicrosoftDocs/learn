@@ -33,7 +33,7 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - [Git](https://git-scm.com/download?azure-portal=true).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/review-azure-infrastructure-changes-using-bicep-pull-requests.svg
 levels:
   - intermediate
 roles:
