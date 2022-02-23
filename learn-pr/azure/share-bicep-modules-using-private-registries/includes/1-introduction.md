@@ -1,6 +1,6 @@
 Bicep modules enable you to create composable, reusable files that define a set of related resources. You then use those modules in your deployment templates. 
 
-When you work with Bicep code in your own organization, you often create reusable modules that your colleagues would benefit from. These modules can create resources in a way that fits your organization's requirements. For example, the modules can use your defined naming conventions and configuring resources so that they meet your security requirements. Private Bicep registries provide an easy way for you to share these modules within your organization.
+When you work with Bicep code in your own organization, you often create reusable modules that your colleagues would benefit from. These modules can create resources in a way that fits your organization's requirements. For example, the modules can use your defined naming conventions and configure your resources so that they meet your security requirements. Private Bicep registries provide an easy way for you to share these modules within your organization.
 
 ## Example scenario
 
