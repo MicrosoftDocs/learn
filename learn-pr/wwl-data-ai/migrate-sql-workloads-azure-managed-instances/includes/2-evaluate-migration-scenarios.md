@@ -122,17 +122,17 @@ Create an Azure SQL Database managed instance by following these steps:
     |  | Suggested value |
     |---|---|
     | **Subscription** | Your subscription. |
-    |**managed instance name**|Any valid name.||
-    |**managed instance admin login**|Any valid username. Don't use "serveradmin" because that's a reserved server-level role.|
-    |**Password**|Any password longer than 16 characters and meeting the complexity requirements.|
-    |**Time zone**|The time zone to be observed by your managed instance.|
-    |**Collation**|The collation you want to use for the managed instance. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
-    |**Location**|The Azure region in which you want to create the managed instance.|
-    |**Virtual network**|Select either "Create new virtual network" or a valid virtual network and subnet.|
-    |**Enable public endpoint**|Check this option to enable a public endpoint, which then helps clients outside Azure to access the database. |
-    |**Allow access from**| Select from Azure services, the internet, or no access.|
-    |**Connection type**|Choose between a Proxy and a Redirect connection type.|
-    |**Resource group**|A new or existing resource group.|
+    | **managed instance name** | Any valid name. |
+    | **managed instance admin login** | Any valid username. Don't use "serveradmin" because that's a reserved server-level role. |
+    | **Password** | Any password longer than 16 characters and meeting the complexity requirements. |
+    | **Time zone** | The time zone to be observed by your managed instance. |
+    | **Collation** | The collation you want to use for the managed instance. If you migrate databases from SQL Server, check the source collation by using SELECT SERVERPROPERTY(N'Collation') and use that value. |
+    | **Location** | The Azure region in which you want to create the managed instance. |
+    | **Virtual network** | Select either "Create new virtual network" or a valid virtual network and subnet. |
+    | **Enable public endpoint** | Check this option to enable a public endpoint, which then helps clients outside Azure to access the database. |
+    | **Allow access from** | Select from Azure services, the internet, or no access. |
+    | **Connection type** | Choose between a Proxy and a Redirect connection type. |
+    | **Resource group** | A new or existing resource group. |
 
     ![Configuring managed instance performance in the Azure portal](../media/2-configure-managed-instance-performance.png)
 
