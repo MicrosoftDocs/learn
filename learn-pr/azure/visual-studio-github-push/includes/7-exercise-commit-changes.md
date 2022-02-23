@@ -2,7 +2,7 @@ One of the key aspects of any Git workflow is making commits to your branch. Com
 
 ## Commit a change
 
-1. Open **Program.cs** by selecting the file from Solution Explorer. 
+1. Open **Program.cs** by selecting the file from Solution Explorer.
 
     :::image type="content" source="../media/7-solution-explorer.png" alt-text="Screenshot of Solution Explorer with the program.cs file highlighted.":::
 
