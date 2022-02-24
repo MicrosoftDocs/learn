@@ -10,7 +10,7 @@ Here, you'll learn the key configuration settings of an Azure DevTest Labs resou
 
 Azure DevTest Labs is a service that enables users to efficiently self-manage virtual machines (VMs) and Platform as a service (PaaS) resources, without waiting for approvals. Azure DevTest Labs creates labs consisting of pre-configured base images or Azure Resource Manager (ARM) templates.
 
-When you create a lab in Azure DevTest Labs, you can specify which types of resources that lab users can create. For instance, you can define a development lab that includes VMs with specific versions of Linux or Windows. In addition, developers should have local administrator permissions. Developers can use the lab to quickly provision a new developer environment that is also supported by your IT organization.
+When you create a lab in Azure DevTest Labs, you can specify which types of resources that lab users can create. For instance, you can define a development lab that includes VMs with specific versions of Linux or Windows. Developers can use the lab to quickly provision a new developer environment that is also supported by your IT organization.
 
 As users have a self-service process for creating resources, you can control costs by specifying policies and limits in the lab. For example, developers can free choose any type of VM but are limited to one VM per user, whereas users of the testing lab can only select 2-CPU core VMs.
 
