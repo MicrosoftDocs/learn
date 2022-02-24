@@ -38,6 +38,7 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-arc
 units:
 - learn.azure.intro-to-arc-enabled-data-services.1-introduction
 - learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing

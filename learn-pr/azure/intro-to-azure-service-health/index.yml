@@ -36,6 +36,7 @@ roles:
 
 products:
 - azure
+- azure-service-health
 
 units:
 - learn.intro-to-azure-service-health.introduction
