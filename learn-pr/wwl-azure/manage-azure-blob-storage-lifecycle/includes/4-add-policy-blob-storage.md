@@ -15,55 +15,56 @@ There are two ways to add a policy through the Azure portal: Azure portal List v
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Select **All resources** and then select your storage account.
+1. Select **All resources** and then select your storage account.
 
-3. Under **Blob Service**, select **Lifecycle management** to view or change your rules.
+1. Under **Data management**, select **Lifecycle management** to view or change your rules.
 
-4. Select the **List view** tab.
+1. Select the **List view** tab.
 
-5. Select **Add rule** and then fill out the **Action set** form fields. In the following example, blobs are moved to cool storage if they haven't been modified for 30 days.
+1. Select **Add rule** and then fill out the **Action set** form fields. In the following example, blobs are moved to cool storage if they haven't been modified for 30 days.
 
-6. Select **Filter set** to add an optional filter. Then, select Browse to specify a container and folder by which to filter.
+1. Select **Filter set** to add an optional filter. Then, select Browse to specify a container and folder by which to filter.
 
-7. Select **Review + add** to review the policy settings.
+1. Select **Review + add** to review the policy settings.
 
-8. Select **Add** to add the new policy.
+1. Select **Add** to add the new policy.
 
 ### Azure portal Code view
 
 1. Follow the first three steps above in the **List view** section. 
 
-2. Select the **Code view** tab. The following JSON is an example of a policy that can be pasted into the **Code view** tab.
+1. Select the **Code view** tab. The following JSON is an example of a policy that  moves a block blob whose name begins with *log* to the cool tier if it has been more than 30 days since the blob was modified.
 
     ```json
     {
-    "rules": [
+      "rules": [
         {
-        "name": "ruleFoo",
-        "enabled": true,
-        "type": "Lifecycle",
-        "definition": {
-            "filters": {
-            "blobTypes": [ "blockBlob" ],
-            "prefixMatch": [ "container1/foo" ]
-            },
+          "enabled": true,
+          "name": "move-to-cool",
+          "type": "Lifecycle",
+          "definition": {
             "actions": {
-            "baseBlob": {
-                "tierToCool": { "daysAfterModificationGreaterThan": 30 },
-                "tierToArchive": { "daysAfterModificationGreaterThan": 90 },
-                "delete": { "daysAfterModificationGreaterThan": 2555 }
+              "baseBlob": {
+                "tierToCool": {
+                  "daysAfterModificationGreaterThan": 30
+                }
+              }
             },
-            "snapshot": {
-                "delete": { "daysAfterCreationGreaterThan": 90 }
+            "filters": {
+              "blobTypes": [
+                "blockBlob"
+              ],
+              "prefixMatch": [
+                "sample-container/log"
+              ]
             }
-            }
+          }
         }
-        }
-    ]
+      ]
     }
     ```
 
-3. Select **Save**.
+1. Select **Save**.
 
 ## Azure CLI
 

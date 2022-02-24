@@ -12,9 +12,9 @@ For example, the *Desktop development with C++* workload includes Visual Studio 
 
 ### Visual Studio workloads for ASP.NET Core development and publishing
 
-Visual Studio 2019 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include the templates for your ASP.NET Core site and provides the ability to connect and deploy your site to Azure.
+Visual Studio 2022 has two workloads that you need to create, publish, and deploy your website to Azure. These workloads include the templates for your ASP.NET Core site and provides the ability to connect and deploy your site to Azure.
 
-With Visual Studio 2019 installed, you need to make sure you have the following Visual Studio workloads installed:
+With Visual Studio 2022 installed, you need to make sure you have the following Visual Studio workloads installed:
 
 - **ASP.NET and web development**: The web development workload in Visual Studio is designed to maximize your productivity in developing web applications using ASP.NET and standards-based technologies like HTML and JavaScript.
 

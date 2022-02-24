@@ -12,13 +12,13 @@ Azure chain functions can have multiple types of input. However, not all types s
 
 - **Azure Table storage** - You can read data and work with Azure Table storage.
 
-A full listing of supported bindings is available <a href="https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings" data-linktype="external" target="az-portal">here<span class="docon docon-navigate-external" aria-hidden="true"></span></a>
+A full listing of supported bindings is available [here](/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings)
 
-To create a binding as an input, you must define `direction` as `in`. Other parameters for each type of binding varies.
+To create a binding as an input, you must define `direction` as `in`. The parameters for each type of binding may vary.
 
 ## What is a binding expression?
 
-A binding expression is specialized text in function.json, function parameters, or code that is evaluated when the function is invoked, to yield a value. For example, if you have a Service Bus Queue binding, you could use a binding expression to obtain the name of the queue from App Settings.
+A binding expression is specialized text in *function.json*, function parameters, or code that is evaluated when the function is invoked, to yield a value. For example, if you have a Service Bus Queue binding, you could use a binding expression to obtain the name of the queue from App Settings.
 
 ### Types of binding expressions
 

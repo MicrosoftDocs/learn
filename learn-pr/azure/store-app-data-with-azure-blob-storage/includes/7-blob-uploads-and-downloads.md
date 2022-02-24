@@ -1,12 +1,12 @@
-To interact with individual blobs in Blob Storage, use a `BlobClient` object.  You will get a `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` in which the blob is located. `BlobClient` has methods to upload, download, and manage individual blobs in Blob Storage.
+To interact with individual blobs in Blob Storage, use a `BlobClient` object. You can get a `BlobClient` by requesting it with the blob's name from the `BlobContainerClient` in which the blob is located. `BlobClient` has methods to upload, download, and manage individual blobs in Blob Storage.
 
 ## Getting a BlobClient object
 
 ::: zone pivot="csharp"
 
-To get a `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob; that is upload, download, or manage the blob in Blob Storage.
+To get a `BlobClient` by name, call the `GetBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob. A `BlobClient` object allows you to interact with the blob by uploading, downloading, or managing the blob in Blob Storage.
 
-Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity.  We recommend using these async implementations whenever possible in your application.
+Moving data to and from a blob is a network operation that takes time. The Azure Storage SDK for .NET provides asynchronous implementation of all methods that require network activity. We recommend using these async implementations whenever possible in your application.
 
 We also recommend using streams instead of in-memory structures like byte arrays or strings when you're working with large data objects. This method avoids buffering the full content in memory before sending it to the target. ASP.NET Core supports reading and writing streams from requests and responses.
 
@@ -14,7 +14,7 @@ We also recommend using streams instead of in-memory structures like byte arrays
 
 ::: zone pivot="java"
 
-To get an `BlobClient` by name, call the `getBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob.  A `BlobClient` object allows you to interact with the blob; that is upload, download or manage the blob in Blob Storage.
+To get an `BlobClient` by name, call the `getBlobClient` methods on the `BlobContainerClient` that contains the blob with the name of the blob. A `BlobClient` object allows you to interact with the blob by uploading, downloading, or managing the blob in Blob Storage.
 
 A recommendation when working with large data objects is to use streams instead of in-memory structures like byte arrays or strings. This avoids buffering the full content in memory before sending it to the target.
 
@@ -47,13 +47,13 @@ blobClient.upload(inputStream, contentLength);
 
 ## Exercise
 
-Let's finish your app by adding upload and download code, then deploy it to Azure App Service for testing.
+Let's finish your app by adding the upload and download code, then deploy it to Azure App Service for testing.
 
 ### Upload
 
 ::: zone pivot="csharp"
 
-- To upload a blob, you'll implement the `BlobStorage.Save` method.  First, you will get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you will use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
+- To upload a blob, you'll implement the `BlobStorage.Save` method. First, you'll get a `BlobClient` object that represents the blob by calling `GetBlobClient` on a `BlobContainerClient`. Then, you'll use the `UploadAsync` method on the `BlobClient` to save the `Stream` of data passed to this method up to Blob Storage.
 
     In the editor, in `BlobStorage.cs`, replace `Save` with the following code. Use CTRL + S to save your work.
 
@@ -80,7 +80,7 @@ Let's finish your app by adding upload and download code, then deploy it to Azur
 
 ::: zone pivot="java"
 
-To upload a blob, you'll implement the `BlobStorage.save` method.  First, you will get a `BlobClient` object that represents the blob by calling `getBlobClient` on a `BlobContainerClient`. Then, you will use the `upload` method on the `BlobClient` to save the `InputStream` of data passed to this method up to Blob Storage.
+To upload a blob, you'll implement the `BlobStorage.save` method. First, you'll get a `BlobClient` object that represents the blob by calling `getBlobClient` on a `BlobContainerClient`. Then, you'll use the `upload` method on the `BlobClient` to save the `InputStream` of data passed to this method up to Blob Storage.
 
 In the editor, in `BlobStorage.java`, replace `save` with the following code.
 
@@ -97,7 +97,7 @@ public void save(String name, InputStream inputStream, long contentLength) {
 
 ::: zone pivot="csharp"
 
-To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream, which can be used by ASP.NET Core to stream the file to the browser.
+To download a file, the `OpenReadAsync` method on the `BlobClient` object is returned. This method returns a `Stream`, meaning that your code doesn't need to load all of the bytes from Blob Storage at once&mdash;you just need to return a reference to the blob stream, which can be used by ASP.NET Core to stream the file to the browser.
 
 - Replace `Load` with this code and save your work using CTRL + S.
 
@@ -120,7 +120,7 @@ To download a file, the `OpenReadAsync` method on the `BlobClient` object is ret
 
 ::: zone pivot="java"
 
-To download a file, use the `openInputStream` method on the `BlobClient`. This method returns an `InputStream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once &mdash; you just need to return a reference to the blob stream, which can be used by `IndexBean` to stream the content to the browser.
+To download a file, use the `openInputStream` method on the `BlobClient`. This method returns an `InputStream`, meaning that your code doesn't need load all of the bytes from Blob Storage at once&mdash;you just need to return a reference to the blob stream, which can be used by `IndexBean` to stream the content to the browser.
 
 Replace `read` with this code and save your work.
 
@@ -170,7 +170,7 @@ public InputStream read(String name) {
 1. Now, you'll deploy your app. The following commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service.
 
     > [!NOTE]
-    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` to change directory to this location. 
+    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` directory before running the following commands. You can use `cd mslearn-store-data-in-azure/store-app-data-with-azure-blob-storage/src/start` to change directory to this location. 
 
     ```azurecli
     dotnet publish -o pub
@@ -264,7 +264,7 @@ Your app is finished, so let's deploy it and see it work. We'll use Maven Plugin
 1. Now, you'll deploy your app. The following command will build the app into `ROOT.war`, and deploy the WAR file to App Service. The Maven Plugin for Azure App Service will automatically provision resources at first deployment attempt.
 
     > [!NOTE]
-    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands.  You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location. 
+    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands. You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location.
 
     ```console
     mvn clean package azure-webapp:deploy
