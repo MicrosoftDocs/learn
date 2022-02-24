@@ -8,11 +8,11 @@ To master data engineering, you'll need to learn a new set of tools, architectur
 
 As a data engineer you'll *extract* raw data from a structured or unstructured data pool and migrate it to a staging data repository. Because the data source might have a different structure than the target destination, you'll transform the data from the source schema to the destination schema. This process is called *transformation*. You'll then *load* the transformed data into the data warehouse. Together, these steps form a process called extract, transform, and load (ETL). 
 
-A disadvantage of the ETL approach is that the transformation stage can take a long time. This stage can potentially tie up source system resources.
+A disadvantage of the ETL approach is that the transformation stage can take a long time. This stage can potentially tie up source system resources. This process is typically used for ingesting data from an on-premises database to an on-premises data warehouse.
 
 An alternative approach is extract, load, and transform (ELT). In ELT, the data is immediately extracted and loaded into a large data repository such as Azure Cosmos DB or Azure Data Lake Storage. This change in process reduces the resource contention on source systems. Data engineers can begin transforming the data as soon as the load is complete. 
 
-ELT also has more architectural flexibility to support multiple transformations. For example, how the marketing department needs to transform the data can be different than how the operations department needs to transform that same data.
+ELT also has more architectural flexibility to support multiple transformations. For example, how the marketing department needs to transform the data can be different than how the operations department needs to transform that same data. This process is typically used for ingesting data from an on-premises database into the cloud.
 
 ## Move from implementing to provisioning servers
 
