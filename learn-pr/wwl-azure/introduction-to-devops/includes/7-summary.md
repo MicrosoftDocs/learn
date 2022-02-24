@@ -1,4 +1,4 @@
-This module explores the key areas that organizations must apply to start their DevOps transformation Journey, changing the team's mindset, and defining timelines and goals.
+This module explored the key areas that organizations must apply to start their DevOps transformation Journey, changing the team's mindset, and defining timelines and goals.
 
 You learned how to describe the benefits and usage of:
 
