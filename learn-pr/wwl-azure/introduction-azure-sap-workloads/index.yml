@@ -23,6 +23,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-sap
 units:
 - learn.wwl.introduction-azure-sap-workloads.introduction
 - learn.wwl.introduction-azure-sap-workloads.azure-compute-sap-workloads
