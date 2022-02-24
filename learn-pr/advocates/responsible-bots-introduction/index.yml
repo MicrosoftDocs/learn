@@ -24,6 +24,7 @@ roles:
 - student
 products:
 - azure
+- azure-cognitive-services
 prerequisites: |
   - None
 
