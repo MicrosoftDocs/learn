@@ -33,4 +33,4 @@ Your Alpine Ski House web app is up and running, but now you need to show it to 
 
 Once you've published your changes, Visual Studio will open the site in your browser. You should now see your new messages on the home and privacy pages.
 
-Congratulations, you have successfully updated your web app from within Visual Studio 2019.
+Congratulations, you have successfully updated your web app from within Visual Studio 2022.
