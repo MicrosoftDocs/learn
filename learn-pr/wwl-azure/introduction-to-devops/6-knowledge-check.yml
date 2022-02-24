@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -15,19 +15,19 @@ durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices best describes DevOps?"
     choices:
     - content: "DevOps is the role of who manages source control, pipelines, and monitor environments to continue delivering value to the software project."
       isCorrect: false
-      explanation: "Incorrect. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.\""
+      explanation: "Incorrect. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
     - content: "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
       isCorrect: true
-      explanation: "Correct. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.\""
+      explanation: "Correct. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
     - content: "DevOps is the new process of creating continuous delivery and continuous integration for software projects."
       isCorrect: false
-      explanation: "Incorrect. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.\""
+      explanation: "Incorrect. According to Donovan Brown, \"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
   - content: "Which of the following choices drives the ongoing merging and testing of code that leads to finding defects early?"
     choices:
     - content: "Continuous Integration."
