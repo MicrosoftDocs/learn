@@ -90,7 +90,7 @@ Even if you're a sole founder, it's still useful to capture these thoughts and d
 
 ## Worksheet
 
-Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet. Use it as a discussion-starter with your cofounders (or if you're a sole founder, with your friends or family).
+Download and complete the [Founder Alignment Exercise](https://foundershubcontent.z13.web.core.windows.net/1_EXERCISE1%20-%20Founder%20alignment%20exercise.pdf?azure-portal=true) worksheet. Use it to start discussions with your cofounders (or if you're a sole founder, with your friends or family).
 
 :::image type="content" source="../media/founder-alignment-exercise.png" alt-text="Image of a worksheet that outlines points to consider before pursuing a startup.":::
 
