@@ -86,7 +86,7 @@ When you publish a transact offer to the commercial marketplace, invoicing, coll
 - Evaluating changes in your company's operational costs as you process sales through the commercial marketplace grow
 
 > [!Note]
-> When you sell your solution through the commercial marketplace, Microsoft charges a 3% service fee as described in the **[Microsoft Publisher Agreement](/legal/marketplace/msft-publisher-agreement)**. Microsoft reduces this service fee for certain products that meet **[Co-sell program requirements](/azure/marketplace/marketplace-co-sell)**.
+> When you sell your solution through the commercial marketplace, Microsoft charges a 3% service fee as described in the **[Microsoft Publisher Agreement](/legal/marketplace/msft-publisher-agreement)**. Microsoft reduces this service fee for certain products that meet **[Co-sell program requirements](/partner-center/co-sell-overview)**.
 
 ## Summary
 

@@ -35,7 +35,7 @@ quiz:
       explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in a VM?"
 
 # Did I get this block question 2
-  - content: "The process of mapping instances from the virtual cloud to the physical infrastructure is called <italic>cloud cartography</italic>. Assuming that you're an IaaS provider, which of the following will protect an attacker from mapping your service?"
+  - content: "The process of mapping instances from the virtual cloud to the physical infrastructure is called cloud cartography. Assuming that you're an IaaS provider, which of the following will protect an attacker from mapping your service?"
     choices:
     - content: "Statically allocating private IPs (used for communication within the cloud network)"
       isCorrect: false

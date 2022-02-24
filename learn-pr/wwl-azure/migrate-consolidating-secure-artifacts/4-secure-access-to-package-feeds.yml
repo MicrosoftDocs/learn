@@ -4,13 +4,12 @@ title: Secure access to package feeds
 metadata:
   title: Secure access to package feeds
   description: "Secure access to package feeds"
-  ms.date: 12/02/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |

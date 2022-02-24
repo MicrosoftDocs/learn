@@ -37,7 +37,6 @@ Azure compute services, namely virtual machines (IaaS) and cloud services (PaaS)
 
 You can connect more than one virtual network to the private peering domain. You can visit the [Azure Subscription and Service Limits, Quotas, and Constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits) page for up-to-date information on limits.
 
-To watch a demonstration of configuring private peering, see [Azure ExpressRoute - How to set up Azure private peering for your ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-set-up-Azure-private-peering-for-your-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 ## Configure Microsoft peering
 
@@ -45,7 +44,6 @@ Microsoft 365 was created to be accessed securely and reliably via the Internet.
 
 Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering. You can enable bidirectional connectivity between your WAN and Microsoft cloud services through the Microsoft peering routing domain. You must connect to Microsoft cloud services only over public IP addresses that are owned by you or your connectivity provider and you must adhere to all the defined rules.
 
-To watch a demonstration of configuring Microsoft peering, see [Azure ExpressRoute - How to set up Microsoft peering for your ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-set-up-Microsoft-peering-for-your-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 ## Configure route filters for Microsoft Peering
 

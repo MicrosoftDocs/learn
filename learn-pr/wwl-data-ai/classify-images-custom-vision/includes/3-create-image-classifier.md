@@ -119,16 +119,12 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     Get the *prediction URL* from the dialog box in your Custom Vision project. 
 
-    >[!NOTE]
+   >[!NOTE]
     >Remember, you reviewed the *prediction URL* after you published the image classification model. To find the *prediction URL*, navigate to the **Performance** tab in your project, then click on **Prediction URL** (if the screen is compressed, you may just see a globe icon). A dialogue box will appear. Copy the url for **If you have an image URL**. Paste it into the code editor, replacing **YOUR_PREDICTION_URL**. 
 
+    Using the same dialog box, get the *prediction key*. Copy the prediction key displayed after *Set Prediction-Key Header to*. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value. 
+    
     ![Screenshot of the prediction URL.](../media/find-prediction-url.png)
-
-    Now, get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
-
-    ![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
-
-    Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
     After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
 

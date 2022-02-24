@@ -187,17 +187,17 @@ You can specify the following next hop types when creating a user-defined route:
 
 Here is an example where you have a virtual network that includes three subnets.
 
- -  The subnets are Private, DMZ, and Public. In the DMZ subnet, there is a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.
- -  You want to ensure all traffic from the Public subnet goes through the NVA to the Private subnet.
+ -  The subnets are Frontend, DMZ, and Backend. In the DMZ subnet, there is a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.
+ -  You want to ensure all traffic from the Frontend subnet goes through the NVA to the Backend subnet.
 
-:::image type="content" source="../media/route-example-49d53f28.png" alt-text="Image":::
+:::image type="content" source="../media/route-example.png" alt-text="Virtual network diagram with routing table assigned.":::
 
 
 ### Create a Routing Table
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
-:::image type="content" source="../media/create-routing-table-328ecc82.png" alt-text="Screenshot of the Create route table page. BGP route propagation is Enabled.":::
+:::image type="content" source="../media/create-routing-table.png" alt-text="Screenshot of the Create route table blade in the Azure portal.":::
 
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.

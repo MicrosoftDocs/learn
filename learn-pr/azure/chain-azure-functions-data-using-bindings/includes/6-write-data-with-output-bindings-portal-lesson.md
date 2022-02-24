@@ -6,7 +6,7 @@ As with input bindings, there are multiple types of output bindings. However, no
 
 - **Azure Cosmos DB** - The Azure Cosmos DB output binding lets you write a new document to an Azure Cosmos DB database using the SQL API.
 
-- **Event Hubs** - Use the Event Hubs output binding to write events to an event stream. You must have send permission to an Event Hub to write events to it.
+- **Event Hubs** - Use the Event Hubs output binding to write events to an event stream. You must have send permission to an event hub to write events to it.
 
 - **HTTP** - Use the HTTP output binding to respond to the HTTP request sender. This binding requires an HTTP trigger and allows you to customize the response associated with the trigger's request. This can also be used to connect to webhooks.
 
