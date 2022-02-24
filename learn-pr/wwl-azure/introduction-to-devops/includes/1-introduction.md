@@ -1,4 +1,4 @@
-**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)<br>
+**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)<br><br>
 
 The DevOps learning paths will help you prepare for a DevOps journey. You will learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You will see other content to ensure you have a complete picture of DevOps. The module's content consists of graphics, reference links, module review questions, and optional hands-on labs.
 
