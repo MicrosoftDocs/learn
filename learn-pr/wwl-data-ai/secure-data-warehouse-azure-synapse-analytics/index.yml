@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure a data warehouse in Azure Synapse Analytics
-summary: ''
+summary: Learn how to approach and implement security to protect your data with Azure Synapse Analytics.
 abstract: |
   In this module, you will:
   - Understand network security options for Azure Synapse Analytics
