@@ -33,6 +33,8 @@ Organizations transform by developing new capabilities across these four pillars
 
 Let’s dive deeper with Judson Althoff, Microsoft Executive VP, Worldwide Commercial Business, and look at how Microsoft 365, Dynamics 365, Microsoft Azure, and Microsoft’s commitment to continued innovation are delivering the most complete, most secure cloud productivity service to business customers, supporting companies on their digital transformation journey.
 
+</br>
+
 ---
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)
@@ -41,9 +43,10 @@ Let’s dive deeper with Judson Althoff, Microsoft Executive VP, Worldwide Comme
 Watch this video from Judson Althoff and begin to envision what it means to be digital and see the possibilities unlocked by Microsoft solutions.
 
 :::column-end:::
-:::row-end:::
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDFw]
----
+
+:::row-end:::
 
 The role of Microsoft is to help organizations realize the benefits of their digital transformation.
 
