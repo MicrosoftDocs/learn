@@ -34,7 +34,7 @@ During the process, you'll:
     |Setting  |Value |Description  |
     |---------|---------|---------|
     |Enabled     | On | Shut down all lab VMs at a specific time during the day or night. |
-    |Scheduled shutdown     | 7:00:00 PM | The time of day at which all lab VMs are shut down. You can change this settings at any time.  |
+    |Scheduled shutdown     | 7:00:00 PM | The time of day at which all lab VMs are shut down. You can change this setting at any time.  |
     |Time zone     | *Select your time zone*| Select a suitable time zone. |
     |Send notification before auto-shutdown     | No | When the VMs are shut down, Azure DevTest Labs can send a notification by email or invoke a web hook.  |
 
