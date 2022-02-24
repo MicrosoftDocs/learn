@@ -86,8 +86,8 @@ For example, you might need to get your source code from GitHub. In this case, l
 
 10. Click the **File Copy** task to see the required settings.
 
-> [!NOTE]
-> Use the latest Task version.<br>
+    > [!NOTE]
+    > Use the latest Task version.
 
     :::image type="content" source="../media/06-11-required-settings-1f427416.png" alt-text="Required settings.":::
 
