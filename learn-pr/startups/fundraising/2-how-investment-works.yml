@@ -9,7 +9,6 @@ metadata:
   ms.author: ryanmesches
   ms.topic: interactive-tutorial
   ms.prod: learning-consumer
-  show_latex: false
 durationInMinutes: 15
 content: |
   [!include[](includes/2-how-investment-works.md)]
