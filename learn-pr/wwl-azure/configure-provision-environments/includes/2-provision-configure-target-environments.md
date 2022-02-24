@@ -32,7 +32,7 @@ Integrating a tool like Puppet, Chef, or PowerShell DSC into the release pipelin
 
 ## Infrastructure as a service
 
-When you use the cloud as your target environment, things change slightly. Some organizations did a lift and shifted from their on-premises server to cloud servers.
+When you use the cloud as your target environment, things change slightly. Some organizations do a lift and shift from their on-premises server to cloud servers.
 
 Then your deployment works the same as to an on-premises server. But when you use the cloud to provide you with Infrastructure as a Service (IaaS), you can use the power of the cloud to start and create servers when you need them.
 
@@ -54,7 +54,7 @@ For example: In Azure, you can choose to create a Web application. The cloud arr
 
 The user only needs to take care of the web application that will run on this Platform.
 
-The only thing you need to do is provide the templates that instruct the cloud to create a WebApp. The same goes for Functions as a Service(FaaS or Serverless technologies.
+The only thing you need to do is provide the templates that instruct the cloud to create a WebApp. The same goes for Functions as a Service(FaaS) or Serverless technologies.
 
 In Azure called Azure Functions and in AWS called AWS Lambda.
 
@@ -90,9 +90,9 @@ Infrastructure as Code is a fundamental part of Continuous Delivery and gives yo
 
  -  [AWS Cloud formation](https://aws.amazon.com/cloudformation/).
  -  [Terraform](https://www.terraform.io/).
- -  [PowerShell DSC](/powershell/scripting/dsc/overview/overview).
+ -  [Desired State Configuration Overview](/powershell/dsc/overview/dscforengineers?view=dsc-1.1).
  -  [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html).
  -  [Azure Functions](https://azure.microsoft.com/services/functions).
  -  [Chef](https://www.chef.io/chef/).
  -  [Puppet](https://puppet.com/).
- -  [Azure Resource Manager ](/azure/azure-resource-manager/resource-group-overview).
+ -  [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
