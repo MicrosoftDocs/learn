@@ -50,7 +50,7 @@ Azure Digital Twins uses Azure Active Directory (Azure AD) for role-based access
 
 With your Azure Digital Twins instance open in the Azure portal, you can use Access control (IAM), to configure role assignments.
 
-:::image type="content" source="../media/m11-l03-adt-create-instance-add-role-assignment-586d27e4.png" alt-text="Screenshot that shows where to configure access control and role assignments for managing the Azure Digital Twins service." lightbox="../media/m11-l03-adt-create-instance-add-role-assignment-586d27e4.png":::
+:::image type="content" source="../media/m11-l03-adt-create-instance-add-role-assignment-586d27e4.png" alt-text="Screenshot that shows where to configure access control and role assignments for managing the Azure Digital Twins service.":::
 
 
 The Add role assignment page provides the following fields:
