@@ -33,7 +33,7 @@ products:
 units:
 - learn.setup-first-lab-using-azure-devtest-labs.introduction
 - learn.setup-first-lab-using-azure-devtest-labs.understand-azure-devtest-labs
-- learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-company-lab
+- learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-development-lab
 - learn.setup-first-lab-using-azure-devtest-labs.configure-lab-vm-access-through-rdp
 - learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-claim-development-vm
 - learn.setup-first-lab-using-azure-devtest-labs.knowledge-check
