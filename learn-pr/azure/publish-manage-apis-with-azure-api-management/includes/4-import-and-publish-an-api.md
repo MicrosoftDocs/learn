@@ -89,4 +89,4 @@ You use the Azure portal to associate APIs with a product.
 
 ![Screenshot of Azure portal showing API Management with products section highlighted.](../media/4-apim-products.png)
 
-For all pricing tiers except consumption, there two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.
+For all pricing tiers except consumption, there are two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.
