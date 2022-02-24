@@ -128,7 +128,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     | Field | Value |
     |-|-|
     | Subscription | Concierge Subscription |
-    | Resource Group | <rng>[sandbox resource group]</rng> |
+    | Resource Group | <rgn>[sandbox resource group]</rgn> |
     | Storage account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *storage*. For example, *jpws01012020storage* |
     | Performance | Standard |
     | Redundancy | Geo-redundant storage (GRS) |

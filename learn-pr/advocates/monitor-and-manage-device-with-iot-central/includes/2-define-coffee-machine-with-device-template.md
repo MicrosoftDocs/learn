@@ -1,16 +1,16 @@
-In Azure IoT Central, the data that a device can exchange with your application is specified in a device template. The template defines the behavior and capabilities of a device or in this case, a coffee machine.
+In Azure IoT Central, the data that a device exchanges with your application is specified in a device template. The template defines the behavior and capabilities of a device such as a coffee machine.
 
 After you create a device template, you can create a simulated device. The simulated device generates telemetry for you to test the behavior of your application before connecting a real device.
 
-In this unit, you create a device template for a coffee machine that specifies its capabilities and behaviors. Telemetry and property definitions are grouped together in interfaces. In this scenario, you only define a single interface for the coffee machine device that includes telemetry, property, and command definitions:
+In this unit, you create a device template for a coffee machine that specifies its capabilities and behaviors. Telemetry, property, and command definitions are grouped together in interfaces. In this scenario, you only define a single interface for the coffee machine device that includes telemetry, property, and command definitions:
 
 ### Telemetry
 
-Telemetry is the data that comes from your device. You can add multiple telemetry types to your device template to match the capabilities of your device. The coffee machine sends air humidity and water temperature values from its sensors. It also sends state information about whether it's currently brewing and whether a cup is detected.
+Telemetry is the data that streams from your device. You can add multiple telemetry types to your device template to match the capabilities of your device. The coffee machine sends air humidity and water temperature values from its sensors. It also sends state information about whether it's currently brewing and whether a cup is detected.
 
 ### Properties
 
-You use properties to share configuration data between a device and your application.
+Use properties to share configuration data between a device and your application.
 
 In this scenario, you use a _writeable_ property to set the optimal water temperature and send it to the coffee machine. When the writeable property is updated in IoT Central, it's marked as pending in the UI until the device acknowledges that it has responded to the update.
 
@@ -18,11 +18,11 @@ You can use _read-only_ properties to enable a device to send values to your app
 
 ### Commands
 
-You use commands to remotely manage your device from your application. You can directly run commands on the device from the cloud to control the device. In this scenario, you run commands on your coffee machine to set it to maintenance mode or to start brewing.
+Use commands to remotely manage your device from your application. You can directly run commands on the device from the cloud to control the device. In this scenario, you run commands on your coffee machine to set it to maintenance mode or to start brewing.
 
 ### Cloud properties
 
-_Cloud properties_ are the device metadata that's associated with the device. You use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the application and don't synchronize with the device. Cloud properties are not part of an interface definition.
+_Cloud properties_ are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
 
 ### Customizations
 
@@ -34,182 +34,118 @@ You can customize the UI that IoT Central displays for managing and monitoring d
 
 ## Device capability models
 
-A device capability model defines the telemetry, properties, and commands that a device supports. You can store a device capability model in a JSON file and import it into IoT Central. The following JSON is the device capability model for the connected coffee machine. Copy the JSON and save it on your local machine in a file called `CoffeeMaker.json`:
+A device capability model is the part of the device template that defines the telemetry, properties, and commands that a device supports. You can store a device capability model in a JSON file and import it into IoT Central. The following JSON is the device capability model for the connected coffee machine. Copy the JSON and save it on your local machine in a file called `CoffeeMaker.json`:
 
 ```json
 {
-  "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_cm:1",
-  "@type": "CapabilityModel",
-  "implements": [
+  "@context": "dtmi:dtdl:context;2",
+  "displayName": "Connected Coffee Maker",
+  "@id": "dtmi:com:example:ConnectedCoffeeMaker;1",
+  "@type": "Interface",
+  "contents": [
     {
-      "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_cm:gch18jeg:1",
-      "@type": "InterfaceInstance",
-      "displayName": {
-        "en": "Connected Coffee Maker"
-      },
-      "name": "ConnectedCoffeeMaker_if",
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "displayName": "Water Temperature",
+      "name": "WaterTemperature",
+      "displayUnit": "Celsius",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Humidity"
+      ],
+      "displayName": "Air Humidity",
+      "name": "AirHumidity",
+      "displayUnit": "%",
+      "schema": "integer",
+      "unit": "percent"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "State"
+      ],
+      "displayName":"Brewing",
+      "name": "Brewing",
       "schema": {
-        "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:1",
-        "@type": "Interface",
-        "displayName": {
-          "en": "Coffee Maker Interface"
-        },
-        "contents": [
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
           {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:WaterTemperature:1",
-            "@type": [
-              "Telemetry",
-              "SemanticType/Temperature"
-            ],
-            "displayName": {
-              "en": "Water Temperature"
-            },
-            "name": "WaterTemperature",
-            "displayUnit": {
-              "en": "Celsius"
-            },
-            "schema": "double",
-            "unit": "Units/Temperature/celsius"
+            "@type": "EnumValue",
+            "displayName": "Brewing",
+            "enumValue": "brewing",
+            "name": "Brewing"
           },
           {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:AirHumidity:1",
-            "@type": [
-              "Telemetry",
-              "SemanticType/Humidity"
-            ],
-            "displayName": {
-              "en": "Air Humidity"
-            },
-            "name": "AirHumidity",
-            "displayUnit": {
-              "en": "%"
-            },
-            "schema": "integer",
-            "unit": "Units/Humidity/percent"
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:Brewing:1",
-            "@type": [
-              "Telemetry",
-              "SemanticType/State"
-            ],
-            "displayName": {
-              "en": "Brewing"
-            },
-            "name": "Brewing",
-            "schema": {
-              "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:Brewing:ukyropau:1",
-              "@type": "Enum",
-              "valueSchema": "string",
-              "enumValues": [
-                {
-                  "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:Brewing:ukyropau:Brewing:1",
-                  "@type": "EnumValue",
-                  "displayName": {
-                    "en": "Brewing"
-                  },
-                  "enumValue": "brewing",
-                  "name": "Brewing"
-                },
-                {
-                  "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:Brewing:ukyropau:NotBrewing:1",
-                  "@type": "EnumValue",
-                  "displayName": {
-                    "en": "Not Brewing"
-                  },
-                  "enumValue": "notbrewing",
-                  "name": "NotBrewing"
-                }
-              ]
-            }
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:CupDetected:1",
-            "@type": [
-              "Telemetry",
-              "SemanticType/State"
-            ],
-            "displayName": {
-              "en": "Cup Detected"
-            },
-            "name": "CupDetected",
-            "schema": {
-              "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:CupDetected:eknxwzoxs:1",
-              "@type": "Enum",
-              "valueSchema": "string",
-              "enumValues": [
-                {
-                  "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:CupDetected2:twuxgg9v:Detected:1",
-                  "@type": "EnumValue",
-                  "displayName": {
-                    "en": "Detected"
-                  },
-                  "enumValue": "detected",
-                  "name": "Detected"
-                },
-                {
-                  "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:CupDetected2:twuxgg9v:NotDetected:1",
-                  "@type": "EnumValue",
-                  "displayName": {
-                    "en": "Not Detected"
-                  },
-                  "enumValue": "notdetected",
-                  "name": "NotDetected"
-                }
-              ]
-            }
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:OptimalTemperature:1",
-            "@type": [
-              "Property",
-              "SemanticType/Temperature"
-            ],
-            "displayName": {
-              "en": "Optimal Temperature"
-            },
-            "name": "OptimalTemperature",
-            "writable": true,
-            "schema": "double",
-            "unit": "Units/Temperature/celsius"
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:DeviceWarrantyExpired:1",
-            "@type": "Property",
-            "displayName": {
-              "en": "Device Warranty Expired"
-            },
-            "name": "DeviceWarrantyExpired",
-            "schema": "boolean"
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:SetMaintenanceMode:1",
-            "@type": "Command",
-            "commandType": "synchronous",
-            "displayName": {
-              "en": "Set Maintenance Mode"
-            },
-            "name": "SetMaintenanceMode"
-          },
-          {
-            "@id": "urn:coffeeMakerContoso:ConnectedCoffeeMaker_if:StartBrewing:1",
-            "@type": "Command",
-            "commandType": "synchronous",
-            "displayName": {
-              "en": "Start Brewing"
-            },
-            "name": "StartBrewing"
+            "@type": "EnumValue",
+            "displayName": "Not Brewing",
+            "enumValue": "notbrewing",
+            "name": "NotBrewing"
           }
         ]
       }
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "State"
+      ],
+      "displayName": "Cup Detected",
+      "name": "CupDetected",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "@type": "EnumValue",
+            "displayName": "Detected",
+            "enumValue": "detected",
+            "name": "Detected"
+          },
+          {
+            "@type": "EnumValue",
+            "displayName": "Not Detected",
+            "enumValue": "notdetected",
+            "name": "NotDetected"
+          }
+        ]
+      }
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "displayName": "Optimal Temperature",
+      "name": "OptimalTemperature",
+      "writable": true,
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    {
+      "@type": "Property",
+      "displayName": "Device Warranty Expired",
+      "name": "DeviceWarrantyExpired",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": "Set Maintenance Mode",
+      "name": "SetMaintenanceMode"
+    },
+    {
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": "Start Brewing",
+      "name": "StartBrewing"
     }
-  ],
-  "displayName": {
-    "en": "Connected Coffee Maker"
-  },
-  "contents": [],
-  "@context": [
-    "http://azureiot.com/v1/contexts/IoTModel.json"
   ]
 }
 ```
@@ -222,13 +158,13 @@ To create a device template, you can either build it from scratch in the IoT Cen
 
 1. On the **Select template type** page, select the **IoT device** tile, and then select **Next: Customize**.
 
-1. On the **Customize device** page, select **Next: Review**. Then select **Create**.
+1. On the **Customize** page, enter _Connected Coffee Machine_ as the device template name. Then select **Next: Review**. Then select **Create**.
 
 1. Enter _Connected Coffee Machine_ as the device template name, and then press **Enter**.
 
-1. On the **Create a capability model** page, select the **Import capability model** tile. Then browse to and select the **CoffeeMaker.json** file you created previously, and select **Open**.
+1. On the **Create a model** page, select the **Import a model** tile. Then browse to and select the **CoffeeMaker.json** file you created previously, and select **Open**.
 
-IoT Central displays the **Connected Coffee Maker** capability model with the **Coffee Maker** interface that defines the telemetry, properties, and commands that the device supports.
+IoT Central displays the **Connected Coffee Maker** capability model that defines the telemetry, properties, and commands that the device supports.
 
 ![Imported Connected Coffee Machine template.](../media/2-imported-template.png)
 
@@ -242,8 +178,8 @@ To add the cloud properties that store the ideal water temperature range for cof
 
     | Display name | Name | Semantic type | Schema | Min value | Max value | Decimal places | Unit |
     | ------------ | ---- | ------------- | ------ | --------- | --------- | -------------- | ---- |
-    | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Temperature | Double | 88 | 92 | 1 | &deg;C |
-    | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Temperature | Double | 96 | 99 | 1 | &deg;C |
+    | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Temperature | Double | 88 | 92 | 1 | Degree celsius |
+    | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Temperature | Double | 96 | 99 | 1 | Degree celsius |
 
 1. Save your changes.
 
@@ -263,12 +199,6 @@ To add the customizations that control how IoT Central displays information abou
     | Air Humidity      | 20   | 100       | 0              | |
     | Optimal Temperature | 86 | 100       | 1              | 96            |
 
-1. Use the information in the following table to customize the **Device Warranty** property type:
-
-    | Display name            | True name | False name  |
-    | ----------------------- | --------- | ----------- |
-    | Device Warranty Expired | Expired   | In warranty |
-
 1. Save your changes.
 
     ![Connected Coffee Machine template customizations.](../media/2-template-customizations.png)
@@ -281,11 +211,11 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Add a new **Visualizing the device** view called _Telemetry_.
 
-1. Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** state telemetry value.
+1. Select **Start with devices**. Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** telemetry value.
 
-1. Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** state telemetry value.
+1. Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** telemetry value.
 
-1. Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** an **Air Humidity** for the past 30 minutes.
+1. Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
 
 1. Add a 1x1 tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours as a KPI.
 
@@ -305,7 +235,7 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Save your changes.
 
-    ![Connected Coffee Machine telemetry view.](../media/2-properties-form.png)
+    ![Connected Coffee Machine property view.](../media/2-properties-form.png)
 
 ## Publish the Coffee Machine template
 
