@@ -53,7 +53,7 @@ public class OutputProcess
 
 The delegate type is named `LoggerMethod`. An instance of that type named `loggerCall` is assigned the instance method `outputProcess.SendToLogger`. You can execute `loggerCall` like you would any other method.
 
-## What is Func<TResult>?
+## What is Func\<TResult\>?
 
 `Func<TResult>` represents a method that has no parameters and returns a value of the type specified by the `TResult` parameter.
 
