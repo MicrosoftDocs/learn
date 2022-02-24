@@ -181,7 +181,6 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
     
         os_profile_linux_config {
             disable_password_authentication = false
-            }
         }
     
         boot_diagnostics {
@@ -237,7 +236,7 @@ os_profile_linux_config {
 
 ```
 
-You'd also need to remove the password value in the **os\_profile module** that present in the example above.
+    You'd also need to remove the password value in the **os\_profile module** that present in the example above.
 
 > [!NOTE]
 > You could also embed the Azure authentication within the script. In that case, you would not need to install the Azure account extension, as in the following example:
@@ -248,6 +247,7 @@ provider "azurerm" {
     client_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     client_secret  = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     tenant_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    features {}
 }
 
 ```
