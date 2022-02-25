@@ -29,17 +29,18 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     ls -l
     ```
 
-   One of the files is setup.sh. As its name suggests, it is the script we'll run to set up our test API. 
+   One of the files is setup.sh. As its name suggests, it's the script we'll run to set up our test API. 
 
-1. Enter the following command to run this script. It will generate a public web app that exposes an OpenAPI interface. 
+1. Enter the following command to run this script. It will generate a public web app that exposes an OpenAPI interface.
+
     ```bash
     bash setup.sh
     ```
 
-    The script takes about a minute to run. During deployment, all dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, the last two lines are URLs that you'll use to test the app deployment. 
+    The script takes about a minute to run. During deployment, all dependencies needed for our app to run are automatically installed on the remote App Service. The output lists all the operations. When the script finishes, the last two lines are URLs that you'll use to test the app deployment.
 
-1. To test that our app deployed correctly, copy the first URL (Swagger URL) from Cloud Shell and paste it into a new tab of your browser. 
- 
+1. To test that our app deployed correctly, copy the first URL (Swagger URL) from Cloud Shell and paste it into a new tab of your browser.
+
    The browser should display the swagger UI for our app and declare the following RESTful endpoints:
 
     - **api/inventory** generates a list of products and the number in stock
@@ -49,7 +50,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
     :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
-1. Finally, copy and save the second URL (Swagger JSON URL) from Cloud Shell output. You will need this URL in the next exercise.
+1. Finally, copy and save the second URL (Swagger JSON URL) from Cloud Shell output. You'll need this URL in the next exercise.
 
 ## Deploy an API gateway
 
@@ -59,7 +60,7 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API management**. The **Create API Management** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API management**. The **Install API Management gateway** pane appears.
 
 1. In the **Basics** tab, enter the following values for each setting.
 
@@ -76,10 +77,10 @@ The final task in this exercise is to create an API gateway in the Azure portal.
     | Pricing Tier | `Consumption` |
 
    > [!NOTE]
-   > The consumption plan is much faster to generate output during the testing process. The overall experience is very similar to the other pricing tiers and the resources will be deleted automatically when the sandbox expires. 
+   > The consumption plan is much faster to generate output during the testing process. The overall experience is very similar to the other pricing tiers and the resources will be deleted automatically when the sandbox expires.
 
 1. Select **Review+create** to validate your settings.
 
 1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the gateway listed in the Azure resources. You'll also receive an email message. It may take several minutes for deployment to complete.
 
-1. When deployment is complete, select **Go to resource group** to view the resource group. Your API Management service should display in the list of resources at the bottom of the page. 
+1. When deployment is complete, select **Go to resource** to view the pane for your API Management service.
