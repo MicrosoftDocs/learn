@@ -26,8 +26,6 @@ Watch this video to learn more about how Azure makes developers and IT professio
 
 On Azure your developers have the flexibility to build and deploy apps using the language of your choice, in the development environments they want, using the open-source software they need, with quality every time.
 
-</br>
-
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)
 
@@ -43,8 +41,6 @@ Watch this video to learn more about how developers can build on their terms wit
 
 Azure is the only consistent hybrid cloud on the market, allowing your business to develop and deploy where you want. For example, you can store your data on-premises to meet regulatory standards, run your applications in the cloud, and interact with your customer using Edge devices like HoloLens and Azure Sphere.
 
-</br>
-
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)
 
@@ -59,8 +55,6 @@ Watch this video to learn more about how you can operate your hybrid solutions S
 ## Trust your cloud
 
 Azure provides a safe and secure environment that you can trust, as evidenced by the many startups, governments, and 95 percent of Fortune 500 businesses who run on Azure today.
-
-</br>
 
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)

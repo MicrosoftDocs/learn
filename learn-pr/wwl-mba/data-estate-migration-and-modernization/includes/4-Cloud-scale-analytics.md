@@ -27,8 +27,6 @@ As you saw in the video, cloud scale analytics allows you to generate insights a
 
 A modern data warehouse lets you gather data and insights at scale through analytical dashboards, operational reports, and advanced analytics for all users.
 
-</br>
-
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)
 
@@ -50,8 +48,6 @@ The Microsoft comprehensive cloud scale analytics solution covers all stages of 
 ### How is cloud scale analytics used?
 
 Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a technology company, pushing the innovation envelope. AB InBev is increasing agility by shifting its legacy data warehouses to an Azure PaaS environment, using Azure Synapse Analytics (formerly Azure SQL Data Warehouse). As a result, AB InBev can drive greater insights through data and is well on track to meet its consolidation goal.
-
-</br>
 
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)

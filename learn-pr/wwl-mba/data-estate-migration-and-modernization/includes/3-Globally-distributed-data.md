@@ -41,8 +41,6 @@ Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB 
 :::column-end:::
 :::row-end:::
 
-</br>
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 
 To keep up with global growth and deliver the best possible online experience, ASOS transformed its e-commerce platform to run in the cloud.
