@@ -1,6 +1,6 @@
 A lab in Azure DevTest Labs represents a collection of settings to quickly and repeatably create virtualized computing environments.
 
-For your eCommerce company, you decide to create a lab for the development team. Developers need a Windows or Linux-based virtual machine. Your organization standardizes on the most recent versions of Ubuntu Server and Windows Server. To save costs, all VMs should be shut down daily at 7pm.
+For your eCommerce company, you decide to create a lab for the development team. Developers need a Windows or Linux-based virtual machine. Your organization standardizes on the most recent versions of Ubuntu Server and Windows Server. To reduce cost, all VMs should be shut down daily at 7pm.
 
 In this exercise, you'll use the Azure portal to create an Azure DevTest Labs resource with settings to accommodate the needs from the development team and IT organization.
 
@@ -44,9 +44,7 @@ During the process, you'll:
 
 ## Verify the resource creation
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-
-1. Enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
+1. In the Azure portal, enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
 
     :::image type="content" source="../media/3-exercise-configure-development-lab/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
 
@@ -56,13 +54,11 @@ During the process, you'll:
 
 ## Specify allowed images for creating VMs
 
-1. From the list of labs, select your lab.
-
-1. On the home page for the lab page, select **Configuration and policies**.
+1. On the home page of your Azure DevTest Labs resource, select **Configuration and policies**.
 
     :::image type="content" source="../media/3-exercise-configure-development-lab/configuration-policies-menu.png" alt-text="Screenshot that shows the configuration & policies menu for Azure DevTest Labs.":::
 
-1. On lab's **Configuration and policies** page under **Virtual machine bases**, select **Marketplace images**.
+1. On the **Configuration and policies** pane, under **Virtual machine bases**, select **Marketplace images**.
 
     :::image type="content" source="../media/3-exercise-configure-development-lab/marketplace-images-menu.png" alt-text="Screenshot that shows the marketplace images settings menu for Azure DevTest Labs.":::
 
@@ -72,6 +68,6 @@ During the process, you'll:
 
 1. Select the most recent versions of **Ubuntu Server** and **Windows Server** from the list, and then select **Save**.
 
-    You should see the selected VM base images at the top of the list:
+    You should see the VM base images you selected at the top of the list:
 
     :::image type="content" source="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab.":::
