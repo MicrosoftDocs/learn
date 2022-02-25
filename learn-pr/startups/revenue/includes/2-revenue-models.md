@@ -30,7 +30,7 @@ The following models are the 10 most common ones that tech startups use.
 
 **Practical considerations:**
 
-- Requires a large, up-front investment.
+- Requires a large, upfront investment.
 - Allows you to offer new users a cheap or free plan and then charge more as their usage increases.
 - Requires patient investment because revenues from each customer are tied to the customer's growth rate.
 - Often requires providing education and support to ensure customers gain maximum benefit from the service and can access more advanced functionality as they grow.
@@ -109,7 +109,7 @@ The following models are the 10 most common ones that tech startups use.
 
 **Practical considerations:**
 
-- Can be capital intensive if you need to purchase the assets up-front and generate rental income over time.
+- Can be capital intensive if you need to purchase the assets upfront and generate rental income over time.
 - It's essential to make it easy for people to find and use your product. Otherwise, they'll look for alternatives.
 - Some customers will eventually buy the product themselves. For example, people will rent electric scooters before they eventually buy their own.
 
@@ -130,7 +130,7 @@ The following models are the 10 most common ones that tech startups use.
 
 **Description:** Indirect sales made by third parties that you appoint as agents or resellers.
 
-**Ideal for:** Products or services that naturally sit alongside another company's offering as an up-sell or specialist product. An example is companies that partner with Microsoft via the Microsoft Partner Network.
+**Ideal for:** Products or services that naturally sit alongside another company's offering as an upsell or specialist product. An example is companies that partner with Microsoft via the Microsoft Partner Network.
 
 **Practical considerations:**
 
