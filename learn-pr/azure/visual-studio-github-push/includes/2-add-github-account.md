@@ -1,4 +1,4 @@
-There are different ways that you might use GitHub with a project. Sometimes you clone a project to get a copy of it, that you can work on. Sometimes it goes the other direction: you have a local project that you want to put in GitHub.
+There are different ways that you might use GitHub with a project. Sometimes you clone a project to get a copy of it, that you can later work on. Sometimes it goes the other direction: you have a local project that you want to put in GitHub.
 
 Before you do anything at all with GitHub, you have to make sure that you're authenticated. GitHub needs to know who you are so it can give you access to the right repositories.
 
@@ -8,9 +8,9 @@ Normally, authentication can be a tedious, multiple-step process that involves g
 
 ## Adding an account to Visual Studio
 
-In Visual Studio, you normally have a single personalization account that you use to sign in to the IDE. However, you can add multiple accounts to Visual Studio so that you can access the resources from any account without having to sign in to it separately. This set of accounts is called your Visual Studio keychain. Your keychain roams with you if you sign in to Visual Studio on another machine.
+In Visual Studio, you normally have a single personalization account that you use to sign in to the IDE. However, you can add multiple accounts to Visual Studio so that you can access the resources from any account without having to sign in to it separately. This set of accounts is called your Visual Studio key chain. Your key chain roams with you if you sign in to Visual Studio on another machine.
 
-:::image type="content" source="../media/2-keychain-diagram.png" alt-text="Diagram of the various Visual Studio keychain accounts that can be used to sign in.":::
+:::image type="content" source="../media/2-keychain-diagram.png" alt-text="Diagram of the various Visual Studio key chain accounts that can be used to sign in.":::
 
 You can add only one GitHub account to Visual Studio. If you need to access resources from a different GitHub account, you first have to remove any existing GitHub account from Visual Studio and sign out from the web (GitHub.com). Then you can restart the process for adding the other GitHub account to Visual Studio.
 
