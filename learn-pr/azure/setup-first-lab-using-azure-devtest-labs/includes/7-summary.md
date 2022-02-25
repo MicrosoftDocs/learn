@@ -11,5 +11,5 @@ Now, when you want to create VMs for development, training, or other purposes, y
 
 ## References
 
-- [Introduction to Azure DevTest Labs](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-devtest-labs/)
-- [Azure DevTest Labs documentation](https://docs.microsoft.com/en-us/azure/devtest-labs)
+- [Introduction to Azure DevTest Labs](/learn/modules/intro-to-azure-devtest-labs/)
+- [Azure DevTest Labs documentation](/azure/devtest-labs)
