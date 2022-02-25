@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 4
 quiz:
   questions:
-  - content: "Which of the following slides is likely to belong in an investor pitch deck?"
+  - content: "Which of the following themes belong in an investor pitch deck?"
     choices:
     - content: "Traction."
       isCorrect: false
