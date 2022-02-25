@@ -59,92 +59,90 @@ You then see how to monitor the health of the cluster and pods that run your app
     ```
 
 7.  Create a file named **azure-vote.yaml**, and then copy it into the following `YAML` definition. If you use the Azure Cloud Shell, you can create this file-using **vi** or **nano** as if working on a virtual or physical system:
-    
-    ```YAML
-    apiVersion: apps/v1
-    kind: Deployment
+
+```YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-vote-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote-back
+  template:
     metadata:
-      name: azure-vote-back
-    spec:
-      replicas: 1
-      selector:
-        matchLabels:
-          app: azure-vote-back
-      template:
-        metadata:
-          labels:
-            app: azure-vote-back
-        spec:
-          containers:
-    
-          - name: azure-vote-back
-            image: redis
-            resources:
-              requests:
-                cpu: 100m
-                memory: 128Mi
-              limits:
-                cpu: 250m
-                memory: 256Mi
-            ports:
-    
-            - containerPort: 6379
-              name: redis
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: azure-vote-back
-    spec:
-      ports:
-    
-    - port: 6379
-      selector:
+      labels:
         app: azure-vote-back
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: azure-vote-front
     spec:
-      replicas: 1
-      selector:
-        matchLabels:
-          app: azure-vote-front
-      template:
-        metadata:
-          labels:
-            app: azure-vote-front
-        spec:
-          containers:
-    
-          - name: azure-vote-front
-            image: microsoft/azure-vote-front:v1
-            resources:
-            requests:
-                cpu: 100m
-                memory: 128Mi
-              limits:
-                cpu: 250m
-                memory: 256Mi
-            ports:
-    
-          - containerPort: 80
-            env:
-    
-            - name: REDIS
-              value: "azure-vote-back"
-    apiVersion: v1
-    kind: Service
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: azure-vote-back
+        image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
+        ports:
+        - containerPort: 6379
+          name: redis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-vote-back
+spec:
+  ports:
+  - port: 6379
+  selector:
+    app: azure-vote-back
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-vote-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote-front
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
     metadata:
-      name: azure-vote-front
-    spec:
-      type: LoadBalancer
-      ports:
-    
-      - port: 80
-      selector:
+      labels:
         app: azure-vote-front
-    
-    ```
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: azure-vote-front
+        image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+        env:
+        - name: REDIS
+          value: "azure-vote-back"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-vote-front
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: azure-vote-front
+```
 
 8.  Deploy the application by running the following command:
     
