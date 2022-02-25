@@ -12,7 +12,7 @@ In this unit, you'll:
 
 ## Create self-signed certificate
 
-First, use Cloud Shell to create a self-signed certificate, which you will then use for authentication between the client and the API Management gateway.
+First, use Cloud Shell to create a self-signed certificate, which you'll then use for authentication between the client and the API Management gateway.
 
 1. To create the private key and the certificate, run the following commands in Cloud Shell.
 
@@ -31,11 +31,11 @@ First, use Cloud Shell to create a self-signed certificate, which you will then 
     openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem -nodes
     ```
 
-    When you are prompted for a password, enter **Pa$$w0rd**, and then press <kbd>Enter</kbd>.
+    When you're prompted for a password, enter **Pa$$w0rd**, and then press <kbd>Enter</kbd>.
 
 ## Configure the gateway to request client certificates
 
-Because you are using the Consumption tier for API Management, you must configure the gateway to accept client certificates. Follow these steps.
+Because you're using the Consumption tier for API Management, you must configure the gateway to accept client certificates. Follow these steps.
 
 1. From the Azure portal that is already open, select your API Management service (apim-WeatherDataNNNN).
 
@@ -103,7 +103,7 @@ You can now test the new authentication policy with and without the certificate.
 
     This command should return a 403 Client certificate error, and no data will be returned.
 
-1. In Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the primary subscription key from the first exercise (you can also obtain this primary key from the Subscriptions pane for your WeatherData API zManagement service). Remember to include your API gateway name.
+1. In Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the primary subscription key from the first exercise (you can also obtain this primary key from the Subscriptions pane for your WeatherData API Management service). Remember to include your API gateway name.
 
     ```PowerShell
     curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
