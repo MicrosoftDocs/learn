@@ -5,12 +5,12 @@ Azure DevTest Labs lets you simplify and accelerate the process of creating virt
 ## Example scenario
 
 Suppose you work at an eCommerce company that offers fashion and lifestyle products to consumers. Your company operates in a highly competitive market where you need to innovate rapidly to keep your customer engagement high.
-As the development team expands rapidly to keep up with new feature development, you have to quickly spin up and configure developer machines.
-At the end of each weekly sprint, the test team runs their test plans on the latest application version in a fresh test environment.
+
+As the development team expands rapidly, you want to give developers a self-service experience to provision their developer machines. The IT organization wants to standardize to keep the managed cost low.
 
 ## What will we be doing?
 
-In this module, you'll configure a development lab from a base image and specify the software to pre-install. You'll then use this lab to spin up a development virtual machine. You can then access the development VM by using Remote Desktop software.
+In this module, you'll configure a standardized development lab and pre-configure it with software components. You'll use this lab to create a development virtual machine. You can then access this development VM by using Remote Desktop software.
 
 ## What is the main goal?
 
