@@ -21,10 +21,11 @@ Watch this video to learn about refactoring your applications with container tec
 :::column:::
 *Here’s one way to think about containers. Say you are packing up your kitchen. You put all the appliances and furniture, along with pots and pans into a moving van. This is the container. Wherever you decide to move, you take the container with you and it will be the same kitchen. With container technology, applications can be built to run in any environment. Additional tools, such as Kubernetes, help orchestrate the containers, so you can deploy and scale with confidence.*
 
+---
 :::column-end:::
 :::row-end:::
 
----
+
 
 Let’s look at how Xerox uses Azure containers.
 

@@ -59,16 +59,15 @@ Many organizations have made significant investments in on-premises infrastructu
 
 Microsoft SQL Server 2017 can meet the needs of modernizing your on-premises data estate, and is a step towards modernizing to Azure. Partners and Microsoft can help migrate servers, databases, and applications to modern platforms on-premises or to the cloud.
 
-------------
 :::row:::
 ![Icon of lightbulb](../media/lightbulb.png)
-  :::column span="3":::
 
+:::column:::
 *Now that you’ve seen some examples of data modernization, can you identify the key advantages and capabilities of on-premises modernization and migration to Azure?*
 
 *Which factors influence your decision when there are different paths available to modernization? Would you like to reduce capital investments and optimize operational expenses? Perhaps business continuity is your top priority. Your modernization strategy will depend on  your business needs.*
 
 :::column-end:::
 :::row-end:::
-------------
+
 Now that we’ve covered data migration and modernization, let’s look at globally distributed data, cloud scale analytics, and gaining insights from your data. These allow you to do even more with your data.

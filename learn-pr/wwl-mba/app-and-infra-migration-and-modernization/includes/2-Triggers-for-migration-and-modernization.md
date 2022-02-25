@@ -25,7 +25,7 @@ A great online shopping experience begins with great software, and Alaska Airlin
 ⸺Ralph Feltis, Senior Software Engineer, Alaska Airlines
 
 -----------------------
-</br>
+
 :::row:::
 ![Icon indicating play video](../media/video-icon.png)
 

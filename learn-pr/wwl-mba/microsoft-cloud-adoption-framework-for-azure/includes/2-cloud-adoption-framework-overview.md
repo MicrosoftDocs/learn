@@ -26,7 +26,6 @@ The Cloud Adoption Framework contains detailed information to cover an end-to-en
   - Enable business outcomes through implementation of the defined technology plan.
 - Finally, it covers cloud operations, such as governance, resources, and people and change management.
 
----
 :::row:::
 ![Icon of lightbulb](../media/lightbulb.png)
 
@@ -36,5 +35,4 @@ The Cloud Adoption Framework contains detailed information to cover an end-to-en
 :::column-end:::
 :::row-end:::
 
----
 Next, let's define the strategy that might trigger an organization to move to the cloud.
