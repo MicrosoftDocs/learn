@@ -29,7 +29,7 @@ This scenario is exactly what Azure Communication Services can help with.
 
 In this module, you'll:
 
-- Discover the various component parts of Azure Communication Services.
+- Discover the various components of Azure Communication Services.
 - Learn how they can be used to solve communication-related scenarios, such as the one above.
 - Learn how to evaluate if ACS is the right solution for your communication problems.
 
