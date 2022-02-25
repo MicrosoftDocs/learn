@@ -2,7 +2,8 @@ In this module, you'll see what makes a startup pitch effective.
 
 ## Attributes of a great startup pitch
 
-By analyzing pitches that have been delivered by large numbers of startups, you can distill down to several common themes that emerge from the best of them. These themes are covered in the following sections.
+By analyzing pitches that have been delivered by large numbers of startups, you can distill them down to several common themes that emerge from the best of them. These themes are covered in the following sections.
+
 ### Clearly explained
 
 Give your audience a clear, unambiguous understanding of your company in the first 30-60 seconds.
@@ -15,9 +16,9 @@ It's surprisingly common for an audience to remain unclear about what the compan
 
 ### Engaging start
 
-Great startup pitches engage the audience in the first 30 seconds. They make a clear argument for why this startup needs to exist, why it's solving an important problem, and why you should pay attention to the rest of the pitch. If you have a personal, authentic connection to the problem, this is a great time to explain it.
+Great startup pitches engage the audience in the first 30 seconds. Then, make a clear argument for why your startup needs to exist, why it's solving an important problem, and why your audience should pay attention to the rest of the pitch. If you have a personal, authentic connection to the problem, this is a great time to explain it.
 
-If you fail to engage the audience in the first 30 seconds, people will tune out and check their email or Twitter account. Immediate engagement is especially important if you're pitching at a demo day alongside a large number of other startups.
+If you fail to engage the audience in the first 30 seconds, people will tune you out and begin checking their email or Twitter account. Immediate engagement is especially important if you're pitching at a demo day alongside a large number of other startups.
 
 If you've experienced great early traction, or anything else noteworthy, talk about it in the first 60 seconds. Nothing gets investors more excited about a business than telling them that it's making money and growing fast.
 
@@ -51,7 +52,7 @@ As you then step through each element of the pitch, your audience will remain mo
 
 In contrast, if your pitch jumps around and doesn't follow a logical flow, or isn't in the order your audience is expecting, it will be much more difficult for them to absorb.
 
-## Make a great PowerPoint presentation
+## Design your PowerPoint presentation
 
 Besides a sound message, a successful pitch also needs a polished delivery. An effective presentation includes clear, well-designed PowerPoint slides.
 
@@ -84,7 +85,7 @@ If you're pitching at a public event, or one that will be recorded and posted on
 
 ### Display your product
 
-- If you've built a great product, be sure to display it in your presentation. It has been said, only somewhat facetiously, that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback soluction, such as a prerecorded video walk-through of your product or a few attractive photos.
+If you've built a great product, be sure to display it in your presentation. It has been said, only somewhat facetiously, that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback soluction, such as a prerecorded video walk-through of your product or a few attractive photos.
 
 ## Deliver a compelling pitch
 
@@ -142,7 +143,7 @@ After you've done this with a few test audiences, you'll be able to identify any
 
 ### Call out the elephant in the room
 
-If there's a potential major issue that your audience is likely to be aware of, you should address it early in your presentation. For example, let's say one of your cofounders previously founded a company that's now being sued. Acknowledge the issue up front rather than let your audience wonder whether you're going to bring it up. Taking it off the table in this way allows everyone to refocus on your presentation rather than think about the elephant.
+If there's a potential major issue or obstacle that your audience is likely to be aware of, address it early in your presentation. For example, let's say one of your cofounders previously founded a company that's now being sued. Acknowledge the issue up front rather than let your audience wonder whether you're going to bring it up. Taking it off the table in this way allows everyone to focus on your presentation rather than on the elephant.
 
 ### Leave breadcrumbs
 
@@ -165,7 +166,7 @@ Practicing also helps you to resist the temptation to repeatedly look at the sli
 > [!TIP]
 > A great way to quickly familiarize yourself with the presentation content and practice thinking on your feet is to play the *slide shuffle game* with a friend. You print your presentation slides, shuffle them, and hand them to a friend. The friend holds up a slide at random, and you immediately begin presenting the content that's relevant to that slide. Continue through the entire deck.
 
-Some people are tempted to create a script for their entire pitch. This is generally not helpful, because very few people can memorize an entire 20-minute presentation. People tend to lose their train of thought partway through their presentation, and it can be difficult to regain it. Even if you do memorize the script, it would sound like you're reading something rather than speaking authentically.
+Some people are tempted to script their entire pitch. This is generally not helpful, because few people can memorize an entire 20-minute presentation. Presenters tend to lose their train of thought partway through, and it can be difficult to regain it. Even if you do memorize the script, it might sound like you're reading something rather than speaking authentically.
 
 Most people find it's helpful to script the first couple of sentences of a pitch. By doing this and rehearsing them until you could say them in your sleep, you'll be starting your presentation with confidence, knowing exactly what you plan to say at the outset. After the first couple of sentences, you'll relax into a more natural speaking style.
 
