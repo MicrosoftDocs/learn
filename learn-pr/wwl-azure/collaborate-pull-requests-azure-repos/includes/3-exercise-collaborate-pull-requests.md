@@ -17,7 +17,7 @@ The out-of-the-box branch policies include several policies, such as build valid
     :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Open branches.":::
 
 
-3.  In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:<br>
+3.  In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:
 
     :::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Require a minimum number of reviewers.":::
 
