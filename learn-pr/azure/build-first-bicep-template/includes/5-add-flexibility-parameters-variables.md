@@ -82,7 +82,7 @@ Variables are defined in a similar way to parameters, but there are a few differ
 
 When you're writing templates, you often don't want to hard-code values, or even ask for them to be specified in a parameter. Instead, you want to discover values when the template runs. For example, you probably want to deploy all of the resources in a template into a single Azure region: the region where you've created the resource group. Or, you might want to automatically create a unique name for a resource based on a particular naming strategy your company uses.
 
-*Expressions* in Bicep are a powerful feature that help you handle all sorts of interesting scenarios. Let's take a look at a few places where you can use expressions in a Bicep template.
+*Expressions* in Bicep are a powerful feature that helps you handle all sorts of interesting scenarios. Let's take a look at a few places where you can use expressions in a Bicep template.
 
 ### Resource locations
 
