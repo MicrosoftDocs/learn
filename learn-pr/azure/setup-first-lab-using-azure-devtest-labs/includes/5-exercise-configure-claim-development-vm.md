@@ -1,108 +1,118 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Lab VMs in Azure DevTest Labs allow you to self-provision preconfigured and managed virtual machines.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+For your eCommerce company, you want to create a pool of Windows-based developer VMs. Each developer can take a VM from the pool to perform their development activities. All developers need to have Azure PowerShell installed on the VM to manage their Azure resources.
 
-    Heading: none
+In this exercise, you'll use the Azure portal to add a preconfigured, claimable VM to your lab in Azure DevTest Labs. You'll then claim the VM to connect to it.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+During the process, you'll:
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- Add a claimable VM to an existing lab in Azure DevTest Labs and configure a software artifact.
+- Claim a VM.
+- Connect to the VM by using remote desktop (RDP).
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Add a claimable VM to a lab
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+1. From the list of labs, select your lab.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. On the **DevTest Lab** page, select **+ Add** on the toolbar.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. On the **Choose a base** page, select the **Windows Server 2022 Datacenter** marketplace image for the VM.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png" alt-text="Screenshot that shows the screen to select a base image for a new lab VM from the list images.":::
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. On the **Basics Settings** tab, provide the following information:
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+    |Field  |Value |Description  |
+    |---------|---------|---------|
+    |Virtual machine name     | Keep the default value | A unique name for the virtual machine.        |
+    |User name     | Keep the default value | The name of the user to connect to the virtual machine. This user is granted administrator privileges on the VM.        |
+    |Use a saved secret     | Unchecked | Allows you to use a secret from Azure Key Vault for the password.        |
+    |Password     | *Enter a password* | The user password for logging into the VM.        |
+    |Save as default password     | Unchecked | Allows you to save the password in Azure Key Vault.        |
+    |Virtual machine size     | Choose Standard_D2s_v3 | The VM size determines the amount of compute resources like CPU, GPU, and memory that are available to the VM. You can limit the number of available options in the lab.        |
+    |OS disk type     | Standard HDD | Azure VMs use managed disks, which are like physical disks but virtualized. The OS disk type determines the performance of the VM operating system disk.     |
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+## Add artifacts to a lab VM
 
-    Goal: List the steps they'll do to complete the exercise.
+1. Select **Add or Remove Artifacts**
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-basic-settings-add-artifact.png" alt-text="Screenshot that shows the basic settings screen, highlighting the link to add and remove artifacts.":::
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. On the **Add artifacts** page, select **Azure PowerShell** from the list, select the chevron next to it, and then select **OK** in the right pane to add the **Azure PowerShell** artifact to the list of selected artifacts.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-add-artifacts.png" alt-text="Screenshot that shows the screen for adding artifacts to a lab VM.":::
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Select **OK** to confirm the selected artifacts.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Select the **Advanced Settings** tab and provide the following information:
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+    |Field  |Value |Description  |
+    |---------|---------|---------|
+    |Make this machine claimable     | Yes | Create a claimable VM, which has no owner assigned to it.        |
+    |Number of instances     | 2 | Create a pool of lab VMs. |
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-advanced-settings.png" alt-text="Screenshot that shows the advanced settings screen when adding a new lab VM to a lab.":::
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+## Create the lab VM
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. Return to the **Basic Settings** tab and then select **Create**.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-create.png" alt-text="Screenshot that shows the basic settings screen when adding a new lab VM to a lab.":::
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+1. You're returned to the **DevTest Lab** page. Under **My Lab**, select **Claimable virtual machines**.
 
-<!-- Do not add a unit summary or references/links -->
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png" alt-text="Screenshot that shows the list of claimable virtual machines.":::
+
+1. After a few minutes, select **Refresh** if your virtual machines don't appear. Installation times will vary based on the selected hardware, base image, and artifact(s). The installation for the configurations used in this exercise was approximately 11 minutes.
+
+## Claim the VM
+
+1. On the **DevTest Lab** page, under **My Lab**, select **Claimable virtual machines**.
+
+    You should see the two claimable VMs that you created earlier. They should have the **Available** status.
+
+1. Select the ellipsis (**...**) at the end one of the VMs in the list, and then select the **Claim machine** menu item.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines.":::
+
+1. Refresh the list of claimable VMs. The VM you've claimed should no longer be in the list.
+
+1. On the **DevTest Lab** page, select **Overview**. You should see the claimed VM in the **My virtual machines** list.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/my-virtual-machines.png" alt-text="Screenshot that shows the list of my virtual machines on the lab overview page.":::
+
+## Connect using RDP
+
+1. On the **DevTest Lab** page, select **Overview**.
+
+1. Select the ellipsis (**...**) next the VM in **My virtual machines**, and then select the **Connect** menu item.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-connect.png" alt-text="Screenshot that shows the context menu to connect to a lab VM.":::
+
+1. Your browser will now download a remote desktop (RDP) file, which has the configuration to connect to the lab VM.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/download-rdp.png" alt-text="Screenshot that shows the downloaded RDP file in the browser downloads list.":::
+
+1. Open the RDP file to connect to the lab VM. Enter the user name and password details that you used earlier for creating the lab VM.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-rdp-session.png" alt-text="Screenshot that shows the desktop of the lab VM in a remote desktop session.":::
+
+## Verify the artifact configuration
+
+1. Inside the lab VM remote desktop session, start **Windows PowerShell**.
+
+1. Verify that the Azure PowerShell module is available on the lab VM, by entering the following command:
+
+    ```powershell
+    Get-InstalledModule -Name Azure
+    ```
+
+    The command result will show the currently installed version of Azure PowerShell.
+
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-azure-powershell.png" alt-text="Screenshot that shows the output of the PowerShell command.":::
