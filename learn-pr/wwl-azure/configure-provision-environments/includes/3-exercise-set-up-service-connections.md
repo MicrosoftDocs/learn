@@ -84,13 +84,10 @@ For example, you might need to get your source code from GitHub. In this case, l
     :::image type="content" source="../media/06-10-added-file-copy-d3230ff3.png" alt-text="Added file copy.":::
 
 
-10. Click the **File Copy** task to see the required settings.
-
-    > [!NOTE]
-    > Use the latest Task version.
-
+10. Click the **File Copy** task to see the required settings. Select the latest task version.
+    
     :::image type="content" source="../media/06-11-required-settings-1f427416.png" alt-text="Required settings.":::
-
+    
 
 11. Set the **Display Name** to **Backup website zip file**, click the ellipsis beside **Source, locate** the file as follows, and click **OK** to select it.
 
