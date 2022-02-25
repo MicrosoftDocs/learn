@@ -1,4 +1,4 @@
-So far in this module, we've focused on capturing and prioritizing your assumptions. In the next two units, we'll focus on testing critical assumptions by using customer interviews and experiments.
+So far in this module, we've focused on capturing and prioritizing your assumptions. In this unit and the next one, we'll focus on testing critical assumptions by using customer interviews and experiments.
 
 ## Planning and conducting customer interviews
 
@@ -63,7 +63,7 @@ User personas are important because they help you develop empathy for your users
 
 User personas are based on the insights you've gleaned from customer interviews. If you plan to serve multiple customer segments, it's helpful to have a different persona to represent each of these.
 
-When you're creating your user personas, you should ask yourself: Who are we building this product for? Why would it be important to them? How will they use it? What barriers are they facing that we can remove?
+When you're creating your user personas, ask yourself: Who is the target customer for this product? Why would it be important to them? How will they use it? What barriers are they facing that we can remove?
 
 It's a good idea to include a few fictional details to make user personas feel as realistic as possible.
 
@@ -74,7 +74,7 @@ A basic user persona should include at least the following:
 - A photo to represent the user and make them seem like a real person.
 - Motivations that describe them as a person.
 - Personality type.
-- Goals for using your product (drawing on jobs to be done, pains, and gains, as discussed in the previous units).
+- Goals for using your product (drawing on jobs to be done, pains, and gains, as discussed in previous units).
 - Frustrations that they encounter while trying to do the job that your product focuses on.
 - Brands that they currently use in relation to their goals.
 - Technology that they have access to and regularly use.
@@ -89,4 +89,4 @@ She has incorporated some of the common themes that arose in her interviews with
 
 ## Task: Create your own user persona
 
-Create a user persona that represents what you believe is your primary target user. Give the persona a name and description. Complete as many details as you can by using what you currently know about your target users. Check out the resources at the end of this module for some user persona templates and inspiration.
+Create a user persona that represents what you believe is your primary target user. Give the persona a name and description. Complete as many details as you can by using what you currently know about your target users. Check out the resources at the end of this module for some user persona templates.

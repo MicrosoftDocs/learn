@@ -42,15 +42,18 @@ It's best to start with the blocks for problem, customer segments, solution, and
 
 Now that you've captured assumptions that relate to your startup's value proposition and business model, it's time to work out which of them are the most critical to test with customers.
 
-We can use design thinking principles to identify three categories of assumptions that you should test. They can be summarized in the following three questions:
+We can use design thinking principles to identify three categories of assumptions that you should test. They can be summarized in the following three questions about your product:
 
-- Is your product *desirable*?
+- Is it *desirable*?
+
   Do customers want it? Is this a problem that really exists and that your customers really care about?
 
 - Is it *feasible*?
+
   Can you actually build this product? Do you have the technical skills? Do you have the necessary domain knowledge and the right connections?
 
 - Is it *viable*?
+
   Can you build a commercially successful business around the product? Are there enough potential customers that will pay enough for the product to achieve your commercial goals? Can you acquire customers cheaply enough that the lifetime value of those customers will be larger than the cost of acquiring them?
 
 For your startup to be successful, you need a product that's desirable and feasible and viable. This can be represented as the intersection of three sets in a Venn diagram.
@@ -69,9 +72,9 @@ One way to do this is to plot each assumption on an assumptions matrix. The vert
 
 :::image type="content" source="../media/learning-path-assumptions.png" alt-text="Chart that shows a matrix. One dimension runs from important to trivial. The other runs from known to unknown.":::
 
-In this context, an *important* assumption is one that's critical to the success of the business. If it proves to be wrong, then your business is unlikely to succeed. A *trivial* assumption, on the other hand, is one where it doesn't matter much whether it's right or wrong.
+In this context, an *important* assumption is one that's critical to the success of the business. If it proves to be wrong, then your business is unlikely to succeed. On the other hand, whether a *trivial* assumption is right or wrong doesn't matter much.
 
-Similarly, an assumption that is *known* is one about which you have a high degree of confidence based on some facts or evidence. An *unknown* assumption is one about which you're really just guessing.
+Similarly, a *known* assumption is one about which you have a high degree of confidence based on some facts or evidence. An *unknown* assumption is one about which you're really just guessing.
 
 It stands to reason that the assumptions you should focus on in testing are the ones that are both important and unknown. By plotting all of your assumptions in this simple matrix, you can quickly arrive at a manageable number that you need to test. Ideally, you'll have at least one assumption in this quadrant from each category of desirable, feasible, and viable.
 

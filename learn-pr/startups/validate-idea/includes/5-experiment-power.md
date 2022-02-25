@@ -1,8 +1,8 @@
 We've discussed how customer interviews can be a useful way to test your assumptions. Customer interviews are, in fact, a type of experiment. In this unit, we'll discuss several other types of experiments that will help you expand on the insights gleaned from customer interviews.
 
-Experiments range in complexity from simply asking a user to provide their email address to observing them as they interact with your minimum viable product (MVP), or asking them to purchase or pre-purchase your product.
+Experiments range in complexity from simply asking users to provide their email address to observing them as they interact with your minimum viable product (MVP), or asking them to purchase or pre-purchase your product.
 
-Startup founders can use experiments to test a specific hypothesis by providing an input to the user and measuring the output. The output is usually in the form of user actions.
+Startup founders can use experiments to test a specific hypothesis by providing an input to users and measuring the output. The output is usually in the form of user actions.
 
 Each experiment should have at least the following elements:
 
@@ -21,29 +21,29 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Description:** Create an online ad (search-based ad, display ad, or social media ad) based on your proposed value proposition. Target customers who match your ideal customer persona.
 
-**Purpose:** Test whether your target customer will respond to a call to action such as visiting your website.
+**Purpose:** Test whether your target customers will respond to a call to action such as visiting your website.
 
 **Pros:** This experiment type produces a simple-to-track click-through rate and conversion rate, if you correctly set up analytics before launching the ad.
 
-**Cons:** This experiment type demonstrates only relatively weak interest. Getting a user to select a link may not translate to strong-enough interest to use or pay for your product.
+**Cons:** This experiment type demonstrates only relatively weak interest. Getting users to select a link might not translate to strong-enough interest to use or pay for your product.
 
 **Practical tips:** Search term ads are valuable for testing interest among users who are already aware of the problem and are searching for a solution. Display ads and social media ads are better suited to users who haven't yet reached this point of awareness.
 
 ## Experiment type: Landing page
 
-**Description:** Create a simple website (usually a single page) that describes your product and value proposition, and that asks the customer to respond to a call to action. This might be a request to provide their email address (weak evidence of interest), complete an online form (stronger evidence), or pre-purchase your product (even stronger).
+**Description:** Create a simple website (usually a single page) that describes your product and value proposition, and that asks customers to respond to a call to action. This might be a request to provide their email address (weak evidence of interest), complete an online form (stronger evidence), or pre-purchase your product (even stronger).
 
-**Purpose:** Test whether your target customer will respond to a call to action.
+**Purpose:** Test whether your target customers will respond to a call to action.
 
 **Pros:** This experiment type is inexpensive to set up and run.
 
-**Cons:** This experiment type requires a suitable domain and sufficient design input to ensure that the page looks professional.
+**Cons:** You need a suitable domain and sufficient design input to ensure that the page looks professional.
 
 **Practical tips:** Ensure that your call to action is above the fold because not all visitors will scroll through the whole page. You can drive traffic to the site by using methods like online ads, email campaigns, social media, and posting in relevant online forms. Use quotes from your customer interviews to highlight customer pain points. Ensure that you're always up front about the status of your product.
 
 ## Experiment type: Clickable prototype
 
-**Description:** Create a realistic mock-up of key screens from within your product. Mock-ups like this are generally implemented through a tool such as Figma, InVision, or Microsoft Visio.
+**Description:** Use a tool like Figma, InVision, or Microsoft Visio to create a realistic mock-up of key screens from within your product.
 
 **Purpose:** Observe users interacting with something that resembles your final product, and collect their feedback afterward.
 
@@ -51,17 +51,17 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Cons:** This experiment type requires design expertise and an investment of time in capturing individual feedback. It requires users to commit a meaningful amount of time to engage with your prototype.
 
-**Practical tips:** A clickable prototype is best delivered in person. You provide the user with context at the start and invite their feedback at the end.
+**Practical tips:** A clickable prototype is best delivered in person. You provide users with context at the start and invite their feedback at the end.
 
 ## Experiment type: Concierge
 
-**Description:** Deliver an outcome to the customer manually. Walk the customer through the steps that your software product will ultimately automate. For example, if the outcome is a report that you provide to the customer based on their inputs, you might be able to capture the inputs via a simple form, manually create the report, and send it to them.
+**Description:** Deliver an outcome to customers manually. Walk customers through the steps that your software product will ultimately automate. For example, if the outcome is a report that you provide to customers based on their inputs, you might be able to capture the inputs via a simple form, manually create the report, and send it to them.
 
-**Purpose:** By delivering an outcome to the customer, you can test whether they perceive the outcome as valuable. In many cases, this is a more important assumption to test than anything to do with the process by which you achieve the outcome.
+**Purpose:** By delivering an outcome to customers, you can test whether they perceive the outcome as valuable. In many cases, this is a more important assumption to test than anything to do with the process by which you achieve the outcome.
 
-**Pros:** This experiment type can often be done quickly and cheaply, because you can deliver an outcome without having to build the product. It allows for collection of feedback from the customer after they've received the outcome and derived the value. This can also be an opportunity to make sales, as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and to ensure that you integrate any learnings when you actually begin building the product.
+**Pros:** This experiment type can often be done quickly and cheaply, because you can deliver an outcome without having to build the product. It allows for collection of feedback from customers after they've received the outcome and derived the value. This can also be an opportunity to make sales, as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and to ensure that you integrate any learnings when you actually begin building the product.
 
-**Cons:** This experiment type doesn't scale well, so you'll be able to deliver an outcome to only a limited number of customers. Depending on the complexity of the process, you might need to set expectations so the customer knows when they can expect a response.
+**Cons:** This experiment type doesn't scale well, so you'll be able to deliver an outcome to only a limited number of customers. Depending on the complexity of the process, you might need to set expectations so that customers know when they can expect a response.
 
 **Practical tips:** It's often a good idea to have at least a landing page that customers can visit to start the process of signing up and to provide any required inputs. Make sure it's easy for customers to leave written feedback and a testimonial if they found the outcome valuable.
 
@@ -71,11 +71,11 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Purpose:** A Wizard of Oz experiment allows you to test both the perceived value of the outcome and the process by which you deliver it.
 
-**Pros:** This experiment type provides a more robust test of pricing than the concierge method, because from the customer's perspective, they're buying and using your product.
+**Pros:** This experiment type provides a more robust test of pricing than the concierge method, because from the customers' perspective, they're buying and using your product.
 
-**Cons:** This experiment type generally doesn't scale to a large number of customers because the process is manual. It's suited to products that create a single output for the customer (such as a report or actioning something), but not to products that require significant customer interaction.
+**Cons:** This experiment type generally doesn't scale to a large number of customers because the process is manual. It's suited to products that create a single output for customers (such as a report or actioning something), but not to products that require significant customer interaction.
 
-**Practical tips:** Be prepared to deliver an outcome to the customer quickly, because they're unaware that the behind-the-scenes process is being done manually. It's generally a good idea to price your product so that you can deliver it profitably by using Wizard of Oz. If you can do this, you can continue to deliver value manually for as long as you like. When you automate the process, your profit margin can only improve.
+**Practical tips:** Be prepared to deliver an outcome to customers quickly, because they're unaware that the behind-the-scenes process is being done manually. It's generally a good idea to price your product so that you can deliver it profitably by using Wizard of Oz. If you can do this, you can continue to deliver value manually for as long as you like. When you automate the process, your profit margin can only improve.
 
 ## Experiment type: Mock sale
 
@@ -93,9 +93,9 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Description:** Create a basic functioning software product that delivers the minimum feature set (usually a single feature) to test a core assumption.
 
-**Purpose:** Deliver sufficient value to customers through an MVP to meet a particular customer job, solve a pain point, and enable you to learn about the customer's needs and experience.
+**Purpose:** Deliver sufficient value to customers through an MVP to meet a particular customer job, solve a pain point, and enable you to learn about customers' needs and experience.
 
-**Pros:** An MVP experiment can convert users from a free trial to a paying customer. Paying for a single feature is a strong signal of customer interest.
+**Pros:** An MVP experiment can convert users from a free trial to paying customers. Paying for a single feature is a strong signal of customer interest.
 
 **Cons:** For some startups, a significant effort is required to create an MVP that actually delivers value. In some industries (for example, healthcare and cybersecurity), there might be an unacceptable risk of the MVP failing or not complying with regulatory requirements.
 
@@ -112,8 +112,8 @@ Select at least one experiment type that makes sense for your startup. Map out t
 ## Conclusions
 
 - You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
-- The value that a product creates for a company's customers can be described with reference to the jobs that it helps the customer get done, the pains that it takes away, and the gains that it creates.
-- The Value Proposition Canvas is a useful tool for designing a value proposition by engaging with customers to understand their jobs to be done, pains, and gains, and then creating a product that accurately addresses these elements.
+- The value that a product creates for a company's customers can be described with reference to the jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
+- The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
 - The only way to know whether your assumptions are correct is to test them with customers.
 - Prioritize testing your assumptions based on how critical each is to the success of the business and how much you already know. 
 - There are many ways to test your assumptions. Interviewing potential customers is a good place to start. Aim to run multiple low-fidelity experiments before you commit to building your product.
