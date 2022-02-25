@@ -19,7 +19,7 @@ To get the most out of customer interviews, it's important that you construct we
 - Ask what other solutions they've tried and what they liked or disliked about those solutions.
 - Ask how much time and money they've spent trying to solve the problem.
 - Invite them to suggest others you should speak to. This is an efficient way of recruiting more customers to interview.
-- Finish each interview with "What else should I have asked you?" in case they have other insights that you're questions didn't elicit.
+- Finish each interview with "What else should I have asked you?" in case they have other insights that your questions didn't elicit.
 
 **Don't:**
 
@@ -81,9 +81,9 @@ A basic user persona should include at least the following:
 
 ## Scenario: A user persona
 
-Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She's constructed the following "busy professional" persona to represent this target user.
+Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She has constructed the following "busy professional" persona to represent this target user.
 
-She's incorporated some of the common themes that arose in her interviews with customers, such as the banking brands that they currently associate with and the software products that they're familiar with and typically use.
+She has incorporated some of the common themes that arose in her interviews with customers, such as the banking brands that they currently associate with and the software products that they're familiar with and typically use.
 
 :::image type="content" source="../media/learning-path-peter.png" alt-text="Image that shows basic characteristics of a busy-professional persona. Examples include goals, frustrations, and personality.":::
 

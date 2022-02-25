@@ -103,7 +103,7 @@ Now move to the left side of the canvas and design your value proposition. Popul
 
 ## Task: Complete your own Value Proposition Canvas
 
-Let's put the Value Proposition Canvas into practice. Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.
+Let's put the Value Proposition Canvas into practice. Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) from Strategyzer.com.
 
 Many people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
 
