@@ -14,29 +14,29 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "The location, or Azure region, of virtual machines:"
+  - content: "Resources in Azure are hosted in an Azure region. The location of a lab VM is configured when:"
     choices:
-    - content: "Is configured when you add a lab VM."
+    - content: "Adding a lab VM."
       isCorrect: false
       explanation: "Try again. The Azure region for a lab VM cannot be configured."
-    - content: "Is configured when you claim a VM."
+    - content: "Claiming a VM."
       isCorrect: false
       explanation: "Try again. The Azure region for a claimable VM cannot be configured."
-    - content: "Is configured when you create a DevTest Lab."
+    - content: "Creating a DevTest Lab."
       isCorrect: true
       explanation: "Correct. The location of the DevTest Lab determines the location of all VMs created in the lab."
-  - content: "Jim is tasked to debug a complex application problem in his lab VM. He's new to the team and is not able to configure all application dependencies to reproduce the problem. He asks Eve, who's been with the team for over a year, for help. What is the best way for Eve to set up the application Jim's lab VM?"
+  - content: "Jim is tasked to debug a complex application problem. He's new to the team and is not able to configure all application dependencies to reproduce the problem in his developer VM. He asks his colleague, Eve, for help. What is the best way for Eve to set up the application in Jim's developer VM?"
     choices:
     - content: "Eve opens the Azure portal, selects the development lab, and connects to Jim's lab VM. She then configures the application. Jim can now debug the application problem."
       isCorrect: false
-      explanation: "Try again. To connect to a lab VM, you first need to claim the VM. Only one person can claim a lab VM at a time. Because Jim owns the lab VM, Eve cannot connect to it."
-    - content: "Eve opens the Azure portal, selects the development lab, and claims a new lab VM. She configures the application in the lab VM. Jim can now restart his lab VM to debug the application problem."
+      explanation: "Try again. To connect to a lab VM, you first need to claim the VM. Only one person can claim a lab VM at a time. Because Jim already owns the lab VM, Eve cannot connect to it."
+    - content: "Eve opens the Azure portal, selects the development lab, and claims a new lab VM. She then configures the application in the lab VM. Jim can now restart his lab VM to debug the application problem."
       isCorrect: false
       explanation: "Try again. Eve makes the changes in a different lab VM than Jim. The application changes she makes in her VM do not show in Jim's lab VM, even when he restarts his VM."
-    - content: "Jim unclaims his lab VM in the Azure portal. Eve in turn claims the VM, configures the application, and then unclaims the VM. Jim can now claim back his VM and debug the application."
+    - content: "Jim unclaims his lab VM in the Azure portal. Eve in turn claims the VM, configures the application, and then unclaims the VM. Jim can now take ownership back and debug the application."
       isCorrect: true
       explanation: "Correct. Eve needs to make the application changes in the same lab VM than Jim. Because a VM can only be used by one person at a time, Jim needs to first unclaim the VM. Eve can then claim the VM, make the changes, and then hand the VM back to Jim."
-  - content: "The eCommerce company has developed their platform in Node.js on Ubuntu. The Node.js development team uses a single lab in DevTest Labs. The company plans to onboard a new Python development team to build a recommendation engine. What is the best approach to provide the Python developers with a development environment in DevTest Labs?"
+  - content: "The eCommerce company has developed their platform in Node.js on Ubuntu. The Node.js development team uses a single lab in DevTest Labs. The company now plans to onboard a new Python development team to build a recommendation engine. What is the best approach to provide the Python developers with a development environment in DevTest Labs?"
     choices:
     - content: "Add new claimable VMs for Python development in the existing lab. Specify Python as an artifact when creating the VMs."
       isCorrect: true
@@ -44,6 +44,6 @@ quiz:
     - content: "Reuse the claimable VMs for both Node.js and Python developers. The Python developers add the Python artifact when they claim a VM."
       isCorrect: false
       explanation: "Try again. The Python developers may have specific needs that are different from the Node.js developers. Reusing the same lab VMs may result in software incompatibilities, or may require VM resizing."
-    - content: "Create a new lab in your DevTest Labs account for Python development. Create a set of claimable VMs that have the Python artifact."
+    - content: "Create a new lab for Python development in your DevTest Labs resource. Then, create a set of claimable VMs that have the Python artifact."
       isCorrect: false
-      explanation: "Try again. This approach is possible but increases the IT management cost because there are multiple labs. This is especially the case if the teams only differ in the development technology they use."
+      explanation: "Try again. This approach is possible but increases the IT management cost because there are multiple labs to govern."
