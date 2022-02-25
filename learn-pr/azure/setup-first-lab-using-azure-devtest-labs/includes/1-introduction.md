@@ -4,7 +4,7 @@ Azure DevTest Labs lets you simplify and accelerate the process of creating virt
 
 ## Example scenario
 
-Suppose you work at an e-commerce company that offers fashion and lifestyle products to consumers. Your company operates in a highly competitive market where you need to innovate rapidly to keep your customer engagement high.
+Suppose you work at an eCommerce company that offers fashion and lifestyle products to consumers. Your company operates in a highly competitive market where you need to innovate rapidly to keep your customer engagement high.
 As the development team expands rapidly to keep up with new feature development, you have to quickly spin up and configure developer machines.
 At the end of each weekly sprint, the test team runs their test plans on the latest application version in a fresh test environment.
 
