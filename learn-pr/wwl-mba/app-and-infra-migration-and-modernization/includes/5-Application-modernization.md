@@ -9,6 +9,8 @@ Watch this video to learn more about key capabilities for application modernizat
 :::column-end:::
 :::row-end:::
 
+</br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqMf5]
 
 In this video, we introduced refactor, rearchitect, and rebuild as strategies for application modernization and the business benefits. Next, we’ll see how The Absolut Company modernized their applications in Azure.

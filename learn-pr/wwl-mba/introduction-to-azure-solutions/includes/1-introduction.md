@@ -11,6 +11,8 @@ Watch this video from Julia White to learn why you should digitally transform yo
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!video https://www.microsoft.com/videoplayer/embed/RE43XPS]
 
 In this module, you will:

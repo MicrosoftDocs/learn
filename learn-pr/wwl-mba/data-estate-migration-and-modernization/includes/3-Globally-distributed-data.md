@@ -20,6 +20,8 @@ Watch this video to learn more about globally distributed data and Azure Cosmos 
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqJBc]
 
 ### What does a globally distributed data architecture look like?
@@ -40,6 +42,8 @@ Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB 
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 

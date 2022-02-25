@@ -20,6 +20,8 @@ Watch this video to get an end-to-end understanding of each of these benefits an
 :::column-end:::
 :::row-end:::
 
+</br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKA]
 
 As you saw in the video, Azure offers an array of comprehensive benefits. You can consult with a partner, or Microsoft, to help you migrate to Azure.

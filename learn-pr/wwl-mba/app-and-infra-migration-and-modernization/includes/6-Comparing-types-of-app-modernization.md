@@ -13,6 +13,8 @@ Watch this video to learn about refactoring your applications with container tec
 :::column-end:::
 :::row-end:::
 
+</br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr240]
 
 :::row:::
@@ -79,6 +81,8 @@ Watch this video to learn about rearchitecting with microservices.
 :::column-end:::
 :::row-end:::
 
+</br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKB]
 
 As you saw in the video, with microservices, each service is independent. Each service is a new project that can be developed on its own schedule, using any language or stack that best fits current requirements. Scaling up is easier than with VMs or containers, it just requires deploying additional services as needed. 
@@ -97,6 +101,8 @@ Watch the video to learn about cloud native capabilities.
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqP1K] 
 

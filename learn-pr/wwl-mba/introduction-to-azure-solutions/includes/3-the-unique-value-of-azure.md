@@ -20,6 +20,8 @@ Watch this video to learn more about how Azure makes developers and IT professio
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RSD3]
 
 ## Build on your terms
@@ -34,6 +36,8 @@ Watch this video to learn more about how developers can build on their terms wit
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RD3b]
 
@@ -50,6 +54,8 @@ Watch this video to learn more about how you can operate your hybrid solutions S
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RKOP]
 
 ## Trust your cloud
@@ -64,6 +70,8 @@ Watch this video to learn more about Azure as the *trusted* cloud.
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RVet]
 

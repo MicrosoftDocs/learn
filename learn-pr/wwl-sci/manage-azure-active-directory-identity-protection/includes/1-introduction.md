@@ -9,6 +9,8 @@ In this video, get a high-level overview of Identity Protection, a feature of Az
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmC]
 
 

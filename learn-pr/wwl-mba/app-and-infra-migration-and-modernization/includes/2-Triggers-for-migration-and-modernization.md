@@ -11,6 +11,8 @@ Watch this video to understand common triggers to modernize your apps.
 :::column-end:::
 :::row-end:::
 
+</br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Vt]
 
 Now that we’ve reviewed modernization triggers, let’s look at one example of a company investing in application modernization to enable new business opportunities to differentiate themselves from their competitors.
@@ -34,6 +36,8 @@ Watch this video to see how Alaska Airlines modernized their business using Micr
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2WRoM]
 

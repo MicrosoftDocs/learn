@@ -15,6 +15,8 @@ Watch this video to learn more.
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WKrQ]
 
 The **Azure readiness guide** introduces features that help you organize resources, control costs, and secure and manage your organization. Links to sample skills-readiness learning paths on Microsoft Learn and Azure Support are available in the *Summary and resources* unit at the end of this module.

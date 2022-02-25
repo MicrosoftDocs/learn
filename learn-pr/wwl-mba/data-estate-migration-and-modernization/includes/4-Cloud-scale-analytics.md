@@ -15,6 +15,8 @@ Watch this video to learn more about cloud scale analytics.
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU1A]
 
 As you saw in the video, cloud scale analytics allows you to generate insights at scale, from ingestion through reporting. The different offerings listed below map to common business needs:
@@ -35,6 +37,8 @@ Watch this video to understand the process by which common types of data are tra
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCz]
 
@@ -57,6 +61,8 @@ Watch this video to see how Azure’s cloud scale analytics has helped in AB InB
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NPWx]
 

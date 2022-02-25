@@ -19,6 +19,8 @@ Watch this video to learn more.
 :::column-end:::
 :::row-end:::
 
+</br>
+
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU0Y]
 
 > [!TIP]
@@ -40,6 +42,8 @@ Watch this video to learn more.
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqZ7h]
 

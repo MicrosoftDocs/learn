@@ -17,6 +17,8 @@ David, Senior Product Marketing Manager for Azure Application Development, demon
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3dj5N]
 
 You've just seen how easy it is to migrate an application by using Azure App Service and then update it without changing any code by using Azure Logic Apps. Automation of manual tasks like this one will allow Tailwind Traders to scale, making it possible for the company to expand business.
