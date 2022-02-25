@@ -74,7 +74,7 @@ A basic user persona should include at least the following:
 - A photo to represent the user and make them seem like a real person.
 - Motivations that describe them as a person.
 - Personality type.
-- Goals for using your product (drawing on jobs-to-be-done, pains, and gains, as discussed in the previous unit).
+- Goals for using your product (drawing on jobs to be done, pains, and gains, as discussed in the previous units).
 - Frustrations that they encounter while trying to do the job that your product focuses on.
 - Brands that they currently use in relation to their goals.
 - Technology that they have access to and regularly use.

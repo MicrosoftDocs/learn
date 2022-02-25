@@ -113,7 +113,7 @@ Select at least one experiment type that makes sense for your startup. Map out t
 
 - You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
 - The value that a product creates for a company's customers can be described with reference to the jobs that it helps the customer get done, the pains that it takes away, and the gains that it creates.
-- The Value Proposition Canvas is a useful tool for designing a value proposition by engaging with customers to understand their jobs-to-be-done, pains, and gains, and then creating a product that accurately addresses these elements.
+- The Value Proposition Canvas is a useful tool for designing a value proposition by engaging with customers to understand their jobs to be done, pains, and gains, and then creating a product that accurately addresses these elements.
 - The only way to know whether your assumptions are correct is to test them with customers.
 - Prioritize testing your assumptions based on how critical each is to the success of the business and how much you already know. 
 - There are many ways to test your assumptions. Interviewing potential customers is a good place to start. Aim to run multiple low-fidelity experiments before you commit to building your product.

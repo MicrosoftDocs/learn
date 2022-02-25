@@ -1,6 +1,6 @@
 At the core of every startup is a value proposition. This statement explains what your product will do for your users and what benefits they'll derive from using it.
 
-When your startup is just an idea, the value proposition is basically a set of untested hypotheses. That is, you think you know which customers you'll serve, you think you know what job your product will do for them, and you think you know how your product will be valuable to them.
+When your startup is just an idea, the value proposition is basically a set of untested hypotheses. That is, you think you know which customers you'll serve, what job your product will do for them, and how your product will be valuable to them.
 
 In this unit, we'll use the Value Proposition Canvas. It's a simple one-page tool to capture and test each of these hypotheses and then use feedback from customers to refine it. This is important. If you guess wrong and build a product that doesn't do the job your customers need or doesn't create enough value for them, they won't use it and you won't have a business.
 
@@ -91,13 +91,13 @@ In the context of your own startup, make sure you're asking customers not just w
 
 The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) is a fantastic tool developed by Strategyzer. It's freely available for anyone to use as they visualize, design, and test business models.
 
-The purpose of the Value Proposition Canvas is to help you understand the needs of your target customer with reference to jobs-to-be-done, pains, and gains. It then helps you design your value proposition to accurately meet those needs.
+The purpose of the Value Proposition Canvas is to help you understand the needs of your target customer with reference to jobs to be done, pains, and gains. It then helps you design your value proposition to accurately meet those needs.
 
 :::image type="content" source="../media/value-proposition-canvas.png" alt-text="Diagram that shows a gift box in a square with pain relievers, products, and gain creators. A circle next to the square has gains, pains, and customer jobs.":::
 
 To use the canvas, start by describing the customer segment that you're focusing on in the upper-right box. Then move down and populate each of the three segments with responses from customers about what jobs they need to get done, what pains they want to have relieved, and what gains they want to achieve.
 
-After you've interviewed customers, you might start to see some trends in the jobs-to-be-done, pains, and gains they describe, and in how important they perceive each of these elements to be. These trends should give you insights that will help you focus on the most important outcomes as you begin designing your value proposition.
+After you've interviewed customers, you might start to see some trends in the jobs to be done, pains, and gains they describe, and in how important they perceive each of these elements to be. These trends should give you insights that will help you focus on the most important outcomes as you begin designing your value proposition.
 
 Now move to the left side of the canvas and design your value proposition. Populate each of the three segments by describing the product that you believe will get the customer's key jobs done, how it will relieve their most important pains, and how it will achieve their most important gains.
 

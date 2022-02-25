@@ -1,4 +1,4 @@
-There's a lot more to startups than just customer jobs-to-be-done, pains, and gains. In the beginning, your startup can be viewed as a large collection of assumptions, or untested hypotheses. It's vital that you decide which of these assumptions are most critical to the success of your company and systematically test them so that you know you're on the right track.
+There's a lot more to startups than just customer jobs to be done, pains, and gains. In the beginning, your startup can be viewed as a large collection of assumptions, or untested hypotheses. It's vital that you decide which of these assumptions are most critical to the success of your company and systematically test them so that you know you're on the right track.
 
 In this unit, we'll use the Lean Canvas as a tool for articulating assumptions about your business model. We'll then discuss ways to prioritize assumptions and test the most important ones with customers.
 

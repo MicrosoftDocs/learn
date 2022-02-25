@@ -21,5 +21,5 @@ By the end of the module, you'll be able to:
 - Use design thinking to identify critical assumptions.
 - Build user personas that represent your target customer.
 - Plan and conduct customer interviews.
-- Create different types of experiments to test your assumptions.
+- Create experiments to test your assumptions.
 - Use the results of your customer interviews and experiments to make decisions about what product to build.
