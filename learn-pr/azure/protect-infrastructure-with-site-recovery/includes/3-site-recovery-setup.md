@@ -11,7 +11,7 @@ We need to set up our environment for exercises in subsequent units. Because thi
 > [!NOTE]
 > If you want to complete the following setup, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume we have two VMs configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
+Let's assume we have two VMs configured in the organization. We'll configure the following services in the East US region to simulate the configured VMs.
 
 - A virtual network
 - Two VMs
