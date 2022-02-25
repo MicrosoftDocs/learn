@@ -18,25 +18,25 @@ The [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true), develope
 
 The Lean Canvas is based on the well-known Business Model Canvas by Alex Osterwalder. It uses the structure of the Business Model Canvas and applies it to early-stage startups. This process helps founders spell out assumptions that relate to nine building blocks of business models.
 
-For early-stage founders, the most critical assumptions about their startup's business model tend to relate to three segments:
-
-- **Customer Segments assumption**: You believe that you know which potential customers to focus on. You've identified an early-adopter persona that represents the customers you'll target first.
-
-- **Problem assumption**: You believe that you know what problem the target customers have, and that those customers view existing alternatives as inadequate.
-
-- **Solution assumption**: You believe that your product will be a better solution than existing alternatives. You believe that customers will choose your product because it will be a good fit for their needs.
+The Lean Canvas uses some of the inputs that we discussed earlier, such as customer, problem, and solution. It then adds vital business model blocks, such as revenue streams, cost structure, channels, and key metrics.
 
 :::image type="content" source="../media/lean-canvas.png" alt-text="Image that shows components that influence a startup business model. Examples include problems, solutions, cost structures, and revenue streams." lightbox="../media/lean-canvas-lightbox.png":::
 
-The Lean Canvas uses some of the inputs that we discussed earlier in this unit, such as customer, problem, and solution. It then adds vital business model blocks, such as revenue streams, cost structure, channels, and key metrics.
+For early-stage founders, the most critical assumptions about their startup's business model tend to relate to three areas:
+
+- **Customer segments**: You believe that you know which potential customers to focus on. You've identified an early-adopter persona that represents the customers you'll target first.
+
+- **Problem**: You believe that you know what problem the target customers have, and that those customers view existing alternatives as inadequate.
+
+- **Solution**: You believe that your product will be a better solution than existing alternatives. You believe that customers will choose your product because it will be a good fit for their needs.
 
 ## Task: Complete your own Lean Canvas
 
-Download the [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) from Leanstack.com.
+[Download the Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) from Leanstack.com.
 
 Print the Lean Canvas and place your assumptions on the relevant section by using sticky notes. Spend no more than 20 minutes. Aim to write no more than one short sentence on each sticky note, and keep to a maximum of three sticky notes per block.
 
-It's best to start with Problem, Customer Segments, Solution, and Unique Value Proposition because you've already worked on these blocks by using the Value Proposition Canvas. Then move on to the other blocks.
+It's best to start with the blocks for problem, customer segments, solution, and unique value proposition, because you've already worked on these in the Value Proposition Canvas. Then move on to the other blocks.
 
 ## Identify critical assumptions
 

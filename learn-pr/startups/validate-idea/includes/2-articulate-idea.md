@@ -53,7 +53,7 @@ Pains can also be personal to the individual user, such as frustration, fear, an
 
 It can be enlightening to talk to customers and understand what pains they want your product to take away so that you can build the right product. Your objective in talking to customers shouldn't be to sell them on your idea, but rather to ask a lot of open questions and understand as many of their pain points as you can.
 
-Your next job is to prioritize those pain points so that you can address the most significant ones with your product. Customers are much more likely to use and pay for a product that reduces or eliminates a pain that is severe and occurs frequently than a pain which is mild and occurs rarely.
+Your next job is to prioritize those pain points so that you can address the most significant ones with your product. Customers are much more likely to use and pay for a product that relieves a severe, frequent pain over a product that relieves a mild, infrequent pain.
 
 It's helpful to use a customer pain matrix that plots intensity versus frequency, as shown in the following chart. You should focus your attention on the pains in the upper-right quadrant.
 
@@ -77,7 +77,7 @@ If you deliver a significant gain to a customer, and it occurs quickly after the
 
 Create a customer pains matrix and a customer gains matrix for your target customer. Talk to some customers and populate the matrices with the pains and gains they've told you about. Which pains or gains do you think you should try to address?
 
-Completing this quick task will help you get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when you start writing copy for your website or anywhere else that you describe your product and its value proposition.
+Completing this quick task will help you get a feel for whether your product is viewed by customers as more of a pain reliever or a gain creator. This information will be extremely useful when you start writing copy for your website or for other places where you describe your product and its value proposition.
 
 ## Case study: Tylenol
 
@@ -89,7 +89,7 @@ In the context of your own startup, make sure you're asking customers not just w
 
 ## The Value Proposition Canvas
 
-The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) is a fantastic tool developed by Strategyzer. It's freely available for anyone to use as they visualize, design, and test business models.
+The [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) is a useful tool developed by Strategyzer. It's freely available for anyone who wants to visualize, design, and test business models.
 
 The purpose of the Value Proposition Canvas is to help you understand the needs of your target customer with reference to jobs to be done, pains, and gains. It then helps you design your value proposition to accurately meet those needs.
 
@@ -103,7 +103,7 @@ Now move to the left side of the canvas and design your value proposition. Popul
 
 ## Task: Complete your own Value Proposition Canvas
 
-Let's put the Value Proposition Canvas into practice. Download the [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) from Strategyzer.com.
+Let's put the Value Proposition Canvas into practice. [Download the Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) from Strategyzer.com.
 
 Many people find it useful to print the canvas and use sticky notes to capture key points from customer conversations. Do whatever works best for you.
 
