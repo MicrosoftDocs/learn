@@ -2,7 +2,7 @@ There's no single right or wrong pitch deck format to use, although experts gene
 
 The following outline contains a checklist of key topics that most investors want to see covered, along with comments about what should go on each slide. As a business founder, you should feel free to reorder the topics to suit your delivery.
 
-> [!TIP]
+> [!NOTE]
 > Work that you've completed earlier feeds directly into what investors are looking for:
 > 
 > - The [attributes of successful companies checklist](../../fundamentals/3-success.yml?azure-portal=true#worksheet)
@@ -18,7 +18,7 @@ The following outline is a guide to what you might include in your investor pitc
 
 - A one-line description of what your company does.
 - A brief summary of current status and key facts to help put the rest of your presentation in context. For example, include the launch date, current revenues, growth rate, previous funding received, and notable milestones.
-- Why are you here? For example, you might be raising a $750,000 seed round.
+- Why are you pitching to this audience at this time? For example, you might be raising a $750,000 seed round.
 
 ### Problem or opportunity
 
@@ -49,14 +49,14 @@ The following outline is a guide to what you might include in your investor pitc
 - Demonstrate *founder-market fit*. What's your authentic connection to the problem you're solving? Do you and your cofounders have deep domain knowledge or hands-on experience in this sector? Have you lived and breathed the customer problem you're solving? Is it something that has affected you personally?
 - What projects have you undertaken before? How do you know you can function well as a team? If you have previous startup experience, what did you learn from it?
 - What unique insights do you bring? Why has nobody else seen this opportunity?
-- List any existing investors or advisory board members.
+- List any current investors or advisory board members.
 - What gaps exist?
 
 ### Market
 
 - Addressable market size.
-- It's usually better to derive an addressable market figure from the bottom up (for example, we sell our product for \$A, there are B potential customers, so the addressable market is \$A x B) rather than from the top down (for example, by referring to a market research report that says the total market is \$X and we hope to capture Y percent).
-- Is it a huge existing market that's dominated by old companies and ripe for disruption? Or a nascent market that's about to become huge? Why?
+- It's usually better to derive an addressable market figure from the bottom up (for example, we sell our product for $A, there are B potential customers, so the addressable market is $A x B) rather than from the top down (for example, by referring to a market research report that says the total market is $X and we hope to capture Y percent).
+- Is it a huge current market that's dominated by old companies and ripe for disruption? Or a nascent market that's about to become huge? Why?
 
 ### Validation
 
@@ -105,12 +105,12 @@ The following outline is a guide to what you might include in your investor pitc
 - What will you use the funds for?
 - How much runway does that give you?
 - Target close date.
-- Any existing investor commitments.
+- List any current investor commitments.
 - Other needs, such as introductions, key hires, or advisory board?
 
 ### Closing slide
 
-- Summary: Restate the two to three key points that you want the audience to remember.
+- Summary: Restate the two or three key points that you want the audience to remember.
 - Provide contact details.
 
 ### Backup slides
