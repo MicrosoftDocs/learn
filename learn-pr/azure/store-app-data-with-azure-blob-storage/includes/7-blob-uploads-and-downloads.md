@@ -203,79 +203,79 @@ Your app is finished, so let's deploy it and see it work. We'll use the Maven Pl
 
 1. In the editor, open the file `pom.xml` and add the following `plugins` under the `build` xml tag.
 
-   ```xml
-   <plugins>
-      <plugin>
-        <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>2.3.0</version>
-        <configuration>
-          <schemaVersion>v2</schemaVersion>
-          <subscriptionId>${env.AZ_SUBSCRIPTION_ID}</subscriptionId>
-          <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
-          <appName>${env.AZ_APP_NAME}</appName>
-          <pricingTier>${env.AZ_PRICING_TIER}</pricingTier>
-          <region>${env.AZ_REGION}</region>
-          <runtime>
-            <os>Linux</os>
-            <javaVersion>Java 11</javaVersion>
-            <webContainer>Tomcat 9.0</webContainer>
-          </runtime>
-          <deployment>
-            <resources>
-              <resource>
-                <directory>${project.basedir}/target</directory>
-                <includes>
-                  <include>*.war</include>
-                </includes>
-              </resource>
-            </resources>
-          </deployment>
-                <appSettings>
-                  <property>
-                     <name>STORAGE_CONNECTION_STRING</name>
-                     <value>${env.AZ_STORAGE_CONNECTION_STRING}</value>
-                  </property>
-                  <property>
-                     <name>STORAGE_CONTAINER_NAME</name>
-                     <value>${env.AZ_STORAGE_CONTAINER_NAME}</value>
-                  </property>
-               </appSettings>
-        </configuration>
-      </plugin>
-    </plugins>
-    ```
+    ```xml
+    <plugins>
+       <plugin>
+         <groupId>com.microsoft.azure</groupId>
+         <artifactId>azure-webapp-maven-plugin</artifactId>
+         <version>2.3.0</version>
+         <configuration>
+           <schemaVersion>v2</schemaVersion>
+           <subscriptionId>${env.AZ_SUBSCRIPTION_ID}</subscriptionId>
+           <resourceGroup>${env.AZ_RESOURCE_GROUP}</resourceGroup>
+           <appName>${env.AZ_APP_NAME}</appName>
+           <pricingTier>${env.AZ_PRICING_TIER}</pricingTier>
+           <region>${env.AZ_REGION}</region>
+           <runtime>
+             <os>Linux</os>
+             <javaVersion>Java 11</javaVersion>
+             <webContainer>Tomcat 9.0</webContainer>
+           </runtime>
+           <deployment>
+             <resources>
+               <resource>
+                 <directory>${project.basedir}/target</directory>
+                 <includes>
+                   <include>*.war</include>
+                 </includes>
+               </resource>
+             </resources>
+           </deployment>
+                 <appSettings>
+                   <property>
+                      <name>STORAGE_CONNECTION_STRING</name>
+                      <value>${env.AZ_STORAGE_CONNECTION_STRING}</value>
+                   </property>
+                   <property>
+                      <name>STORAGE_CONTAINER_NAME</name>
+                      <value>${env.AZ_STORAGE_CONTAINER_NAME}</value>
+                   </property>
+                </appSettings>
+         </configuration>
+       </plugin>
+     </plugins>
+     ```
 
 1. The following commands prepare environment variables for the Maven Plugin for Azure App Service. You'll extract the storage account's connection string with `az storage account show-connection-string`, the subscription ID with `az account show`, and set region, pricing, container name, and app name. The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
-   ```azurecli
-   export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
-   export AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-   export AZ_REGION=centralus
-   export AZ_APP_NAME=<your-unique-app-name>
-   export AZ_PRICING_TIER=F1
-   export AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
-   export AZ_STORAGE_CONTAINER_NAME=files
-   ```
+    ```azurecli
+    export AZ_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
+    export AZ_RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export AZ_REGION=centralus
+    export AZ_APP_NAME=<your-unique-app-name>
+    export AZ_PRICING_TIER=F1
+    export AZ_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
+    export AZ_STORAGE_CONTAINER_NAME=files
+    ```
 
-   > [!TIP]
-   > The minimum recommended tier for deploying real world Java applications is any Premium V2 Service Plan.
+    > [!TIP]
+    > The minimum recommended tier for deploying real world Java applications is any Premium V2 Service Plan.
 
 1. Now, you'll deploy your app. The following command will build the app into `ROOT.war`, and deploy the WAR file to App Service. The Maven Plugin for Azure App Service will automatically provision resources at the first deployment attempt.
 
-   > [!NOTE]
-   > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands. You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location.
+    > [!NOTE]
+    > Make sure your shell is still in the `mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` directory before running the following commands. You can use `cd mslearn-store-data-in-azure/store-java-ee-application-data-with-azure-blob-storage/start` to change directory to this location.
 
-   ```console
-   mvn clean package azure-webapp:deploy
-   ```
+    ```console
+    mvn clean package azure-webapp:deploy
+    ```
 
-   To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
+    To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.
 
-   :::image type="content" source="../media/7-fileuploader-empty-java.png" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/7-fileuploader-empty-java.png" alt-text="Screenshot of the FileUploader web app." loc-scope="other"::: <!-- no-loc -->
 
-   > [!TIP]
-   > This module uses Maven Plugin for Azure App Service to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.
+    > [!TIP]
+    > This module uses Maven Plugin for Azure App Service to deploy the app on Tomcat 9 on Azure App Service, to learn about other options see the *Further Reading* section at the end of this module.
 
 1. Try uploading and downloading some files to test the app. After you've uploaded a few files, to see the blobs that have been uploaded to the container, run the following code in the shell.
 
