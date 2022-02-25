@@ -4,7 +4,7 @@ title: Create and claim a lab VM
 metadata:
   unitType: learning-content
   title: Configure a lab VM and access it through RDP
-  description: "Learn how you can create a lab VM in a Azure DevTest Lab. You can then claim the VM and access it through RDP."
+  description: "Learn how you can create a lab VM in Azure DevTest Labs. You can then claim the VM and access it through RDP."
   ms.date: 2/25/2022
   author: ntrogh
   ms.author: nicktrog
