@@ -1,16 +1,16 @@
-Lab VMs in Azure DevTest Labs allow you to self-provision preconfigured and managed virtual machines.
+Lab VMs in Azure DevTest Labs allow you to self-provision pre-configured and managed virtual machines.
 
-For your eCommerce company, you want to create a pool of Windows-based developer VMs. Each developer can take a VM from the pool to perform their development activities. All developers need to have Azure PowerShell installed on the VM to manage their Azure resources.
+For your eCommerce company, you want to create a pool of Windows-based developer VMs. Each developer can take a VM from the pool to perform their development activities. All developers need Azure PowerShell installed in the VM to manage their Azure resources.
 
-In this exercise, you'll use the Azure portal to add a preconfigured, claimable VM to your lab in Azure DevTest Labs. You'll then claim the VM to connect to it.
+In this exercise, you'll use the Azure portal to add a pre-configured, claimable VM to your lab in Azure DevTest Labs. You'll then claim the VM to connect to it.
 
 During the process, you'll:
 
-- Add a claimable VM to an existing lab in Azure DevTest Labs and configure a software artifact.
+- Add a claimable VM to an existing lab in Azure DevTest Labs and configure an artifact.
 - Claim a VM.
 - Connect to the VM by using remote desktop (RDP).
 
-## Add a claimable VM to a lab
+## Add a lab VM
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -44,11 +44,13 @@ During the process, you'll:
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-basic-settings-add-artifact.png" alt-text="Screenshot that shows the basic settings screen, highlighting the link to add and remove artifacts.":::
 
-1. On the **Add artifacts** page, select **Azure PowerShell** from the list, select the chevron next to it, and then select **OK** in the right pane to add the **Azure PowerShell** artifact to the list of selected artifacts.
+1. On the **Add artifacts** page, select **Azure PowerShell** from the list, and then select **OK** in the right pane to add it to the list of selected artifacts.
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-add-artifacts.png" alt-text="Screenshot that shows the screen for adding artifacts to a lab VM.":::
 
 1. Select **OK** to confirm the selected artifacts.
+
+## Make the VM claimable
 
 1. Select the **Advanced Settings** tab and provide the following information:
 
@@ -75,9 +77,9 @@ During the process, you'll:
 
 1. On the **DevTest Lab** page, under **My Lab**, select **Claimable virtual machines**.
 
-    You should see the two claimable VMs that you created earlier. They should have the **Available** status.
+    You should see the two claimable VMs, with the **Available** status, that you created earlier.
 
-1. Select the ellipsis (**...**) at the end one of the VMs in the list, and then select the **Claim machine** menu item.
+1. Select the ellipsis (**...**) next to one of the VMs in the list, and then select the **Claim machine** menu item.
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines.":::
 
@@ -95,11 +97,11 @@ During the process, you'll:
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-connect.png" alt-text="Screenshot that shows the context menu to connect to a lab VM.":::
 
-1. Your browser will now download a remote desktop (RDP) file, which has the configuration to connect to the lab VM.
+1. Your browser will now download a Remote Desktop (RDP) file, which has the configuration to connect to the lab VM.
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/download-rdp.png" alt-text="Screenshot that shows the downloaded RDP file in the browser downloads list.":::
 
-1. Open the RDP file to connect to the lab VM. Enter the user name and password details that you used earlier for creating the lab VM.
+1. Open the RDP file to connect to the lab VM. Enter the user name and password that you used earlier for creating the lab VM.
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-rdp-session.png" alt-text="Screenshot that shows the desktop of the lab VM in a remote desktop session.":::
 
