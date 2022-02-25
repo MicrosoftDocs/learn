@@ -1,9 +1,8 @@
-Organizations often have many different, sometimes short-lived, software environments. 
-For example, developers need an environment with all developer tools installed, the test team has temporary test environments, and customer support requires a separate environment for each supported production version.
+As your company expands, it needs to rapidly provision computing environments, while keeping the cost of managing those environments under control.
 
 You've created a lab in Azure DevTest Labs to define a curated list of base images for developer VMs, and to configure an auto shutdown policy to save costs. You then added developer VMs to the lab, which you pre-configured with Azure PowerShell. Finally, you claimed a VM and connected to it by using RDP.
 
-Imagine how much work it would be for each developer to prepare a new developer environment, and install all the necessary tools and software. As a company, how would you keep track of all different OS versions and computing resources.
+Imagine how much work it would take each developer to prepare a new developer environment, and install all the necessary tools and software. As a company, how would you keep track of all different OS versions and computing resources.
 
 Azure DevTest Labs lets you simplify and accelerate the process of creating standardized virtual computing environments.
 
