@@ -1,8 +1,5 @@
 In this demonstration, you'll investigate Stages.
 
-> [!NOTE]
-> *Before starting this walkthrough, ensure you've done the steps in the prerequisites section and the previous walkthrough.*
-
 ## Steps
 
 Let's now look at the other section in the release pipeline that we've created: Stages.
