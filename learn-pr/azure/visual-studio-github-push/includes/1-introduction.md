@@ -4,7 +4,7 @@ Suppose you join a new software development team that's working in C# and .NET b
 
 Your management team asks you to evaluate the available tools to help developers work effectively with Git repositories and run Git commands. You heard that new tooling from Microsoft might help developers work worry-free and mistake-free from within Visual Studio.
 
-In this module, you'll use the GitHub integration in Visual Studio to sign in to GitHub, create a new repository, and push commits. And you'll do all that workflow without even leaving the IDE.
+In this module, you'll use the GitHub integration in Visual Studio to sign in to GitHub, create a new repository, and push commits, without even leaving the IDE.
 
 You'll complete exercises by using the Git Centralized Workflow. A Git workflow is a way to use Git effectively and consistently to accomplish work. Several publicized workflows act as guidelines for using Git. In the Centralized Workflow, you'll work on a single default branch and push all commits directly to that branch. This workflow is great for small teams and solo developers.
 

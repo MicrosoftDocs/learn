@@ -20,7 +20,7 @@ quiz:
       explanation: Your GitHub credentials aren't enough to sign in. You also need to generate and manage SSH keys for your account. Visual Studio can do it for you when you sign in through the **Account Settings** window.
     - content: Use the Visual Studio **Account Settings** window.
       isCorrect: true
-      explanation: The Visual Studio **Account Settings** window allows you to store a GitHub account in your key chain, and it handles all the authentication for you.
+      explanation: The Visual Studio **Account Settings** window lets you store a GitHub account in your key chain, and it handles all the authentication for you.
     - content: Generate and store SSH keys from the GitHub website. 
       isCorrect: false
       explanation: Manually generating SSH keys is a tedious and multiple-step process that you can automate by using the Visual Studio **Account Settings** window.
@@ -39,11 +39,10 @@ quiz:
     choices:
     - content: Pull any incoming commits from the remote branch.
       isCorrect: true
-      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminding to pull before pushing to resolve any merge conflicts.
+      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.
     - content: Nothing, just push the local branch.
       isCorrect: false
-      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminding to pull before pushing to resolve any merge conflicts.
+      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.
     - content: Create a pull request to merge your branch.
       isCorrect: false
-      explanation: Visual Studio suggests that you create a pull request only after pushing local commits. If you try to push your commits without pulling the incoming commits, Visual Studio opens a dialog reminding to pull before pushing to resolve any merge conflicts.
-      
+      explanation: Visual Studio suggests that you create a pull request only after pushing local commits. If you try to push your commits without pulling the incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.
