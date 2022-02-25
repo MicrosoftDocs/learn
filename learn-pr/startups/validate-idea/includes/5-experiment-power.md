@@ -19,7 +19,7 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 ## Experiment type: Online ad
 
-**Description:** Create an online ad (search-based ad, display ad, or social media ad) based on your proposed value proposition. Target customers who match your ideal customer persona.
+**Description:** Create an online ad (search-based ad, display ad, or social media ad) based on your proposed value proposition. Focus on customers who match your ideal customer persona.
 
 **Purpose:** Test whether your target customers will respond to a call to action such as visiting your website.
 

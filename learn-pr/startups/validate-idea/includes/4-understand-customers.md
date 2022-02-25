@@ -81,7 +81,7 @@ A basic user persona should include at least the following:
 
 ## Scenario: A user persona
 
-Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She has constructed the following "busy professional" persona to represent this target user.
+Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She has constructed the following "busy professional" persona to represent a target user.
 
 She has incorporated some of the common themes that arose in her interviews with customers, such as the banking brands that they currently associate with and the software products that they're familiar with and typically use.
 

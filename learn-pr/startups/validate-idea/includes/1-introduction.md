@@ -19,7 +19,7 @@ By the end of the module, you'll be able to:
 - Articulate your idea by using the Value Proposition Canvas.
 - Set out your proposed business model by using the Lean Canvas.
 - Use design thinking to identify critical assumptions.
-- Build user personas that represent your target customer.
+- Build user personas that represent your target customers.
 - Plan and conduct customer interviews.
 - Create experiments to test your assumptions.
 - Use the results of your customer interviews and experiments to make decisions about what product to build.
