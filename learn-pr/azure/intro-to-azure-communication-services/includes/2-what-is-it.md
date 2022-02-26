@@ -13,7 +13,7 @@ By combining ACS with other Azure offerings, you'll be able to launch communicat
 
 ## ACS' main product areas
 
-ACS main product areas are:
+ACS product areas are:
 
 - Identity - Create and manage ACS identities.
 - Voice and video calling - Create custom voice and video calling solutions.
