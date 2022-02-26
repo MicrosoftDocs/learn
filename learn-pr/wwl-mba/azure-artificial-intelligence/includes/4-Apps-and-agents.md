@@ -13,6 +13,8 @@ Watch this video to see the impact of AI apps and agents on businesses today.
 :::column-end:::
 :::row-end:::
 
+</br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqOXG]
 
 Now let’s take a closer look at the services in intelligent apps and agents. Some of these services are built in to existing AI models, but you can also use your data to automatically build and train algorithms that fit your needs.
@@ -110,6 +112,8 @@ Watch this video to see what Azure Cognitive Services and Azure Bot Service can 
 
 :::column-end:::
 :::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrRTR]
 
