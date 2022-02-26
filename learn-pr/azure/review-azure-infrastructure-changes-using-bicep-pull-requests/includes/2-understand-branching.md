@@ -57,7 +57,9 @@ When you work in this manner, it can be helpful to use the `if` keyword to disab
 You can use parameters to specify different values for the `storageAccountReady` variable in different environments. For example, you might set the parameter value to `true` for your test environment, and `false` for your production environment, so that you can try out the new storage account in your test environment.
 
 > [!NOTE]
-> When it's time to enable the feature in production, remember that you need to change the parameter value and also redeploy your Bicep file.
+> When it's time to enable the feature in production, remember that you need to do both of the following for your change to take effect:
+> - Change the parameter value.
+> - Redeploy your Bicep file.
 
 ### Merging feature branches
 
@@ -106,4 +108,4 @@ The branching strategy that's right for your team depends on the way your team w
 > [!TIP]
 > Regardless of the branching strategy you use, it's good to use branch policies to protect your main branch, and to use pull requests to review your changes. Other branching strategies also introduce other important branches that you should protect.
 
-In this module we use the trunk-based development because it's easy to understand and use.
+In this module we use trunk-based development because it's easy to understand and use.
