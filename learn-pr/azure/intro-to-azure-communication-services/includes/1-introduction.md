@@ -1,10 +1,10 @@
-Communication is of ever growing importance within our modern world. Keeping connected to your customers, is of vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services(ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure.
+Communication is of ever growing importance within our modern world. Keeping connected to your customers, is of vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services(ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure. Additionally, with ACS you do not need to be an expert in the underlying technologies such as media encoding or telephony, ACS takes care of it for you.
 
 :::image type="content" source="../media/communication-services.png" alt-text="Communication Services marketing image.":::
 
 ## Example scenario
 
-Let's start with an example scenario that will help you understand the potential of ACS. Imagine you work on the engineering/product team of a household appliance producer which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. 
+Let's start with an example scenario that will help you understand the potential of ACS. Imagine you work on the engineering/product team of a household appliance producer(Contoso Appliances) which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. 
 
 This has lead to a number of problems in the business such as:
 
@@ -21,7 +21,7 @@ This has lead to a number of problems in the business such as:
 - Streamlined maintenance booking and appointments
 - SMS reminders of maintenance & installation appointments
 
-However, the team is unsure how to proceed. Do they want to make their own solution? That's likely to be costly to develop and maintain. Budgets are tight as is time. Your company wants this problem to be solved as quickly as possible.
+However, the team is unsure how to proceed. Do they use open source WebRTC components and build communication capabilities using low-level infrastructure? How do they get phone numbers? As software developers, getting phone numbers for programmatic SMS access is not trivial. Budgets are tight as is time. Your company wants this problem to be solved as quickly as possible.
 
 This scenario is exactly what Azure Communication Services can help with.
 

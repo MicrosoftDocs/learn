@@ -14,6 +14,6 @@ By learning about ACS and using our decision criteria to evaluate if ACS is righ
 
 ## References
 
-- [What is Azure Communication Services](https://docs.microsoft.com/azure/communication-services/overview)
-- [Azure Communication Services SDKs & APIS](https://docs.microsoft.com/azure/communication-services/concepts/sdk-options)
-- [Azure Communication Services Samples](https://docs.microsoft.com/azure/communication-services/samples/overview)
+- [What is Azure Communication Services](/azure/communication-services/overview)
+- [Azure Communication Services SDKs & APIS](/azure/communication-services/concepts/sdk-options)
+- [Azure Communication Services Samples](/azure/communication-services/samples/overview)

@@ -46,8 +46,8 @@ If your business/application/idea intends to use languages or devices/browsers t
 
 Some features of ACS are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in ACS' support across the world, can be caused by legal or regulatory matters or by ACS simply not supporting a region yet. When considering if ACS is right for you, ensure that you factor this into your current business as well as any potential expansion of your business. You can read about regional differences in offerings of ACS features on a variety of pages:
 
-* [Telephony regions eligibility](https://docs.microsoft.com/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
-* [Additional tes message information](https://docs.microsoft.com/azure/communication-services/concepts/sms/sms-faq)
+* [Telephony regions eligibility](/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
+* [Additional tes message information](/azure/communication-services/concepts/sms/sms-faq)
 
 ## Apply the criteria
 
@@ -55,7 +55,7 @@ Ultimately, ACS works best when you've already got existing ideas, applications,
 
 ### Applying criteria to the Example Scenario
 
-If we think back to our example scenario from earlier in the module with our appliance company, we can apply our decision criteria to their goals and requirements:
+If we think back to our example scenario from earlier in the module with Contoso Appliances(our appliance), we can apply our decision criteria to their goals and requirements:
 
 * Their business is established and has existing websites, applications etc.
 * They're in need of calling and chat related features which ACS has.
