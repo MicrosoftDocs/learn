@@ -66,8 +66,8 @@ When you review Bicep code, there are some key elements to look for. These inclu
 
 > [!div class="checklist"]
 >
-> * **Is the Bicep code clear and understandable?** It's important that your Bicep code is understood by everybody on your team. When you review a Bicep file in a pull request, ensure you understand exactly what every change is for. Are variables and parameters named well? Have comments been used to explain any complex sections of code?
 > * **Is the file deployable?** Deploy and test the Bicep code before it's merged. Ensure there are no linter warnings, and that the Azure deployment succeeds. In a future Microsoft Learn module, you'll learn about approaches to automatically deploy and verify your changes.
+> * **Is the Bicep code clear and understandable?** It's important that your Bicep code is understood by everybody on your team. When you review a Bicep file in a pull request, ensure you understand exactly what every change is for. Are variables and parameters named well? Have comments been used to explain any complex sections of code?
 > * **Is the change complete?** If this pull request represents part of a wider piece of work, then you need to ensure that your environment will work when this change is merged and deployed. For example, if the pull request reconfigures an Azure resource in preparation for a later change, verify that the resource continues to work correctly throughout the whole process. If the pull request adds a new Azure resource that isn't needed yet, consider whether a condition should be added temporarily so that the resource isn't deployed until it's needed.
 > * **Does the change follow good Bicep practices?** In other Microsoft Learn modules, you've learned about the elements of good Bicep code. Ensure that the code you review follows those same best practices.
 
