@@ -4,7 +4,7 @@ Your eCommerce company has a large and expanding development team, and you need 
 
 In this unit, you'll learn about adding VMs to an existing lab in Azure DevTest Labs, and how to pre-install software on them. You'll also be introduced to claiming and accessing a lab VM.
 
-## Creating a lab VM
+## Create a lab VM
 
 A lab in Azure DevTest Labs doesn't contain any computing resources. You can add VMs to an existing lab that can then be used by lab users to perform their tasks.
 
@@ -29,7 +29,7 @@ The Azure portal provides a wizard to add a VM to an existing lab. This wizard c
 |OS disk type     | Azure VMs use managed disks, which are like physical disks but virtualized. The OS disk type determines the performance of the VM operating system disk.     |
 |Artifacts     | Add or remove artifacts to the lab VM. Artifacts are used to deploy and configure your application after the VM is provisioned. |
 
-## Adding a VM to a lab
+## Add a VM to a lab
 
 When you add a lab VM, Azure DevTest Labs starts the virtual machine and automatically assigns ownership to you. In the Azure portal, you'll see the virtual machine in **My virtual machines**. In this case, you've automatically *claimed* the virtual machine by creating it.
 

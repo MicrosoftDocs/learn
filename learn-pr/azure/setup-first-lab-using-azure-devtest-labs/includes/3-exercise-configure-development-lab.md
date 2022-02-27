@@ -22,7 +22,7 @@ During the process, you'll:
     |Setting  |Value |Description  |
     |---------|---------|---------|
     |Subscription     | Concierge subscription | The lab must belong to a resource group. Here you select the Azure subscription to which the resource group belongs. |
-    |Resource group     | Select [Sandbox resource group] | The resource group to which the lab will belong. All Azure resources must belong to a resource group. |
+    |Resource group     | Select <rgn>[Sandbox resource group]</rgn> | The resource group to which the lab will belong. All Azure resources must belong to a resource group. |
     |Lab name     | *Enter a unique name*| Enter the name of your lab. The name must be unique within the subscription. |
     |Location     | Accept default value | The geographical region where the lab will be hosted. |
     |Public environments     | Off | A public environment repository contains a list of curated Azure Resource Manager templates. The development team uses a virtual machine. |
