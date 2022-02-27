@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.setup-first-lab-using-azure-devtest-labs.understand-azure-devtest-labs
+uid: learn.setup-first-lab-using-azure-devtest-labs.configure-development-lab
 title: Create and configure a development lab
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-azure-devtest-labs.md)]
+  [!include[](includes/2-configure-development-lab.md)]

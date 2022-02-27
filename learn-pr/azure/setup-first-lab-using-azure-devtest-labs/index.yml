@@ -32,7 +32,7 @@ products:
 - azure-portal
 units:
 - learn.setup-first-lab-using-azure-devtest-labs.introduction
-- learn.setup-first-lab-using-azure-devtest-labs.understand-azure-devtest-labs
+- learn.setup-first-lab-using-azure-devtest-labs.configure-development-lab
 - learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-development-lab
 - learn.setup-first-lab-using-azure-devtest-labs.create-claim-lab-vm
 - learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-claim-development-vm
