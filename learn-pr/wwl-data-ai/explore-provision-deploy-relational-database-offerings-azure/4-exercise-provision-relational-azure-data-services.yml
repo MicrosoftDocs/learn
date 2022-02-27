@@ -4,7 +4,7 @@ title: 'Exercise: Provision Azure relational database services'
 metadata:
   title: 'Exercise: Provision Azure relational database services'
   description: "Exercise: Provision Azure relational database services"
-  ms.date: 11/12/2021
+  ms.date: 02/27/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -12,6 +12,6 @@ metadata:
   zone_pivot_groups: data-azure-database
 azureSandbox: true
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-provision-relational-azure-data-services.md)]
+  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]
