@@ -2,7 +2,8 @@ In this exercise, you'll create an Azure Synapse Analytics workspace and use it 
 
 The exercise is designed to familiarize you with some key elements of a modern data warehousing solution, not as a comprehensive guide to performing advanced data analysis with Azure Synapse Analytics. The exercise should take around 30 minutes to complete.
 
-To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true). You cannot use a Microsoft Learn sandbox subscription for this exercise.
+> [!NOTE]
+> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true). You cannot use a Microsoft Learn sandbox subscription for this exercise.
 
 ## Provision an Azure Synapse Analytics workspace
 
@@ -10,7 +11,8 @@ To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Wo
 
 1. Open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), and sign in using the credentials associated with your Azure subscription.
 
-    Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory. Note that if you previously used a Microsoft Learn sandbox subscription, the portal may have defaulted to the *Microsoft Learn Sandbox* directory. If so, you'll need to switch to your own directory.
+    > [!TIP]
+    > Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory. Note that if you previously used a Microsoft Learn sandbox subscription, the portal may have defaulted to the *Microsoft Learn Sandbox* directory. If so, you'll need to switch to your own directory.
 
 2. In the Azure portal, on the **Home** page, use the **&#65291; Create a resource** icon to create a new resource.
 3. Search for *Azure Synapse Analytics*, and create a new **Azure Synapse Analytics** resource with the following settings:
