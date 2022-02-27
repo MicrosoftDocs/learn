@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.exercise-azure-synapse
+title: 'Exercise: Explore Azure Synapse Analytics'
+metadata:
+  title: 'Exercise: Explore Azure Synapse Analytics'
+  description: "Exercise: Explore Azure Synapse Analytics"
+  ms.date: 02/27/2022
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-azure-synapse.md)]
