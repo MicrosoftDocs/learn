@@ -70,4 +70,4 @@ During the process, you'll:
 
     You should see the VM base images you selected at the top of the list:
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab.":::
+    :::image type="content" source="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab." lightbox="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png":::

@@ -24,7 +24,7 @@ During the process, you'll:
 
 1. On the **Choose a base** page, select the **Windows Server 2022 Datacenter** marketplace image for the VM.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png" alt-text="Screenshot that shows the screen to select a base image for a new lab VM from the list images.":::
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png" alt-text="Screenshot that shows the screen to select a base image for a new lab VM from the list images." lightbox="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png":::
 
 1. On the **Basics Settings** tab, provide the following information:
 
@@ -69,7 +69,7 @@ During the process, you'll:
 
 1. You're returned to the **DevTest Lab** page. Under **My Lab**, select **Claimable virtual machines**.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png" alt-text="Screenshot that shows the list of claimable virtual machines.":::
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png" alt-text="Screenshot that shows the list of claimable virtual machines." lightbox="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png":::
 
 1. After a few minutes, select **Refresh** if your virtual machines don't appear. Installation times will vary based on the selected hardware, base image, and artifact(s). The installation for the configurations used in this exercise was approximately 11 minutes.
 
@@ -81,7 +81,7 @@ During the process, you'll:
 
 1. Select the ellipsis (**...**) next to one of the VMs in the list, and then select the **Claim machine** menu item.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines.":::
+    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines." lightbox="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png":::
 
 1. Refresh the list of claimable VMs. The VM you've claimed should no longer be in the list.
 

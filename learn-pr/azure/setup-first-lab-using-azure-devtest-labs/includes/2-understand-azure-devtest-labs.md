@@ -4,16 +4,6 @@ In the eCommerce company scenario, you would use Azure DevTest Labs to create st
 
 Here, you'll learn the key configuration settings of an Azure DevTest Labs resource. This information helps you to configure a virtualized lab environment that meets the team's needs and also complies with the organization's software standards.
 
-:::image type="content" source="../media/2-understand-azure-devtest-labs/azure-devtest-lab-overview.png" alt-text="Diagram that shows the different components and actors involved in creating lab virtual machines.":::
-
-## What is Azure DevTest Labs
-
-Azure DevTest Labs is a service that enables users to efficiently self-manage virtual machines (VMs) and Platform as a service (PaaS) resources, without waiting for approvals. Azure DevTest Labs creates labs consisting of pre-configured base images or Azure Resource Manager (ARM) templates.
-
-When you create a lab in Azure DevTest Labs, you can configure the types of resources that lab users can create. For instance, you can specify that a development lab should only contain VMs with specific OS versions. Developers can then provision a new developer VM that is also supported by your IT organization.
-
-Users have a self-service experience for creating computing resources. You can specify policies and limits in DevTest Labs to keep cost under control. For example, you could allow GPU-powered VMs only for the data science team, but limit the total number of such VMs.
-
 ## VM base images
 
 Base images are VM images with all the tools with all the tools and settings preinstalled and configured. Azure DevTest Labs supports two types of VM images for creating VMs:
@@ -25,7 +15,7 @@ When you create a lab in Azure DevTest Labs, you can specify the list of base im
 
 By default, a lab in DevTest Labs allows users access to all VM images in the Azure Marketplace. You can choose to give access to the entire Azure Marketplace or select specific VM images. For example, if your company standardizes on Windows Server 2022, you would select only those images. Lab users would then only be able to create VMs using these images.
 
-:::image type="content" source="../media/2-understand-azure-devtest-labs/select-azure-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace VM images in DevTest Labs.":::
+:::image type="content" source="../media/2-understand-azure-devtest-labs/select-azure-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace VM images in DevTest Labs." lightbox="../media/2-understand-azure-devtest-labs/select-azure-marketplace-images.png":::
 
 If you don't want to allow lab users access to Azure Marketplace images, select nothing from the list of Marketplace images.
 
