@@ -2,7 +2,7 @@ Testing can be a powerful tool to improve the quality, architecture, and overall
 
 ## Validate code changes and quality
 
-Any successful software tends to grow in functionality and behavior. Sometimes it can grow beyond what the first creators ever imagined supporting more scenarios and customer requests. As functionality grows, it can become more difficult for a single developer to remember all the functionality it contains or keep track of how to preserve that functionality.
+Any successful software tends to grow in functionality and behavior. Sometimes it can grow beyond what the first creators ever imagined that supports more scenarios and customer requests. As functionality grows, it can become more difficult for a single developer to remember all the functionality it contains or keep track of how to preserve that functionality.
 
 Tests not only keep track of the different capabilities of a program, but can also continue to check that the old functionality didn't break as new code is added. A fundamental purpose of testing is validating that code changes don't break existing functionality, and ensuring that newly added code will continue to work as expected even with future changes.
 
