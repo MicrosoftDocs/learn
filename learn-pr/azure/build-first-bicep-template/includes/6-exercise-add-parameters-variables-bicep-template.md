@@ -1,15 +1,15 @@
-In this exercise, you'll update the Bicep template that you previously created so that it:
-- Accepts parameters for the resource locations and names.
-- Uses your business rules to select the right SKUs for the resources being deployed.
+In this exercise, you'll update the Bicep template you previously created so it:
+- Accepts parameters for the resource locations and names
+- Uses your business rules to select the right SKUs for the resources being deployed
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update the template to include a `location` parameter.
-> * Update the template to include parameters and variables for the resource names.
-> * Use expressions to set default values for the parameters.
-> * Update the template to include variables for the SKU of each resource.
-> * Test the deployment to ensure that the template is valid.
+> * Update the template to include a `location` parameter
+> * Update the template to include parameters and variables for the resource names
+> * Use expressions to set default values for the parameters
+> * Update the template to include variables for the SKU of each resource
+> * Test the deployment to ensure that the template is valid
 
 ## Add the location and resource name parameters
 
@@ -21,7 +21,7 @@ During the process, you'll:
 
    Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice that you're using a variable for the name of the Azure App Service plan, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+   Also notice that you're using a variable for the name of the Azure App Service plan, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
@@ -43,11 +43,11 @@ During the process, you'll:
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
-1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
+1. Find the places within the resource definitions where the `sku` properties are set and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="15-42" highlight="5, 17":::
 
-   Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
+   Notice that you haven't parameterized everything. You've set some properties right in the resource definitions, where you know these aren't going to change between deployments.
 
 1. Save the changes to the file.
 
@@ -77,11 +77,11 @@ New-AzResourceGroupDeployment `
 
 ::: zone-end
 
-Notice that you're explicitly specifying the value for the `environmentType` parameter when you execute the deployment. You don't need to specify all of the other parameter values because they have defaults that make sense.
+Notice that you're explicitly specifying the value for the `environmentType` parameter when you execute the deployment. You don't need to specify all of the other parameter values, because they have defaults that make sense.
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+1. In your browser, go back to the [Azure portal](https://portal.azure.com). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
