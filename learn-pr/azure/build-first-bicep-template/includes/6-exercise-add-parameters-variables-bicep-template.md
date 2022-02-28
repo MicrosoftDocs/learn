@@ -92,4 +92,4 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
     :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with storage account and App Service resources listed with generated names." border="true":::
 
-1. Notice that the resources have been deployed with new, randomly generated names.
+1. Notice that a new App Service app and storage account have been deployed with randomly generated names.
