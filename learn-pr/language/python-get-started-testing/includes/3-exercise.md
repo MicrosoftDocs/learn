@@ -39,7 +39,7 @@ In this exercise, you'll take advantage of the `unittest` module, which is inclu
 
 ## Step 2 - Run the tests and identify the failure
 
-Now that the test file has a function to test and a couple of tests to verify its behavior, it is time to run the tests and work with failures.
+Now the test file has a function to test and a couple of tests to verify its behavior. It's time to run the tests and work with failures.
 
 - Execute the file with Python:
 
@@ -65,7 +65,7 @@ Now that the test file has a function to test and a couple of tests to verify it
     FAILED (failures=1)
     ```
 
-    The output points out that the `test_yes_is_true()` test is failing. It uses `'Yes'` as input to the `str_to_bool()` function which isn't part of the `true_vals` list. Because the function doesn't see `'Yes'` as part of any of the values it ends up returning an implicit `None`, which is why the error states: `None is not true`.
+    The output points out that the `test_yes_is_true()` test is failing. It uses `'Yes'` as input to the `str_to_bool()` function, which isn't part of the `true_vals` list. Because the function doesn't see `'Yes'` as part of any of the values it ends up returning an implicit `None`, which is why the error states: `None is not true`.
 
 ## Step 3 - Fix the bug and make the tests pass
 
