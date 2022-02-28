@@ -40,9 +40,9 @@ None of this initialization code makes calls over the network. This means that s
 
 In the Azure Storage SDK for Java, the standard pattern for using Blob Storage consists of the following steps:
 
-1. Instantiate a new `BlobServiceClientBuilder` object and provide the connection string to your storage account and build `BlobServiceClient`.
+1. Build a `BlobServiceClient` by instantiating a new `BlobServiceClientBuilder` object using the connection string to your storage account.
 
-1. To get a `BlobContainerClient`, call `getBlobContainerClient` on the `BlobServiceClient` with the name of the container you want to interact with or create.
+1. Get a `BlobContainerClient` by calling the `getBlobContainerClient` method on the `BlobServiceClient`with the name of the container you want to interact with or create.
 
 In code, these steps look like this.
 
@@ -143,7 +143,7 @@ When it comes to *using* the configuration, our starter app already includes the
 
 ### Clone and explore the unfinished app
 
-1. First, let's clone the starter app from GitHub. In the Azure Shell CLI, to get a copy of the source code and open it in the editor, run the following command.
+1. First, let's clone the starter app from GitHub. To get a copy of the source code and open it in the editor, run the following command in Azure Shell CLI:
 
     ```console
     git clone https://github.com/MicrosoftDocs/mslearn-store-data-in-azure.git
@@ -156,14 +156,14 @@ When it comes to *using* the configuration, our starter app already includes the
     This request scoped bean implements three actions that are used by `src/main/webapp/index.xhtml` JSF (Java Server Faces) page:
 
     - **listFileNames**: returns a list of file names, one for each file that's been uploaded. The `index.xhtml` page calls this method to build a list of hyperlinks to the uploaded files.
-    - **upload**: receives an uploaded file content and saves it. The file content and metadata is injected into `uploadedFile` property by JSF framework.
+    - **upload**: receives an uploaded file and saves it. The file content and metadata is injected into the `uploadedFile` property by the JSF framework.
     - **download**: downloads an individual file by its name.
 
     To do its work, each method uses a `Storage` instance called `storage`. There's an incomplete implementation of `Storage` in `src/main/java/com/microsoft/azure/samples/service/BlobStorage.java` that you're going to fill in.
 
 ### Add the Azure Storage SDK for Java reference
 
-The recommended way of adding Azure client libraries to the project is to utilize BOM. It provides a simple and elegant way to orchestrate using multiple Azure client libraries while ensuring minimal dependency conflicts.
+The recommended way of adding Azure client libraries to the project is to utilize Azure BOM. It provides a simple and elegant way to orchestrate using multiple Azure client libraries while ensuring minimal dependency conflicts.
 
 1. In the editor, open the file `pom.xml`.
 
@@ -183,7 +183,7 @@ The recommended way of adding Azure client libraries to the project is to utiliz
     </dependencyManagement>
     ```
 
-1. To add Azure Storage SDK for Java add the following `dependency` to `project/dependencies` xml section.
+1. To add Azure Storage SDK for Java add the following `dependency` to the `project/dependencies` xml section.
 
     ```xml
     <dependency>
@@ -219,9 +219,9 @@ When it comes to *using* the configuration, the App Service app settings are pas
     ```
 
     > [!TIP]
-    > Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses single container with constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore storing `BlobContainerClient` reference in its field is recommended.
+    > Azure clients are stateless and thread-safe. It is recommended to cache their instances where applicable. For example, the app you're working on uses a single container with a constant name, therefore it's best to cache it in app lifetime scope. `BlobStorage` is annotated with `@Singleton` therefore, storing the `BlobContainerClient` reference in its field is recommended.
 
-1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after `BlobStorage` instance is created and before it's used for the first time.
+1. Locate the `init` method with `@PostConstruct` annotation. Your app will call this method after the `BlobStorage` instance is created and before it's used for the first time.
 
     `init` is where you want to create your container if it doesn't already exist. Replace the current implementation of `init` with the following code, and save your work.
 

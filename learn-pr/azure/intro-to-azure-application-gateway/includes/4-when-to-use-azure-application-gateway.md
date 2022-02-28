@@ -1,13 +1,13 @@
 Azure Application Gateway can meet your organization’s needs for the following reasons: 
 
-- Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any on-premises server that may have become available.
+- Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any server that may have become unavailable.
 - Azure Application Gateway TLS termination functionality will reduce the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.
 - Azure Application Gateway allows Adatum to use a web application firewall to block cross-site scripting and SQL injection traffic before it reaches servers in the back-end pool.
 - Azure Application Gateway supports session affinity, required because the several web applications deployed by Adatum use user session state information stored locally on individual servers in the back-end pool.
 
 ## When not to use Azure Application Gateway
 
-Azure Application Gateway isn’t appropriate if you have a web application that doesn’t require load balancing. For example, if you have a web application that only receives a small amount of traffic and the existing load is already competently dealt with by the existing infrastructure, there's no need to deploy a back-end pool of web apps or virtual machines and no need for Application Gateway. It isn’t necessary to deploy Application Gateway if you want to deploy the security features of a web application firewall to protect a web application. This is because Web Application Firewall can be deployed with other Azure services including Azure Front Door or Azure CDN.
+Azure Application Gateway isn’t appropriate if you have a web application that doesn’t require load balancing. For example, if you have a web application that only receives a small amount of traffic and the existing load is already competently dealt with by the existing infrastructure, there's no need to deploy a back-end pool of web apps or virtual machines and no need for Application Gateway.
 
 Azure provides other load balancing solutions including Azure Front Door, Azure Traffic Manager, and Azure Load Balancer. The following list describes the differences between these services:
 
