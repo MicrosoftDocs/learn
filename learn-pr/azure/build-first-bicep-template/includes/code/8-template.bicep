@@ -1,4 +1,4 @@
-param location string = resourceGroup().location
+param location string = 'westus3'
 param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 

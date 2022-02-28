@@ -11,7 +11,7 @@ The main thing you'll do with Bicep templates is define your Azure resources. He
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: 'toylaunchstorage'
-  location: 'eastus'
+  location: 'westus3'
   sku: {
     name: 'Standard_LRS'
   }
@@ -46,21 +46,21 @@ You'll need to deploy an App Service app for the template that will help launch 
 ```bicep
 resource appServicePlan 'Microsoft.Web/serverFarms@2021-03-01' = {
   name: 'toy-product-launch-plan'
-  location: 'eastus'
+  location: 'westus3'
   sku: {
     name: 'F1'
   }
 }
 ```
 
-This resource definition is telling Bicep you want to deploy an App Service plan that has the resource type `Microsoft.Web/serverFarms`. The plan resource is named `toy-product-launch-plan`, and it's deployed into the East US region. It uses a pricing SKU of F1, which is the free tier of App Service.
+This resource definition is telling Bicep you want to deploy an App Service plan that has the resource type `Microsoft.Web/serverFarms`. The plan resource is named `toy-product-launch-plan`, and it's deployed into the West US 3 region. It uses a pricing SKU of F1, which is the free tier of App Service.
 
 Now that you've declared the App Service plan, the next step is to declare the app:
 
 ```bicep
 resource appServiceApp 'Microsoft.Web/sites@2021-03-01' = {
   name: 'toy-product-launch-1'
-  location: 'eastus'
+  location: 'westus3'
   properties: {
     serverFarmId: appServicePlan.id
     httpsOnly: true
