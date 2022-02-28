@@ -8,7 +8,7 @@ Continuous context switching causes a mental overhead that all of us want to avo
 
 Here's a video summary of what you just learned:
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4OFn7>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFn7]
 
 ## Learn more
 
