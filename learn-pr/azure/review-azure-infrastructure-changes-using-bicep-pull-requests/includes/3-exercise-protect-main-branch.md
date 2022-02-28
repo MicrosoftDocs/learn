@@ -70,7 +70,6 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 > 1. Sign in.
 > 1. Select **Choose template**, then select the **Private** tab, and select the path to the zip file you downloaded.
 > 1. Enter the other project information, and then select **Create project**.
-<!-- TODO -->
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
@@ -81,7 +80,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-review**.
 
-    <!-- TODO screenshot once the demo is working -->
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 
