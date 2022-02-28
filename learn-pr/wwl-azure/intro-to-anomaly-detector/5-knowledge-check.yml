@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "What is meant by seasonal data?"
     choices:
-    - content: "Data based on the time or year it was recorded."
+    - content: "Data based on the time of year it was recorded."
       isCorrect: false
       explanation: "Incorrect. Seasonal does not refer to the seasons of the year, in this case."
     - content: "How far apart the values are by default for each recorded period."
