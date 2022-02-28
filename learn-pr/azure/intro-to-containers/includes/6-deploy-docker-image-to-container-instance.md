@@ -8,10 +8,17 @@ In this unit, you'll learn how to upload a Docker image to Azure Container Regis
 
 Azure Container Registry is a registry hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*, meaning they require authentication to push or pull images. Azure Container Registry runs in the cloud, and provides similar levels of scalability and availability to many other Azure services.
 
-You create a registry using either the Azure portal, or the *acr create* command in the Azure Command Line Interface (CLI), as shown in the following example. Keep in mind that you'll have to create a resource group before you can create the registry. In this example, our resource group's name is `mygroup`.
+You can create a registry using the Azure portal, or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure Portal or a local install of the Azure CLI. Keep in mind that you'll have to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
 
-```bash
-az acr create --name myregistry --resource-group mygroup --sku standard --admin-enabled true
+> [!NOTE]
+> You need a unique name for your container. You can check to see if a name is already in use [here](https://docs.microsoft.com/en-us/rest/api/containerregistry/registries/checknameavailability).
+
+```azurecli
+az group create --name mygroup --location westus
+```
+
+```azurecli
+az acr create --name <unique name> --resource-group mygroup --sku standard --admin-enabled true
 ```
 
 Different SKUs provide varying levels of scalability and storage.
@@ -24,14 +31,14 @@ docker login myregistry.azurecr.io
 
 Docker login will prompt you for a username and password. To find this information, you can either go to the Azure portal and look up the access keys for the registry, or you can run the following command.
 
-```bash
-az acr credential show --name myregistry
+```azurecli
+az acr credential show --name myregistry --resource-group mygroup
 ```
 
-You *push* an image from your local computer to a Docker registry by using the `docker push` command. Before pushing an image, you must create an alias for the image that specifies the repository and tag to be created in the Docker registry. The repository name must be of the form \*<login_server\>/<*image_name*\>:<*tag*/>. Use the `docker tag` command to perform this operation. The following example creates an alias for the *myapp:v1* image described in unit 4.
+You *push* an image from your local computer to a Docker registry by using the `docker push` command. Before pushing an image, you must create an alias for the image that specifies the repository and tag to be created in the Docker registry. The repository name must be of the form \*<login_server\>/<*image_name*\>:<*tag*/>. Use the `docker tag` command to perform this operation. The following example creates an alias for the *reservationsystem* image.
 
 ```bash
-docker tag myapp:v1 myregistry.azurecr.io/myapp:v1
+docker tag reservationsystem myregistry.azurecr.io/reservationsystem:v2
 ```
 
 If you run `docker image ls`, you'll see two entries for the image: one with the original name, and the second with the new alias.
@@ -39,23 +46,23 @@ If you run `docker image ls`, you'll see two entries for the image: one with the
 After running the tag command, you can upload the image to the registry in Azure Container Registry using the following command.
 
 ```bash
-docker push myregistry.azurecr.io/myapp:v1
+docker push myregistry.azurecr.io/reservationsystem:v2
 ```
 
 Verify that the image has been uploaded correctly by listing the repositories in the registry with the following command.
 
-```bash
-az acr repository list --name myregistry
+```azurecli
+az acr repository list --name myregistry --resource-group mygroup
 ```
 
 You can also list the images in the registry with the `acr repository show` command.
 
-```bash
-az acr repository show --repository myapp --name myregistry
+```azurecli
+az acr repository show --repository reservationsystem --name myregistry --resource-group mygroup
 ```
 
 > [!NOTE]
-> You'll see at least two tags for each image in a repository. One tag will be value you specified in the *acr build* command (*v1* in the previous example). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
+> You'll see at least two tags for each image in a repository. One tag will be the value you specified in the *acr build* command (*v1* in the previous example). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
 
 ## Use Azure Container Instance to run an image
 
