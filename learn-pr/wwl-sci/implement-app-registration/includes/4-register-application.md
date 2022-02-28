@@ -108,7 +108,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 >[!div class="mx-imgBorder"]
 >![An app registration's Expose an API pane in the Azure portal](../media/portal-02-expose-api.png)
 
-5. You're prompted to set an **Application ID URI** if you haven't yet configured one.  The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
+5. You're prompted to set an **Application ID URI** if you haven't yet configured one.  The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form `api://<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
 
 6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
 
@@ -157,9 +157,9 @@ If you successfully added both example scopes described in the previous sections
 
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
-For example, if your web API's application ID URI is https<nolink>://contoso.com/api and the scope name is Employees.Read.All, the full scope is:
+For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is:
 
-https<nolink>://contoso.com/api/Employees.Read.All
+`https://contoso.com/api/Employees.Read.All`
 
 ### Using the exposed scopes
 

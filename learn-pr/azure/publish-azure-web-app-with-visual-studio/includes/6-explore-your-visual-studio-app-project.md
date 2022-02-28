@@ -31,9 +31,9 @@ Each page in your site is represented with two code files:
 
 This is a configuration file for ASP.NET Core.
 
-### Program.cs and Startup.cs
+### Program.cs
 
-Program.cs and Startup.cs files configure and launch your web host for your site.
+The Program.cs file configures and launches the web host for your site.
 
 ## Introduction to Razor templates
 

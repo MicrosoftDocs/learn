@@ -17,7 +17,7 @@ To ingest data through notebooks, you can use a linked service already defined i
 
 There is an alternative way you can work with data. Every Azure Synapse workspace has an associated primary storage account defined when it is created. If you intend to browse data stored in the primary storage account, there's no need to provide the secrets or keys. In the Data tab on the left hand-side in the Synapse workspace, you can right-click on a file stored in the primary storage account, and then select **New notebook** to open a notebook with the data from the file generated.
 
-Notebooks also enable you to write multiple languages in one notebook by using the magic commands expressed by using the %%<Name of Language> syntax. As a result you could create a temporary table to store ingested data within the notebook, and then use the magic command to enable multiple languages to work with this data.
+Notebooks also enable you to write multiple languages in one notebook by using the magic commands expressed by using the %%\<Name of Language\> syntax. As a result you could create a temporary table to store ingested data within the notebook, and then use the magic command to enable multiple languages to work with this data.
 
 With an Azure Synapse Studio notebook, you can:
 
