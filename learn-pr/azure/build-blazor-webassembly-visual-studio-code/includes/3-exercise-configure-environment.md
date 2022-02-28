@@ -63,7 +63,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     dotnet watch run
     ```
 
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The browser should automatically open at the address https://localhost:5000. Your browser might warn you that the site is not secure; it is safe to proceed.
+    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The browser should automatically open in your default browser. Your browser might warn you that the site is not secure; it is safe to proceed.
 
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser.](../media/hello-blazor.png)
 
