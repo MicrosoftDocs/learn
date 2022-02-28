@@ -214,7 +214,7 @@ In this section, you will create a test VM, and then test the load balancer.
     |        Region        |                **(US) West US**                |
     | Availability options |   **No infrastructure redundancy required**    |
     |        Image         |   **Windows Server 2019 Datacenter - Gen 1**   |
-    |         Size         | **Standard\_DS1\_v2 - 1 vcpu, 3.5 GiB memory** |
+    |         Size         | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory**     |
     |       Username       |                  **TestUser**                  |
     |       Password       |               **TestPa$$w0rd!**                |
     |   Confirm password   |               **TestPa$$w0rd!**                |
@@ -289,16 +289,12 @@ In this section, you will create a test VM, and then test the load balancer.
 5.  Use the **Zoom In (+)** and **Zoom Out (-)** buttons in the bottom right corner of the page, to zoom in and out of the topology diagram (alternatively you can use your mouse wheel if you have one). You can also drag the topology diagram around the page to move it.
 6.  Hover over the **LoadBalancerFrontEnd** component in the diagram, then hover over the **myBackendPool** component.
 7.  Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
-8.  Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
- 
-    :::image type="content" source="../media/network-insights-functional-dependency-view-2-e5d175bd.png" alt-text="Azure Monitor Network Insights functional dependency view" lightbox="../media/network-insights-functional-dependency-view-2-e5d175bd.png":::
-
-9.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
-10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. 
+8.  To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder.
+9. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen. 
 
     :::image type="content" source="../media/network-insights-functional-dependency-view-3-e991a770.png" alt-text="Azure Monitor Network Insights functional dependency view - View metrics button highlighted":::
     
-11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
+10. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
     :::image type="content" source="../media/network-insights-basic-metrics-view-2d3d85cd.png" alt-text="Azure Monitor Network Insights - Basic metrics view":::
 
