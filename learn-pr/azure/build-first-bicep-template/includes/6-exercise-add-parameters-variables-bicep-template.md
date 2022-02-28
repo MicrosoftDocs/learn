@@ -84,7 +84,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to the [Azure portal](https://portal.azure.com). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. In your browser, go back to the [Azure portal](https://portal.azure.com?azure-portal=true). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
