@@ -1,4 +1,4 @@
-You can create an application dashboard using either an industry focused template or the Custom application template. If you create your application from one of the industry focused templates, your application will have a pre-defined dashboard to start. If you create your application from the Custom application template, your dashboard will display a blank layout that you can customize yourself.<br>
+You can create an application dashboard using either an industry focused template or the Custom application template. If you create your application from one of the industry focused templates, your application will have a pre-defined dashboard to start. If you create your application from the Custom application template, your dashboard will display a blank layout that you can customize yourself.
 
 > [!NOTE]
 > Users can create multiple dashboards in addition to the default application dashboard. These dashboards can be personal to the user only, or shared across all users of the application.
@@ -20,7 +20,7 @@ For example, to add a line chart tile to track telemetry values reported by one 
 3.  After you select all the devices to show on the tile, select **Update**.
 4.  After you finish adding and customizing tiles on the dashboard, select **Save**.
 
-:::image type="content" source="../media/m12-l05-dashboard-add-tiles-a2d83481.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
+    :::image type="content" source="../media/m12-l05-dashboard-add-tiles-a2d83481.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
 
 
 Each tile has a pre-selected graph, chart, etc. that will be displayed when the tile is created. However, users can choose to edit and change this visualization.
