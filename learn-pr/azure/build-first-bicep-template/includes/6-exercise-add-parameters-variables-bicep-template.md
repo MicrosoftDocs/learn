@@ -19,9 +19,12 @@ During the process, you'll:
 
    As you type, the Bicep linter adds yellow squiggly lines underneath each of the parameter and variable names to indicate they're not currently used. You'll fix this soon.
 
-   Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
    Also notice that you're using a variable for the name of the Azure App Service plan, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+
+   > [!TIP]
+   > You're specifying that the `location` parameter should be set to `westus3`. Normally, you would create resources in the same location as the resource group by using the `resourceGroup().location` property. But when you work with the Microsoft Learn sandbox, you need to use certain Azure regions that don't match the resource group's location.
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
@@ -81,7 +84,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to the [Azure portal](https://portal.azure.com). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. In your browser, go back to the [Azure portal](https://portal.azure.com?azure-portal=true). Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
@@ -89,4 +92,4 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
     :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with storage account and App Service resources listed with generated names." border="true":::
 
-1. Notice that the resources have been deployed with new, randomly generated names.
+1. Notice that a new App Service app and storage account have been deployed with randomly generated names.
