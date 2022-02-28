@@ -51,4 +51,4 @@ The repository on GitHub has two primary metadata fields: name and description. 
 
 All GitHub repositories created through Visual Studio are set to private by default. That means only you can view the repository and commit to it. To change this setting, add contributors to private repositories and manage access via the repository's **Settings** page on GitHub.com. Clearing the checkbox switches the repository to public, which allows anyone on the internet to view your repository and its contents on GitHub.com. But you can still choose who can contribute to it directly.
 
-Apart from pushing to GitHub, you can push to any remote endpoint (such as Azure) by using the **Existing remote** tab. You can also use the **Local only** tab to initialize the Git repository locally. In the latter case, Visual Studio just adds the .git folder and doesn't make any commits.
+Apart from pushing to GitHub, you can push to any remote endpoint (such as Azure DevOps) by using the **Existing remote** tab. You can also use the **Local only** tab to initialize the Git repository locally. In the latter case, Visual Studio just adds the .git folder and doesn't make any commits.

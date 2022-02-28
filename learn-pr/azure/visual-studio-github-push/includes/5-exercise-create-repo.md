@@ -18,7 +18,7 @@ The easiest way to start coding in Visual Studio is with a project template. Vis
 
 4. On the **Additional information** page, keep the defaults and select **Create**.
 
-    :::image type="content" source="../media/5-additional-information-screen.png" alt-text="Screenshot for additional information in the new project page, with the Create button highlighted.":::
+    :::image type="content" source="../media/5-additional-information-screen.png" alt-text="Screenshot of the page for additional information about the new project, with the Create button highlighted.":::
 
 Your new project is created, and you can see the contents in Solution Explorer.
 

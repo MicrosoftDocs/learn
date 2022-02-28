@@ -19,7 +19,7 @@ Visual Studio doesn't allow you to push commits if your local branch is behind t
 
 ## Force push
 
-Sometimes, you might want to overwrite the commits on the remote branch with your own local commits. It maybe required when the commits you uploaded earlier aren't correct, and you want to amend them now.
+Sometimes, you might want to overwrite the commits on the remote branch with your own local commits. It may be required when the commits you uploaded earlier aren't correct, and you want to amend them now.
 
 You can use the `--force` flag in Git, but it's a dangerous command because it deletes any remote commits that might have been added since you last pulled. Instead, Visual Studio provides the modified flag `--force-with-lease`. It's a safer flag option, because it ensures that you don't overwrite someone else's work by force pushing. To enable the command, go to **Git** > **Settings** and select the **Enable push--force-with-lease** checkbox.
 

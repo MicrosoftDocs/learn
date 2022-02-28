@@ -10,7 +10,7 @@ The top part of the **Git Changes** window is the status section. It shows what 
 
 Selecting the branch picker lets you switch branches or create a new branch. Next to the branch picker are **Fetch**, **Pull**, and **Push** buttons. These buttons help keep your local branch in sync with your remote branch.
 
-Under the branch picker, is the number of outgoing and incoming commits. Whenever you make commits, you'll notice the first number increment higher to indicate commits that you might want to push to your remote branch. And whenever you fetch, you can see if there are any commits not pulled in from the remote tracking branch. Selecting the link takes you to the **Git Repository** window, where you can see the details of the outgoing and incoming commits, along with the branch's local history.
+Under the branch picker is the number of outgoing and incoming commits. Whenever you make commits, you'll notice the first number increment higher to indicate commits that you might want to push to your remote branch. And whenever you fetch, you can see if there are any commits not pulled in from the remote tracking branch. Selecting the link takes you to the **Git Repository** window, where you can see the details of the outgoing and incoming commits, along with the branch's local history.
 
 :::image type="content" source="../media/6-status-section.png" alt-text="Screenshot of the Git Changes window, with the status section highlighted.":::
 
