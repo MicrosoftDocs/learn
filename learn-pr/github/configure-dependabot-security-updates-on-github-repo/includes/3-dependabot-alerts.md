@@ -42,7 +42,7 @@ If you are an organization owner, then you can enable the dependency graph and D
 
 ### Set up Dependabot alerts for GitHub Enterprise Server with GitHub Connect 
 
-GitHub Enterprise customers can also enable Dependabot alerts. If you are a GitHub Enterprise owner who is also an owner of the connected GitHub Cloud organization or enterprise account, then you can use GitHub Connect to enable the dependency graph and Dependabot alerts for your GitHub Server instance. GitHub Connect enables you to share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
+GitHub Enterprise customers can also enable Dependabot alerts. If you are a GitHub Enterprise owner who is also an owner of the connected GitHub Cloud organization or enterprise account, you can use GitHub Connect to enable the dependency graph and Dependabot alerts for your GitHub Server instance. GitHub Connect lets you share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
 
 Review the docs on "Connecting your enterprise account to GitHub Enterprise Cloud" for more information.
 
@@ -54,7 +54,7 @@ Dependabot alerts are displayed in the **Security** tab for the repository and i
 
 ## Grant access to Dependabot alerts
 
-By default, only repository owners and administrators are able to receive and dismiss Dependabot alerts for their repositories. Administrators and owners can also choose to grant other teams and users with access to the repository, permissions to view and dismiss Dependabot alerts by following these steps:
+By default, only repository owners and administrators are able to receive and dismiss Dependabot alerts for their repositories. Administrators and owners can also grant other teams and users with access to the repository, permissions to view and dismiss Dependabot alerts by following these steps:
 
 1. Navigate to the main page of the repository.
 2. In the left-hand side, click **Security and analysis**.
