@@ -23,7 +23,7 @@ Dependabot alerts are enabled for public repositories by default. Repository adm
 To set up Dependabot alerts for private repositories, you need to enable both the dependency graph and Dependabot alerts. Follow the steps below for each feature:
 
 1. Log in to your GitHub account and select your profile photo from the upper-right.
-2. Click **Settings** > **Security & analysis**.
+2. Click **Settings**, then click **Code security & analysis** under **Security** in the left-side menu.
 3. Click **Enable all** to the right of the feature you want to enable.
 4. If you would like these settings to be applied to all new repositories in your organization, then select the **Enable by default for new private repositories** checkbox.
 5. Click **Enable FEATURE** to enable the feature for all the repositories you own.
