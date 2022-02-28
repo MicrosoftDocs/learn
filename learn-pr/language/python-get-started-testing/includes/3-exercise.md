@@ -110,14 +110,14 @@ Part of the idea of working with tests is getting validation for changes. Even i
 
 In this case, the function being tested only works with strings, so using any other type as input would cause an unhandled exception to be raised. 
 
-1. Update the function so that it raises a `TypeError` if a non-string value is used. This can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
+1. Update the function so that it raises an `AttributeError` if a non-string value is used. This can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
 
     ```python
     def str_to_bool(value):
         try:
             value = value.lower()
         except AttributeError:
-            raise TypeError(f"{value} must be of type string")
+            raise AttributeError(f"{value} must be of type string")
         true_values = ['y','yes']
         false_values = ['no', 'n']
     
@@ -127,7 +127,7 @@ In this case, the function being tested only works with strings, so using any ot
             return False
     ```
 
-2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `TypeError` raises on non-string input:
+2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `AttributeError` raises on non-string input:
 
     ```python
         def test_invalid_input(self):
