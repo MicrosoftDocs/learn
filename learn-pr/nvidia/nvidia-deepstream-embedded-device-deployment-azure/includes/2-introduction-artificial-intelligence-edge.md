@@ -20,7 +20,7 @@ The following chart shows specifications for these hardware offerings:
 
 All devices in the NVIDIA Jetson family use ARM-based CPU hardware for processing. The Azure IoT Edge platform can target this architecture, so you can instrument NVIDIA embedded devices to work with the IoT Edge runtime and with related Azure IoT services.
 
-To follow along with this module, you'll need one of the following NVIDIA Jetson embedded devices provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive?azure-portal=true):
+To follow along with this module, you'll need one of the following NVIDIA Jetson embedded devices provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46):
 
 * [Jetson Xavier NX](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/?azure-portal=true)
 * [Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier?azure-portal=true)
