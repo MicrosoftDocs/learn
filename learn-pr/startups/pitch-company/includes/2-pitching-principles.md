@@ -126,7 +126,7 @@ It's always a good idea to be cautious about who you send your readable deck to,
 
 ### Executive summary
 
-It's useful to write a one-paragraph executive summary that complements your pitch decks.
+It's useful to write a one-page executive summary that complements your pitch deck.
 
 An executive summary, which provides a brief, high-level overview of your company, is an excellent way to follow up with a potential investor whom you've met at a networking event or demo day.
 
