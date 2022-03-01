@@ -82,12 +82,12 @@ These virtual networks and subnets are structured in a way that accommodates exi
     You should see the following subnets listed:
 
     ```output
-    AddressPrefix    Name                    ProvisioningState    ResourceGroup
-    ---------------  ----------------------  -------------------  -------------------------------------------
-    10.20.0.0/27     GatewaySubnet           Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.10.0/24    SharedServicesSubnet    Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.20.0/24    DatabaseSubnet          Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.20.30.0/24    PublicWebServiceSubnet  Succeeded            <rgn>[sandbox resource group name]</rgn>
+    AddressPrefix    Name                    PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
+    ---------------  ----------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
+    10.20.0.0/27     GatewaySubnet           Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.20.10.0/24    SharedServicesSubnet    Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.20.20.0/24    DatabaseSubnet          Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.20.30.0/24    PublicWebServiceSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
     ```
 
 ## Create the *ManufacturingVnet* virtual network
@@ -142,12 +142,12 @@ These virtual networks and subnets are structured in a way that accommodates exi
     You should see the following subnets listed:
 
     ```azurecli
-    AddressPrefix    Name                       ProvisioningState    ResourceGroup
-    ---------------  -------------------------  -------------------  -------------------------------------------
-    10.30.10.0/24    ManufacturingSystemSubnet  Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.20.0/24    SensorSubnet1              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.21.0/24    SensorSubnet2              Succeeded            <rgn>[sandbox resource group name]</rgn>
-    10.30.22.0/24    SensorSubnet3              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    AddressPrefix    Name                       PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
+    ---------------  -------------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
+    10.30.10.0/24    ManufacturingSystemSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.30.20.0/24    SensorSubnet1              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.30.21.0/24    SensorSubnet2              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
+    10.30.22.0/24    SensorSubnet3              Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
     ```
 
 ## Create the *ResearchVnet* virtual network
@@ -184,9 +184,9 @@ These virtual networks and subnets are structured in a way that accommodates exi
     You should see the following subnets listed:
 
     ```azurecli
-    AddressPrefix    Name                  ProvisioningState    ResourceGroup
-    ---------------  --------------------  -------------------  -------------------------------------------
-    10.40.40.0/24    ResearchSystemSubnet  Succeeded            <rgn>[sandbox resource group name]</rgn>
+    AddressPrefix    Name                  PrivateEndpointNetworkPolicies    PrivateLinkServiceNetworkPolicies    ProvisioningState    ResourceGroup
+    ---------------  --------------------  --------------------------------  -----------------------------------  -------------------  -------------------------------------------
+    10.40.40.0/24    ResearchSystemSubnet  Enabled                           Enabled                              Succeeded            <rgn>[sandbox resource group name]</rgn>
     ```
 
 Now that you have created the virtual networks and subnets, you have the infrastructure on which you can deploy resources.
