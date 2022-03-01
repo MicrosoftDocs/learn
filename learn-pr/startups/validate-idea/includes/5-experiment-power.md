@@ -89,7 +89,7 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Practical tips:** Make sure you're not taking payment or giving any misleading information to customers. Track various traffic sources to establish which are most likely to bring paying customers to your site.
 
-## Experiment type: MVP
+## Experiment type: Minimum viable product (MVP)
 
 **Description:** Create a basic functioning software product that delivers the minimum feature set (usually a single feature) to test a core assumption.
 
@@ -108,12 +108,3 @@ It's often possible to build an MVP quickly and cheaply by using low-code or no-
 ## Task: Plan an experiment
 
 Select at least one experiment type that makes sense for your startup. Map out the steps that you'll take to complete the experiment. Remember to consider what hypothesis you intend to test, and express it as a concise, falsifiable statement. Spell out what you'll measure or observe in the experiment, and the minimum response that you need to validate your hypothesis.
-
-## Conclusions
-
-- You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
-- The value that a product creates for a company's customers can be described with reference to the jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
-- The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
-- The only way to know whether your assumptions are correct is to test them with customers.
-- Prioritize testing your assumptions based on how critical each is to the success of the business and how much you already know. 
-- There are many ways to test your assumptions. Interviewing potential customers is a good place to start. Aim to run multiple low-fidelity experiments before you commit to building your product.

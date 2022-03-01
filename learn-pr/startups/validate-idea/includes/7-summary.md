@@ -1,8 +1,15 @@
 This module outlined core concepts that relate to articulating and testing the assumptions on which your startup is based. This information can help you validate your core assumptions before investing time and money in building a product.
 
-We used the Value Proposition Canvas to capture the jobs that your customers need to do, the pains they want removed, and the gains they want to achieve. We also used the Lean Canvas to capture assumptions about your business model. We then used design thinking principles and a simple assumptions matrix to prioritize which of these assumptions should be tested.
+Here's a summary of what you learned:
 
-We created a basic customer persona to represent your target customers and looked at various ways to test your most important assumptions. These tests included customer interviews and experiments that ranged from low fidelity to high fidelity.
+- You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
+- The value that a product creates for a company's customers can be described with reference to the jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
+- The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
+- The Lean Canvas can help you capture assumptions about your business model.
+- The only way to know whether your assumptions are correct is to test them with customers.
+- Use an assumptions matrix to prioritize testing your assumptions based on how critical each is to the success of the business and how much you already know.
+- Create a basic customer persona to help you understand the needs of your target customers.
+- There are many ways to test your assumptions. Interviewing potential customers is a good place to start. Aim to run multiple low-fidelity experiments before you commit to building your product.
 
 ## Useful resources
 
