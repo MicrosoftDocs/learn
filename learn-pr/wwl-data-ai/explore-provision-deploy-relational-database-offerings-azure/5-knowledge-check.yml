@@ -6,7 +6,9 @@ metadata:
   description: "Knowledge check"
   ms.date: 03/01/2022
   author: wwlpublish
+  ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -19,32 +21,32 @@ quiz:
     choices:
     - content: "Azure SQL Database (single database)"
       isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
     - content: "Azure SQL Database (elastic pool)"
       isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
     - content: "Azure SQL Managed Instance"
       isCorrect: true
-      explanation: "That's correct. Azure SQL Managed Instance offers near 100% compatibility with SQL Server."
+      explanation: "Correct. Azure SQL Managed Instance offers near 100% compatibility with SQL Server."
   - content: "Which of the following statements is true about Azure SQL Database?"
     choices:
     - content: "Most database maintenance tasks are automated"
       isCorrect: true
-      explanation: "That's correct. Azure SQL Database automates most maintenance tasks."
+      explanation: "Correct. Azure SQL Database automates most maintenance tasks."
     - content: "You must purchase a SQL Server license"
       isCorrect: false
-      explanation: "That's incorrect. You do not need a SQL Server license to use Azure SQL Database - you pay by usage."
+      explanation: "Incorrect. You do not need a SQL Server license to use Azure SQL Database - you pay by usage."
     - content: "It can only support one database"
       isCorrect: false
-      explanation: "That's incorrect. You can use an elastic pool to support multiple databases."
+      explanation: "Incorrect. You can use an elastic pool to support multiple databases."
   - content: "Which database service is the simplest option for migrating a LAMP application to Azure?"
     choices:
     - content: "Azure SQL Managed Instance"
       isCorrect: false
-      explanation: "That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
     - content: "Azure Database for MySQL"
       isCorrect: true
-      explanation: "That's correct. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Correct. LAMP standard for Linux, Apache, MySQL, and PHP."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: "That's incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
