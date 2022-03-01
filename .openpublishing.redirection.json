@@ -11524,6 +11524,41 @@
       "source_path": "learn-pr/wwl-data-ai/explore-roles-responsibilities-world-of-data/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-roles-responsibilities-world-of-data/5-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/2-azure-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/3-sql-server-azure-virtual-machines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/4-azure-sql-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/5-azure-sql-database-managed-instance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/6-postgresql-mariadb-mysql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
