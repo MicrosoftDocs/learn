@@ -3,8 +3,9 @@
 Digital technologies create new opportunities for businesses across the globe by changing the way that goods and services are produced, sold, and consumed. These technologies help your organization adapt in the face of competitive pressures and evolving customer needs. Doing so often involves reimagining the digital platform, culture, and overall approach to transformation with a focus on customer engagement, business processes, and data and intelligence.
 Microsoft enables impactful digital transformation across four pillars:
 
+
 | Pillars | Advantages |
-|:---:|---|
+|:--:|---|
 |![Icon for Empower employees shows a wrench and screwdriver](../media/empower-employees.png)</BR>**Empower employees**|Help your employees achieve more by creating a work environment that’s intelligent, flexible, and secure.|
 |![Icon for Engage customers shows a pair of dialog balloons](../media/engage-customers.png)</BR>**Engage customers**|Tailor individual customer experiences by harnessing data and drawing actionable insights.|
 |![Icon for Optimize operations shows a set of gears](../media/optimize-operations.png)</BR>**Optimize operations**|Accelerate the responsiveness of your business, improve service levels, and reduce costs with intelligent processes.|
