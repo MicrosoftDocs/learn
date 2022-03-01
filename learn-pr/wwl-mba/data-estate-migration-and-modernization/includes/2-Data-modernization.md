@@ -10,9 +10,16 @@ Data modernization is the process of making progressive changes to the way you c
 
 - **Hybrid**: Many organizations like to manage their data estate in a hybrid fashion, with some server applications running on-premises and some in the cloud. Microsoft offers the most consistent set of products and services enabling organizations to seamlessly manage their data in both environments. Microsoft SQL Server 2017 can meet the needs of modernizing your on-premises data estate, and is a step towards to modernizing to Azure.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU0Y]
 
@@ -27,9 +34,16 @@ Azure SQL Database is the intelligent, fully-managed relational cloud database s
 
 Azure SQL Database Managed Instance is an expansion of the existing SQL Database service. It is designed to enable friction-free database migration to a fully-managed database service, with little to no code changes and near zero downtime. 
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqZ7h]
 
@@ -49,16 +63,15 @@ Many organizations have made significant investments in on-premises infrastructu
 
 Microsoft SQL Server 2017 can meet the needs of modernizing your on-premises data estate, and is a step towards modernizing to Azure. Partners and Microsoft can help migrate servers, databases, and applications to modern platforms on-premises or to the cloud.
 
-------------
 :::row:::
 ![Icon of lightbulb](../media/lightbulb.png)
-  :::column span="3":::
 
+:::column:::
 *Now that you’ve seen some examples of data modernization, can you identify the key advantages and capabilities of on-premises modernization and migration to Azure?*
 
 *Which factors influence your decision when there are different paths available to modernization? Would you like to reduce capital investments and optimize operational expenses? Perhaps business continuity is your top priority. Your modernization strategy will depend on  your business needs.*
 
 :::column-end:::
 :::row-end:::
-------------
+
 Now that we’ve covered data migration and modernization, let’s look at globally distributed data, cloud scale analytics, and gaining insights from your data. These allow you to do even more with your data.

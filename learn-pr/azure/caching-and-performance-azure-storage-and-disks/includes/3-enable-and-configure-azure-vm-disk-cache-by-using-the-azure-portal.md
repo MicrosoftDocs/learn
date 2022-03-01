@@ -48,11 +48,11 @@ There are three common options for VM disk caching:
 
 Not every caching option is available for each type of disk. The following table shows you the caching options for each disk type:
 
-|               | **Read-only**  | **Read/write** | **None** |
-|---------------|----------------|----------------|----------|
-| OS disk       | yes            | yes (default)  | yes      |
-| Data disk     | yes (default)  | yes            | yes      |
-| Temp disk     | no             | no             | no       |
+|   | **Read-only** | **Read/write** | **None** |
+|---|---|---|---|
+| **OS disk** | yes | yes (default) | yes |
+| **Data disk** | yes (default) | yes | yes |
+| **Temp disk** | no  | no | no |
 
 > [!NOTE]
 > Disk caching options can't be changed for **L-Series** and **B-series** virtual machines.
