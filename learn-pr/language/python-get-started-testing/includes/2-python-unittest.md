@@ -6,7 +6,7 @@ Classes and inheritance are the basis for using `unittest` to write tests. So, i
 
 ## Write tests using unittest
 
-Writing tests with the `unittest` requires importing the module and creating at least one class that inherits from the `unittest.TestCase` class. This is how an example test looks in a file called *test_assertions.py* :
+Writing tests with the `unittest` requires importing the module and creating at least one class that inherits from the `unittest.TestCase` class. The following is how an example test looks in a file called *test_assertions.py*:
 
 ```python
 import unittest
@@ -14,7 +14,7 @@ import unittest
 class TestAssertions(unittest.TestCase):
 
     def test_equals(self):
-        self.assertEqual"one string", "one string")
+        self.assertEqual("one string", "one string")
         
 if __name__ == '__main__':
     unittest.main()
@@ -59,7 +59,7 @@ OK
 
 ### Naming conventions
 
-The class and method names are following a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separate with an underscore. For example, this is how a test for customer accounts that verify creation and deletion could look:
+The class and method names are following a test convention. The convention is that they need to be prefixed with `test`. Although it isn't required, test classes use camel-casing, and test methods are lower-case, and words are separate with an underscore. For example, the following is how a test for customer accounts that verify creation and deletion could look:
 
 ```python
 class TestAccounts(unittest.TestCase):
@@ -81,11 +81,11 @@ It's essential to use assert methods instead of Python's built-in `assert()` fun
 self.assertEqual("one string", "one string")
 ```
 
-In this case, both strings are equal, so the test passes. Testing equality is one of the many different assertions that the `unittest.TestCase` class offers. Although there are over 30 assert methods, these are most commonly used aside from `self.assertEqual()`:
+In this case, both strings are equal, so the test passes. Testing equality is one of the many different assertions that the `unittest.TestCase` class offers. Although there are more than 30 assert methods, the following are most commonly used aside from `self.assertEqual()`:
 
 * `self.assertTrue(value)`: Ensure that `value` is true. 
 * `self.assertFalse(value)`: Ensure that `value` is false.
-* `self.assertNotEqual(a, b)`: Check that `a` and `b` are not equal.
+* `self.assertNotEqual(a, b)`: Check that `a` and `b` aren't equal.
 
 > [!Note]
 > Python data structures like dictionaries and lists evaluate as true when they have at least one item in them and false when they are empty. Avoid evaluating data structures in this way with `assertTrue()` and `assertFalse()` to prevent unexpected items go undetected. It is preferable to be as accurate as possible when testing.
@@ -94,7 +94,7 @@ In this case, both strings are equal, so the test passes. Testing equality is on
 
 Passing tests are a great way to ensure robustness. Still, understanding failure reporting is crucial to update and fix production code. 
 
-In the next example, I change one of the strings from `"one string"` to `"other string"`. Then, I execute the test with Python. Here is how the output looks now:
+In the next example, I change one of the strings from `"one string"` to `"other string"`. Then, I execute the test with Python. Here's how the output looks now:
 
 ```bash
 $ python test_assertions.py
