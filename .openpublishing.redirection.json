@@ -11454,6 +11454,51 @@
       "source_path": "learn-pr/wwl-sci/mitigate-incidents-microsoft-365-defender/8-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/mitigate-incidents-microsoft-365-defender/10-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/4-explain-virtual-network-service-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-implement-private-access-to-azure-services/2-explain-virtual-network-service-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/2-define-private-link-service-private-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-implement-private-access-to-azure-services/3-define-private-link-service-private-endpoint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/6-integrate-private-link-dns.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-implement-private-access-to-azure-services/4-integrate-private-link-dns",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-implement-private-access-to-azure-services/3-exercise-create-azure-private-endpoint-using-azure-powershell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-implement-private-access-to-azure-services/6-exercise-create-azure-private-endpoint-using-azure-powershell",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-core-data-concepts/2-identify-need-data-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-core-data-concepts/3-identify-types-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-core-data-concepts/4-describe-difference.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-core-data-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-core-data-concepts/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-core-data-concepts/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-core-data-concepts/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-core-data-concepts/8-summary",
+      "redirect_document_id": true
     }
   ]
 }

@@ -94,7 +94,7 @@ In Bicep, you can create a parameter called `location`, then use an expression t
 param location string = resourceGroup().location
 ```
 
-Look at the default value of that parameter. It uses a *function* called `resourceGroup()`, which gives you access to information about the resource group the template is being deployed into. In this example, the template uses the `location` property.
+Look at the default value of that parameter. It uses a *function* called `resourceGroup()`, which gives you access to information about the resource group the template is being deployed into. In this example, the template uses the `location` property. It's common to use this approach to deploy your resources into the same Azure region as the resource group.
 
 If someone is deploying this template, they might choose to override the default value here and use a different location.
 

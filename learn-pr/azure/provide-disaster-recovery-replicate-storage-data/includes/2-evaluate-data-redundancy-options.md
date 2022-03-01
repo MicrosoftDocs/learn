@@ -63,17 +63,17 @@ A paired region is where an Azure region is paired with another in the same geog
 
 Here's a list showing some of the regions that are paired together.
 
-|Geography|Paired regions||
+| |Region|Region|
 |---------|---------|---------|
-|Asia     |East Asia|Southeast Asia|
-|Australia|Australia East|Australia Southeast|
-|Canada| Canada Central|Canada East|
-|China|China North|China East|
-|Europe|North Europe (Ireland)|West Europe (Netherlands)|
-|Japan |Japan East|Japan West|
-|North America|East US|West US|
-|South Africa|South Africa North|South Africa West|
-|UK|UK West|UK South|
+|**Asia**|East Asia|Southeast Asia|
+|**Australia**|Australia East|Australia Southeast|
+|**Canada**| Canada Central|Canada East|
+|**China**|China North|China East|
+|**Europe**|North Europe (Ireland)|West Europe (Netherlands)|
+|**Japan**|Japan East|Japan West|
+|**North America**|East US|West US|
+|**South Africa**|South Africa North|South Africa West|
+|**UK**|UK West|UK South|
 
 ## Use cases for each replication type ##
 

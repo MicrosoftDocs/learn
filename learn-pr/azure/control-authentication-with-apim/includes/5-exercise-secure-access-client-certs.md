@@ -47,7 +47,10 @@ Because you're using the Consumption tier for API Management, you must configure
 
 ## Get the thumbprint for the certificate
 
-In this section, you'll configure API Management to accept a request only if it has a certificate with a certain fingerprint. Let's get that thumbprint from the certificate.
+In this section, you'll configure API Management to accept a request only if it has a certificate with a certain thumbprint (fingerprint). Let's get that thumbprint from the certificate.
+
+> [!NOTE]
+> An SSL certificate thumbprint is also known as an SSL certificate fingerprint.
 
 1. In Cloud Shell, run the following code.
 
@@ -73,7 +76,7 @@ Now, create the authentication policy in the API Management gateway.
 
     ![Inbound processing policy button.](../media/5-inbound-policy.png)
 
-1. Replace the `<inbound>` node of the policy file with the following XML, substituting the fingerprint you copied earlier for `desired-fingerprint` placeholder:
+1. Replace the `<inbound>` node of the policy file with the following XML, substituting the fingerprint you copied earlier for the `desired-fingerprint` placeholder:
 
     ```XML
     <inbound>
