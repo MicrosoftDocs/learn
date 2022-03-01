@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-relational-data-offerings.introduction
-title: Introduction
+uid: learn.wwl.explore-relational-data-offerings.explore-sql
+title: Explore SQL
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Explore SQL
+  description: "Explore SQL"
   ms.date: 03/01/2022
   author: wwlpublish
   ms.author: rcaper
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/4-query-with-sql.md)]
