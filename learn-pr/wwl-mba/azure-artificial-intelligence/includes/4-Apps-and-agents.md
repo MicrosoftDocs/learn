@@ -4,9 +4,16 @@ An **AI app** is simply a web or mobile application that is infused with AI capa
 
 Microsoft delivers breakthrough experiences in your apps with Azure Cognitive Services and Azure Bot Service. Leading AI models are being used across industries, and across a variety of different products today, such as Microsoft 365, Xbox, and Bing.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see the impact of AI apps and agents on businesses today.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see the impact of AI apps and agents on businesses today.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqOXG]
 
@@ -16,7 +23,7 @@ Now let’s take a closer look at the services in intelligent apps and agents. S
 
 Cognitive services are a collection of domain-specific pre-trained AI models that can be customized with your data. They are categorized broadly into vision, speech, language, and search. For more information about each service, see the links in the resources section.
 
-| | |
+| Service | Features |
 |:---------:|---------|
 |**Vision** ![Vision](../media/ic-gm06-ai-icons-computer-vision.png)    |Vision makes it possible for apps and services to accurately identify and analyze content within images and videos.           |
 |**Speech** ![Speech](../media/ic-gm06-ai-icons-speech.png)     | Speech services can convert spoken language into text, or produce natural-sounding speech from text using standard (or customizable) voice fonts.        |
@@ -86,16 +93,27 @@ Flow through the above:
 > [!TIP]
 > You can find more details on Azure products and services for knowledge mining, machine learning, and AI apps and agents by using the products tab on azure.com in the “Summary and resources” unit at the end of the module.
 
-|  |  |
-| ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Familiarize yourself with the elements that enable these capabilities. Although each capability is different, the architectures share common elements. Suppose you want an application to begin fielding commonly asked questions. What tools, APIs, and services could you integrate? For a challenge, write these out and create your own diagram.*
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*Familiarize yourself with the elements that enable these capabilities. Although each capability is different, the architectures share common elements. Suppose you want an application to begin fielding commonly asked questions. What tools, APIs, and services could you integrate? For a challenge, write these out and create your own diagram.*
+
+:::column-end:::
+:::row-end:::
 
 ### AI in action
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see what Azure Cognitive Services and Azure Bot Service can do together.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see what Azure Cognitive Services and Azure Bot Service can do together.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrRTR]
 

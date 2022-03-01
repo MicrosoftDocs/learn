@@ -6,11 +6,11 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming, so rather than wait for the result, we hand the task off to a function and let complete this task asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming, so rather than wait for the result, we hand the task off to a function and let it complete this task asynchronously.
 
-Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
+Just as Azure Functions supports input bindings for various integration sources, it also has a set of templates for output bindings to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
 > This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the command bar, select **Create**. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for **HttpTrigger3** Function appears.
+1. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The Overview pane for the **HttpTrigger3** function appears.
 
 ## Add an Azure Cosmos DB input binding
 
@@ -35,9 +35,9 @@ Let's add another Azure Cosmos DB input binding.
 
 1. In the **Binding Type** dropdown list, select **Azure Cosmos DB**.
 
-1. The **Azure Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
+1. The **Cosmos DB account connection** setting should be pre-populated with the connection you created in the previous exercise.
 
-    If you do not see your connection listed, follow these steps to create a new connection.
+    If you don't see your connection listed, follow these steps to create a new connection.
 
     1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link.
 
@@ -49,7 +49,7 @@ Let's add another Azure Cosmos DB input binding.
     |---|---|---|
     | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. We defined this setting earlier in the lesson. |
     | **Document ID** | `{id}` | Add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **Partition key** | `{id}` | Again, add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **SQL Query (optional)** | _Leave blank_ | We are only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
@@ -74,7 +74,7 @@ We now have an Azure Cosmos DB input binding. Let's add an output binding so we 
     |---|---|---|
     | **Document parameter name** | `newbookmark` | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
     | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined the container earlier in the lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. This is the name of the container that we defined earlier in the lesson. |
     | **Partition key** | `/id` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding configuration `<key>`) must match the one in the container. |
 
 1. Select **OK** to save this output binding configuration.
@@ -83,7 +83,7 @@ Now we have a binding to read from our collection, and a binding to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario.
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages--up to the total capacity of the storage account in which it's defined. The following diagram shows, at a high level, how a queue is used in our scenario.
 
 :::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue with a function pushing and another function popping messages.":::
 
@@ -99,26 +99,26 @@ Let's create the binding through the portal.
 
 Next, we'll set up a storage account connection, where our queue will be hosted.
 
-3. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
+1. Under **Storage account connection**, select **New**. The **New Storage Account connection** dialog box appears.
 
 1. At the beginning of this module, when you created your function app, a storage account was also created for you. Select it from the dropdown list, and then select **OK**.
 
-    The Storage account connection setting is populated with the name of a connection.
+   The **Storage account connection** setting is populated with the name of a connection.
 
 Although we could keep the default values, let's change some settings to lend more meaning to the remaining properties. 
- 
-5. Complete the settings in the **Create Output** pane, by replacing the following old values with the new values:
+
+1. Complete the settings in the **Create Output** pane, by replacing the following old values with the new values:
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. Select **OK** to save your output configuration for Queue Storage. The **Storage account connection** setting is populated with the name of a connection.
+1. Select **OK** to save your output configuration for Azure Queue Storage.
 
 ## Update function implementation
 
-We now have all our bindings set up for your function. It's time to use them in our function.
+We now have all our bindings set up. It's time to use them in our function.
 
 ::: zone pivot="javascript"
 
@@ -134,7 +134,7 @@ Let's break down what this code does:
 
 * Because this function changes our data, we expect the HTTP request to be a POST, and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if(bookmark)` condition checks to see whether an entry was found.
-* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we have created as a JSON string.
+* Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we've created as a JSON string.
 * Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]
@@ -181,6 +181,7 @@ So, that's it. Let's see our work in action in the next section.
         ContentType = "application/json"
     })
     ```
+
 1. In the command bar, select **Save**.  A connection is made, and a log file session opens.
 
 Let's break down what this code does:
@@ -203,7 +204,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In command bar of the **Code + Test** pane for your HTTP-triggered function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
+1. In command bar of the **Code + Test** pane for your **HttpTrigger3** function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
 
     :::image type="content" source="../media/7-test-panel-open-small.png" alt-text="Screenshot showing the test/run pane.":::
 
@@ -224,7 +225,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
     :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark already exists response.":::
 
-    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly.
+    You added the bookmark item in [Exercise - Read data with input bindings](/learn/modules/chain-azure-functions-data-using-bindings/5-read-data-with-input-bindings-portal-lab). The response confirms that your `var bookmark = context.bindings.bookmark` JavaScript is working correctly, and that your PowerShell code is making the same connection.
 
 1. Let's post a second bookmark to the database. Select the **Input** tab.
 

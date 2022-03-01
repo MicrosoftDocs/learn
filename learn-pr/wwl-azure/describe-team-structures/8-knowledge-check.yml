@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2022
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "It is required to implement Waterfall to evolve and implement Agile."
       isCorrect: true
-      explanation: "Correct. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."
+      explanation: "Correct. It is not required to implement Waterfall to evolve and implement Agile. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."
     - content: "It is possible to start with Waterfall and evolve to Agile."
       isCorrect: false
       explanation: "Incorrect. The waterfall methodology is a traditional software development practice not related to Agile. You can implement Agile without any dependencies. Also, you can evolve your current process to Agile."

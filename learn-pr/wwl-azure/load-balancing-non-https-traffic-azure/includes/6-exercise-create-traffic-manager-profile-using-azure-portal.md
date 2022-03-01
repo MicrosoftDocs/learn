@@ -108,7 +108,7 @@ In this section, you will create two instances of a web application deployed in 
       :::column-end:::
     :::row-end:::
     
-3.  Click **Next : Deployment (Preview)**, then click **Next : Monitoring**.
+3.  Click **Next : Deployment**, then click **Next : Monitoring**.
 4.  On the **Monitoring** tab, select the **No** option for **Enable Application Insights**.
 5.  Click **Review + create**.
 

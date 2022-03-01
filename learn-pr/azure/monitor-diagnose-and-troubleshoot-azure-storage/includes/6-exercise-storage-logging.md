@@ -2,7 +2,7 @@ In the Customer Portal scenario, you've decided you need more detailed informati
 
 ## Enable Storage Analytics logging
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the storage account that you created in the previous exercise.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the storage account you created in the previous exercise.
 
 1. In the menu pane, under **Monitoring (classic)**, select **Diagnostic settings (classic)**.
 
@@ -40,7 +40,7 @@ In the Customer Portal scenario, you've decided you need more detailed informati
     cd $HOME/storageapps/StorageTest
     ```
 
-1. Run the sample app as follows. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double-quotes.
+1. Run the sample app as follows. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double quotes.
 
     ```powershell
     dotnet run "<your connection string>" testcontainer
@@ -50,7 +50,7 @@ In the Customer Portal scenario, you've decided you need more detailed informati
 
 1. On your desktop, return to Azure Storage Explorer.
 
-1. Under **Storage Accounts**, under your storage account, expand **Blob Containers**, and you should see a container named **\$logs**, with a folder named **blob**. If this container doesn't appear, wait for a few minutes while Storage Analytics processes the log data, and then select **Refresh** in the toolbar.
+1. Under **Storage Accounts**, under your storage account, expand **Blob Containers**, and you should see a container named **\$logs**, with a folder named **blob**. If this container doesn't appear, wait for a few minutes while Storage Analytics processes the log data, then select **Refresh** in the toolbar.
 
     :::image type="content" source="../media/6-storage-explorer-logs.png" alt-text="Screenshot of Azure Storage Explorer, showing the $logs container." lightbox="../media/6-storage-explorer-logs.png":::
   

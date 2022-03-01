@@ -181,7 +181,6 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
     
         os_profile_linux_config {
             disable_password_authentication = false
-            }
         }
     
         boot_diagnostics {
@@ -222,32 +221,33 @@ In this walkthrough, you'll create a VM in Visual Studio Code using Terraform.
     
     :::image type="content" source="../media/visual-studio-code-terraform-5-55cbb075.png" alt-text="Screenshot of deployed resources in Microsoft Azure.":::
     
-
-> [!NOTE]
-> If you wanted to use a public or private key pair to connect to the Linux VM instead of a username and password, you could use the **os\_profile\_linux\_config** module, set the **disable\_password\_authentication** key value to **true** and include the ssh key details, as in the following code.
-
-```yml
-os_profile_linux_config {
-    disable_password_authentication = true
-    ssh_keys {
-        path    = "/home/azureuser/.ssh/authorized_keys"
-        key_data = "ssh-rsa AAAAB3Nz{snip}hwhqT9h"
+    
+    > [!NOTE]
+    > If you wanted to use a public or private key pair to connect to the Linux VM instead of a username and password, you could use the **os\_profile\_linux\_config** module, set the **disable\_password\_authentication** key value to **true** and include the ssh key details, as in the following code.
+    
+    ```yml
+    os_profile_linux_config {
+        disable_password_authentication = true
+        ssh_keys {
+            path    = "/home/azureuser/.ssh/authorized_keys"
+            key_data = "ssh-rsa AAAAB3Nz{snip}hwhqT9h"
+        }
     }
-}
-
-```
-
-You'd also need to remove the password value in the **os\_profile module** that present in the example above.
-
-> [!NOTE]
-> You could also embed the Azure authentication within the script. In that case, you would not need to install the Azure account extension, as in the following example:
-
-```yml
-provider "azurerm" {
-    subscription_id = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    client_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    client_secret  = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-    tenant_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-}
-
-```
+    
+    ```
+    
+    You'd also need to remove the password value in the **os\_profile module** that present in the example above.
+    
+    > [!NOTE]
+    > You could also embed the Azure authentication within the script. In that case, you would not need to install the Azure account extension, as in the following example:
+    
+    ```yml
+    provider "azurerm" {
+        subscription_id = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        client_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        client_secret  = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        tenant_id      = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+        features {}
+    }
+    
+    ```

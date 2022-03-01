@@ -39,7 +39,7 @@ The data retrieval capabilities of a non-relational database can vary. Each enti
 > [!div class="mx-imgBorder"]
 > ![Querying in a non-relational database](../media/2-search-1.png)
 
-More advanced non-relational systems support indexing, in a similar manner to an index in a relational database. Queries can then use the index to identify and fetch data based on non-key fields. Non-relational systems such as Azure Cosmos DB (a non-relational database management system available in Azure), support indexing even when the structure of the indexed data can vary from record to record. For more information, read [Indexing in Azure Cosmos DB - Overview](https://docs.microsoft.com/azure/cosmos-db/index-overview). 
+More advanced non-relational systems support indexing, in a similar manner to an index in a relational database. Queries can then use the index to identify and fetch data based on non-key fields. Non-relational systems such as Azure Cosmos DB (a non-relational database management system available in Azure), support indexing even when the structure of the indexed data can vary from record to record. For more information, read [Indexing in Azure Cosmos DB - Overview](/azure/cosmos-db/index-overview). 
 
 When you design a non-relational database, it's important to understand the capabilities of the database management system and the types of query it will have to support. 
 

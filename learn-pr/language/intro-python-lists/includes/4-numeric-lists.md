@@ -18,7 +18,7 @@ gravity_on_the_moon = 0.166
 The following code creates a list that shows the gravitational forces of all eight planets in the solar system, in G:
 
 ```python
-gravity_on_planets = [0.378, 0.907, 1, 0.379, 2.36, 0.916, 0.889, 1.12]
+gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
 ```
 
 In this list, `gravity_on_planets[0]` is the gravity on Mercury (0.378 G), `gravity_on_planets[1]` is the gravity on Venus (0.907 G), and so on.

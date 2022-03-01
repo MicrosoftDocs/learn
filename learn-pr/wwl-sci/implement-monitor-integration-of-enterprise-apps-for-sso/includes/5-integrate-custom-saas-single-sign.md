@@ -1,6 +1,5 @@
 
-> [!div class="mx-imgBorder"]
->![Diagram of Azure AD being the single sign on provider for cloud apps.  User and external users log into Azure AD, then are able to connect to available cloud application without logging in to them directly.](../media/sc300-app-single-sign-on.png)
+![Diagram of Azure AD being the single sign on provider for cloud apps.  User and external users log into Azure AD, then are able to connect to available cloud application without logging in to them directly.](../media/sc300-app-single-sign-on.png)
 
 - You can use Azure AD as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Azure AD App Gallery.
 - You can manually configure most apps for single sign-on if they aren't already in the gallery. Azure AD provides several SSO options. SAML-based SSO and OIDC-based SSO. 
