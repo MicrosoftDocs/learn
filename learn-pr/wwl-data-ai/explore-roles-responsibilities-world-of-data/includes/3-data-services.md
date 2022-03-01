@@ -94,7 +94,7 @@ Data engineers can incorporate Azure Stream Analytics into data analytics archit
 
 ![Azure Data Explorer logo](../media/azure-data-explorer.png) Azure Data Explorer is a standalone service that offers the same high-performance querying of log and telemetry data as the Azure Synapse Data Explorer runtime in Azure Synapse Analytics.
 
-Data analysts can use Azure Data Explorer to query and analyze data that includes a timestamp attribute, such as is typically found in log an *Internet-of-things* (IoT) telemetry data.
+Data analysts can use Azure Data Explorer to query and analyze data that includes a timestamp attribute, such as is typically found in log files and *Internet-of-things* (IoT) telemetry data.
 
 ## Azure Purview
 
