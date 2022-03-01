@@ -39,7 +39,7 @@ Your customers can access the Microsoft AppSource online store by visiting <http
 
 AppSource apps are also available within Microsoft products by clicking “Get more apps” from the homepage in Dynamics 365, “Get apps” in Power BI, “Apps” in Teams, and “Insert\>Get Add-ins” in Microsoft 365 products (excluding Teams).
 
-![Screenshot of Microsoft AppSource products from in-product "get apps" page in Power BI](..\media\9-appsource-apps-powerbi.png)
+![Screenshot of Microsoft AppSource products from in-product "get apps" page in Power BI](..\media\9-appsource-apps-powerbi.png)</br>
 *Example of the Microsoft AppSource in-product experience from Power BI*
 
 In addition to the cloud products that are available through the online store and in-product experiences, the [Microsoft AppSource](https://appsource.microsoft.com/) also lists consulting services provided by Microsoft partners. AppSource consulting services are organized by industry, service type, location, and Microsoft product type.
