@@ -10,8 +10,6 @@ One of the reasons for those low numbers is that only [8 percent of partners at 
 
 Nevertheless, a recent study by BCG found that venture-backed startups with [women founders generated more than twice as much revenue per dollar invested than startups founded by men](https://www.bcg.com/en-us/publications/2018/why-women-owned-startups-are-better-bet?azure-portal=true).
 
-The reasons for better performance of startups with women founders include greater diversity of thinking, better empathy for customer needs (particularly in startups that target female customers), and a greater ability to build cohesive teams.
-
 ## Ethnic diversity
 
 According to a recent study by Kauffmann Fellows, founders and executives of US startups are 79 percent white, 16 percent Asian, 3 percent Latinx, and 2 percent black. Yet the same study found that [ethnically diverse startup founding teams raise significantly more money per startup from investors and generate greater returns](https://www.kauffmanfellows.org/journal_posts/the-pipeline-myth-ethnicity-fund-managers?azure-portal=true).

@@ -1,4 +1,4 @@
-When you're working on founding on an early-stage startup, you might wonder:
+When you're working on founding an early-stage startup, you might wonder:
 
 - What it's really like to found a startup.
 - How to manage your time and energy.

@@ -1,8 +1,13 @@
-The goal of this module was to cover practical tips for building a high-performing startup team. These tips included understanding what attributes make great startup founders and the functional roles that need to be filled in most startups.
+The module covered practical tips for building a high-performing startup team. Here's a summary of what you learned:
 
-We discussed the pros and cons of bringing in cofounders versus hiring employees or engaging contractors. We looked at risk management approaches that you can use to protect the company in the event of conflict, such as having a cofounder agreement and implementing founder vesting.
-
-We also discussed why inclusive hiring is a huge strategic advantage for startups. Finally, we covered practical ways in which you can use mentors to augment the capabilities of your core team.
+- Several important personal attributes should exist within the founding team for every startup. It's helpful to consider your current team's strengths and weaknesses. Identify any gaps that need to be filled.
+- Several broad functional roles need to be filled in most early-stage startup teams. It's important to make sure that every member of your team is clear on which roles they're responsible for. It's also important that all roles are covered, or you have a plan for how to cover them as you grow your team.
+- If you're a sole founder, bringing a cofounder into your startup is likely to increase your chances of success by helping you stay on top of the workload, providing moral support, and helping you to make better decisions. It's generally easier to bring in a cofounder at (or close to) the beginning of the journey than after you've launched a product.
+- It's never too early to start building a wish list of possible candidates you might hire after your startup has funding. By cultivating your relationships with these people, you'll be in a much stronger position to find and hire the right person quickly when you have the need and the funding.
+- A cofounder agreement is a good way to reduce the risk of serious cofounder conflict. It sets out how the cofounders will make decisions, how they'll resolve disagreements, and what happens if an agreement can't be reached.
+- Founder vesting is a simple way to protect the company if a founder leaves. It ensures that each founder earns equity over time, contingent on their ongoing involvement and performance.
+- Inclusive hiring can be a source of competitive advantage for your startup. By deliberately creating a diverse team, you can tap into a highly skilled but underutilized talent pool and outperform startups with less diverse teams.
+- By tapping into mentoring from experienced founders, new founders can quickly find the right path to growth, overcome obstacles, avoid making critical mistakes, and expand their network.
 
 ## Useful resources
 
