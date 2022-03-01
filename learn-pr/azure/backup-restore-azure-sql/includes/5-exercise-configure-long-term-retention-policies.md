@@ -2,11 +2,11 @@ Your retail organization must comply with data protection regulations in your ju
 
 Here, you'll use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 
-|  |  |
-|---------|---------|
-| Weekly     | Eight weeks   |
-| Monthly     |  12 months       |
-| Yearly     |  Five years       |
+| Retention period | Length |
+|---|---|
+| Weekly | Eight weeks |
+| Monthly | 12 months |
+| Yearly | Five years |
 
 ## Use the Azure portal to configure long-term retention
 
