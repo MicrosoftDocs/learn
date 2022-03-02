@@ -31,6 +31,6 @@ We provide two ways for setting up your environment:
 
 ## Reference documentation
 
-* [Azure RTOS ThreadX documentation](https://docs.microsoft.com/azure/rtos/threadx)
-* [Azure RTOS ThreadX User Guide](https://docs.microsoft.com/azure/rtos/threadx/about-this-guide)
+* [Azure RTOS ThreadX documentation](/azure/rtos/threadx)
+* [Azure RTOS ThreadX User Guide](/azure/rtos/threadx/about-this-guide)
 * [Azure RTOS GitHub repositories](https://github.com/azure-rtos)
