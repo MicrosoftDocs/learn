@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
-  title: Explore fundamentals of Cosmos DB
-  description: "Explore fundamentals of Cosmos DB"
-  ms.date: 02/27/2022
+  title: Explore fundamentals of Azure Cosmos DB
+  description: "Explore fundamentals of Azure Cosmos DB"
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore fundamentals of Cosmos DB
+title: Explore fundamentals of Azure Cosmos DB
 summary: Azure Cosmos DB provides a highly scalable store for non-relational data.
 abstract: |
   In this module, you'll learn how to:
