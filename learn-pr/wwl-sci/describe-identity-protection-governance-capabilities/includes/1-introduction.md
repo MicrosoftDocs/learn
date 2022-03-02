@@ -3,5 +3,6 @@ Identity governance is about balancing identity security with user productivity 
 In this module, you'll learn how to:
 
 - Describe the identity governance capabilities of Azure AD.
-- Describe the benefits of Privileged Identity Management (PIM).
+- Describe Privileged Identity Management (PIM).
 - Describe the capabilities of Azure AD Identity Protection.
+

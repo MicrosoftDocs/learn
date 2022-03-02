@@ -4,10 +4,10 @@ This module discussed entitlement management, which automates access requests, a
 
 Finally, you learned how Privileged Identity Management (PIM) can help you minimize the number of users who have access to important resources, and how Identity Protection can detect potential identity risks.
 
-Now you've completed this module, you'll be able to:
+Now that you've completed this module, you'll be able to:
 
 - Describe the identity governance capabilities of Azure AD.
-- Describe the benefits of PIM.
+- Describe Privileged Identity Management (PIM).
 - Describe the capabilities of Azure AD Identity Protection.
 
 ## Learn more
