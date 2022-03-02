@@ -8,7 +8,7 @@ We provide two ways for setting up your environment:
 
 ## Use GitHub Codespace
 
-1. Open the [GitHub project samples](https://github.com/liydu/azure-rtos-ms-learn-projects) repo in browser.
+1. Open the [azure-rtos-learn-samples](https://github.com/Azure-Samples/azure-rtos-learn-samples) GitHub repo in browser.
 
 1. From the repo page, create a new codespace. Wait until the codespace is set up.
 
@@ -19,15 +19,19 @@ We provide two ways for setting up your environment:
 > [!TIP]
 > If you are using macOS or Linux and do not have the access to Codespaces yet in GitHub. You can use [local devcontainer](https://code.visualstudio.com/docs/remote/containers) with the same repo.
 
+1. Follow the *Build and debug* unit in each module for detailed steps.
+
 ## Use Visual Studio
 
 1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use Community version which is free of charge.
 
-1. Download and unzip [Azure_RTOS_6.1_Win32_Samples_2020_10_18.zip](https://github.com/azure-rtos/samples/releases/download/v6.1_rel/Azure_RTOS_6.1_Win32_Samples_2020_10_18.zip).
+1. Download and unzip latest [sample projects for Visual Studio](https://github.com/Azure-Samples/azure-rtos-learn-samples/releases/tag/vs).
 
 1. Open `training_projects\azure_rtos_threadx_training.sln` in Visual Studio and follow the instructions of the unit to build and run the project.
 
     ![Visual Studio](../media/visual-studio-project.png)
+
+1. Follow the *Build and debug* unit in each module for detailed steps.
 
 ## Reference documentation
 
