@@ -1,4 +1,4 @@
-A context is the current execution state of a thread. Typically, it consists of such items as the registers, program counter (PC), and stack pointer (SP):
+A context is the current execution state of a thread. Typically, it consists of such items as the registers, program counter (PC), and stack pointer (SP).
 
 :::image type="content" source="../media/thread-context-example-sm.png" alt-text="Figure showing a thread context example.":::
 
