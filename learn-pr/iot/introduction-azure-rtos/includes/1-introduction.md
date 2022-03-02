@@ -1,12 +1,32 @@
-Content TBD
+In this module you will be introduced to a Real-time Operating System (RTOS), and understand the structure and purpose of an RTOS. We will focus on Azure RTOS ThreadX (from now on, ThreadX), which is one of the most widely used RTOSes in the world. In fact, ThreadX is deployed in over 10 billion devices worldwide. 
 
 ## Learning objectives
 
 In this module, you will:
 
-- TBD 
+- Learn the basic components of an RTOS
+- Learn what an RTOS does
+
+## Basic components of an RTOS
+An RTOS typically consists of a kernel (note the spelling), a file system, graphics, USB, and networking capabilities. 
+
+:::image type="content" source="../media/rtos-example.png" alt-text="Example of an RTOS." border="false":::
+
+At the heart of the kernel is the scheduler, which schedules threads and manages the timers, message queues, event flags groups, counting semaphores, and memory pools. The scheduler uses a preemptive priority-based model. We will address these fundamental concepts in the next module.
+
+:::image type="content" source="../media/kernel-components.png" alt-text="Components of a kernel." border="false":::
+
+## What does an RTOS do?
+
+An RTOS simplifies the use of hardware resources and provides a library of services. An RTOS handles many tedious, but important details in a fast and efficient manner. Following are some of the benefits of using an RTOS.
+
+- Better responsiveness and lower overhead
+- Simplified resource sharing
+- Increased portability and maintenance
+
+While it is true that an RTOS incurs a certain cost, the benefits generally outweigh these costs. One of the biggest reasons for using an RTOS is that it achieves quick response time to important events with very low overhead.
 
 ## Prerequisites
 
-TBD
+None
 
