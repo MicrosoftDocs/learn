@@ -2,9 +2,9 @@ This unit provides instructions for how to set up your development environment s
 
 We provide two ways for setting up your environment:
 
-1. Use [GitHub Codespaces](https://github.com/features/codespaces), this is the preferred way since you will not need to install the toolchain on your PC.
+1. Use [GitHub Codespaces](https://github.com/features/codespaces), this is the preferred way since you won't need to install the toolchain on your PC.
 
-1. Use [Visual Studio](https://visualstudio.microsoft.com/), use this if you either do not have Codespaces access yet for your GitHub account or you prefer to use a local environment on your Windows PC.
+1. Use [Visual Studio](https://visualstudio.microsoft.com/), use this if you either don't have Codespaces access yet for your GitHub account or you prefer to use a local environment on your Windows PC.
 
 ## Use GitHub Codespace
 
