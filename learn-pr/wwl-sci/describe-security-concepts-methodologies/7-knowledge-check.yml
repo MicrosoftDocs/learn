@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/23/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -49,14 +50,14 @@ quiz:
     - content: "Encryption at rest."
       isCorrect: true
       explanation: "That's correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
-  - content: "An organization is moving their IT infrastructure to the cloud. They want to know how to create and implement business and technology strategies in a way that will help them succeed in the cloud. What guidance can they use to help them transition to the cloud?"
+  - content: "which of the following best describes the concept of data sovereignty?"
     choices:
-    - content: "They should use Azure Policy for guidance on moving to the cloud."
+    - content: "There are regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally."
       isCorrect: false
-      explanation: "​​​Azure Policy isn’t guidance, but rather a solution that helps ensure resources stay compliant with business and regulatory requirements. Instead, use the Cloud Adoption Framework."
-    - content: "They should use the Microsoft Cloud Adoption Framework for guidance on moving to the cloud."
+      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency.  Data sovereignty, is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
+    - content: "Data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
       isCorrect: true
-      explanation: "The Cloud Adoption Framework has been carefully designed based on cloud adoption best practices from Microsoft employees, customers, and partners. It provides a proven and consistent methodology for implementing cloud technologies.​​​"
-    - content: "They should use the Azure Cloud Succeed Framework."
+      explanation: "Correct. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
+    - content: "Trust no one, verify everything."
       isCorrect: false
-      explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
+      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
