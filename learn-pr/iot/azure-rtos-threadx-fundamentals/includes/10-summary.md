@@ -1,14 +1,14 @@
-We discussed several important terms and concepts in this module, as they are related to Azure ThreadX RTOS. Following are brief definitions of some key points.
+We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. Following are brief definitions of some key points.
 
 ### Determinism
 
-An essential feature of an RTOS is determinism. We assume that for each possible state and each set of inputs, a unique set of outputs and next state of the system can be predicted. This kind of determinism is not unique to an RTOS; it is the basis for virtually all types of computing systems.
+An essential feature of an RTOS is determinism. We assume that for each possible state and each set of inputs, a unique set of outputs and next state of the system can be predicted. This kind of determinism isn't unique to an RTOS; it's the basis for virtually all types of computing systems.
 
-A system is deterministic if the time required to process any task is finite and predictable. We are less concerned with average response time than we are with the worst-case response time. In the latter case, we must have a guarantee on the upper time limit, which is an example of determinism.
+A system is deterministic if the time required to process any task is finite and predictable. We're less concerned with average response time than we are with the worst-case response time. In the latter case, we must have a guarantee on the upper time limit, which is an example of determinism.
 
 ### Scheduling
 
-ThreadX uses a priority-based preemptive scheduling approach. The RTOS controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, the RTOS will preempt a lower-priority running thread so that a higher-priority thread can run. A significant advantage of this approach is that the RTOS quickly responds to important events because it does not have to wait for any polling.
+ThreadX uses a priority-based preemptive scheduling approach. The RTOS controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, the RTOS will preempt a lower-priority running thread so that a higher-priority thread can run. A significant advantage of this approach is that the RTOS quickly responds to important events because it doesn't have to wait for any polling.
 
 ### Priorities
 
@@ -16,7 +16,7 @@ ThreadX priorities range from 0 to 1023, with a default range of 0-31, where the
 
 ### Threads
 
-Threads are a semi-independent program segments that contain most of the application programming logic. Each thread must have a Thread Control Block (TCB) that contains system information critical to the internal processing of that thread. Threads have three distinct states: executing, ready, and suspended.
+Threads are semi-independent program segments that contain most of the application programming logic. Each thread must have a Thread Control Block (TCB) that contains system information critical to the internal processing of that thread. Threads have three distinct states: executing, ready, and suspended.
 
 ### Stacks
 
