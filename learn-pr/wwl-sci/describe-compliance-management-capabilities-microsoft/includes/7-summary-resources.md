@@ -1,16 +1,16 @@
-You wanted to understand the various tools provided by Microsoft to manage compliance for your organization. You explored how compliance center and Compliance Manager can help organizations to manage compliance.
+In this module, you learned about the Microsoft Service Trust Portal and the variety of content resources it provides about Microsoft security, privacy, and compliance practices.
 
-Without these tools, organizations couldn't manage compliance, and they would be at risk of not meeting required legal and regulatory standards. With these tools, they can stay in line with compliance requirements.
+Now that you’ve completed this module, you should be able to:
 
-Now you’ve completed this module, you should be able to:
-
-- Explore the Microsoft compliance center.
-- Describe the benefits of Compliance Manager.
-
+- Describe the offerings of the Service Trust Portal
+- Describe Microsoft’s privacy principles.
 
 ## Learn more
 
-- [Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center)
-- [Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-score?view=o365-worldwide#relationship-to-compliance-manager)
-- [Compliance score calculation](/microsoft-365/compliance/compliance-score-calculation)
-- [Compliance Manager frequently asked questions](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-faq?view=o365-worldwide#what-is-the-difference-between-compliance-score-and-compliance-manager)
+- [Service Trust Portal](https://servicetrust.microsoft.com/)
+- [Get started with the Microsoft Service Trust Portal](/microsoft-365/compliance/get-started-with-service-trust-portal?view=o365-worldwide)
+- [Trust Center](https://www.microsoft.com/trust-center)
+- [Privacy overview](/compliance/assurance/assurance-privacy)
+- [Privacy at Microsoft](https://privacy.microsoft.com/)
+- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
+- [Microsoft Privacy](/privacy/)
