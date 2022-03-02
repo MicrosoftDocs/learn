@@ -1,17 +1,17 @@
-Early operating systems used a "Big Loop" approach to scheduling (sometimes this is referred to the control loop with polling approach). Modern RTOSes such as ThreadX use a priority-based preemptive scheduling approach. Let's look at both scheduling approaches.
+Early operating systems used a "Big Loop" approach to scheduling (sometimes this method is referred to the control loop with polling approach). Modern RTOSes such as ThreadX use a priority-based preemptive scheduling approach. Let's look at both scheduling approaches.
 
 ## Big Loop scheduling
 
-In the "Big Loop" approach, the kernel executes an infinite loop, which polls the threads in a predetermined pattern. If a thread needs service, then it is processed. 
+In the "Big Loop" approach, the kernel executes an infinite loop, which polls the threads in a predetermined pattern. If a thread needs service, then it's processed. 
 
 :::image type="content" source="../media/big-loop-scheduling-sm.png" alt-text="Diagram of threads processing in a loop, from Thread 1 to Thread en." border="false":::
 
-Although the "Big Loop" approach is relatively easy to implement, it has several severe limitations. For example, it wastes much time because the processor polls threads that do not need servicing, and a thread that needs attention has to wait its turn until the processor finishes polling other threads. Furthermore, this approach makes no distinction between the relative importance of the threads, so it is difficult to give threads with critical requirements fast access to the processor. 
+Although the "Big Loop" approach is relatively easy to implement, it has several severe limitations. For example, it wastes much time because the processor polls threads that don't need servicing. This means that a thread that needs attention has to wait its turn until the processor finishes polling other threads. Furthermore, this approach makes no distinction between the relative importance of the threads, so it's difficult to give threads with critical requirements fast access to the processor. 
 
 ## Priority-based scheduling
 
-In the priority-based approach, the RTOS controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, the RTOS will preempt a lower-priority running thread so that a higher-priority thread can run. As the following image shows, the RTOS schedules the ready thread with the highest priority that has been waiting for the processor the longest. Whenever preemption occurs, a context switch also occurs (we will address this topic shortly).
+In the priority-based approach, the RTOS controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, the RTOS will preempt a lower-priority running thread so that a higher-priority thread can run. As the following image shows, the RTOS schedules the ready thread with the highest priority that has been waiting for the processor the longest. Whenever preemption occurs, a context switch also occurs (we'll address this topic shortly).
 
 :::image type="content" source="../media/rtos-scheduling-sm.png" alt-text="Diagram of threads processing from Thread 1 to Thread en, but each thread has its own priority." border="false":::
 
-A significant advantage of this approach is that the RTOS quickly responds to important events because it does not have to wait for any polling. In addition to fast response time, the RTOS also provides a variety of thread services. 
+A significant advantage of this approach is that the RTOS quickly responds to important events because it doesn't have to wait for any polling. In addition to fast response time, the RTOS also provides many thread services. 

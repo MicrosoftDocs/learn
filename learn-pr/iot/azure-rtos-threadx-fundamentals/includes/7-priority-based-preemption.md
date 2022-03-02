@@ -1,4 +1,4 @@
-The term preemptive, priority-based scheduling refers to a scheduling approach in which a higher priority thread can interrupt and suspend a currently executing thread that has a lower priority. For example, the scheduling might occur like this:
+The term preemptive, priority-based scheduling refers to a scheduling approach. In this approach, a higher priority thread can interrupt and suspend a currently executing thread that has a lower priority. For example, the scheduling might occur like this:
 
 :::image type="content" source="../media/priority-based-preemption-sm.png" alt-text="Figure showing priority-based preemption.":::
 
