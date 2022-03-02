@@ -11634,6 +11634,36 @@
       "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/2-manage-azure-cosmos-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/3-query-azure-cosmos-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/4-manage-azure-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/5-manage-azure-file-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/6-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/6-summary",
+      "redirect_document_id": true
     }
   ]
 }
