@@ -42,8 +42,6 @@ When the Conditional Access policy has been applied, an informed decision is rea
 Conditional Access policies can be targeted to members of specific groups or guests. For example, you can create a policy to exclude all guest accounts from accessing sensitive resources.
 Conditional Access is a feature of paid Azure AD editions.
 
-## Interactive guide
-
 In this interactive guide, you'll create a Conditional Access policy for a group of users.
 
 [![Interactive guide](../media/2-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M04%20-%20Create%20a%20Conditional%20Access%20Policy/index.html?azure-portal=true)
