@@ -44,14 +44,14 @@ Factors that you need to cover during your planning process include:
 
 The following table summarizes some of these planning issues. The remainder are described later.
 
-|                           |  Point to site            | Site to site                          |  ExpressRoute                 |
-| -------------             | -------------             | -------------                         | ---------                     |
-| Azure supported services  | Cloud services and VMs    | Cloud services and VMs                | All supported services        |
-| Typical bandwidth         | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)    | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)       | See [ExpressRoute bandwidth options](/azure/expressroute/expressroute-introduction#bandwidth-options)       |
-| Protocols supported       | SSTP and IPsec            | IPsec                                 | Direct connection, VLANs      |
-| Routing                   | RouteBased (dynamic)      | PolicyBased (static) and RouteBased   | BGP                           |
-| Connection resiliency     | Active-passive            | Active-passive or active-active       | Active-active                 |
-| Use case                  | Testing and prototyping   | Dev, test and small-scale production  | Enterprise/mission critical   |
+|   | Point to site | Site to site | ExpressRoute |
+|---|---|---|---|
+| **Azure supported services** | Cloud services and VMs | Cloud services and VMs | All supported services |
+| **Typical bandwidth** | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) | See [ExpressRoute bandwidth options](/azure/expressroute/expressroute-introduction#bandwidth-options) |
+| **Protocols supported** | SSTP and IPsec | IPsec | Direct connection, VLANs |
+| **Routing** | RouteBased (dynamic) | PolicyBased (static) and RouteBased | BGP |
+| **Connection resiliency** | Active-passive | Active-passive or active-active | Active-active |
+| **Use case** | Testing and prototyping | Dev, test and small-scale production | Enterprise/mission critical |
 
 ### Gateway SKUs
 

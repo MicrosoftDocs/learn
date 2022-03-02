@@ -79,13 +79,13 @@ The correlations that we've seen before in this dataset are still a problem here
 
 |  | column | row | corr |
 | --- | --- | --- | --- |
-| 0 | Folate_Tot_(µg) | Folate_DFE_(µg) | 0.98 |
-| 1 | Folic_Acid_(µg) | Folate_DFE_(µg) | 0.95 |
-| 2 | Folate_DFE_(µg) | Folate_Tot_(µg) | 0.98 |
-| 3 | Vit_A_RAE | Retinol_(µg) | 0.99 |
-| 4 | Retinol_(µg) | Vit_A_RAE | 0.99 |
-| 5 | Vit_D_µg | Vit_D_IU | 1 |
-| 6 | Vit_D_IU | Vit_D_µg | 1 |
+| **0** | Folate_Tot_(µg) | Folate_DFE_(µg) | 0.98 |
+| **1** | Folic_Acid_(µg) | Folate_DFE_(µg) | 0.95 |
+| **2** | Folate_DFE_(µg) | Folate_Tot_(µg) | 0.98 |
+| **3** | Vit_A_RAE | Retinol_(µg) | 0.99 |
+| **4** | Retinol_(µg) | Vit_A_RAE | 0.99 |
+| **5** | Vit_D_µg | Vit_D_IU | 1 |
+| **6** | Vit_D_IU | Vit_D_µg | 1 |
 
 Before we drop anything from the `df` DataFrame, let's take a quick look at these correlations visually. Let's start with `Folate_Tot_(µg)` and `Folate_DFE_(µg)`.
 
