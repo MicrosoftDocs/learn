@@ -2,7 +2,7 @@ What is the origin of the name ThreadX?
 
 :::image type="content" source="../media/threadx-logo-sm.png" alt-text="Image of the Thread X logo." border="false":::
 
-The name ThreadX derives from the fact that threads are used as the executable modules, and the letter “X” represents switching, i.e., switching threads fast and efficiently is an essential feature of an RTOS.
+The name ThreadX derives from the fact that threads are used as the executable modules, and the letter “X” represents switching, that is, switching threads fast and efficiently is an essential feature of an RTOS.
 
 ## Learning objectives
 
@@ -12,7 +12,7 @@ In this module, you will:
 - Explore the services of an RTOS and how they can be used.
 - Learn about context switches.
 
-After you complete this module, you will have the necessary knowledge to expand your exploration of Azure RTOS ThreadX.
+After you complete this module, you'll have the necessary knowledge to expand your exploration of Azure RTOS ThreadX.
 
 ## Prerequisites
 
