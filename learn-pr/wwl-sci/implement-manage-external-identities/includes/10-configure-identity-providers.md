@@ -53,7 +53,7 @@ Direct federation limitations include those described in the following table.
      -  `okta.com`
      -  `federation.exostar.com`
      -  (This list is subject to change.)
- -  For example, when setting up direct federation for **`fabrikam.com`**, the authentication URL `https://fabrikam.com/adfs` will pass the validation. A host in the same domain will also pass, for example `https://sts.fabrikam.com/adfs`. However, the authentication URL `https://fabrikamconglomerate.com/adfs` or `https://fabrikam.com.uk/adfs` for the same domain won't pass.
+ -  For example, when setting up direct federation for `fabrikam.com`, the authentication URL `https://fabrikam.com/adfs` will pass the validation. A host in the same domain will also pass, for example `https://sts.fabrikam.com/adfs`. However, the authentication URL `https://fabrikamconglomerate.com/adfs` or `https://fabrikam.com.uk/adfs` for the same domain won't pass.
 
 
   :::column-end:::
