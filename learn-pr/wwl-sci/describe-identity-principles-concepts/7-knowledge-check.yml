@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/01/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -55,9 +55,9 @@ quiz:
     - content: "Verifying that a user or device is who they say they are."
       isCorrect: true
       explanation: "That's correct. Authentication is the process of verifying that a user or device is who they say they are."
-    - content: "The process of profiling user behavior."
+    - content: "The process of tracking user behavior."
       isCorrect: false
-      explanation: "That's incorrect. The process of profiling user behavior is auditing, not authentication."
+      explanation: "That's incorrect. The process of tracking who does what, where, when, and how is auditing, not authentication."
     - content: "Enabling federated services."
       isCorrect: false
       explanation: "That's incorrect. Authentication doesn't enable federated services."

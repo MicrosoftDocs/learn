@@ -4,10 +4,10 @@ Federation enables the access of services across organizational or domain bounda
 
 The simplified way to think about this federation scenario is as follows:
 
-- The website uses the authentication services of IdP-A.
-- The user authenticates with IdP-B.
+- The website, in domain A, uses the authentication services of Identity Provider A (IdP-A).
+- The user, in domain B, authenticates with Identity Provider B (IdP-B).
 - IdP-A has a trust relationship configured with IdP-B.
-- When the user’s credentials are passed to the website, the website trusts the user and allows access.
+- When the user, who wants to access the website, provides his/her credentials to the website, the website trusts the user and allows access.   This access is allowed because of the trust that is already established between the two identity providers.
 
 With federation, trust isn't always bidirectional.  Although IdP-A may trust IdP-B and allow the user in domain B to access the website in domain A, the opposite isn't true, unless that trust relationship is configured.
 
