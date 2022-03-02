@@ -11594,6 +11594,46 @@
       "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/6-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/2-describe-provision-non-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/3-provision-azure-cosmos-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/4-provision-non-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/5-describe-configure-non-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/6-configure-non-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/7-exercise-provision-non-relational-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-non-relational-data-services-azure/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-non-relational-data-services-azure/8-summary",
+      "redirect_document_id": true
     }
   ]
 }
