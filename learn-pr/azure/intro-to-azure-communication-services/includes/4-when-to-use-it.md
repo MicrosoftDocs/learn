@@ -8,6 +8,7 @@ We'll list some criteria that will help you make the right decision.
 * Features - Do you need the features of ACS?
 * Environment - Would ACS work in your environment?
 * Geographic Region - What Location/Market are you targeting?
+* Suitability - ACS has many features, how can you be sure which one is right for a scenario?
 
 ### Existing Business/Application/Idea
 
@@ -23,7 +24,7 @@ It's possible to mix and match ACS features and combine them with other Azure of
 
 ### Environment
 
-ACS requires a suitable environment to work within. By environment we mean both the target device/browser and the programming language of the application written for that device/browser. 
+ACS requires a suitable environment to work within. By environment we mean both the target device/browser and the programming language of the application written for that device/browser.
 
 When it comes to these, we support:
 
@@ -48,6 +49,16 @@ Some features of ACS are only available in certain countries or locations, addit
 
 * [Telephony regions eligibility](/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
 * [Additional tes message information](/azure/communication-services/concepts/sms/sms-faq)
+
+### Suitability
+
+When deciding to use ACS, it is also important to think about which of its many features you should use for a particular scenario. There may be a temptation to go overboard and use everything but that is often not ideal. As we explained before you can mix and match features or choose to not use any at all. To aid in a decision here's some guidance that may help.
+
+Firstly, remember that not all customers are willing to jump on a video or audio call with a real person. Its important to offer them various types of communication to suit their needs and motivations. Always start with something more passive and asynchronous like chat or email. Once there's an established business relationship with a customer they're more likely to be willing to hop on a call, especially if they need things like support or maintenance.
+
+Additionally, some users may be unwilling to supply their phone number of other personal details that might rule out some of ACS' telephony features. Make sure you have other flows such as Email in place.
+
+If in doubt, starting with chat and in particular a chat experience that does not require a user to provide sign-in information may be a good idea to communicate to your users.
 
 ## Apply the criteria
 

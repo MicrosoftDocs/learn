@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "Chat"
       isCorrect: false
-      explanation: "ACS' Chat feature requires that a user be logged in and connected to a chat thread before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
+      explanation: "ACS' Chat feature requires that a user be online and connected to a chat thread before they can get a reminder. Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
     - content: "Short Messaging Service(SMS)"
       isCorrect: true
       explanation: "Short Messaging Service(SMS) can deliver a message directly to their phone, which they can read anywhere at any time."
@@ -52,7 +52,7 @@ quiz:
     choices:
     - content: "Short Messaging Service(SMS)"
       isCorrect: false
-      explanation: "New customers are unlikely to be willing to provide their mobile phone number so Short Messaging Service(SMS) messages couldn't be sent to them. Chat is a better option for prospective customers as it doesn't require an existing identity or relationship with a customer."
+      explanation: "New customers are unlikely to be willing to provide their mobile phone number so Short Messaging Service(SMS) messages couldn't be sent to them. Chat is a better option for prospective customers as it doesn't require an existing relationship with a customer."
     - content: "Chat"
       isCorrect: true
       explanation: "Engaging with a new customer with a live chat interface is a great way to answer any immediate questions they have. This can also be done in a way that doesn't require a customer commitment."
