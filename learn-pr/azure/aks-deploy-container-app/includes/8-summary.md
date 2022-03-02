@@ -43,7 +43,7 @@ To learn more about Azure Kubernetes Service, see the following articles:
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [HTTP application routing](/azure/aks/http-application-routing?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Azure CLI documentation on Microsoft Docs](/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Azure CLI command docs](/cli/azure/aks?WT.mc_id=deploycontainerapps_summary-learn-ludossan#az-aks-create)
+- [Azure CLI command docs](/cli/azure/aks?view=azure-cli-latest&WT.mc_id=deploycontainerapps_summary-learn-ludossan#az-aks-create)
 - [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Kubernetes documentation](https://kubernetes.io/docs/home/)
