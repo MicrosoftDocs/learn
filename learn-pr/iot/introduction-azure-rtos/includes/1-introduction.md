@@ -10,11 +10,11 @@ In this module, you will:
 ## Basic components of an RTOS
 An RTOS typically consists of a kernel (note the spelling), a file system, graphics, USB, and networking capabilities. 
 
-:::image type="content" source="../media/rtos-example.png" alt-text="Example of an RTOS." border="false":::
+:::image type="content" alt-text="Example of an RTOS." source="../media/rtos-example.png" border="false" loc-scope="Azure":::
 
 At the heart of the kernel is the scheduler, which schedules threads and manages the timers, message queues, event flags groups, counting semaphores, and memory pools. The scheduler uses a preemptive priority-based model. We will address these fundamental concepts in the next module.
 
-:::image type="content" source="../media/kernel-components.png" alt-text="Components of a kernel." border="false":::
+:::image type="content" alt-text="Components of a kernel." source="../media/kernel-components.png" border="false" loc-scope="Azure":::
 
 ## What does an RTOS do?
 
