@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-management-capabilities-of-azure.baselines-for-azure
-title: Describe security baselines for Azure
+title: Describe the Azure Security Benchmark and security baselines for Azure
 metadata:
-  title: Describe security baselines for Azure
-  description: "Describe security baselines for Azure"
-  ms.date: 12/03/2021
+  title: Describe the Azure Security Benchmark and security baselines for Azure
+  description: "Describe the Azure Security Benchmark and security baselines for Azure"
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
