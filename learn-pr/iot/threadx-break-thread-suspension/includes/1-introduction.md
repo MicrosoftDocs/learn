@@ -1,4 +1,4 @@
-Now that you have created two ThreadX projects, have you thought about how you can protect your system from unexpected hazards? If so, this is the module you should investigate. 
+Now that you've created two ThreadX projects, have you thought about how you can protect your system from unexpected hazards? If so, this is the module you should investigate. 
 
 ## Learning objectives
 
