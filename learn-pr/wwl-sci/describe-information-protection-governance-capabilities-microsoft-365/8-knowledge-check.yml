@@ -4,19 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which part of the concept of know your data, protect your data, and prevent data loss addresses the need for organizations to automatically retain, delete, store data and records in a compliant manner?"
+  - content: "Which part of the concept of know your data, protect your data, prevent data loss, and govern your data addresses the need for organizations to automatically retain, delete, store data and records in a compliant manner?"
     choices:
     - content: "Know your data"
       isCorrect: false

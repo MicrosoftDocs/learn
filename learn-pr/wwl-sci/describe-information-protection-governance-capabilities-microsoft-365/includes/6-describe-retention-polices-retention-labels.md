@@ -7,12 +7,12 @@ When content has retention settings assigned to it, that content remains in its 
 
 Retention settings work with the following different workloads:
 
-- [SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint)
-- [Microsoft Teams](/microsoft-365/compliance/retention-policies-teams)
-- [Yammer](/microsoft-365/compliance/retention-policies-yammer)
-- [Exchange](/microsoft-365/compliance/retention-policies-exchange)
+- [SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide)
+- [Microsoft Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-worldwide)
+- [Yammer](/microsoft-365/compliance/retention-policies-yammer?view=o365-worldwide)
+- [Exchange](/microsoft-365/compliance/retention-policies-exchange?view=o365-worldwide)
 
-When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
+When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
 
 **Retention policies**
 
