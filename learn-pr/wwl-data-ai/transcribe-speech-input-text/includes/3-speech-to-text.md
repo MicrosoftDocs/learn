@@ -1,11 +1,11 @@
 The Speech service supports speech recognition through two REST APIs:
 
-- The **Speech-to-text** API, which is the primary way to perform speech recognition. The endpoint for this API is `https://<LOCATION>.api.cognitive.microsoft.com/sts/v1.0`
-- The **Speech-to-text Short Audio** API, which is optimized for short streams of audio (up to 60 seconds). The endpoint for this API is at `https://<LOCATION>.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1`
+- The **Speech-to-text** API, which is the primary way to perform speech recognition.
+- The **Speech-to-text Short Audio** API, which is optimized for short streams of audio (up to 60 seconds).
 
 You can use either API for interactive speech recognition, depending on the expected length of the spoken input. You can also use the **Speech-to-text** API for *batch transcription*, transcribing multiple audio files to text as a batch operation.
 
-In practice, most interactive speech-enabled applications use the Speech service through a (programming) language-specific SDK.
+You can learn more about the REST APIs in the [Azure Speech-to-text REST APIs documentation](/azure/cognitive-services/speech-service/rest-speech-to-text). In practice, most interactive speech-enabled applications use the Speech service through a (programming) language-specific SDK.
 
 ## Using the Speech-to-text SDK
 
