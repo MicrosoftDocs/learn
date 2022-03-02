@@ -6,9 +6,3 @@ Web Application Firewall (WAF) provides centralized protection of your web appli
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing how the Web Application Firewall provides protection against common exploits.](../media/2-web-app-firewall.png)
-
-### Supported services
-
-WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) services from Microsoft.  WAF has features that are customized for each specific service.
-
- Use Azure WAF to achieve centralized protection for your web applications from common exploits and vulnerabilities.
