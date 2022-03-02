@@ -1,6 +1,6 @@
 Have you wondered about the memory management options that Azure RTOS ThreadX offers you? If so, you've come to the right place. 
 
-Most ThreadX resources require the allocation of memory space when those resources are created. For example, when a thread is created, memory space for its stack must be provided. ThreadX provides two memory management techniques. The developer can choose one of these techniques, or any other method, to allocate memory space. 
+Most ThreadX resources require the allocation of memory space when those resources are created. For example, when a thread is created, memory space for its stack must be provided. ThreadX provides two memory management techniques. The developer can choose one of these techniques, or any other method, to allocate memory space.
 
 ## Learning objectives
 
@@ -16,7 +16,7 @@ When you complete this module, you'll be well on your way to exploring additiona
 
 ## Prerequisites
 
-- [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+- [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
 - Working knowledge of C or C++, GitHub and Visual Studio
-- Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in this [learning path](/learn/paths/azure-rtos-threadx/?azure-portal=true)
 
