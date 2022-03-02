@@ -73,9 +73,7 @@ Azure SQL Database has two purchasing models as shown in the following graphic:
 
 - DTU (Database Transaction Unit) is a combined measure of compute, storage, and IO resources. DTU model is a simple, preconfigured purchase option. This is unavailable on SQL managed Instance.
 
-- Serverless model is a compute tier for single databases in Azure SQL Database. It automatically scales compute, based on workload demand and bills only for the amount of compute used. This is shown graphically in the following image.
-
-:::image type="content" source="../media/serverless-billing.png" alt-text="Diagram of the serverless billing options.":::
+- Serverless model is a compute tier for single databases in Azure SQL Database. It automatically scales compute, based on workload demand and bills only for the amount of compute used. 
 
 
 
@@ -83,7 +81,7 @@ The vCore-based model is recommended because it allows you to independently sele
 
 The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity (pay in advance) to save money. Neither of these options is available in the DTU model.
 
-In the table below, you can see which purchasing model is recommended based on the requirements.
+In the table below, each purchasing model is recommended based on the requirements.
 
 | **Recommendation**| **Requirement** |
 | - | - |
@@ -105,7 +103,7 @@ Service tiers available to Azure SQL Database and SQL Managed Instance are - Gen
 
 
 
-In the preceding image, with **General Purpose** **service tier**, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage. The backup files are then stored in Azure Standard Storage. When failover occurs, the Azure service fabric will look for a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node.
+In the preceding image, with **General Purpose** **service tier**, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage. The backup files are then stored in Azure Standard Storage. When failover occurs, the Azure service fabric will identify a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node.
 
 **Business critical architecture** is meant for mission-critical applications that need low latency and minimal downtime. Business Critical is like deploying an Always On availability group (AG) behind the scenes, the way the data and log files are stored differs from General purpose, in that they are stored on the direct attached SSD.
 
