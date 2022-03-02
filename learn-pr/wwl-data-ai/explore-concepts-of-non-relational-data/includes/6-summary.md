@@ -8,9 +8,9 @@ You have explored:
 
 ## Learn more
 
-- [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)
-- [Welcome to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
-- [Indexing in Azure Cosmos DB - Overview](https://docs.microsoft.com/azure/cosmos-db/index-overview)
-- [Introduction to Azure Cosmos DB: Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
-- [Introduction to Azure Cosmos DB: Gremlin API](https://docs.microsoft.com/azure/cosmos-db/graph-introduction)
-- [Introduction to Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
+- [Choose the right data store](/azure/architecture/guide/technology-choices/data-store-overview)
+- [Welcome to Azure Cosmos DB](/azure/cosmos-db/introduction)
+- [Indexing in Azure Cosmos DB - Overview](/azure/cosmos-db/index-overview)
+- [Introduction to Azure Cosmos DB: Table API](/azure/cosmos-db/table-introduction)
+- [Introduction to Azure Cosmos DB: Gremlin API](/azure/cosmos-db/graph-introduction)
+- [Introduction to Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction)

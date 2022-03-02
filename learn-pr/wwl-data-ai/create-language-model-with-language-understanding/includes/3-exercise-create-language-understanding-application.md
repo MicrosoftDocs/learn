@@ -15,7 +15,7 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose either the West US 2 or West Europe region*
     - **Name**: *Enter a unique name*.
-    - **Pricing tier**: Free (F0) (*If this tier is not available, select Standard (S)*)
+    - **Pricing tier**: Standard (S)
     - **Legal Terms**: _Agree_ 
     - **Responsible AI Notice**: _Agree_
 
