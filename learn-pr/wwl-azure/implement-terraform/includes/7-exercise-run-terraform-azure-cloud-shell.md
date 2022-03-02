@@ -44,6 +44,7 @@ The following steps outline how to create a resource group in Azure using Terraf
     
     ```Yml
     provider "azurerm" {
+      features {}
     }
     resource "azurerm_resource_group" "rg" {
             name = "testResourceGroup"

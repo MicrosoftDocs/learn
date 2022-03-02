@@ -16,9 +16,9 @@ quiz:
   questions:
     - content: To show a string on the console, what code would you enter?
       choices:
-        - content: The code `print('my message')`
+        - content: The code `print(my message)`
           isCorrect: false
-          explanation: Incorrect. You need to use double quotation marks to print.
+          explanation: Incorrect. You need to use quotation marks to print.
         - content: The code `println("my message")`
           isCorrect: false
           explanation: Incorrect. You need to use the `print()` function.
