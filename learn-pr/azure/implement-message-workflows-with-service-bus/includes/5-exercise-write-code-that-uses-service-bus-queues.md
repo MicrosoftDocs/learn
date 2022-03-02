@@ -210,12 +210,12 @@ You can get these values from the connection string.
     ```azurecli
     az servicebus queue show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name salesmessages \
+        --name salesperformancemessages \
         --query messageCount \
         --namespace-name <namespace-name>
     ```
 
-1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
+1. Run the `dotnet run` command from step 1 again, then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
   
 ## Write code to receive messages from the queue
 
@@ -441,7 +441,7 @@ Run the following code to confirm that all the messages have been removed from t
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesmessages \
+    --name salesperformancemessages \
     --query messageCount \
     --namespace-name <namespace-name>
 ```

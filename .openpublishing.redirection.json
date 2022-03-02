@@ -11559,6 +11559,41 @@
       "source_path": "learn-pr/wwl-data-ai/explore-relational-data-offerings/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-relational-data-offerings/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/2-describe-provision-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/3-describe-provision-sql-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/4-describe-provision-postgresql-mysql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/5-configure-relational-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/6-configure-sql-database-mysql-postgresql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/7-exercise-provision-relational-azure-data-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/4-exercise-provision-relational-azure-data-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-provision-deploy-relational-database-offerings-azure/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-provision-deploy-relational-database-offerings-azure/6-summary",
+      "redirect_document_id": true
     }
   ]
 }
