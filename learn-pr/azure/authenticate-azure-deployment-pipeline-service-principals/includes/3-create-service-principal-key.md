@@ -58,6 +58,8 @@ To create a service principal and a key, use the `az ad sp create-for-rbac` comm
 
 ```azurecli
 az ad sp create-for-rbac \
+  --role Contributor \
+  --scopes /subscriptions/<SUBSCRIPTION-ID> \
   --name MyPipeline
 ```
 
