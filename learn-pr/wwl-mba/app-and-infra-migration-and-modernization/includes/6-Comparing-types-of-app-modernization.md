@@ -4,18 +4,30 @@ In this unit, we’ll talk about modernizing your applications by refactoring wi
 
 Containers are a packaging mechanism in which applications are abstracted from the environment in which they run, allowing your applications to be more portable.
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about refactoring your applications with container technology.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn about refactoring your applications with container technology.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr240]
 
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*Here’s one way to think about containers. Say you are packing up your kitchen. You put all the appliances and furniture, along with pots and pans into a moving van. This is the container. Wherever you decide to move, you take the container with you and it will be the same kitchen. With container technology, applications can be built to run in any environment. Additional tools, such as Kubernetes, help orchestrate the containers, so you can deploy and scale with confidence.*
+
+---
+:::column-end:::
+:::row-end:::
 
 
-|  |  |
-| ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Here’s one way to think about containers. Say you are packing up your kitchen. You put all the appliances and furniture, along with pots and pans into a moving van. This is the container. Wherever you decide to move, you take the container with you and it will be the same kitchen. With container technology, applications can be built to run in any environment. Additional tools, such as Kubernetes, help orchestrate the containers, so you can deploy and scale with confidence.*
-|
 
 Let’s look at how Xerox uses Azure containers.
 
@@ -50,20 +62,26 @@ In a microservices architecture, the application is composed of small, independe
 
 Done correctly, microservices can provide several benefits:
 
-|   |   |
+|   | Advantages |
 | - | - |
-| Agility | Microservices are deployed independently, it's easier to manage bug fixes and feature releases. You can update a service without redeploying the entire application and roll back an update if something goes wrong. |
-| Small code, small teams | A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. |
-| Mix of technologies | Teams can pick the technology that best fits their service, using a mix of technology stacks as appropriate. |
-| Resiliency | If an individual microservice becomes unavailable, it won't disrupt the entire application, as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). |
-| Scalability | Microservices architecture allows each microservice to be scaled independently of the others. That lets you scale out subsystems that require more resources, without scaling out the entire application. |
-| Data isolation | It is much easier to perform schema updates, because only a single microservice is impacted. |
-|
+| **Agility** | Microservices are deployed independently, it's easier to manage bug fixes and feature releases. You can update a service without redeploying the entire application and roll back an update if something goes wrong. |
+| **Small code, small teams** | A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. |
+| **Mix of technologies** | Teams can pick the technology that best fits their service, using a mix of technology stacks as appropriate. |
+| **Resiliency** | If an individual microservice becomes unavailable, it won't disrupt the entire application, as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). |
+| **Scalability** | Microservices architecture allows each microservice to be scaled independently of the others. That lets you scale out subsystems that require more resources, without scaling out the entire application. |
+| **Data isolation** | It is much easier to perform schema updates, because only a single microservice is impacted. |
 
+---
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about rearchitecting with microservices.|
+:::column:::
+Watch this video to learn about rearchitecting with microservices.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKB]
 
@@ -75,11 +93,16 @@ Now that we’ve discovered rearchitecting with microservices, let’s focus on 
 
 Serverless computing is a cloud-computing execution model in which the cloud provider dynamically manages the allocation of machine resources. With Azure, you can build applications without provisioning and managing infrastructure, using a fully-managed platform. 
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
+:::column:::
+Watch the video to learn about cloud native capabilities.
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch the video to learn about cloud native capabilities.|
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqP1K] 
 
