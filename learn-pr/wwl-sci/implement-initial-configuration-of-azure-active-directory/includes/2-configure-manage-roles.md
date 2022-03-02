@@ -48,7 +48,7 @@ Azure AD roles are used to manage Azure AD resources in a directory such as crea
 
   :::column-end:::
   :::column:::
-    The person who signs up for the Azure Active Directory tenant becomes a Global Administrator.
+    The person who signs up for the Azure Active Directory tenant becomes the first Global Administrator.
   :::column-end:::
 :::row-end:::
 :::row:::
