@@ -19,7 +19,7 @@ abstract: |
   - Use type conversion to convert between data types.
 prerequisites: |
   Be familiar with the concept of programming.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-create-run-program.svg
 levels:
   - beginner
 roles:

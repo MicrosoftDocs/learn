@@ -4,19 +4,19 @@ The items highlighted indicate which HPC virtual machine is strongest and prefer
 
 |   | HB120_v2 | HC44 | HB60 |
 |---|---|---|---|
-| Processor | AMD EPYC 7742 (Rome) | Intel Platinum 8168 | AMD EPYC 7551 (Naples) |
-| No cores (SMT disabled) | <code>120</code> | 44 | 60 |
-| CPU base frequency | 2.45 GHz | <code>2.7 GHz</code> | 2.0 GHz |
-| Support AVX 512 | No (16 FLOPS per core) | <code>Yes (32 FLOPS per core)</code> | No (8 FLOPS per core) |
-| Theoretical MFLOPS (FP64) | <code>~4000</code> | ~3000 | ~1000 |
-| NUMA domains | 30 | <code>2</code> | 15 |
-| Max MPI job size | <code>36000 cores</code> | 13200 cores | 18000 cores |
-| Memory size | <code>480 GB</code> | 352 GB | 240 GB |
-| Memory bandwidth | <code>340 GB/s</code> | 190 GB/s | 260 GB/s |
-| InfiniBand | <code>200 GB HDR (latency ~1.2 &mu;s)</code> | 100 GB EDR (latency ~1.8 &mu;s) | 100 GB EDR (latency ~1.9 &mu;s) |
-| Local SSD size | <code>960 GB (NVMeDirect), 480 GB</code> | 700 GB | 700 GB |
-| Max attached disks | <code>8</code> | 4 | 4 |
-| Cost ratio | 1.58 | 1.39 | <code>1.0</code> |
+| **Processor** | AMD EPYC 7742 (Rome) | Intel Platinum 8168 | AMD EPYC 7551 (Naples) |
+| **No cores (SMT disabled)** | `120` | 44 | 60 |
+| **CPU base frequency** | 2.45 GHz | `2.7 GHz` | 2.0 GHz |
+| **Support AVX 512** | No (16 FLOPS per core) | `Yes` (32 FLOPS per core) | No (8 FLOPS per core) |
+| **Theoretical MFLOPS (FP64)** | `~4000` | ~3000 | ~1000 |
+| **NUMA domains** | 30 | `2` | 15 |
+| **Max MPI job size** | `36000 cores` | 13200 cores | 18000 cores |
+| **Memory size** | `480 GB` | 352 GB | 240 GB |
+| **Memory bandwidth** | `340 GB/s` | 190 GB/s | 260 GB/s |
+| **InfiniBand** | `200 GB HDR` (latency ~1.2 &mu;s) | 100 GB EDR (latency ~1.8 &mu;s) | 100 GB EDR (latency ~1.9 &mu;s) |
+| **Local SSD size** | `960 GB` (NVMeDirect), `480 GB` | 700 GB | 700 GB |
+| **Max attached disks** | `8` | 4 | 4 |
+| **Cost ratio** | 1.58 | 1.39 | `1.0` |
 
 ## Reasons to choose HC44 
 
