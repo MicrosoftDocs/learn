@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.define-concepts-of-siem,-soar,-xdr
-title: Define the concepts of SIEM, SOAR, XDR
+title: Define the concepts of SIEM and SOAR
 metadata:
-  title: Define the concepts of SIEM, SOAR, XDR
-  description: "Define the concepts of SIEM, SOAR, XDR"
-  ms.date: 12/03/2021
+  title: Define the concepts of SIEM and SOAR
+  description: "Define the concepts of SIEM and SOAR"
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-define-concepts-of-siem-soar-xdr.md)]
+  [!include[](includes/2-define-concepts-of-siem-soar.md)]

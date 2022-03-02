@@ -10,20 +10,11 @@ This diagram shows the end-to-end functionality of Microsoft Sentinel.
 - **Investigate** threats with AI and hunt suspicious activities at scale, tapping into decades of cybersecurity work at Microsoft.
 - **Respond** to incidents rapidly with built-in orchestration and automation of common security tasks.
 
-Microsoft Sentinel helps enable end-to-end security operations. It starts with log ingestion and continues through to automated response to security alerts.
+Microsoft Sentinel helps enable end-to-end security operations, in a modern Security Operations Center (SOC). It starts with log ingestion and continues through to automated response to security alerts.  Listed below are some of the key features of Microsoft Sentinel.
 
 ### Connect Sentinel to your data
 
-Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender (formerly Microsoft Threat Protection) solutions, and Microsoft 365 sources, including Office 365, Azure AD, Microsoft Defender for Identity (formerly Azure ATP), Microsoft Cloud App Security, and more.
-
-First, you must have your data ingested into Microsoft Sentinel, for which you need data connectors. There are data connectors that cover a wide range of scenarios and sources, including but not limited to:
-
-- Syslog
-- Windows Event Logs
-- Common Event Format (CEF)
-- Trusted Automated eXchange of Indicator Information (TAXII), for threat intelligence
-- Azure
-- AWS services
+To on-board Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration. Included are Microsoft 365 Defender solutions, and Microsoft 365 sources, including Office 365, Azure AD, and more.  In addition, there are built-in connectors to the broader security ecosystem of non-Microsoft solutions. You can also connect your data sources using community-built data connectors listed in the Microsoft Sentinel GitHub repository or by following generic deployment procedures for how to connect your data source to Microsoft Sentinel. Links to information are included in the Learn more section of the summary and resources unit.
 
 ### Workbooks
 
@@ -43,7 +34,7 @@ You can use Microsoft Sentinel to automate some of your security operations and 
 
 ### Playbooks
 
-A security playbook is a collection of procedures that can help automate and orchestrate your response. It can be run manually or set to run automatically when specific alerts are triggered. Security playbooks in Microsoft Sentinel are based on Azure Logic Apps. You get all the power, customizability, and built-in templates of Logic Apps. Each playbook is created for the specific subscription you choose.
+A security playbook is a collection of procedures that can help automate and orchestrate your response. It can be run manually or set to run automatically when specific alerts are triggered. Security playbooks in Microsoft Sentinel are based on Azure Logic Apps. You get all the power, customizability, and built-in templates of Logic Apps. Playbooks are intended for SOC engineers and analysts of all tiers, to automate and simplify tasks, including data ingestion, enrichment, investigation, and remediation.
 
 ### Investigation
 
@@ -55,9 +46,14 @@ Use Microsoft Sentinel's powerful hunting search-and-query tools, based on the M
 
 While hunting, you can bookmark interesting events, enabling you to return to them later, share them with others, and group them with other correlating events to create a compelling incident for investigation.
 
+### Community
+The Microsoft Sentinel community is a powerful resource for threat detection and automation. Microsoft security analysts constantly create and add new workbooks, playbooks, hunting queries, and more, posting them to the community for you to use in your environment. You can download sample content from the private community GitHub repository to create custom workbooks, hunting queries, notebooks, and playbooks for Microsoft Sentinel.
+
 ### Integrated threat protection
 
-Threat protection is a continuously evolving battle front. Cybercriminals look for any vulnerability they can exploit to steal, damage, or extort company data, assets, and resources. Microsoft provides a suite of tools that give extended detection and response (XDR) through Microsoft 365 Defender and Microsoft Defender for Cloud.
+Threat protection is a continuously evolving battle front. Cybercriminals look for any vulnerability they can exploit to steal, damage, or extort company data, assets, and resources. Microsoft provides a suite of solutions that provide extended detection and response (XDR), through Microsoft 365 Defender and Microsoft Defender for Cloud, to deliver intelligent, automated, and integrated security across an organization’s domain. As an XDR class of solutions, Microsoft 365 Defender and Microsoft Defender for Cloud help prevent, detect, and respond to threats across identities, endpoints, applications, email, IoT, infrastructure, and cloud platforms.
+
+To provide a comprehensive security perimeter, an organization needs to use a solution that embraces or combines all of the above systems.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing Microsoft 365 Defender and Microsoft Defender for Cloud.](../media/3-defender-azure-defender-v2.png)
@@ -69,10 +65,6 @@ Both tools integrate smoothly with Microsoft Sentinel to provide a complete and 
 
 ### Microsoft Sentinel video presentation
 
-In this nine-minute video, you’ll explore many of the key features available in Microsoft Sentinel, including incidents, workbooks, hunting, notebooks, analytics, and playbooks.
-
-> [!NOTE]
-> This video contains references to Azure Sentinel which has been renamed to Microsoft Sentinel.
-
+In this video, you’ll explore many of the key features available in Microsoft Sentinel, including incidents, workbooks, hunting, notebooks, analytics, and playbooks.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHLR]
