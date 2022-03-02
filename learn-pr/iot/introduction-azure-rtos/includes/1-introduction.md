@@ -12,7 +12,14 @@ An RTOS typically consists of a kernel (note the spelling), a file system, graph
 
 :::image type="content" alt-text="Example of an RTOS." source="../media/rtos-example.png" border="false" loc-scope="Azure":::
 
-At the heart of the kernel is the scheduler, which schedules threads. The scheduler also manages the timers, message queues, event flags groups, counting semaphores, and memory pools. The scheduler uses a preemptive priority-based model. We'll address these fundamental concepts in the next module.
+At the heart of the kernel is the scheduler, which schedules threads. The scheduler also manages resources, such as:
+- timers
+- message queues
+- event flags groups
+- counting semaphores
+- memory pools
+
+The scheduler uses a preemptive priority-based model. Don't worry, we'll address these fundamental concepts in the next module.
 
 :::image type="content" alt-text="Components of a kernel." source="../media/kernel-components.png" border="false" loc-scope="Azure":::
 
