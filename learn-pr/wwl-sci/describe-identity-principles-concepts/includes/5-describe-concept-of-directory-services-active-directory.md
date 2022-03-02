@@ -9,4 +9,4 @@ The growth of cloud services, SaaS applications, and personal devices being used
 Azure Active Directory is the next evolution of identity and access management solutions. It provides organizations with an Identity as a Service (IDaaS) solution for all their apps across cloud and on-premises.
 In this course, we'll focus on Azure AD, Microsoft’s cloud-based identity provider.
 
-To learn more about the differences between Active Directory concepts and Azure Active Directory, see **[Compare Active Directory to Azure Active Directory](/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad)** in the Learn More section below.
+To learn more about the differences between Active Directory concepts and Azure Active Directory, refer to the Learn More section of the Summary and resources unit that links to documentation.

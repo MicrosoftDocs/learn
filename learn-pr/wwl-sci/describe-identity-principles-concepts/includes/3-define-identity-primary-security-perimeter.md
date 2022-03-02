@@ -5,7 +5,7 @@ Enterprise security needs to adapt to this new reality. The security perimeter c
 - SaaS applications for business-critical workloads that might be hosted outside the corporate network.
 - The personal devices that employees are using to access corporate resources (BYOD, or bring your own device) while working from home.
 - The unmanaged devices used by partners or customers when interacting with corporate data or collaborating with employees
-- IoT devices installed throughout your corporate network and inside customer locations.
+- Internet of things, referred to as IoT devices, installed throughout your corporate network and inside customer locations.
 
 The traditional perimeter-based security model is no longer enough. Identity has become the new security perimeter that enables organizations to secure their assets.
 
@@ -17,7 +17,7 @@ An identity may be associated with a user, an application, a device, or somethin
 
 ## Four pillars of an identity infrastructure
 
-Identity is a concept that spans an entire environment, so organizations need to think about it broadly.  There are four fundamental pillars that organizations should consider when creating an identity infrastructure. There's a collection of processes, technologies, and policies for managing digital identities and controlling how they're used to access resources.
+Identity is a concept that spans an entire environment, so organizations need to think about it broadly. There's a collection of processes, technologies, and policies for managing digital identities and controlling how they're used to access resources. These can be organized into four fundamental pillars that organizations should consider when creating an identity infrastructure. 
 
 - **Administration**. Administration is about the creation and management/governance of identities for users, devices, and services.  As an administrator, you manage how and under what circumstances the characteristics of identities can change (be created, updated, deleted).
 - **Authentication**. The authentication pillar tells the story of how much an IT system needs to know about an identity to have sufficient proof that they really are who they say they are? It involves the act of challenging a party for legitimate credentials.
