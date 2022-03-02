@@ -71,7 +71,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Max concurrent connections**: *Leave blank*
 5. On the **Source** step, in the **Configuration** substep, select **Preview data** to see a preview of the product data your pipeline will ingest, then close the preview.
 6. After previewing the data, on the **Source/Configuration** step, ensure the following settings are selected, and then select **Next >**:
-    - **File format**: Text format
+    - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **First row as header**: Selected
@@ -94,7 +94,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Max concurrent connections**: *Leave blank*
     - **Block size (MB)**: *Leave blank*
 9. On the **Target** step, in the **Configuration** substep, ensure that the following properties are selected. Then select **Next >**:
-    - **File format**: Text format
+    - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
     - **Row delimiter**: Line feed (\n)
     - **Add header to file**: Selected
@@ -109,7 +109,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Enable staging**: <u>Un</u>selected
 11. On the **Review and finish** step, on the **Review** substep, read the summary and then click **Next >**.
 12. On the **Deployment** step, wait for the pipeline to be deployed and then click **Finish**.
-13. In Synapse Studio, select the **Monitor** page, and in the **Pipeline runs** tab, wait for the **Copy products** pipeline to complete with a status of **Succeeded**.
+13. In Synapse Studio, select the **Monitor** page, and in the **Pipeline runs** tab, wait for the **Copy products** pipeline to complete with a status of **Succeeded** (you can use the **&#8635; Refresh** button on the Pipeline runs page to refresh the status).
 14. On the **Data** page, select the **Linked** tab and expand the **Azure Data Lake Storage Gen 2** hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named **products.csv** has been copied to this location, as shown here:
 
 > [!div class="mx-imgBorder"]
