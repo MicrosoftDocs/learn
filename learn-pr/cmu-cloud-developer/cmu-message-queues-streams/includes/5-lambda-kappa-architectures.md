@@ -54,7 +54,7 @@ Stream-processing technologies typically used in this layer include Apache Samza
 
 ## Kappa architecture
 
-![Diagram that shows incoming data going to the real time engine, then to serving backend, and finally to queries.](../media/lambda-3.png)
+![Diagram that shows incoming data going to real time engine, then to serving backend, and finally to queries.](../media/lambda-3.png)
 
 _Figure 18: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the "critical path."_
 

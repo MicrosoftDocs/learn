@@ -29,7 +29,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups.svg" alt-text="Scatter plot output with 3 variables for Africa, O E C D, and other. The variables are GDP per capita, percent urbanized, and life expectancy.":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups.svg" alt-text="Scatter plot output with 3 variables for Africa, OECD, and other. The variables are GDP per capita, percent urbanized, and life expectancy.":::
 
 ***
 
@@ -73,7 +73,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries.svg" alt-text="Scatter plot output shows a linear model for Africa, O E C D, and other.":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-groups-countries.svg" alt-text="Scatter plot output shows a linear model for Africa, OECD, and other.":::
 
 ***
 
@@ -268,7 +268,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output shows a polynomial model for Africa, O E C D, and other.":::
+:::image type="content" source="../media/ppgdp-lifeexpf-purban-3d-groups-model-polynomial.svg" alt-text="Scatter plot output shows a polynomial model for Africa, OECD, and other.":::
 
 ***
 
