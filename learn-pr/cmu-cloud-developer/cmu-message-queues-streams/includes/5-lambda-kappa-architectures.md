@@ -8,7 +8,7 @@ The Lambda architecture is a data processing architecture designed to handle mas
 
 The Lambda architecture describes a system consisting of three layers: the batch layer, the speed (or real-time) processing layer, and a serving layer for responding to queries. 
 
-![Diagram that shows incoming data going to either a batch layer that then goes to a serving layer, or a speed layer, and then to queries. Inside the batch layer is the batch engine and master dataset. Inside the serving layer is the batch views and results storage. Inside the speed layer is the real time engine, results storage, and real time views.](../media/lambda-1.png)
+![Diagram that shows incoming data going to either a batch layer that then goes to a serving layer, or to a speed layer, and then to queries.](../media/lambda-1.png)
 
 _Figure 16: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the "critical path."_
 
@@ -46,7 +46,7 @@ The speed layer processes data streams in real time with the lowest possible lat
 
 This layer's views may not be as accurate or complete as the ones eventually produced by the batch layer, but they are available almost immediately after data is received, and can be replaced when the batch layer's views for the same data become available. Using incremental or stream processing approaches that we discussed previously in this module, the processing can be done in a more efficient manner if the computation can be expressed as a function of the previous real-time view and the recent data, to produce the updated real-time views. 
 
-![Diagram that shows all data going to batch views using a function. It also shows new and recent data going to updated real time views using a function, with previous real time views in between recent data and updated real time views.](../media/lambda-2.png)
+![Diagram that shows all data going to batch views and new and recent data going to updated-time views.](../media/lambda-2.png)
 
 _Figure 17: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the "critical path."_
 
@@ -54,7 +54,7 @@ Stream-processing technologies typically used in this layer include Apache Samza
 
 ## Kappa architecture
 
-![Diagram that shows incoming data going to the real time engine, which is in the real time layer, then to serving backend, which is in the serving layer, finally to queries. Underneath the data flow, data is separated into historical data storage and results storage.](../media/lambda-3.png)
+![Diagram that shows incoming data going to the real time engine, then to serving backend, and finally to queries.](../media/lambda-3.png)
 
 _Figure 18: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the "critical path."_
 

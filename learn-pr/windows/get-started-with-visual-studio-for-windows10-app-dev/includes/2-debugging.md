@@ -75,7 +75,7 @@ This app really wants to get the value 4. Unfortunately, there's a bug because a
 
 2. Click in the margin at the far left side of the screen, next to the code `int c = a + b;`. A red dot will appear. This is your *breakpoint*. Here's how it will look:
 
-![Screenshot shows the code editor in Visual Studio with changes to the Main Page dot x a m l dot c s file edited to expose a bug. If c equal 4, on line 37, is highlighted in a red box.](../media/debug3.png)
+![Screenshot shows the code editor in Visual Studio with changes to the Main Page c s file edited to expose a bug.](../media/debug3.png)
 
 3. Press F5 or select **Run** again. This time the app will immediately stop and bring Visual Studio back to the foreground. A small yellow arrow will appear in the margin, and a line of code will be highlighted in yellow. The highlight shows you the line of code that will run next.
 
