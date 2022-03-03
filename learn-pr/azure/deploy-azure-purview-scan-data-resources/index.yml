@@ -28,10 +28,15 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
 - azure
 units:
-- learn.deploy-azure-purview-scan-data-resources.introduction
-- learn.deploy-azure-purview-scan-data-resources.learning-content
-- learn.deploy-azure-purview-scan-data-resources.exercise
-- learn.deploy-azure-purview-scan-data-resources.knowledge-check
+- learn.deploy-azure-purview-scan-data-resources.introduction-and-setup
+- learn.deploy-azure-purview-scan-data-resources.deploy-azure-purview
+- learn.deploy-azure-purview-scan-data-resources.deploy-azure-purview-excercise
+- learn.deploy-azure-purview-scan-data-resources.deployment-knowledge-check
+- learn.deploy-azure-purview-scan-data-resources.register-and-scan
+- learn.deploy-azure-purview-scan-data-resources.register-and-scan-excercise
+- learn.deploy-azure-purview-scan-data-resources.register-and-scan-knowledge-check
+- learn.deploy-azure-purview-scan-data-resources.self-hosted-integration-runtime
+- learn.deploy-azure-purview-scan-data-resources.self-hosted-integration-runtime-knowledge-check
 - learn.deploy-azure-purview-scan-data-resources.summary
 badge:
   uid: learn.deploy-azure-purview-scan-data-resources.badge
