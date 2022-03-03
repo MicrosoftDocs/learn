@@ -33,11 +33,11 @@ Note that at 500 timer ticks, the Urgent thread made 69 cycles with an average t
 
 Your task is to modify ProjectEventChaining.c by adding a third queue. The new scenario is illustrated in the following image:
 
-:::image type="content" alt-text="Diagram that illustrates a modified event-chaining scenario." source="../media/modified-project-scenario.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates a modified event-chaining scenario." source="../media/modified-project-scenario.svg" loc-scope="Azure":::
 
 This image contains a description of the activities of your modified project:
 
-:::image type="content" alt-text="Diagram that illustrates modified event-chaining activities." source="../media/modified-project-activities.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates modified event-chaining activities." source="../media/modified-project-activities.svg" loc-scope="Azure":::
 
 Several comments in the building blocks suggest which modifications need to be performed:
 

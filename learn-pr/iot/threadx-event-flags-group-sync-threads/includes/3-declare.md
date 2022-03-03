@@ -20,7 +20,11 @@ The `tx_event_flags_set` service sets or clears one or more event flags in an ev
 
 The process of setting or clearing event flags depends on the set_option, which is a logical (bitwise) AND or OR operation. The following table lists set options and their descriptions:
 
-:::image type="content" alt-text="Diagram of the set options for an event flags group." source="../media/set-options.png" loc-scope="Azure":::
+| Set option | Description |
+|:---:|:---:|
+| `TX_AND` | The specified event flags are ANDed into the current event flags group; this option often is used to clear events flags in a group. |
+| `TX_OR` | The specified event flags are ORed with the current event flags group. |
+
 
 For example, suppose that we want to clear all flags except flags 0, 4, and 8, in which the current values of the event flags group is 0xF0C. We would specify the value 0x111 (that is, event flags 0, 4, and 8) and use the `TX_AND` option:
 
@@ -35,7 +39,7 @@ status = tx_event_flags_set(&my_event_group, 0x111, TX_AND);
 /* If status equals TX_SUCCESS, the event flags have been set and any suspended threads whose requests were satisfied have been resumed. */
 ```
 
-:::image type="content" alt-text="Diagram of an event flags group that uses the TX_AND set option." source="../media/set-option-tx-and.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram of an event flags group that uses the TX_AND set option." source="../media/set-option-tx-and.svg" loc-scope="Azure":::
 
 The new value of the event flags group is 0x100 because flag 8 is the only flag in common for the values 0xFF0C and 0x112. However, if the `TX_OR` option is used, the new event flags group value is 0xF1D.
 
@@ -54,13 +58,18 @@ status = tx_event_flags_set(&my_event_group, 0x111, TX_OR);
 
 Here's the result:
 
-:::image type="content" alt-text="Diagram of an event flags group that uses the TX_OR set option." source="../media/set-option-tx-or.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram of an event flags group that uses the TX_OR set option." source="../media/set-option-tx-or.svg" loc-scope="Azure":::
 
 The set operation always succeeds because there is no suspending condition. However, the get operation can cause suspension because the threads must wait for a certain condition, that is, the specified event flags group.
 
 The `tx_event_flags_get` service retrieves or gets the specified event flags from the event flags group. A get request is satisfied if the specified flags have been set in the event flags group. The wait_option determines what action to take if the get request isn't satisfied. The process of satisfying a get request depends on the get_option, which is an AND or OR operation, as depicted in the following table:
 
-:::image type="content" alt-text="Diagram of the get options for an event flags group." source="../media/get-options.png" loc-scope="Azure":::
+| Get option | Description |
+|:---:|:---:|
+| `TX_AND` | **All** requested event flags must be set in the specified event flags group. |
+| `TX_AND_CLEAR` | **All** requested event flags must be set in the specified event flags group; event flags that satisfy the request are cleared. |
+| `TX_OR` | **At least one** requested event flag must be set in the specified event flags group. |
+| `TX_OR_CLEAR` | **At least one** requested event flag must be set in the specified event flags group; event flags that satisfy the requeste are cleared. |
 
 If a get operation succeeds, all threads proceed that have been suspended because they've been waiting for the specified event flags. If a get operation doesn't succeed, all threads that have been waiting for the specified event flags continue to be suspended based on one of the three wait options that has been selected, that is, `TX_WAIT_FOREVER`, `TX_NO_WAIT`, or some timeout value.
 
@@ -89,10 +98,10 @@ If one or more flags in the specified events (that is, 0x111) don't appear in `m
 
 The following figure illustrates this operation:
 
-:::image type="content" alt-text="Diagram of an event flags group Get operation that uses TX_AND_CLEAR." source="../media/get-tx-and-clear.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram of an event flags group Get operation that uses TX_AND_CLEAR." source="../media/get-tx-and-clear.svg" loc-scope="Azure":::
 
 *All* the flags in the specified events (that is, 0x111) appear in `my_event_group`, so the get operation is satisfied. The new value of `my_event_group` has the flags 0, 4, and 8 cleared.
 
 The following figure contains an example using the get operation with `TX_OR`. In this example, only one flag in 0x222 needs to be present in `my_event_group`.
 
-:::image type="content" alt-text="Diagram of an event flags group Get operation that uses TX_OR." source="../media/get-tx-or.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram of an event flags group Get operation that uses TX_OR." source="../media/get-tx-or.svg" loc-scope="Azure":::

@@ -18,7 +18,7 @@ If, for any reason, a thread isn't ready for execution, it's placed in the suspe
 
 A thread shares the same memory space, but each thread must have its own stack. Threads are the essential building blocks because they contain most of the application programming logic. There's no explicit limit on how many threads can be created, and each thread can have a different stack size. When threads are executed, they're processed independently of each other. In cases where there's only one processor, we say that threads are executed in pseudo-parallel.
 
-:::image type="content" source="../media/thread-stack-example-sm.png" alt-text="Figure that illustrates a thread stack.":::
+:::image type="content" source="../media/thread-stack-example-sm.svg" alt-text="Figure that illustrates a thread stack.":::
 
 ### Thread attributes
 

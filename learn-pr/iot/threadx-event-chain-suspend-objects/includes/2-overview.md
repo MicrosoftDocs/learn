@@ -10,6 +10,6 @@ We will first investigate the basics of event-chaining and study a project that 
 
 The following figure illustrates an event-chaining application:
 
-:::image type="content" alt-text="Diagram that illustrates an event-chaining application." source="../media/event-chaining-application-example.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates an event-chaining application." source="../media/event-chaining-application-example.svg" loc-scope="Azure":::
 
 A thread needs to get access to one of three different resources. The thread will wait until any one of the three resources becomes available. Ordinarily, this would be a very difficult problem to solve, but with event-chaining, it is relatively easy, as we will see in this module. 

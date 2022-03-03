@@ -3,7 +3,7 @@
 
 The following figure contains an illustration of the ProjectAnalyze activities:
 
-:::image type="content" source="../media/project-analyze-activities.png" alt-text="Diagram showing the activities of Project Analyze.":::
+:::image type="content" source="../media/project-analyze-activities.svg" alt-text="Diagram showing the activities of Project Analyze.":::
 
 > [!NOTE]
 > ProjectAnalyze is identical to ProjectHelloWorld except that we capture the start and ending times for each of the two threads, and compute the cycle times and the average times for the two threads.
