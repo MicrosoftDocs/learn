@@ -14,10 +14,10 @@ As presented in this video, binary translation tries to amortize the fetch and a
 
 ||Memory requirements|Startup performance|Steady-state performance|Code portability|
 |--|--|--|--|--|
-|Decode-and-dispatch interpreter|Low|Fast|Slow|Good|
-|Indirect-threaded interpreter|Low|Fast|Slow|Good|
-|Direct-threaded interpreter|High|Slow|Medium|Medium|
-|Binary translation|High|Very slow|Fast|Poor|
+|**Decode-and-dispatch interpreter**|Low|Fast|Slow|Good|
+|**Indirect-threaded interpreter**|Low|Fast|Slow|Good|
+|**Direct-threaded interpreter**|High|Slow|Medium|Medium|
+|**Binary translation**|High|Very slow|Fast|Poor|
 
 
 <!-- Code block question 1 in YAML is built from the following code block.

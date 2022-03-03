@@ -1,4 +1,4 @@
-**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)<br>
+**"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
 
 The DevOps learning paths will help you prepare for a DevOps journey. You will learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You will see other content to ensure you have a complete picture of DevOps. The module's content consists of graphics, reference links, module review questions, and optional hands-on labs.
 
@@ -17,11 +17,11 @@ You will learn:
  -  Implement a deployment pattern.
  -  Optimize feedback mechanisms.
 
-Plan before your act. This module will help you understand what DevOps is and how to plan for a DevOps transformation journey.<br>
+Plan before your act. This module will help you understand what DevOps is and how to plan for a DevOps transformation journey.
 
 ## What is the DevOps transformation journey?
 
-The DevOps transformation journey is a series of 10 learning paths. It familiarizes you with Azure DevOps, GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.<br>
+The DevOps transformation journey is a series of 10 learning paths. It familiarizes you with Azure DevOps, GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
 
 ### Why should I take Azure DevOps learning paths?
 

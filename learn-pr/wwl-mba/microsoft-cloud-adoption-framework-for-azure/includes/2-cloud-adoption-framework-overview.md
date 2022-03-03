@@ -26,9 +26,13 @@ The Cloud Adoption Framework contains detailed information to cover an end-to-en
   - Enable business outcomes through implementation of the defined technology plan.
 - Finally, it covers cloud operations, such as governance, resources, and people and change management.
 
-| | |
-| --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *The cloud offers nearly unlimited potential, but successful adoption requires careful planning and strategy. The adoption strategy depends on where you are in your cloud journey. When you think about your use of the cloud, what is your motivation?* |
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*The cloud offers nearly unlimited potential, but successful adoption requires careful planning and strategy. The adoption strategy depends on where you are in your cloud journey. When you think about your use of the cloud, what is your motivation?*
+
+:::column-end:::
+:::row-end:::
 
 Next, let's define the strategy that might trigger an organization to move to the cloud.

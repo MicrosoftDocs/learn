@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-design-implement-release-strategy
 metadata:
   title: 'AZ-400: Design and implement a release strategy'
   description: 'AZ-400: Design and implement a release strategy'
-  ms.date: 12/02/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path explains the concepts of continuous delivery and releases strategy considerations for setting up deployment stages and your delivery and deployment cadence, and lastly, setting up your release approvals.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/az-400-design-and-implement-a-release-strategy.svg
 levels:
 - advanced
 roles:

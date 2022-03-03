@@ -1,6 +1,6 @@
 Let's start by creating our first Blazor web app.
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS).
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After you complete this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS).
 
 [!include[](../../../includes/dotnet6-sdk-version.md)]
 
@@ -63,7 +63,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     dotnet watch run
     ```
 
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The browser should automatically open at the address https://localhost:5000. Your browser might warn you that the site is not secure; it is safe to proceed.
+    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
 
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser.](../media/hello-blazor.png)
 

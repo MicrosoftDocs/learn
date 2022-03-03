@@ -25,6 +25,7 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-devops
 prerequisites: None
 units:
 - learn.improve-reliability-introduction.1-introduction

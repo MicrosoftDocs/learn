@@ -1,12 +1,11 @@
 We looked at three common navigation strategies used in Xamarin.Forms apps. The following table summarizes the key points.
 
-|     |     |     |
-| --- | --- | --- |
-|     | **When to use** | **How to implement** |
+---
+|  | **When to use** | **How to implement** |
+|---|---|---|
 | **Stack** | When your content has a linear progression of pages from general to specific. | `NavigationPage` and its `PushAsync` and `PopAsync` methods. |
 | **Tab** | When you have a small number of top-level pages that have equal importance to the user. You want it to be easy to switch among them. | `TabbedPage` and its `Children` property. |
 | **Modal** | When a page requires an affirmative action from the user before dismissal. | The  `PushModalAsync` and `PopModalAsync` methods, available from the `Navigation` property in all page types. |
-|     |     |     |
 
 To test out these strategies, we implemented the **Astronomy** app by using both stack and tab navigation. Which felt more natural? With all things considered, tab navigation was probably a better choice in this case because:
 
