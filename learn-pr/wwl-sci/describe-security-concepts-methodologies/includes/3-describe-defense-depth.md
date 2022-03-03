@@ -4,7 +4,7 @@ Example layers of security might include:
 
 - **Physical** security such as limiting access to a datacenter to only authorized personnel.
 - **Identity and access** security controls, such as multi-factor authentication or condition-based access, to control access to infrastructure and change control.
-- **Perimeter** security including distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
+- **Perimeter** security of your corporate network includes distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
 - **Network** security, such as network segmentation and network access controls, to limit communication between resources.
 - **Compute** layer security such as securing access to virtual machines either on-premises or in the cloud by closing certain ports.
 - **Application** layer security to ensure applications are secure and free of security vulnerabilities.
@@ -24,6 +24,6 @@ As described above, a defense in-depth strategy uses a series of mechanisms to s
 
 - **Integrity** refers to keeping data or messages correct. When you send an email message, you want to be sure that the message received is the same as the message you sent. When you store data in a database, you want to be sure that the data you retrieve is the same as the data you stored. Encrypting data keeps it confidential, but you must then be able to decrypt it so that it's the same as before it was encrypted. Integrity is about having confidence that data hasn't been tampered with or altered.
 
-- **Availability** refers to making data available to those who need it. It's important to the organization to keep customer data secure, but at the same time it must also be available to employees who deal with customers. While it might be more secure to store the data in an encrypted format, employees need access to decrypted data.
+- **Availability** refers to making data available to those who need it, when they need it. It's important to the organization to keep customer data secure, but at the same time it must also be available to employees who deal with customers. While it might be more secure to store the data in an encrypted format, employees need access to decrypted data.
 
 While the goals of a cybersecurity strategy are to preserve the confidentiality, integrity, and availability of systems, networks, applications, and data; it's the goal of cybercriminals to disrupt these goals.  Microsoft’s portfolio includes the solutions and technologies to enable organizations to deliver on the goals of the CIA triad.

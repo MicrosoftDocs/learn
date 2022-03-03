@@ -30,4 +30,4 @@ In the Zero Trust model, all elements work together to provide end-to-end securi
 > [!div class="mx-imgBorder"]
 > ![The Zero Trust model](../media/2-zero-trust-pillars-v2.png)
 
-These six foundational pillars work together with the Zero Trust model to enforce organization security policies.
+A security strategy that employs the three principles of the Zero Trust model across the six foundational pillars helps companies deliver and enforce security across their organization.

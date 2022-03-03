@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/02/2022
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,35 +21,35 @@ quiz:
     choices:
     - content: "The organization."
       isCorrect: true
-      explanation: "That's correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personal data relating to employees."
+      explanation: "Correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personal data relating to employees."
     - content: "Microsoft, the SaaS provider."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
+      explanation: "Incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
     - content: "There's shared responsibility between an organization and Microsoft."
       isCorrect: false
-      explanation: "That's incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
+      explanation: "Incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
   - content: "Which of the following measures might an organization implement as part of the defense in-depth security methodology?"
     choices:
     - content: "Locating all its servers in a single physical location."
       isCorrect: false
-      explanation: "That's incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
+      explanation: "Incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
     - content: "Multi-factor authentication for all users."
       isCorrect: true
-      explanation: "That's correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
+      explanation: "Correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
-      explanation: "That's incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
+      explanation: "Incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
   - content: "The human resources organization wants to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
     - content: "Hashing."
       isCorrect: false
-      explanation: "That's  incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
+      explanation: "Incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
     - content: "Encryption in transit."
       isCorrect: false
-      explanation: "That's  incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
+      explanation: "Incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
     - content: "Encryption at rest."
       isCorrect: true
-      explanation: "That's correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
+      explanation: "Correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
   - content: "which of the following best describes the concept of data sovereignty?"
     choices:
     - content: "There are regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally."

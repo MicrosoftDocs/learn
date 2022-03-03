@@ -3,13 +3,13 @@ uid: learn.wwl.describe-security-concepts-methodologies
 metadata:
   title: Describe security concepts and methodologies
   description: "Describe security and compliance concepts"
-  ms.date: 03/02/2022
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe security and compliance concepts
-summary: Learn about the common security threats and way to protect though the defense in depth model. Also, learn about security concepts and methodologies that are foundational to Microsoft solutions.
+summary: Learn about common security and compliance concepts that are foundational to Microsoft solutions. Topics include the shared responsibility and Zero Trust models, encryption, data residency and data sovereignty, and more.
 abstract: |
   After completing this module, you will be able to:
   - Describe the shared responsibility and the defense-in-depth security models.
