@@ -11684,6 +11684,21 @@
       "source_path": "learn-pr/wwl-azure/understand-security-pipeline/13-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/understand-security-pipeline/12-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/3-explore-azure-data-services-warehousing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
