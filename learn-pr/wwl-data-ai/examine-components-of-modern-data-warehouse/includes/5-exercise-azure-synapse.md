@@ -44,8 +44,8 @@ To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Wo
 7. Select your Synapse workspace, and in its **Overview** page, in **Open Synapse Studio** card, select **Open** to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
 8. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
 
-> [!div class="mx-imgBorder"]
-> ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](../media/synapse-studio.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](../media/synapse-studio.png)
 
 ## Ingest data
 
@@ -112,8 +112,8 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
 13. In Synapse Studio, select the **Monitor** page, and in the **Pipeline runs** tab, wait for the **Copy products** pipeline to complete with a status of **Succeeded** (you can use the **&#8635; Refresh** button on the Pipeline runs page to refresh the status).
 14. On the **Data** page, select the **Linked** tab and expand the **Azure Data Lake Storage Gen 2** hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named **products.csv** has been copied to this location, as shown here:
 
-> [!div class="mx-imgBorder"]
-> ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](../media/synapse-storage.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image showing Synapse Studio expanded Azure Data Lake Storage Gen 2 hierarchy with the file storage for your Synapse workspace](../media/synapse-storage.png)
 
 ## Use a SQL pool to analyze data
 
@@ -288,8 +288,8 @@ While SQL is a common language for querying structured datasets, many data analy
 
 14. In the results output for the cell, select the **Chart** view. The resulting chart should resemble this:
 
-> [!div class="mx-imgBorder"]
-> ![Image showing category count chart view](../media/bar-chart.png)
+    > [!div class="mx-imgBorder"]
+    > ![Image showing category count chart view](../media/bar-chart.png)
 
 15. Close the **Notebook 1** pane and discard your changes.
 
