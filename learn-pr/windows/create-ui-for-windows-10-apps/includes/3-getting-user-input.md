@@ -1,4 +1,4 @@
-![Tech logo.](../media/tech-all.png)
+![Logo for UWP and WPF.](../media/tech-all.png)
 
 In this unit, we build on the ideas from the previous two units. Over the course of this lesson, we build a specialized calculator that accepts user input through a variety of ways:
 * Text input
@@ -23,7 +23,7 @@ Let's get started.
 
 ::: zone pivot="uwp"
 
-![Tech logo.](../media/tech-uwp.png)
+![Logo for UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
 
 #### Create a new project
 
@@ -1346,7 +1346,7 @@ The finished result looks like this image:
 
 ::: zone pivot="wpf"
 
-![Tech logo.](../media/tech-wpf.png)
+![Logo for UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
 
 #### Create a new project
 
