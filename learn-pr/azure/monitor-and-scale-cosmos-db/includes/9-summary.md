@@ -4,7 +4,7 @@ We've optimized the Orders collection for the online retail scenario. This datab
 
 ## Clean up
 
-It's important that you clean up any unused collections. You're charged for the configured capacity, not how much of the database is used. For this module, we made these resources available to you free of charge. But you should get into the habit of deleting resources when you're done with them.
+It's important that you clean up any unused collections. You're charged for the configured capacity, not how much of the database is used. For this module, we made these resources available to you free of charge. However, you should get into the habit of deleting resources when you're done with them. Follow these steps to clean up your collections.
 
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 

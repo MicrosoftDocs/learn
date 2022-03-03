@@ -4,13 +4,12 @@ title: Describe threats to network security
 metadata:
   title: Describe threats to network security
   description: "Describe threats to network security"
-  ms.date: 12/02/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Understand basic programming concepts.
   - Have Python 3 installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-create-jupyter-notebook.svg
 levels:
   - beginner
 roles:
