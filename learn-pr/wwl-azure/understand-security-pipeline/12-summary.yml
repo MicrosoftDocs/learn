@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.examine-components-of-modern-data-warehouse.summary
+uid: learn.wwl.understand-security-pipeline.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 11/15/2021
+  ms.date: 03/03/2022
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/12-summary.md)]
