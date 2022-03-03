@@ -8,6 +8,8 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: ropreddy-04092021
 title: Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines
 summary: Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.
 abstract: |
