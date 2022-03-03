@@ -79,7 +79,7 @@ Flow through the above:
 
 You can combine Azure Bot Service with Language Understanding to build powerful enterprise productivity bots. These allow you to streamline common work activities by integrating external systems, such as Microsoft 365 calendar, customer cases stored in Dynamics CRM, and much more.
 
-![ Diagram reviewing the following steps for an enterprise productivity bot.](../media/ic-gm06-ai-diagram3.png)
+![Diagram reviewing the following steps for an enterprise productivity bot.](../media/ic-gm06-ai-diagram3.png)
 
 Flow through the above:
 
