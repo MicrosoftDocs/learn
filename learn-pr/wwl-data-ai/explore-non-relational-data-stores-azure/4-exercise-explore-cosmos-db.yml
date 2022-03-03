@@ -14,4 +14,3 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-explore-cosmos-db.md)]
-interactive: bash

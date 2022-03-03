@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/14/2022
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,32 +13,32 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/12-knowledge-check.md)]
+  [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following two elements Rugged DevOps combines?"
+  - content: "Which of the following two elements Secure DevOps combines?"
     choices:
     - content: "DevOps, Security."
       isCorrect: true
-      explanation: "Correct. Rugged DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
+      explanation: "Correct. Secure DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
     - content: "SCA, OSS."
       isCorrect: false
-      explanation: "Incorrect. Rugged DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
+      explanation: "Incorrect. Secure DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
     - content: "Development, Operations."
       isCorrect: false
-      explanation: "Incorrect. Rugged DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
-  - content: "Which of the following choices is the term that broadly defines what security means in rugged DevOps?"
+      explanation: "Incorrect. Secure DevOps brings together the notions of DevOps and Security. DevOps is about working faster. Security is about emphasizing thoroughness, typically done at the end of the cycle, potentially generating unplanned work right at the end of the pipeline."
+  - content: "Which of the following choices is the term that broadly defines what security means in Secure DevOps?"
     choices:
     - content: "Access Control."
       isCorrect: false
-      explanation: "Incorrect. With rugged DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
+      explanation: "Incorrect. With Secure DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
     - content: "Securing the pipeline."
       isCorrect: true
-      explanation: "Correct. With rugged DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
+      explanation: "Correct. With Secure DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
     - content: "Perimeter protection."
       isCorrect: false
-      explanation: "Incorrect. With rugged DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
+      explanation: "Incorrect. With Secure DevOps, security is more about securing the pipeline, determining where you can add protection to the elements that plug into your build and release pipeline."
   - content: "Which of the following description best describes the term software composition analysis?"
     choices:
     - content: "Assessment of production hosting infrastructure just before deployment."
