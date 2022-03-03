@@ -1,6 +1,6 @@
 Micro Focus Fortify is another example of an extension that you can use from the Azure DevOps Marketplace to integrate your CI/CD pipeline.
 
-Micro Focus Fortify allows you to address Rugged DevOps security-related concerns by adding build tasks for continuous integration to help you to identify vulnerabilities in your source code.
+Micro Focus Fortify allows you to address Secure DevOps security-related concerns by adding build tasks for continuous integration to help you to identify vulnerabilities in your source code.
 
 Micro Focus Fortify provides a comprehensive set of software security analyzers that search for security-specific coding rules and guidelines violations.
 
