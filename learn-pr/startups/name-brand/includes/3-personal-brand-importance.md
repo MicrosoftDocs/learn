@@ -107,12 +107,3 @@ Not all first-time startup founders have experience in public speaking. Relative
 These can be daunting skills to learn. It's not advisable to learn by trial and error. 
 
 There are many sources of media training. They include group and individual coaching on how to perform well in a TV or radio interview, how to talk on camera, or simply how to present confidently to an audience.
-
-## Conclusions
-
-- It's easy to pick a suboptimal name for your company. Doing this is unlikely to kill your company, but it can create friction and make it harder for potential customers to find you. It can also affect the credibility of your company's brand.
-- The name of your company is one of the few things that you control completely, so try to get it right.
-- If you aspire to be a global company, one of the key intellectual property assets that your company should own is the domain *\<your-company-name\>.com*.
-- If you decide that you should change your company name, the best time for the change is now. It's never easy, but the longer you wait, the more difficult and expensive it will be.
-- Every startup founder should invest time in building their personal brand as a business leader and as the external face of their company.
-- Customers, investors, and future employees are seeking authentic communications from companies. Having a founder as the primary spokesperson for a company makes it easier for people to relate.
