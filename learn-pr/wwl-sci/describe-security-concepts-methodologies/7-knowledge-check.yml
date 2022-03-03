@@ -54,10 +54,10 @@ quiz:
     choices:
     - content: "There are regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally."
       isCorrect: false
-      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency.  Data sovereignty, is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
-    - content: "Data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
+      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency.  Data sovereignty, is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+    - content: "Data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
       isCorrect: true
-      explanation: "Correct. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
+      explanation: "Correct. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
     - content: "Trust no one, verify everything."
       isCorrect: false
-      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country in which it's physically collected, held, or processed."
+      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
