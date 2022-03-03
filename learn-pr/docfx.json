@@ -696,9 +696,6 @@
         },
         "fileMetadata": {
             "sandbox-disabled": {},
-            "adobe-target": {
-                "azure/*/*-*.yml": true
-            },
             "localization_scopes": {
                 "azure/**/*.yml": [
                     "de-de",
