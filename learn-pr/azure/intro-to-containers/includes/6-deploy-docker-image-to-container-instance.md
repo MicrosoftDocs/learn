@@ -11,7 +11,7 @@ Azure Container Registry is a registry hosting service provided by Azure. Each A
 You can create a registry using the Azure portal, or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure portal or a local install of the Azure CLI. Keep in mind that you'll have to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
 
 > [!NOTE]
-> You need a unique name for your container. You can check to see if a name is already in use [here](https://docs.microsoft.com/en-us/rest/api/containerregistry/registries/checknameavailability).
+> You need a unique name for your container. You can check to see if a name is already in use [here](/rest/api/containerregistry/registries/checknameavailability).
 
 ```azurecli
 az group create --name mygroup --location westus
