@@ -1,10 +1,10 @@
-Visual Studio Code Marketplace is an important site for addressing Rugged DevOps issues. From here, you can integrate specialist security products into your Azure DevOps pipeline.
+Visual Studio Code Marketplace is an important site for addressing Secure DevOps issues. From here, you can integrate specialist security products into your Azure DevOps pipeline.
 
 Having a full suite of extensions that allow a seamless integration into Azure Pipelines is invaluable.
 
 ## WhiteSource
 
-The WhiteSource extension is available on the Azure DevOps Marketplace. Using WhiteSource, you can integrate extensions with your CI/CD pipeline to address Rugged DevOps security-related issues.
+The WhiteSource extension is available on the Azure DevOps Marketplace. Using WhiteSource, you can integrate extensions with your CI/CD pipeline to address Secure DevOps security-related issues.
 
 For a team consuming external packages, the WhiteSource extension specifically addresses open-source security, quality, and license compliance concerns.
 
