@@ -33,11 +33,11 @@ Note that at 200 timer ticks, the Urgent thread received 14 messages, the Routin
 
 Your task is to add a third thread called Important and a third queue that is also called Important. The Important thread has a priority of 12. The diagram below contains a modified scenario of your project with the addition of the Important thread and queue. The attributes of Urgent thread and Routine thread remain the same. <!--figure 22-->
 
-:::image type="content" source="../media/figure-22-modified-scenario-message-queues.png" alt-text="Diagram showing modified scenario of project message queues." border="false":::
+:::image type="content" source="../media/modified-scenario-message-queues.svg" alt-text="Diagram showing modified scenario of project message queues." border="false":::
 
 The following diagram contains a description of the activities: <!--figure 24-->
 
-:::image type="content" source="../media/figure-24-modified-activities-message-queues.png" alt-text="Sample output code." border="false":::
+:::image type="content" source="../media/modified-activities-message-queues.svg" alt-text="Sample output code." border="false":::
 
 > [!NOTE]
 > The building blocks described in unit 6 contain tips about the modifications you need, summarized below:

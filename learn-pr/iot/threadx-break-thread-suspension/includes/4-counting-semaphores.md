@@ -2,13 +2,13 @@ A counting semaphore is a public resource, and there is no concept of ownership 
 
 The following image lists the attributes of a counting semaphore:
 
-:::image type="content" alt-text="Diagram that illustrates the attributes of a counting semaphore." source="../media/attributes.png" border="false" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates the attributes of a counting semaphore." source="../media/attributes.svg" border="false" loc-scope="Azure":::
 
 Every counting semaphore must have a control block that contains essential system information. Every counting semaphore is assigned a name, which is used primarily for identification purposes. Every counting semaphore must have a Semaphore Count that indicates the number of instances available. As noted before, the value of the count must be in the range from 0x00000000 to 0xFFFFFFFF (inclusive). A counting semaphore can be created either during initialization or during run-time by a thread. There is no limit to the number of counting semaphores that can be created. 
 
 The following figure is an illustration of a counting semaphore:
 
-:::image type="content" alt-text="Diagram that illustrates the make-up of a counting semaphore." source="../media/counting-semaphore.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates the make-up of a counting semaphore." source="../media/counting-semaphore.svg" loc-scope="Azure":::
 
 In this example, we have M shared resources and N threads. When a thread needs a shared resource, it must first get an instance of the counting semaphore. If there are no instances of the counting semaphore available, the thread will have to take action depending on its wait condition. When a thread finishes using a shared resource, it puts an instance on the counting semaphore. Getting an instance of a semaphore is analogous to decrementing the count of the semaphore, but the count may never be less than zero. Similarly, putting an instance on the semaphore is analogous to incrementing the count of the semaphore. It's possible for several threads to use the shared resources of the counting semaphore simultaneously. 
 

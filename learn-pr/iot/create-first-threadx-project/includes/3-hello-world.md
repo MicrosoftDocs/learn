@@ -16,7 +16,7 @@ A message center has two types of messages that it processes: Urgent and Routine
 
 The diagram below illustrates the Hello World scenario and how we can model the activities of the Urgent thread and the Routine thread. <!--figure 6-->
 
-:::image type="content" source="../media/figure-6-project-scenario.png" alt-text="Illustration of the Hello World scenario." border="false"::: 
+:::image type="content" source="../media/model-thread-activities.svg" alt-text="Illustration of the Hello World scenario." border="false"::: 
 
 For convenience, we'll specify exact values for preparation and processing times. In reality, we would have sensors that would determine the actual times for the preparation and processing activities. For example, the length and nature of each message would determine the amount of time required for the preparation and the processing activities. 
 

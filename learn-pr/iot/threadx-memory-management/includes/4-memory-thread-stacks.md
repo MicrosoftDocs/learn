@@ -10,7 +10,7 @@ After the application has been debugged, it's possible to fine-tune the thread s
 
 This image shows a stack preset to 0xEFEF after thorough thread execution:
 
-:::image type="content" alt-text="Diagram that shows a stack preset to 0xEFEF." source="../media/stack-preset.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that shows a stack preset to 0xEFEF." source="../media/stack-preset.svg" loc-scope="Azure":::
 
 The stack requirements for threads can be large. Therefore, it's important to design the application to have a reasonable number of threads. Furthermore, some care must be taken to avoid excessive stack usage within threads. Recursive algorithms and large local data structures should be avoided. In most cases, an overflowed stack causes thread execution to corrupt memory adjacent (usually before) its stack area. The results are unpredictable, but most often result in an unnatural change in the program counter. This change often is called “jumping into the weeds.” The only way to prevent it is to ensure that all thread stacks are large enough. 
 

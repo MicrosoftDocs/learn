@@ -36,7 +36,7 @@ Your task is to add a third thread called Important, which has a priority of 10.
 
 The following image contains a description of your project with the addition of the Important thread:
 
-:::image type="content" alt-text="Diagram of modified project activities." source="../media/modified-activities.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram of modified project activities." source="../media/modified-activities.svg" loc-scope="Azure":::
 
 The attributes of Urgent thread and Routine thread remain the same. 
 

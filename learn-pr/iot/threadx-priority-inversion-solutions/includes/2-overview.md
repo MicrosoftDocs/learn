@@ -10,6 +10,6 @@ The following figure contains an illustration of a typical priority inversion pr
 1. Thread-3 is blocked by Thread-2 and we have a case of priority inversion
 1. Thread-2 resumes and runs for an unknown period of time
 
-:::image type="content" alt-text="Diagram that illustrates the priority inversion problem." source="../media/priority-inversion-problem.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates the priority inversion problem." source="../media/priority-inversion-problem.svg" loc-scope="Azure":::
 
 

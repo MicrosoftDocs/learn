@@ -2,7 +2,7 @@ Event Flags Groups provide a powerful tool for thread synchronization. Event fla
 
 Each event flag is represented by a single bit, and event flags are arranged in groups of 32 as illustrated in the following figure:
 
-:::image type="content" alt-text="Diagram that illustrates event flags arranged in groups of 32 bits." source="../media/example.png" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that illustrates event flags arranged in groups of 32 bits." source="../media/event-flag-groups.svg" loc-scope="Azure":::
 
 Threads can operate on all 32 event flags in a group simultaneously. To set or clear event flags, we use the `tx_event_flags_set` service and we get or retrieve them with the `tx_event_flags_get` service.
 
