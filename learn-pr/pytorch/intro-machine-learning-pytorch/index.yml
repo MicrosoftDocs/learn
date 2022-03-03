@@ -8,6 +8,8 @@ metadata:
   ms.author: sejuare
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: sejuare-04262021
 title: Introduction to PyTorch
 summary: Learn how to build machine learning models with PyTorch.
 abstract: |
