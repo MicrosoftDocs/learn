@@ -18,7 +18,7 @@ Let's use the **Azure Demo Logs pane** to practice writing queries. The demo pro
 
 1. In the command bar, select **Run** to execute the query, and view the results. You can expand each row in the results pane for more information.
 
-1. Sort the data by time by adding filter to your query.
+1. Sort the data by time by adding a filter to your query.
 
     ```kusto
     SecurityEvent
@@ -67,6 +67,6 @@ In addition to writing queries from scratch, the operations team can also take a
 
 1. In the left pane, select **Queries**, and then, in the **Group by** dropdown list, select **Category**. Expand **Azure Monitor**, and select **Computers availability today**. Select **Run**. This query creates a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
 
-1. In the **Group by** dropdown list, select **Topic**, scroll down to expand **Function App**, and then select **Show application logs from Function Apps**. Select **Run**. This query returns a list of firewall actions that details of the associated network flows.
+1. In the **Group by** dropdown list, select **Topic**, scroll down to expand **Function App**, and then select **Show application logs from Function Apps**. Select **Run**. This query returns a list of application logs, sorted by time with the latest logs shown first.
 
 You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether an attack caused the interruption. Additionally, pre-defined queries can also evaluate the availability of VMs, identify missing Windows updates, and review firewall logs to view denied network flows intended for the VMs of interest.
