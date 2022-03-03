@@ -3,7 +3,7 @@ uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction
 metadata:
   title: Explore SRE and design practices to measure end-user satisfaction
   description: "Explore SRE and design practices to measure end-user satisfaction"
-  ms.date: 11/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Design practices to measure satisfaction
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-explore-sre-design-practices-measure-end-user-satisfaction.svg
 levels:
 - advanced
 roles:
