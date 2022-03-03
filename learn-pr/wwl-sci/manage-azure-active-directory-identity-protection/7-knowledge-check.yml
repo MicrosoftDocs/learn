@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Hybrid identity sign-in risk policy"
       isCorrect: false
       explanation: "Incorrect. There is no directory policy for hybrid identity."
-  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins?"
+  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins"
     choices:
     - content: "riskDetection, riskyUsers, signIn"
       isCorrect: true
