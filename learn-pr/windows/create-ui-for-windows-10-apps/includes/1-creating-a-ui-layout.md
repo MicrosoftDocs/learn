@@ -1,4 +1,4 @@
-![Logo for UWP and WPF](../media/tech-all.png)
+![Logo for UWP and WPF.](../media/tech-all.png)
 
 ## Create a UI layout
 
