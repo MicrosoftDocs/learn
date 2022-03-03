@@ -279,7 +279,7 @@ The feature branch is pushed to a new branch, also named *add-orders-queue*, in 
 
 ::: zone pivot="github"
 
-You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how GitHub prevents you from accidentally pushing your changes to a protected branch.
+You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how your main branch's protection prevents you from accidentally pushing your changes to a protected branch.
 
 1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and merge the *add-orders-queue* branch to it:
 
@@ -314,7 +314,7 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
 
 ::: zone pivot="azurerepos"
 
-You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how Azure Repos prevents you from accidentally pushing your changes to a protected branch.
+You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how the branch policies prevent you from accidentally pushing your changes to a protected branch.
 
 1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and merge the *add-orders-queue* branch to it:
 

@@ -1,7 +1,7 @@
 @description('Specifies whether the storage account is ready to be deployed.')
-param deployStorageAccount bool
+param storageAccountReady bool
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if (deployStorageAccount) {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if (storageAccountReady) {
   name: storageAccountName
   location: location
   kind: 'StorageV2'
