@@ -1,4 +1,4 @@
-We discussed several important terms and concepts in this module, as they are related to Azure ThreadX RTOS. 
+We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. 
 
 Following are brief definitions of some key points:
 
@@ -6,7 +6,7 @@ Following are brief definitions of some key points:
 ThreadX uses special primitive data types that map directly to data types of the underlying C compiler. Mapping is done to ensure portability between different C compilers. These primitive data types are `UINT`, `ULONG`, `VOID`, and `CHAR`. ThreadX also uses system data types to define and declare system resources, such as threads and mutexes. These system data types are `TX_TIMER`, `TX_QUEUE`, `TX_THREAD`, `TX_SEMAPHORE`, `TX_EVENT_FLAGS_GROUP`, `TX_BLOCK_POOL`, `TX_BYTE_POOL`, and `TX_MUTEX`.
 
 ### Memory byte pools
-The memory byte pool is a sequential collection of bytes that may be used for any of the resources. There's no limit on the number of memory byte pools that can be created. Threads can suspend on a memory byte pool until the requested memory is available. Memory byte pools are easy to use, but frequent allocates, and releases can result in fragmentation, which can lead to non-determinism.
+The memory byte pool is a sequential collection of bytes that may be used for any of the resources. There's no limit on the number of memory byte pools that can be created. Threads can suspend on a memory byte pool until the requested memory is available. Memory byte pools are easy to use, but frequent allocates and releases can result in fragmentation, which can lead to non-determinism.
 
 ### Memory block pools
 A memory block pool consists of fixed-size memory blocks, so there's never a fragmentation problem. There's a lack of flexibility because the same amount of memory is allocated each time. However, there's no limit as to how many memory block pools can be created, and each memory block pool can have a different memory block size. In general, memory block pools are preferred over memory byte pools because the fragmentation problem is eliminated and because access to the memory block pool is faster.
