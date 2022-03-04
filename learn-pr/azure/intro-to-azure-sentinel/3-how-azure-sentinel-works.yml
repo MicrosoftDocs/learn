@@ -6,7 +6,7 @@ metadata:
   description: How Azure Sentinel works
   ms.date: 09/21/2020
   author: deanobalino
-  ms.author: debryen
+  ms.author: deanbryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
