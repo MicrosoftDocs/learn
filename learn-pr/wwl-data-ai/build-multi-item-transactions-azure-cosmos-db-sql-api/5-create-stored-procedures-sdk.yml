@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.create-stored-procedures-sdk
+title: Create stored procedures with the JavaScript SDK
+metadata:
+  title: Create stored procedures with the JavaScript SDK
+  description: "Create stored procedures with the JavaScript SDK"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-stored-procedures-sdk.md)]

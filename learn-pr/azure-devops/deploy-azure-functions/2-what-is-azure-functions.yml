@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Functions?
   description: Understand the benefits of Azure Functions and when to use them.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

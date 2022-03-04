@@ -5,8 +5,9 @@ metadata:
   title: Introduction to AI at the edge with NVIDIA Jetson and Azure
   description: Introduction to AI at the edge with NVIDIA Jetson and Azure.
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
   ms.date: 11/09/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

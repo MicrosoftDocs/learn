@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.query-azure-cosmos-db-sql-api
+metadata:
+  title: Query the Azure Cosmos DB SQL API
+  description: "Author queries for Azure Cosmos DB SQL API using the SQL query language."
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query the Azure Cosmos DB SQL API
+summary: Author queries for Azure Cosmos DB SQL API using the SQL query language.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create and execute a SQL query
+  - Project query results
+  - Use built-in functions in a query
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-api-query.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.query-azure-cosmos-db-sql-api.introduction
+- learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language
+- learn.wwl.query-azure-cosmos-db-sql-api.create-queries-sql
+- learn.wwl.query-azure-cosmos-db-sql-api.project-query-results
+- learn.wwl.query-azure-cosmos-db-sql-api.implement-type-checking-queries
+- learn.wwl.query-azure-cosmos-db-sql-api.use-built-functions
+- learn.wwl.query-azure-cosmos-db-sql-api.execute-queries-sdk
+- learn.wwl.query-azure-cosmos-db-sql-api.exercise-execute-sdk
+- learn.wwl.query-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.query-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.query-azure-cosmos-db-sql-api.badge

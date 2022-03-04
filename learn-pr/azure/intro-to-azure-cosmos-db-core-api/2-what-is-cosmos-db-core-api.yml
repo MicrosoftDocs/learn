@@ -3,8 +3,7 @@ uid: learn.azure.intro-to-azure-cosmos-db-core-api.2-what-is-cosmos-db-core-api
 title: What is Azure Cosmos DB SQL API?
 metadata:
   title: What is Azure Cosmos DB SQL API?
-  description: >
-    Learn about multi-model distributed NoSQL databases such as Azure Cosmos DB
+  description: Learn about multi-model distributed NoSQL databases such as Azure Cosmos DB.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope

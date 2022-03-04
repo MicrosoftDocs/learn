@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-consolidating-secure-artifacts.secure-access-to-package-feeds
+title: Secure access to package feeds
+metadata:
+  title: Secure access to package feeds
+  description: "Secure access to package feeds"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-secure-access-to-package-feeds.md)]

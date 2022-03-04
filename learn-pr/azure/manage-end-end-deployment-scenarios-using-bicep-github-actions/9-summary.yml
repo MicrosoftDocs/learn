@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for managing end-to-end deployment scenarios by using Bicep and GitHub Actions.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

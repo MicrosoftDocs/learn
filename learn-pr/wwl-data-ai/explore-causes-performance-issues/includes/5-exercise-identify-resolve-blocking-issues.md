@@ -7,12 +7,12 @@ You have been hired as a database administrator to identify performance related 
 1. You will be prompted to connect to your SQL Server. Enter **LON-SQL1** for the local server name, ensure that **Windows Authentication** is selected, and select **Connect**.
 1. Start a new query by selecting the **New Query** button in Management Studio.
 
-    :::image type="content" source="../media/new-query-button.png" alt-text="Screenshot showing the New Query button"::: 
+    :::image type="content" source="../media/new-query-button.png" alt-text="Screenshot showing the New Query button":::
 
     > [!NOTE]
     > If you'd like to copy and paste the code you can find the code in the **D:\LabFiles\Monitor Resources\Monitor Resources scripts.sql** file.
 
-1. Copy and paste the code below into your query window. 
+1. Copy and paste the code below into your query window.
 
     ```tsql
     USE MASTER
@@ -20,23 +20,15 @@ You have been hired as a database administrator to identify performance related 
     GO
 
     CREATE EVENT SESSION [Blocking] ON SERVER 
-
     ADD EVENT sqlserver.blocked_process_report(
-
     ACTION(sqlserver.client_app_name,sqlserver.client_hostname,sqlserver.database_id,sqlserver.database_name,sqlserver.nt_username,sqlserver.session_id,sqlserver.sql_text,sqlserver.username))
-
     ADD TARGET package0.ring_buffer
-
     WITH (MAX_MEMORY=4096 KB, EVENT_RETENTION_MODE=ALLOW_SINGLE_EVENT_LOSS, MAX_DISPATCH_LATENCY=30 SECONDS, MAX_EVENT_SIZE=0 KB,MEMORY_PARTITION_MODE=NONE, TRACK_CAUSALITY=OFF,STARTUP_STATE=ON)
-
     GO
 
     -- Start the event session 
-
     ALTER EVENT SESSION [Blocking] ON SERVER 
-
     STATE = start; 
-
     GO
     ```
 
@@ -60,46 +52,35 @@ You have been hired as a database administrator to identify performance related 
 
     - Username
 
-
 1. Select **New Query** from SQL Server Management Studio. Copy and paste the following T-SQL code into the query window. Select the **Execute** button to execute this query.
 
     ```sql
     USE AdventureWorks2017
-
     GO
 
     BEGIN TRANSACTION
-
-    UPDATE Person.Person SET LastName = LastName;
+        UPDATE Person.Person 
+        SET LastName = LastName;
 
     GO
     ```
- 
 
-5. Open another query window by selecting the **New Query** button. Copy and paste the following T-SQL code into the query window. Click the execute button to execute this query.
+1. Open another query window by selecting the **New Query** button. Copy and paste the following T-SQL code into the query window. Click the execute button to execute this query.
 
     ```sql
     USE AdventureWorks2017
-
-
     GO
 
     SELECT TOP (1000) [LastName]
-
-    ,[FirstName]
-
-    ,[Title]
-
+      ,[FirstName]
+      ,[Title]
     FROM Person.Person
-
-    where FirstName = 'David'
+    WHERE FirstName = 'David'
     ```
-    
 
     You should notice that this query does not return results immediately and appears to be still running.
 
-
-1. In Object Explorer, navigate to Management, and expand the hive by clicking the plus sign. Expand the Extended Events hive and then expand the Sessions Hive. Expand  Blocking. Right click on package0.ring_buffer and select View Target Data. 
+1. In Object Explorer, navigate to Management, and expand the hive by clicking the plus sign. Expand the Extended Events hive and then expand the Sessions Hive. Expand  Blocking. Right click on package0.ring_buffer and select View Target Data.
 
     :::image type="content" source="../media/view-target-data.png" alt-text="View target data.":::
 
@@ -119,7 +100,7 @@ You have been hired as a database administrator to identify performance related 
 
     :::image type="content" source="../media/rollback-transaction.png" alt-text="Screenshot showing the ROLLBACK TRANSACTION in the query.":::
 
-11. Navigate back to the query tab you opened in Step 7. You will notice that the query has now completed.
+1. Navigate back to the query tab you opened in Step 7. You will notice that the query has now completed.
 
 ## Enable Read Commit Snapshot Isolation
 
@@ -127,42 +108,34 @@ You have been hired as a database administrator to identify performance related 
 
     ```sql
     USE master
-    
     GO
     
     ALTER DATABASE AdventureWorks2017 SET READ_COMMITTED_SNAPSHOT ON WITH ROLLBACK IMMEDIATE;
-    
     GO
     ```
+
 1. Run the query from **Task 1**, **Step 7**.
+
     ```sql
     USE AdventureWorks2017
-    
-    
     GO
     
     BEGIN TRANSACTION
-    
-    UPDATE Person.Person SET LastName = LastName;
-    
+        UPDATE Person.Person 
+        SET LastName = LastName;
     GO
     ```
- 
+
 1. Run the query from **Task 1**, **Step 8**.
 
     ```sql
     USE AdventureWorks2017
-    
-    
     GO
     
     SELECT TOP (1000) [LastName]
-    
      ,[FirstName]
-    
      ,[Title]
-    
-     FROM Person.Person
+    FROM Person.Person
     
      where firstname = 'David'
     ```

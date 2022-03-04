@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/19/2021
+  ms.date: 01/20/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -50,7 +50,7 @@ quiz:
     - content: "32 TB"
       isCorrect: true
       explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
-  - content: "Which tier of Azure managed disks are recommended for IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads?"
+  - content: "Which tier of Azure managed disks are recommended for IO-intensive workloads with disks larger than 35,000 GiB, IOPS peaks greater than 25,000 and max throughput greater than 1,000 MiB/s?"
     choices:
     - content: "Standard SSD"
       isCorrect: false

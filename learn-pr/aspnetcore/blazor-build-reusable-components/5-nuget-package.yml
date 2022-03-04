@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.blazor-build-reusable-components.nuget-package
+title: Create a NuGet package
+metadata:
+  unitType: exercise
+  title: create-a-nuget-package
+  description: "In this exercise, you'll package the Razor class library we created in unit 3.  You'll start by completing the fields for the NuGet package nupkg file. We'll end with using the new package in a simple Blazor application"
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-nuget-package.md)]

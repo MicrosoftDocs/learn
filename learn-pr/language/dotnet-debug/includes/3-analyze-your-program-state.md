@@ -63,11 +63,11 @@ Your variables are shown organized by scope:
 - **Global variables** are accessible from everywhere in your program. System objects from the JavaScript runtime are also included, so don't be surprised if you see a lot of stuff in there.
 - **Closure variables** are accessible from the current closure, if any. A closure combines the local scope of a function with the scope from the outer function it belongs to.
 
-You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in this object.
+You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in the object.
 
 It's possible to change the value of a variable on the fly by double-clicking the variable.
 
-By hovering a function parameter or a variable directly in the editor window, you can also peek at its value.
+By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
 :::image source="../media/variable-hover.png" alt-text="Screenshot of variable hover during debugging.":::
 
@@ -116,9 +116,9 @@ From left to right, the controls are:
 
 ### Use the debug console
 
-The debug console can be shown or hidden by selecting **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. The debug console can be used to visualize your application console logs. It can also be used to evaluate expressions or execute code in the current execution content, like commands or variable names in the built-in .NET debugger.
+You can show or hide the debug console by selecting **Ctrl+Shift+Y** for Windows and Linux. Select **Cmd+Shift+Y** for Mac. You can use the debug console to visualize your application console logs. You can also use it to evaluate expressions or execute code in the current execution content, like commands or variable names in the built-in .NET debugger.
 
-You can enter a .NET expression in the input field at the bottom of the debug console. Then select **Enter** to evaluate it. The result displays directly in the console.
+You can enter a .NET expression in the input field at the bottom of the debug console, then select **Enter** to evaluate it. The result displays directly in the console.
 
 :::image source="../media/debug-console.png" alt-text="Screenshot of Visual Studio Code debug console.":::
 

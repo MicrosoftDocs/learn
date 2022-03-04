@@ -4,12 +4,13 @@ title: Describe SQL Server integration services
 metadata:
   title: Describe SQL Server integration services
   description: "Describe SQL Server integration services"
-  ms.date: 11/30/2020
+  ms.date: 02/21/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-describe-sql-server-integration-services.md)]

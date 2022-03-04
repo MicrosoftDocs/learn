@@ -35,8 +35,8 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 ### Create the condition
 
 1. Under **Condition**, select the **Add condition** link. The **Select a signal** pane appears.
-
-1. Under **Signal name**, select **Percentage CPU**.
+1. In the search box, enter **Percentage CPU**.
+1. Select **Percentage CPU**.
 
     ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
 
@@ -115,7 +115,7 @@ Wait a few minutes for this rule to activate.
 
    ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
-1. Under step 4 (**Run the example command below to connect to your VM**), copy the **azureuser**@ and IP address that follows.
+1. Under step 4 on the **Connect** page, copy the **azureuser**@ and IP address that follows.
 
 1. In Azure Cloud Shell to the right, enter *SSH*, and paste what you copied in the previous step. It should look like the following command.
 
@@ -147,7 +147,7 @@ Wait a few minutes for this rule to activate.
 
 1. Return to the Azure portal and in the upper left corner, select the **&#9776;** icon, and then select **Dashboard**. The **KPI Dashboard** appears.
 
-1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
+1. On the **Max cpu/usage_active for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
 
 1. After a few minutes, the CPU should approach 100 percent, and you'll receive an alert email.
 

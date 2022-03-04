@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.measure-point-operation-cost
+title: Measure point operation cost
+metadata:
+  title: Measure point operation cost
+  description: "Measure point operation cost"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-measure-point-operation-cost.md)]

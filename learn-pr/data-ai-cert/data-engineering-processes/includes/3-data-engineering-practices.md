@@ -43,7 +43,7 @@ Azure Data Factory offers built-in support for Azure Functions. You'll also find
 
 As a data engineer, you'll use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
 
-You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Data Catalog can store this information centrally.
+You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Purview can store this information centrally.
 
 ## Evolution from ETL
 

@@ -1,6 +1,6 @@
-A shared access signature (SAS) provides a secure way of granting access to resources for clients. But it's not the only way to grant access. In some situations, other options might be a better choice for your organization.
+Before you enhance your company's patient diagnostic image web app, you'd like to understand all the options for secure access. A shared access signature (SAS) provides a secure way of granting access to resources for clients. But it's not the only way to grant access. In some situations, other options might offer better choices for your organization.
 
-Before you enhance your company's patient diagnostic image web app, you'd like to understand all the options. Your company could make use of more than just the SAS method of authentication.
+Your company could make use of more than just the SAS method of authentication.
 
 In this unit, you'll look at the different ways to authenticate access to files stored in Azure Storage.
 
@@ -41,7 +41,7 @@ We recommend that you manage storage keys with Azure Key Vault because it is eas
 
 A SAS lets you grant granular access to files in Azure Storage, such as read-only or read-write access, expiration time, after which the SAS no longer enables the client to access the chosen resources.  A shared access signature is a key that grants permission to a storage resource, and should be protected in the same manner as an account key.
 
-There are three types of shared access signatures:
+Azure Storage supports three types of shared access signatures:
 
 - **User delegation SAS**: Can only be used for Blob storage and is secured with Azure AD credentials.
 - **Service SAS**: A service SAS is secured using a storage account key. A service SAS delegates access to a resource in any one of four Azure Storage services: Blob, Queue, Table, or File.  

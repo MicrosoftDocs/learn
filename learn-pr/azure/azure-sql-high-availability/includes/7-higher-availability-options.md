@@ -33,7 +33,7 @@ The cloud, and Azure SQL specifically, have made this process easier. For both g
 
 Here are some considerations to help you decide if geo-replication or auto-failover groups are best for your scenario:
 
-|                                              | Geo-replication | Failover groups  |
+| Features                                     | Geo-replication | Failover groups  |
 |:---------------------------------------------| :-------------- | :----------------|
 | Automatic failover                           |     No          |      Yes         |
 | Fail over multiple databases simultaneously  |     No          |      Yes         |

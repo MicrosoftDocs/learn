@@ -58,7 +58,7 @@ The main steps in the process are:
 1. Use **Windows Admin Center** to configure **Storage Replica** between the two domain member servers.
 1. Use **Windows Admin Center** to validate the **Storage Replica** configuration.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Myb3]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Myb3]
 
 ---
 

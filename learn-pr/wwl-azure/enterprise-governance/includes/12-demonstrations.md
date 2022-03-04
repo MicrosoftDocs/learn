@@ -36,11 +36,11 @@ In this task, we will learn about role assignments.
 
 **Review role permissions**
 
-1.  Select the **Roles** tab (top).
-2.  Review the large number of built-in roles that are available.
-3.  Double-click a role, and then select **Permissions** (top).
-4.  Continue drilling into the role until you can view the **Read, Write, and Delete** actions for that role.
-5.  Return to the **Access Control (IAM)** blade.
+1.  Click the **Roles** tab (top).
+2.  Select a desired role from the list by clicking the associated box next to the Role Name.
+3.  Click the **View** link under the **Details** column on the far right of the page.
+4.  The Permissions view is displayed including three columns from left to right that list **Type** (i.e., Other, Read, Write, and Delete) **Permissions**, and **Description**.
+5.  Return to the **Access Control (IAM)** blade.<br>
 
 ## Task 3 - Manage resource locks
 

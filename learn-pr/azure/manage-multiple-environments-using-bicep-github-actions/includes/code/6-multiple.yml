@@ -27,5 +27,5 @@ jobs:
         resourceGroupName: ${{ inputs.resourceGroupName }}
         template: ./deploy/main.bicep
         parameters: >
-          ./deploy/azuredeploy.parameters.${{ inputs.environmentType }}
+          ./deploy/azuredeploy.parameters.${{ inputs.environmentType }}.json
           mySecureParameter=${{ secrets.MySecureParameter }}

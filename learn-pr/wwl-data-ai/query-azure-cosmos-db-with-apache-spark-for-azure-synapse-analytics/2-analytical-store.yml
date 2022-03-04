@@ -4,12 +4,13 @@ title: Query the Azure Cosmos DB analytical store
 metadata:
   title: Query the Azure Cosmos DB analytical store
   description: "Query the Azure Cosmos DB analytical store"
-  ms.date: 07/27/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-analytical-store.md)]

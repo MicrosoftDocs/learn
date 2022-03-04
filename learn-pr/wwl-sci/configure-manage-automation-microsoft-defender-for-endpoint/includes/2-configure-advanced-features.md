@@ -15,7 +15,7 @@ Turn on this feature to take advantage of the automated investigation and remedi
 
 ### Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts auto-resolved, you'll need to turn off the feature manually.
+For tenants created on or after Windows 10, version 1809, the automated investigation and remediation capability are configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don't want to have alerts autoresolved, you'll need to turn off the feature manually.
 
 The result of the autoresolve action may influence the Device risk level calculation based on the active alerts found on a device.  If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved," the autoresolve capability will not overwrite it.
 
@@ -25,7 +25,7 @@ Blocking is only available if your organization fulfills these requirements:
 
 - Uses Microsoft Defender Antivirus as the active antimalware solution
 
-and
+And
 
 - The cloud-based protection feature is enabled
 

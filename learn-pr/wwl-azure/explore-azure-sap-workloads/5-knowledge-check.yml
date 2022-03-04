@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/14/2021
+  ms.date: 01/26/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is one of the benefits of running SAP applications on Azure?"
+  - content: "Which item describes a benefit of running SAP applications on Azure?"
     choices:
     - content: "Hyper-V snapshot support"
       isCorrect: false

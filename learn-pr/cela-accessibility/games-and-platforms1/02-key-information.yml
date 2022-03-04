@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.games-and-platforms.key-information
+title: Represent key information through multiple sensory channels
+metadata:
+  title: Represent key information through multiple sensory channels
+  description: This content is part of the accessibility best practices for games and platforms module.
+  ms.date: 11/23/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 6
+content: |
+  [!include[](includes/02-key-information.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options best describes the concept of representation through multiple channels in the context of game accessibility?"
+    choices:
+    - content: "A game allows players to toggle between stereo and mono audio output channels."
+      isCorrect: false
+      explanation: "Incorrect. This option allows players to customize their audio output type. However, providing multiple types of audio output doesn't accurately describe the use of multiple sensory channels to represent game information."
+    - content: "A game contains both background music and a visual user interface."
+      isCorrect: false
+      explanation: "Incorrect. In general, this game uses audio and visual output. However, these two channels aren't being used simultaneously to represent a single source of information from the game."
+    - content: "A game uses a visual cue and a spatial audio ping to represent the presence of a nearby interactable object."
+      isCorrect: true
+      explanation: "Correct. This option accurately describes representation through multiple sensory channels. It uses both audio and visuals to communicate information to the player."
+  - content: "Which of the following options would best support the player in the following scenario by using multiple channels to represent important information? A player with low vision occasionally bypasses collectible items in their game environment needed to advance because they don't see them."
+    choices:
+    - content: "The game can provide a setting that, when enabled, plays a distinct audio cue whenever collectible items are within a certain range of the player's character."
+      isCorrect: true
+      explanation: "Correct. This option uses multiple sensory channels like audio and visuals to represent the same information to players (the presence of a collectible object)."
+    - content: "The game can provide players with an option to customize the size and color of collectible items to make them more visible to players."
+      isCorrect: false
+      explanation: "Incorrect. While visual customization options should generally be provided, this option only addresses visual channels and doesn't include another way of representing this information, such as audio or haptics."
+    - content: "The game can introduce a flashing exclamation mark onscreen when players walk past collectible items and don't pick them up."
+      isCorrect: false
+      explanation: "Incorrect. This option presents a new cue altogether. This approach also uses visual channels alone to represent information."

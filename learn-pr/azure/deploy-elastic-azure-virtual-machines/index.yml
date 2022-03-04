@@ -19,6 +19,7 @@ prerequisites: |
   - Basic understanding of Elasticserach, Kibana, Logstash, and Beats
   - Familiarity with Azure virtual machines (VMs)
   - Established Ubuntu username 
+hidden: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

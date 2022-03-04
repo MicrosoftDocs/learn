@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-container-build-strategy.why-containers
+title: Why containers?
+metadata:
+  title: Why containers?
+  description: "Why containers?"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-why-containers.md)]

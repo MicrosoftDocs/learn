@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-dependencies
+title: Manage dependencies
+metadata:
+  title: Manage dependencies
+  description: "Manage dependencies"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-manage-dependencies.md)]

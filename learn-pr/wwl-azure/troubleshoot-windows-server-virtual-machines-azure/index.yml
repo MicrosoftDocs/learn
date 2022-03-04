@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure
+metadata:
+  title: Troubleshoot Windows Server Virtual Machines in Azure
+  description: "Learn to troubleshoot configuration issues that impact connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption."
+  ms.date: 11/30/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot Windows Server Virtual Machines in Azure
+summary: Learn to troubleshoot configuration issues that impact connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption.
+abstract: |
+  After completing this module, you will be able to:
+  *   Troubleshoot VM deployment and extension issues
+  *   Troubleshoot VM startup and performance issues
+  *   Troubleshoot VM storage and encryption issues
+  *   Troubleshoot connectivity to VMs
+prerequisites: |
+  - Working knowledge of common Windows Server management tools
+  - Some experience of typical Windows Server workloads
+  - Basic knowledge of Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- support-engineer
+- technology-manager
+products:
+- azure
+- azure-bastion
+- azure-managed-disks
+- windows-server
+units:
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.introduction
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-deployment
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-startup
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-extensions
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-connectivity
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-performance
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-storage
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.knowledge-check
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure.summary
+badge:
+  uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.badge

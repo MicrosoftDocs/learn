@@ -4,13 +4,14 @@ title: 'Exercise: Identify and resolve blocking issues'
 metadata:
   title: 'Exercise: Identify and resolve blocking issues'
   description: "Exercise: Identify and resolve blocking issues"
-  ms.date: 03/12/2021
+  ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labId: 85893
+labModal: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-identify-resolve-blocking-issues.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language
+title: Understand SQL query language
+metadata:
+  title: Understand SQL query language
+  description: "Understand SQL query language"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-sql-query-language.md)]

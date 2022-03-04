@@ -1,12 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-develop-instrumentation-strategy
+hidden: true
 metadata:
   title: "AZ-400: Develop an instrumentation strategy"
   description: "Develop an effective instrumentation strategy through logging, telemetry, and monitoring and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-400: Develop an instrumentation strategy"

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-active-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator is attempting to recover the sysvol folder. There are three domain controllers within the organization. The administrator recovers a domain controller to an earlier point in time. Which of the following statements is true regarding the next step of the sysvol folder recovery to that same earlier time?"
+    choices:
+    - content: "It's simpler to perform a system state restore using the `wbadmin -authsysvol` command than to use the msDFSR-Options attribute method."
+      isCorrect: true
+      explanation: "Correct. Using Windows Backup with the `wbadmin -authsysvol` is simpler."
+    - content: "It's simpler to perform recovery using the msDFSR-Options attribute method rather than performing a system state restore using the `wbadmin -authsysvol` command."
+      isCorrect: false
+      explanation: "Incorrect. If available, the `wbadmin -authsysvol` approach is simpler."
+    - content: "The administrator has no choice. They can only recover the sysvol folder to an earlier time using the msDFSR-Options attribute method."
+      isCorrect: false
+      explanation: "Incorrect. Both methods are usually available."
+  - content: "A departmental administrator is making changes to Group Policy. They're having problems. The issue is escalated by the helpdesk to Tier 3 support. An engineer wonders whether the operations master is offline. Which of the following domain level operations masters is the likely culprit?"
+    choices:
+    - content: "RID master."
+      isCorrect: false
+      explanation: "Incorrect. This role handles object creation and is unrelated to Group Policy editing."
+    - content: "PDC emulator master."
+      isCorrect: true
+      explanation: "Correct. This role handles time sync, password updates, and Group Policy editing."
+    - content: "Infrastructure master."
+      isCorrect: false
+      explanation: "Incorrect. This role handles group references between domains."
+  - content: "An administrator has established synchronization between their AD DS and Azure AD environments. Users whose accounts are synced appear able to sign in, but none seem to be able to access cloud resources. What's the likely problem?"
+    choices:
+    - content: "The users don't have licenses assigned for cloud apps. The administrator must select the option to sync licenses across."
+      isCorrect: false
+      explanation: "Incorrect. Azure AD Connect doesn't sync licenses."
+    - content: "The users don't have licenses assigned for cloud apps. These users cannot be synced."
+      isCorrect: false
+      explanation: "Incorrect. Users can be synced, but Azure AD Connect doesn't sync licenses."
+    - content: "The users don't have licenses assigned for cloud apps. Azure AD Connect doesn't sync licenses, and the administrator must manage these licenses manually."
+      isCorrect: true
+      explanation: "Correct. Each user must have a license assigned for cloud apps they want to access."

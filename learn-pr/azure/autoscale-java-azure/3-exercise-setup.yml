@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.autoscale-java-azure.exercise-setup
+title: Exercise - Sample application environment
+metadata:
+  unitType: exercise
+  title: Exercise - Sample application environment
+  description: In this exercise, we'll set up the sample application environment
+  ms.date: 11/18/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-exercise-setup.md)]

@@ -1,14 +1,12 @@
-
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
-* Automate the detection and remediation of identity-based risks.
-* Investigate risks using data in the portal.
-* Export risk detection data to third-party utilities for further analysis.
 
-Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyses 6.5 trillion signals per day to identify and protect customers from threats.
+ -  Automate the detection and remediation of identity-based risks.
+ -  Investigate risks using data in the portal.
+ -  Export risk detection data to third-party utilities for further analysis.
 
-Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory.
-The signals generated that are fed to Identity Protection, can be further fed into tools like Conditional Access to make access decisions, or fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
+Identity Protection uses the learnings Microsoft has acquired from their position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analysis 6.5 trillion signals per day to identify and protect customers from threats.
 
+Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory. The signals generated that are fed to Identity Protection, can be further fed into tools like Conditional Access to make access decisions, or fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
 
 Identity Protection provides organizations access to powerful resources so they can quickly respond to suspicious activities.
 
@@ -16,8 +14,8 @@ Identity Protection provides organizations access to powerful resources so they 
 
 Azure Active Directory Identity Protection includes three default policies that administrators can choose to enable. These policies include limited customization but are applicable to most organizations. All the policies allow for excluding users such as your emergency access or break-glass administrator accounts.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the three policies described in the content.](../media/az500-identity-protection.png)
+:::image type="content" source="../media/az500-identity-protection-2455a26b.png" alt-text="Screenshot of the three policies described in the content.":::
+
 
 ## Azure MFA registration policy
 

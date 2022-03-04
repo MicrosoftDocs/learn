@@ -128,7 +128,7 @@ Use Azure Blueprints to package Azure Resource Manager templates, Azure policies
 
 - Deploy Azure Key Vault.
 - Deploy Log Analytics in Azure Monitor Logs.
-- Deploy Azure Security Center (standard version).
+- Deploy Microsoft Defender for Cloud (standard version).
 
 The CAF Foundation blueprint also defines and deploys policies to:
 
@@ -140,7 +140,7 @@ The CAF Foundation blueprint also defines and deploys policies to:
 - Require Azure Network Watcher to be deployed.
 - Require secure transfer encryption for Azure Storage accounts.
 - Deny resource types (choose when deploying).
-- Create an initiative to enable monitoring in Azure Security Center (89 policies).
+- Create an initiative to enable monitoring in Microsoft Defender for Cloud (89 policies).
 
 Follow the prescribed steps to [publish and assign this sample blueprint to your management group](/azure/governance/blueprints/samples/caf-foundation/deploy?azure-portal=true).
 
@@ -155,4 +155,3 @@ Customers commonly attempt to add governance to existing, mature adoption effort
 Deploy the Azure governance visualizer to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.
 
 These exercises help demonstrate a starting point or foundation for governance. In the next unit, you'll build on this foundation to establish a mature Cost Management discipline.
-

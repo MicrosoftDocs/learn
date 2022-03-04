@@ -2,11 +2,11 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-ad-join
 title: What is Azure AD join?
 metadata:
-  title:  What is Azure AD join?
+  title: What is Azure AD join?
   description: Learn about Azure AD join
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

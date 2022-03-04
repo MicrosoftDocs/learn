@@ -3,8 +3,7 @@ uid: learn.fsharp-first-program.3-exercise-variables
 title: Exercise - Use variables to store data
 metadata:
   title: Exercise - Use variables to store data
-  description: In this exercise, you learn how to declare and print variables. You also
-    learn how to recognize and fix an error related to formatting.
+  description: In this exercise, you learn how to declare and print variables. You also learn how to recognize and fix an error related to formatting.
   author: softchris
   ms.author: chnoring
   ms.date: 07/21/2021

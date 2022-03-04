@@ -35,7 +35,6 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     | | **Authentication method**: Use SQL authentication. |
     | | **Server admin login**: cloudadmin |
     | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
-    || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
     |**Backup storage redundancy**     |  Leave the default of **Geo-redundant backup storage**       |
@@ -50,7 +49,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Microsoft Defender for SQL** in a free trial. Select **Start free trial**.
 
-    After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
+    After the free trial, it's billed according to the Microsoft Defender for Cloud Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
 
 1. Leave remaining defaults and select **Next: Additional settings**.
 

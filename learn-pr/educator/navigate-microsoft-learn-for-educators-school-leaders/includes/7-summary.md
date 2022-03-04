@@ -2,5 +2,5 @@ In this module, you learned about basic functionalities and training offerings t
 
 ### Learn more
 
-- Popular modules and learning paths we recommend for educators can be found on the [Educator role page.](/learn/roles/educator/)
+- Popular modules and learning paths we recommend for educators can be found on the [Microsoft Learn Educator Center overview page.](/learn/educator-center/)
 - If you have other questions about your profile, data, or migration from MEC, [contact us here.](https://aka.ms/MECSupport)

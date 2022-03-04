@@ -40,7 +40,7 @@ Basic public IPs can be assigned by using static or dynamic allocation methods. 
  By default, Basic SKU IP addresses:
  - Are open. Network security groups are recommended but optional for restricting inbound or outbound traffic.
  - Are available for inbound only traffic.
- - Are available when using instance meta data service (IDMS).
+ - Are available when using instance meta data service (IMDS).
  - Don't support Availability Zones.
  - Don't support routing preferences.
 

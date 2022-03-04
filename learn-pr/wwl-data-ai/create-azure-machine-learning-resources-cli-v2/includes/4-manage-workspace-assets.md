@@ -101,25 +101,25 @@ Make sure both YAML files are stored locally on the same computer from which you
 
 To get a list of all environments in your workspace, you use the `az ml environment list` command. Both curated and custom environments will show in this list. All environments can also be found in the [Azure Machine Learning Studio](https://ml.azure.com), in the Environments tab.
 
-Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment?view=azure-cli-latest).
+Learn more about the commands to [manage Azure ML environments](/cli/azure/ml/environment).
 
 All registered environments will persist in the Azure Machine Learning workspace and can be used whenever you want to train a model or run a job.
 
-## Create a data asset
+## Create a dataset asset
 
 The data scientist gives you the Python notebook and a CSV dataset. You want to run the notebook on the compute instance you created, to test training the model in the Azure Machine Learning workspace. You could upload the CSV dataset to the compute instance, but after testing, you want to train the model with a compute cluster. To make it more future-proof, you want to upload the CSV to a datastore connected to the workspace and create a dataset that refers to the CSV to use when training the model.
 
-You have the CSV as a local file on your computer. Using the CLI (v2), you create a **data asset** in the workspace. Azure Machine Learning will then automatically upload the CSV to the workspace's default datastore. The default datastore is the storage account that was created together with the workspace, unless you change it.
+You have the CSV as a local file on your computer. Using the CLI (v2), you create a **dataset asset** in the workspace. Azure Machine Learning will then automatically upload the CSV to the workspace's default datastore. The default datastore is the storage account that was created together with the workspace, unless you change it.
 
-To create a data asset from a local file, you'll need to:
+To create a dataset asset from a local file, you'll need to:
 
 - Create a YAML specification file referring to the local file.
-- Run the `az ml data create` command.
+- Run the `az ml dataset create` command.
 
 In the YAML file you'll include:
 
-- The name of the data asset as it will show in the workspace.
-- The version of the data asset.
+- The name of the dataset asset as it will show in the workspace.
+- The version of the dataset asset.
 - The local path to the data file.
 - Optionally, you can add a description.
 
@@ -136,16 +136,16 @@ description: Dataset pointing to customer churn CSV on local computer. Data will
 From the shell prompt, navigate to the folder that contains the YAML file and CSV. Then, you run the command to create the dataset in the workspace:
 
 ```azurecli
-az ml data create --file data-local-path.yml
+az ml dataset create --file data-local-path.yml
 ```
 
 As the data is uploaded to the default datastore, the progress of uploading the data is shown in the prompt. Once it's completed, the dataset will show up in the Datasets tab of your workspace when opening the [Azure ML Studio](https://ml.azure.com). Or you can list all datasets within the workspace using the list command:
 
 ```azurecli
-az ml data list
+az ml dataset list
 ```
 
-Learn more about the commands to [manage Azure ML data assets](/cli/azure/ml/data).
+Learn more about the commands to [manage Azure ML dataset assets](/cli/azure/ml/dataset).
 
 The dataset is now available for anyone with access to the workspace. When you train a model by running a job, you can refer to the dataset to use it as input for the job.
 

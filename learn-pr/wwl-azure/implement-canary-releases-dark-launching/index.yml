@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.implement-canary-releases-dark-launching
+metadata:
+  title: Implement canary releases and dark launching
+  description: "Implement canary releases and dark launching"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement canary releases and dark launching
+summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Describe deployment strategies
+  *   Implement canary release
+  *   Explain traffic manager
+  *   Understand dark launching
+prerequisites: |
+  None
+iconUrl: /learn/achievements/6-implement-canary-releases-and-dark-launching.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+units:
+- learn.wwl.implement-canary-releases-dark-launching.introduction
+- learn.wwl.implement-canary-releases-dark-launching.explore-canary-releases
+- learn.wwl.implement-canary-releases-dark-launching.examine-traffic-manager
+- learn.wwl.implement-canary-releases-dark-launching.understand-dark-launching
+- learn.wwl.implement-canary-releases-dark-launching.knowledge-check
+- learn.wwl.implement-canary-releases-dark-launching.summary
+badge:
+  uid: learn.wwl.implement-canary-releases-dark-launching.badge

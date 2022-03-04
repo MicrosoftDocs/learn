@@ -10,14 +10,14 @@ For Azure Functions, you develop orchestrations by writing code and using the Du
 
 You can mix and match services when you build an orchestration, calling functions from logic apps and calling logic apps from functions. The following table lists some of the key differences between these:
 
-|  | Durable Functions | Logic Apps |
+|  | Azure Functions | Logic Apps |
 |--|--|--|
 | **Development** | Code-first (imperative) | Designer-first (declarative) |
 | **Connectivity** | About a dozen built-in binding types, write code for custom bindings | Large collection of connectors, Enterprise Integration Pack for B2B scenarios, build custom connectors |
 | **Actions** | Each activity is an Azure function; write code for activity functions | Large collection of ready-made actions |
 | **Monitoring** | Azure Application Insights | Azure portal, Azure Monitor logs |
 | **Management** | REST API, Visual Studio | Azure portal, REST API, PowerShell, Visual Studio |
-| **Execution context** | Can run locally or in the cloud | Runs only in the cloud |
+| **Execution context** | Can run locally or in the cloud | Supports run-anywhere scenarios |
 
 ## Compare Functions and WebJobs
 
@@ -27,10 +27,10 @@ Azure Functions is built on the WebJobs SDK, so it shares many of the same event
 
 |  | Functions | WebJobs with WebJobs SDK |
 |--|--|--|
-| Serverless app model with automatic scaling | Yes | No  |
-| Develop and test in browser | Yes | No |
-| Pay-per-use pricing | Yes | No |
-| Integration with Logic Apps | Yes | No |
-| Trigger events | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>HTTP/WebHook (GitHub<br>Slack)<br>Azure Event Grid | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>File system |
+| **Serverless app model with automatic scaling** | Yes | No  |
+| **Develop and test in browser** | Yes | No |
+| **Pay-per-use pricing** | Yes | No |
+| **Integration with Logic Apps** | Yes | No |
+| **Trigger events** | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>HTTP/WebHook (GitHub<br>Slack)<br>Azure Event Grid | Timer<br>Azure Storage queues and blobs<br>Azure Service Bus queues and topics<br>Azure Cosmos DB<br>Azure Event Hubs<br>File system |
 
 Azure Functions offers more developer productivity than Azure App Service WebJobs does. It also offers more options for programming languages, development environments, Azure service integration, and pricing. For most scenarios, it's the best choice.

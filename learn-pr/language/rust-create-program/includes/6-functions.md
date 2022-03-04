@@ -1,6 +1,5 @@
 Functions are the primary way code is executed within Rust. You've already seen one of the most important functions in the language, the `main` function. In this unit, we'll cover more of the details about how to define functions.
 
-
 ## Define a function
 
 Function definitions in Rust start with the `fn` keyword. After the function name, we specify the function's input arguments as a comma-separated list of data types inside parentheses. The curly brackets tell the compiler where the function body begins and ends.
@@ -19,7 +18,6 @@ fn goodbye() {
 We call a function by using its name along with its input arguments in parentheses. If a function doesn't have any input arguments, we leave the parentheses empty. In our example, both the `main` and `goodbye` functions have no input arguments.
 
 You might have noticed that we defined the `goodbye` function after the `main` function. We could have defined the `goodbye` function before we defined `main`. Rust doesn't care where in the file you define your functions, as long as they're defined somewhere in the file.
-
 
 ## Pass input arguments
 
@@ -47,7 +45,6 @@ Formal: Good bye.
 Casual: See you later!
 ```
 
-
 ## Return a value
 
 When a function returns a value, we add the syntax `-> <type>` after the list of function arguments and before the opening curly bracket for the function body. The arrow syntax `->` indicates that the function returns a value to the caller. The `<type>` portion lets the compiler know the data type of the value returned.
@@ -61,7 +58,7 @@ fn divide_by_5(num: u32) -> u32 {
 
 fn main() {
     let num = 25;
-    println!("25 divided by 5 = {}", num, divide_by_5(25));
+    println!("{} divided by 5 = {}", num, divide_by_5(num));
 }
 ```
 
@@ -77,7 +74,7 @@ Here's an example that explicitly uses the `return` keyword to return early from
 
 ```rust
 fn divide_by_5(num: u32) -> u32 {
-    todo!("Check if num is 0") {
+    if num == 0 {
         // Return early
         return 0;
     }
@@ -87,10 +84,9 @@ fn divide_by_5(num: u32) -> u32 {
 
 When you explicitly use the `return` keyword, you end the statement with a semicolon. If you send back a return value without using the `return` keyword, you don't end the statement with a semicolon. You might have noticed that we didn't use the ending semicolon for the `num / 5` return value statement.
 
-
 ## Review the signature
 
-The first part of the declaration for a function is called the *function signature*. 
+The first part of the declaration for a function is called the *function signature*.
 
 The signature for the `goodbye` function in our example has these characteristics:
 
@@ -102,7 +98,6 @@ The signature for the `goodbye` function in our example has these characteristic
 The `goodbye` function accepts one string pointer as input and outputs a boolean value.
 
 You can interact with the example code in this [Rust Playground][RustPlay-func].
-
 
 <!-- Links -->
 

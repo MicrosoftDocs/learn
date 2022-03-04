@@ -4,8 +4,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 03/25/2021
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
@@ -53,13 +53,13 @@ quiz:
     choices:
     - content: "Azure Information Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Cloud App Security to discover these applications."
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
     - content: "Azure Identity Protection"
       isCorrect: false
-      explanation: "That's not correct. You should use Cloud App Security to discover these applications."
-    - content: "Cloud App Security"
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "That's correct. You should use Cloud App Security to discover these applications."
+      explanation: "That's correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
   - content: "What is the primary purpose of data encryption with customer key?"
     choices:
     - content: "To replace BitLocker encryption"
@@ -71,4 +71,3 @@ quiz:
     - content: "To provide stronger data encryption"
       isCorrect: false
       explanation: "That's not correct. Data encryption with customer key's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
-

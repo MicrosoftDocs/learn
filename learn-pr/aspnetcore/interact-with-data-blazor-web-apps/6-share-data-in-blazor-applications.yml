@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.interact-with-data-blazor-web-apps.share-data-in-blazor-applications
+title: Share data in Blazor applications
+metadata:
+  unitType: learning-content
+  title: Share data in Blazor applications
+  description: "Learn how to share data between different Blazor components by using component parameters, cascading parameters, and the AppState pattern."
+  ms.date: 8/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-share-data-in-blazor-applications.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Blazor components can receive input by using two types of parameters. What are they?"
+    choices:
+    - content: "Parameter and DescendingParameter"
+      isCorrect: false
+      explanation: "DescendingParameter sounds like the other parameter type but it isn't a real type in Blazor."
+    - content: "Parameter and RequiredParameter"
+      isCorrect: false
+      explanation: "RequiredParameter doesn't define a different parameter type that can be injected into a Blazor component."
+    - content: "Parameter and CascadingParameter"
+      isCorrect: true
+      explanation: "Parameters pass data directly into a component, and CascadingParameter passes data indirectly into a child component."
+  - content: "AppState can be registered with the service locator by using which of these statements?"
+    choices:
+    - content: "`builder.Services.AddAppState()`"
+      isCorrect: false
+      explanation: "AddAppState isn't a method available with the Blazor framework."
+    - content: "`builder.Services.AddServerSideBlazor()`"
+      isCorrect: false
+      explanation: "This method enables Server Side Blazor in the application, but it doesn't register the AppState."
+    - content: "`builder.Services.AddScoped<PizzaSalesState>()`"
+      isCorrect: true
+      explanation: "This method registers the PizzaSalesState object as a scoped service that can be used within Blazor pages and components."      

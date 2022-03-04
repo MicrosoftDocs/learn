@@ -1,0 +1,39 @@
+### YamlMime:Module
+#LP name: Module 5: Accessibility Best Practices for Gaming Hardware
+uid: learn.hardware-devices
+metadata:
+  title: Accessibility best practices for gaming hardware
+  description: Learn how to create more accessible standard gaming hardware products, such as game consoles, controllers, and headsets. Discover ways to design hardware packaging that features accessible components to improve the unboxing experience of more customers. 
+  ms.date: 11/14/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+  showCreativeCommonsFooter: true
+title: Accessibility best practices for gaming hardware
+summary: This module introduces accessibility best practices considerations for developing gaming hardware, such as consoles, headsets, controllers, and other types of input devices. Accessible packaging components for these products are also presented.
+abstract: |
+  In this module, you'll learn about:
+  - The role of accessible design in standard gaming hardware development.
+  - Accessibility best practices to consider for hardware component operation and discoverability.
+  - Accessibility best practices to consider when you develop hardware packaging components.
+prerequisites: |
+ - You should have some basic familiarity with playing and creating video games.
+ - You should have some familiarity with using game platforms like Xbox, PlayStation, Nintendo Switch, or Windows.
+ - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
+iconUrl: /learn/achievements/hardware-devices.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- xbox
+units:
+- learn.hardware-devices.introduction
+- learn.hardware-devices.standard-devices
+- learn.hardware-devices.hardware-components
+- learn.hardware-devices.component-function
+- learn.hardware-devices.accessible-packaging
+- learn.hardware-devices.summary
+badge:
+  uid: learn.hardware-devices.badge

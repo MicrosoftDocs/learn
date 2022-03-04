@@ -4,12 +4,13 @@ title: Manage sensitive data with Dynamic Data Masking
 metadata:
   title: Manage sensitive data with Dynamic Data Masking
   description: "Manage sensitive data with Dynamic Data Masking"
-  ms.date: 06/17/2021
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/7-manage-sensitive-data.md)]

@@ -6,7 +6,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and under *Popular offers*, select **Function App**. The **Create Function App** pane appears.
+1. In the left menu pane, select **Compute**, and under *Popular products*, select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -37,7 +37,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | **Plan** |
     | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
-1. Select **Next : Networking (preview)**.
+1. Select **Next : Networking (preview)**. Accept the defaults.
 
 1. Select **Next : Monitoring**.
 
@@ -58,9 +58,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Select **Go to resource** to select your function app. Your **Function App** pane appears.
 
-1. In the left menu pane, under **Development Tools**, select **App Service Editor**. The **App Service Editor** pane appears.
-
-1. Select **Go**. The **App Service Editor** Quick Start pane appears in a new browser window.
+1. In the left menu pane, under **Development Tools**, select **App Service Editor (preview)**, then select **Go**. The **App Service Editor** Quick Start pane appears in a new browser window.
 
 1. In the left menu pane, highlight the **WWWROOT** folder.
 
@@ -86,7 +84,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
         }
         ```
 
-        Where `example` should be replaced with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
+        Replace `example` with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
 
 1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
@@ -110,9 +108,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 ## Create the client function for submitting a design proposal
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -172,9 +170,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 ## Create the orchestrator function
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -213,9 +211,9 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 ## Create the activity function
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
@@ -259,9 +257,9 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
 
 ## Verify that the durable functions workflow starts
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
+1. On the Azure portal menu or from the **Home** page, under **Recent resources**, select **See all**, and then select your function app. Your **Function App** pane appears.
 
-1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
 1. Select the **HttpStart** function. The **HttpStart** pane appears for your function.
 

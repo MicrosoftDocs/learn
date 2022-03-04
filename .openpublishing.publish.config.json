@@ -7,7 +7,9 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "xref_query_tags": ["/dotnet"],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Achievements": "Toc",
@@ -25,32 +27,48 @@
       }
     }
   ],
-  "enable_incremental_build": false,
   "notification_subscribers": [],
+  "sync_notification_subscribers": null,
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/learn",
-  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "enable_incremental_build": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "blazing-pizza-main",
       "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "blazing-pizza-signalr",
       "url": "https://github.com/MicrosoftDocs/mslearn-blazing-pizza-signalr",
-      "branch": "signalr"
+      "branch": "signalr",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "csharp-null-safety-main",
+      "url": "https://github.com/MicrosoftDocs/mslearn-csharp-null-safety",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "csharp-null-safety-solution",
+      "url": "https://github.com/MicrosoftDocs/mslearn-csharp-null-safety",
+      "branch": "solution",
+      "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": {},
   "dependent_packages": [
     {
       "id": "Microsoft.OpenPublishing.CommonPlugins",
@@ -60,7 +78,6 @@
       "version": "latest"
     }
   ],
-  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
   "docs_build_engine": {
     "name": "docfx_v3"

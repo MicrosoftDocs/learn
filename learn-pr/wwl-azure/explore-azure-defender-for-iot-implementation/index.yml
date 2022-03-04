@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-defender-for-iot-implementation
+metadata:
+  title: Explore Azure Defender for IoT implementation
+  description: "This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns."
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Defender for IoT implementation
+summary: This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns.
+abstract: |
+  After you complete this module, you will be able to:
+  - Enable Azure Defender for IoT and create a security module twin.
+  - Install a security agent on a device.
+  - Create and trigger a custom alert.
+  - Review the alert in Azure Defender for IoT.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
+  - Describe Azure Defender for IoT security agent options, authentication methods, and built-in security agent alerts.
+iconUrl: /learn/achievements/azure-defender-iot-implementation.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-defender-iot
+- azure-iot-edge
+- azure-iot-hub
+- azure-iot-sdk
+- azure-portal
+units:
+- learn.wwl.explore-azure-defender-for-iot-implementation.introduction
+- learn.wwl.explore-azure-defender-for-iot-implementation.implement
+- learn.wwl.explore-azure-defender-for-iot-implementation.knowledge-check
+- learn.wwl.explore-azure-defender-for-iot-implementation.summary
+badge:
+  uid: learn.wwl.explore-azure-defender-for-iot-implementation.badge

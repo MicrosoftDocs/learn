@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.wwl.connect-to-azure-cosmos-db-sql-api-sdk
+metadata:
+  title: Connect to Azure Cosmos DB SQL API with the SDK
+  description: Connect to Azure Cosmos DB SQL API with the SDK
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect to Azure Cosmos DB SQL API with the SDK
+prerequisites: |
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+summary: |
+  Use the Microsoft.Azure.Cosmos library from NuGet to connect to an Azure Cosmos DB SQL API account from a .NET application.
+iconUrl: /learn/achievements/azure-cosmos-database-connect-sdk.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+modules:
+- learn.wwl.use-azure-cosmos-db-sql-api-sdk
+- learn.wwl.configure-azure-cosmos-db-sql-api-sdk
+trophy:
+  uid: learn.wwl.connect-to-azure-cosmos-db-sql-api-sdk.trophy

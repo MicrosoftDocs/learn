@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.develop-just-culture
+title: Develop a just culture
+metadata:
+  title: Develop a just culture
+  description: "Develop a just culture"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-develop-just-culture.md)]

@@ -22,3 +22,4 @@ The different functionalities for running a notebook are as follows:
 
     The Azure Synapse Studio notebook is purely Spark based. Remotely, the code cells that are executed, are executed on the serverless Apache Spark pool. If you want to see the progress of a Spark job, you can see in real time the job execution status below a cell. 
     The number of tasks per each job or stage help you to identify the parallel level of your spark job. You can also drill deeper to the Spark UI of a specific job (or stage) by selecting the link on the job (or stage) name.
+

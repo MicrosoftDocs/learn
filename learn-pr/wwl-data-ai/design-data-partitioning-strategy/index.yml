@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-partitioning-strategy
+metadata:
+  title: Design a data partitioning strategy
+  description: "Design a data partitioning strategy"
+  ms.date: 12/20/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a data partitioning strategy
+summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change-feed to maintain your data's referential integrity.
+abstract: |
+  At the completing this module we will learn:
+  *   Manage relationships between data entities by using advanced modeling and partitioning strategies.
+  *   Maintain the referential integrity of your data by using change feed.
+  *   Implement pre-aggregating and denormalizing data strategies to improve data-model performance and scaling.
+  *   Optimizing storage and compute by mixing entity types in a single container
+prerequisites: |
+  - Familiarity with Azure Cosmos DB concepts such as databases, containers, documents, and throughput (request units per second [RU/s]).
+  - Familiarity with navigating Azure Cosmos DB resources and data by using Data Explorer in the Azure portal, running queries, and viewing query stats in results.
+  - Familiarity with basic modeling and partitioning strategies, such as embedding or referencing data in entities.
+  - Familiarity with Azure Cosmos DB .NET SDK v3.
+  - Familiarity with Azure Cosmos DB change feed.
+iconUrl: /learn/achievements/design-partitioning-strategy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+units:
+- learn.wwl.design-data-partitioning-strategy.introduction
+- learn.wwl.design-data-partitioning-strategy.denormalize-data-your-model
+- learn.wwl.design-data-partitioning-strategy.manage-referential-integrity-by-using-change-feed
+- learn.wwl.design-data-partitioning-strategy.combine-multiple-entities-same-container
+- learn.wwl.design-data-partitioning-strategy.denormalize-aggregates-same-container
+- learn.wwl.design-data-partitioning-strategy.finalize-data-model
+- learn.wwl.design-data-partitioning-strategy.exercise-advanced-modeling-patterns
+- learn.wwl.design-data-partitioning-strategy.knowledge-check
+- learn.wwl.design-data-partitioning-strategy.summary
+badge:
+  uid: learn.wwl.design-data-partitioning-strategy.badge

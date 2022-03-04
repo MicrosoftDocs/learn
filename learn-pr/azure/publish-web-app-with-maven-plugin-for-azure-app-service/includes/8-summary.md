@@ -23,7 +23,7 @@ The following links discuss additional information related to Java development o
 - [Azure for Java cloud developers](/azure/java)
 - [Install the JDK for Azure and Azure Stack](/azure/java/jdk/java-jdk-install)
 - [Tomcat project page](https://tomcat.apache.org/maven-plugin-2.2)
-- [Create an Azure service principal with Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)
+- [Create an Azure service principal with Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
 - [Automation with service principals](/azure/analysis-services/analysis-services-service-principal)
 - [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac)
 

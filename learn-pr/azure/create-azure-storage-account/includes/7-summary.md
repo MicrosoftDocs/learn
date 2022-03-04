@@ -4,16 +4,21 @@ If you tried to achieve the same thing without storage accounts, the end product
 
 Instead, you capture the rules in the settings for a storage account, and those rules are automatically applied to every data service in the account.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-sandbox-cleanup.md)]
 
-When you're working in your own subscription, you can use the following steps in the Azure portal to delete the resource group and all associated resources.
+> [!IMPORTANT]
+> When you're working in your own subscription, to avoid unwanted usage charges, you must remove any resources that you create.
 
-1. Select the **Resource groups** link in the left sidebar.
+Use the following steps in the Azure portal to delete the resource group and all associated resources.
 
-1. Locate the resource group you created in the list.
+1. In the resource menu, select **Resource groups**.
 
-1. Right-click on the resource group entry and select **Delete resource group** from the context menu. You can also click the "..." menu element on the right side of the entry to get to the same context menu.
+1. Select the resource group you created.
 
-1. Type the resource group name into the confirmation field.
+1. In the command bar, select **Delete resource group**.
 
-1. Click the **Delete** button. This may take several minutes.
+1. In the confirmation pane, you will be prompted to type the resource group name; you can right click and drag the title from the Resource group pane. 
+
+1. When the expected name is a match, **Delete** is available. 
+ 
+1. Select **Delete**. It may take several minutes to delete your resource group. Check **Notifications** in the Global Controls in the upper right corner of the Azure portal to ensure your operation completed. 

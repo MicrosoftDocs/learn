@@ -2,9 +2,9 @@ In this unit, you'll look at how app logging can help with your Web apps, and ho
 
 ## What are app logs?
 
-App logs are the output of runtime trace statements in app code. For example, you might want to check some logic in your code by adding a trace to show when a particular function is being processed, or you might only want to see a logged message when a particular level of error has occurred. App logging is primarily for apps in pre-production and for troublesome issues, because excessive logs can carry a performance hit and quickly consume storage; for this reason, logging to the file system is automatically disabled after 12 hours.
+Azure provides built-in diagnostics with app logging. App logs are the output of runtime trace statements in app code. For example, you might want to check some logic in your code by adding a trace to show when a particular function is being processed, or you might only want to see a logged message when a particular level of error has occurred. App logging is primarily for apps in pre-production and for troublesome issues, because excessive logs can carry a performance hit and quickly consume storage; for this reason, logging to the file system is automatically disabled after 12 hours.
 
-App logging has scale limitations, primarily because ***files*** are being used to save the logged output. If you have multiple instances of an app, and the same storage used is shared across all instances, messages from different instances may be interleaved, making troubleshooting difficult. If each instance has its own log file, there will be multiple logs, again making it difficult to troubleshoot instance-specific issues.
+App logging has scale limitations, primarily because ***files*** are being used to save the logged output. If you have multiple instances of an app, and the same storage is shared across all instances, messages from different instances may be interleaved, making troubleshooting difficult. If each instance has its own log file, there will be multiple logs, again making it difficult to troubleshoot instance-specific issues.
 
 The types of logging available through the Azure App Service depends on the code framework of the app, and on whether the app is running on a Windows or Linux app host.
 
@@ -72,7 +72,7 @@ You can also view **Metrics** for your app, which can help you profile how your 
 
 In the portal, app logging is managed from the Diagnostics logs pane of the web app.
 
-![Screenshot of Diagnostics logs pane in the Azure portal.](../media/2-portal-diagnostics-logs-pane.png)
+:::image type="content" source="../media/2-portal-diagnostics-logs-pane.png" alt-text="Screenshot of Diagnostics logs pane in the Azure portal." border="false":::
 
 To enable app logging to the Web app's file system, set **Application logging (Filesystem)** to **On**, and then set the **Level** to Error, Warning, Information, or Verbose. Logging to the file system will be automatically reset to Off after 12 hours.
 
@@ -83,13 +83,13 @@ To enable app logging to a blob storage container, set **Application logging (Bl
 
 When logging to blob storage, you must also set a **Retention Period**. Unlike the file system logs, blob logs are never deleted by default; the retention period option means that any logs older than the specified number of days will be deleted.
 
-![Screenshot of configuring application logs in the Azure portal with callout highlighting the save button.](../media/2-portal-diagnostics-logs-settings.png)
+:::image type="content" source="../media/2-portal-diagnostics-logs-settings.png" alt-text="Screenshot of configuring application logs in the Azure portal with Save highlighted." border="false":::
 
 After configuring the logs, select **Save**.
 
 ## Enable logging using the Azure CLI
 
-The current version of Azure CLI does not enable you to manage app logging to blob storage. To enable app logging to the file system, run this command.
+To enable app logging to the file system, run this command.
 
 ```azurecli
 az webapp log config --application-logging true --level verbose --name <app-name> --resource-group <resource-group-name>

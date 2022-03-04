@@ -4,12 +4,13 @@ title: Analyze a scenario and map it to a HDInsight configuration option
 metadata:
   title: Analyze a scenario and map it to a HDInsight configuration option
   description: "Analyze a scenario and map it to a HDInsight configuration option"
-  ms.date: 06/25/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-analyze-scenario.md)]

@@ -35,9 +35,8 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     |---|---|
     | **Security** | 
     | Require secure transfer for REST API operations | *Check*. This setting controls whether **HTTP** can be used for the REST APIs that access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set secure transfer to *enable*; using HTTPS over the network is considered a best practice. |
-    | Enable infrastructure encryption | *Uncheck*. Not required for this module. |
     | Enable blob public access | *Check*. We'll allow clients to read data in that container without authorizing the request. |
-    | Enable storage account key access | *Check*. We'll allow clients to access dat via SAS. |
+    | Enable storage account key access | *Check*. We'll allow clients to access data via SAS. |
     | Default to Azure Active Directory authorization in the Azure portal | *Uncheck*. Clients are public, not part of an Active Directory. |
     | Minimum TLS version | Select *Version 1.2* from dropdown list. TLS 1.2 is the most secure version of TLS and is used by Azure Storage on public HTTPS endpoints. TLS 1.1 and 1.0 is supported for backwards compatibility. See *Warning* at end of table. |
     | **Data Lake Storage Gen2** |
@@ -79,6 +78,8 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Enable blob change feed | *Uncheck*. Not necessary for this implementation. |
     | **Access control**|
     | Enable version-level immutability support | *Uncheck*. Not necessary for this implementation. |
+
+1. Select **Next : Encryption.** Accept the defaults.
 
 1. Select **Next : Tags**. Here, you can associate key/value pairs with the account for your categorization to determine if a feature is available to selected Azure resources.
 

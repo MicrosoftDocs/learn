@@ -4,8 +4,8 @@ metadata:
   title: Manage users and groups in Azure Active Directory
   description: Manage users and groups in Azure Active Directory
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage users and groups in Azure Active Directory

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-resource-requirements.time-to-live (TTL)
+title: Time-to-live (TTL)
+metadata:
+  title: Time-to-live (TTL)
+  description: "Time-to-live (TTL)"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-time-to-live.md)]

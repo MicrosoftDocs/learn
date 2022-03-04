@@ -1,12 +1,12 @@
-On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code.  However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
+On the surface, the `for` statement is another iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
 
 ## What is the `for` statement?
 
-The `for` statement iterates through a code block a specific number of times.  This makes the `for` statement unique among the other iteration statements.  The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection.  The `while` statement iterates through a block of code until a condition is met.  
+The `for` statement iterates through a code block a specific number of times. This makes the `for` statement unique among the other iteration statements. The `foreach` statement iterates through a block of code once for each item in a sequence of data like an array or collection. The `while` statement iterates through a block of code until a condition is met.  
 
 Furthermore, the `for` statement gives you much more control over the process of iteration by exposing the conditions for iteration.
 
-In this exercise, you'll use the `for` statement, learning how to control the iteration's pre-condition, completion condition, its iteration pattern and more.  Also, you'll learn of common use cases for the `for` statement.
+In this exercise, you'll use the `for` statement, learning how to control the iteration's pre-condition, completion condition, its iteration pattern and more. Also, you'll learn of common use cases for the `for` statement.
 
 ### Step 1 - Write a basic for statement
 
@@ -18,6 +18,7 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(i);
 }
 ```
+
 When you run this code, you'll see the following output:
 
 ```output
@@ -36,20 +37,21 @@ When you run this code, you'll see the following output:
 There are six parts to `for` statement.
 
 - The `for` keyword
-- A set of parenthesis that defines the conditions of for iteration.  It contains three distinct parts, separated by the end of statement operator, a semi-colon.
-- The first part defines and initializes the iterator variable.  In this example: `int i = 0`.  The docs refer to this section as the **initializer**.
-- The second part defines the completion condition.  In this example: `i < 10`.  In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`.  Once `i` is greater or equal to `10`, the runtime will continue executing code after the `for` statement's code block.  The docs refer to this section as the **condition**.
-- The third part defines the action to take after each iteration.  In this case, after each iteration, `i++` will increment the value of `i` by 1.  The docs refer to this section as the **iterator**.
-- Finally, the code block.  This is the code that will be executed for each iteration.  Notice that the value of `i` is referenced inside of the code block.  The docs refer to this section as the **body**.
+- A set of parenthesis that defines the conditions of for iteration. It contains three distinct parts, separated by the end of statement operator, a semi-colon.
+- The first part defines and initializes the iterator variable. In this example: `int i = 0`. The docs refer to this section as the **initializer**.
+- The second part defines the completion condition. In this example: `i < 10`. In other words, the runtime will continue to iterate over the code in the code block below the `for` statement while `i` is less than `10`. When `i` becomes equal to `10`, the runtime stops executing the `for` statement's code block. The docs refer to this section as the **condition**.
+- The third part defines the action to take after each iteration. In this case, after each iteration, `i++` will increment the value of `i` by 1. The docs refer to this section as the **iterator**.
+- Finally, the code block. This is the code that will be executed for each iteration. Notice that the value of `i` is referenced inside of the code block. The docs refer to this section as the **body**.
 
 > [!NOTE]
-> All three sections (initializer, condition, and iterator) are optional.  However, in practice, typically all three sections are used.
+> All three sections (initializer, condition, and iterator) are optional. However, in practice, typically all three sections are used.
 
 As we stated at the outset, the `for` statement has two unique qualities among iteration statements.
-- The `for` statement should be used when you know the number of times you need to iterate through a block of code ahead of time.
-- The `for` statement allows you to control the way in which each iteration is handled.  We'll see a few examples of this in the rest of the steps in this exercise.
 
-Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration.  In this case, `i` is considered by most to be valid.  Other popular choices are `x` and `counter`.  `j` is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
+- The `for` statement should be used when you know the number of times you need to iterate through a block of code ahead of time.
+- The `for` statement allows you to control the way in which each iteration is handled. We'll see a few examples of this in the rest of the steps in this exercise.
+
+Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, `i` is considered by most to be valid. Other popular choices are `x` and `counter`. `j` is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
 
 ### Step 2 - Change the iteration conditions
 
@@ -63,6 +65,7 @@ for (int i = 10; i >= 0; i--)
     Console.WriteLine(i);
 }
 ```
+
 When you run the code, you'll see the following output.
 
 ```output
@@ -96,6 +99,7 @@ for (int i = 0; i < 10; i += 3)
     Console.WriteLine(i);
 }
 ```
+
 When you run the code, you'll see the following output.
 
 ```output
@@ -122,6 +126,7 @@ for (int i = 0; i < 10; i++)
     if (i == 7) break;
 }
 ```
+
 When you run the code, you'll see the following output.
 
 ```output
@@ -134,11 +139,12 @@ When you run the code, you'll see the following output.
 6
 7
 ```
-We first saw the `break` keyword in the module "Branch the flow of code using the switch-case construct in C#".  As it turns out, we can use the `break` keyword to exit out of iteration statements as well.
+
+We first saw the `break` keyword in the module "Branch the flow of code using the switch-case construct in C#". As it turns out, we can use the `break` keyword to exit out of iteration statements as well.
 
 ### Step 5 - Loop through each element of an array
 
-A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens.  While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customization.
+A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens. While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customization.
 
 Update the code in the .NET Editor to match the following code listing.
 
@@ -149,6 +155,7 @@ for (int i = names.Length - 1; i >= 0; i--)
     Console.WriteLine(names[i]);
 }
 ```
+
 When you run the code, you'll see the following output.
 
 ```output
@@ -157,7 +164,8 @@ David
 Eddie
 Alex
 ```
-In this case, we iterate through the array backwards -- something we would be unable to do with the `foreach` statement.  We use the `Length` property to initialize the iterator variable, and subtract one from `i` with each iteration.  Inside the code block, we index into the array using the iteration variable.
+
+In this case, we iterate through the array backwards -- something we would be unable to do with the `foreach` statement. We use the `Length` property to initialize the iterator variable, and subtract one from `i` with each iteration. Inside the code block, we index into the array using the iteration variable.
 
 ### Step 6 - Limitation of the foreach statement
 
@@ -171,11 +179,13 @@ foreach (var name in names)
     if (name == "David") name = "Sammy";
 }
 ```
+
 If you attempt to compile and run this code, you will see an exception.
 
 ```output
 Cannot assign to name because it is a 'foreach iteration variable'
 ```
+
 In other words, you can't reassign the value of `name` because it is part of the `foreach` iteration's inner implementation.
 
 ### Step 7 - Overcoming the limitation of the foreach statement using the for statement
@@ -201,7 +211,7 @@ Michael
 ```
 Since the array isn't directly part of the iteration statement's implementation, you can change values inside of the array.
 
-Also, in this code example, you may notice we removed the curly braces since the code blocks only contained a single line of code.  This is the same technique that we talked about in the module "Control variable scope and logic using code blocks in C#".  Some prefer this abbreviated style because it helps them write more succinctly and more expressively.  If you don't like this style, feel free to always use curly braces in your code blocks.
+Also, in this code example, you may notice we removed the curly braces since the code blocks only contained a single line of code. This is the same technique that we talked about in the module "Control variable scope and logic using code blocks in C#". Some prefer this abbreviated style because it helps them write more succinctly and more expressively. If you don't like this style, feel free to always use curly braces in your code blocks.
 
 ## Recap
 

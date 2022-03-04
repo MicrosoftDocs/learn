@@ -5,8 +5,8 @@ metadata:
   title: Mask URLs with a transformation policy
   description: In this module, you will learn about transformation policies and how to use them to modify the content of an API response.
   ms.date: 05/17/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

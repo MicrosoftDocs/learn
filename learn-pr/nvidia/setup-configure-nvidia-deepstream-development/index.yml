@@ -5,7 +5,8 @@ metadata:
   description: Learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
   ms.date: 11/09/2021
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up and configure an NVIDIA DeepStream development environment
@@ -19,7 +20,7 @@ abstract: |
 prerequisites: |
   - x86-based system running Ubuntu 18.04
   - RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
 levels:
 - intermediate
 roles:

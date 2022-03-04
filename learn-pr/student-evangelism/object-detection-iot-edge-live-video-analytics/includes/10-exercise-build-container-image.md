@@ -29,7 +29,7 @@ Before you start, make sure that you have installed rerequisites in your local m
 
 ## Download the inference YOLOv4(tiny) TensorFlow Lite model
 
-1. Go to https://github.com/Azure/live-video-analytics and download zip in your local machine.
+1. Go to `https://github.com/Azure/live-video-analytics` and download zip in your local machine.
 
    [![The illustration shows how to download a project from GitHub.](../media/download-zip-file.png)](../media/download-zip-file.png#lightbox)
 
@@ -76,7 +76,7 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
    [![The illustration shows how to login docker.](../media/docker-login.png)](../media/docker-login.png#lightbox)
 
 3. Tag the image using the **docker tag** command. Replace
-<login-server> with the login server name of your ACR instance.
+\<login-server\> with the login server name of your ACR instance.
 
    ```
    docker tag <original-image-name:tag> <registry-name>.azurecr.io/<image-name:tag>
@@ -84,7 +84,7 @@ Now, you have a docker image with the YOLO model. Before you can push an image t
 
    [![The illustration shows how to a docker image.](../media/tag-image.png)](../media/tag-image.png#lightbox)
 
-4. Use **docker push** to push the image to the registry instance. Replace <login-server> with the login server name of your registry instance.
+4. Use **docker push** to push the image to the registry instance. Replace \<login-server\> with the login server name of your registry instance.
 
    ```
    docker push <registry-name>.azurecr.io/<image-name:tag>
@@ -154,6 +154,6 @@ After the deployment, you can check the module in your edge device. Connect to y
    docker ps
    ```
 
-Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from [the Tiny YOLOv4 TensorFlow Lite model](https://github.com/Azure/live-video-analytics/tree/master/utilities/video-analysis/yolov4-tflite-tiny).
+Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from the Tiny YOLOv4 TensorFlow Lite model.
 
 Make a note of predict endpoint that is in the form of **http://{module-name}:80/score** and can be accessed only within your edge device.

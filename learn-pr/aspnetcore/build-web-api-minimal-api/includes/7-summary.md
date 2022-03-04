@@ -9,3 +9,5 @@ There are many benefits to this approach:
 - **.NET 6 latest features:** Use all the latest features from .NET 6 like top-level statements and records.
 
 As part of this module, you learned how to add Swagger. You also added routes to create, read, update, and delete a resource.
+
+[!include[](../../../includes/dotnet-summary.md)]

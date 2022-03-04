@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/15/2021
+  ms.date: 01/27/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Password hash synchronization"
       isCorrect: false
       explanation: "This option just shares the password hash between two federated systems."
-  - content: "Which tool can you use to synchronize Active AD passwords with on-premises Active Directory?"
+  - content: "Which tool can you use to synchronize Azure AD passwords with on-premises Active Directory?"
     choices:
     - content: "Azure AD Connect"
       isCorrect: true
@@ -47,9 +47,9 @@ quiz:
     - content: "OAuth"
       isCorrect: true
       explanation: "OAuth is used for authorization."
-    - content: "Open Connect ID"
+    - content: "OpenID Connect"
       isCorrect: false
-      explanation: "Open Connect ID is not an authentication protocol used for web apps in Azure."
+      explanation: "OpenID Connect is not an authentication protocol used for web apps in Azure."
   - content: "Which of the following is an authentication option that integrates with Azure Active Directory, requiring you to use several differing methods, like your phone, to confirm your identity?"
     choices:
     - content: "FIDO2 security keys"

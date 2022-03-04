@@ -2,10 +2,10 @@
 uid: learn.azure.incident-management-sentinel.3-describe-incident-management
 metadata:
   title: Describe incident management
-  description: Describe incident management in Azure Sentinel
+  description: Describe incident management in Microsoft Sentinel
   ms.date: 12/15/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe incident management
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which Azure Sentinel component is used to generate alerts?"
+  - content: "Which Microsoft Sentinel component is used to generate alerts?"
     choices:
     - content: "Incidents"
       isCorrect: false

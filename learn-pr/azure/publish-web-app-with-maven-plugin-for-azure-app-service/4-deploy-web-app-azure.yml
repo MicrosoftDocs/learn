@@ -5,8 +5,8 @@ metadata:
   title: Deploy your web app to Azure App Service
   description: In this unit, you'll learn how to deploy your web app to Azure App Service.
   ms.date: 03/10/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

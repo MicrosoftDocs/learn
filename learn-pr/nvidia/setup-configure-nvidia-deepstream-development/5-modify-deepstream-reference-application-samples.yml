@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Modify the DeepStream sample applications
   description: Exercise - Modify the DeepStream sample applications.
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
   ms.date: 11/09/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

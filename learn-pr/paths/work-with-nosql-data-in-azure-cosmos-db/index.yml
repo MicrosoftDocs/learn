@@ -2,7 +2,7 @@
 uid: learn.work-with-nosql-data-in-azure-cosmos-db
 metadata:
   title: Work with NoSQL data in Azure Cosmos DB learning path
-  description: In this learning path, find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET Core SDK.
+  description: In this learning path, find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET SDK.
   brand: azure
   ms.date: 09/24/2018
   author: adrianstevens
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Work with NoSQL data in Azure Cosmos DB
 summary:  |
-  NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database. Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET Core SDK to work with your NoSQL data where you want, and provide your users with high availability, no matter where they are in the world. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/learn/certifications/azure-developer).
+  NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database. Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET SDK to work with your NoSQL data where you want, and provide your users with high availability, no matter where they are in the world. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/learn/certifications/azure-developer).
 prerequisites: |
   - Familiarity with storage options in Azure.
 iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg

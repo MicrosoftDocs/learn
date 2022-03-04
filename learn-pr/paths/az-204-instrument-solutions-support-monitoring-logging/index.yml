@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging
+metadata:
+  title: 'AZ-204: Instrument solutions to support monitoring and logging'
+  description: 'AZ-204: Instrument solutions to support monitoring and logging'
+  ms.date: 02/07/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Instrument solutions to support monitoring and logging'
+prerequisites: |
+  *   At least one year of experience developing scalable solutions through all phases of software development.
+  *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  *   If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
+iconUrl: /learn/achievements/monitoring-instrument-solutions.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-application-insights
+modules:
+- learn.wwl.monitor-app-performance
+trophy:
+  uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging.trophy

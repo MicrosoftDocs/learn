@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.plan-resource-requirements
+metadata:
+  title: Plan Resource Requirements
+  description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB SQL API account."
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan Resource Requirements
+summary: Familiarize yourself with the various configuration options for a new Azure Cosmos DB SQL API account.
+abstract: |
+  After completing this module, you'll be able to:
+  - Evaluate various requirements of your application
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/resource-requirements-plan.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.plan-resource-requirements.introduction
+- learn.wwl.plan-resource-requirements.understand-throughput
+- learn.wwl.plan-resource-requirements.evaluate
+- learn.wwl.plan-resource-requirements.evaluate-data-storage-requirements
+- learn.wwl.plan-resource-requirements.time-to-live (TTL)
+- learn.wwl.plan-resource-requirements.plan for data retention with time-to-live (TTL)
+- learn.wwl.plan-resource-requirements.knowledge-check
+- learn.wwl.plan-resource-requirements.summary
+badge:
+  uid: learn.wwl.plan-resource-requirements.badge

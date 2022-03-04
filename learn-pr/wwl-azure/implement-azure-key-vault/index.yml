@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-key-vault
 metadata:
   title: Implement Azure Key Vault
   description: "Implement Azure Key Vault"
-  ms.date: 10/21/2021
+  ms.date: 01/12/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   * You should be experienced with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-key-vault-implement.svg
 levels:
 - intermediate
 roles:

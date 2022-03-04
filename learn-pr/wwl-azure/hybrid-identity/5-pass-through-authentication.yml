@@ -4,9 +4,9 @@ title: Implement Pass-through Authentication (PTA)
 metadata:
   title: Implement Pass-through Authentication (PTA)
   description: "Implement Pass-through Authentication (PTA)"
-  ms.date: 11/15/2021
+  ms.date: 01/27/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-azure-databricks-other-azure-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/07/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What are the two prerequisites for connecting Azure Databricks with Azure Synapse Analytics that apply to the Azure Synapse Analytics instance?"
+    choices:
+    - content: "Create a database master key and configure the firewall to enable Azure services to connect"
+      isCorrect: true
+      explanation: "Correct. Create a database master key and configure the firewall to enable Azure services to connect"
+    - content: "Use a correctly formatted ConnectionString and create a database master key"
+      isCorrect: false
+      explanation: "Incorrect. You also need to configure the firewall to enable Azure services to connect."
+    - content: "Add the client IP address to the firewall's allowed IP addresses list and use the correctly formatted ConnectionString"
+      isCorrect: false
+      explanation: "Incorrect. You also must create a database master key"
+  - content: "Which is the correct syntax for overwriting data in Azure Synapse Analytics from a Databricks notebook?"
+    choices:
+    - content: "df.write.mode(\"overwrite\").option(\"...\").option(\"...\").save()"
+      isCorrect: false
+      explanation: "Incorrect. You must specify a format."
+    - content: "df.write.format(\"com.databricks.spark.sqldw\").overwrite().option(\"...\").option(\"...\").save()"
+      isCorrect: false
+      explanation: "Incorrect. There is no property named overwrite()."
+    - content: "df.write.format(\"com.databricks.spark.sqldw\").mode(\"overwrite\").option(\"...\").option(\"...\").save()"
+      isCorrect: true
+      explanation: "Correct. The key is to specify the correct format, intended write mode, and options that specify the Azure Synapse Analytics properties."

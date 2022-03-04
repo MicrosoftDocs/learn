@@ -5,8 +5,9 @@ metadata:
   title: Introduction to NVIDIA DeepStream Graph Composer
   description: Introduction to NVIDIA DeepStream Graph Composer
   author: toolboc
-  ms.author: pdecarlo
+  ms.author: chnoring
   ms.date: 11/09/2021
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

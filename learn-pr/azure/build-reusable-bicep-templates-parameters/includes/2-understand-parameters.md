@@ -20,7 +20,7 @@ Let's look at how each part works:
 - `environmentName` refers to the name of the parameter. Although the parameter name can be anything, you should make the name clear and understandable for the template users. Within the same template, you can also refer to the parameter by using its name. Parameter names must be unique. They can't have the same name as a variable or a resource in the same Bicep file.
 
   > [!TIP]
-  > Use best practice naming conentions for parameter declarations. Good naming conventions make your templates easy to read and understand. Make sure you're using clear, descriptive names, and adopt consistent naming strategy.
+  > Use best practice naming conventions for parameter declarations. Good naming conventions make your templates easy to read and understand. Make sure you're using clear, descriptive names, and adopt consistent naming strategy.
 
 - `string` refers to the type of the parameter.
 

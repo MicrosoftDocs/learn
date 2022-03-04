@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.startups.build-team
+metadata:
+  title: Build your team
+  description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: Build your team
+summary: >
+  This module gives practical advice on how to build your startup team, including how to find cofounders and recruit your first employees and contractors.
+abstract: | 
+  In this module, you'll:
+  - Learn about personal attributes that are valued in startup team members.
+  - See how to bring in a cofounder.
+  - Understand the functional roles that need to be filled in your startup.
+  - Find out about the advantages of cofounder agreements and founder investing.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+units:
+- learn.startups.build-team.introduction
+- learn.startups.build-team.ideal-startup-team
+- learn.startups.build-team.risk-management
+- learn.startups.build-team.build-diverse-teams
+- learn.startups.build-team.use-mentors
+- learn.startups.build-team.knowledge-check
+- learn.startups.build-team.summary
+badge:
+  uid: learn.startups.build-team.badge

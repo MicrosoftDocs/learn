@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.mitigate-incidents-microsoft-365-defender.conduct-advanced-hunting
+title: Conduct advanced hunting
+metadata:
+  title: Conduct advanced hunting
+  description: "Conduct advanced hunting"
+  ms.date: 02/23/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-conduct-advanced-hunting.md)]

@@ -92,7 +92,9 @@ Windows PowerShell is included with the Windows operating system; however, we re
     ```powershell
     pwsh -ver
     ```
-    If the major version number is lower than 7, follow the instructions to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows). It is important to install the SDK tu support .NET tools, as well.
+    If the major version number is lower than 7, follow the instructions to [upgrade existing Windows PowerShell](/powershell/scripting/install/installing-powershell-on-windows). It is important to install the SDK to support .NET tools, as well.
+    
+    You need the [.NET SDK installed](/dotnet/core/sdk) to run this command.
    
     ```powershell
     dotnet tool install --global PowerShell

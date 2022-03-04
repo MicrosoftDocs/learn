@@ -1,12 +1,12 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.support-concurrency-blob-storage.3-exercise-observe-data-loss
 title: Exercise - Observe data loss in an app not built for concurrency 
 metadata:
   title: Exercise - Observe data loss in an app not built for concurrency
   description: In this hands-on exercise, you'll clone an app, setup blob storage and test the app is having issues with concurrency.
   ms.date: 04/06/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

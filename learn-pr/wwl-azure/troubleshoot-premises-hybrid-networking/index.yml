@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-premises-hybrid-networking
+metadata:
+  title: Troubleshoot on-premises and hybrid networking
+  description: "Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment."
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot on-premises and hybrid networking
+summary: Learn to troubleshoot on-premises connectivity and hybrid network connectivity. Diagnose common issues with DHCP, name resolution, IP configuration, and routing that can cause reliability and connectivity problems in an on-premises and a hybrid environment.
+abstract: |
+  After completing this module, you will be able to:
+  *   Diagnose DHCP and DNS problems in on-premises contexts
+  *   Diagnose IP configuration and routing problems
+  *   Implement Packet Monitor to help diagnose network problems
+  *   Use Azure Network Watcher to troubleshoot Microsoft Azure virtual networks
+prerequisites: |
+  - Working knowledge of common Windows Server management tools
+  - Some experience of typical Windows Server workloads
+  - Basic knowledge of Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-network-watcher
+- windows-server
+units:
+- learn.wwl.troubleshoot-premises-hybrid-networking.introduction
+- learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-dhcp-problems
+- learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-dns-problems
+- learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-ip-configuration-issues
+- learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-routing-problems
+- learn.wwl.troubleshoot-premises-hybrid-networking.use-packet-manager-to-help-diagnose-network-problems
+- learn.wwl.troubleshoot-premises-hybrid-networking.use-azure-network-watcher-to-help-diagnose-network-problems
+- learn.wwl.troubleshoot-premises-hybrid-networking.knowledge-check
+- learn.wwl.troubleshoot-premises-hybrid-networking.summary
+badge:
+  uid: learn.wwl.troubleshoot-premises-hybrid-networking.badge

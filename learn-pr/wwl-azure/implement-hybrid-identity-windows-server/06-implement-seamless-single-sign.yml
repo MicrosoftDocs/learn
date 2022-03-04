@@ -4,12 +4,13 @@ title: Implement Seamless Single Sign-On
 metadata:
   title: Implement Seamless Single Sign-On
   description: "Implement Seamless Single Sign-On"
-  ms.date: 08/16/2020
+  ms.date: 12/13/2021
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/06-implement-seamless-single-sign.md)]

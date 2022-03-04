@@ -3,8 +3,7 @@ uid: learn.azure.intro-to-azure-cosmos-db-core-api.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: >
-    Learn about the characteristics of modern applications that require a database such as Azure Cosmos DB
+  description: Learn about the characteristics of modern applications that require a database such as Azure Cosmos DB.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope

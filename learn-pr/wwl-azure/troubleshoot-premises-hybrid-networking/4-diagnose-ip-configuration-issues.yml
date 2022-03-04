@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-ip-configuration-issues
+title: Diagnose IP configuration issues
+metadata:
+  title: Diagnose IP configuration issues
+  description: "Diagnose IP configuration issues"
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-diagnose-ip-configuration-issues.md)]

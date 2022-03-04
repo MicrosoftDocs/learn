@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.exercise-run-ansible-azure-cloud-shell
+title: Exercise - Run Ansible in Azure Cloud Shell
+metadata:
+  title: Exercise - Run Ansible in Azure Cloud Shell
+  description: "Exercise - Run Ansible in Azure Cloud Shell"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-exercise-run-ansible-azure-cloud-shell.md)]

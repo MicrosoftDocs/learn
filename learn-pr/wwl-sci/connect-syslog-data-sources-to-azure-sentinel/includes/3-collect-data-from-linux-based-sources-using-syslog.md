@@ -1,4 +1,4 @@
-To view the connector page:
+To view the connector page from Microsoft Sentinel:
 
 1. Select **Data** connectors page.
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2021
+  ms.date: 02/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -41,9 +41,9 @@ quiz:
       explanation: "That's incorrect. An Azure AD Account is an identity created through Azure AD or another Microsoft cloud service, such as Office 365. Identities are stored in Azure AD and accessible to the organization's cloud service subscriptions. This account is also sometimes called a Work or school account."
   - content: "When Self-Service Password Reset is enabled it means?"
     choices:
-    - content: "Users can change their password when they're signed in."
+    - content: "Users must wait for the Administrator if they are locked out."
       isCorrect: false
-      explanation: "That's incorrect. Even without SSPR enabled, users can change their password when they're signed in to Azure AD."
+      explanation: "That's incorrect. The purpose of SSPR is for users to be able to reset their passwords."
     - content: "Administrators can reset their password by using one authentication method."
       isCorrect: false
       explanation: "That's incorrect. At least two methods are required to authenticate a password reset for an admin account."

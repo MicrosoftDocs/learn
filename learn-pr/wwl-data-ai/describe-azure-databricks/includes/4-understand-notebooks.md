@@ -1,4 +1,3 @@
-
 After creating your Databricks workspace, it's time to create your first notebook. To execute your notebook, you will attach the cluster you created in the previous unit.
 
 ## What is Apache Spark notebook?
@@ -8,22 +7,30 @@ A notebook is a collection of cells. These cells are run to execute code, to ren
 ## Create a notebook
 
 1. In the Azure portal, click **All resources** menu on the left side navigation and select the Databricks workspace you created in the last unit.
-1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
-1. On the left-hand menu of your Databricks workspace, select **Home**.
-1. Right-click on your home folder.
-1. Select **Create**.
-1. Select **Notebook**.
 
-    ![The menu option to create a new notebook.](../media/create-notebook.png)
+2. Select **Launch Workspace** to open your Databricks workspace in a new tab.
 
-1. Name your notebook **First Notebook**.
-1. Set the **Language** to **Python**.
-1. Select the cluster to which to attach this notebook.
+3. On the left-hand menu of your Databricks workspace, select **Home**.
 
-     > [!NOTE]
-     > This option displays only when a cluster is currently running. You can still create your notebook and attach it to a cluster later.
+4. Right-click on your home folder.
 
-1. Select **Create**.
+5. Select **Create**.
+
+6. Select **Notebook**.
+
+   ![The menu option to create a new notebook.](../media/create-notebook.png)
+
+7. Name your notebook **First Notebook**.
+
+8. Set the **Language** to **Python**.
+
+9. Select the cluster to which to attach this notebook.
+
+   > [!NOTE] 
+   >
+   > This option displays only when a cluster is currently running. You can still create your notebook and attach it to a cluster later.
+
+10. Select **Create**.
 
 Now that you've created your notebook, let's use it to run some code.
 

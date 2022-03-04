@@ -9,7 +9,7 @@ In this module we turned on **Advanced Data Security** on an Azure SQL database.
 
 To learn more about the topics covered in this module, read through the following resources.
 
-- [Azure Security Center](/azure/security-center/)
+- [Microsoft Defender for Cloud](/azure/security-center/)
 - [Azure Information Protection](/azure/information-protection/)
 - [Azure SQL Database and SQL Data Warehouse data discovery & classification](/azure/sql-database/sql-database-data-discovery-and-classification)
 - [Information protection in Microsoft 365](/azure/information-protection/)

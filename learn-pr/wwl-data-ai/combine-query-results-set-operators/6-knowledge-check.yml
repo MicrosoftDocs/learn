@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/09/2021
+  ms.date: 01/10/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -36,25 +36,14 @@ quiz:
     - content: "OUTER APPLY"
       isCorrect: false
       explanation: "That's incorrect. OUTER APPLY is a table operator will return rows from two result sets."
-  - content: "When using structured error handling, where should the keywords COMMIT TRANSACTION be placed?"
+  - content: "What type of result does the APPLY operator return?"
     choices:
-    - content: "Immediately before END TRY"
+    - content: "Table-valued"
       isCorrect: true
-      explanation: "That's correct. The keywords COMMIT TRANSACTION should be placed at the end of the TRY block, immediately before the END TRY keywords."
-    - content: "Immediate after BEGIN TRY"
+      explanation: "That's correct. APPLY returns a table-valued result rather than a scalar or multi-valued result."
+    - content: "Scalar"
       isCorrect: false
-      explanation: "That's incorrect. The BEGIN TRANSACTION keywords be placed immediately after BEGIN TRY."
-    - content: "Immediately before END CATCH"
+      explanation: "That's incorrect. Scalar functions return one single value."
+    - content: "Aggregate"
       isCorrect: false
-      explanation: "That's incorrect. The keywords ROLLBACK TRANSSACTION should be placed immediately before END CATCH."
-  - content: "What does XACT_STATE test for?"
-    choices:
-    - content: "Whether or not the transaction has been committed."
-      isCorrect: false
-      explanation: "That's incorrect. XACT_STATE does not test whether a transaction has been committed."
-    - content: "An error in the transaction."
-      isCorrect: true
-      explanation: "That's correct. If an error occurs that causes the transaction to be classified an uncommittable, it will return -1."
-    - content: "Whether or not the current transaction has finished."
-      isCorrect: false
-      explanation: "That's incorrect. XACT_STATE tests for open transactions and not whether a transaction has completed."
+      explanation: "That's incorrect. Aggregates return single values similar to SUM() or COUNT()."

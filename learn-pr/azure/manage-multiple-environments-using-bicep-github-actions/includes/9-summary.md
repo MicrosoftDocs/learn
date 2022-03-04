@@ -16,3 +16,4 @@ Now that your workflow deploys to multiple environments, you have higher confide
 - [Expressions](https://docs.github.com/actions/learn-github-actions/expressions)
 - [Environment variables](https://docs.github.com/actions/learn-github-actions/environment-variables)
 - [Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets)
+- [Secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)

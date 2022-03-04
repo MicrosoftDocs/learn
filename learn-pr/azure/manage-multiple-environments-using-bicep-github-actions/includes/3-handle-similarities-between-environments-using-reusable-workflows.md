@@ -70,7 +70,7 @@ In your workflow, you use a special syntax to refer to the value of the paramete
 
 :::code language="yaml" source="code/3-called-workflow-inputs.yml" range="11-16" highlight="6" :::
 
-You pass the value for inputs to a called workflow by using the `with` keyword, and secrets by using the `secrets` keyword, like in this example:
+You pass the value for inputs to a called workflow by using the `with` keyword. You need to define the values for each input within the `with` section - you can't use the `env` keyword to refer to a workflow's environment variables. You pass secret values to a called workflow by using the `secrets` keyword.
 
 :::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="7-10, 14-17" :::
 

@@ -38,7 +38,7 @@ A funny thing happens when engineers make mistakes and feel safe when giving det
 - Accept that there is always a discretionary space where humans can decide to act or not act, and that the assessment of those decisions lies in hindsight.
 - Accept that [Hindsight bias](https://en.wikipedia.org/wiki/Hindsight_bias?azure-portal=true) can cloud our assessment of past events, so work hard to eliminate it.
 - Accept that the [Fundamental attribution error](https://en.wikipedia.org/wiki/Fundamental_attribution_error?azure-portal=true) is also difficult to escape, so focus on the environment and circumstances people are working in when investigating accidents.
-- Strive to make sure that the blunt end of the organization understands how work is actually getting done. Compare this to how they imagine it's getting done, through Gantt charts and procedures on the sharp end.
+- Strive to make sure that the blunt end (for example, boards or senior leadership) of the organization understands how work is actually getting done. Compare this to how they imagine it's getting done, through Gantt charts and procedures on the sharp end (for example, engineers and technology).
 - The sharp end must inform the organization where the line is between appropriate and inappropriate behavior. This isn't something that the blunt end can come up with on its own.
 
 Failure happens. In order to understand how failures happen, we first have to understand our reactions to failure.

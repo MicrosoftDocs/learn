@@ -86,7 +86,7 @@ The cloud controller manager integrates with the underlying cloud technologies i
 
 ## Services that run on a node
 
-The are several services that run on a Kubernetes node to control how workloads run.
+There are several services that run on a Kubernetes node to control how workloads run.
 
 :::image type="content" source="../media/3-cluster-architecture-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
 
@@ -154,7 +154,7 @@ Kubernetes pods have a distinct lifecycle that affects the way you deploy, run, 
 
 Here are the phases in a pod's lifecycle:
 
-|||
+| Phase | Description |
 |---|---|
 | Pending | After the pod run is scheduled, the container runtime downloads container images, and starts all containers for the pod. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
@@ -170,7 +170,7 @@ The cluster doesn't save the pod's state or dynamically assigned configuration. 
 
 Keep in mind that the phases are a summary of where the pod is in its lifecycle. When you inspect a pod, the cluster uses three states to track your containers inside the pod:
 
-|||
+| State | Description |
 |---|---|
 | Waiting | Default state of a container and the state that the container is in when it's not running or terminated.|
 | Running | The container is running as expected without any problems. |

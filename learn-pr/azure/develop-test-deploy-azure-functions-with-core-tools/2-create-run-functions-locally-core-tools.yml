@@ -3,9 +3,9 @@ uid: learn-pr.develop-test-deploy-azure-functions-core-tools.2-create-run-functi
 metadata:
   title: Create and run Azure Functions locally by using the Core Tools
   description: In this unit, you'll learn how to use the Core Tools to create and run functions locally.
-  ms.date: 11/13/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 12/11/2021
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create and run Azure Functions locally by using the Core Tools

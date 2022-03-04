@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-application-based-threats-security-controls.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is an example of application software?"
+    choices:
+    - content: "An operating system."
+      isCorrect: false
+      explanation: "Incorrect. An operating system is an example of system software."
+    - content: "A device driver."
+      isCorrect: false
+      explanation: "Incorrect. A device driver is an example of system software."
+    - content: "Word processing software."
+      isCorrect: true
+      explanation: "Correct. Word processing software is an example of application software."
+  - content: "Which statement defines a zero-day vulnerability?"
+    choices:
+    - content: "Any flaw that is known and for which the application owner has already created a patch."
+      isCorrect: false
+      explanation: "Incorrect. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
+    - content: "Any flaw that is previously unknown to the application owner and unpatched."
+      isCorrect: true
+      explanation: "Correct. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
+    - content: "Any flaw that is known to the application developer but for which the developer hasn't yet developed a patch."
+      isCorrect: false
+      explanation: "Incorrect. A zero-day vulnerability is any flaw that is previously unknown to the application owner and unpatched."
+  - content: "What is a simple way for users to mitigate threats to their applications?"
+    choices:
+    - content: "Disable automatic updates."
+      isCorrect: false
+      explanation: "Incorrect. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."
+    - content: "Avoid applications that employ open-source libraries."
+      isCorrect: false
+      explanation: "Incorrect. That is not a practical option and in most cases, users may not know if their applications contain open-source libraries."
+    - content: "Enable automatic updates of your applications."
+      isCorrect: true
+      explanation: "Correct. As part of a robust security process or policy, you should ensure all applications used on your device are kept up-to-date with the latest patches or updates."

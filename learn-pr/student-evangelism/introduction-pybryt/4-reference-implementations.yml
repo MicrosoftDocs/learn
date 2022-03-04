@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-pybryt.4-reference-implementations
+title: Reference implementations
+metadata:
+  title: Reference implementations
+  description: How to combine annotations into reference implementations and use references to assess submissions
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 10/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-reference-implementations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "To create a reference implementation, what must be passed to the constructor?"
+      choices:
+        - content: "The name of the reference"
+          isCorrect: false
+          explanation: "Not quite. The constructor also requires a list of annotations."
+        - content: "A list of annotations"
+          isCorrect: false
+          explanation: "Not quite. The constructor also requires the name of the reference."
+        - content: "The name of the reference and a list of annotations"
+          isCorrect: true
+          explanation: "Correct! The constructor requires both as positional arguments."
+    - content: "How many reference implementations can you use with PyBryt?"
+      choices:
+        - content: "One"
+          isCorrect: false
+          explanation: "Not quite."
+        - content: "Two"
+          isCorrect: false
+          explanation: "Not quite."
+        - content: "As many as you can write"
+          isCorrect: true
+          explanation: "Correct!"
+    - content: "How can you test against multiple reference implementations?"
+      choices:
+        - content: "Run the submission once for each reference"
+          isCorrect: false
+          explanation: "Not quite."
+        - content: "Pass a list of references"
+          isCorrect: true
+          explanation: "Correct!"

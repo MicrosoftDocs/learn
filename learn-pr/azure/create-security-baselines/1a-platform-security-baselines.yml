@@ -3,10 +3,10 @@ uid: learn.azure-security.create-security-baselines.platform-security-baselines
 title: Understand the Azure platform security baseline
 metadata:
   title: Understand the Azure platform security baseline
-  description: Understand the Azure platform security baseline
-  ms.date: 09/9/2019
-  author: adrianstevens
-  ms.author: adsteven
+  description: Read an introduction for the Azure platform security baseline, including security categories and recommendations.
+  ms.date: 02/03/2022
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

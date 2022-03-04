@@ -35,6 +35,7 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-devops
 units:
 - learn.wwl.introduce-foundation-pillars-devops.introduction
 - learn.wwl.introduce-foundation-pillars-devops.discover-devops

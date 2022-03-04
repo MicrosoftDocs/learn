@@ -31,11 +31,11 @@ To create a block blob storage account in the Azure portal, follow these steps:
 
 1. For the rest of the settings, configure the following:
 
-    Field | Value
-    - | -
-    **Performance** | Select **Premium**.
-    **Premium account type** | Select **Block blobs**.
-    **Replication** | Leave the default setting of **Locally-redundant storage (LRS)**.
+    | Field | Value |
+    |--|--|
+    | **Performance** | Select **Premium**. |
+    | **Premium account type** | Select **Block blobs**. |
+    | **Replication** | Leave the default setting of **Locally-redundant storage (LRS)**. |
 
 1. Select **Review + create** to review the storage account settings.
 
@@ -61,7 +61,7 @@ To create a block blob storage account in the Azure portal, follow these steps:
     ```bash
     az storage account create --resource-group az204-blob-rg --name \
     <myStorageAcct> --location <myLocation> \ 
-    --kind BlockBlobStorage --sku Standard_LRS
+    --kind BlockBlobStorage --sku Premium_LRS
     ```
 
 ## Clean up resources

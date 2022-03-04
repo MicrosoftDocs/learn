@@ -2,7 +2,7 @@ Security and infrastructure configuration go hand-in-hand. When you set up your 
 
 ## Consider isolating each workspace in its own VNet
 
-While you can deploy more than one Workspace in a VNet by keeping the associated subnet pairs separate from other workspaces, we recommend that you should only deploy one workspace in any VNet. Doing this perfectly aligns with the ADB's Workspace level isolation model. Most often organizations consider putting multiple workspaces in the same VNet so that they all can share some common networking resource, like DNS, also placed in the same VNet because the private address space in a VNet is shared by all resources. You can easily achieve the same while keeping the Workspaces separate by following the [hub and spoke model](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) and using VNet Peering to extend the private IP space of the workspace VNet. Here are the steps:
+While you can deploy more than one Workspace in a VNet by keeping the associated subnet pairs separate from other workspaces, we recommend that you should only deploy one workspace in any VNet. Doing this perfectly aligns with the ADB's Workspace level isolation model. Most often organizations consider putting multiple workspaces in the same VNet so that they all can share some common networking resource, like DNS, also placed in the same VNet because the private address space in a VNet is shared by all resources. You can easily achieve the same while keeping the Workspaces separate by following the [hub and spoke model](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) and using VNet Peering to extend the private IP space of the workspace VNet. Here are the steps:
 
 1. Deploy each Workspace in its own spoke VNet.
 1. Put all the common networking resources in a central hub VNet, such as your custom DNS server.  
@@ -24,7 +24,7 @@ This recommendation is driven by security and data availability concerns. Every 
 > [!IMPORTANT]
 > This recommendation doesn't apply to Blob or ADLS folders explicitly mounted as DBFS by the end user.
 
-More Information can be found in the [Databricks File System documentaion](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html) 
+More Information can be found in the [Databricks File System documentation](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html) 
 
 ## Always hide secrets in a key vault
 
@@ -47,7 +47,7 @@ When enabled, authentication automatically takes place in Azure Data Lake Storag
 
 ADLS Passthrough is configured when you create a cluster in the Azure Databricks workspace. ADLS Gen1 requires Databricks Runtime 5.1+. ADLS Gen2 requires 5.3+.
 
-On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (AAD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](https://docs.microsoft.com/azure/databricks/data/data-sources/azure/adls-passthrough#single-user) on this cluster when Credential Passthrough is enabled.
+On a *standard cluster*, when you enable this setting you must set single user access to one of the Azure Active Directory (Azure AD) users in the Azure Databricks workspace. [Only one user is allowed to run commands](https://docs.microsoft.com/azure/databricks/data/data-sources/azure/adls-passthrough#single-user) on this cluster when Credential Passthrough is enabled.
 
 ![ADLS Passthrough setting.](../media/adls-passthrough.png)
 
@@ -81,6 +81,6 @@ You can also use Grafana to visualize your data from Log Analytics.
 
 ## Additional considerations
 
-- Configure encryption-at-rest for [Blob Storage](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys) and [ADLS](https://docs.microsoft.com/azure/data-lake-store/data-lake-store-encryption), preferably by using customer-managed keys in Azure Key Vault.
+- Configure encryption-at-rest for [Blob Storage](/azure/storage/common/storage-service-encryption-customer-managed-keys) and [ADLS](/azure/data-lake-store/data-lake-store-encryption), preferably by using customer-managed keys in Azure Key Vault.
 - Prefer to use [ADLS credential passthrough](https://docs.azuredatabricks.net/administration-guide/cloud-configurations/azure/credential-passthrough.html) over Table ACLs (if possible).
 - Configure [access control](https://docs.azuredatabricks.net/administration-guide/admin-settings/index.html#manage-access-control) for Databricks-native resources (clusters, notebooks, jobs etc.)

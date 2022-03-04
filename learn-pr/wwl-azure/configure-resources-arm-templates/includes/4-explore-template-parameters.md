@@ -33,7 +33,7 @@ Here's an example that illustrates two parameters: one for a virtual machine's u
       "description": "Password for the Virtual Machine."
     }
   }
-
+}
 ```
 
 > [!NOTE]

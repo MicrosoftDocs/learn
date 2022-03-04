@@ -82,7 +82,7 @@ All Azure resources are created in an Azure region and subscription. A resource 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
 
-:::image type="content" source="../media/microsoft-global-wan-b9362e87.png" alt-text="World map showing Azure global network.":::
+:::image type="content" source="../media/microsoft-global-wan-b9362e87.png" alt-text="Screen capture of a World map showing Azure global network.":::
 
 
 ### Azure Availability Zones
@@ -108,7 +108,7 @@ Before you can create a VNet, you must create a resource group. A resource group
 
 ### Create a Virtual Network by using the portal
 
-Log in to the Azure portal, and then click **Create a resource**:
+Log in to the Azure portal, and then select **Create a resource**:
 
 :::image type="content" source="../media/create-resource-db103aae.png" alt-text="Azure portal with Create a resource highlighted.":::
 
@@ -212,7 +212,7 @@ In the Create virtual network tab, you can enable security features like Bastion
 
 **Distributed Denial of Service (DDoS) protection**
 
-You can select to enable Standard DDoS protection. Standard DDoS Protection is a plan is a paid service that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
+You can select to enable Standard DDoS protection. Standard DDoS Protection is a paid service plan that offers enhanced DDoS mitigation capabilities via adaptive tuning, attack notification, and telemetry to protect against the impacts of a DDoS attack for all protected resources within this virtual network. Basic DDoS protection is integrated into the Azure platform by default and at no additional cost.
 
 **Firewall**
 
@@ -226,4 +226,4 @@ In the **Review + create** tab, you can define tags, which can help you to organ
 :::image type="content" source="../media/review-create-vnet-511dedf4.png" alt-text="Create virtual network - review tab.":::
 
 
-Click **Create** to create your virtual network.
+Select **Create** to create your virtual network.

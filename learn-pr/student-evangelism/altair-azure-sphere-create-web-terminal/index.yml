@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal
+metadata:
+  title: Create and customize Altair 8800 cloud services
+  description: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Create and customize Altair 8800 cloud services
+summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
+abstract:  |
+  In this module, you will:
+  - Customize IoT Central.
+  - Create an Altair web terminal as an Azure static web app.
+  - Install and run the Altair Python virtual disk server.
+prerequisites: |
+  - A computer with an x86-64-based processor that's running one of the following operating systems:
+    - Windows 10 Anniversary Update or later.
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-create-web-terminal.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.introduction
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.create-iot-central-properties
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-configure-iot-central
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.web-terminal
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-deploy-web-terminal
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.virtual-disk-server
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-run-virtual-disk-server
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.badge
