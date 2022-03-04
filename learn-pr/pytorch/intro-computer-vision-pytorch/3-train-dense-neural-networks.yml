@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/computer-vision-pytorch/3-train-dense-neural-networks.ipynb
+notebook: notebooks/3-train-dense-neural-networks.ipynb

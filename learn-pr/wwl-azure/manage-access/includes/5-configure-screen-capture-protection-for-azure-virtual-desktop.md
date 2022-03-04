@@ -3,7 +3,7 @@ The screen capture protection feature prevents sensitive information from being 
 Screen capture protection is configured on the session host level and enforced on the client. Only clients that support this feature can connect to the remote session. Following clients currently support screen capture protection:
 
  -  Windows Desktop client supports screen capture protection for full desktops only.
- -  macOS client version 10.7.0 or older supports screen capture protection for both RemoteApp and full desktops.
+ -  macOS client version 10.7.0 or later supports screen capture protection for both RemoteApp and full desktops.
 
 ## Configure screen capture protection
 
