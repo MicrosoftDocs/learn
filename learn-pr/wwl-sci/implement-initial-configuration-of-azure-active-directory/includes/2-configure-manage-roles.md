@@ -48,7 +48,7 @@ Azure AD roles are used to manage Azure AD resources in a directory such as crea
 
   :::column-end:::
   :::column:::
-    The person who signs up for the Azure Active Directory tenant becomes a Global Administrator.
+    The person who signs up for the Azure Active Directory tenant becomes the first Global Administrator.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -155,10 +155,10 @@ There are multiple ways to assign roles within Azure AD. You need to pick the on
 
  -  Assign a role to a user or group
     
-     -  **Azure AD** \--&gt; **Roles and administration** \--&gt; **Select a role** \--&gt; **+ Add Assignment**
+     -  **Azure AD** \- **Roles and administration** \- **Select a role** \- **+ Add Assignment**
  -  Assign a user or group to a role
     
-     -  **Azure AD** \--&gt; Open **Users** (or Groups) --&gt; Select an **User** (or group) --&gt; **Assigned roles** \--&gt; **+ Add Assignment**
+     -  **Azure AD** \- Open **Users** (or Groups) - Select an **User** (or group) - **Assigned roles** \- **+ Add Assignment**
  -  Assign a role to a broad-scope, like a Subscription, Resource Group, or Management Group
     
      -  Done via the **Access control (IAM)** within each blade
@@ -184,22 +184,19 @@ This section describes how to create new custom roles in Azure AD. For the basic
 Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Azure AD overview page.
 
 1.  Select **Azure Active Directory** &gt; **Roles and administrators** &gt; **New custom role**.
-
-:::image type="content" source="../media/new-custom-role-5381c7b6.png" alt-text="Create or edit roles from the Roles and administrators page.":::
-
-
+    
+    :::image type="content" source="../media/new-custom-role-5381c7b6.png" alt-text="Create or edit roles from the Roles and administrators page.":::
+    
 2.  On the **Basics** tab, provide a name and description for the role and then click **Next**.
-
-:::image type="content" source="../media/basics-tab-baa00391.png" alt-text="provide a name and description for a custom role on the Basics tab.":::
-
-
+    
+    :::image type="content" source="../media/basics-tab-baa00391.png" alt-text="provide a name and description for a custom role on the Basics tab.":::
+    
 3.  On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 4.  First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update`permission.
-
-:::image type="content" source="../media/permissions-tab-505b8d2e.png" alt-text="Select the permissions for a custom role on the Permissions tab.":::
-
-
-6.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update`permission, and then click **Next**.
-7.  On the **Review + create** tab, review the permissions and select **Create**.
+    
+    :::image type="content" source="../media/permissions-tab-505b8d2e.png" alt-text="Select the permissions for a custom role on the Permissions tab.":::
+    
+5.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update`permission, and then click **Next**.
+6.  On the **Review + create** tab, review the permissions and select **Create**.
 
 Your custom role will show up in the list of available roles to assign.
