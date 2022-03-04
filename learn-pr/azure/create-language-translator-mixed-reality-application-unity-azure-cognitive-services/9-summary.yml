@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Concludes the module, summarizing new concepts and explaining how to clean up Azure resources
   ms.date: 10/06/2020
-  author: aprilspeight
-  ms.author: apspeigh
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
