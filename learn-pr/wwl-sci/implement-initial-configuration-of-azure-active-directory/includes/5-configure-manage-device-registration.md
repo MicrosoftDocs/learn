@@ -1,6 +1,6 @@
 With the proliferation of devices of all shapes and sizes and the bring your own device (BYOD) concept, IT professionals are faced with two somewhat opposing goals:
 
- -  Allow end users to be productive wherever and whenever
+ -  Allow end users to be productive wherever and whenever and on any device
  -  Protect the organization's assets
 
 To protect these assets, IT staff need to first manage the device identities. IT staff can build on the device identity with tools like Microsoft Intune to ensure standards for security and compliance are met. Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere through these devices.
