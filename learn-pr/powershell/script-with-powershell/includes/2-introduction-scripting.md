@@ -29,7 +29,7 @@ These two mechanisms don't stop you from opening a file, copying its contents, p
 
 To create and run a script:
 
-1. Create some PowerShell statements like the following and save them in a file that ends with _.ps1_:
+1. Create some PowerShell statements like the following and save them in a file that ends with *.ps1*:
 
    ```powershell
    # PI.ps1
