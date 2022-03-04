@@ -4,7 +4,7 @@ title: 'Exercise: Explore Azure Cosmos DB'
 metadata:
   title: 'Exercise: Explore Azure Cosmos DB'
   description: "Exercise: Explore Azure Cosmos DB"
-  ms.date: 03/02/2022
+  ms.date: 03/04/2022
   author: wwlpublish
   ms.author: wwlpub
   ms.topic: interactive-tutorial
@@ -14,4 +14,3 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-explore-cosmos-db.md)]
-interactive: bash
